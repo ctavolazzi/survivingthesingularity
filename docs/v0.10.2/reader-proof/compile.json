@@ -1,0 +1,14 @@
+[
+  {
+    "file": "src/lib/components/interactives/BookScene.svelte",
+    "warnings": []
+  },
+  {
+    "file": "src/routes/read/+page.svelte",
+    "warnings": []
+  },
+  {
+    "file": "src/routes/book/[sectionId]/+page.svelte",
+    "warnings": []
+  }
+]

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 564" font-family="'JetBrains Mono',monospace" role="img" aria-labelledby="land-values-title land-values-desc">
+<title id="land-values-title">WHAT AN ACRE COSTS</title>
+<desc id="land-values-desc">Average US farm real estate value. Includes farm land and buildings; not vacant land alone. Nominal, not inflation-adjusted; national averages are not local asking prices.</desc>
+<defs><pattern id="hatch-land-values" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M-2 2L2 -2M0 8L8 0M6 10L10 6" stroke="#3b82f6" stroke-width="1"/></pattern></defs>
+<rect x="0" y="0" width="480" height="564" fill="#020617"/>
+<text x="24" y="34" font-size="19" fill="#f1f5f9" text-anchor="start" font-weight="600">WHAT AN ACRE COSTS</text>
+<line x1="24" y1="48" x2="456" y2="48" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="24" y="73" font-size="13.5" fill="#94a3b8" text-anchor="start" font-weight="400">Average US farm real estate value</text>
+<text x="24" y="106" font-size="13.5" fill="#f1f5f9" text-anchor="start" font-weight="400">Nominal dollars per acre</text>
+<line x1="72" y1="405" x2="444" y2="405" stroke="#334155" stroke-width="1"/>
+<text x="60" y="410" font-size="13.5" fill="#94a3b8" text-anchor="end" font-weight="400">0</text>
+<line x1="72" y1="352.4" x2="444" y2="352.4" stroke="#334155" stroke-width="1"/>
+<text x="60" y="357.4" font-size="13.5" fill="#94a3b8" text-anchor="end" font-weight="400">1,000</text>
+<line x1="72" y1="299.8" x2="444" y2="299.8" stroke="#334155" stroke-width="1"/>
+<text x="60" y="304.8" font-size="13.5" fill="#94a3b8" text-anchor="end" font-weight="400">2,000</text>
+<line x1="72" y1="247.2" x2="444" y2="247.2" stroke="#334155" stroke-width="1"/>
+<text x="60" y="252.2" font-size="13.5" fill="#94a3b8" text-anchor="end" font-weight="400">3,000</text>
+<line x1="72" y1="194.6" x2="444" y2="194.6" stroke="#334155" stroke-width="1"/>
+<text x="60" y="199.6" font-size="13.5" fill="#94a3b8" text-anchor="end" font-weight="400">4,000</text>
+<line x1="72" y1="142" x2="444" y2="142" stroke="#334155" stroke-width="1"/>
+<text x="60" y="147" font-size="13.5" fill="#94a3b8" text-anchor="end" font-weight="400">5,000</text>
+<polyline points="72.000,272.448 98.571,261.402 125.143,250.356 151.714,247.200 178.286,247.726 204.857,245.622 231.429,241.940 258.000,239.836 284.571,240.362 311.143,229.842 337.714,209.328 364.286,196.178 390.857,185.658 417.429,176.190 444.000,168.300" fill="none" stroke="#f59e0b" stroke-width="3"/>
+<circle cx="72" cy="272.448" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="98.5714" cy="261.402" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="125.143" cy="250.356" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="151.714" cy="247.2" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="178.286" cy="247.726" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="204.857" cy="245.622" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="231.429" cy="241.94" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="258" cy="239.836" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="284.571" cy="240.362" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="311.143" cy="229.842" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="337.714" cy="209.328" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="364.286" cy="196.178" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="390.857" cy="185.658" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="417.429" cy="176.19" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="444" cy="168.3" r="3" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+<line x1="72" y1="405" x2="72" y2="411" stroke="#334155" stroke-width="1"/>
+<text x="72" y="434" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-weight="400">2012</text>
+<line x1="178.286" y1="405" x2="178.286" y2="411" stroke="#334155" stroke-width="1"/>
+<text x="178.286" y="434" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-weight="400">2016</text>
+<line x1="284.571" y1="405" x2="284.571" y2="411" stroke="#334155" stroke-width="1"/>
+<text x="284.571" y="434" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-weight="400">2020</text>
+<line x1="444" y1="405" x2="444" y2="411" stroke="#334155" stroke-width="1"/>
+<text x="444" y="434" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-weight="400">2026</text>
+<line x1="73" y1="278.448" x2="80" y2="301.448" stroke="#94a3b8" stroke-width="1"/>
+<text x="80" y="322.448" font-size="13.5" fill="#f59e0b" text-anchor="start" font-weight="600">$2,520</text>
+<text x="440" y="154.3" font-size="13.5" fill="#f59e0b" text-anchor="end" font-weight="600">$4,500</text>
+<line x1="24" y1="457" x2="456" y2="457" stroke="#334155" stroke-width="1"/>
+<text x="24" y="480" font-size="13.5" fill="#94a3b8" text-anchor="start" font-weight="400">Survey estimates include land and buildings.</text>
+<text x="24" y="501" font-size="13.5" fill="#94a3b8" text-anchor="start" font-weight="400">National averages, not local asking prices.</text>
+<text x="24" y="522" font-size="13.5" fill="#94a3b8" text-anchor="start" font-weight="400">Source: USDA NASS, Land Values 2026, p. 5.</text>
+</svg>

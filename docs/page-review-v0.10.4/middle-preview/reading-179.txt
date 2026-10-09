@@ -1,0 +1,23 @@
+Item Example entry
+Funding Partner covers supplies and transport;
+donated time and existing equipment
+recorded separately.
+Outcome to check All five deliveries arrive, people can use
+them, and the partnerʼs extra work shows
+up in the record.
+One harvest, five doors. Eight kilograms from the garden and two from the food partner keep
+the five-household promise. The buildings and route are illustrative; the vegetables supplement
+meals.
+Those vegetables supplement meals. They donʼt make five complete
+diets. A dependable baseline needs enough suitable food across sea-
+sons, prepared food for people who canʼt cook, and a plan for inter-
+Oneharvest,fivedoors
+1
+2
+3
+4
+1GARDEN8kgusable 2FOODPARTNER+2kg
+3PEOPLEPack,drive,confirm 4FIVEHOMES2kgeach,free
+Illustrativeroute.Vegetablessupplementmeals.
+SURVIVING THE SINGULARITY
+174

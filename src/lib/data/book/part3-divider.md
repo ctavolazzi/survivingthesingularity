@@ -2,8 +2,8 @@
 
 ![Pixel art: a container shouse with a lit window and rooftop solar, a wind turbine, garden rows, and a LoRa mast under a starry sky](/book-images/part3-divider.png)
 
-The fundamental shift is already here. It began with the 2017 change in machine learning architecture, and we are now moving toward the 2027 point where these systems begin improving themselves without human oversight. Most people are responding to this by retreating into panic or hoping that someone else will solve their problems. That is a mistake.
+The shift is already under way. It started with a 2017 change in how machines learn, and my bet is that by 2027 these systems will be doing serious work on improving themselves. Most people are responding by panicking or by waiting for someone else to handle it. That's a mistake.
 
-Survival is not about predicting the future; it is about building a foundation that works regardless of what the institutional grid does. It is about moving from a role of a passenger waiting for instructions to a person in full control of their own outcomes.
+Surviving this isn't about predicting the future. It's about building something that works whatever the forecast turns out to be. Begin with a person who needs something: a dinner they can use, a place to live, a repair, a safer way to work. Follow that need through the people, tools, land, and agreements that could meet it.
 
-This is how you build your own path, step by step.
+You can take part without owning land, a rack of servers, or a robot. You can also be the person receiving help. This is how you build your own path, step by step.

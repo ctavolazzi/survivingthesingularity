@@ -1,0 +1,52 @@
+{
+  "edition": "0.10.3",
+  "tool": "built-in image_gen",
+  "external_image_references": false,
+  "reviewed_assets": [
+    {
+      "file": "v103-narrative-bear-flag.png",
+      "sha256": "7aa5a7710cfefe8057c89ae992929d3dfe0c20ca8d14eebe3dd1c1dbc8acd767",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "scene_matches_canonical_anchor": true,
+      "caption_marks_fiction": true,
+      "review": "Composition, gesture, subject count, object continuity and absence of lettering checked. Grayscale and final placement are separately checked in PDF proof."
+    },
+    {
+      "file": "v103-narrative-near-end.png",
+      "sha256": "1ce1c5b7c3c4b9b3248e544348db0c9ad233a0b9f29f0e01d6413bcb13d786bc",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "scene_matches_canonical_anchor": true,
+      "caption_marks_fiction": true,
+      "review": "Composition, gesture, subject count, object continuity and absence of lettering checked. Grayscale and final placement are separately checked in PDF proof."
+    },
+    {
+      "file": "v103-narrative-passing-beans.png",
+      "sha256": "2565cbf444ee9bed4e7deb9a6d1c86c275924111a48b4f9e2f159f61dd1c70b4",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "scene_matches_canonical_anchor": true,
+      "caption_marks_fiction": true,
+      "review": "Composition, gesture, subject count, object continuity and absence of lettering checked. Grayscale and final placement are separately checked in PDF proof."
+    },
+    {
+      "file": "v103-narrative-rosa-testimony.png",
+      "sha256": "6af939a98b2962d68210858e07aec6e575c036ef96421946dcb9a68f245c8d3e",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "scene_matches_canonical_anchor": true,
+      "caption_marks_fiction": true,
+      "review": "Composition, gesture, subject count, object continuity and absence of lettering checked. Grayscale and final placement are separately checked in PDF proof."
+    }
+  ],
+  "scope": "Visual inspection of all four generated originals; chapter-specific captions and alt text. Illustrative choices are not additional canonical character facts."
+}

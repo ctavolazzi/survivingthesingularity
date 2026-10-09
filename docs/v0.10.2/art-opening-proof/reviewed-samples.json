@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex",
+  "method": "Direct visual inspection of each of the 20 browser screenshots through view_image at the 4.56-inch CSS print width. Labels, clipping, spacing, source notes, chart scales and non-color distinctions checked.",
+  "limits": "Not final PDF pagination, physical print contrast, or a proof of every future renderer.",
+  "samples": [
+    {
+      "file": "docs/v0.10.2/art-opening-proof/intro-nine-stages-screen.png",
+      "sha256": "ccbb431d55a43aff1034f55812ed17c5008fa5bbdcd55fbfa6e60d947739a926",
+      "svg_sha256": "431a84e360f009fd99134877c7281c012f0cb2d83d7a22c60634603830a92655",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/intro-nine-stages-print.png",
+      "sha256": "a4e2e67edfeaf19f9921fe9cf31044e0edb0c0208572d6dfefa991b296c61045",
+      "svg_sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch02-eighteen-days-screen.png",
+      "sha256": "a2bc46de2afd09d7e304257e64f8bd2c5ac0927ec549a4aaac97c1d8d757ce4f",
+      "svg_sha256": "a579b02ab771c23f6b9e41199742efd262c6843e9e4ace1c3f48784d99943235",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch02-eighteen-days-print.png",
+      "sha256": "8dcf11143ee6688616937b942ef7593699f7f4bd89bc393c50e36ca3106d2a9d",
+      "svg_sha256": "e197fe6b2a7b4a1bb622821c6a30118a072677ab80ffb8fe7c6cf7d438b5e281",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch05-horses-tractors-screen.png",
+      "sha256": "aea675f87d4a9ad6193813ec7208900513b4fe32a885147b0e6d361a967ae9af",
+      "svg_sha256": "3c719bd272eed866a71e4b278bf86f93c5ef326b343d3cfd517c0576b2ffbe4c",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch05-horses-tractors-print.png",
+      "sha256": "d4046c43aff3ce514751fe783065f98164181477742118b4a6922e103bd400ab",
+      "svg_sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch06-capability-access-screen.png",
+      "sha256": "484077c25604f36743fc0182badba631367dffb93049d34a591929ef28947edc",
+      "svg_sha256": "0d129784e51e948b36caca6ad34166a1025cc884d76948015af0dee123607a67",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch06-capability-access-print.png",
+      "sha256": "cb6316d904354839491edfba0ba2d06f667aa6b70cb2365b65c8b0be2fb611a0",
+      "svg_sha256": "835fbea5981ba3135ec49a81abd3cdbbff1d74fcc42905fb8b5ab545a8dec088",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-cognitive-extraction-screen.png",
+      "sha256": "741280844353215d09bc69e715252615763b9a9c4555a94d8a464ffe11ad65ba",
+      "svg_sha256": "406ffee7ab39d2ba53775aa940e19ac9325eeb4b9948b4ab2945c744e66dc0c9",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-cognitive-extraction-print.png",
+      "sha256": "f40dc96b92d96b39b593939b0b3ddb36c7773a17ead09d91d24e38c78be0b9d9",
+      "svg_sha256": "07cdb4846e81f113aaebb116266cca41d68c5a5c1cb57dd7732e4a72452d1dd4",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-focus-recovery-screen.png",
+      "sha256": "7c8dc564ae506d0d6b9a0c0dfc45276816af518c9fdd7b7e494a72cc69d7d05d",
+      "svg_sha256": "4a19df52fea817bf1e2f5935495df746b69866cc03b1785e5a3b733df48efd6f",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-focus-recovery-print.png",
+      "sha256": "e3a901eab5fc7a5f286cb2309ee1f45c600537c7f8478fbb6b37f7da69290547",
+      "svg_sha256": "626bb7d8fd6d6eaba363a40740bdbb08bf185490b359099ee4729da188a5a94c",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-firewall-pipeline-screen.png",
+      "sha256": "cc9123d8c70284203d36d46d9a2dba78c56e0c9445a40ae9ef67abc97880397d",
+      "svg_sha256": "2412069c23abcea5f167f638a6a4c0698dfeb62d603effe2e2e51dd443459c6c",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-firewall-pipeline-print.png",
+      "sha256": "683ae8708258c6d379f0b045e81c9c17549ce1b9f1dcb32635b63d62959dbfeb",
+      "svg_sha256": "bce21db24028e1bf29e75da76dde51da9c3cc393ccb7395350bcc6d1106f2ada",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-info-architectures-screen.png",
+      "sha256": "34a2641c52a380b37a21da85acb269f54db516f40924968c4100eea0dbc054d3",
+      "svg_sha256": "3f51494b754bdf9fac490df82780d81c89a0e1743db0783900ae26a268c4b4f3",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-info-architectures-print.png",
+      "sha256": "84c991cbc0001bc5085164a3e46e7b71e7dc983bd6fd2547e6904c4697e4ae96",
+      "svg_sha256": "b44e3a60851a59e55b59573c660ac023f2d3ef1057ddc09348b4ea0e0adf7d40",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-star-vs-mesh-screen.png",
+      "sha256": "d7af77891b37318d16327b4bc61b3afd7941475b43700484a2dcb9b2861a69b2",
+      "svg_sha256": "5d7d482a3ab6d1d9e3feea37c9b312898390d6823cee12f9f7c2ec602bef9d6b",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/ch08-star-vs-mesh-print.png",
+      "sha256": "1881015d6f6b7cd40daab1b14628a7aedad0e0e442f4c7777208556fc6e4247e",
+      "svg_sha256": "dc6d72da19ccc7b894b26b05b650172c7c2f30f15664d0a58b0af99c31b6bd86",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/intro-food-insecurity-screen.png",
+      "sha256": "87e1e379e6350782dde43945029be4f3558f549300ace0c2ce12567b9f29f95d",
+      "svg_sha256": "24cfe5c46899ed2a9509f6deb267fa54c5e9593a524a1f326a1c68dd7ea272b6",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    },
+    {
+      "file": "docs/v0.10.2/art-opening-proof/intro-food-insecurity-print.png",
+      "sha256": "fb9feab0494e4e7ebfe1ea12938c8c6b680c9d7b60c7459ecc8de7ca95eb2f8e",
+      "svg_sha256": "d9edaa0782d807968323c5b9c8bcab1d96485b0ec9e7989f0ef8302f77d6c610",
+      "finding": "Readable labels; no visible collision, clipping or unwanted line-through-label defect."
+    }
+  ]
+}

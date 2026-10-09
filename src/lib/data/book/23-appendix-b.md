@@ -1,162 +1,419 @@
-# APPENDIX B: WORKS CITED (RESEARCH & EVIDENCE SYNTHESIS)
+# Appendix B: Works Cited
 
-1. Strategic Preemption Under Shared Catastrophic Risk: The Suicide Region and the Race to Artificial General Intelligence - arXiv, https://arxiv.org/pdf/2512.07526 2. Generative AI Jobs Transformation Map - Workforce Singapore, https://www.swda.gov.sg/home/employers-industry-partners/jobs-transformation-maps/jobs-transformation-map-generative-ai 3. [1706.03762] Attention Is All You Need - arXiv, https://arxiv.org/abs/1706.03762 4. Attention is All you Need - NIPS, https://papers.nips.cc/paper/7181-attention-is-all-you-need 5. Understanding “Attention is All You Need” Using the 3-Pass Method, https://ai.plainenglish.io/i-finally-understood-attention-is-all-you-need-after-so-long-heres-how-i-did-it-263b46273f9f 6. Revolutionizing Sequence Modeling with the Transformer: What's the Hype About? (Part 2) | by CortexFlow | The Software Frontier | Medium, https://medium.com/the-software-frontier/revolutionizing-sequence-modeling-with-the-transformer-whats-the-hype-about-part-2-7cb0cd3b4c20 7. Attention Is All You Need - Wikipedia, https://en.wikipedia.org/wiki/Attention_Is_All_You_Need 8. Leveraging the True Depth of LLMs - arXiv, https://arxiv.org/html/2502.02790v3 9. The Crystallization of Transformer Architectures (2017-2025) - Jun Yu Tan, https://jytan.net/blog/2025/transformer-architectures/ 10. PaLM: Scaling Language Modeling with Pathways - arXiv, https://arxiv.org/pdf/2204.02311 11. Megatron-LM: Efficient Training of Large Models | PDF | Parallel Computing - Scribd, https://www.scribd.com/document/742340597/Megatron-LM 12. Brain cells in a dish learn to play Pong - Medicine, Nursing and Health Sciences, https://www.monash.edu/medicine/news/latest/2022-articles/brain-cells-in-a-dish-learn-to-play-pong 13. In vitro neurons learn and exhibit sentience when embodied in a simulated game-world, https://pubmed.ncbi.nlm.nih.gov/36228614/ 14. Biological Neurons Compete with Deep Reinforcement Learning in Sample Efficiency in a Simulated Gameworld - arXiv, https://arxiv.org/html/2405.16946v1 15. DishBrain: Are pong-playing neurons the future of AI? - Microscopy Australia, https://micro.org.au/news/dishbrain-are-pong-playing-neurons-the-future-of-ai/ 16. Brain cells in a lab dish learn to... (NPR News) - Behind the headlines - NLM - NCBI, https://www.ncbi.nlm.nih.gov/search/research-news/17391/ 17. What DishBrain Gets Right (and Wrong): How Living Neurons Are Rewiring the Future of AI Efficiency | by Octavian Boji | Medium, https://medium.com/@octavian.boji/what-dishbrain-gets-right-and-wrong-how-living-neurons-are-rewiring-the-future-of-ai-efficiency-dd54ec026473 18. Biological Neurons Compete with Deep Reinforcement Learning in Sample Efficiency in a Simulated Gameworld - ResearchGate, https://www.researchgate.net/publication/380907593_Biological_Neurons_Compete_with_Deep_Reinforcement_Learning_in_Sample_Efficiency_in_a_Simulated_Gameworld 19. Introduction - SITUATIONAL AWARENESS: The Decade Ahead, https://situational-awareness.ai/ 20. Leopold Aschenbrenner: Situational Awareness - Stanford Digital Economy Lab, https://digitaleconomy.stanford.edu/event/leopold-aschenbrenner-situational-awareness/ 21. How did Leopold do? Evaluating Situational Awareness's predictions, EA Forum, https://forum.effectivealtruism.org/posts/RuwF8FCfpsLeZRgur/how-did-leopold-do-evaluating-situational-awareness-s 22. Leopold Aschenbrenner - SITUATIONAL AWARENESS - The Decade Ahead, https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf 23. AI Timelines and National Security: The Obstacles to AGI by 2027 | Lawfare, https://www.lawfaremedia.org/article/ai-timelines-and-national-security--the-obstacles-to-agi-by-2027 24. (PDF) Thousands of AI Authors on the Future of AI - ResearchGate, https://www.researchgate.net/publication/396256646_Thousands_of_AI_Authors_on_the_Future_of_AI 25. Forecasting the Economic Effects of AI, https://forecastingresearch.org/research/economic-effects-of-ai 26. Thousands of AI Authors on the Future of AI - arXiv, https://arxiv.org/html/2401.02843v1 27. THOUSANDS OF AI AUTHORS ON THE FUTURE OF AI, https://aiimpacts.org/wp-content/uploads/2023/04/Thousands_of_AI_authors_on_the_future_of_AI.pdf 28. Surveying 2,700+ AI Researchers on the Industry's Future with Katja Grace of AI Impacts, https://www.cognitiverevolution.ai/surveying-2-700-ai-researchers-on-the-industrys-future-with-katja-grace-of-ai-impacts/ 29. Keynes and our grandchildren: Recapturing an alternative vision of economic progress, https://www.ippr.org/articles/keynes-and-our-grandchildren-recapturing-an-alternative-vision-of-economic-progress 30. Venture Capital in the age of zero-marginal labor | by Augustin Sayer - Medium, https://medium.com/entrepreneurial-resolutions/venture-capital-in-the-age-of-zero-marginal-labor-b6a6dc02574b 31. 2026 Polarization of Living Costs: Prices for items with 'physical constraints' such as energy, food, and prime real estate will soar (inflation), while prices for things that can be digitally substituted will fall (deflation). - note, https://note.com/brand_club/n/n89a7f2f0980c?hl=en 32. Fully Automated Luxury Communism - Wikipedia, https://en.wikipedia.org/wiki/Fully_Automated_Luxury_Communism 33. Fully automated luxury communism | Guardian sustainable business, https://www.theguardian.com/sustainable-business/2015/mar/18/fully-automated-luxury-communism-robots-employment 34. Fully Automated Luxury Communism: A Manifesto by Aaron Bastani | Goodreads, https://www.goodreads.com/book/show/37758635-fully-automated-luxury-communism 35. Marx was a Fully Automated Luxury Communist | Verso Books, https://www.versobooks.com/blogs/news/4356-marx-was-a-fully-automated-luxury-communist 36. Review: Aaron Bastani, 'Fully Automated Luxury Communism: A Manifesto', https://www.theoryculturesociety.org/blog/review-aaron-bastani-fully-automated-luxury-communism 37. The Revival of Utopian Socialism and the Productive Forces of Capital - Cambridge University Press & Assessment, https://www.cambridge.org/core/services/aop-cambridge-core/content/view/383588ACB20BF6D813B63030C012C936/stamped-9781108844154c5_p136-168_CBO.pdf/revival_of_utopian_socialism_and_the_productive_forces_of_capital.pdf 38. Fully Automated Luxury Communism: A Manifesto (Review by Bill Jefferies), http://www.socialisteconomist.com/2019/06/fully-automated-luxury-communism.html 39. Which theory is best? Explanatory models of the relationship between unemployment and health - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC2720386/ 40. 8. Unemployment and well-being Brendan Burchell and Alex J. Wood 8.1 Introduction Research by psychologists and others has consi, https://ora.ox.ac.uk/objects/uuid:8f0bed2a-0b11-4c47-8fd1-547693ffab34/files/m9cfab34e88c242e07e6368fa1ab9c865 41. (PDF) The need for work: Jahoda's latent functions of employment in a representative sample of the German population - ResearchGate, https://www.researchgate.net/publication/229915902_The_need_for_work_Jahoda's_latent_functions_of_employment_in_a_representative_sample_of_the_German_population 42. Taking Inspiration from Marie Jahoda - Global Dialogue, https://globaldialogue.isa-sociology.org/articles/taking-inspiration-from-marie-jahoda 43. Understanding unemployment: a sociological analysis of systemic challenges and social consequences - Frontiers, https://www.frontiersin.org/journals/sociology/articles/10.3389/fsoc.2025.1674918/full 44. Psychological distress and socio-economic consequences of unemployment: an exploratory analysis - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC12584458/ 45. Technological Unemployment Anxiety in the Post-Digital Ecosystem: A Bibliometric Analysis, https://www.mdpi.com/2075-4698/16/3/90 46. Heterogeneities in the latent functions of employment: New findings from a large-scale German survey - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC9428713/ 47. Economic Possibilities for our Grandchildren (1930), https://www.almendron.com/tribuna/wp-content/uploads/2024/03/intro-and-section-i.pdf 48. Economic possibilities for our grandchildren: 90 years later - EconStor, https://www.econstor.eu/bitstream/10419/283229/1/wp_1038.pdf 49. Economic Possibilities for Our Grandchildren: A Hopeful Vision for Post-Occupy Humanity circa 1930 - The Marginalian, https://www.themarginalian.org/2012/07/19/economic-possibilities-for-our-grandchildren-keynes-1930/ 50. Economic Possibilities for our Grandchildren by John Maynard Keynes 1930 - Marxists Internet Archive, https://www.marxists.org/reference/subject/economics/keynes/1930/our-grandchildren.htm 51. 14.13 Spring 2020 Lecture 21: Poverty through the Lens of Psychology - MIT OpenCourseWare, https://ocw.mit.edu/courses/14-13-psychology-and-economics-spring-2020/9c97c49fad40948dde979bb0b97bf4f2_MIT14_13S20_lec21.pdf 52. The Economics of Bandwidth - Psychology Today, https://www.psychologytoday.com/us/blog/reality-play/201309/the-economics-of-bandwidth 53. Scarcity mindset in reproductive health decision making: A qualitative study from rural Malawi - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC10783852/ 54. Poor concentration: Poverty reduces brainpower needed for navigating other areas of life, https://www.princeton.edu/news/2013/08/29/poor-concentration-poverty-reduces-brainpower-needed-navigating-other-areas-life 55. Tech pioneers and the neo-Luddite revolution | Roland Berger, https://www.rolandberger.com/en/Insights/Publications/Tech-pioneers-and-the-neo-Luddite-revolution.html 56. The rebel group stopping self-driving cars in San Francisco – one ..., https://www.theguardian.com/us-news/2023/jul/26/san-francisco-stop-self-driving-cars-traffic-cone-safe-street-rebel 57. Autonomous Vehicle Vandalism: Waymo, Cruise Fighting Back - Fifth Level Consulting, https://fifthlevelconsulting.com/autonomous-vehicle-vandalism/ 58. Vandals Set the Night on Fire | The Road to Autonomy, https://www.roadtoautonomy.com/vandals-set-night-fire/ 59. What the Luddites can teach us about the next tech rebellion - Fast Company, https://www.fastcompany.com/90949827/what-the-luddites-can-teach-us-about-standing-up-to-big-tech 60. What Today's Workers Can Learn From Machine-Breaking Luddites | Truthout, https://truthout.org/audio/what-todays-workers-can-learn-from-machine-breaking-luddites/ 61. Rage against robots: Emotional and motivational dimensions of anti-robot attacks, robot sabotage, and robot bullying - ResearchGate, https://www.researchgate.net/publication/369696304_Rage_against_robots_Emotional_and_motivational_dimensions_of_anti-robot_attacks_robot_sabotage_and_robot_bullying 62. "The Shouse" | 8kVA Inverter | 14.36kWH Battery | 8kW Solar - The Off-Grid Shop, https://www.theoffgridshop.com.au/products/48-volt-off-grid-kit-6-6kw-of-panels 63. Shouse: Architecture, History, Sustainability, Materials And Typical Prices - ArchitectureLab, https://www.architecturelab.net/building/shouse/ 64. Tag Archives: shouse - Hansen Pole Buildings, https://www.hansenpolebuildings.com/tag/shouse/ 65. "The Shouse" | 8kVA Inverter | 14.36kWH Battery | 8kW Solar - eBay Australia, https://www.ebay.com.au/itm/335823220350 66. schneider sw 4048 - Utility Shed Questions - DIY Solar Power Forum, https://diysolarforum.com/threads/schneider-sw-4048-utility-shed-questions.105650/ 67. Brooklyn Microgrid: A Blockchain Case Study | PDF | Distributed Generation | Electrical Grid, https://www.scribd.com/document/411843126/Designing-Microgrid-Energy-Markets-a-Case-StudyThe-Brooklyn-Microgrid 68. Energy Paradigm shift by implementing decentralized communities: A Case Study of the Brooklyn Microgrid - Solar Edition, https://solaredition.com/energy-paradigm-shift-by-implementing-decentralized-communities-a-case-study-of-the-brooklyn-microgrid/ 69. Accelerating Energy Transition with Blockchain Technology | IFPEN, https://www.ifpenergiesnouvelles.com/article/accelerating-energy-transition-blockchain-technology 70. Disrupting the Utility Model: Blockchain-Based Energy - EcoBlock, https://ecoblock.berkeley.edu/blog/disrupting-the-utility-model-blockchain-based-energy/ 71. Peer-to-Peer Energy Trading and Blockchain - Western Resource Advocates, https://westernresourceadvocates.org/wp-content/uploads/dlm_uploads/2019/06/Blockchain-PDF-NRE-Spring-2019.pdf 72. SPETS: Secure and Privacy-Preserving Energy Trading System in Microgrid - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC8662436/ 73. Modification of an automated precision farming robot for high temporal resolution measurement of leaf angle dynamics using stereo vision - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC11787487/ 74. Robotic 3D Flower Pose Estimation for Small-Scale Urban Farms - arXiv, https://arxiv.org/html/2509.02870v1 75. A review of adaptable technologies for robotic urban horticulture - Frontiers, https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2025.1605107/pdf 76. How much food can FarmBot grow?, https://farm.bot/pages/yield 77. Machines: Global Village Construction Set - Open Source Ecology, https://www.opensourceecology.org/gvcs/ 78. Mycodo - Environmental Monitoring and Regulation System (Kyle Gabriel), https://github.com/kizniche/Mycodo 79. Review on AutoSeed: Smart Seeding Tray Robot with IoT Integration, https://journal.pktm.com.my/index.php/ijtvet/article/view/179 80. Is FarmBot's current architecture holding it back? - Reddit, https://www.reddit.com/r/farmbot/comments/1pn3r2d/is_farmbots_current_architecture_holding_it_back/ 81. Towards a Sustainable Circular Economy: Algae-Based Bioplastics and the Role of Internet-of-Things and Machine Learning, https://d-nb.info/1308833946/34 82. Green Synthesis of Bioplastics from Microalgae: A State-of-the-Art Review - MDPI, https://www.mdpi.com/2073-4360/16/10/1322 83. WASTEWATER MATTER: FROM ALGAE TO BIO-ALGAE PLASTIC 3D PRINTED FAÇADE ELEMENT - WIT Press, https://www.witpress.com/Secure/elibrary/papers/MC21/MC21017FU1.pdf 84. Algae-Based 3D-Printing Filaments - Global Opportunity Explorer, https://goexplorer.org/algae-based-3d-printing-filaments/ 85. Biocompatible and Biodegradable 3D Printing from Bioplastics: A Review - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC10221408/ 86. A Circular Plastics Concept That Applies Underutilized Biomass and Cell-Plastics Technology in Japanese Industries and Regions - MDPI, https://www.mdpi.com/2076-3417/16/9/4401 87. Additive manufacturing with biobased materials as a step toward a circular economy - Open Research Amsterdam, https://openresearch.amsterdam/image/2025/3/14/schepers_amanda_final_thesis.pdf 88. Does the Future of 3D Printing Lie in Bioplastic Made of Algae? - RESET.ORG, https://en.reset.org/algix-3d-druck-algen-07052018/ 89. Biodegradable 3D Printing Materials | Xometry Pro, https://xometry.pro/en-eu/articles/3d-printing-biodegradable/ 90. Advances in Algae-Based Bioplastics: From Strain Engineering and Fermentation to Commercialization and Sustainability - ResearchGate, https://www.researchgate.net/publication/396241949_Advances_in_Algae-Based_Bioplastics_From_Strain_Engineering_and_Fermentation_to_Commercialization_and_Sustainability 91. University of Southampton Research Repository, https://eprints.soton.ac.uk/448530/1/Final_Thesis_Florence_Muindi_Mbithi_UoSID_28470206.pdf 92. Metallized film capacitors used for EMI filtering: A reliability review - ResearchGate, https://www.researchgate.net/publication/330058880_Metallized_film_capacitors_used_for_EMI_filtering_A_reliability_review 93. a) Droplet self‐splitting strategy for simultaneous multiple reactions.... - ResearchGate, https://www.researchgate.net/figure/aDroplet-self-splitting-strategy-for-simultaneous-multiple-reactions-bMicrodroplet_fig1_340551698 94. A Bayesian Approach to the Simulation Argument - MDPI, https://www.mdpi.com/2218-1997/6/8/109 95. Simulation hypothesis - Wikipedia, https://en.wikipedia.org/wiki/Simulation_hypothesis 96. The Simulation Argument: Why the Probability That You Are Living in a Matrix is Quite High - by Nick Bostrom (Times Higher Education Supplement, May 16, 2003) - AWS, https://wmit-pages-prod.s3.amazonaws.com/wp-content/uploads/sites/283/2022/06/12151116/simulation.pdf 97. [2008.12254] A Bayesian Approach to the Simulation Argument - arXiv, https://arxiv.org/abs/2008.12254 98. Understanding the simulation argument - Philosophy Stack Exchange, https://philosophy.stackexchange.com/questions/54936/understanding-the-simulation-argument 99. A Bayesian Approach to the Simulation Argument - ResearchGate, https://www.researchgate.net/publication/343931892_A_Bayesian_Approach_to_the_Simulation_Argument 100. Why You're Probably Not a Simulation - YouTube, https://www.youtube.com/watch?v=HA5YuwvJkpQ 101. A Bayesian Approach to the Simulation Argument | Hacker News, https://news.ycombinator.com/item?id=26688295 102. Quick Guide to What and How: Unpaid Care Work – Entry Points to Recognise, Reduce and Redistribute, https://cdn.sida.se/publications/files/sida61314en-quick-guide-to-what-and-how-unpaid-care-work.pdf 103. A Model for Monitoring Access - Access to Health Care in America - NCBI Bookshelf - NIH, https://www.ncbi.nlm.nih.gov/books/NBK235891/ 104. A Comparative Perspective on Long-Term Care Systems - EconStor, https://www.econstor.eu/bitstream/10419/263444/1/dp15228.pdf
+These sources support particular claims, not the book's entire proposal. Original documents establish what someone wrote or did; research studies test narrower questions; institutional and company histories supply context from their own perspectives. A historical analogy remains an argument the reader can challenge. Fictional scenes, the Thanksgiving 2027 forecast, and the proposed food guarantee are not findings of the sources below.
 
-## Historical Cases and the Cyberdeck Record (added 2026-07-12)
+## Food, work, and access
 
-105. What Kodak Said About Digital Photography in 1975 - PetaPixel, https://petapixel.com/2017/09/21/kodak-said-digital-photography-1975/
-106. How Kodak Failed - Forbes, https://www.forbes.com/sites/chunkamui/2012/01/18/how-kodak-failed/
-107. Claim That Kodak Hid Its Invention of Digital Camera Not So Simple - Snopes, https://www.snopes.com/fact-check/kodak-digital-camera-invention/
-108. Sears Could've Been Amazon. Here's How It Blew Its Chances - Fortune, https://fortune.com/longform/sears-couldve-been-amazon/
-109. Blockbuster Could Have Bought Netflix for $50 Million, but the CEO Thought It Was a Joke - Inc., https://www.inc.com/minda-zetlin/netflix-blockbuster-meeting-marc-randolph-reed-hastings-john-antioco.html
-110. Fact Check: Did Blockbuster Turn Down Chance to Buy Netflix for $50 Million - Newsweek, https://www.newsweek.com/fact-check-did-blockbuster-turn-down-chance-buy-netflix-50-million-1575557
-111. Borders Bankruptcy: Done In by Its Own Stupidity, Not the Internet - Slate, https://slate.com/business/2011/07/borders-bankruptcy-done-in-by-its-own-stupidity-not-the-internet.html
-112. Locomotive Acts (the Red Flag Act, 1865) - Wikipedia, https://en.wikipedia.org/wiki/Locomotive_Acts
-113. The Red Flag Act - The Open University Law School, https://law-school.open.ac.uk/blog/red-flag-act
-114. In Praise of Scribes (De Laude Scriptorum), Johannes Trithemius, 1492 - Internet Archive, https://archive.org/details/inpraiseofscribe0000trit
-115. The Media's First Moral Panic (the 18th-century novel-reading panic) - History Today, https://www.historytoday.com/archive/media%E2%80%99s-first-moral-panic
-116. Vogrinčič, The Novel-Reading Panic in 18th-Century England: An Outline of an Early Moral Media Panic, https://hrcak.srce.hr/en/clanak/49661
-117. The Moral and Medical Panic Over Bicycles - McGill Office for Science and Society, https://www.mcgill.ca/oss/article/history-did-you-know/moral-and-medical-panic-over-bicycles
-118. Bicycle Face: A Guide to Victorian Cycling Diseases - Sheila Hanlon, http://www.sheilahanlon.com/?p=1990
-119. John Philip Sousa, The Menace of Mechanical Music, Appleton's Magazine, 1906 (full text via MIT OCW), https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf
-120. John Philip Sousa Feared "The Menace of Mechanical Music" - Smithsonian Magazine, https://www.smithsonianmag.com/smart-news/john-philip-sousa-feared-menace-mechanical-music-180967063/
-121. Quartz Crisis - Wikipedia, https://en.wikipedia.org/wiki/Quartz_crisis
-122. The Quartz Crisis and Recovery of Swiss Watches - The Seiko Museum Ginza, https://museum.seiko.co.jp/en/knowledge/relation_11/
-123. How Swatch Saved the Swiss Watch Industry - Quill & Pad, https://quillandpad.com/2024/05/18/how-swatch-saved-the-swiss-watch-industry/
-124. What Is a Cyberdeck? - The Cyberdeck Cafe, https://cyberdeck.cafe/mix/what-is-a-cyberdeck
-125. Cyberdeck Build Guide - The Cyberdeck Cafe, https://cyberdeck.cafe/build
-126. Cyberdeck - Wikipedia, https://en.wikipedia.org/wiki/Cyberdeck
-127. 2022 Cyberdeck Contest: Picking the Best of the Best - Hackaday, https://hackaday.com/2022/10/13/2022-cyberdeck-contest-picking-the-best-of-the-best/
-128. 2023 Cyberdeck Challenge: The Best Decks on the Net - Hackaday, https://hackaday.com/2023/09/07/2023-cyberdeck-challenge-the-best-decks-on-the-net/
-129. What Is a Cyberdeck? The DIY Tech Trend Gaining Traction with Gen Z - Forbes, https://www.forbes.com/sites/technology/article/what-is-a-cyberdeck/
-130. What Is a "Cyberdeck": Meet Gen Z's New DIY Obsession - Newsweek, https://www.newsweek.com/what-is-a-cyberdeck-gen-zs-new-custom-computing-obsession-11787017
-131. LoRa-Linked Meshtastic Cyberdeck in a Clarinet Case - Hackster.io, https://www.hackster.io/news/this-lora-linked-meshtastic-cyberdeck-repurposes-an-old-clarinet-case-as-a-robust-housing-7b65661aa74d.amp
-132. Fallout Cyberdeck (EMP-hardened, Kiwix/SDR loadout) - Hackaday.io, https://hackaday.io/project/195667-fallout-cyberdeck
+- **Food security:** FAO, [An Introduction to the Basic Concepts of Food Security](https://www.fao.org/4/al936e/al936e00.pdf) (2008). The guide distinguishes availability, access, utilization, and stability. Producing enough food does not by itself ensure that a household can obtain and use it.
+- **Agricultural automation:** FAO, [The State of Food and Agriculture 2022: Leveraging Automation in Agriculture for Transforming Agrifood Systems](https://www.fao.org/agrifood-economics/publications/detail/en/c/1613500/). An institutional synthesis of opportunities and adoption barriers, including the position of smaller producers. It does not demonstrate universal provision by an autonomous farm.
+- **Employment exposure:** International Labour Organization, [Generative AI and Jobs: A Refined Global Index of Occupational Exposure](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure) (2025), with the [2025 update](https://www.ilo.org/publications/generative-ai-and-jobs-2025-update). These estimates concern tasks potentially affected by generative AI. Exposure is not a count of observed layoffs or a prediction that every exposed job disappears.
+- **Workers' conditions:** Better Work Jordan, [Annual Report 2024: An Industry and Compliance Review](https://betterwork.org/wp-content/uploads/English-BWJ-Annual-Report-2024-1.pdf), reporting January to December 2023. ILO and IFC assessment and survey evidence. The factory case discussed in Chapter 7 appears in the summary findings; the report expressly distinguishes its severe violations from typical conditions in the sector.
+- **Common rights and enclosure:** UK Parliament, [Enclosing Land](https://www.parliament.uk/about/living-heritage/transformingsociety/towncountry/landscape/overview/enclosingland/). An institutional historical overview of changes to land use and common rights. Common land did not mean unrestricted access for every person.
+- **Garden machinery:** FarmBot, [Tools](https://farm.bot/pages/tools). Manufacturer documentation of particular seeding, watering, and weeding functions. It establishes the advertised design and tasks, not independent results for complete diets or delivery to households.
+- **Growing sites:** US Environmental Protection Agency, [Urban Agriculture](https://www.epa.gov/brownfields/urban-agriculture). Guidance on site history and potentially contaminated land. It is background for evaluating a site, not a safety finding about the fictional garden.
+- **Living soil:** University of Minnesota Extension, [Soil Biology](https://extension.umn.edu/natural-resources/conservation/agricultural-soil-and-water/soil-biology). Extension guidance on soil organisms and their different functions.
+- **Waste pathways:** US Environmental Protection Agency, [Learn About Aquatic Trash](https://www.epa.gov/trash-free-waters/learn-about-aquatic-trash). Background on how waste reaches waterways. The behavioral effects of a proposed cleanup machine would require their own evaluation.
 
-## The Precedent Ledger Sources (added 2026-07-18)
+## Useful capability and its limits
 
-133. Centennial Exhibition, Philadelphia 1876 (Bell telephone demonstration) - Wikipedia, https://en.wikipedia.org/wiki/Centennial_Exhibition
-134. Flying Machines Which Do Not Fly, New York Times editorial, October 9, 1903 - Wikipedia, https://en.wikipedia.org/wiki/Flying_Machines_Which_Do_Not_Fly
-135. Did Wright Brothers Fly Same Year NYT Said Flying Machines Could Take 10M Years To Develop? - Snopes, https://www.snopes.com/fact-check/wright-brothers-first-flight/
-136. Zheng He and the Ming treasure voyages - Wikipedia, https://en.wikipedia.org/wiki/Zheng_He
-137. Haijin (the Ming sea ban) - Wikipedia, https://en.wikipedia.org/wiki/Haijin
-138. Copernican Revolution - Wikipedia, https://en.wikipedia.org/wiki/Copernican_Revolution
-139. Horsepower (Watt's unit and the steam engine) - Wikipedia, https://en.wikipedia.org/wiki/Horsepower
-140. Horses in the United States (population peak and collapse) - Wikipedia, https://en.wikipedia.org/wiki/Horses_in_the_United_States
-141. Neolithic Revolution - Wikipedia, https://en.wikipedia.org/wiki/Neolithic_Revolution
-142. Neolithic in the Near East (health and stature decline in early farmers) - Wikipedia, https://en.wikipedia.org/wiki/Neolithic_in_the_Near_East
-143. Luddite (frame-breaking, the Frame Breaking Act, the York executions) - Wikipedia, https://en.wikipedia.org/wiki/Luddite
-144. Torches of Freedom (Bernays, 1929 Easter parade) - Wikipedia, https://en.wikipedia.org/wiki/Torches_of_Freedom
-145. Edward Bernays - Wikipedia, https://en.wikipedia.org/wiki/Edward_Bernays
+- John Jumper and colleagues, [Highly Accurate Protein Structure Prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2), *Nature* 596 (2021), 583–589. Original research on protein-structure prediction. Better structural information can aid research; a predicted structure is not itself a treatment.
+- Jonathan M. Stokes and colleagues, [A Deep Learning Approach to Antibiotic Discovery](https://doi.org/10.1016/j.cell.2020.01.021), *Cell* 180 (2020), 688–702.e13. Original laboratory research using a neural network to identify antibacterial candidates, followed by experiments including mouse infection models. This is not evidence of an established general cure in humans. The [open manuscript](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) corresponds to PMID 32084340.
+- Sellafield Ltd, [Sellafield Robotics: Using Spot More for Spotless Nuclear Clean-up](https://www.gov.uk/government/news/sellafield-robotics-using-spot-more-for-spotless-nuclear-clean-up) (23 March 2023). An operator's account of remotely operated inspection and cleaning in hazardous areas. It documents a particular deployment, with people and specialist equipment, rather than autonomous removal of every kind of toxic waste.
+- National Institute of Standards and Technology, [Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf), NIST AI 600-1 (July 2024). The final publication identifies risks including erroneous outputs, privacy loss, harmful bias, security failures, and environmental effects. These concerns require attention alongside the distribution of economic benefits.
 
-## Defining the Singularity: The Primary Lineage (added 2026-07-26)
+## Intelligence and forecasts
 
-*Every quotation in Chapter 1's definitional history was checked against the primary text or the closest available full-text archive, not against a secondary summary. Where the compiled list that prompted this section attributed a line loosely, the entry below carries the corrected source: Butler's "no security" sentence is from Erewhon (1872), which grew out of the 1863 newspaper letter, and is cited here as such.*
+- Ashish Vaswani and colleagues, [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (2017). The original Transformer paper. Its architecture and reported experiments do not establish an AGI date.
+- I. J. Good, [Speculations Concerning the First Ultraintelligent Machine](https://vtechworks.lib.vt.edu/bitstream/handle/10919/89424/TechReport05-3.pdf), *Advances in Computers* 6 (1965), 31–88. A facsimile of the essay, hosted by Virginia Tech. The intelligence-explosion argument is a conditional prospect, not a demonstrated sequence of unlimited improvement.
+- Vernor Vinge, [The Coming Technological Singularity: How to Survive in the Post-Human Era](https://edoras.sdsu.edu/~vinge/misc/singularity.html) (1993). Author-hosted text of the VISION-21 paper. Its thirty-year forecast belongs to its 1993 context and does not substantiate this book's 2027 expectation.
+- Eliezer Yudkowsky, [Three Major Singularity Schools](https://intelligence.org/2007/09/30/three-major-singularity-schools/) (30 September 2007), hosted by Machine Intelligence Research Institute. An author's conceptual distinction among accelerating change, an event horizon, and an intelligence explosion. Useful for understanding the term's different meanings, not independent confirmation of any forecast.
 
-146. Nikola Danaylov, 17 Definitions of the Technological Singularity - Singularity Weblog, https://www.singularityweblog.com/17-definitions-of-the-technological-singularity/
-147. Samuel Butler and the Technological Singularity - Singularity Weblog, https://www.singularityweblog.com/samuel-butler/
-148. R. Thornton, The Expounder of Primitive Christianity, vol. 4, Ann Arbor, Michigan, 1847, p. 281 (the earliest known description of machines remedying their own defects); see Technological singularity - Wikipedia, https://en.wikipedia.org/wiki/Technological_singularity
-149. Samuel Butler, "Darwin among the Machines," The Press, Christchurch, New Zealand, 13 June 1863, published under the pseudonym Cellarius - Wikisource, https://en.wikisource.org/wiki/Darwin_among_the_Machines
-150. Samuel Butler, Erewhon, or Over the Range (1872), "The Book of the Machines," source of the "no security against the ultimate development of mechanical consciousness" passage - Project Gutenberg, https://www.gutenberg.org/ebooks/1906
-151. Darwin among the Machines - Wikipedia, https://en.wikipedia.org/wiki/Darwin_among_the_Machines
-152. Alan Turing, "Intelligent Machinery, A Heretical Theory," c. 1951, lecture to the '51 Society, Manchester; reprinted in The Essential Turing (Oxford) - full text via gwern, https://gwern.net/doc/ai/1951-turing.pdf
-153. AMT-B-4, "Intelligent Machinery, A Heretical Theory" - The Turing Digital Archive, King's College Cambridge, https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4
-154. Stanislaw Ulam, "Tribute to John von Neumann," Bulletin of the American Mathematical Society 64, no. 3, part 2 (May 1958), p. 5, source of the "essential singularity" passage; see Technological singularity - Wikipedia, https://en.wikipedia.org/wiki/Technological_singularity
-155. I.J. Good, "Speculations Concerning the First Ultraintelligent Machine," Advances in Computers, vol. 6 (1965), source of the "intelligence explosion" - Wikipedia entry with citation, https://en.wikipedia.org/wiki/I._J._Good
-156. Vernor Vinge, "The Coming Technological Singularity: How to Survive in the Post-Human Era," VISION-21 Symposium, NASA Lewis Research Center and the Ohio Aerospace Institute, March 30-31, 1993 - full text, https://edoras.sdsu.edu/~vinge/misc/singularity.html
-157. Hans Moravec, Mind Children: The Future of Robot and Human Intelligence, Harvard University Press, 1988 - Wikipedia, https://en.wikipedia.org/wiki/Mind_Children
-158. Nick Bostrom, "How Long Before Superintelligence?," 1997, revised through 2008 - author's own site, https://nickbostrom.com/superintelligence
-159. Ray Kurzweil, The Singularity Is Near: When Humans Transcend Biology, Viking, 2005 - Wikipedia, https://en.wikipedia.org/wiki/The_Singularity_Is_Near
-160. Eliezer Yudkowsky, "Three Major Singularity Schools," September 2007 - author's own site, https://yudkowsky.net/singularity/schools/
-161. John Smart, Acceleration Watch (the "permanent and irreversible developmental phase change" framing), http://www.accelerationwatch.com/
-162. Beckett Sterner et al., "Past Visions of Artificial Futures: One Hundred and Fifty Years under the Spectre of Evolving Machines" - arXiv, https://arxiv.org/pdf/1806.01322
-146. Late Bronze Age collapse - Wikipedia, https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse
-147. Eric H. Cline, 1177 B.C.: The Year Civilization Collapsed - Wikipedia, https://en.wikipedia.org/wiki/1177_B.C.:_The_Year_Civilization_Collapsed
-148. Homestead Acts (1862) - Wikipedia, https://en.wikipedia.org/wiki/Homestead_Acts
-149. Sears Modern Homes (mail-order kit houses, 1908-1942) - Wikipedia, https://en.wikipedia.org/wiki/Sears_Modern_Homes
-150. Kit house - Wikipedia, https://en.wikipedia.org/wiki/Kit_house
-151. The Victory Garden - Smithsonian Gardens, https://gardens.si.edu/learn/blog/the-victory-garden/
-152. Victory Gardens: Food for the Fight - The National WWII Museum, https://www.nationalww2museum.org/war/articles/victory-gardens-world-war-ii
-153. Common sense; addressed to the inhabitants of America (Robert Bell's first Philadelphia printing, 1776; collation [4], 79, [1] pp.) - Library of Congress, https://www.loc.gov/item/2006681076/
-154. Whole Earth Catalog ("Access to Tools"; Jobs's "Google in paperback form") - Wikipedia, https://en.wikipedia.org/wiki/Whole_Earth_Catalog
-155. Year 2000 problem (remediation costs and outcome debate) - Wikipedia, https://en.wikipedia.org/wiki/Year_2000_problem
-156. Y2K bug - Encyclopaedia Britannica, https://www.britannica.com/technology/Y2K-bug
-157. Clifford Stoll, "The Internet? Bah!" / "Why the Web Won't Be Nirvana," Newsweek, February 27, 1995, https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306
-158. "The Internet? Bah!" Classic Off-Target Essay Appeared 20 Years Ago - Poynter, https://www.poynter.org/reporting-editing/2015/the-internet-bah-classic-off-target-essay-appeared-20-years-ago/
-159. Did Paul Krugman Say the Internet's Effect on the World Economy Would Be "No Greater Than the Fax Machine's"? - Snopes, https://www.snopes.com/fact-check/paul-krugman-internets-effect-economy/
-160. Quote Origin: The Internet's Impact on the Economy Has Been No Greater Than the Fax Machine's - Quote Investigator, https://quoteinvestigator.com/2023/10/26/internet-fax/
-161. Daily Mail, December 5, 2000: "Internet 'may be just a passing fad as millions give up on it'" (page scan), https://markcarrigan.net/2024/02/17/daily-mail-2000-the-internet-may-just-be-a-passing-fad-as-millions-give-up-on-it/
+## Historical cases
 
-## Stage 2 Modern Evidence (added 2026-07-18)
+The case numbers match the precedents and Appendix D. Where a source is a company history, archive description, or later scholarly interpretation, that status is stated rather than presented as an eyewitness record.
 
-162. White House AI crackdown opens door for Chinese model makers to close gap - CNBC, June 30, 2026, https://www.cnbc.com/2026/06/30/white-house-ai-china-crackdown.html
-163. AI Export Controls Fail Their First Real Test: GLM-5.2 Cybersecurity Benchmarks Expose the Gap - Tech Times, June 28, 2026, https://www.techtimes.com/articles/319234/20260628/ai-export-controls-fail-their-first-real-test-glm-52-cybersecurity-benchmarks-expose-gap.htm
-164. Z.ai Releases GLM-5.2 as US Restricts Anthropic Models - Let's Data Science, https://letsdatascience.com/news/zai-releases-glm-52-as-us-restricts-anthropic-models-7fe0d44d
-165. GLM-5.2 Signals a New Phase of Accessible Frontier AI - Arctic Wolf, https://arcticwolf.com/resources/blog/glm-5-2-signals-new-phase-accessible-frontier-ai-and-a-shift-in-cyber-risk/
+### P-01: Reading and moral concern
 
-## The Cyberdeck Revival (added 2026-07-18)
+Ana Vogrinčič, [The Novel-Reading Panic in 18th-Century England: An Outline of an Early Moral Media Panic](https://hrcak.srce.hr/en/clanak/49661) (2008). Historical scholarship on concerns about novel reading. Richard Brinsley Sheridan's [The Rivals](https://www.gutenberg.org/cache/epub/24761/pg24761.html) (1775), Act I, supplies an original literary example of hostility to circulating libraries. A character's speech illustrates a debate; it does not measure how everyone felt.
 
-166. Cyberdecks are having a moment, rejecting big tech surveillance with style and substance - TechCrunch, June 2, 2026, https://techcrunch.com/2026/06/02/cyberdeck-tiktok-trend-reject-big-tech/
-167. Neuromancer (William Gibson, 1984; origin of the "cyberspace deck") - Wikipedia, https://en.wikipedia.org/wiki/Neuromancer
-168. uConsole Review: A Portable Linux Cyberdeck - Mobile Hacker, March 30, 2026, https://www.mobile-hacker.com/2026/03/30/uconsole-review-a-portable-linux-cyberdeck/
-169. ClockworkPi uConsole (modular handheld Linux cyberdeck) - ClockworkPi, https://www.clockworkpi.com/uconsole
-170. HackBerry Pi CM5 (Compute Module 4/5 handheld deck) - Carbon Computers, https://carboncomputers.us/
-171. Building the Ultimate Cyberdeck: My Custom Hackberry Pi - Eclypsium, https://eclypsium.com/blog/build-the-ultimate-cyberdeck-hackberry-pi/
-172. therustyrobot/cyberdeck: portable offline knowledge, AI, and mesh communication platform - GitHub, https://github.com/therustyrobot/cyberdeck
-173. Kiwix (offline Wikipedia and reference libraries) - Kiwix, https://kiwix.org/
-174. Meshtastic (open-source LoRa mesh messaging) - Meshtastic, https://meshtastic.org/
-175. RTL-SDR (low-cost software-defined radio receiver) - RTL-SDR.com, https://www.rtl-sdr.com/about-rtl-sdr/
-176. Computer Fraud and Abuse Act, 18 U.S.C. Sec. 1030 - Wikipedia, https://en.wikipedia.org/wiki/Computer_Fraud_and_Abuse_Act
-177. Van Buren v. United States (2021; narrowing "exceeds authorized access") - Wikipedia, https://en.wikipedia.org/wiki/Van_Buren_v._United_States
-178. Understanding the FCC Part 15 rules for unlicensed radio devices - FCC / 47 CFR Part 15, https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15
-179. I 3D Printed a Photobioreactor (open-source algae reactor for a home aquaponics loop) - SECTOR 07, https://www.youtube.com/watch?v=SLckTj_tJg4
-180. Mad scientist's homestead is parking size, off-grid system (EasyGrow vertical hydroponics and self-built wind turbines) - Kirsten Dirksen, https://www.youtube.com/watch?v=QSnHShly5R0
-181. Build an Automated Hydroponic System (open-source Mycodo automation) - Kyle Gabriel, https://www.youtube.com/watch?v=nyqykZK2Ev4
-182. Introducing the SANANBIO Uplift, A Fully-Automated Vertical Farming Platform - SANANBIO, https://www.youtube.com/watch?v=0s4YwzbUzhw
+Jane Austen, [Northanger Abbey, Chapter 5](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0005) and [Chapter 25](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0025), public-domain text, Project Gutenberg. Primary literary testimony: the narrator defends novels while the story examines mistaken inferences. Fictional incidents are distinguished from evidence about real readers.
 
-## P-01 Primary Sources (added 2026-07-26)
+### P-02: Bell at the fair
 
-183. Enos Hitchcock, Memoirs of the Bloomsgrove Family, Vol. 2 (1790) - primary source for the "free access which many young people have to romances, novels, and plays" passage - Internet Archive, https://archive.org/details/bim_eighteenth-century_memoirs-of-the-bloomsgro_hitchcock-enos_1790_2
-184. Richard Brinsley Sheridan, The Rivals (1775), Act I Scene 2 - Sir Anthony Absolute's "as an ever-green tree, of diabolical knowledge" line; punctuation modernized in the Preface - Wikipedia, https://en.wikipedia.org/wiki/The_Rivals
+Alexander Graham Bell, [letter to Alexander Melville Bell and Eliza Symonds Bell, 27 June 1876](https://tile.loc.gov/storage-services/service/mss/magbell/005/00500228/00500228.pdf), Library of Congress transcript. Bell describes his demonstration and the reactions of William Thomson and Emperor Dom Pedro. The Library's [Inventing Telephones at the Centennial](https://lcm.loc.gov/issue/may-june-2026/inventing-telephones-at-the-centennial/) supplies historical context for the telephone and the exhibition's machinery. Neither establishes a universal rule about what crowds or experts can recognize.
 
-## P-02 Primary Sources (added 2026-07-26)
+Bell's [official transcript PDF](https://tile.loc.gov/storage-services/service/mss/magbell/005/00500228/00500228.pdf), pages 1–2, distinguishes his demonstration from the audience reactions reported to him by Willie Hubbard. The closing discussion records a proposed alliance, not a completed agreement.
 
-185. Everyone Wanted Alexander Graham Bell to Debut the Telephone at the Philadelphia Centennial Exhibition. He Almost Avoided It Entirely (judges' heat exhaustion and the "come back tomorrow" deferral; Thomson served as receiver) - Smithsonian Magazine, https://www.smithsonianmag.com/smithsonian-institution/everyone-wanted-alexander-graham-bell-to-debut-the-telephone-at-the-philadelphia-centennial-exhibition-he-almost-walked-away-first-180989016/
-186. Lord Kelvin (Sir William Thomson) on Bell's telephone, "the most wonderful thing in America ... the greatest by far of all the marvels of the electric telegraph" - University of Glasgow, https://www.gla.ac.uk/news/archiveofnews/2024/may/headline_1076640_en.html
+### P-03: The aviation forecast
 
-## P-09 Primary Sources (added 2026-07-26)
+New York Times, [Flying Machines Which Do Not Fly](https://timesmachine.nytimes.com/timesmachine/1903/10/09/102025405.html) (9 October 1903), with an accessible [transcription of the editorial](https://en.wikisource.org/wiki/The_New_York_Times/1903/10/9/Flying_Machines_Which_Do_Not_Fly). This is one newspaper's prediction, not a survey of aeronautical opinion.
 
-*A correction of record. Earlier drafts of P-09 stated that the twelve thousand troops deployed against the Luddites were "more than Wellington had just taken to fight Napoleon in the Peninsula." That comparison has been cut. It does not survive checking, and by this book's own standard (see Appendix D, "Sourcing") a claim that cannot survive a primary source gets removed rather than softened. Its provenance: Frank Darvall wrote in 1934 only that the anti-Luddite force was larger than many armies with which British generals had won foreign campaigns, and named no one; the Wellington comparison was added later by Eric Hobsbawm in "The Machine Breakers." It fails on the numbers. Britain committed roughly forty-three thousand troops to the Peninsula during 1808 (Wellesley's initial nine thousand, six thousand in reinforcements, Baird's thirteen thousand and Moore's fifteen thousand in October), and by 1812, the year the Frame Breaking Act passed and the risings peaked, there were some fifty thousand British soldiers in the Peninsula, rising to seventy-three thousand by October 1813. Only the narrow reading that Wellesley sailed from Cork with eleven thousand men makes the comparison work. It also fails qualitatively: the anti-Luddite force was largely militia and yeomanry, not regulars available for overseas service. The twelve thousand figure itself is Darvall's and stands; only the comparison attached to it was wrong.*
+Wilbur Wright, [letter to the Smithsonian Institution, May 30, 1899](https://siarchives.si.edu/history/featured-topics/stories/letter-dated-may-30-1899), archival transcription. NASA Glenn, [Wright 1901 Wind Tunnel](https://www.grc.nasa.gov/WWW/K-12/airplane/wrights/tunnel.html), historical engineering account. The two sources support the reading request and experimental work that precede the later flight.
 
-187. Frank Ongley Darvall, Popular Disturbances and Public Order in Regency England: Being an Account of the Luddite and Other Disorders in England during the Years 1811-1817 (Oxford University Press, 1934), p. 260 - origin of the twelve thousand troop figure and of the "larger than many actual armies" comparison, https://books.google.com/books/about/Popular_Disturbances_and_Public_Order_in.html?id=-2FnAAAAMAAJ
-188. Anton Howes, "Were more troops sent to quash the Luddites than to fight Napoleon?" - traces the Wellington comparison from Darvall through Hobsbawm's Labouring Men and quantifies the British commitment to the Peninsula in 1808 and 1812, https://medium.com/@antonhowes/were-more-troops-sent-to-quash-the-luddites-than-to-fight-napoleon-233c802c216d
-189. Eric Hobsbawm, "The Machine Breakers," in Labouring Men: Studies in the History of Labour (1964) - the essay in which the Wellington comparison first appears, cited here as the source of the error rather than as authority for it, https://libcom.org/article/machine-breakers-eric-hobsbawm
-190. The York Special Commission, January 1813 - sixty-four charged, twenty-four convicted; three men (George Mellor, William Thorpe, Thomas Smith) hanged 8 January for the murder of William Horsfall, and fourteen more on 16 January in two groups of seven, at eleven o'clock and half past one - Luddite Bicentenary, http://ludditebicentenary.blogspot.com/2013/01/16th-january-1813-14-convicted-luddites.html
-191. 1813: 14 Luddites at York - independent corroboration of the 16 January execution count, the two groups of seven and their times - Executed Today, https://www.executedtoday.com/2013/01/16/1813-14-luddites-at-york/
-192. The proclamation of Ned Ludd - The National Archives (UK), https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-proclamation-of-ned-ludd/
+### P-04: Road regulation
 
-## P-20 Primary Sources (added 2026-07-27)
+[Locomotives Act 1865](https://www.legislation.gov.uk/ukpga/Vict/28-29/83/pdfs/ukpga_18650083_en.pdf), 28 & 29 Vict., chapter 83, especially section 3. Original statute specifying operating restrictions, including a person carrying a red flag ahead of the vehicle. The law alone cannot establish its eventual economic effects.
 
-*A correction of record. Earlier drafts of this precedent, then numbered P-19, were titled "Forty-Seven Pages" and stated that Common Sense ran forty-seven pages, and that it was "proportionally one of the most widely read things ever printed in America." Neither survives checking. The forty-seven figure traces to the opening sentence of the Wikipedia article, which gives no citation for it, and no bibliography supports it; the Robert Bell first printing of January 1776 collates [4], 79, [1] pp. in the Library of Congress record, echoed by the auction houses that handle the book. The precedent is now titled "Seventy-Nine Pages" and names the edition in the text, because the count is edition-dependent and a bare number invites the same error back. The readership claim rested on sales figures of one hundred twenty thousand, one hundred fifty thousand and half a million copies that Trish Loughran has shown trace to no source; her far upper limit is seventy-five thousand, from roughly twenty-five printings at a ceiling of three thousand each, and she believes the true number was well below it. The text now gives the printing count, which is the hardest fact available and comes from the skeptic's own tally, rather than a superlative resting on numbers nobody can substantiate.*
+[House of Lords debate, May 26, 1865, columns 867–872](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading), on the Locomotives on Roads Bill. A primary record of competing arguments and participants' reported experiences. Speeches do not establish either the safety of the machines or the later effects of the law.
 
-193. Common sense; addressed to the inhabitants of America (Robert Bell's first Philadelphia printing, 1776) - the bibliographic collation [4], 79, [1] pp. behind the seventy-nine page figure - Library of Congress, https://www.loc.gov/item/2006681076/
-194. Trish Loughran, "Disseminating Common Sense: Thomas Paine and the Problem of the Early National Bestseller," American Literature 78:1 (2006) - the revision of the circulation figures and the source of the roughly twenty-five printings count, https://read.dukeupress.edu/american-literature/article-pdf/78/1/1/391397/AL078-01-01LoughranFpp.pdf
-195. Thomas Paine's Inflated Numbers - traces the one hundred twenty thousand and one hundred fifty thousand sales figures to no source and summarizes Loughran's seventy-five thousand ceiling - Journal of the American Revolution, https://allthingsliberty.com/2013/03/thomas-paines-inflated-numbers/
-196. The Royal Navy during the American Revolution - the 1775 Admiralty abstract, one hundred thirty-one ships of the line and two hundred nine smaller vessels, behind "the largest navy on Earth" - American Battlefield Trust, https://www.battlefields.org/learn/articles/royal-navy-during-american-revolution
+[Highways and Locomotives (Amendment) Act 1878](https://www.legislation.gov.uk/ukpga/Vict/41-42/77/pdfs/ukpga_18780077_en.pdf), section 29, and [Locomotives on Highways Act 1896](https://www.legislation.gov.uk/ukpga/Vict/59-60/36/pdfs/ukpga_18960036_en.pdf), sections 1 and 4. Original statutes: the first changes the advance-walker rule in England; the second exempts a defined light-locomotive class and sets a higher speed ceiling for it.
 
-## P-10 Primary Sources (added 2026-07-27)
+### P-05: Ming voyages
 
-*The two advertisements reproduced in Chapter 7 were read from the original page scans, not from the secondary articles that circulate them. Both ran in Exhibitors Herald-World, the film exhibitors' trade weekly, and both were digitized by the Media History Digital Library and are hosted at the Internet Archive; the page numbers and dates below are from the mastheads. Both are in the public domain in the United States, the 1929 page since January 1, 2025 and the 1930 page since January 1, 2026. On the enrollment figures: two million is the number the union printed in its own May 1930 advertisement and two and a half million is the number it gave the trade press the same week. Both are the American Federation of Musicians' own claims, they were never independently audited, and the book presents them as claims.*
+Hong Kong Government, [Exhibition Follows the Footsteps of Zheng He](https://www.info.gov.hk/gia/general/200602/21/P200602210148.htm) (21 February 2006), announcing an exhibition at Hong Kong Museum of History. Institutional context for the seven voyages of 1405–1433. For a participant's account, see Ma Huan, *Ying-yai Sheng-lan: The Overall Survey of the Ocean's Shores*, translated by J. V. G. Mills (1970), identified in the [Indiana University library catalogue](https://iucat.iu.edu/iub/6311122). The catalogue identifies the edition; it is not a substitute for reading the translated text.
 
-197. American Federation of Musicians, "Taking Liberties With Folks' Habits" (advertisement) - the 1929 robot ad, source of "Is the Robot such good company he can 'hog the whole show?'" and "Dehumanizing the theatre may prove to be an exceedingly dangerous move" - Exhibitors Herald-World, November 16, 1929, p. 35, https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up
-198. American Federation of Musicians / Music Defense League, "Is the Robot Fooling YOU?" (advertisement) - the 1930 robot ad, source of the two-million enrollment claim and the mail-in coupon text - Exhibitors Herald-World, May 17, 1930, p. 44, https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up
-199. "2,500,000 Members for Music Defense League" - the trade-press report of the union's enrollment claim and of its charge against "industrialists who control canned music in theatres" - Motion Picture News, May 17, 1930, p. 40, https://archive.org/details/motionnew41moti/page/n267/mode/2up
-200. John Philip Sousa, "The Menace of Mechanical Music," Appleton's Magazine 8 (1906) - source of the vocal-cord passage - full text, MIT OpenCourseWare, https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf
-201. Smithsonian Magazine, "Musicians Wage War Against Evil Robots" - the Music Defense League's formation, its half-million-dollar advertising spend, and the newspapers and dates the robot ads ran in, https://www.smithsonianmag.com/history/musicians-wage-war-against-evil-robots-92702721/
-202. 1942-1944 musicians' strike - the ban's start on August 1, 1942, its end on November 11, 1944, and the settlement order (Decca and World, September 1943; Capitol, October 11, 1943; RCA Victor and Columbia, November 11, 1944) - Wikipedia, https://en.wikipedia.org/wiki/1942%E2%80%931944_musicians%27_strike
-203. James Petrillo - the AFM presidency from 1940 to 1958, the 1948 second ban settled December 14, 1948, and the Lea Act of 1946, nicknamed the Anti-Petrillo Act - Wikipedia, https://en.wikipedia.org/wiki/James_Petrillo
-204. Music Performance Trust Fund - the 1948 origin, the continuing royalty from the signatory labels, and the admission-free performances it still funds - MPTF, https://musicpf.org/about/
-205. Jack Valenti, testimony on home recording of copyrighted works ("the VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone") - Hearings before the Subcommittee on Courts, Civil Liberties and the Administration of Justice, House Committee on the Judiciary, 1982 - transcript, https://cryptome.org/hrcw-hear.htm
-206. Home Taping Is Killing Music - the BPI campaign launched October 28, 1981, and the blank-tape levy that Britain never enacted - Wikipedia, https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music
+Edward L. Dreyer, *Zheng He: China and the Oceans in the Early Ming Dynasty, 1405–1433* (Pearson Longman, 2007), appendix, [translations of primary sources](https://edspace.american.edu/justinjacobs/wp-content/uploads/sites/986/2022/12/31-Historical-Accounts-of-Zheng-He.pdf), especially the Liujiagang inscription on printed pages 191–193. This is the expedition's account, in a modern translation; its claims of order and protection require recognition of the speaker's position.
 
----
+### P-06: Copernican astronomy
+
+Nicolaus Copernicus, [De Revolutionibus Orbium Coelestium](https://www.loc.gov/item/46031925/) (1543), digitized edition and collection description, Library of Congress. The work places a moving Earth among the planets. The record does not by itself reconstruct the entire later history of its reception.
+
+Copernicus, [dedication to Paul III](https://hti.osu.edu/sites/hti.osu.edu/files/dedication_of_the_revolutions_of_the_heavenly_bodies_to_pope_paul_iii.pdf), Harvard Classics translation hosted by Ohio State. Sachiko Kusukawa, [Copernicus's Book](https://www.sites.hps.cam.ac.uk/starry/coperbooks.html), Cambridge History and Philosophy of Science (1999). Together they distinguish Copernicus's stated purpose and supporters from the framing added by Osiander during publication.
+
+### P-07: Horses and measurement
+
+US Department of Agriculture, [Farm Production Practices, Costs, and Returns](https://downloads.usda.library.cornell.edu/usda-esmis/files/7m01bk68h/d217qs47w/4f16c641b/frmprodcostreturn_Farm_Production_Practices_Costs_and_Returns__1910-48.pdf), Statistical Bulletin 83 (1949), especially table 14, printed page 45. Historical estimates put the combined population of horses and mules **on farms** at its peak in 1918. The report describes a transition involving machinery, feed, wages, and other costs; it does not isolate one cause or measure all working animals everywhere.
+
+Science Museum Group, [Original Indenture of Agreement for Erection of a Rotative Engine](https://collection.sciencemuseumgroup.org.uk/objects/co50966/original-indenture-of-agreement-for-erection-of-a-agreements), March 1, 1786, object 1908-185. Museum catalogue of a particular contract and its business context. It supplies responsibilities and payment terms; it is not a complete account of all consequences of mechanization.
+
+### P-08: The agricultural transition
+
+Amanda Mummert, Emily Esche, Joshua Robinson, and George J. Armelagos, [Stature and Robusticity During the Agricultural Transition: Evidence from the Bioarchaeological Record](https://pubmed.ncbi.nlm.nih.gov/21507735/), *Economics & Human Biology* 9 (2011), 284–301. A scholarly synthesis of skeletal evidence. Its account of health burdens and variation should not be converted into a claim that every farming population experienced the same change.
+
+For an original study combining skeletal and genetic evidence, see [An Integrative Skeletal and Paleogenomic Analysis of Stature Variation Suggests Relatively Reduced Health for Early European Farmers](https://doi.org/10.1073/pnas.2106743119), *Proceedings of the National Academy of Sciences* (2022). Its European sample and adjustments for ancestry limit how widely the result can be generalized.
+
+UNESCO World Heritage Centre, [Neolithic Site of Çatalhöyük](https://whc.unesco.org/en/list/1405/). Institutional description of the settlement's layout and surviving material culture.
+
+Clark Spencer Larsen and colleagues, [Bioarchaeology of Neolithic Çatalhöyük Reveals Fundamental Transitions in Health, Mobility, and Lifestyle in Early Farmers](https://doi.org/10.1073/pnas.1904345116), *Proceedings of the National Academy of Sciences* 116 (2019), 12615–12623; [open manuscript](https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/3/58744/files/2020/10/Catalhoyuk-PNAS-Publication.pdf). Original research, especially manuscript pages 5–6; includes contrasting indicators rather than uniform deterioration.
+
+### P-09: The Luddites
+
+UK National Archives, [The Proclamation of Ned Ludd](https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-proclamation-of-ned-ludd/). An original proclamation with archival transcription and historical context. It supports discussion of labor conditions, threats, and repression, without reducing all participants to a single motive.
+
+Kevin Binfield, [Luddite History](https://campus.murraystate.edu/academic/faculty/kBinfield/luddites/LudditeHistory.htm), excerpt from the historical introduction to *Writings of the Luddites* (Johns Hopkins University Press, 2004). Historical scholarship on the particular trades, negotiations, and material conditions behind the protests.
+
+### P-10: Musicians and recorded sound
+
+Music Performance Trust Fund, [About](https://musicpf.org/about/). The fund's institutional account traces its establishment in 1948 to agreements between the American Federation of Musicians and recording companies. It documents a negotiated mechanism for financing admission-free performances. It does not imply that every playback of a recording generates a payment to this fund.
+
+University of Maryland Special Collections in Performing Arts, [The Recording Ban of 1942](https://exhibitions.lib.umd.edu/songsofwar/wwii/currents/recording-ban), in *Modern Songs of War and Conflict*, curated by Ben Jackson. Institutional account of the commercial recording dispute, inventories, and different settlement dates.
+
+### P-11: Torches of Freedom
+
+Vanessa Murphree, [Edward Bernays's 1929 “Torches of Freedom” March: Myths and Historical Significance](https://aquila.usm.edu/fac_pubs/18673/), *American Journalism* 32 (2015), 258–281. Original historical research questioning the event's later mythology, including the account of a uniformly receptive press. A [contemporary photograph of Nancy Hardin and Edith Lee](https://www.loc.gov/item/2015647632/), dated 31 March 1929, is held by the Library of Congress. The photograph records an event, not its long-term causal effect on smoking.
+
+Edward L. Bernays, [Propaganda](https://www.gutenberg.org/cache/epub/78634/pg78634-images.html) (New York: Horace Liveright, 1928), chapter IV, pages 54–56. Primary text describing a hypothetical piano-marketing method. It establishes what Bernays advocated, not universal effectiveness.
+
+Vanessa Murphree, [Teaching Our Journal: Edward Bernays's 1929 “Torches of Freedom” March](https://www.american-journalism.org/teaching-our-journal/teaching-our-journal-edward-bernayss-1929-torches-of-freedom-march/), *American Journalism*. The researcher's account of methods, archival limitations, and contemporary press responses.
+
+The [Library of Congress digital-object record](https://www.loc.gov/pictures/resource/ds.07375/), digital ID ds.07375, supplies another locator for the photograph cited above.
+
+### P-12: Bronze Age disruption
+
+A. Bernard Knapp and Sturt W. Manning, [Crisis in Context: The End of the Late Bronze Age in the Eastern Mediterranean](https://doi.org/10.3764/aja.120.1.0099), *American Journal of Archaeology* 120 (2016), 99–149. Archaeological scholarship emphasizing regional differences and the interaction of possible causes. The case is not evidence of a single synchronized collapse caused by one variable.
+
+Institute of Nautical Archaeology, [Uluburun Late Bronze Age Shipwreck Excavation](https://nauticalarch.org/projects/uluburun-late-bronze-age-shipwreck-excavation/). The excavating institution's account of the vessel, surviving cargo, and interpretation. The wreck predates the later crisis; it does not identify that crisis's cause.
+
+### P-13: Trithemius and media
+
+Johannes Trithemius, [De Laude Scriptorum](https://digital.ub.uni-paderborn.de/eab/content/structure/1387797), Mainz: Peter Friedberg, 1494, digitized printed edition held by Paderborn University Library. The treatise was composed in 1492. Its defense of scribal work appeared in print. Jeremy Norman's [historical note on vellum and paper](https://www.historyofinformation.com/detail.php?id=337) explains the preservation argument. Neither source warrants turning a nuanced position into wholesale hostility to printing.
+
+Bibliothèque nationale de France, [La Bible de Gutenberg](https://www.bnf.fr/fr/la-bible-de-gutenberg), especially “Un rare témoin de la date d’impression de la Bible.” Institutional collection study including transcribed inscriptions. Supports the Cremer example without supplying an employment history of all scribes.
+
+### P-14: Quartz watches
+
+Seiko Museum, [The Quartz Crisis and Recovery of Swiss Watches](https://museum.seiko.co.jp/en/knowledge/relation_11/). A manufacturer-associated museum's history of quartz competition and Swiss responses. It includes Swiss technical participation and economic pressures, complicating the story that one side simply failed to see the invention.
+
+CSEM, [Historical Timeline](https://www.csem.ch/en/history-and-start-ups), entries for 1962 and 1967. Institutional history of electronic-watch research.
+
+Swatch Group, [Company History](https://www.swatchgroup.com/en/swatch-group/swatch-group-history), entry for 1983. Manufacturer's account of product and production design.
+
+### P-15: Homesteading
+
+US National Archives, [Homestead Act of 1862](https://www.archives.gov/milestone-documents/homestead-act), original act and transcript. National Park Service, [Homestead History and Culture](https://www.nps.gov/home/learn/historyculture/index.htm), supplies the necessary context of prior Indigenous habitation and displacement. The legal transfer of land must not be confused with the land having been empty or universally available.
+
+US Capitol Visitor Center, [Homesteading Certificate of Eligibility, Daniel Freeman, January 20, 1868](https://www.visitthecapitol.gov/artifact/homesteading-certificate-eligibility-daniel-freeman-january-20-1868). Certificate and institutional description of Freeman completing the five-year requirement. The 1862 Act above also provided a paid route to earlier title.
+
+### P-16: Mail-order houses
+
+Cynthia E. Johnson, [House in a Box: Prefabricated Housing in the Jackson Purchase Cultural Landscape Region, 1900 to 1960](https://heritage.ky.gov/Documents/HouseinaBox.pdf), Kentucky Heritage Council, edited by Rachel Kennedy. An institutional historical and field-survey study of precut and other prefabricated houses, including Sears and competing producers. It documents manufacturing and distribution methods that still required land, assembly, and local work.
+
+### P-17: A company under pressure
+
+Kodak, [Milestones](https://www.kodak.com/en/company/page/milestones/). Company chronology documenting digital work and emergence from Chapter 11 in 2013. It is evidence against the claim that Kodak never participated in digital imaging, but an interested corporate history is not a complete explanation of the company's financial difficulties.
+
+Swiss Camera Museum, [1975: The Invention](https://www.cameramuseum.ch/en/discover/permanent-exhibition/the-digital-revolution/1975-the-invention/). Institutional account of Sasson's prototype.
+
+### P-18: Related capabilities, new uses
+
+Fujifilm, [Healthcare](https://www.fujifilm.com/us/en/about/hq/corporate/field/healthcare) and [Corporate History](https://global.fujifilm.com/en/about/corporate/history). The company's account describes applications of its materials and imaging expertise in other fields, including healthcare. This documents its stated strategy and activities, not a controlled comparison proving why one company succeeds and another struggles.
+
+Fujifilm Holdings, [90th Anniversary Corporate History](https://holdings.fujifilm.com/special/90th/en/history/), sections on the transition from photographic film and the 2004 plan.
+
+Fujifilm, [ASTALIFT History](https://ls-jp.fujifilm.com/astaliftbrand/about/history/), Japanese brand chronology, especially 2004 and 2007. Used for commercialization history, not product efficacy.
+
+### P-19: Victory gardens
+
+US Office of War Information, [Plant a Victory Garden](https://digital.library.unt.edu/ark:/67531/metadc550/) (1943), government poster preserved by University of North Texas. National Park Service, [The World War II Home Front](https://home.nps.gov/articles/wwiihomefront.htm), provides the broader mobilization context. Estimates about garden vegetables must not be restated as shares of all food or all nutrition.
+
+- United States Department of Agriculture, Committee on Victory Gardens, [The 1943 Victory Garden Program](https://www.govinfo.gov/content/pkg/GOVPUB-PR32_4400-4381b818c763ffa7d714174f6cc65de7/pdf/GOVPUB-PR32_4400-4381b818c763ffa7d714174f6cc65de7.pdf). Reprinted by the US Office of Civilian Defense, March 1943. Original program document, especially pages 3–4 on allotments, water, advice, tools, school-garden staffing, and preservation. It records planned arrangements rather than measured nationwide compliance.
+- National Park Service, [Victory Gardens on the World War II Home Front](https://www.nps.gov/articles/000/victory-gardens-on-the-world-war-ii-home-front.htm). Institutional historical account, including gardens maintained by incarcerated Japanese Americans. Distinguishes residential gardens from camp production farms and gives context that aggregate harvest figures cannot supply.
+
+### P-20: An argument in circulation
+
+Thomas Paine, *Common Sense* (1776). Library of Congress [collection record for the book](https://www.loc.gov/item/04002086/) and [exhibition context](https://www.loc.gov/exhibitions/declarations-promise/visual-descriptions/drafting-the-declaration/). These identify the work and its argument for independence. Its circulation does not establish that one pamphlet alone caused a revolution.
+
+- University of Michigan, Clements Library, [Going Viral in 1776](https://clements.umich.edu/exhibit/revolutionary-paine/going-viral-in-1776/). Exhibition descriptions of Bell, Bradford, and London editions of Common Sense. Supports the paper wrapper, two-shilling price, anonymous issue, printing dispute, and handwritten additions in the library's Almon copy.
+- University of Minnesota Law Library, [Common Sense, Philadelphia, 1776](https://librarycollections.law.umn.edu/treasures/index.php?npage=13), Treasures of the Riesenfeld Center. Description of an enlarged Bradford edition and the author-printer dispute over profits. The account establishes the described competing positions, not an independent audit of Bell's books.
+
+### P-21: Whole Earth Catalog
+
+[Whole Earth Catalog, Fall 1968](https://wholeearth.info/p/whole-earth-catalog-fall-1968), digitized issue indexed by Whole Earth Index. An original example of gathering tools and practical information. Steve Jobs's [2005 Stanford commencement address](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says) is the primary source for his later comparison of the catalog to Google in paperback form. His analogy is a recollection, not a claim that the catalog already provided an internet search engine.
+
+- [Whole Earth Catalog, Fall 1968: sample pages reproduced with later anniversary annotations](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf). The contents and purpose/function page establish examples and selection criteria; the added availability warnings belong to the later reprint.
+- David Senior, Museum of Modern Art Library, [Access to Tools: Publications from the Whole Earth Catalog, 1968–1974](https://www.moma.org/interactives/exhibitions/2011/AccesstoTools/) (2011). Institutional exhibition history of the catalog, affiliated Truck Store, and reader contributions.
+
+### P-22: Y2K preparation
+
+US General Accounting Office, [Year 2000 Computing Challenge: Lessons Learned Can Be Applied to Other Management Challenges](https://www.gao.gov/products/aimd-00-290), AIMD-00-290 (2000). A government review of preparation and management practices. It documents substantial work; it cannot directly observe the global outcome of a world in which that work never happened.
+
+For AIMD-00-290, see especially printed pages 29–32 of the [complete report](https://www.gao.gov/assets/aimd-00-290.pdf) for HUD's dependency inventory and the reported Oak Ridge file-transfer failure and tested tape fallback. These cases document preparation and recovery, not a world observed without remediation.
+
+- US General Accounting Office, [Social Security Administration: Year 2000 Readiness Efforts Helped Ensure Century Rollover and Leap Year Success](https://www.gao.gov/products/aimd-00-125), AIMD-00-125 (19 April 2000), including subsequent recommendation-status updates. Supports continued contingency planning and the explicitly later April 2004 separation of validation testing from development.
+
+### P-23: The National Health Service (Chapter 19)
+
+UK Government History blog, [The founding of the NHS: 75 years on](https://history.blog.gov.uk/2023/07/13/the-founding-of-the-nhs-75-years-on/) (13 July 2023). Government historians' account of the Beveridge Report's five giants, the limits of wartime health insurance (about half the population covered; hospital, specialist, dental, optical, and hearing services excluded), doctors' concerns and Bevan's answer, and the service's launch on 5 July 1948 as the first free-at-the-point-of-use medical care for a whole population in a western country.
+
+Aneurin Bevan, *In Place of Fear* (1952), chapter 5, [transcribed by Public Matters](https://publicmatters.org.uk/2019/02/05/aneurin-bevans-1952-essay-on-the-nhs-chapter-5-of-in-place-of-fear/). Source of the epigraph: "no society can legitimately call itself civilized if a sick person is denied medical aid because of lack of means."
+
+### P-24: Internet forecasts
+
+Clifford Stoll, [Why the Web Won't Be Nirvana](https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306), *Newsweek* (February 1995), also known by the print title “The Internet? Bah!” The publisher's archival version is the source for this dated forecast. The case concerns Stoll's argument, not a representative sample of every critic of the internet.
+
+Clifford Stoll, [attributed excerpt of his 1995 Newsweek essay](https://www.elon.edu/u/imagining/expert_predictions/the-internet-bah-why-cyberspace-isnt-and-never-will-be-nirvana/), in Elon University's Imagining the Internet archive. An additional access point for the particular claims discussed here.
+
+Tim Smith and François Flückiger, [Licensing the Web](https://home.cern/science/computing/the-birth-of-the-web/licensing-web/), CERN. Institutional history reproducing the 1993 release terms and describing the 1994 licensing decision. Specific software permissions are distinguished from universal internet access.
+
+## Historical context for provision
+
+### British Restaurants (Chapter 11)
+
+UK Parliament, Hansard, [British Restaurants, May 28, 1941](https://api.parliament.uk/historic-hansard/commons/1941/may/28/british-restaurants), House of Commons, volume 371, columns 1853–1854. Recorded questions and ministerial replies about local organization.
+
+UK Parliament, Hansard, [British Restaurants and Works Canteens, October 1, 1941](https://api.parliament.uk/historic-hansard/commons/1941/oct/01/british-restaurants-and-works-canteens), House of Commons, volume 374, columns 572–573. Supplies and private-caterer objections.
+
+UK Parliament, Hansard, [Food Distribution, October 2, 1941](https://api.parliament.uk/historic-hansard/commons/1941/oct/02/food-distribution-1). Includes the Fishmongers' Hall complaint. Statements in debate document participants' arguments rather than independently measured outcomes.
+
+UK Parliament, Hansard, [British Restaurants (Prices), March 17, 1942](https://hansard.parliament.uk/commons/1942-03-17/debates/55709938-4ce9-4237-ba1f-14645cb0f860/WrittenAnswers), Written Answers, Food Supplies. Official financial principles.
+
+### New Communities (Chapter 12)
+
+SNCC Digital Gateway, [New Communities Formed in Southwest Georgia](https://snccdigital.org/events/new-communities-formed-in-southwest-georgia/). Institutional civil-rights history with listed archival and oral-history sources.
+
+Ellen Sabina, [A Conversation with Shirley Sherrod](https://www.mainefarmlandtrust.org/blogs/a-conversation-with-shirley-sherrod), Maine Farmland Trust, published February 29, 2024; interview conducted June 2023. Participant testimony, attributed as such in the chapter.
+
+### Vienna municipal housing (Chapter 13)
+
+City of Vienna, Municipal and Provincial Archives, [From Red Vienna to the Ständestaat, 1918–1938](https://www.wien.gv.at/en/education/history-red-vienna). Institutional retrospective on municipal government and housing.
+
+City of Vienna, Rathauskorrespondenz, [Der Karl-Marx-Hof ist 60](https://presse.wien.gv.at/1990/10/11/der-karl-marx-hof-ist-60), October 11, 1990. German anniversary notice describing the complex and ongoing renovation plans.
+
+## Additional chapter sources
+
+Much of what follows was researched for earlier editions, cut in v0.8.0, and restored in v0.9.0. Later additions support the expanded manuscript and corrections through v0.10.2. Figures quoted from a builder's own video or a company's own history are attributed as such in the text.
+
+### Introduction and Chapter 1: definitions, forecasts, and the Transformer
+
+- Nikola Danaylov, [17 Definitions of the Technological Singularity](https://www.singularityweblog.com/17-definitions-of-the-technological-singularity/), Singularity Weblog. Sixteen definitions and an empty seventeenth slot; source of the Thornton (1847) and Kevin Kelly definitions.
+- Samuel Butler, ["Darwin among the Machines"](https://en.wikisource.org/wiki/Darwin_among_the_Machines), *The Press*, Christchurch, 13 June 1863; and [*Erewhon*](https://www.gutenberg.org/ebooks/1906) (1872).
+- Alan Turing, ["Intelligent Machinery, A Heretical Theory"](https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4), c. 1951, Turing Digital Archive, King's College Cambridge.
+- Stanislaw Ulam's 1958 recollection of John von Neumann, as quoted in Vinge's essay, listed above.
+- Hans Moravec, *Mind Children* (Harvard University Press, 1988); Nick Bostrom, ["How Long Before Superintelligence?"](https://nickbostrom.com/superintelligence) (1997, revised); Ray Kurzweil, *The Singularity Is Near* (Viking, 2005); John Smart, [Acceleration Watch](http://www.accelerationwatch.com/).
+- Leopold Aschenbrenner, [Situational Awareness: The Decade Ahead](https://situational-awareness.ai/) (2024). One insider's argument, cited as such.
+- Katja Grace and colleagues, [Thousands of AI Authors on the Future of AI, revision 3](https://arxiv.org/abs/2401.02843v3), first published 2024, revised 2025. Source of the 2022 and 2023 aggregate forecasts, the 10 percent probability of high-level machine intelligence by 2027, and the extinction-risk responses. The surveys used changing samples; the displayed dates are aggregate probability thresholds, not every respondent revising a personal date.
+- Brett J. Kagan and colleagues, [In vitro neurons learn and exhibit sentience when embodied in a simulated game-world](https://pubmed.ncbi.nlm.nih.gov/36228614/), *Neuron* (2022). The DishBrain *Pong* study; see also the [2024 comparison with deep reinforcement learning](https://arxiv.org/abs/2405.16946).
+- Aaron Bastani, *Fully Automated Luxury Communism* (Verso, 2019).
+
+- Stanford HAI, [AI Index Report 2025, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf). The historical query-price comparison fixes a GPT-3.5-level MMLU threshold. It does not measure energy per task or equivalence across all work.
+
+### Chapters 3 and 4: the far horizon
+
+- Nick Bostrom, ["Are You Living in a Computer Simulation?"](https://simulation-argument.com/simulation.pdf), *Philosophical Quarterly* 53 (2003).
+- David Kipping, ["A Bayesian Approach to the Simulation Argument"](https://www.mdpi.com/2218-1997/6/8/109), *Universe* 6 (2020).
+- Copernicus's dedication and the Osiander preface are listed under P-06 above.
+
+- NASA, [Hubble Views the Star that Changed the Universe](https://science.nasa.gov/missions/hubble/hubble-views-the-star-that-changed-the-universe/) (2011). Institutional history of the Cepheid observations that placed Andromeda outside the Milky Way.
+
+### Chapter 5: energy and the cyberdeck lineage
+
+- *The Times* (London), July 1816, on the waltz as an "indecent foreign dance," as quoted in John Hood, [Hayek, Strauss, and the Political Waltz](https://fee.org/articles/hayek-strauss-and-the-political-waltz/), Foundation for Economic Education (2005). A secondary quotation; the 1816 issue itself was not inspected.
+- McGill Office for Science and Society, [The Moral and Medical Panic Over Bicycles](https://www.mcgill.ca/oss/article/history-did-you-know/moral-and-medical-panic-over-bicycles), on "bicycle face."
+- John Philip Sousa, ["The Menace of Mechanical Music"](https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf), *Appleton's Magazine* (1906), full text via MIT OpenCourseWare.
+- William Gibson, *Neuromancer* (1984), origin of the "cyberspace deck."
+
+- Raspberry Pi, [Computer Hardware: Maximum Power Output](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#maximum-power-output), and E Ink, [Benefits: Bi-Stability](https://www.eink.com/tech/detail/Benefits). Manufacturer documentation on peripheral budgets and static display retention. Neither establishes total draw or battery runtime for a particular cyberdeck.
+
+### Chapter 7: work, loss, and the labor campaigns
+
+- Karsten I. Paul and Bernad Batinic, ["The need for work: Jahoda's latent functions of employment in a representative sample of the German population"](https://www.researchgate.net/publication/229915902_The_need_for_work_Jahoda's_latent_functions_of_employment_in_a_representative_sample_of_the_German_population), *Journal of Organizational Behavior* (2010).
+- John Maynard Keynes, ["Economic Possibilities for our Grandchildren"](https://www.marxists.org/reference/subject/economics/keynes/1930/our-grandchildren.htm) (1930).
+- Anandi Mani, Sendhil Mullainathan, Eldar Shafir, and Jiaying Zhao, ["Poverty Impedes Cognitive Function"](https://www.science.org/doi/10.1126/science.1238041), *Science* 341 (2013), the sugarcane-harvest study; and Mullainathan and Shafir, *Scarcity* (2013).
+- The Guardian, ["The rebel group stopping self-driving cars in San Francisco"](https://www.theguardian.com/us-news/2023/jul/26/san-francisco-stop-self-driving-cars-traffic-cone-safe-street-rebel) (26 July 2023), on Safe Street Rebel and coning.
+- Brian Merchant, *Blood in the Machine* (Little, Brown, 2023).
+- American Federation of Musicians, the robot advertisements in [*Exhibitors Herald-World*, 16 November 1929](https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up) and [17 May 1930](https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up); Smithsonian Magazine, ["Musicians Wage War Against Evil Robots"](https://www.smithsonianmag.com/history/musicians-wage-war-against-evil-robots-92702721/).
+- [Home Taping Is Killing Music](https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music) (BPI, 1981); Jack Valenti's 1982 testimony to the House Judiciary subcommittee on home recording; [*Sony Corp. of America v. Universal City Studios*, 464 U.S. 417 (1984)](https://www.law.cornell.edu/supremecourt/text/464/417).
+
+- National Highway Traffic Safety Administration, [information request to Waymo, November 24, 2025](https://static.nhtsa.gov/odi/inv/2025/INOT-PE25013-30887.pdf), investigation PE25013. Primary record of an inquiry concerning stopped school buses. An inquiry is not a final finding about every reported incident.
+
+### Chapter 8: attention and cooperation
+
+- Gloria Mark, Daniela Gudith, and Ulrich Klocke, ["The Cost of Interrupted Work: More Speed and Stress"](https://ics.uci.edu/~gmark/chi08-mark.pdf), CHI 2008.
+- Robert Axelrod, *The Evolution of Cooperation* (Basic Books, 1984).
+- Robin Dunbar, "Coevolution of neocortical size, group size and language in humans," *Behavioral and Brain Sciences* 16 (1993).
+
+### Chapter 9: the neighborhood factory and nitrogen
+
+- International Energy Agency, [Ammonia Technology Roadmap](https://www.iea.org/reports/ammonia-technology-roadmap) (2021), for the energy use and emissions of ammonia production.
+- Kyle Gabriel and contributors, [Mycodo](https://github.com/kizniche/Mycodo), open-source environmental controller; installer at the project's documented address (checked 23 September 2026).
+
+### Chapter 10: model collapse
+
+- Ilia Shumailov and colleagues, ["AI models collapse when trained on recursively generated data"](https://www.nature.com/articles/s41586-024-07566-y), *Nature* 631 (2024).
+
+- Internal Revenue Service, [What Is Taxable and Nontaxable Income?](https://www.irs.gov/businesses/small-businesses-self-employed/what-is-taxable-and-nontaxable-income). Barter generally creates income measured at fair market value; the guidance distinguishes informal noncommercial exchanges of similar services.
+
+### Chapter 11: local computing and machine work
+
+- National Institute of Standards and Technology, [Air Gap](https://csrc.nist.gov/glossary/term/air_gap). Physical separation and the controlled transfer of information across it; local execution alone is not isolation.
+- California Department of Justice, [Data Security Breach Reporting](https://oag.ca.gov/privacy/databreach/reporting). State reporting requirements for defined incidents. Counsel must assess the facts; this source does not determine whether the fictional exposure meets a statutory definition.
+- Occupational Safety and Health Administration, [Control of Hazardous Energy, 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147). Servicing procedures address energy isolation, stored energy, and verification. A command to stop software is not equivalent to physical isolation.
+
+### Chapters 12 and 15: land tenure and assessment
+
+- Grounded Solutions Network, [Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/). Practitioner documentation of a typical affordable-homeownership model: separately owned land and homes, a renewable ground lease often lasting ninety-nine years, and resale restrictions. Other uses need appropriate agreements.
+- California Department of Conservation, [Williamson Act FAQ](https://www.conservation.ca.gov/dlrp/wa/Documents/Williamson%20Act%20FAQ%202024.pdf) (2024). Use restrictions and property-specific assessment; a contract does not necessarily produce greater savings than existing tax treatment.
+- Internal Revenue Service, [Conservation Easements](https://www.irs.gov/charities-non-profits/conservation-easements). Qualified donations and valuation requirements for federal income-tax deductions. These are distinct from local property-tax assessments.
+- Land Report, [January 2021 newsletter](https://landreport.com/newsletters/LR_Newsletter_January2021.pdf). Original publication's estimate of Gates's farmland holdings; a dated estimate rather than a current parcel inventory.
+- Nuveen, [Global Farmland Capabilities](https://www.nuveen.com/global/investment-capabilities/real-assets/farmland). Investment manager's description of its portfolio, not independent evidence of any investor's motive.
+
+### Chapter 13: shelter and heating
+
+- DuraVent, [DVL](https://duravent.com/product/dvl). Manufacturer documentation identifies the product as an interior connector, distinct from the chimney.
+- US Fire Administration, [Heating Fire Safety](https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/heating/). Guidance on combustible clearance and maintenance.
+- Centers for Disease Control and Prevention, [Carbon Monoxide Poisoning: About](https://www.cdc.gov/carbon-monoxide/about/index.html). Fuel-burning equipment and enclosed-space exposure.
+
+### Chapter 14: food recovery and the graveyard
+
+- USDA, [Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs). The 30 to 40 percent estimate of food waste at the retail and consumer levels uses a 2010 baseline; it is not a fresh measurement for the publication year.
+- CalRecycle, [SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/), the state's account of the edible-food-recovery requirements and the 20 percent recovery target for 2025; NPR, [French Food Waste Law Changing How Grocery Stores Approach Excess Food](https://www.npr.org/sections/thesalt/2018/02/24/586579455/french-food-waste-law-changing-how-grocery-stores-approach-excess-food) (2018), on France's 2016 law (Law 2016-138, the Garot law).
+- Snopes, [Kodak's digital camera](https://www.snopes.com/fact-check/kodak-digital-camera-invention/), on Sasson's account of management's response; Fortune, ["Sears Could've Been Amazon"](https://fortune.com/longform/sears-couldve-been-amazon/); Variety, ["How Blockbuster Could Have Owned Netflix"](https://variety.com/2013/biz/news/epic-fail-how-blockbuster-could-have-owned-netflix-1200823443/); Slate, [Borders bankruptcy: Done in by its own stupidity, not the Internet](https://slate.com/business/2011/07/borders-bankruptcy-done-in-by-its-own-stupidity-not-the-internet.html) (July 2011).
+
+- Toyota, [Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/). Manufacturer description of just-in-time production includes minimum necessary stock; it does not mean every inventory is literally zero.
+
+### Chapter 17: tools
+
+- SECTOR 07, [I 3D Printed a Photobioreactor](https://www.youtube.com/watch?v=SLckTj_tJg4). Builder's own video; source of the eight-grams-a-week figure and the unfinished-design caveat.
+- Kirsten Dirksen, [Mad scientist's homestead](https://www.youtube.com/watch?v=QSnHShly5R0), interviewing the EasyGrow builder. Source of his density, water, stadium, and "not in business to get rich" statements, which the chapter attributes to him.
+- SANANBIO, [Introducing the SANANBIO Uplift](https://www.youtube.com/watch?v=0s4YwzbUzhw). Vendor promotion; source of the labor-cost and human-touch claims.
+- Open Source Ecology, [Global Village Construction Set](https://www.opensourceecology.org/gvcs/); [Meshtastic](https://meshtastic.org/); [Kiwix](https://kiwix.org/).
+
+- FAO, [Use of Algae and Aquatic Macrophytes as Feed in Small-scale Aquaculture](https://www.fao.org/4/i1141e/i1141e00.htm), Fisheries and Aquaculture Technical Paper 531 (2009). Species, feed composition, and inclusion levels matter. Growing algae does not establish a complete diet for every fish or validate the prototype's output.
+- Semtech, [What Is LoRa?](https://www.semtech.com/lora/what-is-lora). Manufacturer description of the radio modulation technology, distinct from a complete network protocol.
+- Kiwix, [FAQ](https://get.kiwix.org/en/faq/). Project documentation on offline archives, supported platforms, and differences among `mini`, `nopic`, and `maxi` editions.
+
+### Appendix E: the cyberdeck
+
+- Newsweek, ["What is a cyberdeck: Meet Gen Z's new DIY obsession"](https://www.newsweek.com/what-is-a-cyberdeck-gen-zs-new-custom-computing-obsession-11787017) (2026); TechCrunch, ["Cyberdecks are having a moment"](https://techcrunch.com/2026/06/02/cyberdeck-tiktok-trend-reject-big-tech/) (2 June 2026).
+- Hackaday's cyberdeck contests: [2022](https://hackaday.com/2022/10/13/2022-cyberdeck-contest-picking-the-best-of-the-best/) and [2023](https://hackaday.com/2023/09/07/2023-cyberdeck-challenge-the-best-decks-on-the-net/).
+- [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030; [interception and disclosure rules](https://www.law.cornell.edu/uscode/text/18/2511), 18 U.S.C. 2511; and [Part 15 operating conditions](https://www.law.cornell.edu/cfr/text/47/15.5), 47 C.F.R. 15.5. US provisions cited for bounded examples, not permission to operate in every jurisdiction.
+- Meshtastic, [Channel Configuration](https://meshtastic.org/docs/configuration/radio/channels/). Project documentation distinguishes public default keys from randomly generated private-group keys and explains location and gateway settings.
+- Cryptsetup contributors, [FAQ](https://gitlab.com/cryptsetup/cryptsetup/-/blob/main/FAQ.md). Technical documentation on disk encryption, passphrases, backups, and threat limits. Encryption of stored data does not protect an already compromised running system.
+
+- ClockworkPi, [uConsole](https://www.clockworkpi.com/uconsole), and ZitaoTech, [Hackberry Pi Zero](https://github.com/ZitaoTech/Hackberry-Pi_Zero). Maker documentation of components and power arrangements. Kit contents vary; uConsole excludes battery cells and offers a configuration without the compute module.
+- Raspberry Pi, [Heating and Cooling Raspberry Pi 5](https://www.raspberrypi.com/news/heating-and-cooling-raspberry-pi-5/). Manufacturer tests distinguish ordinary use from sustained workloads that can cause thermal throttling.
+
+### Chapter 18: specialized materials
+
+- US Geological Survey, [Silica Statistics and Information](https://www.usgs.gov/centers/national-minerals-information-center/silica-statistics-and-information). Ultra-high-purity quartz is used in semiconductor-manufacturing crucibles. This establishes a material requirement, not a fixed duration for a future supply interruption.
+
+### Introduction and Chapter 19: the conversion
+
+- United Nations, [Food](https://www.un.org/en/global-issues/food): "today's global food production is enough to feed everyone on the planet."
+- California Department of Food and Agriculture, [Food Recovery](https://www.cdfa.ca.gov/is/foodrecovery/): US food waste estimated at 30 to 40 percent of the food supply; Californians throw away five to six million tons a year.
+- Consumer Financial Protection Bureau, [CFPB Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) (2022), on credit reports, credit scores, and proprietary risk scores in rental decisions.
+- Shoshana Zuboff, *The Age of Surveillance Capitalism* (PublicAffairs, 2019); [summary](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism).
+- Ashley Gromis and colleagues, [Estimating Eviction Prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/), *PNAS* 119 (2022), e2116169119. Author-institution research record. The annual averages of 3.6 million filings and 2.7 million households concern 2000 to 2018, not the current year.
+- Judicial Council of California, [What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case), on the sheriff's notice to vacate and lockout.
+- Oxfam, [An Economy for the 99%](https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/file_attachments/bp-economy-for-99-percent-160117-summ-en.pdf) (January 2017), and [Billionaire wealth jumps three times faster in 2025](https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking) (19 January 2026). Oxfam's wealth comparisons rest on published estimates of net worth and have been debated; they are cited here for scale, not precision.
+- California Department of Education, [California Universal Meals](https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp).
+- NYC Office of Civil Justice, [Universal Access Annual Report 2022](https://www.nyc.gov/assets/hra/downloads/pdf/services/civiljustice/OCJ_UA_Annual_Report_2022.pdf): Local Law 136 of 2017; 78 percent of represented households remained in their homes in fiscal 2022.
+- Federal Reserve Bank of Richmond, [Electrifying Rural America](https://www.richmondfed.org/publications/research/econ_focus/2020/q1/economic_history) (2020), and America's Electric Cooperatives, [Fact Sheet](https://www.cooperative.com/programs-services/bts/Documents/Data/Electric-Co-op-Fact-Sheet.pdf) (April 2026).
+- [Universal basic services](https://en.wikipedia.org/wiki/Universal_basic_services), on the 2017 UCL Institute for Global Prosperity proposal and its costing, and Basic Income Earth Network, [on the 2019 UCL report](https://basicincome.org/news/2019/06/ucl-institute-for-global-prosperity-issues-report-on-universal-basic-services/).
+- USDA Economic Research Service, [Food Security in the U.S.: Key Statistics](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics), and the [trends data](https://www.ers.usda.gov/media/6990/trends.xlsx) behind the Introduction's chart.
+
+## Sources for the epigraphs
+
+The entries below identify the work or institutional record supporting each attribution. The seven epigraphs added in v0.9.1 were each checked word for word against the text named. An institutional attribution does not establish the first occasion on which a saying was used. Dialogue from a novel belongs to its character and scene.
+
+- **Preface, Hunter S. Thompson:** Simon & Schuster's [description of Fear and Loathing at Rolling Stone](https://www.simonandschuster.co.in/books/Fear-and-Loathing-at-Rolling-Stone/Hunter-S-Thompson/9781439165959) identifies the ticket-and-ride saying with Thompson. This supports the name attribution, without claiming a verified page in the 1971 novel.
+- **Chapter 0, William Gibson:** [Interview in Scientific American](https://www.scientificamerican.com/article/gibson-interview-cities-in-fact-and-fiction/) (26 August 2011). Gibson acknowledges and discusses the formulation quoted to him, including “not very evenly distributed.” This is a documented use, not a claim of its first appearance.
+- **Chapter 1, Vernor Vinge:** The opening of [The Coming Technological Singularity](https://edoras.sdsu.edu/~vinge/misc/singularity.html) (1993), listed above. Read the prediction with its original date.
+- **Chapter 2, I. J. Good:** [Speculations Concerning the First Ultraintelligent Machine](https://vtechworks.lib.vt.edu/bitstream/handle/10919/89424/TechReport05-3.pdf) (1965), printed page 33. The condition about retaining control is part of the sentence, not an optional qualification.
+- **Chapter 3, Konstantin Tsiolkovsky:** A translated saying attributed to Tsiolkovsky and traced by NASA's historians to his collected works of about 1911 to 1912. [NASA, Historical Origins of the ISS](https://www.nasa.gov/history/space-station-20th-historical-origins-of-iss/) Given as "commonly translated," not as the text of a specific letter.
+- **Chapter 7, Louis Pasteur:** The familiar English rendering of Pasteur's observation about the prepared mind, as given by the Institut Pasteur; attributed without claiming a checked original speech.
+- **Chapter 11, Archimedes:** A saying traditionally attributed to Archimedes; marked "attributed" because no ancient source was inspected for this edition.
+- **Chapter 17, Stewart Brand:** The 1968 *Whole Earth Catalog* statement of purpose, which reads "We are as gods and might as well get used to it" in the [available 1968 facsimile](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf). Brand later used the variant "get good at it," which a character quotes in the chapter.
+- **Chapter 4, J. B. S. Haldane:** The closing passage of the title essay in [Possible Worlds and Other Essays](https://jbshaldane.org/books/1927-Possible-Worlds/haldane-1927-possible-worlds.html) (1927), online transcription. The epigraph retains his framing as a personal suspicion.
+- **Chapter 5, Arthur Eddington:** [The Nature of the Physical World](https://www.gutenberg.org/files/72963/72963-h/72963-h.htm) (1928; digitized from a 1929 impression), chapter IV, printed pages 74–75. The second-law passage concerns physical theory, not a forecast about AI capabilities.
+- **Chapter 10, Alan Kay:** Computer History Museum, [From Alto to AI](https://computerhistory.org/blog/from-alto-to-ai/). Institutional attribution of the future-and-invention saying to Kay. This edition makes no claim to have established the date or transcript of its first delivery.
+- **Chapter 12, Margaret Mitchell:** [Gone with the Wind](https://www.fadedpage.com/books/20160920/html.php) (1936), chapter II. Gerald O'Hara speaks the passage about land. It is fictional dialogue, not a factual guarantee of land's permanence or value.
+- **Chapter 14, Ernest Hemingway:** [The Sun Also Rises](https://www.gutenberg.org/files/67138/old/67138-h/67138-h.htm) (1926), chapter XIII. Mike Campbell's exchange about bankruptcy supplies the epigraph.
+- **Chapter 15, Franklin D. Roosevelt:** [Letter to All State Governors on a Uniform Soil Conservation Law](https://www.presidency.ucsb.edu/documents/letter-all-state-governors-uniform-soil-conservation-law) (26 February 1937), transcript hosted by the American Presidency Project.
+- **Chapter 18, Dwight D. Eisenhower:** [Eisenhower Presidential Library quotation record](https://www.eisenhowerlibrary.gov/eisenhowers/quotes), identifying the National Defense Executive Reserve Conference remarks of 14 November 1957. Eisenhower introduced the planning maxim as a saying he had heard in the Army; its use here does not claim he invented it.
+
+- **Introduction, Upton Sinclair:** *I, Candidate for Governor: And How I Got Licked* (1935), first excerpted in the *Oakland Tribune* on 11 December 1934. [Quote Investigator, It Is Difficult to Get a Man to Understand Something](https://quoteinvestigator.com/2017/11/30/salary/) reproduces the wording, exclamation mark included.
+- **Chapter 6, Arthur C. Clarke:** *Profiles of the Future* (1962), chapter 2, "Hazards of Prophecy: The Failure of Imagination." This is the statement later called Clarke's First Law. [Quote Investigator](https://quoteinvestigator.com/2018/11/28/possible/)
+- **Chapter 8, Charles Mackay:** [Memoirs of Extraordinary Popular Delusions and the Madness of Crowds](https://www.gutenberg.org/ebooks/24518), Preface, checked in the 1852 edition. Mackay presents the herd line as something "well said," not as his own coinage.
+- **Chapter 9, Peter Kropotkin:** [Fields, Factories and Workshops](https://www.gutenberg.org/ebooks/64353), revised and enlarged edition (1913), chapter VII. The ellipsis marks the omitted clause about combining agriculture with industry; the original's dashes are rendered as a comma.
+- **Chapter 13, Henry David Thoreau:** [Walden](https://www.gutenberg.org/ebooks/205) (1854), "Economy." Thoreau makes the point about the price of an ordinary house and the years of a laborer's life it takes to pay for one.
+- **Chapter 16, A. J. Liebling:** "The Wayward Press: Do You Belong in Journalism?", *The New Yorker*, 14 May 1960, page 109, where it appears as a parenthetical remark. [Quote Investigator](https://quoteinvestigator.com/2015/05/21/free-press/)
+- **Conclusion, Oscar Wilde:** [The Soul of Man under Socialism](https://www.gutenberg.org/ebooks/1017) (1891). A few lines later Wilde writes that "the community by means of organisation of machinery will supply the useful things."
+- **Chapter 19, Aneurin Bevan:** *In Place of Fear* (1952), chapter 5; see P-23 above. The sentence is quoted from its middle, where it begins "It insists that no society…"; the epigraph capitalizes the first word.
+
+
+## Sources checked for v0.10.0 corrections
+
+- Gloria Mark, Victor M. González, and Justin Harris, [No Task Left Behind? Examining the Nature of Fragmented Work](https://www.ics.uci.edu/~gmark/CHI2005.pdf), CHI 2005. Observed time before workers resumed an interrupted activity; not a fixed neurological recovery threshold. The CHI 2008 study listed above examines speed and stress under interruptions.
+- International Energy Agency, [Key Questions on Energy and AI: Executive Summary](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) (2026). Separates the estimate of 2025 data-center electricity use from the projection for 2030.
+- France, [Law 2016-138 of 11 February 2016, Article 1](https://www.legifrance.gouv.fr/eli/loi/2016/2/11/2016-138/jo/texte). Original enactment on food waste, including proposed donation agreements for eligible shops. A legal requirement is distinct from proof of universal collection or access.
+- University College London, [The future of welfare: Universal Basic Services](https://www.ucl.ac.uk/bartlett/ideas/bartlett-review/bartlett-review-2017/future-welfare-universal-basic-services) (2017). The institution's account of the proposal, not an implemented universal guarantee.
+- llama.cpp contributors, [HTTP server documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md). Bind addresses and server access settings; running a model locally doesn't by itself prevent network exposure.
+- US Department of Energy, [Insulation Guide](https://www.energy.gov/sites/default/files/2023-03/insulation_guide_0.pdf). Building-envelope guidance on insulation and air sealing, without relying on a tax-credit announcement.
+- US Department of Energy, [DC Microgrid Scoping Study](https://www.energy.gov/sites/prod/files/2015/03/f20/DC_Microgrid_Scoping_Study_LosAlamos-Mar2015.pdf) (2015). Configuration-dependent efficiency and conversion stages; no universal zero-loss claim.
+- Meshtastic, [Mesh algorithm](https://meshtastic.org/docs/overview/mesh-algo/), [LoRa configuration](https://meshtastic.org/docs/configuration/radio/lora/), [Encryption](https://meshtastic.org/docs/overview/encryption/), and [Web Flasher source](https://github.com/meshtastic/web-flasher). Project documentation for routing limits, matching settings, key handling, and hardware-specific firmware.
+
+- FAO, [Labour-saving technologies and practices: draught animal power and implements](https://www.fao.org/family-farming/detail/en/c/1619223/). Animal traction involves care, training, equipment, and human guidance; it does not establish labor free of human supervision.
+- Anthropic, [Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5) (June 30, updated July 1, 2026). Company account of Fable's return and continuing limits on Mythos access; safeguard claims remain attributed.
+- US Food and Drug Administration, [Medical Devices and Natural Disasters](https://www.fda.gov/medical-devices/emergency-situations-medical-devices/fda-offers-tips-about-medical-devices-and-natural-disasters). Outage planning for powered equipment with healthcare providers and equipment suppliers.
+- OpenStax, [Statements of the Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics), *University Physics*, Volume 2. The heat-engine limitation applies to operation in a complete cycle.
+- Library of Congress, [Good Times Are Here: New to the National Jukebox](https://blogs.loc.gov/now-see-hear/2022/10/good-times-are-here-new-to-the-national-jukebox/) (2022). Sousa's band recorded frequently under other conductors; Sousa himself rarely entered the studio.
+- Marcus E. Raichle and Debra A. Gusnard, [Appraising the Brain's Energy Budget](https://pmc.ncbi.nlm.nih.gov/articles/124895/), *Proceedings of the National Academy of Sciences* 99 (2002). Ongoing brain activity and energy use; the resting-energy estimate is not a fixed allowance of decisions.
+
+
+## Visual source notes for v0.10.1
+
+- **Waste pathways, Chapter 14:** US Environmental Protection Agency, [2019 Wasted Food Report](https://www.epa.gov/system/files/documents/2024-04/2019-wasted-food-report_508_opt_ec_4.23correction.pdf), corrected April 2024, Table 5, printed page 12. Estimated management of food from retail, food service, and households, including inedible parts. The total is not a quantity that could all be donated; donation excludes food banks' undistributed portion.
+- **Land values, Chapter 12:** USDA National Agricultural Statistics Service, [Land Values 2026 Summary](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf), page 5. Annual national farm-real-estate survey estimates for 2012 through 2026 include land and buildings. Values are nominal dollars per acre, not inflation-adjusted values or local asking prices.
+- **Income and food access, Chapter 6:** USDA Economic Research Service, [Household Food Security in the United States in 2024](https://www.ers.usda.gov/media/9161/err-358.pdf?v=35619), ERR-358, Table 2, printed page 20. Survey estimates for two selected, non-overlapping income groups, with the national rate as a reference. The comparison omits middle and unknown income categories and does not establish causation.
+
+
+## Ownership, participation, and solarpunk
+
+- **Norbert Wiener:** [Letter to Walter Reuther](https://libcom.org/history/father-cybernetics-norbert-wieners-letter-uaw-president-walter-reuther), 13 August 1949, online transcript. Records his refused industrial consultancy and proposal for organized labor to participate in machine production and direct profits toward labor's benefit. The archival original was not inspected; the letter does not establish implementation or success.
+- **Elinor Ostrom:** Royal Swedish Academy of Sciences, [2009 economics prize press release](https://www.nobelprize.org/prizes/economic-sciences/2009/press-release/), 12 October 2009. Summarizes evidence of shared natural-resource governance, including decision-making and enforcement. These cases inform the book's questions about shared machines; they do not establish the success of neighborhood AI services or guarantee fairness through local ownership.
+- **City of Tucson:** [Motions Adopted Under August 6, 2025, Study Session Item 8: Project Blue](https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/motions-adopted-under-aug-6.pdf). Adopted motions ending negotiations over the proposed city annexation and development agreement and canceling the scheduled hearing. This records the city's action, not a prohibition on development in unincorporated Pima County.
+- **Pima County Administrator:** [Response from Project Blue Contractor Regarding Notice of Violation for Fugitive Dust](https://content.civicplus.com/api/assets/6063ed1f-cc11-4876-bbc8-d64025507660), 22 May 2026. County memorandum and attached records document construction-site activity in May. They establish that the project continued after Tucson's decision, not that construction was complete.
+- **Frederick Douglass:** 1857 speech excerpt, reproduced in the American Bar Association and Law Library of Congress [Law Day 2020 program booklet](https://blogs.loc.gov/law/files/2020/05/2020-Law-Day-Public-Program-Booklet-042220.pdf), printed page 18. Institutional reproduction of the passage on struggle and demands. The original argument concerns emancipation; its use here is an analogy about collective action, not a guarantee that every demand succeeds.
+- **Solarpunk:** John-Robert, [From Steampunk to Solarpunk](https://republicofthebees.blogspot.com/2008/04/from-steampunk-to-solarpunk.html), 30 April 2008, original blog post. Proposes the term for a literary genre inspired by a wind-assisted cargo ship. The conclusion's application to shared decisions, repair, and meal provision is this book's interpretation.
+- **Ursula K. Le Guin:** [National Book Foundation Medal acceptance speech](https://www.ursulakleguin.com/nbf-medal), 19 November 2014, transcript on her website. Supports the attributed paraphrase about imagining alternatives and changing arrangements of human power. Her speech does not name solarpunk or endorse this book's proposals.

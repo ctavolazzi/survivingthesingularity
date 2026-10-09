@@ -1,0 +1,624 @@
+{
+  "edition": "0.10.4",
+  "prior_edition": "0.10.3",
+  "method": "Build from the preserved v0.10.3 index. Recover every old block from its persisted source span and apply only the eighteen exact reviewed replacements. Parse each replacement into expected blocks, preserving caption classification from its original figure context. The first split fragment retains the old ID and each later fragment receives the next new ordinal. Compare that complete expected sequence with the candidate and persisted indexes.",
+  "prior_index_sha256": "1c2a7132b3167a9dfbf32e957f632eefb4140d046c597491f50f85a6f2bc809a",
+  "index_sha256": "baabbbddb027bb31cfdc6b93d822afdfe6477a04053e7a5665172cb989a820cf",
+  "review_sha256": {
+    "opening-review.json": "c0c729a54a93b733d00117b93ec5af0bf1529de16a1a7770e59e5680acc89cce",
+    "middle-review.json": "244b57fe974886a93b471374628e0c1e136c6beb67c6aadc4f81a56fa58ad936",
+    "ending-review.json": "43e0885ea45e59bcad638036f711c42e100ffa37e698bd757e6e255093210841"
+  },
+  "source_freeze_sha256": "5bcaa80650c6f6fb5f8804fc4eee55468e96ee35d7fe20ac74dd299548bbcbca",
+  "reconcile": {
+    "exact": 2284,
+    "positional": 17,
+    "by_section": [
+      {
+        "section": "introduction",
+        "positional": 1
+      },
+      {
+        "section": "chapter1",
+        "positional": 1
+      },
+      {
+        "section": "chapter3",
+        "positional": 1
+      },
+      {
+        "section": "chapter4",
+        "positional": 1
+      },
+      {
+        "section": "chapter5",
+        "positional": 2
+      },
+      {
+        "section": "chapter6",
+        "positional": 1
+      },
+      {
+        "section": "chapter7",
+        "positional": 1
+      },
+      {
+        "section": "chapter9",
+        "positional": 1
+      },
+      {
+        "section": "chapter10",
+        "positional": 1
+      },
+      {
+        "section": "chapter12",
+        "positional": 1
+      },
+      {
+        "section": "chapter14",
+        "positional": 1
+      },
+      {
+        "section": "chapter16",
+        "positional": 1
+      },
+      {
+        "section": "chapter19",
+        "positional": 1
+      },
+      {
+        "section": "appendix-d",
+        "positional": 1
+      },
+      {
+        "section": "appendix-e",
+        "positional": 1
+      },
+      {
+        "section": "appendix-g",
+        "positional": 1
+      }
+    ]
+  },
+  "totals": {
+    "sections": 35,
+    "blocks": 2303,
+    "words": 103552
+  },
+  "positional_assignments_reviewed": [
+    {
+      "id": "sts.introduction.b0142",
+      "file": "02-introduction.md",
+      "type": "paragraph",
+      "old_lines": [
+        89,
+        89
+      ],
+      "before": "Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Between 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: \"The sheriff gives you a Notice to Vacate,\" five days to move, and \"if you don't move out, the sheriff can lock you out of your home.\" [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.",
+      "after": "Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism)",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 1
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        89,
+        89
+      ]
+    },
+    {
+      "id": "sts.chapter1.b0132",
+      "file": "03-chapter1.md",
+      "type": "paragraph",
+      "old_lines": [
+        117,
+        117
+      ],
+      "before": "**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.",
+      "after": "**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the old price of trained work no longer holds. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 2
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        117,
+        117
+      ]
+    },
+    {
+      "id": "sts.chapter3.b0060",
+      "file": "05-chapter3.md",
+      "type": "list",
+      "old_lines": [
+        15,
+        19
+      ],
+      "before": "- Recursive self-improvement is the tipping point: a process that upgrades the thing doing the upgrading. Compound interest on cognition.\n- The scenario I keep coming back to: the machine's answer to a hostile planet isn't war. It's exit.\n- Greater capability tells you nothing about motives. The cures, if they come, still have to reach a patient.\n- None of this has to happen before anybody eats.\n- This chapter and the next are the book's most speculative. If you're here for the practical part, Chapter 5 picks the thread back up; you'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.",
+      "after": "- Recursive self-improvement is the tipping point: a process that upgrades the thing doing the upgrading. Compound interest on cognition.\n- The scenario I keep coming back to: the machine's answer to a hostile planet isn't war. It's exit.\n- Greater capability tells you nothing about motives. The cures, if they come, still have to reach a patient.\n- None of this has to happen before anybody eats.",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 3
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        15,
+        18
+      ]
+    },
+    {
+      "id": "sts.chapter4.b0067",
+      "file": "06-chapter4.md",
+      "type": "paragraph",
+      "old_lines": [
+        77,
+        77
+      ],
+      "before": "In the far end of this scenario, the USI hits that wall. And it does what a self-improving system does when it runs out of local resources: it looks elsewhere. Branches of physics we lack the hardware to comprehend. Pocket universes. Simulations so vast that everything we know could be a forgotten line in one of its subroutines.",
+      "after": "At the far end of this scenario, the USI hits that wall. And it does what a self-improving system does when it runs out of local resources: it looks elsewhere. Branches of physics we lack the hardware to comprehend. Pocket universes. Simulations so vast that everything we know could be a forgotten line in one of its subroutines.",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 4
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        77,
+        77
+      ]
+    },
+    {
+      "id": "sts.chapter5.b0132",
+      "file": "07-chapter5.md",
+      "type": "paragraph",
+      "old_lines": [
+        116,
+        116
+      ],
+      "before": "We already know how to separate the person eating from the person paying. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.",
+      "after": "We already know how to fund a service without charging for each use. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 5
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        116,
+        116
+      ]
+    },
+    {
+      "id": "sts.chapter5.b0163",
+      "file": "07-chapter5.md",
+      "type": "list",
+      "old_lines": [
+        199,
+        201
+      ],
+      "before": "1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who captures the spread. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.\n2. List the tasks in your job the way a buyer would, then ask a coworker what the list missed. Mark the parts where you're competing on raw output against silicon, and the parts where you aren't: trust, presence, hands, judgment on the ground, relationships. Shift your effort toward the second list this quarter.\n3. Move one meaningful expense from rented energy to owned energy this year: insulation, a bicycle that replaces short car trips, a panel and battery sized by someone who knows the job. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.",
+      "after": "1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who gets paid. Keep each quantity in its own units. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.\n2. List the tasks in your job the way a buyer would, then ask a coworker what the list missed. Mark the parts where you're competing on raw output against silicon, and the parts where you aren't: trust, presence, hands, judgment on the ground, relationships. Shift your effort toward the second list this quarter.\n3. Move one meaningful expense from rented energy to owned energy this year: insulation, a bicycle that replaces short car trips, a panel and battery sized by someone who knows the job. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 6
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        199,
+        201
+      ]
+    },
+    {
+      "id": "sts.chapter6.b0078",
+      "file": "08-chapter6.md",
+      "type": "list",
+      "old_lines": [
+        159,
+        161
+      ],
+      "before": "1. Put a hard cap on \"whether\" debates. The next time you're in an argument about whether AI should exist or whether it'll really happen, give it five minutes, then ask out loud: \"Given that it's arriving anyway, what should we each do this month?\" Watch how few people can switch questions. Be one who can.\n2. Run the group audit on your own affiliations: employer, industry, town, community. For each, answer honestly: is this group adapting or refusing? And is it counting who gets hurt along the way? The grain trap punished groups for their choices, and individuals for their group.\n3. Keep one part of your life off the ratchet on purpose: food you can grow, heat you can make, skills that work without a subscription. Not to exit the system. Because the person with an alternative negotiates from a different posture than the person without one.",
+      "after": "1. Put a hard cap on \"whether\" debates. The next time you're in an argument about whether AI should exist or whether it'll really happen, give it five minutes, then ask out loud: \"Given that it's arriving anyway, what should we each do this month?\" Watch how few people can switch questions. Be one who can.\n2. Run the group audit on your own affiliations: employer, industry, town, community. For each, name one change it's making and who carries the cost. If you can't find an answer, write down who you'll ask. The grain trap punished groups for their choices, and individuals for their group.\n3. Keep one part of your life off the ratchet on purpose: food you can grow, heat you can make, skills that work without a subscription. Not to exit the system. Because the person with an alternative negotiates from a different posture than the person without one.",
+      "approved_edits": [
+        {
+          "review": "middle-review.json",
+          "edit": 1
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        159,
+        161
+      ]
+    },
+    {
+      "id": "sts.chapter7.b0163",
+      "file": "09-chapter7.md",
+      "type": "paragraph",
+      "old_lines": [
+        183,
+        183
+      ],
+      "before": "Here's the move the battle-line framing hides, and it's the most important move in this half of the book.",
+      "after": "Here's the move the battle-line framing hides: readiness has to reach beyond your own household.",
+      "approved_edits": [
+        {
+          "review": "middle-review.json",
+          "edit": 2
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        183,
+        183
+      ]
+    },
+    {
+      "id": "sts.chapter9.b0158",
+      "file": "11-chapter9.md",
+      "type": "paragraph",
+      "old_lines": [
+        196,
+        196
+      ],
+      "before": "Five households getting vegetables is a contribution. A dependable baseline needs more food, more kinds of it, preparation, routes people can actually use, and a way to keep going through a failed crop or a broken van. It also needs a place for the household that wasn't one of the first five. So the next meeting belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "after": "The next meeting has to plan beyond the first five households. It belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "approved_edits": [
+        {
+          "review": "middle-review.json",
+          "edit": 3
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        196,
+        196
+      ]
+    },
+    {
+      "id": "sts.chapter10.b0162",
+      "file": "12-chapter10.md",
+      "type": "list",
+      "old_lines": [
+        72,
+        73
+      ],
+      "before": "- **Direct exchange.** Show up and work. Labor moves you from the world of digital opinion to the world of physical results.\n- **The human filter.** Working alongside people is how you find the ones who also want to be useful. You won't find them on a screen. You'll find them on the ground.",
+      "after": "- **Direct exchange.** Show up and work. Labor moves you from the world of digital opinion to the world of physical results.\n- **The human filter.** Working alongside people is how you find the ones who also want to be useful. Make the introduction wherever you can, then give it a shared task.",
+      "approved_edits": [
+        {
+          "review": "middle-review.json",
+          "edit": 4
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        72,
+        73
+      ]
+    },
+    {
+      "id": "sts.chapter12.b0140",
+      "file": "14-chapter12.md",
+      "type": "paragraph",
+      "old_lines": [
+        100,
+        100
+      ],
+      "before": "Now let's finish the story this chapter has been circling, all the way to the door.",
+      "after": "Now follow one request all the way to the door.",
+      "approved_edits": [
+        {
+          "review": "middle-review.json",
+          "edit": 5
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        100,
+        100
+      ]
+    },
+    {
+      "id": "sts.chapter14.b0112",
+      "file": "16-chapter14.md",
+      "type": "paragraph",
+      "old_lines": [
+        83,
+        83
+      ],
+      "before": "There's a cemetery full of companies that made the other choice, and the precedents at the end of this chapter walk you through it. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "after": "The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "approved_edits": [
+        {
+          "review": "middle-review.json",
+          "edit": 6
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        83,
+        83
+      ]
+    },
+    {
+      "id": "sts.chapter16.b0142",
+      "file": "18-chapter16.md",
+      "type": "list",
+      "old_lines": [
+        129,
+        131
+      ],
+      "before": "1. Write your pamphlet, even if it's four pages. Pick the one thing you know from experience that would really help the person two years behind you, and write it the way Denny talked on camera: plain speech, what happened, what you'd do differently. Publish it this month.\n2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. When the algorithm changes, the people on your list are still yours.\n3. Run the tavern test. Read your latest piece out loud. Every sentence you stumble on, every word you'd never say to a neighbor over a fence, rewrite in plain speech. Then ask one reader to explain it back to you and name its weakest point, and fix that before you share it wider.",
+      "after": "1. Write your pamphlet, even if it's four pages. Pick the one thing you know from experience that would really help the person two years behind you, and write it the way Denny talked on camera: plain speech, what happened, what you'd do differently. Publish it this month.\n2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. Use the list to reach readers who've asked to hear from you when the algorithm changes.\n3. Run the tavern test. Read your latest piece out loud. Every sentence you stumble on, every word you'd never say to a neighbor over a fence, rewrite in plain speech. Then ask one reader to explain it back to you and name its weakest point, and fix that before you share it wider.",
+      "approved_edits": [
+        {
+          "review": "ending-review.json",
+          "edit": 1
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        129,
+        131
+      ]
+    },
+    {
+      "id": "sts.chapter19.b0064",
+      "file": "27-chapter19.md",
+      "type": "list",
+      "old_lines": [
+        191,
+        196
+      ],
+      "before": "- **If you work for a living:** find out what your employer does with food it can't sell, and who in your town is hungry. Bring both numbers to one meeting.\n- **If you're a parent:** check whether your school district's universal meals are reaching every kid who needs them, and ask why not if they aren't.\n- **If you organize:** start the Rung 1 page. One spreadsheet, published monthly.\n- **If you build things:** pick one machine from Chapter 17 that could serve the floor, and ask who would own it.\n- **If you hold office:** put a public meal line in the next budget and a lawyer-for-every-tenant ordinance on the agenda.\n- **If you own a business:** donate what you can't sell, and sit on the committee that decides where it goes.",
+      "after": "- **If you work for a living:** find out what a food business near you does with food it can't sell, and ask a local food provider what need remains unmet. Bring those findings to one meeting.\n- **If you're a parent:** check what meals your school district provides, whether they reach every kid who needs them, and what keeps anyone out.\n- **If you organize:** start the Rung 1 page. One spreadsheet, published monthly.\n- **If you build things:** pick one machine from Chapter 17 that could serve the floor, and ask who would own it.\n- **If you hold office:** put a public meal line in the next budget and a lawyer-for-every-tenant ordinance on the agenda.\n- **If you own a business:** donate what you can't sell, and sit on the committee that decides where it goes.",
+      "approved_edits": [
+        {
+          "review": "ending-review.json",
+          "edit": 2
+        },
+        {
+          "review": "ending-review.json",
+          "edit": 3
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        191,
+        196
+      ]
+    },
+    {
+      "id": "sts.appendix-d.b0018",
+      "file": "25-appendix-d.md",
+      "type": "list",
+      "old_lines": [
+        9,
+        15
+      ],
+      "before": "1. **Read every entry twice.** The first read is a story about them: monks, weavers, film executives. The second read is a story about you with the nouns changed. You'll know the second read happened because it's slightly uncomfortable.\n2. **Locate yourself.** At any given moment you're living inside one or two precedents more than the others. Use the symptom index below to find today's, and reread that entry before you make today's decision.\n3. **Name your seat.** Every precedent has three seats: the incumbent defending the beachfront, the panicker demanding the wave stop, and the builder working out new terms. Say out loud which seat you're in right now. The rules exist to move you to the third.\n4. **Name the difference, too.** For every entry, write down one way your situation is like it and one way it isn't. Who benefited, who carried the cost, and what would count against the lesson? A precedent is a prompt for investigation, not permission to ignore a present objection.\n5. **Run the rule within twenty-four hours.** Find one real decision on your desk this week and pass it through the rule. Small is fine.\n6. **Start a practice this week.** Each entry closes with three actions. Some finish in an evening; others need a month, a season, or repeated work. If you only have time for one, do the one that makes you defensive.\n7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story, the way Marta tells Gary and Sal. Panic spreads person to person. So does this.",
+      "after": "1. **Read every entry twice.** The first read is a story about them: monks, weavers, film executives. The second read is a story about you with the nouns changed. You'll know the second read happened because it's slightly uncomfortable.\n2. **Locate yourself.** At any given moment you're living inside one or two precedents more than the others. Use the symptom index below to find today's, and reread that entry before you make today's decision.\n3. **Name your seat.** Every precedent has three seats: the incumbent defending the beachfront, the panicker demanding the wave stop, and the builder working out new terms. Say out loud which seat you're in right now. The rules exist to move you to the third.\n4. **Name the difference, too.** For every entry, write down one way your situation is like it and one way it isn't. Who benefited, who carried the cost, and what would count against the lesson? A precedent is a prompt for investigation, not permission to ignore a present objection.\n5. **Run the rule within twenty-four hours.** Find one real decision on your desk this week and pass it through the rule. Small is fine.\n6. **Start a practice this week.** Each entry closes with three actions. Some finish in an evening; others need a month, a season, or repeated work. If you only have time for one, do the one that makes you defensive.\n7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story. Ask where the comparison fits and where it doesn't. Panic spreads person to person. So does this.",
+      "approved_edits": [
+        {
+          "review": "ending-review.json",
+          "edit": 4
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        9,
+        15
+      ]
+    },
+    {
+      "id": "sts.appendix-e.b0059",
+      "file": "26-appendix-e.md",
+      "type": "heading",
+      "old_lines": [
+        48,
+        48
+      ],
+      "before": "## The three tiers",
+      "after": "## From Tier 0 to Tier 3",
+      "approved_edits": [
+        {
+          "review": "ending-review.json",
+          "edit": 5
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        48,
+        48
+      ]
+    },
+    {
+      "id": "sts.appendix-g.b0002",
+      "file": "29-appendix-g.md",
+      "type": "paragraph",
+      "old_lines": [
+        3,
+        3
+      ],
+      "before": "*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Move a month if your season or your life needs it, and choose a scale you can sustain.*",
+      "after": "*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Choose one action to begin each month, then add others as time allows. Move a month if your season or your life needs it, and choose a scale you can sustain.*",
+      "approved_edits": [
+        {
+          "review": "ending-review.json",
+          "edit": 6
+        }
+      ],
+      "result": "Correct inherited identity; no repair needed.",
+      "new_lines": [
+        3,
+        3
+      ]
+    }
+  ],
+  "new_blocks": [
+    {
+      "id": "sts.introduction.b0162",
+      "file": "02-introduction.md",
+      "split_from": "sts.introduction.b0142",
+      "text": "Between 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: \"The sheriff gives you a Notice to Vacate,\" five days to move, and \"if you don't move out, the sheriff can lock you out of your home.\" [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 1
+        }
+      ],
+      "new_lines": [
+        91,
+        91
+      ]
+    },
+    {
+      "id": "sts.chapter3.b0098",
+      "file": "05-chapter3.md",
+      "split_from": "sts.chapter3.b0060",
+      "text": "**Reading route.** Chapters 3 and 4 are the book's most speculative. If you're here for the practical part, continue at Chapter 5. You'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.",
+      "approved_edits": [
+        {
+          "review": "opening-review.json",
+          "edit": 3
+        }
+      ],
+      "new_lines": [
+        20,
+        20
+      ]
+    }
+  ],
+  "repairs": [],
+  "new_tombstones": [],
+  "checks": {
+    "all_18_approved_edits_consumed_exactly_once": true,
+    "all_2303_expected_block_texts_match_source": true,
+    "all_17_positional_assignments_correct": true,
+    "unchanged_2284_ids_and_nonspan_metadata_preserved": true,
+    "all_2301_old_live_ids_retained": true,
+    "all_historical_tombstones_unchanged": true,
+    "live_ids_disjoint_from_tombstones": true,
+    "all_next_ordinals_above_allocated_ids": true,
+    "frozen_36_source_hashes_unchanged": true,
+    "preserved_v103_index_unchanged": true,
+    "persisted_verification": [
+      {
+        "check": "id.count",
+        "ok": true,
+        "detail": "2303 blocks"
+      },
+      {
+        "check": "id.unique",
+        "ok": true,
+        "detail": "0 duplicate id(s)"
+      },
+      {
+        "check": "id.scheme",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "check": "span.valid",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "check": "hash.match",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "check": "coverage.exact",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "check": "art.links",
+        "ok": true,
+        "detail": "110 linked, bad []"
+      }
+    ],
+    "nonwriting_rebuild_persistent_state_identical": true,
+    "second_write_returns_false": true,
+    "second_write_bytes_unchanged": true,
+    "noop_reconcile": {
+      "exact": 2303,
+      "positional": 0,
+      "by_section": []
+    }
+  },
+  "negative_controls": {
+    "semantic_wrong_ids": {
+      "mutation": "Swap sts.introduction.b0142 and sts.introduction.b0162 in memory. No source or persisted index mutation.",
+      "rejected": true,
+      "errors": [
+        {
+          "section": "introduction",
+          "expected_id": "sts.introduction.b0142",
+          "actual_id": "sts.introduction.b0162",
+          "expected_hash": "3cb2fbaedf9d",
+          "actual_hash": "3cb2fbaedf9d"
+        },
+        {
+          "section": "introduction",
+          "expected_id": "sts.introduction.b0162",
+          "actual_id": "sts.introduction.b0142",
+          "expected_hash": "f4cfee2c3902",
+          "actual_hash": "f4cfee2c3902"
+        }
+      ],
+      "structural_verifier_passed": true,
+      "implication": "Structural verification cannot observe a semantically wrong but well-formed ID. The approved-edit-derived identity probe does."
+    },
+    "structural_controls": [
+      {
+        "check": "id.count",
+        "rejected": true,
+        "detail": "0 blocks"
+      },
+      {
+        "check": "id.unique",
+        "rejected": true,
+        "detail": "1 duplicate id(s)"
+      },
+      {
+        "check": "id.scheme",
+        "rejected": true,
+        "detail": "['bad-id']"
+      },
+      {
+        "check": "span.valid",
+        "rejected": true,
+        "detail": "['sts.introduction.b0001']"
+      },
+      {
+        "check": "hash.match",
+        "rejected": true,
+        "detail": "['sts.introduction.b0001']"
+      },
+      {
+        "check": "coverage.exact",
+        "rejected": true,
+        "detail": "['02-introduction.md:unaddressed']"
+      },
+      {
+        "check": "art.links",
+        "rejected": true,
+        "detail": "110 linked, bad ['sts.introduction.b0002']"
+      }
+    ]
+  },
+  "harness_correction": "The first expected-block calculation parsed captions in isolation and stopped at a hash mismatch before any write. Preserving each unchanged caption classification from the complete prior index resolved this missing-context error. The corrected calculation matched every current block.",
+  "limits": "This is semantic reconciliation of the documented v0.10.3 to v0.10.4 transition. It does not change the generic reconciler or establish semantic identity for future undocumented edits."
+}

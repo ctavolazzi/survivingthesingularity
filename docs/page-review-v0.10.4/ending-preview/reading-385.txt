@@ -1,0 +1,22 @@
+APPENDIX E
+The Cyberdeck
+Chapter 17 gave you the workbench. This is the machine that can come off it. A
+cyberdeck is a personal computer you assemble or adapt around the functions
+you want to control. Choose hardware and software that can do those jobs
+without a cloud or a subscription. Itʼs optional. Everything here starts with the
+device already in your pocket.
+A computer you understand all the way down, that answers to nobodyʼs server.
+The word, and where it came from
+The word is older than the hardware. William Gibson coined “cyberspace
+deck”  in  1984,  in  Neuromancer,  for  the  machine  his  console  cowboys
+jacked into the matrix with. He never described it in much detail, so for
+almost thirty years a cyberdeck was a hole in a novel, shaped exactly like
+the machine you wished you owned.
+The  hole  started  filling  in  around  2012,  when  the  Raspberry  Pi  put  a
+whole  Linux  computer  on  a  credit-card  board  for  thirty-five  dollars.
+Suddenly the fictional deck had a plausible brain. Hobbyists began build-
+ing physical versions and posting them, and a scene formed around com-
+munity sites and Hackadayʼs cyberdeck contests. For a decade it stayed a
+maker subculture.
+SURVIVING THE SINGULARITY
+380

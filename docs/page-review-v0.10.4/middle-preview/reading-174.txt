@@ -1,0 +1,18 @@
+N₂ + 8H+ + 8e− + 16 ATP → 2NH₃ + H₂ + 16 ADP + 16 Pi (via nitroge-
+nase)
+The plant pays in sugar from sunlight. Thatʼs not the same job as the
+fungi that help roots take up phosphorus and water, and none of it
+means a garden feeds itself forever: every harvest carries nutrients
+away, and something has to put them back. But a living soil, managed
+well, can carry a lot of the load that currently comes from a gas well.
+(Chapter 15 goes down into the dirt.)
+What a garden robot actually does
+FarmBotʼs  own  documentation  describes  a  gantry  on  rails  over  a
+raised bed, driven by stepper motors to millimeter-class accuracy,
+with  tool  heads  for  seeding,  watering,  and  weeding.  FarmBot  tool
+documentation Every plant becomes a coordinate. Thatʼs a concrete,
+useful set of tasks. It isnʼt a machine that harvests every crop, cooks a
+balanced diet, and delivers it for free, so keep the claim the size of the
+documented work.
+CHAPTER 9
+169

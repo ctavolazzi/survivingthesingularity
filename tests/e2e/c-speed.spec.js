@@ -107,6 +107,21 @@ test.describe('Performance', () => {
   });
 
   test('Total page weight is reasonable (under 2MB)', async ({ page }) => {
+    /* Measured against the PRODUCTION build on the preview server, not the
+       dev server the rest of the suite uses. This test was born red: every CI
+       run since the workflow existed failed it (2.65MB on the first completed
+       run, 30762448747), because the dev server ships ~2.5MB of scaffolding
+       the reader never downloads - the unminified kit client, HMR runtime,
+       and per-file modules. Measured 2026-08-04: the same commit weighed
+       3.24MB dev-served and 0.79MB built. The budget is meant to bound what a
+       visitor fetches, so it must point at the artifact, not the scaffold.
+       The preview server is booted by the second webServer entry in
+       playwright.config.js. */
+    if (process.env.PLAYWRIGHT_BASE_URL && !process.env.PLAYWRIGHT_PREVIEW_URL) {
+      test.skip(true, 'External-server run (Docker workaround) has no preview server; set PLAYWRIGHT_PREVIEW_URL to cover this.');
+    }
+    const previewUrl = process.env.PLAYWRIGHT_PREVIEW_URL || 'http://localhost:4173';
+
     let totalBytes = 0;
 
     page.on('response', response => {
@@ -114,7 +129,7 @@ test.describe('Performance', () => {
       totalBytes += contentLength;
     });
 
-    await page.goto('/', { waitUntil: 'networkidle' });
+    await page.goto(previewUrl + '/', { waitUntil: 'networkidle' });
 
     const totalKB = totalBytes / 1024;
     const totalMB = totalKB / 1024;

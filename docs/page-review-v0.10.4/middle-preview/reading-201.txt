@@ -1,0 +1,34 @@
+What the proxy served, to anyone on earth who looked, was the mesh
+journal: the plain-text nervous system of nineteen households. Main-
+tenance logs. Meeting minutes. The duty roster. The CSA customer
+list  with  addresses.  Priyaʼs  greenhouse  alarms.  Martaʼs  physical-
+therapy schedule, Tuesdays, for the shoulder she never mentioned.
+Which  houses  stood  empty  on  which  afternoons,  computable  by
+anyone who could read a grid log. All of it indexed, unauthenticated,
+public, for forty-one hours.
+It was one of Dennyʼs subscribers who caught it, a network engineer
+four states away, with a screenshot and one line: “you probably want
+to  lock  your  journal,  brother.”  Elijah  killed  the  proxy  before  he
+finished reading the sentence. Then he pulled the access logs and did
+the arithmetic he would have paid anything not to do. Three crawlers
+had been through. You can delete a mistake from your own server.
+The internet does not run your deletion for you.
+He thought about carrying it alone for exactly as long as it took to
+imagine Marta finding out some other way. Then he rang the dinner
+bell on a Sunday afternoon, which the co-op did not do, and stood in
+front of everyone it summoned and read them the timestamps.
+Marta did not raise her voice, which everyone in the shed understood
+to  be  the  worst  available  outcome.  “You  published  which  houses
+stand empty between two and four on a Tuesday,” she said. “At the
+plant we had lockout-tagout. You donʼt service a press that can take
+your hand off until its energy sources are isolated, the stored energy
+is dealt with, and the lockout is verified. Your name goes on your
+lock. You put our hands in the press, college.”
+Curtis said his piece, and for once it had teeth: this is what happens,
+you brought their machine inside the wire, pull the plug and melt it
+down. Heads were nodding. Marta let them nod for a moment.
+“The first family that ever kept fire burned something down,” Marta
+said. “A roof, a winter store, somebodyʼs child. And nobody handed
+the fire back. They built the hearth. Stones in a circle, rules about
+SURVIVING THE SINGULARITY
+196

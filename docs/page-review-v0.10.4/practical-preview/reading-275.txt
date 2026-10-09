@@ -1,0 +1,55 @@
+SURVIVING THE SINGULARITY
+
+
+
+
+CHAPTER 16
+Digital Leverage and Media
+Autonomy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Server racks. A useful record can travel beyond the people who made it. (Victor Grigas, CC BY-SA
+3.0, via Wikimedia Commons)
+
+
+       “Freedom of the press is guaranteed only to those who own one.”
+       A. J. Liebling, “The Wayward Press: Do You Belong in Journal-
+       ism?”, The New Yorker (14 May 1960)
+
+
+
+In this chapter:
+
+ • Code and media can work while you sleep. Theyʼre the closest thing to employees
+   that never get tired, and nobodyʼs permission is needed to start.
+ • The machine flooded the world with synthetic content and created a shortage it
+   canʼt fill: proof that a real thing happened to real people.
+ • Trust doesnʼt scale, and doesnʼt have to. Files scale. Ship the files; keep the trust
+   local.
+ • Consent, privacy, and corrections belong in the publishing process. Neither a
+   platform nor a file format guarantees income or permanence.
+
+
+
+
+The video that did it was the first fire.
+
+
+
+270

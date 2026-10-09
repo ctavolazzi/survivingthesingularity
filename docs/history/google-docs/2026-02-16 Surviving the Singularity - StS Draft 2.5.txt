@@ -1,0 +1,172 @@
+SURVIVING THE SINGULARITY
+An Alternative Lifestyle Manual for Post-Capitalist Living
+
+  
+________________
+Chapter 1: The World is Getting Weird
+What is happening.
+Everything is moving very fast. You are probably nervous. That is a normal reaction. The machines are waking up. A lot of people are putting their heads in the sand. Do not do that. The sand is not going to help you.
+For a long time, we wrote sci-fi books about robots figuring things out and getting out of control. Now those books are just the morning news. We are handing the keys over to boxes that can actually think and decide things. Imagine you walk outside and your horse has built a warp drive. You would be very confused. That is exactly where society is at right now.
+The global cloud is boring and bad.
+There is an intelligence explosion happening. The big tech companies want you to sit completely still and rent your brain from them. They have giant servers in a canyon somewhere and they want to own the entire wave. We should not let them do that.
+We need a shouse.
+What is a shouse. It is a shop. It is a house. It is a rural workshop where you achieve creative freedom and put really big servers. Let’s buy big heavy servers. Let’s put them in our own towns. We can grab some surplus industrial automation gear, wire up our own data center, and run our own hardware. We build infrastructure that actually serves us locally instead of feeding a global corporate machine.
+________________
+Chapter 2: How to Actually Build the Crucible
+The Iron.
+You need computers. Big ones. Do not use your laptop for this. Your laptop will melt and then you will be sad. We need server racks. You can buy these used for cheap when a tech company goes out of business. We need GPUs. They do the math. They do it very fast.
+Power and cooling are going to be a problem. Servers are basically giant space heaters that know how to do algebra. We are going to need serious airflow. If you have some surplus industrial automation parts laying around, now is the time to wire up a custom cooling loop or a smart power relay. Make it loud. Make it work.
+The Software.
+We are not using the cloud. The cloud is just someone else’s computer. We are using our computer. Install Linux. Get Docker. It puts the AI in little digital boxes so they cannot escape and delete your files. Get Ollama or vLLM. These are the engines. They run the open source models locally on your metal. Then we bring in the agents. Claude Code. OpenClaw. CrewAI. AutoGen. We give them a job.
+The Arena.
+This is the sandbox. This is where the magic happens. We write a script. We tell two different local AI models to write a piece of code. They write the code. They test the code in the sandbox.
+If Model A writes code that crashes, Model A loses. If Model B writes code that works, Model B wins. We keep Model B’s code. We throw away Model A’s code. We feed the winner back into the system and make the test harder. This is how we take the power back. We build the tools. We own the hardware.
+________________
+Chapter 3: The Metal Box You Live In
+Shipping containers are cheap. They are strong. They stack like giant steel Legos. But they are also basically tin cans. If you try to live in just one, you will go crazy. The walls are too close together.
+The secret is the double wide.
+You get two 40-foot high-cube containers. You cut the inside walls out. You put a giant beam up to hold the roof. You bolt them together. Now you have a massive room. Do not build hallways. Hallways are a waste of space.
+Make the bathroom a wet room. The whole floor is slanted toward a drain. There is no shower curb to trip over. Before you put the interior walls up, put thick wood blocking all the way around the room. In thirty years when your knees stop working, you can bolt a grab bar straight into the wall without tearing the place apart. You are building this for the future. You are building it for future you.
+________________
+Chapter 4: The Robot on the Roof
+Your server fortress needs to feed you. If you rely on the global grocery store supply chain, you are still tied to the machine. We are going to put a robot on the roof.
+Meet the FarmBot. It is a giant open source CNC machine for dirt. It moves on metal tracks. It plants seeds. It squirts water directly onto the roots so it does not waste a single drop. It does not get tired. It just grows food.
+Inside the greenhouse, we run a software called Mycodo. It is a brain for plants. It runs on a cheap Raspberry Pi. It watches the humidity and the temperature. It turns on fans and heaters perfectly so your tomatoes think they are in heaven. You do not pull weeds anymore. Your new job title is Robot Wrangler. You tighten the belts on the machine. You let the AI write the code to fix the water pump.
+________________
+Chapter 5: Beating the Paperwork
+You are probably thinking the local government will never let you build a robot farm on top of a double wide shipping container. In a lot of places, you are right. They like standard houses with standard mortgages.
+But look at Paradise, California. After the fires, they had to change the rules. They started using something called Title 25. It is a rule book for owner builders in rural areas. It means you can use your own lumber. You can use generators if the grid is down. You can build smaller footprints.
+You need to find places with rules like this. Or you need to show up to your local town council and annoy them until they write rules like this.
+________________
+Chapter 6: The Digital Walkie Talkie
+If the big internet burns down, your town cannot go deaf. We run our own servers. We use a protocol called ActivityPub. It is a local social network. If the fiber optic cable to the big city gets cut, your local network stays up. You can still message your neighbor.
+When the global internet goes away, how do you remember how to fix the FarmBot. You use a Federated Wiki. You copy your neighbor’s notes on growing potatoes. You change the notes to fit your yard. You both keep your own copies. It is a living, breathing encyclopedia that nobody can delete.
+Who cleans the digital toilets.
+Maintaining all this server code is annoying. That is what the AI is for. OpenClaw and Claude Code are your digital janitors. You text your AI server on your phone and tell it to update the firewall. The AI logs into the terminal and does all the boring typing for you.
+This is the Autonomous Resilient Node. It is a house that feeds you, defends your data, and fixes its own code.
+________________
+Chapter 7: The $25,000 Exit Strategy
+The whole point of this project is to stop renting your life from giant corporations. But building a standard house costs half a million dollars and traps you in a thirty year mortgage. That is a trap. We are not doing that.
+We are building the Sovereign Shell. It is a dry, secure, heavily powered fortress. The entry cost is about 25 grand. That is the price of a used car. But instead of a car, you get a permanent exit from the rat race. You can sit on your own land with your sweetie, completely outside the system, while the robots do the heavy lifting.
+The Shopping List
+* The Foundation: Dig some holes. Tie some rebar. Call a place like Western Ready Mix in Chico to haul a truck up the ridge. Split the cost with your neighbors to avoid short load fees.
+* The Metal: Find a "One-Trip" 40-foot high-cube shipping container. Do not buy a rusty box that has been hauling toxic chemicals for twenty years.
+* The Power Plant: We are entirely disconnecting from the fragile grid. Get ten used commercial solar panels. Buy a massive lithium iron phosphate server rack battery. Wire it to an all-in-one hybrid inverter.
+* The Digital Brain: Slap a Starlink dish on the roof. Plug it into a heavy workstation and a bunch of cheap microcontrollers. This is your digital nervous system.
+________________
+Chapter 8: The Comments Section of Reality
+You do not need a bunch of complicated cryptocurrency tokens to run a local community. You just need a comments section. The most robust systems on the internet are the comment sections. Good ideas get upvoted. Bad ideas get buried. We are taking that exact system and applying it to physical infrastructure in our own towns.
+If someone in your local node figures out a better way to filter rain water, they post the design. The community tests it. The best version wins.
+The New Jobs.
+When we automate all the boring stuff, we get to invent new jobs that actually matter.
+* Local Robot Wrangler: Fixing the drones and the weed whacking rovers when they get stuck in the mud.
+* Regional Open Source Manager: Making sure the local server codebase is updated and secure so the community microgrid does not crash.
+* Material Scavenger: Experts in pulling a depreciated solar panel out of a scrap heap and testing it so it can power a new house.
+This is the future we are building. A network of sovereign nodes.
+________________
+Chapter 9: The Technical Appendix (Wiring)
+Now we install the software. We are going to set up a local framework. Let us call the main project directory waft.
+The Engine Room (docker-compose.yml)
+
+
+YAML
+
+
+
+
+version: '3.8'
+services:
+ ollama:
+   image: ollama/ollama:latest
+   container_name: local_ollama
+   ports:
+     - "11434:11434"
+   volumes:
+     - ./ollama_data:/root/.ollama
+   deploy:
+     resources:
+       reservations:
+         devices:
+           - driver: nvidia
+             count: all
+             capabilities: [gpu]
+
+ sandbox:
+   image: python:3.10-slim
+   container_name: the_crucible
+   volumes:
+     - ./arena:/app/arena
+   command: tail -f /dev/null
+
+The Crucible Script (arena.py)
+
+
+Python
+
+
+
+
+import subprocess
+import requests
+
+def ask_model(model_name, prompt):
+   url = "http://localhost:11434/api/generate"
+   data = {"model": model_name, "prompt": prompt, "stream": False}
+   response = requests.post(url, json=data)
+   return response.json()['response']
+
+def test_code(code_string, filename):
+   with open(f"./arena/{filename}", "w") as f:
+       f.write(code_string)
+   
+   # Run the code inside the secure Docker sandbox
+   result = subprocess.run(
+       ["docker", "exec", "the_crucible", "python", f"/app/arena/{filename}"],
+       capture_output=True, text=True
+   )
+   return result.returncode == 0
+
+________________
+Chapter 10: The Digital Bucket Brigade
+The global internet is a fragile wire. A squirrel can chew through it. We need a backup plan. We use a Mesh Network.
+The Hardware.
+Get point to point dishes. Mount them on a pole on your roof. Aim them directly at your neighbor's roof. They shoot a focused beam of data through the air.
+The Software.
+We use libp2p. It is a network protocol that does not care if the main internet is dead. It just looks for the next closest node.
+mesh_node.js
+
+
+JavaScript
+
+
+
+
+import { createLibp2p } from 'libp2p'
+import { tcp } from '@libp2p/tcp'
+import { noise } from '@chainsafe/libp2p-noise'
+import { yamux } from '@chainsafe/libp2p-yamux'
+
+async function startNode() {
+ const node = await createLibp2p({
+   addresses: {
+     listen: ['/ip4/0.0.0.0/tcp/0']
+   },
+   transports: [tcp()],
+   connectionEncryption: [noise()],
+   streamMuxers: [yamux()]
+ })
+
+ await node.start()
+ console.log('Your Sovereign Node is awake.')
+ 
+ node.getMultiaddrs().forEach((addr) => {
+   console.log(`Tell your neighbor to connect here: ${addr.toString()}`)
+ })
+}
+
+startNode()
+
+________________
+Everything is broken. 
+Let’s fix it, one shop at a time.
+________________

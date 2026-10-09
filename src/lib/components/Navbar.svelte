@@ -4,7 +4,11 @@
   import { onMount, onDestroy, tick } from 'svelte';
   import { browser } from '$app/environment';
   import { readerMode } from '$lib/stores/readerMode';
+  import { offer } from '$lib/offer';
 
+  // Vestigial. Accounts were removed 2026-08-04 by CT's ruling, so there is no
+  // user to pass down and no account control to render. Kept as an accepted
+  // prop so the existing `<Navbar user={data?.user} />` call site does not break.
   export let user = null;
   void user;
 
@@ -30,7 +34,7 @@
         {
           href: '/early-access',
           label: 'Preorder the Book',
-          sub: '$5. Draft + The Precedent File now, 50% off at launch.',
+          sub: `${offer.price}. Every digital thing this project makes, and you never pay the membership.`,
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
         },
         {
@@ -62,7 +66,7 @@
 
   // One offer, one CTA, everywhere.
   $: currentPath = $page.url.pathname;
-  const ctaConfig = { label: 'Preorder: $5', href: '/early-access' };
+  const ctaConfig = { label: `Preorder: ${offer.price}`, href: '/early-access' };
 
   $: isActive = (href) => href === '/' ? currentPath === '/' : currentPath.startsWith(href);
 
@@ -608,7 +612,9 @@
   @media (max-width: 959px) {
     .nav-pill { padding: 5px 5px 5px 12px; gap: 2px; }
     .nav-sep { display: none; }
-    .nav-cta { font-size: 0.82rem; padding: 5px 5px 5px 11px; }
+    /* 7px vertical keeps the pill at 38px, over the 36px minimum tap target
+       the e2e mobile-design spec enforces. 5px measured 34.6px on Pixel 5. */
+    .nav-cta { font-size: 0.82rem; padding: 7px 5px 7px 11px; }
     .nav-cta-icon { width: 20px; height: 20px; }
   }
 

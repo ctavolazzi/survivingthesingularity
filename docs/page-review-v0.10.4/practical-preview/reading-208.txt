@@ -1,0 +1,51 @@
+                                                                          CHAPTER 11
+
+
+programʼs recipient list, a familyʼs medical questions, a co-opʼs legal
+strategy, youʼd rather it never left the building. Local compute is one
+of the last private places left to think.
+You donʼt need enterprise money. Every few years, data centers retire
+perfectly good hardware onto the used market, and the co-opʼs rack
+came from exactly that: a county surplus auction.
+
+   THEFILEISONELAYER
+
+
+   Openweights                              Operatingstack
+
+
+                                                              Software
+
+
+                                                              Compute
+
+
+                                                              Power
+
+   Licensesets
+   theterms.
+
+
+
+
+   Adownloadablemodelisnotawholeservice.
+
+
+
+
+The model file is one layer of a working service. Running a useful service also takes software,
+hardware, power, and people who maintain it. Conceptual illustration.
+
+
+The memory math
+For running language models, memory is one of the first limits to
+check. Keeping the weights in graphics memory (VRAM) avoids
+slower transfers, although some tools can divide work between GPU
+and system memory. Start with an estimate:
+
+      VRAM ≈ ((P · Q)/8) · B [GB]
+
+
+
+
+                                                                                 203

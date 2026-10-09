@@ -1,0 +1,28 @@
+When a meal fails. An illustrative worksheet from this chapterʼs premortem record, not the
+measured performance of a service. Confirm the alternative and the people who will deliver it
+before expanding the promise.
+WHENAMEALFAILS
+Illustrativepremortemworksheet
+1
+WHOLOSESTHEMEAL?
+Nameaffectedpeopleandjobs.
+2
+WHATWARNSYOU?
+Defineasignalormissingcheck-in.
+3
+WHORESPONDS?
+Confirmaleadandanavailablebackup.
+4
+WHATGETSDELIVERED?
+Testthealternative;showanygap.
+5
+WHATKEEPSITRUNNING?
+Namesupplies,labor,money,enddate.
+6
+WHENDOYOUCHECKAGAIN?
+Setareviewdateandneededevidence.
+Testthehandoffbeforemakingthepromise.
+Keeppersonaldetailsoutofthepublicboard.
+Source:Chapter18,failed-mealrecord.
+CHAPTER 18
+313

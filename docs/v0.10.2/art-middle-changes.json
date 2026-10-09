@@ -1,0 +1,167 @@
+[
+  {
+    "file": "ch09-hyperlocal-vs-global.svg",
+    "generator": "docs/v0.10.2/figures_middle.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      588
+    ],
+    "provenance": "Original native SVG revision by Codex for v0.10.2. Semantics aligned with the reviewed chapter; no new measured dataset. Screen and print use identical geometry with palette-only differences.",
+    "screen_sha256": "6e7bb65874c9c6d0bf384666f67e595e66e5c85b496794f2433bcc4cd0d1a16c",
+    "print_sha256": "0ed2e8082eb76daa3e15c210893ef83809f5cf7fb7bcc607f21793c9c2de8ef8",
+    "baseline_screen_sha256": "cc278653214ec61e4c7f6ffd3bc209fca9fae9963f0767e8d4524951a02d66d4",
+    "baseline_print_sha256": "7407520553fec4e64074200abe9545191f2f02c068b8112e7e80a02363159410",
+    "recommended_alt": "Two schematic supply routes reach households: distant suppliers through factory and freight, or imported parts through nearby workshops and growers, with a repair return. Both rely on people, energy and imports.",
+    "recommended_caption": "Shorter supply lines can make repair and coordination more local. Imported parts, materials, energy and human work remain; distance alone does not establish fair treatment.",
+    "changes": [
+      "A03: removed universal exploitation and self-sufficiency claims",
+      "Made imported tools, materials, human work and upkeep visible",
+      "Stacked two schematic routes with a repair return"
+    ],
+    "primary_sources": [],
+    "source_review_date": "2026-09-28"
+  },
+  {
+    "file": "ch09-region-ring.svg",
+    "generator": "docs/v0.10.2/figures_middle.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      624
+    ],
+    "provenance": "Original native SVG revision by Codex for v0.10.2. Semantics aligned with the reviewed chapter; no new measured dataset. Screen and print use identical geometry with palette-only differences.",
+    "screen_sha256": "e3553bf80c03b543e28af0e681d61caf14e94b5585d4600215c27707684e385f",
+    "print_sha256": "67081ce5c2201c79c1cea93518a482f896984277b32ff0d2e547189393cf9142",
+    "baseline_screen_sha256": "c8b7522f33f35f5ccef569e2df5b525a87f08d7be0ea32baef2e474edc8f2ea7",
+    "baseline_print_sha256": "320d35205a8befcc565107052135f5ca038ff804983322b58492fa1e12bf51ae",
+    "recommended_alt": "A town and households connect to nearby farms and kitchens, materials recovery and stores, power and water services, and workshops. Regional coverage is a capacity-building objective that must be measured, with outside suppliers still needed.",
+    "recommended_caption": "Build regional capacity, then measure what it covers. Stores, seasonal production, water, power, delivery and remaining imports determine how many people can be supplied and for how long.",
+    "changes": [
+      "A04: replaced complete regional self-sufficiency and guaranteed outage coverage",
+      "Coverage now depends on measured stores, seasonal output, water, power and delivery"
+    ],
+    "primary_sources": [],
+    "source_review_date": "2026-09-28"
+  },
+  {
+    "file": "ch09-cnc-bed.svg",
+    "generator": "docs/v0.10.2/figures_middle.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      610
+    ],
+    "provenance": "Original native SVG revision by Codex for v0.10.2. Semantics aligned with the reviewed chapter; no new measured dataset. Screen and print use identical geometry with palette-only differences.",
+    "screen_sha256": "ab194625806be4608a6abf0ec47a15ece4123cdc35a8ee4f8ddc92482935583c",
+    "print_sha256": "6f00880b34f5f4a1fcbaded17b40c23169448315b20f12aeee1f7ea8428f9d20",
+    "baseline_screen_sha256": "ac01a17fa56ce0a9a173abe0b05200ecdad7aa5e882b5594e96f1beb1265bd43",
+    "baseline_print_sha256": "6d75484e691b685bb9804c2862b9646417a71e23412d5187813d4881a9511ae3",
+    "recommended_alt": "Top view of a gantry over a growing bed, with X travel along the bed, Y travel across the gantry and Z motion lowering the tool toward a plant. Generic tooling can seed, water or weed; people still inspect, maintain and harvest.",
+    "recommended_caption": "A gantry can reduce walking space in a bed. Tooling and behavior depend on the machine and software version; this concept is not a build plan or a promise to automate the entire crop.",
+    "changes": [
+      "A06: generic model-dependent tooling replaces unpinned OpenCV rotary-weeder claim",
+      "Reduced walking space replaces zero wasted bed; inspection, upkeep and harvest stay human"
+    ],
+    "primary_sources": [
+      "https://farm.bot/pages/tools",
+      "https://farm.bot/"
+    ],
+    "source_review_date": "2026-09-28"
+  },
+  {
+    "file": "ch09-greenhouse-bus.svg",
+    "generator": "docs/v0.10.2/figures_middle.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      650
+    ],
+    "provenance": "Original native SVG revision by Codex for v0.10.2. Semantics aligned with the reviewed chapter; no new measured dataset. Screen and print use identical geometry with palette-only differences.",
+    "screen_sha256": "25403083a4e785503e32b61352819f19d8945e0a79df12d358243b77b1edc702",
+    "print_sha256": "2896db1d01e32508eb6a91e3983c23d3a70ad5e113df3afbf4cc3c52c1370b9f",
+    "baseline_screen_sha256": "0dead8e129be5005f56a35c1afce2a05dea14c5288db8b087914adf2df7bcf17",
+    "baseline_print_sha256": "a5c7b93ede690efd2bbc72fb20e2c64a193ae06af5937c62e53340d8f0fe5070",
+    "recommended_alt": "SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.",
+    "recommended_caption": "The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.",
+    "changes": [
+      "A05: STEMMA 4026 identified as capacitive moisture sensor, not a dedicated soil-temperature probe",
+      "Explicit grower setpoints, run-time and water limits, tested irrigation fail-off and manual shutoff",
+      "Component map retains I2C sensing and matched low-voltage actuation without wiring or unattended guarantees"
+    ],
+    "primary_sources": [
+      "https://www.adafruit.com/product/4026"
+    ],
+    "source_review_date": "2026-09-28"
+  },
+  {
+    "file": "ch10-model-collapse.svg",
+    "generator": "docs/v0.10.2/figures_middle.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      614
+    ],
+    "provenance": "Original native SVG revision by Codex for v0.10.2. Semantics aligned with the reviewed chapter; no new measured dataset. Screen and print use identical geometry with palette-only differences.",
+    "screen_sha256": "9ac0595a04f0aa1de23887c7a667db0b4c8c51994508c7674456f6e34d11eaf0",
+    "print_sha256": "001c754a94d4f86c7c72f08869e052329ffcbb95913085dfaf1ba10349a24ff3",
+    "baseline_screen_sha256": "d87296dc91bd3210f42ed1c2420b5d2015d4f6b40b838119447a9fc6ac3e95d9",
+    "baseline_print_sha256": "7a10550c12a0ad027af34a474c51cbc4754b2f23441f61d12c298431950c4b7a",
+    "recommended_alt": "Three schematic distributions show one possible result of repeatedly training on generated samples: rare cases can be lost, variety can narrow and errors can drift. The curves are illustrative, without measured axes or a generation timetable.",
+    "recommended_caption": "One possible failure in recursive training on generated samples. This schematic is not a universal outcome or a timetable; real data, sampling and training choices affect the result. Based on Shumailov et al., Nature (2024).",
+    "changes": [
+      "Replaced fixed generation stages with a conditional training lineage",
+      "Illustrative curves explicitly identify possible loss of rare cases and drift, not universal inevitable failure"
+    ],
+    "primary_sources": [
+      "https://www.nature.com/articles/s41586-024-07566-y"
+    ],
+    "source_review_date": "2026-09-28"
+  },
+  {
+    "file": "ch10-algorithm-unlock.svg",
+    "generator": "docs/v0.10.2/figures_middle.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      599
+    ],
+    "provenance": "Original native SVG revision by Codex for v0.10.2. Semantics aligned with the reviewed chapter; no new measured dataset. Screen and print use identical geometry with palette-only differences.",
+    "screen_sha256": "254420c3f821561d4dcc95e59d6e8399750aebf56593f64b88a9346754532fa8",
+    "print_sha256": "e5844fbd5b9e20aee5ec4133abeda31db022b963d60797877dbe7ceca46d75b3",
+    "baseline_screen_sha256": "7de6330b20cff5183b2deb05fb2adc12e5da302466d5984e4e42db403d171ac7",
+    "baseline_print_sha256": "75fcd31da5c067615219fd92550475f45da73d31dfb2c30fd93add08dc32ec66",
+    "recommended_alt": "Four illustrated stages connect documenting useful work, telling a true story with consent, offering it to a feed and keeping instructions usable through answers, corrections and archives. Distribution may bring readers but is not guaranteed.",
+    "recommended_caption": "Document useful work, tell the true story with consent, and keep the instructions available. A platform may bring readers; a post is not guaranteed reach or income.",
+    "changes": [
+      "Recomposed wide funnel as four illustrated stages",
+      "Kept human truth, consent, corrections and durable instructions visible",
+      "Distribution is possible, with no audience or income guarantee"
+    ],
+    "primary_sources": [],
+    "source_review_date": "2026-09-28"
+  },
+  {
+    "file": "ch11-cooling-loop.svg",
+    "generator": "docs/v0.10.2/figures_middle.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      642
+    ],
+    "provenance": "Original native SVG revision by Codex for v0.10.2. Semantics aligned with the reviewed chapter; no new measured dataset. Screen and print use identical geometry with palette-only differences.",
+    "screen_sha256": "3bc548544d2b9fa6dc3048206eb26906741bcff2f526704e9659e30047355109",
+    "print_sha256": "1bb47ceaf9d82e54a9fa9209d66e1a0d7828ea2933cb712f96bee181d5a51347",
+    "baseline_screen_sha256": "bc902f7a714104dad7eb69cfdc84d7d044a29c42f050ff39ec5a20c84e697c90",
+    "baseline_print_sha256": "28da9c4b242abe4e520e825523aea477a89fd5ade13109103d522a80df8b8a61",
+    "recommended_alt": "A conceptual coolant loop carries heat from CPU and GPU water blocks through a pump to an outdoor radiator with airflow and returns cooler coolant. Heat rate equals mass flow times specific heat times temperature change; materials, pump, coolant and radiator must be compatible.",
+    "recommended_caption": "Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in kilograms per second: Q̇ = ṁ Cp ΔT. This diagram specifies neither components nor cooling capacity.",
+    "changes": [
+      "A11: heat equation specifies mass flow in kg/s and explicit units",
+      "Kept conceptual loop and compatibility boundary while removing unverified combined load and salvaged-component recipe",
+      "Larger labels and simplified serial flow retain named hot and cool paths"
+    ],
+    "primary_sources": [],
+    "source_review_date": "2026-09-28"
+  }
+]

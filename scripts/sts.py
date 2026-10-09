@@ -80,6 +80,12 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 
+# sts_lib holds the internals, split by concern. Importable with no packaging
+# step because sys.path[0] is this file's directory whenever sts.py runs as the
+# main script -- which is the only way it is meant to run.
+from sts_lib.manifest import load_manifest, section_files, section_label
+from sts_lib.refs import SREF_RE, expand_refs, ref_edges, ref_targets
+
 VERSION = "0.0.1"
 SITE = "https://survivingthesingularity.com"
 
@@ -113,7 +119,7 @@ BOOK_DIR = ROOT / "src" / "lib" / "data" / "book"
 # from the index would make the comparison a tautology. Bump it when a
 # precedent is added, and `verify precedents` will name whichever end of
 # the renumber you missed.
-LEDGER_SIZE = 23
+LEDGER_SIZE = 24
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -418,7 +424,7 @@ def strip_md(text: str) -> str:
 
 
 def book_stats() -> dict:
-    meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+    meta = load_manifest(BOOK_DIR)
     sections = []
     for s in meta["sections"]:
         f = BOOK_DIR / s["file"]
@@ -432,7 +438,27 @@ def book_stats() -> dict:
             "sections": sections}
 
 
+# Sections no consumer of the reflowable build can use, named by section ID.
+#
+# Keyed on id, not filename. scripts/build-epub.sh used to drop the print-style
+# index with `grep -v '^18-index.md$'`, and by the time this was written that
+# pattern matched nothing at all: the file had been renumbered out from under
+# it. A dead filter that reads like a live one is worse than no filter, because
+# it looks handled. Section ids survive renumbering; filenames carry an ordinal
+# prefix and do not.
+EPUB_EXCLUDE_IDS = ("index",)
+
+
 def cmd_book(args) -> int:
+    if args.files:
+        # The ordered section list for build-epub.sh, which used to derive it
+        # with its own jq expression. One manifest reader, three consumers.
+        meta = load_manifest(BOOK_DIR)
+        excluded = {s["file"] for s in meta["sections"]
+                    if s["id"] in EPUB_EXCLUDE_IDS}
+        for f in section_files(meta, exclude=excluded):
+            print(f)
+        return 0
     stats = book_stats()
     if args.json:
         print(json.dumps(stats, indent=2))
@@ -705,7 +731,7 @@ def cmd_images(args) -> int:
             sys.stdout.write(text)
             return 1 if any(r["action"] == "no-heading" for r in results) else 0
     else:
-        meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+        meta = load_manifest(BOOK_DIR)
         files = {s["id"]: BOOK_DIR / s["file"] for s in meta["sections"]}
         for e in registry:
             f = files.get(e["key"])
@@ -743,7 +769,7 @@ def cmd_quotes(args) -> int:
             sys.stdout.write(text)
             return 1 if any(r["action"] == "no-heading" for r in results) else 0
     else:
-        meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+        meta = load_manifest(BOOK_DIR)
         files = {s["id"]: BOOK_DIR / s["file"] for s in meta["sections"]}
         for q in registry:
             f = files.get(q["key"])
@@ -978,7 +1004,7 @@ def load_og_cards() -> list:
     reg = json.loads((ROOT / "scripts" / "og_cards.json").read_text(encoding="utf-8"))
     # {version} resolves from book.json, so a card that quotes the draft version
     # cannot go stale against the book it is advertising.
-    version = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))["version"]
+    version = load_manifest(BOOK_DIR)["version"]
     cards = []
     for c in reg["cards"]:
         c = dict(c)
@@ -1214,10 +1240,111 @@ SCHEMA_EXPECTATIONS = [
     ("010_waitlist_consent.sql",         "newsletter consent",    "waitlist",             "newsletter_consent"),
     ("010_waitlist_consent.sql",         "book release consent",  "waitlist",             "book_release_consent"),
     ("011_email_deliveries.sql",         "email delivery ledger", "email_deliveries",     None),
+    # 013 adds four columns to fulfilled_sessions in one ALTER. Probe the two
+    # that carry meaning on their own: `status` is what makes a half-finished
+    # fulfilment visible, and `attempts` is what makes a retry loop visible.
+    # Without these the durability work is invisible to this checker.
+    ("013_checkout_durability.sql",      "fulfilment status",     "fulfilled_sessions",   "status"),
+    ("013_checkout_durability.sql",      "fulfilment attempts",   "fulfilled_sessions",   "attempts"),
+    ("013_checkout_durability.sql",      "checkout durability",   "checkout_transactions", None),
 ]
 
-# Migrations that exist in sql/ but deliberately have nothing to probe.
-SCHEMA_UNPROBED_OK: set = set()
+# Migrations that exist in sql/ but deliberately have nothing this checker can
+# probe. Listing them here is not a free pass: it is the difference between
+# "we looked and there is nothing table-shaped to look at" and the silent
+# omission described in _schema_unexpected below.
+SCHEMA_UNPROBED_OK: set = {
+    # Replaces a trigger FUNCTION (assign_authors_copy_number). No table and no
+    # column changes, so table/column presence cannot see it either way.
+    # Verifying it means inserting an authors-edition row and reading back the
+    # assigned copy_number, which writes to production and is not something a
+    # read-only status command should do.
+    "007_authors_edition_no_cap.sql",
+    # Revokes grants and enables RLS. Again nothing table-shaped: the tables it
+    # protects exist both before and after it runs. It is NOT unchecked, it is
+    # checked differently - see the lockdown probe below, which is the only
+    # thing in this file that verifies the most important security migration in
+    # the project.
+    "012_lockdown_public_grants.sql",
+}
+
+# Tables sql/012 revokes from anon. A lockdown regression here re-exposes
+# customer email addresses to the key that ships in every browser.
+LOCKDOWN_TABLES = ["waitlist", "preorders", "fulfilled_sessions",
+                   "discord_applications", "email_deliveries", "preorder_counts"]
+
+
+def _anon_probe(url: str, anon_key: str, table: str):
+    """Attempt an anon SELECT. Returns (denied: bool, detail: str).
+
+    A 401 alone is ambiguous: a dead key denies everything too, which would make
+    a broken key look like a successful lockdown. The caller establishes a
+    key-validity control first, so by the time this runs a 401 means the grant
+    layer refused a WORKING key.
+    """
+    req = urllib.request.Request(
+        f"{url}/rest/v1/{table}?select=*&limit=1",
+        headers={"apikey": anon_key, "Authorization": f"Bearer {anon_key}",
+                 "User-Agent": f"sts.py/{VERSION}"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            body = resp.read().decode("utf-8", "replace")[:120]
+            return False, f"READABLE by anon (HTTP {resp.status}) {body}"
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace")
+        code = ""
+        try:
+            code = json.loads(body).get("code", "")
+        except Exception:
+            pass
+        if e.code in (401, 403) or code == "42501":
+            return True, f"denied (HTTP {e.code}{', ' + code if code else ''})"
+        if e.code == 404:
+            return True, "not exposed (HTTP 404)"
+        return False, f"unexpected HTTP {e.code}: {body[:100]}"
+    except Exception as e:
+        return False, f"probe failed: {e}"
+
+
+def _lockdown_report(url: str) -> list:
+    """Verify sql/012 behaviourally, with a key-validity control.
+
+    Returns a list of row dicts; an empty list means the anon key was not
+    available and nothing could be concluded.
+    """
+    # SUPABASE_ANON_KEY is the current name (server-only, no PUBLIC_ prefix; see
+    # .env.example). The two older names stay as fallbacks so a stale checkout
+    # still probes. Losing the name here does not fail loudly: the probe returns
+    # [] and the caller prints "NOT CHECKED", which reads like "fine" and is not.
+    e = read_env("SUPABASE_ANON_KEY", "PUBLIC_SUPABASE_ANON_KEY", "SUPABASE_PUBLISHABLE_KEY")
+    anon = (e.get("SUPABASE_ANON_KEY") or e.get("PUBLIC_SUPABASE_ANON_KEY")
+            or e.get("SUPABASE_PUBLISHABLE_KEY"))
+    if not anon:
+        return []
+
+    # CONTROL FIRST. A valid publishable key on /rest/v1/ answers "Secret API
+    # key required"; a bogus one answers "Invalid API key". Without this the
+    # whole table below is worthless.
+    control_ok = False
+    try:
+        req = urllib.request.Request(
+            f"{url}/rest/v1/", headers={"apikey": anon, "User-Agent": f"sts.py/{VERSION}"})
+        urllib.request.urlopen(req, timeout=20)
+        control_ok = True
+    except urllib.error.HTTPError as ce:
+        control_ok = "Invalid API key" not in ce.read().decode("utf-8", "replace")
+    except Exception:
+        control_ok = False
+
+    rows = [{"table": "(key-validity control)", "denied": control_ok,
+             "detail": "anon key is live" if control_ok
+                       else "ANON KEY IS DEAD - every denial below is meaningless"}]
+    if not control_ok:
+        return rows
+    for t in LOCKDOWN_TABLES:
+        denied, detail = _anon_probe(url, anon, t)
+        rows.append({"table": t, "denied": denied, "detail": detail})
+    return rows
 
 
 def _schema_unexpected() -> list:
@@ -1308,6 +1435,21 @@ def cmd_schema(args) -> int:
     for r in rows:
         mark = "ok     " if r["applied"] else "MISSING"
         print(f"  {mark}  {r['migration']:<38} {r['target']:<28} {r['detail']}")
+
+    # sql/012 is the most important security migration in the project and is not
+    # table-shaped, so presence probing cannot see it. Verify it behaviourally.
+    lockdown = _lockdown_report(url)
+    if lockdown:
+        print("\n  sql/012 lockdown (anon must be denied on every table below):")
+        for r in lockdown:
+            mark = "ok     " if r["denied"] else "EXPOSED"
+            print(f"  {mark}  {r['table']:<38} {r['detail']}")
+        exposed = [r["table"] for r in lockdown if not r["denied"]]
+        if exposed:
+            print(f"\n  LOCKDOWN REGRESSION: {', '.join(exposed)}")
+            pending.append("012_lockdown_public_grants.sql")
+    else:
+        print("\n  sql/012 lockdown: NOT CHECKED (no anon key in .env), state UNKNOWN.")
 
     if unexpected:
         print(f"\n  {len(unexpected)} migration(s) in sql/ are not covered by this check,")
@@ -2004,7 +2146,7 @@ def cmd_status(args) -> int:
 # ──────────────────────────────────────────────────────────────────────
 
 def cmd_compile(args) -> int:
-    meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+    meta = load_manifest(BOOK_DIR)
     tag = args.tag or meta["version"]
     header = (f"# {meta['title'].upper()}\n\n"
               f"## {meta['subtitle']}\n\n"
@@ -2204,8 +2346,7 @@ def cmd_scan(args) -> int:
       - per-chapter texture score (formatting events per 1,000 words)
     Report-only: never edits the manuscript.
     """
-    book_dir = ROOT / "src" / "lib" / "data" / "book"
-    book = json.loads((book_dir / "book.json").read_text())
+    book = load_manifest(BOOK_DIR)
     top_n = args.top
 
     aphorism_re = re.compile(
@@ -2217,7 +2358,7 @@ def cmd_scan(args) -> int:
 
     report = []
     for section in book["sections"]:
-        path = book_dir / section["file"]
+        path = BOOK_DIR / section["file"]
         raw = path.read_text()
         lines = raw.split("\n")
 
@@ -2488,7 +2629,9 @@ def _reconcile(old_blocks, new_blocks):
 
 def _build_index(book_dir, old_index=None):
     """Parse every section into addressed blocks, reconciling ids with old_index."""
-    book = json.loads((book_dir / "book.json").read_text(encoding="utf-8"))
+    # book_dir is a parameter, not BOOK_DIR: `refs stress` builds an index from a
+    # mutated manifest in a temp tree to prove the ref checks actually fire.
+    book = load_manifest(book_dir)
     figmap = _art_figure_map(book_dir)
     old_secs = {s["id"]: s for s in (old_index or {}).get("sections", [])}
     sections_out, total_blocks, total_words = [], 0, 0
@@ -2922,81 +3065,25 @@ def cmd_id(args):
 # table below is per-target-agnostic, so emitting real hrefs later is a change
 # of one function, not a redesign.
 
-# [label](sts:target) -- target is a section id or a full sts.<sec>.b<NNNN> id.
-_SREF_RE = re.compile(r"\[([^\]\n]*)\]\(sts:([A-Za-z0-9._-]+)\)")
+# The rules themselves live in sts_lib.refs, which is pure and takes the book
+# directory as an argument. The aliases below keep the private names the
+# command handlers already use, so moving the rules out did not turn into a
+# rename touching every call site.
+_SREF_RE = SREF_RE
+_section_label = section_label
+_ref_targets = ref_targets
+_expand_refs = expand_refs
 
 
-def _section_label(title: str) -> str:
-    """'Chapter 1: The Event Horizon' -> 'Chapter 1'.
-
-    book.json titles are '<short name>: <descriptive tail>'. The short name is
-    what prose actually says ("as we saw in Chapter 1"), so that is what a
-    generated label expands to. Titles with no colon are used whole.
-    """
-    return title.split(":", 1)[0].strip() if ":" in title else title.strip()
-
-
-def _ref_targets(index):
-    """{ref target -> {...}} for every addressable thing a ref may point at.
-
-    Two granularities, both legal:
-      * section id   ('chapter1')          -- stable across editing, use for prose
-      * block id     ('sts.chapter1.b0003')-- precise, but blocks churn
-    """
-    out = {}
-    for sec in index["sections"]:
-        out[sec["id"]] = {"kind": "section", "section": sec["id"],
-                          "title": sec["title"], "file": sec["file"],
-                          "label": _section_label(sec["title"])}
-        for blk in sec["blocks"]:
-            out[blk["id"]] = {"kind": "block", "section": sec["id"],
-                              "title": sec["title"], "file": sec["file"],
-                              "label": _section_label(sec["title"]),
-                              "block": blk["id"], "lines": blk["lines"]}
-    return out
-
-
-def _ref_edges(index):
+def _ref_edges(index, book_dir=None):
     """Every sts: reference in the manuscript, as (source -> target) edges.
 
-    This is the shared substrate: `refs --to` reads it backwards to answer
-    "what breaks if I cut this", and the expanders read it forwards to render.
+    book_dir defaults to BOOK_DIR for the command handlers below, which all
+    operate on the real book. `refs stress` passes a temp tree instead -- it
+    used to rebind the module global to do that, which is why the rule now
+    takes the directory rather than reaching for it.
     """
-    targets = _ref_targets(index)
-    edges = []
-    for sec in index["sections"]:
-        # line -> owning block id, so an edge knows which block it lives in.
-        owner = {}
-        for blk in sec["blocks"]:
-            a, z = blk["lines"]
-            for ln in range(a, z + 1):
-                owner[ln] = blk["id"]
-        text = (BOOK_DIR / sec["file"]).read_text(encoding="utf-8")
-        for lineno, line in enumerate(text.split("\n"), 1):
-            for m in _SREF_RE.finditer(line):
-                label, target = m.group(1), m.group(2)
-                edges.append({
-                    "from_section": sec["id"], "from_block": owner.get(lineno),
-                    "file": sec["file"], "line": lineno,
-                    "label": label, "to": target,
-                    "resolved": target in targets,
-                    "to_section": targets.get(target, {}).get("section"),
-                    "generated": not label.strip(),
-                    "raw": m.group(0)})
-    return edges
-
-
-def _expand_refs(text: str, targets: dict, where: str = "") -> str:
-    """Replace every sts: ref in `text` with its rendered form. Raises on a
-    dangling target -- a broken cross-reference must stop a build, not ship."""
-    def sub(m):
-        label, target = m.group(1), m.group(2)
-        t = targets.get(target)
-        if t is None:
-            raise KeyError(f"{where}: unresolvable reference sts:{target} "
-                           f"in {m.group(0)!r}")
-        return label if label.strip() else t["label"]
-    return _SREF_RE.sub(sub, text)
+    return ref_edges(index, BOOK_DIR if book_dir is None else book_dir)
 
 
 def verify_refs() -> list:
@@ -3049,13 +3136,42 @@ def _refs_list(args):
     return 1 if bad else 0
 
 
+def _refs_labels(args):
+    """Every label this resolver generates, as JSON. The parity substrate.
+
+    scripts/check-resolver-parity.mjs runs the JavaScript half of the rule set
+    (src/lib/bookManifest.js) over the same manifest and diffs against this, so
+    the two implementations cannot drift apart unnoticed. The website cannot
+    call Python at build time, which is why there are two; this is what keeps
+    that from meaning two behaviours.
+
+    Emits both granularities on purpose. `sections` is the shared half, which
+    both sides must agree on exactly. `targets` covers every pointer the
+    manuscript actually contains, including block ids -- where this resolver is
+    deliberately STRICTER, because it resolves against the manuscript index and
+    can see that a block id names a block that no longer exists.
+    """
+    index = _live_index()
+    targets = _ref_targets(index)
+    out = {
+        "version": load_manifest(BOOK_DIR)["version"],
+        "sections": [{"id": s["id"], "title": s["title"],
+                      "label": _section_label(s["title"])}
+                     for s in index["sections"]],
+        "targets": {e["to"]: (targets[e["to"]]["label"]
+                              if e["to"] in targets else None)
+                    for e in _ref_edges(index)},
+    }
+    print(json.dumps(out, indent=2, ensure_ascii=False))
+    return 0
+
+
 def _refs_stress(args):
     """Prove the ref machinery on a throwaway copy. Real files are never touched.
 
     Nothing in the manuscript uses sts: refs yet, so without this the resolver
     would ship untested against real content. Mirrors `id stress`.
     """
-    global BOOK_DIR
     results = []
 
     def check(name, ok, detail=""):
@@ -3068,9 +3184,13 @@ def _refs_stress(args):
         for extra in ("book.json", "art-catalog.json"):
             if (real / extra).exists():
                 shutil.copy2(real / extra, tmp / extra)
-        BOOK_DIR = tmp
+        # Every rule below is handed `tmp` explicitly. This used to rebind the
+        # module-level BOOK_DIR for the duration of the test, so the resolver
+        # would read the throwaway copy -- a test mutating a global belonging to
+        # the module under test, which left the real book one early `return`
+        # away from being the thing under test instead.
 
-        book = json.loads((tmp / "book.json").read_text(encoding="utf-8"))
+        book = load_manifest(tmp)
         sec = book["sections"][0]
         victim = tmp / sec["file"]
         index = _build_index(tmp, None)
@@ -3084,7 +3204,7 @@ def _refs_stress(args):
                           "\n\nSee [](sts:chapter1), and [the limits](sts:chapter1), "
                           f"and [](sts:{a_block}).\n", encoding="utf-8")
 
-        edges = _ref_edges(_build_index(tmp, None))
+        edges = _ref_edges(_build_index(tmp, None), tmp)
         check("scan.finds_all", len(edges) == 3, f"{len(edges)} edge(s)")
         check("scan.all_resolve", all(e["resolved"] for e in edges),
               str([e["to"] for e in edges if not e["resolved"]]))
@@ -3111,7 +3231,7 @@ def _refs_stress(args):
         victim.write_text(victim.read_text(encoding="utf-8") +
                           "\n\nBroken [](sts:chapter99).\n", encoding="utf-8")
         check("dangle.verify_catches",
-              len([e for e in _ref_edges(_build_index(tmp, None))
+              len([e for e in _ref_edges(_build_index(tmp, None), tmp)
                    if not e["resolved"]]) == 1, "1 dangling found")
         raised = False
         try:
@@ -3122,7 +3242,7 @@ def _refs_stress(args):
         check("dangle.expand_raises", raised, "render refuses to emit a dead ref")
 
         # Renumbering the target rewrites the prose that points at it.
-        bj = json.loads((tmp / "book.json").read_text(encoding="utf-8"))
+        bj = load_manifest(tmp)
         for s in bj["sections"]:
             if s["id"] == "chapter1":
                 s["title"] = "Chapter 4: The Event Horizon"
@@ -3131,7 +3251,6 @@ def _refs_stress(args):
                              _ref_targets(_build_index(tmp, None)), "test")
         check("renumber.label_follows", moved == "See Chapter 4.", moved)
     finally:
-        BOOK_DIR = real
         shutil.rmtree(tmp, ignore_errors=True)
 
     passed = sum(1 for r in results if r["ok"])
@@ -3150,7 +3269,7 @@ def _refs_stress(args):
 
 def cmd_refs(args):
     return {"list": _refs_list, "render": _refs_render,
-            "stress": _refs_stress}[args.action](args)
+            "labels": _refs_labels, "stress": _refs_stress}[args.action](args)
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -3723,6 +3842,90 @@ def cmd_cover(args) -> int:
     return 0
 
 
+# --- bundle: build, publish and prove the $5 preorder bundle ----------------
+#
+# The bundle is the only thing a paying customer receives, and until this
+# command existed there was no way to ask what was in the live copy of it. The
+# program that last wrote that object read its credentials and half its payload
+# out of a different repository and left no record, so "what did we sell" was
+# answerable only by downloading the zip by hand.
+#
+# `verify` is offline and needs no credentials, so it can run anywhere.
+# `verify --remote` is the one check that can see a stale live object, which is
+# the failure this whole surface exists to make visible.
+
+
+def cmd_bundle(args) -> int:
+    from sts_lib import bonus
+
+    if args.action == "build":
+        cmd = [sys.executable, str(ROOT / "scripts" / "build_bonus.py")]
+        if args.no_pdf:
+            cmd.append("--no-pdf")
+        if args.book_version:
+            cmd += ["--book-version", args.book_version]
+        return subprocess.run(cmd, cwd=ROOT).returncode
+
+    if args.action == "upload":
+        zip_path = ROOT / bonus.ZIP_REL
+        if not zip_path.exists():
+            print(f"sts bundle upload: {bonus.ZIP_REL} not found. Run "
+                  f"`sts.py bundle build` first.")
+            return 1
+        # Never publish an archive the offline pass cannot vouch for. Uploading
+        # replaces the object every signed URL already in a customer's inbox
+        # resolves through, so the cost of a bad publish is not a rebuild.
+        findings, site = bonus.verify_local(ROOT)
+        if findings:
+            print("sts bundle upload: REFUSING to publish, local verify failed:")
+            for f in findings:
+                print(f"  - {f}")
+            return 1
+        print(f"local verify clean: {site['bundle']['entries']} entries, "
+              f"{site['bundle']['bytes']:,} bytes, "
+              f"sha256 {site['bundle']['sha256'][:16]}...")
+        if not args.yes:
+            print("\nThis REPLACES the live object customers download.")
+            print("Re-run with --yes to publish. A dated backup is taken first.")
+            return 1
+        return bonus.upload(zip_path, ROOT)
+
+    # verify
+    findings, site = bonus.verify_local(ROOT)
+    if site:
+        print(f"sts bundle verify: {bonus.SITE_MANIFEST_REL}")
+        print(f"  built           : {site['generated_at']}")
+        print(f"  entries         : {site['bundle']['entries']}")
+        print(f"  bytes           : {site['bundle']['bytes']:,}")
+        print(f"  sha256          : {site['bundle']['sha256']}")
+
+    if args.remote:
+        if not site:
+            findings.append("cannot check the live object: the site manifest is unreadable")
+        else:
+            print()
+            findings += bonus.verify_remote(ROOT, site)
+
+    if args.json:
+        print(json.dumps({
+            "manifest": site or None,
+            "remote_checked": bool(args.remote),
+            "findings": findings,
+            "clean": not findings,
+        }, indent=2))
+        return 1 if findings else 0
+
+    print()
+    if findings:
+        print(f"{len(findings)} finding(s):")
+        for f in findings:
+            print(f"  - {f}")
+        return 1
+    print("Clean." + ("" if args.remote else
+                      " (offline only. pass --remote to check the live object.)"))
+    return 0
+
+
 # --- flow: export the manuscript's figures as an upload-ready asset pack -----
 
 FLOW_BG = "#020617"          # book navy, so rasterized diagrams land opaque
@@ -4091,7 +4294,7 @@ def verify_meta() -> list:
 
 
 def verify_precedents() -> dict:
-    """Precedent Ledger integrity: P-01..P-23, one per section, all indexed."""
+    """Precedent Ledger integrity: P-01..P-24, one per section, all indexed."""
     per_section, all_ids = {}, set()
     for f in sorted(BOOK_DIR.glob("*.md")):
         if not BOOK_SECTION_RE.match(f.name):
@@ -4843,6 +5046,692 @@ def cmd_factcheck(args) -> int:
     return 0
 
 
+# ──────────────────────────────────────────────────────────────────────
+# factcheck
+# ──────────────────────────────────────────────────────────────────────
+#
+# A chain of custody for every mechanically detectable claim in the book.
+#
+# Local only by design. This pass makes no network request. Every hop it
+# cannot resolve from the working tree plus the git object store is recorded
+# BROKEN with a reason, never inferred. A hop that is merely plausible is
+# still BROKEN.
+#
+# The anchor is the block id from `sts id`, not a line number. Line numbers
+# rot on the next edit; block ids survive it.
+
+FC_SCHEMA = "sts-factcheck/v1"
+FC_REPO = "https://github.com/ctavolazzi/survivingthesingularity"
+FC_BOOK_REL = "src/lib/data/book"
+
+# Verdicts. CONTRADICTED is reserved for a claim this pass can actively
+# disprove from local evidence, which in a local only run means a broken
+# internal reference or a missing asset. An unverified external source is
+# UNCHECKED, never UNSUPPORTED: absence of a network pass is not evidence.
+FC_SUPPORTED = "SUPPORTED"
+FC_PARTIAL = "PARTIAL"
+FC_UNSUPPORTED = "UNSUPPORTED"
+FC_UNCHECKED = "UNCHECKED"
+FC_UNCHECKABLE = "UNCHECKABLE"
+FC_CONTRADICTED = "CONTRADICTED"
+
+# ---- the network half, if it has been run.
+#
+# scripts/factcheck_network.py fetches every Appendix B citation and writes one
+# JSON record per URL into .factcheck-cache/. This pass READS that cache; it
+# never fetches anything itself, so `sts factcheck` stays offline and instant.
+# If the cache is absent the behaviour is exactly what it always was: every URL
+# comes back UNCHECKED and the report says no network run informed it.
+#
+# THE MAPPING IS DELIBERATELY STINGY. Only LIVE_CONFIRMED promotes a claim to
+# SUPPORTED, and LIVE_CONFIRMED already means the tool found the citation's own
+# title words on the fetched page, not merely that the host answered 200.
+# Everything else stays UNCHECKED and carries the real reason:
+#
+#   BLOCKED           the host refuses automated clients. That is a fact about
+#                     the host and is NOT evidence against the citation, so it
+#                     must never read as a failure.
+#   WALLED            gated, and the cited work was not visible behind the gate.
+#   LIVE_UNVERIFIED   live, but the body was never parsed (PDF and other
+#                     non-HTML). Live is not the same as verified.
+#   LIVE_UNCONFIRMED  live HTML, but the cited title was not on the page.
+#
+# The temptation is to call the last two PARTIAL because the host did answer.
+# Resisted on purpose: a reader scanning the audit reads any non-UNCHECKED
+# verdict as "someone checked this", and for these nobody has.
+FC_NET_CACHE_REL = ".factcheck-cache"
+
+FC_NET_TO_VERDICT = {
+    "LIVE_CONFIRMED": FC_SUPPORTED,
+    "LIVE_UNVERIFIED": FC_UNCHECKED,
+    "LIVE_UNCONFIRMED": FC_UNCHECKED,
+    "BLOCKED": FC_UNCHECKED,
+    "WALLED": FC_UNCHECKED,
+    "SERVER_ERROR": FC_UNCHECKED,
+    "UNREACHABLE": FC_UNCHECKED,
+    "OTHER": FC_UNCHECKED,
+    # A host that answered 404/410 for a citation the book relies on is the one
+    # case the network half can actively disprove.
+    "DEAD": FC_UNSUPPORTED,
+    "SOFT_404": FC_UNSUPPORTED,
+}
+
+
+def _fc_network_cache() -> dict:
+    """Load the network half keyed by URL. Absent cache means an offline run."""
+    out = {}
+    d = ROOT / FC_NET_CACHE_REL
+    if not d.is_dir():
+        return out
+    for p in sorted(d.glob("*.json")):
+        try:
+            r = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue  # a truncated cache entry is a miss, not a crash
+        url = r.get("url")
+        if url and r.get("state"):
+            out[url] = r
+    return out
+
+_FC_PCT = re.compile(r"\b\d+(?:\.\d+)?\s?(?:%|percent\b)")
+_FC_MONEY = re.compile(
+    r"\$\s?\d[\d,]*(?:\.\d+)?(?:\s*(?:billion|million|trillion|thousand))?", re.I)
+_FC_MAG = re.compile(r"\b\d[\d,]*(?:\.\d+)?\s+(?:billion|million|trillion)\b", re.I)
+_FC_YEAR = re.compile(r"\b(?:1[5-9]\d{2}|20\d{2})\b")
+_FC_URL = re.compile(r"https?://[^\s)>\]\"']+")
+_FC_PREC = re.compile(r"\bP-(\d{2})\b")
+_FC_PREC_HEAD = re.compile(r"^##\s+Precedent\s+P-(\d{2})\s*:", re.M)
+_FC_CHAP = re.compile(r"\bChapter\s+(\d+)\b")
+_FC_APDX = re.compile(r"\bAppendix\s+([A-Z])\b")
+_FC_TABLE = re.compile(r"\bTable\s+(\d+)\b")
+_FC_ATTRIB = re.compile(
+    r"\b(?:said|says|wrote|writes|argued|argues|noted|notes|observed|observes|"
+    r"according to|told|declared|predicted|warned|put it|estimated|reported)\b", re.I)
+_FC_CAUSAL = re.compile(
+    r"\b(?:because|therefore|as a result|led to|leads to|caused|causes|"
+    r"results in|resulted in|drove|drives|means that|which is why)\b", re.I)
+_FC_COMPARE = re.compile(
+    r"\b(?:more than|larger than|greater than|fewer than|less than|the first|"
+    r"the largest|the biggest|the only|the worst|the fastest|twice as|"
+    r"half as|outnumber(?:ed|s)?)\b", re.I)
+
+# Sentence enders that are abbreviations, not sentence boundaries.
+_FC_ABBREV = {"c", "ca", "e.g", "i.e", "vs", "mr", "mrs", "ms", "dr", "st",
+              "no", "fig", "approx", "est", "cf", "al", "u.s", "u.k", "b.c",
+              "a.d", "jr", "sr", "inc", "ltd", "co"}
+
+# Capitalized tokens that carry no proper noun signal on their own.
+_FC_STOPCAP = {
+    "The", "A", "An", "And", "But", "Or", "If", "In", "On", "At", "By", "For",
+    "From", "To", "With", "As", "It", "This", "That", "These", "Those", "There",
+    "When", "Where", "What", "Why", "How", "Who", "We", "You", "They", "He",
+    "She", "I", "Not", "No", "Yes", "So", "Then", "Now", "Every", "Each",
+    "Most", "More", "Less", "One", "Two", "Three", "Their", "His", "Her",
+    "Its", "Our", "Your", "My", "Was", "Were", "Is", "Are", "Be", "Been",
+    "Had", "Has", "Have", "Do", "Does", "Did", "Will", "Would", "Can",
+    "Could", "Should", "May", "Might", "Must", "Let", "Look", "Think",
+    "Consider", "Imagine", "Because", "After", "Before", "During", "While",
+    "Until", "Since", "Between", "Under", "Over", "Above", "Below",
+}
+
+
+def _fc_sentences(text: str):
+    """Split into sentences, returning (sentence, char_offset) pairs.
+
+    Deliberately simple. It merges a fragment back when the break followed a
+    known abbreviation, which is the failure mode that matters here ("c. 1177
+    BC", "U.S."). It is not a linguistics engine and does not pretend to be:
+    a mis-split shows up as a slightly wide or narrow quote, never as a wrong
+    verdict, because verdicts key off the matched span rather than the
+    sentence.
+    """
+    parts, buf, start, pos = [], "", 0, 0
+    for chunk in re.split(r"(?<=[.!?])(\s+)", text):
+        if chunk.strip() == "" and chunk != "":
+            buf += chunk
+            pos += len(chunk)
+            continue
+        if not buf:
+            start = pos
+        buf += chunk
+        pos += len(chunk)
+        tail = buf.rstrip()
+        last = tail.split()[-1].rstrip(".!?").lower() if tail.split() else ""
+        if last in _FC_ABBREV or (len(last) == 1 and last.isalpha()):
+            continue
+        if tail:
+            parts.append((tail, start))
+        buf = ""
+    if buf.strip():
+        parts.append((buf.strip(), start))
+    return parts
+
+
+def _fc_has_proper_noun(sentence: str) -> bool:
+    """True if the sentence carries a capitalized token that is not sentence
+    initial and is not a common capitalized function word."""
+    toks = sentence.split()
+    for tok in toks[1:]:
+        bare = tok.strip("\"'(),.;:!?*_[]")
+        if len(bare) > 2 and bare[0].isupper() and bare not in _FC_STOPCAP:
+            return True
+    return False
+
+
+def _fc_line_of(block_start: int, text: str, offset: int) -> int:
+    """1-indexed file line for a char offset inside a block's joined source."""
+    return block_start + text.count("\n", 0, offset)
+
+
+def _fc_git_state(files):
+    """Receipt state per book file, resolved against what exists on origin.
+
+    Three states, and the distinction is the whole point:
+
+      origin_exact  the working tree file is byte identical to the file at
+                    origin/main, so current line numbers are valid at that
+                    SHA and a permalink pinned to it resolves for anybody.
+      local_only    committed here but not identical to origin, so no SHA a
+                    reader can fetch describes this text.
+      uncommitted   dirty in the working tree. There is no SHA at all.
+
+    Pinning a receipt to a local only SHA would produce a link that 404s for
+    every reader but this machine, so those are recorded BROKEN instead.
+    """
+    dirty = set()
+    porcelain = git("status", "--porcelain", "--", FC_BOOK_REL)
+    for line in porcelain.splitlines():
+        if len(line) > 3:
+            dirty.add(Path(line[3:].strip().strip('"')).name)
+
+    origin_sha = git("rev-parse", "origin/main")
+    origin_short = origin_sha[:12] if origin_sha else None
+    head_sha = git("rev-parse", "HEAD")
+
+    state = {}
+    for fname in files:
+        abs_path = BOOK_DIR / fname
+        rel = f"{FC_BOOK_REL}/{fname}"
+        work_blob = git("hash-object", str(abs_path))
+        origin_blob = git("rev-parse", f"origin/main:{rel}")
+        blame = {}
+        if fname not in dirty:
+            blame = _fc_blame(rel)
+        if fname in dirty:
+            rstate, reason = "uncommitted", (
+                "uncommitted working-tree content, no immutable receipt exists yet")
+        elif work_blob and origin_blob and work_blob == origin_blob:
+            rstate, reason = "origin_exact", None
+        else:
+            rstate, reason = "local_only", (
+                "committed locally but not present on origin, so no SHA a reader "
+                "can resolve describes this text")
+        state[fname] = {
+            "file": fname,
+            "rel_path": rel,
+            "receipt_state": rstate,
+            "reason": reason,
+            "origin_sha": origin_sha or None,
+            "origin_short": origin_short,
+            "head_sha": head_sha or None,
+            "work_blob": work_blob or None,
+            "origin_blob": origin_blob or None,
+            "blame": blame,
+        }
+    return state
+
+
+def _fc_blame(rel_path: str):
+    """line number -> {sha, author, date, summary} from git blame against HEAD."""
+    out = subprocess.run(
+        ["git", "-C", str(ROOT), "blame", "--line-porcelain", "HEAD", "--", rel_path],
+        capture_output=True, text=True)
+    if out.returncode != 0:
+        return {}
+    blame, sha, author, ts, summary, lineno = {}, None, None, None, None, None
+    for line in out.stdout.splitlines():
+        m = re.match(r"^([0-9a-f]{40}) \d+ (\d+)", line)
+        if m:
+            sha, lineno = m.group(1), int(m.group(2))
+        elif line.startswith("author "):
+            author = line[7:]
+        elif line.startswith("author-time "):
+            ts = int(line[12:])
+        elif line.startswith("summary "):
+            summary = line[8:]
+        elif line.startswith("\t") and sha is not None:
+            blame[lineno] = {
+                "sha": sha, "short": sha[:12], "author": author,
+                "date": (date.fromtimestamp(ts).isoformat() if ts else None),
+                "summary": summary,
+            }
+    return blame
+
+
+def _fc_targets(index):
+    """Everything an internal cross-reference could legitimately point at."""
+    chapters, appendices, precedents, tables = set(), set(), set(), set()
+    art_ids, images = set(), {}
+    for sec in index["sections"]:
+        m = re.match(r"^Chapter (\d+)", sec["title"])
+        if m:
+            chapters.add(int(m.group(1)))
+        m = re.match(r"^Appendix ([A-Z])", sec["title"])
+        if m:
+            appendices.add(m.group(1))
+        src = (BOOK_DIR / sec["file"]).read_text(encoding="utf-8")
+        for pm in _FC_PREC_HEAD.finditer(src):
+            precedents.add(f"P-{pm.group(1)}")
+        for blk in sec["blocks"]:
+            if blk.get("art_id"):
+                art_ids.add(blk["art_id"])
+            if blk.get("image"):
+                images[blk["image"]] = blk["id"]
+    # Tables are numbered in prose, not in markup. A "Table N" reference is
+    # resolvable only against the table blocks that actually exist.
+    n_tables = sum(1 for sec in index["sections"]
+                   for blk in sec["blocks"] if blk["type"] == "table")
+    tables = set(range(1, n_tables + 1))
+
+    catalog_ids = set()
+    cat_path = BOOK_DIR / "art-catalog.json"
+    if cat_path.exists():
+        cat = json.loads(cat_path.read_text(encoding="utf-8"))
+        catalog_ids = {a["id"] for a in cat.get("assets", [])}
+    return {
+        "chapters": chapters, "appendices": appendices, "precedents": precedents,
+        "tables": tables, "n_tables": n_tables, "art_ids": art_ids,
+        "images": images, "catalog_ids": catalog_ids,
+    }
+
+
+def _fc_works_cited():
+    """Every URL that appears in the Works Cited appendix, as a set."""
+    cited = set()
+    for fname in ("23-appendix-b.md",):
+        p = BOOK_DIR / fname
+        if p.exists():
+            cited |= set(_FC_URL.findall(p.read_text(encoding="utf-8")))
+    return {u.rstrip(".,);") for u in cited}
+
+
+def _fc_extract(index, targets, cited, gitstate, net=None):
+    """The extraction pass. One record per claim, keyed by block id."""
+    claims = []
+    stats = collections.Counter()
+    seq = 0
+
+    for sec in index["sections"]:
+        fname = sec["file"]
+        gs = gitstate[fname]
+        src_lines = (BOOK_DIR / fname).read_text(encoding="utf-8").split("\n")
+
+        for blk in sec["blocks"]:
+            a, b = blk["lines"]
+            text = "\n".join(src_lines[a - 1:b])
+
+            def mk(ctype, quote, offset, verdict, note, **extra):
+                nonlocal seq
+                seq += 1
+                line = _fc_line_of(a, text, offset)
+                bl = gs["blame"].get(line) or {}
+                if gs["receipt_state"] == "origin_exact":
+                    permalink = (f"{FC_REPO}/blob/{gs['origin_sha']}/"
+                                 f"{gs['rel_path']}#L{line}")
+                    link_state = "resolvable"
+                else:
+                    permalink, link_state = None, "broken"
+                rec = {
+                    "seq": seq,
+                    "claim": quote.strip(),
+                    "type": ctype,
+                    "section": sec["id"],
+                    "section_title": sec["title"],
+                    "file": fname,
+                    "line": line,
+                    "block_id": blk["id"],
+                    "block_type": blk["type"],
+                    "block_lines": [a, b],
+                    "block_hash": blk.get("hash"),
+                    "git": {
+                        "receipt_state": gs["receipt_state"],
+                        "reason": gs["reason"],
+                        "sha": bl.get("sha"),
+                        "short": bl.get("short"),
+                        "author": bl.get("author"),
+                        "date": bl.get("date"),
+                        "summary": bl.get("summary"),
+                        "permalink": permalink,
+                        "link_state": link_state,
+                    },
+                    "verdict": verdict,
+                    "note": note,
+                }
+                rec.update(extra)
+                claims.append(rec)
+                stats[ctype] += 1
+                stats[f"verdict:{verdict}"] += 1
+                return rec
+
+            # ---- internal cross references. Exact, and locally decidable.
+            for m in _FC_PREC.finditer(text):
+                pid = f"P-{m.group(1)}"
+                # A precedent's own heading is a definition, not a reference.
+                if re.match(r"^##\s+Precedent\s+" + re.escape(pid), text):
+                    continue
+                ok = pid in targets["precedents"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_SUPPORTED if ok else FC_CONTRADICTED,
+                   (f"{pid} resolves to a `## Precedent {pid}:` heading in the book."
+                    if ok else
+                    f"{pid} is referenced but no `## Precedent {pid}:` heading exists. "
+                    "Dangling internal reference."),
+                   xref_kind="precedent", target=pid, resolved=ok)
+
+            for m in _FC_CHAP.finditer(text):
+                n = int(m.group(1))
+                ok = n in targets["chapters"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_SUPPORTED if ok else FC_CONTRADICTED,
+                   (f"Chapter {n} exists in book.json running order."
+                    if ok else
+                    f"Chapter {n} is referenced but the book has no such chapter. "
+                    "Dangling internal reference."),
+                   xref_kind="chapter", target=f"Chapter {n}", resolved=ok)
+
+            for m in _FC_APDX.finditer(text):
+                letter = m.group(1)
+                ok = letter in targets["appendices"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_SUPPORTED if ok else FC_CONTRADICTED,
+                   (f"Appendix {letter} exists in book.json running order."
+                    if ok else
+                    f"Appendix {letter} is referenced but no such appendix exists. "
+                    "Dangling internal reference."),
+                   xref_kind="appendix", target=f"Appendix {letter}", resolved=ok)
+
+            for m in _FC_TABLE.finditer(text):
+                n = int(m.group(1))
+                ok = n in targets["tables"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_PARTIAL if ok else FC_CONTRADICTED,
+                   (f"The book contains {targets['n_tables']} table blocks, so a "
+                    f"Table {n} plausibly exists, but table numbering lives in prose "
+                    "and nothing binds this reference to a specific table block."
+                    if ok else
+                    f"Table {n} is referenced but the book has only "
+                    f"{targets['n_tables']} table blocks."),
+                   xref_kind="table", target=f"Table {n}", resolved=ok)
+
+            # ---- figures. art_id resolution plus the asset actually on disk.
+            if blk["type"] == "figure" and blk.get("image"):
+                img = blk["image"]
+                art_id = blk.get("art_id")
+                on_disk = (STATIC_DIR / img.lstrip("/")).exists()
+                in_cat = bool(art_id) and art_id in targets["catalog_ids"]
+                if not on_disk:
+                    v, note = FC_CONTRADICTED, (
+                        f"The manuscript renders {img} but no such file exists under "
+                        "static/. A reader gets a broken image.")
+                elif not art_id:
+                    v, note = FC_PARTIAL, (
+                        f"{img} is on disk but the block carries no art_id, so it is "
+                        "not enrolled in art-catalog.json and nothing tracks its "
+                        "provenance or licence.")
+                elif not in_cat:
+                    v, note = FC_PARTIAL, (
+                        f"{img} is on disk and the block declares art_id {art_id}, but "
+                        "that id is absent from art-catalog.json.")
+                else:
+                    v, note = FC_SUPPORTED, (
+                        f"{img} exists under static/ and art_id {art_id} resolves in "
+                        "art-catalog.json.")
+                mk("image", blk["preview"][:200], 0, v, note,
+                   image=img, art_id=art_id, on_disk=on_disk, in_catalog=in_cat)
+
+            # ---- URLs. Resolved from the network cache when one exists, and
+            # UNCHECKED (never dead) when it does not. Absence of a fetch is
+            # not evidence against a citation.
+            for m in _FC_URL.finditer(text):
+                url = m.group(0).rstrip(".,);")
+                host = urllib.parse.urlparse(url).netloc.lower()
+                in_cited = url in cited
+                bare_wiki = host.endswith("wikipedia.org")
+
+                cited_note = ("The URL also appears in the Appendix B Works Cited list."
+                              if in_cited else
+                              "This URL does not appear in the Appendix B Works Cited "
+                              "list.")
+                wiki_note = (" Host is Wikipedia, which the P-09 post mortem flags as "
+                             "unverified by default when it is a claim's only citation."
+                             if bare_wiki else "")
+
+                hit = (net or {}).get(url)
+                if hit:
+                    state = hit["state"]
+                    verdict = FC_NET_TO_VERDICT.get(state, FC_UNCHECKED)
+                    mk("url", url, m.start(), verdict,
+                       f"{hit.get('detail', state)} {cited_note}{wiki_note}",
+                       url=url, host=host, in_works_cited=in_cited,
+                       bare_wikipedia=bare_wiki, source_state=state,
+                       source_detail=hit.get("detail", ""),
+                       source_status=hit.get("status"),
+                       source_final_url=hit.get("final_url"),
+                       source_title_match=hit.get("match"),
+                       checked_with=hit.get("checked_with"),
+                       archive_url=None, archive_date=None)
+                else:
+                    mk("url", url, m.start(), FC_UNCHECKED,
+                       ("Liveness and content were not checked: no network record "
+                        "exists for this URL. "
+                        + cited_note + wiki_note),
+                       url=url, host=host, in_works_cited=in_cited,
+                       bare_wikipedia=bare_wiki, source_state="UNCHECKED",
+                       archive_url=None, archive_date=None)
+
+            # ---- prose claims. Sentence scoped.
+            if blk["type"] in ("paragraph", "list", "blockquote", "caption", "table"):
+                for sent, off in _fc_sentences(text):
+                    if sent.startswith("!["):
+                        continue
+                    is_stat = bool(_FC_PCT.search(sent) or _FC_MONEY.search(sent)
+                                   or _FC_MAG.search(sent))
+                    years = _FC_YEAR.findall(sent)
+                    is_attrib = (blk["type"] == "blockquote"
+                                 or bool(_FC_ATTRIB.search(sent)))
+                    is_causal = bool(_FC_CAUSAL.search(sent))
+                    is_compare = bool(_FC_COMPARE.search(sent))
+                    has_proper = _fc_has_proper_noun(sent)
+                    nearby_url = bool(_FC_URL.search(text))
+
+                    base_note = (
+                        "No external source was resolved: this run is local only and "
+                        "made no network request. "
+                        + ("The enclosing block carries a URL."
+                           if nearby_url else
+                           "The enclosing block carries no URL, so even a network run "
+                           "would have nothing to resolve from the text itself."))
+
+                    if is_stat:
+                        mk("statistic", sent, off, FC_UNCHECKED,
+                           base_note + (" Comparison language present, which the P-09 "
+                                        "post mortem identifies as the book's actual "
+                                        "failure mode." if is_compare else ""),
+                           has_citation_nearby=nearby_url,
+                           comparison_claim=is_compare)
+                    # A bare year in prose is context, not an asserted event. It is
+                    # promoted to a dated_event claim only when the sentence also
+                    # names something. Everything not promoted is counted and
+                    # reported rather than silently dropped.
+                    if years:
+                        if has_proper or is_attrib:
+                            mk("dated_event", sent, off, FC_UNCHECKED,
+                               base_note, years=sorted(set(years)),
+                               has_citation_nearby=nearby_url,
+                               comparison_claim=is_compare)
+                        else:
+                            stats["year_mentions_not_promoted"] += 1
+                    if is_attrib and not is_stat:
+                        mk("attribution", sent, off, FC_UNCHECKED,
+                           base_note, has_citation_nearby=nearby_url,
+                           comparison_claim=is_compare)
+                    if is_causal and not (is_stat or is_attrib):
+                        mk("causal_claim", sent, off, FC_UNCHECKABLE,
+                           "Causal claims are not mechanically decidable. This one was "
+                           "detected by connective language only and needs a human "
+                           "reader; no automated verdict is offered.",
+                           has_citation_nearby=nearby_url,
+                           comparison_claim=is_compare)
+    return claims, stats
+
+
+# What this pass does NOT cover, stated so the trace cannot imply otherwise.
+FC_NOT_COVERED_NET_OFF = {
+    "kind": "external source liveness",
+    "why": "No network record exists for this run. No URL was fetched, so no source "
+           "is known live, dead, paywalled or archived. Run "
+           "`python3 scripts/factcheck_network.py` to populate it.",
+}
+
+FC_NOT_COVERED_NET_ON = {
+    "kind": "external source content, beyond the title",
+    "why": "The network half fetched every Works Cited URL and asked whether the "
+           "citation's own title words appear on the page, which is why a bare 200 "
+           "is never enough to confirm one. It does NOT read the source and check "
+           "that it supports the sentence citing it. A LIVE_CONFIRMED citation is a "
+           "real page carrying the right title, not a verified argument. PDFs are "
+           "fetched but never parsed, so they stay unconfirmed on purpose.",
+}
+
+FC_NOT_COVERED = [
+    {"kind": "named entity",
+     "why": "No entity extraction is implemented. Recognising 'Frank Darvall' as a "
+            "person and checking that the person said the thing needs either a "
+            "gazetteer or a model, and guessing from capitalisation would produce "
+            "confident nonsense."},
+    {"kind": "archive.org snapshots",
+     "why": "Requires an archive pass that is not built. Every archive hop is "
+            "recorded BROKEN."},
+    {"kind": "causal claim adjudication",
+     "why": "Detected but never adjudicated. A connective word is not a causal claim "
+            "and no automated verdict is offered."},
+    {"kind": "quotation wording",
+     "why": "Attributions are located, but whether the quoted words match the source "
+            "text is not checked. That needs the source, which needs network."},
+    {"kind": "table numbering",
+     "why": "Table numbers live in prose, not in markup. Nothing binds 'Table 2' to a "
+            "specific table block, so these resolve only to a plausible range."},
+]
+
+
+def cmd_factcheck(args) -> int:
+    index = _live_index()
+    targets = _fc_targets(index)
+    cited = _fc_works_cited()
+    files = [sec["file"] for sec in index["sections"]]
+    gitstate = _fc_git_state(files)
+    net = _fc_network_cache()
+    claims, stats = _fc_extract(index, targets, cited, gitstate, net)
+
+    by_state = collections.Counter(g["receipt_state"] for g in gitstate.values())
+    verdicts = collections.Counter(c["verdict"] for c in claims)
+    types = collections.Counter(c["type"] for c in claims)
+    resolvable = sum(1 for c in claims if c["git"]["link_state"] == "resolvable")
+
+    url_claims = [c for c in claims if c["type"] == "url"]
+    net_states = collections.Counter(
+        c["source_state"] for c in url_claims if c["source_state"] != "UNCHECKED")
+    matched = sum(1 for c in url_claims if c["source_state"] != "UNCHECKED")
+
+    # `network` was a bare False. It is now the receipt for the network half, so
+    # a reader can see how many URLs were actually fetched and in what state
+    # rather than taking "network: true" on faith.
+    network = False if not net else {
+        "cache": FC_NET_CACHE_REL,
+        "urls_cached": len(net),
+        "url_claims": len(url_claims),
+        "url_claims_resolved": matched,
+        "url_claims_unresolved": len(url_claims) - matched,
+        "by_source_state": dict(net_states),
+        "confirmed_means": "the citation's own title words were found on the fetched "
+                           "page. A bare HTTP 200 is never enough.",
+    }
+
+    report = {
+        "schema": FC_SCHEMA,
+        "generated": date.today().isoformat(),
+        "network": network,
+        "repo": FC_REPO,
+        "repo_public": True,
+        "book_version": index.get("book_version"),
+        "totals": {
+            "sections": len(index["sections"]),
+            "blocks": index["totals"]["blocks"],
+            "words": index["totals"]["words"],
+            "claims": len(claims),
+            "receipts_resolvable": resolvable,
+            "year_mentions_not_promoted": stats.get("year_mentions_not_promoted", 0),
+        },
+        "by_type": dict(types),
+        "by_verdict": dict(verdicts),
+        "by_receipt_state": dict(by_state),
+        "targets": {
+            "chapters": sorted(targets["chapters"]),
+            "appendices": sorted(targets["appendices"]),
+            "precedents": sorted(targets["precedents"]),
+            "tables": targets["n_tables"],
+            "art_ids": len(targets["art_ids"]),
+            "catalog_ids": len(targets["catalog_ids"]),
+            "works_cited_urls": len(cited),
+        },
+        "git": {fname: {k: v for k, v in g.items() if k != "blame"}
+                for fname, g in gitstate.items()},
+        "not_covered": FC_NOT_COVERED + [
+            FC_NOT_COVERED_NET_ON if net else FC_NOT_COVERED_NET_OFF],
+        "claims": claims,
+    }
+
+    if args.out:
+        outp = Path(args.out)
+        outp.parent.mkdir(parents=True, exist_ok=True)
+        outp.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+                        encoding="utf-8")
+
+    if args.json:
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        return 0
+
+    t = report["totals"]
+    print(f"\nfactcheck  {t['claims']:,} claims across {t['sections']} sections "
+          f"({t['words']:,} words)")
+    if network:
+        n = network
+        print(f"  network: ON from {n['cache']}/. "
+              f"{n['url_claims_resolved']} of {n['url_claims']} URL claims resolved, "
+              f"{n['url_claims_unresolved']} with no record.")
+        print("    " + "  ".join(f"{k} {v}" for k, v in
+                                 sorted(n["by_source_state"].items())))
+        print("    Only LIVE_CONFIRMED counts as SUPPORTED. A refusal is not a "
+              "failure of the citation.\n")
+    else:
+        print("  network: OFF. No URL was fetched. External source hops are BROKEN.\n")
+    print("  by type")
+    for k, v in types.most_common():
+        print(f"    {k:<18} {v:>6}")
+    print("\n  by verdict")
+    for k, v in verdicts.most_common():
+        print(f"    {k:<18} {v:>6}")
+    print("\n  git receipts")
+    for k, v in by_state.most_common():
+        print(f"    {k:<18} {v:>6} file(s)")
+    print(f"    {'resolvable links':<18} {resolvable:>6} of {t['claims']} claims")
+    print(f"\n  {t['year_mentions_not_promoted']} bare year mentions were triaged out "
+          "as prose context, not claims.")
+    if args.out:
+        print(f"\n  wrote {args.out}")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -4886,6 +5775,10 @@ def main():
 
     p = sub.add_parser("book")
     p.add_argument("--json", action="store_true")
+    p.add_argument("--files", action="store_true",
+                   help="section files in running order, one per line, minus "
+                        "sections the reflowable build cannot use "
+                        "(what scripts/build-epub.sh consumes)")
     p.add_argument("--thin", type=int, default=1500,
                    help="flag chapters under this many words (default 1500)")
     p.set_defaults(fn=cmd_book)
@@ -4943,6 +5836,10 @@ def main():
     rr = refsub.add_parser("render",
                            help="print one section with refs expanded (build hook)")
     rr.add_argument("file", help="section filename or path")
+    refsub.add_parser("labels",
+                      help="every generated label as JSON; what "
+                           "scripts/check-resolver-parity.mjs diffs the "
+                           "website's resolver against")
     rs = refsub.add_parser("stress",
                            help="prove the resolver on a throwaway copy of the book")
     rs.add_argument("--json", action="store_true")
@@ -5038,6 +5935,33 @@ def main():
                         "art-raw/book-cover-final-source.png")
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_cover)
+
+    p = sub.add_parser("bundle",
+                       help="the $5 preorder bundle: build it, publish it, and "
+                            "prove the live object is the one we describe")
+    p.set_defaults(fn=cmd_bundle)
+    bsub = p.add_subparsers(dest="action", required=True)
+    bb = bsub.add_parser("build", help="rebuild the bundle, its manifest and the site manifest")
+    bb.add_argument("--no-pdf", action="store_true",
+                    help="skip the pandoc/xelatex step. Produces a bundle with no "
+                         "Precedent File PDF, so it does NOT write the site manifest")
+    bb.add_argument("--book-version", metavar="X.Y.Z",
+                    help="bundle this PUBLISHED build's book files instead of "
+                         "book.json's version. For mid-cycle rebuilds, when "
+                         "book.json is ahead of the latest published build")
+    bv = bsub.add_parser("verify",
+                         help="cross-check the site manifest, the build manifest and "
+                              "the zip. Offline unless --remote")
+    bv.add_argument("--remote", action="store_true",
+                    help="also fetch the LIVE object through a signed URL and compare "
+                         "it to the manifest the site ships from")
+    bv.add_argument("--json", action="store_true")
+    bu = bsub.add_parser("upload",
+                         help="replace the live object, keeping a dated backup. "
+                              "Verifies locally first and refuses on any finding")
+    bu.add_argument("--yes", action="store_true",
+                    help="actually publish. Without it this reports and stops, because "
+                         "the upload replaces what current customers download")
 
     p = sub.add_parser("art",
                        help="enroll every book figure in art-catalog.json (data-driven)")

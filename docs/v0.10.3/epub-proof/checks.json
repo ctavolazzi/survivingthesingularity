@@ -1,0 +1,4381 @@
+{
+  "version": "0.10.3",
+  "epub_sha256": "35518ada9f32a2655e690f02e936b4b053b789f208bdada7a5fef9ae7a557521",
+  "browser": "Chrome 150.0.7871.125",
+  "javascript_disabled": true,
+  "viewports": [
+    390,
+    768
+  ],
+  "registered_figures_per_viewport": 62,
+  "registry_entries": 62,
+  "caption_required_figures_per_viewport": 62,
+  "uncaptioned_source_figures_per_viewport": 0,
+  "measurements": [
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 390,
+      "src": "../media/file1.png",
+      "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.",
+      "figure": {
+        "x": 92.15625,
+        "y": 2672.78125,
+        "width": 205.6875,
+        "height": 383.90625,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 2672.78125,
+        "width": 205.6875,
+        "height": 308.53125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 2995.65625,
+        "width": 205.6875,
+        "height": 61.03125,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 390,
+      "captionText": "Atlas, outside the demonstration room. AI-adapted cutout from DARPA, public domain.",
+      "file": "v101-cutout-atlas.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 390,
+      "src": "../media/file3.svg",
+      "alt": "Annual US household food insecurity, 2001–2024, shown as a solid line, with its very-low-food-security subset dashed. Food insecurity rises from 11.1% in 2007 to 14.6% in 2008; in 2024 the two rates are 13.7% and 5.4%. Shading marks the 2007–2009 period.",
+      "figure": {
+        "x": 8,
+        "y": 7409.265625,
+        "width": 374,
+        "height": 599.046875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7409.265625,
+        "width": 374,
+        "height": 503.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7926.9375,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 390,
+      "captionText": "Food insecurity rose sharply in 2008. These household survey estimates show a historical pattern, not a causal test of job loss. Very low food security is included within food insecurity. USDA Economic Research Service, 2001–2024.",
+      "file": "intro-food-insecurity.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 390,
+      "src": "../media/file5.svg",
+      "alt": "A speculative map of nine stages, grouped into AGI, ASI, and later imagined possibilities. Stage 4, a new social contract, is emphasized as a choice. Stages may overlap, stall, or fail to occur.",
+      "figure": {
+        "x": 8,
+        "y": 11199.625,
+        "width": 374,
+        "height": 574.03125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 11199.625,
+        "width": 374,
+        "height": 498.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 11712.625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 113,
+      "viewport": 390,
+      "captionText": "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later stages are imagined possibilities.",
+      "file": "intro-nine-stages.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch003.xhtml",
+      "width": 390,
+      "src": "../media/file8.svg",
+      "alt": "Three reading routes: Introduction, Chapter 19 and Appendix C; add Preface, Chapters 6 and 12, and Conclusion for a wider view; or read every section in order.",
+      "figure": {
+        "x": 8,
+        "y": 503.546875,
+        "width": 374,
+        "height": 347.984375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 503.546875,
+        "width": 374,
+        "height": 292.953125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 810.84375,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 191,
+      "viewport": 390,
+      "captionText": "Three ways in. The short route gives you the argument and plan; the full route follows Elijah through the chapters.",
+      "file": "v103-reading-routes.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch004.xhtml",
+      "width": 390,
+      "src": "../media/file10.png",
+      "alt": "Illustration of three realtors raising glasses beside Elijah and his laptop at the Bear Flag.",
+      "figure": {
+        "x": 8,
+        "y": 8818.078125,
+        "width": 374,
+        "height": 304.359375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8818.078125,
+        "width": 374,
+        "height": 249.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 9081.75,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 390,
+      "captionText": "Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion.",
+      "file": "v103-narrative-bear-flag.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch006.xhtml",
+      "width": 390,
+      "src": "../media/file15.svg",
+      "alt": "Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates.",
+      "figure": {
+        "x": 8,
+        "y": 14408.515625,
+        "width": 374,
+        "height": 527.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 14408.515625,
+        "width": 374,
+        "height": 431.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 14854.515625,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 130,
+      "viewport": 390,
+      "captionText": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. Grace et al., Thousands of AI Authors on the Future of AI.",
+      "file": "v101-chart-forecast-shift.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch007.xhtml",
+      "width": 390,
+      "src": "../media/file17.svg",
+      "alt": "Four dated events: June 12 export controls and worldwide suspension of Fable 5 and Mythos 5; June 26 approval for Mythos access by a set of US organizations; June 30 lifting of export controls; July 1 global return of Fable, with Mythos still limited to approved organizations. Spacing is not proportional to elapsed time.",
+      "figure": {
+        "x": 8,
+        "y": 7000.453125,
+        "width": 374,
+        "height": 591.265625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7000.453125,
+        "width": 374,
+        "height": 495.546875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7510.34375,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 113,
+      "viewport": 390,
+      "captionText": "Eighteen days from the June 12 export controls to their lifting on June 30. Access to the two models still differed. Selected events from Anthropic’s June 30 account, updated July 1; Stage 2 and Stage 3 are the author’s interpretation.",
+      "file": "ch02-eighteen-days.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch007.xhtml",
+      "width": 390,
+      "src": "../media/file18.svg",
+      "alt": "A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power.",
+      "figure": {
+        "x": 8,
+        "y": 8226.046875,
+        "width": 374,
+        "height": 366.78125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8226.046875,
+        "width": 374,
+        "height": 291.40625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8531.796875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 193,
+      "viewport": 390,
+      "captionText": "A copy you can open can outlast a broken link. It does not replace electrical power or a tested plan for equipment that depends on it. Conceptual illustration.",
+      "file": "v101-visual-local-copies.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch008.xhtml",
+      "width": 390,
+      "src": "../media/file20.png",
+      "alt": "Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.",
+      "figure": {
+        "x": 92.15625,
+        "y": 4933.21875,
+        "width": 205.6875,
+        "height": 404.25,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 4933.21875,
+        "width": 205.6875,
+        "height": 308.53125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 5256.09375,
+        "width": 205.6875,
+        "height": 81.375,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 390,
+      "captionText": "An image for the imagined departure. AI-adapted collage from SpaceX, CC0; the scenario remains speculative.",
+      "file": "v101-cutout-rocket.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch009.xhtml",
+      "width": 390,
+      "src": "../media/file22.png",
+      "alt": "Illustration of Elijah holding coffee at his apartment window at dawn, with a closed laptop behind him.",
+      "figure": {
+        "x": 8,
+        "y": 4187.890625,
+        "width": 374,
+        "height": 304.359375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 4187.890625,
+        "width": 374,
+        "height": 249.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 4451.5625,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 390,
+      "captionText": "Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the world outside his window.",
+      "file": "v103-narrative-near-end.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 390,
+      "src": "../media/file25.png",
+      "alt": "Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.",
+      "figure": {
+        "x": 92.15625,
+        "y": 4340.3125,
+        "width": 205.6875,
+        "height": 312.609375,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 4340.3125,
+        "width": 205.6875,
+        "height": 196.546875,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 4551.203125,
+        "width": 205.6875,
+        "height": 101.71875,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1283,
+      "viewport": 390,
+      "captionText": "Energy has to come from somewhere. AI-adapted NASA/SDO imagery, public domain; not an unaltered scientific image.",
+      "file": "v101-cutout-sun.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 390,
+      "src": "../media/file26.svg",
+      "alt": "Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted.",
+      "figure": {
+        "x": 8,
+        "y": 6965.3125,
+        "width": 374,
+        "height": 533.609375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 6965.3125,
+        "width": 374,
+        "height": 437.890625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7417.546875,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 390,
+      "captionText": "The machine’s appetite. The solid column is IEA’s estimate for 2025; the hatched column is its 2030 projection. This is all data-centre electricity, not AI alone. IEA, Key Questions on Energy and AI, 2026.",
+      "file": "v101-chart-data-centre-demand.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 390,
+      "src": "../media/file27.svg",
+      "alt": "Two line charts show horses and mules on US farms peaking at 26.7 million in 1918 and falling to 8.3 million in 1949, while tractors rise from 1,000 in 1910 to 3.5 million in 1949. The vertical scales differ; all annual values are plotted.",
+      "figure": {
+        "x": 8,
+        "y": 14795.375,
+        "width": 374,
+        "height": 581.828125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 14795.375,
+        "width": 374,
+        "height": 506.453125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 15316.171875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 390,
+      "captionText": "US farm counts on January 1, 1910–1949. Separate vertical scales; 1948 and 1949 figures were preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p. 45.",
+      "file": "ch05-horses-tractors.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 390,
+      "src": "../media/file32.svg",
+      "alt": "Four questions ask whether a machine can do a task, whether it is deployed, who sets its terms, and whether someone can receive the result without money. A rail connects distinct symbols without promising automatic progress.",
+      "figure": {
+        "x": 8,
+        "y": 5515.609375,
+        "width": 374,
+        "height": 482,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 5515.609375,
+        "width": 374,
+        "height": 426.96875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 5956.921875,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 131,
+      "viewport": 390,
+      "captionText": "Capability, deployment, ownership and access are separate questions. A productive farm can stand beside hunger.",
+      "file": "ch06-capability-access.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 390,
+      "src": "../media/file33.svg",
+      "alt": "Two lollipop bars show food insecurity in selected US income groups during 2024: 39.4% of households below the poverty threshold and 7.9% at or above 185% of that threshold. Dashed reference ticks mark the 13.7% national household rate. Middle and unknown income categories are not plotted.",
+      "figure": {
+        "x": 8,
+        "y": 8400.375,
+        "width": 374,
+        "height": 488.40625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8400.375,
+        "width": 374,
+        "height": 392.6875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8807.40625,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 143,
+      "viewport": 390,
+      "captionText": "Income and food access. In the 2024 survey, food insecurity was associated with income. These two selected groups do not represent every income category, and the comparison does not establish causation. USDA ERS, ERR-358, Table 2.",
+      "file": "v101-chart-income-food-access.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 390,
+      "src": "../media/file34.svg",
+      "alt": "A productive machine stands before an open gate and a plate. The gate names terms, price, eligibility, and delivery as choices that affect who receives the result.",
+      "figure": {
+        "x": 8,
+        "y": 10051,
+        "width": 374,
+        "height": 318.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 10051,
+        "width": 374,
+        "height": 263.34375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 10328.6875,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 213,
+      "viewport": 390,
+      "captionText": "A working machine still needs an arrangement that lets people reach its output. Conceptual illustration.",
+      "file": "v101-visual-access-gate.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch013.xhtml",
+      "width": 390,
+      "src": "../media/file36.png",
+      "alt": "Illustration of Marta passing a bowl of beans to Denny at the cooperative’s plywood dinner table.",
+      "figure": {
+        "x": 8,
+        "y": 4178.6875,
+        "width": 374,
+        "height": 304.359375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 4178.6875,
+        "width": 374,
+        "height": 249.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 4442.359375,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 390,
+      "captionText": "Fictional scene: pass the beans. The conversation turns from retraining to the floor people need beneath them.",
+      "file": "v103-narrative-passing-beans.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 390,
+      "src": "../media/file41.svg",
+      "alt": "A rail follows time for a chosen task, switching away, unfinished work, and a possible loss of task time. An off-ramp marks an alert or feed. Some switches help; returning can require reorientation.",
+      "figure": {
+        "x": 8,
+        "y": 6365.453125,
+        "width": 374,
+        "height": 477.328125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 6365.453125,
+        "width": 374,
+        "height": 422.296875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 6802.09375,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 133,
+      "viewport": 390,
+      "captionText": "A possible pattern to notice in your own day. Conceptual illustration, not a diagnosis or a model of brain chemistry.",
+      "file": "ch08-cognitive-extraction.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 390,
+      "src": "../media/file42.svg",
+      "alt": "An illustrative attention curve rises, drops after three interruptions, and resumes unevenly. A dashed sustained-focus reference and unnumbered axes make this a conceptual sketch, not measured data.",
+      "figure": {
+        "x": 8,
+        "y": 7876.15625,
+        "width": 374,
+        "height": 431.453125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7876.15625,
+        "width": 374,
+        "height": 356.078125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8246.578125,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 158,
+      "viewport": 390,
+      "captionText": "One possible pattern of interrupted work. The drawing gives no fixed recovery time, interruption threshold, or measured effect size.",
+      "file": "ch08-focus-recovery.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 390,
+      "src": "../media/file43.svg",
+      "alt": "Messages, a clock, a paper ledger and a workbench show a suggested routine: receive information, schedule checks, make useful notes, and return to chosen work.",
+      "figure": {
+        "x": 8,
+        "y": 9001.5625,
+        "width": 374,
+        "height": 510.84375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 9001.5625,
+        "width": 374,
+        "height": 455.8125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 9471.71875,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 123,
+      "viewport": 390,
+      "captionText": "A routine to try, observe and adjust. Two timed windows each day are an example schedule, not a measured optimum.",
+      "file": "ch08-firewall-pipeline.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 390,
+      "src": "../media/file44.svg",
+      "alt": "Two unscaled task strips compare responding to each incoming alert with choosing message-check times. The first task is fragmented; two check windows surround a chosen task in the second. No cognitive benefit is guaranteed.",
+      "figure": {
+        "x": 8,
+        "y": 10287.796875,
+        "width": 374,
+        "height": 527.984375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 10287.796875,
+        "width": 374,
+        "height": 472.953125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 10775.09375,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 119,
+      "viewport": 390,
+      "captionText": "Routines, not measurements of your brain. Some interruptions are useful or urgent. Try a schedule and check whether it helps.",
+      "file": "ch08-info-architectures.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 390,
+      "src": "../media/file45.svg",
+      "alt": "A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task.",
+      "figure": {
+        "x": 8,
+        "y": 11890.65625,
+        "width": 374,
+        "height": 349.640625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 11890.65625,
+        "width": 374,
+        "height": 274.265625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 12179.265625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 205,
+      "viewport": 390,
+      "captionText": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive budget or a fixed recovery time.",
+      "file": "v101-visual-attention-ribbon.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 390,
+      "src": "../media/file46.svg",
+      "alt": "A star loses its crossed-out hub and its dashed links. A mesh with a crossed-out central node retains a solid route around the outside. Rerouting requires a usable path and maintained relationships.",
+      "figure": {
+        "x": 8,
+        "y": 14454.859375,
+        "width": 374,
+        "height": 555.328125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 14454.859375,
+        "width": 374,
+        "height": 479.953125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 14949.15625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 117,
+      "viewport": 390,
+      "captionText": "A mesh can reroute only if a usable path remains. Crosses mark failed nodes; dashed links are affected by that failure. People still maintain the circle and its connections.",
+      "file": "ch08-star-vs-mesh.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "src": "../media/file50.svg",
+      "alt": "Two schematic supply routes reach households: distant suppliers through factory and freight, or imported parts through nearby workshops and growers, with a repair return. Both rely on people, energy and imports.",
+      "figure": {
+        "x": 8,
+        "y": 6875.953125,
+        "width": 374,
+        "height": 533.515625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 6875.953125,
+        "width": 374,
+        "height": 458.140625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7348.4375,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 122,
+      "viewport": 390,
+      "captionText": "Shorter supply lines can make repair and coordination more local. Imported parts, materials, energy and human work remain; distance alone does not establish fair treatment.",
+      "file": "ch09-hyperlocal-vs-global.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "src": "../media/file51.svg",
+      "alt": "A town and households connect to nearby farms and kitchens, materials recovery and stores, power and water services, and workshops. Regional coverage is a capacity-building objective that must be measured, with outside suppliers still needed.",
+      "figure": {
+        "x": 8,
+        "y": 8282.90625,
+        "width": 374,
+        "height": 581.90625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8282.90625,
+        "width": 374,
+        "height": 486.1875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8783.4375,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 115,
+      "viewport": 390,
+      "captionText": "Build regional capacity, then measure what it covers. Stores, seasonal production, water, power, delivery and remaining imports determine how many people can be supplied and for how long.",
+      "file": "ch09-region-ring.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "src": "../media/file52.png",
+      "alt": "Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.",
+      "figure": {
+        "x": 92.15625,
+        "y": 8943.90625,
+        "width": 205.6875,
+        "height": 306.078125,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 8943.90625,
+        "width": 205.6875,
+        "height": 230.703125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 9188.953125,
+        "width": 205.6875,
+        "height": 61.03125,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1184,
+      "viewport": 390,
+      "captionText": "A machine takes shape around its work. AI-adapted cutout from John Abella, CC BY 2.0.",
+      "file": "v101-cutout-printer.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "src": "../media/file53.svg",
+      "alt": "Three columns show net energy intensity of ammonia production in IEA’s 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average.",
+      "figure": {
+        "x": 8,
+        "y": 10252.625,
+        "width": 374,
+        "height": 556.984375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 10252.625,
+        "width": 374,
+        "height": 461.265625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 10728.234375,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 122,
+      "viewport": 390,
+      "captionText": "The energy in ammonia. IEA’s global-average estimate and best-available-process benchmarks are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. IEA, Ammonia Technology Roadmap, 2021.",
+      "file": "v101-chart-ammonia-energy.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "src": "../media/file54.svg",
+      "alt": "Top view of a gantry over a growing bed, with X travel along the bed, Y travel across the gantry and Z motion lowering the tool toward a plant. Generic tooling can seed, water or weed; people still inspect, maintain and harvest.",
+      "figure": {
+        "x": 8,
+        "y": 11563.453125,
+        "width": 374,
+        "height": 571,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 11563.453125,
+        "width": 374,
+        "height": 475.28125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 12053.078125,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 118,
+      "viewport": 390,
+      "captionText": "A gantry can reduce walking space in a bed. Tooling and behavior depend on the machine and software version; this concept is not a build plan or a promise to automate the entire crop.",
+      "file": "ch09-cnc-bed.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "src": "../media/file55.svg",
+      "alt": "SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.",
+      "figure": {
+        "x": 8,
+        "y": 13329.125,
+        "width": 374,
+        "height": 602.171875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 13329.125,
+        "width": 374,
+        "height": 506.453125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 13849.921875,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 390,
+      "captionText": "The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.",
+      "file": "ch09-greenhouse-bus.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "src": "../media/file56.svg",
+      "alt": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.",
+      "figure": {
+        "x": 8,
+        "y": 15382.78125,
+        "width": 374,
+        "height": 407.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 15382.78125,
+        "width": 374,
+        "height": 311.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 15708.78125,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 390,
+      "captionText": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals.",
+      "file": "v101-scene-food-delivery.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch017.xhtml",
+      "width": 390,
+      "src": "../media/file59.svg",
+      "alt": "Three schematic distributions show one possible result of repeatedly training on generated samples: rare cases can be lost, variety can narrow and errors can drift. The curves are illustrative, without measured axes or a generation timetable.",
+      "figure": {
+        "x": 8,
+        "y": 7355.171875,
+        "width": 374,
+        "height": 574.125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7355.171875,
+        "width": 374,
+        "height": 478.40625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7847.921875,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 117,
+      "viewport": 390,
+      "captionText": "One possible failure in recursive training on generated samples. This schematic is not a universal outcome or a timetable; real data, sampling and training choices affect the result. Based on Shumailov et al., Nature (2024).",
+      "file": "ch10-model-collapse.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch017.xhtml",
+      "width": 390,
+      "src": "../media/file60.svg",
+      "alt": "Four illustrated stages connect documenting useful work, telling a true story with consent, offering it to a feed and keeping instructions usable through answers, corrections and archives. Distribution may bring readers but is not guaranteed.",
+      "figure": {
+        "x": 8,
+        "y": 8751.15625,
+        "width": 374,
+        "height": 542.09375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8751.15625,
+        "width": 374,
+        "height": 466.71875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 9232.21875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 120,
+      "viewport": 390,
+      "captionText": "Document useful work, tell the true story with consent, and keep the instructions available. A platform may bring readers; a post is not guaranteed reach or income.",
+      "file": "ch10-algorithm-unlock.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 390,
+      "src": "../media/file63.png",
+      "alt": "Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail.",
+      "figure": {
+        "x": 92.15625,
+        "y": 10815.15625,
+        "width": 205.6875,
+        "height": 232.84375,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 10815.15625,
+        "width": 205.6875,
+        "height": 137.125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 10966.625,
+        "width": 205.6875,
+        "height": 81.375,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 390,
+      "captionText": "Capability still needs an arrangement for access. AI-adapted cutout from Jonte, CC BY-SA 4.0.",
+      "file": "v101-cutout-spot.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 390,
+      "src": "../media/file64.svg",
+      "alt": "A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights.",
+      "figure": {
+        "x": 8,
+        "y": 11894.65625,
+        "width": 374,
+        "height": 384.703125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 11894.65625,
+        "width": 374,
+        "height": 309.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 12218.328125,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 181,
+      "viewport": 390,
+      "captionText": "The model file is one layer of a working service. Running a useful service also takes software, hardware, power, and people who maintain it. Conceptual illustration.",
+      "file": "v101-visual-operating-stack.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 390,
+      "src": "../media/file65.svg",
+      "alt": "A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory.",
+      "figure": {
+        "x": 8,
+        "y": 12798.734375,
+        "width": 374,
+        "height": 539.84375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 12798.734375,
+        "width": 374,
+        "height": 444.125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 13257.203125,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 126,
+      "viewport": 390,
+      "captionText": "Memory before the overhead. These are derived weights-only sizes, not measured VRAM requirements. They omit the chapter’s illustrative allowance as well as runtime costs. llama.cpp, memory and context options.",
+      "file": "v101-chart-weights-memory.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 390,
+      "src": "../media/file66.svg",
+      "alt": "A conceptual coolant loop carries heat from CPU and GPU water blocks through a pump to an outdoor radiator with airflow and returns cooler coolant. Heat rate equals mass flow times specific heat times temperature change; materials, pump, coolant and radiator must be compatible.",
+      "figure": {
+        "x": 8,
+        "y": 14496.140625,
+        "width": 374,
+        "height": 575.59375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 14496.140625,
+        "width": 374,
+        "height": 500.21875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 15010.703125,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 112,
+      "viewport": 390,
+      "captionText": "Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in kilograms per second: Q̇ = ṁ Cp ΔT. This diagram specifies neither components nor cooling capacity.",
+      "file": "ch11-cooling-loop.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 390,
+      "src": "../media/file68.svg",
+      "alt": "A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages.",
+      "figure": {
+        "x": 8,
+        "y": 5913.3125,
+        "width": 374,
+        "height": 535.15625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 5913.3125,
+        "width": 374,
+        "height": 439.4375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 6367.09375,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 390,
+      "captionText": "What an acre costs. USDA survey estimates include farm buildings as well as land. These are nominal national averages, not inflation-adjusted values or local offers. USDA NASS, Land Values 2026, page 5.",
+      "file": "v101-chart-land-values.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 390,
+      "src": "../media/file69.svg",
+      "alt": "A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement.",
+      "figure": {
+        "x": 8,
+        "y": 6472.46875,
+        "width": 374,
+        "height": 386.25,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 6472.46875,
+        "width": 374,
+        "height": 310.875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 6797.6875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 180,
+      "viewport": 390,
+      "captionText": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a way to challenge decisions. Conceptual illustration, not a legal template.",
+      "file": "v101-visual-shared-land.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 390,
+      "src": "../media/file70.svg",
+      "alt": "A proposed growing and tool network coordinated by people. Food and support reach households through paid work, transport and backup. Each resource has its own supply and demand budget.",
+      "figure": {
+        "x": 8,
+        "y": 9839.09375,
+        "width": 374,
+        "height": 511.703125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 9839.09375,
+        "width": 374,
+        "height": 436.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 10289.765625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 129,
+      "viewport": 390,
+      "captionText": "A shared-service network. People match usable surplus to requests and arrange delivery. The drawing promises neither a yield nor an autonomous crew.",
+      "file": "ch12-csa-network.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch020.xhtml",
+      "width": 390,
+      "src": "../media/file73.svg",
+      "alt": "Conceptual plan of two nominal forty-by-eight-foot containers. Their combined exterior footprint is 640 square feet, not usable interior area. Foundations, openings, connections and reinforcement require project-specific design.",
+      "figure": {
+        "x": 8,
+        "y": 7436.6875,
+        "width": 374,
+        "height": 426,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7436.6875,
+        "width": 374,
+        "height": 350.625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7801.65625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 160,
+      "viewport": 390,
+      "captionText": "Two nominal forty-foot containers give a 640-square-foot exterior footprint. Usable space and structural details depend on the finished design; the chapter’s budget is fictional.",
+      "file": "ch13-shell-architecture.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch020.xhtml",
+      "width": 390,
+      "src": "../media/file74.svg",
+      "alt": "Conceptual wall section with steel, insulation and air control, and an interior layer. Insulation reduces conduction without eliminating it. Moisture, ventilation and required fire protection belong in the complete design.",
+      "figure": {
+        "x": 8,
+        "y": 8684.546875,
+        "width": 374,
+        "height": 444.609375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8684.546875,
+        "width": 374,
+        "height": 389.578125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 9088.46875,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 144,
+      "viewport": 390,
+      "captionText": "Insulation is one layer in a wall. Air control, moisture, ventilation and fire protection have to work with it.",
+      "file": "ch13-thermal-seal.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 390,
+      "src": "../media/file78.svg",
+      "alt": "An illustrative chain from disruption to delayed deliveries and pressure on local stock, with rerouting and replenishment as possible responses. No fixed countdown or inevitable collapse is implied.",
+      "figure": {
+        "x": 8,
+        "y": 6369.734375,
+        "width": 374,
+        "height": 505.46875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 6369.734375,
+        "width": 374,
+        "height": 430.09375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 6814.171875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 130,
+      "viewport": 390,
+      "captionText": "One possible disruption sequence, not a clock. Existing stock, replacement routes, demand, and the specific failure determine what reaches the shelves and when.",
+      "file": "ch14-logistic-shockwave.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 390,
+      "src": "../media/file79.svg",
+      "alt": "Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material.",
+      "figure": {
+        "x": 8,
+        "y": 9410.75,
+        "width": 374,
+        "height": 600.53125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 9410.75,
+        "width": 374,
+        "height": 525.15625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 9950.25,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 390,
+      "captionText": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could not have been donated. Donation is net of food banks’ unusable portion. EPA, Table 5.",
+      "file": "v101-chart-waste-pathways.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 390,
+      "src": "../media/file80.svg",
+      "alt": "A single-uplink network loses its connection when the tower fails. A four-node mesh routes around a failed link only because another powered and tested path remains.",
+      "figure": {
+        "x": 8,
+        "y": 10800.359375,
+        "width": 374,
+        "height": 475.78125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 10800.359375,
+        "width": 374,
+        "height": 420.75,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 11235.453125,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 133,
+      "viewport": 390,
+      "captionText": "A mesh can route around a break only where another powered, usable path remains. Test the missing relay.",
+      "file": "ch14-mesh-comms.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 390,
+      "src": "../media/file83.svg",
+      "alt": "A typical community land trust homeownership arrangement. A household owns the home; the trust holds the land under a long renewable ground lease with resale restrictions. Taxes, debt and stewardship duties remain.",
+      "figure": {
+        "x": 8,
+        "y": 5461.78125,
+        "width": 374,
+        "height": 464.953125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 5461.78125,
+        "width": 374,
+        "height": 389.578125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 5865.703125,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 144,
+      "viewport": 390,
+      "captionText": "A common land-trust housing arrangement separates ownership of land and home. Resale terms need continuing stewardship; taxes and debt remain.",
+      "file": "ch15-clt-firewall.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 390,
+      "src": "../media/file84.svg",
+      "alt": "Plants exchange carbon with a soil food web. Decomposition and grazing cycle nutrients; harvest removes nutrients and losses also occur. Soil care includes measurement and appropriate replenishment.",
+      "figure": {
+        "x": 8,
+        "y": 7749.96875,
+        "width": 374,
+        "height": 541.3125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7749.96875,
+        "width": 374,
+        "height": 465.9375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8230.25,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 120,
+      "viewport": 390,
+      "captionText": "The soil food web cycles nutrients. Harvest and other losses remove them, so a productive bed still needs measurement and appropriate replenishment.",
+      "file": "ch15-soil-food-web.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 390,
+      "src": "../media/file85.svg",
+      "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+      "figure": {
+        "x": 8,
+        "y": 8892.015625,
+        "width": 374,
+        "height": 427.71875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8892.015625,
+        "width": 374,
+        "height": 311.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 9218.015625,
+        "width": 374,
+        "height": 101.71875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 390,
+      "captionText": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile.",
+      "file": "v101-scene-living-soil.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch023.xhtml",
+      "width": 390,
+      "src": "../media/file87.svg",
+      "alt": "A checked file moves between two computers on hand-carried storage. No live network link is required. Private material may be encrypted, but loss, copying, incompatible software and unsafe endpoints remain possible.",
+      "figure": {
+        "x": 8,
+        "y": 7175.6875,
+        "width": 374,
+        "height": 405.734375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7175.6875,
+        "width": 374,
+        "height": 330.359375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7520.390625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 170,
+      "viewport": 390,
+      "captionText": "A hand-carried copy needs no live network link. It still needs trusted handling, a compatible reader and a recoverable backup.",
+      "file": "ch16-sneakernet.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 390,
+      "src": "../media/file90.png",
+      "alt": "Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench.",
+      "figure": {
+        "x": 92.15625,
+        "y": 5557.578125,
+        "width": 205.6875,
+        "height": 320.046875,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 5557.578125,
+        "width": 205.6875,
+        "height": 244.671875,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 5816.59375,
+        "width": 205.6875,
+        "height": 61.03125,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1150,
+      "viewport": 390,
+      "captionText": "Tools with a history of use. AI-adapted collage from Shixart1985, CC BY 2.0.",
+      "file": "v101-cutout-tools.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 390,
+      "src": "../media/file92.svg",
+      "alt": "Aquaponic water recirculates from a fish tank through solids handling and biofiltration to grow beds and back. Algae cultivation is a separate branch whose harvested output may supply a validated share of feed. Feed, nutrients, water, power and labor remain inputs.",
+      "figure": {
+        "x": 8,
+        "y": 7636.1875,
+        "width": 374,
+        "height": 536.546875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7636.1875,
+        "width": 374,
+        "height": 481.515625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8132.046875,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 117,
+      "viewport": 390,
+      "captionText": "Growing an ingredient can reduce a bought input. It doesn’t establish a complete fish diet or a closed system.",
+      "file": "ch17-algae-loop.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 390,
+      "src": "../media/file94.svg",
+      "alt": "Solar charging and storage feed two conceptual paths to an already-DC device. The inverter path converts DC to AC and an adapter converts it back. The DC route still needs voltage regulation and protection. Both have charging, wiring and operating losses; compare at the intended load.",
+      "figure": {
+        "x": 8,
+        "y": 11124.9375,
+        "width": 374,
+        "height": 531.1875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 11124.9375,
+        "width": 374,
+        "height": 455.8125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 11595.09375,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 123,
+      "viewport": 390,
+      "captionText": "For a load that already uses DC, compare the whole path. Avoiding an inverter pair does not remove charging, wiring or regulation losses.",
+      "file": "ch17-dc-native.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 390,
+      "src": "../media/file95.svg",
+      "alt": "A printer, a metalworking station and a shared walk-behind tractor are tools for selected jobs. Suitable materials, trained people, maintenance and checking remain necessary. Commercial tractor forms are not labelled open source, and parts are not guaranteed fit for every application.",
+      "figure": {
+        "x": 8,
+        "y": 12339.1875,
+        "width": 374,
+        "height": 492.921875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 12339.1875,
+        "width": 374,
+        "height": 437.890625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 12791.421875,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 390,
+      "captionText": "A neighborhood fab lab combines suitable tools with trained people, supported materials and checks for the actual job.",
+      "file": "ch17-fab-lab.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 390,
+      "src": "../media/file96.svg",
+      "alt": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.",
+      "figure": {
+        "x": 8,
+        "y": 13590.421875,
+        "width": 374,
+        "height": 407.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 13590.421875,
+        "width": 374,
+        "height": 311.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 13916.421875,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 390,
+      "captionText": "Shared tools need a working arrangement around them: trained people, suitable power and materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not a fabrication or wiring plan.",
+      "file": "v101-scene-shared-workshop.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 390,
+      "src": "../media/file98.svg",
+      "alt": "One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.",
+      "figure": {
+        "x": 8,
+        "y": 4463.9375,
+        "width": 374,
+        "height": 374.5625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 4463.9375,
+        "width": 374,
+        "height": 299.1875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 4777.46875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 188,
+      "viewport": 390,
+      "captionText": "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene.",
+      "file": "v101-visual-continuity-calendar.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 390,
+      "src": "../media/file99.svg",
+      "alt": "A current vulnerability ties essentials to continuing earnings. A proposed arrangement funds supplies, remaining paid work, tools and backup capacity so people can receive essentials without a job. Adequate provision is a commitment to verify, not an achieved effect of robots or a closed loop.",
+      "figure": {
+        "x": 8,
+        "y": 7933.5,
+        "width": 374,
+        "height": 492.21875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 7933.5,
+        "width": 374,
+        "height": 416.84375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8364.6875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 135,
+      "viewport": 390,
+      "captionText": "The proposal makes essentials a funded floor, available without a job. Tools help; remaining work, supplies and reliable delivery still need provision.",
+      "file": "ch18-social-contract.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 390,
+      "src": "../media/file100.svg",
+      "alt": "An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.",
+      "figure": {
+        "x": 8,
+        "y": 12754.171875,
+        "width": 374,
+        "height": 622.421875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 12754.171875,
+        "width": 374,
+        "height": 526.703125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 13295.21875,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 390,
+      "captionText": "When a meal fails. An illustrative worksheet from this chapter’s premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise.",
+      "file": "v101-chart-meal-response.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 390,
+      "src": "../media/file101.png",
+      "alt": "Illustration of Rosa speaking at a county microphone in her warehouse shirt, with a brace on her right wrist.",
+      "figure": {
+        "x": 8,
+        "y": 1939.25,
+        "width": 374,
+        "height": 304.359375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 1939.25,
+        "width": 374,
+        "height": 249.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 2202.921875,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 390,
+      "captionText": "Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond the next delivery.",
+      "file": "v103-narrative-rosa-testimony.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 390,
+      "src": "../media/file102.svg",
+      "alt": "Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.",
+      "figure": {
+        "x": 8,
+        "y": 5394.15625,
+        "width": 374,
+        "height": 578.703125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 5394.15625,
+        "width": 374,
+        "height": 503.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 5911.828125,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 390,
+      "captionText": "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained.",
+      "file": "ch19-conversion-ladder.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch030.xhtml",
+      "width": 390,
+      "src": "../media/file105.svg",
+      "alt": "An open ledger with four continuing service costs: equipment, maintenance, remaining labor and delivery. No prices or budget estimates are shown.",
+      "figure": {
+        "x": 8,
+        "y": 528.75,
+        "width": 374,
+        "height": 353.53125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 528.75,
+        "width": 374,
+        "height": 278.15625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 821.25,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 202,
+      "viewport": 390,
+      "captionText": "Free to the person eating still leaves a working ledger: equipment, maintenance, remaining labor, and delivery need dependable funding.",
+      "file": "v103-service-ledger.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch031.xhtml",
+      "width": 390,
+      "src": "../media/file106.svg",
+      "alt": "Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.",
+      "figure": {
+        "x": 8,
+        "y": 3406.234375,
+        "width": 374,
+        "height": 581.828125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 3406.234375,
+        "width": 374,
+        "height": 506.453125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 3927.03125,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 390,
+      "captionText": "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.",
+      "file": "appd-precedent-timeline.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch032.xhtml",
+      "width": 390,
+      "src": "../media/file108.svg",
+      "alt": "A phone and an offline retrieval test: save a reference you may copy, record source and date, turn the network off, then open the copy and find an answer.",
+      "figure": {
+        "x": 8,
+        "y": 4414.21875,
+        "width": 374,
+        "height": 372.234375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 4414.21875,
+        "width": 374,
+        "height": 296.859375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 4725.421875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 189,
+      "viewport": 390,
+      "captionText": "Tier 0 ends with a test: can you open the reference and find what you need with the network off? Record the source and date so you know which copy you have.",
+      "file": "v103-offline-check.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch034.xhtml",
+      "width": 390,
+      "src": "../media/file109.svg",
+      "alt": "Twelve monthly themes arranged as a two-page year index, from getting your bearings and knowing your numbers to going on the record and looking back, then forward.",
+      "figure": {
+        "x": 8,
+        "y": 307.21875,
+        "width": 374,
+        "height": 385.46875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 307.21875,
+        "width": 374,
+        "height": 310.09375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 631.65625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 181,
+      "viewport": 390,
+      "captionText": "A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the actions and precedent references follow below.",
+      "file": "v103-first-year-index.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 768,
+      "src": "../media/file1.png",
+      "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.",
+      "figure": {
+        "x": 240,
+        "y": 2461.875,
+        "width": 288,
+        "height": 487.03125,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 2461.875,
+        "width": 288,
+        "height": 432,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 2908.21875,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 768,
+      "captionText": "Atlas, outside the demonstration room. AI-adapted cutout from DARPA, public domain.",
+      "file": "v101-cutout-atlas.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 768,
+      "src": "../media/file3.svg",
+      "alt": "Annual US household food insecurity, 2001–2024, shown as a solid line, with its very-low-food-security subset dashed. Food insecurity rises from 11.1% in 2007 to 14.6% in 2008; in 2024 the two rates are 13.7% and 5.4%. Shading marks the 2007–2009 period.",
+      "figure": {
+        "x": 8,
+        "y": 5959.1875,
+        "width": 752,
+        "height": 1067.09375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5959.1875,
+        "width": 752,
+        "height": 1012.0625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6985.59375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 768,
+      "captionText": "Food insecurity rose sharply in 2008. These household survey estimates show a historical pattern, not a causal test of job loss. Very low food security is included within food insecurity. USDA Economic Research Service, 2001–2024.",
+      "file": "intro-food-insecurity.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 768,
+      "src": "../media/file5.svg",
+      "alt": "A speculative map of nine stages, grouped into AGI, ASI, and later imagined possibilities. Stage 4, a new social contract, is emphasized as a choice. Stages may overlap, stall, or fail to occur.",
+      "figure": {
+        "x": 8,
+        "y": 9175.328125,
+        "width": 752,
+        "height": 1037.34375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9175.328125,
+        "width": 752,
+        "height": 1002.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 10192.328125,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 113,
+      "viewport": 768,
+      "captionText": "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later stages are imagined possibilities.",
+      "file": "intro-nine-stages.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch003.xhtml",
+      "width": 768,
+      "src": "../media/file8.svg",
+      "alt": "Three reading routes: Introduction, Chapter 19 and Appendix C; add Preface, Chapters 6 and 12, and Conclusion for a wider view; or read every section in order.",
+      "figure": {
+        "x": 8,
+        "y": 329.96875,
+        "width": 752,
+        "height": 623.75,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 329.96875,
+        "width": 752,
+        "height": 589.0625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 933.375,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 191,
+      "viewport": 768,
+      "captionText": "Three ways in. The short route gives you the argument and plan; the full route follows Elijah through the chapters.",
+      "file": "v103-reading-routes.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch004.xhtml",
+      "width": 768,
+      "src": "../media/file10.png",
+      "alt": "Illustration of three realtors raising glasses beside Elijah and his laptop at the Bear Flag.",
+      "figure": {
+        "x": 8,
+        "y": 5620.8125,
+        "width": 752,
+        "height": 536.015625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5620.8125,
+        "width": 752,
+        "height": 501.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6136.484375,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 768,
+      "captionText": "Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion.",
+      "file": "v103-narrative-bear-flag.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch006.xhtml",
+      "width": 768,
+      "src": "../media/file15.svg",
+      "alt": "Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates.",
+      "figure": {
+        "x": 8,
+        "y": 9968.046875,
+        "width": 752,
+        "height": 922.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9968.046875,
+        "width": 752,
+        "height": 867.921875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 10850.3125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 130,
+      "viewport": 768,
+      "captionText": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. Grace et al., Thousands of AI Authors on the Future of AI.",
+      "file": "v101-chart-forecast-shift.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch007.xhtml",
+      "width": 768,
+      "src": "../media/file17.svg",
+      "alt": "Four dated events: June 12 export controls and worldwide suspension of Fable 5 and Mythos 5; June 26 approval for Mythos access by a set of US organizations; June 30 lifting of export controls; July 1 global return of Fable, with Mythos still limited to approved organizations. Spacing is not proportional to elapsed time.",
+      "figure": {
+        "x": 8,
+        "y": 4501.953125,
+        "width": 752,
+        "height": 1051.421875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4501.953125,
+        "width": 752,
+        "height": 996.390625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5512.6875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 113,
+      "viewport": 768,
+      "captionText": "Eighteen days from the June 12 export controls to their lifting on June 30. Access to the two models still differed. Selected events from Anthropic’s June 30 account, updated July 1; Stage 2 and Stage 3 are the author’s interpretation.",
+      "file": "ch02-eighteen-days.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch007.xhtml",
+      "width": 768,
+      "src": "../media/file18.svg",
+      "alt": "A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power.",
+      "figure": {
+        "x": 8,
+        "y": 5890.140625,
+        "width": 752,
+        "height": 640.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5890.140625,
+        "width": 752,
+        "height": 585.921875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6490.40625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 193,
+      "viewport": 768,
+      "captionText": "A copy you can open can outlast a broken link. It does not replace electrical power or a tested plan for equipment that depends on it. Conceptual illustration.",
+      "file": "v101-visual-local-copies.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch008.xhtml",
+      "width": 768,
+      "src": "../media/file20.png",
+      "alt": "Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.",
+      "figure": {
+        "x": 240,
+        "y": 3316.25,
+        "width": 288,
+        "height": 507.375,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 3316.25,
+        "width": 288,
+        "height": 432,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 3762.59375,
+        "width": 288,
+        "height": 61.03125,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 768,
+      "captionText": "An image for the imagined departure. AI-adapted collage from SpaceX, CC0; the scenario remains speculative.",
+      "file": "v101-cutout-rocket.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch009.xhtml",
+      "width": 768,
+      "src": "../media/file22.png",
+      "alt": "Illustration of Elijah holding coffee at his apartment window at dawn, with a closed laptop behind him.",
+      "figure": {
+        "x": 8,
+        "y": 3010.078125,
+        "width": 752,
+        "height": 536.015625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 3010.078125,
+        "width": 752,
+        "height": 501.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 3525.75,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 768,
+      "captionText": "Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the world outside his window.",
+      "file": "v103-narrative-near-end.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 768,
+      "src": "../media/file25.png",
+      "alt": "Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.",
+      "figure": {
+        "x": 240,
+        "y": 3489.21875,
+        "width": 288,
+        "height": 350.578125,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 3489.21875,
+        "width": 288,
+        "height": 275.203125,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 3778.765625,
+        "width": 288,
+        "height": 61.03125,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1283,
+      "viewport": 768,
+      "captionText": "Energy has to come from somewhere. AI-adapted NASA/SDO imagery, public domain; not an unaltered scientific image.",
+      "file": "v101-cutout-sun.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 768,
+      "src": "../media/file26.svg",
+      "alt": "Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted.",
+      "figure": {
+        "x": 8,
+        "y": 5245.859375,
+        "width": 752,
+        "height": 935.484375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5245.859375,
+        "width": 752,
+        "height": 880.453125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6140.65625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 768,
+      "captionText": "The machine’s appetite. The solid column is IEA’s estimate for 2025; the hatched column is its 2030 projection. This is all data-centre electricity, not AI alone. IEA, Key Questions on Energy and AI, 2026.",
+      "file": "v101-chart-data-centre-demand.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 768,
+      "src": "../media/file27.svg",
+      "alt": "Two line charts show horses and mules on US farms peaking at 26.7 million in 1918 and falling to 8.3 million in 1949, while tractors rise from 1,000 in 1910 to 3.5 million in 1949. The vertical scales differ; all annual values are plotted.",
+      "figure": {
+        "x": 8,
+        "y": 10352.203125,
+        "width": 752,
+        "height": 1073.359375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 10352.203125,
+        "width": 752,
+        "height": 1018.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 11384.875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 768,
+      "captionText": "US farm counts on January 1, 1910–1949. Separate vertical scales; 1948 and 1949 figures were preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p. 45.",
+      "file": "ch05-horses-tractors.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 768,
+      "src": "../media/file32.svg",
+      "alt": "Four questions ask whether a machine can do a task, whether it is deployed, who sets its terms, and whether someone can receive the result without money. A rail connects distinct symbols without promising automatic progress.",
+      "figure": {
+        "x": 8,
+        "y": 4109.96875,
+        "width": 752,
+        "height": 893.21875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4109.96875,
+        "width": 752,
+        "height": 858.53125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 4982.84375,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 131,
+      "viewport": 768,
+      "captionText": "Capability, deployment, ownership and access are separate questions. A productive farm can stand beside hunger.",
+      "file": "ch06-capability-access.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 768,
+      "src": "../media/file33.svg",
+      "alt": "Two lollipop bars show food insecurity in selected US income groups during 2024: 39.4% of households below the poverty threshold and 7.9% at or above 185% of that threshold. Dashed reference ticks mark the 13.7% national household rate. Middle and unknown income categories are not plotted.",
+      "figure": {
+        "x": 8,
+        "y": 6437.6875,
+        "width": 752,
+        "height": 844.625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 6437.6875,
+        "width": 752,
+        "height": 789.59375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 7241.625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 143,
+      "viewport": 768,
+      "captionText": "Income and food access. In the 2024 survey, food insecurity was associated with income. These two selected groups do not represent every income category, and the comparison does not establish causation. USDA ERS, ERR-358, Table 2.",
+      "file": "v101-chart-income-food-access.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 768,
+      "src": "../media/file34.svg",
+      "alt": "A productive machine stands before an open gate and a plate. The gate names terms, price, eligibility, and delivery as choices that affect who receives the result.",
+      "figure": {
+        "x": 8,
+        "y": 7922.609375,
+        "width": 752,
+        "height": 564.21875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7922.609375,
+        "width": 752,
+        "height": 529.53125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8466.484375,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 213,
+      "viewport": 768,
+      "captionText": "A working machine still needs an arrangement that lets people reach its output. Conceptual illustration.",
+      "file": "v101-visual-access-gate.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch013.xhtml",
+      "width": 768,
+      "src": "../media/file36.png",
+      "alt": "Illustration of Marta passing a bowl of beans to Denny at the cooperative’s plywood dinner table.",
+      "figure": {
+        "x": 8,
+        "y": 3010.078125,
+        "width": 752,
+        "height": 536.015625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 3010.078125,
+        "width": 752,
+        "height": 501.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 3525.75,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 768,
+      "captionText": "Fictional scene: pass the beans. The conversation turns from retraining to the floor people need beneath them.",
+      "file": "v103-narrative-passing-beans.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 768,
+      "src": "../media/file41.svg",
+      "alt": "A rail follows time for a chosen task, switching away, unfinished work, and a possible loss of task time. An off-ramp marks an alert or feed. Some switches help; returning can require reorientation.",
+      "figure": {
+        "x": 8,
+        "y": 4606.96875,
+        "width": 752,
+        "height": 883.8125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4606.96875,
+        "width": 752,
+        "height": 849.125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5470.4375,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 133,
+      "viewport": 768,
+      "captionText": "A possible pattern to notice in your own day. Conceptual illustration, not a diagnosis or a model of brain chemistry.",
+      "file": "ch08-cognitive-extraction.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 768,
+      "src": "../media/file42.svg",
+      "alt": "An illustrative attention curve rises, drops after three interruptions, and resumes unevenly. A dashed sustained-focus reference and unnumbered axes make this a conceptual sketch, not measured data.",
+      "figure": {
+        "x": 8,
+        "y": 6077.8125,
+        "width": 752,
+        "height": 770.984375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 6077.8125,
+        "width": 752,
+        "height": 715.953125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6808.109375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 158,
+      "viewport": 768,
+      "captionText": "One possible pattern of interrupted work. The drawing gives no fixed recovery time, interruption threshold, or measured effect size.",
+      "file": "ch08-focus-recovery.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 768,
+      "src": "../media/file43.svg",
+      "alt": "Messages, a clock, a paper ledger and a workbench show a suggested routine: receive information, schedule checks, make useful notes, and return to chosen work.",
+      "figure": {
+        "x": 8,
+        "y": 7319.578125,
+        "width": 752,
+        "height": 951.1875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7319.578125,
+        "width": 752,
+        "height": 916.5,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8250.421875,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 123,
+      "viewport": 768,
+      "captionText": "A routine to try, observe and adjust. Two timed windows each day are an example schedule, not a measured optimum.",
+      "file": "ch08-firewall-pipeline.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 768,
+      "src": "../media/file44.svg",
+      "alt": "Two unscaled task strips compare responding to each incoming alert with choosing message-check times. The first task is fragmented; two check windows surround a chosen task in the second. No cognitive benefit is guaranteed.",
+      "figure": {
+        "x": 8,
+        "y": 8798.1875,
+        "width": 752,
+        "height": 985.640625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 8798.1875,
+        "width": 752,
+        "height": 950.953125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 9763.484375,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 119,
+      "viewport": 768,
+      "captionText": "Routines, not measurements of your brain. Some interruptions are useful or urgent. Try a schedule and check whether it helps.",
+      "file": "ch08-info-architectures.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 768,
+      "src": "../media/file45.svg",
+      "alt": "A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task.",
+      "figure": {
+        "x": 8,
+        "y": 10489.21875,
+        "width": 752,
+        "height": 586.140625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 10489.21875,
+        "width": 752,
+        "height": 551.453125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 11055.015625,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 205,
+      "viewport": 768,
+      "captionText": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive budget or a fixed recovery time.",
+      "file": "v101-visual-attention-ribbon.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 768,
+      "src": "../media/file46.svg",
+      "alt": "A star loses its crossed-out hub and its dashed links. A mesh with a crossed-out central node retains a solid route around the outside. Rerouting requires a usable path and maintained relationships.",
+      "figure": {
+        "x": 8,
+        "y": 12446.828125,
+        "width": 752,
+        "height": 1020.09375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 12446.828125,
+        "width": 752,
+        "height": 965.0625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 13426.234375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 117,
+      "viewport": 768,
+      "captionText": "A mesh can reroute only if a usable path remains. Crosses mark failed nodes; dashed links are affected by that failure. People still maintain the circle and its connections.",
+      "file": "ch08-star-vs-mesh.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "src": "../media/file50.svg",
+      "alt": "Two schematic supply routes reach households: distant suppliers through factory and freight, or imported parts through nearby workshops and growers, with a repair return. Both rely on people, energy and imports.",
+      "figure": {
+        "x": 8,
+        "y": 5673.1875,
+        "width": 752,
+        "height": 976.21875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5673.1875,
+        "width": 752,
+        "height": 921.1875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6608.71875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 122,
+      "viewport": 768,
+      "captionText": "Shorter supply lines can make repair and coordination more local. Imported parts, materials, energy and human work remain; distance alone does not establish fair treatment.",
+      "file": "ch09-hyperlocal-vs-global.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "src": "../media/file51.svg",
+      "alt": "A town and households connect to nearby farms and kitchens, materials recovery and stores, power and water services, and workshops. Regional coverage is a capacity-building objective that must be measured, with outside suppliers still needed.",
+      "figure": {
+        "x": 8,
+        "y": 7149.703125,
+        "width": 752,
+        "height": 1032.625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7149.703125,
+        "width": 752,
+        "height": 977.59375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8141.640625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 115,
+      "viewport": 768,
+      "captionText": "Build regional capacity, then measure what it covers. Stores, seasonal production, water, power, delivery and remaining imports determine how many people can be supplied and for how long.",
+      "file": "ch09-region-ring.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "src": "../media/file52.png",
+      "alt": "Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.",
+      "figure": {
+        "x": 240,
+        "y": 8261.421875,
+        "width": 288,
+        "height": 378.046875,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 8261.421875,
+        "width": 288,
+        "height": 323.015625,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 8598.78125,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1184,
+      "viewport": 768,
+      "captionText": "A machine takes shape around its work. AI-adapted cutout from John Abella, CC BY 2.0.",
+      "file": "v101-cutout-printer.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "src": "../media/file53.svg",
+      "alt": "Three columns show net energy intensity of ammonia production in IEA’s 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average.",
+      "figure": {
+        "x": 8,
+        "y": 9245.359375,
+        "width": 752,
+        "height": 982.484375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9245.359375,
+        "width": 752,
+        "height": 927.453125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 10187.15625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 122,
+      "viewport": 768,
+      "captionText": "The energy in ammonia. IEA’s global-average estimate and best-available-process benchmarks are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. IEA, Ammonia Technology Roadmap, 2021.",
+      "file": "v101-chart-ammonia-energy.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "src": "../media/file54.svg",
+      "alt": "Top view of a gantry over a growing bed, with X travel along the bed, Y travel across the gantry and Z motion lowering the tool toward a plant. Generic tooling can seed, water or weed; people still inspect, maintain and harvest.",
+      "figure": {
+        "x": 8,
+        "y": 10708.921875,
+        "width": 752,
+        "height": 1010.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 10708.921875,
+        "width": 752,
+        "height": 955.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 11678.921875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 118,
+      "viewport": 768,
+      "captionText": "A gantry can reduce walking space in a bed. Tooling and behavior depend on the machine and software version; this concept is not a build plan or a promise to automate the entire crop.",
+      "file": "ch09-cnc-bed.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "src": "../media/file55.svg",
+      "alt": "SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.",
+      "figure": {
+        "x": 8,
+        "y": 12492.734375,
+        "width": 752,
+        "height": 1073.359375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 12492.734375,
+        "width": 752,
+        "height": 1018.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 13525.40625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 768,
+      "captionText": "The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.",
+      "file": "ch09-greenhouse-bus.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "src": "../media/file56.svg",
+      "alt": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.",
+      "figure": {
+        "x": 8,
+        "y": 14428.5625,
+        "width": 752,
+        "height": 681.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 14428.5625,
+        "width": 752,
+        "height": 626.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 15069.5625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 768,
+      "captionText": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals.",
+      "file": "v101-scene-food-delivery.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch017.xhtml",
+      "width": 768,
+      "src": "../media/file59.svg",
+      "alt": "Three schematic distributions show one possible result of repeatedly training on generated samples: rare cases can be lost, variety can narrow and errors can drift. The curves are illustrative, without measured axes or a generation timetable.",
+      "figure": {
+        "x": 8,
+        "y": 4765.453125,
+        "width": 752,
+        "height": 1016.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4765.453125,
+        "width": 752,
+        "height": 961.921875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5741.71875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 117,
+      "viewport": 768,
+      "captionText": "One possible failure in recursive training on generated samples. This schematic is not a universal outcome or a timetable; real data, sampling and training choices affect the result. Based on Shumailov et al., Nature (2024).",
+      "file": "ch10-model-collapse.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch017.xhtml",
+      "width": 768,
+      "src": "../media/file60.svg",
+      "alt": "Four illustrated stages connect documenting useful work, telling a true story with consent, offering it to a feed and keeping instructions usable through answers, corrections and archives. Distribution may bring readers but is not guaranteed.",
+      "figure": {
+        "x": 8,
+        "y": 6281.90625,
+        "width": 752,
+        "height": 993.453125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 6281.90625,
+        "width": 752,
+        "height": 938.421875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 7234.671875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 120,
+      "viewport": 768,
+      "captionText": "Document useful work, tell the true story with consent, and keep the instructions available. A platform may bring readers; a post is not guaranteed reach or income.",
+      "file": "ch10-algorithm-unlock.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 768,
+      "src": "../media/file63.png",
+      "alt": "Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail.",
+      "figure": {
+        "x": 240,
+        "y": 7016.96875,
+        "width": 288,
+        "height": 247.03125,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 7016.96875,
+        "width": 288,
+        "height": 192,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 7223.3125,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 768,
+      "captionText": "Capability still needs an arrangement for access. AI-adapted cutout from Jonte, CC BY-SA 4.0.",
+      "file": "v101-cutout-spot.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 768,
+      "src": "../media/file64.svg",
+      "alt": "A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights.",
+      "figure": {
+        "x": 8,
+        "y": 7788.296875,
+        "width": 752,
+        "height": 676.984375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7788.296875,
+        "width": 752,
+        "height": 621.953125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8424.59375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 181,
+      "viewport": 768,
+      "captionText": "The model file is one layer of a working service. Running a useful service also takes software, hardware, power, and people who maintain it. Conceptual illustration.",
+      "file": "v101-visual-operating-stack.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 768,
+      "src": "../media/file65.svg",
+      "alt": "A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory.",
+      "figure": {
+        "x": 8,
+        "y": 8811.078125,
+        "width": 752,
+        "height": 948.03125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 8811.078125,
+        "width": 752,
+        "height": 893,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 9718.421875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 126,
+      "viewport": 768,
+      "captionText": "Memory before the overhead. These are derived weights-only sizes, not measured VRAM requirements. They omit the chapter’s illustrative allowance as well as runtime costs. llama.cpp, memory and context options.",
+      "file": "v101-chart-weights-memory.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 768,
+      "src": "../media/file66.svg",
+      "alt": "A conceptual coolant loop carries heat from CPU and GPU water blocks through a pump to an outdoor radiator with airflow and returns cooler coolant. Heat rate equals mass flow times specific heat times temperature change; materials, pump, coolant and radiator must be compatible.",
+      "figure": {
+        "x": 8,
+        "y": 10544.71875,
+        "width": 752,
+        "height": 1060.828125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 10544.71875,
+        "width": 752,
+        "height": 1005.796875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 11564.859375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 112,
+      "viewport": 768,
+      "captionText": "Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in kilograms per second: Q̇ = ṁ Cp ΔT. This diagram specifies neither components nor cooling capacity.",
+      "file": "ch11-cooling-loop.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 768,
+      "src": "../media/file68.svg",
+      "alt": "A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages.",
+      "figure": {
+        "x": 8,
+        "y": 3887.90625,
+        "width": 752,
+        "height": 938.625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 3887.90625,
+        "width": 752,
+        "height": 883.59375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 4785.84375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 768,
+      "captionText": "What an acre costs. USDA survey estimates include farm buildings as well as land. These are nominal national averages, not inflation-adjusted values or local offers. USDA NASS, Land Values 2026, page 5.",
+      "file": "v101-chart-land-values.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 768,
+      "src": "../media/file69.svg",
+      "alt": "A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement.",
+      "figure": {
+        "x": 8,
+        "y": 4850.53125,
+        "width": 752,
+        "height": 680.125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4850.53125,
+        "width": 752,
+        "height": 625.09375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5489.96875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 180,
+      "viewport": 768,
+      "captionText": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a way to challenge decisions. Conceptual illustration, not a legal template.",
+      "file": "v101-visual-shared-land.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 768,
+      "src": "../media/file70.svg",
+      "alt": "A proposed growing and tool network coordinated by people. Food and support reach households through paid work, transport and backup. Each resource has its own supply and demand budget.",
+      "figure": {
+        "x": 8,
+        "y": 7320.78125,
+        "width": 752,
+        "height": 932.359375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7320.78125,
+        "width": 752,
+        "height": 877.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8212.453125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 129,
+      "viewport": 768,
+      "captionText": "A shared-service network. People match usable surplus to requests and arrange delivery. The drawing promises neither a yield nor an autonomous crew.",
+      "file": "ch12-csa-network.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch020.xhtml",
+      "width": 768,
+      "src": "../media/file73.svg",
+      "alt": "Conceptual plan of two nominal forty-by-eight-foot containers. Their combined exterior footprint is 640 square feet, not usable interior area. Foundations, openings, connections and reinforcement require project-specific design.",
+      "figure": {
+        "x": 8,
+        "y": 5079.6875,
+        "width": 752,
+        "height": 760.03125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5079.6875,
+        "width": 752,
+        "height": 705,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5799.03125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 160,
+      "viewport": 768,
+      "captionText": "Two nominal forty-foot containers give a 640-square-foot exterior footprint. Usable space and structural details depend on the finished design; the chapter’s budget is fictional.",
+      "file": "ch13-shell-architecture.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch020.xhtml",
+      "width": 768,
+      "src": "../media/file74.svg",
+      "alt": "Conceptual wall section with steel, insulation and air control, and an interior layer. Insulation reduces conduction without eliminating it. Moisture, ventilation and required fire protection belong in the complete design.",
+      "figure": {
+        "x": 8,
+        "y": 6314.421875,
+        "width": 752,
+        "height": 818.015625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 6314.421875,
+        "width": 752,
+        "height": 783.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 7112.09375,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 144,
+      "viewport": 768,
+      "captionText": "Insulation is one layer in a wall. Air control, moisture, ventilation and fire protection have to work with it.",
+      "file": "ch13-thermal-seal.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 768,
+      "src": "../media/file78.svg",
+      "alt": "An illustrative chain from disruption to delayed deliveries and pressure on local stock, with rerouting and replenishment as possible responses. No fixed countdown or inevitable collapse is implied.",
+      "figure": {
+        "x": 8,
+        "y": 5438.078125,
+        "width": 752,
+        "height": 919.828125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5438.078125,
+        "width": 752,
+        "height": 864.796875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6317.21875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 130,
+      "viewport": 768,
+      "captionText": "One possible disruption sequence, not a clock. Existing stock, replacement routes, demand, and the specific failure determine what reaches the shelves and when.",
+      "file": "ch14-logistic-shockwave.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 768,
+      "src": "../media/file79.svg",
+      "alt": "Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material.",
+      "figure": {
+        "x": 8,
+        "y": 7826,
+        "width": 752,
+        "height": 1110.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7826,
+        "width": 752,
+        "height": 1055.921875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8896.265625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 768,
+      "captionText": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could not have been donated. Donation is net of food banks’ unusable portion. EPA, Table 5.",
+      "file": "v101-chart-waste-pathways.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 768,
+      "src": "../media/file80.svg",
+      "alt": "A single-uplink network loses its connection when the tower fails. A four-node mesh routes around a failed link only because another powered and tested path remains.",
+      "figure": {
+        "x": 8,
+        "y": 9378.875,
+        "width": 752,
+        "height": 880.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9378.875,
+        "width": 752,
+        "height": 846,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 10239.21875,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 133,
+      "viewport": 768,
+      "captionText": "A mesh can route around a break only where another powered, usable path remains. Test the missing relay.",
+      "file": "ch14-mesh-comms.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 768,
+      "src": "../media/file83.svg",
+      "alt": "A typical community land trust homeownership arrangement. A household owns the home; the trust holds the land under a long renewable ground lease with resale restrictions. Taxes, debt and stewardship duties remain.",
+      "figure": {
+        "x": 8,
+        "y": 4024.203125,
+        "width": 752,
+        "height": 838.359375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4024.203125,
+        "width": 752,
+        "height": 783.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 4821.875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 144,
+      "viewport": 768,
+      "captionText": "A common land-trust housing arrangement separates ownership of land and home. Resale terms need continuing stewardship; taxes and debt remain.",
+      "file": "ch15-clt-firewall.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 768,
+      "src": "../media/file84.svg",
+      "alt": "Plants exchange carbon with a soil food web. Decomposition and grazing cycle nutrients; harvest removes nutrients and losses also occur. Soil care includes measurement and appropriate replenishment.",
+      "figure": {
+        "x": 8,
+        "y": 5867.5,
+        "width": 752,
+        "height": 991.890625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5867.5,
+        "width": 752,
+        "height": 936.859375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6818.703125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 120,
+      "viewport": 768,
+      "captionText": "The soil food web cycles nutrients. Harvest and other losses remove them, so a productive bed still needs measurement and appropriate replenishment.",
+      "file": "ch15-soil-food-web.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 768,
+      "src": "../media/file85.svg",
+      "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+      "figure": {
+        "x": 8,
+        "y": 7212.15625,
+        "width": 752,
+        "height": 681.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7212.15625,
+        "width": 752,
+        "height": 626.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 7853.15625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 768,
+      "captionText": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile.",
+      "file": "v101-scene-living-soil.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch023.xhtml",
+      "width": 768,
+      "src": "../media/file87.svg",
+      "alt": "A checked file moves between two computers on hand-carried storage. No live network link is required. Private material may be encrypted, but loss, copying, incompatible software and unsafe endpoints remain possible.",
+      "figure": {
+        "x": 8,
+        "y": 4590.453125,
+        "width": 752,
+        "height": 698.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4590.453125,
+        "width": 752,
+        "height": 664.265625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5269.0625,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 170,
+      "viewport": 768,
+      "captionText": "A hand-carried copy needs no live network link. It still needs trusted handling, a compatible reader and a recoverable backup.",
+      "file": "ch16-sneakernet.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 768,
+      "src": "../media/file90.png",
+      "alt": "Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench.",
+      "figure": {
+        "x": 240,
+        "y": 4419.390625,
+        "width": 288,
+        "height": 397.625,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 4419.390625,
+        "width": 288,
+        "height": 342.59375,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 4776.328125,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1150,
+      "viewport": 768,
+      "captionText": "Tools with a history of use. AI-adapted collage from Shixart1985, CC BY 2.0.",
+      "file": "v101-cutout-tools.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 768,
+      "src": "../media/file92.svg",
+      "alt": "Aquaponic water recirculates from a fish tank through solids handling and biofiltration to grow beds and back. Algae cultivation is a separate branch whose harvested output may supply a validated share of feed. Feed, nutrients, water, power and labor remain inputs.",
+      "figure": {
+        "x": 8,
+        "y": 6311.109375,
+        "width": 752,
+        "height": 1002.875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 6311.109375,
+        "width": 752,
+        "height": 968.1875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 7293.640625,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 117,
+      "viewport": 768,
+      "captionText": "Growing an ingredient can reduce a bought input. It doesn’t establish a complete fish diet or a closed system.",
+      "file": "ch17-algae-loop.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 768,
+      "src": "../media/file94.svg",
+      "alt": "Solar charging and storage feed two conceptual paths to an already-DC device. The inverter path converts DC to AC and an adapter converts it back. The DC route still needs voltage regulation and protection. Both have charging, wiring and operating losses; compare at the intended load.",
+      "figure": {
+        "x": 8,
+        "y": 9813.140625,
+        "width": 752,
+        "height": 971.53125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9813.140625,
+        "width": 752,
+        "height": 916.5,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 10743.984375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 123,
+      "viewport": 768,
+      "captionText": "For a load that already uses DC, compare the whole path. Avoiding an inverter pair does not remove charging, wiring or regulation losses.",
+      "file": "ch17-dc-native.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 768,
+      "src": "../media/file95.svg",
+      "alt": "A printer, a metalworking station and a shared walk-behind tractor are tools for selected jobs. Suitable materials, trained people, maintenance and checking remain necessary. Commercial tractor forms are not labelled open source, and parts are not guaranteed fit for every application.",
+      "figure": {
+        "x": 8,
+        "y": 11193.78125,
+        "width": 752,
+        "height": 915.140625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 11193.78125,
+        "width": 752,
+        "height": 880.453125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 12088.578125,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 768,
+      "captionText": "A neighborhood fab lab combines suitable tools with trained people, supported materials and checks for the actual job.",
+      "file": "ch17-fab-lab.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 768,
+      "src": "../media/file96.svg",
+      "alt": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.",
+      "figure": {
+        "x": 8,
+        "y": 12520.078125,
+        "width": 752,
+        "height": 681.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 12520.078125,
+        "width": 752,
+        "height": 626.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 13161.078125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 768,
+      "captionText": "Shared tools need a working arrangement around them: trained people, suitable power and materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not a fabrication or wiring plan.",
+      "file": "v101-scene-shared-workshop.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 768,
+      "src": "../media/file98.svg",
+      "alt": "One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.",
+      "figure": {
+        "x": 8,
+        "y": 3078.0625,
+        "width": 752,
+        "height": 656.625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 3078.0625,
+        "width": 752,
+        "height": 601.59375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 3694,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 188,
+      "viewport": 768,
+      "captionText": "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene.",
+      "file": "v101-visual-continuity-calendar.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 768,
+      "src": "../media/file99.svg",
+      "alt": "A current vulnerability ties essentials to continuing earnings. A proposed arrangement funds supplies, remaining paid work, tools and backup capacity so people can receive essentials without a job. Adequate provision is a commitment to verify, not an achieved effect of robots or a closed loop.",
+      "figure": {
+        "x": 8,
+        "y": 5639.4375,
+        "width": 752,
+        "height": 893.1875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5639.4375,
+        "width": 752,
+        "height": 838.15625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6491.9375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 135,
+      "viewport": 768,
+      "captionText": "The proposal makes essentials a funded floor, available without a job. Tools help; remaining work, supplies and reliable delivery still need provision.",
+      "file": "ch18-social-contract.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 768,
+      "src": "../media/file100.svg",
+      "alt": "An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.",
+      "figure": {
+        "x": 8,
+        "y": 9171.125,
+        "width": 752,
+        "height": 1114.09375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9171.125,
+        "width": 752,
+        "height": 1059.0625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 10244.53125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 768,
+      "captionText": "When a meal fails. An illustrative worksheet from this chapter’s premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise.",
+      "file": "v101-chart-meal-response.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 768,
+      "src": "../media/file101.png",
+      "alt": "Illustration of Rosa speaking at a county microphone in her warehouse shirt, with a brace on her right wrist.",
+      "figure": {
+        "x": 8,
+        "y": 1201.734375,
+        "width": 752,
+        "height": 536.015625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 1201.734375,
+        "width": 752,
+        "height": 501.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 1717.40625,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 768,
+      "captionText": "Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond the next delivery.",
+      "file": "v103-narrative-rosa-testimony.png",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 768,
+      "src": "../media/file102.svg",
+      "alt": "Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.",
+      "figure": {
+        "x": 8,
+        "y": 3673.25,
+        "width": 752,
+        "height": 1067.09375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 3673.25,
+        "width": 752,
+        "height": 1012.0625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 4699.65625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 768,
+      "captionText": "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained.",
+      "file": "ch19-conversion-ladder.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch030.xhtml",
+      "width": 768,
+      "src": "../media/file105.svg",
+      "alt": "An open ledger with four continuing service costs: equipment, maintenance, remaining labor and delivery. No prices or budget estimates are shown.",
+      "figure": {
+        "x": 8,
+        "y": 345.96875,
+        "width": 752,
+        "height": 614.328125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 345.96875,
+        "width": 752,
+        "height": 559.296875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 919.609375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 202,
+      "viewport": 768,
+      "captionText": "Free to the person eating still leaves a working ledger: equipment, maintenance, remaining labor, and delivery need dependable funding.",
+      "file": "v103-service-ledger.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch031.xhtml",
+      "width": 768,
+      "src": "../media/file106.svg",
+      "alt": "Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.",
+      "figure": {
+        "x": 8,
+        "y": 2020.421875,
+        "width": 752,
+        "height": 1073.359375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 2020.421875,
+        "width": 752,
+        "height": 1018.328125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 3053.09375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 111,
+      "viewport": 768,
+      "captionText": "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.",
+      "file": "appd-precedent-timeline.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch032.xhtml",
+      "width": 768,
+      "src": "../media/file108.svg",
+      "alt": "A phone and an offline retrieval test: save a reference you may copy, record source and date, turn the network off, then open the copy and find an answer.",
+      "figure": {
+        "x": 8,
+        "y": 2972.5,
+        "width": 752,
+        "height": 651.921875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 2972.5,
+        "width": 752,
+        "height": 596.890625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 3583.734375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 189,
+      "viewport": 768,
+      "captionText": "Tier 0 ends with a test: can you open the reference and find what you need with the network off? Record the source and date so you know which copy you have.",
+      "file": "v103-offline-check.svg",
+      "caption_required": true
+    },
+    {
+      "chapter": "EPUB/text/ch034.xhtml",
+      "width": 768,
+      "src": "../media/file109.svg",
+      "alt": "Twelve monthly themes arranged as a two-page year index, from getting your bearings and knowing your numbers to going on the record and looking back, then forward.",
+      "figure": {
+        "x": 8,
+        "y": 208.03125,
+        "width": 752,
+        "height": 678.5625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 208.03125,
+        "width": 752,
+        "height": 623.53125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 845.90625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 181,
+      "viewport": 768,
+      "captionText": "A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the actions and precedent references follow below.",
+      "file": "v103-first-year-index.svg",
+      "caption_required": true
+    }
+  ],
+  "layout_errors": [],
+  "missing_requests": [],
+  "cutout_alpha": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.6905778249104818,
+      "partial_alpha_fraction": 0.30942217508951825,
+      "near_opaque_fraction": 0.2656866709391276,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-rocket.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.7680098215738932,
+      "partial_alpha_fraction": 0.23199017842610678,
+      "near_opaque_fraction": 0.12463887532552083,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-sun.png",
+      "dimensions": [
+        1283,
+        1226
+      ],
+      "transparent_fraction": 0.35007991313181913,
+      "partial_alpha_fraction": 0.6499200868681808,
+      "near_opaque_fraction": 0.538367203701561,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-printer.png",
+      "dimensions": [
+        1184,
+        1328
+      ],
+      "transparent_fraction": 0.4289656514571801,
+      "partial_alpha_fraction": 0.57103434854282,
+      "near_opaque_fraction": 0.45303786938293716,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-spot.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent_fraction": 0.7407919565836588,
+      "partial_alpha_fraction": 0.2592080434163411,
+      "near_opaque_fraction": 0.22690645853678384,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-tools.png",
+      "dimensions": [
+        1150,
+        1368
+      ],
+      "transparent_fraction": 0.7085163996948894,
+      "partial_alpha_fraction": 0.2908276125095347,
+      "near_opaque_fraction": 0.2583403254513094,
+      "max_alpha": 255
+    }
+  ],
+  "screenshots": [
+    "docs/v0.10.3/epub-proof/v103-reading-routes-390.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-bear-flag-390.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-near-end-390.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-passing-beans-390.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-rosa-testimony-390.png",
+    "docs/v0.10.3/epub-proof/v103-service-ledger-390.png",
+    "docs/v0.10.3/epub-proof/v103-offline-check-390.png",
+    "docs/v0.10.3/epub-proof/v103-first-year-index-390.png",
+    "docs/v0.10.3/epub-proof/v101-cutout-atlas-768.png",
+    "docs/v0.10.3/epub-proof/intro-nine-stages-768.png",
+    "docs/v0.10.3/epub-proof/v103-reading-routes-768.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-bear-flag-768.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-near-end-768.png",
+    "docs/v0.10.3/epub-proof/v101-chart-data-centre-demand-768.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-passing-beans-768.png",
+    "docs/v0.10.3/epub-proof/v101-cutout-printer-768.png",
+    "docs/v0.10.3/epub-proof/v101-scene-food-delivery-768.png",
+    "docs/v0.10.3/epub-proof/v101-cutout-spot-768.png",
+    "docs/v0.10.3/epub-proof/v101-chart-weights-memory-768.png",
+    "docs/v0.10.3/epub-proof/ch12-csa-network-768.png",
+    "docs/v0.10.3/epub-proof/ch13-shell-architecture-768.png",
+    "docs/v0.10.3/epub-proof/ch14-logistic-shockwave-768.png",
+    "docs/v0.10.3/epub-proof/v101-chart-waste-pathways-768.png",
+    "docs/v0.10.3/epub-proof/ch15-soil-food-web-768.png",
+    "docs/v0.10.3/epub-proof/v101-scene-living-soil-768.png",
+    "docs/v0.10.3/epub-proof/ch17-algae-loop-768.png",
+    "docs/v0.10.3/epub-proof/v101-scene-shared-workshop-768.png",
+    "docs/v0.10.3/epub-proof/v103-narrative-rosa-testimony-768.png",
+    "docs/v0.10.3/epub-proof/v103-service-ledger-768.png",
+    "docs/v0.10.3/epub-proof/appd-precedent-timeline-768.png",
+    "docs/v0.10.3/epub-proof/v103-offline-check-768.png",
+    "docs/v0.10.3/epub-proof/v103-first-year-index-768.png"
+  ],
+  "screenshot_representatives": [
+    "appd-precedent-timeline.svg",
+    "ch12-csa-network.svg",
+    "ch13-shell-architecture.svg",
+    "ch14-logistic-shockwave.svg",
+    "ch15-soil-food-web.svg",
+    "ch17-algae-loop.svg",
+    "intro-nine-stages.svg",
+    "v101-chart-data-centre-demand.svg",
+    "v101-chart-waste-pathways.svg",
+    "v101-chart-weights-memory.svg",
+    "v101-cutout-atlas.png",
+    "v101-cutout-printer.png",
+    "v101-cutout-spot.png",
+    "v101-scene-food-delivery.svg",
+    "v101-scene-living-soil.svg",
+    "v101-scene-shared-workshop.svg",
+    "v103-first-year-index.svg",
+    "v103-narrative-bear-flag.png",
+    "v103-narrative-near-end.png",
+    "v103-narrative-passing-beans.png",
+    "v103-narrative-rosa-testimony.png",
+    "v103-offline-check.svg",
+    "v103-reading-routes.svg",
+    "v103-service-ledger.svg"
+  ],
+  "new_art_screenshot_widths": [
+    390,
+    768
+  ],
+  "added_registry_assets": [
+    "v103-first-year-index.svg",
+    "v103-narrative-bear-flag.png",
+    "v103-narrative-near-end.png",
+    "v103-narrative-passing-beans.png",
+    "v103-narrative-rosa-testimony.png",
+    "v103-offline-check.svg",
+    "v103-reading-routes.svg",
+    "v103-service-ledger.svg"
+  ],
+  "comparison_edition": "0.10.2",
+  "negative_controls": [
+    "actual EPUB figure given 150vw width and left float"
+  ],
+  "limits": "Chrome reflow of packaged XHTML/CSS; not dedicated EPUB-reader pagination or physical-device acceptance."
+}

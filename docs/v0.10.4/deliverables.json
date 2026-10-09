@@ -1,0 +1,113 @@
+{
+  "version": "0.10.4",
+  "finalized_utc": "2026-09-30T04:42:29.307024+00:00",
+  "baseline_version": "0.10.3",
+  "source_commit": "3d29215b54feaa43b4c22e5283ab642833457a07",
+  "source_uncommitted": true,
+  "status": "Final local digital edition; no commit or external publication",
+  "source_files_sha256": {
+    "book.json": "564ff89f1095c8bdbf5f1645f51c30046e1712f72ed4886bf8df8000519b4fc3",
+    "02-introduction.md": "8d0292f4174c13a8f5af41b8018051618fe9838d88196b922694908ce94ecf0d",
+    "01-preface.md": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+    "31-how-to-use.md": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+    "00-chapter0.md": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+    "part1-divider.md": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+    "03-chapter1.md": "9916db2c37a5a665fe82ca051a7992b44e9f2d40fb35b922c5a682ccaa125d4a",
+    "04-chapter2.md": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+    "05-chapter3.md": "4bdc3e8c7f7e75dca3f40366d870d8bed618d612bf6ba146fe161643a296d304",
+    "06-chapter4.md": "effaaa6d8af9e47826ec930e4f4edc7dbd41da10ae12a78c5c6eff38a35da979",
+    "07-chapter5.md": "77a81d1b8c6c9d2e57ccff4ca80e0c88799ed06ea10f39c061f8006f9a268186",
+    "part2-divider.md": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a",
+    "08-chapter6.md": "ff7e636984d88f0f55ca29171459e2531a5d1b9125c08a90cf68c100852a1a79",
+    "09-chapter7.md": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+    "10-chapter8.md": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+    "11-chapter9.md": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+    "part3-divider.md": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e",
+    "12-chapter10.md": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+    "13-chapter11.md": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+    "14-chapter12.md": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+    "15-chapter13.md": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+    "16-chapter14.md": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+    "17-chapter15.md": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+    "18-chapter16.md": "3b57218536ba9143187ae52131c4b96e00941d368e0c15b2abe953df0d974788",
+    "19-chapter17.md": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+    "20-chapter18.md": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+    "27-chapter19.md": "2da9717a4cfcca2ed6a3d341b92b6e80a48c2c468d5123aacfac32da9d628359",
+    "21-conclusion.md": "cb17a1207e15f158776f3790ffdfc223b3653a80a3c394e0c338cd9b3f3429bf",
+    "22-appendix-a.md": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+    "23-appendix-b.md": "e125bdbef72c4741849841c1e2dfafb38d23ea773224431a0183ebfb3ebd5eb7",
+    "24-appendix-c.md": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+    "25-appendix-d.md": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069",
+    "26-appendix-e.md": "fe4d080c0c9a62e99d81a1aa975b56afefa619057219bbd980855b460be53793",
+    "28-appendix-f.md": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4",
+    "29-appendix-g.md": "d67719a313518aa6fd41a7cb1464c9dd8dcd236ab14a3a35ad7e214cd460f63a",
+    "30-appendix-h.md": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44"
+  },
+  "sections": 35,
+  "images": 110,
+  "editorial_edits": 18,
+  "changed_sections": 16,
+  "added_graphics": 0,
+  "registered_figures": 62,
+  "outputs": [
+    {
+      "kind": "reading",
+      "path": "book-build/Surviving-the-Singularity-v0.10.4.pdf",
+      "bytes": 42515518,
+      "sha256": "4c6b8b0d034d35824d26a20a692a9d450810af380b2c43f376d52e19fd2c931d",
+      "pages": 411
+    },
+    {
+      "kind": "print-interior",
+      "path": "book-build/Surviving-the-Singularity-v0.10.4-print-interior.pdf",
+      "bytes": 12409143,
+      "sha256": "b851d95654cc67bfa72be5f83568980c7dcca38bff08e1fb026fa3ba69973329",
+      "pages": 410
+    },
+    {
+      "kind": "front-cover",
+      "path": "book-build/Surviving-the-Singularity-v0.10.4-front-cover.pdf",
+      "bytes": 4060297,
+      "sha256": "d6be441aa68e49733f2e8d27d685ac1e246d3826d28877c78e129a76f29e593b",
+      "pages": 1
+    },
+    {
+      "kind": "epub",
+      "path": "book-build/Surviving-the-Singularity-v0.10.4.epub",
+      "bytes": 41851412,
+      "sha256": "780a29d0ab73b5cefcc7eae2faa4a9a34a9ed9a902f67efcf252bd9742fae97c"
+    },
+    {
+      "kind": "markdown",
+      "path": "manuscript/Surviving-the-Singularity-v0.10.4.md",
+      "bytes": 639376,
+      "sha256": "f46574b2477e1a0a26a363393aca985abf14dd60ae0397ae3931a59ee90f911d"
+    },
+    {
+      "kind": "editable_package",
+      "path": "publication/output/Surviving-the-Singularity-v0.10.4-editable-publication.zip",
+      "bytes": 139033750,
+      "sha256": "bd4454e27ec046339fe092034af0b5cf5ecedc7772fde82926cee2caf12f13d5"
+    }
+  ],
+  "proof_receipts": {
+    "opening-review.json": "c0c729a54a93b733d00117b93ec5af0bf1529de16a1a7770e59e5680acc89cce",
+    "middle-review.json": "244b57fe974886a93b471374628e0c1e136c6beb67c6aadc4f81a56fa58ad936",
+    "ending-review.json": "43e0885ea45e59bcad638036f711c42e100ffa37e698bd757e6e255093210841",
+    "source-checks.json": "b877f64f4c7e2d566e02b7ec517b20b177c59ce3820c8433134e2979b212c321",
+    "index-review.json": "89502f0397170ac6707368a1274d43c7158f8b4c0d838c82b5e39550f58be441",
+    "gate-results.json": "a54543a805d3de3f076c65c1d5183a44995deb2b70acb8d46b56e0c9e2c55ee6",
+    "epub-checks.json": "983f6d22e77b3e4015a01123f5a940466761357a067a4d3b2d57747428a07f5e",
+    "epub-proof/checks.json": "19100d4f63e063fcba7f7f85b13fb654e2abec38860df8c2df035dad6ebfb6ef",
+    "epub-proof/visual-review-receipt.json": "30cad3714c8f3f98e3a9c2fadc4f67849cb0b88129369b3b8b5907943123e01f",
+    "reader-proof/reader-smoke.json": "d2a2c56dbc844461c91a65e5e6edc3ca0434509720d1fbe264bde94e0a5249b2",
+    "reader-proof/scene-details.json": "1abc1018c965052e5ea977637a9aeb351166258cae8b9ead4775eaa796c03aa9",
+    "reader-proof/review.json": "7cc1529b7a254db4674353c64233d343f41dd8f1cc2f5019419cf084eb2b5af2",
+    "package-negative-controls.json": "55e9fd3e71962c6f02bbca752f8fdd5bc3883be44dab58298e69d041b6160039",
+    "pdf-proof/final-samples.json": "4efc109828f180695fe4801435708d2b1e80eccf5188c3c951113b9e57562b87",
+    "pdf-proof/final-review.json": "609bee1d6fc32646e6bd42132595b1b09daa277c86bcf6f07625ef81bff30690"
+  },
+  "publication_pdf_proof_sha256": "6bf765bbe1677e53d35b96f96a30380dbb83fdf64755ac84a8da03c740f9c880",
+  "publication_resource_proof_sha256": "a859e40e3483a3ee9b0f7ed9dc838bedf761bbb642114bf1cad9c3bf7bdb5715",
+  "limits": "Complete editorial reread with 18 recorded edits and local digital proofs. Preserves prior artwork and deliveries. Does not recertify inherited external claims, cover or quotation decisions, physical printing or dedicated e-reader pagination."
+}

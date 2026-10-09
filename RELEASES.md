@@ -3,9 +3,95 @@
 Ledger of built book artifacts. `book.json` holds the version the source
 currently claims; this file records which build is the one to hand someone.
 
+**Current source: v0.11.0**, October 7, 2026. Five of the 35 sections change. The Introduction uses and defines the title phrase. Chapter 6 adds "Whose robots?". Chapter 19 adds "Get involved". The Conclusion introduces solarpunk and changes the closing call. Appendix B adds seven source records. The landing page was revised to match. All 24 precedents remain; the source is 99,172 words by `sts.py book`.
+
+Reading PDF: 416 pages, 42.5 MB. Print interior: 416 pages, including its blank final verso. See [edition notes](docs/v0.11.0/EDITION-NOTES.md), [source changes](docs/v0.11.0/source-changes.diff), [delivery hashes](docs/v0.11.0/deliverables.json), [PDF review](docs/v0.11.0/pdf-proof/FINAL-PDF-REVIEW.md) and [EPUB review](docs/v0.11.0/EPUB-REVIEW.md). Public downloads remain v0.7.5. The reading PDF is over the 25 MiB per-file limit that `check-book-downloads` warns about, so it cannot ship from `static/downloads/` as built.
+
+**Where the editions live, as of October 8, 2026.** Every edition from v0.7.3 to v0.11.0 is committed and pushed as its own branch (`v0.7.3`, then `book-v0.8.0` through `book-v0.11.0`); v0.11.0 is commit `f5835e2`. `release/v0.11.0` joins v0.11.0 with `main` as the candidate for going live. The built files for every edition are in the [book archive release](https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-archive-2026-10-08), and `docs/uploads/2026-10-08/SOURCE-PROVENANCE.md` on `archive/book-files-2026-10-08` lists the source commit for each. Entries below that say "no commit or external release was made" describe the day they were written.
+
+## Previous finalized local edition: v0.10.4
+
+**Previous local source: v0.10.4**, September 29, 2026. A complete editorial reread led to 18 small revisions in 16 sections: clearer transitions, less repetition, more workable exercises and repaired continuity. All scenes, citations, 24 precedents, 110 image references and 62 registered figures remain.
+
+Reading PDF: 411 pages. Print interior: 410 pages, with no added final verso. See [gentle critique](docs/v0.10.4/CRITIQUE.md), [edition notes](docs/v0.10.4/EDITION-NOTES.md), [delivery hashes](docs/v0.10.4/deliverables.json), [PDF review](docs/v0.10.4/pdf-proof/FINAL-PDF-REVIEW.md), [EPUB review](docs/v0.10.4/EPUB-REVIEW.md) and [reader review](docs/v0.10.4/READER-REVIEW.md). Public downloads remain v0.7.5; no commit or external release was made.
+
+## Previous finalized local edition: v0.10.3
+
+**Previous local source: v0.10.3**, September 28, 2026. Eight additional graphics: four narrative illustrations and four practical diagrams. Five publication refinements improve chapter openings, figure placement, heading hierarchy and credits. Existing prose, all 35 sections and all 24 precedents remain. Image references increase from 102 to 110.
+
+Reading PDF: 408 pages. Print interior: 407 content pages plus a blank verso. See [edition notes](docs/v0.10.3/EDITION-NOTES.md), [delivery hashes](docs/v0.10.3/deliverables.json), [PDF review](docs/v0.10.3/pdf-proof/FINAL-PDF-REVIEW.md), [EPUB review](docs/v0.10.3/EPUB-REVIEW.md) and [reader review](docs/v0.10.3/READER-REVIEW.md). Public downloads remain v0.7.5; no commit or external release was made.
+
+## Previous finalized local edition: v0.10.2
+
+**Previous local source: v0.10.2**, September 28, 2026. Complete reread of all 35 sections, corrections in 28, 31 revised diagrams, reader focus/navigation fixes and a repaired stable paragraph index. All 102 image references and 24 precedents remain.
+
+The reading PDF has 408 pages; the grayscale interior has 407 content pages plus an empty final verso. PDF text/layout/resources, EPUB and reader checks pass in their recorded scopes. See [edition notes](docs/v0.10.2/EDITION-NOTES.md), [deliveries and checksums](docs/v0.10.2/deliverables.json), [PDF review](docs/v0.10.2/pdf-proof/FINAL-PDF-REVIEW.md), [EPUB review](docs/v0.10.2/EPUB-REVIEW.md), and [reader review](docs/v0.10.2/READER-REVIEW.md). Public downloads remain v0.7.5; no commit or external release was made.
+
+## Previous finalized local edition: v0.10.1
+
+**Previous local source: v0.10.1**, the visual expansion of v0.10.0,
+September 28, 2026. The edition adds 23 figures: six photo-derived cutouts,
+eight charts and worksheets, six conceptual SVGs, and three Three.js scenes
+with static illustrations for PDF and EPUB. All 35 source sections remain.
+See the [edition notes](docs/v0.10.1/EDITION-NOTES.md) and the
+[SHA-verified source comparison](docs/v0.10.1/SOURCE-PRESERVATION.md).
+
+**Local digital verification passed.** The reading PDF has 394 pages;
+the grayscale print interior has 393 content pages and one blank final verso.
+PDF source coverage, figure geometry, embedded fonts, links and grayscale
+text preservation passed. EPUB contains all 35 sections and 102 images.
+See [delivery files and checksums](docs/v0.10.1/deliverables.json),
+[PDF review](docs/v0.10.1/pdf-proof/FINAL-PDF-REVIEW.md),
+[EPUB review](docs/v0.10.1/EPUB-REVIEW.md), and
+[reader review](docs/v0.10.1/READER-FINAL-REVIEW.md). The public-download
+release remains v0.7.5. No commit, deployment, public-download swap, or
+publisher submission has been made for this edition.
+
 ---
 
-## Latest build: v0.7.4 — the canned music build
+## Previous finalized local edition: v0.10.0
+
+**Local edition: v0.10.0**, finalized September 27, 2026 from v0.9.2.
+All 35 canonical sections were reviewed. The source contains 95,052 words by
+`sts book --json` and all 24 precedents. It includes corrected claims and
+continuity, five redrawn diagrams, synchronized artwork metadata, and a
+complete bibliography for this review's new references.
+
+The versioned reading PDF, grayscale print interior, EPUB, compiled Markdown,
+and editable publication package are listed with SHA-256 hashes in
+[deliverables.json](docs/v0.10.0/deliverables.json). See the
+[edition notes](docs/v0.10.0/EDITION-NOTES.md) for review coverage, verification,
+and remaining external-release decisions.
+
+This is a local finalized edition. The `released` value and existing public
+download aliases still identify v0.7.5. Nothing has been committed, merged,
+deployed, or submitted to a publisher. Historical build records below are
+preserved as records of their dates, not current source instructions.
+
+---
+
+## Previous public-download build: v0.7.5 — the citation audit build
+
+| | |
+|---|---|
+| **Version** | `0.7.5` |
+| **Built** | 2026-08-03 21:14 |
+| **From commit** | `ffed5fc`, the head of the v0.7.5 cycle: the reading-rage plate and the measured plate builder (`build_book_plate.py`), the dead-file cleanup (`15b167c`), and the P-11/P-12/P-13 citation audit with its Appendix B corrections of record (sources 207-215) |
+| **Sections** | 30 |
+| **Pages** | 293 (v0.7.4 was 289) |
+| **Words** | 92,778 by the block index |
+| **Precedents** | 23, sixteen now verified against primary sources |
+| **Formats** | PDF 22.38 MiB · EPUB 21.14 MiB |
+
+**What changed from v0.7.4.** Precedent P-01 gained the reading-rage figure, and the
+figure-plate layout became a checked artifact instead of a convention held by eye.
+The citation audit cut two inherited claims (Bernays as "inventor of the phrase
+'public relations,'" the Trithemius monks-abandoned-copying line), replaced one
+unattested quote with the documented translation, and recorded the corrections in
+Appendix B. The research bundle zip still carries a v0.7.4 convenience copy of the
+book; it is versioned separately and rebuilds on its own pass.
+
+## Previous build: v0.7.4 — the canned music build
 
 | | |
 |---|---|

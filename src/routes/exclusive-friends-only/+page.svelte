@@ -5,9 +5,15 @@
   import { isValidFriendsPassword } from '$lib/bookAccessCode.js';
   import { bookUnlocked } from '$lib/stores/bookAccess.js';
   import BookCover from '$lib/components/BookCover.svelte';
+  import { offer } from '$lib/offer';
+  import { downloadHref, releasedVersion } from '$lib/bookManifest.js';
 
-  const pdfHref = `/downloads/Surviving-the-Singularity-v${book.version}.pdf`;
-  const epubHref = `/downloads/Surviving-the-Singularity-v${book.version}.epub`;
+  // Downloads derive from the RELEASED build, never the open working version:
+  // mid-cycle those differ, and a version-derived href is the 404 this page
+  // shipped once already.
+  const released = releasedVersion(book);
+  const pdfHref = downloadHref(released, 'pdf');
+  const epubHref = downloadHref(released, 'epub');
 
   let password = '';
   let formError = '';
@@ -117,7 +123,7 @@
       </button>
       <p class="gate-hint">
         No code? The public door is <a href="/early-access" class="gate-hint-link">right here</a>
-        for $5, and it's worth it.
+        for {offer.price}, and it's worth it.
       </p>
     </form>
   </main>
@@ -198,7 +204,7 @@
       <p class="section-label">It's also a file</p>
       <h2 class="read-title">Take the current draft with you.</h2>
       <p class="read-sub">
-        The same v{book.version} text you just read, as a file you own. Keep it, print it,
+        The latest built edition, v{released}, as a file you own. Keep it, print it,
         put it on an e-reader, send it to somebody. It's a draft, so it'll be replaced by a
         newer one, but this copy is yours.
       </p>
@@ -231,7 +237,7 @@
       <p class="closing-text">
         Pass the code along to anyone you'd actually want in the room. If you'd rather send
         someone through the front door, <a href="/early-access" class="closing-link">early access</a>
-        is $5 and it helps the book get finished.
+        is {offer.price} and it helps the book get finished.
       </p>
       <p class="closing-note">
         Commentary and informational only. Not professional advice of any kind. See the

@@ -1,0 +1,456 @@
+{
+  "pages": 392,
+  "page_size_points": [
+    [
+      432.0,
+      648.0
+    ]
+  ],
+  "source_sections_unchanged": 35,
+  "manifest_unchanged": true,
+  "sections_present": 35,
+  "source_text_blocks_checked": 2524,
+  "missing_text_blocks": [],
+  "documented_caption_exceptions": [],
+  "text_outside_page": [],
+  "fonts_embedded": {
+    "/SHNHDX+BookSans": true,
+    "/KHEPKV+BookSerif": true,
+    "/MKCUTK+BookSans-Semi-Bold": true,
+    "/TLUGJV+BookSerif-Semi-Bold": true,
+    "/HRFTZU+BookSerif-Italic": true,
+    "/FSDAEI+JetBrains-Mono-Semi-Bold": true,
+    "/DAAMAH+JetBrains-Mono": true,
+    "/OCCJPU+BookSans-Italic": true,
+    "/CFDMQT+Arial-Bold": true,
+    "/HHHHIV+Arial": true
+  },
+  "broken_internal_links": [],
+  "registered_figures": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "page": 7,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        2.13
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-forecast-shift.svg",
+      "page": 53,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.263
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-local-copies.svg",
+      "page": 64,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.5529999999999995
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-rocket.png",
+      "page": 73,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        2.13
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-sun.png",
+      "page": 90,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        1.3569134840218238
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-data-centre-demand.svg",
+      "page": 92,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.338999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-income-food-access.svg",
+      "page": 111,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.788
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-access-gate.svg",
+      "page": 113,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.2110000000000003
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-attention-ribbon.svg",
+      "page": 147,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.344
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-printer.png",
+      "page": 163,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        1.5927027027027025
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-ammonia-energy.svg",
+      "page": 164,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.623999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-food-delivery.svg",
+      "page": 170,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7999999999999994
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-spot.png",
+      "page": 197,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        0.9466666666666667
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-operating-stack.svg",
+      "page": 198,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.771499999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-weights-memory.svg",
+      "page": 200,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.414999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-land-values.svg",
+      "page": 212,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.358
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-shared-land.svg",
+      "page": 213,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7905
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-waste-pathways.svg",
+      "page": 243,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.403
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "page": 259,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.8000000000000003
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-shared-workshop.svg",
+      "page": 287,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.8000000000000003
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-continuity-calendar.svg",
+      "page": 296,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.6479999999999997
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-meal-response.svg",
+      "page": 304,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.422
+      ],
+      "caption_same_page": true
+    }
+  ],
+  "figure_layout_errors": [
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-atlas.png",
+      "page": 7,
+      "rect": [
+        378.24,
+        357.0254817708333,
+        64.3701171875,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-atlas.png",
+      "page": 7,
+      "rect": [
+        442.6101171875,
+        357.0254817708333,
+        2.666015625,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-rocket.png",
+      "page": 73,
+      "rect": [
+        76.80000000000001,
+        468.91881510416664,
+        131.4990234375,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-sun.png",
+      "page": 90,
+      "rect": [
+        61.44,
+        301.8376527994284,
+        30.0458984375,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-printer.png",
+      "page": 163,
+      "rect": [
+        378.24,
+        292.11160789695947,
+        23.4755859375,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-printer.png",
+      "page": 163,
+      "rect": [
+        401.7155859375,
+        292.11160789695947,
+        52.48828125,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-printer.png",
+      "page": 163,
+      "rect": [
+        454.2038671875,
+        292.11160789695947,
+        4.798828125,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-printer.png",
+      "page": 163,
+      "rect": [
+        459.0026953125,
+        292.11160789695947,
+        40.6025390625,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-printer.png",
+      "page": 163,
+      "rect": [
+        499.605234375,
+        292.11160789695947,
+        2.666015625,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-spot.png",
+      "page": 197,
+      "rect": [
+        76.80000000000001,
+        493.82548177083316,
+        54.5322265625,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-spot.png",
+      "page": 197,
+      "rect": [
+        131.3322265625,
+        493.82548177083316,
+        2.666015625,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "figure outside content area",
+      "file": "v101-cutout-tools.png",
+      "page": 278,
+      "rect": [
+        378.24,
+        65.28,
+        136.32,
+        47.67999999999999
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-tools.png",
+      "page": 278,
+      "rect": [
+        378.24,
+        98.69909505208334,
+        52.701171875,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-tools.png",
+      "page": 278,
+      "rect": [
+        430.941171875,
+        98.69909505208334,
+        4.798828125,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-tools.png",
+      "page": 278,
+      "rect": [
+        435.74,
+        98.69909505208334,
+        40.6025390625,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "image or caption outside figure",
+      "file": "v101-cutout-tools.png",
+      "page": 278,
+      "rect": [
+        476.3425390625,
+        98.69909505208334,
+        2.666015625,
+        15.1884765625
+      ]
+    },
+    {
+      "issue": "figure absent or split across pages",
+      "file": "v101-cutout-tools.png",
+      "pages": [
+        277,
+        278
+      ]
+    }
+  ],
+  "figure_negative_controls": [
+    "figure shifted into gutter",
+    "prose moved into figure",
+    "caption clipped by figure",
+    "missing caption text",
+    "missing rendered figure",
+    "diagram/cutout shrunk",
+    "caption moved to a second page",
+    "missing HTML figure marker"
+  ],
+  "missing_assets": [],
+  "negative_controls": [
+    "absent text",
+    "removed known paragraph",
+    "middle third cut from a paragraph",
+    "outside-page rectangle",
+    "absent destination"
+  ],
+  "limits": "Does not establish legal clearance, vendor acceptance, factual accuracy or visual quality. Contact sheets and full-size samples are reviewed separately."
+}

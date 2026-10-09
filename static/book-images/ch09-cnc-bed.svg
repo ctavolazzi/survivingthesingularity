@@ -1,51 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  <defs>
-    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
-    </marker>
-  </defs>
-
-  <rect x="1" y="1" width="858" height="518" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE CNC AUTONOMOUS BED</text>
-  <text x="40" y="74" font-size="12" fill="#64748b">FarmBot-style gantry over a dense coordinate-planted bed</text>
-  <line x1="40" y1="88" x2="360" y2="88" stroke="#1e293b" stroke-width="2"/>
-
-  <!-- bed frame -->
-  <rect x="110" y="150" width="640" height="280" rx="6" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-
-  <!-- X rails -->
-  <rect x="110" y="150" width="640" height="14" fill="#1e293b"/>
-  <rect x="110" y="416" width="640" height="14" fill="#1e293b"/>
-  <text x="430" y="140" font-size="12" fill="#3b82f6" text-anchor="middle">gantry travels the X-axis on V-slot rails →</text>
-
-  <!-- gantry beam (Y) -->
-  <rect x="430" y="150" width="16" height="280" fill="#f59e0b" opacity="0.9"/>
-  <!-- tool head -->
-  <rect x="414" y="270" width="48" height="40" rx="5" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
-  <text x="438" y="295" font-size="11" fill="#f59e0b" text-anchor="middle">Z</text>
-  <line x1="438" y1="310" x2="438" y2="336" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
-  <text x="512" y="250" font-size="11" fill="#94a3b8" text-anchor="middle">tool head (Z-axis):</text>
-  <text x="512" y="266" font-size="11" fill="#94a3b8" text-anchor="middle">seed · water · weed</text>
-
-  <!-- plant coordinates -->
-  <g text-anchor="middle">
-    <circle cx="200" cy="230" r="14" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
-    <text x="200" y="264" font-size="11" fill="#f1f5f9">carrot</text>
-    <text x="200" y="280" font-size="10" fill="#64748b">(120, 80)</text>
-
-    <circle cx="300" cy="360" r="14" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
-    <text x="300" y="394" font-size="11" fill="#f1f5f9">lettuce</text>
-    <text x="300" y="410" font-size="10" fill="#64748b">(240, 200)</text>
-
-    <circle cx="560" cy="220" r="14" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
-    <text x="560" y="254" font-size="11" fill="#f1f5f9">radish</text>
-    <text x="560" y="270" font-size="10" fill="#64748b">(360, 70)</text>
-
-    <circle cx="670" cy="360" r="14" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
-    <text x="670" y="394" font-size="11" fill="#f1f5f9">clover cover</text>
-    <text x="670" y="410" font-size="10" fill="#64748b">(480, 200)</text>
-  </g>
-
-  <text x="430" y="470" font-size="13" fill="#f1f5f9" text-anchor="middle">every plant is an X-Y coordinate; no walking paths, no wasted bed</text>
-  <text x="430" y="496" font-size="12" fill="#64748b" text-anchor="middle">tool heads: vacuum seed injector · root-dose nozzle · OpenCV rotary weeder</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 610" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">TOOLS OVER A GROWING BED</title>
+<desc id="desc">Top-view concept of a growing bed with horizontal X travel, a gantry with Y travel across it, and a Z tool moving toward a plant. Generic tools seed, water or weed. Reduced walking space does not remove human inspection, maintenance and harvest, and this is not a model-specific build plan.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">TOOLS OVER A GROWING BED</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">A generic gantry concept, viewed from above.</text>
+<text x="240" y="107" font-size="14" fill="#f59e0b" text-anchor="middle" font-weight="400">X travel</text>
+<path d="M74 124L408 124" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M402 120L408 124L402 128" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="52" y="148" width="356" height="202" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<path d="M45 154L415 154" fill="none" stroke="#f1f5f9" stroke-width="3"/>
+<path d="M45 344L415 344" fill="none" stroke="#f1f5f9" stroke-width="3"/>
+<path d="M101 215V196M101 205Q82 204 87 193Q100 192 101 205M101 199Q104 184 118 190Q117 202 101 199" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M166 215V196M166 205Q147 204 152 193Q165 192 166 205M166 199Q169 184 183 190Q182 202 166 199" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M330 215V196M330 205Q311 204 316 193Q329 192 330 205M330 199Q333 184 347 190Q346 202 330 199" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M101 313V294M101 303Q82 302 87 291Q100 290 101 303M101 297Q104 282 118 288Q117 300 101 297" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M166 313V294M166 303Q147 302 152 291Q165 290 166 303M166 297Q169 282 183 288Q182 300 166 297" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M330 313V294M330 303Q311 302 316 291Q329 290 330 303M330 297Q333 282 347 288Q346 300 330 297" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M232 144V353M258 144V353" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="222" y="231" width="46" height="31" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<circle cx="245" cy="247" r="7" fill="none" stroke="#f1f5f9" stroke-width="1.5"/>
+<path d="M241 243L249 251M249 243L241 251" fill="none" stroke="#f1f5f9" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M274 247L282 247" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="290" y="252" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Z</text>
+<path d="M434 162L434 333" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M430 327L434 333L438 327" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="446" y="252" font-size="14" fill="#f59e0b" text-anchor="start" font-weight="400">Y</text>
+<text x="20" y="390" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">X: move the gantry along the bed.</text>
+<text x="20" y="412" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Y: move the carriage across the gantry.</text>
+<text x="20" y="434" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Z: crossed circle = down into the bed.</text>
+<path d="M20 462L460 462" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="482" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Model-specific tools seed, water or weed.</text>
+<text x="20" y="503" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">A gantry can reduce walking space in a bed.</text>
+<text x="20" y="524" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">People still inspect, maintain and harvest.</text>
+<text x="20" y="545" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Concept only; no machine version is implied.</text>
 </svg>

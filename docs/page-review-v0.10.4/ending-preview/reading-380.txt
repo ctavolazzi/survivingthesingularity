@@ -1,0 +1,36 @@
+All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates
+and complete titles are in Appendix D.
+Twenty-fourprecedents
+1700
+1800
+1900
+2025
+P-01Readingrage
+P-20Paine’spamphlet
+P-07Horse+ledger
+P-09Frame-breakers
+P-15Homesteading
+P-04RedFlag
+P-02Bellatthefair
+P-03Flightforecast
+P-16Mail-orderhomes
+P-11Torches
+P-10Recordedmusic
+P-23NHS
+P-19Victorygardens
+P-14Quartzwatches
+P-21Accesstotools
+P-17Kodak
+P-24Webforecasts
+P-22Y2K
+P-18Fujifilm
+Dots:onedate.Dashed:approximateperiod.
+EARLIERCASES
+P-08Graintrap c.9500–6000BC
+P-12Bronzenetworks 14th–12thc.BC
+P-05Mingvoyages 1405–1433
+P-13Abbot+press 1492–1494
+P-06Copernicus 1543
+Fullnamesanddates:AppendixD.
+APPENDIX D
+375

@@ -1,5 +1,14 @@
 # AUDITOR BRIEF — Surviving the Singularity (book)
 
+Current local source edition: **v0.11.0**, an editorial revision of v0.10.4. Start with [edition notes](docs/v0.11.0/EDITION-NOTES.md), [source preservation](docs/v0.11.0/source-preservation.json), and [production instructions](publication/README.md). Five canonical sections add the title definition, ownership, participation, solarpunk, and source notes. The moral call is revised; all other original blocks and artwork remain. There are 110 image references, 62 registered figures, 35 sections and 24 precedents. Older counts and checks describe their dated editions.
+
+The source and `book.json` remain authoritative; `released` still records
+v0.7.5. Previous worktrees and deliveries are preserved. No commit, merge,
+deployment, or publisher submission is authorized by this document.
+Prior version-specific instructions below are historical. Do not use their
+stale branch, section counts, or commit/push instructions as current
+authorization.
+
 Continuation prompt for any agent auditing or editing this book. Read this file
 FIRST, in full. It replaces repo spelunking: everything below was verified on
 2026-07-19 at book v0.5.2. If you change the system (tools, paths, conventions,
@@ -24,7 +33,7 @@ each pass actually needs.
 |---|---|
 | Repo | `~/Code/active/survivingthesingularity` (SvelteKit site + book) |
 | Book source (ONLY truth) | `src/lib/data/book/*.md`, order + version in `book.json` |
-| Current version | book.json `version` (v0.6.2 as of this writing, LIVE on main and prod). NEVER trust version strings in docs or filenames over book.json |
+| Current version | book.json `version` (v0.7.5 as of this writing, in the `sts-v0.7.3` worktree and NOT on main or prod; main/prod still serve the v0.7.4 build). NEVER trust version strings in docs or filenames over book.json |
 | Structure | 30 sections: intro, preface, ch0, 3 part dividers, ch1-18, conclusion, appendices A-E. Order: Introduction BEFORE Preface (deliberate) |
 | Stale copies (never audit these) | `manuscript/StS-Complete-Draft-v*.md`, Desktop PDFs, `manuscript/drafts/` |
 | Figures | `static/book-images/*.svg` (33 hand-authored) + `part{1,2,3}-divider.png` (pixel art) + photo headers. Referenced as `![alt](/book-images/…)` + italic caption line |

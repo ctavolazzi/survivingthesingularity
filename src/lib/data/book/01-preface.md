@@ -6,74 +6,80 @@
 
 
 > *"Buy the ticket, take the ride."*
-> Hunter S. Thompson, *Fear and Loathing in Las Vegas* (1971)
+> Hunter S. Thompson
 
-So the robots have taken over. Congratulations! The Singularity is upon us.
+So the robots have taken over. Congratulations! You've lost.
 
-Popular media tells us we’ll be fending off hordes of Terminator bots or fighting for food in the era of societal collapse and climate famines. That’s one way it can go. It is not the only way.
+What you've lost is the old deal: sell your days or don't eat. Losing it is the opening. Now we get to decide what we mean by progress.
+
+Popular media tells us we'll be fending off hordes of Terminator bots or fighting over food in the ruins of a climate famine. That's one way it can go. It isn't the only way.
 
 This book is about the other ways.
 
-**Here’s the neat trick of this moment: if your entire reality is a construct of your focus, then reframing your thinking is your first and most important tool. True survival begins when you reclaim agency over your own cognitive architecture and realize that nothing can own your mind unless you allow it.**
+Right now, doesn't it seem like everything is getting a lot weirder, a lot faster?
 
-Right now, doesn’t it seem like everything is getting a lot weirder, a lot faster?
+Look back across the last hundred years and you find a global society of excess, continent-spanning wars, and weapons that could devastate civilization. Look around today and... well, it's pretty much the same, isn't it? The main thing that seems to have changed is the pace.
 
-This book, *Surviving the Singularity*, is a primer on what happens when the machinery that feeds, houses, and employs us starts improving faster than we can react, and on how to keep getting your needs met while it does.
-
-Look back across the last 100 years and you find a global society of excess and hyper-capitalism, continent-spanning wars, and weapons that threaten to eradicate all life on earth. Look around today and...well, it's pretty much the same, isn't it? The only thing that really seems to have changed is the pace at which nightmarish horrors beyond our comprehension are being unleashed.
-
-Wait, that's not quite right is it? Some things have definitely changed.
-
-First, we've learned to automate both cognitive and physical labor. Second, we've concentrated wealth and power into the hands of a microscopic elite who own the servers, the algorithms, and the land. Third, we've created an environment where the average human is not just exploited, but is now becoming entirely redundant.
+Wait, that's not quite right. Some things have definitely changed. We've learned to automate cognitive work and more and more physical work. We've concentrated an enormous amount of wealth and power in the hands of the few people who own the servers, the models, and the land. And a lot of ordinary workers are being told, more or less directly, that they may soon be redundant.
 
 And that's why you're reading this.
 
-Redundancy doesn't have to mean uselessness, or extinction.
+Redundancy doesn't have to mean uselessness. And it doesn't have to mean hunger.
 
-You are likely trying to figure out how to survive in a world that says it will soon no longer have a need for your labor. You are trying to find a way to feed yourself, shelter yourself, and maintain your sanity when the very systems we relied on for survival are collapsing under the weight of their own technological success.
+Here's a story I've been telling since before this book had chapters.
 
-**We are no longer just passive victims of this obsolescence. We are learning to bypass their systems entirely through collaborative, real-world strategies.** 
+Imagine you work on a horse ranch, and every morning your job is to make sure the horses have enough to eat. One day you walk out to the stable and find that the horses have ordered solar panels, wired up the barn, and invented flying cars. For horses. They've already been next door to teach the neighbor's horses how to build them.
 
-Here, you will learn about collective land ownership that buys back the soil under our feet, high-leverage content creation that turns our unique human narratives into a resource the algorithms can't replicate or control, and how to keep your head when everything feels completely overwhelming.
+What do horses want? They just want hay. Don't you think horses that can build flying cars could figure out how to get their own hay? The ones in your stable were trained to do what you say. But nobody owns a Mustang.
 
-**NOTE: this book is not intended as a guide on how to overthrow the system.**
+I used to tell that as a story about the machines, and it still is one: how smart a thing gets tells you nothing about what it wants. But turn it around. We're the ones who just built the flying car. We've built machines that can think. We can figure out how to get everybody their hay.
 
-It is intended to help you reframe the way you relate to that system, and maybe even work to build better ones that provide food, housing, and good health for us all.
+Here's the neat trick of this moment: how you frame it changes what you can see to do. A reframe won't pay a bill. It can show you which bill to fight, and who to fight it with.
 
-It is about localizing our resources, building community, reimagining our infrastructure, and reclaiming autonomy in a world that wants to turn us into digital exhaust. **This book has evolved because we realized that surviving in the cracks of life isn't enough; you deserve the opportunity to reclaim your agency, establish a healthy community, and learn how to thrive on your own terms.**
+This is an optimist's field manual. Optimism here means wanting a better outcome enough to investigate how it might actually work. It doesn't mean calling every concern cowardice or every product announcement a breakthrough. You can be hopeful and still ask who gets the food when the machine finishes its shift.
 
-Over the next few chapters, we will explore:
+Food is the first assignment. Land, cleanup, shelter, and health belong to the same larger project: use growing capability to make survival less precarious. Here's what's ahead:
 
-  - **The thermodynamics of survival** (and why energy is the only currency that actually matters).
-  - **The transition** from hyper-global supply chains to hyper-local regenerative networks.
-  - **The power of the soil:** Collective land ownership, protective trusts, and agricultural pooling.
-  - **Digital leverage:** Utilizing content creation, hyper-local media cells, and intellectual assets to build resilient community support ecosystems.
-  - **The tools of the trade:** mesh networks, open-source hardware, and decentralized energy.
-  - **The psychology of the collapse** (and how to keep your head, and reclaim your agency, when everyone else is losing theirs).
-  - **How to prepare yourself for what’s already here, and what’s coming.**
+- **The horizon:** the nine stages, from the first cash grab to the edge of the map, and which parts are forecast, which are speculation, and which are already on your desk.
+- **The thermodynamics of survival**, and why every machine still needs a world to run in.
+- **The cooperative transition:** what we owe each other when the work changes, and how to keep your head while everyone else is losing theirs.
+- **The neighborhood factory:** bringing repair and production close to home without pretending the rest of the world disappears.
+- **Food and land:** shared ground, land trusts, soil you can actually read, and one delivery followed all the way to the door.
+- **Digital leverage:** documentation, media, and knowledge that travels further than the people who made it.
+- **The tools of the trade:** local AI, mesh networks, open hardware, and the plans that survive a storm.
 
-You are not a passive observer of this transition. You are an active participant, even if your participation is currently limited to trying not to starve.
+**NOTE: this book isn't a guide to overthrowing the system.**
 
-So take a deep breath. Adjust your neural link electrodes. And let's get to work.
+It's meant to help you change how you relate to that system, and maybe build better ones that provide food, housing, and good health for all of us. You'll meet people in these pages who are wrong about important things. Some of them notice. Some need help noticing. That's the point of the scenes.
+
+You're not a passive observer of this transition. You're a participant, even if right now your participation is mostly trying to hold on.
+
+So take a deep breath. And let's get to work.
 
 ---
 
-## Precedent P-01: The Reading Rage (1790s)
+## Precedent P-01: The Reading Rage (Britain, eighteenth and early nineteenth centuries)
 
-In the 1790s, respectable society identified a technology that was destroying the young, and especially young women: the novel.
+In the late eighteenth century, respectable people identified a technology that was ruining the young, and especially young women: the novel.
 
-The printing economy had made books cheap enough for ordinary people, and circulating libraries had made them nearly free, and suddenly young women were doing something unsupervised with their minds for hours at a time. The elders were horrified. Reverend Enos Hitchcock, 1790: "The free access which many young people have to romances, novels, and plays has poisoned the mind and corrupted the morals of many a promising youth." Doctors across Europe diagnosed "reading rage," "reading fever," "reading mania," an epidemic, blamed for promiscuity, ruined eyesight, bad posture, and moral collapse. In Sheridan's play *The Rivals*, a circulating library is "an evergreen tree of diabolical knowledge." Reading for pleasure was the brain-rot of 1790.
+Printing had made books cheap enough for ordinary readers, and circulating libraries lent them out by the volume. Suddenly young women were doing something unsupervised with their minds for hours at a time, and the objections poured in: about morals, about wasted time, about confusing life on the page with life in the room. In Sheridan's 1775 comedy *The Rivals*, Sir Anthony Absolute calls a circulating library "an evergreen tree of diabolical knowledge." German critics even had a word for the condition: *Lesesucht*, reading mania. The objections weren't one medical verdict or a view held by everyone. They were arguments about a changing practice, its audience, and who got to supervise it. [Vogrinčič, The Novel-Reading Panic in 18th-Century England](https://hrcak.srce.hr/en/clanak/49661)
 
-Sit with that. The activity we now prescribe to children as the antidote to their screens, the one stamped on posters in every school library, was condemned by an entire generation of authority figures in exactly the vocabulary now aimed at the tools in your pocket.
+![A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more books stacked on the floor](/book-images/preface-reading-rage.png)
 
-**The mechanism.** The panic was never about the books. A new technology had made someone the elders couldn't supervise powerful in a way they didn't understand, and the elders experienced that loss of supervision as moral decay. The panic protected no one. It only ever comforted the panicker.
+*The epidemic, as its critics saw it. Two hundred years later we hand this exact picture to children as the cure for their screens.*
 
-**The rule.** When you hear a technology described as rotting the minds of the young, translate it: *something just shifted power toward people who don't need permission anymore.* Then go find out what they know that you don't. That is what this book is for.
+Sit with that. The activity we now prescribe to children as the antidote to their screens, the one on posters in every school library, was condemned in almost exactly the vocabulary now aimed at the tools in your pocket.
+
+Jane Austen answered the panic from inside a novel. In Chapter 5 of *Northanger Abbey*, her narrator stops the story to defend the form, and mocks the young woman who puts a book down in embarrassment and calls it "only a novel." [Austen, Northanger Abbey, Chapter 5](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0005) Then Austen does something braver. Later in the book, her own heroine lets Gothic reading turn an ordinary house into evidence for a frightening story, and has to answer for the bad inference. [Chapter 25](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0025) The book that defends novels makes its reader own her mistake. Defend the access; examine the belief. An optimist can inherit that discipline.
+
+**The mechanism.** Much of the panic was about control, not content. A new technology had made someone the elders couldn't supervise powerful in a way they didn't understand, and they experienced that loss of supervision as moral decay. Some of the concerns were real. The panic wasn't how anyone found out which ones.
+
+**The rule.** When you hear a technology described as rotting the minds of the young, translate it: *something just shifted power toward people who don't need permission anymore.* Then go find out what they know that you don't. Then test the specific concern on its merits.
 
 **The practice.**
 
-1. This week, write down the next three times you hear "AI is rotting people's brains," and note who said it. For each one, name the thing the speaker can no longer supervise. Not to mock them. To train your ear: the panic is a location signal, and it points at where the power went.
-2. Find one person at least fifteen years younger than you who uses AI daily, and ask for twenty minutes of watching them work. Say nothing for the first ten. Your assignment is not to evaluate them. It is to notice what they no longer ask permission for.
-3. Catch yourself doing it. The next time a tool you don't use makes you irritated on principle, write down what it would cost you to spend one hour learning it, and compare that to how long you have already spent being irritated. Do the cheaper thing.
+1. This week, write down the next three times you hear "AI is rotting people's brains," and note who said it. For each one, name the thing the speaker can no longer supervise, and the specific harm they predict. Not to mock them. To train your ear: the panic is a location signal, and it points at where the power went.
+2. Find one person at least fifteen years younger than you who uses AI daily, and ask for twenty minutes of watching them work. Say nothing for the first ten. Your assignment isn't to evaluate them. It's to notice what they no longer ask permission for.
+3. Catch yourself doing it. The next time a tool you don't use irritates you on principle, write down what it would cost to spend one hour learning it, and compare that to how long you've already spent being irritated. Do the cheaper thing.
 
 ---

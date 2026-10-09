@@ -1,0 +1,41 @@
+P-21: Whole Earth Catalog
+Whole Earth Catalog, Fall 1968, digitized issue indexed by Whole Earth Index.
+An original example of gathering tools and practical information. Steve Jobsʼs 
+2005 Stanford commencement address is the primary source for his later com-
+parison of the catalog to Google in paperback form. His analogy is a recollec-
+tion, not a claim that the catalog already provided an internet search engine.
+Whole Earth Catalog, Fall 1968: sample pages reproduced with later
+anniversary annotations. The contents and purpose/function page establish
+examples and selection criteria; the added availability warnings belong to
+the later reprint.
+David Senior, Museum of Modern Art Library, Access to Tools: Publications
+from the Whole Earth Catalog, 1968–1974 (2011). Institutional exhibition
+history of the catalog, affiliated Truck Store, and reader contributions.
+P-22: Y2K preparation
+US General Accounting Office, Year 2000 Computing Challenge: Lessons
+Learned Can Be Applied to Other Management Challenges, AIMD-00-290
+(2000). A government review of preparation and management practices. It doc-
+uments substantial work; it cannot directly observe the global outcome of a
+world in which that work never happened.
+For AIMD-00-290, see especially printed pages 29–32 of the complete report for
+HUDʼs dependency inventory and the reported Oak Ridge file-transfer failure
+and tested tape fallback. These cases document preparation and recovery, not a
+world observed without remediation.
+US General Accounting Office, Social Security Administration: Year 2000
+Readiness Efforts Helped Ensure Century Rollover and Leap Year Success,
+AIMD-00-125 (19 April 2000), including subsequent recommendation-status
+updates. Supports continued contingency planning and the explicitly later
+April 2004 separation of validation testing from development.
+P-23: The National Health Service (Chapter 19)
+UK Government History blog, The founding of the NHS: 75 years on (13 July
+2023). Government historiansʼ account of the Beveridge Reportʼs five giants, the
+limits of wartime health insurance (about half the population covered; hospi-
+tal, specialist, dental, optical, and hearing services excluded), doctorsʼ
+concerns and Bevanʼs answer, and the serviceʼs launch on 5 July 1948 as the first
+free-at-the-point-of-use medical care for a whole population in a western coun-
+try.
+• 
+• 
+• 
+SURVIVING THE SINGULARITY
+354

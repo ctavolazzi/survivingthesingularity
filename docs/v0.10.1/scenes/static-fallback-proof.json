@@ -1,0 +1,25 @@
+{
+  "javascript": false,
+  "component_ssr": true,
+  "figures": [
+    {
+      "id": "food-delivery",
+      "image_loaded": true,
+      "native_details_work": true,
+      "table_rows": 4
+    },
+    {
+      "id": "living-soil",
+      "image_loaded": true,
+      "native_details_work": true,
+      "table_rows": 4
+    },
+    {
+      "id": "shared-workshop",
+      "image_loaded": true,
+      "native_details_work": true,
+      "table_rows": 4
+    }
+  ],
+  "note": "The existing full-reader password gate requires JavaScript; this verifies the new components and their offline fallback without changing that gate."
+}

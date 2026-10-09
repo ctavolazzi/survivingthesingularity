@@ -1,0 +1,82 @@
+[
+  {
+    "file": "v103-narrative-bear-flag.png",
+    "section": "00-chapter0.md",
+    "anchor": "Three glasses up, catching the neon.",
+    "alt": "Illustration of three realtors raising glasses beside Elijah and his laptop at the Bear Flag.",
+    "caption": "Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion.",
+    "prompt": "Use case: illustration-story. Create one finished landscape book illustration, aspect ratio 3:2, for Surviving the Singularity. Style: mature literary editorial illustration using fine charcoal ink contours, restrained crosshatching and translucent sage-green and ochre washes on warm ivory paper. Grounded contemporary rural Northern California, ordinary people and ordinary objects, not sci-fi. A quiet, humane, observational image with distinctive composition and emotionally precise body language. Strong silhouette and tonal separation so it remains legible in grayscale at 4.56 inches wide. No lettering, no captions, no logos, no watermark, no decorative frame. Keep outer paper pale, no dark full-bleed border. This is fictional narrative art, not documentary photography. Scene: a worn small-town bar at night. Exactly four men, viewed across the wooden bar at waist height. Three middle-aged realtors wearing casual blazers raise their beer glasses in a cheerful toast; one has silver hair. Beside them Elijah, in his thirties, short brown hair and slight stubble, an olive work jacket over a muted plaid shirt, reacts with a still, troubled face as his own glass is only half-raised. His open ordinary laptop sits on the sticky bar, screen facing away from us, with a folded napkin nearby. Soft indistinct neon reflections in glass and wood, no readable sign. The cheerful three form a loose diagonal; Elijah's small pause is the focal point. Natural plausible hands and glasses.",
+    "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e7b0-dbbb-7242-b4ec-e6390e5e5760/exec-0fba2246-1373-43e2-9913-68e604c773ef.png",
+    "source_file": "00-chapter0.md",
+    "kind": "narrative",
+    "layout": "diagram",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "screen_sha256": "7aa5a7710cfefe8057c89ae992929d3dfe0c20ca8d14eebe3dd1c1dbc8acd767",
+    "provenance": "Original fictional scene generated with built-in image_gen from canonical manuscript prose, directed and selected for v0.10.3. No external reference image supplied.",
+    "generator": "docs/v0.10.3/narrative-art/generation.json",
+    "insertion": "![Illustration of three realtors raising glasses beside Elijah and his laptop at the Bear Flag.](/book-images/v103-narrative-bear-flag.png)\n\n*Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion.*\n\n"
+  },
+  {
+    "file": "v103-narrative-near-end.png",
+    "section": "06-chapter4.md",
+    "anchor": "His grandmother had never once worried about the valley she couldn't farm.",
+    "alt": "Illustration of Elijah holding coffee at his apartment window at dawn, with a closed laptop behind him.",
+    "caption": "Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the world outside his window.",
+    "prompt": "Use case: illustration-story. Create one finished landscape book illustration, aspect ratio 3:2, for Surviving the Singularity. Style: mature literary editorial illustration using fine charcoal ink contours, restrained crosshatching and translucent sage-green and ochre washes on warm ivory paper. Grounded contemporary rural Northern California, ordinary people and ordinary objects, not sci-fi. A quiet, humane, observational image with distinctive composition and emotionally precise body language. Strong silhouette and tonal separation so it remains legible in grayscale at 4.56 inches wide. No lettering, no captions, no logos, no watermark, no decorative frame. Keep outer paper pale, no dark full-bleed border. This is fictional narrative art, not documentary photography. Scene: quiet modest apartment at gray dawn. A man in his thirties with short brown hair and slight stubble, wearing a plain worn T-shirt, stands in three-quarter back view holding a ceramic coffee cup at a window. He is Elijah. The view beyond is an ordinary quiet Northern California neighborhood with trees and a low ridge. On a small desk in the lower foreground, a CLOSED laptop and an open notebook containing only indistinct marks, no legible text. Composition is spacious and contemplative: pale morning light from the window occupies the upper half, a slender warm light edge on his shoulder; grounded details below. Capture relief after abandoning an impossible calculation, without theatrical gesture.",
+    "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e7b0-dbbb-7242-b4ec-e6390e5e5760/exec-2cd57881-a9e3-415b-af6b-0a40dedaa427.png",
+    "source_file": "06-chapter4.md",
+    "kind": "narrative",
+    "layout": "diagram",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "screen_sha256": "1ce1c5b7c3c4b9b3248e544348db0c9ad233a0b9f29f0e01d6413bcb13d786bc",
+    "provenance": "Original fictional scene generated with built-in image_gen from canonical manuscript prose, directed and selected for v0.10.3. No external reference image supplied.",
+    "generator": "docs/v0.10.3/narrative-art/generation.json",
+    "insertion": "![Illustration of Elijah holding coffee at his apartment window at dawn, with a closed laptop behind him.](/book-images/v103-narrative-near-end.png)\n\n*Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the world outside his window.*\n\n"
+  },
+  {
+    "file": "v103-narrative-passing-beans.png",
+    "section": "09-chapter7.md",
+    "anchor": "Denny held out his hand for the bowl. Marta passed it.",
+    "alt": "Illustration of Marta passing a bowl of beans to Denny at the cooperative's plywood dinner table.",
+    "caption": "Fictional scene: pass the beans. The conversation turns from retraining to the floor people need beneath them.",
+    "prompt": "Use case: illustration-story. Create one finished landscape book illustration, aspect ratio 3:2, for Surviving the Singularity. Style: mature literary editorial illustration using fine charcoal ink contours, restrained crosshatching and translucent sage-green and ochre washes on warm ivory paper. Grounded contemporary rural Northern California, ordinary people and ordinary objects, not sci-fi. A quiet, humane, observational image with distinctive composition and emotionally precise body language. Strong silhouette and tonal separation so it remains legible in grayscale at 4.56 inches wide. No lettering, no captions, no logos, no watermark, no decorative frame. Keep outer paper pale, no dark full-bleed border. This is fictional narrative art, not documentary photography. Scene: first-Friday cooperative supper inside a working packing shed, mismatched long plywood tables, ordinary bowls and plates, inactive plasma cutting table rolled aside in the dim background. The image centers on a large ceramic bowl of beans being passed naturally between two adults across the table: Marta is a sturdy older fabricator with a short silver-gray bob, rolled blue work-shirt sleeves, handing the bowl to Denny, an adult father and former warehouse worker in plain work clothes. Denny is clearly middle-aged, not a child or teenager. Elijah, a brown-haired man in his thirties in an olive work jacket, is seated slightly behind, listening quietly. A few other adult diners, spare simple silhouettes. A dog noses under the table without touching food. Hands and bowl form the central gesture; warm intimacy, no smiling advertising poses.",
+    "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e7b0-dbbb-7242-b4ec-e6390e5e5760/exec-2a91263e-5abf-4cf0-8eea-ce7d56effd90.png",
+    "source_file": "09-chapter7.md",
+    "kind": "narrative",
+    "layout": "diagram",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "screen_sha256": "2565cbf444ee9bed4e7deb9a6d1c86c275924111a48b4f9e2f159f61dd1c70b4",
+    "provenance": "Original fictional scene generated with built-in image_gen from canonical manuscript prose, directed and selected for v0.10.3. No external reference image supplied.",
+    "generator": "docs/v0.10.3/narrative-art/generation.json",
+    "insertion": "![Illustration of Marta passing a bowl of beans to Denny at the cooperative's plywood dinner table.](/book-images/v103-narrative-passing-beans.png)\n\n*Fictional scene: pass the beans. The conversation turns from retraining to the floor people need beneath them.*\n\n"
+  },
+  {
+    "file": "v103-narrative-rosa-testimony.png",
+    "section": "27-chapter19.md",
+    "anchor": "I'm asking you the same thing.\\\"",
+    "alt": "Illustration of Rosa speaking at a county microphone in her warehouse shirt, with a brace on her right wrist.",
+    "caption": "Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond the next delivery.",
+    "prompt": "Use case: illustration-story. Create one finished landscape book illustration, aspect ratio 3:2, for Surviving the Singularity. Style: mature literary editorial illustration using fine charcoal ink contours, restrained crosshatching and translucent sage-green and ochre washes on warm ivory paper. Grounded contemporary rural Northern California, ordinary people and ordinary objects, not sci-fi. A quiet, humane, observational image with distinctive composition and emotionally precise body language. Strong silhouette and tonal separation so it remains legible in grayscale at 4.56 inches wide. No lettering, no captions, no logos, no watermark, no decorative frame. Keep outer paper pale, no dark full-bleed border. This is fictional narrative art, not documentary photography. Scene: an ordinary county public meeting on a rainy evening. Rosa, an adult fruit-packing warehouse worker, stands in three-quarter side view at a plain public-comment microphone. She wears a practical warehouse shirt and a worn gray support brace unmistakably on her RIGHT wrist; both hands rest naturally near the microphone base, with no papers or prepared speech. Her expression is composed and direct, not pleading. Behind her, rows of unglamorous meeting chairs, damp coats over backs, a handful of quiet adult cooperative members, a person carrying a folder, another with a cardboard receipts box. A county dais only suggested in the distance. Slight low perspective from the public seats, Rosa's braced wrist and calm bearing legible in foreground. No signs, no text, no grand courtroom architecture.",
+    "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e7b0-dbbb-7242-b4ec-e6390e5e5760/exec-c5866410-d2c5-407e-8d64-08cb11a2ccc1.png",
+    "source_file": "27-chapter19.md",
+    "kind": "narrative",
+    "layout": "diagram",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "screen_sha256": "6af939a98b2962d68210858e07aec6e575c036ef96421946dcb9a68f245c8d3e",
+    "provenance": "Original fictional scene generated with built-in image_gen from canonical manuscript prose, directed and selected for v0.10.3. No external reference image supplied.",
+    "generator": "docs/v0.10.3/narrative-art/generation.json",
+    "insertion": "![Illustration of Rosa speaking at a county microphone in her warehouse shirt, with a brace on her right wrist.](/book-images/v103-narrative-rosa-testimony.png)\n\n*Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond the next delivery.*\n\n"
+  }
+]

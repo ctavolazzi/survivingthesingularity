@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>/call-it — one opinionated next action</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#020617; --panel:#0b1222; --panel2:#111a2e;
+  --line:#1e293b; --line2:#2b3a52;
+  --t1:#f1f5f9; --t2:#c7d2e0; --t3:#8ea0b8; --t4:#5d6e87;
+  --amber:#f59e0b; --amber2:#fbbf24;
+  --blue:#60a5fa; --green:#34d399; --red:#f87171; --purple:#a78bfa;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --sans:'Inter',system-ui,sans-serif;
+  --max:960px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden}
+body{background:var(--bg);color:var(--t2);font-family:var(--sans);font-size:15.5px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  background-image:linear-gradient(rgba(30,41,59,0.25) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(30,41,59,0.25) 1px,transparent 1px);
+  background-size:44px 44px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+h1,h2,h3{color:var(--t1);margin:0;line-height:1.2;letter-spacing:-0.02em}
+p{margin:0 0 12px;max-width:70ch}
+code{font-family:var(--mono);font-size:0.87em;background:#0e1729;border:1px solid var(--line2);
+  border-radius:4px;padding:1px 6px;color:var(--amber2)}
+a{color:var(--amber)}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(2,6,23,0.92);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:56px}
+.cmd{font-family:var(--mono);font-weight:700;font-size:1rem;color:var(--amber)}
+.topbar .v{font-family:var(--mono);font-size:0.72rem;color:var(--t4);
+  border:1px solid var(--line2);border-radius:var(--r,4px);padding:2px 7px}
+.topbar .right{margin-left:auto;font-family:var(--mono);font-size:0.72rem;color:var(--t4)}
+
+section{padding:clamp(38px,6vw,66px) 0;border-bottom:1px solid var(--line)}
+.lbl{font-family:var(--mono);font-size:0.7rem;font-weight:700;letter-spacing:0.18em;
+  text-transform:uppercase;color:var(--t4);margin-bottom:10px;display:block}
+h2{font-size:clamp(1.4rem,3.4vw,2rem);font-weight:800;margin-bottom:14px}
+h3{font-size:1.02rem;font-weight:700;margin-bottom:6px}
+
+/* hero */
+.hero h1{font-size:clamp(2rem,6.5vw,3.4rem);font-weight:800;margin-bottom:16px}
+.hero h1 .slash{color:var(--amber)}
+.tldr{display:grid;gap:0;border:1px solid var(--line2);border-radius:8px;overflow:hidden;margin-top:22px}
+.tldr div{padding:13px 18px;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:baseline;
+  background:var(--panel)}
+.tldr div:last-child{border-bottom:none}
+.tldr b{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--t4);flex:0 0 92px}
+.tldr span{color:var(--t2);font-size:0.94rem}
+
+/* generic panel */
+.panel{background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:20px}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.mini{background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:16px 18px}
+.mini h3{font-size:0.95rem}
+.mini p{font-size:0.88rem;color:var(--t3);margin:0}
+
+/* contract spec */
+.spec{border:1px solid var(--line2);border-radius:8px;overflow:hidden;background:var(--panel)}
+.spec-row{display:grid;grid-template-columns:170px 1fr;gap:0;border-bottom:1px solid var(--line)}
+.spec-row:last-child{border-bottom:none}
+.spec-row>div:first-child{font-family:var(--mono);font-size:0.76rem;font-weight:700;letter-spacing:0.06em;
+  color:var(--amber);padding:13px 16px;background:#0e1729;border-right:1px solid var(--line)}
+.spec-row>div:last-child{padding:13px 16px;font-size:0.9rem;color:var(--t3)}
+@media(max-width:620px){
+  .spec-row{grid-template-columns:1fr}
+  .spec-row>div:first-child{border-right:none;border-bottom:1px solid var(--line)}
+}
+
+/* terminal demo */
+.term{border:1px solid var(--line2);border-radius:8px;overflow:hidden;background:#060c1a}
+.term-bar{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#0e1729;
+  border-bottom:1px solid var(--line)}
+.dot{width:10px;height:10px;border-radius:50%}
+.term-bar .t{margin-left:8px;font-family:var(--mono);font-size:0.74rem;color:var(--t4)}
+.term-body{padding:18px 18px 20px}
+.tline{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:9px 0;
+  border-bottom:1px solid rgba(30,41,59,0.55);align-items:baseline}
+.tline:last-child{border-bottom:none}
+.tline b{font-family:var(--mono);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;color:var(--t4)}
+.tline .val{font-size:0.92rem;color:var(--t2)}
+.tline.call .val{color:var(--green);font-weight:600;font-size:1rem}
+.tline.skip .val{color:var(--red)}
+@media(max-width:600px){.tline{grid-template-columns:1fr;gap:3px}}
+.prompt{font-family:var(--mono);font-size:0.86rem;color:var(--t3);margin-bottom:14px}
+.prompt .u{color:var(--green)}
+
+/* prognosis */
+.prog{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.prog .p{background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:16px 18px;
+  border-top:2px solid var(--amber)}
+.prog .p:nth-child(2){border-top-color:var(--blue)}
+.prog .p:nth-child(3){border-top-color:var(--green)}
+.prog .h{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--t4);margin-bottom:7px}
+.prog .p p{font-size:0.89rem;margin:0;color:var(--t2)}
+
+/* table */
+.scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line2);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:580px;font-size:0.89rem;background:var(--panel)}
+th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--t4);background:#0e1729}
+tr:last-child td{border-bottom:none}
+td strong{color:var(--t1)}
+
+/* rules list */
+ul.rules{list-style:none;padding:0;margin:0}
+ul.rules li{padding:11px 0 11px 26px;border-bottom:1px solid var(--line);position:relative;font-size:0.93rem}
+ul.rules li:last-child{border-bottom:none}
+ul.rules li::before{content:'▸';position:absolute;left:4px;top:11px;color:var(--amber);font-size:0.85rem}
+ul.rules b{color:var(--t1)}
+
+pre.code{background:#060c1a;border:1px solid var(--line2);border-radius:8px;padding:14px 16px;
+  overflow-x:auto;font-family:var(--mono);font-size:0.8rem;line-height:1.6;color:var(--t2);margin:0}
+pre.code .c{color:var(--t4)} pre.code .k{color:var(--blue)} pre.code .s{color:var(--green)}
+
+.svgbox{border:1px solid var(--line2);border-radius:8px;background:var(--panel);padding:16px}
+.svgbox svg{display:block;width:100%;height:auto}
+figcaption{font-family:var(--mono);font-size:0.74rem;color:var(--t4);margin-top:10px}
+
+footer{padding:34px 0 54px;color:var(--t4);font-size:0.83rem;font-family:var(--mono)}
+
+@media (prefers-reduced-motion: reduce){
+  .fade,.slide{animation-duration:.01ms;animation-iteration-count:1}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="cmd">/call-it</span>
+    <span class="v">v0.0.1</span>
+    <span class="right">2026-08-01 · 17:28 PDT</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="lbl">New command</span>
+    <h1><span class="slash">/</span>call-it</h1>
+    <p style="font-size:1.08rem;color:var(--t2);max-width:60ch">
+      You have options. You do not need more options. This command reads the current
+      state and tells you the one thing to do next, in my opinion, with the alternatives
+      I rejected and a forecast you can hold me to.
+    </p>
+    <div class="tldr">
+      <div><b>Solves</b><span>The menu problem. Five ranked options is a way of not being wrong, not a way of being useful.</span></div>
+      <div><b>Returns</b><span>Seven blocks, under 250 words, one screen. Never a menu.</span></div>
+      <div><b>Refuses</b><span>To recommend anything whose premise it did not verify this turn.</span></div>
+      <div><b>Status</b><span>Installed and live at <code>~/.claude/skills/call-it/SKILL.md</code></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section>
+  <div class="wrap">
+    <span class="lbl">01 · Why</span>
+    <h2>The menu is a hedge</h2>
+    <p>
+      When I hand you five ranked options with trade-offs, I have moved zero decisions.
+      The work of choosing is still yours, and I have protected myself from being wrong.
+      This command removes that escape hatch.
+    </p>
+    <figure class="svgbox" style="margin:18px 0 0">
+      <svg viewBox="0 0 880 190" role="img" aria-label="Five candidate actions narrowing to one call">
+        <defs>
+          <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 z" fill="#5d6e87"/>
+          </marker>
+        </defs>
+        <g font-family="JetBrains Mono, monospace" font-size="11">
+          <text x="0" y="12" fill="#5d6e87" font-size="9.5">CANDIDATES</text>
+          <g fill="#8ea0b8">
+            <rect x="0" y="24" width="196" height="24" rx="4" fill="#111a2e" stroke="#2b3a52"/>
+            <text x="10" y="40">run SQL pre-flight</text>
+            <rect x="0" y="54" width="196" height="24" rx="4" fill="#111a2e" stroke="#2b3a52"/>
+            <text x="10" y="70">install webkit</text>
+            <rect x="0" y="84" width="196" height="24" rx="4" fill="#111a2e" stroke="#2b3a52"/>
+            <text x="10" y="100">merge v0.7.3</text>
+            <rect x="0" y="114" width="196" height="24" rx="4" fill="#111a2e" stroke="#2b3a52"/>
+            <text x="10" y="130">rebuild .env</text>
+            <rect x="0" y="144" width="196" height="24" rx="4" fill="#111a2e" stroke="#2b3a52"/>
+            <text x="10" y="160">stop for today</text>
+          </g>
+
+          <g stroke="#2b3a52" stroke-width="1.2" fill="none" marker-end="url(#a1)">
+            <path d="M200,36 C260,36 260,96 316,96"/>
+            <path d="M200,66 C260,66 260,96 316,96"/>
+            <path d="M200,96 L316,96"/>
+            <path d="M200,126 C260,126 260,96 316,96"/>
+            <path d="M200,156 C260,156 260,96 316,96"/>
+          </g>
+
+          <rect x="322" y="72" width="150" height="48" rx="6" fill="#0e1729" stroke="#f59e0b"/>
+          <text x="397" y="92" fill="#fbbf24" text-anchor="middle" font-size="10.5">SCORE</text>
+          <text x="397" y="108" fill="#5d6e87" text-anchor="middle" font-size="8.5">money · trust · cost</text>
+
+          <line x1="476" y1="96" x2="546" y2="96" stroke="#2b3a52" stroke-width="1.2" marker-end="url(#a1)"/>
+
+          <rect x="552" y="66" width="326" height="60" rx="6" fill="rgba(52,211,153,0.08)" stroke="#34d399" stroke-width="1.5"/>
+          <text x="568" y="88" fill="#34d399" font-size="10">THE CALL</text>
+          <text x="568" y="107" fill="#e2e8f0" font-size="11.5">Run the two SQL queries. Now.</text>
+          <circle cx="866" cy="76" r="3.5" fill="#34d399">
+            <animate attributeName="opacity" values="1;0.2;1" dur="2.1s" repeatCount="indefinite"/>
+          </circle>
+
+          <text x="552" y="146" fill="#5d6e87" font-size="9">the other four are named as runners-up, with reasons</text>
+        </g>
+      </svg>
+      <figcaption>Candidates in, one call out. The rejected four are reported, not hidden.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CONTRACT -->
+<section>
+  <div class="wrap">
+    <span class="lbl">02 · Output contract</span>
+    <h2>Seven blocks, always the same</h2>
+    <p>Predictable shape means you can scan it in ten seconds and know where to look.</p>
+    <div class="spec">
+      <div class="spec-row"><div>THE CALL</div><div>One imperative sentence. No "consider", no "you might". If I will not phrase it as an instruction, I have not made a call.</div></div>
+      <div class="spec-row"><div>CONFIDENCE</div><div>High, medium or low, plus what would raise it. All hedging lives here and nowhere else.</div></div>
+      <div class="spec-row"><div>WHY NOW</div><div>Two or three lines, tied to something measured this turn. Not something I remember from earlier.</div></div>
+      <div class="spec-row"><div>COST</div><div>Minutes, dollars, and how hard it is to undo.</div></div>
+      <div class="spec-row"><div>IF YOU SKIP IT</div><div>The concrete consequence, and who finds out first. Often a customer. That is the point.</div></div>
+      <div class="spec-row"><div>RUNNERS-UP</div><div>Two or three rejected options, each with one line on why it lost, so you can overrule me intelligently.</div></div>
+      <div class="spec-row"><div>PROGNOSIS</div><div>Where you stand in 1 hour, 1 day, 1 week. Concrete enough to be wrong.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE DEMO -->
+<section>
+  <div class="wrap">
+    <span class="lbl">03 · Live demo</span>
+    <h2>Run against your actual state, right now</h2>
+    <p>
+      Not a mock-up. I re-probed production at 17:28 PDT before writing this, because the
+      command's first rule is that an opinion about stale state is a guess with confidence
+      attached.
+    </p>
+    <div class="term">
+      <div class="term-bar">
+        <span class="dot" style="background:#f87171"></span>
+        <span class="dot" style="background:#fbbf24"></span>
+        <span class="dot" style="background:#34d399"></span>
+        <span class="t">sts-v0.7.3 — /call-it</span>
+      </div>
+      <div class="term-body">
+        <div class="prompt"><span class="u">›</span> /call-it</div>
+        <div class="tline call">
+          <b>THE CALL</b>
+          <div class="val">Run the two read-only SQL queries against live Supabase. Before anything else.</div>
+        </div>
+        <div class="tline">
+          <b>CONFIDENCE</b>
+          <div class="val">High. Raised further only by the query results themselves, which take about thirty seconds.</div>
+        </div>
+        <div class="tline">
+          <b>WHY NOW</b>
+          <div class="val">Re-probed 17:28 PDT: production is still <code>mode test</code>. The webhook writes a financial ledger that fails closed by design, so if <code>checkout_transactions</code> was never created, every paid order returns 500. That single unknown decides whether today is a launch day or a migration day, and everything else in the runbook is wasted effort until it is answered.</div>
+        </div>
+        <div class="tline">
+          <b>COST</b>
+          <div class="val">Thirty seconds. Zero dollars. Read-only, so fully reversible by definition.</div>
+        </div>
+        <div class="tline skip">
+          <b>IF YOU SKIP IT</b>
+          <div class="val">You go live, a customer pays $5, Stripe retries for three days, and they receive nothing. You find out from them, not from your monitoring.</div>
+        </div>
+        <div class="tline">
+          <b>RUNNERS-UP</b>
+          <div class="val">
+            <strong>Register the live webhook.</strong> Correct next step, but pointless if the ledger table is missing.<br />
+            <strong>Install webkit, clear 304 test failures.</strong> Satisfying, cosmetic, blocks no money.<br />
+            <strong>Stop for today.</strong> Genuinely on the table, but the blocker is thirty seconds of work and you are at the dashboards.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGNOSIS -->
+<section>
+  <div class="wrap">
+    <span class="lbl">04 · Prognosis</span>
+    <h2>Concrete enough to be wrong</h2>
+    <div class="prog">
+      <div class="p">
+        <div class="h">1 hour</div>
+        <p>You know whether the schema supports the pipeline. If yes, live keys are in and <code>sts.py stripe --live</code> reads <code>mode live</code>. If no, you are running one migration instead of debugging a live outage.</p>
+      </div>
+      <div class="p">
+        <div class="h">1 day</div>
+        <p>One real $5 purchase has delivered an email, an admin alert, and a <code>cs_live_</code> row. That is the first end-to-end proof this pipeline has ever had.</p>
+      </div>
+      <div class="p">
+        <div class="h">1 week</div>
+        <p>Marketing runs against a till that works. The daily guard alarms on real drift. The <code>v0.7.3</code> merge happens on a calm day instead of a launch day.</p>
+      </div>
+    </div>
+    <p style="margin-top:16px;font-size:0.9rem;color:var(--t3)">
+      <strong style="color:var(--t1)">Stop condition.</strong> If query one returns <code>checkout_transactions</code>
+      and query two shows all four durability columns, this call is spent. The next call becomes the live webhook.
+    </p>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section>
+  <div class="wrap">
+    <span class="lbl">05 · When to reach for it</span>
+    <h2>Three commands, three jobs</h2>
+    <div class="scroll-x">
+      <table>
+        <thead><tr><th>Command</th><th>Answers</th><th>Output</th><th>Reach for it when</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>/call-it</strong></td>
+            <td>What should I do next?</td>
+            <td>Seven blocks, one screen</td>
+            <td>You are staring at a list and need a decision, not a survey</td>
+          </tr>
+          <tr>
+            <td><strong>/report</strong></td>
+            <td>What happened and what is true now?</td>
+            <td>Full visual HTML page</td>
+            <td>Someone who was not watching needs the whole picture</td>
+          </tr>
+          <tr>
+            <td><strong>/handoff</strong></td>
+            <td>How does the next session resume?</td>
+            <td>Copy-paste prompt</td>
+            <td>Context is running out or you are switching chats</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section>
+  <div class="wrap">
+    <span class="lbl">06 · Rules that keep it honest</span>
+    <h2>The constraints are the feature</h2>
+    <ul class="rules">
+      <li><b>One call.</b> Two co-equal options is a failure of the command, not a nuance.</li>
+      <li><b>Startable in 30 minutes.</b> Anything bigger is a project. It gets decomposed and the first step gets called.</li>
+      <li><b>"Stop for now" is a valid call.</b> Fatigue and bad deploy windows are real. No manufactured urgency to seem useful.</li>
+      <li><b>Blocked on you is still a call.</b> I say exactly what I will do the second you unblock it, so the handoff is clean.</li>
+      <li><b>Rejected options get named.</b> A recommendation with no alternatives is indistinguishable from a guess.</li>
+      <li><b>Values decisions stay yours.</b> Pricing, naming, whether to launch at all. I lay out the trade and stop. Making a call on someone else's values is overreach, not confidence.</li>
+      <li><b>No recommending the fun work over the unblocking work.</b> When those diverge I notice it out loud.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section style="border-bottom:none">
+  <div class="wrap">
+    <span class="lbl">07 · Install</span>
+    <h2>Already done</h2>
+    <p>Written this session. Nothing to run, no commit made. Invoke it by name.</p>
+    <pre class="code"><span class="c"># lives here</span>
+~/.claude/skills/call-it/SKILL.md
+
+<span class="c"># use it</span>
+<span class="k">/call-it</span>
+<span class="k">/call-it</span> --deep     <span class="c"># adds SECOND ORDER: what this makes</span>
+                     <span class="c"># easier or harder three steps out</span></pre>
+    <div class="grid g3" style="margin-top:18px">
+      <div class="mini">
+        <h3>Also triggers on</h3>
+        <p>"what should we do next", "what would you do", "make the call", "your call".</p>
+      </div>
+      <div class="mini">
+        <h3>Version</h3>
+        <p><code>0.0.1</code>, per the house rule that versions start at 0.0.1 and never 1.0.</p>
+      </div>
+      <div class="mini">
+        <h3>Not committed</h3>
+        <p>A new file in your skills directory. No git operation was performed on this repo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    /call-it v0.0.1 · authored 2026-08-01 · production re-probed 17:28 PDT, still mode test<br />
+    demo output is real, not illustrative
+  </div>
+</footer>
+
+<script>
+// progressive enhancement only: nothing here is required to read the page
+document.querySelectorAll('.tline, .spec-row, .prog .p').forEach((el,i)=>{
+  el.style.opacity='0'; el.style.transform='translateY(10px)';
+  el.style.transition='opacity .45s ease '+(i%9*0.045)+'s, transform .45s ease '+(i%9*0.045)+'s';
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='none';io.unobserve(e.target);}
+}),{threshold:0.08});
+document.querySelectorAll('.tline, .spec-row, .prog .p').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

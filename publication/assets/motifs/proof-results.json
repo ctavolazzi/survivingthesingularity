@@ -1,0 +1,110 @@
+[
+  {
+    "file": "01-grain-and-gripper.svg",
+    "geometry_bounds": {
+      "x": 113,
+      "y": 31,
+      "width": 209,
+      "height": 189
+    }
+  },
+  {
+    "file": "02-event-horizon.svg",
+    "geometry_bounds": {
+      "x": 61,
+      "y": 33.87303924560547,
+      "width": 279,
+      "height": 189.59130859375
+    }
+  },
+  {
+    "file": "03-centrifugal-governor.svg",
+    "geometry_bounds": {
+      "x": 99,
+      "y": 36,
+      "width": 202,
+      "height": 193
+    }
+  },
+  {
+    "file": "04-seed-and-root.svg",
+    "geometry_bounds": {
+      "x": 64,
+      "y": 43,
+      "width": 274,
+      "height": 185
+    }
+  },
+  {
+    "file": "05-roof-and-joint.svg",
+    "geometry_bounds": {
+      "x": 72,
+      "y": 49,
+      "width": 284,
+      "height": 176
+    }
+  },
+  {
+    "file": "06-shared-table.svg",
+    "geometry_bounds": {
+      "x": 57,
+      "y": 52.13983154296875,
+      "width": 286,
+      "height": 166.86016845703125
+    }
+  },
+  {
+    "file": "07-pamphlet-and-thread.svg",
+    "geometry_bounds": {
+      "x": 63,
+      "y": 65.8124008178711,
+      "width": 274,
+      "height": 170.18759155273438
+    }
+  },
+  {
+    "file": "08-water-pump.svg",
+    "geometry_bounds": {
+      "x": 91.27930450439453,
+      "y": 44.2823371887207,
+      "width": 229.720703125,
+      "height": 187.71766662597656
+    }
+  },
+  {
+    "file": "09-repair-tools.svg",
+    "geometry_bounds": {
+      "x": 61.87775421142578,
+      "y": 52,
+      "width": 265.12225341796875,
+      "height": 173.0137481689453
+    }
+  },
+  {
+    "file": "10-open-gate.svg",
+    "geometry_bounds": {
+      "x": 43,
+      "y": 62,
+      "width": 311,
+      "height": 170
+    }
+  },
+  {
+    "file": "11-soil-profile.svg",
+    "geometry_bounds": {
+      "x": 58,
+      "y": 37.90575408935547,
+      "width": 285,
+      "height": 192.09423828125
+    }
+  },
+  {
+    "file": "12-continuity-route.svg",
+    "geometry_bounds": {
+      "x": 45,
+      "y": 37.94807815551758,
+      "width": 309,
+      "height": 195.1141357421875
+    }
+  }
+]

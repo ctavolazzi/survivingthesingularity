@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">A roof and its joint</title>
+  <desc id="desc">Open timber framing emphasizes the roof's supporting joints rather than a finished property. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#202c28" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M72 157L200 49L328 157M85 166L200 69L315 166" stroke="#202c28" stroke-width="4.2"/>
+<path d="M99 154H301V170H99Z" stroke="#202c28" stroke-width="4.2"/>
+<path d="M117 171V222M132 171V222M268 171V222M283 171V222" stroke="#202c28" stroke-width="4.2"/>
+<path d="M193 76V150M207 76V150" stroke="#202c28" stroke-width="4.2"/>
+<path d="M132 197L166 171M132 183L146 171M268 197L234 171M268 183L254 171" stroke="#202c28" stroke-width="4.2"/>
+<path d="M189 155V169M211 155V169" stroke="#202c28" stroke-width="4.2"/>
+<circle cx="124" cy="162" r="3" stroke="#202c28" fill="#202c28"/>
+<circle cx="276" cy="162" r="3" stroke="#202c28" fill="#202c28"/>
+<path d="M94 225H301" stroke="#66764e" stroke-width="4.2"/>
+<path d="M315 224C322 207 331 194 341 183" stroke="#66764e" stroke-width="4.2"/>
+<path d="M329 204C316 201 312 192 313 183C324 187 329 195 329 204Z" stroke="#66764e" stroke-width="4.2"/>
+<path d="M335 194C347 196 355 189 356 178C345 179 338 185 335 194Z" stroke="#66764e" stroke-width="4.2"/>
+  </g>
+</svg>

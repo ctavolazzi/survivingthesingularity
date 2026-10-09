@@ -1,18 +1,18 @@
 {
   "schema": "sts-work-in-progress-snapshot/v1",
-  "captured_utc": "2026-10-09T15:40:48.660467+00:00",
+  "captured_utc": "2026-10-09T16:37:51.785533+00:00",
   "source_worktree": "/Users/ctavolazzi/Code/active/sts-site-fixes",
   "source_branch": "site/critique-fixes-2026-10-09",
   "base_commit": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
   "state": "In-progress snapshot; no claim of production readiness or completed review. Original worktree remains untouched.",
   "patch": "site-work-in-progress.patch",
-  "patch_bytes": 12491,
-  "patch_sha256": "b8e9fbb5ea5dc734336945c5cdd5ce8391a0d6d5e755ff2f7578d0fb663f4aae",
+  "patch_bytes": 13253,
+  "patch_sha256": "5773cc08a26598df79b60690b02351d98b0cf8256d2e54c8bc0648bc2a96474c",
   "files": [
     {
       "path": "src/app.html",
-      "bytes": 1385,
-      "sha256": "8567259414a95fbbc56729ebe26a5c8363aee98d68ace8e3f5d2b23df3caca0b"
+      "bytes": 1863,
+      "sha256": "8ba82e70d6d024c13559b7c7e95909f317863a7898468c389570fab0295eb196"
     },
     {
       "path": "src/lib/components/BookGate.svelte",
@@ -66,5 +66,6 @@
     "applies_to_base_commit": true,
     "reconstructed_file_sizes_and_sha256_match": true
   },
-  "restore": "Check out the base_commit in a separate worktree, then run git apply with this patch."
+  "restore": "Check out the base_commit in a separate worktree, then run git apply with this patch.",
+  "previous_snapshot_preserved_in_commit": "4e3c934966c286969df720d73738cc2a4385b11c"
 }

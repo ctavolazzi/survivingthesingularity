@@ -960,6 +960,6 @@
       "sha256": "cf5d99c8db81b09ba2adec640c2e70aea3c8fc7b1ad21df972c4542c215889ec"
     }
   ],
-  "transport_verified": false,
-  "updated_utc": "2026-10-09T16:03:15.920697+00:00"
+  "transport_verified": true,
+  "updated_utc": "2026-10-09T16:09:51.560399+00:00"
 }

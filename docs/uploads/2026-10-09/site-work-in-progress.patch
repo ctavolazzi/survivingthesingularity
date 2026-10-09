@@ -1,5 +1,5 @@
 diff --git a/src/app.html b/src/app.html
-index 646855d8de6013dd2f12f6b3023c982b09d8c812..3a00e31f89d90b59bf4963560bace12829183bbf 100644
+index 646855d8de6013dd2f12f6b3023c982b09d8c812..76468a4e72199e70d962595c90156b2c0270e64c 100644
 --- a/src/app.html
 +++ b/src/app.html
 @@ -3,7 +3,10 @@
@@ -14,6 +14,19 @@ index 646855d8de6013dd2f12f6b3023c982b09d8c812..3a00e31f89d90b59bf4963560bace128
  		<meta name="theme-color" content="#020617" />
  		<link rel="icon" href="/favicon.png" type="image/png" />
  		<link rel="icon" href="/favicon.webp" type="image/webp" />
+@@ -15,6 +18,12 @@
+ 		     and external on purpose — CSP is script-src 'self' with a SvelteKit
+ 		     nonce, which an inline block here would not carry. -->
+ 		<script src="/splash-gate.js"></script>
++		<!-- With scripting off nothing ever adds .visible to the landing page's
++		     reveal-on-scroll sections, so they stay at opacity 0: a headline over a
++		     blank page with every word present but invisible. Browsers that run
++		     scripts never parse this block. An inline style is allowed by the CSP
++		     (style-src 'unsafe-inline'); an inline script would not be. -->
++		<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+ 		%sveltekit.head%
+ 	</head>
+ 	<body data-sveltekit-preload-data="hover">
 diff --git a/src/lib/components/BookGate.svelte b/src/lib/components/BookGate.svelte
 index 70e718142afaaa9c406ecd7825a992bd946b9b60..7d4a100a69c146649e5e00eff94a99cc66c2f203 100644
 --- a/src/lib/components/BookGate.svelte

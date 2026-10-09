@@ -1,6 +1,6 @@
 # Book archive: 2026-10-08
 
-**Status: upload in progress.** The compressed archive has been verified locally. Remote completion remains pending.
+**Status: complete.** All 91 remote parts and required source branches have been verified.
 
 [Archive release](https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-archive-2026-10-08) preserves **149 distinct files** recovered from 505 local copies: **34 numbered edition labels, eight legacy draft labels and four dated manuscript snapshots**. The complete download is **379 MB compressed** (379,175,616 bytes), containing **3.04 GB of book files** (3,041,969,876 bytes). Identical bytes are stored once; different builds remain separate.
 
@@ -14,7 +14,7 @@ Save the downloader and manifest in the same folder, then run:
 python3 download-archive.py --manifest archive-transport.json
 ```
 
-This creates `sts-book-archive-2026-10-08/Surviving-the-Singularity-all-editions-2026-10-08.tar.zst`. Rerun the command after an interrupted download. Valid completed parts are reused. Files whose bytes do not match are preserved and skipped.
+This creates `sts-book-archive-2026-10-08/Surviving-the-Singularity-all-editions-2026-10-08.tar.zst`. Rerun the command after an interrupted download. Valid completed parts are reused. Files whose bytes do not match are preserved, and verified replacements receive a different filename. If the path printed after `Verified archive:` differs from the default below, use that printed path in the extraction command.
 
 The downloader combines parts in the manifest's listed order. Retry uploads can have different names, so wildcard concatenation is unsuitable.
 

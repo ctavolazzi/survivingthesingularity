@@ -1,0 +1,26 @@
+{
+  "schema": "sts-upload-receipt/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "tag": "book-archive-2026-10-08",
+  "mode": "upload",
+  "passed": false,
+  "assets": [],
+  "errors": [
+    {
+      "error": "gh api failed (1): unknown flag: --slurp\n\nUsage:  gh api <endpoint> [flags]\n\nFlags:\n      --cache duration        Cache the response, e.g. \"3600s\", \"60m\", \"1h\"\n  -F, --field key=value       Add a typed parameter in key=value format\n  -H, --header key:value      Add a HTTP request header in key:value format\n      --hostname string       The GitHub hostname for the request (default \"github.com\")\n  -i, --include               Include HTTP response status line and headers in the output\n      --input file            The file to use as body for the HTTP request (use \"-\" to read from standard input)\n  -q, --jq string  "
+    }
+  ],
+  "upload_command_errors": [],
+  "inventory_sha256": "09707caf4847eaa2a7e50207ead1d77d4ea210bcfeef05b85a863d70317bec70",
+  "expected_assets": 149,
+  "expected_bytes": 3041969876,
+  "local_sources_verified": 149,
+  "release": {
+    "apiUrl": "https://api.github.com/repos/ctavolazzi/survivingthesingularity/releases/407326348",
+    "isDraft": true,
+    "tagName": "book-archive-2026-10-08",
+    "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/tag/untagged-48591e435c64c301008c",
+    "id": 407326348
+  },
+  "updated_utc": "2026-10-08T22:56:46.385258+00:00"
+}

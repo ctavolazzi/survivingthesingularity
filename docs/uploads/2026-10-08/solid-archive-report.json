@@ -35,7 +35,7 @@
     "existing_verified": 0
   },
   "estimated_upload_seconds_at_50000_bytes_per_second": 7583.5,
-  "transport_status": "Upload in progress; archive content verified locally.",
+  "transport_status": "complete",
   "downloader_verification": {
     "tested_utc": "2026-10-08T23:34:01.847887+00:00",
     "script": "docs/uploads/2026-10-08/download-archive.py",

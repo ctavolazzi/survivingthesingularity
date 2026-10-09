@@ -2226,5 +2226,5 @@
     "bytes": 379175616,
     "sha256": "8812195af8cdfde5c776222bd0869cd61a8dd486bdd403d6eb8b594ecc1977ce"
   },
-  "transport_status": "Upload in progress; archive content verified locally."
+  "transport_status": "complete"
 }

@@ -117,7 +117,7 @@
     },
     {
       "index": 16,
-      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part016",
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part016.attempt-4ee25a4628ed405c",
       "canonical_name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part016",
       "bytes": 4194304,
       "sha256": "bbf4c213d0a39e8d8faafd68cf14f744a52242101443268b7a1cf3519971a8c8"
@@ -173,7 +173,7 @@
     },
     {
       "index": 24,
-      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part024",
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part024.attempt-70b122aa25804a50",
       "canonical_name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part024",
       "bytes": 4194304,
       "sha256": "832877a8b01f25c0510f6ed9d40621a70caf591d0a0b9b36c238e0a4821db3c6"
@@ -201,7 +201,7 @@
     },
     {
       "index": 28,
-      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part028",
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part028.attempt-b3c5a2f13725452b",
       "canonical_name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part028",
       "bytes": 4194304,
       "sha256": "374e4f3bf3fc1eca4f8e9e93629f6eedb9f0aadc3d40828ad3d7eabf3e9033c7"
@@ -1405,6 +1405,6 @@
     "mkdir -p extracted && zstd --long=29 -dc Surviving-the-Singularity-all-editions-2026-10-08.tar.zst | tar -xf - -C extracted",
     "Verify the extracted 149 payloads against payloads149; keep archive metadata and source provenance alongside them."
   ],
-  "transport_verified": false,
-  "updated_utc": "2026-10-08T23:51:03.760024+00:00"
+  "transport_verified": true,
+  "updated_utc": "2026-10-09T03:04:23.775393+00:00"
 }

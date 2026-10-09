@@ -1,0 +1,38 @@
+{
+  "mode": "push",
+  "targets": {
+    "book-v0.10.1": {
+      "commit": "c05cb948902d885b574fce965b544c9681361922",
+      "batches_planned": 0,
+      "batches_done": 0,
+      "verified": true
+    },
+    "book-v0.10.2": {
+      "commit": "85c72ea020db447f37bf080473f5a91734d88031",
+      "batches_planned": 0,
+      "batches_done": 0,
+      "verified": true
+    },
+    "book-v0.10.3": {
+      "commit": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+      "batches_planned": 0,
+      "batches_done": 0,
+      "verified": true
+    },
+    "book-v0.10.4": {
+      "commit": "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+      "batches_planned": 0,
+      "batches_done": 0,
+      "verified": true
+    },
+    "book-v0.11.0": {
+      "commit": "f5835e217ef8e27bc8b780ee49a47d88d20e3f9a",
+      "batches_planned": 1,
+      "batches_done": 1,
+      "verified": true
+    }
+  },
+  "largest_push_bytes": 1008641,
+  "staging_deleted": false,
+  "total_bytes": 1017356
+}

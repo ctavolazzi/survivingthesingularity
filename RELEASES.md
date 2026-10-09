@@ -3,7 +3,15 @@
 Ledger of built book artifacts. `book.json` holds the version the source
 currently claims; this file records which build is the one to hand someone.
 
-**Current local source: v0.10.4**, September 29, 2026. A complete editorial reread led to 18 small revisions in 16 sections: clearer transitions, less repetition, more workable exercises and repaired continuity. All scenes, citations, 24 precedents, 110 image references and 62 registered figures remain.
+**Current source: v0.11.0**, October 7, 2026. Five of the 35 sections change. The Introduction uses and defines the title phrase. Chapter 6 adds "Whose robots?". Chapter 19 adds "Get involved". The Conclusion introduces solarpunk and changes the closing call. Appendix B adds seven source records. The landing page was revised to match. All 24 precedents remain; the source is 99,172 words by `sts.py book`.
+
+Reading PDF: 416 pages, 42.5 MB. Print interior: 416 pages, including its blank final verso. See [edition notes](docs/v0.11.0/EDITION-NOTES.md), [source changes](docs/v0.11.0/source-changes.diff), [delivery hashes](docs/v0.11.0/deliverables.json), [PDF review](docs/v0.11.0/pdf-proof/FINAL-PDF-REVIEW.md) and [EPUB review](docs/v0.11.0/EPUB-REVIEW.md). Public downloads remain v0.7.5. The reading PDF is over the 25 MiB per-file limit that `check-book-downloads` warns about, so it cannot ship from `static/downloads/` as built.
+
+**Where the editions live, as of October 8, 2026.** Every edition from v0.7.3 to v0.11.0 is committed and pushed as its own branch (`v0.7.3`, then `book-v0.8.0` through `book-v0.11.0`); v0.11.0 is commit `f5835e2`. `release/v0.11.0` joins v0.11.0 with `main` as the candidate for going live. The built files for every edition are in the [book archive release](https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-archive-2026-10-08), and `docs/uploads/2026-10-08/SOURCE-PROVENANCE.md` on `archive/book-files-2026-10-08` lists the source commit for each. Entries below that say "no commit or external release was made" describe the day they were written.
+
+## Previous finalized local edition: v0.10.4
+
+**Previous local source: v0.10.4**, September 29, 2026. A complete editorial reread led to 18 small revisions in 16 sections: clearer transitions, less repetition, more workable exercises and repaired continuity. All scenes, citations, 24 precedents, 110 image references and 62 registered figures remain.
 
 Reading PDF: 411 pages. Print interior: 410 pages, with no added final verso. See [gentle critique](docs/v0.10.4/CRITIQUE.md), [edition notes](docs/v0.10.4/EDITION-NOTES.md), [delivery hashes](docs/v0.10.4/deliverables.json), [PDF review](docs/v0.10.4/pdf-proof/FINAL-PDF-REVIEW.md), [EPUB review](docs/v0.10.4/EPUB-REVIEW.md) and [reader review](docs/v0.10.4/READER-REVIEW.md). Public downloads remain v0.7.5; no commit or external release was made.
 

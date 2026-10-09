@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">A centrifugal governor</title>
+  <desc id="desc">Two weighted arms, a sliding collar and a spindle suggest regulation and feedback. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#202c28" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M99 221H301M176 218V202H224V218" stroke="#202c28" stroke-width="4.2"/>
+<path d="M195 195V57M205 195V57" stroke="#202c28" stroke-width="4.2"/>
+<path d="M189 57H211M200 46V36" stroke="#202c28" stroke-width="4.2"/>
+<circle cx="200" cy="77" r="7" stroke="#202c28" fill="none"/>
+<path d="M193 81L140 142M207 81L260 142" stroke="#202c28" stroke-width="4.2"/>
+<circle cx="134" cy="155" r="16" stroke="#202c28" fill="none"/>
+<circle cx="266" cy="155" r="16" stroke="#202c28" fill="none"/>
+<path d="M147 165L186 192M253 165L214 192" stroke="#202c28" stroke-width="4.2"/>
+<path d="M186 184H214V198H186Z" stroke="#202c28" stroke-width="4.2"/>
+<path d="M214 190H272L293 179" stroke="#202c28" stroke-width="4.2"/>
+<path d="M103 84C126 60 150 49 169 45" stroke="#66764e" stroke-width="4.2"/>
+<path d="M103 84L111 65M103 84L124 81" stroke="#66764e" stroke-width="4.2"/>
+<path d="M231 45C252 50 277 62 297 84" stroke="#66764e" stroke-width="4.2"/>
+<path d="M297 84L294 63M297 84L277 81" stroke="#66764e" stroke-width="4.2"/>
+<path d="M163 229L177 229" stroke="#66764e"/>
+<path d="M190 229L210 229" stroke="#66764e"/>
+<path d="M223 229L237 229" stroke="#66764e"/>
+  </g>
+</svg>

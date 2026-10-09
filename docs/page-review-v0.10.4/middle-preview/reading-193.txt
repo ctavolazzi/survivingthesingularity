@@ -1,0 +1,24 @@
+The  practical  conclusion  isnʼt  that  the  machines  are  doomed.  The
+labs know about this, and they work hard to keep real human data in
+the mix. Itʼs that real human data just got more valuable. Something
+that actually happened, recorded by the person it happened to, is
+now the scarce input. Thatʼs your leverage.
+And the energy bill is real too. Generating another answer takes com-
+putation; keeping a useful answer lets you reuse it. A paper book on
+small-engine repair needs no powered device to read, and a saved
+offline  manual  needs  no  new  model  query.  Keep  the  good
+instructions where you can reach them again.
+Algorithmic judo
+Hiding in the woods with paper books isnʼt the plan, though. Millions
+of real people are still in the feed, scrolling past the synthetic flood,
+looking for any sign of an actual human. You can reach them. You
+just canʼt do it by impersonating the machine.
+Post a technical document, “How to Wire a Small Solar Kit and Run a
+Local Model,” and the person who needs it may never see it. A true
+account of why you built the kit can give that person a reason to stop
+and read. Thatʼs the bet behind algorithmic judo: wrap useful, practi-
+cal knowledge inside a human story, then hand the reader something
+real. Try it, watch who actually uses the result, and donʼt confuse one
+successful post with a law of the feed.
+SURVIVING THE SINGULARITY
+188

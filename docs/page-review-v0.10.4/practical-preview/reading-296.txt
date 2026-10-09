@@ -1,0 +1,43 @@
+                                                                          CHAPTER 17
+
+
+ • Tiny power draw. A node sips a fraction of a watt most of the time.
+   A small panel and a battery can keep it going through a lot of
+   weather.
+ • Match the hardware and region. Common choices use the 902 to
+   928 MHz range in the United States or the 868 MHz range in
+   Europe. Choose hardware and an antenna for the local band,
+   install firmware for the exact board, then set the legal region in
+   the software. Power and airtime limits still apply. Meshtastic,
+   LoRa configuration
+ • Relay, then verify. Nodes with compatible radio settings can relay
+   messages where a usable path exists. Test the path with an
+   important node switched off, and test a full power cycle after an
+   update.
+
+Encryption isnʼt automatically privacy. Meshtasticʼs default shared
+channel key is public. A private group needs a fresh key shared only
+with its members, and a plan for lost devices and exposed keys. Even
+then, a group message isnʼt proof of the senderʼs identity. Keep sensi-
+tive  household  records  off  the  public  channel  and  confirm
+consequential requests with the person. Meshtastic, encryption and
+its limits
+To put one up: use a weatherproof box, a proper solar charge board
+and battery rated for outdoor use (buy it assembled if youʼre not
+sure), and the best antenna you can mount high. Height and line of
+sight matter more than anything else; a well-placed node can reach
+many miles. Then check what it can actually carry before anybody
+depends on it.
+
+The muscle: power you understand
+Many small loads use low-voltage DC internally: LED lights, phones,
+laptops, radios, small pumps. A conventional off-grid system turns
+the panelsʼ DC into household AC with an inverter, and a deviceʼs
+power brick may turn it back into DC. Each conversion loses some
+energy as heat; the amount depends on the equipment and its load.
+
+
+
+
+
+                                                                                291

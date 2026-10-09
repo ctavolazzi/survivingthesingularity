@@ -1,0 +1,206 @@
+[
+  {
+    "name": "folded-phone",
+    "w": 280,
+    "h": 653,
+    "scrollW": 280,
+    "clientW": 280,
+    "scrollH": 1447,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 643,
+      "viewportH": 653,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "small-phone",
+    "w": 320,
+    "h": 568,
+    "scrollW": 320,
+    "clientW": 320,
+    "scrollH": 1310,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 635,
+      "viewportH": 568,
+      "aboveFold": false
+    }
+  },
+  {
+    "name": "iphone-13",
+    "w": 390,
+    "h": 844,
+    "scrollW": 390,
+    "clientW": 390,
+    "scrollH": 1372,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 675,
+      "viewportH": 844,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "iphone-pro-max",
+    "w": 430,
+    "h": 932,
+    "scrollW": 430,
+    "clientW": 430,
+    "scrollH": 1233,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 620,
+      "viewportH": 932,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "square-small",
+    "w": 500,
+    "h": 500,
+    "scrollW": 500,
+    "clientW": 500,
+    "scrollH": 760,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 582,
+      "viewportH": 500,
+      "aboveFold": false
+    }
+  },
+  {
+    "name": "phone-landscape",
+    "w": 844,
+    "h": 390,
+    "scrollW": 844,
+    "clientW": 844,
+    "scrollH": 783,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 588,
+      "viewportH": 390,
+      "aboveFold": false
+    }
+  },
+  {
+    "name": "ipad-portrait",
+    "w": 834,
+    "h": 1112,
+    "scrollW": 834,
+    "clientW": 834,
+    "scrollH": 1408,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 740,
+      "viewportH": 1112,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "square-large",
+    "w": 900,
+    "h": 900,
+    "scrollW": 900,
+    "clientW": 900,
+    "scrollH": 1433,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 748,
+      "viewportH": 900,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "ipad-landscape",
+    "w": 1112,
+    "h": 834,
+    "scrollW": 1112,
+    "clientW": 1112,
+    "scrollH": 1528,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 754,
+      "viewportH": 834,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "laptop",
+    "w": 1280,
+    "h": 800,
+    "scrollW": 1280,
+    "clientW": 1280,
+    "scrollH": 1043,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 771,
+      "viewportH": 800,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "desktop",
+    "w": 1440,
+    "h": 900,
+    "scrollW": 1440,
+    "clientW": 1440,
+    "scrollH": 1053,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 775,
+      "viewportH": 900,
+      "aboveFold": true
+    }
+  },
+  {
+    "name": "ultrawide",
+    "w": 2560,
+    "h": 1080,
+    "scrollW": 2560,
+    "clientW": 2560,
+    "scrollH": 1080,
+    "overflowX": 0,
+    "missing": [],
+    "escapes": [],
+    "tiny_targets": [],
+    "fold": {
+      "submitBottom": 789,
+      "viewportH": 1080,
+      "aboveFold": true
+    }
+  }
+]

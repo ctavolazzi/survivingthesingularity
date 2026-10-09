@@ -476,3 +476,143 @@ Remaining: P-07, P-08, P-10, P-12, P-14, P-15, P-16, P-17, P-18, P-19 (contested
 far. The failures cluster in **numeric comparisons repeated from secondary sources**: P-09's Wellington,
 P-21's US dollar figure, and now P-19's page count. That is a narrow, predictable target for the
 remaining passes.
+
+## 2026-08-03. Citation audit: P-11 (Torches), P-12 (Bronze, re-check), P-13 (Abbot), current numbering
+
+**Numbering note.** The 2026-07-27 entries above use the pre-renumber scheme (22 precedents). The
+insertion of P-10 (The Robot in the Orchestra Pit) shifted everything after P-09 up by one: old P-11 =
+current P-12, old P-13 = current P-14, old P-19 = current P-20, old P-21 = current P-22, old P-22 =
+current P-23. Everything below uses current numbering (23 precedents).
+
+### P-11, Torches of Freedom. TWO REPAIRS AND A CUT, PASSES AFTER REPAIR.
+
+- **"The inventor of the phrase 'public relations'": CUT.** The phrase predates Bernays: Dorman B.
+  Eaton's 1882 Yale Law School address "The Public Relations and Duties of the Legal Profession," and
+  railway trade literature by 1897. Bernays coined the job title "counsel on public relations"
+  (Crystallizing Public Opinion, 1923). Replaced with "the future father of public relations," the
+  label his obituaries and the profession's histories attached to him. Same species as P-09's
+  Wellington: a vivid secondary-source epithet absorbed with its error intact.
+- **"Hired young women": now "recruited."** Roughly ten women brought in by telegram signed by Bernays'
+  secretary Bertha Hunt, presented as a women's rights advocate; press briefed in advance.
+- **"Half the American cigarette market": now "half the potential American cigarette market."**
+- **Murphree caveat recorded** (American Journalism 32:3, 2015): the staging is confirmed accurate, but
+  the story that the papers uniformly fell for it is Bernays' own retelling; some editors called it out.
+  Appendix B sources 207-211.
+
+### P-12, The Year the Bronze Stopped. PASSES (re-check).
+
+Confirms the 2026-07-27 pass (logged there as P-11 under the old numbering). Copper from Cyprus, tin
+from sources including modern Afghanistan, the interdependence cascade, writing lost in Greece for
+centuries: all check against Cline. The book itself added as Appendix B source 212.
+
+### P-13, The Abbot's Confession. ONE QUOTE REPLACED, ONE CLAIM CUT.
+
+- **The "quickly disappear" quote: REPLACED.** "The printed book is made of paper and, like paper, will
+  quickly disappear" circulates widely but could not be traced past modern retellings. Replaced with the
+  documented translation: parchment a thousand years, paper two hundred.
+- **"His own monks quietly abandoned perpetual copying as pointless": CUT.** Inverts the record.
+  Trithemius kept exhorting his monks to copy, writing that a monk who cited printing as a reason to
+  stop was concealing his own sloth. Replaced with the documented fact: the Sponheim library grew from
+  around forty volumes to some two thousand, heavy with printed books, while De Laude Scriptorum went
+  to the press in 1494. Appendix B sources 213-215.
+- HISTORY-CASEBOOK.md entries F7 and C2 corrected to match, with pointers to the Appendix B blocks.
+
+### Verified elsewhere, confirmed landed
+
+The old-P-21 (current P-22) US precision fix recommended on 2026-07-27 is in the text: chapter 18 line
+127 now reads "about a hundred billion in the United States alone."
+
+### Running status (current numbering, 23 precedents)
+
+Verified: P-01 through P-06, P-09, P-10, P-11, P-12, P-13, P-14, P-20, P-22, P-23. **Sixteen of 23.**
+Remaining: P-07, P-08, P-15, P-16, P-17, P-18, P-19, P-21 (Access to Tools).
+
+**Pattern still holding:** the failures cluster in comparisons, superlative epithets, and vivid quotes
+inherited from secondary retellings (P-09's Wellington, P-20's page count, P-22's US figure, P-11's
+"inventor of the phrase," P-13's "quickly disappear"). First-claims verified against primary sources
+keep surviving. The remaining eight passes should keep hunting exactly that species.
+
+## 2026-08-03. Citation audit: the final eight. P-07, P-08, P-15, P-16, P-17, P-18, P-19, P-21
+
+All current numbering (23 precedents; map in the entry above). Four repaired, four passed clean.
+The hunt targeted the species the audit pattern predicted: comparisons, superlative epithets, and
+vivid numbers inherited from secondary retellings. Every failure found was exactly that species.
+
+### P-07, The Horse's Last Ledger. TWO REPAIRS.
+
+- **"He invented a unit of account": now "standardized."** The horse-for-engine comparison predates
+  Watt: Savery was rating engines against horses in The Miner's Friend (1702). Watt standardized it
+  to 33,000 foot-pounds per minute in the early 1780s and used it to price engines against the
+  animals. Same species as P-11's "inventor of the phrase."
+- **"Horse population... above twenty-five million in the 1910s": now "horse and mule population...
+  above twenty-six million in 1915."** The 25-million-plus figure belongs to horses and mules
+  together (26.5M, 1915); horses alone peaked around 21.5 million. The casebook (F4) already said
+  "horse and mule"; the book text had dropped the mules and kept the number. Appendix B sources
+  216-217.
+
+### P-08, The Grain Trap. PASSES.
+
+Shorter farmers, worse teeth, livestock disease, the "decline in health and stature": the standard
+bioarchaeological finding (Cohen and Armelagos 1984, decline in 19 of 21 societies; Mummert et al.
+2011 systematic review). Appendix B sources 218-219.
+
+### P-15, One Hundred Sixty Acres. PASSES.
+
+Checked against the Act: signed May 20, 1862; 160 acres; five years' residence and improvement;
+citizens or declared-intention immigrants, women included. Casebook F9 aligned to the text's hedge
+("one of the largest transfers"). Appendix B source 220.
+
+### P-16, The House That Came by Mail. TWO REPAIRS.
+
+- **"Shipped as precut, numbered lumber": precut now dated from 1916** (Aladdin's innovation, Sears
+  adopted; pre-1916 buyers cut their own lumber).
+- **"Frequently outperforming the contractor-built housing of the same era": CUT.** No comparative
+  record supports it. Replaced with what the record does support: first-growth southern yellow pine
+  framing, 18,000-22,000 estimated survivors. Appendix B sources 221-222.
+
+### P-17, The Graveyard of the Unconvinced. ONE REPAIR.
+
+- **"Earning 'only' $3.3 billion": now "bringing in 'only' $3.3 billion and losing money on printing
+  and postage."** The catalog lost roughly $175M in its final year; the precedent's point survives
+  the honesty. Casebook A2 already carried the loss; the book text had dropped it.
+- The rest checked clean: Sasson 1975 (8 lbs, 0.01 MP, 23 seconds, "that's cute" in his own telling),
+  Sears' first e-commerce in 1997 (Craftsman on sears.com; the 1997 date survives), Blockbuster's
+  $50M pass in 2000 (laughter disputed, outcome not), Borders 2001-2008-2011. Appendix B sources
+  223-227.
+
+### P-18, The Mirror Twin. PASSES.
+
+Film peak 2000 (60% of revenue, two-thirds of profit), ~90% collapse in a decade, Astalift 2007,
+Toyama Chemical 2008, LCD polarizer films. Appendix B source 228.
+
+### P-19, Twenty Million Gardens. ONE REPAIR (attribution).
+
+The twenty million gardens and the forty percent of fresh vegetables are the USDA's own wartime
+figures (it also claimed 42% of 1943 produce), and historians suspect they were generous. The text
+now says "by the Department of Agriculture's own count." "On the order of" stays. Casebook F11
+aligned. Appendix B sources 229-230.
+
+### P-21, Access to Tools. ONE REPAIR.
+
+- **"Sold welding rigs...": now "listed."** The catalog sold nothing directly; entries ran as
+  reviews with prices and supplier addresses, "an evaluation and access device" in its own statement
+  of purpose. The text gains that line, which is the precedent's own mechanism in Brand's words.
+- Jobs checks against the Stanford text: "sort of like Google in paperback form, 35 years before
+  Google came along"; stay hungry, stay foolish as the final-issue back-cover farewell. Appendix B
+  sources 231-232.
+
+### Casebook drift repaired in the same pass
+
+F12 (P-20, Seventy-Nine Pages) still said "forty-seven pages" and "proportionally one of the
+most-read things ever published in America" in its body, both killed by the 2026-07-27 correction of
+record. Now aligned: seventy-nine pages (Robert Bell first printing), roughly twenty-five printings
+in the first year.
+
+### Running status (current numbering, 23 precedents)
+
+**Verified: P-01 through P-23. Twenty-three of 23. The citation audit is complete.**
+
+The pattern held to the end: all four failures in this final pass were comparisons, epithets, or
+vivid numbers from secondary retellings (Watt "invented," the mule-less 25 million, the Sears
+"outperforming" claim, the unattributed USDA 40 percent, the catalog that "sold"). First-claims and
+disappearance-claims verified against primary sources survived every check of the entire audit.

@@ -1,0 +1,113 @@
+# Safari-engine coverage, because the dev machine cannot provide it.
+#
+# WHY THIS EXISTS. `npx playwright install webkit` fails on macOS 12 with
+# "Playwright does not support webkit on mac12". The primary dev machine is
+# 12.7.6 and cannot be upgraded, so WebKit will never be installable there.
+# playwright.config.js now detects that and drops the three WebKit projects
+# from local runs, which means a local `npx playwright test` is deliberately
+# NOT full browser coverage. This workflow is where that coverage comes from.
+#
+# WHAT IT COVERS. The three projects that cannot run on the dev machine:
+# webkit (Desktop Safari), mobile-safari (iPhone 13), tablet (iPad gen 7).
+# chromium, firefox and mobile-chrome already run locally, so re-running them
+# here would burn minutes to learn nothing.
+#
+# ON SECRETS. Eighteen tests in i-checkout-gate need Stripe and Supabase
+# credentials to reach the money path; without them the endpoint correctly
+# fails closed with a 503 and those tests fail. Rather than let that make this
+# workflow permanently red (an alarm nobody reads is worse than no alarm), the
+# run excludes that spec when no Supabase secret is configured, and says so in
+# the job summary. Add the TEST-MODE secrets below and it covers them too.
+# Never put live-mode keys here.
+
+name: e2e (WebKit)
+
+on:
+  push:
+    branches: [main, 'v0.*']
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# ON SIZING. The first real run of this workflow (30756938289) was killed at the
+# 30 minute ceiling with 29m08s spent in the test step alone; setup took 62s, so
+# the run was never close to fitting. The arithmetic: one project is 181 tests
+# after the grep-invert, three projects in one job is 543, and
+# playwright.config.js pins `workers: 1` under CI, so all 543 ran serially. At 3s
+# a test that is ~27 minutes at a 100% pass rate, before `retries: 2` charges
+# three attempts for every failure. So the projects are sharded into a matrix
+# here rather than serialised into one job.
+
+jobs:
+  webkit:
+    name: e2e ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    strategy:
+      # One project going red must not cancel the other two. Partial coverage
+      # that reports which engine broke beats a run that cancels itself.
+      fail-fast: false
+      matrix:
+        project: [webkit, mobile-safari, tablet]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # --with-deps pulls the system libraries WebKit needs on Ubuntu. Without
+      # it the browser downloads but refuses to launch, which looks identical
+      # to the macOS failure this workflow exists to route around.
+      - name: Install WebKit
+        run: npx playwright install --with-deps webkit
+
+      - name: Run WebKit projects
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_TEST_SECRET_KEY }}
+          STRIPE_PRICE_ID: ${{ secrets.STRIPE_TEST_PRICE_ID }}
+          STRIPE_PRICE_ID_STANDARD: ${{ secrets.STRIPE_TEST_PRICE_ID }}
+        run: |
+          set -o pipefail
+          # --workers overrides the `workers: CI ? 1` pin in playwright.config.js
+          # for this run only. Editing the config would also change local runs,
+          # where the single worker is deliberate. ubuntu-latest gives 4 vCPU.
+          PROJECT="--project=${{ matrix.project }} --workers=4"
+          if [ -z "${SUPABASE_URL}" ]; then
+            echo "::notice title=Partial run::No SUPABASE_URL secret configured, so i-checkout-gate is excluded. Add test-mode secrets to cover the checkout path."
+            echo "- **${{ matrix.project }}**: i-checkout-gate excluded, no test-mode secrets configured." >> "$GITHUB_STEP_SUMMARY"
+            npx playwright test $PROJECT --grep-invert "early-access checkout email gate"
+          else
+            echo "- **${{ matrix.project }}**: full run including checkout gate." >> "$GITHUB_STEP_SUMMARY"
+            npx playwright test $PROJECT
+          fi
+
+      # always(), NOT !cancelled(). A job killed by timeout-minutes counts as
+      # cancelled, so the previous guard skipped the upload on precisely the run
+      # that most needed a report: 30756938289 timed out and left nothing to read.
+      #
+      # if-no-files-found: ignore, because a clean pass writes no trace or video
+      # (retention is failure-only) and a missing artifact must not turn a green
+      # run red.
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          # Matrix jobs cannot share one artifact name.
+          name: playwright-report-${{ matrix.project }}
+          path: |
+            tests/reports/
+            tests/results/
+          retention-days: 14
+          if-no-files-found: ignore

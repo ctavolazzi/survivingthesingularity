@@ -1,0 +1,113 @@
+{
+  "status": "pass",
+  "version": "0.10.4",
+  "epub_sha256": "780a29d0ab73b5cefcc7eae2faa4a9a34a9ed9a902f67efcf252bd9742fae97c",
+  "structural_report_sha256": "983f6d22e77b3e4015a01123f5a940466761357a067a4d3b2d57747428a07f5e",
+  "layout_report_sha256": "19100d4f63e063fcba7f7f85b13fb654e2abec38860df8c2df035dad6ebfb6ef",
+  "ending_report_sha256": "3265f718f47bdee46c35eb21008e356de621b7ba58cf2e6618a274afded1b6a9",
+  "captures": [
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-1-390.png",
+      "sha256": "d6bce7344c04814a16a640a7c3a5b1ca2865d96b7387f6ee42002708da5a195e",
+      "edit": 1,
+      "width": 390,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-2-390.png",
+      "sha256": "d63a78cbf7690ba58d1d444bcdf03fa9fbf8b18c09d690a684ce71404a27ca1c",
+      "edit": 2,
+      "width": 390,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-3-390.png",
+      "sha256": "f9f39077a6e75f5a9721f9cdc2cba116cd9cf8d8f36922dbe7a51bd1e8d54bcc",
+      "edit": 3,
+      "width": 390,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-4-390.png",
+      "sha256": "d84c00fe0f8a540614dc45aab410996a15c0829b2540e5fb552bb5110a8651c8",
+      "edit": 4,
+      "width": 390,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-5-390.png",
+      "sha256": "702dc806a3b016f858774bc460d63df5a3ab73b5a1a869e7b26ab6841fdfe188",
+      "edit": 5,
+      "width": 390,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-6-390.png",
+      "sha256": "ae9341f6cf4a6a227ecc05ccc842d1e385e8b1641b8cee3f598cdd4a0292de27",
+      "edit": 6,
+      "width": 390,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-1-768.png",
+      "sha256": "72066c5ebd1d6a5910599cbefa04afd1d8a626198fa67281bb619f37b0f13918",
+      "edit": 1,
+      "width": 768,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-2-768.png",
+      "sha256": "ab49c27a6a2f93b21d5febbeaa11ad69be593a322957fb44343224a50f9b2ed9",
+      "edit": 2,
+      "width": 768,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-3-768.png",
+      "sha256": "74e39a98c4fa2861c4d59c53b3301a3528e0de8329e98f5d62209695ee699f5f",
+      "edit": 3,
+      "width": 768,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-4-768.png",
+      "sha256": "cf8ee11665736137bdcb876b4a2f5f53b64d924b57a930dcb38246a24e1de3d0",
+      "edit": 4,
+      "width": 768,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-5-768.png",
+      "sha256": "0b7e9f12f246b81079e47c801f905cee400e22080aa06f80a78d63dae2864480",
+      "edit": 5,
+      "width": 768,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-6-768.png",
+      "sha256": "557edd3190d80e052d7b72533aa6ec68ae1f7311f15baf241fc73826c141e3a4",
+      "edit": 6,
+      "width": 768,
+      "kind": "changed ending prose"
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/v103-reading-routes-768.png",
+      "sha256": "3269ec2ce46c2223fc4b76114bec96d9621b3bd243e9004a2fea5de12755a6ef",
+      "kind": "retained instructional diagram",
+      "width": 768
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/v103-first-year-index-768.png",
+      "sha256": "b2dd31515c06f080aca93d0934678151d50fe59fb22f9db823c6e1918194bf87",
+      "kind": "retained instructional diagram",
+      "width": 768
+    }
+  ],
+  "observations": [
+    "All six changed ending passages were visually inspected at both 390 and 768 pixels. Complete wording, emphasis and heading text are visible with no missing lines, horizontal clipping or line overlap.",
+    "The retained reading-route diagram shows all three routes, nodes, labels and its complete separate caption at 768 pixels.",
+    "The retained first-year diagram shows all twelve monthly themes, its lower instruction and complete separate caption at 768 pixels. The last monthly theme intentionally wraps to a second line without touching the border.",
+    "All 62 registered figures have passing browser geometry at both widths. This manual review does not claim to reinspect every retained artwork."
+  ],
+  "limits": "Chrome reflow of packaged XHTML and CSS with JavaScript disabled. Not EPUBCheck certification, dedicated e-reader pagination or physical-device acceptance. Text screenshots capture the passage element; outside list markers and full surrounding pagination are not shown."
+}

@@ -1,0 +1,67 @@
+# Does the committed tree actually build?
+#
+# WHY THIS EXISTS. On 2026-08-02, `src/routes/+layout.svelte` was committed and
+# clean while importing `$lib/components/SplashLoader.svelte`, which had never
+# been added to the index. `src/app.html` had the same relationship to the
+# untracked `static/splash-gate.js`. Local dev could not see it, because the
+# files were sitting in the working tree the whole time. Only a fresh clone
+# fails, and nothing in CI was doing a fresh clone plus a build.
+#
+# `git cat-file -e HEAD:src/lib/components/SplashLoader.svelte` returned absent
+# while the import was live in HEAD. The repo was shipping a tree that could not
+# be built by anyone who cloned it.
+#
+# WHAT CATCHES IT. actions/checkout gives exactly the committed tree, with no
+# untracked files, so `vite build` resolves every import against what is really
+# in git. Verified by construction before this file was written: exporting
+# c49508e~1 and building it fails in 5.49s with
+#   [vite:load-fallback] Could not load .../SplashLoader.svelte
+#   (imported by src/routes/+layout.svelte): ENOENT
+# while the same export of the fixed HEAD builds clean.
+#
+# This is deliberately separate from e2e-webkit.yml. That workflow has
+# paths-ignore for markdown and docs and only covers Safari engines; this one
+# must run on everything, and it is cheap enough to afford that.
+
+name: build guard
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: committed tree builds
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # No env is set on purpose. The build must not require Stripe or Supabase
+      # credentials: adapter-auto emits a warning about not detecting a
+      # production environment and still exits 0. If this step ever starts
+      # needing secrets to compile, that is a regression worth failing on.
+      - name: Build
+        run: npm run build
+
+      - name: Report what this proves
+        if: success()
+        run: |
+          echo "- Every import in the committed tree resolves. A fresh clone builds." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Report what this caught
+        if: failure()
+        run: |
+          echo "- **The committed tree does not build.**" >> "$GITHUB_STEP_SUMMARY"
+          echo "- The usual cause is a file that is imported but never \`git add\`ed: it exists on the author's disk, so local dev works, and is absent from the clone CI made." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Check the failing import with \`git cat-file -e HEAD:<path>\`. Absent means it was never committed." >> "$GITHUB_STEP_SUMMARY"

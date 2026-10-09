@@ -1,78 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  <defs>
-    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#64748b"/>
-    </marker>
-    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
-    </marker>
-  </defs>
-
-  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE INVERTER TRAP VS. THE DC-NATIVE PROTOCOL</text>
-  <line x1="40" y1="66" x2="560" y2="66" stroke="#1e293b" stroke-width="2"/>
-
-  <!-- TOP: inverter trap -->
-  <text x="60" y="118" font-size="13" font-weight="600" fill="#64748b">THE THERMODYNAMIC INVERTER TRAP</text>
-
-  <rect x="60" y="140" width="130" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-  <text x="125" y="166" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">SOLAR</text>
-  <text x="125" y="186" font-size="11" fill="#94a3b8" text-anchor="middle">DC</text>
-
-  <line x1="190" y1="170" x2="240" y2="170" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
-
-  <rect x="244" y="140" width="130" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-  <text x="309" y="166" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">BATTERY</text>
-  <text x="309" y="186" font-size="11" fill="#94a3b8" text-anchor="middle">DC</text>
-
-  <line x1="374" y1="170" x2="424" y2="170" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
-
-  <rect x="428" y="140" width="130" height="60" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
-  <text x="493" y="166" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">INVERTER</text>
-  <text x="493" y="186" font-size="11" fill="#64748b" text-anchor="middle">DC → AC</text>
-  <!-- heat waste -->
-  <path d="M 470 134 q 4 -10 0 -18 M 493 134 q 4 -10 0 -18 M 516 134 q 4 -10 0 -18" fill="none" stroke="#64748b" stroke-width="1.5" opacity="0.8"/>
-  <text x="493" y="106" font-size="11" fill="#64748b" text-anchor="middle">10-15% lost as heat</text>
-
-  <line x1="558" y1="170" x2="608" y2="170" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
-
-  <rect x="612" y="140" width="130" height="60" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
-  <text x="677" y="166" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">WALL BRICK</text>
-  <text x="677" y="186" font-size="11" fill="#64748b" text-anchor="middle">AC → DC again</text>
-  <path d="M 654 134 q 4 -10 0 -18 M 677 134 q 4 -10 0 -18 M 700 134 q 4 -10 0 -18" fill="none" stroke="#64748b" stroke-width="1.5" opacity="0.8"/>
-  <text x="677" y="106" font-size="11" fill="#64748b" text-anchor="middle">another 10-15% lost</text>
-
-  <line x1="677" y1="200" x2="677" y2="240" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
-  <text x="677" y="266" font-size="13" fill="#94a3b8" text-anchor="middle">your DC devices</text>
-  <text x="430" y="308" font-size="13" fill="#64748b" text-anchor="middle">up to 30% of your harvest burned converting DC to AC to DC</text>
-
-  <line x1="60" y1="332" x2="800" y2="332" stroke="#1e293b" stroke-width="2"/>
-
-  <!-- BOTTOM: DC native -->
-  <text x="60" y="374" font-size="13" font-weight="600" fill="#f59e0b">THE INDEPENDENT DC-NATIVE PROTOCOL</text>
-
-  <rect x="60" y="396" width="150" height="60" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
-  <text x="135" y="422" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">SOLAR</text>
-  <text x="135" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">DC</text>
-
-  <line x1="210" y1="426" x2="252" y2="426" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
-
-  <rect x="256" y="396" width="150" height="60" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
-  <text x="331" y="422" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">BATTERY</text>
-  <text x="331" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">12V / 24V bus</text>
-
-  <line x1="406" y1="426" x2="448" y2="426" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
-
-  <rect x="452" y="396" width="150" height="60" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
-  <text x="527" y="422" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">DC FUSE BLOCK</text>
-  <text x="527" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">marine-grade</text>
-
-  <line x1="602" y1="426" x2="644" y2="426" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
-
-  <rect x="648" y="396" width="150" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
-  <text x="723" y="422" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">DEVICES</text>
-  <text x="723" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">LEDs, pumps, USB-C</text>
-
-  <text x="430" y="500" font-size="13" fill="#f59e0b" text-anchor="middle">zero conversion loss · no inverter to buy, cool, or fail</text>
-  <text x="430" y="526" font-size="12" fill="#64748b" text-anchor="middle">every load in the shell already wanted DC; stop paying the round-trip toll</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 585" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">Two routes to a DC load</title>
+<desc id="desc">Solar charging and storage feed two conceptual paths to an already-DC device. The inverter path converts DC to AC and an adapter converts it back. The DC route still needs voltage regulation and protection. Both have charging, wiring and operating losses; compare at the intended load.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">Two routes to a DC load</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="78" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Same device. Compare the complete systems.</text>
+<path d="M31 111H122V159H31Z" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M52 112L52 158" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M76 112L76 158" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M100 112L100 158" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M32 135L121 135" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M191 111H289V159H191Z" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M208 122L208 146" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M222 122L222 146" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M236 122L236 146" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M250 122L250 146" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M264 122L264 146" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M357 115H433V157H357Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M382 107H407V115H382Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M133 135L181 135" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M181 135L173.97933950487703 138.83540430883363" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M181 135L173.97933950487703 131.16459569116637" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M300 135L347 135" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M347 135L339.97933950487703 138.83540430883363" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M347 135L339.97933950487703 131.16459569116637" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<text x="77" y="184" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Solar</text>
+<text x="240" y="184" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Charge control</text>
+<text x="395" y="184" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Battery</text>
+<path d="M395 200L395 213" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M123 213L360 213" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M395 213L360 213" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="123" y="249" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">INVERTER PATH</text>
+<text x="360" y="249" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">DC PATH</text>
+<path d="M123 264L123 280" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M123 280L119.16459569116637 272.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M123 280L126.83540430883362 272.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M360 264L360 306" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M360 306L356.16459569116637 298.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M360 306L363.83540430883363 298.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<text x="123" y="305" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Inverter</text>
+<text x="123" y="326" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">DC → AC</text>
+<path d="M123 340L123 356" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M123 356L119.16459569116637 348.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M123 356L126.83540430883362 348.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<text x="123" y="381" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Adapter</text>
+<text x="123" y="402" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">AC → DC</text>
+<text x="360" y="332" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Regulation +</text>
+<text x="360" y="354" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">fused distribution</text>
+<text x="360" y="383" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">matched voltage</text>
+<path d="M123 418L123 447" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M123 447L119.16459569116637 439.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M123 447L126.83540430883362 439.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M360 401L360 447" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M360 447L356.16459569116637 439.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M360 447L363.83540430883363 439.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M79 456H167V488H79Z" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="123" y="478" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">DC load</text>
+<path d="M316 456H404V488H316Z" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="360" y="478" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">DC load</text>
+<path d="M20 510L460 510" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="530" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Charging, wires and regulation still lose energy.</text>
+<text x="20" y="551" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Both need protection and voltage matching.</text>
+<text x="20" y="572" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Conceptual energy paths, not a wiring plan.</text>
 </svg>

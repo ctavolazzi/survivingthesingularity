@@ -1,0 +1,41 @@
+                                                                          CHAPTER 17
+
+Help that reaches a body
+Health belongs in the same larger ambition. We want less pain, ear-
+lier help, better treatment, and more room to live. A machine that
+advances a laboratory task, a tool that assists a clinician, and an aid
+that helps someone move through a day are different possibilities.
+Each needs evidence about the benefit it claims. An encouraging
+research result isnʼt yet a treatment someone can depend on.
+The access question remains after the technical achievement. If
+useful care exists but a person canʼt obtain it, the work of making that
+advance serve humanity is unfinished. A person shouldnʼt have to
+wish the invention had never happened because they fear what its
+business model will do to them.
+This is what I want optimism to demand of us. Use capability to
+relieve the burdens people already carry. Evaluate the machine hon-
+estly. Arrange access deliberately. Keep people able to question
+whatʼs being done to them and for them. A society can choose those
+purposes, then do the practical work required to make them real.
+
+
+
+Build your first node
+Autonomy isnʼt an idea. Itʼs calluses.
+1. Set up two Meshtastic boards. Choose supported hardware for
+   your local band. Install the official firmware for each exact board,
+   set the legal region, and pair the boards with your phones.
+   Exchange a message, then repeat after a power cycle and at the
+   actual locations you need. Follow the projectʼs official flasher
+   instructions.
+2. Build a small DC corner. A packaged 12-volt battery or power
+   station, a fused distribution block, a few 12-volt LED lights, and a
+   USB charger. Keep a phone and a radio alive through the next
+   outage.
+
+
+
+
+
+
+                                                                                297

@@ -1,0 +1,44 @@
+SURVIVING THE SINGULARITY
+
+
+Choose the boundary before the machine
+The Crucible breach started with an access failure. Other failures
+start with an unreliable answer, the wrong model for the job, or a
+decision the system was never fit to make. Good intentions settle
+none of those.
+Give a tool work that can be checked before its mistakes become
+someone elseʼs emergency. A model can propose a delivery schedule;
+a coordinator checks the vehicles and what people actually need. A
+model can find a relevant passage; a person reads the source. A con-
+fident explanation doesnʼt authorize a machine to decide that food is
+safe or equipment is ready to run.
+And keep the words straight. Local means it runs on nearby equip-
+ment. Offline means it works without a connection. An air gap sepa-
+rates the protected system from outside networks, with no wired or
+wireless network path across the boundary; moving data across it is a
+deliberate human act. NIST glossary, air gap None of those means the
+software is right or the data is safe. Keep the system patched, from
+sources youʼve verified. Collect as little private information as the job
+needs. Keep public and private services separate. Have a second
+person check anything that exposes a service to the internet, and test
+what an outsider can actually reach. The co-op learned that the hard
+way: a design shouldnʼt depend on one careful person never having a
+bad Friday.
+
+Help should enlarge a life
+
+Receiving a lot of help isnʼt a moral failure. Many of us will need it,
+and all of us have depended on work we couldnʼt do ourselves. The
+test is what the arrangement makes possible and what it demands in
+return.
+
+A meal shouldnʼt require a performance of ambition. A person who
+wants to rest today hasnʼt forfeited dinner. A person who wants paid
+work should have room for that too. And somebody still has to main-
+tain the equipment, recognize a bad result, and know when to stop.
+
+
+
+
+
+208

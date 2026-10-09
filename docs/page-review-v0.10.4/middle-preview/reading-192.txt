@@ -1,0 +1,19 @@
+One possible failure in recursive training on generated samples. This schematic is not a universal
+outcome or a timetable; real data, sampling and training choices affect the result. Based on
+Shumailov et al., Nature (2024).
+WHENAMODELEATSITSOUTPUT
+Onepossiblelineageunderrepeatedsampling.
+Startingexamples
+Arangeofcases
+canberepresented.
+Generatedsamples
+Rarecasescanbe
+lostinresampling.
+Possiblecollapse
+Varietycanshrink;
+errorscandrift.
+Schematiccurves,notagenerationtimetable.
+Realdata,samplingandtrainingallmatter.
+Shumailovetal.,Nature(2024).
+CHAPTER 10
+187

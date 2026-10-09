@@ -1,0 +1,702 @@
+--- v0.8.1/01-preface.md
++++ v0.8.2/01-preface.md
+@@ -28,12 +28,17 @@
+ 
+ ---
+ 
+-## Precedent P-01: The Reading Rage (1790s)
++## Precedent P-01: The Reading Rage (Britain, eighteenth and early nineteenth centuries)
+ 
+ In eighteenth-century Britain, the widening audience for novels provoked arguments about what reading did to people, particularly young women. Critics worried about morals, time, and the difference between life on the page and life in the room. Reading was becoming an activity a person could choose beyond the supervision of the people who thought they knew what was good for her.
+ 
+ Ana Vogrinčič's study of the English novel-reading panic follows those disputes through the culture of the period. The objections were not a single medical verdict or a view shared by everyone. They were arguments about a changing practice, its audience, and its authority. [Vogrinčič, The Novel-Reading Panic in 18th-Century England](https://hrcak.srce.hr/en/clanak/49661)
+ 
++Jane Austen puts the dispute inside *Northanger Abbey*. In Chapter 5, Catherine and Isabella spend rainy mornings reading together. The narrator interrupts their story to defend the activity, including against novelists who make their own heroines despise novels. She imagines a young woman putting down a book with embarrassment, describing it as "only a novel," although she would proudly identify a more respectable publication. The distinction gives the reader a small social performance to watch: the book has not changed, but the admission of enjoying it has become something to manage. This is fiction and a novelist's argument for her craft, not a transcript of an encounter or a survey of British opinion. It shows what one writer thought needed defending. [Austen, Northanger Abbey, Chapter 5](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0005)
++
++Austen also gives her defense an awkward companion. Later, Catherine recognizes that Gothic reading has helped her turn ordinary circumstances at the abbey into evidence for a frightening story. The book that defends novels makes its heroine answer for a bad inference. Pleasure and imagination deserve room; they do not make every interpretation sound. [Austen, Northanger Abbey, Chapter 25](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0025)
++
++An optimist can inherit that discipline. We can defend someone's access to a new tool while examining what they believe it can do. We can object to the embarrassment attached to using it without treating enthusiasm as proof. A benefit worth pursuing deserves that much care.
+ 
+ That is the useful comparison. A new practice can carry benefits and costs while also disturbing a familiar arrangement of authority. Ask which argument is being made. Someone may be describing harm, defending a position, or doing both. The work of criticism is to tell the difference.
+ 
+--- v0.8.1/00-chapter0.md
++++ v0.8.2/00-chapter0.md
+@@ -161,9 +161,17 @@
+ 
+ ---
+ 
+-## Precedent P-02: The Toy at the Fair (Philadelphia, 1876)
++## Precedent P-02: The Voice at the Fair (Philadelphia, 1876)
+ 
+ At Philadelphia's Centennial Exhibition in 1876, Alexander Graham Bell demonstrated a telephone. A letter to his parents, written on June 27, records his account of the demonstration and the attention it received. The large Corliss steam engine was another attraction at the exhibition. Visitors could encounter an established form of industrial power and a much newer way to communicate in the same sprawling fair. [Bell to his parents, June 27, 1876, Library of Congress](https://www.loc.gov/item/magbell.00500228/)
++
++Bell's letter gives the demonstration a human scale. Dom Pedro II, emperor of Brazil, recognized him from an earlier meeting in Boston. William Thomson, later Lord Kelvin, was there too. Bell first demonstrated electrical signaling, then offered something less settled: the transmission of a human voice. He described it to the listeners as an invention still in development. He went into another room and sang.
++
++At that point the letter changes its source of information. Bell tells his parents that Willie Hubbard supplied the account of the listeners' reactions. Thomson heard words, asked to find Bell, and came to the other room. The distinction matters: some of what survives is an inventor describing his own work, and some is an inventor repeating what an associate told him. It is a remarkable record without our adding a roomful of scoffers for him to defeat.
++
++Near the end, the same letter turns from sound to bargaining. Bell reports a conversation with rival inventor Elisha Gray about possibly joining their interests against Western Union. He hopes cooperation will bring success and fears prolonged lawsuits will leave them vulnerable to the larger company. This was a proposed arrangement as Bell understood it that day, not evidence that the agreement took effect. [Bell's letter, including the demonstration and proposed alliance](https://tile.loc.gov/storage-services/service/mss/magbell/005/00500228/00500228.pdf)
++
++There, on two pages, are both kinds of invention the chapter is asking you to watch: a new technical possibility and people beginning to negotiate who will control it. The second doesn't wait for the first to become ordinary.
+ 
+ The telephone's importance wasn't exhausted by the moment someone heard a voice through it. A demonstration could establish that an effect was possible. Ordinary use would require equipment, connections, operation, and people willing and able to use the service.
+ 
+@@ -180,4 +188,3 @@
+ 3. Revisit your prediction in six months, including what failed to arrive.
+ 
+ ---
+-
+--- v0.8.1/03-chapter1.md
++++ v0.8.2/03-chapter1.md
+@@ -101,6 +101,14 @@
+ 
+ The juxtaposition is memorable because the forecast failed so dramatically. It does not turn a newspaper editorial into a representative sample of all contemporary expertise, or a warrant to disregard expertise now.
+ 
++Four years before the flight, Wilbur Wright had written to the Smithsonian Institution on his bicycle company's stationery. The letter, dated May 30, 1899, asked for publications about flight and a list of other works he could study. He offered to pay. He believed flight was possible, but described his next step as learning what other investigators already knew. The future aviator was requesting a reading list. [Wilbur Wright to the Smithsonian, May 30, 1899](https://siarchives.si.edu/history/featured-topics/stories/letter-dated-may-30-1899)
++
++Learning from predecessors didn't require treating their measurements as untouchable. After disappointing glider trials in 1901, the brothers built a wooden wind tunnel in their Dayton shop. Their shop engine drove its fan. They made small metal wing models and balances to compare lift and drag. Even the measuring apparatus needed work: the fan disturbed the airflow, and they spent time straightening it before trusting the results. The better aircraft followed a better way of asking what the air was doing. [NASA Glenn, Wright 1901 Wind Tunnel](https://www.grc.nasa.gov/WWW/K-12/airplane/wrights/tunnel.html)
++
++The newspaper supplies the punch line. The shop supplies the useful history. Existing research gave the brothers a place to begin; a disagreement between prediction and observation gave them a reason to investigate further. Neither reverence for authority nor pleasure in defying it would have done the measuring for them.
++
++That is the standard I want applied to the dates in this book. My confidence is a reason to make a claim inspectable. A forecast earns its place by surviving contact with evidence, and by becoming more useful when it doesn't survive intact.
++
+ **The mechanism.** The aviation forecast illustrates a large error. One failed pessimistic prediction cannot tell us the direction or size of the next error.
+ 
+ **The rule.** Hold optimistic and pessimistic forecasts to the same evidence.
+@@ -112,4 +120,3 @@
+ 3. Choose a review date and include your own prediction in the record.
+ 
+ ---
+-
+--- v0.8.1/04-chapter2.md
++++ v0.8.2/04-chapter2.md
+@@ -112,6 +112,12 @@
+ 
+ Britain's Locomotives Act of 1865 imposed restrictions on road locomotives, including a person proceeding ahead with a red flag. The law made a person on foot part of the operating arrangement for a new kind of road machine.
+ 
++The flag becomes less comic when you put the horses back on the road. Section 3 required at least three people to conduct the machine, with one walking at least sixty yards ahead. That person's duties included warning riders, signaling a stop, and helping horse-drawn traffic pass. The same section prohibited whistles, restricted releases of steam, and required the machine to stop when a person with a horse signaled. Whatever the merits of those requirements, the law was arranging an encounter between two kinds of traffic. [Locomotives Act 1865, section 3](https://www.legislation.gov.uk/ukpga/Vict/28-29/83/pdfs/ukpga_18650083_en.pdf)
++
++The parliamentary debate adds a turn that the usual story leaves out. On May 26, the Earl of Hardwicke presented the bill partly as relief from an earlier system of restrictions. Lord Kinnaird described owning two machines and farming land five miles apart. Rules that confined travel to the night, he argued, made moving agricultural machinery impractical. The Earl of Carnarvon took the opposite view: removing the Home Secretary's power to restrict dangerous use would weaken protection. These are the participants' arguments, not measurements proving either side right. [House of Lords, May 26, 1865, columns 867–872](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading)
++
++The choices were already more complicated than permission against prohibition. There was a dispute over which authority should decide, which precautions were workable, and how people doing useful work could share a road. Calling the whole debate fear of progress would hide the practical conflict. Calling every precaution adequate would hide it too.
++
+ A rule can distribute the burdens of change: who has to slow down, who supplies extra labor, and who is protected from a hazard. It should not be compressed into a claim that all road vehicles faced identical conditions or that a single statute explains the later geography of the automobile industry. An analogy to a present restriction needs the text and context of both rules.
+ 
+ **The mechanism.** A rule can change the cost and location of development. Its purpose and effects need a particular causal record, not a general story that every restriction is capture.
+@@ -125,4 +131,3 @@
+ 3. Ask who benefits, who bears costs, and what evidence would change your view.
+ 
+ ---
+-
+--- v0.8.1/05-chapter3.md
++++ v0.8.2/05-chapter3.md
+@@ -94,9 +94,17 @@
+ 
+ ---
+ 
+-## Precedent P-05: The Fleet That Sailed Home Forever (Ming China, 1433)
++## Precedent P-05: The Court and the Fleet (Ming China, 1405 to 1433)
+ 
+ Zheng He's early-fifteenth-century expeditions connected Ming China with ports across the Indian Ocean. The court later stopped sponsoring those voyages.
++
++Before the last expedition, the voyagers left an account of themselves in stone. A 1431 inscription at Liujiagang placed their voyages within a temple's account of the protection of the Heavenly Princess. Its authors described imperial commissions, distant ports, storms survived, and offerings. They also described force: the capture of rulers who resisted them, including a king in Ceylon. The inscription says that the king was presented to the emperor after the fleet returned in 1411, then pardoned and sent back. Capture and mercy both appeared as acts of imperial authority. The same account presented the voyages as bringing order and security. It was the expedition's justification of its actions, not a report written by the people on the receiving end. [Liujiagang inscription, translated by Edward L. Dreyer, pages 191–193](https://edspace.american.edu/justinjacobs/wp-content/uploads/sites/986/2022/12/31-Historical-Accounts-of-Zheng-He.pdf)
++
++That combination is worth keeping in view. A fleet can carry knowledge and gifts while carrying the authority of a state. The ability to cross an ocean tells you little by itself about the terms on which the visitor will meet the people already there. Even a surviving account of generous intentions has an author and an audience.
++
++Whether the voyages should have continued is a different question from what continued voyages should have been for. The fleet's reach cannot settle its purpose.
++
++When this book imagines machines going farther than we can, I want the people who remain on Earth to stay in the picture. Who set the destination? Who supplied the resources? Who can contest the assignment? Those questions belong beside the engineering achievement. A wider range does not choose a wiser purpose.
+ 
+ The decision belongs to a complicated political and economic history. It did not mean that China ceased changing, that all maritime activity ended, or that five subsequent centuries can be explained by one abandoned program. The size of the fleets and the reasons for the decision need their own evidence; neither establishes that future machine civilizations must expand into space.
+ 
+@@ -111,4 +119,3 @@
+ 3. Identify what you could do if that support ended.
+ 
+ ---
+-
+--- v0.8.1/06-chapter4.md
++++ v0.8.2/06-chapter4.md
+@@ -78,9 +78,17 @@
+ 
+ ---
+ 
+-## Precedent P-06: The Great Demotion (Frombork, 1543)
++## Precedent P-06: The Moving Earth (Frombork and Nuremberg, 1543)
+ 
+ Copernicus's account displaced Earth from the center of the planetary system. Later developments in astronomy and biology challenged other familiar pictures of humanity's place.
++
++Open the book he published in 1543 and you find more than a diagram. Copernicus dedicated it to Pope Paul III. In that dedication, he described his hesitation about publishing and named people who had urged him to proceed, including Cardinal Nicolaus Schönberg and Bishop Tiedemann Giese. He presented his search for a more coherent account of the heavens as work within a learned tradition. The later picture of science facing a single wall of religious opposition doesn't describe the company named on these pages. [Copernicus, dedication to Paul III, translated in the Harvard Classics](https://hti.osu.edu/sites/hti.osu.edu/files/dedication_of_the_revolutions_of_the_heavenly_bodies_to_pope_paul_iii.pdf)
++
++Readers also encountered a framing Copernicus had not authorized. During publication in Nuremberg, Andreas Osiander added an unsigned preface treating the astronomical hypotheses as aids to calculation rather than necessarily true descriptions of the world. Copernicus's moving Earth thus reached readers with two different accounts of what kind of claim the book was making. Later readers could adopt useful calculations while withholding agreement about the physical arrangement of the heavens. [Cambridge, Copernicus's Book](https://www.sites.hps.cam.ac.uk/starry/coperbooks.html)
++
++The disagreement was partly over evidence and partly over who was entitled to say what the evidence meant. That is a more revealing history than a procession from darkness to a single moment of enlightenment. An idea traveled through patrons, printers, teachers, and readers. Each could assist its passage while also affecting its interpretation.
++
++This does not put every speculative claim on the same footing as Copernicus. It asks us to notice the difference between a useful calculation, a claim about reality, and the authority attached to either. The distinction matters especially when a machine can make an answer look finished before we have decided what would establish it as true.
+ 
+ People continued to make breakfast, fall in love, and plant gardens while arguments about those pictures continued. Institutions adapted, resisted, and changed in different ways. There was no single universal reaction, and no simple disappearance of every hierarchy attached to an older account.
+ 
+@@ -95,4 +103,3 @@
+ 3. Notice a person whose experience differs from your expectation.
+ 
+ ---
+-
+--- v0.8.1/07-chapter5.md
++++ v0.8.2/07-chapter5.md
+@@ -77,9 +77,15 @@
+ 
+ ---
+ 
+-## Precedent P-07: The Horse's Last Ledger (1783 to 1960)
++## Precedent P-07: The Horse and the Ledger (Britain and United States, eighteenth to twentieth centuries)
+ 
+ James Watt had a marketing problem. He needed to sell steam engines to men who owned horses, so he took the engine-sellers' old boast, this machine does the work of so many horses, and standardized it into a unit of account that priced the animal in its own currency: *horsepower*, thirty-three thousand foot-pounds per minute. From the moment that number existed, every horse in the world was walking around with it on its back, whether its owner knew it or not.
++
++The business arrangement survives in more concrete form than the slogan. Science Museum holds an agreement dated March 1, 1786, between Watt and Matthew Boulton on one side and Samuel D. Liptrap and his partners on the other. It concerned a ten-horsepower engine at a distillery near Whitechapel Road, to grind grain and pump liquids. The customer would erect and maintain it; an annual premium would go to the inventors during the remaining patent term. The museum's account describes their pumping-engine royalties as a share of coal savings, with a related savings-based approach for rotative engines replacing other power. [Science Museum Group, engine agreement of 1786](https://collection.sciencemuseumgroup.org.uk/objects/co50966/original-indenture-of-agreement-for-erection-of-a-agreements)
++
++The improvement was physical, but the payment followed a comparison: what would the same work have cost another way? Someone had to define that alternative, measure the work, and maintain the machine. A claim about saved effort had become a continuing relationship between parties with different interests in the result.
++
++That is why the ledger needs more than a spectacular output figure. A machine may use less fuel while its owner owes a premium. It may reduce one kind of labor while creating installation and maintenance work. To decide whether an arrangement is better, you need to follow both the useful capacity and the obligations that accompany it. The engine cannot answer that second question by turning faster.
+ 
+ Mechanization did not replace farm horses and mules in one clean step. A USDA historical series counts more than twenty-six million on United States farms at the 1918 peak, followed by a long decline. Machinery, wages, feed costs, and farm circumstances all belonged in the change. A motor's efficiency alone cannot tell that story. [USDA, Farm Production Practices, Costs, and Returns, Statistical Bulletin 83, table 14](https://downloads.usda.library.cornell.edu/usda-esmis/files/7m01bk68h/d217qs47w/4f16c641b/frmprodcostreturn_Farm_Production_Practices_Costs_and_Returns__1910-48.pdf)
+ 
+@@ -96,4 +102,3 @@
+ 3. Separate time saved from the consequences for income and choice.
+ 
+ ---
+-
+--- v0.8.1/08-chapter6.md
++++ v0.8.2/08-chapter6.md
+@@ -112,6 +112,14 @@
+ 
+ That makes agriculture a useful complication for a book about technology. A practice can spread while imposing costs on some of the people adopting it. The history is not a single vote by humanity, and it is not a uniform story in which every forager became a farmer or every farmer became better off.
+ 
++Consider a later settlement in that long transition: Çatalhöyük, on the Anatolian plateau. Its houses stood back to back, without streets between them, and people entered through the roofs. Wall paintings and reliefs survived inside. This was a place people built and inhabited, not merely a point on a graph of agricultural expansion. The roofs and rooms give the change a human scale. [UNESCO, Neolithic Site of Çatalhöyük](https://whc.unesco.org/en/list/1405/)
++
++The inhabitants left another record in their bodies. A 2019 study led by Clark Spencer Larsen examined skeletal evidence across roughly twelve centuries of occupation. Teeth carried evidence of decay associated with a cereal-rich diet. Changes in leg bones were consistent with increasing travel and physical demands over time. The settlement could endure while obtaining what sustained it became harder work. Those findings describe different parts of the achievement: maintaining a community and living well inside it. [Larsen and colleagues, Bioarchaeology of Neolithic Çatalhöyük](https://doi.org/10.1073/pnas.1904345116)
++
++The same study refuses a tidy story of uninterrupted decline. Some bone changes associated with infection became less prevalent through time, and the researchers found resources sufficient to sustain relatively normal growth. The evidence points in more than one direction. Bones preserve evidence of particular stresses; they don't give us a complete account of what any one inhabitant thought their life was worth. [Larsen and colleagues, growth and infection findings, page 6 of the open manuscript](https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/3/58744/files/2020/10/Catalhoyuk-PNAS-Publication.pdf)
++
++For the machinery arriving now, this changes what I want to count. Adoption tells us that a practice found a way to spread. Output tells us what it produced. Neither number, on its own, tells us whether the person doing the work had enough to eat, enough rest, or any power to change the terms. The lesson isn't to abandon the field. It's to stop treating a growing harvest as the whole account of the people living beside it.
++
+ **The mechanism.** Agricultural transitions involved different conditions and outcomes across places. Greater production or wider adoption does not establish better lives for every participant.
+ 
+ **The rule.** Count welfare and distribution separately from adoption.
+--- v0.8.1/09-chapter7.md
++++ v0.8.2/09-chapter7.md
+@@ -138,6 +138,12 @@
+ 
+ Machine-breaking met severe repression. The history carries losses that a story about eventual technological adoption can too easily erase. Whether a particular tactic worked is a question about its aims and consequences, not a reason to dismiss every grievance held by the people who used it.
+ 
++In Nottingham, the disputed terms included payment by the piece and the rent charged for knitting frames. December 1811 negotiations failed to restore earlier terms. Historian Kevin Binfield places those disputes beside high food prices and depressed trade: the machine was the thing workers could reach, while the pressures on a household came from several directions. [Binfield, Writings of the Luddites, historical introduction](https://campus.murraystate.edu/academic/faculty/kBinfield/luddites/LudditeHistory.htm)
++
++The surviving documents make that distinction uncomfortable, which is why they are worth reading. A proclamation dated 23 December 1811, preserved in Britain's National Archives, threatens death to informers and constables investigating the frame-breakers. Its author invokes the invented authority of King Ludd. This isn't a harmless misunderstanding of how a knitting frame works. It is an attempt to exercise power through fear. The archive also places the violence alongside petitions, public protests, and appeals to employers and government. Machine-breaking was part of the struggle, not its entire vocabulary. [National Archives, proclamation of Ned Ludd, HO 42/118](https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-proclamation-of-ned-ludd/)
++
++Hold the two facts together: workers had material grievances, and some methods threatened other people. Recognizing one doesn't cancel the other. A humane technological transition needs ways to contest wages and conditions before an argument about machinery becomes a contest over who can frighten whom. Denny's question belongs in the room while there is still room to answer it.
++
+ **The mechanism.** Worker resistance concerns wages, skill, power, and working conditions as well as machinery. Its outcomes cannot be reduced to whether a technology disappeared.
+ 
+ **The rule.** Take the livelihood claim seriously before judging the tactic.
+@@ -154,7 +160,13 @@
+ 
+ Recorded sound changed work for musicians, including the employment associated with silent-film accompaniment. The American Federation of Musicians campaigned against the displacement and later used recording bans and bargaining to seek different terms.
+ 
++On 1 August 1942, the union stopped its members making new recordings for commercial sale. The record companies had prepared by building up inventories; they also reached into their older catalogs. Their stock of recorded work could keep earning while the people needed to make more withheld their labor. The bargaining power lay at that junction between a reusable product and the living work required to replenish it. Capitol and Decca settled in 1943. RCA Victor and Columbia held out until 1944. There was no single morning when an entire industry agreed that the workers had a point. [University of Maryland Special Collections, The Recording Ban of 1942](https://exhibitions.lib.umd.edu/songsofwar/wwii/currents/recording-ban)
++
+ The Music Performance Trust Fund grew out of that history. Its institutional account describes funding free public performances through arrangements involving the recording industry. This is an example of organized benefit sharing, not evidence that every displaced musician recovered their income or that a fraction of every play automatically reaches the fund. [Music Performance Trust Fund, About](https://musicpf.org/about/)
++
++The independent fund established in 1948 put an important distinction into practice: a performance could be free to its audience while providing income to its musicians. Its account describes royalties paid by signatory recording companies, supplemented by co-sponsors, and administration by a trustee independent of both the union and the industry. The money needed a route, an agreement, and somebody responsible for moving it. [Music Performance Trust Fund, institutional history and funding](https://musicpf.org/about/)
++
++That is a useful piece of history for the kitchen door. A meal can be free to Rosa without asking the cook to work for nothing. Recorded music and live performance could coexist under changed terms; useful automation and supported human work can be discussed on the same basis. The analogy doesn't fund a food service. It shows why the question of who pays deserves an institutional answer instead of a shrug.
+ 
+ The useful question is what the bargaining changed. Calling it a failure simply because recorded music survived would miss the institutional achievement. Calling it a complete cure would miss the people whose work disappeared.
+ 
+--- v0.8.1/10-chapter8.md
++++ v0.8.2/10-chapter8.md
+@@ -103,7 +103,15 @@
+ 
+ In 1929 Edward Bernays organized a publicity event connecting women's smoking with emancipation. Women carrying cigarettes appeared at New York's Easter parade under the phrase "torches of freedom." The event served a tobacco company's commercial interest while borrowing the language of a much larger struggle.
+ 
++Start with what survived. A pair of photographs in the Library of Congress identifies Nancy Hale Hardin beside her husband and Edith Lee walking with a dog on Fifth Avenue, Easter Sunday, 31 March 1929. Both women hold cigarettes. Names, a date, a street, a product in a hand. The photograph records people doing something in public. It cannot tell us how many other women changed their behavior because they saw it. [Library of Congress, Easter Sunday photographs](https://www.loc.gov/pictures/resource/ds.07375/)
++
++Bernays had already published his theory in *Propaganda* the previous year. In one explicitly hypothetical example, he imagined selling pianos by first making a music room desirable: bring in respected decorators and performers, arrange publicity, encourage architects to include the room in their plans. The prospective buyer would encounter the purchase as the completion of a life they wanted. He was describing how a seller might shape the setting in which a choice felt natural. This was a publicist explaining his method, not an experiment proving that every audience would comply. [Bernays, Propaganda, chapter IV, pages 54–56](https://www.gutenberg.org/cache/epub/78634/pg78634-images.html)
++
+ That is the useful warning. A real aspiration can be attached to a product, and a sales campaign can borrow the emotional force of a cause. The event's later reputation should not be mistaken for a measurement of how many people it persuaded. Historical research has questioned the familiar account of its press reception and significance. What we can examine is the appeal: freedom presented in the form of a purchase. When a technology company offers liberation, ask what the product actually lets a person do and on whose terms. [Murphree, Torches of Freedom research](https://aquila.usm.edu/fac_pubs/18673/)
++
++Historian Vanessa Murphree examined more than 250 articles for her study, including clippings in Bernays's own scrapbooks. Some editors recognized the publicity maneuver. Repeated wire stories helped fill the scrapbooks; a thick book of clippings was not a count of independent conversions. The legend of an all-powerful manipulator asks us to surrender something the evidence doesn't require: our capacity to question the story. [Murphree, research methods and contemporary press responses](https://www.american-journalism.org/teaching-our-journal/teaching-our-journal-edward-bernayss-1929-torches-of-freedom-march/)
++
++I owe you the same test. The words *food first* should earn their force from a meal somebody can obtain. If I can move you with the phrase but cannot help explain the provision, I have given you an appealing picture of a future. The work is making the picture answer to the person at the door.
+ 
+ **The mechanism.** Publicity can connect a commercial interest with a sincerely held value. That does not establish total control over an audience or every participant's private motive.
+ 
+--- v0.8.1/11-chapter9.md
++++ v0.8.2/11-chapter9.md
+@@ -140,11 +140,19 @@
+ 
+ ---
+ 
+-## Precedent P-12: The Year the Bronze Stopped (Eastern Mediterranean, c. 1177 BC)
++## Precedent P-12: The Networks Behind the Bronze (Eastern Mediterranean, fourteenth to twelfth centuries BC)
+ 
+ Late Bronze Age societies around the eastern Mediterranean depended on trade, including the movement of materials used to make bronze. Several societies experienced severe disruption around the end of that period.
+ 
++To make the network tangible, go back earlier, to a ship that sank off what is now Turkey in the fourteenth century BC. Archaeologists excavating the Uluburun wreck recovered copper and tin ingots, glass, ivory, jewelry, pottery, and stone anchors. Some of the copper had been cast into the broad, four-cornered shapes archaeologists call oxhide ingots. Here is a supply chain you can point to: material intended for transformation elsewhere, carried together in a vessel whose journey ended. [Institute of Nautical Archaeology, Uluburun excavation](https://nauticalarch.org/projects/uluburun-late-bronze-age-shipwreck-excavation/)
++
++The cargo carried copper and tin in approximately the proportions used to make bronze. The institute describes an elite shipment, with luxury goods for wealthy recipients alongside raw materials. Its contents show that long connections could assemble extraordinary resources. They don't show that everyone living near a destination could obtain those resources. The difference between a rich network and a secure household was already a question worth asking. [Institute of Nautical Archaeology, cargo and interpretation](https://nauticalarch.org/projects/uluburun-late-bronze-age-shipwreck-excavation/)
++
++Uluburun sank well before the disruptions conventionally gathered around 1200 BC. Its cargo gives us something concrete to ask about when considering that later period: which materials had to arrive, who could arrange their passage, and what could continue if they didn't? The later crisis involved different places and times; there was no single date on which the Mediterranean switched off. [Knapp and Manning, Crisis in Context](https://doi.org/10.3764/aja.120.1.0099)
++
+ Researchers examine interacting pressures rather than one universal switch: climate, conflict, migration, political organization, and interrupted exchange. Places did not all experience the same collapse or recovery. The example invites an investigation of dependencies; it cannot prove that local production always survives or that every large network fails.
++
++The controller in Marta's shed carries its own map of connections: probes, boards, terminals, the supplier's stock, the person who knows the fault. Moving assembly into the neighborhood doesn't erase that map. It gives the neighborhood a chance to understand more of it and change the connections it can. Keep the exchange that brings something useful. Build the capacity to repair, substitute, and keep feeding people when one route fails. A workshop's strength is measured partly by the relationships it can keep working.
+ 
+ **The mechanism.** Interdependence can transmit disruption. Different communities also have different resources and capacity to adapt; neither localism nor centralization guarantees survival.
+ 
+--- v0.8.1/12-chapter10.md
++++ v0.8.2/12-chapter10.md
+@@ -88,11 +88,19 @@
+ 
+ ---
+ 
+-## Precedent P-13: The Abbot's Confession (Sponheim, 1492)
++## Precedent P-13: The Abbot and the Press (Sponheim and Mainz, 1492 to 1494)
+ 
+ Johannes Trithemius defended the copying of manuscripts in *In Praise of Scribes*, written in 1492 and issued in print in 1494. He valued the practice and questioned the durability of paper compared with parchment. He also recognized that texts a printer found uneconomic could still deserve preservation by hand. [History of Information, Trithemius and long-term storage](https://www.historyofinformation.com/detail.php?id=337)
+ 
+-The printed edition is an appealing irony, but it carries a better lesson than the accusation of hypocrisy. Trithemius used printing while arguing that it did not meet every need. Distribution, preservation, and the value of a practice are different questions. His example gives us permission to use a new tool without declaring every older skill worthless, or every reservation dishonest. [Heidelberg University Library, 1494 printed edition](https://digi.ub.uni-heidelberg.de/diglit/it00442000/0004)
++The printed edition is an appealing irony, but it carries a better lesson than the accusation of hypocrisy. Trithemius used printing while arguing that it did not meet every need. Distribution, preservation, and the value of a practice are different questions. His example gives us permission to use a new tool without declaring every older skill worthless, or every reservation dishonest. [Paderborn University Library, 1494 printed edition](https://digital.ub.uni-paderborn.de/eab/content/structure/1387797)
++
++The object makes the coexistence plain. Paderborn's catalog identifies the printer as Peter Friedberg and the place as Mainz. In the contents, chapters on writing and the care of books sit inside a book produced by printing. The existence of that edition establishes what medium carried the argument. It does not establish that the author secretly disbelieved what he wrote. [Paderborn University Library, edition and contents](https://digital.ub.uni-paderborn.de/eab/content/structure/1387797)
++
++An earlier book makes the point with a name and a date. In August 1456, Heinrich Cremer recorded his finishing work in a paper copy of the Gutenberg Bible now held by France's national library. His inscriptions identify illumination, rubrication, and binding. Rubrication supplied red lettering; the printed sheets still needed a human hand to become this particular finished book. The new method of producing its text and the older skills completing it occupied the same object. [Bibliothèque nationale de France, Gutenberg Bible and Cremer's inscriptions](https://www.bnf.fr/fr/la-bible-de-gutenberg)
++
++This coexistence doesn't promise every displaced craft worker an equally good new job. A surviving beautiful volume cannot answer what happened to everyone's earnings. It does make the usual before-and-after picture less useful: one day scribes, the next day machines, and nothing left for a hand to do. The unit of change is often smaller than the occupation. One task moves; another remains; the terms and the people doing them can change.
++
++For Denny, the camera distributes knowledge that took years to acquire. It doesn't decide what that knowledge is worth to him or require him to perform it on demand. For a person who loves making books, music, furniture, or dinner, assistance can leave more room for the parts they care about. The food promise matters here too. A skill can remain part of a life without being made to defend that person's right to eat.
+ 
+ **The mechanism.** A person can value one medium and use another for a different purpose. Mixed practice need not be hypocrisy; the important question is what each method provides.
+ 
+--- v0.8.1/13-chapter11.md
++++ v0.8.2/13-chapter11.md
+@@ -86,6 +86,16 @@
+ 
+ A baseline could change demand and the terms on which people accept work. Some restaurants might need better pay, different hours, or a different business model. Some could close. I can't promise every existing margin survives. Providing adequate food doesn't require abolishing paid meals, and a worker's hunger shouldn't be the protection a business model depends on. The people supplying the baseline also need compensation and conditions they can sustain.
+ 
++## A public meal, and an argument about it
++
++On May 28, 1941, the House of Commons discussed a practical obstacle to feeding people during wartime: some local authorities had not prepared communal feeding centers. The Ministry of Food had assigned officers to help establish British Restaurants. But encouragement was one thing and authority another. When an MP asked whether the ministry could establish a restaurant where a council failed to act, its parliamentary secretary could not give a definite answer. Even an urgent national purpose needed someone empowered to carry it out locally. [Hansard, May 28, 1941](https://api.parliament.uk/historic-hansard/commons/1941/may/28/british-restaurants)
++
++The restaurant objection was there too. On October 1, Sir Percy Hurd challenged the treatment of private caterers alongside the public service. The ministry replied that rationed supplies were allocated on the same basis, according to meals served, while some scarce foods received priority for feeding workers. Public kitchens and private businesses existed together; their terms were already being argued over. [Hansard, October 1, 1941](https://api.parliament.uk/historic-hansard/commons/1941/oct/01/british-restaurants-and-works-canteens)
++
++The next day's debate sharpened both sides. A critic with catering interests alleged that British Restaurants were taking customers from struggling businesses. He also described a public restaurant at Fishmongers' Hall that opened at noon, too late for the Billingsgate workers he wanted it to serve. These were claims made in debate, not an independent audit. But the second complaint gives the proposal a useful test: a kitchen can exist, have supplies, and still miss the person whose working day it was supposed to help. [Hansard, October 2, 1941](https://api.parliament.uk/historic-hansard/commons/1941/oct/02/food-distribution-1)
++
++British Restaurants charged for meals. In March 1942, the ministry described prices covering food, preparation, overhead, and a contingency margin, with accounts submitted for review. This was no universal entitlement to free dinner. It was a working example of public authorities organizing meals and accounting for the work. Our proposal changes who pays at the point of eating. It still needs the kitchen, the budget, and opening hours that fit a human life. [Hansard, March 17, 1942](https://hansard.parliament.uk/commons/1942-03-17/debates/55709938-4ce9-4237-ba1f-14645cb0f860/WrittenAnswers)
++
+ ## Ownership matters because access can be withheld
+ 
+ Suppose the machines work beautifully. Now suppose one company owns them, controls the supplies they need, and can stop service when a subscription lapses. Productive capacity has increased. Security for the person who can't pay may not have changed at all.
+@@ -128,9 +138,13 @@
+ 
+ ---
+ 
+-## Precedent P-14: The Quartz Heresy (Switzerland, 1969 to 1983)
++## Precedent P-14: Quartz and the Assembly Line (Switzerland, 1962 to 1983)
+ 
+ Quartz technology and industrial change put Swiss watchmaking under substantial pressure. The Swiss industry was also involved in developing quartz; it was not a single bloc that refused the technology out of purity.
++
++The dates complicate the familiar story of a tradition surprised by electronics. A consortium of Swiss manufacturers established the Centre Electronique Horloger in 1962; its quartz wristwatch prototypes followed in 1967. Swiss researchers were helping make the change. [CSEM, Historical Timeline](https://www.csem.ch/en/history-and-start-ups)
++
++The 1983 Swatch paired a different product with different production: fifty-one components, assembled on automated lines. That detail matters more than a slogan about embracing the future. Product design and the method of assembly changed together. [Swatch Group, Company History](https://www.swatchgroup.com/en/swatch-group/swatch-group-history)
+ 
+ The later Swatch story offers an example of adaptation through products, manufacturing, and restructuring. It should not be made into a claim that only one strategy has ever worked or that success at the industry level erased the losses experienced by workers.
+ 
+--- v0.8.1/14-chapter12.md
++++ v0.8.2/14-chapter12.md
+@@ -66,6 +66,18 @@
+ 
+ For your first project, the answer may be an existing kitchen, a suitable garden you can share, or a grower who wants a dependable distribution partner. Start with a place and a relationship that can carry the work. A parcel you cannot maintain is an additional problem, however beautiful the listing photograph.
+ 
++## Land that could hold a right
++
++In southwest Georgia, losing a place to farm could be punishment for trying to vote. Charles Sherrod had worked with sharecroppers and tenant farmers forced off land after attempting to register. Collective ownership offered a way to reduce that power over individual families. New Communities was founded in 1969, and on January 9, 1970, it completed the purchase of 5,735 acres near Albany. The project joined farming to a proposed system of homestead leases. Security on the ground was part of making a political right usable. [SNCC Digital Gateway, New Communities](https://snccdigital.org/events/new-communities-formed-in-southwest-georgia/)
++
++Shirley Sherrod's recollections bring the institution down to its working parts. The land included a railway spur. She described using it to order fertilizer from outside the local supply network after receiving deliveries that, she said, were not what the farm had ordered. The farm needed inputs it could trust, customers for its crops, and money to keep operating. A line on a map did not provide those things automatically. Nor did the founding plan become reality in full: she recalled that the group could not afford many of its intended projects. [Shirley Sherrod, interview with Maine Farmland Trust](https://www.mainefarmlandtrust.org/blogs/a-conversation-with-shirley-sherrod)
++
++Drought and the credit system exposed those dependencies. Sherrod described a prolonged fight for an emergency loan, followed by inadequate financing and, in 1985, foreclosure. The organization continued after losing its land. It later pursued a discrimination claim against the USDA, received an award in 2009, and bought land again in 2011. Recovery took decades of organizing and a remedy outside the original farm. [Sherrod interview](https://www.mainefarmlandtrust.org/blogs/a-conversation-with-shirley-sherrod), [SNCC Digital Gateway](https://snccdigital.org/events/new-communities-formed-in-southwest-georgia/)
++
++This is a harder and more useful history than the promise that collective title makes a community safe forever. The arrangement challenged one source of dependence while remaining exposed to others. Its members needed fair access to finance as well as land, and institutions beyond the property capable of enforcing that fairness.
++
++Reuben's folders therefore belong beside a larger set of questions. Who supplies the farm through a bad year? Who hears a complaint when a lender or supplier abuses its power? A robot could help cultivate this ground. It could not make those outside institutions answer fairly. That requires people to organize beyond the fence as well as within it.
++
+ ## Grandma's request
+ 
+ Imagine an eighty-two-year-old neighbor on a fixed income. Arthritis makes yard work difficult. The yard is overgrown, a landscaping quote is beyond her budget, and a code-enforcement notice adds pressure she doesn't need. The groceries are another calculation. She has begun buying what she can carry rather than what she would choose.
+--- v0.8.1/15-chapter13.md
++++ v0.8.2/15-chapter13.md
+@@ -70,6 +70,18 @@
+ 
+ This is why building capacity and housing security must be discussed together. A house can be quick to construct and costly to occupy. A neighborhood can gain new buildings while someone already living there loses the ability to remain. Count whether people can live safely and affordably in the result, not only how fast a machine puts material in place.
+ 
++## A city builds the ordinary
++
++Vienna's municipal housing program between the world wars took aim at things a resident could name without an architectural vocabulary: running water, a toilet, daylight, a place outside the room. The city's archival history connects that program to changes in its constitutional position, revenue, and spending. The ability to build came with the authority and resources to keep a public purpose in the budget. [City of Vienna, History of Red Vienna](https://www.wien.gv.at/en/education/history-red-vienna)
++
++On October 12, 1930, Mayor Karl Seitz formally handed over the completed apartments at Karl-Marx-Hof. The complex had taken three years to build. Its housing was accompanied by social, medical, and educational facilities. A municipal account published for its sixtieth anniversary describes both that beginning and something less ceremonial: major renovation work underway since 1988. The city said public subsidies would keep rents affordable during the improvements. The notice states how the city intended to finance the work; it cannot tell us every tenant's experience. [City of Vienna, Karl-Marx-Hof at Sixty, October 11, 1990](https://presse.wien.gv.at/1990/10/11/der-karl-marx-hof-ist-60)
++
++The distance between those dates matters. The achievement could not be completed when the keys first changed hands. Buildings aged. Work had to be organized and paid for again. A tool that reduced the cost of the original construction would address one part of that lifetime. A useful housing policy had to remain interested after the photograph of the opening.
++
++The political history was not an uninterrupted march toward security either. Austria's parliamentary crisis in 1933 and civil war in February 1934 were followed by authoritarian government; Vienna lost its elected legislature. The institutions behind a public promise can be weakened even while its buildings remain. [City of Vienna, History of Red Vienna](https://www.wien.gv.at/en/education/history-red-vienna)
++
++These municipal accounts tell the history from the city's side. They do not establish that every applicant obtained a home, every tenant was satisfied, or another city could simply copy the arrangement. They do show why the housing question cannot end with a faster machine. Someone must have a place in the completed building, terms they can live with, and a responsible institution when the building needs work. The useful measure of progress reaches from the construction site into all the years a person hopes to stay.
++
+ ## Respect the skill
+ 
+ Marta doesn't become less important because a machine can help draw a design. Someone still has to know what an acceptable joint looks like, when conditions invalidate the plan, and when to stop. Her teaching takes time. That time belongs in the budget.
+--- v0.8.1/16-chapter14.md
++++ v0.8.2/16-chapter14.md
+@@ -102,6 +102,10 @@
+ 
+ Kodak developed digital-camera technology and sold digital products, yet technical participation did not prevent financial crisis. Its own milestones record emergence from Chapter 11 in 2013. The company continued after a substantial restructuring. [Kodak, Milestones](https://www.kodak.com/en/company/page/milestones/)
+ 
++The earliest device makes the distinction tangible. In December 1975, Kodak engineer Steven Sasson made a black-and-white digital photograph using a system assembled from existing technologies. Its hundred-by-hundred-pixel image took twenty-three seconds to record on a small magnetic cassette. Reading it for display on a television took another twenty-three seconds. A working demonstration existed inside Kodak decades before its bankruptcy. It was also a slow, limited prototype, requiring further development before ordinary consumers could use such a system conveniently. [Swiss Camera Museum, 1975: The Invention](https://www.cameramuseum.ch/en/discover/permanent-exhibition/the-digital-revolution/1975-the-invention/)
++
++The distance from that cassette to the company's later troubles was not empty. Kodak's timeline records shipment of its hundred millionth digital still camera in 2011. It also records the subsequent withdrawal from digital capture, asset sales, and the sale of consumer imaging patents during reorganization. These are a company's selected milestones, not a complete explanation of its finances. They are enough to disprove the simpler tale that Kodak merely refused to make digital cameras. [Kodak, Milestones](https://www.kodak.com/en/company/page/milestones/)
++
+ The useful question is harder than whether its leaders had heard of digital photography. What changes when customers buy a different product, revenue moves elsewhere, and an established organization has to support the transition? Recognizing a technology, offering it, and sustaining a business through it are distinct accomplishments.
+ 
+ Sears, Blockbuster, and Borders often join Kodak in the same cautionary list. The names don't become one causal history by sharing a paragraph. For a worker, the immediate lesson is that even a company visibly investing in new technology cannot promise that every existing job will survive. Security needs a foundation beyond that promise.
+@@ -122,6 +126,10 @@
+ 
+ Fujifilm applied capabilities associated with its photographic business to other fields as demand for film changed. The instructive move was to ask what the company knew how to do beneath the name of the product it sold. Capabilities could have uses beyond photographic film.
+ 
++Its corporate history dates the peak of demand for photographic film to 2000 and describes the 2004 VISION75 plan as an effort to identify other uses for accumulated technology. There was already more to the company than film. In 2001, it increased its holding in Fuji Xerox from half to three-quarters, consolidating an established office-equipment business. Reinvention began with assets, relationships, and several lines of activity already in place. [Fujifilm, Corporate History](https://holdings.fujifilm.com/special/90th/en/history/)
++
++One visible result was the ASTALIFT skincare line, launched in 2007. The company's account connects its cosmetics work to knowledge developed for photographic materials, including collagen and methods for handling very small particles. The connection is more precise than a film company deciding to become something fashionable: particular knowledge was applied to a different product. The launch establishes a commercial application, not proof of every claim made for the products. [Fujifilm, ASTALIFT History](https://ls-jp.fujifilm.com/astaliftbrand/about/history/)
++
+ That is a useful question for a repair shop, a cooperative, or a worker too. Frank's knowledge didn't vanish when his store closed. But recognizing a transferable skill and finding a supported way to use it are different steps. The comparison becomes cruel when we offer a corporation's reinvention as advice while withholding the resources that made a transition possible. A person deserves somewhere secure to stand while the next use is found.
+ 
+ **The mechanism.** Existing capabilities may find new applications, but firms facing similar shocks can have different assets and constraints. Comparison is not a controlled experiment.
+--- v0.8.1/17-chapter15.md
++++ v0.8.2/17-chapter15.md
+@@ -90,9 +90,17 @@
+ 
+ ---
+ 
+-## Precedent P-19: Twenty Million Gardens (United States, 1943 to 1944)
++## Precedent P-19: Organizing the Harvest (United States, 1943 to 1944)
+ 
+ During the Second World War, Victory Gardens made household and community growing part of a broader food effort in the United States. A patch of ground became part of a common undertaking: people grew food alongside the farms and distribution systems on which they still depended.
++
++The USDA's 1943 program asked organizers to think about the bus route. A person without a suitable yard needed a community plot they could reach by streetcar, bus, or bicycle. Somebody had to obtain permission to use the land, prepare it, assign plots, arrange water, and make tools and instruction available. The document advised involving the county agricultural agent or experienced gardeners in judging whether the ground was suitable. A vacant lot was an opportunity to investigate, not automatically a farm.
++
++The harvest needed its own arrangements. School gardens required care during the summer, when school was out; the program called for hired help under supervision, followed by harvesting and processing for school lunches. Shortages of pressure-canning equipment prompted proposals for shared preservation facilities. The plan reached from the plot to the pantry. Its authors understood that a vegetable left to spoil wasn't a contribution to the food supply. These were planning instructions, not proof that every community carried them out. [USDA, The 1943 Victory Garden Program](https://www.govinfo.gov/content/pkg/GOVPUB-PR32_4400-4381b818c763ffa7d714174f6cc65de7/pdf/GOVPUB-PR32_4400-4381b818c763ffa7d714174f6cc65de7.pdf)
++
++There is another part of this history that the cheerful poster cannot carry. Japanese Americans grew Victory Gardens inside the camps where their own government incarcerated them. The National Park Service records residential gardens, distinct from camp production farms, that supplied fresh produce and allowed people to grow familiar foods. Some gardeners had brought seeds; others obtained them by mail. Their skill improved life under conditions they had not freely chosen. Participation in a national food campaign did not mean equal standing within the nation. [National Park Service, Victory Gardens on the World War II Home Front](https://www.nps.gov/articles/000/victory-gardens-on-the-world-war-ii-home-front.htm)
++
++Both parts belong in the precedent. Public coordination can make a useful undertaking possible, and the authority doing the coordinating can deny people's freedom. A harvest total won't tell you whether the people producing it were free. For the food-first project, ask who gets the plot, who carries the work, and who receives food without having to cultivate a plot at all. Machines could reduce some of that work. They cannot make the distribution of rights a question we no longer need to answer.
+ 
+ The useful precedent is organized participation. Growing required access to ground, knowledge, supplies, and coordination. The harvest contributed vegetables; it didn't turn each household into a complete food system. A shared purpose could mobilize many modest plots without asking any one of them to carry the entire diet. That is a better starting point for neighborhood automation than the promise of perfect self-sufficiency.
+ 
+--- v0.8.1/18-chapter16.md
++++ v0.8.2/18-chapter16.md
+@@ -92,9 +92,19 @@
+ 
+ ---
+ 
+-## Precedent P-20: An Argument in Circulation (Philadelphia, 1776)
++## Precedent P-20: An Argument in Circulation (Philadelphia and London, 1776)
+ 
+ Thomas Paine's Common Sense helped make an argument for independence accessible to readers in 1776. It put a consequential political choice into language people could carry into conversation. Printers, readers, and organizers carried it into an existing conflict.
++
++The physical object mattered. The first Philadelphia edition came from Robert Bell's press in January 1776 without Paine's name on it. It was sold in a paper wrapper for two shillings. That put the argument into a form a purchaser could carry away, but publication was still somebody's business, with a price, a press, and control over the next printing. [Clements Library, Going Viral in 1776](https://clements.umich.edu/exhibit/revolutionary-paine/going-viral-in-1776/)
++
++The alliance between author and printer did not last. Paine intended his share of the profits to buy winter clothing for the Continental army; Bell maintained that the first printing had produced no profit. Paine then authorized William and Thomas Bradford to publish an enlarged edition. The dispute over an argument about political authority also involved the much smaller authority to decide which version would be printed and who would account for its earnings. [University of Minnesota, Common Sense exhibition record](https://librarycollections.law.umn.edu/treasures/index.php?npage=13)
++
++Crossing the Atlantic introduced another filter. Some London editions omitted passages about the king. In the Clements Library's copy of John Almon's 1776 edition, gaps were filled in by hand. The paper preserves that intervention: the printed text and the writing added to it do not say quite the same thing. Wider circulation did not guarantee an unchanged message. Someone handling a copy could also resist what its printed version had left out. [Clements Library, the London edition](https://clements.umich.edu/exhibit/revolutionary-paine/going-viral-in-1776/)
++
++This is a more useful history of media power than the picture of one brave writer speaking directly to an entire country. Paine could frame the case. Printers could reproduce, revise, or restrict what reached readers. Readers could question the text and intervene in it. Those powers were connected, and they were not identical.
++
++A public record of a food project faces different institutions and much smaller stakes than a revolution. It still needs a legible account of who wrote it, which version is current, what was changed, and how a correction can reach the next reader. The wrong connector label in the co-op's record belongs to that ordinary responsibility. Making knowledge travel includes making its corrections travel.
+ 
+ A pamphlet could be passed to someone who had not attended the author's meeting. It could be argued with in another town. That is the useful mechanism: clear words let more people participate in examining a proposal. Distribution widened the discussion; it did not make the author the sole cause of what followed. For our purposes, the test is whether someone can understand the promise, question its terms, and help improve it.
+ 
+--- v0.8.1/19-chapter17.md
++++ v0.8.2/19-chapter17.md
+@@ -94,7 +94,17 @@
+ 
+ In 1968 Stewart Brand put NASA's photograph of the whole Earth on a big black paperback cover and printed three words under the title: **Access to Tools.**
+ 
+-The *Whole Earth Catalog* listed welding rigs, geodesic dome mathematics, seed suppliers, calculators, books on midwifery and books on cybernetics, anything that helped an individual, in Brand's words, conduct his own education, find his own inspiration, and shape his own environment. It sold none of it directly: each entry ran as a review with a price and the supplier's address, what its own statement of purpose called an evaluation and access device. It refused to separate the homestead from the computer; its readership connected strands of back-to-the-land culture and personal computing without being the sole source of either. Steve Jobs, closing his 2005 Stanford commencement address, described it as "sort of like Google in paperback form, 35 years before Google came along," and gave the graduating class its sign-off as his own final advice: stay hungry, stay foolish.
++The *Whole Earth Catalog* listed books on dome construction, organic gardening, beekeeping, and cybernetics, along with tool suppliers and a desktop calculator, anything that helped an individual, in Brand's words, conduct his own education, find his own inspiration, and shape his own environment. Its entries directed readers to sources through reviews and ordering information, what its own statement of purpose called an evaluation and access device. It refused to separate the homestead from the computer; its readership connected strands of back-to-the-land culture and personal computing without being the sole source of either. Steve Jobs, closing his 2005 Stanford commencement address, described it as "sort of like Google in paperback form, 35 years before Google came along," and gave the graduating class its sign-off as his own final advice: stay hungry, stay foolish.
++
++The original selection rules were more demanding than a list of things the editor liked. An entry had to be useful, support learning, offer quality or low cost, bring information that wasn't already common knowledge, and be obtainable by mail. The statement of function also promised revision from the experience of users and staff. Put those requirements together and you have the outline of a continuing job: select, explain, locate, then listen when the recommendation meets somebody else's circumstances. [Whole Earth Catalog, 1968 purpose and function pages](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf)
++
++The project had a physical shop as well as a printed network. Before the catalog, Brand and Lois Jennings took books and goods to communes in a truck. The Menlo Park office later shared a storefront with the Truck Store, which sold some of the listed material. Publishing and selling were related activities, not an escape from all commerce. Supplements carried responses to earlier issues, suggestions for other tools, and notices from readers. The people using the information could become sources of the next edition. [Museum of Modern Art, Access to Tools](https://www.moma.org/interactives/exhibitions/2011/AccesstoTools/)
++
++There was power in that editorial desk. A recommendation could bring a distant supplier into somebody's practical world. An omission could leave another possibility unseen. Publishing criteria and receiving feedback made those choices more available for argument; it didn't turn the catalog into a neutral view of every useful thing.
++
++The later anniversary reprint makes the maintenance problem wonderfully plain. Its editors warned that the old addresses and ordering information should not be treated as current. They marked items still available, proposed replacements, and distinguished things that had disappeared. Time had altered the access half of *Access to Tools*, even where the idea remained useful. The reprint's warning is later commentary, not part of the 1968 promise. [Annotated reprint, using the 1968 catalog](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf)
++
++That distinction belongs on our workbench. A record of a useful machine is a beginning. Someone still needs a reachable supplier, the means to obtain it, and help when it breaks. The catalog widened the reader's choices. A universal food service has a further obligation to the person who cannot buy the recommended tool, or spend the afternoon learning to use it.
+ 
+ **The mechanism.** Curation can make tools and knowledge easier to find. Access also involves cost, skills, maintenance, and whether a tool fits the task.
+ 
+--- v0.8.1/20-chapter18.md
++++ v0.8.2/20-chapter18.md
+@@ -161,9 +161,19 @@
+ 
+ ---
+ 
+-## Precedent P-22: The Apocalypse That Ran On Time (1999)
++## Precedent P-22: The Apocalypse That Ran On Time (1999 to 2004)
+ 
+ The year-2000 computing problem prompted extensive checking, repair, testing, and coordination. The GAO's retrospective describes lessons from that work. [GAO, Year 2000 Computing Challenge](https://www.gao.gov/products/aimd-00-290)
++
++One result was a clearer account of what agencies actually depended on. The Department of Housing and Urban Development reported building an inventory that included relationships among its systems and outside partners. A collection of working machines was not enough; people needed to know how one relied on another. The inventory became useful beyond the date problem that had forced it into existence.
++
++Preparation also left room for failure. GAO describes a rollover test at Oak Ridge in which a nuclear-material accounting system generated file identifiers with a four-digit year while the transfer software still expected two digits. The transfer failed. According to the Department of Energy account recorded by GAO, staff used magnetic tapes under contingency procedures that had already been updated and tested. The information got through, and the fault was subsequently corrected. This was a specific recovered failure, not a claim that every system had become flawless. [GAO, Y2K Lessons Learned, pages 29–32](https://www.gao.gov/assets/aimd-00-290.pdf)
++
++The work could change who was allowed to pronounce a system ready. GAO's follow-up on the Social Security Administration records the incorporation of Y2K contingency plans into its continuing operations plans. It also records a later, concrete institutional change: in April 2004, the agency issued procedures requiring validation testing by people other than the group that developed the software. Confidence from the builder would no longer be the only check specified by the procedure. [GAO, Social Security Administration: Year 2000 Readiness](https://www.gao.gov/products/aimd-00-125)
++
++That is the part of the history worth bringing to a food-service meeting. Which connections have we never written down? Who can test the promise without being responsible for defending the person who made it? When the usual route fails, is the alternative merely named, or has somebody carried out the handoff?
++
++The analogy has a firm boundary. Y2K presented a known calendar deadline and an identifiable class of date-handling defects. AI development has neither that single deadline nor that bounded problem. A missed AGI forecast cannot be excused as a disaster averted by preparation. The transferable achievement is more modest and more practical: organizations can learn enough about their dependencies to keep an ordinary service working through a particular failure.
+ 
+ The relatively quiet transition doesn't by itself show that the work was unnecessary. It also doesn't establish exactly what would have happened without it. The counterfactual remains a different question from the documented preparation.
+ 
+--- v0.8.1/21-conclusion.md
++++ v0.8.2/21-conclusion.md
+@@ -50,9 +50,15 @@
+ 
+ ---
+ 
+-## Precedent P-23: The Passing Fad (1995)
++## Precedent P-23: What the Forecast Missed (1993 to 1995)
+ 
+ In his 1995 Newsweek essay, Clifford Stoll doubted prominent promises about what the internet would become. The essay is remembered because later developments made some of its dismissals look shortsighted. The specific text matters more than the familiar picture of a skeptic who got everything wrong. [Stoll, Why the Web Won't Be Nirvana](https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306)
++
++Stoll wrote as someone with two decades of experience online. He acknowledged pleasure and friendships there before challenging the advertised future. In the passage preserved by Elon University's prediction archive, promises about networked commerce and more democratic government sit beside his categorical dismissals of online databases replacing newspapers and networks changing government. The force of the passage comes partly from treating different propositions as one package. A network can change how an institution works without making that institution fairer. A useful classroom tool need not replace a competent teacher. Those are separate tests, even when a sales pitch bundles them together. [Stoll, 1995 essay excerpt, Imagining the Internet archive](https://www.elon.edu/u/imagining/expert_predictions/the-internet-bah-why-cyberspace-isnt-and-never-will-be-nirvana/)
++
++Another part of that future was being made through a quieter decision. On April 30, 1993, CERN placed three components of its Web software in the public domain: a basic client, a server, and a shared code library. People were permitted to use, copy, modify, and distribute the code. In 1994 CERN retained copyright on a new server release while continuing to grant free use through a permissive license. Access depended on decisions about ownership and permission, made by identifiable people and an institution. [Smith and Flückiger, Licensing the Web](https://home.cern/science/computing/the-birth-of-the-web/licensing-web/)
++
++That did not give everyone a computer or a connection. It removed a particular barrier to building on particular software. The comparison with food has that boundary: a meal still needs material, work, and delivery. But the episode gives hope something firmer than a prediction to stand on. People can choose terms that let more people benefit. We can ask which barrier our next decision will remove.
+ 
+ A technology can become useful in ways a critic misses and still create problems worth criticizing. We should be able to revise a prediction without surrendering judgment. An optimist owes that same willingness when the promised benefit fails to arrive.
+ 
+--- v0.8.1/23-appendix-b.md
++++ v0.8.2/23-appendix-b.md
+@@ -36,60 +36,96 @@
+ 
+ Ana Vogrinčič, [The Novel-Reading Panic in 18th-Century England: An Outline of an Early Moral Media Panic](https://hrcak.srce.hr/en/clanak/49661) (2008). Historical scholarship on concerns about novel reading. Richard Brinsley Sheridan's [The Rivals](https://www.gutenberg.org/cache/epub/24761/pg24761.html) (1775), Act I, supplies an original literary example of hostility to circulating libraries. A character's speech illustrates a debate; it does not measure how everyone felt.
+ 
++Jane Austen, [Northanger Abbey, Chapter 5](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0005) and [Chapter 25](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0025), public-domain text, Project Gutenberg. Primary literary testimony: the narrator defends novels while the story examines mistaken inferences. Fictional incidents are distinguished from evidence about real readers.
++
+ ### P-02: Bell at the fair
+ 
+ Alexander Graham Bell, [letter to Alexander Melville Bell and Eliza Symonds Bell, 27 June 1876](https://tile.loc.gov/storage-services/service/mss/magbell/005/00500228/00500228.pdf), Library of Congress transcript. Bell describes his demonstration and the reactions of William Thomson and Emperor Dom Pedro. The Library's [Inventing Telephones at the Centennial](https://lcm.loc.gov/issue/may-june-2026/inventing-telephones-at-the-centennial/) supplies historical context for the telephone and the exhibition's machinery. Neither establishes a universal rule about what crowds or experts can recognize.
+ 
++Bell's [official transcript PDF](https://tile.loc.gov/storage-services/service/mss/magbell/005/00500228/00500228.pdf), pages 1–2, distinguishes his demonstration from the audience reactions reported to him by Willie Hubbard. The closing discussion records a proposed alliance, not a completed agreement.
++
+ ### P-03: The aviation forecast
+ 
+ New York Times, [Flying Machines Which Do Not Fly](https://timesmachine.nytimes.com/timesmachine/1903/10/09/102025405.html) (9 October 1903), with an accessible [transcription of the editorial](https://en.wikisource.org/wiki/The_New_York_Times/1903/10/9/Flying_Machines_Which_Do_Not_Fly). This is one newspaper's prediction, not a survey of aeronautical opinion.
+ 
++Wilbur Wright, [letter to the Smithsonian Institution, May 30, 1899](https://siarchives.si.edu/history/featured-topics/stories/letter-dated-may-30-1899), archival transcription. NASA Glenn, [Wright 1901 Wind Tunnel](https://www.grc.nasa.gov/WWW/K-12/airplane/wrights/tunnel.html), historical engineering account. The two sources support the reading request and experimental work that precede the later flight.
++
+ ### P-04: Road regulation
+ 
+ [Locomotives Act 1865](https://www.legislation.gov.uk/ukpga/Vict/28-29/83/pdfs/ukpga_18650083_en.pdf), 28 & 29 Vict., chapter 83, especially section 3. Original statute specifying operating restrictions, including a person carrying a red flag ahead of the vehicle. The law alone cannot establish its eventual economic effects.
+ 
++[House of Lords debate, May 26, 1865, columns 867–872](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading), on the Locomotives on Roads Bill. A primary record of competing arguments and participants' reported experiences. Speeches do not establish either the safety of the machines or the later effects of the law.
++
+ ### P-05: Ming voyages
+ 
+ Hong Kong Government, [Exhibition Follows the Footsteps of Zheng He](https://www.info.gov.hk/gia/general/200602/21/P200602210148.htm) (21 February 2006), announcing an exhibition at Hong Kong Museum of History. Institutional context for the seven voyages of 1405–1433. For a participant's account, see Ma Huan, *Ying-yai Sheng-lan: The Overall Survey of the Ocean's Shores*, translated by J. V. G. Mills (1970), identified in the [Indiana University library catalogue](https://iucat.iu.edu/iub/6311122). The catalogue identifies the edition; it is not a substitute for reading the translated text.
+ 
++Edward L. Dreyer, *Zheng He: China and the Oceans in the Early Ming Dynasty, 1405–1433* (Pearson Longman, 2007), appendix, [translations of primary sources](https://edspace.american.edu/justinjacobs/wp-content/uploads/sites/986/2022/12/31-Historical-Accounts-of-Zheng-He.pdf), especially the Liujiagang inscription on printed pages 191–193. This is the expedition's account, in a modern translation; its claims of order and protection require recognition of the speaker's position.
++
+ ### P-06: Copernican astronomy
+ 
+ Nicolaus Copernicus, [De Revolutionibus Orbium Coelestium](https://www.loc.gov/item/46031925/) (1543), digitized edition and collection description, Library of Congress. The work places a moving Earth among the planets. The record does not by itself reconstruct the entire later history of its reception.
+ 
++Copernicus, [dedication to Paul III](https://hti.osu.edu/sites/hti.osu.edu/files/dedication_of_the_revolutions_of_the_heavenly_bodies_to_pope_paul_iii.pdf), Harvard Classics translation hosted by Ohio State. Sachiko Kusukawa, [Copernicus's Book](https://www.sites.hps.cam.ac.uk/starry/coperbooks.html), Cambridge History and Philosophy of Science (1999). Together they distinguish Copernicus's stated purpose and supporters from the framing added by Osiander during publication.
++
+ ### P-07: Horses and measurement
+ 
+ US Department of Agriculture, [Farm Production Practices, Costs, and Returns](https://downloads.usda.library.cornell.edu/usda-esmis/files/7m01bk68h/d217qs47w/4f16c641b/frmprodcostreturn_Farm_Production_Practices_Costs_and_Returns__1910-48.pdf), Statistical Bulletin 83 (1949), especially table 14, printed page 45. Historical estimates put the combined population of horses and mules **on farms** at its peak in 1918. The report describes a transition involving machinery, feed, wages, and other costs; it does not isolate one cause or measure all working animals everywhere.
+ 
++Science Museum Group, [Original Indenture of Agreement for Erection of a Rotative Engine](https://collection.sciencemuseumgroup.org.uk/objects/co50966/original-indenture-of-agreement-for-erection-of-a-agreements), March 1, 1786, object 1908-185. Museum catalogue of a particular contract and its business context. It supplies responsibilities and payment terms; it is not a complete account of all consequences of mechanization.
++
+ ### P-08: The agricultural transition
+ 
+ Amanda Mummert, Emily Esche, Joshua Robinson, and George J. Armelagos, [Stature and Robusticity During the Agricultural Transition: Evidence from the Bioarchaeological Record](https://pubmed.ncbi.nlm.nih.gov/21507735/), *Economics & Human Biology* 9 (2011), 284–301. A scholarly synthesis of skeletal evidence. Its account of health burdens and variation should not be converted into a claim that every farming population experienced the same change.
+ 
+ For an original study combining skeletal and genetic evidence, see [An Integrative Skeletal and Paleogenomic Analysis of Stature Variation Suggests Relatively Reduced Health for Early European Farmers](https://doi.org/10.1073/pnas.2106743119), *Proceedings of the National Academy of Sciences* (2022). Its European sample and adjustments for ancestry limit how widely the result can be generalized.
+ 
++UNESCO World Heritage Centre, [Neolithic Site of Çatalhöyük](https://whc.unesco.org/en/list/1405/). Institutional description of the settlement's layout and surviving material culture.
++
++Clark Spencer Larsen and colleagues, [Bioarchaeology of Neolithic Çatalhöyük Reveals Fundamental Transitions in Health, Mobility, and Lifestyle in Early Farmers](https://doi.org/10.1073/pnas.1904345116), *Proceedings of the National Academy of Sciences* 116 (2019), 12615–12623; [open manuscript](https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/3/58744/files/2020/10/Catalhoyuk-PNAS-Publication.pdf). Original research, especially manuscript pages 5–6; includes contrasting indicators rather than uniform deterioration.
++
+ ### P-09: The Luddites
+ 
+ UK National Archives, [The Proclamation of Ned Ludd](https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-proclamation-of-ned-ludd/). An original proclamation with archival transcription and historical context. It supports discussion of labor conditions, threats, and repression, without reducing all participants to a single motive.
+ 
++Kevin Binfield, [Luddite History](https://campus.murraystate.edu/academic/faculty/kBinfield/luddites/LudditeHistory.htm), excerpt from the historical introduction to *Writings of the Luddites* (Johns Hopkins University Press, 2004). Historical scholarship on the particular trades, negotiations, and material conditions behind the protests.
++
+ ### P-10: Musicians and recorded sound
+ 
+ Music Performance Trust Fund, [About](https://musicpf.org/about/). The fund's institutional account traces its establishment in 1948 to agreements between the American Federation of Musicians and recording companies. It documents a negotiated mechanism for financing admission-free performances. It does not imply that every playback of a recording generates a payment to this fund.
+ 
++University of Maryland Special Collections in Performing Arts, [The Recording Ban of 1942](https://exhibitions.lib.umd.edu/songsofwar/wwii/currents/recording-ban), in *Modern Songs of War and Conflict*, curated by Ben Jackson. Institutional account of the commercial recording dispute, inventories, and different settlement dates. The independent fund's subsequent establishment remains separately documented by its existing bibliography entry.
++
+ ### P-11: Torches of Freedom
+ 
+ Vanessa Murphree, [Edward Bernays's 1929 “Torches of Freedom” March: Myths and Historical Significance](https://aquila.usm.edu/fac_pubs/18673/), *American Journalism* 32 (2015), 258–281. Original historical research questioning the event's later mythology, including the account of a uniformly receptive press. A [contemporary photograph of Nancy Hardin and Edith Lee](https://www.loc.gov/item/2015647632/), dated 31 March 1929, is held by the Library of Congress. The photograph records an event, not its long-term causal effect on smoking.
+ 
++Edward L. Bernays, [Propaganda](https://www.gutenberg.org/cache/epub/78634/pg78634-images.html) (New York: Horace Liveright, 1928), chapter IV, pages 54–56. Primary text describing a hypothetical piano-marketing method. It establishes what Bernays advocated, not universal effectiveness.
++
++Vanessa Murphree, [Teaching Our Journal: Edward Bernays's 1929 “Torches of Freedom” March](https://www.american-journalism.org/teaching-our-journal/teaching-our-journal-edward-bernayss-1929-torches-of-freedom-march/), *American Journalism*. The researcher's account of methods, archival limitations, and contemporary press responses, supplementing the existing 2015 article entry.
++
++The [Library of Congress digital-object record](https://www.loc.gov/pictures/resource/ds.07375/), digital ID ds.07375, supplies another locator for the photograph cited above.
++
+ ### P-12: Bronze Age disruption
+ 
+ A. Bernard Knapp and Sturt W. Manning, [Crisis in Context: The End of the Late Bronze Age in the Eastern Mediterranean](https://doi.org/10.3764/aja.120.1.0099), *American Journal of Archaeology* 120 (2016), 99–149. Archaeological scholarship emphasizing regional differences and the interaction of possible causes. The case is not evidence of a single synchronized collapse caused by one variable.
+ 
++Institute of Nautical Archaeology, [Uluburun Late Bronze Age Shipwreck Excavation](https://nauticalarch.org/projects/uluburun-late-bronze-age-shipwreck-excavation/). The excavating institution's account of the vessel, surviving cargo, and interpretation. The wreck predates the later crisis; it does not identify that crisis's cause.
++
+ ### P-13: Trithemius and media
+ 
+ Johannes Trithemius, [De Laude Scriptorum](https://digital.ub.uni-paderborn.de/eab/content/structure/1387797), Mainz: Peter Friedberg, 1494, digitized printed edition held by Paderborn University Library. The treatise was composed in 1492. Its defense of scribal work appeared in print. Jeremy Norman's [historical note on vellum and paper](https://www.historyofinformation.com/detail.php?id=337) explains the preservation argument. Neither source warrants turning a nuanced position into wholesale hostility to printing.
+ 
++Bibliothèque nationale de France, [La Bible de Gutenberg](https://www.bnf.fr/fr/la-bible-de-gutenberg), especially “Un rare témoin de la date d’impression de la Bible.” Institutional collection study including transcribed inscriptions. Supports the Cremer example without supplying an employment history of all scribes.
++
+ ### P-14: Quartz watches
+ 
+ Seiko Museum, [The Quartz Crisis and Recovery of Swiss Watches](https://museum.seiko.co.jp/en/knowledge/relation_11/). A manufacturer-associated museum's history of quartz competition and Swiss responses. It includes Swiss technical participation and economic pressures, complicating the story that one side simply failed to see the invention.
+ 
++CSEM, [Historical Timeline](https://www.csem.ch/en/history-and-start-ups), entries for 1962 and 1967. Institutional history of electronic-watch research.
++
++Swatch Group, [Company History](https://www.swatchgroup.com/en/swatch-group/swatch-group-history), entry for 1983. Manufacturer's account of product and production design.
++
+ ### P-15: Homesteading
+ 
+ US National Archives, [Homestead Act of 1862](https://www.archives.gov/milestone-documents/homestead-act), original act and transcript. National Park Service, [Homestead History and Culture](https://www.nps.gov/home/learn/historyculture/index.htm), supplies the necessary context of prior Indigenous habitation and displacement. The legal transfer of land must not be confused with the land having been empty or universally available.
+@@ -102,29 +138,76 @@
+ 
+ Kodak, [Milestones](https://www.kodak.com/en/company/page/milestones/). Company chronology documenting digital work and emergence from Chapter 11 in 2013. It is evidence against the claim that Kodak never participated in digital imaging, but an interested corporate history is not a complete explanation of the company's financial difficulties.
+ 
++Swiss Camera Museum, [1975: The Invention](https://www.cameramuseum.ch/en/discover/permanent-exhibition/the-digital-revolution/1975-the-invention/). Institutional account of Sasson's prototype.
++
+ ### P-18: Related capabilities, new uses
+ 
+ Fujifilm, [Healthcare](https://www.fujifilm.com/us/en/about/hq/corporate/field/healthcare) and [Corporate History](https://global.fujifilm.com/en/about/corporate/history). The company's account describes applications of its materials and imaging expertise in other fields, including healthcare. This documents its stated strategy and activities, not a controlled comparison proving why one company succeeds and another struggles.
+ 
++Fujifilm Holdings, [90th Anniversary Corporate History](https://holdings.fujifilm.com/special/90th/en/history/), sections on the transition from photographic film and the 2004 plan. Corporate retrospective; the legacy URL redirects to the current anniversary page.
++
++Fujifilm, [ASTALIFT History](https://ls-jp.fujifilm.com/astaliftbrand/about/history/), Japanese brand chronology, especially 2004 and 2007. Used for commercialization history, not product efficacy.
++
+ ### P-19: Victory gardens
+ 
+ US Office of War Information, [Plant a Victory Garden](https://digital.library.unt.edu/ark:/67531/metadc550/) (1943), government poster preserved by University of North Texas. National Park Service, [The World War II Home Front](https://home.nps.gov/articles/wwiihomefront.htm), provides the broader mobilization context. Estimates about garden vegetables must not be restated as shares of all food or all nutrition.
+ 
++- United States Department of Agriculture, Committee on Victory Gardens, [The 1943 Victory Garden Program](https://www.govinfo.gov/content/pkg/GOVPUB-PR32_4400-4381b818c763ffa7d714174f6cc65de7/pdf/GOVPUB-PR32_4400-4381b818c763ffa7d714174f6cc65de7.pdf). Reprinted by the US Office of Civilian Defense, March 1943. Original program document, especially pages 3–4 on allotments, water, advice, tools, school-garden staffing, and preservation. It records planned arrangements rather than measured nationwide compliance.
++- National Park Service, [Victory Gardens on the World War II Home Front](https://www.nps.gov/articles/000/victory-gardens-on-the-world-war-ii-home-front.htm). Institutional historical account, including gardens maintained by incarcerated Japanese Americans. Distinguishes residential gardens from camp production farms and gives context that aggregate harvest figures cannot supply.
++
+ ### P-20: An argument in circulation
+ 
+ Thomas Paine, *Common Sense* (1776). Library of Congress [collection record for the book](https://www.loc.gov/item/04002086/) and [exhibition context](https://www.loc.gov/exhibitions/declarations-promise/visual-descriptions/drafting-the-declaration/). These identify the work and its argument for independence. Its circulation does not establish that one pamphlet alone caused a revolution.
+ 
++- University of Michigan, Clements Library, [Going Viral in 1776](https://clements.umich.edu/exhibit/revolutionary-paine/going-viral-in-1776/). Exhibition descriptions of Bell, Bradford, and London editions of Common Sense. Supports the paper wrapper, two-shilling price, anonymous issue, printing dispute, and handwritten additions in the library's Almon copy. Conflicting sellout intervals on the page are not used.
++- University of Minnesota Law Library, [Common Sense, Philadelphia, 1776](https://librarycollections.law.umn.edu/treasures/index.php?npage=13), Treasures of the Riesenfeld Center. Description of an enlarged Bradford edition and the author-printer dispute over profits. The account establishes the described competing positions, not an independent audit of Bell's books.
++
+ ### P-21: Whole Earth Catalog
+ 
+ [Whole Earth Catalog, Fall 1968](https://wholeearth.info/p/whole-earth-catalog-fall-1968), digitized issue indexed by Whole Earth Index. An original example of gathering tools and practical information. Steve Jobs's [2005 Stanford commencement address](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says) is the primary source for his later comparison of the catalog to Google in paperback form. His analogy is a recollection, not a claim that the catalog already provided an internet search engine.
+ 
++- [Whole Earth Catalog, Fall 1968: sample pages reproduced with later anniversary annotations](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf). The contents and purpose/function page establish examples and selection criteria; the added availability warnings belong to the later reprint. Distinguish the two layers when citing it.
++- David Senior, Museum of Modern Art Library, [Access to Tools: Publications from the Whole Earth Catalog, 1968–1974](https://www.moma.org/interactives/exhibitions/2011/AccesstoTools/) (2011). Institutional exhibition history of the catalog, affiliated Truck Store, and reader contributions. Supports correcting an absolute claim that the organization sold none of the reviewed goods directly.
++
+ ### P-22: Y2K preparation
+ 
+ US General Accounting Office, [Year 2000 Computing Challenge: Lessons Learned Can Be Applied to Other Management Challenges](https://www.gao.gov/products/aimd-00-290), AIMD-00-290 (2000). A government review of preparation and management practices. It documents substantial work; it cannot directly observe the global outcome of a world in which that work never happened.
+ 
++For AIMD-00-290, see especially printed pages 29–32 of the [complete report](https://www.gao.gov/assets/aimd-00-290.pdf) for HUD's dependency inventory and the reported Oak Ridge file-transfer failure and tested tape fallback. These cases document preparation and recovery, not a world observed without remediation.
++
++- US General Accounting Office, [Social Security Administration: Year 2000 Readiness Efforts Helped Ensure Century Rollover and Leap Year Success](https://www.gao.gov/products/aimd-00-125), AIMD-00-125 (19 April 2000), including subsequent recommendation-status updates. Supports continued contingency planning and the explicitly later April 2004 separation of validation testing from development.
++
+ ### P-23: Internet forecasts
+ 
+ Clifford Stoll, [Why the Web Won't Be Nirvana](https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306), *Newsweek* (February 1995), also known by the print title “The Internet? Bah!” The publisher's archival version is the source for this dated forecast. The case concerns Stoll's argument, not a representative sample of every critic of the internet.
++
++Clifford Stoll, [attributed excerpt of his 1995 Newsweek essay](https://www.elon.edu/u/imagining/expert_predictions/the-internet-bah-why-cyberspace-isnt-and-never-will-be-nirvana/), in Elon University's Imagining the Internet archive. An additional access point for the particular claims discussed here.
++
++Tim Smith and François Flückiger, [Licensing the Web](https://home.cern/science/computing/the-birth-of-the-web/licensing-web/), CERN. Institutional history reproducing the 1993 release terms and describing the 1994 licensing decision. Specific software permissions are distinguished from universal internet access.
++
++## Historical context for provision
++
++### British Restaurants (Chapter 11)
++
++UK Parliament, Hansard, [British Restaurants, May 28, 1941](https://api.parliament.uk/historic-hansard/commons/1941/may/28/british-restaurants), House of Commons, volume 371, columns 1853–1854. Recorded questions and ministerial replies about local organization.
++
++UK Parliament, Hansard, [British Restaurants and Works Canteens, October 1, 1941](https://api.parliament.uk/historic-hansard/commons/1941/oct/01/british-restaurants-and-works-canteens), House of Commons, volume 374, columns 572–573. Supplies and private-caterer objections.
++
++UK Parliament, Hansard, [Food Distribution, October 2, 1941](https://api.parliament.uk/historic-hansard/commons/1941/oct/02/food-distribution-1). Includes the Fishmongers' Hall complaint. Statements in debate document participants' arguments rather than independently measured outcomes.
++
++UK Parliament, Hansard, [British Restaurants (Prices), March 17, 1942](https://hansard.parliament.uk/commons/1942-03-17/debates/55709938-4ce9-4237-ba1f-14645cb0f860/WrittenAnswers), Written Answers, Food Supplies. Official financial principles.
++
++### New Communities (Chapter 12)
++
++SNCC Digital Gateway, [New Communities Formed in Southwest Georgia](https://snccdigital.org/events/new-communities-formed-in-southwest-georgia/). Institutional civil-rights history with listed archival and oral-history sources.
++
++Ellen Sabina, [A Conversation with Shirley Sherrod](https://www.mainefarmlandtrust.org/blogs/a-conversation-with-shirley-sherrod), Maine Farmland Trust, published February 29, 2024; interview conducted June 2023. Participant testimony, attributed as such in the chapter.
++
++### Vienna municipal housing (Chapter 13)
++
++City of Vienna, Municipal and Provincial Archives, [From Red Vienna to the Ständestaat, 1918–1938](https://www.wien.gv.at/en/education/history-red-vienna). Institutional retrospective on municipal government and housing.
++
++City of Vienna, Rathauskorrespondenz, [Der Karl-Marx-Hof ist 60](https://presse.wien.gv.at/1990/10/11/der-karl-marx-hof-ist-60), October 11, 1990. German anniversary notice describing the complex and ongoing renovation plans.
+ 
+ ## Sources for the retained epigraphs
+ 
+--- v0.8.1/25-appendix-d.md
++++ v0.8.2/25-appendix-d.md
+@@ -10,29 +10,29 @@
+ 
+ | ID | Precedent | Date | Closes |
+ | --- | --- | --- | --- |
+-| P-01 | The Reading Rage | 1790s | Preface |
+-| P-02 | The Toy at the Fair | 1876 | Chapter 0 |
++| P-01 | The Reading Rage | Eighteenth and early nineteenth centuries | Preface |
++| P-02 | The Voice at the Fair | 1876 | Chapter 0 |
+ | P-03 | One Million Years, Give or Take | 1903 | Chapter 1 |
+ | P-04 | The Red Flag | 1865 | Chapter 2 |
+-| P-05 | The Fleet That Sailed Home Forever | 1433 | Chapter 3 |
+-| P-06 | The Great Demotion | 1543 | Chapter 4 |
+-| P-07 | The Horse's Last Ledger | 1783–1960 | Chapter 5 |
++| P-05 | The Court and the Fleet | 1405–1433 | Chapter 3 |
++| P-06 | The Moving Earth | 1543 | Chapter 4 |
++| P-07 | The Horse and the Ledger | Eighteenth to twentieth centuries | Chapter 5 |
+ | P-08 | The Grain Trap | c. 9500 BC | Chapter 6 |
+ | P-09 | The Frame-Breakers | 1811–1816 | Chapter 7 |
+ | P-10 | The Robot in the Orchestra Pit | 1929–1948 | Chapter 7 |
+ | P-11 | Torches of Freedom | 1929 | Chapter 8 |
+-| P-12 | The Year the Bronze Stopped | c. 1177 BC | Chapter 9 |
+-| P-13 | The Abbot's Confession | 1492 | Chapter 10 |
+-| P-14 | The Quartz Heresy | 1969–1983 | Chapter 11 |
++| P-12 | The Networks Behind the Bronze | Fourteenth to twelfth centuries BC | Chapter 9 |
++| P-13 | The Abbot and the Press | 1492–1494 | Chapter 10 |
++| P-14 | Quartz and the Assembly Line | 1962–1983 | Chapter 11 |
+ | P-15 | One Hundred Sixty Acres | 1862 | Chapter 12 |
+ | P-16 | The House That Came by Mail | Early twentieth century | Chapter 13 |
+ | P-17 | The Company Under Pressure | 1975–2013 | Chapter 14 |
+ | P-18 | The Mirror Twin | 2000s | Chapter 14 |
+-| P-19 | Twenty Million Gardens | 1943–1944 | Chapter 15 |
++| P-19 | Organizing the Harvest | 1943–1944 | Chapter 15 |
+ | P-20 | An Argument in Circulation | 1776 | Chapter 16 |
+ | P-21 | Access to Tools | 1968 | Chapter 17 |
+-| P-22 | The Apocalypse That Ran On Time | 1999 | Chapter 18 |
+-| P-23 | The Passing Fad | 1995 | Conclusion |
++| P-22 | The Apocalypse That Ran On Time | 1999–2004 | Chapter 18 |
++| P-23 | What the Forecast Missed | 1993–1995 | Conclusion |
+ 
+ ## The rules, in one breath each
+ 

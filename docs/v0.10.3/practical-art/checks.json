@@ -1,0 +1,150 @@
+{
+  "figures": {
+    "v103-reading-routes.svg": {
+      "screen": {
+        "labels": 13,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.57177734375,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "print": {
+        "labels": 13,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.57177734375,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "identical_geometry": true
+    },
+    "v103-service-ledger.svg": {
+      "screen": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.3912760416666665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "print": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.3912760416666665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "identical_geometry": true
+    },
+    "v103-offline-check.svg": {
+      "screen": {
+        "labels": 15,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.6193033854166665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "print": {
+        "labels": 15,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.6193033854166665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "identical_geometry": true
+    },
+    "v103-first-year-index.svg": {
+      "screen": {
+        "labels": 28,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.78076171875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "print": {
+        "labels": 28,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.78076171875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "pass": true
+      },
+      "identical_geometry": true
+    }
+  },
+  "negative_controls": {
+    "undersized_label": {
+      "labels": 13,
+      "min_pt": 2.7359375,
+      "width_in": 4.559895833333333,
+      "height_in": 3.57177734375,
+      "overlaps": [],
+      "outside": [],
+      "path_errors": [],
+      "pass": false
+    },
+    "overlapping_labels": {
+      "labels": 13,
+      "min_pt": 9.57578125,
+      "width_in": 4.559895833333333,
+      "height_in": 3.57177734375,
+      "overlaps": [
+        [
+          "THREE WAYS INTO THE BOOK",
+          "Start with the route you need."
+        ]
+      ],
+      "outside": [],
+      "path_errors": [
+        "labels overlap: \"THREE WAYS INTO THE BOOK\" / \"Start with the route you need.\""
+      ],
+      "pass": false
+    },
+    "out_of_frame": {
+      "labels": 13,
+      "min_pt": 9.57578125,
+      "width_in": 4.559895833333333,
+      "height_in": 3.57177734375,
+      "overlaps": [],
+      "outside": [
+        "THREE WAYS INTO THE BOOK"
+      ],
+      "path_errors": [],
+      "pass": false
+    },
+    "path_through_label": {
+      "labels": 13,
+      "min_pt": 9.57578125,
+      "width_in": 4.559895833333333,
+      "height_in": 3.57177734375,
+      "overlaps": [],
+      "outside": [],
+      "path_errors": [
+        "a path crosses: \"THREE WAYS INTO THE BOOK\""
+      ],
+      "pass": false
+    }
+  },
+  "scope": "Embedded-font Chromium geometry and screenshots at 4.56 inches. Text boundaries, text overlap, sampled path intersections, screen/print geometry equality. Does not certify publication pagination or physical print output."
+}

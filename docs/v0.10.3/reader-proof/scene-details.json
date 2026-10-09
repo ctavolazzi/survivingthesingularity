@@ -1,0 +1,458 @@
+{
+  "base": "http://127.0.0.1:5191",
+  "reduced_motion": true,
+  "scenes": [
+    {
+      "id": "food-delivery",
+      "width": 390,
+      "still": true,
+      "rows": [
+        {
+          "text": [
+            "Garden",
+            "Inspect the crop and equipment; harvest and weigh eight usable kilograms after the stated loss."
+          ],
+          "box": {
+            "x": 46,
+            "y": 668.265625,
+            "width": 298,
+            "height": 175.96875,
+            "top": 668.265625,
+            "right": 344,
+            "bottom": 844.234375,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Food partner",
+            "Supply the missing two kilograms before calling the delivery a success."
+          ],
+          "box": {
+            "x": 46,
+            "y": 360.234375,
+            "width": 298,
+            "height": 124.125,
+            "top": 360.234375,
+            "right": 344,
+            "bottom": 484.359375,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Packing and transport",
+            "People sort, pack, handle, and deliver the food through the partner’s existing arrangements."
+          ],
+          "box": {
+            "x": 46,
+            "y": 484.359375,
+            "width": 298,
+            "height": 175.96875,
+            "top": 484.359375,
+            "right": 344,
+            "bottom": 660.328125,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Five households",
+            "Each receives two kilograms, free. Confirm receipt and whether people can use the food. This is a contribution to meals, not five complete diets."
+          ],
+          "box": {
+            "x": 46,
+            "y": 616.328125,
+            "width": 298,
+            "height": 227.8125,
+            "top": 616.328125,
+            "right": 344,
+            "bottom": 844.140625,
+            "left": 46
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "living-soil",
+      "width": 390,
+      "still": true,
+      "rows": [
+        {
+          "text": [
+            "Sunlight and water",
+            "Inputs reach the plants and soil; water also leaves through plants, evaporation, and drainage."
+          ],
+          "box": {
+            "x": 46,
+            "y": 667.53125,
+            "width": 298,
+            "height": 175.96875,
+            "top": 667.53125,
+            "right": 344,
+            "bottom": 843.5,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Roots and soil life",
+            "Plants supply sugars. Organisms transform and release nutrients; different partnerships do different jobs."
+          ],
+          "box": {
+            "x": 46,
+            "y": 616.5,
+            "width": 298,
+            "height": 227.8125,
+            "top": 616.5,
+            "right": 344,
+            "bottom": 844.3125,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Compost and other replenishment",
+            "Returning organic matter supports the soil. Actual replacement needs depend on the crop, soil, and harvest."
+          ],
+          "box": {
+            "x": 46,
+            "y": 308.3125,
+            "width": 298,
+            "height": 227.8125,
+            "top": 308.3125,
+            "right": 344,
+            "bottom": 536.125,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Harvest",
+            "Food leaves the bed and carries nutrients with it. Recycling some material does not make the garden self-sufficient forever."
+          ],
+          "box": {
+            "x": 46,
+            "y": 536.125,
+            "width": 298,
+            "height": 227.8125,
+            "top": 536.125,
+            "right": 344,
+            "bottom": 763.9375,
+            "left": 46
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "shared-workshop",
+      "width": 390,
+      "still": true,
+      "rows": [
+        {
+          "text": [
+            "People",
+            "Training, safe operation, shared access, and time for the work remain necessary."
+          ],
+          "box": {
+            "x": 46,
+            "y": 694.234375,
+            "width": 298,
+            "height": 150.046875,
+            "top": 694.234375,
+            "right": 344,
+            "bottom": 844.28125,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Materials and power",
+            "Stock, suitable supplies, and energy come from real arrangements outside the tool."
+          ],
+          "box": {
+            "x": 46,
+            "y": 347.28125,
+            "width": 298,
+            "height": 150.046875,
+            "top": 347.28125,
+            "right": 344,
+            "bottom": 497.328125,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Maintenance and spares",
+            "Documentation, compatible replacement parts, and repair skill keep equipment useful over time."
+          ],
+          "box": {
+            "x": 46,
+            "y": 497.328125,
+            "width": 298,
+            "height": 175.96875,
+            "top": 497.328125,
+            "right": 344,
+            "bottom": 673.296875,
+            "left": 46
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Useful output",
+            "Judge the whole job and what it enables: a repair, a working tool, or a part that meets its intended requirements."
+          ],
+          "box": {
+            "x": 46,
+            "y": 642.296875,
+            "width": 298,
+            "height": 201.890625,
+            "top": 642.296875,
+            "right": 344,
+            "bottom": 844.1875,
+            "left": 46
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "food-delivery",
+      "width": 1280,
+      "still": true,
+      "rows": [
+        {
+          "text": [
+            "Garden",
+            "Inspect the crop and equipment; harvest and weigh eight usable kilograms after the stated loss."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 618.953125,
+            "width": 563,
+            "height": 98.203125,
+            "top": 618.953125,
+            "right": 921.5,
+            "bottom": 717.15625,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Food partner",
+            "Supply the missing two kilograms before calling the delivery a success."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 717.15625,
+            "width": 563,
+            "height": 72.28125,
+            "top": 717.15625,
+            "right": 921.5,
+            "bottom": 789.4375,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Packing and transport",
+            "People sort, pack, handle, and deliver the food through the partner’s existing arrangements."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 771.4375,
+            "width": 563,
+            "height": 72.28125,
+            "top": 771.4375,
+            "right": 921.5,
+            "bottom": 843.71875,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Five households",
+            "Each receives two kilograms, free. Confirm receipt and whether people can use the food. This is a contribution to meals, not five complete diets."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 719.71875,
+            "width": 563,
+            "height": 124.125,
+            "top": 719.71875,
+            "right": 921.5,
+            "bottom": 843.84375,
+            "left": 358.5
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "living-soil",
+      "width": 1280,
+      "still": true,
+      "rows": [
+        {
+          "text": [
+            "Sunlight and water",
+            "Inputs reach the plants and soil; water also leaves through plants, evaporation, and drainage."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 618.796875,
+            "width": 563,
+            "height": 98.203125,
+            "top": 618.796875,
+            "right": 921.5,
+            "bottom": 717,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Roots and soil life",
+            "Plants supply sugars. Organisms transform and release nutrients; different partnerships do different jobs."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 717,
+            "width": 563,
+            "height": 98.203125,
+            "top": 717,
+            "right": 921.5,
+            "bottom": 815.203125,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Compost and other replenishment",
+            "Returning organic matter supports the soil. Actual replacement needs depend on the crop, soil, and harvest."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 746.203125,
+            "width": 563,
+            "height": 98.203125,
+            "top": 746.203125,
+            "right": 921.5,
+            "bottom": 844.40625,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Harvest",
+            "Food leaves the bed and carries nutrients with it. Recycling some material does not make the garden self-sufficient forever."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 372.40625,
+            "width": 563,
+            "height": 98.203125,
+            "top": 372.40625,
+            "right": 921.5,
+            "bottom": 470.609375,
+            "left": 358.5
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "shared-workshop",
+      "width": 1280,
+      "still": true,
+      "rows": [
+        {
+          "text": [
+            "People",
+            "Training, safe operation, shared access, and time for the work remain necessary."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 618.890625,
+            "width": 563,
+            "height": 72.28125,
+            "top": 618.890625,
+            "right": 921.5,
+            "bottom": 691.171875,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Materials and power",
+            "Stock, suitable supplies, and energy come from real arrangements outside the tool."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 691.171875,
+            "width": 563,
+            "height": 72.28125,
+            "top": 691.171875,
+            "right": 921.5,
+            "bottom": 763.453125,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Maintenance and spares",
+            "Documentation, compatible replacement parts, and repair skill keep equipment useful over time."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 745.453125,
+            "width": 563,
+            "height": 98.203125,
+            "top": 745.453125,
+            "right": 921.5,
+            "bottom": 843.65625,
+            "left": 358.5
+          },
+          "visible": true
+        },
+        {
+          "text": [
+            "Useful output",
+            "Judge the whole job and what it enables: a repair, a working tool, or a part that meets its intended requirements."
+          ],
+          "box": {
+            "x": 358.5,
+            "y": 745.65625,
+            "width": 563,
+            "height": 98.203125,
+            "top": 745.65625,
+            "right": 921.5,
+            "bottom": 843.859375,
+            "left": 358.5
+          },
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "note": "Each detail row is separately scrolled into the real reading viewport and checked. Viewport captures supplement the larger element captures, whose content can be clipped by the continuous reader scrolling container.",
+  "passed": true
+}

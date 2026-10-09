@@ -78,6 +78,15 @@
       "headline_accent": "one scroll.",
       "body": "The full draft in one continuous, readable scroll. Your place is kept as you go.",
       "chip": "DRAFT v{version}"
+    },
+    {
+      "route": "/factcheck",
+      "out": "factcheck.png",
+      "eyebrow": "CHAIN OF CUSTODY",
+      "headline_lead": "Don't trust the book.",
+      "headline_accent": "Audit it.",
+      "body": "Every checkable claim traced back to the commit and the source behind it, including the places the trail breaks.",
+      "chip": "TRACE EVERY CLAIM"
     }
   ]
 }

@@ -1,0 +1,125 @@
+{
+  "version": "0.10.4",
+  "scope": "Gentle editorial review of Part II, Chapters 6 to 14, and Part III divider.",
+  "files_read": [
+    {
+      "file": "VOICE-GUIDE.md",
+      "before_sha256": "9e9485d394d168fe4eed9d783a0e29cee673d0048d41768be710cfa0548d62b3",
+      "after_sha256": "9e9485d394d168fe4eed9d783a0e29cee673d0048d41768be710cfa0548d62b3"
+    },
+    {
+      "file": "ELIJAH-PROTOCOL.md",
+      "before_sha256": "49917da9b3708e76f91d8d434d494fa9d59ac800a687c21f7f5fc5b3fff4e3a8",
+      "after_sha256": "49917da9b3708e76f91d8d434d494fa9d59ac800a687c21f7f5fc5b3fff4e3a8"
+    },
+    {
+      "file": "part2-divider.md",
+      "before_sha256": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a",
+      "after_sha256": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a"
+    },
+    {
+      "file": "part3-divider.md",
+      "before_sha256": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e",
+      "after_sha256": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e"
+    },
+    {
+      "file": "08-chapter6.md",
+      "before_sha256": "f23b3cf68e0ce502925511881600a68f7efe02bd23c8aa946f5c6b86ad3d18f6",
+      "after_sha256": "ff7e636984d88f0f55ca29171459e2531a5d1b9125c08a90cf68c100852a1a79"
+    },
+    {
+      "file": "09-chapter7.md",
+      "before_sha256": "865a00f0b1916061483c9ada37c073cdb292fe9a9052980fce77abd1c6a23726",
+      "after_sha256": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd"
+    },
+    {
+      "file": "10-chapter8.md",
+      "before_sha256": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+      "after_sha256": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167"
+    },
+    {
+      "file": "11-chapter9.md",
+      "before_sha256": "3bba6cb2c37ec480b9251872a81e244204429678fd93bfa4ccf5bd6a443d2262",
+      "after_sha256": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506"
+    },
+    {
+      "file": "12-chapter10.md",
+      "before_sha256": "c99fb8fd2e497b00253392767bed2f3e7b81855923218d99b63f2796646844ec",
+      "after_sha256": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba"
+    },
+    {
+      "file": "13-chapter11.md",
+      "before_sha256": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+      "after_sha256": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b"
+    },
+    {
+      "file": "14-chapter12.md",
+      "before_sha256": "fcb0ad1fdb332c4b60fce3f896d7d8dad620cd8ed11cdf69be1f67ded933ef48",
+      "after_sha256": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14"
+    },
+    {
+      "file": "15-chapter13.md",
+      "before_sha256": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+      "after_sha256": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad"
+    },
+    {
+      "file": "16-chapter14.md",
+      "before_sha256": "b169cf765675b6b86a0c7662f3360f1ac81856c9e623c88c92bbdf8bbb46eee1",
+      "after_sha256": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016"
+    }
+  ],
+  "edits": [
+    {
+      "file": "08-chapter6.md",
+      "before": "2. Run the group audit on your own affiliations: employer, industry, town, community. For each, answer honestly: is this group adapting or refusing? And is it counting who gets hurt along the way? The grain trap punished groups for their choices, and individuals for their group.",
+      "after": "2. Run the group audit on your own affiliations: employer, industry, town, community. For each, name one change it's making and who carries the cost. If you can't find an answer, write down who you'll ask. The grain trap punished groups for their choices, and individuals for their group.",
+      "reason": "Makes the existing audit observable and gives the reader a next step when the answer is missing."
+    },
+    {
+      "file": "09-chapter7.md",
+      "before": "Here's the move the battle-line framing hides, and it's the most important move in this half of the book.",
+      "after": "Here's the move the battle-line framing hides: readiness has to reach beyond your own household.",
+      "reason": "Replaces an announcement of importance with the actual claim, keeping the turn into the cooperative argument direct."
+    },
+    {
+      "file": "11-chapter9.md",
+      "before": "Five households getting vegetables is a contribution. A dependable baseline needs more food, more kinds of it, preparation, routes people can actually use, and a way to keep going through a failed crop or a broken van. It also needs a place for the household that wasn't one of the first five. So the next meeting belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "after": "The next meeting has to plan beyond the first five households. It belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "reason": "Removes the second nearby checklist of what a complete food baseline needs. The preceding paragraph retains diets, seasons, preparation, interruptions, and continuing support; this paragraph keeps inclusion and the strong closing lines."
+    },
+    {
+      "file": "12-chapter10.md",
+      "before": "- **The human filter.** Working alongside people is how you find the ones who also want to be useful. You won't find them on a screen. You'll find them on the ground.",
+      "after": "- **The human filter.** Working alongside people is how you find the ones who also want to be useful. Make the introduction wherever you can, then give it a shared task.",
+      "reason": "Keeps the emphasis on shared work without contradicting this chapter's own example of useful connections beginning online."
+    },
+    {
+      "file": "14-chapter12.md",
+      "before": "Now let's finish the story this chapter has been circling, all the way to the door.",
+      "after": "Now follow one request all the way to the door.",
+      "reason": "Introduces the illustrative Grandma scenario plainly instead of implying it is the continuation of an already introduced story."
+    },
+    {
+      "file": "16-chapter14.md",
+      "before": "There's a cemetery full of companies that made the other choice, and the precedents at the end of this chapter walk you through it. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "after": "The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "reason": "Clarifies what the closing cases compare, replacing an ambiguous reference to the other choice while preserving the central comparison and voice."
+    }
+  ],
+  "verification": {
+    "edits": 6,
+    "exact_reverse_restores_sources": true,
+    "chapter_openings_and_scenes_unchanged": true,
+    "links_and_images_unchanged": true,
+    "new_em_or_en_dashes": 0,
+    "source_verification": "Editorial review only. Existing facts and citations retained; no fresh factual claims added."
+  },
+  "critique": [
+    "The middle is strongest when an argument becomes physical: Rosa's delivery, the exposed journal, the first fire, and Frank's bell give the reader something human to carry through the technical sections.",
+    "The scenes let competence include mistakes, limits, and help from other people. Preserve that patience.",
+    "The worked food-delivery example connects the tools to a clear promise and an observable result.",
+    "A few transitional sentences announce importance or gesture backward when they could name the next idea directly.",
+    "Chapter 9 repeats its food-baseline checklist close enough to slow the move toward action.",
+    "A few instructions work better when they ask for a concrete observation or shared task instead of a broad judgment."
+  ]
+}

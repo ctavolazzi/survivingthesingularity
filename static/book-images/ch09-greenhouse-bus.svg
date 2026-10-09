@@ -1,51 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  <defs>
-    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
-    </marker>
-    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
-    </marker>
-  </defs>
-
-  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE GREENHOUSE AUTOMATION BUS</text>
-  <line x1="40" y1="66" x2="460" y2="66" stroke="#1e293b" stroke-width="2"/>
-
-  <!-- Pi host -->
-  <rect x="290" y="96" width="280" height="76" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
-  <text x="430" y="128" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">RASPBERRY PI HOST</text>
-  <text x="430" y="152" font-size="12" fill="#94a3b8" text-anchor="middle">Mycodo engine · PID loops</text>
-
-  <!-- buses -->
-  <path d="M 360 172 L 240 220" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ab)"/>
-  <text x="256" y="200" font-size="12" fill="#3b82f6" text-anchor="end">I2C sensor bus</text>
-  <path d="M 500 172 L 620 220" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
-  <text x="608" y="200" font-size="12" fill="#f59e0b">GPIO relay board</text>
-
-  <!-- sensors column -->
-  <text x="240" y="252" font-size="12" font-weight="600" fill="#3b82f6" text-anchor="middle">SENSORS (inputs)</text>
-  <rect x="110" y="266" width="260" height="72" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
-  <text x="240" y="296" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">SHT31-D</text>
-  <text x="240" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">air temperature + humidity</text>
-
-  <rect x="110" y="350" width="260" height="72" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
-  <text x="240" y="380" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">STEMMA SOIL SENSOR</text>
-  <text x="240" y="402" font-size="11" fill="#94a3b8" text-anchor="middle">capacitive moisture + soil temp</text>
-
-  <!-- actuators column -->
-  <text x="620" y="252" font-size="12" font-weight="600" fill="#f59e0b" text-anchor="middle">ACTUATORS (12V outputs)</text>
-  <rect x="490" y="266" width="260" height="72" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
-  <text x="620" y="296" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">WATER SOLENOID VALVE</text>
-  <text x="620" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">gravity-fed irrigation line</text>
-
-  <rect x="490" y="350" width="260" height="72" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
-  <text x="620" y="380" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">EXHAUST FAN + GROW LIGHTS</text>
-  <text x="620" y="402" font-size="11" fill="#94a3b8" text-anchor="middle">brushless DC, relay-switched</text>
-
-  <!-- feedback loop -->
-  <path d="M 240 422 Q 240 480 430 480 Q 620 480 620 422" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 5" marker-start="url(#ab)" marker-end="url(#aa)"/>
-  <text x="430" y="470" font-size="12" fill="#64748b" text-anchor="middle">sense → decide → actuate → sense</text>
-
-  <text x="430" y="528" font-size="13" fill="#f1f5f9" text-anchor="middle">the greenhouse waters itself with control-loop precision while you sleep</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 650" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">THE GREENHOUSE CONTROL BUS</title>
+<desc id="desc">A component map connects an SHT31-D air temperature and humidity sensor and a STEMMA capacitive moisture sensor to a Raspberry Pi running Mycodo over I2C. Growers configure and test setpoints, run-time and water limits, and irrigation fail-off behavior. Matched low-voltage drivers operate valves, fans and lights, with manual shutoffs. It is not a wiring diagram or an unattended safety guarantee.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">THE GREENHOUSE CONTROL BUS</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="76" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Component map, not a wiring diagram.</text>
+<rect x="20" y="96" width="208" height="92" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<text x="124" y="122" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">SHT31-D</text>
+<text x="124" y="147" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Air temperature</text>
+<text x="124" y="169" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">+ humidity</text>
+<rect x="252" y="96" width="208" height="92" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<text x="356" y="122" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">STEMMA 4026</text>
+<text x="356" y="147" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Capacitive</text>
+<text x="356" y="169" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">moisture reading</text>
+<path d="M124 188V210H356V188M240 210V228" fill="none" stroke="#60a5fa" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M236 220L240 228L244 220" fill="none" stroke="#60a5fa" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="270" y="228" font-size="14" fill="#60a5fa" text-anchor="start" font-weight="400">I2C</text>
+<rect x="104" y="236" width="272" height="68" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="240" y="263" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Raspberry Pi + Mycodo</text>
+<text x="240" y="287" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Read, decide, actuate</text>
+<path d="M240 309L240 329" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M236 323L240 329L244 323" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="20" y="337" width="440" height="117" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="38" y="361" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">GROWER: CONFIGURE AND TEST</text>
+<text x="38" y="385" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Setpoints + run-time and water limits</text>
+<text x="38" y="409" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Bad/missing moisture data: water OFF</text>
+<text x="38" y="433" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Keep a manual shutoff accessible</text>
+<path d="M240 461L240 483" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M236 477L240 483L244 477" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="20" y="491" width="440" height="65" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<text x="240" y="516" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Matched drivers / relays</text>
+<text x="240" y="540" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Low-voltage valve, fan and light circuits</text>
+<path d="M20 580L460 580" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="600" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Check readings against conditions in the bed.</text>
+<text x="20" y="621" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Verify water stops on faults and lost power.</text>
 </svg>

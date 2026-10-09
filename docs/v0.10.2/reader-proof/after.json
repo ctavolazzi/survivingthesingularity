@@ -1,0 +1,17 @@
+{
+  "base": "http://127.0.0.1:5190",
+  "phase": "after",
+  "checks": {
+    "scene_open_focus": true,
+    "scene_close_focus": true,
+    "control_arrow_does_not_navigate": true,
+    "context_loss_focus_restored": true,
+    "chapter_dropdown_escape_restores_focus": true,
+    "drawer_focus_modal_escape_restore": true,
+    "part2_prose_images_and_jump_focus": true,
+    "part3_prose_images": true,
+    "registry_figures_with_alt_caption_and_source": 54,
+    "renderer_sanitization_and_caption_boundary": true
+  },
+  "errors": []
+}

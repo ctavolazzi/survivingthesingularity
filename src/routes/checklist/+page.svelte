@@ -4,6 +4,7 @@
   import EmailGate from '$lib/components/EmailGate.svelte';
   import DiscordApplication from '$lib/components/DiscordApplication.svelte';
   import BookCover from '$lib/components/BookCover.svelte';
+  import { offer } from '$lib/offer';
 
   const categories = {
     foundation:     { label: 'Foundation',     color: '#f59e0b', desc: 'Understand your actual situation before you change anything.' },
@@ -373,10 +374,10 @@
       </ul>
 
       <a href="/early-access" class="cl-book-sales-btn">
-        Get Early Access. $5.
+        Get Early Access. {offer.price}.
         <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <p class="cl-book-sales-fine">One payment. Instant access. Price goes up at launch.</p>
+      <p class="cl-book-sales-fine">One payment. Instant access. When the preorder window closes, this price is gone.</p>
     </div>
 
     <!-- Gated: items 4-12 + send section + deeper content -->
@@ -514,8 +515,8 @@
         <div class="cl-upgrade-inner">
           <div class="cl-upgrade-text">
             <p class="cl-section-label">Want everything</p>
-            <h2 class="cl-upgrade-heading">The full kit is $5.</h2>
-            <p class="cl-upgrade-sub">All chapters, the book draft, The Precedent File, and every tool I build next. One payment. Instant access.</p>
+            <h2 class="cl-upgrade-heading">The full kit is {offer.price}.</h2>
+            <p class="cl-upgrade-sub">All chapters, the book draft, The Precedent File, and every tool I build next. One payment. Instant access. And when the membership launches, you never pay it.</p>
           </div>
           <a href="/early-access" class="cl-upgrade-btn">
             Get Early Access

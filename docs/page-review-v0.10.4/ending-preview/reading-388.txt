@@ -1,0 +1,18 @@
+The shell. A printed enclosure, a repurposed case, or a waterproof
+box. Thatʼs where the personality lives, and where the
+weatherproofing lives.
+Power ties it together. Most decks run on low-voltage DC, from a pack-
+aged  battery  with  its  own  protection  circuit  or  a  small  power  station,
+which makes them a natural first load for the DC corner in Chapter 17.
+Donʼt build lithium packs from salvaged cells unless youʼve been properly
+taught; buy a protected pack.
+From Tier 0 to Tier 3
+Donʼt start with the seashell that runs a local AI. Build capability in order,
+and let each tier work before you add the next.
+Tier  0,  the  phone  you  have. Save  one  non-sensitive  reference  youʼre
+allowed to copy, turn off the network, and confirm you can open it and
+find what you need. Write down its source and date so youʼll know when
+itʼs stale. Thatʼs the offline habit, for free.
+• 
+APPENDIX E
+383

@@ -1,0 +1,48 @@
+Chapter 11: local computing and machine work
+National Institute of Standards and Technology, Air Gap. Physical separation
+and the controlled transfer of information across it; local execution alone is
+not isolation.
+California Department of Justice, Data Security Breach Reporting. State
+reporting requirements for defined incidents. Counsel must assess the
+facts; this source does not determine whether the fictional exposure meets
+a statutory definition.
+Occupational Safety and Health Administration, Control of Hazardous
+Energy, 29 CFR 1910.147. Servicing procedures address energy isolation,
+stored energy, and verification. A command to stop software is not
+equivalent to physical isolation.
+Chapters 12 and 15: land tenure and assessment
+Grounded Solutions Network, Community Land Trusts. Practitioner
+documentation of a typical affordable-homeownership model: separately
+owned land and homes, a renewable ground lease often lasting ninety-nine
+years, and resale restrictions. Other uses need appropriate agreements.
+California Department of Conservation, Williamson Act FAQ (2024). Use
+restrictions and property-specific assessment; a contract does not
+necessarily produce greater savings than existing tax treatment.
+Internal Revenue Service, Conservation Easements. Qualified donations
+and valuation requirements for federal income-tax deductions. These are
+distinct from local property-tax assessments.
+Land Report, January 2021 newsletter. Original publicationʼs estimate of
+Gatesʼs farmland holdings; a dated estimate rather than a current parcel
+inventory.
+Nuveen, Global Farmland Capabilities. Investment managerʼs description of
+its portfolio, not independent evidence of any investorʼs motive.
+Chapter 13: shelter and heating
+DuraVent, DVL. Manufacturer documentation identifies the product as an
+interior connector, distinct from the chimney.
+US Fire Administration, Heating Fire Safety. Guidance on combustible
+clearance and maintenance.
+Centers for Disease Control and Prevention, Carbon Monoxide Poisoning:
+About. Fuel-burning equipment and enclosed-space exposure.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+APPENDIX B
+359

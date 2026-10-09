@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Surviving the Singularity: next steps</title>
+<style>
+  :root {
+    --forest: #2d5016;
+    --forest-deep: #1e360f;
+    --sage: #89b07f;
+    --cream: #ede8d8;
+    --paper: #fbf8ef;
+    --golden: #c8a24f;
+    --golden-ink: #8a6a1a;
+    --amber: #d16849;
+    --rust: #a83a1e;
+    --ink: #22301a;
+    --muted: #5f6d58;
+    --line: rgb(45 80 22 / 0.16);
+    --line-strong: rgb(45 80 22 / 0.34);
+    --shadow: 0 1px 2px rgb(34 48 26 / 0.06), 0 8px 24px rgb(34 48 26 / 0.07);
+    --radius: 12px;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+    --sans: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #171c14;
+      --paper: #1e2419;
+      --ink: #e6ebe0;
+      --muted: #9aa893;
+      --forest: #a8cf9a;
+      --forest-deep: #cfe4c6;
+      --line: rgb(168 207 154 / 0.18);
+      --line-strong: rgb(168 207 154 / 0.36);
+      --golden: #d9b768;
+      --golden-ink: #dfc37f;
+      --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.35);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .shell { max-width: 1180px; margin: 0 auto; padding: 32px 20px 120px; }
+
+  /* ── Masthead ─────────────────────────────────────────── */
+  .masthead { border-bottom: 2px solid var(--line-strong); padding-bottom: 24px; margin-bottom: 28px; }
+  .eyebrow {
+    font-size: 12px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--golden-ink); margin: 0 0 8px;
+  }
+  h1 { font-size: clamp(28px, 4.4vw, 42px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 900; margin: 0 0 12px; color: var(--forest); }
+  .standfirst { font-size: clamp(15px, 1.8vw, 18px); color: var(--muted); max-width: 66ch; margin: 0 0 20px; }
+
+  .meta-row { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--muted); font-family: var(--mono); }
+  .meta-row b { color: var(--ink); font-weight: 700; }
+
+  /* ── Progress ─────────────────────────────────────────── */
+  .progress-card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 20px; margin: 24px 0 32px; box-shadow: var(--shadow);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px;
+  }
+  .progress-figure { font-size: 30px; font-weight: 900; color: var(--forest); line-height: 1; font-variant-numeric: tabular-nums; }
+  .progress-label { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .bar { flex: 1 1 260px; height: 10px; border-radius: 999px; background: var(--line); overflow: hidden; min-width: 200px; }
+  .bar > i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--sage), var(--forest)); transition: width 0.3s ease; }
+  .reset-btn {
+    font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    background: none; border: 1px solid var(--line-strong); color: var(--muted);
+    border-radius: 999px; padding: 6px 14px;
+  }
+  .reset-btn:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ── Filters ──────────────────────────────────────────── */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  .chip {
+    font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    background: var(--paper); border: 1px solid var(--line-strong); color: var(--muted);
+    border-radius: 999px; padding: 6px 14px; transition: all 0.15s;
+  }
+  .chip:hover { color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+  @media (prefers-color-scheme: dark) { .chip[aria-pressed="true"] { color: #12180f; } }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; color: var(--muted); margin: 14px 0 30px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .dot--legal { background: var(--rust); }
+  .dot--copy { background: var(--amber); }
+  .dot--numbers { background: var(--golden); }
+  .dot--config { background: var(--sage); }
+  .dot--gate { background: var(--forest); border-radius: 50%; }
+
+  /* ── Flow rail ────────────────────────────────────────── */
+  .wave { position: relative; margin: 0 0 10px; }
+  .wave-head {
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    padding: 14px 0 10px;
+  }
+  .wave-num {
+    font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--paper);
+    background: var(--forest); border-radius: 6px; padding: 3px 8px; letter-spacing: 0.06em;
+  }
+  @media (prefers-color-scheme: dark) { .wave-num { color: #12180f; } }
+  .wave-title { font-size: 19px; font-weight: 800; letter-spacing: -0.015em; margin: 0; color: var(--forest); }
+  .wave-note { font-size: 13px; color: var(--muted); }
+  .wave-count { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-left: auto; }
+
+  .connector { display: flex; justify-content: center; padding: 2px 0; }
+  .connector svg { display: block; color: var(--line-strong); }
+
+  .nodes {
+    display: grid; gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  .node {
+    position: relative; text-align: left; font: inherit; cursor: pointer;
+    background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--sage);
+    border-radius: var(--radius); padding: 13px 14px 12px; box-shadow: var(--shadow);
+    transition: transform 0.14s, box-shadow 0.14s, border-color 0.14s;
+    display: flex; flex-direction: column; gap: 6px; width: 100%;
+  }
+  .node:hover, .node:focus-visible { transform: translateY(-2px); box-shadow: 0 4px 8px rgb(34 48 26 / 0.1), 0 14px 30px rgb(34 48 26 / 0.12); }
+  .node:focus-visible { outline: 2px solid var(--golden); outline-offset: 2px; }
+  .node[data-cat="legal"] { border-left-color: var(--rust); }
+  .node[data-cat="copy"] { border-left-color: var(--amber); }
+  .node[data-cat="numbers"] { border-left-color: var(--golden); }
+  .node[data-cat="config"] { border-left-color: var(--sage); }
+  .node[data-blocked="true"] { opacity: 0.62; border-style: dashed; }
+  .node[data-done="true"] { opacity: 0.5; }
+  .node[data-done="true"] .node-title { text-decoration: line-through; }
+  .node[hidden] { display: none; }
+
+  .node-top { display: flex; align-items: center; gap: 8px; }
+  .node-id { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; }
+  .node-flag {
+    font-size: 10px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 2px 6px; border-radius: 4px; margin-left: auto;
+  }
+  .node-flag--blocked { background: rgb(168 58 30 / 0.14); color: var(--rust); }
+  .node-flag--gate { background: rgb(200 162 79 / 0.2); color: var(--golden-ink); }
+  .node-title { font-size: 14.5px; font-weight: 700; line-height: 1.35; margin: 0; letter-spacing: -0.01em; }
+  .node-files { font-family: var(--mono); font-size: 11px; color: var(--muted); line-height: 1.5; word-break: break-all; }
+  .node-check { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .node-check input { accent-color: var(--forest); width: 15px; height: 15px; cursor: pointer; }
+
+  /* Gate nodes */
+  .gate {
+    background: linear-gradient(180deg, rgb(200 162 79 / 0.13), transparent), var(--paper);
+    border: 1px solid var(--golden); border-left-width: 1px;
+    border-radius: var(--radius);
+  }
+  .gate .node-title { color: var(--golden-ink); }
+
+  /* ── Drawer ───────────────────────────────────────────── */
+  .drawer-scrim {
+    position: fixed; inset: 0; background: rgb(20 28 16 / 0.42); backdrop-filter: blur(2px);
+    opacity: 0; pointer-events: none; transition: opacity 0.2s; z-index: 40;
+  }
+  .drawer-scrim[data-open="true"] { opacity: 1; pointer-events: auto; }
+
+  .drawer {
+    position: fixed; top: 0; right: 0; height: 100dvh; width: min(560px, 100vw);
+    background: var(--paper); border-left: 1px solid var(--line-strong);
+    box-shadow: -20px 0 60px rgb(20 28 16 / 0.18);
+    transform: translateX(102%); transition: transform 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 50; display: flex; flex-direction: column;
+  }
+  .drawer[data-open="true"] { transform: none; }
+  .drawer-head { padding: 20px 22px 14px; border-bottom: 1px solid var(--line); display: flex; align-items: flex-start; gap: 12px; }
+  .drawer-close {
+    font: inherit; font-size: 22px; line-height: 1; cursor: pointer; background: none;
+    border: none; color: var(--muted); padding: 2px 6px; margin-left: auto; border-radius: 6px;
+  }
+  .drawer-close:hover { color: var(--ink); background: var(--line); }
+  .drawer-body { padding: 20px 22px 60px; overflow-y: auto; flex: 1; }
+  .drawer h2 { font-size: 19px; line-height: 1.25; margin: 4px 0 0; letter-spacing: -0.02em; color: var(--forest); }
+  .drawer h3 {
+    font-size: 11px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--golden-ink); margin: 22px 0 7px;
+  }
+  .drawer h3:first-child { margin-top: 0; }
+  .drawer p { margin: 0 0 10px; font-size: 14.5px; }
+  .drawer ul, .drawer ol { margin: 0 0 10px; padding-left: 20px; font-size: 14.5px; }
+  .drawer li { margin-bottom: 5px; }
+  .drawer code, .path {
+    font-family: var(--mono); font-size: 12.5px; background: var(--cream);
+    border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; word-break: break-all;
+  }
+  .quote {
+    border-left: 3px solid var(--amber); padding: 8px 0 8px 12px; margin: 0 0 12px;
+    font-size: 14px; color: var(--muted); font-style: italic;
+  }
+  .verify {
+    background: rgb(137 176 127 / 0.14); border: 1px solid rgb(137 176 127 / 0.4);
+    border-radius: 8px; padding: 10px 12px; font-size: 13.5px;
+  }
+  .verify b { color: var(--forest); }
+  .blocked-banner {
+    background: rgb(168 58 30 / 0.1); border: 1px solid rgb(168 58 30 / 0.35);
+    border-radius: 8px; padding: 10px 12px; font-size: 13.5px; margin-bottom: 16px;
+  }
+
+  .opt {
+    display: block; width: 100%; text-align: left; font: inherit; cursor: pointer;
+    background: var(--cream); border: 1px solid var(--line-strong); border-radius: 8px;
+    padding: 10px 12px; margin-bottom: 8px; transition: border-color 0.15s, background 0.15s;
+  }
+  .opt:hover { border-color: var(--forest); }
+  .opt[aria-pressed="true"] { border-color: var(--forest); border-width: 2px; background: rgb(137 176 127 / 0.16); }
+  .opt b { display: block; font-size: 14px; margin-bottom: 3px; }
+  .opt span { font-size: 13px; color: var(--muted); }
+  .rec { font-size: 10px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--golden-ink); margin-left: 6px; }
+
+  /* ── Footer ───────────────────────────────────────────── */
+  .closing { margin-top: 44px; padding-top: 24px; border-top: 2px solid var(--line-strong); font-size: 14px; color: var(--muted); }
+  .closing b { color: var(--ink); }
+
+  @media print {
+    .drawer, .drawer-scrim, .filters, .reset-btn, .chip { display: none !important; }
+    body { background: #fff; }
+    .node { break-inside: avoid; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <header class="masthead">
+    <p class="eyebrow">Next steps</p>
+    <h1>What to do next on Surviving the Singularity, in order, and how you will know each one worked</h1>
+    <p class="standfirst">Nine pieces of work across two tracks. The book is clean and verified but exists only on this Mac. The site has a diagnosed Stripe webhook fix that has never been deployed. Every claim below was checked against the machine on 2026-07-26, not inherited from a prior session. Waves are ordered by <strong>what happens if you never get to them</strong>, so real money and data loss come before book polish.</p>
+    <div class="meta-row"><span><b>Book worktree:</b> ~/Code/active/sts-v0.7.3 (branch v0.7.3)</span>
+      <span><b>Site repo:</b> ~/Code/active/survivingthesingularity (branch book-art-optimized-2026-07-25)</span>
+      <span><b>Book state:</b> 87,763 words, 30 sections, harness Clean</span>
+      <span><b>Precedents checked:</b> 9 of 22</span>
+      <span><b>Verified:</b> 2026-07-26, by probe not by reading files</span>
+      <span><b>Excluded:</b> Stripe live cutover, deferred until every item here lands</span></div>
+  </header>
+
+  <div class="progress-card">
+    <div>
+      <div class="progress-figure"><span id="pct">0</span>%</div>
+      <div class="progress-label">complete</div>
+    </div>
+    <div class="bar"><i id="bar"></i></div>
+    <div>
+      <div class="progress-figure"><span id="donecount">0</span>&thinsp;/&thinsp;<span id="totalcount">0</span></div>
+      <div class="progress-label">tasks closed</div>
+    </div>
+    <button class="reset-btn" id="reset" type="button">Reset progress</button>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filter findings by category">
+    <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-filter="legal" aria-pressed="false">Legal &amp; data truth</button>
+    <button class="chip" type="button" data-filter="copy" aria-pressed="false">Copy contradictions</button>
+    <button class="chip" type="button" data-filter="numbers" aria-pressed="false">Numbers &amp; naming</button>
+    <button class="chip" type="button" data-filter="config" aria-pressed="false">Config hygiene</button>
+    <button class="chip" type="button" data-filter="blocked" aria-pressed="false">Blocked only</button>
+    <button class="chip" type="button" data-filter="open" aria-pressed="false">Not yet done</button>
+  </div>
+
+  <div class="legend">
+    <span><i class="dot dot--gate"></i> decision gate</span>
+    <span><i class="dot dot--legal"></i> legal / data truth</span>
+    <span><i class="dot dot--copy"></i> copy contradiction</span>
+    <span><i class="dot dot--numbers"></i> numbers / naming</span>
+    <span><i class="dot dot--config"></i> config hygiene</span>
+    <span>dashed border = blocked</span>
+  </div>
+
+  <main id="flow"></main>
+
+  <section class="closing"><p><strong>Stop before the Stripe live cutover.</strong> It is deliberately excluded from this plan and should be the last thing that happens, after every item above. Sandbox and live have separate webhook signing secrets, so going live needs a second endpoint created in live mode and that secret swapped in. The live-mode PREORDER50 promotion code does not exist yet. Current config is your own account in test mode: STRIPE_SECRET_KEY is rk_test_, and STRIPE_PRICE_ID carries the CYoTMkQm81 fingerprint.</p>
+    <p><strong>Never declare the cutover working from code review.</strong> One real purchase on a real card, confirming the Supabase row, the customer email and the admin alert.</p>
+    <p><strong>Never merge v0.7.3 to main.</strong> The book branch and the site branch are separate on purpose. main auto-deploys production against live Stripe keys, and that merge is yours alone to make.</p>
+    <p>Nothing in this plan commits, pushes, or deploys on its own. Wave 0 and Wave 2 both halt at a decision that is yours.</p></section>
+
+</div>
+
+<div class="drawer-scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1">
+  <div class="drawer-head">
+    <div>
+      <span class="node-id" id="drawer-id"></span>
+      <h2 id="drawer-title"></h2>
+    </div>
+    <button class="drawer-close" id="drawer-close" type="button" aria-label="Close details">&times;</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<script>
+/* ───────────────────────────────────────────────────────────
+   Data: waves, gates, findings.
+   cat: legal | copy | numbers | config | gate
+   ─────────────────────────────────────────────────────────── */
+
+/* Plan data is injected by scripts/build_diagram.py from a JSON plan file.
+   See references/data-schema.md for the shape. */
+const PLAN = {
+ "waves": [
+  {
+   "id": "w0",
+   "num": "Wave 0",
+   "title": "Secure what only exists here",
+   "note": "Twelve commits and three edited files live on one laptop. This repo already lost parallel-session work once, on 2026-07-21, recovered with git fsck.",
+   "nodes": [
+    {
+     "id": "G1",
+     "cat": "gate",
+     "gate": true,
+     "title": "Commit the three uncommitted files?",
+     "files": "src/lib/data/book/23-appendix-b.md, src/lib/data/book/manuscript-index.json, manuscript/sources/research-log.md",
+     "what": "Three files carry this session's verified work and are not committed. The standing rule is that nothing gets committed without your explicit yes.",
+     "detail": [
+      "Appendix B: two dead URLs replaced, both verified 200 with a browser user agent before editing.",
+      "manuscript-index.json: rebuilt by <code>sts.py id build<\/code>. The diff was read line by line and touches only Appendix B's two edited blocks plus totals. No foreign blocks absorbed.",
+      "research-log.md: the P-22 verification receipt and the dead-link sweep record.",
+      "Harness is Clean and <code>id verify<\/code> passes all seven checks with these edits in place."
+     ],
+     "options": [
+      {
+       "k": "one",
+       "label": "Commit as one wave",
+       "desc": "One commit, all three files staged by name, no -a. They are one coherent unit of citation work.",
+       "rec": true
+      },
+      {
+       "k": "two",
+       "label": "Split into two commits",
+       "desc": "Separate the Appendix B URL fixes from the research-log receipt. More granular history, more work for no clear gain."
+      },
+      {
+       "k": "wait",
+       "label": "Leave uncommitted",
+       "desc": "Keeps the tree dirty. Not recommended: this is the exact state that lost work on 2026-07-21."
+      }
+     ],
+     "verify": "<code>git status --short<\/code> shows nothing but <code>.empirica<\/code> entries."
+    },
+    {
+     "id": "T1",
+     "cat": "config",
+     "title": "Push v0.7.3 to GitHub for the first time",
+     "files": "~/Code/active/sts-v0.7.3",
+     "what": "Branch v0.7.3 has no upstream and has never been pushed. Twelve commits exist on this Mac and nowhere else.",
+     "quote": "fatal: no upstream configured for branch 'v0.7.3'",
+     "detail": [
+      "Verified 2026-07-26: <code>git rev-parse --abbrev-ref v0.7.3@{upstream}<\/code> fails outright.",
+      "The branch is 12 commits ahead of origin/main after this session's four commits.",
+      "The remote already holds 20+ other branches, so pushing a new one is routine and touches nothing existing.",
+      "This is the cheapest risk reduction available in the whole plan. It takes under ten seconds."
+     ],
+     "steps": [
+      "cd ~/Code/active/sts-v0.7.3",
+      "git push -u origin v0.7.3"
+     ],
+     "dep": "G1",
+     "verify": "Output ends with <code>* [new branch] v0.7.3 -&gt; v0.7.3<\/code>. Confirm with <code>git rev-list --count origin/v0.7.3..v0.7.3<\/code> returning <strong>0<\/strong>. This cannot reach production or Stripe: it creates a new remote branch and never touches main."
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "num": "Wave 1",
+   "title": "Real money and legal exposure",
+   "note": "A compliance gap that has been live since launch, and a key that should be treated as compromised. Neither depends on any code change.",
+   "nodes": [
+    {
+     "id": "T3",
+     "cat": "legal",
+     "title": "Run the three migrations that never reached the database",
+     "files": "sql/002_waitlist_unsubscribe.sql, sql/008_discord_applications.sql, sql/009_preorder_discount_code.sql",
+     "what": "Three migrations exist as files but have never been applied. A migration file existing is not evidence it ran, because create-table-if-not-exists is a silent no-op.",
+     "quote": "MISSING  002_waitlist_unsubscribe.sql   waitlist.unsubscribe_token   column does not exist",
+     "detail": [
+      "Confirmed live on 2026-07-26 against skifaazhbxaddttbbfuo.supabase.co. <code>sts.py schema<\/code> names all three and exits non-zero.",
+      "<strong>002 is the compliance one.<\/strong> waitlist.unsubscribe_token does not exist, so one-click unsubscribe has never worked. The welcome email silently degrades to 'Reply to unsubscribe' and both /unsubscribe and /api/unsubscribe are unreachable code. That is a CAN-SPAM gap.",
+      "008: the discord_applications table is missing, so that endpoint 500s.",
+      "009: preorders.discount_code is missing. Fulfillment catches the error and retries without it, so orders land but every confirmation email omits the discount code the '50% off at launch' pitch rests on.",
+      "Only 4 preorder rows exist and all are test rows, so no backfill is needed.",
+      "There is no psql and no supabase CLI on this machine. This is dashboard work.",
+      "All three files are idempotent, so re-running an already-applied one is safe."
+     ],
+     "steps": [
+      "Supabase dashboard, SQL Editor",
+      "Paste and run sql/002_waitlist_unsubscribe.sql first",
+      "Then sql/008_discord_applications.sql",
+      "Then sql/009_preorder_discount_code.sql"
+     ],
+     "verify": "<code>python3 scripts/sts.py schema<\/code> reports every migration present and <strong>exits zero<\/strong>, replacing the current three MISSING lines. Functionally: unsubscribe links start working, the Discord endpoint stops 500ing, and confirmation emails carry the discount code."
+    },
+    {
+     "id": "T4",
+     "cat": "legal",
+     "title": "Rotate RESEND_API_KEY",
+     "files": "Cloudflare Pages environment config",
+     "what": "The Resend API key was pasted into chat in full twice on 2026-07-26 and is stored as plaintext in the Pages config rather than as a secret.",
+     "detail": [
+      "Two separate exposures in one day means it should be treated as compromised regardless of where those chats live now.",
+      "It is stored as plaintext, not secret_text, so it is readable by anyone with config access.",
+      "Rotating it is independent of every other item here and breaks nothing if done first."
+     ],
+     "steps": [
+      "Generate a new key in the Resend dashboard",
+      "Revoke the old key",
+      "Set the new value in Cloudflare Pages as secret_text, not plaintext",
+      "Redeploy so the new env var is picked up"
+     ],
+     "verify": "Send one test email through the site and confirm delivery. Env changes need a fresh deployment to take effect, so a passing test before redeploying proves nothing."
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "num": "Wave 2",
+   "title": "Deploy the webhook fix",
+   "note": "The fix is written, committed and correct. It has never run in production. Until it deploys, 'the webhook is fixed' is an inference from a local reproduction, not an observation.",
+   "nodes": [
+    {
+     "id": "G2",
+     "cat": "gate",
+     "gate": true,
+     "title": "Merge book-art-optimized-2026-07-25 into main?",
+     "files": "~/Code/active/survivingthesingularity",
+     "what": "Merging deploys all five branch commits at once, not just the webhook fix, and main auto-deploys production.",
+     "detail": [
+      "The five commits are: e0ff6a8 share cards and gated-route metadata, 5d4221c BookCover everywhere, aea146e the webhook fix, b8e7acf the schema verb, 878d177 cover derivatives.",
+      "origin/main is at e476a04 and that is what production serves right now.",
+      "The branch is fully pushed to its own remote, so nothing is at risk of loss either way.",
+      "The classifier blocks <code>git push origin HEAD:main<\/code>, so you run the push yourself.",
+      "Production checkout is still in Stripe TEST mode, so no real sale is being lost while this waits."
+     ],
+     "options": [
+      {
+       "k": "now",
+       "label": "Merge and deploy now",
+       "desc": "Ships the webhook fix plus four other verified commits. The other four are SEO and image work that has been reviewed and is low risk.",
+       "rec": true
+      },
+      {
+       "k": "after",
+       "label": "Wait until after Wave 1",
+       "desc": "Run the migrations first so a fulfilled order lands in a complete schema. Defensible, and only costs a short delay."
+      },
+      {
+       "k": "cherry",
+       "label": "Cherry-pick only aea146e",
+       "desc": "Deploys the webhook fix alone. Smaller blast radius, but leaves the branch and main diverged, which creates its own confusion later."
+      }
+     ],
+     "verify": "A Cloudflare Pages build starts and completes."
+    },
+    {
+     "id": "T5",
+     "cat": "config",
+     "title": "Prove the webhook actually verifies signatures in production",
+     "files": "src/routes/api/webhooks/stripe/+server.js:49",
+     "what": "Production returns HTTP 400 'Invalid signature' to a correctly signed webhook and to a garbage-signed one, identically, because the SDK throws before it ever compares a signature.",
+     "quote": "event = await stripe.webhooks.constructEventAsync(rawBody, signature, WEBHOOK_SECRET);",
+     "detail": [
+      "Root cause, solved and triple-confirmed, do not re-investigate: production runs the Cloudflare Workers runtime, the bundler resolves Stripe's <code>workerd<\/code> export condition, and the SDK crypto provider is SubtleCrypto, which is async-only. The synchronous <code>constructEvent<\/code> throws <code>CryptoProviderOnlySupportsAsyncError<\/code> before comparing anything, so every secret failed identically and a correct secret looked wrong.",
+      "Confirmed three ways: the SDK source at SubtleCryptoProvider.js:20, a local build-varying reproduction, and the live worker log via <code>wrangler pages deployment tail<\/code>.",
+      "The fix is present at +server.js:49 with the rationale in a comment above it, and the catch block was split so a config fault and a real signature mismatch no longer share one log line.",
+      "<strong>Transferable rule:<\/strong> on Workers, Deno or Bun, always use the <code>*Async<\/code> webhook verification API. Any Node-era snippet using sync crypto is silently wrong there and fails in a way that impersonates a bad secret."
+     ],
+     "steps": [
+      "Wait for the Pages build to finish",
+      "Send a correctly signed probe at /api/webhooks/stripe",
+      "Separately, use Stripe's 'Send test events' on the endpoint"
+     ],
+     "dep": "G2",
+     "verify": "The signed probe returns <strong>200<\/strong>. That is the only valid test. A <strong>400 means nothing on its own<\/strong> and an earlier pass got this exactly wrong by reading 400 as 'configured'. A <strong>503<\/strong> means the secret is unset. If it still returns 400 after deploying, check NODE_VERSION and the build log before doubting the diagnosis."
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "num": "Wave 3",
+   "title": "Citation truth: the four claims most likely to break",
+   "note": "Nine of 22 precedents are verified. The P-09 probe showed the failure mode is inheritance, not invention, so these hunt comparison claims rather than fabricated quotes. P-22's three attributed quotes all survived, which says quoted material is in good shape and should not absorb the budget.",
+   "nodes": [
+    {
+     "id": "T6",
+     "cat": "numbers",
+     "title": "P-21: the Y2K remediation figure, in two places",
+     "files": "src/lib/data/book/20-chapter18.md:127 and :138",
+     "what": "A specific global dollar figure for Y2K remediation, on a number that is famously contested and range-bound in the literature.",
+     "quote": "roughly three hundred billion dollars spent globally, more than a hundred billion in the United States alone, on auditing, patching, and testing before the deadline",
+     "detail": [
+      "Ranked highest risk of the remaining thirteen because it is a hard number, not a hedge, and Y2K cost estimates vary enormously by source and by what they count.",
+      "<strong>The figure appears twice.<\/strong> Line 127 carries the full claim; line 138 repeats 'roughly three hundred billion dollars' inside the practice section. Any change must hit both or the chapter contradicts itself.",
+      "Line 127 also carries 'history's largest premortem', a superlative worth checking in the same pass."
+     ],
+     "steps": [
+      "Trace the figure to a primary or near-primary source (US Commerce Department and Gartner are the usual origins, and they disagree)",
+      "If it holds, add a P-21 Primary Sources block to Appendix B and log the receipt",
+      "If it does not hold, cut rather than soften, and replace with whatever the sources do support",
+      "Fix both line 127 and line 138 together"
+     ],
+     "verify": "Either a research-log receipt with no edit, or a cut plus an Appendix B correction of record. Then <code>sts.py id build<\/code> and confirm the index diff touches only chapter18."
+    },
+    {
+     "id": "T7",
+     "cat": "numbers",
+     "title": "P-19: largest navy on Earth, and forty-seven pages",
+     "files": "src/lib/data/book/18-chapter16.md:158",
+     "what": "A superlative about British naval power in 1776, plus a page count for Common Sense, both load-bearing for the precedent's punchline.",
+     "quote": "The empire it argued against commanded the largest navy on Earth and could not answer forty-seven pages in time.",
+     "detail": [
+      "The same sentence also carries 'proportionally one of the most widely read things ever printed in America', which is a comparison claim of exactly the P-09 species.",
+      "The forty-seven page count is checkable against the first edition and is the kind of specific that either holds cleanly or fails cleanly.",
+      "'Largest navy on Earth' in 1776 is very likely true but should not be asserted on likelihood."
+     ],
+     "steps": [
+      "Verify the 1776 Royal Navy claim against a naval history source",
+      "Verify the forty-seven page count against the first edition",
+      "Check the 'proportionally one of the most widely read' claim, which is the weakest of the three",
+      "Add a P-19 Primary Sources block, or cut what fails"
+     ],
+     "verify": "Research-log receipt naming each of the three claims and its verdict."
+    },
+    {
+     "id": "T8",
+     "cat": "numbers",
+     "title": "P-13: the first quartz wristwatch",
+     "files": "src/lib/data/book/13-chapter11.md:311",
+     "what": "A first-claim, which is the exact shape P-09 failed on.",
+     "quote": "In 1969 Seiko shipped the first quartz wristwatch, and the Swiss, who dominated world watchmaking, dismissed it as beneath the craft.",
+     "detail": [
+      "First-claims are the highest-failure category in this book's audit so far. P-09 was a comparison, and this is its close cousin.",
+      "The Seiko Astron, December 1969, is the usual citation and is likely correct, but 'the first' invites a challenge from prototype and pocket-watch precedents.",
+      "'the Swiss, who dominated world watchmaking' is a second comparison claim in the same sentence and needs its own check."
+     ],
+     "steps": [
+      "Verify the Astron's December 1969 release and whether 'first quartz wristwatch' survives the prototype caveat",
+      "Verify Swiss market share at the time rather than asserting dominance",
+      "Add a P-13 Primary Sources block, or narrow the claim to what the sources carry"
+     ],
+     "verify": "Research-log receipt. If 'the first' needs a qualifier, the qualifier must be sourced, not vague."
+    },
+    {
+     "id": "T9",
+     "cat": "numbers",
+     "title": "P-11: writing disappeared in Greece for centuries",
+     "files": "src/lib/data/book/11-chapter9.md:288",
+     "what": "Two claims in one sentence: a comparative collapse severity, and the disappearance of writing.",
+     "quote": "The most connected, most specialized economies collapsed hardest and fastest; in Greece, writing itself disappeared for centuries.",
+     "detail": [
+      "The Linear B disappearance is well attested and this claim is likely to hold, which makes it a good candidate to clear quickly.",
+      "'collapsed hardest and fastest' is the comparative half and is softer than the writing claim. It may need attribution to a specific scholar rather than stated as settled fact.",
+      "Lower risk than T6 through T8, so run it last of the four."
+     ],
+     "steps": [
+      "Verify the Linear B disappearance and its duration against a Bronze Age Collapse source",
+      "Decide whether the comparative half needs attribution",
+      "Add a P-11 Primary Sources block"
+     ],
+     "verify": "Research-log receipt. Expect this one to pass."
+    }
+   ]
+  },
+  {
+   "id": "w4",
+   "num": "Wave 4",
+   "title": "Harness truth: two green lights that check nothing",
+   "note": "Two of the harness's reassuring PASS lines are green because they have nothing to check. Both were found by verification, not by the harness reporting a problem.",
+   "nodes": [
+    {
+     "id": "T10",
+     "cat": "config",
+     "title": "Adopt cross-reference pointers, starting with Appendix D",
+     "files": "src/lib/data/book/25-appendix-d.md (20 refs), 14-chapter12.md (11), 10-chapter8.md (11), 26-appendix-e.md (10)",
+     "what": "The pointer system is fully built in sts.py and has zero adoption in the manuscript, so verify refs reports zero dangling because there are zero pointers.",
+     "quote": "refs        0 dangling cross-reference(s)",
+     "detail": [
+      "The mechanism is real and finished: <code>_SREF_RE<\/code> at sts.py:2121, an edge extractor, <code>_expand_refs<\/code> called by the build at sts.py:1217 which raises on an unresolvable target, plus <code>refs list<\/code> and <code>refs --to<\/code>.",
+      "Adoption is <strong>one<\/strong> occurrence of <code>(sts:<\/code> in the whole book source, and it is documentation inside book/README.md.",
+      "Against that, the manuscript hand-types <strong>98<\/strong> chapter references.",
+      "That green line has been read across sessions as evidence the system is healthy. It is evidence only that it is unused.",
+      "The book has already been bitten by the failure pointers prevent: Chapter 8's 'the physical systems analyzed in Chapter 2' reads stale to every fresh reader and had to be manually verified as correct on 2026-07-26.",
+      "Same species as the known id verify tautology, where hash.match compares disk against disk."
+     ],
+     "steps": [
+      "Start with 25-appendix-d.md, which holds 20 of the 98 and is a lookup surface people check claims against",
+      "Point only where the number identifies a different section; leave titles and self-references alone",
+      "Then 14-chapter12.md and 10-chapter8.md, then 26-appendix-e.md",
+      "Run this as its own pass, not folded into a chapter agent's work, because it moves block hashes and would muddy the index diff"
+     ],
+     "verify": "<code>sts.py verify<\/code> refs stops being vacuously true and reports a real number. A first run surfacing dangling pointers is <strong>the check finally working<\/strong>, not a regression."
+    },
+    {
+     "id": "G3",
+     "cat": "gate",
+     "gate": true,
+     "title": "Math delimiters: strip them or add a web math renderer?",
+     "files": "11-chapter9.md (3), 12-chapter10.md (2), 13-chapter11.md (4), 15-chapter13.md (6)",
+     "what": "The book writes inline variables TeX-style. Pandoc renders them correctly in EPUB and PDF; the website shows literal dollar signs.",
+     "quote": "$H$",
+     "detail": [
+      "Verified 2026-07-26: zero hits for katex, mathjax or remark-math anywhere in the repo. markdownParser.js and Markdown.svelte use the plain parser.",
+      "Fifteen occurrences across exactly four files. Chapter 8 was already normalized to bare (H) and N, which is correct on both surfaces and is the working precedent.",
+      "Deliberately left for one ruling applied once, so four files do not get fixed four different ways.",
+      "If a chapter agent hits one of these, it should report it and not fix it."
+     ],
+     "options": [
+      {
+       "k": "strip",
+       "label": "Strip the delimiters everywhere",
+       "desc": "Follow the Chapter 8 precedent, write bare (H) and N. Costs print math styling, adds nothing to the site. The math here is inline single variables, not equations, so KaTeX would not earn its weight.",
+       "rec": true
+      },
+      {
+       "k": "katex",
+       "label": "Add remark-math plus KaTeX",
+       "desc": "Keeps print styling and fixes the web render. Adds a site dependency, a stylesheet and bundle cost, on a route that is password-gated anyway."
+      },
+      {
+       "k": "leave",
+       "label": "Leave it",
+       "desc": "Web readers keep seeing literal dollar signs. Not recommended, since /book and /read are where the book is actually read."
+      }
+     ],
+     "verify": "After strip: <code>rg -n '\\$[A-Za-z_][A-Za-z0-9_-]*\\$' src/lib/data/book/*.md<\/code> returns nothing."
+    },
+    {
+     "id": "G4",
+     "cat": "gate",
+     "gate": true,
+     "title": "Appendix B source 65: cut the eBay duplicate or leave it?",
+     "files": "src/lib/data/book/23-appendix-b.md",
+     "what": "Source 65 duplicates source 62 exactly, same product and same title string, and is a marketplace listing that expires by design.",
+     "quote": "65. \"The Shouse\" | 8kVA Inverter | 14.36kWH Battery | 8kW Solar - eBay Australia",
+     "detail": [
+      "It is not broken. It returns 403 to automated requests, which is a bot-block, not a dead page. The earlier 500 report was wrong.",
+      "Cutting it forces a hand renumber of entries 66 through 192, which also renumbers the P-01, P-02 and P-09 Primary Sources blocks.",
+      "Nothing in the manuscript cites Appendix B by number, verified by grep, so the numbering is purely internal and a redundant entry costs the reader nothing."
+     ],
+     "options": [
+      {
+       "k": "leave",
+       "label": "Leave it",
+       "desc": "Redundant but harmless, and avoids a 127-entry diff nobody can audit in a file other sessions touch.",
+       "rec": true
+      },
+      {
+       "k": "swap",
+       "label": "Replace its URL",
+       "desc": "Keeps the numbering, removes the duplication, but needs a genuinely different source worth citing for the same claim."
+      },
+      {
+       "k": "cut",
+       "label": "Cut and renumber",
+       "desc": "Correct in principle. High risk, low payoff, and touches every P-NN source block."
+      }
+     ],
+     "verify": "If left: no change, and <code>verify --links<\/code> stays Clean."
+    }
+   ]
+  },
+  {
+   "id": "w5",
+   "num": "Verify",
+   "title": "Run this after every batch, not only at the end",
+   "note": "Both ends of any pass. The harness exits non-zero on real problems, so it is usable as a gate.",
+   "nodes": [
+    {
+     "id": "V1",
+     "cat": "config",
+     "title": "The book harness, in order",
+     "files": "~/Code/active/sts-v0.7.3",
+     "what": "Four commands that between them cover content, links, block integrity and word count.",
+     "detail": [
+      "<code>sts.py verify<\/code> covers math, meta drift, dangling refs and precedent ledger integrity. Current baseline: 0, 0, 0, 22 of 22, Clean.",
+      "<code>sts.py verify --links<\/code> adds the network source check. Current baseline: 208 checked, 0 dead, 0 unreachable, Clean.",
+      "<code>sts.py id verify<\/code> current baseline: all seven PASS, art.links 83 linked with an empty bad list.",
+      "<code>sts.py book<\/code> current baseline: 87,763 words across 30 sections. This is the authoritative figure, not any number written in a doc.",
+      "<strong>Two of these lie by omission.<\/strong> id verify's hash.match compares disk against disk and cannot detect a stale committed index. verify's refs count is vacuously zero until T10 lands."
+     ],
+     "steps": [
+      "python3 scripts/sts.py verify",
+      "python3 scripts/sts.py verify --links",
+      "python3 scripts/sts.py id build",
+      "python3 scripts/sts.py id verify",
+      "git diff src/lib/data/book/manuscript-index.json"
+     ],
+     "verify": "All Clean, and the index diff <strong>read by eye<\/strong> touches only the sections you edited. That last step is not optional: it is the only real check on the index, and id build absorbs other sessions' in-flight edits without warning."
+    },
+    {
+     "id": "V2",
+     "cat": "config",
+     "title": "The site probes",
+     "files": "~/Code/active/survivingthesingularity",
+     "what": "Probe production rather than reading .env. A file saying the right thing is not evidence production is doing it.",
+     "detail": [
+      "<code>sts.py stripe --live<\/code> probes the real site and exits non-zero on drift. It currently reports checkout in test mode.",
+      "<code>sts.py schema<\/code> probes the live database. Currently three MISSING and a non-zero exit.",
+      "<code>sts.py audit<\/code>, <code>sts.py sitemap<\/code> and <code>sts.py og<\/code> are clean for the main surfaces as of 2026-07-26."
+     ],
+     "steps": [
+      "python3 scripts/sts.py schema",
+      "python3 scripts/sts.py stripe --live",
+      "python3 scripts/sts.py status"
+     ],
+     "verify": "schema exits zero once Wave 1 lands. stripe --live will keep reporting test mode until the cutover, which is deliberately out of scope here."
+    }
+   ]
+  }
+ ],
+ "gates": []
+};
+const WAVES = PLAN.waves || [];
+const EXTRA_GATES = PLAN.gates || [];
+
+/* ───────────────────────────────────────────────────────────
+   Render
+   ─────────────────────────────────────────────────────────── */
+
+const STORE = "sts-next-steps-2026-07-27";
+let state = {};
+try { state = JSON.parse(localStorage.getItem(STORE) || "{}"); } catch { state = {}; }
+const save = () => { try { localStorage.setItem(STORE, JSON.stringify(state)); } catch {} };
+
+const ALL = [];
+WAVES.forEach(w => w.nodes.forEach(n => ALL.push(n)));
+EXTRA_GATES.forEach(n => ALL.push(n));
+const byId = Object.fromEntries(ALL.map(n => [n.id, n]));
+
+const CONNECTOR = '<div class="connector"><svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="7" y1="1" x2="7" y2="15"/><polyline points="2,11 7,17 12,11"/></svg></div>';
+
+function nodeHTML(n) {
+  const done = !!state["done:" + n.id];
+  const flag = n.blocked
+    ? '<span class="node-flag node-flag--blocked">blocked</span>'
+    : (n.gate ? '<span class="node-flag node-flag--gate">decide</span>' : "");
+  return `
+  <button class="node ${n.gate ? "gate" : ""}" type="button"
+          data-id="${n.id}" data-cat="${n.cat}"
+          data-blocked="${!!n.blocked}" data-done="${done}">
+    <span class="node-top"><span class="node-id">${n.id}</span>${flag}</span>
+    <span class="node-title">${n.title}</span>
+    <span class="node-files">${n.files || ""}</span>
+    ${n.gate ? "" : `<label class="node-check" onclick="event.stopPropagation()">
+      <input type="checkbox" data-check="${n.id}" ${done ? "checked" : ""} />
+      <span>mark done</span></label>`}
+  </button>`;
+}
+
+function render() {
+  const flow = document.getElementById("flow");
+  let html = "";
+  WAVES.forEach((w, i) => {
+    if (i > 0) html += CONNECTOR;
+    const total = w.nodes.filter(n => !n.gate).length;
+    html += `<section class="wave" data-wave="${w.id}">
+      <header class="wave-head">
+        <span class="wave-num">${w.num}</span>
+        <h2 class="wave-title">${w.title}</h2>
+        <span class="wave-count" data-wavecount="${w.id}"></span>
+      </header>
+      <p class="wave-note" style="margin:0 0 12px">${w.note}</p>
+      <div class="nodes">${w.nodes.map(nodeHTML).join("")}</div>
+    </section>`;
+  });
+  // Only render the trailing decisions block when the plan actually supplies
+  // `gates`. Plans that follow the convention of placing each gate inline,
+  // immediately before the work it blocks, supply none - and an empty section
+  // claiming unresolved decisions is a lie the reader has to go check.
+  if (EXTRA_GATES.length) {
+    const n = EXTRA_GATES.length;
+    html += CONNECTOR;
+    html += `<section class="wave">
+      <header class="wave-head">
+        <span class="wave-num">Open</span>
+        <h2 class="wave-title">Decisions still yours to make</h2>
+      </header>
+      <p class="wave-note" style="margin:0 0 12px">${n} call${n === 1 ? "" : "s"} I deliberately did not resolve. Each one changes what the fix looks like.</p>
+      <div class="nodes">${EXTRA_GATES.map(nodeHTML).join("")}</div>
+    </section>`;
+  }
+  flow.innerHTML = html;
+  updateProgress();
+}
+
+function updateProgress() {
+  const tasks = ALL.filter(n => !n.gate);
+  const done = tasks.filter(n => state["done:" + n.id]).length;
+  const pct = tasks.length ? Math.round((done / tasks.length) * 100) : 0;
+  document.getElementById("pct").textContent = pct;
+  document.getElementById("bar").style.width = pct + "%";
+  document.getElementById("donecount").textContent = done;
+  document.getElementById("totalcount").textContent = tasks.length;
+  WAVES.forEach(w => {
+    const t = w.nodes.filter(n => !n.gate);
+    const d = t.filter(n => state["done:" + n.id]).length;
+    const el = document.querySelector(`[data-wavecount="${w.id}"]`);
+    if (el) el.textContent = t.length ? `${d}/${t.length}` : "";
+  });
+}
+
+/* ── Drawer ── */
+const drawer = document.getElementById("drawer");
+const scrim = document.getElementById("scrim");
+let lastFocus = null;
+
+function openDrawer(id) {
+  const n = byId[id];
+  if (!n) return;
+  lastFocus = document.activeElement;
+  document.getElementById("drawer-id").textContent = n.id;
+  document.getElementById("drawer-title").textContent = n.title;
+
+  let b = "";
+  if (n.blocked) {
+    b += `<div class="blocked-banner"><b>Blocked by gate G0.</b> This file is dirty in the parallel business plan session. Editing it risks a clobber.</div>`;
+  }
+  if (n.dep && !n.blocked) {
+    b += `<div class="blocked-banner" style="background:rgb(200 162 79 / 0.13);border-color:rgb(200 162 79 / 0.45)">Depends on <b>${n.dep}</b>. Resolve that first.</div>`;
+  }
+  if (n.what) b += `<h3>What is wrong</h3><p>${n.what}</p>`;
+  if (n.quote) b += `<div class="quote">&ldquo;${n.quote}&rdquo;</div>`;
+  if (n.files) b += `<h3>Files</h3><p><span class="path">${n.files}</span></p>`;
+  if (n.detail) b += `<h3>Evidence</h3><ul>${n.detail.map(d => `<li>${d}</li>`).join("")}</ul>`;
+  if (n.options) {
+    b += `<h3>Pick one</h3>`;
+    n.options.forEach(o => {
+      const chosen = state["opt:" + n.id] === o.k;
+      b += `<button class="opt" type="button" data-opt="${n.id}" data-optk="${o.k}" aria-pressed="${chosen}">
+        <b>${o.label}${o.rec ? '<span class="rec">recommended</span>' : ""}</b><span>${o.desc}</span></button>`;
+    });
+  }
+  if (n.steps) b += `<h3>Steps</h3><ol>${n.steps.map(s => `<li>${s}</li>`).join("")}</ol>`;
+  if (n.verify) b += `<h3>How you know it worked</h3><div class="verify">${n.verify}</div>`;
+
+  document.getElementById("drawer-body").innerHTML = b;
+  drawer.dataset.open = "true";
+  scrim.dataset.open = "true";
+  drawer.focus();
+}
+
+function closeDrawer() {
+  drawer.dataset.open = "false";
+  scrim.dataset.open = "false";
+  if (lastFocus) lastFocus.focus();
+}
+
+/* ── Events ── */
+document.addEventListener("click", e => {
+  const node = e.target.closest(".node");
+  if (node) { openDrawer(node.dataset.id); return; }
+  const opt = e.target.closest("[data-opt]");
+  if (opt) {
+    const id = opt.dataset.opt;
+    state["opt:" + id] = state["opt:" + id] === opt.dataset.optk ? null : opt.dataset.optk;
+    save();
+    openDrawer(id);
+    return;
+  }
+  const chip = e.target.closest(".chip");
+  if (chip) {
+    document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === chip)));
+    applyFilter(chip.dataset.filter);
+    return;
+  }
+  if (e.target.id === "drawer-close" || e.target.id === "scrim") closeDrawer();
+});
+
+document.addEventListener("change", e => {
+  const cb = e.target.closest("[data-check]");
+  if (!cb) return;
+  state["done:" + cb.dataset.check] = cb.checked;
+  save();
+  const node = cb.closest(".node");
+  if (node) node.dataset.done = String(cb.checked);
+  updateProgress();
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && drawer.dataset.open === "true") closeDrawer();
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  state = {}; save(); closeDrawer(); render();
+});
+
+function applyFilter(f) {
+  document.querySelectorAll(".node").forEach(el => {
+    const n = byId[el.dataset.id];
+    let show = true;
+    if (f === "blocked") show = !!n.blocked;
+    else if (f === "open") show = !n.gate && !state["done:" + n.id];
+    else if (f !== "all") show = n.cat === f;
+    el.hidden = !show;
+  });
+  document.querySelectorAll(".wave").forEach(w => {
+    const any = [...w.querySelectorAll(".node")].some(el => !el.hidden);
+    w.hidden = !any;
+  });
+}
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+Stage 4 (the New Social Contract). The hinge of the nine stages, where a
+society decides how the gains from automation reach the people affected.
+This  bookʼs  first  proposal  for  it  is  food,  regardless  of  employment.
+(Chapter 2)
+Surveillance capitalism. Shoshana Zuboffʼs name for the business of har-
+vesting peopleʼs attention and personal data and selling predictions about
+them. (Introduction)
+Transformer. A neural-network architecture introduced in the 2017 paper
+“Attention Is All You Need.” Attention relates positions in a sequence and
+permits more parallel computation during training than earlier recurrent
+designs. Autoregressive language models still generate their response a
+token at a time. (Chapter 1)
+Universal Basic Services. Providing needs like food, shelter, transport,
+care, and information through services free at the point of use and paid
+for  together.  This  differs  from  a  cash  payment  and  can  coexist  with
+income support. (Chapter 19)
+USI  (universal  superintelligence). Stage  8ʼs  speculation:  intelligence  at
+the scale of the cosmos. (Chapter 4)
+APPENDIX F
+391

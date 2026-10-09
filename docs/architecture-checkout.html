@@ -1,0 +1,1856 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The money path</title>
+<meta name="description" content="How checkout, fulfillment, webhook idempotency and reconciliation fit together in Surviving the Singularity, with verified and unverified claims separated." />
+<style>
+:root{
+  --bg:#f6f5f2;
+  --bg-2:#eceae4;
+  --panel:#fffefc;
+  --panel-2:#f4f2ed;
+  --ink:#16181c;
+  --ink-2:#333944;
+  --muted:#606877;
+  --line:rgb(22 24 28 / 0.13);
+  --line-2:rgb(22 24 28 / 0.30);
+  --accent:#2f6fed;
+  --accent-soft:rgb(47 111 237 / 0.10);
+  --ok:#0f766e;
+  --warn:#b45309;
+  --risk:#b91c1c;
+  --k-entry:#c2410c;
+  --k-service:#2563eb;
+  --k-ui:#7c3aed;
+  --k-data:#0f766e;
+  --k-external:#a16207;
+  --k-build:#525a67;
+  --k-config:#0369a1;
+  --k-lib:#be185d;
+  --shadow:0 1px 2px rgb(16 18 22 / 0.05), 0 10px 30px rgb(16 18 22 / 0.07);
+  --shadow-sm:0 1px 2px rgb(16 18 22 / 0.06);
+  --r:12px;
+  --r-sm:8px;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;
+  --grid:rgb(22 24 28 / 0.05);
+  --scene-a:#e8e6e0;
+  --scene-b:#f6f5f2;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0e1014;
+    --bg-2:#14171d;
+    --panel:#171a21;
+    --panel-2:#1d222a;
+    --ink:#e9ecf1;
+    --ink-2:#c7cdd8;
+    --muted:#8d97a8;
+    --line:rgb(233 236 241 / 0.14);
+    --line-2:rgb(233 236 241 / 0.32);
+    --accent:#6f9bff;
+    --accent-soft:rgb(111 155 255 / 0.14);
+    --ok:#4ec3b4;
+    --warn:#e0a23c;
+    --risk:#f0776b;
+    --k-entry:#f08a53;
+    --k-service:#6f9bff;
+    --k-ui:#b18cf5;
+    --k-data:#4ec3b4;
+    --k-external:#d9b35c;
+    --k-build:#98a2b3;
+    --k-config:#4bb3e8;
+    --k-lib:#f07ab0;
+    --shadow:0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px rgb(0 0 0 / 0.35);
+    --shadow-sm:0 1px 2px rgb(0 0 0 / 0.4);
+    --grid:rgb(233 236 241 / 0.05);
+    --scene-a:#0b0d11;
+    --scene-b:#171a21;
+  }
+}
+:root[data-theme="light"]{
+  --bg:#f6f5f2; --bg-2:#eceae4; --panel:#fffefc; --panel-2:#f4f2ed;
+  --ink:#16181c; --ink-2:#333944; --muted:#606877;
+  --line:rgb(22 24 28 / 0.13); --line-2:rgb(22 24 28 / 0.30);
+  --accent:#2f6fed; --accent-soft:rgb(47 111 237 / 0.10);
+  --ok:#0f766e; --warn:#b45309; --risk:#b91c1c;
+  --k-entry:#c2410c; --k-service:#2563eb; --k-ui:#7c3aed; --k-data:#0f766e;
+  --k-external:#a16207; --k-build:#525a67; --k-config:#0369a1; --k-lib:#be185d;
+  --shadow:0 1px 2px rgb(16 18 22 / 0.05), 0 10px 30px rgb(16 18 22 / 0.07);
+  --grid:rgb(22 24 28 / 0.05); --scene-a:#e8e6e0; --scene-b:#f6f5f2;
+}
+:root[data-theme="dark"]{
+  --bg:#0e1014; --bg-2:#14171d; --panel:#171a21; --panel-2:#1d222a;
+  --ink:#e9ecf1; --ink-2:#c7cdd8; --muted:#8d97a8;
+  --line:rgb(233 236 241 / 0.14); --line-2:rgb(233 236 241 / 0.32);
+  --accent:#6f9bff; --accent-soft:rgb(111 155 255 / 0.14);
+  --ok:#4ec3b4; --warn:#e0a23c; --risk:#f0776b;
+  --k-entry:#f08a53; --k-service:#6f9bff; --k-ui:#b18cf5; --k-data:#4ec3b4;
+  --k-external:#d9b35c; --k-build:#98a2b3; --k-config:#4bb3e8; --k-lib:#f07ab0;
+  --shadow:0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px rgb(0 0 0 / 0.35);
+  --grid:rgb(233 236 241 / 0.05); --scene-a:#0b0d11; --scene-b:#171a21;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.62;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.16;letter-spacing:-0.018em;margin:0}
+h1{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:680}
+h2{font-size:clamp(1.4rem,2.6vw,2.05rem);font-weight:640}
+h3{font-size:1.06rem;font-weight:640}
+p{margin:0 0 1rem}
+code,kbd{font-family:var(--mono);font-size:0.86em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+/* The map needs more room than prose does. Anything narrower and the right
+   hand columns of the diagram fall off the edge of the frame. */
+.wrap.wide{max-width:1420px}
+.eyebrow{
+  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.16em;
+  text-transform:uppercase;color:var(--muted);margin:0 0 0.6rem;
+}
+.lede{font-size:1.1rem;color:var(--ink-2);max-width:64ch}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono)}
+
+/* reveal on scroll, scoped to .js so a script error cannot blank the page */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.js .rv.in{opacity:1;transform:none}
+
+/* ---------- header ---------- */
+header.hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(120% 80% at 78% 0%, var(--accent-soft), transparent 62%),
+    linear-gradient(var(--bg-2), var(--bg));
+  padding:clamp(2.6rem,7vw,5rem) 0 clamp(2rem,4vw,3rem);
+}
+header.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),
+                   linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:46px 46px;
+  mask-image:radial-gradient(120% 90% at 50% 0%,#000,transparent 72%);
+}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:2.4rem;align-items:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.title-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:0.8rem}
+.tagline{margin-top:1rem}
+.facts{display:flex;flex-wrap:wrap;gap:0.7rem;margin-top:1.7rem;padding:0;list-style:none}
+.fact{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:0.5rem 0.8rem;box-shadow:var(--shadow-sm);min-width:104px;
+}
+.fact b{display:block;font-size:1.24rem;font-weight:660;letter-spacing:-0.02em}
+.fact span{display:block;font-family:var(--mono);font-size:0.63rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
+.fact em{display:block;font-style:normal;font-size:0.76rem;color:var(--muted);margin-top:0.1rem}
+.hero-motif{width:100%;height:auto;max-height:300px}
+.themetog{
+  position:absolute;top:14px;right:18px;z-index:5;
+  background:var(--panel);color:var(--muted);border:1px solid var(--line);
+  border-radius:999px;padding:0.34rem 0.8rem;cursor:pointer;
+  font-family:var(--mono);font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;
+}
+.themetog:hover{color:var(--ink);border-color:var(--line-2)}
+
+/* ---------- nav ---------- */
+nav.jump{
+  position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);
+  background:color-mix(in srgb,var(--bg) 86%,transparent);
+  border-bottom:1px solid var(--line);
+}
+nav.jump ol{display:flex;gap:0.2rem;margin:0;padding:0.45rem 22px;list-style:none;overflow-x:auto;max-width:1180px;margin:0 auto}
+nav.jump a{
+  display:block;white-space:nowrap;color:var(--muted);
+  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.07em;text-transform:uppercase;
+  padding:0.34rem 0.62rem;border-radius:999px;text-decoration:none;
+}
+nav.jump a:hover,nav.jump a[aria-current="true"]{color:var(--ink);background:var(--panel-2);text-decoration:none}
+
+/* ---------- sections ---------- */
+section{padding:clamp(2.6rem,6vw,4.4rem) 0;border-bottom:1px solid var(--line)}
+.sec-head{max-width:70ch;margin-bottom:1.9rem}
+.sec-head p{color:var(--muted);margin-top:0.7rem}
+
+/* ---------- map ---------- */
+.map-shell{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:1.4rem;align-items:start}
+/* Below this width the aside would squeeze the diagram into a scroll bar, so
+   it drops underneath and the map takes the whole column. */
+@media (max-width:1250px){.map-shell{grid-template-columns:1fr}
+  .detail{position:static;max-height:none}}
+.map-frame{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.map-scroll{overflow-x:auto;overflow-y:hidden}
+.map-scroll svg{display:block;width:100%;min-width:900px;height:auto}
+.map-bar{
+  display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;
+  padding:0.6rem 0.8rem;border-top:1px solid var(--line);background:var(--panel-2);
+}
+.legend{display:flex;flex-wrap:wrap;gap:0.55rem;margin:0;padding:0;list-style:none}
+.legend li{display:flex;align-items:center;gap:0.34rem;font-size:0.72rem;color:var(--muted)}
+.legend i{width:10px;height:10px;border-radius:3px;display:block}
+.btn{
+  background:var(--panel);border:1px solid var(--line);color:var(--ink-2);
+  border-radius:999px;padding:0.32rem 0.78rem;cursor:pointer;
+  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.06em;
+}
+.btn:hover{border-color:var(--line-2);color:var(--ink)}
+.btn[aria-pressed="true"],.btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.spacer{flex:1 1 auto}
+
+/* svg internals */
+.node-box{fill:var(--panel);stroke:var(--line-2);stroke-width:1.2;transition:filter .2s ease}
+.node-g{cursor:pointer}
+.node-g:focus{outline:none}
+.node-g:focus-visible .node-box{stroke:var(--accent);stroke-width:2.4}
+.node-g:hover .node-box{stroke:var(--accent)}
+.node-accent{stroke-width:0}
+.node-title{font:600 13.5px var(--sans);fill:var(--ink)}
+.node-sub{font:11px var(--mono);fill:var(--muted)}
+.node-kind{font:9.5px var(--mono);letter-spacing:.08em}
+.band-rect{fill:var(--panel-2);stroke:var(--line);stroke-width:1;rx:12}
+.band-label{font:600 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;fill:var(--muted)}
+.band-blurb{font:11.5px var(--sans);fill:var(--muted)}
+.edge{fill:none;stroke:var(--line-2);stroke-width:1.6;transition:stroke .25s ease,opacity .25s ease}
+.edge.k-data{stroke:var(--k-data)}
+.edge.k-call{stroke:var(--k-service)}
+.edge.k-build{stroke:var(--k-build);stroke-dasharray:5 4}
+.edge.k-event{stroke:var(--k-ui);stroke-dasharray:2 5}
+.edge-label{font:10.5px var(--mono);fill:var(--muted)}
+.dot{fill:var(--accent);opacity:.9}
+.dot.k-data{fill:var(--k-data)}
+.dot.k-call{fill:var(--k-service)}
+.dot.k-build{fill:var(--k-build)}
+.dot.k-event{fill:var(--k-ui)}
+svg.dim .node-g:not(.on){opacity:.24}
+svg.dim .edge:not(.on){opacity:.1}
+svg.dim .dot:not(.on){opacity:.06}
+svg.dim .edge.on{stroke-width:2.6}
+.node-g.step .node-box{stroke:var(--accent);stroke-width:2.6}
+
+/* detail aside */
+.detail{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);padding:1.1rem;position:sticky;top:60px;max-height:78vh;overflow:auto;
+}
+.detail h3{margin-bottom:0.25rem}
+.detail .kindtag{font-family:var(--mono);font-size:0.66rem;letter-spacing:.1em;text-transform:uppercase}
+.detail p{font-size:0.92rem}
+.detail .files{list-style:none;margin:0.6rem 0 0;padding:0}
+.detail .files li{font-family:var(--mono);font-size:0.76rem;color:var(--ink-2);padding:0.16rem 0;word-break:break-all}
+.chiprow{display:flex;flex-wrap:wrap;gap:0.3rem;margin:0.6rem 0 0}
+.chip{
+  font-family:var(--mono);font-size:0.68rem;border:1px solid var(--line);
+  border-radius:999px;padding:0.12rem 0.5rem;color:var(--muted);
+}
+.dl{margin:0.7rem 0 0;font-size:0.86rem}
+.dl div{display:flex;gap:0.5rem;padding:0.2rem 0;border-top:1px solid var(--line)}
+.dl dt{color:var(--muted);min-width:88px;font-family:var(--mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em}
+.dl dd{margin:0;color:var(--ink-2)}
+
+/* ---------- flows ---------- */
+.flow-tabs{display:flex;flex-wrap:wrap;gap:0.45rem;margin-bottom:1.2rem}
+.flow-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:1.4rem;align-items:start}
+@media (max-width:900px){.flow-body{grid-template-columns:1fr}}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{
+  position:relative;padding:0.75rem 0.9rem 0.75rem 2.6rem;border:1px solid var(--line);
+  border-radius:var(--r-sm);background:var(--panel);margin-bottom:0.55rem;
+  transition:border-color .25s ease,background .25s ease,transform .25s ease;
+}
+.steps li::before{
+  counter-increment:s;content:counter(s);
+  position:absolute;left:0.72rem;top:0.78rem;width:1.35rem;height:1.35rem;
+  border-radius:50%;background:var(--panel-2);border:1px solid var(--line);
+  display:grid;place-items:center;font-family:var(--mono);font-size:0.7rem;color:var(--muted);
+}
+.steps li.on{border-color:var(--accent);background:var(--accent-soft);transform:translateX(3px)}
+.steps li.on::before{background:var(--accent);border-color:var(--accent);color:#fff}
+.steps b{display:block;font-size:0.94rem}
+.steps p{margin:0.2rem 0 0;font-size:0.86rem;color:var(--muted)}
+.steps .fileref{font-family:var(--mono);font-size:0.74rem;color:var(--ink-2);word-break:break-all}
+
+/* ---------- 3d ---------- */
+.scene-frame{
+  position:relative;border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;background:linear-gradient(160deg,var(--scene-a),var(--scene-b));
+  box-shadow:var(--shadow);
+}
+#scene{display:block;width:100%;height:clamp(340px,56vh,620px)}
+.scene-hint{
+  position:absolute;left:12px;bottom:10px;font-family:var(--mono);font-size:0.68rem;
+  color:var(--muted);background:color-mix(in srgb,var(--panel) 78%,transparent);
+  border:1px solid var(--line);border-radius:999px;padding:0.22rem 0.66rem;pointer-events:none;
+}
+.scene-tip{
+  position:absolute;top:12px;left:12px;font-family:var(--mono);font-size:0.72rem;
+  color:var(--ink);background:color-mix(in srgb,var(--panel) 90%,transparent);
+  border:1px solid var(--line-2);border-radius:var(--r-sm);padding:0.3rem 0.6rem;
+  pointer-events:none;opacity:0;transition:opacity .18s ease;max-width:60%;
+}
+.scene-tip.on{opacity:1}
+.scene-fallback{
+  display:none;padding:1.4rem;color:var(--muted);font-size:0.9rem;text-align:center;
+}
+.scene-frame.failed #scene{display:none}
+.scene-frame.failed .scene-fallback{display:block}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0.9rem;margin-top:1.1rem}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:1rem;box-shadow:var(--shadow-sm);
+}
+.card h3{margin-bottom:0.35rem}
+.card p{font-size:0.88rem;color:var(--muted);margin:0}
+.card .files{list-style:none;margin:0.6rem 0 0;padding:0}
+.card .files li{font-family:var(--mono);font-size:0.74rem;color:var(--ink-2);word-break:break-all}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:0.86rem}
+th,td{text-align:left;padding:0.5rem 0.8rem;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:0.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+tbody tr:last-child td{border-bottom:0}
+td.num{text-align:right;font-family:var(--mono)}
+.bar{height:5px;border-radius:3px;background:var(--accent);min-width:2px}
+
+/* ---------- risk + truth ---------- */
+/* These sit on a <p> inside .card, and `.card p` already sets a muted colour at
+   the same specificity. Qualify them so the risk actually reads as a risk. */
+.risk-low,.card p.risk-low{color:var(--ok)}
+.risk-medium,.card p.risk-medium{color:var(--warn)}
+.risk-high,.card p.risk-high{color:var(--risk)}
+.truth{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0.9rem}
+.truth ul{margin:0.5rem 0 0;padding-left:1.1rem}
+.truth li{font-size:0.88rem;color:var(--ink-2);margin-bottom:0.3rem}
+.truth .card.v{border-left:3px solid var(--ok)}
+.truth .card.i{border-left:3px solid var(--warn)}
+.truth .card.u{border-left:3px solid var(--risk)}
+
+footer{padding:2.2rem 0 3.4rem;color:var(--muted);font-size:0.84rem}
+footer .mono{font-size:0.76rem}
+
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  .steps li{transition:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');
+try{var t=localStorage.getItem('arch-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
+<header class="hero">
+  <button class="themetog" type="button" id="themetog">theme</button>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow" id="hero-eyebrow"></p>
+      <h1 id="hero-title"></h1>
+      <p class="lede tagline" id="hero-tagline"></p>
+      <ul class="facts" id="hero-facts"></ul>
+    </div>
+    <div aria-hidden="true">
+      <style>
+        .motif .plane{fill:var(--panel);stroke:var(--line);stroke-width:1.2}
+        .motif .cell{fill:var(--panel-2);stroke:var(--line-2);stroke-width:1}
+        .motif .wire{fill:none;stroke:var(--line-2);stroke-width:1.3;opacity:.55}
+        .motif .pulse{fill:none;stroke-width:2.2;stroke-linecap:round;
+          stroke-dasharray:9 210;animation:motif-run 3.4s linear infinite}
+        .motif .p1{stroke:var(--k-service)}
+        .motif .p2{stroke:var(--k-data);animation-delay:-.85s}
+        .motif .p3{stroke:var(--k-ui);animation-delay:-1.7s}
+        .motif .p4{stroke:var(--k-entry);animation-delay:-2.5s}
+        .motif .tick{fill:var(--muted);font:9px var(--mono);letter-spacing:.14em}
+        .motif .beat{animation:motif-beat 3.4s ease-in-out infinite}
+        .motif .b2{animation-delay:-1.1s}
+        .motif .b3{animation-delay:-2.2s}
+        @keyframes motif-run{from{stroke-dashoffset:219}to{stroke-dashoffset:0}}
+        @keyframes motif-beat{0%,100%{opacity:.35}45%{opacity:1}}
+        @media (prefers-reduced-motion:reduce){
+          .motif .pulse{animation:none;stroke-dasharray:none;opacity:.5}
+          .motif .beat{animation:none;opacity:.7}
+        }
+      </style>
+      <svg class="hero-motif motif" viewBox="0 0 380 262" role="img" aria-hidden="true">
+        <rect class="plane" x="30" y="20" width="320" height="54" rx="12"/>
+        <rect class="plane" x="30" y="103" width="320" height="54" rx="12"/>
+        <rect class="plane" x="30" y="186" width="320" height="54" rx="12"/>
+        <text class="tick" x="30" y="14">SURFACE</text>
+        <text class="tick" x="30" y="97">LOGIC</text>
+        <text class="tick" x="30" y="180">STATE</text>
+        <rect class="cell" x="46" y="34" width="88" height="26" rx="7"/>
+        <rect class="cell beat" x="146" y="34" width="88" height="26" rx="7"/>
+        <rect class="cell" x="246" y="34" width="88" height="26" rx="7"/>
+        <rect class="cell beat b2" x="46" y="117" width="88" height="26" rx="7"/>
+        <rect class="cell" x="146" y="117" width="88" height="26" rx="7"/>
+        <rect class="cell" x="246" y="117" width="88" height="26" rx="7"/>
+        <rect class="cell" x="46" y="200" width="88" height="26" rx="7"/>
+        <rect class="cell beat b3" x="146" y="200" width="88" height="26" rx="7"/>
+        <rect class="cell" x="246" y="200" width="88" height="26" rx="7"/>
+        <g>
+          <path id="mw1" class="wire" d="M90,60 C90,88 90,90 90,117"/>
+          <path id="mw2" class="wire" d="M190,60 C190,88 190,90 190,117"/>
+          <path id="mw3" class="wire" d="M290,60 C290,90 190,88 190,117"/>
+          <path id="mw4" class="wire" d="M90,143 C90,172 190,172 190,200"/>
+          <path id="mw5" class="wire" d="M190,143 C190,172 190,174 190,200"/>
+          <path id="mw6" class="wire" d="M290,143 C290,172 290,174 290,200"/>
+          <use class="pulse p1" href="#mw1"/>
+          <use class="pulse p2" href="#mw3"/>
+          <use class="pulse p3" href="#mw4"/>
+          <use class="pulse p4" href="#mw6"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<nav class="jump" aria-label="Sections">
+  <ol id="jumplist"></ol>
+</nav>
+
+<main>
+  <section id="map">
+    <div class="wrap wide">
+      <div class="sec-head rv">
+        <p class="eyebrow">01 / system map</p>
+        <h2>How the pieces fit</h2>
+        <p>Every box is a real directory or service in this codebase. Every line is a
+           real dependency. Click a box to see what it is, which files it owns, and
+           what it talks to.</p>
+      </div>
+      <div class="map-shell">
+        <div class="map-frame rv">
+          <div class="map-scroll" id="map-scroll"></div>
+          <div class="map-bar">
+            <ul class="legend" id="map-legend"></ul>
+            <span class="spacer"></span>
+            <button class="btn" type="button" id="map-reset">clear focus</button>
+            <button class="btn on" type="button" id="map-motion" aria-pressed="true">motion</button>
+          </div>
+        </div>
+        <aside class="detail rv" id="detail" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="flows">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">02 / runtime paths</p>
+        <h2>What happens when</h2>
+        <p>Pick a path and watch it travel the map above. These are the routes a
+           request, a build, or a piece of data actually takes.</p>
+      </div>
+      <div class="flow-tabs rv" id="flow-tabs"></div>
+      <div class="flow-body">
+        <div class="rv">
+          <ol class="steps" id="flow-steps"></ol>
+        </div>
+        <div class="rv">
+          <div class="card" id="flow-note"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">03 / the stack in 3d</p>
+        <h2>The same system, stacked</h2>
+        <p>Drag to orbit, scroll to zoom, click a block to open its detail. Height is
+           layer depth: the top plane is what the outside world touches, the bottom is
+           what everything rests on.</p>
+      </div>
+      <div class="scene-frame rv" id="scene-frame">
+        <canvas id="scene"></canvas>
+        <div class="scene-tip" id="scene-tip"></div>
+        <div class="scene-hint">drag to orbit &middot; scroll to zoom &middot; click a block</div>
+        <div class="scene-fallback" id="scene-fallback"></div>
+      </div>
+      <div class="grid3" id="stack-cards"></div>
+    </div>
+  </section>
+
+  <section id="modules">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">04 / modules</p>
+        <h2>What each part owns</h2>
+        <p>Sized by what is actually in the tree, not by how important it sounds.</p>
+      </div>
+      <div class="grid3" id="module-cards"></div>
+    </div>
+  </section>
+
+  <section id="state">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">05 / state and data</p>
+        <h2>Where the truth lives</h2>
+        <p>Every place this system keeps something that outlives a single request.</p>
+      </div>
+      <div class="grid3" id="state-cards"></div>
+    </div>
+  </section>
+
+  <section id="seams">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">06 / seams</p>
+        <h2>Where to change things</h2>
+        <p>The joints that take a change cleanly, and the ones that fight back.</p>
+      </div>
+      <div class="grid3" id="seam-cards"></div>
+    </div>
+  </section>
+
+  <section id="measured">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">07 / measured</p>
+        <h2>Ground truth from the scan</h2>
+        <p>This section is generated straight from a filesystem and git scan. Nothing
+           here was written by hand, so it is the part to trust first.</p>
+      </div>
+      <div id="measured-body"></div>
+    </div>
+  </section>
+
+  <section id="trust">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">08 / confidence</p>
+        <h2>What is verified, what is not</h2>
+        <p>A diagram that hides its own uncertainty is worse than no diagram.</p>
+      </div>
+      <div class="truth" id="trust-cards"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p id="foot-line"></p>
+    <p class="mono" id="foot-meta"></p>
+  </div>
+</footer>
+
+<script type="application/json" id="arch-spec">{"meta": {"title": "The money path", "eyebrow": "architecture / sts v0.7.3 / checkout and fulfillment", "tagline": "Everything that happens between a reader clicking a five dollar button and that reader holding the thing they bought. The store has never taken a real dollar, so read the confidence section before trusting any of this in production.", "footer": "Counts measured from the working tree at 36c0edb on 2026-07-29. Behaviour claims come from executed probes, not from reading. Anything unproven is named in the confidence section rather than left to be assumed.", "description": "How checkout, fulfillment, webhook idempotency and reconciliation fit together in Surviving the Singularity, with verified and unverified claims separated.", "root": "/Users/ctavolazzi/Code/active/sts-v0.7.3", "generated": "2026-07-30T01:51:01Z"}, "layers": [{"id": "surface", "name": "Surfaces", "blurb": "What a reader touches. Every one derives its price from the offer object."}, {"id": "edge", "name": "Endpoints", "blurb": "The three HTTP doors money moves through."}, {"id": "domain", "name": "Domain", "blurb": "Server logic. Never imported by the browser."}, {"id": "pure", "name": "Pure rules", "blurb": "Zero imports, so a plain test runner can reach them."}, {"id": "data", "name": "Persistence", "blurb": "What survives a request."}, {"id": "external", "name": "Third party", "blurb": "Systems that can fail independently of us."}], "nodes": [{"id": "n-home", "layer": "surface", "kind": "ui", "name": "Homepage", "blurb": "Hero and closing buy buttons, plus the share metadata.", "detail": "Until 2026-07-29 this file hardcoded the price in five places while line 4 of it claimed no offer prose was typed into it. All five now render offer.price or offer.priceWords.", "files": ["src/routes/+page.svelte"], "tech": ["svelte"], "loc": 1329, "fileCount": 1, "verified": true}, {"id": "n-ea", "layer": "surface", "kind": "ui", "name": "Early access", "blurb": "The purchase page and the post-payment success page.", "detail": "Carries two email fields bound to the same value so a reader who scrolls past the hero can still buy. Renders the included and excluded lists straight from the offer object.", "files": ["src/routes/early-access/+page.svelte", "src/routes/early-access/success/+page.svelte", "src/routes/early-access/success/+page.server.js"], "tech": ["svelte"], "loc": 1216, "fileCount": 3, "verified": true}, {"id": "n-gates", "layer": "surface", "kind": "ui", "name": "Gated pages", "blurb": "Password doors in front of the book, each pointing back at the offer.", "detail": "Client-side checks only, by design: no server env var to misconfigure across environments. The friends page keeps a second code so the preorder code does not quietly double as one.", "files": ["src/lib/components/BookGate.svelte", "src/routes/exclusive-friends-only/+page.svelte", "src/lib/bookAccessCode.js"], "tech": ["svelte"], "loc": 1057, "fileCount": 3, "verified": true}, {"id": "n-checkout", "layer": "edge", "kind": "entry", "name": "Checkout endpoint", "blurb": "Creates the Stripe session and refuses a repeat purchase before the charge.", "detail": "Collects the email first specifically so a duplicate can be refused before money moves rather than after. Writes an initiated row so an abandoned cart is distinguishable from a cart that never existed.", "files": ["src/routes/api/stripe-checkout/+server.js"], "tech": ["stripe"], "loc": 172, "fileCount": 1, "verified": true}, {"id": "n-webhook", "layer": "edge", "kind": "entry", "name": "Stripe webhook", "blurb": "The source of truth for fulfillment. Nine exit paths, all accounted for.", "detail": "Uses constructEventAsync, not constructEvent: on the Workers runtime the synchronous form throws on every request and the catch turned that into an indistinguishable Invalid signature 400. Probed live with forged signatures: 4 signed events return 200, 5 negative controls return 400.", "files": ["src/routes/api/webhooks/stripe/+server.js"], "tech": ["stripe"], "loc": 182, "fileCount": 1, "verified": true}, {"id": "n-admin", "layer": "edge", "kind": "entry", "name": "Admin reconcile", "blurb": "Reports paid sessions nobody fulfilled. Fails shut with no token.", "detail": "Returns customer emails joined to payment references, so an unset token serves nothing to anybody. With no database it answers 503 ok:false rather than 200 count:0, because a monitor that cannot run must not read as an all-clear.", "files": ["src/routes/api/admin/reconcile/+server.js"], "tech": ["node"], "loc": 108, "fileCount": 1, "verified": true}, {"id": "n-fulfil", "layer": "domain", "kind": "service", "name": "Fulfillment", "blurb": "Claim the session, insert the preorder, send the bundle. The real safety net.", "detail": "claimSession's unique constraint on session_id is what stops the success page and the webhook both fulfilling. The row records an outcome rather than mere intent, so a crash between claim and send no longer leaves a tombstone that turns every retry into a no-op.", "files": ["src/lib/server/fulfillment.js"], "tech": ["supabase"], "loc": 301, "fileCount": 1, "verified": true}, {"id": "n-ledger", "layer": "domain", "kind": "service", "name": "Checkout ledger", "blurb": "One row per session: created, paid, expired, abandoned. Never purged.", "detail": "Separate from preorders on purpose. The unique (email, edition_type) constraint on preorders means a repeat purchase writes no row at all, which is correct for a catalogue and useless as a financial record.", "files": ["src/lib/server/transactions.js"], "tech": ["supabase"], "loc": 149, "fileCount": 1, "verified": true}, {"id": "n-events", "layer": "domain", "kind": "service", "name": "Webhook events", "blurb": "Records every Stripe event and detects a genuine replay. Degrades open.", "detail": "The insert is the detection mechanism: a 23505 conflict means this event id has been seen. Every function here returns proceed on failure, because blocking a paid order to protect a log entry is the wrong trade.", "files": ["src/lib/server/webhookEvents.js"], "tech": ["supabase"], "loc": 168, "fileCount": 1, "verified": false}, {"id": "n-reconcile", "layer": "domain", "kind": "service", "name": "Reconciliation", "blurb": "Compares paid against delivered. Refuses to report ok without a database.", "detail": "The failure it detects is a webhook that never arrived, which means none of our code ran and nothing inside the app can notice. Detection has to be out-of-band, which is why this exists at all.", "files": ["src/lib/server/reconcile.js"], "tech": ["supabase"], "loc": 77, "fileCount": 1, "verified": false}, {"id": "n-email", "layer": "domain", "kind": "service", "name": "Transactional email", "blurb": "The receipt, the admin alerts, and a delivery ledger keyed by message id.", "detail": "Records data.id from Resend so a bounced confirmation and a delivered one are distinguishable. A skipped send caused by a missing API key is never counted as delivered.", "files": ["src/lib/server/email.js", "src/lib/server/preorderLookup.js"], "tech": ["resend"], "loc": 675, "fileCount": 2, "verified": true}, {"id": "n-offer", "layer": "pure", "kind": "data", "name": "The offer object", "blurb": "One frozen object every surface reads. Ratified, not editable prose.", "detail": "Exists because the same five dollar purchase was described ten different ways: the sales pages sold digital access while the legal page sold merchandise and cited the FTC mail order rule. shipsPhysicalGoods is the flag the refund policy branches on.", "files": ["src/lib/offer.js"], "tech": ["node"], "loc": 305, "fileCount": 1, "verified": true}, {"id": "n-policy", "layer": "pure", "kind": "lib", "name": "Event policy", "blurb": "Whether a repeat delivery should run. Only a terminal success skips.", "detail": "Stripe reuses the event id on retries, so seen-before is emphatically not already-handled. This layer is deliberately less aggressive than the session claim: letting an extra event through costs one redundant check, wrongly blocking one costs a real order.", "files": ["src/lib/server/webhookEventPolicy.js"], "tech": ["node"], "loc": 142, "fileCount": 1, "verified": true}, {"id": "n-token", "layer": "pure", "kind": "lib", "name": "Admin token guard", "blurb": "Constant-time bearer check that refuses to operate with a weak secret.", "detail": "crypto.timingSafeEqual does not exist on the Workers runtime, so the comparison is by hand over the longer string. An unset secret authorises nobody, which is the classic way an admin endpoint ends up world readable.", "files": ["src/lib/server/adminToken.js"], "tech": ["node"], "loc": 124, "fileCount": 1, "verified": true}, {"id": "n-format", "layer": "pure", "kind": "lib", "name": "Report formatter", "blurb": "The text a human reads at 2am while deciding whether money is going missing.", "detail": "Split out of reconcile.js purely so it could be tested. Only a genuine clean result is allowed to say Checked and clear; a check that could not run says so and explicitly denies being an all-clear.", "files": ["src/lib/server/reconcileFormat.js"], "tech": ["node"], "loc": 91, "fileCount": 1, "verified": true}, {"id": "n-lint", "layer": "pure", "kind": "build", "name": "Drift assertion", "blurb": "Fails the build if an offer fact is typed into a page instead of derived.", "detail": "Derives all five rules from the offer object at lint time and hardcodes nothing, so changing the price retargets it automatically instead of going blind on the one commit where it matters. Refuses to report clean on a scope under 20 files.", "files": ["scripts/check-offer-drift.mjs", "package.json"], "tech": ["node"], "loc": 359, "fileCount": 1, "verified": true}, {"id": "n-pg", "layer": "data", "kind": "data", "name": "Postgres tables", "blurb": "Five tables and one view, all deny-all to the browser key.", "detail": "checkout_transactions is the financial ledger, fulfilled_sessions is the delivery claim, preorders is the catalogue, webhook_events is the audit trail, email_deliveries is the send ledger. Migration 014 is written and has never been executed.", "files": ["sql/013_checkout_durability.sql", "sql/014_webhook_events.sql", "sql/004_fulfilled_sessions.sql", "sql/003_preorders.sql", "sql/011_email_deliveries.sql", "sql/012_lockdown_public_grants.sql"], "tech": ["postgres"], "loc": 941, "fileCount": 14, "verified": false}, {"id": "n-bucket", "layer": "data", "kind": "data", "name": "Downloads bucket", "blurb": "The Precedent File bundle, handed out as a signed URL with a 7 day life.", "detail": "Private bucket. The 7 day TTL is longer than anyone has justified in writing, which is an open plan item rather than a decision.", "files": ["src/lib/server/fulfillment.js"], "tech": ["supabase"], "loc": 0, "fileCount": 1, "verified": false}, {"id": "n-stripe", "layer": "external", "kind": "external", "name": "Stripe", "blurb": "Holds the authoritative payment record. Test mode only, to date.", "detail": "92 sessions with livemode true count zero, and one webhook endpoint with livemode false. Going live without first creating a live-mode endpoint would accept real money and record none of it.", "files": ["src/routes/api/stripe-checkout/+server.js", "src/routes/api/webhooks/stripe/+server.js"], "tech": ["stripe"], "verified": true}, {"id": "n-resend", "layer": "external", "kind": "external", "name": "Resend", "blurb": "Sends the receipt and the admin alerts.", "detail": "The local API key is dead, verified with a control: a bogus key and the real one return byte-identical errors. So email delivery is currently inferred from database rows only.", "files": ["src/lib/server/email.js"], "tech": ["resend"], "verified": true}, {"id": "n-supabase", "layer": "external", "kind": "external", "name": "Supabase", "blurb": "Hosts Postgres and the storage bucket. Reached only with the service key.", "detail": "No browser ever talks to it: the content security policy would break the call, and the shipped bundle contains no publishable key.", "files": ["src/lib/server/supabaseAdmin.js"], "tech": ["supabase"], "verified": true}, {"id": "n-pages", "layer": "external", "kind": "external", "name": "Cloudflare Pages", "blurb": "Runs the whole thing on the Workers runtime. No cron trigger.", "detail": "The runtime constrains real decisions: SubtleCrypto is async only, which dictates constructEventAsync, and no cron means the reconciliation check has nothing to schedule it.", "files": ["svelte.config.js", "package.json"], "tech": ["cloudflare"], "verified": true}], "edges": [{"from": "n-home", "to": "n-offer", "kind": "data", "label": "price, sentence"}, {"from": "n-ea", "to": "n-offer", "kind": "data", "label": "included, excluded"}, {"from": "n-gates", "to": "n-offer", "kind": "data"}, {"from": "n-ea", "to": "n-checkout", "kind": "call", "label": "POST"}, {"from": "n-checkout", "to": "n-stripe", "kind": "call", "label": "create session"}, {"from": "n-checkout", "to": "n-ledger", "kind": "call", "label": "initiated"}, {"from": "n-stripe", "to": "n-webhook", "kind": "event", "label": "signed event"}, {"from": "n-webhook", "to": "n-events", "kind": "call", "label": "claim event id"}, {"from": "n-webhook", "to": "n-ledger", "kind": "call", "label": "completed"}, {"from": "n-webhook", "to": "n-fulfil", "kind": "call"}, {"from": "n-ea", "to": "n-fulfil", "kind": "call", "label": "fast path"}, {"from": "n-events", "to": "n-policy", "kind": "call", "label": "disposition"}, {"from": "n-events", "to": "n-pg", "kind": "data", "label": "webhook_events"}, {"from": "n-fulfil", "to": "n-email", "kind": "call", "label": "receipt"}, {"from": "n-fulfil", "to": "n-pg", "kind": "data", "label": "claim, preorder"}, {"from": "n-fulfil", "to": "n-bucket", "kind": "data", "label": "signed URL"}, {"from": "n-ledger", "to": "n-pg", "kind": "data"}, {"from": "n-email", "to": "n-offer", "kind": "data", "label": "receipt copy"}, {"from": "n-email", "to": "n-resend", "kind": "call"}, {"from": "n-email", "to": "n-pg", "kind": "data", "label": "email_deliveries"}, {"from": "n-admin", "to": "n-token", "kind": "call", "label": "authorize"}, {"from": "n-admin", "to": "n-reconcile", "kind": "call"}, {"from": "n-admin", "to": "n-email", "kind": "call", "label": "alert"}, {"from": "n-reconcile", "to": "n-format", "kind": "call"}, {"from": "n-reconcile", "to": "n-pg", "kind": "data", "label": "the view"}, {"from": "n-lint", "to": "n-offer", "kind": "build", "label": "derives rules"}, {"from": "n-lint", "to": "n-home", "kind": "build", "label": "scans 97 files"}, {"from": "n-lint", "to": "n-ea", "kind": "build"}, {"from": "n-lint", "to": "n-gates", "kind": "build"}, {"from": "n-pg", "to": "n-supabase", "kind": "data"}, {"from": "n-bucket", "to": "n-supabase", "kind": "data"}, {"from": "n-webhook", "to": "n-pages", "kind": "data", "label": "workerd"}, {"from": "n-admin", "to": "n-pages", "kind": "data"}], "flows": [{"id": "buy", "name": "A reader buys the book", "blurb": "The happy path. Two independent routes reach fulfillment on purpose, because a customer's browser is not a reliable narrator.", "steps": [{"node": "n-ea", "title": "Email first, then the button", "text": "The page collects the address before checkout so a duplicate purchase can be refused before the charge rather than after it. Both buy buttons gate on a valid email; the bottom one used to not.", "file": "src/routes/early-access/+page.svelte"}, {"node": "n-checkout", "title": "Session created and recorded", "text": "A Stripe checkout session is created and an initiated row is written immediately. Without that row an abandoned cart is indistinguishable from a cart that never existed.", "file": "src/routes/api/stripe-checkout/+server.js"}, {"node": "n-stripe", "title": "The reader pays on Stripe", "text": "Stripe hosts the card form. We never see the card. To date every session here has been test mode: livemode true count is zero.", "file": "src/routes/api/stripe-checkout/+server.js"}, {"node": "n-webhook", "title": "Stripe calls us back", "text": "Server to server, independent of whether the reader's browser ever returns. Signature verified against the raw body bytes, because a JSON round trip would change key order and break the HMAC.", "file": "src/routes/api/webhooks/stripe/+server.js"}, {"node": "n-ledger", "title": "Ledger first, unconditionally", "text": "Written before fulfillment and outside the email guard, because the money moved whether or not we can identify the buyer. Previously a session with no email returned 200 having recorded nothing anywhere.", "file": "src/lib/server/transactions.js"}, {"node": "n-fulfil", "title": "Claim, then deliver", "text": "claimSession takes the session id first. Whichever of the webhook and the success page gets there first does the work; the other stands down. That is why a customer is not emailed twice.", "file": "src/lib/server/fulfillment.js"}, {"node": "n-email", "title": "The receipt, derived not typed", "text": "The confirmation email reads its offer claims from the same object the pages do. It used to promise 29 documented cases and 50% off the finished book, both wrong.", "file": "src/lib/server/email.js"}, {"node": "n-pg", "title": "Outcome recorded", "text": "The claim row is updated to delivered or failed. A send skipped because the API key is missing is never counted as delivered, so a misconfigured deployment cannot quietly mark every order complete.", "file": "sql/013_checkout_durability.sql"}]}, {"id": "replay", "name": "The same webhook arrives twice", "blurb": "The path that was almost implemented backwards. Stripe reuses the event id when it retries, so seen-before cannot mean already-handled.", "steps": [{"node": "n-webhook", "title": "Signature verified first", "text": "Event bookkeeping happens after verification so a forged payload can never write a row, and before any handling so a replay is caught before it does work twice.", "file": "src/routes/api/webhooks/stripe/+server.js"}, {"node": "n-events", "title": "The insert is the detector", "text": "Inserting the event id either succeeds, meaning first delivery, or fails with a 23505 conflict, meaning we have seen this id before. Only then does anything look at what the prior attempt reached.", "file": "src/lib/server/webhookEvents.js"}, {"node": "n-policy", "title": "Only a terminal success skips", "text": "processed means done, so stand down. processing means another worker is mid-flight. failed means retry it, because a retry is the delivery mechanism working, not a duplicate. Getting this backwards would strand paid orders.", "file": "src/lib/server/webhookEventPolicy.js"}, {"node": "n-fulfil", "title": "The session claim decides anyway", "text": "Event dedup is an audit trail and an optimisation. claimSession is the actual safety net, so the event policy is deliberately the more permissive of the two. When they disagree, the session claim wins.", "file": "src/lib/server/fulfillment.js"}, {"node": "n-events", "title": "Outcome written back", "text": "processed is what makes the next redelivery safe to skip. An event stuck in processing gets repaired by the next delivery once it goes stale, which errs toward doing the work again rather than assuming it was done.", "file": "src/lib/server/webhookEvents.js"}]}, {"id": "reconcile", "name": "Nobody notices a lost order", "blurb": "Stripe held 23 paid sessions against 13 delivery rows and nothing had noticed. A webhook that never arrives runs no code that could notice it.", "steps": [{"node": "n-stripe", "title": "The webhook never arrives", "text": "Dropped delivery, an outage, a deploy mid-flight. Stripe has the money recorded. We have nothing, and no code of ours ran to observe that.", "file": "src/routes/api/webhooks/stripe/+server.js"}, {"node": "n-admin", "title": "Something outside has to ask", "text": "A bearer token is checked first, in constant time, and an unset token serves nothing to anybody. This endpoint returns customer emails joined to payment references.", "file": "src/routes/api/admin/reconcile/+server.js"}, {"node": "n-reconcile", "title": "Paid against delivered", "text": "Reads a view that joins the ledger to the delivery claims, with a 15 minute floor so a normal webhook retry in progress does not look like a lost order.", "file": "src/lib/server/reconcile.js"}, {"node": "n-format", "title": "Say less, never nonsense", "text": "Amounts summed rather than counted, and a check that could not run says so explicitly rather than producing anything that reads like an all-clear. A sparse row degrades to age unknown, not to the word undefined.", "file": "src/lib/server/reconcileFormat.js"}, {"node": "n-email", "title": "Alert, only if it really ran", "text": "The mail goes out only when the check ran AND found something. Alerting on a failed check would train the reader to ignore this mail. Nothing schedules any of this yet, which is why the plan item is not closed.", "file": "src/lib/server/email.js"}]}, {"id": "drift", "name": "The build refuses drifted copy", "blurb": "The offer was stated ten different ways across nine surfaces. Prose review does not catch a numeral, so an assertion does it instead.", "steps": [{"node": "n-lint", "title": "Rules derived, not hardcoded", "text": "The assertion imports the offer object and builds its patterns from offer.price, the discount percentage and the precedent count. Change the price and it retargets itself instead of going blind.", "file": "scripts/check-offer-drift.mjs"}, {"node": "n-home", "title": "Facts, not phrasing", "text": "A number can be checked against the product and can therefore be wrong, so it must derive. A paraphrase cannot be wrong the same way, which is why the legal pages keep their own register.", "file": "src/routes/+page.svelte"}, {"node": "n-offer", "title": "One place to change it", "text": "Price, spelled-out price, the seven included items with stable ids, the one exclusion, the bounded definition of forever, and the flag the refund policy branches on.", "file": "src/lib/offer.js"}, {"node": "n-lint", "title": "Exit 1 stops the build", "text": "Wired into prebuild ahead of the image hook. Verified by planting a violation: the build exits 1 and vite never runs. A build that only ever passes is indistinguishable from a lint nobody wired in.", "file": "package.json"}]}], "state": [{"name": "Postgres on Supabase", "kind": "database", "where": "hosted", "blurb": "Five tables and one view. checkout_transactions is the financial record and is never purged; fulfilled_sessions is a delivery claim with a 30 day purge that deliberately skips anything not confirmed delivered. Row level security on with no policies, so the browser key can read nothing.", "files": ["sql/", "src/lib/server/transactions.js", "src/lib/server/supabaseAdmin.js"]}, {"name": "Private storage bucket", "kind": "object storage", "where": "hosted", "blurb": "Holds the bundle a buyer downloads. Handed out as a signed URL with a 7 day life, which is longer than anyone has justified in writing.", "files": ["src/lib/server/fulfillment.js"]}, {"name": "Environment", "kind": "secrets", "where": "Cloudflare Pages", "blurb": "18 variables referenced in source. STRIPE_PRICE_ID_AUTHORS is read by the code and is absent from the deployed inventory. There is no .env in this working tree at all, which is why every database path here is unverified.", "files": [".env.example"]}, {"name": "Book unlock, in memory only", "kind": "browser", "where": "client", "blurb": "Never persisted, so it resets on any full page load. Reading position is stored separately, so a re-lock never costs anyone their place.", "files": ["src/lib/stores/bookAccess.js", "src/lib/bookAccessCode.js"]}], "seams": [{"title": "Migration 014 has never been executed", "risk": "high", "text": "The webhook_events table and the reconciliation view exist as SQL only. Syntax is proven with Postgres's own parser and every column is cross-checked against the other migrations by AST, but the insert, the 23505 conflict branch, the outcome update and the view are all unproven against a real database. Everything in the replay flow degrades open, so a missing table means orders still flow and nothing is recorded, which is the safe direction and also an invisible one.", "files": ["sql/014_webhook_events.sql", "src/lib/server/webhookEvents.js"]}, {"title": "There is no live-mode webhook endpoint", "risk": "high", "text": "Stripe reports one webhook endpoint with livemode false. Switching the secret key to the live key before creating a live endpoint would accept real money and record none of it: no ledger row, no claim, no receipt, and no way to find the orders afterwards except in Stripe. This is why the plan states the ordering twice and marks the key switch blocked.", "files": ["src/routes/api/webhooks/stripe/+server.js"]}, {"title": "The reconciliation check has nothing calling it", "risk": "high", "text": "Cloudflare Pages has no cron trigger, so the endpoint is on-demand only. An on-demand check that nobody demands is not an alarm. Until a scheduler exists, the failure this was built to catch would still go unnoticed, and the risk is that the endpoint's existence gets mistaken for coverage.", "files": ["src/routes/api/admin/reconcile/+server.js", "src/lib/server/reconcile.js"]}, {"title": "Event dedup must stay weaker than the session claim", "risk": "medium", "text": "Stripe reuses the event id on retries. If anyone tightens the event policy to skip on any second sighting, a paid order whose first attempt failed will never be fulfilled while the events table insists it was handled. That is the exact bug migration 013 removed one layer down. The policy has 14 tests and a mutation test specifically guarding this.", "files": ["src/lib/server/webhookEventPolicy.js", "src/lib/server/fulfillment.js"]}, {"title": "Two layers fail in opposite directions, on purpose", "risk": "medium", "text": "Bookkeeping degrades open: a missing events table must never block a paid order. The admin endpoint degrades shut: no token means no access, because it serves customer emails with payment references attached. Both directions are proven by probe. Anyone changing either one should know which side of that line they are on before they start.", "files": ["src/lib/server/webhookEvents.js", "src/lib/server/adminToken.js"]}, {"title": "Offer facts are guarded, offer phrasing is not", "risk": "low", "text": "The build assertion catches a price, a discount percentage or the precedent count typed into any of 97 sales surfaces, and it derives those patterns from the offer object so a price change retargets it. It does not police paraphrase, and it does not look at src/lib/data, where book and blueprint prose legitimately discuss other dollar figures. A new sales surface outside the scoped directories is unguarded until someone adds it.", "files": ["scripts/check-offer-drift.mjs", "src/lib/offer.js"]}, {"title": "Email delivery is inferred from our own rows", "risk": "medium", "text": "The local Resend key is dead, confirmed with a control rather than assumed: a bogus key and the real one return byte-identical errors. So whether a receipt actually reached a customer is currently known only from what we wrote down about our own send attempt. The one send that decides whether a session counts as delivered is captured rather than swallowed, which is the mitigation, not a substitute for checking upstream.", "files": ["src/lib/server/email.js", "sql/011_email_deliveries.sql"]}], "ground": {"verified": ["All file, line and module counts come from a scan of the working tree at 36c0edb, not from memory.", "The webhook handler was probed live with forged HMAC-SHA256 signatures: 4 signed events return 200, and 5 negative controls return 400 (no header, garbage, wrong secret, valid signature for a different payload, and a timestamp 600s in the past).", "The admin endpoint was probed live in both configurations: with no token it answers 503 to everyone including a caller presenting a token; with a token set, wrong, short and wrong-scheme tokens get 401 and the correct one gets in.", "With no database the reconciliation endpoint answers 503 ok:false count:null with an explicit not-an-all-clear note, rather than 200 count:0.", "51 tests across three specs pass, and 4 mutation tests confirm those tests can actually fail: breaking the retry-after-failure branch, the unset-secret check, the minimum token length, and the length seed in the constant-time compare are each caught by a named assertion.", "sql/013 and sql/014 parse under libpg_query, Postgres's own grammar, and a planted syntax error makes that checker fail.", "Every qualified column the new view reads was cross-checked against the columns the migrations actually create, and every field the JavaScript reads was cross-checked against the view's outputs.", "The offer drift assertion stops the build: with a planted violation npm run build exits 1 and vite never runs. With the tree clean it scans 97 sales surfaces and passes.", "Offer copy is byte-identical after the derivation work, checked on four rendered routes including one behind a password gate opened through an explicit hydration gate."], "inferred": ["Purpose descriptions come from reading roughly twenty files, chiefly the entrypoints and both ends of the heaviest import edges, not from reading all 434 measured files.", "The claim that the staleness window for events should equal the one for session claims rests on both governing the same situation, a worker that died mid-fulfillment. It has not been tested under real concurrent traffic and is logged as an assumption at 0.75 confidence.", "Edges here are drawn from the resolved import graph plus the money-path reading. The scan resolves 47 edges between 52 modules at directory granularity; the file-level edges on this map were confirmed by reading the imports rather than by the scan alone.", "Stripe and Supabase counts quoted in the node details were measured in an earlier session against the live APIs and are carried forward here, not re-measured today."], "unknown": ["Whether migration 014 applies cleanly, and whether the conflict path, the outcome update and the reconciliation view behave correctly against real Postgres. Nothing has been executed. Docker is installed on this machine but its daemon is not running, which is the cheapest route to closing this without touching production.", "What will schedule the reconciliation check. Pages has no cron, so candidates are a separate Worker with a cron trigger, a scheduled GitHub Action, or a local launchd job. This needs a decision before the plan item can close.", "Whether the transactional email renders and sends correctly end to end. The derived receipt string was verified to be identical to the copy it replaced, but no message was sent, because the local Resend key is dead.", "Everything about production. It runs an older commit (332fdfd) and none of this work is deployed or even pushed. The store has never taken a real dollar, so the whole path above is unproven against real money.", "Whether the deployed database schema still matches the migrations in this repo. Direct SQL ground truth needs a Supabase personal access token that is not available here."]}, "facts": [{"label": "lines of code", "value": "41,537"}, {"label": "files", "value": "1,125"}, {"label": "primary language", "value": "Markdown", "note": "70,867 lines"}, {"label": "directories", "value": "52"}, {"label": "commits", "value": "546"}, {"label": "uncommitted", "value": "40", "note": "files not in git"}]}</script>
+<script type="application/json" id="arch-scan">{"schema": "architecture-scan/1", "root": "/Users/ctavolazzi/Code/active/sts-v0.7.3", "name": "my-app", "generated_utc": "2026-07-30T01:51:01Z", "truncated": false, "totals": {"files": 1125, "measured_files": 434, "loc": 41537, "bytes": 196839066, "modules": 52, "modules_listed": 40, "edges": 47, "edges_listed": 47}, "git": {"is_repo": true, "branch": "v0.7.3", "head": "36c0edb", "commits": 546, "last_commit": "2026-07-29 webhooks: event idempotency and a reconciliation report, both measured", "contributors": 2, "hot_files": [{"path": "scripts/sts.py", "touches": 21}, {"path": "src/lib/data/book/manuscript-index.json", "touches": 17}, {"path": "src/lib/data/book/10-chapter8.md", "touches": 16}, {"path": "src/lib/data/book/book.json", "touches": 16}, {"path": "src/lib/data/book/02-introduction.md", "touches": 14}, {"path": "src/lib/data/book/19-chapter17.md", "touches": 13}, {"path": "manuscript/EDITORIAL-QUEUE.md", "touches": 13}, {"path": "src/lib/data/signals.json", "touches": 12}, {"path": "static/signals.json", "touches": 12}, {"path": "static/signals.xml", "touches": 12}, {"path": "src/lib/data/book/11-chapter9.md", "touches": 12}, {"path": "src/lib/data/book/23-appendix-b.md", "touches": 11}], "dirty": 40}, "languages": [{"lang": "Markdown", "files": 176, "loc": 70867}, {"lang": "JavaScript", "files": 102, "loc": 9932}, {"lang": "Svelte", "files": 82, "loc": 24075}, {"lang": "JSON", "files": 21, "loc": 43218}, {"lang": "SQL", "files": 14, "loc": 941}, {"lang": "HTML", "files": 11, "loc": 8942}, {"lang": "CSS", "files": 7, "loc": 534}, {"lang": "Python", "files": 7, "loc": 6307}, {"lang": "Text", "files": 6, "loc": 1104}, {"lang": "Shell", "files": 4, "loc": 282}, {"lang": "YAML", "files": 2, "loc": 171}, {"lang": "XML", "files": 2, "loc": 339}], "modules": [{"id": "src/lib/data/book", "files": 37, "loc": 31950, "langs": ["Markdown", "JSON"], "imports_out": 0, "imports_in": 2, "sample_files": ["src/lib/data/book/manuscript-index.json", "src/lib/data/book/art-catalog.json", "src/lib/data/book/ELIJAH-PROTOCOL.md", "src/lib/data/book/10-chapter8.md", "src/lib/data/book/README.md", "src/lib/data/book/13-chapter11.md"]}, {"id": "src/lib/data/book-v1-archive", "files": 36, "loc": 4202, "langs": ["Markdown", "JSON"], "imports_out": 0, "imports_in": 0, "sample_files": ["src/lib/data/book-v1-archive/README.md", "src/lib/data/book-v1-archive/04-chapter2.md", "src/lib/data/book-v1-archive/07-chapter5.md", "src/lib/data/book-v1-archive/p2-11-chapter23.md", "src/lib/data/book-v1-archive/05-chapter3.md", "src/lib/data/book-v1-archive/08-chapter6.md"]}, {"id": "src/lib/components", "files": 30, "loc": 6284, "langs": ["Svelte"], "imports_out": 14, "imports_in": 64, "sample_files": ["src/lib/components/Navbar.svelte", "src/lib/components/Timeline.svelte", "src/lib/components/BlogPostTemplate.svelte", "src/lib/components/WhiteRabbitPanel.svelte", "src/lib/components/CommandPalette.svelte", "src/lib/components/NewsletterSignup.svelte"]}, {"id": "work_efforts", "files": 29, "loc": 1686, "langs": ["Markdown", "JavaScript", "JSON"], "imports_out": 0, "imports_in": 0, "sample_files": ["work_efforts/12_image_optimization_enhancements/image_build_hook.js", "work_efforts/agi_roadmap/technologies.json", "work_efforts/18_debug_svelte_warnings/README.md", "work_efforts/60_testing/60.01_quality_assurance_testing.md", "work_efforts/10_development/00.03_comprehensive_site_review.md", "work_efforts/10_development/00.05_superfluous_routes_removal.md"]}, {"id": "scripts", "files": 23, "loc": 7915, "langs": ["Python", "CSS", "Shell"], "imports_out": 0, "imports_in": 0, "sample_files": ["scripts/sts.py", "scripts/build_bonus.py", "scripts/sweep_signals.py", "scripts/check-offer-drift.mjs", "scripts/generate_sample_pdf.py", "scripts/find_book_sources.py"]}, {"id": "(root)", "files": 20, "loc": 8592, "langs": ["Markdown", "JavaScript", "JSON"], "imports_out": 0, "imports_in": 0, "sample_files": ["package-lock.json", "V0.7.3-SCOPE.md", "STRIPE-GO-LIVE.md", "REFS-DESIGN.md", "README.md", "devlog.md"]}, {"id": "manuscript", "files": 20, "loc": 45013, "langs": ["Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["manuscript/StS-Complete-Draft-v0.0.9.md", "manuscript/StS-Complete-Draft-v0.0.8.md", "manuscript/StS-Complete-Draft-v0.0.7.md", "manuscript/StS-Complete-Draft-compiled-2026-07-21.md", "manuscript/StS-Complete-Draft-compiled-2026-07-20.md", "manuscript/StS-Complete-Draft-compiled-2026-07-19.md"]}, {"id": "src/lib/data/blog-posts", "files": 20, "loc": 1814, "langs": ["Markdown", "JavaScript"], "imports_out": 0, "imports_in": 4, "sample_files": ["src/lib/data/blog-posts/farm-bot-deep-dive/research.md", "src/lib/data/blog-posts/farm-bot-deep-dive/content.md", "src/lib/data/blog-posts/claude-projects-weekend-project/content.md", "src/lib/data/blog-posts/robot-farm-bot/content.md", "src/lib/data/blog-posts/farm-bot-deep-dive/draft.md", "src/lib/data/blog-posts/singularity-express/content.md"]}, {"id": "docs", "files": 17, "loc": 7312, "langs": ["Markdown", "HTML", "JSON"], "imports_out": 0, "imports_in": 0, "sample_files": ["docs/architecture.html", "docs/report-2026-07-29-checkout-hardening.html", "docs/next-steps-2026-07-27.html", "docs/storefront-roadmap-2026-07-27.html", "docs/work-orders-2026-07-28.md", "docs/architecture.spec.json"]}, {"id": "manuscript/sources", "files": 16, "loc": 8088, "langs": ["Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["manuscript/sources/STS-Draft5-google-doc.md", "manuscript/sources/StS-Draft-5.1-google-doc.md", "manuscript/sources/research-log.md", "manuscript/sources/d5-chapter-7-the-crucible-local-servers-and-air-gapped-sandboxe.md", "manuscript/sources/d5-chapter-8-the-robot-in-the-soil-farmbot-and-biological-refin.md", "manuscript/sources/d5-chapter-5-the-sovereign-shell-25-000-exit-strategy.md"]}, {"id": "src/routes/blog", "files": 16, "loc": 5466, "langs": ["Svelte", "JavaScript"], "imports_out": 36, "imports_in": 0, "sample_files": ["src/routes/blog/singularity-express/+page.svelte", "src/routes/blog/synthetic-biological-intelligence/+page.svelte", "src/routes/blog/future-of-neural-interfaces/+page.svelte", "src/routes/blog/algal-biorefinery-blueprint/+page.svelte", "src/routes/blog/neuralink-latest-breakthrough/+page.svelte", "src/routes/blog/algae-saves-us/+page.svelte"]}, {"id": "sql", "files": 14, "loc": 941, "langs": ["SQL"], "imports_out": 0, "imports_in": 0, "sample_files": ["sql/014_webhook_events.sql", "sql/013_checkout_durability.sql", "sql/012_lockdown_public_grants.sql", "sql/011_email_deliveries.sql", "sql/003_preorders.sql", "sql/005_preorders_copy_lock.sql"]}, {"id": "tests", "files": 14, "loc": 5555, "langs": ["JavaScript", "HTML", "JSON"], "imports_out": 3, "imports_in": 0, "sample_files": ["tests/reports/results.json", "tests/e2e/i-checkout-gate.spec.js", "tests/e2e/h-usability.spec.js", "tests/e2e/j-webhook-event-policy.spec.js", "tests/e2e/k-admin-token.spec.js", "tests/e2e/l-reconcile-format.spec.js"]}, {"id": "src/lib/server", "files": 13, "loc": 1944, "langs": ["JavaScript"], "imports_out": 2, "imports_in": 36, "sample_files": ["src/lib/server/email.js", "src/lib/server/fulfillment.js", "src/lib/server/preorderLookup.js", "src/lib/server/webhookEvents.js", "src/lib/server/transactions.js", "src/lib/server/webhookEventPolicy.js"]}, {"id": "src/lib/utils", "files": 12, "loc": 782, "langs": ["JavaScript"], "imports_out": 0, "imports_in": 2, "sample_files": ["src/lib/utils/image-generator.js", "src/lib/utils/shopify.js", "src/lib/utils/katexExtension.js", "src/lib/utils/markdownParser.js", "src/lib/utils/navigation.js", "src/lib/utils/tests/markdownParser.test.js"]}, {"id": "src/routes/api", "files": 12, "loc": 1347, "langs": ["JavaScript"], "imports_out": 29, "imports_in": 0, "sample_files": ["src/routes/api/webhooks/stripe/+server.js", "src/routes/api/webhooks/resend/+server.js", "src/routes/api/stripe-checkout/+server.js", "src/routes/api/waitlist/+server.js", "src/routes/api/checklist-email/+server.js", "src/routes/api/admin/reconcile/+server.js"]}, {"id": "src/lib/stores", "files": 11, "loc": 361, "langs": ["JavaScript"], "imports_out": 0, "imports_in": 13, "sample_files": ["src/lib/stores/readingPosition.js", "src/lib/stores/progress.js", "src/lib/stores/readerFontSize.js", "src/lib/stores/audienceStore.js", "src/lib/stores/toasts.js", "src/lib/stores/bookPage.js"]}, {"id": "src/lib/data", "files": 9, "loc": 3466, "langs": ["JSON", "JavaScript", "Markdown"], "imports_out": 0, "imports_in": 7, "sample_files": ["src/lib/data/signals.json", "src/lib/data/blueprint.js", "src/lib/data/timelineItems.json", "src/lib/data/evidence.js", "src/lib/data/more_quotes.json", "src/lib/data/technologies.json"]}, {"id": "static", "files": 7, "loc": 4190, "langs": ["JSON", "XML", "Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["static/images/optimized/manifest.json", "static/signals.json", "static/signals.xml", "static/book-images/credits.json", "static/newsletter-template.md", "static/sitemap.xml"]}, {"id": "src/lib/archive", "files": 6, "loc": 1088, "langs": ["Svelte"], "imports_out": 11, "imports_in": 0, "sample_files": ["src/lib/archive/page-og.svelte", "src/lib/archive/page-og-copy.svelte", "src/lib/archive/download-page-og-copy.svelte", "src/lib/archive/preorder-OG.svelte", "src/lib/archive/research-links.svelte", "src/lib/archive/RoboticsCompanies_og.svelte"]}, {"id": "src/lib/components/ui", "files": 6, "loc": 423, "langs": ["Svelte", "Markdown", "JavaScript"], "imports_out": 0, "imports_in": 1, "sample_files": ["src/lib/components/ui/README.md", "src/lib/components/ui/Button.svelte", "src/lib/components/ui/Card.svelte", "src/lib/components/ui/Input.svelte", "src/lib/components/ui/Checkbox.svelte", "src/lib/components/ui/index.js"]}, {"id": "src/routes/book", "files": 6, "loc": 1301, "langs": ["Svelte", "JavaScript"], "imports_out": 16, "imports_in": 0, "sample_files": ["src/routes/book/[sectionId]/+page.svelte", "src/routes/book/+page.svelte", "src/routes/book/+layout.svelte", "src/routes/book/fixme_page.svelte", "src/routes/book/[sectionId]/+page.server.js", "src/routes/book/+layout.server.js"]}, {"id": "archive", "files": 5, "loc": 720, "langs": ["Svelte", "JavaScript"], "imports_out": 1, "imports_in": 0, "sample_files": ["archive/cancel/+page.svelte", "archive/success/+page.svelte", "archive/coming-soon/+page.svelte", "archive/preorder/+page.svelte", "archive/preorder/+page.server.js"]}, {"id": "manuscript/solarpunk-source", "files": 5, "loc": 1285, "langs": ["Text", "Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["manuscript/solarpunk-source/02-easygrow-homestead-dirksen.txt", "manuscript/solarpunk-source/01-sector07-photobioreactor.txt", "manuscript/solarpunk-source/03-kyle-gabriel-automated-hydroponics.txt", "manuscript/solarpunk-source/EDITORIAL-NOTE-solarpunk-tone.md", "manuscript/solarpunk-source/04-sananbio-uplift-promo.txt"]}, {"id": "src/routes", "files": 5, "loc": 1887, "langs": ["Svelte", "JavaScript"], "imports_out": 11, "imports_in": 0, "sample_files": ["src/routes/+page.svelte", "src/routes/+layout.svelte", "src/routes/+error.svelte", "src/routes/+layout.server.js", "src/routes/+page.server.js"]}, {"id": "src/lib", "files": 4, "loc": 483, "langs": ["JavaScript"], "imports_out": 1, "imports_in": 22, "sample_files": ["src/lib/offer.js", "src/lib/bookContent.js", "src/lib/bookAccessCode.js", "src/lib/consent.js"]}, {"id": "src/routes/early-access", "files": 4, "loc": 1526, "langs": ["JavaScript", "Svelte"], "imports_out": 11, "imports_in": 0, "sample_files": ["src/routes/early-access/+page.svelte", "src/routes/early-access/success/+page.svelte", "src/routes/early-access/success/+page.server.js", "src/routes/early-access/+page.server.js"]}, {"id": "redesign", "files": 3, "loc": 3709, "langs": ["HTML"], "imports_out": 0, "imports_in": 0, "sample_files": ["redesign/index.html", "redesign/early-access/index.html", "redesign/why.html"]}, {"id": "src", "files": 3, "loc": 170, "langs": ["CSS", "HTML", "JavaScript"], "imports_out": 0, "imports_in": 1, "sample_files": ["src/app.css", "src/hooks.server.js", "src/app.html"]}, {"id": ".github", "files": 2, "loc": 171, "langs": ["YAML"], "imports_out": 0, "imports_in": 0, "sample_files": [".github/workflows/stripe-guard.yml", ".github/workflows/signals-sweep.yml"]}, {"id": "src/lib/assets", "files": 2, "loc": 236, "langs": ["Svelte", "Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["src/lib/assets/StyleGuide.md", "src/lib/assets/Icons.svelte"]}, {"id": "src/lib/components/ads", "files": 2, "loc": 1092, "langs": ["Svelte"], "imports_out": 0, "imports_in": 2, "sample_files": ["src/lib/components/ads/TreasureTavernAd.svelte", "src/lib/components/ads/MysteryBoxAd.svelte"]}, {"id": "src/lib/content", "files": 2, "loc": 214, "langs": ["Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["src/lib/content/README.md", "src/lib/content/blog/darpa-biomechanical-space-structures.md"]}, {"id": "src/lib/templates", "files": 2, "loc": 38, "langs": ["Markdown", "JavaScript"], "imports_out": 0, "imports_in": 0, "sample_files": ["src/lib/templates/blog-post-template/content.md", "src/lib/templates/blog-post-template/index.js"]}, {"id": "src/routes/read", "files": 2, "loc": 834, "langs": ["Svelte"], "imports_out": 6, "imports_in": 0, "sample_files": ["src/routes/read/+page.svelte", "src/routes/read/+layout.svelte"]}, {"id": "src/routes/signals", "files": 2, "loc": 539, "langs": ["JavaScript", "Svelte"], "imports_out": 1, "imports_in": 0, "sample_files": ["src/routes/signals/+page.svelte", "src/routes/signals/+page.server.js"]}, {"id": "src/routes/unsubscribe", "files": 2, "loc": 239, "langs": ["JavaScript", "Svelte"], "imports_out": 1, "imports_in": 0, "sample_files": ["src/routes/unsubscribe/+page.svelte", "src/routes/unsubscribe/+page.server.js"]}, {"id": "cursor", "files": 1, "loc": 54, "langs": ["Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["cursor/devlog.md"]}, {"id": "manuscript/bonus", "files": 1, "loc": 68, "langs": ["Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["manuscript/bonus/START-HERE.md"]}, {"id": "manuscript/drafts", "files": 1, "loc": 45, "langs": ["Markdown"], "imports_out": 0, "imports_in": 0, "sample_files": ["manuscript/drafts/draft-egalitarian-pivot.md"]}], "edges": [{"from": "src/routes/blog", "to": "src/lib/components", "count": 33}, {"from": "src/routes/api", "to": "src/lib/server", "count": 28}, {"from": "src/lib/archive", "to": "src/lib/components", "count": 8}, {"from": "src/routes", "to": "src/lib/components", "count": 8}, {"from": "src/routes/book", "to": "src/lib/components", "count": 6}, {"from": "src/lib/components", "to": "src/lib", "count": 4}, {"from": "src/lib/components", "to": "src/lib/stores", "count": 4}, {"from": "src/routes/book", "to": "src/lib/stores", "count": 4}, {"from": "src/routes/early-access", "to": "src/lib/server", "count": 4}, {"from": "src/routes/blog", "to": "src/lib/data/blog-posts", "count": 3}, {"from": "src/routes/book", "to": "src/lib", "count": 3}, {"from": "src/routes/checklist", "to": "src/lib/components", "count": 3}, {"from": "src/routes/early-access", "to": "src/lib", "count": 3}, {"from": "src/routes/exclusive-friends-only", "to": "src/lib", "count": 3}, {"from": "src/routes/read", "to": "src/lib/stores", "count": 3}, {"from": "tests", "to": "src/lib/server", "count": 3}, {"from": "src/lib/components", "to": "src/lib/components/ads", "count": 2}, {"from": "src/lib/components", "to": "src/lib/data", "count": 2}, {"from": "src/lib/server", "to": "src/lib", "count": 2}, {"from": "src/routes/book", "to": "src/lib/utils", "count": 2}, {"from": "src/routes/early-access", "to": "src/lib/data", "count": 2}, {"from": "src/routes/early-access", "to": "src/lib/components", "count": 2}, {"from": "archive", "to": "src/lib/components", "count": 1}, {"from": "src/lib/archive", "to": "src/lib/stores", "count": 1}, {"from": "src/lib/archive", "to": "src/lib/data", "count": 1}, {"from": "src/lib/archive", "to": "src/lib/data/blog-posts", "count": 1}, {"from": "src/lib", "to": "src/lib/data/book", "count": 1}, {"from": "src/lib/components", "to": "src/lib/components/ui", "count": 1}, {"from": "src/lib/components", "to": "src/lib/debug", "count": 1}, {"from": "src/routes", "to": "src/lib/debug", "count": 1}, {"from": "src/routes", "to": "src", "count": 1}, {"from": "src/routes", "to": "src/lib", "count": 1}, {"from": "src/routes/about", "to": "src/lib", "count": 1}, {"from": "src/routes/about", "to": "src/lib/components", "count": 1}, {"from": "src/routes/api", "to": "src/lib/data", "count": 1}, {"from": "src/routes/book", "to": "src/lib/components/interactives", "count": 1}, {"from": "src/routes/checklist", "to": "src/lib", "count": 1}, {"from": "src/routes/exclusive-friends-only", "to": "src/lib/stores", "count": 1}, {"from": "src/routes/exclusive-friends-only", "to": "src/lib/components", "count": 1}, {"from": "src/routes/policies", "to": "src/lib", "count": 1}, {"from": "src/routes/read", "to": "src/lib/components", "count": 1}, {"from": "src/routes/read", "to": "src/lib", "count": 1}, {"from": "src/routes/read", "to": "src/lib/data/book", "count": 1}, {"from": "src/routes/signals", "to": "src/lib/data", "count": 1}, {"from": "src/routes/sitemap.xml", "to": "src/lib", "count": 1}, {"from": "src/routes/terms", "to": "src/lib", "count": 1}, {"from": "src/routes/unsubscribe", "to": "src/lib/server", "count": 1}], "manifests": [{"file": "package.json", "kind": "node", "summary": {"name": "my-app", "version": "0.0.1", "type": "module", "main": null, "bin": [], "scripts": {"dev": "vite dev", "prebuild": "node scripts/check-offer-drift.mjs && node work_efforts/12_image_optimization_enhancements/image_build_hook.js", "build": "vite build", "check:offer": "node scripts/check-offer-drift.mjs", "preview": "vite preview", "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json", "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch", "create-blog": "node scripts/create-blog-post.js", "optimize-images": "node work_efforts/12_image_optimization_enhancements/image_build_hook.js"}, "workspaces": null}}, {"file": "svelte.config.js", "kind": "framework"}, {"file": "tailwind.config.js", "kind": "build"}, {"file": "vite.config.js", "kind": "build"}], "dependencies": {"runtime": ["@supabase/server", "@supabase/ssr", "@supabase/supabase-js", "@tailwindcss/typography", "chart.js", "date-fns", "dotenv", "flowbite", "flowbite-svelte", "flowbite-svelte-icons", "gray-matter", "isomorphic-dompurify", "katex", "marked", "papaparse", "pdfjs-dist", "remark", "remark-html", "remark-parse", "resend", "slugify", "stripe", "svelte-typewriter", "three", "unified", "unist-util-visit"], "dev": ["@fontsource/fira-mono", "@neoconfetti/svelte", "@playwright/test", "@sveltejs/adapter-auto", "@sveltejs/kit", "@sveltejs/vite-plugin-svelte", "autoprefixer", "glob", "mdsvex", "postcss", "sharp", "svelte", "tailwindcss", "vite", "vite-imagetools"], "external_imports": [{"name": "svelte", "sites": 72}, {"name": "@sveltejs/kit", "sites": 18}, {"name": "@playwright/test", "sites": 13}, {"name": "urllib", "sites": 8}, {"name": "marked", "sites": 7}, {"name": "pathlib", "sites": 6}, {"name": "json", "sites": 6}, {"name": "flowbite-svelte", "sites": 5}, {"name": "argparse", "sites": 5}, {"name": "sys", "sites": 5}, {"name": "datetime", "sites": 5}, {"name": "time", "sites": 5}, {"name": "subprocess", "sites": 4}, {"name": "__future__", "sites": 3}, {"name": "re", "sites": 3}, {"name": "collections", "sites": 3}, {"name": "rich", "sites": 3}, {"name": "papaparse", "sites": 3}, {"name": "isomorphic-dompurify", "sites": 3}, {"name": "stripe", "sites": 3}, {"name": "shutil", "sites": 2}, {"name": "path", "sites": 2}, {"name": "url", "sites": 2}, {"name": "fs", "sites": 2}, {"name": "os", "sites": 2}, {"name": "ddgs", "sites": 2}, {"name": "duckduckgo_search", "sites": 2}, {"name": "PIL", "sites": 2}, {"name": "@supabase/supabase-js", "sites": 2}, {"name": "katex", "sites": 2}, {"name": "textwrap", "sites": 1}, {"name": "zipfile", "sites": 1}, {"name": "weasyprint", "sites": 1}, {"name": "markdown", "sites": 1}, {"name": "hashlib", "sites": 1}, {"name": "hmac", "sites": 1}, {"name": "html", "sites": 1}, {"name": "tempfile", "sites": 1}, {"name": "ast", "sites": 1}, {"name": "operator", "sites": 1}, {"name": "xml", "sites": 1}, {"name": "math", "sites": 1}, {"name": "resend", "sites": 1}, {"name": "the pipeline is down", "sites": 1}, {"name": "gray-matter", "sites": 1}, {"name": "signature did not match", "sites": 1}, {"name": "@sveltejs/vite-plugin-svelte", "sites": 1}, {"name": "@sveltejs/adapter-auto", "sites": 1}, {"name": "mdsvex", "sites": 1}, {"name": "@tailwindcss/typography", "sites": 1}, {"name": "tailwindcss", "sites": 1}, {"name": "flowbite", "sites": 1}, {"name": "vite", "sites": 1}, {"name": "vite-imagetools", "sites": 1}, {"name": "sharp", "sites": 1}, {"name": "glob", "sites": 1}]}, "scripts": {"dev": "vite dev", "prebuild": "node scripts/check-offer-drift.mjs && node work_efforts/12_image_optimization_enhancements/image_build_hook.js", "build": "vite build", "check:offer": "node scripts/check-offer-drift.mjs", "preview": "vite preview", "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json", "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch", "create-blog": "node scripts/create-blog-post.js", "optimize-images": "node work_efforts/12_image_optimization_enhancements/image_build_hook.js"}, "entrypoints": [{"path": "scripts/sts.py", "why": "has __main__ guard", "loc": 4535}, {"path": "redesign/index.html", "why": "static entrypoint", "loc": 2820}, {"path": "scripts/build_bonus.py", "why": "has __main__ guard", "loc": 566}, {"path": "scripts/sweep_signals.py", "why": "has __main__ guard", "loc": 406}, {"path": "scripts/generate_sample_pdf.py", "why": "has __main__ guard", "loc": 318}, {"path": "scripts/find_book_sources.py", "why": "has __main__ guard", "loc": 232}, {"path": "scripts/research.py", "why": "has __main__ guard", "loc": 154}, {"path": "scripts/book_image_dimensions.py", "why": "has __main__ guard", "loc": 96}, {"path": "redesign/early-access/index.html", "why": "static entrypoint", "loc": 521}, {"path": "tests/reports/html/index.html", "why": "static entrypoint", "loc": 85}], "services": [{"name": "Svelte", "category": "ui", "package": "svelte", "import_sites": 72}, {"name": "SvelteKit", "category": "ui", "package": "@sveltejs/kit", "import_sites": 18}, {"name": "Playwright", "category": "test", "package": "@playwright/test", "import_sites": 13}, {"name": "Stripe", "category": "payments", "package": "stripe", "import_sites": 3}, {"name": "Supabase", "category": "database", "package": "@supabase/supabase-js", "import_sites": 2}, {"name": "Resend", "category": "email", "package": "resend", "import_sites": 1}, {"name": "Tailwind", "category": "ui", "package": "tailwindcss", "import_sites": 1}, {"name": "Vite", "category": "build", "package": "vite", "import_sites": 1}, {"name": "three.js", "category": "ui", "package": "three", "import_sites": 0}], "env_vars": [{"name": "STRIPE_SECRET_KEY", "sites": 3}, {"name": "WORKDIR", "sites": 2}, {"name": "DOWNLOAD_BUCKET", "sites": 2}, {"name": "DOWNLOAD_BUNDLE_PATH", "sites": 2}, {"name": "SUPABASE_URL", "sites": 2}, {"name": "SUPABASE_SERVICE_KEY", "sites": 2}, {"name": "RESEND_API_KEY", "sites": 1}, {"name": "EMAIL_FROM", "sites": 1}, {"name": "MASTER_DISCOUNT_CODE", "sites": 1}, {"name": "PUBLIC_BASE_URL", "sites": 1}, {"name": "TEST_REPEAT_PURCHASE_EMAIL", "sites": 1}, {"name": "ADMIN_RECONCILE_TOKEN", "sites": 1}, {"name": "STRIPE_PRICE_ID", "sites": 1}, {"name": "STRIPE_PRICE_ID_STANDARD", "sites": 1}, {"name": "STRIPE_PRICE_ID_AUTHORS", "sites": 1}, {"name": "ALLOW_PROMOTION_CODES", "sites": 1}, {"name": "RESEND_WEBHOOK_SECRET", "sites": 1}, {"name": "STRIPE_WEBHOOK_SECRET", "sites": 1}], "tests": {"files": 16, "sample": ["docs/architecture.spec.json", "src/lib/utils/tests/markdownParser.test.js", "tests/e2e/a-stability.spec.js", "tests/e2e/b-security.spec.js", "tests/e2e/c-speed.spec.js", "tests/e2e/d-device-compliance.spec.js", "tests/e2e/e-mobile-design.spec.js", "tests/e2e/f-legal-compliance.spec.js", "tests/e2e/g-user-profiles.spec.js", "tests/e2e/h-usability.spec.js", "tests/e2e/i-checkout-gate.spec.js", "tests/e2e/j-webhook-event-policy.spec.js"]}, "docs": ["AUDITOR-BRIEF.md", "CLAUDE.md", "PROJECT-STATUS.md", "README.md", "REFS-DESIGN.md", "RELEASES.md", "SITEMAP.md", "STRIPE-GO-LIVE.md", "V0.7.3-SCOPE.md", "V0.7.4-SCOPE.md", "cursor/devlog.md", "devlog.md", "docs/ARCHITECTURE.md", "docs/EMAIL-FUNNEL.md", "docs/HARDENING-HANDOFF.md", "docs/PREORDER-ROADMAP.md", "docs/PROJECT-STATUS.md", "docs/contributing/CONTRIBUTING.md", "docs/contributing/README.md", "docs/contributing/SECURITY.md", "docs/contributing/STYLE_GUIDE.md", "docs/contributing/SUPABASE_SECURITY.md", "docs/verification-ledger-2026-07-29.md", "docs/work-orders-2026-07-28.md", "manuscript/ART-CATALOG.md", "manuscript/CHAPTER-AGENT-PRIMER.md", "manuscript/CONTINUATION-2026-07-20.md", "manuscript/EDITORIAL-DOSSIER-2026-07-12.md", "manuscript/EDITORIAL-QUEUE.md", "manuscript/HISTORY-CASEBOOK.md"], "largest_files": [{"path": "src/lib/data/book/manuscript-index.json", "loc": 23494}, {"path": "package-lock.json", "loc": 5956}, {"path": "manuscript/StS-Complete-Draft-v0.0.9.md", "loc": 5156}, {"path": "manuscript/StS-Complete-Draft-v0.0.8.md", "loc": 5103}, {"path": "manuscript/StS-Complete-Draft-v0.0.7.md", "loc": 4928}, {"path": "manuscript/StS-Complete-Draft-compiled-2026-07-21.md", "loc": 4672}, {"path": "manuscript/StS-Complete-Draft-compiled-2026-07-20.md", "loc": 4588}, {"path": "manuscript/StS-Complete-Draft-compiled-2026-07-19.md", "loc": 4560}, {"path": "scripts/sts.py", "loc": 4535}, {"path": "manuscript/StS-Complete-Draft-v0.0.6.md", "loc": 3715}, {"path": "manuscript/StS-Complete-Draft-v0.0.5.md", "loc": 3672}, {"path": "tests/reports/results.json", "loc": 3539}, {"path": "manuscript/StS-Complete-Draft-v0.0.3.md", "loc": 3442}, {"path": "manuscript/sources/STS-Draft5-google-doc.md", "loc": 3062}, {"path": "redesign/index.html", "loc": 2820}, {"path": "src/lib/data/book/art-catalog.json", "loc": 2398}, {"path": "static/images/optimized/manifest.json", "loc": 1971}, {"path": "docs/architecture.html", "loc": 1856}, {"path": "manuscript/StS-Complete-Draft-v0.0.1.md", "loc": 1734}, {"path": "src/lib/data/signals.json", "loc": 1519}]}</script>
+
+<style>
+  svg.many .edge-label{opacity:0;transition:opacity .2s ease}
+  svg.many .edge-label.on{opacity:1}
+</style>
+<script>
+/* ------------------------------------------------------------------ *
+ * architecture engine: layout, render, animate, explain.
+ * The spec describes the system semantically. Every coordinate on the
+ * page is computed here, so a spec can never produce overlapping boxes.
+ * ------------------------------------------------------------------ */
+(function () {
+  "use strict";
+
+  /* Headless probe hook. A screenshot catches too few animation frames to show
+     motion, so the verification recipe rewrites this one line to a large number
+     and shoots that copy instead. Keep the declaration on its own line, and do
+     not repeat the literal anywhere else in this file or sed will hit both. */
+  var SPEED = 1;
+
+  var L = {
+    W: 1280, PADX: 24, LABEL: 150,
+    NODE_W: 178, NODE_H: 68, GAPX: 20, GAPY: 16,
+    BAND_PAD: 20, LAYER_GAP: 42
+  };
+  var CONTENT = L.W - L.PADX * 2 - L.LABEL;
+  var PER_ROW = Math.max(1, Math.floor((CONTENT + L.GAPX) / (L.NODE_W + L.GAPX)));
+
+  var KINDS = {
+    entry:    { label: "entry",    v: "--k-entry" },
+    service:  { label: "service",  v: "--k-service" },
+    ui:       { label: "ui",       v: "--k-ui" },
+    data:     { label: "data",     v: "--k-data" },
+    external: { label: "external", v: "--k-external" },
+    build:    { label: "build",    v: "--k-build" },
+    config:   { label: "config",   v: "--k-config" },
+    lib:      { label: "lib",      v: "--k-lib" }
+  };
+  var EDGE_KINDS = { data: "data", call: "call", build: "build", event: "event" };
+
+  function readJSON(id) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var txt = (el.textContent || "").trim();
+    if (!txt || txt.charAt(0) === "_") return null;
+    try { return JSON.parse(txt); } catch (e) { return null; }
+  }
+
+  var spec = readJSON("arch-spec") || {};
+  var scan = readJSON("arch-scan");
+  var meta = spec.meta || {};
+  var layers = Array.isArray(spec.layers) ? spec.layers : [];
+  var nodes = Array.isArray(spec.nodes) ? spec.nodes : [];
+  var edges = Array.isArray(spec.edges) ? spec.edges : [];
+  var flows = Array.isArray(spec.flows) ? spec.flows : [];
+
+  var reduced = window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+  function num(n) {
+    return (typeof n === "number" && isFinite(n)) ? n.toLocaleString("en-US") : "";
+  }
+  function clip(s, max) {
+    s = String(s == null ? "" : s);
+    return s.length > max ? s.slice(0, Math.max(1, max - 1)) + "\u2026" : s;
+  }
+  function kindOf(n) { return KINDS[n && n.kind] ? n.kind : "service"; }
+
+  /* ---------------- layout ---------------- */
+
+  var placed = {};   // node id -> box
+  var bands = [];
+  var mapH = 0;
+
+  (function layout() {
+    var y = 0;
+    layers.forEach(function (layer, li) {
+      var mine = nodes.filter(function (n) { return n.layer === layer.id; });
+      var rows = [];
+      for (var i = 0; i < mine.length; i += PER_ROW) rows.push(mine.slice(i, i + PER_ROW));
+      var bandH = rows.length
+        ? rows.length * L.NODE_H + (rows.length - 1) * L.GAPY + L.BAND_PAD * 2
+        : 56;
+      rows.forEach(function (row, ri) {
+        var rowW = row.length * L.NODE_W + (row.length - 1) * L.GAPX;
+        var startX = L.PADX + L.LABEL + Math.max(0, (CONTENT - rowW) / 2);
+        row.forEach(function (n, ci) {
+          placed[n.id] = {
+            id: n.id, node: n, layer: li, row: ri, col: ci,
+            x: startX + ci * (L.NODE_W + L.GAPX),
+            y: y + L.BAND_PAD + ri * (L.NODE_H + L.GAPY),
+            w: L.NODE_W, h: L.NODE_H
+          };
+        });
+      });
+      bands.push({ layer: layer, y: y, h: bandH, index: li, rows: rows.length });
+      y += bandH + L.LAYER_GAP;
+    });
+    mapH = Math.max(160, y - L.LAYER_GAP);
+  })();
+
+  function edgePath(a, b) {
+    var ax = a.x + a.w / 2, bx = b.x + b.w / 2;
+    if (b.layer > a.layer) {
+      var y1 = a.y + a.h, y2 = b.y;
+      var dy = Math.max(22, (y2 - y1) * 0.48);
+      return "M" + ax + "," + y1 + " C" + ax + "," + (y1 + dy) +
+             " " + bx + "," + (y2 - dy) + " " + bx + "," + y2;
+    }
+    if (b.layer < a.layer) {
+      var u1 = a.y + a.h / 2, u2 = b.y + b.h / 2;
+      var out = Math.min(L.W - 10, Math.max(a.x + a.w, b.x + b.w) + 40);
+      return "M" + (a.x + a.w) + "," + u1 + " C" + out + "," + u1 +
+             " " + out + "," + u2 + " " + (b.x + b.w) + "," + u2;
+    }
+    var m1 = a.y + a.h / 2, m2 = b.y + b.h / 2;
+    if (a.row === b.row) {
+      if (bx > ax) {
+        return "M" + (a.x + a.w) + "," + m1 + " C" + (a.x + a.w + 32) + "," + m1 +
+               " " + (b.x - 32) + "," + m2 + " " + b.x + "," + m2;
+      }
+      return "M" + a.x + "," + m1 + " C" + (a.x - 32) + "," + m1 +
+             " " + (b.x + b.w + 32) + "," + m2 + " " + (b.x + b.w) + "," + m2;
+    }
+    var down = b.row > a.row;
+    var sy = down ? a.y + a.h : a.y;
+    var ey = down ? b.y : b.y + b.h;
+    var mid = (sy + ey) / 2;
+    return "M" + ax + "," + sy + " C" + ax + "," + mid +
+           " " + bx + "," + mid + " " + bx + "," + ey;
+  }
+
+  /* ---------------- svg render ---------------- */
+
+  var liveEdges = [];
+
+  function renderMap() {
+    var host = document.getElementById("map-scroll");
+    if (!host) return;
+    var s = [];
+    s.push('<svg viewBox="0 0 ' + L.W + ' ' + mapH + '" role="img" ' +
+           'aria-label="System architecture map" id="mapsvg">');
+
+    bands.forEach(function (b) {
+      s.push('<rect class="band-rect" x="' + L.PADX + '" y="' + b.y + '" width="' +
+             (L.W - L.PADX * 2) + '" height="' + b.h + '" rx="12"/>');
+      s.push('<text class="band-label" x="' + (L.PADX + 16) + '" y="' + (b.y + 26) + '">' +
+             esc(clip(b.layer.name, 20)) + '</text>');
+      if (b.layer.blurb) {
+        var words = String(b.layer.blurb).split(/\s+/);
+        var lines = [], cur = "";
+        words.forEach(function (w) {
+          if ((cur + " " + w).trim().length > 20) { lines.push(cur.trim()); cur = w; }
+          else { cur = (cur + " " + w).trim(); }
+        });
+        if (cur) lines.push(cur.trim());
+        lines.slice(0, 4).forEach(function (ln, i) {
+          s.push('<text class="band-blurb" x="' + (L.PADX + 16) + '" y="' +
+                 (b.y + 44 + i * 14) + '">' + esc(ln) + '</text>');
+        });
+      }
+    });
+
+    s.push('<g id="edgelayer">');
+    edges.forEach(function (e, i) {
+      var a = placed[e.from], b = placed[e.to];
+      if (!a || !b) return;
+      var k = EDGE_KINDS[e.kind] || "call";
+      var d = edgePath(a, b);
+      s.push('<path id="e' + i + '" class="edge k-' + k + '" d="' + d + '" ' +
+             'data-from="' + esc(e.from) + '" data-to="' + esc(e.to) + '"/>');
+      liveEdges.push({ i: i, from: e.from, to: e.to, kind: k, edge: e });
+    });
+    s.push("</g>");
+    s.push('<g id="dotlayer"></g>');
+    s.push('<g id="lbllayer"></g>');
+
+    nodes.forEach(function (n) {
+      var p = placed[n.id];
+      if (!p) return;
+      var k = kindOf(n);
+      var col = "var(" + KINDS[k].v + ")";
+      var sub = Array.isArray(n.tech) && n.tech.length
+        ? n.tech.join(" \u00b7 ")
+        : (n.loc ? num(n.loc) + " loc" : (n.files && n.files.length
+            ? n.files.length + " file" + (n.files.length === 1 ? "" : "s") : ""));
+      s.push('<g class="node-g" data-id="' + esc(n.id) + '" tabindex="0" role="button" ' +
+             'aria-label="' + esc(n.name) + '">');
+      s.push('<rect class="node-box" x="' + p.x + '" y="' + p.y + '" width="' + p.w +
+             '" height="' + p.h + '" rx="10"/>');
+      s.push('<rect class="node-accent" x="' + p.x + '" y="' + p.y + '" width="4" height="' +
+             p.h + '" rx="2" fill="' + col + '"/>');
+      s.push('<text class="node-title" x="' + (p.x + 14) + '" y="' + (p.y + 26) + '">' +
+             esc(clip(n.name, 21)) + '</text>');
+      if (sub) {
+        s.push('<text class="node-sub" x="' + (p.x + 14) + '" y="' + (p.y + 43) + '">' +
+               esc(clip(sub, 23)) + '</text>');
+      }
+      s.push('<text class="node-kind" x="' + (p.x + 14) + '" y="' + (p.y + 58) +
+             '" fill="' + col + '">' + esc(KINDS[k].label.toUpperCase()) + '</text>');
+      s.push("</g>");
+    });
+
+    s.push("</svg>");
+    host.innerHTML = s.join("");
+
+    var svg = document.getElementById("mapsvg");
+    if (!svg) return;
+    if (liveEdges.length > 16) svg.classList.add("many");
+
+    // edge labels need real geometry, so they go on after the paths exist
+    var lbl = document.getElementById("lbllayer");
+    liveEdges.forEach(function (le) {
+      if (!le.edge.label) return;
+      var path = document.getElementById("e" + le.i);
+      if (!path || !path.getPointAtLength) return;
+      var pt = path.getPointAtLength(path.getTotalLength() * 0.52);
+      var t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      t.setAttribute("class", "edge-label");
+      t.setAttribute("x", pt.x + 7);
+      t.setAttribute("y", pt.y - 5);
+      t.setAttribute("data-edge", String(le.i));
+      t.textContent = clip(le.edge.label, 26);
+      lbl.appendChild(t);
+    });
+
+    buildDots();
+    wireNodes(svg);
+  }
+
+  /* ---------------- travelling packets ---------------- */
+
+  var dots = [];
+  function buildDots() {
+    var layerEl = document.getElementById("dotlayer");
+    if (!layerEl) return;
+    var budget = 90;
+    var per = liveEdges.length > 24 ? 1 : 2;
+    liveEdges.forEach(function (le) {
+      var path = document.getElementById("e" + le.i);
+      if (!path || !path.getTotalLength) return;
+      var len = path.getTotalLength();
+      if (!len || !isFinite(len)) return;
+      for (var j = 0; j < per && budget > 0; j++) {
+        budget--;
+        var c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        c.setAttribute("class", "dot k-" + le.kind);
+        c.setAttribute("r", "3.1");
+        c.setAttribute("data-edge", String(le.i));
+        layerEl.appendChild(c);
+        dots.push({
+          el: c, path: path, len: len,
+          off: (j / per) + (le.i * 0.137) % 1,
+          rate: 0.55 + ((le.i * 37) % 45) / 100
+        });
+      }
+    });
+    placeDots(0);
+  }
+
+  function placeDots(phase) {
+    for (var i = 0; i < dots.length; i++) {
+      var d = dots[i];
+      var u = (phase * d.rate + d.off) % 1;
+      if (u < 0) u += 1;
+      var p = d.path.getPointAtLength(u * d.len);
+      d.el.setAttribute("transform", "translate(" + p.x.toFixed(1) + "," + p.y.toFixed(1) + ")");
+    }
+  }
+
+  var motionOn = !reduced;
+  var mapVisible = true;
+  var phase = 0, last = 0;
+  function tick(now) {
+    if (!last) last = now;
+    var dt = Math.min(80, now - last);
+    last = now;
+    if (motionOn && mapVisible && dots.length) {
+      phase += dt * 0.00007 * SPEED;
+      placeDots(phase);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------------- focus + detail ---------------- */
+
+  var selected = null;
+
+  function clearFocus() {
+    var svg = document.getElementById("mapsvg");
+    if (!svg) return;
+    svg.classList.remove("dim");
+    Array.prototype.forEach.call(svg.querySelectorAll(".on"), function (el) {
+      el.classList.remove("on");
+    });
+    Array.prototype.forEach.call(svg.querySelectorAll(".step"), function (el) {
+      el.classList.remove("step");
+    });
+    selected = null;
+    renderDetail(null);
+  }
+
+  function focusNode(id, opts) {
+    var svg = document.getElementById("mapsvg");
+    if (!svg) return;
+    var node = nodes.filter(function (n) { return n.id === id; })[0];
+    if (!node) return;
+    Array.prototype.forEach.call(svg.querySelectorAll(".on"), function (el) {
+      el.classList.remove("on");
+    });
+    svg.classList.add("dim");
+    var self = svg.querySelector('.node-g[data-id="' + cssEsc(id) + '"]');
+    if (self) self.classList.add("on");
+    liveEdges.forEach(function (le) {
+      if (le.from !== id && le.to !== id) return;
+      var p = document.getElementById("e" + le.i);
+      if (p) p.classList.add("on");
+      var other = le.from === id ? le.to : le.from;
+      var og = svg.querySelector('.node-g[data-id="' + cssEsc(other) + '"]');
+      if (og) og.classList.add("on");
+      Array.prototype.forEach.call(
+        svg.querySelectorAll('[data-edge="' + le.i + '"]'),
+        function (el) { el.classList.add("on"); }
+      );
+    });
+    selected = id;
+    renderDetail(node);
+    if (!opts || !opts.quiet) scrollNodeIntoView(id);
+  }
+
+  function cssEsc(s) { return String(s).replace(/["\\]/g, "\\$&"); }
+
+  function scrollNodeIntoView(id) {
+    var p = placed[id];
+    var box = document.getElementById("map-scroll");
+    if (!p || !box || box.scrollWidth <= box.clientWidth) return;
+    var scale = box.scrollWidth / L.W;
+    var target = (p.x + p.w / 2) * scale - box.clientWidth / 2;
+    box.scrollTo({ left: Math.max(0, target), behavior: reduced ? "auto" : "smooth" });
+  }
+
+  function nodeById(id) {
+    return nodes.filter(function (n) { return n.id === id; })[0] || null;
+  }
+
+  function renderDetail(node) {
+    var host = document.getElementById("detail");
+    if (!host) return;
+    if (!node) {
+      var counts = layers.map(function (l) {
+        var c = nodes.filter(function (n) { return n.layer === l.id; }).length;
+        return '<div><dt>' + esc(clip(l.name, 16)) + '</dt><dd>' + c +
+               ' part' + (c === 1 ? "" : "s") + '</dd></div>';
+      }).join("");
+      host.innerHTML =
+        '<h3>Pick a box</h3>' +
+        '<p class="muted">Click any block in the map to see what it is, which files ' +
+        'it owns, and every other part it is wired to.</p>' +
+        '<dl class="dl">' + counts + '</dl>' +
+        '<p class="muted" style="margin-top:.8rem;font-size:.82rem">' +
+        esc(nodes.length) + ' parts, ' + esc(liveEdges.length) + ' dependencies.</p>';
+      return;
+    }
+    var k = kindOf(node);
+    var ins = liveEdges.filter(function (e) { return e.to === node.id; });
+    var outs = liveEdges.filter(function (e) { return e.from === node.id; });
+    var layer = layers.filter(function (l) { return l.id === node.layer; })[0];
+    var h = [];
+    h.push('<p class="kindtag" style="color:var(' + KINDS[k].v + ')">' +
+           esc(KINDS[k].label) + (layer ? " / " + esc(layer.name) : "") + '</p>');
+    h.push("<h3>" + esc(node.name) + "</h3>");
+    if (node.blurb) h.push("<p>" + esc(node.blurb) + "</p>");
+    if (node.detail) h.push('<p class="muted">' + esc(node.detail) + "</p>");
+    if (Array.isArray(node.tech) && node.tech.length) {
+      h.push('<div class="chiprow">' + node.tech.map(function (t) {
+        return '<span class="chip">' + esc(t) + "</span>";
+      }).join("") + "</div>");
+    }
+    var rows = [];
+    if (node.loc) rows.push(["lines", num(node.loc)]);
+    if (node.fileCount) rows.push(["files", num(node.fileCount)]);
+    rows.push(["depends on", outs.length ? outs.map(function (e) {
+      var t = nodeById(e.to); return t ? t.name : e.to;
+    }).join(", ") : "nothing here"]);
+    rows.push(["used by", ins.length ? ins.map(function (e) {
+      var t = nodeById(e.from); return t ? t.name : e.from;
+    }).join(", ") : "nothing here"]);
+    if (node.verified === false) rows.push(["confidence", "inferred, not verified"]);
+    h.push('<dl class="dl">' + rows.map(function (r) {
+      return "<div><dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd></div>";
+    }).join("") + "</dl>");
+    if (Array.isArray(node.files) && node.files.length) {
+      h.push('<p class="kindtag muted" style="margin:.9rem 0 .1rem">files</p>');
+      h.push('<ul class="files">' + node.files.slice(0, 14).map(function (f) {
+        return "<li>" + esc(f) + "</li>";
+      }).join("") + "</ul>");
+    }
+    host.innerHTML = h.join("");
+  }
+
+  function wireNodes(svg) {
+    Array.prototype.forEach.call(svg.querySelectorAll(".node-g"), function (g) {
+      var id = g.getAttribute("data-id");
+      g.addEventListener("click", function () {
+        if (selected === id) { clearFocus(); } else { focusNode(id, { quiet: true }); }
+      });
+      g.addEventListener("keydown", function (ev) {
+        if (ev.key === "Enter" || ev.key === " ") {
+          ev.preventDefault();
+          if (selected === id) { clearFocus(); } else { focusNode(id, { quiet: true }); }
+        }
+      });
+    });
+  }
+
+  /* ---------------- flows ---------------- */
+
+  var flowTimer = null, flowIndex = -1, activeFlow = null;
+
+  function stopFlow() {
+    if (flowTimer) { clearTimeout(flowTimer); flowTimer = null; }
+  }
+
+  function selectFlow(flow, autoplay) {
+    stopFlow();
+    activeFlow = flow;
+    Array.prototype.forEach.call(
+      document.querySelectorAll("#flow-tabs .btn"),
+      function (b) { b.classList.toggle("on", b.getAttribute("data-flow") === flow.id); }
+    );
+    var host = document.getElementById("flow-steps");
+    host.innerHTML = (flow.steps || []).map(function (st, i) {
+      var n = nodeById(st.node);
+      return '<li data-i="' + i + '"><b>' + esc(st.title || (n ? n.name : "Step " + (i + 1))) +
+        "</b>" + (st.text ? "<p>" + esc(st.text) + "</p>" : "") +
+        (st.file ? '<p class="fileref">' + esc(st.file) + "</p>" : "") +
+        (n ? '<p class="muted" style="font-size:.78rem">in ' + esc(n.name) + "</p>" : "") +
+        "</li>";
+    }).join("");
+    Array.prototype.forEach.call(host.querySelectorAll("li"), function (li) {
+      li.addEventListener("click", function () {
+        stopFlow();
+        showStep(parseInt(li.getAttribute("data-i"), 10));
+      });
+    });
+    var note = document.getElementById("flow-note");
+    note.innerHTML = "<h3>" + esc(flow.name) + "</h3>" +
+      (flow.blurb ? "<p>" + esc(flow.blurb) + "</p>" : "") +
+      '<div class="chiprow"><button class="btn" type="button" id="flow-play">replay</button>' +
+      '<button class="btn" type="button" id="flow-stop">stop</button></div>';
+    document.getElementById("flow-play").addEventListener("click", function () {
+      flowIndex = -1; stopFlow(); advance();
+    });
+    document.getElementById("flow-stop").addEventListener("click", function () {
+      stopFlow(); clearFocus();
+    });
+    flowIndex = -1;
+    // On first paint the map stays whole. Dimming it before anyone has asked a
+    // question hides the very thing the section exists to show.
+    if (autoplay && !reduced) { advance(); }
+    else { markStepList(0); }
+  }
+
+  function markStepList(i) {
+    flowIndex = i;
+    Array.prototype.forEach.call(
+      document.querySelectorAll("#flow-steps li"),
+      function (li, j) { li.classList.toggle("on", j === i); }
+    );
+  }
+
+  function showStep(i) {
+    if (!activeFlow || !activeFlow.steps || !activeFlow.steps[i]) return;
+    markStepList(i);
+    var st = activeFlow.steps[i];
+    if (st.node && placed[st.node]) {
+      focusNode(st.node);
+      var svg = document.getElementById("mapsvg");
+      var g = svg && svg.querySelector('.node-g[data-id="' + cssEsc(st.node) + '"]');
+      Array.prototype.forEach.call(
+        svg ? svg.querySelectorAll(".step") : [],
+        function (el) { el.classList.remove("step"); }
+      );
+      if (g) g.classList.add("step");
+    }
+  }
+
+  function advance() {
+    if (!activeFlow) return;
+    var steps = activeFlow.steps || [];
+    flowIndex += 1;
+    if (flowIndex >= steps.length) { flowIndex = steps.length - 1; return; }
+    showStep(flowIndex);
+    if (flowIndex < steps.length - 1) {
+      flowTimer = setTimeout(advance, Math.round(1900 / Math.max(1, SPEED / 8 || 1)));
+    }
+  }
+
+  function renderFlows() {
+    var tabs = document.getElementById("flow-tabs");
+    var sec = document.getElementById("flows");
+    if (!flows.length) { if (sec) sec.style.display = "none"; return; }
+    tabs.innerHTML = flows.map(function (f) {
+      return '<button class="btn" type="button" data-flow="' + esc(f.id) + '">' +
+        esc(f.name) + "</button>";
+    }).join("");
+    Array.prototype.forEach.call(tabs.querySelectorAll(".btn"), function (b) {
+      b.addEventListener("click", function () {
+        var f = flows.filter(function (x) { return x.id === b.getAttribute("data-flow"); })[0];
+        if (f) selectFlow(f, true);
+      });
+    });
+    selectFlow(flows[0], false);
+  }
+
+  /* ---------------- content sections ---------------- */
+
+  function renderHero() {
+    setText("hero-eyebrow", meta.eyebrow || "architecture");
+    setText("hero-title", meta.title || "System architecture");
+    setText("hero-tagline", meta.tagline || "");
+    var facts = Array.isArray(spec.facts) ? spec.facts : [];
+    var host = document.getElementById("hero-facts");
+    if (host) {
+      host.innerHTML = facts.map(function (f) {
+        return '<li class="fact"><span>' + esc(f.label) + "</span><b>" + esc(f.value) +
+          "</b>" + (f.note ? "<em>" + esc(f.note) + "</em>" : "") + "</li>";
+      }).join("");
+    }
+    setText("foot-line", meta.footer || "");
+    var bits = [];
+    if (meta.root) bits.push(meta.root);
+    if (meta.generated) bits.push("generated " + meta.generated);
+    if (scan && scan.git && scan.git.head) {
+      bits.push("at " + scan.git.head + (scan.git.branch ? " on " + scan.git.branch : ""));
+    }
+    setText("foot-meta", bits.join("  \u00b7  "));
+    document.title = meta.title ? meta.title + " \u2014 architecture" : document.title;
+  }
+
+  function setText(id, txt) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = txt || "";
+  }
+
+  function renderLegend() {
+    var used = {};
+    nodes.forEach(function (n) { used[kindOf(n)] = true; });
+    var host = document.getElementById("map-legend");
+    if (!host) return;
+    host.innerHTML = Object.keys(KINDS).filter(function (k) { return used[k]; })
+      .map(function (k) {
+        return '<li><i style="background:var(' + KINDS[k].v + ')"></i>' +
+          esc(KINDS[k].label) + "</li>";
+      }).join("");
+  }
+
+  function renderModules() {
+    var host = document.getElementById("module-cards");
+    var sec = document.getElementById("modules");
+    if (!host) return;
+    if (!nodes.length) { if (sec) sec.style.display = "none"; return; }
+    host.innerHTML = layers.map(function (l) {
+      var mine = nodes.filter(function (n) { return n.layer === l.id; });
+      if (!mine.length) return "";
+      return mine.map(function (n) {
+        var k = kindOf(n);
+        var outs = liveEdges.filter(function (e) { return e.from === n.id; }).length;
+        var ins = liveEdges.filter(function (e) { return e.to === n.id; }).length;
+        return '<div class="card rv" data-node="' + esc(n.id) + '" ' +
+          'style="border-top:3px solid var(' + KINDS[k].v + ')">' +
+          '<p class="kindtag muted" style="font-size:.64rem;letter-spacing:.1em;' +
+          'text-transform:uppercase">' + esc(l.name) + " / " + esc(KINDS[k].label) + "</p>" +
+          "<h3>" + esc(n.name) + "</h3>" +
+          (n.blurb ? "<p>" + esc(n.blurb) + "</p>" : "") +
+          '<div class="chiprow">' +
+          (n.loc ? '<span class="chip">' + num(n.loc) + " loc</span>" : "") +
+          '<span class="chip">' + outs + " out</span>" +
+          '<span class="chip">' + ins + " in</span>" +
+          (n.verified === false ? '<span class="chip">inferred</span>' : "") +
+          "</div>" +
+          (Array.isArray(n.files) && n.files.length
+            ? '<ul class="files">' + n.files.slice(0, 5).map(function (f) {
+                return "<li>" + esc(f) + "</li>";
+              }).join("") + "</ul>"
+            : "") +
+          "</div>";
+      }).join("");
+    }).join("");
+    Array.prototype.forEach.call(host.querySelectorAll(".card"), function (c) {
+      c.addEventListener("click", function () {
+        var id = c.getAttribute("data-node");
+        document.getElementById("map").scrollIntoView({
+          behavior: reduced ? "auto" : "smooth", block: "start"
+        });
+        setTimeout(function () { focusNode(id); }, reduced ? 0 : 420);
+      });
+      c.style.cursor = "pointer";
+    });
+  }
+
+  function renderState() {
+    var host = document.getElementById("state-cards");
+    var sec = document.getElementById("state");
+    var items = Array.isArray(spec.state) ? spec.state : [];
+    if (!items.length) { if (sec) sec.style.display = "none"; return; }
+    host.innerHTML = items.map(function (s) {
+      return '<div class="card rv">' +
+        '<p class="kindtag muted" style="font-size:.64rem;letter-spacing:.1em;' +
+        'text-transform:uppercase">' + esc(s.kind || "store") + "</p>" +
+        "<h3>" + esc(s.name) + "</h3>" +
+        (s.blurb ? "<p>" + esc(s.blurb) + "</p>" : "") +
+        (s.where ? '<div class="chiprow"><span class="chip">' + esc(s.where) +
+          "</span></div>" : "") +
+        (Array.isArray(s.files) && s.files.length
+          ? '<ul class="files">' + s.files.slice(0, 6).map(function (f) {
+              return "<li>" + esc(f) + "</li>";
+            }).join("") + "</ul>"
+          : "") +
+        "</div>";
+    }).join("");
+  }
+
+  function renderSeams() {
+    var host = document.getElementById("seam-cards");
+    var sec = document.getElementById("seams");
+    var items = Array.isArray(spec.seams) ? spec.seams : [];
+    if (!items.length) { if (sec) sec.style.display = "none"; return; }
+    host.innerHTML = items.map(function (s) {
+      var risk = ["low", "medium", "high"].indexOf(s.risk) >= 0 ? s.risk : "low";
+      return '<div class="card rv">' +
+        '<p class="kindtag risk-' + risk + '" style="font-size:.64rem;letter-spacing:.1em;' +
+        'text-transform:uppercase">' + esc(risk) + " risk</p>" +
+        "<h3>" + esc(s.title) + "</h3>" +
+        (s.text ? "<p>" + esc(s.text) + "</p>" : "") +
+        (Array.isArray(s.files) && s.files.length
+          ? '<ul class="files">' + s.files.slice(0, 6).map(function (f) {
+              return "<li>" + esc(f) + "</li>";
+            }).join("") + "</ul>"
+          : "") +
+        "</div>";
+    }).join("");
+  }
+
+  function renderStackCards() {
+    var host = document.getElementById("stack-cards");
+    if (!host) return;
+    var cards = Array.isArray(spec.stackNotes) ? spec.stackNotes : [];
+    if (!cards.length) {
+      cards = layers.map(function (l) {
+        var mine = nodes.filter(function (n) { return n.layer === l.id; });
+        var lead = String(l.blurb || "").trim();
+        if (lead && !/[.!?]$/.test(lead)) lead += ".";
+        return {
+          title: l.name,
+          text: (lead ? lead + " " : "") + (mine.length
+            ? "Holds " + mine.length + " part" + (mine.length === 1 ? "" : "s") + ": " +
+              mine.map(function (n) { return n.name; }).join(", ") + "."
+            : "Nothing sits here yet.")
+        };
+      });
+    }
+    host.innerHTML = cards.map(function (c) {
+      return '<div class="card rv"><h3>' + esc(c.title) + "</h3><p>" +
+        esc(c.text) + "</p></div>";
+    }).join("");
+  }
+
+  function renderTrust() {
+    var host = document.getElementById("trust-cards");
+    var sec = document.getElementById("trust");
+    var g = spec.ground || {};
+    var groups = [
+      ["v", "Verified", g.verified, "Read or measured this session."],
+      ["i", "Inferred", g.inferred, "Reasoned from naming and structure, not confirmed."],
+      ["u", "Unknown", g.unknown, "Open questions this map cannot answer."]
+    ].filter(function (x) { return Array.isArray(x[2]) && x[2].length; });
+    if (!groups.length) { if (sec) sec.style.display = "none"; return; }
+    host.innerHTML = groups.map(function (x) {
+      return '<div class="card rv ' + x[0] + '"><h3>' + x[1] + "</h3>" +
+        '<p class="muted" style="font-size:.82rem">' + x[3] + "</p><ul>" +
+        x[2].map(function (i) { return "<li>" + esc(i) + "</li>"; }).join("") +
+        "</ul></div>";
+    }).join("");
+  }
+
+  function renderMeasured() {
+    var sec = document.getElementById("measured");
+    var host = document.getElementById("measured-body");
+    if (!scan || !scan.totals) { if (sec) sec.style.display = "none"; return; }
+    var t = scan.totals, g = scan.git || {};
+    var h = [];
+
+    var chips = [
+      ["files scanned", num(t.files)],
+      ["lines of code", num(t.loc)],
+      ["modules", num(t.modules)],
+      ["import edges", num(t.edges)]
+    ];
+    if (g.commits) chips.push(["commits", num(g.commits)]);
+    if (g.contributors) chips.push(["contributors", num(g.contributors)]);
+    if (typeof g.dirty === "number") chips.push(["uncommitted files", num(g.dirty)]);
+    h.push('<ul class="facts rv" style="margin:0 0 1.5rem">' + chips.map(function (c) {
+      return '<li class="fact"><span>' + esc(c[0]) + "</span><b>" + esc(c[1]) + "</b></li>";
+    }).join("") + "</ul>");
+
+    var langs = (scan.languages || []).slice(0, 9);
+    if (langs.length) {
+      var maxLoc = Math.max.apply(null, langs.map(function (l) { return l.loc || 0; })) || 1;
+      h.push('<h3 class="rv" style="margin:1.4rem 0 .6rem">Languages by volume</h3>');
+      h.push('<div class="tablewrap rv"><table><thead><tr><th>Language</th>' +
+        '<th class="num">Files</th><th class="num">Lines</th><th>Share</th></tr></thead><tbody>');
+      langs.forEach(function (l) {
+        h.push("<tr><td>" + esc(l.lang) + '</td><td class="num">' + num(l.files) +
+          '</td><td class="num">' + num(l.loc) + '</td><td><div class="bar" style="width:' +
+          Math.round((l.loc / maxLoc) * 100) + '%"></div></td></tr>');
+      });
+      h.push("</tbody></table></div>");
+    }
+
+    var mods = (scan.modules || []).slice(0, 12);
+    if (mods.length) {
+      h.push('<h3 class="rv" style="margin:1.6rem 0 .6rem">Biggest directories</h3>');
+      h.push('<div class="tablewrap rv"><table><thead><tr><th>Directory</th>' +
+        '<th class="num">Files</th><th class="num">Lines</th><th class="num">Imports out</th>' +
+        '<th class="num">Imported by</th></tr></thead><tbody>');
+      mods.forEach(function (m) {
+        h.push('<tr><td class="mono">' + esc(m.id) + '</td><td class="num">' + num(m.files) +
+          '</td><td class="num">' + num(m.loc) + '</td><td class="num">' + num(m.imports_out) +
+          '</td><td class="num">' + num(m.imports_in) + "</td></tr>");
+      });
+      h.push("</tbody></table></div>");
+    }
+
+    var eds = (scan.edges || []).slice(0, 12);
+    if (eds.length) {
+      h.push('<h3 class="rv" style="margin:1.6rem 0 .6rem">Strongest import edges</h3>');
+      h.push('<div class="tablewrap rv"><table><thead><tr><th>From</th><th>To</th>' +
+        '<th class="num">Imports</th></tr></thead><tbody>');
+      eds.forEach(function (e) {
+        h.push('<tr><td class="mono">' + esc(e.from) + '</td><td class="mono">' + esc(e.to) +
+          '</td><td class="num">' + num(e.count) + "</td></tr>");
+      });
+      h.push("</tbody></table></div>");
+    }
+
+    if ((scan.services || []).length) {
+      h.push('<h3 class="rv" style="margin:1.6rem 0 .6rem">Third party surface</h3>');
+      h.push('<div class="chiprow rv">' + scan.services.slice(0, 24).map(function (s) {
+        return '<span class="chip">' + esc(s.name) + " \u00b7 " + esc(s.category) + "</span>";
+      }).join("") + "</div>");
+    }
+    if ((scan.env_vars || []).length) {
+      h.push('<h3 class="rv" style="margin:1.4rem 0 .6rem">Environment surface</h3>');
+      h.push('<div class="chiprow rv">' + scan.env_vars.slice(0, 24).map(function (v) {
+        return '<span class="chip">' + esc(v.name) + "</span>";
+      }).join("") + "</div>");
+    }
+    if (scan.truncated) {
+      h.push('<p class="muted rv" style="margin-top:1.2rem;font-size:.84rem">' +
+        "The file list hit the scan limit, so these counts are a floor, not a total.</p>");
+    }
+    host.innerHTML = h.join("");
+  }
+
+  function renderNav() {
+    var list = document.getElementById("jumplist");
+    if (!list) return;
+    var secs = Array.prototype.filter.call(
+      document.querySelectorAll("main section"),
+      function (s) { return s.style.display !== "none"; }
+    );
+    list.innerHTML = secs.map(function (s) {
+      var h2 = s.querySelector("h2");
+      return '<li><a href="#' + s.id + '">' + esc(h2 ? h2.textContent : s.id) + "</a></li>";
+    }).join("");
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          Array.prototype.forEach.call(list.querySelectorAll("a"), function (a) {
+            a.setAttribute("aria-current",
+              a.getAttribute("href") === "#" + en.target.id ? "true" : "false");
+          });
+        });
+      }, { rootMargin: "-45% 0px -50% 0px" });
+      secs.forEach(function (s) { io.observe(s); });
+    }
+  }
+
+  function wireReveal() {
+    if (!("IntersectionObserver" in window)) {
+      Array.prototype.forEach.call(document.querySelectorAll(".rv"), function (el) {
+        el.classList.add("in");
+      });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    Array.prototype.forEach.call(document.querySelectorAll(".rv"), function (el) {
+      io.observe(el);
+    });
+  }
+
+  function wireControls() {
+    var reset = document.getElementById("map-reset");
+    if (reset) reset.addEventListener("click", function () { stopFlow(); clearFocus(); });
+    var mot = document.getElementById("map-motion");
+    if (mot) {
+      mot.setAttribute("aria-pressed", motionOn ? "true" : "false");
+      mot.classList.toggle("on", motionOn);
+      mot.addEventListener("click", function () {
+        motionOn = !motionOn;
+        mot.setAttribute("aria-pressed", motionOn ? "true" : "false");
+        mot.classList.toggle("on", motionOn);
+        if (window.ARCH && window.ARCH.setMotion) window.ARCH.setMotion(motionOn);
+      });
+    }
+    var tog = document.getElementById("themetog");
+    if (tog) {
+      tog.addEventListener("click", function () {
+        var cur = document.documentElement.getAttribute("data-theme");
+        if (!cur) {
+          cur = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark" : "light";
+        }
+        var next = cur === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("arch-theme", next); } catch (e) {}
+        if (window.ARCH && window.ARCH.onTheme) window.ARCH.onTheme(next);
+      });
+    }
+    if ("IntersectionObserver" in window) {
+      var frame = document.querySelector("#map .map-frame");
+      if (frame) {
+        new IntersectionObserver(function (en) {
+          mapVisible = en[0].isIntersecting;
+        }, { threshold: 0 }).observe(frame);
+      }
+    }
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape") { stopFlow(); clearFocus(); }
+    });
+  }
+
+  /* ---------------- boot ---------------- */
+
+  renderHero();
+  renderMap();
+  renderLegend();
+  renderDetail(null);
+  renderFlows();
+  renderStackCards();
+  renderModules();
+  renderState();
+  renderSeams();
+  renderMeasured();
+  renderTrust();
+  renderNav();
+  wireReveal();
+  wireControls();
+  requestAnimationFrame(tick);
+
+  window.ARCH = {
+    spec: spec, scan: scan, layers: layers, nodes: nodes, edges: edges,
+    placed: placed, bands: bands, L: L, KINDS: KINDS, mapH: mapH,
+    SPEED: SPEED, reduced: reduced,
+    kindOf: kindOf,
+    focus: function (id) { focusNode(id); },
+    scrollToMap: function () {
+      var m = document.getElementById("map");
+      if (m) m.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+    }
+  };
+})();
+</script>
+
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}
+</script>
+<script type="module">
+/* ------------------------------------------------------------------ *
+ * The same layout, extruded. Layer index becomes height, so depth in
+ * the stack is something you can see rather than something you infer.
+ * three.js is the only network dependency on this page; if it fails to
+ * load the rest of the document still works.
+ * ------------------------------------------------------------------ */
+(async function () {
+  var A = window.ARCH;
+  var frame = document.getElementById("scene-frame");
+  var canvas = document.getElementById("scene");
+  var tip = document.getElementById("scene-tip");
+  var section = document.getElementById("stack");
+  if (!A || !frame || !canvas) return;
+
+  function fail(msg) {
+    frame.classList.add("failed");
+    var el = document.getElementById("scene-fallback");
+    if (el) el.textContent = msg;
+  }
+  if (!A.nodes.length) { if (section) section.style.display = "none"; return; }
+
+  var THREE;
+  try {
+    THREE = await import("three");
+  } catch (err) {
+    fail("The 3D view loads three.js from the network and it did not arrive. " +
+         "Every other section on this page works offline.");
+    return;
+  }
+
+  var L = A.L, layers = A.layers, nodes = A.nodes, placed = A.placed;
+  var S = 1 / 64;
+  var rowVals = Object.keys(placed).map(function (k) { return placed[k].row; });
+  var maxRow = rowVals.length ? Math.max.apply(null, rowVals) : 0;
+  var LAYER_Y = 1.95, ROW_Z = 1.75;
+
+  function css(name, fallback) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name);
+    v = (v || "").trim();
+    return v || fallback;
+  }
+  function kindColor(kind) {
+    var k = A.KINDS[kind] || A.KINDS.service;
+    return new THREE.Color(css(k.v, "#2563eb"));
+  }
+  function pos3(p) {
+    return new THREE.Vector3(
+      (p.x + p.w / 2 - L.W / 2) * S,
+      (layers.length - 1 - p.layer) * LAYER_Y,
+      (p.row - maxRow / 2) * ROW_Z
+    );
+  }
+
+  var renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({
+      canvas: canvas, antialias: true, alpha: true, powerPreference: "high-performance"
+    });
+  } catch (err) {
+    fail("This browser did not give the page a WebGL context, so the 3D view is off. " +
+         "The map in section one shows the same structure.");
+    return;
+  }
+  renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(46, 16 / 9, 0.1, 400);
+  var midY = ((layers.length - 1) * LAYER_Y) / 2;
+  var target = new THREE.Vector3(0, midY, 0);
+
+  var orbit = { r: Math.max(13, layers.length * 3.6 + 7), theta: 0.62, phi: 1.02 };
+  function applyCamera() {
+    var sp = Math.sin(orbit.phi);
+    camera.position.set(
+      target.x + orbit.r * sp * Math.sin(orbit.theta),
+      target.y + orbit.r * Math.cos(orbit.phi),
+      target.z + orbit.r * sp * Math.cos(orbit.theta)
+    );
+    camera.lookAt(target);
+  }
+  applyCamera();
+
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x30384a, 0.95));
+  var key = new THREE.DirectionalLight(0xffffff, 1.05);
+  key.position.set(6, 12, 8);
+  scene.add(key);
+  var rim = new THREE.DirectionalLight(0x88aaff, 0.5);
+  rim.position.set(-8, 4, -6);
+  scene.add(rim);
+
+  /* layer slabs */
+  var slabMat = new THREE.MeshBasicMaterial({
+    color: new THREE.Color(css("--ink", "#16181c")),
+    transparent: true, opacity: 0.055, depthWrite: false
+  });
+  var slabLineMat = new THREE.LineBasicMaterial({
+    color: new THREE.Color(css("--line-2", "#888")), transparent: true, opacity: 0.5
+  });
+  var labelSprites = [];
+
+  layers.forEach(function (layer, li) {
+    var mine = nodes.filter(function (n) { return n.layer === layer.id && placed[n.id]; });
+    if (!mine.length) return;
+    var xs = [], zs = [], rows = 0;
+    mine.forEach(function (n) {
+      var p = placed[n.id];
+      var v = pos3(p);
+      xs.push(v.x - (p.w * S) / 2, v.x + (p.w * S) / 2);
+      zs.push(v.z);
+      rows = Math.max(rows, p.row);
+    });
+    var minX = Math.min.apply(null, xs) - 0.55;
+    var maxX = Math.max.apply(null, xs) + 0.55;
+    var minZ = Math.min.apply(null, zs) - 0.85;
+    var maxZ = Math.max.apply(null, zs) + 0.85;
+    var w = maxX - minX, d = maxZ - minZ;
+    var y = (layers.length - 1 - li) * LAYER_Y - 0.3;
+    var geo = new THREE.BoxGeometry(w, 0.07, d);
+    var slab = new THREE.Mesh(geo, slabMat);
+    slab.position.set((minX + maxX) / 2, y, (minZ + maxZ) / 2);
+    scene.add(slab);
+    var lines = new THREE.LineSegments(new THREE.EdgesGeometry(geo), slabLineMat);
+    lines.position.copy(slab.position);
+    scene.add(lines);
+    var sp = makeLabel(layer.name.toUpperCase(), css("--muted", "#888"), 0.3);
+    sp.position.set(minX - 0.1, y + 0.5, maxZ + 0.2);
+    scene.add(sp);
+    labelSprites.push({ sprite: sp, text: layer.name.toUpperCase(), muted: true, scale: 0.3 });
+  });
+
+  /* node blocks */
+  var blocks = [];
+  var edgeLineMat = new THREE.LineBasicMaterial({
+    color: new THREE.Color(css("--line-2", "#888")), transparent: true, opacity: 0.55
+  });
+  nodes.forEach(function (n) {
+    var p = placed[n.id];
+    if (!p) return;
+    var v = pos3(p);
+    var geo = new THREE.BoxGeometry(p.w * S, 0.34, 1.05);
+    var mat = new THREE.MeshStandardMaterial({
+      color: kindColor(A.kindOf(n)), roughness: 0.48, metalness: 0.12
+    });
+    var mesh = new THREE.Mesh(geo, mat);
+    mesh.position.copy(v);
+    mesh.userData.id = n.id;
+    mesh.userData.name = n.name;
+    mesh.userData.kind = A.kindOf(n);
+    mesh.userData.blurb = n.blurb || "";
+    scene.add(mesh);
+    var wire = new THREE.LineSegments(new THREE.EdgesGeometry(geo), edgeLineMat);
+    wire.position.copy(v);
+    scene.add(wire);
+    var sp = makeLabel(n.name, css("--ink", "#111"), 0.34);
+    sp.position.set(v.x, v.y + 0.52, v.z);
+    scene.add(sp);
+    labelSprites.push({ sprite: sp, text: n.name, muted: false, scale: 0.34 });
+    blocks.push(mesh);
+  });
+
+  /* dependency tubes plus travelling packets */
+  var curves = [], packets = [];
+  var EDGE_COLORS = { data: "--k-data", call: "--k-service", build: "--k-build", event: "--k-ui" };
+  A.edges.forEach(function (e) {
+    var a = placed[e.from], b = placed[e.to];
+    if (!a || !b) return;
+    var va = pos3(a), vb = pos3(b);
+    var mid = va.clone().lerp(vb, 0.5);
+    mid.z += 0.75;
+    if (Math.abs(va.y - vb.y) < 0.01) mid.y -= 0.5;
+    var curve = new THREE.QuadraticBezierCurve3(va, mid, vb);
+    var col = new THREE.Color(css(EDGE_COLORS[e.kind] || "--k-service", "#2563eb"));
+    var tube = new THREE.Mesh(
+      new THREE.TubeGeometry(curve, 26, 0.017, 6, false),
+      new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.6 })
+    );
+    scene.add(tube);
+    curves.push({
+      pts: curve.getSpacedPoints(60), color: col, tube: tube,
+      cssVar: EDGE_COLORS[e.kind] || "--k-service"
+    });
+  });
+
+  /* Frame whatever the spec turned out to be. A fixed camera distance suits one
+     shape of system and crops or strands every other one. */
+  (function fitCamera() {
+    if (!blocks.length) return;
+    var box = new THREE.Box3();
+    blocks.forEach(function (b) { box.expandByObject(b); });
+    var sphere = box.getBoundingSphere(new THREE.Sphere());
+    if (!isFinite(sphere.radius) || sphere.radius <= 0) return;
+    target.copy(sphere.center);
+    var vFov = (camera.fov * Math.PI) / 180;
+    orbit.r = Math.max(5, (sphere.radius / Math.sin(vFov / 2)) * 0.9);
+    orbit.phi = 0.98;
+    applyCamera();
+  })();
+
+  var dotTex = (function () {
+    var c = document.createElement("canvas");
+    c.width = c.height = 64;
+    var g = c.getContext("2d");
+    var rad = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+    rad.addColorStop(0, "rgba(255,255,255,1)");
+    rad.addColorStop(0.35, "rgba(255,255,255,0.85)");
+    rad.addColorStop(1, "rgba(255,255,255,0)");
+    g.fillStyle = rad;
+    g.fillRect(0, 0, 64, 64);
+    var t = new THREE.CanvasTexture(c);
+    t.needsUpdate = true;
+    return t;
+  })();
+
+  var points = null;
+  if (curves.length) {
+    var per = curves.length > 26 ? 2 : 3;
+    var total = Math.min(150, curves.length * per);
+    var posArr = new Float32Array(total * 3);
+    var colArr = new Float32Array(total * 3);
+    for (var i = 0; i < total; i++) {
+      var ci = i % curves.length;
+      var c = curves[ci];
+      packets.push({ ci: ci, off: (Math.floor(i / curves.length) / per) + (ci * 0.11) % 1,
+                     rate: 0.5 + ((ci * 29) % 50) / 100 });
+      colArr[i * 3] = c.color.r; colArr[i * 3 + 1] = c.color.g; colArr[i * 3 + 2] = c.color.b;
+    }
+    var pgeo = new THREE.BufferGeometry();
+    pgeo.setAttribute("position", new THREE.BufferAttribute(posArr, 3));
+    pgeo.setAttribute("color", new THREE.BufferAttribute(colArr, 3));
+    points = new THREE.Points(pgeo, new THREE.PointsMaterial({
+      size: 0.26, map: dotTex, vertexColors: true, transparent: true,
+      depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
+    }));
+    scene.add(points);
+  }
+
+  function makeLabel(text, color, scale) {
+    var c = document.createElement("canvas");
+    var g = c.getContext("2d");
+    var font = "600 30px -apple-system, BlinkMacSystemFont, Segoe UI, system-ui, sans-serif";
+    g.font = font;
+    var w = Math.ceil(g.measureText(text).width) + 26;
+    c.width = Math.max(48, w);
+    c.height = 48;
+    g = c.getContext("2d");
+    g.font = font;
+    g.textBaseline = "middle";
+    g.fillStyle = color;
+    g.fillText(text, 13, 25);
+    var tex = new THREE.CanvasTexture(c);
+    tex.needsUpdate = true;
+    var sp = new THREE.Sprite(new THREE.SpriteMaterial({
+      map: tex, transparent: true, depthTest: false, depthWrite: false
+    }));
+    sp.scale.set((c.width / c.height) * scale, scale, 1);
+    sp.renderOrder = 10;
+    return sp;
+  }
+
+  function rebuildLabels() {
+    labelSprites.forEach(function (rec) {
+      var color = rec.muted ? css("--muted", "#888") : css("--ink", "#111");
+      var fresh = makeLabel(rec.text, color, rec.scale);
+      rec.sprite.material.map.dispose();
+      rec.sprite.material.map = fresh.material.map;
+      rec.sprite.material.needsUpdate = true;
+    });
+    slabMat.color = new THREE.Color(css("--ink", "#16181c"));
+    slabLineMat.color = new THREE.Color(css("--line-2", "#888"));
+    edgeLineMat.color = new THREE.Color(css("--line-2", "#888"));
+    // Kind colours differ per theme, so the blocks and tubes have to move too.
+    blocks.forEach(function (b) {
+      b.material.color = kindColor(b.userData.kind);
+      b.material.needsUpdate = true;
+    });
+    curves.forEach(function (c, i) {
+      var col = new THREE.Color(css(c.cssVar, "#2563eb"));
+      c.color = col;
+      c.tube.material.color = col;
+      c.tube.material.needsUpdate = true;
+    });
+    if (points) {
+      var cols = points.geometry.attributes.color.array;
+      for (var i = 0; i < packets.length; i++) {
+        var col = curves[packets[i].ci].color;
+        cols[i * 3] = col.r; cols[i * 3 + 1] = col.g; cols[i * 3 + 2] = col.b;
+      }
+      points.geometry.attributes.color.needsUpdate = true;
+    }
+  }
+
+  /* interaction */
+  var dragging = false, lastX = 0, lastY = 0, lastTouch = 0;
+  canvas.style.touchAction = "none";
+  canvas.addEventListener("pointerdown", function (ev) {
+    dragging = true; lastX = ev.clientX; lastY = ev.clientY;
+    lastTouch = performance.now();
+    canvas.setPointerCapture(ev.pointerId);
+  });
+  canvas.addEventListener("pointermove", function (ev) {
+    if (dragging) {
+      orbit.theta -= (ev.clientX - lastX) * 0.006;
+      orbit.phi = Math.max(0.22, Math.min(1.48, orbit.phi - (ev.clientY - lastY) * 0.006));
+      lastX = ev.clientX; lastY = ev.clientY;
+      lastTouch = performance.now();
+      applyCamera();
+    } else {
+      hoverTest(ev);
+    }
+  });
+  ["pointerup", "pointercancel", "pointerleave"].forEach(function (t) {
+    canvas.addEventListener(t, function () { dragging = false; });
+  });
+  canvas.addEventListener("wheel", function (ev) {
+    ev.preventDefault();
+    orbit.r = Math.max(6, Math.min(48, orbit.r * (1 + ev.deltaY * 0.0012)));
+    lastTouch = performance.now();
+    applyCamera();
+  }, { passive: false });
+
+  var ray = new THREE.Raycaster(), mouse = new THREE.Vector2(), hovered = null;
+  function pick(ev) {
+    var r = canvas.getBoundingClientRect();
+    mouse.x = ((ev.clientX - r.left) / r.width) * 2 - 1;
+    mouse.y = -((ev.clientY - r.top) / r.height) * 2 + 1;
+    ray.setFromCamera(mouse, camera);
+    var hits = ray.intersectObjects(blocks, false);
+    return hits.length ? hits[0].object : null;
+  }
+  function hoverTest(ev) {
+    var hit = pick(ev);
+    if (hit === hovered) return;
+    if (hovered) hovered.scale.set(1, 1, 1);
+    hovered = hit;
+    if (hovered) {
+      hovered.scale.set(1.06, 1.5, 1.06);
+      tip.textContent = hovered.userData.name +
+        (hovered.userData.blurb ? " · " + hovered.userData.blurb : "");
+      tip.classList.add("on");
+      canvas.style.cursor = "pointer";
+    } else {
+      tip.classList.remove("on");
+      canvas.style.cursor = "grab";
+    }
+  }
+  canvas.addEventListener("click", function (ev) {
+    var hit = pick(ev);
+    if (hit && A.focus) A.focus(hit.userData.id);
+  });
+
+  /* loop */
+  var visible = true, motion = !A.reduced, phase = 0, prev = 0;
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (en) { visible = en[0].isIntersecting; },
+      { threshold: 0 }).observe(frame);
+  }
+  function resize() {
+    var w = frame.clientWidth || 800;
+    var h = canvas.clientHeight || 420;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  if ("ResizeObserver" in window) new ResizeObserver(resize).observe(frame);
+  else window.addEventListener("resize", resize);
+  resize();
+
+  var tmp = new THREE.Vector3();
+  function updatePackets() {
+    if (!points || !packets.length) return;
+    var arr = points.geometry.attributes.position.array;
+    for (var i = 0; i < packets.length; i++) {
+      var pk = packets[i];
+      var pts = curves[pk.ci].pts;
+      var u = (phase * pk.rate + pk.off) % 1;
+      if (u < 0) u += 1;
+      var f = u * (pts.length - 1);
+      var i0 = Math.floor(f), i1 = Math.min(pts.length - 1, i0 + 1);
+      tmp.copy(pts[i0]).lerp(pts[i1], f - i0);
+      arr[i * 3] = tmp.x; arr[i * 3 + 1] = tmp.y; arr[i * 3 + 2] = tmp.z;
+    }
+    points.geometry.attributes.position.needsUpdate = true;
+  }
+  /* Seed once up front. Positions only get written inside the loop, so with
+     motion off every packet would otherwise sit piled at the origin. */
+  updatePackets();
+
+  function frameLoop(now) {
+    requestAnimationFrame(frameLoop);
+    if (!prev) prev = now;
+    var dt = Math.min(80, now - prev);
+    prev = now;
+    if (!visible) return;
+    if (motion) {
+      phase += dt * 0.00009 * A.SPEED;
+      if (now - lastTouch > 2600) {
+        orbit.theta += dt * 0.00011 * Math.min(6, A.SPEED);
+        applyCamera();
+      }
+      updatePackets();
+    }
+    renderer.render(scene, camera);
+  }
+  requestAnimationFrame(frameLoop);
+
+  A.setMotion = function (on) { motion = on && !A.reduced; };
+  A.onTheme = function () { rebuildLabels(); };
+})();
+</script>
+
+</body>
+</html>

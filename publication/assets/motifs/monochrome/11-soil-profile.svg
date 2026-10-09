@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">Roots and a depth probe</title>
+  <desc id="desc">A root system and an unnumbered three-level probe cross an uneven soil section. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#000000" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M58 99C88 94 119 102 146 99M185 99C214 96 238 100 253 99M275 99C304 96 325 101 343 98" stroke="#000000" stroke-width="4.2"/>
+<path d="M59 145C103 137 140 148 174 143M216 144C246 142 297 147 343 142" stroke="#000000" stroke-width="4.2"/>
+<path d="M60 193C95 188 131 196 164 192M229 193C269 188 307 196 343 192" stroke="#000000" stroke-width="4.2"/>
+<path d="M165 99C162 83 165 63 171 47" stroke="#000000" stroke-width="4.2"/>
+<path d="M165 75C146 75 134 64 131 49C151 51 163 60 165 75Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M170 57C189 61 203 52 210 38C192 37 177 44 170 57Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M165 99C160 124 161 145 177 166C189 182 187 205 181 226" stroke="#000000" stroke-width="4.2"/>
+<path d="M161 122C145 127 130 139 123 157M147 131L135 119M132 145L116 144" stroke="#000000" stroke-width="4.2"/>
+<path d="M166 148C192 146 209 158 221 177M195 150L200 134M212 164L229 161" stroke="#000000" stroke-width="4.2"/>
+<path d="M181 172C158 177 148 191 145 208M158 187L145 183M153 195L161 211" stroke="#000000" stroke-width="4.2"/>
+<path d="M186 199C203 205 212 216 215 230" stroke="#000000" stroke-width="4.2"/>
+<path d="M258 57H275V76H258ZM264 77V224" stroke="#000000" stroke-width="4.2"/>
+<circle cx="264" cy="112" r="5" stroke="#000000" fill="none"/>
+<circle cx="264" cy="159" r="5" stroke="#000000" fill="none"/>
+<circle cx="264" cy="208" r="5" stroke="#000000" fill="none"/>
+<path d="M281 112H294M281 159H294M281 208H294" stroke="#000000" stroke-width="4.2"/>
+<circle cx="86" cy="122" r="2.2" stroke="#000000" fill="#000000"/>
+<circle cx="321" cy="171" r="2.2" stroke="#000000" fill="#000000"/>
+  </g>
+</svg>

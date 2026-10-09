@@ -1,0 +1,59 @@
+SURVIVING THE SINGULARITY
+
+
+   TworoutestoaDCload
+
+
+   Samedevice.Comparethecompletesystems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Charging,wiresandregulationstillloseenergy.
+   Bothneedprotectionandvoltagematching.
+   Conceptualenergypaths,notawiringplan.
+
+
+For a load that already uses DC, compare the whole path. Avoiding an inverter pair does not
+remove charging, wiring or regulation losses.
+
+
+So for suitable small loads, a DC-native setup, panel to charge con-
+troller to battery to a fused distribution block, can be simpler and
+more efficient. It isnʼt lossless. Charging, wires, and any DC-to-DC
+regulator still cost energy. Match each device to its required voltage; a
+
+
+
+
+
+
+
+292

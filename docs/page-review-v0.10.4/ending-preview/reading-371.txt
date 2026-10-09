@@ -1,0 +1,21 @@
+Visual source notes for v0.10.1
+Waste pathways, Chapter 14: US Environmental Protection Agency, 2019
+Wasted Food Report, corrected April 2024, Table 5, printed page 12.
+Estimated management of food from retail, food service, and households,
+including inedible parts. The total is not a quantity that could all be
+donated; donation excludes food banksʼ undistributed portion.
+Land values, Chapter 12: USDA National Agricultural Statistics Service, 
+Land Values 2026 Summary, page 5. Annual national farm-real-estate survey
+estimates for 2012 through 2026 include land and buildings. Values are
+nominal dollars per acre, not inflation-adjusted values or local asking
+prices.
+Income and food access, Chapter 6: USDA Economic Research Service, 
+Household Food Security in the United States in 2024, ERR-358, Table 2,
+printed page 20. Survey estimates for two selected, non-overlapping income
+groups, with the national rate as a reference. The comparison omits middle
+and unknown income categories and does not establish causation.
+• 
+• 
+• 
+SURVIVING THE SINGULARITY
+366

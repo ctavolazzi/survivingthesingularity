@@ -2,24 +2,24 @@
 
 ![Topographic map with compass rose](/book-images/ch18-compass-map.jpg)
 
-*The map, before the route. Premortem first, then move. (SFC9394, CC BY 2.5, via Wikimedia Commons)*
+*The map, before the route. Premortem first, then move. (SFC9394; compass rose by Stefan-Xp, CC BY 2.5, via Wikimedia Commons)*
 
 
 > *"Plans are worthless, but planning is everything."*
-> Dwight D. Eisenhower, *remarks to the National Defense Executive Reserve Conference* (1957)
+> Dwight D. Eisenhower, recalling an Army saying in *remarks to the National Defense Executive Reserve Conference* (1957)
 
 **In this chapter:**
 
 - A premortem is an obituary you write early enough to falsify. Assume the plan died; explain why; fix that, now.
 - Your model will be excellent about supply chains, grids, and legal exposure, and silent about the divorce, the burnout, and the shoulder. The room knows what the model doesn't.
-- Every risk gets a name attached: who it happens to, and who is watching for it. A risk without a name is a wish.
+- Measure a community by one test that matters: can it provide an Adequate Level of Care, starting with dinner?
 - Plans are worthless. Planning is everything. The people doing the planning are the plan.
 
 ---
 
-The co-op's annual meeting happened in the shouse, because the shouse had the woodstove and the wall screen and, by the second winter, the unofficial status of parliament. Reuben ran the agenda: the year's numbers, the trust's first ground-lease payment made in full to Irene Calder, the library's download counter (fifty-one thousand and climbing, from towns in nine countries now), the absorption's first full year, Tyler's name added to the roster. Then Elijah stood up for the last item, which was his, and which he had been building for a month, and said: "It's two years from now, and the co-op is dead. I'd like to spend two hours on how it died."
+The co-op's annual meeting happened in the shouse, because the shouse had the woodstove and the wall screen and, by its second winter, the unofficial status of parliament. Reuben ran the agenda: the year's numbers, the co-op's lease payment and the trust's scheduled payment to Irene Calder, the library's download counter (fifty-one thousand and climbing, from towns in nine countries now), Frank's first full year at the tool library, Tyler's name added to the roster. Then Elijah stood up for the last item, which was his, and which he had been building for a month, and said: "It's two years from now, and the co-op is dead. I'd like to spend two hours on how it died."
 
-He had come loaded. Of course he had. The premortem model was the notebook's whole arithmetic grown up: every stage, every watt, every county filing, run through the Crucible against futures like weather fronts. Supply shocks: modeled. The Memphis platform buying their steel distributor the way it bought Frank's: modeled, with a second-source list already drafted. Grid failures, fuel spikes, a hostile county supervisor, a change in the ag exemption, a Meridian-shaped entity with better lawyers: modeled, modeled, modeled, modeled. He walked the room through forty minutes of failure modes with the quiet competence of a man who had finally found the exact right size for his gift, and the room took it seriously, and the model was good.
+He had come loaded. Of course he had. The premortem model was the notebook's whole arithmetic grown up: every stage, every watt, every county filing, run through the Crucible against futures like weather fronts. Supply shocks: modeled. The Memphis platform buying their steel distributor the way it bought Frank's: modeled, with a second-source list already drafted. Grid failures, fuel spikes, a hostile county supervisor, a change in the property assessment, a landbuyer with better lawyers: modeled, modeled, modeled, modeled. He walked the room through forty minutes of failure modes with the quiet competence of a man who had finally found the exact right size for his gift, and the room took it seriously, and people could trace the calculations and challenge the assumptions.
 
 Then Marta said, "Your machine's got no column for the stuff that actually kills these things," and the second half of the meeting began.
 
@@ -27,113 +27,207 @@ Then Marta said, "Your machine's got no column for the stuff that actually kills
 
 Burnout, said Priya, looking at Denny. The channel posts three times a week because one man will not stop, and if that man goes down, the lever goes down with him. Denny started to argue and then didn't, which everyone understood, including him. The fix got a name that night: Tyler learns the edit, Frank learns the counter-camera, the channel becomes a bench instead of a pillar.
 
-A divorce, said Reuben, flatly, into the quiet. Not naming anyone, not needing to: nineteen households is eighteen marriages and change, and the trust documents, he confessed, currently handled a split about as gracefully as a wood chipper. He'd have the amendment drafted by March. He had, everyone knew, already started.
+A divorce, said Reuben, flatly, into the quiet. Not naming anyone, not needing to: nineteen households is eighteen marriages and change, and the trust documents, he confessed, currently handled a split about as gracefully as a wood chipper. He'd have a proposed amendment ready for counsel to review by March. He had, everyone knew, already started.
 
 Founder-dependence, said Frank, who had watched a store die of it. Every load-bearing thing in the valley ran through the same four people, and the premortem for that was standing in the room wearing all four of their faces.
 
-And then Marta, who had raised the subject of people dying of people, put her cup down and paid the room the compliment of going first. "Shoulder's done," she said. "Rotator cuff. Tuesdays haven't fixed it and won't. I've got maybe two years of overhead welding left, and this valley has exactly one person certified to make the beads that hold roofs up." She looked at Tyler, nineteen years old, three months into the roster, holding his coffee like it might be repossessed. "Apprenticeship's four years if you're serious. So we start Monday."
+And then Marta, who had raised the subject of people dying of people, put her cup down and paid the room the compliment of going first. "Shoulder's done," she said. "Rotator cuff. Tuesdays haven't fixed it and won't. I've got maybe two years of overhead welding left, and this valley has exactly one person certified to make the beads that hold roofs up." She looked at Tyler, nineteen years old, three months into the roster, holding his coffee like it might be repossessed. "Apprenticeship's four years if you're serious. If you want it, we start Monday."
 
-Elijah went home that night and rebuilt the model with the room's amendments, and the version that ships in this chapter's Foundations has the change that mattered: a names column. Every failure mode carries two names now, who it happens to and who is watching for it, because a risk without a name attached is not a risk, it is a wish with error bars. He was pasting in the last of it when he understood what he was actually looking at. The supply models, the watts, the stages, the names: it was the notebook. All of it. MADRONE ≠ DRONE, two years of arithmetic and margins and lists, finally arranged in the shape it had been trying to take since 1:40 in the morning at a kitchen table: not notes toward surviving something, but a manual for it. The manuscript nobody had asked for had an audience of fifty-one thousand downloads and eleven towns and one mother, and he started, that week, turning the notebook into the book you are nearly done holding.
+"That leaves two years we haven't covered," Priya said.
 
-The newcomer arrived on the Saturday after the meeting, in a sensible car with two car seats in the back and a face Elijah had last seen lit by a laptop at a Claypot all-hands. Devendra stood in the shed doorway the way Elijah had once stood in it, two years and a lifetime ago, looking at the plasma table and the shadow-boarded wall and the whole impossible ordinary fact of the place, and he said, quietly, "I didn't know what I expected. It's smaller than the videos."
+Marta nodded. "Then put that on the board too. We need someone qualified to cover the gap. Starting an apprentice doesn't make one finished."
 
-"Everything real is," Elijah said. Then he picked up the push broom leaning by the welding curtain, the same broom, older now, bristles worn to a bevel, and held it out, and heard himself say the words in their rightful order, the way liturgy works, the way it had been said to him on the exact spot he was standing:
+Elijah wrote INTERIM WELDING CAPACITY: UNRESOLVED, and left the box open.
 
-"Swarf goes in the red bin. We'll see."
+The kitchen coordinator had come for the food-delivery item and stayed for the rest. Since the first deliveries, the route had continued through one short funding commitment after another. Now she put a page beside Elijah's laptop. The route Curtis still drove twice a month had funding through June. Renewal hadn't been decided. She could show what each delivery cost and which households needed prepared meals. She couldn't turn a promise of another grant into a paid invoice.
+
+"We could do an appeal on the channel," Denny said.
+
+"We could," she said. "But your name is already under burnout."
+
+He looked at the board, then down at his hands.
+
+Rosa had sent a note through the kitchen because she couldn't leave work to attend. Her wrist was better. Her hours at the packing warehouse changed from one schedule to the next. The note asked whether the collection time could stay late enough for people on the afternoon shift. At the bottom she'd added: *And can you tell us before the week it stops?*
+
+Curtis read that line twice. "They shouldn't have to keep wondering who's generous this month."
+
+Reuben drew a second column. The co-op could commit part of the repair budget it had already set aside for the route's equipment. The kitchen could bring its accounts and service record. Residents could describe what the route made possible and where it failed them. Together they could take a defined proposal to the public meeting where the next food-service allocation would be discussed. None of that guaranteed a vote or supplied an unpaid meal. It gave them a request with costs, responsibilities, and people behind it.
+
+They wrote *funded through June* in ink. The proposed continuation went underneath in pencil, with a meeting date beside it. Curtis took responsibility for telling the households what had and hadn't been secured. The coordinator asked for someone besides Curtis to learn the route. Two hands went up.
+
+![One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.](/book-images/v101-visual-continuity-calendar.svg)
+
+*Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene.*
+
+Elijah went home that night and rebuilt the model with the room's amendments, and the change that mattered was a names column. Every failure mode carried two names now, who it happens to and who is watching for it, because a risk without a name attached isn't a risk, it's a wish with error bars. He kept the household details in the private record; the public proposal would carry the service commitments, the costs, and the gaps. He was pasting in the last of it when he understood what he was actually looking at.
+
+The supply models, the watts, the stages, the names, the repair he had misunderstood and the meal they had delivered wrong: it was the notebook. All of it. MADRONE ≠ DRONE, three years of arithmetic and margins and lists, finally arranged in the shape it had been trying to take since 1:40 in the morning at a kitchen table: not notes toward surviving something, but a manual for it, with the open boxes left open. He started, that week, turning the notebook into the book you are nearly done holding.
+
+The newcomer arrived on the Saturday after the meeting, in a sensible car with two car seats in the back and a face Elijah had last seen lit by a laptop at a Claypot all-hands. Devendra stood in the shed doorway the way Elijah had once stood in it, more than two years and a lifetime ago, looking at the plasma table and the shadow-boarded wall and the whole impossible ordinary fact of the place, and he said, quietly, "I didn't know what I expected. It's smaller than the videos."
+
+"Everything real is," Elijah said.
+
+Devendra looked at the broom leaning by the welding curtain, then back at the car. "I can help. I just need to figure out the kids."
+
+"There's food inside. Bring them in."
+
+"I don't want to take anything before I've..."
+
+Elijah waited for the sentence to finish. Devendra looked away instead.
+
+From the bench, Curtis called, "Dinner's dinner."
+
+Elijah picked up the push broom, the same broom, older now, bristles worn to a bevel, and held it out, and heard himself say the words in their rightful order, the way liturgy works, the way they had been said to him on the exact spot he was standing:
+
+"Swarf goes in the red bin." He tipped his head at the kitchen. "After dinner. We'll see."
+
+The children came in holding their father's hands. One stopped to examine a yellow controller box. The other asked where they should put their coats.
 
 ---
 
 ## The Foundations
 
-If you've read this far, your brain is probably looking for an exit strategy. You are looking for a reason why this won't happen, a flaw in the logic, or some excuse to go back to sleep. You might run a "premortem" in your head, dreaming up all the ways this transition fails.
+If you've read this far, part of your brain is probably running its own premortem, looking for the flaw that lets it off the hook. The neighborhood factories can't bootstrap their supply chains. Somebody with more guns takes the greenhouse. People lose their minds without a nine-to-five. The powerful crush any alternative that gets big enough to notice.
 
-You'll tell yourself that local Shouse grids will fail because we can't bootstrap the supply chains. You'll say that local warlords will take over the Biorefinery Hubs the second the global grid drops. You'll argue that people will lose their minds without the daily grind of their 9-to-5 jobs, collapsing into a psychological void. You'll say the corporate-state establishment will launch a scorched-earth campaign, weaponizing the masses to tear down any neighborhood factories we try to build.
+You're right to worry about those things. They're real vulnerabilities. But using them as a reason to do nothing is fear wearing the costume of caution. Name the vulnerability out loud, then build against it anyway. That's the whole difference between a premortem and an excuse.
 
-And you know what? You're right to worry about those things. They are massive vulnerabilities. But presenting those failure points as a reason to do nothing is just fear wearing the costume of caution. Name the vulnerability out loud, then build against it anyway. That is the entire difference between a premortem and an excuse.
+## What could stall it
 
-We are not looking at this as an absolute, 100% certainty that ends in a utopia. We are looking at this as a *roadmap*. We are planning for the highest-probability event in human history.
+I'm not selling a certainty. Here's what could slow or stop the machine side of this story, and it's worth knowing:
 
-## The Tech Is Already Here
+1. **War.** A big enough war stalls everything, this included.
+2. **The chip bottleneck.** A huge share of the world's most advanced chips come out of a handful of fabs in Taiwan. A major disruption could constrain supply; its effect would depend on the damage, inventories, and alternative capacity.
+3. **The materials bottleneck.** Chipmaking needs specialized materials and equipment that can't always be substituted quickly. Ultra-high-purity quartz, for example, is used in crucibles for semiconductor manufacture. A disruption matters at a specific link, not because the world has run out of ordinary sand. [US Geological Survey, Silica Statistics and Information](https://www.usgs.gov/centers/national-minerals-information-center/silica-statistics-and-information)
+4. **The backlash.** People could choose, or be frightened into choosing, to stop the build-out.
+5. **Things nobody's thought of.** There's always a column for the unknown.
 
-People keep waiting for some magical, sci-fi breakthrough to signal the intelligence explosion. Wake the fuck up. Nothing new needs to be invented. The pieces are already on the board; they just need to be scaled.
+None of those makes the food work less worth doing. If progress stalls, people still need to eat, and everything in this book still helps. If it doesn't stall, we'll be glad we started.
 
-We already have Cortical Labs producing wetware, literal biological computers on a chip. We already have Google producing synthetic neurons. What happens when you combine them? You put a brain in a box, you give it access to advanced AI models, and you let it engineer its own architecture. The AI engineers the brain, the brain engineers the AI, and the feedback loop closes.
+## The Adequate Level of Care
 
-The singularity isn't waiting on a miracle. The technology already exists. It is scaling up right now.
+So here's the standard I want to measure a community by. I've been calling it the **Adequate Level of Care**: can this place make sure the people who live here have food, shelter, and basic care, dependably, including through a bad week when the long supply lines hiccup?
 
-## The Five Black Swans
+Stop measuring success only by GDP. GDP can rise while a lot of people get more precarious. Ask instead whether your community can provide an Adequate Level of Care to the people in it, and how much of that provision depends on a job, a truck from far away, or one generous person.
 
-Will it happen tomorrow? Maybe. Is it guaranteed? No. There are exactly five things that could derail this trajectory, physical bottlenecks that could stop the intelligence explosion from scaling:
+![A current vulnerability ties essentials to continuing earnings. A proposed arrangement funds supplies, remaining paid work, tools and backup capacity so people can receive essentials without a job. Adequate provision is a commitment to verify, not an achieved effect of robots or a closed loop.](/book-images/ch18-social-contract.svg)
 
-1. **Nuclear War:** We blow ourselves up before the loop closes.
-2. **The Taiwan Bottleneck:** A physical disruption to the TSMC semiconductor facilities that halts the production of advanced compute.
-3. **The Quartz Supply:** A collapse in the mining and production of the raw high-purity quartz required to manufacture those chips.
-4. **The Primate Backlash:** Mobs of Luddites with pitchforks physically destroying the data centers and infrastructure out of existential terror.
-5. **The Unknown Anomaly:** Some external, incomprehensible force (maybe the "orbs" everyone keeps talking about, or some fundamental law of physics we don't yet grasp) that hard-stops the progression.
+*The proposal makes essentials a funded floor, available without a job. Tools help; remaining work, supplies and reliable delivery still need provision.*
 
-Unless one of those five things happens, unless we lack the raw material, the manufacturing base, or we physically destroy ourselves, this event is going to happen.
+Food is the first line of the Adequate Level of Care, because it's urgent, concrete, and measurable: we can ask who ate, what they could get, and whether the arrangement will hold next week. Shelter and care come next. Each needs its own expertise and evidence, and each can be organized around the same question: do people actually receive it?
 
-## The Adequate Level of Care (ALC)
+If global shipping stopped for a month, could your community keep everyone fed? For most places the honest answer is "we don't know." That's not a failure. It's the assignment.
 
-Because it is going to happen, we must plan our future accordingly. And the only logical prognosis, the only viable solution, is to meet our physical survival needs locally.
+## What going right would look like
 
-We cannot rely on global supply chains that are one trade war or cyberattack away from collapse. We cannot rely on a corporate-state apparatus that views intelligence as a metered utility.
+Picture the ordinary version. A cook loses a job and still eats. A worker finishes a shorter shift and goes home to the same life, not a smaller one. A caregiver takes help without having to prove there's no other choice. A grower gets paid fairly for food that goes to people who can't pay for it.
 
-Each local community must build the infrastructure to provide food, shelter, and medical care that can keep functioning without the global grid in an emergency. I have coined a term for this baseline metric: **The Adequate Level of Care (ALC)**.
+That's worth doing the practical work for. It doesn't need every machine to be perfect. It needs a machine breaking, a market crashing, or a boss cutting hours to stop landing straight on somebody's ability to eat.
 
-Moving forward, we must stop measuring the success of our economy by GDP. GDP is a ghost metric designed to keep you on the hamster wheel. We must measure our economy by whether or not a community can provide an Adequate Level of Care for the people who live there.
+And it's bigger than nineteen households. The co-op matters because its members learned to fix a plan together and could show their work. Its limits matter too: a valley full of successful founders would still leave most of the world outside the fence.
 
-![Two social contracts compared side by side: the old one runs your labor to a wage to rented survival, and cuts you off if you miss a payment; the new one runs machines and regenerative loops to local abundance to an adequate level of care, so a job becomes a choice](/book-images/ch18-social-contract.svg)
+## Build the machine and the promise together
 
-*The old contract makes you rent your survival month to month. The new one makes survival the floor, so a job becomes a choice, not a sentence.*
+There are two jobs, and you have to do both. Get better at making the food. And build a promise people can count on that the food will reach them. Do only the first and you get impressive machines behind a price somebody can't pay. Do only the second and you get a right on paper that the kitchen can't keep.
 
-Does your local community have the Local Biorefinery Hubs to process waste? Do you have the localized agriculture to feed your neighbors? Do you have the tools to synthesize basic medicines and build shelters? If global shipping stopped tomorrow, could your community sustain an Adequate Level of Care?
+Start with a food service that already exists. Sit down with the people who use it and the people who run it, and find where it breaks: the missed meal, the pickup point nobody can reach, the task someone repeats forty times a day, the freezer that's been waiting three weeks for a part. The first fix might be a machine. It might be another paid shift, a better supplier, or a bus route.
 
-If the answer is no, you are failing.
+Then follow the gain all the way to a plate. A controller helps a grower. The grower signs on to supply a kitchen. The kitchen turns it into meals people can actually eat. Somebody pays for the service, so the person eating doesn't have to. Every link needs a name next to it and the money to keep it running.
 
-We know the risks. We know the establishment will try to stop this. We know the psychological transition will be brutal. But the tools are on the table. The roadmap is clear. We must build the infrastructure of abundance today, measure our success by the care we provide, and secure our own local survival.
+A tool that saves an hour can turn that hour into more output, a bigger profit, a shorter shift, or a free meal that shows up every week. The tool doesn't pick. We do.
 
-## Synthesis and the New Social Contract
+## A proposal people can vote on
 
-The cascading effects of the Transformer architecture, the biological efficiency of active inference systems, and the imminent arrival of recursive self-improvement dictate that the socio-economic paradigms of the 20th century are irreversibly obsolete. The illusion of scarcity, artificially maintained to preserve legacy power structures and capital hierarchies, cannot withstand the deflationary force of zero-marginal-cost intelligence.
+Here's what a real next step could look like after the five-household trial. It's an example, not a program that's been funded.
 
-To navigate the rapidly closing window of the 2027 ignition point, society must establish a New Social Contract fundamentally decoupled from labor-for-survival models. This requires the implementation of an "Abundance Quotient" and an "Adequate Level of Care", a systemic, ethical commitment recognizing that essential survival needs (food, shelter, healthcare, and energy) are fundamental human rights that must be secured at the local level without excessive burdens or transactional compliance.
+The food bank, the growers, a kitchen, the workers, and the neighbors write down one offer for one area. What food. How you ask for it without paying. What happens if you can't cook or can't get there. How you get in without a smartphone and without knowing the founders.
 
-Achieving this transition requires urgent, cooperative dynamics. Communities must proactively bypass the psychological bottlenecks of the scarcity mindset and leverage existing open-source tools to build hyper-local shouse microgrids, automated agricultural hubs, and circular algae-based manufacturing networks. By decoupling individual survival from fragile, globalized supply chains and the metering of corporate gatekeepers, humanity can insulate itself from the inevitable primate backlash and infrastructural panic of the transition. The technological singularity is an active, structural reality; survival depends not on resisting the mathematical inevitability of the machine, but on cooperatively engineering the local infrastructure of abundance to safely receive it.
+They write down what it costs to run: food, paid jobs, transport, repairs, and money set aside for when the truck dies. They count volunteer hours separately and say which jobs can't depend on whoever happens to show up. The people doing the work get paid. The person eating doesn't have to work for the meal.
 
-## The Empowerment Architecture
+Then they go looking for steady money: the county, a co-op, a church, a grocer, or some mix. The county could run it, or pay several groups to run it. Donations can add to it, but they don't carry the core promise, because donations come and go. Each choice puts different people in charge, so everyone should see the options side by side.
 
-This roadmap is a beacon for two audiences.
+The offer also says who takes complaints, how you appeal if you're turned away, what information gets collected about you, and what happens when something breaks. It makes room for people who disagree with the organizers. You shouldn't have to be liked to be fed.
 
-**The Under-25s:** validating their anger at the rigged system and giving them the mechanical tools to escape indentured servitude. The old model of labor-for-survival is mathematically impossible for them, that is a structural failure of the economy, not a failure of their ambition.
+Now there's something real to vote on. People can say yes, no, or change it, and they can see what it costs and check whether it's working. That's how a good idea becomes a public promise instead of a sentence that starts with "society should."
 
-**The Institutional Stakeholders:** offering a logical, math-based strategy for preserving asset value and stability through automated infrastructure. Property owners and community stewards can leverage robotics to fix, maintain, and upgrade infrastructure that human labor can no longer afford to preserve.
+## Keeping people whole while it's built
 
-The curriculum is modular, actionable, and technical:
+The person who just lost a job to a machine needs to eat while all this gets built. A retraining course only helps if your life can survive the time and cost it takes. Rent, food, medicine, the bus, and your kids don't wait for a certificate.
 
-- **Infrastructure deployment:** mesh node deployment for secure, localized communication that keeps working even when the global grid goes down; DC microgrid implementation for power resilience at the community level; the Regenerative Hub, integrating mechanical transducers to refine local waste into materials for housing and food.
-- **The ALC protocol:** asset value retention through robotic maintenance, and decoupling survival, moving from a "work or die" contract to a cooperative model where machines perform the labor, and humans perform the coordination, art, and community care.
+So whoever brings the machine in should answer for the people it moves out, before the job is cut, not after. Who keeps the paycheck or the essentials coming? What do the workers get a say in? What help is funded, and for how long? The answer might come from the employer, a union, the county, or a co-op, but somebody has to put their name on it.
 
-A system is only as good as its ability to provide food, shelter, and care locally. If your economy cannot provide an Adequate Level of Care to its neighbors, it is a failed system.
+Some hard jobs will get harder to fill once people have better choices. Good. Then look at the pay, the conditions, the training, the equipment, and whether the job needs doing at all. Using hunger to fill jobs is exactly the problem this book is trying to end.
 
-The old world is gone. It's time to start building the new one.
+Food first is where we start, not a rule that everything else waits. Housing and health care can move at the same time. The fired cook's dinner is just the first test.
+
+## Put the failed meal on the board
+
+Before expanding a service, imagine that next week's commitment has failed. Work backward with the people who would experience it. Perhaps the crop is unavailable, the driver is ill, the food can't be used, the system gives a wrong answer, or the operating money has run out. Ask them, because they know things the plan leaves out.
+
+Use a short record:
+
+| Question | What to record |
+| --- | --- |
+| Who is affected? | The people whose food or work would be disrupted. |
+| What would we notice? | An observable warning, including a missing confirmation. |
+| Who responds? | A responsible role and a backup who has agreed to act. |
+| What happens to the meal? | A confirmed alternative, or a clearly unresolved gap. |
+| What supports the promise? | Available supplies, labor, money, and the date that provision ends. |
+| When do we review it? | The next decision date and the evidence people need. |
+
+Keep people's personal details out of public records unless they're needed and the people agree. Give the people you're feeding a way to correct what you assumed about their lives. A delivery logged as complete may still have left somebody with food they couldn't eat.
+
+Test a response before depending on it. Confirm the alternative supplier's capacity; let the backup person actually perform the handoff; check the public contact route. A second name in a spreadsheet isn't a second available driver.
+
+![An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.](/book-images/v101-chart-meal-response.svg)
+
+*When a meal fails. An illustrative worksheet from this chapter's premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise.*
+
+## Grow the promise at the speed you can keep it
+
+A pilot can run on a grant for a set time. A floor people build their lives on needs money that keeps coming, and a plan for when it's threatened. Tell people which one they're getting. Nobody should find out about a funding gap by waiting for a meal that never comes.
+
+Check three things together: whether the machines work, whether the remaining jobs got better or worse, and whether people actually ate. Winning on one doesn't excuse losing on another. If a machine saves time but puts a worker in danger, fix it. If the food arrives but only members can get it, you haven't kept the promise yet.
+
+Grow by adding partners who bring what's missing: other crops, cooking, delivery, winter coverage, a pickup spot people can reach, and public money beyond the founders' circle. One small success proves that one small thing. It's also the best thing you can carry into the next meeting.
+
+There will be fights about money and ownership, arguments about methods, and failures nobody saw coming. None of that means the way things are now is the only way they can be.
+
+The first meeting doesn't have to design the whole economy. It has to end with one person responsible for one next step: a costed proposal, a trial, a talk with the workers, one delivery gap closed. Put a date next to it. Bring the people it affects back when you check the result.
+
+Wide lens, narrow focus. Keep the larger promise in view, and keep making the next piece dependable.
 
 ---
 
-## Precedent P-22: The Apocalypse That Ran On Time (1999)
+## Who this is for
 
-The Y2K bug was real. Billions of lines of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" was going to mean 1900 to machines that ran the world.
+This roadmap is written for two audiences, and they need the same thing.
 
-What followed was history's largest premortem. Instead of waiting to see what broke, the world assumed failure in advance and worked backward: roughly three hundred billion dollars spent globally, about a hundred billion in the United States alone, on auditing, patching, and testing before the deadline. Midnight came. Planes flew. Banks opened. The disaster produced trivia instead of headlines.
+**People under twenty-five.** Your anger at the rigged arrangement is justified. The old labor-for-survival deal has been failing you on both ends, and that's a structural failure, not a failure of your ambition. The tools in this book are a way to stop renting survival month to month.
 
-Then came the instructive part: the punchline. Because nothing happened, a chorus concluded that nothing would have happened, that the whole effort was hysteria. And honesty requires the caveat: some countries that spent little also passed quietly, so the true size of the averted disaster is genuinely contested. Sit with how strange that is. The most successful large-scale act of anticipatory engineering in history is remembered, by many, as an overreaction.
+**People who already hold something.** Property owners, local institutions, community stewards: the same machines can help maintain and upgrade housing, land, and infrastructure that human labor alone has gotten too expensive to keep up. A community that can feed and house its people is also a more stable place to own anything.
 
-**The mechanism.** Prevention is invisible by construction. A premortem that works looks, from the outside, exactly like paranoia that turned out to be unnecessary, because the catastrophe it purchased the absence of never shows up to testify.
+A system is only as good as its ability to provide food, shelter, and care to the people inside it. The old arrangement is breaking under us. It's time to start building the next one.
 
-**The rule.** This is the emotional price of the Premortem Pivot, and you should pay it knowingly: if you prepare well and the transition doesn't shatter your life, people will say you overreacted. Let them. Judge your preparation by the quality of the reasoning before the deadline, never by the silence after it. The silence is the product. You are buying it now.
+---
+
+## Precedent P-22: The Apocalypse That Ran On Time (1999 to 2004)
+
+The Y2K bug was real. Enormous amounts of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" could mean 1900 to machines that ran the world. [US GAO, Year 2000 Computing Challenge: Lessons Learned (2000)](https://www.gao.gov/products/aimd-00-290)
+
+What followed was a global exercise in anticipating failure. Instead of waiting to see what broke, organizations assumed failure in advance and worked backward, spending, by common estimates, hundreds of billions of dollars worldwide on auditing, patching, and testing before the deadline. The US government's own retrospective describes the scale of that work. [GAO, Year 2000 Computing Challenge](https://www.gao.gov/products/aimd-00-290)
+
+The best of the work was ordinary and concrete. The Department of Housing and Urban Development built an inventory of how its systems depended on each other and on outside partners, and found the inventory useful long after the date problem was solved. At Oak Ridge, a rollover test caught a nuclear-material accounting system writing four-digit years to a transfer program that expected two; the transfer failed, and staff moved the data on magnetic tape under contingency procedures they'd already updated and tested. [GAO, Y2K Lessons Learned, pages 29 to 32](https://www.gao.gov/assets/aimd-00-290.pdf) The Social Security Administration folded its Y2K contingency plans into its permanent operations, and in 2004 required that software be validation-tested by people other than the ones who built it. [GAO, Social Security Administration Year 2000 Readiness](https://www.gao.gov/products/aimd-00-125)
+
+Midnight came. Planes flew. Banks opened. And then came the strange part: because so little happened, a chorus concluded nothing would have happened, that the whole effort was hysteria. Some countries that spent little also passed quietly, so the true size of the disaster that was avoided is still argued about. But that vast act of anticipatory engineering is remembered, by many, as an overreaction. And one caution runs the other way: a missed AI forecast doesn't get to call itself a disaster averted. Y2K had a known deadline and a bounded class of bug. This transition has neither.
+
+**The mechanism.** Prevention is invisible by construction. A premortem that works looks, from outside, exactly like paranoia that turned out to be unnecessary, because the catastrophe it prevented never shows up to testify.
+
+**The rule.** Judge your preparation by the quality of your reasoning before the deadline, not by the silence after it. If you prepare well and the transition doesn't shatter your life, people will say you overreacted. Let them. The silence is the product.
 
 **The practice.**
 
-1. Run the household Y2K this weekend. One hour, everyone affected present. The prompt: "It is January 2028 and our income got cut in half by the transition. What broke first?" Work backward from the failure the way the programmers worked backward from midnight: list the top three things that would have needed patching, then patch one of them this month. Not the whole list. One.
-2. Set your remediation budget and write it down like a line item: the percentage of income and hours per week you spend on preparation: skills, soil, energy, savings, community. The world spent roughly three hundred billion dollars on Y2K and called it sane. Your five percent is not paranoia. It is the same engineering, at household scale.
-3. Date-stamp your reasoning. Every significant preparation decision gets one paragraph in the notebook: what you knew, what you assumed, why you acted, with the date. When the silence comes and someone says you overreacted, and both will happen, you will judge yourself against what was knowable at the time, not against the disaster that didn't arrive. That paragraph is the difference between conviction and embarrassment, and you write it before the deadline or not at all.
+1. Run the household Y2K this weekend. One hour, everyone affected present. The prompt: "It's a year from now and our income got cut in half by the transition. What broke first?" Work backward: list the top three things that would have needed fixing, then fix one of them this month.
+2. Set your preparation budget and write it down like a line item: the share of income and hours a week you put into skills, soil, savings, and community. The world spent a fortune on Y2K and called it sane. Your few percent isn't paranoia. It's the same engineering at household scale.
+3. Date-stamp your reasoning. Every significant preparation decision gets one paragraph in the notebook: what you knew, what you assumed, why you acted, and the date. When someone later says you overreacted, you'll judge yourself against what was knowable at the time.
+
+---

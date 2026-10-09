@@ -1,0 +1,55 @@
+SURVIVING THE SINGULARITY
+
+
+Distribute copies, not just links.  Peer-to-peer systems like IPFS
+address a file by whatʼs in it, a cryptographic fingerprint, rather than
+by which server itʼs on, and anyone can help host a copy. Thatʼs great
+for keeping something findable. It isnʼt a promise of permanence: a
+file stays available only as long as someone keeps it and serves it.
+Keep a sneakernet. Sometimes the most reliable network is a person
+with a pocket. A single small memory card can hold a whole library
+of manuals, maps, and a full offline copy of Wikipedia. Passing drives
+hand to hand avoids a lot of network exposure. It doesnʼt make a file
+immune to loss, damage, or copying, so encrypt whatʼs private and
+keep more than one copy.
+
+Build a local archive. Kiwix reads downloaded reference collections
+offline. Choose the language and edition you need, check the down-
+load size against free storage, and test it with the network off.
+Wikipediaʼs mini files contain article introductions; nopic keeps full
+articles without images; maxi is the full edition. Add the manuals and
+records your community uses, and record each collectionʼs date.
+Youʼre now the librarian of your neighborhood. Kiwix, FAQ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+276

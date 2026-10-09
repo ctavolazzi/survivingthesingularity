@@ -1,0 +1,2093 @@
+{
+  "schema_version": 1,
+  "reviewer": "codex /root/proof_middle",
+  "recorded_at_utc": "2026-10-01T01:21:07.165896+00:00",
+  "status": "review_complete_with_findings",
+  "pdf": {
+    "path": "book-build/Surviving-the-Singularity-v0.10.4.pdf",
+    "sha256": "4c6b8b0d034d35824d26a20a692a9d450810af380b2c43f376d52e19fd2c931d",
+    "page_count": 411
+  },
+  "assigned_range": [
+    104,
+    205
+  ],
+  "assigned_pages_reviewed": 102,
+  "boundary_pages_reviewed": [
+    103,
+    206
+  ],
+  "method": {
+    "text": "Every physical page103-206 read in ascending order from pypdf text extraction of the final reading PDF; text receipts contain exactly that extraction. Text also read in rendered page images during visual pass.",
+    "visual": "Every physical page103-206 individually opened using view_image at720x1080, directly rendered from the final reading PDF at120dpi by Ghostscript. No contact sheets or automated image-existence substitution. Gary source image additionally opened at full native size.",
+    "renderer_command": "gs -q -dBATCH -dNOPAUSE -sDEVICE=png16m -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -r120 -dFirstPage=103 -dLastPage=206 -sOutputFile=docs/page-review-v0.10.4/middle-preview/sequence-%03d.png book-build/Surviving-the-Singularity-v0.10.4.pdf",
+    "image_numbering": "Preview001 is reading-PDF physical103; physical page = sequence +102.",
+    "coverage_limit": "Editorial and visual reading-PDF review. Does not recertify every historical, legal, technical, health or financial claim, nor grayscale, EPUB or web pagination. No manuscript or PDF changed. Specific source questions are marked pending.",
+    "bundle_note": "Shared frozen manifest was not yet available, so owned previews and exact hashes document what was actually viewed."
+  },
+  "guide_files": [
+    "src/lib/data/book/VOICE-GUIDE.md",
+    "src/lib/data/book/ELIJAH-PROTOCOL.md"
+  ],
+  "pages": [
+    {
+      "physical_page": 103,
+      "printed_page": "98",
+      "assignment_role": "boundary_context",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-103.txt",
+      "text_sha256": "ca515f754e304cd2f909b41c61ba4322e3831e58cdef29fa7eb094fed15977cb",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-001.png",
+      "image_sha256": "24cfebadb698c956ea712080622544851df8e0b5c0d61dac2f84e9b51ba67b66",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Boundary context: separate herd and tractor scales are labeled, source and preliminary-year caveat readable. No chart or caption clipping.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 104,
+      "printed_page": "99",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-104.txt",
+      "text_sha256": "47654f0fb0b2c50502e00cb1620ecc7e765df46eef34806a185272b84b8c9e46",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-002.png",
+      "image_sha256": "0665c0a727c85e30d3a0218d28a01a1bf5fe568fd18dd11462d58f46a48aa2c7",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Horse precedent closes with three complete practices. Units remain separate; task value is distinguished from human value. List is readable and intact.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 105,
+      "printed_page": null,
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-105.txt",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-003.png",
+      "image_sha256": "70f63eb3bda755fc9b3cc5cd581abdc2adbfaff97de3f4ec8189ecf51903da7c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Intentionally blank page between Chapter 5 and the Part II opening. No running head or stranded content.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 106,
+      "printed_page": "101",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-106.txt",
+      "text_sha256": "3691961a918269879ed1ffac729731f92570269a6c5755998bc93bf8d68b31d3",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-004.png",
+      "image_sha256": "d1d0718a783e7daf4e5d6dd34545fedec060eca911acbb6b936e32eec4b8ba5b",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Part II title, table illustration and introductory paragraph are balanced and legible. Nineteen-household premise carries into the next page.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 107,
+      "printed_page": "102",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-107.txt",
+      "text_sha256": "aa20e40166e0bf2466baed80315f58dc7fedd6207b7dad2ee37d3def8c499bb8",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-005.png",
+      "image_sha256": "c76aeaaad82fe6aa6e0eef5a36a6a4442a45a3eac4b36736b4b9521c3171536c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Four-person cast plate and names are readable. It explicitly presents four people, not an exhaustive membership list.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 108,
+      "printed_page": "103",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-108.txt",
+      "text_sha256": "0398c827f5a77f5fde9a66f4df6eef3d92631c37df8bca232d65e137941aa2af",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-006.png",
+      "image_sha256": "c820a4ea4cc53240ed1e79033433b2e300d181288cd99151785d7af9232f8a4d",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Chapter 6 opening, tool illustration, Clarke epigraph and all four briefing bullets fit. LinkedIn exclusion remains a textual overstatement.",
+      "finding_ids": [
+        "MIDDLE-04"
+      ]
+    },
+    {
+      "physical_page": 109,
+      "printed_page": "104",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-109.txt",
+      "text_sha256": "f3bce8a88d64902a8361a5811786504852178af49cceadd19612432ce96a842a",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-007.png",
+      "image_sha256": "274d7c14e92221f7f7a8ccec038a88478c691be4787808d8b3c80a072acd45ff",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Departure eleven months after the toast, check-engine light and first workshop sight form a coherent scene opening. Text is readable without stranded lines.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 110,
+      "printed_page": "105",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-110.txt",
+      "text_sha256": "a5fed415b0cf2a675fb90bc29997d4ede013ffe1cdfda8b8f1f8f1850f46d2e0",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-008.png",
+      "image_sha256": "fadfba8456f2b6d621196ef45d096c26153bcf6cd72c45e953d90af0819c6d20",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Tool-wall picture and its caption agree with the scene. The embedded lettering is small but repeated in the readable caption. Pitch continues naturally on the next page.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 111,
+      "printed_page": "106",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-111.txt",
+      "text_sha256": "ce412e45c80613c38d0fba287246bdee5f7d60c760ba56697bdf37e6ae93b85f",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-009.png",
+      "image_sha256": "f6e2c3a73ea5fea8e60fef9518565bb7e9218ceb53b4a84ef3cb20196dfaaf85",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Marta's three-part response, 2009 history and broom handoff are complete. The scene earns its lesson through friction rather than a new technical mastery.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 112,
+      "printed_page": "107",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-112.txt",
+      "text_sha256": "169909a31f23e16c2ac2a06d087150c176101adaff4845c6bac3b017749b7edb",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-010.png",
+      "image_sha256": "b6b5fde74d2c9b8ccafaf741bb421a8109144207159a6cb8b5f1580fa4537a03",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Clear Foundations boundary. Singularity definition and Thanksgiving 2027 forecast are expressly the author's positions, separated from the practical argument.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 113,
+      "printed_page": "108",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-113.txt",
+      "text_sha256": "d647719b640a907dd7f469d755bd90cf5f44d41749983ed2a77f5cde40c4e82e",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-011.png",
+      "image_sha256": "ef649ccefca53fe386f6662cbe55159f1d6063399ea3190f4bf989fb07c90855",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Four-question diagram distinguishes capability, deployment, ownership and access. Labels are legible; paragraph continues across the page turn.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 114,
+      "printed_page": "109",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-114.txt",
+      "text_sha256": "08d1af09b4b56c1c6dced20f40039d0350b88b685c6a0e759380a18e45cbcce1",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-012.png",
+      "image_sha256": "4f85d5506acb776d7f1165c11d76d76b2396fb658567c054604d5e6ab551bf9f",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "ILO qualification preserves exposure versus job-loss distinction. Source label visibly runs into Good without citation punctuation. Fear categories retain humane framing.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 115,
+      "printed_page": "110",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-115.txt",
+      "text_sha256": "7f98bd923ae3569496580c49596145b0e92836fb441b6d3f0c7d5686ff8fcb22",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-013.png",
+      "image_sha256": "0b10e58e10de101adbde1d843471c344c48a68dfcd7544126527d1da88b8a9de",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Housing paragraph discloses value-versus-sale-price mismatch. Consecutive Census labels interrupt syntax in plain body type; no visual cue separates them from the argument.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 116,
+      "printed_page": "111",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-116.txt",
+      "text_sha256": "003039fae8f50d576a137fb2bf96e04d4ee0bba734f1beea51b44a81e8cf0e7f",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-014.png",
+      "image_sha256": "070f3b7aa1b9f761d7a88730a966d9855757f3482e222dac4038dc8a910eb048",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Income chart shows selected groups, national reference and percentage axis clearly. Caption explicitly says association rather than causation.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 117,
+      "printed_page": "112",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-117.txt",
+      "text_sha256": "58525fc64130511e591fb47ecb37ed9c6e8771b94caa9ebc0710d25462c3c914",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-015.png",
+      "image_sha256": "be2d0baab2bdf26c45bc9000ce95712cbefe5b8ad0ad62d5bdd930f2bf6baf00",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Numbers box fits. Employment exposure, differently measured housing ratios and child food-insecurity qualification remain readable. Rights and oversight paragraph follows clearly.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 118,
+      "printed_page": "113",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-118.txt",
+      "text_sha256": "04e185434dc0d21fbf6f7feba96fcead01f2bebd96c7d57fba282efa0bdedd36",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-016.png",
+      "image_sha256": "07e77606466e1ed5989297737c0439417cf3d9f911583514bb0bdb64053dc320",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Gate graphic and caption match capability versus access. Practical connection reaches beyond the co-op and offers a specific existing-provider question.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 119,
+      "printed_page": "114",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-119.txt",
+      "text_sha256": "df207246864ce21a679fdc1b5b1ce3482f1b34a186bcef06e2132593addd619c",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-017.png",
+      "image_sha256": "a1a86bbbbaf592f5223fe1b236bb5590043de237612c9e981fefe145b2c56977",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Grain case includes mixed archaeological evidence rather than one-way decline. Citation labels repeatedly intrude into sentence flow; otherwise page is readable.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 120,
+      "printed_page": "115",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-120.txt",
+      "text_sha256": "7c9c579a0a680ba770de31fae9d1d91496d907b61cdf035a96ea82f5f40503d2",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-018.png",
+      "image_sha256": "7d1e827bdf69c19d1a956ef664c36fd683b80c973794d355e9572bf71caa7865",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Three practices are complete. Revised group audit asks for observable changes and who carries costs. No orphaned list item.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 121,
+      "printed_page": "116",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-121.txt",
+      "text_sha256": "33dc5d85863180897797876c7aef5dbf9d13c60f70173abd0ae875280b0e93b4",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-019.png",
+      "image_sha256": "c0499d584ee6ff15e5f66584ad9521b36d6326fc73968ace84337a33c4cbcb35",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Chapter 7 title, chess image, qualified Pasteur attribution and four briefing bullets fit. Mindsets are introduced with the qualification that people carry both.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 122,
+      "printed_page": "117",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-122.txt",
+      "text_sha256": "a0c61cea79a7c97dea76c3964da4babb91f9f9d64e19dd588853ef333d2a8672",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-020.png",
+      "image_sha256": "ffdab06bf9725fa1ac656a9ae2a48d363d8afc24bffb7f14e55923fd18a035ac",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Second co-op dinner and five-week marker are clear. Denny's first retraining account continues without an awkward heading or figure interruption.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 123,
+      "printed_page": "118",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-123.txt",
+      "text_sha256": "c834b51ed619420f509af09d4c6161647eec00dec2404f3b8367934c547b3db6",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-021.png",
+      "image_sha256": "cfbb3d8a61e66fcd1001fe5f345fed83d3875bd44b0d0f1c71b9b97165ef1f94",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Denny's second ladder and six-month survival question land well. Curtis's fence position and Marta's intervention remain distinct voices.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 124,
+      "printed_page": "119",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-124.txt",
+      "text_sha256": "38c6f55ca7e3b57c863aecb1fcc232a84c886787b63deec0321df96348768e9d",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-022.png",
+      "image_sha256": "88aca48adb626f978b03db2e9ae770c9e370e352b6cf5bf9d464c46d852cfc6a",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Marta's historical argument ends with the concrete beans exchange. Large lower whitespace is explained by the following scene illustration, not missing prose.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 125,
+      "printed_page": "120",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-125.txt",
+      "text_sha256": "bcb28dba8082358e5ad807e2eded6c84585ceb2531838fd5d076260d90acc5c1",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-023.png",
+      "image_sha256": "fcc07c201eaac7cdebb5c6561d6a50dcbc8da1ac485a8b606f917983d25d4079",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Beans scene image agrees with preceding action and has a fiction caption. Elijah's names page and Tuesday delivery transition stay readable.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 126,
+      "printed_page": "121",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-126.txt",
+      "text_sha256": "f83260fa51aa3fc9fa8b52a20df6803399a4d5aa27d697edce57f866fdc8c61d",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-024.png",
+      "image_sha256": "36ebc9cd45b368ad458306c4899bb6c67b94f7a0866001cdc5fad87ce23a66b2",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Rosa's wrist, unusable ingredients, corrected meal and lack of work requirement are specific and coherent. Paragraphs and dialogue fit cleanly.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 127,
+      "printed_page": "122",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-127.txt",
+      "text_sha256": "bd042889bc36eddf096cf1cdbf8cf9fd65f94573135f9559003383f68cef76fd",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-025.png",
+      "image_sha256": "665f109ddd15cf3768366eb257ea40790be6fe9c3a5a124ae1e7b26c625c6ab0",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Route funding and delivered mark finish the scene. Ornament and Foundations label clearly separate the argument from the fiction.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 128,
+      "printed_page": "123",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-128.txt",
+      "text_sha256": "086eb9ca5bc269db876b892945e0a1f7324f73a4b5765e454d41c5922e55f2e2",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-026.png",
+      "image_sha256": "6834cd65532f71237e9a33848193313f4c7e7907429cbe77f769a14e20bc3f04",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Entitled/Ready table is readable with intact rows. Nearby paragraph explicitly frames reflexes rather than fixed good and bad people.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 129,
+      "printed_page": "124",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-129.txt",
+      "text_sha256": "984eb44eab5f7b8404757eb8697a1b54279bb7abc5bef9162685c711504e5463",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-027.png",
+      "image_sha256": "de57a9d698af9beb663a36ef060af0e761ce037f99addff48042746f5f0fa545",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Jahoda functions table is legible and complete. Source label is plain body text; final sentence continues on the next page.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 130,
+      "printed_page": "125",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-130.txt",
+      "text_sha256": "64f1a44cf36ef861a99ae42eb20d21fa8428a8dab6e5d9934b53b498e692f4d8",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-028.png",
+      "image_sha256": "990741d76c2e6ba6a561d117d1334ffcda3fb1d1b059f8271d1dd84b90f3b960",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Keynes and scarcity-study qualifications are present. Several unmarked inline source titles disrupt sentence boundaries. Jordan example is expressly non-typical.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 131,
+      "printed_page": "126",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-131.txt",
+      "text_sha256": "1069659bd7c41909a0bc36cb52b73bb0ff3afa0890dbb59ad89a28d9b5998955",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-029.png",
+      "image_sha256": "979e768c01d26c351f016afef4a8384f18a32830aa59c9eb7c6d7c6ba62843ef",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Robotaxi table is legible but row alignment implies relationships between independent lists, especially empty-vehicle rule opposite arson. Attribution needs separation.",
+      "finding_ids": [
+        "MIDDLE-05"
+      ]
+    },
+    {
+      "physical_page": 132,
+      "printed_page": "127",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-132.txt",
+      "text_sha256": "29d9806be27e01f221422876b7e8a3a1f6d99eaf07efb780e388d52b3b89979d",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-030.png",
+      "image_sha256": "bbe129fd8d9cf984811763c33b2f976bed4cbaac3846c4b29c8c4c379dbb3193",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Source block is visibly differentiated in italics. Historical-campaign table begins with a full row and continues with headers repeated next page.",
+      "finding_ids": [
+        "MIDDLE-05"
+      ]
+    },
+    {
+      "physical_page": 133,
+      "printed_page": "128",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-133.txt",
+      "text_sha256": "24b3d3df7c3c7bc0bec4af62530e8cd23eb650b41e167e46c0539c0a7678aa46",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-031.png",
+      "image_sha256": "5a7a6fe94ef6800e2789cdae7e411b302c390bd2c3fe833fb5cb1a644d889eb1",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Five-column historical table stays within margins and preserves all rows. Small type is readable at the viewed size; no clipped dates or source labels.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 134,
+      "printed_page": "129",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-134.txt",
+      "text_sha256": "7aa79f95fc0f2b6f36e0bf45d9b284e367061e5c11fa5c317a0499fd28b052e7",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-032.png",
+      "image_sha256": "d1bc6d992ec30eb3db15301d733acd35e690df513732ee435000e561cee5c65a",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Primary-source discipline and myth exclusions are explicit. Egalitarian pivot is direct. Rhetorical weeks claim is broad but not treated as a measured estimate here.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 135,
+      "printed_page": "130",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-135.txt",
+      "text_sha256": "c7b6b92950ef4458a17eb7cd7646060ae9b2ecfdf4171dd0437ab6bd1122426f",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-033.png",
+      "image_sha256": "386586cee3f6a139d380afc6cc45cce8acec37fb9d41c66c4ee578b6376193f0",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Cooperative burden-sharing includes regional-disaster limits and distinguishes harvest research from an untested food baseline. Exclusion warning remains intact.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 136,
+      "printed_page": "131",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-136.txt",
+      "text_sha256": "d74184522447ec9d211c6fef899e5955275daadf81a2cdcfdc54281fc1a9f006",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-034.png",
+      "image_sha256": "8e4c20caee824177c704135ffd03f4c889d87777929fa68577f4016fcda6ae1a",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Food access and working conditions are joined rather than traded off. Worker voice and surveillance objections are taken seriously. Clear close before precedents.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 137,
+      "printed_page": "132",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-137.txt",
+      "text_sha256": "7f808db895c80ad3e877d4a8d9d26fb14da3176402ae3666d5b7ccc617d1eeaf",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-035.png",
+      "image_sha256": "c1326cacaa313dfb95f30785c6542ce5a55daeb4bd6b5924fe0dab367d7d3c23",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Luddite account holds grievances and violent methods together. Inline source labels repeatedly merge into prose; no visual content loss.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 138,
+      "printed_page": "133",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-138.txt",
+      "text_sha256": "4305eee4aa6bac8e0d70cae9d866260204b5a564679d60d290346d0759d817c5",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-036.png",
+      "image_sha256": "50597ab8a84d21792255c87f0e125c687844b837095bb5e40f03eab08be2d19c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "P-09 practices and P-10 opening fit. Knowledge exercise overstates ownership and dismisses unwritten expertise; a nonconfidential inventory would make the action clearer.",
+      "finding_ids": [
+        "MIDDLE-09"
+      ]
+    },
+    {
+      "physical_page": 139,
+      "printed_page": "134",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-139.txt",
+      "text_sha256": "19076293b89fc997710fe9d1d70b7e16afae3553b55f2caa38017aea6699f571",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-037.png",
+      "image_sha256": "ad3ff9ab22da47df4f6e629069a615bd6345498fe10d92ac5ced21eb7f51f473",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Archival ad is present but its body copy is tiny at reading size. Nearby prose transcribes selected lines. Caption and source are visible.",
+      "finding_ids": [
+        "MIDDLE-02",
+        "MIDDLE-10"
+      ]
+    },
+    {
+      "physical_page": 140,
+      "printed_page": "135",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-140.txt",
+      "text_sha256": "6a4c178ad3742e31050905cfc03fe951f8c80e65de79ca370cd66b8c239fee53",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-038.png",
+      "image_sha256": "857c974cd2c48446e27b4b910ffda4c1809fd40e19fc67a5078ed15dd1d27e1e",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Second ad's coupon is recognizable but too small to read comfortably. Largest-ever campaign claim is not established by the union's own enrollment figure alone.",
+      "finding_ids": [
+        "MIDDLE-02",
+        "MIDDLE-10",
+        "MIDDLE-11"
+      ]
+    },
+    {
+      "physical_page": 141,
+      "printed_page": "136",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-141.txt",
+      "text_sha256": "e6184b45b5aaea12a9114bf7dcea8a458e1f1f5763f24be4956f8d6ea0997574",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-039.png",
+      "image_sha256": "fce061db02a1dc15756ca0f7cdb32cc45f2355c8a6b76d1cc97629da7f42b349",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Music Performance Trust Fund example clearly separates free admission from paid labor. Closing practices are concrete and legible. Inline citation presentation still intrudes.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 142,
+      "printed_page": "137",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-142.txt",
+      "text_sha256": "5438930dbc4ae6b5ea73ba1be94470aeebec51afe4fdd02fd9170c48b2d89a18",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-040.png",
+      "image_sha256": "542ed11531748fd5e297338521d0690cb1e2253bd3eb110412a939c51e768226",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Chapter 8 opening photo, Mackay quotation and four briefing bullets fit. Page is visually complete with readable attribution.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 143,
+      "printed_page": "138",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-143.txt",
+      "text_sha256": "78dc5f8e80638db39926cd88b5c29bfd2a67516a4578b61f4fe701775ee9717a",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-041.png",
+      "image_sha256": "f73d43f502806233a80ab359ea91c7db5321cfb9917b366d87b6a58f02e39200",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "November six-week marker follows Chapter 7 coherently. Diligence turning into a spiral is patient and concrete; Priya and Denny notice absence before Marta arrives.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 144,
+      "printed_page": "139",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-144.txt",
+      "text_sha256": "143c85bf981735ca6e3b7c214657b0c3961777cc24ced36217d78f4b5a105637",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-042.png",
+      "image_sha256": "665fa374be3ba88e51edb523bcf44e9119b783c4f08e213331b8241d8d5a1fe5",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Gary portrait retains embedded text saying he could not fix a fence, absent from the external caption and at odds with the revised next-page account. This is a substantive image-text defect.",
+      "finding_ids": [
+        "MIDDLE-01"
+      ]
+    },
+    {
+      "physical_page": 145,
+      "printed_page": "140",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-145.txt",
+      "text_sha256": "075e93d7afbff5ea66137dc3257be01e7c7c858102e44609c4141a8fc8316716",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-043.png",
+      "image_sha256": "69dabbb878d82f1fb87a5d8e307796c1991db26e0cd40af0709a93b8ac4be829",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Gary/Sal correction explicitly names care, transport and childcare differences, and help without a work test. This humane passage should govern the portrait and later habit claims.",
+      "finding_ids": [
+        "MIDDLE-01"
+      ]
+    },
+    {
+      "physical_page": 146,
+      "printed_page": "141",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-146.txt",
+      "text_sha256": "d305a3a1ada89904738f011de1366118848eb61851d43c50cf117074a5709422",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-044.png",
+      "image_sha256": "f7eb1251db0a26ac8d36368ffaee5720a55142ca5dc39f5949a53486494a8a3c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Panic does not vanish instantly. Lunch is not a reward. Foundations boundary is clear and the definition of mindset rejects blaming the frightened person.",
+      "finding_ids": [
+        "MIDDLE-01"
+      ]
+    },
+    {
+      "physical_page": 147,
+      "printed_page": "142",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-147.txt",
+      "text_sha256": "e0406b6809b19630c41d9da28148f0c5384be941496700bffac61dd94a471dcb",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-045.png",
+      "image_sha256": "eb2b5e7ab9d1dd6bd47ae0b43e50e0a2aa9404da809eba3db69a78adc16d5f5c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Phone/attention argument is readable. Large lower whitespace precedes a full figure next page, contributing to the chapter's interrupted visual rhythm.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 148,
+      "printed_page": "143",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-148.txt",
+      "text_sha256": "2131db00470cd8dd3ba0b6233d0f5fa46ad6bf6066862c2570054ae395248d48",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-046.png",
+      "image_sha256": "4e752a3d9da0030eb95d8dcc02968857100f509aeaf2891df77a9c90c329166b",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Attention diversion diagram is legible and explicitly conceptual. Caption and body repeat the non-diagnostic qualification; figure repeats ideas developed in adjacent graphics.",
+      "finding_ids": [
+        "MIDDLE-07"
+      ]
+    },
+    {
+      "physical_page": 149,
+      "printed_page": "144",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-149.txt",
+      "text_sha256": "de9d7ba7224316513345d44434635928a738916332b2d11150e4c40d84a58a1c",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-047.png",
+      "image_sha256": "2e220e4298e50b1f3035e7efc772e7519928a9747eb2237ec1f6d35621f4bdaf",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Energy and interruption research are carefully bounded. Protected-work experiment includes safety alerts and comparison with ordinary work. Inline citations still lack visible separation.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 150,
+      "printed_page": "145",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-150.txt",
+      "text_sha256": "8d35ca43e14c944a3ddf58d20199e5d7ed8a3c7395edf60fe7ba2cd1e7db7625",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-048.png",
+      "image_sha256": "9e8375fcbfc673410b0ad95d07148626c5e2cf3a1c8d083de98ceb6c111ed116",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Interrupted-work schematic is labeled illustrative. Shannon formula renders properly, but introduces technical machinery only to disclaim its usefulness for the current claim.",
+      "finding_ids": [
+        "MIDDLE-07"
+      ]
+    },
+    {
+      "physical_page": 151,
+      "printed_page": "146",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-151.txt",
+      "text_sha256": "88082d35f18b41f72b2ea08cf401f0be37a0b59884b8deec5aa41cf2bc268866",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-049.png",
+      "image_sha256": "62f1673319ad5d4e856d363542447eaf82b9e4172c444ff8c545fbb2a5d2ac96",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Entropy disclaimer finishes, then firewall heading and analogy occupy only the upper page before another full-size figure. This spread slows the move to action.",
+      "finding_ids": [
+        "MIDDLE-07"
+      ]
+    },
+    {
+      "physical_page": 152,
+      "printed_page": "147",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-152.txt",
+      "text_sha256": "d37a4a6ae385e86f27c1acfc0ead65165b4587bcb6b077e099203142c45d3780",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-050.png",
+      "image_sha256": "42c56449e181997bf1186d9fe38896582e3bb654803c71be5e98494a5cc66fb5",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Firewall flow is readable and described as a trial routine. First notification instruction breaks across the page; the safety exception remains on the following page.",
+      "finding_ids": [
+        "MIDDLE-07"
+      ]
+    },
+    {
+      "physical_page": 153,
+      "printed_page": "148",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-153.txt",
+      "text_sha256": "8c322efc33b5cccc8e6a290085b102e5ddb580edc9e8cc4b37dc8119d1ddb4ad",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-051.png",
+      "image_sha256": "4dea13cbefd29715a3f9449f976aec5815863d84e29eedfeb1b7db3b1f487f4e",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Notification list continues correctly, including safety exception. Semantic-hygiene introduction ends above substantial whitespace before another large figure.",
+      "finding_ids": [
+        "MIDDLE-07"
+      ]
+    },
+    {
+      "physical_page": 154,
+      "printed_page": "149",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-154.txt",
+      "text_sha256": "c96af2896597e8e601b67b40896edc193a2a2ee11ba65beaa68006e12bb3bab2",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-052.png",
+      "image_sha256": "367ffaa5f8071d6b1fbf9602ab6314f3e97f3779bb9096d17ac8f695782dc9fc",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Two-information-routines diagram and limits are readable. Twenty-four-hour rule starts below it and its qualification continues across the page turn.",
+      "finding_ids": [
+        "MIDDLE-06",
+        "MIDDLE-07"
+      ]
+    },
+    {
+      "physical_page": 155,
+      "printed_page": "150",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-155.txt",
+      "text_sha256": "6d0f85ae238cbb807c84faf496fe88fa93dfeea05e6622d7f3bad78c55cfd5da",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-053.png",
+      "image_sha256": "0ed07af33ec415d2ef952e6a1635f58e81dc42b9d7742a298488021635e7d7a7",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Urgent-notice exceptions continue correctly. Batching table overstates outcomes with shallow comprehension versus mastery despite adjacent trial-and-adjust language.",
+      "finding_ids": [
+        "MIDDLE-06"
+      ]
+    },
+    {
+      "physical_page": 156,
+      "printed_page": "151",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-156.txt",
+      "text_sha256": "29ff9c60cd3eeac555507f2bd9364b171378cc1680b6d16bfd078be0f3089b83",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-054.png",
+      "image_sha256": "f0b900b7e9f6d96716976ce9c5d7af01fe99a37cbed6499159166082d716bdda",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Day-cut-into-pieces illustration is legible and labeled conceptual. Fourth and fifth protocols include a later check and adjustment; this is another graphic of the same interruption contrast.",
+      "finding_ids": [
+        "MIDDLE-06",
+        "MIDDLE-07"
+      ]
+    },
+    {
+      "physical_page": 157,
+      "printed_page": "152",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-157.txt",
+      "text_sha256": "be2d8bdef62c3a334f7186ce372e6d7592203ca449822da9b6fe29c6a17dda8c",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-055.png",
+      "image_sha256": "ed15abed8a2dd3ce496cd3993a00bed82d2e458a9d33c7d3aa76fcc61254cb46",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Relational autonomy distinguishes shared work from guaranteed burden reduction. Cooperation argument expressly prevents using dinner as a disciplinary reward.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 158,
+      "printed_page": "153",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-158.txt",
+      "text_sha256": "53577d4ccd03b5cccc7d784eaa8e5080d8c031913a259d85f6495d5bfb5116bd",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-056.png",
+      "image_sha256": "9436a194cbf14b782c8a9a614ad5e81086e5a268abb15505092eae9f853253ba",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Shift, conduct and machine-access rules remain separate from eating. Mesh introduction is readable but ends high on the page before the topology diagram.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 159,
+      "printed_page": "154",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-159.txt",
+      "text_sha256": "339e8444c71e7487ee2b416f8618bc1bd2d7086aa419aef5ad88984d750815d3",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-057.png",
+      "image_sha256": "a75a08a8a73aeff68b18c9fb4d318ddcfd5e0754c5b39c6ca757ab3e42d030aa",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Topology diagram correctly preserves an alternate ring path around the failed center. Dunbar estimate is qualified rather than a hard membership cap.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 160,
+      "printed_page": "155",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-160.txt",
+      "text_sha256": "866ea7d25786b4bff1fe69aa5fa9e492e8e54e6c488f2df902f4e86fa984c06a",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-058.png",
+      "image_sha256": "19434fa3a698766304d8fa1a03c9ec39d411308cbca2b4e72651666826145c7b",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Three-household start, shared tool and written arrangement are concrete. Closing exercise tests actual access barriers and names a date and person.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 161,
+      "printed_page": "156",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-161.txt",
+      "text_sha256": "b04751e1bcf5d603f3ec37c757fe374a7003f08592e26fa64896d838c611f7d9",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-059.png",
+      "image_sha256": "c95eb444716bf80c06e77f1f83de3d1cb347430acac803c5305ffd89a00b2353",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Bernays case distinguishes a press stunt from proven mass conversion. Source labels again read as unfinished body prose, but all paragraphs fit.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 162,
+      "printed_page": "157",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-162.txt",
+      "text_sha256": "8056baafe0470176f16c7d520161ab1ceff2bdce13198a9bb4c6c5b0d63b8f8d",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-060.png",
+      "image_sha256": "c6dca106a791cab7347ea619e9e9627e11ebaa7d8421888e55ecc368a4351406",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Desire-audit practices close the chapter cleanly. Author invites the same scrutiny of the book's own food-first pitch.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 163,
+      "printed_page": "158",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-163.txt",
+      "text_sha256": "870bb5141070c5372f44ffeb59927dfc690eebd980b5d9c75720ca1d9c5b8fb6",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-061.png",
+      "image_sha256": "aa6b2716b1e4afc835f65fb1f6a428ddd700bb8ce8217f4202d92f7a3624134f",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Chapter 9 opening and Kropotkin attribution fit. Four bullets distinguish shortening dependence from pretending to eliminate it.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 164,
+      "printed_page": "159",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-164.txt",
+      "text_sha256": "cf82a501a0b52478f273ac1b533b726a5a5a3acd0aa4cd7110d961f08d7fb996",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-062.png",
+      "image_sha256": "4bab0ff3aaf4180dd06294ed8c8619d91801e14b0f376bbb232ce156f688f237",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "January controller commission and unrepairable first design establish friction. Marta's 11, 1, 0 critique is clear and remains within her practical role.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 165,
+      "printed_page": "160",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-165.txt",
+      "text_sha256": "0da6317ccc5bb7ce651146fe4cf3245f70f581e9f58e8151e893364f6ef0fc5b",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-063.png",
+      "image_sha256": "41a6fb13bd77e434cd8d42dfd28a15be0bbe49bdc326c4632cfe10fa46408d91",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Repairable second version, yellow enclosure and repair card are consistent. Embedded controller caption repeats the readable outer caption without contradiction.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 166,
+      "printed_page": "161",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-166.txt",
+      "text_sha256": "9ffb4aec48a861862e227d8a24e7ffa23291f253f1a2e71a70f9d36a51cd2b50",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-064.png",
+      "image_sha256": "9eb38f2099db60599a2818480ad3a63825d4d53118a1897a5460af8f15c38c02",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Reuben portrait and dialogue fit. Registration, tax advice, mixed-use question and counsel stay separate; the scene rejects treating a label as permission.",
+      "finding_ids": [
+        "MIDDLE-08"
+      ]
+    },
+    {
+      "physical_page": 167,
+      "printed_page": "162",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-167.txt",
+      "text_sha256": "073ebb97127649660425500f6d5e9af8b247c498539c3521cc0fef01fdcad3e8",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-065.png",
+      "image_sha256": "29f5c6657243d541cfa50cdaabf8b3f151854247a867e2e430205fc56d102a59",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Pilot feedback, support and repair loop are concrete. Curtis's hose pays off the check-engine light without turning Elijah into a mechanical expert.",
+      "finding_ids": [
+        "MIDDLE-08"
+      ]
+    },
+    {
+      "physical_page": 168,
+      "printed_page": "163",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-168.txt",
+      "text_sha256": "e85ec1654ad19d33fc8988a7b0c8d1b031b5ad41fa3d9099cf2c7f9542703ebc",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-066.png",
+      "image_sha256": "e669ffa88c9bab03f1ceaea949e10748f7439a55577489cf483fbe8a53f6192a",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Foundations list fits, but none of it waits on anybody's permission contradicts the just-established permit and site constraints. Narrow the claim to beginning inquiry or a lawful trial.",
+      "finding_ids": [
+        "MIDDLE-08"
+      ]
+    },
+    {
+      "physical_page": 169,
+      "printed_page": "164",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-169.txt",
+      "text_sha256": "bf674a2f0214ef3a2b5c0c05b1788c2cc3a0fb59983563c77a26ce5261e139cf",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-067.png",
+      "image_sha256": "79be84f41c20bb4b0d5a24d91a272abefa7d5445cefb6bc8d33a952a5645a63c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Supply diagram explicitly retains imports and human work. Repair/reuse loop is legible and does not claim local distance alone guarantees fairness.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 170,
+      "printed_page": "165",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-170.txt",
+      "text_sha256": "8078e78a8e82acac261e1344afce25ecd758cd9209febdba1d1120a332797a1c",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-068.png",
+      "image_sha256": "f79957f3a848fbdbc01ab19a4b35e766469c1e6458e999650a24b503a11d9670",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Regional framing answers the dense-city objection. Readiness question concerns actual coverage and a defined interruption rather than total self-sufficiency.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 171,
+      "printed_page": "166",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-171.txt",
+      "text_sha256": "1fe0844b0a2a16ae362f610bda54831ff9761fe1656e4a74e8d6c036ec6b8aa5",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-069.png",
+      "image_sha256": "92b65671ae4bcfd922b47c6108b90b86eef0b69d54abbe1a18c668b45ef4c9a7",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Regional-capacity diagram is legible and clearly not a closed economy. Supplies, storage, water, power and delivery limits appear in the figure and caption.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 172,
+      "printed_page": "167",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-172.txt",
+      "text_sha256": "a50e708e6cf00d3f50f325d88f2f83b3b64af7d5657b40749e9f89ace400da40",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-070.png",
+      "image_sha256": "8f20c365d1654be2dc8daf7b5a688c76b0e7f5b0c4a012d082b044d2c499c2ed",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "3D-printer cutout and credit do not collide with prose. Controller-versus-dinner distinction is clear. Haber-Bosch reaction and industrial-energy scope render correctly.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 173,
+      "printed_page": "168",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-173.txt",
+      "text_sha256": "2693cc22a032693a726972c7a768b36e46595f17bc86057bcbf7fdadaf484f0b",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-071.png",
+      "image_sha256": "7191fb445bcfaa6d621cc5dae83a9edfac51d7808bbeb23b7c98fc4007daa371",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Ammonia graph distinguishes average from benchmarks and labels units. Nitrogenase introduction ends at the page bottom; equation follows next page.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 174,
+      "printed_page": "169",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-174.txt",
+      "text_sha256": "af8a05a18acd2df833f8f8ea9c11e67cd05b157c2915aa92e4a3a62348ca66d6",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-072.png",
+      "image_sha256": "7707e3f959b71196d191776d0c3205ebb7bc56a0f924ba1664a0c3e508efacc8",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Nitrogenase reaction is legible though parenthetical wraps. Nutrient exports and FarmBot's narrower documented tasks keep the claim bounded.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 175,
+      "printed_page": "170",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-175.txt",
+      "text_sha256": "c8a41f21c56178ca93ed7a3d857fc1c658d58ee71b48ada82f8469880ee61c77",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-073.png",
+      "image_sha256": "66a4b45a94676760f95006b38cf9bb89ced715c49c6bad5704dcffec586074f1",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Generic gantry diagram has readable X, Y and Z explanation and no universal automation promise. FAO discussion remains a reason to investigate, not proof of town-scale output.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 176,
+      "printed_page": "171",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-176.txt",
+      "text_sha256": "87082e2f69a00d32705a5f9a1c3669972c59a34183d31f48d96f95ed6f0b81d4",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-074.png",
+      "image_sha256": "b580d312f6bc80d5c675d1c21a4234e8b91c435136fd2d640580a75b92cc211d",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Installer spacing, URL and PID equation are readable. Official Mycodo repository confirms the installer command and HTTPS interface; no hardware execution was performed.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 177,
+      "printed_page": "172",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-177.txt",
+      "text_sha256": "b21b85b46af6c5b615bb4a053e0f67652e02f71889f4437c78a1019575acf8c3",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-075.png",
+      "image_sha256": "d510e943f7b53bc1a7cd1f69971c285551775efc7b16628a4dde39d979038158",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Greenhouse control bus is a component map with manual shutoff, data-loss and power-loss checks. Arrows and labels fit without implying a full wiring plan.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 178,
+      "printed_page": "173",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-178.txt",
+      "text_sha256": "7cb856baeb2df8ab10fafa9fc8ca63a5c2b4ce91f677bd34b6716873a5b45f6c",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-076.png",
+      "image_sha256": "ccece68ac3b6e5e0e9147fa2adf822f02d364377713f87f553706a9186ba5d86",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Five-household example is explicitly illustrative. Ten minus two and five times two arithmetic is coherent, and missing food is sourced before declaring success.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 179,
+      "printed_page": "174",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-179.txt",
+      "text_sha256": "4d953132c33d9ccf402dace3f66e917263491d649093e6e9bd0920aaff3a97e7",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-077.png",
+      "image_sha256": "c2e9bab379bcdc21f62f08857142058d39d726488bffb73c20ae9f75d1a67348",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Table continuation repeats header. Graphic shows five homes and 8 plus 2 kilograms, agreeing with the example. Supplement-not-complete-diet caveat is visible.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 180,
+      "printed_page": "175",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-180.txt",
+      "text_sha256": "7563bc348eb2ef09f17a6d550b9a971a3a0c55e2fcab2a9bf2430f04e59ccbac",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-078.png",
+      "image_sha256": "efe77e05c71cdc3fe8d06ab657c37c523a138c3009628bdca6641db46dacfd38",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Whole-arrangement comparison includes workers' experience and maintenance. Next meeting broadens participation. Seed-saving instruction may need a qualifier; cross-check requested from practical reviewer.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 181,
+      "printed_page": "176",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-181.txt",
+      "text_sha256": "9fbf0439546481f061489a8d06285be83b9edc1ced16345983e63874b1f58869",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-079.png",
+      "image_sha256": "5704c790453c38698283a1e10241dda688dce09b56d06d7e6f28586cd305ea69",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Third seasonal practice continues correctly before Bronze Age precedent. Network evidence and uneven-collapse qualification are both retained.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 182,
+      "printed_page": "177",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-182.txt",
+      "text_sha256": "977108e4f45c17cc76871e5585bdbff17fd6801fb1f6a4adb373e23170dd01f7",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-080.png",
+      "image_sha256": "dadbefbc9aa1ea3acdc7bcfcab94d51be098487419bb4b12a96b7990a35c4abb",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Tin-mapping and neighbor-census exercises are complete and legible. Dependency substitution is the stated mechanism; no guarantee of total local independence.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 183,
+      "printed_page": null,
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-183.txt",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-081.png",
+      "image_sha256": "70f63eb3bda755fc9b3cc5cd581abdc2adbfaff97de3f4ec8189ecf51903da7c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Intentionally blank page before Part III. No running furniture or stranded text.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 184,
+      "printed_page": "179",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-184.txt",
+      "text_sha256": "8ee4f7eaa31b7ebc187e69ce5278e1fe53669d42906be7d16da52abb2a7dc41d",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-082.png",
+      "image_sha256": "87559de660ab73531172ddd7f2f38ece8f9ab4e9f9176bb01b78e840ebf82c0d",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Part III opener has balanced title, icon and paragraphs. Explicitly includes people receiving help and those without land, hardware or robots.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 185,
+      "printed_page": "180",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-185.txt",
+      "text_sha256": "5aeea593c512e53672d6d8db6554a30776704c4f7a239390aa7b8634a6292884",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-083.png",
+      "image_sha256": "5ed14cb49ac5c678f0f9efcce84e4145aeccb07109f4492fa65d3a970bb8d170",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Chapter 10 opener fits, but first briefing bullet turns a helpful habit into the line between survival and being flattened. It conflicts with the resource-sensitive argument elsewhere.",
+      "finding_ids": [
+        "MIDDLE-03"
+      ]
+    },
+    {
+      "physical_page": 186,
+      "printed_page": "181",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-186.txt",
+      "text_sha256": "b10d8d86944c1025b46cca18d2be843025dc9457e7c5f60e47ec272925f29ea2",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-084.png",
+      "image_sha256": "2a82020ff91f70437068dd65b6c6c8147787a347be41580124da7ab757654db6",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Denny rejects the scripted performance and tells his own history. Dialogue and opening-spring timeline are coherent; narrative retains specific human friction.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 187,
+      "printed_page": "182",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-187.txt",
+      "text_sha256": "97ad1110b47f60c55df7f5a5b6f7a04b5aa1ef09d0083085d192e52de4b957cc",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-085.png",
+      "image_sha256": "fa572bc51cf72aa71632d21a0f03cf69fd343c1a0bfc0061e6cc8ecfc0b42841",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "A/B comparison is not generalized into a law of the feed. Ownership and revenue arrangement are introduced while Denny remains an active participant.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 188,
+      "printed_page": "183",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-188.txt",
+      "text_sha256": "da786b935bc6a494c03697afecf84b1692050e2db0a2a5f29104f8f76748c014",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-086.png",
+      "image_sha256": "e2b4f5f5e9060e67d0359a47fd2c87614a573c813917652221586e2baf0a0709",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Correction is sent directly to affected growers. Foundations clearly protects rest and care, but its preceding habit-as-dividing-line claim undermines that nuance.",
+      "finding_ids": [
+        "MIDDLE-03"
+      ]
+    },
+    {
+      "physical_page": 189,
+      "printed_page": "184",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-189.txt",
+      "text_sha256": "0bd36be53ad5595d4d9d7a5b39efe9a032affddca2520e77ffad697a8cf1d899",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-087.png",
+      "image_sha256": "edd08b07f6d0312ca0803a839556e63ee9a78fae7c1a5585117a08200edab671",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Cleanup has permission, disposal and return visit; solar kit is optional. Online introductions are now allowed, exposing the leftover LinkedIn exclusion in Chapter 6.",
+      "finding_ids": [
+        "MIDDLE-04"
+      ]
+    },
+    {
+      "physical_page": 190,
+      "printed_page": "185",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-190.txt",
+      "text_sha256": "3f25841e9bdb6c7d4ae8c1cefbbf82dcc8141c359a625ce708ad0cfcba47764c",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-088.png",
+      "image_sha256": "114a409977deb9e69db991ed72aaa99276f210b0dead3708dbe886eb7bd30d60",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Workspace exchange is reciprocal and written down. Sharing requires consent. Synthetic-data discussion begins without pretending a single anecdote establishes it.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 191,
+      "printed_page": "186",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-191.txt",
+      "text_sha256": "37832bbdb32800d31ba25bd8a7051f20bf9ea3c29a2ce3668fde80d815ed197e",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-089.png",
+      "image_sha256": "1bd44efee8e1d0555693635ebe2df5030998f1af2ce3a80fd8a32eee4e0ec0fc",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Kernel equation is legible and expressly schematic, not the paper's general law. Conditions around recursive sampling and real data are retained.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 192,
+      "printed_page": "187",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-192.txt",
+      "text_sha256": "bc89fe0fee5235a595ad6c0f423d0f1c360c99e509462293b02e695f6a5cd2b6",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-090.png",
+      "image_sha256": "1b05951be63ca0ed861de779cab18702ca7e29e12a8783523c8e837309248c99",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Collapse figure labels a possible lineage, not timetable or universal outcome. Shifted narrow curve agrees with drift as well as loss of variety.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 193,
+      "printed_page": "188",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-193.txt",
+      "text_sha256": "bab0ca8196afef6e620d6662da50ce4d9e1e916a8b672286ff37d92360ad7ba7",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-091.png",
+      "image_sha256": "4fed2bb9990fc415f22ad6df0796f532c8a2b89302f3451aa3b3ecadc0731185",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Offline instructions and publishing bet remain useful and bounded. No guaranteed reach is promised; page is readable with intentional space before following figure.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 194,
+      "printed_page": "189",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-194.txt",
+      "text_sha256": "ab912fb05bf0267b901ed1e727c8188a8b34c989ee23cb77a06e19fd0c792965",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-092.png",
+      "image_sha256": "707b77ece124de6f2d16b3db32b54d559c9f2baa3ec0e0fcf5f31c25238f3048",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Publishing sequence diagram emphasizes consent, correction and durable instructions. All labels fit; first rule continues below and onto the next page.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 195,
+      "printed_page": "190",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-195.txt",
+      "text_sha256": "c1e5d211d023c8b562075acaf8a5c96ff5202418a56cbd422b5942adf65c4465",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-093.png",
+      "image_sha256": "c7a1cca704becba2788f0e70aa17fbf3dfd06f87d2a75bd1cf2c7b988723678c",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Rules two and three are actionable. Analog-record limits and US barter qualification are explicit. IRS label blends into next sentence under the general citation issue.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 196,
+      "printed_page": "191",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-196.txt",
+      "text_sha256": "69bf740e625e5fb8d856d8a5acce89eaf74d2c06700d44003f0607d07dddfda1",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-094.png",
+      "image_sha256": "92b7e19b7585cb34ae28a932ce6cc01d6de995f398bcd839ac092679f6a67fde",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Abbot case distinguishes using a tool from endorsing everything about it. Human finishing work provides a concrete task-level example rather than total occupational disappearance.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 197,
+      "printed_page": "192",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-197.txt",
+      "text_sha256": "a64a246b950dd479441a2c11b7202977b3f430412c7d548ee1f87d0b25bce431",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-095.png",
+      "image_sha256": "51dfb5fff5ae13b9ea0b1ce3bd55b67abf03713e076315cdd3abc464cc96e20b",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Abbot practices close cleanly. Author's assertive register is retained; no scene voice has been flattened into a checklist.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 198,
+      "printed_page": "193",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-198.txt",
+      "text_sha256": "133c802efde6a3b5bf62a6ba88926f55f3e688e389bebbb2a59e555e12e235f2",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-096.png",
+      "image_sha256": "a324eb91f9830e348096697549451ed77a390f1e18ea0c4c0d112e1a19f04825",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Chapter 11 opener, Spot image, qualified Archimedes attribution and four bullets fit. Privacy metaphor leads directly into the local-system failure scene.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 199,
+      "printed_page": "194",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-199.txt",
+      "text_sha256": "25f5be434bcc32fb0812427384faec4c3f8fcd81f60f1e2ddbf173b0f9e01494",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-097.png",
+      "image_sha256": "c0c775e74100d9d2325c9a41e95daac1845eca9df8b8210339fecd980cc23867",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Three surplus machines, paired cards and radiator remain a fictional build rather than a construction specification. Model capabilities stay limited and checked.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 200,
+      "printed_page": "195",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-200.txt",
+      "text_sha256": "350177c0dd940feed333bcb70f4c332c749596a09e98e588a28ab8ccaf86e4d5",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-098.png",
+      "image_sha256": "6bbb1363ef63497545b5691600a837232d03baf45f06453e97893d400e91229d",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Crucible art caption matches prose. Hallucinated citation and checking cost precede breach, so local compute is not portrayed as infallible.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 201,
+      "printed_page": "196",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-201.txt",
+      "text_sha256": "21d06e24e542468dfcefbe284e8b0629c05388aa474c073fa4194280b5b93688",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-099.png",
+      "image_sha256": "d7fd739d41356372a6441f700323b0ea2b98d93df360b7446094e0b9350aacbf",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Forty-one-hour exposure, crawler visits and household harms are specific. Marta's lockout analogy is a character response, followed by system-level correction next page.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 202,
+      "printed_page": "197",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-202.txt",
+      "text_sha256": "768d4f445796703835ce11a05a7dba97d5f7633f51ed8a2953461d65c691f4db",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-100.png",
+      "image_sha256": "17648ea2b0fe92cb9290fba1ef2bfbe33bcd525103a222a77c5d331089f9a21e",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Priya names governance and data-minimization failures. Counsel, household notice, consent to publish and second review all appear; narrative does not put every failure on one person's attitude.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 203,
+      "printed_page": "198",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-203.txt",
+      "text_sha256": "17dc4ae9244aeccd4263435278c1e7319fd8b4a553636ad8e0575335f20003ea",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-101.png",
+      "image_sha256": "feb4338d85ed3edef7a99ebef1d5b59ef7fefc52ae728abe66e2220fcd27241a",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Offline updates still need source checks. Foundations separates owning equipment from claiming useful output. Closing source-check instruction continues across the turn.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 204,
+      "printed_page": "199",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-204.txt",
+      "text_sha256": "8f9a088bb95b8da175ae783843952e180aae4112314f9a5c64c947333a76811b",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-102.png",
+      "image_sha256": "885bb6eea4bc2015d7b4e166acbf86adbe3e77ffb3698d28510d0a73804f3f72",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "AI source verification and public records are explicit. Proposed food partnership is labeled a design rather than an existing program; budgets and accountability are distinguished.",
+      "finding_ids": []
+    },
+    {
+      "physical_page": 205,
+      "printed_page": "200",
+      "assignment_role": "assigned",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-205.txt",
+      "text_sha256": "c1ffcc9a09565be42c12eea71b93b213aeb65e1532632826eb7744c073ab486e",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-103.png",
+      "image_sha256": "0137f432c9500161d7a7f80873ef47ef304ae22cbfa83c46f95e0d737531f58b",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Restaurant tradeoffs are admitted. Hansard accounts are described as claims in debate, not an independent audit. Opening-hours example supplies a practical test.",
+      "finding_ids": [
+        "MIDDLE-02"
+      ]
+    },
+    {
+      "physical_page": 206,
+      "printed_page": "201",
+      "assignment_role": "boundary_context",
+      "text_read": true,
+      "visual_reviewed": true,
+      "text_path": "docs/page-review-v0.10.4/middle-preview/reading-206.txt",
+      "text_sha256": "ec34e2c877d5766c4163b33733490fc3272e35599254fd01ad3302071b5a0df6",
+      "image_path": "docs/page-review-v0.10.4/middle-preview/sequence-104.png",
+      "image_sha256": "f20250bab3890e67f5c5a127d12242c0088341bbe16a1f116cd9c07f27a92552",
+      "image_size": [
+        720,
+        1080
+      ],
+      "note": "Boundary context: British Restaurants charged for meals, and the proposal changes payment location. Objections acknowledge tradeoffs and alternative tools. No broken transition from p205.",
+      "finding_ids": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "MIDDLE-01",
+      "kind": "image_text_consistency",
+      "severity": "high",
+      "pages": [
+        144,
+        145,
+        146
+      ],
+      "quote": "stayed informed. couldn't fix a fence.",
+      "reason": "The portrait's embedded caption preserves the earlier judgment of Gary even though the current scene names his wife's appointments, broken truck and lack of support. The external caption omits the offending words, so text extraction and Markdown review do not reveal the contradiction.",
+      "suggested_correction": "Remove the obsolete embedded sentence from the Gary source artwork or replace it with a neutral name-only treatment. Keep the readable external caption. Rebuild and inspect every output that embeds this asset.",
+      "verification": "Confirmed in final PDF page144 and full source image static/book-images/ch08-gary.png. No inference from OCR."
+    },
+    {
+      "id": "MIDDLE-02",
+      "kind": "citation_readability",
+      "severity": "medium",
+      "pages": [
+        114,
+        115,
+        119,
+        129,
+        130,
+        137,
+        139,
+        140,
+        141,
+        149,
+        159,
+        161,
+        172,
+        174,
+        175,
+        181,
+        191,
+        195,
+        196,
+        205
+      ],
+      "quote": "ILO, Generative AI and Jobs: A 2025 Update Good.",
+      "reason": "Linked source labels render in ordinary body type without punctuation or enclosure. Adjacent source titles and resumed sentences become difficult to parse. Page115 has consecutive Census labels followed immediately by Table H-5 In 2024. Functional links and valid source hashes do not test this reading problem.",
+      "suggested_correction": "Adopt a consistent citation treatment in the canonical source and publication transform, such as punctuated parenthetical short labels or numbered notes. Preserve targets and distinguish citations from ordinary prose links. Inspect changed pages in color and grayscale.",
+      "verification": "Confirmed by reading and viewing all listed pages; not a finding of absent citations or false claims."
+    },
+    {
+      "id": "MIDDLE-03",
+      "kind": "argument_consistency",
+      "severity": "high",
+      "pages": [
+        185,
+        188
+      ],
+      "quote": "The line between the people who come through this period with some footing and the people who get flattened by it is a habit",
+      "reason": "This attributes outcomes to a personal habit after Chapter8 carefully explains that Gary and Sal had different room to move. Chapter10 then protects rest, receiving care and nonproduction, making the categorical dividing-line claim internally at odds with its own next paragraph.",
+      "suggested_correction": "Keep create-over-consume as an invitation and a practical habit. For example: One habit can help you find some footing: make something another person can use. Revise both the briefing bullet and Foundations sentence, without changing Denny's earned scene.",
+      "verification": "Internal comparison with physical145-146 and188; no external factual judgment required."
+    },
+    {
+      "id": "MIDDLE-04",
+      "kind": "reader_assumption",
+      "severity": "low",
+      "pages": [
+        108,
+        189
+      ],
+      "quote": "Some people have already survived an automation wave. Find them. They aren't on LinkedIn.",
+      "reason": "The categorical exclusion of an online channel survives even though this edition deliberately permits online introductions in Chapter10, and Denny reaches displaced people online. It can send readers past useful people for no demonstrated reason.",
+      "suggested_correction": "Keep the first two sentences and replace the last with Ask what helped them get through the year after, or simply end at Find them.",
+      "verification": "Confirmed against revised human-filter instruction on p189 and Denny scene pp186-188."
+    },
+    {
+      "id": "MIDDLE-05",
+      "kind": "table_logic",
+      "severity": "medium",
+      "pages": [
+        131,
+        132
+      ],
+      "quote": "Their own rules: target only empty vehicles",
+      "reason": "The table aligns this Safe Street Rebel rule with a separate crowd burning a Waymo. Row alignment can imply that the same activists broke their stated rule, though the prose and source list do not establish that attribution. Other rows also pair unlike categories rather than corresponding evidence.",
+      "suggested_correction": "Present the stated concerns and the documented incidents as two independent lists or subsections. State that the fire is a separate incident without attributing it to the coning group unless a checked source establishes that connection.",
+      "verification": "Confirmed structural implication in rendered table. No claim about the perpetrators is made in this review; any attribution would require source verification."
+    },
+    {
+      "id": "MIDDLE-06",
+      "kind": "argument_consistency",
+      "severity": "medium",
+      "pages": [
+        154,
+        155,
+        156
+      ],
+      "quote": "Shallow comprehension | Mastery of a craft",
+      "reason": "The batching table implies a strong outcome comparison that the immediately preceding diagram explicitly declines to promise and the following trial-and-adjust instruction treats as individual. Messaging schedules do not by themselves establish mastery.",
+      "suggested_correction": "Make table cells describe actions or available time: responding to each message versus checking at chosen times, and fragmented task time versus a protected stretch. Remove the shallow-comprehension/mastery row or reframe it as an intended use of time.",
+      "verification": "Internal inconsistency confirmed; no fresh psychological effect claimed."
+    },
+    {
+      "id": "MIDDLE-07",
+      "kind": "pacing",
+      "severity": "low",
+      "pages": [
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        156
+      ],
+      "quote": "The formula doesn't prove what a platform intends or what its feed does to your mind.",
+      "reason": "The Shannon formula introduces technical burden only to disavow the inference, with no later operational use in this section. Five nearby diagrams repeatedly explain interrupted attention or protected work, and the unbroken figures leave large mid-section blank areas on151 and153. The combined effect stalls the move from a strong scene to usable protocols.",
+      "suggested_correction": "Consider cutting the entropy equation and retaining its one-sentence boundary. Keep the firewall sequence and the most informative interruption comparison, then assess whether the other diagrams add enough distinct value. If all remain, reduce suitable figure sizes and reflow the spreads. This is an editorial option, not a factual correction.",
+      "verification": "All relevant full pages viewed in sequence; visual pacing judgment rather than automated whitespace threshold."
+    },
+    {
+      "id": "MIDDLE-08",
+      "kind": "argument_consistency",
+      "severity": "medium",
+      "pages": [
+        166,
+        167,
+        168
+      ],
+      "quote": "None of it waits on anybody's permission.",
+      "reason": "The immediately preceding controller scene carefully keeps county mixed-use approval and installation review open until answered. The unrestricted sentence about backyard prototypes undercuts that distinction between available tools and permission to deploy them.",
+      "suggested_correction": "Narrow the sentence to starting inquiry or a lawful trial, for example: You can start learning what these tools do before the whole regional plan is in place.",
+      "verification": "Internal comparison with the yellow-tab approval sequence. This review does not make a legal determination."
+    },
+    {
+      "id": "MIDDLE-09",
+      "kind": "instruction_clarity",
+      "severity": "medium",
+      "pages": [
+        138
+      ],
+      "quote": "That document is your severance leverage, your consulting practice, or the training data for a tool you own. Unwritten, it's nothing.",
+      "reason": "The exercise moves from tacit expertise to an owned document or training set without distinguishing an inventory of skills from employer or customer records. It also dismisses the value of unwritten expertise immediately after identifying that expertise as leverage.",
+      "suggested_correction": "Ask for a nonconfidential inventory of judgment calls, failure modes and skills the reader can describe. Say it can help them show their value or identify work to offer. Replace the final sentence with a claim about making expertise easier to explain, not its being worthless unless written.",
+      "verification": "Clarity and scope query. Ownership and employment restrictions would need jurisdiction-specific verification before any stronger legal claim."
+    },
+    {
+      "id": "MIDDLE-10",
+      "kind": "figure_legibility",
+      "severity": "low",
+      "pages": [
+        139,
+        140
+      ],
+      "quote": "The copy is worth reading closely",
+      "reason": "The two archival ads are reproduced so small that their body copy and the coupon are not comfortably readable at the page size. The surrounding prose transcribes some lines, but the invitation to read closely and note the coupon asks more of the reproduction than it supplies.",
+      "suggested_correction": "Enlarge the ads where page geometry allows or provide a readable transcription of the specific lines being discussed. Preserve source credit and explain if the full image is only a facsimile for context.",
+      "verification": "Confirmed at full-page120dpi view; fine source-image text may be readable by zooming a digital PDF, but that does not solve normal page-size or printed reading."
+    },
+    {
+      "id": "MIDDLE-11",
+      "kind": "source_query",
+      "severity": "medium",
+      "pages": [
+        140
+      ],
+      "quote": "one of the largest organized public campaigns ever mounted against a technology",
+      "reason": "The paragraph carefully labels two million enrollments as the union's own count, then makes a ranking across all campaigns without identifying a comparison set. The cited enrollment figure alone cannot establish the historical superlative.",
+      "suggested_correction": "Keep the scale and attribution, then call it a major organized campaign, or provide a source that actually establishes the comparison. The argument about the failed preservation of orchestra jobs does not require a largest-ever ranking.",
+      "verification": "Source verification pending for the comparative claim. Review does not classify the ranking as disproved."
+    }
+  ],
+  "verified_questions": [
+    {
+      "page": 176,
+      "claim": "Installer command and HTTPS local web interface match current project documentation.",
+      "source": "https://github.com/kizniche/Mycodo",
+      "checked_on": "2026-09-30",
+      "result": "The repository documents curl -L https://kizniche.github.io/Mycodo/install | bash and access via HTTPS at the installed computer IP. Requirements should still be checked before installing, as manuscript instructs. No code executed."
+    },
+    {
+      "page": 144,
+      "claim": "Obsolete sentence is embedded in Gary image, not merely an extraction artifact.",
+      "source_path": "static/book-images/ch08-gary.png",
+      "source_sha256": "44ed957be971436c3da05d73eec51a9cb9c4351f8b1108092e3af54d9c1f6684",
+      "result": "Full source image viewed. Embedded wording is stayed informed. couldn't fix a fence."
+    }
+  ],
+  "strengths": [
+    "Rosa delivery scene lets a precise mistake, a correction and ongoing funding carry the argument.",
+    "Gary and Sal now have different resources rather than different moral worth; preserve that correction consistently in visuals and later framing.",
+    "Controller and Crucible scenes earn competence through repair, approvals, testing and peer accountability.",
+    "Research passages generally distinguish illustrative models, forecasts, correlations and measured outcomes more carefully than their opening slogans.",
+    "Public-meal discussion admits paid restaurants can close and that British Restaurants charged; it does not manufacture an identical precedent."
+  ],
+  "mechanical_validation": {
+    "assigned_coverage_exact": true,
+    "text_and_image_hashes_read_back": true,
+    "page_notes_unique": true,
+    "limitations": "Receipt integrity is not proof of editorial judgment. Human-readable page observations and actual view_image calls are the review evidence.",
+    "in_memory_negative_controls": {
+      "missing_page": "rejected",
+      "duplicate_page": "rejected",
+      "stale_image_hash": "rejected",
+      "unviewed_page": "rejected"
+    }
+  }
+}

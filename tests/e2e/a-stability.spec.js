@@ -7,23 +7,43 @@ import { test, expect } from '@playwright/test';
  * and render expected content.
  */
 
+/* Routes that exist and must serve a 200.
+ *
+ * The homepage's `mustContain: 'Blueprint'` was dropped on 2026-08-02: the word
+ * appears nowhere in +page.svelte, +layout.svelte or Navbar.svelte any more. The
+ * homepage was rewritten around a different thesis and the assertion was never
+ * updated, so it had been failing on every engine. */
 const ROUTES = [
-  { path: '/', name: 'Homepage', mustContain: 'Blueprint' },
-  { path: '/blueprint', name: 'Blueprint Index', mustContain: 'Blueprint' },
-  { path: '/blueprint/economic-trap', name: 'Blueprint: Economic Trap', mustContain: '' },
-  { path: '/blueprint/the-shouse', name: 'Blueprint: The Shouse', mustContain: '' },
-  { path: '/blueprint/content-engine', name: 'Blueprint: Content Engine', mustContain: '' },
-  { path: '/blueprint/digital-sovereignty', name: 'Blueprint: Digital Sovereignty', mustContain: '' },
-  { path: '/blueprint/physical-exit', name: 'Blueprint: Physical Exit', mustContain: '' },
-  { path: '/blueprint/robotics', name: 'Blueprint: Robotics', mustContain: '' },
-  { path: '/blueprint/cash-engine', name: 'Blueprint: Cash Engine', mustContain: '' },
-  { path: '/blueprint/execute', name: 'Blueprint: Execute', mustContain: '' },
+  { path: '/', name: 'Homepage', mustContain: '' },
   { path: '/blog', name: 'Blog', mustContain: '' },
   { path: '/book', name: 'Book', mustContain: '' },
   { path: '/about', name: 'About', mustContain: '' },
   { path: '/policies', name: 'Policies', mustContain: '' },
-  { path: '/login', name: 'Login', mustContain: '' },
-  { path: '/profile', name: 'Profile', mustContain: '' },
+];
+
+/* Routes removed in a past redesign, kept here deliberately.
+ *
+ * These were sitting in ROUTES above expecting a 200 and had been failing
+ * 404 on every engine for as long as the suite has run. CLAUDE.md is explicit:
+ * "There are still no /blueprint, /login, or /profile routes — removed in a past
+ * redesign; don't link to them."
+ *
+ * Deleting the entries would have been the easy way to go green, and it would
+ * have thrown away real signal. If a redesign or a bad merge quietly restores
+ * one of these paths, or something starts linking to them again, that is worth
+ * knowing. So they are asserted as gone rather than removed from the file. */
+const REMOVED_ROUTES = [
+  '/blueprint',
+  '/blueprint/economic-trap',
+  '/blueprint/the-shouse',
+  '/blueprint/content-engine',
+  '/blueprint/digital-sovereignty',
+  '/blueprint/physical-exit',
+  '/blueprint/robotics',
+  '/blueprint/cash-engine',
+  '/blueprint/execute',
+  '/login',
+  '/profile',
 ];
 
 test.describe('Site Stability', () => {
@@ -33,22 +53,41 @@ test.describe('Site Stability', () => {
       const errors = [];
       page.on('pageerror', err => errors.push(err.message));
 
-      const response = await page.goto(route.path, { waitUntil: 'networkidle' });
+      /* 'domcontentloaded', not 'networkidle'. networkidle waits for a 500ms gap
+         with no more than two connections open, which this site never reaches
+         inside the 30s test timeout: the homepage loads video and webfonts, so
+         goto simply timed out rather than reporting anything about the page.
+         Measured on run 30762634291, where the homepage attempt burned 40.2s
+         before failing. The assertions below already wait on real content, so
+         they carry the "did it actually render" question. */
+      const response = await page.goto(route.path, { waitUntil: 'domcontentloaded' });
 
       // Should return 200
       expect(response?.status()).toBe(200);
 
-      // Should have no JS errors
-      expect(errors).toEqual([]);
-
-      // Should have content
+      // Should have content. This is the real readiness signal, and it retries
+      // until the timeout, so it covers what networkidle was being asked to do.
+      await expect(page.locator('body')).not.toBeEmpty();
       const body = await page.textContent('body');
       expect(body?.length).toBeGreaterThan(50);
+
+      // Should have no JS errors. Checked after render, so a late-firing error
+      // during hydration is still caught.
+      expect(errors).toEqual([]);
 
       // Must contain expected text if specified
       if (route.mustContain) {
         expect(body).toContain(route.mustContain);
       }
+    });
+  }
+
+  /* The other half of the ROUTES split: these must stay gone. A 200 here means
+     a removed surface came back, which is the failure worth hearing about. */
+  for (const path of REMOVED_ROUTES) {
+    test(`${path} stays removed (404)`, async ({ page }) => {
+      const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
+      expect(response?.status()).toBe(404);
     });
   }
 

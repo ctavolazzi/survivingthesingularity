@@ -1,0 +1,30 @@
+The greenhouse brain
+For the controller in the scene, or one like it, the open-source project
+Mycodo  turns  a  Raspberry  Pi  into  an  environmental  controller:
+sensors in, relays out, and feedback loops in between.
+Sensors: an air temperature and humidity sensor (the SHT31-D is
+common) and a capacitive soil-moisture probe, which resists
+corrosion better than the cheap resistive kind.
+Actuators: a relay board switching low-voltage devices: an exhaust
+fan, a solenoid valve on the irrigation line, supplemental lights.
+Have someone who knows electrical work check anything that
+touches mains power.
+On a clean Raspberry Pi OS install, check the projectʼs current instal-
+lation requirements, then use its documented installer:
+sudo apt update &&sudo apt upgrade -y
+curl-L https://kizniche.github.io/Mycodo/install |bash
+Then browse to  https://<your-pi-ip>/ for the web interface. From there
+you  can  set  up  PID  (proportional-integral-derivative)  loops,  the
+standard control law for holding a value steady:
+u(t) = Kpe(t) + Ki∫e(τ)dτ + Kdde(t)/dt
+where e(t) is the gap between the target and the sensor reading, and
+the  three  K values  tune  the  response.  A  valve  that  only  opens  or
+closes still needs limits on run time and total water, plus an off state
+if the sensor stops reporting. Start with a growerʼs judgment about
+what the plants need, keep the manual valve working, and check the
+soil with your hands until you trust the numbers. (Chapter 15 is about
+what happens when you donʼt.)
+• 
+• 
+CHAPTER 9
+171

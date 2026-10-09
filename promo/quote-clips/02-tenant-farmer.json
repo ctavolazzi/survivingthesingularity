@@ -1,0 +1,38 @@
+{
+  "out": "02-tenant-farmer/02-tenant-farmer.mp4",
+  "size": "1280x720",
+  "fps": 30,
+  "crf": 20,
+  "stitch": "cuts",
+  "theme": {
+    "bg": "#020617",
+    "fg": "#f1f5f9",
+    "dim": "#94a3b8"
+  },
+  "credits": [
+    "Quote: Surviving the Singularity, Chapter 15: The Power of Reclaiming Soil",
+    "Image: Automated watering over garden soil (book figure ch12-farmbot-watering)"
+  ],
+  "scenes": [
+    {
+      "type": "quote",
+      "src": "/Users/ctavolazzi/Code/active/sts-v0.7.3/static/images/optimized/ch12_farmbot_watering_1200.jpg",
+      "motion": "pan-right",
+      "darken": 0.74,
+      "text": "If you are relying on their chemical store to grow your food, you are not independent. You are just a tenant farmer with extra steps.",
+      "label": "Surviving the Singularity  ·  Chapter 15: The Power of Reclaiming Soil",
+      "size": 46,
+      "dur": 9,
+      "fade_in": 0.7
+    },
+    {
+      "type": "end",
+      "text": "Surviving the Singularity",
+      "sub": "survivingthesingularity.com",
+      "size": 74,
+      "dur": 4,
+      "in": 1.0,
+      "rise": 20
+    }
+  ]
+}

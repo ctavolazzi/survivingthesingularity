@@ -1,0 +1,150 @@
+{
+  "review": "ending",
+  "baseline": "v0.10.3",
+  "revision": "v0.10.4",
+  "files_read": [
+    {
+      "file": "src/lib/data/book/VOICE-GUIDE.md",
+      "before_sha256": "9e9485d394d168fe4eed9d783a0e29cee673d0048d41768be710cfa0548d62b3",
+      "after_sha256": "9e9485d394d168fe4eed9d783a0e29cee673d0048d41768be710cfa0548d62b3"
+    },
+    {
+      "file": "src/lib/data/book/ELIJAH-PROTOCOL.md",
+      "before_sha256": "49917da9b3708e76f91d8d434d494fa9d59ac800a687c21f7f5fc5b3fff4e3a8",
+      "after_sha256": "49917da9b3708e76f91d8d434d494fa9d59ac800a687c21f7f5fc5b3fff4e3a8"
+    },
+    {
+      "file": "src/lib/data/book/17-chapter15.md",
+      "before_sha256": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+      "after_sha256": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47"
+    },
+    {
+      "file": "src/lib/data/book/18-chapter16.md",
+      "before_sha256": "1672230c214c8423c21266ffc34757cd15b4a632e06742e617ae2716d75fd460",
+      "after_sha256": "3b57218536ba9143187ae52131c4b96e00941d368e0c15b2abe953df0d974788"
+    },
+    {
+      "file": "src/lib/data/book/19-chapter17.md",
+      "before_sha256": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+      "after_sha256": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db"
+    },
+    {
+      "file": "src/lib/data/book/20-chapter18.md",
+      "before_sha256": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+      "after_sha256": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72"
+    },
+    {
+      "file": "src/lib/data/book/27-chapter19.md",
+      "before_sha256": "29b2adf70697f9abda6d224ab1606d4b7fa6ee6be04340b081071c7067ec3119",
+      "after_sha256": "2da9717a4cfcca2ed6a3d341b92b6e80a48c2c468d5123aacfac32da9d628359"
+    },
+    {
+      "file": "src/lib/data/book/21-conclusion.md",
+      "before_sha256": "cb17a1207e15f158776f3790ffdfc223b3653a80a3c394e0c338cd9b3f3429bf",
+      "after_sha256": "cb17a1207e15f158776f3790ffdfc223b3653a80a3c394e0c338cd9b3f3429bf"
+    },
+    {
+      "file": "src/lib/data/book/22-appendix-a.md",
+      "before_sha256": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+      "after_sha256": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127"
+    },
+    {
+      "file": "src/lib/data/book/23-appendix-b.md",
+      "before_sha256": "e125bdbef72c4741849841c1e2dfafb38d23ea773224431a0183ebfb3ebd5eb7",
+      "after_sha256": "e125bdbef72c4741849841c1e2dfafb38d23ea773224431a0183ebfb3ebd5eb7"
+    },
+    {
+      "file": "src/lib/data/book/24-appendix-c.md",
+      "before_sha256": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+      "after_sha256": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1"
+    },
+    {
+      "file": "src/lib/data/book/25-appendix-d.md",
+      "before_sha256": "7f0c649065b42914462517dfe3fe6f958474f2a9c2ca71bd77156969cdbd89ac",
+      "after_sha256": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069"
+    },
+    {
+      "file": "src/lib/data/book/26-appendix-e.md",
+      "before_sha256": "ea8b55111e259be6d7a435ad4f056bd4a56fb7a0d82e2317b344d301a24d7141",
+      "after_sha256": "fe4d080c0c9a62e99d81a1aa975b56afefa619057219bbd980855b460be53793"
+    },
+    {
+      "file": "src/lib/data/book/28-appendix-f.md",
+      "before_sha256": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4",
+      "after_sha256": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4"
+    },
+    {
+      "file": "src/lib/data/book/29-appendix-g.md",
+      "before_sha256": "40320918fd53e879f9d01ebc3b5879e4104a3179faeccdc7a619d0ed2eb60955",
+      "after_sha256": "d67719a313518aa6fd41a7cb1464c9dd8dcd236ab14a3a35ad7e214cd460f63a"
+    },
+    {
+      "file": "src/lib/data/book/30-appendix-h.md",
+      "before_sha256": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44",
+      "after_sha256": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44"
+    }
+  ],
+  "gentle_critique": {
+    "strengths": [
+      "The soil lesson lets a concrete observation correct an attractive dashboard, and its limits stay visible. That combination makes the practical argument credible.",
+      "The last scenes earn their optimism through incomplete work: Rosa asks for dependable notice, the route gains six months, and the final return to Bear Flag leaves real obligations open.",
+      "Works Cited carefully distinguishes original records, institutional accounts, forecasts, and the proposed guarantee. The appendices give the reader several useful routes back into the argument."
+    ],
+    "opportunities": [
+      "A few closing instructions assume a reader already has the particular employer or school arrangement used in the examples. Broader entry points let the same action work for more readers.",
+      "Small leftovers from earlier revisions interrupt an otherwise coherent reference section: Gary and Sal no longer appear in Chapter 7, and the cyberdeck tier heading omits Tier 0 from its count.",
+      "The publishing chapter already treats consent carefully. Its last practice can carry that same care without describing subscribers as possessions.",
+      "The year plan is generous but initially looks like another complete workload. One explicit invitation to begin with one action makes the existing sustainable-scale guidance easier to use."
+    ],
+    "restraint": "The repetition of food, provision, and responsibility across Chapters 18, 19, and the Conclusion serves different jobs: rehearsal, proposal, and closing argument. This pass preserves that sequence rather than thinning the ending or rewriting its scenes. No new factual research or source validation was performed in this editorial pass."
+  },
+  "edits": [
+    {
+      "file": "src/lib/data/book/18-chapter16.md",
+      "before": "2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. When the algorithm changes, the people on your list are still yours.",
+      "after": "2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. Use the list to reach readers who've asked to hear from you when the algorithm changes.",
+      "reason": "Carry the chapter's consent principle into its closing practice. Owning a publishing channel need not sound like owning the people who read it."
+    },
+    {
+      "file": "src/lib/data/book/27-chapter19.md",
+      "before": "- **If you work for a living:** find out what your employer does with food it can't sell, and who in your town is hungry. Bring both numbers to one meeting.",
+      "after": "- **If you work for a living:** find out what a food business near you does with food it can't sell, and ask a local food provider what need remains unmet. Bring those findings to one meeting.",
+      "reason": "Make the action usable for readers whose employers do not handle food, and connect the need assessment to a provider rather than assuming two ready-made counts."
+    },
+    {
+      "file": "src/lib/data/book/27-chapter19.md",
+      "before": "- **If you're a parent:** check whether your school district's universal meals are reaching every kid who needs them, and ask why not if they aren't.",
+      "after": "- **If you're a parent:** check what meals your school district provides, whether they reach every kid who needs them, and what keeps anyone out.",
+      "reason": "The California precedent is bounded. Let a parent elsewhere begin with the provision that actually exists instead of assuming every district already has universal meals."
+    },
+    {
+      "file": "src/lib/data/book/25-appendix-d.md",
+      "before": "7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story, the way Marta tells Gary and Sal. Panic spreads person to person. So does this.",
+      "after": "7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story. Ask where the comparison fits and where it doesn't. Panic spreads person to person. So does this.",
+      "reason": "Remove an obsolete Gary-and-Sal callback that is absent from the current Chapter 7, and carry the Ledger's existing instruction to examine differences into the conversation."
+    },
+    {
+      "file": "src/lib/data/book/26-appendix-e.md",
+      "before": "## The three tiers",
+      "after": "## From Tier 0 to Tier 3",
+      "reason": "The section includes Tier 0 plus Tiers 1, 2, and 3. Name the actual route without a contradictory count."
+    },
+    {
+      "file": "src/lib/data/book/29-appendix-g.md",
+      "before": "*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Move a month if your season or your life needs it, and choose a scale you can sustain.*",
+      "after": "*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Choose one action to begin each month, then add others as time allows. Move a month if your season or your life needs it, and choose a scale you can sustain.*",
+      "reason": "Give the existing invitation to choose a sustainable scale an immediate instruction, so the year plan feels usable before the reader meets its long action list."
+    }
+  ],
+  "readback_verified": true,
+  "critique": [
+    "The soil lesson lets a concrete observation correct an attractive dashboard, and its limits stay visible. That combination makes the practical argument credible.",
+    "The last scenes earn their optimism through incomplete work: Rosa asks for dependable notice, the route gains six months, and the final return to Bear Flag leaves real obligations open.",
+    "Works Cited carefully distinguishes original records, institutional accounts, forecasts, and the proposed guarantee. The appendices give the reader several useful routes back into the argument.",
+    "A few closing instructions assume a reader already has the particular employer or school arrangement used in the examples. Broader entry points let the same action work for more readers.",
+    "Small leftovers from earlier revisions interrupt an otherwise coherent reference section: Gary and Sal no longer appear in Chapter 7, and the cyberdeck tier heading omits Tier 0 from its count.",
+    "The publishing chapter already treats consent carefully. Its last practice can carry that same care without describing subscribers as possessions.",
+    "The year plan is generous but initially looks like another complete workload. One explicit invitation to begin with one action makes the existing sustainable-scale guidance easier to use.",
+    "The repetition of food, provision, and responsibility across Chapters 18, 19, and the Conclusion serves different jobs: rehearsal, proposal, and closing argument. This pass preserves that sequence rather than thinning the ending or rewriting its scenes. No new factual research or source validation was performed in this editorial pass."
+  ]
+}

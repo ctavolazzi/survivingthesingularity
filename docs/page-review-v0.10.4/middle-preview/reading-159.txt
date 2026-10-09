@@ -1,0 +1,16 @@
+A mesh can reroute only if a usable path remains. Crosses mark failed nodes; dashed links are
+affected by that failure. People still maintain the circle and its connections.
+In a mesh, damage can become a detour if another working route
+remains.  Social  capacity  has  limits  too.  The  anthropologist  Robin
+Dunbar estimated that people can keep up something like 150 stable
+relationships. Dunbar, Coevolution of neocortical size, group size and
+language  in  humans  (1993) Thatʼs  an  estimate,  not  a  membership
+TRUSTNETWORKTOPOLOGIES
+ONEHUB
+Losethishubanditslinksstopworking.
+ALTERNATEPATHS
+Ameshcanrerouteifausablepathremains.
+Peoplemaintainthecircleanditslinks.
+Cross:failednode.Dashes:affectedlinks.
+SURVIVING THE SINGULARITY
+154

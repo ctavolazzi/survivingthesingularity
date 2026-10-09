@@ -1,0 +1,43 @@
+{
+  "out": "04-renting-survival/04-renting-survival.mp4",
+  "size": "1280x720",
+  "fps": 30,
+  "crf": 20,
+  "stitch": "cuts",
+  "theme": {
+    "bg": "#020617",
+    "fg": "#f1f5f9",
+    "dim": "#94a3b8"
+  },
+  "credits": [
+    "Quote: Surviving the Singularity, Introduction: The Uncompromising Truth",
+    "Image: the two machines the book is about, one grows the food, one builds the house (book figure intro-robots)"
+  ],
+  "scenes": [
+    {
+      "type": "quote",
+      "text": "If a robot can grow my food and build my house, why am I still renting my survival?",
+      "label": "Surviving the Singularity  ·  Introduction",
+      "size": 58,
+      "dur": 6.5,
+      "fade_in": 0.7
+    },
+    {
+      "type": "photo",
+      "src": "/Users/ctavolazzi/Code/active/sts-v0.7.3/static/book-images/intro-robots.png",
+      "motion": "none",
+      "darken": 0.12,
+      "dur": 4.5,
+      "fade_in": 0.5
+    },
+    {
+      "type": "end",
+      "text": "Surviving the Singularity",
+      "sub": "survivingthesingularity.com",
+      "size": 74,
+      "dur": 4,
+      "in": 1.0,
+      "rise": 20
+    }
+  ]
+}

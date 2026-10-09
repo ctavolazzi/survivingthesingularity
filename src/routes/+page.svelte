@@ -1,6 +1,9 @@
 <script>
   import { onMount } from 'svelte';
   import BookCover from '$lib/components/BookCover.svelte';
+  import LiteYouTube from '$lib/components/LiteYouTube.svelte';
+  // No offer prose is typed into this file. See src/lib/offer.js.
+  import { offer } from '$lib/offer';
 
   export let data;
 
@@ -76,7 +79,7 @@
 
 <svelte:head>
   <title>Surviving the Singularity: New Era, New Playbook</title>
-  <meta name="description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
+  <meta name="description" content="A practical field guide for staying human in the age of AI. Preorder the book for {offer.price} and read the draft now." />
   <!-- Share card is a 1200x630 landscape render, not the cover art. The cover
        is 1410x2056; every scraper crops og:image to roughly 1.91:1, so pointing
        at the portrait art sliced the book in half. Rebuild with
@@ -84,7 +87,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:title" content="Surviving the Singularity" />
-  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
+  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Preorder the book for {offer.price} and read the draft now." />
   <meta property="og:url" content="https://survivingthesingularity.com/" />
   <meta property="og:image" content="https://survivingthesingularity.com/images/og/home.png" />
   <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/home.png" />
@@ -152,12 +155,7 @@
 
       <div class="hero-video-wrap reveal">
         <div class="hero-video-ratio">
-          <iframe
-            src="https://www.youtube.com/embed/YZH1csMhnDo"
-            title="BotQ: Figure ramping F.03 production"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <LiteYouTube videoId="YZH1csMhnDo" title="BotQ: Figure ramping F.03 production" />
         </div>
       </div>
 
@@ -174,7 +172,7 @@
         </div>
         <div class="hero-actions">
           <a href="/early-access" class="btn-primary">
-            Preorder the Book: $5
+            Preorder the Book: {offer.price}
             <span class="btn-icon" aria-hidden="true">
               <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
@@ -212,10 +210,10 @@
           <a href="https://www.google.com/search?q=open+source+robot+arm+$1000+home+2026+LeRobot+SO-100" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Open-source robotics</a>
         </div>
         <div class="ss-item">
-          <span class="ss-label">Safety net</span>
-          <div class="ss-figure"><span class="ss-num">0</span></div>
-          <span class="ss-desc">plans in place to catch displaced workers. <strong>No one is coming to save you.</strong></span>
-          <a href="https://www.google.com/search?q=government+AI+displacement+worker+protection+plan+2026" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">See for yourself</a>
+          <span class="ss-label">Food first</span>
+          <div class="ss-figure"><span class="ss-num">1</span></div>
+          <span class="ss-desc">place to start: <strong>make sure people eat, even when paid work changes.</strong></span>
+          <a href="/book" class="ss-src ss-src-link">Explore the proposal</a>
         </div>
       </div>
     </div>
@@ -276,38 +274,26 @@
     </div>
   </section>
 
-  <!-- BEFORE / AFTER -->
-  <section class="reality-section" aria-label="Without a plan vs with a plan">
+  <!-- SHARED SURVIVAL -->
+  <section class="reality-section" aria-labelledby="shared-survival-heading">
     <div class="reality-inner reveal">
-      <h2 class="reality-heading">Most people will get steamrolled.<br>You don't have to be one of them.</h2>
-      <div class="reality-diagram" aria-hidden="true">
-        <svg viewBox="0 0 600 170" preserveAspectRatio="xMidYMid meet">
-          <line x1="20" y1="85" x2="180" y2="85" class="rd-stem" />
-          <path class="rd-path rd-path-good" d="M180,85 C300,85 420,30 570,22" fill="none" />
-          <path class="rd-path rd-path-bad" d="M180,85 C300,85 420,140 570,148" fill="none" />
-          <circle class="rd-now" cx="180" cy="85" r="6" />
-          <text x="20" y="70" class="rd-label rd-label-dim">today</text>
-          <text x="430" y="14" class="rd-label rd-label-good">with a plan</text>
-          <text x="430" y="166" class="rd-label rd-label-bad">without one</text>
-        </svg>
-      </div>
+      <h2 id="shared-survival-heading" class="reality-heading">Your next meal shouldn't depend on your last paycheck.</h2>
+      <p class="reality-intro">As AI changes work, how do we make ordinary life more secure? Explore how neighbors, growers, useful machines, and public institutions can make necessities more dependable, starting with food. Find a way to take part.</p>
       <div class="reality-cols">
-        <div class="reality-col reality-col-bad">
-          <span class="reality-col-label">Without a plan</span>
+        <div class="reality-col">
+          <h3 class="reality-col-label">What is at stake</h3>
           <ul class="reality-list">
-            <li>You fall behind while others win</li>
-            <li>Every disruption makes your position worse</li>
-            <li>You scramble when others capitalize</li>
-            <li>You're the last to adapt. First to suffer.</li>
+            <li>Food access tied to a paycheck</li>
+            <li>Control of useful equipment</li>
+            <li>Decisions about public resources</li>
           </ul>
         </div>
-        <div class="reality-col reality-col-good">
-          <span class="reality-col-label">With a plan</span>
+        <div class="reality-col reality-col-action">
+          <h3 class="reality-col-label">Where you can act</h3>
           <ul class="reality-list">
-            <li>You see what's coming while others are blindsided</li>
-            <li>You build leverage most people won't even know exists</li>
-            <li>Disruptions become advantages. For you.</li>
-            <li>You level up while everyone else is still catching on.</li>
+            <li>Work with a local food provider on an unmet need</li>
+            <li>Help set ownership, repair, and access terms</li>
+            <li>Bring a concrete proposal to the body that can decide it</li>
           </ul>
         </div>
       </div>
@@ -320,7 +306,7 @@
       <div class="middle-inner">
 
         <div class="middle-facts reveal">
-          <h2 class="middle-heading">They don't want you to know the truth...<br>so here it is.</h2>
+          <h2 class="middle-heading">The tools matter.<br>So do the terms.</h2>
           <div class="middle-diagram" aria-hidden="true">
             <svg viewBox="0 0 560 210" preserveAspectRatio="xMidYMid meet">
               <line x1="30" y1="185" x2="540" y2="185" class="md-axis" />
@@ -336,8 +322,8 @@
           <ul class="middle-list">
             <li>AI is displacing workers right now. CEOs are tripping over themselves to cut headcount. It is not stopping.</li>
             <li>Robot capabilities that cost $100K in 2022 are available for under $1,000 today.</li>
-            <li>Most people are treating AI like the enemy. Fighting it. Resisting it. That is not going to work.</li>
-            <li>You can use the same tools ending other people's careers to build yours. Automate your survival. Get ahead.</li>
+            <li>Who owns a tool, who sets its terms, and who can use its output shape what it does for a community.</li>
+            <li>Find people working on food, useful equipment, or public decisions near you. Bring a skill, a question, or a concrete request.</li>
           </ul>
         </div>
 
@@ -346,11 +332,11 @@
           <ul class="middle-offer-list">
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The readiness checklist: concrete moves, ordered by impact</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Full blueprint, all chapters</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The Precedent File: 29 documented cases, with every source</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The Precedent File: {offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Book draft, updated as it's written</li>
           </ul>
-          <a href="/early-access" class="middle-btn">Preorder the book: $5</a>
-          <p class="middle-fine">One-time. Price goes up at launch.</p>
+          <a href="/early-access" class="middle-btn">Preorder the book: {offer.price}</a>
+          <p class="middle-fine">One-time. When the preorder window closes, this price is gone.</p>
         </div>
 
       </div>
@@ -364,17 +350,15 @@
         <span class="section-label">The Other Side</span>
         <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
         <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Owning the hardware that feeds you is the whole game. The book shows you how to start.</p>
+        <blockquote class="thesis-quote">
+          <p>If a robot can grow my food and build my house, why am I still renting my survival?</p>
+          <cite>Surviving the Singularity, Introduction</cite>
+        </blockquote>
       </div>
     </div>
     <div class="video-wrap reveal reveal-d1">
       <div class="video-ratio">
-        <iframe
-          src="https://www.youtube.com/embed/uNkADHZStDE"
-          title="FarmBot: open-source automated food production"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
+        <LiteYouTube videoId="uNkADHZStDE" title="FarmBot: open-source automated food production" />
       </div>
     </div>
   </section>
@@ -473,12 +457,7 @@
     </div>
     <div class="video-wrap reveal">
       <div class="video-ratio">
-        <iframe
-          src="https://www.youtube.com/embed/6K_bGH54ltI"
-          title="AI capabilities: Surviving the Singularity"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <LiteYouTube videoId="6K_bGH54ltI" title="AI capabilities: Surviving the Singularity" />
       </div>
     </div>
   </section>
@@ -517,7 +496,7 @@
           <span class="book-part-num">Part III</span>
           <h3 class="book-part-title">How to Survive the Transition</h3>
           <p class="book-part-sub">Shouse Grids. DC-native microgrids. Hardware you own.</p>
-          <p class="book-part-desc">Actionable mechanics, not abstract advice: Shouse Grids, DC-native microgrids, and mechanical transducer systems that refine local waste into value. Johnny Autoseed, our boutique robotics project management and consultation service, helps you stand up the physical infrastructure.</p>
+          <p class="book-part-desc">Actionable mechanics, not abstract advice: Shouse Grids, DC-native microgrids, and mechanical transducer systems that refine local waste into value. The author's separate venture, Johnny Autoseed LLC, researches the same open-source robotics stack.</p>
         </div>
       </div>
     </div>
@@ -528,17 +507,17 @@
     <div class="section-inner">
       <div class="cta-inner reveal">
         <div class="cta-glow" aria-hidden="true"></div>
-        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>Five dollars.</em></h2>
+        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>{offer.priceWords}.</em></h2>
 
         <div class="cta-cover">
           <div class="product-cover-glow" aria-hidden="true"></div>
           <BookCover width="min(220px, 60vw)" glow={false} />
         </div>
 
-        <p class="cta-sub">The book draft. The Precedent File. The readiness checklist. One payment, everything now, plus 50% off the finished book at launch.<br><br>Limited time offer. Price goes up at launch.</p>
+        <p class="cta-sub">{offer.sentence}<br><br>{offer.windowClose}</p>
 
         <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
-          Preorder the Book: $5
+          Preorder the Book: {offer.price}
           <span class="btn-icon" aria-hidden="true">
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
@@ -700,6 +679,29 @@
     color: var(--text-2);
     line-height: 1.7;
     max-width: 50ch;
+  }
+  /* The question the book turns on (Introduction). */
+  .thesis-quote {
+    margin: 32px 0 0;
+    padding: 2px 0 2px 24px;
+    border-left: 3px solid var(--amber);
+    max-width: 46ch;
+  }
+  .thesis-quote p {
+    font-size: clamp(1.2rem, 3vw, 1.85rem);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    color: var(--text-1);
+    margin: 0 0 12px;
+  }
+  .thesis-quote cite {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-2);
   }
 
   /* AGI COUNTDOWN */
@@ -1233,24 +1235,22 @@
   .reality-inner { max-width: min(900px, 100%); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
   .reality-heading {
     font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; line-height: 1.05;
-    letter-spacing: -0.03em; color: var(--text-1); margin-bottom: clamp(28px, 4vw, 44px);
+    letter-spacing: -0.03em; color: var(--text-1); margin-bottom: 24px;
   }
+  .reality-intro { max-width: 68ch; font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.7; color: var(--text-2); margin: 0 0 clamp(28px, 4vw, 44px); }
   .reality-cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 3vw, 32px); }
   @media (max-width: 640px) { .reality-cols { grid-template-columns: 1fr; } }
-  .reality-col { padding: clamp(20px, 3vw, 28px); border-radius: 16px; display: flex; flex-direction: column; gap: 0; }
-  .reality-col-bad { background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.12); }
-  .reality-col-good { background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.15); }
+  .reality-col { padding: clamp(20px, 3vw, 28px); border: 1px solid var(--border); border-radius: 16px; display: flex; flex-direction: column; gap: 0; }
+  .reality-col-action { background: rgba(245,158,11,0.04); border-color: rgba(245,158,11,0.2); }
   .reality-col-label {
     font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 14px; display: block;
+    text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 14px; display: block; color: var(--text-2);
   }
-  .reality-col-bad .reality-col-label { color: #f87171; }
-  .reality-col-good .reality-col-label { color: #34d399; }
+  .reality-col-action .reality-col-label { color: var(--amber); }
   .reality-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-  .reality-list li { font-size: clamp(0.92rem, 2vw, 1rem); color: var(--text-2); line-height: 1.55; padding-left: 0; }
-  .reality-col-bad .reality-list li, .reality-col-good .reality-list li { padding-left: 16px; position: relative; }
-  .reality-col-bad .reality-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: #f87171; }
-  .reality-col-good .reality-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: #34d399; }
+  .reality-list li { font-size: clamp(0.92rem, 2vw, 1rem); color: var(--text-2); line-height: 1.55; padding-left: 16px; position: relative; }
+  .reality-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--text-3); }
+  .reality-col-action .reality-list li::before { background: var(--amber); }
 
   /* MIDDLE SECTION */
   .middle-section { border-top: 1px solid var(--border); padding: clamp(56px, 9vw, 96px) 0; }
@@ -1369,28 +1369,6 @@
     .ev-cell-large .ev-media { aspect-ratio: 16/9; min-height: 0; flex: none; }
     .ev-cell-wide { grid-column: 1 / 3; }
     .ev-cell-wide .ev-media { aspect-ratio: 16/8; }
-  }
-
-  /* REALITY DIAGRAM */
-  .reality-diagram { max-width: 620px; margin: 0 auto clamp(28px, 4vw, 40px); }
-  .reality-diagram svg { width: 100%; height: auto; display: block; overflow: visible; }
-  .rd-stem { stroke: var(--text-4); stroke-width: 2; }
-  .rd-path { stroke-width: 2.5; stroke-dasharray: 480; stroke-dashoffset: 480; }
-  .rd-path-good { stroke: #10b981; }
-  .rd-path-bad { stroke: #f87171; stroke-dasharray: 6 7; opacity: 0.85; }
-  :global(.reality-inner.visible) .rd-path-good { animation: rd-draw 1.4s var(--ease-out) 0.2s forwards; }
-  :global(.reality-inner.visible) .rd-path-bad { animation: rd-fade 1.4s ease 0.2s forwards; }
-  @keyframes rd-draw { to { stroke-dashoffset: 0; } }
-  @keyframes rd-fade { from { opacity: 0; } to { opacity: 0.85; } }
-  .rd-path-bad { opacity: 0; }
-  .rd-now { fill: var(--amber); }
-  .rd-label { font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-  .rd-label-good { fill: #10b981; }
-  .rd-label-bad { fill: #f87171; }
-  .rd-label-dim { fill: var(--text-3); }
-  @media (prefers-reduced-motion: reduce) {
-    .rd-path { stroke-dashoffset: 0; }
-    .rd-path-bad { opacity: 0.85; }
   }
 
   /* MIDDLE DIAGRAM */

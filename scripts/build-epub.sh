@@ -6,7 +6,6 @@ set -euo pipefail
 
 LABEL="${1:-DRAFT}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-BOOK="$ROOT/src/lib/data/book"
 OUT="$ROOT/book-build"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -24,8 +23,14 @@ cp "$TMP/cover.png" "$OUT/cover.png"
 # Lives beside cover.png so the img src can stay relative.
 cp "$ROOT/scripts/book-cover-page.html" "$TMP/cover-page.html"
 
-echo "==> Sections (from book.json, minus print-style index)"
-FILES=$(jq -r '.sections[].file' "$BOOK/book.json" | grep -v '^18-index.md$')
+echo "==> Sections (from book.json, minus sections the EPUB cannot use)"
+# Asks sts.py rather than parsing book.json here. This used to be
+#   jq -r '.sections[].file' book.json | grep -v '^18-index.md$'
+# which was a third implementation of "what the book is" -- and its exclusion
+# had already gone dead, because 18-index.md was renumbered out from under the
+# pattern and nothing noticed. sts.py excludes by section id, which survives
+# renumbering, and is the same reader the compile and index paths use.
+FILES=$(python3 "$ROOT/scripts/sts.py" book --files)
 
 mkdir -p "$TMP/images"
 cp "$ROOT/static/book-images/"*.jpg "$ROOT/static/book-images/"*.png "$ROOT/static/book-images/"*.svg "$TMP/images/"
@@ -44,7 +49,7 @@ done
 cat > "$TMP/metadata.yaml" <<YAML
 ---
 title: Surviving the Singularity
-subtitle: Staying agentic while AI rewrites work, money, medicine, and meaning
+subtitle: $(python3 -c "import json;print(json.load(open('$ROOT/src/lib/data/book/book.json'))['subtitle'])")
 author: Christopher Tavolazzi
 date: '2026 &middot; <span class="version-stamp">$LABEL</span>'
 lang: en-US
@@ -68,7 +73,7 @@ pandoc metadata.yaml $FILES \
 echo "==> Review PDF"
 # shellcheck disable=SC2086
 pandoc metadata.yaml $FILES \
-  -o "$OUT/Surviving-the-Singularity-$LABEL.pdf" \
+  -o "$OUT/Surviving-the-Singularity-$LABEL-epub-review.pdf" \
   --toc --toc-depth=1 \
   --pdf-engine=weasyprint \
   --include-before-body=cover-page.html \

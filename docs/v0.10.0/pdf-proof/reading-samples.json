@@ -1,0 +1,222 @@
+{
+  "review_date": "2026-09-27",
+  "dpi": 140,
+  "source_pdf": "publication/output/Surviving-the-Singularity-reading.pdf",
+  "source_sha256": "5dc7c96f2225a9abd3c4ddd75fb713229ec7c9f57bcba412ccce2a8208854281",
+  "interior_sha256": "9bfd6265db23e4552c777aa249626313afae3dbc645df1e9c001b6a23d7c54cf",
+  "build_sha256": "9c87df5d05b64fb1a16c3cee65afafd1d94a7542ac6f85c9944f7338e7f14163",
+  "page_number_note": "Physical PDF pages; reading page = interior page + 1.",
+  "samples": [
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 1,
+      "render": "reading-001-cover.png",
+      "sha256": "fccbf4a546236336e13daa176c937e4ff29474df0a2de3b24e6d762a9745c232"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 2,
+      "render": "reading-002-title.png",
+      "sha256": "49b40627abc7d94053187377e057228a24e0cfb78a677cef58625a51ba0dfbf9"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 3,
+      "render": "reading-003-copyright.png",
+      "sha256": "da97ea203673dc9d686cd463ab82ff5855e5654c874ce4d39271dbf2a29bb9ac"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 4,
+      "render": "reading-004-contents-1.png",
+      "sha256": "0d1384b1dceb2d33b6b5b9f0fcdf6cac1a05bdc62bd58be7d2d68756434a547c"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 5,
+      "render": "reading-005-contents-2.png",
+      "sha256": "a0d25e3c791d01edbcdcb753101a5e9d8c0b148fcb63a6d59af733434b25eafc"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 12,
+      "render": "reading-012-food-chart.png",
+      "sha256": "edd417cbd12446656704f90d842311c229b4fac63f14a4af4ffbcc290aa59906"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 13,
+      "render": "reading-013-food-chart-following.png",
+      "sha256": "0bc73ee544b889945e1b2f5a51ae8f46421266a4ca49847db79309472f230291"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 38,
+      "render": "reading-038-part-1.png",
+      "sha256": "92c54ec0598d169d6a627def0bf495f026fcfd9b2edf42fa31b172f258198eb2"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 98,
+      "render": "reading-098-part-2.png",
+      "sha256": "0a571ed6cfae1ea38c3a6e6cc25757db69c7650a6281d7ec952acd73864f7222"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 99,
+      "render": "reading-099-cooperative-portraits.png",
+      "sha256": "45d5d0d10bf6c1b0b67475e67bc9f3544509d3e9bb316357b55f39abc79513f7"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 156,
+      "render": "reading-156-regional-production.png",
+      "sha256": "ff97b8c2846589597c1a3330d4d7970b7bfb53bb0ff9c558dfc30ab393e65f44"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 157,
+      "render": "reading-157-regional-production-following.png",
+      "sha256": "17af0397e4a35a784cb51761db7f391977c842b2c8843833438d5a5aa76dedde"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 166,
+      "render": "reading-166-part-3.png",
+      "sha256": "198b2f3298d712a905b13b27c59dba4dbc04bf835ca2b4a0ae90462bf684d3e9"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 190,
+      "render": "reading-190-model-memory-equations.png",
+      "sha256": "f1b3292bf93ff5c7e8c3f2c3bb25c143c785c314d1a25a983e262b3af45b2c7f"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 191,
+      "render": "reading-191-heat-equations.png",
+      "sha256": "4e99350890e3dd9328fadf1395249247be2b5f6a176c5895afbc8b24f0cda13b"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 192,
+      "render": "reading-192-cooling-loop.png",
+      "sha256": "7182d30e6454b6fbc45a1ff30d4af9f01878f151980986b52d370e1398da2a98"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 193,
+      "render": "reading-193-cooling-following.png",
+      "sha256": "e8b9dc1f0976cbfc3d61d2e37fecd403a5556eab2ca23af464fbf626a79f5746"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 267,
+      "render": "reading-267-mesh-node.png",
+      "sha256": "19b6c96586216aab086ed7d030d6fe5c6185efd529559d865caabffbaffca62a"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 268,
+      "render": "reading-268-mesh-following.png",
+      "sha256": "21a5ce4e7e545bed3a0952baf91c1e049bb932590b79ac70dc5a7957af5e8e12"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 271,
+      "render": "reading-271-fabrication.png",
+      "sha256": "5ed3bcf1e0d594a175e22214071cffee77bf32d3788492a6540c48ef659bdd9b"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 272,
+      "render": "reading-272-fabrication-following.png",
+      "sha256": "23ff03338a7da716e8af0bbd11e7130962757a968253504f624fd27f491492dd"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 305,
+      "render": "reading-305-conclusion-opening.png",
+      "sha256": "8165d1606e987ef603d4b3b94c07736ff5fec07ce5a2d54d2766c65df97c7dfb"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 312,
+      "render": "reading-312-conclusion-bookend.png",
+      "sha256": "f06966f6636b08e030e06e090f3787c6c6d2894106dc146919c58caa49f73a17"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 313,
+      "render": "reading-313-conclusion-continuation.png",
+      "sha256": "bbc88ab6d0a7bc889619330a3fb2ec156554aefb055c8197477a84fae4061de1"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 314,
+      "render": "reading-314-conclusion-end.png",
+      "sha256": "71c655df8f802ce5c4b0492ace87a5804e0516349f11ee4d2733e123f9052477"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 330,
+      "render": "reading-330-dense-bibliography.png",
+      "sha256": "726a5f5b3006346392845d06f985c6e77ff9d0ecd085c4612d507eb8d2559bc0"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 334,
+      "render": "reading-334-epigraph-bibliography.png",
+      "sha256": "29b861f523549db99c51c088170e831ffc8602b22d0196396e970f9ba5a04742"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 336,
+      "render": "reading-336-bibliography-ending.png",
+      "sha256": "ed9808f43d47b69b3ff1a5544f154743a668b15a88ae68a083f110a1c789d3ff"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 366,
+      "render": "reading-366-discussion-appendix.png",
+      "sha256": "d9aa334f069fc6055274fab90ffa23ed20ae6e336a62ddb5d65535964f17d518"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 370,
+      "render": "reading-370-credits-opening.png",
+      "sha256": "0fd723ea6dea1b8a0dc19947e3270d28cdb6fb5c7819f32b7dcfe048ec72a1e1"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 371,
+      "render": "reading-371-credits-continued.png",
+      "sha256": "52c1110a1554a9b262e438fa71ad3c9384614fb7e750e924cd7ba67c60cd40d9"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 372,
+      "render": "reading-372-credits-continued.png",
+      "sha256": "1f9abe0d8413bf7506fd769c00050443b8694643de1f19009d0ee83be719269b"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 373,
+      "render": "reading-373-credits-ending.png",
+      "sha256": "2936a7d873c02d23a12f6e2829647aff237b4457110083e2966c0bce9474341d"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 167,
+      "render": "reading-167-part-3-continuation.png",
+      "sha256": "42e4bbba7c4cf72df1a3b6d6c0eed9b64a5e62c3276cb9113fcf0605efcc61cb"
+    },
+    {
+      "pdf": "Surviving-the-Singularity-reading.pdf",
+      "physical_page": 344,
+      "render": "reading-344-ledger-table.png",
+      "sha256": "17a10c0d77fb07168f477131d6218c8a415be4fa28f35988b9e19d0cfa11cd5d"
+    }
+  ],
+  "limits": "Representative-page visual review; not a full-page, printer, accessibility, or rights certification."
+}

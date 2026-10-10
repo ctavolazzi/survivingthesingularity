@@ -1,7 +1,7 @@
 {
   "schema": "sts-upload-coverage/v1",
   "repository": "ctavolazzi/survivingthesingularity",
-  "captured_utc": "2026-10-10T13:09:08.106957+00:00",
+  "captured_utc": "2026-10-10T13:11:06.791817+00:00",
   "historical_archives": [
     {
       "tag": "book-archive-2026-10-08",
@@ -38,9 +38,9 @@
   ],
   "working_snapshots": {
     "manifest": "working-tree-snapshots.json",
-    "sha256": "f3f4b3fcc9adc548f0db57d57f551161bb0e209b9bfd0c0cb85f3c46aff9f772",
-    "files": 25,
-    "payload_bytes": 480518,
+    "sha256": "c4d0f110bc95f7e0dc34c5c55629fcba02934e9e401de147d4ce79d2f0c4bf6d",
+    "files": 28,
+    "payload_bytes": 539365,
     "source_and_copy_hashes_verified": true,
     "wrong_hash_negative_control_rejected": true
   },

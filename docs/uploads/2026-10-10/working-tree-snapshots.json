@@ -6,7 +6,7 @@
       "source_worktree": "/Users/ctavolazzi/Code/active/sts-site-fixes",
       "branch": "site/critique-fixes-2026-10-09",
       "base_commit": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
-      "captured_utc": "2026-10-10T13:04:30.842407+00:00",
+      "captured_utc": "2026-10-10T13:11:06.615015+00:00",
       "state": "In-progress source snapshot. No production-readiness claim. Source worktree and index untouched.",
       "files": [
         {
@@ -29,6 +29,27 @@
           "sha256": "ae5afa5d96a08c5fc369430cc1d3802e7a6a634b109fa77434ba1c422ff32853",
           "git_mode": "100644",
           "snapshot_path": "snapshots/sts-site-fixes/src/app.html"
+        },
+        {
+          "path": "src/lib/components/RecommendedContent.svelte",
+          "bytes": 2082,
+          "sha256": "c471ed94d4548f9abf009c1aba51aba9238f36fc86edca555c4de8537f382ee0",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/src/lib/components/RecommendedContent.svelte"
+        },
+        {
+          "path": "src/routes/blog/claude-projects-weekend-project/+page.svelte",
+          "bytes": 8772,
+          "sha256": "53a36b71b9831161620d32f190046311bf12675693d993bea23f7f1ccb248df7",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/src/routes/blog/claude-projects-weekend-project/+page.svelte"
+        },
+        {
+          "path": "src/routes/checklist/+page.svelte",
+          "bytes": 47993,
+          "sha256": "229c8faa13b40c12a6509497dd9eb01f092b91d60182e0db6cde7f678a6b4d09",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/src/routes/checklist/+page.svelte"
         },
         {
           "path": "static/_headers",
@@ -173,6 +194,9 @@
       ],
       "tracked_changes": [
         "src/app.html",
+        "src/lib/components/RecommendedContent.svelte",
+        "src/routes/blog/claude-projects-weekend-project/+page.svelte",
+        "src/routes/checklist/+page.svelte",
         "static/_headers"
       ],
       "untracked_files": [
@@ -203,7 +227,7 @@
       "source_worktree": "/Users/ctavolazzi/Code/active/sts-plain-claims",
       "branch": "site/plain-claims-2026-10-10",
       "base_commit": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
-      "captured_utc": "2026-10-10T13:04:31.087428+00:00",
+      "captured_utc": "2026-10-10T13:11:06.788333+00:00",
       "state": "In-progress source snapshot. No production-readiness claim. Source worktree and index untouched.",
       "files": [
         {

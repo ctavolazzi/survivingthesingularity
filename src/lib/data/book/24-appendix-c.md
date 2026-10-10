@@ -8,6 +8,7 @@
 
 - **The one-sentence definition this book uses.** The Singularity is the point where intelligence stops being scarce, and every institution quietly built on its scarcity starts failing before anyone has written the replacement.
 - **Why that one.** It doesn't wait for a superintelligence, it can be tested on your own paycheck this quarter, and it points at the real emergency, which is the gap between the contract that's failing and the one nobody has drafted.
+- **The unit this book measures it in.** Cost per Labor-Hour Equivalent (CLHE): the all-in cost of one human-hour's worth of useful output from any source, person or machine. When a machine's CLHE for a task drops below a human's, the task starts to move. [](sts:chapter1) defines it; [](sts:chapter6) runs it through Jevons Paradox and 1519.
 
 **The three schools, in case somebody quotes one at you.** Eliezer Yudkowsky sorted the whole literature into these in 2007. They are not the same claim, and people conflate them constantly.
 

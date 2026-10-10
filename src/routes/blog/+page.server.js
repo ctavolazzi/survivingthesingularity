@@ -2,6 +2,14 @@
 export async function load() {
   const posts = [
     {
+      title: 'The Price of a Labor-Hour: Blue Jeans, Jevons, and the Conquistadors of Work',
+      date: '2026-09-25',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/the-price-of-a-labor-hour',
+      excerpt: "There is a number that tells you how close a machine is to taking your job. Here's what it did to spinners, weavers, farmers and horses, why there are more T-shirts on Earth than ever, and why the arrival of AI looks less like a factory upgrade and more like 1519.",
+      image: '/images/surviving_the_singularity_cover_1200.png'
+    },
+    {
       title: "No, Scientists Didn't Just Invent Anti-Gravity (What They Actually Found Is Stranger)",
       date: '2026-07-17',
       author: 'Christopher Tavolazzi',

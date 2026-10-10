@@ -179,6 +179,37 @@ As the marginal cost of intelligence drops to zero, the mechanism of creative de
 
 The logical endpoint of this trajectory is a post-scarcity model, a concept thoroughly explored in post-capitalist theoretical frameworks such as "Fully Automated Luxury Communism" (FALC). Authored by Aaron Bastani, FALC posits that the convergence of five technological drivers, full automation of services and manufacturing, limitless renewable energy and battery storage, asteroid mining for unlimited raw materials, CRISPR synthetic biology for extending lifespans, and cellular agriculture for synthetic food, can permanently eliminate scarcity. When information, labor, energy, and resources become permanently cheap, the traditional price mechanism breaks down, decoupling use-value from market value. In such a paradigm, society possesses the capacity to dissolve the boundary between necessity and luxury, instituting a 10- or 12-hour working week, a guaranteed social wage, and universally guaranteed housing and education. Yet, transitioning to this state of abundance requires overcoming severe psychological and institutional barriers that tie human identity to suffering and toil.
 
+### The Price of a Labor-Hour
+
+"Marginal cost of zero" is a phrase that's easy to nod at and hard to feel. So let's give it a unit you can measure against your own paycheck.
+
+Economists already have the pieces. A **labor-hour** is the standard unit of work: one person, one hour. In *The General Theory* (1936), John Maynard Keynes took an hour of ordinary labor as his **labour-unit** and named the money wage of that hour the **wage-unit**, so he could measure an economy in hours and dollars instead of a fuzzy "general price level." Governments track the modern version as **Unit Labor Cost**: total compensation divided by units of output. Put another way, what you're paid per hour divided by what you produce per hour. If your wage rises five percent and your output rises five percent, your Unit Labor Cost doesn't move. If your output doubles and your wage doesn't, the labor inside everything you make just got half as expensive.
+
+None of those measures were built for a world where the worker might not be a person. So this book uses one more:
+
+> **Cost per Labor-Hour Equivalent (CLHE): the all-in cost of getting one human-hour's worth of useful output from any source, a person, a machine, a model, or a mix.**
+
+For a person, CLHE is the fully loaded wage (pay plus taxes, benefits, and overhead) divided by output per hour. For a machine, it's the hardware amortized over its working life, plus energy, maintenance, software, and the human time spent supervising it, divided by the same output. Same numerator logic, same denominator, one scale. A weaver and a power loom, a farmhand and a combine, a paralegal and a language model all fit on it.
+
+And here's the rule the whole Industrial Revolution ran on: **when a machine's CLHE for a task falls below a human's, that task starts to move.** Not overnight, and never completely. But it moves, and once it starts it doesn't come back.
+
+The history is not subtle about this. Look at how many human-hours the same output took before and after the machine got a foothold:
+
+| Task | Before | After |
+| --- | --- | --- |
+| Spinning 100 lb of cotton into yarn | about 50,000 hours by hand | about 300 hours on power-assisted mules by 1795, about 135 by 1825 |
+| Growing 100 bushels of U.S. wheat | 250 to 300 hours in 1830 | 40 to 50 hours by 1890, about 3 by 1987 |
+| Connecting a telephone call | a human operator, every call | dial switching across more than half of AT&T's network between 1920 and 1940 |
+| Doing arithmetic | "computer" was a job title held by people | the job title transferred to the machine |
+
+The telephone row is the one to sit with. In the 1920s AT&T was the largest employer in the country and operators were about half its workforce, the standard first job for young American women. When a city cut over to dial, the number of young women working as operators there dropped by fifty to eighty percent, immediately and permanently.
+
+Three patterns repeat in every row. The drop isn't twenty percent. It's ninety to ninety-nine, because once a machine gets a foothold its CLHE keeps falling for decades while a human hour stays a human hour. The people displaced are almost never the people who collect the gains. And total employment recovered anyway, every time, because the work went somewhere new. The horse, in [](sts:chapter5), is the case where it didn't. The framework knitters, in [](sts:chapter7), are the case where the people saw all of this coming and it didn't help.
+
+What's different now is the width of the front. Every row in that table is one task. AI and general-purpose robots are pushing CLHE down on thousands of tasks at once: writing, coding, drawing, diagnosing, driving, sorting, picking, packing. The pattern is the same one it's always been. The blast radius isn't.
+
+So don't ask whether a machine can do your job. Ask what your CLHE is, what the machine's is, and which direction the gap is moving. That's a number, not a feeling, and you can check it this quarter.
+
 ---
 
 ## Precedent P-03: One Million Years, Give or Take (New York, 1903)

@@ -1,216 +1,114 @@
 // @ts-check
-import { test, expect } from '@playwright/test';
+import { test, expect, gotoReady } from './helpers/isolated-page.js';
 
-/**
- * USABILITY TESTS
- * Test interactive features, keyboard navigation,
- * command palette, and overall UX quality.
- */
-
+// These assertions require current, visible behavior. A missing feature must
+// fail its check instead of conditionally bypassing the assertion.
 test.describe('Usability', () => {
+  for (const shortcut of ['Meta+k', 'Control+k']) {
+    test(`Command palette opens and focuses search with ${shortcut}`, async ({ page }) => {
+      await gotoReady(page, '/');
+      await page.keyboard.press(shortcut);
+      await expect(page.getByRole('dialog', { name: 'Command palette' })).toBeVisible();
+      await expect(page.getByPlaceholder('Search pages...')).toBeFocused();
+    });
+  }
 
-  test('Command palette opens with Cmd+K / Ctrl+K', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    // Press Cmd+K (or Ctrl+K on non-Mac)
-    await page.keyboard.press('Meta+k');
-    await page.waitForTimeout(300);
-
-    // Command palette should be visible
-    const palette = page.locator('[class*="palette"]');
-    const isVisible = (await palette.count() > 0) && (await palette.first().isVisible());
-
-    if (!isVisible) {
-      // Try Ctrl+K instead
-      await page.keyboard.press('Control+k');
-      await page.waitForTimeout(300);
-    }
-
-    // Check for search input inside palette
-    const searchInput = page.locator('[class*="palette"] input').first();
-    if (await searchInput.isVisible()) {
-      expect(await searchInput.isVisible()).toBe(true);
-    }
+  test('Command palette filters current pages and reports no matches', async ({ page }) => {
+    await gotoReady(page, '/');
+    await page.keyboard.press('Control+k');
+    const dialog = page.getByRole('dialog', { name: 'Command palette' });
+    await expect(dialog).toBeVisible();
+    const search = dialog.getByPlaceholder('Search pages...');
+    await search.fill('blog');
+    await expect(dialog.locator('.palette-item')).toHaveCount(1);
+    await expect(dialog.locator('.palette-item-title')).toHaveText('Blog');
+    await search.fill('no-matching-page-xyz');
+    await expect(dialog.locator('.palette-item')).toHaveCount(0);
+    await expect(dialog.locator('.palette-empty')).toContainText('No results');
   });
 
-  test('Command palette search returns results', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    await page.keyboard.press('Meta+k');
-    await page.waitForTimeout(300);
-
-    const searchInput = page.locator('[class*="palette"] input').first();
-    if (await searchInput.isVisible()) {
-      await searchInput.fill('blueprint');
-      await page.waitForTimeout(300);
-
-      // Should show results
-      const results = page.locator('[class*="palette-item"], [class*="palette-result"]');
-      const count = await results.count();
-      expect(count).toBeGreaterThan(0);
-    }
-  });
-
-  test('Escape key closes command palette', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    await page.keyboard.press('Meta+k');
-    await page.waitForTimeout(300);
-
+  test('Escape closes an open command palette', async ({ page }) => {
+    await gotoReady(page, '/');
+    await page.keyboard.press('Control+k');
+    const dialog = page.getByRole('dialog', { name: 'Command palette' });
+    await expect(dialog).toBeVisible();
     await page.keyboard.press('Escape');
-    await page.waitForTimeout(300);
-
-    const palette = page.locator('[class*="palette-overlay"]');
-    if (await palette.count() > 0) {
-      await expect(palette.first()).not.toBeVisible();
-    }
+    await expect(dialog).toHaveCount(0);
   });
 
-  test('Keyboard navigation works on homepage', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
+  test('Command palette keyboard selection navigates to Blog', async ({ page }) => {
+    await gotoReady(page, '/');
+    await page.keyboard.press('Control+k');
+    await page.getByPlaceholder('Search pages...').fill('blog');
+    await expect(page.locator('.palette-item-title')).toHaveText('Blog');
+    await page.keyboard.press('Enter');
+    await expect(page).toHaveURL(/\/blog$/);
+    await expect(page.getByRole('dialog', { name: 'Command palette' })).toHaveCount(0);
+    await expect(page.locator('main h1')).toBeVisible();
+  });
 
-    // Tab through interactive elements
-    for (let i = 0; i < 5; i++) {
+  test('First interactive keyboard stop skips navigation and focuses main content', async ({ page, browserName }) => {
+    await gotoReady(page, '/');
+    await page.keyboard.press('Tab');
+    // Firefox focuses the scrollable body before its first interactive child.
+    // This also occurs in plain HTML with the site's overflow/height rules.
+    if (browserName === 'firefox' && await page.locator('body').evaluate(el => el === document.activeElement)) {
+      await expect(page.locator('body')).toHaveCSS('overflow-y', 'auto');
       await page.keyboard.press('Tab');
     }
-
-    // An element should now be focused
-    const focusedTag = await page.evaluate(() => document.activeElement?.tagName);
-    expect(['A', 'BUTTON', 'INPUT', 'SELECT']).toContain(focusedTag);
+    await expect(page.locator('a[href="#main-content"]')).toBeFocused();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('#main-content')).toBeFocused();
   });
 
-  test('Blueprint navigation between sections works', async ({ page }) => {
-    await page.goto('/blueprint');
-    await page.waitForLoadState('networkidle');
+  test('Scrolling reveals the final call to action', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'no-preference' });
+    await gotoReady(page, '/');
+    const callToAction = page.locator('.cta-inner.reveal');
+    await expect(callToAction).toHaveCount(1);
+    await expect(callToAction).not.toHaveClass(/\bvisible\b/);
+    await callToAction.scrollIntoViewIfNeeded();
+    await expect(callToAction).toHaveClass(/\bvisible\b/);
+    await expect(callToAction).toHaveCSS('opacity', '1');
+  });
 
-    // Click on first section link
-    const sectionLink = page.locator('a[href*="/blueprint/"]').first();
-    if (await sectionLink.isVisible()) {
-      await sectionLink.click();
-      await page.waitForLoadState('networkidle');
+  test('Thank-you dialog opens and its close control works', async ({ page }) => {
+    await gotoReady(page, '/');
+    await page.getByRole('button', { name: /Thank you for being here/ }).click();
+    const dialog = page.getByRole('dialog', { name: 'Thank You', exact: true });
+    await expect(dialog).toBeVisible();
+    await dialog.getByRole('button', { name: 'Close dialog', exact: true }).click();
+    await expect(dialog).toHaveCount(0);
+  });
 
-      // Should navigate to a section or stay on blueprint index
-      expect(page.url()).toContain('/blueprint');
+  test('Homepage exposes current navigation and internal links resolve', async ({ page }) => {
+    await gotoReady(page, '/');
+    const hrefs = await page.locator('a[href^="/"]').evaluateAll(links =>
+      [...new Set(links.map(link => link.getAttribute('href')).filter(Boolean))]
+    );
+    for (const required of ['/book', '/blog', '/early-access', '/checklist', '/about']) {
+      expect(hrefs).toContain(required);
     }
-  });
-
-  test('Scroll animations trigger correctly', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    // Get initial section states
-    const sectionsExist = await page.locator('.section, [class*="section"]').count();
-    expect(sectionsExist).toBeGreaterThan(0);
-
-    // Scroll down to trigger animations
-    await page.evaluate(() => window.scrollTo(0, 1000));
-    await page.waitForTimeout(1000);
-
-    // Elements should have been revealed
-    const revealedCount = await page.evaluate(() => {
-      return document.querySelectorAll('.revealed, [class*="revealed"]').length;
-    });
-
-    // At least some sections should be revealed after scrolling
-    expect(revealedCount).toBeGreaterThanOrEqual(0);
-  });
-
-  test('Interactive stack table expands rows', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    // Scroll to stack table
-    const stackTable = page.locator('[class*="stack-interactive"]').first();
-    if (await stackTable.isVisible()) {
-      // Click a row
-      const firstRow = stackTable.locator('[class*="stack-row"]').first();
-      await firstRow.click();
-      await page.waitForTimeout(300);
-
-      // Detail should be visible
-      const detail = stackTable.locator('[class*="stack-detail"]');
-      expect(await detail.count()).toBeGreaterThan(0);
-    }
-  });
-
-  test('White Rabbit panel opens with Ctrl+Shift+D', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    await page.keyboard.press('Control+Shift+D');
-    await page.waitForTimeout(300);
-
-    const panel = page.locator('[class*="rabbit-panel"]');
-    if (await panel.count() > 0) {
-      await expect(panel.first()).toBeVisible();
-    }
-  });
-
-  test('Savings calculator responds to input', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    // Find savings calculator
-    const calculator = page.locator('[class*="savings"], [class*="calculator"]').first();
-
-    if (await calculator.isVisible()) {
-      // Find range inputs inside
-      const sliders = calculator.locator('input[type="range"]');
-      const count = await sliders.count();
-
-      if (count > 0) {
-        // Move a slider
-        const slider = sliders.first();
-        await slider.fill('5000');
-        await page.waitForTimeout(300);
-
-        // Calculator should update (output text should change)
-        const hasOutput = await calculator.textContent();
-        expect(hasOutput?.length).toBeGreaterThan(0);
-      }
-    }
-  });
-
-  test('Toast notification system works', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    // Trigger a toast by interacting with newsletter or other action
-    // Toasts are typically triggered by user actions
-    const toastContainer = page.locator('[class*="toast"]');
-    // Container should exist even if empty
-    expect(await toastContainer.count()).toBeGreaterThanOrEqual(0);
-  });
-
-  test('All internal links resolve to real pages', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-
-    const links = await page.locator('a[href^="/"]').all();
-    const hrefs = new Set();
-
-    for (const link of links) {
-      const href = await link.getAttribute('href');
-      if (href && !href.includes('#') && !href.includes('mailto:')) {
-        hrefs.add(href);
-      }
-    }
-
-    const broken = [];
     for (const href of hrefs) {
-      const response = await page.request.get(href);
-      if (response.status() >= 400) {
-        broken.push({ href, status: response.status() });
+      if (!href || href.startsWith('//')) continue;
+      const origin = new URL(page.url()).origin;
+      let target = new URL(href, origin);
+      for (let hop = 0; hop < 6; hop++) {
+        // APIRequestContext bypasses browser routing. Validate each redirect
+        // before making another request, including its origin and API path.
+        expect(target.origin).toBe(origin);
+        expect(target.pathname).not.toMatch(/^\/api(?:\/|$)/);
+        const response = await page.request.get(target.href, { maxRedirects: 0 });
+        if ([301, 302, 303, 307, 308].includes(response.status())) {
+          expect(hop, `${href} redirects too many times`).toBeLessThan(5);
+          const location = response.headers().location;
+          expect(location, `${href} redirect needs a destination`).toBeTruthy();
+          target = new URL(location, target);
+        } else {
+          expect(response.ok(), `${href} must resolve (${response.status()})`).toBe(true);
+          break;
+        }
       }
     }
-
-    if (broken.length > 0) {
-      console.error('Broken internal links:', broken);
-    }
-    expect(broken.length).toBe(0);
   });
 });

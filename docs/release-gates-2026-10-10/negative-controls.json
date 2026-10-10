@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-10",
+  "browser": "chromium",
+  "injection": "Temporary test-only browser faults; spec bytes restored in finally after each run.",
+  "results": [
+    {
+      "control": "account-200",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-10T15:17:51.275Z",
+        "duration": 2893.715,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "detected_at": "Expected: 404",
+      "confirmed": true
+    },
+    {
+      "control": "invalid-email-enabled",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-10T15:17:55.680Z",
+        "duration": 9430.56,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "detected_at": "toBeDisabled",
+      "confirmed": true
+    },
+    {
+      "control": "clipped-control",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-10T15:18:06.681Z",
+        "duration": 4378.8640000000005,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "detected_at": "toBeLessThanOrEqual",
+      "confirmed": true
+    },
+    {
+      "control": "missing-palette",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-10T15:18:12.594Z",
+        "duration": 9968.580999999998,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "detected_at": "toBeVisible",
+      "confirmed": true
+    },
+    {
+      "control": "no-reveal",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-10T15:18:24.382Z",
+        "duration": 9080.082,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "detected_at": "toHaveClass",
+      "confirmed": true
+    }
+  ]
+}

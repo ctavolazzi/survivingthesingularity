@@ -81,6 +81,7 @@
   let answers = Object.fromEntries(
     allItems.map(item => [item.n, { checked: false, notes: '' }])
   );
+  let progressRestored = false;
 
   $: checkedCount = Object.values(answers).filter(a => a.checked).length;
 
@@ -96,9 +97,12 @@
         }
       }
     } catch {}
+    progressRestored = true;
   });
 
-  $: if (browser) {
+  // Initial reactive evaluation runs before onMount. Do not overwrite saved
+  // progress with the empty defaults before the restoration above can read it.
+  $: if (browser && progressRestored) {
     try { localStorage.setItem('sts_checklist_progress', JSON.stringify(answers)); } catch {}
   }
 

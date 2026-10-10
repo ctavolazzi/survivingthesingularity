@@ -1,0 +1,231 @@
+{
+  "schema": "sts-local-work-snapshots/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "snapshots": [
+    {
+      "source_worktree": "/Users/ctavolazzi/Code/active/sts-site-fixes",
+      "branch": "site/critique-fixes-2026-10-09",
+      "base_commit": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+      "captured_utc": "2026-10-10T13:04:30.842407+00:00",
+      "state": "In-progress source snapshot. No production-readiness claim. Source worktree and index untouched.",
+      "files": [
+        {
+          "path": "scripts/fetch_fonts.py",
+          "bytes": 5768,
+          "sha256": "abeade47eaaf4161fca76a8fbe9dbbe9a90234b61a0c7b1034e54a8261d59d48",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/scripts/fetch_fonts.py"
+        },
+        {
+          "path": "scripts/site-audit/audit_network.mjs",
+          "bytes": 3438,
+          "sha256": "bd46d9363e13bce400a64d19352f62a9efa012375a8fc73812d5d3e641164f6e",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/scripts/site-audit/audit_network.mjs"
+        },
+        {
+          "path": "src/app.html",
+          "bytes": 1720,
+          "sha256": "ae5afa5d96a08c5fc369430cc1d3802e7a6a634b109fa77434ba1c422ff32853",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/src/app.html"
+        },
+        {
+          "path": "static/_headers",
+          "bytes": 1921,
+          "sha256": "4963ea43052e4da54729b5bdd2118966e1f59098abef23f1d4c35b6e8b55e07a",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/_headers"
+        },
+        {
+          "path": "static/fonts/OFL-Inter.txt",
+          "bytes": 4377,
+          "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/OFL-Inter.txt"
+        },
+        {
+          "path": "static/fonts/OFL-JetBrains-Mono.txt",
+          "bytes": 4399,
+          "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/OFL-JetBrains-Mono.txt"
+        },
+        {
+          "path": "static/fonts/OFL-Outfit.txt",
+          "bytes": 4389,
+          "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/OFL-Outfit.txt"
+        },
+        {
+          "path": "static/fonts/fonts.css",
+          "bytes": 24756,
+          "sha256": "c6c4ad76e1f833a4026155e226f9a6c5adad98ae2b7d3a34d25df177af15cbc9",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/fonts.css"
+        },
+        {
+          "path": "static/fonts/inter-v20-cyrillic-ext.woff2",
+          "bytes": 25844,
+          "sha256": "fccca918fea40089dacadc7045861314d1a6bc91f1f323cc1eeb22ebcdb321b5",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/inter-v20-cyrillic-ext.woff2"
+        },
+        {
+          "path": "static/fonts/inter-v20-cyrillic.woff2",
+          "bytes": 18744,
+          "sha256": "aebf2ab4a4ce6810d73c1ac7be7cafb4e5ec4cee2d6db5fb3e09691747ec4bd6",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/inter-v20-cyrillic.woff2"
+        },
+        {
+          "path": "static/fonts/inter-v20-greek-ext.woff2",
+          "bytes": 11272,
+          "sha256": "a2e2c783ca6f9c20486e81e72a279203e86730bbf8f01ff6a5ee9dbd09e1c271",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/inter-v20-greek-ext.woff2"
+        },
+        {
+          "path": "static/fonts/inter-v20-greek.woff2",
+          "bytes": 19044,
+          "sha256": "46dd4cdca58c26ae87cc6927657bf83b2e8abfc39ffd0ab176e301a8d28d22bf",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/inter-v20-greek.woff2"
+        },
+        {
+          "path": "static/fonts/inter-v20-latin-ext.woff2",
+          "bytes": 85272,
+          "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/inter-v20-latin-ext.woff2"
+        },
+        {
+          "path": "static/fonts/inter-v20-latin.woff2",
+          "bytes": 48432,
+          "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/inter-v20-latin.woff2"
+        },
+        {
+          "path": "static/fonts/inter-v20-vietnamese.woff2",
+          "bytes": 10280,
+          "sha256": "8db00ff46c67b22cda8bed865acf7077651cac8d2841d5b40980556b48961931",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/inter-v20-vietnamese.woff2"
+        },
+        {
+          "path": "static/fonts/jetbrains-mono-v24-cyrillic-ext.woff2",
+          "bytes": 1664,
+          "sha256": "9343de2ca5d9549f792e7962375af8efb0f320c7643bfd36c884b5a30e5c396f",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-cyrillic-ext.woff2"
+        },
+        {
+          "path": "static/fonts/jetbrains-mono-v24-cyrillic.woff2",
+          "bytes": 8892,
+          "sha256": "4995a9a43ac659ec32fcd8b463755cd6a07b31a6e6b3894a6a153b661cf490e2",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-cyrillic.woff2"
+        },
+        {
+          "path": "static/fonts/jetbrains-mono-v24-greek.woff2",
+          "bytes": 6800,
+          "sha256": "49c3da6c9a2b279b0f1f860f5cfb1f5dc38d88a5c7be9c9b1837bbc4e3db6111",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-greek.woff2"
+        },
+        {
+          "path": "static/fonts/jetbrains-mono-v24-latin-ext.woff2",
+          "bytes": 11596,
+          "sha256": "9c38cb2d0d2d93c1ee6e21fa78db76f13ea7e15e15cc64214c7ca89b6aaa35c4",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-latin-ext.woff2"
+        },
+        {
+          "path": "static/fonts/jetbrains-mono-v24-latin.woff2",
+          "bytes": 31340,
+          "sha256": "2c32b9b3ee358c119e210f6f5195f9bd34894d78a785ff2e95d60e718e400af4",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-latin.woff2"
+        },
+        {
+          "path": "static/fonts/jetbrains-mono-v24-vietnamese.woff2",
+          "bytes": 5872,
+          "sha256": "d44eb1936043a56038eb02dd70b243f379bef65783f94ec12f277550720411f1",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-vietnamese.woff2"
+        },
+        {
+          "path": "static/fonts/outfit-v15-latin-ext.woff2",
+          "bytes": 14760,
+          "sha256": "9e38b3f1575daba3435ef09d33a202585ed5bd204bd0a8c744955c750c2b9091",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/outfit-v15-latin-ext.woff2"
+        },
+        {
+          "path": "static/fonts/outfit-v15-latin.woff2",
+          "bytes": 32228,
+          "sha256": "92684e4acde79ef07758cd09380b7e01e9824d8b061eddeda046f78c166d7b12",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-site-fixes/static/fonts/outfit-v15-latin.woff2"
+        }
+      ],
+      "tracked_changes": [
+        "src/app.html",
+        "static/_headers"
+      ],
+      "untracked_files": [
+        "scripts/fetch_fonts.py",
+        "scripts/site-audit/audit_network.mjs",
+        "static/fonts/OFL-Inter.txt",
+        "static/fonts/OFL-JetBrains-Mono.txt",
+        "static/fonts/OFL-Outfit.txt",
+        "static/fonts/fonts.css",
+        "static/fonts/inter-v20-cyrillic-ext.woff2",
+        "static/fonts/inter-v20-cyrillic.woff2",
+        "static/fonts/inter-v20-greek-ext.woff2",
+        "static/fonts/inter-v20-greek.woff2",
+        "static/fonts/inter-v20-latin-ext.woff2",
+        "static/fonts/inter-v20-latin.woff2",
+        "static/fonts/inter-v20-vietnamese.woff2",
+        "static/fonts/jetbrains-mono-v24-cyrillic-ext.woff2",
+        "static/fonts/jetbrains-mono-v24-cyrillic.woff2",
+        "static/fonts/jetbrains-mono-v24-greek.woff2",
+        "static/fonts/jetbrains-mono-v24-latin-ext.woff2",
+        "static/fonts/jetbrains-mono-v24-latin.woff2",
+        "static/fonts/jetbrains-mono-v24-vietnamese.woff2",
+        "static/fonts/outfit-v15-latin-ext.woff2",
+        "static/fonts/outfit-v15-latin.woff2"
+      ]
+    },
+    {
+      "source_worktree": "/Users/ctavolazzi/Code/active/sts-plain-claims",
+      "branch": "site/plain-claims-2026-10-10",
+      "base_commit": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+      "captured_utc": "2026-10-10T13:04:31.087428+00:00",
+      "state": "In-progress source snapshot. No production-readiness claim. Source worktree and index untouched.",
+      "files": [
+        {
+          "path": "src/lib/offer.js",
+          "bytes": 15691,
+          "sha256": "b6862f3d5ab93ea3d6cb69fbd27c3c94056e3c588e28ce78825a783b783390be",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-plain-claims/src/lib/offer.js"
+        },
+        {
+          "path": "src/routes/+page.svelte",
+          "bytes": 82019,
+          "sha256": "6e77cd3d440743fa5389259867ea479b5eaf89a0293e9a35c7e9854c8acb6866",
+          "git_mode": "100644",
+          "snapshot_path": "snapshots/sts-plain-claims/src/routes/+page.svelte"
+        }
+      ],
+      "tracked_changes": [
+        "src/lib/offer.js",
+        "src/routes/+page.svelte"
+      ],
+      "untracked_files": []
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "sts-upload-coverage/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "captured_utc": "2026-10-10T13:09:08.106957+00:00",
+  "historical_archives": [
+    {
+      "tag": "book-archive-2026-10-08",
+      "payloads": 149
+    },
+    {
+      "tag": "book-work-archive-2026-10-09",
+      "payloads": 147,
+      "source_files_rechecked": 147,
+      "source_mismatches": 0
+    }
+  ],
+  "uploaded_refs": [
+    {
+      "ref": "refs/heads/archive/sts-mvp-2026-07-30",
+      "sha": "b56173d1e8d85bb6405ab046bf2a440850b9d9bb",
+      "commits": 10,
+      "current_files": 38,
+      "current_bytes": 355133,
+      "historical_blobs": 50,
+      "historical_blob_bytes": 751662,
+      "gitleaks_history_passed": true,
+      "remote_sha_verified": true
+    },
+    {
+      "ref": "refs/heads/archive/site-fixes-2026-10-10",
+      "sha": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+      "new_commits": 3,
+      "source_files": 10,
+      "audit_files": 7,
+      "gitleaks_history_passed": true,
+      "remote_sha_verified": true
+    }
+  ],
+  "working_snapshots": {
+    "manifest": "working-tree-snapshots.json",
+    "sha256": "f3f4b3fcc9adc548f0db57d57f551161bb0e209b9bfd0c0cb85f3c46aff9f772",
+    "files": 25,
+    "payload_bytes": 480518,
+    "source_and_copy_hashes_verified": true,
+    "wrong_hash_negative_control_rejected": true
+  },
+  "historical_sql": {
+    "source": "/Users/ctavolazzi/Code/active/survivingthesingularity/sql/008_discord_applications.sql",
+    "bytes": 1130,
+    "sha256": "b8065725a59adab4a7e173b6186015702cb029d3ba853a4cd2f96b2e5edff45b",
+    "copied_utc": "2026-10-10T13:05:39.457668+00:00",
+    "state": "Ignored historical migration variant; preserved without applying it or replacing the current migration."
+  },
+  "independent_remaining_work_audit": {
+    "shared_local_refs_checked": true,
+    "only_unuploaded_shared_commit": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+    "reason_excluded": "Only .empirica databases and runtime checkpoints.",
+    "additional_authored_gaps_outside_this_upload_set": 0,
+    "edition_archive_deliverables_already_covered": 31,
+    "pixel_video_selected_files_already_covered": 31,
+    "production_tracker_selected_files_already_covered": 15
+  },
+  "exclusions": [
+    "Credentials, dependencies, runtime databases, logs and caches.",
+    "Generated test reports, rendered build intermediates and raster proof screenshots."
+  ],
+  "limitations": [
+    "Working snapshots preserve source as found at their recorded capture times, without a production-readiness claim.",
+    "Concurrent authoring can produce later work; final source comparison is recorded separately."
+  ]
+}

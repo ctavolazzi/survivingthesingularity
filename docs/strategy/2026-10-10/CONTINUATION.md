@@ -2,6 +2,7 @@
 
 October 10, 2026. These packets turn the weighted matrix into concrete work. They preserve existing author rulings and distinguish source changes from deployment.
 
+- [Open the standalone decision desk](next-steps.html): next moves, adjustable weights, all 27 options, opening-order comparison and verification results. Download the HTML and open it directly; it needs no server or external assets. Source links require internet access.
 - [Manuscript decisions](MANUSCRIPT-DECISIONS.md): recommended technical baseline, selective foreword integration, two opening candidates, ending choices and a Chapter 9 pilot.
 - [Offer reconciliation](OFFER-RECONCILIATION.md): ratified terms, exact surface discrepancies and a controlled acceptance record.
 - [Weighted matrix](README.md): the earlier prioritization model. Read the updates below before using its original assumptions.
@@ -34,3 +35,7 @@ The foreword needs primary-source verification before remaining wording choices.
 ## Next useful work
 
 Assemble reversible opening comparisons and the Chapter 9 source/cut/seam packet, with author-requested content beside proposed cuts. Collect primary foreword evidence. Prepare narrow offer reconciliation against the acceptance record. Browser repair is verified on the isolated candidate; actual service delivery remains unverified. Canonical manuscript changes and public deployment remain separate decisions.
+
+## Rebuilding the decision desk
+
+Run `python3 docs/strategy/2026-10-10/build_dashboard.py` from the repository root. It combines the original `matrix.json` ratings with explicitly dated status annotations in the generator and `dashboard.template.html`. The result, `next-steps.html`, embeds its styles, scripts and data in one file. `dashboard-validation.json` records offline browser checks and the verified HTML hash. Rebuild and recheck after changing its inputs. The original assessment data remains unchanged.

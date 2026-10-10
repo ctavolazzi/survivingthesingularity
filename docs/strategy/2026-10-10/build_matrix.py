@@ -33,7 +33,7 @@ md = [
     '',
     '**Later findings and concrete packets:** [Read the continuation](CONTINUATION.md). The $5 offer and no-account model were already settled; main has advanced, and the failed browser jobs have been diagnosed. The matrix below retains its original assessment timestamp.',
     '',
-    '[Adjust the weights offline](matrix.html) | [Spreadsheet CSV](matrix.csv) | [Full decision data](matrix.json)',
+    '[Open the standalone decision desk](next-steps.html) | [Original weight explorer](matrix.html) | [Spreadsheet CSV](matrix.csv) | [Full decision data](matrix.json)',
     '',
     'The default is balanced progress: strengthen the book and make the public offer credible. These weights and ratings are my judgments for CT to change, not measured probabilities or a statement of CT\'s priorities.',
     '',

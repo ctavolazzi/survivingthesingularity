@@ -4,6 +4,7 @@
   import EmailGate from '$lib/components/EmailGate.svelte';
   import DiscordApplication from '$lib/components/DiscordApplication.svelte';
   import BookCover from '$lib/components/BookCover.svelte';
+  import LiteYouTube from '$lib/components/LiteYouTube.svelte';
   import { offer } from '$lib/offer';
 
   const categories = {
@@ -250,15 +251,10 @@
 
   <!-- ── WELCOME VIDEO ── -->
   <div class="cl-video-section">
+    <!-- Click-to-load, like the home page. A direct embed fetched YouTube's
+         player and set youtube.com cookies as soon as this page opened. -->
     <div class="cl-video-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/NKENM_J-rEg?si=EnjKmWQodX5SybA6"
-        title="Welcome to the Surviving the Singularity community"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <LiteYouTube videoId="NKENM_J-rEg" title="Welcome to the Surviving the Singularity community" />
     </div>
   </div>
 
@@ -1140,13 +1136,7 @@
     background: #000;
     box-shadow: 0 8px 32px rgba(0,0,0,0.5);
   }
-  .cl-video-wrap iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
+  /* The thumbnail and the player both fill this box; LiteYouTube styles them. */
 
   /* ── DISCLAIMER ── */
   .cl-disclaimer {

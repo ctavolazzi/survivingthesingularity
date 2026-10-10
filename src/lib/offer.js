@@ -58,8 +58,8 @@ export const cadence = Object.freeze({
  * artifacts.
  *
  * `LEDGER_PRECEDENT_COUNT` is the BOOK's ledger: one precedent closing each
- * chapter, indexed in Appendix D, running P-01 to P-23. `python3 scripts/sts.py
- * verify precedents` reports "all 23 present in the book and indexed in
+ * chapter, indexed in Appendix D, running P-01 to P-24. `python3 scripts/sts.py
+ * verify precedents` reports "all 24 present in the book and indexed in
  * Appendix D". It stays asserted here rather than derived, mirroring LEDGER_SIZE
  * in scripts/sts.py, because deriving it from Appendix D would make that
  * verification a tautology, comparing the file against itself.
@@ -96,7 +96,7 @@ export const cadence = Object.freeze({
  */
 import bundleManifest from './data/bundleManifest.js';
 
-const LEDGER_PRECEDENT_COUNT = 23;
+const LEDGER_PRECEDENT_COUNT = 24;
 const PRECEDENT_FILE_CASE_COUNT = bundleManifest.counts.precedent_file_cases;
 const PRECEDENT_FILE_SOURCED_COUNT = bundleManifest.counts.cases_with_sources;
 

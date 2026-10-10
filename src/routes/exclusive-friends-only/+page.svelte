@@ -112,6 +112,7 @@
         bind:value={password}
         bind:this={passwordInput}
         placeholder="the code"
+        aria-label="Access code"
         autocomplete="off"
         autocapitalize="off"
         spellcheck="false"

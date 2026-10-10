@@ -5,7 +5,7 @@ October 10, 2026. These packets turn the weighted matrix into concrete work. The
 - [Manuscript decisions](MANUSCRIPT-DECISIONS.md): recommended technical baseline, selective foreword integration, two opening candidates, ending choices and a Chapter 9 pilot.
 - [Offer reconciliation](OFFER-RECONCILIATION.md): ratified terms, exact surface discrepancies and a controlled acceptance record.
 - [Weighted matrix](README.md): the earlier prioritization model. Read the updates below before using its original assumptions.
-- [Release-check diagnosis and repair](https://github.com/ctavolazzi/survivingthesingularity/blob/780c5d4625976131d7a7157f6c978d867161890d/docs/release-gates-2026-10-10/CI-DIAGNOSIS.md): obsolete sign-in tests replaced, checklist reload data loss fixed, 54 local checks passed, and five injected faults detected. [Linux WebKit follow-up](https://github.com/ctavolazzi/survivingthesingularity/actions/runs/38063418022) was started after local verification.
+- [Release-check diagnosis and repair](https://github.com/ctavolazzi/survivingthesingularity/blob/fix/release-gates-2026-10-10/docs/release-gates-2026-10-10/CI-DIAGNOSIS.md), in [draft PR29](https://github.com/ctavolazzi/survivingthesingularity/pull/29): obsolete sign-in tests replaced, checklist reload data loss fixed, 54 local checks passed, and five injected faults detected. [Linux WebKit run](https://github.com/ctavolazzi/survivingthesingularity/actions/runs/38063418022) subsequently passed 180 cases in each of desktop Safari, iPhone and iPad, 540 total, on code commit `780c5d4`. Its clean-checkout build also passed. Backend checkout is excluded because test configuration is absent.
 
 ## Settled
 
@@ -33,4 +33,4 @@ The foreword needs primary-source verification before remaining wording choices.
 
 ## Next useful work
 
-Assemble reversible opening comparisons and the Chapter 9 source/cut/seam packet, with author-requested content beside proposed cuts. Collect primary foreword evidence. Prepare narrow offer reconciliation against the acceptance record. Inspect Linux WebKit results before declaring Safari coverage; service delivery remains separately unverified. Canonical manuscript changes and public deployment remain separate decisions.
+Assemble reversible opening comparisons and the Chapter 9 source/cut/seam packet, with author-requested content beside proposed cuts. Collect primary foreword evidence. Prepare narrow offer reconciliation against the acceptance record. Browser repair is verified on the isolated candidate; actual service delivery remains unverified. Canonical manuscript changes and public deployment remain separate decisions.

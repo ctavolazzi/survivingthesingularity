@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-10-10T15:52:24.451Z",
+  "artifact": "next-steps.html",
+  "sha256": "fd0366ca75ad3ca61fc138b0442fed3f072dc736917a0e46ea659b1074138c1c",
+  "browser": "Chromium via file:// with network offline",
+  "checks": [
+    "All 27 default scores and ordering independently recomputed",
+    "Wrong-score negative control rejected; restored ranking passes",
+    "All three presets",
+    "Proportional weights preserve scores",
+    "All-zero state disables ranking and export",
+    "Keyboard weight adjustment",
+    "Composed search and status filter; empty state; filtered CSV download",
+    "Keyboard expansion exposes current evidence",
+    "Both opening previews preserve all five sections",
+    "Print button invokes browser print",
+    "Visible controls and headings fit at 1440px, 768px and 390px",
+    "Offline execution: zero script errors and zero HTTP requests",
+    "All seven conditional prerequisites retained in expanded rows and full CSV",
+    "Option-specific source link names and normalized slider aria-valuetext"
+  ],
+  "limits": [
+    "External evidence links were inspected as URLs; their live destinations were not fetched in this offline run.",
+    "This page reports prior application verification; it does not execute service delivery checks."
+  ]
+}

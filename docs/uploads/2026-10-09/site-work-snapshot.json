@@ -1,0 +1,71 @@
+{
+  "schema": "sts-work-in-progress-snapshot/v1",
+  "captured_utc": "2026-10-09T16:37:51.785533+00:00",
+  "source_worktree": "/Users/ctavolazzi/Code/active/sts-site-fixes",
+  "source_branch": "site/critique-fixes-2026-10-09",
+  "base_commit": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+  "state": "In-progress snapshot; no claim of production readiness or completed review. Original worktree remains untouched.",
+  "patch": "site-work-in-progress.patch",
+  "patch_bytes": 13253,
+  "patch_sha256": "5773cc08a26598df79b60690b02351d98b0cf8256d2e54c8bc0648bc2a96474c",
+  "files": [
+    {
+      "path": "src/app.html",
+      "bytes": 1863,
+      "sha256": "8ba82e70d6d024c13559b7c7e95909f317863a7898468c389570fab0295eb196"
+    },
+    {
+      "path": "src/lib/components/BookGate.svelte",
+      "bytes": 3656,
+      "sha256": "d3448618f64f9b928b2e4e372034ab14556360d3abaf9a16a382c86bbd08bf35"
+    },
+    {
+      "path": "src/lib/components/DiscordApplication.svelte",
+      "bytes": 4759,
+      "sha256": "30f8eaf7529682408ee0a96627de9f3c1ffd488cfbb68c1ae76f5886321b7e6a"
+    },
+    {
+      "path": "src/lib/offer.js",
+      "bytes": 15144,
+      "sha256": "3c38ade64132af35d06e763afca1ce485650c02fb786ea61b6e13ba9d20829d2"
+    },
+    {
+      "path": "src/routes/+page.svelte",
+      "bytes": 81685,
+      "sha256": "720aae0ef427bf3d5513023ec9e4528f8987b1a405643d6a95f157cf6b10593b"
+    },
+    {
+      "path": "src/routes/about/+page.svelte",
+      "bytes": 9901,
+      "sha256": "32d7d38608a898bd1242b3252be358f3b1ba71bc88abb143a6d88ba757ee2034"
+    },
+    {
+      "path": "src/routes/blog/+page.svelte",
+      "bytes": 12000,
+      "sha256": "dc5f8f003c1df76329bd78bf8d2dc53ce7a4ef9554072858663c3f0399473748"
+    },
+    {
+      "path": "src/routes/blog/robot-farm-bot/+page.svelte",
+      "bytes": 8434,
+      "sha256": "298be59fbc09c8baa97e530167cbf60d85b3a1342215a308fea0549ffe35293a"
+    },
+    {
+      "path": "src/routes/exclusive-friends-only/+page.svelte",
+      "bytes": 19086,
+      "sha256": "db5ca0cc20bd549ee47b92b32c85fd7e96d4eebc32a02431f11470a350c90a31"
+    },
+    {
+      "path": "src/routes/factcheck/+page.svelte",
+      "bytes": 9901,
+      "sha256": "6cd6fdd7ae819384a9b35179f4237413406ae994fa61ba5f5f1f9983859f7fed"
+    }
+  ],
+  "verification": {
+    "stable_repeated_reads": true,
+    "wrong_source_path_rejected": true,
+    "applies_to_base_commit": true,
+    "reconstructed_file_sizes_and_sha256_match": true
+  },
+  "restore": "Check out the base_commit in a separate worktree, then run git apply with this patch.",
+  "previous_snapshot_preserved_in_commit": "4e3c934966c286969df720d73738cc2a4385b11c"
+}

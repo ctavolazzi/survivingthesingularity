@@ -1,0 +1,821 @@
+{
+  "title": "Surviving the Singularity next step decision matrix",
+  "as_of": "2026-10-10; GitHub, local and public-site evidence checked 06:47 to 06:57 America/Los_Angeles",
+  "scope": "Book, public site, release, distribution and reusable project assets. Recommendations only; CT owns manuscript, offer and publication decisions.",
+  "assumption": "Balanced progress: a credible book and dependable reader experience. CT can change both the weights and the ratings.",
+  "criteria": [
+    {
+      "id": "value",
+      "label": "Reader and project value",
+      "weight": 30,
+      "definition": "Direct benefit to a useful book, understandable offer, or dependable reader experience."
+    },
+    {
+      "id": "trust",
+      "label": "Credibility and reliability",
+      "weight": 25,
+      "definition": "Reduces a demonstrated mismatch, unsupported claim, or failure risk."
+    },
+    {
+      "id": "unlock",
+      "label": "Work unlocked",
+      "weight": 20,
+      "definition": "Enables several next steps or settles a prerequisite."
+    },
+    {
+      "id": "learning",
+      "label": "Decision learning",
+      "weight": 15,
+      "definition": "Replaces an important assumption with evidence."
+    },
+    {
+      "id": "ease",
+      "label": "Ease of completion",
+      "weight": 10,
+      "definition": "Higher means a smaller, more bounded task with fewer external dependencies."
+    }
+  ],
+  "presets": {
+    "Balanced": [
+      30,
+      25,
+      20,
+      15,
+      10
+    ],
+    "Delivery first": [
+      30,
+      30,
+      25,
+      5,
+      10
+    ],
+    "Learning first": [
+      30,
+      15,
+      15,
+      30,
+      10
+    ]
+  },
+  "scale": {
+    "1": "Small or uncertain contribution; ease means large/open-ended work.",
+    "3": "Meaningful but bounded contribution; ease means several focused sessions.",
+    "5": "Direct, substantial contribution or a major prerequisite; ease means one short bounded task."
+  },
+  "formula": "score = sum(weight * rating / 5), normalized so weights total 100. All ratings are judgments, not measurements. Treat scores within 4 points as tied.",
+  "effort_note": "Small: roughly one focused session; Medium: several sessions or an external response; Large: multi-day work, author effort or recurring operations. Estimates exclude waiting for readers or proofs.",
+  "options": [
+    {
+      "id": "D01",
+      "option": "Choose one manuscript and release baseline",
+      "ratings": {
+        "value": 4,
+        "trust": 5,
+        "unlock": 5,
+        "learning": 4,
+        "ease": 5
+      },
+      "phase": "Start",
+      "owner": "CT + agent",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "PR24 integrates v0.11.0; PR26 is a separate core-cut document; PR27 adds a foreword to older main. These are not interchangeable editions.",
+      "first_step": "Write a one-page inclusion decision: public edition, working edition, source commit, foreword destination, and deferred proposals.",
+      "acceptance": "One unambiguous source/manifest for the next edition and an explicit inclusion list.",
+      "dependencies": [],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/24",
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/26",
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/27"
+      ]
+    },
+    {
+      "id": "D02",
+      "option": "Align the public promise and access language",
+      "ratings": {
+        "value": 5,
+        "trust": 5,
+        "unlock": 4,
+        "learning": 4,
+        "ease": 4
+      },
+      "phase": "Start",
+      "owner": "CT + agent",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "Live homepage still sells individual escape; v0.11.0 defines collective survival. Live navigation describes open reading while /book requires a purchase-email password.",
+      "first_step": "Compare hero, survival block, navigation, Introduction and purchase page. CT chooses the promise; implement one consistent description.",
+      "acceptance": "A newcomer can explain the book's purpose and access conditions without prompting.",
+      "dependencies": [
+        "D01",
+        "D09"
+      ],
+      "sources": [
+        "https://survivingthesingularity.com/",
+        "https://survivingthesingularity.com/book",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/src/lib/data/book/02-introduction.md#L33",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/396b238/src/routes/+page.svelte"
+      ]
+    },
+    {
+      "id": "D03",
+      "option": "Verify access and delivery from beginning to end",
+      "ratings": {
+        "value": 5,
+        "trust": 5,
+        "unlock": 5,
+        "learning": 4,
+        "ease": 3
+      },
+      "phase": "Start",
+      "owner": "CT + agent",
+      "effort": "Medium",
+      "evidence_confidence": "Medium",
+      "evidence": "The site promises immediate delivery. Recent daily notes record an account quota problem and an unconfirmed sender lead; a successful CI run does not prove delivery.",
+      "first_step": "Establish current sender/account status, then run an authorized test flow with a designated recipient and record payment, access and correct-download outcomes.",
+      "acceptance": "One dated acceptance record for success and recoverable failure, with the right edition delivered.",
+      "dependencies": [
+        "D09"
+      ],
+      "sources": [
+        "https://survivingthesingularity.com/early-access",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/src/routes/early-access/success/+page.svelte"
+      ]
+    },
+    {
+      "id": "D04",
+      "option": "Run five focused reader sessions",
+      "ratings": {
+        "value": 5,
+        "trust": 4,
+        "unlock": 4,
+        "learning": 5,
+        "ease": 3
+      },
+      "phase": "Next",
+      "owner": "CT recruits; agent prepares",
+      "effort": "Medium",
+      "evidence_confidence": "Medium",
+      "evidence": "Existing reader proofs check rendering. AI critiques identify hypotheses, not demonstrated reader comprehension or demand.",
+      "first_step": "Use a provisional opening and one practical passage with five relevant readers. Ask what the book promises, where they stop, and what action they can take.",
+      "acceptance": "Five recorded sessions with recurring problems, counterexamples and decisions; no statistical market claim.",
+      "dependencies": [
+        "D01",
+        "D07"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/e797fa1/docs/v0.11.1-core/CRITIQUE.md#L3",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/docs/v0.11.0/reader-proof/READER-REVIEW.md"
+      ]
+    },
+    {
+      "id": "D05",
+      "option": "Integrate the already measured website corrections",
+      "ratings": {
+        "value": 4,
+        "trust": 4,
+        "unlock": 4,
+        "learning": 2,
+        "ease": 5
+      },
+      "phase": "Start",
+      "owner": "Agent; CT releases",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "Three commits preserve rendering, labels, dates, metadata and audit tools. Prior local measurements show improvements; production HTML still lacks factcheck body content.",
+      "first_step": "Review the three commits on the selected release base and re-run their focused served-page acceptance checks.",
+      "acceptance": "Correct content, labels, dates and metadata survive the integration on the served build.",
+      "dependencies": [
+        "D01",
+        "D06"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/scripts/site-audit/README.md",
+        "https://github.com/ctavolazzi/survivingthesingularity/tree/archive/site-fixes-2026-10-10"
+      ]
+    },
+    {
+      "id": "D06",
+      "option": "Repair the release checks and diagnose WebKit failures",
+      "ratings": {
+        "value": 4,
+        "trust": 5,
+        "unlock": 5,
+        "learning": 3,
+        "ease": 3
+      },
+      "phase": "Start",
+      "owner": "Agent",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "PR24 has failed WebKit, mobile Safari and tablet jobs. Some older tests assert only if a feature exists; one accepts zero revealed elements.",
+      "first_step": "Inspect the failed test reports, remove stale-route assumptions and make relevant checks fail on intentionally broken fixtures.",
+      "acceptance": "Relevant checks detect their intended defect, then pass on the release candidate. Failure causes are classified, not inferred from red status.",
+      "dependencies": [
+        "D01"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/actions/runs/37885118087",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/tests/e2e/h-usability.spec.js#L31"
+      ]
+    },
+    {
+      "id": "D07",
+      "option": "Settle the opening, voice and ending decisions",
+      "ratings": {
+        "value": 5,
+        "trust": 4,
+        "unlock": 5,
+        "learning": 4,
+        "ease": 3
+      },
+      "phase": "Start",
+      "owner": "CT",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "Core critique flags multiple openings; voice history preserves author passages and identifies cut material. The new foreword introduces another opening choice.",
+      "first_step": "Prepare a short decision packet: opening order, foreword role, retained author passages, narrative register and closing invitation.",
+      "acceptance": "CT approves a provisional editorial brief for the reader-session candidates; reader findings then inform the final brief.",
+      "dependencies": [
+        "D01"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/e797fa1/docs/v0.11.1-core/CRITIQUE.md",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/e797fa1/docs/v0.11.1-core/VOICE-HISTORY.md",
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/27"
+      ]
+    },
+    {
+      "id": "D08",
+      "option": "Audit the claims retained in the chosen text",
+      "ratings": {
+        "value": 5,
+        "trust": 5,
+        "unlock": 4,
+        "learning": 4,
+        "ease": 2
+      },
+      "phase": "Next",
+      "owner": "Agent + CT for wording",
+      "effort": "Large",
+      "evidence_confidence": "High",
+      "evidence": "v0.11.0 checked new additions, not every inherited claim. Public statistics and causal forecasts still need passage-specific evidence.",
+      "first_step": "Prioritize the homepage statistics, causal/forecast claims, comparisons and practical prescriptions. Reuse block IDs and the citation trail.",
+      "acceptance": "Each high-impact claim has a bounded verdict and source locator, or is revised/removed with author review.",
+      "dependencies": [
+        "D01"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/FACTCHECK.md",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/docs/v0.11.0/EDITION-NOTES.md",
+        "https://survivingthesingularity.com/"
+      ]
+    },
+    {
+      "id": "D09",
+      "option": "Confirm exactly what the paid offer commits to",
+      "ratings": {
+        "value": 5,
+        "trust": 5,
+        "unlock": 5,
+        "learning": 4,
+        "ease": 4
+      },
+      "phase": "Start",
+      "owner": "CT + agent",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "Local offer promises all future digital content and permanent membership grandfathering; live site describes a different bundle and future discount. These are material ongoing commitments.",
+      "first_step": "Create a plain inclusion list: available now, promised later, updates, print terms, access method and existing buyer commitments. CT confirms it before copy changes.",
+      "acceptance": "One authoritative offer drives pages, policies and customer messages; no silent repricing or withdrawal of prior commitments.",
+      "dependencies": [],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/396b238/src/lib/offer.js#L126",
+        "https://survivingthesingularity.com/early-access"
+      ]
+    },
+    {
+      "id": "D10",
+      "option": "Match the reader, downloads and bundle to one edition",
+      "ratings": {
+        "value": 5,
+        "trust": 5,
+        "unlock": 4,
+        "learning": 3,
+        "ease": 2
+      },
+      "phase": "Release gate",
+      "owner": "Agent; CT selects edition",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "PR24 reader is v0.11.0 while downloads remain v0.7.5. Its 42.5 MB reading PDF exceeds the candidate's documented static-file limit. Local bundle manifest also names v0.7.5.",
+      "first_step": "Select the deliverable edition, reuse the build pipeline, choose suitable file size/hosting, and compare metadata and hashes across access paths.",
+      "acceptance": "Reader, PDF, EPUB and bundle clearly identify the intended edition, with working links and hosting-compatible files.",
+      "dependencies": [
+        "D01",
+        "D09"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/24",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/src/lib/data/bundleManifest.js#L27"
+      ]
+    },
+    {
+      "id": "D11",
+      "option": "Resolve the foreword's sources and wording decisions",
+      "ratings": {
+        "value": 4,
+        "trust": 5,
+        "unlock": 3,
+        "learning": 3,
+        "ease": 3
+      },
+      "phase": "Next",
+      "owner": "Agent researches; CT rules",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "PR27 records primary-source gaps, softened dictated claims and a proposed sign-off. Its foreword is not yet a built edition.",
+      "first_step": "Check primary DARPA, UN and project documents; present only the remaining factual and author choices.",
+      "acceptance": "Accepted foreword has supported/bounded factual claims and explicit placement in the selected edition.",
+      "dependencies": [
+        "D01",
+        "D07"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/27",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/06097b92/V0.7.5-SCOPE.md#L50"
+      ],
+      "conditions": "Primary-source collection can start immediately. Inclusion and placement require D01 and D07."
+    },
+    {
+      "id": "D12",
+      "option": "Pilot one author-led chapter rewrite",
+      "ratings": {
+        "value": 5,
+        "trust": 4,
+        "unlock": 4,
+        "learning": 5,
+        "ease": 3
+      },
+      "phase": "Next",
+      "owner": "CT writes; agent supports",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "PR26 supplies 50,469 verbatim words, 2,178 block decisions and 196 seams. It is preparation for CT's v0.12 rewrite, not finished prose.",
+      "first_step": "Rewrite one representative chapter using the core cut, voice decisions and reader findings. Agents prepare evidence and track seams.",
+      "acceptance": "CT accepts the pilot and its reader test; use its budget and method for later chapters.",
+      "dependencies": [
+        "D01",
+        "D07",
+        "D04"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/26",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/e797fa1/docs/v0.11.1-core/README.md"
+      ],
+      "conditions": "Ratings cover one chapter pilot. Full-manuscript expansion is a separate author decision after the pilot; its effort is not scored here."
+    },
+    {
+      "id": "D13",
+      "option": "Test one practical activity or companion guide",
+      "ratings": {
+        "value": 5,
+        "trust": 4,
+        "unlock": 3,
+        "learning": 5,
+        "ease": 2
+      },
+      "phase": "Next",
+      "owner": "CT + practitioner + agent",
+      "effort": "Large",
+      "evidence_confidence": "Medium",
+      "evidence": "Appendix material and field-manual rules are reusable, while critique questions whether several chapter titles deliver practical instruction.",
+      "first_step": "Pick one bounded low-cost activity with real inputs, labor, limitations and observed result; decide whether it belongs in the book or companion.",
+      "acceptance": "A reader can complete the activity and identify its limits; the example informs the book's practical promise.",
+      "dependencies": [
+        "D01",
+        "D07",
+        "D04"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/src/lib/data/book/VOICE-GUIDE.md#L52",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/e797fa1/docs/v0.11.1-core/CRITIQUE.md#L28"
+      ],
+      "conditions": "Ratings cover one bounded activity pilot. A full companion or many new instructions require a later scope decision."
+    },
+    {
+      "id": "D14",
+      "option": "Finish local fonts and click-to-load video work",
+      "ratings": {
+        "value": 3,
+        "trust": 4,
+        "unlock": 2,
+        "learning": 2,
+        "ease": 4
+      },
+      "phase": "Next",
+      "owner": "Current owner + agent",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "Active site work already contains fonts, licenses, fetcher and lazy video changes. New LiteYouTube and compare_tiles edits appeared after the archive cutoff.",
+      "first_step": "Let the current work stabilize, review its diff and use the existing network and scrolled-tile tools.",
+      "acceptance": "Arrival requests/bytes and visual changes are recorded; video loads on activation and controls remain usable.",
+      "dependencies": [
+        "D05"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/tree/archive/book-files-2026-10-08/docs/uploads/2026-10-10/snapshots/sts-site-fixes",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/scripts/site-audit/README.md"
+      ]
+    },
+    {
+      "id": "D15",
+      "option": "Source or narrow the three unsourced bundle cases",
+      "ratings": {
+        "value": 3,
+        "trust": 5,
+        "unlock": 2,
+        "learning": 3,
+        "ease": 3
+      },
+      "phase": "Next",
+      "owner": "Agent",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "Local bundle manifest records 31 cases and 28 with sources, naming B1, C4 and D2 as missing. This count is distinct from the book's precedent count.",
+      "first_step": "Review those three cases and add primary evidence or narrow/label the claims; rebuild the manifest from the actual bundle.",
+      "acceptance": "Every claim has an honest evidence status, and displayed counts agree with the delivered file.",
+      "dependencies": [
+        "D09"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/src/lib/data/bundleManifest.js#L32",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/396b238/src/lib/offer.js#L171"
+      ],
+      "conditions": "Research can begin now. Final manifest and displayed claims must be reconciled with D10 before shipping an updated bundle."
+    },
+    {
+      "id": "D16",
+      "option": "Run one video or excerpt distribution experiment",
+      "ratings": {
+        "value": 4,
+        "trust": 3,
+        "unlock": 2,
+        "learning": 5,
+        "ease": 4
+      },
+      "phase": "After gates",
+      "owner": "CT publishes; agent prepares",
+      "effort": "Medium",
+      "evidence_confidence": "Medium",
+      "evidence": "PR20 has 21 scripts with Shorts, sources and CTA ideas. Pixel project has Chapter 15 videos, but older captions and rights require review.",
+      "first_step": "Choose one script or excerpt, one existing channel and one reader action. Check claims/rights and record a modest outcome target before publishing.",
+      "acceptance": "Measure qualified replies, excerpt visits and completed reader actions; use results to decide a second piece.",
+      "dependencies": [
+        "D02"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/20",
+        "https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-work-archive-2026-10-09"
+      ],
+      "conditions": "A sales CTA requires D03 and D10. A free excerpt seeking feedback can run earlier once its wording and sources are ready; it need not wait for a paid release."
+    },
+    {
+      "id": "D17",
+      "option": "Adapt the labor-hour essay as a standalone piece",
+      "ratings": {
+        "value": 3,
+        "trust": 3,
+        "unlock": 2,
+        "learning": 4,
+        "ease": 3
+      },
+      "phase": "Later",
+      "owner": "CT + agent",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "PR21 contains a blog essay and book insertions targeting an older manuscript. The branch names remaining voice and link checks.",
+      "first_step": "Review the essay alone, preserve its source corrections, and select a clear reader question before integrating any chapter material.",
+      "acceptance": "One supported essay fits the chosen public promise; book additions remain a separate editorial decision.",
+      "dependencies": [
+        "D01",
+        "D02",
+        "D08"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/21"
+      ]
+    },
+    {
+      "id": "D18",
+      "option": "Use the existing local manuscript search tool",
+      "ratings": {
+        "value": 3,
+        "trust": 2,
+        "unlock": 4,
+        "learning": 3,
+        "ease": 5
+      },
+      "phase": "Next",
+      "owner": "Agent",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "PR22 implements lexical search over stable manuscript block IDs and a localhost interface. Generated answers are optional and were not exercised.",
+      "first_step": "Port the lexical search to the chosen source and try real editorial queries with known relevant passages.",
+      "acceptance": "Editing questions return useful source passages and stable IDs; adopt only if it saves actual retrieval effort.",
+      "dependencies": [
+        "D01"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/22"
+      ]
+    },
+    {
+      "id": "D19",
+      "option": "Regenerate the public evidence trail against the selected source",
+      "ratings": {
+        "value": 4,
+        "trust": 5,
+        "unlock": 3,
+        "learning": 2,
+        "ease": 3
+      },
+      "phase": "Release gate",
+      "owner": "Agent",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "Factcheck/workshop outputs can be stale and their receipts depend on origin/main. Archive presence alone does not satisfy the existing receipt policy.",
+      "first_step": "Build against the intended publication commit; distinguish unchecked evidence from unresolved Git receipts. Refresh the public trace after integration.",
+      "acceptance": "Displayed claims, source locators, counts and receipt statuses match the published edition.",
+      "dependencies": [
+        "D01",
+        "D08",
+        "D10"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/FACTCHECK.md#L62",
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/19",
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/24"
+      ]
+    },
+    {
+      "id": "D20",
+      "option": "Extract a source-derived public ledger or sample",
+      "ratings": {
+        "value": 4,
+        "trust": 3,
+        "unlock": 3,
+        "learning": 4,
+        "ease": 3
+      },
+      "phase": "After gates",
+      "owner": "CT decides access; agent builds",
+      "effort": "Medium",
+      "evidence_confidence": "High",
+      "evidence": "PR20 already extracts precedent prose from canonical Markdown. It expects 23 precedents while v0.11.0 has 24.",
+      "first_step": "Isolate the route, update its extraction checks and decide free/sample/email access coherently with the offer.",
+      "acceptance": "A useful public sample draws from current source without duplicate prose or a misleading access promise.",
+      "dependencies": [
+        "D01",
+        "D02",
+        "D09"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/pull/20"
+      ],
+      "conditions": "A genuinely free sample does not require paid fulfillment. Email-gated access requires a working delivery route and coherent access terms."
+    },
+    {
+      "id": "D21",
+      "option": "Replace conflicting current-status documentation with a thin index",
+      "ratings": {
+        "value": 2,
+        "trust": 4,
+        "unlock": 4,
+        "learning": 2,
+        "ease": 5
+      },
+      "phase": "Start",
+      "owner": "Agent",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "Current-status documents still describe free/open access and unimplemented preorder. Edition labels also refer to different branches and releases.",
+      "first_step": "Keep history intact, label superseded pages and link one source/edition/release/decision index after CT chooses the baseline.",
+      "acceptance": "A collaborator can locate current source, public offer, release candidate and blockers from one page.",
+      "dependencies": [
+        "D01",
+        "D09"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/docs/PROJECT-STATUS.md",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/docs/PREORDER-ROADMAP.md",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/manuscript/EDITORIAL-QUEUE.md"
+      ]
+    },
+    {
+      "id": "D22",
+      "option": "Complete final digital and physical publication proofs",
+      "ratings": {
+        "value": 4,
+        "trust": 5,
+        "unlock": 2,
+        "learning": 2,
+        "ease": 1
+      },
+      "phase": "After text stabilizes",
+      "owner": "CT + production",
+      "effort": "Large",
+      "evidence_confidence": "High",
+      "evidence": "v0.11.0 has EPUB/PDF proofs, text/geometry checks and portable sources. It still lacks complete rights/physical-print acceptance and dedicated-reader proof.",
+      "first_step": "Once text/art settles, use the existing production machinery; obtain device and print proofs appropriate to the chosen channels.",
+      "acceptance": "Edition-specific acceptance record covers text, images, device behavior, physical print and distribution requirements.",
+      "dependencies": [
+        "D01",
+        "D10"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/d48ed396/publication/README.md#L52"
+      ],
+      "conditions": "D11 applies only if the foreword is included; D12 applies only for a rewritten edition. Physical proofs and vendor requirements apply only to a print release. Interim digital release remains an option."
+    },
+    {
+      "id": "D23",
+      "option": "Evaluate the game as a separate teaching prototype",
+      "ratings": {
+        "value": 2,
+        "trust": 2,
+        "unlock": 1,
+        "learning": 4,
+        "ease": 1
+      },
+      "phase": "Defer",
+      "owner": "CT + agent",
+      "effort": "Large",
+      "evidence_confidence": "Medium",
+      "evidence": "Shouse game has an engine, HUD and simulation assets, but older cost, income, permit and route assumptions. Current playability is unverified.",
+      "first_step": "Only after reader evidence identifies a teaching need, test a single scenario and audit its assumptions.",
+      "acceptance": "Readers learn one intended concept without mistaking game assumptions for practical forecasts.",
+      "dependencies": [
+        "D04",
+        "D13"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/tree/StS-Game"
+      ]
+    },
+    {
+      "id": "D24",
+      "option": "Build a production tracker only after recurring production exists",
+      "ratings": {
+        "value": 1,
+        "trust": 1,
+        "unlock": 1,
+        "learning": 2,
+        "ease": 1
+      },
+      "phase": "Defer",
+      "owner": "Agent",
+      "effort": "Large",
+      "evidence_confidence": "High",
+      "evidence": "Existing production-tracker is a Svelte scaffold with no implemented tracking workflow. One pilot does not require a new platform.",
+      "first_step": "Use a simple production table for the first pilots; identify repeated coordination failures before building software.",
+      "acceptance": "A documented recurring workflow justifies software beyond a shared table.",
+      "dependencies": [
+        "D16"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-work-archive-2026-10-09"
+      ]
+    },
+    {
+      "id": "D25",
+      "option": "Expand membership or other platform features",
+      "ratings": {
+        "value": 2,
+        "trust": 1,
+        "unlock": 1,
+        "learning": 2,
+        "ease": 1
+      },
+      "phase": "Defer",
+      "owner": "CT + agent",
+      "effort": "Large",
+      "evidence_confidence": "Low",
+      "evidence": "Offer already makes future membership commitments, but this assessment contains no evidence of membership demand or operating capacity.",
+      "first_step": "Define the obligation and test the need with existing readers before adding account, community or subscription workflows.",
+      "acceptance": "A specific reader need, sustainable operating plan and agreed scope precede implementation.",
+      "dependencies": [
+        "D09",
+        "D04",
+        "D16"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/396b238/src/lib/offer.js#L212"
+      ]
+    },
+    {
+      "id": "D26",
+      "option": "Undertake a broad visual redesign",
+      "ratings": {
+        "value": 2,
+        "trust": 2,
+        "unlock": 1,
+        "learning": 2,
+        "ease": 1
+      },
+      "phase": "Defer",
+      "owner": "CT + agent",
+      "effort": "Large",
+      "evidence_confidence": "Medium",
+      "evidence": "Useful components and audit tools already exist. Known clarity, delivery and testing defects give narrower work a stronger basis.",
+      "first_step": "Make only changes tied to observed reader/task failures; preserve historical MVP components as optional references.",
+      "acceptance": "A specific observed task improves, with no regression in access or clarity.",
+      "dependencies": [
+        "D04",
+        "D05",
+        "D06"
+      ],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/tree/archive/sts-mvp-2026-07-30",
+        "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/scripts/site-audit/README.md"
+      ]
+    },
+    {
+      "id": "D27",
+      "option": "Keep preservation incremental as active work changes",
+      "ratings": {
+        "value": 2,
+        "trust": 3,
+        "unlock": 2,
+        "learning": 1,
+        "ease": 5
+      },
+      "phase": "Maintenance",
+      "owner": "Agent + current owners",
+      "effort": "Small",
+      "evidence_confidence": "High",
+      "evidence": "Complete archive coverage was verified through 06:15 PDT. Later active edits and plain-claims commit 396b238 show why backup claims need a cutoff.",
+      "first_step": "After each owned milestone, record source commits and snapshot only new authored work. Keep archive branches separate from release candidates.",
+      "acceptance": "Each completed milestone has a recoverable GitHub location and timestamped coverage, without another broad backup project.",
+      "dependencies": [],
+      "sources": [
+        "https://github.com/ctavolazzi/survivingthesingularity/tree/archive/book-files-2026-10-08/docs/uploads/2026-10-10"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "fact": "GitHub main remained 0c70e943; open PRs 19 through 27 represent separate proposals and archives.",
+      "source": "https://github.com/ctavolazzi/survivingthesingularity"
+    },
+    {
+      "fact": "Live GET at approximately 06:51 PDT confirmed individual-escape copy, 29-case bundle copy, open-reading navigation and a paid password gate. Factcheck HTML contained site chrome without its body; this is an HTML observation, not a hydrated-browser result.",
+      "source": "https://survivingthesingularity.com"
+    },
+    {
+      "fact": "The book precedent ledger (24 on v0.11.0), local Precedent File manifest (31 cases, 28 with sources) and live bundle copy (29) are distinct counts. The actual delivered object needs comparison before declaring it wrong.",
+      "source": "https://github.com/ctavolazzi/survivingthesingularity/blob/c6f83f3/src/lib/data/bundleManifest.js"
+    },
+    {
+      "fact": "PR #24 build guard passed; its WebKit/mobile/tablet run failed in the test-execution step. Root causes were not established by this assessment.",
+      "source": "https://github.com/ctavolazzi/survivingthesingularity/actions/runs/37885118087"
+    },
+    {
+      "fact": "Plain-claims advanced to 396b238 during assessment and that exact commit is available through GitHub API. Site-fixes remained on c6f83f3 with active font/video/audit changes. Neither observation establishes deployment.",
+      "source": "https://github.com/ctavolazzi/survivingthesingularity/blob/396b238/src/lib/offer.js"
+    }
+  ],
+  "recommendation": "Converge the manuscript and offer, make the current reader path dependable, then validate one opening and one practical chapter with readers before expanding CT's rewrite. Prepare source checks and measured site fixes in parallel. Use one existing distribution asset after the delivery and clarity gates pass.",
+  "decision_sequence": [
+    "CT settles D01 and D09; agent prepares D07 and the candidate diff.",
+    "Agent works on D03, D05, D06 and D10 in parallel where dependencies permit; D02 aligns the public wording.",
+    "Run D04 and D08; pilot D12 and D13 using reader evidence.",
+    "Run one D16 or D20 experiment after the applicable release gates; scale only after useful evidence.",
+    "Use D18 and D21 to reduce editing friction. Keep D27 small. D22 follows stable text; D23-D26 wait for demonstrated need."
+  ],
+  "interpretation": "This is a prioritization backlog, not mutually exclusive alternatives or an ROI model. Do not add scores across workstreams. Dependencies and publication conditions override rank. Evidence confidence describes the current-state evidence, not certainty of payoff. A four-point tie band is a chosen heuristic.",
+  "dependency_note": "Dependencies describe completion or publication requirements. Research, diff review and preparation may start earlier in parallel. Conditional dependencies are stated separately.",
+  "strategies": [
+    {
+      "path": "Converge and validate, then rewrite",
+      "recommendation": "Recommended default",
+      "tradeoff": "Resolve baseline and offer, validate the reader path, run a small reader study, and pilot one chapter. This produces evidence while retaining existing production assets."
+    },
+    {
+      "path": "Release an interim v0.11 edition",
+      "recommendation": "Viable if near-term release matters more",
+      "tradeoff": "Select accepted material and complete D02,D03,D05,D06,D08,D10,D19 plus appropriate D22 gates; continue v0.12 separately. Faster public progress, with a second release/proof cycle later."
+    },
+    {
+      "path": "Finish the full rewrite before public changes",
+      "recommendation": "Conditional",
+      "tradeoff": "Useful if CT explicitly prioritizes one concentrated authoring period. It delays reader learning and leaves current public mismatches in place unless those fixes proceed independently."
+    },
+    {
+      "path": "Expand videos, game, tracker or membership first",
+      "recommendation": "Defer broad expansion",
+      "tradeoff": "One cheap feedback pilot may be useful now. A full series or new platform spreads effort before the book, offer and delivery assumptions are settled."
+    }
+  ]
+}

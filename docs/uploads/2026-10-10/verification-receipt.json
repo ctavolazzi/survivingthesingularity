@@ -1,0 +1,222 @@
+{
+  "schema": "sts-upload-verification/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "passed": true,
+  "verified_utc": "2026-10-10T13:14:26.354688+00:00",
+  "payload_commit": "f7baab8aa05bc80c691e6e4ab9f20a46b6acc738",
+  "archive_branch": "archive/book-files-2026-10-08",
+  "remote_subtree": "e724c3ee4d851b7bb5f3c46b7fa2273d3ebee639",
+  "remote_archive_files_verified": 34,
+  "verification_method": "GitHub commit ref and recursive subtree blob IDs/modes compared with local commit and on-disk file blobs; payload files also compared with original-source SHA256.",
+  "verified_refs": {
+    "archive/sts-mvp-2026-07-30": "b56173d1e8d85bb6405ab046bf2a440850b9d9bb",
+    "archive/site-fixes-2026-10-10": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+    "main": "0c70e94380df8fba373e5c6ce0d3410f9d20441c"
+  },
+  "source_checks": [
+    {
+      "worktree": "/Users/ctavolazzi/Code/active/sts-site-fixes",
+      "head": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+      "files_matched": 26,
+      "additional_pending_paths": [],
+      "checked_utc": "2026-10-10T13:14:25.074823+00:00"
+    },
+    {
+      "worktree": "/Users/ctavolazzi/Code/active/sts-plain-claims",
+      "head": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+      "files_matched": 2,
+      "additional_pending_paths": [],
+      "checked_utc": "2026-10-10T13:14:25.159183+00:00"
+    }
+  ],
+  "files": [
+    {
+      "path": "PR-DESCRIPTION.md",
+      "mode": "100644",
+      "sha": "ad12b72780cffe150c25988073eada3f6bfee342"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "3d4b8323f6cfd876ef5e1ab6aa45b535e499d0b2"
+    },
+    {
+      "path": "coverage.json",
+      "mode": "100644",
+      "sha": "8dce230d0c4321f2041123dcb4a4e44f12f5a451"
+    },
+    {
+      "path": "historical-sql/008_discord_applications.sql",
+      "mode": "100644",
+      "sha": "fc1b8b259c933adde5ec20317667b01506e3c754"
+    },
+    {
+      "path": "historical-sql/provenance.json",
+      "mode": "100644",
+      "sha": "25abf465b1bb9e8e1015c454d9e96a86860eff73"
+    },
+    {
+      "path": "snapshots/sts-plain-claims/src/lib/offer.js",
+      "mode": "100644",
+      "sha": "c9eae922a5e21a9b2d1a498c22f3a6a352303272"
+    },
+    {
+      "path": "snapshots/sts-plain-claims/src/routes/+page.svelte",
+      "mode": "100644",
+      "sha": "5ad26a3aeba0cceaf27e438498cfca01d300414a"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/scripts/fetch_fonts.py",
+      "mode": "100644",
+      "sha": "a02b05d54ec5d044fa54c515dc712841de6df203"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/scripts/site-audit/audit_network.mjs",
+      "mode": "100644",
+      "sha": "8548da5805dafdde26d867e385de474b6064d245"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/src/app.html",
+      "mode": "100644",
+      "sha": "2035f672451e12d0b84330b5e452e218bb138842"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/src/lib/components/RecommendedContent.svelte",
+      "mode": "100644",
+      "sha": "7b6c0d115ab960b79f1198478af5d7afd43a61ac"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/src/routes/blog/claude-projects-weekend-project/+page.svelte",
+      "mode": "100644",
+      "sha": "d280f564ca44a70fd54817132a5b1cec10c28c73"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/src/routes/checklist/+page.svelte",
+      "mode": "100644",
+      "sha": "b37ec3b7552e2e52c99bbe8e2d7deba1adf5d0a3"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/_headers",
+      "mode": "100644",
+      "sha": "15d3f0d8d2bf6a9b63bc791372f24385360ddd5a"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/OFL-Inter.txt",
+      "mode": "100644",
+      "sha": "21f6aff961064c2e429f570995e446bcdd555422"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/OFL-JetBrains-Mono.txt",
+      "mode": "100644",
+      "sha": "821a3dac22aff15a1f1c9689a1d79c45bb58ca39"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/OFL-Outfit.txt",
+      "mode": "100644",
+      "sha": "723cd447edee83ed3bb07c3343f478d352aa7440"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/fonts.css",
+      "mode": "100644",
+      "sha": "a4710e9efa2eba36d1dd278ef149df9f110cdccc"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/inter-v20-cyrillic-ext.woff2",
+      "mode": "100644",
+      "sha": "2cd45edf43e09cc2a636223245f0563655d0cc0d"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/inter-v20-cyrillic.woff2",
+      "mode": "100644",
+      "sha": "bc0e0ab261be55e60502e8f0ab104faeb84c3888"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/inter-v20-greek-ext.woff2",
+      "mode": "100644",
+      "sha": "b6dd1facb44d715b93e64fc93a2a44aa8c741b70"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/inter-v20-greek.woff2",
+      "mode": "100644",
+      "sha": "9c71603a56134495cb3ace105a0928e9cc29a860"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/inter-v20-latin-ext.woff2",
+      "mode": "100644",
+      "sha": "57da6f8d46e2e42d0fd7d8b1d69d39b3b5fda6d4"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/inter-v20-latin.woff2",
+      "mode": "100644",
+      "sha": "91dc3e8529921cabc74fb1dacf5253260b9c8cca"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/inter-v20-vietnamese.woff2",
+      "mode": "100644",
+      "sha": "072229b870650dd4ef5370a52c6aa62b3a9752c7"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-cyrillic-ext.woff2",
+      "mode": "100644",
+      "sha": "024a1af5eb97341d2225ccda7a874857d46ace06"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-cyrillic.woff2",
+      "mode": "100644",
+      "sha": "1b61cf966ce9f8852d00e08dff2d860829755275"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-greek.woff2",
+      "mode": "100644",
+      "sha": "06f0936048a09fd8d8ed7b74fa3b598732047753"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-latin-ext.woff2",
+      "mode": "100644",
+      "sha": "310faddfdd181f2dbef10b26ce9231504762d045"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-latin.woff2",
+      "mode": "100644",
+      "sha": "2ca6ac605954ee884442db8ea1d61093000bcc29"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/jetbrains-mono-v24-vietnamese.woff2",
+      "mode": "100644",
+      "sha": "d37ea359871ff4803394c7629deed2587694e777"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/outfit-v15-latin-ext.woff2",
+      "mode": "100644",
+      "sha": "8fa75fd9ee81a8da01698d1d3400670bb8d508d7"
+    },
+    {
+      "path": "snapshots/sts-site-fixes/static/fonts/outfit-v15-latin.woff2",
+      "mode": "100644",
+      "sha": "48aae950fc21da407d5577e7ce63e028bf9bb205"
+    },
+    {
+      "path": "working-tree-snapshots.json",
+      "mode": "100644",
+      "sha": "a405ea2c3a3843a0c4276767b5c667544b5bd171"
+    }
+  ],
+  "final_source_checks": [
+    {
+      "source": "/Users/ctavolazzi/Code/active/sts-site-fixes",
+      "head": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+      "captured_files": 26,
+      "all_match": true,
+      "additional_pending_paths": [],
+      "checked_utc": "2026-10-10T13:15:34.264498+00:00"
+    },
+    {
+      "source": "/Users/ctavolazzi/Code/active/sts-plain-claims",
+      "head": "c6f83f3343af05ae3dfbc6e0382d1fd76dc461fa",
+      "captured_files": 2,
+      "all_match": true,
+      "additional_pending_paths": [],
+      "checked_utc": "2026-10-10T13:15:34.355756+00:00"
+    }
+  ]
+}

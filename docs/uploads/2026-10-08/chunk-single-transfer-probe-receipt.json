@@ -1,0 +1,62 @@
+{
+  "schema": "sts-chunk-upload-receipt/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "tag": "book-archive-2026-10-08",
+  "archive_sha256": "8812195af8cdfde5c776222bd0869cd61a8dd486bdd403d6eb8b594ecc1977ce",
+  "started_utc": "2026-10-08T23:38:43.926478+00:00",
+  "passed": true,
+  "mode": "upload",
+  "parts": {
+    "1": {
+      "index": 1,
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part001",
+      "id": 623293895,
+      "bytes": 4194304,
+      "sha256": "c0b60d6f613843cc71ccb46092a4797b48d878c4f9b635162508dc9c018d4fe6",
+      "state": "uploaded",
+      "github_digest": "sha256:c0b60d6f613843cc71ccb46092a4797b48d878c4f9b635162508dc9c018d4fe6",
+      "verified_digest": "sha256:c0b60d6f613843cc71ccb46092a4797b48d878c4f9b635162508dc9c018d4fe6",
+      "verification_method": "github-sha256-digest",
+      "api_url": "https://api.github.com/repos/ctavolazzi/survivingthesingularity/releases/assets/623293895",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part001",
+      "verified_utc": "2026-10-08T23:42:16.546225+00:00"
+    },
+    "2": {
+      "index": 2,
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part002.attempt-d1645edbd48940d9",
+      "id": 623312583,
+      "bytes": 4194304,
+      "sha256": "d4eafc1fe87a94c6e27d85fe067f0966f1f59cad55fd0f8cd9c5d766d634da40",
+      "state": "uploaded",
+      "github_digest": "sha256:d4eafc1fe87a94c6e27d85fe067f0966f1f59cad55fd0f8cd9c5d766d634da40",
+      "verified_digest": "sha256:d4eafc1fe87a94c6e27d85fe067f0966f1f59cad55fd0f8cd9c5d766d634da40",
+      "verification_method": "github-sha256-digest",
+      "api_url": "https://api.github.com/repos/ctavolazzi/survivingthesingularity/releases/assets/623312583",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part002.attempt-d1645edbd48940d9",
+      "verified_utc": "2026-10-08T23:42:16.546323+00:00"
+    }
+  },
+  "attempts": [
+    {
+      "index": 2,
+      "attempt": 1,
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part002.attempt-d1645edbd48940d9",
+      "status": "uploading",
+      "utc": "2026-10-08T23:38:49.953226+00:00"
+    }
+  ],
+  "errors": [],
+  "part_limit": 2,
+  "workers": 1,
+  "timeout_seconds": 420,
+  "release": {
+    "apiUrl": "https://api.github.com/repos/ctavolazzi/survivingthesingularity/releases/407326348",
+    "isDraft": true,
+    "tagName": "book-archive-2026-10-08",
+    "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/tag/untagged-48591e435c64c301008c",
+    "id": 407326348
+  },
+  "expected_parts": 2,
+  "updated_utc": "2026-10-08T23:42:16.546848+00:00",
+  "verified_parts": 2
+}

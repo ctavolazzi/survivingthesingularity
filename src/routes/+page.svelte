@@ -276,6 +276,36 @@
     </div>
   </section>
 
+  <!-- ANSWER VIDEO: the build side -->
+  <section class="video-section" aria-label="What taking control looks like">
+    <div class="section-inner">
+      <div class="video-header reveal">
+        <span class="section-label">The Other Side</span>
+        <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
+        <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Give the machines a job worth having, and start with food. The book shows you how.</p>
+      </div>
+    </div>
+    <div class="video-wrap reveal reveal-d1">
+      <div class="video-ratio">
+        <iframe
+          src="https://www.youtube.com/embed/uNkADHZStDE"
+          title="FarmBot: open-source automated food production"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD FIRST -->
+  <section class="reality-section" aria-labelledby="food-first-heading">
+    <div class="reality-inner reveal">
+      <h2 id="food-first-heading" class="reality-heading">Losing your job shouldn't mean going hungry.</h2>
+      <p class="reality-intro">What if it all goes right? Machines are taking on more of the work we're paid to do. This book is an optimist's field manual for using them to make ordinary life more secure, starting with food. Money stays. It just stops being the ticket to staying alive.</p>
+    </div>
+  </section>
+
   <!-- BEFORE / AFTER -->
   <section class="reality-section" aria-label="Without a plan vs with a plan">
     <div class="reality-inner reveal">
@@ -351,30 +381,9 @@
           </ul>
           <a href="/early-access" class="middle-btn">Preorder the book: $5</a>
           <p class="middle-fine">One-time. Price goes up at launch.</p>
+          <p class="middle-fine middle-why">This is a book preorder. You read the draft now, and it's updated as it's written.</p>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ANSWER VIDEO: the build side -->
-  <section class="video-section" aria-label="What taking control looks like">
-    <div class="section-inner">
-      <div class="video-header reveal">
-        <span class="section-label">The Other Side</span>
-        <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
-        <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Owning the hardware that feeds you is the whole game. The book shows you how to start.</p>
-      </div>
-    </div>
-    <div class="video-wrap reveal reveal-d1">
-      <div class="video-ratio">
-        <iframe
-          src="https://www.youtube.com/embed/uNkADHZStDE"
-          title="FarmBot: open-source automated food production"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
       </div>
     </div>
   </section>
@@ -1231,6 +1240,7 @@
   /* ── REALITY SECTION ── */
   .reality-section { border-top: 1px solid var(--border); padding: clamp(48px, 8vw, 80px) 0; }
   .reality-inner { max-width: min(900px, 100%); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
+  .reality-intro { max-width: 68ch; font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.7; color: var(--text-2); margin: 0; }
   .reality-heading {
     font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; line-height: 1.05;
     letter-spacing: -0.03em; color: var(--text-1); margin-bottom: clamp(28px, 4vw, 44px);
@@ -1268,6 +1278,7 @@
   .middle-btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: var(--amber); color: #0a0a0a; font-family: 'Outfit', system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; border-radius: var(--r-pill); text-decoration: none; transition: filter 0.2s ease, transform 0.2s var(--ease-spring); box-shadow: 0 4px 20px rgba(245,158,11,0.28); align-self: flex-start; }
   .middle-btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
   .middle-fine { font-size: 0.82rem; color: var(--text-4); margin: 0; }
+  .middle-why { font-size: 0.9rem; color: var(--text-2); line-height: 1.55; }
 
   /* BOOK PARTS */
   .book-parts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }

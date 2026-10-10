@@ -1,6 +1,6 @@
 # Site audit tools
 
-Six scripts that measure what a built copy of the site actually serves and
+Eight scripts that measure what a built copy of the site actually serves and
 draws. They exist to answer one question honestly: did a change alter anything
 it was not meant to?
 
@@ -26,6 +26,8 @@ Stripe or Resend, so nothing these tools do can send mail or write a row.
 | `audit_extra.mjs BASE OUT_DIR LABEL` | Chrome and plain fetch | blog dates in two time zones, what shows with JavaScript off, meta tag counts per page (set `PAGES="/ /blog ..."`) |
 | `audit_tiles.mjs BASE OUT_DIR LABEL` | real Chrome | viewport-sized screenshots at each scroll stop, for before and after picture comparison |
 | `probe_geometry.mjs OUT.json` | both builds | every element's box to 0.01px and the computed styles that decide its look, before against after |
+| `compare_tiles.py DIR BEFORE AFTER [--boxes f.json]` | two tile sets | per page view: tiles that differ, pixels inside regions you expected to change, pixels anywhere else |
+| `audit_network.mjs BASE OUT.json` | real Chrome | every other host a page contacts just by being opened and scrolled, bytes per host, and which domains set cookies |
 
 `crawl_site.py` only follows links. Pages nothing links to (`/read`,
 `/workshop`, `/exclusive-friends-only`, `/unsubscribe`, `/early-access/success`)
@@ -74,6 +76,24 @@ node probe_geometry.mjs out.json --control             # one element 3px narrowe
 10. **A fresh checkout's build rewrites two tracked files**,
     `static/images/optimized/manifest.json` and `.build-cache.json`. Nothing in
     `src/` reads them. Restore them before reviewing your diff.
+
+11. **A lazily loaded image can be "complete" and still not drawn.** Headless
+    Chrome may take seconds after the bytes arrive to paint it. `audit_tiles`
+    waits for images in view and for two identical frames in a row, and that
+    did NOT make it reliable: on `/early-access` at phone width three images
+    stayed blank in every tile run of one build while a direct probe of the
+    same build painted them. Treat a difference confined to lazily loaded
+    images as unproven either way, and look at that page in a real browser.
+12. **The pointer rests on whatever is under it.** A card with a hover zoom
+    renders zoomed in one run and mid-zoom in the next. Differences confined to
+    one image under the viewport centre are this.
+13. **A remote font host can simply not answer.** One baseline page was captured
+    with fallback fonts because Google's host did not deliver in time, and its
+    text wrapped differently on all thirteen tiles. Compare a suspicious page
+    against an earlier capture of the same commit before blaming the change.
+14. **Read the tile, then trust the number.** A thumbnail pushed 40px down over
+    its caption showed up as 1,832 stray pixels in the comparison. It was the
+    picture that said what they were.
 
 ## What these do not check
 

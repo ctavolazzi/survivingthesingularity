@@ -51,7 +51,47 @@ for (const { vp, paths } of PLAN) {
       const y = await page.evaluate(() => Math.max(window.scrollY, document.body.scrollTop, document.documentElement.scrollTop));
       if (y === last) break;               // the wheel moved nothing: bottom reached
       last = y;
-      await page.screenshot({ path: `${dir}/${String(i).padStart(2, '0')}.png` });
+      // Lazy images are fetched as they near the viewport, and headless Chrome
+      // can take a second or two after the bytes arrive to draw them, even when
+      // the element already reports complete and decoded. A tile taken in that
+      // gap shows an empty box, and whether it does is a coin toss from run to
+      // run. So: wait for every image in view to finish loading, then hold the
+      // tile until three seconds after the last of them arrived. A blocked image
+      // counts as finished.
+      await page.evaluate(async () => {
+        const inView = [...document.images].filter((img) => {
+          const r = img.getBoundingClientRect();
+          return r.bottom > 0 && r.top < innerHeight && r.width > 0;
+        });
+        await Promise.race([
+          Promise.allSettled(inView.map((img) => (img.complete ? null : new Promise((res) => {
+            img.addEventListener('load', res, { once: true });
+            img.addEventListener('error', res, { once: true });
+          })))),
+          new Promise((res) => setTimeout(res, 6000)),
+        ]);
+        const arrived = Math.max(0, ...inView.map((img) => {
+          const e = performance.getEntriesByName(img.currentSrc || img.src).pop();
+          return e ? e.responseEnd : 0;
+        }));
+        const hold = Math.min(3000, Math.max(0, arrived + 3000 - performance.now()));
+        if (hold > 0) await new Promise((res) => setTimeout(res, hold));
+      });
+      // Keep the tile only once two frames in a row are byte-identical. A
+      // lazily loaded image reports itself complete, and even decoded, a second
+      // or two before headless Chrome draws it, and a tile taken in that gap
+      // shows an empty box where a slower run shows the picture. Something
+      // that never stops moving (a countdown, a pulsing dot) never settles, so
+      // the tries are bounded.
+      let shot = await page.screenshot();
+      for (let k = 0; k < 6; k++) {
+        await page.waitForTimeout(450);
+        const next = await page.screenshot();
+        const same = next.equals(shot);
+        shot = next;
+        if (same) break;
+      }
+      writeFileSync(`${dir}/${String(i).padStart(2, '0')}.png`, shot);
       tiles.push(y);
       await page.mouse.wheel(0, step);
       await page.waitForTimeout(settle);

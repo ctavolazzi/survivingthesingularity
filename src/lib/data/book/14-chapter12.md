@@ -243,6 +243,8 @@ The Homestead Act was signed in May 1862, and the timing is the entire lesson: t
 
 The people who filed claims during the chaos held title when the chaos ended. It was one of the largest transfers of position in the country's history, and it happened not after the crisis resolved but in the middle of it, executed by people who could hold two thoughts at once: the world is on fire, and the filing office is open.
 
+The celebration usually skips what that land cost, and the Ledger will not. Much of it had been taken from Native nations by treaty, coercion, and war, often in the same years the claims were being filed. The office was open to some people because it had been closed, by force, to others. That does not cancel the lesson; it sharpens it. A transition does not just open a window. Someone decides who gets through it.
+
 **The mechanism.** Transitions reprice land and position before they reprice anything else, and the repricing window opens during the confusion, not after it. Once the emergency passes, the deeds are already filed, and everyone who waited for clarity discovers that clarity is the name of the moment when the good positions are gone.
 
 **The rule.** You are living inside the equivalent window right now: rural land within EV range of the metros has not yet been repriced for the world this book describes. The land strategy chapter you just read is your filing paperwork. The emergency on the front page is not a reason to wait. It is the reason the office is uncrowded.

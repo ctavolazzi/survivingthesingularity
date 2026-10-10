@@ -349,7 +349,7 @@ In the next chapter, we put this circle to work: **Chapter 9: Deglobalization an
 
 ## Precedent P-11: Torches of Freedom (New York, 1929)
 
-In 1929 it was scandalous for a woman to smoke in public, which meant half the American cigarette market was locked behind a taboo. So the American Tobacco Company hired Edward Bernays, Sigmund Freud's nephew and the inventor of the phrase "public relations," to pick the lock.
+In 1929 it was scandalous for a woman to smoke in public, which meant half the American cigarette market was locked behind a taboo. So the American Tobacco Company hired Edward Bernays, Sigmund Freud's nephew and the man often called the father of public relations, to pick the lock.
 
 Bernays did not buy advertisements arguing that women should smoke. He hired young women to march in New York's Easter Sunday parade and, on a prearranged cue, light cigarettes in front of the photographers he had also arranged to be standing there. He fed the press the phrase "torches of freedom." The papers ran it as news, because it looked like news. Emancipation itself, the most authentic aspiration of the era, was retooled into a nicotine delivery vector. The women in the parade experienced it as liberation. On the company's books, it was inventory expansion.
 

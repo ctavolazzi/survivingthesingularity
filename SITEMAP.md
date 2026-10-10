@@ -40,6 +40,7 @@ assigned by directory order and are not meant to imply priority.
 | PG-24 | `/signals` | — |
 | PG-25 | `/terms` | — |
 | PG-26 | `/unsubscribe` | — |
+| PG-27 | `/ledger` | EmailGate *(the free Precedent Ledger: all 23 precedents extracted from the book source by `+page.server.js`; first 3 open, rest unlock with an email under source `ledger`)* |
 
 Not counted as a page: `/launch` is a bare 301 redirect (`+server.js`, no markup) to
 `/early-access`, retired in the 2026-07-12 single-offer cut.

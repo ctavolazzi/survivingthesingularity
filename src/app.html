@@ -11,7 +11,13 @@
 		<link rel="icon" href="/favicon.png" type="image/png" />
 		<link rel="icon" href="/favicon.webp" type="image/webp" />
 		<!-- Fonts come from this site (static/fonts/), not from Google: the same
-		     files and the same @font-face rules. See scripts/fetch_fonts.py. -->
+		     files and the same @font-face rules. See scripts/fetch_fonts.py.
+		     The two files every page draws with (body text, and the nav's mono
+		     brand) are preloaded so they are usually in hand before first paint.
+		     `crossorigin` is required on a font preload even for the same origin,
+		     or the browser fetches the file twice. -->
+		<link rel="preload" href="/fonts/inter-v20-latin.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/jetbrains-mono-v24-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<link href="/fonts/fonts.css" rel="stylesheet" />
 		<!-- Splash boot sequence: stamps html[data-splash] before first paint so
 		     returning visitors never see the 1.56s sequence flash. Render-blocking

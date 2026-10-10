@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:12:57Z",
+  "generated_at": "2026-10-10T17:43:45Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -58,6 +58,58 @@
       ]
     },
     {
+      "id": "2610.12190",
+      "source": "arxiv",
+      "title": "DataSense-Bench: The First Step Toward an AI Scientist",
+      "url": "https://arxiv.org/abs/2610.12190",
+      "authors": [
+        "Yudi Zhang",
+        "Mingyu Cao",
+        "Lu Yin",
+        "Mykola Pechenizkiy"
+      ],
+      "summary": "As claims about recursive self-improvement (RSI) and artificial general intelligence (AGI) proliferate, we ask a simple question: do frontier AI models have a sense of data, i.e., can they reliably select the right data for training? We introduce DataSense-Bench to study this capability through the fundamental problem of data selection and performance forecasting in machine learning. We ask AI agents to select and rank candidate training subsets that can be used to fine-tune a small LLM model. Agents are allowed to inspect the data, write and execute analysis code, and run model forward passes",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "agi",
+        "artificial general intelligence",
+        "recursive self-improvement",
+        "agent",
+        "llm"
+      ]
+    },
+    {
+      "id": "2610.10858",
+      "source": "arxiv",
+      "title": "RFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design",
+      "url": "https://arxiv.org/abs/2610.10858",
+      "authors": [
+        "Awani Khodkumbhe",
+        "Yunfei Feng",
+        "Raj Rangarajan",
+        "Kevin Wang"
+      ],
+      "summary": "Analog/RF circuits remain the critical interface between digital computation and the physical world, and emerging standards from Wi-Fi 7 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-its-kind multi-agent flow of large language model (LLM) agents for end-to-end analog/RF circuit design automation, in which AI agents collaboratively orchestrate the complete design flow under human supervision. RFChipAgent is built around four technical pillars. First, a multimodal retrieval-augment",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-07",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "llm",
+        "language model",
+        "retrieval",
+        "automation"
+      ]
+    },
+    {
       "id": "2610.08452",
       "source": "arxiv",
       "title": "Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents",
@@ -111,29 +163,30 @@
       ]
     },
     {
-      "id": "2609.09113",
+      "id": "2610.12126",
       "source": "arxiv",
-      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
-      "url": "https://arxiv.org/abs/2609.09113",
+      "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+      "url": "https://arxiv.org/abs/2610.12126",
       "authors": [
-        "Yuqiao Tan",
-        "Shizhu He",
-        "Jun Zhao",
-        "Kang Liu"
+        "Jinkai Zhang",
+        "Jingyi Xu",
+        "Yuanhong Yu",
+        "Jiarui Guo"
       ],
-      "summary": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Bench to evaluate whether AI agents can act as scientists utilizing SAE tools for autonomous mechanist",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-08",
-      "score": 10.0,
-      "raw_score": 20,
+      "summary": "General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-08",
+      "score": 9.5,
+      "raw_score": 19,
       "matched_keywords": [
-        "recursive self-improvement",
         "agent",
-        "autonomous",
-        "alignment",
-        "interpretability",
-        "interpret"
+        "agentic",
+        "interpret",
+        "robot",
+        "llm",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -364,30 +417,27 @@
       ]
     },
     {
-      "id": "2609.08965",
+      "id": "2610.12453",
       "source": "arxiv",
-      "title": "PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving",
-      "url": "https://arxiv.org/abs/2609.08965",
+      "title": "Mental-Models for Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.12453",
       "authors": [
-        "Yuan Gao",
-        "Sebastian Müller",
-        "Mattia Piccinini",
-        "Marc Kaufeld"
+        "Hanan Gani",
+        "Lulu Shao",
+        "Manmohan Chandraker"
       ],
-      "summary": "Ensuring the safety of autonomous driving is a critical challenge. Scenario-based testing is a systematic process used to validate Autonomous Driving Systems (ADSs), but it remains a fragmented modular pipeline in which scenario generation, retrieval, modification, ADS execution, and results analysis are performed by separate tools with little interaction. Large Language Model (LLM) agents have shown promise across ADS sub-systems such as perception, planning, and control. However, no prior work covers the whole scenario-based testing pipeline for ADSs with a unified LLM-agent framework. We pr",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-08",
-      "score": 9.0,
-      "raw_score": 18,
+      "summary": "Large foundation models have accelerated progress toward general-purpose agents that interact with humans and other agents through language and multimodal signals. However, robust multi-agent decision-making requires reasoning about what other agents know, intend, and are likely to do under partial observability. Current agentic systems often operate through prompt design, memory, or end-to-end behavioral shaping, but typically do not learn an explicit partner-state representation that can be reused as a decision variable across tasks. We introduce \\emph{mental-model-enabled agents}, a framewo",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-08",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
+        "foundation model",
         "agent",
-        "autonomous",
-        "planning",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
+        "multi-agent",
+        "agentic",
+        "reasoning"
       ]
     },
     {
@@ -414,6 +464,32 @@
         "language model",
         "retrieval",
         "rag"
+      ]
+    },
+    {
+      "id": "2610.10608",
+      "source": "arxiv",
+      "title": "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage",
+      "url": "https://arxiv.org/abs/2610.10608",
+      "authors": [
+        "Saimon Amanuel Tsegai",
+        "Alex Kantchelian",
+        " Danfeng",
+        " Yao"
+      ],
+      "summary": "Security operations centers (SOCs) must triage large volumes of alerts, most of which are benign, while missed attacks can remain uninvestigated. Tool-using large language model (LLM) agents can retrieve evidence during triage, but it remains unclear how reasoning strategies determine what to gather and when an investigation is sufficient to close an alert. We study five representative approaches spanning single-pass tool use, iterative retrieval, sampled investigations, self-review, and explicit verification. To support this study, we build ALERT-BENCH, an interactive benchmark that replays e",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-07",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval"
       ]
     },
     {
@@ -589,51 +665,28 @@
       ]
     },
     {
-      "id": "2609.09692",
+      "id": "2610.12417",
       "source": "arxiv",
-      "title": "CT-SAFR: Safe and Interpretable Chain-of-Thought Reasoning for Autonomous Robots: A Multi-Layered Verification Framework for Trustworthy AI-Driven Robotic Decision Making",
-      "url": "https://arxiv.org/abs/2609.09692",
+      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
+      "url": "https://arxiv.org/abs/2610.12417",
       "authors": [
-        "Cagri Temel"
+        "Zheyu Fan",
+        "Yue Zhang",
+        "Mingkai Deng",
+        "Kangrui Wang"
       ],
-      "summary": "Chain-of-Thought (CoT) prompting enables LLMs to perform explicit, step-by-step reasoning, creating opportunities for sophisticated autonomous robots. However, recent research reveals that reasoning models verbalize their actual decision processes only 25-39% of the time, with faithfulness degrading 44% on complex tasks. This paper presents CT-SAFR (Chain-of-Thought Safety and Faithfulness for Robotics), a multi-layered verification framework achieving 94.2% hallucination detection (n = 500, 95% CI: 91.8-95.9%) with sub-500ms latency. Through a warehouse robot case study, this work demonstrate",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-09",
-      "score": 8.5,
-      "raw_score": 17,
+      "summary": "Multimodal large language models (MLLMs) struggle with spatial, embodied, physical, and temporal reasoning. We hypothesize that these failures reflect a shared deficit in visual transition reasoning, and test whether this capability can serve as a shared training primitive, one that different models can learn from different supervision sources and reuse across different tasks, with a systematic training recipe. Existing benchmarks document these deficits separately but do not support controlled comparisons across scenes, actions, and reasoning operations. We therefore introduce WOVEN, a traini",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
-        "autonomous",
+        "world model",
         "reasoning",
-        "chain-of-thought",
-        "interpret",
-        "robot",
-        "robotics",
-        "llm"
-      ]
-    },
-    {
-      "id": "2609.09503",
-      "source": "arxiv",
-      "title": "Agentic AI-enabled Semantic Commissioning of a Cognitive Digital Twin for Reconfigurable Manufacturing",
-      "url": "https://arxiv.org/abs/2609.09503",
-      "authors": [
-        "Yangyang Liu",
-        "Xun Xu",
-        "Jan Polzer"
-      ],
-      "summary": "Rapid bespoke commissioning of the Cognitive Digital Twin (CDT) is a major challenge in reconfigurable manufacturing. Traditional digital twin (DT) construction methods primarily focus on geometric reconstruction, often neglecting the deep semantic integration and functional interoperability necessary for autonomous reasoning. This paper proposes an agent-based, AI-driven workflow to automate end-to-end CDT debugging. The system utilises LangGraph as a multi-agent orchestration engine to achieve dual-path synthesis: the semantic path extracts technical specifications from unstructured document",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-08",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous",
-        "reasoning"
+        "embodied",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1029,27 +1082,99 @@
       ]
     },
     {
-      "id": "2609.10509",
+      "id": "2610.12281",
       "source": "arxiv",
-      "title": "Avatar: Toward Autonomous End-to-End Orchestration of Scientific Workflows using LLMs",
-      "url": "https://arxiv.org/abs/2609.10509",
+      "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants",
+      "url": "https://arxiv.org/abs/2610.12281",
       "authors": [
-        "Suman Raj",
-        "Hai Duc Nguyen",
-        "Haochen Pan",
-        "Ryan Chard"
+        "Pratik Dutta",
+        "Matthew B. Obusan",
+        "Max Chao",
+        "Rekha Sathian"
       ],
-      "summary": "Scientific workflow management (WMSs) systems automate execution, yet orchestrate using fixed, hand-tuned rules. LLM agents promise more autonomous orchestration, but it remains unclear where to introduce agentic reasoning, how to bound its risk, and when it actually helps. We present Avatar, an actor-based architecture comprising an orchestrator, an executor, and a provenance monitor. Each actor's decision policy is pluggable (rule-based or LLM-backed) via a single adapter-validated action catalog, so conventional and agentic control run on the same core across different WMSs. We present an i",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-09",
-      "score": 8.0,
-      "raw_score": 16,
+      "summary": "Over 90% of disease-associated variants from genome-wide association studies fall in noncoding regulatory regions, yet their functional interpretation remains a central open problem in genomic medicine. Large language models prompted to interpret such variants routinely hallucinate transcription factor (TF) binding changes, fabricate experimental support, and assign biological significance to statistically negligible signals. We present ARGUS (Agentic Regulatory Genomics for an Uncertainty-aware Scientist), which strictly separates deterministic biological computation from LLM-mediated reasoni",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 7.5,
+      "raw_score": 15,
       "matched_keywords": [
         "agent",
         "agentic",
-        "autonomous",
-        "reasoning",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.12176",
+      "source": "arxiv",
+      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "url": "https://arxiv.org/abs/2610.12176",
+      "authors": [
+        "Hyunin Lee",
+        "Jinglue Xu",
+        "Jeffrey Seely",
+        "Donghyun Lee"
+      ],
+      "summary": "Recursive self-improvement (RSI) of a model on non-verifiable tasks, such as open-ended research, faces a supervision bottleneck when its outputs exceed what even human experts can reliably assess, leaving the model itself (optimizee) as the best available optimizer and evaluator. However, a single model instance struggles to critique and improve its own complex reasoning under this homogeneous loop. To address this, we propose Multi-Agent Self-Supervision (MASS), an RSI method that alternates between evolutionary workflow optimization and supervised fine-tuning on self-generated trajectories.",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "multi-agent",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "2610.12235",
+      "source": "arxiv",
+      "title": "Language Models as AI Research World Models",
+      "url": "https://arxiv.org/abs/2610.12235",
+      "authors": [
+        "Zijun Wang",
+        "Zewen Liu",
+        "Minhua Lin",
+        "Zhaotian Weng"
+      ],
+      "summary": "AI research agents automate the cycle of proposing, implementing, and evaluating experiments, opening a path toward recursive self-improvement. Yet their ability to propose experiments outpaces their capacity to execute them in real environments, making outcome prediction a key capability for sustained self-improvement under limited experimental budgets. We investigate language models as Research World Models (RWMs), which predict the outcomes of candidate interventions across research environments. Our evaluation draws on over 2,600 experimental records from nine research environments spannin",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "world model",
+        "agent",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.11794",
+      "source": "arxiv",
+      "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+      "url": "https://arxiv.org/abs/2610.11794",
+      "authors": [
+        "Haoyu Zhao",
+        "Zhengxu Yu",
+        "Zhiyuan He",
+        "Meng Fang"
+      ],
+      "summary": "Learning to act in unfamiliar environments requires agents to infer how the world works and revise that understanding as new evidence arrives. Yet limited observations can support multiple world models that explain past interactions but predict different outcomes in unseen states. We introduce Memento 3, building on the Memento series to enable frozen LLM agents to continually learn explicit world models through external memory. The agent maintains a natural-language rulebook as persistent semantic memory, recording revisable hypotheses about environment dynamics while leaving unknown aspects ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "world model",
+        "agent",
         "llm"
       ]
     },
@@ -1369,130 +1494,6 @@
         "embodied",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2609.35916",
-      "source": "arxiv",
-      "title": "VehicleArena: A Realistic Urban Environment for Multi-Agent Driving",
-      "url": "https://arxiv.org/abs/2609.35916",
-      "authors": [
-        "Jie Yang",
-        "Jiajun Chen",
-        "Jiazheng Zhou",
-        "Mianqiu Huang"
-      ],
-      "summary": "Real-world embodied agents often pursue independent objectives within a shared physical environment, where their actions can alter the conditions faced by others. Existing benchmarks, however, typically assume shared goals or explicitly prescribed interaction protocols, leaving such emergent physical coupling underexplored. We introduce VehicleArena, a 3D urban-driving benchmark for studying independently operating agents in a dynamic shared world. In VehicleArena, LLM-controlled agents must fulfill evolving passenger requests while navigating complex traffic, and each agent's driving decision",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-28",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "embodied",
-        "llm",
-        "emergent"
-      ]
-    },
-    {
-      "id": "2609.33115",
-      "source": "arxiv",
-      "title": "Modular Discovery of General Game-Playing Algorithms with Large Language Models",
-      "url": "https://arxiv.org/abs/2609.33115",
-      "authors": [
-        "Zun Li",
-        "John Schultz",
-        "Marc Lanctot",
-        "Daniel Hennes"
-      ],
-      "summary": "General Game Playing across arbitrary games from rules alone remains challenging due to differing algorithmic requirements across game classes and strict decision-time constraints. Rather than hand-designing search heuristics for specific domains, can we leverage Large Language Models (LLMs) to discover general game-playing algorithms? Because language models can propose and refactor structured code, they provide an expressive proposal engine for exploring the space of algorithmic designs. We introduce a multi-agent LLM meta-learning system to co-evolve game-agnostic procedural search mechanis",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-27",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.32917",
-      "source": "arxiv",
-      "title": "Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows",
-      "url": "https://arxiv.org/abs/2609.32917",
-      "authors": [
-        "Vivek Kumar Singh",
-        "Preeti Priyam",
-        "Gautam Bhowmick"
-      ],
-      "summary": "Running large language model (LLM) agents in production gets expensive fast. A frontier model (the largest, most capable tier) is accurate but can cost 25 times what a small model costs per token, and the gap compounds once a workflow chains several calls together. Planner-as-Router (PaR) attacks this from a different angle. Instead of leaving model-tier selection to some component downstream, it folds the choice into planning itself. As the planner breaks a query into subtasks, it also assigns each one a model size tier (small, mid, or frontier, ordered by capability and price), so the depend",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-26",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "planning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.32049",
-      "source": "arxiv",
-      "title": "EngramRAG: Dynamic Usage-Weighted Topology and Synaptic Consolidation for Multi-Hop Agentic Memory",
-      "url": "https://arxiv.org/abs/2609.32049",
-      "authors": [
-        "Bhavyateja Potineni",
-        "Lohit Giri",
-        "Anu Jain",
-        "Vadim Kutsyy"
-      ],
-      "summary": "As autonomous LLM agents are deployed across multi-session environments, conventional memory architectures suffer from Associative Blindness (inability to traverse multi-hop relational dependencies), Scaffolding Amnesia (temporal decay evicting core persona invariants), and Static Topology Stagnation (immutable graphs ignoring usage dynamics). Grounded in Complementary Learning Systems (CLS) principles, we propose EngramRAG, an adaptive memory architecture coupling a low-latency Waking State reflex with an asynchronous background Dreaming State consolidation cycle. EngramRAG introduces: (1) Us",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-25",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "llm",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.08225",
-      "source": "arxiv",
-      "title": "UWB Meets Crazyflow: Simulating Degraded Feedback at Scale for Aerial Robotics",
-      "url": "https://arxiv.org/abs/2610.08225",
-      "authors": [
-        "Martin Schuck",
-        "Marcel P. Rath",
-        "Yufei Hua",
-        "Abhishek Goudar"
-      ],
-      "summary": "In this work, we introduce Crazyflow, an accurate, differentiable simulator built on JAX. By leveraging jit compilation via XLA, Crazyflow unifies physics and control into a single differentiable computation graph, enabling massive parallelization on accelerated hardware without sacrificing modeling accuracy. This architecture achieves order-of-magnitude speedups over existing baselines, capable of training deployable reinforcement learning agents in seconds. To highlight its highly modular design, we demonstrate how easily Crazyflow can be extended by integrating a complete, high-fidelity Ult",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-06",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "robot",
-        "robotics",
-        "rag"
       ]
     }
   ]

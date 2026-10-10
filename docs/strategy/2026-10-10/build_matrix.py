@@ -31,6 +31,8 @@ md = [
     '',
     'Evidence date: ' + data['as_of'] + '.',
     '',
+    '**Later findings and concrete packets:** [Read the continuation](CONTINUATION.md). The $5 offer and no-account model were already settled; main has advanced, and the failed browser jobs have been diagnosed. The matrix below retains its original assessment timestamp.',
+    '',
     '[Adjust the weights offline](matrix.html) | [Spreadsheet CSV](matrix.csv) | [Full decision data](matrix.json)',
     '',
     'The default is balanced progress: strengthen the book and make the public offer credible. These weights and ratings are my judgments for CT to change, not measured probabilities or a statement of CT\'s priorities.',
@@ -82,6 +84,7 @@ template = r'''<!doctype html>
 </style>
 <main><p class="note">October 10, 2026 · Decision support for CT · 27 options</p>
 <h1>Where Surviving the Singularity goes next</h1>
+<p class="note"><a href="CONTINUATION.md">Read later findings and concrete decision packets</a>. Offer and account rulings were already settled; this matrix retains its original assessment timestamp.</p>
 <p>Converge the manuscript and offer, make the reader path dependable, then test an opening and a practical chapter before expanding the rewrite.</p>
 <p class="note">Scores are judgments, not probabilities. Treat scores within four points as tied. Dependencies determine sequence, and overlapping scores cannot be added into an ROI. Evidence confidence describes current facts, not expected payoff.</p>
 <div class="tools" id="presets" aria-label="Weight presets"></div>

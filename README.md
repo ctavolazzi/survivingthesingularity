@@ -192,7 +192,7 @@ static/
 
 ### Book content: the single source of truth
 
-**The book is the 30 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
+**The book is the 31 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
 
 Both halves are required:
 

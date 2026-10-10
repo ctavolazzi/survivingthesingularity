@@ -2,9 +2,14 @@
   "title": "Surviving the Singularity",
   "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
   "author": "Christopher Tavolazzi",
-  "version": "0.7.4",
-  "lastUpdated": "2026-07-27",
+  "version": "0.7.5",
+  "lastUpdated": "2026-10-09",
   "sections": [
+    {
+      "id": "foreword",
+      "title": "Author's Foreword: Why Tell You All This?",
+      "file": "00-authors-foreword.md"
+    },
     {
       "id": "introduction",
       "title": "Introduction: The Uncompromising Truth",

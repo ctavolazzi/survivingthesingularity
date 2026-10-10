@@ -5,6 +5,7 @@
     import { marked } from 'marked';
     import RecommendedContent from '$lib/components/RecommendedContent.svelte';
     import SocialShare from '$lib/components/SocialShare.svelte';
+    import LiteYouTube from '$lib/components/LiteYouTube.svelte';
 
     const renderer = new marked.Renderer();
     renderer.link = (href, title, text) => {
@@ -19,7 +20,15 @@
       return `<a href="${href}" title="${title || ''}" target="_blank" rel="noopener noreferrer">${text}</a>`;
     };
 
-    let htmlContent = marked(post.content, { renderer });
+    // The post's markdown carries one raw YouTube embed. A direct embed fetches
+    // YouTube's player and sets its cookies as the page opens, and markdown
+    // rendered with {@html} cannot hold a component. So render the text on
+    // either side of the embed and put the click-to-load player between them.
+    // If the markdown ever loses the embed, the whole text renders as before.
+    const EMBED = /<div[^>]*>\s*<iframe[^>]*youtube(?:-nocookie)?\.com\/embed\/([\w-]+)[^>]*>\s*<\/iframe>\s*<\/div>/;
+    const embed = post.content.match(EMBED);
+    const htmlBefore = marked(embed ? post.content.slice(0, embed.index) : post.content, { renderer });
+    const htmlAfter = embed ? marked(post.content.slice(embed.index + embed[0].length), { renderer }) : '';
 
     const recommendedVideos = [
       {
@@ -88,7 +97,13 @@
       </p>
 
       <div class="blog-content">
-        {@html htmlContent}
+        {@html htmlBefore}
+        {#if embed}
+          <div class="post-video">
+            <LiteYouTube videoId={embed[1]} title="Claude Projects tutorial" />
+          </div>
+        {/if}
+        {@html htmlAfter}
       </div>
     </div>
   </article>
@@ -155,6 +170,14 @@
   .content {
     font-size: 1.125rem;
     line-height: 1.75;
+  }
+
+  /* The same full-width 16:9 box the markdown's inline-styled wrapper drew. */
+  .post-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
   }
 
   .lead {

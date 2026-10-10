@@ -10,9 +10,9 @@
 		<meta name="theme-color" content="#020617" />
 		<link rel="icon" href="/favicon.png" type="image/png" />
 		<link rel="icon" href="/favicon.webp" type="image/webp" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<!-- Fonts come from this site (static/fonts/), not from Google: the same
+		     files and the same @font-face rules. See scripts/fetch_fonts.py. -->
+		<link href="/fonts/fonts.css" rel="stylesheet" />
 		<!-- Splash boot sequence: stamps html[data-splash] before first paint so
 		     returning visitors never see the 1.56s sequence flash. Render-blocking
 		     and external on purpose — CSP is script-src 'self' with a SvelteKit

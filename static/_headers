@@ -13,3 +13,10 @@
   Cross-Origin-Opener-Policy: same-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://cdn.midjourney.com https://images.unsplash.com https://plus.unsplash.com https://farm.bot https://*.futurism.com https://wordpress-assets.futurism.com https://i.ytimg.com https://*.ytimg.com https://www.open-electronics.org https://i.cbc.ca https://content.api.news; media-src 'self'; connect-src 'self' https://cloudflareinsights.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://open.spotify.com https://*.substack.com https://luma.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
+
+# Self-hosted font files carry their upstream version in the name
+# (inter-v20-latin.woff2), so an address never changes content and a browser may
+# keep it for a year. fonts.css is deliberately NOT covered: it keeps the default
+# revalidation, so a regenerated set is picked up on the next visit.
+/fonts/*.woff2
+  Cache-Control: public, max-age=31536000, immutable

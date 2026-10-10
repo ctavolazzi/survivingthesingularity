@@ -192,7 +192,7 @@
           <span class="ss-label">Scale</span>
           <div class="ss-figure"><span class="ss-num">300M</span></div>
           <span class="ss-desc">jobs rendered obsolete by AI, globally</span>
-          <a href="https://www.google.com/search?q=Goldman+Sachs+300+million+jobs+AI+generative" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs</a>
+          <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs</a>
         </div>
         <div class="ss-item">
           <span class="ss-label">Speed</span>

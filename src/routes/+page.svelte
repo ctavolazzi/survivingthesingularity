@@ -274,11 +274,31 @@
     </div>
   </section>
 
+  <!-- ANSWER VIDEO: the build side -->
+  <section class="video-section" aria-label="What taking control looks like">
+    <div class="section-inner">
+      <div class="video-header reveal">
+        <span class="section-label">The Other Side</span>
+        <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
+        <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Give the machines a job worth having, and start with food. The book shows you how.</p>
+        <blockquote class="thesis-quote">
+          <p>If a robot can grow my food and build my house, why am I still renting my survival?</p>
+          <cite>Surviving the Singularity, Introduction</cite>
+        </blockquote>
+      </div>
+    </div>
+    <div class="video-wrap reveal reveal-d1">
+      <div class="video-ratio">
+        <LiteYouTube videoId="uNkADHZStDE" title="FarmBot: open-source automated food production" />
+      </div>
+    </div>
+  </section>
+
   <!-- SHARED SURVIVAL -->
   <section class="reality-section" aria-labelledby="shared-survival-heading">
     <div class="reality-inner reveal">
-      <h2 id="shared-survival-heading" class="reality-heading">Your next meal shouldn't depend on your last paycheck.</h2>
-      <p class="reality-intro">As AI changes work, how do we make ordinary life more secure? Explore how neighbors, growers, useful machines, and public institutions can make necessities more dependable, starting with food. Find a way to take part.</p>
+      <h2 id="shared-survival-heading" class="reality-heading">Losing your job shouldn't mean going hungry.</h2>
+      <p class="reality-intro">What if it all goes right? Machines are taking on more of the work we're paid to do. This book is an optimist's field manual for using them to make ordinary life more secure, starting with food. Money stays. It just stops being the ticket to staying alive.</p>
       <div class="reality-cols">
         <div class="reality-col">
           <h3 class="reality-col-label">What is at stake</h3>
@@ -337,28 +357,9 @@
           </ul>
           <a href="/early-access" class="middle-btn">Preorder the book: {offer.price}</a>
           <p class="middle-fine">One-time. When the preorder window closes, this price is gone.</p>
+          <p class="middle-fine middle-why">{offer.preorderPlain}</p>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ANSWER VIDEO: the build side -->
-  <section class="video-section" aria-label="What taking control looks like">
-    <div class="section-inner">
-      <div class="video-header reveal">
-        <span class="section-label">The Other Side</span>
-        <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
-        <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Owning the hardware that feeds you is the whole game. The book shows you how to start.</p>
-        <blockquote class="thesis-quote">
-          <p>If a robot can grow my food and build my house, why am I still renting my survival?</p>
-          <cite>Surviving the Singularity, Introduction</cite>
-        </blockquote>
-      </div>
-    </div>
-    <div class="video-wrap reveal reveal-d1">
-      <div class="video-ratio">
-        <LiteYouTube videoId="uNkADHZStDE" title="FarmBot: open-source automated food production" />
       </div>
     </div>
   </section>
@@ -1268,6 +1269,7 @@
   .middle-btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: var(--amber); color: #0a0a0a; font-family: 'Outfit', system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; border-radius: var(--r-pill); text-decoration: none; transition: filter 0.2s ease, transform 0.2s var(--ease-spring); box-shadow: 0 4px 20px rgba(245,158,11,0.28); align-self: flex-start; }
   .middle-btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
   .middle-fine { font-size: 0.82rem; color: var(--text-4); margin: 0; }
+  .middle-why { font-size: 0.9rem; color: var(--text-2); line-height: 1.55; }
 
   /* BOOK PARTS */
   .book-parts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }

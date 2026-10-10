@@ -69,4 +69,12 @@ The three changed JavaScript files pass `node --check`. Offer drift, book-downlo
 
 Final local result: **54 passed, zero failed, zero skipped, zero flaky**, with 18 cases each in Chromium, Firefox and mobile Chrome. See [local-validation.json](local-validation.json) for timestamps, command, project counts and exact changed-file hashes. All five negative controls preceded this final restored run.
 
-This macOS host cannot run WebKit; Chromium and Firefox results cannot substitute for the three Linux WebKit projects. The Linux CI follow-up is pending at this commit. Backend checkout remains a separate gate; repository secret-name metadata currently contains no Supabase test configuration.
+Linux verification completed on code commit `780c5d4625976131d7a7157f6c978d867161890d`. [Clean-checkout build run 38063417973](https://github.com/ctavolazzi/survivingthesingularity/actions/runs/38063417973) passed. All three jobs in [WebKit run 38063418022](https://github.com/ctavolazzi/survivingthesingularity/actions/runs/38063418022) passed; job logs were retrieved to verify counts:
+
+| Project | Job | Log summary |
+|---|---|---|
+| Desktop Safari / `webkit` | `114246112053` | 180 passed, 3.5 minutes |
+| iPhone 13 / `mobile-safari` | `114246112003` | 180 passed, 3.4 minutes |
+| iPad / `tablet` | `114246111817` | 180 passed, 3.8 minutes |
+
+That is 540 passing Linux browser cases, plus the 54 focused local cases. Backend checkout remains excluded because Supabase test configuration is absent. These results do not verify actual payment, protected-download delivery or email fulfillment. [Draft PR29](https://github.com/ctavolazzi/survivingthesingularity/pull/29) contains the repair against `site/plain-claims-2026-10-10`; merging a public release is separate.

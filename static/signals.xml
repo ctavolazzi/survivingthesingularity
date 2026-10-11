@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 10 Oct 2026 17:43:45 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 11 Oct 2026 17:57:37 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -76,13 +76,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.31563</guid>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
       <description>Multi-agent LLM systems are often expected to improve as team size increases, yet the scaling behavior may depend on task structure. Our central contribution is to introduce Steiner's taxonomy of group tasks as a framework for analyzing multi-agent LLM scaling and focusing the analysis on disjunctiv... [Score: 9.5 | Flagged for: agi, agent, multi-agent, llm, scaling] Authors: Carolina Fortuna, Blaz Bertalanic</description>
-    </item>
-    <item>
-      <title>NDT Factory: Synthesizing Verified Network Digital Twins from Semantic Models via Multi-Agent LLM</title>
-      <link>https://arxiv.org/abs/2609.12170</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.12170</guid>
-      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Autonomous network management requires systems that can evaluate Network Service Intents (NSIs) under varying conditions without manual implementation of analysis logic, as envisioned in TM Forum Level~4 (L4) autonomy. Behavioral Network Digital Twins (NDTs) enable such evaluation, but existing NDTs... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, autonomy, llm] Authors: Sudipta Acharya, Petar Djukic, et al.</description>
     </item>
     <item>
       <title>EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.06563</guid>
       <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
       <description>Large language model (LLM) agents are increasingly capable of acting in complex tool-use environments, yet they often fail to recognize when tasks are infeasible and no valid solution exists. Recent work has formalized this reliability gap as the problem of agentic abstention, and existing approache... [Score: 8.0 | Flagged for: agent, agentic, tool-use, llm, language model] Authors: Han Luo, Bingbing Wen, et al.</description>
+    </item>
+    <item>
+      <title>MedPrune: Topology-Efficient Multimodal Multi-Agent Communication Evolution for Medical VQA Tasks</title>
+      <link>https://arxiv.org/abs/2610.06695</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.06695</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>While medical multimodal large language models (Med-MLLMs) advance medical visual question answering (VQA), existing clinical workflow-inspired multi-agent frameworks suffer from interaction patterns and excessive computational overhead caused by redundant communication topologies. In this paper, we... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Jiuheng Wan, Runze Li, et al.</description>
     </item>
   </channel>
 </rss>

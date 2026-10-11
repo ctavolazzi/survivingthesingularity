@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T17:43:45Z",
+  "generated_at": "2026-10-11T17:57:37Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -263,31 +263,6 @@
         "llm",
         "scaling",
         "rag"
-      ]
-    },
-    {
-      "id": "2609.12170",
-      "source": "arxiv",
-      "title": "NDT Factory: Synthesizing Verified Network Digital Twins from Semantic Models via Multi-Agent LLM",
-      "url": "https://arxiv.org/abs/2609.12170",
-      "authors": [
-        "Sudipta Acharya",
-        "Petar Djukic",
-        "Burak Kantarci"
-      ],
-      "summary": "Autonomous network management requires systems that can evaluate Network Service Intents (NSIs) under varying conditions without manual implementation of analysis logic, as envisioned in TM Forum Level~4 (L4) autonomy. Behavioral Network Digital Twins (NDTs) enable such evaluation, but existing NDTs rely on pre-defined analytical logic, limiting adaptability for evolving closed-loop control. This paper introduces the NDT factory, a multi-agent software system that synthesizes executable behavioral NDTs on demand from semantic models using Large Language Model (LLM). We validate the system usin",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-10",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "autonomy",
-        "llm",
-        "language model"
       ]
     },
     {
@@ -1011,77 +986,6 @@
       ]
     },
     {
-      "id": "2609.11660",
-      "source": "arxiv",
-      "title": "Autonomy, Social Norms, and Alignment: Towards a Developmental Framework for Autonomous Artificial Agents",
-      "url": "https://arxiv.org/abs/2609.11660",
-      "authors": [
-        "Marica Notte",
-        "Ludovica Marinucci",
-        "Vieri Giuliano Santucci"
-      ],
-      "summary": "In recent years, artificial intelligence has made extraordinary progress thanks to large-scale models capable of generalization and the generation of complex outputs. However, transferring this potential into embodied agents reveals a significant limitation: the most advanced systems rely on pre-existing datasets and human feedback strategies that are powerful but insufficient in dynamic or unknown contexts. To adapt, an agent must acquire knowledge through direct interaction with its environment. One strategy to address this challenge involves introducing higher-level mechanisms, such as intr",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-10",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "autonomy",
-        "alignment",
-        "embodied"
-      ]
-    },
-    {
-      "id": "2609.11699",
-      "source": "arxiv",
-      "title": "Negative Self-Distillation: Learning to Reason by Avoiding Flaws",
-      "url": "https://arxiv.org/abs/2609.11699",
-      "authors": [
-        "Rongcan Pei",
-        "Zhepei Wei",
-        "Shuyao Xu",
-        "Xinyu Zhu"
-      ],
-      "summary": "On-Policy Self-Distillation (OPSD) has emerged as a popular paradigm for large language model (LLM) self-improvement, allowing models to act as their own teachers by leveraging privileged information such as ground-truth solutions. However, recent findings indicate that OPSD can severely degrade the performance of LLMs on complex reasoning tasks: By forcing the student to imitate an artificially confident reasoning trace conditioned on privileged information, OPSD inadvertently suppresses expressions of uncertainty and penalizes the exploratory, self-corrective behaviors required to solve chal",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-10",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.11231",
-      "source": "arxiv",
-      "title": "A Voice-Interactive Multi-Agent System for Smart Operating Rooms: Architecture Design and Key Technologies",
-      "url": "https://arxiv.org/abs/2609.11231",
-      "authors": [
-        "Tianxiang Zhou"
-      ],
-      "summary": "This paper presents SurgicalRoomAgent, a voice-interactive multi-agent system for smart operating rooms based on large language models (LLMs). The system achieves natural language understanding, device control, intraoperative recording, and surgical report generation through a layered architecture comprising a voice interaction pipeline (wake, ASR, turn detection, agent reasoning, TTS) and an agent core (skill registry, task planner, device manager). Three key technologies are investigated: (1) KV Cache prefix warming for low-latency inference, reducing recomputation overhead from approximatel",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-10",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2610.12281",
       "source": "arxiv",
       "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants",
@@ -1492,6 +1396,101 @@
         "agent",
         "reasoning",
         "embodied",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.12299",
+      "source": "arxiv",
+      "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
+      "url": "https://arxiv.org/abs/2610.12299",
+      "authors": [
+        "Dahyun Chung",
+        "Siyoon Jin",
+        "Hyunwook Choi",
+        "Honggyu An"
+      ],
+      "summary": "Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent. Real embodied settings often involve multiple agents that act and interact within a shared environment. Existing multi-agent world models rely on coarse actions like locomotion, camera control, or discrete commands, leaving fine-grained embodied interactions underexplored. We formulate multi-agent egocentric world modeling as synchronized ego-stream generation for multiple agents interacting through fine-grained actions in a shared world. This requires cross-view actio",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "world model",
+        "agent",
+        "multi-agent",
+        "embodied"
+      ]
+    },
+    {
+      "id": "2610.11899",
+      "source": "arxiv",
+      "title": "Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent System",
+      "url": "https://arxiv.org/abs/2610.11899",
+      "authors": [
+        "Irene Weber"
+      ],
+      "summary": "Large language models (LLMs) are increasingly embedded as components in software systems, marketed under labels such as chatbot, copilot, retrieval-augmented generation, workflow, coding agent and AI agent. Whether these labels denote genuine architectural forms or serve as branding has not been assessed systematically.\n  In the sources surveyed, labels do carry architectural content, most clearly in vendor usage: copilot denotes a router-worker architecture operating a host application under step-by-step user confirmation, while the more recent shift to the label agent coincides with AI-plann",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "llm",
+        "language model",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "2610.11375",
+      "source": "arxiv",
+      "title": "Personalization Matters: Long-Horizon Conversation Agent with User-Centric Information in Online Shopping Interactions",
+      "url": "https://arxiv.org/abs/2610.11375",
+      "authors": [
+        "Rena Gao",
+        "Yue Dai",
+        "Hao Guan",
+        "Shengxiang Gao"
+      ],
+      "summary": "Personalized conversational shopping requires maintaining preference consistency over multi-turn interactions, where users reveal constraints gradually. Existing approaches often rely on static profiles and do not explicitly control long-horizon interaction behavior. We propose a multi-agent, multimodal Retrieval-Augmented Generation (RAG) framework that decomposes dialogue state tracking, recommendation retrieval, preference-aware reasoning, and response generation, while integrating product metadata, product reviews, image-derived descriptions, and user historical reviews. To evaluate intera",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-08",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.12266",
+      "source": "arxiv",
+      "title": "DVD: Dynamic Vector Decoding for Efficient MLLM-based Perception",
+      "url": "https://arxiv.org/abs/2610.12266",
+      "authors": [
+        "Jinghua Hou",
+        "Zhe Liu",
+        "Hengshuang Zhao"
+      ],
+      "summary": "Multimodal large language models have made remarkable progress in bridging vision and language, facilitating various perception tasks essential for human-machine interaction, robotics, and autonomous driving. However, existing MLLM-based perception methods predominantly rely on text-based coordinate representation, which suffers from excessive token overhead, or fixed-range quantization, which suffers from range and precision constraints, especially for 3D domains with unbounded spatial range and high localization accuracy requirements. To address these challenges, we propose a dynamic vector ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-08",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "autonomous",
+        "robot",
+        "robotics",
         "llm",
         "language model"
       ]

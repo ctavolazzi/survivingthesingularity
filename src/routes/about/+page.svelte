@@ -1,11 +1,6 @@
 <script>
-  import { fade } from 'svelte/transition';
-  import { onMount } from 'svelte';
   import AuthorBio from '$lib/components/AuthorBio.svelte';
   import { offerBlurb } from '$lib/offer';
-
-  let visible = false;
-  onMount(() => { visible = true; });
 </script>
 
 <svelte:head>
@@ -33,8 +28,7 @@
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/about.png" />
 </svelte:head>
 
-{#if visible}
-  <div class="about-page" in:fade={{ duration: 400 }}>
+  <div class="about-page">
     <header class="about-header">
       <p class="about-label">About</p>
       <h1 class="about-title">I'm writing this in real time.</h1>
@@ -107,13 +101,20 @@
       </p>
     </section>
   </div>
-{/if}
 
 <style>
+  /* Fades in over 400ms with CSS, not `{#if visible}` + in:fade. The gate kept
+     this whole page out of the served HTML until JavaScript ran. See the note in
+     src/routes/blog/+page.svelte. */
   .about-page {
     max-width: 760px;
     margin: 0 auto;
     padding: 2rem 1rem 3rem;
+    animation: page-fade 400ms linear;
+  }
+
+  @keyframes page-fade {
+    from { opacity: 0; }
   }
 
   @media (min-width: 640px) {

@@ -58,8 +58,8 @@ export const cadence = Object.freeze({
  * artifacts.
  *
  * `LEDGER_PRECEDENT_COUNT` is the BOOK's ledger: one precedent closing each
- * chapter, indexed in Appendix D, running P-01 to P-23. `python3 scripts/sts.py
- * verify precedents` reports "all 23 present in the book and indexed in
+ * chapter, indexed in Appendix D, running P-01 to P-24. `python3 scripts/sts.py
+ * verify precedents` reports "all 24 present in the book and indexed in
  * Appendix D". It stays asserted here rather than derived, mirroring LEDGER_SIZE
  * in scripts/sts.py, because deriving it from Appendix D would make that
  * verification a tautology, comparing the file against itself.
@@ -96,7 +96,7 @@ export const cadence = Object.freeze({
  */
 import bundleManifest from './data/bundleManifest.js';
 
-const LEDGER_PRECEDENT_COUNT = 23;
+const LEDGER_PRECEDENT_COUNT = 24;
 const PRECEDENT_FILE_CASE_COUNT = bundleManifest.counts.precedent_file_cases;
 const PRECEDENT_FILE_SOURCED_COUNT = bundleManifest.counts.cases_with_sources;
 
@@ -128,6 +128,16 @@ export const offer = Object.freeze({
     'starting with the book as it is being written and The Precedent File, ' +
     'and you keep getting it. When the membership launches later, you never ' +
     'pay it.',
+
+  /**
+   * What the purchase is, in one plain line. Rendered next to the first ask on
+   * the homepage, directly after the food claim, so the button reads as an
+   * ordinary book preorder and not as a price on the thing the book argues
+   * about. It names no amount, so a price change cannot strand it.
+   */
+  preorderPlain:
+    'This is a book preorder. You read it now, as it is being written, and ' +
+    'you get every update after.',
 
   ledgerPrecedentCount: LEDGER_PRECEDENT_COUNT,
   precedentFileCaseCount: PRECEDENT_FILE_CASE_COUNT,

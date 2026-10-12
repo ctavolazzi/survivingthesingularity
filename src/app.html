@@ -3,18 +3,33 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Surviving the Singularity: We Don't Have to Live Like This. A field manual for staying human as AI rewrites work, money, and survival." />
+		<!-- No meta description here on purpose. Every route sets its own in
+		     <svelte:head>, and a default in this shell is emitted FIRST on every
+		     page, so each page served two descriptions with the generic one ahead
+		     of its own. -->
 		<meta name="theme-color" content="#020617" />
 		<link rel="icon" href="/favicon.png" type="image/png" />
 		<link rel="icon" href="/favicon.webp" type="image/webp" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<!-- Fonts come from this site (static/fonts/), not from Google: the same
+		     files and the same @font-face rules. See scripts/fetch_fonts.py.
+		     The two files every page draws with (body text, and the nav's mono
+		     brand) are preloaded so they are usually in hand before first paint.
+		     `crossorigin` is required on a font preload even for the same origin,
+		     or the browser fetches the file twice. -->
+		<link rel="preload" href="/fonts/inter-v20-latin.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/jetbrains-mono-v24-latin.woff2" as="font" type="font/woff2" crossorigin />
+		<link href="/fonts/fonts.css" rel="stylesheet" />
 		<!-- Splash boot sequence: stamps html[data-splash] before first paint so
 		     returning visitors never see the 1.56s sequence flash. Render-blocking
 		     and external on purpose — CSP is script-src 'self' with a SvelteKit
 		     nonce, which an inline block here would not carry. -->
 		<script src="/splash-gate.js"></script>
+		<!-- With scripting off nothing ever adds .visible to the landing page's
+		     reveal-on-scroll sections, so they stay at opacity 0: a headline over a
+		     blank page with every word present but invisible. Browsers that run
+		     scripts never parse this block. An inline style is allowed by the CSP
+		     (style-src 'unsafe-inline'); an inline script would not be. -->
+		<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

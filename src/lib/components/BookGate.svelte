@@ -37,6 +37,7 @@
       type="password"
       bind:value={password}
       placeholder="Password"
+      aria-label="Password"
       autocomplete="off"
       autocapitalize="off"
       spellcheck="false"

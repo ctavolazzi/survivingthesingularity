@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-10",
+  "base_commit": "396b2383d1fdf33cf943b7f0ee870f1d1e465a2b",
+  "command": "PLAYWRIGHT_BASE_URL=http://127.0.0.1:4426 npx playwright test tests/e2e/g-user-profiles.spec.js tests/e2e/h-usability.spec.js --project=chromium --project=firefox --project=mobile-chrome --workers=2",
+  "stats": {
+    "startTime": "2026-10-10T15:20:53.362Z",
+    "duration": 95444.145,
+    "expected": 54,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": {
+    "chromium": {
+      "expected": 18
+    },
+    "firefox": {
+      "expected": 18
+    },
+    "mobile-chrome": {
+      "expected": 18
+    }
+  },
+  "sha256": {
+    "src/routes/checklist/+page.svelte": "98663bb0cf6e35e081a174d027c195b9b4c3abdb527746a93d0558b9453fba90",
+    "tests/e2e/g-user-profiles.spec.js": "79e5a043f4a4d01d7225fce0151ea2d35d095038922174dc317834966929932a",
+    "tests/e2e/h-usability.spec.js": "9c1ffc88f035c0f7683100ede70f91bb0c66ccaa22a35e93466d47af78d870fa",
+    "tests/e2e/helpers/isolated-page.js": "a8c33acc0aa2d022d4de1c5305acea63516574792fb98b22fb1c7ede7cd47657"
+  },
+  "limits": [
+    "Local dev server; API responses intercepted. No backend purchase or email delivery verification.",
+    "WebKit unavailable on macOS 12; requires Linux CI.",
+    "Existing npm check script cannot run because svelte-check is undeclared."
+  ]
+}

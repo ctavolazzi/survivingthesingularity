@@ -77,6 +77,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* Spelled out because this component now also sits inside article bodies.
+       Tailwind's `prose` gives every img a 2em top margin and the older posts'
+       own `.blog-content img` rule adds 1.5rem and rounded corners. Unanswered,
+       those push the thumbnail down over the caption beneath the player. */
+    margin: 0;
+    max-width: none;
+    border-radius: 0;
   }
 
   .lite-yt-play {

@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 11 Oct 2026 17:57:37 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 12 Oct 2026 21:40:07 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -34,6 +34,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.10858</guid>
       <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
       <description>Analog/RF circuits remain the critical interface between digital computation and the physical world, and emerging standards from Wi-Fi 7 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-i... [Score: 10.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Awani Khodkumbhe, Yunfei Feng, et al.</description>
+    </item>
+    <item>
+      <title>MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS</title>
+      <link>https://arxiv.org/abs/2610.13772</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.13772</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robot... [Score: 10.0 | Flagged for: agi, agent, multi-agent, robot, robotics] Authors: Tom Philipp Backert, Mohammad D. Soorati, et al.</description>
     </item>
     <item>
       <title>Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents</title>
@@ -183,6 +190,13 @@
       <description>Large language models are increasingly deployed as interacting agents, making the persistence of their action policies across repeated interaction critical for reliable multi-agent operation. We investigate whether and how agent-generated, non-binding pre-play communication ("cheap talk") increases ... [Score: 8.5 | Flagged for: agent, multi-agent, alignment, llm, language model] Authors: Nunzio Lorè, Hongan Zhu, et al.</description>
     </item>
     <item>
+      <title>EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies</title>
+      <link>https://arxiv.org/abs/2610.13376</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.13376</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Artificial intelligence is beginning to automate scientific discovery, yet physical robot-policy research still relies on scientists and engineers to interpret experimental failures and decide how controllers should be revised. We present EndoRSI (Endoscopic Recursive Self-Improvement), a human-gove... [Score: 8.0 | Flagged for: recursive self-improvement, self-improving, agent, interpret, robot] Authors: Chi Kit Ng, Yidong Zhang, et al.</description>
+    </item>
+    <item>
       <title>WOVEN: Weaving Visual World Modeling into Multimodal LLMs</title>
       <link>https://arxiv.org/abs/2610.12417</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.12417</guid>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.06597</guid>
       <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
       <description>LLM agents increasingly execute complex workflows involving multi-turn reasoning, tool use, and parallel agents. Efficient serving requires decisions that span two layers with complementary information: the agent harness understands workflow dependencies, context lifecycles, and execution objectives... [Score: 8.0 | Flagged for: agent, agentic, tool use, reasoning, llm] Authors: Jiaqi Zhao, Haodong Chen, et al.</description>
-    </item>
-    <item>
-      <title>HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention</title>
-      <link>https://arxiv.org/abs/2610.06563</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.06563</guid>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large language model (LLM) agents are increasingly capable of acting in complex tool-use environments, yet they often fail to recognize when tasks are infeasible and no valid solution exists. Recent work has formalized this reliability gap as the problem of agentic abstention, and existing approache... [Score: 8.0 | Flagged for: agent, agentic, tool-use, llm, language model] Authors: Han Luo, Bingbing Wen, et al.</description>
-    </item>
-    <item>
-      <title>MedPrune: Topology-Efficient Multimodal Multi-Agent Communication Evolution for Medical VQA Tasks</title>
-      <link>https://arxiv.org/abs/2610.06695</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.06695</guid>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
-      <description>While medical multimodal large language models (Med-MLLMs) advance medical visual question answering (VQA), existing clinical workflow-inspired multi-agent frameworks suffer from interaction patterns and excessive computational overhead caused by redundant communication topologies. In this paper, we... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Jiuheng Wan, Runze Li, et al.</description>
     </item>
   </channel>
 </rss>

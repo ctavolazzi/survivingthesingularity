@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:57:37Z",
+  "generated_at": "2026-10-12T21:40:07Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -107,6 +107,32 @@
         "language model",
         "retrieval",
         "automation"
+      ]
+    },
+    {
+      "id": "2610.13772",
+      "source": "arxiv",
+      "title": "MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS",
+      "url": "https://arxiv.org/abs/2610.13772",
+      "authors": [
+        "Tom Philipp Backert",
+        "Mohammad D. Soorati",
+        "Javad Ghofrani"
+      ],
+      "summary": "Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robotics remains limited and insufficiently standardized: a single experiment is assembled from manually aligned simulator files, training scripts, configuration values, paths, seeds, and environment details, so reuse and reproduction stay fragile even within one research group. To address this gap, we i",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-09",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "robot",
+        "robotics",
+        "emergent",
+        "rag"
       ]
     },
     {
@@ -640,6 +666,31 @@
       ]
     },
     {
+      "id": "2610.13376",
+      "source": "arxiv",
+      "title": "EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies",
+      "url": "https://arxiv.org/abs/2610.13376",
+      "authors": [
+        "Chi Kit Ng",
+        "Yidong Zhang",
+        "Tianchun Wu",
+        "Siu Hing Lui"
+      ],
+      "summary": "Artificial intelligence is beginning to automate scientific discovery, yet physical robot-policy research still relies on scientists and engineers to interpret experimental failures and decide how controllers should be revised. We present EndoRSI (Endoscopic Recursive Self-Improvement), a human-governed, self-improving robotic research system in which the embedded EndoForge coding agent iteratively develops and refines endoscopic robot policies using evidence from physical experiments. Physical execution remains isolated within a safety-constrained runtime under human authorisation. In motoris",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-09",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "self-improving",
+        "agent",
+        "interpret",
+        "robot"
+      ]
+    },
+    {
       "id": "2610.12417",
       "source": "arxiv",
       "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
@@ -983,6 +1034,31 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2610.13534",
+      "source": "arxiv",
+      "title": "MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures",
+      "url": "https://arxiv.org/abs/2610.13534",
+      "authors": [
+        "Loan Bernat",
+        "Matthieu Grard",
+        "Ariane Herbulot",
+        "Florent Lamiraux"
+      ],
+      "summary": "Long-horizon embodied agents must maintain task-relevant information, coordinate heterogeneous robots, and adapt their decisions as execution unfolds. Existing benchmarks investigate dynamic task execution and embodied multi-agent coordination, but provide limited evaluation of their intersection. We introduce MAGMA-Bench, an architecture-agnostic benchmark for persistent task reasoning in dynamic multi-robot environments. MAGMA-Bench evaluates agents across increasing task horizons and controlled online perturbations, including execution failures, task interruptions, and mission updates, with",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-09",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "embodied",
+        "robot"
       ]
     },
     {
@@ -1401,98 +1477,25 @@
       ]
     },
     {
-      "id": "2610.12299",
+      "id": "2610.13703",
       "source": "arxiv",
-      "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
-      "url": "https://arxiv.org/abs/2610.12299",
+      "title": "A Baseline Assessment for the Agentic Web Technology Stack",
+      "url": "https://arxiv.org/abs/2610.13703",
       "authors": [
-        "Dahyun Chung",
-        "Siyoon Jin",
-        "Hyunwook Choi",
-        "Honggyu An"
+        "Vagner Figueredo de Santana",
+        "Diogo Cortiz"
       ],
-      "summary": "Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent. Real embodied settings often involve multiple agents that act and interact within a shared environment. Existing multi-agent world models rely on coarse actions like locomotion, camera control, or discrete commands, leaving fine-grained embodied interactions underexplored. We formulate multi-agent egocentric world modeling as synchronized ego-stream generation for multiple agents interacting through fine-grained actions in a shared world. This requires cross-view actio",
+      "summary": "The fast pace in which protocols, frameworks, and technologies are being proposed for LLM-based agents results in a complex scenario for anyone aiming to create state-of-the-art AI solutions. Without an assessment on how different protocols, frameworks, and libraries work together to compose an Agentic Web solution, developers and organizations face different challenges (e.g., skilling, governance, infrastructure) even before becoming part of the Agentic Web ecosystem. In this context, we propose a system for performing Agentic Web evaluations called MASTIF (Multi-Agent System TestIng Framewor",
       "category": "cs.AI",
       "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "world model",
-        "agent",
-        "multi-agent",
-        "embodied"
-      ]
-    },
-    {
-      "id": "2610.11899",
-      "source": "arxiv",
-      "title": "Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent System",
-      "url": "https://arxiv.org/abs/2610.11899",
-      "authors": [
-        "Irene Weber"
-      ],
-      "summary": "Large language models (LLMs) are increasingly embedded as components in software systems, marketed under labels such as chatbot, copilot, retrieval-augmented generation, workflow, coding agent and AI agent. Whether these labels denote genuine architectural forms or serve as branding has not been assessed systematically.\n  In the sources surveyed, labels do carry architectural content, most clearly in vendor usage: copilot denotes a router-worker architecture operating a host application under step-by-step user confirmation, while the more recent shift to the label agent coincides with AI-plann",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "llm",
-        "language model",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2610.11375",
-      "source": "arxiv",
-      "title": "Personalization Matters: Long-Horizon Conversation Agent with User-Centric Information in Online Shopping Interactions",
-      "url": "https://arxiv.org/abs/2610.11375",
-      "authors": [
-        "Rena Gao",
-        "Yue Dai",
-        "Hao Guan",
-        "Shengxiang Gao"
-      ],
-      "summary": "Personalized conversational shopping requires maintaining preference consistency over multi-turn interactions, where users reveal constraints gradually. Existing approaches often rely on static profiles and do not explicitly control long-horizon interaction behavior. We propose a multi-agent, multimodal Retrieval-Augmented Generation (RAG) framework that decomposes dialogue state tracking, recommendation retrieval, preference-aware reasoning, and response generation, while integrating product metadata, product reviews, image-derived descriptions, and user historical reviews. To evaluate intera",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-08",
+      "published_at": "2026-10-09",
       "score": 7.0,
       "raw_score": 14,
       "matched_keywords": [
         "agent",
         "multi-agent",
-        "reasoning",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.12266",
-      "source": "arxiv",
-      "title": "DVD: Dynamic Vector Decoding for Efficient MLLM-based Perception",
-      "url": "https://arxiv.org/abs/2610.12266",
-      "authors": [
-        "Jinghua Hou",
-        "Zhe Liu",
-        "Hengshuang Zhao"
-      ],
-      "summary": "Multimodal large language models have made remarkable progress in bridging vision and language, facilitating various perception tasks essential for human-machine interaction, robotics, and autonomous driving. However, existing MLLM-based perception methods predominantly rely on text-based coordinate representation, which suffers from excessive token overhead, or fixed-range quantization, which suffers from range and precision constraints, especially for 3D domains with unbounded spatial range and high localization accuracy requirements. To address these challenges, we propose a dynamic vector ",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "autonomous",
-        "robot",
-        "robotics",
-        "llm",
-        "language model"
+        "agentic",
+        "llm"
       ]
     }
   ]

@@ -95,6 +95,35 @@ honest preparation post and separate post-activation copy. Use the latter only
 after the integration and deployed-site evidence exists. No social posts,
 messages, ad campaigns or test purchases were sent during this review.
 
+## Automatic Cloudflare deployment gate
+
+The existing GitHub–Cloudflare Pages integration publishes `main`; a local
+Cloudflare login is not required to trigger it. The release now runs
+`scripts/check-hosted-deployment.mjs` from a build-only Vite plugin, before the
+server compiles. This also covers a direct `vite build` command. The nested
+client build does not repeat the provider checks.
+
+The gate uses the build environment's existing credentials in place. It does not
+export credentials, read customer rows, modify the database, upload files, create
+payments or send email. It checks live provider configuration, required exposed
+database columns/RPC arguments, bucket privacy and the downloaded ZIP's exact size
+and SHA256. It does not need a copy of the private ZIP in the public repository.
+Errors and logs use controlled messages without provider response bodies.
+
+Cloudflare `main` builds must pass every check. Missing or unverifiable values
+stop that build; a failed build leaves the previous deployment serving. Ordinary
+local/GitHub builds skip hosted requests. Other Cloudflare branches fail closed
+until an isolated preview policy is established. The production origin defaults
+to `https://survivingthesingularity.com`; an explicit conflicting origin fails.
+
+This gate can use configuration already present in Cloudflare even when the
+local workspace has no credentials. Build-time availability is checked, not
+assumed. A failed check requires fixing the hosted setup and retrying; there is
+no bypass switch. The checks cannot prove migration function bodies or grants,
+matching webhook signing secrets, actual checkout fulfillment, inbox arrival or
+that runtime settings equal build settings. Preserve the separate evidence above
+and verify deployed behavior before announcing that paid delivery is ready.
+
 ## Provider references
 
 - [Stripe price retrieval](https://docs.stripe.com/api/prices/retrieve)

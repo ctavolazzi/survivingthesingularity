@@ -10,6 +10,8 @@ const suites = [
   ['tests/unit/request-json.test.mjs'],
   ['tests/unit/hash-focus-guard.test.mjs'],
   ['scripts/check-launch-readiness.test.mjs'],
+  ['scripts/check-hosted-deployment.test.mjs'],
+  ['tests/unit/hosted-deployment-guard.test.mjs'],
   ['scripts/book-downloads.test.mjs'],
   ['scripts/deploy-book-bundle.test.mjs']
 ];

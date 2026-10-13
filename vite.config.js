@@ -2,9 +2,11 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { imagetools } from 'vite-imagetools';
 import { hashFocusGuard } from './scripts/vite-hash-focus-guard.mjs';
+import { hostedDeploymentGuard } from './scripts/vite-hosted-deployment-guard.mjs';
 
 export default defineConfig({
 	plugins: [
+		hostedDeploymentGuard(),
 		hashFocusGuard(),
 		sveltekit(),
 		imagetools({

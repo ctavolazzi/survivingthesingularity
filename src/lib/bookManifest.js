@@ -6,7 +6,7 @@
  * Every rule for turning book.json into a name, a label, or an ordered file
  * list used to be written once per consumer. The download filename alone was
  * spelled out in four places: two route components building the href inline,
- * scripts/check-book-downloads.mjs asserting it, and static/_redirects
+ * scripts/check-book-downloads.mjs asserting it, and _redirects
  * targeting it. On 2026-08-01 the PDF on /exclusive-friends-only 404'd in
  * production because the derived href and the shipped file disagreed - four
  * copies of one string with nothing holding them together.

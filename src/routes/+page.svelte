@@ -507,7 +507,8 @@
   <!-- CTA -->
   <section id="act" aria-labelledby="act-heading">
     <div class="section-inner">
-      <div class="cta-inner reveal">
+      <!-- Keep the purchase path visible even if a scroll animation stalls. -->
+      <div class="cta-inner">
         <div class="cta-glow" aria-hidden="true"></div>
         <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>{offer.priceWords}.</em></h2>
 

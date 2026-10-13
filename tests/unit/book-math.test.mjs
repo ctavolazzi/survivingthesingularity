@@ -2,11 +2,11 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { Marked } from 'marked';
-import DOMPurify from 'isomorphic-dompurify';
+import { sanitizeHtml } from '../../src/lib/utils/sanitizeHtml.js';
 import { katexExtension } from '../../src/lib/utils/katexExtension.js';
 
 const markdown = new Marked(katexExtension);
-const render = text => DOMPurify.sanitize(markdown.parse(text));
+const render = text => sanitizeHtml(markdown.parse(text));
 test('math renders without consuming prices in neighboring prose', () => {
   const html = render('Compare $25,000 with $150. For $Q = 4$, keep both prices.');
   assert.match(html, /\$25,000/);

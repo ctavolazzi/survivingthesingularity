@@ -56,12 +56,15 @@ jobs:
       - name: Payment migration and concurrency in disposable Postgres
         run: python3 tests/server/payment-sql.integration.py
 
-      # No env is set on purpose. The build must not require Stripe or Supabase
-      # credentials: adapter-auto emits a warning about not detecting a
-      # production environment and still exits 0. If this step ever starts
-      # needing secrets to compile, that is a regression worth failing on.
-      - name: Build
+      # The explicit Pages adapter emits the deployable Worker. Compiling and
+      # running it locally must not require Stripe, Supabase or hosting secrets.
+      - name: Build Cloudflare Pages output
+        env:
+          WRANGLER_SEND_METRICS: 'false'
         run: npm run build
+
+      - name: Cloudflare Worker and static routing smoke checks
+        run: node scripts/check-cloudflare-runtime.mjs
 
       - name: Install launch test browsers
         run: npx playwright install --with-deps chromium firefox webkit
@@ -72,7 +75,7 @@ jobs:
       - name: Report what this proves
         if: success()
         run: |
-          echo "- The committed tree passes code checks, source regressions, disposable-database tests, build and launch browser flows." >> "$GITHUB_STEP_SUMMARY"
+          echo "- The committed tree passes code checks, source regressions, disposable-database tests, Cloudflare Worker HTTP checks and launch browser flows." >> "$GITHUB_STEP_SUMMARY"
           echo "- External Stripe, Resend, hosted database and private-storage integration require separate release verification." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Report what this caught

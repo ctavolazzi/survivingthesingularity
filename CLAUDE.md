@@ -43,11 +43,16 @@ The bundle path, book version, and SHA256 in deployment configuration must match
 the generated bundle manifest after a remote-byte verification. Never default to
 an old bundle. Production synthetic sessions cannot grant access.
 
-`npm run check`, `npm run test:release`, `npm run build`, and
-`npm run test:launch-browser` are release checks. The browser suite requires a
+`npm run check`, `npm run test:release`, `npm run build`, `npm run test:cloudflare`,
+and `npm run test:launch-browser` are release checks. The browser suite requires a
 built site and installed Playwright browsers, intercepts writes, and does not
 prove a live payment or inbox delivery. The disposable Postgres integration
 suite is documented alongside the payment tests.
+
+Cloudflare uses the pinned adapter and `wrangler.jsonc`. `_headers` and the
+generated `_redirects` belong at the repository root. The local Worker guard
+isolates credentials, verifies all canonical chapter loads and checks static
+routing; it does not deploy. Markdown sanitization must work without a DOM.
 
 ## Working conventions
 

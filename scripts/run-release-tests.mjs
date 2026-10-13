@@ -6,6 +6,7 @@ const suites = [
   ['tests/unit/sitemap.test.mjs'],
   ['tests/unit/bundle-release.test.mjs'],
   ['tests/unit/book-math.test.mjs'],
+  ['tests/unit/sanitize-html.test.mjs'],
   ['scripts/book-downloads.test.mjs'],
   ['scripts/deploy-book-bundle.test.mjs']
 ];

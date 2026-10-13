@@ -19,7 +19,7 @@ Two things are deliberate:
     browser only downloads a subset when a page uses a character from it, so the
     Greek and Cyrillic files cost nothing until they are needed.
 
-File names carry Google's version (inter-v20-latin.woff2), so static/_headers
+File names carry Google's version (inter-v20-latin.woff2), so _headers
 can serve them as immutable. A newer version gets a new name.
 
 Licences: all three families are SIL Open Font License 1.1. The texts live in

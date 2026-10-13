@@ -113,7 +113,7 @@ This project is open source. If you want to fork it, remix it, or contribute fix
 - **Styling:** Tailwind CSS v3 + scoped component CSS, dark-only theme
 - **Database:** Supabase, server-side only through the service role (see "Database access" below). There is no auth; see the header of `src/hooks.server.js`.
 - **Fonts:** Inter (UI) + JetBrains Mono (numbers, code)
-- **Deployment:** adapter-auto (Cloudflare Pages target)
+- **Deployment:** pinned Cloudflare Pages adapter; `npm run test:cloudflare` checks the built Worker locally
 
 ### Database access
 

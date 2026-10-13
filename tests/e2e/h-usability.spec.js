@@ -61,16 +61,37 @@ test.describe('Usability', () => {
     await expect(page.locator('#main-content')).toBeFocused();
   });
 
-  test('Scrolling reveals the final call to action', async ({ page }) => {
-    await page.emulateMedia({ reducedMotion: 'no-preference' });
-    await gotoReady(page, '/');
-    const callToAction = page.locator('.cta-inner.reveal');
-    await expect(callToAction).toHaveCount(1);
-    await expect(callToAction).not.toHaveClass(/\bvisible\b/);
-    await callToAction.scrollIntoViewIfNeeded();
-    await expect(callToAction).toHaveClass(/\bvisible\b/);
-    await expect(callToAction).toHaveCSS('opacity', '1');
-  });
+  for (const suppressRevealCallbacks of [false, true]) {
+    test(`Final call to action stays visible and opens checkout${suppressRevealCallbacks ? ' when scroll animations do not run' : ''}`, async ({ page }) => {
+      await page.emulateMedia({ reducedMotion: 'no-preference' });
+      if (suppressRevealCallbacks) {
+        await page.addInitScript(() => {
+          const NativeObserver = window.IntersectionObserver;
+          window.IntersectionObserver = class extends NativeObserver {
+            constructor(callback, options) {
+              super((entries, observer) => {
+                const remaining = entries.filter(entry => !entry.target.matches('.reveal'));
+                if (remaining.length) callback(remaining, observer);
+              }, options);
+            }
+          };
+        });
+      }
+      await gotoReady(page, '/');
+      await expect(page.locator('.home')).toHaveClass(/\breveal-enabled\b/);
+      const callToAction = page.locator('#act .cta-inner');
+      // Essential content must be opaque before any intersection or transition.
+      // Mobile WebKit has stalled at opacity 0 after its visible class was set.
+      await expect(callToAction).toHaveCSS('opacity', '1');
+      const heading = callToAction.getByRole('heading');
+      await heading.scrollIntoViewIfNeeded();
+      await expect(heading).toBeInViewport();
+      await expect(callToAction).toHaveCSS('opacity', '1');
+      await callToAction.getByRole('link', { name: /Preorder the Book/ }).click();
+      await expect(page).toHaveURL(/\/early-access$/);
+      await expect(page.locator('main h1')).toBeVisible();
+    });
+  }
 
   test('Thank-you dialog opens and its close control works', async ({ page }) => {
     await gotoReady(page, '/');

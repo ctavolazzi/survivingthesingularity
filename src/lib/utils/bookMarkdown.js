@@ -1,5 +1,5 @@
 import { marked } from 'marked';
-import DOMPurify from 'isomorphic-dompurify';
+import { sanitizeHtml } from './sanitizeHtml.js';
 import { katexExtension } from './katexExtension.js';
 import imageDimensions from '../data/book/image-dimensions.json';
 import visuals from '../data/book/visuals.json';
@@ -10,7 +10,7 @@ const layouts = new Set(['diagram', 'cutout-left', 'cutout-right', 'inset']);
 const basename = (src) => src.split(/[?#]/)[0].split('/').pop();
 
 export function renderMarkdown(source) {
-  let html = DOMPurify.sanitize(marked(source));
+  let html = sanitizeHtml(marked(source));
   html = html.replace(/<img\b[^>]*>/g, (tag) => {
     const src = tag.match(/\bsrc="([^"]+)"/)?.[1];
     if (!src) return tag;

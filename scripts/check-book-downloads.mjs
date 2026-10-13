@@ -45,7 +45,7 @@
  * exactly the release where it was needed, which is the failure it exists to
  * prevent.
  *
- * It also GENERATES static/_redirects, for the same reason: a redirect target
+ * It also GENERATES _redirects, for the same reason: a redirect target
  * typed by hand is one more copy of the version to forget.
  */
 
@@ -63,7 +63,7 @@ import { verifyDownloadReceipt } from './lib/book-download-receipt.mjs';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BOOK_JSON = 'src/lib/data/book/book.json';
 const DOWNLOADS = 'static/downloads';
-const REDIRECTS = 'static/_redirects';
+const REDIRECTS = '_redirects';
 
 /** Cloudflare Pages hard limit for a single site asset. Not negotiable. */
 const PAGES_MAX_BYTES = 25 * 1024 * 1024;

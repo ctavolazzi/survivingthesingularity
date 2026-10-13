@@ -20,7 +20,7 @@
  *
  * It has to be an external file rather than an inline <script>: the site ships
  * `script-src 'self'` with a SvelteKit nonce (svelte.config.js for SSR routes,
- * static/_headers for prerendered ones), and a hand-written inline block in
+ * _headers for prerendered ones), and a hand-written inline block in
  * app.html is blocked outright.
  *
  *   ?splash=force  replay it (demos, screenshots)

@@ -15,6 +15,7 @@ Changes include:
 - Keyboard focus containment and restoration, named checklist controls, optional unchecked marketing consent, accurate delivery feedback, and current reader navigation checks.
 - Current PDF/EPUB, removal of outdated downloads and unsafe legal-advice PDF, one sitemap owner, removal of broken video recommendations, and fail-closed consent/email responses.
 - Installable Svelte checks, focused regression/SQL/browser CI, compatible dependency updates, a scoped cookie patch, updated math renderer, and removal of five unused dependencies.
+- A Worker-compatible HTML sanitizer replaces DOM-dependent rendering that crashed chapter pages on Cloudflare. The hosting adapter and Wrangler are pinned; local Worker checks cover all canonical chapters, assets and redirects. The final purchase prompt stays visible even if a browser animation stalls.
 
 ## Local evidence
 
@@ -22,17 +23,19 @@ Changes include:
 | --- | --- |
 | Dependency install | Clean locked install completed; lockfile updated for the new checker and security fixes |
 | `npm run check` | 0 errors; 314 legacy unused-style/compatibility warnings, no Svelte accessibility warnings |
-| `npm run test:release` | 51 tests passed, including 30 payment source tests; all service calls mocked |
+| `npm run test:release` | 59 tests passed, including 30 payment source tests and eight sanitizer regressions; all service calls mocked |
 | Disposable PostgreSQL 17.11 | 8 integration groups passed; real migrations, permission denials, concurrent claims/reservations, fencing and replay |
-| Production build | Passed with offer, artifact and reference-resolution guards |
-| Launch browser flows | 45 passed across Chromium desktop/mobile, Firefox desktop, WebKit desktop/mobile |
+| Production build | Explicit Cloudflare Pages output passed with offer, artifact and reference-resolution guards |
+| `npm run test:cloudflare` | 79 local Worker HTTP checks passed, covering all 35 canonical chapter loads, public sample, assets and redirects; 96 routing rules, no dropped exclusions; no Node compatibility flag |
+| Sanitizer review | 102 adversarial Chromium checks passed, including malformed markup, unsafe URLs, CSS, SVG and MathML payloads |
+| Launch browser flows | 55 passed across Chromium desktop/mobile, Firefox desktop, WebKit desktop/mobile: 45 standard launch cases plus 10 final-CTA animation/failure cases |
 | Existing regression suites | 87 source-policy tests and 18 checkout-gate browser cases passed; checkout mocks now run in WebKit CI without service secrets |
 | Sitemap | All 25 listed paths return 200 locally |
 | Visual checks | 10 page/viewport combinations: no uncaught page errors or horizontal overflow; primary mobile/desktop screenshots inspected |
 | Book proof | PDF 3.10 MiB / 416 pages; EPUB 20.74 MiB; all expected text blocks, artwork inputs and PDF links checked |
 | Private bundle | 10 files, 28,272,621 bytes; current books match public artifact hashes; local verification and five storage-operation regressions pass |
 
-The browser suite intercepts all writes and blocks third-party requests. It tests the built site, not a real payment or inbox. Local WebKit used workspace-installed system libraries because system package installation was unavailable; the browser itself ran normally. These checks do not establish Core Web Vitals, screen-reader certification, hosted database state or Cloudflare deployment behavior. Adapter-auto's local build cannot identify a hosting environment.
+The browser suite intercepts all writes and blocks third-party requests. It tests the built site, not a real payment or inbox. Local WebKit used workspace-installed system libraries because system package installation was unavailable; the browser itself ran normally. The Worker guard runs the actual Pages output locally with isolated configuration and no service credentials. It checks gated chapter HTML and complete canonical server-data payloads; browser tests separately exercise unlocked reading. These checks do not establish Core Web Vitals, screen-reader certification, hosted database state or a live Cloudflare deployment.
 
 ## Deployment sequence
 

@@ -1,15 +1,30 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-cloudflare';
+import { readdirSync, readFileSync } from 'node:fs';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
+
+// One rule per static directory keeps Pages below its 100-rule limit.
+// Expanding <files> emits hundreds of book-image rules and drops later rules.
+const staticRoutes = readdirSync(new URL('./static/', import.meta.url), { withFileTypes: true })
+	.filter((entry) => !entry.name.startsWith('.') && !['_headers', '_redirects', '_routes.json'].includes(entry.name))
+	.map((entry) => `/${entry.name}${entry.isDirectory() ? '/*' : ''}`);
+// Versioned download aliases already fall under /downloads/*. Only add
+// redirect sources that are not covered by a static directory/file rule.
+const redirectRoutes = readFileSync(new URL('./_redirects', import.meta.url), 'utf8')
+	.split('\n').map((line) => line.trim()).filter((line) => line && !line.startsWith('#'))
+	.map((line) => line.split(/\s+/)[0])
+	.filter((path) => !staticRoutes.some((rule) => rule.endsWith('*') ? path.startsWith(rule.slice(0, -1)) : path === rule));
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			routes: { exclude: ['<build>', '<prerendered>', ...staticRoutes, ...redirectRoutes] }
+		}),
 		// CSP for SSR routes (Worker). SvelteKit injects a nonce into its own
 		// inline scripts and adds it to this policy so 'unsafe-inline' is not
 		// needed. Prerendered pages served as static assets get their CSP from
-		// static/_headers instead (Cloudflare Pages CDN, no Worker).
+		// _headers instead (Cloudflare Pages CDN, no Worker).
 		csp: {
 			mode: 'auto',
 			directives: {

@@ -35,7 +35,7 @@ export async function handle({ event, resolve }) {
   // Security headers for SSR routes (Worker). CSP is handled by kit.csp in
   // svelte.config.js, which injects per-request nonces into SvelteKit's own
   // inline scripts and sets the CSP header automatically. Prerendered pages
-  // get CSP from static/_headers (served by Cloudflare Pages CDN, no Worker).
+  // get CSP from _headers (served by Cloudflare Pages CDN, no Worker).
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('X-Frame-Options', 'SAMEORIGIN');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');

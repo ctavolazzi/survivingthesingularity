@@ -15,7 +15,9 @@ import { expandRefs, assetName, releasedVersion } from '../src/lib/bookManifest.
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const book = JSON.parse(await readFile(join(root, 'src/lib/data/book/book.json'), 'utf8'));
-const config = JSON.parse(await readFile(join(root, 'wrangler.jsonc'), 'utf8'));
+// Local emulation only. A root Wrangler file with pages_build_output_dir opts
+// production into file-managed settings and replaces dashboard variables.
+const config = JSON.parse(await readFile(join(root, 'tests/fixtures/cloudflare-runtime.json'), 'utf8'));
 const output = join(root, config.pages_build_output_dir);
 const routes = JSON.parse(await readFile(join(output, '_routes.json'), 'utf8'));
 const matches = (rule, path) => rule.endsWith('*') ? path.startsWith(rule.slice(0, -1)) : path === rule;

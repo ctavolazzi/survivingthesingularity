@@ -1,0 +1,24 @@
+The Crucible. Three filing cabinets and a salvaged radiator.
+For five weeks it was purely good. Reuben fed it easements and it
+found a cross-reference heʼd missed; he checked it against the docu-
+ment  and  brought  a  sharper  question  to  counsel.  Priyaʼs  intern
+learned blight triage from it in an afternoon, then caught it inventing
+a source and wrote that failure on the board beside the successes. It
+never got tired and it never billed and it never, not once, phoned
+home, because there was no home to phone. The electricity meter
+kept turning. Elijah kept a log of what the machine had saved them
+and what checking it had cost.
+He started calling the rack the Crucible. Priya said that was fine as
+long as the things that didnʼt survive testing stayed in the log.
+The breach began with an ordinary convenience. Their system had
+no reliable stop between that convenience and everyone elseʼs private
+life.
+Elijah wanted his dashboards from town. Uptime, coolant tempera-
+ture, the channel numbers, all of it on his phone while he sat at the
+library  uploading  Dennyʼs  videos  on  borrowed  bandwidth.  Fifteen
+minutes of work on a Friday night: a tunnel out, a reverse proxy in
+front of the co-opʼs services. While chasing a bug he commented out
+the authentication line, two slashes, to rule it out as the problem. He
+meant to put it back. He deployed with the comment marks still in.
+CHAPTER 11
+195

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 646" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">Nine rungs, one public floor</title>
+<desc id="desc">Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.</desc>
+<rect width="480" height="646" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">Nine rungs, one public floor</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="74" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Start below. Build upward.</text>
+<path d="M33 99L33 509" fill="none" stroke="#315f78" stroke-width="2"/>
+<path d="M75 99L75 509" fill="none" stroke="#315f78" stroke-width="2"/>
+<path d="M33 113L75 113" fill="none" stroke="#9a4f13" stroke-width="3" stroke-dasharray="5 5"/>
+<text x="54" y="103" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">9</text>
+<text x="96" y="111" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Keep the market above the floor</text>
+<text x="96" y="131" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Money stays; survival is the floor.</text>
+<path d="M33 159L75 159" fill="none" stroke="#9a4f13" stroke-width="3" stroke-dasharray="5 5"/>
+<text x="54" y="149" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">8</text>
+<text x="96" y="157" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Make the service accountable</text>
+<text x="96" y="177" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Publish access, cost and unmet need.</text>
+<path d="M33 205L75 205" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="54" y="195" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">7</text>
+<text x="96" y="203" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Widen the floor</text>
+<text x="96" y="223" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">NHS (1948); proposed basic services.</text>
+<path d="M33 251L75 251" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="54" y="241" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">6</text>
+<text x="96" y="249" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Protect access to essentials</text>
+<text x="96" y="269" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">NYC eviction counsel (2017).</text>
+<path d="M33 297L75 297" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="54" y="287" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">5</text>
+<text x="96" y="295" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Own the machines together</text>
+<text x="96" y="315" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Rural electric co-ops (from 1936).</text>
+<path d="M33 343L75 343" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="54" y="333" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">4</text>
+<text x="96" y="341" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Take land out of speculation</text>
+<text x="96" y="361" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Land trusts; long-term ground leases.</text>
+<path d="M33 389L75 389" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="54" y="379" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">3</text>
+<text x="96" y="387" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Make meals a public service</text>
+<text x="96" y="407" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">California school meals (2022–23).</text>
+<path d="M33 435L75 435" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="54" y="425" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">2</text>
+<text x="96" y="433" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Feed people who ask</text>
+<text x="96" y="453" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">France (2016): surplus recovery rules.</text>
+<path d="M33 481L75 481" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="54" y="471" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">1</text>
+<text x="96" y="479" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">Count waste and food insecurity</text>
+<text x="96" y="499" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">California SB 1383 recovery records.</text>
+<path d="M25 547L67 547" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="83" y="551" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Draws on a precedent</text>
+<path d="M25 571L67 571" fill="none" stroke="#9a4f13" stroke-width="3" stroke-dasharray="5 5"/>
+<text x="83" y="575" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Proposed guardrail</text>
+<path d="M20 594L460 594" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="614" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Precedents support parts of this proposal.</text>
+<text x="20" y="635" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">None establishes the complete guarantee.</text>
+</svg>

@@ -1,0 +1,4139 @@
+{
+  "schema": "sts-figure-layout/v1",
+  "html_sha256": "83a9290131eb0d9dd8c49838975834bcd007c0604bec15e8ab1c0e165aa9119e",
+  "registry_sha256": "f459d8a0ff6ee5dce5632b303951f878963d91056cc0b0ba38cbf79603234f8c",
+  "pages": [
+    {
+      "page": 1,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-atlas.png",
+          "fragments": [
+            [
+              378.24,
+              69.12,
+              136.32,
+              276.15999999999997
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-atlas.png",
+              "rect": [
+                378.24,
+                69.12,
+                136.32,
+                204.48
+              ],
+              "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Atlas, outside the",
+              "rect": [
+                378.24,
+                282.79855468750003,
+                93.875,
+                12.962890625
+              ]
+            },
+            {
+              "text": "demonstration room. AI-",
+              "rect": [
+                378.24,
+                298.79855468750003,
+                133.201171875,
+                12.962890625
+              ]
+            },
+            {
+              "text": "adapted cutout from",
+              "rect": [
+                378.24,
+                314.79855468750003,
+                109.8916015625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "DARPA",
+              "rect": [
+                378.24,
+                330.79855468750003,
+                36.38671875,
+                12.962890625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                414.62671875,
+                330.79855468750003,
+                7.6298828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "public domain",
+              "rect": [
+                422.2566015625,
+                330.79855468750003,
+                74.77734375,
+                12.962890625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                497.0339453125,
+                330.79855468750003,
+                3.8798828125,
+                12.962890625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            76.80000000000001,
+            67.14403645833333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            76.80000000000001,
+            86.930703125,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            76.80000000000001,
+            106.71736979166666,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            126.50403645833333,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            76.80000000000001,
+            154.77070312499998,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            76.80000000000001,
+            174.55736979166664,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            76.80000000000001,
+            194.3440364583333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            214.13070312499997,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            76.80000000000001,
+            242.39736979166662,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            76.80000000000001,
+            262.18403645833325,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            76.80000000000001,
+            281.97070312499994,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            301.75736979166663,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            76.80000000000001,
+            330.02403645833334,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            76.80000000000001,
+            349.81070312500003,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            369.5973697916667,
+            436.9423828125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "1",
+          "rect": [
+            506.93109375,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-forecast-shift.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              576.930669270833
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-forecast-shift.svg",
+              "rect": [
+                61.44,
+                82.56000000000006,
+                437.75999999999993,
+                505.24799999999993
+              ],
+              "alt": "Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Forecasts moved closer. The same probability threshold yielded earlier",
+              "rect": [
+                61.44,
+                601.1871145833331,
+                387.177734375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "aggregate dates in the 2023 survey. The two milestones are distinct, and",
+              "rect": [
+                61.44,
+                615.9471145833331,
+                403.5234375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "neither date is a deadline. ",
+              "rect": [
+                61.44,
+                630.7071145833331,
+                147.6240234375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "Grace et al., Thousands of AI Authors on the Future",
+              "rect": [
+                209.0640234375,
+                630.7071145833331,
+                284.875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "of AI",
+              "rect": [
+                61.44,
+                645.4671145833331,
+                26.3984375,
+                13.287109375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                87.8384375,
+                645.4671145833331,
+                3.9765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            684.3947057291663,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            704.1813723958329,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            723.9680390624995,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "2",
+          "rect": [
+            61.44,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-local-copies.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              398.01066927083326
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-local-copies.svg",
+              "rect": [
+                61.44,
+                82.56,
+                437.75999999999993,
+                341.08799999999997
+              ],
+              "alt": "A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A copy you can open can outlast a broken link. It does not replace electrical",
+              "rect": [
+                61.44,
+                437.0271145833333,
+                418.4599609375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "power or a tested plan for equipment that depends on it. Conceptual",
+              "rect": [
+                61.44,
+                451.7871145833333,
+                378.75,
+                13.287109375
+              ]
+            },
+            {
+              "text": "illustration.",
+              "rect": [
+                61.44,
+                466.54711458333327,
+                61.7998046875,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            505.47470572916666,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            525.2613723958333,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            545.0480390624999,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            573.3147057291666,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            593.1013723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            612.8880390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            641.1547057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            660.9413723958331,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            680.7280390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            708.9947057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            728.781372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            748.5680390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "4",
+          "rect": [
+            61.44,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-rocket.png",
+          "fragments": [
+            [
+              76.80000000000001,
+              69.12,
+              136.32,
+              308.15999999999997
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-rocket.png",
+              "rect": [
+                76.80000000000001,
+                69.12,
+                136.32,
+                204.48
+              ],
+              "alt": "Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "An image for the",
+              "rect": [
+                76.80000000000001,
+                282.79855468750003,
+                90.0791015625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "imagined departure. AI-",
+              "rect": [
+                76.80000000000001,
+                298.79855468750003,
+                129.3369140625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "adapted collage from",
+              "rect": [
+                76.80000000000001,
+                314.79855468750003,
+                113.244140625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "SpaceX",
+              "rect": [
+                76.80000000000001,
+                330.79855468750003,
+                39.5595703125,
+                12.962890625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                116.35957031250001,
+                330.79855468750003,
+                7.6298828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "CC0",
+              "rect": [
+                123.98945312500001,
+                330.79855468750003,
+                21.67578125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "; the",
+              "rect": [
+                145.665234375,
+                330.79855468750003,
+                25.900390625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "scenario remains",
+              "rect": [
+                76.80000000000001,
+                346.79855468750003,
+                91.244140625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "speculative.",
+              "rect": [
+                76.80000000000001,
+                362.79855468750003,
+                63.77734375,
+                12.962890625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            230.4,
+            67.14403645833333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            230.4,
+            86.930703125,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            230.4,
+            106.71736979166666,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            230.4,
+            126.50403645833333,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            230.4,
+            154.77070312499998,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            230.4,
+            174.55736979166664,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            230.4,
+            194.3440364583333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            230.4,
+            214.13070312499997,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            230.4,
+            242.39736979166662,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            230.4,
+            262.18403645833325,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            230.4,
+            281.97070312499994,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            230.4,
+            301.75736979166663,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            230.4,
+            330.02403645833334,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            230.4,
+            349.81070312500003,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            230.4,
+            369.5973697916667,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            230.4,
+            389.3840364583334,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "1",
+          "rect": [
+            506.93109375,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-sun.png",
+          "fragments": [
+            [
+              61.44,
+              69.12,
+              136.32,
+              233.94369446609505
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-sun.png",
+              "rect": [
+                61.44,
+                69.12,
+                136.32,
+                130.26369446609507
+              ],
+              "alt": "Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Energy has to come from",
+              "rect": [
+                61.44,
+                208.5822491535951,
+                135.654296875,
+                12.962890625
+              ]
+            },
+            {
+              "text": "somewhere. AI-adapted",
+              "rect": [
+                61.44,
+                224.5822491535951,
+                128.7939453125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "NASA/SDO imagery",
+              "rect": [
+                61.44,
+                240.5822491535951,
+                105.763671875,
+                12.962890625
+              ]
+            },
+            {
+              "text": ",",
+              "rect": [
+                167.203671875,
+                240.5822491535951,
+                3.8798828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "public domain",
+              "rect": [
+                61.44,
+                256.58224915359506,
+                74.77734375,
+                12.962890625
+              ]
+            },
+            {
+              "text": "; not an",
+              "rect": [
+                136.21734375,
+                256.58224915359506,
+                42.9267578125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "unaltered scientific",
+              "rect": [
+                61.44,
+                272.58224915359506,
+                101.197265625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "image.",
+              "rect": [
+                61.44,
+                288.58224915359506,
+                36.5859375,
+                12.962890625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            215.04,
+            67.14403645833333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            215.04,
+            86.930703125,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            215.04,
+            106.71736979166666,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            215.04,
+            126.50403645833333,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            215.04,
+            154.77070312499998,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            215.04,
+            174.55736979166664,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            215.04,
+            194.3440364583333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            215.04,
+            214.13070312499997,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            215.04,
+            242.39736979166662,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            215.04,
+            262.18403645833325,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            215.04,
+            281.97070312499994,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            215.04,
+            301.75736979166663,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            330.02403645833334,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            349.81070312500003,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            369.5973697916667,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "2",
+          "rect": [
+            61.44,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-data-centre-demand.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              569.4666692708331
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-data-centre-demand.svg",
+              "rect": [
+                76.80000000000001,
+                82.56000000000006,
+                437.76,
+                512.544
+              ],
+              "alt": "Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The machine\u2019s appetite. The solid column is IEA\u2019s estimate for 2025; the",
+              "rect": [
+                76.80000000000001,
+                608.4831145833332,
+                399.3583984375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "hatched column is its 2030 projection. This is all data-centre electricity, not AI",
+              "rect": [
+                76.80000000000001,
+                623.2431145833332,
+                431.5390625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "alone. ",
+              "rect": [
+                76.80000000000001,
+                638.0031145833332,
+                37.453125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "IEA, Key Questions on Energy and AI, 2026",
+              "rect": [
+                114.25312500000001,
+                638.0031145833332,
+                240.337890625,
+                13.287109375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                354.591015625,
+                638.0031145833332,
+                3.9765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            676.9307057291663,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            696.717372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            716.5040390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "3",
+          "rect": [
+            506.93109375,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-income-food-access.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              531.3306692708331
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-income-food-access.svg",
+              "rect": [
+                76.80000000000001,
+                82.56000000000006,
+                437.76,
+                459.648
+              ],
+              "alt": "Two lollipop bars show food insecurity in selected US income groups during 2024: 39.4% of households below the poverty threshold and 7.9% at or above 185% of that threshold. Dashed reference ticks mark the 13.7% national household rate. Middle and unknown income categories are not plotted."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Income and food access. In the 2024 survey, food insecurity was associated",
+              "rect": [
+                76.80000000000001,
+                555.5871145833332,
+                419.650390625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "with income. These two selected groups do not represent every income",
+              "rect": [
+                76.80000000000001,
+                570.3471145833332,
+                393.6826171875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "category, and the comparison does not establish causation. ",
+              "rect": [
+                76.80000000000001,
+                585.1071145833332,
+                330.9794921875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "USDA ERS,",
+              "rect": [
+                407.7794921875,
+                585.1071145833332,
+                61.0751953125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "ERR-358, Table 2",
+              "rect": [
+                76.80000000000001,
+                599.8671145833332,
+                94.357421875,
+                13.287109375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                171.157421875,
+                599.8671145833332,
+                3.9765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            638.7947057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            658.581372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            678.3680390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            706.6347057291663,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            726.4213723958329,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            746.2080390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "5",
+          "rect": [
+            506.93109375,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-access-gate.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              350.41866927083333
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-access-gate.svg",
+              "rect": [
+                76.80000000000001,
+                82.56,
+                437.76,
+                308.25600000000003
+              ],
+              "alt": "A productive machine stands before an open gate and a plate. The gate names terms, price, eligibility, and delivery as choices that affect who receives the result."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A working machine still needs an arrangement that lets people reach its",
+              "rect": [
+                76.80000000000001,
+                404.19511458333335,
+                396.5380859375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "output. Conceptual illustration.",
+              "rect": [
+                76.80000000000001,
+                418.95511458333334,
+                170.3623046875,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            457.8827057291667,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            477.66937239583336,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            497.45603906250005,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            525.7227057291667,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            545.5093723958333,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            565.2960390625,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            593.5627057291666,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            613.3493723958333,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            633.1360390624999,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            661.4027057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            681.1893723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            700.9760390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "7",
+          "rect": [
+            506.93109375,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-attention-ribbon.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              363.1866692708333
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-attention-ribbon.svg",
+              "rect": [
+                61.44,
+                82.56,
+                437.75999999999993,
+                321.024
+              ],
+              "alt": "A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A day can feel cut into pieces. The ribbons illustrate interruptions, without",
+              "rect": [
+                61.44,
+                416.9631145833333,
+                408.4130859375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "measuring a cognitive budget or a fixed recovery time.",
+              "rect": [
+                61.44,
+                431.7231145833333,
+                302.7294921875,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            470.65070572916665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            490.43737239583334,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            510.2240390625001,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            538.4907057291667,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            558.2773723958334,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            578.0640390625,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            606.3307057291667,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            626.1173723958333,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            645.9040390624999,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            674.1707057291666,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            693.9573723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            713.7440390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "8",
+          "rect": [
+            61.44,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-printer.png",
+          "fragments": [
+            [
+              378.24,
+              69.12,
+              136.32,
+              224.57945945945949
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-printer.png",
+              "rect": [
+                378.24,
+                69.12,
+                136.32,
+                152.89945945945945
+              ],
+              "alt": "Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A machine takes shape",
+              "rect": [
+                378.24,
+                231.21801414695946,
+                124.09765625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "around its work. AI-",
+              "rect": [
+                378.24,
+                247.2180141469595,
+                107.927734375,
+                12.962890625
+              ]
+            },
+            {
+              "text": "adapted cutout from",
+              "rect": [
+                378.24,
+                263.2180141469595,
+                109.8916015625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "John Abella",
+              "rect": [
+                378.24,
+                279.2180141469595,
+                61.1220703125,
+                12.962890625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                439.3620703125,
+                279.2180141469595,
+                7.6298828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "CC BY 2.0",
+              "rect": [
+                446.991953125,
+                279.2180141469595,
+                53.7119140625,
+                12.962890625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                500.7038671875,
+                279.2180141469595,
+                3.8798828125,
+                12.962890625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            76.80000000000001,
+            67.14403645833333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            76.80000000000001,
+            86.930703125,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            76.80000000000001,
+            106.71736979166666,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            126.50403645833333,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            76.80000000000001,
+            154.77070312499998,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            76.80000000000001,
+            174.55736979166664,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            76.80000000000001,
+            194.3440364583333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            214.13070312499997,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            76.80000000000001,
+            242.39736979166662,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            76.80000000000001,
+            262.18403645833325,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            76.80000000000001,
+            281.97070312499994,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            301.75736979166663,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            330.02403645833334,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            349.81070312500003,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            369.5973697916667,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "9",
+          "rect": [
+            506.93109375,
+            823.1080078125,
+            7.62890625,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-ammonia-energy.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              596.826669270833
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-ammonia-energy.svg",
+              "rect": [
+                61.44,
+                82.56000000000006,
+                437.75999999999993,
+                539.9039999999999
+              ],
+              "alt": "Three columns show net energy intensity of ammonia production in IEA\u2019s 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The energy in ammonia. IEA\u2019s global-average estimate and best-available-",
+              "rect": [
+                61.44,
+                635.8431145833331,
+                410.642578125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "process benchmarks are different kinds of evidence. A benchmark is not proof",
+              "rect": [
+                61.44,
+                650.6031145833331,
+                430.6474609375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "every existing plant can achieve it. ",
+              "rect": [
+                61.44,
+                665.3631145833331,
+                195.9619140625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "IEA, Ammonia Technology Roadmap, 2021",
+              "rect": [
+                257.4019140625,
+                665.3631145833331,
+                234.337890625,
+                13.287109375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                491.7398046875,
+                665.3631145833331,
+                3.9765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            704.2907057291662,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            724.0773723958329,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            743.8640390624995,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "10",
+          "rect": [
+            61.44,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-scene-food-delivery.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              421.72266927083325
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-scene-food-delivery.svg",
+              "rect": [
+                61.44,
+                82.56,
+                437.75999999999993,
+                364.79999999999995
+              ],
+              "alt": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "One harvest, five doors. Eight kilograms from the garden and two from the",
+              "rect": [
+                61.44,
+                460.7391145833333,
+                414.076171875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "food partner keep the five-household promise. The buildings and route are",
+              "rect": [
+                61.44,
+                475.49911458333327,
+                411.6396484375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "illustrative; the vegetables supplement meals.",
+              "rect": [
+                61.44,
+                490.25911458333326,
+                254.84765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            529.1867057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            548.9733723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            568.7600390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            597.0267057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            616.8133723958331,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            636.6000390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            664.8667057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            684.653372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            704.4400390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            732.7067057291663,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            752.4933723958329,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            772.2800390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "12",
+          "rect": [
+            61.44,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-spot.png",
+          "fragments": [
+            [
+              76.80000000000001,
+              69.12,
+              136.32,
+              162.56
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-spot.png",
+              "rect": [
+                76.80000000000001,
+                69.12,
+                136.32,
+                90.88
+              ],
+              "alt": "Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Capability still needs an",
+              "rect": [
+                76.80000000000001,
+                169.1985546875,
+                127.400390625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "arrangement for access.",
+              "rect": [
+                76.80000000000001,
+                185.1985546875,
+                130.2998046875,
+                12.962890625
+              ]
+            },
+            {
+              "text": "AI-adapted cutout from",
+              "rect": [
+                76.80000000000001,
+                201.1985546875,
+                126.2548828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "Jonte",
+              "rect": [
+                76.80000000000001,
+                217.1985546875,
+                28.62890625,
+                12.962890625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                105.42890625000001,
+                217.1985546875,
+                7.6298828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "CC BY-SA 4.0",
+              "rect": [
+                113.05878906250001,
+                217.1985546875,
+                72.19921875,
+                12.962890625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                185.2580078125,
+                217.1985546875,
+                3.8798828125,
+                12.962890625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            230.4,
+            67.14403645833333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            230.4,
+            86.930703125,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            230.4,
+            106.71736979166666,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            230.4,
+            126.50403645833333,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            230.4,
+            154.77070312499998,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            230.4,
+            174.55736979166664,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            230.4,
+            194.3440364583333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            230.4,
+            214.13070312499997,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            230.4,
+            242.39736979166662,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help. This surrounding prose",
+          "rect": [
+            76.80000000000001,
+            262.18403645833325,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "checks the actual image and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            281.97070312499994,
+            287.3603515625,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            310.23736979166665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            330.02403645833334,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            349.81070312500003,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "13",
+          "rect": [
+            499.3021875,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-operating-stack.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              418.9866692708332
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-operating-stack.svg",
+              "rect": [
+                61.44,
+                82.56,
+                437.75999999999993,
+                362.0639999999999
+              ],
+              "alt": "A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The model file is one layer of a working service. Running a useful service also",
+              "rect": [
+                61.44,
+                458.00311458333323,
+                427.63671875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "takes software, hardware, power, and people who maintain it. Conceptual",
+              "rect": [
+                61.44,
+                472.7631145833332,
+                405.8876953125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "illustration.",
+              "rect": [
+                61.44,
+                487.5231145833332,
+                61.7998046875,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            526.4507057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            546.2373723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            566.0240390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            594.2907057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            614.0773723958331,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            633.8640390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            662.1307057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            681.917372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            701.7040390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            729.9707057291663,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            749.7573723958329,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            769.5440390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "14",
+          "rect": [
+            61.44,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-weights-memory.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              576.7626692708332
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-weights-memory.svg",
+              "rect": [
+                76.80000000000001,
+                82.56000000000006,
+                437.76,
+                519.84
+              ],
+              "alt": "A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Memory before the overhead. These are derived weights-only sizes, not",
+              "rect": [
+                76.80000000000001,
+                615.7791145833332,
+                395.75390625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "measured VRAM requirements. They omit the chapter\u2019s illustrative allowance",
+              "rect": [
+                76.80000000000001,
+                630.5391145833332,
+                423.703125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "as well as runtime costs. ",
+              "rect": [
+                76.80000000000001,
+                645.2991145833332,
+                140.1689453125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "llama.cpp, memory and context options",
+              "rect": [
+                216.9689453125,
+                645.2991145833332,
+                218.9541015625,
+                13.287109375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                435.923046875,
+                645.2991145833332,
+                3.9765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            684.2267057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            704.013372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            723.8000390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "15",
+          "rect": [
+            499.3021875,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-land-values.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              571.2906692708332
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-land-values.svg",
+              "rect": [
+                76.80000000000001,
+                82.55999999999995,
+                437.76,
+                514.3679999999999
+              ],
+              "alt": "A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "What an acre costs. USDA survey estimates include farm buildings as well as",
+              "rect": [
+                76.80000000000001,
+                610.3071145833333,
+                424.4228515625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "land. These are nominal national averages, not inflation-adjusted values or",
+              "rect": [
+                76.80000000000001,
+                625.0671145833333,
+                413.5244140625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "local offers. ",
+              "rect": [
+                76.80000000000001,
+                639.8271145833332,
+                67.7607421875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "USDA NASS, Land Values 2026, page 5",
+              "rect": [
+                144.5607421875,
+                639.8271145833332,
+                216.177734375,
+                13.287109375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                360.7384765625,
+                639.8271145833332,
+                3.9765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            678.7547057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            698.541372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            718.3280390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "17",
+          "rect": [
+            499.3021875,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-shared-land.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              420.81066927083333
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-shared-land.svg",
+              "rect": [
+                76.80000000000001,
+                82.56,
+                437.76,
+                363.88800000000003
+              ],
+              "alt": "A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Useful ground comes with people and obligations. Shared use needs consent,",
+              "rect": [
+                76.80000000000001,
+                459.82711458333335,
+                426.6455078125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "clear terms, and a way to challenge decisions. Conceptual illustration, not a",
+              "rect": [
+                76.80000000000001,
+                474.58711458333335,
+                417.2197265625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "legal template.",
+              "rect": [
+                76.80000000000001,
+                489.34711458333334,
+                82.36328125,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            528.2747057291666,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            548.0613723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            567.8480390624999,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            596.1147057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            615.9013723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            635.6880390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            663.9547057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            683.7413723958331,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            703.5280390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            731.7947057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            751.581372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            771.3680390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "19",
+          "rect": [
+            499.3021875,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-waste-pathways.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              671.6106692708331
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-waste-pathways.svg",
+              "rect": [
+                61.44,
+                82.55999999999995,
+                437.75999999999993,
+                614.6879999999999
+              ],
+              "alt": "Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the",
+              "rect": [
+                61.44,
+                710.6271145833332,
+                419.0615234375,
+                13.287109375
+              ]
+            },
+            {
+              "text": "whole total could not have been donated. Donation is net of food banks\u2019",
+              "rect": [
+                61.44,
+                725.3871145833332,
+                397.103515625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "unusable portion. ",
+              "rect": [
+                61.44,
+                740.1471145833332,
+                99.9794921875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "EPA, Table 5",
+              "rect": [
+                161.4194921875,
+                740.1471145833332,
+                67.6728515625,
+                13.287109375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                229.09234375,
+                740.1471145833332,
+                3.9765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "20",
+          "rect": [
+            61.44,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-scene-living-soil.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              436.48266927083324
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-scene-living-soil.svg",
+              "rect": [
+                61.44,
+                82.56,
+                437.75999999999993,
+                364.79999999999995
+              ],
+              "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The bed is part of a larger system. Plants, soil life, and returning organic",
+              "rect": [
+                61.44,
+                460.7391145833333,
+                400.9111328125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "matter exchange nutrients; sunlight, water, replenishment, and the nutrients",
+              "rect": [
+                61.44,
+                475.49911458333327,
+                424.7822265625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "carried away in harvest still cross its boundary. Conceptual cutaway, not a",
+              "rect": [
+                61.44,
+                490.25911458333326,
+                408.2373046875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "measured soil profile.",
+              "rect": [
+                61.44,
+                505.01911458333325,
+                118.783203125,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            543.9467057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            563.7333723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            583.5200390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            611.7867057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            631.5733723958331,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            651.3600390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            679.6267057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            699.413372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            719.2000390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "22",
+          "rect": [
+            61.44,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-tools.png",
+          "fragments": [
+            [
+              362.88,
+              69.12,
+              136.32,
+              233.8415304347826
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-tools.png",
+              "rect": [
+                362.88,
+                69.12,
+                136.32,
+                162.1615304347826
+              ],
+              "alt": "Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Tools with a history of",
+              "rect": [
+                362.88,
+                240.48008512228262,
+                117.8701171875,
+                12.962890625
+              ]
+            },
+            {
+              "text": "use. AI-adapted collage",
+              "rect": [
+                362.88,
+                256.4800851222826,
+                126.998046875,
+                12.962890625
+              ]
+            },
+            {
+              "text": "from ",
+              "rect": [
+                362.88,
+                272.4800851222826,
+                28.8994140625,
+                12.962890625
+              ]
+            },
+            {
+              "text": "Shixart1985",
+              "rect": [
+                391.7794140625,
+                272.4800851222826,
+                65.56640625,
+                12.962890625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                457.3458203125,
+                272.4800851222826,
+                7.6298828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "CC BY",
+              "rect": [
+                464.975703125,
+                272.4800851222826,
+                32.51953125,
+                12.962890625
+              ]
+            },
+            {
+              "text": "2.0",
+              "rect": [
+                362.88,
+                288.4800851222826,
+                17.4423828125,
+                12.962890625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                380.3223828125,
+                288.4800851222826,
+                3.8798828125,
+                12.962890625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            61.44,
+            67.14403645833333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            61.44,
+            86.930703125,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            61.44,
+            106.71736979166666,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            61.44,
+            126.50403645833333,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            61.44,
+            154.77070312499998,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            61.44,
+            174.55736979166664,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            61.44,
+            194.3440364583333,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            61.44,
+            214.13070312499997,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it,",
+          "rect": [
+            61.44,
+            242.39736979166662,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "clear agreements, and a way to ask for help.",
+          "rect": [
+            61.44,
+            262.18403645833325,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "This surrounding prose checks the actual",
+          "rect": [
+            61.44,
+            281.97070312499994,
+            284.15999999999997,
+            16.05859375
+          ]
+        },
+        {
+          "text": "image and caption footprint.",
+          "rect": [
+            61.44,
+            301.75736979166663,
+            177.9111328125,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            330.02403645833334,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            349.81070312500003,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            369.5973697916667,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "24",
+          "rect": [
+            61.44,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-scene-shared-workshop.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              421.7226692708333
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-scene-shared-workshop.svg",
+              "rect": [
+                76.80000000000001,
+                82.56,
+                437.76,
+                364.8
+              ],
+              "alt": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Shared tools need a working arrangement around them: trained people,",
+              "rect": [
+                76.80000000000001,
+                460.73911458333333,
+                398.1767578125,
+                13.287109375
+              ]
+            },
+            {
+              "text": "suitable power and materials, maintenance, and parts. The useful result leaves",
+              "rect": [
+                76.80000000000001,
+                475.4991145833333,
+                435.625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "the bench. Illustrative workshop, not a fabrication or wiring plan.",
+              "rect": [
+                76.80000000000001,
+                490.2591145833333,
+                358.8759765625,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            529.1867057291666,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            548.9733723958333,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            568.7600390624999,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            597.0267057291666,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            616.8133723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            636.6000390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            664.8667057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            684.6533723958331,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            704.4400390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            76.80000000000001,
+            732.7067057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            76.80000000000001,
+            752.493372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            76.80000000000001,
+            772.2800390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "25",
+          "rect": [
+            499.3021875,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-continuity-calendar.svg",
+          "fragments": [
+            [
+              61.44,
+              82.56,
+              437.75999999999993,
+              407.13066927083327
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-continuity-calendar.svg",
+              "rect": [
+                61.44,
+                82.56,
+                437.75999999999993,
+                350.20799999999997
+              ],
+              "alt": "One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Ink for what is funded; pencil for the continuation still being proposed. The",
+              "rect": [
+                61.44,
+                446.1471145833333,
+                413.9013671875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "distinction matters to the households expecting a delivery. Illustration of the",
+              "rect": [
+                61.44,
+                460.9071145833333,
+                421.400390625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "fictional scene.",
+              "rect": [
+                61.44,
+                475.6671145833333,
+                82.1240234375,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            514.5947057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            534.3813723958332,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            554.1680390624998,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            582.4347057291665,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            602.2213723958331,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            622.0080390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            650.2747057291664,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            670.061372395833,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            689.8480390624997,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "A service needs people who can maintain it, clear agreements, and a",
+          "rect": [
+            61.44,
+            718.1147057291663,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "way to ask for help. This surrounding prose checks the actual image",
+          "rect": [
+            61.44,
+            737.9013723958329,
+            437.75999999999993,
+            16.05859375
+          ]
+        },
+        {
+          "text": "and caption footprint.",
+          "rect": [
+            61.44,
+            757.6880390624996,
+            136.7607421875,
+            16.05859375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            26.96861328125,
+            165.603671875,
+            11.3427734375
+          ]
+        },
+        {
+          "text": "26",
+          "rect": [
+            61.44,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-meal-response.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              82.56,
+              437.76,
+              673.4346692708332
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-meal-response.svg",
+              "rect": [
+                76.80000000000001,
+                82.56000000000006,
+                437.76,
+                616.5120000000001
+              ],
+              "alt": "An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "When a meal fails. An illustrative worksheet from this chapter\u2019s premortem",
+              "rect": [
+                76.80000000000001,
+                712.4511145833333,
+                414.1494140625,
+                13.287109375
+              ]
+            },
+            {
+              "text": "record, not the measured performance of a service. Confirm the alternative",
+              "rect": [
+                76.80000000000001,
+                727.2111145833333,
+                416.1591796875,
+                13.287109375
+              ]
+            },
+            {
+              "text": "and the people who will deliver it before expanding the promise.",
+              "rect": [
+                76.80000000000001,
+                741.9711145833332,
+                354.861328125,
+                13.287109375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "27",
+          "rect": [
+            499.3021875,
+            823.1080078125,
+            15.2578125,
+            14.583984375
+          ]
+        }
+      ]
+    }
+  ]
+}

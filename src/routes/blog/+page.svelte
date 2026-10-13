@@ -1,14 +1,13 @@
 <script>
-  import { onMount } from 'svelte';
-  import { fade } from 'svelte/transition';
   export let data;
   const { posts } = data;
 
-  let visible = false;
-  onMount(() => { visible = true; });
-
+  // Post dates are plain days ('2026-07-17'), which JavaScript reads as midnight
+  // UTC. Formatting that in the visitor's own zone printed the day before for
+  // everyone west of Greenwich, and would disagree with the prerendered HTML.
+  // Same fix as /signals: format in the zone the date is written in.
   function formatDate(dateStr) {
-    return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
   }
 
   function estimateReadTime(excerpt) {
@@ -54,8 +53,7 @@
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/blog.png" />
 </svelte:head>
 
-{#if visible}
-  <div class="blog-page" in:fade={{ duration: 400 }}>
+  <div class="blog-page">
     <header class="blog-header">
       <p class="blog-label">The Blog</p>
       <h1 class="blog-title">Information You Can Use Today</h1>
@@ -111,13 +109,23 @@
       </div>
     {/if}
   </div>
-{/if}
 
 <style>
+  /* The page fades in over 400ms, as it always has. It used to do that with
+     `{#if visible}` set in onMount plus in:fade, which kept every word of this
+     page out of the served HTML until JavaScript ran: a crawler or a link
+     preview got a nav and a footer, and the footer jumped down the screen when
+     the posts arrived. A CSS animation is the same fade with the content in the
+     HTML from the first byte. app.css already shortens it for reduced motion. */
   .blog-page {
     max-width: 1000px;
     margin: 0 auto;
     padding: 3rem 1.5rem 5rem;
+    animation: page-fade 400ms linear;
+  }
+
+  @keyframes page-fade {
+    from { opacity: 0; }
   }
 
   .blog-header {

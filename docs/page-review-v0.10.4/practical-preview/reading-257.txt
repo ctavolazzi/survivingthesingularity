@@ -1,0 +1,46 @@
+SURVIVING THE SINGULARITY
+
+
+ • Independent. It works locally without the internet, cell service, or
+   satellites.
+ • Low power. A node can run for a long time on a small solar panel
+   and battery, drawing less than a nightlight.
+
+Letʼs be honest about the limits. A low-power mesh wonʼt stream
+video or move big files. Itʼs a nervous system for short messages:
+“Who has surplus potatoes today?” “The Hollis road is flooded.”
+“Deliveryʼs running an hour late.” “Checking in, all fine here.” Use
+communication that fits the message, keep ordinary phones and a
+printed contact list in the plan, and never make joining the food
+service depend on buying a radio.
+
+Build the loop
+
+1. Map the surplus near you. Which farms, grocers, bakeries, and
+   restaurants have edible food they canʼt sell? Ask them what would
+   make donating it easy, and connect them with a kitchen or pantry
+   that can take it.
+2. Put up the first nodes. With a few neighbors, set up a handful of
+   mesh radios, test the range, find the dead spots, and keep a
+   printed directory for the people whoʼll never own one.
+3. Pool the ground and the tools. One household with a lawn has an
+   ornamental patch of grass. Five households pooling the same land
+   can have a real market garden and a shared tool shed.
+4. Name one dependency and one backup. Pick a real link in your
+   local food route, a van, a grower, a pickup site, and confirm, with
+   an actual person, what happens if it fails. A second name in a
+   spreadsheet doesnʼt reserve anybodyʼs capacity.
+
+The transition didnʼt just stress our supply chains. It tested our belief
+that we can get by without each other. Stop watching the horizon for
+the next cargo ship and start looking at your neighbor.
+
+
+
+
+
+
+
+
+
+252

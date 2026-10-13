@@ -1,0 +1,24 @@
+The greenhouse bus is a component map. Use moisture readings checked against the bed,
+configure run-time and water limits, verify that water stops on faults and power loss, and retain
+a manual shutoff.
+THEGREENHOUSECONTROLBUS
+Componentmap,notawiringdiagram.
+SHT31-D
+Air temperature
++ humidity
+STEMMA 4026
+Capacitive
+moisture reading
+I2C
+Raspberry Pi + Mycodo
+Read, decide, actuate
+GROWER:CONFIGUREANDTEST
+Setpoints+run-timeandwaterlimits
+Bad/missingmoisturedata:waterOFF
+Keepamanualshutoffaccessible
+Matched drivers / relays
+Low-voltage valve, fan and light circuits
+Checkreadingsagainstconditionsinthebed.
+Verifywaterstopsonfaultsandlostpower.
+SURVIVING THE SINGULARITY
+172

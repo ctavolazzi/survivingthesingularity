@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 650" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">THE GREENHOUSE CONTROL BUS</title>
+<desc id="desc">A component map connects an SHT31-D air temperature and humidity sensor and a STEMMA capacitive moisture sensor to a Raspberry Pi running Mycodo over I2C. Growers configure and test setpoints, run-time and water limits, and irrigation fail-off behavior. Matched low-voltage drivers operate valves, fans and lights, with manual shutoffs. It is not a wiring diagram or an unattended safety guarantee.</desc>
+<rect width="480" height="650" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">THE GREENHOUSE CONTROL BUS</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="76" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Component map, not a wiring diagram.</text>
+<rect x="20" y="96" width="208" height="92" rx="3" fill="#ffffff" stroke="#a2afa6" stroke-width="1.5"/>
+<text x="124" y="122" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">SHT31-D</text>
+<text x="124" y="147" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Air temperature</text>
+<text x="124" y="169" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">+ humidity</text>
+<rect x="252" y="96" width="208" height="92" rx="3" fill="#ffffff" stroke="#a2afa6" stroke-width="1.5"/>
+<text x="356" y="122" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">STEMMA 4026</text>
+<text x="356" y="147" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Capacitive</text>
+<text x="356" y="169" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">moisture reading</text>
+<path d="M124 188V210H356V188M240 210V228" fill="none" stroke="#315f78" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M236 220L240 228L244 220" fill="none" stroke="#315f78" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="270" y="228" font-size="14" fill="#315f78" text-anchor="start" font-weight="400">I2C</text>
+<rect x="104" y="236" width="272" height="68" rx="3" fill="#ffffff" stroke="#9a4f13" stroke-width="1.5"/>
+<text x="240" y="263" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Raspberry Pi + Mycodo</text>
+<text x="240" y="287" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Read, decide, actuate</text>
+<path d="M240 309L240 329" fill="none" stroke="#9a4f13" stroke-width="1.6"/>
+<path d="M236 323L240 329L244 323" fill="none" stroke="#9a4f13" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="20" y="337" width="440" height="117" rx="3" fill="#ffffff" stroke="#9a4f13" stroke-width="1.5"/>
+<text x="38" y="361" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">GROWER: CONFIGURE AND TEST</text>
+<text x="38" y="385" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Setpoints + run-time and water limits</text>
+<text x="38" y="409" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Bad/missing moisture data: water OFF</text>
+<text x="38" y="433" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Keep a manual shutoff accessible</text>
+<path d="M240 461L240 483" fill="none" stroke="#9a4f13" stroke-width="1.6"/>
+<path d="M236 477L240 483L244 477" fill="none" stroke="#9a4f13" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="20" y="491" width="440" height="65" rx="3" fill="#ffffff" stroke="#a2afa6" stroke-width="1.5"/>
+<text x="240" y="516" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Matched drivers / relays</text>
+<text x="240" y="540" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Low-voltage valve, fan and light circuits</text>
+<path d="M20 580L460 580" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="600" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Check readings against conditions in the bed.</text>
+<text x="20" y="621" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Verify water stops on faults and lost power.</text>
+</svg>

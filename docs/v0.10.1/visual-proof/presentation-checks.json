@@ -1,0 +1,42 @@
+{
+  "prepared_variants": {
+    "prepared_svg_count": 17,
+    "unchanged_after_legacy_pipeline": true,
+    "negative_controls": [
+      "stale print hash",
+      "unregistered prepared SVG"
+    ]
+  },
+  "print": {
+    "pages": 4,
+    "figures": [
+      {
+        "page": 1,
+        "class": "book-figure figure-cutout-left",
+        "x_in": 0.8000000000000002,
+        "width_in": 1.42,
+        "height_in": 2.7099999999999995
+      },
+      {
+        "page": 3,
+        "class": "book-figure figure-cutout-right",
+        "x_in": 3.94,
+        "width_in": 1.42,
+        "height_in": 2.7099999999999995
+      }
+    ],
+    "out_of_bounds_or_prose_intersections": [],
+    "negative_controls": [
+      "negative margin into gutter",
+      "relative displacement into prose"
+    ],
+    "limit": "Portrait placeholder tests the float geometry; final alpha images and complete chapter pagination need the frozen-book proof."
+  },
+  "epub_filter": {
+    "class_preserved": true,
+    "manual_caption_once": true,
+    "accessible_alt_preserved": true,
+    "interactive_marker_absent": true,
+    "negative_control": "removed paragraph"
+  }
+}

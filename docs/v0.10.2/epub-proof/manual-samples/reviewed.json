@@ -1,0 +1,149 @@
+{
+  "epub_sha256": "002ca8563a15536f919786b83bfbed34d3b233200d9574df2a20e3eb7a6efd46",
+  "reviewer": "Codex",
+  "date": "2026-09-28",
+  "source_freeze_rechecked": true,
+  "method": "Direct view_image inspection of all twenty exact-package screenshots. Checked complete figures and captions, diagram text and symbols, data axes, line patterns, transparency and clipping at both widths.",
+  "samples": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-cutout-atlas-390.png",
+      "sha256": "c88f6c2e81ec6587de8de70abc6c260384ccd6082238eede070f96fa0e11ce51",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "intro-nine-stages.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/intro-nine-stages-390.png",
+      "sha256": "aaf6850a239462ca194a77caf9d3c1a9749765aa93001f786f92d3834dd2f826",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch05-horses-tractors.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch05-horses-tractors-390.png",
+      "sha256": "dca2b23f583676d18b166f300e5be061f061ac18acd7fc621cc774362b9e35cb",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch09-greenhouse-bus.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch09-greenhouse-bus-390.png",
+      "sha256": "f8b0afccc5e52c25d9b6eb4f98a4c86f24bce8645f661b7ff24a00445c060fc3",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch11-cooling-loop.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch11-cooling-loop-390.png",
+      "sha256": "4bdc59420b2da9d0cc93fd69e340bf0c4504c6c65f05c30527d53dd5bf296ecf",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch12-csa-network.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch12-csa-network-390.png",
+      "sha256": "b22245359619e6cf6cc949733cef1e3fed8a2aa43a2fe50cedb61e92a0cb48d3",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-scene-living-soil-390.png",
+      "sha256": "f2da1330ce6361b7837453e3b10a3a71f46790b3dbf44eb4dfe2cfb7748968d2",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch17-algae-loop.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch17-algae-loop-390.png",
+      "sha256": "540d2cb90d746595dc471490bcfe1d2c0baf2b9eb8c54bb6faa7226ce09a0392",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch19-conversion-ladder.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch19-conversion-ladder-390.png",
+      "sha256": "af9c66a7a919d05bb5443a98c64ce6451e123a2da6421e66b35e437c40890b50",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "appd-precedent-timeline.svg",
+      "width": 390,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/appd-precedent-timeline-390.png",
+      "sha256": "080621e05245ba337487f3093af603d677dad414e36b5910692237824cde6d03",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "v101-cutout-atlas.png",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-cutout-atlas-768.png",
+      "sha256": "d9ad61025aff6c8347353ef12372abfbdeb68ce0a8547805e370ad9bc9a7836d",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "intro-nine-stages.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/intro-nine-stages-768.png",
+      "sha256": "0c7b4642ddbedc03c47e0f4fdb8f7a5b8ac7d977180b56742de48607cd1303fe",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch05-horses-tractors.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch05-horses-tractors-768.png",
+      "sha256": "9c0f3bcc8fa507b89ab7eb6d7bff6ccdaf6a5c555188abf05a2c02a9bb8a24e0",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch09-greenhouse-bus.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch09-greenhouse-bus-768.png",
+      "sha256": "88ba88582d1bacee3f8bef739e19a4ae6d2dd5325a678fbd4ee792a43efc44d7",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch11-cooling-loop.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch11-cooling-loop-768.png",
+      "sha256": "24489482fced4a41db139bad52e85ed8252130ebc3723bc4fcc54237d7f480bd",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch12-csa-network.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch12-csa-network-768.png",
+      "sha256": "445c24d093c03da88d5b8b6ecdfc7152f5f72197aae412c242c5b2def6a49bde",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-scene-living-soil-768.png",
+      "sha256": "49aaeaf8e39169505c3198240931895d609127c178c5e9a0e736c5b2ebaf20a5",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch17-algae-loop.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch17-algae-loop-768.png",
+      "sha256": "7bef3481e2d59b841a3a35e30f3f0f9c78b6683ba74582ca83749ab764a42bc6",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "ch19-conversion-ladder.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch19-conversion-ladder-768.png",
+      "sha256": "4f5bac838d14a5b61c9e6d19ca1babb0683cae18cef799c0be6bffea3713e6d9",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    },
+    {
+      "file": "appd-precedent-timeline.svg",
+      "width": 768,
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/appd-precedent-timeline-768.png",
+      "sha256": "0c42d895948c419487857d47b805b34e2b03a8adb677fe11d6b3378e46ddad18",
+      "finding": "No observed clipping, overlapping labels, missing visual content, or caption collision."
+    }
+  ]
+}

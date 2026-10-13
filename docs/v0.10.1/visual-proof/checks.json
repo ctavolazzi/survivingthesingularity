@@ -1,0 +1,131 @@
+{
+  "figures": {
+    "access-gate": {
+      "screen": {
+        "labels": 5,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.2107747395833335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 5,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.2107747395833335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "attention-ribbon": {
+      "screen": {
+        "labels": 5,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.3439127604166665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 5,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.3439127604166665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "operating-stack": {
+      "screen": {
+        "labels": 10,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.7713216145833335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 10,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.7713216145833335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "local-copies": {
+      "screen": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.5528971354166665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.5528971354166665,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "shared-land": {
+      "screen": {
+        "labels": 5,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.7903645833333335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 5,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.7903645833333335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "continuity-calendar": {
+      "screen": {
+        "labels": 8,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.6477864583333335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 8,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 3.6477864583333335,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    }
+  },
+  "negative_controls": {
+    "undersized_label": true,
+    "overlapping_labels": true,
+    "out_of_frame": true,
+    "path_through_label": true
+  },
+  "limits": "Browser geometry and screen screenshots at 4.56-inch width, including label intersections with sampled paths. This cannot certify physical printer contrast, SVG font substitution in every reader, or full-book pagination."
+}

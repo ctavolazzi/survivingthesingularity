@@ -1,1757 +1,98 @@
 {
-  "static/images/default-avatar.jpg": {
+  "src/lib/images/StSFreeGuide.png": {
     "original": {
-      "width": 400,
-      "height": 400,
-      "path": "static/images/default-avatar.jpg"
+      "width": 1080,
+      "height": 1080,
+      "path": "src/lib/images/StSFreeGuide.png"
     },
     "webp": {
-      "original": "static/images/optimized/default_avatar_original.webp"
+      "original": "static/images/optimized/stsfreeguide_original.webp"
     },
     "variants": {
       "400": {
-        "original": "static/images/optimized/default_avatar_400.jpg",
-        "webp": "static/images/optimized/default_avatar_400.webp"
+        "original": "static/images/optimized/stsfreeguide_400.png",
+        "webp": "static/images/optimized/stsfreeguide_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/stsfreeguide_800.png",
+        "webp": "static/images/optimized/stsfreeguide_800.webp"
       }
     }
   },
-  "static/book-images/intro-asimo.jpg": {
+  "src/lib/images/Surviving-the-Singularity-Cover.png": {
     "original": {
-      "width": 1280,
-      "height": 1705,
-      "path": "static/book-images/intro-asimo.jpg"
+      "width": 1410,
+      "height": 2056,
+      "path": "src/lib/images/Surviving-the-Singularity-Cover.png"
     },
     "webp": {
-      "original": "static/images/optimized/intro_asimo_original.webp"
+      "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
     },
     "variants": {
       "400": {
-        "original": "static/images/optimized/intro_asimo_400.jpg",
-        "webp": "static/images/optimized/intro_asimo_400.webp"
+        "original": "static/images/optimized/surviving_the_singularity_cover_400.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_400.webp"
       },
       "800": {
-        "original": "static/images/optimized/intro_asimo_800.jpg",
-        "webp": "static/images/optimized/intro_asimo_800.webp"
+        "original": "static/images/optimized/surviving_the_singularity_cover_800.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_800.webp"
       },
       "1200": {
-        "original": "static/images/optimized/intro_asimo_1200.jpg",
-        "webp": "static/images/optimized/intro_asimo_1200.webp"
+        "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
       }
     }
   },
-  "static/book-images/ch19-iss-sunrise.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1280,
-      "path": "static/book-images/ch19-iss-sunrise.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch19_iss_sunrise_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch19_iss_sunrise_400.jpg",
-        "webp": "static/images/optimized/ch19_iss_sunrise_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch19_iss_sunrise_800.jpg",
-        "webp": "static/images/optimized/ch19_iss_sunrise_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch19_iss_sunrise_1200.jpg",
-        "webp": "static/images/optimized/ch19_iss_sunrise_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch18-compass-map.jpg": {
-    "original": {
-      "width": 1479,
-      "height": 1114,
-      "path": "static/book-images/ch18-compass-map.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch18_compass_map_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch18_compass_map_400.jpg",
-        "webp": "static/images/optimized/ch18_compass_map_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch18_compass_map_800.jpg",
-        "webp": "static/images/optimized/ch18_compass_map_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch18_compass_map_1200.jpg",
-        "webp": "static/images/optimized/ch18_compass_map_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch17-workbench.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 2876,
-      "path": "static/book-images/ch17-workbench.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch17_workbench_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch17_workbench_400.jpg",
-        "webp": "static/images/optimized/ch17_workbench_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch17_workbench_800.jpg",
-        "webp": "static/images/optimized/ch17_workbench_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch17_workbench_1200.jpg",
-        "webp": "static/images/optimized/ch17_workbench_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch16-servers.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1280,
-      "path": "static/book-images/ch16-servers.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch16_servers_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch16_servers_400.jpg",
-        "webp": "static/images/optimized/ch16_servers_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch16_servers_800.jpg",
-        "webp": "static/images/optimized/ch16_servers_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch16_servers_1200.jpg",
-        "webp": "static/images/optimized/ch16_servers_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch14-dead-mall.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 2560,
-      "path": "static/book-images/ch14-dead-mall.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch14_dead_mall_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch14_dead_mall_400.jpg",
-        "webp": "static/images/optimized/ch14_dead_mall_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch14_dead_mall_800.jpg",
-        "webp": "static/images/optimized/ch14_dead_mall_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch14_dead_mall_1200.jpg",
-        "webp": "static/images/optimized/ch14_dead_mall_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch13-solar-barn.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1242,
-      "path": "static/book-images/ch13-solar-barn.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch13_solar_barn_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch13_solar_barn_400.jpg",
-        "webp": "static/images/optimized/ch13_solar_barn_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch13_solar_barn_800.jpg",
-        "webp": "static/images/optimized/ch13_solar_barn_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch13_solar_barn_1200.jpg",
-        "webp": "static/images/optimized/ch13_solar_barn_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch12-farmbot.jpg": {
-    "original": {
-      "width": 1125,
-      "height": 843,
-      "path": "static/book-images/ch12-farmbot.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch12_farmbot_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch12_farmbot_400.jpg",
-        "webp": "static/images/optimized/ch12_farmbot_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch12_farmbot_800.jpg",
-        "webp": "static/images/optimized/ch12_farmbot_800.webp"
-      }
-    }
-  },
-  "static/book-images/ch12-farmbot-watering.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 379,
-      "path": "static/book-images/ch12-farmbot-watering.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch12_farmbot_watering_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch12_farmbot_watering_400.jpg",
-        "webp": "static/images/optimized/ch12_farmbot_watering_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch12_farmbot_watering_800.jpg",
-        "webp": "static/images/optimized/ch12_farmbot_watering_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch12_farmbot_watering_1200.jpg",
-        "webp": "static/images/optimized/ch12_farmbot_watering_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch11-spot.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 853,
-      "path": "static/book-images/ch11-spot.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch11_spot_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch11_spot_400.jpg",
-        "webp": "static/images/optimized/ch11_spot_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch11_spot_800.jpg",
-        "webp": "static/images/optimized/ch11_spot_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch11_spot_1200.jpg",
-        "webp": "static/images/optimized/ch11_spot_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch10-nyse.jpg": {
-    "original": {
-      "width": 1024,
-      "height": 683,
-      "path": "static/book-images/ch10-nyse.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch10_nyse_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch10_nyse_400.jpg",
-        "webp": "static/images/optimized/ch10_nyse_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch10_nyse_800.jpg",
-        "webp": "static/images/optimized/ch10_nyse_800.webp"
-      }
-    }
-  },
-  "static/book-images/ch09-sophia-un.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 1625,
-      "path": "static/book-images/ch09-sophia-un.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch09_sophia_un_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch09_sophia_un_400.jpg",
-        "webp": "static/images/optimized/ch09_sophia_un_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch09_sophia_un_800.jpg",
-        "webp": "static/images/optimized/ch09_sophia_un_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch09_sophia_un_1200.jpg",
-        "webp": "static/images/optimized/ch09_sophia_un_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch09-3d-printer.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 2560,
-      "path": "static/book-images/ch09-3d-printer.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch09_3d_printer_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch09_3d_printer_400.jpg",
-        "webp": "static/images/optimized/ch09_3d_printer_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch09_3d_printer_800.jpg",
-        "webp": "static/images/optimized/ch09_3d_printer_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch09_3d_printer_1200.jpg",
-        "webp": "static/images/optimized/ch09_3d_printer_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch08-sophia.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 853,
-      "path": "static/book-images/ch08-sophia.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch08_sophia_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch08_sophia_400.jpg",
-        "webp": "static/images/optimized/ch08_sophia_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch08_sophia_800.jpg",
-        "webp": "static/images/optimized/ch08_sophia_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch08_sophia_1200.jpg",
-        "webp": "static/images/optimized/ch08_sophia_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch07-pepper.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 960,
-      "path": "static/book-images/ch07-pepper.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch07_pepper_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch07_pepper_400.jpg",
-        "webp": "static/images/optimized/ch07_pepper_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch07_pepper_800.jpg",
-        "webp": "static/images/optimized/ch07_pepper_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch07_pepper_1200.jpg",
-        "webp": "static/images/optimized/ch07_pepper_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch07-chess-battle-lines.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1920,
-      "path": "static/book-images/ch07-chess-battle-lines.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch07_chess_battle_lines_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch07_chess_battle_lines_400.jpg",
-        "webp": "static/images/optimized/ch07_chess_battle_lines_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch07_chess_battle_lines_800.jpg",
-        "webp": "static/images/optimized/ch07_chess_battle_lines_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch07_chess_battle_lines_1200.jpg",
-        "webp": "static/images/optimized/ch07_chess_battle_lines_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch05-sdo-sun.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1833,
-      "path": "static/book-images/ch05-sdo-sun.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch05_sdo_sun_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch05_sdo_sun_400.jpg",
-        "webp": "static/images/optimized/ch05_sdo_sun_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch05_sdo_sun_800.jpg",
-        "webp": "static/images/optimized/ch05_sdo_sun_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch05_sdo_sun_1200.jpg",
-        "webp": "static/images/optimized/ch05_sdo_sun_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch05-nao.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 853,
-      "path": "static/book-images/ch05-nao.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch05_nao_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch05_nao_400.jpg",
-        "webp": "static/images/optimized/ch05_nao_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch05_nao_800.jpg",
-        "webp": "static/images/optimized/ch05_nao_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch05_nao_1200.jpg",
-        "webp": "static/images/optimized/ch05_nao_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch04-hubble-deep-field.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1920,
-      "path": "static/book-images/ch04-hubble-deep-field.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch04_hubble_deep_field_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch04_hubble_deep_field_400.jpg",
-        "webp": "static/images/optimized/ch04_hubble_deep_field_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch04_hubble_deep_field_800.jpg",
-        "webp": "static/images/optimized/ch04_hubble_deep_field_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch04_hubble_deep_field_1200.jpg",
-        "webp": "static/images/optimized/ch04_hubble_deep_field_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch04-da-vinci.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 960,
-      "path": "static/book-images/ch04-da-vinci.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch04_da_vinci_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch04_da_vinci_400.jpg",
-        "webp": "static/images/optimized/ch04_da_vinci_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch04_da_vinci_800.jpg",
-        "webp": "static/images/optimized/ch04_da_vinci_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch04_da_vinci_1200.jpg",
-        "webp": "static/images/optimized/ch04_da_vinci_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch03-falcon-heavy.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1280,
-      "path": "static/book-images/ch03-falcon-heavy.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch03_falcon_heavy_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch03_falcon_heavy_400.jpg",
-        "webp": "static/images/optimized/ch03_falcon_heavy_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch03_falcon_heavy_800.jpg",
-        "webp": "static/images/optimized/ch03_falcon_heavy_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch03_falcon_heavy_1200.jpg",
-        "webp": "static/images/optimized/ch03_falcon_heavy_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch03-echo-dot.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 726,
-      "path": "static/book-images/ch03-echo-dot.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch03_echo_dot_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch03_echo_dot_400.jpg",
-        "webp": "static/images/optimized/ch03_echo_dot_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch03_echo_dot_800.jpg",
-        "webp": "static/images/optimized/ch03_echo_dot_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch03_echo_dot_1200.jpg",
-        "webp": "static/images/optimized/ch03_echo_dot_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch02-waymo.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 960,
-      "path": "static/book-images/ch02-waymo.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch02_waymo_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch02_waymo_400.jpg",
-        "webp": "static/images/optimized/ch02_waymo_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch02_waymo_800.jpg",
-        "webp": "static/images/optimized/ch02_waymo_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch02_waymo_1200.jpg",
-        "webp": "static/images/optimized/ch02_waymo_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch02-factory-robots.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 960,
-      "path": "static/book-images/ch02-factory-robots.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch02_factory_robots_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch02_factory_robots_400.jpg",
-        "webp": "static/images/optimized/ch02_factory_robots_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch02_factory_robots_800.jpg",
-        "webp": "static/images/optimized/ch02_factory_robots_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch02_factory_robots_1200.jpg",
-        "webp": "static/images/optimized/ch02_factory_robots_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch01-m87-black-hole.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1920,
-      "path": "static/book-images/ch01-m87-black-hole.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch01_m87_black_hole_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch01_m87_black_hole_400.jpg",
-        "webp": "static/images/optimized/ch01_m87_black_hole_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch01_m87_black_hole_800.jpg",
-        "webp": "static/images/optimized/ch01_m87_black_hole_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch01_m87_black_hole_1200.jpg",
-        "webp": "static/images/optimized/ch01_m87_black_hole_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch01-atlas.jpg": {
-    "original": {
-      "width": 1280,
-      "height": 1920,
-      "path": "static/book-images/ch01-atlas.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch01_atlas_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch01_atlas_400.jpg",
-        "webp": "static/images/optimized/ch01_atlas_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch01_atlas_800.jpg",
-        "webp": "static/images/optimized/ch01_atlas_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch01_atlas_1200.jpg",
-        "webp": "static/images/optimized/ch01_atlas_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch00-madrone-bark.jpg": {
-    "original": {
-      "width": 1920,
-      "height": 1440,
-      "path": "static/book-images/ch00-madrone-bark.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch00_madrone_bark_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch00_madrone_bark_400.jpg",
-        "webp": "static/images/optimized/ch00_madrone_bark_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch00_madrone_bark_800.jpg",
-        "webp": "static/images/optimized/ch00_madrone_bark_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch00_madrone_bark_1200.jpg",
-        "webp": "static/images/optimized/ch00_madrone_bark_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/singularity-express.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/singularity-express.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/singularity_express_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/singularity_express_400.jpg",
-        "webp": "static/images/optimized/singularity_express_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/singularity_express_800.jpg",
-        "webp": "static/images/optimized/singularity_express_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/singularity_express_1200.jpg",
-        "webp": "static/images/optimized/singularity_express_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/robot-farm-bot.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/robot-farm-bot.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/robot_farm_bot_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/robot_farm_bot_400.jpg",
-        "webp": "static/images/optimized/robot_farm_bot_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/robot_farm_bot_800.jpg",
-        "webp": "static/images/optimized/robot_farm_bot_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/robot_farm_bot_1200.jpg",
-        "webp": "static/images/optimized/robot_farm_bot_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/farm-bot-deep-dive.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/farm-bot-deep-dive.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/farm_bot_deep_dive_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/farm_bot_deep_dive_400.jpg",
-        "webp": "static/images/optimized/farm_bot_deep_dive_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/farm_bot_deep_dive_800.jpg",
-        "webp": "static/images/optimized/farm_bot_deep_dive_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/farm_bot_deep_dive_1200.jpg",
-        "webp": "static/images/optimized/farm_bot_deep_dive_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/darpa-biomechanical-space-structures.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/darpa-biomechanical-space-structures.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/darpa_biomechanical_space_structures_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/darpa_biomechanical_space_structures_400.jpg",
-        "webp": "static/images/optimized/darpa_biomechanical_space_structures_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/darpa_biomechanical_space_structures_800.jpg",
-        "webp": "static/images/optimized/darpa_biomechanical_space_structures_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/darpa_biomechanical_space_structures_1200.jpg",
-        "webp": "static/images/optimized/darpa_biomechanical_space_structures_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/claude-projects-weekend-project.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/claude-projects-weekend-project.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/claude_projects_weekend_project_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/claude_projects_weekend_project_400.jpg",
-        "webp": "static/images/optimized/claude_projects_weekend_project_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/claude_projects_weekend_project_800.jpg",
-        "webp": "static/images/optimized/claude_projects_weekend_project_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/claude_projects_weekend_project_1200.jpg",
-        "webp": "static/images/optimized/claude_projects_weekend_project_1200.webp"
-      }
-    }
-  },
-  "static/sts-welcome.png": {
+  "src/lib/images/ct_hero_image.png": {
     "original": {
       "width": 1280,
       "height": 720,
-      "path": "static/sts-welcome.png"
+      "path": "src/lib/images/ct_hero_image.png"
     },
     "webp": {
-      "original": "static/images/optimized/sts_welcome_original.webp"
+      "original": "static/images/optimized/ct_hero_image_original.webp"
     },
     "variants": {
       "400": {
-        "original": "static/images/optimized/sts_welcome_400.png",
-        "webp": "static/images/optimized/sts_welcome_400.webp"
+        "original": "static/images/optimized/ct_hero_image_400.png",
+        "webp": "static/images/optimized/ct_hero_image_400.webp"
       },
       "800": {
-        "original": "static/images/optimized/sts_welcome_800.png",
-        "webp": "static/images/optimized/sts_welcome_800.webp"
+        "original": "static/images/optimized/ct_hero_image_800.png",
+        "webp": "static/images/optimized/ct_hero_image_800.webp"
       },
       "1200": {
-        "original": "static/images/optimized/sts_welcome_1200.png",
-        "webp": "static/images/optimized/sts_welcome_1200.webp"
+        "original": "static/images/optimized/ct_hero_image_1200.png",
+        "webp": "static/images/optimized/ct_hero_image_1200.webp"
       }
     }
   },
-  "static/sts-header_1000.png": {
+  "src/lib/images/default-blog-image.png": {
     "original": {
-      "width": 1000,
-      "height": 220,
-      "path": "static/sts-header_1000.png"
+      "width": 348,
+      "height": 232,
+      "path": "src/lib/images/default-blog-image.png"
     },
     "webp": {
-      "original": "static/images/optimized/sts_header_1000_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/sts_header_1000_400.png",
-        "webp": "static/images/optimized/sts_header_1000_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/sts_header_1000_800.png",
-        "webp": "static/images/optimized/sts_header_1000_800.webp"
-      }
-    }
-  },
-  "static/img-missing.png": {
-    "original": {
-      "width": 1024,
-      "height": 1024,
-      "path": "static/img-missing.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/img_missing_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/img_missing_400.png",
-        "webp": "static/images/optimized/img_missing_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/img_missing_800.png",
-        "webp": "static/images/optimized/img_missing_800.webp"
-      }
-    }
-  },
-  "static/favicon.png": {
-    "original": {
-      "width": 100,
-      "height": 100,
-      "path": "static/favicon.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/favicon_original.webp"
+      "original": "static/images/optimized/default_blog_image_original.webp"
     },
     "variants": {}
   },
-  "static/favicon-32x32.png": {
+  "src/lib/images/skool-class.jpg": {
     "original": {
-      "width": 32,
-      "height": 32,
-      "path": "static/favicon-32x32.png"
+      "width": 640,
+      "height": 427,
+      "path": "src/lib/images/skool-class.jpg"
     },
     "webp": {
-      "original": "static/images/optimized/favicon_32x32_original.webp"
-    },
-    "variants": {}
-  },
-  "static/favicon-16x16.png": {
-    "original": {
-      "width": 16,
-      "height": 16,
-      "path": "static/favicon-16x16.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/favicon_16x16_original.webp"
-    },
-    "variants": {}
-  },
-  "static/author-headshot.png": {
-    "original": {
-      "width": 480,
-      "height": 480,
-      "path": "static/author-headshot.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/author_headshot_original.webp"
+      "original": "static/images/optimized/skool_class_original.webp"
     },
     "variants": {
       "400": {
-        "original": "static/images/optimized/author_headshot_400.png",
-        "webp": "static/images/optimized/author_headshot_400.webp"
+        "original": "static/images/optimized/skool_class_400.jpg",
+        "webp": "static/images/optimized/skool_class_400.webp"
       }
     }
-  },
-  "static/android-chrome-192x192.png": {
-    "original": {
-      "width": 192,
-      "height": 192,
-      "path": "static/android-chrome-192x192.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/android_chrome_192x192_original.webp"
-    },
-    "variants": {}
-  },
-  "static/Surviving-the-Singularity-Cover.png": {
-    "original": {
-      "width": 1410,
-      "height": 2250,
-      "path": "static/Surviving-the-Singularity-Cover.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/surviving_the_singularity_cover_400.png",
-        "webp": "static/images/optimized/surviving_the_singularity_cover_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/surviving_the_singularity_cover_800.png",
-        "webp": "static/images/optimized/surviving_the_singularity_cover_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
-        "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
-      }
-    }
-  },
-  "static/future-projections/future-of-jobs.png": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/future-projections/future-of-jobs.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/future_of_jobs_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/future_of_jobs_400.png",
-        "webp": "static/images/optimized/future_of_jobs_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/future_of_jobs_800.png",
-        "webp": "static/images/optimized/future_of_jobs_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/future_of_jobs_1200.png",
-        "webp": "static/images/optimized/future_of_jobs_1200.webp"
-      }
-    }
-  },
-  "static/images/treasure-tavern-square.png": {
-    "original": {
-      "width": 600,
-      "height": 621,
-      "path": "static/images/treasure-tavern-square.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/treasure_tavern_square_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/treasure_tavern_square_400.png",
-        "webp": "static/images/optimized/treasure_tavern_square_400.webp"
-      }
-    }
-  },
-  "static/images/treasure-tavern-logo-transparent.png": {
-    "original": {
-      "width": 500,
-      "height": 500,
-      "path": "static/images/treasure-tavern-logo-transparent.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/treasure_tavern_logo_transparent_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/treasure_tavern_logo_transparent_400.png",
-        "webp": "static/images/optimized/treasure_tavern_logo_transparent_400.webp"
-      }
-    }
-  },
-  "static/images/treasure-tavern-banner-600x800.png": {
-    "original": {
-      "width": 800,
-      "height": 600,
-      "path": "static/images/treasure-tavern-banner-600x800.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/treasure_tavern_banner_600x800_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/treasure_tavern_banner_600x800_400.png",
-        "webp": "static/images/optimized/treasure_tavern_banner_600x800_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/treasure_tavern_banner_600x800_800.png",
-        "webp": "static/images/optimized/treasure_tavern_banner_600x800_800.webp"
-      }
-    }
-  },
-  "static/images/Surviving-the-Singularity-Cover.png": {
-    "original": {
-      "width": 1410,
-      "height": 2250,
-      "path": "static/images/Surviving-the-Singularity-Cover.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/surviving_the_singularity_cover_400.png",
-        "webp": "static/images/optimized/surviving_the_singularity_cover_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/surviving_the_singularity_cover_800.png",
-        "webp": "static/images/optimized/surviving_the_singularity_cover_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
-        "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
-      }
-    }
-  },
-  "static/book-images/part3-divider.png": {
-    "original": {
-      "width": 1920,
-      "height": 640,
-      "path": "static/book-images/part3-divider.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/part3_divider_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/part3_divider_400.png",
-        "webp": "static/images/optimized/part3_divider_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/part3_divider_800.png",
-        "webp": "static/images/optimized/part3_divider_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/part3_divider_1200.png",
-        "webp": "static/images/optimized/part3_divider_1200.webp"
-      }
-    }
-  },
-  "static/book-images/part2-divider.png": {
-    "original": {
-      "width": 1920,
-      "height": 640,
-      "path": "static/book-images/part2-divider.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/part2_divider_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/part2_divider_400.png",
-        "webp": "static/images/optimized/part2_divider_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/part2_divider_800.png",
-        "webp": "static/images/optimized/part2_divider_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/part2_divider_1200.png",
-        "webp": "static/images/optimized/part2_divider_1200.webp"
-      }
-    }
-  },
-  "static/book-images/part1-divider.png": {
-    "original": {
-      "width": 1920,
-      "height": 640,
-      "path": "static/book-images/part1-divider.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/part1_divider_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/part1_divider_400.png",
-        "webp": "static/images/optimized/part1_divider_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/part1_divider_800.png",
-        "webp": "static/images/optimized/part1_divider_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/part1_divider_1200.png",
-        "webp": "static/images/optimized/part1_divider_1200.webp"
-      }
-    }
-  },
-  "static/book-images/intro-robots.png": {
-    "original": {
-      "width": 1180,
-      "height": 684,
-      "path": "static/book-images/intro-robots.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/intro_robots_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/intro_robots_400.png",
-        "webp": "static/images/optimized/intro_robots_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/intro_robots_800.png",
-        "webp": "static/images/optimized/intro_robots_800.webp"
-      }
-    }
-  },
-  "static/book-images/intro-ox-plow.png": {
-    "original": {
-      "width": 760,
-      "height": 492,
-      "path": "static/book-images/intro-ox-plow.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/intro_ox_plow_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/intro_ox_plow_400.png",
-        "webp": "static/images/optimized/intro_ox_plow_400.webp"
-      }
-    }
-  },
-  "static/book-images/coop-cast.png": {
-    "original": {
-      "width": 1808,
-      "height": 606,
-      "path": "static/book-images/coop-cast.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/coop_cast_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/coop_cast_400.png",
-        "webp": "static/images/optimized/coop_cast_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/coop_cast_800.png",
-        "webp": "static/images/optimized/coop_cast_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/coop_cast_1200.png",
-        "webp": "static/images/optimized/coop_cast_1200.webp"
-      }
-    }
-  },
-  "static/book-images/conclusion-proofs.png": {
-    "original": {
-      "width": 760,
-      "height": 614,
-      "path": "static/book-images/conclusion-proofs.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/conclusion_proofs_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/conclusion_proofs_400.png",
-        "webp": "static/images/optimized/conclusion_proofs_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch17-photobioreactor.png": {
-    "original": {
-      "width": 760,
-      "height": 606,
-      "path": "static/book-images/ch17-photobioreactor.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch17_photobioreactor_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch17_photobioreactor_400.png",
-        "webp": "static/images/optimized/ch17_photobioreactor_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch17-field-kit.png": {
-    "original": {
-      "width": 1648,
-      "height": 792,
-      "path": "static/book-images/ch17-field-kit.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch17_field_kit_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch17_field_kit_400.png",
-        "webp": "static/images/optimized/ch17_field_kit_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch17_field_kit_800.png",
-        "webp": "static/images/optimized/ch17_field_kit_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch17_field_kit_1200.png",
-        "webp": "static/images/optimized/ch17_field_kit_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch15-probe.png": {
-    "original": {
-      "width": 760,
-      "height": 626,
-      "path": "static/book-images/ch15-probe.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch15_probe_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch15_probe_400.png",
-        "webp": "static/images/optimized/ch15_probe_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch14-frank.png": {
-    "original": {
-      "width": 760,
-      "height": 636,
-      "path": "static/book-images/ch14-frank.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch14_frank_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch14_frank_400.png",
-        "webp": "static/images/optimized/ch14_frank_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch14-bell.png": {
-    "original": {
-      "width": 760,
-      "height": 666,
-      "path": "static/book-images/ch14-bell.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch14_bell_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch14_bell_400.png",
-        "webp": "static/images/optimized/ch14_bell_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch13-vise.png": {
-    "original": {
-      "width": 760,
-      "height": 662,
-      "path": "static/book-images/ch13-vise.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch13_vise_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch13_vise_400.png",
-        "webp": "static/images/optimized/ch13_vise_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch11-crucible.png": {
-    "original": {
-      "width": 760,
-      "height": 646,
-      "path": "static/book-images/ch11-crucible.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch11_crucible_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch11_crucible_400.png",
-        "webp": "static/images/optimized/ch11_crucible_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch09-reuben.png": {
-    "original": {
-      "width": 760,
-      "height": 652,
-      "path": "static/book-images/ch09-reuben.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch09_reuben_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch09_reuben_400.png",
-        "webp": "static/images/optimized/ch09_reuben_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch09-controller.png": {
-    "original": {
-      "width": 760,
-      "height": 622,
-      "path": "static/book-images/ch09-controller.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch09_controller_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch09_controller_400.png",
-        "webp": "static/images/optimized/ch09_controller_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch08-gary.png": {
-    "original": {
-      "width": 760,
-      "height": 654,
-      "path": "static/book-images/ch08-gary.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch08_gary_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch08_gary_400.png",
-        "webp": "static/images/optimized/ch08_gary_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch06-tool-wall.png": {
-    "original": {
-      "width": 760,
-      "height": 654,
-      "path": "static/book-images/ch06-tool-wall.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch06_tool_wall_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch06_tool_wall_400.png",
-        "webp": "static/images/optimized/ch06_tool_wall_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch06-edmond-de-belamy.png": {
-    "original": {
-      "width": 1280,
-      "height": 1285,
-      "path": "static/book-images/ch06-edmond-de-belamy.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch06_edmond_de_belamy_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch06_edmond_de_belamy_400.png",
-        "webp": "static/images/optimized/ch06_edmond_de_belamy_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/ch06_edmond_de_belamy_800.png",
-        "webp": "static/images/optimized/ch06_edmond_de_belamy_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/ch06_edmond_de_belamy_1200.png",
-        "webp": "static/images/optimized/ch06_edmond_de_belamy_1200.webp"
-      }
-    }
-  },
-  "static/book-images/ch05-woodstove.png": {
-    "original": {
-      "width": 760,
-      "height": 614,
-      "path": "static/book-images/ch05-woodstove.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch05_woodstove_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch05_woodstove_400.png",
-        "webp": "static/images/optimized/ch05_woodstove_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch01-pc-rig.png": {
-    "original": {
-      "width": 760,
-      "height": 654,
-      "path": "static/book-images/ch01-pc-rig.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch01_pc_rig_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch01_pc_rig_400.png",
-        "webp": "static/images/optimized/ch01_pc_rig_400.webp"
-      }
-    }
-  },
-  "static/book-images/ch01-devendra.png": {
-    "original": {
-      "width": 760,
-      "height": 650,
-      "path": "static/book-images/ch01-devendra.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ch01_devendra_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/ch01_devendra_400.png",
-        "webp": "static/images/optimized/ch01_devendra_400.webp"
-      }
-    }
-  },
-  "static/book-images/appe-cyberdeck.png": {
-    "original": {
-      "width": 760,
-      "height": 542,
-      "path": "static/book-images/appe-cyberdeck.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/appe_cyberdeck_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/appe_cyberdeck_400.png",
-        "webp": "static/images/optimized/appe_cyberdeck_400.webp"
-      }
-    }
-  },
-  "static/images/blog/whispers-ai-featured.png": {
-    "original": {
-      "width": 1536,
-      "height": 1024,
-      "path": "static/images/blog/whispers-ai-featured.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/whispers_ai_featured_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/whispers_ai_featured_400.png",
-        "webp": "static/images/optimized/whispers_ai_featured_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/whispers_ai_featured_800.png",
-        "webp": "static/images/optimized/whispers_ai_featured_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/whispers_ai_featured_1200.png",
-        "webp": "static/images/optimized/whispers_ai_featured_1200.webp"
-      }
-    }
-  },
-  "static/book-images/sprites/sts-sprite-woodstove.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-woodstove.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_woodstove_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-walk-behind-tractor.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-walk-behind-tractor.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_walk_behind_tractor_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-vise.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-vise.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_vise_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-tool-wall.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-tool-wall.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_tool_wall_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-solar-battery.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-solar-battery.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_solar_battery_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-proofs.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-proofs.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_proofs_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-probe.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-probe.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_probe_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-printer-3d.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-printer-3d.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_printer_3d_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-plasma-table.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-plasma-table.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_plasma_table_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-photobioreactor.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-photobioreactor.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_photobioreactor_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-pc-rig.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-pc-rig.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_pc_rig_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-ox-and-plow.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-ox-and-plow.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_ox_and_plow_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-lora-node.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-lora-node.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_lora_node_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-grow-tower.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-grow-tower.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_grow_tower_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-cyberdeck.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-cyberdeck.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_cyberdeck_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-crucible.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-crucible.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_crucible_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-controller.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-controller.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_controller_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-sprite-bell.png": {
-    "original": {
-      "width": 128,
-      "height": 128,
-      "path": "static/book-images/sprites/sts-sprite-bell.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_sprite_bell_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-reuben.png": {
-    "original": {
-      "width": 256,
-      "height": 256,
-      "path": "static/book-images/sprites/sts-char-reuben.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_reuben_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-priya.png": {
-    "original": {
-      "width": 244,
-      "height": 244,
-      "path": "static/book-images/sprites/sts-char-priya.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_priya_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-marta.png": {
-    "original": {
-      "width": 248,
-      "height": 248,
-      "path": "static/book-images/sprites/sts-char-marta.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_marta_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-gary.png": {
-    "original": {
-      "width": 256,
-      "height": 256,
-      "path": "static/book-images/sprites/sts-char-gary.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_gary_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-frank.png": {
-    "original": {
-      "width": 256,
-      "height": 256,
-      "path": "static/book-images/sprites/sts-char-frank.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_frank_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-elijah.png": {
-    "original": {
-      "width": 248,
-      "height": 248,
-      "path": "static/book-images/sprites/sts-char-elijah.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_elijah_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-devendra.png": {
-    "original": {
-      "width": 256,
-      "height": 256,
-      "path": "static/book-images/sprites/sts-char-devendra.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_devendra_original.webp"
-    },
-    "variants": {}
-  },
-  "static/book-images/sprites/sts-char-denny.png": {
-    "original": {
-      "width": 248,
-      "height": 248,
-      "path": "static/book-images/sprites/sts-char-denny.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/sts_char_denny_original.webp"
-    },
-    "variants": {}
   },
   "src/lib/images/sts-chess.jpg": {
     "original": {
@@ -1774,46 +115,6 @@
       "1200": {
         "original": "static/images/optimized/sts_chess_1200.jpg",
         "webp": "static/images/optimized/sts_chess_1200.webp"
-      }
-    }
-  },
-  "src/lib/images/skool-class.jpg": {
-    "original": {
-      "width": 640,
-      "height": 427,
-      "path": "src/lib/images/skool-class.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/skool_class_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/skool_class_400.jpg",
-        "webp": "static/images/optimized/skool_class_400.webp"
-      }
-    }
-  },
-  "src/lib/images/svelte-welcome.png": {
-    "original": {
-      "width": 2048,
-      "height": 495,
-      "path": "src/lib/images/svelte-welcome.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/svelte_welcome_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/svelte_welcome_400.png",
-        "webp": "static/images/optimized/svelte_welcome_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/svelte_welcome_800.png",
-        "webp": "static/images/optimized/svelte_welcome_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/svelte_welcome_1200.png",
-        "webp": "static/images/optimized/svelte_welcome_1200.webp"
       }
     }
   },
@@ -1841,46 +142,35 @@
       }
     }
   },
-  "src/lib/images/default-blog-image.png": {
+  "src/lib/images/svelte-welcome.png": {
     "original": {
-      "width": 348,
-      "height": 232,
-      "path": "src/lib/images/default-blog-image.png"
+      "width": 2048,
+      "height": 495,
+      "path": "src/lib/images/svelte-welcome.png"
     },
     "webp": {
-      "original": "static/images/optimized/default_blog_image_original.webp"
-    },
-    "variants": {}
-  },
-  "src/lib/images/ct_hero_image.png": {
-    "original": {
-      "width": 1280,
-      "height": 720,
-      "path": "src/lib/images/ct_hero_image.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/ct_hero_image_original.webp"
+      "original": "static/images/optimized/svelte_welcome_original.webp"
     },
     "variants": {
       "400": {
-        "original": "static/images/optimized/ct_hero_image_400.png",
-        "webp": "static/images/optimized/ct_hero_image_400.webp"
+        "original": "static/images/optimized/svelte_welcome_400.png",
+        "webp": "static/images/optimized/svelte_welcome_400.webp"
       },
       "800": {
-        "original": "static/images/optimized/ct_hero_image_800.png",
-        "webp": "static/images/optimized/ct_hero_image_800.webp"
+        "original": "static/images/optimized/svelte_welcome_800.png",
+        "webp": "static/images/optimized/svelte_welcome_800.webp"
       },
       "1200": {
-        "original": "static/images/optimized/ct_hero_image_1200.png",
-        "webp": "static/images/optimized/ct_hero_image_1200.webp"
+        "original": "static/images/optimized/svelte_welcome_1200.png",
+        "webp": "static/images/optimized/svelte_welcome_1200.webp"
       }
     }
   },
-  "src/lib/images/Surviving-the-Singularity-Cover.png": {
+  "static/Surviving-the-Singularity-Cover.png": {
     "original": {
       "width": 1410,
-      "height": 2250,
-      "path": "src/lib/images/Surviving-the-Singularity-Cover.png"
+      "height": 2056,
+      "path": "static/Surviving-the-Singularity-Cover.png"
     },
     "webp": {
       "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
@@ -1900,23 +190,1808 @@
       }
     }
   },
-  "src/lib/images/StSFreeGuide.png": {
+  "static/android-chrome-192x192.png": {
     "original": {
-      "width": 1080,
-      "height": 1080,
-      "path": "src/lib/images/StSFreeGuide.png"
+      "width": 192,
+      "height": 192,
+      "path": "static/android-chrome-192x192.png"
     },
     "webp": {
-      "original": "static/images/optimized/stsfreeguide_original.webp"
+      "original": "static/images/optimized/android_chrome_192x192_original.webp"
+    },
+    "variants": {}
+  },
+  "static/author-headshot.png": {
+    "original": {
+      "width": 480,
+      "height": 480,
+      "path": "static/author-headshot.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/author_headshot_original.webp"
     },
     "variants": {
       "400": {
-        "original": "static/images/optimized/stsfreeguide_400.png",
-        "webp": "static/images/optimized/stsfreeguide_400.webp"
+        "original": "static/images/optimized/author_headshot_400.png",
+        "webp": "static/images/optimized/author_headshot_400.webp"
+      }
+    }
+  },
+  "static/book-images/appe-cyberdeck.png": {
+    "original": {
+      "width": 760,
+      "height": 542,
+      "path": "static/book-images/appe-cyberdeck.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/appe_cyberdeck_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/appe_cyberdeck_400.png",
+        "webp": "static/images/optimized/appe_cyberdeck_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch00-madrone-bark.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1440,
+      "path": "static/book-images/ch00-madrone-bark.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch00_madrone_bark_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch00_madrone_bark_400.jpg",
+        "webp": "static/images/optimized/ch00_madrone_bark_400.webp"
       },
       "800": {
-        "original": "static/images/optimized/stsfreeguide_800.png",
-        "webp": "static/images/optimized/stsfreeguide_800.webp"
+        "original": "static/images/optimized/ch00_madrone_bark_800.jpg",
+        "webp": "static/images/optimized/ch00_madrone_bark_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch00_madrone_bark_1200.jpg",
+        "webp": "static/images/optimized/ch00_madrone_bark_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch01-atlas.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 1920,
+      "path": "static/book-images/ch01-atlas.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch01_atlas_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch01_atlas_400.jpg",
+        "webp": "static/images/optimized/ch01_atlas_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch01_atlas_800.jpg",
+        "webp": "static/images/optimized/ch01_atlas_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch01_atlas_1200.jpg",
+        "webp": "static/images/optimized/ch01_atlas_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch01-devendra.png": {
+    "original": {
+      "width": 760,
+      "height": 650,
+      "path": "static/book-images/ch01-devendra.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch01_devendra_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch01_devendra_400.png",
+        "webp": "static/images/optimized/ch01_devendra_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch01-m87-black-hole.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1920,
+      "path": "static/book-images/ch01-m87-black-hole.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch01_m87_black_hole_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch01_m87_black_hole_400.jpg",
+        "webp": "static/images/optimized/ch01_m87_black_hole_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch01_m87_black_hole_800.jpg",
+        "webp": "static/images/optimized/ch01_m87_black_hole_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch01_m87_black_hole_1200.jpg",
+        "webp": "static/images/optimized/ch01_m87_black_hole_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch01-pc-rig.png": {
+    "original": {
+      "width": 760,
+      "height": 654,
+      "path": "static/book-images/ch01-pc-rig.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch01_pc_rig_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch01_pc_rig_400.png",
+        "webp": "static/images/optimized/ch01_pc_rig_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch02-factory-robots.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch02-factory-robots.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch02_factory_robots_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch02_factory_robots_400.jpg",
+        "webp": "static/images/optimized/ch02_factory_robots_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch02_factory_robots_800.jpg",
+        "webp": "static/images/optimized/ch02_factory_robots_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch02_factory_robots_1200.jpg",
+        "webp": "static/images/optimized/ch02_factory_robots_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch02-waymo.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch02-waymo.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch02_waymo_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch02_waymo_400.jpg",
+        "webp": "static/images/optimized/ch02_waymo_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch02_waymo_800.jpg",
+        "webp": "static/images/optimized/ch02_waymo_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch02_waymo_1200.jpg",
+        "webp": "static/images/optimized/ch02_waymo_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch03-echo-dot.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 726,
+      "path": "static/book-images/ch03-echo-dot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch03_echo_dot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch03_echo_dot_400.jpg",
+        "webp": "static/images/optimized/ch03_echo_dot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch03_echo_dot_800.jpg",
+        "webp": "static/images/optimized/ch03_echo_dot_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch03_echo_dot_1200.jpg",
+        "webp": "static/images/optimized/ch03_echo_dot_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch03-falcon-heavy.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1280,
+      "path": "static/book-images/ch03-falcon-heavy.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch03_falcon_heavy_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch03_falcon_heavy_400.jpg",
+        "webp": "static/images/optimized/ch03_falcon_heavy_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch03_falcon_heavy_800.jpg",
+        "webp": "static/images/optimized/ch03_falcon_heavy_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch03_falcon_heavy_1200.jpg",
+        "webp": "static/images/optimized/ch03_falcon_heavy_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch04-da-vinci.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch04-da-vinci.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch04_da_vinci_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch04_da_vinci_400.jpg",
+        "webp": "static/images/optimized/ch04_da_vinci_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch04_da_vinci_800.jpg",
+        "webp": "static/images/optimized/ch04_da_vinci_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch04_da_vinci_1200.jpg",
+        "webp": "static/images/optimized/ch04_da_vinci_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch04-hubble-deep-field.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1920,
+      "path": "static/book-images/ch04-hubble-deep-field.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch04_hubble_deep_field_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch04_hubble_deep_field_400.jpg",
+        "webp": "static/images/optimized/ch04_hubble_deep_field_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch04_hubble_deep_field_800.jpg",
+        "webp": "static/images/optimized/ch04_hubble_deep_field_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch04_hubble_deep_field_1200.jpg",
+        "webp": "static/images/optimized/ch04_hubble_deep_field_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch05-nao.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 853,
+      "path": "static/book-images/ch05-nao.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch05_nao_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch05_nao_400.jpg",
+        "webp": "static/images/optimized/ch05_nao_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch05_nao_800.jpg",
+        "webp": "static/images/optimized/ch05_nao_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch05_nao_1200.jpg",
+        "webp": "static/images/optimized/ch05_nao_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch05-sdo-sun.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1833,
+      "path": "static/book-images/ch05-sdo-sun.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch05_sdo_sun_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch05_sdo_sun_400.jpg",
+        "webp": "static/images/optimized/ch05_sdo_sun_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch05_sdo_sun_800.jpg",
+        "webp": "static/images/optimized/ch05_sdo_sun_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch05_sdo_sun_1200.jpg",
+        "webp": "static/images/optimized/ch05_sdo_sun_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch05-woodstove.png": {
+    "original": {
+      "width": 760,
+      "height": 614,
+      "path": "static/book-images/ch05-woodstove.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch05_woodstove_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch05_woodstove_400.png",
+        "webp": "static/images/optimized/ch05_woodstove_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch06-edmond-de-belamy.png": {
+    "original": {
+      "width": 1280,
+      "height": 1285,
+      "path": "static/book-images/ch06-edmond-de-belamy.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch06_edmond_de_belamy_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch06_edmond_de_belamy_400.png",
+        "webp": "static/images/optimized/ch06_edmond_de_belamy_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch06_edmond_de_belamy_800.png",
+        "webp": "static/images/optimized/ch06_edmond_de_belamy_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch06_edmond_de_belamy_1200.png",
+        "webp": "static/images/optimized/ch06_edmond_de_belamy_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch06-tool-wall.png": {
+    "original": {
+      "width": 760,
+      "height": 654,
+      "path": "static/book-images/ch06-tool-wall.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch06_tool_wall_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch06_tool_wall_400.png",
+        "webp": "static/images/optimized/ch06_tool_wall_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch07-canned-music-1929.jpg": {
+    "original": {
+      "width": 1400,
+      "height": 2070,
+      "path": "static/book-images/ch07-canned-music-1929.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch07_canned_music_1929_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch07_canned_music_1929_400.jpg",
+        "webp": "static/images/optimized/ch07_canned_music_1929_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch07_canned_music_1929_800.jpg",
+        "webp": "static/images/optimized/ch07_canned_music_1929_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch07_canned_music_1929_1200.jpg",
+        "webp": "static/images/optimized/ch07_canned_music_1929_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch07-canned-music-1930.jpg": {
+    "original": {
+      "width": 1400,
+      "height": 2161,
+      "path": "static/book-images/ch07-canned-music-1930.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch07_canned_music_1930_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch07_canned_music_1930_400.jpg",
+        "webp": "static/images/optimized/ch07_canned_music_1930_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch07_canned_music_1930_800.jpg",
+        "webp": "static/images/optimized/ch07_canned_music_1930_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch07_canned_music_1930_1200.jpg",
+        "webp": "static/images/optimized/ch07_canned_music_1930_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch07-chess-battle-lines.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1920,
+      "path": "static/book-images/ch07-chess-battle-lines.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch07_chess_battle_lines_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch07_chess_battle_lines_400.jpg",
+        "webp": "static/images/optimized/ch07_chess_battle_lines_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch07_chess_battle_lines_800.jpg",
+        "webp": "static/images/optimized/ch07_chess_battle_lines_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch07_chess_battle_lines_1200.jpg",
+        "webp": "static/images/optimized/ch07_chess_battle_lines_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch07-pepper.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch07-pepper.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch07_pepper_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch07_pepper_400.jpg",
+        "webp": "static/images/optimized/ch07_pepper_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch07_pepper_800.jpg",
+        "webp": "static/images/optimized/ch07_pepper_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch07_pepper_1200.jpg",
+        "webp": "static/images/optimized/ch07_pepper_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch08-gary.png": {
+    "original": {
+      "width": 760,
+      "height": 654,
+      "path": "static/book-images/ch08-gary.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch08_gary_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch08_gary_400.png",
+        "webp": "static/images/optimized/ch08_gary_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch08-sophia.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 853,
+      "path": "static/book-images/ch08-sophia.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch08_sophia_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch08_sophia_400.jpg",
+        "webp": "static/images/optimized/ch08_sophia_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch08_sophia_800.jpg",
+        "webp": "static/images/optimized/ch08_sophia_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch08_sophia_1200.jpg",
+        "webp": "static/images/optimized/ch08_sophia_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch09-3d-printer.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 2560,
+      "path": "static/book-images/ch09-3d-printer.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch09_3d_printer_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch09_3d_printer_400.jpg",
+        "webp": "static/images/optimized/ch09_3d_printer_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch09_3d_printer_800.jpg",
+        "webp": "static/images/optimized/ch09_3d_printer_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch09_3d_printer_1200.jpg",
+        "webp": "static/images/optimized/ch09_3d_printer_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch09-controller.png": {
+    "original": {
+      "width": 760,
+      "height": 622,
+      "path": "static/book-images/ch09-controller.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch09_controller_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch09_controller_400.png",
+        "webp": "static/images/optimized/ch09_controller_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch09-reuben.png": {
+    "original": {
+      "width": 760,
+      "height": 652,
+      "path": "static/book-images/ch09-reuben.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch09_reuben_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch09_reuben_400.png",
+        "webp": "static/images/optimized/ch09_reuben_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch09-sophia-un.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 1625,
+      "path": "static/book-images/ch09-sophia-un.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch09_sophia_un_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch09_sophia_un_400.jpg",
+        "webp": "static/images/optimized/ch09_sophia_un_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch09_sophia_un_800.jpg",
+        "webp": "static/images/optimized/ch09_sophia_un_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch09_sophia_un_1200.jpg",
+        "webp": "static/images/optimized/ch09_sophia_un_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch10-nyse.jpg": {
+    "original": {
+      "width": 1024,
+      "height": 683,
+      "path": "static/book-images/ch10-nyse.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch10_nyse_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch10_nyse_400.jpg",
+        "webp": "static/images/optimized/ch10_nyse_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch10_nyse_800.jpg",
+        "webp": "static/images/optimized/ch10_nyse_800.webp"
+      }
+    }
+  },
+  "static/book-images/ch11-crucible.png": {
+    "original": {
+      "width": 760,
+      "height": 646,
+      "path": "static/book-images/ch11-crucible.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch11_crucible_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch11_crucible_400.png",
+        "webp": "static/images/optimized/ch11_crucible_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch11-spot.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 853,
+      "path": "static/book-images/ch11-spot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch11_spot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch11_spot_400.jpg",
+        "webp": "static/images/optimized/ch11_spot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch11_spot_800.jpg",
+        "webp": "static/images/optimized/ch11_spot_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch11_spot_1200.jpg",
+        "webp": "static/images/optimized/ch11_spot_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch12-farmbot-watering.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 379,
+      "path": "static/book-images/ch12-farmbot-watering.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch12_farmbot_watering_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch12_farmbot_watering_400.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_watering_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch12_farmbot_watering_800.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_watering_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch12_farmbot_watering_1200.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_watering_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch12-farmbot.jpg": {
+    "original": {
+      "width": 1125,
+      "height": 843,
+      "path": "static/book-images/ch12-farmbot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch12_farmbot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch12_farmbot_400.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch12_farmbot_800.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_800.webp"
+      }
+    }
+  },
+  "static/book-images/ch13-solar-barn.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1242,
+      "path": "static/book-images/ch13-solar-barn.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch13_solar_barn_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch13_solar_barn_400.jpg",
+        "webp": "static/images/optimized/ch13_solar_barn_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch13_solar_barn_800.jpg",
+        "webp": "static/images/optimized/ch13_solar_barn_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch13_solar_barn_1200.jpg",
+        "webp": "static/images/optimized/ch13_solar_barn_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch13-vise.png": {
+    "original": {
+      "width": 760,
+      "height": 662,
+      "path": "static/book-images/ch13-vise.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch13_vise_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch13_vise_400.png",
+        "webp": "static/images/optimized/ch13_vise_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch14-bell.png": {
+    "original": {
+      "width": 760,
+      "height": 666,
+      "path": "static/book-images/ch14-bell.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch14_bell_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch14_bell_400.png",
+        "webp": "static/images/optimized/ch14_bell_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch14-dead-mall.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 2560,
+      "path": "static/book-images/ch14-dead-mall.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch14_dead_mall_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch14_dead_mall_400.jpg",
+        "webp": "static/images/optimized/ch14_dead_mall_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch14_dead_mall_800.jpg",
+        "webp": "static/images/optimized/ch14_dead_mall_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch14_dead_mall_1200.jpg",
+        "webp": "static/images/optimized/ch14_dead_mall_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch14-frank.png": {
+    "original": {
+      "width": 760,
+      "height": 636,
+      "path": "static/book-images/ch14-frank.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch14_frank_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch14_frank_400.png",
+        "webp": "static/images/optimized/ch14_frank_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch15-probe.png": {
+    "original": {
+      "width": 760,
+      "height": 626,
+      "path": "static/book-images/ch15-probe.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch15_probe_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch15_probe_400.png",
+        "webp": "static/images/optimized/ch15_probe_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch16-servers.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1280,
+      "path": "static/book-images/ch16-servers.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch16_servers_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch16_servers_400.jpg",
+        "webp": "static/images/optimized/ch16_servers_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch16_servers_800.jpg",
+        "webp": "static/images/optimized/ch16_servers_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch16_servers_1200.jpg",
+        "webp": "static/images/optimized/ch16_servers_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch17-field-kit.png": {
+    "original": {
+      "width": 1648,
+      "height": 792,
+      "path": "static/book-images/ch17-field-kit.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch17_field_kit_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch17_field_kit_400.png",
+        "webp": "static/images/optimized/ch17_field_kit_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch17_field_kit_800.png",
+        "webp": "static/images/optimized/ch17_field_kit_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch17_field_kit_1200.png",
+        "webp": "static/images/optimized/ch17_field_kit_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch17-photobioreactor.png": {
+    "original": {
+      "width": 760,
+      "height": 606,
+      "path": "static/book-images/ch17-photobioreactor.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch17_photobioreactor_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch17_photobioreactor_400.png",
+        "webp": "static/images/optimized/ch17_photobioreactor_400.webp"
+      }
+    }
+  },
+  "static/book-images/ch17-workbench.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 2876,
+      "path": "static/book-images/ch17-workbench.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch17_workbench_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch17_workbench_400.jpg",
+        "webp": "static/images/optimized/ch17_workbench_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch17_workbench_800.jpg",
+        "webp": "static/images/optimized/ch17_workbench_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch17_workbench_1200.jpg",
+        "webp": "static/images/optimized/ch17_workbench_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch18-compass-map.jpg": {
+    "original": {
+      "width": 1479,
+      "height": 1114,
+      "path": "static/book-images/ch18-compass-map.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch18_compass_map_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch18_compass_map_400.jpg",
+        "webp": "static/images/optimized/ch18_compass_map_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch18_compass_map_800.jpg",
+        "webp": "static/images/optimized/ch18_compass_map_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch18_compass_map_1200.jpg",
+        "webp": "static/images/optimized/ch18_compass_map_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch19-iss-sunrise.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1280,
+      "path": "static/book-images/ch19-iss-sunrise.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch19_iss_sunrise_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch19_iss_sunrise_400.jpg",
+        "webp": "static/images/optimized/ch19_iss_sunrise_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch19_iss_sunrise_800.jpg",
+        "webp": "static/images/optimized/ch19_iss_sunrise_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch19_iss_sunrise_1200.jpg",
+        "webp": "static/images/optimized/ch19_iss_sunrise_1200.webp"
+      }
+    }
+  },
+  "static/book-images/conclusion-proofs.png": {
+    "original": {
+      "width": 760,
+      "height": 614,
+      "path": "static/book-images/conclusion-proofs.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/conclusion_proofs_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/conclusion_proofs_400.png",
+        "webp": "static/images/optimized/conclusion_proofs_400.webp"
+      }
+    }
+  },
+  "static/book-images/coop-cast.png": {
+    "original": {
+      "width": 1808,
+      "height": 606,
+      "path": "static/book-images/coop-cast.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/coop_cast_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/coop_cast_400.png",
+        "webp": "static/images/optimized/coop_cast_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/coop_cast_800.png",
+        "webp": "static/images/optimized/coop_cast_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/coop_cast_1200.png",
+        "webp": "static/images/optimized/coop_cast_1200.webp"
+      }
+    }
+  },
+  "static/book-images/intro-asimo.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 1705,
+      "path": "static/book-images/intro-asimo.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/intro_asimo_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/intro_asimo_400.jpg",
+        "webp": "static/images/optimized/intro_asimo_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/intro_asimo_800.jpg",
+        "webp": "static/images/optimized/intro_asimo_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/intro_asimo_1200.jpg",
+        "webp": "static/images/optimized/intro_asimo_1200.webp"
+      }
+    }
+  },
+  "static/book-images/intro-ox-plow.png": {
+    "original": {
+      "width": 760,
+      "height": 492,
+      "path": "static/book-images/intro-ox-plow.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/intro_ox_plow_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/intro_ox_plow_400.png",
+        "webp": "static/images/optimized/intro_ox_plow_400.webp"
+      }
+    }
+  },
+  "static/book-images/intro-robots.png": {
+    "original": {
+      "width": 1180,
+      "height": 684,
+      "path": "static/book-images/intro-robots.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/intro_robots_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/intro_robots_400.png",
+        "webp": "static/images/optimized/intro_robots_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/intro_robots_800.png",
+        "webp": "static/images/optimized/intro_robots_800.webp"
+      }
+    }
+  },
+  "static/book-images/part1-divider.png": {
+    "original": {
+      "width": 1920,
+      "height": 640,
+      "path": "static/book-images/part1-divider.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/part1_divider_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/part1_divider_400.png",
+        "webp": "static/images/optimized/part1_divider_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/part1_divider_800.png",
+        "webp": "static/images/optimized/part1_divider_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/part1_divider_1200.png",
+        "webp": "static/images/optimized/part1_divider_1200.webp"
+      }
+    }
+  },
+  "static/book-images/part2-divider.png": {
+    "original": {
+      "width": 1920,
+      "height": 640,
+      "path": "static/book-images/part2-divider.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/part2_divider_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/part2_divider_400.png",
+        "webp": "static/images/optimized/part2_divider_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/part2_divider_800.png",
+        "webp": "static/images/optimized/part2_divider_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/part2_divider_1200.png",
+        "webp": "static/images/optimized/part2_divider_1200.webp"
+      }
+    }
+  },
+  "static/book-images/part3-divider.png": {
+    "original": {
+      "width": 1920,
+      "height": 640,
+      "path": "static/book-images/part3-divider.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/part3_divider_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/part3_divider_400.png",
+        "webp": "static/images/optimized/part3_divider_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/part3_divider_800.png",
+        "webp": "static/images/optimized/part3_divider_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/part3_divider_1200.png",
+        "webp": "static/images/optimized/part3_divider_1200.webp"
+      }
+    }
+  },
+  "static/book-images/preface-reading-rage.png": {
+    "original": {
+      "width": 760,
+      "height": 599,
+      "path": "static/book-images/preface-reading-rage.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/preface_reading_rage_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/preface_reading_rage_400.png",
+        "webp": "static/images/optimized/preface_reading_rage_400.webp"
+      }
+    }
+  },
+  "static/book-images/sprites/sts-char-denny.png": {
+    "original": {
+      "width": 248,
+      "height": 248,
+      "path": "static/book-images/sprites/sts-char-denny.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_denny_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-char-devendra.png": {
+    "original": {
+      "width": 256,
+      "height": 256,
+      "path": "static/book-images/sprites/sts-char-devendra.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_devendra_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-char-elijah.png": {
+    "original": {
+      "width": 248,
+      "height": 248,
+      "path": "static/book-images/sprites/sts-char-elijah.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_elijah_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-char-frank.png": {
+    "original": {
+      "width": 256,
+      "height": 256,
+      "path": "static/book-images/sprites/sts-char-frank.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_frank_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-char-gary.png": {
+    "original": {
+      "width": 256,
+      "height": 256,
+      "path": "static/book-images/sprites/sts-char-gary.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_gary_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-char-marta.png": {
+    "original": {
+      "width": 248,
+      "height": 248,
+      "path": "static/book-images/sprites/sts-char-marta.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_marta_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-char-priya.png": {
+    "original": {
+      "width": 244,
+      "height": 244,
+      "path": "static/book-images/sprites/sts-char-priya.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_priya_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-char-reuben.png": {
+    "original": {
+      "width": 256,
+      "height": 256,
+      "path": "static/book-images/sprites/sts-char-reuben.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_char_reuben_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-bell.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-bell.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_bell_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-controller.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-controller.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_controller_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-crucible.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-crucible.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_crucible_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-cyberdeck.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-cyberdeck.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_cyberdeck_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-grow-tower.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-grow-tower.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_grow_tower_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-lora-node.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-lora-node.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_lora_node_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-novel-reader.png": {
+    "original": {
+      "width": 160,
+      "height": 160,
+      "path": "static/book-images/sprites/sts-sprite-novel-reader.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_novel_reader_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-ox-and-plow.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-ox-and-plow.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_ox_and_plow_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-pc-rig.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-pc-rig.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_pc_rig_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-photobioreactor.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-photobioreactor.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_photobioreactor_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-plasma-table.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-plasma-table.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_plasma_table_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-printer-3d.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-printer-3d.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_printer_3d_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-probe.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-probe.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_probe_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-proofs.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-proofs.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_proofs_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-solar-battery.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-solar-battery.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_solar_battery_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-tool-wall.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-tool-wall.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_tool_wall_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-vise.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-vise.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_vise_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-walk-behind-tractor.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-walk-behind-tractor.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_walk_behind_tractor_original.webp"
+    },
+    "variants": {}
+  },
+  "static/book-images/sprites/sts-sprite-woodstove.png": {
+    "original": {
+      "width": 128,
+      "height": 128,
+      "path": "static/book-images/sprites/sts-sprite-woodstove.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_sprite_woodstove_original.webp"
+    },
+    "variants": {}
+  },
+  "static/favicon-16x16.png": {
+    "original": {
+      "width": 16,
+      "height": 16,
+      "path": "static/favicon-16x16.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/favicon_16x16_original.webp"
+    },
+    "variants": {}
+  },
+  "static/favicon-32x32.png": {
+    "original": {
+      "width": 32,
+      "height": 32,
+      "path": "static/favicon-32x32.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/favicon_32x32_original.webp"
+    },
+    "variants": {}
+  },
+  "static/favicon.png": {
+    "original": {
+      "width": 100,
+      "height": 100,
+      "path": "static/favicon.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/favicon_original.webp"
+    },
+    "variants": {}
+  },
+  "static/future-projections/future-of-jobs.png": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/future-projections/future-of-jobs.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/future_of_jobs_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/future_of_jobs_400.png",
+        "webp": "static/images/optimized/future_of_jobs_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/future_of_jobs_800.png",
+        "webp": "static/images/optimized/future_of_jobs_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/future_of_jobs_1200.png",
+        "webp": "static/images/optimized/future_of_jobs_1200.webp"
+      }
+    }
+  },
+  "static/images/Surviving-the-Singularity-Cover.png": {
+    "original": {
+      "width": 1410,
+      "height": 2056,
+      "path": "static/images/Surviving-the-Singularity-Cover.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_400.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_800.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/claude-projects-weekend-project.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/claude-projects-weekend-project.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/claude_projects_weekend_project_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/claude_projects_weekend_project_400.jpg",
+        "webp": "static/images/optimized/claude_projects_weekend_project_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/claude_projects_weekend_project_800.jpg",
+        "webp": "static/images/optimized/claude_projects_weekend_project_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/claude_projects_weekend_project_1200.jpg",
+        "webp": "static/images/optimized/claude_projects_weekend_project_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/darpa-biomechanical-space-structures.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/darpa-biomechanical-space-structures.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/darpa_biomechanical_space_structures_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/darpa_biomechanical_space_structures_400.jpg",
+        "webp": "static/images/optimized/darpa_biomechanical_space_structures_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/darpa_biomechanical_space_structures_800.jpg",
+        "webp": "static/images/optimized/darpa_biomechanical_space_structures_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/darpa_biomechanical_space_structures_1200.jpg",
+        "webp": "static/images/optimized/darpa_biomechanical_space_structures_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/farm-bot-deep-dive.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/farm-bot-deep-dive.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/farm_bot_deep_dive_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/farm_bot_deep_dive_400.jpg",
+        "webp": "static/images/optimized/farm_bot_deep_dive_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/farm_bot_deep_dive_800.jpg",
+        "webp": "static/images/optimized/farm_bot_deep_dive_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/farm_bot_deep_dive_1200.jpg",
+        "webp": "static/images/optimized/farm_bot_deep_dive_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/robot-farm-bot.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/robot-farm-bot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/robot_farm_bot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/robot_farm_bot_400.jpg",
+        "webp": "static/images/optimized/robot_farm_bot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/robot_farm_bot_800.jpg",
+        "webp": "static/images/optimized/robot_farm_bot_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/robot_farm_bot_1200.jpg",
+        "webp": "static/images/optimized/robot_farm_bot_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/singularity-express.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/singularity-express.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/singularity_express_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/singularity_express_400.jpg",
+        "webp": "static/images/optimized/singularity_express_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/singularity_express_800.jpg",
+        "webp": "static/images/optimized/singularity_express_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/singularity_express_1200.jpg",
+        "webp": "static/images/optimized/singularity_express_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/whispers-ai-featured.png": {
+    "original": {
+      "width": 1536,
+      "height": 1024,
+      "path": "static/images/blog/whispers-ai-featured.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/whispers_ai_featured_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/whispers_ai_featured_400.png",
+        "webp": "static/images/optimized/whispers_ai_featured_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/whispers_ai_featured_800.png",
+        "webp": "static/images/optimized/whispers_ai_featured_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/whispers_ai_featured_1200.png",
+        "webp": "static/images/optimized/whispers_ai_featured_1200.webp"
+      }
+    }
+  },
+  "static/images/default-avatar.jpg": {
+    "original": {
+      "width": 400,
+      "height": 400,
+      "path": "static/images/default-avatar.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/default_avatar_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/default_avatar_400.jpg",
+        "webp": "static/images/optimized/default_avatar_400.webp"
+      }
+    }
+  },
+  "static/images/treasure-tavern-banner-600x800.png": {
+    "original": {
+      "width": 800,
+      "height": 600,
+      "path": "static/images/treasure-tavern-banner-600x800.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/treasure_tavern_banner_600x800_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/treasure_tavern_banner_600x800_400.png",
+        "webp": "static/images/optimized/treasure_tavern_banner_600x800_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/treasure_tavern_banner_600x800_800.png",
+        "webp": "static/images/optimized/treasure_tavern_banner_600x800_800.webp"
+      }
+    }
+  },
+  "static/images/treasure-tavern-logo-transparent.png": {
+    "original": {
+      "width": 500,
+      "height": 500,
+      "path": "static/images/treasure-tavern-logo-transparent.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/treasure_tavern_logo_transparent_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/treasure_tavern_logo_transparent_400.png",
+        "webp": "static/images/optimized/treasure_tavern_logo_transparent_400.webp"
+      }
+    }
+  },
+  "static/images/treasure-tavern-square.png": {
+    "original": {
+      "width": 600,
+      "height": 621,
+      "path": "static/images/treasure-tavern-square.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/treasure_tavern_square_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/treasure_tavern_square_400.png",
+        "webp": "static/images/optimized/treasure_tavern_square_400.webp"
+      }
+    }
+  },
+  "static/img-missing.png": {
+    "original": {
+      "width": 1024,
+      "height": 1024,
+      "path": "static/img-missing.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/img_missing_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/img_missing_400.png",
+        "webp": "static/images/optimized/img_missing_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/img_missing_800.png",
+        "webp": "static/images/optimized/img_missing_800.webp"
+      }
+    }
+  },
+  "static/sts-header_1000.png": {
+    "original": {
+      "width": 1000,
+      "height": 220,
+      "path": "static/sts-header_1000.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_header_1000_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/sts_header_1000_400.png",
+        "webp": "static/images/optimized/sts_header_1000_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/sts_header_1000_800.png",
+        "webp": "static/images/optimized/sts_header_1000_800.webp"
+      }
+    }
+  },
+  "static/sts-welcome.png": {
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "path": "static/sts-welcome.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_welcome_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/sts_welcome_400.png",
+        "webp": "static/images/optimized/sts_welcome_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/sts_welcome_800.png",
+        "webp": "static/images/optimized/sts_welcome_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/sts_welcome_1200.png",
+        "webp": "static/images/optimized/sts_welcome_1200.webp"
       }
     }
   }

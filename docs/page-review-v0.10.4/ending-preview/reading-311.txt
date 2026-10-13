@@ -1,0 +1,29 @@
+THE FOUNDATIONS
+If youʼve read this far, part of your brain is probably running its own
+premortem, looking for the flaw that lets it off the hook. The neigh-
+borhood factories canʼt bootstrap their supply chains. Somebody with
+more guns takes the greenhouse. People lose their minds without a
+nine-to-five. The powerful crush any alternative that gets big enough
+to notice.
+Youʼre right to worry about those things. Theyʼre real vulnerabilities.
+But using them as a reason to do nothing is fear wearing the costume
+of  caution.  Name  the  vulnerability  out  loud,  then  build  against  it
+anyway. Thatʼs the whole difference between a premortem and an
+excuse.
+What could stall it
+Iʼm  not  selling  a  certainty.  Hereʼs  what  could  slow  or  stop  the
+machine side of this story, and itʼs worth knowing:
+War. A big enough war stalls everything, this included.
+The chip bottleneck. A huge share of the worldʼs most advanced
+chips come out of a handful of fabs in Taiwan. A major disruption
+could constrain supply; its effect would depend on the damage,
+inventories, and alternative capacity.
+The materials bottleneck. Chipmaking needs specialized
+materials and equipment that canʼt always be substituted quickly.
+Ultra-high-purity quartz, for example, is used in crucibles for
+semiconductor manufacture. A disruption matters at a specific
+1. 
+2. 
+3. 
+SURVIVING THE SINGULARITY
+306

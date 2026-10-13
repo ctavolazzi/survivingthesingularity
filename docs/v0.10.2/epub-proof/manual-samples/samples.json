@@ -1,0 +1,935 @@
+{
+  "epub_sha256": "002ca8563a15536f919786b83bfbed34d3b233200d9574df2a20e3eb7a6efd46",
+  "viewports": [
+    390,
+    768
+  ],
+  "samples": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "width": 390,
+      "chapter": "EPUB/text/ch001.xhtml",
+      "embedded": "EPUB/media/file1.png",
+      "embedded_sha256": "a589cf1d182f5d955c13d8515a8f210a9ff514f81bcdecf49294bdc38132c2db",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-cutout-atlas-390.png",
+      "screenshot_sha256": "c88f6c2e81ec6587de8de70abc6c260384ccd6082238eede070f96fa0e11ce51",
+      "metrics": {
+        "src": "../media/file1.png",
+        "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.",
+        "figure": {
+          "x": 92.15625,
+          "y": 2672.78125,
+          "width": 205.6875,
+          "height": 383.90625,
+          "right": 297.84375
+        },
+        "image": {
+          "x": 92.15625,
+          "y": 2672.78125,
+          "width": 205.6875,
+          "height": 308.53125,
+          "right": 297.84375
+        },
+        "caption": {
+          "x": 92.15625,
+          "y": 2995.65625,
+          "width": 205.6875,
+          "height": 61.03125,
+          "right": 297.84375
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 1024,
+        "viewport": 390,
+        "captionText": "Atlas, outside the demonstration room. AI-adapted cutout from DARPA, public domain."
+      }
+    },
+    {
+      "file": "intro-nine-stages.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch001.xhtml",
+      "embedded": "EPUB/media/file5.svg",
+      "embedded_sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/intro-nine-stages-390.png",
+      "screenshot_sha256": "aaf6850a239462ca194a77caf9d3c1a9749765aa93001f786f92d3834dd2f826",
+      "metrics": {
+        "src": "../media/file5.svg",
+        "alt": "A speculative map of nine stages, grouped into AGI, ASI, and later imagined possibilities. Stage 4, a new social contract, is emphasized as a choice. Stages may overlap, stall, or fail to occur.",
+        "figure": {
+          "x": 8,
+          "y": 11199.625,
+          "width": 374,
+          "height": 574.03125,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 11199.625,
+          "width": 374,
+          "height": 498.65625,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 11712.625,
+          "width": 374,
+          "height": 61.03125,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 113,
+        "viewport": 390,
+        "captionText": "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later stages are imagined possibilities."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        640.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "ch05-horses-tractors.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch010.xhtml",
+      "embedded": "EPUB/media/file24.svg",
+      "embedded_sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch05-horses-tractors-390.png",
+      "screenshot_sha256": "dca2b23f583676d18b166f300e5be061f061ac18acd7fc621cc774362b9e35cb",
+      "metrics": {
+        "src": "../media/file24.svg",
+        "alt": "Two line charts show horses and mules on US farms peaking at 26.7 million in 1918 and falling to 8.3 million in 1949, while tractors rise from 1,000 in 1910 to 3.5 million in 1949. The vertical scales differ; all annual values are plotted.",
+        "figure": {
+          "x": 8,
+          "y": 14795.375,
+          "width": 374,
+          "height": 581.828125,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 14795.375,
+          "width": 374,
+          "height": 506.453125,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 15316.171875,
+          "width": 374,
+          "height": 61.03125,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 390,
+        "captionText": "US farm counts on January 1, 1910\u20131949. Separate vertical scales; 1948 and 1949 figures were preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p.\u00a045."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        650.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "ch09-greenhouse-bus.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch015.xhtml",
+      "embedded": "EPUB/media/file51.svg",
+      "embedded_sha256": "2896db1d01e32508eb6a91e3983c23d3a70ad5e113df3afbf4cc3c52c1370b9f",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch09-greenhouse-bus-390.png",
+      "screenshot_sha256": "f8b0afccc5e52c25d9b6eb4f98a4c86f24bce8645f661b7ff24a00445c060fc3",
+      "metrics": {
+        "src": "../media/file51.svg",
+        "alt": "SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.",
+        "figure": {
+          "x": 8,
+          "y": 12515.90625,
+          "width": 374,
+          "height": 602.171875,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 12515.90625,
+          "width": 374,
+          "height": 506.453125,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 13036.703125,
+          "width": 374,
+          "height": 81.375,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 390,
+        "captionText": "The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        650.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "ch11-cooling-loop.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch018.xhtml",
+      "embedded": "EPUB/media/file62.svg",
+      "embedded_sha256": "1bb47ceaf9d82e54a9fa9209d66e1a0d7828ea2933cb712f96bee181d5a51347",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch11-cooling-loop-390.png",
+      "screenshot_sha256": "4bdc59420b2da9d0cc93fd69e340bf0c4504c6c65f05c30527d53dd5bf296ecf",
+      "metrics": {
+        "src": "../media/file62.svg",
+        "alt": "A conceptual coolant loop carries heat from CPU and GPU water blocks through a pump to an outdoor radiator with airflow and returns cooler coolant. Heat rate equals mass flow times specific heat times temperature change; materials, pump, coolant and radiator must be compatible.",
+        "figure": {
+          "x": 8,
+          "y": 14496.140625,
+          "width": 374,
+          "height": 575.59375,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 14496.140625,
+          "width": 374,
+          "height": 500.21875,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 15010.703125,
+          "width": 374,
+          "height": 61.03125,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 112,
+        "viewport": 390,
+        "captionText": "Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in kilograms per second: Q\u0307 = \u1e41 Cp \u0394T. This diagram specifies neither components nor cooling capacity."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        642.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "ch12-csa-network.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch019.xhtml",
+      "embedded": "EPUB/media/file66.svg",
+      "embedded_sha256": "cc655f7b1b167ffb9ffd9f12c690d8b60d10c11b1d9468aba031fcbf3798df85",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch12-csa-network-390.png",
+      "screenshot_sha256": "b22245359619e6cf6cc949733cef1e3fed8a2aa43a2fe50cedb61e92a0cb48d3",
+      "metrics": {
+        "src": "../media/file66.svg",
+        "alt": "A proposed growing and tool network coordinated by people. Food and support reach households through paid work, transport and backup. Each resource has its own supply and demand budget.",
+        "figure": {
+          "x": 8,
+          "y": 9839.09375,
+          "width": 374,
+          "height": 511.703125,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 9839.09375,
+          "width": 374,
+          "height": 436.328125,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 10289.765625,
+          "width": 374,
+          "height": 61.03125,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 129,
+        "viewport": 390,
+        "captionText": "A shared-service network. People match usable surplus to requests and arrange delivery. The drawing promises neither a yield nor an autonomous crew."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        560.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch022.xhtml",
+      "embedded": "EPUB/media/file81.svg",
+      "embedded_sha256": "17935101242fe9c5e0e3ccac30be276a50d85c5f558feb17c653d2eb6507ea73",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-scene-living-soil-390.png",
+      "screenshot_sha256": "f2da1330ce6361b7837453e3b10a3a71f46790b3dbf44eb4dfe2cfb7748968d2",
+      "metrics": {
+        "src": "../media/file81.svg",
+        "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+        "figure": {
+          "x": 8,
+          "y": 8892.015625,
+          "width": 374,
+          "height": 427.71875,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 8892.015625,
+          "width": 374,
+          "height": 311.65625,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 9218.015625,
+          "width": 374,
+          "height": 101.71875,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 960,
+        "viewport": 390,
+        "captionText": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        960.0,
+        800.0
+      ],
+      "minimum_explicit_svg_font": 24.0,
+      "minimum_label_css_px_estimate": 9.35
+    },
+    {
+      "file": "ch17-algae-loop.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch024.xhtml",
+      "embedded": "EPUB/media/file88.svg",
+      "embedded_sha256": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch17-algae-loop-390.png",
+      "screenshot_sha256": "540d2cb90d746595dc471490bcfe1d2c0baf2b9eb8c54bb6faa7226ce09a0392",
+      "metrics": {
+        "src": "../media/file88.svg",
+        "alt": "Aquaponic water recirculates from a fish tank through solids handling and biofiltration to grow beds and back. Algae cultivation is a separate branch whose harvested output may supply a validated share of feed. Feed, nutrients, water, power and labor remain inputs.",
+        "figure": {
+          "x": 8,
+          "y": 7636.1875,
+          "width": 374,
+          "height": 536.546875,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 7636.1875,
+          "width": 374,
+          "height": 481.515625,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 8132.046875,
+          "width": 374,
+          "height": 40.6875,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 117,
+        "viewport": 390,
+        "captionText": "Growing an ingredient can reduce a bought input. It doesn\u2019t establish a complete fish diet or a closed system."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        618.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "ch19-conversion-ladder.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch026.xhtml",
+      "embedded": "EPUB/media/file97.svg",
+      "embedded_sha256": "5abb544f56196e1d4fe62b95222f283d8b19a22f4f8ee98524048248dd4155bc",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch19-conversion-ladder-390.png",
+      "screenshot_sha256": "af9c66a7a919d05bb5443a98c64ce6451e123a2da6421e66b35e437c40890b50",
+      "metrics": {
+        "src": "../media/file97.svg",
+        "alt": "Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France\u2019s precedent concerns surplus recovery rules; land trusts use long-term leases.",
+        "figure": {
+          "x": 8,
+          "y": 158.625,
+          "width": 374,
+          "height": 578.703125,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 158.625,
+          "width": 374,
+          "height": 503.328125,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 676.296875,
+          "width": 374,
+          "height": 61.03125,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 390,
+        "captionText": "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        646.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "appd-precedent-timeline.svg",
+      "width": 390,
+      "chapter": "EPUB/text/ch031.xhtml",
+      "embedded": "EPUB/media/file100.svg",
+      "embedded_sha256": "5e7f9129e015a0c7499820b00650b4517eaa39e1c3326dfc5de60de2123eeb53",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/appd-precedent-timeline-390.png",
+      "screenshot_sha256": "080621e05245ba337487f3093af603d677dad414e36b5910692237824cde6d03",
+      "metrics": {
+        "src": "../media/file100.svg",
+        "alt": "Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.",
+        "figure": {
+          "x": 8,
+          "y": 366.015625,
+          "width": 374,
+          "height": 581.828125,
+          "right": 382
+        },
+        "image": {
+          "x": 8,
+          "y": 366.015625,
+          "width": 374,
+          "height": 506.453125,
+          "right": 382
+        },
+        "caption": {
+          "x": 8,
+          "y": 886.8125,
+          "width": 374,
+          "height": 61.03125,
+          "right": 382
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 390,
+        "captionText": "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        650.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 10.908333333333333
+    },
+    {
+      "file": "v101-cutout-atlas.png",
+      "width": 768,
+      "chapter": "EPUB/text/ch001.xhtml",
+      "embedded": "EPUB/media/file1.png",
+      "embedded_sha256": "a589cf1d182f5d955c13d8515a8f210a9ff514f81bcdecf49294bdc38132c2db",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-cutout-atlas-768.png",
+      "screenshot_sha256": "d9ad61025aff6c8347353ef12372abfbdeb68ce0a8547805e370ad9bc9a7836d",
+      "metrics": {
+        "src": "../media/file1.png",
+        "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.",
+        "figure": {
+          "x": 240,
+          "y": 2461.875,
+          "width": 288,
+          "height": 487.03125,
+          "right": 528
+        },
+        "image": {
+          "x": 240,
+          "y": 2461.875,
+          "width": 288,
+          "height": 432,
+          "right": 528
+        },
+        "caption": {
+          "x": 240,
+          "y": 2908.21875,
+          "width": 288,
+          "height": 40.6875,
+          "right": 528
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 1024,
+        "viewport": 768,
+        "captionText": "Atlas, outside the demonstration room. AI-adapted cutout from DARPA, public domain."
+      }
+    },
+    {
+      "file": "intro-nine-stages.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch001.xhtml",
+      "embedded": "EPUB/media/file5.svg",
+      "embedded_sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/intro-nine-stages-768.png",
+      "screenshot_sha256": "0c7b4642ddbedc03c47e0f4fdb8f7a5b8ac7d977180b56742de48607cd1303fe",
+      "metrics": {
+        "src": "../media/file5.svg",
+        "alt": "A speculative map of nine stages, grouped into AGI, ASI, and later imagined possibilities. Stage 4, a new social contract, is emphasized as a choice. Stages may overlap, stall, or fail to occur.",
+        "figure": {
+          "x": 8,
+          "y": 9175.328125,
+          "width": 752,
+          "height": 1037.34375,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 9175.328125,
+          "width": 752,
+          "height": 1002.65625,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 10192.328125,
+          "width": 752,
+          "height": 20.34375,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 113,
+        "viewport": 768,
+        "captionText": "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later stages are imagined possibilities."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        640.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    },
+    {
+      "file": "ch05-horses-tractors.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch010.xhtml",
+      "embedded": "EPUB/media/file24.svg",
+      "embedded_sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch05-horses-tractors-768.png",
+      "screenshot_sha256": "9c0f3bcc8fa507b89ab7eb6d7bff6ccdaf6a5c555188abf05a2c02a9bb8a24e0",
+      "metrics": {
+        "src": "../media/file24.svg",
+        "alt": "Two line charts show horses and mules on US farms peaking at 26.7 million in 1918 and falling to 8.3 million in 1949, while tractors rise from 1,000 in 1910 to 3.5 million in 1949. The vertical scales differ; all annual values are plotted.",
+        "figure": {
+          "x": 8,
+          "y": 10352.203125,
+          "width": 752,
+          "height": 1073.359375,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 10352.203125,
+          "width": 752,
+          "height": 1018.328125,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 11384.875,
+          "width": 752,
+          "height": 40.6875,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 768,
+        "captionText": "US farm counts on January 1, 1910\u20131949. Separate vertical scales; 1948 and 1949 figures were preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p.\u00a045."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        650.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    },
+    {
+      "file": "ch09-greenhouse-bus.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch015.xhtml",
+      "embedded": "EPUB/media/file51.svg",
+      "embedded_sha256": "2896db1d01e32508eb6a91e3983c23d3a70ad5e113df3afbf4cc3c52c1370b9f",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch09-greenhouse-bus-768.png",
+      "screenshot_sha256": "88ba88582d1bacee3f8bef739e19a4ae6d2dd5325a678fbd4ee792a43efc44d7",
+      "metrics": {
+        "src": "../media/file51.svg",
+        "alt": "SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.",
+        "figure": {
+          "x": 8,
+          "y": 11977.078125,
+          "width": 752,
+          "height": 1073.359375,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 11977.078125,
+          "width": 752,
+          "height": 1018.328125,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 13009.75,
+          "width": 752,
+          "height": 40.6875,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 768,
+        "captionText": "The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        650.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    },
+    {
+      "file": "ch11-cooling-loop.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch018.xhtml",
+      "embedded": "EPUB/media/file62.svg",
+      "embedded_sha256": "1bb47ceaf9d82e54a9fa9209d66e1a0d7828ea2933cb712f96bee181d5a51347",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch11-cooling-loop-768.png",
+      "screenshot_sha256": "24489482fced4a41db139bad52e85ed8252130ebc3723bc4fcc54237d7f480bd",
+      "metrics": {
+        "src": "../media/file62.svg",
+        "alt": "A conceptual coolant loop carries heat from CPU and GPU water blocks through a pump to an outdoor radiator with airflow and returns cooler coolant. Heat rate equals mass flow times specific heat times temperature change; materials, pump, coolant and radiator must be compatible.",
+        "figure": {
+          "x": 8,
+          "y": 10544.71875,
+          "width": 752,
+          "height": 1060.828125,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 10544.71875,
+          "width": 752,
+          "height": 1005.796875,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 11564.859375,
+          "width": 752,
+          "height": 40.6875,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 112,
+        "viewport": 768,
+        "captionText": "Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in kilograms per second: Q\u0307 = \u1e41 Cp \u0394T. This diagram specifies neither components nor cooling capacity."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        642.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    },
+    {
+      "file": "ch12-csa-network.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch019.xhtml",
+      "embedded": "EPUB/media/file66.svg",
+      "embedded_sha256": "cc655f7b1b167ffb9ffd9f12c690d8b60d10c11b1d9468aba031fcbf3798df85",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch12-csa-network-768.png",
+      "screenshot_sha256": "445c24d093c03da88d5b8b6ecdfc7152f5f72197aae412c242c5b2def6a49bde",
+      "metrics": {
+        "src": "../media/file66.svg",
+        "alt": "A proposed growing and tool network coordinated by people. Food and support reach households through paid work, transport and backup. Each resource has its own supply and demand budget.",
+        "figure": {
+          "x": 8,
+          "y": 7320.78125,
+          "width": 752,
+          "height": 932.359375,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 7320.78125,
+          "width": 752,
+          "height": 877.328125,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 8212.453125,
+          "width": 752,
+          "height": 40.6875,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 129,
+        "viewport": 768,
+        "captionText": "A shared-service network. People match usable surplus to requests and arrange delivery. The drawing promises neither a yield nor an autonomous crew."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        560.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch022.xhtml",
+      "embedded": "EPUB/media/file81.svg",
+      "embedded_sha256": "17935101242fe9c5e0e3ccac30be276a50d85c5f558feb17c653d2eb6507ea73",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/v101-scene-living-soil-768.png",
+      "screenshot_sha256": "49aaeaf8e39169505c3198240931895d609127c178c5e9a0e736c5b2ebaf20a5",
+      "metrics": {
+        "src": "../media/file81.svg",
+        "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+        "figure": {
+          "x": 8,
+          "y": 7212.15625,
+          "width": 752,
+          "height": 681.6875,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 7212.15625,
+          "width": 752,
+          "height": 626.65625,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 7853.15625,
+          "width": 752,
+          "height": 40.6875,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 960,
+        "viewport": 768,
+        "captionText": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        960.0,
+        800.0
+      ],
+      "minimum_explicit_svg_font": 24.0,
+      "minimum_label_css_px_estimate": 18.8
+    },
+    {
+      "file": "ch17-algae-loop.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch024.xhtml",
+      "embedded": "EPUB/media/file88.svg",
+      "embedded_sha256": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch17-algae-loop-768.png",
+      "screenshot_sha256": "7bef3481e2d59b841a3a35e30f3f0f9c78b6683ba74582ca83749ab764a42bc6",
+      "metrics": {
+        "src": "../media/file88.svg",
+        "alt": "Aquaponic water recirculates from a fish tank through solids handling and biofiltration to grow beds and back. Algae cultivation is a separate branch whose harvested output may supply a validated share of feed. Feed, nutrients, water, power and labor remain inputs.",
+        "figure": {
+          "x": 8,
+          "y": 6311.109375,
+          "width": 752,
+          "height": 1002.875,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 6311.109375,
+          "width": 752,
+          "height": 968.1875,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 7293.640625,
+          "width": 752,
+          "height": 20.34375,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 117,
+        "viewport": 768,
+        "captionText": "Growing an ingredient can reduce a bought input. It doesn\u2019t establish a complete fish diet or a closed system."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        618.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    },
+    {
+      "file": "ch19-conversion-ladder.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch026.xhtml",
+      "embedded": "EPUB/media/file97.svg",
+      "embedded_sha256": "5abb544f56196e1d4fe62b95222f283d8b19a22f4f8ee98524048248dd4155bc",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/ch19-conversion-ladder-768.png",
+      "screenshot_sha256": "4f5bac838d14a5b61c9e6d19ca1babb0683cae18cef799c0be6bffea3713e6d9",
+      "metrics": {
+        "src": "../media/file97.svg",
+        "alt": "Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France\u2019s precedent concerns surplus recovery rules; land trusts use long-term leases.",
+        "figure": {
+          "x": 8,
+          "y": 90.625,
+          "width": 752,
+          "height": 1067.09375,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 90.625,
+          "width": 752,
+          "height": 1012.0625,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 1117.03125,
+          "width": 752,
+          "height": 40.6875,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 768,
+        "captionText": "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        646.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    },
+    {
+      "file": "appd-precedent-timeline.svg",
+      "width": 768,
+      "chapter": "EPUB/text/ch031.xhtml",
+      "embedded": "EPUB/media/file100.svg",
+      "embedded_sha256": "5e7f9129e015a0c7499820b00650b4517eaa39e1c3326dfc5de60de2123eeb53",
+      "screenshot": "docs/v0.10.2/epub-proof/manual-samples/appd-precedent-timeline-768.png",
+      "screenshot_sha256": "0c42d895948c419487857d47b805b34e2b03a8adb677fe11d6b3378e46ddad18",
+      "metrics": {
+        "src": "../media/file100.svg",
+        "alt": "Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.",
+        "figure": {
+          "x": 8,
+          "y": 232.828125,
+          "width": 752,
+          "height": 1073.359375,
+          "right": 760
+        },
+        "image": {
+          "x": 8,
+          "y": 232.828125,
+          "width": 752,
+          "height": 1018.328125,
+          "right": 760
+        },
+        "caption": {
+          "x": 8,
+          "y": 1265.5,
+          "width": 752,
+          "height": 40.6875,
+          "right": 760
+        },
+        "float": "none",
+        "complete": true,
+        "naturalWidth": 111,
+        "viewport": 768,
+        "captionText": "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D."
+      },
+      "svg_viewBox": [
+        0.0,
+        0.0,
+        480.0,
+        650.0
+      ],
+      "minimum_explicit_svg_font": 14.0,
+      "minimum_label_css_px_estimate": 21.933333333333334
+    }
+  ],
+  "missing_requests": [],
+  "limits": "Exact packaged XHTML/CSS/image bytes in Chrome. Font estimates use image width and SVG geometry, not physical-device measurement. Images do not reflow their internal labels when body-text size changes."
+}

@@ -1,0 +1,332 @@
+{
+  "method": "Prepared SVG font sizes scaled to4.56in PDF placement width; graphical estimates, not extracted PDF text sizes. Browser proofs separately check revised layouts.",
+  "figures": [
+    {
+      "file": "appd-precedent-timeline.svg",
+      "prepared_width": 480.0,
+      "labels": 37,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch02-eighteen-days.svg",
+      "prepared_width": 480.0,
+      "labels": 22,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch05-horses-tractors.svg",
+      "prepared_width": 480.0,
+      "labels": 25,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch06-capability-access.svg",
+      "prepared_width": 480.0,
+      "labels": 16,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch08-cognitive-extraction.svg",
+      "prepared_width": 480.0,
+      "labels": 12,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch08-firewall-pipeline.svg",
+      "prepared_width": 480.0,
+      "labels": 14,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch08-focus-recovery.svg",
+      "prepared_width": 480.0,
+      "labels": 7,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch08-info-architectures.svg",
+      "prepared_width": 480.0,
+      "labels": 14,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch08-star-vs-mesh.svg",
+      "prepared_width": 480.0,
+      "labels": 7,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch09-cnc-bed.svg",
+      "prepared_width": 480.0,
+      "labels": 12,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch09-greenhouse-bus.svg",
+      "prepared_width": 480.0,
+      "labels": 19,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch09-hyperlocal-vs-global.svg",
+      "prepared_width": 480.0,
+      "labels": 20,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch09-region-ring.svg",
+      "prepared_width": 480.0,
+      "labels": 16,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch10-algorithm-unlock.svg",
+      "prepared_width": 480.0,
+      "labels": 12,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch10-model-collapse.svg",
+      "prepared_width": 480.0,
+      "labels": 14,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch11-cooling-loop.svg",
+      "prepared_width": 480.0,
+      "labels": 16,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch12-csa-network.svg",
+      "prepared_width": 480.0,
+      "labels": 15,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch13-shell-architecture.svg",
+      "prepared_width": 480.0,
+      "labels": 14,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch13-thermal-seal.svg",
+      "prepared_width": 480.0,
+      "labels": 12,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch14-logistic-shockwave.svg",
+      "prepared_width": 480.0,
+      "labels": 17,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch14-mesh-comms.svg",
+      "prepared_width": 480.0,
+      "labels": 9,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch15-clt-firewall.svg",
+      "prepared_width": 480.0,
+      "labels": 9,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch15-soil-food-web.svg",
+      "prepared_width": 480.0,
+      "labels": 15,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch16-sneakernet.svg",
+      "prepared_width": 480.0,
+      "labels": 9,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch17-algae-loop.svg",
+      "prepared_width": 480.0,
+      "labels": 22,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch17-dc-native.svg",
+      "prepared_width": 480.0,
+      "labels": 19,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch17-fab-lab.svg",
+      "prepared_width": 480.0,
+      "labels": 10,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch17-lora-node.svg",
+      "prepared_width": 456.0,
+      "labels": 26,
+      "minimum_pt": 9.504
+    },
+    {
+      "file": "ch18-social-contract.svg",
+      "prepared_width": 480.0,
+      "labels": 16,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "ch19-conversion-ladder.svg",
+      "prepared_width": 480.0,
+      "labels": 33,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "coop-cast.svg",
+      "prepared_width": 480.0,
+      "labels": 13,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "intro-food-insecurity.svg",
+      "prepared_width": 480.0,
+      "labels": 22,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "intro-nine-stages.svg",
+      "prepared_width": 480.0,
+      "labels": 28,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "original-04-seed-and-root.svg",
+      "prepared_width": 298.0,
+      "labels": 0,
+      "minimum_pt": null
+    },
+    {
+      "file": "original-07-pamphlet-and-thread.svg",
+      "prepared_width": 298.0,
+      "labels": 0,
+      "minimum_pt": null
+    },
+    {
+      "file": "original-09-repair-tools.svg",
+      "prepared_width": 289.1,
+      "labels": 0,
+      "minimum_pt": null
+    },
+    {
+      "file": "original-11-soil-profile.svg",
+      "prepared_width": 309.0,
+      "labels": 0,
+      "minimum_pt": null
+    },
+    {
+      "file": "v101-chart-ammonia-energy.svg",
+      "prepared_width": 480.0,
+      "labels": 21,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-chart-data-centre-demand.svg",
+      "prepared_width": 480.0,
+      "labels": 17,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-chart-forecast-shift.svg",
+      "prepared_width": 480.0,
+      "labels": 20,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-chart-income-food-access.svg",
+      "prepared_width": 480.0,
+      "labels": 15,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-chart-land-values.svg",
+      "prepared_width": 480.0,
+      "labels": 18,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-chart-meal-response.svg",
+      "prepared_width": 480.0,
+      "labels": 23,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-chart-waste-pathways.svg",
+      "prepared_width": 480.0,
+      "labels": 28,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-chart-weights-memory.svg",
+      "prepared_width": 480.0,
+      "labels": 26,
+      "minimum_pt": 9.234
+    },
+    {
+      "file": "v101-scene-food-delivery.svg",
+      "prepared_width": 960.0,
+      "labels": 14,
+      "minimum_pt": 8.208
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "prepared_width": 960.0,
+      "labels": 14,
+      "minimum_pt": 8.208
+    },
+    {
+      "file": "v101-scene-shared-workshop.svg",
+      "prepared_width": 960.0,
+      "labels": 14,
+      "minimum_pt": 8.208
+    },
+    {
+      "file": "v101-visual-access-gate.svg",
+      "prepared_width": 480.0,
+      "labels": 5,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "v101-visual-attention-ribbon.svg",
+      "prepared_width": 480.0,
+      "labels": 5,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "v101-visual-continuity-calendar.svg",
+      "prepared_width": 480.0,
+      "labels": 8,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "v101-visual-local-copies.svg",
+      "prepared_width": 480.0,
+      "labels": 7,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "v101-visual-operating-stack.svg",
+      "prepared_width": 480.0,
+      "labels": 10,
+      "minimum_pt": 9.575999999999999
+    },
+    {
+      "file": "v101-visual-shared-land.svg",
+      "prepared_width": 480.0,
+      "labels": 5,
+      "minimum_pt": 9.575999999999999
+    }
+  ],
+  "labelled": 50,
+  "minimum_pt": 8.208,
+  "below_8pt": []
+}

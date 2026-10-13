@@ -32,9 +32,10 @@
  * which surfaces far from the change that caused it and long after it merged.
  * WARN_AT_FRACTION below turns that cliff into a runway.
  *
- * When the warning fires, the fix is not to compress the book. It is to move
- * the file to an R2 public bucket on a subdomain: R2 charges nothing for
- * egress at any volume, so the hosting cost of the book does not change.
+ * Digital reading copies are generated separately from full-size publication
+ * masters, with image optimization and text/resource proofs. If that format
+ * outgrows Pages, move the asset to external storage rather than weakening the
+ * size guard or silently reducing quality further.
  *
  * THE DESIGN DECISION THAT MATTERS
  *
@@ -44,18 +45,25 @@
  * exactly the release where it was needed, which is the failure it exists to
  * prevent.
  *
- * It also GENERATES static/_redirects, for the same reason: a redirect target
+ * It also GENERATES _redirects, for the same reason: a redirect target
  * typed by hand is one more copy of the version to forget.
  */
 
-import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, relative } from 'node:path';
+
+// The filename rule is shared with the two route components that build the
+// href and with scripts/publish-book-downloads.mjs, which places the files.
+// Asserting a name this script spells itself would only prove it agrees with
+// itself - the 404 this check exists to prevent was four copies of one string.
+import { assetName, DOWNLOAD_FORMATS, releasedVersion } from '../src/lib/bookManifest.js';
+import { verifyDownloadReceipt } from './lib/book-download-receipt.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BOOK_JSON = 'src/lib/data/book/book.json';
 const DOWNLOADS = 'static/downloads';
-const REDIRECTS = 'static/_redirects';
+const REDIRECTS = '_redirects';
 
 /** Cloudflare Pages hard limit for a single site asset. Not negotiable. */
 const PAGES_MAX_BYTES = 25 * 1024 * 1024;
@@ -68,33 +76,62 @@ const WARN_AT_FRACTION = 0.85;
  * message or preorder email. They get redirected to the current file rather
  * than 404ing. Append at version close; never remove.
  */
-const RETIRED_VERSIONS = ['0.7.2', '0.7.3'];
+const RETIRED_VERSIONS = ['0.7.2', '0.7.3', '0.7.4', '0.7.5'];
 
-const FORMATS = ['pdf', 'epub'];
+const FORMATS = DOWNLOAD_FORMATS;
 
 const mib = (bytes) => (bytes / 1024 / 1024).toFixed(2);
-const assetName = (version, ext) => `Surviving-the-Singularity-v${version}.${ext}`;
 
 // ── Read the single source of truth ──────────────────────────────────────────
 
-let version;
+let manifest;
 try {
-  version = JSON.parse(readFileSync(join(ROOT, BOOK_JSON), 'utf8')).version;
+  manifest = JSON.parse(readFileSync(join(ROOT, BOOK_JSON), 'utf8'));
 } catch (err) {
   console.error(`\ncheck-book-downloads: cannot read ${BOOK_JSON}: ${err.message}\n`);
   process.exit(1);
 }
 
-if (!version) {
-  console.error(`\ncheck-book-downloads: ${BOOK_JSON} has no "version". Every download URL is derived from it.\n`);
+if (!manifest.version) {
+  console.error(`\ncheck-book-downloads: ${BOOK_JSON} has no "version".\n`);
   process.exit(1);
 }
+
+/**
+ * TWO VERSIONS, TWO JOBS - see releasedVersion() in src/lib/bookManifest.js.
+ *
+ * Everything a reader touches derives from `released`, the newest PUBLISHED
+ * build. `version` is the open working label and runs ahead of `released` for
+ * the whole editing cycle. This check used to derive from `version`, which
+ * made it fail on every mid-cycle push by construction: weeks of failure
+ * emails that all meant "the cycle is open", burying the one that would have
+ * meant "readers are getting 404s". An alarm that is expected to be red is
+ * not an alarm (2026-08-04, CT). Now green means the released files exist and
+ * every derived link resolves, in ANY cycle state; red means a reader-facing
+ * problem, full stop.
+ */
+const version = releasedVersion(manifest);
+const sourceAhead = manifest.version !== version;
 
 // ── Assert the linked files exist and can be deployed ────────────────────────
 
 const errors = [];
 const warnings = [];
 const shipped = [];
+let retiredVersions = RETIRED_VERSIONS;
+
+try {
+  const receipt = JSON.parse(readFileSync(join(ROOT, 'publication/book-downloads.json'), 'utf8'));
+  verifyDownloadReceipt({ root: ROOT, directory: join(ROOT, DOWNLOADS), receipt, manifest, version });
+  retiredVersions = [...new Set([...RETIRED_VERSIONS, ...(receipt.retired_versions ?? [])])];
+  const expected = new Set(FORMATS.map(ext => assetName(version, ext)));
+  const obsolete = readdirSync(join(ROOT, DOWNLOADS)).filter(name => /^Surviving-the-Singularity-v[\d.]+\.(pdf|epub)$/.test(name) && !expected.has(name));
+  if (obsolete.length) throw new Error(`Obsolete public book artifacts remain: ${obsolete.join(', ')}`);
+  if (existsSync(join(ROOT, 'static/StS-free-sample.pdf'))) throw new Error('Retired sample PDF is still public; use the current /sample reader');
+  if (existsSync(join(ROOT, DOWNLOADS, 'Municipal-Autonomy-Code.pdf'))) throw new Error('Retired municipal template is still public; use the corrected book appendix');
+} catch (error) {
+  errors.push({ what: error.message, why: 'Readers must receive the proved, current published edition.', fix: 'python3 scripts/prepare-book-downloads.py && npm run book:release' });
+}
 
 for (const ext of FORMATS) {
   const name = assetName(version, ext);
@@ -104,8 +141,10 @@ for (const ext of FORMATS) {
   if (!existsSync(abs)) {
     errors.push({
       what: `${DOWNLOADS}/${name} does not exist`,
-      why: `/exclusive-friends-only and /book both link ${href}, derived from ${BOOK_JSON} version ${version}. That link will 404.`,
-      fix: `cp book-build/${name} ${DOWNLOADS}/`
+      why: `/exclusive-friends-only and /book both link ${href}, derived from ${BOOK_JSON} released ${version}. That link will 404.`,
+      // Not a cp line to retype. Retyping a version into a shell is the manual
+      // step that produced the 404 documented at the top of this file.
+      fix: `npm run book:publish`
     });
     continue;
   }
@@ -128,7 +167,8 @@ for (const ext of FORMATS) {
 }
 
 if (errors.length) {
-  console.error(`\ncheck-book-downloads: ${errors.length} problem(s). book.json is at v${version}.\n`);
+  console.error(`\ncheck-book-downloads: ${errors.length} problem(s). book.json releases v${version}` +
+    (sourceAhead ? ` (source at v${manifest.version})` : '') + `.\n`);
   for (const e of errors) {
     console.error(`  ${e.what}`);
     console.error(`    why: ${e.why}`);
@@ -142,8 +182,8 @@ if (errors.length) {
 
 const lines = [
   '# GENERATED by scripts/check-book-downloads.mjs at prebuild. Do not edit.',
-  '# Every target is derived from src/lib/data/book/book.json, so the current',
-  '# version cannot drift out of sync with the files that actually ship.',
+  '# Every target is derived from the "released" version in',
+  '# src/lib/data/book/book.json, so links cannot drift from the files that ship.',
   '',
   '# Stable aliases. These paths never change, so a link shared today keeps',
   '# working after the next version bump. Prefer them when sending the book.'
@@ -152,10 +192,12 @@ const lines = [
 for (const ext of FORMATS) {
   lines.push(`/downloads/Surviving-the-Singularity.${ext}  /downloads/${assetName(version, ext)}  302`);
 }
+lines.push('/StS-free-sample.pdf  /sample  302');
+lines.push('/downloads/Municipal-Autonomy-Code.pdf  /book/appendix-a  302');
 
 lines.push('', '# Retired versions land on the current file instead of 404ing.');
 
-for (const old of RETIRED_VERSIONS) {
+for (const old of retiredVersions) {
   if (old === version) continue;
   for (const ext of FORMATS) {
     lines.push(`/downloads/${assetName(old, ext)}  /downloads/${assetName(version, ext)}  302`);
@@ -168,6 +210,13 @@ writeFileSync(join(ROOT, REDIRECTS), lines.join('\n'), 'utf8');
 // ── Report ───────────────────────────────────────────────────────────────────
 
 for (const w of warnings) console.warn(`check-book-downloads: WARNING - ${w}`);
+
+if (sourceAhead) {
+  console.log(
+    `check-book-downloads: open cycle. Source is at v${manifest.version}; readers ` +
+      `ship v${version} until the next \`npm run book:release\` stamps a new release.`
+  );
+}
 
 console.log(
   `check-book-downloads: clean. v${version} shipping ` +

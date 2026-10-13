@@ -1,0 +1,27 @@
+with that modelʼs output, and train the next model on the flooded
+internet. In 2024, a team led by Ilia Shumailov published a study in
+Nature showing what happens when models train, generation after
+generation, on data produced by earlier models. Shumailov et al., AI
+models collapse when trained on recursively generated data
+Picture one simplified training lineage. Call the real human data dis-
+tribution P0(x). Each new generation k learns from finite samples of
+the one before:
+Pk(x) = ∫qk(x|y)Pk − 1(y) dy
+Here qk is a schematic transition kernel for the training and sampling
+process,  not  the  paperʼs  general  equation  for  a  language  model.
+Under the repeated resampling conditions the study examines, two
+things  can  happen.  This  isnʼt  a  claim  that  every  use  of  synthetic
+training data causes collapse; selection, checking, and access to real
+data change the setup.
+The  tails  get  pruned. Models  favor  high-probability  outputs  and
+under-sample the rare ones. Over generations, the spread of the dis-
+tribution shrinks. The weird hand-made engineering trick, the spe-
+cific local history, the odd brilliant idea, those live in the tails, and
+theyʼre the first to go.
+The  errors  compound. A  modelʼs  small  biases  become  the  next
+modelʼs training data, and the next. Some of the paperʼs simplified
+examples converge toward a narrow spike. That spike neednʼt sit at
+the original average; a distribution can lose its variety and drift at the
+same time. A copy of a copy of a copy.
+SURVIVING THE SINGULARITY
+186

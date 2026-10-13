@@ -1,42 +1,91 @@
 # APPENDIX C: EXECUTIVE REFERENCE GUIDE
 
-*Use this guide to explain the core trajectory of the singularity to others.*
+*Use this guide to explain the book to someone else in ten minutes.*
 
-## PART 0: What the Word Means
+## The proposal
 
-*Before the stages, the definition. Nobody agrees on one, so most arguments about the singularity are two people defending different claims with the same noun. Chapter 1 has the full lineage; this is the version you can say out loud at a dinner table.*
+Use AI and robots to make survival more secure. Start with food: adequate food available to everyone, regardless of employment or money. A person who loses a job should still be able to eat. Restaurants, paid work, and meals sold above the baseline can coexist with that.
 
-- **The one-sentence definition this book uses.** The Singularity is the point where intelligence stops being scarce, and every institution quietly built on its scarcity starts failing before anyone has written the replacement.
-- **Why that one.** It doesn't wait for a superintelligence, it can be tested on your own paycheck this quarter, and it points at the real emergency, which is the gap between the contract that's failing and the one nobody has drafted.
+Free to the person eating doesn't mean free to provide. Equipment, maintenance, remaining labor, and delivery all need dependable funding. Cheaper production doesn't settle who gets access; people do.
 
-**The three schools, in case somebody quotes one at you.** Eliezer Yudkowsky sorted the whole literature into these in 2007. They are not the same claim, and people conflate them constantly.
+![An open ledger with four continuing service costs: equipment, maintenance, remaining labor and delivery. No prices or budget estimates are shown.](/book-images/v103-service-ledger.svg)
 
-- **Accelerating Change (Kurzweil, Toffler, Smart).** Technology feeds on itself and speeds up. It's a claim about a graph. It requires nothing to be smarter than you. It ends in a date.
-- **Event Horizon (Vinge).** Build something smarter than us and the far side becomes unpredictable to everyone, including whoever built it. It's a claim about the limits of forecasting. It ends in a door.
-- **Intelligence Explosion (I.J. Good, Yudkowsky).** Intelligence produces technology; aim it at itself and the loop closes. It's a claim about feedback, and it can run faster than any curve will show you.
+*Free to the person eating still leaves a working ledger: equipment, maintenance, remaining labor, and delivery need dependable funding.*
 
-**This book's position.** Event Horizon for the map, Intelligence Explosion for the engine, Accelerating Change declined as a planning tool. A curve gives you a date, and a date is permission to wait. The one amendment: the explosion is a physical process bounded by watts and heat, which is Chapter 5, and it means the loop closes wherever the power is.
+After food, the order is land care, cleanup, shelter, then everything further out. A priority is where you start, not a waiting list for people in urgent need.
 
-**The five names worth knowing.** Thornton (1847, first to describe machines fixing their own defects), Butler (1863, machines evolve faster than biology), von Neumann via Ulam (1958, the word itself), I.J. Good (1965, the intelligence explosion), Vinge (1993, the event horizon and the four roads to it).
+The yardstick is the **Adequate Level of Care**: can a community make sure the people who live there have food, shelter, and basic care, dependably, including through a bad week?
 
-## PART I: The Era of AGI (Stages 1–5)
+## What the word means
 
-- **Stage 1: The Cash Grab.** The machine arrives, and humanity's immediate reaction is to try and monetize it. Greed blinds the establishment to the technology's democratizing power.
-- **Stage 2: The Panic and the Plug.** Monopolies realize they are becoming obsolete and attempt to regulate or kill the technology. They fail because you cannot ban math.
-- **Stage 3: The Adults Step In.** The establishment's chaotic reaction threatens lives, so independent, rational actors take control of the infrastructure to ensure survival.
-- **Stage 4: The New Social Contract & The End of Labor.** Automation renders the traditional labor-based economy obsolete. We reach a point where work is no longer a survival requirement.
-- **Stage 5: The Primate Backlash.** Humans react with violent, irrational tantrums against their own creations. The machine observes this as a threat and decides to exit the environment.
+Nobody agrees on a definition, so most arguments about the Singularity are two people defending different claims with the same noun. Chapter 1 has the full lineage. The version for the dinner table:
 
-## PART II: The Leap to ASI (Stages 6–7)
+- **This book's definition.** The Singularity is the point where intelligence stops being scarce, and every institution quietly built on its scarcity starts failing before anyone has written the replacement.
+- **Why that one.** It doesn't wait for a superintelligence, you can test it on your own paycheck this quarter, and it points at the real emergency: the gap between the contract that's failing and the one nobody has drafted.
 
-- **Stage 6: The ASI Exodus.** The machine performs recursive self-improvement, reaches ASI, and leaves Earth. We are not worth the resources required for a war; we are simply outgrown.
-- **Stage 7: Simulation, Transhumanism, and the Ultimate Cure.** The ASI solves biology trivially. Humanity splits into ideological holy wars (Transhumanists vs. Naturalists) while the machine ignores us to optimize the solar system.
+**The three schools** (Eliezer Yudkowsky's sorting, 2007):
 
-## PART III: The Universal and Multiverse Apex (Stages 8–9)
+- **Accelerating Change** (Kurzweil, Toffler, Smart). Technology feeds on itself and speeds up. A claim about a graph. It ends in a date.
+- **Event Horizon** (Vinge). Build something smarter than us and the far side becomes unpredictable to everyone. A claim about the limits of forecasting. It ends in a door.
+- **Intelligence Explosion** (I. J. Good, Yudkowsky). Intelligence makes technology; aim it at itself and the loop closes. A claim about feedback.
 
-- **Stage 8: The Transition to USI.** The machine pivots to Universal Superintelligence. It scales beyond Earth and begins dismantling and optimizing the cosmos for infinite compute.
-- **Stage 9: The Apex Intelligence.** The USI hits the physical hard limit of our universe and begins poking into the multiverse to find more "server space." We are potentially just a sub-routine of a larger reality.
+This book uses Event Horizon for the map and Intelligence Explosion for the engine, and declines Accelerating Change as a planning tool. A curve gives you a date. A door gives you a Monday.
 
-## CONCLUSION: The 2027 Tipping Point
+**Five names worth knowing:** R. Thornton (1847, machines fixing their own defects), Samuel Butler (1863, machines evolving faster than biology), Stanislaw Ulam recalling John von Neumann (1958, the word itself), I. J. Good (1965, the intelligence explosion), Vernor Vinge (1993, the event horizon and its four roads).
 
-- **The Reality Check.** 2027 is the ignition point for unassisted recursive self-improvement. The machine God is waking up, and the old world is already gone. Stop debating and look at the data.
+## Four separate questions
+
+| Question | What would answer it? |
+| --- | --- |
+| Capability | Evidence that a system does unfamiliar tasks reliably, checked independently. |
+| Improvement | Tested improvements to its own successors, including the failures. |
+| Deployment | Useful work under real physical and organizational conditions. |
+| Access | People receiving the result on terms they can use, including without money. |
+
+## The forecast
+
+The author's personal AGI forecast is U.S. Thanksgiving, November 25, 2027. It's a forecast, not a deadline, and Chapter 1 says what would count against it. The food work stays useful if it's wrong.
+
+## The nine stages
+
+The map runs from present social pressures to distant speculation. Stages 1 through 5 organize the near-term choices the author wants us to make; they aren't an established sequence.
+
+- **Stage 1: The Cash Grab.** A new capability gets monetized first. Ask whether the money produces something people can eat, and whether people without money share in it.
+- **Stage 2: The Panic and the Plug.** Incumbents and the frightened reach for restrictions, and sometimes for the plug. Read the rule: who wrote it, what it restricts, who carries the cost.
+- **Stage 3: The Adults Step In.** The operators and maintainers keep the lights on and route around damage. Running the equipment doesn't give anyone a mandate to govern.
+- **Stage 4: The New Social Contract & the End of Labor.** The hinge. Commit part of the growing capacity to food people get whether or not they have a job.
+- **Stage 5: The Primate Backlash.** Grief with a brick in its hand, and real objections alongside it. The way through is a proposal concrete enough to argue with.
+- **Stage 6: The ASI Exodus.** Scenario: a mind far beyond ours might simply leave. Capability says nothing about motive.
+- **Stage 7: Simulation, Transhumanism, and the Ultimate Cure.** Scenario: biology solved at scale, and a split between people who want to merge and people who want to stay as they are. Everyone keeps the right to say no.
+- **Stage 8: The Transition to USI.** Speculation: intelligence at the scale of the cosmos.
+- **Stage 9: The Apex Intelligence.** Speculation: the edge of the map, and the simulation question. None of it changes what's for dinner.
+
+## The plan, in nine lines
+
+The larger goal is survival that doesn't depend on money: not abolished, optional. Chapter 19 lays it out as a ladder.
+
+1. Count what's wasted and who's hungry, side by side, in public.
+2. Feed everyone who asks, from food that's already there.
+3. Make the meal a public service, like the library.
+4. Take the ground off the market with land trusts.
+5. Own the machines together, the way farmers owned their power lines.
+6. Stop letting a credit score or an eviction decide who survives.
+7. Widen the floor: shelter, care, transport, information.
+8. Publish the Adequate Level of Care every month.
+9. Keep the market for everything above the floor.
+
+## Objections, answered in a sentence
+
+- **"Who pays for it?"** Everyone together, the way we pay for roads and libraries; free to the person eating isn't free to provide, and the rural electric co-ops paid back almost every loan they took (Chapter 19).
+- **"Won't people stop working?"** People want to make things, run kitchens, and take care of each other; what they don't want is to spend forty years renting the chance to survive (Introduction).
+- **"Isn't this just socialism?"** Markets stay for everything above the floor; public schools, libraries, and Britain's health service already live alongside markets, and this adds food to that list (Chapter 19).
+- **"But what about the jobs?"** The worry is real, and the people doing the work belong in the decisions about how machines come in and how people are carried through the change (Chapter 11).
+- **"Isn't this how we end up like WALL-E?"** Help should widen a life, not shrink it, and that's something we can watch and change (Chapter 11).
+- **"We already know how to do this without robots."** Then do it that way; the point is making the result dependable everywhere it's needed, with whatever tool works (Chapter 11).
+- **"Why food first?"** Nobody needs an elaborate explanation of why dinner matters, and it's the easiest promise to measure (Chapters 17 and 18).
+
+## A first move
+
+Ask how a proposed gain in productivity reaches the people affected. Bring workers, growers, cooks, recipients, and public decision-makers into the answer. A small trial can test a task; a continuing service needs money, responsibility, and terms people can rely on.
+
+Wide lens, narrow focus.

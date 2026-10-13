@@ -1,0 +1,36 @@
+The co-opʼs first real manufacturing run, the thing Elijah would later
+describe to strangers as the neighborhood factory booting up, though at
+the time it was just a January argument in a cold shed, was forty
+greenhouse controllers for the CSA network two valleys over.
+The order came through a friend of a friend of Priyaʼs: forty small
+boxes that could read soil moisture and air temperature and open a
+vent or a valve without asking a server in Virginia for permission.
+Real money, real deadline, real customers with real seedlings on the
+line. Elijah volunteered for the design with the eagerness of a man
+who had spent the autumn sweeping floors and learning the shop
+and could feel, at last, the shape of something he was actually trained
+to do.
+He designed a beautiful thing. He wants that on the record, with the
+caveat  that  so  does  everyone  in  this  story  every  time  he  says  it.
+Custom four-layer PCB, an elegant little system-on-module, sensors
+from a Swiss outfit whose datasheets read like poetry, the whole thing
+potted  in  resin,  sleek  as  a  river  stone,  no  user-serviceable  parts
+inside. He presented it to the shop on a Tuesday with renders.  Ren-
+ders.
+Marta looked at the renders for a while.
+“Walk me through the bill of materials,” she said, so he did, and she
+wrote three numbers on the whiteboard while he talked: 11, 1, 0.
+“Eleven weeks,” she said, tapping the first number, “is the lead time
+on that Swiss sensor, I just looked it up, and thatʼs the  quoted lead
+time, which means itʼs a prayer. One,” the second number, “is how
+many suppliers make that module, which means the day they discon-
+tinue it, all forty of these are bricks, and weʼre the ones who sold
+bricks  to  farmers.  And  zero,”  she  tapped  the  last,  “is  how  many
+people in this valley can fix a potted resin board when it fails during
+frost week. Including you, college.  Especially you, because youʼll be
+the one whoʼs busy.” She capped the marker. “Itʼs a gorgeous design.
+Itʼs a Claypot design. Everything single-sourced, nothing repairable,
+the whole thing optimized for the demo instead of the Tuesday three
+years from now when it breaks during calving. Design it again, and
+CHAPTER 9
+159

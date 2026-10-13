@@ -2,12 +2,13 @@
   import BlogPostTemplate from '$lib/components/BlogPostTemplate.svelte';
 
   const post = {
+    slug: 'synthetic-biological-computers',
     title: 'Synthetic Biological Intelligence: Living Human Cells Power Next-Gen Computing',
     date: '2025-04-07',
     author: 'Christopher Tavolazzi',
     image: '/images/surviving_the_singularity_cover_1200.png',
     readingTime: '8 min read',
-    description: 'The world\'s first commercial "biological computer" fuses living human neurons with silicon hardware, potentially outpacing traditional AI systems while raising profound ethical questions.',
+    description: 'Explore Cortical Labs\' CL1, living-neuron computing experiments, and the limits of comparing their learning and energy use with conventional AI.',
     audioSrc: '',
     audioTitle: ''
   };
@@ -27,14 +28,6 @@
 
   // Recommended videos
   const recommendedVideos = [
-    {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
-      id: "U1tQbD25dGY",
-      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
-    },
     {
       id: "7Ip8TyjMyho",
       title: "How AI and Robotics Will Reshape Our Economy"
@@ -71,21 +64,12 @@
   }
 </style>
 
-<svelte:head>
-  <title>Synthetic Biological Computers: The Future of Living Technology | Surviving the Singularity</title>
-  <meta name="description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
-  <meta property="og:title" content="Synthetic Biological Computers: The Future of Living Technology" />
-  <meta property="og:description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
-  <meta property="og:image" content="https://survivingthesingularity.com/images/og/blog.png" />
-  <meta property="og:url" content="https://survivingthesingularity.com/blog/synthetic-biological-computers" />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Synthetic Biological Computers: The Future of Living Technology" />
-  <meta name="twitter:description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
-  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/blog.png" />
-</svelte:head>
-
 <BlogPostTemplate {post} {options} {recommendedVideos}>
+  <p>
+    <strong>Correction, October 13, 2026:</strong> The learning and energy comparisons below have been revised.
+    Power ratings and training energy are different measures, and the cited neural-culture experiments do not
+    establish equivalent language-model performance.
+  </p>
   <h2>Dawn of the Biological Computer</h2>
   <p>
     In a development that feels like it jumped straight from the pages of science fiction,
@@ -134,18 +118,23 @@
     rather than electronic ones.
   </p>
 
-  <h2>The Advantages of Neural Computing</h2>
+  <h2>What the Learning Experiments Show</h2>
   <p>
-    According to Cortical Labs, these biological neural networks learn with remarkable speed and flexibility,
-    potentially outpacing the silicon-based AI chips currently used to train large language models like ChatGPT.
-    Previous demonstrations showed neuron-based systems learning simple tasks, such as playing Pong, in just minutes -
-    showcasing an adaptability that far exceeds current AI capabilities.
+    <a href="https://doi.org/10.1016/j.neuron.2022.09.001">Kagan et al.'s 2022 DishBrain experiment</a>
+    reported learning within five minutes in a simplified Pong environment. A
+    <a href="https://research.monash.edu/en/publications/dynamic-network-plasticity-and-sample-efficiency-in-biological-ne/">2025 study comparing selected deep-reinforcement-learning methods</a>
+    examines sample efficiency in that setting. These are specific learning results, not demonstrations that
+    neural cultures outperform language models or current AI generally.
   </p>
 
   <p>
-    The energy efficiency is another significant advantage. While training large AI models can consume megawatt-hours
-    of electricity (comparable to hundreds of homes annually), a full rack of 30 CL1 units reportedly consumes only
-    about 1,000 watts - roughly equivalent to a small microwave oven.
+    The original energy comparison was not valid: watts measure power, while megawatt-hours measure energy over time.
+    <a href="https://arxiv.org/abs/2104.10350">Patterson et al. (2021)</a> estimated 1,287 megawatt-hours for GPT-3 training;
+    a rack power rating measures something different. The
+    <a href="https://corticallabs.com/cl1">CL1 product page</a> describes its life support and computing platform,
+    but does not establish equivalent language-model performance. We have removed the unverified 30-unit rack figure.
+    Demonstrating an efficiency advantage requires measured energy for matched tasks and output quality, including
+    the electronics, life support and other system overhead.
   </p>
 
   <h2>Potential Applications</h2>
@@ -157,7 +146,7 @@
     <li><strong>Medical Research:</strong> Providing unprecedented insights into neurological diseases and accelerating drug discovery</li>
     <li><strong>Advanced AI:</strong> Creating systems with more human-like flexibility, adaptability, and learning capabilities</li>
     <li><strong>Robotics:</strong> Enabling robots that learn and adapt in real-time rather than through tedious reprogramming</li>
-    <li><strong>Sustainable Computing:</strong> Delivering high computational power with significantly lower energy requirements</li>
+    <li><strong>Sustainable Computing:</strong> Investigating whether biological systems can reduce measured energy for particular tasks, with complete system costs included</li>
   </ul>
 
   <h2>The Ethical Minefield</h2>

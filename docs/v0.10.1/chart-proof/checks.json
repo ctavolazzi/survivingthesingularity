@@ -1,0 +1,244 @@
+{
+  "data_validation": {
+    "figures": 8,
+    "data_charts": 6,
+    "derived_graphics": 1,
+    "illustrative_workflows": 1,
+    "waste_percentage_sum": 100,
+    "waste_source_row_rounding_difference_tons": 1
+  },
+  "negative_controls": {
+    "percentage": true,
+    "forecast_type": true,
+    "label_overlap": true,
+    "undersized_label": true,
+    "path_through_label": true
+  },
+  "figures": {
+    "waste-pathways": {
+      "screen": {
+        "path": "static/book-images/v101-chart-waste-pathways.svg",
+        "sha256": "0429307b4752a784c06a2a461b635073fc50ffe53f3563a44123ef87dcbcfdbc",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 6.40283203125,
+          "min_pt": 9.2337890625,
+          "labels": 28,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-waste-pathways.svg",
+        "sha256": "c191734a13ec7bbd1882a149bbd8a597a839e9cd22d7fef55c3e6ad0b4b1243d",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 6.40283203125,
+          "min_pt": 9.2337890625,
+          "labels": 28,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    },
+    "land-values": {
+      "screen": {
+        "path": "static/book-images/v101-chart-land-values.svg",
+        "sha256": "901e3530df715f7fae44f2901175e1e98006853a45d55de947db425c11d4cf46",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.357747395833333,
+          "min_pt": 9.2337890625,
+          "labels": 18,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-land-values.svg",
+        "sha256": "01b05854aa077ec44879e61bd3679943438c32bc08ce5eef6595236a9224a84a",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.357747395833333,
+          "min_pt": 9.2337890625,
+          "labels": 18,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    },
+    "income-food-access": {
+      "screen": {
+        "path": "static/book-images/v101-chart-income-food-access.svg",
+        "sha256": "a35750d78a8b4deae7770d0f364e7c39f3c074bdd2da197ca4f94264f8364cbd",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 4.787760416666667,
+          "min_pt": 9.2337890625,
+          "labels": 15,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-income-food-access.svg",
+        "sha256": "8a39039eb3ee7f92fcce1f39cec0df834e6650c934aaa1df0bddfcf5114672a5",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 4.787760416666667,
+          "min_pt": 9.2337890625,
+          "labels": 15,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    },
+    "data-centre-demand": {
+      "screen": {
+        "path": "static/book-images/v101-chart-data-centre-demand.svg",
+        "sha256": "31067186e55140fc31d9a5106e592675e7123332773ca92e2769430a9f5cd811",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.3388671875,
+          "min_pt": 9.2337890625,
+          "labels": 17,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-data-centre-demand.svg",
+        "sha256": "e20d70acdcd5d17d30326de2e539cb15401372a735c9947623500c7e3c5df62d",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.3388671875,
+          "min_pt": 9.2337890625,
+          "labels": 17,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    },
+    "forecast-shift": {
+      "screen": {
+        "path": "static/book-images/v101-chart-forecast-shift.svg",
+        "sha256": "f92083133d81252869467d0b84081a23242f5353b3854625e84c3c61440e4f49",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.262858072916667,
+          "min_pt": 9.2337890625,
+          "labels": 20,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-forecast-shift.svg",
+        "sha256": "f17a1b2b01cb8db0a3eeead18469935260664611ea67a801d2b5283dfd9135c9",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.262858072916667,
+          "min_pt": 9.2337890625,
+          "labels": 20,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    },
+    "ammonia-energy": {
+      "screen": {
+        "path": "static/book-images/v101-chart-ammonia-energy.svg",
+        "sha256": "1c76d0e955d926851e8e27e37cf332738ea7c36d75d51bd81cb33244d2eb47d4",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.623860677083333,
+          "min_pt": 9.2337890625,
+          "labels": 21,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-ammonia-energy.svg",
+        "sha256": "db1df8587058e8c920cbac261a4b90fc4c37e024b4718ebe0c305f08ca2330a3",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.623860677083333,
+          "min_pt": 9.2337890625,
+          "labels": 21,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    },
+    "weights-memory": {
+      "screen": {
+        "path": "static/book-images/v101-chart-weights-memory.svg",
+        "sha256": "61969acc27f2e6a94fa72d7c65a702e4b053e240cc9a8f02d876ff554147c656",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.414876302083333,
+          "min_pt": 9.2337890625,
+          "labels": 26,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-weights-memory.svg",
+        "sha256": "2657bb2229747becb13bb2fa9ee96eee5581783b0335b0acfff488504d483a48",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 5.414876302083333,
+          "min_pt": 9.2337890625,
+          "labels": 26,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    },
+    "meal-response": {
+      "screen": {
+        "path": "static/book-images/v101-chart-meal-response.svg",
+        "sha256": "79648863c02519be44c599b087233ff2b094015f2c8b576be8197995492c30f0",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 6.421712239583333,
+          "min_pt": 9.2337890625,
+          "labels": 23,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      },
+      "print": {
+        "path": "static/book-images/print/v101-chart-meal-response.svg",
+        "sha256": "be07cd42e23cb52c03b4763ca937a7e3c71adb6da4598c6924f8a519e64c7817",
+        "geometry": {
+          "width_in": 4.559895833333333,
+          "height_in": 6.421712239583333,
+          "min_pt": 9.2337890625,
+          "labels": 23,
+          "overlaps": [],
+          "outside": [],
+          "path_and_box_errors": []
+        }
+      }
+    }
+  },
+  "limits": "Digital text geometry at 4.56-inch width and source arithmetic checks, not physical printer acceptance, independent replication of the source surveys, or a forecast accuracy test."
+}

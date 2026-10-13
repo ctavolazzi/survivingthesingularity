@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { browser } from '$app/environment';
@@ -34,21 +35,8 @@
     showFaq: false
   };
 
-  // Default recommended videos - can be overridden by the page using this template
-  export let recommendedVideos = [
-    {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    },
-    {
-      id: "YLo7EH2zsW0",
-      title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
-    }
-  ];
+  // Pages may supply verified recommendations; there are no generic defaults.
+  export let recommendedVideos = [];
 
   // FAQ data - can be provided by the page using this template
   export let faqItems = [];
@@ -94,16 +82,9 @@
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content={post.description} />
-  <meta property="og:title" content={post.title} />
-  <meta property="og:description" content={post.description} />
-  <meta property="og:image" content={post.image.includes('?') ? post.image : `${post.image}?format=png`} />
-  <meta property="og:url" content={`https://survivingthesingularity.com/blog/${post.slug || ''}`} />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={post.title} />
-  <meta name="twitter:description" content={post.description} />
-  <meta name="twitter:image" content={post.image.includes('?') ? post.image : `${post.image}?format=png`} />
 </svelte:head>
+
+<SocialMeta title={post.title} description={post.description} />
 
 {#if options.showProgressBar}
   <!-- Reading Progress Bar -->

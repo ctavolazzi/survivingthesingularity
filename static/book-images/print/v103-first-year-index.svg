@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 398" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">YOUR FIRST YEAR, AT A GLANCE</title>
+<desc id="desc">A two-page index of the twelve monthly themes: get your bearings, know your numbers, know your work, learn the tools, plant something, find your people, count the food, own something, tell it, find ground, go on the record, and look back then forward. Move months to fit your life and season.</desc>
+<rect width="480" height="398" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">YOUR FIRST YEAR, AT A GLANCE</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Move a month to fit your season or life.</text>
+<path d="M20 100H230V357H20ZM250 100H460V357H250Z" fill="#ffffff" stroke="#a2afa6" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M20 105L230 105" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<path d="M250 105L460 105" fill="none" stroke="#315f78" stroke-width="3"/>
+<text x="31" y="131" font-size="17" fill="#9a4f13" text-anchor="start" font-weight="400">01</text>
+<text x="70" y="131" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Get your bearings</text>
+<path d="M70 144L214 144" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="31" y="171" font-size="17" fill="#9a4f13" text-anchor="start" font-weight="400">02</text>
+<text x="70" y="171" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Know your numbers</text>
+<path d="M70 184L214 184" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="31" y="211" font-size="17" fill="#9a4f13" text-anchor="start" font-weight="400">03</text>
+<text x="70" y="211" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Know your work</text>
+<path d="M70 224L214 224" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="31" y="251" font-size="17" fill="#9a4f13" text-anchor="start" font-weight="400">04</text>
+<text x="70" y="251" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Learn the tools</text>
+<path d="M70 264L214 264" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="31" y="291" font-size="17" fill="#9a4f13" text-anchor="start" font-weight="400">05</text>
+<text x="70" y="291" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Plant something</text>
+<path d="M70 304L214 304" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="31" y="331" font-size="17" fill="#9a4f13" text-anchor="start" font-weight="400">06</text>
+<text x="70" y="331" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Find your people</text>
+<text x="261" y="131" font-size="17" fill="#315f78" text-anchor="start" font-weight="400">07</text>
+<text x="300" y="131" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Count the food</text>
+<path d="M300 144L444 144" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="261" y="171" font-size="17" fill="#315f78" text-anchor="start" font-weight="400">08</text>
+<text x="300" y="171" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Own something</text>
+<path d="M300 184L444 184" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="261" y="211" font-size="17" fill="#315f78" text-anchor="start" font-weight="400">09</text>
+<text x="300" y="211" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Tell it</text>
+<path d="M300 224L444 224" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="261" y="251" font-size="17" fill="#315f78" text-anchor="start" font-weight="400">10</text>
+<text x="300" y="251" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Find ground</text>
+<path d="M300 264L444 264" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="261" y="291" font-size="17" fill="#315f78" text-anchor="start" font-weight="400">11</text>
+<text x="300" y="291" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Go on the record</text>
+<path d="M300 304L444 304" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="261" y="331" font-size="17" fill="#315f78" text-anchor="start" font-weight="400">12</text>
+<text x="300" y="327" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Look back,</text>
+<text x="300" y="348" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">then forward</text>
+<text x="20" y="382" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Choose a scale you can sustain.</text>
+</svg>

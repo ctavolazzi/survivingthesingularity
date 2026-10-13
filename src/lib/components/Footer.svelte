@@ -11,7 +11,7 @@
 
       <div class="footer-links-group">
         <div class="footer-col">
-          <h4 class="footer-col-title">Navigate</h4>
+          <h2 class="footer-col-title">Navigate</h2>
           <a href="/" class="footer-link">Home</a>
           <a href="/book" class="footer-link">The Book</a>
           <a href="/early-access" class="footer-link footer-link-accent">Preorder the Book</a>
@@ -19,7 +19,7 @@
           <a href="/blog" class="footer-link">Blog</a>
         </div>
         <div class="footer-col">
-          <h4 class="footer-col-title">Resources</h4>
+          <h2 class="footer-col-title">Resources</h2>
           <a href="/about" class="footer-link">About</a>
           <a href="/policies" class="footer-link">Privacy</a>
           <a href="/terms" class="footer-link">Terms</a>
@@ -30,7 +30,7 @@
           <a href="/devlog" class="footer-link">Devlog</a>
         </div>
         <div class="footer-col">
-          <h4 class="footer-col-title">Subscribe</h4>
+          <h2 class="footer-col-title">Subscribe</h2>
           <a href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer" class="footer-link footer-link-accent">
             Substack
           </a>
@@ -52,7 +52,7 @@
       </p>
 
       <p class="footer-copyright">
-        &copy; {new Date().getFullYear()} <a href="https://johnnyautoseed.com" target="_blank" rel="noopener noreferrer" class="footer-copyright-link">Johnny Autoseed LLC</a>. All rights reserved where applicable.
+        &copy; {new Date().getFullYear()} Christopher Tavolazzi. All rights reserved where applicable.
       </p>
     </div>
   </div>
@@ -193,13 +193,6 @@
     color: #dde4ef;
     margin: 0;
   }
-
-  .footer-copyright-link {
-    color: #f59e0b;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .footer-copyright-link:hover { color: #fbbf24; text-decoration: underline; }
 
   @media (max-width: 640px) {
     .site-footer {

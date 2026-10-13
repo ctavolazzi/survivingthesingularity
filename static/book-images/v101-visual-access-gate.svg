@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 338" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">THE GATE AFTER THE MACHINE</title>
+<desc id="desc">A productive machine, a gate and a plate. Access depends on terms, price, eligibility and delivery, not capability alone.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">THE GATE AFTER THE MACHINE</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="26" y="78" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Capability</text>
+<text x="454" y="78" font-size="14" fill="#f1f5f9" text-anchor="end" font-weight="400">Access</text>
+<path d="M143.0 159.0L153.0 159.0" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M139.72681989798534 175.45538759169887L148.9656152230982 179.28222191534977" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M130.40559159102153 189.40559159102153L137.47665940288704 196.476659402887" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M116.45538759169887 198.72681989798534L120.28222191534977 207.9656152230982" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M100.0 202.0L100.0 212.0" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M83.54461240830113 198.72681989798534L79.71777808465025 207.9656152230982" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M69.59440840897847 189.40559159102153L62.523340597112984 196.47665940288704" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M60.27318010201467 175.45538759169887L51.0343847769018 179.28222191534977" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M57.0 159.0L47.0 159.0" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M60.27318010201467 142.54461240830113L51.0343847769018 138.71777808465026" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M69.59440840897845 128.59440840897847L62.52334059711297 121.52334059711299" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M83.54461240830112 119.27318010201468L79.7177780846502 110.03438477690182" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M99.99999999999999 116.0L99.99999999999999 106.0" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M116.45538759169887 119.27318010201468L120.28222191534977 110.03438477690182" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M130.40559159102153 128.59440840897844L137.476659402887 121.52334059711296" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<path d="M139.7268198979853 142.5446124083011L148.96561522309818 138.7177780846502" fill="none" stroke="#f59e0b" stroke-width="5"/>
+<circle cx="100" cy="159" r="43" fill="none" stroke="#f59e0b" stroke-width="3"/>
+<circle cx="100" cy="159" r="18" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M100 178V128M100 143Q76 120 81 148Q93 158 100 153M100 140Q123 113 120 140Q114 151 100 150" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M156 159L208 159" fill="none" stroke="#f1f5f9" stroke-width="2"/>
+<path d="M200 153L208 159L200 165" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M226 229V97H290V229M220 229H310" fill="none" stroke="#f1f5f9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M234 104L269 121V222L234 213Z" fill="#0f172a" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="260" cy="170" r="2" fill="#60a5fa" stroke="#60a5fa" stroke-width="1"/>
+<path d="M240 128L249 132" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 137L249 141" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 146L249 150" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 155L249 159" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 164L249 168" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 173L249 177" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 182L249 186" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 191L249 195" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 200L249 204" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M240 209L249 213" fill="none" stroke="#475569" stroke-width="0.7"/>
+<path d="M302 159L345 159" fill="none" stroke="#f1f5f9" stroke-width="2"/>
+<path d="M337 153L345 159L337 165" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="398" cy="159" r="39" fill="none" stroke="#f1f5f9" stroke-width="2"/>
+<circle cx="398" cy="159" r="30" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M384 163Q398 143 412 163Q400 179 384 163Z" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="260" y="258" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Terms · price · eligibility · delivery</text>
+<path d="M20 280L460 280" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="300" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">A working tool still needs a way through.</text>
+</svg>

@@ -1,0 +1,155 @@
+{
+  "01-preface.md": [
+    {
+      "old_line": "## Precedent P-01: The Reading Rage (1790s)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-01: The Reading Rage (Britain, eighteenth and early nineteenth centuries)"
+    }
+  ],
+  "00-chapter0.md": [
+    {
+      "old_line": "## Precedent P-02: The Toy at the Fair (Philadelphia, 1876)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-02: The Voice at the Fair (Philadelphia, 1876)"
+    }
+  ],
+  "05-chapter3.md": [
+    {
+      "old_line": "## Precedent P-05: The Fleet That Sailed Home Forever (Ming China, 1433)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-05: The Court and the Fleet (Ming China, 1405 to 1433)"
+    }
+  ],
+  "06-chapter4.md": [
+    {
+      "old_line": "## Precedent P-06: The Great Demotion (Frombork, 1543)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-06: The Moving Earth (Frombork and Nuremberg, 1543)"
+    }
+  ],
+  "07-chapter5.md": [
+    {
+      "old_line": "## Precedent P-07: The Horse's Last Ledger (1783 to 1960)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-07: The Horse and the Ledger (Britain and United States, eighteenth to twentieth centuries)"
+    }
+  ],
+  "11-chapter9.md": [
+    {
+      "old_line": "## Precedent P-12: The Year the Bronze Stopped (Eastern Mediterranean, c. 1177 BC)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-12: The Networks Behind the Bronze (Eastern Mediterranean, fourteenth to twelfth centuries BC)"
+    }
+  ],
+  "12-chapter10.md": [
+    {
+      "old_line": "## Precedent P-13: The Abbot's Confession (Sponheim, 1492)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-13: The Abbot and the Press (Sponheim and Mainz, 1492 to 1494)"
+    },
+    {
+      "old_line": "The printed edition is an appealing irony, but it carries a better lesson than the accusation of hypocrisy. Trithemius used printing while arguing that it did not meet every need. Distribution, preservation, and the value of a practice are different questions. His example gives us permission to use a new tool without declaring every older skill worthless, or every reservation dishonest. [Heidelberg University Library, 1494 printed edition](https://digi.ub.uni-heidelberg.de/diglit/it00442000/0004)",
+      "reason": "Replace inaccessible edition locator with verified Paderborn record; surrounding prose retained.",
+      "new_line": "The printed edition is an appealing irony, but it carries a better lesson than the accusation of hypocrisy. Trithemius used printing while arguing that it did not meet every need. Distribution, preservation, and the value of a practice are different questions. His example gives us permission to use a new tool without declaring every older skill worthless, or every reservation dishonest. [Paderborn University Library, 1494 printed edition](https://digital.ub.uni-paderborn.de/eab/content/structure/1387797)"
+    }
+  ],
+  "13-chapter11.md": [
+    {
+      "old_line": "## Precedent P-14: The Quartz Heresy (Switzerland, 1969 to 1983)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-14: Quartz and the Assembly Line (Switzerland, 1962 to 1983)"
+    }
+  ],
+  "17-chapter15.md": [
+    {
+      "old_line": "## Precedent P-19: Twenty Million Gardens (United States, 1943 to 1944)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-19: Organizing the Harvest (United States, 1943 to 1944)"
+    }
+  ],
+  "18-chapter16.md": [
+    {
+      "old_line": "## Precedent P-20: An Argument in Circulation (Philadelphia, 1776)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-20: An Argument in Circulation (Philadelphia and London, 1776)"
+    }
+  ],
+  "19-chapter17.md": [
+    {
+      "old_line": "The *Whole Earth Catalog* listed welding rigs, geodesic dome mathematics, seed suppliers, calculators, books on midwifery and books on cybernetics, anything that helped an individual, in Brand's words, conduct his own education, find his own inspiration, and shape his own environment. It sold none of it directly: each entry ran as a review with a price and the supplier's address, what its own statement of purpose called an evaluation and access device. It refused to separate the homestead from the computer; its readership connected strands of back-to-the-land culture and personal computing without being the sole source of either. Steve Jobs, closing his 2005 Stanford commencement address, described it as \"sort of like Google in paperback form, 35 years before Google came along,\" and gave the graduating class its sign-off as his own final advice: stay hungry, stay foolish.",
+      "reason": "Correct unsupported contents examples and absolute no-direct-sales claim against original pages and MoMA history.",
+      "new_line": "The *Whole Earth Catalog* listed books on dome construction, organic gardening, beekeeping, and cybernetics, along with tool suppliers and a desktop calculator, anything that helped an individual, in Brand's words, conduct his own education, find his own inspiration, and shape his own environment. Its entries directed readers to sources through reviews and ordering information, what its own statement of purpose called an evaluation and access device. It refused to separate the homestead from the computer; its readership connected strands of back-to-the-land culture and personal computing without being the sole source of either. Steve Jobs, closing his 2005 Stanford commencement address, described it as \"sort of like Google in paperback form, 35 years before Google came along,\" and gave the graduating class its sign-off as his own final advice: stay hungry, stay foolish."
+    }
+  ],
+  "20-chapter18.md": [
+    {
+      "old_line": "## Precedent P-22: The Apocalypse That Ran On Time (1999)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-22: The Apocalypse That Ran On Time (1999 to 2004)"
+    }
+  ],
+  "21-conclusion.md": [
+    {
+      "old_line": "## Precedent P-23: The Passing Fad (1995)",
+      "reason": "Correct misleading historical title or expand dates/places to cover documented episode.",
+      "new_line": "## Precedent P-23: What the Forecast Missed (1993 to 1995)"
+    }
+  ],
+  "25-appendix-d.md": [
+    {
+      "old_line": "| P-01 | The Reading Rage | 1790s | Preface |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-01 | The Reading Rage | Eighteenth and early nineteenth centuries | Preface |"
+    },
+    {
+      "old_line": "| P-02 | The Toy at the Fair | 1876 | Chapter 0 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-02 | The Voice at the Fair | 1876 | Chapter 0 |"
+    },
+    {
+      "old_line": "| P-05 | The Fleet That Sailed Home Forever | 1433 | Chapter 3 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-05 | The Court and the Fleet | 1405–1433 | Chapter 3 |"
+    },
+    {
+      "old_line": "| P-06 | The Great Demotion | 1543 | Chapter 4 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-06 | The Moving Earth | 1543 | Chapter 4 |"
+    },
+    {
+      "old_line": "| P-07 | The Horse's Last Ledger | 1783–1960 | Chapter 5 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-07 | The Horse and the Ledger | Eighteenth to twentieth centuries | Chapter 5 |"
+    },
+    {
+      "old_line": "| P-12 | The Year the Bronze Stopped | c. 1177 BC | Chapter 9 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-12 | The Networks Behind the Bronze | Fourteenth to twelfth centuries BC | Chapter 9 |"
+    },
+    {
+      "old_line": "| P-13 | The Abbot's Confession | 1492 | Chapter 10 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-13 | The Abbot and the Press | 1492–1494 | Chapter 10 |"
+    },
+    {
+      "old_line": "| P-14 | The Quartz Heresy | 1969–1983 | Chapter 11 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-14 | Quartz and the Assembly Line | 1962–1983 | Chapter 11 |"
+    },
+    {
+      "old_line": "| P-19 | Twenty Million Gardens | 1943–1944 | Chapter 15 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-19 | Organizing the Harvest | 1943–1944 | Chapter 15 |"
+    },
+    {
+      "old_line": "| P-22 | The Apocalypse That Ran On Time | 1999 | Chapter 18 |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-22 | The Apocalypse That Ran On Time | 1999–2004 | Chapter 18 |"
+    },
+    {
+      "old_line": "| P-23 | The Passing Fad | 1995 | Conclusion |",
+      "reason": "Synchronize precedent ledger with corrected case heading.",
+      "new_line": "| P-23 | What the Forecast Missed | 1993–1995 | Conclusion |"
+    }
+  ]
+}

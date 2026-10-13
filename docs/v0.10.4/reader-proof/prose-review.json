@@ -1,0 +1,269 @@
+{
+  "base": "http://127.0.0.1:5192",
+  "version": "0.10.4",
+  "scope": "Six revised paragraphs in Chapters 6, 7, 9, 10, 12, and 14, compared to canonical revised Markdown in individual chapter routes at 390px and 1280px. Paragraph text, readable viewport placement, and horizontal bounds checked. Existing scenes and artwork retained.",
+  "review_sha256": "244b57fe974886a93b471374628e0c1e136c6beb67c6aadc4f81a56fa58ad936",
+  "manifest_sha256": "564ff89f1095c8bdbf5f1645f51c30046e1712f72ed4886bf8df8000519b4fc3",
+  "checks": [
+    {
+      "file": "08-chapter6.md",
+      "route": "/book/chapter6",
+      "width": 390,
+      "source_sha256": "ff7e636984d88f0f55ca29171459e2531a5d1b9125c08a90cf68c100852a1a79",
+      "expected": "Run the group audit on your own affiliations: employer, industry, town, community. For each, name one change it's making and who carries the cost. If you can't find an answer, write down who you'll ask. The grain trap punished groups for their choices, and individuals for their group.",
+      "screenshot": "prose-390-chapter6.png",
+      "text": "Run the group audit on your own affiliations: employer, industry, town, community. For each, name one change it's making and who carries the cost. If you can't find an answer, write down who you'll ask. The grain trap punished groups for their choices, and individuals for their group.",
+      "box": {
+        "x": 68,
+        "y": 318.46875,
+        "width": 282,
+        "height": 363,
+        "top": 318.46875,
+        "right": 350,
+        "bottom": 681.46875,
+        "left": 68
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "09-chapter7.md",
+      "route": "/book/chapter7",
+      "width": 390,
+      "source_sha256": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+      "expected": "Here's the move the battle-line framing hides: readiness has to reach beyond your own household.",
+      "screenshot": "prose-390-chapter7.png",
+      "text": "Here's the move the battle-line framing hides: readiness has to reach beyond your own household.",
+      "box": {
+        "x": 40,
+        "y": 429.953125,
+        "width": 310,
+        "height": 140,
+        "top": 429.953125,
+        "right": 350,
+        "bottom": 569.953125,
+        "left": 40
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "11-chapter9.md",
+      "route": "/book/chapter9",
+      "width": 390,
+      "source_sha256": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+      "expected": "The next meeting has to plan beyond the first five households. It belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "screenshot": "prose-390-chapter9.png",
+      "text": "The next meeting has to plan beyond the first five households. It belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "box": {
+        "x": 40,
+        "y": 342.75,
+        "width": 310,
+        "height": 315,
+        "top": 342.75,
+        "right": 350,
+        "bottom": 657.75,
+        "left": 40
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "12-chapter10.md",
+      "route": "/book/chapter10",
+      "width": 390,
+      "source_sha256": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+      "expected": "The human filter. Working alongside people is how you find the ones who also want to be useful. Make the introduction wherever you can, then give it a shared task.",
+      "screenshot": "prose-390-chapter10.png",
+      "text": "The human filter. Working alongside people is how you find the ones who also want to be useful. Make the introduction wherever you can, then give it a shared task.",
+      "box": {
+        "x": 68,
+        "y": 384.953125,
+        "width": 282,
+        "height": 231,
+        "top": 384.953125,
+        "right": 350,
+        "bottom": 615.953125,
+        "left": 68
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "14-chapter12.md",
+      "route": "/book/chapter12",
+      "width": 390,
+      "source_sha256": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+      "expected": "Now follow one request all the way to the door.",
+      "screenshot": "prose-390-chapter12.png",
+      "text": "Now follow one request all the way to the door.",
+      "box": {
+        "x": 40,
+        "y": 464.59375,
+        "width": 310,
+        "height": 70,
+        "top": 464.59375,
+        "right": 350,
+        "bottom": 534.59375,
+        "left": 40
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "16-chapter14.md",
+      "route": "/book/chapter14",
+      "width": 390,
+      "source_sha256": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+      "expected": "The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: the difference between Kodak and Fujifilm was never information. Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "screenshot": "prose-390-chapter14.png",
+      "text": "The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: the difference between Kodak and Fujifilm was never information. Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "box": {
+        "x": 40,
+        "y": 237.453125,
+        "width": 310,
+        "height": 525,
+        "top": 237.453125,
+        "right": 350,
+        "bottom": 762.453125,
+        "left": 40
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "08-chapter6.md",
+      "route": "/book/chapter6",
+      "width": 1280,
+      "source_sha256": "ff7e636984d88f0f55ca29171459e2531a5d1b9125c08a90cf68c100852a1a79",
+      "expected": "Run the group audit on your own affiliations: employer, industry, town, community. For each, name one change it's making and who carries the cost. If you can't find an answer, write down who you'll ask. The grain trap punished groups for their choices, and individuals for their group.",
+      "screenshot": "prose-1280-chapter6.png",
+      "text": "Run the group audit on your own affiliations: employer, industry, town, community. For each, name one change it's making and who carries the cost. If you can't find an answer, write down who you'll ask. The grain trap punished groups for their choices, and individuals for their group.",
+      "box": {
+        "x": 368,
+        "y": 396.234375,
+        "width": 572,
+        "height": 207.84375,
+        "top": 396.234375,
+        "right": 940,
+        "bottom": 604.078125,
+        "left": 368
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "09-chapter7.md",
+      "route": "/book/chapter7",
+      "width": 1280,
+      "source_sha256": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+      "expected": "Here's the move the battle-line framing hides: readiness has to reach beyond your own household.",
+      "screenshot": "prose-1280-chapter7.png",
+      "text": "Here's the move the battle-line framing hides: readiness has to reach beyond your own household.",
+      "box": {
+        "x": 340,
+        "y": 462.875,
+        "width": 600,
+        "height": 73.5,
+        "top": 462.875,
+        "right": 940,
+        "bottom": 536.375,
+        "left": 340
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "11-chapter9.md",
+      "route": "/book/chapter9",
+      "width": 1280,
+      "source_sha256": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+      "expected": "The next meeting has to plan beyond the first five households. It belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "screenshot": "prose-1280-chapter9.png",
+      "text": "The next meeting has to plan beyond the first five households. It belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.",
+      "box": {
+        "x": 340,
+        "y": 408.328125,
+        "width": 600,
+        "height": 183.75,
+        "top": 408.328125,
+        "right": 940,
+        "bottom": 592.078125,
+        "left": 340
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "12-chapter10.md",
+      "route": "/book/chapter10",
+      "width": 1280,
+      "source_sha256": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+      "expected": "The human filter. Working alongside people is how you find the ones who also want to be useful. Make the introduction wherever you can, then give it a shared task.",
+      "screenshot": "prose-1280-chapter10.png",
+      "text": "The human filter. Working alongside people is how you find the ones who also want to be useful. Make the introduction wherever you can, then give it a shared task.",
+      "box": {
+        "x": 368,
+        "y": 430.71875,
+        "width": 572,
+        "height": 138.5625,
+        "top": 430.71875,
+        "right": 940,
+        "bottom": 569.28125,
+        "left": 368
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "14-chapter12.md",
+      "route": "/book/chapter12",
+      "width": 1280,
+      "source_sha256": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+      "expected": "Now follow one request all the way to the door.",
+      "screenshot": "prose-1280-chapter12.png",
+      "text": "Now follow one request all the way to the door.",
+      "box": {
+        "x": 340,
+        "y": 481.78125,
+        "width": 600,
+        "height": 36.75,
+        "top": 481.78125,
+        "right": 940,
+        "bottom": 518.53125,
+        "left": 340
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "16-chapter14.md",
+      "route": "/book/chapter14",
+      "width": 1280,
+      "source_sha256": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+      "expected": "The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: the difference between Kodak and Fujifilm was never information. Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "screenshot": "prose-1280-chapter14.png",
+      "text": "The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: the difference between Kodak and Fujifilm was never information. Both saw the wave. One asked \"how do we protect what we sell?\" The other asked \"what are we actually for?\" Your town, your trade, and your household are being asked that same question right now.",
+      "box": {
+        "x": 340,
+        "y": 353.3125,
+        "width": 600,
+        "height": 294,
+        "top": 353.3125,
+        "right": 940,
+        "bottom": 647.3125,
+        "left": 340
+      },
+      "visible": true,
+      "horizontal_overflow": false
+    }
+  ],
+  "negative_controls": {
+    "missing_revised_text": {
+      "rejected": true,
+      "intended_failure_observed": true
+    }
+  },
+  "page_errors": [],
+  "passed": true
+}

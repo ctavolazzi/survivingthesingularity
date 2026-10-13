@@ -1,0 +1,56 @@
+SURVIVING THE SINGULARITY
+
+
+   Aneighborhoodfablab
+
+   Suitablestock+usablesalvage
+   Materials,designsandsparescomefromoutside.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Opendesignsdonotmakeeverytoolopensource.
+
+
+A neighborhood fab lab combines suitable tools with trained people, supported materials and
+checks for the actual job.
+
+
+The Open Source Ecology projectʼs Global Village Construction Set
+documents open designs for dozens of the industrial machines a
+small community might need, tractors, presses, printers, and more.
+Three good starting points for any neighborhood shop:
+
+1. A 3D printer. Open, repairable designs like the RepRap family,
+   some of whose parts can be printed by another RepRap, are ideal.
+   Plenty of people start, like SECTOR 07, on an inexpensive
+
+
+
+294

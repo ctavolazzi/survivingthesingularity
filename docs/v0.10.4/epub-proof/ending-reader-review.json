@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "version": "0.10.4",
+  "proof_sha256": "cbc015802a2cf357aa3d4922eb300dac9980db3a5ef3a5008d94c1e5127df8a3",
+  "captures": [
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-chapter-1-390.png",
+      "sha256": "48b86a788b77c23e0368b4f3ebb9eb4d6757d53dee3472e0e2c7d4011c976590",
+      "edit": 1,
+      "mode": "chapter",
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-chapter-2-390.png",
+      "sha256": "1ef8a97dce0d490b5cc0cbb62ea145068cee94bb21ef71e0f61fd118561441e7",
+      "edit": 2,
+      "mode": "chapter",
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-chapter-3-390.png",
+      "sha256": "04dd5a55c1a4d4634501c14fadfa7639709c3b486726fdd60a6bdc904c5a8006",
+      "edit": 3,
+      "mode": "chapter",
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-chapter-4-390.png",
+      "sha256": "686df11be42997bc187ab5c6a99c921c20dc38f4761e5c36512bad60d7fb306a",
+      "edit": 4,
+      "mode": "chapter",
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-chapter-5-390.png",
+      "sha256": "a3ad2e009cbea8441a0010c331b6207334413557801a6a59d26f2b51a8c0ebee",
+      "edit": 5,
+      "mode": "chapter",
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-chapter-6-390.png",
+      "sha256": "a35058687b0e8cd0da7a1668a7c4edf39e683b59e62f2e9b39777c54e97856bc",
+      "edit": 6,
+      "mode": "chapter",
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-continuous-1-1280.png",
+      "sha256": "8bc1faeef62ae6f779fb7502c06b6ac3e76f7f7f66888381397dadd8cff6a887",
+      "edit": 1,
+      "mode": "continuous",
+      "width": 1280
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-continuous-2-1280.png",
+      "sha256": "60f3e58ff1a8a0a49100bda183adde8838408cf371ec0eee7e7622df7054420f",
+      "edit": 2,
+      "mode": "continuous",
+      "width": 1280
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-continuous-3-1280.png",
+      "sha256": "64fa3bde58236585e97486ab4d183f4cd6a0e5c14d2042b919b6aeab475ae67b",
+      "edit": 3,
+      "mode": "continuous",
+      "width": 1280
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-continuous-4-1280.png",
+      "sha256": "71d9ef79e2db23553375ad2cdc815ddd28a225b9f9bcd7c6d9902a8efff04a50",
+      "edit": 4,
+      "mode": "continuous",
+      "width": 1280
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-continuous-5-1280.png",
+      "sha256": "b5a347930af141170a5a8346b9f8dd8e6cd690bc46188b692698dc8c70016864",
+      "edit": 5,
+      "mode": "continuous",
+      "width": 1280
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-reader-continuous-6-1280.png",
+      "sha256": "51786d671e338797fb37512744a90be6e20abd1184bb6730759c79fa2742f34b",
+      "edit": 6,
+      "mode": "continuous",
+      "width": 1280
+    }
+  ],
+  "observations": [
+    "All six changed passages are complete and readable in the 390px chapter captures and the 1280px continuous-reader captures.",
+    "Bold action labels, the Tier 0 to Tier 3 heading, and the italic year-plan introduction retain their intended emphasis.",
+    "No missing words, horizontal clipping, or overlapping lines observed in these 12 captures."
+  ],
+  "limits": "Element captures show the changed passage, not complete chapter pagination. List markers lie outside list-item element screenshots. The other 12 reader captures have automated text and geometry checks but are not claimed as manually inspected."
+}

@@ -1,0 +1,803 @@
+{
+  "scope": "720px-wide comparative viewing copies of original 150dpi color and grayscale proof pages. PDF and original renders remain unchanged.",
+  "pages": [
+    {
+      "page": 1,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-001.png",
+      "sha256": "2091963af42eec1318853551fe1d450d48ebf8ad87c38ae8c635214854c1262a",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 1,
+          "path": "docs/v0.10.4/pdf-proof/interior-001.png",
+          "sha256": "913ef62d93a19c8373040be1c225188d271c8d7ea7921914b03563d9ce320ffa"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 1,
+          "path": "docs/v0.10.4/pdf-proof/print-001.png",
+          "sha256": "fe3b01ef5f3cc3d972afd6a501a3357be1ecded8d9a0c80c8478500b8a6dc6db"
+        }
+      }
+    },
+    {
+      "page": 3,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-003.png",
+      "sha256": "f077f9f052ddf672ad5c3260d80d55de7055012887e5062011ac73c9891a9f72",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 3,
+          "path": "docs/v0.10.4/pdf-proof/interior-002.png",
+          "sha256": "14d3aba71424ef6e7c8f9ce547f9834605f6435de4b882cfb54b1db2f9555ae9"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 3,
+          "path": "docs/v0.10.4/pdf-proof/print-002.png",
+          "sha256": "a05c3e3b49d0bd79b1003f47e70aabed41deffadea934a98d4f2682625140406"
+        }
+      }
+    },
+    {
+      "page": 4,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-004.png",
+      "sha256": "df9b3b3d3e3fedaddcbc7fe1140ab378cd61e5dbd113059e9f3e1e97d6899295",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 4,
+          "path": "docs/v0.10.4/pdf-proof/interior-003.png",
+          "sha256": "e72297a38f0d82053deab94247cf975f4020f03690beccbff207ba90e0cc14cd"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 4,
+          "path": "docs/v0.10.4/pdf-proof/print-003.png",
+          "sha256": "24cb22bf78090027cfbedb09c8fd6e4a9fef310b4d1d3bdc138ca968238ec886"
+        }
+      }
+    },
+    {
+      "page": 10,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-010.png",
+      "sha256": "54346058286d8e88de09530d3cc3b297ec8a51441bd18f96b81495bdcc20cb29",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 10,
+          "path": "docs/v0.10.4/pdf-proof/interior-004.png",
+          "sha256": "df07f09d84ae8890e73ca5286095fb47e84ed4b480e8aca6642e15c4a1ece504"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 10,
+          "path": "docs/v0.10.4/pdf-proof/print-004.png",
+          "sha256": "aa084d0b72c744cfee44f99468c566559594b04bcce9cc1391cdd13e9e5b161a"
+        }
+      }
+    },
+    {
+      "page": 24,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-024.png",
+      "sha256": "c75f2f97cb3eddd0d3212420f1cb8af8fd74c6128baf79f84465b3b33c26f379",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 24,
+          "path": "docs/v0.10.4/pdf-proof/interior-005.png",
+          "sha256": "a0c9850145cd4b2fca1c07b13c16a11d2e57fe887816338947b1cb967c4aff15"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 24,
+          "path": "docs/v0.10.4/pdf-proof/print-005.png",
+          "sha256": "69cb3995020e7236e27faa682d05006c9c0aed227f15a6be4b5d9e80ef001cf0"
+        }
+      }
+    },
+    {
+      "page": 34,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-034.png",
+      "sha256": "01ff412c4e56ce43bd348eb72a66f04e9eda816a2c9ca1d89886361e87256f32",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 34,
+          "path": "docs/v0.10.4/pdf-proof/interior-006.png",
+          "sha256": "7334190097bfb0610efcb4d3617ac166294bce9ee0ee36248b0a151f1d22ad32"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 34,
+          "path": "docs/v0.10.4/pdf-proof/print-006.png",
+          "sha256": "8cc7f104e59e230f54679434f15f500c804247be8c37f4b0af017f561b6e37e4"
+        }
+      }
+    },
+    {
+      "page": 48,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-048.png",
+      "sha256": "7e7e9b7f0c7814d955449f521c8028a80e97f358ea3f837dfc7349fa093d751e",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 48,
+          "path": "docs/v0.10.4/pdf-proof/interior-007.png",
+          "sha256": "78c3dfab7c8c8a7f5e3ab601ba686c1969d67e8ae94c214aef1bf6c57c050659"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 48,
+          "path": "docs/v0.10.4/pdf-proof/print-007.png",
+          "sha256": "7ba32611f68b4cc76be35272f0e77e2b85b471e90e048bcdf92e53d6c8a3c5e5"
+        }
+      }
+    },
+    {
+      "page": 69,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-069.png",
+      "sha256": "d8feae09f604436cd18f8e3d0ff955cb7dc94fcad3fc19c89fbb17e723978971",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 69,
+          "path": "docs/v0.10.4/pdf-proof/interior-008.png",
+          "sha256": "855d56bc87604077c14eb8864e2aaff30ceebc8cea73856f147bf45010e445fe"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 69,
+          "path": "docs/v0.10.4/pdf-proof/print-008.png",
+          "sha256": "3603bd78fa68d281250607c3485174c8e67485046d26dfaf2e01c5f40276e059"
+        }
+      }
+    },
+    {
+      "page": 71,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-071.png",
+      "sha256": "cb3b313eab61454282312a801f85efe304d83e72d3464ef4fece66f34133e5da",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 71,
+          "path": "docs/v0.10.4/pdf-proof/interior-009.png",
+          "sha256": "e4a29c60ec6db44da5072282049068f85f161d0879a7492de621bf7ef1e5e27a"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 71,
+          "path": "docs/v0.10.4/pdf-proof/print-009.png",
+          "sha256": "0ed827020e601d33b105567ba8eab1e043f138ef04d27081f6b33ebadd6b27f4"
+        }
+      }
+    },
+    {
+      "page": 81,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-081.png",
+      "sha256": "a7bbcf3bc2715b8cc76d280888a8c772b0dec713a6d352b7f2f7c5a123490b09",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 81,
+          "path": "docs/v0.10.4/pdf-proof/interior-010.png",
+          "sha256": "fa943293ccab02a94270c2d22c05659aee3ad81ce0b80c810fc5839e1735c993"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 81,
+          "path": "docs/v0.10.4/pdf-proof/print-010.png",
+          "sha256": "c6fc142c396ed36c0266b53ffb99c2e761816e402881f06e0806b8bd5ae7ab87"
+        }
+      }
+    },
+    {
+      "page": 83,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-083.png",
+      "sha256": "30aaadb98a19a053d1d886baca231e105ce7011a36281639dde1b56001d2df1a",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 83,
+          "path": "docs/v0.10.4/pdf-proof/interior-011.png",
+          "sha256": "d838f764b5d703202096d558b55e8a1d3389cf7c8843339f1cdd43b5b257512e"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 83,
+          "path": "docs/v0.10.4/pdf-proof/print-011.png",
+          "sha256": "e27c28b74fbf9d6e75bc398db8156fcbcbba807b09cf4e67d14b4caeced84423"
+        }
+      }
+    },
+    {
+      "page": 95,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-095.png",
+      "sha256": "6808fc0cb92a3976744f5657b407a950879fd7769a952e0d02ca239ba57cd54a",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 95,
+          "path": "docs/v0.10.4/pdf-proof/interior-012.png",
+          "sha256": "b54f8a188549d4e370626a543c2312010441ad9f035396c5a63939311a98f2a0"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 95,
+          "path": "docs/v0.10.4/pdf-proof/print-012.png",
+          "sha256": "276e5787838a2aa396bfb80d8ca7f5bb3240420bc196253bc9879ed40739e5ee"
+        }
+      }
+    },
+    {
+      "page": 96,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-096.png",
+      "sha256": "3752aa17bd3201cf3e14621fbc8ba07df91961b0c8885b8e002b4f29b56e84da",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 96,
+          "path": "docs/v0.10.4/pdf-proof/interior-013.png",
+          "sha256": "e63a4f1b3757fb4c75171412ae3eaa88dab80a6aadb5ba08cb7c52da7af55fbd"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 96,
+          "path": "docs/v0.10.4/pdf-proof/print-013.png",
+          "sha256": "1fe7c3c62f9ceedc106117ce0cee7e1bdab46521681580eb07380f782ecc4d66"
+        }
+      }
+    },
+    {
+      "page": 103,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-103.png",
+      "sha256": "ce84508af05bc412da41179feabafb864893bc5325e1f668c0391b5f73fb7004",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 103,
+          "path": "docs/v0.10.4/pdf-proof/interior-014.png",
+          "sha256": "e37a9ec556647679dd6807660376f9bd2c825e5d507a1ce21bb97065ef7b7c05"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 103,
+          "path": "docs/v0.10.4/pdf-proof/print-014.png",
+          "sha256": "f78f9c2006dad26b7746b9e2dacce4d18fccd5b33956db9ad56b57759c89cfc9"
+        }
+      }
+    },
+    {
+      "page": 104,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-104.png",
+      "sha256": "15fda1d4ded7099cf19966cfd57ffdb036345b6f54a3afc2e565a4f438bb2c63",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 104,
+          "path": "docs/v0.10.4/pdf-proof/interior-015.png",
+          "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 104,
+          "path": "docs/v0.10.4/pdf-proof/print-015.png",
+          "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+        }
+      }
+    },
+    {
+      "page": 105,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-105.png",
+      "sha256": "68c2aa600b3355a5e99149da0cea05f909f0f208ce799df8e2c174f93430af1c",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 105,
+          "path": "docs/v0.10.4/pdf-proof/interior-016.png",
+          "sha256": "eadfece56a28cca206f0b5f7f3675b5c5cfa38ac8b67ef2b20abab75333bce89"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 105,
+          "path": "docs/v0.10.4/pdf-proof/print-016.png",
+          "sha256": "712aa68548134afb50a76a0f7d7377bb49a203314c85a4b75c2f575ef764f18e"
+        }
+      }
+    },
+    {
+      "page": 119,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-119.png",
+      "sha256": "913fad7be6a2ce12aed62484def1ef553ca59408e36fe69d2806461748b1bde0",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 119,
+          "path": "docs/v0.10.4/pdf-proof/interior-017.png",
+          "sha256": "28430605ba75297400cbfe48dbab67d36c206206840e8d0b88abae4196c9b411"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 119,
+          "path": "docs/v0.10.4/pdf-proof/print-017.png",
+          "sha256": "89f6f62abc1c1b4890a48842b2ff7c1248b58aa8d2980d13e10017aee5c6a174"
+        }
+      }
+    },
+    {
+      "page": 124,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-124.png",
+      "sha256": "43175b3636c3f4dda8a1f0dc6fee9a8f25dd8c92243010cfa82a0c5cb41e9b71",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 124,
+          "path": "docs/v0.10.4/pdf-proof/interior-018.png",
+          "sha256": "83120980aaba4d9b72d33266c8cc5392c87f5182c0d86442944f9e9249c49b7b"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 124,
+          "path": "docs/v0.10.4/pdf-proof/print-018.png",
+          "sha256": "e2f5a218200f41007026370444bf2766c449527b38fffb39c767d184e06513dd"
+        }
+      }
+    },
+    {
+      "page": 133,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-133.png",
+      "sha256": "bd821d675f05f496235dd6c57e530f17ce93fee24783a40c7804b704af086934",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 133,
+          "path": "docs/v0.10.4/pdf-proof/interior-019.png",
+          "sha256": "19420528eb7e8664283142703370e867f183fbf77380685dde571f63c435c3b5"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 133,
+          "path": "docs/v0.10.4/pdf-proof/print-019.png",
+          "sha256": "b92d68e0c386a525a86db9b8fd2648f339daaa0cd8af6664879ade9e3c20894e"
+        }
+      }
+    },
+    {
+      "page": 179,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-179.png",
+      "sha256": "c2ab394faf2d2ea47e1543d239b7246db0d90d7d18a23c826cff8d705ad99d6f",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 179,
+          "path": "docs/v0.10.4/pdf-proof/interior-020.png",
+          "sha256": "41756938176901712ae98bfe60e776326679734d626d2c44b07fea086765dcbd"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 179,
+          "path": "docs/v0.10.4/pdf-proof/print-020.png",
+          "sha256": "32f29cdecabe5b56ad70ca6548b1b048190d0e66cc9f6e8ab6f22a233131fd18"
+        }
+      }
+    },
+    {
+      "page": 181,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-181.png",
+      "sha256": "b17fd7c0e0530144ecd4e5f3f2de12eb1d4ac8f62d2d35855414b881e4da0d72",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 181,
+          "path": "docs/v0.10.4/pdf-proof/interior-021.png",
+          "sha256": "bb3679556a66baa29fa95ca71eeb783128e8fc2b0e9c004320d1db548f22c7cc"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 181,
+          "path": "docs/v0.10.4/pdf-proof/print-021.png",
+          "sha256": "af628bb749c9db8734b3f9951322f3f0e4942ccee139477cc0ad34b5f15d645a"
+        }
+      }
+    },
+    {
+      "page": 182,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-182.png",
+      "sha256": "44556de53ad1a820daba72b3a32da949048d6e75936f2946ca2c3ffe496fea50",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 182,
+          "path": "docs/v0.10.4/pdf-proof/interior-022.png",
+          "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 182,
+          "path": "docs/v0.10.4/pdf-proof/print-022.png",
+          "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+        }
+      }
+    },
+    {
+      "page": 183,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-183.png",
+      "sha256": "cf96ed995038893944d75306e163304d5e606e60cbbfc98cc708d3e7e72c312b",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 183,
+          "path": "docs/v0.10.4/pdf-proof/interior-023.png",
+          "sha256": "4b6e0af5e960e718b8ee39ab7638ca0b25814097f5a3923651b03ce91fb4ed84"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 183,
+          "path": "docs/v0.10.4/pdf-proof/print-023.png",
+          "sha256": "dd8e1a7b7cf5342d5709d8a422371a28f94d332c3ad53f3ecd763736bb5a920d"
+        }
+      }
+    },
+    {
+      "page": 188,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-188.png",
+      "sha256": "198d03d6390327da45718db12aa21cded5607d1b6c6900a57f8f57bd0d171feb",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 188,
+          "path": "docs/v0.10.4/pdf-proof/interior-024.png",
+          "sha256": "b9753d717c35f39ea7c847929b0cd681335ad478f190305f6b0336076de9d04f"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 188,
+          "path": "docs/v0.10.4/pdf-proof/print-024.png",
+          "sha256": "9404b78657d090f0a30070c6eca1a3743433531a334dd08980bfaa31433f1b42"
+        }
+      }
+    },
+    {
+      "page": 224,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-224.png",
+      "sha256": "b477162bcf836faa0c8dad7414f33a7505009670d56860baf98bab7f356deba0",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 224,
+          "path": "docs/v0.10.4/pdf-proof/interior-025.png",
+          "sha256": "a5207c93b186d81545781b0841f7937d9790f53f6878adbed2d12346cd8a7f5c"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 224,
+          "path": "docs/v0.10.4/pdf-proof/print-025.png",
+          "sha256": "81eca5f210e86a41ce3315a2ceeb33b05859625e71c7daa20bc9153d88e3b89e"
+        }
+      }
+    },
+    {
+      "page": 250,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-250.png",
+      "sha256": "283e2dfad8e349df6d8c9a6c1318317b1db6bc566a6890d97a1932fc44ab61ba",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 250,
+          "path": "docs/v0.10.4/pdf-proof/interior-026.png",
+          "sha256": "7e348f673eac068502e61fc76c0b14934b16fa5ddf6557ac71ec95774c2cd7f9"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 250,
+          "path": "docs/v0.10.4/pdf-proof/print-026.png",
+          "sha256": "7b0a900a51d4be061dceb3cece261136b0dda02f2c0d98492973bd356acd6152"
+        }
+      }
+    },
+    {
+      "page": 284,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-284.png",
+      "sha256": "42f153e1798de0f4fca72924d25adb9bf5f13f88c852011fa87c90c247f18e6d",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 284,
+          "path": "docs/v0.10.4/pdf-proof/interior-027.png",
+          "sha256": "85b9c1e5fdeee755da7ed2a2118ba613526e3cce4a54e42c68b072e455d15812"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 284,
+          "path": "docs/v0.10.4/pdf-proof/print-027.png",
+          "sha256": "2d110ee90999135c8fe34f6b960ae86db1f16360d1ba234c007b1bf441dcb4ec"
+        }
+      }
+    },
+    {
+      "page": 321,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-321.png",
+      "sha256": "d549ae97a4ac5de1937f77c885fd1421c17e3c3782e374978fd81120d9387aba",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 321,
+          "path": "docs/v0.10.4/pdf-proof/interior-chapter19-001.png",
+          "sha256": "89070662378121334ce31f491c276af8347b0f9b1868302981262c38201ff035"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 321,
+          "path": "docs/v0.10.4/pdf-proof/print-chapter19-001.png",
+          "sha256": "db006f3d1eef6811c8b21a30d29af969871df96638b57b85281b15aee7e0bb7e"
+        }
+      }
+    },
+    {
+      "page": 322,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-322.png",
+      "sha256": "12e7771ee08ac8636a46d062333d6333ca684bcb8c297be7590d42a6a6ca307e",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 322,
+          "path": "docs/v0.10.4/pdf-proof/interior-chapter19-002.png",
+          "sha256": "48d8550ed072d26044fdeeead66b3a601f5e47f543a118a16054e38e1abf8e0d"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 322,
+          "path": "docs/v0.10.4/pdf-proof/print-chapter19-002.png",
+          "sha256": "e121d542ac51ca0690dfb7e1ef96f8aaf38e3eb6fc5d339472f7fcc290999457"
+        }
+      }
+    },
+    {
+      "page": 324,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-324.png",
+      "sha256": "ed376c80180fe5ddf753c8ff396f28ea80b54b3154c9ab8d3a939152c5be4a41",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 324,
+          "path": "docs/v0.10.4/pdf-proof/interior-028.png",
+          "sha256": "093a31ccf7ae717a4d35656d9b984f7561b75edd5e783713c4446c5b9b2314b6"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 324,
+          "path": "docs/v0.10.4/pdf-proof/print-028.png",
+          "sha256": "a7be6d5657811a2a14ee4a704aa3e6ba889d08bf16f13c6dc4450429fa892f3c"
+        }
+      }
+    },
+    {
+      "page": 335,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-335.png",
+      "sha256": "419b53ec589e6ee012cd46596d403b4935e46a0b381720b1b7edde0a81c36ad5",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 335,
+          "path": "docs/v0.10.4/pdf-proof/interior-029.png",
+          "sha256": "644c181fb8661404d38508bd4f0dfa88cbc9d6a189c54b385b82c122dcc70960"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 335,
+          "path": "docs/v0.10.4/pdf-proof/print-029.png",
+          "sha256": "f28ba6c2d144d69043a2760a763ce08e95259a529f7b1f5f4e7be7d7a3605309"
+        }
+      }
+    },
+    {
+      "page": 365,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-365.png",
+      "sha256": "9c4a0a93063af67e01402b9a48a02a900f947cb3c8e2467b19c49d3fa3da2b34",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 365,
+          "path": "docs/v0.10.4/pdf-proof/interior-030.png",
+          "sha256": "a885ac1df330b9604f9a56ea5ea1f1646ab8d6e8f29e80a1f34814b18ca1ad89"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 365,
+          "path": "docs/v0.10.4/pdf-proof/print-030.png",
+          "sha256": "683caf76f5085b7ed18f3ed82ab7c82ceaa00a8e17f4360a75d8715994cc5c4e"
+        }
+      }
+    },
+    {
+      "page": 371,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-371.png",
+      "sha256": "c2615bd8fa13e55dd04d46296cb5a1a892816b08970a767ccf8c20353304026b",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 371,
+          "path": "docs/v0.10.4/pdf-proof/interior-031.png",
+          "sha256": "7e11349eb8a426cd72e92ccba3f75b18fb9780ea0f4459f5c78a1356750c3566"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 371,
+          "path": "docs/v0.10.4/pdf-proof/print-031.png",
+          "sha256": "ddc1a098bb89fe8c542cd47ab32cf762375a6686e05ad60b483c6e1d0735fa08"
+        }
+      }
+    },
+    {
+      "page": 376,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-376.png",
+      "sha256": "beea8cfaa4894ecde27d67c588a2cad7dbd5634032ccc77d544a272b11857394",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 376,
+          "path": "docs/v0.10.4/pdf-proof/interior-032.png",
+          "sha256": "c3df16db961ded153cb561cb43008d75ccf88309ddf27c62ef7f87f671ae3e8f"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 376,
+          "path": "docs/v0.10.4/pdf-proof/print-032.png",
+          "sha256": "f331995da5847a224bfd3e4537fad96fd942dc70c7b42a3b0f36106de7144786"
+        }
+      }
+    },
+    {
+      "page": 377,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-377.png",
+      "sha256": "cb217dbe4bae99fe9c4234837ef41fb4d5e7473bc5df13388aac144ee6f674e3",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 377,
+          "path": "docs/v0.10.4/pdf-proof/interior-033.png",
+          "sha256": "19a75bbf6e2ccf74e74052bd56aa5a6a19e0676a464b2b4178dacd5bc021c9ad"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 377,
+          "path": "docs/v0.10.4/pdf-proof/print-033.png",
+          "sha256": "87bf126b7e8deeca6283ef1826c5479a4a06aef6ce96cb7b69498702a6a2657c"
+        }
+      }
+    },
+    {
+      "page": 387,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-387.png",
+      "sha256": "7fab67ed75971788d2c796f48adbd5831276539d8b9c4664d7ae3b4348a69980",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 387,
+          "path": "docs/v0.10.4/pdf-proof/interior-034.png",
+          "sha256": "998a338b8e73cdfff0c58fa551c5b7a4c414885d61104365bd8097ca9169d1c5"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 387,
+          "path": "docs/v0.10.4/pdf-proof/print-034.png",
+          "sha256": "59f69552760ed9ea45d60270c780cd2a079ab4073d7ae2e2ae1bee99a406993c"
+        }
+      }
+    },
+    {
+      "page": 388,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-388.png",
+      "sha256": "0ec94be14c687e66a1e9e6b3204d640af7251664aacce7f8a4dd97b9ba018bf7",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 388,
+          "path": "docs/v0.10.4/pdf-proof/interior-035.png",
+          "sha256": "43da8077b5577fb48ecaf52ea243d96aaa6377694587b23caf013cdb18cfd9f7"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 388,
+          "path": "docs/v0.10.4/pdf-proof/print-035.png",
+          "sha256": "c8a76e834289a56b087945420a2b0cf72acb8920e319acb2451a407b68a5fc73"
+        }
+      }
+    },
+    {
+      "page": 396,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-396.png",
+      "sha256": "51306ad2ee56a7d0188ce93872ede1620e1ff647f496f8011a1976357c7ca4e4",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 396,
+          "path": "docs/v0.10.4/pdf-proof/interior-036.png",
+          "sha256": "f57f715d08b52cbb3c2cc41460baf75d6ac6693169fd3f9f7164a44e122a39c3"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 396,
+          "path": "docs/v0.10.4/pdf-proof/print-036.png",
+          "sha256": "99cf6b6570051f9f93ef4ed0d46d03868c0e41c64b825b5eabb18e431b979224"
+        }
+      }
+    },
+    {
+      "page": 397,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-397.png",
+      "sha256": "b368116ce7cfc1b6726b1e34c128fb84ca00a7d10769419b660441af540045f6",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 397,
+          "path": "docs/v0.10.4/pdf-proof/interior-037.png",
+          "sha256": "0e3890a1d47d82027aa3b0280617e4237cf5431cfbd3b163ea6f2d39ead36e27"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 397,
+          "path": "docs/v0.10.4/pdf-proof/print-037.png",
+          "sha256": "f2654447dcbd1a653f2000daee617961a8b5c38fc30f6f9ce263a5ffb2c95f2d"
+        }
+      }
+    },
+    {
+      "page": 405,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-405.png",
+      "sha256": "b794fabcaabfa75207b263a9c6d95a58d92c37c38691f1ad7d3d2e6afa3766d7",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 405,
+          "path": "docs/v0.10.4/pdf-proof/interior-038.png",
+          "sha256": "11c695c17ec181c77eeb22c6a97b2dff2a308b69618633185cd037f2923d3897"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 405,
+          "path": "docs/v0.10.4/pdf-proof/print-038.png",
+          "sha256": "1b837a74641c731b1f3f8898e8abdb719aae75a66c01c949c1509e1d730ae88d"
+        }
+      }
+    },
+    {
+      "page": 409,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-409.png",
+      "sha256": "8764cb11a2586dcf8943bdd12989c9e23307bf72bf98911e49cce98278e02d79",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 409,
+          "path": "docs/v0.10.4/pdf-proof/interior-039.png",
+          "sha256": "f5958447cb137fb5777c25a5feceeadfe57865638689994fb5b92b006052c82b"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 409,
+          "path": "docs/v0.10.4/pdf-proof/print-039.png",
+          "sha256": "c6fdb63431dc3d78719df2435feab72f076b5ad383afbce49af324e4c70a5a94"
+        }
+      }
+    },
+    {
+      "page": 410,
+      "path": "docs/v0.10.4/pdf-proof/review-pairs/page-410.png",
+      "sha256": "c6a94609f471305e3d678299a3e2d04832ea95d470c6470a92a7509dd6b4363b",
+      "inputs": {
+        "interior": {
+          "edition": "interior",
+          "physical_page": 410,
+          "path": "docs/v0.10.4/pdf-proof/interior-040.png",
+          "sha256": "75f3e714cdecb07134640fa86953b2d8dee87795cf0244183750e0231eeaca23"
+        },
+        "print": {
+          "edition": "print",
+          "physical_page": 410,
+          "path": "docs/v0.10.4/pdf-proof/print-040.png",
+          "sha256": "10f58d764ab2d2f016c11d93da111df27260ee32f20375ad73ae6a9a32fdc0b8"
+        }
+      }
+    }
+  ]
+}

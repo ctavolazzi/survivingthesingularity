@@ -1,0 +1,42 @@
+advertised design and tasks, not independent results for complete diets or
+delivery to households.
+Growing sites: US Environmental Protection Agency, Urban Agriculture.
+Guidance on site history and potentially contaminated land. It is
+background for evaluating a site, not a safety finding about the fictional
+garden.
+Living soil: University of Minnesota Extension, Soil Biology. Extension
+guidance on soil organisms and their different functions.
+Waste pathways: US Environmental Protection Agency, Learn About Aquatic
+Trash. Background on how waste reaches waterways. The behavioral effects
+of a proposed cleanup machine would require their own evaluation.
+Useful capability and its limits
+John Jumper and colleagues, Highly Accurate Protein Structure Prediction
+with AlphaFold, Nature 596 (2021), 583–589. Original research on protein-
+structure prediction. Better structural information can aid research; a
+predicted structure is not itself a treatment.
+Jonathan M. Stokes and colleagues, A Deep Learning Approach to Antibiotic
+Discovery, Cell 180 (2020), 688–702.e13. Original laboratory research using a
+neural network to identify antibacterial candidates, followed by
+experiments including mouse infection models. This is not evidence of an
+established general cure in humans. The open manuscript corresponds to
+PMID 32084340.
+Sellafield Ltd, Sellafield Robotics: Using Spot More for Spotless Nuclear
+Clean-up (23 March 2023). An operatorʼs account of remotely operated
+inspection and cleaning in hazardous areas. It documents a particular
+deployment, with people and specialist equipment, rather than autonomous
+removal of every kind of toxic waste.
+National Institute of Standards and Technology, Artificial Intelligence Risk
+Management Framework: Generative Artificial Intelligence Profile, NIST AI
+600-1 (July 2024). The final publication identifies risks including erroneous
+outputs, privacy loss, harmful bias, security failures, and environmental
+effects. These concerns require attention alongside the distribution of
+economic benefits.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+SURVIVING THE SINGULARITY
+346

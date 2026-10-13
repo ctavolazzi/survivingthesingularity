@@ -1,0 +1,2448 @@
+{
+  "schema": "sts-art-catalog/v1",
+  "generated": "2026-07-27",
+  "project": "Surviving the Singularity (book)",
+  "book_version_introduced": "0.7.0",
+  "palette": {
+    "navy": "#020617",
+    "amber": "#f59e0b",
+    "blue": "#3b82f6",
+    "slate": "#94a3b8",
+    "ink": "#f1f5f9"
+  },
+  "provenance": {
+    "tool": "PixelLab (Tier 1) + Python(Pillow) compositing; SVG diagrams hand-authored",
+    "license_note": "PixelLab-generated assets subject to PixelLab Terms of Service (https://pixellab.ai/termsofservice). Verify commercial/coursework rights before external reuse."
+  },
+  "id_scheme": "sts.<kind>.<slug>  (kind: sprite=object, char=character, plate=composite, diagram=svg)",
+  "assets": [
+    {
+      "id": "sts.sprite.photobioreactor",
+      "type": "sprite-object",
+      "label": "DIY Photobioreactor",
+      "concepts": [
+        "algae-culture",
+        "aquaponics",
+        "closed-loop",
+        "3d-printing",
+        "raspberry-pi",
+        "food-independence"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "be66341d-23d5-4edc-9dd4-def901b980b8",
+        "selected_frame_id": "518e9f04-fe30-46dd-9ba8-3b7bdd6e8454",
+        "alt_frame_id": "24995ad3-27a9-4fc1-84f6-c706b8941b06"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-photobioreactor.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit",
+        "sts.plate.photobioreactor"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.grow-tower",
+      "type": "sprite-object",
+      "label": "Vertical Grow Tower",
+      "concepts": [
+        "vertical-hydroponics",
+        "food-production",
+        "water-efficiency",
+        "urban-farming"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "b54c09a3-bf64-4af0-bca1-7987e491e462",
+        "selected_frame_id": "da227fbd-73f4-4409-8a6e-409e8d77c14b"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-grow-tower.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.lora-node",
+      "type": "sprite-object",
+      "label": "LoRa Mesh Node",
+      "concepts": [
+        "mesh-networking",
+        "lora",
+        "off-grid-comms",
+        "meshtastic",
+        "decentralized-tech"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "3a25f932-b65f-4d8b-8eff-7935102e5b7c",
+        "selected_frame_id": "2e70c977-f083-49e2-88fc-982bd9924b11"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-lora-node.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.solar-battery",
+      "type": "sprite-object",
+      "label": "Solar + Battery Rig",
+      "concepts": [
+        "solar-power",
+        "off-grid-energy",
+        "charge-controller",
+        "dc-microgrid"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "aa08d2ec-fb55-4521-ba19-04155c4aa298",
+        "selected_frame_id": "7628f606-858b-4c64-9bc0-ed81a06af105"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-solar-battery.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.printer-3d",
+      "type": "sprite-object",
+      "label": "Desktop 3D Printer",
+      "concepts": [
+        "3d-printing",
+        "fabrication",
+        "reprap",
+        "distributed-manufacturing"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "60426470-7494-450d-a38e-7b8cde188de8",
+        "selected_frame_id": "bef728c7-3d0f-4c38-8592-8bfa1037b222"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-printer-3d.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.plasma-table",
+      "type": "sprite-object",
+      "label": "CNC Plasma Table",
+      "concepts": [
+        "cnc",
+        "metal-fabrication",
+        "maker-shop",
+        "tooling"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "c4ea7230-b9d5-492a-96aa-4fb2c425cc4d",
+        "selected_frame_id": "9fc3df01-3fa5-431b-98d1-234b5903eab7"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-plasma-table.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.walk-behind-tractor",
+      "type": "sprite-object",
+      "label": "Walk-Behind Tractor",
+      "concepts": [
+        "appropriate-technology",
+        "tillage",
+        "bcs-tractor",
+        "homestead-machinery"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "6ecd5de2-1057-4d14-bbce-8bb11a9ffb0c",
+        "selected_frame_id": "3328f7fb-0d12-46ce-a589-6227e2444a27"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-walk-behind-tractor.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.cyberdeck",
+      "type": "sprite-object",
+      "label": "Homemade Cyberdeck",
+      "concepts": [
+        "cyberdeck",
+        "offline-computing",
+        "diy-hardware",
+        "digital-autonomy"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "c2e1e7b0-7376-4728-a164-37afa9c44f6f",
+        "selected_frame_id": "15546138-4bcd-47d4-952c-1d810ad0e494"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-cyberdeck.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit",
+        "sts.plate.cyberdeck"
+      ],
+      "chapter": "appendix-e"
+    },
+    {
+      "id": "sts.sprite.ox-and-plow",
+      "type": "sprite-object",
+      "label": "Ox and Plow",
+      "concepts": [
+        "animal-husbandry",
+        "delegated-labor",
+        "agriculture-history",
+        "analogy-for-AI"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "f2ebbf38-3ef9-460b-bf7f-6ae4f06ac846",
+        "selected_frame_id": "1f525619-fe8f-4728-b4f6-1316efb5b7cb",
+        "alt_frame_id": "101a601f-8c69-496e-875f-e01957103fc9"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-ox-and-plow.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.ox-and-plow"
+      ],
+      "chapter": "introduction"
+    },
+    {
+      "id": "sts.char.elijah",
+      "type": "sprite-character",
+      "label": "Elijah",
+      "role": "narrator; ex-tech worker learning to build",
+      "concepts": [
+        "cast",
+        "protagonist"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "ae2178a9-ccd3-4d71-92a3-b3e8d7f17f88",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-elijah.png",
+      "size": [
+        248,
+        248
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.char.marta",
+      "type": "sprite-character",
+      "label": "Marta",
+      "role": "fabricator; runs the co-op shop",
+      "concepts": [
+        "cast"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "f4b231e5-f2f6-4a0c-b8e2-81827243af59",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-marta.png",
+      "size": [
+        248,
+        248
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.char.priya",
+      "type": "sprite-character",
+      "label": "Priya",
+      "role": "soil scientist",
+      "concepts": [
+        "cast"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "21b9fdab-12ea-48f8-a0a6-1dad48fdf422",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-priya.png",
+      "size": [
+        244,
+        244
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.char.denny",
+      "type": "sprite-character",
+      "label": "Denny",
+      "role": "network engineer; livestreamer",
+      "concepts": [
+        "cast"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "6889a96a-3ab5-4884-b7bf-89bec3bddf03",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-denny.png",
+      "size": [
+        248,
+        248
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.plate.field-kit",
+      "type": "plate-composite",
+      "label": "The Field Kit",
+      "figure": "static/book-images/ch17-field-kit.png",
+      "size": [
+        1648,
+        792
+      ],
+      "composed_of": [
+        "sts.sprite.photobioreactor",
+        "sts.sprite.grow-tower",
+        "sts.sprite.lora-node",
+        "sts.sprite.solar-battery",
+        "sts.sprite.printer-3d",
+        "sts.sprite.plasma-table",
+        "sts.sprite.walk-behind-tractor",
+        "sts.sprite.cyberdeck"
+      ],
+      "placement": {
+        "chapter": "ch17",
+        "file": "19-chapter17.md",
+        "section": "Foundations intro"
+      },
+      "alt": "A pixel-art specimen board of the field kit: photobioreactor, grow tower, LoRa node, solar and battery, 3D printer, CNC plasma table, walk-behind tractor, cyberdeck",
+      "caption": "The field kit. Every one of these already exists, and a person with modest money and stubbornness can own the lot."
+    },
+    {
+      "id": "sts.plate.co-op-cast",
+      "type": "plate-composite",
+      "label": "The Co-op",
+      "figure": "static/book-images/coop-cast.png",
+      "size": [
+        1808,
+        606
+      ],
+      "composed_of": [
+        "sts.char.elijah",
+        "sts.char.marta",
+        "sts.char.priya",
+        "sts.char.denny"
+      ],
+      "placement": {
+        "chapter": "part-2",
+        "file": "part2-divider.md",
+        "section": "divider"
+      },
+      "alt": "Pixel-art portraits of the co-op: Elijah, Marta, Priya, and Denny",
+      "caption": "The people the rest of this book is about. Nineteen households; these four you get to know."
+    },
+    {
+      "id": "sts.plate.photobioreactor",
+      "type": "plate-composite",
+      "label": "The Photobioreactor (solo)",
+      "figure": "static/book-images/ch17-photobioreactor.png",
+      "size": [
+        760,
+        606
+      ],
+      "composed_of": [
+        "sts.sprite.photobioreactor"
+      ],
+      "placement": {
+        "chapter": "ch17",
+        "file": "19-chapter17.md",
+        "section": "The Proof Is Not Hypothetical (SECTOR 07)"
+      },
+      "alt": "A DIY 3D-printed photobioreactor growing green algae with a Raspberry Pi board",
+      "caption": "Tens of thousands of dollars in a lab. A few hundred on a workbench."
+    },
+    {
+      "id": "sts.plate.cyberdeck",
+      "type": "plate-composite",
+      "label": "The Cyberdeck (solo)",
+      "figure": "static/book-images/appe-cyberdeck.png",
+      "size": [
+        760,
+        542
+      ],
+      "composed_of": [
+        "sts.sprite.cyberdeck"
+      ],
+      "placement": {
+        "chapter": "appendix-e",
+        "file": "26-appendix-e.md",
+        "section": "opening"
+      },
+      "alt": "A homemade cyberdeck: rugged case, mechanical keyboard, amber map screen, antenna",
+      "caption": "A computer you understand all the way down, that answers to nobody's server."
+    },
+    {
+      "id": "sts.plate.ox-and-plow",
+      "type": "plate-composite",
+      "label": "You Do Not Program an Ox",
+      "figure": "static/book-images/intro-ox-plow.png",
+      "size": [
+        760,
+        492
+      ],
+      "composed_of": [
+        "sts.sprite.ox-and-plow"
+      ],
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "the ox / husbandry passage"
+      },
+      "alt": "A brown ox in a wooden yoke pulling a plow through a field",
+      "caption": "The first time labor could be handed to something that ran on its own. The machine is the second."
+    },
+    {
+      "id": "sts.diagram.hyperlocal-vs-global",
+      "type": "diagram-svg",
+      "label": "Two Supply Lines: Global vs Hyper-local",
+      "concepts": [
+        "deglobalization",
+        "hyper-local",
+        "supply-chain",
+        "resilience"
+      ],
+      "figure": "static/book-images/ch09-hyperlocal-vs-global.svg",
+      "placement": {
+        "chapter": "ch9",
+        "file": "11-chapter9.md",
+        "section": "Deglobalization, Not Decentralization"
+      },
+      "alt": "Two supply lines compared: a long fragile global chain versus a short hyper-local loop",
+      "caption": "Not decentralization for its own sake. A shorter line you can hold in your head."
+    },
+    {
+      "id": "sts.diagram.algae-loop",
+      "type": "diagram-svg",
+      "label": "The Closed Algae Fish-Food Loop",
+      "concepts": [
+        "closed-loop",
+        "aquaponics",
+        "algae",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch17-algae-loop.svg",
+      "placement": {
+        "chapter": "ch17",
+        "file": "19-chapter17.md",
+        "section": "The Proof Is Not Hypothetical"
+      },
+      "alt": "The closed algae fish-food loop: fish, grow beds, dry and grind, photobioreactor, back to fish",
+      "caption": "Grow the fish food too, and the last store-bought input drops out. The loop closes."
+    },
+    {
+      "id": "sts.photo.ch01-atlas",
+      "type": "photo",
+      "label": "Boston Dynamics Atlas during DARPA testing",
+      "concepts": [
+        "humanoid-robot"
+      ],
+      "figure": "static/book-images/ch01-atlas.jpg",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "INTRODUCTION: The Uncompromising Truth"
+      },
+      "alt": "Boston Dynamics Atlas during DARPA testing",
+      "caption": "Atlas during testing. The data does not care how you feel about it.",
+      "credit": {
+        "artist": "DARPA",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg"
+      }
+    },
+    {
+      "id": "sts.photo.intro-asimo",
+      "type": "photo",
+      "label": "Honda ASIMO humanoid robot, 2001",
+      "concepts": [
+        "humanoid-robot",
+        "robotics"
+      ],
+      "figure": "static/book-images/intro-asimo.jpg",
+      "placement": {
+        "chapter": "preface",
+        "file": "01-preface.md",
+        "section": "PREFACE: Welcome to the Weirdness"
+      },
+      "alt": "Honda ASIMO humanoid robot, 2001",
+      "caption": "ASIMO, the 2001 model, photographed at Honda Welcome Plaza Aoyama in 2023. The weirdness arrived on schedule.",
+      "credit": {
+        "artist": "Liauzh",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File%3AASIMO-2001.jpg"
+      }
+    },
+    {
+      "id": "sts.photo.ch00-madrone-bark",
+      "type": "photo",
+      "label": "Peeling red bark of a Pacific madrone (Arbutus menziesii)",
+      "concepts": [
+        "regeneration"
+      ],
+      "figure": "static/book-images/ch00-madrone-bark.jpg",
+      "placement": {
+        "chapter": "chapter0",
+        "file": "00-chapter0.md",
+        "section": "Chapter 0: The Demonstration"
+      },
+      "alt": "Peeling red bark of a Pacific madrone (Arbutus menziesii)",
+      "caption": "Pacific madrone, mid-shed. It burns to the ground and comes back from the root.",
+      "credit": {
+        "artist": "Photo by and (c)2007 Jina Lee",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pacific_Madrone_Arbutus_menziesii_Peeling_tree_bark.jpg"
+      }
+    },
+    {
+      "id": "sts.banner.part1-divider",
+      "type": "banner-pixel",
+      "label": "Part I Divider: Event Horizon",
+      "concepts": [
+        "pixel-art",
+        "solar-energy"
+      ],
+      "figure": "static/book-images/part1-divider.png",
+      "placement": {
+        "chapter": "part-1",
+        "file": "part1-divider.md",
+        "section": "Part I: What is the Singularity?"
+      },
+      "alt": "Pixel art: a dark sun crossed by an amber ring rising over a perspective grid, a lone figure standing at the horizon",
+      "caption": ""
+    },
+    {
+      "id": "sts.photo.ch01-m87-black-hole",
+      "type": "photo",
+      "label": "Event Horizon Telescope image of the M87 supermassive black hole",
+      "concepts": [
+        "cosmology",
+        "event-horizon"
+      ],
+      "figure": "static/book-images/ch01-m87-black-hole.jpg",
+      "placement": {
+        "chapter": "chapter1",
+        "file": "03-chapter1.md",
+        "section": "Chapter 1: The Event Horizon"
+      },
+      "alt": "Event Horizon Telescope image of the M87 supermassive black hole",
+      "caption": "The event horizon of M87. Past a certain line, there is no going back.",
+      "credit": {
+        "artist": "Event Horizon Telescope Collaboration",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg"
+      }
+    },
+    {
+      "id": "sts.photo.ch02-factory-robots",
+      "type": "photo",
+      "label": "Robotic arms assembling a car body",
+      "concepts": [
+        "automation",
+        "robotics"
+      ],
+      "figure": "static/book-images/ch02-factory-robots.jpg",
+      "placement": {
+        "chapter": "chapter2",
+        "file": "04-chapter2.md",
+        "section": "Chapter 2: The Era of AGI (Stages 1–5)"
+      },
+      "alt": "Robotic arms assembling a car body",
+      "caption": "Robotic arms at work. The structural automation of labor, already routine.",
+      "credit": {
+        "artist": "ell brown",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File%3AMaking_a_Jaguar_car_-_Thinktank_Birmingham_Science_Museum_-_robotic_arms_at_work_%288613698407%29.jpg"
+      }
+    },
+    {
+      "id": "sts.photo.ch03-falcon-heavy",
+      "type": "photo",
+      "label": "Falcon Heavy lifting off from Kennedy Space Center",
+      "concepts": [
+        "spaceflight"
+      ],
+      "figure": "static/book-images/ch03-falcon-heavy.jpg",
+      "placement": {
+        "chapter": "chapter3",
+        "file": "05-chapter3.md",
+        "section": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)"
+      },
+      "alt": "Falcon Heavy lifting off from Kennedy Space Center",
+      "caption": "Falcon Heavy demo mission. The exodus hardware is already flying.",
+      "credit": {
+        "artist": "SpaceX",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Falcon_Heavy_Demo_Mission_(40126461851).jpg"
+      }
+    },
+    {
+      "id": "sts.photo.ch04-hubble-deep-field",
+      "type": "photo",
+      "label": "Hubble Ultra-Deep Field showing thousands of galaxies",
+      "concepts": [
+        "cosmology"
+      ],
+      "figure": "static/book-images/ch04-hubble-deep-field.jpg",
+      "placement": {
+        "chapter": "chapter4",
+        "file": "06-chapter4.md",
+        "section": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)"
+      },
+      "alt": "Hubble Ultra-Deep Field showing thousands of galaxies",
+      "caption": "The Hubble Ultra-Deep Field. The available real estate.",
+      "credit": {
+        "artist": "NASA/ESA",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field_high_rez_edit1.jpg"
+      }
+    },
+    {
+      "id": "sts.photo.ch05-sdo-sun",
+      "type": "photo",
+      "label": "The Sun imaged by NASA's Solar Dynamics Observatory",
+      "concepts": [
+        "solar-energy"
+      ],
+      "figure": "static/book-images/ch05-sdo-sun.jpg",
+      "placement": {
+        "chapter": "chapter5",
+        "file": "07-chapter5.md",
+        "section": "Chapter 5: The Thermodynamics of Survival"
+      },
+      "alt": "The Sun imaged by NASA's Solar Dynamics Observatory",
+      "caption": "The Sun, via NASA's Solar Dynamics Observatory. The only income the planet has.",
+      "credit": {
+        "artist": "NASA/SDO (AIA)",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch05-closed-loop-cycle",
+      "type": "diagram-svg",
+      "label": "The Closed-Loop Survival Cycle",
+      "concepts": [
+        "closed-loop",
+        "commons",
+        "soil-health",
+        "solar-energy",
+        "thermodynamics"
+      ],
+      "figure": "static/book-images/ch05-closed-loop-cycle.svg",
+      "placement": {
+        "chapter": "chapter5",
+        "file": "07-chapter5.md",
+        "section": "2. Digital Leverage: Content as Energy Arbitrage"
+      },
+      "alt": "The Closed-Loop Survival Cycle: sun and soil feed community calories, which fund creative autonomy, which buys physical hardware, which expands the community's capture of sun and soil",
+      "caption": "The Closed-Loop Survival Cycle. Energy captured from the sun and soil stays inside the community, and every pass through the loop widens the intake."
+    },
+    {
+      "id": "sts.banner.part2-divider",
+      "type": "banner-pixel",
+      "label": "Part II Divider: The Fire Circle",
+      "concepts": [
+        "commons",
+        "pixel-art"
+      ],
+      "figure": "static/book-images/part2-divider.png",
+      "placement": {
+        "chapter": "part-2",
+        "file": "part2-divider.md",
+        "section": "Part II: How Humans React: The Cooperative Transition"
+      },
+      "alt": "Pixel art: scattered figures standing alone in the dark on the left, a small group gathered around a warm fire on the right",
+      "caption": ""
+    },
+    {
+      "id": "sts.photo.ch06-edmond-de-belamy",
+      "type": "photo",
+      "label": "Edmond de Belamy, the first AI-generated portrait sold at a major auction house",
+      "concepts": [
+        "generative-ai"
+      ],
+      "figure": "static/book-images/ch06-edmond-de-belamy.png",
+      "placement": {
+        "chapter": "chapter6",
+        "file": "08-chapter6.md",
+        "section": "Chapter 6: The Singularity Is a Done Deal"
+      },
+      "alt": "Edmond de Belamy, the first AI-generated portrait sold at a major auction house",
+      "caption": "Edmond de Belamy, generated by a GAN, sold at Christie's for $432,500 in 2018.",
+      "credit": {
+        "artist": "Artificial intelligence software",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File%3AEdmond_de_Belamy.png"
+      }
+    },
+    {
+      "id": "sts.photo.ch07-chess-battle-lines",
+      "type": "photo",
+      "label": "Chess board set up in the opening position",
+      "concepts": [
+        "strategy"
+      ],
+      "figure": "static/book-images/ch07-chess-battle-lines.jpg",
+      "placement": {
+        "chapter": "chapter7",
+        "file": "09-chapter7.md",
+        "section": "Chapter 7: The Battle Lines: The Entitled vs. The Ready"
+      },
+      "alt": "Chess board set up in the opening position",
+      "caption": "Opening position. The battle lines are drawn before most players notice the game started.",
+      "credit": {
+        "artist": "Bin im Garten",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Chess_board_with_chess_set_in_opening_position_IMG_5994.JPG"
+      }
+    },
+    {
+      "id": "sts.photo.ch08-sophia",
+      "type": "photo",
+      "label": "Sophia, the humanoid robot by Hanson Robotics",
+      "concepts": [
+        "humanoid-robot",
+        "robotics"
+      ],
+      "figure": "static/book-images/ch08-sophia.jpg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "Chapter 8: The Psychology of the Collapse"
+      },
+      "alt": "Sophia, the humanoid robot by Hanson Robotics",
+      "caption": "Sophia. The mirror humans keep flinching at.",
+      "credit": {
+        "artist": "ITU Pictures",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File%3ASophia_%28robot%29.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch08-cognitive-extraction",
+      "type": "diagram-svg",
+      "label": "The Cognitive Extraction Engine",
+      "concepts": [
+        "attention-economy",
+        "cognitive-autonomy",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch08-cognitive-extraction.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "The Great Cognitive Extraction"
+      },
+      "alt": "The Cognitive Extraction Engine: raw attention is harvested by infinite scroll and notifications, depleting the prefrontal cortex, producing systemic suggestibility, and ending in loss of physical agency",
+      "caption": "The Cognitive Extraction Engine. Attention goes in at the top; agency comes out the bottom, and the platform keeps the difference."
+    },
+    {
+      "id": "sts.diagram.ch08-info-architectures",
+      "type": "diagram-svg",
+      "label": "Information Dispensing Architectures",
+      "concepts": [
+        "attention-economy",
+        "cognitive-autonomy"
+      ],
+      "figure": "static/book-images/ch08-info-architectures.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "2. Semantic Hygiene: Filtering Memetic Viruses"
+      },
+      "alt": "Information Dispensing Architectures: a centralized algorithmic stream interrupting your brain constantly, versus filtered local sources delivered to your brain in scheduled batches",
+      "caption": "Two architectures for the same brain. The stream keeps you reactive; the batch keeps you sovereign."
+    },
+    {
+      "id": "sts.diagram.ch08-focus-recovery",
+      "type": "diagram-svg",
+      "label": "The Cognitive Fragmentation Curve",
+      "concepts": [
+        "cognitive-autonomy"
+      ],
+      "figure": "static/book-images/ch08-focus-recovery.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "The Thermodynamics of Cognitive Capture"
+      },
+      "alt": "The Cognitive Fragmentation Curve: a graph of cognitive depth over one hour, showing a twenty-minute climb to deep-focus baseline, then repeated algorithmic interrupts, each recovery peaking lower than the last",
+      "caption": "The Cognitive Fragmentation Curve. Above roughly three interrupts an hour, the curve never touches baseline again."
+    },
+    {
+      "id": "sts.diagram.ch08-firewall-pipeline",
+      "type": "diagram-svg",
+      "label": "The Cognitive Firewall Pipeline",
+      "concepts": [
+        "cognitive-autonomy",
+        "legal-strategy",
+        "resilience",
+        "systems-thinking",
+        "thermodynamics"
+      ],
+      "figure": "static/book-images/ch08-firewall-pipeline.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "Semantic Hygiene: Protecting the Input Buffer"
+      },
+      "alt": "The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batch processing, then text-only synthesis, and emerges as deep physical execution",
+      "caption": "The Cognitive Firewall Pipeline. Entropy falls left to right; agency rises."
+    },
+    {
+      "id": "sts.diagram.ch08-isolated-decay",
+      "type": "diagram-svg",
+      "label": "The Decay of Isolated Systems",
+      "concepts": [
+        "cognitive-autonomy",
+        "soil-health",
+        "solar-energy",
+        "thermodynamics"
+      ],
+      "figure": "static/book-images/ch08-isolated-decay.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "Section 1: The Thermodynamic Failure of Isolation"
+      },
+      "alt": "The Decay of Isolated Systems: an isolated individual fans out into solar drift, soil decline, and cognitive exhaustion, which converge into system collapse at maximum entropy",
+      "caption": "The Decay of Isolated Systems. One person cannot out-work entropy on every front at once."
+    },
+    {
+      "id": "sts.diagram.ch08-star-vs-mesh",
+      "type": "diagram-svg",
+      "label": "Trust network topologies",
+      "concepts": [
+        "mesh-networking",
+        "resilience"
+      ],
+      "figure": "static/book-images/ch08-star-vs-mesh.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "Section 3: Trust Network Topologies"
+      },
+      "alt": "Trust network topologies: a star topology where every node depends on one hub that can fail, versus a mesh topology where every node connects to several neighbors and damage becomes a detour",
+      "caption": "Star versus mesh. In the star, the hub's failure is everyone's failure; in the mesh, damage is a routing problem."
+    },
+    {
+      "id": "sts.diagram.ch08-commons-loop",
+      "type": "diagram-svg",
+      "label": "The Autonomous Commons Loop",
+      "concepts": [
+        "automation",
+        "closed-loop",
+        "cognitive-autonomy",
+        "commons",
+        "composting",
+        "farmbot",
+        "food-independence",
+        "mesh-networking",
+        "off-grid-energy",
+        "robotics",
+        "solar-energy",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch08-commons-loop.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "Section 4: The Shared Metabolic Loop"
+      },
+      "alt": "The Autonomous Commons Loop: a shared solar DC microgrid powers a local GPU server producing cognitive output and a FarmBot bioreactor producing caloric yield, both feeding the human trust mesh, which maintains the grid in return",
+      "caption": "The Autonomous Commons Loop. Energy becomes intelligence and calories, and both flow back into the mesh that keeps the panels clean."
+    },
+    {
+      "id": "sts.photo.ch09-3d-printer",
+      "type": "photo",
+      "label": "Desktop 3D printer mid-print",
+      "concepts": [
+        "3d-printing",
+        "deglobalization",
+        "fabrication"
+      ],
+      "figure": "static/book-images/ch09-3d-printer.jpg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "Chapter 9: Deglobalization and the Neighborhood Factory"
+      },
+      "alt": "Desktop 3D printer mid-print",
+      "caption": "A desktop 3D printer. The neighborhood factory fits on a workbench.",
+      "credit": {
+        "artist": "John Abella",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Prusa_i3_-_RepRap_3D_printer_printing.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch09-npk-loop",
+      "type": "diagram-svg",
+      "label": "The Destructive NPK Feedback Loop",
+      "concepts": [
+        "soil-health",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch09-npk-loop.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "Section 1: Demolishing the Petrochemical NPK Trap"
+      },
+      "alt": "The Destructive NPK Feedback Loop: applying synthetic NPK kills native soil biology, which collapses the soil into sterile dirt, which makes plants dependent on constant synthetic inputs, which sends you back to buy the next bag",
+      "caption": "The NPK subscription trap. Every bag makes the next bag mandatory; the exit is biological."
+    },
+    {
+      "id": "sts.diagram.ch09-greenhouse-bus",
+      "type": "diagram-svg",
+      "label": "The Greenhouse Automation Bus",
+      "concepts": [
+        "automation",
+        "dc-microgrid",
+        "food-independence",
+        "soil-health",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch09-greenhouse-bus.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "Section 2: The Automated Greenhouse Core (Mycodo and Raspberry Pi)"
+      },
+      "alt": "The Greenhouse Automation Bus: a Raspberry Pi running Mycodo reads an I2C sensor bus (SHT31-D air, STEMMA soil) and drives a GPIO relay board controlling a water solenoid, exhaust fan, and grow lights, in a closed sense-decide-actuate loop",
+      "caption": "The Greenhouse Automation Bus. Sensors in on I2C, 12V actuators out on GPIO relays, PID loops in the middle."
+    },
+    {
+      "id": "sts.diagram.ch09-cnc-bed",
+      "type": "diagram-svg",
+      "label": "The CNC Autonomous Bed",
+      "concepts": [
+        "automation",
+        "cnc",
+        "farmbot",
+        "food-independence",
+        "robotics",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch09-cnc-bed.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "Section 3: The Mechanical Calorie Engine (FarmBot Architecture)"
+      },
+      "alt": "The CNC Autonomous Bed: a gantry travels the X-axis over a dense raised bed while a Z-axis tool head seeds, waters, and weeds plants addressed by X-Y coordinate, with no walking paths wasted",
+      "caption": "The CNC Autonomous Bed. Every plant is a coordinate; the machine tends the whole grid from one rail."
+    },
+    {
+      "id": "sts.diagram.ch09-act-reactor",
+      "type": "diagram-svg",
+      "label": "The ACT Biological Reactor",
+      "concepts": [
+        "composting",
+        "dc-microgrid"
+      ],
+      "figure": "static/book-images/ch09-act-reactor.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "Section 4: The Aerated Compost Tea (ACT) Bioreactor"
+      },
+      "alt": "The ACT Biological Reactor: a mesh compost bag suspended in a 200-liter tank of water, molasses, and kelp solution, aerated from below by a 12V linear diaphragm air pump, with a dissolved-oxygen gauge that must stay above 6 mg/L",
+      "caption": "The ACT Bioreactor. Keep the dissolved oxygen above 6 mg/L or the brew turns to a pathogen soup; the pump is not optional."
+    },
+    {
+      "id": "sts.banner.part3-divider",
+      "type": "banner-pixel",
+      "label": "Part III Divider: The Shouse Homestead",
+      "concepts": [
+        "container-construction",
+        "food-independence",
+        "lora",
+        "pixel-art",
+        "shouse",
+        "solar-energy"
+      ],
+      "figure": "static/book-images/part3-divider.png",
+      "placement": {
+        "chapter": "part-3",
+        "file": "part3-divider.md",
+        "section": "Part III: How to Survive the Transition"
+      },
+      "alt": "Pixel art: a container shouse with a lit window and rooftop solar, a wind turbine, garden rows, and a LoRa mast under a starry sky",
+      "caption": ""
+    },
+    {
+      "id": "sts.photo.ch10-nyse",
+      "type": "photo",
+      "label": "The New York Stock Exchange trading floor",
+      "concepts": [
+        "market-collapse",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch10-nyse.jpg",
+      "placement": {
+        "chapter": "chapter10",
+        "file": "12-chapter10.md",
+        "section": "Chapter 10: The \"Create Over Consume\" Protocol"
+      },
+      "alt": "The New York Stock Exchange trading floor",
+      "caption": "The trading floor. The consumption engine you are stepping out of.",
+      "credit": {
+        "artist": "Scott Beale",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File%3ATrading_Floor_at_the_New_York_Stock_Exchange.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch10-model-collapse",
+      "type": "diagram-svg",
+      "label": "Model collapse generation by generation",
+      "concepts": [
+        "model-collapse"
+      ],
+      "figure": "static/book-images/ch10-model-collapse.svg",
+      "placement": {
+        "chapter": "chapter10",
+        "file": "12-chapter10.md",
+        "section": "2. Error Accumulation (The Degeneracy Boundary)"
+      },
+      "alt": "Model collapse generation by generation: a wide, rich human-data distribution at Generation 0 narrows to a piled-up mean at Generation 1 and finally to a single degenerate spike at Generation 5",
+      "caption": "Model collapse across one training lineage. The rich tails, the edge cases, the genius, are pruned first and gone by Generation 5."
+    },
+    {
+      "id": "sts.diagram.ch10-algorithm-unlock",
+      "type": "diagram-svg",
+      "label": "The Algorithmic Judo pipeline",
+      "concepts": [
+        "digital-leverage",
+        "media-strategy",
+        "off-grid-energy",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch10-algorithm-unlock.svg",
+      "placement": {
+        "chapter": "chapter10",
+        "file": "12-chapter10.md",
+        "section": "Algorithmic Judo: Weaponizing the Feedback Loop"
+      },
+      "alt": "The Algorithmic Judo pipeline: a high-utility off-grid tech core wrapped in an outrage or tragedy narrative hook is scored viral by the algorithm and delivered to a human target who unlocks the core",
+      "caption": "Algorithmic Judo. A dry manual scores near zero; wrapped in a human story, the algorithm carries it for you."
+    },
+    {
+      "id": "sts.photo.ch11-spot",
+      "type": "photo",
+      "label": "Boston Dynamics Spot quadruped robot",
+      "concepts": [
+        "humanoid-robot",
+        "robotics"
+      ],
+      "figure": "static/book-images/ch11-spot.jpg",
+      "placement": {
+        "chapter": "chapter11",
+        "file": "13-chapter11.md",
+        "section": "Chapter 11: Using the Tech to Your Advantage"
+      },
+      "alt": "Boston Dynamics Spot quadruped robot",
+      "caption": "Spot. The same machines ending careers will happily work for you.",
+      "credit": {
+        "artist": "Jonte",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File%3ASpot_by_Boston_Dynamics.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch11-rack-architecture",
+      "type": "diagram-svg",
+      "label": "The Autonomous Rack Architecture",
+      "concepts": [
+        "automation",
+        "container-construction",
+        "dc-microgrid",
+        "mesh-networking",
+        "off-grid-energy",
+        "systems-thinking",
+        "thermal-management"
+      ],
+      "figure": "static/book-images/ch11-rack-architecture.svg",
+      "placement": {
+        "chapter": "chapter11",
+        "file": "13-chapter11.md",
+        "section": "Section 1: Sourcing and Hardware Mathematics (Independent Compute)"
+      },
+      "alt": "The Autonomous Rack Architecture: a 12V-native rack with an EdgeRouter and DC switch at U1, a 24V-to-12V fuse panel at U2, a headless Proxmox node with two 24 GB GPUs in the middle, and a coolant pump and reservoir at the bottom",
+      "caption": "The Autonomous Rack. Everything runs native 12V DC off the shell's bus: no inverter, no wall bricks, no meter."
+    },
+    {
+      "id": "sts.diagram.ch11-cooling-loop",
+      "type": "diagram-svg",
+      "label": "The Split-Loop Thermal Exchange",
+      "concepts": [
+        "container-construction",
+        "dc-microgrid",
+        "thermal-envelope",
+        "thermal-management",
+        "thermodynamics"
+      ],
+      "figure": "static/book-images/ch11-cooling-loop.svg",
+      "placement": {
+        "chapter": "chapter11",
+        "file": "13-chapter11.md",
+        "section": "Section 2: Custom Thermodynamic Cooling (External Heat Exchange)"
+      },
+      "alt": "The Split-Loop Thermal Exchange: GPU and CPU water blocks inside the insulated shell feed a 12V pump that sends hot coolant through the wall to a salvaged car radiator in free air, with cool coolant returning to the chips",
+      "caption": "The Split-Loop Thermal Exchange. Pull the heat straight off the silicon and dump it outside, instead of paying an AC unit to fight your own server."
+    },
+    {
+      "id": "sts.photo.ch12-farmbot",
+      "type": "photo",
+      "label": "FarmBot automated gardening system over a raised bed",
+      "concepts": [
+        "automation",
+        "farmbot",
+        "food-independence",
+        "robotics"
+      ],
+      "figure": "static/book-images/ch12-farmbot.jpg",
+      "placement": {
+        "chapter": "chapter12",
+        "file": "14-chapter12.md",
+        "section": "Chapter 12: The Land Strategy"
+      },
+      "alt": "FarmBot automated gardening system over a raised bed",
+      "caption": "FarmBot over a raised bed. Land plus automation is the position to hold.",
+      "credit": {
+        "artist": "FarmBot",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File%3AFarmBot_Genesis.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch12-shouse-engine",
+      "type": "diagram-svg",
+      "label": "The Shouse Thermodynamic Engine",
+      "concepts": [
+        "closed-loop",
+        "cnc",
+        "commons",
+        "dc-microgrid",
+        "fabrication",
+        "mesh-networking",
+        "shouse",
+        "systems-thinking",
+        "thermal-envelope",
+        "thermal-management",
+        "thermodynamics"
+      ],
+      "figure": "static/book-images/ch12-shouse-engine.svg",
+      "placement": {
+        "chapter": "chapter12",
+        "file": "14-chapter12.md",
+        "section": "Section 1: The Anatomy of the Shouse (The Productive Node)"
+      },
+      "alt": "The Shouse Thermodynamic Engine: the shop half holds the welder, CNC plasma, tool library, server Crucible, DC fuse block, and rainwater rack; a shared thermal and power bus feeds the insulated house half below",
+      "caption": "The Shouse. Half factory, half home, one envelope: the shop's waste heat is the house's furnace."
+    },
+    {
+      "id": "sts.diagram.ch12-csa-network",
+      "type": "diagram-svg",
+      "label": "The Semi-Autonomous CSA Network",
+      "concepts": [
+        "automation",
+        "fabrication",
+        "food-independence",
+        "food-security",
+        "lora",
+        "mesh-networking",
+        "off-grid-energy",
+        "shouse"
+      ],
+      "figure": "static/book-images/ch12-csa-network.svg",
+      "placement": {
+        "chapter": "chapter12",
+        "file": "14-chapter12.md",
+        "section": "Section 2: The Semi-Autonomous CSA Topology"
+      },
+      "alt": "The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhouse, Shouse Node B with its tool library and battery bank, exchanging tasks over LoRa mesh, and a vulnerable node receiving automated calorie and labor deliveries",
+      "caption": "The Semi-Autonomous CSA. Automated nodes run at roughly 300% of their own need; the surplus carries whoever cannot produce."
+    },
+    {
+      "id": "sts.photo.ch13-solar-barn",
+      "type": "photo",
+      "label": "Solar panels on a rural outbuilding roof",
+      "concepts": [
+        "shouse",
+        "solar-energy"
+      ],
+      "figure": "static/book-images/ch13-solar-barn.jpg",
+      "placement": {
+        "chapter": "chapter13",
+        "file": "15-chapter13.md",
+        "section": "Chapter 13: The Shouse Protocol"
+      },
+      "alt": "Solar panels on a rural outbuilding roof",
+      "caption": "Solar on an outbuilding. The Shouse Grid starts with one roof.",
+      "credit": {
+        "artist": "Ermell",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Gutshof_Nassanger_Scheune-20220807-RM-161209.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch13-shell-architecture",
+      "type": "diagram-svg",
+      "label": "The Double-Wide Shell Architecture",
+      "concepts": [
+        "automation",
+        "container-construction",
+        "systems-thinking",
+        "wet-room"
+      ],
+      "figure": "static/book-images/ch13-shell-architecture.svg",
+      "placement": {
+        "chapter": "chapter13",
+        "file": "15-chapter13.md",
+        "section": "The Autonomous Shell: The $25,000 Exit Strategy"
+      },
+      "alt": "The Double-Wide Shell Architecture: two 8-by-40-foot containers mated along a reinforced seam, one side holding the workspace and server room, the other the wet-room, kitchen, and living quarters",
+      "caption": "The Double-Wide Shell. Two one-trip containers, one surgical cut, 640 square feet of open span."
+    },
+    {
+      "id": "sts.diagram.ch13-pier-alignment",
+      "type": "diagram-svg",
+      "label": "6-Point Pier Alignment",
+      "concepts": [
+        "container-construction"
+      ],
+      "figure": "static/book-images/ch13-pier-alignment.svg",
+      "placement": {
+        "chapter": "chapter13",
+        "file": "15-chapter13.md",
+        "section": "Step 1: Site Prep, Excavation, and the Pier Layout"
+      },
+      "alt": "6-Point Pier Alignment: plan view of six concrete piers positioned at the corner and center points of both containers' outer rails, with the seam line running between them",
+      "caption": "The 6-point pier layout. Corner and center points, dug past the frost line, leveled to the millimeter."
+    },
+    {
+      "id": "sts.diagram.ch13-c-channel",
+      "type": "diagram-svg",
+      "label": "Center C-Channel Reinforcement",
+      "concepts": [
+        "welding"
+      ],
+      "figure": "static/book-images/ch13-c-channel.svg",
+      "placement": {
+        "chapter": "chapter13",
+        "file": "15-chapter13.md",
+        "section": "Step 3: The Surgical Cut and Structural Reinforcement"
+      },
+      "alt": "Center C-Channel Reinforcement: section view showing the roof corrugation carried by a double C-channel header beam on 6 mm weld plates, supported by 75 by 75 mm HSS vertical columns welded to the floor rails",
+      "caption": "The center-seam skeleton. Columns first, header second, then the cut: the roof never carries itself."
+    },
+    {
+      "id": "sts.diagram.ch13-thermal-seal",
+      "type": "diagram-svg",
+      "label": "The Thermal Barrier Layer",
+      "concepts": [
+        "thermal-envelope",
+        "welding"
+      ],
+      "figure": "static/book-images/ch13-thermal-seal.svg",
+      "placement": {
+        "chapter": "chapter13",
+        "file": "15-chapter13.md",
+        "section": "Step 4: The Thermodynamics of Insulation (Beating the Tin Can)"
+      },
+      "alt": "The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel",
+      "caption": "The thermal barrier in section. Foam bonded to bare steel: vapor-sealed, condensation-proof, and the heat stays outside."
+    },
+    {
+      "id": "sts.diagram.ch13-wet-room",
+      "type": "diagram-svg",
+      "label": "Universal Wet-Room Layout",
+      "concepts": [
+        "dc-microgrid",
+        "food-independence",
+        "wet-room"
+      ],
+      "figure": "static/book-images/ch13-wet-room.svg",
+      "placement": {
+        "chapter": "chapter13",
+        "file": "15-chapter13.md",
+        "section": "Step 5: Universal Mechanical Design (The Wet-Room Protocol)"
+      },
+      "alt": "Universal Wet-Room Layout: plan view with DC water pump feeding a shower fixture, the entire floor sloping as one basin toward a linear drain, and greywater exiting to the garden beds",
+      "caption": "The Universal Wet-Room. One sloped basin, one linear drain, zero thresholds to trip over at any age."
+    },
+    {
+      "id": "sts.photo.ch14-dead-mall",
+      "type": "photo",
+      "label": "Interior of an abandoned shopping mall",
+      "concepts": [
+        "market-collapse"
+      ],
+      "figure": "static/book-images/ch14-dead-mall.jpg",
+      "placement": {
+        "chapter": "chapter14",
+        "file": "16-chapter14.md",
+        "section": "Chapter 14: The Collapse of the Long Tail"
+      },
+      "alt": "Interior of an abandoned shopping mall",
+      "caption": "A dead mall. Gradually, then suddenly.",
+      "credit": {
+        "artist": "User:Mattes",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Israel_Batch_3_(172).JPG"
+      }
+    },
+    {
+      "id": "sts.diagram.ch14-logistic-shockwave",
+      "type": "diagram-svg",
+      "label": "The Logistic Shockwave",
+      "concepts": [
+        "market-collapse",
+        "resilience",
+        "supply-chain"
+      ],
+      "figure": "static/book-images/ch14-logistic-shockwave.svg",
+      "placement": {
+        "chapter": "chapter14",
+        "file": "16-chapter14.md",
+        "section": "The Just-In-Time Trap"
+      },
+      "alt": "The Logistic Shockwave: a four-day cascade from port disruption, to trucks rerouted, to shelves stripped clean, to systemic panic, with the local food buffer draining to zero alongside",
+      "caption": "The Logistic Shockwave. A just-in-time system has no buffer to absorb the blow, so the blow travels straight through to the shelves."
+    },
+    {
+      "id": "sts.diagram.ch14-mesh-comms",
+      "type": "diagram-svg",
+      "label": "Centralized versus decentralized mesh communications",
+      "concepts": [
+        "legal-strategy",
+        "mesh-networking",
+        "resilience"
+      ],
+      "figure": "static/book-images/ch14-mesh-comms.svg",
+      "placement": {
+        "chapter": "chapter14",
+        "file": "16-chapter14.md",
+        "section": "The Municipal Mesh: Independent Communications"
+      },
+      "alt": "Centralized versus decentralized mesh communications: a single tower serving three users fails entirely when broken, while a mesh of nodes routes around any dead node",
+      "caption": "Two topologies for a town. The tower is a single point of failure; the mesh treats damage as a routing problem."
+    },
+    {
+      "id": "sts.photo.ch12-farmbot-watering",
+      "type": "photo",
+      "label": "Automated watering over garden soil",
+      "concepts": [
+        "automation",
+        "food-independence",
+        "soil-health"
+      ],
+      "figure": "static/book-images/ch12-farmbot-watering.jpg",
+      "placement": {
+        "chapter": "chapter15",
+        "file": "17-chapter15.md",
+        "section": "Chapter 15: The Power of Reclaiming Soil"
+      },
+      "alt": "Automated watering over garden soil",
+      "caption": "Automated watering over living soil. The substrate everything else depends on.",
+      "credit": {
+        "artist": "FarmBot",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File%3AFarmBot_Genesis_Watering.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch15-clt-firewall",
+      "type": "diagram-svg",
+      "label": "The Cooperative Land Trust Firewall",
+      "concepts": [
+        "commons",
+        "land-strategy",
+        "legal-strategy"
+      ],
+      "figure": "static/book-images/ch15-clt-firewall.svg",
+      "placement": {
+        "chapter": "chapter15",
+        "file": "17-chapter15.md",
+        "section": "The Legal Firewall: Hacking the Deed"
+      },
+      "alt": "The Cooperative Land Trust Firewall: the speculative real estate market's attempts to buy or foreclose are blocked by a legal shield; inside the trust, the land is held in perpetuity and leased to community stewards on a 99-year ground lease",
+      "caption": "The CLT firewall. Split the title, and the market can no longer reach the dirt."
+    },
+    {
+      "id": "sts.diagram.ch15-soil-food-web",
+      "type": "diagram-svg",
+      "label": "The Soil Food Web Engine",
+      "concepts": [
+        "closed-loop",
+        "soil-health",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch15-soil-food-web.svg",
+      "placement": {
+        "chapter": "chapter15",
+        "file": "17-chapter15.md",
+        "section": "The Biological Hack: Bypassing the Petrochemical Cartel"
+      },
+      "alt": "The Soil Food Web Engine: sunlight and plants pump sugars to bacteria and fungi, which mine minerals, which are digested by protozoa and nematodes, which release plant-available nutrients back to the plants in a closed loop",
+      "caption": "The Soil Food Web. A biological refinery running on sunlight: the plants feed the web that feeds the plants."
+    },
+    {
+      "id": "sts.photo.ch16-servers",
+      "type": "photo",
+      "label": "Racks of servers in a data center",
+      "concepts": [
+        "digital-leverage"
+      ],
+      "figure": "static/book-images/ch16-servers.jpg",
+      "placement": {
+        "chapter": "chapter16",
+        "file": "18-chapter16.md",
+        "section": "Chapter 16: Digital Leverage and Media Autonomy"
+      },
+      "alt": "Racks of servers in a data center",
+      "caption": "Server racks. Code and media scale while you sleep.",
+      "credit": {
+        "artist": "Victor Grigas",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_35.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch16-model-collapse",
+      "type": "diagram-svg",
+      "label": "The Spiral of Model Collapse",
+      "concepts": [
+        "model-collapse"
+      ],
+      "figure": "static/book-images/ch16-model-collapse.svg",
+      "placement": {
+        "chapter": "chapter16",
+        "file": "18-chapter16.md",
+        "section": "The Great Slop-ocalypse: Why the Machine Needs You"
+      },
+      "alt": "The Spiral of Model Collapse: AI models train on high-quality human data, flood the web with synthetic slop, then train on their own slop, degrading with every lap unless fresh human data enters the loop",
+      "caption": "The Spiral of Model Collapse. Every lap around the loop: less variance, more mush."
+    },
+    {
+      "id": "sts.diagram.ch16-algorithmic-judo",
+      "type": "diagram-svg",
+      "label": "The Algorithmic Judo Pipeline",
+      "concepts": [
+        "attention-economy",
+        "digital-leverage",
+        "media-strategy",
+        "off-grid-energy",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch16-algorithmic-judo.svg",
+      "placement": {
+        "chapter": "chapter16",
+        "file": "18-chapter16.md",
+        "section": "Algorithmic Judo: Packaging the Payload"
+      },
+      "alt": "The Algorithmic Judo Pipeline: a trojan-horse media package with a visible emotional wrapper and a hidden tactical payload rides the engagement algorithm to wide reach, then delivers autonomy guides, coordination tools, and off-grid manuals",
+      "caption": "Algorithmic Judo. The algorithm boosts the wrapper; the wrapper carries the payload."
+    },
+    {
+      "id": "sts.diagram.ch16-sneakernet",
+      "type": "diagram-svg",
+      "label": "The Sneakernet Cycle",
+      "concepts": [
+        "closed-loop",
+        "mesh-networking",
+        "off-grid-comms"
+      ],
+      "figure": "static/book-images/ch16-sneakernet.svg",
+      "placement": {
+        "chapter": "chapter16",
+        "file": "18-chapter16.md",
+        "section": "3. Sneakernets: The Physical Air-Gap"
+      },
+      "alt": "The Sneakernet Cycle: a hyper-local node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse",
+      "caption": "The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet."
+    },
+    {
+      "id": "sts.photo.ch17-workbench",
+      "type": "photo",
+      "label": "Workbench with hand tools",
+      "concepts": [
+        "fabrication"
+      ],
+      "figure": "static/book-images/ch17-workbench.jpg",
+      "placement": {
+        "chapter": "chapter17",
+        "file": "19-chapter17.md",
+        "section": "Chapter 17: Tools of the Trade"
+      },
+      "alt": "Workbench with hand tools",
+      "caption": "The workbench. Own the tools, own the output.",
+      "credit": {
+        "artist": "Shixart1985",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Various_hand_tools_and_hardware_items_scattered_on_an_old_green_workbench_in_a_workshop.jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.ch17-lora-node",
+      "type": "diagram-svg",
+      "label": "Anatomy of a hyper-local mesh node",
+      "concepts": [
+        "lora",
+        "mesh-networking",
+        "off-grid-comms",
+        "off-grid-energy",
+        "solar-energy"
+      ],
+      "figure": "static/book-images/ch17-lora-node.svg",
+      "placement": {
+        "chapter": "chapter17",
+        "file": "19-chapter17.md",
+        "section": "1. The Nervous System: DIY LoRa Mesh Nodes"
+      },
+      "alt": "Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz",
+      "caption": "A hyper-local mesh node. Sunlight in, encrypted packets out, no license and no bill."
+    },
+    {
+      "id": "sts.diagram.ch17-dc-native",
+      "type": "diagram-svg",
+      "label": "The inverter trap versus the DC-native protocol",
+      "concepts": [
+        "container-construction",
+        "dc-microgrid",
+        "off-grid-energy",
+        "solar-energy"
+      ],
+      "figure": "static/book-images/ch17-dc-native.svg",
+      "placement": {
+        "chapter": "chapter17",
+        "file": "19-chapter17.md",
+        "section": "2. The Muscle: DC-Native Solar and Battery Microgrids"
+      },
+      "alt": "The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 percent converting DC to AC and again converting back to DC at the wall brick, while the DC-native chain runs solar to battery to fuse block to devices with zero conversion loss",
+      "caption": "The round-trip toll. Every load in the shell already wanted DC; the inverter chain charges you twice to deliver it."
+    },
+    {
+      "id": "sts.diagram.ch17-fab-lab",
+      "type": "diagram-svg",
+      "label": "The Neighborhood Fab Lab",
+      "concepts": [
+        "3d-printing",
+        "cnc",
+        "fabrication"
+      ],
+      "figure": "static/book-images/ch17-fab-lab.svg",
+      "placement": {
+        "chapter": "chapter17",
+        "file": "19-chapter17.md",
+        "section": "3. The Skeleton: Open-Source Machine Tools"
+      },
+      "alt": "The Neighborhood Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power",
+      "caption": "The Neighborhood Fab Lab. Broken means fabricate, not wait."
+    },
+    {
+      "id": "sts.photo.ch18-compass-map",
+      "type": "photo",
+      "label": "Topographic map with compass rose",
+      "concepts": [
+        "strategy"
+      ],
+      "figure": "static/book-images/ch18-compass-map.jpg",
+      "placement": {
+        "chapter": "chapter18",
+        "file": "20-chapter18.md",
+        "section": "Chapter 18: The Roadmap and the Premortem Pivot"
+      },
+      "alt": "Topographic map with compass rose",
+      "caption": "The map, before the route. Premortem first, then move.",
+      "credit": {
+        "artist": "SFC9394",
+        "license": "CC BY 2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Topographical_Map_of_Traditional_Galloway.png"
+      }
+    },
+    {
+      "id": "sts.photo.ch19-iss-sunrise",
+      "type": "photo",
+      "label": "Sunrise seen from the International Space Station",
+      "concepts": [
+        "spaceflight"
+      ],
+      "figure": "static/book-images/ch19-iss-sunrise.jpg",
+      "placement": {
+        "chapter": "conclusion",
+        "file": "21-conclusion.md",
+        "section": "CONCLUSION: The 2027 Tipping Point"
+      },
+      "alt": "Sunrise seen from the International Space Station",
+      "caption": "Sunrise from orbit. The new era does not ask permission.",
+      "credit": {
+        "artist": "NASA Johnson Space Center",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:An_orbital_sunrise_crowns_Earth%27s_horizon_(iss072e340644).jpg"
+      }
+    },
+    {
+      "id": "sts.diagram.appa-redirection-matrix",
+      "type": "diagram-svg",
+      "label": "The Surplus Redirection Matrix",
+      "concepts": [
+        "composting",
+        "food-security",
+        "land-strategy",
+        "legal-strategy",
+        "soil-health",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/appa-redirection-matrix.svg",
+      "placement": {
+        "chapter": "appendix-a",
+        "file": "22-appendix-a.md",
+        "section": "SECTION 3. THE ZERO-WASTE REDIRECTION PROTOCOL"
+      },
+      "alt": "The Surplus Redirection Matrix: commercial surplus food is sorted by edibility, with edible food redirected to municipal kitchens and CLT food banks for utility credits, non-edible organics routed to the soil food web bioreactor, and attempted landfill dumping met with a progressive civil penalty funding the MRSF",
+      "caption": "The Surplus Redirection Matrix. Every path out of a loading dock leads somewhere useful, including the penalty."
+    },
+    {
+      "id": "sts.diagram.intro-nine-stages",
+      "type": "diagram-svg",
+      "label": "The nine stages of the singularity, grouped into three eras",
+      "concepts": [
+        "singularity",
+        "roadmap",
+        "nine-stages",
+        "agi",
+        "asi",
+        "new-social-contract"
+      ],
+      "figure": "static/book-images/intro-nine-stages.svg",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "INTRODUCTION: The Uncompromising Truth"
+      },
+      "alt": "The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge",
+      "caption": "The whole roadmap on one page. Everything you can act on lives in the first five stages, and the fight is over the terms of Stage 4."
+    },
+    {
+      "id": "sts.diagram.ch09-region-ring",
+      "type": "diagram-svg",
+      "label": "A dense city core ringed by four surrounding municipalities that supply it",
+      "concepts": [
+        "deglobalization",
+        "hyper-local",
+        "supply-chain",
+        "resilience",
+        "food-security",
+        "regional-buildout"
+      ],
+      "figure": "static/book-images/ch09-region-ring.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "A Dense City Cannot Feed Itself, and It Does Not Have To"
+      },
+      "alt": "A dense city core ringed by four surrounding municipalities that supply it: food production, materials recovery, energy and water, and neighborhood factories, with supply flowing inward to the core",
+      "caption": "You do not deglobalize a city by walling it off. You ring it with municipalities that produce what it cannot, which is also where the good jobs are."
+    },
+    {
+      "id": "sts.diagram.ch18-social-contract",
+      "type": "diagram-svg",
+      "label": "Two social contracts compared side by side",
+      "concepts": [
+        "new-social-contract",
+        "adequate-level-of-care",
+        "post-labor",
+        "regeneration",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch18-social-contract.svg",
+      "placement": {
+        "chapter": "chapter18",
+        "file": "20-chapter18.md",
+        "section": "The Adequate Level of Care (ALC)"
+      },
+      "alt": "Two social contracts compared side by side: the old one runs your labor to a wage to rented survival, and cuts you off if you miss a payment; the new one runs machines and regenerative loops to local abundance to an adequate level of care, so a job becomes a choice",
+      "caption": "The old contract makes you rent your survival month to month. The new one makes survival the floor, so a job becomes a choice, not a sentence."
+    },
+    {
+      "id": "sts.plate.grow-build-robots",
+      "type": "plate-composite",
+      "label": "The Robots That Grow Your Food and Build Your House",
+      "concepts": [
+        "robotics",
+        "automation",
+        "food-independence",
+        "new-social-contract",
+        "seminal-question",
+        "regeneration"
+      ],
+      "figure": "static/book-images/intro-robots.png",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "INTRODUCTION: The Uncompromising Truth"
+      },
+      "alt": "A pixel-art diptych: on the left a solar-topped farm robot on treads waters a row of vegetable seedlings; on the right a robot on treads raises and bolts the timber frame of a small house",
+      "caption": "The two machines this whole book is about: one that grows the food, one that builds the house. The pieces already exist; the work is putting them in your neighbors' hands.",
+      "pixellab": {
+        "grower": {
+          "object_id": "43d42db2-15d1-4072-bcc7-0d97ae6b1b61",
+          "source": "e45876b9 frame 3"
+        },
+        "builder": {
+          "object_id": "5e1c8edb-46a2-42d8-ba1c-772c499a7277",
+          "source": "513d255e frame 0"
+        }
+      },
+      "provenance": "PixelLab 1-direction objects + Python(Pillow) compositing on the navy/amber palette"
+    },
+    {
+      "id": "sts.sprite.pc-rig",
+      "type": "sprite-object",
+      "label": "Gaming Rig (GPU Tower)",
+      "concepts": [
+        "local-compute",
+        "thermodynamic-ceiling",
+        "self-hosted-model"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "b157a6dc-058a-46ca-8233-1aec5184eaa5",
+        "selected_frame_id": "2c8e7033-6f80-4b05-9a55-0e198c407745",
+        "alt_frame_id": "b54ac72f-a003-4ec7-b103-a963481bde83"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-pc-rig.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.pc-rig"
+      ],
+      "chapter": "ch01"
+    },
+    {
+      "id": "sts.plate.pc-rig",
+      "type": "plate-composite",
+      "label": "Gaming Rig (GPU Tower)",
+      "figure": "static/book-images/ch01-pc-rig.png",
+      "size": [
+        760,
+        654
+      ],
+      "composed_of": [
+        "sts.sprite.pc-rig"
+      ],
+      "placement": {
+        "chapter": "ch01",
+        "file": "03-chapter1.md",
+        "section": "the tower at home"
+      },
+      "alt": "A beige mini-tower PC case with two mismatched GPUs zip-tied inside, visible through an open side panel",
+      "caption": "The rig. Two GPUs zip-tied into a case that never fit them. It throttles by design."
+    },
+    {
+      "id": "sts.sprite.novel-reader",
+      "type": "sprite-object",
+      "label": "The Novel Reader (1790s)",
+      "concepts": [
+        "moral-panic",
+        "unsupervised-attention",
+        "reading-rage",
+        "precedent-p01"
+      ],
+      "pixellab": {
+        "kind": "image-pro",
+        "job_id": "7784d2ef-494b-4dc1-b225-fd2686870ce6",
+        "selected_frame_index": 3,
+        "candidates": 4,
+        "seed": 17900
+      },
+      "raw": "static/book-images/sprites/sts-sprite-novel-reader.png",
+      "size": [
+        160,
+        160
+      ],
+      "used_in": [
+        "sts.plate.novel-reader"
+      ],
+      "chapter": "preface"
+    },
+    {
+      "id": "sts.plate.novel-reader",
+      "type": "plate-composite",
+      "label": "The Novel Reader (1790s)",
+      "figure": "static/book-images/preface-reading-rage.png",
+      "size": [
+        760,
+        599
+      ],
+      "composed_of": [
+        "sts.sprite.novel-reader"
+      ],
+      "built_by": "scripts/build_book_plate.py",
+      "plate_title": "READING RAGE",
+      "plate_caption": "diagnosed: reading fever. prognosis: moral collapse.",
+      "placement": {
+        "chapter": "preface",
+        "file": "01-preface.md",
+        "section": "Precedent P-01: The Reading Rage (1790s)"
+      },
+      "alt": "A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more books stacked on the floor",
+      "caption": "The epidemic, as the doctors saw it. Two hundred years later we hand this exact picture to children as the cure for their screens."
+    },
+    {
+      "id": "sts.sprite.woodstove",
+      "type": "sprite-object",
+      "label": "The Fisher Wood Stove",
+      "concepts": [
+        "off-grid-energy",
+        "thermodynamics",
+        "harvested-not-bought"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "6d16de11-5b10-47e3-8a08-3eb09818777e",
+        "selected_frame_id": "bedcc54c-6ec9-4f62-8e64-f537f46eb401",
+        "alt_frame_id": "03a89eb2-367c-4ae7-92c6-40926dc4a236"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-woodstove.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.woodstove"
+      ],
+      "chapter": "ch05"
+    },
+    {
+      "id": "sts.plate.woodstove",
+      "type": "plate-composite",
+      "label": "The Fisher Wood Stove",
+      "figure": "static/book-images/ch05-woodstove.png",
+      "size": [
+        760,
+        614
+      ],
+      "composed_of": [
+        "sts.sprite.woodstove"
+      ],
+      "placement": {
+        "chapter": "ch05",
+        "file": "07-chapter5.md",
+        "section": "the grandmother's stove"
+      },
+      "alt": "A squat black cast-iron wood stove with the door open, one cracked firebrick visible inside",
+      "caption": "The Fisher. Eighty pounds of steel, one cracked firebrick. Older than him."
+    },
+    {
+      "id": "sts.sprite.tool-wall",
+      "type": "sprite-object",
+      "label": "Shadow-Board Tool Wall",
+      "concepts": [
+        "fabrication",
+        "maker-shop",
+        "hand-tools"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "36fa4720-952e-492d-bc0e-af2229689cd0",
+        "selected_frame_id": "d7682b46-0661-4cd0-bff0-395d8d45b2ba",
+        "alt_frame_id": "6175f4ce-83a6-4df6-8c9c-5e30418a12ef"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-tool-wall.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.tool-wall"
+      ],
+      "chapter": "ch06"
+    },
+    {
+      "id": "sts.plate.tool-wall",
+      "type": "plate-composite",
+      "label": "Shadow-Board Tool Wall",
+      "figure": "static/book-images/ch06-tool-wall.png",
+      "size": [
+        760,
+        654
+      ],
+      "composed_of": [
+        "sts.sprite.tool-wall"
+      ],
+      "placement": {
+        "chapter": "ch06",
+        "file": "08-chapter6.md",
+        "section": "Marta's shop"
+      },
+      "alt": "A pegboard tool wall with hand tools hung in painted shadow-board silhouettes",
+      "caption": "The tool wall. Shadow-boarded like an evidence display."
+    },
+    {
+      "id": "sts.sprite.controller",
+      "type": "sprite-object",
+      "label": "Field-Repairable Controller",
+      "concepts": [
+        "raspberry-pi",
+        "field-repairable",
+        "greenhouse",
+        "open-hardware"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "fbffaa54-a1ad-4a9b-86de-e18b32724b1f",
+        "selected_frame_id": "904b48c3-20f0-46b9-9ded-bb6b290e5853",
+        "alt_frame_id": "dc0fb309-930a-4282-a160-e8426b3448f9"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-controller.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.controller"
+      ],
+      "chapter": "ch09"
+    },
+    {
+      "id": "sts.plate.controller",
+      "type": "plate-composite",
+      "label": "Field-Repairable Controller",
+      "figure": "static/book-images/ch09-controller.png",
+      "size": [
+        760,
+        622
+      ],
+      "composed_of": [
+        "sts.sprite.controller"
+      ],
+      "placement": {
+        "chapter": "ch09",
+        "file": "11-chapter9.md",
+        "section": "the field-repairable controller"
+      },
+      "alt": "A yellow PETG 3D-printed greenhouse controller box, lid open, a Raspberry Pi and screw terminals visible inside",
+      "caption": "The controller. Field-repairable. Screw terminals instead of poetry."
+    },
+    {
+      "id": "sts.sprite.crucible",
+      "type": "sprite-object",
+      "label": "The Crucible (Rack + Radiator)",
+      "concepts": [
+        "local-compute",
+        "air-gapped",
+        "scavenged-hardware",
+        "data-sovereignty"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "f917391b-6b38-4e21-8809-eb51cbc7ce35",
+        "selected_frame_id": "c8fc1c7c-b6c4-4bc7-9c61-7485e78d2728",
+        "alt_frame_id": "a155ef68-da3d-4054-8313-319e89c9c130"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-crucible.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.crucible"
+      ],
+      "chapter": "ch11"
+    },
+    {
+      "id": "sts.plate.crucible",
+      "type": "plate-composite",
+      "label": "The Crucible (Rack + Radiator)",
+      "figure": "static/book-images/ch11-crucible.png",
+      "size": [
+        760,
+        646
+      ],
+      "composed_of": [
+        "sts.sprite.crucible"
+      ],
+      "placement": {
+        "chapter": "ch11",
+        "file": "13-chapter11.md",
+        "section": "The Crucible: Local Servers and Air-Gapped Sandboxes"
+      },
+      "alt": "A stack of three scavenged rack-mount servers beside a salvaged car radiator with brass pipe fittings",
+      "caption": "The Crucible. Three filing cabinets and a salvaged radiator."
+    },
+    {
+      "id": "sts.sprite.vise",
+      "type": "sprite-object",
+      "label": "The Bench Vise",
+      "concepts": [
+        "fabrication",
+        "quality-control",
+        "welding"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "23310408-09f9-4eaf-bcdc-d6e95d6e9d66",
+        "selected_frame_id": "e500b0f4-1547-48e2-a31b-b9f90138f402",
+        "alt_frame_id": "60b9aaf0-b0b9-4146-8b9e-de90c8784a8b"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-vise.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.vise"
+      ],
+      "chapter": "ch13"
+    },
+    {
+      "id": "sts.plate.vise",
+      "type": "plate-composite",
+      "label": "The Bench Vise",
+      "figure": "static/book-images/ch13-vise.png",
+      "size": [
+        760,
+        662
+      ],
+      "composed_of": [
+        "sts.sprite.vise"
+      ],
+      "placement": {
+        "chapter": "ch13",
+        "file": "15-chapter13.md",
+        "section": "the broken weld coupon"
+      },
+      "alt": "A heavy steel bench vise clamping a broken metal weld test coupon, the fracture bright and visible",
+      "caption": "The vise. The metal does the truth. Bright and crystalline."
+    },
+    {
+      "id": "sts.sprite.bell",
+      "type": "sprite-object",
+      "label": "The Hardware-Store Bell",
+      "concepts": [
+        "long-tail-collapse",
+        "tool-library",
+        "absorption"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "79fef6e1-8ce5-4db7-b9f8-df54a82b7f98",
+        "selected_frame_id": "5a9c4ca5-b54e-44a2-a3e1-15f17111a1d4",
+        "alt_frame_id": "afeb0dbf-e756-4c43-bb63-ddd89227f729"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-bell.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.bell"
+      ],
+      "chapter": "ch14"
+    },
+    {
+      "id": "sts.plate.bell",
+      "type": "plate-composite",
+      "label": "The Hardware-Store Bell",
+      "figure": "static/book-images/ch14-bell.png",
+      "size": [
+        760,
+        666
+      ],
+      "composed_of": [
+        "sts.sprite.bell"
+      ],
+      "placement": {
+        "chapter": "ch14",
+        "file": "16-chapter14.md",
+        "section": "the absorption of Frank's hardware store"
+      },
+      "alt": "A brass bell mounted above a worn wooden hardware-store door frame",
+      "caption": "The bell. Frank's grandfather hung it over the door."
+    },
+    {
+      "id": "sts.sprite.probe",
+      "type": "sprite-object",
+      "label": "Three-Depth Soil Probe",
+      "concepts": [
+        "soil-science",
+        "instrumentation",
+        "regenerative-agriculture"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "9a635284-3954-4f77-aa38-9d56061ce992",
+        "selected_frame_id": "62336cb0-0b0f-432d-8291-df9c5359f87c",
+        "alt_frame_id": "1f029e17-1924-47af-8f34-f08101d4e849"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-probe.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.probe"
+      ],
+      "chapter": "ch15"
+    },
+    {
+      "id": "sts.plate.probe",
+      "type": "plate-composite",
+      "label": "Three-Depth Soil Probe",
+      "figure": "static/book-images/ch15-probe.png",
+      "size": [
+        760,
+        626
+      ],
+      "composed_of": [
+        "sts.sprite.probe"
+      ],
+      "placement": {
+        "chapter": "ch15",
+        "file": "17-chapter15.md",
+        "section": "the three-depth soil probe fix"
+      },
+      "alt": "A white PVC pipe soil-moisture probe with three depth-marked sensor leads",
+      "caption": "The probe. Three depths, five, fifteen, thirty centimeters."
+    },
+    {
+      "id": "sts.sprite.proofs",
+      "type": "sprite-object",
+      "label": "The Printed Proofs",
+      "concepts": [
+        "manuscript-to-book",
+        "self-publishing"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "2cccd57f-3d1f-4dc8-a4e6-0aedc2f1152c",
+        "selected_frame_id": "49bbefa6-296e-4a36-a2e9-8acc0dc8c3cb",
+        "alt_frame_id": "7a1c93aa-9122-4cae-be52-689a6793c6db"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-proofs.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.proofs"
+      ],
+      "chapter": "conclusion"
+    },
+    {
+      "id": "sts.plate.proofs",
+      "type": "plate-composite",
+      "label": "The Printed Proofs",
+      "figure": "static/book-images/conclusion-proofs.png",
+      "size": [
+        760,
+        614
+      ],
+      "composed_of": [
+        "sts.sprite.proofs"
+      ],
+      "placement": {
+        "chapter": "conclusion",
+        "file": "21-conclusion.md",
+        "section": "the proofs come back"
+      },
+      "alt": "An open cardboard box of freshly printed perfect-bound paperback books",
+      "caption": "The proofs. Ten copies, perfect-bound. The book, finally."
+    },
+    {
+      "id": "sts.char.reuben",
+      "type": "sprite-character",
+      "label": "Reuben Vance",
+      "role": "co-op's legal/paperwork specialist",
+      "concepts": [
+        "land-trust",
+        "municipal-autonomy-code",
+        "legal"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "3647709b-19fb-4dbb-bc83-8bd13647765d",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-reuben.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.reuben"
+      ],
+      "chapter": "ch09"
+    },
+    {
+      "id": "sts.plate.reuben",
+      "type": "plate-composite",
+      "label": "Reuben Vance",
+      "figure": "static/book-images/ch09-reuben.png",
+      "size": [
+        760,
+        652
+      ],
+      "composed_of": [
+        "sts.char.reuben"
+      ],
+      "placement": {
+        "chapter": "ch09",
+        "file": "11-chapter9.md",
+        "section": "Reuben Vance introduced"
+      },
+      "alt": "A lean man in a well-tailored dark coat, carrying a leather folio of papers",
+      "caption": "Reuben Vance. Handles the part of the machine that runs on paper."
+    },
+    {
+      "id": "sts.char.frank",
+      "type": "sprite-character",
+      "label": "Frank Kowalski",
+      "role": "hardware-store owner, absorbed into the co-op",
+      "concepts": [
+        "long-tail-collapse",
+        "tool-library",
+        "absorption"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "acddad3d-ee63-4338-bdc5-bf169a3c065d",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-frank.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.frank"
+      ],
+      "chapter": "ch14"
+    },
+    {
+      "id": "sts.plate.frank",
+      "type": "plate-composite",
+      "label": "Frank Kowalski",
+      "figure": "static/book-images/ch14-frank.png",
+      "size": [
+        760,
+        636
+      ],
+      "composed_of": [
+        "sts.char.frank"
+      ],
+      "placement": {
+        "chapter": "ch14",
+        "file": "16-chapter14.md",
+        "section": "Frank Kowalski introduced"
+      },
+      "alt": "An older hardware-store owner wearing glasses and a canvas work apron",
+      "caption": "Frank Kowalski. Knows the torque spec from memory."
+    },
+    {
+      "id": "sts.char.gary",
+      "type": "sprite-character",
+      "label": "Gary",
+      "role": "Marta's retrospective, plant-closure anecdote",
+      "concepts": [
+        "psychology-of-collapse",
+        "doomscrolling",
+        "cautionary-tale"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "e9085f79-2cbf-45e4-95f9-da21bfe090bb",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-gary.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.gary"
+      ],
+      "chapter": "ch08"
+    },
+    {
+      "id": "sts.plate.gary",
+      "type": "plate-composite",
+      "label": "Gary",
+      "figure": "static/book-images/ch08-gary.png",
+      "size": [
+        760,
+        654
+      ],
+      "composed_of": [
+        "sts.char.gary"
+      ],
+      "placement": {
+        "chapter": "ch08",
+        "file": "10-chapter8.md",
+        "section": "Marta tells Gary and Sal's story"
+      },
+      "alt": "A middle-aged factory worker with a tired anxious expression, wearing a plant uniform",
+      "caption": "Gary. Stayed informed. Couldn't fix a fence."
+    },
+    {
+      "id": "sts.char.devendra",
+      "type": "sprite-character",
+      "label": "Devendra",
+      "role": "Elijah's senior colleague at Claypot",
+      "concepts": [
+        "corporate-denial",
+        "augmentation-not-replacement"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "044bbda6-a5fc-4b2d-a1b7-a441d4bf3c65",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-devendra.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.devendra"
+      ],
+      "chapter": "ch01"
+    },
+    {
+      "id": "sts.plate.devendra",
+      "type": "plate-composite",
+      "label": "Devendra",
+      "figure": "static/book-images/ch01-devendra.png",
+      "size": [
+        760,
+        650
+      ],
+      "composed_of": [
+        "sts.char.devendra"
+      ],
+      "placement": {
+        "chapter": "ch01",
+        "file": "03-chapter1.md",
+        "section": "Devendra introduced"
+      },
+      "alt": "A tech worker in business casual clothing with a laptop bag over one shoulder",
+      "caption": "Devendra. Senior and calm. Wrong about the thing that mattered."
+    },
+    {
+      "id": "sts.photo.ch07-canned-music-1929",
+      "type": "photo",
+      "label": "A 1929 newspaper advertisement headlined \"Taking Liberties With Folks' Habits,\" ",
+      "concepts": [
+        "robotics"
+      ],
+      "figure": "static/book-images/ch07-canned-music-1929.jpg",
+      "placement": {
+        "chapter": "chapter7",
+        "file": "09-chapter7.md",
+        "section": "Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)"
+      },
+      "alt": "A 1929 newspaper advertisement headlined \"Taking Liberties With Folks' Habits,\" showing a large robot shouldering aside a weeping cherub at a harp while a dog howls, above columns of argument signed by the American Federation of Musicians",
+      "caption": "Exhibitors Herald-World, November 16, 1929. \"Is the Robot such good company he can 'hog the whole show?'\"",
+      "credit": {
+        "artist": "Advertisement by the American Federation of Musicians (Joseph N. Weber, president); illustration signed Helguera",
+        "license": "Public domain (published in the United States in 1929; US copyright expired January 1, 2025)",
+        "source": "https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up"
+      }
+    },
+    {
+      "id": "sts.photo.ch07-canned-music-1930",
+      "type": "photo",
+      "label": "A 1930 newspaper advertisement headlined \"Is the Robot Fooling YOU?\", showing a ",
+      "concepts": [
+        "robotics"
+      ],
+      "figure": "static/book-images/ch07-canned-music-1930.jpg",
+      "placement": {
+        "chapter": "chapter7",
+        "file": "09-chapter7.md",
+        "section": "Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)"
+      },
+      "alt": "A 1930 newspaper advertisement headlined \"Is the Robot Fooling YOU?\", showing a robot among classical muses holding a banner reading CANNED MUSIC IN THEATERS, with a mail-in coupon enrolling the reader in the Music Defense League",
+      "caption": "Exhibitors Herald-World, May 17, 1930. The union claimed two million enrollments by that spring. Note the coupon.",
+      "credit": {
+        "artist": "Advertisement by the American Federation of Musicians (Joseph N. Weber, president); illustration signed Helguera",
+        "license": "Public domain (published in the United States in 1930; US copyright expired January 1, 2026)",
+        "source": "https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up"
+      }
+    }
+  ]
+}

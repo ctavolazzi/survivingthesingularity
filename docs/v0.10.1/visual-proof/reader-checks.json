@@ -1,0 +1,35 @@
+{
+  "desktop": {
+    "float": "right",
+    "figureWidth": 217.59375,
+    "articleWidth": 680,
+    "inside": true,
+    "collisions": [],
+    "border": "0px",
+    "radius": "0px",
+    "shadow": "none",
+    "background": "rgba(0, 0, 0, 0)",
+    "caption": "Caption follows only this figure.",
+    "horizontalOverflow": false
+  },
+  "mobile": {
+    "float": "none",
+    "figureWidth": 200.671875,
+    "articleWidth": 346,
+    "inside": true,
+    "collisions": [],
+    "border": "0px",
+    "radius": "0px",
+    "shadow": "none",
+    "background": "rgba(0, 0, 0, 0)",
+    "caption": "Caption follows only this figure.",
+    "horizontalOverflow": false
+  },
+  "negative_controls": [
+    "gutter shift",
+    "script handler sanitization",
+    "caption does not consume intervening prose"
+  ],
+  "intrinsic_legacy_dimensions_preserved": true,
+  "limits": "Shared renderer/CSS fixture, including previous image styles. Full chapter route and frozen book checks remain separate."
+}

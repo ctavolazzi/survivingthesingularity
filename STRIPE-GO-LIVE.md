@@ -1,40 +1,43 @@
 # Stripe Go-Live Checklist — Edition Prices
 
-**Status: BACK ON TEST-MODE KEYS. The storefront cannot take real money.**
-Production was on live-mode keys between roughly 2026-07-13 and 2026-07-26; it is not
-now. Local/dev is still correctly on the test-mode price — that part is unchanged and
-intentional.
-Test mode is deliberate: the fulfillment pipeline gets proven before real money moves.
-It is now on a clock, not indefinite.
-Last updated: 2026-07-28 (re-probed).
+**Status: LIVE. The storefront is taking real money and fulfilling orders.**
+Cutover completed 2026-08-01 evening. Local/dev remains on the test-mode price, which
+is unchanged and intentional.
+Last updated: 2026-08-01 (cutover verified end to end).
 
-**2026-07-28:** the Stripe webhook, recorded as correct by three prior audits, had in
-fact never verified a single event. Fixed and proven in production; see "Resolved
-2026-07-28" below. Remaining go-live blockers are the four Supabase migrations and one
-end-to-end test purchase.
+> **Do not trust a remembered status line in this file, including this one.** It said
+> "NOT LIVE YET" for ten days after the cutover actually happened, then "LIVE AND
+> TAKING REAL MONEY" after production had been rolled back, then "BACK ON TEST-MODE
+> KEYS" for the first hours of taking live payments. Three wrong readings, all written
+> in good faith. Verify with `python3 scripts/sts.py stripe --live`, which probes
+> production directly. A `cs_live_` session id means real cards are being charged;
+> `cs_test_` means they are not.
 
-> **Do not trust a remembered status line in this file.** It said "NOT LIVE YET" for
-> ten days after the cutover actually happened, and then said "LIVE AND TAKING REAL
-> MONEY" after production had been rolled back. Verify with
-> `python3 scripts/sts.py stripe --live`, which probes production directly. A
-> `cs_live_` session id means real cards are being charged; `cs_test_` means they
-> are not.
+## Verified production state (2026-08-01, cutover night)
 
-## Verified production state (probed 2026-07-26)
-
-`python3 scripts/sts.py stripe --live`, plus a direct `POST /api/stripe-checkout` for
-both `standard` and `authors`:
+Verified against completed orders rather than a probe reading.
 
 | Signal | Reading | Means |
 |---|---|---|
-| Checkout session id | `cs_test_…` (both editions) | Production is on **test** keys |
-| Advertised vs charged | $5.00 vs $5.00 | No price drift — the $9 defect is gone |
-| `/api/webhooks/stripe` (unsigned POST) | **400**, not 503 | `STRIPE_WEBHOOK_SECRET` **is** set |
+| Checkout session id | `cs_live_…` | Real cards are being charged |
+| Advertised vs charged | $5.00 vs $5.00 | No price drift |
+| Signed webhook probe | **200** | Signature verification genuinely runs |
+| `fulfilled_sessions` | `status=delivered`, `attempts=1`, `last_error=null` | The order completed, first try |
+| `checkout_transactions` | `status=completed`, `fulfilled=true` | Paid AND received, recorded separately |
+| Statement descriptor | `STS-SINGULARITY` | Recognisable on a bank statement |
+
+Fulfillment ran in under four seconds from Stripe event to `delivered`, unattended,
+on the first attempt. Order-level identifiers are deliberately not recorded here: this
+file is in a public repository and Stripe object ids are customer-linked. Reconcile
+against the Stripe dashboard instead.
 
 ### What this means
 
-The two defects logged earlier on 2026-07-26 — the $9-vs-$5 overcharge and the 503
-webhook — are **both resolved**, and the environment is now on test keys.
+The two defects logged on 2026-07-26 — the $9-vs-$5 overcharge and the 503 webhook —
+are both resolved, and the storefront is now live. The overcharge window was audited
+directly against the Stripe API afterwards: the account has only ever carried three
+live charges, all on cutover night, so **nobody was overcharged and there is nothing
+to refund**.
 
 **Whether that rollback was deliberate is unknown and was not verified.** Pulling live
 keys would be a sound deliberate response to an 80% overcharge; an accidental revert of
@@ -262,12 +265,25 @@ step 0 — it is the step whose absence caused the overcharge.
       under "Resolved 2026-07-28: the webhook had never verified a single event".
       After swapping the secret, re-prove it the same way that section describes:
       `sts stripe --live` must print VERIFIED, not merely HTTP 400.
-- [ ] **4. Run the four pending Supabase migrations** (`002`, `008`, `009`, `010` as of
-      2026-07-28). Do not work from that hardcoded list: get the current one from
-      `python3 scripts/sts.py schema`, and `sts schema --bundle` prints them
-      concatenated and paste-ready. `002` is the one that matters most and is not a
-      go-live blocker but a live compliance gap: without it the mailing list has no
-      working unsubscribe.
+- [x] **4. Supabase migrations: verified applied 2026-08-01.** Every migration in
+      `sql/` has been run on the live project *except* `014_webhook_events.sql`. This
+      was checked directly against `information_schema`, not inferred:
+      `checkout_transactions` (`013`) exists **and** carries all four durability
+      columns (`status`, `completed_at`, `last_error`, `attempts`), and `002`, `008`,
+      `009`, `010`, `011` are all present.
+      - **The list this step used to carry was stale.** It read `002`, `008`, `009`,
+        `010` "as of 2026-07-28", and had been wrong long enough to send a session
+        hunting four problems that did not exist while saying nothing about `013` and
+        `014`, the two that could actually have hurt. If you edit this step again,
+        re-verify against the database rather than copying the previous list forward.
+      - **`014` is the only real gap, and it does not block go-live.** Verified in
+        code, not assumed from the comment: `beginEvent` returns `proceed: true` on any
+        non-`23505` insert error (`webhookEvents.js:72`) and on a throw (`:121`), so a
+        missing `webhook_events` table degrades open and never stalls a paid order.
+        Duplicate protection also survives at the session layer, where `claimSession`
+        checks `fulfilled_sessions`. What is lost is the audit trail and the
+        unfinished-events queue, which is operational visibility rather than
+        customer-facing correctness. Run it soon; do not delay a cutover for it.
 - [ ] **5. Create `PREORDER50` in live mode** — it exists only in test mode.
 - [ ] **6. Re-probe:** `python3 scripts/sts.py stripe --live` must report `mode live`,
       webhook configured, and no price drift.
@@ -323,23 +339,34 @@ registering the webhook above).
 
 ## Still outstanding (found in the 2026-07-13 pre-flight sweep, unverified since)
 
-These were "before go-live" items. The first cutover happened without them; they are
-still not done. None has been verified against the live project — checking requires
-Supabase and live-Stripe dashboard access.
+**Updated 2026-08-01: most of this section is no longer outstanding.** The live schema
+was queried directly against `information_schema` on that date. Every Supabase item
+below has been run except `sql/014_webhook_events.sql`. What genuinely remains is the
+live-Stripe work, which still needs dashboard access.
 
-- Run `sql/008_discord_applications.sql` in the Supabase SQL Editor. The
-  `discord_applications` table doesn't exist on the live project yet, so the
-  Discord application form on `/checklist` currently returns a clean "not wired up
-  yet" message instead of crashing, but it still doesn't work until this runs.
+The original framing is kept below rather than deleted, because the gap between what
+this section claimed and what the database actually contained is the useful part: it
+went unchecked from 2026-07-13 to 2026-08-01, and in that time it was wrong in both
+directions.
+
+- **DONE (verified 2026-08-01).** `sql/008_discord_applications.sql` has been run:
+  `discord_applications` exists on the live project, so the Discord application form on
+  `/checklist` is wired up rather than returning its "not wired up yet" message.
   **Note (2026-07-26):** this file was referenced by this doc, by `SITEMAP.md`, and by
-  `009`'s own header, but had never actually been written — it was absent from the
-  working tree *and* from all of git history. It now exists. Migrations `001`, `003`,
-  `004`, `006`, `007` are still missing from `sql/`, so the directory cannot rebuild a
-  Supabase project from scratch; the live schema is currently the only source of truth
+  `009`'s own header, but had never actually been written: it was absent from the
+  working tree *and* from all of git history. It now exists.
+  **Correction (2026-08-01):** this note previously claimed migrations `001`, `003`,
+  `004`, `006`, `007` were still missing from `sql/`. They are all present. `sql/` now
+  holds a complete `001` through `014`, so the directory can rebuild a Supabase project
+  from scratch, and the live schema is no longer the only source of truth
   for those.
-- Run `sql/009_preorder_discount_code.sql` in the Supabase SQL Editor. Preorders
-  work fine without it (the insert falls back gracefully), but each customer's
-  personal discount code won't be generated or shown in their email until it runs.
+- **DONE (verified 2026-08-01).** `sql/009_preorder_discount_code.sql` has been run:
+  `preorders.discount_code` exists, so each customer's personal discount code is
+  generated and shown in their email. The graceful fallback in `fulfillment.js` that
+  retries the insert without the column is now belt-and-braces rather than load-bearing.
+- **Still outstanding: `sql/014_webhook_events.sql`.** The only migration not yet run.
+  Non-blocking for go-live (see step 4 of the re-cutover checklist for the verification),
+  but it is what gives you the event audit trail and the unfinished-events queue.
 - **Create the live-mode 50%-off promotion code.** `PREORDER50` currently only
   exists in Stripe **test** mode (created via the API on 2026-07-13: a
   `percent_off: 50, duration: once` coupon wrapped in a promotion code with that

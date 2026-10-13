@@ -1,6 +1,6 @@
 <script>
   import { marked } from 'marked';
-  import DOMPurify from 'isomorphic-dompurify';
+  import { sanitizeHtml } from '$lib/utils/sanitizeHtml.js';
 
   /**
    * A component that renders markdown content as HTML.
@@ -11,7 +11,7 @@
   // Convert markdown to HTML, then sanitize before injecting via {@html}.
   // Sanitizing here keeps this component safe even if `content` ever comes
   // from user-submitted sources (e.g. user-created challenges).
-  $: html = DOMPurify.sanitize(marked(content));
+  $: html = sanitizeHtml(marked(content));
 </script>
 
 <div class="markdown-content">

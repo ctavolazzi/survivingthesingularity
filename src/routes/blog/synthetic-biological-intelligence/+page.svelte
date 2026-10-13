@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
 
@@ -44,7 +45,7 @@
   const faqs = [
     {
       question: '1. What is Synthetic Biological Intelligence (SBI)?',
-      answer: 'SBI is a new field that combines synthetic biology and computer science to create computing systems using living biological matter, particularly human neurons. These neurons are grown in a lab and interfaced with silicon chips containing microelectrode arrays. This fusion allows for the creation of AI systems that can learn and adapt in a more organic and energy-efficient manner than traditional silicon-based AI. The goal is to develop advanced programmable biological computing platforms.'
+      answer: 'SBI is a research field that combines living neural cultures with electronic interfaces. Neurons grown in a lab can receive stimulation and have their activity recorded through microelectrode arrays. Researchers use these systems to study neural behavior and learning. Whether they offer a useful computing or energy advantage depends on the task and the complete system being measured.'
     },
     {
       question: '2. How does SBI work?',
@@ -52,11 +53,11 @@
     },
     {
       question: '3. What are the potential applications of SBI?',
-      answer: 'SBI has the potential to revolutionize several fields, including:<br><br><strong>Medical Research:</strong> Accelerating drug discovery, disease modeling, and personalized medicine by enabling researchers to study neurological diseases like Alzheimer\'s and epilepsy with more accuracy.<br><strong>Robotics:</strong> Creating robots that can learn and adapt more flexibly and efficiently than those programmed with traditional AI.<br><strong>Artificial General Intelligence (AGI):</strong> Providing a more sustainable pathway to AGI by offering faster decision-making, continuous learning, and greater energy and data efficiency compared to silicon-based systems.'
+      answer: 'Researchers are exploring biological computing for neural experiments, disease models, and responses to compounds. Adaptive control and robotics are possible research directions. These possibilities do not establish faster general-purpose computing, a clinical benefit, or an energy-efficient route to AGI. Each application needs its own performance and safety evidence.'
     },
     {
       question: '4. How does SBI compare to traditional AI in terms of energy efficiency?',
-      answer: 'SBI systems are significantly more energy-efficient than traditional AI. For example, training a large language model like GPT-3 can consume as much energy as used by 120 households in a year. In contrast, a rack of 30 SBI units might only use around 1,000 watts, comparable to a small microwave. This energy efficiency stems from using living neurons, which consume significantly less power than silicon-based processors.'
+      answer: 'The comparison in the original article did not establish an efficiency advantage. Watts measure power; megawatt-hours measure energy used over time. A rack power figure cannot be compared directly with the energy for training GPT-3. A useful benchmark must match the task, achieved performance and time period, and include life support, electronics and other system overhead. <a href="https://arxiv.org/abs/2104.10350">Patterson et al. (2021)</a> estimate GPT-3 training energy; they do not benchmark a CL1 performing that work. <a href="https://corticallabs.com/cl1">Cortical Labs describes the CL1 platform</a>, but that product page does not establish an equivalent language-model result.'
     },
     {
       question: '5. Is SBI ready for widespread use?',
@@ -68,7 +69,7 @@
     },
     {
       question: '7. Is SBI likely to replace traditional silicon-based computing?',
-      answer: 'SBI is not expected to completely replace silicon-based computing, but rather to complement it. SBI offers advantages in areas where adaptability, energy efficiency, and biological relevance are crucial. The hybridization of biological and silicon systems may provide the optimal path forward, combining the strengths of both approaches.'
+      answer: 'Biological neural platforms may complement conventional computing and are useful for investigating living neural systems. Their broader computing role remains a research question. Results on a particular learning task do not establish that they can replace a language model, general-purpose computer, or data center.'
     },
     {
       question: '8. What is the "Minimal Viable Brain" and why is it important?',
@@ -163,17 +164,9 @@
   // Recommended videos related to AI, neuroscience, and biological computing
   const recommendedVideos = [
     {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
       id: "7Ip8TyjMyho",
       title: "Futurist: How AI and Robotics Will Reshape Our Economy"
     },
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    }
   ];
 
   onMount(() => {
@@ -191,12 +184,9 @@
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content={post.description} />
-  <meta property="og:title" content={post.title} />
-  <meta property="og:description" content={post.description} />
-  <meta property="og:image" content={post.image} />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
+
+<SocialMeta title={post.title} description={post.description} />
 
 <div class="blog-post">
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
@@ -224,6 +214,9 @@
       />
 
       <!-- Audio Player -->
+      <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+        <strong>Correction, October 13, 2026:</strong> The text now distinguishes power from energy and limits the computing comparison to what the cited experiments show. The audio below predates this correction and has not been updated.
+      </p>
       <div class="audio-player-container mb-6">
         <div class="flex items-center">
           <div class="audio-player-icon mr-3">
@@ -328,7 +321,7 @@
           Synthetic Biological Intelligence (SBI) combines the best of biology and silicon, creating computing systems that leverage the unique strengths of living brain tissue. At Cortical Labs, human neurons derived from induced pluripotent stem cells are grown into functioning neural networks. These neurons interface directly with specialized silicon microelectrode arrays (MEAs), which facilitate two-way electrical communication.
         </p>
         <p>
-          Unlike traditional AI, which relies on pre-programmed algorithms, SBI learns organically. Neurons adapt, adjust, and respond dynamically, much like the human brain. Previous experiments demonstrated that neuron-based systems could learn simple tasks-such as playing Pong-in mere minutes, showcasing rapid adaptability far beyond current AI capabilities.
+          Both artificial learning systems and living neural cultures can change their responses with training. In <a href="https://doi.org/10.1016/j.neuron.2022.09.001">Kagan et al.'s 2022 DishBrain experiment</a>, researchers reported learning within five minutes in a simplified Pong environment. A <a href="https://research.monash.edu/en/publications/dynamic-network-plasticity-and-sample-efficiency-in-biological-ne/">2025 comparison with selected deep-reinforcement-learning methods</a> examines sample efficiency in that task. Neither result establishes general superiority over current AI or equivalent language-model capability.
         </p>
 
         <h2>Why Should We Care?</h2>
@@ -336,7 +329,7 @@
           The potential here is staggering. SBI could revolutionize multiple fields, starting with medicine. With real human neurons performing computations, researchers gain unprecedented insights into neurological diseases, accelerating drug discovery and medical innovation.
         </p>
         <p>
-          But it doesn't stop there. The CL1's energy efficiency stands out starkly against traditional AI. While training a large AI model like GPT-3 consumes roughly 1,300 megawatt-hours-comparable to hundreds of homes annually-a full rack of 30 CL1 units sips only about 1,000 watts. In an era increasingly conscious of environmental sustainability, SBI could significantly cut the carbon footprint of data centers, aligning AI progress with ecological responsibility.
+          Energy use is worth investigating, but the numbers need to describe comparable work. <a href="https://arxiv.org/abs/2104.10350">Patterson et al. (2021)</a> estimated 1,287 megawatt-hours for GPT-3 training. That is energy over a training run; a watt rating describes power at a moment. Even a verified low rack power figure would not show that a CL1 can perform the same task with the same output quality. A fair comparison needs measured energy for matched work, including life support and the rest of the system. <a href="https://corticallabs.com/cl1">Cortical Labs' product description</a> is not that benchmark, so this article no longer uses the unverified 30-unit rack figure or claims a demonstrated data-center saving.
         </p>
 
         <h2>Transformative Impacts</h2>

@@ -1,0 +1,34 @@
+Crucible. The  co-opʼs  local  AI  server  in  the  story:  a  rack  of  salvaged
+hardware where models are tested before anyone relies on them. More
+generally, any local machine where you run and check models yourself.
+(Chapter 11)
+CSA (community-supported agriculture). An arrangement where house-
+holds share in a farmʼs harvest, and its risk, directly. (Chapter 12)
+Cyberdeck. A personal computer assembled or adapted around functions
+you want to control, often using documented parts and offline software.
+The particular hardware and software determine how repairable and self-
+contained it is. (Chapter 5 and Appendix E)
+DC-native. Running suitable loads on direct current, avoiding an unnec-
+essary conversion to household AC and back. Charge controllers, voltage
+converters, batteries, and wiring still have losses. (Chapter 17)
+Deglobalization. Shortening the supply lines we depend on for survival,
+so a shock on the other side of the planet doesnʼt reach all the way to your
+dinner. Not isolation, and not the same as “decentralization.” (Chapter 9)
+The Entitled and the Ready. Two mindsets toward the change, not two
+kinds of people: needing the hierarchy to hold, or needing the suffering
+to stop. Most of us carry a little of both. (Chapter 7)
+Event Horizon. The view that once something smarter than us exists, the
+far side becomes unpredictable to everyone, builders included. This book
+uses it for the map. (Chapter 1)
+Food baseline. Adequate food, available to everyone regardless of income
+or employment, as a dependable service rather than a favor. The first
+commitment of the Adequate Level of Care. (Introduction and Appendix
+A)
+Food first. The bookʼs priority order: food, then land care, cleanup, shel-
+ter, and everything further out. A place to start, not a waiting list. (Intro-
+duction)
+Ground lease. A long lease on land, often ninety-nine years in a land
+trust, that lets people own their home or greenhouse without owning the
+dirt under it. (Chapter 15)
+SURVIVING THE SINGULARITY
+388

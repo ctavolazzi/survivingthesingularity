@@ -58,6 +58,7 @@
           class="da-input"
           bind:value={name}
           placeholder="Your name"
+          aria-label="Your name"
           required
           maxlength="120"
           autocomplete="name"
@@ -68,6 +69,7 @@
           class="da-input"
           bind:value={email}
           placeholder="your@email.com"
+          aria-label="Email address"
           required
           maxlength="254"
           autocomplete="email"
@@ -78,6 +80,7 @@
         class="da-textarea"
         bind:value={answer}
         placeholder="What are you working on, and why do you want in?"
+        aria-label="What are you working on, and why do you want in?"
         maxlength="2000"
         rows="3"
         disabled={state === 'loading'}

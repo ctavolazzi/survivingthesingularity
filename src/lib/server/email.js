@@ -1,14 +1,33 @@
 import { env } from '$env/dynamic/private';
+import { env as publicEnv } from '$env/dynamic/public';
+import { validateEmailLinkOrigin } from '$lib/emailConfig.js';
 import { Resend } from 'resend';
 import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
+// The confirmation email is a sales surface like any other, and it is the one a
+// customer keeps. It derives its offer claims from the same object the pages do.
+import { offer, offerItemLabel } from '$lib/offer.js';
+// The itemised file table is a MEASUREMENT of the archive, not a description of
+// it. A static import, so it bundles into the Worker with no filesystem read.
+// Regenerated only by scripts/build_bonus.py, and `sts.py bundle verify` is what
+// proves it still matches the zip customers actually receive.
+import bundleManifest from '$lib/data/bundleManifest.js';
 
-// Dynamic env so a missing key never breaks the build. If RESEND_API_KEY is
-// unset, every send becomes a logged no-op and signups still succeed.
+// Dynamic env keeps credential-free builds usable. Missing credentials return
+// skipped; callers must not describe that as successful email delivery.
 const apiKey = env.RESEND_API_KEY;
 const from = env.EMAIL_FROM || 'Surviving the Singularity <onboarding@resend.dev>';
 
 const resend = apiKey ? new Resend(apiKey) : null;
+
+// Receipt and unsubscribe links must return to the environment that created
+// their session/token. PUBLIC_ variables are excluded from dynamic/private.
+// Validate at send time so a typo cannot crash unrelated public page loads.
+function customerUrl(path) {
+  const base = validateEmailLinkOrigin(publicEnv);
+  if (!base.ok) throw new Error(base.error);
+  return new URL(path, base.origin).href;
+}
 
 /**
  * Send through Resend and record the attempt in email_deliveries.
@@ -26,7 +45,7 @@ const resend = apiKey ? new Resend(apiKey) : null;
  * A missing ledger row is a reporting gap; a thrown error here would be a lost
  * order.
  *
- * @param {{ type: string, to: string, sessionId?: string|null }} meta
+ * @param {{ type: string, to: string, sessionId?: string|null, idempotencyKey?: string|null }} meta
  * @param {object} payload passed straight to resend.emails.send
  */
 /* Flatten our HTML into a readable plain-text alternative.
@@ -99,7 +118,13 @@ async function sendAndRecord(meta, payload) {
     }
   }
 
-  const { data, error } = await resend.emails.send(payload);
+  // Resend retains idempotency keys for 24 hours. Only automatic retries use
+  // these; an intentional customer resend is a separate message.
+  const { data, error: providerError } = await resend.emails.send(
+    payload, meta.idempotencyKey ? { idempotencyKey: meta.idempotencyKey } : undefined
+  );
+  const error = providerError ?? (typeof data?.id === 'string' && data.id.trim()
+    ? null : { message: 'Email provider did not return an acceptance ID' });
 
   try {
     if (supabaseAdmin) {
@@ -141,6 +166,68 @@ function escapeHtml(str) {
 }
 
 /**
+ * Stripe reports most currencies in minor units (cents), but not all of them.
+ * Dividing by 100 unconditionally would print a 500 yen charge as 5.00 yen.
+ * This is the full Stripe zero-decimal set as of 2026-08.
+ */
+const ZERO_DECIMAL = new Set([
+  'bif', 'clp', 'djf', 'gnf', 'jpy', 'kmf', 'krw', 'mga',
+  'pyg', 'rwf', 'ugx', 'vnd', 'vuv', 'xaf', 'xof', 'xpf',
+]);
+
+/**
+ * What the customer was ACTUALLY charged, formatted, or null.
+ *
+ * DELIBERATELY NOT DERIVED FROM offer.priceCents, and this is the one place in
+ * this codebase where deriving from the offer object would be wrong. Checkout
+ * runs with allow_promotion_codes, so the advertised price and the charged
+ * amount legitimately differ, and a receipt that states the list price to
+ * someone who used a code is a false financial record.
+ *
+ * Returns null rather than a guess when Stripe gave us nothing. The caller then
+ * omits the row: a receipt with no amount line is incomplete, a receipt with an
+ * invented amount is wrong.
+ */
+function formatMoney(amountMinor, currency) {
+  if (!Number.isFinite(amountMinor) || !currency) return null;
+  const code = String(currency).toLowerCase();
+  const major = ZERO_DECIMAL.has(code) ? amountMinor : amountMinor / 100;
+  try {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: code.toUpperCase(),
+    }).format(major);
+  } catch {
+    // Unknown currency code, or an Intl build without it. Still better than
+    // dropping the amount entirely, since the number itself is the fact.
+    return `${major.toFixed(ZERO_DECIMAL.has(code) ? 0 : 2)} ${code.toUpperCase()}`;
+  }
+}
+
+function formatBytes(bytes) {
+  if (!Number.isFinite(bytes)) return '';
+  if (bytes >= 1024 * 1024) return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  if (bytes >= 1024) return `${Math.round(bytes / 1024)} KB`;
+  return `${bytes} B`;
+}
+
+/**
+ * Stripe hands out unix SECONDS. Rendered in UTC and labelled as such, because
+ * a date with no zone on a financial record is ambiguous by exactly the amount
+ * that matters at a month boundary.
+ */
+function formatOrderDate(unixSeconds) {
+  if (!Number.isFinite(unixSeconds)) return null;
+  try {
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
+    }).format(new Date(unixSeconds * 1000)) + ' UTC';
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Source-aware welcome copy. The checklist is delivered on-site (the email is
  * a confirmation + nudge back), so its copy differs from the book waitlist.
  */
@@ -153,7 +240,7 @@ function buildWelcome(source) {
         'All 7 moves are unlocked on the site. Work through them at your own pace. ' +
         'Start with the three you have been avoiding. When you want the deeper strategy, ' +
         'the book is there too.',
-      cta: { label: 'Open the checklist', url: 'https://survivingthesingularity.com/checklist' },
+      cta: { label: 'Open the checklist', url: customerUrl('/checklist') },
     };
   }
   return {
@@ -162,26 +249,79 @@ function buildWelcome(source) {
     body:
       "You'll be the first to know when the book launches, plus the field notes published " +
       'along the way. No spam, no noise. Unsubscribe anytime.',
-    cta: { label: 'Read the Book', url: 'https://survivingthesingularity.com/book' },
+    cta: { label: 'Read the Book', url: customerUrl('/book') },
   };
 }
 
-function renderHtml({ heading, body, cta, unsubscribeUrl }) {
-  const footerUnsubscribe = unsubscribeUrl
+/**
+ * Postal address for the email footer.
+ *
+ * The federal CAN-SPAM Act requires a valid physical postal address, a street
+ * address or a registered PO box, in commercial email. Verified 2026-07-29: no
+ * address of any kind appeared anywhere in this file, so every commercial send
+ * was missing it.
+ *
+ * DELIBERATELY UNSET AND DELIBERATELY NOT INVENTED. Nobody should guess a
+ * business address into a legal notice, and shipping a plausible-looking
+ * placeholder would be worse than shipping nothing: it reads as compliance while
+ * being false. So the mechanism is wired and the value is one environment
+ * variable away.
+ *
+ * Set EMAIL_POSTAL_ADDRESS in Cloudflare Pages, for example
+ * "Christopher Tavolazzi, PO Box 1234, Chico, CA 95926", before running any
+ * newsletter or promotional send. The transactional receipt is on a different
+ * footing, since CAN-SPAM treats transactional or relationship messages
+ * differently from commercial ones, but there is no downside to it appearing
+ * there too.
+ */
+const postalAddress = env.EMAIL_POSTAL_ADDRESS || null;
+if (!postalAddress) {
+  console.warn(
+    '[email] EMAIL_POSTAL_ADDRESS is unset, so the CAN-SPAM postal address is ' +
+      'omitted from email footers. Set it before any commercial or newsletter send.'
+  );
+}
+
+/**
+ * The legal footer, in ONE place.
+ *
+ * Extracted because sendDownloadEmail builds its own HTML rather than going
+ * through renderHtml, and so shipped without any postal address at all. That
+ * made the CAN-SPAM line absent from the single email every paying customer
+ * receives, which is the worst possible file to omit it from. A shared helper
+ * means the next hand-rolled email cannot quietly drop it either.
+ *
+ * `reason` states why this person is receiving mail, which has to be true of
+ * the specific send: a purchase receipt did not arrive because someone "signed
+ * up", and saying so on a transactional message is both wrong and confusing.
+ */
+function footerHtml({ unsubscribeUrl = null, reason = 'you signed up at survivingthesingularity.com' } = {}) {
+  const unsub = unsubscribeUrl
     ? `<a href="${unsubscribeUrl}" style="color:#475569;text-decoration:underline;">Unsubscribe</a>`
     : 'Reply to unsubscribe';
+  // Rendered only when a real address is configured. An empty line is better
+  // than a fabricated one.
+  const postal = postalAddress
+    ? `<p style="font-size:12px;color:#475569;margin:8px 0 0;">${escapeHtml(postalAddress)}</p>`
+    : '';
+  return `<p style="font-size:12px;color:#475569;margin:36px 0 0;">You received this because ${reason}. ${unsub}.</p>
+    ${postal}`;
+}
+
+function renderHtml({ heading, body, cta, unsubscribeUrl }) {
   return `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${cta.url}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:12px 22px;border-radius:8px;">${cta.label}</a>
-    <p style="font-size:12px;color:#475569;margin:36px 0 0;">You received this because you signed up at survivingthesingularity.com. ${footerUnsubscribe}.</p>
+    ${footerHtml({ unsubscribeUrl })}
   </div></body></html>`;
 }
 
 /**
- * Confirm a preorder to the customer.
+ * Acknowledge a legacy preorder request without asserting payment or delivery.
+ * No current route calls this export; keep it compatible for existing callers.
  * Non-blocking: caller should not await in a way that blocks the response.
  *
  * @param {{ name: string, email: string, edition_type: string, copy_number?: number|null }} args
@@ -191,30 +331,30 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
   const isAuthors = edition_type === 'authors';
   const safeName = name ? escapeHtml(name.slice(0, 120)) : '';
   const greeting = safeName ? `Hi ${safeName},` : 'Hi,';
+  const copyReference = Number.isInteger(copy_number) && copy_number > 0
+    ? ` Copy reference: #${copy_number}.`
+    : '';
 
   const heading = isAuthors
-    ? `You're copy #${copy_number} of 100.`
-    : "You're on the preorder list.";
+    ? "Your Author's Edition request is recorded."
+    : 'Your preorder request is recorded.';
 
   const body = isAuthors
-    ? `${greeting} Your Author's Limited Edition preorder is confirmed. Copy #${copy_number} of 100 is reserved for you. ` +
-      `Every copy is hand-bound, signed, and numbered by the author. No two are alike, so #${copy_number} is one of a kind. ` +
-      `No payment is collected now. You'll hear from us before the book ships in August 2026.`
-    : `${greeting} Your preorder is confirmed. You'll get first access when the book launches in August 2026, ` +
-      `available here on the site and on Amazon in paperback and Kindle. No payment collected now. We'll reach out when it's ready.`;
+    ? `${greeting} Your Author's Edition request is recorded.${copyReference} ` +
+      'This message is not a payment receipt or a shipment confirmation. ' +
+      'For the terms of an existing order, refer to its original confirmation ' +
+      `or contact ${offer.refund.contact} from your purchase address.`
+    : `${greeting} Your interest is recorded. This message is not a payment receipt. ` +
+      `${offer.sentence} See the current offer before purchasing.`;
 
-  const cta = isAuthors
-    ? { label: 'Read the draft now', url: 'https://survivingthesingularity.com/book' }
-    : { label: 'Read the draft now', url: 'https://survivingthesingularity.com/book' };
+  const cta = { label: 'Read a free sample', url: customerUrl('/sample') };
 
   const subject = isAuthors
-    ? `Author's Edition confirmed: copy #${copy_number}`
-    : 'Preorder confirmed: Surviving the Singularity';
+    ? "Author's Edition request received"
+    : 'Preorder request received: Surviving the Singularity';
 
-  // Recorded: this is the customer's own copy of the order. The admin alert
-  // below was already in the ledger while this was not, which had it backwards
-  // - a bounced admin alert costs us an inbox notification, a bounced customer
-  // confirmation costs the customer any record that the order exists.
+  // Preserve a delivery record for legacy request acknowledgments. The paid
+  // fulfillment path sends the separate download email and receipt below.
   const { error } = await sendAndRecord(
     { type: 'preorder_confirmation', to: email },
     { from, to: email, subject, html: renderHtml({ heading, body, cta }) }
@@ -229,18 +369,18 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
  *
  * @param {{ name: string, email: string, edition_type: string, copy_number?: number|null }} args
  */
-export async function sendAdminPreorderAlert({ name, email, edition_type, copy_number }) {
+export async function sendAdminPreorderAlert({ name, email, edition_type, copy_number, sessionId = null, duplicatePayment = false, idempotencyKey = null }) {
   if (!resend) return { skipped: true };
   const isAuthors = edition_type === 'authors';
-  const subject = isAuthors
+  const subject = duplicatePayment ? '[STS] Payment needs review: possible duplicate charge' : isAuthors
     ? `[STS] Author's Edition preorder #${copy_number}: ${name}`
     : `[STS] Regular edition preorder: ${name}`;
-  const body = `Name: ${name}\nEmail: ${email}\nEdition: ${edition_type}${isAuthors && copy_number ? `\nCopy: #${copy_number} / 100` : ''}`;
+  const body = `${duplicatePayment ? 'Review this payment for a possible duplicate charge and refund if appropriate.\n' : ''}Session: ${sessionId ?? 'not supplied'}\nName: ${name}\nEmail: ${email}\nEdition: ${edition_type}${isAuthors && copy_number ? `\nCopy reference: #${copy_number}` : ''}`;
   // Recorded too, and for a specific reason: a buyer name containing CRLF
   // makes Resend reject this subject, so the alert silently never sends while
   // the order records fine. Without a row here that failure is invisible.
   const { error } = await sendAndRecord(
-    { type: 'admin_preorder_alert', to: 'admin@johnnyautoseed.com' },
+    { type: 'admin_preorder_alert', to: 'admin@johnnyautoseed.com', sessionId, idempotencyKey },
     { from, to: 'admin@johnnyautoseed.com', subject, text: body }
   );
   if (error) console.error('[email] admin preorder alert failed:', error.message ?? error);
@@ -259,7 +399,7 @@ export async function sendDiscordApplicationConfirmation({ name, email }) {
   const greeting = safeName ? `Hi ${safeName},` : 'Hi,';
   const heading = 'Application received.';
   const body = `${greeting} Your application to join the Surviving the Singularity Discord is in. We review every application by hand, so it may take a few days. You'll hear from us either way.`;
-  const cta = { label: 'Back to the checklist', url: 'https://survivingthesingularity.com/checklist' };
+  const cta = { label: 'Back to the checklist', url: customerUrl('/checklist') };
   const { error } = await sendAndRecord(
     { type: 'discord_application_confirmation', to: email },
     { from, to: email, subject: 'Your Discord application is in', html: renderHtml({ heading, body, cta }) }
@@ -382,7 +522,7 @@ export async function sendChecklistEmail({ to, answers }) {
   ${itemsHtml}
   <div style="margin:32px 0;padding:20px 24px;background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.2);border-radius:12px;">
     <p style="font-size:13px;color:#94a3b8;margin:0 0 14px;line-height:1.5;">Want the full strategy behind each step? The book expands every area of this checklist.</p>
-    <a href="https://survivingthesingularity.com/book" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:13px;text-decoration:none;padding:11px 20px;border-radius:8px;">Read the Book →</a>
+    <a href="${customerUrl('/book')}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:13px;text-decoration:none;padding:11px 20px;border-radius:8px;">Read the Book →</a>
   </div>
   <p style="font-size:11px;color:#334155;margin:32px 0 0;">You requested this at survivingthesingularity.com. Reply to unsubscribe.</p>
 </div>
@@ -408,39 +548,58 @@ export async function sendChecklistEmail({ to, answers }) {
  *
  * @param {{ to: string, sessionId: string, discount_code?: string|null }} args
  */
-export async function sendDownloadEmail({ to, sessionId, edition_type, copy_number, discount_code }) {
+export async function sendDownloadEmail({
+  to, sessionId, edition_type, copy_number, discount_code,
+  amountTotal = null, currency = null, paymentIntent = null, orderedAt = null,
+  idempotencyKey = null,
+}) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset - skipping download email to', to);
     return { skipped: true };
   }
 
   const isAuthors = edition_type === 'authors';
+  const copyReference = Number.isInteger(copy_number) && copy_number > 0
+    ? ` Copy reference: #${copy_number}.`
+    : '';
   const subject = isAuthors
-    ? `Your bundle is ready: Author's Edition copy #${copy_number}`
+    ? "Your bundle is ready: Author's Edition"
     : 'Your bundle is ready: preorder confirmed';
   const heading = isAuthors
-    ? `Your download is ready. You're copy #${copy_number} of 100.`
+    ? "Your Author's Edition digital bundle is ready."
     : "Your download is ready. You're on the list.";
   const confirmLine = isAuthors
-    ? `Your Author's Limited Edition preorder is confirmed: copy #${copy_number} of 100 is reserved for you. Hand-bound, signed, and numbered by the author, and no two copies are alike. `
+    ? `Your Author's Edition payment is recorded.${copyReference} This email delivers the digital bundle. `
     : 'Your preorder is confirmed. ';
+  const entitlementCopy = isAuthors
+    ? `For other Author's Edition benefits or print delivery terms, refer to your original order confirmation or contact ${offer.refund.contact} from your purchase address.`
+    : offer.digitalScope;
   // Describe the bundle by what is ACTUALLY in it. This line previously promised
   // "research PDFs, papers, images, and source documents" while the archive held
   // four .txt files totalling 3KB and no book at all. If the bundle's contents
   // change, change this sentence in the same commit.
   const body =
-    `${confirmLine}Your spot in line is locked in at 50% off the finished book, and we will email you an exclusive link when it is ready. ` +
-    'Your download is The Precedent File: 29 documented cases of people meeting a machine that changed everything, with every source listed so you can check the work. ' +
-    'It also carries the complete current book in PDF and EPUB, the Municipal Autonomy Code, and the cover art.';
+    `${confirmLine}${entitlementCopy} ` +
+    `Your download is The Precedent File: ${offer.precedentFileCaseCount} documented cases of people meeting a machine that changed everything, ` +
+    `${offer.precedentFileSourcedCount} of them with their sources listed inline so you can check the work. ` +
+    'It carries the sources index, the cover art, and the Robotics Company Index alongside it. ' +
+    'It also carries the current book in PDF and EPUB. Publicly available files are marked in the archive list below.';
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.
-  const pageUrl = `https://survivingthesingularity.com/early-access/success?session_id=${encodeURIComponent(sessionId)}`;
-  // Shared Stripe promotion code that actually redeems the 50% off at the
-  // future book checkout (allow_promotion_codes is already on in
+  const pageUrl = customerUrl(`/early-access/success?session_id=${encodeURIComponent(sessionId)}`);
+  // Shared Stripe promotion code (allow_promotion_codes is already on in
   // stripe-checkout/+server.js). The personal code below is this specific
   // customer's proof of a genuine preorder, stored in Supabase
   // (sql/009_preorder_discount_code.sql) - not itself a Stripe object.
+  //
+  // 2026-07-29: what this code buys CHANGED. It used to be 50% off the finished
+  // book, which no longer means anything now that the digital edition is
+  // included in the $5. Per the ratified offer it attaches to the Print
+  // Edition, a separate product at its own price that does not exist yet. The
+  // copy below says exactly that rather than implying the code is redeemable
+  // today, because it is not: there is nothing to redeem it against until the
+  // first Print Edition goes on sale.
   const masterCode = env.MASTER_DISCOUNT_CODE || 'PREORDER50';
 
   // The personal code only exists once sql/009_preorder_discount_code.sql has
@@ -452,8 +611,8 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
   // a customer missing the personal code still has everything they need.
   const hasPersonalCode = Boolean(discount_code);
   const keepLine = hasPersonalCode
-    ? "Keep both of these. You'll need them when the finished book launches."
-    : "Keep this code. You'll need it when the finished book launches.";
+    ? 'Keep both of these. The Print Edition is a separate product and it is not ready yet, so there is nothing to redeem against today. When the first one goes on sale, these are what get you half off it.'
+    : 'Keep this code. The Print Edition is a separate product and it is not ready yet, so there is nothing to redeem against today. When the first one goes on sale, this is what gets you half off it.';
   const personalCodeCell = hasPersonalCode
     ? `<td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
             <span style="font-size:12px;color:#64748b;display:block;">Your personal code</span>
@@ -461,20 +620,69 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
           </td>`
     : '';
 
+  // ── ORDER RECEIPT ─────────────────────────────────────────────────────────
+  // Each row is OMITTED when its fact is missing rather than filled with a
+  // plausible value. A receipt is a financial record: a missing line is a gap
+  // the customer can ask about, an invented line is a misstatement they cannot
+  // detect. The amount in particular never falls back to the list price, since
+  // promotion codes make the charged amount legitimately different.
+  const amountPaid = formatMoney(amountTotal, currency);
+  const orderDate = formatOrderDate(orderedAt);
+  const receiptRows = [
+    ['Order reference', sessionId],
+    orderDate ? ['Order date', orderDate] : null,
+    amountPaid ? ['Amount paid', amountPaid] : null,
+    paymentIntent ? ['Payment reference', paymentIntent] : null,
+  ]
+    .filter(Boolean)
+    .map(
+      ([k, v]) => `<tr>
+          <td style="padding:6px 12px 6px 0;font-size:12px;color:#64748b;white-space:nowrap;vertical-align:top;">${k}</td>
+          <td style="padding:6px 0;font-size:12px;color:#e2e8f0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all;">${escapeHtml(v)}</td>
+        </tr>`
+    )
+    .join('');
+
+  // ── WHAT IS IN THE ARCHIVE ────────────────────────────────────────────────
+  // Generated from bundleManifest, which scripts/build_bonus.py writes from the
+  // same staged file list it zips. So this table cannot describe a file the
+  // archive does not contain, and `sts.py bundle verify` fails if it drifts.
+  // The convenience copies are tagged as free rather than listed flat, so the
+  // list cannot read as though five dollars unlocked the book.
+  const fileRows = bundleManifest.files
+    .map((f) => {
+      // Keyed on `role`, which is the semantic field, with `also_free_at`
+      // supplying the location. The comment above the body copy promises this
+      // marking, so it reads the field that promise names.
+      const freeTag = f.role === 'convenience-copy' && f.also_free_at
+        ? `<span style="display:inline-block;font-size:10px;color:#6ee7b7;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);border-radius:4px;padding:1px 6px;margin-left:6px;white-space:nowrap;">free at ${escapeHtml(f.also_free_at.replace(/\/[^/]*$/, '') || '/downloads')}</span>`
+        : '';
+      return `<tr>
+          <td style="padding:7px 12px 7px 0;font-size:12px;color:#e2e8f0;line-height:1.5;border-top:1px solid rgba(148,163,184,0.12);">${escapeHtml(f.label)}${freeTag}</td>
+          <td style="padding:7px 0;font-size:11px;color:#64748b;text-align:right;white-space:nowrap;vertical-align:top;border-top:1px solid rgba(148,163,184,0.12);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">${escapeHtml(f.format.toUpperCase())} · ${formatBytes(f.bytes)}</td>
+        </tr>`;
+    })
+    .join('');
+
   const html = `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download The Precedent File</a>
+    <div style="background:rgba(148,163,184,0.04);border:1px solid rgba(148,163,184,0.15);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
+      <p style="font-size:12px;color:#64748b;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700;">In your archive</p>
+      <p style="font-size:12px;color:#64748b;margin:0 0 6px;">${bundleManifest.bundle.entries} files, ${formatBytes(bundleManifest.bundle.bytes)} zipped.</p>
+      <table role="presentation" style="width:100%;border-collapse:collapse;">${fileRows}</table>
+    </div>
     <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
-      <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your 50% off launch discount</p>
+      <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your ${offerItemLabel('print-discount')}</p>
       <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">${keepLine}</p>
       <table role="presentation" style="width:100%;border-collapse:collapse;">
         <tr>
           ${personalCodeCell}
           <td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
-            <span style="font-size:12px;color:#64748b;display:block;">Code to redeem at checkout</span>
+            <span style="font-size:12px;color:#64748b;display:block;">Code to redeem when the Print Edition is on sale</span>
             <strong style="font-size:18px;letter-spacing:0.08em;color:#f1f5f9;">${escapeHtml(masterCode)}</strong>
           </td>
         </tr>
@@ -483,17 +691,22 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);border-radius:10px;padding:16px 20px;margin-top:8px;">
       <p style="font-size:13px;color:#64748b;margin:0 0 10px;">Also included in your early access:</p>
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">
-        Full book: current draft <a href="https://survivingthesingularity.com/book" style="color:#f59e0b;">survivingthesingularity.com/book</a>
+        Full book: current draft <a href="${customerUrl('/book')}" style="color:#f59e0b;">Read the book online</a>
       </p>
       <p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(BOOK_ACCESS_PASSWORD)}</strong></p>
     </div>
-    <p style="font-size:11px;color:#334155;margin:36px 0 0;">Order ref: ${sessionId.slice(0, 24)}... · survivingthesingularity.com · Reply to this email for support.</p>
+    <div style="border-top:1px solid rgba(148,163,184,0.15);margin-top:32px;padding-top:20px;">
+      <p style="font-size:12px;color:#64748b;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700;">Order receipt</p>
+      <table role="presentation" style="width:100%;border-collapse:collapse;">${receiptRows}</table>
+      <p style="font-size:11px;color:#334155;margin:14px 0 0;">Keep this for your records. Reply to this email for support.</p>
+    </div>
+    ${footerHtml({ reason: 'you bought early access at survivingthesingularity.com' })}
   </div></body></html>`;
 
   // The one email a paying customer must receive. Recorded so a bounce is
   // visible in our own data rather than only in Resend's dashboard.
   const { data, error } = await sendAndRecord(
-    { type: 'preorder_download', to, sessionId },
+    { type: 'preorder_download', to, sessionId, idempotencyKey },
     { from, to, subject, html }
   );
   if (error) {
@@ -506,18 +719,40 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
 /**
  * Fire a welcome/confirmation email. Safe to call unconditionally:
  * - no API key  -> logs a warning, returns { skipped: true }
- * - send errors -> caught by caller; must never block signup.
+ * - send errors -> returned to the caller, which reports unconfirmed delivery.
  *
  * @param {{ to: string, source?: string, unsubscribeToken?: string }} args
  */
+/**
+ * Alert the admin inbox that paid sessions were never fulfilled (plan item B-06).
+ *
+ * Plain text, not HTML, and deliberately so: this one is read in a hurry on a
+ * phone, and every line of it is an action item rather than a nicety.
+ *
+ * The subject carries the COUNT, because the whole value of this alert is being
+ * able to tell "one order needs a nudge" from "the pipeline is down" without
+ * opening it.
+ *
+ * @param {{ count: number, body: string }} args
+ */
+export async function sendAdminReconciliationAlert({ count, body }) {
+  if (!resend) return { skipped: true };
+  const subject = `[STS] ${count} paid session${count === 1 ? '' : 's'} not fulfilled`;
+  const { error } = await sendAndRecord(
+    { type: 'admin_reconciliation_alert', to: 'admin@johnnyautoseed.com' },
+    { from, to: 'admin@johnnyautoseed.com', subject, text: body }
+  );
+  if (error) console.error('[email] reconciliation alert failed:', error.message ?? error);
+  return error ? { error } : { ok: true };
+}
+
 export async function sendWelcomeEmail({ to, source = 'homepage', unsubscribeToken }) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset - skipping welcome email to', to);
     return { skipped: true };
   }
-  const baseUrl = env.PUBLIC_BASE_URL || 'https://survivingthesingularity.com';
   const unsubscribeUrl = unsubscribeToken
-    ? `${baseUrl}/unsubscribe?token=${unsubscribeToken}`
+    ? customerUrl(`/unsubscribe?token=${encodeURIComponent(unsubscribeToken)}`)
     : null;
   const copy = buildWelcome(source);
   const { error } = await sendAndRecord(

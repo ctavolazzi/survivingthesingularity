@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 399" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">LAND HAS PEOPLE ON IT</title>
+<desc id="desc">Cultivated land rests above an open agreement with distinct spaces for an owner, users and neighbors. Shared use requires consent, terms and a way to challenge decisions.</desc>
+<rect width="480" height="399" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">LAND HAS PEOPLE ON IT</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<path d="M55 153L209 88L427 150L270 219Z" fill="#ffffff" stroke="#17251f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M67.83333333333333 147.58333333333334L277.8333333333333 209.58333333333334" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M80.66666666666666 142.16666666666666L290.66666666666663 204.16666666666666" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M93.5 136.75L303.5 198.75" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M106.33333333333333 131.33333333333334L316.3333333333333 193.33333333333334" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M119.16666666666667 125.91666666666666L329.1666666666667 187.91666666666666" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M132.0 120.5L342.0 182.5" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M144.83333333333334 115.08333333333333L354.83333333333337 177.08333333333331" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M157.66666666666666 109.66666666666667L367.66666666666663 171.66666666666669" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M170.5 104.25L380.5 166.25" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M183.33333333333334 98.83333333333333L393.33333333333337 160.83333333333331" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M122 148V128M122 139Q108 123 114 140M122 136Q136 118 131 136" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M183 129V109M183 120Q169 104 175 121M183 117Q197 99 192 117" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M263 156V136M263 147Q249 131 255 148M263 144Q277 126 272 144" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M334 155V135M334 146Q320 130 326 147M334 143Q348 125 343 143" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M233 189V169M233 180Q219 164 225 181M233 177Q247 159 242 177" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M49 240L184 225L299 245L431 230V309L299 324L184 304L49 319Z" fill="#ffffff" stroke="#315f78" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M184 231L184 296" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M299 252L299 315" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="114" y="272" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Owner</text>
+<text x="241" y="279" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Users</text>
+<text x="365" y="275" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Neighbors</text>
+<path d="M70 298Q91 282 104 297T154 292M206 299Q222 289 238 302T277 299M322 303Q336 283 350 299T407 291" fill="none" stroke="#4b5b52" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M20 344L460 344" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="364" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Consent · terms · decisions people can contest</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 585" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">Two routes to a DC load</title>
+<desc id="desc">Solar charging and storage feed two conceptual paths to an already-DC device. The inverter path converts DC to AC and an adapter converts it back. The DC route still needs voltage regulation and protection. Both have charging, wiring and operating losses; compare at the intended load.</desc>
+<rect width="480" height="585" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">Two routes to a DC load</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="78" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Same device. Compare the complete systems.</text>
+<path d="M31 111H122V159H31Z" fill="#ffffff" stroke="#315f78" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M52 112L52 158" fill="none" stroke="#a2afa6" stroke-width="0.8"/>
+<path d="M76 112L76 158" fill="none" stroke="#a2afa6" stroke-width="0.8"/>
+<path d="M100 112L100 158" fill="none" stroke="#a2afa6" stroke-width="0.8"/>
+<path d="M32 135L121 135" fill="none" stroke="#a2afa6" stroke-width="0.8"/>
+<path d="M191 111H289V159H191Z" fill="#ffffff" stroke="#17251f" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M208 122L208 146" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M222 122L222 146" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M236 122L236 146" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M250 122L250 146" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M264 122L264 146" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M357 115H433V157H357Z" fill="#ffffff" stroke="#9a4f13" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M382 107H407V115H382Z" fill="#ffffff" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M133 135L181 135" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M181 135L173.97933950487703 138.83540430883363" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M181 135L173.97933950487703 131.16459569116637" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M300 135L347 135" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M347 135L339.97933950487703 138.83540430883363" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M347 135L339.97933950487703 131.16459569116637" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<text x="77" y="184" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Solar</text>
+<text x="240" y="184" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Charge control</text>
+<text x="395" y="184" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Battery</text>
+<path d="M395 200L395 213" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M123 213L360 213" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M395 213L360 213" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="123" y="249" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">INVERTER PATH</text>
+<text x="360" y="249" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">DC PATH</text>
+<path d="M123 264L123 280" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M123 280L119.16459569116637 272.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M123 280L126.83540430883362 272.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M360 264L360 306" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M360 306L356.16459569116637 298.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M360 306L363.83540430883363 298.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<text x="123" y="305" font-size="16" fill="#17251f" text-anchor="middle" font-weight="400">Inverter</text>
+<text x="123" y="326" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">DC → AC</text>
+<path d="M123 340L123 356" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M123 356L119.16459569116637 348.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M123 356L126.83540430883362 348.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<text x="123" y="381" font-size="16" fill="#17251f" text-anchor="middle" font-weight="400">Adapter</text>
+<text x="123" y="402" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">AC → DC</text>
+<text x="360" y="332" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Regulation +</text>
+<text x="360" y="354" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">fused distribution</text>
+<text x="360" y="383" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">matched voltage</text>
+<path d="M123 418L123 447" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M123 447L119.16459569116637 439.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M123 447L126.83540430883362 439.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M360 401L360 447" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M360 447L356.16459569116637 439.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M360 447L363.83540430883363 439.97933950487703" fill="none" stroke="#17251f" stroke-width="1.6"/>
+<path d="M79 456H167V488H79Z" fill="#ffffff" stroke="#17251f" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="123" y="478" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">DC load</text>
+<path d="M316 456H404V488H316Z" fill="#ffffff" stroke="#17251f" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="360" y="478" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">DC load</text>
+<path d="M20 510L460 510" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="530" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Charging, wires and regulation still lose energy.</text>
+<text x="20" y="551" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Both need protection and voltage matching.</text>
+<text x="20" y="572" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Conceptual energy paths, not a wiring plan.</text>
+</svg>

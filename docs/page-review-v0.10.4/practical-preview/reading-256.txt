@@ -1,0 +1,56 @@
+                                                                       CHAPTER 14
+
+
+   Asecondroutemustexist
+
+
+   ONEUPLINKINTHISEXAMPLE
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Towerfails:thisrouteislost.
+
+
+   MESHWITHANALTERNATEROUTE
+
+
+
+
+
+
+
+
+
+
+
+   Testcoverage,powerandamissingrelay.
+
+
+
+
+A mesh can route around a break only where another powered, usable path remains. Test the
+missing relay.
+
+
+A mesh network is built from small, low-power radio nodes spread
+across an area, often LoRa radios running open software like Mesh-
+tastic.
+ • Alternate paths. Nodes can relay messages. If one fails, messages
+   can travel another way only if a usable radio path remains. A ridge
+   repeater can still be a single point of failure, as Chapter 17 shows.
+   Meshtastic, mesh algorithm
+
+
+
+
+                                                                             251

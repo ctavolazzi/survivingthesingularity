@@ -1,0 +1,22 @@
+{
+  "reviewed": "2026-09-28",
+  "samples": [
+    {
+      "file": "docs/v0.10.2/art-core-proof/ch12-csa-network-print.png",
+      "sha256": "7cf5617f479bdb88a01cde336bc8c1cb4a1f5f10f9c8f68cfa6e246b4f9e5f9b"
+    },
+    {
+      "file": "docs/v0.10.2/art-core-proof/ch14-logistic-shockwave-print.png",
+      "sha256": "f5ec15faf7f5ba22dc28288a7cf43d14abc2ce3d37e4bdc339dd08d5aa946876"
+    },
+    {
+      "file": "docs/v0.10.2/art-core-proof/ch15-soil-food-web-print.png",
+      "sha256": "f3d892fa3b1ed186f7fbb48291dc3f29572c4569cd79f6b300cd892d28153363"
+    },
+    {
+      "file": "docs/v0.10.2/art-core-proof/ch17-algae-loop-print.png",
+      "sha256": "2a1555a851105b7cc3940c5bda047057dbfdb978abb1d89f729ebc3de6cf33cd"
+    }
+  ],
+  "observations": "All four final print diagrams inspected at actual width. Labels are complete and clear. Soil return arrow reaches the root zone; aquaponic water and possible algae feed remain separate. Browser geometry covers both palettes. Full PDF page proofs are separate."
+}

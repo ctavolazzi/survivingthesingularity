@@ -1,0 +1,34 @@
+The mechanism. A technologyʼs present limits donʼt tell you which ones
+will  yield  to  further  work.  Critics  benchmark  the  present  version;
+builders test what can change. Neither improvement nor failure is guar-
+anteed. And a technology can prove its critics wrong about what it can do
+and still create real problems worth criticizing.
+The rule. Let actual results change the plan, including your optimistic
+plan. Youʼre living through this decadeʼs version of Stollʼs essay, published
+weekly,  about  AI,  by  smart  people,  containing  accurate  complaints.
+Youʼve now read twenty-four entries in the Precedent Ledger, from the
+first grain fields to a magazine calling the web a letdown. You know how
+this rhymes. My bet is 2027. The essayists will still be writing. Youʼll be
+building.
+The practice.
+Start your own receipts file today. Every time a credentialed voice
+declares AI overhyped, a bubble, or a fad, save it: headline, author,
+date. Save the breathless predictions too, including mine. Set a
+reminder two years out to read the file. Youʼre not collecting them to
+gloat. Youʼre building immunity to confident dismissal and confident
+hype alike, with evidence you gathered yourself.
+Separate an observed problem from a claim that it can never change.
+When you read an AI complaint, ask what evidence would show
+improvement and what constraint would remain. Slow modems
+improved. The speed of light didnʼt. Cost and law can change, but you
+canʼt budget as though they already have. Let the constraints change
+your plan.
+Close the Ledger and open the notebook. Go back through the
+practices behind you and pick the one that made you most
+uncomfortable, because that discomfort is a compass pointing at your
+beachfront. Do that one first.
+1. 
+2. 
+3. 
+CONCLUSION
+339

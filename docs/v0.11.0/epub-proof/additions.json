@@ -1,0 +1,1459 @@
+{
+  "version": "0.11.0",
+  "epub_sha256": "b759dd2a23bdc0bb739a4dcc7ea8b25617cdc0cb63fff8be8176ab6d4c64048d",
+  "viewports": [
+    390,
+    768
+  ],
+  "measurements": [
+    {
+      "file": "02-introduction.md",
+      "block": 1,
+      "tag": "p",
+      "width": 390,
+      "text": "Surviving the Singularity means keeping people fed, housed, and cared for as machines take on more of the work we’re paid to do. It means having a say in who owns the tools and who gets their benefit. Start with food: a lost paycheck shouldn’t decide whether your family eats. We can begin now, with farmers, cooks, neighbors, useful machines, and public institutions. My forecast may be wrong. A dependable dinner still matters. The work is making survival less precarious for everyone.",
+      "bounds": {
+        "x": 8,
+        "y": 375.6875,
+        "width": 374,
+        "height": 247.96875,
+        "top": 375.6875,
+        "right": 382,
+        "bottom": 623.65625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 390,
+      "text": "Whose robots?",
+      "bounds": {
+        "x": 8,
+        "y": 487.03125,
+        "width": 374,
+        "height": 25.984375,
+        "top": 487.03125,
+        "right": 382,
+        "bottom": 513.015625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 2,
+      "tag": "p",
+      "width": 390,
+      "text": "Use the robots to grow the food. Fine. Whose robots?",
+      "bounds": {
+        "x": 8,
+        "y": 530.265625,
+        "width": 374,
+        "height": 24.796875,
+        "top": 530.265625,
+        "right": 382,
+        "bottom": 555.0625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 3,
+      "tag": "p",
+      "width": 390,
+      "text": "That’s a reasonable objection. People with the money to own the servers, the models, and the land can decide whose needs their machines serve. When I talk about oligarchs, I mean that concentration of wealth and decision-making power. A machine can get better while its owner raises the price, restricts its use, or withdraws a service your town has come to depend on.",
+      "bounds": {
+        "x": 8,
+        "y": 571.0625,
+        "width": 374,
+        "height": 198.375,
+        "top": 571.0625,
+        "right": 382,
+        "bottom": 769.4375,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 4,
+      "tag": "p",
+      "width": 390,
+      "text": "The machines aren’t all locked away. Useful models can run on consumer hardware. But a local computer can still depend on somebody else’s license, replacement parts, or online service. Ownership has to reach the terms you depend on.",
+      "bounds": {
+        "x": 8,
+        "y": 785.4375,
+        "width": 374,
+        "height": 123.984375,
+        "top": 785.4375,
+        "right": 382,
+        "bottom": 909.421875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 5,
+      "tag": "p",
+      "width": 390,
+      "text": "Norbert Wiener saw the problem in 1949. Writing to autoworkers’ union president Walter Reuther on August 13, he explained that he’d refused an industrial consultancy because of the unemployment automatic factories could cause. Then he wrote: “it is manifestly not enough to take a negative attitude on this.” He proposed that organized labor take part in producing the machines and direct their profits toward labor’s benefit. Wiener, letter to Walter Reuther",
+      "bounds": {
+        "x": 8,
+        "y": 752.421875,
+        "width": 374,
+        "height": 247.96875,
+        "top": 752.421875,
+        "right": 382,
+        "bottom": 1000.390625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 6,
+      "tag": "p",
+      "width": 390,
+      "text": "Elinor Ostrom supplied evidence for another piece of the argument. Her studies of shared fisheries, forests, and other resources found that users could develop rules and enforce them themselves. The 2009 economics prize recognized that work. Those findings give us a useful starting point for shared machines: examine who makes the rules, who enforces them, and how people settle disputes. Royal Swedish Academy of Sciences, 2009 economics prize",
+      "bounds": {
+        "x": 8,
+        "y": 388.390625,
+        "width": 374,
+        "height": 223.171875,
+        "top": 388.390625,
+        "right": 382,
+        "bottom": 611.5625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 7,
+      "tag": "p",
+      "width": 390,
+      "text": "That’s the point of Rung 5 in Chapter 19: own the necessary machines together, and make the right to their output dependable. Ask who sets the price, who can change the rules, and where a person can appeal when dinner doesn’t arrive. Put those answers in the agreement. The same capability can serve different arrangements. We have work to do on both.",
+      "bounds": {
+        "x": 8,
+        "y": 627.5625,
+        "width": 374,
+        "height": 173.578125,
+        "top": 627.5625,
+        "right": 382,
+        "bottom": 801.140625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 390,
+      "text": "Get involved",
+      "bounds": {
+        "x": 8,
+        "y": 487.40625,
+        "width": 374,
+        "height": 25.984375,
+        "top": 487.40625,
+        "right": 382,
+        "bottom": 513.390625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 2,
+      "tag": "p",
+      "width": 390,
+      "text": "If you’re worried about who controls this technology, give that concern somewhere to go. Talk to your government. Form a coalition with your peers. Get together with local business owners and petition your city council. Write a book. Pick a decision you want changed and work on it with other people.",
+      "bounds": {
+        "x": 8,
+        "y": 530.640625,
+        "width": 374,
+        "height": 148.78125,
+        "top": 530.640625,
+        "right": 382,
+        "bottom": 679.421875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 3,
+      "tag": "p",
+      "width": 390,
+      "text": "Take fucking action.",
+      "bounds": {
+        "x": 8,
+        "y": 695.421875,
+        "width": 374,
+        "height": 24.796875,
+        "top": 695.421875,
+        "right": 382,
+        "bottom": 720.21875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 4,
+      "tag": "p",
+      "width": 390,
+      "text": "Posting can recruit neighbors, share records, and get a proposal into people’s hands. Connect that work to a request somebody has the power to grant: fund the kitchen, protect the water, put the machines into community ownership. Name the decision and the person or body responsible for it.",
+      "bounds": {
+        "x": 8,
+        "y": 736.21875,
+        "width": 374,
+        "height": 148.78125,
+        "top": 736.21875,
+        "right": 382,
+        "bottom": 885,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 5,
+      "tag": "p",
+      "width": 390,
+      "text": "Find the next meeting agenda. Check the public-comment rules and speaking limit. Write one request that fits the time: what you want, who it serves, and what the next step would cost. Bring the longer version for the record. Ask for a specific next step, such as a staff report or a budget item, and a date when you can follow up.",
+      "bounds": {
+        "x": 8,
+        "y": 826,
+        "width": 374,
+        "height": 173.578125,
+        "top": 826,
+        "right": 382,
+        "bottom": 999.578125,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 6,
+      "tag": "p",
+      "width": 390,
+      "text": "Afterward, send the request in writing. Read the minutes. Find out whether anyone was assigned to act, and come back when the item returns. A speech starts a conversation; the follow-up keeps the request alive.",
+      "bounds": {
+        "x": 8,
+        "y": 437.578125,
+        "width": 374,
+        "height": 123.984375,
+        "top": 437.578125,
+        "right": 382,
+        "bottom": 561.5625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 7,
+      "tag": "p",
+      "width": 390,
+      "text": "If you can’t get to the room, ask the clerk how to submit written comments or participate remotely. You can help research the proposal, call an office, recruit support, or arrange transport and childcare for someone who can attend. Organizing needs more than whoever holds the microphone.",
+      "bounds": {
+        "x": 8,
+        "y": 577.5625,
+        "width": 374,
+        "height": 148.78125,
+        "top": 577.5625,
+        "right": 382,
+        "bottom": 726.34375,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 8,
+      "tag": "p",
+      "width": 390,
+      "text": "Tucson shows what a public decision can change, and where its reach ends. On August 6, 2025, its mayor and council ended negotiations over Project Blue’s proposed city annexation and development agreement. They canceled the annexation hearing and removed the agreement from the next agenda. City of Tucson, adopted motions",
+      "bounds": {
+        "x": 8,
+        "y": 742.34375,
+        "width": 374,
+        "height": 173.578125,
+        "top": 742.34375,
+        "right": 382,
+        "bottom": 915.921875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 9,
+      "tag": "p",
+      "width": 390,
+      "text": "The project continued outside city limits. Pima County documented activity at its construction site in May 2026. Residents could influence the council’s decision; they couldn’t settle every decision governing the project. That means finding the next authority and keeping at it. Pima County, construction update",
+      "bounds": {
+        "x": 8,
+        "y": 825.921875,
+        "width": 374,
+        "height": 173.578125,
+        "top": 825.921875,
+        "right": 382,
+        "bottom": 999.5,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 10,
+      "tag": "p",
+      "width": 390,
+      "text": "Rung 5 gives the other half of the work: people organizing to own infrastructure and extend a service. You can press a council to refuse a deal or organize a cooperative to build something worth having. Both require people to make decisions together.",
+      "bounds": {
+        "x": 8,
+        "y": 425.5,
+        "width": 374,
+        "height": 148.78125,
+        "top": 425.5,
+        "right": 382,
+        "bottom": 574.28125,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 11,
+      "tag": "p",
+      "width": 390,
+      "text": "Frederick Douglass put the demand plainly in 1857: “Power concedes nothing without a demand. It never did and it never will.” Douglass, speech excerpt",
+      "bounds": {
+        "x": 8,
+        "y": 590.28125,
+        "width": 374,
+        "height": 74.390625,
+        "top": 590.28125,
+        "right": 382,
+        "bottom": 664.671875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 12,
+      "tag": "p",
+      "width": 390,
+      "text": "Make one. Then follow it through.",
+      "bounds": {
+        "x": 8,
+        "y": 680.671875,
+        "width": 374,
+        "height": 24.796875,
+        "top": 680.671875,
+        "right": 382,
+        "bottom": 705.46875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 390,
+      "text": "A future called solarpunk",
+      "bounds": {
+        "x": 8,
+        "y": 487.15625,
+        "width": 374,
+        "height": 25.984375,
+        "top": 487.15625,
+        "right": 382,
+        "bottom": 513.140625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 2,
+      "tag": "p",
+      "width": 390,
+      "text": "One name for a future like that is solarpunk.",
+      "bounds": {
+        "x": 8,
+        "y": 530.390625,
+        "width": 374,
+        "height": 24.796875,
+        "top": 530.390625,
+        "right": 382,
+        "bottom": 555.1875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 3,
+      "tag": "p",
+      "width": 390,
+      "text": "On April 30, 2008, a blogger writing as John-Robert proposed the word for a literary genre, taking inspiration from a cargo ship using wind to supplement its engines. He imagined modern technology combined with older tools in an economy powered by renewables. John-Robert, From Steampunk to Solarpunk",
+      "bounds": {
+        "x": 8,
+        "y": 571.1875,
+        "width": 374,
+        "height": 173.578125,
+        "top": 571.1875,
+        "right": 382,
+        "bottom": 744.765625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 4,
+      "tag": "p",
+      "width": 390,
+      "text": "For this book, the useful idea is a future where renewable energy, repairable tools, and shared decisions make daily life more secure. Solar points toward the sun and the living world every machine depends on. Punk asks whose hands the tools are in. A working greenhouse, a shared workshop, and a funded meal route give that picture substance.",
+      "bounds": {
+        "x": 8,
+        "y": 760.765625,
+        "width": 374,
+        "height": 173.578125,
+        "top": 760.765625,
+        "right": 382,
+        "bottom": 934.34375,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 5,
+      "tag": "p",
+      "width": 390,
+      "text": "In her 2014 National Book Foundation speech, Ursula K. Le Guin argued that writers can help people imagine alternatives to the way they live, and that arrangements of human power can be changed. Le Guin, National Book Foundation Medal speech",
+      "bounds": {
+        "x": 8,
+        "y": 876.34375,
+        "width": 374,
+        "height": 123.984375,
+        "top": 876.34375,
+        "right": 382,
+        "bottom": 1000.328125,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 6,
+      "tag": "p",
+      "width": 390,
+      "text": "The picture is an invitation to work. Soil still needs tending. Somebody still has to fix the controller and deliver the meal. Hope gets useful when we give it a job.",
+      "bounds": {
+        "x": 8,
+        "y": 450.328125,
+        "width": 374,
+        "height": 99.1875,
+        "top": 450.328125,
+        "right": 382,
+        "bottom": 549.515625,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 7,
+      "tag": "p",
+      "width": 390,
+      "text": "Stop waiting. Show up. Start building. And when you’ve found your footing, turn around and help everyone you can reach find theirs.",
+      "bounds": {
+        "x": 8,
+        "y": 462.71875,
+        "width": 374,
+        "height": 74.390625,
+        "top": 462.71875,
+        "right": 382,
+        "bottom": 537.109375,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 390,
+      "text": "Ownership, participation, and solarpunk",
+      "bounds": {
+        "x": 8,
+        "y": 473.5625,
+        "width": 374,
+        "height": 51.96875,
+        "top": 473.5625,
+        "right": 382,
+        "bottom": 525.53125,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 390,
+      "text": "Norbert Wiener: Letter to Walter Reuther, 13 August 1949, online transcript. Records his refused industrial consultancy and proposal for organized labor to participate in machine production and direct profits toward labor’s benefit. The archival original was not inspected; the letter does not establish implementation or success.",
+      "bounds": {
+        "x": 48,
+        "y": 542.78125,
+        "width": 334,
+        "height": 198.375,
+        "top": 542.78125,
+        "right": 382,
+        "bottom": 741.15625,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 390,
+      "text": "Elinor Ostrom: Royal Swedish Academy of Sciences, 2009 economics prize press release, 12 October 2009. Summarizes evidence of shared natural-resource governance, including decision-making and enforcement. These cases inform the book’s questions about shared machines; they do not establish the success of neighborhood AI services or guarantee fairness through local ownership.",
+      "bounds": {
+        "x": 48,
+        "y": 741.15625,
+        "width": 334,
+        "height": 223.171875,
+        "top": 741.15625,
+        "right": 382,
+        "bottom": 964.328125,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 390,
+      "text": "City of Tucson: Motions Adopted Under August 6, 2025, Study Session Item 8: Project Blue. Adopted motions ending negotiations over the proposed city annexation and development agreement and canceling the scheduled hearing. This records the city’s action, not a prohibition on development in unincorporated Pima County.",
+      "bounds": {
+        "x": 48,
+        "y": 801.328125,
+        "width": 334,
+        "height": 198.375,
+        "top": 801.328125,
+        "right": 382,
+        "bottom": 999.703125,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 390,
+      "text": "Pima County Administrator: Response from Project Blue Contractor Regarding Notice of Violation for Fugitive Dust, 22 May 2026. County memorandum and attached records document construction-site activity in May. They establish that the project continued after Tucson’s decision, not that construction was complete.",
+      "bounds": {
+        "x": 48,
+        "y": 801.703125,
+        "width": 334,
+        "height": 198.375,
+        "top": 801.703125,
+        "right": 382,
+        "bottom": 1000.078125,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 390,
+      "text": "Frederick Douglass: 1857 speech excerpt, reproduced in the American Bar Association and Law Library of Congress Law Day 2020 program booklet, printed page 18. Institutional reproduction of the passage on struggle and demands. The original argument concerns emancipation; its use here is an analogy about collective action, not a guarantee that every demand succeeds.",
+      "bounds": {
+        "x": 48,
+        "y": 389.078125,
+        "width": 334,
+        "height": 223.171875,
+        "top": 389.078125,
+        "right": 382,
+        "bottom": 612.25,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 390,
+      "text": "Solarpunk: John-Robert, From Steampunk to Solarpunk, 30 April 2008, original blog post. Proposes the term for a literary genre inspired by a wind-assisted cargo ship. The conclusion’s application to shared decisions, repair, and meal provision is this book’s interpretation.",
+      "bounds": {
+        "x": 48,
+        "y": 612.25,
+        "width": 334,
+        "height": 173.578125,
+        "top": 612.25,
+        "right": 382,
+        "bottom": 785.828125,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 390,
+      "text": "Ursula K. Le Guin: National Book Foundation Medal acceptance speech, 19 November 2014, transcript on her website. Supports the attributed paraphrase about imagining alternatives and changing arrangements of human power. Her speech does not name solarpunk or endorse this book’s proposals.",
+      "bounds": {
+        "x": 48,
+        "y": 785.828125,
+        "width": 334,
+        "height": 198.375,
+        "top": 785.828125,
+        "right": 382,
+        "bottom": 984.203125,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "02-introduction.md",
+      "block": 1,
+      "tag": "p",
+      "width": 768,
+      "text": "Surviving the Singularity means keeping people fed, housed, and cared for as machines take on more of the work we’re paid to do. It means having a say in who owns the tools and who gets their benefit. Start with food: a lost paycheck shouldn’t decide whether your family eats. We can begin now, with farmers, cooks, neighbors, useful machines, and public institutions. My forecast may be wrong. A dependable dinner still matters. The work is making survival less precarious for everyone.",
+      "bounds": {
+        "x": 8,
+        "y": 437.78125,
+        "width": 752,
+        "height": 123.984375,
+        "top": 437.78125,
+        "right": 760,
+        "bottom": 561.765625,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 768,
+      "text": "Whose robots?",
+      "bounds": {
+        "x": 8,
+        "y": 487.09375,
+        "width": 752,
+        "height": 25.984375,
+        "top": 487.09375,
+        "right": 760,
+        "bottom": 513.078125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 2,
+      "tag": "p",
+      "width": 768,
+      "text": "Use the robots to grow the food. Fine. Whose robots?",
+      "bounds": {
+        "x": 8,
+        "y": 530.328125,
+        "width": 752,
+        "height": 24.796875,
+        "top": 530.328125,
+        "right": 760,
+        "bottom": 555.125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 3,
+      "tag": "p",
+      "width": 768,
+      "text": "That’s a reasonable objection. People with the money to own the servers, the models, and the land can decide whose needs their machines serve. When I talk about oligarchs, I mean that concentration of wealth and decision-making power. A machine can get better while its owner raises the price, restricts its use, or withdraws a service your town has come to depend on.",
+      "bounds": {
+        "x": 8,
+        "y": 571.125,
+        "width": 752,
+        "height": 99.1875,
+        "top": 571.125,
+        "right": 760,
+        "bottom": 670.3125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 4,
+      "tag": "p",
+      "width": 768,
+      "text": "The machines aren’t all locked away. Useful models can run on consumer hardware. But a local computer can still depend on somebody else’s license, replacement parts, or online service. Ownership has to reach the terms you depend on.",
+      "bounds": {
+        "x": 8,
+        "y": 686.3125,
+        "width": 752,
+        "height": 74.390625,
+        "top": 686.3125,
+        "right": 760,
+        "bottom": 760.703125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 5,
+      "tag": "p",
+      "width": 768,
+      "text": "Norbert Wiener saw the problem in 1949. Writing to autoworkers’ union president Walter Reuther on August 13, he explained that he’d refused an industrial consultancy because of the unemployment automatic factories could cause. Then he wrote: “it is manifestly not enough to take a negative attitude on this.” He proposed that organized labor take part in producing the machines and direct their profits toward labor’s benefit. Wiener, letter to Walter Reuther",
+      "bounds": {
+        "x": 8,
+        "y": 776.703125,
+        "width": 752,
+        "height": 123.984375,
+        "top": 776.703125,
+        "right": 760,
+        "bottom": 900.6875,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 6,
+      "tag": "p",
+      "width": 768,
+      "text": "Elinor Ostrom supplied evidence for another piece of the argument. Her studies of shared fisheries, forests, and other resources found that users could develop rules and enforce them themselves. The 2009 economics prize recognized that work. Those findings give us a useful starting point for shared machines: examine who makes the rules, who enforces them, and how people settle disputes. Royal Swedish Academy of Sciences, 2009 economics prize",
+      "bounds": {
+        "x": 8,
+        "y": 875.6875,
+        "width": 752,
+        "height": 123.984375,
+        "top": 875.6875,
+        "right": 760,
+        "bottom": 999.671875,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "08-chapter6.md",
+      "block": 7,
+      "tag": "p",
+      "width": 768,
+      "text": "That’s the point of Rung 5 in Chapter 19: own the necessary machines together, and make the right to their output dependable. Ask who sets the price, who can change the rules, and where a person can appeal when dinner doesn’t arrive. Put those answers in the agreement. The same capability can serve different arrangements. We have work to do on both.",
+      "bounds": {
+        "x": 8,
+        "y": 450.671875,
+        "width": 752,
+        "height": 99.1875,
+        "top": 450.671875,
+        "right": 760,
+        "bottom": 549.859375,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 768,
+      "text": "Get involved",
+      "bounds": {
+        "x": 8,
+        "y": 486.71875,
+        "width": 752,
+        "height": 25.984375,
+        "top": 486.71875,
+        "right": 760,
+        "bottom": 512.703125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 2,
+      "tag": "p",
+      "width": 768,
+      "text": "If you’re worried about who controls this technology, give that concern somewhere to go. Talk to your government. Form a coalition with your peers. Get together with local business owners and petition your city council. Write a book. Pick a decision you want changed and work on it with other people.",
+      "bounds": {
+        "x": 8,
+        "y": 529.953125,
+        "width": 752,
+        "height": 74.390625,
+        "top": 529.953125,
+        "right": 760,
+        "bottom": 604.34375,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 3,
+      "tag": "p",
+      "width": 768,
+      "text": "Take fucking action.",
+      "bounds": {
+        "x": 8,
+        "y": 620.34375,
+        "width": 752,
+        "height": 24.796875,
+        "top": 620.34375,
+        "right": 760,
+        "bottom": 645.140625,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 4,
+      "tag": "p",
+      "width": 768,
+      "text": "Posting can recruit neighbors, share records, and get a proposal into people’s hands. Connect that work to a request somebody has the power to grant: fund the kitchen, protect the water, put the machines into community ownership. Name the decision and the person or body responsible for it.",
+      "bounds": {
+        "x": 8,
+        "y": 661.140625,
+        "width": 752,
+        "height": 74.390625,
+        "top": 661.140625,
+        "right": 760,
+        "bottom": 735.53125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 5,
+      "tag": "p",
+      "width": 768,
+      "text": "Find the next meeting agenda. Check the public-comment rules and speaking limit. Write one request that fits the time: what you want, who it serves, and what the next step would cost. Bring the longer version for the record. Ask for a specific next step, such as a staff report or a budget item, and a date when you can follow up.",
+      "bounds": {
+        "x": 8,
+        "y": 751.53125,
+        "width": 752,
+        "height": 99.1875,
+        "top": 751.53125,
+        "right": 760,
+        "bottom": 850.71875,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 6,
+      "tag": "p",
+      "width": 768,
+      "text": "Afterward, send the request in writing. Read the minutes. Find out whether anyone was assigned to act, and come back when the item returns. A speech starts a conversation; the follow-up keeps the request alive.",
+      "bounds": {
+        "x": 8,
+        "y": 866.71875,
+        "width": 752,
+        "height": 74.390625,
+        "top": 866.71875,
+        "right": 760,
+        "bottom": 941.109375,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 7,
+      "tag": "p",
+      "width": 768,
+      "text": "If you can’t get to the room, ask the clerk how to submit written comments or participate remotely. You can help research the proposal, call an office, recruit support, or arrange transport and childcare for someone who can attend. Organizing needs more than whoever holds the microphone.",
+      "bounds": {
+        "x": 8,
+        "y": 925.109375,
+        "width": 752,
+        "height": 74.390625,
+        "top": 925.109375,
+        "right": 760,
+        "bottom": 999.5,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 8,
+      "tag": "p",
+      "width": 768,
+      "text": "Tucson shows what a public decision can change, and where its reach ends. On August 6, 2025, its mayor and council ended negotiations over Project Blue’s proposed city annexation and development agreement. They canceled the annexation hearing and removed the agreement from the next agenda. City of Tucson, adopted motions",
+      "bounds": {
+        "x": 8,
+        "y": 450.5,
+        "width": 752,
+        "height": 99.1875,
+        "top": 450.5,
+        "right": 760,
+        "bottom": 549.6875,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 9,
+      "tag": "p",
+      "width": 768,
+      "text": "The project continued outside city limits. Pima County documented activity at its construction site in May 2026. Residents could influence the council’s decision; they couldn’t settle every decision governing the project. That means finding the next authority and keeping at it. Pima County, construction update",
+      "bounds": {
+        "x": 8,
+        "y": 565.6875,
+        "width": 752,
+        "height": 74.390625,
+        "top": 565.6875,
+        "right": 760,
+        "bottom": 640.078125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 10,
+      "tag": "p",
+      "width": 768,
+      "text": "Rung 5 gives the other half of the work: people organizing to own infrastructure and extend a service. You can press a council to refuse a deal or organize a cooperative to build something worth having. Both require people to make decisions together.",
+      "bounds": {
+        "x": 8,
+        "y": 656.078125,
+        "width": 752,
+        "height": 74.390625,
+        "top": 656.078125,
+        "right": 760,
+        "bottom": 730.46875,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 11,
+      "tag": "p",
+      "width": 768,
+      "text": "Frederick Douglass put the demand plainly in 1857: “Power concedes nothing without a demand. It never did and it never will.” Douglass, speech excerpt",
+      "bounds": {
+        "x": 8,
+        "y": 746.46875,
+        "width": 752,
+        "height": 49.59375,
+        "top": 746.46875,
+        "right": 760,
+        "bottom": 796.0625,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "27-chapter19.md",
+      "block": 12,
+      "tag": "p",
+      "width": 768,
+      "text": "Make one. Then follow it through.",
+      "bounds": {
+        "x": 8,
+        "y": 812.0625,
+        "width": 752,
+        "height": 24.796875,
+        "top": 812.0625,
+        "right": 760,
+        "bottom": 836.859375,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 768,
+      "text": "A future called solarpunk",
+      "bounds": {
+        "x": 8,
+        "y": 486.8125,
+        "width": 752,
+        "height": 25.984375,
+        "top": 486.8125,
+        "right": 760,
+        "bottom": 512.796875,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 2,
+      "tag": "p",
+      "width": 768,
+      "text": "One name for a future like that is solarpunk.",
+      "bounds": {
+        "x": 8,
+        "y": 530.046875,
+        "width": 752,
+        "height": 24.796875,
+        "top": 530.046875,
+        "right": 760,
+        "bottom": 554.84375,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 3,
+      "tag": "p",
+      "width": 768,
+      "text": "On April 30, 2008, a blogger writing as John-Robert proposed the word for a literary genre, taking inspiration from a cargo ship using wind to supplement its engines. He imagined modern technology combined with older tools in an economy powered by renewables. John-Robert, From Steampunk to Solarpunk",
+      "bounds": {
+        "x": 8,
+        "y": 570.84375,
+        "width": 752,
+        "height": 99.1875,
+        "top": 570.84375,
+        "right": 760,
+        "bottom": 670.03125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 4,
+      "tag": "p",
+      "width": 768,
+      "text": "For this book, the useful idea is a future where renewable energy, repairable tools, and shared decisions make daily life more secure. Solar points toward the sun and the living world every machine depends on. Punk asks whose hands the tools are in. A working greenhouse, a shared workshop, and a funded meal route give that picture substance.",
+      "bounds": {
+        "x": 8,
+        "y": 686.03125,
+        "width": 752,
+        "height": 99.1875,
+        "top": 686.03125,
+        "right": 760,
+        "bottom": 785.21875,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 5,
+      "tag": "p",
+      "width": 768,
+      "text": "In her 2014 National Book Foundation speech, Ursula K. Le Guin argued that writers can help people imagine alternatives to the way they live, and that arrangements of human power can be changed. Le Guin, National Book Foundation Medal speech",
+      "bounds": {
+        "x": 8,
+        "y": 801.21875,
+        "width": 752,
+        "height": 74.390625,
+        "top": 801.21875,
+        "right": 760,
+        "bottom": 875.609375,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 6,
+      "tag": "p",
+      "width": 768,
+      "text": "The picture is an invitation to work. Soil still needs tending. Somebody still has to fix the controller and deliver the meal. Hope gets useful when we give it a job.",
+      "bounds": {
+        "x": 8,
+        "y": 891.609375,
+        "width": 752,
+        "height": 49.59375,
+        "top": 891.609375,
+        "right": 760,
+        "bottom": 941.203125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "21-conclusion.md",
+      "block": 7,
+      "tag": "p",
+      "width": 768,
+      "text": "Stop waiting. Show up. Start building. And when you’ve found your footing, turn around and help everyone you can reach find theirs.",
+      "bounds": {
+        "x": 8,
+        "y": 474.984375,
+        "width": 752,
+        "height": 49.59375,
+        "top": 474.984375,
+        "right": 760,
+        "bottom": 524.578125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 1,
+      "tag": "h2",
+      "width": 768,
+      "text": "Ownership, participation, and solarpunk",
+      "bounds": {
+        "x": 8,
+        "y": 487.359375,
+        "width": 752,
+        "height": 25.984375,
+        "top": 487.359375,
+        "right": 760,
+        "bottom": 513.34375,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 768,
+      "text": "Norbert Wiener: Letter to Walter Reuther, 13 August 1949, online transcript. Records his refused industrial consultancy and proposal for organized labor to participate in machine production and direct profits toward labor’s benefit. The archival original was not inspected; the letter does not establish implementation or success.",
+      "bounds": {
+        "x": 48,
+        "y": 530.59375,
+        "width": 712,
+        "height": 99.1875,
+        "top": 530.59375,
+        "right": 760,
+        "bottom": 629.78125,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 768,
+      "text": "Elinor Ostrom: Royal Swedish Academy of Sciences, 2009 economics prize press release, 12 October 2009. Summarizes evidence of shared natural-resource governance, including decision-making and enforcement. These cases inform the book’s questions about shared machines; they do not establish the success of neighborhood AI services or guarantee fairness through local ownership.",
+      "bounds": {
+        "x": 48,
+        "y": 629.78125,
+        "width": 712,
+        "height": 99.1875,
+        "top": 629.78125,
+        "right": 760,
+        "bottom": 728.96875,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 768,
+      "text": "City of Tucson: Motions Adopted Under August 6, 2025, Study Session Item 8: Project Blue. Adopted motions ending negotiations over the proposed city annexation and development agreement and canceling the scheduled hearing. This records the city’s action, not a prohibition on development in unincorporated Pima County.",
+      "bounds": {
+        "x": 48,
+        "y": 728.96875,
+        "width": 712,
+        "height": 99.1875,
+        "top": 728.96875,
+        "right": 760,
+        "bottom": 828.15625,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 768,
+      "text": "Pima County Administrator: Response from Project Blue Contractor Regarding Notice of Violation for Fugitive Dust, 22 May 2026. County memorandum and attached records document construction-site activity in May. They establish that the project continued after Tucson’s decision, not that construction was complete.",
+      "bounds": {
+        "x": 48,
+        "y": 828.15625,
+        "width": 712,
+        "height": 99.1875,
+        "top": 828.15625,
+        "right": 760,
+        "bottom": 927.34375,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 768,
+      "text": "Frederick Douglass: 1857 speech excerpt, reproduced in the American Bar Association and Law Library of Congress Law Day 2020 program booklet, printed page 18. Institutional reproduction of the passage on struggle and demands. The original argument concerns emancipation; its use here is an analogy about collective action, not a guarantee that every demand succeeds.",
+      "bounds": {
+        "x": 48,
+        "y": 900.34375,
+        "width": 712,
+        "height": 99.1875,
+        "top": 900.34375,
+        "right": 760,
+        "bottom": 999.53125,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 768,
+      "text": "Solarpunk: John-Robert, From Steampunk to Solarpunk, 30 April 2008, original blog post. Proposes the term for a literary genre inspired by a wind-assisted cargo ship. The conclusion’s application to shared decisions, repair, and meal provision is this book’s interpretation.",
+      "bounds": {
+        "x": 48,
+        "y": 925.53125,
+        "width": 712,
+        "height": 74.390625,
+        "top": 925.53125,
+        "right": 760,
+        "bottom": 999.921875,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "file": "23-appendix-b.md",
+      "block": 2,
+      "tag": "li",
+      "width": 768,
+      "text": "Ursula K. Le Guin: National Book Foundation Medal acceptance speech, 19 November 2014, transcript on her website. Supports the attributed paraphrase about imagining alternatives and changing arrangements of human power. Her speech does not name solarpunk or endorse this book’s proposals.",
+      "bounds": {
+        "x": 48,
+        "y": 900.921875,
+        "width": 712,
+        "height": 99.1875,
+        "top": 900.921875,
+        "right": 760,
+        "bottom": 1000.109375,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "docs/v0.11.0/epub-proof/02-introduction-additions-390.png",
+      "sha256": "35bc21820ab245f91f0971bdbc8d5a3f078da94c226a3774e0b79a8a092ec781"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/08-chapter6-additions-390.png",
+      "sha256": "478c6fd4351805c9d63c5367414303b7578bfc726bc6f455e7da9ce29c5c609c"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/27-chapter19-additions-390.png",
+      "sha256": "86c7485098cfdfb1003d697b0a513f74fbc4d505ae4cb64d9b2e42ec0e7e6ee7"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/21-conclusion-additions-390.png",
+      "sha256": "2c1b3638486841ae1e8e0c3d01d79bca2d8c971642ade9df5cb922972984c739"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/23-appendix-b-additions-390.png",
+      "sha256": "2b441df8186aeec475f4fef44a67e05a92c546259c5fd177463c68e56b051917"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/02-introduction-additions-768.png",
+      "sha256": "18f9b40c9c0bef99afd730a4137b3cf32ea4dcc852d4229a5c576bef0242268c"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/08-chapter6-additions-768.png",
+      "sha256": "d0515b929f4eb0de0278c6e17d812211eb6833a9bd75743c0dd89fb3e30e1596"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/27-chapter19-additions-768.png",
+      "sha256": "e5c3dc8ec4dc1f5eb8407ad25eb9c6e286d4237b3c434e988070b4e02c0eccfa"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/21-conclusion-additions-768.png",
+      "sha256": "b243794042e882427f0f5dc37d0b238d34f6ce8f4ea0daecc67f25cb10d72076"
+    },
+    {
+      "path": "docs/v0.11.0/epub-proof/23-appendix-b-additions-768.png",
+      "sha256": "7de25d9727f459c103da4e65915f36eb0ae51e06590392f3509d09b5c1c300c7"
+    }
+  ],
+  "missing_requests": [],
+  "negative_controls": [
+    "real new EPUB paragraph replaced, rejected, then restored"
+  ],
+  "limits": "Packaged XHTML/CSS in Chrome with JavaScript disabled. Every addition is checked for actual text and bounds; dedicated-reader pagination and physical devices remain untested.",
+  "browser": "150.0.7871.125",
+  "status": "pass"
+}

@@ -1,0 +1,20 @@
+{
+  "base": "http://127.0.0.1:5190",
+  "viewport": [
+    390,
+    844
+  ],
+  "reduced_motion": true,
+  "scroll_calls": [
+    {
+      "top": 67852.2375,
+      "behavior": "auto"
+    }
+  ],
+  "divider": {
+    "images": 1,
+    "text": "Part I: What is the Singularity?\n\nThis part maps the horizon: what the 2017 architecture shift actually did, the nine stages, and the physics that meters all of it. The first stages are already on your desk. The last ones are speculation, and the book will tell you when it crosses that line. Keep dinner in view the whole way up.\n",
+    "overflow": false
+  },
+  "close_restores_trigger": true
+}

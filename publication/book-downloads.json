@@ -1,0 +1,1965 @@
+{
+  "schema": 1,
+  "version": "0.11.0",
+  "source_manifest_release_independent": true,
+  "source_sha256": {
+    "book.json": "e18797ed8de55b404d932f02008cdcecf83ad3d958927af552341f888402f3e8",
+    "02-introduction.md": "1db5576c0b9cbbcc04633ef96ed1d3ec4e5502f4cfd995ccf90fd57fc56f76b2",
+    "01-preface.md": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+    "31-how-to-use.md": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+    "00-chapter0.md": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+    "part1-divider.md": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+    "03-chapter1.md": "9916db2c37a5a665fe82ca051a7992b44e9f2d40fb35b922c5a682ccaa125d4a",
+    "04-chapter2.md": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+    "05-chapter3.md": "4bdc3e8c7f7e75dca3f40366d870d8bed618d612bf6ba146fe161643a296d304",
+    "06-chapter4.md": "effaaa6d8af9e47826ec930e4f4edc7dbd41da10ae12a78c5c6eff38a35da979",
+    "07-chapter5.md": "77a81d1b8c6c9d2e57ccff4ca80e0c88799ed06ea10f39c061f8006f9a268186",
+    "part2-divider.md": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a",
+    "08-chapter6.md": "5d0b77634ff13b3600864acc9875b383c5d27da5c83106d31cbc01a2eaf0fe71",
+    "09-chapter7.md": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+    "10-chapter8.md": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+    "11-chapter9.md": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+    "part3-divider.md": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e",
+    "12-chapter10.md": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+    "13-chapter11.md": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+    "14-chapter12.md": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+    "15-chapter13.md": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+    "16-chapter14.md": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+    "17-chapter15.md": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+    "18-chapter16.md": "3b57218536ba9143187ae52131c4b96e00941d368e0c15b2abe953df0d974788",
+    "19-chapter17.md": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+    "20-chapter18.md": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+    "27-chapter19.md": "807e13306e7962a8efe20ea2686f27c7670aa1b0adbbc9e2026b11c6f4523bca",
+    "21-conclusion.md": "a94ecf4a59a310438beab7376828829ca3be9d514a75240588d01cef49a7498e",
+    "22-appendix-a.md": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+    "23-appendix-b.md": "019a664a731f9cd7cd8d74cb848fbca21f64806d35fa68c64dc2ac58a070e704",
+    "24-appendix-c.md": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+    "25-appendix-d.md": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069",
+    "26-appendix-e.md": "fe4d080c0c9a62e99d81a1aa975b56afefa619057219bbd980855b460be53793",
+    "28-appendix-f.md": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4",
+    "29-appendix-g.md": "d67719a313518aa6fd41a7cb1464c9dd8dcd236ab14a3a35ad7e214cd460f63a",
+    "30-appendix-h.md": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44"
+  },
+  "input_sha256": {
+    "publication/assets/cover-art.svg": "7b51487844465d32fce3ad8be969ea6f2338afc7777a5db899f7bd2001edf225",
+    "publication/assets/fonts/FONT-COPYRIGHTS.txt": "04757dd39485e6b1d823e2ab811f69dcff542bbab386873546917b23bfc1d99c",
+    "publication/assets/fonts/JetBrainsMono-Bold.ttf": "5590990c82e097397517f275f430af4546e1c45cff408bde4255dad142479dcb",
+    "publication/assets/fonts/JetBrainsMono-OFL.txt": "30f0c136e3c88e422d0791acd97238870f9054a9729bc34cf2ff0d4ed8cac4ad",
+    "publication/assets/fonts/JetBrainsMono-Regular.ttf": "a0bf60ef0f83c5ed4d7a75d45838548b1f6873372dfac88f71804491898d138f",
+    "publication/assets/fonts/JetBrainsMono-SemiBold.ttf": "1b3bfa1ed5665a4ce3f9feb68d2d4e40e70bf8b4b7d9a3edd418f321b4e166a0",
+    "publication/assets/fonts/SOURCES.md": "b33e5d1724b724ca29edae6ff69622206d1445f9f7611157536e09a5a7f5f0d6",
+    "publication/assets/fonts/SourceSansPro-LICENSE.txt": "4a4a4179a96b5ef6786186d199f0d049b151352f460b8d2f3c00083792f37dd9",
+    "publication/assets/fonts/SourceSansPro-Regular.otf": "7134d229b15cdd0827376d8a24f6f531f616eb1b3fecd16e1cf8a86d0bf6bc51",
+    "publication/assets/fonts/SourceSansPro-RegularIt.otf": "d38e0d70cd4f4aa072457c5ae647b987f10c3cea34bff581ee358a7c2a526053",
+    "publication/assets/fonts/SourceSansPro-Semibold.otf": "aa53ed4fc17334a0c2ee8412c1e4e728bfb732a96b119164f7354343dad8f2f2",
+    "publication/assets/fonts/SourceSansPro-SemiboldIt.otf": "cdeddc767fdb11770451c5fac8f98b7d343b7fc9604f9db5034f50f7f437047a",
+    "publication/assets/fonts/SourceSerif4-It.otf": "f8062257f4693e438a8e317c9fe2b4393f0d4eed84d897edcbfd733c30a1c1a1",
+    "publication/assets/fonts/SourceSerif4-LICENSE.md": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464",
+    "publication/assets/fonts/SourceSerif4-Regular.otf": "edf160d0d584deee8a3bb2c3371b2a7624ca63580fbe02c57c1f4c91e84d8787",
+    "publication/assets/fonts/SourceSerif4-Semibold.otf": "25e034392847d9965c92f98971b3646436b7ab919ece9118b0c0e5ec94c02efc",
+    "publication/assets/fonts/font-provenance.json": "6a684f82afbb25ed205cbaf8e8c54b111b5c0f68a51e81716ffbf35fe48964b4",
+    "publication/assets/motifs/01-grain-and-gripper.svg": "4e6b2656faa759bba9cf5c6811bbf92b654233adab60fbad7468565494e17c31",
+    "publication/assets/motifs/02-event-horizon.svg": "4c5d1c8c960ba4dccf7e451abd58d87b3eae49fa442acda5ee3156fd83764d01",
+    "publication/assets/motifs/03-centrifugal-governor.svg": "3b88abfb603452a697159d0e55ddbc6bcb9f833b05e8ce0434e6d924fa0b170e",
+    "publication/assets/motifs/04-seed-and-root.svg": "5f6945a19a3e2c782e453bf2d915925611183d514f69734fc15e1ce1940bf2cd",
+    "publication/assets/motifs/05-roof-and-joint.svg": "08b28f4b8870418e189744cb4294899d735233ca608c17b8817285dbd2209bd2",
+    "publication/assets/motifs/06-shared-table.svg": "477dd95430e27938c6679c969f5d26d322e867d6229d651a48ea5bcdc312f6a4",
+    "publication/assets/motifs/07-pamphlet-and-thread.svg": "092df19fb5c61d03c389ef93335ee0d7b6a91a758c26d37d80eeb3bce61fdd32",
+    "publication/assets/motifs/08-water-pump.svg": "ecd4c88dab66ddb50e3efdf544f6631ff5af9fb43c586ed879a76c89c13c0041",
+    "publication/assets/motifs/09-repair-tools.svg": "3a59a9d6c0e5de162a7ab9d6b1136b484e90fe1de650ca1673e010b7c659ba66",
+    "publication/assets/motifs/10-open-gate.svg": "1fb6341a7c6bcbd7543abca8b50ae10e810ec5b0a5f9e0424448026b208188a5",
+    "publication/assets/motifs/11-soil-profile.svg": "19b25925267bbf3494d53bbd9d29200018d816bfa3c0b05a317a4aab82f41e60",
+    "publication/assets/motifs/12-continuity-route.svg": "9995164fbbff0139a7d39d0df6c7c46b33b8b10888cd1663b66b5da62fba7b64",
+    "publication/assets/motifs/contact-sheet.html": "71ddb98259257a69f939be700432716675a5c5fdaf79dc88c3e4d2a2a24082ff",
+    "publication/assets/motifs/contact-sheet.png": "d083e03f124fd6865bc64a749000625800d95f7350fa51840ffe1460597fea2d",
+    "publication/assets/motifs/cover-harvest-proof.png": "a5f436d054b5c4eedd114fad65b18420f169d914b2fafad1762d9e178f8a1f1d",
+    "publication/assets/motifs/cover-harvest.svg": "919cb6e4507f82a493da61ad80d6e3e95099b6d592df0eac40f0caf11512de01",
+    "publication/assets/motifs/cover-print-proof.html": "c4237b04dad824d11588502f5bb603393f5f150e7eb6ef1bff5a9fa5f0ae445a",
+    "publication/assets/motifs/cover-print-proof.pdf": "4a27a74d12a847e887346e06ea52025155351b2dc203e3b2023f200bdc5f72a1",
+    "publication/assets/motifs/cover-print-proof.png": "f400840fddb2a96f996e693f537893e924e1cd863b906b6653cf14f8c24240b9",
+    "publication/assets/motifs/cover-proof-results.json": "3b18fa46d4c77d7a7e3375fcd762b54d302cfa13cacf39650e20f95cdf5b0e0e",
+    "publication/assets/motifs/generate_cover.py": "4a6dcf2a2d8b5ba566af2dfc617d5b09312354c0b402d0d7a1eb6cd362b1c618",
+    "publication/assets/motifs/generate_motifs.py": "0df5b738b60a8313d053d9796d6bfd92838447b01bc5551a138380dbf5af5fa3",
+    "publication/assets/motifs/manifest.json": "29e996b3619ae6ba20fa5f3188efe50f5bdc436b09ef736736b9d911c79e9afe",
+    "publication/assets/motifs/monochrome/01-grain-and-gripper.svg": "efc200604c1236305d8d6bdbbd62f19e7cee3d5f0541404809da48a8380b3379",
+    "publication/assets/motifs/monochrome/02-event-horizon.svg": "1afca9e9fec162c700aac721c2cf01addc1cdc6d41d886bb4e1ab11f2cda3186",
+    "publication/assets/motifs/monochrome/03-centrifugal-governor.svg": "c5e48ea510e479149842d0e122affa156333e0e508542175045b18ab322003eb",
+    "publication/assets/motifs/monochrome/04-seed-and-root.svg": "9a9407b0d663b3d90b3fcc62e989db7b3570ce24ed8c6229d2710a81bb961aba",
+    "publication/assets/motifs/monochrome/05-roof-and-joint.svg": "d0e12c4ef5e39759af890b134c7c1046ef5d1f1272fd9bf046db01b084b18cfe",
+    "publication/assets/motifs/monochrome/06-shared-table.svg": "5a3fdb7c610412d316c528a35f0a14ba7035b1600c1dcccb6633e190f71810b0",
+    "publication/assets/motifs/monochrome/07-pamphlet-and-thread.svg": "35179092d6ed399b5087ca6f2738c7fd6410dafd713c3878ca5a58f1a8aa87c9",
+    "publication/assets/motifs/monochrome/08-water-pump.svg": "b28ec97b76ed293580f948362ca69821d2122e926c8dd7991ab6b4b9ccda2676",
+    "publication/assets/motifs/monochrome/09-repair-tools.svg": "f7e28a5fbdc0bc85921d63f9a2192f462b6ab0d3a411c79f7bdd7720f17df34f",
+    "publication/assets/motifs/monochrome/10-open-gate.svg": "559cec6bc204236079c49a438e0c2a18e9efacf65ae45087d41d479b739c7ff6",
+    "publication/assets/motifs/monochrome/11-soil-profile.svg": "421d5599fb001ff27a1620cf4432e88321e6c147434f0fd8f2b00d26c17e48b8",
+    "publication/assets/motifs/monochrome/12-continuity-route.svg": "f4487123d31849e9eae8dc9c52e6896c197ed4512a8e5a814d5a75d85e39ea27",
+    "publication/assets/motifs/monochrome/cover-harvest.svg": "3d3762987b3e7fc13a86aeb0b8667b677c39eb6a48e68f24660da52f707af06b",
+    "publication/assets/motifs/print-size-proof.html": "0cf4b6b203a5ff7a1cdf5c9b8f43e3bf3109e466317ce10a06ecb8f4f6090839",
+    "publication/assets/motifs/print-size-proof.pdf": "375d11586e529d6fa598075246e534d5adbb47101364361efe8be0d5d09b1cab",
+    "publication/assets/motifs/print-size-proof.png": "470dae9068080e02cba47a8459989d47f3f8b1c41c7f857077d34977923c16e4",
+    "publication/assets/motifs/proof-results.json": "78a9050643c335c57611fc5c39fbb9fac33bef81eabb91f055d25513a213cf77",
+    "publication/assets/motifs/proof_cover.py": "9c0084df210c0014d03ae1f16298d2a05cb81f6b132e100ed159ac1a217e30fb",
+    "publication/assets/motifs/proof_motifs.py": "764b00ed23959c6b483f33e03130c071568b91ba439b630e327f81266227a80a",
+    "publication/assets/ornament.svg": "0e2d2c9ea8307c03ddfe57449eec2843dabb36e5df92e50b9e6e0e14758fa102",
+    "publication/book.css": "16fb10f00921fe24a48674b688b24a851eda3322b92608cd243863fdd2e2425a",
+    "scripts/book-cover.png": "c0174f87422e1047f00df9221480fb21d53aaa1e8aaf33f4cc38a3d2533ccc32",
+    "scripts/epub.css": "6f53a54e1940e506720f066dd8fedb9b3b15eea3633b077d101c001919385f20",
+    "src/lib/data/book/visuals.json": "7a784f044b0c3ba0cb526e1e362d8f08b42fb70dd52fa59ffd0de3e25e0f1c99",
+    "static/book-images/appd-precedent-timeline.svg": "a4971c6a5023232f79c57b9019f759b828a6b7f322743a8ffb0406ee99a178fd",
+    "static/book-images/appe-cyberdeck.png": "61cb5f9031909e2cbec047740f95ab964a6de5ffb95531a4d62ee546ffeafd30",
+    "static/book-images/ch00-madrone-bark.jpg": "73f29adb2dd4e27f79f85cabbd3e5b3b4f153318fc05a91d128ebd29e3f2221d",
+    "static/book-images/ch01-atlas.jpg": "4bd77247b1a37d537c3036f0a2f821536e97186176661deecc296e45b377b0a9",
+    "static/book-images/ch01-devendra.png": "497eded04d8082e952f8ccea9f343cfa0ba56410e5375ebc4115df673e72dbbc",
+    "static/book-images/ch01-m87-black-hole.jpg": "9479a85c6c9eb90d634c7b6703da98faa4e2cf10f4122491b503cade902e6f28",
+    "static/book-images/ch01-pc-rig.png": "8d4e4e29087770f5d6386d979acb604cdc1486d304939456ddae0b8b99564fbf",
+    "static/book-images/ch02-eighteen-days.svg": "a579b02ab771c23f6b9e41199742efd262c6843e9e4ace1c3f48784d99943235",
+    "static/book-images/ch02-factory-robots.jpg": "10c765307473a80b4069a557c10805baeacf69119d43035f6d7408e4f1ed411f",
+    "static/book-images/ch03-falcon-heavy.jpg": "987e7f4547eefef240d8605533a9cc48fe129997a71d9d916e3c34042683a7c6",
+    "static/book-images/ch04-hubble-deep-field.jpg": "c66c7f08bff2dc7cb3aa6afc1699e9dd9bb667e33549d1e0798dd27ee8c32368",
+    "static/book-images/ch05-horses-tractors.svg": "3c719bd272eed866a71e4b278bf86f93c5ef326b343d3cfd517c0576b2ffbe4c",
+    "static/book-images/ch05-sdo-sun.jpg": "bdad996f80c2c00a49c312cb2cd23697df8fe4434ae577af2a5e394dd2e91b17",
+    "static/book-images/ch05-woodstove.png": "81f56267c3e88bb783264b8574ca112bc47aa395d51e0c98c2af0686cbb3eed4",
+    "static/book-images/ch06-capability-access.svg": "0d129784e51e948b36caca6ad34166a1025cc884d76948015af0dee123607a67",
+    "static/book-images/ch06-tool-wall.png": "572d7f0b04831b32db85f21b37a0abe34ab126ac3a11200800b00acfe4ecfb7f",
+    "static/book-images/ch07-canned-music-1929.jpg": "b544246887a4b0941b9b41b666ffe2129de2898e6f321ccbfdcbf0c44ee29c6e",
+    "static/book-images/ch07-canned-music-1930.jpg": "fba6e123f05f17e6bdb902d48889dcdb367032d6f5ed5edf4d997446a74379c3",
+    "static/book-images/ch07-chess-battle-lines.jpg": "e84aff20e5cc908e598b638dc69f43739a9daa6b49a44a41cc99743c6a5ca402",
+    "static/book-images/ch08-cognitive-extraction.svg": "406ffee7ab39d2ba53775aa940e19ac9325eeb4b9948b4ab2945c744e66dc0c9",
+    "static/book-images/ch08-firewall-pipeline.svg": "2412069c23abcea5f167f638a6a4c0698dfeb62d603effe2e2e51dd443459c6c",
+    "static/book-images/ch08-focus-recovery.svg": "4a19df52fea817bf1e2f5935495df746b69866cc03b1785e5a3b733df48efd6f",
+    "static/book-images/ch08-gary.png": "44ed957be971436c3da05d73eec51a9cb9c4351f8b1108092e3af54d9c1f6684",
+    "static/book-images/ch08-info-architectures.svg": "3f51494b754bdf9fac490df82780d81c89a0e1743db0783900ae26a268c4b4f3",
+    "static/book-images/ch08-sophia.jpg": "5e5c0c4ac1017cb5006af8b00018a84ce318f905ba0bd3320a39919f19465651",
+    "static/book-images/ch08-star-vs-mesh.svg": "5d7d482a3ab6d1d9e3feea37c9b312898390d6823cee12f9f7c2ec602bef9d6b",
+    "static/book-images/ch09-3d-printer.jpg": "bcb75cd2d4be36d180c81a5ec4675ebccccb90c1352daf745bee6cda0ebb590d",
+    "static/book-images/ch09-cnc-bed.svg": "ab194625806be4608a6abf0ec47a15ece4123cdc35a8ee4f8ddc92482935583c",
+    "static/book-images/ch09-controller.png": "a59200030013d620da77757a5219c2104bce9da1a6abc0439b79d89c393355cd",
+    "static/book-images/ch09-greenhouse-bus.svg": "25403083a4e785503e32b61352819f19d8945e0a79df12d358243b77b1edc702",
+    "static/book-images/ch09-hyperlocal-vs-global.svg": "6e7bb65874c9c6d0bf384666f67e595e66e5c85b496794f2433bcc4cd0d1a16c",
+    "static/book-images/ch09-region-ring.svg": "e3553bf80c03b543e28af0e681d61caf14e94b5585d4600215c27707684e385f",
+    "static/book-images/ch09-reuben.png": "ea6519faef49fa98e8099983976dfa8bd37d77e900c91238d2d319f86528b38b",
+    "static/book-images/ch10-algorithm-unlock.svg": "254420c3f821561d4dcc95e59d6e8399750aebf56593f64b88a9346754532fa8",
+    "static/book-images/ch10-model-collapse.svg": "9ac0595a04f0aa1de23887c7a667db0b4c8c51994508c7674456f6e34d11eaf0",
+    "static/book-images/ch11-cooling-loop.svg": "3bc548544d2b9fa6dc3048206eb26906741bcff2f526704e9659e30047355109",
+    "static/book-images/ch11-crucible.png": "cf0ae6e415947d30254b0accedda9fc47a9a8ddd4fa1b8fd6d6a1007acf1714c",
+    "static/book-images/ch11-spot.jpg": "7a91f3b7e54256bb55dd877b640e708013126903d3159523eb3f743b3dfb3ebb",
+    "static/book-images/ch12-csa-network.svg": "4c1a7206003e0defb43c6bc67158ed2dfc95ba1d9f366efc60b7eb3af18cab71",
+    "static/book-images/ch13-shell-architecture.svg": "75dc12e15311f34096f695dff52e670265b69af2cfdb55a4e22d7ea140ece51b",
+    "static/book-images/ch13-solar-barn.jpg": "46f2e5359770789dac4ce1e15551cbd881e8350dffd930e2bda5ecdb3e72a416",
+    "static/book-images/ch13-thermal-seal.svg": "26166b01513c2c343469307a356fcb13105638c8ce5abb6fa8fdd303582041ac",
+    "static/book-images/ch13-vise.png": "66523bd7955693fd7c2b96a897a765d16feca1cc44d65070683571f2ddfc3dbe",
+    "static/book-images/ch14-bell.png": "d10ea5bd65e0a5b0a9f9e9ac3d74789032a87d36f7ee4c0f2d92174f621eee32",
+    "static/book-images/ch14-dead-mall.jpg": "3c0060868c7083c58c5c9b4b3f4e3bee1fafa66d7f54b292eb33df4700b32c8b",
+    "static/book-images/ch14-frank.png": "3b05b80f745ee3d404006a055cf2648e09619e96af6e4b10dbc9c52dae75d954",
+    "static/book-images/ch14-logistic-shockwave.svg": "41477ea9a22ad6b44742713cd66a767dcd31cde0bccac7ef2ee27432ad6d241a",
+    "static/book-images/ch14-mesh-comms.svg": "91da4dd1212653776bb0092974bbfdf6495c0e108377f8880a50ed791e3ec44a",
+    "static/book-images/ch15-clt-firewall.svg": "8553e9f10e08ad70b2c0bc12b624247d237f57b6c6da633652d0e11e0a87d60a",
+    "static/book-images/ch15-probe.png": "7dda32a7598ee12541dff75aca9f8e668d1074ccb999d50cb175201aac789092",
+    "static/book-images/ch15-soil-food-web.svg": "d0d4f8e7e153122e6c8ba513e1eb216d1ad6bf2c0ecdf9b83aef6ce57dcb7f52",
+    "static/book-images/ch16-servers.jpg": "fcb35fb42bae4aa0e9836102ca71ccdfe8029e2f8a11b968e9d4fc11e0e75725",
+    "static/book-images/ch16-sneakernet.svg": "4587c0b99cd6cfb02143c1fdd10859c9fad1d26353dd65e2de1e7eba79b51321",
+    "static/book-images/ch17-algae-loop.svg": "e3090f6eeaff9fb0bbc86863f32e36d7aaef5f9a9a372540b8698a6ff5bb9392",
+    "static/book-images/ch17-dc-native.svg": "2f57027bcfc3cd411ba3e5bb6668f6deecb516b006838814e33268d66944642e",
+    "static/book-images/ch17-fab-lab.svg": "012b07d9a089df3c84f81774a465f354be481d7c7745e014e6e2aa4d91bab864",
+    "static/book-images/ch17-field-kit.png": "cf4263599c1d3b4a860cbd98d00c9609a01ddbda93eb6225cd493496d39bd570",
+    "static/book-images/ch17-lora-node.svg": "bd70722bddd9f5ef968a272d7791475ade1418a9eeacf3a7b0649f242832935d",
+    "static/book-images/ch17-photobioreactor.png": "041638dc5da1296880db162f47fd620964ad76b33dca6e8cc77379578f3ab8cf",
+    "static/book-images/ch17-workbench.jpg": "f34ce3b6abec77123bb056184d6bad2ac529f4a314f5d6eb2be55b15683febcd",
+    "static/book-images/ch18-compass-map.jpg": "697628618df180f891fe5922884fae79ebe9de500a717fe96aaa2bfa479c47ec",
+    "static/book-images/ch18-social-contract.svg": "05b979825da7006b65f68bea62a33f5806acf94eed751de487d3e83dbf92dc89",
+    "static/book-images/ch19-conversion-ladder.svg": "764918df8775bf7745e26c53db4145633fe974af6c9d4f768db9694ef291113c",
+    "static/book-images/ch19-iss-sunrise.jpg": "e4c0262c2f3cd6e95a69b878a3e0b1293c2a718ba883dce89863e42d3ec4aa52",
+    "static/book-images/conclusion-proofs.png": "c19346d7a53d20f58a8483f442fc1f5c1f14a51594bb7536830fae8528e1086c",
+    "static/book-images/coop-cast.svg": "ebf1693b40674a670ab06e3772ec84de96cbfc0e03ac9d61b70bc7f6f402b68d",
+    "static/book-images/intro-asimo.jpg": "95f4c12e663734e49a9afac739c054e591a6c537ab2c513c3beee73789fe5260",
+    "static/book-images/intro-food-insecurity.svg": "24cfe5c46899ed2a9509f6deb267fa54c5e9593a524a1f326a1c68dd7ea272b6",
+    "static/book-images/intro-nine-stages.svg": "431a84e360f009fd99134877c7281c012f0cb2d83d7a22c60634603830a92655",
+    "static/book-images/intro-ox-plow.png": "8fed75cf7f2185e0a41e38649a27e8244ebc284dcb3e4ddd0b1dfdfb4748f489",
+    "static/book-images/intro-robots.png": "fe8f77c76c88d854587ca29525afa41cf338acfe65c5c447ddf062e32625f6a5",
+    "static/book-images/original-04-seed-and-root.svg": "c1397545a7b8f6ed015cc8ce289a06b53e526799d517d164c477147305acb875",
+    "static/book-images/original-07-pamphlet-and-thread.svg": "aca87a52ba0cb81a6c2fff5909c151d076e5567a271244facfcad0b866292fbc",
+    "static/book-images/original-09-repair-tools.svg": "bb29b16942030a47e726d3dbb754ae8dbe3c748ddfb193338f73a3cb37744596",
+    "static/book-images/original-11-soil-profile.svg": "2275cc3278dcc718c7a7a2b4f833b98b47b10c95a5b90003d470e5356b15e083",
+    "static/book-images/part1-divider.png": "1d415c095230788879ce246146ee75b96240459efacdff87ebd18dd16aa1d809",
+    "static/book-images/part2-divider.png": "154ad8cd7d98574f3a11b29422e2972912345a3e0aa972ff9d6186d17c84a900",
+    "static/book-images/part3-divider.png": "2488a09215350edfb2ca254d2c61819d4420d19b32405d74d9270cc40c452a0b",
+    "static/book-images/preface-reading-rage.png": "24c252862f1e10d24e307eff8ddb869d3eabc66fcb366486c281dbf72a76a7de",
+    "static/book-images/print/appd-precedent-timeline.svg": "5e7f9129e015a0c7499820b00650b4517eaa39e1c3326dfc5de60de2123eeb53",
+    "static/book-images/print/ch02-eighteen-days.svg": "e197fe6b2a7b4a1bb622821c6a30118a072677ab80ffb8fe7c6cf7d438b5e281",
+    "static/book-images/print/ch05-horses-tractors.svg": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2",
+    "static/book-images/print/ch06-capability-access.svg": "835fbea5981ba3135ec49a81abd3cdbbff1d74fcc42905fb8b5ab545a8dec088",
+    "static/book-images/print/ch08-cognitive-extraction.svg": "07cdb4846e81f113aaebb116266cca41d68c5a5c1cb57dd7732e4a72452d1dd4",
+    "static/book-images/print/ch08-firewall-pipeline.svg": "bce21db24028e1bf29e75da76dde51da9c3cc393ccb7395350bcc6d1106f2ada",
+    "static/book-images/print/ch08-focus-recovery.svg": "626bb7d8fd6d6eaba363a40740bdbb08bf185490b359099ee4729da188a5a94c",
+    "static/book-images/print/ch08-info-architectures.svg": "b44e3a60851a59e55b59573c660ac023f2d3ef1057ddc09348b4ea0e0adf7d40",
+    "static/book-images/print/ch08-star-vs-mesh.svg": "dc6d72da19ccc7b894b26b05b650172c7c2f30f15664d0a58b0af99c31b6bd86",
+    "static/book-images/print/ch09-cnc-bed.svg": "6f00880b34f5f4a1fcbaded17b40c23169448315b20f12aeee1f7ea8428f9d20",
+    "static/book-images/print/ch09-greenhouse-bus.svg": "2896db1d01e32508eb6a91e3983c23d3a70ad5e113df3afbf4cc3c52c1370b9f",
+    "static/book-images/print/ch09-hyperlocal-vs-global.svg": "0ed2e8082eb76daa3e15c210893ef83809f5cf7fb7bcc607f21793c9c2de8ef8",
+    "static/book-images/print/ch09-region-ring.svg": "67081ce5c2201c79c1cea93518a482f896984277b32ff0d2e547189393cf9142",
+    "static/book-images/print/ch10-algorithm-unlock.svg": "e5844fbd5b9e20aee5ec4133abeda31db022b963d60797877dbe7ceca46d75b3",
+    "static/book-images/print/ch10-model-collapse.svg": "001c754a94d4f86c7c72f08869e052329ffcbb95913085dfaf1ba10349a24ff3",
+    "static/book-images/print/ch11-cooling-loop.svg": "1bb47ceaf9d82e54a9fa9209d66e1a0d7828ea2933cb712f96bee181d5a51347",
+    "static/book-images/print/ch12-csa-network.svg": "cc655f7b1b167ffb9ffd9f12c690d8b60d10c11b1d9468aba031fcbf3798df85",
+    "static/book-images/print/ch13-shell-architecture.svg": "c793182a4a2721df0a34fd19d9c4d231cf56f1dd69188386ccca741545c0c86c",
+    "static/book-images/print/ch13-thermal-seal.svg": "751bcdb643a673571e4f588ab901b5d8d6ea94f1b7d8c8b3bbd8fe661305eea3",
+    "static/book-images/print/ch14-logistic-shockwave.svg": "2e12005987649d7a8921057bd4bf450fee4e9f7c2def655a6afe4ee0874d4e02",
+    "static/book-images/print/ch14-mesh-comms.svg": "d6e6d0e49979a75da4eb4dd118a59566ec1f5b1497b7c556fa79929039a9c971",
+    "static/book-images/print/ch15-clt-firewall.svg": "e634184bb1f3c7a4d29e998b88ccf6d7cebaff6032b36243beb0d0e319f7e114",
+    "static/book-images/print/ch15-soil-food-web.svg": "5df26993caa8b39275816ae6f4991324dc5a8543f468c1866fc4993409944866",
+    "static/book-images/print/ch16-sneakernet.svg": "3dc040580dd02172202a3cd5c80490fad8a21116f5d5b24fd0ceba29c804d412",
+    "static/book-images/print/ch17-algae-loop.svg": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78",
+    "static/book-images/print/ch17-dc-native.svg": "09c78b334b709458e53d9d959c65311d73c2525c0b6f7b21e8b1542cd1628078",
+    "static/book-images/print/ch17-fab-lab.svg": "ef3cceaff4775ce5f2263e012d8438ed1fe5baab4477a828b08a0d1e85f233e6",
+    "static/book-images/print/ch17-lora-node.svg": "58be532888edfa48a34306d2bc5912f4ca416a1e2f9ce295685b359344c86833",
+    "static/book-images/print/ch18-social-contract.svg": "718b74c05c0745ac8cf09dca92b1a5177b943bcb720e760b67de5f8ed4425e47",
+    "static/book-images/print/ch19-conversion-ladder.svg": "5abb544f56196e1d4fe62b95222f283d8b19a22f4f8ee98524048248dd4155bc",
+    "static/book-images/print/coop-cast.svg": "1f8b5874284680749ca45b89e517b01ce890b63497e83075828aaae5c98657bb",
+    "static/book-images/print/intro-food-insecurity.svg": "d9edaa0782d807968323c5b9c8bcab1d96485b0ec9e7989f0ef8302f77d6c610",
+    "static/book-images/print/intro-nine-stages.svg": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac",
+    "static/book-images/print/original-04-seed-and-root.svg": "c9a29aa4445931ed2cf73cf35a152407b961a27b10640fd0b618a7d2401f205f",
+    "static/book-images/print/original-07-pamphlet-and-thread.svg": "d233fbc705edb7f39db54f166d166fbb356f0ee6d1c4cb60326ccc0d4c65f390",
+    "static/book-images/print/original-09-repair-tools.svg": "b2cd6bb5fe1bd76189b506dc2f76f51afdbe7a2907e7f6ae9fb21cf983d5f047",
+    "static/book-images/print/original-11-soil-profile.svg": "48c19f48c34060b5cdf5287beafb0e010e87a3f288d5d47c18efa3c1b69d300b",
+    "static/book-images/print/v101-chart-ammonia-energy.svg": "db1df8587058e8c920cbac261a4b90fc4c37e024b4718ebe0c305f08ca2330a3",
+    "static/book-images/print/v101-chart-data-centre-demand.svg": "e20d70acdcd5d17d30326de2e539cb15401372a735c9947623500c7e3c5df62d",
+    "static/book-images/print/v101-chart-forecast-shift.svg": "f17a1b2b01cb8db0a3eeead18469935260664611ea67a801d2b5283dfd9135c9",
+    "static/book-images/print/v101-chart-income-food-access.svg": "8a39039eb3ee7f92fcce1f39cec0df834e6650c934aaa1df0bddfcf5114672a5",
+    "static/book-images/print/v101-chart-land-values.svg": "01b05854aa077ec44879e61bd3679943438c32bc08ce5eef6595236a9224a84a",
+    "static/book-images/print/v101-chart-meal-response.svg": "be07cd42e23cb52c03b4763ca937a7e3c71adb6da4598c6924f8a519e64c7817",
+    "static/book-images/print/v101-chart-waste-pathways.svg": "c191734a13ec7bbd1882a149bbd8a597a839e9cd22d7fef55c3e6ad0b4b1243d",
+    "static/book-images/print/v101-chart-weights-memory.svg": "2657bb2229747becb13bb2fa9ee96eee5581783b0335b0acfff488504d483a48",
+    "static/book-images/print/v101-scene-food-delivery.svg": "74b4eb3cd786b6a62fe86ed0eecc15fe01af4e2c2e5a54cdcd8a16ade94e982b",
+    "static/book-images/print/v101-scene-living-soil.svg": "17935101242fe9c5e0e3ccac30be276a50d85c5f558feb17c653d2eb6507ea73",
+    "static/book-images/print/v101-scene-shared-workshop.svg": "c9053537b3f90445a676f4874eb6a4b407988125cec33042b512e3d0634485bc",
+    "static/book-images/print/v101-visual-access-gate.svg": "474f9f53dde0488f204103cdadd2db2cf20f138956dc7dc784209387c04746af",
+    "static/book-images/print/v101-visual-attention-ribbon.svg": "1e121f8a08e43e0fae53aa6e5aa5fb5818a6a1ef484c121dc5a0246b930c5f53",
+    "static/book-images/print/v101-visual-continuity-calendar.svg": "889d7cef01b72959d2b791d82132aaae5d8204411d08b17d6367740da8d16631",
+    "static/book-images/print/v101-visual-local-copies.svg": "49822397475ec5150ff7ea65da3e484b222fb51874eddced7dfad9d3e56fa125",
+    "static/book-images/print/v101-visual-operating-stack.svg": "3be7eeea868005873ef12c3c7208c774ea6082a2662d5f9d30be2bdde7b0052e",
+    "static/book-images/print/v101-visual-shared-land.svg": "d1951a179314c8cf3b703979fdfc2160b3c4626dfd877895d245272ba628f8f5",
+    "static/book-images/print/v103-first-year-index.svg": "5fe1a8cbe71d9da92db743aa7ed623841181083764a3a708c842a1f2d76eafda",
+    "static/book-images/print/v103-offline-check.svg": "24a42ae5c92086ceee428ed0010fdab3b8260a11b56ec61d2d68f61808c78013",
+    "static/book-images/print/v103-reading-routes.svg": "291fb538492de62b95c5e9726101b78a0ae05cd7b19ce9e61aaaba121249d07c",
+    "static/book-images/print/v103-service-ledger.svg": "96e843f945b92c6c936eb729104a66143a5a4fac99b723096c4ae23f9ec0647e",
+    "static/book-images/v101-chart-ammonia-energy.svg": "1c76d0e955d926851e8e27e37cf332738ea7c36d75d51bd81cb33244d2eb47d4",
+    "static/book-images/v101-chart-data-centre-demand.svg": "31067186e55140fc31d9a5106e592675e7123332773ca92e2769430a9f5cd811",
+    "static/book-images/v101-chart-forecast-shift.svg": "f92083133d81252869467d0b84081a23242f5353b3854625e84c3c61440e4f49",
+    "static/book-images/v101-chart-income-food-access.svg": "a35750d78a8b4deae7770d0f364e7c39f3c074bdd2da197ca4f94264f8364cbd",
+    "static/book-images/v101-chart-land-values.svg": "901e3530df715f7fae44f2901175e1e98006853a45d55de947db425c11d4cf46",
+    "static/book-images/v101-chart-meal-response.svg": "79648863c02519be44c599b087233ff2b094015f2c8b576be8197995492c30f0",
+    "static/book-images/v101-chart-waste-pathways.svg": "0429307b4752a784c06a2a461b635073fc50ffe53f3563a44123ef87dcbcfdbc",
+    "static/book-images/v101-chart-weights-memory.svg": "61969acc27f2e6a94fa72d7c65a702e4b053e240cc9a8f02d876ff554147c656",
+    "static/book-images/v101-cutout-atlas.png": "a589cf1d182f5d955c13d8515a8f210a9ff514f81bcdecf49294bdc38132c2db",
+    "static/book-images/v101-cutout-printer.png": "156b2371385e2216897d8d057a32d45e3421cf0ef18376e45d630c371b4132bd",
+    "static/book-images/v101-cutout-rocket.png": "8d2763491b2f03d3839ad34d7458dc695e0d8b98f28d2a8502cff95c52219b02",
+    "static/book-images/v101-cutout-spot.png": "a607f5b8dbc43c4fcbd9bc96ed22bea10bdbbe3844b873513a43a147f7a1837a",
+    "static/book-images/v101-cutout-sun.png": "e28663cd57a7b72457810fff1bfe6c430582d7f3196b5eca97d6d07f6a5fe8a7",
+    "static/book-images/v101-cutout-tools.png": "b6eee075e0a4c62a86da11af653d7471204a5607078ec442e831026d6be7c543",
+    "static/book-images/v101-scene-food-delivery.svg": "a1f520312ee5ab384b8f6e1d7bf093e78327f89e1052fbd39f2fbf20c4dc140e",
+    "static/book-images/v101-scene-living-soil.svg": "d397231526eb9f4967a7660301ca71013709c083ce84588ec4c5bb8d164f9dd2",
+    "static/book-images/v101-scene-shared-workshop.svg": "3aa16701bd12e1d8bc8d1a53a63e58f549ff049eb7e9a7b88ecb83e3629cc876",
+    "static/book-images/v101-visual-access-gate.svg": "ee3976a62c414e32a169ed8ee4d143a5e3e9bf717ea741d2a386e8c7f66c0e35",
+    "static/book-images/v101-visual-attention-ribbon.svg": "fcdbdce808fcba2c3cb4a6d7cf6310e0f3803b614d4217fd18cc566e1cc73460",
+    "static/book-images/v101-visual-continuity-calendar.svg": "ba70e6c4b7611c260836c9483d3ff97efc7101500a1f1722d798d9277e93233b",
+    "static/book-images/v101-visual-local-copies.svg": "f59fe6f14b961eb1b7d4bb3ff16dd89c691ff95a7adb815823a3bc598a986bb8",
+    "static/book-images/v101-visual-operating-stack.svg": "37ed8cd8dd2f9b9a8a25165aaaa77fef160c1e9317ca21e08eda6dbc47dd7fe0",
+    "static/book-images/v101-visual-shared-land.svg": "54b2f62555b7a1e623c62233920849ed5fdb29d03fa114a0bcf033cc04d712c5",
+    "static/book-images/v103-first-year-index.svg": "6683749e7b0c735249f25b84e48b783a23b8c8495a57f007521f97d001eb8484",
+    "static/book-images/v103-narrative-bear-flag.png": "7aa5a7710cfefe8057c89ae992929d3dfe0c20ca8d14eebe3dd1c1dbc8acd767",
+    "static/book-images/v103-narrative-near-end.png": "1ce1c5b7c3c4b9b3248e544348db0c9ad233a0b9f29f0e01d6413bcb13d786bc",
+    "static/book-images/v103-narrative-passing-beans.png": "2565cbf444ee9bed4e7deb9a6d1c86c275924111a48b4f9e2f159f61dd1c70b4",
+    "static/book-images/v103-narrative-rosa-testimony.png": "6af939a98b2962d68210858e07aec6e575c036ef96421946dcb9a68f245c8d3e",
+    "static/book-images/v103-offline-check.svg": "2e7f69921763689d38261690a617e26b3f39fa7fd7f327887fee1a9b9ed0c5dd",
+    "static/book-images/v103-reading-routes.svg": "2e42c7d6ac4f1988d6646e64315c87deb72d6ebfd8457e9e34c2ebd99ab1bb4d",
+    "static/book-images/v103-service-ledger.svg": "cd371c6d3a61c0b0cf1d73f8dc7d217160870d1ec83221df482bf01318585d98"
+  },
+  "artifacts": {
+    "pdf": {
+      "name": "Surviving-the-Singularity-v0.11.0.pdf",
+      "bytes": 3248621,
+      "sha256": "71a07967791fbd35175e2154d8c258aec468e8f45e72952a207250d33d20862d"
+    },
+    "epub": {
+      "name": "Surviving-the-Singularity-v0.11.0.epub",
+      "bytes": 21751704,
+      "sha256": "f1d9bfae8df0a6879d1180e2a451d76040a739e3f7e688170f156beaeffe2cb6"
+    }
+  },
+  "masters": {
+    "pdf": "6d69604b3ade0e1d0cde12dc94180214a56c5bb4415dff37e5b1eefb9c7b666e",
+    "epub": "0e5b9dd6c91c5c0889a8d67328de9135a9b9c8963052d6642ad22e64f2282cf0"
+  },
+  "pdf_proof": {
+    "pages": 416,
+    "page_text_unchanged": true,
+    "link_counts_and_external_uris_preserved": true,
+    "internal_destinations_resolve": true,
+    "link_targets_unchanged": true,
+    "resource_preparation": {
+      "input_sha256": "6d69604b3ade0e1d0cde12dc94180214a56c5bb4415dff37e5b1eefb9c7b666e",
+      "prepared_path": "/workspace/sts-launch/book-build/downloads/reading-prepared.pdf",
+      "prepared_sha256": "5c3c8f4374c512d1e966f9a0a81031be006f14e8b46036351f47a70ec69f3370",
+      "pages": 416,
+      "page_xobject_references_before": 179281,
+      "page_xobject_references_after": 433,
+      "removed_unused_page_references": 178848,
+      "nested_scopes_unchanged": 387,
+      "page_streams_unchanged": true,
+      "annotation_descriptors_unchanged": true,
+      "controls": {
+        "referenced_object_retained": true,
+        "removed_reference_rejected": true,
+        "direct_stream_rejected": true,
+        "inherited_scope_rejected": true
+      },
+      "seconds": 14.7
+    }
+  },
+  "epub_images": [
+    {
+      "input": "EPUB/media/file103.jpg",
+      "output": "EPUB/media/file103.jpg",
+      "input_pixels": [
+        1920,
+        1280
+      ],
+      "output_pixels": [
+        1600,
+        1067
+      ],
+      "input_sha256": "e4c0262c2f3cd6e95a69b878a3e0b1293c2a718ba883dce89863e42d3ec4aa52",
+      "output_sha256": "a88902e220b78cfcffcf33db80f28ecfb9b62cb8f200b6863ea07a9a5a5e29ed"
+    },
+    {
+      "input": "EPUB/media/file101.png",
+      "output": "EPUB/media/file101.jpg",
+      "input_pixels": [
+        1536,
+        1024
+      ],
+      "output_pixels": [
+        1536,
+        1024
+      ],
+      "input_sha256": "6af939a98b2962d68210858e07aec6e575c036ef96421946dcb9a68f245c8d3e",
+      "output_sha256": "fe6f50e24f76fa5af641bd95b88ca70ed5f2c449706b77637ef6dd85df891ed5"
+    },
+    {
+      "input": "EPUB/media/file97.jpg",
+      "output": "EPUB/media/file97.jpg",
+      "input_pixels": [
+        1479,
+        1114
+      ],
+      "output_pixels": [
+        1479,
+        1114
+      ],
+      "input_sha256": "697628618df180f891fe5922884fae79ebe9de500a717fe96aaa2bfa479c47ec",
+      "output_sha256": "b5436fdb350fc3b72e4b49fa7eef65f5336a11a63bd4a7d63c3f8b66966a5956"
+    },
+    {
+      "input": "EPUB/media/file88.jpg",
+      "output": "EPUB/media/file88.jpg",
+      "input_pixels": [
+        1920,
+        2876
+      ],
+      "output_pixels": [
+        1068,
+        1600
+      ],
+      "input_sha256": "f34ce3b6abec77123bb056184d6bad2ac529f4a314f5d6eb2be55b15683febcd",
+      "output_sha256": "1274ea2ce47aaf37284efb6e1475e39a045de0b1f76998d0daedea72025ad3ef"
+    },
+    {
+      "input": "EPUB/media/file86.jpg",
+      "output": "EPUB/media/file86.jpg",
+      "input_pixels": [
+        1920,
+        1280
+      ],
+      "output_pixels": [
+        1600,
+        1067
+      ],
+      "input_sha256": "fcb35fb42bae4aa0e9836102ca71ccdfe8029e2f8a11b968e9d4fc11e0e75725",
+      "output_sha256": "f7bff3d05d680c3704c21417494f42c9c795beabe6a67f3773af3eeef56f561c"
+    },
+    {
+      "input": "EPUB/media/file75.jpg",
+      "output": "EPUB/media/file75.jpg",
+      "input_pixels": [
+        1920,
+        2560
+      ],
+      "output_pixels": [
+        1200,
+        1600
+      ],
+      "input_sha256": "3c0060868c7083c58c5c9b4b3f4e3bee1fafa66d7f54b292eb33df4700b32c8b",
+      "output_sha256": "0bed4e7e851d9f9c1b45a95c0a91d57103a6e584da2ce0da9b01c9fc560e8370"
+    },
+    {
+      "input": "EPUB/media/file71.jpg",
+      "output": "EPUB/media/file71.jpg",
+      "input_pixels": [
+        1920,
+        1242
+      ],
+      "output_pixels": [
+        1600,
+        1035
+      ],
+      "input_sha256": "46f2e5359770789dac4ce1e15551cbd881e8350dffd930e2bda5ecdb3e72a416",
+      "output_sha256": "4d85fdc20d951493e847d6d3d11356157da4eb7d78cd8c1a34279bc34cde1942"
+    },
+    {
+      "input": "EPUB/media/file61.jpg",
+      "output": "EPUB/media/file61.jpg",
+      "input_pixels": [
+        1280,
+        853
+      ],
+      "output_pixels": [
+        1280,
+        853
+      ],
+      "input_sha256": "7a91f3b7e54256bb55dd877b640e708013126903d3159523eb3f743b3dfb3ebb",
+      "output_sha256": "a93ae363c58fce78a9930f94c4112091141e772b8562ba56b243cb666b11cdbc"
+    },
+    {
+      "input": "EPUB/media/file47.jpg",
+      "output": "EPUB/media/file47.jpg",
+      "input_pixels": [
+        1920,
+        2560
+      ],
+      "output_pixels": [
+        1200,
+        1600
+      ],
+      "input_sha256": "bcb75cd2d4be36d180c81a5ec4675ebccccb90c1352daf745bee6cda0ebb590d",
+      "output_sha256": "5fa30c1540d92a9b4c8088745779f7f337e0b46276559cd3be2e1bbef9e724dd"
+    },
+    {
+      "input": "EPUB/media/file39.jpg",
+      "output": "EPUB/media/file39.jpg",
+      "input_pixels": [
+        1280,
+        853
+      ],
+      "output_pixels": [
+        1280,
+        853
+      ],
+      "input_sha256": "5e5c0c4ac1017cb5006af8b00018a84ce318f905ba0bd3320a39919f19465651",
+      "output_sha256": "8a29d7ebfd06d85213debcac8866f43a54c439778512ec75ceb9166d7b3c229c"
+    },
+    {
+      "input": "EPUB/media/file38.jpg",
+      "output": "EPUB/media/file38.jpg",
+      "input_pixels": [
+        1400,
+        2161
+      ],
+      "output_pixels": [
+        1037,
+        1600
+      ],
+      "input_sha256": "fba6e123f05f17e6bdb902d48889dcdb367032d6f5ed5edf4d997446a74379c3",
+      "output_sha256": "6b1577af98dc0f587980f4f6628403a6873e69c63ad2904dba52c2dbdde92d40"
+    },
+    {
+      "input": "EPUB/media/file37.jpg",
+      "output": "EPUB/media/file37.jpg",
+      "input_pixels": [
+        1400,
+        2070
+      ],
+      "output_pixels": [
+        1082,
+        1600
+      ],
+      "input_sha256": "b544246887a4b0941b9b41b666ffe2129de2898e6f321ccbfdcbf0c44ee29c6e",
+      "output_sha256": "2c2292539d255473278ff5b5c4bad22555a6e6088b4e9cb025fdc3bbe2eee98a"
+    },
+    {
+      "input": "EPUB/media/file36.png",
+      "output": "EPUB/media/file36.jpg",
+      "input_pixels": [
+        1536,
+        1024
+      ],
+      "output_pixels": [
+        1536,
+        1024
+      ],
+      "input_sha256": "2565cbf444ee9bed4e7deb9a6d1c86c275924111a48b4f9e2f159f61dd1c70b4",
+      "output_sha256": "a9c09c64975ad9b01b22bb5d831d217a833ce879d9e4d8e01dd828dd63abbc26"
+    },
+    {
+      "input": "EPUB/media/file35.jpg",
+      "output": "EPUB/media/file35.jpg",
+      "input_pixels": [
+        1920,
+        1920
+      ],
+      "output_pixels": [
+        1600,
+        1600
+      ],
+      "input_sha256": "e84aff20e5cc908e598b638dc69f43739a9daa6b49a44a41cc99743c6a5ca402",
+      "output_sha256": "edbbae242985e505d74903f00dfbb902f5b049c5d97a870518e1a5c5a787cf5e"
+    },
+    {
+      "input": "EPUB/media/file23.jpg",
+      "output": "EPUB/media/file23.jpg",
+      "input_pixels": [
+        1920,
+        1833
+      ],
+      "output_pixels": [
+        1600,
+        1528
+      ],
+      "input_sha256": "bdad996f80c2c00a49c312cb2cd23697df8fe4434ae577af2a5e394dd2e91b17",
+      "output_sha256": "d41b715caee88bdbd216fd7612bddb6cf995f1385c57ec845a5390af93b0c256"
+    },
+    {
+      "input": "EPUB/media/file22.png",
+      "output": "EPUB/media/file22.jpg",
+      "input_pixels": [
+        1536,
+        1024
+      ],
+      "output_pixels": [
+        1536,
+        1024
+      ],
+      "input_sha256": "1ce1c5b7c3c4b9b3248e544348db0c9ad233a0b9f29f0e01d6413bcb13d786bc",
+      "output_sha256": "a8b598b4851922fb8d4c01de92566d6cfe14e785ca7e9b8cc5135e93191ee856"
+    },
+    {
+      "input": "EPUB/media/file21.jpg",
+      "output": "EPUB/media/file21.jpg",
+      "input_pixels": [
+        1920,
+        1920
+      ],
+      "output_pixels": [
+        1600,
+        1600
+      ],
+      "input_sha256": "c66c7f08bff2dc7cb3aa6afc1699e9dd9bb667e33549d1e0798dd27ee8c32368",
+      "output_sha256": "bb0a02b043d9608c95fc673bd6a872befe5d03869c76677369095026b3a0d7bb"
+    },
+    {
+      "input": "EPUB/media/file19.jpg",
+      "output": "EPUB/media/file19.jpg",
+      "input_pixels": [
+        1920,
+        1280
+      ],
+      "output_pixels": [
+        1600,
+        1067
+      ],
+      "input_sha256": "987e7f4547eefef240d8605533a9cc48fe129997a71d9d916e3c34042683a7c6",
+      "output_sha256": "ea62e0438e279d813c18971a8e56d4af2bb3931c4c057cc9db4ac776fce9f3b8"
+    },
+    {
+      "input": "EPUB/media/file16.jpg",
+      "output": "EPUB/media/file16.jpg",
+      "input_pixels": [
+        1280,
+        960
+      ],
+      "output_pixels": [
+        1280,
+        960
+      ],
+      "input_sha256": "10c765307473a80b4069a557c10805baeacf69119d43035f6d7408e4f1ed411f",
+      "output_sha256": "51db450e255e27655d16e226402e718931ea59406b6afc3939274b996d146d53"
+    },
+    {
+      "input": "EPUB/media/file12.jpg",
+      "output": "EPUB/media/file12.jpg",
+      "input_pixels": [
+        1920,
+        1920
+      ],
+      "output_pixels": [
+        1600,
+        1600
+      ],
+      "input_sha256": "9479a85c6c9eb90d634c7b6703da98faa4e2cf10f4122491b503cade902e6f28",
+      "output_sha256": "b5a292bfe1b30c1a9daa0454ba7aa4abdf3b0a65cbb8d4b98c5b0cc6d89749b6"
+    },
+    {
+      "input": "EPUB/media/file10.png",
+      "output": "EPUB/media/file10.jpg",
+      "input_pixels": [
+        1536,
+        1024
+      ],
+      "output_pixels": [
+        1536,
+        1024
+      ],
+      "input_sha256": "7aa5a7710cfefe8057c89ae992929d3dfe0c20ca8d14eebe3dd1c1dbc8acd767",
+      "output_sha256": "9c9761f5c7c4ed39b9816e2476dca4245196b4cc42a72c071b6e44ce80032f00"
+    },
+    {
+      "input": "EPUB/media/file9.jpg",
+      "output": "EPUB/media/file9.jpg",
+      "input_pixels": [
+        1920,
+        1440
+      ],
+      "output_pixels": [
+        1600,
+        1200
+      ],
+      "input_sha256": "73f29adb2dd4e27f79f85cabbd3e5b3b4f153318fc05a91d128ebd29e3f2221d",
+      "output_sha256": "5b8820fa24a0def7f4536adf2920eaf18f1dac259591b930666465db642a32dd"
+    },
+    {
+      "input": "EPUB/media/file6.jpg",
+      "output": "EPUB/media/file6.jpg",
+      "input_pixels": [
+        1280,
+        1705
+      ],
+      "output_pixels": [
+        1201,
+        1600
+      ],
+      "input_sha256": "95f4c12e663734e49a9afac739c054e591a6c537ab2c513c3beee73789fe5260",
+      "output_sha256": "f530e1838802ce076e8c860b48fca4741c013c46f28c410c2a990b2df09af483"
+    },
+    {
+      "input": "EPUB/media/file0.jpg",
+      "output": "EPUB/media/file0.jpg",
+      "input_pixels": [
+        1280,
+        1920
+      ],
+      "output_pixels": [
+        1067,
+        1600
+      ],
+      "input_sha256": "4bd77247b1a37d537c3036f0a2f821536e97186176661deecc296e45b377b0a9",
+      "output_sha256": "0e9363db7799014157670f9c175bf09507cb8075292ce9563128cefba6518c0b"
+    },
+    {
+      "input": "EPUB/media/book-cover.png",
+      "output": "EPUB/media/book-cover.jpg",
+      "input_pixels": [
+        1410,
+        2056
+      ],
+      "output_pixels": [
+        1097,
+        1600
+      ],
+      "input_sha256": "c0174f87422e1047f00df9221480fb21d53aaa1e8aaf33f4cc38a3d2533ccc32",
+      "output_sha256": "654a90d151f1e2bfd20833771d7f7175b796f6c01ce0e6175ff9fb80741de850"
+    }
+  ],
+  "epub_other_content_unchanged": true,
+  "epub_source_proof": {
+    "version": "0.11.0",
+    "spine_documents": 38,
+    "source_sections": 35,
+    "epub_sha256": "0e5b9dd6c91c5c0889a8d67328de9135a9b9c8963052d6642ad22e64f2282cf0",
+    "epub_bytes": 41854584,
+    "source_sha256": {
+      "book.json": "a96d637e25d55005010843bcfb5a21b0f8716dd8bcd47a99137bbed98f8fb591",
+      "02-introduction.md": "1db5576c0b9cbbcc04633ef96ed1d3ec4e5502f4cfd995ccf90fd57fc56f76b2",
+      "01-preface.md": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+      "31-how-to-use.md": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+      "00-chapter0.md": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+      "part1-divider.md": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+      "03-chapter1.md": "9916db2c37a5a665fe82ca051a7992b44e9f2d40fb35b922c5a682ccaa125d4a",
+      "04-chapter2.md": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+      "05-chapter3.md": "4bdc3e8c7f7e75dca3f40366d870d8bed618d612bf6ba146fe161643a296d304",
+      "06-chapter4.md": "effaaa6d8af9e47826ec930e4f4edc7dbd41da10ae12a78c5c6eff38a35da979",
+      "07-chapter5.md": "77a81d1b8c6c9d2e57ccff4ca80e0c88799ed06ea10f39c061f8006f9a268186",
+      "part2-divider.md": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a",
+      "08-chapter6.md": "5d0b77634ff13b3600864acc9875b383c5d27da5c83106d31cbc01a2eaf0fe71",
+      "09-chapter7.md": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+      "10-chapter8.md": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+      "11-chapter9.md": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+      "part3-divider.md": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e",
+      "12-chapter10.md": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+      "13-chapter11.md": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+      "14-chapter12.md": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+      "15-chapter13.md": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+      "16-chapter14.md": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+      "17-chapter15.md": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+      "18-chapter16.md": "3b57218536ba9143187ae52131c4b96e00941d368e0c15b2abe953df0d974788",
+      "19-chapter17.md": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+      "20-chapter18.md": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+      "27-chapter19.md": "807e13306e7962a8efe20ea2686f27c7670aa1b0adbbc9e2026b11c6f4523bca",
+      "21-conclusion.md": "a94ecf4a59a310438beab7376828829ca3be9d514a75240588d01cef49a7498e",
+      "22-appendix-a.md": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+      "23-appendix-b.md": "019a664a731f9cd7cd8d74cb848fbca21f64806d35fa68c64dc2ac58a070e704",
+      "24-appendix-c.md": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+      "25-appendix-d.md": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069",
+      "26-appendix-e.md": "fe4d080c0c9a62e99d81a1aa975b56afefa619057219bbd980855b460be53793",
+      "28-appendix-f.md": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4",
+      "29-appendix-g.md": "d67719a313518aa6fd41a7cb1464c9dd8dcd236ab14a3a35ad7e214cd460f63a",
+      "30-appendix-h.md": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44"
+    },
+    "source_hashes_verified": true,
+    "registry_sha256": "7a784f044b0c3ba0cb526e1e362d8f08b42fb70dd52fa59ffd0de3e25e0f1c99",
+    "registry_entries": 62,
+    "source_reference": "Fresh Pandoc render of canonical sections with resolved cross-references",
+    "source_blocks_checked": 2690,
+    "missing_blocks": [],
+    "resource_errors": [],
+    "art_errors": [],
+    "source_art_assets_checked": 110,
+    "distinct_source_art_assets_checked": 110,
+    "registered_art_assets_checked": 62,
+    "registered_art_figures": 62,
+    "registered_captioned_figures": 62,
+    "registered_uncaptioned_figures": 0,
+    "artwork": [
+      {
+        "file": "ch01-atlas.jpg",
+        "section": "02-introduction.md",
+        "sha256": "4bd77247b1a37d537c3036f0a2f821536e97186176661deecc296e45b377b0a9",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch001.xhtml",
+        "embedded": [
+          "EPUB/media/file0.jpg"
+        ]
+      },
+      {
+        "file": "v101-cutout-atlas.png",
+        "section": "02-introduction.md",
+        "sha256": "a589cf1d182f5d955c13d8515a8f210a9ff514f81bcdecf49294bdc38132c2db",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch001.xhtml",
+        "embedded": [
+          "EPUB/media/file1.png"
+        ]
+      },
+      {
+        "file": "intro-ox-plow.png",
+        "section": "02-introduction.md",
+        "sha256": "8fed75cf7f2185e0a41e38649a27e8244ebc284dcb3e4ddd0b1dfdfb4748f489",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch001.xhtml",
+        "embedded": [
+          "EPUB/media/file2.png"
+        ]
+      },
+      {
+        "file": "intro-food-insecurity.svg",
+        "section": "02-introduction.md",
+        "sha256": "d9edaa0782d807968323c5b9c8bcab1d96485b0ec9e7989f0ef8302f77d6c610",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch001.xhtml",
+        "embedded": [
+          "EPUB/media/file3.svg"
+        ]
+      },
+      {
+        "file": "intro-robots.png",
+        "section": "02-introduction.md",
+        "sha256": "fe8f77c76c88d854587ca29525afa41cf338acfe65c5c447ddf062e32625f6a5",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch001.xhtml",
+        "embedded": [
+          "EPUB/media/file4.png"
+        ]
+      },
+      {
+        "file": "intro-nine-stages.svg",
+        "section": "02-introduction.md",
+        "sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch001.xhtml",
+        "embedded": [
+          "EPUB/media/file5.svg"
+        ]
+      },
+      {
+        "file": "intro-asimo.jpg",
+        "section": "01-preface.md",
+        "sha256": "95f4c12e663734e49a9afac739c054e591a6c537ab2c513c3beee73789fe5260",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch002.xhtml",
+        "embedded": [
+          "EPUB/media/file6.jpg"
+        ]
+      },
+      {
+        "file": "preface-reading-rage.png",
+        "section": "01-preface.md",
+        "sha256": "24c252862f1e10d24e307eff8ddb869d3eabc66fcb366486c281dbf72a76a7de",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch002.xhtml",
+        "embedded": [
+          "EPUB/media/file7.png"
+        ]
+      },
+      {
+        "file": "v103-reading-routes.svg",
+        "section": "31-how-to-use.md",
+        "sha256": "291fb538492de62b95c5e9726101b78a0ae05cd7b19ce9e61aaaba121249d07c",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch003.xhtml",
+        "embedded": [
+          "EPUB/media/file8.svg"
+        ]
+      },
+      {
+        "file": "ch00-madrone-bark.jpg",
+        "section": "00-chapter0.md",
+        "sha256": "73f29adb2dd4e27f79f85cabbd3e5b3b4f153318fc05a91d128ebd29e3f2221d",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch004.xhtml",
+        "embedded": [
+          "EPUB/media/file9.jpg"
+        ]
+      },
+      {
+        "file": "v103-narrative-bear-flag.png",
+        "section": "00-chapter0.md",
+        "sha256": "7aa5a7710cfefe8057c89ae992929d3dfe0c20ca8d14eebe3dd1c1dbc8acd767",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch004.xhtml",
+        "embedded": [
+          "EPUB/media/file10.png"
+        ]
+      },
+      {
+        "file": "part1-divider.png",
+        "section": "part1-divider.md",
+        "sha256": "1d415c095230788879ce246146ee75b96240459efacdff87ebd18dd16aa1d809",
+        "registered": false,
+        "caption_required": false,
+        "chapter": "EPUB/text/ch005.xhtml",
+        "embedded": [
+          "EPUB/media/file11.png"
+        ]
+      },
+      {
+        "file": "ch01-m87-black-hole.jpg",
+        "section": "03-chapter1.md",
+        "sha256": "9479a85c6c9eb90d634c7b6703da98faa4e2cf10f4122491b503cade902e6f28",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch006.xhtml",
+        "embedded": [
+          "EPUB/media/file12.jpg"
+        ]
+      },
+      {
+        "file": "ch01-devendra.png",
+        "section": "03-chapter1.md",
+        "sha256": "497eded04d8082e952f8ccea9f343cfa0ba56410e5375ebc4115df673e72dbbc",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch006.xhtml",
+        "embedded": [
+          "EPUB/media/file13.png"
+        ]
+      },
+      {
+        "file": "ch01-pc-rig.png",
+        "section": "03-chapter1.md",
+        "sha256": "8d4e4e29087770f5d6386d979acb604cdc1486d304939456ddae0b8b99564fbf",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch006.xhtml",
+        "embedded": [
+          "EPUB/media/file14.png"
+        ]
+      },
+      {
+        "file": "v101-chart-forecast-shift.svg",
+        "section": "03-chapter1.md",
+        "sha256": "f17a1b2b01cb8db0a3eeead18469935260664611ea67a801d2b5283dfd9135c9",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch006.xhtml",
+        "embedded": [
+          "EPUB/media/file15.svg"
+        ]
+      },
+      {
+        "file": "ch02-factory-robots.jpg",
+        "section": "04-chapter2.md",
+        "sha256": "10c765307473a80b4069a557c10805baeacf69119d43035f6d7408e4f1ed411f",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch007.xhtml",
+        "embedded": [
+          "EPUB/media/file16.jpg"
+        ]
+      },
+      {
+        "file": "ch02-eighteen-days.svg",
+        "section": "04-chapter2.md",
+        "sha256": "e197fe6b2a7b4a1bb622821c6a30118a072677ab80ffb8fe7c6cf7d438b5e281",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch007.xhtml",
+        "embedded": [
+          "EPUB/media/file17.svg"
+        ]
+      },
+      {
+        "file": "v101-visual-local-copies.svg",
+        "section": "04-chapter2.md",
+        "sha256": "49822397475ec5150ff7ea65da3e484b222fb51874eddced7dfad9d3e56fa125",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch007.xhtml",
+        "embedded": [
+          "EPUB/media/file18.svg"
+        ]
+      },
+      {
+        "file": "ch03-falcon-heavy.jpg",
+        "section": "05-chapter3.md",
+        "sha256": "987e7f4547eefef240d8605533a9cc48fe129997a71d9d916e3c34042683a7c6",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch008.xhtml",
+        "embedded": [
+          "EPUB/media/file19.jpg"
+        ]
+      },
+      {
+        "file": "v101-cutout-rocket.png",
+        "section": "05-chapter3.md",
+        "sha256": "8d2763491b2f03d3839ad34d7458dc695e0d8b98f28d2a8502cff95c52219b02",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch008.xhtml",
+        "embedded": [
+          "EPUB/media/file20.png"
+        ]
+      },
+      {
+        "file": "ch04-hubble-deep-field.jpg",
+        "section": "06-chapter4.md",
+        "sha256": "c66c7f08bff2dc7cb3aa6afc1699e9dd9bb667e33549d1e0798dd27ee8c32368",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch009.xhtml",
+        "embedded": [
+          "EPUB/media/file21.jpg"
+        ]
+      },
+      {
+        "file": "v103-narrative-near-end.png",
+        "section": "06-chapter4.md",
+        "sha256": "1ce1c5b7c3c4b9b3248e544348db0c9ad233a0b9f29f0e01d6413bcb13d786bc",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch009.xhtml",
+        "embedded": [
+          "EPUB/media/file22.png"
+        ]
+      },
+      {
+        "file": "ch05-sdo-sun.jpg",
+        "section": "07-chapter5.md",
+        "sha256": "bdad996f80c2c00a49c312cb2cd23697df8fe4434ae577af2a5e394dd2e91b17",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch010.xhtml",
+        "embedded": [
+          "EPUB/media/file23.jpg"
+        ]
+      },
+      {
+        "file": "ch05-woodstove.png",
+        "section": "07-chapter5.md",
+        "sha256": "81f56267c3e88bb783264b8574ca112bc47aa395d51e0c98c2af0686cbb3eed4",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch010.xhtml",
+        "embedded": [
+          "EPUB/media/file24.png"
+        ]
+      },
+      {
+        "file": "v101-cutout-sun.png",
+        "section": "07-chapter5.md",
+        "sha256": "e28663cd57a7b72457810fff1bfe6c430582d7f3196b5eca97d6d07f6a5fe8a7",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch010.xhtml",
+        "embedded": [
+          "EPUB/media/file25.png"
+        ]
+      },
+      {
+        "file": "v101-chart-data-centre-demand.svg",
+        "section": "07-chapter5.md",
+        "sha256": "e20d70acdcd5d17d30326de2e539cb15401372a735c9947623500c7e3c5df62d",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch010.xhtml",
+        "embedded": [
+          "EPUB/media/file26.svg"
+        ]
+      },
+      {
+        "file": "ch05-horses-tractors.svg",
+        "section": "07-chapter5.md",
+        "sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch010.xhtml",
+        "embedded": [
+          "EPUB/media/file27.svg"
+        ]
+      },
+      {
+        "file": "part2-divider.png",
+        "section": "part2-divider.md",
+        "sha256": "154ad8cd7d98574f3a11b29422e2972912345a3e0aa972ff9d6186d17c84a900",
+        "registered": false,
+        "caption_required": false,
+        "chapter": "EPUB/text/ch011.xhtml",
+        "embedded": [
+          "EPUB/media/file28.png"
+        ]
+      },
+      {
+        "file": "coop-cast.svg",
+        "section": "part2-divider.md",
+        "sha256": "1f8b5874284680749ca45b89e517b01ce890b63497e83075828aaae5c98657bb",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch011.xhtml",
+        "embedded": [
+          "EPUB/media/file29.svg"
+        ]
+      },
+      {
+        "file": "original-09-repair-tools.svg",
+        "section": "08-chapter6.md",
+        "sha256": "b2cd6bb5fe1bd76189b506dc2f76f51afdbe7a2907e7f6ae9fb21cf983d5f047",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch012.xhtml",
+        "embedded": [
+          "EPUB/media/file30.svg"
+        ]
+      },
+      {
+        "file": "ch06-tool-wall.png",
+        "section": "08-chapter6.md",
+        "sha256": "572d7f0b04831b32db85f21b37a0abe34ab126ac3a11200800b00acfe4ecfb7f",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch012.xhtml",
+        "embedded": [
+          "EPUB/media/file31.png"
+        ]
+      },
+      {
+        "file": "ch06-capability-access.svg",
+        "section": "08-chapter6.md",
+        "sha256": "835fbea5981ba3135ec49a81abd3cdbbff1d74fcc42905fb8b5ab545a8dec088",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch012.xhtml",
+        "embedded": [
+          "EPUB/media/file32.svg"
+        ]
+      },
+      {
+        "file": "v101-chart-income-food-access.svg",
+        "section": "08-chapter6.md",
+        "sha256": "8a39039eb3ee7f92fcce1f39cec0df834e6650c934aaa1df0bddfcf5114672a5",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch012.xhtml",
+        "embedded": [
+          "EPUB/media/file33.svg"
+        ]
+      },
+      {
+        "file": "v101-visual-access-gate.svg",
+        "section": "08-chapter6.md",
+        "sha256": "474f9f53dde0488f204103cdadd2db2cf20f138956dc7dc784209387c04746af",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch012.xhtml",
+        "embedded": [
+          "EPUB/media/file34.svg"
+        ]
+      },
+      {
+        "file": "ch07-chess-battle-lines.jpg",
+        "section": "09-chapter7.md",
+        "sha256": "e84aff20e5cc908e598b638dc69f43739a9daa6b49a44a41cc99743c6a5ca402",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch013.xhtml",
+        "embedded": [
+          "EPUB/media/file35.jpg"
+        ]
+      },
+      {
+        "file": "v103-narrative-passing-beans.png",
+        "section": "09-chapter7.md",
+        "sha256": "2565cbf444ee9bed4e7deb9a6d1c86c275924111a48b4f9e2f159f61dd1c70b4",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch013.xhtml",
+        "embedded": [
+          "EPUB/media/file36.png"
+        ]
+      },
+      {
+        "file": "ch07-canned-music-1929.jpg",
+        "section": "09-chapter7.md",
+        "sha256": "b544246887a4b0941b9b41b666ffe2129de2898e6f321ccbfdcbf0c44ee29c6e",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch013.xhtml",
+        "embedded": [
+          "EPUB/media/file37.jpg"
+        ]
+      },
+      {
+        "file": "ch07-canned-music-1930.jpg",
+        "section": "09-chapter7.md",
+        "sha256": "fba6e123f05f17e6bdb902d48889dcdb367032d6f5ed5edf4d997446a74379c3",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch013.xhtml",
+        "embedded": [
+          "EPUB/media/file38.jpg"
+        ]
+      },
+      {
+        "file": "ch08-sophia.jpg",
+        "section": "10-chapter8.md",
+        "sha256": "5e5c0c4ac1017cb5006af8b00018a84ce318f905ba0bd3320a39919f19465651",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file39.jpg"
+        ]
+      },
+      {
+        "file": "ch08-gary.png",
+        "section": "10-chapter8.md",
+        "sha256": "44ed957be971436c3da05d73eec51a9cb9c4351f8b1108092e3af54d9c1f6684",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file40.png"
+        ]
+      },
+      {
+        "file": "ch08-cognitive-extraction.svg",
+        "section": "10-chapter8.md",
+        "sha256": "07cdb4846e81f113aaebb116266cca41d68c5a5c1cb57dd7732e4a72452d1dd4",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file41.svg"
+        ]
+      },
+      {
+        "file": "ch08-focus-recovery.svg",
+        "section": "10-chapter8.md",
+        "sha256": "626bb7d8fd6d6eaba363a40740bdbb08bf185490b359099ee4729da188a5a94c",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file42.svg"
+        ]
+      },
+      {
+        "file": "ch08-firewall-pipeline.svg",
+        "section": "10-chapter8.md",
+        "sha256": "bce21db24028e1bf29e75da76dde51da9c3cc393ccb7395350bcc6d1106f2ada",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file43.svg"
+        ]
+      },
+      {
+        "file": "ch08-info-architectures.svg",
+        "section": "10-chapter8.md",
+        "sha256": "b44e3a60851a59e55b59573c660ac023f2d3ef1057ddc09348b4ea0e0adf7d40",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file44.svg"
+        ]
+      },
+      {
+        "file": "v101-visual-attention-ribbon.svg",
+        "section": "10-chapter8.md",
+        "sha256": "1e121f8a08e43e0fae53aa6e5aa5fb5818a6a1ef484c121dc5a0246b930c5f53",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file45.svg"
+        ]
+      },
+      {
+        "file": "ch08-star-vs-mesh.svg",
+        "section": "10-chapter8.md",
+        "sha256": "dc6d72da19ccc7b894b26b05b650172c7c2f30f15664d0a58b0af99c31b6bd86",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch014.xhtml",
+        "embedded": [
+          "EPUB/media/file46.svg"
+        ]
+      },
+      {
+        "file": "ch09-3d-printer.jpg",
+        "section": "11-chapter9.md",
+        "sha256": "bcb75cd2d4be36d180c81a5ec4675ebccccb90c1352daf745bee6cda0ebb590d",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file47.jpg"
+        ]
+      },
+      {
+        "file": "ch09-controller.png",
+        "section": "11-chapter9.md",
+        "sha256": "a59200030013d620da77757a5219c2104bce9da1a6abc0439b79d89c393355cd",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file48.png"
+        ]
+      },
+      {
+        "file": "ch09-reuben.png",
+        "section": "11-chapter9.md",
+        "sha256": "ea6519faef49fa98e8099983976dfa8bd37d77e900c91238d2d319f86528b38b",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file49.png"
+        ]
+      },
+      {
+        "file": "ch09-hyperlocal-vs-global.svg",
+        "section": "11-chapter9.md",
+        "sha256": "0ed2e8082eb76daa3e15c210893ef83809f5cf7fb7bcc607f21793c9c2de8ef8",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file50.svg"
+        ]
+      },
+      {
+        "file": "ch09-region-ring.svg",
+        "section": "11-chapter9.md",
+        "sha256": "67081ce5c2201c79c1cea93518a482f896984277b32ff0d2e547189393cf9142",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file51.svg"
+        ]
+      },
+      {
+        "file": "v101-cutout-printer.png",
+        "section": "11-chapter9.md",
+        "sha256": "156b2371385e2216897d8d057a32d45e3421cf0ef18376e45d630c371b4132bd",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file52.png"
+        ]
+      },
+      {
+        "file": "v101-chart-ammonia-energy.svg",
+        "section": "11-chapter9.md",
+        "sha256": "db1df8587058e8c920cbac261a4b90fc4c37e024b4718ebe0c305f08ca2330a3",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file53.svg"
+        ]
+      },
+      {
+        "file": "ch09-cnc-bed.svg",
+        "section": "11-chapter9.md",
+        "sha256": "6f00880b34f5f4a1fcbaded17b40c23169448315b20f12aeee1f7ea8428f9d20",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file54.svg"
+        ]
+      },
+      {
+        "file": "ch09-greenhouse-bus.svg",
+        "section": "11-chapter9.md",
+        "sha256": "2896db1d01e32508eb6a91e3983c23d3a70ad5e113df3afbf4cc3c52c1370b9f",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file55.svg"
+        ]
+      },
+      {
+        "file": "v101-scene-food-delivery.svg",
+        "section": "11-chapter9.md",
+        "sha256": "74b4eb3cd786b6a62fe86ed0eecc15fe01af4e2c2e5a54cdcd8a16ade94e982b",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch015.xhtml",
+        "embedded": [
+          "EPUB/media/file56.svg"
+        ]
+      },
+      {
+        "file": "part3-divider.png",
+        "section": "part3-divider.md",
+        "sha256": "2488a09215350edfb2ca254d2c61819d4420d19b32405d74d9270cc40c452a0b",
+        "registered": false,
+        "caption_required": false,
+        "chapter": "EPUB/text/ch016.xhtml",
+        "embedded": [
+          "EPUB/media/file57.png"
+        ]
+      },
+      {
+        "file": "original-07-pamphlet-and-thread.svg",
+        "section": "12-chapter10.md",
+        "sha256": "d233fbc705edb7f39db54f166d166fbb356f0ee6d1c4cb60326ccc0d4c65f390",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch017.xhtml",
+        "embedded": [
+          "EPUB/media/file58.svg"
+        ]
+      },
+      {
+        "file": "ch10-model-collapse.svg",
+        "section": "12-chapter10.md",
+        "sha256": "001c754a94d4f86c7c72f08869e052329ffcbb95913085dfaf1ba10349a24ff3",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch017.xhtml",
+        "embedded": [
+          "EPUB/media/file59.svg"
+        ]
+      },
+      {
+        "file": "ch10-algorithm-unlock.svg",
+        "section": "12-chapter10.md",
+        "sha256": "e5844fbd5b9e20aee5ec4133abeda31db022b963d60797877dbe7ceca46d75b3",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch017.xhtml",
+        "embedded": [
+          "EPUB/media/file60.svg"
+        ]
+      },
+      {
+        "file": "ch11-spot.jpg",
+        "section": "13-chapter11.md",
+        "sha256": "7a91f3b7e54256bb55dd877b640e708013126903d3159523eb3f743b3dfb3ebb",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch018.xhtml",
+        "embedded": [
+          "EPUB/media/file61.jpg"
+        ]
+      },
+      {
+        "file": "ch11-crucible.png",
+        "section": "13-chapter11.md",
+        "sha256": "cf0ae6e415947d30254b0accedda9fc47a9a8ddd4fa1b8fd6d6a1007acf1714c",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch018.xhtml",
+        "embedded": [
+          "EPUB/media/file62.png"
+        ]
+      },
+      {
+        "file": "v101-cutout-spot.png",
+        "section": "13-chapter11.md",
+        "sha256": "a607f5b8dbc43c4fcbd9bc96ed22bea10bdbbe3844b873513a43a147f7a1837a",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch018.xhtml",
+        "embedded": [
+          "EPUB/media/file63.png"
+        ]
+      },
+      {
+        "file": "v101-visual-operating-stack.svg",
+        "section": "13-chapter11.md",
+        "sha256": "3be7eeea868005873ef12c3c7208c774ea6082a2662d5f9d30be2bdde7b0052e",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch018.xhtml",
+        "embedded": [
+          "EPUB/media/file64.svg"
+        ]
+      },
+      {
+        "file": "v101-chart-weights-memory.svg",
+        "section": "13-chapter11.md",
+        "sha256": "2657bb2229747becb13bb2fa9ee96eee5581783b0335b0acfff488504d483a48",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch018.xhtml",
+        "embedded": [
+          "EPUB/media/file65.svg"
+        ]
+      },
+      {
+        "file": "ch11-cooling-loop.svg",
+        "section": "13-chapter11.md",
+        "sha256": "1bb47ceaf9d82e54a9fa9209d66e1a0d7828ea2933cb712f96bee181d5a51347",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch018.xhtml",
+        "embedded": [
+          "EPUB/media/file66.svg"
+        ]
+      },
+      {
+        "file": "original-04-seed-and-root.svg",
+        "section": "14-chapter12.md",
+        "sha256": "c9a29aa4445931ed2cf73cf35a152407b961a27b10640fd0b618a7d2401f205f",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch019.xhtml",
+        "embedded": [
+          "EPUB/media/file67.svg"
+        ]
+      },
+      {
+        "file": "v101-chart-land-values.svg",
+        "section": "14-chapter12.md",
+        "sha256": "01b05854aa077ec44879e61bd3679943438c32bc08ce5eef6595236a9224a84a",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch019.xhtml",
+        "embedded": [
+          "EPUB/media/file68.svg"
+        ]
+      },
+      {
+        "file": "v101-visual-shared-land.svg",
+        "section": "14-chapter12.md",
+        "sha256": "d1951a179314c8cf3b703979fdfc2160b3c4626dfd877895d245272ba628f8f5",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch019.xhtml",
+        "embedded": [
+          "EPUB/media/file69.svg"
+        ]
+      },
+      {
+        "file": "ch12-csa-network.svg",
+        "section": "14-chapter12.md",
+        "sha256": "cc655f7b1b167ffb9ffd9f12c690d8b60d10c11b1d9468aba031fcbf3798df85",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch019.xhtml",
+        "embedded": [
+          "EPUB/media/file70.svg"
+        ]
+      },
+      {
+        "file": "ch13-solar-barn.jpg",
+        "section": "15-chapter13.md",
+        "sha256": "46f2e5359770789dac4ce1e15551cbd881e8350dffd930e2bda5ecdb3e72a416",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch020.xhtml",
+        "embedded": [
+          "EPUB/media/file71.jpg"
+        ]
+      },
+      {
+        "file": "ch13-vise.png",
+        "section": "15-chapter13.md",
+        "sha256": "66523bd7955693fd7c2b96a897a765d16feca1cc44d65070683571f2ddfc3dbe",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch020.xhtml",
+        "embedded": [
+          "EPUB/media/file72.png"
+        ]
+      },
+      {
+        "file": "ch13-shell-architecture.svg",
+        "section": "15-chapter13.md",
+        "sha256": "c793182a4a2721df0a34fd19d9c4d231cf56f1dd69188386ccca741545c0c86c",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch020.xhtml",
+        "embedded": [
+          "EPUB/media/file73.svg"
+        ]
+      },
+      {
+        "file": "ch13-thermal-seal.svg",
+        "section": "15-chapter13.md",
+        "sha256": "751bcdb643a673571e4f588ab901b5d8d6ea94f1b7d8c8b3bbd8fe661305eea3",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch020.xhtml",
+        "embedded": [
+          "EPUB/media/file74.svg"
+        ]
+      },
+      {
+        "file": "ch14-dead-mall.jpg",
+        "section": "16-chapter14.md",
+        "sha256": "3c0060868c7083c58c5c9b4b3f4e3bee1fafa66d7f54b292eb33df4700b32c8b",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch021.xhtml",
+        "embedded": [
+          "EPUB/media/file75.jpg"
+        ]
+      },
+      {
+        "file": "ch14-frank.png",
+        "section": "16-chapter14.md",
+        "sha256": "3b05b80f745ee3d404006a055cf2648e09619e96af6e4b10dbc9c52dae75d954",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch021.xhtml",
+        "embedded": [
+          "EPUB/media/file76.png"
+        ]
+      },
+      {
+        "file": "ch14-bell.png",
+        "section": "16-chapter14.md",
+        "sha256": "d10ea5bd65e0a5b0a9f9e9ac3d74789032a87d36f7ee4c0f2d92174f621eee32",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch021.xhtml",
+        "embedded": [
+          "EPUB/media/file77.png"
+        ]
+      },
+      {
+        "file": "ch14-logistic-shockwave.svg",
+        "section": "16-chapter14.md",
+        "sha256": "2e12005987649d7a8921057bd4bf450fee4e9f7c2def655a6afe4ee0874d4e02",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch021.xhtml",
+        "embedded": [
+          "EPUB/media/file78.svg"
+        ]
+      },
+      {
+        "file": "v101-chart-waste-pathways.svg",
+        "section": "16-chapter14.md",
+        "sha256": "c191734a13ec7bbd1882a149bbd8a597a839e9cd22d7fef55c3e6ad0b4b1243d",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch021.xhtml",
+        "embedded": [
+          "EPUB/media/file79.svg"
+        ]
+      },
+      {
+        "file": "ch14-mesh-comms.svg",
+        "section": "16-chapter14.md",
+        "sha256": "d6e6d0e49979a75da4eb4dd118a59566ec1f5b1497b7c556fa79929039a9c971",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch021.xhtml",
+        "embedded": [
+          "EPUB/media/file80.svg"
+        ]
+      },
+      {
+        "file": "original-11-soil-profile.svg",
+        "section": "17-chapter15.md",
+        "sha256": "48c19f48c34060b5cdf5287beafb0e010e87a3f288d5d47c18efa3c1b69d300b",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch022.xhtml",
+        "embedded": [
+          "EPUB/media/file81.svg"
+        ]
+      },
+      {
+        "file": "ch15-probe.png",
+        "section": "17-chapter15.md",
+        "sha256": "7dda32a7598ee12541dff75aca9f8e668d1074ccb999d50cb175201aac789092",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch022.xhtml",
+        "embedded": [
+          "EPUB/media/file82.png"
+        ]
+      },
+      {
+        "file": "ch15-clt-firewall.svg",
+        "section": "17-chapter15.md",
+        "sha256": "e634184bb1f3c7a4d29e998b88ccf6d7cebaff6032b36243beb0d0e319f7e114",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch022.xhtml",
+        "embedded": [
+          "EPUB/media/file83.svg"
+        ]
+      },
+      {
+        "file": "ch15-soil-food-web.svg",
+        "section": "17-chapter15.md",
+        "sha256": "5df26993caa8b39275816ae6f4991324dc5a8543f468c1866fc4993409944866",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch022.xhtml",
+        "embedded": [
+          "EPUB/media/file84.svg"
+        ]
+      },
+      {
+        "file": "v101-scene-living-soil.svg",
+        "section": "17-chapter15.md",
+        "sha256": "17935101242fe9c5e0e3ccac30be276a50d85c5f558feb17c653d2eb6507ea73",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch022.xhtml",
+        "embedded": [
+          "EPUB/media/file85.svg"
+        ]
+      },
+      {
+        "file": "ch16-servers.jpg",
+        "section": "18-chapter16.md",
+        "sha256": "fcb35fb42bae4aa0e9836102ca71ccdfe8029e2f8a11b968e9d4fc11e0e75725",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch023.xhtml",
+        "embedded": [
+          "EPUB/media/file86.jpg"
+        ]
+      },
+      {
+        "file": "ch16-sneakernet.svg",
+        "section": "18-chapter16.md",
+        "sha256": "3dc040580dd02172202a3cd5c80490fad8a21116f5d5b24fd0ceba29c804d412",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch023.xhtml",
+        "embedded": [
+          "EPUB/media/file87.svg"
+        ]
+      },
+      {
+        "file": "ch17-workbench.jpg",
+        "section": "19-chapter17.md",
+        "sha256": "f34ce3b6abec77123bb056184d6bad2ac529f4a314f5d6eb2be55b15683febcd",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file88.jpg"
+        ]
+      },
+      {
+        "file": "ch17-field-kit.png",
+        "section": "19-chapter17.md",
+        "sha256": "cf4263599c1d3b4a860cbd98d00c9609a01ddbda93eb6225cd493496d39bd570",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file89.png"
+        ]
+      },
+      {
+        "file": "v101-cutout-tools.png",
+        "section": "19-chapter17.md",
+        "sha256": "b6eee075e0a4c62a86da11af653d7471204a5607078ec442e831026d6be7c543",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file90.png"
+        ]
+      },
+      {
+        "file": "ch17-photobioreactor.png",
+        "section": "19-chapter17.md",
+        "sha256": "041638dc5da1296880db162f47fd620964ad76b33dca6e8cc77379578f3ab8cf",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file91.png"
+        ]
+      },
+      {
+        "file": "ch17-algae-loop.svg",
+        "section": "19-chapter17.md",
+        "sha256": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file92.svg"
+        ]
+      },
+      {
+        "file": "ch17-lora-node.svg",
+        "section": "19-chapter17.md",
+        "sha256": "58be532888edfa48a34306d2bc5912f4ca416a1e2f9ce295685b359344c86833",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file93.svg"
+        ]
+      },
+      {
+        "file": "ch17-dc-native.svg",
+        "section": "19-chapter17.md",
+        "sha256": "09c78b334b709458e53d9d959c65311d73c2525c0b6f7b21e8b1542cd1628078",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file94.svg"
+        ]
+      },
+      {
+        "file": "ch17-fab-lab.svg",
+        "section": "19-chapter17.md",
+        "sha256": "ef3cceaff4775ce5f2263e012d8438ed1fe5baab4477a828b08a0d1e85f233e6",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file95.svg"
+        ]
+      },
+      {
+        "file": "v101-scene-shared-workshop.svg",
+        "section": "19-chapter17.md",
+        "sha256": "c9053537b3f90445a676f4874eb6a4b407988125cec33042b512e3d0634485bc",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch024.xhtml",
+        "embedded": [
+          "EPUB/media/file96.svg"
+        ]
+      },
+      {
+        "file": "ch18-compass-map.jpg",
+        "section": "20-chapter18.md",
+        "sha256": "697628618df180f891fe5922884fae79ebe9de500a717fe96aaa2bfa479c47ec",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch025.xhtml",
+        "embedded": [
+          "EPUB/media/file97.jpg"
+        ]
+      },
+      {
+        "file": "v101-visual-continuity-calendar.svg",
+        "section": "20-chapter18.md",
+        "sha256": "889d7cef01b72959d2b791d82132aaae5d8204411d08b17d6367740da8d16631",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch025.xhtml",
+        "embedded": [
+          "EPUB/media/file98.svg"
+        ]
+      },
+      {
+        "file": "ch18-social-contract.svg",
+        "section": "20-chapter18.md",
+        "sha256": "718b74c05c0745ac8cf09dca92b1a5177b943bcb720e760b67de5f8ed4425e47",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch025.xhtml",
+        "embedded": [
+          "EPUB/media/file99.svg"
+        ]
+      },
+      {
+        "file": "v101-chart-meal-response.svg",
+        "section": "20-chapter18.md",
+        "sha256": "be07cd42e23cb52c03b4763ca937a7e3c71adb6da4598c6924f8a519e64c7817",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch025.xhtml",
+        "embedded": [
+          "EPUB/media/file100.svg"
+        ]
+      },
+      {
+        "file": "v103-narrative-rosa-testimony.png",
+        "section": "27-chapter19.md",
+        "sha256": "6af939a98b2962d68210858e07aec6e575c036ef96421946dcb9a68f245c8d3e",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch026.xhtml",
+        "embedded": [
+          "EPUB/media/file101.png"
+        ]
+      },
+      {
+        "file": "ch19-conversion-ladder.svg",
+        "section": "27-chapter19.md",
+        "sha256": "5abb544f56196e1d4fe62b95222f283d8b19a22f4f8ee98524048248dd4155bc",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch026.xhtml",
+        "embedded": [
+          "EPUB/media/file102.svg"
+        ]
+      },
+      {
+        "file": "ch19-iss-sunrise.jpg",
+        "section": "21-conclusion.md",
+        "sha256": "e4c0262c2f3cd6e95a69b878a3e0b1293c2a718ba883dce89863e42d3ec4aa52",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch027.xhtml",
+        "embedded": [
+          "EPUB/media/file103.jpg"
+        ]
+      },
+      {
+        "file": "conclusion-proofs.png",
+        "section": "21-conclusion.md",
+        "sha256": "c19346d7a53d20f58a8483f442fc1f5c1f14a51594bb7536830fae8528e1086c",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch027.xhtml",
+        "embedded": [
+          "EPUB/media/file104.png"
+        ]
+      },
+      {
+        "file": "v103-service-ledger.svg",
+        "section": "24-appendix-c.md",
+        "sha256": "96e843f945b92c6c936eb729104a66143a5a4fac99b723096c4ae23f9ec0647e",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch030.xhtml",
+        "embedded": [
+          "EPUB/media/file105.svg"
+        ]
+      },
+      {
+        "file": "appd-precedent-timeline.svg",
+        "section": "25-appendix-d.md",
+        "sha256": "5e7f9129e015a0c7499820b00650b4517eaa39e1c3326dfc5de60de2123eeb53",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch031.xhtml",
+        "embedded": [
+          "EPUB/media/file106.svg"
+        ]
+      },
+      {
+        "file": "appe-cyberdeck.png",
+        "section": "26-appendix-e.md",
+        "sha256": "61cb5f9031909e2cbec047740f95ab964a6de5ffb95531a4d62ee546ffeafd30",
+        "registered": false,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch032.xhtml",
+        "embedded": [
+          "EPUB/media/file107.png"
+        ]
+      },
+      {
+        "file": "v103-offline-check.svg",
+        "section": "26-appendix-e.md",
+        "sha256": "24a42ae5c92086ceee428ed0010fdab3b8260a11b56ec61d2d68f61808c78013",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch032.xhtml",
+        "embedded": [
+          "EPUB/media/file108.svg"
+        ]
+      },
+      {
+        "file": "v103-first-year-index.svg",
+        "section": "29-appendix-g.md",
+        "sha256": "5fe1a8cbe71d9da92db743aa7ed623841181083764a3a708c842a1f2d76eafda",
+        "registered": true,
+        "caption_required": true,
+        "chapter": "EPUB/text/ch034.xhtml",
+        "embedded": [
+          "EPUB/media/file109.svg"
+        ]
+      }
+    ],
+    "art_stacking_css": true,
+    "scene_markers_absent": true,
+    "static_no_javascript": true,
+    "metadata_checked": true,
+    "navigation_sections_checked": 35,
+    "xml_documents_checked": 100,
+    "zip_integrity": true,
+    "uncompressed_first_mimetype": true,
+    "negative_controls": [
+      "deleted embedded image",
+      "deleted displayed image with bytes retained",
+      "deleted required caption",
+      "deleted real paragraph",
+      "missing CSS resource",
+      "broken internal anchor"
+    ],
+    "limits": "Structural and text proof; not EPUBCheck certification or a physical-device test."
+  },
+  "limits": "Digital distribution copies. No print proof or physical e-reader certification. Does not update private storage bundles.",
+  "retired_versions": [
+    "0.7.4",
+    "0.7.5"
+  ]
+}

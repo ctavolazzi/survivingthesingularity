@@ -102,7 +102,7 @@ export async function load() {
       date: '2025-04-07',
       author: 'Christopher Tavolazzi',
       route: '/blog/synthetic-biological-computers',
-      excerpt: "The world's first commercial \"biological computer\" fuses living human neurons with silicon hardware, potentially outpacing traditional AI systems while raising profound ethical questions.",
+      excerpt: "Explore Cortical Labs' CL1, living-neuron computing experiments, and the limits of comparing their learning and energy use with conventional AI.",
       image: '/images/surviving_the_singularity_cover_1200.png'
     }
   ];

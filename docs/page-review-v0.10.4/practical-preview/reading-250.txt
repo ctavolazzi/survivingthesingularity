@@ -1,0 +1,49 @@
+                                                                CHAPTER 14
+
+
+amount of stock and backup capacity still varies by product, operator,
+and route. Even Toyotaʼs account of just-in-time production includes a
+minimum stock of parts ready for assembly.  Toyota, Production
+System
+
+   WHENREPLENISHMENTBREAKS
+
+
+   Illustrativesequence,notafour-dayclock
+
+           Upstreamdisruption
+           Aport,supplierororderingsystemfails.
+
+
+           Deliveriesdelayed
+           Stockarriveslateortakesanotherroute.
+
+
+           Localbufferunderpressure
+           Demandandremainingstocksetthepace.
+
+
+           Serviceresponse
+           Reroute,replenishandprioritizeneeds.
+
+
+
+   Thereisnouniversaltimetoemptyshelves.
+   Buffers,alternativeroutes,replenishment
+   anddemandchangetheoutcome.
+
+
+
+
+One possible disruption sequence, not a clock. Existing stock, replacement routes, demand, and
+the specific failure determine what reaches the shelves and when.
+
+
+
+
+
+
+
+
+
+                                                                      245

@@ -1,0 +1,1974 @@
+{
+  "version": "0.11.0",
+  "checked_utc": "2026-10-08T02:56:51.303949+00:00",
+  "baseline_ref": "book-v0.10.4",
+  "baseline_commit": "bdf0584c5293a45cb75ac42b33458f51fbe58531",
+  "allowed_changed_sections": [
+    "02-introduction.md",
+    "08-chapter6.md",
+    "21-conclusion.md",
+    "23-appendix-b.md",
+    "27-chapter19.md"
+  ],
+  "sections": [
+    {
+      "file": "02-introduction.md",
+      "before_sha256": "8d0292f4174c13a8f5af41b8018051618fe9838d88196b922694908ce94ecf0d",
+      "after_sha256": "1db5576c0b9cbbcc04633ef96ed1d3ec4e5502f4cfd995ccf90fd57fc56f76b2",
+      "before_blocks": 86,
+      "after_blocks": 87,
+      "image_references": 6,
+      "scene_markers": 0,
+      "retained_blocks": 86,
+      "added_blocks": [
+        "*Surviving the Singularity* means keeping people fed, housed, and cared for as machines take on more of the work we're paid to do. It means having a say in who owns the tools and who gets their benefit. Start with food: a lost paycheck shouldn't decide whether your family eats. We can begin now, with farmers, cooks, neighbors, useful machines, and public institutions. My forecast may be wrong. A dependable dinner still matters. The work is making survival less precarious for everyone."
+      ]
+    },
+    {
+      "file": "01-preface.md",
+      "before_sha256": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+      "after_sha256": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+      "before_blocks": 38,
+      "after_blocks": 38,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 38,
+      "added_blocks": []
+    },
+    {
+      "file": "31-how-to-use.md",
+      "before_sha256": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+      "after_sha256": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+      "before_blocks": 9,
+      "after_blocks": 9,
+      "image_references": 1,
+      "scene_markers": 0,
+      "retained_blocks": 9,
+      "added_blocks": []
+    },
+    {
+      "file": "00-chapter0.md",
+      "before_sha256": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+      "after_sha256": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+      "before_blocks": 90,
+      "after_blocks": 90,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 90,
+      "added_blocks": []
+    },
+    {
+      "file": "part1-divider.md",
+      "before_sha256": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+      "after_sha256": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+      "before_blocks": 3,
+      "after_blocks": 3,
+      "image_references": 1,
+      "scene_markers": 0,
+      "retained_blocks": 3,
+      "added_blocks": []
+    },
+    {
+      "file": "03-chapter1.md",
+      "before_sha256": "9916db2c37a5a665fe82ca051a7992b44e9f2d40fb35b922c5a682ccaa125d4a",
+      "after_sha256": "9916db2c37a5a665fe82ca051a7992b44e9f2d40fb35b922c5a682ccaa125d4a",
+      "before_blocks": 102,
+      "after_blocks": 102,
+      "image_references": 4,
+      "scene_markers": 0,
+      "retained_blocks": 102,
+      "added_blocks": []
+    },
+    {
+      "file": "04-chapter2.md",
+      "before_sha256": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+      "after_sha256": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+      "before_blocks": 78,
+      "after_blocks": 78,
+      "image_references": 3,
+      "scene_markers": 0,
+      "retained_blocks": 78,
+      "added_blocks": []
+    },
+    {
+      "file": "05-chapter3.md",
+      "before_sha256": "4bdc3e8c7f7e75dca3f40366d870d8bed618d612bf6ba146fe161643a296d304",
+      "after_sha256": "4bdc3e8c7f7e75dca3f40366d870d8bed618d612bf6ba146fe161643a296d304",
+      "before_blocks": 61,
+      "after_blocks": 61,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 61,
+      "added_blocks": []
+    },
+    {
+      "file": "06-chapter4.md",
+      "before_sha256": "effaaa6d8af9e47826ec930e4f4edc7dbd41da10ae12a78c5c6eff38a35da979",
+      "after_sha256": "effaaa6d8af9e47826ec930e4f4edc7dbd41da10ae12a78c5c6eff38a35da979",
+      "before_blocks": 63,
+      "after_blocks": 63,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 63,
+      "added_blocks": []
+    },
+    {
+      "file": "07-chapter5.md",
+      "before_sha256": "77a81d1b8c6c9d2e57ccff4ca80e0c88799ed06ea10f39c061f8006f9a268186",
+      "after_sha256": "77a81d1b8c6c9d2e57ccff4ca80e0c88799ed06ea10f39c061f8006f9a268186",
+      "before_blocks": 91,
+      "after_blocks": 91,
+      "image_references": 5,
+      "scene_markers": 0,
+      "retained_blocks": 91,
+      "added_blocks": []
+    },
+    {
+      "file": "part2-divider.md",
+      "before_sha256": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a",
+      "after_sha256": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a",
+      "before_blocks": 5,
+      "after_blocks": 5,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 5,
+      "added_blocks": []
+    },
+    {
+      "file": "08-chapter6.md",
+      "before_sha256": "ff7e636984d88f0f55ca29171459e2531a5d1b9125c08a90cf68c100852a1a79",
+      "after_sha256": "5d0b77634ff13b3600864acc9875b383c5d27da5c83106d31cbc01a2eaf0fe71",
+      "before_blocks": 77,
+      "after_blocks": 84,
+      "image_references": 5,
+      "scene_markers": 0,
+      "retained_blocks": 77,
+      "added_blocks": [
+        "## Whose robots?",
+        "Use the robots to grow the food. Fine. Whose robots?",
+        "That's a reasonable objection. People with the money to own the servers, the models, and the land can decide whose needs their machines serve. When I talk about oligarchs, I mean that concentration of wealth and decision-making power. A machine can get better while its owner raises the price, restricts its use, or withdraws a service your town has come to depend on.",
+        "The machines aren't all locked away. Useful models can run on consumer hardware. But a local computer can still depend on somebody else's license, replacement parts, or online service. Ownership has to reach the terms you depend on.",
+        "Norbert Wiener saw the problem in 1949. Writing to autoworkers' union president Walter Reuther on August 13, he explained that he'd refused an industrial consultancy because of the unemployment automatic factories could cause. Then he wrote: \"it is manifestly not enough to take a negative attitude on this.\" He proposed that organized labor take part in producing the machines and direct their profits toward labor's benefit. [Wiener, letter to Walter Reuther](https://libcom.org/history/father-cybernetics-norbert-wieners-letter-uaw-president-walter-reuther)",
+        "Elinor Ostrom supplied evidence for another piece of the argument. Her studies of shared fisheries, forests, and other resources found that users could develop rules and enforce them themselves. The 2009 economics prize recognized that work. Those findings give us a useful starting point for shared machines: examine who makes the rules, who enforces them, and how people settle disputes. [Royal Swedish Academy of Sciences, 2009 economics prize](https://www.nobelprize.org/prizes/economic-sciences/2009/press-release/)",
+        "That's the point of Rung 5 in [](sts:chapter19): own the necessary machines together, and make the right to their output dependable. Ask who sets the price, who can change the rules, and where a person can appeal when dinner doesn't arrive. Put those answers in the agreement. The same capability can serve different arrangements. We have work to do on both."
+      ]
+    },
+    {
+      "file": "09-chapter7.md",
+      "before_sha256": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+      "after_sha256": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+      "before_blocks": 123,
+      "after_blocks": 123,
+      "image_references": 4,
+      "scene_markers": 0,
+      "retained_blocks": 123,
+      "added_blocks": []
+    },
+    {
+      "file": "10-chapter8.md",
+      "before_sha256": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+      "after_sha256": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+      "before_blocks": 107,
+      "after_blocks": 107,
+      "image_references": 8,
+      "scene_markers": 0,
+      "retained_blocks": 107,
+      "added_blocks": []
+    },
+    {
+      "file": "11-chapter9.md",
+      "before_sha256": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+      "after_sha256": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+      "before_blocks": 100,
+      "after_blocks": 100,
+      "image_references": 10,
+      "scene_markers": 1,
+      "retained_blocks": 100,
+      "added_blocks": []
+    },
+    {
+      "file": "part3-divider.md",
+      "before_sha256": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e",
+      "after_sha256": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e",
+      "before_blocks": 5,
+      "after_blocks": 5,
+      "image_references": 1,
+      "scene_markers": 0,
+      "retained_blocks": 5,
+      "added_blocks": []
+    },
+    {
+      "file": "12-chapter10.md",
+      "before_sha256": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+      "after_sha256": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+      "before_blocks": 77,
+      "after_blocks": 77,
+      "image_references": 3,
+      "scene_markers": 0,
+      "retained_blocks": 77,
+      "added_blocks": []
+    },
+    {
+      "file": "13-chapter11.md",
+      "before_sha256": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+      "after_sha256": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+      "before_blocks": 104,
+      "after_blocks": 104,
+      "image_references": 6,
+      "scene_markers": 0,
+      "retained_blocks": 104,
+      "added_blocks": []
+    },
+    {
+      "file": "14-chapter12.md",
+      "before_sha256": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+      "after_sha256": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+      "before_blocks": 82,
+      "after_blocks": 82,
+      "image_references": 4,
+      "scene_markers": 0,
+      "retained_blocks": 82,
+      "added_blocks": []
+    },
+    {
+      "file": "15-chapter13.md",
+      "before_sha256": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+      "after_sha256": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+      "before_blocks": 73,
+      "after_blocks": 73,
+      "image_references": 4,
+      "scene_markers": 0,
+      "retained_blocks": 73,
+      "added_blocks": []
+    },
+    {
+      "file": "16-chapter14.md",
+      "before_sha256": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+      "after_sha256": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+      "before_blocks": 87,
+      "after_blocks": 87,
+      "image_references": 6,
+      "scene_markers": 0,
+      "retained_blocks": 87,
+      "added_blocks": []
+    },
+    {
+      "file": "17-chapter15.md",
+      "before_sha256": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+      "after_sha256": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+      "before_blocks": 73,
+      "after_blocks": 73,
+      "image_references": 5,
+      "scene_markers": 1,
+      "retained_blocks": 73,
+      "added_blocks": []
+    },
+    {
+      "file": "18-chapter16.md",
+      "before_sha256": "3b57218536ba9143187ae52131c4b96e00941d368e0c15b2abe953df0d974788",
+      "after_sha256": "3b57218536ba9143187ae52131c4b96e00941d368e0c15b2abe953df0d974788",
+      "before_blocks": 62,
+      "after_blocks": 62,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 62,
+      "added_blocks": []
+    },
+    {
+      "file": "19-chapter17.md",
+      "before_sha256": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+      "after_sha256": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+      "before_blocks": 91,
+      "after_blocks": 91,
+      "image_references": 9,
+      "scene_markers": 1,
+      "retained_blocks": 91,
+      "added_blocks": []
+    },
+    {
+      "file": "20-chapter18.md",
+      "before_sha256": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+      "after_sha256": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+      "before_blocks": 108,
+      "after_blocks": 108,
+      "image_references": 4,
+      "scene_markers": 0,
+      "retained_blocks": 108,
+      "added_blocks": []
+    },
+    {
+      "file": "27-chapter19.md",
+      "before_sha256": "2da9717a4cfcca2ed6a3d341b92b6e80a48c2c468d5123aacfac32da9d628359",
+      "after_sha256": "807e13306e7962a8efe20ea2686f27c7670aa1b0adbbc9e2026b11c6f4523bca",
+      "before_blocks": 102,
+      "after_blocks": 114,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 102,
+      "added_blocks": [
+        "## Get involved",
+        "If you're worried about who controls this technology, give that concern somewhere to go. Talk to your government. Form a coalition with your peers. Get together with local business owners and petition your city council. Write a book. Pick a decision you want changed and work on it with other people.",
+        "Take fucking action.",
+        "Posting can recruit neighbors, share records, and get a proposal into people's hands. Connect that work to a request somebody has the power to grant: fund the kitchen, protect the water, put the machines into community ownership. Name the decision and the person or body responsible for it.",
+        "Find the next meeting agenda. Check the public-comment rules and speaking limit. Write one request that fits the time: what you want, who it serves, and what the next step would cost. Bring the longer version for the record. Ask for a specific next step, such as a staff report or a budget item, and a date when you can follow up.",
+        "Afterward, send the request in writing. Read the minutes. Find out whether anyone was assigned to act, and come back when the item returns. A speech starts a conversation; the follow-up keeps the request alive.",
+        "If you can't get to the room, ask the clerk how to submit written comments or participate remotely. You can help research the proposal, call an office, recruit support, or arrange transport and childcare for someone who can attend. Organizing needs more than whoever holds the microphone.",
+        "Tucson shows what a public decision can change, and where its reach ends. On August 6, 2025, its mayor and council ended negotiations over Project Blue's proposed city annexation and development agreement. They canceled the annexation hearing and removed the agreement from the next agenda. [City of Tucson, adopted motions](https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/motions-adopted-under-aug-6.pdf)",
+        "The project continued outside city limits. Pima County documented activity at its construction site in May 2026. Residents could influence the council's decision; they couldn't settle every decision governing the project. That means finding the next authority and keeping at it. [Pima County, construction update](https://content.civicplus.com/api/assets/6063ed1f-cc11-4876-bbc8-d64025507660)",
+        "[Rung 5](sts:sts.chapter19.b0035) gives the other half of the work: people organizing to own infrastructure and extend a service. You can press a council to refuse a deal or organize a cooperative to build something worth having. Both require people to make decisions together.",
+        "Frederick Douglass put the demand plainly in 1857: \"Power concedes nothing without a demand. It never did and it never will.\" [Douglass, speech excerpt](https://blogs.loc.gov/law/files/2020/05/2020-Law-Day-Public-Program-Booklet-042220.pdf)",
+        "Make one. Then follow it through."
+      ]
+    },
+    {
+      "file": "21-conclusion.md",
+      "before_sha256": "cb17a1207e15f158776f3790ffdfc223b3653a80a3c394e0c338cd9b3f3429bf",
+      "after_sha256": "a94ecf4a59a310438beab7376828829ca3be9d514a75240588d01cef49a7498e",
+      "before_blocks": 65,
+      "after_blocks": 71,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 65,
+      "added_blocks": [
+        "## A future called solarpunk",
+        "One name for a future like that is solarpunk.",
+        "On April 30, 2008, a blogger writing as John-Robert proposed the word for a literary genre, taking inspiration from a cargo ship using wind to supplement its engines. He imagined modern technology combined with older tools in an economy powered by renewables. [John-Robert, From Steampunk to Solarpunk](https://republicofthebees.blogspot.com/2008/04/from-steampunk-to-solarpunk.html)",
+        "For this book, the useful idea is a future where renewable energy, repairable tools, and shared decisions make daily life more secure. Solar points toward the sun and the living world every machine depends on. Punk asks whose hands the tools are in. A working greenhouse, a shared workshop, and a funded meal route give that picture substance.",
+        "In her 2014 National Book Foundation speech, Ursula K. Le Guin argued that writers can help people imagine alternatives to the way they live, and that arrangements of human power can be changed. [Le Guin, National Book Foundation Medal speech](https://www.ursulakleguin.com/nbf-medal)",
+        "The picture is an invitation to work. Soil still needs tending. Somebody still has to fix the controller and deliver the meal. Hope gets useful when we give it a job."
+      ]
+    },
+    {
+      "file": "22-appendix-a.md",
+      "before_sha256": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+      "after_sha256": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+      "before_blocks": 12,
+      "after_blocks": 12,
+      "image_references": 0,
+      "scene_markers": 0,
+      "retained_blocks": 12,
+      "added_blocks": []
+    },
+    {
+      "file": "23-appendix-b.md",
+      "before_sha256": "e125bdbef72c4741849841c1e2dfafb38d23ea773224431a0183ebfb3ebd5eb7",
+      "after_sha256": "019a664a731f9cd7cd8d74cb848fbca21f64806d35fa68c64dc2ac58a070e704",
+      "before_blocks": 151,
+      "after_blocks": 153,
+      "image_references": 0,
+      "scene_markers": 0,
+      "retained_blocks": 151,
+      "added_blocks": [
+        "\n## Ownership, participation, and solarpunk",
+        "- **Norbert Wiener:** [Letter to Walter Reuther](https://libcom.org/history/father-cybernetics-norbert-wieners-letter-uaw-president-walter-reuther), 13 August 1949, online transcript. Records his refused industrial consultancy and proposal for organized labor to participate in machine production and direct profits toward labor's benefit. The archival original was not inspected; the letter does not establish implementation or success.\n- **Elinor Ostrom:** Royal Swedish Academy of Sciences, [2009 economics prize press release](https://www.nobelprize.org/prizes/economic-sciences/2009/press-release/), 12 October 2009. Summarizes evidence of shared natural-resource governance, including decision-making and enforcement. These cases inform the book's questions about shared machines; they do not establish the success of neighborhood AI services or guarantee fairness through local ownership.\n- **City of Tucson:** [Motions Adopted Under August 6, 2025, Study Session Item 8: Project Blue](https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/motions-adopted-under-aug-6.pdf). Adopted motions ending negotiations over the proposed city annexation and development agreement and canceling the scheduled hearing. This records the city's action, not a prohibition on development in unincorporated Pima County.\n- **Pima County Administrator:** [Response from Project Blue Contractor Regarding Notice of Violation for Fugitive Dust](https://content.civicplus.com/api/assets/6063ed1f-cc11-4876-bbc8-d64025507660), 22 May 2026. County memorandum and attached records document construction-site activity in May. They establish that the project continued after Tucson's decision, not that construction was complete.\n- **Frederick Douglass:** 1857 speech excerpt, reproduced in the American Bar Association and Law Library of Congress [Law Day 2020 program booklet](https://blogs.loc.gov/law/files/2020/05/2020-Law-Day-Public-Program-Booklet-042220.pdf), printed page 18. Institutional reproduction of the passage on struggle and demands. The original argument concerns emancipation; its use here is an analogy about collective action, not a guarantee that every demand succeeds.\n- **Solarpunk:** John-Robert, [From Steampunk to Solarpunk](https://republicofthebees.blogspot.com/2008/04/from-steampunk-to-solarpunk.html), 30 April 2008, original blog post. Proposes the term for a literary genre inspired by a wind-assisted cargo ship. The conclusion's application to shared decisions, repair, and meal provision is this book's interpretation.\n- **Ursula K. Le Guin:** [National Book Foundation Medal acceptance speech](https://www.ursulakleguin.com/nbf-medal), 19 November 2014, transcript on her website. Supports the attributed paraphrase about imagining alternatives and changing arrangements of human power. Her speech does not name solarpunk or endorse this book's proposals."
+      ]
+    },
+    {
+      "file": "24-appendix-c.md",
+      "before_sha256": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+      "after_sha256": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+      "before_blocks": 31,
+      "after_blocks": 31,
+      "image_references": 1,
+      "scene_markers": 0,
+      "retained_blocks": 31,
+      "added_blocks": []
+    },
+    {
+      "file": "25-appendix-d.md",
+      "before_sha256": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069",
+      "after_sha256": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069",
+      "before_blocks": 17,
+      "after_blocks": 17,
+      "image_references": 1,
+      "scene_markers": 0,
+      "retained_blocks": 17,
+      "added_blocks": []
+    },
+    {
+      "file": "26-appendix-e.md",
+      "before_sha256": "fe4d080c0c9a62e99d81a1aa975b56afefa619057219bbd980855b460be53793",
+      "after_sha256": "fe4d080c0c9a62e99d81a1aa975b56afefa619057219bbd980855b460be53793",
+      "before_blocks": 38,
+      "after_blocks": 38,
+      "image_references": 2,
+      "scene_markers": 0,
+      "retained_blocks": 38,
+      "added_blocks": []
+    },
+    {
+      "file": "28-appendix-f.md",
+      "before_sha256": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4",
+      "after_sha256": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4",
+      "before_blocks": 48,
+      "after_blocks": 48,
+      "image_references": 0,
+      "scene_markers": 0,
+      "retained_blocks": 48,
+      "added_blocks": []
+    },
+    {
+      "file": "29-appendix-g.md",
+      "before_sha256": "d67719a313518aa6fd41a7cb1464c9dd8dcd236ab14a3a35ad7e214cd460f63a",
+      "after_sha256": "d67719a313518aa6fd41a7cb1464c9dd8dcd236ab14a3a35ad7e214cd460f63a",
+      "before_blocks": 29,
+      "after_blocks": 29,
+      "image_references": 1,
+      "scene_markers": 0,
+      "retained_blocks": 29,
+      "added_blocks": []
+    },
+    {
+      "file": "30-appendix-h.md",
+      "before_sha256": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44",
+      "after_sha256": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44",
+      "before_blocks": 15,
+      "after_blocks": 15,
+      "image_references": 0,
+      "scene_markers": 0,
+      "retained_blocks": 15,
+      "added_blocks": []
+    }
+  ],
+  "stable_ids": {
+    "unchanged_inherited_ids": 2302,
+    "reviewed_replacement_ids": [
+      "sts.conclusion.b0081"
+    ],
+    "inherited_blocks": 2303,
+    "current_blocks": 2331,
+    "new_ids": 28
+  },
+  "index_sha256": "9606d78e1d61583676933fdd3447eccf51ce6ae6ee3e67e787c33cbcbf9e8be7",
+  "asset_files_checked": 296,
+  "assets": [
+    {
+      "file": "publication/assets/cover-art.svg",
+      "git_blob": "af17c8cfc30c5bd0937f6370b1728ee35d82541b",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/FONT-COPYRIGHTS.txt",
+      "git_blob": "02809519fedc8c1cf64dca95a85b3e401a9950da",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/JetBrainsMono-Bold.ttf",
+      "git_blob": "8c93043de6454ad2d5575f0751150c6551d9c588",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/JetBrainsMono-OFL.txt",
+      "git_blob": "8bee4148c1d54dbf5dae6d6c117fc80414266abb",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/JetBrainsMono-Regular.ttf",
+      "git_blob": "dff66cc50702c75abd025dcf49f62a4dcc2d72de",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/JetBrainsMono-SemiBold.ttf",
+      "git_blob": "a70e69bd21aa901f93ffa280f691cf513d13859d",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SOURCES.md",
+      "git_blob": "8937c2d05cbe66c19b7b75ec3e1b7499ead51fbf",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSansPro-LICENSE.txt",
+      "git_blob": "1177330426de9f788fedeae13dfe6a195a06d3b2",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSansPro-Regular.otf",
+      "git_blob": "9edaa2d22eca013c035654d3db3ed759c44a93d1",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSansPro-RegularIt.otf",
+      "git_blob": "634f8ffcd3f41b4ac6b421bd4bbaa239a3125279",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSansPro-Semibold.otf",
+      "git_blob": "7fbac1ca8edb552e048337082f76696ad7333acc",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSansPro-SemiboldIt.otf",
+      "git_blob": "9ff80c3ec02e3ce27d71f51409f65fbc2744dca2",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSerif4-It.otf",
+      "git_blob": "550c8547051aefd8a40632307e6e3433dbd103b3",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSerif4-LICENSE.md",
+      "git_blob": "5871e1f3d1b3362453b3a1f6c493fbefdbd3dcf3",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSerif4-Regular.otf",
+      "git_blob": "fc9f84e94b2537b3cc10aaebcab08a0bc2a0e16b",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/SourceSerif4-Semibold.otf",
+      "git_blob": "5732c382071691b21aa76a6e340a1944dea7a567",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/fonts/font-provenance.json",
+      "git_blob": "6db45580275a9c0e268a4c957243fb7c0cc656cb",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/01-grain-and-gripper.svg",
+      "git_blob": "6e81109f408e90772ffde27a2c5efc1ec65c22a0",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/02-event-horizon.svg",
+      "git_blob": "b3440aa93d763ece1aa51455a96d1071dcecf50d",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/03-centrifugal-governor.svg",
+      "git_blob": "b1a4ccf8fcc16848768f6921bf95296888f0efd7",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/04-seed-and-root.svg",
+      "git_blob": "c00d28587bf5d781ba43dcfed636615d79e43716",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/05-roof-and-joint.svg",
+      "git_blob": "93730e0e250b94f28c893392ab971073659bb32d",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/06-shared-table.svg",
+      "git_blob": "235435f71f3da3a227c9536a31c5483f7451b884",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/07-pamphlet-and-thread.svg",
+      "git_blob": "f3c9de078b4f7e761694a08aca02d64015484bb0",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/08-water-pump.svg",
+      "git_blob": "8c4c954c29411322d1fc8f0980c04b0f6d3d76a2",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/09-repair-tools.svg",
+      "git_blob": "bdacdd6bb96a40dd3ce6373d8f50d31c8893c9a5",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/10-open-gate.svg",
+      "git_blob": "ba56db8088eadd5a89641268f5c79210924f4616",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/11-soil-profile.svg",
+      "git_blob": "b058d8029d7e09e5f97add0877caf3836ee76f35",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/12-continuity-route.svg",
+      "git_blob": "dbaf39afa5f2f8236a650b81ab5442ebdb1bc6f9",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/contact-sheet.html",
+      "git_blob": "c45925c1d49d0c12dbb03fe51c361a0f99771866",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/contact-sheet.png",
+      "git_blob": "ca01f9f9934b557b124619a872bccbcb869601bc",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/cover-harvest-proof.png",
+      "git_blob": "464bbd95da5596511dd2686842de1bb48a4d72cf",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/cover-harvest.svg",
+      "git_blob": "3ea4a51ed47bbb4e992a6ee043fcf0253f6ef235",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/cover-print-proof.html",
+      "git_blob": "74a4e6c64b99abd0de2c88f7d2e283a7055da01d",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/cover-print-proof.pdf",
+      "git_blob": "8603a403ef2d3ccc5061b18b5f0aa95e53e9ffda",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/cover-print-proof.png",
+      "git_blob": "d70830cb4e76f373c82a7500e9664392705b21f1",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/cover-proof-results.json",
+      "git_blob": "ba3091018eaf3f47af840d5aef296e97f1821961",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/generate_cover.py",
+      "git_blob": "5f1433833e2ffb9cc57ca8ed060d89a652e22594",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/generate_motifs.py",
+      "git_blob": "b79a76496cc900d396fed6894aab12552144c49b",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/manifest.json",
+      "git_blob": "ce9e8bb0875fd2ae65a8d9fe36173ff65095cd62",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/01-grain-and-gripper.svg",
+      "git_blob": "07218e022a7ff6f9d950f256bd65a743f052fe3e",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/02-event-horizon.svg",
+      "git_blob": "059cd2b162fab1f849a52462186ae0c05deea513",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/03-centrifugal-governor.svg",
+      "git_blob": "7cef16ba3cf201d37b024259ef028d95855a0c16",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/04-seed-and-root.svg",
+      "git_blob": "0c61393b0d3114c4a0187501a35cad9cef23de32",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/05-roof-and-joint.svg",
+      "git_blob": "f2088a549aae3fa17f457820ed500420c7cbbc2b",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/06-shared-table.svg",
+      "git_blob": "c832410be4d9893d36c4d6a43c6bf230f6bbc7d3",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/07-pamphlet-and-thread.svg",
+      "git_blob": "fd2d1d8d0742b158ecf32ab368c3768587b03304",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/08-water-pump.svg",
+      "git_blob": "fa03d5230d7632dbd91c32b92596f93603940e89",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/09-repair-tools.svg",
+      "git_blob": "ed3b40cb65568dc549e8b4389c4afb3a4f1210cb",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/10-open-gate.svg",
+      "git_blob": "496e041321ad9b2302100db8d9d4626eed1a993c",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/11-soil-profile.svg",
+      "git_blob": "67b14631b1c33582ed36ceb493f2fb130608f3e0",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/12-continuity-route.svg",
+      "git_blob": "60081b6f65c125530f2b44caacf9865b4796e435",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/monochrome/cover-harvest.svg",
+      "git_blob": "411bc542570c13af7f4c3093f826719acb2aded0",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/print-size-proof.html",
+      "git_blob": "f53e5448d9a7a0f1b562d1d784fbd8c15e25aa86",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/print-size-proof.pdf",
+      "git_blob": "136824d233c17ce2321ee19a0ae374f97b52b61c",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/print-size-proof.png",
+      "git_blob": "432e4fb1fe012f4292091e6e04fa9d444a183fd6",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/proof-results.json",
+      "git_blob": "026286e6cea2a966875b903c8b25d13aa4e23ec3",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/proof_cover.py",
+      "git_blob": "1e6268702ff067a3042b6cbf15f87fb86aa46844",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/motifs/proof_motifs.py",
+      "git_blob": "d84bbdc0ab352f7aa3935ea37a9755f71f5fb846",
+      "unchanged": true
+    },
+    {
+      "file": "publication/assets/ornament.svg",
+      "git_blob": "4a9e9b326744dd6ac612c01d35081f16cc3f179f",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/book-cover.png",
+      "git_blob": "29a783359106378d8e55cc2f51e592de4212f21d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/appa-redirection-matrix.svg",
+      "git_blob": "9bfa5f43885aeaa1e4509969ffb5d4ad0d13de36",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/appd-precedent-timeline.svg",
+      "git_blob": "68e0c4406acc9863d59a18b20eddf7ac05bd1767",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/appe-cyberdeck.png",
+      "git_blob": "5d983d5b40c2bcb006542a8a7accf7d156c1fb32",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch00-madrone-bark.jpg",
+      "git_blob": "20eefb27f5ea52c55c86a9946842eabec1f83d5d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch01-atlas.jpg",
+      "git_blob": "b4040b09561e0c64d8eb8d21783bf9b1ccd099fa",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch01-atlas.webp",
+      "git_blob": "0e1e38e37ee81071f6b28fe8f8856b223efd9c21",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch01-devendra.png",
+      "git_blob": "81f4103354a775620fbcae5cefb58e7c3c7a5c97",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch01-m87-black-hole.jpg",
+      "git_blob": "5a6ee3d5df3f24b29d5195eb41360a6671955fe1",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch01-pc-rig.png",
+      "git_blob": "91d15c123994f0f6de0136a2f296467c93eefd8d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch02-eighteen-days.svg",
+      "git_blob": "19a9c10c983d46f67558bc709a0adc0c8f073286",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch02-factory-robots.jpg",
+      "git_blob": "46427a6b40db244e80ad34c4b7d70cdce7392974",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch02-factory-robots.webp",
+      "git_blob": "a00ce0504f899f282574415ac907604193856281",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch02-waymo.jpg",
+      "git_blob": "6b39eb9eeb52600166199d4bcb5ac6e50fb202c5",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch02-waymo.webp",
+      "git_blob": "2dd18e60e24ceac48461b95dcf4a209df129a12f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch03-echo-dot.jpg",
+      "git_blob": "220c81990640550caab3e0c687cb7e316c098d38",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch03-echo-dot.webp",
+      "git_blob": "341262858a5027704da63cbf2f498a8a877dbc46",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch03-falcon-heavy.jpg",
+      "git_blob": "9f19a20c5c77079956ed7df55bf8abdf96cab230",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch04-da-vinci.jpg",
+      "git_blob": "ab70e769387d48572415d8fa5f43c2e6326fa583",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch04-da-vinci.webp",
+      "git_blob": "489527c144b8ff019cfb9ad735cd30cc36fa856c",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch04-hubble-deep-field.jpg",
+      "git_blob": "9410bdea9ccc2a1b61443567f23c5d85b92c6ff8",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch05-closed-loop-cycle.svg",
+      "git_blob": "e25fbf41e83681da87c560ba35d1a9d376242cbb",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch05-horses-tractors.svg",
+      "git_blob": "c35f8a72c91ee36ebf02b4f4777aefd37d4dc804",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch05-nao.jpg",
+      "git_blob": "7b6fa2240c541fa66ef4b6565334a4de4e4be737",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch05-nao.webp",
+      "git_blob": "2986f31a61496405a6428322bc1d2c32d9b63f07",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch05-sdo-sun.jpg",
+      "git_blob": "83ee4b412665ac4bedc3578192369494989aaddf",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch05-woodstove.png",
+      "git_blob": "c05a0a93a932cd920d068fc171db64c3216eac30",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch06-capability-access.svg",
+      "git_blob": "0de5d89e24dbec56d4efef2939b73a95f511c446",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch06-edmond-de-belamy.png",
+      "git_blob": "c6d2e32253a43b1f7257e7265c7c8ca7087e0ad2",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch06-edmond-de-belamy.webp",
+      "git_blob": "392b1b662f4bb3ee0c3d5875d23340e7c81c6b93",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch06-tool-wall.png",
+      "git_blob": "eac97dda29497b96fb31ff8f91a3a491370943fd",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch07-canned-music-1929.jpg",
+      "git_blob": "ccc95ced254425f2b175bb3eae4d5b3d96ed35dd",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch07-canned-music-1930.jpg",
+      "git_blob": "33e3b937cb6975f9012811bfd2877090a269b1ca",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch07-chess-battle-lines.jpg",
+      "git_blob": "cea51cdf292d5e3b87828a2993cb09a5a8721363",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch07-pepper.jpg",
+      "git_blob": "199f289efe93c2e7517fecccd06a6493a4404a34",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch07-pepper.webp",
+      "git_blob": "7455a415cf84b51379d2d91d3683d4d0d4b4244b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-cognitive-extraction.svg",
+      "git_blob": "d18252fcbb4113d81c25b86b96920598d6764ec7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-commons-loop.svg",
+      "git_blob": "1689456234c60e49b72df84e4ff14cab67c8fe56",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-firewall-pipeline.svg",
+      "git_blob": "a7f0aaa2d58a03ecf23895d5e87bc7072cdd896f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-focus-recovery.svg",
+      "git_blob": "91bd8c2c0a66616078544b85a139c5cbf62e0118",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-gary.png",
+      "git_blob": "0b8e094f0b19e9e7aec63c3e0a650f46da71b2ee",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-info-architectures.svg",
+      "git_blob": "d690580a47ec51e37ffde5720c88c430bf302ee8",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-isolated-decay.svg",
+      "git_blob": "9a22089d9346a0d20868e69715f3c38ff75c181b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-sophia.jpg",
+      "git_blob": "c21938b10b685273bcdba44e6d42a4b855da5b7b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-sophia.webp",
+      "git_blob": "bcfc1006417e878ea38c8f3cd24946482b32985c",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch08-star-vs-mesh.svg",
+      "git_blob": "538a0efb05e9ffce1b116baf83f040dc052ae61a",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-3d-printer.jpg",
+      "git_blob": "070c17eacfc87075ab742d1f2230324f1383e9b1",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-act-reactor.svg",
+      "git_blob": "51851c6d9e89e402aa6538019ea9ea2b9f7c3ad9",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-cnc-bed.svg",
+      "git_blob": "8e34b3f9da615d5ca53f8d39e34096dbd4978bde",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-controller.png",
+      "git_blob": "f4ec65dfb5c5068bc5ea9b1428a0b8a09c901aab",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-greenhouse-bus.svg",
+      "git_blob": "4b51ae912750d19e580ac80ad8b32dfc8a9481ff",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-hyperlocal-vs-global.svg",
+      "git_blob": "10a45ac52d48b7eb3a7b0306347aa024d36e1457",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-npk-loop.svg",
+      "git_blob": "29a5347070b1bcaa13fc06a688380f5caff26aab",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-region-ring.svg",
+      "git_blob": "61130650a7a259b181be19f7e6e8928acd0aafcc",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-reuben.png",
+      "git_blob": "f6c1fee8e7f65b754e1403627c859a687d0830b7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-sophia-un.jpg",
+      "git_blob": "d692ee4466c7566bc0937e8ee6bab98d43af46a8",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch09-sophia-un.webp",
+      "git_blob": "52c0d204a194e0cae1819a2d3a0e14862fc7c108",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch10-algorithm-unlock.svg",
+      "git_blob": "c60f2f0e06f2f8f801bc06884bb2d6a34512036b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch10-model-collapse.svg",
+      "git_blob": "f569085125f699b22997e9047925dcedcda6a7c6",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch10-nyse.jpg",
+      "git_blob": "b6228e8f5e51383e3d3f4f946287e66434ccf527",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch10-nyse.webp",
+      "git_blob": "0babcad117123da4ebc8fd0b348e7dd89145c302",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch11-cooling-loop.svg",
+      "git_blob": "2a11d98f2d45ba3e5f6b742a8aef476a578e5658",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch11-crucible.png",
+      "git_blob": "7895f2ffa7e88f2eaa496115d28a6acf87a3d958",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch11-rack-architecture.svg",
+      "git_blob": "06f0e828e60334da2b007d0350ba3992152bd7fa",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch11-spot.jpg",
+      "git_blob": "2506fce16f5bddfada0913fc57552c5c2a4f846f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch11-spot.webp",
+      "git_blob": "06ad2cee7d13f52390408bb5e5a4ac5602005e36",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch12-csa-network.svg",
+      "git_blob": "ac8042f3aad7533954169b2cf3e0c5c784d456ec",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch12-farmbot-watering.jpg",
+      "git_blob": "3663e8a80f4dd98703ad2e76c506a5089cb1f617",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch12-farmbot-watering.webp",
+      "git_blob": "af52e41688a9e261a7fe1d178330c16f2ca7a239",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch12-farmbot.jpg",
+      "git_blob": "6e2ff44326968ea8c4e4a8706049098f91d29a8a",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch12-farmbot.webp",
+      "git_blob": "242a0c21d2a2a795266ee248e000d05484562670",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch12-shouse-engine.svg",
+      "git_blob": "f0b420339818bae86b821dd808ea4fddd063b904",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch13-c-channel.svg",
+      "git_blob": "915a2ce53b6cc0f392a8832eff0c37ce92bf36bc",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch13-pier-alignment.svg",
+      "git_blob": "83e1f88cef9dd24cf2f2b4eaaa1352746ca9645d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch13-shell-architecture.svg",
+      "git_blob": "0f1b05f1b7e05fa15a054b9254124e26214c7de7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch13-solar-barn.jpg",
+      "git_blob": "92fc358e3d11e48e03470f93745cc49ca9670679",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch13-thermal-seal.svg",
+      "git_blob": "d59b0d4315345b428f89003145f1a9d2c74f51f7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch13-vise.png",
+      "git_blob": "2f5fce4eb9bb1253baa08d731a20d9935b86fa3b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch13-wet-room.svg",
+      "git_blob": "6ec14ed4d858f60ed1a94dc77b25c705fbcfa039",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch14-bell.png",
+      "git_blob": "9ea13dc2c3a89b2920e687e4b47d2ebecb7942a7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch14-dead-mall.jpg",
+      "git_blob": "f47522186df7fd777015e4e843038f6d2e983c29",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch14-frank.png",
+      "git_blob": "86f25ba27a3892fb2b2aec505321bbf5b9fec56f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch14-logistic-shockwave.svg",
+      "git_blob": "a105622a728d221dda6ca3b5246b419899d11508",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch14-mesh-comms.svg",
+      "git_blob": "aff65051fca7389ac06b1e8719db53540e6644ec",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch15-clt-firewall.svg",
+      "git_blob": "de11850c03210c04d01831ff68a525cbd1743f98",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch15-probe.png",
+      "git_blob": "295aad7bf4136f7c39a05980ba18e36699a74b77",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch15-soil-food-web.svg",
+      "git_blob": "0baaf90f7fc749346591a52eb94d34329dbd0644",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch16-algorithmic-judo.svg",
+      "git_blob": "950e55839bccef97de2a87f0cc8289685d648759",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch16-model-collapse.svg",
+      "git_blob": "655df1608260e0966e24b81e674c1ba8c980c06f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch16-servers.jpg",
+      "git_blob": "c29104cd3032160675d48d03d3d5fab0835273d3",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch16-sneakernet.svg",
+      "git_blob": "e356d67dae10cae7c846ffe63a02cd9cb4bb2357",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch17-algae-loop.svg",
+      "git_blob": "39d63223ab2396f49a87fb94b78162c486fb159d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch17-dc-native.svg",
+      "git_blob": "481fdd28b29c40e8db56f107d4d67670675d6630",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch17-fab-lab.svg",
+      "git_blob": "1f4bddccec563fc9058dd7d6e84152f287d789eb",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch17-field-kit.png",
+      "git_blob": "b407f07afff32cbd2a6d09b456891667e8999cad",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch17-lora-node.svg",
+      "git_blob": "05e9d753676715c4c39b3a88f64115a7f453167b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch17-photobioreactor.png",
+      "git_blob": "68af8ca89938cdb011da56dae026a31c754e11d0",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch17-workbench.jpg",
+      "git_blob": "3988aca608235d842d164dc3b639b95dc9283109",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch18-compass-map.jpg",
+      "git_blob": "b8b9017127b9dad24d285b4fda990a330ceab13d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch18-social-contract.svg",
+      "git_blob": "5a055cc1fe3d821f5eefd99f7bfdfe4c1f400492",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch19-conversion-ladder.svg",
+      "git_blob": "7311fe76d1d19b9efdcc3ce4a517809282aa15e5",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/ch19-iss-sunrise.jpg",
+      "git_blob": "81632d1cc6a85d43ac8a29e4196a109d7550a0ac",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/conclusion-proofs.png",
+      "git_blob": "889946d8ead579644e82864412f3bc34375172fa",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/coop-cast.png",
+      "git_blob": "75c83bfa7559861c6c4027411f0117ebe83fe91d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/coop-cast.svg",
+      "git_blob": "bd26c2cdafae7cf8899ce1ee12d2cdc8b4d9324e",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/credits.json",
+      "git_blob": "1a97654221098c59a9489d11b60ca7d4fa69b80a",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/intro-asimo.jpg",
+      "git_blob": "f824f935a1774720852082f16af03e65c811ff3e",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/intro-asimo.webp",
+      "git_blob": "43d0a3e90510b68ec3e84470bd88a8e4f87c9efa",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/intro-food-insecurity.svg",
+      "git_blob": "eabb7aa54dbdb8c80175c3d6cd99d27790d3cd04",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/intro-nine-stages.svg",
+      "git_blob": "7212c7df727b9ba9aece2353498b1c6ee4625794",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/intro-ox-plow.png",
+      "git_blob": "d8bf036c3342bc154d54ed4e6e494d4295221af4",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/intro-robots.png",
+      "git_blob": "1927b3872f4b346f67390a0769b01bbf3b8dd629",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/original-04-seed-and-root.svg",
+      "git_blob": "f64852f533c941457f97c7485cc2d3e5867bed06",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/original-07-pamphlet-and-thread.svg",
+      "git_blob": "a61f8fcb1bb66047bca30c269b167007415d4d86",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/original-09-repair-tools.svg",
+      "git_blob": "8366a5ca6de468453d4c1036137fac27b45e2ccc",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/original-11-soil-profile.svg",
+      "git_blob": "3fe7058d903794108d12e510d0d7edc1c69d0230",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/part1-divider.png",
+      "git_blob": "9722d619a0cbb8380bb8b60249c9670363cc3d87",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/part2-divider.png",
+      "git_blob": "6a8e655485e8e8ce442a3c86f627ffa09832500c",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/part3-divider.png",
+      "git_blob": "8d59d84863a86aee7a1696dafa6ed83281bbdba4",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/preface-reading-rage.png",
+      "git_blob": "f5c6b758ba2e934f3e7ee157ee24aed0f3619239",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/appd-precedent-timeline.svg",
+      "git_blob": "1c1fc379fa485dd7a643c40103b8c9e2617dfd48",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch02-eighteen-days.svg",
+      "git_blob": "278e9c88e725b9fab44ec84864c40b8df3e200fe",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch05-horses-tractors.svg",
+      "git_blob": "e0abbd4c3b23f6bc9a041f1de14351941842beb6",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch06-capability-access.svg",
+      "git_blob": "1114d757a1b3946dcd8c42d0882c04433844eef8",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch08-cognitive-extraction.svg",
+      "git_blob": "9e76cee159910866ff340eec3a6e0ff6327bc3f5",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch08-firewall-pipeline.svg",
+      "git_blob": "afbee4551b2540c9148107c928fc5077985bf7a5",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch08-focus-recovery.svg",
+      "git_blob": "f50c3c6eb85b17c85a4a8886bd29685779e7d010",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch08-info-architectures.svg",
+      "git_blob": "2b2351883478a5ff59ec4729ee368480e0e8dbed",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch08-star-vs-mesh.svg",
+      "git_blob": "432bd0e48189115f64d1ee4327b788b3b4afaa40",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch09-cnc-bed.svg",
+      "git_blob": "6276ea0e799cf7230ccfcd7febdcba3576443b8b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch09-greenhouse-bus.svg",
+      "git_blob": "a2ccb29a92f96045b76ab11e4526ee9864bab467",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch09-hyperlocal-vs-global.svg",
+      "git_blob": "c2dca100b5635b85ffa7f0fe39ab6b33757957ba",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch09-region-ring.svg",
+      "git_blob": "48eb4e71e77d5e1edae9fe05cc670285aee44901",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch10-algorithm-unlock.svg",
+      "git_blob": "ef23be8285b7d6c2b4d6472b67911bf2009dc1ec",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch10-model-collapse.svg",
+      "git_blob": "ff71bdca3d10be37f7e432c1b3894deee763d570",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch11-cooling-loop.svg",
+      "git_blob": "e2b94972d139dffd1c8676cbf178b9032970f034",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch12-csa-network.svg",
+      "git_blob": "900b3a7ce35311752db9b70f9b4b8f350894adbd",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch13-shell-architecture.svg",
+      "git_blob": "4f2fbfac9627e039fa1c04a160354de66da45b45",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch13-thermal-seal.svg",
+      "git_blob": "66ac0d48e2b8278a0918d7ab03dcde9ed110c111",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch14-logistic-shockwave.svg",
+      "git_blob": "449beb83e36281d4dd7f2c60600bd52abc81af52",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch14-mesh-comms.svg",
+      "git_blob": "33dba27f9fec9928543245a8f6dd8b689a310644",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch15-clt-firewall.svg",
+      "git_blob": "53c124e75e4e5ba40f19032aa5980f600389126d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch15-soil-food-web.svg",
+      "git_blob": "db63bfd4ecafd9bb205a2e34b24ced6cbc95f3c0",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch16-sneakernet.svg",
+      "git_blob": "6cd135d1644a2757f74cc8682725097f74c4262b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch17-algae-loop.svg",
+      "git_blob": "e8362b9703c58afc95695d54e4eefc75c9bc0d07",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch17-dc-native.svg",
+      "git_blob": "4bfc289fb6b554d9594f6924408b1ef292974a2f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch17-fab-lab.svg",
+      "git_blob": "df548e77d94bc419e70bab321cb2d9ca27aca8de",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch17-lora-node.svg",
+      "git_blob": "66e0e217fae7959f41262ceccca6c749e5c28e96",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch18-social-contract.svg",
+      "git_blob": "36c2aa7cb9ebcc6af4e472be2b45828c9ea33740",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/ch19-conversion-ladder.svg",
+      "git_blob": "82c109294888f94588c0dd9c641dc9da1e264978",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/coop-cast.svg",
+      "git_blob": "0ce9d172b527afd8c0ec7bd24bbeed0fc99d9b76",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/intro-food-insecurity.svg",
+      "git_blob": "5e137d342d820bef49fa2eb2c72bb01c49d4376f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/intro-nine-stages.svg",
+      "git_blob": "ebf08087b5f95ca0e64260a532314de9103b1084",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/original-04-seed-and-root.svg",
+      "git_blob": "80822d79dc15fdece5df195e9c8c62d44dac14b3",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/original-07-pamphlet-and-thread.svg",
+      "git_blob": "567792c5ec444c148449cd51f7bf6a860fc53f40",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/original-09-repair-tools.svg",
+      "git_blob": "d27301338a47ceee32af7769e1084807ab69613f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/original-11-soil-profile.svg",
+      "git_blob": "7b2b12736a3723f1160a271a4a62fca5692aa49f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-ammonia-energy.svg",
+      "git_blob": "ff041e5536fec62ab340f10cd8d3cae32508a4a5",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-data-centre-demand.svg",
+      "git_blob": "8787fbd2ac639a700c021af6e99b3c2c4225bcd7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-forecast-shift.svg",
+      "git_blob": "922eb34b646c6e7b4b3c7eeb83130bc81312ff6b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-income-food-access.svg",
+      "git_blob": "dc64ffb0f75f04e99d441373923a289f9722b436",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-land-values.svg",
+      "git_blob": "5e0285a8d03086a55684206b187e2395d7f2f369",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-meal-response.svg",
+      "git_blob": "89bbd033da128e56158bc542b7940e3c233656bc",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-waste-pathways.svg",
+      "git_blob": "df406cad9d8d3437abcf68ef3c203bb873a55080",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-chart-weights-memory.svg",
+      "git_blob": "f615ee66f93af5ebb3022543ff48826dc3281c8a",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-scene-food-delivery.svg",
+      "git_blob": "0916c6e03bb17341786e0bdc229a2119d735efed",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-scene-living-soil.svg",
+      "git_blob": "d6bb8c28661aa4de044f5d33b2878dda2d1a23c5",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-scene-shared-workshop.svg",
+      "git_blob": "08be76efc7a3294d4fe97f2c42bbc899588e71ff",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-visual-access-gate.svg",
+      "git_blob": "c6d783ace2ff56cd677453623884df2329cf29f8",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-visual-attention-ribbon.svg",
+      "git_blob": "59905e071eef9b19ff7fda6b9c5792d2d8ece155",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-visual-continuity-calendar.svg",
+      "git_blob": "de71bfa9b119b9ddbf40af2580ece11bde08cd48",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-visual-local-copies.svg",
+      "git_blob": "49a7e7c4268d70fbce3e5a9ee7d347f71787f5cc",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-visual-operating-stack.svg",
+      "git_blob": "57056aac29b2bb77f2f2ea254bd5cae307d6206d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v101-visual-shared-land.svg",
+      "git_blob": "cdb9e54902c02ba8e359d1d638500edc193bdd30",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v103-first-year-index.svg",
+      "git_blob": "72cee5612beaf1834f38d9f3addd16caf96df18f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v103-offline-check.svg",
+      "git_blob": "affe416bb24417acd00c4719ee30954020706563",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v103-reading-routes.svg",
+      "git_blob": "c71987584191be72dad8a882918f605db8828b95",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/print/v103-service-ledger.svg",
+      "git_blob": "aade8eb6369c49b608554b55137ce28abd4d4f20",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-denny.png",
+      "git_blob": "07e46d000b297b2aad81c3230143b665b9ddd13d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-devendra.png",
+      "git_blob": "2527b64c642f8cb697066d0cd0cfbc582f8ad4df",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-elijah.png",
+      "git_blob": "fe1929393213724ace2a7fce510d81c478fa2c97",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-frank.png",
+      "git_blob": "30519ca58b865426f64641f5dd050eb4264079d0",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-gary.png",
+      "git_blob": "d320c3312d9765c9003f020540acc8c1616bbd20",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-marta.png",
+      "git_blob": "45eff82a6105f652df82815c87986f1d5ffafb80",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-priya.png",
+      "git_blob": "2833d17e61fefff0920cf81f205d0e06f8ac6e8e",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-char-reuben.png",
+      "git_blob": "946df061c4e22c3db9a4b342d64f6a8427cb79f4",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-bell.png",
+      "git_blob": "9eb84b261530d6baa9c8e5973e9d583122fc4bab",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-controller.png",
+      "git_blob": "1d87c88b8162248d6cb0283b2f3a045c607ff7db",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-crucible.png",
+      "git_blob": "25b0152d8f9ac10fe89c1b36bcde8784ee0c99e3",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-cyberdeck.png",
+      "git_blob": "2544cf246a6e014b280a9d9d9e178f4432041c45",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-grow-tower.png",
+      "git_blob": "7175e703ee7db3816fce6721ad984da1a635462f",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-lora-node.png",
+      "git_blob": "db8f7a0dd26f4e2806c68463a3754f4c524fdc45",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-novel-reader.png",
+      "git_blob": "84f3512c525bc20fb07fd3b56a5242eb6935ef39",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-ox-and-plow.png",
+      "git_blob": "b77b9eefad9ebd8fb9b07260d1f6e9ff5009c884",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-pc-rig.png",
+      "git_blob": "378c89dc627bcfc48464b609d86c01b98d87fe10",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-photobioreactor.png",
+      "git_blob": "f5d6cf214149004ffbd1f48d15f8cc521cfe5b1c",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-plasma-table.png",
+      "git_blob": "e3cd4825828799dc0c227645317036d3e119b9a1",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-printer-3d.png",
+      "git_blob": "17891dab14ee676d532f2af20802ab486bc04e67",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-probe.png",
+      "git_blob": "58fe1575b9b862bef337b1c335b1f0f934a537c0",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-proofs.png",
+      "git_blob": "d5631f0d38437393940e74787e6f830c32f9d711",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-solar-battery.png",
+      "git_blob": "09dfc6de0df0a65ddf3ca05e08c95d869a3ca9c0",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-tool-wall.png",
+      "git_blob": "f7838e3f71661ef153ab16803fe3b52021d0b32a",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-vise.png",
+      "git_blob": "c2fe478f75430c2b1d62c04cf3050f58c1656266",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-walk-behind-tractor.png",
+      "git_blob": "62d72303645c250d8be588a71b6fde5a079f550e",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/sprites/sts-sprite-woodstove.png",
+      "git_blob": "f514ab8726d06bf9abc1dcfd57a785195403533b",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-ammonia-energy.svg",
+      "git_blob": "c79077ca9ff1a2ddcb3b4a9f3bae7c59a23c12c6",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-data-centre-demand.svg",
+      "git_blob": "4d09b6de021deea4c08546cc568aa9b0fcb8dde7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-forecast-shift.svg",
+      "git_blob": "a818326da5551c1b90a64efafc4ee0101a40dfca",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-income-food-access.svg",
+      "git_blob": "ff7c7a8348f7b70baa5e3a9b7ba3789a3ea24b15",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-land-values.svg",
+      "git_blob": "6cf0fda918102b8cbf388587f12ec557e39564dd",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-meal-response.svg",
+      "git_blob": "3b56d37ab99b7de65f5889dc52f900b229584590",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-waste-pathways.svg",
+      "git_blob": "163c6a550c02d6e7aa57a64f786afac9658ddb13",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-chart-weights-memory.svg",
+      "git_blob": "99291ecd5851b31edb52922f9ce7d5e90ad44240",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-cutout-atlas.png",
+      "git_blob": "92390e2fb1d4be7e49e309b0363f13da651247ea",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-cutout-printer.png",
+      "git_blob": "3ff4ef8105f85532ab9cbe7be6c0e333fb90a972",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-cutout-rocket.png",
+      "git_blob": "de4aa6e9edc2ce25e463d04268f76cc176363d93",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-cutout-spot.png",
+      "git_blob": "424f6be8323cea7de8c89f27810508a903edd3b7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-cutout-sun.png",
+      "git_blob": "8b87a0a3728167e41c674996dfcb537fa7984dab",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-cutout-tools.png",
+      "git_blob": "3fd09fb92f6df93e11455b8e2ad8b12f6ff2d1b0",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-scene-food-delivery.svg",
+      "git_blob": "9dee8f2ba68d1741ae0401ecbe22cf017491c4aa",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-scene-living-soil.svg",
+      "git_blob": "0253ab78d0675f162988daa6571610268173b260",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-scene-shared-workshop.svg",
+      "git_blob": "6ebd98910ad88523455663a160a9c36f59b77d27",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-visual-access-gate.svg",
+      "git_blob": "c3bedb53d84dc304b328b8e8e2cbdb47b74b6194",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-visual-attention-ribbon.svg",
+      "git_blob": "9db2e87790037a622fb0fc301f9efda81ad72494",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-visual-continuity-calendar.svg",
+      "git_blob": "935add99f0b4bfea6640fb03bc991cc8f8c03ebd",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-visual-local-copies.svg",
+      "git_blob": "f0a3b83d0997d183e483918945473de1e52e4db8",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-visual-operating-stack.svg",
+      "git_blob": "6d01f87cacd96c560105cb9585e0591d6e9a5696",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v101-visual-shared-land.svg",
+      "git_blob": "0a937625ab66b262db3286723a05289ebd529a58",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-first-year-index.svg",
+      "git_blob": "2513069ef056d5a6312515a1a587866c08978803",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-narrative-bear-flag.png",
+      "git_blob": "b918ecf02aa6d42740a580d6598bb7fa9510b80d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-narrative-near-end.png",
+      "git_blob": "adfba5fe9c56a2c6d22049f3f99333020fde031d",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-narrative-passing-beans.png",
+      "git_blob": "fa790c03816695adb4826793c460bd05d4582138",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-narrative-rosa-testimony.png",
+      "git_blob": "b4c0dec7a4d33016d247ae2a6836882e0a6b681a",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-offline-check.svg",
+      "git_blob": "e5215cfe1dfc48c0af410b9af8996544a4496f13",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-reading-routes.svg",
+      "git_blob": "b328c79e0608d45f835cc239041b3034d09801b7",
+      "unchanged": true
+    },
+    {
+      "file": "static/book-images/v103-service-ledger.svg",
+      "git_blob": "d8abfca1096fac37905223e6030e4a9f56c2dced",
+      "unchanged": true
+    }
+  ],
+  "negative_controls": [
+    "removed real inherited paragraph inside a changed chapter",
+    "removed real image markup",
+    "removed approved closing imperative",
+    "removed repeated source block occurrence",
+    "swapped real inherited block IDs",
+    "changed asset bytes alter Git blob digest"
+  ],
+  "current_source_sha256": {
+    "book.json": "9d63a2644790141179046b7155fecce8e724ecca6478f6431e018d21088fbc34",
+    "02-introduction.md": "1db5576c0b9cbbcc04633ef96ed1d3ec4e5502f4cfd995ccf90fd57fc56f76b2",
+    "01-preface.md": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+    "31-how-to-use.md": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+    "00-chapter0.md": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+    "part1-divider.md": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+    "03-chapter1.md": "9916db2c37a5a665fe82ca051a7992b44e9f2d40fb35b922c5a682ccaa125d4a",
+    "04-chapter2.md": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+    "05-chapter3.md": "4bdc3e8c7f7e75dca3f40366d870d8bed618d612bf6ba146fe161643a296d304",
+    "06-chapter4.md": "effaaa6d8af9e47826ec930e4f4edc7dbd41da10ae12a78c5c6eff38a35da979",
+    "07-chapter5.md": "77a81d1b8c6c9d2e57ccff4ca80e0c88799ed06ea10f39c061f8006f9a268186",
+    "part2-divider.md": "9ff33c04158f8f02e8aa855e201bbca8eb51046e53366d710774477863611f8a",
+    "08-chapter6.md": "5d0b77634ff13b3600864acc9875b383c5d27da5c83106d31cbc01a2eaf0fe71",
+    "09-chapter7.md": "97f982d688c76b65f6d34bb93f015654d8b1dcdd27709f82807ad3a99f0d96fd",
+    "10-chapter8.md": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+    "11-chapter9.md": "0c09ca4a92b5e35c8020ccc5a53c567b9efac35b25de33cff3962337b9ef8506",
+    "part3-divider.md": "6bd1ffac5848324f9c6fe58f5125721bafe65883e19acfd0bfa1796a7b9ee90e",
+    "12-chapter10.md": "6dd7e2e71da1745d76a2fb4d72681e9fab5b0afeb3492b3a07801dc9c83795ba",
+    "13-chapter11.md": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+    "14-chapter12.md": "5cce7ec2b67739ff12605281379aadc00440516c766e77101e170411efa4bb14",
+    "15-chapter13.md": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+    "16-chapter14.md": "755c06eab0e306784f07d2d117ac7f0c2ebd881358d65e42fecc21f0ee1b6016",
+    "17-chapter15.md": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+    "18-chapter16.md": "3b57218536ba9143187ae52131c4b96e00941d368e0c15b2abe953df0d974788",
+    "19-chapter17.md": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+    "20-chapter18.md": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+    "27-chapter19.md": "807e13306e7962a8efe20ea2686f27c7670aa1b0adbbc9e2026b11c6f4523bca",
+    "21-conclusion.md": "a94ecf4a59a310438beab7376828829ca3be9d514a75240588d01cef49a7498e",
+    "22-appendix-a.md": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+    "23-appendix-b.md": "019a664a731f9cd7cd8d74cb848fbca21f64806d35fa68c64dc2ac58a070e704",
+    "24-appendix-c.md": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+    "25-appendix-d.md": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069",
+    "26-appendix-e.md": "fe4d080c0c9a62e99d81a1aa975b56afefa619057219bbd980855b460be53793",
+    "28-appendix-f.md": "26acc4c85876465948489179dfc47ed35437e52d6fde0f389e9b02ec7440f7f4",
+    "29-appendix-g.md": "d67719a313518aa6fd41a7cb1464c9dd8dcd236ab14a3a35ad7e214cd460f63a",
+    "30-appendix-h.md": "d914c0e5cbee4c02585bd136f65ea584dbe8d22cc43135ab85d2f22ca35dcd44"
+  },
+  "errors": [],
+  "limits": "Proves original text and artwork preservation plus known additions; does not validate new claims, literary quality or artifact rendering. EPUB content and PDF text require separate fresh-source proofs."
+}

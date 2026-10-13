@@ -1,12 +1,13 @@
 <script>
   import BookCover from '$lib/components/BookCover.svelte';
+  import { offer } from '$lib/offer';
 
   export let data;
 </script>
 
 <svelte:head>
   <title>You're in. Surviving the Singularity</title>
-  <meta name="description" content="Your preorder is confirmed. The Precedent File is on its way." />
+  <meta name="description" content="Check your preorder confirmation, download access, and email status." />
   <meta name="robots" content="noindex" />
 </svelte:head>
 
@@ -31,13 +32,23 @@
       </div>
 
       <h1 class="success-heading" id="success-heading">You're in.</h1>
-      <p class="success-sub">
-        {#if data.email}
-          The Precedent File and your access links are on their way to <strong>{data.email}</strong>.
-        {:else}
-          The Precedent File is ready. Download it below.
-        {/if}
-      </p>
+      <p class="success-sub">Your purchase is confirmed. Save your download below.</p>
+      <div role="status" aria-atomic="true">
+        <p class="success-sub">
+          {#if data.emailStatus === 'accepted' || data.emailStatus === 'already_delivered'}
+            Our email provider accepted your access email{#if data.email} for <strong>{data.email}</strong>{/if}. It may take a few minutes to reach your inbox; check spam too.
+          {:else if data.emailStatus === 'in_flight'}
+            Your access email is still being processed. You can use the download below while you wait.
+          {:else if data.emailStatus === 'retryable_failure'}
+            We could not confirm that your access email was sent. Your payment is confirmed; you do not need to buy again. Use the download below and refresh this page to check again.
+          {:else}
+            We could not confirm email delivery. Use the download below and keep this confirmation page for your records.
+          {/if}
+        </p>
+      </div>
+      {#if data.emailStatus !== 'accepted' && data.emailStatus !== 'already_delivered'}
+        <p class="success-sub"><button class="status-refresh" type="button" on:click={() => window.location.reload()}>Refresh email status</button> or <a class="contact-link" href="mailto:ctavolazzi@gmail.com">contact us</a> from your purchase email for access help.</p>
+      {/if}
     </div>
 
     <!-- Download card -->
@@ -52,7 +63,7 @@
         </div>
         <div>
           <p class="download-name">The Precedent File</p>
-          <p class="download-meta">29 documented cases with sources, plus the full book in PDF and EPUB</p>
+          <p class="download-meta">{offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed inline</p>
         </div>
       </div>
 
@@ -65,9 +76,7 @@
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
         </a>
-        {#if data.email}
-          <p class="download-email-note">Also sent to {data.email}. Link valid for 7 days.</p>
-        {/if}
+        <p class="download-email-note">This download link is valid for 7 days. Save a copy now.</p>
         {#if data.recovered}
           <!-- Served from our own fulfilment record because Stripe could not
                confirm the session. The download is genuine; say so plainly
@@ -80,7 +89,7 @@
         {/if}
       {:else}
         <div class="download-pending">
-          <p>Your bundle link is being prepared. Check your email in a moment, or <a href="mailto:ctavolazzi@gmail.com">contact us</a> if it doesn't arrive within 10 minutes.</p>
+          <p>Your payment is confirmed, but a download link is not available on this page yet. Refresh this page or <a href="mailto:ctavolazzi@gmail.com">contact us from your purchase email</a> for access. You do not need to buy again.</p>
         </div>
       {/if}
     </div>
@@ -88,12 +97,15 @@
     <!-- What's included in early access -->
     <div class="success-kit">
       <p class="kit-label">Also in your early access</p>
+      {#if data.bookAccessPassword}
+        <p class="success-sub">Your online reading password: <code class="order-ref">{data.bookAccessPassword}</code>. Save it with your download so you can read even if your email is delayed.</p>
+      {/if}
       <div class="kit-grid">
         <a href="/book" class="kit-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
           <span class="kit-item-text">
             <span class="kit-item-name">The Book</span>
-            <span class="kit-item-desc">Full draft, open now</span>
+            <span class="kit-item-desc">Use the password {data.bookAccessPassword ? 'shown above' : 'in your access email'}</span>
           </span>
         </a>
         <a href="/checklist" class="kit-item">
@@ -243,7 +255,7 @@
 
   .download-meta {
     font-size: 0.86rem;
-    color: #64748b;
+    color: #94a3b8;
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
     letter-spacing: 0.04em;
@@ -269,7 +281,7 @@
 
   .download-email-note {
     font-size: 0.82rem;
-    color: #475569;
+    color: #94a3b8;
     margin: 0;
   }
 
@@ -279,7 +291,7 @@
     border-radius: 8px;
     padding: 14px 16px;
     font-size: 0.9rem;
-    color: #64748b;
+    color: #94a3b8;
     line-height: 1.6;
   }
   .download-pending a { color: #f59e0b; text-decoration: underline; text-underline-offset: 2px; }
@@ -292,7 +304,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #64748b;
+    color: #94a3b8;
   }
 
   .kit-grid {
@@ -318,9 +330,10 @@
   .kit-item svg { flex-shrink: 0; }
   .kit-item-text { display: flex; flex-direction: column; flex: 1; min-width: 0; }
   .kit-item-name { font-size: 0.92rem; font-weight: 700; color: #f1f5f9; }
-  .kit-item-desc { font-size: 0.76rem; color: #64748b; display: block; margin-top: 1px; }
+  .kit-item-desc { font-size: 0.76rem; color: #94a3b8; display: block; margin-top: 1px; }
 
   .contact-link { color: #f59e0b; text-decoration: underline; text-underline-offset: 2px; }
+  .status-refresh { background: transparent; border: 0; padding: 0.4rem 0; font: inherit; color: #f59e0b; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
 
   .order-ref {
     font-family: 'JetBrains Mono', monospace;

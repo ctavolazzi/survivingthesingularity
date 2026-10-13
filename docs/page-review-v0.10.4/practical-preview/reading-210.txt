@@ -1,0 +1,47 @@
+                                                                       CHAPTER 11
+
+
+    HOWMUCHMEMORYFORWEIGHTS?
+
+    Derivedarithmetic·decimalgigabytes
+
+
+
+
+    8B
+    parameters
+
+
+
+    70B
+    parameters
+
+
+
+
+
+    GB=billionsofparameters×bits/8
+
+
+    Weightsonly.Runtimeneedsmore.
+    Cache,context,buffers,quantizationmetadata,
+    andsimultaneoususersaddtotherequirement.
+    Source:Chapter11;llama.cppdocumentation.
+
+
+
+Memory before the overhead. These are derived weights-only sizes, not measured VRAM
+requirements. They omit the chapterʼs illustrative allowance as well as runtime costs. llama.cpp,
+memory and context options.
+
+A small model at 16 bits. An 8-billion-parameter model:
+
+     VRAM = ((8 · 16)/8) · 1.2 = 19.2 GB
+
+
+That estimate fits within one 24 GB card. Check the actual model and
+intended context length before buying one.
+
+
+
+                                                                             205

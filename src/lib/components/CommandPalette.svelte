@@ -3,6 +3,7 @@
   import { fade, fly } from 'svelte/transition';
   import { onMount, onDestroy, createEventDispatcher } from 'svelte';
   import { browser } from '$app/environment';
+  import { hasActiveModal } from '$lib/modalFocus';
 
   export let open = false;
 
@@ -56,7 +57,9 @@
     if (!open) {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
-        handleOpen();
+        // A global shortcut must not place an unregistered dialog over the
+        // menu or terms dialog while those surfaces own keyboard focus.
+        if (!hasActiveModal()) handleOpen();
       }
       return;
     }

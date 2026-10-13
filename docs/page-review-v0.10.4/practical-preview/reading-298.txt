@@ -1,0 +1,57 @@
+                                                                         CHAPTER 17
+
+
+USB port isnʼt a bare connection to a 12-volt battery. Compare the
+whole system under its intended load. US Department of Energy, DC
+Microgrid Scoping Study, conversion losses
+Batteries store a lot of energy and can fail dangerously if theyʼre built
+or charged wrong, so use a packaged battery with suitable protection,
+the specified charger, and properly sized fuses. Have someone who
+knows electrical work check it. Plan replacement from the batteryʼs
+rated service conditions and your actual use; chemistry alone doesnʼt
+set its lifespan.
+
+The skeleton: machines that make machines
+
+Eventually something breaks: a gear, a bracket, a bolt. If every
+replacement part has to come from a distant distributor, youʼre still
+waiting on permission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                               293

@@ -1,0 +1,655 @@
+{
+  "version": "0.10.4",
+  "created_utc": "2026-09-30T02:09:10.734619+00:00",
+  "pdfs": {
+    "interior": {
+      "path": "publication/output/Surviving-the-Singularity-interior.pdf",
+      "sha256": "57209f592628417075068ba4f1bddb5672741e7ec8c0d957773516af57b9aa11",
+      "pages": 410
+    },
+    "print": {
+      "path": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "sha256": "b851d95654cc67bfa72be5f83568980c7dcca38bff08e1fb026fa3ba69973329",
+      "pages": 410
+    }
+  },
+  "prepared_color_sha256": "282bed801f81ac6d3e80cc15821a7ed0d0c63ec4c7a5c245978dc88ba3a3d833",
+  "resource_preparation": {
+    "input_sha256": "57209f592628417075068ba4f1bddb5672741e7ec8c0d957773516af57b9aa11",
+    "prepared_path": "/Users/ctavolazzi/Code/active/sts-v0.10.4/publication/output/print-prepared.pdf",
+    "prepared_sha256": "282bed801f81ac6d3e80cc15821a7ed0d0c63ec4c7a5c245978dc88ba3a3d833",
+    "pages": 410,
+    "page_xobject_references_before": 177120,
+    "page_xobject_references_after": 432,
+    "removed_unused_page_references": 176688,
+    "nested_scopes_unchanged": 387,
+    "page_streams_unchanged": true,
+    "annotation_descriptors_unchanged": true,
+    "controls": {
+      "referenced_object_retained": true,
+      "removed_reference_rejected": true,
+      "direct_stream_rejected": true,
+      "inherited_scope_rejected": true
+    },
+    "seconds": 53.75
+  },
+  "selection_layout_sha256": "ac8783995568e3eaa218884f97fd1cacec3a2d645fc70745a6e0c5a8ab64904d",
+  "dpi": 150,
+  "edits": [
+    {
+      "file": "02-introduction.md",
+      "reason": "Give the long paragraph a pause between examples of monetary access and the evidence about enforcement. Every word and citation is retained.",
+      "pages": [
+        10,
+        365,
+        405
+      ]
+    },
+    {
+      "file": "03-chapter1.md",
+      "reason": "Replace market jargon with plain language while preserving the argument about falling prices for cognitive work.",
+      "pages": [
+        48
+      ]
+    },
+    {
+      "file": "05-chapter3.md",
+      "reason": "Separate the optional reading route from the four chapter claims so a practical reader can find it quickly. Preserve the warning about skipping part of the story.",
+      "pages": [
+        69,
+        71
+      ]
+    },
+    {
+      "file": "06-chapter4.md",
+      "reason": "Correct a small idiom without changing the speculative scenario.",
+      "pages": [
+        83
+      ]
+    },
+    {
+      "file": "07-chapter5.md",
+      "reason": "Bridge directly into the library example instead of making the reader mentally translate a person eating into a library user.",
+      "pages": [
+        95,
+        96
+      ]
+    },
+    {
+      "file": "07-chapter5.md",
+      "reason": "Make the practice agree with the earlier instruction to keep food, energy, labor and money separate. A spread could imply subtracting quantities that use different units.",
+      "pages": [
+        103,
+        397
+      ]
+    },
+    {
+      "file": "08-chapter6.md",
+      "reason": "Makes the existing audit observable and gives the reader a next step when the answer is missing.",
+      "pages": [
+        119
+      ]
+    },
+    {
+      "file": "09-chapter7.md",
+      "reason": "Replaces an announcement of importance with the actual claim, keeping the turn into the cooperative argument direct.",
+      "pages": [
+        133
+      ]
+    },
+    {
+      "file": "11-chapter9.md",
+      "reason": "Removes the second nearby checklist of what a complete food baseline needs. The preceding paragraph retains diets, seasons, preparation, interruptions, and continuing support; this paragraph keeps inclusion and the strong closing lines.",
+      "pages": [
+        179
+      ]
+    },
+    {
+      "file": "12-chapter10.md",
+      "reason": "Keeps the emphasis on shared work without contradicting this chapter's own example of useful connections beginning online.",
+      "pages": [
+        188
+      ]
+    },
+    {
+      "file": "14-chapter12.md",
+      "reason": "Introduces the illustrative Grandma scenario plainly instead of implying it is the continuation of an already introduced story.",
+      "pages": [
+        224
+      ]
+    },
+    {
+      "file": "16-chapter14.md",
+      "reason": "Clarifies what the closing cases compare, replacing an ambiguous reference to the other choice while preserving the central comparison and voice.",
+      "pages": [
+        250
+      ]
+    },
+    {
+      "file": "18-chapter16.md",
+      "reason": "Carry the chapter's consent principle into its closing practice. Owning a publishing channel need not sound like owning the people who read it.",
+      "pages": [
+        284
+      ]
+    },
+    {
+      "file": "27-chapter19.md",
+      "reason": "Make the action usable for readers whose employers do not handle food, and connect the need assessment to a provider rather than assuming two ready-made counts.",
+      "pages": [
+        335
+      ]
+    },
+    {
+      "file": "27-chapter19.md",
+      "reason": "The California precedent is bounded. Let a parent elsewhere begin with the provision that actually exists instead of assuming every district already has universal meals.",
+      "pages": [
+        335
+      ]
+    },
+    {
+      "file": "25-appendix-d.md",
+      "reason": "Remove an obsolete Gary-and-Sal callback that is absent from the current Chapter 7, and carry the Ledger's existing instruction to examine differences into the conversation.",
+      "pages": [
+        376,
+        377
+      ]
+    },
+    {
+      "file": "26-appendix-e.md",
+      "reason": "The section includes Tier 0 plus Tiers 1, 2, and 3. Name the actual route without a contradictory count.",
+      "pages": [
+        387
+      ]
+    },
+    {
+      "file": "29-appendix-g.md",
+      "reason": "Give the existing invitation to choose a sustainable scale an immediate instruction, so the year plan feels usable before the reader meets its long action list.",
+      "pages": [
+        396
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "edition": "interior",
+      "physical_page": 1,
+      "path": "docs/v0.10.4/pdf-proof/interior-001.png",
+      "sha256": "913ef62d93a19c8373040be1c225188d271c8d7ea7921914b03563d9ce320ffa"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 3,
+      "path": "docs/v0.10.4/pdf-proof/interior-002.png",
+      "sha256": "14d3aba71424ef6e7c8f9ce547f9834605f6435de4b882cfb54b1db2f9555ae9"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 4,
+      "path": "docs/v0.10.4/pdf-proof/interior-003.png",
+      "sha256": "e72297a38f0d82053deab94247cf975f4020f03690beccbff207ba90e0cc14cd"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 10,
+      "path": "docs/v0.10.4/pdf-proof/interior-004.png",
+      "sha256": "df07f09d84ae8890e73ca5286095fb47e84ed4b480e8aca6642e15c4a1ece504"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 24,
+      "path": "docs/v0.10.4/pdf-proof/interior-005.png",
+      "sha256": "a0c9850145cd4b2fca1c07b13c16a11d2e57fe887816338947b1cb967c4aff15"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 34,
+      "path": "docs/v0.10.4/pdf-proof/interior-006.png",
+      "sha256": "7334190097bfb0610efcb4d3617ac166294bce9ee0ee36248b0a151f1d22ad32"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 48,
+      "path": "docs/v0.10.4/pdf-proof/interior-007.png",
+      "sha256": "78c3dfab7c8c8a7f5e3ab601ba686c1969d67e8ae94c214aef1bf6c57c050659"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 69,
+      "path": "docs/v0.10.4/pdf-proof/interior-008.png",
+      "sha256": "855d56bc87604077c14eb8864e2aaff30ceebc8cea73856f147bf45010e445fe"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 71,
+      "path": "docs/v0.10.4/pdf-proof/interior-009.png",
+      "sha256": "e4a29c60ec6db44da5072282049068f85f161d0879a7492de621bf7ef1e5e27a"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 81,
+      "path": "docs/v0.10.4/pdf-proof/interior-010.png",
+      "sha256": "fa943293ccab02a94270c2d22c05659aee3ad81ce0b80c810fc5839e1735c993"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 83,
+      "path": "docs/v0.10.4/pdf-proof/interior-011.png",
+      "sha256": "d838f764b5d703202096d558b55e8a1d3389cf7c8843339f1cdd43b5b257512e"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 95,
+      "path": "docs/v0.10.4/pdf-proof/interior-012.png",
+      "sha256": "b54f8a188549d4e370626a543c2312010441ad9f035396c5a63939311a98f2a0"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 96,
+      "path": "docs/v0.10.4/pdf-proof/interior-013.png",
+      "sha256": "e63a4f1b3757fb4c75171412ae3eaa88dab80a6aadb5ba08cb7c52da7af55fbd"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 103,
+      "path": "docs/v0.10.4/pdf-proof/interior-014.png",
+      "sha256": "e37a9ec556647679dd6807660376f9bd2c825e5d507a1ce21bb97065ef7b7c05"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 104,
+      "path": "docs/v0.10.4/pdf-proof/interior-015.png",
+      "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 105,
+      "path": "docs/v0.10.4/pdf-proof/interior-016.png",
+      "sha256": "eadfece56a28cca206f0b5f7f3675b5c5cfa38ac8b67ef2b20abab75333bce89"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 119,
+      "path": "docs/v0.10.4/pdf-proof/interior-017.png",
+      "sha256": "28430605ba75297400cbfe48dbab67d36c206206840e8d0b88abae4196c9b411"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 124,
+      "path": "docs/v0.10.4/pdf-proof/interior-018.png",
+      "sha256": "83120980aaba4d9b72d33266c8cc5392c87f5182c0d86442944f9e9249c49b7b"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 133,
+      "path": "docs/v0.10.4/pdf-proof/interior-019.png",
+      "sha256": "19420528eb7e8664283142703370e867f183fbf77380685dde571f63c435c3b5"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 179,
+      "path": "docs/v0.10.4/pdf-proof/interior-020.png",
+      "sha256": "41756938176901712ae98bfe60e776326679734d626d2c44b07fea086765dcbd"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 181,
+      "path": "docs/v0.10.4/pdf-proof/interior-021.png",
+      "sha256": "bb3679556a66baa29fa95ca71eeb783128e8fc2b0e9c004320d1db548f22c7cc"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 182,
+      "path": "docs/v0.10.4/pdf-proof/interior-022.png",
+      "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 183,
+      "path": "docs/v0.10.4/pdf-proof/interior-023.png",
+      "sha256": "4b6e0af5e960e718b8ee39ab7638ca0b25814097f5a3923651b03ce91fb4ed84"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 188,
+      "path": "docs/v0.10.4/pdf-proof/interior-024.png",
+      "sha256": "b9753d717c35f39ea7c847929b0cd681335ad478f190305f6b0336076de9d04f"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 224,
+      "path": "docs/v0.10.4/pdf-proof/interior-025.png",
+      "sha256": "a5207c93b186d81545781b0841f7937d9790f53f6878adbed2d12346cd8a7f5c"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 250,
+      "path": "docs/v0.10.4/pdf-proof/interior-026.png",
+      "sha256": "7e348f673eac068502e61fc76c0b14934b16fa5ddf6557ac71ec95774c2cd7f9"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 284,
+      "path": "docs/v0.10.4/pdf-proof/interior-027.png",
+      "sha256": "85b9c1e5fdeee755da7ed2a2118ba613526e3cce4a54e42c68b072e455d15812"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 324,
+      "path": "docs/v0.10.4/pdf-proof/interior-028.png",
+      "sha256": "093a31ccf7ae717a4d35656d9b984f7561b75edd5e783713c4446c5b9b2314b6"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 335,
+      "path": "docs/v0.10.4/pdf-proof/interior-029.png",
+      "sha256": "644c181fb8661404d38508bd4f0dfa88cbc9d6a189c54b385b82c122dcc70960"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 365,
+      "path": "docs/v0.10.4/pdf-proof/interior-030.png",
+      "sha256": "a885ac1df330b9604f9a56ea5ea1f1646ab8d6e8f29e80a1f34814b18ca1ad89"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 371,
+      "path": "docs/v0.10.4/pdf-proof/interior-031.png",
+      "sha256": "7e11349eb8a426cd72e92ccba3f75b18fb9780ea0f4459f5c78a1356750c3566"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 376,
+      "path": "docs/v0.10.4/pdf-proof/interior-032.png",
+      "sha256": "c3df16db961ded153cb561cb43008d75ccf88309ddf27c62ef7f87f671ae3e8f"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 377,
+      "path": "docs/v0.10.4/pdf-proof/interior-033.png",
+      "sha256": "19a75bbf6e2ccf74e74052bd56aa5a6a19e0676a464b2b4178dacd5bc021c9ad"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 387,
+      "path": "docs/v0.10.4/pdf-proof/interior-034.png",
+      "sha256": "998a338b8e73cdfff0c58fa551c5b7a4c414885d61104365bd8097ca9169d1c5"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 388,
+      "path": "docs/v0.10.4/pdf-proof/interior-035.png",
+      "sha256": "43da8077b5577fb48ecaf52ea243d96aaa6377694587b23caf013cdb18cfd9f7"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 396,
+      "path": "docs/v0.10.4/pdf-proof/interior-036.png",
+      "sha256": "f57f715d08b52cbb3c2cc41460baf75d6ac6693169fd3f9f7164a44e122a39c3"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 397,
+      "path": "docs/v0.10.4/pdf-proof/interior-037.png",
+      "sha256": "0e3890a1d47d82027aa3b0280617e4237cf5431cfbd3b163ea6f2d39ead36e27"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 405,
+      "path": "docs/v0.10.4/pdf-proof/interior-038.png",
+      "sha256": "11c695c17ec181c77eeb22c6a97b2dff2a308b69618633185cd037f2923d3897"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 409,
+      "path": "docs/v0.10.4/pdf-proof/interior-039.png",
+      "sha256": "f5958447cb137fb5777c25a5feceeadfe57865638689994fb5b92b006052c82b"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 410,
+      "path": "docs/v0.10.4/pdf-proof/interior-040.png",
+      "sha256": "75f3e714cdecb07134640fa86953b2d8dee87795cf0244183750e0231eeaca23"
+    },
+    {
+      "edition": "print",
+      "physical_page": 1,
+      "path": "docs/v0.10.4/pdf-proof/print-001.png",
+      "sha256": "fe3b01ef5f3cc3d972afd6a501a3357be1ecded8d9a0c80c8478500b8a6dc6db"
+    },
+    {
+      "edition": "print",
+      "physical_page": 3,
+      "path": "docs/v0.10.4/pdf-proof/print-002.png",
+      "sha256": "a05c3e3b49d0bd79b1003f47e70aabed41deffadea934a98d4f2682625140406"
+    },
+    {
+      "edition": "print",
+      "physical_page": 4,
+      "path": "docs/v0.10.4/pdf-proof/print-003.png",
+      "sha256": "24cb22bf78090027cfbedb09c8fd6e4a9fef310b4d1d3bdc138ca968238ec886"
+    },
+    {
+      "edition": "print",
+      "physical_page": 10,
+      "path": "docs/v0.10.4/pdf-proof/print-004.png",
+      "sha256": "aa084d0b72c744cfee44f99468c566559594b04bcce9cc1391cdd13e9e5b161a"
+    },
+    {
+      "edition": "print",
+      "physical_page": 24,
+      "path": "docs/v0.10.4/pdf-proof/print-005.png",
+      "sha256": "69cb3995020e7236e27faa682d05006c9c0aed227f15a6be4b5d9e80ef001cf0"
+    },
+    {
+      "edition": "print",
+      "physical_page": 34,
+      "path": "docs/v0.10.4/pdf-proof/print-006.png",
+      "sha256": "8cc7f104e59e230f54679434f15f500c804247be8c37f4b0af017f561b6e37e4"
+    },
+    {
+      "edition": "print",
+      "physical_page": 48,
+      "path": "docs/v0.10.4/pdf-proof/print-007.png",
+      "sha256": "7ba32611f68b4cc76be35272f0e77e2b85b471e90e048bcdf92e53d6c8a3c5e5"
+    },
+    {
+      "edition": "print",
+      "physical_page": 69,
+      "path": "docs/v0.10.4/pdf-proof/print-008.png",
+      "sha256": "3603bd78fa68d281250607c3485174c8e67485046d26dfaf2e01c5f40276e059"
+    },
+    {
+      "edition": "print",
+      "physical_page": 71,
+      "path": "docs/v0.10.4/pdf-proof/print-009.png",
+      "sha256": "0ed827020e601d33b105567ba8eab1e043f138ef04d27081f6b33ebadd6b27f4"
+    },
+    {
+      "edition": "print",
+      "physical_page": 81,
+      "path": "docs/v0.10.4/pdf-proof/print-010.png",
+      "sha256": "c6fc142c396ed36c0266b53ffb99c2e761816e402881f06e0806b8bd5ae7ab87"
+    },
+    {
+      "edition": "print",
+      "physical_page": 83,
+      "path": "docs/v0.10.4/pdf-proof/print-011.png",
+      "sha256": "e27c28b74fbf9d6e75bc398db8156fcbcbba807b09cf4e67d14b4caeced84423"
+    },
+    {
+      "edition": "print",
+      "physical_page": 95,
+      "path": "docs/v0.10.4/pdf-proof/print-012.png",
+      "sha256": "276e5787838a2aa396bfb80d8ca7f5bb3240420bc196253bc9879ed40739e5ee"
+    },
+    {
+      "edition": "print",
+      "physical_page": 96,
+      "path": "docs/v0.10.4/pdf-proof/print-013.png",
+      "sha256": "1fe7c3c62f9ceedc106117ce0cee7e1bdab46521681580eb07380f782ecc4d66"
+    },
+    {
+      "edition": "print",
+      "physical_page": 103,
+      "path": "docs/v0.10.4/pdf-proof/print-014.png",
+      "sha256": "f78f9c2006dad26b7746b9e2dacce4d18fccd5b33956db9ad56b57759c89cfc9"
+    },
+    {
+      "edition": "print",
+      "physical_page": 104,
+      "path": "docs/v0.10.4/pdf-proof/print-015.png",
+      "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+    },
+    {
+      "edition": "print",
+      "physical_page": 105,
+      "path": "docs/v0.10.4/pdf-proof/print-016.png",
+      "sha256": "712aa68548134afb50a76a0f7d7377bb49a203314c85a4b75c2f575ef764f18e"
+    },
+    {
+      "edition": "print",
+      "physical_page": 119,
+      "path": "docs/v0.10.4/pdf-proof/print-017.png",
+      "sha256": "89f6f62abc1c1b4890a48842b2ff7c1248b58aa8d2980d13e10017aee5c6a174"
+    },
+    {
+      "edition": "print",
+      "physical_page": 124,
+      "path": "docs/v0.10.4/pdf-proof/print-018.png",
+      "sha256": "e2f5a218200f41007026370444bf2766c449527b38fffb39c767d184e06513dd"
+    },
+    {
+      "edition": "print",
+      "physical_page": 133,
+      "path": "docs/v0.10.4/pdf-proof/print-019.png",
+      "sha256": "b92d68e0c386a525a86db9b8fd2648f339daaa0cd8af6664879ade9e3c20894e"
+    },
+    {
+      "edition": "print",
+      "physical_page": 179,
+      "path": "docs/v0.10.4/pdf-proof/print-020.png",
+      "sha256": "32f29cdecabe5b56ad70ca6548b1b048190d0e66cc9f6e8ab6f22a233131fd18"
+    },
+    {
+      "edition": "print",
+      "physical_page": 181,
+      "path": "docs/v0.10.4/pdf-proof/print-021.png",
+      "sha256": "af628bb749c9db8734b3f9951322f3f0e4942ccee139477cc0ad34b5f15d645a"
+    },
+    {
+      "edition": "print",
+      "physical_page": 182,
+      "path": "docs/v0.10.4/pdf-proof/print-022.png",
+      "sha256": "95322ad0dcd8d2676d8e5e82813a26b7de9ee35ebce696a0a58440b677f6ed35"
+    },
+    {
+      "edition": "print",
+      "physical_page": 183,
+      "path": "docs/v0.10.4/pdf-proof/print-023.png",
+      "sha256": "dd8e1a7b7cf5342d5709d8a422371a28f94d332c3ad53f3ecd763736bb5a920d"
+    },
+    {
+      "edition": "print",
+      "physical_page": 188,
+      "path": "docs/v0.10.4/pdf-proof/print-024.png",
+      "sha256": "9404b78657d090f0a30070c6eca1a3743433531a334dd08980bfaa31433f1b42"
+    },
+    {
+      "edition": "print",
+      "physical_page": 224,
+      "path": "docs/v0.10.4/pdf-proof/print-025.png",
+      "sha256": "81eca5f210e86a41ce3315a2ceeb33b05859625e71c7daa20bc9153d88e3b89e"
+    },
+    {
+      "edition": "print",
+      "physical_page": 250,
+      "path": "docs/v0.10.4/pdf-proof/print-026.png",
+      "sha256": "7b0a900a51d4be061dceb3cece261136b0dda02f2c0d98492973bd356acd6152"
+    },
+    {
+      "edition": "print",
+      "physical_page": 284,
+      "path": "docs/v0.10.4/pdf-proof/print-027.png",
+      "sha256": "2d110ee90999135c8fe34f6b960ae86db1f16360d1ba234c007b1bf441dcb4ec"
+    },
+    {
+      "edition": "print",
+      "physical_page": 324,
+      "path": "docs/v0.10.4/pdf-proof/print-028.png",
+      "sha256": "a7be6d5657811a2a14ee4a704aa3e6ba889d08bf16f13c6dc4450429fa892f3c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 335,
+      "path": "docs/v0.10.4/pdf-proof/print-029.png",
+      "sha256": "f28ba6c2d144d69043a2760a763ce08e95259a529f7b1f5f4e7be7d7a3605309"
+    },
+    {
+      "edition": "print",
+      "physical_page": 365,
+      "path": "docs/v0.10.4/pdf-proof/print-030.png",
+      "sha256": "683caf76f5085b7ed18f3ed82ab7c82ceaa00a8e17f4360a75d8715994cc5c4e"
+    },
+    {
+      "edition": "print",
+      "physical_page": 371,
+      "path": "docs/v0.10.4/pdf-proof/print-031.png",
+      "sha256": "ddc1a098bb89fe8c542cd47ab32cf762375a6686e05ad60b483c6e1d0735fa08"
+    },
+    {
+      "edition": "print",
+      "physical_page": 376,
+      "path": "docs/v0.10.4/pdf-proof/print-032.png",
+      "sha256": "f331995da5847a224bfd3e4537fad96fd942dc70c7b42a3b0f36106de7144786"
+    },
+    {
+      "edition": "print",
+      "physical_page": 377,
+      "path": "docs/v0.10.4/pdf-proof/print-033.png",
+      "sha256": "87bf126b7e8deeca6283ef1826c5479a4a06aef6ce96cb7b69498702a6a2657c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 387,
+      "path": "docs/v0.10.4/pdf-proof/print-034.png",
+      "sha256": "59f69552760ed9ea45d60270c780cd2a079ab4073d7ae2e2ae1bee99a406993c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 388,
+      "path": "docs/v0.10.4/pdf-proof/print-035.png",
+      "sha256": "c8a76e834289a56b087945420a2b0cf72acb8920e319acb2451a407b68a5fc73"
+    },
+    {
+      "edition": "print",
+      "physical_page": 396,
+      "path": "docs/v0.10.4/pdf-proof/print-036.png",
+      "sha256": "99cf6b6570051f9f93ef4ed0d46d03868c0e41c64b825b5eabb18e431b979224"
+    },
+    {
+      "edition": "print",
+      "physical_page": 397,
+      "path": "docs/v0.10.4/pdf-proof/print-037.png",
+      "sha256": "f2654447dcbd1a653f2000daee617961a8b5c38fc30f6f9ce263a5ffb2c95f2d"
+    },
+    {
+      "edition": "print",
+      "physical_page": 405,
+      "path": "docs/v0.10.4/pdf-proof/print-038.png",
+      "sha256": "1b837a74641c731b1f3f8898e8abdb719aae75a66c01c949c1509e1d730ae88d"
+    },
+    {
+      "edition": "print",
+      "physical_page": 409,
+      "path": "docs/v0.10.4/pdf-proof/print-039.png",
+      "sha256": "c6fdb63431dc3d78719df2435feab72f076b5ad383afbce49af324e4c70a5a94"
+    },
+    {
+      "edition": "print",
+      "physical_page": 410,
+      "path": "docs/v0.10.4/pdf-proof/print-040.png",
+      "sha256": "10f58d764ab2d2f016c11d93da111df27260ee32f20375ad73ae6a9a32fdc0b8"
+    }
+  ],
+  "limits": "Raster samples of all revised blocks, eight retained recent figures and selected transitions. Full source/geometry proof is separate; visual judgment is recorded after inspection."
+}

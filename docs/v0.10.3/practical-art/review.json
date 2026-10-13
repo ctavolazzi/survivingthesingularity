@@ -1,0 +1,47 @@
+{
+  "source_preservation": [
+    {
+      "file": "31-how-to-use.md",
+      "original_sha256": "44f2796cd8f8c92d8a4543e8c0b917cc4e3b3bb02839a7a5beaff7474fcf0615",
+      "current_sha256": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+      "old_bytes_restored_by_removing_exact_insert": true,
+      "existing_image_references_preserved": true
+    },
+    {
+      "file": "24-appendix-c.md",
+      "original_sha256": "7d26e7c61e3e459939642ab0bbcb29ab10ce38f82b284e6d9ab26295307dccf4",
+      "current_sha256": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+      "old_bytes_restored_by_removing_exact_insert": true,
+      "existing_image_references_preserved": true
+    },
+    {
+      "file": "26-appendix-e.md",
+      "original_sha256": "f84320f9288560f5c06f86429be540403c0546937a65bc30e13bdc6cd2b91f41",
+      "current_sha256": "ea8b55111e259be6d7a435ad4f056bd4a56fb7a0d82e2317b344d301a24d7141",
+      "old_bytes_restored_by_removing_exact_insert": true,
+      "existing_image_references_preserved": true
+    },
+    {
+      "file": "29-appendix-g.md",
+      "original_sha256": "08074da888ee06f089e9bf8f634a80183cdf7afcaeffb4a62132e7eb70104e02",
+      "current_sha256": "40320918fd53e879f9d01ebc3b5879e4104a3179faeccdc7a619d0ed2eb60955",
+      "old_bytes_restored_by_removing_exact_insert": true,
+      "existing_image_references_preserved": true
+    }
+  ],
+  "visual_review": {
+    "reviewed_variants": [
+      "v103-reading-routes-screen.png",
+      "v103-reading-routes-print.png",
+      "v103-service-ledger-screen.png",
+      "v103-service-ledger-print.png",
+      "v103-offline-check-screen.png",
+      "v103-offline-check-print.png",
+      "v103-first-year-index-screen.png",
+      "v103-first-year-index-print.png"
+    ],
+    "finding": "All four figures and both palettes inspected at legible scale. Labels fit within the frame, routes and numbered order match their source, and each figure has distinct visual architecture. Initial calendar line collision was observed by the checker, corrected, and the eight final variants passed.",
+    "limits": "Illustration screenshot inspection. Full publication placement, captions and pagination remain for the edition build."
+  },
+  "checks_sha256": "cf3462c2011a43e3d20c878eeefd686df5ed8ea0aeb24afad66307a71b6919d8"
+}

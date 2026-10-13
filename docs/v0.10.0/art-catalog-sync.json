@@ -1,0 +1,377 @@
+{
+  "canonical_figures": 79,
+  "changes": [
+    {
+      "id": "sts.plate.ox-and-plow",
+      "field": "caption",
+      "before": "The first time labor could be handed to something that ran on its own. The machine is the second.",
+      "after": "An early way to hand over some of the heavy work. Training, guidance, and care still belonged to people."
+    },
+    {
+      "id": "sts.plate.grow-build-robots",
+      "field": "caption",
+      "before": "The two machines this whole book is about: one that grows the food, one that builds the house. The pieces already exist; the work is putting them in your neighbors' hands.",
+      "after": "The two machines this whole book is about: one that grows the food, one that builds the house. The pieces are arriving. The work is putting them in your neighbors' hands."
+    },
+    {
+      "id": "sts.plate.novel-reader",
+      "field": "caption",
+      "before": "The epidemic, as the doctors saw it. Two hundred years later we hand this exact picture to children as the cure for their screens.",
+      "after": "The epidemic, as its critics saw it. Two hundred years later we hand this exact picture to children as the cure for their screens."
+    },
+    {
+      "id": "sts.photo.ch00-madrone-bark",
+      "field": "caption",
+      "before": "Pacific madrone, mid-shed. It burns to the ground and comes back from the root.",
+      "after": "Pacific madrone, mid-shed. It can burn to the ground and come back from the root."
+    },
+    {
+      "id": "sts.photo.ch01-m87-black-hole",
+      "field": "caption",
+      "before": "The event horizon of M87. Past a certain line, there is no going back.",
+      "after": "The shadow of the black hole M87\\*. Past a certain line, there's no going back."
+    },
+    {
+      "id": "sts.photo.ch02-factory-robots",
+      "field": "alt",
+      "before": "Robotic arms assembling a car body",
+      "after": "Robotic arms in an interactive Jaguar assembly exhibit at Thinktank, Birmingham"
+    },
+    {
+      "id": "sts.photo.ch02-factory-robots",
+      "field": "caption",
+      "before": "Robotic arms at work. The structural automation of labor, already routine.",
+      "after": "Robotic arms in Thinktank's interactive Jaguar assembly exhibit. A demonstration of industrial automation."
+    },
+    {
+      "id": "sts.photo.ch03-falcon-heavy",
+      "field": "caption",
+      "before": "Falcon Heavy demo mission. The exodus hardware is already flying.",
+      "after": "Falcon Heavy demo mission. The first rungs of a very long ladder."
+    },
+    {
+      "id": "sts.photo.ch05-sdo-sun",
+      "field": "caption",
+      "before": "The Sun, via NASA's Solar Dynamics Observatory. The only income the planet has.",
+      "after": "The Sun, via NASA's Solar Dynamics Observatory. The dominant energy income of everything alive on Earth."
+    },
+    {
+      "id": "sts.plate.woodstove",
+      "field": "alt",
+      "before": "A squat black cast-iron wood stove with the door open, one cracked firebrick visible inside",
+      "after": "A squat black wood stove with the door open, one cracked firebrick visible inside"
+    },
+    {
+      "id": "sts.plate.woodstove",
+      "field": "caption",
+      "before": "The Fisher. Eighty pounds of steel, one cracked firebrick. Older than him.",
+      "after": "The Fisher. Four hundred pounds of steel, one cracked firebrick. Older than him."
+    },
+    {
+      "id": "sts.plate.co-op-cast",
+      "field": "alt",
+      "before": "Pixel-art portraits of the co-op: Elijah, Marta, Priya, and Denny",
+      "after": "Pixel-art portraits of the co-op: Elijah the ex-tech worker with his notebook, Marta the fabricator in her welding apron, Priya the soil scientist with a broadfork, and Denny the former logistics worker"
+    },
+    {
+      "id": "sts.photo.ch07-canned-music-1929",
+      "field": "alt",
+      "before": "A 1929 newspaper advertisement headlined \"Taking Liberties With Folks' Habits,\" showing a large robot shouldering aside a weeping cherub at a harp while a dog howls, above columns of argument signed by the American Federation of Musicians",
+      "after": "A robot shoulders aside a weeping cherub at a harp while a dog howls at it"
+    },
+    {
+      "id": "sts.photo.ch07-canned-music-1929",
+      "field": "caption",
+      "before": "Exhibitors Herald-World, November 16, 1929. \"Is the Robot such good company he can 'hog the whole show?'\"",
+      "after": "Exhibitors Herald-World, November 16, 1929. The union asks whether the Robot is good enough company to hog the whole show."
+    },
+    {
+      "id": "sts.photo.ch07-canned-music-1930",
+      "field": "alt",
+      "before": "A 1930 newspaper advertisement headlined \"Is the Robot Fooling YOU?\", showing a robot among classical muses holding a banner reading CANNED MUSIC IN THEATERS, with a mail-in coupon enrolling the reader in the Music Defense League",
+      "after": "A robot stands among classical muses holding a banner reading CANNED MUSIC IN THEATERS"
+    },
+    {
+      "id": "sts.plate.gary",
+      "field": "caption",
+      "before": "Gary. Stayed informed. Couldn't fix a fence.",
+      "after": "Gary. Stayed informed."
+    },
+    {
+      "id": "sts.diagram.ch08-cognitive-extraction",
+      "field": "alt",
+      "before": "The Cognitive Extraction Engine: raw attention is harvested by infinite scroll and notifications, depleting the prefrontal cortex, producing systemic suggestibility, and ending in loss of physical agency",
+      "after": "A conceptual sequence: scrolling and alerts compete with a chosen task, repeated switches leave work waiting, and less time may remain for that task. This is an illustration, not a neurological model."
+    },
+    {
+      "id": "sts.diagram.ch08-cognitive-extraction",
+      "field": "caption",
+      "before": "The Cognitive Extraction Engine. Attention goes in at the top; agency comes out the bottom, and the platform keeps the difference.",
+      "after": "The Cognitive Extraction Engine. A picture of diverted time, not a measurement of brain chemistry."
+    },
+    {
+      "id": "sts.diagram.ch08-focus-recovery",
+      "field": "alt",
+      "before": "The Cognitive Fragmentation Curve: a graph of cognitive depth over one hour, showing a twenty-minute climb to deep-focus baseline, then repeated algorithmic interrupts, each recovery peaking lower than the last",
+      "after": "An illustrative curve of attention on a task rising, dropping at interruptions, and recovering between them. The axes have no measured scale and the curve makes no claim about a fixed recovery time."
+    },
+    {
+      "id": "sts.diagram.ch08-focus-recovery",
+      "field": "caption",
+      "before": "The Cognitive Fragmentation Curve. Above roughly three interrupts an hour, the curve never touches baseline again.",
+      "after": "One possible pattern of interrupted work. A conceptual sketch, not measured data or a universal recovery curve."
+    },
+    {
+      "id": "sts.diagram.ch08-firewall-pipeline",
+      "field": "alt",
+      "before": "The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batch processing, then text-only synthesis, and emerges as deep physical execution",
+      "after": "A suggested attention routine: check incoming information in scheduled windows, make notes, then return to a chosen task. This is a practical proposal, not a measured change in entropy or agency."
+    },
+    {
+      "id": "sts.diagram.ch08-firewall-pipeline",
+      "field": "caption",
+      "before": "The Cognitive Firewall Pipeline. Entropy falls left to right; agency rises.",
+      "after": "The Cognitive Firewall Pipeline. A routine to try and adjust around the work and people who need you."
+    },
+    {
+      "id": "sts.diagram.ch08-info-architectures",
+      "field": "caption",
+      "before": "Two architectures for the same brain. The stream keeps you reactive; the batch keeps you sovereign.",
+      "after": "Two architectures for the same brain. The stream keeps you reactive; the batch keeps you in charge."
+    },
+    {
+      "id": "sts.diagram.ch08-star-vs-mesh",
+      "field": "alt",
+      "before": "Trust network topologies: a star topology where every node depends on one hub that can fail, versus a mesh topology where every node connects to several neighbors and damage becomes a detour",
+      "after": "Illustrative network topologies: a star depends on one hub, while the mesh has alternate connections that may provide a route around a failure."
+    },
+    {
+      "id": "sts.diagram.ch08-star-vs-mesh",
+      "field": "caption",
+      "before": "Star versus mesh. In the star, the hub's failure is everyone's failure; in the mesh, damage is a routing problem.",
+      "after": "Star versus mesh. The star loses its links when the hub fails. The mesh can reroute if another working path remains."
+    },
+    {
+      "id": "sts.diagram.hyperlocal-vs-global",
+      "field": "alt",
+      "before": "Two supply lines compared: a long fragile global chain versus a short hyper-local loop",
+      "after": "Two supply lines compared side by side: a long fragile global chain of raw material, overseas factory, ocean freight and last-mile truck, versus a short hyper-local loop of local material, neighborhood factory, and you"
+    },
+    {
+      "id": "sts.diagram.hyperlocal-vs-global",
+      "field": "caption",
+      "before": "Not decentralization for its own sake. A shorter line you can hold in your head.",
+      "after": "Not decentralization for its own sake. A shorter line: one you can hold in your head, that depends on your neighbors' hands instead of strangers far away."
+    },
+    {
+      "id": "sts.diagram.ch09-region-ring",
+      "field": "caption",
+      "before": "You do not deglobalize a city by walling it off. You ring it with municipalities that produce what it cannot, which is also where the good jobs are.",
+      "after": "You don't deglobalize a city by walling it off. You ring it with towns that produce what it can't, which is also where the good jobs are."
+    },
+    {
+      "id": "sts.diagram.ch09-cnc-bed",
+      "field": "caption",
+      "before": "The CNC Autonomous Bed. Every plant is a coordinate; the machine tends the whole grid from one rail.",
+      "after": "The CNC bed. Every plant is a coordinate; the machine tends the grid from one rail."
+    },
+    {
+      "id": "sts.diagram.ch09-greenhouse-bus",
+      "field": "caption",
+      "before": "The Greenhouse Automation Bus. Sensors in on I2C, 12V actuators out on GPIO relays, PID loops in the middle.",
+      "after": "The greenhouse bus. Sensors in on I2C, low-voltage actuators out on relays, control loops in the middle."
+    },
+    {
+      "id": "sts.diagram.ch10-model-collapse",
+      "field": "alt",
+      "before": "Model collapse generation by generation: a wide, rich human-data distribution at Generation 0 narrows to a piled-up mean at Generation 1 and finally to a single degenerate spike at Generation 5",
+      "after": "Schematic model collapse: a broad distribution narrows over successive generations. The generation labels illustrate the process, not a measured timetable for language models."
+    },
+    {
+      "id": "sts.diagram.ch10-model-collapse",
+      "field": "caption",
+      "before": "Model collapse across one training lineage. The rich tails, the edge cases, the genius, are pruned first and gone by Generation 5.",
+      "after": "A simplified picture of model collapse across one training lineage, not a forecast of which generation fails. Rare cases can disappear first."
+    },
+    {
+      "id": "sts.diagram.ch10-algorithm-unlock",
+      "field": "alt",
+      "before": "The Algorithmic Judo pipeline: a high-utility off-grid tech core wrapped in an outrage or tragedy narrative hook is scored viral by the algorithm and delivered to a human target who unlocks the core",
+      "after": "A proposed publishing path: useful instructions become part of a true story, travel through a feed, and reach a reader who can use them. Reach isn't guaranteed."
+    },
+    {
+      "id": "sts.diagram.ch10-algorithm-unlock",
+      "field": "caption",
+      "before": "Algorithmic Judo. A dry manual scores near zero; wrapped in a human story, the algorithm carries it for you.",
+      "after": "Algorithmic judo: give a useful manual a human entry point. Distribution still depends on the platform and the people who encounter it."
+    },
+    {
+      "id": "sts.diagram.ch11-cooling-loop",
+      "field": "caption",
+      "before": "The Split-Loop Thermal Exchange. Pull the heat straight off the silicon and dump it outside, instead of paying an AC unit to fight your own server.",
+      "after": "The split loop. Pull the heat off the silicon and dump it outside, instead of paying an air conditioner to fight your own server."
+    },
+    {
+      "id": "sts.diagram.ch12-csa-network",
+      "field": "caption",
+      "before": "The Semi-Autonomous CSA. Automated nodes run at roughly 300% of their own need; the surplus carries whoever cannot produce.",
+      "after": "The semi-autonomous CSA. Whatever surplus the nodes produce goes to the neighbors who can't. The point is distribution, not a guaranteed yield."
+    },
+    {
+      "id": "sts.photo.ch13-solar-barn",
+      "field": "caption",
+      "before": "Solar on an outbuilding. The Shouse Grid starts with one roof.",
+      "after": "Solar on an outbuilding. The shouse grid starts with one roof."
+    },
+    {
+      "id": "sts.diagram.ch13-shell-architecture",
+      "field": "caption",
+      "before": "The Double-Wide Shell. Two one-trip containers, one surgical cut, 640 square feet of open span.",
+      "after": "The double-wide shell, in plan. Two containers, one room, and a steel skeleton where the walls used to be."
+    },
+    {
+      "id": "sts.diagram.ch13-thermal-seal",
+      "field": "alt",
+      "before": "The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel",
+      "after": "Illustrative wall section: steel, closed-cell foam, and interior finish. Insulation reduces heat flow; joints, penetrations, moisture control, and fire protection still need a complete design."
+    },
+    {
+      "id": "sts.diagram.ch13-thermal-seal",
+      "field": "caption",
+      "before": "The thermal barrier in section. Foam bonded to bare steel: vapor-sealed, condensation-proof, and the heat stays outside.",
+      "after": "The thermal barrier in section. A continuous insulation and air barrier helps keep warm, moist indoor air away from cold metal."
+    },
+    {
+      "id": "sts.photo.ch14-dead-mall",
+      "field": "alt",
+      "before": "Interior of an abandoned shopping mall",
+      "after": "An abandoned bar inside an older shopping mall in Haifa"
+    },
+    {
+      "id": "sts.photo.ch14-dead-mall",
+      "field": "caption",
+      "before": "A dead mall. Gradually, then suddenly.",
+      "after": "An abandoned bar in an older shopping mall in Haifa. Gradually, then suddenly."
+    },
+    {
+      "id": "sts.diagram.ch14-logistic-shockwave",
+      "field": "caption",
+      "before": "The Logistic Shockwave. A just-in-time system has no buffer to absorb the blow, so the blow travels straight through to the shelves.",
+      "after": "The logistic shockwave. A system with no buffer passes every blow straight through to the shelves."
+    },
+    {
+      "id": "sts.diagram.ch14-mesh-comms",
+      "field": "alt",
+      "before": "Centralized versus decentralized mesh communications: a single tower serving three users fails entirely when broken, while a mesh of nodes routes around any dead node",
+      "after": "Two example networks: users dependent on one tower lose their link when it fails; a mesh with several surviving radio paths can pass messages around a failed node."
+    },
+    {
+      "id": "sts.diagram.ch14-mesh-comms",
+      "field": "caption",
+      "before": "Two topologies for a town. The tower is a single point of failure; the mesh treats damage as a routing problem.",
+      "after": "Two topologies for a town. A mesh can route around damage only where another usable path remains."
+    },
+    {
+      "id": "sts.diagram.ch15-clt-firewall",
+      "field": "alt",
+      "before": "The Cooperative Land Trust Firewall: the speculative real estate market's attempts to buy or foreclose are blocked by a legal shield; inside the trust, the land is held in perpetuity and leased to community stewards on a 99-year ground lease",
+      "after": "Community land trust structure: a nonprofit holds land under resale restrictions and members hold improvements under a long ground lease. Taxes, debt, and governance duties remain; the structure doesn't guarantee protection from foreclosure."
+    },
+    {
+      "id": "sts.diagram.ch15-clt-firewall",
+      "field": "caption",
+      "before": "The CLT firewall. Split the title, and the market can no longer reach the dirt.",
+      "after": "The land-trust idea. Split the title, and the speculative market has a much harder time reaching the dirt."
+    },
+    {
+      "id": "sts.diagram.ch15-soil-food-web",
+      "field": "caption",
+      "before": "The Soil Food Web. A biological refinery running on sunlight: the plants feed the web that feeds the plants.",
+      "after": "The soil food web. Sunlight feeds the plants, the plants feed the microbes, and the microbes help feed the plants."
+    },
+    {
+      "id": "sts.photo.ch16-servers",
+      "field": "caption",
+      "before": "Server racks. Code and media scale while you sleep.",
+      "after": "Server racks. A useful record can travel beyond the people who made it."
+    },
+    {
+      "id": "sts.diagram.ch16-sneakernet",
+      "field": "caption",
+      "before": "The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet.",
+      "after": "The sneakernet cycle. A library walks across town in a pocket."
+    },
+    {
+      "id": "sts.plate.field-kit",
+      "field": "alt",
+      "before": "A pixel-art specimen board of the field kit: photobioreactor, grow tower, LoRa node, solar and battery, 3D printer, CNC plasma table, walk-behind tractor, cyberdeck",
+      "after": "A pixel-art specimen board of the field kit: a photobioreactor, a vertical grow tower, a LoRa mesh node, a solar-and-battery rig, a 3D printer, a CNC plasma table, a walk-behind tractor, and a cyberdeck"
+    },
+    {
+      "id": "sts.plate.field-kit",
+      "field": "caption",
+      "before": "The field kit. Every one of these already exists, and a person with modest money and stubbornness can own the lot.",
+      "after": "The field kit. Every one of these already exists, and a person with modest money and stubbornness can get their hands on most of it."
+    },
+    {
+      "id": "sts.plate.photobioreactor",
+      "field": "alt",
+      "before": "A DIY 3D-printed photobioreactor growing green algae with a Raspberry Pi board",
+      "after": "A DIY 3D-printed photobioreactor: a clear vessel of bright green algae culture on a printed frame with a Raspberry Pi board and status light"
+    },
+    {
+      "id": "sts.diagram.algae-loop",
+      "field": "alt",
+      "before": "The closed algae fish-food loop: fish, grow beds, dry and grind, photobioreactor, back to fish",
+      "after": "The closed algae fish-food loop drawn as a cycle: fish tank to grow beds to dry-and-grind to photobioreactor and back to the fish as home-made food"
+    },
+    {
+      "id": "sts.diagram.algae-loop",
+      "field": "caption",
+      "before": "Grow the fish food too, and the last store-bought input drops out. The loop closes.",
+      "after": "Grow the fish food too, and one more store-bought input drops out."
+    },
+    {
+      "id": "sts.diagram.ch17-lora-node",
+      "field": "alt",
+      "before": "Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz",
+      "after": "Illustrative mesh-node hardware: a solar panel, charger and protected battery matched to one another, a supported LoRa board, and a band-matched antenna. Firmware and regional settings must match the hardware and local rules."
+    },
+    {
+      "id": "sts.diagram.ch17-lora-node",
+      "field": "caption",
+      "before": "A hyper-local mesh node. Sunlight in, encrypted packets out, no license and no bill.",
+      "after": "A mesh node. Sunlight in, short encrypted messages out."
+    },
+    {
+      "id": "sts.diagram.ch17-dc-native",
+      "field": "alt",
+      "before": "The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 percent converting DC to AC and again converting back to DC at the wall brick, while the DC-native chain runs solar to battery to fuse block to devices with zero conversion loss",
+      "after": "Two power paths: an inverter and wall adapter convert DC to AC and back; a DC distribution path avoids that pair but still has charging, wiring, and voltage-conversion losses."
+    },
+    {
+      "id": "sts.diagram.ch17-dc-native",
+      "field": "caption",
+      "before": "The round-trip toll. Every load in the shell already wanted DC; the inverter chain charges you twice to deliver it.",
+      "after": "The round-trip toll. When a load already wants DC, the inverter chain charges you twice to deliver it."
+    },
+    {
+      "id": "sts.diagram.ch17-fab-lab",
+      "field": "caption",
+      "before": "The Neighborhood Fab Lab. Broken means fabricate, not wait.",
+      "after": "The neighborhood fab lab. Broken means fabricate, not wait."
+    },
+    {
+      "id": "sts.photo.ch19-iss-sunrise",
+      "field": "caption",
+      "before": "Sunrise from orbit. The new era does not ask permission.",
+      "after": "Sunrise from orbit. The new era doesn't ask permission, and it still has work to do."
+    },
+    {
+      "id": "sts.plate.cyberdeck",
+      "field": "alt",
+      "before": "A homemade cyberdeck: rugged case, mechanical keyboard, amber map screen, antenna",
+      "after": "A homemade cyberdeck: a rugged hard case holding a mechanical keyboard, an amber map-lit screen, and a stub antenna"
+    }
+  ]
+}

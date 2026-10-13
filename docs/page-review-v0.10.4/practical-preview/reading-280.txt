@@ -1,0 +1,41 @@
+                                                                         CHAPTER 16
+
+
+afternoon because somebody left an honest record. A failed trial can
+keep the next group from spending scarce money on the same mis-
+take.
+Thatʼs the hopeful answer to scale. People and places differ, but the
+knowledge they trade doesnʼt have to stay locked inside the group
+that earned it. Share the conditions along with the result, so someone
+else can judge what carries over. The controller records are useful
+precisely because they say what was tested and what still failed. And
+donʼt mistake Dennyʼs audience for a forecast of income; itʼs a fic-
+tional success. Most useful sharing is quieter: a phone call between
+two kitchens, a corrected pickup notice, a drawing another repairer
+can follow.
+
+People before the story
+Ask permission before publishing someoneʼs image, circumstances,
+address, or request for help. Consent to receive food isnʼt consent to
+become content. Give people a route to participate without appearing
+in the documentation.
+The next section handles the files. Permission comes first: no
+technical setting makes consent unnecessary.
+
+Media autonomy: keep your own press
+Platforms are a temporary distribution channel, not a home. If every-
+thing youʼve made lives on servers owned by someone else, it can
+vanish with a policy change or a closed account.
+Clean your files. Photos from a phone usually carry metadata embed-
+ded in the file, EXIF data, which can include the GPS coordinates
+where the picture was taken, the date and time, and the device. Free
+tools like exiftool or Metadata Cleaner can strip it. That handles one
+kind of exposure. It doesnʼt remove a street sign in the background or
+a caption that names someone, so look at what youʼre actually pub-
+lishing.
+
+
+
+
+
+                                                                               275

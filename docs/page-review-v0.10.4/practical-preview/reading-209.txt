@@ -1,0 +1,62 @@
+SURVIVING THE SINGULARITY
+
+
+where P is the number of parameters in billions, Q is the nominal bits
+stored per weight (16 for a common unquantized format, 4 or 8 for
+quantized versions), and dividing by 8 turns bits into bytes. The
+examples use B = 1.2, an illustrative 20 percent allowance, not a guar-
+antee. Quantization metadata, the conversationʼs key-value cache,
+context length, and simultaneous users all change the actual require-
+ment. llama.cpp, server memory and context options
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+204

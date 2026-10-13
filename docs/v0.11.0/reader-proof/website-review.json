@@ -1,0 +1,218 @@
+{
+  "base": "http://127.0.0.1:5193",
+  "source_version": "0.11.0",
+  "released_version": "0.7.5",
+  "scope": "Landing revision and three new manuscript sections at 390px and 1280px. Real gate interaction, canonical text, horizontal bounds, and readable paragraph sizing checked. Browser DOM mutations prove missing text and overflow detection.",
+  "home_sha256": "00b339cd3adec7c5b9fc10aa1e1d3fd3f948dbed02ecc5fb2414ed521d41bf72",
+  "checks": [
+    {
+      "kind": "landing",
+      "width": 390,
+      "expected": "Your next meal shouldn't depend on your last paycheck. As AI changes work, how do we make ordinary life more secure? Explore how neighbors, growers, useful machines, and public institutions can make necessities more dependable, starting with food. Find a way to take part. What is at stake Food access tied to a paycheck Control of useful equipment Decisions about public resources Where you can act Work with a local food provider on an unmet need Help set ownership, repair, and access terms Bring a concrete proposal to the body that can decide it",
+      "screenshot": "landing-390-revision.png",
+      "text": "Your next meal shouldn't depend on your last paycheck. As AI changes work, how do we make ordinary life more secure? Explore how neighbors, growers, useful machines, and public institutions can make necessities more dependable, starting with food. Find a way to take part. What is at stake Food access tied to a paycheck Control of useful equipment Decisions about public resources Where you can act Work with a local food provider on an unmet need Help set ownership, repair, and access terms Bring a concrete proposal to the body that can decide it",
+      "box": {
+        "x": 0,
+        "y": -207.109375,
+        "width": 390,
+        "height": 988.859375,
+        "top": -207.109375,
+        "right": 390,
+        "bottom": 781.75,
+        "left": 0
+      },
+      "horizontal_overflow": false,
+      "outside_horizontal_bounds": []
+    },
+    {
+      "kind": "reader",
+      "route": "/book/chapter6",
+      "width": 390,
+      "file": "08-chapter6.md",
+      "source_sha256": "5d0b77634ff13b3600864acc9875b383c5d27da5c83106d31cbc01a2eaf0fe71",
+      "heading": "Whose robots?",
+      "canonical_text_matches": true,
+      "paragraph_legibility": {
+        "font_px": 20,
+        "line_height": "35px",
+        "fully_in_viewport": true,
+        "box": {
+          "x": 40,
+          "y": 465.203125,
+          "width": 310,
+          "height": 70,
+          "top": 465.203125,
+          "right": 350,
+          "bottom": 535.203125,
+          "left": 40
+        }
+      },
+      "screenshot": "chapter6-390-addition.png",
+      "paragraph_blocks": 7
+    },
+    {
+      "kind": "reader",
+      "route": "/book/conclusion",
+      "width": 390,
+      "file": "21-conclusion.md",
+      "source_sha256": "a94ecf4a59a310438beab7376828829ca3be9d514a75240588d01cef49a7498e",
+      "heading": "A future called solarpunk",
+      "canonical_text_matches": true,
+      "paragraph_legibility": {
+        "font_px": 20,
+        "line_height": "35px",
+        "fully_in_viewport": true,
+        "box": {
+          "x": 40,
+          "y": 464.9375,
+          "width": 310,
+          "height": 70,
+          "top": 464.9375,
+          "right": 350,
+          "bottom": 534.9375,
+          "left": 40
+        }
+      },
+      "screenshot": "conclusion-390-addition.png",
+      "paragraph_blocks": 6
+    },
+    {
+      "kind": "reader",
+      "route": "/book/chapter19",
+      "width": 390,
+      "file": "27-chapter19.md",
+      "source_sha256": "807e13306e7962a8efe20ea2686f27c7670aa1b0adbbc9e2026b11c6f4523bca",
+      "heading": "Get involved",
+      "canonical_text_matches": true,
+      "paragraph_legibility": {
+        "font_px": 20,
+        "line_height": "35px",
+        "fully_in_viewport": true,
+        "box": {
+          "x": 40,
+          "y": 325.234375,
+          "width": 310,
+          "height": 350,
+          "top": 325.234375,
+          "right": 350,
+          "bottom": 675.234375,
+          "left": 40
+        }
+      },
+      "screenshot": "chapter19-390-addition.png",
+      "paragraph_blocks": 12
+    },
+    {
+      "kind": "landing",
+      "width": 1280,
+      "expected": "Your next meal shouldn't depend on your last paycheck. As AI changes work, how do we make ordinary life more secure? Explore how neighbors, growers, useful machines, and public institutions can make necessities more dependable, starting with food. Find a way to take part. What is at stake Food access tied to a paycheck Control of useful equipment Decisions about public resources Where you can act Work with a local food provider on an unmet need Help set ownership, repair, and access terms Bring a concrete proposal to the body that can decide it",
+      "screenshot": "landing-1280-revision.png",
+      "text": "Your next meal shouldn't depend on your last paycheck. As AI changes work, how do we make ordinary life more secure? Explore how neighbors, growers, useful machines, and public institutions can make necessities more dependable, starting with food. Find a way to take part. What is at stake Food access tied to a paycheck Control of useful equipment Decisions about public resources Where you can act Work with a local food provider on an unmet need Help set ownership, repair, and access terms Bring a concrete proposal to the body that can decide it",
+      "box": {
+        "x": 0,
+        "y": -114.953125,
+        "width": 1280,
+        "height": 844.921875,
+        "top": -114.953125,
+        "right": 1280,
+        "bottom": 729.96875,
+        "left": 0
+      },
+      "horizontal_overflow": false,
+      "outside_horizontal_bounds": []
+    },
+    {
+      "kind": "reader",
+      "route": "/book/chapter6",
+      "width": 1280,
+      "file": "08-chapter6.md",
+      "source_sha256": "5d0b77634ff13b3600864acc9875b383c5d27da5c83106d31cbc01a2eaf0fe71",
+      "heading": "Whose robots?",
+      "canonical_text_matches": true,
+      "paragraph_legibility": {
+        "font_px": 21,
+        "line_height": "36.75px",
+        "fully_in_viewport": true,
+        "box": {
+          "x": 340,
+          "y": 481.515625,
+          "width": 600,
+          "height": 36.75,
+          "top": 481.515625,
+          "right": 940,
+          "bottom": 518.265625,
+          "left": 340
+        }
+      },
+      "screenshot": "chapter6-1280-addition.png",
+      "paragraph_blocks": 7
+    },
+    {
+      "kind": "reader",
+      "route": "/book/conclusion",
+      "width": 1280,
+      "file": "21-conclusion.md",
+      "source_sha256": "a94ecf4a59a310438beab7376828829ca3be9d514a75240588d01cef49a7498e",
+      "heading": "A future called solarpunk",
+      "canonical_text_matches": true,
+      "paragraph_legibility": {
+        "font_px": 21,
+        "line_height": "36.75px",
+        "fully_in_viewport": true,
+        "box": {
+          "x": 340,
+          "y": 481.546875,
+          "width": 600,
+          "height": 36.75,
+          "top": 481.546875,
+          "right": 940,
+          "bottom": 518.296875,
+          "left": 340
+        }
+      },
+      "screenshot": "conclusion-1280-addition.png",
+      "paragraph_blocks": 6
+    },
+    {
+      "kind": "reader",
+      "route": "/book/chapter19",
+      "width": 1280,
+      "file": "27-chapter19.md",
+      "source_sha256": "807e13306e7962a8efe20ea2686f27c7670aa1b0adbbc9e2026b11c6f4523bca",
+      "heading": "Get involved",
+      "canonical_text_matches": true,
+      "paragraph_legibility": {
+        "font_px": 21,
+        "line_height": "36.75px",
+        "fully_in_viewport": true,
+        "box": {
+          "x": 340,
+          "y": 389.46875,
+          "width": 600,
+          "height": 220.5,
+          "top": 389.46875,
+          "right": 940,
+          "bottom": 609.96875,
+          "left": 340
+        }
+      },
+      "screenshot": "chapter19-1280-addition.png",
+      "paragraph_blocks": 12
+    }
+  ],
+  "negative_controls": {
+    "missing_text": {
+      "rejected": true,
+      "intended_failure_observed": true
+    },
+    "horizontal_overflow": {
+      "rejected": true,
+      "intended_failure_observed": true
+    },
+    "invalid_password": {
+      "rejected": true
+    }
+  },
+  "page_errors": [],
+  "passed": true
+}

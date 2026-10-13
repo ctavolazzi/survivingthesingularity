@@ -1,6 +1,6 @@
 import { marked } from 'marked';
 import matter from 'gray-matter';
-import DOMPurify from 'isomorphic-dompurify';
+import { sanitizeHtml } from './sanitizeHtml.js';
 
 /**
  * Parse markdown content and extract metadata, table of contents, and HTML content
@@ -58,7 +58,7 @@ export async function parseMarkdown(content) {
   // Convert markdown to HTML, then sanitize. Output is rendered via {@html}
   // on blog/book pages, so we strip any script/handler payloads here to keep
   // those render paths safe even if content ever becomes user-supplied.
-  const htmlContent = DOMPurify.sanitize(marked.parse(processedContent));
+  const htmlContent = sanitizeHtml(marked.parse(processedContent));
 
   return {
     metadata,

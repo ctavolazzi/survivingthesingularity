@@ -1,0 +1,85 @@
+{
+  "scope": "Production package validator, deliberately invalid in-memory plans followed by one complete production preflight",
+  "version": "0.10.4",
+  "production_module": "publication/package.py",
+  "production_module_sha256": "4cb9dcc4c470061e8b691d86a87bccde5cfefa9e200ba2feeb52303ed25d2be7",
+  "export_called": false,
+  "controls": {
+    "missing_referenced_asset": true,
+    "missing_font_notices": true,
+    "remote_render_dependency": true,
+    "unsafe_destination": true
+  },
+  "control_details": {
+    "missing_referenced_asset": {
+      "mutation": "Removed the bytes for assets/images/print/intro-nine-stages.svg while retaining the real resource reference.",
+      "validator": "Plan.validate",
+      "exception_type": "PackageError",
+      "rejection": "Missing packaged resource: probe.html -> assets/images/print/intro-nine-stages.svg"
+    },
+    "missing_font_notices": {
+      "mutation": "Removed only assets/fonts/JetBrainsMono-OFL.txt; other notices and the artwork reference remain valid.",
+      "validator": "Plan.validate",
+      "exception_type": "PackageError",
+      "rejection": "Missing required font license/provenance: JetBrainsMono-OFL.txt"
+    },
+    "remote_render_dependency": {
+      "mutation": "Passed a remote background-image URL through the production CSS resource parser. No network request is made.",
+      "validator": "Plan.css -> Plan.ref -> Plan.local_path",
+      "exception_type": "PackageError",
+      "rejection": "Offline rendering cannot depend on 'https://example.invalid/package-control.png' in book.css"
+    },
+    "unsafe_destination": {
+      "mutation": "Tried to add an archive member with a parent-directory traversal.",
+      "validator": "Plan.add",
+      "exception_type": "PackageError",
+      "rejection": "Unsafe package destination: ../package-control.svg"
+    }
+  },
+  "limits": "This is an in-memory plan check, not ZIP readback or an offline renderer test. Publication audits may still be finalized after this snapshot; run the production preflight again immediately before export.",
+  "unmodified_control_fixture_valid": true,
+  "control_fixture": {
+    "referenced_asset": "assets/images/print/intro-nine-stages.svg",
+    "asset_sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac",
+    "font_notices": {
+      "SourceSansPro-LICENSE.txt": "4a4a4179a96b5ef6786186d199f0d049b151352f460b8d2f3c00083792f37dd9",
+      "SourceSerif4-LICENSE.md": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464",
+      "JetBrainsMono-OFL.txt": "30f0c136e3c88e422d0791acd97238870f9054a9729bc34cf2ff0d4ed8cac4ad",
+      "FONT-COPYRIGHTS.txt": "04757dd39485e6b1d823e2ab811f69dcff542bbab386873546917b23bfc1d99c",
+      "SOURCES.md": "b33e5d1724b724ca29edae6ff69622206d1445f9f7611157536e09a5a7f5f0d6",
+      "font-provenance.json": "6a684f82afbb25ed205cbaf8e8c54b111b5c0f68a51e81716ffbf35fe48964b4"
+    }
+  },
+  "positive_plan": {
+    "valid": true,
+    "make_plan_calls": 1,
+    "files": 201,
+    "bytes": 145116965,
+    "retained_source_images": 107,
+    "resolved_render_references": 243,
+    "diagnostic_image_placeholders": 3,
+    "manuscript_version": "0.10.4",
+    "package_manifest_sha256": "05793d046b63febfb69a7ea20efc6ca6b9917fddf21cea7ce8c46521969ddcd1",
+    "snapshot_hashes": {
+      "audits/DESIGN-REPORT.md": "eb0e9f7d3a92a4c763d3f92d1a190e02b355d2b2b22e802c1302799b5bc88a84",
+      "audits/FINAL-VISUAL-REVIEW.md": "44031aa95e99fcb900876cde451016171dc0b3e10fc333ee5e9fb5cfd6dafd4d",
+      "audits/FINALIZATION-v0.10.0.md": "0c60cebb0c08dc10b906621d7fd2ddb76a56e1d20cc95cf0f0b288c4f90afe40",
+      "audits/FINALIZATION-v0.10.1.md": "3d7308183916b973bfecc95f78af9cc98157673177ecbb24ba5eff43031fb68c",
+      "audits/FINALIZATION-v0.10.2.md": "232dbce0afc45d7fbd8bdc0ae89e5f3bdbc82532ee7691b818eafa94c896323b",
+      "audits/FINALIZATION-v0.10.3.md": "b82c7f12b0dc894652e60a5246034502d677cfece433b07f33dc675094e2a7c7",
+      "audits/FINALIZATION-v0.10.4.md": "ae98ab1828917e9818823989d4982501b13a7626186c5c7acc61925a9f5ffd84",
+      "audits/PDF-RESOURCE-CHECKS.json": "a859e40e3483a3ee9b0f7ed9dc838bedf761bbb642114bf1cad9c3bf7bdb5715",
+      "audits/PDF-RESOURCE-CHECKS.md": "2d25b6b8fe3438ac3388aa23a2195b79bb1e05c9bb53e0f528ed60eeae7a4ed2",
+      "audits/PLAN.md": "3c2985c5daa2cd1aef070bbbfb1f820c8056c7ed12de35ce4394012e9d042e16",
+      "audits/QUOTATIONS-v0.10.0.md": "9ba1bb63d605826296d24ffb86991345a26ee8d0f0ddc793e2997a189026a11f",
+      "audits/READING-DESIGN-REVIEW.md": "c215e0cc3c422c2da4041e1aa9f037a1dd185a594c56031c7af84d1174ac69cf",
+      "audits/RIGHTS-AUDIT.md": "e4dd058b43cec11202c2f90bf885d786b9404335374ceeeb8bea6515631286ec",
+      "audits/VISUAL-MAP.md": "d010747fe2ee336fba2522600e564f185d42d7c050834349fb1a508c241917ec",
+      "audits/asset-rights.json": "f258da02537c13f7f83a10efc78dc76e5b186a2c4db65489ad3cc8b97cd6369f",
+      "audits/baseline.json": "ca81e065fd070c2886662328b51fb010c2694ebf2daa077e31d3b28b45c74bd4",
+      "build.json": "53a0e563ca06d694ac21cee32c61aaaf23e6345bfa4ca9c9472526a44c35798f",
+      "manuscript/baseline-sha256.json": "ca81e065fd070c2886662328b51fb010c2694ebf2daa077e31d3b28b45c74bd4",
+      "manuscript/book.json": "564ff89f1095c8bdbf5f1645f51c30046e1712f72ed4886bf8df8000519b4fc3"
+    }
+  }
+}

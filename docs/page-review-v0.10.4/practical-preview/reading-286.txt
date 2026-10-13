@@ -1,0 +1,56 @@
+                                                                                      CHAPTER 17
+
+
+
+
+CHAPTER 17
+Tools of the Trade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The workbench. Own the tools, own the output. (Shixart1985, CC BY 2.0, via Wikimedia
+Commons)
+
+
+       “We are as gods and might as well get used to it.”
+       Stewart Brand, Whole Earth Catalog (1968)
+
+
+
+In this chapter:
+
+ • The tools that survive the transition are the ones you can understand, fix, and run
+   with no cloud, no subscription, and no permission.
+ • Networks fail at the node somebody flashed in a hurry. Discipline you skip in fair
+   weather collects its debt in the storm.
+ • Debugging in the dark is a solved problem: halve it. Power or brain, this side or that
+   side, measure, cut again.
+ • Give the machines a worthwhile assignment: food first, then cleanup, shelter, and
+   care. The proof is already on peopleʼs workbenches.
+
+
+
+
+The first hard storm of the winter came up the valley on a Friday
+afternoon with the barometer falling like a dropped tool, and by dark
+the county was gone. Grid power went first, a whole hillside of win-
+dows going out between one gust and the next. The cell towers lasted
+
+
+
+                                                                                             281

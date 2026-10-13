@@ -1,13 +1,36 @@
+<script>
+  // These Terms describe a site that sells something, so the price comes from
+  // the offer object rather than being typed here. See src/lib/offer.js.
+  import { offer } from '$lib/offer';
+</script>
+
 <svelte:head>
   <title>Terms of Use - Surviving the Singularity</title>
-  <meta name="description" content="Terms of use governing access to survivingthesingularity.com. Informational only." />
+  <meta name="description" content="Terms of use governing access to survivingthesingularity.com, including the terms of the preorder purchase." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:title" content="Terms of Use" />
+  <meta property="og:description" content="Terms of use governing access to survivingthesingularity.com, including the terms of the preorder purchase." />
+  <meta property="og:url" content="https://survivingthesingularity.com/terms" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/home.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/home.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Surviving the Singularity: a practical field guide for staying human in the age of AI." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Terms of Use" />
+  <meta name="twitter:description" content="Terms of use governing access to survivingthesingularity.com, including the terms of the preorder purchase." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/home.png" />
 </svelte:head>
 
 <div class="terms-page">
   <div class="terms-inner">
     <header class="t-header">
       <h1>Terms of Use</h1>
-      <p class="t-sub">Last updated: 26 May 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
+      <p class="t-sub">Last updated: 12 October 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
     </header>
 
     <section class="t-section">
@@ -26,7 +49,34 @@
     </section>
 
     <section class="t-section">
-      <h2>2. No warranties</h2>
+      <h2>2. Purchases and digital access</h2>
+      <p>
+        {offer.sentence}
+      </p>
+      <p>
+        The Site offers a one-time {offer.price} preorder. It grants digital
+        access and delivers immediately. <strong>Nothing is shipped.</strong>
+        The Print Edition is a separate product, at its own price, and is not
+        included in the preorder; the preorder includes a discount right
+        against it once it exists.
+      </p>
+      <p>
+        Payment is processed by Stripe, and Stripe's own terms apply to the
+        payment itself. The full description of what the preorder includes and
+        excludes, the bounded scope of ongoing updates, and the refund policy
+        are set out on the
+        <a href="/policies">policies page</a>, which is incorporated into these
+        Terms by reference. Where these Terms and the policies page disagree
+        about what is being sold, the policies page governs.
+      </p>
+      <p>
+        Nothing in section 1 above limits your statutory rights as a consumer in
+        connection with that purchase.
+      </p>
+    </section>
+
+    <section class="t-section">
+      <h2>3. No warranties</h2>
       <p>
         The Site is provided <strong>"as is" and "as available"</strong> without
         warranties of any kind, whether express, implied, statutory, or otherwise.
@@ -44,7 +94,7 @@
     </section>
 
     <section class="t-section">
-      <h2>3. Limitation of liability</h2>
+      <h2>4. Limitation of liability</h2>
       <p>
         To the maximum extent permitted by applicable law, in no event shall
         the operator, its affiliates, contributors, or licensors be liable for
@@ -70,7 +120,7 @@
     </section>
 
     <section class="t-section">
-      <h2>4. Assumption of risk</h2>
+      <h2>5. Assumption of risk</h2>
       <p>
         You acknowledge that you use the Site, and any information obtained
         from it, entirely at your own risk. Topics referenced on the Site -
@@ -84,7 +134,7 @@
     </section>
 
     <section class="t-section">
-      <h2>5. Indemnification</h2>
+      <h2>6. Indemnification</h2>
       <p>
         You agree to defend, indemnify, and hold harmless the operator and
         its affiliates, contributors, and licensors from and against any and
@@ -98,7 +148,7 @@
     </section>
 
     <section class="t-section">
-      <h2>6. Intellectual property</h2>
+      <h2>7. Intellectual property</h2>
       <p>
         Original content on the Site, including text, graphics, layout, code,
         and the "Surviving the Singularity" name and branding, is the property
@@ -116,10 +166,11 @@
     </section>
 
     <section class="t-section">
-      <h2>7. User submissions</h2>
+      <h2>8. User submissions</h2>
       <p>
-        The Site does not currently solicit user-generated content. If you
-        contact the operator (for example, by email), you grant the operator
+        The Site accepts checklist notes for email delivery, community
+        applications, and messages to the operator. If you submit information
+        through these features or by email, you grant the operator
         a non-exclusive, royalty-free, worldwide license to use, reproduce,
         and respond to your communication for the purposes of operating and
         improving the Site. Do not send confidential information or anything
@@ -128,7 +179,7 @@
     </section>
 
     <section class="t-section">
-      <h2>8. Third-party links and services</h2>
+      <h2>9. Third-party links and services</h2>
       <p>
         The Site contains links to third-party websites and services that the
         operator does not own or control. The operator is not responsible for
@@ -139,19 +190,22 @@
     </section>
 
     <section class="t-section">
-      <h2>9. Acceptable use</h2>
+      <h2>10. Acceptable use</h2>
       <p>You agree not to:</p>
       <ul>
         <li>Use the Site in any way that violates any applicable law or regulation;</li>
         <li>Use automated means (bots, scrapers) to access the Site in a way that imposes an unreasonable load on its infrastructure;</li>
         <li>Attempt to interfere with, compromise, or circumvent the security of the Site;</li>
         <li>Misrepresent your identity or affiliation in any communication with the operator;</li>
-        <li>Use the Site to harass, defame, or harm any person.</li>
+        <li>Use the Site to harass, defame, or harm any person;</li>
+        <li>Submit an email address you do not control or misrepresent another person's purchase;</li>
+        <li>Attempt to access another person's private purchase records;</li>
+        <li>Attempt to defeat rate limits on forms, checkout, or access checks.</li>
       </ul>
     </section>
 
     <section class="t-section">
-      <h2>10. Termination</h2>
+      <h2>11. Termination</h2>
       <p>
         The operator may suspend or terminate your access to the Site at any
         time, for any reason or no reason, without notice. Provisions of these
@@ -159,10 +213,16 @@
         disclaimers, limitation of liability, indemnification, and dispute
         resolution) shall survive.
       </p>
+      <p>
+        You may stop using the Site and request removal from email lists at
+        any time by contacting the operator (see section 16). Unsubscribing
+        does not revoke material you already purchased. Contact the operator
+        from your purchase email address if you need help recovering access.
+      </p>
     </section>
 
     <section class="t-section">
-      <h2>11. Governing law and dispute resolution</h2>
+      <h2>12. Governing law and dispute resolution</h2>
       <p>
         These Terms are governed by the laws of the State of California, USA,
         without regard to its conflict-of-laws principles. Subject to the
@@ -191,10 +251,29 @@
         provision prevents either party from seeking injunctive relief in
         court for intellectual-property infringement.
       </p>
+      <!-- DRAFTED 2026-07-29, NOT REVIEWED BY A LAWYER. Reason it exists:
+           under McGill v. Citibank (Cal. 2017) a waiver of the right to seek
+           public injunctive relief in any forum is unenforceable in California,
+           and where such a waiver is not severable a court can decline to
+           enforce the entire arbitration agreement. The clause above waives
+           "representative" actions without carving public injunctive relief
+           out, which is the exact shape McGill addresses. This paragraph is
+           protective: it narrows the waiver rather than widening it. Have
+           counsel confirm the wording before this reaches production. -->
+      <p>
+        <strong>Public injunctive relief.</strong> Nothing in the paragraph
+        above waives any right you may have to seek public injunctive relief.
+        A claim for public injunctive relief is excluded from arbitration and
+        from the waiver of representative actions, and may be brought in the
+        courts described above. If a court decides that this exclusion is
+        unenforceable, then only the claim for public injunctive relief
+        proceeds in court and the remainder of the dispute stays in
+        arbitration.
+      </p>
     </section>
 
     <section class="t-section">
-      <h2>12. Changes to these Terms</h2>
+      <h2>13. Changes to these Terms</h2>
       <p>
         The operator may modify these Terms at any time by posting an updated
         version on the Site. Your continued use of the Site after changes are
@@ -204,7 +283,7 @@
     </section>
 
     <section class="t-section">
-      <h2>13. Severability</h2>
+      <h2>14. Severability</h2>
       <p>
         If any provision of these Terms is held invalid or unenforceable, that
         provision shall be enforced to the maximum extent permissible, and the
@@ -213,7 +292,7 @@
     </section>
 
     <section class="t-section">
-      <h2>14. Entire agreement</h2>
+      <h2>15. Entire agreement</h2>
       <p>
         These Terms, together with the <a href="/disclaimer">Disclaimer</a> and
         <a href="/policies">Privacy &amp; Policies</a>, constitute the entire
@@ -222,10 +301,49 @@
     </section>
 
     <section class="t-section">
-      <h2>15. Contact</h2>
+      <h2>16. Contact</h2>
       <p>
         Questions about these Terms? Email
         <a href="mailto:info@survivingthesingularity.com">info@survivingthesingularity.com</a>.
+      </p>
+    </section>
+
+    <!-- DRAFTED 2026-07-29, NOT REVIEWED BY A LAWYER, but this one is close to
+         mechanical: California Civil Code section 1789.3 requires a provider of
+         electronic commercial services to give California subscribers this
+         specific notice, and the text below is the standard statutory recital.
+         Verified absent before adding: zero occurrences of "1789.3" or
+         "Complaint Assistance" anywhere in /terms or /policies.
+
+         Appended as section 17 rather than inserted mid-document on purpose.
+         Inserting would renumber 13 through 16, and a previous pass already
+         renumbered this file once; there is no reason to spend that risk on
+         ordering. -->
+    <section class="t-section">
+      <h2>17. California consumer rights notice</h2>
+      <p>
+        Under California Civil Code Section 1789.3, California residents are
+        entitled to the following specific consumer rights notice: The Complaint
+        Assistance Unit of the Division of Consumer Services of the California
+        Department of Consumer Affairs may be contacted in writing at 1625 North
+        Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at
+        (800) 952-5210.
+      </p>
+    </section>
+
+    <section class="t-section">
+      <h2>18. Reader access</h2>
+      <p>
+        The Site does not offer personal accounts or individual sign-ins.
+        {offer.access}
+      </p>
+      <p>
+        Browser storage keeps local reading preferences and checklist progress.
+        Keep your own copy of notes you need: clearing storage or changing
+        devices can remove these local values. What the Site collects and how
+        to request changes is described in the
+        <a href="/policies#accounts">Privacy Policy</a>. Where these Terms and
+        that policy disagree about personal data handling, that policy governs.
       </p>
     </section>
   </div>

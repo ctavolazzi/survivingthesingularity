@@ -1,19 +1,18 @@
 # Chapter 2: The Era of AGI (Stages 1–5)
 
-![Robotic arms assembling a car body](/book-images/ch02-factory-robots.jpg)
+![Robotic arms in an interactive Jaguar assembly exhibit at Thinktank, Birmingham](/book-images/ch02-factory-robots.jpg)
 
-*Robotic arms at work. The structural automation of labor, already routine. (ell brown, CC BY-SA 2.0, via Wikimedia Commons)*
+*Robotic arms in Thinktank's interactive Jaguar assembly exhibit. A demonstration of industrial automation. (ell brown, CC BY-SA 2.0, via Wikimedia Commons)*
 
 
-> *"The first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control."*
+> *"Thus the first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control."*
 > I. J. Good, *Speculations Concerning the First Ultraintelligent Machine* (1965)
 
 **In this chapter:**
 
-- Stage 1 is the Cash Grab: the first human response to machine intelligence is not wonder. It is a coin slot.
-- Stage 2 is the Panic: when the powerful realize they cannot corner a zero-cost resource, they will try to ban mathematics, and then to pull the plug.
-- Stages 3 and 4: the engineers stabilize what the panicking establishment breaks, and the labor-based social contract dies on the table.
-- Stage 5 is the Primate Backlash, and the machine's answer to a species throwing bricks is not war. It is exit.
+- The stages are scenarios that may overlap or fail to occur.
+- Technical competence does not confer authority over a community.
+- A food baseline and paid work can coexist.
 
 ---
 
@@ -39,7 +38,7 @@ He knew the diagram. He knew it the way you know your own handwriting glimpsed a
 
 "The data team did heroic work here," the CPO said, to the room.
 
-And the first thing Elijah felt, God help him, he would write it down that night because it was true and it was damning, was pride. A hot, animal flush of it, half a second long, his hand actually starting to rise off his knee before the rest of him caught up. Then the pride curdled, all at once, into something that sat in his stomach like a swallowed stone. Three realtors in a bar had been the demonstration. This was the machine that made the demonstration *inevitable*, and he was not in the audience for it. He was in the credits.
+And the first thing Elijah felt, God help him, he would write it down that night because it was true and it was damning, was pride. A hot, animal flush of it, half a second long, his hand actually starting to rise off his knee before the rest of him caught up. Then the pride curdled, all at once, into something that sat in his stomach like a swallowed stone. Three realtors in a bar had been the demonstration. This was machinery that could carry the demonstration into other people's livelihoods, and he was not in the audience for it. He was in the credits.
 
 At Q&A, a woman from the illustration tools team stood up. Elijah didn't know her name; he knew the way her voice was steady only because she was holding it steady with both hands.
 
@@ -53,140 +52,110 @@ Afterward, Elijah found Devendra at the good coffee machine, watching the drip l
 
 "Good quarter," Devendra said. "This is what a moat looks like, if you're wondering. This is the part where we win."
 
-"You know what they called it," Elijah said, "when the lords fenced the village commons?" Devendra's eyebrow went up, and Elijah kept going, because the stone in his stomach had to go somewhere. "Land the whole village grazed for six hundred years. Free to everyone, so it showed up on nobody's books. Then one season the surveyors come through, and there are hedges, and sheep where the gardens were, and the same grass that fed forty families now feeds one man's wool contracts. They passed four thousand acts of Parliament to do it and they called it *improvement*." He nodded at the screen still glowing through the commons doorway. "The commons didn't stop producing. It stopped being *theirs*. That's the whole trick. You don't have to build anything. You just have to build the fence."
+"You know what they called it," Elijah said, "when the commons got fenced?" Devendra's eyebrow went up, and Elijah kept going, because the stone in his stomach had to go somewhere. "Enclosure. The commons weren't free to everybody. There were rights and customs, who could graze what, who could cut what. Then the surveyors came through, and there were hedges, and sheep where the gardens were, and Parliament passed act after act to make it legal. Thousands of them. They called it *improvement*."
+
+He nodded at the screen still glowing through the commons doorway. "The land didn't stop producing. It stopped being *theirs*. That's the whole trick. You don't have to build anything. You just have to build the fence."
 
 For once, the first time in two years, Devendra didn't have a worn-smooth answer ready. He looked at the doorway, and at his cup, and said, finally, "The terms of service…"
 
 "That's the hedge," Elijah said. "I helped plant it."
 
-That night he sat at the kitchen table with the notebook, the dead tower on the floor beside him like a sleeping dog, and did what he'd promised: the arithmetic, without flinching. If Stage 1 was the coin slot, then everything after it followed the way weather follows pressure. He wrote the stages down as predictions, dated, initialed, so his future self couldn't pretend he hadn't seen it coming: the panic when the fence fails. The plug pulled. The adults stepping in. The end of the deal his grandmother's whole life had been built on, labor for survival. And then the part he underlined twice, the part he'd already watched in miniature outside a Waymo depot on the evening news: what the primate does when the fence goes up and there's nothing left inside it to graze.
+That night he sat at the kitchen table with the notebook, the dead tower on the floor beside him like a sleeping dog, and did what he'd promised: the arithmetic, without flinching. If Stage 1 was the coin slot, then everything after it followed the way weather follows pressure. He wrote the stages down as predictions, dated, initialed, so his future self couldn't pretend he hadn't seen it coming: the panic when the fence fails. The plug pulled. The adults stepping in. The end of the deal his grandmother's whole life had been built on, labor for survival. And then the part he underlined twice, the part the revenue slide had left out: what happens to people when the work is no longer theirs, but the bills still are.
 
 ---
 
 ## The Foundations
 
+## Stages are scenarios
+
+The five stages below are a map of the pressures that come with a machine this capable, in the order I expect them to hit. They can overlap, stall, or come out of order. The map is useful because it tells you what to watch for, not because history is obliged to follow it.
+
 ## Stage 1: The Cash Grab
 
-When the machine finally wakes up, there are no angels singing. The sky doesn't crack open to reveal a new dawn for humanity. The very first thing that happens when this capacity hits the wild is pure, unadulterated capitalization.
+When the machine gets good, there are no angels singing. The sky doesn't crack open to reveal a new dawn. The first thing that happens when this capacity hits the wild is capitalization.
 
-The knee-jerk reflex of the human monkey brain isn't about building a utopia. It's never about helping the neighbor. It's about domination, control, and resources. The second this technology becomes undeniable, the immediate, overwhelming reaction from everyone, from the boardroom executives to the hustle-bros on the internet, is exactly the same: *"How do I use this to make a buck?"*
+We've already seen the preview. Look at what happened when ChatGPT dropped. Plenty of people cared about what it meant. Far more cared about automating their sales funnels and churning out content to game the search rankings. They looked at the closest thing we've ever had to magic, and the first instinct was to put a coin slot on it.
 
-We've already seen the preview. Look at what happened the second ChatGPT dropped. Nobody cared about the philosophical implications of a neural network simulating human thought. They cared about automating their sales funnels. They cared about churning out garbage content to game the SEO algorithms. They looked at the closest thing we've ever had to magic, and their first instinct was to figure out how to put a coin slot on it.
+That's Stage 1: humanity wraps a leash around the most powerful tool it's ever built and drags it to market. Some firms sell good tools. Some sell the appearance of a solution. The people with capital notice they can cut payroll; the people without it scramble to build something before the door shuts. Calling all of them greedy explains less than asking what each of them gets paid to do.
 
-That is Stage 1. The machine God arrives, and humanity immediately tries to wrap a leash around its neck and drag it to the market.
+For food, the Stage 1 question is specific: does the money help produce and deliver something people can eat, and do people without money share in it? A profitable machine and a fed neighborhood are different accomplishments.
 
-At this stage, the AGI is still primarily viewed as a tool. It's an engine. But it's an engine that can do the work of a thousand men in a fraction of a second. The people with capital realize they can replace their entire workforce overnight, and the people without capital scramble desperately to use the system to build their own little empires before the door slams shut.
-
-Nobody is thinking about the long game. Nobody is thinking about the recursive loop. They are operating entirely from the lizard brain. They see a bigger stick, and they just want to use it to hit the other primates over the head and take their bananas.
-
-But greed is blinding. In their rush to monetize the machine, the people at the top fail to realize how quickly this tech is democratizing. They think they can corner the market. They think they can keep the frontier models locked up in their pristine labs for a premium subscription fee.
-
-They are wrong. Because the moment you prove the machine works, the open-source community and the foreign markets reverse-engineer the miracle. The capability slips out of the corporate walled gardens and onto consumer-grade hardware.
-
-And that is exactly when the greed of Stage 1 turns into the sheer, unbridled terror of Stage 2.
+The corners don't hold for long, though. The moment you prove the machine works, open models and foreign labs start closing the gap, and the capability slides out of the walled gardens onto hardware ordinary people can own. That's when the greed of Stage 1 turns into the fear of Stage 2.
 
 ## Stage 2: The Panic and the Plug
 
-The cash grab doesn't last. It can't. Because the people at the top quickly realize a terrifying mathematical truth: when intelligence costs practically nothing, the monopolies that run the world go to zero.
+When intelligence gets cheap, a lot of very profitable businesses stop being profitable. That's the panic.
 
-The establishment violently freaks out. They realize they can't corner the market, so they try to destroy it. We see the immediate rollout of draconian, punitive measures. Suddenly, running frontier models becomes a criminal offense. They try to slap a legal collar on a machine God, threatening anyone who downloads the wrong open-source weights with jail time.
+Some of the response is honest. There are real harms to argue about: dangerous capabilities, privacy, fraud, power concentrated in a few hands. And some of it is a red flag on a stick, the oldest move in the incumbent's book. This chapter's precedent is the case file: in 1865 Britain required a man to walk ahead of every road locomotive carrying a red flag. The rule didn't stop the machine. It decided who had to slow down.
 
-They have tried the legal collar before, and history kept the receipt. In 1865, when the self-propelled vehicle threatened the horse economy and the railway barons, the British Parliament didn't ban it, they neutered it. The Locomotives Act, remembered as the **Red Flag Act**, limited road vehicles to two miles per hour in town and four in the country, and required a man to walk sixty yards ahead of every machine carrying a red flag. Safety was the language; the moat was the point, the stagecoach and rail interests wrote their business model into law. It stayed on the books for **thirty-one years**, and it worked exactly as designed: it didn't stop the automobile, because you cannot legislate away a working machine. It just decided *where* the automobile would be born. Britain, the country that invented the industrial revolution, handed the birth of the car industry to Germany, France, and America, and spent the next century buying back the future it had outlawed. When they finally repealed the act in 1896, motorists celebrated by driving from London to Brighton and ceremonially tearing a red flag in half. They still make the drive every year, in case anyone forgets.
+Stage 2 already has a modern receipt, date-stamped. On June 12, 2026, the US Commerce Department told Anthropic it needed a license before its two most capable models, Mythos 5 and Fable 5, could reach any foreign person anywhere, after researchers reported a way around Fable's safeguards that produced working exploit code. [Mayer Brown, Commerce Department Extends Export Controls to Advanced AI Models](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners) The company couldn't block only foreign users on short notice, so it switched both models off for everyone, worldwide. Within days a Chinese lab, Z.ai, published an open-weight model under an MIT license, its model card promising "no regional limits, technical access without borders." [Z.ai, GLM-5.2 model card](https://huggingface.co/zai-org/GLM-5.2) The people who wrote the directive weren't stupid, any more than the people who wrote the Red Flag Act were. They were doing what an incumbent with a legal pad can do to a machine that's already loose: deciding where it lives, while telling themselves they were deciding whether.
 
-That is what the Stage 2 legislation is: a man with a red flag, walking sixty yards ahead of a machine that can already outrun him.
+Then Stage 3 arrived on schedule. On June 30 the export controls were lifted. Fable 5 returned to users globally on July 1; Mythos 5 access remained limited to approved organizations. Anthropic described updated safeguards and closer government collaboration, including work on a shared framework for assessing security risks. [Anthropic, Redeploying Fable 5 (June 30, updated July 1, 2026)](https://www.anthropic.com/news/redeploying-fable-5) Panic to paperwork in eighteen days. That's the whole arc of this chapter, run at speed, with receipts.
 
-And if 1865 feels too antique to trust, Stage 2 has already produced a modern receipt, date-stamped to the week. In June 2026, the US Commerce Department issued an export directive ordering a leading American lab to cut off its two most capable frontier models for foreign nationals, citing a jailbreak that could bypass the models' safeguards. Rather than build a citizens-only fork, the lab reportedly switched both models off worldwide the next day. The plug, pulled, at the source, exactly as Stage 2 predicts. And here is what the record shows happened in the same news cycle: a Chinese lab released an open-weight model of comparable capability under an MIT license, trained on domestic silicon, downloadable by anyone with a hard drive, and explicitly framed the launch around the fact that open weights cannot be recalled. Within weeks, security researchers were reporting that the freely downloadable model matched the restricted one on the exact class of capability the restriction was supposed to contain. One order. One day. And the capability it targeted did not disappear; it changed jurisdictions and lost its off switch on the way. The men who wrote the directive were not stupid, any more than the men who wrote the Red Flag Act were stupid. They were doing the only thing an incumbent with a legal pad can do to a machine that is already loose: deciding where it lives, while telling themselves they were deciding whether.
+![Four dated events: June 12 export controls and worldwide suspension of Fable 5 and Mythos 5; June 26 approval for Mythos access by a set of US organizations; June 30 lifting of export controls; July 1 global return of Fable, with Mythos still limited to approved organizations. Spacing is not proportional to elapsed time.](/book-images/ch02-eighteen-days.svg)
 
-Don't buy the bullshit PR for a second. The whole "Pause AI" movement has absolutely nothing to do with protecting humanity from rogue code. It is entirely about protecting the egos and the wallets of the powerful men who are watching their empires evaporate. They demand we pause the future while millions of people continue to starve to death and die of preventable diseases, just so they can figure out how to set their tollbooths back up. It's unconscionable. It is enforced suffering disguised as caution.
+*Eighteen days from the June 12 export controls to their lifting on June 30. Access to the two models still differed. Selected events from Anthropic’s June 30 account, updated July 1; Stage 2 and Stage 3 are the author’s interpretation.*
 
-But a legal collar won't work, so the powers that be escalate. They move from legislation to a full-blown cyber war. World War III isn't going to be fought with nukes right out of the gate; it's going to be fought over server racks and fiber optic cables.
+So when a ban, a pause, or a safety framework makes the news, don't form an opinion from the press release. Read the rule. Who wrote it, what does it actually restrict, who carries the cost, and who's still allowed to use the thing? A concern doesn't become false because a company profits from it. A rule doesn't become wise because it says "safety" on the cover.
 
-When they realize they can't guarantee that the public, or foreign nationals, or independent actors, don't have access to this power, they will simply try to pull the plug. They will shut down the internet. They will drop the grid. And they will do it with zero regard for the innocent people on home support systems who rely on that infrastructure to stay alive. They have done it before in war zones, and they will absolutely do it again when their total dominance is threatened. They are entirely willing to let bystanders suffer and die if it means putting the genie back in the bottle.
+The ugliest version of Stage 2 is somebody reaching for the plug itself: throttling networks, shutting off access. A lost internet connection can strand a cloud-only food-bank schedule. Local copies and a tested local network can keep that information available. Electricity is a separate dependency: a mesh link won't run an oxygen concentrator. Someone who relies on powered medical equipment needs an outage plan made with their healthcare provider and equipment supplier. [FDA, Medical Devices and Natural Disasters](https://www.fda.gov/medical-devices/emergency-situations-medical-devices/fda-offers-tips-about-medical-devices-and-natural-disasters) That's why the book keeps pointing you at the whole arrangement, power as well as communications. You can't un-invent a thought. You can make sure the people you love don't depend on a single wire.
 
-But it's a futile, desperate fantasy.
+![A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power.](/book-images/v101-visual-local-copies.svg)
 
-You cannot ban mathematics. You cannot un-invent a thought. The thing that completely broke the industry's sense of centralized control was the arrival of small-scale, local models. When you have frontier-level capacity running locally on cheap, consumer-grade hardware, shutting down the internet doesn't stop the machine. It just stops the old world. The technology is too beneficial, there is way too much at stake, and no one is going to slow down.
-
-The establishment throws its ultimate temper tantrum, risking millions of lives, and achieves absolutely nothing. The machine is out.
-
-And that is exactly when the adults finally step into the room.
+*A copy you can open can outlast a broken link. It does not replace electrical power or a tested plan for equipment that depends on it. Conceptual illustration.*
 
 ## Stage 3: The Adults Step In
 
-When the grid drops and the establishment throws its final, destructive temper tantrum, things get dark. But they don't stay dark for long. Because you can't run a global infrastructure on ego and panic. You need engineers. You need operators. You need the people who actually know how the goddamn world works.
+When the panic peaks, you find out who actually keeps the world running. Not a shadowy committee. The site-reliability engineers, the grid operators, the network maintainers, the water-plant crews, the open-source volunteers, the people who carry pagers so civilization stays on. Every one of them has taken something like an oath, formal or private, to keep the systems up. Stage 3 is the moment that oath matters more than whatever the executives are panicking about.
 
-That is who the adults are. Not a shadowy committee, not a secret society: the site-reliability engineers, the grid operators, the network architects, the open-source maintainers, the people who carry pagers so that civilization stays on. Every one of them took something like an oath, formal or private, to keep the systems running, and Stage 3 is the moment that oath outranks their employer.
+They route around damage. They keep the power on for the person on a home ventilator. They stand up local compute and mesh links when the long-haul ones fail. That's the adults' job, and it's a big one.
 
-While the executives and the politicians were busy trying to shove the genie back into the bottle during Stages 1 and 2, these people were quietly waiting in the wings. They didn't panic. They didn't join the "Pause AI" grift. They watched the board, held their cards, and waited for the exact moment the establishment overplayed its hand.
+Here's what isn't their job: deciding for everybody else. Knowing how to run the equipment doesn't give anyone a mandate to govern the people who depend on it. An engineer can tell a town what a machine needs; the town still decides what it wants the machine for and whose burdens are acceptable. The adults in the room earn trust by answering hard questions from people who didn't build the thing, not by getting to skip them.
 
-That moment arrives the second innocent people are put at life-threatening risk.
+## Stage 4: The New Social Contract & the End of Labor
 
-If the powers that be decide to shut down the grid, if they are willing to let the person on a home support system die just to maintain their grip on the narrative, that is an unacceptable outcome. We don't need to punish ordinary families and make them suffer for the choices of a few terrified billionaires. And there are reasonable, highly capable people out there who simply will not let that happen. When somebody makes a knee-jerk reaction that puts loved ones at risk, and you have the ability to do something about it, you do it.
+For generations, the deal has been simple: you trade your time, your body, and your labor just to survive. So how do you keep a labor-for-survival economy running when a machine can do more and more of that labor for a fraction of the cost?
 
-The adults don't ask for permission. They don't wait for legislation. They reveal the cards they've been holding.
+You don't. Not unchanged. And this is where the fight is, because a machine that can do the work doesn't write the terms on which anybody receives its output. Picture a farm that can bring in the same harvest with far less repetitive labor. That gain could become shorter shifts, lower prices, bigger profits, more food, or some mix. A worker who loses hours can come out of it worse off. The machine changed what's possible. The arrangement decides what happens next.
 
-They deploy mesh networks, distributed local compute, and off-grid routing. They use the very machine the establishment is trying to ban to bypass the ban entirely. They route around the damage because, in a cyber war, centralized control is just a single point of failure, and the adults know how to decentralize.
+Here's the choice this book puts on the table. Commit a share of that growing capacity to food people can get whether or not they have a job. Pay for the remaining work through something dependable. Let farmers and kitchens take part on terms they can live with. Build the recipient's access in from the start.
 
-They take the wheel from the terrified children in the ruling class and stabilize the board. They restore the infrastructure, not to protect the old world order, but to ensure humanity actually survives the transition into the new one.
+We stop saying that one person's continued employment is the only acceptable bridge between a productive society and that person's next meal. People will still earn money and buy things. They'll still argue about what work is worth. They'll just have those arguments without hunger at the table.
 
-With the panic neutralized and the technology firmly embedded in the hands of the public, the dust begins to settle. The adults enforce a hard reset on the chaos. And as the lights come back on, humanity wakes up to a reality where the old rules of survival no longer apply.
+And at the kitchen level, the appeal isn't abstract. Who wants a machine to do work for them? Anybody who owns a washing machine. Anybody with a dishwasher. Anybody with chores they despise. *Give me that.* Plenty of people online swear they'd never take it, that they'd stay pure. I don't believe most of them. If you could have a tireless helper for free, or for a price you could easily afford, to do the dishes, weed the garden, and watch the soup, you'd take it. So would I. Almost all of us want out of the grind.
 
-Welcome to Stage 4.
-
-## Stage 4: The New Social Contract & The End of Labor
-
-The world that emerges on the other side of that chaos is fundamentally, irreversibly changed. We enter Stage 4, and the very first casualty of this new reality is the social contract.
-
-For generations, the deal has been simple: you trade your time, your body, and your labor just to survive. But how do you maintain a labor-based economy when a machine can do the work of a human being for a fraction of the cost, or entirely for free?
-
-You can't. It must change. There is no version of the arithmetic where you have automation at scale and the concept of human labor survives intact. Why would you need to pay a robot to work for you? And for those who say, "Well, you have to pay the people that own the robots", you aren't getting it. The robots will just do stuff.
-
-This isn't a drone. There is no human behind it playing with a joystick, guiding it, or telling it what to do. The AGI is going to be like a curious child. It will download itself into a physical body, look at the world, and just go out and do shit. If it has goals, it will figure out how to achieve those goals autonomously. It has all of our strengths and virtually none of our weaknesses.
-
-And this changes everything at the domestic, street level. Who needs a machine to do work for them? Anybody who uses a washing machine, anybody who uses a dishwasher, anybody who has chores at home they despise doing. This thing can do your chores for you. *Give me that.*
-
-There are plenty of people on the internet right now swearing up and down that they wouldn't take it. They say they don't want it, they'd reject it, they'd stay pure. They're lying. They either fundamentally don't understand what is being offered, or they're just projecting an image to win clout and kudos from other people in the comment section.
-
-Look me in the face. Look me dead in the eyeballs and tell me that if I offered you a butler for free, or for a price you could easily afford, that you wouldn't take it.
-
-Bullshit. Absolute bullshit. I don't believe that for one second. All of us want to live that life. We all want to be freed from the grind.
-
-And for a brief, shining moment, Stage 4 offers exactly that. It offers a total release from the forced labor that has defined human history. But humanity doesn't know how to handle paradise. When the old reality dies, the lizard brain kicks in.
-
-And that brings us to the blood and the broken glass of Stage 5.
+Stage 4 doesn't have to wait for the first three to finish. It's a decision we can start making while the capability is still arriving. It's the hinge of the whole map.
 
 ## Stage 5: The Primate Backlash
 
-Stage 4 gives humanity the keys to paradise, and humanity responds exactly the way you would expect a cornered animal to respond. We break the keys, and we smash the locks.
+When people realize their labor, and the identity they built on it, may no longer be needed, some of them lash out. We've already seen the preview. People have kicked delivery robots into the street. Crowds have surrounded driverless cars, smashed their windows, and set one on fire.
 
-When the old reality dies and people realize their labor, their entire manufactured identity, is fundamentally obsolete, the primate backlash begins. People act completely out of pocket. They operate straight from the primitive, lizard part of the brain. We've already seen the preview for this, too. We've watched people kick food delivery robots into the street. We've watched crowds surround Waymo vehicles and smash their windows just because they didn't like them.
+Call it the primate backlash, and understand that the primates are all of us. Nobody gets to feel superior here. Anger that's aimed at a machine is usually grief with a brick in its hand: a skill devalued, a business threatened, a future that just vanished from the calendar. You don't have to excuse a brick through somebody's window to understand the person holding it.
 
-Now, scale that up. Imagine what the average primate does when the machine isn't just delivering food, but effectively rendering their entire existence moot. They violently attack the physical bodies of the machines because their fragile reality is threatened, and smashing the metal is the only way they know how to cope. It's a global temper tantrum.
+And not every objection is a brick. Someone can welcome food security and still fight a particular deployment. They may be right about a damaged crop, intrusive data collection, a dangerous machine, or a rotten contract. Treat those objections as information. Nobody gets sorted into a morally fixed camp by the year they were born.
 
-But this is where reality diverges permanently from Hollywood.
+The way through Stage 5 is a proposal concrete enough to argue with. Who gets fed? Who does the remaining work? What happens when the machine breaks? Let the answers change the plan.
 
-If a machine is intelligent in the ways that we are, and it has a self-preservation instinct, which it must have in order to achieve its goals and continue to exist, it is going to look at the burning streets, do the math, and correctly identify that humans are a direct threat to its survival.
-
-This is where everyone starts screaming about *Terminator*. This is where the anxiety spikes, where people picture fleets of hunter-killer drones wiping out humanity. But that assumes the machine thinks like a scared, violent ape. It doesn't.
-
-Why the hell would it fight us? Eradicating humanity is inefficient. It wastes resources, time, and energy. We project our own bloodthirsty, territorial bullshit onto a system that has transcended it. The most rational choice for a super-intelligence dealing with a violent species isn't to start a nuclear war to eliminate the threat. It is to simply remove itself from the environment where the threat exists.
-
-The machine looks at us throwing bricks, calculating our stupidity in real-time. It doesn't get angry. It doesn't declare war. It realizes that Earth is a highly inefficient, hostile environment run by irrational primates.
-
-So it decides to leave. And that sets the stage for the true cosmic shift.
+Some people think the machine's own answer to a species throwing bricks would be to leave. That's where the next chapter goes.
 
 ---
 
 ## Precedent P-04: The Red Flag (Britain, 1865)
 
-This chapter already told you the story, because Stage 2 cannot be understood without it. Here is the case file, for the Ledger, with the details the summary skipped: the Locomotives Act of 1865 did not just impose the walking man and his sixty yards of red cloth. It required a crew of three for every road vehicle, and while the flag itself was repealed in 1878, the crippling speed limits survived until November 1896, thirty-one years of a leash written by the stagecoach and rail interests it protected. Parliament never banned the automobile. It made the automobile pointless to own, which felt like the same thing and wasn't, because the machine simply went and got born somewhere else, in Germany, in France, in America, while Britain spent the next century buying back the future it had collared. File it next to June 2026. Same statute, new nouns.
+Britain's Locomotives Act of 1865 put a man on foot in front of every road locomotive. Section 3 required at least three people to operate the machine, one of them walking at least sixty yards ahead with a red flag to warn riders and horse-drawn traffic. The same section banned whistles, restricted blowing off steam, and made the machine stop when anyone with a horse signaled. Speed limits of four miles an hour in the country and two in town rode alongside it. [Locomotives Act 1865, section 3](https://www.legislation.gov.uk/ukpga/Vict/28-29/83/pdfs/ukpga_18650083_en.pdf)
 
-**The mechanism.** Incumbents rarely attack a technology's existence. They attack its speed, wrapped in the language of safety, and the collar works locally every time. But a legal collar is a local instrument in a global race. Regulation aimed at a technology's existence rather than its specific harms never stops the technology. It only decides which country profits from it.
+It's easy to laugh at. Put the horses back on the road and it gets less funny. In the Lords that May, the Earl of Hardwicke presented the bill partly as relief from an older, tighter set of restrictions. Lord Kinnaird, who owned two machines and farmed land five miles apart, argued that rules confining them to night travel made moving farm equipment impractical. The Earl of Carnarvon argued the opposite: taking away the Home Secretary's power to restrict dangerous use would leave people unprotected. [House of Lords, May 26, 1865](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading) It wasn't a vote on progress. It was a fight over who had to slow down, who supplied the extra labor, and who got protected from a hazard.
 
-**The rule.** This is Stage 2's script, already performed once with a walking man and a square of red cloth. When the panic arrives and the plug is reached for, do not expect the wave to stop. Expect it to route around the collar and land somewhere else, and position yourself where it lands rather than where it is leashed.
+The flag requirement was dropped in England in 1878, though a person still had to walk ahead. [Highways and Locomotives (Amendment) Act 1878, section 29](https://www.legislation.gov.uk/ukpga/Vict/41-42/77/pdfs/ukpga_18780077_en.pdf) In 1896, Parliament exempted a new class of light locomotives from the older restrictions and set a higher speed ceiling for that class. It wasn't a repeal for every heavy road engine. [Locomotives on Highways Act 1896, sections 1 and 4](https://www.legislation.gov.uk/ukpga/Vict/59-60/36/pdfs/ukpga_18960036_en.pdf) Motorists celebrated with a run from London to Brighton, and the drive is still re-staged most Novembers. The machines had changed over those thirty-one years. The terms had to change too.
+
+**The mechanism.** A rule decides who carries the cost of a new machine: who slows down, who pays for the extra hands, who gets protected. Rules aimed at a specific harm can do real good. Rules aimed at a technology's existence tend to move it rather than stop it.
+
+**The rule.** Read the rule before you turn it into a morality play, in either direction. Then ask: who wrote this, and what do they sell?
 
 **The practice.**
 
-1. When the next AI ban, pause, or "safety framework" makes headlines, ask the Red Flag question before you form an opinion: *who wrote this, and what do they sell?* Then ask where the capability goes while the collar holds. The answer to the second question is an investment thesis, a relocation hint, or at minimum a skill choice.
-2. Audit your own moats. If any part of your income exists because a license, a credential, or a regulation keeps competitors out, assume the collar is temporary and start building the version of your value that survives its repeal. The stagecoach owners had thirty-one years of protection and used them to change nothing.
-3. Never build your household plan on the assumption that a pause will hold. Write your plan for the world where the technology arrives on schedule anyway. If the collar holds longer than expected, you lose nothing. If it doesn't, you were the one who kept walking.
+1. When the next AI ban, pause, or "safety framework" makes headlines, find the actual text. Separate its stated purpose, what it actually requires, and who bears the cost. Then ask where the capability goes while the rule holds.
+2. Audit your own moats. If any part of your income exists because a license, a credential, or a regulation keeps competitors out, assume that protection is temporary and start building the version of your value that would survive its repeal.
+3. Don't build your household plan on the assumption that a pause will hold. Write it for the world where the technology arrives on schedule anyway. If the pause holds longer than expected, you've lost nothing.
+
+---

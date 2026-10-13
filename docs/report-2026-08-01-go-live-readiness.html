@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Go-live readiness · Surviving the Singularity · 2026-08-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}
+</script>
+<style>
+:root{
+  --bg:#020617; --bg2:#0f172a; --bg3:#1e293b;
+  --amber:#f59e0b; --amber-dark:#d97706; --amber-light:#fbbf24;
+  --blue:#3b82f6; --blue-light:#60a5fa;
+  --t1:#f1f5f9; --t2:#dde4ef; --t3:#94a3b8; --t4:#64748b;
+  --surface:rgba(30,41,59,0.5); --surface-hi:rgba(30,41,59,0.8);
+  --line:rgba(148,163,184,0.1); --line-hi:rgba(148,163,184,0.2);
+  --green:#10b981; --red:#ef4444;
+  --mono:'JetBrains Mono','Courier New',monospace;
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --r:14px; --pill:999px; --max:1080px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden}
+body{background:var(--bg);color:var(--t2);font-family:var(--sans);line-height:1.7;font-size:16px;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+h1,h2,h3{color:var(--t1);line-height:1.15;letter-spacing:-0.025em;margin:0 0 14px}
+h1{font-size:clamp(2.1rem,6vw,3.8rem);font-weight:900}
+h2{font-size:clamp(1.6rem,4vw,2.5rem);font-weight:800}
+h3{font-size:clamp(1.1rem,2.4vw,1.35rem);font-weight:700}
+p{margin:0 0 16px;max-width:72ch}
+a{color:var(--amber)}
+code,.mono{font-family:var(--mono)}
+code{background:rgba(245,158,11,0.10);border:1px solid rgba(245,158,11,0.20);
+  border-radius:5px;padding:1px 6px;font-size:0.86em;color:var(--amber-light)}
+section{padding:clamp(52px,8vw,104px) 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:0.76rem;font-weight:700;letter-spacing:0.16em;
+  text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:block}
+
+/* reveal, scoped to .js so a script error cannot blank the page */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.js .rv.in{opacity:1;transform:none}
+
+/* hero */
+#hero{position:relative;min-height:86vh;display:flex;align-items:center;
+  border-top:none;overflow:hidden}
+#hero canvas#stars{position:absolute;inset:0;width:100%;height:100%;display:block}
+#hero::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(2,6,23,0.93) 0%,rgba(2,6,23,0.72) 45%,rgba(2,6,23,0.25) 100%)}
+#hero .wrap{position:relative;z-index:2;width:100%}
+.lede{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--t2);max-width:64ch}
+.stamp{font-family:var(--mono);font-size:0.8rem;color:var(--t4);margin-bottom:22px}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:10px;margin-top:34px}
+.num{background:var(--surface);border:1px solid var(--line-hi);border-radius:var(--r);padding:16px 18px}
+.num b{display:block;font-family:var(--mono);font-size:clamp(1.5rem,3.4vw,2.1rem);
+  font-weight:700;line-height:1;color:var(--amber);letter-spacing:-0.03em}
+.num.bad b{color:var(--red)} .num.good b{color:var(--green)} .num.info b{color:var(--blue-light)}
+.num span{display:block;font-size:0.82rem;color:var(--t3);margin-top:8px;line-height:1.4}
+
+/* cards + grid */
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line-hi);border-radius:var(--r);padding:22px}
+.card h3{margin-bottom:8px}
+.card p{font-size:0.94rem;margin-bottom:0;color:var(--t3)}
+.card.warn{border-color:rgba(239,68,68,0.35);background:rgba(239,68,68,0.06)}
+.card.ok{border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.05)}
+.card.amber{border-color:rgba(245,158,11,0.35);background:rgba(245,158,11,0.06)}
+
+/* tables */
+.scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line-hi);
+  border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:0.9rem}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--t3);font-weight:700;background:rgba(2,6,23,0.4)}
+tr:last-child td{border-bottom:none}
+td.mono{font-family:var(--mono);font-size:0.84rem}
+.tag{font-family:var(--mono);font-size:0.7rem;font-weight:700;letter-spacing:0.08em;
+  text-transform:uppercase;padding:3px 9px;border-radius:var(--pill);white-space:nowrap;display:inline-block}
+.t-closed{background:rgba(16,185,129,0.14);color:#34d399}
+.t-open{background:rgba(239,68,68,0.14);color:#f87171}
+.t-part{background:rgba(245,158,11,0.14);color:var(--amber-light)}
+.t-you{background:rgba(59,130,246,0.14);color:var(--blue-light)}
+
+/* figure */
+figure{margin:0 0 8px}
+figcaption{font-size:0.84rem;color:var(--t4);margin-top:12px;font-family:var(--mono)}
+.svgbox{background:rgba(2,6,23,0.55);border:1px solid var(--line-hi);border-radius:var(--r);padding:18px}
+.svgbox svg{display:block;width:100%;height:auto}
+
+/* 3d */
+#scene{width:100%;height:clamp(360px,56vh,540px);display:block;border-radius:var(--r);
+  border:1px solid var(--line-hi);background:radial-gradient(ellipse at 50% 40%,#0b1327 0%,#020617 72%);cursor:grab}
+#scene:active{cursor:grabbing}
+.hint{font-family:var(--mono);font-size:0.76rem;color:var(--t4);text-align:center;margin-top:10px}
+
+/* next steps */
+details{background:var(--surface);border:1px solid var(--line-hi);border-radius:var(--r);
+  margin-bottom:10px;overflow:hidden}
+details[open]{border-color:rgba(245,158,11,0.32)}
+summary{cursor:pointer;padding:17px 20px;font-weight:700;color:var(--t1);list-style:none;
+  display:flex;align-items:center;gap:13px;font-size:0.98rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';margin-left:auto;font-family:var(--mono);color:var(--amber);
+  font-size:1.25rem;line-height:1;transition:transform .2s ease}
+details[open] summary::after{transform:rotate(45deg)}
+.rank{font-family:var(--mono);font-size:0.72rem;font-weight:700;color:var(--bg);
+  background:var(--amber);border-radius:5px;padding:3px 8px;flex-shrink:0}
+.rank.r2{background:var(--blue);color:#fff}
+.rank.r3{background:var(--t4);color:#fff}
+.dbody{padding:0 20px 20px;border-top:1px solid var(--line)}
+.dbody dl{margin:0;padding-top:16px}
+.dbody dt{font-family:var(--mono);font-size:0.71rem;letter-spacing:0.11em;text-transform:uppercase;
+  color:var(--amber);font-weight:700;margin-top:15px}
+.dbody dt:first-child{margin-top:0}
+.dbody dd{margin:6px 0 0;color:var(--t3);font-size:0.93rem}
+
+pre.code{background:#060d1f;border:1px solid var(--line-hi);border-left:3px solid var(--amber);
+  border-radius:8px;padding:15px 17px;overflow-x:auto;font-family:var(--mono);
+  font-size:0.8rem;line-height:1.65;margin:16px 0;color:var(--t2)}
+pre.code .c{color:var(--t4)} pre.code .k{color:var(--blue-light)} pre.code .s{color:#34d399}
+pre.code .hl{color:var(--amber);font-weight:600}
+
+.callout{border-left:3px solid var(--amber);background:rgba(245,158,11,0.06);
+  padding:16px 20px;border-radius:0 8px 8px 0;margin:20px 0}
+.callout.red{border-left-color:var(--red);background:rgba(239,68,68,0.07)}
+.callout p{margin-bottom:0}
+
+.tl{position:relative;padding-left:30px;margin-top:26px}
+.tl::before{content:'';position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--amber),rgba(245,158,11,0.08))}
+.tl-i{position:relative;margin-bottom:24px}
+.tl-i::before{content:'';position:absolute;left:-27px;top:6px;width:12px;height:12px;
+  border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px rgba(245,158,11,0.14)}
+.tl-i.ghost::before{background:var(--t4);box-shadow:0 0 0 4px rgba(100,116,139,0.14)}
+.tl-i .sha{font-family:var(--mono);font-size:0.76rem;color:var(--amber)}
+.tl-i.ghost .sha{color:var(--t4)}
+.tl-i h3{font-size:1rem;margin:3px 0 5px}
+.tl-i p{font-size:0.9rem;color:var(--t3);margin-bottom:0}
+
+footer{padding:44px 0 60px;border-top:1px solid var(--line);color:var(--t4);font-size:0.85rem}
+
+@media (prefers-reduced-motion: reduce){
+  .js .rv{transition-duration:.01ms}
+  .pulse,.flow{animation-duration:.01ms;animation-iteration-count:1}
+}
+</style>
+</head>
+<body>
+<script>document.body.parentElement.classList.add('js');document.body.classList.add('js');
+  document.documentElement.classList.add('js');</script>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <canvas id="stars"></canvas>
+  <div class="wrap">
+    <div class="stamp">SURVIVING THE SINGULARITY · GO-LIVE READINESS · 2026-08-01 17:18 PDT</div>
+    <h1>The till is closed, and one<br />missing table would open it<br />without delivering.</h1>
+    <p class="lede">
+      Production checkout still runs on Stripe <strong>test</strong> keys, re-probed today. It returns
+      HTTP 200, quotes the right price, and collects nothing. Separately, the fulfillment pipeline
+      depends on a database table that may never have been created. If it hasn't, every paid order
+      returns 500, Stripe retries for three days, and the customer is charged and receives nothing.
+      Neither problem is in the code. Both are configuration.
+    </p>
+    <div class="nums">
+      <div class="num bad"><b>mode test</b><span>Production Stripe mode, probed 17:0x PDT</span></div>
+      <div class="num bad"><b>sql/013</b><span>Ledger table existence unverified on live</span></div>
+      <div class="num info"><b>0</b><span>Commits made this session. Measurement only</span></div>
+      <div class="num"><b>398</b><span>Raw e2e failures of 1032 tests</span></div>
+      <div class="num"><b>94</b><span>Real failures after decomposing the 304 environmental</span></div>
+      <div class="num good"><b>main</b><span>Deploy branch, identified from the build log</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SITUATION ══════════ -->
+<section id="situation">
+  <div class="wrap">
+    <span class="eyebrow">01 · Situation</span>
+    <h2>Scored against what you actually asked for</h2>
+    <p>
+      The ask this morning was: hammer the API layer with tests, publish, push live, start marketing
+      by end of day. Here is where each part genuinely stands, including the parts that did not move.
+    </p>
+    <div class="scroll-x rv">
+      <table>
+        <thead><tr><th>Your ask</th><th>Status</th><th>What is actually true</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Test the API layer</strong></td>
+            <td><span class="tag t-part">Partial</span></td>
+            <td>1032 tests ran. The money path was never exercised, because this worktree has no <code>.env</code>, so the endpoint correctly fails closed at 503 before reaching Stripe.</td>
+          </tr>
+          <tr>
+            <td><strong>Publish and push live</strong></td>
+            <td><span class="tag t-you">Blocked on you</span></td>
+            <td>Needs the Cloudflare and Stripe dashboards. The code side needs nothing.</td>
+          </tr>
+          <tr>
+            <td><strong>Start marketing today</strong></td>
+            <td><span class="tag t-open">Not safe yet</span></td>
+            <td>The gate is one real transaction that delivers. Until then a marketing push spends attention you cannot re-spend and collects nothing.</td>
+          </tr>
+          <tr>
+            <td><strong>Fulfillment airtight</strong></td>
+            <td><span class="tag t-part">Code yes, config unknown</span></td>
+            <td>The logic is genuinely well defended. The risk sits entirely in which migrations ran and which env vars are set.</td>
+          </tr>
+          <tr>
+            <td><strong>Which branch deploys?</strong></td>
+            <td><span class="tag t-closed">Closed</span></td>
+            <td><code>main</code>. Proven from the build log, which cloned <code>d5976e5</code>, an ancestor of <code>origin/main</code> and not on <code>v0.7.3</code>.</td>
+          </tr>
+          <tr>
+            <td><strong>Checklist step 0, the price</strong></td>
+            <td><span class="tag t-closed">Closed</span></td>
+            <td><code>price_1To6mu…</code> reads $5.00 USD one-time in live mode on <code>prod_UniDSzyaLPPGZY</code>.</td>
+          </tr>
+          <tr>
+            <td><strong>Author's Edition</strong></td>
+            <td><span class="tag t-closed">Decided</span></td>
+            <td>Stays closed at 503. <code>STRIPE_PRICE_ID_AUTHORS</code> deliberately unset.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout rv">
+      <p>
+        <strong>This session shipped no code.</strong> Zero commits, zero file edits. Everything below
+        is measurement. The one commit that appeared at <code>HEAD</code> during the session,
+        <code>bca240a</code>, came from a different agent working in this same worktree.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FINDING ONE ══════════ -->
+<section id="finding-one">
+  <div class="wrap">
+    <span class="eyebrow">02 · The finding that matters</span>
+    <h2>A missing table turns a safety feature into silent revenue loss</h2>
+    <p>
+      The webhook writes a financial ledger row before it does anything else, and that write
+      <strong>fails closed on purpose</strong>. The reasoning in the source is sound: losing the
+      financial record destroys chargeback defence, and Stripe retries for about three days at no
+      cost, so returning 500 keeps the order recoverable.
+    </p>
+    <p>
+      That design is correct. It is also what converts an unrun migration into total revenue loss.
+      <code>checkout_transactions</code> is created by <code>sql/013_checkout_durability.sql</code>.
+      The go-live doc's pending-migration list reads <code>002, 008, 009, 010</code> and is dated
+      2026-07-28, which <strong>predates both 013 and 014</strong>. That list understates the risk.
+    </p>
+
+    <figure class="svgbox rv">
+      <svg viewBox="0 0 900 300" role="img" aria-label="Webhook flow showing the ledger gate failing closed when the table is missing">
+        <defs>
+          <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#64748b"/>
+          </marker>
+          <marker id="arRed" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#ef4444"/>
+          </marker>
+          <linearGradient id="okg" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#10b981" stop-opacity="0.05"/>
+          </linearGradient>
+        </defs>
+
+        <!-- happy path spine -->
+        <line x1="70" y1="90" x2="830" y2="90" stroke="#1e293b" stroke-width="2"/>
+
+        <g font-family="JetBrains Mono, monospace" font-size="11">
+          <!-- nodes -->
+          <g>
+            <rect x="20" y="66" width="104" height="48" rx="8" fill="#0f172a" stroke="#334155"/>
+            <text x="72" y="86" fill="#f1f5f9" text-anchor="middle" font-size="11.5">Stripe</text>
+            <text x="72" y="102" fill="#64748b" text-anchor="middle" font-size="9.5">paid event</text>
+          </g>
+          <g>
+            <rect x="164" y="66" width="112" height="48" rx="8" fill="#0f172a" stroke="#334155"/>
+            <text x="220" y="86" fill="#f1f5f9" text-anchor="middle" font-size="11.5">Signature</text>
+            <text x="220" y="102" fill="#34d399" text-anchor="middle" font-size="9.5">constructEventAsync</text>
+          </g>
+          <g>
+            <rect x="316" y="66" width="104" height="48" rx="8" fill="#0f172a" stroke="#334155"/>
+            <text x="368" y="86" fill="#f1f5f9" text-anchor="middle" font-size="11.5">Replay check</text>
+            <text x="368" y="102" fill="#64748b" text-anchor="middle" font-size="9.5">degrades open</text>
+          </g>
+          <!-- the gate -->
+          <g>
+            <rect x="460" y="60" width="126" height="60" rx="9" fill="rgba(239,68,68,0.10)" stroke="#ef4444" stroke-width="1.6"/>
+            <circle cx="523" cy="60" r="4" fill="#ef4444" class="pulse">
+              <animate attributeName="opacity" values="1;0.15;1" dur="1.9s" repeatCount="indefinite"/>
+            </circle>
+            <text x="523" y="83" fill="#f87171" text-anchor="middle" font-size="11.5" font-weight="700">LEDGER</text>
+            <text x="523" y="99" fill="#f87171" text-anchor="middle" font-size="9">checkout_transactions</text>
+            <text x="523" y="112" fill="#94a3b8" text-anchor="middle" font-size="8.5">sql/013</text>
+          </g>
+          <g>
+            <rect x="626" y="66" width="104" height="48" rx="8" fill="#0f172a" stroke="#334155"/>
+            <text x="678" y="86" fill="#f1f5f9" text-anchor="middle" font-size="11.5">Fulfill</text>
+            <text x="678" y="102" fill="#64748b" text-anchor="middle" font-size="9.5">claim + insert</text>
+          </g>
+          <g>
+            <rect x="770" y="66" width="104" height="48" rx="8" fill="rgba(16,185,129,0.08)" stroke="#10b981"/>
+            <text x="822" y="86" fill="#34d399" text-anchor="middle" font-size="11.5">Email</text>
+            <text x="822" y="102" fill="#64748b" text-anchor="middle" font-size="9.5">bundle + alert</text>
+          </g>
+
+          <!-- arrows -->
+          <line x1="126" y1="90" x2="160" y2="90" stroke="#64748b" stroke-width="1.6" marker-end="url(#ar)"/>
+          <line x1="278" y1="90" x2="312" y2="90" stroke="#64748b" stroke-width="1.6" marker-end="url(#ar)"/>
+          <line x1="422" y1="90" x2="456" y2="90" stroke="#64748b" stroke-width="1.6" marker-end="url(#ar)"/>
+          <line x1="588" y1="90" x2="622" y2="90" stroke="#10b981" stroke-width="1.6" marker-end="url(#ar)"/>
+          <line x1="732" y1="90" x2="766" y2="90" stroke="#10b981" stroke-width="1.6" marker-end="url(#ar)"/>
+
+          <!-- travelling packet on happy path -->
+          <circle r="4" fill="#f59e0b">
+            <animateMotion dur="4.4s" repeatCount="indefinite"
+              path="M72,90 L220,90 L368,90 L523,90 L678,90 L822,90"/>
+            <animate attributeName="opacity" values="0;1;1;1;1;0" dur="4.4s" repeatCount="indefinite"/>
+          </circle>
+
+          <!-- failure branch -->
+          <path d="M523,124 L523,182 L300,182" fill="none" stroke="#ef4444" stroke-width="1.6"
+                stroke-dasharray="5 4" marker-end="url(#arRed)"/>
+          <g>
+            <rect x="120" y="158" width="176" height="48" rx="8" fill="rgba(239,68,68,0.10)" stroke="#ef4444"/>
+            <text x="208" y="178" fill="#f87171" text-anchor="middle" font-size="11.5" font-weight="700">HTTP 500</text>
+            <text x="208" y="194" fill="#94a3b8" text-anchor="middle" font-size="9">Stripe retries ~3 days</text>
+          </g>
+          <path d="M120,182 L70,182 L70,240 L400,240" fill="none" stroke="#ef4444" stroke-width="1.6"
+                stroke-dasharray="5 4" marker-end="url(#arRed)"/>
+          <g>
+            <rect x="404" y="216" width="300" height="48" rx="8" fill="rgba(239,68,68,0.14)" stroke="#ef4444" stroke-width="1.6"/>
+            <text x="554" y="236" fill="#fca5a5" text-anchor="middle" font-size="11.5" font-weight="700">Customer charged. Nothing delivered.</text>
+            <text x="554" y="252" fill="#94a3b8" text-anchor="middle" font-size="9">Retries exhaust, order is lost permanently</text>
+          </g>
+
+          <text x="540" y="146" fill="#ef4444" font-size="9.5">if table missing</text>
+        </g>
+      </svg>
+      <figcaption>Traced from src/routes/api/webhooks/stripe/+server.js:231 and src/lib/server/transactions.js:104-128. Read from source, not executed against live.</figcaption>
+    </figure>
+
+    <div class="callout red rv">
+      <p>
+        The distinction that makes this dangerous: <code>configured:false</code> is returned only when
+        Supabase is not wired up at all, which is normal in local dev and correctly does not 500. A
+        <strong>missing table with Supabase wired</strong> returns <code>{ok:false, configured:true}</code>,
+        which is the exact combination that triggers the 500. Local dev will never show you this.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROOF / CONTROLS ══════════ -->
+<section id="proof">
+  <div class="wrap">
+    <span class="eyebrow">03 · Proof</span>
+    <h2>Every claim, and how it was tested</h2>
+    <p>
+      This project has a documented history of status lines that were confidently wrong. So each row
+      below names the instrument, not just the verdict. Two rows are controls and they are the reason
+      to believe the rest.
+    </p>
+    <div class="scroll-x rv">
+      <table>
+        <thead><tr><th>Claim</th><th>Instrument</th><th>Result</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Production collects money</td>
+            <td class="mono">sts.py stripe --live</td>
+            <td class="mono">mode test</td>
+            <td><span class="tag t-open">False</span></td>
+          </tr>
+          <tr style="background:rgba(59,130,246,0.06)">
+            <td><strong>Positive control:</strong> the site itself works</td>
+            <td class="mono">sts.py live</td>
+            <td class="mono">24/24 routes live</td>
+            <td><span class="tag t-closed">True</span></td>
+          </tr>
+          <tr style="background:rgba(239,68,68,0.06)">
+            <td><strong>Negative control:</strong> the suite's own exit code</td>
+            <td class="mono">npx playwright test | tail</td>
+            <td class="mono">exit 0, "634 passed"</td>
+            <td><span class="tag t-open">Lied</span></td>
+          </tr>
+          <tr>
+            <td>Actual test outcome</td>
+            <td class="mono">jq .stats results.json</td>
+            <td class="mono">unexpected: 398</td>
+            <td><span class="tag t-open">39% fail</span></td>
+          </tr>
+          <tr>
+            <td>Those failures are product bugs</td>
+            <td class="mono">group by error message</td>
+            <td class="mono">304 × "Executable doesn't exist"</td>
+            <td><span class="tag t-part">Mostly env</span></td>
+          </tr>
+          <tr>
+            <td>Live price is $5.00</td>
+            <td>Stripe dashboard, live mode</td>
+            <td class="mono">$5.00 USD one-time</td>
+            <td><span class="tag t-closed">True</span></td>
+          </tr>
+          <tr>
+            <td>Pushing v0.7.3 deploys</td>
+            <td>Cloudflare build log</td>
+            <td class="mono">cloned d5976e5, on main</td>
+            <td><span class="tag t-open">False</span></td>
+          </tr>
+          <tr>
+            <td>v0.7.3 merges cleanly</td>
+            <td class="mono">git merge-tree</td>
+            <td class="mono">11 conflicting files</td>
+            <td><span class="tag t-open">False</span></td>
+          </tr>
+          <tr>
+            <td>Webhook verifies signatures</td>
+            <td class="mono">HTTP 400 on unsigned POST</td>
+            <td class="mono">400, cause indeterminate</td>
+            <td><span class="tag t-part">Unproven</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid g2 rv" style="margin-top:18px">
+      <div class="card warn">
+        <h3>Why the negative control matters</h3>
+        <p>The command was piped into <code>tail</code>, so the exit code came from <code>tail</code>, which almost always succeeds. And <code>tail -70</code> cut off the <code>398 failed</code> header, leaving <code>634 passed</code> as the visible last line. Both signals said green. Both were artifacts of the harness.</p>
+      </div>
+      <div class="card ok">
+        <h3>Why the positive control matters</h3>
+        <p>Without <code>24/24 routes live</code>, a wall of red test output could plausibly mean the site is down. It is not. The site serves every route correctly. That bounds the failure to the test environment and the payment configuration, not the product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 3D ══════════ -->
+<section id="pipeline3d">
+  <div class="wrap">
+    <span class="eyebrow">04 · The moving part</span>
+    <h2>Two paths race to fulfill every order</h2>
+    <p>
+      The design's cleverest property is that fulfillment has two independent entry points which
+      cannot collide. Drag to orbit, scroll to zoom.
+    </p>
+    <canvas id="scene"></canvas>
+    <div class="hint">Drag to rotate · scroll to zoom · the red node is the unverified gate</div>
+    <div class="grid g3 rv" style="margin-top:20px">
+      <div class="card">
+        <h3>Blue: the fast path</h3>
+        <p>The customer's browser lands on the success page after paying. It fulfills immediately, so most customers get their email within seconds.</p>
+      </div>
+      <div class="card">
+        <h3>Amber: the truth path</h3>
+        <p>Stripe fires server to server the moment payment confirms. This one runs even if the customer closed the tab, lost signal, or crashed.</p>
+      </div>
+      <div class="card warn">
+        <h3>Red: the unverified gate</h3>
+        <p>Only the webhook passes through the ledger. If <code>checkout_transactions</code> is absent, this node returns 500 and the amber path never reaches fulfillment.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px">
+      Whichever path arrives first calls <code>claimSession</code>, which inserts a row against a
+      unique constraint on <code>session_id</code>. The loser becomes a no-op, so the customer is
+      never double-emailed. When prior state cannot be determined, the code deliberately errs toward
+      delivering twice, on the reasoning that a duplicate email is an apology and a lost order is a
+      refund and a lost customer.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ FINDING TWO ══════════ -->
+<section id="finding-two">
+  <div class="wrap">
+    <span class="eyebrow">05 · The test suite, decomposed</span>
+    <h2>398 failures, and what they actually were</h2>
+    <p>
+      A 39% failure rate reads like a broken product. It is not. Grouping by error message rather than
+      by count splits the number cleanly, and the residue is smaller and more specific.
+    </p>
+
+    <figure class="svgbox rv">
+      <svg viewBox="0 0 900 250" role="img" aria-label="Decomposition of 1032 tests into passes, environmental failures, and real failures">
+        <g font-family="JetBrains Mono, monospace" font-size="11">
+          <text x="0" y="16" fill="#94a3b8" font-size="10">1032 TESTS</text>
+          <rect x="0" y="26" width="900" height="30" rx="5" fill="#1e293b"/>
+          <rect x="0" y="26" width="553" height="30" rx="5" fill="#10b981" opacity="0.55"/>
+          <rect x="553" y="26" width="347" height="30" fill="#ef4444" opacity="0.55"/>
+          <text x="270" y="46" fill="#e2e8f0" text-anchor="middle" font-size="11">634 passed</text>
+          <text x="726" y="46" fill="#fecaca" text-anchor="middle" font-size="11">398 failed</text>
+
+          <path d="M726,60 L726,80" stroke="#64748b" stroke-width="1.4"/>
+          <text x="0" y="100" fill="#94a3b8" font-size="10">THE 398, BY CAUSE</text>
+          <rect x="0" y="110" width="900" height="30" rx="5" fill="#1e293b"/>
+          <rect x="0" y="110" width="687" height="30" rx="5" fill="#64748b" opacity="0.5"/>
+          <rect x="687" y="110" width="213" height="30" fill="#f59e0b" opacity="0.6"/>
+          <text x="343" y="130" fill="#e2e8f0" text-anchor="middle" font-size="11">304 · WebKit binary not installed</text>
+          <text x="793" y="130" fill="#fde68a" text-anchor="middle" font-size="11">94 real</text>
+
+          <path d="M793,144 L793,164" stroke="#64748b" stroke-width="1.4"/>
+          <text x="0" y="184" fill="#94a3b8" font-size="10">THE 94 REAL FAILURES, BY SPEC</text>
+          <g>
+            <rect x="0" y="194" width="354" height="26" rx="4" fill="#f59e0b" opacity="0.30"/>
+            <text x="10" y="211" fill="#fde68a" font-size="10">a-stability · 37</text>
+            <rect x="358" y="194" width="172" height="26" rx="4" fill="#ef4444" opacity="0.45"/>
+            <text x="368" y="211" fill="#fecaca" font-size="10">i-checkout-gate · 18</text>
+            <rect x="534" y="194" width="115" height="26" rx="4" fill="#f59e0b" opacity="0.22"/>
+            <text x="544" y="211" fill="#fde68a" font-size="10">g-profiles · 12</text>
+            <rect x="653" y="194" width="77" height="26" rx="4" fill="#f59e0b" opacity="0.18"/>
+            <text x="661" y="211" fill="#fde68a" font-size="10">c-speed · 8</text>
+            <rect x="734" y="194" width="166" height="26" rx="4" fill="#334155"/>
+            <text x="744" y="211" fill="#94a3b8" font-size="10">b, d, e, f, h · 19</text>
+          </g>
+          <text x="0" y="240" fill="#34d399" font-size="10">j · k · l · m (webhook policy, admin token, reconcile, freshness) · 0 failures</text>
+        </g>
+      </svg>
+      <figcaption>Source: tests/reports/results.json, run 2026-08-01 16:29 to 16:52 PDT.</figcaption>
+    </figure>
+
+    <div class="grid g2 rv">
+      <div class="card">
+        <h3>The 304 are one missing binary</h3>
+        <p>All three top-failing projects are WebKit: <code>webkit</code>, <code>mobile-safari</code>, <code>tablet</code>. Every one threw the same launch error. <code>npx playwright install webkit</code> clears all 304.</p>
+      </div>
+      <div class="card">
+        <h3>The 18 checkout failures are the missing .env</h3>
+        <p>All nine assertions fail identically across three engines, including a basic DOM presence check. With no Supabase credentials, the duplicate-order check cannot run, and the endpoint refuses with 503 rather than risk a double charge. Correct behaviour, failing tests.</p>
+      </div>
+    </div>
+    <p style="margin-top:16px">
+      What genuinely passed and matters: the four money-path specs, 773 lines of real assertions over
+      duplicate handling, event freshness, admin tokens and reconcile format. They import the actual
+      decision functions and never touch a server, which is why they pass with no credentials. That
+      verifies the <em>policy</em> layer. It does not verify the HTTP path around it.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ TIMELINE ══════════ -->
+<section id="timeline">
+  <div class="wrap">
+    <span class="eyebrow">06 · Timeline</span>
+    <h2>What exists, and who made it</h2>
+    <div class="tl">
+      <div class="tl-i ghost">
+        <div class="sha">bca240a · not mine</div>
+        <h3>legal pages: give the four of them a share card</h3>
+        <p>Appeared at HEAD during this session, from a different agent in the same worktree. Flagged because it is the documented parallel-session hazard, and it moved HEAD underneath the analysis.</p>
+      </div>
+      <div class="tl-i">
+        <div class="sha">62305dc · unpushed</div>
+        <h3>Lift the cross-reference rules out of sts.py</h3>
+        <p>Pre-existing from an earlier session. Adds <code>check:resolver</code> to prebuild.</p>
+      </div>
+      <div class="tl-i">
+        <div class="sha">19b8c1a · unpushed</div>
+        <h3>Three implementations of "what the book is" down to two</h3>
+        <p>Pre-existing. Adds a drift gate between the Python and JS label rules.</p>
+      </div>
+      <div class="tl-i">
+        <div class="sha">1910c3b · unpushed</div>
+        <h3>Remove the person from the book download path</h3>
+        <p>Pre-existing. Carries other sessions' work, which its own message documents in its closing paragraphs. Conflicts with <code>85800f1</code> already on main.</p>
+      </div>
+      <div class="tl-i ghost">
+        <div class="sha">this session</div>
+        <h3>No commits. No file edits.</h3>
+        <p>Measurement only: nine probes, one full e2e run, a dry-run merge, and a source read of the fulfillment pipeline. Nothing was changed, so nothing can have broken.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ NEXT ══════════ -->
+<section id="next">
+  <div class="wrap">
+    <span class="eyebrow">07 · Next steps</span>
+    <h2>Ranked by what blocks money and what breaks trust</h2>
+
+    <details open>
+      <summary><span class="rank">01</span> Run two read-only queries against live Supabase</summary>
+      <div class="dbody"><dl>
+        <dt>Situation</dt><dd><code>sql/</code> holds 014 migrations. The go-live doc's pending list stops at 010 and predates both 013 and 014, the two that create the tables this pipeline depends on.</dd>
+        <dt>Why it matters</dt><dd>If <code>checkout_transactions</code> is absent, every paid order returns 500 and the customer is charged with nothing delivered. This is the single highest-severity unknown, and it is answerable in thirty seconds.</dd>
+        <dt>Recommendation</dt><dd>Paste both queries into the Supabase SQL editor on the live project. Query one must return <code>checkout_transactions</code>. Query two must include <code>status</code>, <code>completed_at</code>, <code>last_error</code>, <code>attempts</code>.</dd>
+        <dt>Expected outcome</dt><dd>Either a green light to proceed, or today becomes a migration day instead of a launch day. Both are good outcomes compared to finding out from a customer.</dd>
+        <dt>Blocked on</dt><dd>You. I have no Supabase credentials.</dd>
+      </dl>
+      <pre class="code"><span class="c">-- 1. which pipeline tables actually exist?</span>
+<span class="k">select</span> table_name
+<span class="k">from</span> information_schema.tables
+<span class="k">where</span> table_schema = <span class="s">'public'</span>
+  <span class="k">and</span> table_name <span class="k">in</span> (
+    <span class="s">'preorders'</span>,<span class="hl">'fulfilled_sessions'</span>,<span class="hl">'checkout_transactions'</span>,
+    <span class="s">'webhook_events'</span>,<span class="s">'waitlist'</span>,<span class="s">'discord_applications'</span>,<span class="s">'email_deliveries'</span>
+  )
+<span class="k">order by</span> table_name;
+
+<span class="c">-- 2. does fulfilled_sessions have the 013 durability columns?</span>
+<span class="k">select</span> column_name
+<span class="k">from</span> information_schema.columns
+<span class="k">where</span> table_schema = <span class="s">'public'</span> <span class="k">and</span> table_name = <span class="s">'fulfilled_sessions'</span>
+<span class="k">order by</span> column_name;</pre>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="rank">02</span> Register the live webhook, then set four Cloudflare variables</summary>
+      <div class="dbody"><dl>
+        <dt>Situation</dt><dd>Stripe's own go-live page reported that you have a test webhook endpoint and no production one. The test-mode signing secret cannot verify live traffic.</dd>
+        <dt>Why it matters</dt><dd>Without it, a customer who closes the tab right after paying is never fulfilled by any path. The webhook is the only route that survives a closed browser.</dd>
+        <dt>Recommendation</dt><dd>Register <code>/api/webhooks/stripe</code> in live mode for <code>checkout.session.completed</code> and <code>checkout.session.async_payment_succeeded</code>. Then set the two secrets encrypted and the two price IDs as text, Production scope only. Leave <code>STRIPE_PRICE_ID_AUTHORS</code> unset.</dd>
+        <dt>Expected outcome</dt><dd><code>sts.py stripe --live</code> flips to <code>mode live</code> after one redeploy.</dd>
+        <dt>Blocked on</dt><dd>You. Dashboard access.</dd>
+      </dl></div>
+    </details>
+
+    <details>
+      <summary><span class="rank">03</span> Prove the webhook verifies, rather than assuming a 400 means yes</summary>
+      <div class="dbody"><dl>
+        <dt>Situation</dt><dd>The probe returns HTTP 400 on an unsigned POST. That cannot distinguish a working verifier from one that rejects every event.</dd>
+        <dt>Why it matters</dt><dd>This exact check passed for weeks while the endpoint had never verified a single event. The cause was a sync <code>constructEvent</code> in an async-only runtime. The code fix is in place; the proof is not.</dd>
+        <dt>Recommendation</dt><dd>Either export the live <code>whsec_</code> so the probe can send a genuinely signed event, or read the runtime log with <code>wrangler pages deployment tail</code>. Accept only a positive confirmation.</dd>
+        <dt>Expected outcome</dt><dd>A signed event is accepted and logged, or we learn the secret is wrong before a customer does.</dd>
+        <dt>Blocked on</dt><dd>Step 02.</dd>
+      </dl></div>
+    </details>
+
+    <details>
+      <summary><span class="rank r2">04</span> One real purchase, with all five downstream effects confirmed</summary>
+      <div class="dbody"><dl>
+        <dt>Situation</dt><dd>Nothing in this pipeline has ever completed end to end in live mode. Every fulfilled session in the backup carries a <code>cs_test_</code> id.</dd>
+        <dt>Why it matters</dt><dd>Concurrency between the success page and the webhook only happens for real when a real browser races a real Stripe delivery. No probe reproduces that.</dd>
+        <dt>Recommendation</dt><dd>Buy the Standard Edition with a real card. Confirm: confirmation email, admin alert, a <code>preorders</code> row, a <code>fulfilled_sessions</code> row with a <code>cs_live_</code> id, and the success page reading <code>edition_type</code> from live metadata. Then refund yourself.</dd>
+        <dt>Expected outcome</dt><dd>This is the gate for marketing. A pass here is the first genuine proof the pipeline works.</dd>
+        <dt>Blocked on</dt><dd>Steps 01 through 03.</dd>
+      </dl></div>
+    </details>
+
+    <details>
+      <summary><span class="rank r2">05</span> Flip EXPECTED_MODE so the daily guard tells the truth</summary>
+      <div class="dbody"><dl>
+        <dt>Situation</dt><dd><code>.github/workflows/stripe-guard.yml</code> line 30 declares <code>test</code>. It probes production daily and alarms when real mode stops matching declared mode.</dd>
+        <dt>Why it matters</dt><dd>It is the mechanism that would have caught both the silent cutover and the silent rollback. Left on <code>test</code> after going live, it alarms every day for the wrong reason and gets ignored.</dd>
+        <dt>Recommendation</dt><dd>One-line change, and it must land on <code>main</code> to take effect. It can go there on its own without dragging the 11-file <code>v0.7.3</code> merge with it.</dd>
+        <dt>Expected outcome</dt><dd>A daily alarm that means something.</dd>
+        <dt>Blocked on</dt><dd>Your approval to commit. I will not commit unasked.</dd>
+      </dl></div>
+    </details>
+
+    <details>
+      <summary><span class="rank r3">06</span> Restore a local .env so the suite can test the money path</summary>
+      <div class="dbody"><dl>
+        <dt>Situation</dt><dd>No <code>.env</code> exists in this worktree. Confirmed twice: the file is absent, and <code>sts.py schema</code> failed on missing Supabase credentials.</dd>
+        <dt>Why it matters</dt><dd>It is why 18 checkout tests fail and why today's "test the API layer" goal is only partly met. Production secrets must never come down from Cloudflare, and they do not need to: a local <code>.env</code> only ever held test-mode values.</dd>
+        <dt>Recommendation</dt><dd>Rebuild from source dashboards. Stripe test secret keys can be revealed at any time; the test price is <code>price_1To6no…</code>; Supabase keys are under Project Settings, API. I can also draft a <code>.env.example</code> so this cannot happen again.</dd>
+        <dt>Expected outcome</dt><dd>The full pipeline becomes testable locally against Stripe test mode, including replay, forged signature, stale timestamp and crash-repair cases.</dd>
+        <dt>Blocked on</dt><dd>You, for the values. Not urgent for launch.</dd>
+      </dl></div>
+    </details>
+
+    <details>
+      <summary><span class="rank r3">07</span> Known and deliberately deferred</summary>
+      <div class="dbody"><dl>
+        <dt>PDF size</dt><dd>22.34 MiB against Cloudflare's hard 25 MiB asset ceiling, 2.66 MiB of headroom, guard warning now. Crossing it fails the deploy, not the build. The fix is R2, not compression.</dd>
+        <dt>The v0.7.3 merge</dt><dd>11 conflicting files including <code>sts.py</code>. Not on the critical path, because the cutover is environment variables only.</dd>
+        <dt>Author's Edition</dt><dd>Returns 503 by design until <code>STRIPE_PRICE_ID_AUTHORS</code> is set. Your call, and it stands.</dd>
+        <dt>PREORDER50</dt><dd>Exists only in test mode. Recreate in live with the same code string, since the checkout endpoint references it by name.</dd>
+      </dl></div>
+    </details>
+  </div>
+</section>
+
+<!-- ══════════ BOTTOM LINE ══════════ -->
+<section id="bottom">
+  <div class="wrap">
+    <span class="eyebrow">08 · Bottom line</span>
+    <h2>What to trust, and what not to</h2>
+    <div class="grid g2">
+      <div class="card ok rv">
+        <h3>Safe to rely on</h3>
+        <p>
+          The site serves all 24 routes. The live price is $5.00 one-time, verified in the dashboard.
+          Cloudflare builds from <code>main</code>, proven from the build log. The fulfillment logic is
+          well defended, with real idempotency, constraint disambiguation, and a documented bias toward
+          delivering twice rather than losing an order. The webhook policy layer is unit-tested and
+          passing. The <code>constructEventAsync</code> fix is in the source.
+        </p>
+      </div>
+      <div class="card warn rv">
+        <h3>Do not rely on yet</h3>
+        <p>
+          That production takes money: it does not, it is on test keys. That the schema supports the
+          pipeline: <code>checkout_transactions</code> is unverified and its absence is catastrophic.
+          That the webhook verifies signatures: a 400 does not prove it. That the e2e suite covers the
+          money path: it never reached it. That anything in the July overcharge window is settled: only
+          the Stripe dashboard can answer that.
+        </p>
+      </div>
+    </div>
+    <div class="callout rv" style="margin-top:22px">
+      <p>
+        <strong>One thing from you:</strong> run the two SQL queries in step 01. They are read-only,
+        they take thirty seconds, and they decide whether today is a launch day or a migration day.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Surviving the Singularity · go-live readiness · generated 2026-08-01 17:18 PDT ·
+    branch <span class="mono">v0.7.3</span> · production <span class="mono">survivingthesingularity.com</span><br />
+    Every number here was measured this session. Claims read from source rather than executed are
+    labelled as such.
+  </div>
+</footer>
+
+<script type="module">
+import * as THREE from 'three';
+
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- reveal on scroll ---------- */
+const io = new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:0.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* ---------- shared: soft round sprite texture ---------- */
+function dotTexture(){
+  const c=document.createElement('canvas'); c.width=c.height=64;
+  const g=c.getContext('2d');
+  const rg=g.createRadialGradient(32,32,0,32,32,32);
+  rg.addColorStop(0,'rgba(255,255,255,1)');
+  rg.addColorStop(0.35,'rgba(255,255,255,0.65)');
+  rg.addColorStop(1,'rgba(255,255,255,0)');
+  g.fillStyle=rg; g.fillRect(0,0,64,64);
+  return new THREE.CanvasTexture(c);
+}
+const DOT = dotTexture();
+
+/* ---------- hero starfield ---------- */
+(function stars(){
+  const cv=document.getElementById('stars'); if(!cv) return;
+  const r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+  r.setPixelRatio(Math.min(devicePixelRatio,2));
+  const sc=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(60,1,0.1,100); cam.position.z=15;
+  const N=520, pos=new Float32Array(N*3);
+  for(let i=0;i<N;i++){
+    pos[i*3]=(Math.random()-0.5)*46;
+    pos[i*3+1]=(Math.random()-0.5)*26;
+    pos[i*3+2]=(Math.random()-0.5)*22;
+  }
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  const pts=new THREE.Points(geo,new THREE.PointsMaterial({
+    size:0.16,map:DOT,transparent:true,opacity:0.62,color:0xf59e0b,
+    depthWrite:false,blending:THREE.AdditiveBlending
+  }));
+  sc.add(pts);
+  function size(){
+    const w=cv.clientWidth,h=cv.clientHeight;
+    if(cv.width!==w*devicePixelRatio||cv.height!==h*devicePixelRatio){
+      r.setSize(w,h,false); cam.aspect=w/h; cam.updateProjectionMatrix();
+    }
+  }
+  (function loop(){
+    requestAnimationFrame(loop); size();
+    if(!reduce){ pts.rotation.y+=0.00042; pts.rotation.x+=0.00016; }
+    r.render(sc,cam);
+  })();
+})();
+
+/* ---------- pipeline scene ---------- */
+(function pipeline(){
+  const cv=document.getElementById('scene'); if(!cv) return;
+  const r=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+  r.setPixelRatio(Math.min(devicePixelRatio,2));
+  const sc=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(50,1,0.1,200); cam.position.set(0,5,20);
+  cam.lookAt(0,0,0);
+  const root=new THREE.Group(); sc.add(root);
+
+  sc.add(new THREE.AmbientLight(0xffffff,0.75));
+  const key=new THREE.PointLight(0xf59e0b,90,80); key.position.set(6,10,12); sc.add(key);
+  const fill=new THREE.PointLight(0x3b82f6,60,80); fill.position.set(-10,-4,10); sc.add(fill);
+
+  function label(text,color){
+    const c=document.createElement('canvas'); c.width=340; c.height=76;
+    const g=c.getContext('2d');
+    g.font='700 30px "JetBrains Mono", monospace';
+    g.fillStyle=color; g.textAlign='center'; g.textBaseline='middle';
+    g.fillText(text,170,38);
+    const t=new THREE.CanvasTexture(c); t.needsUpdate=true;
+    const s=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthTest:false}));
+    s.scale.set(4.4,1.0,1); return s;
+  }
+
+  // node definitions: [x,y,z, label, colour, radius]
+  const NODES=[
+    [-11, 2.6, 0,'Stripe',      0xf59e0b, 0.85],
+    [ -6, 2.6, 0,'Signature',   0x94a3b8, 0.62],
+    [ -1, 2.6, 0,'Replay',      0x94a3b8, 0.62],
+    [  4, 2.6, 0,'LEDGER 013',  0xef4444, 0.95],
+    [ -6,-3.0, 0,'Success page',0x3b82f6, 0.85],
+    [  9, 0.0, 0,'Fulfill',     0xf59e0b, 0.85],
+    [ 13.5,0.0,0,'Email',       0x10b981, 0.78],
+  ];
+  const meshes=[];
+  NODES.forEach(([x,y,z,txt,col,rad],i)=>{
+    const m=new THREE.Mesh(
+      new THREE.IcosahedronGeometry(rad,2),
+      new THREE.MeshStandardMaterial({color:col,emissive:col,emissiveIntensity:0.42,
+        roughness:0.35,metalness:0.15,flatShading:true})
+    );
+    m.position.set(x,y,z); root.add(m); meshes.push(m);
+    const l=label(txt, '#'+col.toString(16).padStart(6,'0'));
+    l.position.set(x,y+rad+0.95,z); root.add(l);
+  });
+
+  // edges: amber webhook path, blue success path
+  const EDGES=[[0,1],[1,2],[2,3],[3,5],[5,6],[4,5]];
+  const COLS =[0xf59e0b,0xf59e0b,0xf59e0b,0xef4444,0x10b981,0x3b82f6];
+  const curves=[];
+  EDGES.forEach(([a,b],i)=>{
+    const pa=meshes[a].position, pb=meshes[b].position;
+    const mid=new THREE.Vector3().addVectors(pa,pb).multiplyScalar(0.5);
+    mid.y += (a===4? -1.4 : 0.7);
+    const cur=new THREE.QuadraticBezierCurve3(pa.clone(),mid,pb.clone());
+    curves.push(cur);
+    const g=new THREE.BufferGeometry().setFromPoints(cur.getPoints(40));
+    root.add(new THREE.Line(g,new THREE.LineBasicMaterial({
+      color:COLS[i],transparent:true,opacity:0.42})));
+  });
+
+  // flowing packets, seeded across the whole path so it flows rather than pulses
+  const PK=54, pg=new THREE.BufferGeometry();
+  const ppos=new Float32Array(PK*3);
+  const state=[];
+  for(let i=0;i<PK;i++){
+    state.push({e:i%curves.length, t:Math.random()});
+  }
+  pg.setAttribute('position',new THREE.BufferAttribute(ppos,3));
+  const packets=new THREE.Points(pg,new THREE.PointsMaterial({
+    size:0.42,map:DOT,transparent:true,opacity:0.95,color:0xfbbf24,
+    depthWrite:false,blending:THREE.AdditiveBlending}));
+  root.add(packets);
+
+  // minimal orbit, written inline to avoid a second CDN dependency
+  let drag=false,px=0,py=0,ry=0,rx=0,dist=20;
+  cv.addEventListener('pointerdown',e=>{drag=true;px=e.clientX;py=e.clientY;});
+  window.addEventListener('pointerup',()=>drag=false);
+  window.addEventListener('pointermove',e=>{
+    if(!drag)return;
+    ry+=(e.clientX-px)*0.006; rx+=(e.clientY-py)*0.004;
+    rx=Math.max(-0.9,Math.min(0.9,rx));
+    px=e.clientX; py=e.clientY;
+  });
+  cv.addEventListener('wheel',e=>{
+    e.preventDefault(); dist=Math.max(12,Math.min(38,dist+e.deltaY*0.02));
+  },{passive:false});
+
+  function size(){
+    const w=cv.clientWidth,h=cv.clientHeight;
+    if(cv.width!==Math.floor(w*devicePixelRatio)||cv.height!==Math.floor(h*devicePixelRatio)){
+      r.setSize(w,h,false); cam.aspect=w/h; cam.updateProjectionMatrix();
+    }
+  }
+  let tick=0;
+  (function loop(){
+    requestAnimationFrame(loop); size();
+    tick++;
+    if(!drag && !reduce) ry+=0.0016;
+    root.rotation.y=ry; root.rotation.x=rx;
+    cam.position.set(0,3,dist); cam.lookAt(0,0.6,0);
+
+    const step = reduce?0:0.0042;
+    for(let i=0;i<PK;i++){
+      const s=state[i];
+      s.t+=step; if(s.t>1){ s.t=0; s.e=(s.e+1)%curves.length; }
+      const p=curves[s.e].getPoint(s.t);
+      ppos[i*3]=p.x; ppos[i*3+1]=p.y; ppos[i*3+2]=p.z;
+    }
+    pg.attributes.position.needsUpdate=true;
+
+    // the unverified gate breathes
+    const g=meshes[3];
+    g.material.emissiveIntensity = reduce?0.6:(0.42+Math.sin(tick*0.05)*0.30);
+    g.rotation.y+=reduce?0:0.008;
+
+    r.render(sc,cam);
+  })();
+})();
+</script>
+</body>
+</html>

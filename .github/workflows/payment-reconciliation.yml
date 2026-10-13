@@ -1,0 +1,26 @@
+name: Payment reconciliation
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: payment-reconciliation
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check for paid orders needing attention
+        env:
+          ADMIN_RECONCILE_TOKEN: ${{ secrets.ADMIN_RECONCILE_TOKEN }}
+        run: node scripts/check-payment-reconciliation.mjs
+      - name: Explain a failed check
+        if: failure()
+        run: echo 'Payment reconciliation needs attention. Inspect the protected admin report. An unavailable or incomplete check is a failure, not an all-clear. Customer details are intentionally omitted from CI logs.' >> "$GITHUB_STEP_SUMMARY"

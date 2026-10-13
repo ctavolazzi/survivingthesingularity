@@ -1,0 +1,42 @@
+SURVIVING THE SINGULARITY
+
+
+“But what about the jobs?” Dishwashers and washing machines make
+the idea of handing repetitive work to a machine familiar. That com-
+parison doesnʼt pay the bills of someone whose income just disap-
+peared, and their concern is real. Workers belong in the decisions
+about how these tools come in and how people are supported
+through the change. Thatʼs what this whole book is arguing for.
+“Why not send machines into the dangerous work?” Where a suit-
+able machine can keep people out of harmʼs way, thatʼs a good reason
+to look hard at it, with the people who know the job. The deployment
+still has to show that it helps, including the work of maintaining and
+recovering the machine.
+
+Ownership matters because access can be withheld
+                            Suppose the machines work beautifully. Now
+                            suppose one company owns them, controls
+                            their supplies, and can cut off service when a
+                            subscription   lapses.   Productive   capacity
+                            went up. Security for the person who canʼt
+Capability still needs an   pay may not have moved at all.
+arrangement for access. AI-
+adapted cutout from Jonte,  So whatever the arrangement, shared owner-
+CC BY-SA 4.0.               ship, public provision, or paying private
+                            providers, ask who can raise the price,
+change the rules, withdraw the service, or sell the equipment, and
+how the people receiving it and the people working it can challenge
+those decisions. And donʼt let any one program become the only door
+to help. Several providers, supplies held back for bad weeks,
+repairable equipment, and routes that donʼt need a proprietary
+account all make the promise sturdier.
+
+The Crucible: local compute you own
+The sceneʼs argument for owning the machine was privacy, and itʼs a
+good one. Every question you send a cloud service carries context
+with it: what youʼre building, what youʼre worried about, what you
+donʼt know. For a lot of work thatʼs fine. For some of it, a food
+
+
+
+202

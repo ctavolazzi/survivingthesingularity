@@ -1,0 +1,114 @@
+[
+  {
+    "edition": "interior",
+    "page": 173,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/interior-page-173.png",
+    "sha256": "83cdcc67b5298208c220ceea21423739e0f0e7d87279d8309c53dc5bd3dc8648",
+    "pdf": "publication/output/print-prepared.pdf",
+    "pdf_sha256": "9acfdfaae6a0b327af25a5260159841b2e0b40f4d23f0d460487424402d88d80"
+  },
+  {
+    "edition": "interior",
+    "page": 319,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/interior-page-319.png",
+    "sha256": "9c968aa7122b03752702bfe733a0b42bffa1e0864e7fd110b4be607d533bf168",
+    "pdf": "publication/output/print-prepared.pdf",
+    "pdf_sha256": "9acfdfaae6a0b327af25a5260159841b2e0b40f4d23f0d460487424402d88d80"
+  },
+  {
+    "edition": "interior",
+    "page": 320,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/interior-page-320.png",
+    "sha256": "ac3fbff9f81190b0b66346ecfcea4c7b14a509aa79f3cd16f52094a69b83d835",
+    "pdf": "publication/output/print-prepared.pdf",
+    "pdf_sha256": "9acfdfaae6a0b327af25a5260159841b2e0b40f4d23f0d460487424402d88d80"
+  },
+  {
+    "edition": "interior",
+    "page": 374,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/interior-page-374.png",
+    "sha256": "f2b660defb2dd7d4f929d4e853bc29bde900cc9bd949f2eeb795321996672c84",
+    "pdf": "publication/output/print-prepared.pdf",
+    "pdf_sha256": "9acfdfaae6a0b327af25a5260159841b2e0b40f4d23f0d460487424402d88d80"
+  },
+  {
+    "edition": "interior",
+    "page": 403,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/interior-page-403.png",
+    "sha256": "c4a56b8d30879fbe8603e10603c18196737927deeb17166d66efe21a4ad039d0",
+    "pdf": "publication/output/print-prepared.pdf",
+    "pdf_sha256": "9acfdfaae6a0b327af25a5260159841b2e0b40f4d23f0d460487424402d88d80"
+  },
+  {
+    "edition": "interior",
+    "page": 407,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/interior-page-407.png",
+    "sha256": "15b5463d2ec29d8bf81d19682082b44ae4b87fd57795d8f649006a0d260d10fd",
+    "pdf": "publication/output/print-prepared.pdf",
+    "pdf_sha256": "9acfdfaae6a0b327af25a5260159841b2e0b40f4d23f0d460487424402d88d80"
+  },
+  {
+    "edition": "interior",
+    "page": 408,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/interior-page-408.png",
+    "sha256": "04e33e039d8400955daff5087cff67e591c34dfc847bb7266fc81959b2d37d7e",
+    "pdf": "publication/output/print-prepared.pdf",
+    "pdf_sha256": "9acfdfaae6a0b327af25a5260159841b2e0b40f4d23f0d460487424402d88d80"
+  },
+  {
+    "edition": "print",
+    "page": 173,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/print-page-173.png",
+    "sha256": "56b347a4ef9b75501ca842b0a109cda3a0df5c2f1781aeac947a51bb3990cc5b",
+    "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+    "pdf_sha256": "6b9e54aaf1101fafa5ac6d5ab077b7e8be82c227d4d1e8afb0aab60877ea85c5"
+  },
+  {
+    "edition": "print",
+    "page": 319,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/print-page-319.png",
+    "sha256": "b9d416f607f0c6db96f1d994c26cbc7274bd0cadba3c0bedb195c5b1bd88987c",
+    "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+    "pdf_sha256": "6b9e54aaf1101fafa5ac6d5ab077b7e8be82c227d4d1e8afb0aab60877ea85c5"
+  },
+  {
+    "edition": "print",
+    "page": 320,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/print-page-320.png",
+    "sha256": "1fac7988ef156ccefe9db7fba8229e2ad67a1f24a3efc993d4dd607e367d4fbb",
+    "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+    "pdf_sha256": "6b9e54aaf1101fafa5ac6d5ab077b7e8be82c227d4d1e8afb0aab60877ea85c5"
+  },
+  {
+    "edition": "print",
+    "page": 374,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/print-page-374.png",
+    "sha256": "43689cf0dddbd4b1365abda3c8267b86e23c73cda2a05b7b261ec988f7e973b8",
+    "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+    "pdf_sha256": "6b9e54aaf1101fafa5ac6d5ab077b7e8be82c227d4d1e8afb0aab60877ea85c5"
+  },
+  {
+    "edition": "print",
+    "page": 403,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/print-page-403.png",
+    "sha256": "c059d12152fc1845c30bcb295a955238fd92cb53044a8610c7e64cba7892378d",
+    "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+    "pdf_sha256": "6b9e54aaf1101fafa5ac6d5ab077b7e8be82c227d4d1e8afb0aab60877ea85c5"
+  },
+  {
+    "edition": "print",
+    "page": 407,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/print-page-407.png",
+    "sha256": "6f9e3321d4b79cae8b8026932debfe32840dd9ff17dc4d6f3c417a7a58606993",
+    "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+    "pdf_sha256": "6b9e54aaf1101fafa5ac6d5ab077b7e8be82c227d4d1e8afb0aab60877ea85c5"
+  },
+  {
+    "edition": "print",
+    "page": 408,
+    "file": "docs/v0.10.3/pdf-proof/polish-extra/print-page-408.png",
+    "sha256": "8a9c2241e6a44a3a711395bdd50140711f5d847d575ce7f92a7449bc01b8d6c4",
+    "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+    "pdf_sha256": "6b9e54aaf1101fafa5ac6d5ab077b7e8be82c227d4d1e8afb0aab60877ea85c5"
+  }
+]

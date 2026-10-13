@@ -18,8 +18,8 @@ array, it is not in the book, is not on the website, and is not in the EPUB or t
 PDFs.
 
 That is deliberate, and it is what lets craft documents live beside the manuscript
-without leaking into it. Right now 33 `.md` files are in this directory and 30 are
-in the book. The three that are not:
+without leaking into it. The manifest currently includes 35 sections. The three craft documents below
+are outside the manuscript. The three that are not:
 
 | File | What it is |
 | --- | --- |

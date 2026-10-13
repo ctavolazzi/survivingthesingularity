@@ -1,0 +1,48 @@
+SURVIVING THE SINGULARITY
+
+
+A large model, compressed. A 70-billion-parameter model at 4 bits:
+
+      VRAM = ((70 · 4)/8) · 1.2 = 42 GB
+
+
+Two 24 GB cards provide 48 GB in total, which is what the co-op scav-
+enged. Tools like llama.cpp can split supported models across cards,
+but adding the labels on the boxes doesnʼt guarantee a working con-
+figuration. Test the model, memory use, and speed under the work-
+load you intend. Once the software and weights are downloaded,
+local inference can run without an internet connection.
+
+The heat math
+A rack drawing 600 to 1,000 watts turns roughly that much electrical
+power into heat while it runs. Measure your own load; retired hard-
+ware doesnʼt share one power rating. Inside an insulated building,
+thatʼs heat youʼre paying an air conditioner to fight. The co-opʼs
+answer was to carry it outside in liquid. The physics is one line:
+
+      Q̇  = ṁ  · Cp · ΔT
+
+
+To move 1,000 watts with a water-glycol coolant (    Cp ≈ 3, 800 J/kg·°C)
+while letting it warm only 5°C through the loop:
+
+      ṁ  = 1000/(3800 · 5) ≈ 0.053 kg/s ≈ 3.2 liters per minute
+
+Thatʼs the required flow for these assumptions, not a pump specifica-
+tion. The pump must deliver it against the loopʼs resistance, and the
+radiator needs enough area, airflow, and temperature difference to
+reject the heat. Measure coolant temperature under load before
+relying on the arrangement.
+
+
+
+
+
+
+
+
+
+
+
+
+206

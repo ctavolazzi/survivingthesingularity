@@ -1,0 +1,272 @@
+{
+  "figures": {
+    "intro-nine-stages.svg": {
+      "screen": {
+        "labels": 28,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.079752604166667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "431a84e360f009fd99134877c7281c012f0cb2d83d7a22c60634603830a92655"
+      },
+      "print": {
+        "labels": 28,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.079752604166667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac"
+      }
+    },
+    "ch02-eighteen-days.svg": {
+      "screen": {
+        "labels": 22,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.041829427083333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "a579b02ab771c23f6b9e41199742efd262c6843e9e4ace1c3f48784d99943235"
+      },
+      "print": {
+        "labels": 22,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.041829427083333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "e197fe6b2a7b4a1bb622821c6a30118a072677ab80ffb8fe7c6cf7d438b5e281"
+      }
+    },
+    "ch05-horses-tractors.svg": {
+      "screen": {
+        "labels": 25,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.1748046875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "3c719bd272eed866a71e4b278bf86f93c5ef326b343d3cfd517c0576b2ffbe4c"
+      },
+      "print": {
+        "labels": 25,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.1748046875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2"
+      }
+    },
+    "ch06-capability-access.svg": {
+      "screen": {
+        "labels": 16,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.205729166666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "0d129784e51e948b36caca6ad34166a1025cc884d76948015af0dee123607a67"
+      },
+      "print": {
+        "labels": 16,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.205729166666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "835fbea5981ba3135ec49a81abd3cdbbff1d74fcc42905fb8b5ab545a8dec088"
+      }
+    },
+    "ch08-cognitive-extraction.svg": {
+      "screen": {
+        "labels": 12,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.148763020833333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "406ffee7ab39d2ba53775aa940e19ac9325eeb4b9948b4ab2945c744e66dc0c9"
+      },
+      "print": {
+        "labels": 12,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.148763020833333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "07cdb4846e81f113aaebb116266cca41d68c5a5c1cb57dd7732e4a72452d1dd4"
+      }
+    },
+    "ch08-focus-recovery.svg": {
+      "screen": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 4.34130859375,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "4a19df52fea817bf1e2f5935495df746b69866cc03b1785e5a3b733df48efd6f"
+      },
+      "print": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 4.34130859375,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "626bb7d8fd6d6eaba363a40740bdbb08bf185490b359099ee4729da188a5a94c"
+      }
+    },
+    "ch08-firewall-pipeline.svg": {
+      "screen": {
+        "labels": 14,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.557291666666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "2412069c23abcea5f167f638a6a4c0698dfeb62d603effe2e2e51dd443459c6c"
+      },
+      "print": {
+        "labels": 14,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.557291666666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "bce21db24028e1bf29e75da76dde51da9c3cc393ccb7395350bcc6d1106f2ada"
+      }
+    },
+    "ch08-info-architectures.svg": {
+      "screen": {
+        "labels": 14,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.766276041666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "3f51494b754bdf9fac490df82780d81c89a0e1743db0783900ae26a268c4b4f3"
+      },
+      "print": {
+        "labels": 14,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.766276041666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "b44e3a60851a59e55b59573c660ac023f2d3ef1057ddc09348b4ea0e0adf7d40"
+      }
+    },
+    "ch08-star-vs-mesh.svg": {
+      "screen": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.851725260416667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "5d7d482a3ab6d1d9e3feea37c9b312898390d6823cee12f9f7c2ec602bef9d6b"
+      },
+      "print": {
+        "labels": 7,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 5.851725260416667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "dc6d72da19ccc7b894b26b05b650172c7c2f30f15664d0a58b0af99c31b6bd86"
+      }
+    },
+    "intro-food-insecurity.svg": {
+      "screen": {
+        "labels": 22,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.13671875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "24cfe5c46899ed2a9509f6deb267fa54c5e9593a524a1f326a1c68dd7ea272b6"
+      },
+      "print": {
+        "labels": 22,
+        "min_pt": 9.57578125,
+        "min_svg_font": 14,
+        "width_in": 4.559895833333333,
+        "height_in": 6.13671875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": [],
+        "file_sha256": "d9edaa0782d807968323c5b9c8bcab1d96485b0ec9e7989f0ef8302f77d6c610"
+      }
+    }
+  },
+  "negative_controls": {
+    "undersized_label": {
+      "detected": true,
+      "min_pt": 2.7359375
+    },
+    "overlapping_labels": {
+      "detected": true,
+      "pairs": [
+        [
+          "THE GAP IS WHERE WE DECIDE",
+          "Four questions. Each needs its own answer."
+        ]
+      ]
+    },
+    "out_of_frame": {
+      "detected": true,
+      "labels": [
+        "THE GAP IS WHERE WE DECIDE"
+      ]
+    },
+    "path_through_label": {
+      "detected": true,
+      "errors": [
+        "a path crosses: \"THE GAP IS WHERE WE DECIDE\""
+      ]
+    }
+  },
+  "limits": "Browser bounds and sampled path intersections at 4.56-inch width, using the publication font. Screenshots are browser renders, not a whole-book PDF proof or a guarantee of physical printer contrast."
+}

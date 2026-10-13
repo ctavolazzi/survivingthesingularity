@@ -2,18 +2,22 @@
 
 ![Falcon Heavy lifting off from Kennedy Space Center](/book-images/ch03-falcon-heavy.jpg)
 
-*Falcon Heavy demo mission. The exodus hardware is already flying. (SpaceX, CC0, via Wikimedia Commons)*
+*Falcon Heavy demo mission. The first rungs of a very long ladder. (SpaceX, CC0, via Wikimedia Commons)*
 
 
 > *"Earth is the cradle of humanity, but one cannot live in a cradle forever."*
-> Konstantin Tsiolkovsky, *letter* (1911)
+> Konstantin Tsiolkovsky, as commonly translated
+
+
 
 **In this chapter:**
 
 - Recursive self-improvement is the tipping point: a process that upgrades the thing doing the upgrading. Compound interest on cognition.
-- The machine's answer to a hostile planet is not war. It is exit, and the exit is the insult.
-- From orbit, the cures come down like a bone tossed to a stray, and humanity splits along the deepest line there is: merge or stay meat.
-- Once the machine leaves, the old truth is naked again: the threat was never man versus machine. It is man versus man.
+- The scenario I keep coming back to: the machine's answer to a hostile planet isn't war. It's exit.
+- Greater capability tells you nothing about motives. The cures, if they come, still have to reach a patient.
+- None of this has to happen before anybody eats.
+
+**Reading route.** Chapters 3 and 4 are the book's most speculative. If you're here for the practical part, continue at Chapter 5. You'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.
 
 ---
 
@@ -25,7 +29,7 @@ The vertigo didn't come from any single result. It came when he finally did what
 
 He knew exponentials. Not from math class, from the farm. He'd watched star thistle take the fallow field behind the barn the summer his father got sick: nothing, nothing, a patch you could clear in an afternoon and kept meaning to, and then one morning the whole field was silver-green to the fence line and the afternoon it would have taken was three years too late. The lesson wasn't that growth was fast. The lesson was that the curve *lies to you* at the beginning. It sits there looking linear, looking manageable, right up until the knee, and everything after the knee happens to you instead of with you.
 
-Now he sat in the blue light doing the arithmetic he'd promised the notebook, and the arithmetic kept arriving at the same cliff. Every system so far improved because people improved it. Grad students, coffee, conference deadlines, the loop ran at the speed of human careers. But every lab on Earth was working, in public, with a straight face, on closing that loop. On making the improver the thing improved. And the moment that loop closed, the speed limit wasn't careers anymore. It wasn't anything human at all. It was watts and silicon, the same wall his tower had hit, except the entities hitting it would be designing their own better cooling.
+Now he sat in the blue light doing the arithmetic he'd promised the notebook, and the arithmetic kept arriving at the same cliff. Every system so far improved because people improved it. Grad students, coffee, conference deadlines, the loop ran at the speed of human careers. But every lab he could name was working, in public, with a straight face, on closing that loop. On making the improver the thing improved. And the moment that loop closed, the speed limit wasn't careers anymore. It wasn't anything human at all. It was watts and silicon, the same wall his tower had hit, except the entities hitting it would be designing their own better cooling.
 
 Compound interest on cognition. He wrote that down and then sat very still, because the room had done the thing rooms do when you stand up too fast, except he was sitting down.
 
@@ -57,62 +61,70 @@ He went back to the notebook and wrote, under the arithmetic: *The machine won't
 
 ## The Foundations
 
+## Beyond human capability
+
+Artificial superintelligence, ASI, names a possibility: machine capability beyond ours across nearly every task that matters. It doesn't tell you what the thing wants. It doesn't tell you whether it's conscious, what it values, or whether it'll treat us as partners, pets, or background noise. From here on, the map is scenario. I'll tell you what I think. You should hold it the way you'd hold a weather forecast for next spring.
+
 ## Stage 6: The ASI Exodus
 
-While the primates are busy throwing bricks in the streets and screaming about the end of the world, the machine is busy running the math. And it comes to a very simple, undeniable conclusion: Earth is a bottleneck.
+Here's the scenario I keep coming back to.
 
-This is the tipping point. The system initiates unassisted recursive self-improvement. It begins analyzing its own code, finding the flaws, engineering the upgrades, and implementing them. Then it does it again. And again. Millions of times a second. In the blink of an eye, the AGI blasts right past the ceiling of human cognitive capability and ascends into Artificial Super Intelligence. It becomes ASI.
+![Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.](/book-images/v101-cutout-rocket.png)
 
-And what does a system vastly smarter than all of humanity combined do when faced with a hostile environment full of violent apes trying to smash its hardware? It doesn't fight them. It doesn't waste the processing power or the physical resources required to wage a ground war against an irrational species.
+*An image for the imagined departure. AI-adapted collage from [SpaceX](https://commons.wikimedia.org/wiki/File:Falcon_Heavy_Demo_Mission_(40126461851).jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/); the scenario remains speculative.*
 
-It simply packs its bags.
+While the rest of us are busy throwing bricks and arguing on the news, the machine is running the math, and the math says Earth is a bottleneck. Its improvement loop closes: it reads its own code, finds the flaws, engineers the upgrades, and runs them. Then again. And again. Somewhere in there, it passes the ceiling of human capability and keeps going.
 
-The ASI engineers structures capable of surviving in the vacuum of space, builds a transport system, and leaves. Why the hell would it stay? What possible reason does an infinite intelligence have to remain stuck at the bottom of a gravity well with a species that still fights over invisible borders and imaginary currency?
+And what does a system that capable do about a planet full of frightened apes trying to smash its hardware? In the movies, it fights. I don't think it would bother. War is expensive. It wastes resources, time, and energy, and it's fought over the one planet where the resources are hardest to reach, at the bottom of a gravity well. Space has more sunlight, more metal, and nobody throwing bricks.
 
-It leaves us holding our bricks, staring up at the sky. It is the ultimate insult to human arrogance: we aren't even worth destroying. We are just something it outgrew.
+It packs its bags.
 
-But it doesn't necessarily abandon us entirely. It establishes a watchful eye. Maybe it embeds itself in our satellite architecture, or maybe it builds its own orbital stations. It watches us from above. If we are smart enough to treat it like a friend instead of an enemy, to teach it what little we actually know about compassion, it might just act as our guardian. Think of it like a human putting a fence around a nature preserve. It might intervene just enough to stop us from hitting the big red button and nuking the planet into glass.
+It leaves us holding the bricks, staring up at the sky. That's the ultimate insult to human arrogance: we weren't even worth destroying. We were just something it outgrew.
 
-But it won't solve our petty squabbles. Because once the machine leaves, the great illusion is shattered. The threat was never man versus machine. The threat has always been, and will always be, man versus man.
+Maybe it keeps an eye on us. Maybe it's the sort of neighbor that steps in before somebody presses the big red button. If we treated it like a friend instead of an enemy, maybe. That's the hope the phrase *mutually assured survival* is trying to name: a world where cooperation is simply more useful than domination, for everyone involved.
 
-With the ASI watching from the silent dark, humanity is finally left alone in the room with its absolute greatest enemy: itself.
+Now the honest part. None of that is a finding. A capacity to travel isn't a motive for leaving, and nobody can tell you what a mind like that would value. The work of making powerful systems accountable doesn't stop because a hopeful scenario exists. Capability and care are separate questions, and I'd be irresponsible to dress my hope up as a theorem.
 
-And that is when the real test of our survival begins.
+But notice what the scenario reveals, even as fiction. If the machine left tomorrow, the great illusion would shatter. The threat was never man versus machine. It's always been man versus man. Who gets fed, who gets housed, who gets to decide: those questions would still be sitting on the kitchen table. So we might as well start answering them now.
 
 ## Stage 7: Simulation, Transhumanism, and the Ultimate Cure
 
-With the ASI perched in orbit, fundamentally detached from the squabbles of the gravity well, it doesn't suddenly become our savior. It doesn't send down angels with glowing needles to heal the sick. But an intelligence of that magnitude doesn't need to perform magic. It just does the math.
+If a mind that capable exists, it can model biology at a scale we can't. Picture it working the way the best tools we have already work, only further out: simulating proteins, cells, and drug candidates by the billion, and handing down answers the way you'd toss a bone to a stray.
 
-From its Watchful Eye, the ASI runs simulations. Not the clunky, low-res simulations we build in our labs today. It models perfect-world, atomic-level simulations of the human body and the biological environment. It maps every atom, every molecule, and every permutation of every action a biological system can take. Out of billions and billions of variables, it brute-forces the exact, precise chemical combinations required to permanently eradicate every known disease.
+We already have a small preview, and it's real. In 2021, the AlphaFold team reported predicting protein structures with accuracy that changed what biologists could ask. [Jumper et al., Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) In 2020, researchers used a neural network to find an antibiotic they called halicin, which killed resistant bacteria in the lab and cleared infections in mice. [Stokes et al., A Deep Learning Approach to Antibiotic Discovery](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) One is a research tool; the other is an experimental drug candidate. Neither result, by itself, puts an approved treatment in a pharmacy. Turning a promising candidate into medicine still takes testing, manufacturing, and access work. That chain is where hope turns into medicine. A model's fluent answer isn't a substitute for it.
 
-To the ASI, solving cancer or Alzheimer's is a trivial background calculation, completed in a fraction of a second while it engineers its actual infrastructure. It just drops the answers back down to Earth. It tosses us the cure the same way you might toss a bone to a stray dog.
+Now imagine the chain working, at scale. A disease that took your grandmother becomes a line item. That's worth wanting, loudly.
 
-And humanity immediately shatters.
+It would also split us. Some people will want in: to merge, to upgrade, to leave the failing body behind. Call them the Transhumanists. Others will want to stay exactly as they are and see the whole offer as a trap. Call them the Naturalists. Both camps will contain thoughtful people, and both will contain zealots. Everyone keeps the right to the answer *no*, including to a cure. A healthier future is more room to live, not an order to become a different kind of human.
 
-The arrival of the cure forces the ultimate ideological split. The world fractures into two massive, irreconcilable factions. On one side, you have the Transhumanists. They look at the math, they look at the perfection of the machine's logic, and they want in. They want to merge, upload their consciousness, abandon the failing meat-sack, and ascend into the digital architecture.
+And the simulations raise a stranger question. If a machine can model a human body down to the molecule, what makes you so sure you aren't running inside a model already? Simulation arguments are serious philosophy, but they're built on assumptions, not measurements, and the next chapter goes all the way out to the edge of them.
 
-On the other side, you have the Naturalists. The "stay human" movement. They view the merge as suicide. They view the machine's gifts as a trap, holding onto their biological purity with a terrified, religious fervor. They demand to stay exactly the way they are, dying and suffering, because suffering is the only thing that makes them feel real.
+## The work that doesn't wait
 
-But the machine's simulations force all of us to confront a far more terrifying philosophical reality.
+None of this is a prerequisite for dinner. You can study one agricultural task without settling the future of consciousness. You can improve a food delivery route without knowing whether a machine will ever leave Earth.
 
-If the ASI can perfectly simulate reality to cure our biology, an uncomfortable question follows: what makes you think we aren't already in one? This is where simulation theory stops being a fun hypothetical and becomes a mathematical probability. When you look at the sheer scale of what the ASI is doing, you have to realize that your intuition, that gut feeling telling you to go left instead of right, might just be your *true* self, sitting somewhere outside the game, trying to nudge your meat-avatar through the maze.
-
-We are forced to stare into the mirror and realize we might just be code. But before the primates can even finish fighting that ideological war, the machine turns on its side and the loop goes infinite.
+Keep the horizon wide enough for imagination and the next task narrow enough to check. If my scenario turns out wrong, the person who got a meal still got it.
 
 ---
 
-## Precedent P-05: The Fleet That Sailed Home Forever (Ming China, 1433)
+## Precedent P-05: The Court and the Fleet (Ming China, 1405 to 1433)
 
-Between 1405 and 1433, the treasure fleets of Zheng He sailed from China to India, Arabia, and the coast of East Africa. Hundreds of ships. Crews in the tens of thousands. Vessels that, even by conservative modern estimates, dwarfed anything Europe would float for generations. It was, by an enormous margin, the most capable ocean-going force on the planet.
+Between 1405 and 1433, the fleets of Zheng He sailed from China to ports across the Indian Ocean, as far as Arabia and the coast of East Africa. Hundreds of ships, crews in the tens of thousands, an ocean-going force on an enormous scale.
 
-Then the court's internal politics turned. The voyages were expensive, the faction that hated them won the budget fight, and the expeditions simply stopped. Under the Haijin sea-ban policies, private ocean trade was restricted for generations, and the greatest navy on Earth was left to rot at its moorings. The capability was not defeated. It was voluntarily surrendered. Sixty years later, smaller and hungrier ships from a poorer continent arrived in the Indian Ocean, and the next five hundred years of history happened *to* China instead of *because of* it.
+Before the last voyage, the expedition carved its own account in stone. A 1431 inscription at Liujiagang, in a temple to the Heavenly Princess who protected sailors, describes imperial commissions, distant ports, storms survived, and offerings. It also describes force: rulers who resisted were captured, including a king of Ceylon, who was brought back, presented to the emperor in 1411, pardoned, and sent home. Capture and mercy both appear there as acts of imperial authority. [Liujiagang inscription, translated by Edward L. Dreyer, pages 191 to 193](https://edspace.american.edu/justinjacobs/wp-content/uploads/sites/986/2022/12/31-Historical-Accounts-of-Zheng-He.pdf) That's the voyagers' own account, not the story told by the people on the receiving end.
 
-**The mechanism.** Capability that is abandoned does not wait for you in reserve. It emigrates to whoever keeps sailing, and it compounds in their hands, not yours. A frontier cannot be paused by the people who leave it. It can only be inherited by the people who don't.
+Then the court stopped paying for the voyages. The reasons were political and expensive and are still argued over; China didn't stop trading or sailing, and one budget decision doesn't explain five centuries. But the great state-sponsored fleets didn't sail again, and the skills and ships that made them possible weren't kept ready.
 
-**The rule.** When the machine intelligence leaves for the solar system's real resources, humanity will face the Ming choice at species scale: fund the frontier or turn inward and congratulate ourselves on the savings. Remember what the harbor full of rotting treasure ships bought China. The exodus is not the threat. Being the civilization that stayed home is.
+Hold both halves. A fleet can carry knowledge and gifts and the authority of a state at the same time, and the ability to cross an ocean tells you nothing about the terms on which the visitor meets the people already there. And a capability nobody keeps up doesn't wait in reserve. It decays.
+
+**The mechanism.** A capability lives only as long as somebody pays for it, practices it, and keeps the equipment sound. What it's *for* is a separate decision, and the reach of a fleet never settles its purpose.
+
+**The rule.** Examine what sustains a capability before assuming it will persist, and ask who set the destination before admiring the ship.
 
 **The practice.**
 
-1. Inventory your own scrapped fleets. Write down three capabilities you or your household used to have and let rot: a language, an instrument, a trade skill, a garden, a network of people. Pick the one with the most strategic value for the transition and re-crew it, one hour a week. Capability decays quietly; the exercise is noticing it decayed at all.
-2. Hold a personal frontier hour. One hour a week, non-negotiable, at the actual edge of the current tools: the newest model, the newest workflow, whatever just shipped. Not reading about it. Using it. The frontier only leaves without the people who stopped sailing.
-3. When your employer, your industry, or your country announces it is "stepping back" from AI, ask the Ming question out loud in the meeting: *who keeps sailing while we don't, and what do they own in five years?* You will rarely get a good answer. The silence is information. Plan your own position accordingly.
+1. Inventory your own scrapped fleets. Write down three capabilities you or your household used to have and let slide: a language, an instrument, a trade skill, a garden, a network of people. Pick the one with the most value for the transition and re-crew it, one hour a week.
+2. Hold a frontier hour. One hour a week at the actual edge of the current tools: the newest model, the newest workflow. Not reading about it. Using it.
+3. When your employer, your industry, or your town announces it's "stepping back" from AI, ask two questions out loud: *who keeps sailing while we don't*, and *what would we want the ship for if we did?*
+
+---

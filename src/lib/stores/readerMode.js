@@ -5,7 +5,7 @@ const STORAGE_KEY = 'sts_reader_mode';
 
 function readStoredValue() {
   if (!browser) return false;
-  return localStorage.getItem(STORAGE_KEY) === '1';
+  try { return localStorage.getItem(STORAGE_KEY) === '1'; } catch { return false; }
 }
 
 function createReaderModeStore() {
@@ -15,7 +15,9 @@ function createReaderModeStore() {
     subscribe,
     toggle: () => update(current => {
       const next = !current;
-      if (browser) localStorage.setItem(STORAGE_KEY, next ? '1' : '0');
+      if (browser) {
+        try { localStorage.setItem(STORAGE_KEY, next ? '1' : '0'); } catch { /* Keep the current session usable. */ }
+      }
       return next;
     }),
   };

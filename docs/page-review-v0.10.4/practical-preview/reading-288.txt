@@ -1,0 +1,43 @@
+                                                                          CHAPTER 17
+
+
+behind him, and the radio crackled at his collarbone every quarter
+mile, Marta running the net from the shop the way sheʼd once run a
+floor: short transmissions, no chatter, callsigns and traffic.
+And he could hear, in the gaps, the system working around the hole
+heʼd made. Priyaʼs greenhouse, riding the alert chain: low-temp alarm
+at 8:40, relayed around the dead ridge the long way, south through
+Frankʼs node, and Dennyʼs voice acknowledging, hauling the backup
+battery to keep the winter starts alive, all of it happening without
+him, around him, because the networkʼs whole design assumed any
+one node, any one person, could be the one that failed. It is a strange,
+strong medicine, hearing a thing you built survive you.
+
+Node 7ʼs enclosure was where heʼd bolted it, on the old fire-lookout
+stub, and the node was dark. Curtis held a garbage bag over them for
+a rain fly while Elijah got the lid off, fingers going stupid with cold,
+and keyed the radio, and he and Marta debugged it across two miles
+of storm, Marta asking the only question she ever asked:
+“Power or brain? Halve it.”
+Battery voltage: 12.9, holding under load. Power. Halved. “Down-
+stream. Check the buck converter under load.” Five point one volts,
+solid. Halved again. So: brain. Elijah connected the service cable and
+read the startup log aloud. The controller booted; the radio never
+initialized. He checked the installed version against the last working
+record. Sundayʼs update had changed the startup configuration, and
+heʼd accepted one successful transmission as a test. He hadnʼt cut the
+power and brought it back. The storm had done that test for him. The
+vise, the shovel, and now the ridge: the same exam, a third time, in
+worse weather.
+The fix took eleven minutes because he had, at least, packed like
+Marta taught: the service laptop, the cable, and the known-good
+image and configuration, hashes checked, in the dry bag next to the
+spare fuses. Restore, restart, cut the power, start again. The status
+light went to its slow steady breathing, and in his collar the radio
+said, in Priyaʼs voice, “North houses just came back. Hello, ridge.”
+
+
+
+
+
+                                                                                 283

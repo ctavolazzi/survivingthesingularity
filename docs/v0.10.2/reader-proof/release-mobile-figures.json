@@ -1,0 +1,96 @@
+{
+  "base": "http://127.0.0.1:5190",
+  "viewport": [
+    390,
+    844
+  ],
+  "registry_entries": 54,
+  "page_errors": [],
+  "console_errors": [],
+  "console_warnings": [
+    "<Layout> was created with unknown prop 'params'",
+    "<Layout> was created with unknown prop 'params'",
+    "<Page> was created with unknown prop 'params'"
+  ],
+  "failed_requests": [],
+  "http_errors": [],
+  "figures": {
+    "intro-nine-stages.svg": {
+      "alt": "A speculative map of nine stages, grouped into AGI, ASI, and later imagined possibilities. Stage 4, a new social contract, is emphasized as a choice. Stages may overlap, stall, or fail to occur.",
+      "caption": "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later stages are imagined possibilities.",
+      "loaded": true,
+      "natural": [
+        113,
+        150
+      ],
+      "attributes": [
+        480,
+        640
+      ],
+      "image": {
+        "x": 19.5,
+        "y": 188.46875,
+        "width": 351,
+        "height": 468,
+        "top": 188.46875,
+        "right": 370.5,
+        "bottom": 656.46875,
+        "left": 19.5
+      },
+      "figure": {
+        "x": 19.5,
+        "y": 188.46875,
+        "width": 351,
+        "height": 557.609375,
+        "top": 188.46875,
+        "right": 370.5,
+        "bottom": 746.078125,
+        "left": 19.5
+      },
+      "viewport_width": 390,
+      "image_inside_viewport": true,
+      "figure_inside_viewport": true,
+      "figure_horizontal_overflow": false,
+      "page_horizontal_overflow": false
+    },
+    "appd-precedent-timeline.svg": {
+      "alt": "Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.",
+      "caption": "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.",
+      "loaded": true,
+      "natural": [
+        111,
+        150
+      ],
+      "attributes": [
+        480,
+        650
+      ],
+      "image": {
+        "x": 19.5,
+        "y": 183.9375,
+        "width": 351,
+        "height": 475.3125,
+        "top": 183.9375,
+        "right": 370.5,
+        "bottom": 659.25,
+        "left": 19.5
+      },
+      "figure": {
+        "x": 19.5,
+        "y": 183.9375,
+        "width": 351,
+        "height": 590.125,
+        "top": 183.9375,
+        "right": 370.5,
+        "bottom": 774.0625,
+        "left": 19.5
+      },
+      "viewport_width": 390,
+      "image_inside_viewport": true,
+      "figure_inside_viewport": true,
+      "figure_horizontal_overflow": false,
+      "page_horizontal_overflow": false
+    }
+  },
+  "unexpected_console_warnings": []
+}

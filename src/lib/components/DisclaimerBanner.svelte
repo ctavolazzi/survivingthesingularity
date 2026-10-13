@@ -1,15 +1,21 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy, tick } from 'svelte';
   import { browser } from '$app/environment';
   import { fly, fade } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
   import { CONSENT_KEY, CONSENT_VERSION } from '$lib/consent.js';
+  import { containModalFocus } from '$lib/modalFocus';
 
   let agreed = false;
   let agreedAt = '';
-  // "Disagree" does NOT persist - it locks the current page session. A refresh
-  // clears it and re-presents the banner so the user can accept.
+  // Declining is session-only. Reviewing the terms returns to the banner
+  // without discarding the current page or requiring a reload.
   let disagreed = false;
+  let lockoutEl;
+  let disagreeButton;
+  let releaseModalFocus;
+  let dialogGeneration = 0;
+  let priorOverflow = '';
 
   onMount(() => {
     if (!browser) return;
@@ -25,10 +31,53 @@
     } catch {}
   });
 
-  // Lock page scroll while the lockout overlay is up.
+  /**
+   * Measured height of the banner, bound from the element itself rather than
+   * hardcoded, because the mobile breakpoint stacks the buttons under the
+   * sentence and the banner is meaningfully taller there.
+   */
+  let bannerHeight = 0;
+
+  /**
+   * RESERVE REAL LAYOUT SPACE FOR A position:fixed BANNER.
+   *
+   * The banner used to reserve none, so it simply sat on top of whatever was at
+   * the bottom of the viewport. On 2026-07-29 that was measured to be both buy
+   * buttons on /early-access, at 390x844 AND 1280x720:
+   *
+   *   banner [695,832]  button [784,844]   elementFromPoint(centre) = dbnr-agree
+   *
+   * A customer tapping the middle of "Preorder Now: $5" hit "I Agree" instead.
+   * The email field was partly covered too. A first-time visitor is exactly the
+   * person who still has this banner up, and exactly the person trying to buy.
+   *
+   * The value composes with env(safe-area-inset-bottom) in app.css rather than
+   * overwriting it, so the device home indicator keeps its space as well. The
+   * extra 24px covers the banner's own `bottom` offset plus breathing room.
+   *
+   * Consequence worth knowing: while the banner is up the document is ~150px
+   * taller than the viewport, so a short page gains a small scroll. That is the
+   * honest outcome. The banner really does occupy that space, and pretending
+   * otherwise is what covered the button.
+   */
   $: if (browser) {
-    document.body.style.overflow = disagreed ? 'hidden' : '';
+    const showing = !agreed && !disagreed && bannerHeight > 0;
+    document.body.style.setProperty(
+      '--consent-reserve',
+      showing ? `${bannerHeight + 24}px` : '0px'
+    );
   }
+
+  // Leave no trace. A stranded reserve would leave a permanent dead strip at
+  // the bottom of every page, and a stranded overflow:hidden would leave the
+  // whole site unscrollable.
+  onDestroy(() => {
+    if (!browser) return;
+    dialogGeneration++;
+    document.body.style.removeProperty('--consent-reserve');
+    releaseModalFocus?.();
+    if (disagreed) document.body.style.overflow = priorOverflow;
+  });
 
   function agree() {
     const at = new Date().toISOString();
@@ -43,19 +92,33 @@
     disagreed = false;
   }
 
-  function disagree() {
+  async function disagree() {
+    if (disagreed) return;
+    const generation = ++dialogGeneration;
+    priorOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     disagreed = true;
+    await tick();
+    if (disagreed && generation === dialogGeneration && lockoutEl?.isConnected) {
+      releaseModalFocus = containModalFocus(lockoutEl);
+    }
   }
 
-  function refresh() {
-    if (browser) location.reload();
+  async function reviewTerms() {
+    const generation = ++dialogGeneration;
+    releaseModalFocus?.();
+    releaseModalFocus = undefined;
+    disagreed = false;
+    document.body.style.overflow = priorOverflow;
+    await tick();
+    if (!disagreed && generation === dialogGeneration) disagreeButton?.focus();
   }
 </script>
 
+<svelte:window on:keydown={(event) => { if (disagreed && event.key === 'Escape') reviewTerms(); }} />
+
 {#if disagreed}
-  <!-- Full-screen lockout. Covers everything; the only way forward is to
-       refresh and accept. -->
-  <div class="lockout" role="alertdialog" aria-modal="true" aria-label="Site locked" transition:fade={{ duration: 200 }}>
+  <div class="lockout" bind:this={lockoutEl} role="alertdialog" aria-modal="true" aria-labelledby="lockout-title" aria-describedby="lockout-description" tabindex="-1" transition:fade={{ duration: 200 }}>
     <div class="lockout-card">
       <div class="lockout-icon" aria-hidden="true">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -63,13 +126,13 @@
           <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
       </div>
-      <h2 class="lockout-title">Site locked</h2>
-      <p class="lockout-text">
+      <h2 class="lockout-title" id="lockout-title">Review the terms</h2>
+      <p class="lockout-text" id="lockout-description">
         You declined the terms. The site can't be used without agreeing.
-        Refresh and accept to continue.
+        Return to the notice to read the linked terms and decide whether to accept.
       </p>
-      <button type="button" class="lockout-btn" on:click={refresh}>
-        Refresh &amp; review terms
+      <button type="button" class="lockout-btn" on:click={reviewTerms}>
+        Return to terms
       </button>
     </div>
   </div>
@@ -79,6 +142,7 @@
     role="region"
     aria-label="Site disclaimer and acceptance"
     transition:fly={{ y: 80, duration: 300, easing: cubicOut }}
+    bind:clientHeight={bannerHeight}
   >
     <div class="dbnr-inner">
       <div class="dbnr-icon" aria-hidden="true">
@@ -98,7 +162,7 @@
         <button type="button" class="dbnr-agree" on:click={agree} aria-label="I have read and agree to the Terms, Disclaimer, and Privacy">
           I Agree
         </button>
-        <button type="button" class="dbnr-disagree" on:click={disagree} aria-label="I do not agree to the terms">
+        <button type="button" class="dbnr-disagree" bind:this={disagreeButton} on:click={disagree} aria-label="I do not agree to the terms">
           Disagree
         </button>
       </div>

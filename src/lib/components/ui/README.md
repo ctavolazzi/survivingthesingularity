@@ -41,33 +41,6 @@ A versatile button component with several variants.
 - `icon`: Optional icon to display
 - `href`: If provided, renders an `<a>` tag instead of a button
 
-### Image
-
-A simplified image component that handles responsive images and WebP format.
-
-```svelte
-<script>
-  import { Image } from '$lib/components/ui';
-</script>
-
-<Image src="/images/example.jpg" alt="Example image" />
-<Image src="/images/example.jpg" alt="Example with caption" caption="This is a caption" />
-<Image src="/images/example.jpg" alt="Example with effects" border shadow hoverEffect />
-```
-
-**Props:**
-- `src`: Image source (required)
-- `alt`: Alt text for accessibility (required)
-- `width`, `height`: Optional dimensions
-- `loading`: 'lazy' (default) or 'eager'
-- `class`: Additional CSS classes
-- `caption`: Optional image caption
-- `border`: Whether to add a border
-- `rounded`: Whether to round corners (default: true)
-- `shadow`: Whether to add a shadow
-- `hoverEffect`: Whether to add hover effect (scale on hover)
-- `srcWebp`: WebP version of the image (auto-generated if not provided)
-
 ### Card
 
 A flexible card component for displaying content in a consistent way.

@@ -1,0 +1,27 @@
+The mechanism. Interdependence is efficiency in fair weather and conta-
+gion in foul. When a critical input stops arriving, everything downstream
+of it stops being possible. Neither localism nor size guarantees survival;
+knowing  your  dependencies  and  having  some  ability  to  substitute  for
+them is what helps.
+The rule. Name the dependency and the disruption youʼre preparing for.
+Then decide, in advance, which side of the cascade your street is on.
+The practice.
+Map your tin. List the five things your household canʼt function
+without for a month: a medication, a fuel, a staple food, a spare part, a
+service. For each, trace where it actually comes from, as far up the
+chain as twenty minutes of looking will get you. Pick the most fragile
+line and build one local or stored alternative for it this quarter.
+Take the neighbor census before you need it. Write down, or better,
+learn in person, which people within walking distance can fix an
+engine, stitch a wound, grow food, wire a panel, keep bees, weld. If
+you canʼt name five, thatʼs your project for the season. The mesh
+network is mostly people.
+Adopt the fair-weather buying rule: when two options are close, take
+the one thatʼs repairable, local, or standardized over the one thatʼs
+optimal and single-sourced. Youʼre not paying extra for a product.
+Youʼre paying for which side of the cascade your household sits on.
+1. 
+2. 
+3. 
+CHAPTER 9
+177

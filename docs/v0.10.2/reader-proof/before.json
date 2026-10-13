@@ -1,0 +1,26 @@
+{
+  "base": "http://127.0.0.1:5190",
+  "phase": "before",
+  "observations": {
+    "scene_open_focus": {
+      "tag": "BODY",
+      "text": "\n\t\t Skip to main content   STS  The BookBlog Preorder: $5      STS   S"
+    },
+    "scene_close_focus": {
+      "tag": "BODY",
+      "text": "\n\t\t Skip to main content   STS  The BookBlog Preorder: $5      STS   S"
+    },
+    "arrow_on_control_url": "http://127.0.0.1:5190/book/part-3",
+    "drawer_open_focus": {
+      "inside": false,
+      "tag": "BUTTON"
+    },
+    "escape_leaves_drawer_open": "true",
+    "divider_content": " Part II: How Humans React: The Cooperative Transition ",
+    "divider_images": 0,
+    "chapter_jump_focus": {
+      "tag": "BODY",
+      "hidden": false
+    }
+  }
+}

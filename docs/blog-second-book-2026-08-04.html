@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Second Book Is Cheap. The Second Novel Isn't.</title>
+<meta name="description" content="A 5,355-line tool carried one book to 92,778 words and four output formats. Not one line of it writes prose. Measuring what actually ports to the next book.">
+<style>
+  :root {
+    --bg: #0b0e14;
+    --surface: #141922;
+    --surface-2: #1b2130;
+    --line: #232b39;
+    --ink: #e6edf7;
+    --muted: #93a1b8;
+    --accent: #f59e0b;
+    --accent-2: #38bdf8;
+    --good: #34d399;
+    --bad: #f87171;
+    --warn: #c084fc;
+    --max: 46rem;
+    --mono: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, monospace;
+    --sans: ui-sans-serif, system-ui, "Inter", -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fbfaf7; --surface: #fff; --surface-2: #f4f1ea; --line: #e3ded3;
+      --ink: #1c1917; --muted: #6b6558; --accent: #b45309; --accent-2: #0369a1;
+      --good: #047857; --bad: #b91c1c; --warn: #7e22ce;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); font-size: 1.06rem; line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+  .bleed { max-width: 68rem; margin-inline: auto; padding: 0 1.25rem; }
+  .scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  h1 { font-size: clamp(2rem, 6vw, 3.1rem); line-height: 1.08; letter-spacing: -0.025em; margin: 0 0 .7rem; }
+  h2 { font-size: clamp(1.4rem, 3.4vw, 1.9rem); line-height: 1.2; margin: 3.8rem 0 .8rem; letter-spacing: -0.01em; }
+  h3 { font-size: 1.12rem; margin: 2.2rem 0 .5rem; letter-spacing: -0.005em; }
+  p { margin: 0 0 1.2rem; }
+  a { color: var(--accent-2); }
+  img, svg, canvas { max-width: 100%; height: auto; display: block; }
+  strong { font-weight: 650; }
+
+  .dek { color: var(--muted); font-size: 1.2rem; line-height: 1.5; margin: 0 0 1.6rem; }
+  .byline { font-family: var(--mono); font-size: .76rem; color: var(--muted);
+            text-transform: uppercase; letter-spacing: .12em; margin: 0 0 1.1rem; }
+  figure { margin: 2.6rem 0; }
+  figcaption { font-size: .87rem; color: var(--muted); margin-top: .8rem; text-align: center; line-height: 1.5; }
+
+  /* Layer 0: stat strip */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+           gap: .7rem; margin: 2rem 0 2.6rem; }
+  .stats > * { min-width: 0; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+          padding: .85rem .95rem; text-decoration: none; color: inherit; display: block; }
+  .stat:hover { border-color: var(--accent); }
+  .stat b { display: block; font-family: var(--mono); font-size: 1.5rem; line-height: 1.1;
+            color: var(--accent); letter-spacing: -0.02em; }
+  .stat span { display: block; font-size: .78rem; color: var(--muted); margin-top: .3rem; line-height: 1.35; }
+
+  .tldr { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent-2);
+          border-radius: 0 10px 10px 0; padding: 1.1rem 1.2rem; margin: 2rem 0 2.6rem; }
+  .tldr h2 { margin: 0 0 .5rem; font-size: .78rem; font-family: var(--mono);
+             text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+  .tldr p:last-child { margin-bottom: 0; }
+
+  .callout { border-left: 3px solid var(--accent); background: var(--surface);
+             padding: .95rem 1.15rem; border-radius: 0 8px 8px 0; margin: 1.9rem 0; }
+  .callout.warn { border-left-color: var(--bad); }
+  .callout.note { border-left-color: var(--warn); }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .pull { font-size: clamp(1.25rem, 3.4vw, 1.5rem); line-height: 1.35; color: var(--ink);
+          border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+          padding: 1.5rem 0; margin: 2.8rem 0; font-weight: 620; letter-spacing: -0.015em; }
+
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 34rem; }
+  th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: var(--mono); font-size: .72rem; text-transform: uppercase;
+       letter-spacing: .08em; color: var(--muted); font-weight: 500; }
+  td code { font-family: var(--mono); font-size: .85em; }
+  .tag { font-family: var(--mono); font-size: .68rem; text-transform: uppercase;
+         letter-spacing: .06em; padding: .12rem .45rem; border-radius: 4px; white-space: nowrap; }
+  .tag.a { color: var(--good); background: color-mix(in srgb, var(--good) 14%, transparent); }
+  .tag.b { color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+  .tag.c { color: var(--muted); background: color-mix(in srgb, var(--muted) 14%, transparent); }
+
+  pre.code {
+    background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 1rem 1.1rem; overflow-x: auto;
+    font-family: var(--mono); font-size: .82rem; line-height: 1.6; margin: 1.7rem 0;
+  }
+  pre.code .c  { color: var(--muted); }
+  pre.code .k  { color: var(--accent-2); }
+  pre.code .s  { color: var(--good); }
+  pre.out { border-left-color: var(--muted); font-size: .78rem; white-space: pre; }
+
+  details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+            padding: .8rem 1rem; margin: 1.6rem 0; }
+  details > summary { cursor: pointer; font-family: var(--mono); font-size: .8rem;
+                      color: var(--accent-2); letter-spacing: .02em; }
+  details[open] > summary { margin-bottom: .8rem; color: var(--muted); }
+  details pre.code { margin: .6rem 0 .2rem; }
+
+  /* Mermaid sizes its SVG to the container, and a .bleed container makes a
+     seven-node flowchart 1,400px tall. Cap it and centre it. */
+  pre.mermaid { background: none; border: 0; margin: 0; text-align: center; }
+  pre.mermaid svg { margin-inline: auto; }
+
+  .scene-controls { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: center; margin: .9rem 0 0; }
+  .scene-controls button {
+    font-family: var(--mono); font-size: .76rem; letter-spacing: .04em;
+    background: var(--surface); color: var(--muted); border: 1px solid var(--line);
+    border-radius: 999px; padding: .4rem .9rem; cursor: pointer;
+  }
+  .scene-controls button[aria-pressed="true"] { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+  .legend { display: flex; gap: 1.1rem; flex-wrap: wrap; justify-content: center;
+            font-family: var(--mono); font-size: .74rem; color: var(--muted); margin-top: .8rem; }
+  .legend i { display: inline-block; width: .65rem; height: .65rem; border-radius: 2px; margin-right: .35rem; }
+
+  hr.rule { border: 0; border-top: 1px solid var(--line); margin: 3.5rem 0; }
+  footer.wrap { color: var(--muted); font-size: .85rem; padding-bottom: 5rem; }
+  footer.wrap code { font-family: var(--mono); font-size: .95em; }
+
+  .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+  <header class="wrap" style="padding-top:4rem">
+    <p class="byline">Devlog &middot; 2026-08-04 &middot; v0.0.1</p>
+    <h1>The second book is cheap. The second novel isn't.</h1>
+    <p class="dek">A 5,355-line tool carried <em>Surviving the Singularity</em> to 92,778 words, 2,076 addressable blocks, 1,330 traced claims and four output formats. Not one line of it writes prose. Here is what actually ports to the next book, measured command by command.</p>
+  </header>
+
+  <div class="wrap">
+
+    <div class="stats">
+      <a class="stat" href="#rig"><b>5,355</b><span>lines in <code>sts.py</code>, stdlib only</span></a>
+      <a class="stat" href="#rig"><b>22</b><span>commands, zero that write prose</span></a>
+      <a class="stat" href="#addressing"><b>2,076</b><span>individually addressable blocks</span></a>
+      <a class="stat" href="#claims"><b>1,330</b><span>claims with a chain of custody</span></a>
+      <a class="stat" href="#ports"><b>65%</b><span>of the tool ports to any book</span></a>
+      <a class="stat" href="#cliff"><b>64%</b><span>of the claim surface dies in fiction</span></a>
+    </div>
+
+    <div class="tldr">
+      <h2>The short version</h2>
+      <p>The system is not a writing system. It is an <strong>accountability harness</strong>, and its value on the next book scales with how many falsifiable claims that book makes. Roughly two thirds of the tooling ports to any long document unchanged. The remaining third is verification machinery that only earns its keep when the text asserts things about the world.</p>
+      <p>So: a second work of argued nonfiction reuses almost everything. A novel reuses the plumbing and loses the point. And in both cases the expensive part, the 92,778 words, is untouched.</p>
+    </div>
+
+    <h2>Four numbers, all correct</h2>
+
+    <p>Ask this project how long the book is and you get four answers, depending on which instrument you use.</p>
+  </div>
+
+  <figure class="bleed">
+    <div class="scroll-x">
+      <svg viewBox="0 0 700 250" role="img" style="min-width:600px"
+           aria-label="Four word counts for the same book: 92,778 by the block index, 92,843 by the section walker, 94,222 by the claim scanner, 100,887 by raw wc -w">
+        <g font-family="var(--mono)" font-size="12">
+          <line x1="215" y1="18" x2="215" y2="205" stroke="var(--line)"/>
+
+          <text x="205" y="46" text-anchor="end" fill="var(--ink)">block index</text>
+          <rect x="215" y="32" height="20" rx="3" fill="var(--accent-2)" width="0">
+            <animate attributeName="width" to="386" dur="1s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="613" y="46" fill="var(--muted)">92,778</text>
+
+          <text x="205" y="90" text-anchor="end" fill="var(--ink)">section walker</text>
+          <rect x="215" y="76" height="20" rx="3" fill="var(--accent-2)" width="0">
+            <animate attributeName="width" to="386" dur="1s" begin="0.12s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="613" y="90" fill="var(--muted)">92,843</text>
+
+          <text x="205" y="134" text-anchor="end" fill="var(--ink)">claim scanner</text>
+          <rect x="215" y="120" height="20" rx="3" fill="var(--accent)" width="0">
+            <animate attributeName="width" to="392" dur="1s" begin="0.24s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="619" y="134" fill="var(--muted)">94,222</text>
+
+          <text x="205" y="178" text-anchor="end" fill="var(--ink)">raw wc -w</text>
+          <rect x="215" y="164" height="20" rx="3" fill="var(--bad)" width="0">
+            <animate attributeName="width" to="420" dur="1s" begin="0.36s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="647" y="178" fill="var(--muted)">100,887</text>
+
+          <text x="215" y="232" fill="var(--muted)" font-size="11">Bars are linear from a zero baseline at 0 words. Widths are scaled, not truncated.</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>The same manuscript, four instruments. The spread is not error. It is the instruments disagreeing about what counts as the book.</figcaption>
+  </figure>
+
+  <div class="wrap">
+    <p>The block index counts words inside parsed blocks. The section walker counts what <code>book.json</code> declares to be sections. The claim scanner reads the section files whole, so it picks up markup the parser drops. And <code>wc -w</code> on <code>src/lib/data/book/*.md</code> returns 100,887 because three markdown files live in the book directory and are not the book: the README, the voice guide, and a narrative protocol document.</p>
+
+    <p>That last one is the interesting failure. Thirty-three <code>.md</code> files sit in the source directory. Thirty of them are the book. The difference is not enforced by the filesystem, by a naming convention, or by anyone's memory. It is enforced by one file.</p>
+
+    <div class="callout">
+      <p><strong>The gate:</strong> a markdown file in the book directory is not in the book until <code>book.json</code> lists it. There are ten files named <code>book.json</code> across this machine's repositories. Exactly one of them is canonical. The system's job is not to prevent the other nine. It is to make the question "which one is real" have an answer.</p>
+    </div>
+
+    <h2 id="rig">What the rig actually is</h2>
+
+    <p>Twenty-two commands, one Python file, standard library only, no dependencies. It finds its own repository root and refuses to run if it cannot.</p>
+  </div>
+
+  <div class="wrap">
+<pre class="code"><span class="k">def</span> repo_root() -&gt; Path:
+    here = Path(__file__).resolve()
+    <span class="k">for</span> parent <span class="k">in</span> here.parents:
+        <span class="k">if</span> (parent / <span class="s">"svelte.config.js"</span>).exists():
+            <span class="k">return</span> parent
+    sys.exit(<span class="s">"sts.py: could not locate repo root (no svelte.config.js above me)"</span>)</pre>
+
+    <p>Read that again, because it is the first portability constraint and it is four lines long. The book tooling locates itself by looking for a <em>SvelteKit config file</em>. The manuscript machinery is anchored to the website's build system. Nothing about counting words in a chapter requires SvelteKit. It requires it anyway, because that is what was in the room when the function was written.</p>
+
+    <p>Here is the more surprising number. Search the whole 5,355-line file for the book's own title and you find four occurrences. One in the help text, one in a version banner, two in generated credits. The tool barely knows what book it is operating on.</p>
+  </div>
+
+  <figure class="bleed">
+    <div class="scroll-x">
+      <svg viewBox="0 0 740 300" role="img" style="min-width:640px"
+           aria-label="The source-to-output pipeline: 33 markdown files pass through the book.json gate to 30 sections, then to a block index of 2,076 blocks, a verification pass, and four outputs">
+        <defs>
+          <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--line)"/>
+          </marker>
+        </defs>
+        <g font-family="var(--mono)" font-size="11.5">
+
+          <path d="M126 84 H182" stroke="var(--line)" stroke-width="1.6" marker-end="url(#arw)"/>
+          <path d="M300 84 H356" stroke="var(--line)" stroke-width="1.6" marker-end="url(#arw)"/>
+          <path d="M474 84 H530" stroke="var(--line)" stroke-width="1.6" marker-end="url(#arw)"/>
+          <path d="M415 116 V172 H184" stroke="var(--line)" stroke-width="1.6" fill="none" marker-end="url(#arw)"/>
+
+          <path id="spine" d="M20 84 H126 M182 84 H300 M356 84 H474 M530 84 H720"
+                fill="none" stroke="none"/>
+          <path d="M20 250 H720" fill="none" stroke="var(--accent)" stroke-width="2.5"
+                stroke-dasharray="700" stroke-dashoffset="700" opacity="0.55">
+            <animate attributeName="stroke-dashoffset" from="700" to="0" dur="2.2s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </path>
+
+          <g opacity="0">
+            <animate attributeName="opacity" to="1" dur="0.4s" begin="0.15s" fill="freeze"/>
+            <rect x="20" y="58" width="106" height="52" rx="8" fill="var(--surface)" stroke="var(--line)"/>
+            <text x="73" y="80" text-anchor="middle" fill="var(--ink)">33 .md</text>
+            <text x="73" y="96" text-anchor="middle" fill="var(--muted)" font-size="10">source</text>
+          </g>
+
+          <g opacity="0">
+            <animate attributeName="opacity" to="1" dur="0.4s" begin="0.55s" fill="freeze"/>
+            <rect x="182" y="58" width="118" height="52" rx="8" fill="var(--surface)" stroke="var(--accent)"/>
+            <text x="241" y="80" text-anchor="middle" fill="var(--accent)">book.json</text>
+            <text x="241" y="96" text-anchor="middle" fill="var(--muted)" font-size="10">the gate: 30 pass</text>
+          </g>
+
+          <g opacity="0">
+            <animate attributeName="opacity" to="1" dur="0.4s" begin="0.95s" fill="freeze"/>
+            <rect x="356" y="58" width="118" height="52" rx="8" fill="var(--surface)" stroke="var(--line)"/>
+            <text x="415" y="80" text-anchor="middle" fill="var(--ink)">block index</text>
+            <text x="415" y="96" text-anchor="middle" fill="var(--muted)" font-size="10">2,076 ids</text>
+          </g>
+
+          <g opacity="0">
+            <animate attributeName="opacity" to="1" dur="0.4s" begin="1.35s" fill="freeze"/>
+            <rect x="530" y="58" width="190" height="52" rx="8" fill="var(--surface)" stroke="var(--line)"/>
+            <text x="625" y="80" text-anchor="middle" fill="var(--ink)">epub &middot; pdf &middot; site &middot; draft</text>
+            <text x="625" y="96" text-anchor="middle" fill="var(--muted)" font-size="10">generated, never edited</text>
+          </g>
+
+          <g opacity="0">
+            <animate attributeName="opacity" to="1" dur="0.4s" begin="1.75s" fill="freeze"/>
+            <rect x="20" y="146" width="164" height="52" rx="8" fill="var(--surface)" stroke="var(--accent-2)"/>
+            <text x="102" y="168" text-anchor="middle" fill="var(--accent-2)">verify + factcheck</text>
+            <text x="102" y="184" text-anchor="middle" fill="var(--muted)" font-size="10">1,330 claims</text>
+          </g>
+
+          <g opacity="0">
+            <animate attributeName="opacity" to="1" dur="0.5s" begin="2.2s" fill="freeze"/>
+            <text x="20" y="238" fill="var(--muted)" font-size="10.5">one direction only: fix the source, rebuild the outputs, never the reverse</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <figcaption>The pipeline. Every arrow points away from the source. The three markdown files that never reach the gate are the reason the gate exists.</figcaption>
+  </figure>
+
+  <div class="wrap">
+    <h3 id="addressing">The part that is genuinely novel</h3>
+
+    <p>Most manuscript tooling stops at "count the words". This one assigns every paragraph, heading, list and block quote a stable identifier, held in a sidecar index next to the prose rather than inside it.</p>
+
+<pre class="code out"><span class="c">id_scheme:</span> sts.&lt;section_id&gt;.b&lt;NNNN&gt;   <span class="c"># b = block, 4-digit monotonic ordinal</span>
+<span class="c">totals:</span>   {'sections': 30, 'blocks': 2076, 'words': 92778}
+
+{"id": "sts.part-1.b0001", "type": "heading", "lines": [1, 1],
+ "words": 6, "hash": "d1b073b7bce8", "preview": "# Part I: What is the Singularity?"}</pre>
+
+    <p>Each entry carries a line span and a content hash. That combination is what makes a book programmatically editable without a word processor: an agent can fetch block <code>sts.chapter7.b0042</code>, rewrite it, and put it back, and the hash tells you whether anyone else moved it in the meantime. The markdown source stays clean, so building the index is not a content change.</p>
+
+    <p>The word "tombstones" appears in the index schema, one field per section. Blocks that were deleted leave a marker. The index remembers that something used to be there.</p>
+
+    <div class="callout note">
+      <p><strong>Why this matters for book two:</strong> this is the single most transferable thing in the repository, and it has no idea what the book is about. It parses markdown and emits ordinals. It would work on a cookbook.</p>
+    </div>
+
+    <h2 id="claims">The verification half</h2>
+
+    <p>The other job the rig does is refuse to take the book's word for anything.</p>
+
+<pre class="code out">factcheck  1,330 claims across 30 sections (94,222 words)
+  network: ON from .factcheck-cache/. 224 of 253 URL claims resolved, 29 with no record.
+    BLOCKED 24  LIVE_CONFIRMED 168  LIVE_UNCONFIRMED 13  LIVE_UNVERIFIED 18  WALLED 1
+    Only LIVE_CONFIRMED counts as SUPPORTED. A refusal is not a failure of the citation.
+
+  by verdict
+    UNCHECKED             679
+    SUPPORTED             455
+    UNCHECKABLE           193
+    PARTIAL                 3
+
+  git receipts
+    origin_exact           21 file(s)
+    local_only              8 file(s)
+    uncommitted             1 file(s)
+    resolvable links      626 of 1330 claims</pre>
+
+    <p>Note what that output refuses to do. It does not report a score. It reports 679 claims as <strong>UNCHECKED</strong> and puts that number first, above the 455 it can support. It distinguishes a citation that returned a 200 from a citation whose cited title actually appears on the page. It separates a server that blocked the checker from a source that is dead, on the grounds that a refusal is not a failure of the citation.</p>
+
+    <p>And it tracks git receipts: for each claim, whether the file carrying it exists at origin exactly as committed, exists only locally, or is sitting uncommitted in the working tree. One file was uncommitted when I ran it. That is the harness telling on the author.</p>
+
+    <p class="pull">A book that says "trust me" and a book that says "679 of my claims are unchecked" are not the same object, and the second one is more trustworthy.</p>
+
+    <p>Alongside it, <code>verify</code> recomputes every calculation the book shows a reader, checks the subtitle and the price for drift between the site and the built files, and audits the internal precedent ledger. That last check contains the sharpest line of commentary in the codebase:</p>
+
+<pre class="code"><span class="c"># How many Precedents the Ledger is supposed to contain. Asserted here on</span>
+<span class="c"># purpose rather than counted from Appendix D: the whole point of the check</span>
+<span class="c"># is to compare the chapters against an independent number, and deriving it</span>
+<span class="c"># from the index would make the comparison a tautology.</span>
+LEDGER_SIZE = 23</pre>
+
+    <p>A hand-asserted constant, with a paragraph defending why it is not derived. This is a checker that was built by someone who understood that a check computed from the thing it checks is not a check. It is also, precisely because of that, the least portable line in the file.</p>
+
+    <h2 id="ports">So what ports?</h2>
+
+    <p>I classified all 24 command functions by what they would need in order to run on a different book. The unit is lines of implementation, which is a crude proxy for effort but an honest one, since I did not want to grade my own estimate of difficulty.</p>
+  </div>
+
+  <figure class="bleed">
+    <div class="scroll-x">
+      <svg viewBox="0 0 720 210" role="img" style="min-width:620px"
+           aria-label="Portability of 5,162 lines of command code: 3,345 lines port unchanged, 1,040 lines need retuning per book, 777 lines are site and commerce plumbing">
+        <g font-family="var(--mono)" font-size="12">
+          <line x1="200" y1="20" x2="200" y2="160" stroke="var(--line)"/>
+
+          <text x="190" y="48" text-anchor="end" fill="var(--ink)">ports unchanged</text>
+          <rect x="200" y="34" height="22" rx="3" fill="var(--good)" width="0">
+            <animate attributeName="width" to="435" dur="1.1s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="646" y="49" fill="var(--muted)">3,345</text>
+          <text x="200" y="70" fill="var(--muted)" font-size="10">scan, refs, flow, backup, quotes, book, id, compile, art, cover, images, research, bundle</text>
+
+          <text x="190" y="103" text-anchor="end" fill="var(--ink)">needs retuning</text>
+          <rect x="200" y="89" height="22" rx="3" fill="var(--accent)" width="0">
+            <animate attributeName="width" to="135" dur="1.1s" begin="0.15s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="346" y="104" fill="var(--muted)">1,040</text>
+          <text x="200" y="125" fill="var(--muted)" font-size="10">verify, factcheck</text>
+
+          <text x="190" y="158" text-anchor="end" fill="var(--ink)">site plumbing</text>
+          <rect x="200" y="144" height="22" rx="3" fill="var(--muted)" width="0">
+            <animate attributeName="width" to="101" dur="1.1s" begin="0.3s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="312" y="159" fill="var(--muted)">777</text>
+          <text x="200" y="180" fill="var(--muted)" font-size="10">og, audit, schema, sitemap, status, stripe, live, routes</text>
+
+          <text x="200" y="200" fill="var(--muted)" font-size="10.5">Linear from zero. 5,162 lines total across 24 command functions.</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>Portability by implementation lines. Just under two thirds of the tooling does not know or care which book it is reading.</figcaption>
+  </figure>
+
+  <div class="bleed">
+    <div class="scroll-x">
+      <table>
+        <thead>
+          <tr><th>Command</th><th>Lines</th><th>Verdict</th><th>What it would need</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>scan</code></td><td>694</td><td><span class="tag a">ports</span></td><td>Nothing. Pull-quote candidates, walls of text and heading deserts are properties of prose, not of subject.</td></tr>
+          <tr><td><code>verify</code></td><td>669</td><td><span class="tag b">retune</span></td><td>Math and drift checks port. The precedent ledger is one book's invariant and must be replaced or deleted.</td></tr>
+          <tr><td><code>refs</code></td><td>417</td><td><span class="tag a">ports</span></td><td>Nothing. Dangling cross-references are dangling in any genre.</td></tr>
+          <tr><td><code>flow</code></td><td>414</td><td><span class="tag a">ports</span></td><td>Nothing. Figure export keyed on alt text.</td></tr>
+          <tr><td><code>backup</code></td><td>397</td><td><span class="tag a">ports</span></td><td>Nothing.</td></tr>
+          <tr><td><code>quotes</code></td><td>394</td><td><span class="tag a">ports</span></td><td>A new epigraph JSON. The injection machinery is generic.</td></tr>
+          <tr><td><code>factcheck</code></td><td>371</td><td><span class="tag b">retune</span></td><td>Claim extractors are generic; the triage thresholds were tuned against one book's density.</td></tr>
+          <tr><td><code>book</code></td><td>249</td><td><span class="tag a">ports</span></td><td>Nothing.</td></tr>
+          <tr><td><code>og</code></td><td>240</td><td><span class="tag c">site</span></td><td>New card data. Ports to any site, not specifically to any book.</td></tr>
+          <tr><td><code>id</code></td><td>239</td><td><span class="tag a">ports</span></td><td>An id prefix. Everything else is markdown parsing.</td></tr>
+          <tr><td><code>audit</code></td><td>188</td><td><span class="tag c">site</span></td><td>Requires SvelteKit route conventions.</td></tr>
+          <tr><td><code>compile</code></td><td>142</td><td><span class="tag a">ports</span></td><td>Nothing.</td></tr>
+          <tr><td><code>schema</code>, <code>bundle</code></td><td>250</td><td><span class="tag c">site</span></td><td>Supabase migrations and download bundles. Infrastructure, not manuscript.</td></tr>
+          <tr><td><code>art</code>, <code>cover</code>, <code>images</code>, <code>research</code></td><td>274</td><td><span class="tag a">ports</span></td><td>New catalogs. Mechanisms are data-driven already.</td></tr>
+          <tr><td><code>sitemap</code>, <code>status</code>, <code>stripe</code>, <code>live</code>, <code>routes</code></td><td>194</td><td><span class="tag c">site</span></td><td>Deployment and commerce. Ports to the next SvelteKit site, book or not.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="max-width:var(--max);margin:1rem auto 0;padding:0 1.25rem;font-size:.87rem;color:var(--muted)">Classification is mine, from reading each function. The line counts are measured; the verdicts are judgment.</p>
+  </div>
+
+  <div class="wrap">
+    <h2 id="cliff">The genre cliff</h2>
+
+    <p>Here is where the answer stops being "fork it and swap the markdown".</p>
+
+    <p>The verification third of the rig, the expensive third, the part that took the most thought, only functions on text that asserts things about the world. Break the 1,330 traced claims down by type and you can see exactly how much of that machinery a novel would inherit.</p>
+  </div>
+
+  <figure class="bleed">
+    <div class="scroll-x">
+      <svg viewBox="0 0 720 320" role="img" style="min-width:620px"
+           aria-label="1,330 claims by type. Attribution 291, dated event 254, url 253, internal cross-reference 204, causal claim 193, image 86, statistic 49. Only internal cross-references and images survive in fiction.">
+        <g font-family="var(--mono)" font-size="12">
+          <line x1="190" y1="20" x2="190" y2="248" stroke="var(--line)"/>
+
+          <text x="180" y="42" text-anchor="end" fill="var(--ink)">attribution</text>
+          <rect x="190" y="28" height="20" rx="3" fill="var(--bad)" width="0">
+            <animate attributeName="width" to="291" dur="1s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="492" y="43" fill="var(--muted)">291</text>
+
+          <text x="180" y="78" text-anchor="end" fill="var(--ink)">dated_event</text>
+          <rect x="190" y="64" height="20" rx="3" fill="var(--bad)" width="0">
+            <animate attributeName="width" to="254" dur="1s" begin="0.08s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="455" y="79" fill="var(--muted)">254</text>
+
+          <text x="180" y="114" text-anchor="end" fill="var(--ink)">url</text>
+          <rect x="190" y="100" height="20" rx="3" fill="var(--bad)" width="0">
+            <animate attributeName="width" to="253" dur="1s" begin="0.16s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="454" y="115" fill="var(--muted)">253</text>
+
+          <text x="180" y="150" text-anchor="end" fill="var(--ink)">internal_xref</text>
+          <rect x="190" y="136" height="20" rx="3" fill="var(--good)" width="0">
+            <animate attributeName="width" to="204" dur="1s" begin="0.24s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="405" y="151" fill="var(--muted)">204</text>
+
+          <text x="180" y="186" text-anchor="end" fill="var(--ink)">causal_claim</text>
+          <rect x="190" y="172" height="20" rx="3" fill="var(--accent)" width="0">
+            <animate attributeName="width" to="193" dur="1s" begin="0.32s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="394" y="187" fill="var(--muted)">193</text>
+
+          <text x="180" y="222" text-anchor="end" fill="var(--ink)">image</text>
+          <rect x="190" y="208" height="20" rx="3" fill="var(--good)" width="0">
+            <animate attributeName="width" to="86" dur="1s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="287" y="223" fill="var(--muted)">86</text>
+
+          <text x="180" y="258" text-anchor="end" fill="var(--ink)">statistic</text>
+          <rect x="190" y="244" height="20" rx="3" fill="var(--bad)" width="0">
+            <animate attributeName="width" to="49" dur="1s" begin="0.48s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1" keyTimes="0;1"/>
+          </rect>
+          <text x="250" y="259" fill="var(--muted)">49</text>
+
+          <g font-size="11">
+            <rect x="190" y="282" width="11" height="11" rx="2" fill="var(--bad)"/>
+            <text x="208" y="292" fill="var(--muted)">no fiction analogue (847, 64%)</text>
+            <rect x="440" y="282" width="11" height="11" rx="2" fill="var(--good)"/>
+            <text x="458" y="292" fill="var(--muted)">survives (290, 22%)</text>
+            <rect x="190" y="302" width="11" height="11" rx="2" fill="var(--accent)"/>
+            <text x="208" y="312" fill="var(--muted)">judgment call, no world to check against (193)</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <figcaption>Claim types from a real run. Bars are counts from a zero baseline. The colour split is my classification, not the tool's: the harness has no concept of genre.</figcaption>
+  </figure>
+
+  <div class="wrap">
+    <p>A novel cites nobody, dates nothing against the record, links to no sources and quotes no statistics. That is 847 of 1,330 claims, 64 percent of the traced surface, with nothing on the other end of the trace. What survives is internal cross-references, which become continuity checks and are genuinely valuable, and image claims, which become figure bookkeeping.</p>
+
+    <p>Causal claims are the interesting middle. A novel makes them constantly and none of them are checkable against the world, because the world in question does not exist. You would want a different harness there: not "is this true" but "is this consistent with what chapter four established". Same shape, entirely different backend.</p>
+
+    <div class="callout warn">
+      <p><strong>The honest limit of this whole evaluation:</strong> no second book has been built on this system. Not one. I checked every book-shaped project on the machine and found none of them running this pipeline. Everything below the line "what ports" is a forecast derived from reading the code, not an observation of it happening. A forecast from a careful reading is worth something. It is not worth what a second book would be worth.</p>
+    </div>
+
+    <h2>The part that cannot be copied at all</h2>
+
+    <p>The voice guide is 70-plus lines of specific instruction about how this book sounds. Three registers with named borders: the Argument, the Narrative, the Field Manual. Each rule followed by a real line lifted from the shipped prose so you can hear the target rather than infer it.</p>
+
+    <p>It opens by explaining what it replaced:</p>
+
+    <div class="callout">
+      <p>"This replaced <code>WRITING_CHECKLIST.md</code>, which was blog-era guidance (emoji headers, a 30% humor quota, 'Buckle up, buttercup' transitions) predating the v0.6.x techno-optimist turn and the v0.7.1 wake-up-call turn. <strong>Following the old checklist literally produced the wrong book.</strong>"</p>
+    </div>
+
+    <p>That sentence is the most important thing in the repository, and it is a warning aimed directly at anyone planning to fork this for a second book. The old guide was not vague or badly written. It was specific, actionable, and wrong, and being specific is exactly what made it dangerous. An agent following it produced prose that was confidently off-target.</p>
+
+    <p>The current guide is right because it was <em>written against shipped prose rather than against intent</em>. Which creates the bootstrapping problem: you cannot write book two's voice guide until book two has a voice, and the voice emerges from writing. There is no shortcut. Inheriting the StS guide would hand book two the wrong three registers with total confidence.</p>
+
+    <p class="pull">Every generic thing in this system ports for free. Every specific thing has to be re-earned. And the specific things are the ones that made the book good.</p>
+
+    <h2>Does your command port? A decision procedure</h2>
+
+    <p>If you are forking this, run each command through three questions in order. The answer to the first one that fires is the answer.</p>
+  </div>
+
+  <figure class="bleed">
+    <pre class="mermaid">
+flowchart LR
+    A[A command<br/>from sts.py] --> B{Reads only the<br/>manuscript and<br/>its index?}
+    B -- yes --> C[Ports as-is<br/>3,345 lines]
+    B -- no --> D{Asserts an<br/>invariant specific<br/>to one book?}
+    D -- yes --> E[Retune or delete<br/>1,040 lines]
+    D -- no --> F{Touches routes,<br/>Supabase<br/>or Stripe?}
+    F -- yes --> G[Ports to the next<br/>SvelteKit site<br/>777 lines]
+    F -- no --> H[Re-read it. You<br/>missed a coupling]
+    </pre>
+    <figcaption>The third branch is the one people get wrong. Site plumbing feels project-specific and is actually the most reusable code in the repository, as long as the next project is also SvelteKit.</figcaption>
+  </figure>
+
+  <div class="wrap">
+    <h2>The stack, and what falls off it</h2>
+
+    <p>Toggle the scene below between a nonfiction target and a fiction target. The blocks are the command families, sized by implementation lines. Watch what happens to the middle stratum when the book stops making checkable claims.</p>
+  </div>
+
+  <figure class="bleed">
+    <canvas id="scene" style="width:100%;aspect-ratio:16/9;display:block;border-radius:12px;border:1px solid var(--line)"></canvas>
+    <div class="scene-controls">
+      <button id="btn-nonfic" aria-pressed="true">nonfiction target</button>
+      <button id="btn-fic" aria-pressed="false">fiction target</button>
+    </div>
+    <div class="legend">
+      <span><i style="background:#34d399"></i>manuscript layer, ports</span>
+      <span><i style="background:#f59e0b"></i>verification layer, conditional</span>
+      <span><i style="background:#7c8798"></i>site layer, SvelteKit-bound</span>
+    </div>
+    <figcaption>Drag to orbit. Block volume is proportional to implementation lines. On the fiction target the verification stratum thins to the checks that survive without a world to check against.</figcaption>
+  </figure>
+
+  <div class="wrap">
+    <h2>The answer</h2>
+
+    <p>Split it by what you are actually asking.</p>
+
+    <h3>Another argued nonfiction book, same author, same site</h3>
+    <p>The plumbing is close to free. Fork the repository, replace 30 markdown files and the seven top-level keys of <code>book.json</code>, delete or replace <code>LEDGER_SIZE</code> and its ledger checks, point Stripe at a new product, and 3,345 lines of manuscript tooling start working immediately on prose they have never seen. The block index rebuilds itself. Then you write 90,000 words, which is the entire cost and always was.</p>
+
+    <h3>A novel</h3>
+    <p>Same plumbing, and about a third of the rig becomes dead weight you are maintaining for nothing. <code>scan</code>, <code>id</code>, <code>compile</code>, <code>refs</code>, <code>flow</code>, <code>backup</code>, <code>quotes</code> are all still excellent. <code>verify math</code> has no calculations to recompute. <code>factcheck</code> loses 64 percent of its claim surface. You would be better served building the fiction equivalent, a continuity harness over the same block index, than porting the fact harness and watching it report zero.</p>
+
+    <h3>A different author</h3>
+    <p>Everything above, plus the voice guide has to be re-derived from scratch, and it cannot be derived until there is prose to derive it from. Budget for writing a substantial chunk of book two badly, then writing the guide against what that chunk revealed, then rewriting the chunk. The StS guide names that exact sequence as the thing that went right.</p>
+
+    <hr class="rule">
+
+    <h2>What to take from this</h2>
+
+    <p>The instinct when a project goes well is to package the tooling and reuse it. That instinct is correct and it under-describes what happened here. The 5,355 lines are not the achievement. They are the residue of noticing, 611 commits deep, which things had gone wrong often enough to be worth mechanizing.</p>
+
+    <p>What generalizes is not the file. It is three habits the file encodes, and you can adopt all three tomorrow on a project that has no Python in it at all.</p>
+
+    <p><strong>Name the canonical copy and make everything else generated.</strong> Ten <code>book.json</code> files exist. The system does not prevent that. It makes exactly one of them load-bearing and treats the rest as output, so the question "which is real" has an answer instead of an argument.</p>
+
+    <p><strong>Give the long document addresses.</strong> 2,076 stable block ids with content hashes are what turn a manuscript from a thing you open into a thing you can operate on. This is the highest-leverage and least-copied idea in the repository.</p>
+
+    <p><strong>Report the unchecked count first.</strong> 679 UNCHECKED above 455 SUPPORTED. A harness that leads with its own coverage gap is one you can trust the rest of. A harness that leads with a green score is a harness nobody has ever watched fail.</p>
+
+    <p>And the finding that started this: not one of the 22 commands writes a sentence. The system's entire contribution to a 92,778-word book was making it impossible to lose track of what the book said. That contribution is large, it is real, and it scales precisely with how much the book is willing to be checked.</p>
+
+  </div>
+
+  <div class="wrap">
+    <h2>Evidence</h2>
+    <p style="color:var(--muted);font-size:.92rem">Every number above came from a command run against the working tree on 2026-08-04. Raw output below, transcribed exactly, including one line whose punctuation the house style rule would otherwise forbid. Doctoring quoted output to satisfy a style rule, in a post about not doctoring evidence, is not a trade worth making.</p>
+
+    <details>
+      <summary>sts.py book: word counts and version</summary>
+<pre class="code out">Surviving the Singularity — v0.7.5.1 — 92,843 words (updated 2026-08-03)
+    1,999  Introduction: The Uncompromising Truth
+    1,197  Preface: Welcome to the Weirdness
+    3,724  Chapter 0: The Demonstration
+       40  Part I: What is the Singularity?
+    5,082  Chapter 1: The Event Horizon
+    4,318  Chapter 2: The Era of AGI (Stages 1–5)
+    2,450  Chapter 3: The Leap to ASI &amp; the Machine Exodus (Stages 6–7)
+    2,326  Chapter 4: Universal and Multiverse Apex (Stages 8–9)
+    4,286  Chapter 5: The Thermodynamics of Survival
+       56  Part II: How Humans React: The Cooperative Transition
+    2,424  Chapter 6: The Singularity Is a Done Deal
+    ...
+    7,283  Appendix B: Works Cited
+    2,067  Appendix E: The Cyberdeck</pre>
+    </details>
+
+    <details>
+      <summary>Lines per command function: the portability measurement</summary>
+<pre class="code out">   694  cmd_scan          239  cmd_id
+   669  cmd_verify        188  cmd_audit
+   417  cmd_refs          142  cmd_compile
+   414  cmd_flow          125  cmd_schema
+   397  cmd_backup        125  cmd_bundle
+   394  cmd_quotes         98  cmd_art
+   371  cmd_factcheck      73  cmd_cover
+   249  cmd_book           70  cmd_sitemap
+   240  cmd_og             56  cmd_images
+                           47  cmd_research
+                           44  cmd_status
+                           36  cmd_stripe
+                           32  cmd_stripe_live
+                           30  cmd_live
+                           12  cmd_routes
+
+total in cmd_ fns: 5162 of 5355 lines</pre>
+    </details>
+
+    <details>
+      <summary>Coupling counts: how much the tool knows about its own book</summary>
+<pre class="code out">$ grep -c "Surviving the Singularity" scripts/sts.py
+4
+$ grep -c "survivingthesingularity" scripts/sts.py
+8
+$ grep -ci "stripe" scripts/sts.py
+43
+$ grep -ci "supabase" scripts/sts.py
+26
+
+$ find ~/Code -name "book.json" -not -path "*/node_modules/*" | wc -l
+10</pre>
+    </details>
+
+    <details>
+      <summary>Repository history</summary>
+<pre class="code out">$ git log --oneline | wc -l
+611
+$ git log --oneline -- src/lib/data/book/ | wc -l
+80
+$ git log --reverse --format="%ad %s" --date=short | head -1
+2024-03-21 Initial commit
+
+$ ls book-build/
+Surviving-the-Singularity-v0.7.3.epub   (20.7 MB)
+Surviving-the-Singularity-v0.7.3.pdf    (21.9 MB)
+Surviving-the-Singularity-v0.7.4.epub   (22.1 MB)
+Surviving-the-Singularity-v0.7.4.pdf    (23.4 MB)
+Surviving-the-Singularity-v0.7.5.epub   (22.2 MB)
+Surviving-the-Singularity-v0.7.5.pdf    (23.5 MB)</pre>
+    </details>
+
+    <details>
+      <summary>What I did not verify</summary>
+      <p style="margin:.4rem 0 0">No second book has been built on this system, so the portability verdicts are readings of code rather than observations of a port. I did not attempt a fork. I did not run any command against a different manuscript. The line-count classification is measured; the three-way verdict on each command is my judgment from reading the function, and a real port would move some commands between columns. The fiction claim-survival split is my classification applied to real counts, not something the harness computes. The EPUB and PDF file sizes are directory listings, not verified builds.</p>
+    </details>
+  </div>
+
+  <footer class="wrap">
+    <hr class="rule">
+    <p>Measured against <code>~/Code/active/sts-v0.7.3</code> at v0.7.5.1 on 2026-08-04. All figures in this post are SVG generated by hand from those command outputs; no image in this page is a photograph or a generated illustration, so nothing here is decorative evidence. Post version 0.0.1.</p>
+  </footer>
+
+</article>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: dark ? 'dark' : 'neutral',
+    flowchart: { curve: 'basis', htmlLabels: true },
+    securityLevel: 'strict'
+  });
+</script>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const canvas = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(42, 16 / 9, 0.1, 200);
+camera.position.set(5.5, 5.2, 10.5);
+
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.enablePan = false;
+controls.minDistance = 9;
+controls.maxDistance = 26;
+controls.target.set(0, 1.3, 0);
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.7));
+const key = new THREE.DirectionalLight(0xffffff, 1.6);
+key.position.set(6, 10, 6);
+scene.add(key);
+const rim = new THREE.DirectionalLight(0x66aaff, 0.5);
+rim.position.set(-6, 3, -6);
+scene.add(rim);
+
+// Three strata. Width is proportional to implementation lines.
+// survives: does this block still do useful work on a novel?
+const BLOCKS = [
+  // manuscript layer, y = 0
+  { name: 'scan',      lines: 694, layer: 0, color: 0x34d399, survives: true },
+  { name: 'refs',      lines: 417, layer: 0, color: 0x34d399, survives: true },
+  { name: 'flow',      lines: 414, layer: 0, color: 0x34d399, survives: true },
+  { name: 'backup',    lines: 397, layer: 0, color: 0x34d399, survives: true },
+  { name: 'quotes',    lines: 394, layer: 0, color: 0x34d399, survives: true },
+  { name: 'book',      lines: 249, layer: 0, color: 0x34d399, survives: true },
+  { name: 'id',        lines: 239, layer: 0, color: 0x34d399, survives: true },
+  { name: 'compile',   lines: 142, layer: 0, color: 0x34d399, survives: true },
+  { name: 'misc',      lines: 399, layer: 0, color: 0x34d399, survives: true },
+  // verification layer, y = 1
+  { name: 'verify.math',      lines: 300, layer: 1, color: 0xf59e0b, survives: false },
+  { name: 'verify.precedent', lines: 200, layer: 1, color: 0xf59e0b, survives: false },
+  { name: 'verify.refs',      lines: 169, layer: 1, color: 0xf59e0b, survives: true  },
+  { name: 'factcheck.world',  lines: 250, layer: 1, color: 0xf59e0b, survives: false },
+  { name: 'factcheck.xref',   lines: 121, layer: 1, color: 0xf59e0b, survives: true  },
+  // site layer, y = 2
+  { name: 'og',      lines: 240, layer: 2, color: 0x7c8798, survives: true },
+  { name: 'audit',   lines: 188, layer: 2, color: 0x7c8798, survives: true },
+  { name: 'schema',  lines: 125, layer: 2, color: 0x7c8798, survives: true },
+  { name: 'bundle',  lines: 125, layer: 2, color: 0x7c8798, survives: true },
+  { name: 'deploy',  lines: 194, layer: 2, color: 0x7c8798, survives: true },
+];
+
+// The widest stratum is 3,345 lines. At this scale it lands near 10 world
+// units, which is what the camera below is framed to hold. Bumping SCALE
+// without re-framing the camera pushes the manuscript layer off both edges.
+const SCALE = 0.0026;      // lines to world units
+const GAP = 0.11;
+const LAYER_Y = [0, 1.3, 2.6];
+
+const group = new THREE.Group();
+scene.add(group);
+const meshes = [];
+
+for (const layer of [0, 1, 2]) {
+  const items = BLOCKS.filter(b => b.layer === layer);
+  const total = items.reduce((s, b) => s + b.lines * SCALE + GAP, 0);
+  let x = -total / 2;
+  for (const b of items) {
+    const w = b.lines * SCALE;
+    const mesh = new THREE.Mesh(
+      new THREE.BoxGeometry(w, 0.55, 2.6),
+      new THREE.MeshStandardMaterial({
+        color: b.color, roughness: 0.5, metalness: 0.08,
+        transparent: true, opacity: 1
+      })
+    );
+    mesh.position.set(x + w / 2, LAYER_Y[layer], 0);
+    mesh.userData = { ...b, baseY: LAYER_Y[layer] };
+    group.add(mesh);
+    meshes.push(mesh);
+    x += w + GAP;
+  }
+}
+
+// Faint floor plate so the strata read as a stack rather than floating bars.
+const widest = Math.max(...[0, 1, 2].map(l =>
+  BLOCKS.filter(b => b.layer === l).reduce((s, b) => s + b.lines * SCALE + GAP, 0)));
+const plate = new THREE.Mesh(
+  new THREE.BoxGeometry(widest + 0.6, 0.06, 3.1),
+  new THREE.MeshStandardMaterial({ color: 0x2a3242, roughness: 0.9 })
+);
+plate.position.y = -0.62;
+group.add(plate);
+
+let mode = 'nonfic';
+const btnN = document.getElementById('btn-nonfic');
+const btnF = document.getElementById('btn-fic');
+function setMode(m) {
+  mode = m;
+  btnN.setAttribute('aria-pressed', String(m === 'nonfic'));
+  btnF.setAttribute('aria-pressed', String(m === 'fic'));
+}
+btnN.addEventListener('click', () => setMode('nonfic'));
+btnF.addEventListener('click', () => setMode('fic'));
+
+function resize() {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  if (canvas.width !== w || canvas.height !== h) {
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+}
+
+const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+renderer.setAnimationLoop(() => {
+  resize();
+  for (const m of meshes) {
+    const dead = (mode === 'fic' && !m.userData.survives);
+    // Drop clear of the floor plate. A shallower fall leaves ghost shapes
+    // showing through underneath, which reads as a render bug, not as intent.
+    const targetY = m.userData.baseY - (dead ? 5.5 : 0);
+    const targetO = dead ? 0 : 1;
+    m.position.y += (targetY - m.position.y) * 0.08;
+    m.material.opacity += (targetO - m.material.opacity) * 0.08;
+  }
+  if (!still) group.rotation.y += 0.0014;
+  controls.update();
+  renderer.render(scene, camera);
+});
+</script>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('svg').forEach((s) => {
+      if (typeof s.setCurrentTime === 'function') { s.setCurrentTime(6); s.pauseAnimations(); }
+    });
+  }
+</script>
+</body>
+</html>

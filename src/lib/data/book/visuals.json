@@ -1,0 +1,762 @@
+{
+  "schema": "sts-visuals/v1",
+  "edition": "0.10.4",
+  "images": {
+    "v101-cutout-atlas.png": {
+      "layout": "cutout-right",
+      "kind": "cutout",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "v101-cutout-spot.png": {
+      "layout": "cutout-left",
+      "kind": "cutout",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "v101-cutout-printer.png": {
+      "layout": "cutout-right",
+      "kind": "cutout",
+      "pixels": [
+        1184,
+        1328
+      ]
+    },
+    "v101-cutout-sun.png": {
+      "layout": "cutout-left",
+      "kind": "cutout",
+      "pixels": [
+        1283,
+        1226
+      ]
+    },
+    "v101-cutout-tools.png": {
+      "layout": "cutout-right",
+      "kind": "cutout",
+      "pixels": [
+        1150,
+        1368
+      ]
+    },
+    "v101-cutout-rocket.png": {
+      "layout": "cutout-left",
+      "kind": "cutout",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "v101-scene-food-delivery.svg": {
+      "layout": "diagram",
+      "kind": "scene",
+      "pixels": [
+        960,
+        800
+      ],
+      "print": {
+        "file": "print/v101-scene-food-delivery.svg",
+        "source_sha256": "a1f520312ee5ab384b8f6e1d7bf093e78327f89e1052fbd39f2fbf20c4dc140e",
+        "sha256": "74b4eb3cd786b6a62fe86ed0eecc15fe01af4e2c2e5a54cdcd8a16ade94e982b"
+      }
+    },
+    "v101-scene-living-soil.svg": {
+      "layout": "diagram",
+      "kind": "scene",
+      "pixels": [
+        960,
+        800
+      ],
+      "print": {
+        "file": "print/v101-scene-living-soil.svg",
+        "source_sha256": "d397231526eb9f4967a7660301ca71013709c083ce84588ec4c5bb8d164f9dd2",
+        "sha256": "17935101242fe9c5e0e3ccac30be276a50d85c5f558feb17c653d2eb6507ea73"
+      }
+    },
+    "v101-scene-shared-workshop.svg": {
+      "layout": "diagram",
+      "kind": "scene",
+      "pixels": [
+        960,
+        800
+      ],
+      "print": {
+        "file": "print/v101-scene-shared-workshop.svg",
+        "source_sha256": "3aa16701bd12e1d8bc8d1a53a63e58f549ff049eb7e9a7b88ecb83e3629cc876",
+        "sha256": "c9053537b3f90445a676f4874eb6a4b407988125cec33042b512e3d0634485bc"
+      }
+    },
+    "v101-visual-access-gate.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        338
+      ],
+      "print": {
+        "file": "print/v101-visual-access-gate.svg",
+        "source_sha256": "ee3976a62c414e32a169ed8ee4d143a5e3e9bf717ea741d2a386e8c7f66c0e35",
+        "sha256": "474f9f53dde0488f204103cdadd2db2cf20f138956dc7dc784209387c04746af"
+      }
+    },
+    "v101-visual-attention-ribbon.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        352
+      ],
+      "print": {
+        "file": "print/v101-visual-attention-ribbon.svg",
+        "source_sha256": "fcdbdce808fcba2c3cb4a6d7cf6310e0f3803b614d4217fd18cc566e1cc73460",
+        "sha256": "1e121f8a08e43e0fae53aa6e5aa5fb5818a6a1ef484c121dc5a0246b930c5f53"
+      }
+    },
+    "v101-visual-operating-stack.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        397
+      ],
+      "print": {
+        "file": "print/v101-visual-operating-stack.svg",
+        "source_sha256": "37ed8cd8dd2f9b9a8a25165aaaa77fef160c1e9317ca21e08eda6dbc47dd7fe0",
+        "sha256": "3be7eeea868005873ef12c3c7208c774ea6082a2662d5f9d30be2bdde7b0052e"
+      }
+    },
+    "v101-visual-local-copies.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        374
+      ],
+      "print": {
+        "file": "print/v101-visual-local-copies.svg",
+        "source_sha256": "f59fe6f14b961eb1b7d4bb3ff16dd89c691ff95a7adb815823a3bc598a986bb8",
+        "sha256": "49822397475ec5150ff7ea65da3e484b222fb51874eddced7dfad9d3e56fa125"
+      }
+    },
+    "v101-visual-shared-land.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        399
+      ],
+      "print": {
+        "file": "print/v101-visual-shared-land.svg",
+        "source_sha256": "54b2f62555b7a1e623c62233920849ed5fdb29d03fa114a0bcf033cc04d712c5",
+        "sha256": "d1951a179314c8cf3b703979fdfc2160b3c4626dfd877895d245272ba628f8f5"
+      }
+    },
+    "v101-visual-continuity-calendar.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        384
+      ],
+      "print": {
+        "file": "print/v101-visual-continuity-calendar.svg",
+        "source_sha256": "ba70e6c4b7611c260836c9483d3ff97efc7101500a1f1722d798d9277e93233b",
+        "sha256": "889d7cef01b72959d2b791d82132aaae5d8204411d08b17d6367740da8d16631"
+      }
+    },
+    "v101-chart-waste-pathways.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        674.0
+      ],
+      "print": {
+        "file": "print/v101-chart-waste-pathways.svg",
+        "source_sha256": "0429307b4752a784c06a2a461b635073fc50ffe53f3563a44123ef87dcbcfdbc",
+        "sha256": "c191734a13ec7bbd1882a149bbd8a597a839e9cd22d7fef55c3e6ad0b4b1243d"
+      }
+    },
+    "v101-chart-land-values.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        564.0
+      ],
+      "print": {
+        "file": "print/v101-chart-land-values.svg",
+        "source_sha256": "901e3530df715f7fae44f2901175e1e98006853a45d55de947db425c11d4cf46",
+        "sha256": "01b05854aa077ec44879e61bd3679943438c32bc08ce5eef6595236a9224a84a"
+      }
+    },
+    "v101-chart-income-food-access.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        504.0
+      ],
+      "print": {
+        "file": "print/v101-chart-income-food-access.svg",
+        "source_sha256": "a35750d78a8b4deae7770d0f364e7c39f3c074bdd2da197ca4f94264f8364cbd",
+        "sha256": "8a39039eb3ee7f92fcce1f39cec0df834e6650c934aaa1df0bddfcf5114672a5"
+      }
+    },
+    "v101-chart-data-centre-demand.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        562.0
+      ],
+      "print": {
+        "file": "print/v101-chart-data-centre-demand.svg",
+        "source_sha256": "31067186e55140fc31d9a5106e592675e7123332773ca92e2769430a9f5cd811",
+        "sha256": "e20d70acdcd5d17d30326de2e539cb15401372a735c9947623500c7e3c5df62d"
+      }
+    },
+    "v101-chart-forecast-shift.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        554.0
+      ],
+      "print": {
+        "file": "print/v101-chart-forecast-shift.svg",
+        "source_sha256": "f92083133d81252869467d0b84081a23242f5353b3854625e84c3c61440e4f49",
+        "sha256": "f17a1b2b01cb8db0a3eeead18469935260664611ea67a801d2b5283dfd9135c9"
+      }
+    },
+    "v101-chart-ammonia-energy.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        592.0
+      ],
+      "print": {
+        "file": "print/v101-chart-ammonia-energy.svg",
+        "source_sha256": "1c76d0e955d926851e8e27e37cf332738ea7c36d75d51bd81cb33244d2eb47d4",
+        "sha256": "db1df8587058e8c920cbac261a4b90fc4c37e024b4718ebe0c305f08ca2330a3"
+      }
+    },
+    "v101-chart-weights-memory.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        570.0
+      ],
+      "print": {
+        "file": "print/v101-chart-weights-memory.svg",
+        "source_sha256": "61969acc27f2e6a94fa72d7c65a702e4b053e240cc9a8f02d876ff554147c656",
+        "sha256": "2657bb2229747becb13bb2fa9ee96eee5581783b0335b0acfff488504d483a48"
+      }
+    },
+    "v101-chart-meal-response.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480.0,
+        676.0
+      ],
+      "print": {
+        "file": "print/v101-chart-meal-response.svg",
+        "source_sha256": "79648863c02519be44c599b087233ff2b094015f2c8b576be8197995492c30f0",
+        "sha256": "be07cd42e23cb52c03b4763ca937a7e3c71adb6da4598c6924f8a519e64c7817"
+      }
+    },
+    "intro-nine-stages.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        640
+      ],
+      "print": {
+        "file": "print/intro-nine-stages.svg",
+        "source_sha256": "431a84e360f009fd99134877c7281c012f0cb2d83d7a22c60634603830a92655",
+        "sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac"
+      }
+    },
+    "ch02-eighteen-days.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        636
+      ],
+      "print": {
+        "file": "print/ch02-eighteen-days.svg",
+        "source_sha256": "a579b02ab771c23f6b9e41199742efd262c6843e9e4ace1c3f48784d99943235",
+        "sha256": "e197fe6b2a7b4a1bb622821c6a30118a072677ab80ffb8fe7c6cf7d438b5e281"
+      }
+    },
+    "ch05-horses-tractors.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480,
+        650
+      ],
+      "print": {
+        "file": "print/ch05-horses-tractors.svg",
+        "source_sha256": "3c719bd272eed866a71e4b278bf86f93c5ef326b343d3cfd517c0576b2ffbe4c",
+        "sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2"
+      }
+    },
+    "ch06-capability-access.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        548
+      ],
+      "print": {
+        "file": "print/ch06-capability-access.svg",
+        "source_sha256": "0d129784e51e948b36caca6ad34166a1025cc884d76948015af0dee123607a67",
+        "sha256": "835fbea5981ba3135ec49a81abd3cdbbff1d74fcc42905fb8b5ab545a8dec088"
+      }
+    },
+    "ch08-cognitive-extraction.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        542
+      ],
+      "print": {
+        "file": "print/ch08-cognitive-extraction.svg",
+        "source_sha256": "406ffee7ab39d2ba53775aa940e19ac9325eeb4b9948b4ab2945c744e66dc0c9",
+        "sha256": "07cdb4846e81f113aaebb116266cca41d68c5a5c1cb57dd7732e4a72452d1dd4"
+      }
+    },
+    "ch08-focus-recovery.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        457
+      ],
+      "print": {
+        "file": "print/ch08-focus-recovery.svg",
+        "source_sha256": "4a19df52fea817bf1e2f5935495df746b69866cc03b1785e5a3b733df48efd6f",
+        "sha256": "626bb7d8fd6d6eaba363a40740bdbb08bf185490b359099ee4729da188a5a94c"
+      }
+    },
+    "ch08-firewall-pipeline.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        585
+      ],
+      "print": {
+        "file": "print/ch08-firewall-pipeline.svg",
+        "source_sha256": "2412069c23abcea5f167f638a6a4c0698dfeb62d603effe2e2e51dd443459c6c",
+        "sha256": "bce21db24028e1bf29e75da76dde51da9c3cc393ccb7395350bcc6d1106f2ada"
+      }
+    },
+    "ch08-info-architectures.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        607
+      ],
+      "print": {
+        "file": "print/ch08-info-architectures.svg",
+        "source_sha256": "3f51494b754bdf9fac490df82780d81c89a0e1743db0783900ae26a268c4b4f3",
+        "sha256": "b44e3a60851a59e55b59573c660ac023f2d3ef1057ddc09348b4ea0e0adf7d40"
+      }
+    },
+    "ch08-star-vs-mesh.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        616
+      ],
+      "print": {
+        "file": "print/ch08-star-vs-mesh.svg",
+        "source_sha256": "5d7d482a3ab6d1d9e3feea37c9b312898390d6823cee12f9f7c2ec602bef9d6b",
+        "sha256": "dc6d72da19ccc7b894b26b05b650172c7c2f30f15664d0a58b0af99c31b6bd86"
+      }
+    },
+    "intro-food-insecurity.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480,
+        646
+      ],
+      "print": {
+        "file": "print/intro-food-insecurity.svg",
+        "source_sha256": "24cfe5c46899ed2a9509f6deb267fa54c5e9593a524a1f326a1c68dd7ea272b6",
+        "sha256": "d9edaa0782d807968323c5b9c8bcab1d96485b0ec9e7989f0ef8302f77d6c610"
+      }
+    },
+    "ch09-hyperlocal-vs-global.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        588
+      ],
+      "print": {
+        "file": "print/ch09-hyperlocal-vs-global.svg",
+        "source_sha256": "6e7bb65874c9c6d0bf384666f67e595e66e5c85b496794f2433bcc4cd0d1a16c",
+        "sha256": "0ed2e8082eb76daa3e15c210893ef83809f5cf7fb7bcc607f21793c9c2de8ef8"
+      }
+    },
+    "ch09-region-ring.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        624
+      ],
+      "print": {
+        "file": "print/ch09-region-ring.svg",
+        "source_sha256": "e3553bf80c03b543e28af0e681d61caf14e94b5585d4600215c27707684e385f",
+        "sha256": "67081ce5c2201c79c1cea93518a482f896984277b32ff0d2e547189393cf9142"
+      }
+    },
+    "ch09-cnc-bed.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        610
+      ],
+      "print": {
+        "file": "print/ch09-cnc-bed.svg",
+        "source_sha256": "ab194625806be4608a6abf0ec47a15ece4123cdc35a8ee4f8ddc92482935583c",
+        "sha256": "6f00880b34f5f4a1fcbaded17b40c23169448315b20f12aeee1f7ea8428f9d20"
+      }
+    },
+    "ch09-greenhouse-bus.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        650
+      ],
+      "print": {
+        "file": "print/ch09-greenhouse-bus.svg",
+        "source_sha256": "25403083a4e785503e32b61352819f19d8945e0a79df12d358243b77b1edc702",
+        "sha256": "2896db1d01e32508eb6a91e3983c23d3a70ad5e113df3afbf4cc3c52c1370b9f"
+      }
+    },
+    "ch10-model-collapse.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        614
+      ],
+      "print": {
+        "file": "print/ch10-model-collapse.svg",
+        "source_sha256": "9ac0595a04f0aa1de23887c7a667db0b4c8c51994508c7674456f6e34d11eaf0",
+        "sha256": "001c754a94d4f86c7c72f08869e052329ffcbb95913085dfaf1ba10349a24ff3"
+      }
+    },
+    "ch10-algorithm-unlock.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        599
+      ],
+      "print": {
+        "file": "print/ch10-algorithm-unlock.svg",
+        "source_sha256": "254420c3f821561d4dcc95e59d6e8399750aebf56593f64b88a9346754532fa8",
+        "sha256": "e5844fbd5b9e20aee5ec4133abeda31db022b963d60797877dbe7ceca46d75b3"
+      }
+    },
+    "ch11-cooling-loop.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        642
+      ],
+      "print": {
+        "file": "print/ch11-cooling-loop.svg",
+        "source_sha256": "3bc548544d2b9fa6dc3048206eb26906741bcff2f526704e9659e30047355109",
+        "sha256": "1bb47ceaf9d82e54a9fa9209d66e1a0d7828ea2933cb712f96bee181d5a51347"
+      }
+    },
+    "ch13-shell-architecture.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        450
+      ],
+      "print": {
+        "file": "print/ch13-shell-architecture.svg",
+        "source_sha256": "75dc12e15311f34096f695dff52e670265b69af2cfdb55a4e22d7ea140ece51b",
+        "sha256": "c793182a4a2721df0a34fd19d9c4d231cf56f1dd69188386ccca741545c0c86c"
+      }
+    },
+    "ch13-thermal-seal.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        500
+      ],
+      "print": {
+        "file": "print/ch13-thermal-seal.svg",
+        "source_sha256": "26166b01513c2c343469307a356fcb13105638c8ce5abb6fa8fdd303582041ac",
+        "sha256": "751bcdb643a673571e4f588ab901b5d8d6ea94f1b7d8c8b3bbd8fe661305eea3"
+      }
+    },
+    "ch14-mesh-comms.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        540
+      ],
+      "print": {
+        "file": "print/ch14-mesh-comms.svg",
+        "source_sha256": "91da4dd1212653776bb0092974bbfdf6495c0e108377f8880a50ed791e3ec44a",
+        "sha256": "d6e6d0e49979a75da4eb4dd118a59566ec1f5b1497b7c556fa79929039a9c971"
+      }
+    },
+    "ch15-clt-firewall.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        500
+      ],
+      "print": {
+        "file": "print/ch15-clt-firewall.svg",
+        "source_sha256": "8553e9f10e08ad70b2c0bc12b624247d237f57b6c6da633652d0e11e0a87d60a",
+        "sha256": "e634184bb1f3c7a4d29e998b88ccf6d7cebaff6032b36243beb0d0e319f7e114"
+      }
+    },
+    "ch16-sneakernet.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        424
+      ],
+      "print": {
+        "file": "print/ch16-sneakernet.svg",
+        "source_sha256": "4587c0b99cd6cfb02143c1fdd10859c9fad1d26353dd65e2de1e7eba79b51321",
+        "sha256": "3dc040580dd02172202a3cd5c80490fad8a21116f5d5b24fd0ceba29c804d412"
+      }
+    },
+    "ch17-dc-native.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        585
+      ],
+      "print": {
+        "file": "print/ch17-dc-native.svg",
+        "source_sha256": "2f57027bcfc3cd411ba3e5bb6668f6deecb516b006838814e33268d66944642e",
+        "sha256": "09c78b334b709458e53d9d959c65311d73c2525c0b6f7b21e8b1542cd1628078"
+      }
+    },
+    "ch17-fab-lab.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        562
+      ],
+      "print": {
+        "file": "print/ch17-fab-lab.svg",
+        "source_sha256": "012b07d9a089df3c84f81774a465f354be481d7c7745e014e6e2aa4d91bab864",
+        "sha256": "ef3cceaff4775ce5f2263e012d8438ed1fe5baab4477a828b08a0d1e85f233e6"
+      }
+    },
+    "ch18-social-contract.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        535
+      ],
+      "print": {
+        "file": "print/ch18-social-contract.svg",
+        "source_sha256": "05b979825da7006b65f68bea62a33f5806acf94eed751de487d3e83dbf92dc89",
+        "sha256": "718b74c05c0745ac8cf09dca92b1a5177b943bcb720e760b67de5f8ed4425e47"
+      }
+    },
+    "ch19-conversion-ladder.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        646
+      ],
+      "print": {
+        "file": "print/ch19-conversion-ladder.svg",
+        "source_sha256": "764918df8775bf7745e26c53db4145633fe974af6c9d4f768db9694ef291113c",
+        "sha256": "5abb544f56196e1d4fe62b95222f283d8b19a22f4f8ee98524048248dd4155bc"
+      }
+    },
+    "appd-precedent-timeline.svg": {
+      "layout": "diagram",
+      "kind": "chart",
+      "pixels": [
+        480,
+        650
+      ],
+      "print": {
+        "file": "print/appd-precedent-timeline.svg",
+        "source_sha256": "a4971c6a5023232f79c57b9019f759b828a6b7f322743a8ffb0406ee99a178fd",
+        "sha256": "5e7f9129e015a0c7499820b00650b4517eaa39e1c3326dfc5de60de2123eeb53"
+      }
+    },
+    "ch12-csa-network.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        560
+      ],
+      "print": {
+        "file": "print/ch12-csa-network.svg",
+        "source_sha256": "4c1a7206003e0defb43c6bc67158ed2dfc95ba1d9f366efc60b7eb3af18cab71",
+        "sha256": "cc655f7b1b167ffb9ffd9f12c690d8b60d10c11b1d9468aba031fcbf3798df85"
+      }
+    },
+    "ch14-logistic-shockwave.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        552
+      ],
+      "print": {
+        "file": "print/ch14-logistic-shockwave.svg",
+        "source_sha256": "41477ea9a22ad6b44742713cd66a767dcd31cde0bccac7ef2ee27432ad6d241a",
+        "sha256": "2e12005987649d7a8921057bd4bf450fee4e9f7c2def655a6afe4ee0874d4e02"
+      }
+    },
+    "ch15-soil-food-web.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        598
+      ],
+      "print": {
+        "file": "print/ch15-soil-food-web.svg",
+        "source_sha256": "d0d4f8e7e153122e6c8ba513e1eb216d1ad6bf2c0ecdf9b83aef6ce57dcb7f52",
+        "sha256": "5df26993caa8b39275816ae6f4991324dc5a8543f468c1866fc4993409944866"
+      }
+    },
+    "ch17-algae-loop.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        618
+      ],
+      "print": {
+        "file": "print/ch17-algae-loop.svg",
+        "source_sha256": "e3090f6eeaff9fb0bbc86863f32e36d7aaef5f9a9a372540b8698a6ff5bb9392",
+        "sha256": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78"
+      }
+    },
+    "v103-reading-routes.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        376
+      ],
+      "print": {
+        "file": "print/v103-reading-routes.svg",
+        "source_sha256": "2e42c7d6ac4f1988d6646e64315c87deb72d6ebfd8457e9e34c2ebd99ab1bb4d",
+        "sha256": "291fb538492de62b95c5e9726101b78a0ae05cd7b19ce9e61aaaba121249d07c"
+      }
+    },
+    "v103-service-ledger.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        357
+      ],
+      "print": {
+        "file": "print/v103-service-ledger.svg",
+        "source_sha256": "cd371c6d3a61c0b0cf1d73f8dc7d217160870d1ec83221df482bf01318585d98",
+        "sha256": "96e843f945b92c6c936eb729104a66143a5a4fac99b723096c4ae23f9ec0647e"
+      }
+    },
+    "v103-offline-check.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        381
+      ],
+      "print": {
+        "file": "print/v103-offline-check.svg",
+        "source_sha256": "2e7f69921763689d38261690a617e26b3f39fa7fd7f327887fee1a9b9ed0c5dd",
+        "sha256": "24a42ae5c92086ceee428ed0010fdab3b8260a11b56ec61d2d68f61808c78013"
+      }
+    },
+    "v103-first-year-index.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        398
+      ],
+      "print": {
+        "file": "print/v103-first-year-index.svg",
+        "source_sha256": "6683749e7b0c735249f25b84e48b783a23b8c8495a57f007521f97d001eb8484",
+        "sha256": "5fe1a8cbe71d9da92db743aa7ed623841181083764a3a708c842a1f2d76eafda"
+      }
+    },
+    "v103-narrative-bear-flag.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "v103-narrative-near-end.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "v103-narrative-passing-beans.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "v103-narrative-rosa-testimony.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 646" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">FOOD INSECURITY, 2001–2024</title>
+<desc id="desc">Annual shares of US households: food insecurity rose from 11.1 percent in 2007 to 14.6 percent in 2008. In 2024 it was 13.7 percent and very low food security was 5.4 percent. The solid series includes the dashed very-low-food-security series; they must not be added. The shaded 2007 to 2009 period highlights the recession-era change, without assigning causality or exact recession-month boundaries.</desc>
+<rect x="0" y="0" width="480" height="646" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="20" y="32" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">FOOD INSECURITY, 2001–2024</text>
+<path d="M20 48L460 48" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="78" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Share of US households · annual estimates</text>
+<path d="M24 105L50 105" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="62" y="110" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Food insecure during the year</text>
+<path d="M24 133L50 133" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 4" />
+<text x="62" y="138" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Very low food security (a subset)</text>
+<text x="20" y="168" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Shaded: 2007–2009 period</text>
+<rect x="160.8695652173913" y="193" width="32.95652173913044" height="214" fill="#263548" stroke="none" stroke-width="1"/>
+<path d="M62 407.0L441 407.0" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="51" y="412.0" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">0%</text>
+<path d="M62 353.5L441 353.5" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="51" y="358.5" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">4%</text>
+<path d="M62 300.0L441 300.0" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="51" y="305.0" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">8%</text>
+<path d="M62 246.5L441 246.5" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="51" y="251.5" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">12%</text>
+<path d="M62 193.0L441 193.0" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="51" y="198.0" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">16%</text>
+<path d="M62.000 263.888 L78.478 258.538 L94.957 257.200 L111.435 247.838 L127.913 259.875 L144.391 261.212 L160.870 258.538 L177.348 211.725 L193.826 210.388 L210.304 213.062 L226.783 207.713 L243.261 213.062 L259.739 215.737 L276.217 219.750 L292.696 237.138 L309.174 242.487 L325.652 249.175 L342.130 258.538 L358.609 266.562 L375.087 266.562 L391.565 270.575 L408.043 235.800 L424.522 226.438 L441.000 223.763" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" data-series="food_insecure_pct" data-count="24"/>
+<path d="M62.000 362.863 L78.478 360.188 L94.957 360.188 L111.435 354.837 L127.913 354.837 L144.391 353.500 L160.870 352.163 L177.348 330.762 L193.826 330.762 L210.304 334.775 L226.783 330.762 L243.261 330.762 L259.739 332.100 L276.217 332.100 L292.696 340.125 L309.174 341.462 L325.652 346.812 L342.130 349.488 L358.609 352.163 L375.087 354.837 L391.565 356.175 L408.043 338.788 L424.522 338.788 L441.000 334.775" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 4" data-series="very_low_food_security_pct" data-count="24"/>
+<text x="62.0" y="434" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">2001</text>
+<text x="160.8695652173913" y="434" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">2007</text>
+<text x="259.7391304347826" y="434" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">2013</text>
+<text x="358.60869565217394" y="434" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">2019</text>
+<text x="441.0" y="434" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">2024</text>
+<text x="20" y="474" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">2007: 11.1% food insecure</text>
+<text x="20" y="497" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">2008: 14.6%, about one-third higher</text>
+<text x="20" y="520" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">2024: 13.7%, 18.3 million households</text>
+<text x="20" y="543" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">2024: 5.4% with very low food security</text>
+<path d="M20 568L460 568" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="588" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Source: USDA Economic Research Service,</text>
+<text x="20" y="609" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">food-security trends, 2001–2024.</text>
+<text x="20" y="630" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Current Population Survey supplement.</text>
+</svg>

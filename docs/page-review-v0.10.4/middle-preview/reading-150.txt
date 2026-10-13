@@ -1,0 +1,19 @@
+One possible pattern of interrupted work. The drawing gives no fixed recovery time, interruption
+threshold, or measured effect size.
+The slot machine in your pocket
+The  slot-machine  comparison  needs  a  boundary  too.  Shannon
+entropy, H, measures uncertainty in a probability model:
+H(X) = −∑P(xi)log2P(xi)
+where P(xi) is the probability of outcome xi. You could use it for a toy
+model of feed categories: a video, a headline, a friendʼs message. But
+bits of uncertainty donʼt measure pleasure, compulsion, or mental
+fatigue. A predictable message can matter enormously; random noise
+INTERRUPTEDWORK
+Attentionontask·illustrative,notdata
+Interruptions
+Time · not to scale
+Sustainedfocusreference
+Nofixedrecoverytimeorthreshold.
+Returningtounfinishedworkvaries.
+CHAPTER 8
+145

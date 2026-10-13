@@ -1,0 +1,29 @@
+[
+  {
+    "file": "src/lib/data/book/27-chapter19.md",
+    "image": "ch19-conversion-ladder.svg",
+    "moved_block": "![Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France\u2019s precedent concerns surplus recovery rules; land trusts use long-term leases.](/book-images/ch19-conversion-ladder.svg)\n\n*Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained.*\n\n",
+    "before_anchor": "## Rung 1: Count what's wasted and who's hungry",
+    "before_sha256": "3412ce6545e34de2946e102db95d7183720b362dcc1a8efabf5c4d0d09ccc70a",
+    "after_sha256": "fc857df59a072dac713fb8032c9d86dbfb58ae3522beea4dc97cb2de7f1a8e8c",
+    "paragraph_multiset_unchanged": true
+  },
+  {
+    "file": "src/lib/data/book/11-chapter9.md",
+    "image": "ch09-greenhouse-bus.svg",
+    "moved_block": "![SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.](/book-images/ch09-greenhouse-bus.svg)\n\n*The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.*\n\n",
+    "before_anchor": "## A worked example: one delivery, all the way through",
+    "before_sha256": "fb890042e4430039bb5fbdd7a2859b404baf6f0b4ca19f7365761fca0ec9d8d9",
+    "after_sha256": "3bba6cb2c37ec480b9251872a81e244204429678fd93bfa4ccf5bd6a443d2262",
+    "paragraph_multiset_unchanged": true
+  },
+  {
+    "file": "src/lib/data/book/25-appendix-d.md",
+    "image": "appd-precedent-timeline.svg",
+    "moved_block": "![Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.](/book-images/appd-precedent-timeline.svg)\n\n*All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.*\n\n",
+    "before_anchor": "## The rules, in one breath each",
+    "before_sha256": "cdadbe17f8a9682598eb215182af7c6200dab3e932080dea2a7ee22475ce5a7b",
+    "after_sha256": "7f0c649065b42914462517dfe3fe6f958474f2a9c2ca71bd77156969cdbd89ac",
+    "paragraph_multiset_unchanged": true
+  }
+]

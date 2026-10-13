@@ -1,0 +1,14 @@
+{
+  "file": "cover-harvest.svg",
+  "print_width_inches": 4.8,
+  "geometry_bounds": {
+    "x": 32,
+    "y": 26.799962997436523,
+    "width": 410,
+    "height": 298.2000427246094
+  },
+  "line_weights_points_at_print_width": {
+    "main": 1.296,
+    "fine": 0.432
+  }
+}

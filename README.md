@@ -3,7 +3,9 @@
 > A field manual for staying agentic as AI rewrites work, money, medicine, and meaning.
 
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
-**Status:** Open draft. Book ships when it ships. Site updates as the world does.
+**Local source edition:** v0.11.0, clarifying the title's promise and adding ownership, participation, and solarpunk sections. Existing scenes and artwork remain. See [edition notes](docs/v0.11.0/EDITION-NOTES.md) and [production instructions](publication/README.md).
+
+Open the [reading PDF](book-build/Surviving-the-Singularity-v0.11.0.pdf), [EPUB](book-build/Surviving-the-Singularity-v0.11.0.epub), or [grayscale print interior](book-build/Surviving-the-Singularity-v0.11.0-print-interior.pdf). Previous source and deliveries remain in their worktrees. Public download artifacts are generated from v0.11.0, verified against canonical source, and sized for Cloudflare Pages. This branch is a release candidate; see the launch handoff for deployment requirements.
 
 ---
 
@@ -12,6 +14,29 @@
 [`book.json`](src/lib/data/book/book.json). Everything else that contains book
 text is generated output. Full rules: [Book content: the single source of
 truth](#book-content-the-single-source-of-truth).
+
+---
+
+## Open the local illustrated edition
+
+From this edition's worktree, run `npm run build`, then `node docs/v0.11.0/reader-proof/server.mjs` to preview that build. Open
+[the chapter reader](http://localhost:5193/book) or
+[the continuous reader](http://localhost:5193/read). Both use the existing
+draft-password gate. The new figures are part of the canonical manuscript,
+so both readers load the same edition.
+
+The three scenes appear within their chapters:
+
+- [Chapter 9](http://localhost:5193/book/chapter9): one harvest, five doors.
+- [Chapter 15](http://localhost:5193/book/chapter15): a growing bed and the inputs and outputs around it.
+- [Chapter 17](http://localhost:5193/book/chapter17): shared tools and the people and supplies that keep them useful.
+
+Choose **Explore in 3D** to load a scene. Camera buttons and connection
+controls work with a keyboard. Static illustrations, captions, and text
+explanations remain available when WebGL cannot run. PDF and EPUB editions
+use the static SVG illustrations; they do not run the Three.js scenes.
+[Scene reproduction and browser proof](docs/v0.10.1/scenes/SCENE-REVIEW.md)
+document the implementation.
 
 ---
 
@@ -38,7 +63,7 @@ A SvelteKit site built around one question:
 
 > What does it look like to build a life that doesn't depend on the things AI is about to dissolve?
 
-It is not a sales page. It is not a course. It is a working draft of a book, a long blueprint of practical answers, and a blog of dispatches from the curve. Free to read. No login. No paywall. No email required.
+It is not a sales page. It is not a course. It is a working draft of a book, a long blueprint of practical answers, and a blog of dispatches from the curve. The repository contains the manuscript and site source. The current draft readers use a password gate; there is no account sign-in.
 
 ## Who this is for
 
@@ -46,50 +71,31 @@ It is not a sales page. It is not a course. It is a working draft of a book, a l
 - People who can feel the economic ground shifting under their feet and want a practical move, not another think piece.
 - Makers, builders, parents, teachers, anyone who would rather stay agentic than be passive cargo.
 
-If you came here because someone you trust sent you the link, start at [**Why**](https://survivingthesingularity.com/why). It is the shortest case for why any of this matters.
+For this local edition, start with [the Introduction](http://localhost:5193/book/introduction) after opening the draft reader.
 
 ## What is on the site
 
 | Route | What it is |
 |-------|-----------|
-| [`/`](https://survivingthesingularity.com/) | Landing page. Thesis, four steps, the stack, a savings calculator, the chapter index. |
-| [`/why`](https://survivingthesingularity.com/why) | The case. AGI timeline, expert voices, benchmarks. Start here if you are new. |
-| [`/book`](https://survivingthesingularity.com/book) | Open draft of *Surviving the Singularity*. Free to read. Chapter previews. |
-| [`/blueprint`](https://survivingthesingularity.com/blueprint) | Eight chapter blueprint. Shouse construction, collective ownership, semi-autonomous CSA, local AI, offline healthcare AI, and more. |
+| [`/`](https://survivingthesingularity.com/) | Landing page and book offer. |
+| `/book` and `/book/[sectionId]` | Password-gated contents and chapter reader. The local routes above serve v0.11.0. |
+| `/read` | Password-gated continuous reader, with the same illustrations and optional 3D scenes. |
 | [`/blog`](https://survivingthesingularity.com/blog) | Dispatches. Some philosophical, some profane. |
 | [`/about`](https://survivingthesingularity.com/about) | What this project is and is not. |
-| [`/factcheck`](https://survivingthesingularity.com/factcheck) | Every checkable claim in the book, traced back to its evidence. Audit it yourself. |
+| [`/factcheck`](https://survivingthesingularity.com/factcheck) | Historical mechanical source trace, with explicit coverage limits. |
 
 ## Check the book yourself
 
-Most books ask you to trust them. This one hands you the receipts.
+The public [`/factcheck`](https://survivingthesingularity.com/factcheck) page
+labels its historical v0.7.4 mechanical trace separately from the current book.
+It records detected claims, source links, local assets and provenance. A resolved
+reference does not establish that a claim is true. It does not certify the
+current manuscript or every marketing statement. Read the linked primary
+sources and [`FACTCHECK.md`](FACTCHECK.md) for coverage and limits.
 
-[`/factcheck`](https://survivingthesingularity.com/factcheck) is a live audit of
-the manuscript. It pulls every mechanically detectable claim out of the book
-source and traces each one back through ten hops: the sentence quoted verbatim,
-where it sits in the source, the commit that put it there, a GitHub permalink
-pinned to that exact commit, the source behind it, and a verdict. Pick any
-number in any chapter and watch the trail resolve. Then go read the source for
-yourself.
-
-**It shows you where the trail breaks, too.** That is the part worth trusting.
-A claim whose source has not been checked says so. Text that has not been
-committed yet has no permalink, and the page says that rather than inventing
-one. The list of things the audit *cannot* see sits above the statistics, not
-buried under them.
-
-As of the 2026-07-30 pass: **1,242 claims traced**, 1,091 carrying a permalink
-you can click through to the exact line on GitHub, 273 supported, 0
-contradicted, and 227 external citations of which 38 are Wikipedia. Every one
-of those numbers is computed by the page from its own data, so it cannot drift
-from what it is describing.
-
-The repository is public. The audit runs against the same source the book is
-built from. Nothing here is a screenshot of a claim; it is the claim, the
-commit, and the link.
-
-How it is built, what it deliberately does not cover, and the discipline behind
-it: [`FACTCHECK.md`](FACTCHECK.md).
+Read the introduction and reading guide without an email or password at
+[`/sample`](https://survivingthesingularity.com/sample). The full draft uses the
+shared code provided with the purchase; no account sign-in is required.
 
 ## Stay in touch
 
@@ -105,9 +111,9 @@ This project is open source. If you want to fork it, remix it, or contribute fix
 
 - **Framework:** SvelteKit v2 + Vite v5
 - **Styling:** Tailwind CSS v3 + scoped component CSS, dark-only theme
-- **Auth/Database:** Supabase, server-side only through the service role (see "Database access" below)
+- **Database:** Supabase, server-side only through the service role (see "Database access" below). There is no auth; see the header of `src/hooks.server.js`.
 - **Fonts:** Inter (UI) + JetBrains Mono (numbers, code)
-- **Deployment:** adapter-auto (Cloudflare Pages target)
+- **Deployment:** pinned Cloudflare Pages adapter; `npm run test:cloudflare` checks the built Worker locally
 
 ### Database access
 
@@ -151,19 +157,22 @@ for it rather than shipping a key.
 ```bash
 git clone https://github.com/ctavolazzi/survivingthesingularity.git
 cd survivingthesingularity
-npm install
-npm run dev -- --open
+npm ci
+npm run dev -- --port 5189 --strictPort
 ```
 
 Without `SUPABASE_SERVICE_KEY` in `.env`, `/api/waitlist` returns 503 and the
-signup form reports that signups are unavailable. Everything else works. There
-is deliberately no anonymous-key fallback: `sql/012` revoked every `anon` grant,
+waitlist form reports that signups are unavailable. Paid checkout and email delivery also require their configured services; missing
+credentials fail closed. There is deliberately no anonymous-key fallback: `sql/012` revoked every `anon` grant,
 so such a fallback could only ever fail with `permission denied`.
 
 ### Building
 
 ```bash
+npm run check
+npm run test:release
 npm run build
+npm run test:launch-browser
 npm run preview
 ```
 
@@ -187,19 +196,19 @@ src/
       blueprint.js       Orphaned: no route renders this any more
     styles/theme.css     Design tokens
 static/
-  book-images/           Every figure the book references (106 files)
+  book-images/           Canonical figure assets and prepared print variants
 ```
 
 ### Book content: the single source of truth
 
-**The book is the 30 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
+**The book is the 35 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
 
 Both halves are required:
 
 - **`*.md`** holds the prose, one file per section.
 - **`book.json`** is the manifest: which files, what order, what titles, plus the version, title and subtitle that become EPUB and PDF metadata.
 
-Neither is the book on its own. **A `.md` file in that folder that is not listed in `book.json` is not in the book.** That is how `VOICE-GUIDE.md`, `ELIJAH-PROTOCOL.md` and `README.md` live in the directory without leaking into the manuscript. It is a real gate, not a convention: `scripts/build-epub.sh` reads the file list with `jq -r '.sections[].file'`, and the website reads the same manifest in `src/lib/bookContent.js`.
+Neither is the book on its own. **A `.md` file in that folder that is not listed in `book.json` is not in the book.** That is how `VOICE-GUIDE.md`, `ELIJAH-PROTOCOL.md` and `README.md` live in the directory without leaking into the manuscript. It is a real gate, not a convention: the build tools read the manifest through `scripts/sts.py` or the publication loader, and the website reads the same manifest in `src/lib/bookContent.js`.
 
 Everything else is **output, derived from those two inputs**:
 
@@ -211,7 +220,7 @@ Everything else is **output, derived from those two inputs**:
 | `manuscript/StS-Complete-Draft-*.md` | `sts.py compile` | export snapshots, nothing reads them back |
 | `src/lib/data/book/manuscript-index.json` | `sts.py id build` | a generated cache |
 
-Five consumers, no editable copies. Hand-editing any of them is lost work: the next build overwrites it.
+The consumers do not maintain editable manuscript copies. Hand-editing any of them is lost work: the next build overwrites it.
 
 Three ways people get this wrong:
 
@@ -248,7 +257,7 @@ PRs welcome for bug fixes, accessibility improvements, and performance. Content 
 
 ## License
 
-Code: open source. Book content: all rights reserved, free to read on the live site.
+Code: open source. Book content: all rights reserved. Source-image credits and adaptation notices remain attached to the artwork; generated edits do not erase the source-license requirements.
 
 ## Author
 

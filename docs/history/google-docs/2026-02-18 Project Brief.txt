@@ -1,0 +1,36 @@
+This document serves as the foundational brief for the project Surviving the Singularity (StS) and its associated frameworks. It codifies the shift from a speculative primer to a tactical industrial manual for the years 2026 through 2027.
+________________
+Project Premise: The Serious AGI Pivot
+The project assumes that Artificial General Intelligence is an imminent industrial event, not a digital gadget. Taking AGI seriously means acknowledging the end of the human monopoly on agency and cognitive labor. The focus is on the Sovereignty Gap: the space between those integrated into a managed system and those maintaining autonomous physical and economic resilience.
+Strategic Context (2026–2027)
+* The Compliance Chasm: As of January 1, 2026, California’s Title 24 Energy Code and WUI (Wildland-Urban Interface) regulations have fundamentally closed the loop for low-cost, unregulated DIY builds.
+* The Capital Access Gap: Conventional lending and the FAIR Plan insurance crisis now penalize non-standard construction (chattel vs. real property), making sovereignty a high-capital requirement.
+* The 2027 Event Horizon: The predicted threshold for industrial AGI mobilization, where the rate of technological change exceeds biological human processing.
+________________
+Core Frameworks and Infrastructure
+1. The Sovereignty Build (Physical)
+* The Shouse (Shop-House): A high-performance, resilient shell (steel or precast modular concrete) designed for thermal efficiency and protection.
+* Techno-Core: Physically isolated and sound-dampened server/battery rooms to mitigate the "Acoustic Toxicity" and heat load of on-premise AI.
+* Title 25 Arbitrage: Utilizing specific rural code exceptions (e.g., Butte County) while acknowledging the liquidity trade-off of deed restrictions.
+2. The Opportunity Radar (Social/Digital)
+* Protocol: A decentralized community OS using RSS 2.0 with a custom radar namespace.
+* Function: Converting community needs into machine-readable objects for both human volunteers and autonomous agents (Mobile Aloha, FarmBot).
+* Discovery: Utilizing JSON-LD and ActivityPub for semantic discovery across the Fediverse.
+3. Economic and Survival Engines
+* Johnny Autoseed: An open-source, automated robotic CSA (Community Supported Agriculture). It serves as the "background process" for food security, decoupling survival from the collapsing human labor market.
+* The Tamagotchi Plant: A bio-digital micro-business utilizing NFC and LLM-driven narratives to fund local resilience projects.
+* FogSift: The consulting arm focused on root cause analysis and strategic clarity for navigating the transition.
+________________
+Brand Hierarchy and Identities
+* Porchroot: The maker brand for physical craft and woodcarving. It represents the "Soul" of the project—the choice to maintain manual sovereignty in an automated age.
+* Teleport Massive: The science fiction cosmology and lore providing the philosophical backbone for understanding cosmic-scale intelligence.
+* Dino Details: An automotive detailing business serving as a localized, cash-flow generating service model.
+________________
+Operating Constraints
+1. Terminology: Never use the word "manifesto".
+2. Formatting: Do not use the em dash (—). Use standard punctuation or colons.
+3. Phrasing: Avoid the "It’s not just X, it’s a [grandiose words] Y for Z people" structure.
+4. Tone: Maintain the "Gallows Humor" of a supportive peer, but ground all advice in the hard technical and regulatory realities of 2026 California.
+5. Technical Accuracy: Use LaTeX for complex math or formal equations, but stick to Markdown for simple units and regular prose.
+________________
+Next Step: Would you like to rewrite the "Show Me the Money" chapter to address the 2026 Capital Access Gap and the transition from cognitive labor to ownership of automated production?

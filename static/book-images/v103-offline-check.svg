@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 381" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">PROVE YOUR OFFLINE COPY WORKS</title>
+<desc id="desc">A phone beside four steps: save a reference you may copy, record its source and date, turn the network off, then open it and find a specific answer. The test proves retrieval, not the truth of every claim in the reference.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">PROVE YOUR OFFLINE COPY WORKS</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M39 103Q39 93 49 93H117Q127 93 127 103V267Q127 277 117 277H49Q39 277 39 267Z" fill="#0f172a" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M47 117H119V254H47Z" fill="none" stroke="#60a5fa" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M71 105L96 105" fill="none" stroke="#f1f5f9" stroke-width="2"/>
+<circle cx="83" cy="266" r="3" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+<path d="M60 137H105M60 149H105M60 161H93M60 186H105M60 198H105M60 210H97" fill="none" stroke="#475569" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M64 234L75 243L102 220" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="83" y="309" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Offline</text>
+<text x="158" y="102" font-size="20" fill="#f59e0b" text-anchor="start" font-weight="600">1</text>
+<text x="183" y="102" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="600">Save one reference.</text>
+<text x="183" y="125" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Choose one you may copy.</text>
+<text x="158" y="168" font-size="20" fill="#f59e0b" text-anchor="start" font-weight="600">2</text>
+<text x="183" y="168" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="600">Record source + date.</text>
+<text x="183" y="191" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Know which edition it is.</text>
+<text x="158" y="234" font-size="20" fill="#f59e0b" text-anchor="start" font-weight="600">3</text>
+<text x="183" y="234" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="600">Turn the network off.</text>
+<text x="183" y="257" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Test the local copy.</text>
+<text x="158" y="300" font-size="20" fill="#f59e0b" text-anchor="start" font-weight="600">4</text>
+<text x="183" y="300" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="600">Open it. Find an answer.</text>
+<text x="183" y="323" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Check you can retrieve it.</text>
+<path d="M20 338L460 338" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="358" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Start with the device you already have.</text>
+</svg>

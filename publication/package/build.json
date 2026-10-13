@@ -1,0 +1,179 @@
+{
+  "manuscript_version": "0.8.2",
+  "design_version": "01",
+  "sections": 30,
+  "source_sha256": {
+    "02-introduction.md": "89cbc6e56af8f656bbafcf41946b9f259cdbd855289ed352139e063893eb1798",
+    "01-preface.md": "50aca4615f45a113c976e014f67cd846d2a3a6535d5c0ecad070fa86fad054ab",
+    "00-chapter0.md": "15fda8ebd8369bd868fbba1ca7326c9a3b1bcf7f8ad5e5a2e1e2faadb8e171af",
+    "part1-divider.md": "abff74f5761e2cec082d0cae571fbbdf61bf67cd6cddee2586e62a50de686904",
+    "03-chapter1.md": "c4250d0e0fae562dd0fd4ac112151151a10ebe0e1fbba3cc86f66ffb2f75ea4d",
+    "04-chapter2.md": "4b72144de11830c2f15d4b94570487a43e375e6267c581cd95219d1450069fd7",
+    "05-chapter3.md": "d65d469f870680f298df3332955fd8fd3b32ab0cd70a92ba578e04292bf7a039",
+    "06-chapter4.md": "88c1871b62965417f35f64a4d77b1ef51f87b4570e5f2c3ba9864cddd8138571",
+    "07-chapter5.md": "cbc4d15d7ccb91d35acc259a54e9eacd49d5439c6c45cd02fe10f959389fcf2f",
+    "part2-divider.md": "dbf42bd92d3c273d1c3fb0ffbfdfe3406ede542916c0854c7626ce5097800590",
+    "08-chapter6.md": "d4caf629a89550ce01093eabac468879fbdea4305e8c6c97b69731a86655faa9",
+    "09-chapter7.md": "112c3e5c0ecb41aa0669505f91eb7d7e6f89815ba531ea53a76c4d37efe77672",
+    "10-chapter8.md": "bc8133f5f17ce2801eaeadf2b00bb70a5ffc6f6cf2531c89da4f97bbfbe70d64",
+    "11-chapter9.md": "57342e6b4de45e3df7530613bf8824a173c0778c8c45ef43dc8940368c944fd3",
+    "part3-divider.md": "b5a3f42e3f3db749e7f3ac626b6294a5464b4ab7c09faceb0ead277a665e35a0",
+    "12-chapter10.md": "273b8913249ef29a7477ac1c087c0735db3fe7b41f447a697904283838f70b7b",
+    "13-chapter11.md": "d7f66b5b9f499b2119e7d50bde89177cabccae7074396a21bb09a66b9e0661a1",
+    "14-chapter12.md": "64cb46fa123c3a4a2bcc365f773456f01ba396315756e6f8d7fc63b74ab17bfa",
+    "15-chapter13.md": "c2ca60944a3b9fe6d6dbcc42cef87da643238e3c88c09bad19c85cb1cb6761d7",
+    "16-chapter14.md": "58e0a87f26dc5b3898395ca4f5929a3b174b481590b06f065478d17e64476bfd",
+    "17-chapter15.md": "03c01d35521e447e7002e8948b6eb4c1f49fed9a594d2058cbfcf34bbf7df1ad",
+    "18-chapter16.md": "86b5a4e46191076f671a68663be805ab412588a2a8b506de8107e3ab717cc848",
+    "19-chapter17.md": "3558032aa1c79d52e845be6f9fbb6c08ad10a56d13867cedee7855b5b015e343",
+    "20-chapter18.md": "2563bec7fd5cd85f21097f53ec88f585d46c1849c2ab71fac4c757c157f88757",
+    "21-conclusion.md": "f099a7d3575f62487cd23b5a9b4a1336de031b8c2b0648a65afc53d649df5d9c",
+    "22-appendix-a.md": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+    "23-appendix-b.md": "d09d30f0380f60771acaaf0815cbcdc2b8d0a9f6e99f4a5a8896fb8b85cbd4c2",
+    "24-appendix-c.md": "bdf143ba8ba5bf395fe216c0061dc344bbdc0c7a6010f1f868489aef69b4f226",
+    "25-appendix-d.md": "9dc3ac267040ac872cfb693de5fb9e69e86c53c4e4b9d550b1748a745adfddb0",
+    "26-appendix-e.md": "cd357be297786c07f616216538944bd4580b4d186efa6dd934b6d5ff4a5af413"
+  },
+  "image_transformations": [
+    {
+      "section": "part-1",
+      "original": "part1-divider.png",
+      "action": "Replace generated divider with original vector motif; retain all divider prose."
+    },
+    {
+      "section": "chapter1",
+      "original": "ch01-m87-black-hole.jpg",
+      "original_caption": "The shadow of the black hole M87*. An image at the edge of what\nwe can observe. (Event Horizon Telescope Collaboration, CC BY 4.0, via\nWikimedia Commons)",
+      "replacement_caption": "The shadow of the black hole M87*. An image at the edge of what\nwe can observe. (EHT Collaboration, CC BY 4.0, via Wikimedia Commons)",
+      "action": "Correct caption identification or required attribution from audited image source."
+    },
+    {
+      "section": "chapter2",
+      "original": "ch02-factory-robots.jpg",
+      "original_caption": "Robotic arms at work. The structural automation of labor, already\nroutine. (ell brown, CC BY-SA 2.0, via Wikimedia Commons)",
+      "replacement_caption": "Robotic arms in Thinktank's interactive Jaguar assembly exhibit. A demonstration of industrial automation. (ell brown, CC BY-SA 2.0, via Wikimedia Commons)",
+      "action": "Correct caption identification or required attribution from audited image source."
+    },
+    {
+      "section": "chapter4",
+      "original": "ch04-hubble-deep-field.jpg",
+      "original_caption": "The Hubble Ultra-Deep Field. A view of galaxies far beyond our\nordinary scale. (NASA/ESA, Public domain, via Wikimedia\nCommons)",
+      "replacement_caption": "The Hubble Ultra-Deep Field. A view of galaxies far beyond our\nordinary scale. (NASA, ESA, and S. Beckwith (STScI) and the HUDF Team; black-point adjustment by Noodle snacks, CC BY 4.0 (primary ESA/Hubble distribution), via Wikimedia Commons)",
+      "action": "Correct caption identification or required attribution from audited image source."
+    },
+    {
+      "section": "part-2",
+      "original": "part2-divider.png",
+      "action": "Replace generated divider with original vector motif; retain all divider prose."
+    },
+    {
+      "section": "chapter6",
+      "original": "ch06-edmond-de-belamy.png",
+      "omitted_caption": "Edmond de Belamy, generated by a GAN, sold at Christie’s for\n$432,500 in 2018. (Artificial intelligence software, Public domain, via\nWikimedia Commons)",
+      "replacement": "repair-tools",
+      "action": "Replace image and its credit caption with original motif; commercial reproduction basis unclear or conflicting. Source unchanged. See RIGHTS-AUDIT.md."
+    },
+    {
+      "section": "part-3",
+      "original": "part3-divider.png",
+      "action": "Replace generated divider with original vector motif; retain all divider prose."
+    },
+    {
+      "section": "chapter10",
+      "original": "ch10-nyse.jpg",
+      "omitted_caption": "A trading floor. A price records an exchange; it doesn’t exhaust\nthe value of a life. (Scott Beale, CC BY-SA 4.0, via Wikimedia\nCommons)",
+      "replacement": "pamphlet-and-thread",
+      "action": "Replace image and its credit caption with original motif; commercial reproduction basis unclear or conflicting. Source unchanged. See RIGHTS-AUDIT.md."
+    },
+    {
+      "section": "chapter12",
+      "original": "ch12-farmbot.jpg",
+      "omitted_caption": "FarmBot over a raised bed. A place to grow, and a tool that can\ndo part of the work. (FarmBot, CC BY 4.0, via Wikimedia\nCommons)",
+      "replacement": "seed-and-root",
+      "action": "Replace image and its credit caption with original motif; commercial reproduction basis unclear or conflicting. Source unchanged. See RIGHTS-AUDIT.md."
+    },
+    {
+      "section": "chapter13",
+      "original": "ch13-solar-barn.jpg",
+      "original_caption": "Solar on an outbuilding. Shelter and useful space belong in the\nsame practical conversation. (Ermell, CC BY-SA 4.0, via Wikimedia\nCommons)",
+      "replacement_caption": "Solar on an outbuilding. Shelter and useful space belong in the\nsame practical conversation. (Reinhold Möller, CC BY-SA 4.0, via Wikimedia Commons)",
+      "action": "Correct caption identification or required attribution from audited image source."
+    },
+    {
+      "section": "chapter14",
+      "original": "ch14-dead-mall.jpg",
+      "original_caption": "A dead mall. Gradually, then suddenly. (User:Mattes, Public\ndomain, via Wikimedia Commons)",
+      "replacement_caption": "An abandoned bar in an older shopping mall in Haifa. Gradually, then suddenly. (Mattes, Public domain dedication by Mattes, via Wikimedia Commons)",
+      "action": "Correct caption identification or required attribution from audited image source."
+    },
+    {
+      "section": "chapter15",
+      "original": "ch12-farmbot-watering.jpg",
+      "omitted_caption": "Automated watering over living soil. The substrate everything\nelse depends on. (FarmBot, CC BY 4.0, via Wikimedia Commons)",
+      "replacement": "soil-profile",
+      "action": "Replace image and its credit caption with original motif; commercial reproduction basis unclear or conflicting. Source unchanged. See RIGHTS-AUDIT.md."
+    },
+    {
+      "section": "chapter18",
+      "original": "ch18-compass-map.jpg",
+      "original_caption": "The map, before the route. Premortem first, then move. (SFC9394,\nCC BY 2.5, via Wikimedia Commons)",
+      "replacement_caption": "The map, before the route. Premortem first, then move. (SFC9394; compass rose by Stefan-Xp, CC BY 2.5, via Wikimedia Commons)",
+      "action": "Correct caption identification or required attribution from audited image source."
+    }
+  ],
+  "included_images": [
+    "ch01-atlas.jpg",
+    "intro-asimo.jpg",
+    "ch00-madrone-bark.jpg",
+    "ch01-m87-black-hole.jpg",
+    "ch01-pc-rig.png",
+    "ch02-factory-robots.jpg",
+    "ch03-falcon-heavy.jpg",
+    "ch04-hubble-deep-field.jpg",
+    "ch05-sdo-sun.jpg",
+    "ch06-tool-wall.png",
+    "ch07-chess-battle-lines.jpg",
+    "ch08-sophia.jpg",
+    "ch09-3d-printer.jpg",
+    "ch09-controller.png",
+    "ch09-reuben.png",
+    "ch11-spot.jpg",
+    "ch11-crucible.png",
+    "ch13-solar-barn.jpg",
+    "ch13-vise.png",
+    "ch14-dead-mall.jpg",
+    "ch14-frank.png",
+    "ch14-bell.png",
+    "ch15-probe.png",
+    "ch16-servers.jpg",
+    "ch17-workbench.jpg",
+    "ch18-compass-map.jpg",
+    "ch19-iss-sunrise.jpg",
+    "conclusion-proofs.png"
+  ],
+  "outputs": {
+    "interior": {
+      "path": "pdfs/Surviving-the-Singularity-interior.pdf",
+      "pages": 228,
+      "sha256": "554e9988db2d765da6f99b99d16e2f9b67cedba36052f39e160ce67989ad5c7d"
+    },
+    "front-cover": {
+      "path": "pdfs/Surviving-the-Singularity-front-cover.pdf",
+      "pages": 1,
+      "sha256": "d394a10ace35e566da9b3ba6515b180ee594df5edb051396eb8ac603cf864cb5"
+    },
+    "reading": {
+      "path": "pdfs/Surviving-the-Singularity-reading.pdf",
+      "pages": 229,
+      "sha256": "4d8e4a441cf2e476ee45d0ab77bde8028cd4da9c0305e2ac111196241ac11c9e"
+    },
+    "print-interior": {
+      "path": "pdfs/Surviving-the-Singularity-print-interior.pdf",
+      "pages": 228,
+      "sha256": "92de382066ba06acf9eb4ddf088a17fd792895bf7e8af711c879a61c25eab1c0",
+      "grayscale": true,
+      "blank_final_verso_added": false
+    }
+  },
+  "package_note": "PDF paths rewritten relative to this package; other build evidence preserved."
+}

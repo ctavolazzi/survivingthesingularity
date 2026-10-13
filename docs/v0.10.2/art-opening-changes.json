@@ -1,0 +1,285 @@
+{
+  "generator": "docs/v0.10.2/figures_opening.py",
+  "figures": {
+    "intro-nine-stages.svg": {
+      "audit_items": "A01, L01",
+      "semantic_changes": "Removed a guaranteed 2027 ASI leap and claims about outgrowing physics. Retained all nine named stages and emphasized Stage 4 as a proposal.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        640
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "c4fd78d4313e9bd4a52432e82001643657c39ed2b317d6a950e48529f3cab359",
+        "print_sha256": "028d3c714b950b2b122f6b9fce9e3117eb9267358de58c498b760fd774e86b49",
+        "source_viewBox": "0 0 900 852"
+      },
+      "after": {
+        "source_sha256": "431a84e360f009fd99134877c7281c012f0cb2d83d7a22c60634603830a92655",
+        "print_sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac"
+      },
+      "print_file": "print/intro-nine-stages.svg",
+      "recommended_alt": "A speculative map of nine stages, grouped into AGI, ASI, and later imagined possibilities. Stage 4, a new social contract, is emphasized as a choice. Stages may overlap, stall, or fail to occur.",
+      "recommended_caption": "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later stages are imagined possibilities.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch02-eighteen-days.svg": {
+      "audit_items": "L01; access scope",
+      "semantic_changes": "Replaced the crowded horizontal timeline with dated vertical milestones. July 1 global restoration applies to Fable, while Mythos remains limited. June 26 approval is specific to Mythos access. Removed the side quotation about another model; it remains in prose. Stage labels are explicitly the author’s interpretation.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        636
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "1f844cb170df5819927c4ff6be56e05197ef8a35c42dad8cba73530ecaa9dec2",
+        "print_sha256": "9256ce7511c784b59f386b23041d7935dd54b553b2e6721a16925220b2a33e39",
+        "source_viewBox": "0 0 900 520"
+      },
+      "after": {
+        "source_sha256": "a579b02ab771c23f6b9e41199742efd262c6843e9e4ace1c3f48784d99943235",
+        "print_sha256": "e197fe6b2a7b4a1bb622821c6a30118a072677ab80ffb8fe7c6cf7d438b5e281"
+      },
+      "print_file": "print/ch02-eighteen-days.svg",
+      "recommended_alt": "Four dated events: June 12 export controls and worldwide suspension of Fable 5 and Mythos 5; June 26 approval for Mythos access by a set of US organizations; June 30 lifting of export controls; July 1 global return of Fable, with Mythos still limited to approved organizations. Spacing is not proportional to elapsed time.",
+      "recommended_caption": "Eighteen days from the June 12 export controls to their lifting on June 30. Access to the two models still differed. Selected events from Anthropic’s June 30 account, updated July 1; Stage 2 and Stage 3 are the author’s interpretation.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch05-horses-tractors.svg": {
+      "audit_items": "L01",
+      "semantic_changes": "Replotted every preserved annual observation in two narrow panels, with explicit units and separate vertical scales. Added January 1 reference date; retained preliminary-data qualification.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        650
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "2640f41565ddacb37554addbcdbf18d67ed161b7563e8d48ea2ef44ede6a6b0c",
+        "print_sha256": "07b455295e594d002313fef2588cbe1bc6f6e93e95b70901ef9fbcb60ad41416",
+        "source_viewBox": "0 0 900 620"
+      },
+      "after": {
+        "source_sha256": "3c719bd272eed866a71e4b278bf86f93c5ef326b343d3cfd517c0576b2ffbe4c",
+        "print_sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2"
+      },
+      "print_file": "print/ch05-horses-tractors.svg",
+      "recommended_alt": "Two line charts show horses and mules on US farms peaking at 26.7 million in 1918 and falling to 8.3 million in 1949, while tractors rise from 1,000 in 1910 to 3.5 million in 1949. The vertical scales differ; all annual values are plotted.",
+      "recommended_caption": "US farm counts on January 1, 1910–1949. Separate vertical scales; 1948 and 1949 figures were preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p. 45.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch06-capability-access.svg": {
+      "audit_items": "L01",
+      "semantic_changes": "Recomposed four questions vertically using distinct symbols. Ownership refers to terms, including price, and access explicitly refers to the result.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        548
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "200e895b78f60738a8a3b3e3fe38f3aa9f87fb8817b838c0ba16af9c2220f861",
+        "print_sha256": "a19503fdfccac7440e18d168988d33bc3e1e70259d314dcc0c2bf2165c763628",
+        "source_viewBox": "0 0 900 400"
+      },
+      "after": {
+        "source_sha256": "0d129784e51e948b36caca6ad34166a1025cc884d76948015af0dee123607a67",
+        "print_sha256": "835fbea5981ba3135ec49a81abd3cdbbff1d74fcc42905fb8b5ab545a8dec088"
+      },
+      "print_file": "print/ch06-capability-access.svg",
+      "recommended_alt": "Four questions ask whether a machine can do a task, whether it is deployed, who sets its terms, and whether someone can receive the result without money. A rail connects distinct symbols without promising automatic progress.",
+      "recommended_caption": "Capability, deployment, ownership and access are separate questions. A productive farm can stand beside hunger.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch08-cognitive-extraction.svg": {
+      "audit_items": "L01",
+      "semantic_changes": "Recomposed an existing qualified conceptual sequence with an attention off-ramp. Preserved possible rather than guaranteed costs and the boundary against brain-chemistry claims.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        542
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "e0287445fc17db0472130bd6eb2930ea39ca7f12f4ac2bc3f9e5dd4cf7c22ac1",
+        "print_sha256": "ac53f49d3b0c6a7049952e0831e666681e32b9563e09acba43a0c0832882ffff",
+        "source_viewBox": "0 0 860 640"
+      },
+      "after": {
+        "source_sha256": "406ffee7ab39d2ba53775aa940e19ac9325eeb4b9948b4ab2945c744e66dc0c9",
+        "print_sha256": "07cdb4846e81f113aaebb116266cca41d68c5a5c1cb57dd7732e4a72452d1dd4"
+      },
+      "print_file": "print/ch08-cognitive-extraction.svg",
+      "recommended_alt": "A rail follows time for a chosen task, switching away, unfinished work, and a possible loss of task time. An off-ramp marks an alert or feed. Some switches help; returning can require reorientation.",
+      "recommended_caption": "A possible pattern to notice in your own day. Conceptual illustration, not a diagnosis or a model of brain chemistry.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch08-focus-recovery.svg": {
+      "audit_items": "L01",
+      "semantic_changes": "Recomposed the qualitative chart at print width. Kept a dashed reference, varied returns after interruptions, and explicit absence of measured values or fixed recovery times.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        457
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "c05a8bdaee279212a4acd89910fcd320d2d0cdbebb6273aa6bc2cef0047f0e2d",
+        "print_sha256": "c63ac8f969c65ee6e4cbed0293e6e0eec887d349f24882098cb5d94e1b43a828",
+        "source_viewBox": "0 0 860 540"
+      },
+      "after": {
+        "source_sha256": "4a19df52fea817bf1e2f5935495df746b69866cc03b1785e5a3b733df48efd6f",
+        "print_sha256": "626bb7d8fd6d6eaba363a40740bdbb08bf185490b359099ee4729da188a5a94c"
+      },
+      "print_file": "print/ch08-focus-recovery.svg",
+      "recommended_alt": "An illustrative attention curve rises, drops after three interruptions, and resumes unevenly. A dashed sustained-focus reference and unnumbered axes make this a conceptual sketch, not measured data.",
+      "recommended_caption": "One possible pattern of interrupted work. The drawing gives no fixed recovery time, interruption threshold, or measured effect size.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch08-firewall-pipeline.svg": {
+      "audit_items": "L01",
+      "semantic_changes": "Replaced four tiny horizontal boxes with a vertical icon-led routine. Scheduled checks are a trial to adjust rather than a measured optimum; retained paper notes and chosen physical work.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        585
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "cf4dac67ba01b7032b7d259fb82f5922b428742567f0f21c476c5be155854443",
+        "print_sha256": "994b7428f9c03f98911329719f12b27b5b0654fb871a3233ee65731aeb4abf01",
+        "source_viewBox": "0 0 860 420"
+      },
+      "after": {
+        "source_sha256": "2412069c23abcea5f167f638a6a4c0698dfeb62d603effe2e2e51dd443459c6c",
+        "print_sha256": "bce21db24028e1bf29e75da76dde51da9c3cc393ccb7395350bcc6d1106f2ada"
+      },
+      "print_file": "print/ch08-firewall-pipeline.svg",
+      "recommended_alt": "Messages, a clock, a paper ledger and a workbench show a suggested routine: receive information, schedule checks, make useful notes, and return to chosen work.",
+      "recommended_caption": "A routine to try, observe and adjust. Two timed windows each day are an example schedule, not a measured optimum.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch08-info-architectures.svg": {
+      "audit_items": "A02, L01",
+      "semantic_changes": "Removed guaranteed anxiety, memory, executive-function and surplus-energy outcomes. Contrasted observable checking routines and protected task time; acknowledged useful or urgent interruptions.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        607
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "5ccacb135bf0b80071b2833bc2bdfd95631057f013b2e9bad43d0ed519331dac",
+        "print_sha256": "a6dba420abce65de0f7fa0c5cd4cd170d5578646721bfae3b86d93519ec85b21",
+        "source_viewBox": "0 0 860 600"
+      },
+      "after": {
+        "source_sha256": "3f51494b754bdf9fac490df82780d81c89a0e1743db0783900ae26a268c4b4f3",
+        "print_sha256": "b44e3a60851a59e55b59573c660ac023f2d3ef1057ddc09348b4ea0e0adf7d40"
+      },
+      "print_file": "print/ch08-info-architectures.svg",
+      "recommended_alt": "Two unscaled task strips compare responding to each incoming alert with choosing message-check times. The first task is fragmented; two check windows surround a chosen task in the second. No cognitive benefit is guaranteed.",
+      "recommended_caption": "Routines, not measurements of your brain. Some interruptions are useful or urgent. Try a schedule and check whether it helps.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "ch08-star-vs-mesh.svg": {
+      "audit_items": "L01; hub-label collision",
+      "semantic_changes": "Stacked star and mesh graphs; removed the hub label previously crossed by a failure mark. Showed the same central-node failure in both examples and encoded affected versus surviving links with dash patterns as well as color.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        616
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "31d1765d859c0be72fb125d1f8d5ffc7e34906f8e4dc97c8f58b333930c41c4d",
+        "print_sha256": "c0fe43039838ec17a9a0d016f012a549dbb714b7e9fedf9598ce503284ae2d8f",
+        "source_viewBox": "0 0 860 500"
+      },
+      "after": {
+        "source_sha256": "5d7d482a3ab6d1d9e3feea37c9b312898390d6823cee12f9f7c2ec602bef9d6b",
+        "print_sha256": "dc6d72da19ccc7b894b26b05b650172c7c2f30f15664d0a58b0af99c31b6bd86"
+      },
+      "print_file": "print/ch08-star-vs-mesh.svg",
+      "recommended_alt": "A star loses its crossed-out hub and its dashed links. A mesh with a crossed-out central node retains a solid route around the outside. Rerouting requires a usable path and maintained relationships.",
+      "recommended_caption": "A mesh can reroute only if a usable path remains. Crosses mark failed nodes; dashed links are affected by that failure. People still maintain the circle and its connections.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    },
+    "intro-food-insecurity.svg": {
+      "audit_items": "A14; label floor",
+      "semantic_changes": "Replaced the causal jobs-to-dinner headline with the observed series title. Preserved every USDA observation and the 2024 callouts. Explicitly identified very low food security as a subset, not an additive series. Shading marks the 2007–2009 period, not exact recession months.",
+      "composition": "480-unit print-first reflow with labels at least 14 units and identical geometry in both palettes.",
+      "dimensions": [
+        480,
+        646
+      ],
+      "minimum_font_svg_units": 14,
+      "before": {
+        "source_sha256": "4acc1e68efec7039ed606e117e4b20c7f9a38dedef0755d98321b1cb9d71df6e",
+        "print_sha256": "d82b7a6216aabedb76b24622b17c28a67bc3010b594e6edd023f91a74d517019",
+        "source_viewBox": "0 0 480 646"
+      },
+      "after": {
+        "source_sha256": "24cfe5c46899ed2a9509f6deb267fa54c5e9593a524a1f326a1c68dd7ea272b6",
+        "print_sha256": "d9edaa0782d807968323c5b9c8bcab1d96485b0ec9e7989f0ef8302f77d6c610"
+      },
+      "print_file": "print/intro-food-insecurity.svg",
+      "recommended_alt": "Annual US household food insecurity, 2001–2024, shown as a solid line, with its very-low-food-security subset dashed. Food insecurity rises from 11.1% in 2007 to 14.6% in 2008; in 2024 the two rates are 13.7% and 5.4%. Shading marks the 2007–2009 period.",
+      "recommended_caption": "Food insecurity rose sharply in 2008. These household survey estimates show a historical pattern, not a causal test of job loss. Very low food security is included within food insecurity. USDA Economic Research Service, 2001–2024.",
+      "provenance": "Native vector redraw by Codex; derived from the existing authored diagram and revised canonical prose. No generated raster or external artwork."
+    }
+  },
+  "source_limits": {
+    "charts": "Preserved USDA CSV transcriptions and their source metadata. No new dataset retrieval or numerical revision in this pass.",
+    "timeline": "Anthropic is the primary source for its suspensions/restorations and account of approvals; this is not independent verification of government motives or safety efficacy.",
+    "concepts": "Authored conceptual diagrams grounded in the revised chapters. No invented measurements or guaranteed outcomes."
+  },
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "checked": "2026-09-28",
+      "use": "June 12 suspension, June 26 limited approval, June 30 lifting and July 1 Fable restoration; Mythos access remains limited."
+    },
+    {
+      "path": "docs/v0.9.2/data/horses-tractors-us-farms.csv",
+      "use": "All 40 annual observations in both series, in thousands; labels convert to millions."
+    },
+    {
+      "path": "docs/v0.9.2/data/food-insecurity-us.csv",
+      "use": "All 24 annual household rates in both series."
+    }
+  ],
+  "data_preservation": {
+    "ch05-horses-tractors.svg": {
+      "csv": "docs/v0.9.2/data/horses-tractors-us-farms.csv",
+      "sha256": "ed7f091d0164658598e105590f7963ec164399db14d7ae8611c8ee7175b94abf",
+      "observations_per_series": 40,
+      "fields": [
+        "horses_and_mules_thousands",
+        "tractors_thousands"
+      ],
+      "negative_control_displaced_first_point_detected": {
+        "horses_and_mules_thousands": true,
+        "tractors_thousands": true
+      },
+      "method": "Every plotted path coordinate is read back, transformed back into its year and data value, and compared with the corresponding CSV row within coordinate-rounding tolerance. No smoothing or omitted years."
+    },
+    "intro-food-insecurity.svg": {
+      "csv": "docs/v0.9.2/data/food-insecurity-us.csv",
+      "sha256": "83cf49217c7d5f29dfe9d01c687dfdb8b2719d1c96a41adac1baed4f77813e13",
+      "observations_per_series": 24,
+      "fields": [
+        "food_insecure_pct",
+        "very_low_food_security_pct"
+      ],
+      "negative_control_displaced_first_point_detected": {
+        "food_insecure_pct": true,
+        "very_low_food_security_pct": true
+      },
+      "method": "Every plotted path coordinate is read back, transformed back into its year and data value, and compared with the corresponding CSV row within coordinate-rounding tolerance. No smoothing or omitted years."
+    }
+  }
+}

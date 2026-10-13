@@ -38,6 +38,7 @@ function render(tex, displayMode) {
       displayMode,
       throwOnError: true,
       strict: false,
+      trust: false,
       output: 'html'
     });
   } catch (error) {

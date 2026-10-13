@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StS: Rectify and Flatten — 2026-08-04</title>
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}
+</script>
+<style>
+  :root{
+    --bg:#020617; --surface:rgba(30,41,59,.5); --line:rgba(148,163,184,.18);
+    --amber:#f59e0b; --blue:#3b82f6; --green:#34d399; --red:#f87171;
+    --ink:#f1f5f9; --sub:#94a3b8; --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box; margin:0}
+  html,body{background:var(--bg); color:var(--ink);
+    font:16px/1.7 Inter,-apple-system,system-ui,sans-serif}
+  body{overflow-x:hidden}
+  a{color:var(--blue)}
+  code,.mono{font-family:var(--mono); font-size:.86em}
+  .wrap{max-width:1060px; margin:0 auto; padding:0 22px}
+  section{padding:64px 0; border-bottom:1px solid var(--line)}
+  h1{font-size:clamp(1.9rem,4.4vw,3rem); line-height:1.15; letter-spacing:-.02em}
+  h2{font-size:1.5rem; margin-bottom:8px}
+  h3{font-size:1.05rem}
+  .k{color:var(--amber)} .b{color:var(--blue)} .g{color:var(--green)} .r{color:var(--red)}
+  .sub{color:var(--sub)}
+  .label{font-family:var(--mono); font-size:.72rem; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--amber); margin-bottom:14px}
+  .lede{color:var(--sub); max-width:46rem; margin-top:14px}
+  .cards{display:grid; gap:14px; margin-top:26px}
+  .c2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .c3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .card{background:var(--surface); border:1px solid var(--line);
+    border-radius:12px; padding:18px 20px}
+  .card h3{margin-bottom:8px}
+  .card p{color:var(--sub); font-size:.92rem}
+  .nums{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:12px; margin-top:30px}
+  .num{background:var(--surface); border:1px solid var(--line); border-radius:12px;
+    padding:14px 16px}
+  .num b{display:block; font-family:var(--mono); font-size:1.45rem}
+  .num span{font-size:.78rem; color:var(--sub)}
+  table{width:100%; border-collapse:collapse; font-size:.88rem}
+  .tblwrap{overflow-x:auto; border:1px solid var(--line); border-radius:12px;
+    margin-top:20px; background:var(--surface)}
+  th,td{text-align:left; padding:10px 14px; border-bottom:1px solid var(--line);
+    vertical-align:top}
+  th{font-family:var(--mono); font-size:.72rem; text-transform:uppercase;
+    letter-spacing:.1em; color:var(--sub); white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  td.mono{white-space:nowrap}
+  .pill{display:inline-block; font-family:var(--mono); font-size:.7rem;
+    padding:2px 9px; border-radius:999px; border:1px solid}
+  .pill.ok{color:var(--green); border-color:rgba(52,211,153,.4)}
+  .pill.bad{color:var(--red); border-color:rgba(248,113,113,.4)}
+  .pill.wait{color:var(--amber); border-color:rgba(245,158,11,.4)}
+  .pill.part{color:var(--blue); border-color:rgba(59,130,246,.4)}
+  .hero{min-height:88vh; display:flex; align-items:center; position:relative;
+    border-bottom:1px solid var(--line)}
+  #sky{position:absolute; inset:0; width:100%; height:100%}
+  .hero .wrap{position:relative; z-index:2; padding-top:70px; padding-bottom:60px}
+  .hero::after{content:""; position:absolute; inset:0; z-index:1;
+    background:radial-gradient(ellipse 70% 60% at 38% 45%, rgba(2,6,23,.92), rgba(2,6,23,.35) 60%, transparent)}
+  svg text{font-family:var(--mono)}
+  details{background:var(--surface); border:1px solid var(--line);
+    border-radius:12px; margin-top:12px}
+  summary{cursor:pointer; padding:14px 18px; font-weight:600; list-style:none;
+    display:flex; gap:12px; align-items:center}
+  summary::-webkit-details-marker{display:none}
+  details .body{padding:0 18px 16px; color:var(--sub); font-size:.92rem}
+  details .body b{color:var(--ink)}
+  .cmd{background:#0b1222; border:1px solid var(--line); border-radius:8px;
+    padding:10px 14px; font-family:var(--mono); font-size:.8rem; margin:8px 0;
+    overflow-x:auto; white-space:pre}
+  #stage{width:100%; height:440px; border:1px solid var(--line); border-radius:14px;
+    background:#04091c; margin-top:22px; cursor:grab}
+  .js .rv{opacity:0; transform:translateY(26px);
+    transition:opacity .7s ease, transform .7s ease}
+  .js .rv.in{opacity:1; transform:none}
+  @media (prefers-reduced-motion: reduce){
+    .js .rv{transition-duration:.01s}
+  }
+  footer{padding:40px 0 70px; color:var(--sub); font-size:.85rem}
+</style>
+</head>
+<body>
+<script>document.body.classList.add('js')</script>
+
+<!-- ═══════════════ 1 · HERO ═══════════════ -->
+<div class="hero">
+  <canvas id="sky"></canvas>
+  <div class="wrap">
+    <div class="label">Surviving the Singularity · session report · 2026-08-04</div>
+    <h1>Every check is now a real signal, the merge is <span class="k">tested and waiting</span>, and four actions need your keys.</h1>
+    <p class="lede">
+      The failure emails were a miscalibrated alarm, not broken work: the build guard failed
+      every mid-cycle push by construction. It is fixed at the root, e2e went green for the
+      first time in its existence, the live webhook is proven end to end, and the exact merge
+      you would push to production has been performed in a sandbox and passed everything.
+      The harness stops me at production's door, so the last four moves are yours.
+    </p>
+    <div class="nums">
+      <div class="num"><b class="g">4/4</b><span>CI workflows green, each meaning something</span></div>
+      <div class="num"><b class="g">114/114</b><span>e2e tests pass on the exact merged tree</span></div>
+      <div class="num"><b class="r">10</b><span>merge conflicts a blind merge would have hit</span></div>
+      <div class="num"><b>0.79 MB</b><span>real page weight; the dev ruler said 3.24</span></div>
+      <div class="num"><b>27 → 9</b><span>branches; 24 archive-tagged, 18 deleted</span></div>
+      <div class="num"><b class="k">4</b><span>actions blocked on you, listed at the end</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ 2 · SITUATION ═══════════════ -->
+<section>
+  <div class="wrap rv">
+    <div class="label">Situation · your words, scored</div>
+    <h2>What you asked for, and where each ask stands</h2>
+    <div class="tblwrap"><table>
+      <tr><th>You said</th><th>Status</th><th>Where it stands</th></tr>
+      <tr><td>"I want the errors fixed properly and systematically verified"</td>
+        <td><span class="pill ok">closed</span></td>
+        <td>All four workflows green. Each fix was watched red before being trusted green: negative controls below.</td></tr>
+      <tr><td>"I want the latest version to be served on the site"</td>
+        <td><span class="pill wait">one push away</span></td>
+        <td>Merge commit <code>493a4f5</code> is fully tested. The harness blocks me from pushing to main; the command is in Next Steps.</td></tr>
+      <tr><td>"public pushed and served stuff should all come from a single source of truth"</td>
+        <td><span class="pill part">partial</span></td>
+        <td>The pipeline now enforces it (the <code>released</code> field). But GitHub Pages still serves a second, ungated copy of the whole book. Kill switch is yours.</td></tr>
+      <tr><td>"show me the evidence that it will not break everything if we merge"</td>
+        <td><span class="pill ok">closed</span></td>
+        <td>Evidence found the danger: 10 conflicts. All resolved with per-file proof, then the merged tree passed the full gauntlet.</td></tr>
+      <tr><td>"flatten all branches"</td>
+        <td><span class="pill part">partial</span></td>
+        <td>27 refs down to 9. Every dead branch preserved under an <code>archive/*</code> tag first, so nothing is lost. 7 stragglers need one command.</td></tr>
+      <tr><td>"there should not be a 7.6"</td>
+        <td><span class="pill ok">closed</span></td>
+        <td>Renamed to 0.7.5.1 everywhere (<code>1e2a77f</code>), harness re-proven, and the "+0.0.1 means a fourth segment" rule saved to memory.</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 3 · WHAT CHANGED, PART ONE ═══════════════ -->
+<section>
+  <div class="wrap rv">
+    <div class="label">The primary fix · why your inbox was full</div>
+    <h2>Two versions, two jobs: the site now ships the <span class="k">released</span> build</h2>
+    <p class="lede" style="margin-bottom:8px">
+      book.json used to carry one version, and every reader-facing download link derived from
+      it. But that version is the OPEN working label: it runs ahead of the newest built book
+      for the entire editing cycle, so every mid-cycle push linked files that deliberately do
+      not exist yet, and the build guard failed on all of them. Weeks of expected-red emails,
+      training you to ignore the one that would matter.
+    </p>
+    <p class="lede">
+      Now book.json carries <code>version</code> (the manuscript label, 0.7.5.1) and
+      <code>released</code> (the newest published build, 0.7.5). Everything a reader touches
+      derives from <code>released</code>, and the publish script stamps it at version close
+      so the pair cannot drift apart by hand.
+    </p>
+
+    <svg viewBox="0 0 960 300" style="width:100%; margin-top:26px" role="img" aria-label="Two-version pipeline diagram">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/>
+        </marker>
+      </defs>
+      <rect x="30" y="40" width="220" height="84" rx="12" fill="rgba(59,130,246,.12)" stroke="#3b82f6"/>
+      <text x="140" y="72" text-anchor="middle" fill="#f1f5f9" font-size="15">version: 0.7.5.1</text>
+      <text x="140" y="98" text-anchor="middle" fill="#94a3b8" font-size="12">the manuscript, edited daily</text>
+
+      <rect x="30" y="176" width="220" height="84" rx="12" fill="rgba(245,158,11,.12)" stroke="#f59e0b"/>
+      <text x="140" y="208" text-anchor="middle" fill="#f1f5f9" font-size="15">released: 0.7.5</text>
+      <text x="140" y="234" text-anchor="middle" fill="#94a3b8" font-size="12">newest built PDF and EPUB</text>
+
+      <rect x="380" y="40" width="230" height="84" rx="12" fill="rgba(30,41,59,.6)" stroke="#334155"/>
+      <text x="495" y="72" text-anchor="middle" fill="#f1f5f9" font-size="14">/read and /book pages</text>
+      <text x="495" y="98" text-anchor="middle" fill="#94a3b8" font-size="12">render the living draft</text>
+
+      <rect x="380" y="176" width="230" height="84" rx="12" fill="rgba(30,41,59,.6)" stroke="#334155"/>
+      <text x="495" y="200" text-anchor="middle" fill="#f1f5f9" font-size="14">download links, redirects,</text>
+      <text x="495" y="220" text-anchor="middle" fill="#f1f5f9" font-size="14">"You get v0.7.5", build guard</text>
+      <text x="495" y="244" text-anchor="middle" fill="#94a3b8" font-size="12">all derive from released</text>
+
+      <rect x="730" y="108" width="200" height="84" rx="12" fill="rgba(52,211,153,.1)" stroke="#34d399"/>
+      <text x="830" y="140" text-anchor="middle" fill="#f1f5f9" font-size="14">npm run book:release</text>
+      <text x="830" y="164" text-anchor="middle" fill="#94a3b8" font-size="12">stamps released = version</text>
+
+      <line x1="250" y1="82" x2="376" y2="82" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arr)"/>
+      <line x1="250" y1="218" x2="376" y2="218" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arr)"/>
+      <line x1="610" y1="218" x2="726" y2="168" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arr)" stroke-dasharray="5 4"/>
+      <line x1="610" y1="82" x2="726" y2="132" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arr)" stroke-dasharray="5 4"/>
+      <text x="668" y="96" text-anchor="middle" fill="#64748b" font-size="11">at version close</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══════════════ 4 · PROOF ═══════════════ -->
+<section>
+  <div class="wrap rv">
+    <div class="label">Proof · every test run, with controls</div>
+    <h2>Tests run this session, and why the controls matter</h2>
+    <p class="lede">A table of green ticks proves nothing on its own. Each fix below was
+      also forced to fail, so the green is a measurement rather than a hope.</p>
+
+    <div class="tblwrap"><table>
+      <tr><th>What</th><th>Test</th><th>Result</th></tr>
+      <tr><td rowspan="3"><b>Downloads gate</b><br><span class="sub">check-book-downloads.mjs</span></td>
+        <td>Run against real state (released 0.7.5)</td>
+        <td><span class="pill ok">clean, exit 0</span> with honest "open cycle" notice</td></tr>
+      <tr><td><b>Negative control:</b> pointed released at nonexistent 0.7.9</td>
+        <td><span class="pill bad">exit 1</span> on exactly the 404 incident class it exists for</td></tr>
+      <tr><td><b>Positive control:</b> full <code>npm run build</code> with all prebuild gates</td>
+        <td><span class="pill ok">green</span> first mid-cycle pass in repo history</td></tr>
+
+      <tr><td rowspan="3"><b>Stripe webhook</b><br><span class="sub">local dev server + prod guard</span></td>
+        <td>Correctly signed event, known test secret</td>
+        <td><span class="pill ok">HTTP 200</span> passed the verifier</td></tr>
+      <tr><td><b>Negative controls:</b> wrong secret; future-dated timestamp</td>
+        <td><span class="pill bad">HTTP 400</span> and <span class="pill bad">HTTP 400</span> both rejected</td></tr>
+      <tr><td>Production, via daily guard run 30927384832</td>
+        <td><span class="pill ok">webhook_ok=True</span> a signed event returned 200 from the LIVE site</td></tr>
+
+      <tr><td rowspan="3"><b>Page weight</b><br><span class="sub">c-speed.spec.js</span></td>
+        <td>Old regime: dev server, CI run 30922307065</td>
+        <td><span class="pill bad">3.24 MB vs 2 MB</span> failed 3 of 3 retries, deterministic</td></tr>
+      <tr><td>Composition probe: what the 3.24 MB was</td>
+        <td>~2.5 MB dev scaffolding (unminified kit client, HMR) readers never download</td></tr>
+      <tr><td>New regime: production preview build</td>
+        <td><span class="pill ok">0.79 MB</span> passes with 1.2 MB of honest headroom</td></tr>
+
+      <tr><td rowspan="2"><b>Mobile tap target</b><br><span class="sub">e-mobile-design.spec.js</span></td>
+        <td>Before: nav Preorder pill measured on Pixel 5</td>
+        <td><span class="pill bad">34.6 px</span> under the 36 px minimum</td></tr>
+      <tr><td>After 7px vertical padding, re-measured</td>
+        <td><span class="pill ok">38.6 px</span> passes on chromium and WebKit</td></tr>
+
+      <tr><td rowspan="2"><b>Navbar visibility</b><br><span class="sub">d-device-compliance.spec.js</span></td>
+        <td>Before: same-URL goto loop on WebKit touch profiles</td>
+        <td><span class="pill bad">failed all 3 retries</span> "interrupted by another navigation"</td></tr>
+      <tr><td>After: one load, live viewport resizes</td>
+        <td><span class="pill ok">passes</span> on all six device profiles, three CI runs in a row</td></tr>
+
+      <tr><td rowspan="2"><b>Preorder bundle</b><br><span class="sub">Supabase live object</span></td>
+        <td>Republished with v0.7.5 copy and audited casebook</td>
+        <td><span class="pill ok">verify --remote Clean</span> live sha256 89054717… matches manifest exactly</td></tr>
+      <tr><td>Safety: old object shelved before overwrite</td>
+        <td><span class="pill ok">48,776,826 bytes preserved</span> as research-bundle-v1-backup-20260804.zip</td></tr>
+
+      <tr><td rowspan="4"><b>The merge itself</b><br><span class="sub">sandbox commit 493a4f5</span></td>
+        <td>Blind-merge check: conflicts on contact</td>
+        <td><span class="pill bad">10 files conflicted</span> this is what pushing without testing meant</td></tr>
+      <tr><td>Resolution audit, per file</td>
+        <td>8 branch supersets proven, 1 main superset, 1 three-way fold (sts.py, parses, both features present)</td></tr>
+      <tr><td>Gauntlet on the merged tree</td>
+        <td><span class="pill ok">build ✔ · verify Clean · id verify 6/6 · 114/114 e2e</span></td></tr>
+      <tr><td>Env parity vs production</td>
+        <td><span class="pill ok">all 7 secrets present</span>; 4 new names verified to degrade gracefully</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 5 · 3D ═══════════════ -->
+<section>
+  <div class="wrap rv">
+    <div class="label">The moving part · drag to orbit</div>
+    <h2>Where the book flows, and where it is stopped</h2>
+    <canvas id="stage"></canvas>
+    <div class="cards c3">
+      <div class="card"><h3 class="b">Blue stream</h3>
+        <p>The manuscript: source commits flowing through the branch into the tested merge. Everything up to the amber gate is done and verified.</p></div>
+      <div class="card"><h3 class="k">Amber gate</h3>
+        <p>The pulsing gate is <code>git push origin 493a4f5:main</code>. The harness will not let me through it; production deploys with live Stripe keys the moment you push.</p></div>
+      <div class="card"><h3 class="g">Green stream</h3>
+        <p>Past the gate: main, Cloudflare Pages, readers. The four CI guards keep watching after the merge, so drift shows up as a real red within a day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 6 · WHAT CHANGED, PART TWO ═══════════════ -->
+<section>
+  <div class="wrap rv">
+    <div class="label">The secondary fix · two lines, rejoined</div>
+    <h2>The merge: what diverged and how it was resolved</h2>
+    <p class="lede">While the merge sat held, work landed on both lines independently:
+      main got guard rewrites, currency corrections and a devlog directly, and the branch
+      got the audit, auth, e2e and pipeline work. Ten files ended up claimed by both sides.</p>
+    <svg viewBox="0 0 960 240" style="width:100%; margin-top:24px" role="img" aria-label="Branch divergence and merge diagram">
+      <defs>
+        <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/>
+        </marker>
+      </defs>
+      <line x1="40" y1="120" x2="240" y2="120" stroke="#94a3b8" stroke-width="2"/>
+      <path d="M240 120 C 320 120 320 60 400 60 L 640 60" stroke="#34d399" stroke-width="2" fill="none"/>
+      <path d="M240 120 C 320 120 320 180 400 180 L 640 180" stroke="#3b82f6" stroke-width="2" fill="none"/>
+      <path d="M640 60 C 720 60 720 120 800 120" stroke="#34d399" stroke-width="2" fill="none"/>
+      <path d="M640 180 C 720 180 720 120 800 120" stroke="#3b82f6" stroke-width="2" fill="none"/>
+      <line x1="800" y1="120" x2="920" y2="120" stroke="#f59e0b" stroke-width="2.4" marker-end="url(#arr2)"/>
+      <circle cx="240" cy="120" r="6" fill="#94a3b8"/>
+      <circle cx="800" cy="120" r="8" fill="#f59e0b"/>
+      <text x="240" y="100" text-anchor="middle" fill="#94a3b8" font-size="12">base 332fdfd</text>
+      <text x="500" y="44" text-anchor="middle" fill="#34d399" font-size="12">main: 16 commits (sweeps, guard, currency, devlog)</text>
+      <text x="500" y="212" text-anchor="middle" fill="#3b82f6" font-size="12">v0.7.3: 66 commits (audit, auth, e2e, pipeline)</text>
+      <text x="800" y="98" text-anchor="middle" fill="#f59e0b" font-size="12">493a4f5</text>
+      <text x="862" y="140" text-anchor="middle" fill="#94a3b8" font-size="11">awaiting your push</text>
+      <g font-size="11" fill="#f87171">
+        <text x="655" y="112" text-anchor="middle">10 conflicts:</text>
+        <text x="655" y="128" text-anchor="middle">resolved, audited</text>
+      </g>
+    </svg>
+    <div class="cards c2">
+      <div class="card"><h3>Resolved toward the branch (9 files)</h3>
+        <p>Proven supersets, not preferences: the branch devlog holds both posts where main
+        holds one; the branch factcheck instrument already contained main's soft-404 and
+        charset handling in stronger form; gitignore, package.json, workshop and index files
+        likewise. The friends page keeps the released-derived links that make its downloads
+        resolve.</p></div>
+      <div class="card"><h3>Resolved toward main, and one fold</h3>
+        <p>The Stripe guard workflow took main's newer post-cutover rewrite. sts.py took the
+        branch base plus main's one genuine unique improvement, asking Stripe's API for the
+        price instead of scraping the page, folded in with a 3-way apply and verified to
+        parse with both features present.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 7 · TIMELINE ═══════════════ -->
+<section>
+  <div class="wrap rv">
+    <div class="label">Timeline · what shipped today, in order</div>
+    <h2>Thirteen commits on <code>v0.7.3</code>, one waiting for main</h2>
+    <div class="tblwrap"><table>
+      <tr><th>SHA</th><th>What</th></tr>
+      <tr><td class="mono">3bc5669</td><td>Bundle rebuilt: v0.7.5 book copy + post-audit casebook; <code>--book-version</code> flag added, gate still refuses without it</td></tr>
+      <tr><td class="mono">e9450e1 · ae97122</td><td>Scope ledger; R2 move plan written (plan only, decisions listed for you)</td></tr>
+      <tr><td class="mono">3458fa3</td><td>Bundle republished to the live object, dated backup first, remote verify Clean</td></tr>
+      <tr><td class="mono">61afc5e</td><td>Click-to-load YouTube facade (~2.3 MB of player payload gone) + 38.6 px nav CTA</td></tr>
+      <tr><td class="mono">711cfbb</td><td>Webhook verifier proven locally with negative controls</td></tr>
+      <tr><td class="mono">41accc4</td><td>Page weight measured against the built artifact; navbar test resizes instead of re-goto</td></tr>
+      <tr><td class="mono">e295044</td><td>e2e green on all three shards, first in the workflow's existence (run 30929824921)</td></tr>
+      <tr><td class="mono">1e2a77f</td><td>Version corrected to 0.7.5.1 everywhere; harness re-proven; rule saved to memory</td></tr>
+      <tr><td class="mono">3fb195b</td><td>Webhook production half closed via the daily guard's signed probe</td></tr>
+      <tr><td class="mono">1f18bc7</td><td>The <code>released</code> field: build guard green mid-cycle for the first time; stripe-guard merge landmine defused</td></tr>
+      <tr><td class="mono">8aa0279 · 4ecb62e</td><td>Scope: checks are real signals; merge tested; flatten recorded</td></tr>
+      <tr><td class="mono k">493a4f5</td><td><b>The tested merge, sandbox only.</b> Yours to push.</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 8 · NEXT STEPS ═══════════════ -->
+<section>
+  <div class="wrap rv">
+    <div class="label">Next steps · ranked by money and trust</div>
+    <h2>Four commands, all blocked on you by the permission layer</h2>
+
+    <details open>
+      <summary><span class="pill wait">1</span> Push the merge, production serves the latest</summary>
+      <div class="body">
+        <p><b>Situation:</b> production serves v0.7.4-era content and 404s the stable
+        download aliases. The fix is one push of a commit that passed 114/114 tests.</p>
+        <div class="cmd">cd ~/Code/active/sts-v0.7.3 && git push origin 493a4f5:main</div>
+        <p><b>Expected outcome:</b> Cloudflare deploys in about 2 minutes. Then tell me and
+        I probe production: home, aliases, early-access copy, webhook, <code>sts.py stripe --live</code>.</p>
+        <p><b>Why the harness blocked me:</b> main auto-deploys with live Stripe keys. That
+        boundary existing is good; it just means the finger is yours.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="pill wait">2</span> Kill the GitHub Pages leak</summary>
+      <div class="body">
+        <p><b>Situation:</b> your complete book source is publicly readable at
+        ctavolazzi.github.io/survivingthesingularity. Verified today: book.json, chapter
+        markdown and the casebook all return 200 to anyone. It re-publishes on every push to main.</p>
+        <div class="cmd">gh api -X DELETE /repos/ctavolazzi/survivingthesingularity/pages</div>
+        <p>Or in the browser: repo <b>Settings → Pages → Unpublish site</b>. One click.
+        <b>Expected outcome:</b> those URLs 404; your only public outlet is the real site.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="pill wait">3</span> Set SUPABASE_ANON_KEY so signup works</summary>
+      <div class="body">
+        <p><b>Situation:</b> the new auth reads server-only <code>SUPABASE_ANON_KEY</code>,
+        which production lacks. Without it signup degrades to unconfigured; nothing else is
+        affected. The value already sits in your project config under the legacy
+        <code>PUBLIC_SUPABASE_ANON_KEY</code> name (an sb_publishable key).</p>
+        <div class="cmd">wrangler pages secret put SUPABASE_ANON_KEY --project-name survivingthesingularity
+# paste the sb_publishable_… value when prompted</div>
+        <p><b>Expected outcome:</b> next deploy picks it up; /signup works.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="pill wait">4</span> Finish the flatten: 7 straggler branches</summary>
+      <div class="body">
+        <p><b>Situation:</b> 18 of 24 dead branches deleted; the permission layer balked at
+        these 7. Every one is already preserved under an <code>archive/*</code> tag, so
+        deletion loses nothing.</p>
+        <div class="cmd">cd ~/Code/active/sts-v0.7.3 && git push origin --delete \
+  book-reader-polish claude/claude-md-mln4pmc1d9vxfylx-dB5wh \
+  claude/site-review-audit-bVx9J cloudflare-fix continue-card-responsive \
+  vd6t7n-codex/explore-site-and-create-dossier weave-and-mobile-polish</div>
+        <p><b>Expected outcome:</b> two branches remain: <code>main</code> (public truth)
+        and <code>v0.7.3</code> (workbench).</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ═══════════════ 9 · BOTTOM LINE ═══════════════ -->
+<section style="border-bottom:none">
+  <div class="wrap rv">
+    <div class="label">Bottom line</div>
+    <h2>What to trust, and what not to trust yet</h2>
+    <div class="cards c2">
+      <div class="card" style="border-color:rgba(52,211,153,.35)">
+        <h3 class="g">Safe to rely on</h3>
+        <p>· All four CI workflows: a red email now means something real<br>
+           · The live preorder bundle: remote-verified byte for byte today<br>
+           · The live webhook: signed-event proof, refreshed daily at 14:00 UTC by the guard<br>
+           · The merge commit 493a4f5: tested as the exact bytes you would deploy<br>
+           · The archive tags: every deleted branch is recoverable</p>
+      </div>
+      <div class="card" style="border-color:rgba(248,113,113,.35)">
+        <h3 class="r">Not yet</h3>
+        <p>· Production still serves the old content until you push (step 1)<br>
+           · The book is still free to anyone with the GitHub Pages URL (step 2)<br>
+           · Signup will not work in production until the key exists (step 3)<br>
+           · The authors-edition price was never set in production, so that path charges
+             the standard $5; pre-existing, documented in the checkout code, not from today</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  Generated 2026-08-04 · every number traceable to a command run this session ·
+  scope of record: V0.7.5.1-SCOPE.md · plan of record for storage: docs/r2-move-plan.md
+</div></footer>
+
+<script type="module">
+import * as THREE from 'three';
+
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ── reveal on scroll ── */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold:.12});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+/* ── soft dot texture, shared ── */
+function dotTexture(color){
+  const c = document.createElement('canvas'); c.width = c.height = 64;
+  const g = c.getContext('2d');
+  const grad = g.createRadialGradient(32,32,0,32,32,32);
+  grad.addColorStop(0, color); grad.addColorStop(.4, color);
+  grad.addColorStop(1, 'rgba(0,0,0,0)');
+  g.fillStyle = grad; g.fillRect(0,0,64,64);
+  return new THREE.CanvasTexture(c);
+}
+
+/* ── hero starfield ── */
+(() => {
+  const cv = document.getElementById('sky');
+  const r = new THREE.WebGLRenderer({canvas:cv, alpha:true, antialias:true});
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(60, 2, .1, 100);
+  cam.position.set(0, 0, 30); cam.lookAt(0,0,0);
+  const N = 900, pos = new Float32Array(N*3);
+  for (let i=0;i<N;i++){
+    pos[i*3]   = (Math.random()-.5)*90;
+    pos[i*3+1] = (Math.random()-.5)*50;
+    pos[i*3+2] = (Math.random()-.5)*40;
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos,3));
+  const mat = new THREE.PointsMaterial({size:.5, map:dotTexture('rgba(148,163,184,1)'),
+    transparent:true, opacity:.7, depthWrite:false});
+  const pts = new THREE.Points(geo, mat); scene.add(pts);
+  const amberGeo = new THREE.BufferGeometry();
+  const M = 60, ap = new Float32Array(M*3);
+  for (let i=0;i<M;i++){ ap[i*3]=(Math.random()-.5)*80; ap[i*3+1]=(Math.random()-.5)*44; ap[i*3+2]=(Math.random()-.5)*30; }
+  amberGeo.setAttribute('position', new THREE.BufferAttribute(ap,3));
+  scene.add(new THREE.Points(amberGeo, new THREE.PointsMaterial({size:.9,
+    map:dotTexture('rgba(245,158,11,1)'), transparent:true, opacity:.8, depthWrite:false})));
+  function size(){
+    const w = cv.clientWidth, h = cv.clientHeight;
+    r.setSize(w, h, false); r.setPixelRatio(Math.min(devicePixelRatio,2));
+    cam.aspect = w/h; cam.updateProjectionMatrix();
+  }
+  addEventListener('resize', size); size();
+  let t = 0;
+  (function loop(){
+    requestAnimationFrame(loop);
+    if (!reduced){ t += .0009; pts.rotation.y = t; pts.rotation.x = t*.35; }
+    r.render(scene, cam);
+  })();
+})();
+
+/* ── pipeline stage ── */
+(() => {
+  const cv = document.getElementById('stage');
+  const r = new THREE.WebGLRenderer({canvas:cv, antialias:true});
+  r.setClearColor(0x04091c);
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(50, 2, .1, 200);
+  cam.position.set(0, 9, 26); cam.lookAt(0, 0, 0);
+  scene.add(new THREE.AmbientLight(0xffffff, .8));
+  const key = new THREE.DirectionalLight(0xffffff, 1.1); key.position.set(6,10,8);
+  scene.add(key);
+
+  const AMBER = 0xf59e0b, BLUE = 0x3b82f6, GREEN = 0x34d399, GREY = 0x64748b;
+
+  function label(text, y=1.9){
+    const c = document.createElement('canvas'); c.width = 512; c.height = 96;
+    const g = c.getContext('2d');
+    g.font = '600 40px JetBrains Mono, monospace';
+    g.textAlign = 'center'; g.fillStyle = '#e2e8f0';
+    g.shadowColor = 'rgba(2,6,23,.9)'; g.shadowBlur = 10;
+    g.fillText(text, 256, 60);
+    const s = new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c),
+      transparent:true, depthWrite:false}));
+    s.scale.set(7.4, 1.4, 1); s.position.y = y;
+    return s;
+  }
+  function node(x, color, text, shape='box'){
+    const grp = new THREE.Group();
+    const geo = shape === 'gate'
+      ? new THREE.TorusGeometry(1.15, .22, 20, 40)
+      : shape === 'sphere' ? new THREE.SphereGeometry(.95, 32, 24)
+      : new THREE.BoxGeometry(1.7, 1.7, 1.7);
+    const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
+      color, roughness:.35, metalness:.25,
+      emissive: color, emissiveIntensity:.18}));
+    grp.add(mesh); grp.add(label(text));
+    grp.position.set(x, 0, 0);
+    scene.add(grp);
+    return {grp, mesh};
+  }
+
+  const nodes = [
+    node(-13, BLUE,  'source 0.7.5.1'),
+    node(-7.8, BLUE, 'branch v0.7.3'),
+    node(-2.6, BLUE, 'merge 493a4f5', 'sphere'),
+    node(2.6, AMBER, 'YOUR PUSH', 'gate'),
+    node(7.8, GREEN, 'main + deploy'),
+    node(13, GREEN,  'readers', 'sphere'),
+  ];
+  const gate = nodes[3].mesh;
+
+  /* connecting rail */
+  const railMat = new THREE.MeshStandardMaterial({color:GREY, roughness:.6});
+  const rail = new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,26,10), railMat);
+  rail.rotation.z = Math.PI/2; scene.add(rail);
+
+  /* flowing particles: blue up to the gate, green after (green only trickles) */
+  function stream(x0, x1, color, n, speed){
+    const geo = new THREE.BufferGeometry();
+    const p = new Float32Array(n*3), phase = new Float32Array(n);
+    for (let i=0;i<n;i++){
+      phase[i] = Math.random();                    // seeded across the whole path
+      p[i*3]   = x0 + (x1-x0)*phase[i];
+      p[i*3+1] = (Math.random()-.5)*.5;
+      p[i*3+2] = (Math.random()-.5)*.5;
+    }
+    geo.setAttribute('position', new THREE.BufferAttribute(p,3));
+    const pts = new THREE.Points(geo, new THREE.PointsMaterial({size:.34,
+      map:dotTexture(`#${color.toString(16).padStart(6,'0')}`), transparent:true,
+      opacity:.95, depthWrite:false}));
+    scene.add(pts);
+    return {geo, p, phase, x0, x1, speed};
+  }
+  const streams = [
+    stream(-13, 2.0, BLUE, 90, .0022),
+    stream(3.2, 13, GREEN, 18, .0012),
+  ];
+
+  /* orbit drag */
+  let dragging=false, px=0, yaw=0, targetYaw=0;
+  cv.addEventListener('pointerdown', e => {dragging=true; px=e.clientX; cv.setPointerCapture(e.pointerId);});
+  cv.addEventListener('pointermove', e => {if(dragging){targetYaw += (e.clientX-px)*.005; px=e.clientX;}});
+  cv.addEventListener('pointerup', () => dragging=false);
+
+  function size(){
+    const w = cv.clientWidth, h = cv.clientHeight;
+    r.setSize(w, h, false); r.setPixelRatio(Math.min(devicePixelRatio,2));
+    cam.aspect = w/h; cam.updateProjectionMatrix();
+  }
+  addEventListener('resize', size); size();
+
+  let t = 0;
+  (function loop(){
+    requestAnimationFrame(loop);
+    if (!reduced){
+      t += .016;
+      for (const s of streams){
+        for (let i=0;i<s.phase.length;i++){
+          s.phase[i] += s.speed;
+          if (s.phase[i] > 1) s.phase[i] = 0;
+          s.p[i*3] = s.x0 + (s.x1 - s.x0) * s.phase[i];
+        }
+        s.geo.attributes.position.needsUpdate = true;
+      }
+      gate.material.emissiveIntensity = .3 + Math.sin(t*2.4)*.25;
+      gate.rotation.y += .012;
+      yaw += (targetYaw - yaw)*.08;
+      const R = 27;
+      cam.position.x = Math.sin(yaw)*R;
+      cam.position.z = Math.cos(yaw)*R;
+      cam.position.y = 9;
+      cam.lookAt(0,0,0);
+    }
+    r.render(scene, cam);
+  })();
+})();
+</script>
+</body>
+</html>

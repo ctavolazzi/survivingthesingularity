@@ -1,9 +1,14 @@
 import { isSameOrigin } from '$lib/server/sameOrigin.js';
-import { json, redirect } from '@sveltejs/kit';
+import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
+import { env as publicEnv } from '$env/dynamic/public';
 import { dev } from '$app/environment';
 import Stripe from 'stripe';
 import { rateLimit } from '$lib/server/rateLimit.js';
+import { getOrCreateCheckout } from '$lib/server/checkoutReservations.js';
+import { currentBundleRelease } from '$lib/server/bundleRelease.js';
+import { validatePurchaseEmailConfig, validateEmailLinkOrigin } from '$lib/emailConfig.js';
+import { isConfiguredStripeWebhookSecret } from '$lib/stripeConfig.js';
 import { recordCheckoutInitiated } from '$lib/server/transactions.js';
 import { normalizeEmail, isValidEmail } from '$lib/server/validEmail.js';
 import { findExistingPreorder, resendPreorderDownload } from '$lib/server/preorderLookup.js';
@@ -17,11 +22,10 @@ const SECRET_KEY    = env.STRIPE_SECRET_KEY;
 // having one variable set is enough to exercise the flow. In production it is a
 // hazard: an unset, misspelled, or dropped edition variable does not fail - it
 // silently bills whatever the shared one happens to point at. That is exactly
-// the shape of the 2026-07 defect where a $5 product charged $9, and it is the
-// shape of a live bug right now, since STRIPE_PRICE_ID_AUTHORS is not set in
-// production and `authors` therefore resolves to the standard price. The
-// endpoint accepts edition_type from any caller, so that path is reachable
-// whether or not the UI exposes a button for it.
+// the shape of the 2026-07 defect where a $5 product charged $9. The same
+// fallback could also assign the standard price to an unconfigured Author's
+// Edition. The endpoint accepts edition_type from any caller, so that path
+// is reachable whether or not the UI exposes a button for it.
 //
 // So: dev keeps the fallback, production demands the edition's own variable and
 // refuses the sale without it. Refusing is the safe failure - a customer who
@@ -31,8 +35,7 @@ const EDITION_PRICE_IDS = {
   authors:  env.STRIPE_PRICE_ID_AUTHORS  || (dev ? PRICE_ID : undefined),
 };
 
-// Graceful: if no Stripe key, we run in mock mode so the rest of the UI
-// can be tested without credentials. Remove the mock branch before launch.
+// Credential-free mocks exist only in development and never touch storage.
 const isMockKey = !SECRET_KEY || SECRET_KEY === 'placeholder' || SECRET_KEY.startsWith('your_');
 const stripe = isMockKey ? null : new Stripe(SECRET_KEY, { apiVersion: '2024-06-20' });
 
@@ -75,6 +78,14 @@ export async function POST({ request, url, getClientAddress }) {
     return json({ error: 'Enter a valid email address.' }, { status: 400 });
   }
 
+  const isMockPrice = !priceId || priceId === 'placeholder' || priceId.startsWith('your_');
+  // Let local UI development run without a database as well as without Stripe.
+  // The production compiler's dev=false prevents this branch from granting
+  // access, and the mock return page never signs a real storage URL.
+  if (dev && (!stripe || isMockPrice)) {
+    return json({ url: `${url.origin}/early-access/success?session_id=mock_session` });
+  }
+
   const existing = await findExistingPreorder({ email, rawEmail, editionType });
 
   // The lookup could not run. Do NOT treat that as "no existing order": a
@@ -101,29 +112,48 @@ export async function POST({ request, url, getClientAddress }) {
     });
   }
 
-  // MOCK MODE - dev-only. Lets the UI be tested without Stripe credentials.
-  // In production, a missing/placeholder key must fail loudly, not fake a
-  // successful checkout for a real customer.
-  const isMockPrice = !priceId || priceId === 'placeholder' || priceId.startsWith('your_');
+  // The credential-free development branch already returned above. Missing
+  // production configuration must never simulate a successful purchase.
   if (!stripe || isMockPrice) {
-    if (!dev) {
-      // Name the actual cause. These two failures need completely different
-      // fixes, and "missing credentials" sends whoever reads this log hunting
-      // for an API key that is fine.
-      const cause = !stripe
-        ? 'STRIPE_SECRET_KEY is missing or a placeholder'
-        : `no price configured for the "${editionType}" edition - set STRIPE_PRICE_ID_${editionType.toUpperCase()} in the production environment`;
-      console.error(`[stripe-checkout] Refusing checkout: ${cause}.`);
-      return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
-    }
-    return json({
-      url: `${url.origin}/early-access/success?session_id=mock_session`,
-    });
+    const cause = !stripe
+      ? 'STRIPE_SECRET_KEY is missing or a placeholder'
+      : `no price configured for the "${editionType}" edition - set STRIPE_PRICE_ID_${editionType.toUpperCase()} in the production environment`;
+    console.error(`[stripe-checkout] Refusing checkout: ${cause}.`);
+    return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
+  }
+
+  // A customer can close Stripe before visiting the receipt page. Do not
+  // charge while the independent server-to-server fulfillment path is known
+  // to lack its signing secret. Paid-buyer recovery already ran above.
+  if (!isConfiguredStripeWebhookSecret(env.STRIPE_WEBHOOK_SECRET)) {
+    console.error('[stripe-checkout] refusing checkout: Stripe webhook signing secret is not configured.');
+    return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
+  }
+
+  // Never take a new payment while the deployed release still names an old
+  // private archive or has not confirmed the reviewed bundle's fingerprint.
+  const bundle = currentBundleRelease();
+  if (!bundle.ok) {
+    console.error('[stripe-checkout] refusing checkout:', bundle.error);
+    return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
+  }
+
+  // A new customer must not be charged while delivery is known to be
+  // misconfigured. Existing paid buyers were handled above so a mail outage
+  // still leaves recovery and on-site access available without a second sale.
+  const emailConfig = validatePurchaseEmailConfig(env);
+  const emailLinks = validateEmailLinkOrigin(publicEnv);
+  if (!emailConfig.ok || !emailLinks.ok) {
+    console.error('[stripe-checkout] refusing checkout:', emailConfig.error || emailLinks.error);
+    return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
   }
 
   try {
-    const session = await stripe.checkout.sessions.create({
+    const session = await getOrCreateCheckout({ stripe, email, editionType, params: {
       mode: 'payment',
+      // Restrict launch checkout to synchronous card payments. A completed
+      // but pending bank payment must not open a second payable session.
+      payment_method_types: ['card'],
       line_items: [{ price: priceId, quantity: 1 }],
       success_url: `${url.origin}/early-access/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url:  `${url.origin}/early-access`,
@@ -144,7 +174,24 @@ export async function POST({ request, url, getClientAddress }) {
       // product), so enabling promos here cannot reopen the discount hole.
       allow_promotion_codes: env.ALLOW_PROMOTION_CODES === 'true',
       billing_address_collection: 'auto',
-    });
+      // The consent disclosure, ON the payment page, where the email is given.
+      // CT's ruling 2026-08-04: no accounts; the purchase email IS the buyer's
+      // identity, and release notices with upgrade discounts are part of what
+      // is bought. Saying so at the moment of purchase is what makes emailing
+      // buyers later defensible. The full text lives in /policies
+      // #purchase-emails; this line is the point-of-collection notice.
+      custom_text: {
+        submit: {
+          message:
+            "We'll email your receipt, digital access and included updates while the project is maintained. " +
+            'Print is separate, with your 50% discount. Details: ' +
+            'survivingthesingularity.com/policies',
+        },
+      },
+    } });
+    if (session.pendingPayment) {
+      return json({ error: 'A payment for this email is already being processed. Check your receipt or contact support before trying again.' }, { status: 409 });
+    }
 
     // Put the session on the ledger the moment it exists, before the customer
     // has done anything. This is what makes an abandoned checkout visible: the

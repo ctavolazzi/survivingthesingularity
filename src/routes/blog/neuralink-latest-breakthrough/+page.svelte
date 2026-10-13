@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import { onMount } from 'svelte';
   import Spacer from '$lib/components/Spacer.svelte';
 
@@ -78,16 +79,9 @@
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content="Explore Neuralink's latest breakthroughs in brain-computer interface technology, including human trials, FDA approvals, and future implications." />
-  <meta property="og:title" content={post.title} />
-  <meta property="og:description" content="Explore Neuralink's latest breakthroughs in brain-computer interface technology, including human trials, FDA approvals, and future implications." />
-  <meta property="og:image" content={post.image} />
-  <meta property="og:url" content="https://survivingthesingularity.com/blog/neuralink-latest-breakthrough" />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={post.title} />
-  <meta name="twitter:description" content="Explore Neuralink's latest breakthroughs in brain-computer interface technology, including human trials, FDA approvals, and future implications." />
-  <meta name="twitter:image" content={post.image} />
 </svelte:head>
+
+<SocialMeta title={post.title} description="Explore Neuralink's latest breakthroughs in brain-computer interface technology, including human trials, FDA approvals, and future implications." />
 
 <!-- Reading Progress Bar -->
 <div class="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 z-50">

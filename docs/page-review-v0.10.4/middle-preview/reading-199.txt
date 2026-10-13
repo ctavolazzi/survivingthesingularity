@@ -1,0 +1,31 @@
+The  servers  arrived  in  mud  season,  in  the  back  of  Dennyʼs  truck:
+three retired enterprise machines from a county surplus auction, five
+years old, built like filing cabinets, sold for less than the co-op had
+spent that month on welding gas. Elijah had argued for the purchase
+all winter, and the argument that finally landed was not technical.
+“Every question we ask the cloud,” he said at a Friday dinner, “goes
+out with an envelope of context around it. What weʼre building, what
+weʼre worried about, what we donʼt know yet. Weʼre mailing our diary
+to the company store, one page at a time, and paying the postage.”
+Marta cared about one number, watts, and he had that answer ready,
+because a $211 power bill had taught it to him before anyone here
+knew his name. Priya wanted help searching the plant-pathology ref-
+erences she already trusted. Reuben wanted a first pass through forty
+pages of easement language before he brought his questions to coun-
+sel. Curtis wanted nothing to do with any of it, and said so, and that
+mattered later.
+The rack went together the way everything in the shed went together:
+Marta on steel and power, Elijah on software, everyone else on opin-
+ions. Two scavenged compute cards with a combined forty-eight giga-
+bytes of memory. A salvaged Civic radiator bolted to the shady north
+wall,  two  brass  bulkheads  through  the  corrugated  steel,  a  marine
+pump the size of a fist. And on the first cold boot, fans screaming like
+weather, they loaded the model: a granddaughter of Silvana, open
+weights, three generations downstream of the thing that had started
+all of this, small enough now to live on scavenged silicon and capable
+enough to suggest wording, locate a likely bug, or turn a confusing
+manual into questions somebody could check. Elijah sat with that for
+a minute in the dark of the shed. The fire that had burned down his
+old life, purring in a stove he had built.
+SURVIVING THE SINGULARITY
+194

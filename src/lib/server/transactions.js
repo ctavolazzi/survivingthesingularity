@@ -8,7 +8,7 @@
  * `preorders` carries a unique constraint on (email, edition_type), which is
  * what enforces one copy per customer. That is correct for a product catalogue
  * and useless as a financial record: a repeat purchase writes no row at all.
- * Live data on 2026-07-29 showed 12 completed Stripe sessions producing 3
+ * Production data observed on 2026-07-29 showed 12 completed Stripe sessions producing 3
  * preorder rows. The other 9 payments existed only in `fulfilled_sessions`,
  * which is a 30-day dedup cache. There was no answer to "who paid us, when,
  * and how much" that came from our own database.
@@ -17,10 +17,9 @@
  * abandoned carts all get a row, because all three are things you eventually
  * want to count.
  *
- * Every function here is best-effort and never throws. The ledger is
- * redundancy against Stripe; failing to write it must never take down the
- * fulfillment it is recording. A missing ledger row is a reporting gap, a
- * thrown error here would be a lost order.
+ * Functions return failures rather than throwing. Paid-session callers must
+ * check completion and fulfillment results and request a retry on failure.
+ * Initiated/expired rows remain best-effort visibility into abandoned carts.
  */
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 
@@ -76,13 +75,32 @@ export async function recordCheckoutInitiated({ sessionId, editionType = 'standa
  * success page both reach this and either may arrive first - and because a
  * session created before sql/013 shipped has no `initiated` row to update.
  *
+ * STILL NEVER THROWS, BUT NOW REPORTS. Previously this swallowed the outcome
+ * entirely, which meant the webhook could not tell a recorded payment from an
+ * unrecorded one and answered Stripe 200 either way. Stripe then stopped
+ * retrying and the row was lost for good. An adversarial audit on 2026-07-29
+ * called that out and was right: returning 500 costs a retry, whereas returning
+ * 200 costs the record permanently, and Stripe retries for about three days for
+ * free. Losing the financial ledger row is what destroys chargeback defence and
+ * makes reconciliation impossible.
+ *
+ * The three outcomes are deliberately distinguishable, because the caller must
+ * treat them differently:
+ *   { ok: true,  configured: true  }  wrote the row
+ *   { ok: true,  configured: false }  no database wired up at all, nothing to do
+ *   { ok: false, configured: true  }  a database IS wired up and the write FAILED
+ *
+ * Paid-session callers require configured AND ok. Missing configuration must
+ * never make a real payment look durably recorded.
+ *
  * @param {{ sessionId: string, paymentIntent?: string|null, email?: string|null, name?: string, editionType?: string, amountTotal?: number|null, currency?: string|null }} args
+ * @returns {Promise<{ ok: boolean, configured: boolean, error?: string }>}
  */
 export async function recordCheckoutCompleted({
   sessionId, paymentIntent = null, email = null, name = '',
   editionType = 'standard', amountTotal = null, currency = null,
 }) {
-  if (!supabaseAdmin || !sessionId) return;
+  if (!supabaseAdmin || !sessionId) return { ok: true, configured: false };
   try {
     const { error } = await supabaseAdmin
       .from('checkout_transactions')
@@ -100,8 +118,13 @@ export async function recordCheckoutCompleted({
         { onConflict: 'session_id' }
       );
     report('recordCheckoutCompleted', sessionId, error);
+    return error
+      ? { ok: false, configured: true, error: error.message }
+      : { ok: true, configured: true };
   } catch (e) {
-    console.error('[transactions] recordCheckoutCompleted threw:', e?.message ?? e);
+    const message = e?.message ?? String(e);
+    console.error('[transactions] recordCheckoutCompleted threw:', message);
+    return { ok: false, configured: true, error: message };
   }
 }
 
@@ -136,14 +159,17 @@ export async function recordCheckoutExpired(sessionId) {
  * paid order nobody delivered.
  */
 export async function markTransactionFulfilled(sessionId) {
-  if (!supabaseAdmin || !sessionId) return;
+  if (!supabaseAdmin || !sessionId) return { ok: false, error: 'Database or session missing' };
   try {
-    const { error } = await supabaseAdmin
+    const { data, error } = await supabaseAdmin
       .from('checkout_transactions')
       .update({ fulfilled: true })
-      .eq('session_id', sessionId);
+      .eq('session_id', sessionId)
+      .select('session_id');
     report('markTransactionFulfilled', sessionId, error);
+    return { ok: !error && Boolean(data?.length), error: error?.message ?? (!data?.length ? 'Transaction missing' : undefined) };
   } catch (e) {
     console.error('[transactions] markTransactionFulfilled threw:', e?.message ?? e);
+    return { ok: false, error: e?.message ?? String(e) };
   }
 }

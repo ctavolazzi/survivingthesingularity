@@ -1,0 +1,336 @@
+{
+  "version": "0.10.4",
+  "epub_sha256": "780a29d0ab73b5cefcc7eae2faa4a9a34a9ed9a902f67efcf252bd9742fae97c",
+  "structural_report_sha256": "983f6d22e77b3e4015a01123f5a940466761357a067a4d3b2d57747428a07f5e",
+  "viewports": [
+    390,
+    768
+  ],
+  "measurements": [
+    {
+      "edit": 1,
+      "source": "18-chapter16.md",
+      "chapter": "EPUB/text/ch023.xhtml",
+      "width": 390,
+      "text": "Own your printing press before you need it. A platform account is a stall in someone else’s market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. Use the list to reach readers who’ve asked to hear from you when the algorithm changes.",
+      "bounds": {
+        "x": 48,
+        "y": 563.390625,
+        "width": 334,
+        "height": 198.375,
+        "top": 563.390625,
+        "right": 382,
+        "bottom": 761.765625,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 2,
+      "source": "27-chapter19.md",
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 390,
+      "text": "If you work for a living: find out what a food business near you does with food it can’t sell, and ask a local food provider what need remains unmet. Bring those findings to one meeting.",
+      "bounds": {
+        "x": 48,
+        "y": 437.640625,
+        "width": 334,
+        "height": 123.984375,
+        "top": 437.640625,
+        "right": 382,
+        "bottom": 561.625,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 3,
+      "source": "27-chapter19.md",
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 390,
+      "text": "If you’re a parent: check what meals your school district provides, whether they reach every kid who needs them, and what keeps anyone out.",
+      "bounds": {
+        "x": 48,
+        "y": 450.625,
+        "width": 334,
+        "height": 99.1875,
+        "top": 450.625,
+        "right": 382,
+        "bottom": 549.8125,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 4,
+      "source": "25-appendix-d.md",
+      "chapter": "EPUB/text/ch031.xhtml",
+      "width": 390,
+      "text": "Teach one entry to one person. Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story. Ask where the comparison fits and where it doesn’t. Panic spreads person to person. So does this.",
+      "bounds": {
+        "x": 48,
+        "y": 426.046875,
+        "width": 334,
+        "height": 148.78125,
+        "top": 426.046875,
+        "right": 382,
+        "bottom": 574.828125,
+        "left": 48
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 5,
+      "source": "26-appendix-e.md",
+      "chapter": "EPUB/text/ch032.xhtml",
+      "width": 390,
+      "text": "From Tier 0 to Tier 3",
+      "bounds": {
+        "x": 8,
+        "y": 486.8125,
+        "width": 374,
+        "height": 25.984375,
+        "top": 486.8125,
+        "right": 382,
+        "bottom": 512.796875,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 6,
+      "source": "29-appendix-g.md",
+      "chapter": "EPUB/text/ch034.xhtml",
+      "width": 390,
+      "text": "The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn’t a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Choose one action to begin each month, then add others as time allows. Move a month if your season or your life needs it, and choose a scale you can sustain.",
+      "bounds": {
+        "x": 8,
+        "y": 84.84375,
+        "width": 374,
+        "height": 247.96875,
+        "top": 84.84375,
+        "right": 382,
+        "bottom": 332.8125,
+        "left": 8
+      },
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 1,
+      "source": "18-chapter16.md",
+      "chapter": "EPUB/text/ch023.xhtml",
+      "width": 768,
+      "text": "Own your printing press before you need it. A platform account is a stall in someone else’s market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. Use the list to reach readers who’ve asked to hear from you when the algorithm changes.",
+      "bounds": {
+        "x": 48,
+        "y": 761.71875,
+        "width": 712,
+        "height": 99.1875,
+        "top": 761.71875,
+        "right": 760,
+        "bottom": 860.90625,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 2,
+      "source": "27-chapter19.md",
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 768,
+      "text": "If you work for a living: find out what a food business near you does with food it can’t sell, and ask a local food provider what need remains unmet. Bring those findings to one meeting.",
+      "bounds": {
+        "x": 48,
+        "y": 474.953125,
+        "width": 712,
+        "height": 49.59375,
+        "top": 474.953125,
+        "right": 760,
+        "bottom": 524.546875,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 3,
+      "source": "27-chapter19.md",
+      "chapter": "EPUB/text/ch026.xhtml",
+      "width": 768,
+      "text": "If you’re a parent: check what meals your school district provides, whether they reach every kid who needs them, and what keeps anyone out.",
+      "bounds": {
+        "x": 48,
+        "y": 475.546875,
+        "width": 712,
+        "height": 49.59375,
+        "top": 475.546875,
+        "right": 760,
+        "bottom": 525.140625,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 4,
+      "source": "25-appendix-d.md",
+      "chapter": "EPUB/text/ch031.xhtml",
+      "width": 768,
+      "text": "Teach one entry to one person. Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story. Ask where the comparison fits and where it doesn’t. Panic spreads person to person. So does this.",
+      "bounds": {
+        "x": 48,
+        "y": 768.3125,
+        "width": 712,
+        "height": 74.390625,
+        "top": 768.3125,
+        "right": 760,
+        "bottom": 842.703125,
+        "left": 48
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 5,
+      "source": "26-appendix-e.md",
+      "chapter": "EPUB/text/ch032.xhtml",
+      "width": 768,
+      "text": "From Tier 0 to Tier 3",
+      "bounds": {
+        "x": 8,
+        "y": 487.28125,
+        "width": 752,
+        "height": 25.984375,
+        "top": 487.28125,
+        "right": 760,
+        "bottom": 513.265625,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    },
+    {
+      "edit": 6,
+      "source": "29-appendix-g.md",
+      "chapter": "EPUB/text/ch034.xhtml",
+      "width": 768,
+      "text": "The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn’t a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Choose one action to begin each month, then add others as time allows. Move a month if your season or your life needs it, and choose a scale you can sustain.",
+      "bounds": {
+        "x": 8,
+        "y": 84.84375,
+        "width": 752,
+        "height": 123.984375,
+        "top": 84.84375,
+        "right": 760,
+        "bottom": 208.828125,
+        "left": 8
+      },
+      "viewport": 768,
+      "horizontal_overflow": false,
+      "visible": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-1-390.png",
+      "sha256": "d6bce7344c04814a16a640a7c3a5b1ca2865d96b7387f6ee42002708da5a195e",
+      "edit": 1,
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-2-390.png",
+      "sha256": "d63a78cbf7690ba58d1d444bcdf03fa9fbf8b18c09d690a684ce71404a27ca1c",
+      "edit": 2,
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-3-390.png",
+      "sha256": "f9f39077a6e75f5a9721f9cdc2cba116cd9cf8d8f36922dbe7a51bd1e8d54bcc",
+      "edit": 3,
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-4-390.png",
+      "sha256": "d84c00fe0f8a540614dc45aab410996a15c0829b2540e5fb552bb5110a8651c8",
+      "edit": 4,
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-5-390.png",
+      "sha256": "702dc806a3b016f858774bc460d63df5a3ab73b5a1a869e7b26ab6841fdfe188",
+      "edit": 5,
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-6-390.png",
+      "sha256": "ae9341f6cf4a6a227ecc05ccc842d1e385e8b1641b8cee3f598cdd4a0292de27",
+      "edit": 6,
+      "width": 390
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-1-768.png",
+      "sha256": "72066c5ebd1d6a5910599cbefa04afd1d8a626198fa67281bb619f37b0f13918",
+      "edit": 1,
+      "width": 768
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-2-768.png",
+      "sha256": "ab49c27a6a2f93b21d5febbeaa11ad69be593a322957fb44343224a50f9b2ed9",
+      "edit": 2,
+      "width": 768
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-3-768.png",
+      "sha256": "74e39a98c4fa2861c4d59c53b3301a3528e0de8329e98f5d62209695ee699f5f",
+      "edit": 3,
+      "width": 768
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-4-768.png",
+      "sha256": "cf8ee11665736137bdcb876b4a2f5f53b64d924b57a930dcb38246a24e1de3d0",
+      "edit": 4,
+      "width": 768
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-5-768.png",
+      "sha256": "0b7e9f12f246b81079e47c801f905cee400e22080aa06f80a78d63dae2864480",
+      "edit": 5,
+      "width": 768
+    },
+    {
+      "file": "docs/v0.10.4/epub-proof/ending-epub-6-768.png",
+      "sha256": "557edd3190d80e052d7b72533aa6ec68ae1f7311f15baf241fc73826c141e3a4",
+      "edit": 6,
+      "width": 768
+    }
+  ],
+  "missing_requests": [],
+  "negative_controls": [
+    {
+      "control": "actual packaged passage replaced in browser",
+      "rejected": true,
+      "restored": true
+    }
+  ],
+  "scope": "All six changed ending passages from packaged EPUB XHTML and CSS, with JavaScript disabled. Text and horizontal bounds checked; screenshots support separate visual inspection.",
+  "browser": "150.0.7871.125",
+  "status": "pass"
+}

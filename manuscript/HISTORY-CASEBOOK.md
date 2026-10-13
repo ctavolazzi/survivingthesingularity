@@ -197,10 +197,14 @@ Sources: [Locomotive Acts — Wikipedia](https://en.wikipedia.org/wiki/Locomotiv
 
 **Story:** Forty years after Gutenberg, Abbot Johannes Trithemius wrote *De Laude Scriptorum* —
 an impassioned defense of hand-copying manuscripts against the vulgar new printing press,
-arguing the scribe's work was devotional and the printed book impermanent ("the printed book is
-made of paper and, like paper, will quickly disappear"). To spread his argument efficiently,
-**he had it printed.** His own monks found perpetual copying pointless; his own library filled
-with printed books he called a "marvelous" art.
+arguing the scribe's work was devotional and the printed book impermanent ("The word written on
+parchment will last a thousand years. The printed word is on paper. How long will it last? The
+most you can expect a book of paper to survive is two hundred years."). To spread his argument
+efficiently, **he had it printed** (1494). His Sponheim library, meanwhile, grew from around
+forty volumes to some two thousand, heavy with products of the press he called a "marvelous" art.
+(Corrected 2026-08-03: the old "quickly disappear" quote could not be traced past retellings, and
+the claim that his monks abandoned copying inverts the record; he kept exhorting them to copy.
+See Appendix B, P-13 Primary Sources.)
 
 **Mechanism:** The defense of the old craft was sincere *and* the defender used the new machine
 the moment reach mattered. Bodies vote with the tool.
@@ -443,10 +447,11 @@ Sources: [Copernican Revolution — Wikipedia](https://en.wikipedia.org/wiki/Cop
 
 ### F4. The horse's last ledger (1783–1960) — P-07
 
-**Story:** James Watt needed to sell steam engines to men who owned horses, so he invented
-a unit — *horsepower* — that priced the animal against the machine in the animal's own
+**Story:** James Watt needed to sell steam engines to men who owned horses, so he
+standardized the engine-sellers' old horse comparison (Savery was already making it in 1702)
+into a unit — *horsepower* — that priced the animal against the machine in the animal's own
 currency. For a century the horse looked safe: US horse and mule population kept climbing,
-peaking above 25 million in the 1910s, an entire economy of hay, stables, farriers, and
+peaking above 26 million in 1915, an entire economy of hay, stables, farriers, and
 manure. Then internal combustion crossed the cost line, and in one working lifetime the
 population collapsed to a few million kept mostly for recreation. The horse never got less
 noble, less strong, or less willing. It got out-priced per watt.
@@ -500,9 +505,11 @@ Sources: [Luddite — Wikipedia](https://en.wikipedia.org/wiki/Luddite) · [Fram
 ### F7. Torches of freedom (New York, 1929) — P-11
 
 **Story:** In 1929 it was taboo for women to smoke in public — half the cigarette market,
-locked. So the American Tobacco Company hired Edward Bernays, Freud's nephew, who hired
+locked. So the American Tobacco Company hired Edward Bernays, Freud's nephew, who recruited
 young women to march in the Easter Sunday parade and, on cue, light cigarettes for the
-photographers he had also arranged. He fed the press the phrase "torches of freedom."
+photographers he had also arranged. (Corrected 2026-08-03: "recruited," not "hired"; and
+Bernays was not "the inventor of the phrase public relations." See Appendix B, P-11 Primary
+Sources, including the Murphree 2015 caveat on how the press actually covered it.) He fed the press the phrase "torches of freedom."
 Emancipation itself was retooled into a nicotine delivery vector. It worked; the taboo
 cracked; the market opened. The women in the parade experienced it as liberation. It was
 inventory expansion.
@@ -537,8 +544,8 @@ Sources: [Late Bronze Age collapse — Wikipedia](https://en.wikipedia.org/wiki/
 ### F9. One hundred sixty acres (United States, 1862) — P-15
 
 **Story:** The Homestead Act of 1862 offered 160 acres of federal land to anyone who would
-live on it and improve it for five years. It was the largest transfer of position in the
-country's history, and it happened *during* the chaos — signed in the middle of the Civil
+live on it and improve it for five years. It was one of the largest transfers of position in
+the country's history, and it happened *during* the chaos — signed in the middle of the Civil
 War, while everyone's attention was on the front. The people who filed claims while the
 world was on fire held title when the world calmed down.
 
@@ -553,7 +560,8 @@ Sources: [Homestead Acts — Wikipedia](https://en.wikipedia.org/wiki/Homestead_
 ### F10. The house that came by mail (1908–1942) — P-16
 
 **Story:** From 1908 to 1942, Sears sold tens of thousands of entire houses out of a
-catalog — precut lumber, nails, paint, instructions, shipped by rail. A family with a
+catalog — numbered lumber (precut from 1916, an Aladdin Company innovation Sears adopted),
+nails, paint, instructions, shipped by rail. A family with a
 foundation and a few friends could assemble a real home without a builder's monopoly
 anywhere in the loop. Thousands of Sears Modern Homes are still standing and still lived in,
 a century of proof that "you can't build your own house" was a market boundary, not a law
@@ -571,8 +579,8 @@ Sources: [Sears Modern Homes — Wikipedia](https://en.wikipedia.org/wiki/Sears_
 
 **Story:** When the war strained the food system, the US government asked amateurs to grow
 food — and roughly twenty million Victory Gardens appeared in backyards, vacant lots, and
-rooftops. By 1944 those gardens were producing on the order of **40 percent of the nation's
-fresh vegetables**. Not agribusiness. Not a five-year plan. Yards. The entire parallel food
+rooftops. By 1944, by the USDA's own count, those gardens were producing on the order of
+**40 percent of the nation's fresh vegetables**. Not agribusiness. Not a five-year plan. Yards. The entire parallel food
 system materialized in about two growing seasons, then was allowed to evaporate when the
 emergency passed.
 
@@ -587,9 +595,9 @@ Sources: [Smithsonian Gardens — Victory Gardens](https://gardens.si.edu/learn/
 
 ### F12. Seventy-nine pages (Philadelphia, 1776) — P-20
 
-**Story:** *Common Sense* was forty-seven pages written in plain speech by a corset-maker's
-son who had been in America barely a year. Printed in January 1776, it tore through the
-colonies in months — proportionally one of the most-read things ever published in America —
+**Story:** *Common Sense* was a seventy-nine-page pamphlet (the Robert Bell first printing)
+written in plain speech by a corset-maker's son who had been in America barely a year.
+Printed in January 1776, it ran through roughly twenty-five printings in its first year
 and converted a tax dispute into an independence movement. Paine held no office and
 commanded no troops. He had access to a press, a clear register ordinary people could read
 aloud in taverns, and a moment.

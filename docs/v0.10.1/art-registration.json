@@ -1,0 +1,144 @@
+{
+  "version": "0.10.1",
+  "figures": 102,
+  "additions": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "kind": "photo_adaptation",
+      "sha256": "a589cf1d182f5d955c13d8515a8f210a9ff514f81bcdecf49294bdc38132c2db",
+      "catalog_id": "sts.photo.v101-cutout-atlas"
+    },
+    {
+      "file": "v101-cutout-spot.png",
+      "kind": "photo_adaptation",
+      "sha256": "a607f5b8dbc43c4fcbd9bc96ed22bea10bdbbe3844b873513a43a147f7a1837a",
+      "catalog_id": "sts.photo.v101-cutout-spot"
+    },
+    {
+      "file": "v101-cutout-printer.png",
+      "kind": "photo_adaptation",
+      "sha256": "156b2371385e2216897d8d057a32d45e3421cf0ef18376e45d630c371b4132bd",
+      "catalog_id": "sts.photo.v101-cutout-printer"
+    },
+    {
+      "file": "v101-cutout-sun.png",
+      "kind": "photo_adaptation",
+      "sha256": "e28663cd57a7b72457810fff1bfe6c430582d7f3196b5eca97d6d07f6a5fe8a7",
+      "catalog_id": "sts.photo.v101-cutout-sun"
+    },
+    {
+      "file": "v101-cutout-tools.png",
+      "kind": "photo_adaptation",
+      "sha256": "b6eee075e0a4c62a86da11af653d7471204a5607078ec442e831026d6be7c543",
+      "catalog_id": "sts.photo.v101-cutout-tools"
+    },
+    {
+      "file": "v101-cutout-rocket.png",
+      "kind": "photo_adaptation",
+      "sha256": "8d2763491b2f03d3839ad34d7458dc695e0d8b98f28d2a8502cff95c52219b02",
+      "catalog_id": "sts.photo.v101-cutout-rocket"
+    },
+    {
+      "file": "v101-scene-food-delivery.svg",
+      "kind": "original_svg",
+      "sha256": "a1f520312ee5ab384b8f6e1d7bf093e78327f89e1052fbd39f2fbf20c4dc140e",
+      "catalog_id": "sts.diagram.v101-scene-food-delivery"
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "kind": "original_svg",
+      "sha256": "d397231526eb9f4967a7660301ca71013709c083ce84588ec4c5bb8d164f9dd2",
+      "catalog_id": "sts.diagram.v101-scene-living-soil"
+    },
+    {
+      "file": "v101-scene-shared-workshop.svg",
+      "kind": "original_svg",
+      "sha256": "3aa16701bd12e1d8bc8d1a53a63e58f549ff049eb7e9a7b88ecb83e3629cc876",
+      "catalog_id": "sts.diagram.v101-scene-shared-workshop"
+    },
+    {
+      "file": "v101-visual-access-gate.svg",
+      "kind": "original_svg",
+      "sha256": "ee3976a62c414e32a169ed8ee4d143a5e3e9bf717ea741d2a386e8c7f66c0e35",
+      "catalog_id": "sts.diagram.v101-visual-access-gate"
+    },
+    {
+      "file": "v101-visual-attention-ribbon.svg",
+      "kind": "original_svg",
+      "sha256": "fcdbdce808fcba2c3cb4a6d7cf6310e0f3803b614d4217fd18cc566e1cc73460",
+      "catalog_id": "sts.diagram.v101-visual-attention-ribbon"
+    },
+    {
+      "file": "v101-visual-operating-stack.svg",
+      "kind": "original_svg",
+      "sha256": "37ed8cd8dd2f9b9a8a25165aaaa77fef160c1e9317ca21e08eda6dbc47dd7fe0",
+      "catalog_id": "sts.diagram.v101-visual-operating-stack"
+    },
+    {
+      "file": "v101-visual-local-copies.svg",
+      "kind": "original_svg",
+      "sha256": "f59fe6f14b961eb1b7d4bb3ff16dd89c691ff95a7adb815823a3bc598a986bb8",
+      "catalog_id": "sts.diagram.v101-visual-local-copies"
+    },
+    {
+      "file": "v101-visual-shared-land.svg",
+      "kind": "original_svg",
+      "sha256": "54b2f62555b7a1e623c62233920849ed5fdb29d03fa114a0bcf033cc04d712c5",
+      "catalog_id": "sts.diagram.v101-visual-shared-land"
+    },
+    {
+      "file": "v101-visual-continuity-calendar.svg",
+      "kind": "original_svg",
+      "sha256": "ba70e6c4b7611c260836c9483d3ff97efc7101500a1f1722d798d9277e93233b",
+      "catalog_id": "sts.diagram.v101-visual-continuity-calendar"
+    },
+    {
+      "file": "v101-chart-waste-pathways.svg",
+      "kind": "original_svg",
+      "sha256": "0429307b4752a784c06a2a461b635073fc50ffe53f3563a44123ef87dcbcfdbc",
+      "catalog_id": "sts.diagram.v101-chart-waste-pathways"
+    },
+    {
+      "file": "v101-chart-land-values.svg",
+      "kind": "original_svg",
+      "sha256": "901e3530df715f7fae44f2901175e1e98006853a45d55de947db425c11d4cf46",
+      "catalog_id": "sts.diagram.v101-chart-land-values"
+    },
+    {
+      "file": "v101-chart-income-food-access.svg",
+      "kind": "original_svg",
+      "sha256": "a35750d78a8b4deae7770d0f364e7c39f3c074bdd2da197ca4f94264f8364cbd",
+      "catalog_id": "sts.diagram.v101-chart-income-food-access"
+    },
+    {
+      "file": "v101-chart-data-centre-demand.svg",
+      "kind": "original_svg",
+      "sha256": "31067186e55140fc31d9a5106e592675e7123332773ca92e2769430a9f5cd811",
+      "catalog_id": "sts.diagram.v101-chart-data-centre-demand"
+    },
+    {
+      "file": "v101-chart-forecast-shift.svg",
+      "kind": "original_svg",
+      "sha256": "f92083133d81252869467d0b84081a23242f5353b3854625e84c3c61440e4f49",
+      "catalog_id": "sts.diagram.v101-chart-forecast-shift"
+    },
+    {
+      "file": "v101-chart-ammonia-energy.svg",
+      "kind": "original_svg",
+      "sha256": "1c76d0e955d926851e8e27e37cf332738ea7c36d75d51bd81cb33244d2eb47d4",
+      "catalog_id": "sts.diagram.v101-chart-ammonia-energy"
+    },
+    {
+      "file": "v101-chart-weights-memory.svg",
+      "kind": "original_svg",
+      "sha256": "61969acc27f2e6a94fa72d7c65a702e4b053e240cc9a8f02d876ff554147c656",
+      "catalog_id": "sts.diagram.v101-chart-weights-memory"
+    },
+    {
+      "file": "v101-chart-meal-response.svg",
+      "kind": "original_svg",
+      "sha256": "79648863c02519be44c599b087233ff2b094015f2c8b576be8197995492c30f0",
+      "catalog_id": "sts.diagram.v101-chart-meal-response"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "command": "npm run build",
+  "exit_code": 0,
+  "passed": true,
+  "log": "docs/v0.11.0/reader-proof/website-build.log",
+  "warning_summary": [
+    "Existing Svelte unused CSS/export and accessibility warnings",
+    "Outdated Browserslist database",
+    "Existing simultaneous static/dynamic Markdown imports and large chunk notices",
+    "Unconfigured local email postal address",
+    "Released PDF near static hosting size ceiling"
+  ],
+  "release": "0.7.5",
+  "source_version": "0.11.0"
+}

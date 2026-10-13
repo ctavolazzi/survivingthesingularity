@@ -1,11 +1,24 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
+	import { containModalFocus } from '$lib/modalFocus.js';
 
 	export let open = false;
 	export let title = '';
 
 	const dispatch = createEventDispatcher();
+
+	function focusModal(node) {
+		const returnTo = document.activeElement;
+		const priorOverflow = document.body.style.overflow;
+		document.body.style.overflow = 'hidden';
+		const release = containModalFocus(node, node.querySelector('.close-btn'), [node.parentElement.querySelector('.backdrop-dismiss')]);
+		return { destroy() {
+			release();
+			document.body.style.overflow = priorOverflow;
+			if (returnTo?.isConnected) returnTo.focus();
+		} };
+	}
 
 	function close() {
 		dispatch('close');
@@ -18,19 +31,22 @@
 <svelte:window on:keydown={onKeydown} />
 
 {#if open}
-	<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
-	<div class="backdrop" transition:fade={{ duration: 180 }} on:click={close}>
+	<!-- Closing must release focus, scroll and background inertness immediately,
+	     even when a constrained browser stops advancing animation frames. -->
+	<div class="backdrop" in:fade={{ duration: 180 }}>
+		<button type="button" class="backdrop-dismiss" tabindex="-1" aria-hidden="true" aria-label="Dismiss dialog" on:click={close}></button>
 		<div
 			class="modal"
 			role="dialog"
 			aria-modal="true"
 			aria-label={title}
-			transition:fly={{ y: 28, duration: 260 }}
-			on:click|stopPropagation
+			tabindex="-1"
+			use:focusModal
+			in:fly={{ y: 28, duration: 260 }}
 		>
 			<header>
 				<h3>{title}</h3>
-				<button class="close-btn" on:click={close} aria-label="Close dialog">
+				<button type="button" class="close-btn" on:click={close} aria-label="Close dialog">
 					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
 						<path d="M3 3L13 13M3 13L13 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 					</svg>
@@ -55,6 +71,8 @@
 		padding: 1.25rem;
 	}
 	.modal {
+		position: relative;
+		z-index: 1;
 		width: 100%;
 		max-width: 480px;
 		max-height: min(80vh, 640px);
@@ -64,6 +82,16 @@
 		border-left: 3px solid rgba(245, 158, 11, 0.4);
 		border-radius: 0;
 		box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.08);
+	}
+	.backdrop-dismiss {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+		padding: 0;
+		background: transparent;
+		cursor: pointer;
 	}
 	header {
 		position: sticky;

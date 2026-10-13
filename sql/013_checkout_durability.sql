@@ -37,11 +37,26 @@
 -- 'failed'    = fulfillment ran and something went wrong. Needs a human or a
 --               retry; deliberately distinct from 'claimed' so a stuck row and
 --               a known-bad row are not confused.
-alter table public.fulfilled_sessions
-  add column if not exists status       text        not null default 'claimed',
-  add column if not exists completed_at timestamptz,
-  add column if not exists attempts     int         not null default 1,
-  add column if not exists last_error   text;
+do $$
+declare has_status boolean;
+begin
+  select exists(select 1 from information_schema.columns
+    where table_schema = 'public' and table_name = 'fulfilled_sessions'
+      and column_name = 'status') into has_status;
+
+  alter table public.fulfilled_sessions
+    add column if not exists status text not null default 'claimed',
+    add column if not exists completed_at timestamptz,
+    add column if not exists attempts int not null default 1,
+    add column if not exists last_error text;
+
+  -- Historical backfill ONLY when introducing this column. A repeated migration
+  -- must never promote current unfinished claims to successful delivery.
+  if not has_status then
+    update public.fulfilled_sessions
+      set status = 'delivered', completed_at = created_at;
+  end if;
+end $$;
 
 do $$
 begin
@@ -51,13 +66,6 @@ begin
 exception when duplicate_object then
   null;
 end $$;
-
--- Existing rows predate this column. They were all fulfilled successfully as
--- far as anyone knows, and marking them 'claimed' would make them look stuck
--- forever in the "needs attention" query below.
-update public.fulfilled_sessions
-   set status = 'delivered', completed_at = created_at
- where status = 'claimed' and completed_at is null;
 
 -- "Which paid orders started fulfillment and never finished?" - the question
 -- this table could not answer before.

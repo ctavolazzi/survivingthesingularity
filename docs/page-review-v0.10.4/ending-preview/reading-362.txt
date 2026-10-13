@@ -1,0 +1,50 @@
+Brett J. Kagan and colleagues, In vitro neurons learn and exhibit sentience
+when embodied in a simulated game-world, Neuron (2022). The DishBrain 
+Pong study; see also the 2024 comparison with deep reinforcement learning.
+Aaron Bastani, Fully Automated Luxury Communism (Verso, 2019).
+Stanford HAI, AI Index Report 2025, chapter 1. The historical query-price
+comparison fixes a GPT-3.5-level MMLU threshold. It does not measure
+energy per task or equivalence across all work.
+Chapters 3 and 4: the far horizon
+Nick Bostrom, “Are You Living in a Computer Simulation?”, Philosophical
+Quarterly 53 (2003).
+David Kipping, “A Bayesian Approach to the Simulation Argument”, Universe
+6 (2020).
+Copernicusʼs dedication and the Osiander preface are listed under P-06
+above.
+NASA, Hubble Views the Star that Changed the Universe (2011). Institutional
+history of the Cepheid observations that placed Andromeda outside the
+Milky Way.
+Chapter 5: energy and the cyberdeck lineage
+The Times (London), July 1816, on the waltz as an “indecent foreign dance,”
+as quoted in John Hood, Hayek, Strauss, and the Political Waltz, Foundation
+for Economic Education (2005). A secondary quotation; the 1816 issue itself
+was not inspected.
+McGill Office for Science and Society, The Moral and Medical Panic Over
+Bicycles, on “bicycle face.”
+John Philip Sousa, “The Menace of Mechanical Music”, Appletonʼs Magazine
+(1906), full text via MIT OpenCourseWare.
+William Gibson, Neuromancer (1984), origin of the “cyberspace deck.”
+Raspberry Pi, Computer Hardware: Maximum Power Output, and E Ink, 
+Benefits: Bi-Stability. Manufacturer documentation on peripheral budgets
+and static display retention. Neither establishes total draw or battery
+runtime for a particular cyberdeck.
+Chapter 7: work, loss, and the labor campaigns
+Karsten I. Paul and Bernad Batinic, “The need for work: Jahodaʼs latent
+functions of employment in a representative sample of the German popula-
+tion”, Journal of Organizational Behavior (2010).
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+APPENDIX B
+357

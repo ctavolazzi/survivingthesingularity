@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 614" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">WHEN A MODEL EATS ITS OUTPUT</title>
+<desc id="desc">Three schematic distributions illustrate one possible failure during repeated training on generated samples. Rare cases can be lost and a later distribution can narrow or drift. The curves are illustrative, not measured data, a universal result or a timetable; real data, sampling and training choices matter.</desc>
+<rect width="480" height="614" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">WHEN A MODEL EATS ITS OUTPUT</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="78" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">One possible lineage under repeated sampling.</text>
+<path d="M26 200L182 200" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M30 196C45 192 49 178 59 164S84 118 104 117S135 132 147 164S166 191 178 196" fill="none" stroke="#315f78" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="210" y="141" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Starting examples</text>
+<text x="210" y="166" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">A range of cases</text>
+<text x="210" y="189" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">can be represented.</text>
+<path d="M104 217L104 243" fill="none" stroke="#4b5b52" stroke-width="1.6"/>
+<path d="M100 237L104 243L108 237" fill="none" stroke="#4b5b52" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M26 340L182 340" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M30 336C68 336 69 329 77 310S88 257 104 257S122 289 129 309S144 336 178 336" fill="none" stroke="#9a4f13" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="210" y="281" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Generated samples</text>
+<text x="210" y="306" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Rare cases can be</text>
+<text x="210" y="329" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">lost in resampling.</text>
+<path d="M104 357L104 383" fill="none" stroke="#4b5b52" stroke-width="1.6"/>
+<path d="M100 377L104 383L108 377" fill="none" stroke="#4b5b52" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M26 480L182 480" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M30 476H94C114 476 116 399 126 397S138 476 146 476H178" fill="none" stroke="#9a4f13" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="210" y="421" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Possible collapse</text>
+<text x="210" y="446" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Variety can shrink;</text>
+<text x="210" y="469" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">errors can drift.</text>
+<path d="M20 518L460 518" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="538" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Schematic curves, not a generation timetable.</text>
+<text x="20" y="559" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Real data, sampling and training all matter.</text>
+<text x="20" y="580" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Shumailov et al., Nature (2024).</text>
+</svg>

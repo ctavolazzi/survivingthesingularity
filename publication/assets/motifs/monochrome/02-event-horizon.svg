@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">An uncertain horizon</title>
+  <desc id="desc">Curved orbital lines pass around an open circular center; a speculative astronomical metaphor. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#000000" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="204" cy="128" r="49" stroke="#000000" fill="none"/>
+<path d="M61 150C81 104 143 64 219 54C278 47 321 58 339 83" stroke="#000000" stroke-width="4.2"/>
+<path d="M65 166C88 191 142 203 201 194C274 183 324 150 340 116" stroke="#000000" stroke-width="4.2"/>
+<path d="M68 151C106 140 130 132 157 122M252 134C281 126 314 112 336 93" stroke="#000000" stroke-width="4.2"/>
+<path d="M71 169C100 157 129 147 158 138M250 116C279 107 307 94 329 79" stroke="#000000" stroke-width="4.2"/>
+<path d="M123 212C99 189 105 134 139 88C170 47 205 29 231 35" stroke="#000000" stroke-width="4.2"/>
+<path d="M175 223C205 228 252 192 280 145C303 105 307 73 294 48" stroke="#000000" stroke-width="4.2"/>
+<circle cx="321" cy="100" r="4" stroke="#000000" fill="#000000"/>
+<circle cx="119" cy="177" r="3" stroke="#000000" fill="#000000"/>
+  </g>
+</svg>

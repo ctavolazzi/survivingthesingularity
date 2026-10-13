@@ -1,0 +1,1642 @@
+{
+  "created_utc": "2026-09-29T01:59:01.864254+00:00",
+  "version": "0.10.3",
+  "source_image_references": 110,
+  "registered_figures": 62,
+  "registered_source_occurrences": 62,
+  "stage": "final",
+  "dpi": 120,
+  "renderer": "10.04.0",
+  "pdfs": {
+    "interior": {
+      "path": "publication/output/Surviving-the-Singularity-interior.pdf",
+      "sha256": "caa4a051f63c31ef04d6e3084c5e995aaf16b02b956e46c36520b8e2c5856782",
+      "pages": 407,
+      "rendering_source": {
+        "path": "publication/output/print-prepared.pdf",
+        "sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538",
+        "page_streams_unchanged": true,
+        "annotation_descriptors_unchanged": true
+      }
+    },
+    "print": {
+      "path": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b",
+      "pages": 408
+    }
+  },
+  "layout_sha256": "35e13c4907038c6bbf8c7a384c09c7b111049fdeade738dccf6404aa7ab45200",
+  "build_sha256": "51c88ada864b1aa6a96a4364fb8aaede90e41fc9ed4a33580b9ee1303cbcbddd",
+  "page_number_note": "Physical PDF pages; reading adds one cover page. Folios come from the interior layout capture.",
+  "samples": [
+    {
+      "edition": "interior",
+      "physical_page": 7,
+      "printed_folio": "3",
+      "figure": "v101-cutout-atlas.png",
+      "caption_fragments": [
+        "Atlas, outside the",
+        "demonstration room. AI-",
+        "adapted cutout from ",
+        "DARPA",
+        ",",
+        "public domain",
+        "."
+      ],
+      "render": "final/interior-007-cutout-atlas.png",
+      "sha256": "164f2faf2fac6f70b83b43d8fd18da766c53d1f77c9999e395bddad2a4fc6c9d"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 11,
+      "printed_folio": "7",
+      "figure": "intro-food-insecurity.svg",
+      "caption_fragments": [
+        "Food insecurity rose sharply in 2008. These household survey estimates show a historical",
+        "pattern, not a causal test of job loss. Very low food security is included within food insecurity.",
+        "USDA Economic Research Service, 2001\u20132024."
+      ],
+      "render": "final/interior-011-intro-food-insecurity.png",
+      "sha256": "db57a9f6e960b1a8bb3d8071d2960263e1e679ee89bc3058938011a073383c21"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 15,
+      "printed_folio": "11",
+      "figure": "intro-nine-stages.svg",
+      "caption_fragments": [
+        "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later",
+        "stages are imagined possibilities."
+      ],
+      "render": "final/interior-015-intro-nine-stages.png",
+      "sha256": "2604ec1f5c366ae254bafb6a3b88148d9f0385ef863a88912b1b5a8ac01c2117"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 24,
+      "printed_folio": "20",
+      "figure": "v103-reading-routes.svg",
+      "caption_fragments": [
+        "Three ways in. The short route gives you the argument and plan; the full route follows Elijah",
+        "through the chapters."
+      ],
+      "render": "final/interior-024-v103-reading-routes.png",
+      "sha256": "7db19897232bd87b228949e9a6747ea56694678ae04ae9794069bb5f54de7055"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 34,
+      "printed_folio": "30",
+      "figure": "v103-narrative-bear-flag.png",
+      "caption_fragments": [
+        "Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion."
+      ],
+      "render": "final/interior-034-v103-narrative-bear-flag.png",
+      "sha256": "696bf03e58a0656d7b937f736ce7ebe7264177d61f36498915a14e4cc865b72c"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 53,
+      "printed_folio": "49",
+      "figure": "v101-chart-forecast-shift.svg",
+      "caption_fragments": [
+        "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the",
+        "2023 survey. The two milestones are distinct, and neither date is a deadline. ",
+        "Grace et al.,",
+        "Thousands of AI Authors on the Future of AI",
+        "."
+      ],
+      "render": "final/interior-053-chart-forecast-shift.png",
+      "sha256": "e89c92232ef197561e25f2565b207d9280af1a30de424c054b134280d9a14986"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 63,
+      "printed_folio": "59",
+      "figure": "ch02-eighteen-days.svg",
+      "caption_fragments": [
+        "Eighteen days from the June 12 export controls to their lifting on June 30. Access to the two",
+        "models still differed. Selected events from Anthropic\u2019s June 30 account, updated July 1; Stage 2",
+        "and Stage 3 are the author\u2019s interpretation."
+      ],
+      "render": "final/interior-063-ch02-eighteen-days.png",
+      "sha256": "630ef5eb49e920dfcfe12f360b06d19092b9348f90561150759b3d3fcd648221"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 64,
+      "printed_folio": "60",
+      "figure": "v101-visual-local-copies.svg",
+      "caption_fragments": [
+        "A copy you can open can outlast a broken link. It does not replace electrical power or a tested",
+        "plan for equipment that depends on it. Conceptual illustration."
+      ],
+      "render": "final/interior-064-visual-local-copies.png",
+      "sha256": "956a818ed55dd99e3c27d62fc083dabca2e9b9ca14d7cba3288345e6f7ea6bf0"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 73,
+      "printed_folio": "69",
+      "figure": "v101-cutout-rocket.png",
+      "caption_fragments": [
+        "An image for the imagined",
+        "departure. AI-adapted collage",
+        "from ",
+        "SpaceX",
+        ", ",
+        "CC0",
+        "; the",
+        "scenario remains speculative."
+      ],
+      "render": "final/interior-073-cutout-rocket.png",
+      "sha256": "73087f9e1e726d26a11d9a36245b1e2b1eee308f03c5a087e56bafaf69aca5a9"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 80,
+      "printed_folio": "76",
+      "figure": "v103-narrative-near-end.png",
+      "caption_fragments": [
+        "Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the",
+        "world outside his window."
+      ],
+      "render": "final/interior-080-v103-narrative-near-end.png",
+      "sha256": "1861da5f033929f3457f91f98299c515defc5bf1b419c4d5a33b50376b5dc88d"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 90,
+      "printed_folio": "86",
+      "figure": "v101-cutout-sun.png",
+      "caption_fragments": [
+        "Energy has to come from",
+        "somewhere. AI-adapted ",
+        "NASA/",
+        "SDO imagery",
+        ", ",
+        "public domain",
+        ";",
+        "not an unaltered scientific",
+        "image."
+      ],
+      "render": "final/interior-090-cutout-sun.png",
+      "sha256": "788f25c7267b1b6dbdd4dd23805fff6a1f7d01db493e64cf8fd3b2ad96ee3073"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 93,
+      "printed_folio": "89",
+      "figure": "v101-chart-data-centre-demand.svg",
+      "caption_fragments": [
+        "The machine\u2019s appetite. The solid column is IEA\u2019s estimate for 2025; the hatched column is its",
+        "2030 projection. This is all data-centre electricity, not AI alone. ",
+        "IEA, Key Questions on Energy and",
+        "AI, 2026",
+        "."
+      ],
+      "render": "final/interior-093-chart-data-centre-demand.png",
+      "sha256": "8dd40b0c9ee4bb2d25e8a776303cd4312f6876c2c46901375e59642394af5f28"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 101,
+      "printed_folio": "97",
+      "figure": "ch05-horses-tractors.svg",
+      "caption_fragments": [
+        "US farm counts on January 1, 1910\u20131949. Separate vertical scales; 1948 and 1949 figures were",
+        "preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p.\u00a045."
+      ],
+      "render": "final/interior-101-ch05-horses-tractors.png",
+      "sha256": "2b597ba7ecf185aec4a9b91e7f9554aae5e7643fb51cde2db2aba748ecf14920"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 110,
+      "printed_folio": "106",
+      "figure": "ch06-capability-access.svg",
+      "caption_fragments": [
+        "Capability, deployment, ownership and access are separate questions. A productive farm can",
+        "stand beside hunger."
+      ],
+      "render": "final/interior-110-ch06-capability-access.png",
+      "sha256": "289919e79cecd6394d6ac3c329397f463749405b52980b771a67f3e698f92a1e"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 113,
+      "printed_folio": "109",
+      "figure": "v101-chart-income-food-access.svg",
+      "caption_fragments": [
+        "Income and food access. In the 2024 survey, food insecurity was associated with income. These",
+        "two selected groups do not represent every income category, and the comparison does not",
+        "establish causation. ",
+        "USDA ERS, ERR-358, Table 2",
+        "."
+      ],
+      "render": "final/interior-113-chart-income-food-access.png",
+      "sha256": "6c28271a6e77e00f2b0218eb65bb41e712b352dd2040d1fffff356eef1591292"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 115,
+      "printed_folio": "111",
+      "figure": "v101-visual-access-gate.svg",
+      "caption_fragments": [
+        "A working machine still needs an arrangement that lets people reach its output. Conceptual",
+        "illustration."
+      ],
+      "render": "final/interior-115-visual-access-gate.png",
+      "sha256": "438e1181443ff6e0e4c1813556c447cc00202266f5f23bfb99604f29a2cfb355"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 122,
+      "printed_folio": "118",
+      "figure": "v103-narrative-passing-beans.png",
+      "caption_fragments": [
+        "Fictional scene: pass the beans. The conversation turns from retraining to the floor people need",
+        "beneath them."
+      ],
+      "render": "final/interior-122-v103-narrative-passing-beans.png",
+      "sha256": "198b6c432c3e42f932cd5a136076088895720048d855a955560704725403830a"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 145,
+      "printed_folio": "141",
+      "figure": "ch08-cognitive-extraction.svg",
+      "caption_fragments": [
+        "A possible pattern to notice in your own day. Conceptual illustration, not a diagnosis or a model",
+        "of brain chemistry."
+      ],
+      "render": "final/interior-145-ch08-cognitive-extraction.png",
+      "sha256": "3f017f95ab297160e11df7479dda7d12074b42379a31f89300437e291c95ddba"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 147,
+      "printed_folio": "143",
+      "figure": "ch08-focus-recovery.svg",
+      "caption_fragments": [
+        "One possible pattern of interrupted work. The drawing gives no fixed recovery time, interruption",
+        "threshold, or measured effect size."
+      ],
+      "render": "final/interior-147-ch08-focus-recovery.png",
+      "sha256": "5914d3e53b0b4b9efd822541c76b9f81b113f771ca7def98946038d95bcaa202"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 149,
+      "printed_folio": "145",
+      "figure": "ch08-firewall-pipeline.svg",
+      "caption_fragments": [
+        "A routine to try, observe and adjust. Two timed windows each day are an example schedule, not",
+        "a measured optimum."
+      ],
+      "render": "final/interior-149-ch08-firewall-pipeline.png",
+      "sha256": "2a4abc53617b37cc57181b71de148cdf6f4b485cab196ec0602ef48dcebaf73b"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 151,
+      "printed_folio": "147",
+      "figure": "ch08-info-architectures.svg",
+      "caption_fragments": [
+        "Routines, not measurements of your brain. Some interruptions are useful or urgent. Try a",
+        "schedule and check whether it helps."
+      ],
+      "render": "final/interior-151-ch08-info-architectures.png",
+      "sha256": "ae6cb9e582177c294fe706b56b1a4322d639b4d1da2e987cfbc5ae5942e064ef"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 153,
+      "printed_folio": "149",
+      "figure": "v101-visual-attention-ribbon.svg",
+      "caption_fragments": [
+        "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive",
+        "budget or a fixed recovery time."
+      ],
+      "render": "final/interior-153-visual-attention-ribbon.png",
+      "sha256": "42456d3dde913095b0aeef37eda82da496338009e33d4c8f3b24aa37f6079e9c"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 156,
+      "printed_folio": "152",
+      "figure": "ch08-star-vs-mesh.svg",
+      "caption_fragments": [
+        "A mesh can reroute only if a usable path remains. Crosses mark failed nodes; dashed links are",
+        "affected by that failure. People still maintain the circle and its connections."
+      ],
+      "render": "final/interior-156-ch08-star-vs-mesh.png",
+      "sha256": "f4c8a0dcdd811675b325207aefacdd729644338203f95d60149a72912df3832c"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 166,
+      "printed_folio": "162",
+      "figure": "ch09-hyperlocal-vs-global.svg",
+      "caption_fragments": [
+        "Shorter supply lines can make repair and coordination more local. Imported parts, materials,",
+        "energy and human work remain; distance alone does not establish fair treatment."
+      ],
+      "render": "final/interior-166-ch09-hyperlocal-vs-global.png",
+      "sha256": "e7ba1ac33540d84062109a12d2aa7206214f3685ffc83b736f685b0d3a3247ed"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 168,
+      "printed_folio": "164",
+      "figure": "ch09-region-ring.svg",
+      "caption_fragments": [
+        "Build regional capacity, then measure what it covers. Stores, seasonal production, water, power,",
+        "delivery and remaining imports determine how many people can be supplied and for how long."
+      ],
+      "render": "final/interior-168-ch09-region-ring.png",
+      "sha256": "8ab355c323e3fc045541751f42ea9ac16b260a48a08a29b31eb48fdd738356d3"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 169,
+      "printed_folio": "165",
+      "figure": "v101-cutout-printer.png",
+      "caption_fragments": [
+        "A machine takes shape around",
+        "its work. AI-adapted cutout",
+        "from ",
+        "John Abella",
+        ", ",
+        "CC BY 2.0",
+        "."
+      ],
+      "render": "final/interior-169-cutout-printer.png",
+      "sha256": "710ccc0c3ea88007857a5a4a9ab86c96923a36c96f77f80189d442f4410f484b"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 170,
+      "printed_folio": "166",
+      "figure": "v101-chart-ammonia-energy.svg",
+      "caption_fragments": [
+        "The energy in ammonia. IEA\u2019s global-average estimate and best-available-process benchmarks",
+        "are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. ",
+        "IEA,",
+        "Ammonia Technology Roadmap, 2021",
+        "."
+      ],
+      "render": "final/interior-170-chart-ammonia-energy.png",
+      "sha256": "d2ef7b042ee365ca5cd60195459e768dd59d234f98d714cfd44cbf55731e54dc"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 172,
+      "printed_folio": "168",
+      "figure": "ch09-cnc-bed.svg",
+      "caption_fragments": [
+        "A gantry can reduce walking space in a bed. Tooling and behavior depend on the machine and",
+        "software version; this concept is not a build plan or a promise to automate the entire crop."
+      ],
+      "render": "final/interior-172-ch09-cnc-bed.png",
+      "sha256": "3407ff47bd51189223c01ffc4dbdd8a979d530132d7525427fa116d1312c02f1"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 174,
+      "printed_folio": "170",
+      "figure": "ch09-greenhouse-bus.svg",
+      "caption_fragments": [
+        "The greenhouse bus is a component map. Use moisture readings checked against the bed,",
+        "configure run-time and water limits, verify that water stops on faults and power loss, and retain",
+        "a manual shutoff."
+      ],
+      "render": "final/interior-174-ch09-greenhouse-bus.png",
+      "sha256": "b3eb543704d353bfb712e7f63b29500782e5194fbfc81ba30a0617fbcc449230"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 176,
+      "printed_folio": "172",
+      "figure": "v101-scene-food-delivery.svg",
+      "caption_fragments": [
+        "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep",
+        "the five-household promise. The buildings and route are illustrative; the vegetables supplement",
+        "meals."
+      ],
+      "render": "final/interior-176-scene-food-delivery.png",
+      "sha256": "539e16e81f66b6e6ec825effcf83489ea4184f8ded6c02e7fe9e9b7650158db1"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 189,
+      "printed_folio": "185",
+      "figure": "ch10-model-collapse.svg",
+      "caption_fragments": [
+        "One possible failure in recursive training on generated samples. This schematic is not a universal",
+        "outcome or a timetable; real data, sampling and training choices affect the result. Based on",
+        "Shumailov et al., Nature (2024)."
+      ],
+      "render": "final/interior-189-ch10-model-collapse.png",
+      "sha256": "8ee4c80fc4d8ccc85b3d81cdae54289e0b643b92a4e36462754c0531610af78d"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 191,
+      "printed_folio": "187",
+      "figure": "ch10-algorithm-unlock.svg",
+      "caption_fragments": [
+        "Document useful work, tell the true story with consent, and keep the instructions available. A",
+        "platform may bring readers; a post is not guaranteed reach or income."
+      ],
+      "render": "final/interior-191-ch10-algorithm-unlock.png",
+      "sha256": "d3037f33188f934a1af78b1b7d31cbf1dc019049dcdeec1ce99a9f3e0390a121"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 204,
+      "printed_folio": "200",
+      "figure": "v101-cutout-spot.png",
+      "caption_fragments": [
+        "Capability still needs an",
+        "arrangement for access. AI-",
+        "adapted cutout from ",
+        "Jonte",
+        ",",
+        "CC BY-SA 4.0",
+        "."
+      ],
+      "render": "final/interior-204-cutout-spot.png",
+      "sha256": "062198bca4543005164744e00071b951930490aaef16e74deafcb30388b753de"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 205,
+      "printed_folio": "201",
+      "figure": "v101-visual-operating-stack.svg",
+      "caption_fragments": [
+        "The model file is one layer of a working service. Running a useful service also takes software,",
+        "hardware, power, and people who maintain it. Conceptual illustration."
+      ],
+      "render": "final/interior-205-visual-operating-stack.png",
+      "sha256": "97b1ca527a971949f9c7e99aeaef967bfffc39c39ad57d789051c62152f4d9d4"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 207,
+      "printed_folio": "203",
+      "figure": "v101-chart-weights-memory.svg",
+      "caption_fragments": [
+        "Memory before the overhead. These are derived weights-only sizes, not measured VRAM",
+        "requirements. They omit the chapter\u2019s illustrative allowance as well as runtime costs. ",
+        "llama.cpp,",
+        "memory and context options",
+        "."
+      ],
+      "render": "final/interior-207-chart-weights-memory.png",
+      "sha256": "c71d0b41e5a740ca354ced8c7ca1ed6419572520b36bcc76c2c162e35c5d01a9"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 209,
+      "printed_folio": "205",
+      "figure": "ch11-cooling-loop.svg",
+      "caption_fragments": [
+        "Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in",
+        "kilograms per second: Q\u0307 = \u1e41 Cp \u0394T. This diagram specifies neither components nor cooling",
+        "capacity."
+      ],
+      "render": "final/interior-209-ch11-cooling-loop.png",
+      "sha256": "69b1c5183707e329eda4f1c251534c6a63525417d0bc2ff44cda5d554f749673"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 219,
+      "printed_folio": "215",
+      "figure": "v101-chart-land-values.svg",
+      "caption_fragments": [
+        "What an acre costs. USDA survey estimates include farm buildings as well as land. These are",
+        "nominal national averages, not inflation-adjusted values or local offers. ",
+        "USDA NASS, Land Values",
+        "2026, page 5",
+        "."
+      ],
+      "render": "final/interior-219-chart-land-values.png",
+      "sha256": "5ff9c03832b74fdf3b48c4b149b05747719da93748da0597338c24bea56d1ca7"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 220,
+      "printed_folio": "216",
+      "figure": "v101-visual-shared-land.svg",
+      "caption_fragments": [
+        "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a",
+        "way to challenge decisions. Conceptual illustration, not a legal template."
+      ],
+      "render": "final/interior-220-visual-shared-land.png",
+      "sha256": "45b606bfa3635f85ebd3bc5a8a0095776e0daf9da861d293ed993385c9c536c9"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 223,
+      "printed_folio": "219",
+      "figure": "ch12-csa-network.svg",
+      "caption_fragments": [
+        "A shared-service network. People match usable surplus to requests and arrange delivery. The",
+        "drawing promises neither a yield nor an autonomous crew."
+      ],
+      "render": "final/interior-223-ch12-csa-network.png",
+      "sha256": "fc9217e27ef368e5658e6e32d61f7a7cd9b82d7f298d8232fd0d327d5cbe0530"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 235,
+      "printed_folio": "231",
+      "figure": "ch13-shell-architecture.svg",
+      "caption_fragments": [
+        "Two nominal forty-foot containers give a 640-square-foot exterior footprint. Usable space and",
+        "structural details depend on the finished design; the chapter\u2019s budget is fictional."
+      ],
+      "render": "final/interior-235-ch13-shell-architecture.png",
+      "sha256": "13e210a5d0fabd3e3c4dd22cea0b6bc32cd59b85e276692558fa4106e69fb3cb"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 237,
+      "printed_folio": "233",
+      "figure": "ch13-thermal-seal.svg",
+      "caption_fragments": [
+        "Insulation is one layer in a wall. Air control, moisture, ventilation and fire protection have to",
+        "work with it."
+      ],
+      "render": "final/interior-237-ch13-thermal-seal.png",
+      "sha256": "6cd68c770b26bbb313712779b77a2717c47ee76357d39fa80c0ff78c815aa2cb"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 247,
+      "printed_folio": "243",
+      "figure": "ch14-logistic-shockwave.svg",
+      "caption_fragments": [
+        "One possible disruption sequence, not a clock. Existing stock, replacement routes, demand, and",
+        "the specific failure determine what reaches the shelves and when."
+      ],
+      "render": "final/interior-247-ch14-logistic-shockwave.png",
+      "sha256": "f3f906b7d4d0775cd43aecb6d4c166df8d2db6c156ea21fb226f7f5dcbc9a99b"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 251,
+      "printed_folio": "247",
+      "figure": "v101-chart-waste-pathways.svg",
+      "caption_fragments": [
+        "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could",
+        "not have been donated. Donation is net of food banks\u2019 unusable portion. ",
+        "EPA, Table 5",
+        "."
+      ],
+      "render": "final/interior-251-chart-waste-pathways.png",
+      "sha256": "48c504bfd2db4077567b59940f7c0bf2497fcf453906741db91d38d475a3f4ad"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 253,
+      "printed_folio": "249",
+      "figure": "ch14-mesh-comms.svg",
+      "caption_fragments": [
+        "A mesh can route around a break only where another powered, usable path remains. Test the",
+        "missing relay."
+      ],
+      "render": "final/interior-253-ch14-mesh-comms.png",
+      "sha256": "8c4c1c4a9b6b2903293cdd90bb64d9f2132eb1d1b3604bb6f4b1c8a46dd571c6"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 264,
+      "printed_folio": "260",
+      "figure": "ch15-clt-firewall.svg",
+      "caption_fragments": [
+        "A common land-trust housing arrangement separates ownership of land and home. Resale",
+        "terms need continuing stewardship; taxes and debt remain."
+      ],
+      "render": "final/interior-264-ch15-clt-firewall.png",
+      "sha256": "688b9fb2985c9143e3fc0acc98eed47c6e5189ffe9d00a8968e056b07b787dce"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 266,
+      "printed_folio": "262",
+      "figure": "ch15-soil-food-web.svg",
+      "caption_fragments": [
+        "The soil food web cycles nutrients. Harvest and other losses remove them, so a productive bed",
+        "still needs measurement and appropriate replenishment."
+      ],
+      "render": "final/interior-266-ch15-soil-food-web.png",
+      "sha256": "7b8a64632fdd9b45b25bdb75b49653751aa63fc948cde13fe0ce5b3f2fda0a8c"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 268,
+      "printed_folio": "264",
+      "figure": "v101-scene-living-soil.svg",
+      "caption_fragments": [
+        "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange",
+        "nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its",
+        "boundary. Conceptual cutaway, not a measured soil profile."
+      ],
+      "render": "final/interior-268-scene-living-soil.png",
+      "sha256": "ffcc3bc42bfe4672cad3098120515451f2822e0816ae78966ee43ea72596ebd2"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 279,
+      "printed_folio": "275",
+      "figure": "ch16-sneakernet.svg",
+      "caption_fragments": [
+        "A hand-carried copy needs no live network link. It still needs trusted handling, a compatible",
+        "reader and a recoverable backup."
+      ],
+      "render": "final/interior-279-ch16-sneakernet.png",
+      "sha256": "4b88ac70fde5cb984e00e688b22a372167bb2c7049fa898abadd5a313ab76aaa"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 288,
+      "printed_folio": "284",
+      "figure": "v101-cutout-tools.png",
+      "caption_fragments": [
+        "Tools with a history of use. AI-",
+        "adapted collage from",
+        "Shixart1985",
+        ", ",
+        "CC BY 2.0",
+        "."
+      ],
+      "render": "final/interior-288-cutout-tools.png",
+      "sha256": "1a420b965f0a6f43b7d72920efb67daddf01d074b5363c789989dd4dc9b6625a"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 290,
+      "printed_folio": "286",
+      "figure": "ch17-algae-loop.svg",
+      "caption_fragments": [
+        "Growing an ingredient can reduce a bought input. It doesn\u2019t establish a complete fish diet or a",
+        "closed system."
+      ],
+      "render": "final/interior-290-ch17-algae-loop.png",
+      "sha256": "80f1577a2b9ca8ee4bd46a3b1360024b8343891737de6df55922221e398a9908"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 294,
+      "printed_folio": "290",
+      "figure": "ch17-dc-native.svg",
+      "caption_fragments": [
+        "For a load that already uses DC, compare the whole path. Avoiding an inverter pair does not",
+        "remove charging, wiring or regulation losses."
+      ],
+      "render": "final/interior-294-ch17-dc-native.png",
+      "sha256": "4784f8dae5f1ae40607eab5bf2ebc1f6069040fcc8780b0c6c3bd48a1b4f34d4"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 296,
+      "printed_folio": "292",
+      "figure": "ch17-fab-lab.svg",
+      "caption_fragments": [
+        "A neighborhood fab lab combines suitable tools with trained people, supported materials and",
+        "checks for the actual job."
+      ],
+      "render": "final/interior-296-ch17-fab-lab.png",
+      "sha256": "2ebcd30a204336462e624e2f8c2274b91720044bb562aecfc069e70b06256fba"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 297,
+      "printed_folio": "293",
+      "figure": "v101-scene-shared-workshop.svg",
+      "caption_fragments": [
+        "Shared tools need a working arrangement around them: trained people, suitable power and",
+        "materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not",
+        "a fabrication or wiring plan."
+      ],
+      "render": "final/interior-297-scene-shared-workshop.png",
+      "sha256": "8c4e6cb69aa5e56c4c42d5d9be931cf167020062389e728745b7e138db6cbfba"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 306,
+      "printed_folio": "302",
+      "figure": "v101-visual-continuity-calendar.svg",
+      "caption_fragments": [
+        "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters",
+        "to the households expecting a delivery. Illustration of the fictional scene."
+      ],
+      "render": "final/interior-306-visual-continuity-calendar.png",
+      "sha256": "50453bf3f062b19c9ed25a44858ef66a86c8c26202c2142aa8243baa6bdaccbb"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 310,
+      "printed_folio": "306",
+      "figure": "ch18-social-contract.svg",
+      "caption_fragments": [
+        "The proposal makes essentials a funded floor, available without a job. Tools help; remaining",
+        "work, supplies and reliable delivery still need provision."
+      ],
+      "render": "final/interior-310-ch18-social-contract.png",
+      "sha256": "5533bdc4eb7a5ebbc5682ac9f4fdabaa21ca1749847dfe66944d41c0bf1955e5"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 315,
+      "printed_folio": "311",
+      "figure": "v101-chart-meal-response.svg",
+      "caption_fragments": [
+        "When a meal fails. An illustrative worksheet from this chapter\u2019s premortem record, not the",
+        "measured performance of a service. Confirm the alternative and the people who will deliver it",
+        "before expanding the promise."
+      ],
+      "render": "final/interior-315-chart-meal-response.png",
+      "sha256": "d75e8c54c132f122d39ad8ad8b7562740af2af8556e41b4c6b132d894b550d22"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 322,
+      "printed_folio": "318",
+      "figure": "v103-narrative-rosa-testimony.png",
+      "caption_fragments": [
+        "Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond",
+        "the next delivery."
+      ],
+      "render": "final/interior-322-v103-narrative-rosa-testimony.png",
+      "sha256": "f44054c4e46be2a903913fe25bd3126de490f1b01bd71e3e94c6eb71fee22345"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 326,
+      "printed_folio": "322",
+      "figure": "ch19-conversion-ladder.svg",
+      "caption_fragments": [
+        "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two",
+        "describe how the proposal would be maintained."
+      ],
+      "render": "final/interior-326-ch19-conversion-ladder.png",
+      "sha256": "33184d3f479b1d91ac587336ecb72594876b0797d943245e3c26c8bef7f98015"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 369,
+      "printed_folio": "365",
+      "figure": "v103-service-ledger.svg",
+      "caption_fragments": [
+        "Free to the person eating still leaves a working ledger: equipment, maintenance, remaining",
+        "labor, and delivery need dependable funding."
+      ],
+      "render": "final/interior-369-v103-service-ledger.png",
+      "sha256": "5b8916adb521105f0783514eead27430cbdcc3f0d8c4a4b595d9215f53f47fee"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 377,
+      "printed_folio": "373",
+      "figure": "appd-precedent-timeline.svg",
+      "caption_fragments": [
+        "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates",
+        "and complete titles are in Appendix D."
+      ],
+      "render": "final/interior-377-appd-precedent-timeline.png",
+      "sha256": "e0960640dd44ae2e69b8db138eea7ec2937d8a370932a649df1a343295fc292c"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 386,
+      "printed_folio": "382",
+      "figure": "v103-offline-check.svg",
+      "caption_fragments": [
+        "Tier 0 ends with a test: can you open the reference and find what you need with the network off?",
+        "Record the source and date so you know which copy you have."
+      ],
+      "render": "final/interior-386-v103-offline-check.png",
+      "sha256": "168fe980486dafd1afabaee57e75d0b4ffb4ef856542ef298bdd4fb60df5ebe8"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 394,
+      "printed_folio": "390",
+      "figure": "v103-first-year-index.svg",
+      "caption_fragments": [
+        "A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the",
+        "actions and precedent references follow below."
+      ],
+      "render": "final/interior-394-v103-first-year-index.png",
+      "sha256": "adabf2d1867faf3ff1990d5d08e86d23de2cee40f5461d4bd1a461ae200c33b0"
+    },
+    {
+      "edition": "print",
+      "physical_page": 7,
+      "printed_folio": "3",
+      "figure": "v101-cutout-atlas.png",
+      "caption_fragments": [
+        "Atlas, outside the",
+        "demonstration room. AI-",
+        "adapted cutout from ",
+        "DARPA",
+        ",",
+        "public domain",
+        "."
+      ],
+      "render": "final/print-007-cutout-atlas.png",
+      "sha256": "43e9f94cb447d69bbfd7422ead536a4d14e11ad8c2c15b58685c5546edceab41"
+    },
+    {
+      "edition": "print",
+      "physical_page": 11,
+      "printed_folio": "7",
+      "figure": "intro-food-insecurity.svg",
+      "caption_fragments": [
+        "Food insecurity rose sharply in 2008. These household survey estimates show a historical",
+        "pattern, not a causal test of job loss. Very low food security is included within food insecurity.",
+        "USDA Economic Research Service, 2001\u20132024."
+      ],
+      "render": "final/print-011-intro-food-insecurity.png",
+      "sha256": "f088ca043bb84502f63b70ec955c176e39082e21fa55c049a868a10138d34e41"
+    },
+    {
+      "edition": "print",
+      "physical_page": 15,
+      "printed_folio": "11",
+      "figure": "intro-nine-stages.svg",
+      "caption_fragments": [
+        "A speculative map, not a timetable. The fourth stage is the choice this book argues for; later",
+        "stages are imagined possibilities."
+      ],
+      "render": "final/print-015-intro-nine-stages.png",
+      "sha256": "75ec3f9fdbd9277049c0c7ff85944c28ad7cd19c647fc2d6d51c0b32b5e8d8bb"
+    },
+    {
+      "edition": "print",
+      "physical_page": 24,
+      "printed_folio": "20",
+      "figure": "v103-reading-routes.svg",
+      "caption_fragments": [
+        "Three ways in. The short route gives you the argument and plan; the full route follows Elijah",
+        "through the chapters."
+      ],
+      "render": "final/print-024-v103-reading-routes.png",
+      "sha256": "8d34a6b5e03944fd99cca52ff9b69e8afd73363ace6a906a2ec78e1ea6db8cf4"
+    },
+    {
+      "edition": "print",
+      "physical_page": 34,
+      "printed_folio": "30",
+      "figure": "v103-narrative-bear-flag.png",
+      "caption_fragments": [
+        "Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion."
+      ],
+      "render": "final/print-034-v103-narrative-bear-flag.png",
+      "sha256": "678cc1d777d740ca8b7407008a54966c086ac9ab925cd9c84437652d26816aad"
+    },
+    {
+      "edition": "print",
+      "physical_page": 53,
+      "printed_folio": "49",
+      "figure": "v101-chart-forecast-shift.svg",
+      "caption_fragments": [
+        "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the",
+        "2023 survey. The two milestones are distinct, and neither date is a deadline. ",
+        "Grace et al.,",
+        "Thousands of AI Authors on the Future of AI",
+        "."
+      ],
+      "render": "final/print-053-chart-forecast-shift.png",
+      "sha256": "3737d58bcd3c4822f3c24a1271726785f6ecb8606561b091d74d6142dd7fc003"
+    },
+    {
+      "edition": "print",
+      "physical_page": 63,
+      "printed_folio": "59",
+      "figure": "ch02-eighteen-days.svg",
+      "caption_fragments": [
+        "Eighteen days from the June 12 export controls to their lifting on June 30. Access to the two",
+        "models still differed. Selected events from Anthropic\u2019s June 30 account, updated July 1; Stage 2",
+        "and Stage 3 are the author\u2019s interpretation."
+      ],
+      "render": "final/print-063-ch02-eighteen-days.png",
+      "sha256": "1e1945de04f79c29ccb67ad49bee413a3ffc390696be8fd2901ffdc354c3b345"
+    },
+    {
+      "edition": "print",
+      "physical_page": 64,
+      "printed_folio": "60",
+      "figure": "v101-visual-local-copies.svg",
+      "caption_fragments": [
+        "A copy you can open can outlast a broken link. It does not replace electrical power or a tested",
+        "plan for equipment that depends on it. Conceptual illustration."
+      ],
+      "render": "final/print-064-visual-local-copies.png",
+      "sha256": "b1f15be782b26eed87f638266e3fb96aa5a435f70d3cc2c06be0414501ca61df"
+    },
+    {
+      "edition": "print",
+      "physical_page": 73,
+      "printed_folio": "69",
+      "figure": "v101-cutout-rocket.png",
+      "caption_fragments": [
+        "An image for the imagined",
+        "departure. AI-adapted collage",
+        "from ",
+        "SpaceX",
+        ", ",
+        "CC0",
+        "; the",
+        "scenario remains speculative."
+      ],
+      "render": "final/print-073-cutout-rocket.png",
+      "sha256": "2673e7f49ae01f6f141e9c8b39a0df2ee08889157c6d19b62f5c4f6fafc67a13"
+    },
+    {
+      "edition": "print",
+      "physical_page": 80,
+      "printed_folio": "76",
+      "figure": "v103-narrative-near-end.png",
+      "caption_fragments": [
+        "Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the",
+        "world outside his window."
+      ],
+      "render": "final/print-080-v103-narrative-near-end.png",
+      "sha256": "abd1ea351f5faa1c08a4cafaff0f72830057ba5291a3ab7009707238fc40d04a"
+    },
+    {
+      "edition": "print",
+      "physical_page": 90,
+      "printed_folio": "86",
+      "figure": "v101-cutout-sun.png",
+      "caption_fragments": [
+        "Energy has to come from",
+        "somewhere. AI-adapted ",
+        "NASA/",
+        "SDO imagery",
+        ", ",
+        "public domain",
+        ";",
+        "not an unaltered scientific",
+        "image."
+      ],
+      "render": "final/print-090-cutout-sun.png",
+      "sha256": "a66e10bc37cd645d3165d1719e7cd7c250cac40fed8dbc6951af629cb689fbe6"
+    },
+    {
+      "edition": "print",
+      "physical_page": 93,
+      "printed_folio": "89",
+      "figure": "v101-chart-data-centre-demand.svg",
+      "caption_fragments": [
+        "The machine\u2019s appetite. The solid column is IEA\u2019s estimate for 2025; the hatched column is its",
+        "2030 projection. This is all data-centre electricity, not AI alone. ",
+        "IEA, Key Questions on Energy and",
+        "AI, 2026",
+        "."
+      ],
+      "render": "final/print-093-chart-data-centre-demand.png",
+      "sha256": "2602ee8e6228f49f5d3d54687ca1ce0374b522952e46558782feff1518cfd371"
+    },
+    {
+      "edition": "print",
+      "physical_page": 101,
+      "printed_folio": "97",
+      "figure": "ch05-horses-tractors.svg",
+      "caption_fragments": [
+        "US farm counts on January 1, 1910\u20131949. Separate vertical scales; 1948 and 1949 figures were",
+        "preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p.\u00a045."
+      ],
+      "render": "final/print-101-ch05-horses-tractors.png",
+      "sha256": "f91758ebc3da3e05be6740ac1a61f0d1f2393eb2fbff12c552a6aca97ce9c9ce"
+    },
+    {
+      "edition": "print",
+      "physical_page": 110,
+      "printed_folio": "106",
+      "figure": "ch06-capability-access.svg",
+      "caption_fragments": [
+        "Capability, deployment, ownership and access are separate questions. A productive farm can",
+        "stand beside hunger."
+      ],
+      "render": "final/print-110-ch06-capability-access.png",
+      "sha256": "91912842d55682c0caf66e328dc3aaa3a9c01ef143667ff93cfabbf2e185fde7"
+    },
+    {
+      "edition": "print",
+      "physical_page": 113,
+      "printed_folio": "109",
+      "figure": "v101-chart-income-food-access.svg",
+      "caption_fragments": [
+        "Income and food access. In the 2024 survey, food insecurity was associated with income. These",
+        "two selected groups do not represent every income category, and the comparison does not",
+        "establish causation. ",
+        "USDA ERS, ERR-358, Table 2",
+        "."
+      ],
+      "render": "final/print-113-chart-income-food-access.png",
+      "sha256": "f37421af531d952d0eca62d0ada289347a3c599ab2a31b0b5c70afeac2b474ad"
+    },
+    {
+      "edition": "print",
+      "physical_page": 115,
+      "printed_folio": "111",
+      "figure": "v101-visual-access-gate.svg",
+      "caption_fragments": [
+        "A working machine still needs an arrangement that lets people reach its output. Conceptual",
+        "illustration."
+      ],
+      "render": "final/print-115-visual-access-gate.png",
+      "sha256": "293de9e73819a5116d3ea0d1ba63ff596ddb4a8d8e8356577fce5c2c790d528c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 122,
+      "printed_folio": "118",
+      "figure": "v103-narrative-passing-beans.png",
+      "caption_fragments": [
+        "Fictional scene: pass the beans. The conversation turns from retraining to the floor people need",
+        "beneath them."
+      ],
+      "render": "final/print-122-v103-narrative-passing-beans.png",
+      "sha256": "861a683dc76c1d288031f60872fa6ebb51df80d96b098e2270324b572ad6304c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 145,
+      "printed_folio": "141",
+      "figure": "ch08-cognitive-extraction.svg",
+      "caption_fragments": [
+        "A possible pattern to notice in your own day. Conceptual illustration, not a diagnosis or a model",
+        "of brain chemistry."
+      ],
+      "render": "final/print-145-ch08-cognitive-extraction.png",
+      "sha256": "5e73ac23b5df1e679c983e9b7990353a9e7d451858a55d92995745a089fbc905"
+    },
+    {
+      "edition": "print",
+      "physical_page": 147,
+      "printed_folio": "143",
+      "figure": "ch08-focus-recovery.svg",
+      "caption_fragments": [
+        "One possible pattern of interrupted work. The drawing gives no fixed recovery time, interruption",
+        "threshold, or measured effect size."
+      ],
+      "render": "final/print-147-ch08-focus-recovery.png",
+      "sha256": "02c0e27041cc72af89bd671b7f61a6b0d82e545a951d352ea44412526a922294"
+    },
+    {
+      "edition": "print",
+      "physical_page": 149,
+      "printed_folio": "145",
+      "figure": "ch08-firewall-pipeline.svg",
+      "caption_fragments": [
+        "A routine to try, observe and adjust. Two timed windows each day are an example schedule, not",
+        "a measured optimum."
+      ],
+      "render": "final/print-149-ch08-firewall-pipeline.png",
+      "sha256": "c8be609a8c69b2bb7d0e003364b8c6023e5e7190120cd929177a90d71ae9278c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 151,
+      "printed_folio": "147",
+      "figure": "ch08-info-architectures.svg",
+      "caption_fragments": [
+        "Routines, not measurements of your brain. Some interruptions are useful or urgent. Try a",
+        "schedule and check whether it helps."
+      ],
+      "render": "final/print-151-ch08-info-architectures.png",
+      "sha256": "14e0aa4440619d2495b1864311bc3d77511803c4d3abf51d51bf312595e3e128"
+    },
+    {
+      "edition": "print",
+      "physical_page": 153,
+      "printed_folio": "149",
+      "figure": "v101-visual-attention-ribbon.svg",
+      "caption_fragments": [
+        "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive",
+        "budget or a fixed recovery time."
+      ],
+      "render": "final/print-153-visual-attention-ribbon.png",
+      "sha256": "77ef4a38eb7bd0402cd25060254863068328a64425f2c48c52efd0a825ade1a4"
+    },
+    {
+      "edition": "print",
+      "physical_page": 156,
+      "printed_folio": "152",
+      "figure": "ch08-star-vs-mesh.svg",
+      "caption_fragments": [
+        "A mesh can reroute only if a usable path remains. Crosses mark failed nodes; dashed links are",
+        "affected by that failure. People still maintain the circle and its connections."
+      ],
+      "render": "final/print-156-ch08-star-vs-mesh.png",
+      "sha256": "ddb66bc56ef7e1a8a0e1fd7be323dbfdc46d357a106b533e9ac4a583bc12f875"
+    },
+    {
+      "edition": "print",
+      "physical_page": 166,
+      "printed_folio": "162",
+      "figure": "ch09-hyperlocal-vs-global.svg",
+      "caption_fragments": [
+        "Shorter supply lines can make repair and coordination more local. Imported parts, materials,",
+        "energy and human work remain; distance alone does not establish fair treatment."
+      ],
+      "render": "final/print-166-ch09-hyperlocal-vs-global.png",
+      "sha256": "b37b6d25be1453cd5b528f1f4e8d33b173a31c196ee0b3c78b5419193431acef"
+    },
+    {
+      "edition": "print",
+      "physical_page": 168,
+      "printed_folio": "164",
+      "figure": "ch09-region-ring.svg",
+      "caption_fragments": [
+        "Build regional capacity, then measure what it covers. Stores, seasonal production, water, power,",
+        "delivery and remaining imports determine how many people can be supplied and for how long."
+      ],
+      "render": "final/print-168-ch09-region-ring.png",
+      "sha256": "659ebd288f6e0b43c46792094e74f6c02dd89758d5cded5a17fc674530c03f15"
+    },
+    {
+      "edition": "print",
+      "physical_page": 169,
+      "printed_folio": "165",
+      "figure": "v101-cutout-printer.png",
+      "caption_fragments": [
+        "A machine takes shape around",
+        "its work. AI-adapted cutout",
+        "from ",
+        "John Abella",
+        ", ",
+        "CC BY 2.0",
+        "."
+      ],
+      "render": "final/print-169-cutout-printer.png",
+      "sha256": "200a9a12303f5b7b4f092c994881408eaa767050d7ccbd860140e8001219afc5"
+    },
+    {
+      "edition": "print",
+      "physical_page": 170,
+      "printed_folio": "166",
+      "figure": "v101-chart-ammonia-energy.svg",
+      "caption_fragments": [
+        "The energy in ammonia. IEA\u2019s global-average estimate and best-available-process benchmarks",
+        "are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. ",
+        "IEA,",
+        "Ammonia Technology Roadmap, 2021",
+        "."
+      ],
+      "render": "final/print-170-chart-ammonia-energy.png",
+      "sha256": "71066c24b75128d433b7690c9b13c7a4ce120697d245df404ad2d71382876d80"
+    },
+    {
+      "edition": "print",
+      "physical_page": 172,
+      "printed_folio": "168",
+      "figure": "ch09-cnc-bed.svg",
+      "caption_fragments": [
+        "A gantry can reduce walking space in a bed. Tooling and behavior depend on the machine and",
+        "software version; this concept is not a build plan or a promise to automate the entire crop."
+      ],
+      "render": "final/print-172-ch09-cnc-bed.png",
+      "sha256": "96eb5fff78b722f5d40b6d61541fa4d97f4dcfcc2b2de9dd35d42dfd8c93e9b4"
+    },
+    {
+      "edition": "print",
+      "physical_page": 174,
+      "printed_folio": "170",
+      "figure": "ch09-greenhouse-bus.svg",
+      "caption_fragments": [
+        "The greenhouse bus is a component map. Use moisture readings checked against the bed,",
+        "configure run-time and water limits, verify that water stops on faults and power loss, and retain",
+        "a manual shutoff."
+      ],
+      "render": "final/print-174-ch09-greenhouse-bus.png",
+      "sha256": "b6533a64797fbaed5f9ee56cdc9834807b719be1eab8113b356547764b6baa32"
+    },
+    {
+      "edition": "print",
+      "physical_page": 176,
+      "printed_folio": "172",
+      "figure": "v101-scene-food-delivery.svg",
+      "caption_fragments": [
+        "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep",
+        "the five-household promise. The buildings and route are illustrative; the vegetables supplement",
+        "meals."
+      ],
+      "render": "final/print-176-scene-food-delivery.png",
+      "sha256": "e4e103dbc3b43243c02323987309c2b8adf8d67ce0593677762b4e3420bdab69"
+    },
+    {
+      "edition": "print",
+      "physical_page": 189,
+      "printed_folio": "185",
+      "figure": "ch10-model-collapse.svg",
+      "caption_fragments": [
+        "One possible failure in recursive training on generated samples. This schematic is not a universal",
+        "outcome or a timetable; real data, sampling and training choices affect the result. Based on",
+        "Shumailov et al., Nature (2024)."
+      ],
+      "render": "final/print-189-ch10-model-collapse.png",
+      "sha256": "19b51aafa7e6bd08c35cd46cc3ec5fa18f8995934d586cf281acdf36d2629aaa"
+    },
+    {
+      "edition": "print",
+      "physical_page": 191,
+      "printed_folio": "187",
+      "figure": "ch10-algorithm-unlock.svg",
+      "caption_fragments": [
+        "Document useful work, tell the true story with consent, and keep the instructions available. A",
+        "platform may bring readers; a post is not guaranteed reach or income."
+      ],
+      "render": "final/print-191-ch10-algorithm-unlock.png",
+      "sha256": "706cb907868d05d481e719b002684d1ece6b0542a3c701a3dc42ec1329fbd335"
+    },
+    {
+      "edition": "print",
+      "physical_page": 204,
+      "printed_folio": "200",
+      "figure": "v101-cutout-spot.png",
+      "caption_fragments": [
+        "Capability still needs an",
+        "arrangement for access. AI-",
+        "adapted cutout from ",
+        "Jonte",
+        ",",
+        "CC BY-SA 4.0",
+        "."
+      ],
+      "render": "final/print-204-cutout-spot.png",
+      "sha256": "9bf80b7ba3f2c16f842ed3b6d90bedb0300482efed5de57f230fbe2b2e12977c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 205,
+      "printed_folio": "201",
+      "figure": "v101-visual-operating-stack.svg",
+      "caption_fragments": [
+        "The model file is one layer of a working service. Running a useful service also takes software,",
+        "hardware, power, and people who maintain it. Conceptual illustration."
+      ],
+      "render": "final/print-205-visual-operating-stack.png",
+      "sha256": "2f3e5e95d8d38b5e1d9d6237169403ebf2f6222f25136158ea47d8522e746043"
+    },
+    {
+      "edition": "print",
+      "physical_page": 207,
+      "printed_folio": "203",
+      "figure": "v101-chart-weights-memory.svg",
+      "caption_fragments": [
+        "Memory before the overhead. These are derived weights-only sizes, not measured VRAM",
+        "requirements. They omit the chapter\u2019s illustrative allowance as well as runtime costs. ",
+        "llama.cpp,",
+        "memory and context options",
+        "."
+      ],
+      "render": "final/print-207-chart-weights-memory.png",
+      "sha256": "9846ef6dde02b38d6314100dc995c1f48f6cef8552a4d9576d829f3662c40d5c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 209,
+      "printed_folio": "205",
+      "figure": "ch11-cooling-loop.svg",
+      "caption_fragments": [
+        "Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in",
+        "kilograms per second: Q\u0307 = \u1e41 Cp \u0394T. This diagram specifies neither components nor cooling",
+        "capacity."
+      ],
+      "render": "final/print-209-ch11-cooling-loop.png",
+      "sha256": "64e7bb4f215ce1cba79de7cf9f477b60a4b1427ac7535bf29c16d0b7d6014406"
+    },
+    {
+      "edition": "print",
+      "physical_page": 219,
+      "printed_folio": "215",
+      "figure": "v101-chart-land-values.svg",
+      "caption_fragments": [
+        "What an acre costs. USDA survey estimates include farm buildings as well as land. These are",
+        "nominal national averages, not inflation-adjusted values or local offers. ",
+        "USDA NASS, Land Values",
+        "2026, page 5",
+        "."
+      ],
+      "render": "final/print-219-chart-land-values.png",
+      "sha256": "45329bc23b90798b68d9fcff635882cd0faa287e959c05394ec6117392d4b503"
+    },
+    {
+      "edition": "print",
+      "physical_page": 220,
+      "printed_folio": "216",
+      "figure": "v101-visual-shared-land.svg",
+      "caption_fragments": [
+        "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a",
+        "way to challenge decisions. Conceptual illustration, not a legal template."
+      ],
+      "render": "final/print-220-visual-shared-land.png",
+      "sha256": "1b9277b6f3a1267e8ebb0fb99a93ec69fc6cd33f0f828cb918722de1902843f8"
+    },
+    {
+      "edition": "print",
+      "physical_page": 223,
+      "printed_folio": "219",
+      "figure": "ch12-csa-network.svg",
+      "caption_fragments": [
+        "A shared-service network. People match usable surplus to requests and arrange delivery. The",
+        "drawing promises neither a yield nor an autonomous crew."
+      ],
+      "render": "final/print-223-ch12-csa-network.png",
+      "sha256": "70d37a1500e70c73555597bbff013f2efa5ccf498e4028f6d264370dd1b8f7b9"
+    },
+    {
+      "edition": "print",
+      "physical_page": 235,
+      "printed_folio": "231",
+      "figure": "ch13-shell-architecture.svg",
+      "caption_fragments": [
+        "Two nominal forty-foot containers give a 640-square-foot exterior footprint. Usable space and",
+        "structural details depend on the finished design; the chapter\u2019s budget is fictional."
+      ],
+      "render": "final/print-235-ch13-shell-architecture.png",
+      "sha256": "4a9e3fd4af5ed2ac2b62f2775a430f5b634334943ccdee2fff121f7683fa442e"
+    },
+    {
+      "edition": "print",
+      "physical_page": 237,
+      "printed_folio": "233",
+      "figure": "ch13-thermal-seal.svg",
+      "caption_fragments": [
+        "Insulation is one layer in a wall. Air control, moisture, ventilation and fire protection have to",
+        "work with it."
+      ],
+      "render": "final/print-237-ch13-thermal-seal.png",
+      "sha256": "454bf13790a549530071d7b260f7a1c991fecc533995927f34dbdf17d077317f"
+    },
+    {
+      "edition": "print",
+      "physical_page": 247,
+      "printed_folio": "243",
+      "figure": "ch14-logistic-shockwave.svg",
+      "caption_fragments": [
+        "One possible disruption sequence, not a clock. Existing stock, replacement routes, demand, and",
+        "the specific failure determine what reaches the shelves and when."
+      ],
+      "render": "final/print-247-ch14-logistic-shockwave.png",
+      "sha256": "7d4dcd765170fd03c5b875bd146e7762ed7ad77eed0f83156857dbdf1a260d8c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 251,
+      "printed_folio": "247",
+      "figure": "v101-chart-waste-pathways.svg",
+      "caption_fragments": [
+        "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could",
+        "not have been donated. Donation is net of food banks\u2019 unusable portion. ",
+        "EPA, Table 5",
+        "."
+      ],
+      "render": "final/print-251-chart-waste-pathways.png",
+      "sha256": "509b648909eb16ce401086e6447c0e9cbc48ef556e2cb442a62665f67a0f1cab"
+    },
+    {
+      "edition": "print",
+      "physical_page": 253,
+      "printed_folio": "249",
+      "figure": "ch14-mesh-comms.svg",
+      "caption_fragments": [
+        "A mesh can route around a break only where another powered, usable path remains. Test the",
+        "missing relay."
+      ],
+      "render": "final/print-253-ch14-mesh-comms.png",
+      "sha256": "cbb9831e547e6bc0d3238497eb18957b558b432841dc255cd0c08c3c1794b323"
+    },
+    {
+      "edition": "print",
+      "physical_page": 264,
+      "printed_folio": "260",
+      "figure": "ch15-clt-firewall.svg",
+      "caption_fragments": [
+        "A common land-trust housing arrangement separates ownership of land and home. Resale",
+        "terms need continuing stewardship; taxes and debt remain."
+      ],
+      "render": "final/print-264-ch15-clt-firewall.png",
+      "sha256": "a684e04ebed0d29b47cf1e41c01f128cad5a27ed1cc7daf1da81a94300474fae"
+    },
+    {
+      "edition": "print",
+      "physical_page": 266,
+      "printed_folio": "262",
+      "figure": "ch15-soil-food-web.svg",
+      "caption_fragments": [
+        "The soil food web cycles nutrients. Harvest and other losses remove them, so a productive bed",
+        "still needs measurement and appropriate replenishment."
+      ],
+      "render": "final/print-266-ch15-soil-food-web.png",
+      "sha256": "974cd87a150842e821da495b3e4de40be48aafaa67af86be447d77d34c1ddb99"
+    },
+    {
+      "edition": "print",
+      "physical_page": 268,
+      "printed_folio": "264",
+      "figure": "v101-scene-living-soil.svg",
+      "caption_fragments": [
+        "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange",
+        "nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its",
+        "boundary. Conceptual cutaway, not a measured soil profile."
+      ],
+      "render": "final/print-268-scene-living-soil.png",
+      "sha256": "3cf6a90a927350e7e754e380e4f048fac529393db5f3115b580fd2c6d11015bb"
+    },
+    {
+      "edition": "print",
+      "physical_page": 279,
+      "printed_folio": "275",
+      "figure": "ch16-sneakernet.svg",
+      "caption_fragments": [
+        "A hand-carried copy needs no live network link. It still needs trusted handling, a compatible",
+        "reader and a recoverable backup."
+      ],
+      "render": "final/print-279-ch16-sneakernet.png",
+      "sha256": "74abd630b12cad1b46c0c0210269df5fbc86e49bcdfd0e0de5bff8fb386fff97"
+    },
+    {
+      "edition": "print",
+      "physical_page": 288,
+      "printed_folio": "284",
+      "figure": "v101-cutout-tools.png",
+      "caption_fragments": [
+        "Tools with a history of use. AI-",
+        "adapted collage from",
+        "Shixart1985",
+        ", ",
+        "CC BY 2.0",
+        "."
+      ],
+      "render": "final/print-288-cutout-tools.png",
+      "sha256": "9f0806bb4e07c63612fe79a8dfc6fdfb3f93a10472f9752396207f81ed20afe0"
+    },
+    {
+      "edition": "print",
+      "physical_page": 290,
+      "printed_folio": "286",
+      "figure": "ch17-algae-loop.svg",
+      "caption_fragments": [
+        "Growing an ingredient can reduce a bought input. It doesn\u2019t establish a complete fish diet or a",
+        "closed system."
+      ],
+      "render": "final/print-290-ch17-algae-loop.png",
+      "sha256": "8e9788a8b1175335b12cf122f665c5226b56c1d5a9d5de3a2070058ecf1312d3"
+    },
+    {
+      "edition": "print",
+      "physical_page": 294,
+      "printed_folio": "290",
+      "figure": "ch17-dc-native.svg",
+      "caption_fragments": [
+        "For a load that already uses DC, compare the whole path. Avoiding an inverter pair does not",
+        "remove charging, wiring or regulation losses."
+      ],
+      "render": "final/print-294-ch17-dc-native.png",
+      "sha256": "adac4145d74b90b6b4289cd2d8400b1e8b5c2d3a3415d1ca2799322f1ae0c346"
+    },
+    {
+      "edition": "print",
+      "physical_page": 296,
+      "printed_folio": "292",
+      "figure": "ch17-fab-lab.svg",
+      "caption_fragments": [
+        "A neighborhood fab lab combines suitable tools with trained people, supported materials and",
+        "checks for the actual job."
+      ],
+      "render": "final/print-296-ch17-fab-lab.png",
+      "sha256": "dd94ece2730c0992da4958c8d57e9ac78bafd747256819632f6b3ad38fc39e4c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 297,
+      "printed_folio": "293",
+      "figure": "v101-scene-shared-workshop.svg",
+      "caption_fragments": [
+        "Shared tools need a working arrangement around them: trained people, suitable power and",
+        "materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not",
+        "a fabrication or wiring plan."
+      ],
+      "render": "final/print-297-scene-shared-workshop.png",
+      "sha256": "fbf3a3993c08be14737dcbbb5d78a281fe13e8709d9f84eaf571736e5056b84f"
+    },
+    {
+      "edition": "print",
+      "physical_page": 306,
+      "printed_folio": "302",
+      "figure": "v101-visual-continuity-calendar.svg",
+      "caption_fragments": [
+        "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters",
+        "to the households expecting a delivery. Illustration of the fictional scene."
+      ],
+      "render": "final/print-306-visual-continuity-calendar.png",
+      "sha256": "91bf21f8d7a9ee9220507b1cf126b82de5b9e059060d79b2e56f850c6db6666f"
+    },
+    {
+      "edition": "print",
+      "physical_page": 310,
+      "printed_folio": "306",
+      "figure": "ch18-social-contract.svg",
+      "caption_fragments": [
+        "The proposal makes essentials a funded floor, available without a job. Tools help; remaining",
+        "work, supplies and reliable delivery still need provision."
+      ],
+      "render": "final/print-310-ch18-social-contract.png",
+      "sha256": "98178ab66c049ec6ac7c3197c9a67fc665c6dca2db276fc85868c37c0c0751fe"
+    },
+    {
+      "edition": "print",
+      "physical_page": 315,
+      "printed_folio": "311",
+      "figure": "v101-chart-meal-response.svg",
+      "caption_fragments": [
+        "When a meal fails. An illustrative worksheet from this chapter\u2019s premortem record, not the",
+        "measured performance of a service. Confirm the alternative and the people who will deliver it",
+        "before expanding the promise."
+      ],
+      "render": "final/print-315-chart-meal-response.png",
+      "sha256": "7f361fe48f13fe6fe1e31089105841a6ea837dd17e861e6507386bcaeef8704b"
+    },
+    {
+      "edition": "print",
+      "physical_page": 322,
+      "printed_folio": "318",
+      "figure": "v103-narrative-rosa-testimony.png",
+      "caption_fragments": [
+        "Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond",
+        "the next delivery."
+      ],
+      "render": "final/print-322-v103-narrative-rosa-testimony.png",
+      "sha256": "6f87481cdd22b0f746036faea29a272b8c829be6a4ee7882cacd73c2d1bbcdaf"
+    },
+    {
+      "edition": "print",
+      "physical_page": 326,
+      "printed_folio": "322",
+      "figure": "ch19-conversion-ladder.svg",
+      "caption_fragments": [
+        "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two",
+        "describe how the proposal would be maintained."
+      ],
+      "render": "final/print-326-ch19-conversion-ladder.png",
+      "sha256": "21c84039097f854c594ac71cc2e38bf0058f71b9c4ff04917a741a5dc191e8ae"
+    },
+    {
+      "edition": "print",
+      "physical_page": 369,
+      "printed_folio": "365",
+      "figure": "v103-service-ledger.svg",
+      "caption_fragments": [
+        "Free to the person eating still leaves a working ledger: equipment, maintenance, remaining",
+        "labor, and delivery need dependable funding."
+      ],
+      "render": "final/print-369-v103-service-ledger.png",
+      "sha256": "94cd1f7a68971c3f55c88838162b2adbb644f4c8f214acc9d71933df96240820"
+    },
+    {
+      "edition": "print",
+      "physical_page": 377,
+      "printed_folio": "373",
+      "figure": "appd-precedent-timeline.svg",
+      "caption_fragments": [
+        "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates",
+        "and complete titles are in Appendix D."
+      ],
+      "render": "final/print-377-appd-precedent-timeline.png",
+      "sha256": "683b61677af42778ef0c69a875f0b496bdda3044102190162fdd0d4ec205f38c"
+    },
+    {
+      "edition": "print",
+      "physical_page": 386,
+      "printed_folio": "382",
+      "figure": "v103-offline-check.svg",
+      "caption_fragments": [
+        "Tier 0 ends with a test: can you open the reference and find what you need with the network off?",
+        "Record the source and date so you know which copy you have."
+      ],
+      "render": "final/print-386-v103-offline-check.png",
+      "sha256": "fba335600b4cd216c55ce9c33c536d01a2ca00199b25d9784bfbbe35b3074582"
+    },
+    {
+      "edition": "print",
+      "physical_page": 394,
+      "printed_folio": "390",
+      "figure": "v103-first-year-index.svg",
+      "caption_fragments": [
+        "A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the",
+        "actions and precedent references follow below."
+      ],
+      "render": "final/print-394-v103-first-year-index.png",
+      "sha256": "e95fe82c6405f483d45f60208379014596a86fae70c0a8d89758ca0fdf924cb3"
+    }
+  ],
+  "limits": "Raster evidence only. The review report identifies visual findings; this script does not certify appearance or physical print quality."
+}

@@ -1,0 +1,43 @@
+Vienna municipal housing (Chapter 13)
+City of Vienna, Municipal and Provincial Archives, From Red Vienna to the
+Ständestaat, 1918–1938. Institutional retrospective on municipal government
+and housing.
+City of Vienna, Rathauskorrespondenz, Der Karl-Marx-Hof ist 60, October 11,
+1990. German anniversary notice describing the complex and ongoing
+renovation plans.
+Additional chapter sources
+Much of what follows was researched for earlier editions, cut in v0.8.0, and
+restored in v0.9.0. Later additions support the expanded manuscript and cor-
+rections through v0.10.2. Figures quoted from a builderʼs own video or a
+companyʼs own history are attributed as such in the text.
+Introduction and Chapter 1: definitions, forecasts, and the Transformer
+Nikola Danaylov, 17 Definitions of the Technological Singularity, Singularity
+Weblog. Sixteen definitions and an empty seventeenth slot; source of the
+Thornton (1847) and Kevin Kelly definitions.
+Samuel Butler, “Darwin among the Machines”, The Press, Christchurch, 13
+June 1863; and Erewhon (1872).
+Alan Turing, “Intelligent Machinery, A Heretical Theory”, c. 1951, Turing
+Digital Archive, Kingʼs College Cambridge.
+Stanislaw Ulamʼs 1958 recollection of John von Neumann, as quoted in
+Vingeʼs essay, listed above.
+Hans Moravec, Mind Children (Harvard University Press, 1988); Nick
+Bostrom, “How Long Before Superintelligence?” (1997, revised); Ray
+Kurzweil, The Singularity Is Near (Viking, 2005); John Smart, Acceleration
+Watch.
+Leopold Aschenbrenner, Situational Awareness: The Decade Ahead (2024).
+One insiderʼs argument, cited as such.
+Katja Grace and colleagues, Thousands of AI Authors on the Future of AI,
+revision 3, first published 2024, revised 2025. Source of the 2022 and 2023
+aggregate forecasts, the 10 percent probability of high-level machine intelli-
+gence by 2027, and the extinction-risk responses. The surveys used chang-
+ing samples; the displayed dates are aggregate probability thresholds, not
+every respondent revising a personal date.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+SURVIVING THE SINGULARITY
+356

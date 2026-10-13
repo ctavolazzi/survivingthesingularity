@@ -1,0 +1,231 @@
+{
+  "figures": {
+    "ch13-shell-architecture": {
+      "screen": {
+        "labels": 14,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.27490234375,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 14,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.27490234375,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch13-thermal-seal": {
+      "screen": {
+        "labels": 12,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.749837239583333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 12,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.749837239583333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch14-mesh-comms": {
+      "screen": {
+        "labels": 9,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.1298828125,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 9,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.1298828125,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch15-clt-firewall": {
+      "screen": {
+        "labels": 9,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.749837239583333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 9,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.749837239583333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch16-sneakernet": {
+      "screen": {
+        "labels": 9,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.02783203125,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 9,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 4.02783203125,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch17-dc-native": {
+      "screen": {
+        "labels": 19,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.557291666666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 19,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.557291666666667,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch17-fab-lab": {
+      "screen": {
+        "labels": 10,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.3388671875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 10,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.3388671875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch18-social-contract": {
+      "screen": {
+        "labels": 16,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.082356770833333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 16,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.082356770833333,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "ch19-conversion-ladder": {
+      "screen": {
+        "labels": 33,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 6.13671875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 33,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 6.13671875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    },
+    "appd-precedent-timeline": {
+      "screen": {
+        "labels": 37,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 6.1748046875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      },
+      "print": {
+        "labels": 37,
+        "min_user_units": 14,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 6.1748046875,
+        "overlaps": [],
+        "outside": [],
+        "path_errors": []
+      }
+    }
+  },
+  "negative_controls": {
+    "undersized_label_detected": true,
+    "overlapping_labels_detected": true,
+    "out_of_frame_label_detected": true,
+    "path_through_label_detected": true
+  },
+  "limits": "Actual 4.56-inch browser rendering with embedded JetBrains Mono, label bounds/overlap and sampled path intersections. Does not certify physical print contrast, other-reader font substitution or full-book pagination."
+}

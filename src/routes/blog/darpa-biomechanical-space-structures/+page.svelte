@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import { onMount } from 'svelte';
   import Spacer from '$lib/components/Spacer.svelte';
 
@@ -15,31 +16,15 @@
   };
 
   // Recommended videos related to space technology, AI, and future innovations
-  const recommendedVideos = [
-    {
-      id: "U1tQbD25dGY",
-      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
-    },
-    {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    }
-  ];
+  const recommendedVideos = [];
 </script>
 
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content={post.description} />
-  <meta property="og:title" content={post.title} />
-  <meta property="og:description" content={post.description} />
-  <meta property="og:image" content={post.image} />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
+
+<SocialMeta title={post.title} description={post.description} />
 
 <div class="blog-post">
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">

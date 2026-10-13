@@ -1,0 +1,34 @@
+Nine stages. This bookʼs map of the Singularity, from Stage 1, the Cash
+Grab, to Stage 9, the Apex Intelligence. Stages 1 to 5 organize its near-term
+social choices; the whole sequence remains a proposed map. (Chapters 2
+to 4, Appendix C)
+Open weights. A model whose trained parameters are available to down-
+load, subject to its license and access terms. Downloaded copies can run
+locally on suitable hardware, but availability alone doesnʼt grant unre-
+stricted rights or provide the training data. (Chapter 2)
+Photobioreactor. A  vessel  that  grows  algae  under  controlled  light  and
+conditions. The builder in Chapter 17 printed one at home. (Chapter 17)
+Precedent Ledger. The bookʼs twenty-four documented cases of people
+meeting a new capability, or a new rule, before this one, each with a
+story, a mechanism, a rule, and a practice. (Introduction and Appendix D)
+Premortem. Imagining that a plan has already failed and working back-
+ward to find out why, before it fails for real. (Chapter 18)
+Primate Backlash. Stage 5: grief and anger at the change, including real
+objections, sometimes expressed with a brick. (Chapter 2)
+Recursive self-improvement. An AI system helping to design the next,
+better version of itself. (Chapters 1 and 3)
+SB 1383. Californiaʼs law requiring large food businesses to recover edible
+food and setting a target to recover 20 percent of edible food that would
+otherwise be landfilled. (Chapters 14 and 19)
+Short loop. A tighter circle of food, repair, tools, and knowledge drawn
+around  your  region,  so  it  keeps  circulating  when  the  long  global  line
+hiccups. (Chapter 14)
+Shouse. A shop-house: half workshop, half compact home, under one
+roof. (Chapter 13)
+Singularity (this bookʼs definition). The point where intelligence stops
+being  scarce,  and  every  institution  quietly  built  on  its  scarcity  starts
+failing before anyone has written the replacement. (Chapter 1)
+Sneakernet. Moving data by carrying it: a memory card handed person to
+person when the network isnʼt there. (Chapter 16)
+SURVIVING THE SINGULARITY
+390

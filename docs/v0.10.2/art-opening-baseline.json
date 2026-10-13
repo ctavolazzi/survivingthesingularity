@@ -1,0 +1,52 @@
+{
+  "intro-nine-stages.svg": {
+    "source_sha256": "c4fd78d4313e9bd4a52432e82001643657c39ed2b317d6a950e48529f3cab359",
+    "print_sha256": "028d3c714b950b2b122f6b9fce9e3117eb9267358de58c498b760fd774e86b49",
+    "source_viewBox": "0 0 900 852"
+  },
+  "ch02-eighteen-days.svg": {
+    "source_sha256": "1f844cb170df5819927c4ff6be56e05197ef8a35c42dad8cba73530ecaa9dec2",
+    "print_sha256": "9256ce7511c784b59f386b23041d7935dd54b553b2e6721a16925220b2a33e39",
+    "source_viewBox": "0 0 900 520"
+  },
+  "ch05-horses-tractors.svg": {
+    "source_sha256": "2640f41565ddacb37554addbcdbf18d67ed161b7563e8d48ea2ef44ede6a6b0c",
+    "print_sha256": "07b455295e594d002313fef2588cbe1bc6f6e93e95b70901ef9fbcb60ad41416",
+    "source_viewBox": "0 0 900 620"
+  },
+  "ch06-capability-access.svg": {
+    "source_sha256": "200e895b78f60738a8a3b3e3fe38f3aa9f87fb8817b838c0ba16af9c2220f861",
+    "print_sha256": "a19503fdfccac7440e18d168988d33bc3e1e70259d314dcc0c2bf2165c763628",
+    "source_viewBox": "0 0 900 400"
+  },
+  "ch08-cognitive-extraction.svg": {
+    "source_sha256": "e0287445fc17db0472130bd6eb2930ea39ca7f12f4ac2bc3f9e5dd4cf7c22ac1",
+    "print_sha256": "ac53f49d3b0c6a7049952e0831e666681e32b9563e09acba43a0c0832882ffff",
+    "source_viewBox": "0 0 860 640"
+  },
+  "ch08-focus-recovery.svg": {
+    "source_sha256": "c05a8bdaee279212a4acd89910fcd320d2d0cdbebb6273aa6bc2cef0047f0e2d",
+    "print_sha256": "c63ac8f969c65ee6e4cbed0293e6e0eec887d349f24882098cb5d94e1b43a828",
+    "source_viewBox": "0 0 860 540"
+  },
+  "ch08-firewall-pipeline.svg": {
+    "source_sha256": "cf4dac67ba01b7032b7d259fb82f5922b428742567f0f21c476c5be155854443",
+    "print_sha256": "994b7428f9c03f98911329719f12b27b5b0654fb871a3233ee65731aeb4abf01",
+    "source_viewBox": "0 0 860 420"
+  },
+  "ch08-info-architectures.svg": {
+    "source_sha256": "5ccacb135bf0b80071b2833bc2bdfd95631057f013b2e9bad43d0ed519331dac",
+    "print_sha256": "a6dba420abce65de0f7fa0c5cd4cd170d5578646721bfae3b86d93519ec85b21",
+    "source_viewBox": "0 0 860 600"
+  },
+  "ch08-star-vs-mesh.svg": {
+    "source_sha256": "31d1765d859c0be72fb125d1f8d5ffc7e34906f8e4dc97c8f58b333930c41c4d",
+    "print_sha256": "c0fe43039838ec17a9a0d016f012a549dbb714b7e9fedf9598ce503284ae2d8f",
+    "source_viewBox": "0 0 860 500"
+  },
+  "intro-food-insecurity.svg": {
+    "source_sha256": "4acc1e68efec7039ed606e117e4b20c7f9a38dedef0755d98321b1cb9d71df6e",
+    "print_sha256": "d82b7a6216aabedb76b24622b17c28a67bc3010b594e6edd023f91a74d517019",
+    "source_viewBox": "0 0 480 646"
+  }
+}

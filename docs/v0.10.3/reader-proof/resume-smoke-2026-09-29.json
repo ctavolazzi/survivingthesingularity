@@ -1,0 +1,79 @@
+{
+  "base": "http://127.0.0.1:5191",
+  "checked_utc": "2026-09-30T01:45:54.708Z",
+  "version": "0.10.3",
+  "routes": [
+    {
+      "path": "/book/how-to-use",
+      "status": 200,
+      "new_art_loaded": [
+        {
+          "src": "/book-images/v103-reading-routes.svg",
+          "width": 191,
+          "height": 150,
+          "alt": "Three reading routes: Introduction, Chapter 19 and Appendix C; add Preface, Chapters 6 and 12, and Conclusion for a wider view; or read every section in order."
+        }
+      ]
+    },
+    {
+      "path": "/read",
+      "status": 200,
+      "mounted_sections": 35,
+      "new_art_loaded": [
+        {
+          "src": "/book-images/v103-reading-routes.svg",
+          "width": 191,
+          "height": 150,
+          "alt": "Three reading routes: Introduction, Chapter 19 and Appendix C; add Preface, Chapters 6 and 12, and Conclusion for a wider view; or read every section in order."
+        },
+        {
+          "src": "/book-images/v103-narrative-bear-flag.png",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Illustration of three realtors raising glasses beside Elijah and his laptop at the Bear Flag."
+        },
+        {
+          "src": "/book-images/v103-narrative-near-end.png",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Illustration of Elijah holding coffee at his apartment window at dawn, with a closed laptop behind him."
+        },
+        {
+          "src": "/book-images/v103-narrative-passing-beans.png",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Illustration of Marta passing a bowl of beans to Denny at the cooperative's plywood dinner table."
+        },
+        {
+          "src": "/book-images/v103-narrative-rosa-testimony.png",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Illustration of Rosa speaking at a county microphone in her warehouse shirt, with a brace on her right wrist."
+        },
+        {
+          "src": "/book-images/v103-service-ledger.svg",
+          "width": 202,
+          "height": 150,
+          "alt": "An open ledger with four continuing service costs: equipment, maintenance, remaining labor and delivery. No prices or budget estimates are shown."
+        },
+        {
+          "src": "/book-images/v103-offline-check.svg",
+          "width": 189,
+          "height": 150,
+          "alt": "A phone and an offline retrieval test: save a reference you may copy, record source and date, turn the network off, then open the copy and find an answer."
+        },
+        {
+          "src": "/book-images/v103-first-year-index.svg",
+          "width": 181,
+          "height": 150,
+          "alt": "Twelve monthly themes arranged as a two-page year index, from getting your bearings and knowing your numbers to going on the record and looking back, then forward."
+        }
+      ]
+    }
+  ],
+  "page_errors": [],
+  "negative_controls": {
+    "missing_alt_rejected": true
+  },
+  "scope": "Local resume smoke at 390x844. Continuous reader sections mounted via chapter navigation before counting images. This does not replace the frozen full-edition proofs."
+}

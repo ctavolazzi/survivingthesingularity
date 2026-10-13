@@ -1,0 +1,20 @@
+A gantry can reduce walking space in a bed. Tooling and behavior depend on the machine and
+software version; this concept is not a build plan or a promise to automate the entire crop.
+The UN Food and Agriculture Organizationʼs 2022 report on agricul-
+tural automation looks at the opportunities alongside the barriers,
+especially for smaller farms. FAO, The State of Food and Agriculture
+2022 Thatʼs a reason to investigate useful automation and who can
+afford it, not proof that any one installation feeds a town.
+TOOLSOVERAGROWINGBED
+Agenericgantryconcept,viewedfromabove.
+X travel
+Z Y
+X:movethegantryalongthebed.
+Y:movethecarriageacrossthegantry.
+Z:crossedcircle=downintothebed.
+Model-specifictoolsseed,waterorweed.
+Agantrycanreducewalkingspaceinabed.
+Peoplestillinspect,maintainandharvest.
+Conceptonly;nomachineversionisimplied.
+SURVIVING THE SINGULARITY
+170

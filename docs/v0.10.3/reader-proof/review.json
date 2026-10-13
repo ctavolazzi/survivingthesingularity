@@ -1,0 +1,175 @@
+{
+  "version": "0.10.3",
+  "passed": true,
+  "reader_smoke_sha256": "95f2cc49f9c5081e4050768b7ac515903fb60a85a7ba287482ae42308fa6f01e",
+  "scene_details_sha256": "43e616e4be316d65083f3e151b400938544fb5e0baf2731184da53698e764e88",
+  "source_hashes": {
+    "02-introduction.md": "46b0da2dc4dd852ff12d1cf7b31c957ac8a355ea1fa355e50272310b7f7424a2",
+    "31-how-to-use.md": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+    "00-chapter0.md": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+    "03-chapter1.md": "2ef6993b4fdafb825a2a168ce554cdea6183d7ae1e0f16fa47501d441b778d4e",
+    "04-chapter2.md": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+    "05-chapter3.md": "65b6f36d7705ea69ef86941cf43e937893d97334f836288879ac5f294d5bea84",
+    "06-chapter4.md": "b8c4508dc0f45c1ce3855af2b955e574146bbf0e0f6fa508c9c9b9899dd1c243",
+    "07-chapter5.md": "f675003081c692dcef988ae78d2ad31de5797430a56b95144870db5ae4fceba6",
+    "08-chapter6.md": "f23b3cf68e0ce502925511881600a68f7efe02bd23c8aa946f5c6b86ad3d18f6",
+    "09-chapter7.md": "865a00f0b1916061483c9ada37c073cdb292fe9a9052980fce77abd1c6a23726",
+    "10-chapter8.md": "f7ca2b6ec998d424238425e820ce2b04db14b636c0b4825e8f1950d5da08d167",
+    "11-chapter9.md": "3bba6cb2c37ec480b9251872a81e244204429678fd93bfa4ccf5bd6a443d2262",
+    "12-chapter10.md": "c99fb8fd2e497b00253392767bed2f3e7b81855923218d99b63f2796646844ec",
+    "13-chapter11.md": "d345b0d8ed155fa3f0c4c1b38bb25fda650b21b12b2bdb7a0ac9d621d657643b",
+    "14-chapter12.md": "fcb0ad1fdb332c4b60fce3f896d7d8dad620cd8ed11cdf69be1f67ded933ef48",
+    "15-chapter13.md": "7dded72d15c6258f259d6005f7bdb1febf2b842ccca8ac6453875201e407d2ad",
+    "16-chapter14.md": "b169cf765675b6b86a0c7662f3360f1ac81856c9e623c88c92bbdf8bbb46eee1",
+    "17-chapter15.md": "942efe689fad39fd88f566a1247bbf68ba71ade7b7427d3e8483a4ae0b473b47",
+    "18-chapter16.md": "1672230c214c8423c21266ffc34757cd15b4a632e06742e617ae2716d75fd460",
+    "19-chapter17.md": "9537bfdb533beb611a5f656c7bf68265c6b14755dca6f1fe15e1997c002992db",
+    "20-chapter18.md": "c080946675a5ba5976dc075b61a7ceaedd368bf3cb1b32c47cd3afd35d728c72",
+    "27-chapter19.md": "29b2adf70697f9abda6d224ab1606d4b7fa6ee6be04340b081071c7067ec3119",
+    "24-appendix-c.md": "5c7df913678df59a58654d71f9a90ed72aa9f06fd052c3c4b116dca07ee0a8e1",
+    "25-appendix-d.md": "7f0c649065b42914462517dfe3fe6f958474f2a9c2ca71bd77156969cdbd89ac",
+    "26-appendix-e.md": "ea8b55111e259be6d7a435ad4f056bd4a56fb7a0d82e2317b344d301a24d7141",
+    "29-appendix-g.md": "40320918fd53e879f9d01ebc3b5879e4104a3179faeccdc7a619d0ed2eb60955"
+  },
+  "script_hashes": {
+    "scene-details.mjs": "5e8c54c9a285446963b8bdf43b56119efdec8ca140ff0cb263445b096387f126",
+    "reader-smoke.mjs": "acbaa3db14c37a6e9d56133ac09d898bb938eade9f2202c1f28aa849924f7041",
+    "server.mjs": "2d200849a545aadeee18cae9c1c4e6c852b395027119b816a8001e15cddc5b5e"
+  },
+  "visually_reviewed": [
+    {
+      "file": "chapter-390-v103-reading-routes.png",
+      "sha256": "3e4832579de9e63604d10656957a58479eac859acac91276fd4597ac99a6fd55"
+    },
+    {
+      "file": "chapter-390-v103-service-ledger.png",
+      "sha256": "647adc3f90dc399bb3065288d1c14afa3b413dce0046fcdbbd7014fd6f5406ad"
+    },
+    {
+      "file": "chapter-390-v103-offline-check.png",
+      "sha256": "f47c2b921bba00c099caa81045da395ed6b33d4da4afd2cf088677550621be04"
+    },
+    {
+      "file": "chapter-390-v103-first-year-index.png",
+      "sha256": "86224869e2e5ba7e5483e69f2de2e7ee0ee32f927ee834ebd986b5c333b2db28"
+    },
+    {
+      "file": "chapter-390-v103-narrative-bear-flag.png",
+      "sha256": "e6073276520d961dc1623ceb778d41ea91530229a1a096902493bbf06ace1b61"
+    },
+    {
+      "file": "chapter-390-v103-narrative-near-end.png",
+      "sha256": "a9f52e30b1aa61a4cf53c89a3b71c28110547072807cb1cb11f967664265ec2a"
+    },
+    {
+      "file": "chapter-390-v103-narrative-passing-beans.png",
+      "sha256": "7af0373e71f93c5afe066414c99e0bc2df06a56f86c93029ad233d2079fb07e4"
+    },
+    {
+      "file": "chapter-390-v103-narrative-rosa-testimony.png",
+      "sha256": "dc50f9c4a9e9fd08302c825c911a9b32e9f81f1f7836f28ca7d52ca5be44c970"
+    },
+    {
+      "file": "continuous-1280-v103-reading-routes.png",
+      "sha256": "f4e18cb8b16b8ab5654356f25dea973ee9de10406ca4d8256add1b1be2e08252"
+    },
+    {
+      "file": "continuous-1280-v103-service-ledger.png",
+      "sha256": "1b853ab22a59c0de91c44ececb91730d8399b39a88535681e342074811e95d30"
+    },
+    {
+      "file": "continuous-1280-v103-offline-check.png",
+      "sha256": "1130a8ea9d2c0df6ae086719c7acf067c0209a59a4c06bda1772dd1b218e8e10"
+    },
+    {
+      "file": "continuous-1280-v103-first-year-index.png",
+      "sha256": "e3b68580beb85de4dc252bf9e48f4eeebc9f8d2257f97d848ee44056a52d89c8"
+    },
+    {
+      "file": "continuous-1280-v103-narrative-bear-flag.png",
+      "sha256": "3484756511e35ee26a60a440ed3a87e6aa57177918e20592ebe492f5a0db8814"
+    },
+    {
+      "file": "continuous-1280-v103-narrative-near-end.png",
+      "sha256": "3fd95b0c92b838cf1f911bbfcd2e0e9c52456d6c66676120ba1a66b497b789bf"
+    },
+    {
+      "file": "continuous-1280-v103-narrative-passing-beans.png",
+      "sha256": "de1a9ada0378d3ac17ca3750e4b7c63f205118f288a29378cb3afeaf95b538d3"
+    },
+    {
+      "file": "continuous-1280-v103-narrative-rosa-testimony.png",
+      "sha256": "32e3e57416b11607c98509444541e21a1498871c48e6acaa418df47b49ff0ede"
+    },
+    {
+      "file": "scene-390-food-delivery-details-viewport.png",
+      "sha256": "2e7fbac595cb9357c13204fcc230963a568d9b75028e45650fc70aca10e78c81"
+    },
+    {
+      "file": "scene-390-living-soil-details-viewport.png",
+      "sha256": "7c64c4d1eb954091613dfff4d417a5770722da58b32ee3116e98e6e9e65d6200"
+    },
+    {
+      "file": "scene-390-shared-workshop-details-viewport.png",
+      "sha256": "87a995e52d80a7aca068180022e4e22309c10ec2555d59bd54c1d4b28dd4df11"
+    }
+  ],
+  "all_capture_hashes": {
+    "continuous-390-v103-first-year-index.png": "584a42510a9091a33155efb628a4387c416e12574a8cd66c7432ccbad0be87f3",
+    "continuous-390-v103-service-ledger.png": "e21308d04256ead52b5da9e8cf4868213d9dc99067e7ce5efa506d3fab3d7dff",
+    "chapter-390-v103-narrative-passing-beans.png": "7af0373e71f93c5afe066414c99e0bc2df06a56f86c93029ad233d2079fb07e4",
+    "chapter-390-v103-narrative-rosa-testimony.png": "dc50f9c4a9e9fd08302c825c911a9b32e9f81f1f7836f28ca7d52ca5be44c970",
+    "continuous-390-v103-reading-routes.png": "cebfc21727880dff8bc218fb01bfb72deb7d05e82a62f1862bd9f31fbe945380",
+    "scene-1280-food-delivery-details-viewport.png": "ac446acf6d3c6f6d6ecf77f76df4b8f9b681d58d539bb3f80c404cf8e8e23e08",
+    "chapter-390-v103-service-ledger.png": "647adc3f90dc399bb3065288d1c14afa3b413dce0046fcdbbd7014fd6f5406ad",
+    "scene-1280-living-soil-image.png": "ef069bf52660bc2ef46718d379ca61440037544a2068f9425df63232b9bb7d7e",
+    "continuous-390-v103-narrative-rosa-testimony.png": "adbe709c56aa4ce53cd8539f5dba470d94043b6d41c014fb79f9323418c7f766",
+    "scene-1280-living-soil-details-viewport.png": "9de863648c81205709967665b56765f4db3ec8cabf3e02545aa4db074c44cd65",
+    "chapter-390-v103-reading-routes.png": "3e4832579de9e63604d10656957a58479eac859acac91276fd4597ac99a6fd55",
+    "chapter-390-v103-offline-check.png": "f47c2b921bba00c099caa81045da395ed6b33d4da4afd2cf088677550621be04",
+    "chapter-390-v103-narrative-near-end.png": "a9f52e30b1aa61a4cf53c89a3b71c28110547072807cb1cb11f967664265ec2a",
+    "continuous-1280-v103-narrative-passing-beans.png": "de1a9ada0378d3ac17ca3750e4b7c63f205118f288a29378cb3afeaf95b538d3",
+    "chapter-1280-v103-narrative-passing-beans.png": "fc9b85402b11a5db7839995be7160821129bf9207576a549486b1fd442a4bb4e",
+    "scene-1280-shared-workshop-details-viewport.png": "e65359d11f229919e699497e671b4c304b8a0b886c61c9603ecc8793a7bdc455",
+    "scene-1280-living-soil-still.png": "e0ef4cf32b72bc3fe8e85a0059a4d8cc7d521101510d7ec0eac60b4497cf3cac",
+    "chapter-1280-v103-narrative-near-end.png": "dcea0e02e888727bea19d14909d422b58a57438e4db24d404a1377b0b93c92dc",
+    "continuous-390-v103-narrative-bear-flag.png": "8a85610b6948078d8d703804f9de2a820a1b311bc5e251a5a8a4c1e70cac4b99",
+    "scene-1280-shared-workshop-still.png": "26dd03b18e8120732f576de4e03a978ee359418e9c52604f36acdf6d1e0676b2",
+    "continuous-1280-v103-service-ledger.png": "1b853ab22a59c0de91c44ececb91730d8399b39a88535681e342074811e95d30",
+    "chapter-390-v103-narrative-bear-flag.png": "e6073276520d961dc1623ceb778d41ea91530229a1a096902493bbf06ace1b61",
+    "scene-390-shared-workshop-details-viewport.png": "87a995e52d80a7aca068180022e4e22309c10ec2555d59bd54c1d4b28dd4df11",
+    "continuous-1280-v103-narrative-near-end.png": "3fd95b0c92b838cf1f911bbfcd2e0e9c52456d6c66676120ba1a66b497b789bf",
+    "scene-390-living-soil-image.png": "911fe64f9836c6d765ba6f3d121621054892a16ccdca7610510b34fd5fe4ac73",
+    "continuous-1280-v103-reading-routes.png": "f4e18cb8b16b8ab5654356f25dea973ee9de10406ca4d8256add1b1be2e08252",
+    "chapter-390-v103-first-year-index.png": "86224869e2e5ba7e5483e69f2de2e7ee0ee32f927ee834ebd986b5c333b2db28",
+    "continuous-1280-v103-offline-check.png": "1130a8ea9d2c0df6ae086719c7acf067c0209a59a4c06bda1772dd1b218e8e10",
+    "scene-1280-food-delivery-image.png": "5df8dd22b9647db4e1209e5debc462b393d385fccb2a26780f475820564f2851",
+    "scene-390-shared-workshop-image.png": "03a590cc3ff9b1b1b0b2168309636f4127de8ef085174f971d1b4897505bfdcc",
+    "scene-390-food-delivery-still.png": "48c80eeaf8038f4170f48dbb5ae706e8397a91ee2f27970b3987cdb6f0dc2010",
+    "scene-390-food-delivery-details-viewport.png": "2e7fbac595cb9357c13204fcc230963a568d9b75028e45650fc70aca10e78c81",
+    "chapter-1280-v103-offline-check.png": "8e70927fdf91b8fe711258197d87ed10f89dc1b97c3dcf689505476dac0a1664",
+    "scene-390-living-soil-details-viewport.png": "7c64c4d1eb954091613dfff4d417a5770722da58b32ee3116e98e6e9e65d6200",
+    "scene-390-living-soil-still.png": "f2b1d899fb7a712fc70e7ebb446a4334d18350d8762fa58bfd3870ce344d0118",
+    "chapter-1280-v103-narrative-bear-flag.png": "57c23f7b5fe40eaf7638e81ff521a7794ece7247d0c255e5042a095a927fb40b",
+    "continuous-1280-v103-narrative-bear-flag.png": "3484756511e35ee26a60a440ed3a87e6aa57177918e20592ebe492f5a0db8814",
+    "continuous-390-v103-narrative-passing-beans.png": "22b6703f476d9f031a20c383e0a49a3b7dd8da6181ab711d3a55f6c8a348e8a2",
+    "continuous-1280-v103-first-year-index.png": "e3b68580beb85de4dc252bf9e48f4eeebc9f8d2257f97d848ee44056a52d89c8",
+    "scene-1280-shared-workshop-image.png": "f9d264cd877d817334cbdb93f5948ebeb77675aff118eae531242bc03f42b59d",
+    "chapter-1280-v103-narrative-rosa-testimony.png": "d2d80b9447fea37801f64a9a82edf779fe1aada0364e0c317fba265aeaa22e26",
+    "continuous-1280-v103-narrative-rosa-testimony.png": "32e3e57416b11607c98509444541e21a1498871c48e6acaa418df47b49ff0ede",
+    "continuous-390-v103-narrative-near-end.png": "bc4777c30a26b7f6de15ee15a445113e13b05653d5665a471b528a7081ffb4ab",
+    "chapter-1280-v103-reading-routes.png": "b36fc52d62ea2ae69d9d2e4da71e82b8b95e2a514517c018ef6d159567d8086d",
+    "chapter-1280-v103-service-ledger.png": "e56d949872f3689020387f1c2854b98d38a6da76e12cafae0a8cf5158d1353f3",
+    "scene-1280-food-delivery-still.png": "afc39a501105b186c093317f1fec6330b5015315f7d2ae00ce0b8f5258fbc13d",
+    "continuous-390-v103-offline-check.png": "90b3dd3a55cd481588c04baf2040a2ec87506ca231c7c81c6c56a4471064a77f",
+    "scene-390-shared-workshop-still.png": "07132aceb7703194b23ecdf0e0840571e27bf16c0b94dd22ebd6409c94cf2b3d",
+    "chapter-1280-v103-first-year-index.png": "b873e97985d2460555dd8bf9f8b792571ede292781c5dec451f3cff8c73b04a6",
+    "scene-390-food-delivery-image.png": "bed3c712d04d59c9aba3d51dea3cf1b1518e2851a1f5074bbe8faec36ae97cbc"
+  },
+  "findings": [
+    "All eight new figures inspected on mobile individual chapter pages and desktop continuous reading, with complete captions and no cropping or aspect distortion.",
+    "All three retained scene text equivalents inspected in the actual mobile viewport. Each of 24 scene detail rows was scrolled into view and checked against its canonical catalog text.",
+    "Expanded whole-scene screenshots can contain clipped blank tails because the continuous reader scrolls inside the document. The separate image and actual viewport captures are the reliable visual receipts."
+  ],
+  "limits": "Live development-server Chromium smoke proof. No production deployment, full web accessibility audit, WebGL interaction rerun, browser matrix, or guarantee of diagram label readability without zoom on every small screen."
+}

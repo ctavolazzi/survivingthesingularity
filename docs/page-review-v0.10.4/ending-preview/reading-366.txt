@@ -1,0 +1,49 @@
+Computer Fraud and Abuse Act, 18 U.S.C. 1030; interception and disclosure
+rules, 18 U.S.C. 2511; and Part 15 operating conditions, 47 C.F.R. 15.5. US
+provisions cited for bounded examples, not permission to operate in every
+jurisdiction.
+Meshtastic, Channel Configuration. Project documentation distinguishes
+public default keys from randomly generated private-group keys and
+explains location and gateway settings.
+Cryptsetup contributors, FAQ. Technical documentation on disk encryption,
+passphrases, backups, and threat limits. Encryption of stored data does not
+protect an already compromised running system.
+ClockworkPi, uConsole, and ZitaoTech, Hackberry Pi Zero. Maker documen-
+tation of components and power arrangements. Kit contents vary; uConsole
+excludes battery cells and offers a configuration without the compute
+module.
+Raspberry Pi, Heating and Cooling Raspberry Pi 5. Manufacturer tests dis-
+tinguish ordinary use from sustained workloads that can cause thermal
+throttling.
+Chapter 18: specialized materials
+US Geological Survey, Silica Statistics and Information. Ultra-high-purity
+quartz is used in semiconductor-manufacturing crucibles. This establishes a
+material requirement, not a fixed duration for a future supply interruption.
+Introduction and Chapter 19: the conversion
+United Nations, Food: “todayʼs global food production is enough to feed
+everyone on the planet.”
+California Department of Food and Agriculture, Food Recovery: US food
+waste estimated at 30 to 40 percent of the food supply; Californians throw
+away five to six million tons a year.
+Consumer Financial Protection Bureau, CFPB Reports Highlight Problems
+with Tenant Background Checks (2022), on credit reports, credit scores, and
+proprietary risk scores in rental decisions.
+Shoshana Zuboff, The Age of Surveillance Capitalism (PublicAffairs, 2019); 
+summary.
+Ashley Gromis and colleagues, Estimating Eviction Prevalence across the
+United States, PNAS 119 (2022), e2116169119. Author-institution research
+record. The annual averages of 3.6 million filings and 2.7 million
+households concern 2000 to 2018, not the current year.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+APPENDIX B
+361

@@ -109,11 +109,17 @@ export async function POST({ request, url, getClientAddress }) {
     notes:   sanitize(String(item?.notes ?? ''), 1000),
   }));
 
-  const result = await sendChecklistEmail({ to: email.trim(), answers: clean });
-
-  if (result?.error) {
-    console.error('[checklist-email] send failed:', result.error);
-    return json({ error: 'Failed to send. Please try again.' }, { status: 500 });
+  try {
+    const result = await sendChecklistEmail({ to: email.trim(), answers: clean });
+    // Missing credentials return { skipped: true }; an absent result also
+    // cannot establish provider acceptance. Never show "sent" for either.
+    if (result?.skipped || result?.error || result?.ok !== true) {
+      console.error('[checklist-email] send unavailable:', result?.error ?? 'Email provider did not accept the request.');
+      return json({ error: 'Email delivery is temporarily unavailable. Your checklist is still here; please try again later.' }, { status: 503 });
+    }
+  } catch (error) {
+    console.error('[checklist-email] send threw:', error instanceof Error ? error.message : 'Unknown delivery error');
+    return json({ error: 'Email delivery is temporarily unavailable. Your checklist is still here; please try again later.' }, { status: 503 });
   }
 
   return json({ ok: true });

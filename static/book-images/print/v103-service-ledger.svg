@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 357" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">WHAT A CONTINUING SERVICE COSTS</title>
+<desc id="desc">An open ledger names four costs behind a continuing service: equipment, maintenance, remaining labor and delivery. All four require dependable funding, even when the person eating pays nothing.</desc>
+<rect width="480" height="357" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">WHAT A CONTINUING SERVICE COSTS</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Free at the door still needs funding.</text>
+<path d="M20 104Q128 92 240 107Q348 92 460 104V282Q348 268 240 286Q128 268 20 282Z" fill="#ffffff" stroke="#17251f" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M240 107V286" fill="none" stroke="#a2afa6" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M37 160L220 160" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<path d="M37 233L220 233" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<path d="M37 253L220 253" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<path d="M260 160L443 160" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<path d="M260 233L443 233" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<path d="M260 253L443 253" fill="none" stroke="#a2afa6" stroke-width="0.6"/>
+<text x="38" y="136" font-size="16" fill="#17251f" text-anchor="start" font-weight="600">Equipment</text>
+<text x="38" y="207" font-size="16" fill="#17251f" text-anchor="start" font-weight="600">Maintenance</text>
+<text x="260" y="136" font-size="16" fill="#17251f" text-anchor="start" font-weight="600">Remaining labor</text>
+<text x="260" y="207" font-size="16" fill="#17251f" text-anchor="start" font-weight="600">Delivery</text>
+<path d="M192 171L198 177L210 163" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M192 257L198 263L210 249" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M414 171L420 177L432 163" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M414 257L420 263L432 249" fill="none" stroke="#9a4f13" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M20 307L460 307" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="327" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Name who pays, and what keeps getting done.</text>
+</svg>

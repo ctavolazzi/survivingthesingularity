@@ -16,6 +16,7 @@
 
 import fs from 'fs/promises';
 import path from 'path';
+import crypto from 'crypto';
 import { fileURLToPath } from 'url';
 import sharp from 'sharp';
 import { glob } from 'glob';
@@ -50,6 +51,122 @@ const SIZES = [400, 800, 1200];
 
 // Image types to process
 const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png'];
+
+// WebP encoder quality. Named because it is part of the cache key below.
+const WEBP_QUALITY = 80;
+
+// Build cache. Without it this script re-ran sharp over every source image on
+// every build: 108 sources, 468 outputs, ~45s of the ~46s prebuild, all to
+// reproduce bytes that were already on disk.
+//
+// The cache lives INSIDE the output directory and is committed alongside it,
+// on purpose. The outputs are tracked in git, so a fresh clone already has
+// them; shipping the cache next to them means a clean CI checkout skips too,
+// instead of paying the full 45s to regenerate files git just handed it.
+//
+// A source is skipped only when all three hold:
+//   1. its content hash matches the hash recorded last time,
+//   2. the encoder config below is unchanged,
+//   3. every output the cache claims for it still exists on disk.
+// Any doubt regenerates. Run with --force to ignore the cache entirely.
+const CACHE_FILE = path.join(OUTPUT_DIR, '.build-cache.json');
+const CACHE_VERSION = 1;
+const FORCE = process.argv.includes('--force');
+
+// Changing sizes, quality or the extension list must invalidate every entry,
+// so they are hashed into the key rather than compared field by field.
+const CONFIG_KEY = crypto
+  .createHash('sha256')
+  .update(JSON.stringify({ SIZES, WEBP_QUALITY, IMAGE_EXTENSIONS }))
+  .digest('hex')
+  .slice(0, 16);
+
+// Hash a file's bytes. Streaming keeps a 5MB source from being buffered whole
+// just to fingerprint it.
+async function hashFile(filePath) {
+  const handle = await fs.open(filePath, 'r');
+  try {
+    const hash = crypto.createHash('sha256');
+    for await (const chunk of handle.createReadStream()) hash.update(chunk);
+    return hash.digest('hex');
+  } finally {
+    await handle.close();
+  }
+}
+
+// Every file a manifest entry claims to have produced. Used to verify a cache
+// hit against the disk, so a deleted output forces a regenerate.
+function outputsOf(sizes) {
+  const outputs = [];
+  if (sizes.webp?.original) outputs.push(sizes.webp.original);
+  for (const variant of Object.values(sizes.variants || {})) {
+    if (variant.original) outputs.push(variant.original);
+    if (variant.webp) outputs.push(variant.webp);
+  }
+  return outputs;
+}
+
+async function loadCache() {
+  if (FORCE) return {};
+  try {
+    const raw = JSON.parse(await fs.readFile(CACHE_FILE, 'utf8'));
+    if (raw.version !== CACHE_VERSION || raw.config !== CONFIG_KEY) return {};
+    return raw.entries || {};
+  } catch {
+    // No cache, unreadable cache, or malformed cache all mean the same thing:
+    // regenerate everything. A bad cache must never be able to fail the build.
+    return {};
+  }
+}
+
+// Sorted keys, so the cache file itself does not churn between builds.
+async function saveCache(entries) {
+  const sorted = {};
+  for (const key of Object.keys(entries).sort()) sorted[key] = entries[key];
+  await fs.writeFile(
+    CACHE_FILE,
+    JSON.stringify({ version: CACHE_VERSION, config: CONFIG_KEY, entries: sorted }, null, 2)
+  );
+}
+
+async function exists(relativePath) {
+  try {
+    await fs.access(path.join(rootDir, relativePath));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Output names are derived from the source filename alone, so two sources in
+// different directories can collapse onto the same output.
+function outputBaseNameFor(imagePath) {
+  return path.parse(imagePath).name.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+}
+
+// Three copies of the cover currently collide on
+// surviving_the_singularity_cover, and two copies of sts-welcome on
+// sts_welcome. Today every colliding set is byte-identical so the last writer
+// wins harmlessly, but the moment one copy is edited alone the output silently
+// depends on walk order. Sorting makes the winner deterministic; this warning
+// makes the collision visible before it costs someone an afternoon.
+function warnOnNameCollisions(imagePaths) {
+  const byOutputName = new Map();
+  for (const imagePath of imagePaths) {
+    const key = outputBaseNameFor(imagePath);
+    if (!byOutputName.has(key)) byOutputName.set(key, []);
+    byOutputName.get(key).push(path.relative(rootDir, imagePath));
+  }
+
+  for (const [key, sources] of byOutputName) {
+    if (sources.length < 2) continue;
+    const winner = sources[sources.length - 1];
+    console.warn(
+      `WARNING: ${sources.length} sources share the output name "${key}": ${sources.join(', ')}. ` +
+      `"${winner}" wins. Rename one if they are meant to differ.`
+    );
+  }
+}
 
 // Check if a path should be excluded
 function shouldExclude(filePath) {
@@ -96,14 +213,41 @@ async function main() {
       }
     }
 
+    // glob does not promise a stable order, so an unsorted walk reshuffled the
+    // manifest's keys on every build and left manifest.json permanently dirty
+    // in git. Sorting also fixes which source wins a name collision (below).
+    imagePaths.sort();
+
     console.log(`Found ${imagePaths.length} images to optimize`);
+
+    warnOnNameCollisions(imagePaths);
+
+    const cache = await loadCache();
+    const nextCache = {};
+    let skipped = 0;
 
     // Process each image
     const manifest = {};
     for (const imagePath of imagePaths) {
+      const relativePath = path.relative(rootDir, imagePath);
       try {
-        const { relativePath, sizes } = await processImage(imagePath);
+        const hash = await hashFile(imagePath);
+        const cached = cache[relativePath];
+
+        if (cached && cached.hash === hash && cached.sizes) {
+          const present = await Promise.all(outputsOf(cached.sizes).map(exists));
+          if (present.every(Boolean)) {
+            manifest[relativePath] = cached.sizes;
+            nextCache[relativePath] = cached;
+            skipped++;
+            continue;
+          }
+        }
+
+        const { sizes } = await processImage(imagePath);
         manifest[relativePath] = sizes;
+        // A skipped image is only cached if it actually produced outputs.
+        if (!sizes.skipped) nextCache[relativePath] = { hash, sizes };
       } catch (error) {
         console.error(`Failed to process image ${imagePath}: ${error.message}`);
         // Continue with next image
@@ -116,7 +260,11 @@ async function main() {
       JSON.stringify(manifest, null, 2)
     );
 
-    console.log('Image optimization complete!');
+    await saveCache(nextCache);
+
+    console.log(
+      `Image optimization complete! ${skipped} unchanged, ${imagePaths.length - skipped} regenerated.`
+    );
   } catch (error) {
     console.error('Error in image optimization:', error);
     process.exit(1);
@@ -130,8 +278,7 @@ async function processImage(imagePath) {
     console.log(`Processing: ${relativePath}`);
 
     const parsedPath = path.parse(imagePath);
-    const fileName = parsedPath.name;
-    const outputBaseName = fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+    const outputBaseName = outputBaseNameFor(imagePath);
 
     // Load the image with sharp
     const image = sharp(imagePath);
@@ -154,7 +301,7 @@ async function processImage(imagePath) {
     // later "original format" variant silently WebP-encoded inside a
     // .png/.jpg-named file.
     const webpOutputPath = path.join(OUTPUT_DIR, `${outputBaseName}_original.webp`);
-    await image.clone().webp({ quality: 80 }).toFile(webpOutputPath);
+    await image.clone().webp({ quality: WEBP_QUALITY }).toFile(webpOutputPath);
     sizes.webp.original = path.relative(rootDir, webpOutputPath);
 
     // Generate variants for different sizes
@@ -168,7 +315,7 @@ async function processImage(imagePath) {
 
       // WebP variant
       const outputPathWebP = path.join(OUTPUT_DIR, `${outputBaseName}_${width}.webp`);
-      await image.clone().resize(width).webp({ quality: 80 }).toFile(outputPathWebP);
+      await image.clone().resize(width).webp({ quality: WEBP_QUALITY }).toFile(outputPathWebP);
 
       // Add to manifest
       if (!sizes.variants[width]) {

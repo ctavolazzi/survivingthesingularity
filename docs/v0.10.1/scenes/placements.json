@@ -1,0 +1,23 @@
+[
+  {
+    "id": "food-delivery",
+    "file": "11-chapter9.md",
+    "after": "| Outcome to check | All five deliveries arrive, people can use them, and the partner's extra work shows up in the record. |",
+    "markdown": "<!-- interactive:food-delivery -->\n\n![Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.](/book-images/v101-scene-food-delivery.svg)\n\n*One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals.*",
+    "status": "inserted"
+  },
+  {
+    "id": "living-soil",
+    "file": "17-chapter15.md",
+    "after": "Cover crops, compost, deep mulch, and less tillage all feed that system. [University of Minnesota Extension, Soil Biology](https://extension.umn.edu/natural-resources/conservation/agricultural-soil-and-water/soil-biology) What none of them do is make a garden feed itself forever. Every harvest carries nutrients away in the food, and something has to put them back.",
+    "markdown": "<!-- interactive:living-soil -->\n\n![Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.](/book-images/v101-scene-living-soil.svg)\n\n*The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile.*",
+    "status": "inserted"
+  },
+  {
+    "id": "shared-workshop",
+    "file": "19-chapter17.md",
+    "after": "3. **A cutting and welding station.** A CNC plasma table and a good welder turn steel stock into brackets, racks, and repairs, in the hands of someone trained like Marta.",
+    "markdown": "<!-- interactive:shared-workshop -->\n\n![Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.](/book-images/v101-scene-shared-workshop.svg)\n\n*Shared tools need a working arrangement around them: trained people, suitable power and materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not a fabrication or wiring plan.*",
+    "status": "inserted"
+  }
+]

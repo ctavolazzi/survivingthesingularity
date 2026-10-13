@@ -1,0 +1,248 @@
+{
+  "figures": 23,
+  "pages": 32,
+  "errors": [],
+  "negative_controls": [
+    "figure shifted into gutter",
+    "prose moved into figure",
+    "caption clipped by figure",
+    "missing caption text",
+    "missing rendered figure",
+    "diagram/cutout shrunk",
+    "caption moved to a second page",
+    "missing HTML figure marker"
+  ],
+  "measurements": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "page": 1,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        2.13
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-forecast-shift.svg",
+      "page": 2,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.262999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-local-copies.svg",
+      "page": 4,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.5529999999999995
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-rocket.png",
+      "page": 5,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        2.13
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-sun.png",
+      "page": 6,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        1.3569134840218238
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-data-centre-demand.svg",
+      "page": 7,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.3389999999999995
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-income-food-access.svg",
+      "page": 9,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.788
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-access-gate.svg",
+      "page": 11,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.2110000000000003
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-attention-ribbon.svg",
+      "page": 12,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.344
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-printer.png",
+      "page": 13,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        1.5927027027027025
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-ammonia-energy.svg",
+      "page": 14,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.623999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-food-delivery.svg",
+      "page": 16,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7999999999999994
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-spot.png",
+      "page": 17,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        0.9466666666666667
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-operating-stack.svg",
+      "page": 18,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.771499999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-weights-memory.svg",
+      "page": 19,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.415
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-land-values.svg",
+      "page": 21,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.358
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-shared-land.svg",
+      "page": 23,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7905
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-waste-pathways.svg",
+      "page": 24,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.402999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "page": 26,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7999999999999994
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-tools.png",
+      "page": 28,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        1.689182608695652
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-shared-workshop.svg",
+      "page": 29,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.8000000000000003
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-continuity-calendar.svg",
+      "page": 30,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.6479999999999997
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-meal-response.svg",
+      "page": 31,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.422000000000001
+      ],
+      "caption_same_page": true
+    }
+  ],
+  "limit": "All 23 final images and canonical captions with adjacent prose; not final full-book pagination."
+}

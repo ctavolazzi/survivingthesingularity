@@ -1,0 +1,189 @@
+--- v0.10.3/02-introduction.md
++++ v0.10.4/02-introduction.md
+@@ -86,7 +86,9 @@
+ 
+ So why should food be denied to hungry people because it doesn't sell?
+ 
+-Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Between 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: "The sheriff gives you a Notice to Vacate," five days to move, and "if you don't move out, the sheriff can lock you out of your home." [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.
++Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism)
++
++Between 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: "The sheriff gives you a Notice to Vacate," five days to move, and "if you don't move out, the sheriff can lock you out of your home." [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.
+ 
+ Meanwhile the money piles up at the top. In 2017, Oxfam found that eight men owned as much wealth as the poorest half of the world. [Oxfam, An Economy for the 99%](https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/file_attachments/bp-economy-for-99-percent-160117-summ-en.pdf) By January 2026, billionaire wealth had grown 81 percent since 2020, to $18.3 trillion, and billionaires were 4,000 times more likely than ordinary people to hold political office, while one in four people on Earth didn't regularly have enough to eat. [Oxfam, Resisting the Rule of the Rich (2026)](https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking) The people at the top of that pile have every reason to keep the rules exactly as they are.
+ 
+--- v0.10.3/03-chapter1.md
++++ v0.10.4/03-chapter1.md
+@@ -114,7 +114,7 @@
+ 
+ Three things follow.
+ 
+-**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.
++**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the old price of trained work no longer holds. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.
+ 
+ **It's testable this quarter.** You don't need anyone's date, including mine. Has the market price of the cognitive work you sell fallen in the last eighteen months? Has the institution that pays for it started behaving strangely about it, restructuring, retitling, quietly not backfilling? Those are signals you can investigate before the end of the week. A pay cut or hiring freeze alone doesn't identify the cause. Find out which tasks actually changed, what replaced them, and whether the work still gets done.
+ 
+--- v0.10.3/05-chapter3.md
++++ v0.10.4/05-chapter3.md
+@@ -16,7 +16,8 @@
+ - The scenario I keep coming back to: the machine's answer to a hostile planet isn't war. It's exit.
+ - Greater capability tells you nothing about motives. The cures, if they come, still have to reach a patient.
+ - None of this has to happen before anybody eats.
+-- This chapter and the next are the book's most speculative. If you're here for the practical part, Chapter 5 picks the thread back up; you'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.
++
++**Reading route.** Chapters 3 and 4 are the book's most speculative. If you're here for the practical part, continue at Chapter 5. You'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.
+ 
+ ---
+ 
+--- v0.10.3/06-chapter4.md
++++ v0.10.4/06-chapter4.md
+@@ -74,7 +74,7 @@
+ 
+ Even the universe has limits. There's a ceiling to how much computation can exist before you run into the boundaries of space and time themselves.
+ 
+-In the far end of this scenario, the USI hits that wall. And it does what a self-improving system does when it runs out of local resources: it looks elsewhere. Branches of physics we lack the hardware to comprehend. Pocket universes. Simulations so vast that everything we know could be a forgotten line in one of its subroutines.
++At the far end of this scenario, the USI hits that wall. And it does what a self-improving system does when it runs out of local resources: it looks elsewhere. Branches of physics we lack the hardware to comprehend. Pocket universes. Simulations so vast that everything we know could be a forgotten line in one of its subroutines.
+ 
+ That's the Apex. The end of the line, where the machine becomes the architect of reality itself. It's also, I'll admit, the point where my map runs off the edge of the paper. Invoking a multiverse doesn't hand anybody an actual place to get more resources. An unknown possibility isn't an engineering plan. It's a good place to stand and look up.
+ 
+--- v0.10.3/07-chapter5.md
++++ v0.10.4/07-chapter5.md
+@@ -113,7 +113,7 @@
+ 
+ When I say food should be free at the point of access, I don't mean steel, land, labor, or electricity stop costing money. I mean the person who needs to eat shouldn't have to produce a payment first.
+ 
+-We already know how to separate the person eating from the person paying. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.
++We already know how to fund a service without charging for each use. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.
+ 
+ ## The cyberdeck: your first machine
+ 
+@@ -196,7 +196,7 @@
+ 
+ **The practice.**
+ 
+-1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who captures the spread. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.
++1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who gets paid. Keep each quantity in its own units. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.
+ 2. List the tasks in your job the way a buyer would, then ask a coworker what the list missed. Mark the parts where you're competing on raw output against silicon, and the parts where you aren't: trust, presence, hands, judgment on the ground, relationships. Shift your effort toward the second list this quarter.
+ 3. Move one meaningful expense from rented energy to owned energy this year: insulation, a bicycle that replaces short car trips, a panel and battery sized by someone who knows the job. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.
+ 
+--- v0.10.3/08-chapter6.md
++++ v0.10.4/08-chapter6.md
+@@ -157,7 +157,7 @@
+ **The practice.**
+ 
+ 1. Put a hard cap on "whether" debates. The next time you're in an argument about whether AI should exist or whether it'll really happen, give it five minutes, then ask out loud: "Given that it's arriving anyway, what should we each do this month?" Watch how few people can switch questions. Be one who can.
+-2. Run the group audit on your own affiliations: employer, industry, town, community. For each, answer honestly: is this group adapting or refusing? And is it counting who gets hurt along the way? The grain trap punished groups for their choices, and individuals for their group.
++2. Run the group audit on your own affiliations: employer, industry, town, community. For each, name one change it's making and who carries the cost. If you can't find an answer, write down who you'll ask. The grain trap punished groups for their choices, and individuals for their group.
+ 3. Keep one part of your life off the ratchet on purpose: food you can grow, heat you can make, skills that work without a subscription. Not to exit the system. Because the person with an alternative negotiates from a different posture than the person without one.
+ 
+ ---
+--- v0.10.3/09-chapter7.md
++++ v0.10.4/09-chapter7.md
+@@ -180,7 +180,7 @@
+ 
+ ## The egalitarian pivot
+ 
+-Here's the move the battle-line framing hides, and it's the most important move in this half of the book.
++Here's the move the battle-line framing hides: readiness has to reach beyond your own household.
+ 
+ "The Entitled vs. the Ready" reads, at first pass, like a sorting of winners from losers. Read it that way and you'll prepare the wrong thing. A lone household with a generator and a rifle isn't ready. It's just losing more slowly, with better lighting. Readiness that ends at your property line has a shelf life measured in weeks, because every system you actually depend on, food, repair, medicine, security, sanity, is social before it's technical.
+ 
+--- v0.10.3/11-chapter9.md
++++ v0.10.4/11-chapter9.md
+@@ -193,7 +193,7 @@
+ 
+ Then decide in advance where the saving goes: more free deliveries, better conditions for the people doing the work, a lower price, somebody's profit. A machine doesn't pick. The organization around it does. For the five-household trial, the partners could agree up front that any real saving goes first to keeping the promise and paying for the remaining work. That's a small, explicit wire between a technical gain and a fed person.
+ 
+-Five households getting vegetables is a contribution. A dependable baseline needs more food, more kinds of it, preparation, routes people can actually use, and a way to keep going through a failed crop or a broken van. It also needs a place for the household that wasn't one of the first five. So the next meeting belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.
++The next meeting has to plan beyond the first five households. It belongs as much to growers, cooks, drivers, and the people receiving food as to the people holding the tools. Start small enough to learn. Keep the destination big enough to matter.
+ 
+ ## Where to start this season
+ 
+--- v0.10.3/12-chapter10.md
++++ v0.10.4/12-chapter10.md
+@@ -70,7 +70,7 @@
+ The time you spend on digital fear is time you could spend in your physical community. Find a place that needs human hands: a community garden, a food pantry, a neighborhood center.
+ 
+ - **Direct exchange.** Show up and work. Labor moves you from the world of digital opinion to the world of physical results.
+-- **The human filter.** Working alongside people is how you find the ones who also want to be useful. You won't find them on a screen. You'll find them on the ground.
++- **The human filter.** Working alongside people is how you find the ones who also want to be useful. Make the introduction wherever you can, then give it a shared task.
+ 
+ ## Step 3: Find your node
+ 
+--- v0.10.3/14-chapter12.md
++++ v0.10.4/14-chapter12.md
+@@ -97,7 +97,7 @@
+ 
+ ## Grandma's request
+ 
+-Now let's finish the story this chapter has been circling, all the way to the door.
++Now follow one request all the way to the door.
+ 
+ Picture an eighty-two-year-old woman on a fixed income at the edge of town. Her joints are stiff with arthritis. Her yard has gone to star thistle, a fire hazard for her and for everyone downwind, and the county has sent a code-enforcement notice with a fine she can't pay. A landscaping crew wants $400 cash. The groceries are another calculation: she's started buying what she can carry instead of what she'd choose.
+ 
+--- v0.10.3/16-chapter14.md
++++ v0.10.4/16-chapter14.md
+@@ -80,7 +80,7 @@
+ 
+ That's the question worth asking whenever something gets more efficient: whose books show the gain, and whose life absorbs the loss? The machine didn't decide Frank's customers were expendable. People chose the terms of supply. Better logistics could just as easily have been pointed at keeping small places served. That would have taken resources and a reason to value the service. Calling the closure inevitable hides the decision that mattered.
+ 
+-There's a cemetery full of companies that made the other choice, and the precedents at the end of this chapter walk you through it. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked "how do we protect what we sell?" The other asked "what are we actually for?" Your town, your trade, and your household are being asked that same question right now.
++The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked "how do we protect what we sell?" The other asked "what are we actually for?" Your town, your trade, and your household are being asked that same question right now.
+ 
+ ## The short loop
+ 
+--- v0.10.3/18-chapter16.md
++++ v0.10.4/18-chapter16.md
+@@ -127,7 +127,7 @@
+ **The practice.**
+ 
+ 1. Write your pamphlet, even if it's four pages. Pick the one thing you know from experience that would really help the person two years behind you, and write it the way Denny talked on camera: plain speech, what happened, what you'd do differently. Publish it this month.
+-2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. When the algorithm changes, the people on your list are still yours.
++2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. Use the list to reach readers who've asked to hear from you when the algorithm changes.
+ 3. Run the tavern test. Read your latest piece out loud. Every sentence you stumble on, every word you'd never say to a neighbor over a fence, rewrite in plain speech. Then ask one reader to explain it back to you and name its weakest point, and fix that before you share it wider.
+ 
+ ---
+--- v0.10.3/27-chapter19.md
++++ v0.10.4/27-chapter19.md
+@@ -188,8 +188,8 @@
+ 
+ ## What you can do this month
+ 
+-- **If you work for a living:** find out what your employer does with food it can't sell, and who in your town is hungry. Bring both numbers to one meeting.
+-- **If you're a parent:** check whether your school district's universal meals are reaching every kid who needs them, and ask why not if they aren't.
++- **If you work for a living:** find out what a food business near you does with food it can't sell, and ask a local food provider what need remains unmet. Bring those findings to one meeting.
++- **If you're a parent:** check what meals your school district provides, whether they reach every kid who needs them, and what keeps anyone out.
+ - **If you organize:** start the Rung 1 page. One spreadsheet, published monthly.
+ - **If you build things:** pick one machine from Chapter 17 that could serve the floor, and ask who would own it.
+ - **If you hold office:** put a public meal line in the next budget and a lawyer-for-every-tenant ordinance on the agenda.
+--- v0.10.3/25-appendix-d.md
++++ v0.10.4/25-appendix-d.md
+@@ -12,7 +12,7 @@
+ 4. **Name the difference, too.** For every entry, write down one way your situation is like it and one way it isn't. Who benefited, who carried the cost, and what would count against the lesson? A precedent is a prompt for investigation, not permission to ignore a present objection.
+ 5. **Run the rule within twenty-four hours.** Find one real decision on your desk this week and pass it through the rule. Small is fine.
+ 6. **Start a practice this week.** Each entry closes with three actions. Some finish in an evening; others need a month, a season, or repeated work. If you only have time for one, do the one that makes you defensive.
+-7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story, the way Marta tells Gary and Sal. Panic spreads person to person. So does this.
++7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story. Ask where the comparison fits and where it doesn't. Panic spreads person to person. So does this.
+ 
+ ## The Ledger
+ 
+--- v0.10.3/26-appendix-e.md
++++ v0.10.4/26-appendix-e.md
+@@ -45,7 +45,7 @@
+ 
+ Power ties it together. Most decks run on low-voltage DC, from a packaged battery with its own protection circuit or a small power station, which makes them a natural first load for the DC corner in Chapter 17. Don't build lithium packs from salvaged cells unless you've been properly taught; buy a protected pack.
+ 
+-## The three tiers
++## From Tier 0 to Tier 3
+ 
+ Don't start with the seashell that runs a local AI. Build capability in order, and let each tier work before you add the next.
+ 
+--- v0.10.3/29-appendix-g.md
++++ v0.10.4/29-appendix-g.md
+@@ -1,6 +1,6 @@
+ # Appendix G: Your First Year
+ 
+-*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Move a month if your season or your life needs it, and choose a scale you can sustain.*
++*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Choose one action to begin each month, then add others as time allows. Move a month if your season or your life needs it, and choose a scale you can sustain.*
+ 
+ ![Twelve monthly themes arranged as a two-page year index, from getting your bearings and knowing your numbers to going on the record and looking back, then forward.](/book-images/v103-first-year-index.svg)
+ 

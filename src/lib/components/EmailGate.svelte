@@ -1,6 +1,7 @@
 <script>
   import { onMount, createEventDispatcher } from 'svelte';
   import { browser } from '$app/environment';
+  import { requestJson, RequestTimeoutError } from '$lib/requestJson.js';
 
   const dispatch = createEventDispatcher();
 
@@ -21,35 +22,50 @@
   export let sub = 'Enter your email and the full version opens right here.';
   export let buttonText = 'Unlock Free';
   export let forceUnlock = false;        // bypass gate without email (e.g. Discord click)
-  export let consentDefault = true;      // opt-out: pre-checked. Warm visitor, easy unsubscribe already in place.
 
   const LS_KEY = `sts_unlock_${storageKey}`;
 
   let unlocked = false;
   let email = '';
-  let subscribe = consentDefault;
+  let subscribe = false;
   let honeypot = '';
+  let emailInput;
+  let consentInput;
+  let honeypotInput;
   let state = 'idle'; // idle | loading | error
   let errorMsg = '';
+  let preferenceNotice = '';
+
+  // The DOM owns initial field values so hydration cannot erase early typing,
+  // autofill, an explicit opt-in, or the anti-bot field. Optional updates start
+  // unchecked, and only the visitor's actual checkbox choice is submitted.
+  function syncFields() {
+    email = emailInput?.value ?? email;
+    subscribe = consentInput?.checked ?? subscribe;
+    honeypot = honeypotInput?.value ?? honeypot;
+  }
 
   onMount(() => {
-    if (browser && localStorage.getItem(LS_KEY)) {
-      unlocked = true;
-      const storedEmail = localStorage.getItem(LS_KEY + '_email') || '';
-      // 'restore' (not 'unlock') so one-time side effects wired to 'unlock'
-      // (e.g. sending an email) can't refire on every page load for a
-      // visitor already unlocked on a previous visit.
-      dispatch('restore', { email: storedEmail });
-    }
+    if (!browser) return;
+    syncFields();
+    try {
+      if (localStorage.getItem(LS_KEY)) {
+        unlocked = true;
+        const storedEmail = localStorage.getItem(LS_KEY + '_email') || '';
+        // Restoring a visit must not repeat one-time email side effects.
+        dispatch('restore', { email: storedEmail });
+      }
+    } catch { /* The checklist can still unlock for this visit. */ }
   });
 
   async function submit(e) {
     e.preventDefault();
     if (state === 'loading') return;
+    syncFields(); // Some autofill tools emit neither input nor change.
     state = 'loading';
     errorMsg = '';
     try {
-      const res = await fetch('/api/waitlist', {
+      const { response: res, data } = await requestJson('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -60,11 +76,15 @@
           _hp: honeypot,
         }),
       });
-      const data = await res.json().catch(() => ({}));
       if (res.status === 201 || res.status === 409) {
+        if (res.status === 409) {
+          preferenceNotice = 'Your email preferences have not changed. Use the unsubscribe link in an email, or contact us to request changes.';
+        }
         if (browser) {
-          localStorage.setItem(LS_KEY, '1');
-          localStorage.setItem(LS_KEY + '_email', email);
+          try {
+            localStorage.setItem(LS_KEY, '1');
+            localStorage.setItem(LS_KEY + '_email', email);
+          } catch { /* A successful signup must still reveal the checklist. */ }
         }
         unlocked = true; // reveal
         // 'unlock' fires ONLY here, on a brand-new submission.
@@ -73,9 +93,11 @@
         state = 'error';
         errorMsg = data.error || 'Something went wrong. Try again.';
       }
-    } catch {
+    } catch (error) {
       state = 'error';
-      errorMsg = 'Network error. Try again.';
+      errorMsg = error instanceof RequestTimeoutError
+        ? 'The request took too long. Retry with the same email address.'
+        : 'Network error. Try again.';
     }
   }
 </script>
@@ -85,6 +107,7 @@
 
 {#if unlocked || forceUnlock}
   <div class="gate-reveal">
+    {#if preferenceNotice}<p class="gate-meta" role="status">{preferenceNotice} <a href="mailto:ctavolazzi@gmail.com">Contact us</a>.</p>{/if}
     <slot name="gated" />
   </div>
 {:else}
@@ -103,7 +126,9 @@
         <input
           class="hp-field"
           type="text"
-          bind:value={honeypot}
+          bind:this={honeypotInput}
+          on:input={syncFields}
+          on:change={syncFields}
           tabindex="-1"
           autocomplete="off"
           aria-hidden="true"
@@ -111,7 +136,9 @@
         <input
           class="gate-input"
           type="email"
-          bind:value={email}
+          bind:this={emailInput}
+          on:input={syncFields}
+          on:change={syncFields}
           placeholder="your@email.com"
           required
           autocomplete="email"
@@ -125,14 +152,14 @@
       </form>
 
       <label class="gate-consent">
-        <input type="checkbox" bind:checked={subscribe} />
-        <span>Send me Signal Dispatches, occasional emails only when something changes your plan</span>
+        <input type="checkbox" bind:this={consentInput} on:input={syncFields} on:change={syncFields} />
+        <span>Also send me Signal Dispatches and book release news (optional)</span>
       </label>
 
       {#if state === 'error'}
         <p class="gate-err" role="alert">{errorMsg}</p>
       {/if}
-      <p class="gate-meta">Not a newsletter. Skip it anytime. <a href="/policies">Privacy</a>.</p>
+      <p class="gate-meta">The checklist works without subscribing. Unsubscribe from updates anytime. <a href="/policies">Privacy</a>.</p>
       <slot name="gate-extra" />
     </div>
   </div>
@@ -223,7 +250,7 @@
     outline: none;
     transition: border-color 0.15s ease;
   }
-  .gate-input::placeholder { color: #64748b; }
+  .gate-input::placeholder { color: #94a3b8; }
   .gate-input:focus {
     border-color: rgba(245, 158, 11, 0.6);
   }
@@ -269,7 +296,7 @@
 
   .gate-meta {
     font-size: 0.76rem;
-    color: #64748b;
+    color: #94a3b8;
     margin: 0;
   }
   .gate-meta a { color: #94a3b8; text-decoration: underline; text-underline-offset: 2px; }

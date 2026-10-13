@@ -1,0 +1,27 @@
+Read the whole essay, though, and itʼs not the work of a fool. Stoll
+liked the net and had made real friends there. Several of his com-
+plaints were accurate at the moment he wrote them: the search was
+bad,  the  modems  were  slow,  the  information  was  unfiltered,  and
+plenty of the promises about classrooms and democracy were over-
+sold. He was describing the worst version of the technology and mis-
+taking it for the final one, and bundling separate claims together so
+that one failed forecast took the others down with it. He later owned
+it with good humor: “Of my many mistakes, flubs, and howlers, few
+have been as public as my 1995 howler.” Clifford Stoll
+Another part of that future was being made through a quieter deci-
+sion. On April 30, 1993, CERN placed three components of its Web
+software in the public domain: a basic client, a server, and a shared
+code library. People were permitted to use, copy, modify, and distrib-
+ute  the  code.  In  1994  CERN  retained  copyright  on  a  new  server
+release  while  continuing  to  grant  free  use  through  a  permissive
+license. Access depended on decisions about ownership and permis-
+sion,  made  by  identifiable  people  and  an  institution.  Smith  and
+Flückiger, Licensing the Web
+That didnʼt give everyone a computer or a connection. It removed a
+particular barrier to building on particular software. The comparison
+with food has that boundary: a meal still needs material, work, and
+delivery. But the episode gives hope something firmer than a predic-
+tion to stand on. People can choose terms that let more people bene-
+fit. We can ask which barrier our next decision will remove.
+SURVIVING THE SINGULARITY
+338

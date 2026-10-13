@@ -2,6 +2,23 @@
   <title>Disclaimer - Surviving the Singularity</title>
   <meta name="description" content="Full disclaimer for Surviving the Singularity. Research and entertainment content only. Not professional advice." />
   <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:title" content="Disclaimer" />
+  <meta property="og:description" content="Full disclaimer for Surviving the Singularity. Research and entertainment content only. Not professional advice." />
+  <meta property="og:url" content="https://survivingthesingularity.com/disclaimer" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/home.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/home.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Surviving the Singularity: a practical field guide for staying human in the age of AI." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Disclaimer" />
+  <meta name="twitter:description" content="Full disclaimer for Surviving the Singularity. Research and entertainment content only. Not professional advice." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/home.png" />
 </svelte:head>
 
 <div class="disclaimer-page">

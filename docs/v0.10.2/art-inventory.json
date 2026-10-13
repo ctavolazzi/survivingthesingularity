@@ -1,0 +1,6506 @@
+[
+  {
+    "path": "static/book-images/intro-food-insecurity.svg",
+    "chapters": [
+      "02-introduction.md"
+    ],
+    "viewBox": "0 0 480 646",
+    "texts": [
+      {
+        "text": "WHEN THE JOBS GO, DINNER GOES",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Food insecurity rose sharply in the recession",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "and took a decade to return to earlier levels.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "SHARE OF US HOUSEHOLDS",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Food insecure at some time in the year",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Very low food security",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "SHADED: 2007–2009 RECESSION",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "0%",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "4%",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "8%",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "12%",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "16%",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2001",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2007",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2013",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2019",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2024",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2007: 11.1% food insecure",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2008: 14.6%, a third higher in one year",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2024: 13.7%, 18.3 million households",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2024: 5.4% had very low food security",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Source: USDA Economic Research Service,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "food security trends, 2001–2024.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Current Population Survey supplement.",
+        "size": "12",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        12,
+        [
+          4.56,
+          6.264183673469387
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      10.89
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/intro-food-insecurity.svg",
+    "baseline_print_viewBox": "9.8 -0.4 470.4 646.2",
+    "baseline_minimum_print_svg_font": 15.6,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A14"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/intro-nine-stages.svg",
+    "chapters": [
+      "02-introduction.md"
+    ],
+    "viewBox": "0 0 900 852",
+    "texts": [
+      {
+        "text": "THE NINE STAGES OF THE SINGULARITY",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "PART I  ·  THE ERA OF AGI  ·  STAGES 1-5",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "the human window, where the choices are still ours",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The Cash Grab",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The Panic and the Plug",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The Adults Step In",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4",
+        "size": "17",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "The New Social Contract & the End of Labor",
+        "size": "17",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "the hinge",
+        "size": "11",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "5",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The Primate Backlash",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "THE LEAP TO ASI  ·  STAGES 6-7",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "2027: recursive self-improvement ignites, and there is no pause button",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "6",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The ASI Exodus",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "7",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Simulation, Transhumanism, the Ultimate Cure",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "UNIVERSAL & MULTIVERSE APEX  ·  STAGES 8-9",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "the machine outgrows the planet, then the physics",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "8",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The Transition to USI",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "9",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The Apex Intelligence",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "We are already well into Stage 1. Everything in this book is about setting the terms of",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Stage 4 while the choices are still ours to make.",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        16,
+        [
+          4.56,
+          4.543791469194312
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      5.84
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/intro-nine-stages.svg",
+    "baseline_print_viewBox": "28 18 844 841",
+    "baseline_minimum_print_svg_font": 15.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A01",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-chart-forecast-shift.svg",
+    "chapters": [
+      "03-chapter1.md"
+    ],
+    "viewBox": "0 0 480 554",
+    "texts": [
+      {
+        "text": "FORECASTS MOVED CLOSER",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Two surveys; aggregate 50% forecast dates. These are aggregate probabilistic forecasts from respondents, not actual arrival dates, guarantees, or observed technology progress. High-level machine intelligence and full labor automation are different milestones.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "FORECASTS MOVED CLOSER",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Two surveys; aggregate 50% forecast dates",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2022 survey",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2023 survey",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "High-level machine intelligence",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "13 years earlier",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2047",
+        "size": "13.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "2060",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Full automation of labor",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "48 years earlier",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2116",
+        "size": "13.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "2164",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2020",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2060",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2100",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2140",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2180",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Respondent forecasts, not arrival dates.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The two milestones measure different things.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: Grace et al., arXiv:2401.02843.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        53,
+        [
+          4.56,
+          5.263
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-forecast-shift.svg",
+    "baseline_print_viewBox": "0 0 480 554",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch02-eighteen-days.svg",
+    "chapters": [
+      "04-chapter2.md"
+    ],
+    "viewBox": "0 0 900 520",
+    "texts": [
+      {
+        "text": "PANIC TO PAPERWORK IN EIGHTEEN DAYS",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "June 12 to June 30, 2026: Stage 2 and Stage 3 of this chapter, run at speed.",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "STAGE 2: THE PANIC AND THE PLUG",
+        "size": "11",
+        "fill": "#020617"
+      },
+      {
+        "text": "STAGE 3",
+        "size": "11",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Jun 15",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Jun 22",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Jun 29",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "JUNE 12",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Commerce requires a license",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "for two frontier models;",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "the lab switches them off",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "worldwide",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "JUNE 26",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Trusted partners exempted",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "for critical infrastructure",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "JUNE 30",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Controls lifted, on",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "conditions: detect risks,",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "report misuse, set standards",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "JULY 1",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Access begins returning",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Within days of the order, a Chinese lab published an open-weight model under an MIT license:",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "\"no regional limits, technical access without borders.\"",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Sources: Mayer Brown (June 30, 2026); Al Jazeera (July 1, 2026); Z.ai GLM-5.2 model card. Details in the chapter.",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        63,
+        [
+          4.56,
+          2.64432306798373
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 10.5,
+    "minimum_font_print_pt_estimate": [
+      4.61
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch02-eighteen-days.svg",
+    "baseline_print_viewBox": "28 14 860.5 499",
+    "baseline_minimum_print_svg_font": 12.07,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-visual-local-copies.svg",
+    "chapters": [
+      "04-chapter2.md"
+    ],
+    "viewBox": "0 0 480 374",
+    "texts": [
+      {
+        "text": "KEEP A COPY YOU CAN OPEN",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "A distant server and a local folder separated by a broken network link. A local copy can preserve information access, but still requires power, compatible software and an up-to-date version.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "KEEP A COPY YOU CAN OPEN",
+        "size": "20",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Remote service",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Local copy",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The link can fail.",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Keep the files, an app that opens them,",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "and a version you have checked.",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Copies do not provide electrical power.",
+        "size": "14",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        64,
+        [
+          4.56,
+          3.5529999999999995
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 14.0,
+    "minimum_font_print_pt_estimate": [
+      9.58
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-visual-local-copies.svg",
+    "baseline_print_viewBox": "0 0 480 374",
+    "baseline_minimum_print_svg_font": 14.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-chart-data-centre-demand.svg",
+    "chapters": [
+      "07-chapter5.md"
+    ],
+    "viewBox": "0 0 480 562",
+    "texts": [
+      {
+        "text": "THE MACHINE’S APPETITE",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Worldwide data-centre electricity demand. All data centres worldwide, not AI-only electricity. The 2030 figure is a projection, not an observation.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "THE MACHINE’S APPETITE",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Worldwide data-centre electricity demand",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Terawatt-hours per year",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "0",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "250",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "500",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "750",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1000",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "485",
+        "size": "23",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "2025",
+        "size": "18",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Estimate",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "950",
+        "size": "23",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "2030",
+        "size": "18",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Projection",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "All data centres, not AI alone.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2030 is a forecast, not a meter reading.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: IEA, Key Questions on Energy and AI, 2026.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        92,
+        [
+          4.56,
+          5.338999999999999
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-data-centre-demand.svg",
+    "baseline_print_viewBox": "0 0 480 562",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch05-horses-tractors.svg",
+    "chapters": [
+      "07-chapter5.md"
+    ],
+    "viewBox": "0 0 900 620",
+    "texts": [
+      {
+        "text": "THE HERD AND THE MACHINE",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "On American farms, 1910 to 1949. The horse didn't get worse. The ledger changed.",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "HORSES AND MULES ON FARMS, MILLIONS",
+        "size": "12.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "0",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "10",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "20",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "30",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1918 peak: 26.7 million",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1949: 8.3 million, under a third",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "TRACTORS ON FARMS, MILLIONS",
+        "size": "12.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "0",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "3",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "4",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1949: 3.5 million",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1910: about 1,000",
+        "size": "12",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1910",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1915",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1920",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1925",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1930",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1935",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1940",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1945",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "(1948 and 1949 preliminary)",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: USDA, Farm Production Practices, Costs, and Returns, Statistical Bulletin 83 (1949), table 14.",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        99,
+        [
+          4.56,
+          3.1508132425885336
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 10.5,
+    "minimum_font_print_pt_estimate": [
+      4.54
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch05-horses-tractors.svg",
+    "baseline_print_viewBox": "28 14 866.9 599",
+    "baseline_minimum_print_svg_font": 12.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/coop-cast.svg",
+    "chapters": [
+      "part2-divider.md"
+    ],
+    "viewBox": "0 0 480 588",
+    "texts": [
+      {
+        "text": "The co-op: Elijah, Marta, Priya, and Denny",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Four fictional characters. Elijah is a former tech worker learning to build. Marta is the fabricator running the co-op shop. Priya is a soil scientist. Denny is a former logistics worker and co-op media operator.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "THE CO-OP",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Four people in the story",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ELIJAH",
+        "size": "18",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Former tech worker",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Learning to build",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "MARTA",
+        "size": "18",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Fabricator",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Runs the co-op shop",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "PRIYA",
+        "size": "18",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Soil scientist",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DENNY",
+        "size": "18",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Former logistics worker",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Co-op media operator",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        102,
+        [
+          4.56,
+          5.5859999999999985
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/coop-cast.svg",
+    "baseline_print_viewBox": "0 0 480 588",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/original-09-repair-tools.svg",
+    "chapters": [
+      "08-chapter6.md"
+    ],
+    "viewBox": "0 0 400 260",
+    "texts": [
+      {
+        "text": "Repair tools and a loose washer",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "An open-ended wrench, a screwdriver and a loose washer make a small working still life. Original publication ornament for Surviving the Singularity.",
+        "size": null,
+        "fill": null
+      }
+    ],
+    "baseline_layout": [
+      [
+        103,
+        [
+          2.494771573604061,
+          1.7
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": null,
+    "minimum_font_print_pt_estimate": [
+      null
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/original-09-repair-tools.svg",
+    "baseline_print_viewBox": "49.9 40 289.1 197",
+    "baseline_minimum_print_svg_font": null,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch06-capability-access.svg",
+    "chapters": [
+      "08-chapter6.md"
+    ],
+    "viewBox": "0 0 900 400",
+    "texts": [
+      {
+        "text": "THE GAP IS WHERE WE DECIDE",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Four different events, often confused for one.",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "CAPABILITY",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Can a machine",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "do the task?",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "›",
+        "size": "20",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "DEPLOYMENT",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Is it working",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "somewhere real?",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "›",
+        "size": "20",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "OWNERSHIP",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Who controls it",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "and sets the price?",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "›",
+        "size": "20",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "ACCESS",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Can a person get it",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "without money?",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "A tool can get better while its price goes up. A town can hold a productive farm",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "and people who can't afford its food. The gaps between these boxes are the part we get to decide.",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Chapter 6.",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        108,
+        [
+          4.56,
+          1.9264741946271313
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 10.5,
+    "minimum_font_print_pt_estimate": [
+      4.63
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch06-capability-access.svg",
+    "baseline_print_viewBox": "1.5 14 897.1 379",
+    "baseline_minimum_print_svg_font": 12.65,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-chart-income-food-access.svg",
+    "chapters": [
+      "08-chapter6.md"
+    ],
+    "viewBox": "0 0 480 504",
+    "texts": [
+      {
+        "text": "INCOME AND FOOD ACCESS",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Share of US households food insecure · 2024. Selected groups omit middle incomes and unknown income. National rate covers all households, not just the two shown. Survey association does not establish causation; food insecurity is not identical to reduced intake for every member.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "INCOME AND FOOD ACCESS",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Share of US households food insecure · 2024",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "National rate: 13.7%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Below the poverty threshold",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "39.4%",
+        "size": "13.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "At least 185% of the threshold",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "7.9%",
+        "size": "13.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "0%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "10%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "20%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "30%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "40%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Selected income groups; survey estimates.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Association does not establish causation.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: USDA ERS, ERR-358, Table 2.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        111,
+        [
+          4.56,
+          4.788
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-income-food-access.svg",
+    "baseline_print_viewBox": "0 0 480 504",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-visual-access-gate.svg",
+    "chapters": [
+      "08-chapter6.md"
+    ],
+    "viewBox": "0 0 480 338",
+    "texts": [
+      {
+        "text": "THE GATE AFTER THE MACHINE",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "A productive machine, a gate and a plate. Access depends on terms, price, eligibility and delivery, not capability alone.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "THE GATE AFTER THE MACHINE",
+        "size": "20",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Capability",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Access",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Terms · price · eligibility · delivery",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "A working tool still needs a way through.",
+        "size": "14",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        113,
+        [
+          4.56,
+          3.2110000000000003
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 14.0,
+    "minimum_font_print_pt_estimate": [
+      9.58
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-visual-access-gate.svg",
+    "baseline_print_viewBox": "0 0 480 338",
+    "baseline_minimum_print_svg_font": 14.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch08-cognitive-extraction.svg",
+    "chapters": [
+      "10-chapter8.md"
+    ],
+    "viewBox": "0 0 860 640",
+    "texts": [
+      {
+        "text": "THE COGNITIVE EXTRACTION ENGINE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "YOUR AVAILABLE ATTENTION",
+        "size": "18",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "time for the task you chose",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "scrolling and alerts compete for it",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "REPEATED TASK SWITCHES",
+        "size": "18",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "work pauses for another item",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "some switches help; others interrupt",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "WORK LEFT WAITING",
+        "size": "18",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "returning can require reorientation",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "notice the cost in your own day",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "LESS TIME ON YOUR TASK",
+        "size": "18",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "a possible pattern, not a diagnosis",
+        "size": "13",
+        "fill": "#64748b"
+      },
+      {
+        "text": "conceptual illustration, not a model of brain chemistry",
+        "size": "12",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        142,
+        [
+          4.56,
+          3.374168779427743
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      6.66
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch08-cognitive-extraction.svg",
+    "baseline_print_viewBox": "28 20.9 828.3 612.9",
+    "baseline_minimum_print_svg_font": 16.8,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch08-focus-recovery.svg",
+    "chapters": [
+      "10-chapter8.md"
+    ],
+    "viewBox": "0 0 860 540",
+    "texts": [
+      {
+        "text": "INTERRUPTED WORK: AN ILLUSTRATION",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "attention on task (illustrative)",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "time (not to scale)",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "sustained focus",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "interruptions",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "settling in",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "time varies",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "returning to",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "unfinished work",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "conceptual sketch: no fixed recovery time or interruption threshold",
+        "size": "13",
+        "fill": "#f1f5f9"
+      }
+    ],
+    "baseline_layout": [
+      [
+        143,
+        [
+          4.56,
+          2.913397959183673
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      5.53
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch08-focus-recovery.svg",
+    "baseline_print_viewBox": "28 20.9 784 500.9",
+    "baseline_minimum_print_svg_font": 13.2,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch08-firewall-pipeline.svg",
+    "chapters": [
+      "10-chapter8.md"
+    ],
+    "viewBox": "0 0 860 420",
+    "texts": [
+      {
+        "text": "THE COGNITIVE FIREWALL PIPELINE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "incoming stream",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "scheduled checks",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "make notes",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "chosen task",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "INCOMING",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DIGITAL WEB",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "messages, feeds,",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "and alerts",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "STRICT BATCH",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "PROCESSING",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "twice daily,",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "timed window",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "TEXT-ONLY",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "SYNTHESIS",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "notes in the",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "paper ledger",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DEEP PHYSICAL",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "EXECUTION",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "welds, beds,",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "charters",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "a suggested routine, not a measured effect",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "you run the queries; the queries do not run you",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        144,
+        [
+          4.56,
+          1.9448059701492533
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      5.61
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch08-firewall-pipeline.svg",
+    "baseline_print_viewBox": "28 20.9 804 342.9",
+    "baseline_minimum_print_svg_font": 13.75,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch08-info-architectures.svg",
+    "chapters": [
+      "10-chapter8.md"
+    ],
+    "viewBox": "0 0 860 600",
+    "texts": [
+      {
+        "text": "INFORMATION DISPENSING ARCHITECTURES",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "REAL-TIME REACTIVE",
+        "size": "14",
+        "fill": "#64748b"
+      },
+      {
+        "text": "(fragile)",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "CENTRALIZED",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ALGORITHMIC STREAM",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "constant",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "interruptions",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "YOUR BRAIN (OS)",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "- outrage-loops",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "- high anxiety",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "- depleted working memory",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "- zero surplus for strategy",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ANALOG BATCH-PROCESSING",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "(independent)",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "FILTERED",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "LOCAL SOURCES",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "scheduled batches",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "YOUR BRAIN (OS)",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "- strategic action",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "- high executive function",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "- creative, focused agency",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "- surplus energy for building",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "their architecture",
+        "size": "13",
+        "fill": "#64748b"
+      },
+      {
+        "text": "your architecture",
+        "size": "13",
+        "fill": "#f59e0b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        146,
+        [
+          4.56,
+          3.0789218328840966
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      5.55
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch08-info-architectures.svg",
+    "baseline_print_viewBox": "28 20.9 816.2 551.1",
+    "baseline_minimum_print_svg_font": 13.8,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A02",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-visual-attention-ribbon.svg",
+    "chapters": [
+      "10-chapter8.md"
+    ],
+    "viewBox": "0 0 480 352",
+    "texts": [
+      {
+        "text": "THE DAY, CUT INTO PIECES",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Fragmented ribbon contrasted with an intact ribbon. A visual metaphor for interruptions and time devoted to a chosen task, without measured scale.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "THE DAY, CUT INTO PIECES",
+        "size": "20",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Pulled away",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "A chosen task",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Illustration of interruptions, not a clock.",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "No fixed recovery time is implied.",
+        "size": "14",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        147,
+        [
+          4.56,
+          3.344
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 14.0,
+    "minimum_font_print_pt_estimate": [
+      9.58
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-visual-attention-ribbon.svg",
+    "baseline_print_viewBox": "0 0 480 352",
+    "baseline_minimum_print_svg_font": 14.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch08-star-vs-mesh.svg",
+    "chapters": [
+      "10-chapter8.md"
+    ],
+    "viewBox": "0 0 860 500",
+    "texts": [
+      {
+        "text": "TRUST NETWORK TOPOLOGIES",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "STAR TOPOLOGY",
+        "size": "14",
+        "fill": "#64748b"
+      },
+      {
+        "text": "(one hub)",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "HUB",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "hub loss breaks these links",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "MESH TOPOLOGY",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "(alternate paths)",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "reroute if a working path remains",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "relationship limits vary · maintain the circle and its connections",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        150,
+        [
+          4.56,
+          2.6919509419648495
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      4.98
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch08-star-vs-mesh.svg",
+    "baseline_print_viewBox": "28 20.9 790.9 466.9",
+    "baseline_minimum_print_svg_font": 12.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch09-hyperlocal-vs-global.svg",
+    "chapters": [
+      "11-chapter9.md"
+    ],
+    "viewBox": "0 0 860 620",
+    "texts": [
+      {
+        "text": "TWO SUPPLY LINES: GLOBAL VS HYPER-LOCAL",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "THE GLOBAL CHAIN",
+        "size": "15",
+        "fill": "#c2410c"
+      },
+      {
+        "text": "raw material,",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "a continent away",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "overseas factory,",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "cheapest labor found",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "ocean freight,",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "port, warehouse",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "last-mile truck",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "to your door",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "YOU (waiting)",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "every link is someone else's",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "broken back, and any one",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "of them can cut the line",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "THE HYPER-LOCAL LOOP",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "local material,",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "salvage, soil, sun",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "your hands",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "neighborhood",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "factory + mesh",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "made, not bought",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "YOU (building)",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "repair, reuse, teach the next person",
+        "size": "12.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "short enough to hold in your",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "head; no link depends on a",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "stranger far away being exploited",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "deglobalize. shrink the line.",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "depend on your own hands.",
+        "size": "13",
+        "fill": "#f1f5f9"
+      }
+    ],
+    "baseline_layout": [
+      [
+        160,
+        [
+          4.56,
+          3.3023281765153434
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.5,
+    "minimum_font_print_pt_estimate": [
+      6.12
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch09-hyperlocal-vs-global.svg",
+    "baseline_print_viewBox": "28 20.9 788.6 571.1",
+    "baseline_minimum_print_svg_font": 14.7,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A03",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch09-region-ring.svg",
+    "chapters": [
+      "11-chapter9.md"
+    ],
+    "viewBox": "0 0 480 610",
+    "texts": [
+      {
+        "text": "THE REGION, NOT THE CITY LIMITS",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "A dense core cannot produce everything.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The productive region around it can.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "FOOD PRODUCTION",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "CSA farms, greenhouses,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "grow towers",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "MATERIALS RECOVERY",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Recover scrap and",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "reusable materials",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DENSE CITY CORE",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "High density,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "low production",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "SUPPLY IN",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "ENERGY + WATER",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Solar, storage,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "microgrids",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "NEIGHBORHOOD",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "FACTORIES",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Plasma tables,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "printers, fab labs",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The ring builds capacity and local work.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "If the trucks stop, the region still eats.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Resilience, not secession.",
+        "size": "12",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        162,
+        [
+          4.56,
+          6.101999999999999
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      9.94
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch09-region-ring.svg",
+    "baseline_print_viewBox": "12 -0.4 456 610.2",
+    "baseline_minimum_print_svg_font": 13.8,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A04"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-chart-ammonia-energy.svg",
+    "chapters": [
+      "11-chapter9.md"
+    ],
+    "viewBox": "0 0 480 592",
+    "texts": [
+      {
+        "text": "THE ENERGY IN AMMONIA",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Gigajoules per tonne, net basis. 2021 report values, not a current census of plants. Benchmarks are not proof every existing plant can reach them, or that biological fixation has no energy cost.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "THE ENERGY IN AMMONIA",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Gigajoules per tonne, net basis",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "IEA 2021 assessment",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "0",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "15",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "30",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "45",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "41",
+        "size": "24",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Global",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "average",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "28",
+        "size": "24",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Natural gas",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "best available",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "36",
+        "size": "24",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Coal",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "best available",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Average estimate",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Benchmarks",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Best available is not universal deployment.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "These are industrial production figures.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: IEA, Ammonia Technology Roadmap.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        164,
+        [
+          4.56,
+          5.623999999999999
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-ammonia-energy.svg",
+    "baseline_print_viewBox": "0 0 480 592",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch09-cnc-bed.svg",
+    "chapters": [
+      "11-chapter9.md"
+    ],
+    "viewBox": "0 0 860 520",
+    "texts": [
+      {
+        "text": "THE CNC AUTONOMOUS BED",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "FarmBot-style gantry over a dense coordinate-planted bed",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "gantry travels the X-axis on V-slot rails →",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Z",
+        "size": "11",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "tool head (Z-axis):",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "seed · water · weed",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "carrot",
+        "size": "11",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "(120, 80)",
+        "size": "10",
+        "fill": "#64748b"
+      },
+      {
+        "text": "lettuce",
+        "size": "11",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "(240, 200)",
+        "size": "10",
+        "fill": "#64748b"
+      },
+      {
+        "text": "radish",
+        "size": "11",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "(360, 70)",
+        "size": "10",
+        "fill": "#64748b"
+      },
+      {
+        "text": "clover cover",
+        "size": "11",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "(480, 200)",
+        "size": "10",
+        "fill": "#64748b"
+      },
+      {
+        "text": "every plant is an X-Y coordinate; no walking paths, no wasted bed",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "tool heads: vacuum seed injector · root-dose nozzle · OpenCV rotary weeder",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        166,
+        [
+          4.56,
+          2.8400202994163912
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 10.0,
+    "minimum_font_print_pt_estimate": [
+      4.81
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch09-cnc-bed.svg",
+    "baseline_print_viewBox": "28 20.9 788.2 490.9",
+    "baseline_minimum_print_svg_font": 11.55,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A06",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch09-greenhouse-bus.svg",
+    "chapters": [
+      "11-chapter9.md"
+    ],
+    "viewBox": "0 0 860 560",
+    "texts": [
+      {
+        "text": "THE GREENHOUSE AUTOMATION BUS",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "RASPBERRY PI HOST",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Mycodo engine · PID loops",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "I2C sensor bus",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "GPIO relay board",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "SENSORS (inputs)",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "SHT31-D",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "air temperature + humidity",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "STEMMA SOIL SENSOR",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "capacitive moisture + soil temp",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ACTUATORS (12V outputs)",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "WATER SOLENOID VALVE",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "gravity-fed irrigation line",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "EXHAUST FAN + GROW LIGHTS",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "brushless DC, relay-switched",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "sense → decide → actuate → sense",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "the greenhouse waters itself with control-loop precision while you sleep",
+        "size": "13",
+        "fill": "#f1f5f9"
+      }
+    ],
+    "baseline_layout": [
+      [
+        167,
+        [
+          4.56,
+          2.9345145810262085
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      5.33
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch09-greenhouse-bus.svg",
+    "baseline_print_viewBox": "23.7 20.9 812.7 523",
+    "baseline_minimum_print_svg_font": 13.2,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A05",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-scene-food-delivery.svg",
+    "chapters": [
+      "11-chapter9.md"
+    ],
+    "viewBox": "0 0 960 800",
+    "texts": [
+      {
+        "text": "One harvest, five doors",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "One harvest, five doors",
+        "size": "39",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1  GARDEN",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "8 kg usable",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2  FOOD PARTNER",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "+ 2 kg",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3  PEOPLE",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Pack, drive, confirm",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4  FIVE HOMES",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "2 kg each, free",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Illustrative route. Vegetables supplement meals.",
+        "size": "24",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        170,
+        [
+          4.56,
+          3.7999999999999994
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 24.0,
+    "minimum_font_print_pt_estimate": [
+      8.21
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-scene-food-delivery.svg",
+    "baseline_print_viewBox": "0 0 960 800",
+    "baseline_minimum_print_svg_font": 24.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/original-07-pamphlet-and-thread.svg",
+    "chapters": [
+      "12-chapter10.md"
+    ],
+    "viewBox": "0 0 400 260",
+    "texts": [
+      {
+        "text": "A stitched pamphlet",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "An open, hand-stitched pamphlet shows its folds and thread, without simulated writing. Original publication ornament for Surviving the Singularity.",
+        "size": null,
+        "fill": null
+      }
+    ],
+    "baseline_layout": [
+      [
+        176,
+        [
+          2.6086508753862,
+          1.7
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": null,
+    "minimum_font_print_pt_estimate": [
+      null
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/original-07-pamphlet-and-thread.svg",
+    "baseline_print_viewBox": "51 53.8 298 194.2",
+    "baseline_minimum_print_svg_font": null,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch10-model-collapse.svg",
+    "chapters": [
+      "12-chapter10.md"
+    ],
+    "viewBox": "0 0 860 500",
+    "texts": [
+      {
+        "text": "MODEL COLLAPSE, GENERATION BY GENERATION",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "GEN 0 · human data",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "high variance, rich tails",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "train",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "GEN 1",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "rare cases can disappear",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "train",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "LATER GENERATIONS",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "collapse toward a spike",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "repeatedly replacing training data with finite samples can lose variety",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "schematic only: no fixed timetable, and the final spike can drift",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "source: Shumailov et al., Nature (2024); training conditions matter",
+        "size": "12",
+        "fill": "#f59e0b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        183,
+        [
+          4.56,
+          2.5381292813550878
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      4.95
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch10-model-collapse.svg",
+    "baseline_print_viewBox": "28 20.9 802.9 446.9",
+    "baseline_minimum_print_svg_font": 12.1,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch10-algorithm-unlock.svg",
+    "chapters": [
+      "12-chapter10.md"
+    ],
+    "viewBox": "0 0 860 420",
+    "texts": [
+      {
+        "text": "THE ALGORITHMIC JUDO PIPELINE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "high-utility core",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "algorithmic wrapper",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "centralized feeds",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "reader",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "OFF-GRID TECH",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "PRACTICAL DIY",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "the payload",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "A TRUE STORY",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "NARRATIVE HOOK",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "unmistakably human",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ALGORITHM",
+        "size": "13",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "MAY DISTRIBUTE",
+        "size": "13",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "reach varies",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "CORE",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "UNLOCKED",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "real survival",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "data",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "a true story can give someone a reason to read the instructions",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "test whether it reaches and helps people; no platform guarantees an audience",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        184,
+        [
+          4.56,
+          1.9561492537313432
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      5.17
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch10-algorithm-unlock.svg",
+    "baseline_print_viewBox": "28 20.9 804 344.9",
+    "baseline_minimum_print_svg_font": 12.65,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-visual-operating-stack.svg",
+    "chapters": [
+      "13-chapter11.md"
+    ],
+    "viewBox": "0 0 480 397",
+    "texts": [
+      {
+        "text": "THE FILE IS ONE LAYER",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Model weights shown as a loose paper beside an exploded operating stack. A usable local system also requires software, compute, power and people who can maintain it.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "THE FILE IS ONE LAYER",
+        "size": "20",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Open weights",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Operating stack",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "License sets",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "the terms.",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Software",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Compute",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Power",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Maintenance",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "A downloadable model is not a whole service.",
+        "size": "14",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        198,
+        [
+          4.56,
+          3.771499999999999
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 14.0,
+    "minimum_font_print_pt_estimate": [
+      9.58
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-visual-operating-stack.svg",
+    "baseline_print_viewBox": "0 0 480 397",
+    "baseline_minimum_print_svg_font": 14.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-chart-weights-memory.svg",
+    "chapters": [
+      "13-chapter11.md"
+    ],
+    "viewBox": "0 0 480 570",
+    "texts": [
+      {
+        "text": "HOW MUCH MEMORY FOR WEIGHTS?",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Derived arithmetic · decimal gigabytes. Not measured VRAM demand or a hardware purchasing specification. Excludes quantization metadata, KV cache, activations, runtime buffers, and simultaneous users. The chapter's illustrative 20 percent allowance is not included here.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "HOW MUCH MEMORY FOR WEIGHTS?",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Derived arithmetic · decimal gigabytes",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "4-bit",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "8-bit",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "16-bit",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "8B",
+        "size": "23",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "parameters",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "4",
+        "size": "29",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "GB",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "8",
+        "size": "29",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "GB",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "16",
+        "size": "29",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "GB",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "70B",
+        "size": "23",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "parameters",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "35",
+        "size": "29",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "GB",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "70",
+        "size": "29",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "GB",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "140",
+        "size": "29",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "GB",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "GB = billions of parameters × bits / 8",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Weights only. Runtime needs more.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Cache, context, buffers, quantization metadata,",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "and simultaneous users add to the requirement.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: Chapter 11; llama.cpp documentation.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        200,
+        [
+          4.56,
+          5.414999999999999
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-weights-memory.svg",
+    "baseline_print_viewBox": "0 0 480 570",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch11-cooling-loop.svg",
+    "chapters": [
+      "13-chapter11.md"
+    ],
+    "viewBox": "0 0 480 650",
+    "texts": [
+      {
+        "text": "THE SPLIT-LOOP THERMAL EXCHANGE",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "A conceptual coolant circuit.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Hot out, cool back.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "INSIDE THE INSULATED SHELL",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "GPU BLOCK",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Heat at the silicon",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "CPU BLOCK",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "600–1000 W total*",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "12V BRUSHLESS PUMP",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "PWM speed control",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "HOT OUT",
+        "size": "12",
+        "fill": "#ef4444"
+      },
+      {
+        "text": "OUTSIDE THE SHELL: FREE AIR",
+        "size": "13",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "EXTERNAL RADIATOR",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Salvaged Honda Civic core*",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "+ 12V high-static fans*",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "COOL RETURN TO THE CHIPS",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Move heat outside, away from living space.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Heat per second = flow × Cp × ΔT",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "In winter, recover heat for the living space.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "*Illustrative components and combined load.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Schematic only; engineer a compatible system.",
+        "size": "12",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        202,
+        [
+          4.56,
+          6.425634782608694
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      10.28
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch11-cooling-loop.svg",
+    "baseline_print_viewBox": "8 -0.4 460 648.2",
+    "baseline_minimum_print_svg_font": 14.4,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A11"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/original-04-seed-and-root.svg",
+    "chapters": [
+      "14-chapter12.md"
+    ],
+    "viewBox": "0 0 400 260",
+    "texts": [
+      {
+        "text": "A seed becoming a plant",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "A small seed opens into paired leaves and a branching root system across the ground line. Original publication ornament for Surviving the Singularity.",
+        "size": null,
+        "fill": null
+      }
+    ],
+    "baseline_layout": [
+      [
+        206,
+        [
+          2.4239234449760763,
+          1.7
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": null,
+    "minimum_font_print_pt_estimate": [
+      null
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/original-04-seed-and-root.svg",
+    "baseline_print_viewBox": "52 31 298 209",
+    "baseline_minimum_print_svg_font": null,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-chart-land-values.svg",
+    "chapters": [
+      "14-chapter12.md"
+    ],
+    "viewBox": "0 0 480 564",
+    "texts": [
+      {
+        "text": "WHAT AN ACRE COSTS",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Average US farm real estate value. Includes farm land and buildings; not vacant land alone. Nominal, not inflation-adjusted; national averages are not local asking prices.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "WHAT AN ACRE COSTS",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Average US farm real estate value",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Nominal dollars per acre",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "0",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1,000",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2,000",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "3,000",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "4,000",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "5,000",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2012",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2016",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2020",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2026",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "$2,520",
+        "size": "13.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "$4,500",
+        "size": "13.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Survey estimates include land and buildings.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "National averages, not local asking prices.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: USDA NASS, Land Values 2026, p. 5.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        212,
+        [
+          4.56,
+          5.358
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-land-values.svg",
+    "baseline_print_viewBox": "0 0 480 564",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-visual-shared-land.svg",
+    "chapters": [
+      "14-chapter12.md"
+    ],
+    "viewBox": "0 0 480 399",
+    "texts": [
+      {
+        "text": "LAND HAS PEOPLE ON IT",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Cultivated land rests above an open agreement with distinct spaces for an owner, users and neighbors. Shared use requires consent, terms and a way to challenge decisions.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "LAND HAS PEOPLE ON IT",
+        "size": "20",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Owner",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Users",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Neighbors",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Consent · terms · decisions people can contest",
+        "size": "14",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        213,
+        [
+          4.56,
+          3.7905
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 14.0,
+    "minimum_font_print_pt_estimate": [
+      9.58
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-visual-shared-land.svg",
+    "baseline_print_viewBox": "0 0 480 399",
+    "baseline_minimum_print_svg_font": 14.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch12-csa-network.svg",
+    "chapters": [
+      "14-chapter12.md"
+    ],
+    "viewBox": "0 0 860 620",
+    "texts": [
+      {
+        "text": "THE SEMI-AUTONOMOUS CSA NETWORK",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "SHOUSE NODE A",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "local AI server (Crucible) · Mycodo micro-greenhouse",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "yields: coordination + calories",
+        "size": "11",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "mesh task exchange (LoRa)",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "SHOUSE NODE B",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "tool library (CNC, tractor, welder) · recycled DC battery bank",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "yields: fabrication + stored power",
+        "size": "11",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "mesh task exchange (LoRa)",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "VULNERABLE NODE",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "elder neighbor · fixed-income home · one-button LoRa terminal",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "receives automated calorie + labor deliveries, no dollars involved",
+        "size": "11",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "automated nodes run at ~300% of their own need; the surplus carries whoever cannot produce",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "E-net = Σ automated yield − Σ basic demand · in this network, positive means nobody is cut off",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        216,
+        [
+          4.56,
+          2.9628240687679077
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      4.55
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch12-csa-network.svg",
+    "baseline_print_viewBox": "-6.3 20.9 872.5 566.9",
+    "baseline_minimum_print_svg_font": 12.1,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "root correcting independently"
+  },
+  {
+    "path": "static/book-images/ch13-shell-architecture.svg",
+    "chapters": [
+      "15-chapter13.md"
+    ],
+    "viewBox": "0 0 860 560",
+    "texts": [
+      {
+        "text": "THE DOUBLE-WIDE SHELL ARCHITECTURE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "plan view · two one-trip 40 ft high-cube containers, mated and cut open",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "40 feet",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "seam: interior mating walls cut away, steel skeleton takes the load",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "CONTAINER 1 · 8' × 40'",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "communal workspace · air-gapped server room",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "CONTAINER 2 · 8' × 40'",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "wet-room · kitchen · living quarters",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "8 ft",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "8 ft",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "■ corner castings: chained tight, welded with 7018 rods",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "640 sq ft of open span · roughly $25,000 all-in",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "I-beam and C-channel reinforcement detail: see the center-seam figure below",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        228,
+        [
+          4.56,
+          2.982710197907475
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      6.21
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch13-shell-architecture.svg",
+    "baseline_print_viewBox": "28 20.9 793.3 518.9",
+    "baseline_minimum_print_svg_font": 15.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A07",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch13-thermal-seal.svg",
+    "chapters": [
+      "15-chapter13.md"
+    ],
+    "viewBox": "0 0 860 540",
+    "texts": [
+      {
+        "text": "THE THERMAL BARRIER LAYER",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "illustrative wall section; climate and assembly determine the load",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "steel",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2 mm",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "closed-cell spray foam",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "thickness by design",
+        "size": "11",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "interior finish",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "EXTERIOR",
+        "size": "13",
+        "fill": "#64748b"
+      },
+      {
+        "text": "weather and sun",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "set outside conditions",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "INTERIOR",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "heating and cooling",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "sized for the whole home",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "HEAT",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "REDUCED FLOW",
+        "size": "13",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "foam bonds to bare steel:",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "continuous air control matters;",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "seal gaps and penetrations",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "heat flow = k·A·ΔT / d; insulation lowers conduction, not to zero",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "design moisture control, ventilation, and required fire protection together",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        229,
+        [
+          4.56,
+          2.801434977578475
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      4.77
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch13-thermal-seal.svg",
+    "baseline_print_viewBox": "-3.8 20.9 825.1 506.9",
+    "baseline_minimum_print_svg_font": 12.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch14-logistic-shockwave.svg",
+    "chapters": [
+      "16-chapter14.md"
+    ],
+    "viewBox": "0 0 860 620",
+    "texts": [
+      {
+        "text": "THE LOGISTIC SHOCKWAVE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "how a just-in-time buffer collapses in four days",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "DAY 1",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "PORT DISRUPTION / ALGORITHMIC LOCKOUT",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "one parameter changes upstream",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DAY 2",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "\"ROLLING WAREHOUSES\" REROUTED OR PARKED",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "the trucks were the warehouse; now they are gone",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DAY 3",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "SUPERMARKET SHELVES STRIPPED CLEAN",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "three days of stock was the entire buffer",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DAY 4",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "SYSTEMIC PANIC & RESOURCE HOARDING",
+        "size": "16",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "the crowd discovers the buffer never existed",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "local food buffer draining →",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "efficiency stripped every buffer out; you are always 72 hours from empty",
+        "size": "13",
+        "fill": "#f1f5f9"
+      }
+    ],
+    "baseline_layout": [
+      [
+        239,
+        [
+          4.56,
+          3.510195644149132
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      6.22
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch14-logistic-shockwave.svg",
+    "baseline_print_viewBox": "23.7 -23.8 812.7 625.6",
+    "baseline_minimum_print_svg_font": 15.4,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "root correcting independently"
+  },
+  {
+    "path": "static/book-images/v101-chart-waste-pathways.svg",
+    "chapters": [
+      "16-chapter14.md"
+    ],
+    "viewBox": "0 0 480 674",
+    "texts": [
+      {
+        "text": "WHERE WASTED FOOD GOES",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "US retail, food service, households · 2019. Food retail, food service, and residential sectors only; manufacturing is excluded. Wasted food includes inedible parts, not a quantity that could all be donated. Donation excludes food banks' undistributed portion, which is assigned to other pathways. Published integer rows sum to one ton above the published total; retained as transcribed. Percentages sum to 100.00.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "WHERE WASTED FOOD GOES",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "US retail, food service, households · 2019",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "66.2 million tons",
+        "size": "24",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Landfill",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "59.84%",
+        "size": "13.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Controlled combustion",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "14.57%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Donation to people",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "7.76%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Sewer / wastewater",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "6.00%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Composting",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4.99%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Bio-based / biochemical",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3.53%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Animal feed",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2.29%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Anaerobic digestion",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "0.81%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "Land application",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "0.21%",
+        "size": "13.5",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "0%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "20%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "40%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "60%",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "EPA estimates; 2019 Wasted Food Report,",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Table 5. Includes inedible parts.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Donation is net of food banks’ unusable share.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        243,
+        [
+          4.56,
+          6.403
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-waste-pathways.svg",
+    "baseline_print_viewBox": "0 0 480 674",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch14-mesh-comms.svg",
+    "chapters": [
+      "16-chapter14.md"
+    ],
+    "viewBox": "0 0 860 560",
+    "texts": [
+      {
+        "text": "CENTRALIZED VS. DECENTRALIZED MESH COMMS",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "CENTRALIZED",
+        "size": "14",
+        "fill": "#64748b"
+      },
+      {
+        "text": "(one uplink in this example)",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "TOWER",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "[you]",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "[you]",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "[you]",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "tower failure cuts this link",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "a second path needs planning",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "DECENTRALIZED MESH",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "(several surviving paths)",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "relay nodes pass messages",
+        "size": "13",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "another usable path must remain",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "local radio links; test coverage, power, and the loss of a relay",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        245,
+        [
+          4.56,
+          3.0538217213114756
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      7.06
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch14-mesh-comms.svg",
+    "baseline_print_viewBox": "28 20.9 780.8 522.9",
+    "baseline_minimum_print_svg_font": 16.8,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/original-11-soil-profile.svg",
+    "chapters": [
+      "17-chapter15.md"
+    ],
+    "viewBox": "0 0 400 260",
+    "texts": [
+      {
+        "text": "Roots and a depth probe",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "A root system and an unnumbered three-level probe cross an uneven soil section. Original publication ornament for Surviving the Singularity.",
+        "size": null,
+        "fill": null
+      }
+    ],
+    "baseline_layout": [
+      [
+        251,
+        [
+          2.4308190652475705,
+          1.7
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": null,
+    "minimum_font_print_pt_estimate": [
+      null
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/original-11-soil-profile.svg",
+    "baseline_print_viewBox": "46 25.9 309 216.1",
+    "baseline_minimum_print_svg_font": null,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch15-clt-firewall.svg",
+    "chapters": [
+      "17-chapter15.md"
+    ],
+    "viewBox": "0 0 860 640",
+    "texts": [
+      {
+        "text": "THE COOPERATIVE LAND TRUST FIREWALL",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "SPECULATIVE REAL ESTATE MARKET",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "rising prices · competing offers · speculative resale",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "pressure to sell",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "RESALE RESTRICTED BY LEGAL TERMS",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "COMMUNITY LAND TRUST (CLT)",
+        "size": "16",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "THE LAND · held by the trust",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "long-term affordability is the purpose",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "taxes, debt, and governance duties remain",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "often a 99-year lease",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "THE STEWARDSHIP · housing, farms, greenhouses",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "improvements held under the ground lease",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "resale formula protects the next household",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "a trust can still fail or lose land; legal structure requires stewardship",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        256,
+        [
+          4.56,
+          3.556823289070479
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      5.53
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch15-clt-firewall.svg",
+    "baseline_print_viewBox": "28 20.9 783.2 610.9",
+    "baseline_minimum_print_svg_font": 13.2,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch15-soil-food-web.svg",
+    "chapters": [
+      "17-chapter15.md"
+    ],
+    "viewBox": "0 0 860 640",
+    "texts": [
+      {
+        "text": "THE SOIL FOOD WEB ENGINE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "the biological refinery under every garden",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "SUNLIGHT & PLANTS",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "photosynthesis pumps sugar into the root zone",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "root exudates (sugars)",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "BACTERIA & FUNGI",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "mine raw minerals out of rock, sand, and organic matter",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "grazed by the next trophic level",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "PROTOZOA & NEMATODES",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "digest the microbes, excrete plant-available nutrients",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "FED PLANTS, LIVING SOIL",
+        "size": "16",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "fewer bought inputs needed",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "plants feed the web that feeds the plants",
+        "size": "12",
+        "fill": "#3b82f6"
+      }
+    ],
+    "baseline_layout": [
+      [
+        258,
+        [
+          4.56,
+          3.528213870592793
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      5.34
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch15-soil-food-web.svg",
+    "baseline_print_viewBox": "28 20.9 774.3 599.1",
+    "baseline_minimum_print_svg_font": 12.6,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "root correcting independently"
+  },
+  {
+    "path": "static/book-images/v101-scene-living-soil.svg",
+    "chapters": [
+      "17-chapter15.md"
+    ],
+    "viewBox": "0 0 960 800",
+    "texts": [
+      {
+        "text": "A growing bed has an outside",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "A growing bed has an outside",
+        "size": "39",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1  INPUTS",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Sun, water, replenishment",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2  WITHIN THE BED",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Roots and soil life",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3  HARVEST",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Nutrients leave in food",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4  WATER OUT",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Plants, air, drainage",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Conceptual cutaway. Arrows are not quantities.",
+        "size": "24",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        259,
+        [
+          4.56,
+          3.8000000000000003
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 24.0,
+    "minimum_font_print_pt_estimate": [
+      8.21
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-scene-living-soil.svg",
+    "baseline_print_viewBox": "0 0 960 800",
+    "baseline_minimum_print_svg_font": 24.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch16-sneakernet.svg",
+    "chapters": [
+      "18-chapter16.md"
+    ],
+    "viewBox": "0 0 860 500",
+    "texts": [
+      {
+        "text": "THE SNEAKERNET CYCLE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "the un-hackable network: data that walks",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "INDEPENDENT NODE",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "local server + archive",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "encrypts ⇒",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "microSD",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1 TB",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "encrypted",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "passed by hand · local courier · town to town",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "NEIGHBOR NODE",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "next community over",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "⇐ decrypts",
+        "size": "12",
+        "fill": "#3b82f6"
+      },
+      {
+        "text": "and back again, with their library merged into yours",
+        "size": "12",
+        "fill": "#64748b"
+      },
+      {
+        "text": "immune to surveillance, remote shutdown, and electromagnetic interference",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "a library walks across town in a pocket; nobody upstream ever sees a packet",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        270,
+        [
+          4.56,
+          2.441117047110247
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      5.04
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch16-sneakernet.svg",
+    "baseline_print_viewBox": "18.2 20.9 823.6 440.9",
+    "baseline_minimum_print_svg_font": 12.65,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A08",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch17-algae-loop.svg",
+    "chapters": [
+      "19-chapter17.md"
+    ],
+    "viewBox": "0 0 860 600",
+    "texts": [
+      {
+        "text": "CLOSING THE LOOP: THE ALGAE FISH-FOOD CYCLE",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "FISH TANK",
+        "size": "18",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "waste becomes nitrates",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "GROW BEDS",
+        "size": "18",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "plants clean the water,",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "feed the household",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DRY + GRIND",
+        "size": "18",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "8 g/week into pellets",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "PHOTOBIOREACTOR",
+        "size": "17",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "algae grown on light,",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "water, a $400 printer",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "nitrate-rich water",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "harvested algae",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "dried protein",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "fish food, made not bought",
+        "size": "12.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "the store-bought",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "input is gone;",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "the loop is closed",
+        "size": "13",
+        "fill": "#f1f5f9"
+      }
+    ],
+    "baseline_layout": [
+      [
+        280,
+        [
+          4.56,
+          2.877853904282116
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.5,
+    "minimum_font_print_pt_estimate": [
+      5.64
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch17-algae-loop.svg",
+    "baseline_print_viewBox": "28 20.9 794 501.1",
+    "baseline_minimum_print_svg_font": 13.65,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "root correcting independently"
+  },
+  {
+    "path": "static/book-images/ch17-lora-node.svg",
+    "chapters": [
+      "19-chapter17.md"
+    ],
+    "viewBox": "0 0 480 676",
+    "texts": [
+      {
+        "text": "AN INDEPENDENT MESH NODE",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "The power path and radio link.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "A component map, not assembly instructions.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "WATERPROOF PELICAN",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "/ AMMO BOX",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "5W SOLAR PV PANEL*",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Paperback-sized,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "mounted on the case",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Matched charger*",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "PROTECTED BATTERY PACK*",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Matched cells and protection",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ESP32 / HELTEC",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "LORA BOARD*",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Meshtastic firmware;",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "idle draw varies by setup",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "TUNED,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ELEVATED",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ANTENNA",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "TO NEXT",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "NODE",
+        "size": "12",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "*Illustrative hardware. Use protected cells",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "and a charger matched to the battery pack.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Match 915 / 868 MHz hardware, firmware",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "and regional settings to local radio rules.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Reach depends on terrain and line of sight.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Solar runtime depends on weather and load.",
+        "size": "12",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        282,
+        [
+          4.56,
+          6.692
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      9.5
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch17-lora-node.svg",
+    "baseline_print_viewBox": "12 -0.4 456 669.2",
+    "baseline_minimum_print_svg_font": 13.2,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch17-dc-native.svg",
+    "chapters": [
+      "19-chapter17.md"
+    ],
+    "viewBox": "0 0 860 560",
+    "texts": [
+      {
+        "text": "THE INVERTER TRAP VS. THE DC-NATIVE PROTOCOL",
+        "size": "15",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "THE THERMODYNAMIC INVERTER TRAP",
+        "size": "13",
+        "fill": "#64748b"
+      },
+      {
+        "text": "SOLAR",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "DC",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "BATTERY",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "DC",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "INVERTER",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DC → AC",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "conversion loss",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "WALL BRICK",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "AC → DC again",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "conversion loss",
+        "size": "11",
+        "fill": "#64748b"
+      },
+      {
+        "text": "your DC devices",
+        "size": "13",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "loss depends on equipment, idle draw, and operating load",
+        "size": "13",
+        "fill": "#64748b"
+      },
+      {
+        "text": "THE INDEPENDENT DC-NATIVE PROTOCOL",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "SOLAR",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "DC",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "BATTERY",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "12V / 24V bus",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DC FUSE BLOCK",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "marine-grade",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DEVICES",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "matched voltage",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "fewer conversions; charging, wiring, and regulation still lose energy",
+        "size": "13",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "charge controller required; match and regulate voltage for each load",
+        "size": "12",
+        "fill": "#64748b"
+      }
+    ],
+    "baseline_layout": [
+      [
+        284,
+        [
+          4.56,
+          2.999499936860714
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.0,
+    "minimum_font_print_pt_estimate": [
+      6.16
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch17-dc-native.svg",
+    "baseline_print_viewBox": "28 20.9 791.9 520.9",
+    "baseline_minimum_print_svg_font": 14.85,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch17-fab-lab.svg",
+    "chapters": [
+      "19-chapter17.md"
+    ],
+    "viewBox": "0 0 480 674",
+    "texts": [
+      {
+        "text": "THE DECENTRALIZED FAB LAB",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Local materials, shared machine designs,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "useful parts and field power.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "RECYCLED RAW MATERIALS",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Scrap steel · PETG · salvage",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "OPEN-SOURCE MACHINE CORES",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "3D PRINTER",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "RepRap; prints some",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "of its own parts",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "SEALS · GEARS",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "VALVES",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Replacement parts",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "CNC PLASMA",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "/ ROUTER",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Match power supply",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "to machine load",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "STRUCTURAL",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "STEEL",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Mounts, brackets,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "frames",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "OPEN-SOURCE",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "TRACTOR",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "BCS-type / GVCS",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "pattern",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "TILLAGE",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "HAULING",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Field power,",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "PTO energy",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Fabricate the replacement instead of waiting.",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Pattern library: Global Village Construction",
+        "size": "12",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Set, fifty machines for a small civilization.",
+        "size": "12",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        286,
+        [
+          4.56,
+          6.731999999999999
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 12.0,
+    "minimum_font_print_pt_estimate": [
+      10.37
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch17-fab-lab.svg",
+    "baseline_print_viewBox": "12 -0.4 456 673.2",
+    "baseline_minimum_print_svg_font": 14.4,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A12"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-scene-shared-workshop.svg",
+    "chapters": [
+      "19-chapter17.md"
+    ],
+    "viewBox": "0 0 960 800",
+    "texts": [
+      {
+        "text": "What keeps a workshop useful",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "What keeps a workshop useful",
+        "size": "39",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4",
+        "size": "25",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1  PEOPLE",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Skill, access, time",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "2  SUPPLIES",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Stock, power, spares",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "3  SHARED TOOLS",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Operate and maintain",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "4  USEFUL RESULT",
+        "size": "25",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "A repair leaves the bench",
+        "size": "26",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Illustrative workshop. Not a fabrication plan.",
+        "size": "24",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        288,
+        [
+          4.56,
+          3.7999999999999994
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 24.0,
+    "minimum_font_print_pt_estimate": [
+      8.21
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-scene-shared-workshop.svg",
+    "baseline_print_viewBox": "0 0 960 800",
+    "baseline_minimum_print_svg_font": 24.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-visual-continuity-calendar.svg",
+    "chapters": [
+      "20-chapter18.md"
+    ],
+    "viewBox": "0 0 480 384",
+    "texts": [
+      {
+        "text": "INK FOR WHAT IS FUNDED",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Two calendar sheets distinguish funding secured through June from a proposed continuation. Delivery also depends on paid work, backup cover and clear communication with households. No year or invented schedule is shown.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "INK FOR WHAT IS FUNDED",
+        "size": "20",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "THROUGH JUNE",
+        "size": "17",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "CONTINUATION",
+        "size": "17",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "proposed",
+        "size": "17",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Secured",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Not yet promised",
+        "size": "14",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Name the cover. Pay for the work.",
+        "size": "14",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Tell households what is actually secured.",
+        "size": "14",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        297,
+        [
+          4.56,
+          3.6479999999999997
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 14.0,
+    "minimum_font_print_pt_estimate": [
+      9.58
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-visual-continuity-calendar.svg",
+    "baseline_print_viewBox": "0 0 480 384",
+    "baseline_minimum_print_svg_font": 14.0,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch18-social-contract.svg",
+    "chapters": [
+      "20-chapter18.md"
+    ],
+    "viewBox": "0 0 900 548",
+    "texts": [
+      {
+        "text": "THE NEW SOCIAL CONTRACT",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "THE OLD CONTRACT",
+        "size": "14",
+        "fill": "#f87171"
+      },
+      {
+        "text": "THE NEW CONTRACT",
+        "size": "14",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "YOUR LABOR",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "sell your day, every day",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "A WAGE",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "money, and only if a job exists",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "RENTED SURVIVAL",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "food, shelter, care, month to month",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Miss a payment and you are cut off.",
+        "size": "12.5",
+        "fill": "#f87171"
+      },
+      {
+        "text": "MACHINES + REGENERATIVE LOOPS",
+        "size": "14.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "robots do the toil; closed loops feed them",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "LOCAL ABUNDANCE",
+        "size": "15",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "food, shelter, care, produced close to home",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "ADEQUATE LEVEL OF CARE",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "survival is the floor, not the prize",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "A job becomes a choice, not a sentence.",
+        "size": "12.5",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "Not the end of work. The end of working to earn the right to exist.",
+        "size": "13.5",
+        "fill": "#f1f5f9"
+      }
+    ],
+    "baseline_layout": [
+      [
+        300,
+        [
+          4.56,
+          2.7451848341232226
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 11.5,
+    "minimum_font_print_pt_estimate": [
+      5.37
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch18-social-contract.svg",
+    "baseline_print_viewBox": "28 16 844 508.1",
+    "baseline_minimum_print_svg_font": 13.8,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A09",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/v101-chart-meal-response.svg",
+    "chapters": [
+      "20-chapter18.md"
+    ],
+    "viewBox": "0 0 480 676",
+    "texts": [
+      {
+        "text": "WHEN A MEAL FAILS",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "Illustrative premortem worksheet. Illustrative worksheet, not results from an actual service or a measured risk model. Personal details belong in appropriate private records, not the public board.",
+        "size": null,
+        "fill": null
+      },
+      {
+        "text": "WHEN A MEAL FAILS",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Illustrative premortem worksheet",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "WHO LOSES THE MEAL?",
+        "size": "14.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Name affected people and jobs.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "WHAT WARNS YOU?",
+        "size": "14.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Define a signal or missing check-in.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "3",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "WHO RESPONDS?",
+        "size": "14.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Confirm a lead and an available backup.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "4",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "WHAT GETS DELIVERED?",
+        "size": "14.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Test the alternative; show any gap.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "5",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "WHAT KEEPS IT RUNNING?",
+        "size": "14.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Name supplies, labor, money, end date.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "6",
+        "size": "15",
+        "fill": "#f59e0b"
+      },
+      {
+        "text": "WHEN DO YOU CHECK AGAIN?",
+        "size": "14.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Set a review date and needed evidence.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Test the handoff before making the promise.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Keep personal details out of the public board.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Source: Chapter 18, failed-meal record.",
+        "size": "13.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        305,
+        [
+          4.56,
+          6.422000000000001
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 13.5,
+    "minimum_font_print_pt_estimate": [
+      9.23
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/v101-chart-meal-response.svg",
+    "baseline_print_viewBox": "0 0 480 676",
+    "baseline_minimum_print_svg_font": 13.5,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/ch19-conversion-ladder.svg",
+    "chapters": [
+      "27-chapter19.md"
+    ],
+    "viewBox": "0 0 900 650",
+    "texts": [
+      {
+        "text": "THE LADDER",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Nine rungs, from the bottom up. Start with food. Climb as far as your town can hold.",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "FEED PEOPLE NOW",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "CHANGE WHO OWNS AND DECIDES",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "WIDEN THE FLOOR",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Count what's wasted and who's hungry",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "California SB 1383 recovery targets",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Feed everyone who asks",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "France, 2016: no destroying edible food",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "3",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Make the meal a public service",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "California universal school meals, 2022",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "4",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Take the ground off the market",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "community land trusts, 99-year leases",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "5",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Own the machines together",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "rural electric co-ops, from 1936",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "6",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Stop letting a score decide who survives",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "NYC right to counsel, 2017",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "7",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Widen the floor",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "NHS, 1948; Universal Basic Services",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "8",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Put it on the scoreboard, in public",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "holds the ladder together",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "9",
+        "size": "16",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Keep the market above the floor",
+        "size": "13",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "money stays; it becomes optional",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "draws on a precedent",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "how you hold it together",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Chapter 19. Sources for every rung in the chapter and in Appendix B.",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        310,
+        [
+          4.56,
+          3.3983886255924163
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 10.5,
+    "minimum_font_print_pt_estimate": [
+      4.92
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/ch19-conversion-ladder.svg",
+    "baseline_print_viewBox": "28 14 844 629",
+    "baseline_minimum_print_svg_font": 12.65,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A10",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  },
+  {
+    "path": "static/book-images/appd-precedent-timeline.svg",
+    "chapters": [
+      "25-appendix-d.md"
+    ],
+    "viewBox": "0 0 900 872",
+    "texts": [
+      {
+        "text": "THE LEDGER ON ONE PAGE",
+        "size": "19",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "Twenty-four times people watched a new capability arrive, or a new rule, and reprice their world.",
+        "size": "12.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1750 TO TODAY",
+        "size": "12.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1750",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1800",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1850",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1900",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "1950",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2000",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "2025",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "P-01",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Reading Rage",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-20",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "An Argument in Circulation",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-07",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Horse and the Ledger",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-09",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Frame-Breakers",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-15",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "One Hundred Sixty Acres",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-04",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Red Flag",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-02",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Voice at the Fair",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-03",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "One Million Years, Give or Take",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-16",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The House That Came by Mail",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-11",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Torches of Freedom",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-10",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Robot in the Orchestra Pit",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-23",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Day Care Stopped Costing Money",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-19",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Organizing the Harvest",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-14",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Quartz and the Assembly Line",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-21",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "Access to Tools",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-17",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Graveyard of the Unconvinced",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-24",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "What the Forecast Missed",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-22",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Apocalypse That Ran On Time",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-18",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Mirror Twin",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "dashed: an approximate span, from the chapter's documents",
+        "size": "11",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "DEEP HISTORY",
+        "size": "12.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "P-08",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Grain Trap",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "c. 9500 to 6000 BC",
+        "size": "11.5",
+        "fill": "#d97706"
+      },
+      {
+        "text": "P-12",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Networks Behind the Bronze",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "14th to 12th c. BC",
+        "size": "11.5",
+        "fill": "#d97706"
+      },
+      {
+        "text": "P-05",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Court and the Fleet",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1405 to 1433",
+        "size": "11.5",
+        "fill": "#d97706"
+      },
+      {
+        "text": "P-13",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Abbot and the Press",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1492 to 1494",
+        "size": "11.5",
+        "fill": "#d97706"
+      },
+      {
+        "text": "P-06",
+        "size": "11.5",
+        "fill": "#94a3b8"
+      },
+      {
+        "text": "The Great Demotion",
+        "size": "11.5",
+        "fill": "#f1f5f9"
+      },
+      {
+        "text": "1543",
+        "size": "11.5",
+        "fill": "#d97706"
+      },
+      {
+        "text": "Dates from Appendix D; sources for every entry in Appendix B.",
+        "size": "10.5",
+        "fill": "#94a3b8"
+      }
+    ],
+    "baseline_layout": [
+      [
+        360,
+        [
+          4.56,
+          4.430368763557483
+        ]
+      ]
+    ],
+    "minimum_explicit_font_svg_units": 10.5,
+    "minimum_font_print_pt_estimate": [
+      4.95
+    ],
+    "baseline_print_variant": "../sts-v0.10.1/static/book-images/print/appd-precedent-timeline.svg",
+    "baseline_print_viewBox": "28 14 875.9 851",
+    "baseline_minimum_print_svg_font": 13.2,
+    "estimate_method": "Prepared baseline print SVG font-size times placed width in points divided by prepared SVG viewBox width; before PDF outline/raster conversion.",
+    "audit_findings": [
+      "A13",
+      "L01"
+    ],
+    "audit_scope": "read-only review"
+  }
+]

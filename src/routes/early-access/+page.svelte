@@ -1,10 +1,32 @@
 <script>
+  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import BookCover from '$lib/components/BookCover.svelte';
+  // Nothing on this page states the offer in its own words. See src/lib/offer.js.
+  import { offer, offerBlurb } from '$lib/offer';
+  import { book } from '$lib/bookContent';
+  import { releasedVersion } from '$lib/bookManifest.js';
+  import { requestJson, RequestTimeoutError } from '$lib/requestJson.js';
 
   let checkoutLoading = false;
   let checkoutError = '';
   let email = '';
+  let emailInput;
+  let bottomEmailInput;
+  // The server-rendered fields are usable before client JS arrives. A blank
+  // bind:value would overwrite anything typed or autofilled during that gap.
+  // Adopt the focused field, or either populated field, then synchronize both.
+  onMount(() => {
+    const active = [emailInput, bottomEmailInput].find(input => input === document.activeElement);
+    syncEmail(active?.value || emailInput?.value || bottomEmailInput?.value || '');
+  });
+
+  function syncEmail(value) {
+    email = value;
+    for (const input of [emailInput, bottomEmailInput]) {
+      if (input && input.value !== value) input.value = value;
+    }
+  }
   // Set when the server refuses a repeat purchase. This is not an error state:
   // nothing went wrong, the customer already owns the thing they are trying to
   // buy, and the correct response is to give it back to them rather than to
@@ -27,26 +49,30 @@
     return 'You already have this one. We could not re-send the link automatically, so email info@survivingthesingularity.com and we will sort it out.';
   }
 
-  async function checkout() {
+  async function checkout(input) {
     if (checkoutLoading) return;
     checkoutError = '';
     ownedMessage = '';
 
-    if (!emailOk) {
+    // Some autofill tools update the DOM without an input event. Read the
+    // current field for Enter submission instead of relying on stale state.
+    syncEmail(input?.value ?? email);
+    if (!EMAIL_RE.test(email.trim())) {
       checkoutError = 'Enter a valid email address first.';
       return;
     }
 
     checkoutLoading = true;
+    let redirecting = false;
     try {
-      const res = await fetch('/api/stripe-checkout', {
+      const { response: res, data } = await requestJson('/api/stripe-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ edition_type: 'standard', email: email.trim() }),
       });
-      const data = await res.json().catch(() => ({}));
-      if (data.url) {
+      if (res.ok && data.url) {
         window.location.href = data.url;
+        redirecting = true;
         return; // leave the button disabled through the redirect
       }
       if (data.already_owned) {
@@ -54,37 +80,39 @@
       } else {
         checkoutError = data.error ?? 'Could not start checkout. Try again.';
       }
-      checkoutLoading = false;
-    } catch {
-      checkoutError = 'Network error. Try again.';
-      checkoutLoading = false;
+    } catch (error) {
+      checkoutError = error instanceof RequestTimeoutError
+        ? 'Checkout is taking too long to respond. We could not confirm its status. Retry with the same email address to recover any checkout already started.'
+        : 'Connection interrupted. We could not confirm checkout status. Retry with the same email address.';
+    } finally {
+      if (!redirecting) checkoutLoading = false;
     }
   }
 </script>
 
 <svelte:head>
   <title>Preorder the Book | Surviving the Singularity</title>
-  <meta name="description" content="Preorder for $5. Get the current book draft, The Precedent File, and a locked-in spot before the general public. Expected launch 2026." />
+  <meta name="description" content={offerBlurb()} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Preorder the Book | Surviving the Singularity" />
-  <meta property="og:description" content="Preorder for $5. Get the current book draft, The Precedent File, and a locked-in spot before the general public. Expected launch 2026." />
+  <meta property="og:description" content={offerBlurb()} />
   <!-- Landscape card, not the portrait cover: og:image gets cropped to roughly
        1.91:1, so the 1410x2056 art was being sliced. Absolute and hardcoded
        rather than $page.url, which prerenders to http://sveltekit-prerender.
        Rebuild with `sts.py og --render`. -->
   <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:url" content="https://survivingthesingularity.com/early-access" />
-  <meta property="og:image" content="https://survivingthesingularity.com/images/og/early-access.png" />
-  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/early-access.png" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/early-access.png?v=0.11" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/early-access.png?v=0.11" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
-  <meta property="og:image:alt" content="Preorder Surviving the Singularity for $5 and get the bundle now." />
+  <meta property="og:image:alt" content="Preorder Surviving the Singularity for {offer.price} and get the bundle now." />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Preorder the book. Get the bundle now." />
-  <meta name="twitter:description" content="$5 gets you the current draft, The Precedent File, and a 50% discount at launch." />
-  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/early-access.png" />
+  <meta name="twitter:description" content={offerBlurb()} />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/early-access.png?v=0.11" />
 </svelte:head>
 
 <!-- ── HERO ── -->
@@ -106,7 +134,7 @@
             <circle cx="6" cy="6" r="6" fill="#f59e0b" opacity="0.2"/>
             <circle cx="6" cy="6" r="3" fill="#f59e0b"/>
           </svg>
-          Book draft in progress
+          Draft v{book.version}, in progress
         </div>
       </div>
     </div>
@@ -121,21 +149,26 @@
       <h1 class="ea-heading">
         Preorder the book.<br><span class="ea-amber">Get the bundle now.</span>
       </h1>
-      <p class="ea-sub">
-        $5 gets you the current book draft, The Precedent File, and a 50% discount at launch.
-      </p>
+      <p class="ea-sub">{offer.sentence}</p>
       <p class="ea-sub ea-sub-label">You get:</p>
       <ul class="ea-hero-list">
-        <li>The Precedent File delivered to your inbox today</li>
-        <li>The current book draft</li>
-        <li>Exclusive link to buy the finished book at 50% off at launch</li>
+        {#each offer.included as item}
+          <li>{item.title}</li>
+        {/each}
       </ul>
 
       <div class="ea-price-card">
         <div class="ea-price-row">
-          <div class="ea-price-amount"><sup>$</sup>5</div>
+          <div class="ea-price-amount"><sup>$</sup>{offer.priceCents / 100}</div>
           <div class="ea-price-meta-col">
             <span class="ea-price-type">one-time preorder</span>
+            <!-- Derived from src/lib/data/book/book.json, the same file /book and
+                 /read already read. A reader who buys "the book as it is being
+                 written" should see the version they can DOWNLOAD today, which
+                 is the released build, not the open working label that runs
+                 ahead of it mid-cycle (RELEASES.md: never tell a reader they
+                 are getting the unbuilt version). -->
+            <span class="ea-price-version">You get v{releasedVersion(book)}, updated {book.lastUpdated}</span>
           </div>
         </div>
 
@@ -151,34 +184,41 @@
           inputmode="email"
           autocomplete="email"
           placeholder="you@example.com"
-          bind:value={email}
-          on:keydown={(e) => e.key === 'Enter' && checkout()}
+          bind:this={emailInput}
+          on:input={(event) => syncEmail(event.currentTarget.value)}
+          on:change={(event) => syncEmail(event.currentTarget.value)}
+          on:keydown={(e) => e.key === 'Enter' && checkout(e.currentTarget)}
           disabled={checkoutLoading}
         />
 
         <button
           class="ea-buy-btn"
           class:is-loading={checkoutLoading}
-          on:click={checkout}
+          on:click={() => checkout(emailInput)}
           type="button"
           disabled={checkoutLoading || !emailOk}
         >
-          {checkoutLoading ? 'Redirecting to checkout...' : 'Preorder Now: $5'}
+          {checkoutLoading ? 'Redirecting to checkout...' : `Preorder Now: ${offer.price}`}
         </button>
 
-        {#if checkoutError}
-          <p class="ea-checkout-error">{checkoutError}</p>
-        {/if}
+        <div role="alert" aria-atomic="true">
+          {#if checkoutError}<p class="ea-checkout-error">{checkoutError}</p>{/if}
+        </div>
+        <div role="status" aria-atomic="true">
+          {#if ownedMessage}<p class="ea-owned-note">{ownedMessage}</p>{/if}
+        </div>
 
-        {#if ownedMessage}
-          <p class="ea-owned-note">{ownedMessage}</p>
-        {/if}
+        <noscript>
+          <p class="ea-scope-body">Checkout needs JavaScript to check your email for an existing purchase before opening Stripe. Open this page in a browser with JavaScript enabled, <a href="/sample">read the free sample</a>, or <a href="mailto:info@survivingthesingularity.com">contact us for help with your purchase</a>.</p>
+        </noscript>
 
 
         <p class="ea-secure-note">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           Secured by Stripe. <a href="/policies">Privacy policy</a>.
         </p>
+        <p class="ea-scope-body">{offer.access}</p>
+        <p class="ea-scope-body">{offer.purchaseTerms}</p>
       </div>
     </div>
 
@@ -189,7 +229,7 @@
 <section class="ea-preview">
   <div class="ea-preview-inner">
     <p class="ea-label">A look inside</p>
-    <h2 class="ea-preview-heading">The book the blueprint is based on.</h2>
+    <h2 class="ea-preview-heading">A look inside the current draft.</h2>
     <p class="ea-preview-sub">Written in public, updated as the field moves. You're reading it as it's being built.</p>
 
     <div class="ea-image-grid">
@@ -221,35 +261,36 @@
 <section class="ea-parts">
   <div class="ea-parts-inner">
     <p class="ea-label">Inside the book</p>
-    <h2 class="ea-preview-heading">Three parts. Nine stages. One roadmap.</h2>
-    <p class="ea-preview-sub">Not a vibes-based prediction. A structural argument, built stage by stage, with a plan attached.</p>
+    <h2 class="ea-preview-heading">Three parts. A future to argue about. Work to begin.</h2>
+    <p class="ea-preview-sub">Historical cases, speculative fiction, and proposals for practical cooperation. The reading guide helps you start with the questions that matter to you.</p>
 
     <div class="ea-parts-grid">
       <div class="ea-part-card">
         <span class="ea-part-num">Part I</span>
         <h3 class="ea-part-title">What Is the Singularity?</h3>
         <p class="ea-part-desc">
-          The case that the 2017 Transformer architecture already crossed the event horizon: parallel self-attention let models start processing their own architecture, which is what makes unassisted recursive self-improvement possible. This part lays out the 9-stage map of the intelligence explosion, from the first cash grab to a machine that outgrows the planet, and the physical limits that even a superintelligence can't skip: energy, compute, thermodynamics.
+          What recent AI can do, what researchers forecast, and where the evidence stops. The author's nine-stage framework explores increasingly speculative futures alongside the physical limits of energy, computing, and materials. It is a scenario to examine, not a demonstrated path from today's models to superintelligence.
         </p>
       </div>
       <div class="ea-part-card">
         <span class="ea-part-num">Part II</span>
         <h3 class="ea-part-title">How Humans React</h3>
         <p class="ea-part-desc">
-          The hard part was never the machine. It's us. This part breaks down the predictable arc of the human response: the panic, the power grabs, the backlash. Then it maps the deliberate shift it takes to get past fear-based hierarchy into the kind of open, collective problem-solving that actually survives a transition like this.
+          What do we owe each other when technology changes how people earn a living? Historical cases and fictional scenes explore fear, power, resistance, and cooperation. The book asks which lessons travel to the present, where the comparisons break down, and what people can do together.
         </p>
       </div>
       <div class="ea-part-card">
         <span class="ea-part-num">Part III</span>
         <h3 class="ea-part-title">How to Survive the Transition</h3>
         <p class="ea-part-desc">
-          The actionable core. Why dependence on global supply chains is a structural liability waiting to fail. The Shouse Grid: semi-independent local microgrids and air-gapped compute. The Local Biological Hub: closing the loop on food, shelter, and medicine at the neighborhood level. The Adequate Level of Care (ALC): a real replacement for GDP that measures whether your community can actually take care of its people if the global grid goes down.
+          Start with food, useful skills, household needs, and willing neighbors. Explore proposed food trials, shared tools, local energy, and the agreements needed to keep them working. The author's Adequate Level of Care asks who actually receives food, shelter, and care. These are proposals to test with real costs, qualified help, and backup plans, not a proven self-sufficient system.
         </p>
       </div>
     </div>
 
     <blockquote class="ea-pull-quote">
-      "2027 is the tipping point: the year the loop closes on unassisted recursive self-improvement. Once that starts, there's no pausing it, and there's no going back to the way things were."
+      "This is my forecast, not a mathematical deadline. I could be wrong about the date, the capability, or both."
+      <footer>Christopher Tavolazzi, Chapter 1, on his November 2027 forecast.</footer>
     </blockquote>
   </div>
 </section>
@@ -258,62 +299,57 @@
 <section class="ea-includes">
   <div class="ea-includes-inner">
     <p class="ea-label">What your preorder includes</p>
-    <h2 class="ea-includes-heading">Everything you get for $5.</h2>
+    <h2 class="ea-includes-heading">Everything you get for {offer.price}.</h2>
 
+    <!-- Derived from $lib/offer.js. Do not type offer prose into this file:
+         every item here, and the excluded one below it, moves when the offer
+         object moves. -->
     <div class="ea-items">
+      {#each offer.included as item}
+        <div class="ea-item">
+          <div class="ea-item-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+            </svg>
+          </div>
+          <div class="ea-item-body">
+            <div class="ea-item-name">{item.title}</div>
+            <div class="ea-item-desc">{item.detail}</div>
+            {#if item.available}
+              <span class="ea-tag ea-tag-live">Yours immediately</span>
+            {:else}
+              <span class="ea-tag ea-tag-draft">Future commitment</span>
+            {/if}
+          </div>
+        </div>
+      {/each}
+    </div>
 
-      <div class="ea-item">
-        <div class="ea-item-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-          </svg>
+    <!-- Rendered at the same size and weight as the included items, on purpose.
+         Saying what five dollars does not buy is worth more than any adjective
+         in the list above it. -->
+    <div class="ea-items ea-items-excluded">
+      {#each offer.excluded as item}
+        <div class="ea-item">
+          <div class="ea-item-icon ea-item-icon-out">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="ea-item-body">
+            <div class="ea-item-name">{item.title}</div>
+            <div class="ea-item-desc">{item.detail}</div>
+          </div>
         </div>
-        <div class="ea-item-body">
-          <div class="ea-item-name">Readiness Checklist</div>
-          <div class="ea-item-desc">7 concrete steps. Cost estimate per step. Ordered by impact. Starts where you are right now.</div>
-          <span class="ea-tag ea-tag-live">Live now</span>
-        </div>
-      </div>
+      {/each}
+    </div>
 
-      <div class="ea-item">
-        <div class="ea-item-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
-          </svg>
-        </div>
-        <div class="ea-item-body">
-          <div class="ea-item-name">Current Book Draft</div>
-          <div class="ea-item-desc">Read the book as it is being written. Local AI, physical automation, food security, energy, digital leverage. Deep and specific. The final version will be different.</div>
-          <span class="ea-tag ea-tag-live">Live now</span>
-        </div>
-      </div>
-
-      <div class="ea-item">
-        <div class="ea-item-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/>
-          </svg>
-        </div>
-        <div class="ea-item-body">
-          <div class="ea-item-name">Spot in Line</div>
-          <div class="ea-item-desc">Preorder today and get 50% off the finished book at launch. When it's ready, I'll email you an exclusive link at your discounted price.</div>
-          <span class="ea-tag ea-tag-draft">In progress</span>
-        </div>
-      </div>
-
-      <div class="ea-item">
-        <div class="ea-item-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-        </div>
-        <div class="ea-item-body">
-          <div class="ea-item-name">The Precedent File</div>
-          <div class="ea-item-desc">29 documented cases of people meeting a machine that changed everything, with every source so you can check the work. Plus the complete current book in PDF and EPUB, the Municipal Autonomy Code, and the cover art. Delivered to your inbox the moment payment clears.</div>
-          <span class="ea-tag ea-tag-live">Included</span>
-        </div>
-      </div>
-
+    <!-- "You keep getting it" is an unbounded obligation unless it is bounded
+         here, on the page, rather than buried in terms. -->
+    <div class="ea-scope">
+      <p class="ea-scope-title">What "you keep getting it" means, exactly</p>
+      <p class="ea-scope-body">{offer.foreverScope}</p>
+      <p class="ea-scope-body">{offer.windowClose}</p>
     </div>
   </div>
 </section>
@@ -324,16 +360,16 @@
     <div class="ea-author-photo-wrap">
       <picture>
         <source srcset="/images/optimized/author_headshot_400.webp" type="image/webp" />
-        <img src="/author-headshot.png" alt="Author photo" class="ea-author-photo" width="120" height="120" loading="lazy" decoding="async" />
+        <img src="/author-headshot.png" alt="Christopher Tavolazzi" class="ea-author-photo" width="120" height="120" loading="lazy" decoding="async" />
       </picture>
     </div>
     <div class="ea-author-copy">
       <p class="ea-label">Who's building this</p>
       <p class="ea-author-name"><a href="https://www.linkedin.com/in/christopher-tavolazzi/" target="_blank" rel="noopener noreferrer" class="ea-author-link">Christopher Tavolazzi</a></p>
       <p class="ea-author-text">
-        $5 gets you everything I've made so far and early access to everything I make next.<br><br>
-        I'll hold onto your email and send you updates only when it's relevant. No spam, no daily marketing emails, no BS.<br><br>
-        Just clear, actionable intelligence you can use to upgrade your life.
+        {offer.sentence}<br><br>
+        Your purchase email is used for your receipt, access links, and updates to what you bought. Optional Signal Dispatches are a separate choice on the checklist.<br><br>
+        Read the <a href="/sample" class="ea-author-link">free sample and reading guide</a> before deciding.
       </p>
     </div>
   </div>
@@ -347,10 +383,51 @@
       Early access pricing
     </p>
     <h2 class="ea-bottom-heading">Preorder now.<br>Don't wait.</h2>
-    <p class="ea-bottom-sub">$5 today. The Precedent File in your inbox now. When the book launches, I'll email you an exclusive link at 50% off.</p>
-    <button class="ea-bottom-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
-      {checkoutLoading ? 'Redirecting...' : 'Preorder Now: $5'}
+    <p class="ea-bottom-sub">{offer.sentence}</p>
+
+    <!-- This CTA carries its own email field on purpose.
+         Before 2026-07-29 it did not, and its button bound `disabled` to
+         `checkoutLoading` alone while the hero button also required `emailOk`.
+         A customer who scrolled straight here clicked a button that looked
+         enabled, did nothing, and set an error paragraph that rendered 4052px
+         away in a 720px viewport, which is to say invisibly. Measured, not
+         inferred.
+         Both inputs synchronize the same `email`, so typing in either fills both, and
+         the error renders next to whichever button produced it. -->
+    <label class="ea-bottom-label" for="ea-email-bottom">Where should we send it?</label>
+    <input
+      id="ea-email-bottom"
+      class="ea-email-input ea-bottom-input"
+      type="email"
+      name="email"
+      inputmode="email"
+      autocomplete="email"
+      placeholder="you@example.com"
+      bind:this={bottomEmailInput}
+      on:input={(event) => syncEmail(event.currentTarget.value)}
+      on:change={(event) => syncEmail(event.currentTarget.value)}
+      on:keydown={(e) => e.key === 'Enter' && checkout(e.currentTarget)}
+      disabled={checkoutLoading}
+    />
+
+    <button
+      class="ea-bottom-btn"
+      class:is-loading={checkoutLoading}
+      on:click={() => checkout(bottomEmailInput)}
+      type="button"
+      disabled={checkoutLoading || !emailOk}
+    >
+      {checkoutLoading ? 'Redirecting...' : `Preorder Now: ${offer.price}`}
     </button>
+
+    {#if checkoutError}
+      <p class="ea-checkout-error ea-bottom-error">{checkoutError}</p>
+    {/if}
+
+    {#if ownedMessage}
+      <p class="ea-owned-note ea-bottom-error">{ownedMessage}</p>
+    {/if}
+
     <p class="ea-bottom-fine">Secured by Stripe. <a href="/policies">Privacy</a>.</p>
   </div>
 </section>
@@ -367,7 +444,7 @@
     --border-mid: rgba(255,255,255,0.09);
     --text-1: #f8fafc;
     --text-2: #cbd5e1;
-    --text-3: #64748b;
+    --text-3: #94a3b8;
     --green: #10b981;
     --r-card: 20px;
     --r-pill: 999px;
@@ -387,7 +464,7 @@
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: clamp(32px, 5vw, 64px);
-    align-items: center;
+    align-items: start;
   }
   @media (max-width: 768px) {
     .ea-hero-inner { grid-template-columns: 1fr; }
@@ -476,6 +553,34 @@
     position: absolute; left: 0;
     color: var(--amber); font-size: 1rem; line-height: 1.4;
   }
+  /* The .ea-price-* group carried no style rules at all before 2026-07-29, so
+     the price rendered at browser defaults. Adding the version line made that
+     visible, because two sibling spans with no rule between them collapse into
+     one run of text. Minimal styling only: this is the price, not a redesign. */
+  .ea-price-row {
+    display: flex; align-items: baseline; gap: 12px;
+    margin-bottom: 18px;
+  }
+  .ea-price-amount {
+    font-size: 3rem; font-weight: 900; line-height: 1;
+    color: var(--text-1); letter-spacing: -0.03em;
+  }
+  .ea-price-amount sup {
+    font-size: 0.45em; font-weight: 800; top: -0.5em;
+    margin-right: 1px; color: var(--text-2);
+  }
+  .ea-price-meta-col {
+    display: flex; flex-direction: column; gap: 3px; min-width: 0;
+  }
+  .ea-price-type {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber);
+  }
+  .ea-price-version {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.68rem;
+    color: var(--text-3); letter-spacing: 0.02em;
+  }
+
   .ea-email-label {
     display: block; font-size: 0.78rem; color: var(--text-3);
     margin-bottom: 6px; letter-spacing: 0.02em;
@@ -606,6 +711,8 @@
   }
   .ea-img-cell:hover img { transform: scale(1.04); }
   .ea-img-cap {
+    max-width: calc(100% - 24px);
+    overflow-wrap: anywhere;
     position: absolute; bottom: 10px; left: 12px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68rem; font-weight: 700;
@@ -697,6 +804,17 @@
   @media (max-width: 640px) {
     .ea-items { grid-template-columns: 1fr; }
   }
+  /* The included list is an odd length, so its last card would otherwise sit
+     alone in a half-width cell with dead space beside it. That last item is the
+     grandfathering clause, which is the most valuable thing in the offer, so
+     letting it span reads as the closer rather than as a leftover. Generic
+     rather than nth-child(7): the rule survives adding an eighth item. */
+  .ea-items > .ea-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+  @media (max-width: 640px) {
+    .ea-items > .ea-item:last-child:nth-child(odd) { grid-column: auto; }
+  }
   .ea-item {
     display: flex; gap: 16px; align-items: flex-start;
     background: var(--surface);
@@ -734,6 +852,40 @@
   .ea-tag-live { background: rgba(16,185,129,0.12); color: var(--green); }
   .ea-tag-draft { background: var(--amber-dim); color: var(--amber); }
   .ea-tag-soon { background: rgba(148,163,184,0.08); color: var(--text-3); }
+
+  /* The excluded item gets a full-width row rather than a half-width card, so
+     it reads as a statement rather than as one more thing in a grid of things
+     you get. Same surface, same padding, same type sizes as the included items:
+     the point is that it is not visually demoted. */
+  .ea-items-excluded {
+    grid-template-columns: 1fr;
+    margin-top: 12px;
+  }
+  .ea-item-icon-out {
+    background: rgba(148,163,184,0.08);
+    border-color: rgba(148,163,184,0.2);
+    color: var(--text-3);
+  }
+
+  .ea-scope {
+    margin-top: clamp(28px, 4vw, 40px);
+    padding: clamp(20px, 3vw, 28px);
+    background: rgba(2,6,23,0.5);
+    border: 1px solid var(--border-mid);
+    border-radius: var(--r-card);
+  }
+  .ea-scope-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--amber);
+    margin: 0 0 12px;
+  }
+  .ea-scope-body {
+    font-size: 0.88rem; color: var(--text-2);
+    line-height: 1.75; margin: 0 0 12px;
+  }
+  .ea-scope-body:last-child { margin-bottom: 0; }
 
   /* ── AUTHOR ── */
   .ea-author {
@@ -793,6 +945,27 @@
   .ea-bottom-sub {
     font-size: 1.05rem; color: var(--text-3); margin-bottom: 36px; line-height: 1.6;
   }
+
+  /* The bottom CTA's own email field. Capped and centred so it reads as part of
+     one control group with the button under it rather than as a stray full-bleed
+     input. Both fields bind the same `email`. */
+  .ea-bottom-label {
+    display: block; font-size: 0.78rem; color: var(--text-3);
+    margin-bottom: 6px; letter-spacing: 0.02em;
+  }
+  .ea-bottom-input {
+    max-width: 380px;
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+  }
+  /* Kept next to the button that produced it. This paragraph used to live in
+     the hero card only, which put it 4052px from the button a customer had
+     just clicked. */
+  .ea-bottom-error {
+    max-width: 420px;
+    margin-left: auto; margin-right: auto;
+    text-align: left;
+  }
   .ea-bottom-btn {
     display: inline-flex; align-items: center; gap: 10px;
     padding: 17px 36px;
@@ -806,7 +979,11 @@
   }
   .ea-bottom-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-2px); }
   .ea-bottom-btn:active:not(:disabled) { transform: scale(0.98); }
-  .ea-bottom-btn:disabled { opacity: 0.7; cursor: wait; }
+  /* Two disabled states, as on the hero button. `cursor: wait` while the button
+     is merely waiting on the customer to type would claim something is
+     happening when nothing is. */
+  .ea-bottom-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; box-shadow: none; }
+  .ea-bottom-btn:disabled.is-loading { opacity: 0.7; cursor: wait; }
   .ea-bottom-fine {
     font-size: 0.8rem; color: var(--text-3);
   }

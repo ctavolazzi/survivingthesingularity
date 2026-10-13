@@ -1,0 +1,23 @@
+this time the spec is: parts from the drawer, parts from the junction
+box  aisle,  and  nothing  your  neighbor  canʼt  fix  with  the  tools  he
+already owns.”
+“Thatʼll be uglier,” Elijah said.
+“Itʼll be ours,” Marta said. “Ugly is a maintenance feature. Ugly means
+the next guy can see how it works.”
+So  he  designed  it  again,  and  the  second  version  was  simpler  to
+explain and repair: a Raspberry Pi the regional supplier had in stock,
+screw terminals instead of poetry, four-dollar capacitive probes you
+could swap by hand, a case Dennyʼs kid printed forty of in PETG the
+color of school buses, and documented parts the growers could order
+from  more  than  one  source.  The  firmware  did  less  and  survived
+more. Every unit had a laminated one-page repair card zip-tied inside
+the lid, because Martaʼs rule was that documentation you have to go
+find is documentation that doesnʼt exist.
+The controller. Field-repairable. Screw terminals instead of poetry.
+The build itself took the shed three weekends, and it was during the
+second one, everyone deburring enclosures and crimping ferrules in
+an assembly line that Sal himself would have recognized from 1985,
+that the door opened and let in a rectangle of cold light and a lean
+man in a good coat who was too pleased with himself for a Saturday.
+SURVIVING THE SINGULARITY
+160

@@ -1,10 +1,6 @@
 <script>
-  import { fade } from 'svelte/transition';
-  import { onMount } from 'svelte';
   import AuthorBio from '$lib/components/AuthorBio.svelte';
-
-  let visible = false;
-  onMount(() => { visible = true; });
+  import { offerBlurb } from '$lib/offer';
 </script>
 
 <svelte:head>
@@ -32,8 +28,7 @@
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/about.png" />
 </svelte:head>
 
-{#if visible}
-  <div class="about-page" in:fade={{ duration: 400 }}>
+  <div class="about-page">
     <header class="about-header">
       <p class="about-label">About</p>
       <h1 class="about-title">I'm writing this in real time.</h1>
@@ -47,13 +42,13 @@
     <section class="about-section">
       <h2>Why this exists</h2>
       <p>
-        The 2017 Transformer architecture crossed an event horizon most people missed. Intelligence now has a marginal cost near zero. The gap between people who understand that and people who don't is widening every day.
+        AI is changing what people can automate and who controls the tools. I want to understand how those changes could help make food, useful work, and ordinary life more secure. That takes more than a technology forecast: it takes people deciding what to build and how to share it.
       </p>
       <p>
         I started writing this to work it out for myself.
       </p>
       <p>
-        It became something I could share with others, to find like-minded people. Now it's grown into a book you can use to help plan your future before it's too late.
+        It became a book that combines historical cases, speculative stories, and proposals for practical cooperation. Predictions in it are arguments to examine, not guarantees; the useful work should still matter if my timeline is wrong.
       </p>
     </section>
 
@@ -71,7 +66,7 @@
         <div class="provide-item">
           <h3>The Book</h3>
           <p>Three parts: what the singularity is, how people react, and what you can do. Updated as it's written.</p>
-          <a href="/book" class="provide-link">Read the book</a>
+          <a href="/sample" class="provide-link">Read a free sample and reading guide</a>
         </div>
         <div class="provide-item">
           <h3>The Checklist</h3>
@@ -80,7 +75,7 @@
         </div>
         <div class="provide-item">
           <h3>Early Access</h3>
-          <p>$5 gets you the full draft, The Precedent File, and 50% off the finished book when it ships.</p>
+          <p>{offerBlurb()}</p>
           <a href="/early-access" class="provide-link">Get early access</a>
         </div>
         <div class="provide-item">
@@ -93,9 +88,9 @@
 
     <section class="about-section about-cta">
       <h2>Start here</h2>
-      <p>Read the book as it's being written. Or start free with the checklist.</p>
+      <p>Read the introduction and choose a route through the book without signing up. The full online draft uses the access password delivered with a purchase. Or start free with the checklist.</p>
       <div class="about-actions">
-        <a href="/book" class="btn-primary">Read the Book</a>
+        <a href="/sample" class="btn-primary">Read a Free Sample</a>
         <a href="/checklist" class="btn-secondary">Start the Checklist</a>
       </div>
     </section>
@@ -106,13 +101,20 @@
       </p>
     </section>
   </div>
-{/if}
 
 <style>
+  /* Fades in over 400ms with CSS, not `{#if visible}` + in:fade. The gate kept
+     this whole page out of the served HTML until JavaScript ran. See the note in
+     src/routes/blog/+page.svelte. */
   .about-page {
     max-width: 760px;
     margin: 0 auto;
     padding: 2rem 1rem 3rem;
+    animation: page-fade 400ms linear;
+  }
+
+  @keyframes page-fade {
+    from { opacity: 0; }
   }
 
   @media (min-width: 640px) {

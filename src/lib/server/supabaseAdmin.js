@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import { env } from '$env/dynamic/private';
+import { supabaseConfigured } from '$lib/server/supabaseEnv.js';
 
 // Server-only privileged client. Uses the SECRET key, which bypasses RLS - so
 // this file must never be imported into client code. ($lib/server is enforced
@@ -8,10 +9,14 @@ import { env } from '$env/dynamic/private';
 const url = env.SUPABASE_URL;
 const key = env.SUPABASE_SERVICE_KEY;
 
-export const supabaseAdmin =
-  url && key && !key.startsWith('placeholder')
-    ? createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } })
-    : null;
+// The guard used to be `url && key && !key.startsWith('placeholder')`, which
+// let a malformed URL through to createClient(), which throws at module scope -
+// taking down every route that imports this, including ones with no database
+// access at all. Verified: an unedited .env.example URL 500'd the homepage.
+// $lib/server/supabaseEnv.js carries the reasoning and the measurement.
+export const supabaseAdmin = supabaseConfigured(url, key, 'supabaseAdmin')
+  ? createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } })
+  : null;
 
 // Tiny in-memory cache so we don't hit the DB on every page render.
 let cache = { value: null, at: 0 };

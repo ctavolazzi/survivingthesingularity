@@ -1,0 +1,59 @@
+                                                                    CHAPTER 11
+
+
+   MOVETHEHEATOUTSIDE
+
+
+   Conceptualloop;notacomponentspecification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      COOLRETURNTOTHECHIPS
+
+
+   Heatrate=massflow×Cp×ΔT
+   W=(kg/s)×[J/(kg·°C)]×°C
+   Matchmaterials,coolant,pumpandradiator.
+   Illustrativeloop;verifyloadandheatremoval.
+
+
+
+
+Move heat out through a compatible, verified coolant loop. Heat rate uses mass flow in
+kilograms per second: Qࠓ  = ṁ Cp ΔT. This diagram specifies neither components nor cooling
+capacity.
+
+
+
+
+
+
+
+
+
+                                                                          207

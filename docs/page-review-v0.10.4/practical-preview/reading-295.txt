@@ -1,0 +1,51 @@
+SURVIVING THE SINGULARITY
+
+
+ ANINDEPENDENTMESHNODE
+
+ Thepowerpathandradiolink.
+ Acomponentmap,notassemblyinstructions.
+
+
+
+
+
+
+
+
+
+
+
+                        Matchedcharger*
+
+                                               TONEXT
+                                               NODE
+
+
+
+
+
+
+
+
+
+
+
+
+
+ *Illustrativehardware.Useprotectedcells
+ andachargermatchedtothebatterypack.
+ Match915/868MHzhardware,firmware
+ andregionalsettingstolocalradiorules.
+ Reachdependsonterrainandlineofsight.
+ Solarruntimedependsonweatherandload.
+
+
+A mesh node. Sunlight in, short encrypted messages out.
+
+
+
+
+
+
+290

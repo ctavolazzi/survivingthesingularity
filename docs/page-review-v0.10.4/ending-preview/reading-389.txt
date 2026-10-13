@@ -1,0 +1,29 @@
+Tier 0 ends with a test: can you open the reference and find what you need with the network off?
+Record the source and date so you know which copy you have.
+Tier 1, the Communicator. A supported Meshtastic board, flashed with
+the firmware for that hardware, configured for your region, and paired to
+your phone. Budget for the antenna, battery, and enclosure as well as the
+board. Test a short message with a second compatible node before count-
+ing on a route. Terrain, placement, power, and settings decide whether
+the link works. Default channel keys are public; use a randomly gener-
+ated shared key for a private group and decide whether location sharing
+belongs on. Meshtastic, channel configuration
+Tier 2, the Librarian. A supported computer, a screen, suitable protected
+power, and Kiwix loaded with the libraries youʼd actually reach for. Check
+file size and edition before downloading, as Chapter 16 explains. Open
+the archive with the network off and find a specific answer. Add a small
+local model only if the hardware supports it; keep its generated answers
+distinct from the reference text.
+PROVEYOUROFFLINECOPYWORKS
+Offline
+1 Saveonereference.
+Chooseoneyoumaycopy.
+2 Recordsource+date.
+Knowwhicheditionitis.
+3 Turnthenetworkoff.
+Testthelocalcopy.
+4 Openit.Findananswer.
+Checkyoucanretrieveit.
+Startwiththedeviceyoualreadyhave.
+SURVIVING THE SINGULARITY
+384

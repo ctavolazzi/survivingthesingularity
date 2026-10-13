@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-28",
+  "agent": "codex",
+  "scope": "Opening ten manifest sections only",
+  "baseline": "/Users/ctavolazzi/Code/active/sts-v0.10.1",
+  "working_copy": "/Users/ctavolazzi/Code/active/sts-v0.10.2",
+  "instructions_read": [
+    "/Users/ctavolazzi/Code/AGENTS.md",
+    "CLAUDE.md",
+    "README.md: Book content single-source rules",
+    "src/lib/data/book/VOICE-GUIDE.md",
+    "src/lib/data/book/ELIJAH-PROTOCOL.md"
+  ],
+  "method": "Complete prose reread with targeted primary/official-source checks, continuity review, caption and cross-reference review, and bounded canonical edits. Not a fresh recertification of every inherited quotation or datum.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Stanford HAI, AI Index 2025, chapter 1",
+      "url": "https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf",
+      "details_and_limits": "Institutional report, PDF text inspected. Historical query-price series uses a fixed MMLU threshold; it does not measure all-task equivalence or electricity per task.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S02",
+      "title": "Gromis et al., Estimating eviction prevalence across the United States",
+      "url": "https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/",
+      "details_and_limits": "Research abstract on the author institution's site, inspected. Publisher site required cookies. Annual average concerns 2000-2018, not a current-year total.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S03",
+      "title": "Vaswani et al., Attention Is All You Need, Table 2",
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "details_and_limits": "Original paper, full HTML inspected. The table gives 26.36 BLEU; cost advantages depend on the comparison.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S04",
+      "title": "Grace et al., Thousands of AI Authors on the Future of AI, revision 3",
+      "url": "https://arxiv.org/html/2401.02843v3",
+      "details_and_limits": "Original survey paper, full HTML inspected. Forecast values match; population expands between years.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S05",
+      "title": "Highways and Locomotives (Amendment) Act 1878, section 29",
+      "url": "https://www.legislation.gov.uk/ukpga/Vict/41-42/77/pdfs/ukpga_18780077_en.pdf",
+      "details_and_limits": "Original statute, official indexed extract inspected. England amendment removes flag but retains walker.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S06",
+      "title": "Locomotives on Highways Act 1896, sections 1 and 4",
+      "url": "https://www.legislation.gov.uk/ukpga/Vict/59-60/36/pdfs/ukpga_18960036_en.pdf",
+      "details_and_limits": "Original statute, PDF text inspected. Exemption and speed ceiling concern a defined light-locomotive class.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S07",
+      "title": "Jumper et al., Highly accurate protein structure prediction with AlphaFold",
+      "url": "https://www.nature.com/articles/s41586-021-03819-2",
+      "details_and_limits": "Original research, article HTML inspected. Structure prediction is a research capability.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S08",
+      "title": "Stokes et al., A Deep Learning Approach to Antibiotic Discovery",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32084340/",
+      "details_and_limits": "Original research abstract inspected. The manuscript PMC URL presented CAPTCHA. Experimental outcomes do not establish treatment availability.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S09",
+      "title": "NASA, Hubble Views the Star that Changed the Universe",
+      "url": "https://science.nasa.gov/missions/hubble/hubble-views-the-star-that-changed-the-universe/",
+      "details_and_limits": "Official historical account inspected through indexed text. Supports Andromeda beyond the Milky Way.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S10",
+      "title": "Raspberry Pi, Maximum power output",
+      "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#maximum-power-output",
+      "details_and_limits": "Manufacturer documentation inspected. Board, peripheral, and peak-workload budgets differ; supply ratings are not consumption measurements.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S11",
+      "title": "E Ink, Benefits: Bi-Stability",
+      "url": "https://www.eink.com/tech/detail/Benefits",
+      "details_and_limits": "Manufacturer documentation inspected through indexed text. Static retention differs from refresh; neither defines a host computer's budget.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S12",
+      "title": "IEA, Key Questions on Energy and AI, executive summary",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "details_and_limits": "Official report inspected. Existing 485 TWh estimate and 950 TWh projection agree and cover all data centres.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S13",
+      "title": "Anthropic, Redeploying Claude Fable 5",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "details_and_limits": "Company announcement inspected. It reports release arrangements and collaboration, not independent evidence of policy motives.",
+      "review_date": "2026-09-28"
+    },
+    {
+      "id": "S14",
+      "title": "Dreyer, translated primary accounts of Zheng He",
+      "url": "https://edspace.american.edu/justinjacobs/wp-content/uploads/sites/986/2022/12/31-Historical-Accounts-of-Zheng-He.pdf",
+      "details_and_limits": "Existing PDF opened; web text extraction returned no lines. No fresh transcription or independent fleet ranking claimed.",
+      "review_date": "2026-09-28"
+    }
+  ],
+  "sections": [
+    {
+      "file": "src/lib/data/book/02-introduction.md",
+      "title": "Introduction",
+      "status": "changed",
+      "reviewed_in_full": true,
+      "findings": [
+        {
+          "id": "O01",
+          "action": "Bound the 280-fold query-price claim to the MMLU benchmark and November 2022 to October 2024. A performance threshold is not universal equivalence. Source S01.",
+          "sources": [
+            "S01"
+          ]
+        },
+        {
+          "id": "O02",
+          "action": "A machine doing most jobs is now posed as an imagined capability, rather than an unsupported current fact.",
+          "sources": []
+        },
+        {
+          "id": "O03",
+          "action": "Restore 2000-2018 as the eviction estimate's observation window and cite the author institution's research record. Source S02.",
+          "sources": [
+            "S02"
+          ]
+        },
+        {
+          "id": "O04",
+          "action": "Name the fictional companies and model while preserving the real status of named research and technologies. An imagined event is not evidence for the nonfiction argument.",
+          "sources": []
+        }
+      ],
+      "review_text": "Introduction\n\nFile: `src/lib/data/book/02-introduction.md`. Status: changed. Register: Argument.\n\nRead every paragraph, caption, briefing bullet, and Ledger introduction. Preserved food-first provision, optional money, Thanksgiving forecast, direct address, and purposeful repetition. The food-insecurity chart already identifies its historical observation window; no plot or image changed.\n\n- O01: Bound the 280-fold query-price claim to the MMLU benchmark and November 2022 to October 2024. A performance threshold is not universal equivalence. Source S01.\n- O02: A machine doing most jobs is now posed as an imagined capability, rather than an unsupported current fact.\n- O03: Restore 2000-2018 as the eviction estimate's observation window and cite the author institution's research record. Source S02.\n- O04: Name the fictional companies and model while preserving the real status of named research and technologies. An imagined event is not evidence for the nonfiction argument.",
+      "before_sha256": "4ce354cfc3f37828ef3f03a5e0c793da69d74f9613e446972ee5625f1f12107b",
+      "after_sha256": "6be6770b6b1334aeb3cdce5c68dd31092a695cd6c3a38f20ad7d397ceb903776",
+      "unified_diff": "--- v0.10.1/src/lib/data/book/02-introduction.md\n+++ v0.10.2/src/lib/data/book/02-introduction.md\n@@ -22,7 +22,7 @@\n \n For years I wanted someone with credentials to say it first. Not because I was unsure of my own math, but because as long as the industry dismissed AGI as fringe, sci-fi nonsense, nobody would listen to a guy like me saying it out loud. What I'm talking about is a system that can understand its own architecture and help engineer the next version of itself. Not a smarter search box. A tool that can invent new tools.\n \n-Every revolution before this one changed what our hands and backs could do: the plow, the press, the engine, the airplane. This one is intellectual. We have automated thought itself, and it doesn't need a giant server farm anymore. Useful models run on consumer hardware in people's homes. The cost of running a system as capable as 2022's GPT-3.5 fell more than 280-fold in under two years, driven by smaller models. [Stanford HAI, 2025 AI Index Report](https://hai.stanford.edu/ai-index/2025-ai-index-report)\n+Every revolution before this one changed what our hands and backs could do: the plow, the press, the engine, the airplane. This one is intellectual. We have automated thought itself, and it doesn't need a giant server farm anymore. Useful models run on consumer hardware in people's homes. Between November 2022 and October 2024, the price of querying a model that matched GPT-3.5 on MMLU, a language-model benchmark, fell more than 280-fold. That's a price comparison at one measured performance level, not proof that every task got equally cheap. [Stanford HAI, 2025 AI Index Report, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf)\n \n The loudest voices in the room are working from a headline and a Reddit thread they skimmed once. That's noise, and noise is cheap. I'm not asking you to trust me over them. I'm asking you to go around all of us. Stop listening to the guys in lab coats who have a vested interest in keeping you afraid, and stop listening to me while you're at it. Get your goddamn hands on it. Use it yourself. Then you'll know.\n \n@@ -46,7 +46,7 @@\n \n *An early way to hand over some of the heavy work. Training, guidance, and care still belonged to people.*\n \n-Which is why \"it's all over\" and \"we're so back\" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Tell someone the machine can do most jobs now and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But the markets will still be here. What can end is the part where you *have* to sell your day to be allowed to eat. That can become optional. Not abolished. Optional. And optional is the whole ballgame.\n+Which is why \"it's all over\" and \"we're so back\" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Ask someone to imagine a machine that can do most jobs and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But the markets will still be here. What can end is the part where you *have* to sell your day to be allowed to eat. That can become optional. Not abolished. Optional. And optional is the whole ballgame.\n \n ## What if it all goes right?\n \n@@ -86,7 +86,7 @@\n \n So why should food be denied to hungry people because it doesn't sell?\n \n-Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Landlords in the United States file about 3.6 million eviction cases a year. [NLIHC, reporting Gromis et al. in PNAS](https://nlihc.org/resource/new-research-finds-27-million-households-receive-eviction-filings-annually) When a family loses one, California's own courts spell out what comes next: \"The sheriff gives you a Notice to Vacate,\" five days to move, and \"if you don't move out, the sheriff can lock you out of your home.\" [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.\n+Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Between 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: \"The sheriff gives you a Notice to Vacate,\" five days to move, and \"if you don't move out, the sheriff can lock you out of your home.\" [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.\n \n Meanwhile the money piles up at the top. In 2017, Oxfam found that eight men owned as much wealth as the poorest half of the world. [Oxfam, An Economy for the 99%](https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/file_attachments/bp-economy-for-99-percent-160117-summ-en.pdf) By January 2026, billionaire wealth had grown 81 percent since 2020, to $18.3 trillion, and billionaires were 4,000 times more likely than ordinary people to hold political office, while one in four people on Earth didn't regularly have enough to eat. [Oxfam, Resisting the Rule of the Rich (2026)](https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking) The people at the top of that pile have every reason to keep the rules exactly as they are.\n \n@@ -162,7 +162,7 @@\n \n ## The book you're holding\n \n-Elijah Madrone and the co-op are fiction. Their story follows a man who wants machines to make his friends more capable, helps set off something with very different consequences, and has to learn what responsibility looks like after the demonstration. His teachers are people who know things he doesn't. He gets better when he starts listening. The companies, machines, and dates in his story are invented; the arguments that follow each scene make their own claims, with sources where evidence is needed.\n+Elijah Madrone and the co-op are fiction. Their story follows a man who wants machines to make his friends more capable, helps set off something with very different consequences, and has to learn what responsibility looks like after the demonstration. His teachers are people who know things he doesn't. He gets better when he starts listening. Claypot, PorusAI, Silvana, and Chat Horizon are invented. The story also names real research and technologies; its imagined events aren't evidence for the arguments that follow each scene. Those arguments make their own claims, with sources where evidence is needed.\n \n Part I opens the horizon: the nine stages, getting stranger and more speculative as they climb toward the cosmic. Part II asks what we owe each other through the change. Part III brings it down to meals, land, shelter, tools, agreements, and mistakes, and ends with the plan: Chapter 19, the ladder from here to a world where money is optional.\n \n"
+    },
+    {
+      "file": "src/lib/data/book/01-preface.md",
+      "title": "Preface",
+      "status": "reviewed_no_change",
+      "reviewed_in_full": true,
+      "findings": [],
+      "review_text": "Preface\n\nFile: `src/lib/data/book/01-preface.md`. Status: reviewed_no_change. Register: Argument.\n\nRead in full. The horse/hay story is an explicitly imagined analogy. Food-first priorities agree with the Introduction. P-01 differentiates documented concerns from a uniform medical consensus and uses Austen to distinguish access from sound inference. The prose already does the editorial work it needs to do. Existing historical quotations were not independently recertified in this pass.",
+      "before_sha256": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+      "after_sha256": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+      "unified_diff": ""
+    },
+    {
+      "file": "src/lib/data/book/31-how-to-use.md",
+      "title": "How to Use This Book",
+      "status": "reviewed_no_change",
+      "reviewed_in_full": true,
+      "findings": [],
+      "review_text": "How to Use This Book\n\nFile: `src/lib/data/book/31-how-to-use.md`. Status: reviewed_no_change. Register: navigation.\n\nRead in full. The three routes are short and legible. Destinations correspond to the relevant chapter and appendix subjects, and no fixed page number becomes stale on rebuild. Retained the reader categories and destinations rather than inventing a new reading order.",
+      "before_sha256": "44f2796cd8f8c92d8a4543e8c0b917cc4e3b3bb02839a7a5beaff7474fcf0615",
+      "after_sha256": "44f2796cd8f8c92d8a4543e8c0b917cc4e3b3bb02839a7a5beaff7474fcf0615",
+      "unified_diff": ""
+    },
+    {
+      "file": "src/lib/data/book/00-chapter0.md",
+      "title": "Chapter 0",
+      "status": "reviewed_no_change",
+      "reviewed_in_full": true,
+      "findings": [],
+      "review_text": "Chapter 0\n\nFile: `src/lib/data/book/00-chapter0.md`. Status: reviewed_no_change. Register: Narrative.\n\nRead in full, including P-02. Farm/music/delivery/data background, junior tenure, invented companies, three lost jobs, napkin, grandmother, notebook, toast, and manuscript loop remain coherent with the continuity bible. Early global conclusions remain Elijah's frightened experience, not measured evidence of real-world layoffs. P-02 already distinguishes Bell's observations from audience reactions reported to him. Kept retrospective narrative intrusions and the closing bookend.",
+      "before_sha256": "2eb03ed12dfe8e54383ce93fc68be69d24016a8d9c4f4b2ec2e332838d5449a5",
+      "after_sha256": "2eb03ed12dfe8e54383ce93fc68be69d24016a8d9c4f4b2ec2e332838d5449a5",
+      "unified_diff": ""
+    },
+    {
+      "file": "src/lib/data/book/part1-divider.md",
+      "title": "Part I divider",
+      "status": "reviewed_no_change",
+      "reviewed_in_full": true,
+      "findings": [],
+      "review_text": "Part I divider\n\nFile: `src/lib/data/book/part1-divider.md`. Status: reviewed_no_change. Register: navigation.\n\nRead in full. The divider labels late stages as speculation and returns the reader to dinner. The image description and promise of increasing uncertainty agree with Chapters 1-5.",
+      "before_sha256": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+      "after_sha256": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+      "unified_diff": ""
+    },
+    {
+      "file": "src/lib/data/book/03-chapter1.md",
+      "title": "Chapter 1",
+      "status": "changed",
+      "reviewed_in_full": true,
+      "findings": [
+        {
+          "id": "O05",
+          "action": "The rig demonstrates a cooling failure, not an absence of intellectual limits. Falling training loss no longer proves that only energy bounds capability. The scene stays physical and within Elijah's competence.",
+          "sources": []
+        },
+        {
+          "id": "O06",
+          "action": "Remove the contradiction between automatic thermal shutdown and the later claim that unplugging caused the stop.",
+          "sources": []
+        },
+        {
+          "id": "O07",
+          "action": "Wage and hiring changes become investigation signals rather than sufficient causal evidence of AI displacement.",
+          "sources": []
+        },
+        {
+          "id": "O08",
+          "action": "Limit Transformer comparisons to the reported translation experiments and the ensemble training-cost comparison. Source S03.",
+          "sources": [
+            "S03"
+          ]
+        },
+        {
+          "id": "O09",
+          "action": "Restore 26.36 BLEU so the displayed gain of more than 2 is reproducible. Source S03.",
+          "sources": [
+            "S03"
+          ]
+        },
+        {
+          "id": "O10",
+          "action": "Distinguish the surveys' changing samples from the same people revising answers, and their aggregate probability date from a participant median. Source S04.",
+          "sources": [
+            "S04"
+          ]
+        }
+      ],
+      "review_text": "Chapter 1\n\nFile: `src/lib/data/book/03-chapter1.md`. Status: changed. Registers: Narrative and Argument.\n\nRead the entire scene, definitions, four-question distinction, Transformer explanation, biological-computing paragraph, forecast, savings argument, and P-03. Kept the forecast date and its tests. The survey table and v0.10.1 chart still agree at 2060/2047 and 2164/2116; no chart values changed.\n\n- O05: The rig demonstrates a cooling failure, not an absence of intellectual limits. Falling training loss no longer proves that only energy bounds capability. The scene stays physical and within Elijah's competence.\n- O06: Remove the contradiction between automatic thermal shutdown and the later claim that unplugging caused the stop.\n- O07: Wage and hiring changes become investigation signals rather than sufficient causal evidence of AI displacement.\n- O08: Limit Transformer comparisons to the reported translation experiments and the ensemble training-cost comparison. Source S03.\n- O09: Restore 26.36 BLEU so the displayed gain of more than 2 is reproducible. Source S03.\n- O10: Distinguish the surveys' changing samples from the same people revising answers, and their aggregate probability date from a participant median. Source S04.\n\nThe rig's original two-GPU setup, thermal failure, notebook habit, and later stove/energy trajectory remain. The definitions section still presents the author's chosen meaning and forecast as his own.",
+      "before_sha256": "5c3a55e9fd5140978ffb7e0990920623541c97151f16418e1b2d87d214cc45c8",
+      "after_sha256": "2ef6993b4fdafb825a2a168ce554cdea6183d7ae1e0f16fa47501d441b778d4e",
+      "unified_diff": "--- v0.10.1/src/lib/data/book/03-chapter1.md\n+++ v0.10.2/src/lib/data/book/03-chapter1.md\n@@ -44,11 +44,11 @@\n \n Elijah sat in the sudden quiet with sweat cooling on the back of his neck and understood something he would spend a whole later chapter of this book trying to say properly.\n \n-The thing hadn't hit a ceiling of *intelligence*. It had hit a ceiling of *heat*. The curve was still falling when the hardware quit. The machine that had dissolved three careers at the Bear Flag wasn't magic and it wasn't bounded by cleverness. It was bounded by *watts*, by *cooling*, by the same brutal physics that decided whether his grandmother's crop lived or died.\n-\n-He had wanted proof it was just software. He'd gotten it. And the proof was worse than the fear, because *just software* running on *enough energy* was precisely the problem. There was no clever limit coming to save anyone. There was only the power bill, and the people who could afford it.\n-\n-He didn't tell Devendra any of this. Devendra wasn't wrong about the small mechanics: it *was* autocomplete, it *did* make people faster. He was wrong about the only thing that mattered, which was where the curve went when you stopped pretending it would politely stop. Elijah had watched it not stop. He'd had to unplug it to make it stop.\n+The limit he'd actually found was *heat*. The loss curve was still falling when the hardware quit. He hadn't found out what the model could learn next. He'd found out what his room couldn't cool. The machine that had dissolved three careers at the Bear Flag needed *watts*, needed *cooling*, needed the same brutal physics that decided whether his grandmother's crop lived or died.\n+\n+He had wanted proof it was just software. He'd gotten a dead screen and a room too hot to sleep in. He couldn't see a clever limit coming to save anyone. What he could see was the power bill, and the people who could afford it.\n+\n+He didn't tell Devendra any of this. He kept seeing the loss curve where it had broken off. The machine had shut itself down. The question that had kept him feeding it hadn't stopped.\n \n He left the tower off for a week. Then he opened the notebook where he'd written MADRONE ≠ DRONE, and under it, he started keeping the arithmetic.\n \n@@ -116,7 +116,7 @@\n \n **It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.\n \n-**It's testable this quarter.** You don't need anyone's date, including mine. Has the market price of the cognitive work you sell fallen in the last eighteen months? Has the institution that pays for it started behaving strangely about it, restructuring, retitling, quietly not backfilling? That's the measurement, and you can run it on yourself before the end of the week.\n+**It's testable this quarter.** You don't need anyone's date, including mine. Has the market price of the cognitive work you sell fallen in the last eighteen months? Has the institution that pays for it started behaving strangely about it, restructuring, retitling, quietly not backfilling? Those are signals you can investigate before the end of the week. A pay cut or hiring freeze alone doesn't identify the cause. Find out which tasks actually changed, what replaced them, and whether the work still gets done.\n \n **It names the actual emergency, which isn't the machine.** It's the gap. The old contract, sell your hours and eat, is failing on a schedule set by hardware, and the new one is being drafted by nobody in particular. Everything in Part II is about that gap. Everything in Part III is about what you build inside it while it's open. And the first clause of the new contract is the simplest one to write: losing your job doesn't cost you dinner.\n \n@@ -140,11 +140,11 @@\n \n The modern run started in 2017, with a Google paper titled \"Attention Is All You Need.\" Many leading language systems used a recurrent chain: each step depended on the one before it. The Transformer replaced that chain with attention, allowing much more of training to run in parallel. It didn't abolish sequence. Positions still mattered, and its decoder generated an answer one token at a time, using the output already produced. Parallel training and sequential generation are different jobs. [Vaswani et al., Attention Is All You Need (2017), sections 1 and 3](https://arxiv.org/abs/1706.03762)\n \n-The foundational model was small by today's standards: sixty-five million parameters in its base configuration, two hundred thirteen million in the big one. The big one beat every system that came before it, including ensembles stacked specifically to win these benchmarks, and it did it on a fraction of the training compute.\n+The foundational model was small by today's standards: sixty-five million parameters in its base configuration, two hundred thirteen million in the big one. On the two translation benchmarks below, the paper reported that the big one beat the earlier systems it compared, including ensembles, at substantially lower training cost than those ensembles.\n \n | Evaluation Metric / Task | Best Prior Result, Ensembles Included | Transformer, \"Big\" Configuration |\n | :-: | :-: | :-: |\n-| WMT 2014 English-to-German (BLEU) | 26.4 (ConvS2S ensemble) | 28.4, a gain of more than 2 BLEU |\n+| WMT 2014 English-to-German (BLEU) | 26.36 (ConvS2S ensemble) | 28.4, a gain of more than 2 BLEU |\n | WMT 2014 English-to-French (BLEU) | 41.3 (ConvS2S ensemble) | 41.8, a new single-model record |\n | Training compute, English-to-German | 1.8 x 10^20 FLOPs (GNMT ensemble) | 2.3 x 10^19 FLOPs: 3.5 days on eight P100 GPUs |\n \n@@ -160,7 +160,7 @@\n \n That's the joke, and it's also the boundary around the claim. This is my forecast, not a mathematical deadline. I could be wrong about the date, the capability, or both. Evidence that systems stay brittle on unfamiliar tasks counts against me. Evidence of reliable breadth counts for me. Neither one, by itself, gets anybody fed.\n \n-I'm not alone out on this limb, and I'm not in the middle of the pack either. In 2024 the former OpenAI researcher Leopold Aschenbrenner published \"Situational Awareness,\" arguing that stacked gains in compute and algorithms, roughly half an order of magnitude a year each, could carry these systems to automated AI research around 2027. That's one insider's argument, not a measurement. [Aschenbrenner, Situational Awareness (2024)](https://situational-awareness.ai/) The researchers themselves have been moving too. The largest survey of AI researchers, run by Katja Grace and colleagues, asked the same questions a year apart:\n+I'm not alone out on this limb, and I'm not in the middle of the pack either. In 2024 the former OpenAI researcher Leopold Aschenbrenner published \"Situational Awareness,\" arguing that stacked gains in compute and algorithms, roughly half an order of magnitude a year each, could carry these systems to automated AI research around 2027. That's one insider's argument, not a measurement. [Aschenbrenner, Situational Awareness (2024)](https://situational-awareness.ai/) The researchers themselves have been moving too. Katja Grace and colleagues compared similar questions in their 2022 and 2023 surveys of AI researchers. The later survey was much larger and drew from more publication venues, so these are changing samples, not simply the same people revising their answers:\n \n | AI Milestone | 2022 Aggregate Forecast | 2023 Aggregate Forecast | Net Shift |\n | :-: | :-: | :-: | :-: |\n@@ -173,7 +173,7 @@\n \n *Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. [Grace et al., Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843v3).*\n \n-The same survey put a 10 percent probability on high-level machine intelligence arriving as early as 2027. And on the darkest question it asked, between 37.8 and 51.4 percent of respondents, depending on how it was framed, gave at least a 10 percent chance to outcomes as bad as human extinction. These aren't doomers on a forum. These are the people building the systems, surveyed by the thousands, and the median moved thirteen years in twelve months. [Grace et al., Thousands of AI Authors on the Future of AI (2024)](https://arxiv.org/abs/2401.02843)\n+The same survey put a 10 percent probability on high-level machine intelligence arriving as early as 2027. And on the darkest question it asked, between 37.8 and 51.4 percent of respondents, depending on how it was framed, gave at least a 10 percent chance to outcomes as bad as human extinction. These aren't doomers on a forum. These are the people building the systems, surveyed by the thousands, and the aggregate 50 percent date moved thirteen years between surveys. [Grace et al., Thousands of AI Authors on the Future of AI (2024)](https://arxiv.org/abs/2401.02843)\n \n So write my date down and hold me to it. Thanksgiving can come and go without anyone getting permission to pretend a missed forecast was secretly a different forecast all along. And here's the part that matters: the food-first proposal survives a late arrival. People can improve food access with tools and organizations that already exist while the capability develops. We don't need a machine that's good at everything before we ask it to help with something useful.\n \n"
+    },
+    {
+      "file": "src/lib/data/book/04-chapter2.md",
+      "title": "Chapter 2",
+      "status": "changed",
+      "reviewed_in_full": true,
+      "findings": [
+        {
+          "id": "O11",
+          "action": "State the retained advance walker in the 1878 England amendment. Delimit the 1896 exemption to light locomotives. Remove the false assertion that machines remained unchanged for thirty-one years. Sources S05 and S06.",
+          "sources": [
+            "S05",
+            "S06"
+          ]
+        }
+      ],
+      "review_text": "Chapter 2\n\nFile: `src/lib/data/book/04-chapter2.md`. Status: changed. Registers: Narrative and Argument.\n\nRead all five scenarios, enclosure scene, policy example, figures, and P-04. Preserved scenario overlap, safety/access distinction, and the boundary between operating equipment and governing people. The company's current release account was inspected, but this pass does not independently re-prove every date in the existing timeline or every policy motive. The medical-equipment outage paragraph retains its separate power requirement and care-provider/supplier plan.\n\n- O11: State the retained advance walker in the 1878 England amendment. Delimit the 1896 exemption to light locomotives. Remove the false assertion that machines remained unchanged for thirty-one years. Sources S05 and S06.",
+      "before_sha256": "cd627924f261ae205cf46baa6e0f3f893f6e5c2cdb4d2ba975b87a71085a085c",
+      "after_sha256": "ca496cf7a13dcaf98b244ed22581e6190a04353af7c0624f7194741be8fc040d",
+      "unified_diff": "--- v0.10.1/src/lib/data/book/04-chapter2.md\n+++ v0.10.2/src/lib/data/book/04-chapter2.md\n@@ -146,7 +146,7 @@\n \n It's easy to laugh at. Put the horses back on the road and it gets less funny. In the Lords that May, the Earl of Hardwicke presented the bill partly as relief from an older, tighter set of restrictions. Lord Kinnaird, who owned two machines and farmed land five miles apart, argued that rules confining them to night travel made moving farm equipment impractical. The Earl of Carnarvon argued the opposite: taking away the Home Secretary's power to restrict dangerous use would leave people unprotected. [House of Lords, May 26, 1865](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading) It wasn't a vote on progress. It was a fight over who had to slow down, who supplied the extra labor, and who got protected from a hazard.\n \n-The flag requirement was dropped in 1878. The low speed limits lasted until 1896. When they finally lifted, motorists celebrated with a run from London to Brighton, and the drive is still re-staged most Novembers. The machine hadn't changed in those thirty-one years. The terms had.\n+The flag requirement was dropped in England in 1878, though a person still had to walk ahead. [Highways and Locomotives (Amendment) Act 1878, section 29](https://www.legislation.gov.uk/ukpga/Vict/41-42/77/pdfs/ukpga_18780077_en.pdf) In 1896, Parliament exempted a new class of light locomotives from the older restrictions and set a higher speed ceiling for that class. It wasn't a repeal for every heavy road engine. [Locomotives on Highways Act 1896, sections 1 and 4](https://www.legislation.gov.uk/ukpga/Vict/59-60/36/pdfs/ukpga_18960036_en.pdf) Motorists celebrated with a run from London to Brighton, and the drive is still re-staged most Novembers. The machines had changed over those thirty-one years. The terms had to change too.\n \n **The mechanism.** A rule decides who carries the cost of a new machine: who slows down, who pays for the extra hands, who gets protected. Rules aimed at a specific harm can do real good. Rules aimed at a technology's existence tend to move it rather than stop it.\n \n"
+    },
+    {
+      "file": "src/lib/data/book/05-chapter3.md",
+      "title": "Chapter 3",
+      "status": "changed",
+      "reviewed_in_full": true,
+      "findings": [
+        {
+          "id": "O12",
+          "action": "Distinguish AlphaFold as a research tool from halicin as a drug candidate; a structure predictor does not itself become a cure. Sources S07 and S08.",
+          "sources": [
+            "S07",
+            "S08"
+          ]
+        },
+        {
+          "id": "O13",
+          "action": "Remove the unsupported global ranking of Zheng He's fleet capability while preserving its scale. The cited voyage account cannot establish a worldwide ranking.",
+          "sources": []
+        }
+      ],
+      "review_text": "Chapter 3\n\nFile: `src/lib/data/book/05-chapter3.md`. Status: changed. Registers: Narrative and speculative Argument.\n\nRead the mother call, pressure switch, Hollis sale, recursive-improvement scenario, rocket caption, medicine chain, consent discussion, and P-05. The failed call and land-sale setup remain intact. Departure is still a declared hope rather than an evidence-backed prediction, and capability does not entail benevolence.\n\n- O12: Distinguish AlphaFold as a research tool from halicin as a drug candidate; a structure predictor does not itself become a cure. Sources S07 and S08.\n- O13: Remove the unsupported global ranking of Zheng He's fleet capability while preserving its scale. The cited voyage account cannot establish a worldwide ranking.",
+      "before_sha256": "92d427b95ada6570d607c81ea2377beb41355225b25fc8f162748326f588dd74",
+      "after_sha256": "65b6f36d7705ea69ef86941cf43e937893d97334f836288879ac5f294d5bea84",
+      "unified_diff": "--- v0.10.1/src/lib/data/book/05-chapter3.md\n+++ v0.10.2/src/lib/data/book/05-chapter3.md\n@@ -90,7 +90,7 @@\n \n If a mind that capable exists, it can model biology at a scale we can't. Picture it working the way the best tools we have already work, only further out: simulating proteins, cells, and drug candidates by the billion, and handing down answers the way you'd toss a bone to a stray.\n \n-We already have a small preview, and it's real. In 2021, the AlphaFold team reported predicting protein structures with accuracy that changed what biologists could ask. [Jumper et al., Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) In 2020, researchers used a neural network to find an antibiotic they called halicin, which killed resistant bacteria in the lab and cleared infections in mice. [Stokes et al., A Deep Learning Approach to Antibiotic Discovery](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) Neither one is a cure you can get at the pharmacy. Both are the kind of thing that could become one, if the testing, manufacturing, and access work gets done. That chain is where hope turns into medicine. A model's fluent answer isn't a substitute for it.\n+We already have a small preview, and it's real. In 2021, the AlphaFold team reported predicting protein structures with accuracy that changed what biologists could ask. [Jumper et al., Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) In 2020, researchers used a neural network to find an antibiotic they called halicin, which killed resistant bacteria in the lab and cleared infections in mice. [Stokes et al., A Deep Learning Approach to Antibiotic Discovery](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) One is a research tool; the other is an experimental drug candidate. Neither result, by itself, puts an approved treatment in a pharmacy. Turning a promising candidate into medicine still takes testing, manufacturing, and access work. That chain is where hope turns into medicine. A model's fluent answer isn't a substitute for it.\n \n Now imagine the chain working, at scale. A disease that took your grandmother becomes a line item. That's worth wanting, loudly.\n \n@@ -108,7 +108,7 @@\n \n ## Precedent P-05: The Court and the Fleet (Ming China, 1405 to 1433)\n \n-Between 1405 and 1433, the fleets of Zheng He sailed from China to ports across the Indian Ocean, as far as Arabia and the coast of East Africa. Hundreds of ships, crews in the tens of thousands, the most capable ocean-going force of its day.\n+Between 1405 and 1433, the fleets of Zheng He sailed from China to ports across the Indian Ocean, as far as Arabia and the coast of East Africa. Hundreds of ships, crews in the tens of thousands, an ocean-going force on an enormous scale.\n \n Before the last voyage, the expedition carved its own account in stone. A 1431 inscription at Liujiagang, in a temple to the Heavenly Princess who protected sailors, describes imperial commissions, distant ports, storms survived, and offerings. It also describes force: rulers who resisted were captured, including a king of Ceylon, who was brought back, presented to the emperor in 1411, pardoned, and sent home. Capture and mercy both appear there as acts of imperial authority. [Liujiagang inscription, translated by Edward L. Dreyer, pages 191 to 193](https://edspace.american.edu/justinjacobs/wp-content/uploads/sites/986/2022/12/31-Historical-Accounts-of-Zheng-He.pdf) That's the voyagers' own account, not the story told by the people on the receiving end.\n \n"
+    },
+    {
+      "file": "src/lib/data/book/06-chapter4.md",
+      "title": "Chapter 4",
+      "status": "changed",
+      "reviewed_in_full": true,
+      "findings": [
+        {
+          "id": "O14",
+          "action": "Label Stages 8-9 speculative in the briefing itself, before a skimmer reaches the body.",
+          "sources": []
+        },
+        {
+          "id": "O15",
+          "action": "Attribute Andromeda's extragalactic location to Hubble without assigning a modern billions-of-galaxies census to him. Source S09.",
+          "sources": [
+            "S09"
+          ]
+        }
+      ],
+      "review_text": "Chapter 4\n\nFile: `src/lib/data/book/06-chapter4.md`. Status: changed. Registers: Narrative and speculative Argument.\n\nRead LADDER's failure, joules/watts confusion, return to the electric bill, USI/Apex scenarios, Bostrom/Kipping explanation, conditional equation, and P-06. Kept the prior-assumption caveats; no measured probability of living in a simulation is claimed. Cosmic scale remains speculation, not an engineering specification. No formula or image changed.\n\n- O14: Label Stages 8-9 speculative in the briefing itself, before a skimmer reaches the body.\n- O15: Attribute Andromeda's extragalactic location to Hubble without assigning a modern billions-of-galaxies census to him. Source S09.",
+      "before_sha256": "71c791ee3bff092e474447f5bc14262d32ab164553b70777682c70743dd828b4",
+      "after_sha256": "8c6bb014928658c5ee51a690d1ef6582d35d73ed3be8d9c9b9a6a7636085b128",
+      "unified_diff": "--- v0.10.1/src/lib/data/book/06-chapter4.md\n+++ v0.10.2/src/lib/data/book/06-chapter4.md\n@@ -10,8 +10,8 @@\n \n **In this chapter:**\n \n-- Stage 8: the machine stops being an intelligence on Earth and becomes an intelligence the universe is merely part of.\n-- Stage 9: even physics has a ceiling, and a mind like that might treat the ceiling as a door.\n+- In speculative Stage 8, the machine expands from Earth toward intelligence operating on a cosmic scale.\n+- Stage 9 imagines a way beyond the universe's physical limits. We have no demonstrated route there.\n - Your brain was built to track weather, predators, and other primates. Past Stage 7, it's navigating without a map. The right response isn't paralysis. It's humility, and a shorter horizon.\n \n ---\n@@ -112,7 +112,7 @@\n \n Open the book and you find more than a diagram. Copernicus dedicated it to Pope Paul III, described his long hesitation about publishing, and named the churchmen who'd urged him on, Cardinal Nicolaus Schönberg and Bishop Tiedemann Giese among them. [Copernicus, dedication to Paul III](https://hti.osu.edu/sites/hti.osu.edu/files/dedication_of_the_revolutions_of_the_heavenly_bodies_to_pope_paul_iii.pdf) And readers met a second voice he never authorized: while the book was being printed in Nuremberg, the theologian Andreas Osiander slipped in an unsigned preface calling the whole system a convenient aid to calculation, not necessarily a description of the heavens. [Cambridge, Copernicus's Book](https://www.sites.hps.cam.ac.uk/starry/coperbooks.html) The moving Earth reached the world wearing two different labels, and the fight over which one was true was partly about evidence and partly about who got to say what the evidence meant.\n \n-The demotions kept coming. Galileo's telescope found other worlds with their own moons. Darwin filed humanity under the animals. Hubble showed our galaxy to be one among billions. Each time, somebody predicted that meaning itself would come apart. Each time, ordinary people absorbed the new map and kept making breakfast, falling in love, and planting gardens.\n+The demotions kept coming. Galileo's telescope found other worlds with their own moons. Darwin filed humanity under the animals. Hubble established that Andromeda lay beyond our own galaxy. Each time, somebody predicted that meaning itself would come apart. Each time, ordinary people absorbed the new map and kept making breakfast, falling in love, and planting gardens.\n \n What strained, each time, was something else: the institutions that had staked their authority on the old map. People survived being decentered. Some hierarchies built on the old center didn't, and others bent and survived. There was no single reaction and no single ending.\n \n"
+    },
+    {
+      "file": "src/lib/data/book/07-chapter5.md",
+      "title": "Chapter 5",
+      "status": "changed",
+      "reviewed_in_full": true,
+      "findings": [
+        {
+          "id": "O16",
+          "action": "Distinguish energy from its rate in the briefing; keep the rig callback limited to the wall Elijah actually encountered.",
+          "sources": []
+        },
+        {
+          "id": "O17",
+          "action": "Explain the conversion table's different system boundaries, avoiding an inference about complete robot efficiency.",
+          "sources": []
+        },
+        {
+          "id": "O18",
+          "action": "Separate benchmark query price from electricity per task and total data-centre electricity demand. Sources S01 and S12.",
+          "sources": [
+            "S01",
+            "S12"
+          ]
+        },
+        {
+          "id": "O19",
+          "action": "Replace a single-digit whole-computer power guarantee with measured board-plus-peripheral budgeting. Distinguish e-ink image retention from refreshing and powering the host. Sources S10 and S11.",
+          "sources": [
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "id": "O20",
+          "action": "Count attention in time in the audit instead of literally describing it as thermodynamic energy.",
+          "sources": []
+        }
+      ],
+      "review_text": "Chapter 5\n\nFile: `src/lib/data/book/07-chapter5.md`. Status: changed. Registers: Narrative, Argument, and practical instructions.\n\nRead the complete bill/stove scene, thermodynamics, conversion table, energy numbers, cyberdeck history, Tiffany passage, audit, and P-07. Preserved the stove without a flue as a Chapter 13 setup and the intergenerational invitation. IEA plot and caption already distinguish estimate/projection and all data centres/AI. Retained horse/tractor values; the population explicitly concerns farm animals. Efficiency bands remain attributed ranges, not new measurements of individual machines.\n\n- O16: Distinguish energy from its rate in the briefing; keep the rig callback limited to the wall Elijah actually encountered.\n- O17: Explain the conversion table's different system boundaries, avoiding an inference about complete robot efficiency.\n- O18: Separate benchmark query price from electricity per task and total data-centre electricity demand. Sources S01 and S12.\n- O19: Replace a single-digit whole-computer power guarantee with measured board-plus-peripheral budgeting. Distinguish e-ink image retention from refreshing and powering the host. Sources S10 and S11.\n- O20: Count attention in time in the audit instead of literally describing it as thermodynamic energy.",
+      "before_sha256": "30cf25ebcc7641e83ab893b58535939c0f8c9d1e0e59e312d44002f2d1d92b31",
+      "after_sha256": "e147a57ab03a5ce0fae5e95be52b04a02f33ce766c5e7dfe159a1d11c854c1ed",
+      "unified_diff": "--- v0.10.1/src/lib/data/book/07-chapter5.md\n+++ v0.10.2/src/lib/data/book/07-chapter5.md\n@@ -10,7 +10,7 @@\n \n **In this chapter:**\n \n-- Every intelligence, silicon or biological, pays its bills in the same currency: watts.\n+- Every intelligence, silicon or biological, needs energy. Watts measure how fast it uses it.\n - You're a hundred-watt machine with expensive fuel requirements. The machine's hard ceilings are heat and power. Whoever owns energy has a big say in the transition.\n - Keep food, energy, labor, and money in separate ledgers. Free to eat isn't free to provide.\n - The counterattack starts small and already has a name: the cyberdeck. The kids are building it.\n@@ -25,7 +25,7 @@\n \n He sat down at the kitchen table with the bill and the notebook, and for once he didn't need to build the insight. It walked in and pulled up a chair.\n \n-The night the tower had cooked itself into a shutdown, he'd written down that the machine's only wall was heat. He'd understood it then the way you understand a headline. Now, holding the invoice, he understood it the way you understand a hangover. Intelligence wasn't magic. Intelligence was *energy, arranged*. Every token the machine produced was a little cone of waste heat over a server rack somewhere; every clever thing it said had a wattage. And every clever thing *he* said did too: roughly a hundred watts, day and night, the output of one warm incandescent bulb, fueled by groceries. He wrote the two numbers side by side. The datacenter measured in gigawatts, him measured in sandwiches. The whole coming war, right there in one line of notebook arithmetic.\n+The night the tower had cooked itself into a shutdown, he'd written down the wall he'd actually hit: heat. He'd understood it then the way you understand a headline. Now, holding the invoice, he understood it the way you understand a hangover. Intelligence wasn't magic. Intelligence was *energy, arranged*. Every token the machine produced was a little cone of waste heat over a server rack somewhere; every clever thing it said had a wattage. And every clever thing *he* said did too: roughly a hundred watts, day and night, the output of one warm incandescent bulb, fueled by groceries. He wrote the two numbers side by side. The datacenter measured in gigawatts, him measured in sandwiches. The whole coming war, right there in one line of notebook arithmetic.\n \n That week he became insufferable in a brand-new way. He bought a plug-in power meter (a little gray box, fourteen dollars, the single highest-leverage instrument purchase of his life) and went through the apartment like an auditor with a grudge. The television, off, sipping eleven watts around the clock for the privilege of turning on two seconds faster. The cable box, twenty-three watts, doing *nothing*, a tenant who paid no rent. The microwave clock. The laser printer he used four times a year. He filled two notebook pages with the ledger of it, and the ledger gave him a much smaller assignment than predicting the end of the world: he had been leaking energy (money, agency, *survival margin*) in a fine mist, everywhere, always, invisibly, to machines that did not love him.\n \n@@ -79,15 +79,17 @@\n \n *Typical conversion efficiencies, as compiled in [Wikipedia, Energy conversion efficiency](https://en.wikipedia.org/wiki/Energy_conversion_efficiency). Ranges, not specifications: a particular machine can sit anywhere in its band.*\n \n+These rows have different boundaries. A motor's figure starts with electricity already delivered to it; a power plant's starts with fuel. Neither includes the whole chain of making, powering, and maintaining a robot. Use the table to understand a conversion, then compare complete systems doing the same job.\n+\n <aside class=\"numbers\">\n \n **By the numbers: the machine's appetite**\n \n - **485 terawatt-hours.** The IEA's estimate of worldwide data-centre electricity use in 2025. [IEA, Key Questions on Energy and AI (2026)](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)\n - **950 terawatt-hours.** The same report's projection for 2030, about 3 percent of global electricity demand. It's a forecast, not a meter reading. [IEA (2026)](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)\n-- **280-fold.** How far the cost of running a system as capable as GPT-3.5 fell between November 2022 and October 2024. [Stanford AI Index 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report)\n-\n-The machines are getting hungrier in total and cheaper per unit of thought, both at once. Somebody owns the meter.\n+- **More than 280-fold.** The fall in query price for models matching GPT-3.5 on the MMLU benchmark between November 2022 and October 2024. This measures price at a benchmark threshold, not energy consumed per task. [Stanford AI Index 2025, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf)\n+\n+Data centres are using more electricity in total while some measured capabilities get cheaper to buy. Both can happen at once. Somebody owns the meter.\n \n </aside>\n \n@@ -139,8 +141,8 @@\n \n There's no factory spec, but a common anatomy has emerged:\n \n-- **The brain:** a single-board computer, often a Raspberry Pi. Total draw: single-digit watts.\n-- **The face:** a small screen, or e-ink for sunlight and almost no power.\n+- **The brain:** a single-board computer, often a Raspberry Pi. Measure the board under your intended load, then add the screen, radios, storage, and power-conversion losses. Single-digit watts is a target for some builds, not a whole-system guarantee. [Raspberry Pi, power and peripherals](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#maximum-power-output)\n+- **The face:** a small screen, or e-ink for sunlight and low power while holding a static page. Refreshing the page and running the rest of the computer still take power. [E Ink, bistability](https://www.eink.com/tech/detail/Benefits)\n - **The hands:** a mechanical keyboard, often a tiny one, sometimes hand-wired key by key.\n - **The body:** a Pelican case, an ammo can, a 3D-printed shell, a thrift-store briefcase.\n - **The ears:** a cheap software-defined radio stick, and a LoRa radio running Meshtastic, the off-grid mesh messaging network.\n@@ -167,7 +169,7 @@\n Before you pool anything with anybody, run a cold-eyed audit of your own balance sheet.\n \n 1. **What are your inputs?** Where does your food come from, where does your power come from, and what happens to each during a week-long interruption?\n-2. **Where are your leaks?** Standby loads, subscriptions, fuel, and attention. Attention is energy too: hours spent doomscrolling are hours somebody else is billing for.\n+2. **Where are your leaks?** Standby loads, subscriptions, fuel, and attention. Keep the units straight: count the first in watts and hours, the subscriptions in dollars, the fuel by quantity, and doomscrolling in time you don't get back.\n 3. **Who's in your pod?** Which people within walking distance could share tools, meals, rides, and labor with you?\n \n Then pick one task you actually care about, food first if you can, and write a short inventory with the people who already do it: the task, what it needs, who's responsible, what it still depends on from outside, and what happens during an interruption. An irrigation controller won't fix a missing water supply. A better motor won't fix a delivery route that never reaches the person.\n"
+    }
+  ],
+  "shared_appendix_b_requests_markdown": "No shared files were edited. Add or substitute these Appendix B entries as appropriate.\n\n### P-04\n\n[Highways and Locomotives (Amendment) Act 1878](https://www.legislation.gov.uk/ukpga/Vict/41-42/77/pdfs/ukpga_18780077_en.pdf), section 29, and [Locomotives on Highways Act 1896](https://www.legislation.gov.uk/ukpga/Vict/59-60/36/pdfs/ukpga_18960036_en.pdf), sections 1 and 4. Original statutes: the first changes the advance-walker rule in England; the second exempts a defined light-locomotive class and sets a higher speed ceiling for it.\n\n### Introduction and Chapter 1\n\nStanford HAI, [AI Index Report 2025, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf). The historical query-price comparison fixes a GPT-3.5-level MMLU threshold; it is not a measurement of energy per task or equivalence across all work.\n\nFor the Grace entry, use https://arxiv.org/abs/2401.02843v3 and note: first published 2024, revised 2025; the surveys used changing samples and the displayed dates are aggregate probability thresholds.\n\n### Chapter 5\n\nRaspberry Pi, [Computer Hardware: Maximum Power Output](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#maximum-power-output), and E Ink, [Benefits: Bi-Stability](https://www.eink.com/tech/detail/Benefits). Manufacturer documentation on peripheral budgets and static display retention. Neither establishes total draw or battery runtime for a particular cyberdeck.\n\n### Introduction and Chapter 19, eviction entry\n\nAshley Gromis and colleagues, [Estimating Eviction Prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/), PNAS 119 (2022), e2116169119. Author-institution research record: annual average concerns 2000 to 2018, not a current-year count.\n\n### Chapters 3 and 4\n\nNASA, [Hubble Views the Star that Changed the Universe](https://science.nasa.gov/missions/hubble/hubble-views-the-star-that-changed-the-universe/) (2011). Institutional history of the Cepheid observations that placed Andromeda outside the Milky Way.",
+  "protocol_and_artwork_observations": "Read the actual SVG text for `v101-chart-forecast-shift.svg` and `v101-chart-data-centre-demand.svg`. The former already labels aggregate 50 percent respondent forecasts and separate milestones; the latter labels all data centres and estimate/projection. Both agree with revised prose. No chart correction is requested.\n\nThe legacy scene ledger calls the Chapter 1 fine-tuning experiment a weekend, while the scene places it on Monday night. Its continuity table calls Chapter 5 first summer, while Chapter 4 explicitly places LADDER in a cold spring and sends the electric bill into the following Monday, which opens Chapter 5. Recommended protocol wording: Monday-night experiment for Chapter 1; Monday after LADDER weekend for Chapter 5. Canonical prose was not altered to fit the older outline. The Chapter 0 instruction about an unbroken narrative also predates the valid appended P-02; it should not trigger removal of that precedent.",
+  "validation": "Changed prose read back and diffed with preserved v0.10.1. No build or test suite run by this agent; root owns source freeze and release checks.",
+  "unchanged_file_count": 4,
+  "changed_file_count": 6
+}

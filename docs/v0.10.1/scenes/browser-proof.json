@@ -1,0 +1,94 @@
+{
+  "base": "http://localhost:5189",
+  "browser": "Installed Chrome, local macOS",
+  "viewport": [
+    1280,
+    1600
+  ],
+  "scenes": [
+    {
+      "id": "food-delivery",
+      "context": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "width": 598,
+        "height": 317,
+        "drawCalls": 4520
+      },
+      "no_eager_three": true,
+      "no_animation_loop": true,
+      "keyboard_open": true,
+      "camera_changes_pixels": true,
+      "selection_description_matches": true,
+      "static_restored": true,
+      "accessible_rows": 4
+    },
+    {
+      "id": "living-soil",
+      "context": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "width": 598,
+        "height": 317,
+        "drawCalls": 2010
+      },
+      "no_eager_three": true,
+      "no_animation_loop": true,
+      "keyboard_open": true,
+      "camera_changes_pixels": true,
+      "selection_description_matches": true,
+      "static_restored": true,
+      "accessible_rows": 4
+    },
+    {
+      "id": "shared-workshop",
+      "context": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "width": 598,
+        "height": 317,
+        "drawCalls": 2740
+      },
+      "no_eager_three": true,
+      "no_animation_loop": true,
+      "keyboard_open": true,
+      "camera_changes_pixels": true,
+      "selection_description_matches": true,
+      "static_restored": true,
+      "accessible_rows": 4
+    }
+  ],
+  "fallback": {
+    "deliberately_denied_webgl": true,
+    "still_visible": true,
+    "explanatory_status": true
+  },
+  "continuous": {
+    "chapter9_mounted": true,
+    "figure_count": 1,
+    "webgl": true
+  },
+  "mobile": {
+    "width": 310,
+    "viewport": 390,
+    "overflow": false,
+    "animations": 0,
+    "targets": [
+      46.09375,
+      46.09375,
+      46.09375,
+      46.09375,
+      46.09375,
+      46.09375,
+      46.09375,
+      46.09375,
+      46.09375
+    ]
+  },
+  "negative_controls": [
+    "Lost an active WebGL context deliberately; still restored and canvas disposed.",
+    "WebGL denied deliberately; still and text remain usable."
+  ],
+  "context_lost": {
+    "deliberately_lost_context": true,
+    "still_restored": true
+  },
+  "page_errors": []
+}

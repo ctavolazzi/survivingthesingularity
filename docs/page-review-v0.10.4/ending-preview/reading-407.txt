@@ -1,0 +1,36 @@
+Illustration credits
+& design notes
+The cover is the book's original cover illustration. Original botanical and mechanical
+line drawings were created with Codex for an earlier design as editable SVG artwork.
+The three part-divider illustrations and four photographs or artworks whose commer-
+cial reproduction basis was unclear have been replaced with those drawings. Explana-
+tory diagrams were drawn for this book as SVG. Image captions follow the audited
+sources.
+Edition v0.10.1 adds six photo-derived editorial cutouts made with built-in image_gen.
+Backgrounds  were  removed  and  subject  details  regenerated;  the  tools  and  launch
+plume were recomposed. These are credited adaptations, not unchanged documentary
+photographs. Eight sourced or explicitly illustrative charts, six conceptual SVG draw-
+ings, and three Three.js scene stills provide additional explanations. The interactive
+versions of the three scenes are available in the web reader; PDF and EPUB retain static
+illustrations.
+Edition v0.10.2 revises 31 existing SVG diagrams for print readability and agreement
+with the reviewed text. Forecasts, illustrations and measured results are distinguished;
+resource  diagrams  retain  outside  inputs,  maintenance  and  human  work.  Original
+numerical observations in the redrawn food-security and farm-machinery charts are
+preserved.
+Edition  v0.10.3  adds  four  fictional  narrative  illustrations  generated  with  built-in
+image_gen from scenes in Chapters 0, 4, 7 and 19. They are illustrations, not documen-
+tary  images.  Four  original  SVG  graphics  explain  reading  routes,  continuing  service
+costs,  offline  retrieval  and  the  first-year  practice  plan.  Prompt  and  source  records
+accompany the edition.
+Diagram labels use JetBrains Mono. Body text is typeset in Source Serif 4 and Source
+Sans Pro, designed by Frank Grießhammer and Paul D. Hunt respectively, published by
+Adobe under the SIL Open Font License 1.1.
+Image adaptations retain the relevant image licenses. Those licenses do not extend to
+the manuscript text.
+19 narrative plates were created with PixelLab and assembled for an earlier edition.
+These generated illustrations depict fictional scenes and are not photographs or evi-
+dence  of  actual  deployments.  The  companion  asset  register  records  generation
+identifiers, component files and provider terms.
+SURVIVING THE SINGULARITY
+402

@@ -1,0 +1,29 @@
+{
+  "reason": "Explicit h1 title selection distinguishes chapter opening from contents/running text. Earlier generic text search did not select the opening.",
+  "samples": [
+    {
+      "edition": "interior",
+      "physical_page": 321,
+      "path": "docs/v0.10.4/pdf-proof/interior-chapter19-001.png",
+      "sha256": "89070662378121334ce31f491c276af8347b0f9b1868302981262c38201ff035"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 322,
+      "path": "docs/v0.10.4/pdf-proof/interior-chapter19-002.png",
+      "sha256": "48d8550ed072d26044fdeeead66b3a601f5e47f543a118a16054e38e1abf8e0d"
+    },
+    {
+      "edition": "print",
+      "physical_page": 321,
+      "path": "docs/v0.10.4/pdf-proof/print-chapter19-001.png",
+      "sha256": "db006f3d1eef6811c8b21a30d29af969871df96638b57b85281b15aee7e0bb7e"
+    },
+    {
+      "edition": "print",
+      "physical_page": 322,
+      "path": "docs/v0.10.4/pdf-proof/print-chapter19-002.png",
+      "sha256": "e121d542ac51ca0690dfb7e1ef96f8aaf38e3eb6fc5d339472f7fcc290999457"
+    }
+  ]
+}

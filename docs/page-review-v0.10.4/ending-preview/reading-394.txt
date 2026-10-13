@@ -1,0 +1,36 @@
+Hyper-local. Designed for a neighborhood or a region, close enough that
+the people depending on it can see, fix, and govern it. The book prefers it
+to “decentralized.” (Chapter 9)
+Intelligence Explosion. I. J. Goodʼs 1965 idea: a machine smart enough to
+design better machines starts a loop that runs faster each turn. This book
+uses it for the engine. (Chapter 1)
+Kiwix. Open-source software that packages Wikipedia and other refer-
+ence libraries to read offline. (Appendix E)
+Local model. An AI model running on hardware you own, with no com-
+panyʼs server in the loop. “Local” says where it runs; it doesnʼt say the
+answers are right. (Chapter 11)
+LoRa and Meshtastic. LoRa is a long-range, low-power radio technology.
+Meshtastic is open-source software that uses compatible radios to pass
+short messages directly or through relay nodes, without a cell carrier.
+(Chapters 8 and 17, Appendix E)
+Luddites. English textile workers who broke machines in 1811 to 1816.
+They read what the machines would do to their pay correctly and chose a
+strategy that failed. (Chapter 7)
+Mesh network. A network whose nodes can relay messages through one
+another. An alternate working path can carry traffic around a failure;
+without one, part of the network can still go dark. (Chapters 8 and 17)
+Model collapse. A failure mode in repeated training on generated data:
+less common patterns can disappear and errors can compound. It isnʼt an
+inevitable result of every use of synthetic data. (Chapter 10)
+Money optional. The bookʼs goal for the economy: markets and money
+stay for everything above survival, but nobody needs money to stay alive.
+Not abolished. Optional. (Introduction and Chapter 19)
+Neighborhood factory. Repair and small-scale production brought close
+to home: 3D printers, a plasma table, a welder, and people who know how
+to use them. (Chapter 9)
+Network  surplus. What  a  local  network  has  available  beyond  its  own
+commitments, counted resource by resource: food, usable power, money,
+or time. A surplus helps another household only if it matches a need and
+can reach them; extra electricity isnʼt automatically dinner. (Chapter 12)
+APPENDIX F
+389

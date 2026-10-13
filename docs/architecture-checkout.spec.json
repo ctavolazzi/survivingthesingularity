@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "title": "The money path",
+    "eyebrow": "architecture / sts v0.7.3 / checkout and fulfillment",
+    "tagline": "Everything that happens between a reader clicking a five dollar button and that reader holding the thing they bought. The store has never taken a real dollar, so read the confidence section before trusting any of this in production.",
+    "footer": "Counts measured from the working tree at 36c0edb on 2026-07-29. Behaviour claims come from executed probes, not from reading. Anything unproven is named in the confidence section rather than left to be assumed.",
+    "description": "How checkout, fulfillment, webhook idempotency and reconciliation fit together in Surviving the Singularity, with verified and unverified claims separated."
+  },
+
+  "layers": [
+    { "id": "surface", "name": "Surfaces", "blurb": "What a reader touches. Every one derives its price from the offer object." },
+    { "id": "edge", "name": "Endpoints", "blurb": "The three HTTP doors money moves through." },
+    { "id": "domain", "name": "Domain", "blurb": "Server logic. Never imported by the browser." },
+    { "id": "pure", "name": "Pure rules", "blurb": "Zero imports, so a plain test runner can reach them." },
+    { "id": "data", "name": "Persistence", "blurb": "What survives a request." },
+    { "id": "external", "name": "Third party", "blurb": "Systems that can fail independently of us." }
+  ],
+
+  "nodes": [
+    {
+      "id": "n-home", "layer": "surface", "kind": "ui", "name": "Homepage",
+      "blurb": "Hero and closing buy buttons, plus the share metadata.",
+      "detail": "Until 2026-07-29 this file hardcoded the price in five places while line 4 of it claimed no offer prose was typed into it. All five now render offer.price or offer.priceWords.",
+      "files": ["src/routes/+page.svelte"], "tech": ["svelte"], "loc": 1329, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-ea", "layer": "surface", "kind": "ui", "name": "Early access",
+      "blurb": "The purchase page and the post-payment success page.",
+      "detail": "Carries two email fields bound to the same value so a reader who scrolls past the hero can still buy. Renders the included and excluded lists straight from the offer object.",
+      "files": ["src/routes/early-access/+page.svelte", "src/routes/early-access/success/+page.svelte", "src/routes/early-access/success/+page.server.js"],
+      "tech": ["svelte"], "loc": 1216, "fileCount": 3, "verified": true
+    },
+    {
+      "id": "n-gates", "layer": "surface", "kind": "ui", "name": "Gated pages",
+      "blurb": "Password doors in front of the book, each pointing back at the offer.",
+      "detail": "Client-side checks only, by design: no server env var to misconfigure across environments. The friends page keeps a second code so the preorder code does not quietly double as one.",
+      "files": ["src/lib/components/BookGate.svelte", "src/routes/exclusive-friends-only/+page.svelte", "src/lib/bookAccessCode.js"],
+      "tech": ["svelte"], "loc": 1057, "fileCount": 3, "verified": true
+    },
+
+    {
+      "id": "n-checkout", "layer": "edge", "kind": "entry", "name": "Checkout endpoint",
+      "blurb": "Creates the Stripe session and refuses a repeat purchase before the charge.",
+      "detail": "Collects the email first specifically so a duplicate can be refused before money moves rather than after. Writes an initiated row so an abandoned cart is distinguishable from a cart that never existed.",
+      "files": ["src/routes/api/stripe-checkout/+server.js"], "tech": ["stripe"], "loc": 172, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-webhook", "layer": "edge", "kind": "entry", "name": "Stripe webhook",
+      "blurb": "The source of truth for fulfillment. Nine exit paths, all accounted for.",
+      "detail": "Uses constructEventAsync, not constructEvent: on the Workers runtime the synchronous form throws on every request and the catch turned that into an indistinguishable Invalid signature 400. Probed live with forged signatures: 4 signed events return 200, 5 negative controls return 400.",
+      "files": ["src/routes/api/webhooks/stripe/+server.js"], "tech": ["stripe"], "loc": 182, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-admin", "layer": "edge", "kind": "entry", "name": "Admin reconcile",
+      "blurb": "Reports paid sessions nobody fulfilled. Fails shut with no token.",
+      "detail": "Returns customer emails joined to payment references, so an unset token serves nothing to anybody. With no database it answers 503 ok:false rather than 200 count:0, because a monitor that cannot run must not read as an all-clear.",
+      "files": ["src/routes/api/admin/reconcile/+server.js"], "tech": ["node"], "loc": 108, "fileCount": 1, "verified": true
+    },
+
+    {
+      "id": "n-fulfil", "layer": "domain", "kind": "service", "name": "Fulfillment",
+      "blurb": "Claim the session, insert the preorder, send the bundle. The real safety net.",
+      "detail": "claimSession's unique constraint on session_id is what stops the success page and the webhook both fulfilling. The row records an outcome rather than mere intent, so a crash between claim and send no longer leaves a tombstone that turns every retry into a no-op.",
+      "files": ["src/lib/server/fulfillment.js"], "tech": ["supabase"], "loc": 301, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-ledger", "layer": "domain", "kind": "service", "name": "Checkout ledger",
+      "blurb": "One row per session: created, paid, expired, abandoned. Never purged.",
+      "detail": "Separate from preorders on purpose. The unique (email, edition_type) constraint on preorders means a repeat purchase writes no row at all, which is correct for a catalogue and useless as a financial record.",
+      "files": ["src/lib/server/transactions.js"], "tech": ["supabase"], "loc": 149, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-events", "layer": "domain", "kind": "service", "name": "Webhook events",
+      "blurb": "Records every Stripe event and detects a genuine replay. Degrades open.",
+      "detail": "The insert is the detection mechanism: a 23505 conflict means this event id has been seen. Every function here returns proceed on failure, because blocking a paid order to protect a log entry is the wrong trade.",
+      "files": ["src/lib/server/webhookEvents.js"], "tech": ["supabase"], "loc": 168, "fileCount": 1, "verified": false
+    },
+    {
+      "id": "n-reconcile", "layer": "domain", "kind": "service", "name": "Reconciliation",
+      "blurb": "Compares paid against delivered. Refuses to report ok without a database.",
+      "detail": "The failure it detects is a webhook that never arrived, which means none of our code ran and nothing inside the app can notice. Detection has to be out-of-band, which is why this exists at all.",
+      "files": ["src/lib/server/reconcile.js"], "tech": ["supabase"], "loc": 77, "fileCount": 1, "verified": false
+    },
+    {
+      "id": "n-email", "layer": "domain", "kind": "service", "name": "Transactional email",
+      "blurb": "The receipt, the admin alerts, and a delivery ledger keyed by message id.",
+      "detail": "Records data.id from Resend so a bounced confirmation and a delivered one are distinguishable. A skipped send caused by a missing API key is never counted as delivered.",
+      "files": ["src/lib/server/email.js", "src/lib/server/preorderLookup.js"], "tech": ["resend"], "loc": 675, "fileCount": 2, "verified": true
+    },
+
+    {
+      "id": "n-offer", "layer": "pure", "kind": "data", "name": "The offer object",
+      "blurb": "One frozen object every surface reads. Ratified, not editable prose.",
+      "detail": "Exists because the same five dollar purchase was described ten different ways: the sales pages sold digital access while the legal page sold merchandise and cited the FTC mail order rule. shipsPhysicalGoods is the flag the refund policy branches on.",
+      "files": ["src/lib/offer.js"], "tech": ["node"], "loc": 305, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-policy", "layer": "pure", "kind": "lib", "name": "Event policy",
+      "blurb": "Whether a repeat delivery should run. Only a terminal success skips.",
+      "detail": "Stripe reuses the event id on retries, so seen-before is emphatically not already-handled. This layer is deliberately less aggressive than the session claim: letting an extra event through costs one redundant check, wrongly blocking one costs a real order.",
+      "files": ["src/lib/server/webhookEventPolicy.js"], "tech": ["node"], "loc": 142, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-token", "layer": "pure", "kind": "lib", "name": "Admin token guard",
+      "blurb": "Constant-time bearer check that refuses to operate with a weak secret.",
+      "detail": "crypto.timingSafeEqual does not exist on the Workers runtime, so the comparison is by hand over the longer string. An unset secret authorises nobody, which is the classic way an admin endpoint ends up world readable.",
+      "files": ["src/lib/server/adminToken.js"], "tech": ["node"], "loc": 124, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-format", "layer": "pure", "kind": "lib", "name": "Report formatter",
+      "blurb": "The text a human reads at 2am while deciding whether money is going missing.",
+      "detail": "Split out of reconcile.js purely so it could be tested. Only a genuine clean result is allowed to say Checked and clear; a check that could not run says so and explicitly denies being an all-clear.",
+      "files": ["src/lib/server/reconcileFormat.js"], "tech": ["node"], "loc": 91, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "n-lint", "layer": "pure", "kind": "build", "name": "Drift assertion",
+      "blurb": "Fails the build if an offer fact is typed into a page instead of derived.",
+      "detail": "Derives all five rules from the offer object at lint time and hardcodes nothing, so changing the price retargets it automatically instead of going blind on the one commit where it matters. Refuses to report clean on a scope under 20 files.",
+      "files": ["scripts/check-offer-drift.mjs", "package.json"], "tech": ["node"], "loc": 359, "fileCount": 1, "verified": true
+    },
+
+    {
+      "id": "n-pg", "layer": "data", "kind": "data", "name": "Postgres tables",
+      "blurb": "Five tables and one view, all deny-all to the browser key.",
+      "detail": "checkout_transactions is the financial ledger, fulfilled_sessions is the delivery claim, preorders is the catalogue, webhook_events is the audit trail, email_deliveries is the send ledger. Migration 014 is written and has never been executed.",
+      "files": ["sql/013_checkout_durability.sql", "sql/014_webhook_events.sql", "sql/004_fulfilled_sessions.sql", "sql/003_preorders.sql", "sql/011_email_deliveries.sql", "sql/012_lockdown_public_grants.sql"],
+      "tech": ["postgres"], "loc": 941, "fileCount": 14, "verified": false
+    },
+    {
+      "id": "n-bucket", "layer": "data", "kind": "data", "name": "Downloads bucket",
+      "blurb": "The Precedent File bundle, handed out as a signed URL with a 7 day life.",
+      "detail": "Private bucket. The 7 day TTL is longer than anyone has justified in writing, which is an open plan item rather than a decision.",
+      "files": ["src/lib/server/fulfillment.js"], "tech": ["supabase"], "loc": 0, "fileCount": 1, "verified": false
+    },
+
+    {
+      "id": "n-stripe", "layer": "external", "kind": "external", "name": "Stripe",
+      "blurb": "Holds the authoritative payment record. Test mode only, to date.",
+      "detail": "92 sessions with livemode true count zero, and one webhook endpoint with livemode false. Going live without first creating a live-mode endpoint would accept real money and record none of it.",
+      "files": ["src/routes/api/stripe-checkout/+server.js", "src/routes/api/webhooks/stripe/+server.js"],
+      "tech": ["stripe"], "verified": true
+    },
+    {
+      "id": "n-resend", "layer": "external", "kind": "external", "name": "Resend",
+      "blurb": "Sends the receipt and the admin alerts.",
+      "detail": "The local API key is dead, verified with a control: a bogus key and the real one return byte-identical errors. So email delivery is currently inferred from database rows only.",
+      "files": ["src/lib/server/email.js"], "tech": ["resend"], "verified": true
+    },
+    {
+      "id": "n-supabase", "layer": "external", "kind": "external", "name": "Supabase",
+      "blurb": "Hosts Postgres and the storage bucket. Reached only with the service key.",
+      "detail": "No browser ever talks to it: the content security policy would break the call, and the shipped bundle contains no publishable key.",
+      "files": ["src/lib/server/supabaseAdmin.js"], "tech": ["supabase"], "verified": true
+    },
+    {
+      "id": "n-pages", "layer": "external", "kind": "external", "name": "Cloudflare Pages",
+      "blurb": "Runs the whole thing on the Workers runtime. No cron trigger.",
+      "detail": "The runtime constrains real decisions: SubtleCrypto is async only, which dictates constructEventAsync, and no cron means the reconciliation check has nothing to schedule it.",
+      "files": ["svelte.config.js", "package.json"], "tech": ["cloudflare"], "verified": true
+    }
+  ],
+
+  "edges": [
+    { "from": "n-home", "to": "n-offer", "kind": "data", "label": "price, sentence" },
+    { "from": "n-ea", "to": "n-offer", "kind": "data", "label": "included, excluded" },
+    { "from": "n-gates", "to": "n-offer", "kind": "data" },
+    { "from": "n-ea", "to": "n-checkout", "kind": "call", "label": "POST" },
+
+    { "from": "n-checkout", "to": "n-stripe", "kind": "call", "label": "create session" },
+    { "from": "n-checkout", "to": "n-ledger", "kind": "call", "label": "initiated" },
+    { "from": "n-stripe", "to": "n-webhook", "kind": "event", "label": "signed event" },
+
+    { "from": "n-webhook", "to": "n-events", "kind": "call", "label": "claim event id" },
+    { "from": "n-webhook", "to": "n-ledger", "kind": "call", "label": "completed" },
+    { "from": "n-webhook", "to": "n-fulfil", "kind": "call" },
+    { "from": "n-ea", "to": "n-fulfil", "kind": "call", "label": "fast path" },
+
+    { "from": "n-events", "to": "n-policy", "kind": "call", "label": "disposition" },
+    { "from": "n-events", "to": "n-pg", "kind": "data", "label": "webhook_events" },
+    { "from": "n-fulfil", "to": "n-email", "kind": "call", "label": "receipt" },
+    { "from": "n-fulfil", "to": "n-pg", "kind": "data", "label": "claim, preorder" },
+    { "from": "n-fulfil", "to": "n-bucket", "kind": "data", "label": "signed URL" },
+    { "from": "n-ledger", "to": "n-pg", "kind": "data" },
+    { "from": "n-email", "to": "n-offer", "kind": "data", "label": "receipt copy" },
+    { "from": "n-email", "to": "n-resend", "kind": "call" },
+    { "from": "n-email", "to": "n-pg", "kind": "data", "label": "email_deliveries" },
+
+    { "from": "n-admin", "to": "n-token", "kind": "call", "label": "authorize" },
+    { "from": "n-admin", "to": "n-reconcile", "kind": "call" },
+    { "from": "n-admin", "to": "n-email", "kind": "call", "label": "alert" },
+    { "from": "n-reconcile", "to": "n-format", "kind": "call" },
+    { "from": "n-reconcile", "to": "n-pg", "kind": "data", "label": "the view" },
+
+    { "from": "n-lint", "to": "n-offer", "kind": "build", "label": "derives rules" },
+    { "from": "n-lint", "to": "n-home", "kind": "build", "label": "scans 97 files" },
+    { "from": "n-lint", "to": "n-ea", "kind": "build" },
+    { "from": "n-lint", "to": "n-gates", "kind": "build" },
+
+    { "from": "n-pg", "to": "n-supabase", "kind": "data" },
+    { "from": "n-bucket", "to": "n-supabase", "kind": "data" },
+    { "from": "n-webhook", "to": "n-pages", "kind": "data", "label": "workerd" },
+    { "from": "n-admin", "to": "n-pages", "kind": "data" }
+  ],
+
+  "flows": [
+    {
+      "id": "buy",
+      "name": "A reader buys the book",
+      "blurb": "The happy path. Two independent routes reach fulfillment on purpose, because a customer's browser is not a reliable narrator.",
+      "steps": [
+        { "node": "n-ea", "title": "Email first, then the button", "text": "The page collects the address before checkout so a duplicate purchase can be refused before the charge rather than after it. Both buy buttons gate on a valid email; the bottom one used to not.", "file": "src/routes/early-access/+page.svelte" },
+        { "node": "n-checkout", "title": "Session created and recorded", "text": "A Stripe checkout session is created and an initiated row is written immediately. Without that row an abandoned cart is indistinguishable from a cart that never existed.", "file": "src/routes/api/stripe-checkout/+server.js" },
+        { "node": "n-stripe", "title": "The reader pays on Stripe", "text": "Stripe hosts the card form. We never see the card. To date every session here has been test mode: livemode true count is zero.", "file": "src/routes/api/stripe-checkout/+server.js" },
+        { "node": "n-webhook", "title": "Stripe calls us back", "text": "Server to server, independent of whether the reader's browser ever returns. Signature verified against the raw body bytes, because a JSON round trip would change key order and break the HMAC.", "file": "src/routes/api/webhooks/stripe/+server.js" },
+        { "node": "n-ledger", "title": "Ledger first, unconditionally", "text": "Written before fulfillment and outside the email guard, because the money moved whether or not we can identify the buyer. Previously a session with no email returned 200 having recorded nothing anywhere.", "file": "src/lib/server/transactions.js" },
+        { "node": "n-fulfil", "title": "Claim, then deliver", "text": "claimSession takes the session id first. Whichever of the webhook and the success page gets there first does the work; the other stands down. That is why a customer is not emailed twice.", "file": "src/lib/server/fulfillment.js" },
+        { "node": "n-email", "title": "The receipt, derived not typed", "text": "The confirmation email reads its offer claims from the same object the pages do. It used to promise 29 documented cases and 50% off the finished book, both wrong.", "file": "src/lib/server/email.js" },
+        { "node": "n-pg", "title": "Outcome recorded", "text": "The claim row is updated to delivered or failed. A send skipped because the API key is missing is never counted as delivered, so a misconfigured deployment cannot quietly mark every order complete.", "file": "sql/013_checkout_durability.sql" }
+      ]
+    },
+    {
+      "id": "replay",
+      "name": "The same webhook arrives twice",
+      "blurb": "The path that was almost implemented backwards. Stripe reuses the event id when it retries, so seen-before cannot mean already-handled.",
+      "steps": [
+        { "node": "n-webhook", "title": "Signature verified first", "text": "Event bookkeeping happens after verification so a forged payload can never write a row, and before any handling so a replay is caught before it does work twice.", "file": "src/routes/api/webhooks/stripe/+server.js" },
+        { "node": "n-events", "title": "The insert is the detector", "text": "Inserting the event id either succeeds, meaning first delivery, or fails with a 23505 conflict, meaning we have seen this id before. Only then does anything look at what the prior attempt reached.", "file": "src/lib/server/webhookEvents.js" },
+        { "node": "n-policy", "title": "Only a terminal success skips", "text": "processed means done, so stand down. processing means another worker is mid-flight. failed means retry it, because a retry is the delivery mechanism working, not a duplicate. Getting this backwards would strand paid orders.", "file": "src/lib/server/webhookEventPolicy.js" },
+        { "node": "n-fulfil", "title": "The session claim decides anyway", "text": "Event dedup is an audit trail and an optimisation. claimSession is the actual safety net, so the event policy is deliberately the more permissive of the two. When they disagree, the session claim wins.", "file": "src/lib/server/fulfillment.js" },
+        { "node": "n-events", "title": "Outcome written back", "text": "processed is what makes the next redelivery safe to skip. An event stuck in processing gets repaired by the next delivery once it goes stale, which errs toward doing the work again rather than assuming it was done.", "file": "src/lib/server/webhookEvents.js" }
+      ]
+    },
+    {
+      "id": "reconcile",
+      "name": "Nobody notices a lost order",
+      "blurb": "Stripe held 23 paid sessions against 13 delivery rows and nothing had noticed. A webhook that never arrives runs no code that could notice it.",
+      "steps": [
+        { "node": "n-stripe", "title": "The webhook never arrives", "text": "Dropped delivery, an outage, a deploy mid-flight. Stripe has the money recorded. We have nothing, and no code of ours ran to observe that.", "file": "src/routes/api/webhooks/stripe/+server.js" },
+        { "node": "n-admin", "title": "Something outside has to ask", "text": "A bearer token is checked first, in constant time, and an unset token serves nothing to anybody. This endpoint returns customer emails joined to payment references.", "file": "src/routes/api/admin/reconcile/+server.js" },
+        { "node": "n-reconcile", "title": "Paid against delivered", "text": "Reads a view that joins the ledger to the delivery claims, with a 15 minute floor so a normal webhook retry in progress does not look like a lost order.", "file": "src/lib/server/reconcile.js" },
+        { "node": "n-format", "title": "Say less, never nonsense", "text": "Amounts summed rather than counted, and a check that could not run says so explicitly rather than producing anything that reads like an all-clear. A sparse row degrades to age unknown, not to the word undefined.", "file": "src/lib/server/reconcileFormat.js" },
+        { "node": "n-email", "title": "Alert, only if it really ran", "text": "The mail goes out only when the check ran AND found something. Alerting on a failed check would train the reader to ignore this mail. Nothing schedules any of this yet, which is why the plan item is not closed.", "file": "src/lib/server/email.js" }
+      ]
+    },
+    {
+      "id": "drift",
+      "name": "The build refuses drifted copy",
+      "blurb": "The offer was stated ten different ways across nine surfaces. Prose review does not catch a numeral, so an assertion does it instead.",
+      "steps": [
+        { "node": "n-lint", "title": "Rules derived, not hardcoded", "text": "The assertion imports the offer object and builds its patterns from offer.price, the discount percentage and the precedent count. Change the price and it retargets itself instead of going blind.", "file": "scripts/check-offer-drift.mjs" },
+        { "node": "n-home", "title": "Facts, not phrasing", "text": "A number can be checked against the product and can therefore be wrong, so it must derive. A paraphrase cannot be wrong the same way, which is why the legal pages keep their own register.", "file": "src/routes/+page.svelte" },
+        { "node": "n-offer", "title": "One place to change it", "text": "Price, spelled-out price, the seven included items with stable ids, the one exclusion, the bounded definition of forever, and the flag the refund policy branches on.", "file": "src/lib/offer.js" },
+        { "node": "n-lint", "title": "Exit 1 stops the build", "text": "Wired into prebuild ahead of the image hook. Verified by planting a violation: the build exits 1 and vite never runs. A build that only ever passes is indistinguishable from a lint nobody wired in.", "file": "package.json" }
+      ]
+    }
+  ],
+
+  "state": [
+    {
+      "name": "Postgres on Supabase",
+      "kind": "database", "where": "hosted",
+      "blurb": "Five tables and one view. checkout_transactions is the financial record and is never purged; fulfilled_sessions is a delivery claim with a 30 day purge that deliberately skips anything not confirmed delivered. Row level security on with no policies, so the browser key can read nothing.",
+      "files": ["sql/", "src/lib/server/transactions.js", "src/lib/server/supabaseAdmin.js"]
+    },
+    {
+      "name": "Private storage bucket",
+      "kind": "object storage", "where": "hosted",
+      "blurb": "Holds the bundle a buyer downloads. Handed out as a signed URL with a 7 day life, which is longer than anyone has justified in writing.",
+      "files": ["src/lib/server/fulfillment.js"]
+    },
+    {
+      "name": "Environment",
+      "kind": "secrets", "where": "Cloudflare Pages",
+      "blurb": "18 variables referenced in source. STRIPE_PRICE_ID_AUTHORS is read by the code and is absent from the deployed inventory. There is no .env in this working tree at all, which is why every database path here is unverified.",
+      "files": [".env.example"]
+    },
+    {
+      "name": "Book unlock, in memory only",
+      "kind": "browser", "where": "client",
+      "blurb": "Never persisted, so it resets on any full page load. Reading position is stored separately, so a re-lock never costs anyone their place.",
+      "files": ["src/lib/stores/bookAccess.js", "src/lib/bookAccessCode.js"]
+    }
+  ],
+
+  "seams": [
+    {
+      "title": "Migration 014 has never been executed",
+      "risk": "high",
+      "text": "The webhook_events table and the reconciliation view exist as SQL only. Syntax is proven with Postgres's own parser and every column is cross-checked against the other migrations by AST, but the insert, the 23505 conflict branch, the outcome update and the view are all unproven against a real database. Everything in the replay flow degrades open, so a missing table means orders still flow and nothing is recorded, which is the safe direction and also an invisible one.",
+      "files": ["sql/014_webhook_events.sql", "src/lib/server/webhookEvents.js"]
+    },
+    {
+      "title": "There is no live-mode webhook endpoint",
+      "risk": "high",
+      "text": "Stripe reports one webhook endpoint with livemode false. Switching the secret key to the live key before creating a live endpoint would accept real money and record none of it: no ledger row, no claim, no receipt, and no way to find the orders afterwards except in Stripe. This is why the plan states the ordering twice and marks the key switch blocked.",
+      "files": ["src/routes/api/webhooks/stripe/+server.js"]
+    },
+    {
+      "title": "The reconciliation check has nothing calling it",
+      "risk": "high",
+      "text": "Cloudflare Pages has no cron trigger, so the endpoint is on-demand only. An on-demand check that nobody demands is not an alarm. Until a scheduler exists, the failure this was built to catch would still go unnoticed, and the risk is that the endpoint's existence gets mistaken for coverage.",
+      "files": ["src/routes/api/admin/reconcile/+server.js", "src/lib/server/reconcile.js"]
+    },
+    {
+      "title": "Event dedup must stay weaker than the session claim",
+      "risk": "medium",
+      "text": "Stripe reuses the event id on retries. If anyone tightens the event policy to skip on any second sighting, a paid order whose first attempt failed will never be fulfilled while the events table insists it was handled. That is the exact bug migration 013 removed one layer down. The policy has 14 tests and a mutation test specifically guarding this.",
+      "files": ["src/lib/server/webhookEventPolicy.js", "src/lib/server/fulfillment.js"]
+    },
+    {
+      "title": "Two layers fail in opposite directions, on purpose",
+      "risk": "medium",
+      "text": "Bookkeeping degrades open: a missing events table must never block a paid order. The admin endpoint degrades shut: no token means no access, because it serves customer emails with payment references attached. Both directions are proven by probe. Anyone changing either one should know which side of that line they are on before they start.",
+      "files": ["src/lib/server/webhookEvents.js", "src/lib/server/adminToken.js"]
+    },
+    {
+      "title": "Offer facts are guarded, offer phrasing is not",
+      "risk": "low",
+      "text": "The build assertion catches a price, a discount percentage or the precedent count typed into any of 97 sales surfaces, and it derives those patterns from the offer object so a price change retargets it. It does not police paraphrase, and it does not look at src/lib/data, where book and blueprint prose legitimately discuss other dollar figures. A new sales surface outside the scoped directories is unguarded until someone adds it.",
+      "files": ["scripts/check-offer-drift.mjs", "src/lib/offer.js"]
+    },
+    {
+      "title": "Email delivery is inferred from our own rows",
+      "risk": "medium",
+      "text": "The local Resend key is dead, confirmed with a control rather than assumed: a bogus key and the real one return byte-identical errors. So whether a receipt actually reached a customer is currently known only from what we wrote down about our own send attempt. The one send that decides whether a session counts as delivered is captured rather than swallowed, which is the mitigation, not a substitute for checking upstream.",
+      "files": ["src/lib/server/email.js", "sql/011_email_deliveries.sql"]
+    }
+  ],
+
+  "ground": {
+    "verified": [
+      "All file, line and module counts come from a scan of the working tree at 36c0edb, not from memory.",
+      "The webhook handler was probed live with forged HMAC-SHA256 signatures: 4 signed events return 200, and 5 negative controls return 400 (no header, garbage, wrong secret, valid signature for a different payload, and a timestamp 600s in the past).",
+      "The admin endpoint was probed live in both configurations: with no token it answers 503 to everyone including a caller presenting a token; with a token set, wrong, short and wrong-scheme tokens get 401 and the correct one gets in.",
+      "With no database the reconciliation endpoint answers 503 ok:false count:null with an explicit not-an-all-clear note, rather than 200 count:0.",
+      "51 tests across three specs pass, and 4 mutation tests confirm those tests can actually fail: breaking the retry-after-failure branch, the unset-secret check, the minimum token length, and the length seed in the constant-time compare are each caught by a named assertion.",
+      "sql/013 and sql/014 parse under libpg_query, Postgres's own grammar, and a planted syntax error makes that checker fail.",
+      "Every qualified column the new view reads was cross-checked against the columns the migrations actually create, and every field the JavaScript reads was cross-checked against the view's outputs.",
+      "The offer drift assertion stops the build: with a planted violation npm run build exits 1 and vite never runs. With the tree clean it scans 97 sales surfaces and passes.",
+      "Offer copy is byte-identical after the derivation work, checked on four rendered routes including one behind a password gate opened through an explicit hydration gate."
+    ],
+    "inferred": [
+      "Purpose descriptions come from reading roughly twenty files, chiefly the entrypoints and both ends of the heaviest import edges, not from reading all 434 measured files.",
+      "The claim that the staleness window for events should equal the one for session claims rests on both governing the same situation, a worker that died mid-fulfillment. It has not been tested under real concurrent traffic and is logged as an assumption at 0.75 confidence.",
+      "Edges here are drawn from the resolved import graph plus the money-path reading. The scan resolves 47 edges between 52 modules at directory granularity; the file-level edges on this map were confirmed by reading the imports rather than by the scan alone.",
+      "Stripe and Supabase counts quoted in the node details were measured in an earlier session against the live APIs and are carried forward here, not re-measured today."
+    ],
+    "unknown": [
+      "Whether migration 014 applies cleanly, and whether the conflict path, the outcome update and the reconciliation view behave correctly against real Postgres. Nothing has been executed. Docker is installed on this machine but its daemon is not running, which is the cheapest route to closing this without touching production.",
+      "What will schedule the reconciliation check. Pages has no cron, so candidates are a separate Worker with a cron trigger, a scheduled GitHub Action, or a local launchd job. This needs a decision before the plan item can close.",
+      "Whether the transactional email renders and sends correctly end to end. The derived receipt string was verified to be identical to the copy it replaced, but no message was sent, because the local Resend key is dead.",
+      "Everything about production. It runs an older commit (332fdfd) and none of this work is deployed or even pushed. The store has never taken a real dollar, so the whole path above is unproven against real money.",
+      "Whether the deployed database schema still matches the migrations in this repo. Direct SQL ground truth needs a Supabase personal access token that is not available here."
+    ]
+  }
+}

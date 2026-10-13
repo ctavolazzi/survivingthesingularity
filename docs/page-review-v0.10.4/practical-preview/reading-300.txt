@@ -1,0 +1,54 @@
+                                                                              CHAPTER 17
+
+
+    consumer machine; just know which parts you can fix and which
+    youʼll have to buy. People have turned discarded PET bottles into
+    recycled filament, usually called rPET, with small homemade
+    extruders, which turns trash into brackets, gears, and replacement
+    knobs.
+2. A walk-behind tractor. A heavy two-wheel tractor with compatible
+    swappable implements can serve several jobs. Compare the actual
+    task, attachments, operator effort, maintenance, and fuel use with
+    the equipment youʼd otherwise need. Share one among several
+    households where that comparison makes sense.
+3. A cutting and welding station. A CNC plasma table and a good
+    welder turn steel stock into brackets, racks, and repairs, in the
+    hands of someone trained like Marta.
+
+   Whatkeepsaworkshopuseful
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   1PEOPLE                                    2SUPPLIES
+   Skill,access,time                          Stock,power,spares
+   3SHAREDTOOLS                               4USEFULRESULT
+   Operateandmaintain                         Arepairleavesthebench
+   Illustrativeworkshop.Notafabricationplan.
+
+Shared tools need a working arrangement around them: trained people, suitable power and
+materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not
+a fabrication or wiring plan.
+
+
+
+
+                                                                                     295

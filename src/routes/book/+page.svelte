@@ -4,8 +4,11 @@
   import { sectionsWithMeta, book } from '$lib/bookContent';
   import { bookPage } from '$lib/stores/bookPage';
   import BookCover from '$lib/components/BookCover.svelte';
+  import { downloadHref, releasedVersion } from '$lib/bookManifest.js';
 
-  const pdfHref = `/downloads/Surviving-the-Singularity-v${book.version}.pdf`;
+  // Derived from the RELEASED build, not the open working version; mid-cycle
+  // those differ and only released's file exists.
+  const pdfHref = downloadHref(releasedVersion(book), 'pdf');
 
   let visible = false;
   let lastVisitedId = null;
@@ -54,14 +57,15 @@
       <div class="preface-cover">
         <BookCover width="clamp(150px, 34vw, 210px)" loading="eager" tilt />
       </div>
-      <p class="eyebrow">Surviving the Singularity</p>
+      <h1 class="eyebrow">Surviving the Singularity</h1>
       <p class="preface-text">
-        The machine that can do most jobs is already here. Things are changing, and you can do
-        this: point the same tools at your own food, power, and shelter, build hyper-local
-        instead of waiting on a system that is coming apart, and come out the other side with
-        your agency intact. Written in public, updated as it's finished. What follows is the
-        complete current draft: every chapter, in order, free to read for as long as you have
-        this page.
+        This book explores how AI and automation could help make ordinary life more secure,
+        starting with food. It combines historical cases, speculative stories, and proposals
+        for practical cooperation. Forecasts remain uncertain; proposed systems need evidence,
+        competent operators, and the participation of the people who depend on them.
+        What follows is the complete current draft, organized by section. Your purchase email
+        contains the shared reader password and downloads. A public sample and reading guide
+        are available at <a href="/sample">Read a Free Sample</a>.
       </p>
       <p class="preface-meta">Draft v{book.version} &middot; {sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words total</p>
       <div class="pdf-actions">

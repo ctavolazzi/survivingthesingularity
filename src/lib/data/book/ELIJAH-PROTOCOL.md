@@ -78,9 +78,9 @@ the student gets the deep research — cleanly walled off from each other.
 
 ### Structural constraints (do not break these)
 
-- **Chapter 0 is exempt.** It is the book-scale Zone 2 — a pure narrative cold
-  open with no briefing bullets and no Foundations. It is the one place the story
-  runs unbroken.
+- **Chapter 0 is exempt.** It is the book-scale Zone 2, a narrative cold
+  open with no briefing bullets and no Foundations. Its narrative runs unbroken
+  before the following P-02 precedent.
 - **Only `#` (h1) chapter titles hit the TOC.** The build runs
   `pandoc --toc-depth=1`. The `## The Foundations` label and every heading inside
   Zone 3 must stay h2 or lower, or they pollute the table of contents.
@@ -195,7 +195,7 @@ documentation and that the loopholes are the API. **Gets from Elijah:** structur
 tracking of filings and deadlines.
 
 **Denny Osei — the displaced.** Ex-logistics worker (warehouse, then last-mile
-routing) automated out of two jobs in three years. Handles nothing technical — he
+routing) automated out of two jobs in four years (2019 and 2023). Handles nothing technical — he
 is the human cost made specific, and the source of the pushback Elijah must face.
 Proud, funny, wary of another techie promising the future. **Teaches Elijah:** that
 the people the machine displaces do not want to be a case study; they want the
@@ -238,7 +238,7 @@ first contact with the co-op. **Part III:** building it, together.
 
 | Ch | Concept | Scene premise | Friction / mistake | Allegory weapon | Co-op |
 |---|---|---|---|---|---|
-| 1 | The Event Horizon | The week after the toast: Elijah tries to name the realtor incident to a senior colleague who shrugs "augmentation, not replacement." | Burns a weekend fine-tuning a toy model on his own rig to prove scale to himself; thermal-throttles it into shutdown. The heat is his first proof of the thermodynamic argument. | — | — |
+| 1 | The Event Horizon | The week after the toast: Elijah tries to name the realtor incident to a senior colleague who shrugs "augmentation, not replacement." | Burns Monday night fine-tuning a toy model on his own rig to prove scale to himself; thermal-throttles it into shutdown. The heat is his first proof of the thermodynamic argument. | — | — |
 | 2 | The Era of AGI (Stages 1–5) | Claypot all-hands where the "Cash Grab" roadmap is unveiled as good news; Elijah maps it onto the nine stages in his notebook. | Realizes his own feature ships in Stage 1; complicity lands. | The enclosure of the commons — fencing a free resource. | — |
 | 3 | The Leap to ASI (Stages 6–7) | Late night reading recursive-self-improvement papers; the vertigo of a process that improves itself. | Tries to explain the exodus to his mother on the phone; fails; the gap between him and everyone he loves widens. | — | — |
 | 4 | Universal / Multiverse Apex (8–9) | Elijah at the edge of comprehension — the cosmic scale breaks his frame. | Overreaches trying to model it, hits his own ceiling. | The map is not the territory. | — |
@@ -282,23 +282,28 @@ The ledger (§6) fixes each scene's premise. This section fixes what connects th
 Scenes run the length the story needs — the 800–1,200 window is a floor for effort,
 not a ceiling on the narrative (author ruling, 2026-07-16).
 
-### 7.1 Timeline (two years, Bear Flag to Bear Flag)
+### 7.1 Timeline (current manuscript continuity, v0.10.0)
 
-| When | Chapters | Season anchor |
+The current prose supersedes the older two-year outline. The first fire in
+Chapter 13 precedes the Chapter 16 media success by a year. Chapter 18 and the
+Conclusion place the return to Bear Flag three years after the opening toast.
+Don't compress those events back into the old outline's month 23 to 26 window.
+
+| When | Chapters | Anchor |
 |---|---|---|
-| Month 0 | Ch. 0 (the toast) | late fall — Chat Horizon is weeks old |
-| Months 1–2 | Ch. 1–2 (printout Monday; Companion all-hands) | winter |
-| Months 3–5 | Ch. 3–4 (Sunday calls; LADDER weekend, "cold spring") | spring |
-| Month 6 | Ch. 5 (the $211 bill; the woodstove) | early summer |
-| Month 11 | Ch. 6 (quits on a Tuesday; drives north; the broom) | early fall, year 1 |
-| Months 11–13 | Ch. 7–8 (potluck battle lines; the breakdown) | fall → first winter north |
-| Months 13–15 | Ch. 9 (first manufacturing cell) | deep winter |
-| Months 16–18 | Ch. 10–11 (media engine; the leak, the Crucible) | spring, year 2 |
-| Months 18–20 | Ch. 12 (the deed) · Ch. 15 (Priya's beds run all season) | late spring–summer |
-| Months 20–22 | Ch. 13 (shouse build) · Ch. 14 (Kowalski's closes) | summer–early fall |
-| Month 23 | Ch. 16 (the overnight win) · Ch. 17 (the storm) | fall–first storm |
-| Month 24 | Ch. 18 (premortem, annual meeting) | one year at the co-op |
-| Month ~26 | Conclusion (manuscript done; the drive south) | winter — two years after the toast |
+| Opening | Ch. 0 | Late fall; Chat Horizon is weeks old |
+| First winter and spring | Ch. 1 to 4 | Printout, all-hands, Sunday calls, LADDER weekend |
+| Monday after the spring LADDER weekend | Ch. 5 | Electricity bill and grandmother's stove |
+| Eleven months after the toast | Ch. 6 | Elijah leaves Claypot and drives north |
+| First fall and winter at the co-op | Ch. 7 to 9 | Potluck, breakdown, first manufacturing cell |
+| Following building seasons | Ch. 10 to 15 | Media work, Crucible, land, shouse, soil |
+| A year after the first fire | Ch. 16 | Media success |
+| Later storm and annual review | Ch. 17 to 18 | Failed mesh node; three years since the toast |
+| After the premortem | Ch. 19 | Public meeting; route funded through December |
+| Three years after the toast | Conclusion | Return to Bear Flag; funding needed beyond December |
+
+These are the text's anchors, not a newly imposed day-by-day calendar. Where a
+chapter supplies only relative time, preserve that precision.
 
 ### 7.2 Elijah's arc in one line per phase
 
@@ -356,8 +361,9 @@ what grows is his knowledge of where it ends.
   short loop. Denny runs the story.
 - **Ch. 15 (Priya):** the beds. His moisture model is confidently wrong; the shovel
   corrects it ("your sensor lives at one centimeter; the root lives at thirty").
-  Exchange completes both ways: her intuition becomes legible in his dashboards —
-  the tea-inoculated beds provably hold water longer.
+  Exchange completes both ways: her observations become legible in his dashboards.
+  The fork, cover-crop and mulch trial remains observational; unequal irrigation
+  prevents attributing the difference to any one treatment.
 - **Ch. 16 (co-op, the earned win):** Denny's series compounds overnight; morning finds
   requests from eleven towns; they ship everything open — templates, cut files, the
   Municipal Autonomy Code. Permissionless leverage, witnessed at dawn, nobody's boss

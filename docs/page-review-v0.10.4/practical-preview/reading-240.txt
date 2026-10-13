@@ -1,0 +1,53 @@
+                                                                     CHAPTER 13
+
+
+   Awallisanassembly
+
+
+   Conceptualsection,notathicknessschedule.
+
+   Exampleheatflow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   1Steelskin
+   2Insulation+continuousaircontrol
+   3Interiorfinish+requiredfireprotection
+
+
+   Idealizedlayer:heatflow=k×A×ΔT/d
+   Designmoisturecontrolandventilationtoo.
+   Heatflowdependsonthewholeassembly.
+
+
+
+Insulation is one layer in a wall. Air control, moisture, ventilation and fire protection have to
+work with it.
+
+One approach is closed-cell spray foam bonded to the steel, with the
+thickness and R-value selected for the product and climate. Its advan-
+tage isnʼt just insulation: a continuous, correctly installed layer can
+also control air leakage. Gaps, penetrations, and exposed steel still
+matter. Fiberglass batts alone arenʼt an air barrier either. Get the
+whole wall assembly designed for your climate, including moisture
+control and the required fire protection over foam, and installed by
+people who do it for a living. US Department of Energy, Energy Reno-
+vations: Insulation
+
+
+
+
+
+                                                                           235

@@ -10,15 +10,16 @@
   //      all of it on load would cost seconds on a phone, so we render a few
   //      sections and extend as the reader approaches the end of what's built.
   import { onMount, tick } from 'svelte';
-  import { marked } from 'marked';
-  import DOMPurify from 'isomorphic-dompurify';
+  import { renderMarkdown } from '$lib/utils/bookMarkdown.js';
+  import { splitBookFigures } from '$lib/bookScenes/segments.js';
+  import { interactiveRegistry } from '$lib/components/interactives/registry.js';
+  import '$lib/styles/book-figures.css';
+  import 'katex/dist/katex.min.css';
   import { sectionsWithBody, book } from '$lib/bookContent';
-  import imageDimensions from '$lib/data/book/image-dimensions.json';
   import { readingPosition } from '$lib/stores/readingPosition';
   import { readerFontSize } from '$lib/stores/readerFontSize';
 
-  // "part-N" entries are structural dividers, not prose. They stay in the flow
-  // as section breaks, which is what they are in the printed book too.
+  // Part dividers include canonical introductions and artwork as well as titles.
   const sections = sectionsWithBody;
   const isDivider = (s) => s.id.startsWith('part-');
 
@@ -33,27 +34,6 @@
     return out;
   })();
 
-  function renderMarkdown(raw) {
-    if (!raw) return '';
-    const html = DOMPurify.sanitize(marked(raw));
-    // Applied to the sanitized output - after DOMPurify, never before, so we
-    // are not handing it markup to re-parse.
-    //
-    // The width/height pair is what makes "put me back where I was" work. The
-    // markdown carries no dimensions, so without these the browser cannot
-    // reserve space for an image until it downloads it, and every arrival
-    // shoves the prose below it down the page. Restoring a position against a
-    // document that is still growing lands the reader in the wrong chapter.
-    // With the intrinsic size declared (and CSS keeping width:100%;height:auto)
-    // the box is correct before a single byte arrives, so nothing shifts.
-    return html.replace(/<img ([^>]*?)src="([^"]+)"/g, (match, pre, src) => {
-      const name = src.split('/').pop();
-      const size = imageDimensions[name];
-      const dims = size ? ` width="${size[0]}" height="${size[1]}"` : '';
-      return `<img loading="lazy" decoding="async"${dims} ${pre}src="${src}"`;
-    });
-  }
-
   const INITIAL_MOUNT = 3;
   const MOUNT_STEP = 2;
 
@@ -61,6 +41,7 @@
   let currentIndex = 0;
   let progress = 0;
   let tocOpen = false;
+  let tocDialog;
   let restoredFrom = null;   // section title we jumped back to, for the notice
   let sectionEls = [];
   let sentinel;
@@ -165,7 +146,24 @@
     if (!el || !scroller) return;
     const rect = el.getBoundingClientRect();
     const top = scrollTop() + rect.top + rect.height * ratio - viewportH() * 0.3;
-    scroller.scrollTo({ top: Math.max(0, top), behavior });
+    scroller.scrollTo({ top: Math.max(0, top), behavior: motionBehavior(behavior) });
+  }
+
+  function motionBehavior(behavior) {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : behavior;
+  }
+
+  async function openToc() { tocOpen = true; await tick(); tocDialog.showModal(); }
+  function closeToc() { tocOpen = false; tocDialog.close(); }
+  function dismissBackdrop(event) {
+    if (event.target !== tocDialog) return;
+    const bounds = tocDialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeToc();
+  }
+  function focusSection(index) {
+    const heading = sectionEls[index]?.querySelector('h1, h2');
+    heading?.setAttribute('tabindex', '-1');
+    heading?.focus({ preventScroll: true });
   }
 
   // Put the reader back roughly where they were. "Roughly" is the whole spec:
@@ -187,17 +185,20 @@
   }
 
   async function jumpTo(index) {
-    tocOpen = false;
+    closeToc();
     restoredFrom = null;
     await scrollToSection(index, 0, 'smooth');
+    focusSection(index);
   }
 
-  function startOver() {
+  async function startOver() {
     restoredFrom = null;
     readingPosition.clear();
     mountedCount = INITIAL_MOUNT;
     suppressSaveUntil = Date.now() + 2500;
-    scroller?.scrollTo({ top: 0, behavior: 'smooth' });
+    await tick();
+    focusSection(0);
+    scroller?.scrollTo({ top: 0, behavior: motionBehavior('smooth') });
   }
 
   onMount(() => {
@@ -274,7 +275,7 @@
   <!-- ── STICKY BAR ── -->
   <header class="bar">
     <div class="bar-inner">
-      <button class="bar-btn" on:click={() => (tocOpen = !tocOpen)} aria-expanded={tocOpen} aria-controls="reader-toc">
+      <button class="bar-btn" on:click={openToc} aria-label="Chapters" aria-haspopup="dialog" aria-expanded={tocOpen} aria-controls="reader-toc">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
           <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
@@ -294,13 +295,12 @@
   </header>
 
   <!-- ── TOC DRAWER ── -->
-  {#if tocOpen}
-    <button class="toc-scrim" on:click={() => (tocOpen = false)} aria-label="Close chapter list"></button>
-  {/if}
-  <nav id="reader-toc" class="toc" class:is-open={tocOpen} aria-hidden={!tocOpen}>
+  <!-- Backdrop click is an extra dismissal path. Native Escape and the Close button provide keyboard dismissal. -->
+  <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
+  <dialog id="reader-toc" class="toc" class:is-open={tocOpen} bind:this={tocDialog} aria-labelledby="reader-toc-heading" on:close={() => (tocOpen = false)} on:click={dismissBackdrop}>
     <div class="toc-head">
-      <p class="toc-heading">Chapters</p>
-      <button class="toc-close" on:click={() => (tocOpen = false)} aria-label="Close">&times;</button>
+      <p class="toc-heading" id="reader-toc-heading">Chapters</p>
+      <button class="toc-close" on:click={closeToc} aria-label="Close chapter list">&times;</button>
     </div>
     <ol class="toc-list">
       {#each sections as section, i}
@@ -322,7 +322,7 @@
     <div class="toc-foot">
       <a href="/book" class="toc-foot-link">Back to the book page</a>
     </div>
-  </nav>
+  </dialog>
 
   <!-- ── RESUME NOTICE ── -->
   {#if restoredFrom}
@@ -337,14 +337,18 @@
     {#each mounted as section, i (section.id)}
       <section class="section" class:is-divider={isDivider(section)} bind:this={sectionEls[i]} id="s-{section.id}">
         {#if isDivider(section)}
-          <div class="divider">
-            <span class="divider-rule" aria-hidden="true"></span>
-            <h2 class="divider-title">{section.title}</h2>
-            <span class="divider-rule" aria-hidden="true"></span>
-          </div>
+          <article class="prose divider-prose">{@html renderMarkdown(section.raw)}</article>
         {:else}
           <article class="prose">
-            {@html renderMarkdown(section.raw)}
+            {#each splitBookFigures(section.raw) as segment}
+              {#if segment.type === 'markdown'}
+                {@html renderMarkdown(segment.raw)}
+              {:else if interactiveRegistry[segment.id]}
+                {#key segment.id}
+                  <svelte:component this={interactiveRegistry[segment.id]} id={segment.id} src={segment.src} alt={segment.alt} caption={segment.caption} />
+                {/key}
+              {/if}
+            {/each}
           </article>
         {/if}
       </section>
@@ -464,14 +468,8 @@
   }
 
   /* ── TOC DRAWER ── */
-  .toc-scrim {
-    position: fixed;
-    inset: 0;
-    z-index: 40;
-    background: rgba(2, 6, 23, 0.6);
-    border: none;
-    cursor: pointer;
-  }
+  .toc::backdrop { background: rgba(2, 6, 23, 0.6); }
+  .toc:not([open]) { display: none; }
   .toc {
     position: fixed;
     top: 0;
@@ -479,6 +477,11 @@
     bottom: 0;
     z-index: 50;
     width: min(88vw, 340px);
+    height: 100%;
+    max-height: none;
+    max-width: none;
+    margin: 0;
+    padding: 0;
     background: #0b1220;
     border-right: 1px solid var(--border);
     transform: translateX(-100%);
@@ -603,23 +606,7 @@
   }
   .section { scroll-margin-top: calc(var(--bar-h) + 16px); }
 
-  .divider {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: clamp(48px, 10vw, 96px) 0;
-  }
-  .divider-rule { flex: 1; height: 1px; background: var(--border); }
-  .divider-title {
-    margin: 0;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--amber);
-    text-align: center;
-  }
+  .divider-prose { border-top: 1px solid var(--border); }
 
   .prose {
     font-size: var(--prose-size);

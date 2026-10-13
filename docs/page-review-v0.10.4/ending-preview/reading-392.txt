@@ -1,0 +1,32 @@
+APPENDIX F
+Glossary
+Every term this book leans on, in plain words, with the chapter that explains it.
+Definitions here follow how this book uses a word; other writers may use it dif-
+ferently.
+Accelerating Change. One of three ways of thinking about the Singularity:
+technology feeds on itself and speeds up, so you can read the curve and
+name a date. This book declines it as a planning tool. (Chapter 1)
+Adequate  Level  of  Care. The bookʼs yardstick for a community: can it
+make sure the people who live there have food, shelter, and basic care,
+dependably, including through a bad week? (Chapter 18)
+AGI (artificial general intelligence). A system that can do the range of
+intellectual work people can. The authorʼs forecast for it is U.S. Thanks-
+giving, November 25, 2027; itʼs a forecast, not a finding. (Chapters 1 and 2)
+Algorithmic  judo. Wrapping  useful,  practical  knowledge  in  a  human
+story strong enough that a recommendation system carries it to people
+for you. (Chapter 10)
+ASI (artificial superintelligence). A mind far beyond ours in every field.
+In this bookʼs map, Stages 6 and 7. (Chapter 3)
+Cognitive firewall. Treating your attention the way a security engineer
+treats a critical server: batch your inputs, prefer text, and control what
+crosses into your head. (Chapter 8)
+Community  land  trust. Usually  a  nonprofit,  governed  partly  by  the
+people who live on and around its land. In a common housing model, it
+holds the land while households own homes under long ground leases
+with resale restrictions. Other uses need their own agreements. (Chapters
+12 and 15)
+Create Over Consume. The protocol of spending your attention and hours
+making  things  (writing,  building,  recording,  teaching)  instead  of  only
+absorbing whatʼs fed to you. (Chapter 10)
+APPENDIX F
+387

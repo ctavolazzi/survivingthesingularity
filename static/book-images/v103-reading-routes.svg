@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 376" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">THREE WAYS INTO THE BOOK</title>
+<desc id="desc">Three reading routes. The short route links the Introduction, Chapter 19 and Appendix C. A wider view adds the Preface, Chapters 6 and 12, and the Conclusion. The full route reads every section in order, following Elijah through the chapters.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">THREE WAYS INTO THE BOOK</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Start with the route you need.</text>
+<text x="20" y="108" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">01  THE SHORT ROUTE</text>
+<path d="M50 131L431 131" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="50" cy="131" r="5" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<text x="50" y="158" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Intro</text>
+<circle cx="240" cy="131" r="5" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<text x="240" y="158" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Ch. 19</text>
+<circle cx="431" cy="131" r="5" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<text x="431" y="158" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">App. C</text>
+<text x="20" y="196" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">02  WIDEN THE VIEW: ADD</text>
+<path d="M50 219L417 219" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<circle cx="50" cy="219" r="5" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+<text x="50" y="246" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Preface</text>
+<circle cx="173" cy="219" r="5" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+<text x="173" y="246" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Ch. 6</text>
+<circle cx="295" cy="219" r="5" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+<text x="295" y="246" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Ch. 12</text>
+<circle cx="417" cy="219" r="5" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+<text x="417" y="246" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Conclusion</text>
+<text x="20" y="285" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">03  THE WHOLE THING</text>
+<path d="M20 309H449M442 303L449 309L442 315" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="20" y="340" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Read in order. Follow Elijah&#x27;s story.</text>
+</svg>

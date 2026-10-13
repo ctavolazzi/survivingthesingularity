@@ -1,10 +1,12 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
 
     import Spacer from '$lib/components/Spacer.svelte';
     import { post } from '$lib/data/blog-posts/claude-projects-weekend-project/index.js';
     import { marked } from 'marked';
     import RecommendedContent from '$lib/components/RecommendedContent.svelte';
     import SocialShare from '$lib/components/SocialShare.svelte';
+    import LiteYouTube from '$lib/components/LiteYouTube.svelte';
 
     const renderer = new marked.Renderer();
     renderer.link = (href, title, text) => {
@@ -19,33 +21,25 @@
       return `<a href="${href}" title="${title || ''}" target="_blank" rel="noopener noreferrer">${text}</a>`;
     };
 
-    let htmlContent = marked(post.content, { renderer });
+    // The post's markdown carries one raw YouTube embed. A direct embed fetches
+    // YouTube's player and sets its cookies as the page opens, and markdown
+    // rendered with {@html} cannot hold a component. So render the text on
+    // either side of the embed and put the click-to-load player between them.
+    // If the markdown ever loses the embed, the whole text renders as before.
+    const EMBED = /<div[^>]*>\s*<iframe[^>]*youtube(?:-nocookie)?\.com\/embed\/([\w-]+)[^>]*>\s*<\/iframe>\s*<\/div>/;
+    const embed = post.content.match(EMBED);
+    const htmlBefore = marked(embed ? post.content.slice(0, embed.index) : post.content, { renderer });
+    const htmlAfter = embed ? marked(post.content.slice(embed.index + embed[0].length), { renderer }) : '';
 
-    const recommendedVideos = [
-      {
-        id: "GYBT66bPfu8",
-        title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time Frame-by-Frame"
-      },
-      {
-        id: "PNqwvJCz_2w",
-        title: "Game Over? Voice Actors vs AI"
-      },
-      {
-        id: "YLo7EH2zsW0",
-        title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
-      }
-    ];
+    const recommendedVideos = [];
 </script>
 
 <svelte:head>
     <title>{post.title} | Surviving the Singularity</title>
     <meta name="description" content="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI." />
-    <meta property="og:title" content={post.title} />
-    <meta property="og:description" content="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI." />
-    <meta property="og:image" content={post.imageUrl} />
-    <meta property="og:type" content="article" />
-    <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
+
+<SocialMeta title={post.title} description="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI." />
 
 <div class="blog-post">
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
@@ -88,7 +82,13 @@
       </p>
 
       <div class="blog-content">
-        {@html htmlContent}
+        {@html htmlBefore}
+        {#if embed}
+          <div class="post-video">
+            <LiteYouTube videoId={embed[1]} title="Claude Projects tutorial" />
+          </div>
+        {/if}
+        {@html htmlAfter}
       </div>
     </div>
   </article>
@@ -155,6 +155,14 @@
   .content {
     font-size: 1.125rem;
     line-height: 1.75;
+  }
+
+  /* The same full-width 16:9 box the markdown's inline-styled wrapper drew. */
+  .post-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
   }
 
   .lead {

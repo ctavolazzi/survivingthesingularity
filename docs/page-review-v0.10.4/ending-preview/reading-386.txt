@@ -1,0 +1,36 @@
+In 2026, it began reaching a wider audience.
+The 2026 return
+Newsweek ran an explainer calling cyberdecks Gen Zʼs new DIY obses-
+sion. Newsweek, What is a cyberdeck TechCrunch covered the same wave
+from a different door: communities that had exploded thanks largely to
+women on social media, building artistic, hyper-personal machines and
+documenting  every  step,  including  one  builderʼs  seashell  that  hides  a
+small  computer  and  a  local  AI.  TechCrunch,  Cyberdecks  are  having  a
+moment
+The interesting part isnʼt the look. Itʼs the stated reason. Ask the people
+building these why, and a lot of them give you the argument this book has
+been making: they want a device thatʼs theirs, that isnʼt quietly watching
+them, that nobody can meter or brick from a server, and that they can fix
+with parts from a thrift store.
+Thatʼs the smart-home trap from Chapter 17, understood from the inside
+and answered with a soldering iron. Itʼs Create Over Consume wearing a
+case somebody printed at two in the morning. And itʼs worth an appendix
+because  itʼs  one  of  the  few  places  in  consumer  culture  where  lots  of
+ordinary people are voluntarily walking back out of the walled garden, on
+their own. Thatʼs a signal. Signals like that are why you watch culture and
+not just earnings calls.
+Why this belongs in a survival book
+Strip the aesthetics and a cyberdeck bundles four capabilities that keep
+working when the network doesnʼt:
+Local knowledge. An offline copy of the reference material youʼd
+otherwise search for. The open-source Kiwix project packages all of
+Wikipedia, plus medical libraries, repair guides, and more, into files
+that live on the device. When the towers drop, as they do in the
+Chapter 17 storm, the librarian is still in your pack.
+Local intelligence. A small language model running on the device
+itself, no network required: a pocket version of the Crucible from
+Chapter 11. Its answers still need checking, like any modelʼs.
+1. 
+2. 
+APPENDIX E
+381

@@ -97,6 +97,19 @@ messages, ad campaigns or test purchases were sent during this review.
 
 ## Automatic Cloudflare deployment gate
 
+Production configuration remains managed in the Cloudflare Pages dashboard.
+Do not add a root `wrangler.json`, `wrangler.jsonc` or `wrangler.toml` containing
+`pages_build_output_dir` without first importing and reviewing the existing
+dashboard configuration. Cloudflare treats that file as the source of truth,
+including ordinary environment variables. An empty `vars` configuration can
+discard the existing sender and database URL while retaining secret bindings.
+See [Cloudflare's migration instructions](https://developers.cloudflare.com/pages/functions/wrangler-configuration/#migrate-from-dashboard-configuration).
+
+The runtime smoke test reads `tests/fixtures/cloudflare-runtime.json` and copies
+it into its isolated temporary directory. That fixture is not a production
+configuration file. The SvelteKit adapter still emits `.svelte-kit/cloudflare`
+without a root Wrangler file; keep that as the Pages dashboard output directory.
+
 The existing GitHub–Cloudflare Pages integration publishes `main`; a local
 Cloudflare login is not required to trigger it. The release now runs
 `scripts/check-hosted-deployment.mjs` from a build-only Vite plugin, before the

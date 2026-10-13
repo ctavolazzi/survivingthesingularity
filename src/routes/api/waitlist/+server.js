@@ -101,22 +101,26 @@ export async function POST(event) {
   }
   const supabase = supabaseAdmin;
 
-  let { error } = await supabase
+  const { error } = await supabase
     .from('waitlist')
     .insert({ email, source, newsletter_consent: newsletterConsent, book_release_consent: bookReleaseConsent });
 
-  // Graceful fallback: if the consent columns don't exist yet (migration not
-  // run) or aren't in PostgREST's schema cache, capturing the email still
-  // matters most - retry with the minimal row so the funnel never hard-fails.
+  // Consent must be recorded with the signup. A missing migration or stale
+  // schema cache is an outage, not permission to discard the visitor's choices.
   // 42703 = undefined column; PGRST204 = column not found in schema cache.
   if (error && (error.code === '42703' || error.code === 'PGRST204')) {
-    console.warn('[waitlist] consent columns missing - run sql/001_waitlist.sql. Falling back to email-only insert.');
-    ({ error } = await supabase.from('waitlist').insert({ email, source }));
+    console.error('[waitlist] consent columns unavailable; check sql/001_waitlist.sql and the schema cache.');
+    return json({ error: 'Signups are temporarily unavailable. Please try again later.' }, { status: 503 });
   }
 
   if (error) {
     if (error.code === '23505') {
-      return json({ error: 'already_subscribed' }, { status: 409 });
+      // An unauthenticated submission cannot change an existing address's
+      // consent. Keep the existing record, including prior opt-outs, intact.
+      return json({
+        error: 'already_subscribed',
+        message: 'This address is already registered. Your email preferences have not changed. Use the unsubscribe link in an email, or contact us to request changes.',
+      }, { status: 409 });
     }
     console.error('[waitlist insert]', error.message);
     return json({ error: 'Something went wrong. Try again.' }, { status: 500 });

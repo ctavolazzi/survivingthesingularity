@@ -18,20 +18,7 @@
   };
 
   // Recommended videos related to agriculture, robotics, and sustainability
-  const recommendedVideos = [
-    {
-      id: "YLo7EH2zsW0",
-      title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
-    },
-    {
-      id: "U1tQbD25dGY",
-      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
-    },
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    }
-  ];
+  const recommendedVideos = [];
 
   let isImageLoaded = false;
   let mounted = false;

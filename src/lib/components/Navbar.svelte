@@ -5,6 +5,7 @@
   import { browser } from '$app/environment';
   import { readerMode } from '$lib/stores/readerMode';
   import { offer } from '$lib/offer';
+  import { containModalFocus } from '$lib/modalFocus';
 
   // Vestigial. Accounts were removed 2026-08-04 by CT's ruling, so there is no
   // user to pass down and no account control to render. Kept as an accepted
@@ -19,9 +20,14 @@
   let navEl;
   let lastFocused = null;
   let scrolled = false;
+  let releaseModalFocus;
+  let openGeneration = 0;
+  let priorOverflow = '';
+  let priorPadding = '';
 
   // Desktop nav links - minimal: the book and context
   const desktopLinks = [
+    { href: '/sample', label: 'Read a sample' },
     { href: '/book', label: 'The Book' },
     { href: '/blog', label: 'Blog' },
   ];
@@ -40,7 +46,13 @@
         {
           href: '/book',
           label: 'The Book',
-          sub: 'Full draft, open now. Read it as it gets written.',
+          sub: 'Full draft for early-access readers. Use the code from your order email.',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
+        },
+        {
+          href: '/sample',
+          label: 'Sample & reading guide',
+          sub: 'Read the introduction and find your starting point. No email or purchase needed.',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
         },
       ],
@@ -75,17 +87,23 @@
   $: hideForReaderMode = $readerMode && currentPath.startsWith('/book');
 
   function open() {
+    if (isOpen) return;
+    const generation = ++openGeneration;
     lastFocused = browser ? document.activeElement : null;
+    priorOverflow = browser ? document.body.style.overflow : '';
+    priorPadding = browser ? document.body.style.paddingRight : '';
     const sbw = browser ? window.innerWidth - document.documentElement.clientWidth : 0;
     if (sbw > 0 && browser) document.body.style.paddingRight = sbw + 'px';
     isOpen = true;
     if (browser) document.body.style.overflow = 'hidden';
     tick().then(() => {
+      if (!isOpen || generation !== openGeneration) return;
       if (drawerEl) {
         drawerEl.inert = false;
         drawerEl.classList.add('open');
         drawerEl.querySelectorAll('.drawer-section-label, .drawer-link, .drawer-divider, .drawer-cta')
           .forEach((el, i) => el.style.setProperty('--i', i));
+        releaseModalFocus = containModalFocus(drawerEl, drawerEl.querySelector('.drawer-close'), [overlayEl]);
       }
       if (overlayEl) overlayEl.classList.add('open');
       if (hamburgerEl) {
@@ -97,6 +115,10 @@
   }
 
   function close() {
+    if (!isOpen) return;
+    openGeneration++;
+    releaseModalFocus?.();
+    releaseModalFocus = undefined;
     if (drawerEl) { drawerEl.classList.remove('open'); drawerEl.inert = true; }
     if (overlayEl) overlayEl.classList.remove('open');
     if (hamburgerEl) {
@@ -106,8 +128,8 @@
     }
     isOpen = false;
     if (browser) {
-      document.body.style.overflow = '';
-      document.body.style.paddingRight = '';
+      document.body.style.overflow = priorOverflow;
+      document.body.style.paddingRight = priorPadding;
     }
     if (lastFocused?.focus) lastFocused.focus();
   }
@@ -122,13 +144,6 @@
 
   function handleKey(e) {
     if (e.key === 'Escape' && isOpen) { close(); return; }
-    if (e.key === 'Tab' && isOpen && drawerEl) {
-      const focusable = drawerEl.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
-      if (!focusable.length) return;
-      const first = focusable[0], last = focusable[focusable.length - 1];
-      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-    }
   }
 
   function handleScroll() { scrolled = window.scrollY > 20; }
@@ -179,9 +194,14 @@
 
   onDestroy(() => {
     if (!browser) return;
+    openGeneration++;
     window.removeEventListener('scroll', handleScroll);
     window.removeEventListener('keydown', handleKey);
-    document.body.style.overflow = '';
+    releaseModalFocus?.();
+    if (isOpen) {
+      document.body.style.overflow = priorOverflow;
+      document.body.style.paddingRight = priorPadding;
+    }
   });
 </script>
 
@@ -255,6 +275,7 @@
   aria-modal="true"
   aria-label="Site menu"
   aria-hidden={!isOpen}
+  tabindex="-1"
   use:enableSwipe
 >
   <div class="drawer-head">
@@ -525,7 +546,7 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.14em;
-    color: rgba(245, 158, 11, 0.45);
+    color: #fbbf24;
     padding: 8px 10px 4px;
     animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) backwards;
     animation-delay: calc(var(--i, 0) * 0.03s + 0.06s);
@@ -568,8 +589,8 @@
 
   .drawer-link-meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .drawer-link-label { font-size: 0.88rem; font-weight: 700; color: inherit; line-height: 1.25; }
-  .drawer-link-sub { font-size: 0.78rem; font-weight: 400; color: #64748b; line-height: 1.3; }
-  .drawer-link.is-current .drawer-link-sub { color: rgba(245, 158, 11, 0.5); }
+  .drawer-link-sub { font-size: 0.78rem; font-weight: 400; color: #94a3b8; line-height: 1.3; }
+  .drawer-link.is-current .drawer-link-sub { color: #fbbf24; }
 
   /* ── DRAWER FOOTER ── */
   .drawer-footer {
@@ -595,7 +616,7 @@
 
   .drawer-secondary-cta {
     display: block; text-align: center;
-    font-size: 0.8rem; font-weight: 600; color: #64748b;
+    font-size: 0.8rem; font-weight: 600; color: #94a3b8;
     text-decoration: none;
     padding: 6px;
     transition: color 0.15s;

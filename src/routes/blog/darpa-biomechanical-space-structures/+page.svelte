@@ -15,20 +15,7 @@
   };
 
   // Recommended videos related to space technology, AI, and future innovations
-  const recommendedVideos = [
-    {
-      id: "U1tQbD25dGY",
-      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
-    },
-    {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    }
-  ];
+  const recommendedVideos = [];
 </script>
 
 <svelte:head>

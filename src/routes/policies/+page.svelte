@@ -4,6 +4,7 @@
   // for why: the sales pages and this page used to describe two different
   // transactions, and the fix is one object rather than better proofreading.
   import { offer, cadence, refundClause } from '$lib/offer';
+  import book from '$lib/data/book/book.json';
 
   onMount(() => {
     if (window.location.hash) {
@@ -41,7 +42,7 @@
   <div class="policies-inner">
     <header class="p-header">
       <h1>Our Policies</h1>
-      <p class="p-sub">Last updated: 1 August 2026.</p>
+      <p class="p-sub">Last updated: 12 October 2026.</p>
     </header>
 
     <section id="what-you-buy" class="p-section">
@@ -78,127 +79,124 @@
 
     <section id="privacy-policy" class="p-section">
       <h2>Privacy &amp; Contact</h2>
-      <!-- RE-UPDATED 2026-08-04 when accounts were removed. This paragraph
-           briefly disclosed a sign-in session cookie while /signup existed
-           (2026-08-01 to 2026-08-04); accounts are gone, so the no-first-party-
-           cookies statement is true again. The privacy policy is the one
-           document on the site where being out of date is itself the harm:
-           re-check, do not trust, if auth ever returns. -->
       <p>
-        <strong>Website Usage:</strong> This site does not run third-party analytics or advertising tags, and sets no tracking, advertising, or sign-in cookies, as of the last-updated date above. There are no user accounts (see <a href="#accounts">Accounts</a>). The site may store a small number of strictly-functional values in browser localStorage, for example whether you have dismissed the disclaimer banner. Outbound links to third-party services such as Substack, Ko-fi, YouTube, and Spotify will be subject to those services' own privacy practices once you click through. You should review their policies separately.
+        <strong>Website usage:</strong> The site uses Cloudflare for hosting and
+        delivery, including performance measurements. Requests may include your
+        IP address, browser information, requested URL, and timing information.
+        The site does not use advertising tags or create user accounts. Browser
+        localStorage keeps functional preferences such as disclaimer choices,
+        checklist progress and notes, and whether you have unlocked the reader.
+        These local values stay in that browser unless you use a feature that
+        sends them, such as emailing your checklist.
+      </p>
+      <p>
+        <strong>Videos and external services:</strong> YouTube preview images
+        load from YouTube's image service when shown. Pressing play loads a
+        YouTube player, which can process information under Google's privacy
+        policy. Some articles also contain embedded media from external services.
+        Following links to Substack, Ko-fi, YouTube, Spotify, Discord, or other
+        services brings you under their terms and privacy practices. The site
+        does not control those services' cookies or data handling.
+      </p>
+      <p>
+        <strong>Do Not Track and Global Privacy Control:</strong> This site does
+        not currently detect or respond to DNT or GPC signals. Personal
+        information is not sold for third-party marketing.
+      </p>
+      <p>
+        <strong>Children:</strong> This site is not directed to children under
+        13 and does not knowingly collect their personal information. Contact
+        <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a> if you
+        believe a child has submitted personal information.
       </p>
 
-      <!-- DRAFTED 2026-07-29. CalOPPA requires a site collecting personal
-           information from California residents to disclose HOW it responds to
-           Do Not Track signals. It does not require honouring them, so the
-           compliant move is an accurate statement, and the statement below is
-           accurate as measured: grep found zero references to DNT, Sec-GPC,
-           navigator.doNotTrack or globalPrivacyControl anywhere in
-           hooks.server.js or the rest of src, so nothing reads those headers.
-
-           ONE THING TO CONFIRM BEFORE THIS GOES LIVE: static/_headers allows
-           static.cloudflareinsights.com in script-src and cloudflareinsights.com
-           in connect-src. Cloudflare Web Analytics is injected at the edge, not
-           from this repo, so whether it is actually enabled cannot be determined
-           from the source. If it IS enabled, the "no third-party analytics"
-           sentence in the paragraph above needs qualifying. Check the Cloudflare
-           dashboard. -->
-      <p>
-        <strong>Do Not Track and Global Privacy Control:</strong> Some browsers
-        can send a Do Not Track (DNT) header or a Global Privacy Control signal.
-        This site does not currently detect or respond to either one. That is
-        stated plainly rather than dressed up, because the honest position is
-        that there is very little here for such a signal to switch off: the site
-        runs no advertising tags and no cross-site tracking, so there is no
-        behavioural profile being built to opt out of. If that ever changes, this
-        section changes with it.
-      </p>
-
-      <p>
-        <strong>Children:</strong> This site is not directed to children under 13. Personal information from children under 13 is not knowingly collected. If you believe a child has provided personal information, you may contact
-        <!-- Was info@thecoffeejesus.com, a leftover from before the contact
-             address was migrated on 2026-07-29. Every other address on this page
-             already derives from the offer module; this one had been missed, so a
-             child-safety report would have gone to a stale inbox. -->
-        <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a>;
-        review on a best-available-basis with no guaranteed action is contemplated.
-      </p>
-
-      <!-- Accounts were removed 2026-08-04 by CT's ruling: the identity model
-           is the purchase email, nothing else. Every claim in this block is
-           checkable against code:
-             what is stored on purchase -> src/lib/server/transactions.js
-                                           (recordCheckoutCompleted)
-             what purchase email sends  -> src/lib/server/email.js
-             consent at checkout        -> src/routes/api/stripe-checkout/+server.js -->
       <section id="accounts">
+        <h3>Access and purchases</h3>
         <p>
-          <strong>No accounts:</strong> This site has no user accounts, no
-          profiles, no passwords, and no sign-in. There is nothing to register
-          for and no login cookie to set. Everything readable on the site is
-          readable by anyone with the link, and paid content is delivered by
-          email instead of behind a login.
+          <strong>No personal accounts:</strong> There are no profiles or
+          individual sign-ins. The full online draft uses a shared book-access
+          password; this is separate from an account password. The
+          <a href="/sample">public sample and reading guide</a> need no password.
+          {offer.access}
         </p>
-
         <p>
-          <strong>What buying the book stores:</strong> When you preorder, the
-          record kept is the one the payment created: the email address and name
-          you gave at checkout, what you bought, what you paid, and the payment
-          reference. That record is the whole of your identity here. It exists
-          so your purchase can be delivered, looked up if something goes wrong,
-          and honored when future editions ship.
+          <strong>Checkout records:</strong> When you start checkout, we send
+          your email to Stripe and keep a checkout record, even if you do not
+          finish paying. A completed purchase record includes the email and
+          name supplied at checkout, the product, amount, currency, payment
+          references, and fulfillment status. Stripe processes payment details;
+          the site does not store your full card number. These records support
+          delivery, purchase recovery, refunds, and the benefits of your order.
         </p>
-
         <p id="purchase-emails">
-          <strong>What your purchase email is used for:</strong> Buying the book
-          means we will email you: the receipt and download delivery for the
-          edition you bought, and notice when a new edition of the book is
-          released, including any upgrade discount your purchase entitles you
-          to (up to and including free, depending on the terms current at that
-          release). These messages are part of what you bought, not a
-          newsletter. Each one carries an unsubscribe link, and unsubscribing
-          from release notices never affects your access to what you already
-          purchased.
+          <strong>Purchase email:</strong> We use your purchase address to send
+          the receipt, downloads, access instructions, and substantial digital
+          edition updates while the project is maintained. Digital updates for
+          this preorder cohort are included; a future Print Edition is a
+          separate discounted purchase. Release notices can be unsubscribed
+          from without losing material you already purchased.
         </p>
-
         <p>
-          <strong>Marketing is a separate decision:</strong> Buying the book is
-          not permission to send you marketing. If you want the newsletter you
-          have to ask for it separately, and you can stop it at any time from
-          the unsubscribe link in any message.
-        </p>
-
-        <p>
-          <strong>Removing your data:</strong> Write to
-          <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a> and
-          say so. We will remove your email from the release-notice list and any
-          newsletter list. Records we are required to keep for a completed
-          purchase - the order itself, and what the payment processor holds -
-          survive that removal, because those are financial records rather than
-          contact preferences.
+          <strong>Email signup and preferences:</strong> A signup stores your
+          email, signup source, and the email preferences submitted with the
+          form. A checklist unlock or purchase is not permission for the weekly
+          newsletter. The newsletter requires a separate choice, and you can
+          unsubscribe using the link in an email or contact us to change your
+          preferences. Registering an address that is already on the list does
+          not change its existing preferences.
         </p>
       </section>
 
       <p>
-        <strong>Book Preorders &amp; Email Collection:</strong> Email addresses and payment information have been collected from people who preordered the book or requested advance copies. This information is used only for book fulfillment and communication about the book's progress.
+        <strong>Checklist notes:</strong> Your progress and notes are saved in
+        your browser. Choosing to email the checklist sends your address,
+        answers, checked steps, and notes to our server and email provider so
+        they can be included in the message to you. Avoid putting sensitive
+        personal information in these notes or in email.
       </p>
-
       <p>
-        <strong>Data Usage:</strong> Email addresses collected for preorder purposes are used in connection with book fulfillment and related communications. Payment information was processed through third-party payment processors for preorders. Personal information is not sold to third parties for marketing.
+        <strong>Community applications:</strong> The application form collects
+        your name, email address, and written answer. These are stored for review;
+        a confirmation is sent to you and the application is emailed to the
+        operator. Submitting an application does not subscribe you to marketing
+        or create a Discord account.
       </p>
-
       <p>
-        <strong>Book Status:</strong> The book is in active development and readable now, in the state it is currently in. The finished edition is targeted for September 2026. That is a target and not a guarantee, and it is the one date on this page that may move. Your access does not depend on it: the {offer.price} purchase delivers immediately and nothing about it waits for a release date.
+        <strong>Service providers:</strong> Supabase stores signup, application,
+        transaction, and delivery records. Resend sends transactional and
+        requested emails. Delivery records can include the recipient address,
+        message type, provider reference, timestamps, and delivery status.
+        Stripe processes payments and Cloudflare serves the site. These providers
+        process information needed to provide their services under their own
+        privacy and retention practices.
       </p>
-
       <p>
-        <strong>Preorder Refund Eligibility:</strong> {refundClause()}
+        <strong>Retention and removal:</strong> Contact
+        <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a> to
+        request access, correction, or deletion of information you submitted.
+        Signup and application records are kept to manage those requests;
+        transaction and delivery records support purchases and troubleshooting.
+        Financial records that must be retained for legal or accounting purposes
+        may remain after contact preferences are removed. Clear this site's
+        browser storage to remove locally saved progress and notes; doing so
+        does not delete a previously sent email or server record.
       </p>
-
       <p>
-        <strong>Contact:</strong> Preorder questions and refund requests may be sent to
-        <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a>.
-        No specific response time is promised; reasonable effort, when made, is informational and creates no obligation.
+        <strong>Book status:</strong> The current manuscript is version
+        {book.version}, updated {book.lastUpdated}. It remains in development.
+        There is no confirmed final-edition or print release date. The
+        {offer.price} purchase gives access to the current digital material
+        after payment; it does not wait for a future publication date.
+      </p>
+      <p>
+        <strong>Digital preorder refunds:</strong> {refundClause()}
+      </p>
+      <p>
+        <strong>Help with a purchase:</strong> Contact
+        <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a> from
+        the address used at checkout for access recovery, delivery issues,
+        preorder questions, or refunds. Include your payment reference if you
+        have it; do not send card details. No specific response time is promised.
       </p>
     </section>
 

@@ -30,7 +30,7 @@
   <div class="terms-inner">
     <header class="t-header">
       <h1>Terms of Use</h1>
-      <p class="t-sub">Last updated: 1 August 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
+      <p class="t-sub">Last updated: 12 October 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
     </header>
 
     <section class="t-section">
@@ -51,10 +51,7 @@
     <section class="t-section">
       <h2>2. Purchases and digital access</h2>
       <p>
-        <strong>This Site sells something.</strong> Until 29 July 2026 these
-        Terms did not say so, which left a reader of section 1 with the
-        impression that the Site is informational only and nothing is for sale.
-        That was wrong, and this section exists to correct it.
+        {offer.sentence}
       </p>
       <p>
         The Site offers a one-time {offer.price} preorder. It grants digital
@@ -171,8 +168,9 @@
     <section class="t-section">
       <h2>8. User submissions</h2>
       <p>
-        The Site does not currently solicit user-generated content. If you
-        contact the operator (for example, by email), you grant the operator
+        The Site accepts checklist notes for email delivery, community
+        applications, and messages to the operator. If you submit information
+        through these features or by email, you grant the operator
         a non-exclusive, royalty-free, worldwide license to use, reproduce,
         and respond to your communication for the purposes of operating and
         improving the Site. Do not send confidential information or anything
@@ -200,9 +198,9 @@
         <li>Attempt to interfere with, compromise, or circumvent the security of the Site;</li>
         <li>Misrepresent your identity or affiliation in any communication with the operator;</li>
         <li>Use the Site to harass, defame, or harm any person;</li>
-        <li>Create an account using an email address you do not control, or share your account credentials with anyone else;</li>
-        <li>Attempt to access another person's account, or to enumerate which email addresses have accounts;</li>
-        <li>Automate sign-in attempts, or attempt to defeat the rate limits applied to them.</li>
+        <li>Submit an email address you do not control or misrepresent another person's purchase;</li>
+        <li>Attempt to access another person's private purchase records;</li>
+        <li>Attempt to defeat rate limits on forms, checkout, or access checks.</li>
       </ul>
     </section>
 
@@ -216,10 +214,10 @@
         resolution) shall survive.
       </p>
       <p>
-        You may close your account at any time by contacting the operator (see
-        section 16). Closing your account does not revoke anything you have
-        already purchased: purchased material remains yours under the terms it
-        was sold on, and access to it can be restored without the account.
+        You may stop using the Site and request removal from email lists at
+        any time by contacting the operator (see section 16). Unsubscribing
+        does not revoke material you already purchased. Contact the operator
+        from your purchase email address if you need help recovering access.
       </p>
     </section>
 
@@ -333,39 +331,19 @@
       </p>
     </section>
 
-    <!-- Added when accounts shipped. Appended as 18 rather than inserted in
-         topic order on purpose: renumbering fifteen sections would break every
-         existing cross-reference and every link anyone has already saved to a
-         numbered clause. Sections 10, 11 and 16 were amended in place. -->
     <section class="t-section">
-      <h2>18. Accounts</h2>
+      <h2>18. Reader access</h2>
       <p>
-        Accounts are optional and free. Nothing that is readable without an
-        account requires one, and creating one is not a condition of any purchase.
+        The Site does not offer personal accounts or individual sign-ins.
+        {offer.access}
       </p>
       <p>
-        You must be at least 13 years old to create an account. You are
-        responsible for keeping your password or sign-in link private, and for
-        activity that happens under your account. Tell the operator promptly if
-        you believe someone else has access to it.
-      </p>
-      <p>
-        You must give an email address you actually control. Accounts registered
-        to an address belonging to someone else may be removed without notice.
-      </p>
-      <p>
-        Accounts are provided as they are, and the Site may change or withdraw
-        account features. Where a feature holds something you created - reading
-        position, checklist state - the operator will make a reasonable effort to
-        preserve or export it, but sections 3 and 4 (no warranties, limitation of
-        liability) apply to account features exactly as they apply to the rest of
-        the Site. Keep your own copy of anything you cannot afford to lose.
-      </p>
-      <p>
-        What is stored about an account, and what is done with it, is described
-        in the <a href="/policies#accounts">Privacy Policy</a>. Where these Terms
-        and that policy disagree about the handling of personal data, that policy
-        governs.
+        Browser storage keeps local reading preferences and checklist progress.
+        Keep your own copy of notes you need: clearing storage or changing
+        devices can remove these local values. What the Site collects and how
+        to request changes is described in the
+        <a href="/policies#accounts">Privacy Policy</a>. Where these Terms and
+        that policy disagree about personal data handling, that policy governs.
       </p>
     </section>
   </div>

@@ -17,10 +17,9 @@
  * abandoned carts all get a row, because all three are things you eventually
  * want to count.
  *
- * Every function here is best-effort and never throws. The ledger is
- * redundancy against Stripe; failing to write it must never take down the
- * fulfillment it is recording. A missing ledger row is a reporting gap, a
- * thrown error here would be a lost order.
+ * Functions return failures rather than throwing. Paid-session callers must
+ * check completion and fulfillment results and request a retry on failure.
+ * Initiated/expired rows remain best-effort visibility into abandoned carts.
  */
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 
@@ -91,8 +90,8 @@ export async function recordCheckoutInitiated({ sessionId, editionType = 'standa
  *   { ok: true,  configured: false }  no database wired up at all, nothing to do
  *   { ok: false, configured: true  }  a database IS wired up and the write FAILED
  *
- * Only the third is a reason to fail the request. Conflating it with the second
- * would make every local dev webhook return 500.
+ * Paid-session callers require configured AND ok. Missing configuration must
+ * never make a real payment look durably recorded.
  *
  * @param {{ sessionId: string, paymentIntent?: string|null, email?: string|null, name?: string, editionType?: string, amountTotal?: number|null, currency?: string|null }} args
  * @returns {Promise<{ ok: boolean, configured: boolean, error?: string }>}
@@ -160,14 +159,17 @@ export async function recordCheckoutExpired(sessionId) {
  * paid order nobody delivered.
  */
 export async function markTransactionFulfilled(sessionId) {
-  if (!supabaseAdmin || !sessionId) return;
+  if (!supabaseAdmin || !sessionId) return { ok: false, error: 'Database or session missing' };
   try {
-    const { error } = await supabaseAdmin
+    const { data, error } = await supabaseAdmin
       .from('checkout_transactions')
       .update({ fulfilled: true })
-      .eq('session_id', sessionId);
+      .eq('session_id', sessionId)
+      .select('session_id');
     report('markTransactionFulfilled', sessionId, error);
+    return { ok: !error && Boolean(data?.length), error: error?.message ?? (!data?.length ? 'Transaction missing' : undefined) };
   } catch (e) {
     console.error('[transactions] markTransactionFulfilled threw:', e?.message ?? e);
+    return { ok: false, error: e?.message ?? String(e) };
   }
 }

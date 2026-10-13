@@ -14,7 +14,7 @@ APOCRYPHA_ENTRIES, APOCRYPHA_DEBUNKED, APOCRYPHA_DEBUNKED_WORDS[_LC],
 INSIDE_TABLE.
 -->
 
-**{{CASE_COUNT}} documented cases of people meeting a machine that changed everything, and what they did next. Every source included, so you can check the work yourself.**
+**{{CASE_COUNT}} research case accounts about technology and human responses, with the available citations collected for inspection. Some accounts still need sources; a citation is a starting point for checking, not a guarantee of accuracy.**
 
 Free with your preorder of *Surviving the Singularity*. You did not pay extra for this. It comes with the book because an argument you cannot check is just a person talking.
 
@@ -24,55 +24,55 @@ Free with your preorder of *Surviving the Singularity*. You did not pay extra fo
 
 You preordered the book. This is the evidence drawer underneath it.
 
-*Surviving the Singularity* makes a claim that sounds like arrogance until you look at the receipts: we already know how this goes. Not the specifics, the shape. A machine arrives, it does something people were paid to do, and then a set of very human things happen in a very predictable order. Somebody laughs at it. Somebody legislates against it. Somebody writes that it is destroying the youth. Somebody quietly adopts it and eats the people who laughed.
+*Surviving the Singularity* uses history to ask how people respond when technology changes their work, institutions, and daily lives. These selected cases describe resistance, adoption, mistakes, and adaptation. They can suggest questions to ask about the present. They do not establish a universal sequence or show that one response always wins.
 
-That has happened at least {{CASE_COUNT_WORDS}} documented times. This file is all {{CASE_COUNT_WORDS}}, told in full, with the sources listed under each one.
+This file collects {{CASE_COUNT_WORDS}} accounts in a story, interpretation, and lesson format. Sources are listed where available and collected in `Sources-and-Citations.md`. Some accounts remain unsourced, and the collection has not received a complete independent fact-check. Check the cited source against the specific sentence before relying on it.
 
-Two numbers, because they are easy to confuse and this file is about checking work. The book closes each of its chapters with a precedent, and there are {{LEDGER_COUNT}} of those, numbered P-01 to P-{{LEDGER_MAX}}. This file holds {{CASE_COUNT}} cases, because the research turned up more than the book had room for. The ledger is the index; this is the drawer.
+Two counts describe different things. The current book indexes {{LEDGER_COUNT}} precedents, numbered P-01 to P-{{LEDGER_MAX}}, in Appendix D. This companion holds {{CASE_COUNT}} research cases. The cases and the manuscript have developed separately, so consult the current book and its references when checking a particular passage.
 
-The book uses these cases as short beats, one per chapter. Here they are at full length, including the parts that would not fit.
+The book draws on some of this research. A longer account here is background material, not proof that every detail survived review for the current manuscript.
 
 ## What is inside
 
 {{INSIDE_TABLE}}
 
-Some of the files above are marked "also free at" a public address. That is deliberate and it is not a mistake in your favour or ours. The book itself is free to read and free to download, with no login and no paywall, and it stays that way. Your five dollars buys the research drawer, the place in line, and the fact that you never pay the membership when it launches. It does not buy a hostage.
+Some files above are also available at a public download address. The public sample and reading guide at `https://survivingthesingularity.com/sample` need no account or password. The full online draft currently uses the shared access password included in your purchase email. Your preorder includes the current digital material and substantial digital updates while the project is maintained, with no recurring membership charge for preorder buyers. Print is a separate purchase under the terms of your order. Keep a local copy of your downloads; contact `info@survivingthesingularity.com` from your purchase email if you need help recovering access.
 
 ## What you can actually do with it
 
-**Check the book.** Every historical claim in *Surviving the Singularity* traces to a case in here, and every case traces to a source you can open. If a claim does not survive that trip, the book is wrong and you should say so.
+**Check a passage.** Look for its source in the current book, Appendix B, and the relevant account here. This companion is not a complete citation index for the book. Check dates, populations, quotations, and whether the source actually supports the interpretation. A missing or inaccessible source leaves a claim unverified; it does not by itself prove the claim false. Send specific errors or gaps to the address below.
 
-**Read the present.** The cases are not trivia. Each one ends with a mechanism, meaning the reason it happened rather than the fact that it happened. Mechanisms transfer. Once you have seen why Kodak died holding the patents on its own killer, you will recognise the same posture in a company you deal with this year.
+**Compare with the present.** The mechanism and lesson sections offer the author's interpretations. Ask what other explanations fit, which conditions differ, and what evidence would disconfirm the proposed analogy. A selected historical case cannot by itself predict what a company or community will do next.
 
-**Stop repeating fake history.** The last section, *Stories that are not true*, lists {{APOCRYPHA_ENTRIES}} famous quotes and anecdotes about technology panic that circulate constantly. {{APOCRYPHA_DEBUNKED_WORDS}} of them are fabricated or unsourced, and the last one is real but routinely overstated. The Western Union telephone memo. The teachers-versus-slates quote chain. "640K ought to be enough." Every one of them is a favourite of people making exactly the argument this book makes, and every one of them is a liability. Use the documented version instead. It is in there next to each debunking.
+**Examine disputed anecdotes.** The last section, *Stories that are not true*, discusses {{APOCRYPHA_ENTRIES}} quotations and stories, including the Western Union telephone memo, the teachers-versus-slates chain, and "640K ought to be enough." The companion identifies {{APOCRYPHA_DEBUNKED_WORDS_LC}} as fabricated or unsourced and one as based on a real event whose popular telling is overstated. Read the individual evidence and qualifications: an unsourced quotation is not proof that nobody ever said it.
 
-**Take the ordinance to a meeting.** The Municipal Autonomy Code is not a metaphor. It is drafted language. If your town council has ten minutes on the agenda, that document is the ten minutes.
+**Prepare a concrete discussion.** Appendix A in the included book, *Questions for a Food Baseline*, is the current discussion brief. It asks about need, access, work, resources, continuity, authority, and evidence. It is not an ordinance and grants no legal powers. Use it with affected people, existing food providers, relevant specialists, and the public body responsible for the decision. Older material called the *Municipal Autonomy Code* is not this edition's Appendix A.
 
-**Look up who is actually building this.** The Robotics Company Index is the working list: hundreds of companies with what they make, who they sell to, and where to find them. It is a spreadsheet, not an argument. Sort it, filter it, and go read three websites.
+**Find a research lead.** The Robotics Company Index is a working list of companies and links. Entries may be incomplete or out of date; inclusion is not an endorsement or verification of a company's claims. Use it to find current product documentation, operating limits, and independent evaluations.
 
 ## How to read it
 
 Do not read it front to back. It is a reference, not a narrative.
 
-The cases are grouped by what they demonstrate:
+The cases are grouped by the questions they explore:
 
-- **A. The graveyard.** Organisations that saw the wave clearly and died anyway.
-- **B. The adapters.** Same wave, different choice, still here.
-- **C. The suppression reflex.** Every era tries to solve a machine with a law. It has never once worked, and it always decides which country gets the industry.
-- **D. The panic lineage.** 230 years of adults being certain that the thing young people love is rotting their brains. Starting with books.
-- **E. Cyberdecks.** The current chapter of that same story, happening right now.
-- **F. Deep history.** The wave has been breaking for 11,500 years, since grain.
-- **G. The foresight file.** Confident published predictions, and what actually happened.
+- **A. The graveyard.** Accounts of incumbents that struggled during technological change.
+- **B. The adapters.** Accounts of firms that adapted, with different circumstances and outcomes.
+- **C. The suppression reflex.** Selected attempts to restrict technology. These cases do not establish that regulation always fails or alone determines where an industry develops.
+- **D. The panic lineage.** Historical arguments about new media, from reading to later forms of entertainment. Similar rhetoric does not establish that every concern is unfounded.
+- **E. Cyberdecks.** Contemporary computing projects as a topic for further inquiry.
+- **F. Deep history.** Longer historical comparisons, including agriculture and industrial change.
+- **G. The foresight file.** Selected published predictions compared with later events.
 
-If you only read one section, read D. It is the cheapest possible cure for taking the current moment personally.
+Start with a case relevant to a question you actually face, then inspect its citations and look for a counterexample.
 
 ## A word about what this book is
 
 It is not a prepper guide and this is not a bunker file.
 
-The argument runs the other way. If a robot can grow the food and build the house, the question stops being how one household hides from the future and starts being why anyone should have to rent their own survival. The work in Part III is neighbourhood work: shared tools, shared power, shared soil, a town that can feed and light itself for a season without asking permission. Emergency resilience, built locally, so that when something breaks the people around you are the system that holds.
+The book asks how technology could help make ordinary life more secure through shared provision. Part III considers useful local work, including food, tools, ownership, and public decisions. A proposed system still needs competent operators, funding, maintenance, appropriate permissions, and a tested fallback. Neither this collection nor a machine demonstration establishes that a household or town can meet all of its needs independently.
 
-The history in this file is what makes that argument something other than a hope. People have met this moment before. Some of them handled it well. Those are in here too.
+The history can inform those questions. It does not validate a proposed local system in advance; that takes present-day evidence and the participation of the people who would depend on it.
 
 ---
 

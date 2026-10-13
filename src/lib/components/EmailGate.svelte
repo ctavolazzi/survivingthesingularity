@@ -21,7 +21,7 @@
   export let sub = 'Enter your email and the full version opens right here.';
   export let buttonText = 'Unlock Free';
   export let forceUnlock = false;        // bypass gate without email (e.g. Discord click)
-  export let consentDefault = true;      // opt-out: pre-checked. Warm visitor, easy unsubscribe already in place.
+  export let consentDefault = false;     // Dispatches are optional and require an explicit opt-in.
 
   const LS_KEY = `sts_unlock_${storageKey}`;
 
@@ -31,6 +31,7 @@
   let honeypot = '';
   let state = 'idle'; // idle | loading | error
   let errorMsg = '';
+  let preferenceNotice = '';
 
   onMount(() => {
     if (browser && localStorage.getItem(LS_KEY)) {
@@ -62,6 +63,9 @@
       });
       const data = await res.json().catch(() => ({}));
       if (res.status === 201 || res.status === 409) {
+        if (res.status === 409) {
+          preferenceNotice = 'Your email preferences have not changed. Use the unsubscribe link in an email, or contact us to request changes.';
+        }
         if (browser) {
           localStorage.setItem(LS_KEY, '1');
           localStorage.setItem(LS_KEY + '_email', email);
@@ -85,6 +89,7 @@
 
 {#if unlocked || forceUnlock}
   <div class="gate-reveal">
+    {#if preferenceNotice}<p class="gate-meta" role="status">{preferenceNotice} <a href="mailto:ctavolazzi@gmail.com">Contact us</a>.</p>{/if}
     <slot name="gated" />
   </div>
 {:else}
@@ -126,13 +131,13 @@
 
       <label class="gate-consent">
         <input type="checkbox" bind:checked={subscribe} />
-        <span>Send me Signal Dispatches, occasional emails only when something changes your plan</span>
+        <span>Also send me Signal Dispatches and book release news (optional)</span>
       </label>
 
       {#if state === 'error'}
         <p class="gate-err" role="alert">{errorMsg}</p>
       {/if}
-      <p class="gate-meta">Not a newsletter. Skip it anytime. <a href="/policies">Privacy</a>.</p>
+      <p class="gate-meta">The checklist works without subscribing. Unsubscribe from updates anytime. <a href="/policies">Privacy</a>.</p>
       <slot name="gate-extra" />
     </div>
   </div>
@@ -223,7 +228,7 @@
     outline: none;
     transition: border-color 0.15s ease;
   }
-  .gate-input::placeholder { color: #64748b; }
+  .gate-input::placeholder { color: #94a3b8; }
   .gate-input:focus {
     border-color: rgba(245, 158, 11, 0.6);
   }
@@ -269,7 +274,7 @@
 
   .gate-meta {
     font-size: 0.76rem;
-    color: #64748b;
+    color: #94a3b8;
     margin: 0;
   }
   .gate-meta a { color: #94a3b8; text-decoration: underline; text-underline-offset: 2px; }

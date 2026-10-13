@@ -6,6 +6,7 @@
   import BookCover from '$lib/components/BookCover.svelte';
   import LiteYouTube from '$lib/components/LiteYouTube.svelte';
   import { offer } from '$lib/offer';
+  import bookManifest from '$lib/data/book/book.json';
 
   const categories = {
     foundation:     { label: 'Foundation',     color: '#f59e0b', desc: 'Understand your actual situation before you change anything.' },
@@ -18,50 +19,50 @@
     {
       n: '01', cat: 'foundation',
       title: 'Understand what is actually happening',
-      body: 'AI is not a future problem. It is reshaping industries, displacing roles, and creating new power gaps right now. Most people are still treating it as a news story.',
-      action: 'Search your job title + "AI automation 2026" and spend a few minutes absorbing what you find. Be honest about it.',
+      body: 'AI affects tasks unevenly. A headline about your industry cannot tell you what will happen to your role. Start with work you actually do and evidence you can check.',
+      action: 'List three recurring tasks. Pick one low-stakes task and compare your own result with an AI-assisted attempt. Note errors, time spent checking, and anything the tool cannot do.',
       cost: '$0', effort: 'low', free: true,
     },
     {
       n: '02', cat: 'foundation',
-      title: 'Calculate your freedom number',
-      body: 'The monthly cost to cover your essentials if your income stopped tomorrow. Know this number. Everything you do from here is a campaign to lower it or replace it.',
-      action: "Add up last month's fixed costs: rent, food, utilities, insurance, debt minimums. Write that number down.",
+      title: 'Map your essential monthly costs',
+      body: 'Knowing what your household needs makes a plan more concrete. Include care responsibilities and irregular bills; cutting essential services is not the goal.',
+      action: "Add up housing, food, utilities, care, insurance, transport, and debt minimums. Identify one cost you could safely reduce or share. Keep sensitive financial details out of these notes.",
       cost: '$0', effort: 'low', free: true,
     },
     {
       n: '03', cat: 'foundation',
-      title: 'Turn your biggest threat into your next advantage',
-      body: 'Every technology that wiped out one group of workers created a new group of winners. The difference was always who picked up the tool first. You are reading this because you already sense that.',
-      action: 'Write down one specific thing AI could do for you that you currently struggle with, pay someone else for, or just avoid entirely.',
+      title: 'Choose one useful, low-risk experiment',
+      body: 'Learning a tool can help, but it does not guarantee job security or income. A small experiment lets you test usefulness without betting your livelihood on a forecast.',
+      action: 'Choose one non-sensitive task, set a 20-minute limit, and define what a useful result would look like. Check the output before using it.',
       cost: '$0', effort: 'low', free: true,
     },
     {
       n: '04', cat: 'infrastructure',
       title: 'Start a skill that compounds',
-      body: '30 minutes a day in one high-leverage skill beats every weekend warrior in 6 months. Compounding is the only shortcut that actually works.',
-      action: 'Name the skill. Schedule the first 30 minutes on your calendar for today.',
+      body: 'Consistent practice can build capability. Choose a skill that helps with a real need, fits your circumstances, and produces something you can evaluate.',
+      action: 'Name the skill, find a free starting resource, and schedule a manageable practice session. Decide how you will tell whether it helped.',
       cost: '$0-50', effort: 'medium', free: false,
     },
     {
       n: '05', cat: 'infrastructure',
-      title: 'Use AI to cut something you currently pay for',
-      body: 'Every tool in this era can eliminate a dependency if you know how to use it. Legal questions, design work, research, writing: things that used to cost money or time can now cost neither.',
-      action: 'Pick one thing you pay for or avoid because it\'s too expensive. Spend 20 minutes seeing how far a free AI tool gets you.',
+      title: 'Test a tool against its actual costs',
+      body: 'Free tools still cost time, attention, and sometimes privacy. AI can help draft or organize, but it is not a substitute for qualified medical, legal, or financial advice.',
+      action: 'Try a low-stakes writing or organizing task with public or invented information. Count setup and checking time before deciding whether it saves anything.',
       cost: '$0', effort: 'low', free: false,
     },
     {
       n: '06', cat: 'autonomy',
-      title: 'Automate one recurring task with AI',
-      body: 'Pick one weekly task that is mechanical and spend 20 minutes building a prompt that handles 80% of it. Reclaim those hours. Build the habit of automating your own work.',
-      action: 'Pick one weekly task. Spend 20 minutes building a prompt that handles 80% of it.',
+      title: 'Make one recurring task easier to repeat',
+      body: 'A checklist, template, or shared routine may help as much as automation. Keep a person in control of anything that spends money, sends messages, or affects someone else.',
+      action: 'Document one recurring task. Try a reusable template on a copy, verify the result, and keep the original process available if the experiment fails.',
       cost: '$0-20/mo', effort: 'medium', free: false,
     },
     {
       n: '07', cat: 'network',
-      title: 'Find three people building the same way',
-      body: 'You do not need thousands. You need three people who are actually doing the work. That is the difference between a phase and a life.',
-      action: 'Message one person today who you think is building toward real independence. Tell them what you\'re doing.',
+      title: 'Find one person to learn or cooperate with',
+      body: 'Useful resilience can be shared: a library group, neighborhood project, cooperative, or trusted colleague. Participation should fit your time, access needs, and budget.',
+      action: 'Ask one person about a need you share. Propose a small, voluntary next step with clear responsibilities and no purchase required.',
       cost: '$0', effort: 'low', free: false,
     },
   ];
@@ -70,13 +71,13 @@
   const gated  = allItems.filter(i => !i.free);
 
   const relatedChapters = [
-    { n: '01', title: 'The AGI Transition',    slug: 'agi-transition',      tag: 'Foundation',     color: '#f59e0b' },
-    { n: '02', title: 'Local AI Infrastructure', slug: 'local-ai',          tag: 'Foundation',     color: '#f59e0b' },
-    { n: '04', title: 'Food Security Systems',  slug: 'food-security',       tag: 'Autonomy',       color: '#10b981' },
-    { n: '06', title: 'Digital Leverage',       slug: 'digital-leverage',    tag: 'Infrastructure', color: '#3b82f6' },
-    { n: '07', title: 'Energy Independence',    slug: 'energy',              tag: 'Infrastructure', color: '#3b82f6' },
-    { n: '08', title: 'Physical Automation',    slug: 'physical-automation', tag: 'Autonomy',       color: '#10b981' },
-  ];
+    { id: 'chapter1', n: '01', tag: 'Foundation', color: '#f59e0b' },
+    { id: 'chapter10', n: '10', tag: 'Practice', color: '#3b82f6' },
+    { id: 'chapter11', n: '11', tag: 'Tools', color: '#3b82f6' },
+    { id: 'chapter12', n: '12', tag: 'Housing and land', color: '#10b981' },
+    { id: 'chapter16', n: '16', tag: 'Digital work', color: '#3b82f6' },
+    { id: 'chapter18', n: '18', tag: 'Planning', color: '#a78bfa' },
+  ].map(chapter => ({ ...chapter, title: bookManifest.sections.find(section => section.id === chapter.id)?.title || chapter.id }));
 
   // ── Interactive state ──────────────────────────────────────────────────────
   let answers = Object.fromEntries(
@@ -94,7 +95,7 @@
       if (saved) {
         const parsed = JSON.parse(saved);
         for (const [k, v] of Object.entries(parsed)) {
-          if (answers[k]) answers[k] = { checked: !!v.checked, notes: String(v.notes ?? '') };
+          if (answers[k] && v && typeof v === 'object') answers[k] = { checked: !!v.checked, notes: String(v.notes ?? '').slice(0, 1000) };
         }
       }
     } catch {}
@@ -182,7 +183,7 @@
         }),
       });
       const data = await res.json().catch(() => ({}));
-      if (!res.ok) {
+      if (!res.ok || data.skipped) {
         sendError = data.error || 'Something went wrong. Try again.';
       } else {
         sent = true;
@@ -197,14 +198,14 @@
 
 <svelte:head>
   <title>Free Readiness Checklist: Surviving the Singularity</title>
-  <meta name="description" content="7 concrete moves to build real independence before AGI changes everything. Check off steps, add your own notes, and email yourself the results." />
+  <meta name="description" content="Seven practical steps to understand your circumstances, test useful tools, and build shared capability. Check off steps, add notes, and email yourself the results." />
 
   <!-- Share card. Absolute URLs, hardcoded rather than derived from $page.url,
        because every social crawler requires them. Rebuild with `sts.py og --render`. -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:title" content="Seven concrete moves. Start today." />
-  <meta property="og:description" content="Build real independence before AGI changes everything. Check off steps, add notes, email yourself the results." />
+  <meta property="og:description" content="Start with your circumstances. Test a useful tool, map essential costs, and find someone to cooperate with." />
   <meta property="og:url" content="https://survivingthesingularity.com/checklist" />
   <meta property="og:image" content="https://survivingthesingularity.com/images/og/checklist.png" />
   <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/checklist.png" />
@@ -215,7 +216,7 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Seven concrete moves. Start today." />
-  <meta name="twitter:description" content="Build real independence before AGI changes everything. Check off steps, add notes, email yourself the results." />
+  <meta name="twitter:description" content="Start with your circumstances. Test a useful tool, map essential costs, and find someone to cooperate with." />
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/checklist.png" />
 </svelte:head>
 
@@ -225,9 +226,9 @@
   <header class="cl-hero">
     <h1 class="cl-title">The Singularity<br>Readiness Checklist</h1>
     <div class="cl-lede-stack">
-      <p class="cl-lede-line">Most people won't see it coming.</p>
-      <p class="cl-lede-line cl-lede-punch">You will.</p>
-      <p class="cl-lede-line">7 moves. Real actions. Start now.</p>
+      <p class="cl-lede-line">Start with your actual circumstances.</p>
+      <p class="cl-lede-line cl-lede-punch">Build one useful capability.</p>
+      <p class="cl-lede-line">7 small steps. No prediction required.</p>
     </div>
 
     <div class="cl-stats">
@@ -274,13 +275,14 @@
 
   <!-- ── PRIMER ── -->
   <p class="cl-primer-single">Each step has one action you can take this week. Check it off when you've done it. Start with 01.</p>
+  <p class="cl-primer-single">Notes are saved in this browser. Unlocking with your email sends a copy of your notes through our email provider. Leave out sensitive details. <a href="/policies">How we handle your data</a>.</p>
 
   <!-- ── CHECKLIST with EmailGate ── -->
   <EmailGate
     storageKey="checklist"
     source="checklist"
     headline="Unlock the full checklist"
-    sub="Get all 7 steps, your notes emailed to you, and Signal Dispatches: a short, occasional email only when something actually changes your plan (new research, a new tool, a real timeline shift). Not a newsletter."
+    sub="Get all 7 steps and an emailed copy of your notes. Signal Dispatches and book release news are optional; choose them separately below."
     buttonText="Unlock Free"
     on:unlock={onUnlock}
     on:restore={onRestore}
@@ -295,6 +297,7 @@
                 type="checkbox"
                 class="cl-check-native"
                 id="check-{item.n}"
+                aria-labelledby="check-title-{item.n}"
                 bind:checked={answers[item.n].checked}
               />
               <span class="cl-checkbox" aria-hidden="true">
@@ -310,7 +313,7 @@
               {categories[item.cat].label}
             </span>
           </div>
-          <h2 class="cl-item-title">{item.title}</h2>
+          <h2 class="cl-item-title"><label id="check-title-{item.n}" for="check-{item.n}">{item.title}</label></h2>
           <p class="cl-item-text">{item.body}</p>
           <div class="cl-action">
             <span class="cl-action-label">First action</span>
@@ -368,16 +371,16 @@
       </div>
 
       <ul class="cl-book-sales-parts">
-        <li><span class="cl-book-part-label">Part I</span> What's happening. The nine stages of AI scaling.</li>
-        <li><span class="cl-book-part-label">Part II</span> How people will react. And why most will get it wrong.</li>
-        <li><span class="cl-book-part-label">Part III</span> What you can do. Right now. Starting today.</li>
+        <li><span class="cl-book-part-label">Part I</span> An argument about AI futures, with forecasts distinguished from evidence.</li>
+        <li><span class="cl-book-part-label">Part II</span> How people and communities can respond to change.</li>
+        <li><span class="cl-book-part-label">Part III</span> Practical proposals to examine and adapt to your circumstances.</li>
       </ul>
 
       <a href="/early-access" class="cl-book-sales-btn">
         Get Early Access. {offer.price}.
         <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <p class="cl-book-sales-fine">One payment. Instant access. When the preorder window closes, this price is gone.</p>
+      <p class="cl-book-sales-fine">{offer.purchaseTerms} <a href="/sample">Read the free sample first.</a></p>
     </div>
 
     <!-- Gated: items 4-12 + send section + deeper content -->
@@ -391,6 +394,7 @@
                   type="checkbox"
                   class="cl-check-native"
                   id="check-{item.n}"
+                  aria-labelledby="check-title-{item.n}"
                   bind:checked={answers[item.n].checked}
                 />
                 <span class="cl-checkbox" aria-hidden="true">
@@ -410,7 +414,7 @@
                 <span class="cl-meta-pill">{item.effort} effort</span>
               </div>
             </div>
-            <h2 class="cl-item-title">{item.title}</h2>
+            <h2 class="cl-item-title"><label id="check-title-{item.n}" for="check-{item.n}">{item.title}</label></h2>
             <p class="cl-item-text">{item.body}</p>
             <div class="cl-action">
               <span class="cl-action-label">First action</span>
@@ -444,12 +448,12 @@
               </svg>
             </div>
             <div>
-              <p class="cl-section-label">Sent to your inbox</p>
-              <h2 class="cl-send-heading">Your answers and the full checklist are on their way to {emailToSend}.</h2>
+              <p class="cl-section-label">Your copy</p>
+              <h2 class="cl-send-heading">Email your answers and the full checklist to {emailToSend}.</h2>
             </div>
           </div>
           <p class="cl-send-sub">
-            Keep adding notes below. When you want an updated copy, resend it.
+            Notes stay in this browser until you unlock or send a copy. Sending shares the notes with our email provider to deliver your checklist. Leave out sensitive information. You can edit and resend whenever you need an updated copy.
           </p>
 
           {#if sent}
@@ -484,7 +488,7 @@
           {/if}
 
           <p class="cl-send-meta">
-            {checkedCount} of 7 steps checked, {allItems.filter(i => answers[i.n].notes.trim()).length} with notes. Zero spam, reply to unsubscribe.
+            {checkedCount} of 7 steps checked, {allItems.filter(i => answers[i.n].notes.trim()).length} with notes. Sending a checklist does not subscribe you to updates.
           </p>
         </div>
       </section>
@@ -492,11 +496,12 @@
       <!-- Go deeper: Blueprint chapter links -->
       <section class="cl-deeper">
         <p class="cl-section-label">Go deeper</p>
-        <h2 class="cl-deeper-heading">Each step has a full chapter behind it.</h2>
-        <p class="cl-deeper-sub">The Blueprint expands every area of this checklist into a full strategy. Start with the chapter that matches where you are right now.</p>
+        <h2 class="cl-deeper-heading">Continue with the book.</h2>
+        <p class="cl-deeper-sub">Early-access readers can open these chapters with their book password. For a free starting point, read the introduction and reading guide.</p>
+        <p class="cl-deeper-sub"><a href="/sample">Open the free sample &amp; reading guide</a></p>
         <div class="cl-chapters">
           {#each relatedChapters as ch}
-            <a href="/book" class="cl-chapter-card">
+            <a href="/book/{ch.id}" class="cl-chapter-card">
               <span class="cl-chapter-n" style="color: {ch.color}">{ch.n}</span>
               <div class="cl-chapter-body">
                 <span class="cl-chapter-tag" style="color: {ch.color}">{ch.tag}</span>
@@ -516,7 +521,7 @@
           <div class="cl-upgrade-text">
             <p class="cl-section-label">Want everything</p>
             <h2 class="cl-upgrade-heading">The full kit is {offer.price}.</h2>
-            <p class="cl-upgrade-sub">All chapters, the book draft, The Precedent File, and every tool I build next. One payment. Instant access. And when the membership launches, you never pay it.</p>
+            <p class="cl-upgrade-sub">{offer.sentence} {offer.foreverScope}</p>
           </div>
           <a href="/early-access" class="cl-upgrade-btn">
             Get Early Access
@@ -529,22 +534,21 @@
     </div>
   </EmailGate>
 
-  <!-- ── LIVE EVENT: same community touchpoint, real-time ── -->
-  <section class="cl-discord-block" aria-label="Live weekly event">
-    <p class="cl-section-label">A separate thing</p>
-    <h2 class="cl-discord-block-heading">Prefer talking to typing?</h2>
-    <p class="cl-discord-block-sub">Every Tuesday, free, on Zoom. Live discussion with people working through the same questions you are.</p>
+  <section class="cl-discord-block" aria-label="Community questions">
+    <p class="cl-section-label">Get in touch</p>
+    <h2 class="cl-discord-block-heading">Have a question or want to compare notes?</h2>
+    <p class="cl-discord-block-sub">Email the author about your questions or a small project you're working on. No upcoming live session is currently listed here.</p>
 
     <div class="cl-discord cl-event">
       <div class="cl-discord-icon cl-event-icon" aria-hidden="true">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
       </div>
       <div class="cl-discord-copy">
-        <p class="cl-discord-headline">Tuesdays, 4&ndash;5PM Pacific.</p>
-        <p class="cl-discord-sub">Free to join. No book purchase required.</p>
+        <p class="cl-discord-headline">Start a conversation.</p>
+        <p class="cl-discord-sub">No book purchase required.</p>
       </div>
-      <a href="https://luma.com/event/evt-yQuYOJ1qhrnkvdw" target="_blank" rel="noopener noreferrer" class="cl-discord-btn cl-event-btn">
-        Save Your Seat
+      <a href="mailto:ctavolazzi@gmail.com" class="cl-discord-btn cl-event-btn">
+        Email the author
         <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -697,7 +701,7 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.72rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.1em;
-    color: #475569;
+    color: #94a3b8;
   }
 
   /* ── DISCORD: standalone section, separate from the checklist ── */
@@ -866,7 +870,7 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.62rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.12em;
-    color: #64748b; margin-bottom: 5px;
+    color: #94a3b8; margin-bottom: 5px;
   }
   .cl-notes {
     width: 100%;
@@ -884,7 +888,7 @@
     transition: border-color 0.15s ease, background 0.15s ease;
     overflow: hidden;
   }
-  .cl-notes::placeholder { color: #64748b; }
+  .cl-notes::placeholder { color: #94a3b8; }
   .cl-notes:focus {
     outline: none;
     border-color: rgba(245, 158, 11, 0.4);
@@ -987,7 +991,7 @@
   }
 
   .cl-send-meta {
-    font-size: 0.75rem; color: #64748b; margin: 10px 0 0;
+    font-size: 0.75rem; color: #94a3b8; margin: 10px 0 0;
   }
 
   /* ── GO DEEPER ── */
@@ -1027,7 +1031,7 @@
     text-transform: uppercase; letter-spacing: 0.1em; line-height: 1;
   }
   .cl-chapter-title { font-size: 0.85rem; font-weight: 600; color: #e2e8f0; line-height: 1.3; }
-  .cl-chapter-arrow { color: #64748b; flex-shrink: 0; transition: color 0.15s, transform 0.15s; }
+  .cl-chapter-arrow { color: #94a3b8; flex-shrink: 0; transition: color 0.15s, transform 0.15s; }
   .cl-chapter-card:hover .cl-chapter-arrow { color: #f59e0b; transform: translate(2px, -2px); }
 
   /* ── UPGRADE CTA ── */
@@ -1113,7 +1117,7 @@
   }
   .cl-book-sales-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
   .cl-book-sales-fine {
-    font-size: 0.75rem; color: #64748b; margin: 0; text-align: center;
+    font-size: 0.75rem; color: #94a3b8; margin: 0; text-align: center;
   }
   @media (max-width: 480px) {
     .cl-book-sales-cover { width: 80px; }
@@ -1122,7 +1126,7 @@
 
   /* ── PRIMER ── */
   .cl-primer-single {
-    font-size: 0.9rem; color: #64748b;
+    font-size: 0.9rem; color: #94a3b8;
     text-align: center; margin: 0 auto 2rem;
     max-width: 480px; line-height: 1.5;
   }
@@ -1144,9 +1148,9 @@
 
   /* ── DISCLAIMER ── */
   .cl-disclaimer {
-    text-align: center; font-size: 0.78rem; color: #64748b; margin: 2.5rem 0 0;
+    text-align: center; font-size: 0.78rem; color: #94a3b8; margin: 2.5rem 0 0;
   }
-  .cl-disclaimer a { color: #64748b; text-decoration: underline; text-underline-offset: 2px; }
+  .cl-disclaimer a { color: #94a3b8; text-decoration: underline; text-underline-offset: 2px; }
 
   @media (max-width: 500px) {
     .cl-send-btn { width: 100%; justify-content: center; }

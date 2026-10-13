@@ -4,11 +4,17 @@
 
 # Stable aliases. These paths never change, so a link shared today keeps
 # working after the next version bump. Prefer them when sending the book.
-/downloads/Surviving-the-Singularity.pdf  /downloads/Surviving-the-Singularity-v0.7.5.pdf  302
-/downloads/Surviving-the-Singularity.epub  /downloads/Surviving-the-Singularity-v0.7.5.epub  302
+/downloads/Surviving-the-Singularity.pdf  /downloads/Surviving-the-Singularity-v0.11.0.pdf  302
+/downloads/Surviving-the-Singularity.epub  /downloads/Surviving-the-Singularity-v0.11.0.epub  302
+/StS-free-sample.pdf  /sample  302
+/downloads/Municipal-Autonomy-Code.pdf  /book/appendix-a  302
 
 # Retired versions land on the current file instead of 404ing.
-/downloads/Surviving-the-Singularity-v0.7.2.pdf  /downloads/Surviving-the-Singularity-v0.7.5.pdf  302
-/downloads/Surviving-the-Singularity-v0.7.2.epub  /downloads/Surviving-the-Singularity-v0.7.5.epub  302
-/downloads/Surviving-the-Singularity-v0.7.3.pdf  /downloads/Surviving-the-Singularity-v0.7.5.pdf  302
-/downloads/Surviving-the-Singularity-v0.7.3.epub  /downloads/Surviving-the-Singularity-v0.7.5.epub  302
+/downloads/Surviving-the-Singularity-v0.7.2.pdf  /downloads/Surviving-the-Singularity-v0.11.0.pdf  302
+/downloads/Surviving-the-Singularity-v0.7.2.epub  /downloads/Surviving-the-Singularity-v0.11.0.epub  302
+/downloads/Surviving-the-Singularity-v0.7.3.pdf  /downloads/Surviving-the-Singularity-v0.11.0.pdf  302
+/downloads/Surviving-the-Singularity-v0.7.3.epub  /downloads/Surviving-the-Singularity-v0.11.0.epub  302
+/downloads/Surviving-the-Singularity-v0.7.4.pdf  /downloads/Surviving-the-Singularity-v0.11.0.pdf  302
+/downloads/Surviving-the-Singularity-v0.7.4.epub  /downloads/Surviving-the-Singularity-v0.11.0.epub  302
+/downloads/Surviving-the-Singularity-v0.7.5.pdf  /downloads/Surviving-the-Singularity-v0.11.0.pdf  302
+/downloads/Surviving-the-Singularity-v0.7.5.epub  /downloads/Surviving-the-Singularity-v0.11.0.epub  302

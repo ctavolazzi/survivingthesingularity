@@ -32,9 +32,10 @@
  * which surfaces far from the change that caused it and long after it merged.
  * WARN_AT_FRACTION below turns that cliff into a runway.
  *
- * When the warning fires, the fix is not to compress the book. It is to move
- * the file to an R2 public bucket on a subdomain: R2 charges nothing for
- * egress at any volume, so the hosting cost of the book does not change.
+ * Digital reading copies are generated separately from full-size publication
+ * masters, with image optimization and text/resource proofs. If that format
+ * outgrows Pages, move the asset to external storage rather than weakening the
+ * size guard or silently reducing quality further.
  *
  * THE DESIGN DECISION THAT MATTERS
  *
@@ -48,7 +49,7 @@
  * typed by hand is one more copy of the version to forget.
  */
 
-import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, relative } from 'node:path';
 
@@ -57,6 +58,7 @@ import { dirname, join, relative } from 'node:path';
 // Asserting a name this script spells itself would only prove it agrees with
 // itself - the 404 this check exists to prevent was four copies of one string.
 import { assetName, DOWNLOAD_FORMATS, releasedVersion } from '../src/lib/bookManifest.js';
+import { verifyDownloadReceipt } from './lib/book-download-receipt.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BOOK_JSON = 'src/lib/data/book/book.json';
@@ -74,7 +76,7 @@ const WARN_AT_FRACTION = 0.85;
  * message or preorder email. They get redirected to the current file rather
  * than 404ing. Append at version close; never remove.
  */
-const RETIRED_VERSIONS = ['0.7.2', '0.7.3'];
+const RETIRED_VERSIONS = ['0.7.2', '0.7.3', '0.7.4', '0.7.5'];
 
 const FORMATS = DOWNLOAD_FORMATS;
 
@@ -116,6 +118,20 @@ const sourceAhead = manifest.version !== version;
 const errors = [];
 const warnings = [];
 const shipped = [];
+let retiredVersions = RETIRED_VERSIONS;
+
+try {
+  const receipt = JSON.parse(readFileSync(join(ROOT, 'publication/book-downloads.json'), 'utf8'));
+  verifyDownloadReceipt({ root: ROOT, directory: join(ROOT, DOWNLOADS), receipt, manifest, version });
+  retiredVersions = [...new Set([...RETIRED_VERSIONS, ...(receipt.retired_versions ?? [])])];
+  const expected = new Set(FORMATS.map(ext => assetName(version, ext)));
+  const obsolete = readdirSync(join(ROOT, DOWNLOADS)).filter(name => /^Surviving-the-Singularity-v[\d.]+\.(pdf|epub)$/.test(name) && !expected.has(name));
+  if (obsolete.length) throw new Error(`Obsolete public book artifacts remain: ${obsolete.join(', ')}`);
+  if (existsSync(join(ROOT, 'static/StS-free-sample.pdf'))) throw new Error('Retired sample PDF is still public; use the current /sample reader');
+  if (existsSync(join(ROOT, DOWNLOADS, 'Municipal-Autonomy-Code.pdf'))) throw new Error('Retired municipal template is still public; use the corrected book appendix');
+} catch (error) {
+  errors.push({ what: error.message, why: 'Readers must receive the proved, current published edition.', fix: 'python3 scripts/prepare-book-downloads.py && npm run book:release' });
+}
 
 for (const ext of FORMATS) {
   const name = assetName(version, ext);
@@ -176,10 +192,12 @@ const lines = [
 for (const ext of FORMATS) {
   lines.push(`/downloads/Surviving-the-Singularity.${ext}  /downloads/${assetName(version, ext)}  302`);
 }
+lines.push('/StS-free-sample.pdf  /sample  302');
+lines.push('/downloads/Municipal-Autonomy-Code.pdf  /book/appendix-a  302');
 
 lines.push('', '# Retired versions land on the current file instead of 404ing.');
 
-for (const old of RETIRED_VERSIONS) {
+for (const old of retiredVersions) {
   if (old === version) continue;
   for (const ext of FORMATS) {
     lines.push(`/downloads/${assetName(old, ext)}  /downloads/${assetName(version, ext)}  302`);

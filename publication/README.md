@@ -57,6 +57,40 @@ Publication outputs include `output/Surviving-the-Singularity-{reading,interior,
 
 ## Scope
 
-The public-download release remains v0.7.5. This is a local digital edition. Earlier worktrees and deliveries remain preserved.
+### Public digital downloads
+
+The launch branch publishes v0.11.0 as compact digital reading copies. Run:
+
+```sh
+python3 scripts/prepare-book-downloads.py
+node --test scripts/book-downloads.test.mjs
+npm run book:release
+```
+
+Python package versions used for this release are in `requirements.txt`.
+The preparation script builds the existing publication masters and EPUB from
+the frozen canonical source, proves their text and resources, and creates
+distribution copies under `book-build/downloads/`. The PDF uses 160 dpi raster
+images with selectable text and retained links; EPUB photographs use a maximum
+1600-pixel edge and JPEG quality 85. Vector diagrams and transparent artwork
+remain unchanged in the EPUB. Original source artwork and full-size masters
+are preserved. This is a digital reading format, not a print master.
+
+`publication/book-downloads.json` binds the shipped files to their exact hashes,
+source edition, artwork and layout inputs. The prebuild guard rejects altered/stale files, files at
+the 25 MiB Pages ceiling, and leftover public book editions. The `released`
+field is ignored only for the manifest's content hash, because publishing
+changes that distribution pointer. Versioned old URLs and stable aliases
+redirect to the current files; previous bytes remain in git history.
+
+After a rebuild, inspect representative pages, including diagrams, photos,
+transparent art and links. Passing automated checks does not constitute a
+physical print proof or a device-specific e-reader test. These public downloads
+do **not** update the paid Supabase ZIP: rebuild, separately publish and verify
+that storage object before claiming its convenience copies are current. To
+prepare an isolated versioned ZIP and candidate manifest without changing
+the site's active bundle manifest, run `python3 scripts/prepare-book-bundle.py`.
+It requires Pandoc and XeLaTeX and embeds the bundled Source Sans Pro font.
+Its `preparation.json` records the remaining review and storage deployment gates.
 
 This pass verifies new editorial claims and source preservation; it is not a complete reread of inherited claims. Four retained narrative plates depict fiction. Six retained photo-derived cutouts are generated adaptations with separate credits. Existing cover provenance and epigraph questions remain in the [quotation and cover review](../docs/publication/QUOTATIONS-v0.10.0.md). Physical print proof, printer-specific wrap production and dedicated e-reader pagination remain separate from local digital checks.

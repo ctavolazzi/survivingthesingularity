@@ -1,15 +1,21 @@
 <script>
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount, onDestroy, tick } from 'svelte';
   import { browser } from '$app/environment';
   import { fly, fade } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
   import { CONSENT_KEY, CONSENT_VERSION } from '$lib/consent.js';
+  import { containModalFocus } from '$lib/modalFocus';
 
   let agreed = false;
   let agreedAt = '';
-  // "Disagree" does NOT persist - it locks the current page session. A refresh
-  // clears it and re-presents the banner so the user can accept.
+  // Declining is session-only. Reviewing the terms returns to the banner
+  // without discarding the current page or requiring a reload.
   let disagreed = false;
+  let lockoutEl;
+  let disagreeButton;
+  let releaseModalFocus;
+  let dialogGeneration = 0;
+  let priorOverflow = '';
 
   onMount(() => {
     if (!browser) return;
@@ -24,11 +30,6 @@
       }
     } catch {}
   });
-
-  // Lock page scroll while the lockout overlay is up.
-  $: if (browser) {
-    document.body.style.overflow = disagreed ? 'hidden' : '';
-  }
 
   /**
    * Measured height of the banner, bound from the element itself rather than
@@ -72,8 +73,10 @@
   // whole site unscrollable.
   onDestroy(() => {
     if (!browser) return;
+    dialogGeneration++;
     document.body.style.removeProperty('--consent-reserve');
-    document.body.style.overflow = '';
+    releaseModalFocus?.();
+    if (disagreed) document.body.style.overflow = priorOverflow;
   });
 
   function agree() {
@@ -89,19 +92,33 @@
     disagreed = false;
   }
 
-  function disagree() {
+  async function disagree() {
+    if (disagreed) return;
+    const generation = ++dialogGeneration;
+    priorOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     disagreed = true;
+    await tick();
+    if (disagreed && generation === dialogGeneration && lockoutEl?.isConnected) {
+      releaseModalFocus = containModalFocus(lockoutEl);
+    }
   }
 
-  function refresh() {
-    if (browser) location.reload();
+  async function reviewTerms() {
+    const generation = ++dialogGeneration;
+    releaseModalFocus?.();
+    releaseModalFocus = undefined;
+    disagreed = false;
+    document.body.style.overflow = priorOverflow;
+    await tick();
+    if (!disagreed && generation === dialogGeneration) disagreeButton?.focus();
   }
 </script>
 
+<svelte:window on:keydown={(event) => { if (disagreed && event.key === 'Escape') reviewTerms(); }} />
+
 {#if disagreed}
-  <!-- Full-screen lockout. Covers everything; the only way forward is to
-       refresh and accept. -->
-  <div class="lockout" role="alertdialog" aria-modal="true" aria-label="Site locked" transition:fade={{ duration: 200 }}>
+  <div class="lockout" bind:this={lockoutEl} role="alertdialog" aria-modal="true" aria-labelledby="lockout-title" aria-describedby="lockout-description" tabindex="-1" transition:fade={{ duration: 200 }}>
     <div class="lockout-card">
       <div class="lockout-icon" aria-hidden="true">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -109,13 +126,13 @@
           <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
       </div>
-      <h2 class="lockout-title">Site locked</h2>
-      <p class="lockout-text">
+      <h2 class="lockout-title" id="lockout-title">Review the terms</h2>
+      <p class="lockout-text" id="lockout-description">
         You declined the terms. The site can't be used without agreeing.
-        Refresh and accept to continue.
+        Return to the notice to read the linked terms and decide whether to accept.
       </p>
-      <button type="button" class="lockout-btn" on:click={refresh}>
-        Refresh &amp; review terms
+      <button type="button" class="lockout-btn" on:click={reviewTerms}>
+        Return to terms
       </button>
     </div>
   </div>
@@ -145,7 +162,7 @@
         <button type="button" class="dbnr-agree" on:click={agree} aria-label="I have read and agree to the Terms, Disclaimer, and Privacy">
           I Agree
         </button>
-        <button type="button" class="dbnr-disagree" on:click={disagree} aria-label="I do not agree to the terms">
+        <button type="button" class="dbnr-disagree" bind:this={disagreeButton} on:click={disagree} aria-label="I do not agree to the terms">
           Disagree
         </button>
       </div>

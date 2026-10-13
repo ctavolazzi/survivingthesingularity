@@ -56,7 +56,6 @@ STAGE = DIST / "The-Precedent-File"
 BOOK_JSON = ROOT / "src" / "lib" / "data" / "book" / "book.json"
 APPENDIX_D = ROOT / "src" / "lib" / "data" / "book" / "25-appendix-d.md"
 DOWNLOADS = ROOT / "static" / "downloads"
-MUNI_PDF = DOWNLOADS / "Municipal-Autonomy-Code.pdf"
 ROBOTICS_CSV = ROOT / "static" / "data" / "robotics_companies.csv"
 
 # The cover source is resolved at build time, not asserted here. art-raw/ is
@@ -111,10 +110,12 @@ everything, and what they did next.**
 Companion research to *Surviving the Singularity* {{BOOK_VERSION}}. Free with
 the preorder.
 
-Every case below follows the same three beats: the story, the mechanism (the
-reason it happened, not just the fact that it did), and the rule you can carry
-out of it. Sources sit under each case. Where a famous version of a story is
-embellished or fabricated, that is said plainly instead of quietly using it.
+The accounts below are organized as stories, proposed mechanisms, and lessons.
+The latter two are interpretations to examine, not established laws. Sources
+are listed where available; some cases remain unsourced. A listed citation does
+not by itself validate the account, and this collection has not received a
+complete independent fact-check. Where a famous version of a story is challenged,
+the discussion and its available sources are included.
 
 The final section, *Stories that are not true*, exists because the argument
 this book makes attracts fake evidence. {{APOCRYPHA_DEBUNKED_WORDS}} of the
@@ -126,16 +127,16 @@ them, with the documented alternative in each case.
 
 LEDGER_INTRO = """## The ledger
 
-Every chapter of *Surviving the Singularity* closes with a precedent: a
-documented case of people meeting a technological wave. They run P-01 to
-P-{{LEDGER_MAX}} in order of appearance, so the weight accumulates as you read.
-This table maps each one to its chapter in the book and to its full write-up
-below.
+The current book indexes precedents P-01 to P-{{LEDGER_MAX}} in Appendix D.
+The mapping below comes from the companion research file and may reflect earlier
+manuscript organization; consult the current book for the authoritative placement
+and wording. Longer accounts here are background material rather than proof
+that every detail survived review for the present manuscript.
 
 Note the two numbers, because they are easy to confuse and this file is about
-checking work. The ledger below holds {{LEDGER_COUNT}} precedents, one per
-chapter of the book. This file holds {{CASE_COUNT}} cases, because the research
-turned up more than the book had room to close chapters with.
+checking work. The current book has {{LEDGER_COUNT}} indexed precedents. This
+companion has {{CASE_COUNT}} research cases. Those counts describe different
+collections; they do not measure how many claims have been independently verified.
 
 """
 
@@ -286,12 +287,12 @@ def _clean_body(raw: str) -> tuple[str, str]:
 # be right and it needs to give the replacement, not just the prohibition.
 APOCRYPHA = """## Stories that are not true
 
-The argument this book makes attracts fake evidence. Every item below gets
-repeated constantly by people arguing that technology panics are always wrong,
-and not one of them survives a look for a primary source.
-
-Using a fabricated quote to make a true point hands the other side a free win.
-Each entry gives you the documented version to use instead.
+These examples examine disputed quotations and overstated anecdotes used in
+arguments about technology. Some lack a traceable primary source; others are
+based on real events that the popular version distorts. Missing evidence does
+not prove that an event never occurred, and a historical panic does not show
+that a present concern is unfounded. Inspect the discussion and references for
+each example before repeating either the familiar story or the correction.
 
 ### The Western Union memo (1876)
 
@@ -378,12 +379,13 @@ def _extract_sources(text: str) -> tuple[str, int, int]:
     out = [
         "# Sources and Citations",
         "",
-        "Every source cited in *The Precedent File*, grouped by case, in the order",
-        "they appear. Links are to the material itself wherever possible rather than",
-        "to a summary of it.",
+        "Links extracted from the Sources lines in *The Precedent File*, grouped",
+        "under their nearest section or case heading. Inline links elsewhere in",
+        "the text are not included by this extraction.",
         "",
-        "Where a source is a fact-check or a correction, that is the point: the case",
-        "is stronger for having survived it.",
+        "These links include secondary reporting, fact-checks, and corrections.",
+        "A source appearing here does not certify the account. Check whether it",
+        "supports the particular sentence and preserves the source's qualifications.",
         "",
         "---",
         "",
@@ -707,9 +709,6 @@ def main() -> int:
         (art["epub"], STAGE / "book" / "Surviving-the-Singularity.epub",
          f"Surviving the Singularity, v{book['version']} (EPUB)", "convenience-copy",
          f"/downloads/{art['epub'].name}"),
-        (MUNI_PDF, STAGE / "extras" / "Municipal-Autonomy-Code.pdf",
-         "The Municipal Autonomy Code (Appendix A)", "convenience-copy",
-         "/downloads/Municipal-Autonomy-Code.pdf"),
         (cover_full, STAGE / "cover" / "Surviving-the-Singularity-cover-full.png",
          f"Cover art, {cover_dims[0]}x{cover_dims[1]}" if cover_dims else "Cover art",
          "primary", None),
@@ -735,18 +734,24 @@ def main() -> int:
 
     if not no_pdf:
         pandoc = shutil.which("pandoc")
+        if not pandoc:
+            print("error: pandoc is required for the paid Precedent File PDF", file=sys.stderr)
+            return 1
         if pandoc:
+            font_dir = (ROOT / 'publication/assets/fonts').as_posix() + '/'
             cmd = [
                 pandoc, str(STAGE / "The-Precedent-File.md"),
                 "-o", str(STAGE / "The-Precedent-File.pdf"),
                 "--pdf-engine=xelatex", "--toc", "--toc-depth=2",
                 "-V", "geometry:margin=1in", "-V", "linkcolor:blue",
-                "-V", "mainfont=Helvetica Neue", "-V", "fontsize=11pt",
+                "-V", "mainfont=SourceSansPro", "-V", "fontsize=11pt",
+                "-V", f"mainfontoptions=Path={font_dir},Extension=.otf,UprightFont=*-Regular,BoldFont=*-Semibold,ItalicFont=*-RegularIt,BoldItalicFont=*-SemiboldIt",
             ]
             r = subprocess.run(cmd, capture_output=True, text=True)
             if r.returncode != 0:
-                print("warning: PDF build failed, shipping markdown only")
-                print("  ", (r.stderr or "").strip().splitlines()[-1:] or "")
+                print("error: paid PDF build failed; refusing an incomplete bundle", file=sys.stderr)
+                print((r.stderr or "").strip(), file=sys.stderr)
+                return 1
             else:
                 print(f"  PDF: {(STAGE / 'The-Precedent-File.pdf').stat().st_size:,} bytes")
                 labels[STAGE / "The-Precedent-File.pdf"] = (

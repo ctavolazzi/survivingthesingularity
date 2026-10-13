@@ -1,0 +1,6 @@
+# Verified digital-release environment, 2026-10-13.
+weasyprint==70.0
+beautifulsoup4==4.15.0
+pypdf==6.10.0
+Pillow==12.3.0
+lxml==6.1.1

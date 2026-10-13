@@ -163,17 +163,9 @@
   // Recommended videos related to AI, neuroscience, and biological computing
   const recommendedVideos = [
     {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
       id: "7Ip8TyjMyho",
       title: "Futurist: How AI and Robotics Will Reshape Our Economy"
     },
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    }
   ];
 
   onMount(() => {

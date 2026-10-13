@@ -4,6 +4,7 @@ Run from any directory: python3 publication/build.py
 The source manuscript and previous editions are never overwritten.
 """
 from pathlib import Path
+from datetime import date
 import hashlib
 import html
 import json
@@ -233,8 +234,9 @@ for item in credits_data:
 credits += '</section>'
 
 subtitle = html.escape(META['subtitle']).replace(' and the Future','<br/>and the Future')
+edition_date = date.fromisoformat(META['lastUpdated']).strftime('%B %Y')
 front = f'''<section class="front title-page"><div class="chapter-label">Christopher Tavolazzi</div><h1>Surviving<br/>the Singularity</h1><p class="subtitle">{subtitle}</p>{motif('grain-and-gripper')}<p class="edition">ILLUSTRATED EDITION</p></section>
-<section class="front copyright"><p>Surviving the Singularity<br/>{html.escape(META['author'])}</p><p>Copyright © 2026 Christopher Tavolazzi.<br/>All rights reserved in original text. Quoted material and third-party images remain subject to their respective rights. Image licenses are identified in the illustration credits.</p><p>Manuscript v{META['version']} · Finalized edition<br/>September 2026</p><p>Elijah Madrone and the cooperative are fiction. The story and its imagined deployments are distinguished from historical evidence and sourced claims in the manuscript.</p></section>'''
+<section class="front copyright"><p>Surviving the Singularity<br/>{html.escape(META['author'])}</p><p>Copyright © 2026 Christopher Tavolazzi.<br/>All rights reserved in original text. Quoted material and third-party images remain subject to their respective rights. Image licenses are identified in the illustration credits.</p><p>Manuscript v{META['version']} · Digital edition<br/>{edition_date}</p><p>Elijah Madrone and the cooperative are fiction. The story and its imagined deployments are distinguished from historical evidence and sourced claims in the manuscript.</p></section>'''
 
 (HERE/'assets').mkdir(exist_ok=True)
 (HERE/'assets/ornament.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"><g fill="none" stroke="#66764e" stroke-width="1.5"><path d="M4 15h27m38 0h27M40 15l10-7 10 7-10 7z"/><circle cx="50" cy="15" r="2"/></g></svg>')

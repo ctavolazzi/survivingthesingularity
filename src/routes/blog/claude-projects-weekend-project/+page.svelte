@@ -30,20 +30,7 @@
     const htmlBefore = marked(embed ? post.content.slice(0, embed.index) : post.content, { renderer });
     const htmlAfter = embed ? marked(post.content.slice(embed.index + embed[0].length), { renderer }) : '';
 
-    const recommendedVideos = [
-      {
-        id: "GYBT66bPfu8",
-        title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time Frame-by-Frame"
-      },
-      {
-        id: "PNqwvJCz_2w",
-        title: "Game Over? Voice Actors vs AI"
-      },
-      {
-        id: "YLo7EH2zsW0",
-        title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
-      }
-    ];
+    const recommendedVideos = [];
 </script>
 
 <svelte:head>

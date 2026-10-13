@@ -175,19 +175,20 @@
           {checkoutLoading ? 'Redirecting to checkout...' : `Preorder Now: ${offer.price}`}
         </button>
 
-        {#if checkoutError}
-          <p class="ea-checkout-error">{checkoutError}</p>
-        {/if}
-
-        {#if ownedMessage}
-          <p class="ea-owned-note">{ownedMessage}</p>
-        {/if}
+        <div role="alert" aria-atomic="true">
+          {#if checkoutError}<p class="ea-checkout-error">{checkoutError}</p>{/if}
+        </div>
+        <div role="status" aria-atomic="true">
+          {#if ownedMessage}<p class="ea-owned-note">{ownedMessage}</p>{/if}
+        </div>
 
 
         <p class="ea-secure-note">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           Secured by Stripe. <a href="/policies">Privacy policy</a>.
         </p>
+        <p class="ea-scope-body">{offer.access}</p>
+        <p class="ea-scope-body">{offer.purchaseTerms}</p>
       </div>
     </div>
 
@@ -328,16 +329,16 @@
     <div class="ea-author-photo-wrap">
       <picture>
         <source srcset="/images/optimized/author_headshot_400.webp" type="image/webp" />
-        <img src="/author-headshot.png" alt="Author photo" class="ea-author-photo" width="120" height="120" loading="lazy" decoding="async" />
+        <img src="/author-headshot.png" alt="Christopher Tavolazzi" class="ea-author-photo" width="120" height="120" loading="lazy" decoding="async" />
       </picture>
     </div>
     <div class="ea-author-copy">
       <p class="ea-label">Who's building this</p>
       <p class="ea-author-name"><a href="https://www.linkedin.com/in/christopher-tavolazzi/" target="_blank" rel="noopener noreferrer" class="ea-author-link">Christopher Tavolazzi</a></p>
       <p class="ea-author-text">
-        {offer.price} gets you everything I've made so far and early access to everything I make next.<br><br>
-        I'll hold onto your email and send you updates only when it's relevant. No spam, no daily marketing emails, no BS.<br><br>
-        Just clear, actionable intelligence you can use to upgrade your life.
+        {offer.sentence}<br><br>
+        Your purchase email is used for your receipt, access links, and updates to what you bought. Optional Signal Dispatches are a separate choice on the checklist.<br><br>
+        Read the <a href="/sample" class="ea-author-link">free sample and reading guide</a> before deciding.
       </p>
     </div>
   </div>
@@ -410,7 +411,7 @@
     --border-mid: rgba(255,255,255,0.09);
     --text-1: #f8fafc;
     --text-2: #cbd5e1;
-    --text-3: #64748b;
+    --text-3: #94a3b8;
     --green: #10b981;
     --r-card: 20px;
     --r-pill: 999px;
@@ -430,7 +431,7 @@
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: clamp(32px, 5vw, 64px);
-    align-items: center;
+    align-items: start;
   }
   @media (max-width: 768px) {
     .ea-hero-inner { grid-template-columns: 1fr; }

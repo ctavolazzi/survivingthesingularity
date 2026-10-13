@@ -5,7 +5,7 @@
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
 **Local source edition:** v0.11.0, clarifying the title's promise and adding ownership, participation, and solarpunk sections. Existing scenes and artwork remain. See [edition notes](docs/v0.11.0/EDITION-NOTES.md) and [production instructions](publication/README.md).
 
-Open the [reading PDF](book-build/Surviving-the-Singularity-v0.11.0.pdf), [EPUB](book-build/Surviving-the-Singularity-v0.11.0.epub), or [grayscale print interior](book-build/Surviving-the-Singularity-v0.11.0-print-interior.pdf). Previous source and deliveries remain in their worktrees. Public downloads still record v0.7.5. This local edition has not been committed or deployed.
+Open the [reading PDF](book-build/Surviving-the-Singularity-v0.11.0.pdf), [EPUB](book-build/Surviving-the-Singularity-v0.11.0.epub), or [grayscale print interior](book-build/Surviving-the-Singularity-v0.11.0-print-interior.pdf). Previous source and deliveries remain in their worktrees. Public download artifacts are generated from v0.11.0, verified against canonical source, and sized for Cloudflare Pages. This branch is a release candidate; see the launch handoff for deployment requirements.
 
 ---
 
@@ -82,38 +82,20 @@ For this local edition, start with [the Introduction](http://localhost:5193/book
 | `/read` | Password-gated continuous reader, with the same illustrations and optional 3D scenes. |
 | [`/blog`](https://survivingthesingularity.com/blog) | Dispatches. Some philosophical, some profane. |
 | [`/about`](https://survivingthesingularity.com/about) | What this project is and is not. |
-| [`/factcheck`](https://survivingthesingularity.com/factcheck) | Every checkable claim in the book, traced back to its evidence. Audit it yourself. |
+| [`/factcheck`](https://survivingthesingularity.com/factcheck) | Historical mechanical source trace, with explicit coverage limits. |
 
 ## Check the book yourself
 
-Most books ask you to trust them. This one hands you the receipts.
+The public [`/factcheck`](https://survivingthesingularity.com/factcheck) page
+labels its historical v0.7.4 mechanical trace separately from the current book.
+It records detected claims, source links, local assets and provenance. A resolved
+reference does not establish that a claim is true. It does not certify the
+current manuscript or every marketing statement. Read the linked primary
+sources and [`FACTCHECK.md`](FACTCHECK.md) for coverage and limits.
 
-[`/factcheck`](https://survivingthesingularity.com/factcheck) is a live audit of
-the manuscript. It pulls every mechanically detectable claim out of the book
-source and traces each one back through ten hops: the sentence quoted verbatim,
-where it sits in the source, the commit that put it there, a GitHub permalink
-pinned to that exact commit, the source behind it, and a verdict. Pick any
-number in any chapter and watch the trail resolve. Then go read the source for
-yourself.
-
-**It shows you where the trail breaks, too.** That is the part worth trusting.
-A claim whose source has not been checked says so. Text that has not been
-committed yet has no permalink, and the page says that rather than inventing
-one. The list of things the audit *cannot* see sits above the statistics, not
-buried under them.
-
-As of the 2026-07-30 pass: **1,242 claims traced**, 1,091 carrying a permalink
-you can click through to the exact line on GitHub, 273 supported, 0
-contradicted, and 227 external citations of which 38 are Wikipedia. Every one
-of those numbers is computed by the page from its own data, so it cannot drift
-from what it is describing.
-
-The repository is public. The audit runs against the same source the book is
-built from. Nothing here is a screenshot of a claim; it is the claim, the
-commit, and the link.
-
-How it is built, what it deliberately does not cover, and the discipline behind
-it: [`FACTCHECK.md`](FACTCHECK.md).
+Read the introduction and reading guide without an email or password at
+[`/sample`](https://survivingthesingularity.com/sample). The full draft uses the
+shared code provided with the purchase; no account sign-in is required.
 
 ## Stay in touch
 
@@ -180,14 +162,17 @@ npm run dev -- --port 5189 --strictPort
 ```
 
 Without `SUPABASE_SERVICE_KEY` in `.env`, `/api/waitlist` returns 503 and the
-waitlist form reports that signups are unavailable. Everything else works. There
-is deliberately no anonymous-key fallback: `sql/012` revoked every `anon` grant,
+waitlist form reports that signups are unavailable. Paid checkout and email delivery also require their configured services; missing
+credentials fail closed. There is deliberately no anonymous-key fallback: `sql/012` revoked every `anon` grant,
 so such a fallback could only ever fail with `permission denied`.
 
 ### Building
 
 ```bash
+npm run check
+npm run test:release
 npm run build
+npm run test:launch-browser
 npm run preview
 ```
 

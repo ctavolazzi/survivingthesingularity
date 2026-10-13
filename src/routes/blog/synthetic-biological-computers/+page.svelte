@@ -2,6 +2,7 @@
   import BlogPostTemplate from '$lib/components/BlogPostTemplate.svelte';
 
   const post = {
+    slug: 'synthetic-biological-computers',
     title: 'Synthetic Biological Intelligence: Living Human Cells Power Next-Gen Computing',
     date: '2025-04-07',
     author: 'Christopher Tavolazzi',
@@ -27,14 +28,6 @@
 
   // Recommended videos
   const recommendedVideos = [
-    {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
-      id: "U1tQbD25dGY",
-      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
-    },
     {
       id: "7Ip8TyjMyho",
       title: "How AI and Robotics Will Reshape Our Economy"
@@ -70,20 +63,6 @@
     transform: scale(1.05);
   }
 </style>
-
-<svelte:head>
-  <title>Synthetic Biological Computers: The Future of Living Technology | Surviving the Singularity</title>
-  <meta name="description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
-  <meta property="og:title" content="Synthetic Biological Computers: The Future of Living Technology" />
-  <meta property="og:description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
-  <meta property="og:image" content="https://survivingthesingularity.com/images/og/blog.png" />
-  <meta property="og:url" content="https://survivingthesingularity.com/blog/synthetic-biological-computers" />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Synthetic Biological Computers: The Future of Living Technology" />
-  <meta name="twitter:description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
-  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/blog.png" />
-</svelte:head>
 
 <BlogPostTemplate {post} {options} {recommendedVideos}>
   <h2>Dawn of the Biological Computer</h2>

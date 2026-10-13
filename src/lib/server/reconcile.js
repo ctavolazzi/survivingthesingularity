@@ -1,26 +1,11 @@
 /**
- * RECONCILIATION: money arrived and the customer has nothing to show for it.
- * Plan item B-06.
- *
- * WHY THIS CANNOT BE DONE INLINE
- *
- * The failure being detected is a webhook that never arrived. When that happens
- * none of our code runs, so no amount of care inside the handler can notice it.
- * Detection has to come from comparing two records after the fact: Stripe said
- * paid (recorded in `checkout_transactions`) against we delivered (recorded in
- * `fulfilled_sessions`). On 2026-07-29 that comparison stood at 23 paid sessions
- * against 13 delivery rows, and nothing had noticed for as long as it had been
- * true. All test mode, no money lost, which is the only reason it is a P1 and
- * not an emergency.
- *
- * THIS MODULE DOES NOT SCHEDULE ITSELF
- *
- * It cannot. The site deploys to Cloudflare Pages, which has no cron trigger of
- * its own, so something outside has to call the endpoint that wraps this. Until
- * that caller exists, the check is on-demand only, and an on-demand check that
- * nobody demands is not an alert. Do not record B-06 as closed on the strength
- * of this module alone.
+ * Compare delivery records with both the local ledger and Stripe. Local rows
+ * alone cannot reveal a paid session whose webhook/return request never arrived.
+ * The external comparison covers the past seven days (including Stripe's retry
+ * window); older historical reconciliation remains an explicit operator task.
  */
+import { env } from '$env/dynamic/private';
+import Stripe from 'stripe';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { DEFAULT_GRACE_MINUTES } from './reconcileFormat.js';
 
@@ -29,6 +14,10 @@ import { DEFAULT_GRACE_MINUTES } from './reconcileFormat.js';
 // and adminToken.js are split that way. Re-exported here so callers have one
 // import site and do not need to know about the split.
 export { DEFAULT_GRACE_MINUTES, formatReconciliationReport } from './reconcileFormat.js';
+
+const stripe = env.STRIPE_SECRET_KEY && !env.STRIPE_SECRET_KEY.startsWith('your_')
+  ? new Stripe(env.STRIPE_SECRET_KEY, { apiVersion: '2024-06-20' }) : null;
+const LOOKBACK_SECONDS = 7 * 24 * 60 * 60;
 
 /**
  * Find paid sessions that never completed fulfillment.
@@ -39,16 +28,16 @@ export { DEFAULT_GRACE_MINUTES, formatReconciliationReport } from './reconcileFo
  * drifted from the offer.
  *
  * @param {{ graceMinutes?: number, limit?: number }} [opts]
- * @returns {Promise<{ ok: boolean, configured: boolean, rows: object[], count: number, error?: string, graceMinutes: number }>}
+ * @returns {Promise<object>}
  */
 export async function findUnreconciled({ graceMinutes = DEFAULT_GRACE_MINUTES, limit = 100 } = {}) {
-  const base = { graceMinutes, rows: [], count: 0 };
+  const base = { graceMinutes, rows: [], count: 0, stripeLookbackDays: 7, checkedThrough: new Date().toISOString() };
 
-  if (!supabaseAdmin) {
+  if (!supabaseAdmin || !stripe) {
     // Explicitly NOT reported as "ok, nothing found". A check that cannot run
     // and a check that found nothing are the same shape on the wire and must
     // never be conflated: that is how a broken monitor reads as an all-clear.
-    return { ...base, ok: false, configured: false, error: 'Supabase not configured' };
+    return { ...base, ok: false, configured: false, error: 'Supabase or Stripe not configured' };
   }
 
   try {
@@ -69,8 +58,63 @@ export async function findUnreconciled({ graceMinutes = DEFAULT_GRACE_MINUTES, l
       };
     }
 
-    const rows = data ?? [];
-    return { ...base, ok: true, configured: true, rows, count: rows.length };
+    const rows = new Map((data ?? []).map((row) => [row.session_id, row]));
+    // Include second paid sessions explicitly flagged for a refund review,
+    // even when their download email has already been sent successfully.
+    const review = await supabaseAdmin.from('checkout_transactions')
+      .select('session_id,email,name,edition_type,amount_total,currency,created_at,review_reason')
+      .not('review_reason', 'is', null).limit(limit);
+    if (review.error) throw new Error(review.error.message);
+    for (const row of review.data ?? []) rows.set(row.session_id, {
+      ...row, paid_at: row.created_at, fulfillment_error: row.review_reason,
+    });
+    let cursor;
+    let scanned = 0;
+    let more = false;
+    const oldest = Math.floor(Date.now() / 1000) - LOOKBACK_SECONDS;
+    const cutoff = Math.floor(Date.now() / 1000) - graceMinutes * 60;
+    for (let page = 0; page < 10; page++) {
+      const batch = await stripe.checkout.sessions.list({
+        limit: 100, created: { gte: oldest, lte: cutoff },
+        ...(cursor ? { starting_after: cursor } : {}),
+      });
+      scanned += batch.data.length;
+      const paid = batch.data.filter((session) => session.payment_status === 'paid'
+        && session.metadata?.product === 'early-access-bundle-v1');
+      if (paid.length) {
+        const ledger = await supabaseAdmin.from('checkout_transactions')
+          .select('session_id,status,fulfilled').in('session_id', paid.map((session) => session.id));
+        if (ledger.error) throw new Error(ledger.error.message);
+        const recorded = new Map((ledger.data ?? []).map((row) => [row.session_id, row]));
+        for (const session of paid) {
+          const local = recorded.get(session.id);
+          if (local?.status === 'completed' && local.fulfilled) continue;
+          if (rows.has(session.id)) continue;
+          rows.set(session.id, {
+            session_id: session.id,
+            email: session.customer_details?.email ?? session.customer_email,
+            name: session.customer_details?.name ?? '',
+            edition_type: session.metadata?.edition_type ?? 'standard',
+            amount_total: session.amount_total, currency: session.currency,
+            paid_at: new Date(session.created * 1000).toISOString(),
+            minutes_outstanding: Math.floor((Date.now() / 1000 - session.created) / 60),
+            never_claimed: !local,
+            fulfillment_error: !local ? 'Paid in Stripe; absent from local ledger' : 'Paid in Stripe; fulfillment incomplete',
+            source: 'stripe',
+          });
+        }
+      }
+      more = batch.has_more;
+      if (!more) break;
+      cursor = batch.data.at(-1)?.id;
+      if (!cursor) throw new Error('Stripe reconciliation pagination did not advance');
+    }
+    const incomplete = more || data?.length === limit || review.data?.length === limit;
+    const result = [...rows.values()];
+    return {
+      ...base, ok: !incomplete, configured: true, rows: result, count: result.length, scanned,
+      ...(incomplete ? { error: 'Reconciliation scan reached its limit; this is not an all-clear' } : {}),
+    };
   } catch (e) {
     return { ...base, ok: false, configured: true, error: e?.message ?? String(e) };
   }

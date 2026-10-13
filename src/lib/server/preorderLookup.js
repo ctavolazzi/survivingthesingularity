@@ -19,12 +19,9 @@
  * edition, no Stripe session is created at all, which means there is nothing to
  * refund because nothing was ever charged.
  *
- * WHAT THIS IS NOT
- *
- * It is not a replacement for the unique constraint. Two browser tabs can race
- * past this check in the same second. The constraint stays as the backstop that
- * makes the guarantee true rather than merely likely; this makes the common case
- * cost the customer nothing.
+ * Concurrent requests additionally share a durable checkout reservation and
+ * Stripe idempotency key. The preorder uniqueness constraint prevents duplicate
+ * rows, while checkoutReservations.js is what prevents duplicate sessions.
  */
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { sendDownloadEmail } from '$lib/server/email.js';
@@ -53,9 +50,9 @@ const RESEND_COOLDOWN_MS = 15 * 60 * 1000;
  * `a_b@x.com` would match `axb@x.com` and refuse a sale to someone who never
  * bought anything.
  *
- * The real fix is a case-insensitive unique index (`lower(email)`) or a citext
- * column, which is a migration and is logged as follow-up work rather than
- * slipped in here.
+ * New ownership lookups use sql/017's exact case-insensitive find_preorder RPC.
+ * These variants remain for matching historical delivery and transaction rows;
+ * the original stored preorder email is included during a courtesy resend.
  */
 function caseVariants(email, raw) {
   const set = new Set([email]);
@@ -73,12 +70,9 @@ function caseVariants(email, raw) {
 export async function findExistingPreorder({ email, rawEmail, editionType }) {
   if (!supabaseAdmin) return { found: false, checked: false };
   try {
-    const { data, error } = await supabaseAdmin
-      .from('preorders')
-      .select('email, name, edition_type, copy_number, discount_code, created_at')
-      .in('email', caseVariants(email, rawEmail))
-      .eq('edition_type', editionType)
-      .limit(1);
+    const { data, error } = await supabaseAdmin.rpc('find_preorder', {
+      p_email: email, p_edition_type: editionType,
+    });
     if (error) {
       console.error(`[preorderLookup] duplicate check failed for ${editionType}: ${error.message}`);
       return { found: false, checked: false };
@@ -104,12 +98,13 @@ export async function findExistingPreorder({ email, rawEmail, editionType }) {
  * null for older customers and they fall through to the support path below
  * rather than being sent a link that does not work.
  */
-async function findSessionId(variants) {
+async function findSessionId(variants, editionType) {
   const tx = await supabaseAdmin
     .from('checkout_transactions')
     .select('session_id, created_at')
     .in('email', variants)
     .eq('status', 'completed')
+    .eq('edition_type', editionType)
     .order('created_at', { ascending: false })
     .limit(1);
   if (tx.data?.[0]?.session_id) return tx.data[0].session_id;
@@ -154,10 +149,11 @@ async function sentRecently(variants) {
 export async function resendPreorderDownload({ email, rawEmail, editionType, preorder }) {
   if (!supabaseAdmin) return { resent: false, reason: 'error' };
   const variants = caseVariants(email, rawEmail);
+  if (preorder?.email && !variants.includes(preorder.email)) variants.push(preorder.email);
   try {
     if (await sentRecently(variants)) return { resent: false, reason: 'cooldown' };
 
-    const sessionId = await findSessionId(variants);
+    const sessionId = preorder?.payment_session_id ?? await findSessionId(variants, editionType);
     // No session means no page that can mint a signed URL, so there is no
     // honest link to send. Say so rather than emailing a button that fails.
     if (!sessionId) return { resent: false, reason: 'no_session' };

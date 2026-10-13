@@ -186,6 +186,10 @@ def main():
     if meta['version'] != '0.11.0' or meta['lastUpdated'] != '2026-10-07':
         errors.append({'kind': 'edition_metadata'})
     for key in set(old_meta) | set(meta):
+        # Publication advances only the distribution pointer; it does not edit
+        # the frozen text, titles or ordering verified below.
+        if key == 'released' and meta.get(key) == meta['version']:
+            continue
         if key not in {'version', 'lastUpdated'} and meta.get(key) != old_meta.get(key):
             errors.append({'kind': 'unexpected_metadata_change', 'key': key})
     current = {name: (SOURCE / name).read_text() for name in previous}

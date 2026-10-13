@@ -42,13 +42,13 @@
     <section class="about-section">
       <h2>Why this exists</h2>
       <p>
-        The 2017 Transformer architecture crossed an event horizon most people missed. Intelligence now has a marginal cost near zero. The gap between people who understand that and people who don't is widening every day.
+        AI is changing what people can automate and who controls the tools. I want to understand how those changes could help make food, useful work, and ordinary life more secure. That takes more than a technology forecast: it takes people deciding what to build and how to share it.
       </p>
       <p>
         I started writing this to work it out for myself.
       </p>
       <p>
-        It became something I could share with others, to find like-minded people. Now it's grown into a book you can use to help plan your future before it's too late.
+        It became a book that combines historical cases, speculative stories, and proposals for practical cooperation. Predictions in it are arguments to examine, not guarantees; the useful work should still matter if my timeline is wrong.
       </p>
     </section>
 
@@ -66,7 +66,7 @@
         <div class="provide-item">
           <h3>The Book</h3>
           <p>Three parts: what the singularity is, how people react, and what you can do. Updated as it's written.</p>
-          <a href="/book" class="provide-link">Read the book</a>
+          <a href="/sample" class="provide-link">Read a free sample and reading guide</a>
         </div>
         <div class="provide-item">
           <h3>The Checklist</h3>
@@ -88,9 +88,9 @@
 
     <section class="about-section about-cta">
       <h2>Start here</h2>
-      <p>Read the book as it's being written. Or start free with the checklist.</p>
+      <p>Read the introduction and choose a route through the book without signing up. The full online draft uses the access password delivered with a purchase. Or start free with the checklist.</p>
       <div class="about-actions">
-        <a href="/book" class="btn-primary">Read the Book</a>
+        <a href="/sample" class="btn-primary">Read a Free Sample</a>
         <a href="/checklist" class="btn-secondary">Start the Checklist</a>
       </div>
     </section>

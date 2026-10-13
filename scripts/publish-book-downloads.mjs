@@ -2,8 +2,8 @@
 /**
  * BOOK DOWNLOAD PUBLISH
  *
- * Copies the built book out of book-build/ into static/downloads/, deriving
- * every filename from book.json.
+ * Copies proved digital reading copies from book-build/downloads/ into
+ * static/downloads/, deriving every filename from book.json.
  *
  * WHY THIS EXISTS
  *
@@ -29,25 +29,27 @@
  * no longer type WHAT. `npm run check:downloads` fails the build until it is
  * done, so a forgotten publish surfaces as a red build rather than a 404.
  *
- * It also does not judge the artifact. Size limits, Cloudflare's asset ceiling
- * and redirect generation belong to check-book-downloads.mjs. This script
- * places files; that one asserts them. Running both is `npm run book:release`.
+ * Both publication and prebuild require the preparation receipt to match the
+ * artifact bytes and canonical source. This script places the proved files,
+ * removes obsolete public editions, and stamps the released version; prebuild
+ * also generates old-version redirects. Running both is `npm run book:release`.
  *
  * Usage:
  *   npm run book:publish          copy the current version into static/downloads/
  *   npm run book:publish -- --dry show what would be copied, touch nothing
  */
 
-import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, readdirSync, unlinkSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 import { assetName, DOWNLOAD_FORMATS } from '../src/lib/bookManifest.js';
+import { verifyDownloadReceipt } from './lib/book-download-receipt.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BOOK_JSON = 'src/lib/data/book/book.json';
-const BUILD = 'book-build';
+const BUILD = 'book-build/downloads';
 const DOWNLOADS = 'static/downloads';
 
 const dryRun = process.argv.includes('--dry');
@@ -56,11 +58,14 @@ const digest = (path) => createHash('sha256').update(readFileSync(path)).digest(
 
 // ── Read the single source of truth ──────────────────────────────────────────
 
-let version;
+let version, manifest, receipt;
 try {
-  version = JSON.parse(readFileSync(join(ROOT, BOOK_JSON), 'utf8')).version;
+  manifest = JSON.parse(readFileSync(join(ROOT, BOOK_JSON), 'utf8'));
+  version = manifest.version;
+  receipt = JSON.parse(readFileSync(join(ROOT, BUILD, 'book-downloads.json'), 'utf8'));
+  verifyDownloadReceipt({ root: ROOT, directory: join(ROOT, BUILD), receipt, manifest, version });
 } catch (err) {
-  console.error(`\npublish-book-downloads: cannot read ${BOOK_JSON}: ${err.message}\n`);
+  console.error(`\npublish-book-downloads: ${err.message}\nBuild verified web copies with python3 scripts/prepare-book-downloads.py\n`);
   process.exit(1);
 }
 
@@ -93,7 +98,7 @@ for (const ext of DOWNLOAD_FORMATS) {
 if (missing.length) {
   console.error(`\npublish-book-downloads: ${missing.length} artifact(s) for v${version} were never built.\n`);
   for (const m of missing) console.error(`  ${m.from} does not exist`);
-  console.error(`\n  fix: scripts/build-epub.sh v${version}\n`);
+  console.error(`\n  fix: python3 scripts/prepare-book-downloads.py\n`);
   process.exit(1);
 }
 
@@ -121,6 +126,23 @@ if (dryRun) {
     `(would also stamp "released": "${version}" into ${BOOK_JSON}).`);
   process.exit(0);
 }
+
+// Retain previous editions in git history, not on the public asset host. Old
+// URLs are redirected by check-book-downloads to the current corrected edition.
+const currentNames = new Set(planned.map(p => p.name));
+const receiptPath = join(ROOT, 'publication/book-downloads.json');
+const previousReceipt = existsSync(receiptPath) ? JSON.parse(readFileSync(receiptPath, 'utf8')) : {};
+const retiredVersions = new Set(previousReceipt.retired_versions ?? []);
+for (const name of readdirSync(join(ROOT, DOWNLOADS))) {
+  const old = name.match(/^Surviving-the-Singularity-v([\d.]+)\.(pdf|epub)$/);
+  if (old && !currentNames.has(name)) {
+    retiredVersions.add(old[1]);
+    unlinkSync(join(ROOT, DOWNLOADS, name));
+    console.log(`publish-book-downloads: retired public artifact ${name}`);
+  }
+}
+receipt.retired_versions = [...retiredVersions].filter(old => old !== version).sort();
+writeFileSync(receiptPath, JSON.stringify(receipt, null, 2) + '\n');
 
 // ── Stamp the release ────────────────────────────────────────────────────────
 //

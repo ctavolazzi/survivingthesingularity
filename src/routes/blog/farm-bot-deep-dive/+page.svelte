@@ -15,20 +15,7 @@
   };
 
   // Recommended videos related to agriculture, robots, and sustainability
-  const recommendedVideos = [
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    },
-    {
-      id: "U1tQbD25dGY",
-      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
-    },
-    {
-      id: "YLo7EH2zsW0",
-      title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
-    }
-  ];
+  const recommendedVideos = [];
 </script>
 
 <svelte:head>

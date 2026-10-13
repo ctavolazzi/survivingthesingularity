@@ -14,20 +14,20 @@
  */
 export default Object.freeze({
   "schema": 1,
-  "generated_at": "2026-08-04T14:28:00Z",
+  "generated_at": "2026-10-13T01:30:18Z",
   "generator": "scripts/build_bonus.py",
   "bundle": {
     "root": "The-Precedent-File",
-    "object": "research-bundle-v1.zip",
+    "object": "research-bundle-book-v0.11.0.zip",
     "bucket": "downloads",
-    "bytes": 48907175,
-    "sha256": "89054717eecde2b317ad1993c3474c34619a8c3a25c44f6bb2a757db072b5cff",
-    "entries": 11
+    "bytes": 28272621,
+    "sha256": "8864d224a25328ca5f5fa8e02c91df80d38cd9a408aefe6126a65edb1068d99b",
+    "entries": 10
   },
   "book": {
-    "version": "0.7.5",
+    "version": "0.11.0",
     "title": "Surviving the Singularity",
-    "last_updated": null
+    "last_updated": "2026-10-07"
   },
   "counts": {
     "precedent_file_cases": 31,
@@ -79,7 +79,7 @@ export default Object.freeze({
     ],
     "apocrypha_entries": 8,
     "apocrypha_debunked": 7,
-    "ledger_precedents": 23,
+    "ledger_precedents": 24,
     "source_links": 75
   },
   "cover": {
@@ -94,50 +94,50 @@ export default Object.freeze({
       "label": "Start here",
       "format": "md",
       "role": "primary",
-      "bytes": 6482,
-      "sha256": "ec6e7b2b524971b853fbe84d397f22dd43b1a047c0b33d29e0db182d37de0016"
+      "bytes": 7274,
+      "sha256": "bf81da444c5d4bcc4377f6352d06262d1ca23ae503c0c736ec81110e97044030"
     },
     {
       "path": "The-Precedent-File/Sources-and-Citations.md",
       "label": "Sources and Citations, 75 links",
       "format": "md",
       "role": "primary",
-      "bytes": 10317,
-      "sha256": "38a6f17417d58a2d2f1901c7c5c0c2c96c2b55d56c52ac9f2dec49b99c951d36"
+      "bytes": 10442,
+      "sha256": "a4e35b79f19a292ab1b865dd29e73820b85fcacc7e17a1ca54c21af85524b90b"
     },
     {
       "path": "The-Precedent-File/The-Precedent-File.md",
       "label": "The Precedent File, 31 cases (Markdown)",
       "format": "md",
       "role": "primary",
-      "bytes": 51344,
-      "sha256": "62d83669700224f0e4fd69c466ddec143393785fbe8f6b69f0e4c6e9686eb45d"
+      "bytes": 51682,
+      "sha256": "ca022b4e7dd349eb2c2816b5c6c5200b18b1bd342782a2542372dc9c4c802e50"
     },
     {
       "path": "The-Precedent-File/The-Precedent-File.pdf",
       "label": "The Precedent File, 31 cases (PDF)",
       "format": "pdf",
       "role": "primary",
-      "bytes": 100752,
-      "sha256": "5db3fb5da2d75b6aa2ca679793c5e61c98a4c4022a2c966d5157ffef5e172dee"
+      "bytes": 89314,
+      "sha256": "d92db235a2c89bd145b608a071c1e0ca862f9c481cf182941aa91a0e05278f07"
     },
     {
       "path": "The-Precedent-File/book/Surviving-the-Singularity.epub",
-      "label": "Surviving the Singularity, v0.7.5 (EPUB)",
+      "label": "Surviving the Singularity, v0.11.0 (EPUB)",
       "format": "epub",
       "role": "convenience-copy",
-      "bytes": 22170885,
-      "sha256": "89f6ae51f197f84fe940ad15cf00456a8cc8592f3e7ff9d100672af000b93831",
-      "also_free_at": "/downloads/Surviving-the-Singularity-v0.7.5.epub"
+      "bytes": 21751586,
+      "sha256": "be464b705c57eb282379820aadcfa45d0da23b141b1f8faa3a68da2d9c98e276",
+      "also_free_at": "/downloads/Surviving-the-Singularity-v0.11.0.epub"
     },
     {
       "path": "The-Precedent-File/book/Surviving-the-Singularity.pdf",
-      "label": "Surviving the Singularity, v0.7.5 (PDF)",
+      "label": "Surviving the Singularity, v0.11.0 (PDF)",
       "format": "pdf",
       "role": "convenience-copy",
-      "bytes": 23463333,
-      "sha256": "c7b8cfea6227d581bc24df2a643349a47e9ca1b2bb1f6dc74dbc19bba345e173",
-      "also_free_at": "/downloads/Surviving-the-Singularity-v0.7.5.pdf"
+      "bytes": 3248621,
+      "sha256": "71a07967791fbd35175e2154d8c258aec468e8f45e72952a207250d33d20862d",
+      "also_free_at": "/downloads/Surviving-the-Singularity-v0.11.0.pdf"
     },
     {
       "path": "The-Precedent-File/cover/Surviving-the-Singularity-cover-400.png",
@@ -164,15 +164,6 @@ export default Object.freeze({
       "sha256": "3fb38df13408b016be311b4c40279f3dccee6873fa8cbdf54b6076ecf5194416"
     },
     {
-      "path": "The-Precedent-File/extras/Municipal-Autonomy-Code.pdf",
-      "label": "The Municipal Autonomy Code (Appendix A)",
-      "format": "pdf",
-      "role": "convenience-copy",
-      "bytes": 51039,
-      "sha256": "a5a1290606d4effbc4674304485a9a0f8c4855491572f709dee99608797f333b",
-      "also_free_at": "/downloads/Municipal-Autonomy-Code.pdf"
-    },
-    {
       "path": "The-Precedent-File/research/Robotics-Company-Index.csv",
       "label": "The Robotics Company Index (CSV)",
       "format": "csv",
@@ -188,15 +179,15 @@ export default Object.freeze({
     },
     "start_here": {
       "path": "manuscript/bonus/START-HERE.md",
-      "sha256": "e1241c662c8adc0a4ff37c2dc67eafa930c1dec9f27f69bbc2add7549388cba6"
+      "sha256": "8f4371097548204c4970f495b91e4d98599e138425ddfea775e5950c5ca3fd7f"
     },
     "book_json": {
       "path": "src/lib/data/book/book.json",
-      "sha256": "68d24500263ac6ae1b9e5c2c2e9b2586fb07a312630cea224c96e55ae9a4f125"
+      "sha256": "a96d637e25d55005010843bcfb5a21b0f8716dd8bcd47a99137bbed98f8fb591"
     },
     "appendix_d": {
       "path": "src/lib/data/book/25-appendix-d.md",
-      "sha256": "23653a2019139feb57cd3bbf04c14903cc0f7521b63bec4612a86937bf896437"
+      "sha256": "d8cce540b393bed7addc93546d92004c7e4d03473669e666f55b35ac48bdf069"
     }
   }
 });

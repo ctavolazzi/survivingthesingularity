@@ -1,6 +1,7 @@
 import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import Stripe from 'stripe';
+import { isPreorderSession } from '$lib/server/preorderSession.js';
 import { fulfillPreorder } from '$lib/server/fulfillment.js';
 import {
   recordCheckoutCompleted,
@@ -131,9 +132,8 @@ export async function POST({ request }) {
   // verification so an unsigned or forged payload can never write a row, and
   // BEFORE any handling so a replay is recognised before it does work twice.
   //
-  // `proceed: false` is not an error and must answer 200: either this exact
-  // event was already handled to completion, or another worker is handling it
-  // right now. Returning anything else would make Stripe retry a duplicate.
+  // Only a completed duplicate earns 200. An event still in flight answers
+  // 500 so a crashed or failed owning worker cannot strand the payment.
   //
   // Read webhookEventPolicy.js before changing this. Stripe REUSES the event id
   // on retries, so "seen before" is emphatically not "already handled", and a
@@ -147,6 +147,9 @@ export async function POST({ request }) {
   });
 
   if (!disposition.proceed) {
+    // In-flight is not terminal success: the owning worker can still fail.
+    // Preserve Stripe's retry until an attempt has actually completed.
+    if (!disposition.duplicate) return json({ error: 'Event still processing' }, { status: 500 });
     return json({
       received: true,
       duplicate: disposition.duplicate,
@@ -166,6 +169,12 @@ export async function POST({ request }) {
 
   if (event.type === 'checkout.session.completed' || event.type === 'checkout.session.async_payment_succeeded') {
     const session = event.data.object;
+    // This Stripe account can sell other products. Payment alone must never
+    // grant this bundle or write a preorder for an unrelated checkout.
+    if (!isPreorderSession(session)) {
+      await markEventProcessed(event.id);
+      return json({ received: true });
+    }
 
     // checkout.session.completed can fire before an async payment method
     // (bank transfer, etc.) actually clears; async_payment_succeeded is what
@@ -224,11 +233,10 @@ export async function POST({ request }) {
      * moves fulfillment above this point, this early return becomes a
      * duplicate-email generator, so keep the ordering.
      *
-     * `configured: false` means no database is wired up at all, which is the
-     * normal state in local dev. That must NOT 500, or every local webhook and
-     * every run of scripts/probe-stripe-webhook.mjs starts failing.
+     * Missing database configuration also fails closed. Local test webhooks
+     * must use a configured test database or explicit injected test doubles.
      */
-    if (ledger.configured && !ledger.ok) {
+    if (!ledger.configured || !ledger.ok) {
       console.error(
         `[webhook] LEDGER WRITE FAILED for paid session ${session.id}: ${ledger.error}. ` +
           'Returning 500 so Stripe retries; no email has been sent yet.'
@@ -266,9 +274,11 @@ export async function POST({ request }) {
           : session.payment_intent?.id ?? null,
         orderedAt: session.created ?? null,
       });
-      // Only claim fulfilment when this call actually delivered. `alreadyFulfilled`
-      // means another worker owns it and will set the flag itself.
-      if (result?.delivered) await markTransactionFulfilled(session.id);
+      if (!['accepted', 'already_delivered'].includes(result?.state)) {
+        throw new Error(result?.error ?? `Fulfillment ${result?.state ?? 'did not complete'}`);
+      }
+      const recorded = await markTransactionFulfilled(session.id);
+      if (!recorded?.ok) throw new Error(recorded?.error ?? 'Fulfillment ledger write failed');
     } catch (err) {
       console.error('[webhook] fulfillPreorder threw:', err.message);
       // Mark FAILED, not processed. This is what makes the retry below actually

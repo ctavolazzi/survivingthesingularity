@@ -34,7 +34,7 @@ const resend = apiKey ? new Resend(apiKey) : null;
  * A missing ledger row is a reporting gap; a thrown error here would be a lost
  * order.
  *
- * @param {{ type: string, to: string, sessionId?: string|null }} meta
+ * @param {{ type: string, to: string, sessionId?: string|null, idempotencyKey?: string|null }} meta
  * @param {object} payload passed straight to resend.emails.send
  */
 /* Flatten our HTML into a readable plain-text alternative.
@@ -107,7 +107,13 @@ async function sendAndRecord(meta, payload) {
     }
   }
 
-  const { data, error } = await resend.emails.send(payload);
+  // Resend retains idempotency keys for 24 hours. Only automatic retries use
+  // these; an intentional customer resend is a separate message.
+  const { data, error: providerError } = await resend.emails.send(
+    payload, meta.idempotencyKey ? { idempotencyKey: meta.idempotencyKey } : undefined
+  );
+  const error = providerError ?? (typeof data?.id === 'string' && data.id.trim()
+    ? null : { message: 'Email provider did not return an acceptance ID' });
 
   try {
     if (supabaseAdmin) {
@@ -303,7 +309,8 @@ function renderHtml({ heading, body, cta, unsubscribeUrl }) {
 }
 
 /**
- * Confirm a preorder to the customer.
+ * Acknowledge a legacy preorder request without asserting payment or delivery.
+ * No current route calls this export; keep it compatible for existing callers.
  * Non-blocking: caller should not await in a way that blocks the response.
  *
  * @param {{ name: string, email: string, edition_type: string, copy_number?: number|null }} args
@@ -313,30 +320,30 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
   const isAuthors = edition_type === 'authors';
   const safeName = name ? escapeHtml(name.slice(0, 120)) : '';
   const greeting = safeName ? `Hi ${safeName},` : 'Hi,';
+  const copyReference = Number.isInteger(copy_number) && copy_number > 0
+    ? ` Copy reference: #${copy_number}.`
+    : '';
 
   const heading = isAuthors
-    ? `You're copy #${copy_number} of 100.`
-    : "You're on the preorder list.";
+    ? "Your Author's Edition request is recorded."
+    : 'Your preorder request is recorded.';
 
   const body = isAuthors
-    ? `${greeting} Your Author's Limited Edition preorder is confirmed. Copy #${copy_number} of 100 is reserved for you. ` +
-      `Every copy is hand-bound, signed, and numbered by the author. No two are alike, so #${copy_number} is one of a kind. ` +
-      `No payment is collected now. You'll hear from us before the book ships in August 2026.`
-    : `${greeting} Your preorder is confirmed. You'll get first access when the book launches in August 2026, ` +
-      `available here on the site and on Amazon in paperback and Kindle. No payment collected now. We'll reach out when it's ready.`;
+    ? `${greeting} Your Author's Edition request is recorded.${copyReference} ` +
+      'This message is not a payment receipt or a shipment confirmation. ' +
+      'For the terms of an existing order, refer to its original confirmation ' +
+      `or contact ${offer.refund.contact} from your purchase address.`
+    : `${greeting} Your interest is recorded. This message is not a payment receipt. ` +
+      `${offer.sentence} See the current offer before purchasing.`;
 
-  const cta = isAuthors
-    ? { label: 'Read the draft now', url: 'https://survivingthesingularity.com/book' }
-    : { label: 'Read the draft now', url: 'https://survivingthesingularity.com/book' };
+  const cta = { label: 'Read a free sample', url: 'https://survivingthesingularity.com/sample' };
 
   const subject = isAuthors
-    ? `Author's Edition confirmed: copy #${copy_number}`
-    : 'Preorder confirmed: Surviving the Singularity';
+    ? "Author's Edition request received"
+    : 'Preorder request received: Surviving the Singularity';
 
-  // Recorded: this is the customer's own copy of the order. The admin alert
-  // below was already in the ledger while this was not, which had it backwards
-  // - a bounced admin alert costs us an inbox notification, a bounced customer
-  // confirmation costs the customer any record that the order exists.
+  // Preserve a delivery record for legacy request acknowledgments. The paid
+  // fulfillment path sends the separate download email and receipt below.
   const { error } = await sendAndRecord(
     { type: 'preorder_confirmation', to: email },
     { from, to: email, subject, html: renderHtml({ heading, body, cta }) }
@@ -351,18 +358,18 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
  *
  * @param {{ name: string, email: string, edition_type: string, copy_number?: number|null }} args
  */
-export async function sendAdminPreorderAlert({ name, email, edition_type, copy_number }) {
+export async function sendAdminPreorderAlert({ name, email, edition_type, copy_number, sessionId = null, duplicatePayment = false, idempotencyKey = null }) {
   if (!resend) return { skipped: true };
   const isAuthors = edition_type === 'authors';
-  const subject = isAuthors
+  const subject = duplicatePayment ? '[STS] Payment needs review: possible duplicate charge' : isAuthors
     ? `[STS] Author's Edition preorder #${copy_number}: ${name}`
     : `[STS] Regular edition preorder: ${name}`;
-  const body = `Name: ${name}\nEmail: ${email}\nEdition: ${edition_type}${isAuthors && copy_number ? `\nCopy: #${copy_number} / 100` : ''}`;
+  const body = `${duplicatePayment ? 'Review this payment for a possible duplicate charge and refund if appropriate.\n' : ''}Session: ${sessionId ?? 'not supplied'}\nName: ${name}\nEmail: ${email}\nEdition: ${edition_type}${isAuthors && copy_number ? `\nCopy reference: #${copy_number}` : ''}`;
   // Recorded too, and for a specific reason: a buyer name containing CRLF
   // makes Resend reject this subject, so the alert silently never sends while
   // the order records fine. Without a row here that failure is invisible.
   const { error } = await sendAndRecord(
-    { type: 'admin_preorder_alert', to: 'admin@johnnyautoseed.com' },
+    { type: 'admin_preorder_alert', to: 'admin@johnnyautoseed.com', sessionId, idempotencyKey },
     { from, to: 'admin@johnnyautoseed.com', subject, text: body }
   );
   if (error) console.error('[email] admin preorder alert failed:', error.message ?? error);
@@ -533,6 +540,7 @@ export async function sendChecklistEmail({ to, answers }) {
 export async function sendDownloadEmail({
   to, sessionId, edition_type, copy_number, discount_code,
   amountTotal = null, currency = null, paymentIntent = null, orderedAt = null,
+  idempotencyKey = null,
 }) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset - skipping download email to', to);
@@ -540,31 +548,31 @@ export async function sendDownloadEmail({
   }
 
   const isAuthors = edition_type === 'authors';
+  const copyReference = Number.isInteger(copy_number) && copy_number > 0
+    ? ` Copy reference: #${copy_number}.`
+    : '';
   const subject = isAuthors
-    ? `Your bundle is ready: Author's Edition copy #${copy_number}`
+    ? "Your bundle is ready: Author's Edition"
     : 'Your bundle is ready: preorder confirmed';
   const heading = isAuthors
-    ? `Your download is ready. You're copy #${copy_number} of 100.`
+    ? "Your Author's Edition digital bundle is ready."
     : "Your download is ready. You're on the list.";
   const confirmLine = isAuthors
-    ? `Your Author's Limited Edition preorder is confirmed: copy #${copy_number} of 100 is reserved for you. Hand-bound, signed, and numbered by the author, and no two copies are alike. `
+    ? `Your Author's Edition payment is recorded.${copyReference} This email delivers the digital bundle. `
     : 'Your preorder is confirmed. ';
+  const entitlementCopy = isAuthors
+    ? `For other Author's Edition benefits or print delivery terms, refer to your original order confirmation or contact ${offer.refund.contact} from your purchase address.`
+    : offer.digitalScope;
   // Describe the bundle by what is ACTUALLY in it. This line previously promised
   // "research PDFs, papers, images, and source documents" while the archive held
   // four .txt files totalling 3KB and no book at all. If the bundle's contents
   // change, change this sentence in the same commit.
   const body =
-    `${confirmLine}Every digital thing this project makes is now yours, including the finished edition when it lands, at no additional cost. ` +
-    'When the membership launches later, you never pay it. ' +
+    `${confirmLine}${entitlementCopy} ` +
     `Your download is The Precedent File: ${offer.precedentFileCaseCount} documented cases of people meeting a machine that changed everything, ` +
     `${offer.precedentFileSourcedCount} of them with their sources listed inline so you can check the work. ` +
     'It carries the sources index, the cover art, and the Robotics Company Index alongside it. ' +
-    // The book files ride along for convenience and are NOT what the five
-    // dollars bought: they are free to anyone at /downloads, and this sentence
-    // says so rather than letting the list imply otherwise. The itemised table
-    // below marks them from bundleManifest role: "convenience-copy", so this
-    // cannot drift back into a selling point without the manifest changing too.
-    'It also carries the full book in PDF and EPUB and the Municipal Autonomy Code, which are free to download by anyone and are in here so you do not have to go and get them.';
+    'It also carries the current book in PDF and EPUB. Publicly available files are marked in the archive list below.';
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.
@@ -687,7 +695,7 @@ export async function sendDownloadEmail({
   // The one email a paying customer must receive. Recorded so a bounce is
   // visible in our own data rather than only in Resend's dashboard.
   const { data, error } = await sendAndRecord(
-    { type: 'preorder_download', to, sessionId },
+    { type: 'preorder_download', to, sessionId, idempotencyKey },
     { from, to, subject, html }
   );
   if (error) {

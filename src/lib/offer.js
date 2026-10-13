@@ -99,6 +99,12 @@ import bundleManifest from './data/bundleManifest.js';
 const LEDGER_PRECEDENT_COUNT = 24;
 const PRECEDENT_FILE_CASE_COUNT = bundleManifest.counts.precedent_file_cases;
 const PRECEDENT_FILE_SOURCED_COUNT = bundleManifest.counts.cases_with_sources;
+const REFUND_WINDOW_DAYS = 30;
+const DIGITAL_SCOPE =
+  'Every digital thing this project publishes is included, starting with the ' +
+  'current book draft and The Precedent File. Substantial updates and future ' +
+  'digital editions remain included while the project is maintained. ' +
+  'Preorder buyers never pay the planned membership. Print is sold separately.';
 
 export const offer = Object.freeze({
   price: '$5',
@@ -123,11 +129,11 @@ export const offer = Object.freeze({
    * valuable thing in the offer, and it is the one a reader has to hear stated
    * plainly rather than infer from a table.
    */
-  sentence:
-    'Five dollars, once. You get every digital thing this project makes, ' +
-    'starting with the book as it is being written and The Precedent File, ' +
-    'and you keep getting it. When the membership launches later, you never ' +
-    'pay it.',
+  sentence: 'Five dollars, once. ' + DIGITAL_SCOPE,
+
+  // Receipts state the actual amount paid separately. This copy describes the
+  // digital entitlement without applying today's list price to an older order.
+  digitalScope: DIGITAL_SCOPE,
 
   /**
    * What the purchase is, in one plain line. Rendered next to the first ask on
@@ -136,8 +142,19 @@ export const offer = Object.freeze({
    * about. It names no amount, so a price change cannot strand it.
    */
   preorderPlain:
-    'This is a book preorder. You read it now, as it is being written, and ' +
-    'you get every update after.',
+    'This is a digital book preorder. You read the current draft now and ' +
+    'receive future digital editions while the project is maintained.',
+
+  access:
+    'A public sample is available without an account. Your purchase email ' +
+    'contains the downloads and the shared access password for the full ' +
+    'online draft. If you lose access, contact info@survivingthesingularity.com ' +
+    'from the email address used to buy; you do not need to buy again.',
+
+  purchaseTerms:
+    'One payment, with no recurring membership charge for preorder buyers. ' +
+    'The Print Edition is a separate purchase at half price for this cohort. ' +
+    `Digital purchases can be refunded within ${REFUND_WINDOW_DAYS} days.`,
 
   ledgerPrecedentCount: LEDGER_PRECEDENT_COUNT,
   precedentFileCaseCount: PRECEDENT_FILE_CASE_COUNT,
@@ -279,7 +296,7 @@ export const offer = Object.freeze({
   shipsPhysicalGoods: false,
 
   refund: Object.freeze({
-    windowDays: 30,
+    windowDays: REFUND_WINDOW_DAYS,
     contact: 'info@survivingthesingularity.com',
     subjectLine: 'Refund request'
   })
@@ -355,5 +372,5 @@ export function refundClause() {
  * paragraph will not fit. Derived so it cannot drift from `sentence`.
  */
 export function offerBlurb() {
-  return `${offer.price} once. Every digital thing this project makes, the book as it is being written, and The Precedent File. When the membership launches, you never pay it.`;
+  return `${offer.price} once. The current book draft, The Precedent File, and future digital editions while the project is maintained. Preorder buyers never pay the planned membership. Print is sold separately.`;
 }

@@ -131,12 +131,7 @@ export function decideEventDisposition(existing, nowMs) {
   return { proceed: true, reason: 'stale-repair', duplicate: false };
 }
 
-/**
- * Whether a disposition should answer Stripe with a 200 rather than a retryable
- * error. Every branch above is a 200: either we did the work, someone else did,
- * or someone else is doing it. A non-200 is reserved for fulfillment actually
- * throwing, which the handler decides, not this file.
- */
+/** Only a previously processed duplicate can be acknowledged without work. */
 export function isAcknowledged(disposition) {
-  return Boolean(disposition);
+  return disposition?.proceed === false && disposition?.duplicate === true;
 }

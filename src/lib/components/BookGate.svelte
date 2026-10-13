@@ -28,22 +28,25 @@
   }
 </script>
 
-<main class="gate-main">
+<section class="gate-main" aria-label="Book access">
   <form class="gate-form" on:submit|preventDefault={submitPassword}>
     <p class="gate-eyebrow">Surviving the Singularity</p>
     <h1 class="gate-title">This page is locked</h1>
     <p class="gate-sub">{subtitle}</p>
+    <label class="gate-label" for="book-access-password">Book access password</label>
     <input
+      id="book-access-password"
       type="password"
       bind:value={password}
       placeholder="Password"
-      aria-label="Password"
+      aria-describedby={formError ? 'book-access-error' : undefined}
+      aria-invalid={formError ? 'true' : undefined}
       autocomplete="off"
       autocapitalize="off"
       spellcheck="false"
       class="gate-input"
     />
-    {#if formError}<p class="gate-error" role="alert">{formError}</p>{/if}
+    {#if formError}<p id="book-access-error" class="gate-error" role="alert">{formError}</p>{/if}
     <button type="submit" class="gate-submit" disabled={!password}>
       Unlock
     </button>
@@ -52,8 +55,10 @@
       <a href="/early-access" class="gate-hint-link">Preorder for {offer.price}</a>
       and your code arrives by email.
     </p>
+    <p class="gate-hint"><a href="/sample" class="gate-hint-link">Read the free sample &amp; reading guide</a>. No email or password needed.</p>
+    <p class="gate-hint">Already purchased? Check your order email, or <a href="mailto:ctavolazzi@gmail.com" class="gate-hint-link">contact us with your purchase email</a> for help recovering access.</p>
   </form>
-</main>
+</section>
 
 <style>
   .gate-main {
@@ -100,6 +105,7 @@
     font-size: 1rem;
     min-height: 44px;
   }
+  .gate-label { text-align: left; color: #cbd5e1; font-size: 0.9rem; font-weight: 600; }
   .gate-error {
     color: #f87171;
     font-size: 0.85rem;
@@ -121,7 +127,7 @@
   }
   .gate-hint {
     font-size: 0.8rem;
-    color: #64748b;
+    color: #94a3b8;
     margin: 0.5rem 0 0;
   }
   .gate-hint-link {

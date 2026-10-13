@@ -47,6 +47,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Svelte and configuration checks
+        run: npm run check
+
+      - name: Payment, delivery and release regressions
+        run: npm run test:release
+
+      - name: Payment migration and concurrency in disposable Postgres
+        run: python3 tests/server/payment-sql.integration.py
+
       # No env is set on purpose. The build must not require Stripe or Supabase
       # credentials: adapter-auto emits a warning about not detecting a
       # production environment and still exits 0. If this step ever starts
@@ -54,14 +63,20 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Install launch test browsers
+        run: npx playwright install --with-deps chromium firefox webkit
+
+      - name: Launch flows on Chromium, Firefox and WebKit
+        run: npm run test:launch-browser
+
       - name: Report what this proves
         if: success()
         run: |
-          echo "- Every import in the committed tree resolves. A fresh clone builds." >> "$GITHUB_STEP_SUMMARY"
+          echo "- The committed tree passes code checks, source regressions, disposable-database tests, build and launch browser flows." >> "$GITHUB_STEP_SUMMARY"
+          echo "- External Stripe, Resend, hosted database and private-storage integration require separate release verification." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Report what this caught
         if: failure()
         run: |
-          echo "- **The committed tree does not build.**" >> "$GITHUB_STEP_SUMMARY"
-          echo "- The usual cause is a file that is imported but never \`git add\`ed: it exists on the author's disk, so local dev works, and is absent from the clone CI made." >> "$GITHUB_STEP_SUMMARY"
-          echo "- Check the failing import with \`git cat-file -e HEAD:<path>\`. Absent means it was never committed." >> "$GITHUB_STEP_SUMMARY"
+          echo "- **A release gate failed.** Inspect the failing step; this may be a build, regression, database, browser or setup failure." >> "$GITHUB_STEP_SUMMARY"
+          echo "- For a missing import, check \`git cat-file -e HEAD:<path>\` to distinguish an omitted file from a local-only artifact." >> "$GITHUB_STEP_SUMMARY"

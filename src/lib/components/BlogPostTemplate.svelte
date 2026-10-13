@@ -34,21 +34,8 @@
     showFaq: false
   };
 
-  // Default recommended videos - can be overridden by the page using this template
-  export let recommendedVideos = [
-    {
-      id: "PNqwvJCz_2w",
-      title: "Game Over? Voice Actors vs AI"
-    },
-    {
-      id: "GYBT66bPfu8",
-      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
-    },
-    {
-      id: "YLo7EH2zsW0",
-      title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
-    }
-  ];
+  // Pages may supply verified recommendations; there are no generic defaults.
+  export let recommendedVideos = [];
 
   // FAQ data - can be provided by the page using this template
   export let faqItems = [];

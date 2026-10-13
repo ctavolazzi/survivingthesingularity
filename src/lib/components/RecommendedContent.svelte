@@ -6,6 +6,7 @@
   export let videos = [];
 </script>
 
+{#if videos.length > 0}
 <div class="recommended-content-container">
   <h2 class="recommended-title">{title}</h2>
   <p class="recommended-description">{description}</p>
@@ -24,6 +25,7 @@
     {/each}
   </div>
 </div>
+{/if}
 
 <style>
   .recommended-content-container {

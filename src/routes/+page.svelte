@@ -5,14 +5,13 @@
   // No offer prose is typed into this file. See src/lib/offer.js.
   import { offer } from '$lib/offer';
 
-  export let data;
-
   let agiYears = '--';
   let agiDays = '---';
   let agiHours = '--';
   let agiMins = '--';
   let agiSecs = '--';
   let countdownReady = false;
+  let animateReveals = false;
 
   onMount(() => {
     const agiTarget = new Date('2027-11-25T00:00:00Z');
@@ -46,6 +45,7 @@
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
     } else {
+      animateReveals = true;
       document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
     }
 
@@ -73,6 +73,8 @@
 
     return () => {
       clearInterval(agiInterval);
+      revealObs.disconnect();
+      countObs.disconnect();
     };
   });
 </script>
@@ -102,7 +104,7 @@
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/home.png" />
 </svelte:head>
 
-<div class="home">
+<div class="home" class:reveal-enabled={animateReveals}>
 
   <div class="ambient" aria-hidden="true">
     <div class="ambient-orb ambient-orb-1"></div>
@@ -110,16 +112,52 @@
   </div>
   <div class="noise" aria-hidden="true"></div>
 
+  <!-- HERO -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="hero section-inner">
+
+      <div class="hero-text reveal reveal-d1">
+        <h1 class="hero-headline" id="hero-heading">
+          The future<br><span class="headline-nowrap">isn't coming&hellip;</span>
+          <em>It's here.</em>
+        </h1>
+        <div class="hero-sub-stack">
+          <p class="hero-sub-line">A book about AI, work, and making ordinary life more secure, starting with food.</p>
+          <p class="hero-sub-line hero-sub-punch">Doom-scrolling is not a plan.</p>
+          <p class="hero-sub-line">History, speculative stories, and practical proposals for working with other people.</p>
+          <p class="hero-sub-line">Start where you are, whether you rent, build, organize, or care for others.</p>
+        </div>
+        <div class="hero-actions">
+          <a href="/early-access" class="btn-primary">
+            Preorder the Book: {offer.price}
+            <span class="btn-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a href="/sample" class="btn-ghost">Read a Free Sample</a>
+        </div>
+      </div>
+
+      <div class="hero-video-wrap reveal">
+        <div class="hero-video-ratio">
+          <LiteYouTube videoId="YZH1csMhnDo" title="BotQ: Figure ramping F.03 production" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- AGI COUNTDOWN -->
-  <section class="agi-section" aria-label="AGI Countdown">
+  <section class="agi-section" aria-label="The author's AGI forecast">
     <div class="section-inner">
-      <a href="/book" class="agi-countdown ac-clickable" aria-label="Countdown to AGI: tap to learn why 2027">
+      <a href="#forecast" class="agi-countdown ac-clickable" aria-label="The author's personal AGI forecast for November 25, 2027: read the context">
         <div class="ac-eyebrow">
           <span class="ac-dot"></span>
-          <span>The Clock Is Running</span>
+          <span>A personal forecast, not a deadline</span>
         </div>
-        <h2 class="ac-heading">Countdown to <span class="ac-highlight">AGI</span></h2>
-        <div class="ac-display" class:ac-ready={countdownReady} role="timer" aria-label="Time remaining until AGI horizon">
+        <h2 class="ac-heading">My <span class="ac-highlight">AGI forecast</span></h2>
+        <p class="ac-context">November 25, 2027 is the author's prediction. It is not an expert consensus or a guaranteed arrival date.</p>
+        <div class="ac-display" class:ac-ready={countdownReady} role="timer" aria-label="Time until the author's forecast date, November 25, 2027">
           <div class="ac-block ac-block-accent">
             <span class="ac-value">{agiYears}</span>
             <span class="ac-label">Years</span>
@@ -149,41 +187,6 @@
     </div>
   </section>
 
-  <!-- HERO -->
-  <section id="hero" aria-labelledby="hero-heading">
-    <div class="hero section-inner">
-
-      <div class="hero-video-wrap reveal">
-        <div class="hero-video-ratio">
-          <LiteYouTube videoId="YZH1csMhnDo" title="BotQ: Figure ramping F.03 production" />
-        </div>
-      </div>
-
-      <div class="hero-text reveal reveal-d1">
-        <h1 class="hero-headline" id="hero-heading">
-          The future<br><span class="headline-nowrap">isn't coming&hellip;</span>
-          <em>It's here.</em>
-        </h1>
-        <div class="hero-sub-stack">
-          <p class="hero-sub-line">AI is ending careers. Rewriting industries.</p>
-          <p class="hero-sub-line hero-sub-punch">Doom-scrolling is not a plan.</p>
-          <p class="hero-sub-line">Waiting to be rescued is a failure condition.</p>
-          <p class="hero-sub-line">Here's the uncompromising reality check, and the way through.</p>
-        </div>
-        <div class="hero-actions">
-          <a href="/early-access" class="btn-primary">
-            Preorder the Book: {offer.price}
-            <span class="btn-icon" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </a>
-          <a href="/book" class="btn-ghost">Read the Book</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- STATS -->
   <section class="stat-strip" aria-label="By the numbers">
     <div class="section-inner">
@@ -191,29 +194,28 @@
         <div class="ss-item">
           <span class="ss-label">Scale</span>
           <div class="ss-figure"><span class="ss-num">300M</span></div>
-          <span class="ss-desc">jobs rendered obsolete by AI, globally</span>
-          <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs</a>
+          <span class="ss-desc">full-time-job equivalents potentially exposed to automation by generative AI worldwide. Exposure is not a count of jobs lost.</span>
+          <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs, 2023 estimate</a>
         </div>
         <div class="ss-item">
           <span class="ss-label">Speed</span>
           <div class="ss-figure"><span class="ss-num">99%</span></div>
-          <span class="ss-desc">of business leaders plan AI-driven headcount cuts within 2 years</span>
-          <a href="https://www.google.com/search?q=Mercer+2026+survey+AI+headcount+cuts+business+leaders" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Mercer, 2026</a>
+          <span class="ss-desc">of surveyed executives expect AI-related headcount reductions affecting 1–20% of roles within two years. These are expectations, not measured job losses.</span>
+          <a href="https://www.mercer.com/en-gb/insights/talent-and-transformation/skill-based-talent-management/ai-and-early-career/" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Mercer, 2026 survey</a>
         </div>
         <div class="ss-item">
-          <span class="ss-label">Price collapse</span>
-          <div class="ss-figure ss-figure-price">
-            <span class="ss-num ss-num-old">$100,000</span>
-            <span class="ss-num">$1,000</span>
+          <span class="ss-label">Tools to explore</span>
+          <div class="ss-figure">
+            <span class="ss-num">Open</span>
           </div>
-          <span class="ss-desc">robot capability, now in your own home</span>
-          <a href="https://www.google.com/search?q=open+source+robot+arm+$1000+home+2026+LeRobot+SO-100" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Open-source robotics</a>
+          <span class="ss-desc">robotics designs and training tools you can inspect. Low-cost experimental arms are not equivalent to industrial systems.</span>
+          <a href="https://github.com/huggingface/lerobot" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">LeRobot project and documentation</a>
         </div>
         <div class="ss-item">
           <span class="ss-label">Food first</span>
           <div class="ss-figure"><span class="ss-num">1</span></div>
           <span class="ss-desc">place to start: <strong>make sure people eat, even when paid work changes.</strong></span>
-          <a href="/book" class="ss-src ss-src-link">Explore the proposal</a>
+          <a href="/sample" class="ss-src ss-src-link">Explore the proposal</a>
         </div>
       </div>
     </div>
@@ -225,7 +227,7 @@
       <div class="evidence-header reveal">
         <span class="section-label">The Evidence</span>
         <h2 class="section-heading">Stop imagining the future.<br>Look at the present.</h2>
-        <p class="section-sub">Every machine below is real and working today. This is the story the book tells: how we got here, and what you can build with the same tools.</p>
+        <p class="section-sub">These examples span research demonstrations, commercial tools, and historical milestones. Their capabilities and operating conditions differ. The book asks what they can teach us about useful local work.</p>
       </div>
       <div class="evidence-grid reveal reveal-d1">
         <figure class="ev-cell ev-cell-large">
@@ -246,7 +248,7 @@
           <div class="ev-media"><img src="/book-images/ch04-da-vinci.webp" alt="da Vinci surgical robot in an operating room" loading="lazy" decoding="async" /></div>
           <figcaption class="ev-cap">
             <span class="ev-cap-title">To operate</span>
-            <span class="ev-cap-sub">Steadier than human hands, in hospitals worldwide.</span>
+            <span class="ev-cap-sub">Robot-assisted surgery, controlled by a trained surgeon.</span>
           </figcaption>
         </figure>
         <figure class="ev-cell">
@@ -266,8 +268,8 @@
         <figure class="ev-cell ev-cell-wide">
           <div class="ev-media"><img src="/book-images/ch10-nyse.webp" alt="New York Stock Exchange trading floor screens" loading="lazy" decoding="async" /></div>
           <figcaption class="ev-cap">
-            <span class="ev-cap-title">And to run the markets</span>
-            <span class="ev-cap-sub">Most trading volume is already machine-to-machine.</span>
+            <span class="ev-cap-title">And to automate trading</span>
+            <span class="ev-cap-sub">Algorithms execute trades; people and institutions set the rules.</span>
           </figcaption>
         </figure>
       </div>
@@ -280,7 +282,7 @@
       <div class="video-header reveal">
         <span class="section-label">The Other Side</span>
         <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
-        <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Give the machines a job worth having, and start with food. The book shows you how.</p>
+        <p class="section-sub">FarmBot can automate planting, watering, and some weeding in a prepared garden bed. People still provide inputs, maintenance, and harvesting. The book explores these tools as part of food provision, without promising a self-sufficient food supply.</p>
         <blockquote class="thesis-quote">
           <p>If a robot can grow my food and build my house, why am I still renting my survival?</p>
           <cite>Surviving the Singularity, Introduction</cite>
@@ -335,13 +337,12 @@
               <path class="md-curve md-curve-down" d="M30,45 C220,60 380,150 540,178" fill="none" />
               <text x="330" y="60" class="md-label md-label-up">what AI can do</text>
               <text x="310" y="140" class="md-label md-label-down">what it costs</text>
-              <text x="34" y="205" class="md-label md-label-dim">2020</text>
-              <text x="505" y="205" class="md-label md-label-dim">now</text>
             </svg>
           </div>
+          <p class="middle-fine">Conceptual illustration, not a measured data series.</p>
           <ul class="middle-list">
-            <li>AI is displacing workers right now. CEOs are tripping over themselves to cut headcount. It is not stopping.</li>
-            <li>Robot capabilities that cost $100K in 2022 are available for under $1,000 today.</li>
+            <li>AI can change tasks, staffing, and bargaining power. The scale and timing of its effects depend on adoption, policy, and decisions people make.</li>
+            <li>Open-source robotics makes experimentation more accessible. Reliability, safety, maintenance, and total cost still need to be measured for each job.</li>
             <li>Who owns a tool, who sets its terms, and who can use its output shape what it does for a community.</li>
             <li>Find people working on food, useful equipment, or public decisions near you. Bring a skill, a question, or a concrete request.</li>
           </ul>
@@ -351,7 +352,7 @@
           <p class="middle-offer-label">Here's what you do about it</p>
           <ul class="middle-offer-list">
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The readiness checklist: concrete moves, ordered by impact</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Full blueprint, all chapters</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Reading routes for workers, parents, organizers, makers, and skeptics</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The Precedent File: {offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Book draft, updated as it's written</li>
           </ul>
@@ -408,7 +409,7 @@
             <span class="timeline-period">2017</span>
           </div>
           <p class="timeline-label">The Event Horizon</p>
-          <p class="timeline-desc">Eight researchers publish the Transformer architecture. Every modern AI descends from this one paper. Almost nobody notices. The book argues this was the point of no return.</p>
+          <p class="timeline-desc">Eight researchers publish the Transformer architecture, which becomes a foundation for many widely used language models. Other AI architectures also exist. The book treats this as a major turning point.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-img" aria-hidden="true">
@@ -430,30 +431,30 @@
             <span class="timeline-period">2022&ndash;Now</span>
           </div>
           <p class="timeline-label">The Breakout</p>
-          <p class="timeline-desc">ChatGPT becomes the fastest-adopted product in history. Compute becomes the largest infrastructure buildout on the planet. Humanoids enter the factories. You are here.</p>
+          <p class="timeline-desc">ChatGPT brings conversational AI to a broad public. Companies invest in computing infrastructure and test humanoid robots in factories. A demonstration, a pilot, and dependable deployment are different milestones.</p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" id="forecast">
           <div class="timeline-img" aria-hidden="true">
             <img src="/images/optimized/ch19_iss_sunrise_800.webp" alt="" loading="lazy" decoding="async" />
           </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot"></div>
-            <span class="timeline-period">2027+</span>
+            <span class="timeline-period">2027 / 2047</span>
           </div>
-          <p class="timeline-label">The Horizon</p>
-          <p class="timeline-desc">Median expert estimate for AGI. Not a doomsday. A horizon. The people who prepared watch the sunrise from the right side of it. The book gets you there.</p>
+          <p class="timeline-label">Forecasts, with uncertainty</p>
+          <p class="timeline-desc">A 2023 survey of 2,778 AI researchers estimated, in aggregate, a 10% chance of high-level machine intelligence by 2027 and a 50% chance by 2047: machines outperforming people at every task, under the survey's definition. These probabilities are not a consensus arrival date. The author's November 2027 prediction is a separate personal forecast. <a href="https://arxiv.org/abs/2401.02843" target="_blank" rel="noopener noreferrer">Read Grace et al. (2024)</a>.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- VIDEO -->
-  <section class="video-section" aria-label="Watch autonomous robots at work">
+  <section class="video-section" aria-label="Watch a robotics demonstration">
     <div class="section-inner">
       <div class="video-header reveal">
-        <span class="section-label">No Cuts. No CGI.</span>
-        <h2 class="section-heading">Autonomous, at <em class="vh-em">1x speed.</em></h2>
-        <p class="section-sub">Nobody is holding a controller and nothing is sped up. This is where physical AI is right now.</p>
+        <span class="section-label">A closer look</span>
+        <h2 class="section-heading">Robotics, <em class="vh-em">in demonstration.</em></h2>
+        <p class="section-sub">Watch the demonstration and check the creator's description for its setup and limitations. A video alone cannot establish reliability across everyday conditions.</p>
       </div>
     </div>
     <div class="video-wrap reveal">
@@ -478,8 +479,8 @@
           </span>
           <span class="book-part-num">Part I</span>
           <h3 class="book-part-title">What is the Singularity?</h3>
-          <p class="book-part-sub">The data. The math. The thermodynamic reality.</p>
-          <p class="book-part-desc">Why the 2017 Transformer crossed the event horizon. The mathematical map of intelligence scaling: nine stages from current AI to the apex, run by a machine bound by physics.</p>
+          <p class="book-part-sub">Evidence, forecasts, and physical limits.</p>
+          <p class="book-part-desc">How recent AI developed, what researchers forecast, and where the evidence stops. The author's nine-stage framework is a speculative way to explore possible futures, not a validated mathematical law.</p>
         </div>
         <div class="book-part book-part-2">
           <span class="book-part-icon" aria-hidden="true">
@@ -488,7 +489,7 @@
           <span class="book-part-num">Part II</span>
           <h3 class="book-part-title">How Humans React</h3>
           <p class="book-part-sub">Transition dynamics. Fear to footing. The egalitarian pivot.</p>
-          <p class="book-part-desc">Most people follow predictable patterns when disruption hits. Learn the psychology of the collapse, step out of the fear loop, and plug into the egalitarian, hyper-local cooperative networks already forming.</p>
+          <p class="book-part-desc">Historical cases and fictional scenes explore different responses to disruption. Use them to question your assumptions and think through how people might cooperate, without assuming everyone follows the same path.</p>
         </div>
         <div class="book-part book-part-3">
           <span class="book-part-icon" aria-hidden="true">
@@ -523,7 +524,7 @@
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
-        <p style="font-size:0.8rem; color:#64748b; margin-top:14px;">No upsells. No subscription. Just the stuff that matters.</p>
+        <p style="font-size:0.9rem; color:#94a3b8; margin-top:14px;">{offer.purchaseTerms}</p>
       </div>
     </div>
   </section>
@@ -531,6 +532,15 @@
 </div>
 
 <style>
+  .ac-context {
+    max-width: 52ch;
+    margin: 0.75rem auto 1.25rem;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .timeline-desc a { color: #fbbf24; text-decoration: underline; }
   .home {
     font-family: 'Outfit', system-ui, sans-serif;
     --bg:            #020617;
@@ -547,7 +557,7 @@
     --green:         #10b981;
     --text-1:        #f8fafc;
     --text-2:        #cbd5e1;
-    --text-3:        #64748b;
+    --text-3:        #94a3b8;
     --text-4:        #334155;
     --font-mono:     'JetBrains Mono', monospace;
     --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
@@ -583,12 +593,12 @@
   }
 
   /* SCROLL REVEAL */
-  :global(.reveal) {
+  .home.reveal-enabled :global(.reveal) {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.7s var(--ease-out, cubic-bezier(0.16,1,0.3,1)), transform 0.7s var(--ease-out, cubic-bezier(0.16,1,0.3,1));
   }
-  :global(.reveal.visible) { opacity: 1; transform: translateY(0); }
+  .home.reveal-enabled :global(.reveal.visible) { opacity: 1; transform: translateY(0); }
   :global(.reveal-d1) { transition-delay: 0.08s; }
   :global(.reveal-d2) { transition-delay: 0.16s; }
   :global(.reveal-d3) { transition-delay: 0.24s; }
@@ -1396,7 +1406,7 @@
   .timeline-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .timeline-paper svg { width: 100%; height: 100%; display: block; }
   .tp-title { font-family: var(--font-mono); font-size: 15px; font-weight: 700; fill: #0f172a; }
-  .tp-byline { font-family: var(--font-mono); font-size: 8.5px; fill: #64748b; }
+  .tp-byline { font-family: var(--font-mono); font-size: 8.5px; fill: #94a3b8; }
 
   /* VIDEO HEADER */
   .video-header { margin-bottom: clamp(24px, 4vw, 40px); }

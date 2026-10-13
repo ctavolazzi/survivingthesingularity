@@ -1,6 +1,9 @@
 import { redirect } from '@sveltejs/kit';
+import { dev } from '$app/environment';
 import { env } from '$env/dynamic/private';
 import Stripe from 'stripe';
+import { isPreorderSession } from '$lib/server/preorderSession.js';
+import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { getBundleUrl, fulfillPreorder } from '$lib/server/fulfillment.js';
 import { recordCheckoutCompleted, markTransactionFulfilled } from '$lib/server/transactions.js';
@@ -33,13 +36,14 @@ const stripe = SECRET_KEY && !SECRET_KEY.startsWith('your_')
  */
 async function paidAccordingToOurRecords(sessionId) {
   if (!supabaseAdmin) return null;
-  const { data, error } = await supabaseAdmin
-    .from('fulfilled_sessions')
-    .select('session_id, email')
-    .eq('session_id', sessionId)
-    .maybeSingle();
+  const ledger = await supabaseAdmin.from('checkout_transactions')
+    .select('session_id, email').eq('session_id', sessionId).eq('status', 'completed').maybeSingle();
+  if (!ledger.error && ledger.data) return ledger.data;
+  // Retain compatibility with paid orders predating the permanent ledger.
+  const { data, error } = await supabaseAdmin.from('fulfilled_sessions')
+    .select('session_id, email').eq('session_id', sessionId).maybeSingle();
   if (error) {
-    console.error('[success] fulfilled_sessions lookup failed:', error.message);
+    console.error('[success] paid-record lookup failed:', error.message);
     return null;
   }
   return data ?? null;
@@ -49,10 +53,9 @@ async function paidAccordingToOurRecords(sessionId) {
  * Stripe could not confirm this purchase. Before showing a paying customer an
  * error, check whether we already know the purchase is real.
  *
- * Note what this does NOT do: it never calls `fulfillPreorder()`. The row's
- * existence means `claimSession()` already succeeded, so fulfillment has
- * already run and the emails have already been sent. Re-running it would be a
- * no-op at best and a duplicate email at worst.
+ * This recovers access, not an email-delivery assertion. A claim can have
+ * failed after payment, and a ledger row is not proof the inbox received mail.
+ * The verified webhook retry/reconciliation handles unfinished fulfillment.
  *
  * @param {string} sessionId
  * @param {string} error   what to say if we have no record either
@@ -76,41 +79,28 @@ async function serveFromOwnRecords(sessionId, error) {
     // The page stays honest about which path served it. The download is real;
     // the live confirmation is not available.
     recovered: true,
+    emailStatus: 'unknown',
+    bookAccessPassword: BOOK_ACCESS_PASSWORD,
   };
 }
 
 /** @type {import('./$types').PageServerLoad} */
-export async function load({ url, platform }) {
+export async function load({ url }) {
   const sessionId = url.searchParams.get('session_id') ?? '';
 
-  // ── WAITLIST MODE (email capture, Stripe not yet wired) ─────────────────────
-  if (sessionId === 'waitlist') {
-    const email = url.searchParams.get('email') ?? null;
-    const bundleUrl = await getBundleUrl();
-    return {
-      ok:        true,
-      mock:      false,
-      email,
-      bundleUrl: bundleUrl ?? null,
-      sessionId,
-    };
-  }
-
-  // ── MOCK MODE ────────────────────────────────────────────────────────────────
-  if (!stripe || sessionId === 'mock_session' || sessionId.startsWith('mock_')) {
-    const bundleUrl = await getBundleUrl();
-    return {
-      ok:         true,
-      mock:       true,
-      email:      null,
-      bundleUrl:  bundleUrl ?? null,
-      sessionId,
-    };
+  // Synthetic sessions never access storage, even in development. Missing
+  // production credentials are an unavailable verifier, not a paid purchase.
+  if (dev && (sessionId === 'mock_session' || sessionId.startsWith('mock_'))) {
+    return { ok: true, mock: true, email: null, bundleUrl: null, sessionId, emailStatus: 'unknown' };
   }
 
   // ── VALIDATE SESSION ─────────────────────────────────────────────────────────
   if (!sessionId || !sessionId.startsWith('cs_')) {
     throw redirect(302, '/early-access');
+  }
+
+  if (!stripe) {
+    return await serveFromOwnRecords(sessionId, 'Payment verification is temporarily unavailable. Contact us with your order reference.');
   }
 
   // Stripe is the fast path, not the only path. Every failure below falls
@@ -127,6 +117,11 @@ export async function load({ url, platform }) {
       sessionId,
       'Could not verify your payment. Contact us and we will send your download.'
     );
+  }
+
+  if (!isPreorderSession(session)) {
+    // Old receipts may be recovered only from our own paid-order ledger.
+    return await serveFromOwnRecords(sessionId, 'This checkout does not match an early-access purchase. Contact us with your order reference.');
   }
 
   if (session.payment_status !== 'paid') {
@@ -147,45 +142,32 @@ export async function load({ url, platform }) {
   // ── GENERATE DOWNLOAD URL ────────────────────────────────────────────────────
   const bundleUrl = await getBundleUrl();
 
-  // ── FULFILL (once per session; also covered independently by the Stripe
-  // webhook at /api/webhooks/stripe if the browser never gets this far) ───────
-  if (customerEmail) {
-    // The ledger write is chained onto fulfillment rather than run beside it,
-    // so `fulfilled` is only ever set by the call that actually delivered.
-    // When the webhook won the race this returns `alreadyFulfilled` and the
-    // flag is left for whichever worker did the work to set.
-    // Payment facts threaded through for the confirmation email's receipt
-    // block, read off the `session` this load already fetched. The webhook
-    // passes the identical four, so whichever path wins the race sends the
-    // same receipt.
-    const fulfillment = fulfillPreorder({
-      sessionId, email: customerEmail, name: customerName, editionType,
-      amountTotal: session.amount_total ?? null,
-      currency: session.currency ?? null,
-      paymentIntent: typeof session.payment_intent === 'string'
-        ? session.payment_intent
-        : session.payment_intent?.id ?? null,
-      orderedAt: session.created ?? null,
-    })
-      .then(async (result) => {
-        await recordCheckoutCompleted({
-          sessionId,
-          paymentIntent: typeof session.payment_intent === 'string'
-            ? session.payment_intent
-            : session.payment_intent?.id ?? null,
-          email: customerEmail,
-          name: customerName,
-          editionType,
-          amountTotal: session.amount_total ?? null,
-          currency: session.currency ?? null,
-        });
-        if (result?.delivered) await markTransactionFulfilled(sessionId);
-      })
-      .catch((e) => console.error('[success] fulfillPreorder threw:', e?.message ?? e));
-
-    if (platform?.context?.waitUntil) {
-      platform.context.waitUntil(fulfillment);
+  // Await on every runtime. A detached promise is not durable work outside a
+  // Worker waitUntil context, and would make the page claim a send it lost.
+  let emailStatus = 'retryable_failure';
+  try {
+    const ledger = await recordCheckoutCompleted({
+      sessionId,
+      paymentIntent: typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent?.id ?? null,
+      email: customerEmail, name: customerName, editionType,
+      amountTotal: session.amount_total ?? null, currency: session.currency ?? null,
+    });
+    if (!ledger.configured || !ledger.ok) throw new Error(ledger.error ?? 'Payment ledger unavailable');
+    if (customerEmail) {
+      const result = await fulfillPreorder({
+        sessionId, email: customerEmail, name: customerName, editionType,
+        amountTotal: session.amount_total ?? null, currency: session.currency ?? null,
+        paymentIntent: typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent?.id ?? null,
+        orderedAt: session.created ?? null,
+      });
+      emailStatus = result.state;
+      if (['accepted', 'already_delivered'].includes(result.state)) {
+        const recorded = await markTransactionFulfilled(sessionId);
+        if (!recorded?.ok) console.error('[success] fulfillment ledger update failed:', recorded?.error);
+      }
     }
+  } catch (error) {
+    console.error('[success] fulfillment pending:', error?.message ?? error);
   }
 
   return {
@@ -193,6 +175,8 @@ export async function load({ url, platform }) {
     mock:        false,
     email:       customerEmail,
     editionType,
+    emailStatus,
+    bookAccessPassword: BOOK_ACCESS_PASSWORD,
     bundleUrl:   bundleUrl ?? null,
     sessionId,
   };

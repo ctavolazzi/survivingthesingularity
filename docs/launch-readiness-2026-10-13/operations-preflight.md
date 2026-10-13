@@ -18,6 +18,9 @@ npm run check:launch
 # Explicit read-only service checks with test-mode credentials.
 npm run check:launch -- --services --mode=test
 
+# Rehearse the monitor against the isolated preview with its own token.
+RECONCILE_ORIGIN="${PUBLIC_ORIGIN:?Set PUBLIC_ORIGIN to the isolated preview origin}" node scripts/check-payment-reconciliation.mjs
+
 # Read-only verification of the production configuration and provider records.
 npm run check:launch -- --services --mode=live
 
@@ -33,6 +36,19 @@ use `https://survivingthesingularity.com` and live-mode keys for the production
 configuration check. See [`.env.example`](../../.env.example) for the variable
 contract, and [the rollout](../payment-reliability-rollout.md) for migration and
 fulfillment details.
+
+Use an **isolated Supabase project/database and private storage** for the preview,
+with the required migrations, verified bundle and preview-only monitor token.
+Test-mode Stripe does not isolate the application's database: ownership and
+checkout reservations are keyed by email and edition without a mode partition.
+Do not use production customer tables for rehearsal purchases or injected
+database/provider failures. Use fresh test addresses and a controlled mailbox.
+
+The monitor command above can rehearse the preview before merge. GitHub cannot
+manually dispatch the new workflow until it exists on the default branch. After
+merge, verify a manual production run and subsequent hourly runs, with the same
+production token in hosting and the GitHub secret and working failure
+notifications. Preview rehearsal does not establish production monitoring.
 
 Configuration checks cover the standard Stripe price ID, key mode, webhook
 secrets, production sender, Supabase service credentials, exact bundle
@@ -66,7 +82,7 @@ public evidence. Record results and sanitized references instead.
 | Buyer access | Receipt opens the intended environment; current ZIP extracts; PDF/EPUB open; access code and return-link recovery work |
 | Failure recovery | Provider failure remains retryable; replay does not duplicate fulfillment; two concurrent checkout tabs do not create two independently payable purchases |
 | Consent and email | Optional marketing remains unchecked; welcome/unsubscribe links target the intended environment; delivery-event webhook recorded |
-| Monitor | Hosting and CI tokens match; manual reconciliation succeeds; failure notification destination works |
+| Monitor | Preview command rehearsal passes before merge; after merge, production hosting/CI tokens match, manual and scheduled workflow runs succeed, and the failure notification destination works |
 | Deployed site | Correct commit, `/sample` and downloads return current content; crawler guard passes against the actual domain |
 | Social preview | Inspect the sample, offer and checklist links in intended social apps after deployment; refresh stale platform caches where supported |
 

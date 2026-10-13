@@ -67,6 +67,20 @@ node --test scripts/book-downloads.test.mjs
 npm run book:release
 ```
 
+For an EPUB stylesheet correction after a proved release, use
+`python3 scripts/prepare-book-downloads.py --epub-only`. It rebuilds and proves
+the EPUB from canonical source and retains the exact PDF bytes only when the
+prior source, PDF master, artwork and PDF layout hashes still match. Recheck
+the resulting EPUB with EPUBCheck and inspect narrow-screen and enlarged-text
+reading before running `npm run book:release` and rebuilding the private ZIP.
+`node scripts/check-epub-reflow.mjs` renders all shipped chapters at 320 and
+768 pixels with 18 and 28 pixel text, and fails on horizontal page overflow or
+missing images. It requires the installed Playwright Chromium browser and
+Python's standard library. An optional first argument selects a candidate EPUB;
+`EPUB_REFLOW_BROWSER=firefox` or `EPUB_REFLOW_BROWSER=webkit` selects another
+installed browser engine. Contained table panning is checked separately from
+whole-page overflow. Browser rendering does not certify paginated e-reader apps.
+
 Python package versions used for this release are in `requirements.txt`.
 The preparation script builds the existing publication masters and EPUB from
 the frozen canonical source, proves their text and resources, and creates

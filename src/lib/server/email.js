@@ -1,4 +1,6 @@
 import { env } from '$env/dynamic/private';
+import { env as publicEnv } from '$env/dynamic/public';
+import { validateEmailLinkOrigin } from '$lib/emailConfig.js';
 import { Resend } from 'resend';
 import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
@@ -11,12 +13,21 @@ import { offer, offerItemLabel } from '$lib/offer.js';
 // proves it still matches the zip customers actually receive.
 import bundleManifest from '$lib/data/bundleManifest.js';
 
-// Dynamic env so a missing key never breaks the build. If RESEND_API_KEY is
-// unset, every send becomes a logged no-op and signups still succeed.
+// Dynamic env keeps credential-free builds usable. Missing credentials return
+// skipped; callers must not describe that as successful email delivery.
 const apiKey = env.RESEND_API_KEY;
 const from = env.EMAIL_FROM || 'Surviving the Singularity <onboarding@resend.dev>';
 
 const resend = apiKey ? new Resend(apiKey) : null;
+
+// Receipt and unsubscribe links must return to the environment that created
+// their session/token. PUBLIC_ variables are excluded from dynamic/private.
+// Validate at send time so a typo cannot crash unrelated public page loads.
+function customerUrl(path) {
+  const base = validateEmailLinkOrigin(publicEnv);
+  if (!base.ok) throw new Error(base.error);
+  return new URL(path, base.origin).href;
+}
 
 /**
  * Send through Resend and record the attempt in email_deliveries.
@@ -229,7 +240,7 @@ function buildWelcome(source) {
         'All 7 moves are unlocked on the site. Work through them at your own pace. ' +
         'Start with the three you have been avoiding. When you want the deeper strategy, ' +
         'the book is there too.',
-      cta: { label: 'Open the checklist', url: 'https://survivingthesingularity.com/checklist' },
+      cta: { label: 'Open the checklist', url: customerUrl('/checklist') },
     };
   }
   return {
@@ -238,7 +249,7 @@ function buildWelcome(source) {
     body:
       "You'll be the first to know when the book launches, plus the field notes published " +
       'along the way. No spam, no noise. Unsubscribe anytime.',
-    cta: { label: 'Read the Book', url: 'https://survivingthesingularity.com/book' },
+    cta: { label: 'Read the Book', url: customerUrl('/book') },
   };
 }
 
@@ -336,7 +347,7 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
     : `${greeting} Your interest is recorded. This message is not a payment receipt. ` +
       `${offer.sentence} See the current offer before purchasing.`;
 
-  const cta = { label: 'Read a free sample', url: 'https://survivingthesingularity.com/sample' };
+  const cta = { label: 'Read a free sample', url: customerUrl('/sample') };
 
   const subject = isAuthors
     ? "Author's Edition request received"
@@ -388,7 +399,7 @@ export async function sendDiscordApplicationConfirmation({ name, email }) {
   const greeting = safeName ? `Hi ${safeName},` : 'Hi,';
   const heading = 'Application received.';
   const body = `${greeting} Your application to join the Surviving the Singularity Discord is in. We review every application by hand, so it may take a few days. You'll hear from us either way.`;
-  const cta = { label: 'Back to the checklist', url: 'https://survivingthesingularity.com/checklist' };
+  const cta = { label: 'Back to the checklist', url: customerUrl('/checklist') };
   const { error } = await sendAndRecord(
     { type: 'discord_application_confirmation', to: email },
     { from, to: email, subject: 'Your Discord application is in', html: renderHtml({ heading, body, cta }) }
@@ -511,7 +522,7 @@ export async function sendChecklistEmail({ to, answers }) {
   ${itemsHtml}
   <div style="margin:32px 0;padding:20px 24px;background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.2);border-radius:12px;">
     <p style="font-size:13px;color:#94a3b8;margin:0 0 14px;line-height:1.5;">Want the full strategy behind each step? The book expands every area of this checklist.</p>
-    <a href="https://survivingthesingularity.com/book" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:13px;text-decoration:none;padding:11px 20px;border-radius:8px;">Read the Book →</a>
+    <a href="${customerUrl('/book')}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:13px;text-decoration:none;padding:11px 20px;border-radius:8px;">Read the Book →</a>
   </div>
   <p style="font-size:11px;color:#334155;margin:32px 0 0;">You requested this at survivingthesingularity.com. Reply to unsubscribe.</p>
 </div>
@@ -576,7 +587,7 @@ export async function sendDownloadEmail({
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.
-  const pageUrl = `https://survivingthesingularity.com/early-access/success?session_id=${encodeURIComponent(sessionId)}`;
+  const pageUrl = customerUrl(`/early-access/success?session_id=${encodeURIComponent(sessionId)}`);
   // Shared Stripe promotion code (allow_promotion_codes is already on in
   // stripe-checkout/+server.js). The personal code below is this specific
   // customer's proof of a genuine preorder, stored in Supabase
@@ -680,7 +691,7 @@ export async function sendDownloadEmail({
     <div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);border-radius:10px;padding:16px 20px;margin-top:8px;">
       <p style="font-size:13px;color:#64748b;margin:0 0 10px;">Also included in your early access:</p>
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">
-        Full book: current draft <a href="https://survivingthesingularity.com/book" style="color:#f59e0b;">survivingthesingularity.com/book</a>
+        Full book: current draft <a href="${customerUrl('/book')}" style="color:#f59e0b;">Read the book online</a>
       </p>
       <p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(BOOK_ACCESS_PASSWORD)}</strong></p>
     </div>
@@ -708,7 +719,7 @@ export async function sendDownloadEmail({
 /**
  * Fire a welcome/confirmation email. Safe to call unconditionally:
  * - no API key  -> logs a warning, returns { skipped: true }
- * - send errors -> caught by caller; must never block signup.
+ * - send errors -> returned to the caller, which reports unconfirmed delivery.
  *
  * @param {{ to: string, source?: string, unsubscribeToken?: string }} args
  */
@@ -740,9 +751,8 @@ export async function sendWelcomeEmail({ to, source = 'homepage', unsubscribeTok
     console.warn('[email] RESEND_API_KEY unset - skipping welcome email to', to);
     return { skipped: true };
   }
-  const baseUrl = env.PUBLIC_BASE_URL || 'https://survivingthesingularity.com';
   const unsubscribeUrl = unsubscribeToken
-    ? `${baseUrl}/unsubscribe?token=${unsubscribeToken}`
+    ? customerUrl(`/unsubscribe?token=${encodeURIComponent(unsubscribeToken)}`)
     : null;
   const copy = buildWelcome(source);
   const { error } = await sendAndRecord(

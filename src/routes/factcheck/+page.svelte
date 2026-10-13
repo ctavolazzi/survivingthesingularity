@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import summary from '$lib/data/factcheck-summary.json';
   import book from '$lib/data/book/book.json';
 
@@ -24,17 +25,15 @@
 <svelte:head>
   <title>Evidence and historical audit: Surviving the Singularity</title>
   <meta name="description" content="A historical mechanical audit of book version {summary.book_version}, with explicit coverage limits and sources for current homepage claims. This is not a certification of the current manuscript." />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Surviving the Singularity" />
-  <meta property="og:title" content="Don't trust the book. Audit it." />
-  <meta property="og:description" content="Historical source tracing, current homepage sources, and the limits of automated checks." />
-  <meta property="og:url" content="https://survivingthesingularity.com/factcheck" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Don't trust the book. Audit it." />
-  <meta name="twitter:description" content="Historical source tracing, current homepage sources, and the limits of automated checks." />
 </svelte:head>
+
+<SocialMeta
+  title="Evidence and historical audit | Surviving the Singularity"
+  description="Historical source tracing, current homepage sources, and the limits of automated checks."
+  type="website"
+  image="/images/og/factcheck.png"
+  imageAlt="Evidence and historical audit: current homepage sources and a historical mechanical snapshot with stated limits."
+/>
 
 <div class="fc">
 

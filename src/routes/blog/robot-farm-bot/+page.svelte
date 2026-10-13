@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
   import Spacer from '$lib/components/Spacer.svelte';
@@ -31,10 +32,9 @@
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content={post.excerpt} />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={post.title} />
-  <meta property="og:description" content={post.excerpt} />
 </svelte:head>
+
+<SocialMeta title={post.title} description={post.excerpt} />
 
 <div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">

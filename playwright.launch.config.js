@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests/e2e',
-  testMatch: 'launch-accessibility.spec.js',
+  testMatch: ['launch-accessibility.spec.js', 'launch-resilience.spec.js', 'h-usability.spec.js'],
   outputDir: './tests/results/launch',
   timeout: 45_000,
   workers: 1,

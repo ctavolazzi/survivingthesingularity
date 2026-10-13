@@ -1,6 +1,7 @@
 <script>
   import { onMount, createEventDispatcher } from 'svelte';
   import { browser } from '$app/environment';
+  import { requestJson, RequestTimeoutError } from '$lib/requestJson.js';
 
   const dispatch = createEventDispatcher();
 
@@ -34,14 +35,15 @@
   let preferenceNotice = '';
 
   onMount(() => {
-    if (browser && localStorage.getItem(LS_KEY)) {
-      unlocked = true;
-      const storedEmail = localStorage.getItem(LS_KEY + '_email') || '';
-      // 'restore' (not 'unlock') so one-time side effects wired to 'unlock'
-      // (e.g. sending an email) can't refire on every page load for a
-      // visitor already unlocked on a previous visit.
-      dispatch('restore', { email: storedEmail });
-    }
+    if (!browser) return;
+    try {
+      if (localStorage.getItem(LS_KEY)) {
+        unlocked = true;
+        const storedEmail = localStorage.getItem(LS_KEY + '_email') || '';
+        // Restoring a visit must not repeat one-time email side effects.
+        dispatch('restore', { email: storedEmail });
+      }
+    } catch { /* The checklist can still unlock for this visit. */ }
   });
 
   async function submit(e) {
@@ -50,7 +52,7 @@
     state = 'loading';
     errorMsg = '';
     try {
-      const res = await fetch('/api/waitlist', {
+      const { response: res, data } = await requestJson('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -61,14 +63,15 @@
           _hp: honeypot,
         }),
       });
-      const data = await res.json().catch(() => ({}));
       if (res.status === 201 || res.status === 409) {
         if (res.status === 409) {
           preferenceNotice = 'Your email preferences have not changed. Use the unsubscribe link in an email, or contact us to request changes.';
         }
         if (browser) {
-          localStorage.setItem(LS_KEY, '1');
-          localStorage.setItem(LS_KEY + '_email', email);
+          try {
+            localStorage.setItem(LS_KEY, '1');
+            localStorage.setItem(LS_KEY + '_email', email);
+          } catch { /* A successful signup must still reveal the checklist. */ }
         }
         unlocked = true; // reveal
         // 'unlock' fires ONLY here, on a brand-new submission.
@@ -77,9 +80,11 @@
         state = 'error';
         errorMsg = data.error || 'Something went wrong. Try again.';
       }
-    } catch {
+    } catch (error) {
       state = 'error';
-      errorMsg = 'Network error. Try again.';
+      errorMsg = error instanceof RequestTimeoutError
+        ? 'The request took too long. Retry with the same email address.'
+        : 'Network error. Try again.';
     }
   }
 </script>

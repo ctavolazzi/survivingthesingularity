@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
   import Spacer from '$lib/components/Spacer.svelte';
@@ -42,10 +43,9 @@
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content={post.excerpt} />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={post.title} />
-  <meta property="og:description" content={post.excerpt} />
 </svelte:head>
+
+<SocialMeta title={post.title} description={post.excerpt} />
 
 <div class="progress-bar" style="width: {scrollProgress}%"></div>
 

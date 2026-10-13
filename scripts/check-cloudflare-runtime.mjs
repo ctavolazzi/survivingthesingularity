@@ -3,7 +3,7 @@
 // server imports, canonical chapter loading and static routing; it does not
 // prove an unlocked browser reader or external payment/email integration.
 import assert from 'node:assert/strict';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { once } from 'node:events';
 import { cp, mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from 'node:fs/promises';
 import { createServer } from 'node:net';
@@ -136,6 +136,11 @@ try {
   const alias = await get('/downloads/Surviving-the-Singularity.pdf', { method: 'HEAD', status: 302 });
   assert.equal(new URL(alias.headers.get('location'), origin).pathname, pdf, 'Stable PDF alias reaches current release');
   await get('/book/not-a-canonical-section', { status: 404 });
+  const previews = spawnSync('python3', [join(root, 'scripts/check-social-previews.py'), '--origin', origin], {
+    cwd: scratch, env, stdio: 'inherit'
+  });
+  if (previews.error) throw previews.error;
+  assert.equal(previews.status, 0, 'Crawler-visible metadata and image checks must pass');
   console.log(`Cloudflare Pages runtime: ${probes} local GET/HEAD checks passed; ${book.sections.length} canonical chapter loads; ${routes.include.length + routes.exclude.length} route rules.`);
   console.log('Scope: Worker HTTP/SSR, chapter data, static sample/assets and redirects. Browser unlock and external services are separate release checks.');
 } catch (error) {

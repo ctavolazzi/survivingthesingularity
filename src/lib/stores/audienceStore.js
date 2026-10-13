@@ -25,9 +25,10 @@ export const AUDIENCES = {
 const STORAGE_KEY = 'sts_audience';
 
 function createAudienceStore() {
-	const initial = browser
-		? (localStorage.getItem(STORAGE_KEY) ?? 'individual')
-		: 'individual';
+	let initial = 'individual';
+	if (browser) {
+		try { initial = localStorage.getItem(STORAGE_KEY) ?? initial; } catch { /* Storage is optional. */ }
+	}
 
 	const { subscribe, set } = writable(
 		Object.keys(AUDIENCES).includes(initial) ? initial : 'individual'
@@ -36,7 +37,10 @@ function createAudienceStore() {
 	return {
 		subscribe,
 		set(value) {
-			if (browser) localStorage.setItem(STORAGE_KEY, value);
+			if (!Object.hasOwn(AUDIENCES, value)) return;
+			if (browser) {
+				try { localStorage.setItem(STORAGE_KEY, value); } catch { /* Retain the in-memory choice. */ }
+			}
 			set(value);
 		},
 	};

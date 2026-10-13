@@ -17,12 +17,21 @@
       "chip": "PREORDER $5"
     },
     {
+      "route": "/sample",
+      "out": "sample.png",
+      "eyebrow": "FREE BOOK SAMPLE",
+      "headline_lead": "Start with the book.",
+      "headline_accent": "Read a free sample.",
+      "body": "The introduction and reading guide from the current draft. Choose a path for your work, household, or community.",
+      "chip": "NO EMAIL REQUIRED"
+    },
+    {
       "route": "/early-access",
       "out": "early-access.png",
       "eyebrow": "EARLY ACCESS PRICING",
       "headline_lead": "Preorder the book.",
       "headline_accent": "Get the bundle now.",
-      "body": "$5 gets you the current draft, The Precedent File, and a 50% discount at launch.",
+      "body": "$5 gets you the current digital draft and The Precedent File. Print is separate; your first Print Edition is half price.",
       "chip": "PREORDER $5"
     },
     {
@@ -40,7 +49,7 @@
       "eyebrow": "FREE READINESS CHECKLIST",
       "headline_lead": "Seven concrete moves.",
       "headline_accent": "Start today.",
-      "body": "Build real independence before AGI changes everything. Check off steps, add notes, email yourself the results.",
+      "body": "Seven practical steps for your work, household, and community. Check them off, add notes, and email yourself the results.",
       "chip": "FREE / NO PAYWALL"
     },
     {
@@ -82,11 +91,11 @@
     {
       "route": "/factcheck",
       "out": "factcheck.png",
-      "eyebrow": "CHAIN OF CUSTODY",
-      "headline_lead": "Don't trust the book.",
-      "headline_accent": "Audit it.",
-      "body": "Every checkable claim traced back to the commit and the source behind it, including the places the trail breaks.",
-      "chip": "TRACE EVERY CLAIM"
+      "eyebrow": "EVIDENCE & LIMITS",
+      "headline_lead": "Follow the sources.",
+      "headline_accent": "Check the limits.",
+      "body": "Current homepage sources and a historical mechanical audit. See what was checked, and what was not.",
+      "chip": "SOURCES & SCOPE"
     }
   ]
 }

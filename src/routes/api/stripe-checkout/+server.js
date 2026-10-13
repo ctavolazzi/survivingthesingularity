@@ -1,11 +1,14 @@
 import { isSameOrigin } from '$lib/server/sameOrigin.js';
 import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
+import { env as publicEnv } from '$env/dynamic/public';
 import { dev } from '$app/environment';
 import Stripe from 'stripe';
 import { rateLimit } from '$lib/server/rateLimit.js';
 import { getOrCreateCheckout } from '$lib/server/checkoutReservations.js';
 import { currentBundleRelease } from '$lib/server/bundleRelease.js';
+import { validatePurchaseEmailConfig, validateEmailLinkOrigin } from '$lib/emailConfig.js';
+import { isConfiguredStripeWebhookSecret } from '$lib/stripeConfig.js';
 import { recordCheckoutInitiated } from '$lib/server/transactions.js';
 import { normalizeEmail, isValidEmail } from '$lib/server/validEmail.js';
 import { findExistingPreorder, resendPreorderDownload } from '$lib/server/preorderLookup.js';
@@ -19,11 +22,10 @@ const SECRET_KEY    = env.STRIPE_SECRET_KEY;
 // having one variable set is enough to exercise the flow. In production it is a
 // hazard: an unset, misspelled, or dropped edition variable does not fail - it
 // silently bills whatever the shared one happens to point at. That is exactly
-// the shape of the 2026-07 defect where a $5 product charged $9, and it is the
-// shape of a live bug right now, since STRIPE_PRICE_ID_AUTHORS is not set in
-// production and `authors` therefore resolves to the standard price. The
-// endpoint accepts edition_type from any caller, so that path is reachable
-// whether or not the UI exposes a button for it.
+// the shape of the 2026-07 defect where a $5 product charged $9. The same
+// fallback could also assign the standard price to an unconfigured Author's
+// Edition. The endpoint accepts edition_type from any caller, so that path
+// is reachable whether or not the UI exposes a button for it.
 //
 // So: dev keeps the fallback, production demands the edition's own variable and
 // refuses the sale without it. Refusing is the safe failure - a customer who
@@ -120,11 +122,29 @@ export async function POST({ request, url, getClientAddress }) {
     return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
   }
 
+  // A customer can close Stripe before visiting the receipt page. Do not
+  // charge while the independent server-to-server fulfillment path is known
+  // to lack its signing secret. Paid-buyer recovery already ran above.
+  if (!isConfiguredStripeWebhookSecret(env.STRIPE_WEBHOOK_SECRET)) {
+    console.error('[stripe-checkout] refusing checkout: Stripe webhook signing secret is not configured.');
+    return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
+  }
+
   // Never take a new payment while the deployed release still names an old
   // private archive or has not confirmed the reviewed bundle's fingerprint.
   const bundle = currentBundleRelease();
   if (!bundle.ok) {
     console.error('[stripe-checkout] refusing checkout:', bundle.error);
+    return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
+  }
+
+  // A new customer must not be charged while delivery is known to be
+  // misconfigured. Existing paid buyers were handled above so a mail outage
+  // still leaves recovery and on-site access available without a second sale.
+  const emailConfig = validatePurchaseEmailConfig(env);
+  const emailLinks = validateEmailLinkOrigin(publicEnv);
+  if (!emailConfig.ok || !emailLinks.ok) {
+    console.error('[stripe-checkout] refusing checkout:', emailConfig.error || emailLinks.error);
     return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
   }
 

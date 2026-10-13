@@ -57,7 +57,7 @@
       <div class="preface-cover">
         <BookCover width="clamp(150px, 34vw, 210px)" loading="eager" tilt />
       </div>
-      <p class="eyebrow">Surviving the Singularity</p>
+      <h1 class="eyebrow">Surviving the Singularity</h1>
       <p class="preface-text">
         This book explores how AI and automation could help make ordinary life more secure,
         starting with food. It combines historical cases, speculative stories, and proposals

@@ -11,6 +11,7 @@ import re
 import subprocess
 import sys
 import unicodedata
+from urllib.parse import unquote, urlsplit
 
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
@@ -45,6 +46,33 @@ def prove_bonus_text(stage):
     return {'source_blocks_checked': len(blocks), 'missing_blocks': [], 'deleted_paragraph_control': True}
 
 
+def prove_reader_instructions(stage):
+    """Check the browser guide as delivered, including all archive-relative links."""
+    source = (stage / 'START-HERE.html').read_text(encoding='utf8')
+    page = BeautifulSoup(source, 'html.parser')
+    assert page.html.get('lang') == 'en', 'Reading guide must declare its language'
+    assert page.find('meta', attrs={'name': 'viewport'}), 'Missing phone viewport'
+    assert page.main and len(page.find_all('h1')) == 1, 'Missing reading-guide structure'
+    assert not page.find_all(['script', 'iframe', 'object', 'embed', 'form', 'link']), 'Reading guide has active or external assets'
+    assert not re.search(r'@import|url\s*\(', str(page.style), re.I), 'Reading guide CSS requires another resource'
+    for tag in page.find_all():
+        assert not any(key.lower().startswith('on') for key in tag.attrs), 'Reading guide has an event handler'
+        assert not tag.get('src'), 'Reading guide must be self-contained'
+    local_links = []
+    for link in page.find_all('a', href=True):
+        url = urlsplit(link['href'])
+        assert url.scheme in ('', 'https', 'mailto'), f'Unexpected reading-guide link scheme: {url.scheme}'
+        if url.scheme:
+            continue
+        target = (stage / unquote(url.path)).resolve()
+        assert target.is_relative_to(stage.resolve()) and target.is_file(), f'Broken or escaping archive link: {url.path}'
+        local_links.append(url.path)
+    for required in ['book/Surviving-the-Singularity.pdf', 'book/Surviving-the-Singularity.epub', 'The-Precedent-File.pdf']:
+        assert required in local_links, f'Missing reading choice: {required}'
+    assert '{{' not in page.get_text(), 'Unfilled reader instruction token'
+    return {'local_file_links_checked': len(local_links), 'broken_links': [], 'self_contained_script_free': True}
+
+
 def main():
     subprocess.run(['node', 'scripts/check-book-downloads.mjs'], cwd=ROOT, check=True)
     source = json.loads((ROOT / 'src/lib/data/book/book.json').read_text())
@@ -59,6 +87,7 @@ def main():
     sys.argv = ['build_bonus.py']  # Never forward --upload to the shared builder.
     assert builder.main() == 0, 'Bundle build failed'
     text_proof = prove_bonus_text(builder.STAGE)
+    reader_proof = prove_reader_instructions(builder.STAGE)
     manifest_path = output / 'manifest.json'
     manifest = json.loads(manifest_path.read_text())
     name = 'research-bundle-book-v' + source['version'] + '.zip'
@@ -77,6 +106,7 @@ def main():
               'object': name, 'bytes': (output / name).stat().st_size, 'sha256': digest(output / name),
               'archive_and_inputs_verified': True, 'live_manifest_unchanged': True,
               'bonus_pdf_text_proof': text_proof,
+              'reader_instructions_proof': reader_proof,
               'required_before_release': ['Review the inherited research cases; packaging proof is not independent historical fact-checking.',
                                           'Upload the versioned object and verify its downloaded bytes against this hash.',
                                           'Coordinate the site manifest and storage configuration with that verified object.']}

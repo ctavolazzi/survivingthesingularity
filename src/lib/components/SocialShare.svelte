@@ -4,20 +4,11 @@
   export let description = '';
   export let image = '';
 
-  // Get current URL if not provided
+  // Keep the permanent share address correct during SSR and client navigation.
   import { page } from '$app/stores';
-  import { onMount } from 'svelte';
+  import { canonicalShareUrl } from '$lib/share.js';
 
-  let currentUrl = '';
-  let shareSupported = false;
-
-  onMount(() => {
-    // Use provided URL or get current URL from browser
-    currentUrl = url || window.location.href;
-
-    // Check if Web Share API is supported
-    shareSupported = !!navigator.share;
-  });
+  $: currentUrl = url || canonicalShareUrl($page.url.pathname);
 
   // Share function using Web Share API
   function nativeShare() {
@@ -68,20 +59,6 @@
   }
 </script>
 
-<svelte:head>
-  <!-- Open Graph tags for rich sharing previews -->
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:image" content={image.includes('?') ? image : `${image}?format=png`} />
-  <meta property="og:url" content={currentUrl} />
-  <meta property="og:type" content="article" />
-
-  <!-- Twitter Card tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={image.includes('?') ? image : `${image}?format=png`} />
-</svelte:head>
 
 <div class="share-container">
   <!-- Native Share Button (visible on all devices) -->

@@ -267,7 +267,7 @@
 <div class="drawer-overlay" bind:this={overlayEl} on:click={close} aria-hidden="true"></div>
 
 <!-- Drawer -->
-<aside
+<div
   id="site-drawer"
   class="drawer"
   bind:this={drawerEl}
@@ -324,7 +324,7 @@
       Free Checklist first
     </a>
   </div>
-</aside>
+</div>
 
 <style>
   /* ── FLOAT WRAPPER ── */

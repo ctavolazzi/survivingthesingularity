@@ -183,7 +183,9 @@ def compact_pdf(source, target):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--existing-masters', action='store_true', help='Reprove existing masters before optimizing them')
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--existing-masters', action='store_true', help='Reprove existing masters before optimizing them')
+    mode.add_argument('--epub-only', action='store_true', help='Rebuild EPUB; retain the proved PDF only if its source, artwork and master are unchanged')
     args = parser.parse_args()
     meta = json.loads((SOURCE / 'book.json').read_text())
     version = meta['version']
@@ -191,11 +193,14 @@ def main():
     hashes = {name: digest(SOURCE / name) for name in ['book.json', *(s['file'] for s in meta['sections'])]}
     assert hashes == baseline, 'Review source changes before updating the publication freeze'
     OUT.mkdir(parents=True, exist_ok=True)
-    if not args.existing_masters:
+    if args.epub_only:
+        run(sys.executable, ROOT / 'docs' / f'v{version}' / 'build.py', '--epub-only')
+    elif not args.existing_masters:
         run(sys.executable, ROOT / 'docs' / f'v{version}' / 'build.py')
     build = json.loads((ROOT / 'publication/output/build.json').read_text())
     assert build['source_sha256'] == hashes, 'Publication master is stale'
-    run(sys.executable, ROOT / 'publication/proof.py')
+    if not args.epub_only:
+        run(sys.executable, ROOT / 'publication/proof.py')
     proof = module(ROOT / 'docs/v0.10.4/check_epub.py', 'epub_proof')
     proof.HERE = OUT
     proof.main()  # Fresh source, all blocks, images, metadata, spine and controls.
@@ -205,7 +210,23 @@ def main():
     epub_target, pdf_target = (OUT / f'Surviving-the-Singularity-v{version}.{ext}' for ext in ('epub', 'pdf'))
     images, original, final, renames = optimize_epub(epub_source, epub_target)
     prove_epub(proof, original, final, images, renames)
-    pdf_proof = compact_pdf(pdf_source, pdf_target)
+    inputs = publication_inputs(meta, proof.print_variant)
+    if args.epub_only:
+        previous = json.loads((OUT / 'book-downloads.json').read_text())
+        expected_pdf = previous['artifacts']['pdf']
+        assert previous['schema'] == 1 and previous['version'] == version, 'Cannot reuse another edition\'s PDF'
+        assert digest(pdf_target) == expected_pdf['sha256'] and pdf_target.stat().st_size == expected_pdf['bytes'], 'Reviewed distribution PDF changed'
+        assert previous['masters']['pdf'] == digest(pdf_source), 'Reviewed PDF master changed'
+        # EPUB CSS is the only permitted input difference for this reuse mode.
+        pdf_inputs = lambda records: {key: value for key, value in records.items() if key != 'scripts/epub.css'}
+        assert pdf_inputs(previous['input_sha256']) == pdf_inputs(inputs), 'PDF artwork or layout changed; run the full preparation'
+        expected_source = dict(hashes)
+        expected_source['book.json'] = hashlib.sha256(re.sub(r'"released":\s*"[^"]*"', '"released": "<release>"',
+                                                           (SOURCE / 'book.json').read_text()).encode()).hexdigest()
+        assert previous['source_sha256'] == expected_source, 'PDF canonical source changed; run the full preparation'
+        pdf_proof = previous['pdf_proof']
+    else:
+        pdf_proof = compact_pdf(pdf_source, pdf_target)
     artifacts = {}
     for ext, path in [('pdf', pdf_target), ('epub', epub_target)]:
         assert path.stat().st_size < LIMIT, f'{path.name} exceeds Pages 25 MiB limit'
@@ -215,7 +236,7 @@ def main():
     hashes['book.json'] = hashlib.sha256(re.sub(r'"released":\s*"[^"]*"', '"released": "<release>"',
                                               (SOURCE / 'book.json').read_text()).encode()).hexdigest()
     receipt = {'schema': 1, 'version': version, 'source_manifest_release_independent': True,
-               'source_sha256': hashes, 'input_sha256': publication_inputs(meta, proof.print_variant),
+               'source_sha256': hashes, 'input_sha256': inputs,
                'artifacts': artifacts,
                'masters': {'pdf': digest(pdf_source), 'epub': digest(epub_source)},
                'pdf_proof': pdf_proof, 'epub_images': images, 'epub_other_content_unchanged': True,

@@ -5,7 +5,7 @@ const STORAGE_KEY = 'sts_book_last_read';
 
 function readStoredSection() {
   if (!browser) return null;
-  return localStorage.getItem(STORAGE_KEY);
+  try { return localStorage.getItem(STORAGE_KEY); } catch { return null; }
 }
 
 function createBookPageStore() {
@@ -21,12 +21,14 @@ function createBookPageStore() {
     // return visit days later, not just in-memory navigation.
     updateLastVisited: () => update(state => {
       if (browser && state.currentSectionId) {
-        localStorage.setItem(STORAGE_KEY, state.currentSectionId);
+        try { localStorage.setItem(STORAGE_KEY, state.currentSectionId); } catch { /* Reading still works without persistence. */ }
       }
       return { ...state, lastVisitedSectionId: state.currentSectionId };
     }),
     reset: () => {
-      if (browser) localStorage.removeItem(STORAGE_KEY);
+      if (browser) {
+        try { localStorage.removeItem(STORAGE_KEY); } catch { /* Storage may be blocked. */ }
+      }
       set({ currentSectionId: null, lastVisitedSectionId: null });
     },
   };

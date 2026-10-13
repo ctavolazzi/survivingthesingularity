@@ -1,5 +1,6 @@
 """Build the final EPUB and 6 x 9 reading/print PDFs from the frozen source."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import re
@@ -21,6 +22,9 @@ def run(*args):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--epub-only', action='store_true', help='Build the EPUB while preserving reviewed PDF masters')
+    args = parser.parse_args()
     frozen = json.loads((ROOT / 'docs/publication/baseline.json').read_text())
     for name, digest in frozen.items():
         assert hashlib.sha256((SOURCE / name).read_bytes()).hexdigest() == digest, name
@@ -49,6 +53,9 @@ def main():
         '--toc', '--toc-depth=1', '--split-level=1',
         '--epub-cover-image', ROOT / 'scripts/book-cover.png',
         '--css', ROOT / 'scripts/epub.css', '--filter', ROOT / 'scripts/book_visual_filter.py', '-o', epub)
+    if args.epub_only:
+        print('Built EPUB', VERSION, 'from', len(sections), 'canonical sections; PDF masters preserved.', flush=True)
+        return
     run(sys.executable, ROOT / 'publication/build.py')
     run(sys.executable, ROOT / 'publication/production.py')
     run(sys.executable, ROOT / 'scripts/sts.py', 'compile', '--force', '--out',

@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
 
     import Spacer from '$lib/components/Spacer.svelte';
     import { post } from '$lib/data/blog-posts/claude-projects-weekend-project/index.js';
@@ -36,12 +37,9 @@
 <svelte:head>
     <title>{post.title} | Surviving the Singularity</title>
     <meta name="description" content="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI." />
-    <meta property="og:title" content={post.title} />
-    <meta property="og:description" content="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI." />
-    <meta property="og:image" content={post.imageUrl} />
-    <meta property="og:type" content="article" />
-    <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
+
+<SocialMeta title={post.title} description="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI." />
 
 <div class="blog-post">
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">

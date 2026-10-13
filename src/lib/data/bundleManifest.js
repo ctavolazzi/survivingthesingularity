@@ -14,15 +14,15 @@
  */
 export default Object.freeze({
   "schema": 1,
-  "generated_at": "2026-10-13T01:30:18Z",
+  "generated_at": "2026-10-13T03:03:01Z",
   "generator": "scripts/build_bonus.py",
   "bundle": {
     "root": "The-Precedent-File",
     "object": "research-bundle-book-v0.11.0.zip",
     "bucket": "downloads",
-    "bytes": 28272621,
-    "sha256": "8864d224a25328ca5f5fa8e02c91df80d38cd9a408aefe6126a65edb1068d99b",
-    "entries": 10
+    "bytes": 28280000,
+    "sha256": "8b437b324b076809b6a024396d098d06fe4ffb8ca5a4518b871945659504f7c1",
+    "entries": 11
   },
   "book": {
     "version": "0.11.0",
@@ -90,12 +90,20 @@ export default Object.freeze({
   },
   "files": [
     {
+      "path": "The-Precedent-File/START-HERE.html",
+      "label": "Start here, browser instructions",
+      "format": "html",
+      "role": "primary",
+      "bytes": 14206,
+      "sha256": "2c47e2a086fe2a6a17172ccc59d7362559dff31ad05d612b4bb578d0f63069ae"
+    },
+    {
       "path": "The-Precedent-File/START-HERE.md",
-      "label": "Start here",
+      "label": "Start here, text instructions",
       "format": "md",
       "role": "primary",
-      "bytes": 7274,
-      "sha256": "bf81da444c5d4bcc4377f6352d06262d1ca23ae503c0c736ec81110e97044030"
+      "bytes": 11299,
+      "sha256": "ff6c89bcda4392bbaeb96a40261a51b01fbf72f7465b2b9d2876623311663627"
     },
     {
       "path": "The-Precedent-File/Sources-and-Citations.md",
@@ -118,16 +126,16 @@ export default Object.freeze({
       "label": "The Precedent File, 31 cases (PDF)",
       "format": "pdf",
       "role": "primary",
-      "bytes": 89314,
-      "sha256": "d92db235a2c89bd145b608a071c1e0ca862f9c481cf182941aa91a0e05278f07"
+      "bytes": 89308,
+      "sha256": "b7abe6e954bcfade804084ecf92bff59f992de55206c9d0142cd05a0c7488b25"
     },
     {
       "path": "The-Precedent-File/book/Surviving-the-Singularity.epub",
       "label": "Surviving the Singularity, v0.11.0 (EPUB)",
       "format": "epub",
       "role": "convenience-copy",
-      "bytes": 21751586,
-      "sha256": "be464b705c57eb282379820aadcfa45d0da23b141b1f8faa3a68da2d9c98e276",
+      "bytes": 21751704,
+      "sha256": "f1d9bfae8df0a6879d1180e2a451d76040a739e3f7e688170f156beaeffe2cb6",
       "also_free_at": "/downloads/Surviving-the-Singularity-v0.11.0.epub"
     },
     {
@@ -173,13 +181,17 @@ export default Object.freeze({
     }
   ],
   "inputs": {
+    "builder": {
+      "path": "scripts/build_bonus.py",
+      "sha256": "ac8731c9f8440a6d39d605228fb14784bcc589186ed2fc68364589171bb41240"
+    },
     "casebook": {
       "path": "manuscript/HISTORY-CASEBOOK.md",
       "sha256": "71e9bab290644cbe9e05a0a52371c31f3b88d22694974eb8a073f0781ef3a5e6"
     },
     "start_here": {
       "path": "manuscript/bonus/START-HERE.md",
-      "sha256": "8f4371097548204c4970f495b91e4d98599e138425ddfea775e5950c5ca3fd7f"
+      "sha256": "e83e9d35cbe89aac1dd0999266c6b2bd6761aa85af33c11c7b4ac3275bc4e882"
     },
     "book_json": {
       "path": "src/lib/data/book/book.json",

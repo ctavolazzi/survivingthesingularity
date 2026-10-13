@@ -248,6 +248,7 @@ test('real email module passes automatic fulfillment idempotency to Resend, not 
   class Resend { constructor() { this.emails = { send: async (payload, options) => { requests.push({ payload, options }); return { data: { id: 'email_mock' } }; } }; } }
   const { sendDownloadEmail } = await loadSource('src/lib/server/email.js', {
     '$env/dynamic/private': { env: { RESEND_API_KEY: 'mock-api-key', EMAIL_POSTAL_ADDRESS: 'Regression fixture' } },
+    '$env/dynamic/public': { env: {} },
     resend: { Resend }, '$lib/server/supabaseAdmin.js': { supabaseAdmin: null },
     '$lib/bookAccessCode.js': { BOOK_ACCESS_PASSWORD: 'test-reading-code' },
   });
@@ -263,6 +264,7 @@ test('missing provider acceptance ID is an email failure even without an explici
   class Resend { constructor() { this.emails = { send: async () => ({ data: null, error: null }) }; } }
   const { sendDownloadEmail } = await loadSource('src/lib/server/email.js', {
     '$env/dynamic/private': { env: { RESEND_API_KEY: 'mock-api-key' } },
+    '$env/dynamic/public': { env: {} },
     resend: { Resend }, '$lib/server/supabaseAdmin.js': { supabaseAdmin: null },
     '$lib/bookAccessCode.js': { BOOK_ACCESS_PASSWORD: 'test-reading-code' },
   });
@@ -271,12 +273,48 @@ test('missing provider acceptance ID is an email failure even without an explici
   assert.match(result.error.message, /acceptance ID/);
 });
 
-async function checkoutHarness({ dev = false, credentials = true, checked = true, bundleReady = true } = {}) {
-  const calls = { lookup: 0, checkout: 0, bundle: 0 };
+test('public email origin keeps receipt, reading and unsubscribe links in the configured preview', async () => {
+  const requests = [];
+  class Resend { constructor() { this.emails = { send: async (payload) => { requests.push(payload); return { data: { id: 'email_mock' } }; } }; } }
+  const { sendDownloadEmail, sendWelcomeEmail } = await loadSource('src/lib/server/email.js', {
+    '$env/dynamic/private': { env: { RESEND_API_KEY: 'mock-api-key' } },
+    '$env/dynamic/public': { env: { PUBLIC_BASE_URL: 'https://candidate.project.pages.dev/' } },
+    resend: { Resend }, '$lib/server/supabaseAdmin.js': { supabaseAdmin: null },
+    '$lib/bookAccessCode.js': { BOOK_ACCESS_PASSWORD: 'test-reading-code' },
+  });
+  await sendDownloadEmail({ to: 'buyer@example.test', sessionId: 'cs_test_preview', edition_type: 'standard' });
+  await sendWelcomeEmail({ to: 'buyer@example.test', unsubscribeToken: 'a&b' });
+  assert(requests[0].text.includes('https://candidate.project.pages.dev/early-access/success?session_id=cs_test_preview'));
+  assert(requests[0].html.includes('href="https://candidate.project.pages.dev/book"'));
+  assert(requests[1].text.includes('https://candidate.project.pages.dev/unsubscribe?token=a%26b'));
+  assert(requests[1].html.includes('href="https://candidate.project.pages.dev/book"'));
+});
+
+test('unsafe configured email origins never send a customer link', async () => {
+  for (const base of ['http://sender.com', 'https://name:password@sender.com', 'https://sender.com/wrong-path', 'not a URL']) {
+    let sends = 0;
+    class Resend { constructor() { this.emails = { send: async () => { sends++; return { data: { id: 'email_mock' } }; } }; } }
+    const { sendDownloadEmail } = await loadSource('src/lib/server/email.js', {
+      '$env/dynamic/private': { env: { RESEND_API_KEY: 'mock-api-key' } },
+      '$env/dynamic/public': { env: { PUBLIC_BASE_URL: base } },
+      resend: { Resend }, '$lib/server/supabaseAdmin.js': { supabaseAdmin: null },
+      '$lib/bookAccessCode.js': { BOOK_ACCESS_PASSWORD: 'test-reading-code' },
+    });
+    await assert.rejects(sendDownloadEmail({ to: 'buyer@example.test', sessionId: paid.id, edition_type: 'standard' }), /HTTPS site origin/);
+    assert.equal(sends, 0);
+  }
+});
+
+const configuredPurchaseEmail = { RESEND_API_KEY: 're_0123456789abcdefghij', EMAIL_FROM: 'STS <books@survivingthesingularity.com>' };
+
+async function checkoutHarness({ dev = false, credentials = true, checked = true, bundleReady = true,
+  emailConfig = configuredPurchaseEmail, publicEmailConfig = {}, checkoutEnv = {}, alreadyOwned = false } = {}) {
+  const calls = { lookup: 0, checkout: 0, bundle: 0, resend: 0 };
   class Stripe {}
   const mod = await loadSource('src/routes/api/stripe-checkout/+server.js', {
     '@sveltejs/kit': { json }, '$app/environment': { dev },
-    '$env/dynamic/private': { env: credentials ? { ...env, STRIPE_PRICE_ID_STANDARD: 'price_fixture' } : {} },
+    '$env/dynamic/private': { env: credentials ? { ...env, STRIPE_PRICE_ID_STANDARD: 'price_fixture', ...emailConfig, ...checkoutEnv } : {} },
+    '$env/dynamic/public': { env: publicEmailConfig },
     stripe: { default: Stripe },
     '$lib/server/sameOrigin.js': { isSameOrigin: () => true },
     '$lib/server/rateLimit.js': { rateLimit: () => ({ allowed: true }) },
@@ -290,8 +328,8 @@ async function checkoutHarness({ dev = false, credentials = true, checked = true
     } },
     '$lib/server/transactions.js': { recordCheckoutInitiated: async () => {} },
     '$lib/server/preorderLookup.js': {
-      findExistingPreorder: async () => { calls.lookup++; return { found: false, checked }; },
-      resendPreorderDownload: async () => { throw new Error('Unexpected resend'); },
+      findExistingPreorder: async () => { calls.lookup++; return { found: alreadyOwned, checked, preorder: { copy_number: 7 } }; },
+      resendPreorderDownload: async () => { calls.resend++; return { resent: false, reason: 'email_unavailable' }; },
     },
   });
   const response = await mod.POST({
@@ -308,7 +346,7 @@ test('credential-free development checkout works without touching database, bund
   const { response, calls } = await checkoutHarness({ dev: true, credentials: false, checked: false, bundleReady: false });
   assert.equal(response.status, 200);
   assert.match((await response.json()).url, /session_id=mock_session$/);
-  assert.deepEqual(calls, { lookup: 0, checkout: 0, bundle: 0 });
+  assert.deepEqual(calls, { lookup: 0, checkout: 0, bundle: 0, resend: 0 });
 });
 
 test('production checkout fails closed for missing credentials, duplicate check or reviewed bundle', async () => {
@@ -320,10 +358,64 @@ test('production checkout fails closed for missing credentials, duplicate check 
   }
 });
 
-test('configured checkout reaches the durable reservation only after bundle and ownership checks', async () => {
+test('configured checkout reaches the durable reservation after bundle, email and ownership checks', async () => {
   const { response, calls } = await checkoutHarness();
   assert.equal(response.status, 200);
-  assert.deepEqual(calls, { lookup: 1, checkout: 1, bundle: 1 });
+  assert.deepEqual(calls, { lookup: 1, checkout: 1, bundle: 1, resend: 0 });
+});
+
+test('new purchases cannot create Stripe sessions with missing or placeholder delivery credentials', async () => {
+  for (const key of [undefined, '', 'placeholder', 'your_resend_api_key', 're_placeholder123', 're_xxxxxxxxxxxxxxxx', 'not-a-resend-key']) {
+    const { response, calls } = await checkoutHarness({ emailConfig: { ...configuredPurchaseEmail, RESEND_API_KEY: key } });
+    assert.equal(response.status, 503, `Key fixture: ${key}`);
+    assert.equal(calls.checkout, 0);
+    assert.equal((await response.json()).url, undefined);
+  }
+});
+
+test('new checkout requires a configured Stripe webhook secret even if every other prerequisite is present', async () => {
+  for (const secret of [undefined, '', 'placeholder', 'whsec_your_stripe_webhook_secret', 'whsec_placeholder123', 'not-a-signing-secret']) {
+    const { response, calls } = await checkoutHarness({ checkoutEnv: { STRIPE_WEBHOOK_SECRET: secret } });
+    assert.equal(response.status, 503);
+    assert.equal(calls.checkout, 0);
+    assert.equal((await response.json()).url, undefined);
+  }
+});
+
+test('new purchases require a valid production sender before creating a Stripe session', async () => {
+  for (const from of [undefined, '', 'nobody', 'Surviving the Singularity <onboarding@resend.dev>', 'onboarding@sub.resend.dev',
+    'STS <hello@yourdomain.com>', 'books@example.com', 'books@local.test', 'books@sender.example', 'books@-broken.com', '.books@sender.com',
+    'STS <books@sender.com>\r\nBcc: someone@else.com', 'books@sender.com\r\n', 'books@sender.com,second@sender.com']) {
+    const { response, calls } = await checkoutHarness({ emailConfig: { ...configuredPurchaseEmail, EMAIL_FROM: from } });
+    assert.equal(response.status, 503, `Sender fixture: ${from}`);
+    assert.equal(calls.checkout, 0);
+    assert.equal((await response.json()).url, undefined);
+  }
+});
+
+test('existing paid buyer recovery remains available with no delivery or payment configuration', async () => {
+  for (const options of [{ emailConfig: {} }, { credentials: false }, { publicEmailConfig: { PUBLIC_BASE_URL: 'broken' } },
+    { checkoutEnv: { STRIPE_WEBHOOK_SECRET: undefined } }]) {
+    const { response, calls } = await checkoutHarness({ ...options, alreadyOwned: true, bundleReady: false });
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    assert.equal(body.already_owned, true);
+    assert.equal(body.resent, false);
+    assert.equal(body.reason, 'email_unavailable');
+    assert.equal(body.copy_number, 7);
+    assert.deepEqual(calls, { lookup: 1, checkout: 0, bundle: 0, resend: 1 });
+  }
+});
+
+test('new checkout refuses a malformed email-link origin before creating a Stripe session', async () => {
+  for (const origin of ['http://localhost:5173', 'broken', 'https://user:password@sender.com', 'https://sender.com/path']) {
+    const { response, calls } = await checkoutHarness({ publicEmailConfig: { PUBLIC_BASE_URL: origin } });
+    assert.equal(response.status, 503);
+    assert.equal(calls.checkout, 0);
+  }
+  const preview = await checkoutHarness({ publicEmailConfig: { PUBLIC_BASE_URL: 'https://candidate.project.pages.dev' } });
+  assert.equal(preview.response.status, 200);
+  assert.equal(preview.calls.checkout, 1);
 });
 
 async function reconciliationHarness({ sessions = [paid], local = [], stripeError = false, hasMore = false, review = [] } = {}) {

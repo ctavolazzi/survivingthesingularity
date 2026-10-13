@@ -48,11 +48,11 @@ function createReadingPosition() {
       };
       try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
-        set(value);
       } catch {
         // Private browsing / quota. Reading still works, the place just
         // won't survive the session. Not worth interrupting anyone over.
       }
+      set(value);
     },
 
     clear() {

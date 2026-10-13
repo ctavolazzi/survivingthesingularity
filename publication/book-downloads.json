@@ -103,7 +103,7 @@
     "publication/assets/ornament.svg": "0e2d2c9ea8307c03ddfe57449eec2843dabb36e5df92e50b9e6e0e14758fa102",
     "publication/book.css": "16fb10f00921fe24a48674b688b24a851eda3322b92608cd243863fdd2e2425a",
     "scripts/book-cover.png": "c0174f87422e1047f00df9221480fb21d53aaa1e8aaf33f4cc38a3d2533ccc32",
-    "scripts/epub.css": "4c6641d06ca1e81edd196b6e98ca804d38b9a989de6393d8d38769a03e2042c6",
+    "scripts/epub.css": "6f53a54e1940e506720f066dd8fedb9b3b15eea3633b077d101c001919385f20",
     "src/lib/data/book/visuals.json": "7a784f044b0c3ba0cb526e1e362d8f08b42fb70dd52fa59ffd0de3e25e0f1c99",
     "static/book-images/appd-precedent-timeline.svg": "a4971c6a5023232f79c57b9019f759b828a6b7f322743a8ffb0406ee99a178fd",
     "static/book-images/appe-cyberdeck.png": "61cb5f9031909e2cbec047740f95ab964a6de5ffb95531a4d62ee546ffeafd30",
@@ -282,13 +282,13 @@
     },
     "epub": {
       "name": "Surviving-the-Singularity-v0.11.0.epub",
-      "bytes": 21751586,
-      "sha256": "be464b705c57eb282379820aadcfa45d0da23b141b1f8faa3a68da2d9c98e276"
+      "bytes": 21751704,
+      "sha256": "f1d9bfae8df0a6879d1180e2a451d76040a739e3f7e688170f156beaeffe2cb6"
     }
   },
   "masters": {
     "pdf": "6d69604b3ade0e1d0cde12dc94180214a56c5bb4415dff37e5b1eefb9c7b666e",
-    "epub": "217777dce4802ff1d31dd63ef35b82a5426adbe96692a5aed051ecc3b2e522b4"
+    "epub": "0e5b9dd6c91c5c0889a8d67328de9135a9b9c8963052d6642ad22e64f2282cf0"
   },
   "pdf_proof": {
     "pages": 416,
@@ -673,8 +673,8 @@
     "version": "0.11.0",
     "spine_documents": 38,
     "source_sections": 35,
-    "epub_sha256": "217777dce4802ff1d31dd63ef35b82a5426adbe96692a5aed051ecc3b2e522b4",
-    "epub_bytes": 41854466,
+    "epub_sha256": "0e5b9dd6c91c5c0889a8d67328de9135a9b9c8963052d6642ad22e64f2282cf0",
+    "epub_bytes": 41854584,
     "source_sha256": {
       "book.json": "a96d637e25d55005010843bcfb5a21b0f8716dd8bcd47a99137bbed98f8fb591",
       "02-introduction.md": "1db5576c0b9cbbcc04633ef96ed1d3ec4e5502f4cfd995ccf90fd57fc56f76b2",

@@ -5,6 +5,7 @@
   import { offer, offerBlurb } from '$lib/offer';
   import { book } from '$lib/bookContent';
   import { releasedVersion } from '$lib/bookManifest.js';
+  import { requestJson, RequestTimeoutError } from '$lib/requestJson.js';
 
   let checkoutLoading = false;
   let checkoutError = '';
@@ -42,15 +43,16 @@
     }
 
     checkoutLoading = true;
+    let redirecting = false;
     try {
-      const res = await fetch('/api/stripe-checkout', {
+      const { response: res, data } = await requestJson('/api/stripe-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ edition_type: 'standard', email: email.trim() }),
       });
-      const data = await res.json().catch(() => ({}));
-      if (data.url) {
+      if (res.ok && data.url) {
         window.location.href = data.url;
+        redirecting = true;
         return; // leave the button disabled through the redirect
       }
       if (data.already_owned) {
@@ -58,10 +60,12 @@
       } else {
         checkoutError = data.error ?? 'Could not start checkout. Try again.';
       }
-      checkoutLoading = false;
-    } catch {
-      checkoutError = 'Network error. Try again.';
-      checkoutLoading = false;
+    } catch (error) {
+      checkoutError = error instanceof RequestTimeoutError
+        ? 'Checkout is taking too long to respond. We could not confirm its status. Retry with the same email address to recover any checkout already started.'
+        : 'Connection interrupted. We could not confirm checkout status. Retry with the same email address.';
+    } finally {
+      if (!redirecting) checkoutLoading = false;
     }
   }
 </script>
@@ -78,8 +82,8 @@
        Rebuild with `sts.py og --render`. -->
   <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:url" content="https://survivingthesingularity.com/early-access" />
-  <meta property="og:image" content="https://survivingthesingularity.com/images/og/early-access.png" />
-  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/early-access.png" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/early-access.png?v=0.11" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/early-access.png?v=0.11" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
@@ -88,7 +92,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Preorder the book. Get the bundle now." />
   <meta name="twitter:description" content={offerBlurb()} />
-  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/early-access.png" />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/early-access.png?v=0.11" />
 </svelte:head>
 
 <!-- ── HERO ── -->
@@ -182,6 +186,10 @@
           {#if ownedMessage}<p class="ea-owned-note">{ownedMessage}</p>{/if}
         </div>
 
+        <noscript>
+          <p class="ea-scope-body">Checkout needs JavaScript to check your email for an existing purchase before opening Stripe. Open this page in a browser with JavaScript enabled, <a href="/sample">read the free sample</a>, or <a href="mailto:info@survivingthesingularity.com">contact us for help with your purchase</a>.</p>
+        </noscript>
+
 
         <p class="ea-secure-note">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
@@ -199,7 +207,7 @@
 <section class="ea-preview">
   <div class="ea-preview-inner">
     <p class="ea-label">A look inside</p>
-    <h2 class="ea-preview-heading">The book the blueprint is based on.</h2>
+    <h2 class="ea-preview-heading">A look inside the current draft.</h2>
     <p class="ea-preview-sub">Written in public, updated as the field moves. You're reading it as it's being built.</p>
 
     <div class="ea-image-grid">
@@ -231,35 +239,36 @@
 <section class="ea-parts">
   <div class="ea-parts-inner">
     <p class="ea-label">Inside the book</p>
-    <h2 class="ea-preview-heading">Three parts. Nine stages. One roadmap.</h2>
-    <p class="ea-preview-sub">Not a vibes-based prediction. A structural argument, built stage by stage, with a plan attached.</p>
+    <h2 class="ea-preview-heading">Three parts. A future to argue about. Work to begin.</h2>
+    <p class="ea-preview-sub">Historical cases, speculative fiction, and proposals for practical cooperation. The reading guide helps you start with the questions that matter to you.</p>
 
     <div class="ea-parts-grid">
       <div class="ea-part-card">
         <span class="ea-part-num">Part I</span>
         <h3 class="ea-part-title">What Is the Singularity?</h3>
         <p class="ea-part-desc">
-          The case that the 2017 Transformer architecture already crossed the event horizon: parallel self-attention let models start processing their own architecture, which is what makes unassisted recursive self-improvement possible. This part lays out the 9-stage map of the intelligence explosion, from the first cash grab to a machine that outgrows the planet, and the physical limits that even a superintelligence can't skip: energy, compute, thermodynamics.
+          What recent AI can do, what researchers forecast, and where the evidence stops. The author's nine-stage framework explores increasingly speculative futures alongside the physical limits of energy, computing, and materials. It is a scenario to examine, not a demonstrated path from today's models to superintelligence.
         </p>
       </div>
       <div class="ea-part-card">
         <span class="ea-part-num">Part II</span>
         <h3 class="ea-part-title">How Humans React</h3>
         <p class="ea-part-desc">
-          The hard part was never the machine. It's us. This part breaks down the predictable arc of the human response: the panic, the power grabs, the backlash. Then it maps the deliberate shift it takes to get past fear-based hierarchy into the kind of open, collective problem-solving that actually survives a transition like this.
+          What do we owe each other when technology changes how people earn a living? Historical cases and fictional scenes explore fear, power, resistance, and cooperation. The book asks which lessons travel to the present, where the comparisons break down, and what people can do together.
         </p>
       </div>
       <div class="ea-part-card">
         <span class="ea-part-num">Part III</span>
         <h3 class="ea-part-title">How to Survive the Transition</h3>
         <p class="ea-part-desc">
-          The actionable core. Why dependence on global supply chains is a structural liability waiting to fail. The Shouse Grid: semi-independent local microgrids and air-gapped compute. The Local Biological Hub: closing the loop on food, shelter, and medicine at the neighborhood level. The Adequate Level of Care (ALC): a real replacement for GDP that measures whether your community can actually take care of its people if the global grid goes down.
+          Start with food, useful skills, household needs, and willing neighbors. Explore proposed food trials, shared tools, local energy, and the agreements needed to keep them working. The author's Adequate Level of Care asks who actually receives food, shelter, and care. These are proposals to test with real costs, qualified help, and backup plans, not a proven self-sufficient system.
         </p>
       </div>
     </div>
 
     <blockquote class="ea-pull-quote">
-      "2027 is the tipping point: the year the loop closes on unassisted recursive self-improvement. Once that starts, there's no pausing it, and there's no going back to the way things were."
+      "This is my forecast, not a mathematical deadline. I could be wrong about the date, the capability, or both."
+      <footer>Christopher Tavolazzi, Chapter 1, on his November 2027 forecast.</footer>
     </blockquote>
   </div>
 </section>
@@ -678,6 +687,8 @@
   }
   .ea-img-cell:hover img { transform: scale(1.04); }
   .ea-img-cap {
+    max-width: calc(100% - 24px);
+    overflow-wrap: anywhere;
     position: absolute; bottom: 10px; left: 12px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68rem; font-weight: 700;

@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+  import { requestJson, RequestTimeoutError } from '$lib/requestJson.js';
   import EmailGate from '$lib/components/EmailGate.svelte';
   import DiscordApplication from '$lib/components/DiscordApplication.svelte';
   import BookCover from '$lib/components/BookCover.svelte';
@@ -84,6 +85,7 @@
     allItems.map(item => [item.n, { checked: false, notes: '' }])
   );
   let progressRestored = false;
+  let progressSaved = false;
 
   $: checkedCount = Object.values(answers).filter(a => a.checked).length;
 
@@ -95,7 +97,7 @@
       if (saved) {
         const parsed = JSON.parse(saved);
         for (const [k, v] of Object.entries(parsed)) {
-          if (answers[k] && v && typeof v === 'object') answers[k] = { checked: !!v.checked, notes: String(v.notes ?? '').slice(0, 1000) };
+          if (Object.hasOwn(answers, k) && v && typeof v === 'object') answers[k] = { checked: v.checked === true, notes: typeof v.notes === 'string' ? v.notes.slice(0, 1000) : '' };
         }
       }
     } catch {}
@@ -105,7 +107,10 @@
   // Initial reactive evaluation runs before onMount. Do not overwrite saved
   // progress with the empty defaults before the restoration above can read it.
   $: if (browser && progressRestored) {
-    try { localStorage.setItem('sts_checklist_progress', JSON.stringify(answers)); } catch {}
+    try {
+      localStorage.setItem('sts_checklist_progress', JSON.stringify(answers));
+      progressSaved = true;
+    } catch { progressSaved = false; }
   }
 
   // Auto-resize textarea to content height
@@ -126,12 +131,12 @@
 
   onMount(() => {
     if (!browser) return;
-    if (localStorage.getItem(DISCORD_KEY)) discordPreviewed = true;
+    try { if (localStorage.getItem(DISCORD_KEY)) discordPreviewed = true; } catch { /* Storage is optional. */ }
   });
 
   function previewDiscord() {
     if (browser) {
-      localStorage.setItem(DISCORD_KEY, '1');
+      try { localStorage.setItem(DISCORD_KEY, '1'); } catch { /* Still open the preview. */ }
     }
     discordPreviewed = true;
     window.open('https://discord.gg/DVKhj6Vxge', '_blank', 'noopener,noreferrer');
@@ -164,7 +169,7 @@
     sending = true;
     sendError = '';
     try {
-      const res = await fetch('/api/checklist-email', {
+      const { response: res, data } = await requestJson('/api/checklist-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -182,14 +187,15 @@
           })),
         }),
       });
-      const data = await res.json().catch(() => ({}));
       if (!res.ok || data.skipped) {
         sendError = data.error || 'Something went wrong. Try again.';
       } else {
         sent = true;
       }
-    } catch {
-      sendError = 'Network error. Please try again.';
+    } catch (error) {
+      sendError = error instanceof RequestTimeoutError
+        ? 'The email request took too long to confirm. Check your inbox before sending another copy.'
+        : 'Connection interrupted. We could not confirm delivery. Check your inbox before trying again.';
     } finally {
       sending = false;
     }
@@ -207,8 +213,8 @@
   <meta property="og:title" content="Seven concrete moves. Start today." />
   <meta property="og:description" content="Start with your circumstances. Test a useful tool, map essential costs, and find someone to cooperate with." />
   <meta property="og:url" content="https://survivingthesingularity.com/checklist" />
-  <meta property="og:image" content="https://survivingthesingularity.com/images/og/checklist.png" />
-  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/checklist.png" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/checklist.png?v=0.11" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/checklist.png?v=0.11" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
@@ -217,7 +223,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Seven concrete moves. Start today." />
   <meta name="twitter:description" content="Start with your circumstances. Test a useful tool, map essential costs, and find someone to cooperate with." />
-  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/checklist.png" />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/checklist.png?v=0.11" />
 </svelte:head>
 
 <div class="cl-page">
@@ -275,7 +281,7 @@
 
   <!-- ── PRIMER ── -->
   <p class="cl-primer-single">Each step has one action you can take this week. Check it off when you've done it. Start with 01.</p>
-  <p class="cl-primer-single">Notes are saved in this browser. Unlocking with your email sends a copy of your notes through our email provider. Leave out sensitive details. <a href="/policies">How we handle your data</a>.</p>
+  <p class="cl-primer-single">{#if progressSaved}Notes are saved in this browser.{:else if progressRestored}Browser storage is unavailable. Your notes work during this visit, but will be lost if you reload or leave. Copy them before you close this page.{:else}Notes can be saved in this browser when storage is available.{/if} Unlocking with your email sends a copy of your notes through our email provider. Leave out sensitive details. <a href="/policies">How we handle your data</a>.</p>
 
   <!-- ── CHECKLIST with EmailGate ── -->
   <EmailGate
@@ -593,6 +599,10 @@
 
 <style>
   .cl-page {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
     max-width: 760px;
     margin: 0 auto;
     padding: clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 1.5rem) 5rem;

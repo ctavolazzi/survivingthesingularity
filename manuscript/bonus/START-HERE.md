@@ -20,6 +20,26 @@ Free with your preorder of *Surviving the Singularity*. You did not pay extra fo
 
 ---
 
+## Open your book
+
+**Start with the PDF for a familiar page layout, or the EPUB for text that resizes to your screen.** Both contain the same book. You do not need an account or the online reading password to open either downloaded file.
+
+1. **Extract the downloaded ZIP.** On Windows, right-click it and choose **Extract All**. On a Mac, double-click it. On an iPhone or iPad, find it in the **Files** app and tap it to create a folder. On Android, use your Files app's **Extract** option. Menu names vary by device. Open the extracted `The-Precedent-File` folder; keep its subfolders together.
+2. **Choose a reading format.** Open [the book PDF](book/Surviving-the-Singularity.pdf) in your browser or PDF reader. For adjustable text, open [the book EPUB](book/Surviving-the-Singularity.epub) in an EPUB reader: Apple Books on an iPhone, iPad or Mac, or a compatible reader on Android or Windows. On an Apple device, the Share menu's **Books** option can import it. Your reader's contents menu jumps between chapters. No particular reading app is required.
+3. **Using a Kindle?** Send the EPUB through Amazon's [Send to Kindle](https://www.amazon.com/sendtokindle) service, using your Amazon account. This sends the file to Amazon for conversion; availability and supported formats depend on Amazon. Copying an EPUB directly over USB is not the same process. The PDF remains an alternative if you prefer not to use that service.
+
+To read the research companion, open [The Precedent File PDF](The-Precedent-File.pdf). The `.md` files are plain-text Markdown and can be opened in a text editor; `START-HERE.html` is the browser-friendly version of these instructions. The `.csv` research index opens in a spreadsheet application. You can ignore the cover and research folders until you need them.
+
+**A practical starting point:** read the Introduction, Chapter 19, and Appendix C for the argument and plan. Then choose one action from Appendix G that fits your circumstances. The online [free sample and reading guide](https://survivingthesingularity.com/sample) can help you choose a route before opening the full book.
+
+The EPUB has reflowable text, chapter navigation, and text descriptions for the book's inline images. The PDF preserves the designed pages and may require zooming on a phone. These files have not received a complete assistive-technology or every-device certification. If a format is difficult to use, contact us so we can help you find a workable way to read.
+
+**Reading a wide reference table?** Try landscape orientation or, where your EPUB app supports it, scroll sideways within the table. Some paginated readers handle wide tables differently. The PDF offers the same table in its fixed page layout, with zoom available in your PDF reader.
+
+**Download trouble?** If your email app's built-in browser will not save the file, open the confirmation link in your usual browser. Wait for the ZIP to finish downloading before extracting it. If a download link expires, return to the confirmation page linked in your purchase email for a fresh link. If you still cannot get your files, email [info@survivingthesingularity.com](mailto:info@survivingthesingularity.com) from the address used to purchase, with your order reference if available. Never send payment-card details. You do not need to buy again.
+
+Save a local backup of the folder. Once downloaded, the PDF, EPUB, and research files can be read offline in a compatible application. Your purchase email also contains the separate shared password for the [full online draft](https://survivingthesingularity.com/book).
+
 ## Why you have this
 
 You preordered the book. This is the evidence drawer underneath it.

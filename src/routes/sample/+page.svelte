@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import { offer } from '$lib/offer.js';
   import 'katex/dist/katex.min.css';
   import '$lib/styles/book-figures.css';
@@ -9,6 +10,14 @@
   <title>Free sample & reading guide | Surviving the Singularity</title>
   <meta name="description" content="Read the introduction and choose a path through Surviving the Singularity. A free sample from the current draft, with no email or password required." />
 </svelte:head>
+
+<SocialMeta
+  title="Read a free sample | Surviving the Singularity"
+  description="Read the introduction and reading guide from the current draft. No email or password required."
+  type="website"
+  image="/images/og/sample.png"
+  imageAlt="Read a free sample of Surviving the Singularity: the introduction and reading guide, with no email required."
+/>
 
 <div class="sample-page">
   <header>
@@ -40,7 +49,7 @@
 </div>
 
 <style>
-  .sample-page { max-width: 780px; margin: 0 auto; padding: 3rem 1.5rem 5rem; color: #cbd5e1; line-height: 1.8; }
+  .sample-page { width: 100%; min-width: 0; box-sizing: border-box; max-width: 780px; margin: 0 auto; padding: 3rem 1.5rem 5rem; color: #cbd5e1; line-height: 1.8; overflow-wrap: anywhere; }
   header, aside { padding-bottom: 2rem; }
   h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); color: #f1f5f9; line-height: 1.15; font-weight: 800; margin: 1rem 0; }
   h2, .sample-prose :global(h1), .sample-prose :global(h2), .sample-prose :global(h3) { color: #f1f5f9; line-height: 1.3; }

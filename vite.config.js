@@ -1,9 +1,11 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { imagetools } from 'vite-imagetools';
+import { hashFocusGuard } from './scripts/vite-hash-focus-guard.mjs';
 
 export default defineConfig({
 	plugins: [
+		hashFocusGuard(),
 		sveltekit(),
 		imagetools({
 			defaultDirectives: () => {

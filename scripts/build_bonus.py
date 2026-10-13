@@ -39,6 +39,7 @@ import sys
 import textwrap
 import zipfile
 from pathlib import Path
+from urllib.parse import quote
 
 # Publishing lives in sts_lib.bonus, not here. This script BUILDS the bundle;
 # putting the Supabase write beside the builder is what made "what is in the
@@ -609,6 +610,40 @@ def _sha256(path: Path) -> str:
     return h.hexdigest()
 
 
+def _reader_html(markdown: str) -> str:
+    """A self-contained reading guide: no scripts, fonts, trackers or network assets."""
+    rendered = subprocess.run(
+        ["pandoc", "--from=markdown", "--to=html5", "--wrap=none"],
+        input=markdown, capture_output=True, text=True, check=True,
+    ).stdout
+    return """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Start here: Surviving the Singularity</title>
+<style>
+html { color: #17202a; background: #fff; font: 18px/1.65 system-ui, sans-serif; }
+body { margin: 0; }
+main { max-width: 76ch; margin: auto; padding: 1.25rem; overflow-wrap: anywhere; }
+h1, h2, h3 { line-height: 1.2; }
+h2 { margin-top: 2rem; }
+a { color: #075985; text-underline-offset: .16em; }
+a:focus-visible { outline: 3px solid #075985; outline-offset: 3px; }
+li { margin: .65rem 0; }
+code { font-size: .9em; white-space: normal; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .9rem; }
+th, td { border: 1px solid #aab6c1; padding: .6rem; text-align: left; vertical-align: top; }
+th:first-child, td:first-child { width: 38%; }
+hr { border: 0; border-top: 1px solid #aab6c1; margin: 2rem 0; }
+@media (max-width: 420px) { main { padding: 1rem; } ol, ul { padding-left: 1.25rem; } }
+</style>
+</head>
+<body><main>
+""" + rendered + "\n</main></body></html>\n"
+
+
 def main() -> int:
     no_pdf = "--no-pdf" in sys.argv
 
@@ -766,8 +801,8 @@ def main() -> int:
     for p in staged_now:
         rel = p.relative_to(STAGE).as_posix()
         label, role, free_at = labels.get(p, (rel, "primary", None))
-        note = f"{label}. Also free at `{free_at}`." if free_at else f"{label}."
-        inside_rows.append(f"| `{rel}` | {note} |")
+        note = f"{label}. [Also available free](https://survivingthesingularity.com{free_at})." if free_at else f"{label}."
+        inside_rows.append(f"| [`{rel}`]({quote(rel)}) | {note} |")
 
     start_here = (BONUS / "START-HERE.md").read_text(encoding="utf8")
     # The template's own instructions are for whoever edits it, not for a reader.
@@ -778,7 +813,9 @@ def main() -> int:
         print("error: START-HERE.md has unfilled placeholders", file=sys.stderr)
         return 1
     (STAGE / "START-HERE.md").write_text(start_here, encoding="utf8")
-    labels[STAGE / "START-HERE.md"] = ("Start here", "primary", None)
+    labels[STAGE / "START-HERE.md"] = ("Start here, text instructions", "primary", None)
+    (STAGE / "START-HERE.html").write_text(_reader_html(start_here), encoding="utf8")
+    labels[STAGE / "START-HERE.html"] = ("Start here, browser instructions", "primary", None)
 
     # ONE list feeds both the archive and the manifest. That is what makes
     # "the manifest is generated, never hand-written" a property of the code
@@ -838,6 +875,7 @@ def main() -> int:
         # manifest is stale relative to the casebook" instead of only "the
         # numbers match themselves".
         "inputs": {
+            "builder": {"path": "scripts/build_bonus.py", "sha256": _sha256(Path(__file__))},
             "casebook": {"path": str(CASEBOOK.relative_to(ROOT)), "sha256": _sha256(CASEBOOK)},
             "start_here": {"path": str((BONUS / "START-HERE.md").relative_to(ROOT)),
                            "sha256": _sha256(BONUS / "START-HERE.md")},

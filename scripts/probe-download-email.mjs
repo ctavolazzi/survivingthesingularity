@@ -61,13 +61,15 @@ function stubPlugin(envValues) {
   return {
     name: 'probe-stubs',
     setup(build) {
-      build.onResolve({ filter: /^\$env\// }, () => ({ path: 'probe-env', namespace: 'stub' }));
+      build.onResolve({ filter: /^\$env\// }, (a) => ({ path: a.path.endsWith('/public') ? 'probe-env-public' : 'probe-env-private', namespace: 'stub' }));
       build.onResolve({ filter: /^resend$/ }, () => ({ path: 'probe-resend', namespace: 'stub' }));
       build.onResolve({ filter: /supabaseAdmin\.js$/ }, () => ({ path: 'probe-supabase', namespace: 'stub' }));
       build.onResolve({ filter: /^\$lib\// }, (a) => ({ path: join(ROOT, 'src', 'lib', a.path.slice('$lib/'.length)) }));
       build.onLoad({ filter: /.*/, namespace: 'stub' }, (a) => {
-        if (a.path === 'probe-env') {
-          return { contents: `export const env = ${JSON.stringify(envValues)};`, loader: 'js' };
+        if (a.path.startsWith('probe-env-')) {
+          const publicModule = a.path === 'probe-env-public';
+          const values = Object.fromEntries(Object.entries(envValues).filter(([key]) => key.startsWith('PUBLIC_') === publicModule));
+          return { contents: `export const env = ${JSON.stringify(values)};`, loader: 'js' };
         }
         if (a.path === 'probe-resend') {
           return {

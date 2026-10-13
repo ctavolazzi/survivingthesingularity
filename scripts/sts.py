@@ -62,6 +62,7 @@ Examples:
 """
 
 import argparse
+import base64
 import collections
 import hashlib
 import hmac
@@ -1017,11 +1018,17 @@ def load_og_cards() -> list:
 
 def og_html(card: dict, cover_uri: str) -> str:
     e = html_mod.escape
+    # The card should render identically without a Google Fonts request. These
+    # are the same licensed, self-hosted variable fonts used by the website.
+    def font_data(filename: str) -> str:
+        return base64.b64encode((STATIC_DIR / "fonts" / filename).read_bytes()).decode("ascii")
+
+    outfit = font_data("outfit-v15-latin.woff2")
+    mono = font_data("jetbrains-mono-v24-latin.woff2")
     return f"""<!doctype html><html><head><meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
+  @font-face {{ font-family: 'Outfit'; font-style: normal; font-weight: 100 900; src: url(data:font/woff2;base64,{outfit}) format('woff2'); }}
+  @font-face {{ font-family: 'JetBrains Mono'; font-style: normal; font-weight: 100 900; src: url(data:font/woff2;base64,{mono}) format('woff2'); }}
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
   body {{
     width: {OG_W}px; height: {OG_H}px; overflow: hidden;
@@ -1076,21 +1083,18 @@ def og_html(card: dict, cover_uri: str) -> str:
 </body></html>"""
 
 
-def render_og_card(card: dict, chrome: str, cover_uri: str, out_dir: Path) -> dict:
+def render_og_card(card: dict, cover_uri: str, out_dir: Path) -> dict:
     """Render one card to PNG with headless Chrome. Returns a report row."""
     out = out_dir / card["out"]
     with tempfile.TemporaryDirectory() as td:
         page = Path(td) / "card.html"
         page.write_text(og_html(card, cover_uri), encoding="utf-8")
         shot = Path(td) / "card.png"
-        cmd = [chrome, "--headless", "--disable-gpu", "--no-sandbox",
-               "--hide-scrollbars", "--default-background-color=00000000",
-               f"--force-device-scale-factor={OG_SCALE}",
-               f"--window-size={OG_W},{OG_H}",
-               "--virtual-time-budget=12000",
-               f"--screenshot={shot}", page.as_uri()]
+        cmd = ["node", str(ROOT / "scripts/render-og-card.mjs"), str(page), str(shot)]
         try:
-            subprocess.run(cmd, capture_output=True, timeout=180)
+            rendered = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+            if rendered.returncode:
+                return {"route": card["route"], "out": card["out"], "action": f"render-failed ({rendered.stderr[-500:]})"}
         except Exception as ex:  # noqa: BLE001
             return {"route": card["route"], "out": card["out"], "action": f"render-failed ({ex})"}
         if not shot.exists():
@@ -1108,8 +1112,15 @@ def _og_image_in(path: Path):
     """The og:image a single .svelte file declares in its head, or None."""
     if not path.exists():
         return None
+    source = path.read_text(encoding="utf-8")
+    shared = re.search(r"<SocialMeta\b(.*?)/>", source, re.DOTALL)
+    if shared:
+        image = re.search(r'\bimage="([^"]+)"', shared.group(1))
+        return image.group(1) if image else "/images/og/blog.png"
+    if "<BlogPostTemplate" in source:
+        return "/images/og/blog.png"
     head = re.search(r"<svelte:head>(.*?)</svelte:head>",
-                     path.read_text(encoding="utf-8"), re.DOTALL)
+                     source, re.DOTALL)
     if not head:
         return None
     m = re.search(r'property="og:image"\s+content=(?:"([^"]*)"|\{([^}]*)\})',
@@ -1151,15 +1162,13 @@ def og_declared() -> dict:
 def cmd_og(args) -> int:
     cards = load_og_cards()
     if args.render:
-        chrome = find_chrome()
-        if not chrome:
-            sys.exit("sts og: Chrome/Chromium not found - cards are rendered in a real browser "
-                     "(web fonts, gradients), so there is no fallback path here.")
+        # Use Playwright's installed Chromium (`npx playwright install chromium`)
+        # for an exact viewport and the same browser version in repeat builds.
         cover = STATIC_DIR / "images" / "surviving_the_singularity_cover_1200.png"
         if not cover.exists():
             sys.exit(f"sts og: cover art missing at {cover} - run `sts.py cover --sync` first")
         only = set(args.only.split(",")) if args.only else None
-        rows = [render_og_card(c, chrome, cover.as_uri(), OG_DIR)
+        rows = [render_og_card(c, cover.as_uri(), OG_DIR)
                 for c in cards if not only or c["route"] in only]
         if args.json:
             print(json.dumps(rows, indent=2))
@@ -1186,6 +1195,7 @@ def cmd_og(args) -> int:
         local = img.split("survivingthesingularity.com", 1)[-1]
         if "}" in local:
             local = local.split("}", 1)[-1]
+        local = urllib.parse.urlsplit(local).path
         if local.startswith("/") and not (STATIC_DIR / local.lstrip("/")).exists():
             problems.append(f"{p} og:image points at {local}, which is not in static/ "
                             "(scrapers will fall back to no image)")

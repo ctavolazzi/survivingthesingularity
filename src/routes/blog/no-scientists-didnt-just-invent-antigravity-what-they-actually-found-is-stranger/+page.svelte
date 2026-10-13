@@ -1,4 +1,5 @@
 <script>
+  import SocialMeta from '$lib/components/SocialMeta.svelte';
   import SocialShare from '$lib/components/SocialShare.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
@@ -16,11 +17,9 @@
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content={post.description} />
-  <meta property="og:title" content={post.title} />
-  <meta property="og:description" content={post.description} />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
+
+<SocialMeta title={post.title} description={post.description} />
 
 <div class="blog-post">
   <article class="post-inner">

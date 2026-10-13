@@ -102,6 +102,44 @@ test.describe('Usability', () => {
     await expect(dialog).toHaveCount(0);
   });
 
+  test('Thank-you dismissal releases the page even when animation frames stall', async ({ page }) => {
+    await page.addInitScript(() => {
+      const nativeFrame = window.requestAnimationFrame.bind(window);
+      const state = { stalled: false, held: [] };
+      window.requestAnimationFrame = callback => nativeFrame(time => {
+        if (state.stalled) state.held.push(callback);
+        else callback(time);
+      });
+      document.addEventListener('click', event => {
+        if (!(event.target instanceof Element) || !event.target.closest('.close-btn')) return;
+        state.stalled = true;
+        document.documentElement.dataset.modalFramesStalled = 'true';
+      }, true);
+      document.addEventListener('release-modal-frames', () => {
+        state.stalled = false;
+        for (const callback of state.held.splice(0)) nativeFrame(callback);
+      });
+    });
+    try {
+      await gotoReady(page, '/');
+      const opener = page.getByRole('button', { name: /Thank you for being here/ });
+      await opener.click();
+      const dialog = page.getByRole('dialog', { name: 'Thank You', exact: true });
+      await expect(dialog).toBeVisible();
+      await expect(page.locator('#main-content')).toHaveJSProperty('inert', true);
+      await dialog.getByRole('button', { name: 'Close dialog', exact: true }).click();
+      // Stop frames only once the real close click arrives, so Playwright's
+      // actionability checks and the entrance animation still run normally.
+      await expect(page.locator('html')).toHaveAttribute('data-modal-frames-stalled', 'true');
+      await expect(dialog).toHaveCount(0);
+      await expect(opener).toBeFocused();
+      await expect(page.locator('#main-content')).toHaveJSProperty('inert', false);
+      await expect.poll(() => page.evaluate(() => document.body.style.overflow)).toBe('');
+    } finally {
+      await page.evaluate(() => document.dispatchEvent(new Event('release-modal-frames')));
+    }
+  });
+
   test('Homepage exposes current navigation and internal links resolve', async ({ page }) => {
     await gotoReady(page, '/');
     const hrefs = await page.locator('a[href^="/"]').evaluateAll(links =>

@@ -151,6 +151,29 @@ and mobile. Logs are `storage-decomposed-dev.log` and
 `storage-decomposed-built.log` in the same evidence directory. These are targeted
 results; the coordinated release suite owns the final integrated result.
 
+## Tablet follow-up: dismissal must not wait for animation frames
+
+A later tablet CI run timed out waiting for the Thank You dialog to disappear
+after its close click. On the built candidate, 12 instrumented closes under four
+concurrent WebKit tablet contexts took 1.74–2.47 seconds to finish a 260ms outro;
+the dialog stayed opaque and inert, and the page stayed scroll-locked while frame
+callbacks stalled. A controlled frame stall reproduced the same blocked dismissal,
+while pausing CSS animations alone still allowed cleanup. This establishes the
+visitor-blocking mechanism, although the original CI run did not retain frame
+telemetry to prove its exact scheduling cause. InfoModal now retains its entrance
+fade/fly and removes exit transitions, so closing releases the page immediately.
+The new `h-usability.spec.js` regression stalls frames only after the real close
+click and checks removal, restored focus, cleared background inertness and restored
+scrolling. It failed against the original build at the unchanged five-second
+dialog-removal assertion, providing a negative control. Probe events, snapshots
+and that failure are retained under `modal-close-probe-results.json`,
+`modal-close-summary.json` and `modal-negative-control.log` in the evidence
+directory. After the coordinated production rebuild, all 15 normal-close,
+stalled-frame dismissal and focus-containment checks passed across the five
+browser/device profiles without retries (`browser-modal-final.log`). The same
+build passed the 79 Worker HTTP checks and the crawler checks for 25 canonical
+pages and eight preview images. Final full-suite results belong to PR #31's checks.
+
 ## Slow JavaScript: preserve input before hydration
 
 Delaying the client scripts exposed a real visitor issue: Svelte's initially
@@ -179,7 +202,7 @@ for consent changed without a DOM event. Browser writes are intercepted locally.
 After the combined production rebuild, all 105 targeted hydration, storage and
 history checks passed across the five browser/device profiles without retries.
 That run is recorded in `browser-hydration-final.log`. The full launch suite now
-defines 245 checks; the final committed-suite results belong to PR #31's checks.
+defines 250 checks; the final committed-suite results belong to PR #31's checks.
 
 Evidence is retained in `/workspace/review/launch-second-pass/` as
 `checkout-hydration-results.json`, `hydration-browser-before.log`,

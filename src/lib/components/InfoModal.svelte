@@ -31,7 +31,9 @@
 <svelte:window on:keydown={onKeydown} />
 
 {#if open}
-	<div class="backdrop" transition:fade={{ duration: 180 }}>
+	<!-- Closing must release focus, scroll and background inertness immediately,
+	     even when a constrained browser stops advancing animation frames. -->
+	<div class="backdrop" in:fade={{ duration: 180 }}>
 		<button type="button" class="backdrop-dismiss" tabindex="-1" aria-hidden="true" aria-label="Dismiss dialog" on:click={close}></button>
 		<div
 			class="modal"
@@ -40,7 +42,7 @@
 			aria-label={title}
 			tabindex="-1"
 			use:focusModal
-			transition:fly={{ y: 28, duration: 260 }}
+			in:fly={{ y: 28, duration: 260 }}
 		>
 			<header>
 				<h3>{title}</h3>

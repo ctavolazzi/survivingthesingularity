@@ -49,8 +49,11 @@ built site and installed Playwright browsers, intercepts writes, and does not
 prove a live payment or inbox delivery. The disposable Postgres integration
 suite is documented alongside the payment tests.
 
-Cloudflare uses the pinned adapter and `wrangler.jsonc`. `_headers` and the
-generated `_redirects` belong at the repository root. The local Worker guard
+Cloudflare uses the pinned adapter and dashboard-managed production settings.
+Do not add an automatically discovered root Wrangler configuration without
+importing the existing dashboard settings: it takes over environment variables.
+`tests/fixtures/cloudflare-runtime.json` is only for isolated local emulation.
+`_headers` and the generated `_redirects` belong at the repository root. The local Worker guard
 isolates credentials, verifies all canonical chapter loads and checks static
 routing; it does not deploy. Markdown sanitization must work without a DOM.
 

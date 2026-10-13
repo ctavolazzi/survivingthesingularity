@@ -11,7 +11,7 @@ This branch starts from `release/v0.11.0` at `4377394471357ce5660a0cf62d2eeed3e1
 Changes include:
 
 - Explicit retryable fulfillment states, atomic database leases and fencing, stable provider idempotency keys, concurrent checkout reuse, duplicate-payment review flags, and a Stripe/local reconciliation monitor.
-- Verified production purchase access; development mocks cannot sign real downloads. Missing or mismatched bundle configuration disables paid checkout and signing.
+- Purchase access requires verified payment; development mocks cannot sign real downloads. Missing or mismatched bundle configuration disables paid checkout and signing.
 - Corrected Goldman Sachs, Mercer and AGI-survey claims with primary links; personal-forecast labeling; consistent digital/print/refund terms and accurate privacy disclosures.
 - A public `/sample` introduction and reading guide; value proposition before the homepage forecast/video; coherent access-code labels and recovery.
 - Keyboard focus containment and restoration, named checklist controls, optional unchecked marketing consent, accurate delivery feedback, and current reader navigation checks.

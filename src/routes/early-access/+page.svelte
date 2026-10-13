@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import BookCover from '$lib/components/BookCover.svelte';
   // Nothing on this page states the offer in its own words. See src/lib/offer.js.
@@ -10,6 +11,22 @@
   let checkoutLoading = false;
   let checkoutError = '';
   let email = '';
+  let emailInput;
+  let bottomEmailInput;
+  // The server-rendered fields are usable before client JS arrives. A blank
+  // bind:value would overwrite anything typed or autofilled during that gap.
+  // Adopt the focused field, or either populated field, then synchronize both.
+  onMount(() => {
+    const active = [emailInput, bottomEmailInput].find(input => input === document.activeElement);
+    syncEmail(active?.value || emailInput?.value || bottomEmailInput?.value || '');
+  });
+
+  function syncEmail(value) {
+    email = value;
+    for (const input of [emailInput, bottomEmailInput]) {
+      if (input && input.value !== value) input.value = value;
+    }
+  }
   // Set when the server refuses a repeat purchase. This is not an error state:
   // nothing went wrong, the customer already owns the thing they are trying to
   // buy, and the correct response is to give it back to them rather than to
@@ -32,12 +49,15 @@
     return 'You already have this one. We could not re-send the link automatically, so email info@survivingthesingularity.com and we will sort it out.';
   }
 
-  async function checkout() {
+  async function checkout(input) {
     if (checkoutLoading) return;
     checkoutError = '';
     ownedMessage = '';
 
-    if (!emailOk) {
+    // Some autofill tools update the DOM without an input event. Read the
+    // current field for Enter submission instead of relying on stale state.
+    syncEmail(input?.value ?? email);
+    if (!EMAIL_RE.test(email.trim())) {
       checkoutError = 'Enter a valid email address first.';
       return;
     }
@@ -164,15 +184,17 @@
           inputmode="email"
           autocomplete="email"
           placeholder="you@example.com"
-          bind:value={email}
-          on:keydown={(e) => e.key === 'Enter' && checkout()}
+          bind:this={emailInput}
+          on:input={(event) => syncEmail(event.currentTarget.value)}
+          on:change={(event) => syncEmail(event.currentTarget.value)}
+          on:keydown={(e) => e.key === 'Enter' && checkout(e.currentTarget)}
           disabled={checkoutLoading}
         />
 
         <button
           class="ea-buy-btn"
           class:is-loading={checkoutLoading}
-          on:click={checkout}
+          on:click={() => checkout(emailInput)}
           type="button"
           disabled={checkoutLoading || !emailOk}
         >
@@ -370,7 +392,7 @@
          enabled, did nothing, and set an error paragraph that rendered 4052px
          away in a 720px viewport, which is to say invisibly. Measured, not
          inferred.
-         Both inputs bind the same `email`, so typing in either fills both, and
+         Both inputs synchronize the same `email`, so typing in either fills both, and
          the error renders next to whichever button produced it. -->
     <label class="ea-bottom-label" for="ea-email-bottom">Where should we send it?</label>
     <input
@@ -381,15 +403,17 @@
       inputmode="email"
       autocomplete="email"
       placeholder="you@example.com"
-      bind:value={email}
-      on:keydown={(e) => e.key === 'Enter' && checkout()}
+      bind:this={bottomEmailInput}
+      on:input={(event) => syncEmail(event.currentTarget.value)}
+      on:change={(event) => syncEmail(event.currentTarget.value)}
+      on:keydown={(e) => e.key === 'Enter' && checkout(e.currentTarget)}
       disabled={checkoutLoading}
     />
 
     <button
       class="ea-bottom-btn"
       class:is-loading={checkoutLoading}
-      on:click={checkout}
+      on:click={() => checkout(bottomEmailInput)}
       type="button"
       disabled={checkoutLoading || !emailOk}
     >

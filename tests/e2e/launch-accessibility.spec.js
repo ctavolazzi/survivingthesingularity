@@ -188,6 +188,67 @@ test('checkout errors expose alert semantics, preserve the address, and allow re
   await expect(buy).toBeEnabled();
 });
 
+for (const placement of ['top', 'bottom']) {
+test(`an email entered before hydration survives and enables checkout when scripts arrive (${placement} field)`, async ({ page, baseURL }) => {
+  await acceptNotice(page);
+  await page.addInitScript(() => sessionStorage.setItem('sts:splash', 'seen'));
+  let releaseScripts;
+  const ready = new Promise(resolve => { releaseScripts = resolve; });
+  let heldScripts = 0;
+  await page.route('**/*', async route => {
+    const request = route.request();
+    const url = new URL(request.url());
+    if (url.origin === new URL(baseURL).origin && request.resourceType() === 'script' && url.pathname !== '/splash-gate.js') {
+      heldScripts++;
+      await ready;
+    }
+    return route.fallback();
+  });
+  let submitted;
+  await page.route('**/api/stripe-checkout', route => {
+    submitted = route.request().postDataJSON();
+    return route.fulfill({ status: 503, json: { error: 'Checkout is temporarily unavailable.' } });
+  });
+  try {
+    await page.goto('/early-access', { waitUntil: 'commit' });
+    const input = page.locator(placement === 'top' ? '#ea-email' : '#ea-email-bottom');
+    const other = page.locator(placement === 'top' ? '#ea-email-bottom' : '#ea-email');
+    const buy = page.locator(placement === 'top' ? 'button.ea-buy-btn' : 'button.ea-bottom-btn');
+    await expect(input).toBeVisible();
+    await input.fill('reader@example.test');
+    await expect(input).toHaveValue('reader@example.test');
+    await expect(buy).toBeDisabled();
+    // A shopper can move to the other still-empty field before JS arrives.
+    // Its focus must not erase the address they already entered above.
+    if (placement === 'top') await other.focus();
+    expect(heldScripts).toBeGreaterThan(0);
+    releaseScripts();
+    await expect(buy).toBeEnabled();
+    await expect(input).toHaveValue('reader@example.test');
+    await expect(other).toHaveValue('reader@example.test');
+    await input.fill('first-field@example.test');
+    await expect(other).toHaveValue('first-field@example.test');
+    await other.fill('second-field@example.test');
+    await expect(input).toHaveValue('second-field@example.test');
+    await buy.click();
+    await expect(page.getByRole('alert')).toContainText('Checkout is temporarily unavailable');
+    expect(submitted).toEqual({ edition_type: 'standard', email: 'second-field@example.test' });
+    if (placement === 'bottom') await expect(page.locator('.ea-bottom-error')).toBeVisible();
+    await expect(buy).toBeEnabled();
+    // Change-only autofill updates validation, and Enter reads the current
+    // DOM value even if a password manager emitted no input/change event.
+    await input.evaluate(element => { element.value = ''; element.dispatchEvent(new Event('change', { bubbles: true })); });
+    await expect(buy).toBeDisabled();
+    await input.evaluate(element => { element.value = 'changed@example.test'; element.dispatchEvent(new Event('change', { bubbles: true })); });
+    await expect(buy).toBeEnabled();
+    await input.evaluate(element => { element.value = 'autofilled@example.test'; });
+    await input.press('Enter');
+    await expect.poll(() => submitted?.email).toBe('autofilled@example.test');
+    await expect(other).toHaveValue('autofilled@example.test');
+  } finally { releaseScripts(); }
+});
+}
+
 test('book gate has a persistent label, a public sample, and recoverable invalid input', async ({ page }) => {
   await acceptNotice(page);
   await page.goto('/book', { waitUntil: 'networkidle' });

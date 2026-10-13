@@ -12,6 +12,12 @@ That fits the book better than promising a proven survival blueprint, career ins
 
 The launch should show an actual excerpt and a useful exercise before asking someone to accept the entire thesis. The free checklist is an especially good entry for an unfamiliar audience. The public sample establishes the author's voice and includes the reading guide, but it is an introduction, not a free implementation chapter.
 
+### The purchase is not content exclusivity
+
+The [GitHub repository](https://github.com/ctavolazzi/survivingthesingularity) is public and contains the canonical manuscript. The candidate also ships its PDF and EPUB as public files under `static/downloads/`, as documented in [publication/README.md](../../publication/README.md#public-digital-downloads). The shared reader password is a client-side reading gate, not authentication or DRM. The separately signed private ZIP controls that delivery path; it does not make the underlying manuscript or public book files exclusive. This describes the candidate's publication design, not a newly verified production deployment.
+
+Position the $5 as the actual early-access purchase: convenient delivery of the current draft and bundle, the stated substantial-update/future-digital-edition entitlement while the project is maintained, no planned membership charge for preorder buyers, and the separate print discount. A reader may also want to support continued work, but the transaction remains a purchase, not a donation. Do not promise exclusive text, personal consulting, a functioning community service, or other benefits absent from the offer. Some readers will reasonably choose the public material without buying; the launch should answer that choice honestly rather than pretend the files cannot be read elsewhere.
+
 ## Evidence checked again
 
 | Claim or inference | Primary evidence checked | What the launch may responsibly say |
@@ -96,6 +102,7 @@ The success moment is not simply “Sam bought.” It is “Sam opened the right
 | Creator opposed to AI | “You're treating consent and labor concerns as aesthetic insecurity.” | Acknowledge those concerns as substantive. The sample's abrasive status rhetoric remains a real taste barrier. Do not market the book as a neutral consensus textbook. |
 | Enthusiastic supporter | “These robots can already feed a whole neighborhood!” | Preserve enthusiasm while correcting scope: the manuscript proposes bounded trials with people, costs, inputs and backups. Do not repost an unsupported testimonial as fact. |
 | Practical builder | “Where is the working system, bill of materials and measured result?” | Distinguish real technology examples from proposed local systems and fictional scenes. Do not advertise completed deployments or consulting case studies that have not been demonstrated. |
+| Reader who finds the public files | “Why pay if the manuscript, PDF and EPUB are public?” | They are public; the reader gate does not make the text exclusive. The $5 purchase provides the stated bundle delivery and early-access terms: future digital editions while the project is maintained, no planned membership charge, and the separate print discount. Buy if those terms and supporting the work are valuable to you; there is no need to invent scarcity around the current text. |
 | Buyer | “I paid and the email hasn't arrived.” | Use the verified receipt/access recovery flow. A support response must reflect actual provider state; an accepted email is not proof of inbox arrival. Never tell them to buy again. |
 
 ## Ready-to-review launch copy

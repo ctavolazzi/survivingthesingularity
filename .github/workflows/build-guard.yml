@@ -72,6 +72,15 @@ jobs:
       - name: Launch flows on Chromium, Firefox and WebKit
         run: npm run test:launch-browser
 
+      - name: Retain launch browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: launch-browser-failure
+          path: tests/results/launch/
+          retention-days: 7
+          if-no-files-found: ignore
+
       - name: Report what this proves
         if: success()
         run: |

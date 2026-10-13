@@ -10,14 +10,24 @@
   import { isValidBookPassword } from '$lib/bookAccessCode.js';
   import { bookUnlocked } from '$lib/stores/bookAccess.js';
   import { offer } from '$lib/offer';
+  import { onMount } from 'svelte';
 
   /** Line under the title. Each surface says why you'd have a password. */
   export let subtitle = 'Enter the password from your confirmation email to read the book.';
 
   let password = '';
+  let passwordInput;
   let formError = '';
 
+  // Do not bind an initially empty value over text already typed into the
+  // server-rendered input while the JavaScript bundle was still loading.
+  function syncPassword() {
+    password = passwordInput?.value ?? password;
+  }
+  onMount(syncPassword);
+
   function submitPassword() {
+    syncPassword(); // Password managers may change the DOM without an event.
     formError = '';
     if (isValidBookPassword(password)) {
       bookUnlocked.set(true);
@@ -37,7 +47,9 @@
     <input
       id="book-access-password"
       type="password"
-      bind:value={password}
+      bind:this={passwordInput}
+      on:input={syncPassword}
+      on:change={syncPassword}
       placeholder="Password"
       aria-describedby={formError ? 'book-access-error' : undefined}
       aria-invalid={formError ? 'true' : undefined}

@@ -39,21 +39,18 @@ exercise. This is local evidence, not proof of a live purchase or inbox delivery
 
 ## Checks added
 
-`tests/e2e/launch-resilience.spec.js` now defines 13 cases:
+`tests/e2e/launch-resilience.spec.js` now defines 23 cases:
 
-1. Storage reads denied: navigation, checklist unlock and book reading remain usable.
-2. Storage writes/removal fail: the same paths work without false persistence promises.
-3. Invalid JSON recovers without falsely completed steps.
-4. A stored null recovers safely.
-5. A stored string recovers safely.
-6. Numeric checklist fields do not become completed steps or notes.
-7. String booleans, object notes and unknown keys recover safely.
-8. JavaScript disabled: the sample is readable and checkout has a useful fallback.
-9. A stalled checkout times out, preserves the email and permits a controlled retry.
-10. A failed connection and an HTML gateway error leave checkout recoverable.
-11. Five principal pages fit 320px with doubled root text and reduced motion.
-12. A tagged social sample link survives navigation, back, forward and reload.
-13. A delayed fragment-focus callback cannot overwrite a later history entry.
+- Twelve storage checks: four page-navigation checks, checklist unlock and book
+  reading, each exercised with denied reads and separately with failed writes/removal.
+- Five malformed-progress checks: invalid JSON, null, a string, numeric fields,
+  and string booleans/object notes/unknown keys.
+- JavaScript disabled: the sample is readable and checkout has a useful fallback.
+- A stalled checkout times out, preserves the email and permits a controlled retry.
+- A failed connection and an HTML gateway error leave checkout recoverable.
+- Five principal pages fit 320px with doubled root text and reduced motion.
+- A tagged social sample link survives navigation, back, forward and reload.
+- A delayed fragment-focus callback cannot overwrite a later history entry.
 
 The original 12 passed in Chromium against the source development server before
 the coordinated production build. The combined release suite owns the final
@@ -110,3 +107,82 @@ assertion, establishing a negative control. After the coordinated rebuild, all
 WebKit desktop/mobile: original back/forward navigation, forced stale callback,
 keyboard skip focus and unlocked reading/chapter navigation. The original URL
 assertions remain unchanged. Full-suite results are tracked in PR #31's checks.
+
+## CI follow-up: wait for completed navigation before reloading
+
+Build-guard run 38341859024 passed the history URL assertions but WebKit mobile
+reported an access-control error for the offer's same-origin `__data.json`
+request. Instrumented repeats showed a different cause from the focus race above:
+`goForward` returned after the history URL changed, while SvelteKit's offer data
+request had only just started. Reloading 5–12ms later cancelled that request;
+WebKit reported its cancellation as an access-control page error during document
+teardown. The next document rendered normally.
+
+The test now waits for the offer email field to appear and the existing navigation
+loading bar to disappear before reloading. It retains every URL assertion and the
+empty page-error assertion. There are no added sleeps, retries or ignored errors.
+The original sequence reproduced 13 failures and 13 cancelled data requests in
+24 WebKit mobile runs. The synchronized sequence passed 20 consecutive runs with
+zero cancelled data requests; every forward data request completed before reload.
+The social-history and deterministic stale-focus tests also passed all ten checks
+across the five launch browser profiles.
+
+The request-event negative control and comparison are retained as
+`reload-probe-results.json`, `reload-synchronized-results.json` and
+`reload-comparison.json` in `/workspace/review/launch-second-pass/`.
+
+## CI follow-up: isolate storage checks under the development server
+
+The broader WebKit workflow exhausted its 30-second budget during the two original
+storage tests, which each combined six page loads and several independent user
+journeys. Its development server and four workers compounded cold compilation
+costs. Retried runs also sometimes clicked SSR menu controls before hydration.
+
+Each storage mode now has separate page-navigation, checklist-unlock and reading
+cases. Before exercising storage fallbacks, each waits for the existing SSR splash
+node to be removed by `onMount`, proving that the client has mounted. The checks
+retain the original usability, truthful-persistence and empty page-error assertions;
+menu checks also confirm that Escape closes the menu. No timeout was increased.
+
+All 12 decomposed cases passed the actual legacy development-server configuration
+with four workers, zero retries and its unchanged 30-second per-test timeout.
+The corresponding 24 checks also passed against the built site in WebKit desktop
+and mobile. Logs are `storage-decomposed-dev.log` and
+`storage-decomposed-built.log` in the same evidence directory. These are targeted
+results; the coordinated release suite owns the final integrated result.
+
+## Slow JavaScript: preserve input before hydration
+
+Delaying the client scripts exposed a real visitor issue: Svelte's initially
+empty `bind:value` erased an email or book password typed into the server-rendered
+page before hydration. The checkout regression failed against the old built site
+in both Chromium and WebKit. Separate negative controls reproduced the same
+problem in book access and checklist signup.
+
+The purchase page now adopts existing field values on mount, synchronizes both
+email fields on input/change, and reads the submitting field before validation.
+Both purchase buttons and Enter are covered. Independent review caught and fixed
+the case where a populated field could be erased because the visitor had focused
+the other, still-empty field. The two fields continue to work as a synchronized
+pair; the test verifies actual submitted addresses, not just enabled buttons.
+
+BookGate and EmailGate similarly preserve existing DOM values and read them again
+on submission. Checklist signup preserves the visitor's explicit consent choice
+and the anti-bot field. Optional updates still start unchecked. Restoring saved
+checklist access still performs no new signup or email request.
+
+The final checkout change passed 42 targeted development-server checks across
+Chromium, Firefox and WebKit without retries, including the existing checkout-gate
+suite. Five additional book/checklist regression cases passed in Chromium and
+mobile WebKit; six focused checklist runs also passed after adding an assertion
+for consent changed without a DOM event. Browser writes are intercepted locally.
+After the combined production rebuild, all 105 targeted hydration, storage and
+history checks passed across the five browser/device profiles without retries.
+That run is recorded in `browser-hydration-final.log`. The full launch suite now
+defines 245 checks; the final committed-suite results belong to PR #31's checks.
+
+Evidence is retained in `/workspace/review/launch-second-pass/` as
+`checkout-hydration-results.json`, `hydration-browser-before.log`,
+`hydration-paired-browser-dev-after.log`, `input-hydration-before.log`,
+`input-hydration-email-before.log`, `input-hydration-after.log` and
+`input-hydration-consent-final.log`.

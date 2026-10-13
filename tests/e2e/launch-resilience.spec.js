@@ -33,22 +33,40 @@ async function privateStorage(context, mode) {
   }, mode);
 }
 
+// The SSR page already contains working-looking controls. Splash teardown is
+// performed by onMount, so its removal proves the client has actually mounted
+// before these tests exercise browser-storage fallbacks.
+async function expectMounted(page) {
+  await expect(page.locator('[data-sts-splash]')).toHaveCount(0);
+}
+
 for (const mode of ['denied', 'write-failure']) {
-  test(`pages and checklist unlock remain usable with ${mode} storage`, async ({ page, context }) => {
-    await privateStorage(context, mode);
-    const errors = [];
-    page.on('pageerror', error => errors.push(error.message));
-    for (const path of ['/', '/sample', '/early-access', '/book']) {
+  for (const path of ['/', '/sample', '/early-access', '/book']) {
+    test(`${path} navigation remains usable with ${mode} storage`, async ({ page, context }) => {
+      await privateStorage(context, mode);
+      const errors = [];
+      page.on('pageerror', error => errors.push(error.message));
       await page.goto(path, { waitUntil: 'networkidle' });
+      await expectMounted(page);
+      await expect(page.locator('h1').first()).toBeVisible();
       await expect(page.locator('h1').first()).not.toHaveText('Internal Error');
       await page.getByRole('button', { name: 'Open menu', exact: true }).click();
       await expect(page.getByRole('dialog', { name: 'Site menu' })).toBeVisible();
       await page.keyboard.press('Escape');
-    }
+      await expect(page.getByRole('dialog', { name: 'Site menu' })).not.toBeVisible();
+      expect(errors).toEqual([]);
+    });
+  }
+
+  test(`checklist unlock remains usable with ${mode} storage`, async ({ page, context }) => {
+    await privateStorage(context, mode);
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
     let signups = 0;
     await page.route('**/api/waitlist', route => { signups++; return route.fulfill({ status: 201, json: { ok: true } }); });
     await page.route('**/api/checklist-email', route => route.fulfill({ status: 503, json: { error: 'Email is temporarily unavailable.' } }));
     await page.goto('/checklist', { waitUntil: 'networkidle' });
+    await expectMounted(page);
     await expect(page.getByText('Browser storage is unavailable.', { exact: false })).toBeVisible();
     await page.locator('#check-title-01').click();
     await expect(page.locator('#check-01')).toBeChecked();
@@ -58,7 +76,15 @@ for (const mode of ['denied', 'write-failure']) {
     await expect(page.locator('input.cl-check-native')).toHaveCount(7);
     await expect(page.getByRole('alert')).toContainText('Email is temporarily unavailable');
     expect(signups).toBe(1);
+    expect(errors).toEqual([]);
+  });
+
+  test(`book reading remains usable with ${mode} storage`, async ({ page, context }) => {
+    await privateStorage(context, mode);
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
     await page.goto('/book', { waitUntil: 'networkidle' });
+    await expectMounted(page);
     await page.getByLabel('Book access password', { exact: true }).fill(BOOK_ACCESS_PASSWORD);
     await page.getByRole('button', { name: 'Unlock', exact: true }).click();
     await page.getByRole('link', { name: /Read it straight through/ }).click();
@@ -188,11 +214,17 @@ test('a tagged social link survives sample navigation, back, forward and reload'
   await expect(page.locator('#how-to-use')).toContainText('How to Use This Book');
   await page.getByRole('link', { name: /See the \$5 book offer/ }).click();
   await expect(page).toHaveURL(/\/early-access$/);
+  await expect(page.locator('#ea-email')).toBeVisible();
   await page.goBack({ waitUntil: 'networkidle' });
   await expect(page).toHaveURL(/utm_campaign=book-launch#how-to-use$/);
   await expect(page.locator('#how-to-use')).toContainText('How to Use This Book');
   await page.goForward({ waitUntil: 'networkidle' });
   await expect(page).toHaveURL(/\/early-access$/);
+  // A history traversal changes the URL before Kit finishes its data request.
+  // Reload the completed offer, rather than cancelling that request mid-flight
+  // (WebKit reports the cancellation as an access-control page error).
+  await expect(page.locator('#ea-email')).toBeVisible();
+  await expect(page.locator('.page-loading-bar')).toHaveCount(0);
   await page.reload({ waitUntil: 'networkidle' });
   await expect(page.locator('#ea-email')).toBeVisible();
   await expect(page.locator('button.ea-buy-btn')).toBeDisabled();

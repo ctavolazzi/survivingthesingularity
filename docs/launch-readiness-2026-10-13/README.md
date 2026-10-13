@@ -11,7 +11,7 @@ This branch starts from `release/v0.11.0` at `4377394471357ce5660a0cf62d2eeed3e1
 Changes include:
 
 - Explicit retryable fulfillment states, atomic database leases and fencing, stable provider idempotency keys, concurrent checkout reuse, duplicate-payment review flags, and a Stripe/local reconciliation monitor.
-- Purchase access requires verified payment; development mocks cannot sign real downloads. Missing or mismatched bundle configuration disables paid checkout and signing.
+- Private bundle downloads require verified payment; development mocks cannot sign real downloads. Missing or mismatched bundle configuration disables paid checkout and signing. The checked-in manuscript and public book downloads remain public; the browser reader gate is not a secure paywall.
 - Corrected Goldman Sachs, Mercer and AGI-survey claims with primary links; personal-forecast labeling; consistent digital/print/refund terms and accurate privacy disclosures.
 - A public `/sample` introduction and reading guide; value proposition before the homepage forecast/video; coherent access-code labels and recovery.
 - Keyboard focus containment and restoration, named checklist controls, optional unchecked marketing consent, accurate delivery feedback, and current reader navigation checks.
@@ -19,6 +19,7 @@ Changes include:
 - Installable Svelte checks, focused regression/SQL/browser CI, compatible dependency updates, a scoped cookie patch, updated math renderer, and removal of five unused dependencies.
 - A Worker-compatible HTML sanitizer replaces DOM-dependent rendering that crashed chapter pages on Cloudflare. The hosting adapter and Wrangler are pinned; local Worker checks cover all canonical chapters, assets and redirects. The final purchase prompt stays visible even if a browser animation stalls.
 - Browser storage denial no longer crashes hydration. Checklist progress reports when persistence fails, and a 30-second request deadline restores checkout controls while explaining that the outcome is unconfirmed and retries should use the same email.
+- Checkout, book access and checklist signup retain input entered before JavaScript loads. Both purchase fields stay synchronized, including autofill and Enter submission; each button submits its own current field value. Checklist consent and the anti-bot field also retain their actual values through hydration.
 - A reproduced SvelteKit fragment-focus race no longer rewrites a newer checkout history entry with the previous sample URL. A scoped build transform guards that deferred callback; source-shape changes fail the build and require review. Normal fragment focus is preserved, with an actual-runtime negative control and deterministic browser regression.
 - Crawler-visible social metadata is consolidated, the sample has a share card, and purchase/evidence cards state the current offer and review scope. A real HTTP guard checks all sitemap pages and served preview images without JavaScript.
 - Narrow EPUB tables and long text now wrap. The private archive includes a script-free HTML getting-started guide with desktop, phone, PDF, EPUB, Kindle and purchase-recovery instructions. Canonical prose and the reviewed PDF bytes are unchanged.
@@ -35,7 +36,7 @@ Changes include:
 | Production build | Explicit Cloudflare Pages output passed with offer, artifact and reference-resolution guards |
 | `npm run test:cloudflare` | 79 local Worker HTTP checks passed, covering all 35 canonical chapter loads, public sample, assets and redirects; 96 routing rules, no dropped exclusions; no Node compatibility flag; crawler guard also passed all 25 canonical pages and eight served PNG previews |
 | Sanitizer review | 102 adversarial Chromium checks passed, including malformed markup, unsafe URLs, CSS, SVG and MathML payloads |
-| Launch browser flows | Initial combined run passed 154/155 and exposed the repaired Safari history race. After repair, all 20 targeted history/focus/reading checks passed across Chromium desktop/mobile, Firefox desktop and WebKit desktop/mobile. The expanded 160-case full suite is required in CI; see [PR #31 checks](https://github.com/ctavolazzi/survivingthesingularity/pull/31/checks) for the committed candidate |
+| Launch browser flows | Required CI covers Chromium desktop/mobile, Firefox desktop and WebKit desktop/mobile. Targeted history/focus/reading checks pass across all five profiles; delayed-script checkout checks also exercise both purchase fields. See [PR #31 checks](https://github.com/ctavolazzi/survivingthesingularity/pull/31/checks) for the final committed-suite result and [browser findings](browser-resilience.md) for reproduced failures and fixes |
 | Existing regression suites | 87 source-policy tests and 18 checkout-gate browser cases passed; checkout mocks now run in WebKit CI without service secrets |
 | Sitemap | All 25 listed paths return 200 locally |
 | Visual checks | 10 page/viewport combinations: no uncaught page errors or horizontal overflow; primary mobile/desktop screenshots inspected |

@@ -22,20 +22,32 @@
   export let sub = 'Enter your email and the full version opens right here.';
   export let buttonText = 'Unlock Free';
   export let forceUnlock = false;        // bypass gate without email (e.g. Discord click)
-  export let consentDefault = false;     // Dispatches are optional and require an explicit opt-in.
 
   const LS_KEY = `sts_unlock_${storageKey}`;
 
   let unlocked = false;
   let email = '';
-  let subscribe = consentDefault;
+  let subscribe = false;
   let honeypot = '';
+  let emailInput;
+  let consentInput;
+  let honeypotInput;
   let state = 'idle'; // idle | loading | error
   let errorMsg = '';
   let preferenceNotice = '';
 
+  // The DOM owns initial field values so hydration cannot erase early typing,
+  // autofill, an explicit opt-in, or the anti-bot field. Optional updates start
+  // unchecked, and only the visitor's actual checkbox choice is submitted.
+  function syncFields() {
+    email = emailInput?.value ?? email;
+    subscribe = consentInput?.checked ?? subscribe;
+    honeypot = honeypotInput?.value ?? honeypot;
+  }
+
   onMount(() => {
     if (!browser) return;
+    syncFields();
     try {
       if (localStorage.getItem(LS_KEY)) {
         unlocked = true;
@@ -49,6 +61,7 @@
   async function submit(e) {
     e.preventDefault();
     if (state === 'loading') return;
+    syncFields(); // Some autofill tools emit neither input nor change.
     state = 'loading';
     errorMsg = '';
     try {
@@ -113,7 +126,9 @@
         <input
           class="hp-field"
           type="text"
-          bind:value={honeypot}
+          bind:this={honeypotInput}
+          on:input={syncFields}
+          on:change={syncFields}
           tabindex="-1"
           autocomplete="off"
           aria-hidden="true"
@@ -121,7 +136,9 @@
         <input
           class="gate-input"
           type="email"
-          bind:value={email}
+          bind:this={emailInput}
+          on:input={syncFields}
+          on:change={syncFields}
           placeholder="your@email.com"
           required
           autocomplete="email"
@@ -135,7 +152,7 @@
       </form>
 
       <label class="gate-consent">
-        <input type="checkbox" bind:checked={subscribe} />
+        <input type="checkbox" bind:this={consentInput} on:input={syncFields} on:change={syncFields} />
         <span>Also send me Signal Dispatches and book release news (optional)</span>
       </label>
 

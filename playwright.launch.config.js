@@ -2,13 +2,13 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests/e2e',
-  testMatch: ['launch-accessibility.spec.js', 'launch-resilience.spec.js', 'h-usability.spec.js'],
+  testMatch: ['launch-accessibility.spec.js', 'launch-resilience.spec.js', 'launch-input-hydration.spec.js', 'h-usability.spec.js'],
   outputDir: './tests/results/launch',
   timeout: 45_000,
   workers: 1,
   retries: 0,
   reporter: [['list']],
-  use: { baseURL: 'http://127.0.0.1:4178', screenshot: 'only-on-failure' },
+  use: { baseURL: 'http://127.0.0.1:4178', screenshot: 'only-on-failure', trace: 'retain-on-failure' },
   projects: [
     { name: 'chromium-desktop', use: { ...devices['Desktop Chrome'] } },
     { name: 'chromium-mobile', use: { ...devices['Pixel 5'] } },

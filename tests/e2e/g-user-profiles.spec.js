@@ -82,7 +82,7 @@ test.describe('Purchase email and no accounts', () => {
     const checkbox = page.locator('#check-01');
     const notes = page.locator('#notes-01');
     await expect(notes).toBeVisible();
-    await page.locator('label[for="check-01"]').click();
+    await page.locator('#check-title-01').click();
     await expect(checkbox).toBeChecked();
     await notes.fill('Compare one local food project this week.');
     await expect.poll(() => page.evaluate(() =>

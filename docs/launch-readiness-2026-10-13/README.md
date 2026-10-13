@@ -26,6 +26,7 @@ Changes include:
 | Disposable PostgreSQL 17.11 | 8 integration groups passed; real migrations, permission denials, concurrent claims/reservations, fencing and replay |
 | Production build | Passed with offer, artifact and reference-resolution guards |
 | Launch browser flows | 45 passed across Chromium desktop/mobile, Firefox desktop, WebKit desktop/mobile |
+| Existing regression suites | 87 source-policy tests and 18 checkout-gate browser cases passed; checkout mocks now run in WebKit CI without service secrets |
 | Sitemap | All 25 listed paths return 200 locally |
 | Visual checks | 10 page/viewport combinations: no uncaught page errors or horizontal overflow; primary mobile/desktop screenshots inspected |
 | Book proof | PDF 3.10 MiB / 416 pages; EPUB 20.74 MiB; all expected text blocks, artwork inputs and PDF links checked |

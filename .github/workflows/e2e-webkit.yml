@@ -12,13 +12,11 @@
 # chromium, firefox and mobile-chrome already run locally, so re-running them
 # here would burn minutes to learn nothing.
 #
-# ON SECRETS. Eighteen tests in i-checkout-gate need Stripe and Supabase
-# credentials to reach the money path; without them the endpoint correctly
-# fails closed with a 503 and those tests fail. Rather than let that make this
-# workflow permanently red (an alarm nobody reads is worse than no alarm), the
-# run excludes that spec when no Supabase secret is configured, and says so in
-# the job summary. Add the TEST-MODE secrets below and it covers them too.
-# Never put live-mode keys here.
+# ON SECRETS. Checkout, signup, and checklist delivery tests intercept their
+# API requests locally. The remaining specs read local pages or test pure
+# functions; none requires Stripe, Supabase, or email credentials. Run every
+# spec with no service secrets. This covers browser behavior, not real payment
+# processing or inbox delivery.
 
 name: e2e (WebKit)
 
@@ -35,7 +33,7 @@ on:
 # ON SIZING. The first real run of this workflow (30756938289) was killed at the
 # 30 minute ceiling with 29m08s spent in the test step alone; setup took 62s, so
 # the run was never close to fitting. The arithmetic: one project is 181 tests
-# after the grep-invert, three projects in one job is 543, and
+# in the original reduced run, three projects in one job is 543, and
 # playwright.config.js pins `workers: 1` under CI, so all 543 ran serially. At 3s
 # a test that is ~27 minutes at a 100% pass rate, before `retries: 2` charges
 # three attempts for every failure. So the projects are sharded into a matrix
@@ -72,26 +70,13 @@ jobs:
         run: npx playwright install --with-deps webkit
 
       - name: Run WebKit projects
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_TEST_SECRET_KEY }}
-          STRIPE_PRICE_ID: ${{ secrets.STRIPE_TEST_PRICE_ID }}
-          STRIPE_PRICE_ID_STANDARD: ${{ secrets.STRIPE_TEST_PRICE_ID }}
         run: |
           set -o pipefail
           # --workers overrides the `workers: CI ? 1` pin in playwright.config.js
           # for this run only. Editing the config would also change local runs,
           # where the single worker is deliberate. ubuntu-latest gives 4 vCPU.
-          PROJECT="--project=${{ matrix.project }} --workers=4"
-          if [ -z "${SUPABASE_URL}" ]; then
-            echo "::notice title=Partial run::No SUPABASE_URL secret configured, so i-checkout-gate is excluded. Add test-mode secrets to cover the checkout path."
-            echo "- **${{ matrix.project }}**: i-checkout-gate excluded, no test-mode secrets configured." >> "$GITHUB_STEP_SUMMARY"
-            npx playwright test $PROJECT --grep-invert "early-access checkout email gate"
-          else
-            echo "- **${{ matrix.project }}**: full run including checkout gate." >> "$GITHUB_STEP_SUMMARY"
-            npx playwright test $PROJECT
-          fi
+          echo "- **${{ matrix.project }}**: all browser specs included; service requests in checkout/signup tests are mocked. No live payment or email delivery is exercised." >> "$GITHUB_STEP_SUMMARY"
+          npx playwright test --project=${{ matrix.project }} --workers=4
 
       # always(), NOT !cancelled(). A job killed by timeout-minutes counts as
       # cancelled, so the previous guard skipped the upload on precisely the run

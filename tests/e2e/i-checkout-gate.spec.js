@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, gotoReady } from './helpers/isolated-page.js';
 
 /**
  * The checkout email gate shipped in commit 332fdfd.
@@ -35,7 +35,7 @@ const PAGE = '/early-access';
  * produced exactly that false failure on 4 of 6 device projects.
  */
 async function gotoHydrated(page) {
-  await page.goto(PAGE, { waitUntil: 'networkidle' });
+  await gotoReady(page, PAGE);
   const input = page.locator('#ea-email');
   const buy = page.locator('button.ea-buy-btn');
   await expect(input).toBeVisible();
@@ -87,61 +87,46 @@ test.describe('early-access checkout email gate', () => {
       route.abort();
     });
 
-    await page.locator('button.ea-bottom-btn').click();
+    const bottom = page.locator('button.ea-bottom-btn');
+    await expect(bottom).toBeDisabled();
+    await bottom.scrollIntoViewIfNeeded();
+    const box = await bottom.boundingBox();
+    expect(box).not.toBeNull();
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
     await page.waitForTimeout(400);
 
     expect(calls, 'no session may be created without an address').toHaveLength(0);
   });
 
-  /**
-   * The regression this file was written to catch.
-   *
-   * `.ea-bottom-btn` calls the same checkout() handler as the primary button but
-   * its disabled binding is `checkoutLoading` alone, with no `!emailOk`. The
-   * handler does guard internally, so this is not a security hole and no session
-   * is created. The cost is conversion: the button looks live, clicking it emits
-   * an error paragraph that renders ~180 lines up the page next to the OTHER
-   * button, and a customer at the bottom of a long sales page sees nothing happen.
-   *
-   * Assert the honest current state so the fix flips this test rather than
-   * silently changing behaviour nobody is watching.
-   */
-  test('the bottom buy button is not gated on a valid email', async ({ page }) => {
-    // Documented current behaviour. `.ea-bottom-btn` binds disabled to
-    // `checkoutLoading` alone, with no `!emailOk`, unlike the primary button.
-    // checkout() guards internally so no session is created, which is why this
-    // is a conversion defect and not a security hole.
+  test('the bottom buy button uses the same valid-email gate as the primary button', async ({ page }) => {
+    const input = page.locator('#ea-email');
     const bottom = page.locator('button.ea-bottom-btn');
-    await bottom.scrollIntoViewIfNeeded();
+    await expect(bottom).toBeDisabled();
+    await input.fill('not-an-email');
+    await expect(bottom).toBeDisabled();
+    await input.fill('reader@example.invalid');
     await expect(bottom).toBeEnabled();
-
-    await bottom.click();
-    await expect(page.locator('p.ea-checkout-error'))
-      .toHaveText(/Enter a valid email address first\./);
+    await input.fill('');
+    await expect(bottom).toBeDisabled();
   });
 
-  /**
-   * KNOWN DEFECT, expected to fail until the page is fixed.
-   *
-   * Clicking the bottom buy button with no address emits its error into the
-   * paragraph that sits beside the OTHER button, near the top of an 814-line
-   * sales page. Measured on Desktop Chrome at a 720px viewport: the error
-   * renders 4052px away from the button that produced it, which is 5.6 screens.
-   * The customer clicks buy, sees absolutely nothing happen, and leaves.
-   *
-   * test.fail() keeps the suite honest: it stays green while the bug exists and
-   * turns red the moment someone fixes it, at which point delete this wrapper.
-   * The fix is either to gate `.ea-bottom-btn` on `emailOk` the way the primary
-   * button already is, or to render a second error slot next to it.
-   */
-  test.fail('bottom-button error renders where the customer can see it', async ({ page }) => {
+  // The old expected-failure asserted an invalid-email error several screens
+  // away. Both buttons now reject invalid email before submission, and a real
+  // checkout failure must be visible beside whichever button was used.
+  test('bottom-button checkout errors render where the customer can see them', async ({ page }) => {
+    await page.route('**/api/stripe-checkout', route => route.fulfill({
+      status: 503,
+      contentType: 'application/json',
+      body: JSON.stringify({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }),
+    }));
+    await page.locator('#ea-email').fill('reader@example.invalid');
     const bottom = page.locator('button.ea-bottom-btn');
     await bottom.scrollIntoViewIfNeeded();
     await bottom.click();
 
-    const err = page.locator('p.ea-checkout-error');
-    await expect(err).toHaveText(/Enter a valid email address first\./);
-
+    const err = page.locator('p.ea-checkout-error.ea-bottom-error');
+    await expect(err).toContainText('temporarily unavailable');
+    await expect(bottom).toBeEnabled();
     const errBox = await err.boundingBox();
     const btnBox = await bottom.boundingBox();
     expect(errBox, 'error paragraph must have a layout box').not.toBeNull();
@@ -149,11 +134,7 @@ test.describe('early-access checkout email gate', () => {
 
     const gapPx = Math.abs(btnBox.y - errBox.y);
     const viewportH = page.viewportSize()?.height ?? 720;
-
-    expect(
-      gapPx,
-      `error is ${Math.round(gapPx)}px from the button in a ${viewportH}px viewport`
-    ).toBeLessThan(viewportH);
+    expect(gapPx, `error must be near its button in a ${viewportH}px viewport`).toBeLessThan(viewportH);
   });
 
   test('a valid address in the field enables the primary path end to end', async ({ page }) => {
@@ -190,7 +171,7 @@ test.describe('early-access checkout email gate', () => {
     await page.locator('#ea-email').fill('ctavolazzi+pwowned@gmail.com');
     await page.locator('button.ea-buy-btn').click();
 
-    await expect(page.locator('p.ea-owned-note')).toContainText('You already have this one');
+    await expect(page.locator('p.ea-owned-note:not(.ea-bottom-error)')).toContainText('You already have this one');
     // It must NOT be presented in the error slot.
     await expect(page.locator('p.ea-checkout-error')).toHaveCount(0);
   });
@@ -207,7 +188,7 @@ test.describe('early-access checkout email gate', () => {
     await page.locator('#ea-email').fill('ctavolazzi+pwcool@gmail.com');
     await page.locator('button.ea-buy-btn').click();
 
-    const note = page.locator('p.ea-owned-note');
+    const note = page.locator('p.ea-owned-note:not(.ea-bottom-error)');
     await expect(note).toContainText('very recently');
     await expect(note).not.toContainText('We have re-sent');
   });
@@ -224,7 +205,7 @@ test.describe('early-access checkout email gate', () => {
     await page.locator('#ea-email').fill('ctavolazzi+pw503@gmail.com');
     await page.locator('button.ea-buy-btn').click();
 
-    await expect(page.locator('p.ea-checkout-error')).toContainText('temporarily unavailable');
+    await expect(page.locator('p.ea-checkout-error:not(.ea-bottom-error)')).toContainText('temporarily unavailable');
     // The button must come back so the customer can retry.
     await expect(page.locator('button.ea-buy-btn')).toBeEnabled();
   });

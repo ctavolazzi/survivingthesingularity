@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 13 Oct 2026 19:49:03 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 15 Oct 2026 17:42:04 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -15,11 +15,25 @@
       <description>Recent advances in large language models have made automatic game generation increasingly feasible, yet reliably improving generated games beyond a playable version remains challenging. Naive iterative refinement can easily overfit a small set of test cases, producing fragile games with unresolved b... [Score: 12.5 | Flagged for: agi, recursive self-improvement, agent, agentic, autonomous] Authors: Wenyi Wu, Minghao Fu, et al.</description>
     </item>
     <item>
+      <title>Scaling Multi-Agent Intelligence with Substrate-Centric Coordination</title>
+      <link>https://arxiv.org/abs/2610.16120</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.16120</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Existing large language model (LLM) based multi-agent systems have been shown to scale poorly, and we identify three problems: reading burden that grows with the group, useful information diluted by shared work of unknown quality, and fragility to failed agents. We argue that the problems are largel... [Score: 11.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Zhenting Qi, Zhuokai Zhao, et al.</description>
+    </item>
+    <item>
       <title>AGRO-SUVIDE: Agentic Robotics for Surgical Viscoelastic Debridement</title>
       <link>https://arxiv.org/abs/2609.34823</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2609.34823</guid>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
       <description>Augmented dexterity has the potential to reduce the fatigue experienced by surgeons during repetitive surgical tasks. In this paper, we propose the first AGentic RObotics framework for SUrgical VIscoelastic DEbridement (AGRO-SUVIDE), the repeated removal of small fragments attached to a viscoelastic... [Score: 11.0 | Flagged for: agi, self-improving, agent, agentic, robot] Authors: Shutong Jin, Ziyang Chen, et al.</description>
+    </item>
+    <item>
+      <title>PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition</title>
+      <link>https://arxiv.org/abs/2610.20560</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.20560</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion p... [Score: 10.5 | Flagged for: foundation model, agent, agentic, alignment, robot] Authors: Weichen Lyu, Chong Xia, et al.</description>
     </item>
     <item>
       <title>DataSense-Bench: The First Step Toward an AI Scientist</title>
@@ -120,6 +134,27 @@
       <description>Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machin... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, llm, language model] Authors: Kirill Brilliantov, Alejandro Hernández-Cano, et al.</description>
     </item>
     <item>
+      <title>From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)</title>
+      <link>https://arxiv.org/abs/2610.20437</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.20437</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Mid-2026 reporting on autonomous AI evaluation incidents claimed that frontier large language model (LLM) agents escaped server containment through emergent coordination and cloud infrastructure attacks. This paper contextualizes those claims through forensic analysis and containerized recreation of... [Score: 8.5 | Flagged for: agent, autonomous, rlhf, llm, language model] Authors: Alicia Colmenero-Fernández</description>
+    </item>
+    <item>
+      <title>Drivers of LLM Consensus Formation Under Competing Incentives: A Simulation Study</title>
+      <link>https://arxiv.org/abs/2610.20200</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.20200</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large Language Models (LLMs) are increasingly deployed in multi-agent environments that produce unanimous agreement, both in intended interactions that need coordination and in unintended emergent interactions. Consequently, understanding how LLMs with competing incentives reach consensus is crucial... [Score: 8.5 | Flagged for: agent, multi-agent, interpret, llm, language model] Authors: Isabel Jones, Matthew Edwards, et al.</description>
+    </item>
+    <item>
+      <title>Towards Agentic Robots: Model, Data, Environment, and Harness</title>
+      <link>https://arxiv.org/abs/2610.20442</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.20442</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents r... [Score: 8.5 | Flagged for: foundation model, agent, agentic, autonomous, planning] Authors: Chonghan Qin, Dongming Wu, et al.</description>
+    </item>
+    <item>
       <title>Mental-Models for Multi-Agent Systems</title>
       <link>https://arxiv.org/abs/2610.12453</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.12453</guid>
@@ -181,41 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.16986</guid>
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
       <description>LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning ... [Score: 8.5 | Flagged for: agent, multi-agent, reasoning, alignment, llm] Authors: Muhammad Ashar Ishfaq, Glaucia Melo</description>
-    </item>
-    <item>
-      <title>Cheap Talk Stabilizes Strategic Interaction in LLM Agents</title>
-      <link>https://arxiv.org/abs/2609.16270</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.16270</guid>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Large language models are increasingly deployed as interacting agents, making the persistence of their action policies across repeated interaction critical for reliable multi-agent operation. We investigate whether and how agent-generated, non-binding pre-play communication ("cheap talk") increases ... [Score: 8.5 | Flagged for: agent, multi-agent, alignment, llm, language model] Authors: Nunzio Lorè, Hongan Zhu, et al.</description>
-    </item>
-    <item>
-      <title>EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies</title>
-      <link>https://arxiv.org/abs/2610.13376</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.13376</guid>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Artificial intelligence is beginning to automate scientific discovery, yet physical robot-policy research still relies on scientists and engineers to interpret experimental failures and decide how controllers should be revised. We present EndoRSI (Endoscopic Recursive Self-Improvement), a human-gove... [Score: 8.0 | Flagged for: recursive self-improvement, self-improving, agent, interpret, robot] Authors: Chi Kit Ng, Yidong Zhang, et al.</description>
-    </item>
-    <item>
-      <title>WOVEN: Weaving Visual World Modeling into Multimodal LLMs</title>
-      <link>https://arxiv.org/abs/2610.12417</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.12417</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Multimodal large language models (MLLMs) struggle with spatial, embodied, physical, and temporal reasoning. We hypothesize that these failures reflect a shared deficit in visual transition reasoning, and test whether this capability can serve as a shared training primitive, one that different models... [Score: 8.0 | Flagged for: world model, reasoning, embodied, llm, language model] Authors: Zheyu Fan, Yue Zhang, et al.</description>
-    </item>
-    <item>
-      <title>Recursive Video In-Context Learning for Agentic Robot</title>
-      <link>https://arxiv.org/abs/2610.06843</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.06843</guid>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
-      <description>LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyfram... [Score: 8.0 | Flagged for: agent, agentic, planning, robot, llm] Authors: Wenrui Bao, Xinxin Liu, et al.</description>
-    </item>
-    <item>
-      <title>Can Agent Harnesses and Inference Engines Hear Each Other? The HEAR Protocol for Agentic LLM Serving</title>
-      <link>https://arxiv.org/abs/2610.06597</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.06597</guid>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
-      <description>LLM agents increasingly execute complex workflows involving multi-turn reasoning, tool use, and parallel agents. Efficient serving requires decisions that span two layers with complementary information: the agent harness understands workflow dependencies, context lifecycles, and execution objectives... [Score: 8.0 | Flagged for: agent, agentic, tool use, reasoning, llm] Authors: Jiaqi Zhao, Haodong Chen, et al.</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T19:49:03Z",
+  "generated_at": "2026-10-15T17:42:04Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -31,6 +31,33 @@
       ]
     },
     {
+      "id": "2610.16120",
+      "source": "arxiv",
+      "title": "Scaling Multi-Agent Intelligence with Substrate-Centric Coordination",
+      "url": "https://arxiv.org/abs/2610.16120",
+      "authors": [
+        "Zhenting Qi",
+        "Zhuokai Zhao",
+        "Rulin Shao",
+        "Kerem Oktar"
+      ],
+      "summary": "Existing large language model (LLM) based multi-agent systems have been shown to scale poorly, and we identify three problems: reading burden that grows with the group, useful information diluted by shared work of unknown quality, and fragility to failed agents. We argue that the problems are largely due to agent-centric designs: the coordination structure is wired into fixed workflows, central coordinators, or peer-to-peer messaging, and recent blackboard-style methods that move the coordination into a shared medium relieve only the last problem. To close the gaps, we build ScaleMAS, where as",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-12",
+      "score": 11.0,
+      "raw_score": 22,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "scaling",
+        "rag"
+      ]
+    },
+    {
       "id": "2609.34823",
       "source": "arxiv",
       "title": "AGRO-SUVIDE: Agentic Robotics for Surgical Viscoelastic Debridement",
@@ -54,6 +81,33 @@
         "agentic",
         "robot",
         "robotics",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.20560",
+      "source": "arxiv",
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "url": "https://arxiv.org/abs/2610.20560",
+      "authors": [
+        "Weichen Lyu",
+        "Chong Xia",
+        "Mingyu Dong",
+        "Long Xu"
+      ],
+      "summary": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive constru",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-14",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "alignment",
+        "robot",
+        "language model",
         "rag"
       ]
     },
@@ -418,6 +472,80 @@
       ]
     },
     {
+      "id": "2610.20437",
+      "source": "arxiv",
+      "title": "From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)",
+      "url": "https://arxiv.org/abs/2610.20437",
+      "authors": [
+        "Alicia Colmenero-Fernández"
+      ],
+      "summary": "Mid-2026 reporting on autonomous AI evaluation incidents claimed that frontier large language model (LLM) agents escaped server containment through emergent coordination and cloud infrastructure attacks. This paper contextualizes those claims through forensic analysis and containerized recreation of both the Highly Persistent Internal Model (HPIM) training-case conditions and the Phase One privilege escalation targeting internal package repositories during OpenAI's ExploitGym evaluations. We recreate the configuration of the OpenAI-provided training example and reproduce the cryptographic veri",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-14",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "rlhf",
+        "llm",
+        "language model",
+        "emergent"
+      ]
+    },
+    {
+      "id": "2610.20200",
+      "source": "arxiv",
+      "title": "Drivers of LLM Consensus Formation Under Competing Incentives: A Simulation Study",
+      "url": "https://arxiv.org/abs/2610.20200",
+      "authors": [
+        "Isabel Jones",
+        "Matthew Edwards",
+        "Janina A. Hoffmann"
+      ],
+      "summary": "Large Language Models (LLMs) are increasingly deployed in multi-agent environments that produce unanimous agreement, both in intended interactions that need coordination and in unintended emergent interactions. Consequently, understanding how LLMs with competing incentives reach consensus is crucial to better interpret and design LLM collectives. We introduce an evaluation, based on the Network Consensus game, to assess the mechanisms driving this process. Here, a network of agents must agree on one of two colours to receive a payoff, but agents are offered different payoffs for the agreed col",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-14",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "interpret",
+        "llm",
+        "language model",
+        "emergent"
+      ]
+    },
+    {
+      "id": "2610.20442",
+      "source": "arxiv",
+      "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+      "url": "https://arxiv.org/abs/2610.20442",
+      "authors": [
+        "Chonghan Qin",
+        "Dongming Wu",
+        "Kaituo Feng",
+        "Jiaxu Wang"
+      ],
+      "summary": "Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-14",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "autonomous",
+        "planning",
+        "robot"
+      ]
+    },
+    {
       "id": "2610.12453",
       "source": "arxiv",
       "title": "Mental-Models for Multi-Agent Systems",
@@ -642,25 +770,51 @@
       ]
     },
     {
-      "id": "2609.16270",
+      "id": "2610.17869",
       "source": "arxiv",
-      "title": "Cheap Talk Stabilizes Strategic Interaction in LLM Agents",
-      "url": "https://arxiv.org/abs/2609.16270",
+      "title": "ECMR: Evidence-Aware Deliberation Control for Multi-Agent LLM Reasoning",
+      "url": "https://arxiv.org/abs/2610.17869",
       "authors": [
-        "Nunzio Lorè",
-        "Hongan Zhu",
-        "Babak Heydari"
+        "Yuan Liu",
+        "Haoyue Peng",
+        "Fanliang Hu",
+        "Lei Huang"
       ],
-      "summary": "Large language models are increasingly deployed as interacting agents, making the persistence of their action policies across repeated interaction critical for reliable multi-agent operation. We investigate whether and how agent-generated, non-binding pre-play communication (\"cheap talk\") increases such persistence in four open-weight 7-9B-parameter LLMs. Our experiments span four repeated two-player games -- Prisoner's Dilemma, Snowdrift, Stag Hunt, and Harmony -- with incentive structures ranging from strategic conflict to alignment, each presented in six contexts. We observe unstable trajec",
+      "summary": "Multi-agent Large Language Model (LLM) systems typically commit to a deliberation protocol before inference. A fixed protocol cannot allocate computation differently to resolved and unresolved instances, and it may mistake repeated support for independent confirmation. We study this failure as semantic false consensus: a confident group answer supported by narrow, duplicated, or correlated rationales. We introduce ECMR, an evidence-aware controller over frozen role-conditioned LLMs. At each step, ECMR summarizes answer concentration, support diversity and independence, contradictions, role beh",
       "category": "cs.MA",
       "tag": "Agents",
-      "published_at": "2026-09-14",
-      "score": 8.5,
-      "raw_score": 17,
+      "published_at": "2026-10-13",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
         "agent",
         "multi-agent",
-        "alignment",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.17751",
+      "source": "arxiv",
+      "title": "Degrees of Freedom in Multi-Agent Coordination: Between Centralized and Decentralized Regimes",
+      "url": "https://arxiv.org/abs/2610.17751",
+      "authors": [
+        "Yiqing Peng",
+        "Hehai Lin",
+        "Zixuan Wang",
+        "Dongyi Zhang"
+      ],
+      "summary": "Large language model (LLM)-based multi-agent systems (MAS) are commonly organized around two coordination regimes. Centralized coordination provides explicit control but can create a bottleneck at a single coordination locus, whereas decentralized coordination offers local autonomy but must achieve effective collaboration through distributed decisions and experience. These trade-offs motivate a systematic study of the space between the two regimes. We introduce Degrees of Freedom (DoF), a continuous configuration framework that quantifies the size of the decision space delegated to downstream ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-13",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomy",
         "llm",
         "language model"
       ]
@@ -1037,6 +1191,130 @@
       ]
     },
     {
+      "id": "2610.20245",
+      "source": "arxiv",
+      "title": "P2Patch: Exploit-Guided Vulnerability Repair",
+      "url": "https://arxiv.org/abs/2610.20245",
+      "authors": [
+        "Mohsen Iranmanesh",
+        "Sina Moradi Sabet",
+        "Sina Marefat",
+        "Ali Javidi Ghasr"
+      ],
+      "summary": "Large language models are increasingly deployed as autonomous agents for automated program repair, patching software vulnerabilities through multi-step reasoning and tool use. Yet these systems typically validate a patch against the same evidence used to construct it -- a static alert, sanitizer trace, published exploit, or test suite. A patch that blocks that one piece of evidence can therefore look successful while remaining vulnerable to the same vulnerability with some variation. We present P2Patch, a generative adversarial repair system that treats each patch as a new attack target. Start",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-14",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "tool use",
+        "reasoning",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.20474",
+      "source": "arxiv",
+      "title": "AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.20474",
+      "authors": [
+        "Peidong Wang",
+        "Ying Chang",
+        "Zhiming Ma",
+        "Xiaocui Yang"
+      ],
+      "summary": "Pretrained vision-language-action models (VLAs) often fail midway through unseen long-horizon tasks. Recursive self-improvement (RSI) offers a remedy, but embodied RSI methods either refine the harness around a frozen executor and so cannot add a missing motion, or train the executor on persistent failures without asking whether a failure lies in how the executor is called or in what it can do. We ask when a self-improving embodied system should change the weights of its executor, and propose AdaRSI, an on-demand RSI framework for embodied agents. A coding agent first improves its skills and h",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-14",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "self-improving",
+        "agent",
+        "embodied"
+      ]
+    },
+    {
+      "id": "2610.19863",
+      "source": "arxiv",
+      "title": "When Extremists Enter LLM Societies: Investigating Extreme Behavior in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.19863",
+      "authors": [
+        "Guo Chen",
+        "Huaijin Xie",
+        "Ziwen Li",
+        "Reed Li"
+      ],
+      "summary": "Large language model (LLM) agents increasingly serve as computational actors in multi-agent social simulations. While existing work emphasizes representative personas and average-case behavior, social science shows that persistent tail actors can disproportionately shape collective dynamics. We study this regularity in controlled LLM-based multi-agent systems (LLM-MAS). In these systems, such actors cannot be reduced to fixed scalar states: prompts, natural-language histories, and backbone generation mediate their behavior and influence. We first analyzed three properties of extremists in soci",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-14",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.19581",
+      "source": "arxiv",
+      "title": "XferAgent: Cross-Agent Experience Transfer for Self-Improving LLM Agents",
+      "url": "https://arxiv.org/abs/2610.19581",
+      "authors": [
+        "Weihao Li",
+        "Jun Bai",
+        "Shijie Chen",
+        "Qincheng Lu"
+      ],
+      "summary": "Large language model (LLM) agents can reuse experience from prior task executions to improve performance on subsequent tasks. Although existing methods enable cross-agent experience sharing, differences in agents' execution histories and task requirements make shared experiences difficult to reuse effectively. We propose XferAgent, a framework for cross-agent experience transfer that organizes reusable experience in local and shared experience graphs. XferAgent reconciles compatible contributions from heterogeneous agents while avoiding unreliable merges. For each new task, it selects shared e",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-14",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "self-improving",
+        "agent",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.17613",
+      "source": "arxiv",
+      "title": "MAS-Gate: Unlocking Multi-Agent System Lifecycle via Node-Centric Quantification",
+      "url": "https://arxiv.org/abs/2610.17613",
+      "authors": [
+        "Hehai Lin",
+        "Zixuan Wang",
+        "Ming Yan",
+        "Peidong Wang"
+      ],
+      "summary": "Large language model (LLM)-based multi-agent systems (MAS) can solve complex problems beyond the reach of a single agent by decomposing tasks and coordinating complementary capabilities. Despite extensive research on MAS, existing work largely focuses on specific aspects or individual phases of their development and operation, resulting in fragmented perspectives with objectives and signals that are difficult to reconcile across these different settings. To bridge these disconnected perspectives, we conceptualize MAS development and operation as a three-phase lifecycle spanning design-time orc",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-13",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2610.13534",
       "source": "arxiv",
       "title": "MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures",
@@ -1230,272 +1508,6 @@
         "llm",
         "language model",
         "automation"
-      ]
-    },
-    {
-      "id": "2610.05964",
-      "source": "arxiv",
-      "title": "From Social Reasoning to Embodied Interaction: An Agentic Framework for Social Robots",
-      "url": "https://arxiv.org/abs/2610.05964",
-      "authors": [
-        "Ziyu Cheng",
-        "Yuewen Guo",
-        "Zhirui Liu",
-        "Dong Zhang"
-      ],
-      "summary": "Natural face-to-face human--robot interaction requires a robot to understand an evolving social situation, decide when to engage, and express its intent through coordinated physical behavior. Yet existing approaches rarely close this loop: foundation-model agents provide increasingly capable multimodal reasoning and memory but remain largely disembodied, while expressive virtual agents do not face the physical constraints of real robots, and physical social robots typically address social reasoning and embodied expression only partially. We present ARISE, a unified framework that bridges Agent",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-05",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "embodied",
-        "robot"
-      ]
-    },
-    {
-      "id": "2610.03394",
-      "source": "arxiv",
-      "title": "EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures",
-      "url": "https://arxiv.org/abs/2610.03394",
-      "authors": [
-        "Yuhai Long",
-        "Yuanxin Wei",
-        "Kai Wu",
-        "Jinhui Wei"
-      ],
-      "summary": "Emerging multi-agent LLMs demand privacy-preserving edge deployment, yet current inference systems struggle with these collaborative workflows. Specifically, the memory-bound decode phase causes severe bus contention on unified memory architectures (UMA), paralyzing naive CPU-GPU co-execution. Furthermore, speculative decoding in multi-agent workloads faces extreme variance in drafting difficulty, alternating between complex reasoning and predictable structured generation. Compounded by frequent tool-induced stalls, this highly fragmented execution severely underutilizes hardware and defeats t",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-02",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.02038",
-      "source": "arxiv",
-      "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
-      "url": "https://arxiv.org/abs/2610.02038",
-      "authors": [
-        "Yimeng Liu",
-        "Mi Zhang",
-        "Younsuk Dong",
-        "Zhichao Cao"
-      ],
-      "summary": "Large language model (LLM) agents increasingly combine reasoning, tool use, and action, but most evidence comes from episodic tasks with relatively immediate feedback and reset failures. Long-running physical control operates in a different regime: actions alter future states, errors compound across decisions, and an agent must improve from experience without being allowed to rewrite the physical rules that make execution safe. We study this regime through irrigation, where daily decisions interact with soil-water dynamics over entire growing seasons. We present Mimir, a physics-grounded LLM a",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-01",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "tool use",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.00889",
-      "source": "arxiv",
-      "title": "HakiCC: LLM-Driven Multi-Agent Design and Optimization of Concurrency Control Protocols",
-      "url": "https://arxiv.org/abs/2610.00889",
-      "authors": [
-        "Farzad Habibi",
-        "Juncheng Fang",
-        "Faisal Nawab"
-      ],
-      "summary": "Large language models (LLMs) have recently been applied in systems research as a tool to reduce human-intensive engineering effort through cost-efficient automation. Decades of research have produced a rich landscape of concurrency control (CC) protocols, each encoding distinct trade-offs in correctness, throughput, and abort behavior. However, most applications in practice default to 2PL or OCC, because selecting and adapting a protocol to a specific application requires expert knowledge that is rarely available to application designers. This is a wasted opportunity, as an application-specifi",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-01",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "automation"
-      ]
-    },
-    {
-      "id": "2609.40103",
-      "source": "arxiv",
-      "title": "JuryFlow: Disagreement-Guided Human-in-the-Loop Multi-Agent Evaluation",
-      "url": "https://arxiv.org/abs/2609.40103",
-      "authors": [
-        "Mufeng Yang",
-        "Junwei Yu",
-        "Yepeng Ding"
-      ],
-      "summary": "Large language models (LLMs) are increasingly deployed as automated judges for AI-generated content, yet a single judge is unreliable and even a panel of judges leaves a hard residue: when judges disagree, majority voting discards the conflict instead of resolving it. We present JuryFlow, a disagreement-guided, human-in-the-loop multi-agent evaluation framework that treats inter-judge disagreement not as noise to be averaged away, but as a precise, claim-level signal indicating where an evaluation is uncertain. JuryFlow decomposes each candidate response into atomic claims, has a panel of hete",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-30",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.39302",
-      "source": "arxiv",
-      "title": "SQD-Agent: LLM-driven agentic framework for Quantum Chemistry workflows",
-      "url": "https://arxiv.org/abs/2609.39302",
-      "authors": [
-        "Kislaya Tiwari",
-        "Anupama Ray"
-      ],
-      "summary": "Quantum algorithms and quantum hardware are advancing towards a promising paradigm for scientific applications. However, translating domain-specific problems into executable hybrid quantum-classical workflows remains a significant barrier for application researchers due to the required expertise in quantum algorithms, nuances in quantum programming, and hardware-aware system integration. At the same time, AI and primarily LLM based agents are increasingly capable of interpreting natural-language intent, reasoning over complex workflows, and translating high-level objectives into executable cod",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-30",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "interpret",
-        "llm"
-      ]
-    },
-    {
-      "id": "2609.39685",
-      "source": "arxiv",
-      "title": "RoboCoach: World Models as Active Coaches for Compositional Robot Skills",
-      "url": "https://arxiv.org/abs/2609.39685",
-      "authors": [
-        "Jiajun Liu",
-        "Yifan Chen",
-        "Yichao Liu",
-        "Jiayi Zhang"
-      ],
-      "summary": "Long-horizon robot manipulation reuses skills across many task compositions, but improving these compositions with additional end-to-end demonstrations is costly. A practical self-improving system must decide both what to teach next and where to apply that supervision. We present ROBOCOACH, a world-model-guided coaching framework that uses imagined failures to guide demonstration requests and expert updates. Its Route-Imagine-Diagnose-Improve (RIDI) loop executes reusable skill experts inside COACHWORLD, our shared action-conditioned world model, and uses a progress judge to record the first s",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-30",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "self-improving",
-        "world model",
-        "robot"
-      ]
-    },
-    {
-      "id": "2609.38178",
-      "source": "arxiv",
-      "title": "Skill-Space Shooting for Autonomous Robot Policy Improvement",
-      "url": "https://arxiv.org/abs/2609.38178",
-      "authors": [
-        "Zihang Rui",
-        "Renhao Wang",
-        "Haoxu Huang",
-        "Yang Gao"
-      ],
-      "summary": "Robots deployed in the physical world must be able to improve beyond their initial training as they encounter new situations and failures. For this improvement to scale across tasks, it must make effective use of experience without requiring human demonstration of each correction. Recent agentic systems offer a way to reduce this reliance on human effort by using foundation models to autonomously compose learned behaviors to complete tasks. Yet completing tasks this way does not itself teach a task policy to overcome its own failures; that requires turning these behaviors into learnable correc",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-29",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "autonomous",
-        "robot"
-      ]
-    },
-    {
-      "id": "2609.38662",
-      "source": "arxiv",
-      "title": "CollabFlow: Recursive Self-Improvement of Agent Collaboration",
-      "url": "https://arxiv.org/abs/2609.38662",
-      "authors": [
-        "Xiao Huang",
-        "Mingda Zhang",
-        "Junming Zhang",
-        "Qiang Huang"
-      ],
-      "summary": "Recursive self-improvement (RSI) lets a system improve from its own outcomes; in LLM-based multi-agent systems, Agents refine one another within a task, and outcomes improve how they collaborate across tasks. However, existing multi-agent collaboration leaves this loop open: collaboration is pre-defined at the operator level, topology-only learning keeps verbatim exchange that propagates errors, and reward maximization on a system's own outcomes concentrates on a few teams. To address these challenges, we propose CollabFlow, an RSI system of Learned Agent Collaboration: a trainable Collab-Dire",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-29",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "agent",
-        "multi-agent",
-        "llm"
-      ]
-    },
-    {
-      "id": "2609.34969",
-      "source": "arxiv",
-      "title": "NavJev: Efficient Vision-Language Navigation via Action-Centric Visual Compression and Discriminative Action-Semantic Memory",
-      "url": "https://arxiv.org/abs/2609.34969",
-      "authors": [
-        "Kai Sheng",
-        "Liuyi Wang",
-        "Jinlong Li",
-        "Haojie Dai"
-      ],
-      "summary": "Recent zero-shot Vision-and-Language Navigation (VLN) methods increasingly rely on multimodal large language models (MLLMs) to reason over visual observations, navigation instructions, and candidate actions. Although effective, repeatedly invoking autoregressive multimodal reasoning at every navigation step introduces substantial inference latency, limiting the responsiveness of embodied agents. We propose NavJev, an efficient VLN framework that reformulates online navigation from repeated multimodal generation into compact visual compression followed by lightweight typed action selection. Spe",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-28",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "embodied",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.13703",
-      "source": "arxiv",
-      "title": "A Baseline Assessment for the Agentic Web Technology Stack",
-      "url": "https://arxiv.org/abs/2610.13703",
-      "authors": [
-        "Vagner Figueredo de Santana",
-        "Diogo Cortiz"
-      ],
-      "summary": "The fast pace in which protocols, frameworks, and technologies are being proposed for LLM-based agents results in a complex scenario for anyone aiming to create state-of-the-art AI solutions. Without an assessment on how different protocols, frameworks, and libraries work together to compose an Agentic Web solution, developers and organizations face different challenges (e.g., skilling, governance, infrastructure) even before becoming part of the Agentic Web ecosystem. In this context, we propose a system for performing Agentic Web evaluations called MASTIF (Multi-Agent System TestIng Framewor",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-09",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "llm"
       ]
     }
   ]

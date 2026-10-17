@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T17:42:04Z",
+  "generated_at": "2026-10-17T16:16:01Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -82,6 +82,32 @@
         "robot",
         "robotics",
         "rag"
+      ]
+    },
+    {
+      "id": "2610.22344",
+      "source": "arxiv",
+      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "url": "https://arxiv.org/abs/2610.22344",
+      "authors": [
+        "Shangheng Du",
+        "Jinxin Shi",
+        "Shuaiyu Zhang",
+        "Yiming Wu"
+      ],
+      "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward this pursuit through complex orchestration that manages long-horizon experimentation, while recent MLE systems adopt model-directed interaction, allowing models to autonomously organize experiments and adapt optimization strategies based on execution feedback. However, feedback f",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-15",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "agentic",
+        "autonomous",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -243,6 +269,31 @@
       ]
     },
     {
+      "id": "2610.21055",
+      "source": "arxiv",
+      "title": "Athanor: An Agent-Native System for Autonomous Post-Training Research",
+      "url": "https://arxiv.org/abs/2610.21055",
+      "authors": [
+        "Yufa Zhou",
+        "Yichen Wang",
+        "Jiakun Fan",
+        "Ziqi Shu"
+      ],
+      "summary": "Recursive self-improvement, in which AI systems build stronger AI systems, is one promising route to superintelligence. We study a weaker form that can be measured today: frontier agents post-training a small raw base model with public data, as a test of their research potential. We build Athanor, an open agent-native system for autonomous post-training research (AutoPostTrain) on real GPUs. We give the agents full research autonomy, low-friction engineering tools, and efficient starter code. The agents carry out the research themselves: they read datasets and evaluation results, build their t",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-15",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "superintelligence",
+        "recursive self-improvement",
+        "agent",
+        "autonomous",
+        "autonomy"
+      ]
+    },
+    {
       "id": "2610.12126",
       "source": "arxiv",
       "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
@@ -343,6 +394,32 @@
         "llm",
         "scaling",
         "rag"
+      ]
+    },
+    {
+      "id": "2610.22273",
+      "source": "arxiv",
+      "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries",
+      "url": "https://arxiv.org/abs/2610.22273",
+      "authors": [
+        "Anikait Singh",
+        "Teresa Zhang",
+        "Yoonho Lee",
+        "Roshen Sanjay Nair"
+      ],
+      "summary": "Reasoning over long document contexts remains a challenge for large language models (LLMs). Standard retrieval methods are inherently reactive, bottlenecking agents with complex, cross-document reasoning at inference time, while precomputed structures like knowledge graphs often fall short because they rely on rigid heuristics. Instead, can we allow agents to perform anticipatory directed curation: learning to proactively reorganize unstructured corpora prior to inference to efficiently serve diverse future queries. We build on a key asymmetry in modern agentic harnesses (e.g., Claude Code): w",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-15",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval"
       ]
     },
     {
@@ -480,8 +557,8 @@
         "Alicia Colmenero-Fernández"
       ],
       "summary": "Mid-2026 reporting on autonomous AI evaluation incidents claimed that frontier large language model (LLM) agents escaped server containment through emergent coordination and cloud infrastructure attacks. This paper contextualizes those claims through forensic analysis and containerized recreation of both the Highly Persistent Internal Model (HPIM) training-case conditions and the Phase One privilege escalation targeting internal package repositories during OpenAI's ExploitGym evaluations. We recreate the configuration of the OpenAI-provided training example and reproduce the cryptographic veri",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-10-14",
       "score": 8.5,
       "raw_score": 17,
@@ -747,26 +824,53 @@
       ]
     },
     {
-      "id": "2609.16986",
+      "id": "2610.22316",
       "source": "arxiv",
-      "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
-      "url": "https://arxiv.org/abs/2609.16986",
+      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.22316",
       "authors": [
-        "Muhammad Ashar Ishfaq",
-        "Glaucia Melo"
+        "Leyang Shen",
+        "Yaxin Gong",
+        "Yang Zhang",
+        "Chenxiao Fan"
       ],
-      "summary": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92. We then used the",
+      "summary": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are prone to deviating from the overall goal as execution unfolds, which wastes execution resources and leads to undesired outcomes, a failure termed goal drift. In this work, we propose a steering agent that supervises execution on the fly and steers the system back on track when drift occurs. The steering agent observes the execution context, deciding when to intervene with a low-cost fast path and how to interve",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-15",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "tool use",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.21290",
+      "source": "arxiv",
+      "title": "Bias Control and Injection for Multi-Agent Aggregation",
+      "url": "https://arxiv.org/abs/2610.21290",
+      "authors": [
+        "Sungjae Lee",
+        "Soheil Abbasloo",
+        "Jabin Koo",
+        "Jungseul Ok"
+      ],
+      "summary": "Multi-agent reasoning with large language models (LLMs) raises a central question for collective decision-making: when agents disagree, whose decision should be trusted? Resolving such disagreements is difficult because agents' decisions are susceptible to non-semantic biases such as majority pressure and response-style preferences, which can obscure the quality of the underlying reasoning. Our analysis shows how bias can be both mitigated and exploited: bias control improves initial answer selection, while bias injection elicits decision instability that serves as a reliability signal. Buildi",
       "category": "cs.MA",
       "tag": "Agents",
-      "published_at": "2026-09-15",
-      "score": 8.5,
-      "raw_score": 17,
+      "published_at": "2026-10-15",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
         "agent",
         "multi-agent",
         "reasoning",
-        "alignment",
-        "llm"
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1191,6 +1295,54 @@
       ]
     },
     {
+      "id": "2610.21938",
+      "source": "arxiv",
+      "title": "Agentic-Priors: Using Large Language Models to Address the Cold Start Problem in Preference Elicitation",
+      "url": "https://arxiv.org/abs/2610.21938",
+      "authors": [
+        "Bruno Arcanjo",
+        "Zhaoxing Li",
+        "Sebastian Stein"
+      ],
+      "summary": "An agent that learns a user's preferences from their choices faces a cold start problem: before any choices are observed, it must rely solely on a prior. Informative priors are usually fitted to historical choice data, which new tasks and deployments lack. To address this, we present Agentic-Priors, which lets agentic systems use the implicit knowledge of large language models (LLMs) instead. Specifically, an LLM states a new user's trade-offs in interpretable terms, such as willingness to pay or value of time, which we map to a prior over multinomial logit coefficients. This prior is then ref",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-15",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.21113",
+      "source": "arxiv",
+      "title": "SSR: Structural Signal Retriever for Scalable Agent Discovery in LLM-Orchestrated Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.21113",
+      "authors": [
+        "Giancarlo Maldonado Cárdenas",
+        "Carlos A. Astudillo",
+        "Nelson L. S. da Fonseca"
+      ],
+      "summary": "Large-scale multi-agent ecosystems require mechanisms for discovering suitable agents without exposing entire registries to a large language model (LLM) orchestrator. The challenge is not only to retrieve relevant Agent Cards from a growing registry, but also to maintain a compact candidate context, since each additional candidate increases prompt size, inference cost, latency, and the risk of exceeding the model context window. We formulate this problem as candidate-context scalability and propose the Structural Signal Retriever (SSR), our deterministic and training-free retrieval method desi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-15",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "retrieval"
+      ]
+    },
+    {
       "id": "2610.20245",
       "source": "arxiv",
       "title": "P2Patch: Exploit-Guided Vulnerability Repair",
@@ -1362,152 +1514,6 @@
         "interpret",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2610.12176",
-      "source": "arxiv",
-      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
-      "url": "https://arxiv.org/abs/2610.12176",
-      "authors": [
-        "Hyunin Lee",
-        "Jinglue Xu",
-        "Jeffrey Seely",
-        "Donghyun Lee"
-      ],
-      "summary": "Recursive self-improvement (RSI) of a model on non-verifiable tasks, such as open-ended research, faces a supervision bottleneck when its outputs exceed what even human experts can reliably assess, leaving the model itself (optimizee) as the best available optimizer and evaluator. However, a single model instance struggles to critique and improve its own complex reasoning under this homogeneous loop. To address this, we propose Multi-Agent Self-Supervision (MASS), an RSI method that alternates between evolutionary workflow optimization and supervised fine-tuning on self-generated trajectories.",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "agent",
-        "multi-agent",
-        "reasoning"
-      ]
-    },
-    {
-      "id": "2610.12235",
-      "source": "arxiv",
-      "title": "Language Models as AI Research World Models",
-      "url": "https://arxiv.org/abs/2610.12235",
-      "authors": [
-        "Zijun Wang",
-        "Zewen Liu",
-        "Minhua Lin",
-        "Zhaotian Weng"
-      ],
-      "summary": "AI research agents automate the cycle of proposing, implementing, and evaluating experiments, opening a path toward recursive self-improvement. Yet their ability to propose experiments outpaces their capacity to execute them in real environments, making outcome prediction a key capability for sustained self-improvement under limited experimental budgets. We investigate language models as Research World Models (RWMs), which predict the outcomes of candidate interventions across research environments. Our evaluation draws on over 2,600 experimental records from nine research environments spannin",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "world model",
-        "agent",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.11794",
-      "source": "arxiv",
-      "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
-      "url": "https://arxiv.org/abs/2610.11794",
-      "authors": [
-        "Haoyu Zhao",
-        "Zhengxu Yu",
-        "Zhiyuan He",
-        "Meng Fang"
-      ],
-      "summary": "Learning to act in unfamiliar environments requires agents to infer how the world works and revise that understanding as new evidence arrives. Yet limited observations can support multiple world models that explain past interactions but predict different outcomes in unseen states. We introduce Memento 3, building on the Memento series to enable frozen LLM agents to continually learn explicit world models through external memory. The agent maintains a natural-language rulebook as persistent semantic memory, recording revisable hypotheses about environment dynamics while leaving unknown aspects ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "world model",
-        "agent",
-        "llm"
-      ]
-    },
-    {
-      "id": "2610.09684",
-      "source": "arxiv",
-      "title": "From Pareto to Preference: Personalized Test-Time Scaling via Amortized Agentic Policy Discovery",
-      "url": "https://arxiv.org/abs/2610.09684",
-      "authors": [
-        "Xinglin Wang",
-        "Zishen Liu",
-        "Tong Zheng",
-        "Shaoxiong Feng"
-      ],
-      "summary": "Test-time scaling (TTS) improves the reasoning capabilities of large language models by allocating additional inference computation. Existing approaches to improving TTS efficiency largely optimize accuracy against one resource dimension at a time, advancing either the accuracy--cost or accuracy--latency Pareto frontier. Yet user requirements are multidimensional: users may specify accuracy, latency, and inference-cost requirements jointly, and different requirements can favor different controllers. We formulate Personalized Test-Time Scaling as discovering executable controllers that maximize",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-07",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "language model",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2610.08761",
-      "source": "arxiv",
-      "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
-      "url": "https://arxiv.org/abs/2610.08761",
-      "authors": [
-        "Zewei Zhou",
-        "Rachel Luo",
-        "Yulong Cao",
-        "Chaowei Xiao"
-      ],
-      "summary": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improv",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-06",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "self-improving",
-        "agent",
-        "reasoning",
-        "embodied",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2610.06790",
-      "source": "arxiv",
-      "title": "Back to the Future: Rethinking EDA Infrastructure for Agentic Systems in Chip Design Verification",
-      "url": "https://arxiv.org/abs/2610.06790",
-      "authors": [
-        "Je Yang",
-        "Ivan Lobov",
-        "Thomas Karpati"
-      ],
-      "summary": "The unprecedented computational scale of modern artificial intelligence depends on complex, multi-billion-transistor Systems-on-Chip, yet the workflows that verify these chips remain stubbornly manual. Although Large Language Models (LLMs) have made rapid inroads into Electronic Design Automation (EDA), approximately 74.6% of existing studies target static Register-Transfer Level (RTL) code generation, leaving post-simulation verification and interactive waveform debugging largely untouched. We introduce Back-to-the-Future (BTTF), an end-to-end agentic framework that closes this infrastructura",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-05",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model",
-        "automation"
       ]
     }
   ]

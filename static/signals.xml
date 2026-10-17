@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 15 Oct 2026 17:42:04 +0000</lastBuildDate>
+   <lastBuildDate>Sat, 17 Oct 2026 16:16:01 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -27,6 +27,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.34823</guid>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
       <description>Augmented dexterity has the potential to reduce the fatigue experienced by surgeons during repetitive surgical tasks. In this paper, we propose the first AGentic RObotics framework for SUrgical VIscoelastic DEbridement (AGRO-SUVIDE), the repeated removal of small fragments attached to a viscoelastic... [Score: 11.0 | Flagged for: agi, self-improving, agent, agentic, robot] Authors: Shutong Jin, Ziyang Chen, et al.</description>
+    </item>
+    <item>
+      <title>MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering</title>
+      <link>https://arxiv.org/abs/2610.22344</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.22344</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a pr... [Score: 10.5 | Flagged for: recursive self-improvement, agent, agentic, autonomous, llm] Authors: Shangheng Du, Jinxin Shi, et al.</description>
     </item>
     <item>
       <title>PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition</title>
@@ -71,6 +78,13 @@
       <description>Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operati... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, reasoning, llm] Authors: Zihan Zhou, Xinzhe Hu, et al.</description>
     </item>
     <item>
+      <title>Athanor: An Agent-Native System for Autonomous Post-Training Research</title>
+      <link>https://arxiv.org/abs/2610.21055</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.21055</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Recursive self-improvement, in which AI systems build stronger AI systems, is one promising route to superintelligence. We study a weaker form that can be measured today: frontier agents post-training a small raw base model with public data, as a test of their research potential. We build Athanor, a... [Score: 9.5 | Flagged for: superintelligence, recursive self-improvement, agent, autonomous, autonomy] Authors: Yufa Zhou, Yichen Wang, et al.</description>
+    </item>
+    <item>
       <title>SuperNav: An Agentic Navigation System for Any Task in Any Scene</title>
       <link>https://arxiv.org/abs/2610.12126</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.12126</guid>
@@ -97,6 +111,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.31563</guid>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
       <description>Multi-agent LLM systems are often expected to improve as team size increases, yet the scaling behavior may depend on task structure. Our central contribution is to introduce Steiner's taxonomy of group tasks as a framework for analyzing multi-agent LLM scaling and focusing the analysis on disjunctiv... [Score: 9.5 | Flagged for: agi, agent, multi-agent, llm, scaling] Authors: Carolina Fortuna, Blaz Bertalanic</description>
+    </item>
+    <item>
+      <title>Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries</title>
+      <link>https://arxiv.org/abs/2610.22273</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.22273</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Reasoning over long document contexts remains a challenge for large language models (LLMs). Standard retrieval methods are inherently reactive, bottlenecking agents with complex, cross-document reasoning at inference time, while precomputed structures like knowledge graphs often fall short because t... [Score: 9.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Anikait Singh, Teresa Zhang, et al.</description>
     </item>
     <item>
       <title>EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</title>
@@ -195,27 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.38177</guid>
       <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
       <description>Reasoning about the 3D world from multi-view images remains a fundamental challenge for Multimodal Large Language Models (MLLMs). While modern MLLMs handle single-image inputs effectively, they struggle to integrate evidence across viewpoints into a coherent 3D understanding. A growing body of work ... [Score: 8.5 | Flagged for: agi, foundation model, reasoning, llm, language model] Authors: Jaewoo Jung, Hyeonseo Yu, et al.</description>
-    </item>
-    <item>
-      <title>MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation</title>
-      <link>https://arxiv.org/abs/2609.38078</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.38078</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Vision-language-action (VLA) models have advanced robotic manipulation, but their zero-shot generalization in new tasks and environments remains limited, and their reliance on specialized training keeps them from benefiting directly from rapidly advancing general-purpose vision-language models (VLMs... [Score: 8.5 | Flagged for: agent, agentic, reasoning, robot, language model] Authors: Bingxuan Li, Siqi Song, et al.</description>
-    </item>
-    <item>
-      <title>From Solo to Social Learning: Characterizing Recursive Social Improvement in LLMs</title>
-      <link>https://arxiv.org/abs/2609.38516</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.38516</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) can now improve themselves by revising the instructions they follow, and LLM agents are increasingly orchestrated to work together on complex problems. However, self-improvement methods typically optimize one system at a time, and multi-agent frameworks often have every ... [Score: 8.5 | Flagged for: self-improving, agent, multi-agent, llm, language model] Authors: Kunal Jha, Max Kleiman-Weiner, et al.</description>
-    </item>
-    <item>
-      <title>ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures</title>
-      <link>https://arxiv.org/abs/2609.16986</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.16986</guid>
-      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
-      <description>LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning ... [Score: 8.5 | Flagged for: agent, multi-agent, reasoning, alignment, llm] Authors: Muhammad Ashar Ishfaq, Glaucia Melo</description>
     </item>
   </channel>
 </rss>

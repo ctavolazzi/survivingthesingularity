@@ -116,8 +116,9 @@ Appendices A and H fit; a slow buying cycle.
 | 1 | Preorder | $5 | Until a dated close; January 31 suggested. | Today’s offer. | Live |
 | 2 | Ebook | $9.99 | After the preorder closes, on at least one retailer. | Kindle’s 70% royalty band is $2.99 to $12.99; nonfiction commonly $9.99 to $14.99. | Proposed |
 | 3 | Paperback | $19.99 | With an ISBN; preorder buyers get half off. | Futureproof $19, Kurzweil paperback $20. | Proposed |
-| 4 | Ebook plus print | $24.99 | Bundle. | The two prices less a small discount. | Proposed |
-| 5 | Talks | Set after 3 requests | Use the free Appendix H guide until then. | No evidence of demand yet. | Proposed |
+| 4 | Audiobook | Set at launch | Read by the author; chapter readings on YouTube work as free samples. | US audiobook sales were $2.43B in 2025, up 9%; AI-voiced titles were 0.03% of revenue; 45% of listeners have used YouTube for audiobooks. | Proposed |
+| 5 | Ebook plus print | $24.99 | Bundle. | The two prices less a small discount. | Proposed |
+| 6 | Talks | Set after 3 requests | Use the free Appendix H guide until then. | No evidence of demand yet. | Proposed |
 
 ## Go to market
 
@@ -191,6 +192,7 @@ The book has its own site and checkout, but its readers, alerts and links still 
 6. Keep the manuscript openly licensed?
 7. Retail distribution, or direct sales only?
 8. Keep /signals and off-thesis posts?
+9. An author-read audiobook: when, and on which platforms?
 
 ## Sources
 
@@ -207,6 +209,7 @@ The book has its own site and checkout, but its readers, alerts and links still 
 11. [Futureproof listing](https://beta.thriftbooks.com/w/futureproof-9-rules-for-machine-age-humans_kevin-roose/24401369): Price
 12. [The Singularity Is Nearer listing](https://www.harvard.com/book/9780399562785): Price
 13. [Superagency listing](https://www.simonandschuster.com/books/Superagency/Reid-Hoffman/9798893310108): Price
+14. [APA via Infodocket: audiobook sales 2025](https://www.infodocket.com/2026/06/05/audio-publishers-association-reports-audiobook-sales-jump-9-to-2-43-billion/): $2.43B, AI narration share, YouTube listening
 
 ---
 

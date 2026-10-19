@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T16:25:55Z",
+  "generated_at": "2026-10-19T19:11:17Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -82,6 +82,33 @@
         "robot",
         "robotics",
         "rag"
+      ]
+    },
+    {
+      "id": "2610.23599",
+      "source": "arxiv",
+      "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents",
+      "url": "https://arxiv.org/abs/2610.23599",
+      "authors": [
+        "Yewei Zhao",
+        "Derong Xu",
+        "Wei Chen",
+        "Yin Xu"
+      ],
+      "summary": "Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skill-evolution methods largely organize knowledge around skill artifacts, overlooking the functional heterogeneity within individual skills and its implications for knowledge maintenance and use. Inspired by cognitive science, we propose Cognitive Differentiation in Skill Evolution (CDSE), which evolve",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-16",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "self-improving",
+        "agent",
+        "tool use",
+        "planning",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -549,6 +576,31 @@
       ]
     },
     {
+      "id": "2610.23334",
+      "source": "arxiv",
+      "title": "LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence",
+      "url": "https://arxiv.org/abs/2610.23334",
+      "authors": [
+        "Jiajun Cao",
+        "Kai Tang",
+        "Bohua Zhang",
+        "Zezhong Qian"
+      ],
+      "summary": "World-action models jointly predict actions and future world states, but long-horizon manipulation further requires language reasoning to plan subtask objectives, assess execution progress, and guide action selection. We present LAW, a closed-loop VLM--WAM framework that unifies language reasoning, action generation, and world modeling through semantic subtask progress. Within the LAW agent, a hybrid-expert vision-language model plans the remaining subtasks, estimates the values of and fuses actions proposed by a world-action model, and asynchronously assesses execution status to support conti",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-16",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "world model",
+        "agent",
+        "agentic",
+        "reasoning",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.20437",
       "source": "arxiv",
       "title": "From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)",
@@ -824,6 +876,56 @@
       ]
     },
     {
+      "id": "2610.23574",
+      "source": "arxiv",
+      "title": "Darwin-Claw: Environment-Adaptive Experience Consolidation for Recursively Self-Evolving Agents",
+      "url": "https://arxiv.org/abs/2610.23574",
+      "authors": [
+        "Mingze Yin",
+        "Xiaohan Wang",
+        "Dian Li",
+        "Longfei Luo"
+      ],
+      "summary": "While Large Language Model (LLM) agents have demonstrated remarkable capabilities across complex tasks, they predominantly operate in isolated sessions, lacking the ability to continually learn from historical interactions or adapt to user-specific environments. Existing self-evolution paradigms often indiscriminately inject raw interaction trajectories into memory or skill modules, leading to obscured behavioral patterns and compromised update controllability. Furthermore, as foundational LLM reasoning improves, the bottleneck for agentic evolution shifts from accumulating generic knowledge t",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-16",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.22980",
+      "source": "arxiv",
+      "title": "KiranaBench: Can a Language Model Run a Neighbourhood Shop?",
+      "url": "https://arxiv.org/abs/2610.22980",
+      "authors": [
+        "Bhuvan Arora",
+        "Ankita Karmakar",
+        "Chaitanya Jain",
+        "Dilesh Churiwal"
+      ],
+      "summary": "Large language model (LLM) agents are increasingly evaluated on long-horizon tasks, including autonomously running a business. Existing benchmarks for this setting are almost exclusively English-language, Western in retail context, and single-agent, with the agent observing the business directly. We study how these results transfer to a multi-agent Indic setting. We introduce KiranaBench, a simulated Indian general store in which four roles (manager, cashier, helper, and bookkeeper) are each played by a separate LLM agent. Interactions with customers and suppliers occur in English, Hindi, or H",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-16",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.22316",
       "source": "arxiv",
       "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
@@ -835,8 +937,8 @@
         "Chenxiao Fan"
       ],
       "summary": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are prone to deviating from the overall goal as execution unfolds, which wastes execution resources and leads to undesired outcomes, a failure termed goal drift. In this work, we propose a steering agent that supervises execution on the fly and steers the system back on track when drift occurs. The steering agent observes the execution context, deciding when to intervene with a low-cost fast path and how to interve",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-10-15",
       "score": 8.0,
       "raw_score": 16,
@@ -1295,6 +1397,53 @@
       ]
     },
     {
+      "id": "2610.23722",
+      "source": "arxiv",
+      "title": "Beyond Large Language Models: A Mental World Model Framework for Mental Modeling, Simulation, Evolution, and Interpretability",
+      "url": "https://arxiv.org/abs/2610.23722",
+      "authors": [
+        "Qingshi Wang"
+      ],
+      "summary": "Understanding and simulating how subjective cognition and mental states emerge, evolve, and shape behavior is essential for advancing artificial intelligence toward deeper social cognition and general intelligence. Existing large language models (LLMs) and Theory of Mind (ToM) methods primarily infer mental states from linguistic information, lacking unified mechanisms for subjective world construction, cognitive-psychological interactions, dynamic evolution, and historical dependencies. This paper introduces the Mental World Model (MWM) and its implementation, the Multi-Branch Mental Evolutio",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-16",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "world model",
+        "interpretability",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.23307",
+      "source": "arxiv",
+      "title": "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection",
+      "url": "https://arxiv.org/abs/2610.23307",
+      "authors": [
+        "Songping Wang",
+        "Peiyang Li",
+        "Yi Huang",
+        "Fengting Li"
+      ],
+      "summary": "Multimodal large language model (MLLM)-based mobile agents are rapidly evolving from conversational assistants into autonomous systems that perceive, reason over, and act on smartphone environments. This capability also exposes a new security risk: adversaries can embed malicious objectives in cross-application mobile content and steer agent behavior through indirect multimodal injection. Although prompt injection has been studied in desktop and web settings, its cross-modal properties in mobile ecosystems remain poorly understood, and existing security analyses are still limited. To close thi",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-16",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.21938",
       "source": "arxiv",
       "title": "Agentic-Priors: Using Large Language Models to Address the Cold Start Problem in Preference Elicitation",
@@ -1364,155 +1513,6 @@
         "autonomous",
         "tool use",
         "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.20474",
-      "source": "arxiv",
-      "title": "AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents",
-      "url": "https://arxiv.org/abs/2610.20474",
-      "authors": [
-        "Peidong Wang",
-        "Ying Chang",
-        "Zhiming Ma",
-        "Xiaocui Yang"
-      ],
-      "summary": "Pretrained vision-language-action models (VLAs) often fail midway through unseen long-horizon tasks. Recursive self-improvement (RSI) offers a remedy, but embodied RSI methods either refine the harness around a frozen executor and so cannot add a missing motion, or train the executor on persistent failures without asking whether a failure lies in how the executor is called or in what it can do. We ask when a self-improving embodied system should change the weights of its executor, and propose AdaRSI, an on-demand RSI framework for embodied agents. A coding agent first improves its skills and h",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-14",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "self-improving",
-        "agent",
-        "embodied"
-      ]
-    },
-    {
-      "id": "2610.19863",
-      "source": "arxiv",
-      "title": "When Extremists Enter LLM Societies: Investigating Extreme Behavior in Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2610.19863",
-      "authors": [
-        "Guo Chen",
-        "Huaijin Xie",
-        "Ziwen Li",
-        "Reed Li"
-      ],
-      "summary": "Large language model (LLM) agents increasingly serve as computational actors in multi-agent social simulations. While existing work emphasizes representative personas and average-case behavior, social science shows that persistent tail actors can disproportionately shape collective dynamics. We study this regularity in controlled LLM-based multi-agent systems (LLM-MAS). In these systems, such actors cannot be reduced to fixed scalar states: prompts, natural-language histories, and backbone generation mediate their behavior and influence. We first analyzed three properties of extremists in soci",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-14",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.19581",
-      "source": "arxiv",
-      "title": "XferAgent: Cross-Agent Experience Transfer for Self-Improving LLM Agents",
-      "url": "https://arxiv.org/abs/2610.19581",
-      "authors": [
-        "Weihao Li",
-        "Jun Bai",
-        "Shijie Chen",
-        "Qincheng Lu"
-      ],
-      "summary": "Large language model (LLM) agents can reuse experience from prior task executions to improve performance on subsequent tasks. Although existing methods enable cross-agent experience sharing, differences in agents' execution histories and task requirements make shared experiences difficult to reuse effectively. We propose XferAgent, a framework for cross-agent experience transfer that organizes reusable experience in local and shared experience graphs. XferAgent reconciles compatible contributions from heterogeneous agents while avoiding unreliable merges. For each new task, it selects shared e",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-14",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "self-improving",
-        "agent",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.17613",
-      "source": "arxiv",
-      "title": "MAS-Gate: Unlocking Multi-Agent System Lifecycle via Node-Centric Quantification",
-      "url": "https://arxiv.org/abs/2610.17613",
-      "authors": [
-        "Hehai Lin",
-        "Zixuan Wang",
-        "Ming Yan",
-        "Peidong Wang"
-      ],
-      "summary": "Large language model (LLM)-based multi-agent systems (MAS) can solve complex problems beyond the reach of a single agent by decomposing tasks and coordinating complementary capabilities. Despite extensive research on MAS, existing work largely focuses on specific aspects or individual phases of their development and operation, resulting in fragmented perspectives with objectives and signals that are difficult to reconcile across these different settings. To bridge these disconnected perspectives, we conceptualize MAS development and operation as a three-phase lifecycle spanning design-time orc",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-13",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.13534",
-      "source": "arxiv",
-      "title": "MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures",
-      "url": "https://arxiv.org/abs/2610.13534",
-      "authors": [
-        "Loan Bernat",
-        "Matthieu Grard",
-        "Ariane Herbulot",
-        "Florent Lamiraux"
-      ],
-      "summary": "Long-horizon embodied agents must maintain task-relevant information, coordinate heterogeneous robots, and adapt their decisions as execution unfolds. Existing benchmarks investigate dynamic task execution and embodied multi-agent coordination, but provide limited evaluation of their intersection. We introduce MAGMA-Bench, an architecture-agnostic benchmark for persistent task reasoning in dynamic multi-robot environments. MAGMA-Bench evaluates agents across increasing task horizons and controlled online perturbations, including execution failures, task interruptions, and mission updates, with",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-09",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "embodied",
-        "robot"
-      ]
-    },
-    {
-      "id": "2610.12281",
-      "source": "arxiv",
-      "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants",
-      "url": "https://arxiv.org/abs/2610.12281",
-      "authors": [
-        "Pratik Dutta",
-        "Matthew B. Obusan",
-        "Max Chao",
-        "Rekha Sathian"
-      ],
-      "summary": "Over 90% of disease-associated variants from genome-wide association studies fall in noncoding regulatory regions, yet their functional interpretation remains a central open problem in genomic medicine. Large language models prompted to interpret such variants routinely hallucinate transcription factor (TF) binding changes, fabricate experimental support, and assign biological significance to statistically negligible signals. We present ARGUS (Agentic Regulatory Genomics for an Uncertainty-aware Scientist), which strictly separates deterministic biological computation from LLM-mediated reasoni",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "interpret",
-        "llm",
         "language model"
       ]
     }

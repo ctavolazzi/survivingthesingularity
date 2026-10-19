@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 18 Oct 2026 16:25:55 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 19 Oct 2026 19:11:17 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -27,6 +27,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.34823</guid>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
       <description>Augmented dexterity has the potential to reduce the fatigue experienced by surgeons during repetitive surgical tasks. In this paper, we propose the first AGentic RObotics framework for SUrgical VIscoelastic DEbridement (AGRO-SUVIDE), the repeated removal of small fragments attached to a viscoelastic... [Score: 11.0 | Flagged for: agi, self-improving, agent, agentic, robot] Authors: Shutong Jin, Ziyang Chen, et al.</description>
+    </item>
+    <item>
+      <title>From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents</title>
+      <link>https://arxiv.org/abs/2610.23599</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.23599</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skil... [Score: 10.5 | Flagged for: self-improving, agent, tool use, planning, reasoning] Authors: Yewei Zhao, Derong Xu, et al.</description>
     </item>
     <item>
       <title>MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering</title>
@@ -155,6 +162,13 @@
       <description>Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machin... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, llm, language model] Authors: Kirill Brilliantov, Alejandro Hernández-Cano, et al.</description>
     </item>
     <item>
+      <title>LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence</title>
+      <link>https://arxiv.org/abs/2610.23334</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.23334</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <description>World-action models jointly predict actions and future world states, but long-horizon manipulation further requires language reasoning to plan subtask objectives, assess execution progress, and guide action selection. We present LAW, a closed-loop VLM--WAM framework that unifies language reasoning, ... [Score: 8.5 | Flagged for: world model, agent, agentic, reasoning, language model] Authors: Jiajun Cao, Kai Tang, et al.</description>
+    </item>
+    <item>
       <title>From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)</title>
       <link>https://arxiv.org/abs/2610.20437</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.20437</guid>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.03136</guid>
       <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
       <description>Reasoning traces improve large language models (LLMs), but current models are trained to reason mostly in English. It has been shown that forcing a model to reason in another language degrades accuracy, even when the reasoning language matches the language of the prompt -- but only for a setting whe... [Score: 8.5 | Flagged for: reasoning, alignment, llm, language model, retrieval] Authors: Oliver Hauck, Mario Sanz-Guerrero, et al.</description>
-    </item>
-    <item>
-      <title>Engineering Sustainable Agents: A Systematic Comparison of Agentic LLMs for Developer Workflows</title>
-      <link>https://arxiv.org/abs/2610.03010</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.03010</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) are increasingly used in software engineering, including agentic systems that coordinate multiple agents, but impose higher computational and environmental costs. In this paper, we present a comprehensive empirical study of agentic LLM systems across five software engine... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Merve Astekin, Yan Naing Tun, et al.</description>
-    </item>
-    <item>
-      <title>Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering</title>
-      <link>https://arxiv.org/abs/2609.38177</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.38177</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Reasoning about the 3D world from multi-view images remains a fundamental challenge for Multimodal Large Language Models (MLLMs). While modern MLLMs handle single-image inputs effectively, they struggle to integrate evidence across viewpoints into a coherent 3D understanding. A growing body of work ... [Score: 8.5 | Flagged for: agi, foundation model, reasoning, llm, language model] Authors: Jaewoo Jung, Hyeonseo Yu, et al.</description>
     </item>
   </channel>
 </rss>

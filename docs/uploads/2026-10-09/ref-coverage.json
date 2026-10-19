@@ -1,0 +1,1375 @@
+{
+  "schema": "sts-ref-coverage/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "started_utc": "2026-10-09T15:42:11.158211+00:00",
+  "finished_utc": "2026-10-09T15:51:54.294298+00:00",
+  "root": "/Users/ctavolazzi/Code/active/sts-upload-2026-10-08",
+  "read_only_audit": true,
+  "authorized_output_only": "/Users/ctavolazzi/Code/active/sts-upload-2026-10-08/docs/uploads/2026-10-09/ref-coverage.json",
+  "git_no_replace_objects": true,
+  "git_optional_locks": false,
+  "local_refs": [
+    {
+      "ref": "refs/heads/StS-Game",
+      "object_sha": "1b61bc9b01af46cdcf8c3d8b0392d2139af11121",
+      "object_type": "commit",
+      "commit_sha": "1b61bc9b01af46cdcf8c3d8b0392d2139af11121"
+    },
+    {
+      "ref": "refs/heads/archive/book-downloads-2026-10-08",
+      "object_sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8",
+      "object_type": "commit",
+      "commit_sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8"
+    },
+    {
+      "ref": "refs/heads/archive/book-files-2026-10-08",
+      "object_sha": "03c3fe5d9ad3afc72573d0ad572c2474560a3ace",
+      "object_type": "commit",
+      "commit_sha": "03c3fe5d9ad3afc72573d0ad572c2474560a3ace"
+    },
+    {
+      "ref": "refs/heads/archive/v1-original-site",
+      "object_sha": "1d8f680dc9854563c29dde3090238c22b2650847",
+      "object_type": "commit",
+      "commit_sha": "1d8f680dc9854563c29dde3090238c22b2650847"
+    },
+    {
+      "ref": "refs/heads/book-art-optimized-2026-07-25",
+      "object_sha": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+      "object_type": "commit",
+      "commit_sha": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd"
+    },
+    {
+      "ref": "refs/heads/book-fixes-round2",
+      "object_sha": "7acd7c576062ed21e5056f01e1ff18f3a131ed14",
+      "object_type": "commit",
+      "commit_sha": "7acd7c576062ed21e5056f01e1ff18f3a131ed14"
+    },
+    {
+      "ref": "refs/heads/book-launch",
+      "object_sha": "316ecb7f7cf62d1c814d638dd9971f4064e6b941",
+      "object_type": "commit",
+      "commit_sha": "316ecb7f7cf62d1c814d638dd9971f4064e6b941"
+    },
+    {
+      "ref": "refs/heads/book-page-full-text",
+      "object_sha": "57a24942cba71d9983a5d081019c5ca0c7212864",
+      "object_type": "commit",
+      "commit_sha": "57a24942cba71d9983a5d081019c5ca0c7212864"
+    },
+    {
+      "ref": "refs/heads/book-reader-experience-upgrade",
+      "object_sha": "de4d10ab50f3c8093a3814f9abc17ac1ea05e6c0",
+      "object_type": "commit",
+      "commit_sha": "de4d10ab50f3c8093a3814f9abc17ac1ea05e6c0"
+    },
+    {
+      "ref": "refs/heads/book-reader-polish",
+      "object_sha": "f3ab4a6e785bdc2db073e50e2a82e91b466769b8",
+      "object_type": "commit",
+      "commit_sha": "f3ab4a6e785bdc2db073e50e2a82e91b466769b8"
+    },
+    {
+      "ref": "refs/heads/book-reader-redesign",
+      "object_sha": "4ec3868bfff269a5f08dc13bd4c1d421cea69d9c",
+      "object_type": "commit",
+      "commit_sha": "4ec3868bfff269a5f08dc13bd4c1d421cea69d9c"
+    },
+    {
+      "ref": "refs/heads/book-relock-on-reload",
+      "object_sha": "4ef002c54ad32d1f9531b88448611f8a5dfecae4",
+      "object_type": "commit",
+      "commit_sha": "4ef002c54ad32d1f9531b88448611f8a5dfecae4"
+    },
+    {
+      "ref": "refs/heads/book-v0.10.0",
+      "object_sha": "f7178bc10257df2b27f1e518813bb4f96a5df222",
+      "object_type": "commit",
+      "commit_sha": "f7178bc10257df2b27f1e518813bb4f96a5df222"
+    },
+    {
+      "ref": "refs/heads/book-v0.10.1",
+      "object_sha": "c05cb948902d885b574fce965b544c9681361922",
+      "object_type": "commit",
+      "commit_sha": "c05cb948902d885b574fce965b544c9681361922"
+    },
+    {
+      "ref": "refs/heads/book-v0.10.2",
+      "object_sha": "85c72ea020db447f37bf080473f5a91734d88031",
+      "object_type": "commit",
+      "commit_sha": "85c72ea020db447f37bf080473f5a91734d88031"
+    },
+    {
+      "ref": "refs/heads/book-v0.10.3",
+      "object_sha": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+      "object_type": "commit",
+      "commit_sha": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb"
+    },
+    {
+      "ref": "refs/heads/book-v0.10.4",
+      "object_sha": "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+      "object_type": "commit",
+      "commit_sha": "8a3fae17a0f4db864a264874dc096edf2c9aa941"
+    },
+    {
+      "ref": "refs/heads/book-v0.11.0",
+      "object_sha": "d48ed3964c12f4b13c8fcc821ef81a24f9f4a8d1",
+      "object_type": "commit",
+      "commit_sha": "d48ed3964c12f4b13c8fcc821ef81a24f9f4a8d1"
+    },
+    {
+      "ref": "refs/heads/book-v0.8.0",
+      "object_sha": "ae9e1b6f66f766e6b32368fc9e67188a3e1174bc",
+      "object_type": "commit",
+      "commit_sha": "ae9e1b6f66f766e6b32368fc9e67188a3e1174bc"
+    },
+    {
+      "ref": "refs/heads/book-v0.8.1",
+      "object_sha": "10cfa7a9c30d4b48f13f90f5d6b850a412f97d43",
+      "object_type": "commit",
+      "commit_sha": "10cfa7a9c30d4b48f13f90f5d6b850a412f97d43"
+    },
+    {
+      "ref": "refs/heads/book-v0.8.2",
+      "object_sha": "a70b74aa38dbc1469038e78280f5a921bd6c11c5",
+      "object_type": "commit",
+      "commit_sha": "a70b74aa38dbc1469038e78280f5a921bd6c11c5"
+    },
+    {
+      "ref": "refs/heads/book-v0.9.0",
+      "object_sha": "181348a8d77fe042e0a4d44d2855533b06942323",
+      "object_type": "commit",
+      "commit_sha": "181348a8d77fe042e0a4d44d2855533b06942323"
+    },
+    {
+      "ref": "refs/heads/book-v0.9.1",
+      "object_sha": "0f322b7f69b5e613c2eb45d037b5e8a47c783f6a",
+      "object_type": "commit",
+      "commit_sha": "0f322b7f69b5e613c2eb45d037b5e8a47c783f6a"
+    },
+    {
+      "ref": "refs/heads/book-v0.9.2",
+      "object_sha": "3d29215b54feaa43b4c22e5283ab642833457a07",
+      "object_type": "commit",
+      "commit_sha": "3d29215b54feaa43b4c22e5283ab642833457a07"
+    },
+    {
+      "ref": "refs/heads/book-v0.9.3",
+      "object_sha": "3d29215b54feaa43b4c22e5283ab642833457a07",
+      "object_type": "commit",
+      "commit_sha": "3d29215b54feaa43b4c22e5283ab642833457a07"
+    },
+    {
+      "ref": "refs/heads/book-wip-badges",
+      "object_sha": "f228bd010632d01a1f805198641b8dc7aec6fb82",
+      "object_type": "commit",
+      "commit_sha": "f228bd010632d01a1f805198641b8dc7aec6fb82"
+    },
+    {
+      "ref": "refs/heads/continue-card-responsive",
+      "object_sha": "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7",
+      "object_type": "commit",
+      "commit_sha": "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7"
+    },
+    {
+      "ref": "refs/heads/dev/site-v2",
+      "object_sha": "4576aa091ade76429f4e34158f8910a4f846372a",
+      "object_type": "commit",
+      "commit_sha": "4576aa091ade76429f4e34158f8910a4f846372a"
+    },
+    {
+      "ref": "refs/heads/devlog-live",
+      "object_sha": "bc86142b126f752e2074a5146e44bb084351525f",
+      "object_type": "commit",
+      "commit_sha": "bc86142b126f752e2074a5146e44bb084351525f"
+    },
+    {
+      "ref": "refs/heads/devlog-ship",
+      "object_sha": "d5976e57113e51b00cb67df15926b7fbbe536fca",
+      "object_type": "commit",
+      "commit_sha": "d5976e57113e51b00cb67df15926b7fbbe536fca"
+    },
+    {
+      "ref": "refs/heads/factcheck-trace-fix",
+      "object_sha": "d7491f38776a900398e2dd91750394cb685264b6",
+      "object_type": "commit",
+      "commit_sha": "d7491f38776a900398e2dd91750394cb685264b6"
+    },
+    {
+      "ref": "refs/heads/go-live-preflight",
+      "object_sha": "b7a570e07c587e5ace06c93c36db2013bc8ec327",
+      "object_type": "commit",
+      "commit_sha": "b7a570e07c587e5ace06c93c36db2013bc8ec327"
+    },
+    {
+      "ref": "refs/heads/homepage-redux-jun2026",
+      "object_sha": "a35aa06eae9adaa2c1a69a52672b00b02b1ee3f4",
+      "object_type": "commit",
+      "commit_sha": "a35aa06eae9adaa2c1a69a52672b00b02b1ee3f4"
+    },
+    {
+      "ref": "refs/heads/hotfix/checkout-honesty",
+      "object_sha": "9bda1d61316ae781ed53b2eae323d68edeade785",
+      "object_type": "commit",
+      "commit_sha": "9bda1d61316ae781ed53b2eae323d68edeade785"
+    },
+    {
+      "ref": "refs/heads/main",
+      "object_sha": "c3019ce3dd75972c4abeda998c046e755d7a6af3",
+      "object_type": "commit",
+      "commit_sha": "c3019ce3dd75972c4abeda998c046e755d7a6af3"
+    },
+    {
+      "ref": "refs/heads/manuscript-block-ids",
+      "object_sha": "1631bcdacf8db5aa93dcab6c3ef2d63cbeaedd91",
+      "object_type": "commit",
+      "commit_sha": "1631bcdacf8db5aa93dcab6c3ef2d63cbeaedd91"
+    },
+    {
+      "ref": "refs/heads/reader-toggle-inline",
+      "object_sha": "35a1a3a32f13475acf2907139503ec588e0f9b27",
+      "object_type": "commit",
+      "commit_sha": "35a1a3a32f13475acf2907139503ec588e0f9b27"
+    },
+    {
+      "ref": "refs/heads/redesign-v2",
+      "object_sha": "4b9683a96990ea7377327c4c2c8c22bd80ea8842",
+      "object_type": "commit",
+      "commit_sha": "4b9683a96990ea7377327c4c2c8c22bd80ea8842"
+    },
+    {
+      "ref": "refs/heads/release/v0.11.0",
+      "object_sha": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+      "object_type": "commit",
+      "commit_sha": "4377394471357ce5660a0cf62d2eeed3e13d8e77"
+    },
+    {
+      "ref": "refs/heads/ship-content",
+      "object_sha": "a6e39812e9b72fd7cbc321ede7f8941c5fa4db78",
+      "object_type": "commit",
+      "commit_sha": "a6e39812e9b72fd7cbc321ede7f8941c5fa4db78"
+    },
+    {
+      "ref": "refs/heads/ship-current",
+      "object_sha": "dc1dc94131ad44a43986aaaf8dfeb899acd722f9",
+      "object_type": "commit",
+      "commit_sha": "dc1dc94131ad44a43986aaaf8dfeb899acd722f9"
+    },
+    {
+      "ref": "refs/heads/site/critique-fixes-2026-10-09",
+      "object_sha": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+      "object_type": "commit",
+      "commit_sha": "4377394471357ce5660a0cf62d2eeed3e13d8e77"
+    },
+    {
+      "ref": "refs/heads/v0.7.3",
+      "object_sha": "d19dbb057ef698a1f88167b2ba68021463bc0e09",
+      "object_type": "commit",
+      "commit_sha": "d19dbb057ef698a1f88167b2ba68021463bc0e09"
+    },
+    {
+      "ref": "refs/heads/weave-and-mobile-polish",
+      "object_sha": "be133d69b30d48ef16441d3540233c3787d98a5d",
+      "object_type": "commit",
+      "commit_sha": "be133d69b30d48ef16441d3540233c3787d98a5d"
+    },
+    {
+      "ref": "refs/tags/archive/StS-Game",
+      "object_sha": "cff8baf744d66e014e0c0b9a46046e42442164c9",
+      "object_type": "commit",
+      "commit_sha": "cff8baf744d66e014e0c0b9a46046e42442164c9"
+    },
+    {
+      "ref": "refs/tags/archive/StS-Game-2026-10-05",
+      "object_sha": "144232bbf353eb4397d857973d1c6e8fb9d2504e",
+      "object_type": "tag",
+      "commit_sha": "1b61bc9b01af46cdcf8c3d8b0392d2139af11121"
+    },
+    {
+      "ref": "refs/tags/archive/book-art-optimized-2026-07-25",
+      "object_sha": "e0ff6a891ddbee7db1cc8ef1e0c34e86302e18eb",
+      "object_type": "commit",
+      "commit_sha": "e0ff6a891ddbee7db1cc8ef1e0c34e86302e18eb"
+    },
+    {
+      "ref": "refs/tags/archive/book-fixes-round2",
+      "object_sha": "7acd7c576062ed21e5056f01e1ff18f3a131ed14",
+      "object_type": "commit",
+      "commit_sha": "7acd7c576062ed21e5056f01e1ff18f3a131ed14"
+    },
+    {
+      "ref": "refs/tags/archive/book-launch",
+      "object_sha": "316ecb7f7cf62d1c814d638dd9971f4064e6b941",
+      "object_type": "commit",
+      "commit_sha": "316ecb7f7cf62d1c814d638dd9971f4064e6b941"
+    },
+    {
+      "ref": "refs/tags/archive/book-page-full-text",
+      "object_sha": "cdc29d0d56f9304ff1e61c225d6d107a5547c250",
+      "object_type": "commit",
+      "commit_sha": "cdc29d0d56f9304ff1e61c225d6d107a5547c250"
+    },
+    {
+      "ref": "refs/tags/archive/book-reader-experience-upgrade",
+      "object_sha": "de4d10ab50f3c8093a3814f9abc17ac1ea05e6c0",
+      "object_type": "commit",
+      "commit_sha": "de4d10ab50f3c8093a3814f9abc17ac1ea05e6c0"
+    },
+    {
+      "ref": "refs/tags/archive/book-reader-polish",
+      "object_sha": "f3ab4a6e785bdc2db073e50e2a82e91b466769b8",
+      "object_type": "commit",
+      "commit_sha": "f3ab4a6e785bdc2db073e50e2a82e91b466769b8"
+    },
+    {
+      "ref": "refs/tags/archive/book-reader-redesign",
+      "object_sha": "4ec3868bfff269a5f08dc13bd4c1d421cea69d9c",
+      "object_type": "commit",
+      "commit_sha": "4ec3868bfff269a5f08dc13bd4c1d421cea69d9c"
+    },
+    {
+      "ref": "refs/tags/archive/book-relock-on-reload",
+      "object_sha": "4ef002c54ad32d1f9531b88448611f8a5dfecae4",
+      "object_type": "commit",
+      "commit_sha": "4ef002c54ad32d1f9531b88448611f8a5dfecae4"
+    },
+    {
+      "ref": "refs/tags/archive/book-wip-badges",
+      "object_sha": "f228bd010632d01a1f805198641b8dc7aec6fb82",
+      "object_type": "commit",
+      "commit_sha": "f228bd010632d01a1f805198641b8dc7aec6fb82"
+    },
+    {
+      "ref": "refs/tags/archive/claude-claude-md-mln4pmc1d9vxfylx-dB5wh",
+      "object_sha": "01c76751c6fb368c74bcbe3013cdbd6150262d00",
+      "object_type": "commit",
+      "commit_sha": "01c76751c6fb368c74bcbe3013cdbd6150262d00"
+    },
+    {
+      "ref": "refs/tags/archive/claude-create-claude-md-book-revival-jPYAp",
+      "object_sha": "ba9b37cadef0272c9dba2afa9968b90317f3c362",
+      "object_type": "commit",
+      "commit_sha": "ba9b37cadef0272c9dba2afa9968b90317f3c362"
+    },
+    {
+      "ref": "refs/tags/archive/claude-integrate-book-outline-zT27v",
+      "object_sha": "acd8445722e047e056e4417d0808e929a5d9dd9c",
+      "object_type": "commit",
+      "commit_sha": "acd8445722e047e056e4417d0808e929a5d9dd9c"
+    },
+    {
+      "ref": "refs/tags/archive/claude-review-and-test-0GC3w",
+      "object_sha": "a93c1bb0a8ab385ccc2943170c75afb4265e479a",
+      "object_type": "commit",
+      "commit_sha": "a93c1bb0a8ab385ccc2943170c75afb4265e479a"
+    },
+    {
+      "ref": "refs/tags/archive/claude-site-review-audit-bVx9J",
+      "object_sha": "3d34ac3b23e83fea1ec468cb9870b8c32322bc7a",
+      "object_type": "commit",
+      "commit_sha": "3d34ac3b23e83fea1ec468cb9870b8c32322bc7a"
+    },
+    {
+      "ref": "refs/tags/archive/cloudflare-fix",
+      "object_sha": "a8ea49d7b1ee231258b999692df6b7e4ad0383cd",
+      "object_type": "commit",
+      "commit_sha": "a8ea49d7b1ee231258b999692df6b7e4ad0383cd"
+    },
+    {
+      "ref": "refs/tags/archive/codex-explore-site-and-create-dossier",
+      "object_sha": "010b4a6a5ae9487561292573ec6328024e460df1",
+      "object_type": "commit",
+      "commit_sha": "010b4a6a5ae9487561292573ec6328024e460df1"
+    },
+    {
+      "ref": "refs/tags/archive/continue-card-responsive",
+      "object_sha": "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7",
+      "object_type": "commit",
+      "commit_sha": "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7"
+    },
+    {
+      "ref": "refs/tags/archive/dev-site-v2",
+      "object_sha": "4576aa091ade76429f4e34158f8910a4f846372a",
+      "object_type": "commit",
+      "commit_sha": "4576aa091ade76429f4e34158f8910a4f846372a"
+    },
+    {
+      "ref": "refs/tags/archive/dev-v2-manifesto",
+      "object_sha": "f2333b79e255d33cd77ebf1d26de0ff37a982ee1",
+      "object_type": "commit",
+      "commit_sha": "f2333b79e255d33cd77ebf1d26de0ff37a982ee1"
+    },
+    {
+      "ref": "refs/tags/archive/devlog-live",
+      "object_sha": "17e142232668ef8396339f3d1499d7ea9d19fb39",
+      "object_type": "tag",
+      "commit_sha": "bc86142b126f752e2074a5146e44bb084351525f"
+    },
+    {
+      "ref": "refs/tags/archive/go-live-preflight",
+      "object_sha": "37bf49eb0ac2ac54bb51c3588cfd40cd33a66847",
+      "object_type": "commit",
+      "commit_sha": "37bf49eb0ac2ac54bb51c3588cfd40cd33a66847"
+    },
+    {
+      "ref": "refs/tags/archive/hotfix-checkout-honesty",
+      "object_sha": "318e33e8625175b71337481b7f9f66b4eac13ea8",
+      "object_type": "tag",
+      "commit_sha": "9bda1d61316ae781ed53b2eae323d68edeade785"
+    },
+    {
+      "ref": "refs/tags/archive/manuscript-block-ids",
+      "object_sha": "18536edbfb5637ec84e62db925a74cd01b733a29",
+      "object_type": "tag",
+      "commit_sha": "1631bcdacf8db5aa93dcab6c3ef2d63cbeaedd91"
+    },
+    {
+      "ref": "refs/tags/archive/reader-toggle-inline",
+      "object_sha": "35a1a3a32f13475acf2907139503ec588e0f9b27",
+      "object_type": "commit",
+      "commit_sha": "35a1a3a32f13475acf2907139503ec588e0f9b27"
+    },
+    {
+      "ref": "refs/tags/archive/vd6t7n-codex-explore-site-and-create-dossier",
+      "object_sha": "f7b371d19ed73797431817597a249de6b5b83c30",
+      "object_type": "commit",
+      "commit_sha": "f7b371d19ed73797431817597a249de6b5b83c30"
+    },
+    {
+      "ref": "refs/tags/archive/weave-and-mobile-polish",
+      "object_sha": "be133d69b30d48ef16441d3540233c3787d98a5d",
+      "object_type": "commit",
+      "commit_sha": "be133d69b30d48ef16441d3540233c3787d98a5d"
+    },
+    {
+      "ref": "refs/tags/book-archive-2026-10-08",
+      "object_sha": "5218b0926fb1c6955f1576b98f2b64ee51e3befe",
+      "object_type": "tag",
+      "commit_sha": "a3dc26d7eec0299fbc7848dd2b51e5ff4900c352"
+    },
+    {
+      "ref": "refs/tags/snapshot/2026-08-02-spinup",
+      "object_sha": "ebfd4096e68905c168236021985b8944b50b9370",
+      "object_type": "commit",
+      "commit_sha": "ebfd4096e68905c168236021985b8944b50b9370"
+    },
+    {
+      "ref": "refs/tags/v0.7.5",
+      "object_sha": "48994c822c4553573eff257549eba8d2650edd58",
+      "object_type": "tag",
+      "commit_sha": "90d9e1e3f87dd46129da165924a87dc1d79d84fd"
+    }
+  ],
+  "remote_refs": {
+    "HEAD": "0c70e94380df8fba373e5c6ce0d3410f9d20441c",
+    "refs/heads/archive/book-files-2026-10-08": "03c3fe5d9ad3afc72573d0ad572c2474560a3ace",
+    "refs/heads/book-reader-polish": "f3ab4a6e785bdc2db073e50e2a82e91b466769b8",
+    "refs/heads/book-v0.10.0": "f7178bc10257df2b27f1e518813bb4f96a5df222",
+    "refs/heads/book-v0.10.1": "c05cb948902d885b574fce965b544c9681361922",
+    "refs/heads/book-v0.10.2": "85c72ea020db447f37bf080473f5a91734d88031",
+    "refs/heads/book-v0.10.3": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+    "refs/heads/book-v0.10.4": "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+    "refs/heads/book-v0.11.0": "d48ed3964c12f4b13c8fcc821ef81a24f9f4a8d1",
+    "refs/heads/book-v0.11.1-core": "e797fa1500a4bb9864482ced02bf43c771523dfa",
+    "refs/heads/book-v0.8.0": "ae9e1b6f66f766e6b32368fc9e67188a3e1174bc",
+    "refs/heads/book-v0.8.1": "10cfa7a9c30d4b48f13f90f5d6b850a412f97d43",
+    "refs/heads/book-v0.8.2": "a70b74aa38dbc1469038e78280f5a921bd6c11c5",
+    "refs/heads/book-v0.9.0": "181348a8d77fe042e0a4d44d2855533b06942323",
+    "refs/heads/book-v0.9.1": "0f322b7f69b5e613c2eb45d037b5e8a47c783f6a",
+    "refs/heads/book-v0.9.2": "3d29215b54feaa43b4c22e5283ab642833457a07",
+    "refs/heads/book-v0.9.3": "3d29215b54feaa43b4c22e5283ab642833457a07",
+    "refs/heads/claude/claude-md-mln4pmc1d9vxfylx-dB5wh": "01c76751c6fb368c74bcbe3013cdbd6150262d00",
+    "refs/heads/claude/cost-per-labor-unit-l1w2y4": "f314f065016e2c3aea0dcab44926418e1dbc5eb9",
+    "refs/heads/claude/manuscript-update-clm8pq": "57bd62c7189cebaf1324259cd5a27b87440e2af4",
+    "refs/heads/claude/repo-exploration-report-lirxq9": "645f2eea3687cf7958daa7d1cac1e5ebea61ce8f",
+    "refs/heads/claude/se-repos-evaluation-88j1bx": "7ae4e8d35ad418bd2856000df61439334f25fb60",
+    "refs/heads/claude/site-review-audit-bVx9J": "3d34ac3b23e83fea1ec468cb9870b8c32322bc7a",
+    "refs/heads/cloudflare-fix": "a8ea49d7b1ee231258b999692df6b7e4ad0383cd",
+    "refs/heads/continue-card-responsive": "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7",
+    "refs/heads/docs/book-evaluation-2026-10-08": "275d41bc523f40b341369a6a9e581b566b22ca09",
+    "refs/heads/main": "0c70e94380df8fba373e5c6ce0d3410f9d20441c",
+    "refs/heads/release/v0.11.0": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+    "refs/heads/upload-staging-2026-08-15/1": "300761ec49454064f034a36afc5c90091e5c94c9",
+    "refs/heads/upload-staging-2026-08-15/2": "d166e47e581d3e670f0be85cea418ab701049e3b",
+    "refs/heads/upload-staging-2026-08-15/real-1": "77e591d7f93193ca8e2d9bdcc0ca161251843c37",
+    "refs/heads/upload-staging-2026-10-08": "f1236fdb1c1b1662da7dda4dfa65e0392c1d81bb",
+    "refs/heads/upload-staging-codex-2026-10-08": "00a775fe16e84b18d422c50f4b12f34925506406",
+    "refs/heads/upload-test-single": "4ceddee56340ae5cc7e5b4917d906319f2043a25",
+    "refs/heads/v0.7.3": "d19dbb057ef698a1f88167b2ba68021463bc0e09",
+    "refs/heads/vd6t7n-codex/explore-site-and-create-dossier": "f7b371d19ed73797431817597a249de6b5b83c30",
+    "refs/heads/weave-and-mobile-polish": "be133d69b30d48ef16441d3540233c3787d98a5d",
+    "refs/pull/1/head": "010b4a6a5ae9487561292573ec6328024e460df1",
+    "refs/pull/10/head": "cdc29d0d56f9304ff1e61c225d6d107a5547c250",
+    "refs/pull/11/head": "4ec3868bfff269a5f08dc13bd4c1d421cea69d9c",
+    "refs/pull/12/head": "7acd7c576062ed21e5056f01e1ff18f3a131ed14",
+    "refs/pull/13/head": "f228bd010632d01a1f805198641b8dc7aec6fb82",
+    "refs/pull/14/head": "f3ab4a6e785bdc2db073e50e2a82e91b466769b8",
+    "refs/pull/15/head": "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7",
+    "refs/pull/16/head": "4ef002c54ad32d1f9531b88448611f8a5dfecae4",
+    "refs/pull/17/head": "de4d10ab50f3c8093a3814f9abc17ac1ea05e6c0",
+    "refs/pull/18/head": "35a1a3a32f13475acf2907139503ec588e0f9b27",
+    "refs/pull/19/head": "57bd62c7189cebaf1324259cd5a27b87440e2af4",
+    "refs/pull/19/merge": "23c1b54f9d459fbb907d06d1cf7892f171acd4fd",
+    "refs/pull/2/head": "f7b371d19ed73797431817597a249de6b5b83c30",
+    "refs/pull/20/head": "7ae4e8d35ad418bd2856000df61439334f25fb60",
+    "refs/pull/20/merge": "1b21bbfdcdd4d85a6a3d9a069b6e168237bbc3df",
+    "refs/pull/21/head": "f314f065016e2c3aea0dcab44926418e1dbc5eb9",
+    "refs/pull/21/merge": "49da2a3c1054d57d04763751b0fb884d8e1d4443",
+    "refs/pull/22/head": "645f2eea3687cf7958daa7d1cac1e5ebea61ce8f",
+    "refs/pull/22/merge": "6b729c7bdb3e0f7c4d885b981ed4b443448bda3d",
+    "refs/pull/23/head": "275d41bc523f40b341369a6a9e581b566b22ca09",
+    "refs/pull/23/merge": "1658a67b697edff11157c0c51ef34af2eec62302",
+    "refs/pull/24/head": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+    "refs/pull/24/merge": "523df1365805972e1aa3cd0a825979d3b9d6911e",
+    "refs/pull/25/head": "03c3fe5d9ad3afc72573d0ad572c2474560a3ace",
+    "refs/pull/25/merge": "0137e0cfbc6fe7cda843c3584a924f1a2e16cd9e",
+    "refs/pull/26/head": "e797fa1500a4bb9864482ced02bf43c771523dfa",
+    "refs/pull/26/merge": "5422b537e0c56da305c17b25d7dee9543473180e",
+    "refs/pull/3/head": "ba9b37cadef0272c9dba2afa9968b90317f3c362",
+    "refs/pull/4/head": "3d34ac3b23e83fea1ec468cb9870b8c32322bc7a",
+    "refs/pull/5/head": "a93c1bb0a8ab385ccc2943170c75afb4265e479a",
+    "refs/pull/6/head": "acd8445722e047e056e4417d0808e929a5d9dd9c",
+    "refs/pull/7/head": "01c76751c6fb368c74bcbe3013cdbd6150262d00",
+    "refs/pull/8/head": "4576aa091ade76429f4e34158f8910a4f846372a",
+    "refs/pull/9/head": "37bf49eb0ac2ac54bb51c3588cfd40cd33a66847",
+    "refs/replace/120672a08a3c9bfc31cabc5690357d74db6a5784": "1793fb06b0c2843f700204c34c0dc6697bfef28f",
+    "refs/replace/2d857ea984c8626cce09d35fa9ec06665b652bd8": "bdac735c10e4411ea729d20e33f7cd7557a927c2",
+    "refs/replace/4204a17cc7b88a49009b8b9833dfb3f042db90dc": "aabdd2d8a7921dde80baecf6ce214738484ecfdd",
+    "refs/replace/43a86b8c2214c55d6cae4044a01a9fad5f1fd4b4": "e171dc7bd6a32a178aef1b93e329eb8dfe9d1b4a",
+    "refs/replace/464614f00aae5843ddbe9ffd8711cc325a78e482": "3971a411483dd7890f364b1f9795e74a6586feb4",
+    "refs/replace/60250245299cd6fdfdb170a8930973fd9d44074c": "0a2839379a0a5000793ea6366ce72c8fd981ad38",
+    "refs/replace/68a2cccd977eb314a079d24034bd0d9cc4953242": "e7025399071441ebc99f677e66c7685cb51a5562",
+    "refs/replace/70bd12e8ef1f41cc79f7e98ceea2bde38651841e": "40eac22472edc3249d1a00fb2ec407814c3d7adf",
+    "refs/replace/a30910cf0b04006cd1c5a60d014056a1a7447d39": "8cd351a49a0bec7bf3d673e1b3f5b7c427e2eb3d",
+    "refs/replace/a67d9eceb6948c885a93371ac6a2a47e2a0d69d0": "4c7a410191539fd43785912666dd429e96cc05af",
+    "refs/replace/b41f3e390173143f50afd73455f4806e963e92fb": "7b252032b4901bf08b965b375147940c68fca1db",
+    "refs/replace/dae6ccf7dbbd17a80f3b13fd025719e56b3d2051": "14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695",
+    "refs/replace/de36cfe1d208bfda2bd17e753479d779be936e46": "a94a52de8562f776789f579dba7151ea5147d8ed",
+    "refs/replace/e8d3dbff6007280224f7249db9e9c24f4dce2fee": "4dd4c4a09a0c86265436b26ccd29d30b96bf2579",
+    "refs/tags/archive/StS-Game": "cff8baf744d66e014e0c0b9a46046e42442164c9",
+    "refs/tags/archive/StS-Game-2026-10-05": "144232bbf353eb4397d857973d1c6e8fb9d2504e",
+    "refs/tags/archive/StS-Game-2026-10-05^{}": "1b61bc9b01af46cdcf8c3d8b0392d2139af11121",
+    "refs/tags/archive/book-art-optimized-2026-07-25": "e0ff6a891ddbee7db1cc8ef1e0c34e86302e18eb",
+    "refs/tags/archive/book-fixes-round2": "7acd7c576062ed21e5056f01e1ff18f3a131ed14",
+    "refs/tags/archive/book-launch": "316ecb7f7cf62d1c814d638dd9971f4064e6b941",
+    "refs/tags/archive/book-page-full-text": "cdc29d0d56f9304ff1e61c225d6d107a5547c250",
+    "refs/tags/archive/book-reader-experience-upgrade": "de4d10ab50f3c8093a3814f9abc17ac1ea05e6c0",
+    "refs/tags/archive/book-reader-polish": "f3ab4a6e785bdc2db073e50e2a82e91b466769b8",
+    "refs/tags/archive/book-reader-redesign": "4ec3868bfff269a5f08dc13bd4c1d421cea69d9c",
+    "refs/tags/archive/book-relock-on-reload": "4ef002c54ad32d1f9531b88448611f8a5dfecae4",
+    "refs/tags/archive/book-wip-badges": "f228bd010632d01a1f805198641b8dc7aec6fb82",
+    "refs/tags/archive/claude-claude-md-mln4pmc1d9vxfylx-dB5wh": "01c76751c6fb368c74bcbe3013cdbd6150262d00",
+    "refs/tags/archive/claude-create-claude-md-book-revival-jPYAp": "ba9b37cadef0272c9dba2afa9968b90317f3c362",
+    "refs/tags/archive/claude-integrate-book-outline-zT27v": "acd8445722e047e056e4417d0808e929a5d9dd9c",
+    "refs/tags/archive/claude-review-and-test-0GC3w": "a93c1bb0a8ab385ccc2943170c75afb4265e479a",
+    "refs/tags/archive/claude-site-review-audit-bVx9J": "3d34ac3b23e83fea1ec468cb9870b8c32322bc7a",
+    "refs/tags/archive/cloudflare-fix": "a8ea49d7b1ee231258b999692df6b7e4ad0383cd",
+    "refs/tags/archive/codex-explore-site-and-create-dossier": "010b4a6a5ae9487561292573ec6328024e460df1",
+    "refs/tags/archive/continue-card-responsive": "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7",
+    "refs/tags/archive/dev-site-v2": "4576aa091ade76429f4e34158f8910a4f846372a",
+    "refs/tags/archive/dev-v2-manifesto": "f2333b79e255d33cd77ebf1d26de0ff37a982ee1",
+    "refs/tags/archive/devlog-live": "17e142232668ef8396339f3d1499d7ea9d19fb39",
+    "refs/tags/archive/devlog-live^{}": "bc86142b126f752e2074a5146e44bb084351525f",
+    "refs/tags/archive/go-live-preflight": "37bf49eb0ac2ac54bb51c3588cfd40cd33a66847",
+    "refs/tags/archive/hotfix-checkout-honesty": "318e33e8625175b71337481b7f9f66b4eac13ea8",
+    "refs/tags/archive/hotfix-checkout-honesty^{}": "9bda1d61316ae781ed53b2eae323d68edeade785",
+    "refs/tags/archive/manuscript-block-ids": "18536edbfb5637ec84e62db925a74cd01b733a29",
+    "refs/tags/archive/manuscript-block-ids^{}": "1631bcdacf8db5aa93dcab6c3ef2d63cbeaedd91",
+    "refs/tags/archive/reader-toggle-inline": "35a1a3a32f13475acf2907139503ec588e0f9b27",
+    "refs/tags/archive/vd6t7n-codex-explore-site-and-create-dossier": "f7b371d19ed73797431817597a249de6b5b83c30",
+    "refs/tags/archive/weave-and-mobile-polish": "be133d69b30d48ef16441d3540233c3787d98a5d",
+    "refs/tags/book-archive-2026-10-08": "5218b0926fb1c6955f1576b98f2b64ee51e3befe",
+    "refs/tags/book-archive-2026-10-08^{}": "a3dc26d7eec0299fbc7848dd2b51e5ff4900c352",
+    "refs/tags/v0.7.5": "48994c822c4553573eff257549eba8d2650edd58",
+    "refs/tags/v0.7.5^{}": "90d9e1e3f87dd46129da165924a87dc1d79d84fd"
+  },
+  "worktrees": [
+    {
+      "path": "/Users/ctavolazzi/Code/active/survivingthesingularity",
+      "head": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+      "branch": "refs/heads/book-art-optimized-2026-07-25",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [
+        {
+          "status": " M",
+          "path": ".empirica/sessions/sessions.db"
+        },
+        {
+          "status": " M",
+          "path": ".empirica/sessions/sessions.db-shm"
+        }
+      ],
+      "read_utc": "2026-10-09T15:42:21.837851+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-game-preview",
+      "head": "1b61bc9b01af46cdcf8c3d8b0392d2139af11121",
+      "branch": "refs/heads/StS-Game",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:21.813748+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-release-v0.11.0",
+      "head": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+      "branch": "refs/heads/release/v0.11.0",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:21.831718+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-site-fixes",
+      "head": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+      "branch": "refs/heads/site/critique-fixes-2026-10-09",
+      "authored_or_unclassified_changes": [
+        {
+          "status": " M",
+          "path": "src/app.html"
+        },
+        {
+          "status": " M",
+          "path": "src/lib/components/BookGate.svelte"
+        },
+        {
+          "status": " M",
+          "path": "src/lib/components/DiscordApplication.svelte"
+        },
+        {
+          "status": " M",
+          "path": "src/lib/offer.js"
+        },
+        {
+          "status": " M",
+          "path": "src/routes/+page.svelte"
+        },
+        {
+          "status": " M",
+          "path": "src/routes/about/+page.svelte"
+        },
+        {
+          "status": " M",
+          "path": "src/routes/blog/+page.svelte"
+        },
+        {
+          "status": " M",
+          "path": "src/routes/blog/robot-farm-bot/+page.svelte"
+        },
+        {
+          "status": " M",
+          "path": "src/routes/exclusive-friends-only/+page.svelte"
+        },
+        {
+          "status": " M",
+          "path": "src/routes/factcheck/+page.svelte"
+        }
+      ],
+      "excluded_runtime_changes": [
+        {
+          "status": " M",
+          "path": "static/images/optimized/.build-cache.json",
+          "classification": "generated_build_metadata"
+        },
+        {
+          "status": " M",
+          "path": "static/images/optimized/manifest.json",
+          "classification": "generated_build_metadata"
+        }
+      ],
+      "read_utc": "2026-10-09T15:42:21.857989+00:00",
+      "latest_untracked_authored_check": {
+        "checked_utc": "2026-10-09T15:51:54.292905+00:00",
+        "untracked_paths": []
+      }
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-upload-2026-10-08",
+      "head": "03c3fe5d9ad3afc72573d0ad572c2474560a3ace",
+      "branch": "refs/heads/archive/book-files-2026-10-08",
+      "authored_or_unclassified_changes": [
+        {
+          "status": "??",
+          "path": "docs/uploads/2026-10-09/site-work-in-progress.patch"
+        },
+        {
+          "status": "??",
+          "path": "docs/uploads/2026-10-09/site-work-snapshot.json"
+        }
+      ],
+      "excluded_runtime_changes": [
+        {
+          "status": "??",
+          "path": "docs/uploads/2026-10-08/__pycache__/chunk-upload.cpython-314.pyc"
+        }
+      ],
+      "read_utc": "2026-10-09T15:42:21.889847+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.0",
+      "head": "f7178bc10257df2b27f1e518813bb4f96a5df222",
+      "branch": "refs/heads/book-v0.10.0",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:21.973250+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.1",
+      "head": "c05cb948902d885b574fce965b544c9681361922",
+      "branch": "refs/heads/book-v0.10.1",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:21.958280+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.2",
+      "head": "85c72ea020db447f37bf080473f5a91734d88031",
+      "branch": "refs/heads/book-v0.10.2",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:21.991113+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.3",
+      "head": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+      "branch": "refs/heads/book-v0.10.3",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.043675+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.4",
+      "head": "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+      "branch": "refs/heads/book-v0.10.4",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.116514+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.11.0",
+      "head": "d48ed3964c12f4b13c8fcc821ef81a24f9f4a8d1",
+      "branch": "refs/heads/book-v0.11.0",
+      "authored_or_unclassified_changes": [
+        {
+          "status": "??",
+          "path": "docs/uploads/2026-10-08/artifact-inventory.json"
+        }
+      ],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.130088+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.7.3",
+      "head": "d19dbb057ef698a1f88167b2ba68021463bc0e09",
+      "branch": "refs/heads/v0.7.3",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.122840+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.8.0",
+      "head": "ae9e1b6f66f766e6b32368fc9e67188a3e1174bc",
+      "branch": "refs/heads/book-v0.8.0",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.137788+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.8.1",
+      "head": "10cfa7a9c30d4b48f13f90f5d6b850a412f97d43",
+      "branch": "refs/heads/book-v0.8.1",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.223734+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.8.2",
+      "head": "a70b74aa38dbc1469038e78280f5a921bd6c11c5",
+      "branch": "refs/heads/book-v0.8.2",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.236099+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.9.0",
+      "head": "181348a8d77fe042e0a4d44d2855533b06942323",
+      "branch": "refs/heads/book-v0.9.0",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.243492+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.9.1",
+      "head": "0f322b7f69b5e613c2eb45d037b5e8a47c783f6a",
+      "branch": "refs/heads/book-v0.9.1",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.258474+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.9.2",
+      "head": "3d29215b54feaa43b4c22e5283ab642833457a07",
+      "branch": "refs/heads/book-v0.9.2",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.315292+00:00"
+    },
+    {
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.9.3",
+      "head": "3d29215b54feaa43b4c22e5283ab642833457a07",
+      "branch": "refs/heads/book-v0.9.3",
+      "authored_or_unclassified_changes": [],
+      "excluded_runtime_changes": [],
+      "read_utc": "2026-10-09T15:42:22.323905+00:00"
+    }
+  ],
+  "remote_tip_objects_known_locally": [
+    "00a775fe16e84b18d422c50f4b12f34925506406",
+    "010b4a6a5ae9487561292573ec6328024e460df1",
+    "01c76751c6fb368c74bcbe3013cdbd6150262d00",
+    "03c3fe5d9ad3afc72573d0ad572c2474560a3ace",
+    "0c70e94380df8fba373e5c6ce0d3410f9d20441c",
+    "0f322b7f69b5e613c2eb45d037b5e8a47c783f6a",
+    "10cfa7a9c30d4b48f13f90f5d6b850a412f97d43",
+    "144232bbf353eb4397d857973d1c6e8fb9d2504e",
+    "1631bcdacf8db5aa93dcab6c3ef2d63cbeaedd91",
+    "17e142232668ef8396339f3d1499d7ea9d19fb39",
+    "181348a8d77fe042e0a4d44d2855533b06942323",
+    "18536edbfb5637ec84e62db925a74cd01b733a29",
+    "1b61bc9b01af46cdcf8c3d8b0392d2139af11121",
+    "275d41bc523f40b341369a6a9e581b566b22ca09",
+    "300761ec49454064f034a36afc5c90091e5c94c9",
+    "316ecb7f7cf62d1c814d638dd9971f4064e6b941",
+    "318e33e8625175b71337481b7f9f66b4eac13ea8",
+    "35a1a3a32f13475acf2907139503ec588e0f9b27",
+    "37bf49eb0ac2ac54bb51c3588cfd40cd33a66847",
+    "3d29215b54feaa43b4c22e5283ab642833457a07",
+    "3d34ac3b23e83fea1ec468cb9870b8c32322bc7a",
+    "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+    "4576aa091ade76429f4e34158f8910a4f846372a",
+    "48994c822c4553573eff257549eba8d2650edd58",
+    "4ceddee56340ae5cc7e5b4917d906319f2043a25",
+    "4ec3868bfff269a5f08dc13bd4c1d421cea69d9c",
+    "4ef002c54ad32d1f9531b88448611f8a5dfecae4",
+    "5218b0926fb1c6955f1576b98f2b64ee51e3befe",
+    "57bd62c7189cebaf1324259cd5a27b87440e2af4",
+    "645f2eea3687cf7958daa7d1cac1e5ebea61ce8f",
+    "77e591d7f93193ca8e2d9bdcc0ca161251843c37",
+    "7acd7c576062ed21e5056f01e1ff18f3a131ed14",
+    "7ae4e8d35ad418bd2856000df61439334f25fb60",
+    "85c72ea020db447f37bf080473f5a91734d88031",
+    "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+    "90d9e1e3f87dd46129da165924a87dc1d79d84fd",
+    "9bda1d61316ae781ed53b2eae323d68edeade785",
+    "a3dc26d7eec0299fbc7848dd2b51e5ff4900c352",
+    "a70b74aa38dbc1469038e78280f5a921bd6c11c5",
+    "a8ea49d7b1ee231258b999692df6b7e4ad0383cd",
+    "a93c1bb0a8ab385ccc2943170c75afb4265e479a",
+    "acd8445722e047e056e4417d0808e929a5d9dd9c",
+    "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+    "ae9e1b6f66f766e6b32368fc9e67188a3e1174bc",
+    "ba9b37cadef0272c9dba2afa9968b90317f3c362",
+    "bc86142b126f752e2074a5146e44bb084351525f",
+    "be133d69b30d48ef16441d3540233c3787d98a5d",
+    "c05cb948902d885b574fce965b544c9681361922",
+    "cdc29d0d56f9304ff1e61c225d6d107a5547c250",
+    "ce7a5cb98f7289d68c145fa3abf8ff3b85058ad7",
+    "cff8baf744d66e014e0c0b9a46046e42442164c9",
+    "d166e47e581d3e670f0be85cea418ab701049e3b",
+    "d19dbb057ef698a1f88167b2ba68021463bc0e09",
+    "d48ed3964c12f4b13c8fcc821ef81a24f9f4a8d1",
+    "de4d10ab50f3c8093a3814f9abc17ac1ea05e6c0",
+    "e0ff6a891ddbee7db1cc8ef1e0c34e86302e18eb",
+    "f1236fdb1c1b1662da7dda4dfa65e0392c1d81bb",
+    "f228bd010632d01a1f805198641b8dc7aec6fb82",
+    "f2333b79e255d33cd77ebf1d26de0ff37a982ee1",
+    "f314f065016e2c3aea0dcab44926418e1dbc5eb9",
+    "f3ab4a6e785bdc2db073e50e2a82e91b466769b8",
+    "f7178bc10257df2b27f1e518813bb4f96a5df222",
+    "f7b371d19ed73797431817597a249de6b5b83c30"
+  ],
+  "remote_tip_objects_unavailable_locally": [
+    "e797fa1500a4bb9864482ced02bf43c771523dfa"
+  ],
+  "coverage_method": "Raw Git commit ancestry from live GitHub heads/tags with locally available objects. No fetch/ref mutation. Missing-tip comparisons against the newer remote edition branch also checked via read-only GitHub API; HTTP404 does not establish ancestry.",
+  "local_refs_not_reachable_from_known_live_remote_heads_tags": [
+    {
+      "ref": "refs/heads/archive/book-downloads-2026-10-08",
+      "object_sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8",
+      "object_type": "commit",
+      "commit_sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8"
+    },
+    {
+      "ref": "refs/heads/book-art-optimized-2026-07-25",
+      "object_sha": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+      "object_type": "commit",
+      "commit_sha": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd"
+    },
+    {
+      "ref": "refs/tags/snapshot/2026-08-02-spinup",
+      "object_sha": "ebfd4096e68905c168236021985b8944b50b9370",
+      "object_type": "commit",
+      "commit_sha": "ebfd4096e68905c168236021985b8944b50b9370"
+    }
+  ],
+  "uncovered_ancestor_commits": [
+    {
+      "sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8",
+      "committed_utc": "2026-10-08T15:54:10-07:00",
+      "subject": "archive: document historical source anchors and version ambiguities",
+      "parents": [
+        "ddcd127419d026503c1835b61137ef235b9a4a96"
+      ],
+      "changed_files_against_first_parent": [
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/SOURCE-PROVENANCE.md"
+        },
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/source-provenance.json"
+        }
+      ]
+    },
+    {
+      "sha": "ddcd127419d026503c1835b61137ef235b9a4a96",
+      "committed_utc": "2026-10-08T15:53:05-07:00",
+      "subject": "archive: inventory all available book editions and prepare verified uploads",
+      "parents": [
+        "f5835e217ef8e27bc8b780ee49a47d88d20e3f9a"
+      ],
+      "changed_files_against_first_parent": [
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/README.md"
+        },
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/SHA256SUMS.txt"
+        },
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/artifact-inventory.json"
+        },
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/book-archive-manifest.json"
+        },
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/game-preview-work.patch"
+        },
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/recent-work.json"
+        },
+        {
+          "status": "A",
+          "path": "docs/uploads/2026-10-08/upload.py"
+        }
+      ]
+    },
+    {
+      "sha": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+      "committed_utc": "2026-10-05T20:28:08-07:00",
+      "subject": "Snapshot: working tree as of 2026-10-05 20:26",
+      "parents": [
+        "e0ff6a891ddbee7db1cc8ef1e0c34e86302e18eb"
+      ],
+      "changed_files_against_first_parent": [
+        {
+          "status": "M",
+          "path": ".empirica/sessions/sessions.db"
+        },
+        {
+          "status": "M",
+          "path": ".empirica/sessions/sessions.db-shm"
+        },
+        {
+          "status": "A",
+          "path": ".empirica_reflex_logs/checkpoints/c9aafa54-27b0-471f-9d84-73df1b7e0f08/checkpoint_CHECK_2_20260726_215609.json"
+        },
+        {
+          "status": "A",
+          "path": ".empirica_reflex_logs/checkpoints/c9aafa54-27b0-471f-9d84-73df1b7e0f08/checkpoint_POSTFLIGHT_1_20260726_205159.json"
+        },
+        {
+          "status": "A",
+          "path": ".empirica_reflex_logs/checkpoints/c9aafa54-27b0-471f-9d84-73df1b7e0f08/checkpoint_PREFLIGHT_1_20260726_210231.json"
+        }
+      ]
+    },
+    {
+      "sha": "ebfd4096e68905c168236021985b8944b50b9370",
+      "committed_utc": "2026-08-02T09:24:35-07:00",
+      "subject": "On v0.7.3: pre-commit snapshot 2026-08-02 spinup fix day",
+      "parents": [
+        "af9106056e32aacd3a1f3a9e785777ac3d75b735",
+        "64e477e5ef8ccf1ae1492f27ea26cedd9222840b"
+      ],
+      "changed_files_against_first_parent": [
+        {
+          "status": "M",
+          "path": "AUDITOR-BRIEF.md"
+        },
+        {
+          "status": "M",
+          "path": "RELEASES.md"
+        },
+        {
+          "status": "M",
+          "path": "STRIPE-GO-LIVE.md"
+        },
+        {
+          "status": "M",
+          "path": "V0.7.4-SCOPE.md"
+        },
+        {
+          "status": "M",
+          "path": "manuscript/EDITORIAL-QUEUE.md"
+        },
+        {
+          "status": "M",
+          "path": "playwright.config.js"
+        },
+        {
+          "status": "M",
+          "path": "scripts/build_workshop_data.py"
+        },
+        {
+          "status": "M",
+          "path": "scripts/og_cards.json"
+        },
+        {
+          "status": "M",
+          "path": "src/app.css"
+        },
+        {
+          "status": "M",
+          "path": "src/app.html"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/components/Navbar.svelte"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/data/book/01-preface.md"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/data/book/art-catalog.json"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/data/book/book.json"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/data/book/image-dimensions.json"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/data/book/manuscript-index.json"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/data/devlog.json"
+        },
+        {
+          "status": "M",
+          "path": "src/lib/data/workshop.json"
+        },
+        {
+          "status": "M",
+          "path": "src/routes/+page.svelte"
+        },
+        {
+          "status": "M",
+          "path": "src/routes/devlog/the-easier-question/content.html"
+        },
+        {
+          "status": "M",
+          "path": "src/routes/workshop/+page.svelte"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/manifest.json"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/surviving_the_singularity_cover_1200.png"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/surviving_the_singularity_cover_400.png"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/surviving_the_singularity_cover_400.webp"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/surviving_the_singularity_cover_800.png"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/surviving_the_singularity_cover_800.webp"
+        },
+        {
+          "status": "M",
+          "path": "static/images/optimized/surviving_the_singularity_cover_original.webp"
+        },
+        {
+          "status": "M",
+          "path": "tests/reports/html/index.html"
+        },
+        {
+          "status": "M",
+          "path": "tests/reports/results.json"
+        },
+        {
+          "status": "M",
+          "path": "vite.config.js"
+        },
+        {
+          "status": "M",
+          "path": "work_efforts/12_image_optimization_enhancements/image_build_hook.js"
+        }
+      ]
+    },
+    {
+      "sha": "64e477e5ef8ccf1ae1492f27ea26cedd9222840b",
+      "committed_utc": "2026-08-02T09:24:35-07:00",
+      "subject": "index on v0.7.3: af91060 email: put a real receipt in the one email a customer keeps",
+      "parents": [
+        "af9106056e32aacd3a1f3a9e785777ac3d75b735"
+      ],
+      "changed_files_against_first_parent": []
+    }
+  ],
+  "api_ancestry_checks": [
+    {
+      "local_commit": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8",
+      "remote_tip": "e797fa1500a4bb9864482ced02bf43c771523dfa",
+      "exit_code": 1,
+      "result": "HTTP404"
+    },
+    {
+      "local_commit": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+      "remote_tip": "e797fa1500a4bb9864482ced02bf43c771523dfa",
+      "exit_code": 1,
+      "result": "HTTP404"
+    },
+    {
+      "local_commit": "ebfd4096e68905c168236021985b8944b50b9370",
+      "remote_tip": "e797fa1500a4bb9864482ced02bf43c771523dfa",
+      "exit_code": 1,
+      "result": "HTTP404"
+    }
+  ],
+  "side_branch_provenance_blob_matches": {
+    "SOURCE-PROVENANCE.md": {
+      "local_side_branch_blob": "69cd4567eac703ec18925d8febef951093cb5bd2",
+      "uploaded_archive_branch_blob": "69cd4567eac703ec18925d8febef951093cb5bd2",
+      "identical": true
+    },
+    "source-provenance.json": {
+      "local_side_branch_blob": "7e8363cf4f0b907fa0f3facd2ea919dc8c55576c",
+      "uploaded_archive_branch_blob": "7e8363cf4f0b907fa0f3facd2ea919dc8c55576c",
+      "identical": true
+    }
+  },
+  "findings": [
+    {
+      "classification": "local_only_authored_history",
+      "ref": "refs/tags/snapshot/2026-08-02-spinup",
+      "sha": "ebfd4096e68905c168236021985b8944b50b9370",
+      "note": "Pre-commit snapshot has no remote ref or ancestry in complete captured live remote branch/tag graph. Exactly four authored metadata/source blobs and two generated test report blobs are absent remote. Independent redacted privacy review found no new credentials or private customer data; see snapshot_redacted_privacy_review."
+    },
+    {
+      "classification": "local_only_superseded_archive_history",
+      "ref": "refs/heads/archive/book-downloads-2026-10-08",
+      "sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8",
+      "note": "Two local archive drafting commits lack remote history coverage, but their entire tip tree has zero blob bytes absent the complete captured live remote graph. Ordinary branch push would preserve exact history only."
+    },
+    {
+      "classification": "excluded_runtime_only_snapshot",
+      "ref": "refs/heads/book-art-optimized-2026-07-25",
+      "sha": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+      "note": "Only session databases and Empirica checkpoint logs differ from already-uploaded archive artwork tag. No authored artwork/source gap."
+    },
+    {
+      "classification": "active_concurrent_authored_edits",
+      "worktree": "/Users/ctavolazzi/Code/active/sts-site-fixes",
+      "ref": "refs/heads/site/critique-fixes-2026-10-09",
+      "head": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+      "note": "HEAD is covered by remote release/v0.11.0; new working edits are not committed/uploaded. Claude owns active edits; preserve untouched."
+    },
+    {
+      "classification": "duplicate_untracked_inventory",
+      "details": {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.11.0/docs/uploads/2026-10-08/artifact-inventory.json",
+        "canonical_path": "/Users/ctavolazzi/Code/active/sts-upload-2026-10-08/docs/uploads/2026-10-08/artifact-inventory.json",
+        "exists": true,
+        "bytes": 358781,
+        "sha256": "09707caf4847eaa2a7e50207ead1d77d4ea210bcfeef05b85a863d70317bec70",
+        "byte_identical_to_uploaded_inventory": true
+      },
+      "note": "Untracked inventory does not represent missing authored bytes if byte-identical."
+    },
+    {
+      "classification": "remote_ahead_local_main",
+      "local": "c3019ce3dd75972c4abeda998c046e755d7a6af3",
+      "remote": "0c70e94380df8fba373e5c6ce0d3410f9d20441c",
+      "local_only_commits": 0,
+      "remote_only_commits": 141
+    },
+    {
+      "classification": "remote_only_new_edition_branch",
+      "ref": "refs/heads/book-v0.11.1-core",
+      "sha": "e797fa1500a4bb9864482ced02bf43c771523dfa",
+      "note": "Already uploaded on GitHub; no corresponding local branch/worktree at audit time."
+    }
+  ],
+  "limitations": [
+    "Worktree status and refs may change during active concurrent Claude edits.",
+    "No Git objects or refs were fetched. Unknown remote commit/tree metadata was covered through read-only GitHub API; complete remote object review is recorded separately from the initial known-object ancestry check.",
+    "Ignored build derivatives are not included in git status; uploaded release payloads are covered by prior archive receipts."
+  ],
+  "remote_object_coverage_review": {
+    "reviewed_utc": "2026-10-09T15:51:54.293960+00:00",
+    "remote_reachable_object_count": 14777,
+    "api_expansion_for_unknown_remote_history": [
+      {
+        "commit": "e797fa1500a4bb9864482ced02bf43c771523dfa",
+        "tree": "abaf51088b8f0494924e2bf55db7c57dab99d1e1",
+        "parents": [
+          "f5835e217ef8e27bc8b780ee49a47d88d20e3f9a"
+        ],
+        "tree_entries": 4211,
+        "tree_truncated": false
+      }
+    ],
+    "api_errors": [],
+    "unique_blob_reviews": [
+      {
+        "ref": "refs/heads/archive/book-downloads-2026-10-08",
+        "commit_sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8",
+        "commit_present_in_remote_object_graph": false,
+        "unique_blobs_absent_remote_object_graph": [],
+        "complete_remote_graph_checked": true
+      },
+      {
+        "ref": "refs/heads/book-art-optimized-2026-07-25",
+        "commit_sha": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+        "commit_present_in_remote_object_graph": false,
+        "unique_blobs_absent_remote_object_graph": [
+          {
+            "path": ".empirica/sessions/sessions.db",
+            "blob_sha": "fc7011823f30296298df76dd9385785730f5c013",
+            "classification": "generated_or_runtime"
+          },
+          {
+            "path": ".empirica/sessions/sessions.db-shm",
+            "blob_sha": "94c8367feb98c84af291861e1b1aed6b270481d1",
+            "classification": "generated_or_runtime"
+          },
+          {
+            "path": ".empirica_reflex_logs/checkpoints/c9aafa54-27b0-471f-9d84-73df1b7e0f08/checkpoint_CHECK_2_20260726_215609.json",
+            "blob_sha": "e80c15d8096f6c188ff2db7bcfad6eea20e6e0e3",
+            "classification": "generated_or_runtime"
+          },
+          {
+            "path": ".empirica_reflex_logs/checkpoints/c9aafa54-27b0-471f-9d84-73df1b7e0f08/checkpoint_POSTFLIGHT_1_20260726_205159.json",
+            "blob_sha": "5c2258260fb354a068739d523f90ce03d0f4a01c",
+            "classification": "generated_or_runtime"
+          },
+          {
+            "path": ".empirica_reflex_logs/checkpoints/c9aafa54-27b0-471f-9d84-73df1b7e0f08/checkpoint_PREFLIGHT_1_20260726_210231.json",
+            "blob_sha": "e0f694b648ba5082f005c484e761fa9be9b9c891",
+            "classification": "generated_or_runtime"
+          }
+        ],
+        "complete_remote_graph_checked": true
+      },
+      {
+        "ref": "refs/tags/snapshot/2026-08-02-spinup",
+        "commit_sha": "ebfd4096e68905c168236021985b8944b50b9370",
+        "commit_present_in_remote_object_graph": false,
+        "unique_blobs_absent_remote_object_graph": [
+          {
+            "path": "RELEASES.md",
+            "blob_sha": "33fbca42f0f6dec074c8807685b2789f5e6f2f31",
+            "classification": "authored_or_unclassified"
+          },
+          {
+            "path": "src/lib/components/Navbar.svelte",
+            "blob_sha": "069c1a86af74a11c4c074fa30c99efde7dbe4fa2",
+            "classification": "authored_or_unclassified"
+          },
+          {
+            "path": "src/lib/data/book/book.json",
+            "blob_sha": "786f02146d7071194e9c07a6a4d8cb80de6531da",
+            "classification": "authored_or_unclassified"
+          },
+          {
+            "path": "src/lib/data/book/manuscript-index.json",
+            "blob_sha": "9ca350b18b57e6267ec2b8e74e226427d1586cb3",
+            "classification": "authored_or_unclassified"
+          },
+          {
+            "path": "tests/reports/html/index.html",
+            "blob_sha": "02749f0984752a680b610979faa14561c34d5279",
+            "classification": "generated_or_runtime"
+          },
+          {
+            "path": "tests/reports/results.json",
+            "blob_sha": "e0dde1316b2adb357a7e2e087d8779a3de270e8f",
+            "classification": "generated_or_runtime"
+          }
+        ],
+        "complete_remote_graph_checked": true
+      }
+    ],
+    "complete_remote_graph_checked": true,
+    "scope": "Captured live remote branch/tag histories. Unknown commit/tree metadata via read-only GitHub API. No git fetch/object-store/ref mutation."
+  },
+  "evidence_updated_utc": "2026-10-09T15:59:48.283123+00:00",
+  "snapshot_redacted_privacy_review": {
+    "reviewed_utc": "2026-10-09T15:57:49.221054+00:00",
+    "reviewer": "codex:solarpunk_sources",
+    "commit": "ebfd4096e68905c168236021985b8944b50b9370",
+    "first_parent": "af9106056e32aacd3a1f3a9e785777ac3d75b735",
+    "stash_index_parent": "64e477e5ef8ccf1ae1492f27ea26cedd9222840b",
+    "stash_index_tree_changes": 0,
+    "changed_paths": 33,
+    "changed_text_paths_scanned": 26,
+    "book_cover_derivatives": 7,
+    "embedded_report_zip_count": 1,
+    "embedded_report_json_members": 14,
+    "report_test_structure_records": 542,
+    "populated_customer_contact_card_auth_secret_fields": 0,
+    "new_credential_pattern_findings": 0,
+    "inherited_static_library_literal_hits": 4,
+    "webhook_placeholder_count": 1,
+    "placeholder_contact_count": 1,
+    "inherited_unclassified_email_shaped_tokens": 1,
+    "inherited_email_value_disclosed": false,
+    "inherited_email_source_path": "STRIPE-GO-LIVE.md",
+    "inherited_email_source_line": 331,
+    "entire_inherited_email_source_blob_already_remote_covered": true,
+    "conclusion": "No newly introduced credentials or private customer data found by redacted source/report review. Unique report objects contain synthetic test structure, with no populated customer/contact/card/auth/secret fields. Ordinary archival tag push preserves authored history without newly exposing the inherited STRIPE-GO-LIVE token.",
+    "limitations": [
+      "Pattern and contextual review can establish observed findings, not guarantee absence of every possible secret format.",
+      "No secret, token, email address or customer value was written into audit evidence."
+    ],
+    "placeholder_named_workshop_literals": 2,
+    "public_stripe_price_product_identifier_occurrences": 15,
+    "inherited_remote_covered_local_path_occurrences": 2,
+    "independent_review_complete": true,
+    "incremental_privacy_blocker_found": false
+  }
+}

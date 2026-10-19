@@ -1,0 +1,21 @@
+{
+  "schema": "sts-supplement-build/v1",
+  "verified_utc": "2026-10-09T16:00:40.416613+00:00",
+  "passed": true,
+  "repository": "ctavolazzi/survivingthesingularity",
+  "tag": "book-work-archive-2026-10-09",
+  "archive": {
+    "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst",
+    "bytes": 123741800,
+    "sha256": "db1da47195f82bec1f7fd3ca1ceb5d7db17568fe4f38cf99a49480c50dd6ccaa"
+  },
+  "payload_count": 147,
+  "payload_bytes": 380405614,
+  "verified_tar_members": 149,
+  "secret_scan": "gitleaks dir, archive depth 2, no findings",
+  "verification": "Every original source, staged file and decompressed tar member matched its exact size and SHA256; member set and regular-file types also checked.",
+  "decoder": "zstd --long=29 -dc",
+  "inventory_sha256": "f5c9799e27c92312c203de5fa1b48c28fdde8d5e813119903eab6570df363a64",
+  "portable_manifest_sha256": "254184b12327de60a8ffd2060d62a43d58863b1ab4bf98ffa01ca7e87315ad09",
+  "inventory_binding_verification": "Exact portable inventory compared with manifest.json read from the verified compressed archive."
+}

@@ -1,0 +1,311 @@
+{
+  "schema": "sts-complete-coverage-report/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "updated_utc": "2026-10-09T17:13:04.946143+00:00",
+  "status": "complete",
+  "scope": "All recovered local book editions and associated project work identified by the October 9 file, source-ref and GitHub-release audits. Concurrent website edits are captured separately as a timestamped snapshot.",
+  "prior_book_archive": {
+    "tag": "book-archive-2026-10-08",
+    "files": 149,
+    "original_paths_rehashed": 505,
+    "remote_parts_verified": 91,
+    "remote_metadata_assets_verified": 11,
+    "mismatches": 0
+  },
+  "newly_uploaded_history": [
+    {
+      "ref": "refs/tags/snapshot/2026-08-02-spinup",
+      "sha": "ebfd4096e68905c168236021985b8944b50b9370",
+      "remote_verified": true,
+      "remote_verified_utc": "2026-10-09T17:01:44.592318+00:00"
+    },
+    {
+      "ref": "refs/heads/archive/book-downloads-2026-10-08",
+      "sha": "485155786d8c1339f79fb5eee9ec0dcaa2841fc8",
+      "remote_verified": true,
+      "remote_verified_utc": "2026-10-09T17:01:44.593528+00:00"
+    }
+  ],
+  "supplement": {
+    "tag": "book-work-archive-2026-10-09",
+    "archive": {
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst",
+      "bytes": 123741800,
+      "sha256": "db1da47195f82bec1f7fd3ca1ceb5d7db17568fe4f38cf99a49480c50dd6ccaa"
+    },
+    "payload_count": 147,
+    "payload_bytes": 380405614,
+    "parts": 30,
+    "local_archive_and_decompression_verified": true,
+    "downloader_offline_combined_stream_verified": true,
+    "publication_pending": false,
+    "published": true,
+    "release_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-work-archive-2026-10-09",
+    "remote_parts_verified": 30,
+    "remote_metadata_assets_verified": 6,
+    "public_metadata_downloads_verified": 6,
+    "public_archive_byte_ranges_verified": 2,
+    "full_public_part_downloads_completed": false
+  },
+  "research_snapshot": "research-brief-provenance.json",
+  "website_snapshot": "site-work-snapshot.json",
+  "website_snapshot_needs_final_refresh": false,
+  "audit_evidence": [
+    {
+      "file": "artifact-coverage.json",
+      "sha256": "2d9bb8dbaababd2ba03f486e331a42781944ee35e87e61098fe2505f0a8d0fe7"
+    },
+    {
+      "file": "ref-coverage.json",
+      "sha256": "9fca0c22213f1f242159087e16a7077c46a6fb03d672fb317a5a5bc67907a012"
+    },
+    {
+      "file": "release-coverage.json",
+      "sha256": "60a14878b607331f86a6b7f5c89990d2f96da3316be1f33e8707e8f2751d9e99"
+    }
+  ],
+  "explicit_exclusions": [
+    "Session databases, telemetry, caches and third-party dependency executables.",
+    "Generated individual video frames; corresponding source and final video outputs are in supplement.",
+    "Runtime-only artwork snapshot 6fb1424 adds no authored source beyond the uploaded artwork tag."
+  ],
+  "limitations": [
+    "Coverage is a point-in-time archive of the identified local work. Website files matched the preserved snapshot at website_snapshot_last_matched_utc; later edits are outside this snapshot.",
+    "Source and production drafts are archived as recovered, without new production-readiness or fact-check claims.",
+    "Full public sample-part downloads timed out on this connection. Public metadata and 64 KiB ranges from the first and final parts passed; GitHub stored SHA256 digests separately verify all 30 complete uploaded parts."
+  ],
+  "final_source_ref_check": {
+    "checked_utc": "2026-10-09T17:01:45.869621+00:00",
+    "worktrees": [
+      {
+        "path": "/Users/ctavolazzi/Code/active/survivingthesingularity",
+        "head": "6fb1424bef90dd8eef39ec12ba851852f9bfb8bd",
+        "branch": "refs/heads/book-art-optimized-2026-07-25",
+        "matching_remote_refs": [],
+        "status": [
+          " M .empirica/sessions/sessions.db",
+          " M .empirica/sessions/sessions.db-shm"
+        ]
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-game-preview",
+        "head": "1b61bc9b01af46cdcf8c3d8b0392d2139af11121",
+        "branch": "refs/heads/StS-Game",
+        "matching_remote_refs": [
+          "refs/tags/archive/StS-Game-2026-10-05^{}"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-release-v0.11.0",
+        "head": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+        "branch": "refs/heads/release/v0.11.0",
+        "matching_remote_refs": [
+          "refs/heads/release/v0.11.0",
+          "refs/pull/24/head"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-site-fixes",
+        "head": "4377394471357ce5660a0cf62d2eeed3e13d8e77",
+        "branch": "refs/heads/site/critique-fixes-2026-10-09",
+        "matching_remote_refs": [
+          "refs/heads/release/v0.11.0",
+          "refs/pull/24/head"
+        ],
+        "status": [
+          " M src/app.html",
+          " M src/lib/components/BookGate.svelte",
+          " M src/lib/components/DiscordApplication.svelte",
+          " M src/lib/offer.js",
+          " M src/routes/+page.svelte",
+          " M src/routes/about/+page.svelte",
+          " M src/routes/blog/+page.svelte",
+          " M src/routes/blog/robot-farm-bot/+page.svelte",
+          " M src/routes/exclusive-friends-only/+page.svelte",
+          " M src/routes/factcheck/+page.svelte"
+        ]
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-upload-2026-10-08",
+        "head": "7aced3d61516414562a8f1752305276beef84abc",
+        "branch": "refs/heads/archive/book-files-2026-10-08",
+        "matching_remote_refs": [
+          "refs/heads/archive/book-files-2026-10-08",
+          "refs/pull/25/head"
+        ],
+        "status": [
+          " M docs/uploads/2026-10-09/site-work-in-progress.patch",
+          " M docs/uploads/2026-10-09/site-work-snapshot.json",
+          " M docs/uploads/2026-10-09/supplement-transport.json",
+          "?? docs/uploads/2026-10-08/__pycache__/",
+          "?? docs/uploads/2026-10-09/coverage-report.json",
+          "?? docs/uploads/2026-10-09/supplement-public-download-receipt.json",
+          "?? docs/uploads/2026-10-09/supplement-publication-receipt.json",
+          "?? docs/uploads/2026-10-09/supplement-upload-receipt.json"
+        ]
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.10.0",
+        "head": "f7178bc10257df2b27f1e518813bb4f96a5df222",
+        "branch": "refs/heads/book-v0.10.0",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.10.0"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.10.1",
+        "head": "c05cb948902d885b574fce965b544c9681361922",
+        "branch": "refs/heads/book-v0.10.1",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.10.1"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.10.2",
+        "head": "85c72ea020db447f37bf080473f5a91734d88031",
+        "branch": "refs/heads/book-v0.10.2",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.10.2"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.10.3",
+        "head": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+        "branch": "refs/heads/book-v0.10.3",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.10.3"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.10.4",
+        "head": "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+        "branch": "refs/heads/book-v0.10.4",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.10.4"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.11.0",
+        "head": "d48ed3964c12f4b13c8fcc821ef81a24f9f4a8d1",
+        "branch": "refs/heads/book-v0.11.0",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.11.0"
+        ],
+        "status": [
+          "?? docs/uploads/"
+        ]
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.7.3",
+        "head": "d19dbb057ef698a1f88167b2ba68021463bc0e09",
+        "branch": "refs/heads/v0.7.3",
+        "matching_remote_refs": [
+          "refs/heads/v0.7.3"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.8.0",
+        "head": "ae9e1b6f66f766e6b32368fc9e67188a3e1174bc",
+        "branch": "refs/heads/book-v0.8.0",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.8.0"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.8.1",
+        "head": "10cfa7a9c30d4b48f13f90f5d6b850a412f97d43",
+        "branch": "refs/heads/book-v0.8.1",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.8.1"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.8.2",
+        "head": "a70b74aa38dbc1469038e78280f5a921bd6c11c5",
+        "branch": "refs/heads/book-v0.8.2",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.8.2"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.9.0",
+        "head": "181348a8d77fe042e0a4d44d2855533b06942323",
+        "branch": "refs/heads/book-v0.9.0",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.9.0"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.9.1",
+        "head": "0f322b7f69b5e613c2eb45d037b5e8a47c783f6a",
+        "branch": "refs/heads/book-v0.9.1",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.9.1"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.9.2",
+        "head": "3d29215b54feaa43b4c22e5283ab642833457a07",
+        "branch": "refs/heads/book-v0.9.2",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.9.2",
+          "refs/heads/book-v0.9.3"
+        ],
+        "status": []
+      },
+      {
+        "path": "/Users/ctavolazzi/Code/active/sts-v0.9.3",
+        "head": "3d29215b54feaa43b4c22e5283ab642833457a07",
+        "branch": "refs/heads/book-v0.9.3",
+        "matching_remote_refs": [
+          "refs/heads/book-v0.9.2",
+          "refs/heads/book-v0.9.3"
+        ],
+        "status": []
+      }
+    ],
+    "remote_main": "0c70e94380df8fba373e5c6ce0d3410f9d20441c",
+    "remote_only_book_v0_11_1": "e797fa1500a4bb9864482ced02bf43c771523dfa"
+  },
+  "website_snapshot_last_matched_utc": "2026-10-09T17:01:45.897825+00:00",
+  "final_verification_receipts": [
+    {
+      "file": "supplement-upload-receipt.json",
+      "sha256": "c5cbaf6db6cf3ce32b512d492962b53994844a453024c28731e9f048f2a228f2"
+    },
+    {
+      "file": "supplement-publication-receipt.json",
+      "sha256": "b82a65f532ff05d86e639e23f8fe996971ec50a6c1d718895abe823ae84c2d0b"
+    },
+    {
+      "file": "supplement-public-download-receipt.json",
+      "sha256": "9b5711c80bf3635fdc0102dcf971cbd3a042c6844a635db0a4cfa7d55b169acf"
+    },
+    {
+      "file": "site-work-snapshot.json",
+      "sha256": "1b418ce90f5b2b21c31b1549c7eadc5790efe370c0686288d4dfc963bfaa2584"
+    }
+  ],
+  "remote_invariants": {
+    "main": "0c70e94380df8fba373e5c6ce0d3410f9d20441c",
+    "tag_anchor": "4e3c934966c286969df720d73738cc2a4385b11c",
+    "latest_release": {
+      "id": 364617820,
+      "tag": "v0.7.5"
+    }
+  },
+  "archive_branch_resolution": "Pending archive files shown in final_source_ref_check are included in the commit containing this report, apart from the excluded __pycache__ cache."
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "sts-public-download-verification/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "tag": "book-archive-2026-10-08",
+  "started_utc": "2026-10-09T03:05:54.280983+00:00",
+  "authentication": "none",
+  "method": "Public GitHub release URLs via download-archive.py open_download and checked_copy; exact size and SHA256 required.",
+  "passed": true,
+  "files": [
+    {
+      "name": "download-archive.py",
+      "bytes": 14439,
+      "sha256": "37a3f54ac19a9ec4c1975c1bdcae819b5e2d00ae7f37e9a4c937318e192d603e",
+      "download_host": "release-assets.githubusercontent.com",
+      "verified": true
+    },
+    {
+      "name": "archive-transport.json",
+      "bytes": 57909,
+      "sha256": "b126ea79d187eeeb4f977241ace82617f3fbbbfe77513b7c5f6378a1a4439569",
+      "download_host": "release-assets.githubusercontent.com",
+      "verified": true
+    },
+    {
+      "name": "ARCHIVE-INDEX.md",
+      "bytes": 19408,
+      "sha256": "665f46531d082413ef7d5082163a9fbf07b9eaea4689fff4bcba869206d3637a",
+      "download_host": "release-assets.githubusercontent.com",
+      "verified": true
+    },
+    {
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part001",
+      "bytes": 4194304,
+      "sha256": "c0b60d6f613843cc71ccb46092a4797b48d878c4f9b635162508dc9c018d4fe6",
+      "download_host": "release-assets.githubusercontent.com",
+      "verified": true
+    },
+    {
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part002.attempt-d1645edbd48940d9",
+      "bytes": 4194304,
+      "sha256": "d4eafc1fe87a94c6e27d85fe067f0966f1f59cad55fd0f8cd9c5d766d634da40",
+      "download_host": "release-assets.githubusercontent.com",
+      "verified": true
+    },
+    {
+      "name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst.part091",
+      "bytes": 1688256,
+      "sha256": "7d34fa83d514f4449b4e2cc8e51e394729fd7e68e8d26e0048630880c86a9109",
+      "download_host": "release-assets.githubusercontent.com",
+      "verified": true
+    }
+  ],
+  "errors": [],
+  "archive_sha256": "8812195af8cdfde5c776222bd0869cd61a8dd486bdd403d6eb8b594ecc1977ce",
+  "scope": "Three reader metadata files and three representative parts: canonical, recovered retry filename, and final short part. All91 part digests separately verified in final-release-receipt.json.",
+  "finished_utc": "2026-10-09T03:10:31.418802+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "name": "README.md",
+      "bytes": 32421,
+      "sha256": "0fd1b2b9fd63e20e9d66b5f26309392d5e7e3d493bd4eeb287306f79bbf75f9e",
+      "id": 623233011,
+      "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/README.md"
+    },
+    {
+      "name": "book-archive-manifest.json",
+      "bytes": 115603,
+      "sha256": "8acf122c0c4faf530f8481f31e5a74485355ca9b6fd0c8d0cd260565a138fc51",
+      "id": 623233055,
+      "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/book-archive-manifest.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 17024,
+      "sha256": "a44ddb661eaa0f82d99de8a85de68bc915645b23f28cc5f0a7b83b5ee992ef6d",
+      "id": 623233010,
+      "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/SHA256SUMS.txt"
+    },
+    {
+      "name": "SOURCE-PROVENANCE.md",
+      "bytes": 3108,
+      "sha256": "02dbcbe7da0d37b8e357d0c8c84f257867083a51e5f2660bfdb1f6082672dc1a",
+      "id": 623233008,
+      "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/SOURCE-PROVENANCE.md"
+    },
+    {
+      "name": "source-provenance.json",
+      "bytes": 3186,
+      "sha256": "08276b80537d9dc5f2c90bda3f378031c26d78542bd67e6f58b010c16baa3e02",
+      "id": 623233051,
+      "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/source-provenance.json"
+    },
+    {
+      "name": "game-preview-work.patch",
+      "bytes": 6297,
+      "sha256": "931b7a1a50acccf47758b801f03ab2607adba5caf109e5122fb4f28d73934917",
+      "id": 623233158,
+      "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/game-preview-work.patch"
+    },
+    {
+      "name": "recent-work.json",
+      "bytes": 621,
+      "sha256": "3fe03cd9ca8db9998589cc090774034a25c07066d52ff900b4d19936c835188c",
+      "id": 623233167,
+      "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/untagged-48591e435c64c301008c/recent-work.json"
+    }
+  ]
+}

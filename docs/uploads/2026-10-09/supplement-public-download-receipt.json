@@ -1,0 +1,109 @@
+{
+  "schema": "sts-supplement-public-download/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "tag": "book-work-archive-2026-10-09",
+  "started_utc": "2026-10-09T17:00:52.939821+00:00",
+  "passed": true,
+  "authentication": "none",
+  "metadata": [
+    {
+      "name": "supplement-transport.json",
+      "bytes": 38865,
+      "sha256": "fc28f2927d813ab690f5e8a28117441e84535322409fccaa88affd641bc76c75",
+      "status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "verified_utc": "2026-10-09T17:01:17.798778+00:00"
+    },
+    {
+      "name": "download-supplement.py",
+      "bytes": 23206,
+      "sha256": "bfb11fe9b0d3532d72b682f588d2d2d17192af8bfa0da36d7df114be11a2ae4a",
+      "status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "verified_utc": "2026-10-09T17:01:24.654340+00:00"
+    },
+    {
+      "name": "supplement-inventory.json",
+      "bytes": 92608,
+      "sha256": "f5c9799e27c92312c203de5fa1b48c28fdde8d5e813119903eab6570df363a64",
+      "status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "verified_utc": "2026-10-09T17:01:32.363799+00:00"
+    },
+    {
+      "name": "supplement-build-receipt.json",
+      "bytes": 1078,
+      "sha256": "8e0d2c7fda873502ea632f9658b326e12f18f7d70572790e7401a17afd04d7a7",
+      "status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "verified_utc": "2026-10-09T17:01:35.503992+00:00"
+    },
+    {
+      "name": "supplement-upload-receipt.json",
+      "bytes": 33439,
+      "sha256": "c5cbaf6db6cf3ce32b512d492962b53994844a453024c28731e9f048f2a228f2",
+      "status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "verified_utc": "2026-10-09T17:01:40.356586+00:00"
+    },
+    {
+      "name": "SUPPLEMENT-README.md",
+      "bytes": 3162,
+      "sha256": "457f64aaebcaa387c69562da2bc234679b516d8a42500d01abec7e6506e84baa",
+      "status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "verified_utc": "2026-10-09T17:01:43.130369+00:00"
+    }
+  ],
+  "sample_parts": [],
+  "errors": [],
+  "updated_utc": "2026-10-09T17:11:35.028110+00:00",
+  "release_page": {
+    "url": "https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-work-archive-2026-10-09",
+    "status": 200
+  },
+  "attempts": [
+    {
+      "method": "python-urllib",
+      "finished_utc": "2026-10-09T17:07:14.771512+00:00",
+      "metadata_verified": 6,
+      "sample_parts_verified": 0,
+      "errors": [
+        "The read operation timed out"
+      ]
+    },
+    {
+      "method": "anonymous-curl-http1-full-parts",
+      "finished_utc": "2026-10-09T17:11:05.662403+00:00",
+      "errors": [
+        "curl part 1: curl: (28) Operation timed out after 179857 milliseconds with 1032192 out of 4194304 bytes received"
+      ]
+    }
+  ],
+  "sample_ranges": [
+    {
+      "index": 1,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part001",
+      "range": "bytes=0-65535",
+      "bytes": 65536,
+      "sha256": "240d62116d5564b9c9c4c76a2a9f06fa392a88cb42061816a5da3bf7135630bb",
+      "status": 206,
+      "matches_verified_local_part": true,
+      "verified_utc": "2026-10-09T17:11:35.018197+00:00"
+    },
+    {
+      "index": 30,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part030",
+      "range": "bytes=0-65535",
+      "bytes": 65536,
+      "sha256": "f6ad4617152a8be2bc8cc714aa61c16bf32b7732d06b1e5a60f760d650135b60",
+      "status": 206,
+      "matches_verified_local_part": true,
+      "verified_utc": "2026-10-09T17:11:24.481181+00:00"
+    }
+  ],
+  "verification_scope": "All six metadata assets downloaded and SHA256 verified; 64 KiB public byte ranges from first and final archive parts compared with the verified local parts. All 30 complete remote part hashes are separately verified in the publication receipt.",
+  "full_sample_part_downloads_completed": false,
+  "manifest_validated": true,
+  "reader_bytes_match_published_asset": true
+}

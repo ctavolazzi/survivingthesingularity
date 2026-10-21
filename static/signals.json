@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T17:52:12Z",
+  "generated_at": "2026-10-21T17:58:09Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -81,6 +81,33 @@
         "agentic",
         "robot",
         "robotics",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.28397",
+      "source": "arxiv",
+      "title": "MAS-Guard: Unified Guardrails from Individual Agents to Multi-Agent LLM Systems",
+      "url": "https://arxiv.org/abs/2610.28397",
+      "authors": [
+        "Mohammad Kachuee",
+        "Phu Mon Htut",
+        "Sheng Li",
+        "Nikolaos Pappas"
+      ],
+      "summary": "Agentic AI extends large language models (LLMs) from generating responses to planning and executing complex workflows, substantially expanding their utility while exposing applications to unsafe actions, information leakage, and adversarial manipulation. Multi-agent systems further expand these capabilities through specialization and collaboration, but distributed authority, heterogeneous roles, and opaque or potentially compromised participants make safeguarding even more challenging. Existing defenses address important individual threats but provide fragmented coverage across local execution",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-20",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "planning",
+        "llm",
+        "language model",
         "rag"
       ]
     },
@@ -318,6 +345,33 @@
         "multi-agent",
         "agentic",
         "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.27865",
+      "source": "arxiv",
+      "title": "Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum",
+      "url": "https://arxiv.org/abs/2610.27865",
+      "authors": [
+        "Da Huang",
+        "Jichao Wang",
+        "Junhui Wu",
+        "Tong Ran"
+      ],
+      "summary": "Recent studies have explored the potential of multimodal large language models for robot control, yet the models' embodied capabilities remain insufficiently characterized across models, tasks, and execution settings. We conduct a multidimensional comparative evaluation on RoboColiseum across four tracks: Instruction Following, Spatial Reasoning, General Manipulation, and Robustness. We implement Agent2Act, a control harness that integrates GPT-6 Astra, GPT-6.1 Sol, Claude Opus 5.5, and Gemini 4 Argon into the evaluation environment through shared observation, action execution, and feedback in",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-20",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "embodied",
+        "robot",
+        "robotics",
         "llm",
         "language model"
       ]
@@ -600,6 +654,105 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2610.28560",
+      "source": "arxiv",
+      "title": "Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection",
+      "url": "https://arxiv.org/abs/2610.28560",
+      "authors": [
+        "Shangquan Sun",
+        "Wenjun Luo",
+        "Xu He",
+        "Yoonsoo Lee"
+      ],
+      "summary": "Visual anomaly detection aims to detect abnormal objects, while anomaly samples are often scarce during model training. Assembling multiple pretrained detectors can help by leveraging their transferable image scores and anomaly maps. However, most existing ensemble methods apply fixed fusion rules over saved predictions which struggle when pretrained detectors clearly disagree due to different training objectives, priors, and visual representations. To this end, we design AnomalyAgent, a post-training fusion framework for accurate visual anomaly detection. AnomalyAgent aligns heterogeneous sco",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-20",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.28176",
+      "source": "arxiv",
+      "title": "Temporal Evidence-Parameter Co-Alignment for LLM Reasoning over Temporal Knowledge Graphs",
+      "url": "https://arxiv.org/abs/2610.28176",
+      "authors": [
+        "Jiapu Wang"
+      ],
+      "summary": "Large Language Models (LLMs) often struggle with temporally grounded reasoning because their static parametric memory is misaligned with the dynamic evolution of real-world knowledge. Although RAG and Parameter-Efficient Fine-Tuning (PEFT) provide practical ways to enhance LLMs, they remain insufficient for temporal reasoning. Existing retrieval methods typically prioritize semantic relevance while overlooking temporal validity, event order, and evolutionary dependencies, resulting in evidence that is relevant in isolation but temporally fragmented. Meanwhile, conventional PEFT methods usually",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-20",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "reasoning",
+        "alignment",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.28259",
+      "source": "arxiv",
+      "title": "Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning",
+      "url": "https://arxiv.org/abs/2610.28259",
+      "authors": [
+        "Youwei Zhou",
+        "Bohan Hou",
+        "Yankai Fu",
+        "Yaoxu Lyu"
+      ],
+      "summary": "Recent advances in visuospatial understanding and agentic reasoning enable direct robotic manipulation with general-purpose multimodal models, but their embodied capabilities remain poorly understood. This paper systematically evaluate GPT-6 Astra for closed-loop robotic manipulation using a lightweight agent execution framework. We first probe three fundamental embodied capabilities-depth perception, embodied in-context learning, and tactile understanding-and demonstrate that the model can exploit depth information, acquire simple manipulation strategies from contextual demonstrations, and us",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-20",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "embodied",
+        "robot",
+        "in-context learning"
+      ]
+    },
+    {
+      "id": "2610.27782",
+      "source": "arxiv",
+      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+      "url": "https://arxiv.org/abs/2610.27782",
+      "authors": [
+        "Siyuan Ma",
+        "Yu Qi",
+        "Cheng Ye",
+        "Ruotian Peng"
+      ],
+      "summary": "Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments on embodied videos has not been systematically evaluated. To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation. The benchmark measures two fundamental dimensions, Physical Adherence and Instruction Alignment, across 800 human-ann",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-20",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "world model",
+        "alignment",
+        "embodied",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1374,151 +1527,6 @@
       "matched_keywords": [
         "agent",
         "agentic",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.02191",
-      "source": "arxiv",
-      "title": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
-      "url": "https://arxiv.org/abs/2610.02191",
-      "authors": [
-        "Shuo Xing",
-        "Zilin Dai",
-        "Chengyuan Qian",
-        "Fangzhou Lin"
-      ],
-      "summary": "While Large Language Models (LLMs) have demonstrated striking capabilities on frontier mathematical problems, it remains unclear whether they possess the structural mathematical understanding underlying their solutions. In this paper, we take a first step toward systematically studying mathematical understanding in LLMs, from diagnosing its distinct capabilities to leveraging these findings to improve post-training. First, we introduce the notion of Mathematical Primitive to probe structural mathematical understanding and propose \\hlei{}, a novel benchmark that evaluates mathematical reasoning",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-10-01",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.37094",
-      "source": "arxiv",
-      "title": "LLM-Based Multi-Agent Systems over Wireless Networks: A Joint Agent--Network Design Perspective",
-      "url": "https://arxiv.org/abs/2609.37094",
-      "authors": [
-        "Chao Hu",
-        "Yuan Guo",
-        "Guanlin Wu",
-        "Yueling Che"
-      ],
-      "summary": "As large language models (LLMs) evolve from standalone models into collaborative agents embedded in physical systems, their reasoning and execution are increasingly distributed across wireless edge nodes. In this setting, wireless networks are experiencing a paradigm shift from only providing data connectivity to supporting the multi-agent reasoning workflow itself. The task performance of such network-constrained LLM-based multi-agent systems (MASs) is jointly affected by the multi-agent reasoning dependencies as well as the underlying network connectivity and edge resources. This coupling gi",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-29",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.35706",
-      "source": "arxiv",
-      "title": "Reinforcing Agentic Creativity in Scientific Ideation with Night Science",
-      "url": "https://arxiv.org/abs/2609.35706",
-      "authors": [
-        "Priyanka Kargupta",
-        "Silviu Cucerzan",
-        "Shweti Mahajan",
-        "Allen Herring"
-      ],
-      "summary": "Large language models (LLMs) excel at structured, verifiable tasks, but their low-entropy bias can produce homogeneous and predictable outputs, limiting their utility for open-ended scientific ideation. Effective discovery, however, spans a broader creative spectrum: from structured day science to loosely structured, serendipitous night science that reaches ideas beyond those typically considered. We introduce AI Night-Scientist, an agentic framework that uses reinforcement learning to teach models when and how to depart from predictable reasoning. Grounded in cognitive science, we model creat",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.33871",
-      "source": "arxiv",
-      "title": "Population Physics, Population Problems: Safety and Emergence in LLM Societies",
-      "url": "https://arxiv.org/abs/2609.33871",
-      "authors": [
-        "Adrian de Wynter"
-      ],
-      "summary": "The collective behaviour of large language model (LLM) societies is not the sum of their individual outputs. It yields statistically distinct, sometimes-unpredictable phenomena, for which the tools we use to study single agents may not scale. Due to recent incidents involving autonomous agentic systems, however, understanding these systems is paramount. For that we introduce a framework for measuring self-organisation in LLM social systems and apply it to three such systems: a Schelling grid, a social network (Moltbook), and a Twitter-like misinformation simulation ('Rogue'). All three exhibit",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-27",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.33563",
-      "source": "arxiv",
-      "title": "MA-JEPA: Joint-Embedding World Models for Multi-Agent Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2609.33563",
-      "authors": [
-        "Brandon Gary Kaplowitz",
-        "Osaze James Obahor",
-        "Christian Schroeder de Witt"
-      ],
-      "summary": "World models improve sample efficiency by training policies on imagined trajectories, but their usefulness depends on learning representations that capture the information needed for future control. We study whether self-supervised joint-embedding prediction (JEPA) can provide this learning signal for multi-agent reinforcement learning. We introduce MA-JEPA, a stochastic world model that replaces observation reconstruction with prediction of target representations, enabling model-based multi-agent reinforcement learning with centralized training and decentralized execution. A categorical laten",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-27",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "world model",
-        "agent",
-        "multi-agent"
-      ]
-    },
-    {
-      "id": "2609.32939",
-      "source": "arxiv",
-      "title": "Theory of Scene: Breaking the Symmetry Trap in Multi-Agent LLM Coordination",
-      "url": "https://arxiv.org/abs/2609.32939",
-      "authors": [
-        "Liangqi Yuan",
-        "Wenzhi Fang",
-        "Shiqiang Wang",
-        "Christopher G. Brinton"
-      ],
-      "summary": "Multi-agent systems built on large language models (LLMs) are largely homogeneous, as their agents behave alike even across distinct LLMs. We show that when such agents act concurrently without communication, they collide on targets they must split and diverge on targets they must take together, a double failure we term the symmetry trap. Theory of Mind (ToM), widely used for coordination without communication, cannot escape this trap, since homogeneous agents form the same prediction of one another and respond to it in the same way. We propose Theory of Scene (ToS), a training-free reasoning ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-26",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
         "reasoning",
         "llm",
         "language model"

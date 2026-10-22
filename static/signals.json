@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T17:58:09Z",
+  "generated_at": "2026-10-22T17:54:26Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -657,6 +657,31 @@
       ]
     },
     {
+      "id": "2610.30042",
+      "source": "arxiv",
+      "title": "HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning",
+      "url": "https://arxiv.org/abs/2610.30042",
+      "authors": [
+        "Sudipta Paul",
+        "Pengrui Quan",
+        "Aounon Kumar",
+        "Nicholas Tzou"
+      ],
+      "summary": "Harness optimization, which improves an agent's prompts, tools, and workflows, is an increasingly effective way to enhance agents built on frozen or closed-source LLMs. Leading approaches such as the Darwin--Godel Machine and the Huxley--Godel Machine (HGM) rely on recursive self-improvement and were developed mainly for coding, where the competence needed to improve the agent coincides with the competence being improved. Planning tasks, in which an agent must produce a sequence of tool calls that jointly satisfies interacting constraints, break this alignment. There, open-ended self-modificat",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-21",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "planning",
+        "alignment",
+        "llm"
+      ]
+    },
+    {
       "id": "2610.28560",
       "source": "arxiv",
       "title": "Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection",
@@ -1132,6 +1157,57 @@
       ]
     },
     {
+      "id": "2610.29934",
+      "source": "arxiv",
+      "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
+      "url": "https://arxiv.org/abs/2610.29934",
+      "authors": [
+        "Nithin Sivakumaran",
+        "Ali Payani",
+        "Hyunji Lee",
+        "Mohit Bansal"
+      ],
+      "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner state. To address this challenge, we introduce ToM2Vec, which learns to form abstract theories-of-mind in a rich latent space via a fixed budget of continuous reasoning tokens. During training, supervision for these tokens comes from the partner's actual thoughts, which the ToM tokens",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-21",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.30136",
+      "source": "arxiv",
+      "title": "Agentic World Action Models",
+      "url": "https://arxiv.org/abs/2610.30136",
+      "authors": [
+        "Zhuoyang Liu",
+        "Dantong Niu",
+        "Botong Zhang",
+        "Boning Shao"
+      ],
+      "summary": "Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework that integrates code-based planning with joint video and action prediction. We jointly model code, future video, and robot actions as three coupled generative streams within a unified mixture-of-transformers architecture. Within this architec",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-21",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "reasoning",
+        "robot",
+        "robotics"
+      ]
+    },
+    {
       "id": "2610.25851",
       "source": "arxiv",
       "title": "Learning Who Talks to Whom: Role-Aware Communication Topology Scheduling for Efficient LLM Multi-Agent Collaboration",
@@ -1452,81 +1528,6 @@
       "matched_keywords": [
         "agent",
         "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.05782",
-      "source": "arxiv",
-      "title": "Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement",
-      "url": "https://arxiv.org/abs/2610.05782",
-      "authors": [
-        "Shovan Roy",
-        "Lopamudra Praharaj",
-        "Maanak Gupta",
-        "Bhavani Thuraisingham"
-      ],
-      "summary": "Agentic AI is emerging as a promising paradigm for automating complex cybersecurity decisions, yet its use in enforcing zero trust introduces significant challenges in safety, reliability, and policy compliance. This paper presents Agentic AI based zero trust architecture (Agentic-ZTA) that operationalizes the NIST SP 800-207 ZTA architecture control loop through coordinated multi- agent decision pipeline. In the proposed framework, policy knowledge is embedded into a retrieval-augmented generation pipeline and retrieved at inference time as top-k relevant policies. Access requests are interce",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-05",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2610.03240",
-      "source": "arxiv",
-      "title": "Collective Bias Mitigation via Model Routing and Collaboration",
-      "url": "https://arxiv.org/abs/2610.03240",
-      "authors": [
-        "Mingzhe Du",
-        "Luu Anh Tuan",
-        "Xiaobao Wu",
-        "Yichong Huang"
-      ],
-      "summary": "Large language models (LLMs) are increasingly deployed in public health, finance, and governance, requiring both accuracy and societal value alignment. Despite recent advances, LLMs often perpetuate or amplify bias embedded in their training data, posing challenges to fairness. While self-debiasing encourages an LLM to identify and correct its own biases, relying on a single model's intrinsic knowledge may be insufficient to address deeply ingrained stereotypes. To address this limitation, we introduce Collective Bias Mitigation (CBM), a framework that alleviates bias by learning fine-grained ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-02",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "alignment",
-        "value alignment",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.03319",
-      "source": "arxiv",
-      "title": "Defense-in-Depth at the Perception-Reasoning Interface of LLM-Centric Agentic UAV Swarms",
-      "url": "https://arxiv.org/abs/2610.03319",
-      "authors": [
-        "Mohammadhossein Homaei",
-        "Yousef Emami",
-        "Sajad Homayoun",
-        "Rahim Taheri"
-      ],
-      "summary": "Large Language Models (LLMs) increasingly support Uncrewed Aerial Vehicle (UAV) swarm operations such as data collection scheduling, where the model reads structured sensor reports and decides which sensors to visit. An adversary who quietly manipulates those reports can redirect the swarm without modifying the model weights or the UAV. Defenses for this interface have been proposed architecturally but rarely implemented or evaluated. We implement and evaluate defense-in-depth at the perception-reasoning interface of LLM-Centric Agentic UAV Swarms. Five layers check the provenance of a report,",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-02",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
         "reasoning",
         "llm",
         "language model"

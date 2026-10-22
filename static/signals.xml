@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Wed, 21 Oct 2026 17:58:09 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 22 Oct 2026 17:54:26 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -183,6 +183,13 @@
       <description>Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machin... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, llm, language model] Authors: Kirill Brilliantov, Alejandro Hernández-Cano, et al.</description>
     </item>
     <item>
+      <title>HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning</title>
+      <link>https://arxiv.org/abs/2610.30042</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.30042</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Harness optimization, which improves an agent's prompts, tools, and workflows, is an increasingly effective way to enhance agents built on frozen or closed-source LLMs. Leading approaches such as the Darwin--Godel Machine and the Huxley--Godel Machine (HGM) rely on recursive self-improvement and wer... [Score: 8.5 | Flagged for: recursive self-improvement, agent, planning, alignment, llm] Authors: Sudipta Paul, Pengrui Quan, et al.</description>
+    </item>
+    <item>
       <title>Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection</title>
       <link>https://arxiv.org/abs/2610.28560</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.28560</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.27782</guid>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <description>Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments... [Score: 8.5 | Flagged for: world model, alignment, embodied, llm, language model] Authors: Siyuan Ma, Yu Qi, et al.</description>
-    </item>
-    <item>
-      <title>RouterWorld: Scaling Conversational AI with Latency-Aware LLM Routing</title>
-      <link>https://arxiv.org/abs/2610.26511</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.26511</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Conversational AI systems built on Large Language Models (LLMs) require routing mechanisms that balance answer quality and response latency at scale. However, existing LLM routing benchmarks assume full observability of all candidate model outcomes, under-emphasize latency as a first-class metric, a... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, scaling] Authors: Jinyang Li, Denis Emelin, et al.</description>
     </item>
   </channel>
 </rss>

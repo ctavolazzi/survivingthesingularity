@@ -1,8 +1,38 @@
 {
-  "generated_at": "2026-10-22T17:54:26Z",
+  "generated_at": "2026-10-23T17:48:51Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
+    {
+      "id": "2610.31518",
+      "source": "arxiv",
+      "title": "SCOPE: Scene-graph Construction Optimized by Plan Error-correction for Robot Long-term Planning Datasets",
+      "url": "https://arxiv.org/abs/2610.31518",
+      "authors": [
+        "Chaoyue Li",
+        "Zeyu Gao",
+        "Yanfeng Lu",
+        "Fan Luo"
+      ],
+      "summary": "Task and Motion Planning (TAMP) stands as a fundamental challenge in robotics, essential for enabling autonomous agents to execute complex, long-horizon tasks in diverse environments. While Large Language Models (LLMs) introduce a new paradigm for TAMP by leveraging extensive common sense, their inherent reasoning limitations hinder direct application, and fine-tuning strategies to enhance these capabilities are currently bottlenecked by the scarcity of high-quality datasets. Existing automated generation methods often suffer from homogeneity, limiting model generalization, and unsolvability, ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-22",
+      "score": 14.0,
+      "raw_score": 28,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "autonomous",
+        "planning",
+        "reasoning",
+        "robot",
+        "robotics",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
     {
       "id": "2609.39045",
       "source": "arxiv",
@@ -1157,6 +1187,29 @@
       ]
     },
     {
+      "id": "2610.31376",
+      "source": "arxiv",
+      "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
+      "url": "https://arxiv.org/abs/2610.31376",
+      "authors": [
+        "Chao Gu",
+        "Quanyan Zhu"
+      ],
+      "summary": "This paper studies the problem of safe tool execution for large language model (LLM) agents under prompt injection. Using Petri nets, we formalize the execution harness between the LLM and its tools as a supervisory control problem, in which marks represent capabilities, approvals and budgets. Since a transition fires only if the marks it needs are present, an injected request whose preconditions are unmet or already spent is refused regardless of its wording. Treating tool outcomes as uncontrollable, we enforce safety by the conventional maximally permissive supervisor, and this safety transf",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-22",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.29934",
       "source": "arxiv",
       "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
@@ -1168,8 +1221,8 @@
         "Mohit Bansal"
       ],
       "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner state. To address this challenge, we introduce ToM2Vec, which learns to form abstract theories-of-mind in a rich latent space via a fixed budget of continuous reasoning tokens. During training, supervision for these tokens comes from the partner's actual thoughts, which the ToM tokens",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-10-21",
       "score": 8.0,
       "raw_score": 16,
@@ -1481,56 +1534,6 @@
         "tool use",
         "reasoning",
         "llm"
-      ]
-    },
-    {
-      "id": "2610.06563",
-      "source": "arxiv",
-      "title": "HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention",
-      "url": "https://arxiv.org/abs/2610.06563",
-      "authors": [
-        "Han Luo",
-        "Bingbing Wen",
-        "Guang Yang",
-        "Zora Zhiruo Wang"
-      ],
-      "summary": "Large language model (LLM) agents are increasingly capable of acting in complex tool-use environments, yet they often fail to recognize when tasks are infeasible and no valid solution exists. Recent work has formalized this reliability gap as the problem of agentic abstention, and existing approaches typically optimize a model or agent harness against a fixed set of tasks, leading to limited generalization to unseen failure modes. We introduce HERA, a framework for harness-environment co-evolution for agentic abstention. HERA consists of (i) a pipeline to automatically construct verifiable pai",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-05",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool-use",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.06695",
-      "source": "arxiv",
-      "title": "MedPrune: Topology-Efficient Multimodal Multi-Agent Communication Evolution for Medical VQA Tasks",
-      "url": "https://arxiv.org/abs/2610.06695",
-      "authors": [
-        "Jiuheng Wan",
-        "Runze Li",
-        "Chen Chen",
-        "Tingyuan Hu"
-      ],
-      "summary": "While medical multimodal large language models (Med-MLLMs) advance medical visual question answering (VQA), existing clinical workflow-inspired multi-agent frameworks suffer from interaction patterns and excessive computational overhead caused by redundant communication topologies. In this paper, we propose MedPrune, an efficient medical multimodal multi-agent collaboration framework that dynamically prunes both nodes and edges from the communication topology to enhance reasoning ability and token efficiency. Specifically, we first formulate the diagnostic process as a heterogeneous communicat",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-05",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
       ]
     }
   ]

@@ -5,8 +5,15 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 22 Oct 2026 17:54:26 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 23 Oct 2026 17:48:51 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SCOPE: Scene-graph Construction Optimized by Plan Error-correction for Robot Long-term Planning Datasets</title>
+      <link>https://arxiv.org/abs/2610.31518</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.31518</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Task and Motion Planning (TAMP) stands as a fundamental challenge in robotics, essential for enabling autonomous agents to execute complex, long-horizon tasks in diverse environments. While Large Language Models (LLMs) introduce a new paradigm for TAMP by leveraging extensive common sense, their inh... [Score: 14.0 | Flagged for: agi, agent, autonomous, planning, reasoning] Authors: Chaoyue Li, Zeyu Gao, et al.</description>
+    </item>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
       <link>https://arxiv.org/abs/2609.39045</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.28259</guid>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <description>Recent advances in visuospatial understanding and agentic reasoning enable direct robotic manipulation with general-purpose multimodal models, but their embodied capabilities remain poorly understood. This paper systematically evaluate GPT-6 Astra for closed-loop robotic manipulation using a lightwe... [Score: 8.5 | Flagged for: agent, agentic, reasoning, embodied, robot] Authors: Youwei Zhou, Bohan Hou, et al.</description>
-    </item>
-    <item>
-      <title>RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation</title>
-      <link>https://arxiv.org/abs/2610.27782</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.27782</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments... [Score: 8.5 | Flagged for: world model, alignment, embodied, llm, language model] Authors: Siyuan Ma, Yu Qi, et al.</description>
     </item>
   </channel>
 </rss>

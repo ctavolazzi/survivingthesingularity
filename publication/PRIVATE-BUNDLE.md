@@ -10,6 +10,16 @@ recovery. The same instructions remain available as plain-text Markdown.
 Its exact contents and hash are in the active `src/lib/data/bundleManifest.js`.
 The storage object has **not** been uploaded or remotely verified in this workspace.
 
+**Rebuilt 2026-10-25.** The 2026-10-13 build (28,280,000 bytes, SHA-256 `8b437b32...`)
+was never uploaded: on 2026-10-25 the `downloads` bucket held only `research-bundle-v1.zip`
+and backups, and the reviewed ZIP was not available in the cloud workspace. It was rebuilt
+there with `python3 scripts/prepare-book-bundle.py` from unchanged sources (every input
+hash matched). Only `The-Precedent-File.pdf` changed bytes (89,308 to 91,271, a different
+XeLaTeX build); it passed the text proof (227 source blocks, none missing) and a visual check.
+The new ZIP is 28,281,967 bytes, SHA-256
+`545e6d1412ce2437800c4c2661a0addc26071116cc5337a3c9ec0ddfa295e4b9`, and the active manifest
+names it. The hashes in `docs/launch-readiness-2026-10-13/` describe the earlier build.
+
 ## Prepare and verify locally
 
 After preparing the public book downloads as described in [README.md](README.md):

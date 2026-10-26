@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T17:00:56Z",
+  "generated_at": "2026-10-26T19:06:08Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -511,26 +511,27 @@
       ]
     },
     {
-      "id": "2609.31563",
+      "id": "2610.32851",
       "source": "arxiv",
-      "title": "Multi-agent Scaling Across Disjunctive and Compensatory Tasks",
-      "url": "https://arxiv.org/abs/2609.31563",
+      "title": "Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves",
+      "url": "https://arxiv.org/abs/2610.32851",
       "authors": [
-        "Carolina Fortuna",
-        "Blaz Bertalanic"
+        "Garima Agrawal",
+        "Prasun Das",
+        "Akshay Sarvade",
+        "Priyanka L"
       ],
-      "summary": "Multi-agent LLM systems are often expected to improve as team size increases, yet the scaling behavior may depend on task structure. Our central contribution is to introduce Steiner's taxonomy of group tasks as a framework for analyzing multi-agent LLM scaling and focusing the analysis on disjunctive and compensatory tasks. We model independently sampled agents as conditionally independent given the item, which yields their large-team limits: plurality voting converges to the model's modal answer, and averaging converges to the model's item-level bias. Across selected representative benchmarks",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-25",
-      "score": 9.5,
-      "raw_score": 19,
+      "summary": "Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands of artifacts describing scope, journeys, rules and acceptance criteria. Recovery does not confer usability. Entities like offer, eligibility, and activation recur across services under a shared vocabulary, related in name but operationally distinct, so one end-to-end journey implicates over a thous",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-23",
+      "score": 9.0,
+      "raw_score": 18,
       "matched_keywords": [
         "agi",
         "agent",
         "multi-agent",
-        "llm",
-        "scaling",
+        "agentic",
         "rag"
       ]
     },
@@ -684,6 +685,32 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2610.31971",
+      "source": "arxiv",
+      "title": "Knowing Whom to Trust is not Enough: The Trust--Agreement Gap in Repeated Multi-Party LLM Negotiation",
+      "url": "https://arxiv.org/abs/2610.31971",
+      "authors": [
+        "Amit Sarker",
+        "Moumita Choudhury",
+        "Saaduddin Mahmud",
+        "Shlomo Zilberstein"
+      ],
+      "summary": "Large language model (LLM) agents increasingly participate in negotiations on behalf of individuals and organizations, yet they remain vulnerable to manipulation, particularly in repeated multi-party interactions. Classical multi-agent systems address this challenge through explicit trust and reputation models, whereas existing work on LLM negotiation largely treats trust as an emergent phenomenon. We investigate whether LLM agents can form useful trust estimates from prior interactions and leverage them to improve future negotiation outcomes. We introduce a repeated, multi-party, multi-issue ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-22",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "emergent",
+        "rag"
       ]
     },
     {
@@ -1509,31 +1536,6 @@
         "robot",
         "llm",
         "in-context learning"
-      ]
-    },
-    {
-      "id": "2610.06597",
-      "source": "arxiv",
-      "title": "Can Agent Harnesses and Inference Engines Hear Each Other? The HEAR Protocol for Agentic LLM Serving",
-      "url": "https://arxiv.org/abs/2610.06597",
-      "authors": [
-        "Jiaqi Zhao",
-        "Haodong Chen",
-        "Jitai Hao",
-        "Wei Zhao"
-      ],
-      "summary": "LLM agents increasingly execute complex workflows involving multi-turn reasoning, tool use, and parallel agents. Efficient serving requires decisions that span two layers with complementary information: the agent harness understands workflow dependencies, context lifecycles, and execution objectives, whereas the inference engine observes request queues, KV-cache state, resource pressure, and execution capabilities. Existing interfaces do not systematically connect these views, limiting workflow-aware execution.\n  HEAR, a bidirectional Harness--Engine Pairing protocol for agentic LLM serving. H",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-05",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
-        "reasoning",
-        "llm"
       ]
     }
   ]

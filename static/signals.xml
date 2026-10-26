@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 25 Oct 2026 17:00:56 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 26 Oct 2026 19:06:08 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>SCOPE: Scene-graph Construction Optimized by Plan Error-correction for Robot Long-term Planning Datasets</title>
@@ -141,11 +141,11 @@
       <description>Large language model (LLM) agentic systems increasingly rely on models communicating with one another, yet existing uncertainty and multi-agent methods rarely estimate how a particular receiver will interpret a message before it is sent. This matters in heterogeneous systems, where capable receivers... [Score: 9.5 | Flagged for: agent, multi-agent, agentic, interpret, llm] Authors: Wanrong Yang, Rehan Deen, et al.</description>
     </item>
     <item>
-      <title>Multi-agent Scaling Across Disjunctive and Compensatory Tasks</title>
-      <link>https://arxiv.org/abs/2609.31563</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.31563</guid>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Multi-agent LLM systems are often expected to improve as team size increases, yet the scaling behavior may depend on task structure. Our central contribution is to introduce Steiner's taxonomy of group tasks as a framework for analyzing multi-agent LLM scaling and focusing the analysis on disjunctiv... [Score: 9.5 | Flagged for: agi, agent, multi-agent, llm, scaling] Authors: Carolina Fortuna, Blaz Bertalanic</description>
+      <title>Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves</title>
+      <link>https://arxiv.org/abs/2610.32851</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.32851</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands... [Score: 9.0 | Flagged for: agi, agent, multi-agent, agentic, rag] Authors: Garima Agrawal, Prasun Das, et al.</description>
     </item>
     <item>
       <title>Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries</title>
@@ -190,6 +190,13 @@
       <description>Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machin... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, llm, language model] Authors: Kirill Brilliantov, Alejandro Hernández-Cano, et al.</description>
     </item>
     <item>
+      <title>Knowing Whom to Trust is not Enough: The Trust--Agreement Gap in Repeated Multi-Party LLM Negotiation</title>
+      <link>https://arxiv.org/abs/2610.31971</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.31971</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language model (LLM) agents increasingly participate in negotiations on behalf of individuals and organizations, yet they remain vulnerable to manipulation, particularly in repeated multi-party interactions. Classical multi-agent systems address this challenge through explicit trust and reputa... [Score: 8.5 | Flagged for: agent, multi-agent, llm, language model, emergent] Authors: Amit Sarker, Moumita Choudhury, et al.</description>
+    </item>
+    <item>
       <title>HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning</title>
       <link>https://arxiv.org/abs/2610.30042</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.30042</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.28176</guid>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <description>Large Language Models (LLMs) often struggle with temporally grounded reasoning because their static parametric memory is misaligned with the dynamic evolution of real-world knowledge. Although RAG and Parameter-Efficient Fine-Tuning (PEFT) provide practical ways to enhance LLMs, they remain insuffic... [Score: 8.5 | Flagged for: reasoning, alignment, llm, language model, retrieval] Authors: Jiapu Wang</description>
-    </item>
-    <item>
-      <title>Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning</title>
-      <link>https://arxiv.org/abs/2610.28259</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.28259</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Recent advances in visuospatial understanding and agentic reasoning enable direct robotic manipulation with general-purpose multimodal models, but their embodied capabilities remain poorly understood. This paper systematically evaluate GPT-6 Astra for closed-loop robotic manipulation using a lightwe... [Score: 8.5 | Flagged for: agent, agentic, reasoning, embodied, robot] Authors: Youwei Zhou, Bohan Hou, et al.</description>
     </item>
   </channel>
 </rss>

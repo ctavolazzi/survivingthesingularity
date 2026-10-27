@@ -1,8 +1,37 @@
 {
-  "generated_at": "2026-10-26T19:06:08Z",
+  "generated_at": "2026-10-27T18:37:42Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
+    {
+      "id": "2610.34836",
+      "source": "arxiv",
+      "title": "Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs",
+      "url": "https://arxiv.org/abs/2610.34836",
+      "authors": [
+        "Boxuan Wang",
+        "Zhuoyun Li",
+        "Sarvapali D. Ramchurn",
+        "Xiaowei Huang"
+      ],
+      "summary": "Multi-agent large language model (LLM) systems can exhibit emergent behaviors through interaction, yet whether a similar phenomenon exists for reasoning alignment remains largely unexplored. We study whether agent interaction produces additional reference-grounded reasoning alignment beyond matched individual self-refinement, and introduce REMAP (Reference-Entailment-Matrix for Agentic Process), a framework that quantifies this effect through Semantic Coverage and interaction-specific alignment gains. Across diverse model families and two multi-hop reasoning benchmarks, we observe broadly posi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-26",
+      "score": 14.0,
+      "raw_score": 28,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "reasoning",
+        "alignment",
+        "llm",
+        "language model",
+        "emergent",
+        "rag"
+      ]
+    },
     {
       "id": "2610.31518",
       "source": "arxiv",
@@ -511,6 +540,33 @@
       ]
     },
     {
+      "id": "2610.35686",
+      "source": "arxiv",
+      "title": "FISRF: Flexible Instructional Scaffolding Reflection Framework for Robotics Task Planning with Large Language Model",
+      "url": "https://arxiv.org/abs/2610.35686",
+      "authors": [
+        "Qingmiao Liang",
+        "Jiatao Zhang",
+        "Runxin Zou",
+        "Yufan Song"
+      ],
+      "summary": "Large Language Models (LLMs) are widely adopted for reflective error correction in task planning; however, existing approaches primarily rely on autonomous exploration, rendering them prone to accumulating erroneous experiences during early interactions with new environments. To address this limitation, we propose the Flexible Instructional Scaffolding Reflection Framework (FISRF), an agent--mentor architecture that estimates the robot's Zone of Proximal Development (ZPD) in task planning and adaptively selects reflection strategies and mentor guidance, thereby facilitating the accumulation of",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-26",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "planning",
+        "robot",
+        "robotics",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.32851",
       "source": "arxiv",
       "title": "Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves",
@@ -685,6 +741,30 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2610.35434",
+      "source": "arxiv",
+      "title": "Skill$^{\\infty}$: Recursive Self-Improvement for Agent Skill Optimization",
+      "url": "https://arxiv.org/abs/2610.35434",
+      "authors": [
+        "Wangcheng Tao",
+        "Zhanglu Yan",
+        "Han Wu",
+        "Weng-Fai Wong"
+      ],
+      "summary": "Recursive self-improvement (RSI), in which a system also improves the way it improves, is a long-standing aspiration on the path to AGI. Language agents increasingly store procedural knowledge in reusable skills. Optimizing skills offers a direct way to achieve RSI, because the optimization procedure itself can be encoded as a skill. Existing skill optimizers, however, follow a hand-designed procedure. Even methods that evolve a meta-skill confine it to a fixed pipeline and relearn it for each task. We present Skill$^{\\infty}$, which makes skill optimization recursively self-improving: a meta ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-26",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "recursive self-improvement",
+        "self-improving",
+        "agent"
       ]
     },
     {
@@ -1214,6 +1294,57 @@
       ]
     },
     {
+      "id": "2610.35051",
+      "source": "arxiv",
+      "title": "VISTA: Active Exploration for Self-Improvement in Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.35051",
+      "authors": [
+        "Zhang Zhang",
+        "Shengjun Zhang",
+        "Simin Huang",
+        "Min Chen"
+      ],
+      "summary": "Agentic embodied intelligence plays a foundational role in open-ended, dynamic physical environments. Rather than treating policy learning as an end-to-end mapping from instructions to actions, recent studies reveal that embodied systems depend not only on pre-trained foundation models, but also on harness. Prior approaches largely treat rollouts as static logs for post-hoc reflection, producing harness updates without autonomously testing and refining them through subsequent embodied interaction. To address this challenge, we propose VISTA, a meta-agent framework that transforms post-hoc roll",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-26",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "autonomous",
+        "embodied"
+      ]
+    },
+    {
+      "id": "2610.34357",
+      "source": "arxiv",
+      "title": "6G Reasoning Agent Societies: Composition, Scaling, and Consistency-Time Laws",
+      "url": "https://arxiv.org/abs/2610.34357",
+      "authors": [
+        "Hatim Chergui",
+        "Carolina Fernández-Martínez",
+        "Mustapha Benjillali",
+        "Mehdi Bennis"
+      ],
+      "summary": "Emerging 6G control planes would compose Large Language Model (LLM) agents that exchange interpreted conclusions, so hallucinations can propagate even over error-free transport. Recent architectures audit each message locally against the sender's observation mask, but isolated audits miss collective behavior. Modeling the agent society as a cellular sheaf, we establish three laws valid on arbitrary topologies. First, the \\emph{composition law}: network-wide divergence exceeds the sum of per-agent audit scores by exactly their hidden total correlation. This blind spot masks up to 23\\% of joint ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-25",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "interpret",
+        "llm",
+        "language model",
+        "scaling"
+      ]
+    },
+    {
       "id": "2610.31376",
       "source": "arxiv",
       "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
@@ -1410,132 +1541,6 @@
         "reasoning",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2610.17869",
-      "source": "arxiv",
-      "title": "ECMR: Evidence-Aware Deliberation Control for Multi-Agent LLM Reasoning",
-      "url": "https://arxiv.org/abs/2610.17869",
-      "authors": [
-        "Yuan Liu",
-        "Haoyue Peng",
-        "Fanliang Hu",
-        "Lei Huang"
-      ],
-      "summary": "Multi-agent Large Language Model (LLM) systems typically commit to a deliberation protocol before inference. A fixed protocol cannot allocate computation differently to resolved and unresolved instances, and it may mistake repeated support for independent confirmation. We study this failure as semantic false consensus: a confident group answer supported by narrow, duplicated, or correlated rationales. We introduce ECMR, an evidence-aware controller over frozen role-conditioned LLMs. At each step, ECMR summarizes answer concentration, support diversity and independence, contradictions, role beh",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-13",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.17751",
-      "source": "arxiv",
-      "title": "Degrees of Freedom in Multi-Agent Coordination: Between Centralized and Decentralized Regimes",
-      "url": "https://arxiv.org/abs/2610.17751",
-      "authors": [
-        "Yiqing Peng",
-        "Hehai Lin",
-        "Zixuan Wang",
-        "Dongyi Zhang"
-      ],
-      "summary": "Large language model (LLM)-based multi-agent systems (MAS) are commonly organized around two coordination regimes. Centralized coordination provides explicit control but can create a bottleneck at a single coordination locus, whereas decentralized coordination offers local autonomy but must achieve effective collaboration through distributed decisions and experience. These trade-offs motivate a systematic study of the space between the two regimes. We introduce Degrees of Freedom (DoF), a continuous configuration framework that quantifies the size of the decision space delegated to downstream ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-13",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomy",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.13376",
-      "source": "arxiv",
-      "title": "EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies",
-      "url": "https://arxiv.org/abs/2610.13376",
-      "authors": [
-        "Chi Kit Ng",
-        "Yidong Zhang",
-        "Tianchun Wu",
-        "Siu Hing Lui"
-      ],
-      "summary": "Artificial intelligence is beginning to automate scientific discovery, yet physical robot-policy research still relies on scientists and engineers to interpret experimental failures and decide how controllers should be revised. We present EndoRSI (Endoscopic Recursive Self-Improvement), a human-governed, self-improving robotic research system in which the embedded EndoForge coding agent iteratively develops and refines endoscopic robot policies using evidence from physical experiments. Physical execution remains isolated within a safety-constrained runtime under human authorisation. In motoris",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-09",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "self-improving",
-        "agent",
-        "interpret",
-        "robot"
-      ]
-    },
-    {
-      "id": "2610.12417",
-      "source": "arxiv",
-      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
-      "url": "https://arxiv.org/abs/2610.12417",
-      "authors": [
-        "Zheyu Fan",
-        "Yue Zhang",
-        "Mingkai Deng",
-        "Kangrui Wang"
-      ],
-      "summary": "Multimodal large language models (MLLMs) struggle with spatial, embodied, physical, and temporal reasoning. We hypothesize that these failures reflect a shared deficit in visual transition reasoning, and test whether this capability can serve as a shared training primitive, one that different models can learn from different supervision sources and reuse across different tasks, with a systematic training recipe. Existing benchmarks document these deficits separately but do not support controlled comparisons across scenes, actions, and reasoning operations. We therefore introduce WOVEN, a traini",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "world model",
-        "reasoning",
-        "embodied",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.06843",
-      "source": "arxiv",
-      "title": "Recursive Video In-Context Learning for Agentic Robot",
-      "url": "https://arxiv.org/abs/2610.06843",
-      "authors": [
-        "Wenrui Bao",
-        "Xinxin Liu",
-        "Bingxin Xu",
-        "Yuzhang Shang"
-      ],
-      "summary": "LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyframes lose the contact detail that decides whether a grasp holds, and what the agent needs shifts from the task's structure while planning to the frames around each contact. We introduce Recursive Video In-Context Learning (RV-ICL), a training-free method that turns a demonstration into a hierarchy the",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-05",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "robot",
-        "llm",
-        "in-context learning"
       ]
     }
   ]

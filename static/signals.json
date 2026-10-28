@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T18:37:42Z",
+  "generated_at": "2026-10-28T18:44:31Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -511,32 +511,6 @@
         "reasoning",
         "embodied",
         "rag"
-      ]
-    },
-    {
-      "id": "2609.33885",
-      "source": "arxiv",
-      "title": "Prospective Interpretation Risk: Principled Communication Control Between LLMs",
-      "url": "https://arxiv.org/abs/2609.33885",
-      "authors": [
-        "Wanrong Yang",
-        "Rehan Deen",
-        "Julian Ma",
-        "Yuheng Fan"
-      ],
-      "summary": "Large language model (LLM) agentic systems increasingly rely on models communicating with one another, yet existing uncertainty and multi-agent methods rarely estimate how a particular receiver will interpret a message before it is sent. This matters in heterogeneous systems, where capable receivers can reconstruct different tasks from the same message. We model this as a sender-receiver problem with a latent receiver type and define prospective interpretation risk (PIR): the probability that a receiver reconstructs a task other than intended. Rather than model an LLM's full input-output behav",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-27",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "interpret",
-        "llm",
-        "language model"
       ]
     },
     {
@@ -1316,6 +1290,30 @@
         "agentic",
         "autonomous",
         "embodied"
+      ]
+    },
+    {
+      "id": "2610.36325",
+      "source": "arxiv",
+      "title": "Ontology-guided multi-agent reasoning for explainable differential diagnosis",
+      "url": "https://arxiv.org/abs/2610.36325",
+      "authors": [
+        "Roxana Ramona Szomiu",
+        "George Ursu",
+        "Adrian Groza"
+      ],
+      "summary": "Effective differential diagnosis depends on well structured and unambiguous patient case descriptions, since incomplete or ambiguous clinical information readily leads to diagnostic errors and inconsistent reasoning. Large Language Models (LLMs) have recently shown promising capabilities in medical question answering and clinical reasoning; however, even when achieving competitive performance on medical benchmarks, they often rely on pattern recognition learned from training data rather than grounded clinical evidence, and can generate plausible yet unsupported diagnostic conclusions. Their re",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-26",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {

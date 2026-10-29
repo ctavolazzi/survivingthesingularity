@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T18:44:31Z",
+  "generated_at": "2026-10-29T18:54:25Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -113,33 +113,6 @@
         "llm",
         "language model",
         "scaling",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.34823",
-      "source": "arxiv",
-      "title": "AGRO-SUVIDE: Agentic Robotics for Surgical Viscoelastic Debridement",
-      "url": "https://arxiv.org/abs/2609.34823",
-      "authors": [
-        "Shutong Jin",
-        "Ziyang Chen",
-        "Preethi Satish",
-        "Medow Shen"
-      ],
-      "summary": "Augmented dexterity has the potential to reduce the fatigue experienced by surgeons during repetitive surgical tasks. In this paper, we propose the first AGentic RObotics framework for SUrgical VIscoelastic DEbridement (AGRO-SUVIDE), the repeated removal of small fragments attached to a viscoelastic substrate. Leveraging the self-improving and coding capability of agents, AGRO-SUVIDE adopts a modular framework. Specifically, the demonstration analysis module automatically identifies recurring skills from a single expert demonstration, using both visual and kinematic information. The constructi",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-28",
-      "score": 11.0,
-      "raw_score": 22,
-      "matched_keywords": [
-        "agi",
-        "self-improving",
-        "agent",
-        "agentic",
-        "robot",
-        "robotics",
         "rag"
       ]
     },
@@ -1539,6 +1512,30 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2610.37342",
+      "source": "arxiv",
+      "title": "Aligning Institutional Power and Operational Ability",
+      "url": "https://arxiv.org/abs/2610.37342",
+      "authors": [
+        "Andrea Marino",
+        "Giovanni Sileno",
+        "Thomas van Binsbergen",
+        "Tom van Engers"
+      ],
+      "summary": "To be socially sustainable, Agentic AI systems require normative designs that align responsibilities with the ability to fulfil them. Identifying incongruences such as unsatisfiable expectations or privilege escalation is crucial in avoiding normative pitfalls. In this study, we discuss design dimensions suitable for describing multi-agent systems in light of this norm-ability alignment requirement. We propose a formal framework centred on process-oriented modelling and institutional power for the analysis of a given normatively relevant process, discuss strategies for repairing it, and elabor",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-27",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "alignment"
       ]
     }
   ]

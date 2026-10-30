@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 29 Oct 2026 18:54:25 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 30 Oct 2026 18:30:56 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -134,6 +134,13 @@
       <description>Accurate 3D detection is essential for mobile embodied agents, while Vision Foundation Models (VFMs) offer transferable visual and geometric priors. Yet existing VFM-based 3D detectors rely on narrow-view monocular images or discrete perspective views, limiting coherent surround perception; equirect... [Score: 9.5 | Flagged for: agi, foundation model, agent, reasoning, embodied] Authors: Runtong Wu, Fei Teng, et al.</description>
     </item>
     <item>
+      <title>GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2610.37926</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.37926</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Cooperative multi-agent reinforcement learning (MARL) enables teams of agents, such as robots and autonomous vehicles, to learn coordinated behavior, but what such teams learn is largely determined by their reward function. Because task success alone provides too little guidance for learning, interm... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, robot, llm] Authors: Dogan Urgun</description>
+    </item>
+    <item>
       <title>FISRF: Flexible Instructional Scaffolding Reflection Framework for Robotics Task Planning with Large Language Model</title>
       <link>https://arxiv.org/abs/2610.35686</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.35686</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.30042</guid>
       <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
       <description>Harness optimization, which improves an agent's prompts, tools, and workflows, is an increasingly effective way to enhance agents built on frozen or closed-source LLMs. Leading approaches such as the Darwin--Godel Machine and the Huxley--Godel Machine (HGM) rely on recursive self-improvement and wer... [Score: 8.5 | Flagged for: recursive self-improvement, agent, planning, alignment, llm] Authors: Sudipta Paul, Pengrui Quan, et al.</description>
-    </item>
-    <item>
-      <title>Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection</title>
-      <link>https://arxiv.org/abs/2610.28560</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.28560</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Visual anomaly detection aims to detect abnormal objects, while anomaly samples are often scarce during model training. Assembling multiple pretrained detectors can help by leveraging their transferable image scores and anomaly maps. However, most existing ensemble methods apply fixed fusion rules o... [Score: 8.5 | Flagged for: agi, agent, agentic, language model, rag] Authors: Shangquan Sun, Wenjun Luo, et al.</description>
     </item>
   </channel>
 </rss>

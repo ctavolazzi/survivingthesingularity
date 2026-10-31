@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Fri, 30 Oct 2026 18:30:56 +0000</lastBuildDate>
+   <lastBuildDate>Sat, 31 Oct 2026 17:35:05 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -20,13 +20,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.31518</guid>
       <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
       <description>Task and Motion Planning (TAMP) stands as a fundamental challenge in robotics, essential for enabling autonomous agents to execute complex, long-horizon tasks in diverse environments. While Large Language Models (LLMs) introduce a new paradigm for TAMP by leveraging extensive common sense, their inh... [Score: 14.0 | Flagged for: agi, agent, autonomous, planning, reasoning] Authors: Chaoyue Li, Zeyu Gao, et al.</description>
-    </item>
-    <item>
-      <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
-      <link>https://arxiv.org/abs/2609.39045</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.39045</guid>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Recent advances in large language models have made automatic game generation increasingly feasible, yet reliably improving generated games beyond a playable version remains challenging. Naive iterative refinement can easily overfit a small set of test cases, producing fragile games with unresolved b... [Score: 12.5 | Flagged for: agi, recursive self-improvement, agent, agentic, autonomous] Authors: Wenyi Wu, Minghao Fu, et al.</description>
     </item>
     <item>
       <title>Scaling Multi-Agent Intelligence with Substrate-Centric Coordination</title>
@@ -190,13 +183,6 @@
       <description>Personalized interpretation of health checkup results requires reasoning across longitudinal records, medical knowledge, lifestyle guidance, and healthcare navigation. We present a multi-agent large language model (LLM) system that identifies multiple intents, maps each to a task-specific agent, exe... [Score: 9.0 | Flagged for: agent, multi-agent, reasoning, interpret, llm] Authors: HyungJun Kim, Taehan Lee, et al.</description>
     </item>
     <item>
-      <title>How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?</title>
-      <link>https://arxiv.org/abs/2609.40303</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.40303</guid>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machin... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, llm, language model] Authors: Kirill Brilliantov, Alejandro Hernández-Cano, et al.</description>
-    </item>
-    <item>
       <title>Skill$^{\infty}$: Recursive Self-Improvement for Agent Skill Optimization</title>
       <link>https://arxiv.org/abs/2610.35434</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.35434</guid>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.30042</guid>
       <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
       <description>Harness optimization, which improves an agent's prompts, tools, and workflows, is an increasingly effective way to enhance agents built on frozen or closed-source LLMs. Leading approaches such as the Darwin--Godel Machine and the Huxley--Godel Machine (HGM) rely on recursive self-improvement and wer... [Score: 8.5 | Flagged for: recursive self-improvement, agent, planning, alignment, llm] Authors: Sudipta Paul, Pengrui Quan, et al.</description>
+    </item>
+    <item>
+      <title>Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection</title>
+      <link>https://arxiv.org/abs/2610.28560</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.28560</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Visual anomaly detection aims to detect abnormal objects, while anomaly samples are often scarce during model training. Assembling multiple pretrained detectors can help by leveraging their transferable image scores and anomaly maps. However, most existing ensemble methods apply fixed fusion rules o... [Score: 8.5 | Flagged for: agi, agent, agentic, language model, rag] Authors: Shangquan Sun, Wenjun Luo, et al.</description>
+    </item>
+    <item>
+      <title>Temporal Evidence-Parameter Co-Alignment for LLM Reasoning over Temporal Knowledge Graphs</title>
+      <link>https://arxiv.org/abs/2610.28176</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.28176</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large Language Models (LLMs) often struggle with temporally grounded reasoning because their static parametric memory is misaligned with the dynamic evolution of real-world knowledge. Although RAG and Parameter-Efficient Fine-Tuning (PEFT) provide practical ways to enhance LLMs, they remain insuffic... [Score: 8.5 | Flagged for: reasoning, alignment, llm, language model, retrieval] Authors: Jiapu Wang</description>
     </item>
   </channel>
 </rss>

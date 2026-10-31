@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T18:30:56Z",
+  "generated_at": "2026-10-31T17:35:05Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -58,33 +58,6 @@
         "robot",
         "robotics",
         "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.39045",
-      "source": "arxiv",
-      "title": "RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement",
-      "url": "https://arxiv.org/abs/2609.39045",
-      "authors": [
-        "Wenyi Wu",
-        "Minghao Fu",
-        "Jieyu You",
-        "Kun Zhou"
-      ],
-      "summary": "Recent advances in large language models have made automatic game generation increasingly feasible, yet reliably improving generated games beyond a playable version remains challenging. Naive iterative refinement can easily overfit a small set of test cases, producing fragile games with unresolved bugs, missing behaviors, and poor generalization to broader player interactions. We introduce RSIGame, an autonomous agentic game development framework with recursive self-improvement. RSIGame organizes development into complementary local and global loops. Concretely, a local explore-diagnose-improv",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-30",
-      "score": 12.5,
-      "raw_score": 25,
-      "matched_keywords": [
-        "agi",
-        "recursive self-improvement",
-        "agent",
-        "agentic",
-        "autonomous",
         "language model",
         "rag"
       ]
@@ -686,31 +659,6 @@
         "interpret",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2609.40303",
-      "source": "arxiv",
-      "title": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
-      "url": "https://arxiv.org/abs/2609.40303",
-      "authors": [
-        "Kirill Brilliantov",
-        "Alejandro Hernández-Cano",
-        "Emmanuel Abbé"
-      ],
-      "summary": "Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machinery: multi-agent orchestrators, dedicated retrieval subagents, and more. While such harnesses expand, the use of more primitive but improved coding agents - where LLMs have direct access to the execution environment through read, write, and bash primitives - has received little attention in the fiel",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-30",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "llm",
-        "language model",
-        "retrieval"
       ]
     },
     {
@@ -1534,6 +1482,53 @@
         "multi-agent",
         "agentic",
         "alignment"
+      ]
+    },
+    {
+      "id": "2610.40516",
+      "source": "arxiv",
+      "title": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+      "url": "https://arxiv.org/abs/2610.40516",
+      "authors": [
+        "Max Neuwinger",
+        "Hanna Yukhymenko",
+        "Imanol Schlag"
+      ],
+      "summary": "Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datasets are often limited in size or do not follow region-localized harmful topics to broaden the scope of alignment beyond cultures. We propose a scalable template-based augmentation pipeline to produce massive multilingual refusal and benign corpora, extracting safe templates from harmful prompts, translating them and then filling in the slots with culturally authentic entities, both harmful and beni",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-29",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "language model",
+        "scaling"
+      ]
+    },
+    {
+      "id": "2610.40492",
+      "source": "arxiv",
+      "title": "Agentic University: Collaborative Agents for Personalized Learning",
+      "url": "https://arxiv.org/abs/2610.40492",
+      "authors": [
+        "Jingru Fan",
+        "Tianle Zhou",
+        "Yunjie Zhou",
+        "Zihao He"
+      ],
+      "summary": "Large language models support personalized tutoring, content generation, and adaptive learning paths. However, capability development requires these resources and interactions to form a coherent learning process that evolves with the learner. A central challenge is to align goals, activities, and assessment while using learning evidence to decide what should follow. We introduce Human-Participatory Multi-Agent Organization and instantiate it in Agentic University (AU). In AU, learners participate as organization members and work with specialized agents to maintain a revisable Capability Progra",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-29",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "language model"
       ]
     }
   ]

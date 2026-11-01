@@ -61,6 +61,8 @@ routing; it does not deploy. Markdown sanitization must work without a DOM.
 
 Dark theme, Inter UI, JetBrains Mono labels, amber actions. Reuse existing styles
 and accessible modal behavior. Keep third-party videos click-to-load.
+To humanize book prose (remove AI tells), use `.claude/skills/humanize-book/`, which wraps
+the vendored `blader/humanizer` skill with the book's voice rules.
 Stage explicit paths and review the diff; other sessions may own dirty files.
 Never commit secrets or customer records. Keep production migrations, storage
 upload verification and test-mode purchase evidence separate from mocked tests.

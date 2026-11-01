@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T17:35:05Z",
+  "generated_at": "2026-11-01T18:20:22Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -609,56 +609,6 @@
         "robotics",
         "emergent",
         "automation"
-      ]
-    },
-    {
-      "id": "2610.01569",
-      "source": "arxiv",
-      "title": "Managing Context and Communication in Distributed Agentic UAV Swarms",
-      "url": "https://arxiv.org/abs/2610.01569",
-      "authors": [
-        "Andrea Iannoli",
-        "Ivan Zyrianoff",
-        "Angelo Trotta",
-        "Lorenzo Gigli"
-      ],
-      "summary": "Unmanned aerial vehicle (UAV) swarms increasingly rely on language-model agents to provide adaptive mission-level reasoning in uncertain environments. Fully distributed control, in which each UAV hosts an independent Small Language Model (SLM), removes reliance on a centralized coordinator but introduces an information-management problem: long-running interaction histories can degrade the reasoning context, while indiscriminate information dissemination increases communication and inference overhead. We address these challenges with a distributed UAV-agent architecture that enables continuous ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-01",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "agentic",
-        "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.01451",
-      "source": "arxiv",
-      "title": "A Multi-Agent LLM Framework for Personalized Health Checkup Interpretation and Guidance",
-      "url": "https://arxiv.org/abs/2610.01451",
-      "authors": [
-        "HyungJun Kim",
-        "Taehan Lee",
-        "Soojin Cheon"
-      ],
-      "summary": "Personalized interpretation of health checkup results requires reasoning across longitudinal records, medical knowledge, lifestyle guidance, and healthcare navigation. We present a multi-agent large language model (LLM) system that identifies multiple intents, maps each to a task-specific agent, executes them in parallel, and synthesizes their outputs. We compared answers generated in Single Agent and Multi Agent settings on 120 Korean compound queries combining two to four requirements, using synthetic health checkup records. The Multi Agent improved the weighted LLM-judge score from 1.695 to",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-01",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "interpret",
-        "llm",
-        "language model"
       ]
     },
     {
@@ -1529,6 +1479,56 @@
         "multi-agent",
         "agentic",
         "language model"
+      ]
+    },
+    {
+      "id": "2610.40350",
+      "source": "arxiv",
+      "title": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
+      "url": "https://arxiv.org/abs/2610.40350",
+      "authors": [
+        "Zheng Zhu",
+        "Xiaozhuan Liang",
+        "Xi Chen",
+        "Bei Yu"
+      ],
+      "summary": "Agents powered by large language models (LLMs) have demonstrated remarkable progress in solving complex reasoning tasks. However, LLM agents often falter on long-horizon tasks due to cognitive overload, as their working memory becomes cluttered with expanding and irrelevant information, which dilutes their attention and hinders effective planning and reasoning. To mitigate this challenge, we introduce Cognitive Resource Self-Allocation (CORAL), a novel reasoning paradigm that empowers agents to proactively optimize their context. Implemented as an agent-callable working memory management tools",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-29",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "planning",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.40016",
+      "source": "arxiv",
+      "title": "LOGIV: Graph-Verified Execution with Causal Local Repair for Long-Horizon Robot Tasks",
+      "url": "https://arxiv.org/abs/2610.40016",
+      "authors": [
+        "Enqiao Lu",
+        "Yuxiang Xie",
+        "Xingrui Yu",
+        "Yuyang Wang"
+      ],
+      "summary": "Agentic robots must turn a high-level goal into actions while keeping the physical conditions needed for future steps valid. A completed action does not ensure that its effects will persist: a later disturbance can invalidate support that the remaining plan still assumes. We present LOGIV, a graph engineering framework for agentic robot execution that uses an explicit task graph to connect symbolic planning, observation-based verification, and embodied action. LOGIV compiles a validated plan into condition-support and resource-ordering edges, checks their physical validity during execution, an",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-29",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "embodied",
+        "robot"
       ]
     }
   ]

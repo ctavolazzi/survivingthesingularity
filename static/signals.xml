@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 31 Oct 2026 17:35:05 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 01 Nov 2026 18:20:22 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -169,20 +169,6 @@
       <description>Swarm robotics presents a robust and cost-effective paradigm for advanced automation in complex, dynamic environments, such as those encountered in search and rescue or environmental monitoring. A fundamental challenge for this field is the data-driven design of decentralized controllers capable of ... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, robot, robotics] Authors: Álvaro Díez, Fidel Aznar</description>
     </item>
     <item>
-      <title>Managing Context and Communication in Distributed Agentic UAV Swarms</title>
-      <link>https://arxiv.org/abs/2610.01569</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.01569</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Unmanned aerial vehicle (UAV) swarms increasingly rely on language-model agents to provide adaptive mission-level reasoning in uncertain environments. Fully distributed control, in which each UAV hosts an independent Small Language Model (SLM), removes reliance on a centralized coordinator but intro... [Score: 9.0 | Flagged for: agi, agent, agentic, reasoning, language model] Authors: Andrea Iannoli, Ivan Zyrianoff, et al.</description>
-    </item>
-    <item>
-      <title>A Multi-Agent LLM Framework for Personalized Health Checkup Interpretation and Guidance</title>
-      <link>https://arxiv.org/abs/2610.01451</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.01451</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Personalized interpretation of health checkup results requires reasoning across longitudinal records, medical knowledge, lifestyle guidance, and healthcare navigation. We present a multi-agent large language model (LLM) system that identifies multiple intents, maps each to a task-specific agent, exe... [Score: 9.0 | Flagged for: agent, multi-agent, reasoning, interpret, llm] Authors: HyungJun Kim, Taehan Lee, et al.</description>
-    </item>
-    <item>
       <title>Skill$^{\infty}$: Recursive Self-Improvement for Agent Skill Optimization</title>
       <link>https://arxiv.org/abs/2610.35434</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.35434</guid>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.28176</guid>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <description>Large Language Models (LLMs) often struggle with temporally grounded reasoning because their static parametric memory is misaligned with the dynamic evolution of real-world knowledge. Although RAG and Parameter-Efficient Fine-Tuning (PEFT) provide practical ways to enhance LLMs, they remain insuffic... [Score: 8.5 | Flagged for: reasoning, alignment, llm, language model, retrieval] Authors: Jiapu Wang</description>
+    </item>
+    <item>
+      <title>Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning</title>
+      <link>https://arxiv.org/abs/2610.28259</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.28259</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Recent advances in visuospatial understanding and agentic reasoning enable direct robotic manipulation with general-purpose multimodal models, but their embodied capabilities remain poorly understood. This paper systematically evaluate GPT-6 Astra for closed-loop robotic manipulation using a lightwe... [Score: 8.5 | Flagged for: agent, agentic, reasoning, embodied, robot] Authors: Youwei Zhou, Bohan Hou, et al.</description>
+    </item>
+    <item>
+      <title>RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation</title>
+      <link>https://arxiv.org/abs/2610.27782</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.27782</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments... [Score: 8.5 | Flagged for: world model, alignment, embodied, llm, language model] Authors: Siyuan Ma, Yu Qi, et al.</description>
     </item>
   </channel>
 </rss>

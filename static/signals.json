@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T18:20:22Z",
+  "generated_at": "2026-11-02T22:15:25Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -434,32 +434,6 @@
       ]
     },
     {
-      "id": "2610.03015",
-      "source": "arxiv",
-      "title": "OmniAct3D: Leveraging Foundation Geometry and Evidence-Grounded Reasoning for Panoramic 3D Detection",
-      "url": "https://arxiv.org/abs/2610.03015",
-      "authors": [
-        "Runtong Wu",
-        "Fei Teng",
-        "Di Wen",
-        "Guoqiang Zhao"
-      ],
-      "summary": "Accurate 3D detection is essential for mobile embodied agents, while Vision Foundation Models (VFMs) offer transferable visual and geometric priors. Yet existing VFM-based 3D detectors rely on narrow-view monocular images or discrete perspective views, limiting coherent surround perception; equirectangular projection (ERP) instead encodes a continuous 360 scene in a single image. Direct transfer remains difficult because ERP organizes geometry and visual information differently, making object-relevant cues hard to model, localize, and preserve. We propose OmniAct3D, a framework that adapts per",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-02",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agi",
-        "foundation model",
-        "agent",
-        "reasoning",
-        "embodied",
-        "rag"
-      ]
-    },
-    {
       "id": "2610.37926",
       "source": "arxiv",
       "title": "GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning",
@@ -609,6 +583,58 @@
         "robotics",
         "emergent",
         "automation"
+      ]
+    },
+    {
+      "id": "2610.41754",
+      "source": "arxiv",
+      "title": "Multimodal In-Context Learning with Explicit Rule Induction",
+      "url": "https://arxiv.org/abs/2610.41754",
+      "authors": [
+        "Yuquan Li",
+        "Xinyang Jiang",
+        "Yuhao Xue",
+        "Cairong Zhao"
+      ],
+      "summary": "A central challenge in multimodal in-context learning (MICL) arises from tasks that are ill-defined without context and require uncovering the underlying rules from demonstrations. Existing methods predominantly treat MICL as direct input-output mapping, overlooking the importance of explicitly inducing and reasoning over such rules, limiting both performance and interpretability. We propose ERIM, Explicit Rule-Induction for Multimodal In-Context Learning, a unified framework that enhances MICL by explicitly inducing the latent rules governing demonstration samples. Leveraging the reasoning ab",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-30",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "interpretability",
+        "interpret",
+        "in-context learning",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.41868",
+      "source": "arxiv",
+      "title": "META-Robot: Self-Cognition and Capability Scaling in Agentic Robots",
+      "url": "https://arxiv.org/abs/2610.41868",
+      "authors": [
+        "Xuanzhi Feng",
+        "Zeyu Liu",
+        "Weiheng Gao",
+        "Xinchen Li"
+      ],
+      "summary": "LLM-based robotic agent systems can generate programs for robot control, yet their generalization to new tasks often depends on elaborate scaffolding. Expanding their skill repertoires alone offers limited guidance on how to assess new capabilities or identify what remains beyond their reach. We introduce META-Robot, a framework that couples self cognition with capability scaling by expanding the criteria through which an agent evaluates and develops its skills. At its core, action-level predicates make execution outcomes explicit and available for LLM reasoning. The agent uses these assessmen",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-30",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "robot",
+        "llm",
+        "scaling"
       ]
     },
     {
@@ -1037,53 +1063,28 @@
       ]
     },
     {
-      "id": "2610.03136",
+      "id": "2610.42053",
       "source": "arxiv",
-      "title": "Investigating the Role of Reasoning-Language Alignment in Monolingual Retrieval-Augmented Generation",
-      "url": "https://arxiv.org/abs/2610.03136",
+      "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
+      "url": "https://arxiv.org/abs/2610.42053",
       "authors": [
-        "Oliver Hauck",
-        "Mario Sanz-Guerrero",
-        "Katharina von der Wense"
+        "Pengfei Zhou",
+        "Yixing Ma",
+        "Zhengfeiyang Zhang",
+        "Haoyuan Chen"
       ],
-      "summary": "Reasoning traces improve large language models (LLMs), but current models are trained to reason mostly in English. It has been shown that forcing a model to reason in another language degrades accuracy, even when the reasoning language matches the language of the prompt -- but only for a setting where the model reasons over a short prompt. Here, we ask whether the same holds for retrieval-augmented generation (RAG), where the model must read and integrate a large amount of retrieved evidence in the target language. To study this, we build a fully monolingual German RAG question-answering testb",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-02",
-      "score": 8.5,
-      "raw_score": 17,
+      "summary": "Foundation models are becoming remarkably reliable at high-level reasoning, yet they remain too slow and costly to serve as fine-grained controllers. Conversely, fast policies like VLAs and whole-body controllers offer more efficient reflexes, but struggle to generalize. While pairing a deliberative brain (foundation models) with a reactive cerebellum (fast policies) seems natural for embodied systems, two obstacles remain: methods are built and scored on incompatible stacks, and their asynchronous coordination is difficult. For example, an agent that calls the VLA in the agentic loop can stal",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-30",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
-        "reasoning",
-        "alignment",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.03010",
-      "source": "arxiv",
-      "title": "Engineering Sustainable Agents: A Systematic Comparison of Agentic LLMs for Developer Workflows",
-      "url": "https://arxiv.org/abs/2610.03010",
-      "authors": [
-        "Merve Astekin",
-        "Yan Naing Tun",
-        "Arda Goknil",
-        "Erik Johannes Husom"
-      ],
-      "summary": "Large language models (LLMs) are increasingly used in software engineering, including agentic systems that coordinate multiple agents, but impose higher computational and environmental costs. In this paper, we present a comprehensive empirical study of agentic LLM systems across five software engineering tasks: code generation, technical debt identification, code vulnerability detection, log parsing, and log analysis. For each task, we compare LLM configurations that range from a non-agentic single-query baseline to multi-agent workflows, using six open-weight LLMs, two prompt strategies, and ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-02",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
+        "foundation model",
         "agent",
-        "multi-agent",
         "agentic",
-        "llm",
-        "language model"
+        "reasoning",
+        "embodied"
       ]
     },
     {
@@ -1109,6 +1110,56 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2610.40927",
+      "source": "arxiv",
+      "title": "Agentic World Modeling for Agent Test-time Scaling without Environment Replica",
+      "url": "https://arxiv.org/abs/2610.40927",
+      "authors": [
+        "Wendi Li",
+        "Huseyin A. Inan",
+        "Wei-Ning Chen",
+        "Yanzhi Chen"
+      ],
+      "summary": "Test-time scaling (TTS) improves large language model agents by sampling and selecting among multiple candidate trajectories, but common realizations assume that these trajectories can be executed in parallel. This assumption breaks in realistic deployments, where enterprise workspaces and cloud services are shared and persistent, costly or infeasible to replicate, and actions may introduce irreversible side effects or cross-trajectory interference. Existing generative world models avoid direct execution, but typically compress environment state into a single prompt, limiting their ability to ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-29",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "world model",
+        "agent",
+        "agentic",
+        "language model",
+        "scaling"
+      ]
+    },
+    {
+      "id": "2610.38145",
+      "source": "arxiv",
+      "title": "El Agente Quntur: Agentic Active-Space Selection for CASSCF",
+      "url": "https://arxiv.org/abs/2610.38145",
+      "authors": [
+        "Juan B. Pérez-Sánchez",
+        "Viviana Roman-Ventura",
+        "Olalla Nieto-Faza",
+        "Aiwei Yin"
+      ],
+      "summary": "Multireference calculations require time-consuming expert decisions about active spaces, state identity, and convergence. This study asks whether agents can make these decisions reliably. Using the El Agente Quntur multi-agent harness with GPT-5.6 Sol and GPT-5.6 Terra as its language models, agents study 32 fixed-geometry singlet excitations, detect missing active orbitals, compare excited states, and revise state assignments as calculations progress. Prompts specify equal-weight two-singlet state-averaged complete active space self-consistent field (CASSCF) calculations followed by strongly ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-28",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -1386,6 +1437,52 @@
       ]
     },
     {
+      "id": "2610.41239",
+      "source": "arxiv",
+      "title": "Understanding LLM-Based Bargaining of Driving Agents in Mixed-Autonomy Traffic",
+      "url": "https://arxiv.org/abs/2610.41239",
+      "authors": [
+        "Lingxiao Zhou",
+        "Di Chen",
+        "Jia Li"
+      ],
+      "summary": "Large Language Models (LLMs) offer a flexible computational approach for modeling social interactions among heterogeneous agents. This paper develops a novel framework towards characterizing and understanding LLM-based population-level bargaining of shared road space between autonomous vehicle (AV) and human-driven vehicle (HV) agents in mixed-autonomy traffic. Through controlled experiments varying traffic density, agent objectives, and traffic-domain knowledge, we first characterize bargaining outcomes and observe heterogeneous agreement rates across different experimental conditions. To und",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-30",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "autonomy",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.41844",
+      "source": "arxiv",
+      "title": "SketchMate: Agentic Geometric Reasoning for Zero-Shot Precision Insertion",
+      "url": "https://arxiv.org/abs/2610.41844",
+      "authors": [
+        "Jiaming Wang"
+      ],
+      "summary": "Inserting an unseen part requires sub-millimetre precision and the correct orientation of keyed features. Current zero-shot agentic manipulation methods built on vision-language models (VLMs) produce spatial outputs that are far too coarse for this. We propose to let a VLM build a sketch model of the task, i.e., a few geometric primitives and two mate frames, which a VLM agent measures with geometric tools in multi-view depth and which a standard planner and compliant controller execute. Because a sketch describes the parts independently of their placement, the robot needs to build it only onc",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-30",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "robot",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.39547",
       "source": "arxiv",
       "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
@@ -1432,103 +1529,6 @@
         "multi-agent",
         "agentic",
         "alignment"
-      ]
-    },
-    {
-      "id": "2610.40516",
-      "source": "arxiv",
-      "title": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
-      "url": "https://arxiv.org/abs/2610.40516",
-      "authors": [
-        "Max Neuwinger",
-        "Hanna Yukhymenko",
-        "Imanol Schlag"
-      ],
-      "summary": "Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datasets are often limited in size or do not follow region-localized harmful topics to broaden the scope of alignment beyond cultures. We propose a scalable template-based augmentation pipeline to produce massive multilingual refusal and benign corpora, extracting safe templates from harmful prompts, translating them and then filling in the slots with culturally authentic entities, both harmful and beni",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-29",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "alignment",
-        "language model",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2610.40492",
-      "source": "arxiv",
-      "title": "Agentic University: Collaborative Agents for Personalized Learning",
-      "url": "https://arxiv.org/abs/2610.40492",
-      "authors": [
-        "Jingru Fan",
-        "Tianle Zhou",
-        "Yunjie Zhou",
-        "Zihao He"
-      ],
-      "summary": "Large language models support personalized tutoring, content generation, and adaptive learning paths. However, capability development requires these resources and interactions to form a coherent learning process that evolves with the learner. A central challenge is to align goals, activities, and assessment while using learning evidence to decide what should follow. We introduce Human-Participatory Multi-Agent Organization and instantiate it in Agentic University (AU). In AU, learners participate as organization members and work with specialized agents to maintain a revisable Capability Progra",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-29",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.40350",
-      "source": "arxiv",
-      "title": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
-      "url": "https://arxiv.org/abs/2610.40350",
-      "authors": [
-        "Zheng Zhu",
-        "Xiaozhuan Liang",
-        "Xi Chen",
-        "Bei Yu"
-      ],
-      "summary": "Agents powered by large language models (LLMs) have demonstrated remarkable progress in solving complex reasoning tasks. However, LLM agents often falter on long-horizon tasks due to cognitive overload, as their working memory becomes cluttered with expanding and irrelevant information, which dilutes their attention and hinders effective planning and reasoning. To mitigate this challenge, we introduce Cognitive Resource Self-Allocation (CORAL), a novel reasoning paradigm that empowers agents to proactively optimize their context. Implemented as an agent-callable working memory management tools",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-29",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "planning",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.40016",
-      "source": "arxiv",
-      "title": "LOGIV: Graph-Verified Execution with Causal Local Repair for Long-Horizon Robot Tasks",
-      "url": "https://arxiv.org/abs/2610.40016",
-      "authors": [
-        "Enqiao Lu",
-        "Yuxiang Xie",
-        "Xingrui Yu",
-        "Yuyang Wang"
-      ],
-      "summary": "Agentic robots must turn a high-level goal into actions while keeping the physical conditions needed for future steps valid. A completed action does not ensure that its effects will persist: a later disturbance can invalidate support that the remaining plan still assumes. We present LOGIV, a graph engineering framework for agentic robot execution that uses an explicit task graph to connect symbolic planning, observation-based verification, and embodied action. LOGIV compiles a validated plan into condition-support and resource-ordering edges, checks their physical validity during execution, an",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-29",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "embodied",
-        "robot"
       ]
     }
   ]

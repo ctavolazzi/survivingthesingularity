@@ -14,14 +14,14 @@
  */
 export default Object.freeze({
   "schema": 1,
-  "generated_at": "2026-10-13T03:03:01Z",
+  "generated_at": "2026-10-25T01:35:37Z",
   "generator": "scripts/build_bonus.py",
   "bundle": {
     "root": "The-Precedent-File",
     "object": "research-bundle-book-v0.11.0.zip",
     "bucket": "downloads",
-    "bytes": 28280000,
-    "sha256": "8b437b324b076809b6a024396d098d06fe4ffb8ca5a4518b871945659504f7c1",
+    "bytes": 28281967,
+    "sha256": "545e6d1412ce2437800c4c2661a0addc26071116cc5337a3c9ec0ddfa295e4b9",
     "entries": 11
   },
   "book": {
@@ -126,8 +126,8 @@ export default Object.freeze({
       "label": "The Precedent File, 31 cases (PDF)",
       "format": "pdf",
       "role": "primary",
-      "bytes": 89308,
-      "sha256": "b7abe6e954bcfade804084ecf92bff59f992de55206c9d0142cd05a0c7488b25"
+      "bytes": 91271,
+      "sha256": "c0e119e3e458c8fd04376d1782b6c1d4ae3c4d69ad14a26beb78fb4bf778a7b8"
     },
     {
       "path": "The-Precedent-File/book/Surviving-the-Singularity.epub",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T22:15:25Z",
+  "generated_at": "2026-11-03T20:00:38Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -87,6 +87,32 @@
         "language model",
         "scaling",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.01449",
+      "source": "arxiv",
+      "title": "CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging",
+      "url": "https://arxiv.org/abs/2611.01449",
+      "authors": [
+        "Yuxiang Wei",
+        "Lijing Zhu",
+        "Qizhen Lan",
+        "Yanteng Zhang"
+      ],
+      "summary": "Large language model (LLM) agents can autonomously run neuroimaging analyses from research questions to reported findings. Existing agentic systems use tools to check that code runs and reported values match its output, but rely on LLM judgment to decide which results warrant scientific reporting. We show that LLM judges endorse site-confounded findings even when the confound is presented as evidence. We present \\textbf{CONFIRM}, a framework that separates running an analysis from deciding which findings to report. CONFIRM encodes each hypothesis as a machine-readable, pre-specified analysis p",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-01",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "autonomous",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -355,6 +381,31 @@
       ]
     },
     {
+      "id": "2611.02909",
+      "source": "arxiv",
+      "title": "Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration",
+      "url": "https://arxiv.org/abs/2611.02909",
+      "authors": [
+        "Chengyi Yang",
+        "Qianxin Zhou",
+        "Yang Li"
+      ],
+      "summary": "Autonomous reaction-mechanism exploration requires proposing reaction steps, preparing three-dimensional structures, and determining which reactant and product a computed saddle point connects. Large language model (LLM) agents can misjudge spatial relationships and confuse a computed structure with the species or step they intended to study.\n  We present Cloudra, a multi-agent framework that constrains mechanistic output through a Delivery DAG of chemical objects. Species nodes carry geometries and bonding topology; elementary-step edges carry transition states and reaction connections betwee",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-02",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.27865",
       "source": "arxiv",
       "title": "Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum",
@@ -431,6 +482,30 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.01742",
+      "source": "arxiv",
+      "title": "From Single-Agent Self-Discovery to Multi-Agent Adaptation: Scaling Laws of Partner Feedback and Convention Rigidity in Meta Reinforcement Learning Algorithms",
+      "url": "https://arxiv.org/abs/2611.01742",
+      "authors": [
+        "Haomin Luo",
+        "Ersha Li"
+      ],
+      "summary": "A key milestone toward Recursive Self-Improvement (RSI) is replacing hand-crafted optimizers with meta-learned update rules (such as Disco103 and OPEN) that discover how agents learn. Yet when a self-discovered RL model trains with adapting teammates, does co-evolution sustain capability gains or trap agents in brittle conventions? Across 1,800+ runs in continuous collective robotics (VMAS) and discrete coordination (Overcooked), we establish five laws of multi-agent adaptation. First, four-cell counterfactual partner swaps expose an evaluation illusion: apparent team progress often masks foca",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-01",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "multi-agent",
+        "robot",
+        "robotics",
+        "scaling"
       ]
     },
     {
@@ -583,6 +658,32 @@
         "robotics",
         "emergent",
         "automation"
+      ]
+    },
+    {
+      "id": "2611.03584",
+      "source": "arxiv",
+      "title": "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation",
+      "url": "https://arxiv.org/abs/2611.03584",
+      "authors": [
+        "Utkarsh A. Mishra",
+        "Alperen Degirmenci",
+        "Yongxin Chen",
+        "Danfei Xu"
+      ],
+      "summary": "Open-world robotic mobile manipulation requires acting in physical environments with only partial information. While recent Large Vision-Language Model (LVLM) agents show strong open-world reasoning capabilities, existing architectures that rely on direct tool calling struggle with geometric uncertainty and thus are limited to fully-observable tabletop environments. In contrast, Task and Motion Planning (TAMP) systems can solve long-horizon tasks under partial observability but incur high computational costs and require closed worlds. We propose \\textbf{TAMPAgent}, an agentic planning framewor",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-02",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "reasoning",
+        "robot",
+        "language model"
       ]
     },
     {
@@ -1434,101 +1535,6 @@
         "reasoning",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2610.41239",
-      "source": "arxiv",
-      "title": "Understanding LLM-Based Bargaining of Driving Agents in Mixed-Autonomy Traffic",
-      "url": "https://arxiv.org/abs/2610.41239",
-      "authors": [
-        "Lingxiao Zhou",
-        "Di Chen",
-        "Jia Li"
-      ],
-      "summary": "Large Language Models (LLMs) offer a flexible computational approach for modeling social interactions among heterogeneous agents. This paper develops a novel framework towards characterizing and understanding LLM-based population-level bargaining of shared road space between autonomous vehicle (AV) and human-driven vehicle (HV) agents in mixed-autonomy traffic. Through controlled experiments varying traffic density, agent objectives, and traffic-domain knowledge, we first characterize bargaining outcomes and observe heterogeneous agreement rates across different experimental conditions. To und",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-30",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "autonomy",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.41844",
-      "source": "arxiv",
-      "title": "SketchMate: Agentic Geometric Reasoning for Zero-Shot Precision Insertion",
-      "url": "https://arxiv.org/abs/2610.41844",
-      "authors": [
-        "Jiaming Wang"
-      ],
-      "summary": "Inserting an unseen part requires sub-millimetre precision and the correct orientation of keyed features. Current zero-shot agentic manipulation methods built on vision-language models (VLMs) produce spatial outputs that are far too coarse for this. We propose to let a VLM build a sketch model of the task, i.e., a few geometric primitives and two mate frames, which a VLM agent measures with geometric tools in multi-view depth and which a standard planner and compliant controller execute. Because a sketch describes the parts independently of their placement, the robot needs to build it only onc",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-30",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "robot",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.39547",
-      "source": "arxiv",
-      "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
-      "url": "https://arxiv.org/abs/2610.39547",
-      "authors": [
-        "Xi Zheng",
-        "Ivan Ruchkin",
-        "Hong Jin Kang",
-        "Tevfik Bultan"
-      ],
-      "summary": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering control across stochastic neural, symbolic, and physical boundaries requires a shift from model-centric evaluation to system-level assurance. We introduce the Foundation Model Assurance Stack, connecting three directions: (i) neuro-symbolic architectures that constrain foundation models through explicit symbolic world models, reasoning la",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-29",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "world model",
-        "foundation model",
-        "autonomous",
-        "reasoning",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.37342",
-      "source": "arxiv",
-      "title": "Aligning Institutional Power and Operational Ability",
-      "url": "https://arxiv.org/abs/2610.37342",
-      "authors": [
-        "Andrea Marino",
-        "Giovanni Sileno",
-        "Thomas van Binsbergen",
-        "Tom van Engers"
-      ],
-      "summary": "To be socially sustainable, Agentic AI systems require normative designs that align responsibilities with the ability to fulfil them. Identifying incongruences such as unsatisfiable expectations or privilege escalation is crucial in avoiding normative pitfalls. In this study, we discuss design dimensions suitable for describing multi-agent systems in light of this norm-ability alignment requirement. We propose a formal framework centred on process-oriented modelling and institutional power for the analysis of a given normatively relevant process, discuss strategies for repairing it, and elabor",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-27",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "alignment"
       ]
     }
   ]

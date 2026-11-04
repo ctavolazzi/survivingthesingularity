@@ -1,0 +1,20 @@
+{
+  "schema": "sts-source-upload-targets/v1",
+  "captured_utc": "2026-10-08T23:48:42.020273+00:00",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "archive_tag": "book-archive-2026-10-08",
+  "archive_tag_commit": "a3dc26d7eec0299fbc7848dd2b51e5ff4900c352",
+  "main": "0c70e94380df8fba373e5c6ce0d3410f9d20441c",
+  "latest_release": {
+    "id": 364617820,
+    "tag": "v0.7.5"
+  },
+  "source_branches": {
+    "book-v0.10.0": "f7178bc10257df2b27f1e518813bb4f96a5df222",
+    "book-v0.10.1": "c05cb948902d885b574fce965b544c9681361922",
+    "book-v0.10.2": "85c72ea020db447f37bf080473f5a91734d88031",
+    "book-v0.10.3": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+    "book-v0.10.4": "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+    "book-v0.11.0": "f5835e217ef8e27bc8b780ee49a47d88d20e3f9a"
+  }
+}

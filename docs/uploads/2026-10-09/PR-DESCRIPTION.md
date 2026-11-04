@@ -1,0 +1,9 @@
+Local book editions and related project work were spread across worktrees, exports and production folders. This change records their source provenance, preserves recent research and website work, and provides manifests, download tools and verification receipts for both archive releases.
+
+- [October 8 book archive](https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-archive-2026-10-08): 149 book artifacts, including PDF, EPUB, DOCX and text exports.
+- [October 9 supplement](https://github.com/ctavolazzi/survivingthesingularity/releases/tag/book-work-archive-2026-10-09): 147 recovered files covering production intermediates, artwork, research packages and standalone project sources and outputs.
+- [Coverage report](docs/uploads/2026-10-09/coverage-report.json): file, branch and tag coverage, explicit cache/dependency exclusions, and the timestamped snapshot of ten website files. The patch is archival evidence; application source is unchanged by this PR.
+
+Validation: original archive parts and metadata were rechecked against GitHub; all 30 supplement parts and six supporting assets match their recorded sizes and SHA256 hashes. Original, staged and decompressed supplement payloads match. Downloader and publication checks reject malformed or incomplete inputs, and the website patch reconstructs all captured files exactly. All six metadata downloads and byte ranges from the first and final archive parts passed public checks. Full sample-part downloads timed out on this connection; the receipts retain those attempts.
+
+This branch adds archive documentation, scripts, receipts and snapshots, plus narrowly scoped secret-scan exclusions for two verified Git commit IDs. Merging to main uses the repository's existing deployment workflow; this upload task does not merge the PR.

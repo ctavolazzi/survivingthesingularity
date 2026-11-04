@@ -1,0 +1,7 @@
+{
+  "source": "/Users/ctavolazzi/Code/active/survivingthesingularity/sql/008_discord_applications.sql",
+  "bytes": 1130,
+  "sha256": "b8065725a59adab4a7e173b6186015702cb029d3ba853a4cd2f96b2e5edff45b",
+  "copied_utc": "2026-10-10T13:05:39.457668+00:00",
+  "state": "Ignored historical migration variant; preserved without applying it or replacing the current migration."
+}

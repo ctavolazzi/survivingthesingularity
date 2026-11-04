@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T20:00:38Z",
+  "generated_at": "2026-11-04T20:21:31Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -658,6 +658,57 @@
         "robotics",
         "emergent",
         "automation"
+      ]
+    },
+    {
+      "id": "2611.05058",
+      "source": "arxiv",
+      "title": "Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action",
+      "url": "https://arxiv.org/abs/2611.05058",
+      "authors": [
+        "Yihang Liu",
+        "Yiming Chen",
+        "Mingzhe Zheng"
+      ],
+      "summary": "Recent multimodal language models can reason directly about robot scenes, but it is unclear whether they need to repeatedly reinterpret raw visual observations at every step of an interaction. We propose shifting routine spatial reasoning from images to text and symbols through a 3D geometric abstraction that is refreshed locally from observations and read directly by the language models. Specifically, our interface represents scene geometry via typed, evidence-aware symbolic references to object parts, grounds them from calibrated RGB-D, and returns compact textual checkpoints with metric res",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-03",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "interpret",
+        "robot",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.04972",
+      "source": "arxiv",
+      "title": "Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture",
+      "url": "https://arxiv.org/abs/2611.04972",
+      "authors": [
+        "Abhijeet M. Kulkarni",
+        "Saimouli Katragadda",
+        "Yuze Du",
+        "Zijun Sha"
+      ],
+      "summary": "By harnessing the inherent commonsense capabilities of pretrained Large Language Models (LLMs) and Vision-Language Models (VLMs), current Vision-Language Action(VLA) models for legged robots excel at interpreting language-based navigation commands but lack the physical grounding and explicit safety assurance required for real-world operation. Therefore, this paper aims to cage Legged-Vision-Language Navigation (VLN) through a safety architecture that provides physical grounding and ensures navigation safety. The key idea is not to abandon the powerful capabilities of end-to-end VLA planning, b",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-03",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "planning",
+        "interpret",
+        "robot",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1483,56 +1534,6 @@
         "agent",
         "multi-agent",
         "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.22316",
-      "source": "arxiv",
-      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2610.22316",
-      "authors": [
-        "Leyang Shen",
-        "Yaxin Gong",
-        "Yang Zhang",
-        "Chenxiao Fan"
-      ],
-      "summary": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are prone to deviating from the overall goal as execution unfolds, which wastes execution resources and leads to undesired outcomes, a failure termed goal drift. In this work, we propose a steering agent that supervises execution on the fly and steers the system back on track when drift occurs. The steering agent observes the execution context, deciding when to intervene with a low-cost fast path and how to interve",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-15",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "tool use",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.21290",
-      "source": "arxiv",
-      "title": "Bias Control and Injection for Multi-Agent Aggregation",
-      "url": "https://arxiv.org/abs/2610.21290",
-      "authors": [
-        "Sungjae Lee",
-        "Soheil Abbasloo",
-        "Jabin Koo",
-        "Jungseul Ok"
-      ],
-      "summary": "Multi-agent reasoning with large language models (LLMs) raises a central question for collective decision-making: when agents disagree, whose decision should be trusted? Resolving such disagreements is difficult because agents' decisions are susceptible to non-semantic biases such as majority pressure and response-style preferences, which can obscure the quality of the underlying reasoning. Our analysis shows how bias can be both mitigated and exploited: bias control improves initial answer selection, while bias injection elicits decision instability that serves as a reliability signal. Buildi",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-15",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
         "llm",
         "language model"
       ]

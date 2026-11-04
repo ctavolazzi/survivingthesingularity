@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 03 Nov 2026 20:00:38 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 04 Nov 2026 20:21:31 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -183,6 +183,20 @@
       <description>Swarm robotics presents a robust and cost-effective paradigm for advanced automation in complex, dynamic environments, such as those encountered in search and rescue or environmental monitoring. A fundamental challenge for this field is the data-driven design of decentralized controllers capable of ... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, robot, robotics] Authors: Álvaro Díez, Fidel Aznar</description>
     </item>
     <item>
+      <title>Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action</title>
+      <link>https://arxiv.org/abs/2611.05058</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.05058</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Recent multimodal language models can reason directly about robot scenes, but it is unclear whether they need to repeatedly reinterpret raw visual observations at every step of an interaction. We propose shifting routine spatial reasoning from images to text and symbols through a 3D geometric abstra... [Score: 8.5 | Flagged for: agent, agentic, reasoning, interpret, robot] Authors: Yihang Liu, Yiming Chen, et al.</description>
+    </item>
+    <item>
+      <title>Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture</title>
+      <link>https://arxiv.org/abs/2611.04972</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.04972</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <description>By harnessing the inherent commonsense capabilities of pretrained Large Language Models (LLMs) and Vision-Language Models (VLMs), current Vision-Language Action(VLA) models for legged robots excel at interpreting language-based navigation commands but lack the physical grounding and explicit safety ... [Score: 8.5 | Flagged for: agi, planning, interpret, robot, llm] Authors: Abhijeet M. Kulkarni, Saimouli Katragadda, et al.</description>
+    </item>
+    <item>
       <title>TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation</title>
       <link>https://arxiv.org/abs/2611.03584</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.03584</guid>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.41868</guid>
       <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
       <description>LLM-based robotic agent systems can generate programs for robot control, yet their generalization to new tasks often depends on elaborate scaffolding. Expanding their skill repertoires alone offers limited guidance on how to assess new capabilities or identify what remains beyond their reach. We int... [Score: 8.5 | Flagged for: agent, agentic, reasoning, robot, llm] Authors: Xuanzhi Feng, Zeyu Liu, et al.</description>
-    </item>
-    <item>
-      <title>Skill$^{\infty}$: Recursive Self-Improvement for Agent Skill Optimization</title>
-      <link>https://arxiv.org/abs/2610.35434</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.35434</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Recursive self-improvement (RSI), in which a system also improves the way it improves, is a long-standing aspiration on the path to AGI. Language agents increasingly store procedural knowledge in reusable skills. Optimizing skills offers a direct way to achieve RSI, because the optimization procedur... [Score: 8.5 | Flagged for: agi, recursive self-improvement, self-improving, agent] Authors: Wangcheng Tao, Zhanglu Yan, et al.</description>
-    </item>
-    <item>
-      <title>Knowing Whom to Trust is not Enough: The Trust--Agreement Gap in Repeated Multi-Party LLM Negotiation</title>
-      <link>https://arxiv.org/abs/2610.31971</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.31971</guid>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large language model (LLM) agents increasingly participate in negotiations on behalf of individuals and organizations, yet they remain vulnerable to manipulation, particularly in repeated multi-party interactions. Classical multi-agent systems address this challenge through explicit trust and reputa... [Score: 8.5 | Flagged for: agent, multi-agent, llm, language model, emergent] Authors: Amit Sarker, Moumita Choudhury, et al.</description>
     </item>
   </channel>
 </rss>

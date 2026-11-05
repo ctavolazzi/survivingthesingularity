@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T20:21:31Z",
+  "generated_at": "2026-11-05T20:31:27Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -485,6 +485,33 @@
       ]
     },
     {
+      "id": "2611.06881",
+      "source": "arxiv",
+      "title": "VABAR: A Variational Automation Benchmark for Agentic Robotics",
+      "url": "https://arxiv.org/abs/2611.06881",
+      "authors": [
+        "Shuangyu Xie",
+        "Kaiyuan Chen",
+        "Uksang Yoo",
+        "Xinyue Zhu"
+      ],
+      "summary": "For robots to operate reliably in commercial and industrial applications, they must persistently perform specific tasks with known variations in object shape and pose. We call this Variational Automation (VA) to differentiate these settings from fixed automation. Inspired by recent papers on Agentic Robotics, where pretrained LLM and VLM coding agents combine interpretable robot programming with the open-world adaptability of model free policies, we propose a general set of agentic robotics benchmark design criteria that includes accessibility, repeatability, diversity, relevance to agentic ro",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-04",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "interpret",
+        "robot",
+        "robotics",
+        "llm",
+        "automation"
+      ]
+    },
+    {
       "id": "2611.01742",
       "source": "arxiv",
       "title": "From Single-Agent Self-Discovery to Multi-Agent Adaptation: Scaling Laws of Partner Feedback and Convention Rigidity in Meta Reinforcement Learning Algorithms",
@@ -636,28 +663,75 @@
       ]
     },
     {
-      "id": "2610.06400",
+      "id": "2611.06803",
       "source": "arxiv",
-      "title": "Visual Swarm Navigation via Deep Reinforcement Learning and Evolutionary Hybrid Design",
-      "url": "https://arxiv.org/abs/2610.06400",
+      "title": "Task-Efficient Agent Evaluation Using Cached Traces",
+      "url": "https://arxiv.org/abs/2611.06803",
       "authors": [
-        "Álvaro Díez",
-        "Fidel Aznar"
+        "Ben Johnson",
+        "Hayden Helm"
       ],
-      "summary": "Swarm robotics presents a robust and cost-effective paradigm for advanced automation in complex, dynamic environments, such as those encountered in search and rescue or environmental monitoring. A fundamental challenge for this field is the data-driven design of decentralized controllers capable of generating emergent collective behaviors. This paper proposes a novel, AI-driven hybrid methodology for the automatic synthesis of swarm robotic controllers for autonomous visual navigation. This approach synergistically combines multi-agent reinforcement learning with neuro-evolutionary strategies,",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-05",
-      "score": 9.0,
-      "raw_score": 18,
+      "summary": "Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each execution that can reveal substantially more about its capabilities. Leveraging this information requires useful trace representations. We propose representing a trace by extracting a structured summary of it with an LLM and embedding the summary with a standard text encoder. These representations p",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-04",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
+        "agi",
         "agent",
-        "multi-agent",
+        "agentic",
+        "llm",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.06627",
+      "source": "arxiv",
+      "title": "Interactive World Simulation with Cosmos for Physical AI",
+      "url": "https://arxiv.org/abs/2611.06627",
+      "authors": [
+        " NVIDIA",
+        " :",
+        "Anis Ahmad",
+        "Jon Allen"
+      ],
+      "summary": "We present a shared framework that adapts Cosmos world foundation models for real-time interactive world simulation in Physical AI. By streaming visual observations in response to actions and scene controls, the framework enables users and embodied agents to interact with evolving virtual environments. It supports both predicting the visual consequences of actions and generating observations from physical state maintained by an external simulator. We demonstrate this approach across camera navigation and robot manipulation, controllable video transfer, and multi-view autonomous vehicle (AV) si",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-04",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
         "autonomous",
+        "embodied",
         "robot",
-        "robotics",
-        "emergent",
-        "automation"
+        "physical ai"
+      ]
+    },
+    {
+      "id": "2611.06553",
+      "source": "arxiv",
+      "title": "Addition by Subtraction: Toward Mitigating Fragile Safety Alignment in Large Language Models",
+      "url": "https://arxiv.org/abs/2611.06553",
+      "authors": [
+        "Hamid Dashtbani",
+        "Alexandra Dmitrienko"
+      ],
+      "summary": "Large language models (LLMs) undergo safety alignment to prevent harmful generations, yet they remain vulnerable to jailbreak attacks. Recent work reveals a deeper structural weakness: safety alignment can be highly sparse, such that pruning a small number of safety-critical neurons or ablating a single refusal direction can substantially undermine aligned behavior. In this work, we take the first steps toward strengthening safety alignment such that it is less dependent on sparse model components. We propose Addition by Subtraction, which gradually removes identified safety-critical neurons d",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-04",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "llm",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -1215,6 +1289,81 @@
       ]
     },
     {
+      "id": "2611.06858",
+      "source": "arxiv",
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "url": "https://arxiv.org/abs/2611.06858",
+      "authors": [
+        "Xinrui Zhong",
+        "Zhifeng Li",
+        "Zhiming Wang",
+        "Yongqi Liu"
+      ],
+      "summary": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-04",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "autonomous",
+        "llm",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.06768",
+      "source": "arxiv",
+      "title": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
+      "url": "https://arxiv.org/abs/2611.06768",
+      "authors": [
+        "Qiang Wang",
+        "Jianxin Bi",
+        "Shulong Jiang",
+        "Ruiyang Si"
+      ],
+      "summary": "Coding agents powered by models such as GPT-6-Astra connect spatial reasoning with executable robot behavior, raising the question of how such agents can produce lasting improvements in robot capabilities from physical interaction. In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that inform subsequent exploration and improvement. Our empirical study places physical manipulation at ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-04",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "reasoning",
+        "embodied",
+        "robot"
+      ]
+    },
+    {
+      "id": "2611.06447",
+      "source": "arxiv",
+      "title": "$A^3$-VLA: Automatic Perception-Guided Attention Alignment for Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.06447",
+      "authors": [
+        "Shengzhe Zhang",
+        "Qi Zhang",
+        "Dazhong Shen",
+        "Chao Wang"
+      ],
+      "summary": "Vision-Language-Action Models (VLAs) enable robots to perform manipulation tasks by leveraging Vision-Language Models (VLMs) to process visual observations and language instructions. However, the action prediction objective itself lacks fine-grained task-specific perceptual supervision, making it prone to relying on task-irrelevant visual shortcuts, leading attention away from target objects and key interaction areas, thereby limiting its operational performance and generalization ability. To address this, we propose Automatic Perception-Guided Attention Alignment for Robot Manipulation ($A^3$",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-04",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "robot",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2610.42053",
       "source": "arxiv",
       "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
@@ -1387,155 +1536,6 @@
         "llm",
         "language model",
         "scaling"
-      ]
-    },
-    {
-      "id": "2610.31376",
-      "source": "arxiv",
-      "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
-      "url": "https://arxiv.org/abs/2610.31376",
-      "authors": [
-        "Chao Gu",
-        "Quanyan Zhu"
-      ],
-      "summary": "This paper studies the problem of safe tool execution for large language model (LLM) agents under prompt injection. Using Petri nets, we formalize the execution harness between the LLM and its tools as a supervisory control problem, in which marks represent capabilities, approvals and budgets. Since a transition fires only if the marks it needs are present, an injected request whose preconditions are unmet or already spent is refused regardless of its wording. Treating tool outcomes as uncontrollable, we enforce safety by the conventional maximally permissive supervisor, and this safety transf",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-22",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.29934",
-      "source": "arxiv",
-      "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
-      "url": "https://arxiv.org/abs/2610.29934",
-      "authors": [
-        "Nithin Sivakumaran",
-        "Ali Payani",
-        "Hyunji Lee",
-        "Mohit Bansal"
-      ],
-      "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner state. To address this challenge, we introduce ToM2Vec, which learns to form abstract theories-of-mind in a rich latent space via a fixed budget of continuous reasoning tokens. During training, supervision for these tokens comes from the partner's actual thoughts, which the ToM tokens",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-21",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.30136",
-      "source": "arxiv",
-      "title": "Agentic World Action Models",
-      "url": "https://arxiv.org/abs/2610.30136",
-      "authors": [
-        "Zhuoyang Liu",
-        "Dantong Niu",
-        "Botong Zhang",
-        "Boning Shao"
-      ],
-      "summary": "Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework that integrates code-based planning with joint video and action prediction. We jointly model code, future video, and robot actions as three coupled generative streams within a unified mixture-of-transformers architecture. Within this architec",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-21",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "reasoning",
-        "robot",
-        "robotics"
-      ]
-    },
-    {
-      "id": "2610.25851",
-      "source": "arxiv",
-      "title": "Learning Who Talks to Whom: Role-Aware Communication Topology Scheduling for Efficient LLM Multi-Agent Collaboration",
-      "url": "https://arxiv.org/abs/2610.25851",
-      "authors": [
-        "Haibin Li",
-        "Wenya Yu",
-        "Xuefeng Jiang",
-        "Jia Li"
-      ],
-      "summary": "Multi-agent systems driven by large language models (LLMs) rely on structured communication topologies to facilitate information exchange and collaborative reasoning. However, effectively scheduling these topologies to dynamically determine who talks to whom and when to communicate remains a fundamental challenge in balancing collective reasoning performance against exponential token overhead. Existing topology scheduling approaches either enforce static communication graphs that cannot adapt to dynamic problem-solving states, or overlook agent role complementarity while failing to explicitly ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-19",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.23574",
-      "source": "arxiv",
-      "title": "Darwin-Claw: Environment-Adaptive Experience Consolidation for Recursively Self-Evolving Agents",
-      "url": "https://arxiv.org/abs/2610.23574",
-      "authors": [
-        "Mingze Yin",
-        "Xiaohan Wang",
-        "Dian Li",
-        "Longfei Luo"
-      ],
-      "summary": "While Large Language Model (LLM) agents have demonstrated remarkable capabilities across complex tasks, they predominantly operate in isolated sessions, lacking the ability to continually learn from historical interactions or adapt to user-specific environments. Existing self-evolution paradigms often indiscriminately inject raw interaction trajectories into memory or skill modules, leading to obscured behavioral patterns and compromised update controllability. Furthermore, as foundational LLM reasoning improves, the bottleneck for agentic evolution shifts from accumulating generic knowledge t",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-16",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.22980",
-      "source": "arxiv",
-      "title": "KiranaBench: Can a Language Model Run a Neighbourhood Shop?",
-      "url": "https://arxiv.org/abs/2610.22980",
-      "authors": [
-        "Bhuvan Arora",
-        "Ankita Karmakar",
-        "Chaitanya Jain",
-        "Dilesh Churiwal"
-      ],
-      "summary": "Large language model (LLM) agents are increasingly evaluated on long-horizon tasks, including autonomously running a business. Existing benchmarks for this setting are almost exclusively English-language, Western in retail context, and single-agent, with the agent observing the business directly. We study how these results transfer to a multi-agent Indic setting. We introduce KiranaBench, a simulated Indian general store in which four roles (manager, cashier, helper, and bookkeeper) are each played by a separate LLM agent. Interactions with customers and suppliers occur in English, Hindi, or H",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-16",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "llm",
-        "language model"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T20:31:27Z",
+  "generated_at": "2026-11-06T19:54:39Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -328,59 +328,6 @@
       ]
     },
     {
-      "id": "2610.08452",
-      "source": "arxiv",
-      "title": "Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents",
-      "url": "https://arxiv.org/abs/2610.08452",
-      "authors": [
-        "Lasse B. Strand",
-        "Robert Jakob",
-        "Kevin O'Sullivan",
-        "Markus Kreft"
-      ],
-      "summary": "Retrieval-augmented generation (RAG) is a widely used approach for grounding large language models (LLMs) in external knowledge. However, configuring a pipeline is an expensive hyperparameter optimization problem over many interacting choices, from chunking and embedding model to reranking and generation. Existing optimizers, from greedy search to Bayesian optimization, reduce each trial to an aggregate score and search without modeling why a configuration performed as it did, even though the retrieved chunks already provide evidence about whether each failure occurred during retrieval or afte",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-06",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.08155",
-      "source": "arxiv",
-      "title": "Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor",
-      "url": "https://arxiv.org/abs/2610.08155",
-      "authors": [
-        "Zihan Zhou",
-        "Xinzhe Hu",
-        "Hanxu Yang",
-        "Liangjian Wen"
-      ],
-      "summary": "Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operations, including task selection, role assignment, message routing, and context management. As interactions grow, using powerful LLMs for these bounded control decisions introduces substantial token overhead and latency, limiting the scalability of agentic Web services. In this paper, we investigate wh",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-06",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2611.02909",
       "source": "arxiv",
       "title": "Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration",
@@ -482,6 +429,32 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.08219",
+      "source": "arxiv",
+      "title": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+      "url": "https://arxiv.org/abs/2611.08219",
+      "authors": [
+        "Teng Pan",
+        "Zixuan Wang",
+        "Yuchen Yan",
+        "Qifei Wu"
+      ],
+      "summary": "Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workflows, understanding heterogeneous file contexts, and producing usable deliverables under fine-grained requirements. A key bottleneck is the lack of scalable post-training data that reflects real work intent, authentic file environments, and deliverable-level evaluation. To close this gap, we introduc",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-05",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
+        "reasoning",
+        "language model",
+        "scaling"
       ]
     },
     {
@@ -660,6 +633,30 @@
         "autonomous",
         "embodied",
         "robot"
+      ]
+    },
+    {
+      "id": "2611.08428",
+      "source": "arxiv",
+      "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+      "url": "https://arxiv.org/abs/2611.08428",
+      "authors": [
+        "Julian Kunkel",
+        "Ali Doosthosseini"
+      ],
+      "summary": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and preference access; retrieval over summaries and messages, confirmed mutation, and full orchestration. Meta access can turn a chat client from many screens into one entry point for finding, navigating, org",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-05",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model",
+        "retrieval",
+        "automation"
       ]
     },
     {
@@ -1289,6 +1286,30 @@
       ]
     },
     {
+      "id": "2611.07825",
+      "source": "arxiv",
+      "title": "Generate-then-Rank: Learning Symbolic Goal Interpretation for Embodied Agents",
+      "url": "https://arxiv.org/abs/2611.07825",
+      "authors": [
+        "Jisen Lei",
+        "Huizhi Liang"
+      ],
+      "summary": "Goal interpretation is to translate a natural language instruction into a formal symbolic goal that a planner can execute. It is critical for embodied agents because any error here propagates to every downstream planning and action step. Doing it well requires both generating suitable candidates and reliably selecting among them. We present a two-stage generate-then-rank approach to Goal Interpretation in the Embodied Agent Interface (EAI). First, supervised fine-tuning adapts a Large Language Model (LLM) to EAI's output convention. Second, Candidate-Output Ranking from Errors (CORE) learns pr",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "planning",
+        "interpret",
+        "embodied",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.06858",
       "source": "arxiv",
       "title": "CompressionBench: How can your coding agents compress LLMs?",
@@ -1510,32 +1531,6 @@
         "reasoning",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2610.34357",
-      "source": "arxiv",
-      "title": "6G Reasoning Agent Societies: Composition, Scaling, and Consistency-Time Laws",
-      "url": "https://arxiv.org/abs/2610.34357",
-      "authors": [
-        "Hatim Chergui",
-        "Carolina Fernández-Martínez",
-        "Mustapha Benjillali",
-        "Mehdi Bennis"
-      ],
-      "summary": "Emerging 6G control planes would compose Large Language Model (LLM) agents that exchange interpreted conclusions, so hallucinations can propagate even over error-free transport. Recent architectures audit each message locally against the sender's observation mask, but isolated audits miss collective behavior. Modeling the agent society as a cellular sheaf, we establish three laws valid on arbitrary topologies. First, the \\emph{composition law}: network-wide divergence exceeds the sum of per-agent audit scores by exactly their hidden total correlation. This blind spot masks up to 23\\% of joint ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-25",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "interpret",
-        "llm",
-        "language model",
-        "scaling"
       ]
     }
   ]

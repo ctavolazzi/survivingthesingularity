@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 05 Nov 2026 20:31:27 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 06 Nov 2026 19:54:39 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -92,20 +92,6 @@
       <description>Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robot... [Score: 10.0 | Flagged for: agi, agent, multi-agent, robot, robotics] Authors: Tom Philipp Backert, Mohammad D. Soorati, et al.</description>
     </item>
     <item>
-      <title>Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents</title>
-      <link>https://arxiv.org/abs/2610.08452</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.08452</guid>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Retrieval-augmented generation (RAG) is a widely used approach for grounding large language models (LLMs) in external knowledge. However, configuring a pipeline is an expensive hyperparameter optimization problem over many interacting choices, from chunking and embedding model to reranking and gener... [Score: 10.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Lasse B. Strand, Robert Jakob, et al.</description>
-    </item>
-    <item>
-      <title>Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor</title>
-      <link>https://arxiv.org/abs/2610.08155</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.08155</guid>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operati... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, reasoning, llm] Authors: Zihan Zhou, Xinzhe Hu, et al.</description>
-    </item>
-    <item>
       <title>Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration</title>
       <link>https://arxiv.org/abs/2611.02909</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.02909</guid>
@@ -132,6 +118,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.12126</guid>
       <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
       <description>General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dep... [Score: 9.5 | Flagged for: agent, agentic, interpret, robot, llm] Authors: Jinkai Zhang, Jingyi Xu, et al.</description>
+    </item>
+    <item>
+      <title>Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis</title>
+      <link>https://arxiv.org/abs/2611.08219</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.08219</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workfl... [Score: 9.0 | Flagged for: agent, agentic, tool use, reasoning, language model] Authors: Teng Pan, Zixuan Wang, et al.</description>
     </item>
     <item>
       <title>VABAR: A Variational Automation Benchmark for Agentic Robotics</title>
@@ -181,6 +174,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.10498</guid>
       <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
       <description>Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic ha... [Score: 9.0 | Flagged for: foundation model, agent, agentic, autonomous, embodied] Authors: Python Song, Zhixuan Liang, et al.</description>
+    </item>
+    <item>
+      <title>The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI</title>
+      <link>https://arxiv.org/abs/2611.08428</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
     </item>
     <item>
       <title>Task-Efficient Agent Evaluation Using Cached Traces</title>

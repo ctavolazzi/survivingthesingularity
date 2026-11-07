@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Fri, 06 Nov 2026 19:54:39 +0000</lastBuildDate>
+   <lastBuildDate>Sat, 07 Nov 2026 17:58:59 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -76,13 +76,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.12190</guid>
       <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
       <description>As claims about recursive self-improvement (RSI) and artificial general intelligence (AGI) proliferate, we ask a simple question: do frontier AI models have a sense of data, i.e., can they reliably select the right data for training? We introduce DataSense-Bench to study this capability through the ... [Score: 10.5 | Flagged for: agi, artificial general intelligence, recursive self-improvement, agent, llm] Authors: Yudi Zhang, Mingyu Cao, et al.</description>
-    </item>
-    <item>
-      <title>RFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design</title>
-      <link>https://arxiv.org/abs/2610.10858</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.10858</guid>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Analog/RF circuits remain the critical interface between digital computation and the physical world, and emerging standards from Wi-Fi 7 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-i... [Score: 10.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Awani Khodkumbhe, Yunfei Feng, et al.</description>
     </item>
     <item>
       <title>MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS</title>
@@ -169,13 +162,6 @@
       <description>Reasoning over long document contexts remains a challenge for large language models (LLMs). Standard retrieval methods are inherently reactive, bottlenecking agents with complex, cross-document reasoning at inference time, while precomputed structures like knowledge graphs often fall short because t... [Score: 9.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Anikait Singh, Teresa Zhang, et al.</description>
     </item>
     <item>
-      <title>EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</title>
-      <link>https://arxiv.org/abs/2610.10498</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.10498</guid>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic ha... [Score: 9.0 | Flagged for: foundation model, agent, agentic, autonomous, embodied] Authors: Python Song, Zhixuan Liang, et al.</description>
-    </item>
-    <item>
       <title>The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI</title>
       <link>https://arxiv.org/abs/2611.08428</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.04972</guid>
       <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
       <description>By harnessing the inherent commonsense capabilities of pretrained Large Language Models (LLMs) and Vision-Language Models (VLMs), current Vision-Language Action(VLA) models for legged robots excel at interpreting language-based navigation commands but lack the physical grounding and explicit safety ... [Score: 8.5 | Flagged for: agi, planning, interpret, robot, llm] Authors: Abhijeet M. Kulkarni, Saimouli Katragadda, et al.</description>
+    </item>
+    <item>
+      <title>TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation</title>
+      <link>https://arxiv.org/abs/2611.03584</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.03584</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Open-world robotic mobile manipulation requires acting in physical environments with only partial information. While recent Large Vision-Language Model (LVLM) agents show strong open-world reasoning capabilities, existing architectures that rely on direct tool calling struggle with geometric uncerta... [Score: 8.5 | Flagged for: agent, agentic, planning, reasoning, robot] Authors: Utkarsh A. Mishra, Alperen Degirmenci, et al.</description>
+    </item>
+    <item>
+      <title>Multimodal In-Context Learning with Explicit Rule Induction</title>
+      <link>https://arxiv.org/abs/2610.41754</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.41754</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <description>A central challenge in multimodal in-context learning (MICL) arises from tasks that are ill-defined without context and require uncovering the underlying rules from demonstrations. Existing methods predominantly treat MICL as direct input-output mapping, overlooking the importance of explicitly indu... [Score: 8.5 | Flagged for: agi, reasoning, interpretability, interpret, in-context learning] Authors: Yuquan Li, Xinyang Jiang, et al.</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T19:54:39Z",
+  "generated_at": "2026-11-07T17:58:59Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -272,33 +272,6 @@
         "recursive self-improvement",
         "agent",
         "llm"
-      ]
-    },
-    {
-      "id": "2610.10858",
-      "source": "arxiv",
-      "title": "RFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design",
-      "url": "https://arxiv.org/abs/2610.10858",
-      "authors": [
-        "Awani Khodkumbhe",
-        "Yunfei Feng",
-        "Raj Rangarajan",
-        "Kevin Wang"
-      ],
-      "summary": "Analog/RF circuits remain the critical interface between digital computation and the physical world, and emerging standards from Wi-Fi 7 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-its-kind multi-agent flow of large language model (LLM) agents for end-to-end analog/RF circuit design automation, in which AI agents collaboratively orchestrate the complete design flow under human supervision. RFChipAgent is built around four technical pillars. First, a multimodal retrieval-augment",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-07",
-      "score": 10.5,
-      "raw_score": 21,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "llm",
-        "language model",
-        "retrieval",
-        "automation"
       ]
     },
     {
@@ -607,32 +580,6 @@
         "llm",
         "language model",
         "retrieval"
-      ]
-    },
-    {
-      "id": "2610.10498",
-      "source": "arxiv",
-      "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
-      "url": "https://arxiv.org/abs/2610.10498",
-      "authors": [
-        "Python Song",
-        "Zhixuan Liang",
-        "Kelsey Fu",
-        "Mengdi Wang"
-      ],
-      "summary": "Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic harnesses can adapt around the model, but current self-evolving harnesses use robot trials inefficiently when deciding which code and skill changes to pursue. We introduce EmbodiedRSI, a self-evolving agentic harness that autonomously decides where to explore next and turns the resulting physical inte",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-07",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "autonomous",
-        "embodied",
-        "robot"
       ]
     },
     {
@@ -1234,58 +1181,6 @@
       ]
     },
     {
-      "id": "2610.10507",
-      "source": "arxiv",
-      "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
-      "url": "https://arxiv.org/abs/2610.10507",
-      "authors": [
-        "Yilun Hao",
-        "Krishna Sayana",
-        "Isabella Ye",
-        "James S Ren"
-      ],
-      "summary": "Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries and tool use but remain largely retrieval-centric. However, in many tasks, the evidence required for a solution is not explicitly present in any single source item. Instead, it must be derived through filtering, aggregation, or computation across multiple source items. In this work, we introduce RECAST (Routing Evidence through Computation, Access, and Synth",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-07",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.10608",
-      "source": "arxiv",
-      "title": "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage",
-      "url": "https://arxiv.org/abs/2610.10608",
-      "authors": [
-        "Saimon Amanuel Tsegai",
-        "Alex Kantchelian",
-        " Danfeng",
-        " Yao"
-      ],
-      "summary": "Security operations centers (SOCs) must triage large volumes of alerts, most of which are benign, while missed attacks can remain uninvestigated. Tool-using large language model (LLM) agents can retrieve evidence during triage, but it remains unclear how reasoning strategies determine what to gather and when an investigation is sufficient to close an alert. We study five representative approaches spanning single-pass tool use, iterative retrieval, sampled investigations, self-review, and explicit verification. To support this study, we build ALERT-BENCH, an interactive benchmark that replays e",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-07",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "tool use",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval"
-      ]
-    },
-    {
       "id": "2611.07825",
       "source": "arxiv",
       "title": "Generate-then-Rank: Learning Symbolic Goal Interpretation for Embodied Agents",
@@ -1530,6 +1425,105 @@
         "multi-agent",
         "reasoning",
         "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.08449",
+      "source": "arxiv",
+      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+      "url": "https://arxiv.org/abs/2611.08449",
+      "authors": [
+        "Yu-Cheng Chou",
+        "Shihao Wang",
+        "Jin Huang",
+        "Chi-Pin Huang"
+      ],
+      "summary": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-05",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "autonomous",
+        "planning",
+        "robot",
+        "robotics",
+        "physical ai",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.07140",
+      "source": "arxiv",
+      "title": "More Agents, More Reliable? System-Level Reliability of Multi-Agent LLMs under Operational-Profile Uncertainty",
+      "url": "https://arxiv.org/abs/2611.07140",
+      "authors": [
+        "Burkay Tunçtürk",
+        "Koorosh Aslansefat",
+        "Yiannis Papadopoulos",
+        "Bao Nguyen"
+      ],
+      "summary": "Teams increasingly build software from cooperating large language model (LLM) agents, often assuming more agents mean more reliability. Yet the usual evidence, average benchmark accuracy, ignores the input mix a deployed system meets and the rule merging the agents' answers. Building on HIP-LLM, a hierarchical imprecise-probability assessment of single LLMs, we propose a framework combining it with a Bayesian network of the system's failure logic for multi-agent systems. Agent failure-probability intervals propagate through this network, where the combining rule can itself fail, into a reliabi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-04",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.07730",
+      "source": "arxiv",
+      "title": "Seeing Beyond the Next Step: World-Model-Guided Human-Like Navigation in Multi-Agent Scenes",
+      "url": "https://arxiv.org/abs/2611.07730",
+      "authors": [
+        "Seong-Eun Hong",
+        "JuYeong Hwang",
+        "Jinhyun Kim",
+        "Hanyoung Jang"
+      ],
+      "summary": "Selecting a next motion in a populated scene is not just a matter of avoiding what is currently in the way: an action can be locally feasible yet drift onto the road instead of the crosswalk, cut into a stream of crossing pedestrians, or bottleneck a narrow passage. These failure modes are invisible from the current state alone, and acting on them requires reasoning about what each candidate action will cause. World models offer exactly this, namely action-conditioned predictions of the future, but rolling them out at every decision step is a cost deployable navigation systems cannot pay, and ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-05",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "world model",
+        "agent",
+        "multi-agent",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "2611.03518",
+      "source": "arxiv",
+      "title": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
+      "url": "https://arxiv.org/abs/2611.03518",
+      "authors": [
+        "Avni Mittal",
+        "Avinash Anand",
+        "Dikshant Kukreja",
+        "Erik Cambria"
+      ],
+      "summary": "Organisations increasingly deploy large language model agents that must follow organisational values. We check whether activation steering, which adds vectors to a model's internal activations during generation without changing its weights, can improve compliance beyond prompting alone. Since most scenarios involve several values at once, we focus on multi-value steering. A simple way to build these vectors is to contrast responses that follow all values relevant to a scenario with responses that violate them. However, this gives nearly identical vectors for different values: they capture a ge",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-02",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "alignment",
+        "value alignment",
         "language model"
       ]
     }

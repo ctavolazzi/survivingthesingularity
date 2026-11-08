@@ -23,3 +23,11 @@
 | A skeptic | Chapters 1 and 2, then Appendix D |
 
 Key terms are in the Glossary (Appendix F). Appendix G arranges the Precedent Ledger's practices into a first year, month by month, and Appendix H has questions for reading it together.
+
+## How this book was made
+
+The book's source text, the scripts that build its PDF and EPUB, and the harness that traces its citations are public in one repository:
+
+[https://github.com/ctavolazzi/survivingthesingularity](https://github.com/ctavolazzi/survivingthesingularity)
+
+Anyone can read how it was put together and check the work.

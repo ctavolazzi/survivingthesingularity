@@ -1,0 +1,11 @@
+{
+  "source_commit": "1b61bc9b01af46cdcf8c3d8b0392d2139af11121",
+  "base_commit": "cff8baf744d66e014e0c0b9a46046e42442164c9",
+  "files": [
+    "tm_v2_test.mjs",
+    "vite.config.js"
+  ],
+  "archive": "game-preview-work.patch",
+  "description": "Exploratory Playwright script and local Vite cache/allowlist configuration from the game preview snapshot. Preserved as a patch; not applied to the book website. The script has no assertion-based failure signal and is not evidence of a passing regression suite.",
+  "excluded": "39 generated .vite-game cache files, and unrelated session databases from the artwork branch."
+}

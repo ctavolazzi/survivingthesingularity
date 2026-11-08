@@ -1,0 +1,51 @@
+{
+  "schema": "sts-source-provenance/v1",
+  "archive_date": "2026-10-08",
+  "meaning": "These anchors identify known edition snapshots or recorded build sources. They do not establish binary-to-source correspondence unless a finalized delivery manifest separately does so. The archive tag anchors its inventory, not these original source versions.",
+  "source_anchors": {
+    "0.3.0": "6943ce7faacc3edc42bab5fffccd4577b91ecc65",
+    "0.5.0": "b7447f4a1417261cb1274084bdc61a84f7989002",
+    "0.5.1": "d18f0b9a5e0253a93d7161e27ab2767cd18c005e",
+    "0.5.2": "9ae92ae2b3427c2e55b0a3cf903ee8546b1edd15",
+    "0.6.0": "39239c2770777874def25794e87fcd4c6027fb60",
+    "0.6.1": "fe6425a359e65f55801ec7e2289f02fd09959473",
+    "0.6.2": "72195a8fe6574e99acbc9c0d0f3cec2b6c7d33d5",
+    "0.7.0": "b74faf012a109f7a0df163a2cc806057efbef4a3",
+    "0.7.1": "b85e8a5d9ecdb3f7ad86321d429c93e3867d3e15",
+    "0.7.3": "537602c81e6461170d47846fd6868642e017e5a3",
+    "0.7.4": "91f23cb1aafcaf49fd949f32217a061bc08952d1",
+    "0.7.5": "90d9e1e3f87dd46129da165924a87dc1d79d84fd",
+    "0.8.0": "ae9e1b6f66f766e6b32368fc9e67188a3e1174bc",
+    "0.8.1": "10cfa7a9c30d4b48f13f90f5d6b850a412f97d43",
+    "0.8.2": "a70b74aa38dbc1469038e78280f5a921bd6c11c5",
+    "0.9.0": "181348a8d77fe042e0a4d44d2855533b06942323",
+    "0.9.1": "0f322b7f69b5e613c2eb45d037b5e8a47c783f6a",
+    "0.9.2": "3d29215b54feaa43b4c22e5283ab642833457a07",
+    "0.10.0": "f7178bc10257df2b27f1e518813bb4f96a5df222",
+    "0.10.1": "c05cb948902d885b574fce965b544c9681361922",
+    "0.10.2": "85c72ea020db447f37bf080473f5a91734d88031",
+    "0.10.3": "ad775f61a48e1ea5a83742bbbaa67a41d8dc30cb",
+    "0.10.4": "8a3fae17a0f4db864a264874dc096edf2c9aa941",
+    "0.11.0": "f5835e217ef8e27bc8b780ee49a47d88d20e3f9a"
+  },
+  "qualifications": {
+    "0.2": "Original build source unknown. PDF first tracked at 5164f49d5360ea8ed63da1f6051d158276be2b51; 0.2 version was reused.",
+    "0.3.1": "Commit 26597534e3626ea2707fd364ff416e23fe37ccc9 names 0.3.1 but its manifest says 0.4.0; binary/source correspondence unresolved.",
+    "0.7.1": "Build source recorded in RELEASES.md.",
+    "0.7.2": "RELEASES.md records dcd80e0469f997d40da5b7f10c17529d51fdd1db plus uncommitted edits; exact original source unknown.",
+    "0.7.3": "Closed working-cycle source before 0.7.4, not proof of exact binary correspondence. Current branch named v0.7.3 instead has manifest 0.7.5.1.",
+    "0.7.4": "Final build source recorded in RELEASES.md.",
+    "0.7.5": "Existing release/tag preserved. Build source ffed5fce5db50c608dea373807cf0f3e1cb8e6a7, then publication 90d9e1e. Both retain stale 0.7.4 manifest.",
+    "0.10.4": "Current branch includes later editorial-note commit; edition baseline bdf0584c5293a45cb75ac42b33458f51fbe58531.",
+    "early_drafts": "The seven recovered StS-Complete-Draft files v0.0.1,0.0.3,0.0.5 through 0.0.9 match reissue commit 0ddf2effe2afb3ad2dd389b8d39dad1c2a073bf6 (July 26), not their first tracked versions."
+  },
+  "verified_delivery_manifests": [
+    "0.10.0",
+    "0.10.1",
+    "0.10.2",
+    "0.10.3",
+    "0.10.4",
+    "0.11.0"
+  ],
+  "unbuilt_alias": "book-v0.9.3 has same commit and manifest as0.9.2; no distinct artifact recovered."
+}

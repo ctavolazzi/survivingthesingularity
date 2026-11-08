@@ -1,10 +1,5 @@
 <script>
-  import { fade } from 'svelte/transition';
-  import { onMount } from 'svelte';
   import summary from '$lib/data/factcheck-summary.json';
-
-  let visible = false;
-  onMount(() => { visible = true; });
 
   // Nothing on this page is a typed-in number. Every figure comes from
   // factcheck-summary.json, which sts.py generates alongside the trace itself,
@@ -28,7 +23,6 @@
 <svelte:head>
   <title>Fact-check: audit every claim in Surviving the Singularity</title>
   <meta name="description" content="Every checkable claim in the book, traced back to the commit and source behind it. {n(summary.claims)} claims, {n(summary.resolvable)} with a permalink to the exact line on GitHub. Audit it yourself." />
-  <link rel="canonical" href="https://survivingthesingularity.com/factcheck" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Surviving the Singularity" />
@@ -41,8 +35,7 @@
   <meta name="twitter:description" content="Every checkable claim traced back to the commit and the source behind it, including the places the trail breaks." />
 </svelte:head>
 
-{#if visible}
-<div class="fc" in:fade={{ duration: 400 }}>
+<div class="fc">
 
   <header class="fc-header">
     <p class="fc-label">Provenance</p>
@@ -127,7 +120,11 @@
       and the chain of custody draws itself hop by hop, and stops dead where the
       evidence does.
     </p>
-    <a class="fc-button" href="/factcheck-trace/">
+    <!-- rel="external": the trace is a static document under static/, not a
+         route of this app. Without it the prerenderer follows the link, cannot
+         resolve a static directory URL, and fails the build on a 404 for a page
+         that exists. -->
+    <a class="fc-button" href="/factcheck-trace/" rel="external">
       Open the full audit
       <span aria-hidden="true">-&gt;</span>
     </a>
@@ -139,13 +136,20 @@
   </section>
 
 </div>
-{/if}
 
 <style>
+  /* Fades in over 400ms with CSS, not `{#if visible}` + in:fade. The gate kept
+     this whole page out of the served HTML until JavaScript ran. See the note in
+     src/routes/blog/+page.svelte. */
   .fc {
     max-width: 940px;
     margin: 0 auto;
     padding: 4rem 1.5rem 6rem;
+    animation: page-fade 400ms linear;
+  }
+
+  @keyframes page-fade {
+    from { opacity: 0; }
   }
 
   .fc-label {

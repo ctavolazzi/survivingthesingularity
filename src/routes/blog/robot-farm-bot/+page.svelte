@@ -10,6 +10,9 @@
     title: 'Robot Farm Bot - The Future of Residential Agriculture',
     date: '2024-08-15',
     author: 'Christopher Tavolazzi',
+    // The head below reads post.excerpt for the description tags. It was never
+    // set, so both were served empty. Same words as this post's card on /blog.
+    excerpt: 'Imagine a world where your backyard vegetable garden is tended by an AI-powered robot, ensuring a bountiful harvest with minimal effort. Welcome to the era of the Robot Farm Bot.',
     image: 'https://farm.bot/cdn/shop/files/FarmBot_Genesis_v1-3_c10ecd67-00ed-4ae1-a32e-111f11312655_2049x1365.jpg?v=1697756943',
     readingTime: '7 min read'
   };

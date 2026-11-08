@@ -1,4 +1,6 @@
 <script>
+  import LiteYouTube from '$lib/components/LiteYouTube.svelte';
+
   export let title = "View more content like this";
   export let description = "Here are some more videos that dive deeper into AI and gaming";
   export let videos = [];
@@ -10,13 +12,11 @@
   <div class="video-container">
     {#each videos as video}
       <div class="video-box">
-        <iframe
-          src="https://www.youtube.com/embed/{video.id}"
-          title={video.title}
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <!-- Click-to-load. Three direct embeds per post fetched three YouTube
+             players, and their cookies, before anyone pressed play. -->
+        <div class="video-ratio">
+          <LiteYouTube videoId={video.id} title={video.title || 'Recommended video'} />
+        </div>
         {#if video.title}
           <p class="video-title">{video.title}</p>
         {/if}
@@ -59,10 +59,12 @@
     background: rgba(0,0,0,0.2);
   }
 
-  .video-box iframe {
+  /* The same 16:9 box the iframe used to draw for itself. LiteYouTube fills it
+     with the thumbnail first and the player after a click. */
+  .video-ratio {
+    position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    display: block;
   }
 
   .video-title {

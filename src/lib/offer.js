@@ -129,6 +129,16 @@ export const offer = Object.freeze({
     'and you keep getting it. When the membership launches later, you never ' +
     'pay it.',
 
+  /**
+   * What the purchase is, in one plain line. Rendered next to the first ask on
+   * the homepage, directly after the food claim, so the button reads as an
+   * ordinary book preorder and not as a price on the thing the book argues
+   * about. It names no amount, so a price change cannot strand it.
+   */
+  preorderPlain:
+    'This is a book preorder. You read it now, as it is being written, and ' +
+    'you get every update after.',
+
   ledgerPrecedentCount: LEDGER_PRECEDENT_COUNT,
   precedentFileCaseCount: PRECEDENT_FILE_CASE_COUNT,
   precedentFileSourcedCount: PRECEDENT_FILE_SOURCED_COUNT,

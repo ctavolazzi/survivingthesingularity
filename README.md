@@ -1,5 +1,7 @@
 # Surviving the Singularity
 
+**Strategy (October 2026):** [docs/STRATEGY.md](docs/STRATEGY.md) sets out who this is for, the offer and pricing, the 90-day plan and the open decisions.
+
 > A field manual for staying agentic as AI rewrites work, money, medicine, and meaning.
 
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)

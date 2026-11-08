@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 07 Nov 2026 17:58:59 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 08 Nov 2026 18:17:07 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -71,13 +71,6 @@
       <description>3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion p... [Score: 10.5 | Flagged for: foundation model, agent, agentic, alignment, robot] Authors: Weichen Lyu, Chong Xia, et al.</description>
     </item>
     <item>
-      <title>DataSense-Bench: The First Step Toward an AI Scientist</title>
-      <link>https://arxiv.org/abs/2610.12190</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.12190</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
-      <description>As claims about recursive self-improvement (RSI) and artificial general intelligence (AGI) proliferate, we ask a simple question: do frontier AI models have a sense of data, i.e., can they reliably select the right data for training? We introduce DataSense-Bench to study this capability through the ... [Score: 10.5 | Flagged for: agi, artificial general intelligence, recursive self-improvement, agent, llm] Authors: Yudi Zhang, Mingyu Cao, et al.</description>
-    </item>
-    <item>
       <title>MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS</title>
       <link>https://arxiv.org/abs/2610.13772</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.13772</guid>
@@ -104,13 +97,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.21055</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       <description>Recursive self-improvement, in which AI systems build stronger AI systems, is one promising route to superintelligence. We study a weaker form that can be measured today: frontier agents post-training a small raw base model with public data, as a test of their research potential. We build Athanor, a... [Score: 9.5 | Flagged for: superintelligence, recursive self-improvement, agent, autonomous, autonomy] Authors: Yufa Zhou, Yichen Wang, et al.</description>
-    </item>
-    <item>
-      <title>SuperNav: An Agentic Navigation System for Any Task in Any Scene</title>
-      <link>https://arxiv.org/abs/2610.12126</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.12126</guid>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
-      <description>General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dep... [Score: 9.5 | Flagged for: agent, agentic, interpret, robot, llm] Authors: Jinkai Zhang, Jingyi Xu, et al.</description>
     </item>
     <item>
       <title>Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis</title>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.41754</guid>
       <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
       <description>A central challenge in multimodal in-context learning (MICL) arises from tasks that are ill-defined without context and require uncovering the underlying rules from demonstrations. Existing methods predominantly treat MICL as direct input-output mapping, overlooking the importance of explicitly indu... [Score: 8.5 | Flagged for: agi, reasoning, interpretability, interpret, in-context learning] Authors: Yuquan Li, Xinyang Jiang, et al.</description>
+    </item>
+    <item>
+      <title>META-Robot: Self-Cognition and Capability Scaling in Agentic Robots</title>
+      <link>https://arxiv.org/abs/2610.41868</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.41868</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <description>LLM-based robotic agent systems can generate programs for robot control, yet their generalization to new tasks often depends on elaborate scaffolding. Expanding their skill repertoires alone offers limited guidance on how to assess new capabilities or identify what remains beyond their reach. We int... [Score: 8.5 | Flagged for: agent, agentic, reasoning, robot, llm] Authors: Xuanzhi Feng, Zeyu Liu, et al.</description>
+    </item>
+    <item>
+      <title>Skill$^{\infty}$: Recursive Self-Improvement for Agent Skill Optimization</title>
+      <link>https://arxiv.org/abs/2610.35434</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.35434</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Recursive self-improvement (RSI), in which a system also improves the way it improves, is a long-standing aspiration on the path to AGI. Language agents increasingly store procedural knowledge in reusable skills. Optimizing skills offers a direct way to achieve RSI, because the optimization procedur... [Score: 8.5 | Flagged for: agi, recursive self-improvement, self-improving, agent] Authors: Wangcheng Tao, Zhanglu Yan, et al.</description>
     </item>
   </channel>
 </rss>

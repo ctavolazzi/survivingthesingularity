@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T17:58:59Z",
+  "generated_at": "2026-11-08T18:17:07Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -250,31 +250,6 @@
       ]
     },
     {
-      "id": "2610.12190",
-      "source": "arxiv",
-      "title": "DataSense-Bench: The First Step Toward an AI Scientist",
-      "url": "https://arxiv.org/abs/2610.12190",
-      "authors": [
-        "Yudi Zhang",
-        "Mingyu Cao",
-        "Lu Yin",
-        "Mykola Pechenizkiy"
-      ],
-      "summary": "As claims about recursive self-improvement (RSI) and artificial general intelligence (AGI) proliferate, we ask a simple question: do frontier AI models have a sense of data, i.e., can they reliably select the right data for training? We introduce DataSense-Bench to study this capability through the fundamental problem of data selection and performance forecasting in machine learning. We ask AI agents to select and rank candidate training subsets that can be used to fine-tune a small LLM model. Agents are allowed to inspect the data, write and execute analysis code, and run model forward passes",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-10-08",
-      "score": 10.5,
-      "raw_score": 21,
-      "matched_keywords": [
-        "agi",
-        "artificial general intelligence",
-        "recursive self-improvement",
-        "agent",
-        "llm"
-      ]
-    },
-    {
       "id": "2610.13772",
       "source": "arxiv",
       "title": "MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS",
@@ -375,33 +350,6 @@
         "agent",
         "autonomous",
         "autonomy"
-      ]
-    },
-    {
-      "id": "2610.12126",
-      "source": "arxiv",
-      "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
-      "url": "https://arxiv.org/abs/2610.12126",
-      "authors": [
-        "Jinkai Zhang",
-        "Jingyi Xu",
-        "Yuanhong Yu",
-        "Jiarui Guo"
-      ],
-      "summary": "General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-08",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "interpret",
-        "robot",
-        "llm",
-        "language model",
-        "rag"
       ]
     },
     {
@@ -1157,30 +1105,6 @@
       ]
     },
     {
-      "id": "2610.12453",
-      "source": "arxiv",
-      "title": "Mental-Models for Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2610.12453",
-      "authors": [
-        "Hanan Gani",
-        "Lulu Shao",
-        "Manmohan Chandraker"
-      ],
-      "summary": "Large foundation models have accelerated progress toward general-purpose agents that interact with humans and other agents through language and multimodal signals. However, robust multi-agent decision-making requires reasoning about what other agents know, intend, and are likely to do under partial observability. Current agentic systems often operate through prompt design, memory, or end-to-end behavioral shaping, but typically do not learn an explicit partner-state representation that can be reused as a decision variable across tasks. We introduce \\emph{mental-model-enabled agents}, a framewo",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-08",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "multi-agent",
-        "agentic",
-        "reasoning"
-      ]
-    },
-    {
       "id": "2611.07825",
       "source": "arxiv",
       "title": "Generate-then-Rank: Learning Symbolic Goal Interpretation for Embodied Agents",
@@ -1525,6 +1449,77 @@
         "alignment",
         "value alignment",
         "language model"
+      ]
+    },
+    {
+      "id": "2611.03138",
+      "source": "arxiv",
+      "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL",
+      "url": "https://arxiv.org/abs/2611.03138",
+      "authors": [
+        "Aswin Ramachandran",
+        "Jona Schulz",
+        "Maurus Derungs",
+        "Carlo Angelini"
+      ],
+      "summary": "Progress in robot learning, particularly physical multi-agent reinforcement learning (MARL), is currently challenged by a limited availability of accessible, standardized benchmarks. While simulation-based MARL has produced remarkable emergent behaviors, from coordinated team play to complex tool use, translating these advances to physical systems remains difficult. A key barrier is infrastructural: physical platforms are often prohibitively expensive, require specialized facilities, or lack open mechanisms and designs for reproducibility. We introduce KlaskTron, an open-source, low-cost (<\\$2",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-02",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "tool use",
+        "robot",
+        "emergent"
+      ]
+    },
+    {
+      "id": "2611.08196",
+      "source": "arxiv",
+      "title": "SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving",
+      "url": "https://arxiv.org/abs/2611.08196",
+      "authors": [
+        "Sai Vallurupalli",
+        "Francis Ferraro"
+      ],
+      "summary": "Complex problems with limited context, such as claims, require a means to obtain additional knowledge necessary for solution reasoning. We propose a multi-agent framework, SMART, to obtain knowledge through capturing the implicit state of participating entities in a problem context. SMART curates the state knowledge as diverse, complementary and solution-salient premises using a variety of LLMs and a structured role-based prompt strategy. Using knowledge from these real-world verified curated premises, SMART's knowledge guided solution reasoning improves validation performance up to 20% on com",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-05",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
+      "id": "2611.07850",
+      "source": "arxiv",
+      "title": "Learning Robotic World Models with Semantic and Visual Feedback",
+      "url": "https://arxiv.org/abs/2611.07850",
+      "authors": [
+        "Hao Wu",
+        "Yuqi Li",
+        "Yizhou Zhao",
+        "Kun Wang"
+      ],
+      "summary": "Robot world models predict action-conditioned future visual states to support robotic planning and decision making. However, visual reconstruction does not fully capture task progress, semantic evaluation alone provides limited constraints on fine-grained visual errors, and homogeneous predictions limit comparative feedback. We present RoboImagine, a framework for post-training autoregressive robotic world models through candidate-future comparisons with semantic and visual feedback. Diverse search promotes diversity among candidate trajectories under shared visual observations, action sequenc",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-05",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agi",
+        "world model",
+        "planning",
+        "robot"
       ]
     }
   ]

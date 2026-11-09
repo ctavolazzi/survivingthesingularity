@@ -339,6 +339,12 @@
           <div class="ea-item-body">
             <div class="ea-item-name">{item.title}</div>
             <div class="ea-item-desc">{item.detail}</div>
+            {#if item.image}
+              <figure class="ea-item-figure">
+                <img src={item.image.src} alt={item.image.alt} width={item.image.width} height={item.image.height} loading="lazy" decoding="async" />
+                <figcaption>Photo: {item.image.credit}, <a href={item.image.licenseUrl} target="_blank" rel="noopener noreferrer">{item.image.license}</a>, via <a href={item.image.sourceUrl} target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></figcaption>
+              </figure>
+            {/if}
           </div>
         </div>
       {/each}
@@ -843,6 +849,14 @@
   .ea-item-desc {
     font-size: 0.85rem; color: var(--text-3); line-height: 1.5; margin-bottom: 8px;
   }
+  .ea-item-figure { margin: 4px 0 0; }
+  .ea-item-figure img {
+    display: block; width: 100%; height: auto; border-radius: 8px;
+  }
+  .ea-item-figure figcaption {
+    margin-top: 6px; font-size: 0.7rem; color: var(--text-3); line-height: 1.4;
+  }
+  .ea-item-figure a { color: inherit; text-decoration: underline; }
   .ea-tag {
     display: inline-block;
     font-family: 'JetBrains Mono', monospace; font-size: 0.64rem; font-weight: 700;

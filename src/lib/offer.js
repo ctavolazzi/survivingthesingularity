@@ -265,13 +265,13 @@ export const offer = Object.freeze({
       // Resized to 960px wide; credit and license are shown on the page.
       image: Object.freeze({
         src: '/images/hand-binding.jpg',
-        alt: 'A needle and thread sewing the pages of a book together by hand.',
+        alt: 'The pages of a book, sewn together by hand with thread and tapes.',
         width: 960,
         height: 638,
         credit: 'Simon Eugster',
         license: 'CC BY-SA 3.0',
         licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bookbinding_tie_thread_2.jpg'
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bookbinding_tied_block.jpg'
       })
     })
   ]),

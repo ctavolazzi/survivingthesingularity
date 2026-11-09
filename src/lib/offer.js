@@ -153,7 +153,8 @@ export const offer = Object.freeze({
 
   purchaseTerms:
     'One payment, with no recurring membership charge for preorder buyers. ' +
-    'The Print Edition is a separate purchase at half price for this cohort. ' +
+    'This preorder is not for a specific print version of the book. The ' +
+    "author's handmade, signed edition is a separate product that comes later. " +
     `Digital purchases can be refunded within ${REFUND_WINDOW_DAYS} days.`,
 
   ledgerPrecedentCount: LEDGER_PRECEDENT_COUNT,
@@ -245,12 +246,13 @@ export const offer = Object.freeze({
   excluded: Object.freeze([
     Object.freeze({
       id: 'print-edition',
-      title: 'Not included: the Print Edition itself.',
+      title: "Not included: the author's handmade, signed edition.",
       detail:
-        'Print is a separate product at its own price, released as numbered ' +
-        'editions every year or two. Five dollars buys you half off the next ' +
-        'one, not the book itself. Anyone selling you a hardback for five ' +
-        'dollars is selling you a shipping delay.'
+        'Five dollars gets you what is listed above, and nothing else. The ' +
+        "author's handmade, signed edition is a totally separate thing, and it " +
+        'comes later. You are not preordering a specific version of the book. ' +
+        'When the versions are ready, you choose which one you want, and ' +
+        'Christopher will help you buy it.'
     })
   ]),
 

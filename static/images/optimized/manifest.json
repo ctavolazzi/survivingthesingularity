@@ -1638,6 +1638,230 @@
     },
     "variants": {}
   },
+  "static/book-images/v101-cutout-atlas.png": {
+    "original": {
+      "width": 1024,
+      "height": 1536,
+      "path": "static/book-images/v101-cutout-atlas.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v101_cutout_atlas_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v101_cutout_atlas_400.png",
+        "webp": "static/images/optimized/v101_cutout_atlas_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v101_cutout_atlas_800.png",
+        "webp": "static/images/optimized/v101_cutout_atlas_800.webp"
+      }
+    }
+  },
+  "static/book-images/v101-cutout-printer.png": {
+    "original": {
+      "width": 1184,
+      "height": 1328,
+      "path": "static/book-images/v101-cutout-printer.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v101_cutout_printer_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v101_cutout_printer_400.png",
+        "webp": "static/images/optimized/v101_cutout_printer_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v101_cutout_printer_800.png",
+        "webp": "static/images/optimized/v101_cutout_printer_800.webp"
+      }
+    }
+  },
+  "static/book-images/v101-cutout-rocket.png": {
+    "original": {
+      "width": 1024,
+      "height": 1536,
+      "path": "static/book-images/v101-cutout-rocket.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v101_cutout_rocket_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v101_cutout_rocket_400.png",
+        "webp": "static/images/optimized/v101_cutout_rocket_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v101_cutout_rocket_800.png",
+        "webp": "static/images/optimized/v101_cutout_rocket_800.webp"
+      }
+    }
+  },
+  "static/book-images/v101-cutout-spot.png": {
+    "original": {
+      "width": 1536,
+      "height": 1024,
+      "path": "static/book-images/v101-cutout-spot.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v101_cutout_spot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v101_cutout_spot_400.png",
+        "webp": "static/images/optimized/v101_cutout_spot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v101_cutout_spot_800.png",
+        "webp": "static/images/optimized/v101_cutout_spot_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/v101_cutout_spot_1200.png",
+        "webp": "static/images/optimized/v101_cutout_spot_1200.webp"
+      }
+    }
+  },
+  "static/book-images/v101-cutout-sun.png": {
+    "original": {
+      "width": 1283,
+      "height": 1226,
+      "path": "static/book-images/v101-cutout-sun.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v101_cutout_sun_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v101_cutout_sun_400.png",
+        "webp": "static/images/optimized/v101_cutout_sun_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v101_cutout_sun_800.png",
+        "webp": "static/images/optimized/v101_cutout_sun_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/v101_cutout_sun_1200.png",
+        "webp": "static/images/optimized/v101_cutout_sun_1200.webp"
+      }
+    }
+  },
+  "static/book-images/v101-cutout-tools.png": {
+    "original": {
+      "width": 1150,
+      "height": 1368,
+      "path": "static/book-images/v101-cutout-tools.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v101_cutout_tools_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v101_cutout_tools_400.png",
+        "webp": "static/images/optimized/v101_cutout_tools_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v101_cutout_tools_800.png",
+        "webp": "static/images/optimized/v101_cutout_tools_800.webp"
+      }
+    }
+  },
+  "static/book-images/v103-narrative-bear-flag.png": {
+    "original": {
+      "width": 1536,
+      "height": 1024,
+      "path": "static/book-images/v103-narrative-bear-flag.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v103_narrative_bear_flag_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v103_narrative_bear_flag_400.png",
+        "webp": "static/images/optimized/v103_narrative_bear_flag_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v103_narrative_bear_flag_800.png",
+        "webp": "static/images/optimized/v103_narrative_bear_flag_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/v103_narrative_bear_flag_1200.png",
+        "webp": "static/images/optimized/v103_narrative_bear_flag_1200.webp"
+      }
+    }
+  },
+  "static/book-images/v103-narrative-near-end.png": {
+    "original": {
+      "width": 1536,
+      "height": 1024,
+      "path": "static/book-images/v103-narrative-near-end.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v103_narrative_near_end_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v103_narrative_near_end_400.png",
+        "webp": "static/images/optimized/v103_narrative_near_end_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v103_narrative_near_end_800.png",
+        "webp": "static/images/optimized/v103_narrative_near_end_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/v103_narrative_near_end_1200.png",
+        "webp": "static/images/optimized/v103_narrative_near_end_1200.webp"
+      }
+    }
+  },
+  "static/book-images/v103-narrative-passing-beans.png": {
+    "original": {
+      "width": 1536,
+      "height": 1024,
+      "path": "static/book-images/v103-narrative-passing-beans.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v103_narrative_passing_beans_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v103_narrative_passing_beans_400.png",
+        "webp": "static/images/optimized/v103_narrative_passing_beans_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v103_narrative_passing_beans_800.png",
+        "webp": "static/images/optimized/v103_narrative_passing_beans_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/v103_narrative_passing_beans_1200.png",
+        "webp": "static/images/optimized/v103_narrative_passing_beans_1200.webp"
+      }
+    }
+  },
+  "static/book-images/v103-narrative-rosa-testimony.png": {
+    "original": {
+      "width": 1536,
+      "height": 1024,
+      "path": "static/book-images/v103-narrative-rosa-testimony.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/v103_narrative_rosa_testimony_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/v103_narrative_rosa_testimony_400.png",
+        "webp": "static/images/optimized/v103_narrative_rosa_testimony_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/v103_narrative_rosa_testimony_800.png",
+        "webp": "static/images/optimized/v103_narrative_rosa_testimony_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/v103_narrative_rosa_testimony_1200.png",
+        "webp": "static/images/optimized/v103_narrative_rosa_testimony_1200.webp"
+      }
+    }
+  },
   "static/favicon-16x16.png": {
     "original": {
       "width": 16,
@@ -1876,6 +2100,26 @@
       "400": {
         "original": "static/images/optimized/default_avatar_400.jpg",
         "webp": "static/images/optimized/default_avatar_400.webp"
+      }
+    }
+  },
+  "static/images/hand-binding.jpg": {
+    "original": {
+      "width": 960,
+      "height": 410,
+      "path": "static/images/hand-binding.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/hand_binding_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/hand_binding_400.jpg",
+        "webp": "static/images/optimized/hand_binding_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/hand_binding_800.jpg",
+        "webp": "static/images/optimized/hand_binding_800.webp"
       }
     }
   },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T18:17:07Z",
+  "generated_at": "2026-11-09T22:56:04Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -60,6 +60,34 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.09124",
+      "source": "arxiv",
+      "title": "Toward the Era of Agentic Embodied Intelligence",
+      "url": "https://arxiv.org/abs/2611.09124",
+      "authors": [
+        "Chao Liang",
+        "Ke Chen",
+        "Fengxiaoxiao Li",
+        "Shibo Huang"
+      ],
+      "summary": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-06",
+      "score": 12.0,
+      "raw_score": 24,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomy",
+        "embodied",
+        "robot",
+        "scaling"
       ]
     },
     {
@@ -246,32 +274,6 @@
         "alignment",
         "robot",
         "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.13772",
-      "source": "arxiv",
-      "title": "MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS",
-      "url": "https://arxiv.org/abs/2610.13772",
-      "authors": [
-        "Tom Philipp Backert",
-        "Mohammad D. Soorati",
-        "Javad Ghofrani"
-      ],
-      "summary": "Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robotics remains limited and insufficiently standardized: a single experiment is assembled from manually aligned simulator files, training scripts, configuration values, paths, seeds, and environment details, so reuse and reproduction stay fragile even within one research group. To address this gap, we i",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-09",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "robot",
-        "robotics",
-        "emergent",
         "rag"
       ]
     },
@@ -528,6 +530,31 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2611.09568",
+      "source": "arxiv",
+      "title": "Alignment by Confident Debate: Preference Learning from Multi-Agent Debate",
+      "url": "https://arxiv.org/abs/2611.09568",
+      "authors": [
+        "Nikhil Verma",
+        "Dingxian Wang",
+        "Mohammad Reza Rezaei",
+        "Andrew Rabinovich"
+      ],
+      "summary": "Post-training language models for reasoning typically rely on gold answers, task-specific verifiers, or learned reward models, limiting scalability when such signals are scarce. Multi-agent debate offers a self-supervised alternative, but converting debate into reliable training supervision remains challenging: majority voting weights agreeing responses equally, lacks a principled tie-breaking rule, and is ill-defined for open-ended tasks without a canonical answer; likelihood-based scoring can conflate fluency with correctness; and homogeneous committees may reinforce correlated errors. We in",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-06",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "alignment",
+        "language model"
       ]
     },
     {
@@ -1105,6 +1132,57 @@
       ]
     },
     {
+      "id": "2611.09891",
+      "source": "arxiv",
+      "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+      "url": "https://arxiv.org/abs/2611.09891",
+      "authors": [
+        "Peter Belcak",
+        "Greg Heinrich",
+        "Saurav Muralidharan",
+        "Shizhe Diao"
+      ],
+      "summary": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very efficiently and with little involvement from language models. We introduce agentic reasoning caching, a method for constructing robust CPU-executable agentic reasoning caches (ARCs) from LLM reasoning traces. ARCs show on-par performance with frontier LLMs across a range of difficult mathematical a",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-06",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.08914",
+      "source": "arxiv",
+      "title": "HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety",
+      "url": "https://arxiv.org/abs/2611.08914",
+      "authors": [
+        "Ramy ElMallah",
+        "Marc Bishara",
+        "Hyegang Kim",
+        "Yuxi Zhang"
+      ],
+      "summary": "Recent progress in embodied robotics is bringing robots closer to deployment in homes, as vision-language models (VLMs) are demonstrating significant advances in reasoning, making VLM-driven robots promising home assistant agents. These agents will often be introduced into homes that already have cameras, Internet of Things (IoT) devices, and residents with wearables. To fulfill their potential, they need to integrate with existing smart infrastructure and reason through ambiguous scenarios: a smoke alarm may come from a pan about to ignite, a pan already on fire, a resident cooking or a fault",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-06",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "embodied",
+        "robot",
+        "robotics",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.07825",
       "source": "arxiv",
       "title": "Generate-then-Rank: Learning Symbolic Goal Interpretation for Embodied Agents",
@@ -1353,6 +1431,30 @@
       ]
     },
     {
+      "id": "2611.09349",
+      "source": "arxiv",
+      "title": "ReSUM: Reasoning-Driven Multi-Agent Framework for Query-Focused Summarization",
+      "url": "https://arxiv.org/abs/2611.09349",
+      "authors": [
+        " Sonali",
+        "Deeksha Varshney",
+        "Asif Ekbal"
+      ],
+      "summary": "LLMs excel at language tasks, but long-meeting QFS remains difficult due to complex speaker dynamics, sparse key information, and limited data. Meetings involve disfluencies, long transcripts and complex discourse. QFS have high risk of information omission, hallucination, even for advanced models such as GPT-4-mini and Gemini. Existing end-to-end methods compress retrieval, evidence extraction, and summary generation into a single pass, failing to handle the complex reasoning required for targeted meeting summaries. We propose ReSUM, a modular multi-LLM framework coordinated by a planner that",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-06",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "retrieval"
+      ]
+    },
+    {
       "id": "2611.08449",
       "source": "arxiv",
       "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
@@ -1404,122 +1506,28 @@
       ]
     },
     {
-      "id": "2611.07730",
+      "id": "2611.09491",
       "source": "arxiv",
-      "title": "Seeing Beyond the Next Step: World-Model-Guided Human-Like Navigation in Multi-Agent Scenes",
-      "url": "https://arxiv.org/abs/2611.07730",
+      "title": "An Effective Spoken Language Understanding Approach Leveraging Query-Adaptive Intent Detection",
+      "url": "https://arxiv.org/abs/2611.09491",
       "authors": [
-        "Seong-Eun Hong",
-        "JuYeong Hwang",
-        "Jinhyun Kim",
-        "Hanyoung Jang"
+        "Bing-Long Kuo",
+        "Yu-Hsuan Fang",
+        "Tien-Hong Lo",
+        "Hsueh-Wei Liao"
       ],
-      "summary": "Selecting a next motion in a populated scene is not just a matter of avoiding what is currently in the way: an action can be locally feasible yet drift onto the road instead of the crosswalk, cut into a stream of crossing pedestrians, or bottleneck a narrow passage. These failure modes are invisible from the current state alone, and acting on them requires reasoning about what each candidate action will cause. World models offer exactly this, namely action-conditioned predictions of the future, but rolling them out at every decision step is a cost deployable navigation systems cannot pay, and ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-05",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "world model",
-        "agent",
-        "multi-agent",
-        "reasoning"
-      ]
-    },
-    {
-      "id": "2611.03518",
-      "source": "arxiv",
-      "title": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
-      "url": "https://arxiv.org/abs/2611.03518",
-      "authors": [
-        "Avni Mittal",
-        "Avinash Anand",
-        "Dikshant Kukreja",
-        "Erik Cambria"
-      ],
-      "summary": "Organisations increasingly deploy large language model agents that must follow organisational values. We check whether activation steering, which adds vectors to a model's internal activations during generation without changing its weights, can improve compliance beyond prompting alone. Since most scenarios involve several values at once, we focus on multi-value steering. A simple way to build these vectors is to contrast responses that follow all values relevant to a scenario with responses that violate them. However, this gives nearly identical vectors for different values: they capture a ge",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-02",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "alignment",
-        "value alignment",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.03138",
-      "source": "arxiv",
-      "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL",
-      "url": "https://arxiv.org/abs/2611.03138",
-      "authors": [
-        "Aswin Ramachandran",
-        "Jona Schulz",
-        "Maurus Derungs",
-        "Carlo Angelini"
-      ],
-      "summary": "Progress in robot learning, particularly physical multi-agent reinforcement learning (MARL), is currently challenged by a limited availability of accessible, standardized benchmarks. While simulation-based MARL has produced remarkable emergent behaviors, from coordinated team play to complex tool use, translating these advances to physical systems remains difficult. A key barrier is infrastructural: physical platforms are often prohibitively expensive, require specialized facilities, or lack open mechanisms and designs for reproducibility. We introduce KlaskTron, an open-source, low-cost (<\\$2",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-02",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "tool use",
-        "robot",
-        "emergent"
-      ]
-    },
-    {
-      "id": "2611.08196",
-      "source": "arxiv",
-      "title": "SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving",
-      "url": "https://arxiv.org/abs/2611.08196",
-      "authors": [
-        "Sai Vallurupalli",
-        "Francis Ferraro"
-      ],
-      "summary": "Complex problems with limited context, such as claims, require a means to obtain additional knowledge necessary for solution reasoning. We propose a multi-agent framework, SMART, to obtain knowledge through capturing the implicit state of participating entities in a problem context. SMART curates the state knowledge as diverse, complementary and solution-salient premises using a variety of LLMs and a structured role-based prompt strategy. Using knowledge from these real-world verified curated premises, SMART's knowledge guided solution reasoning improves validation performance up to 20% on com",
-      "category": "cs.AI",
+      "summary": "Large language models enable fine-tuning-free spoken language understanding (SLU) through in-context learning, but direct query-based retrieval may select semantically similar yet intent irrelevant demonstrations. This paper presents Query-Adaptive Intent Detection via Prototype Extraction (APEX), a two-stage retrieval framework that first selects candidate intents using intent-level prototypes and then retrieves contextual exemplars within the selected intent space. Experiments on the SLURP dataset evaluate joint SLU performance using Exact Match Accuracy (EMA) under full-transcript and perpl",
+      "category": "cs.CL",
       "tag": "Research",
-      "published_at": "2026-11-05",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm"
-      ]
-    },
-    {
-      "id": "2611.07850",
-      "source": "arxiv",
-      "title": "Learning Robotic World Models with Semantic and Visual Feedback",
-      "url": "https://arxiv.org/abs/2611.07850",
-      "authors": [
-        "Hao Wu",
-        "Yuqi Li",
-        "Yizhou Zhao",
-        "Kun Wang"
-      ],
-      "summary": "Robot world models predict action-conditioned future visual states to support robotic planning and decision making. However, visual reconstruction does not fully capture task progress, semantic evaluation alone provides limited constraints on fine-grained visual errors, and homogeneous predictions limit comparative feedback. We present RoboImagine, a framework for post-training autoregressive robotic world models through candidate-future comparisons with semantic and visual feedback. Diverse search promotes diversity among candidate trajectories under shared visual observations, action sequenc",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-05",
-      "score": 6.5,
-      "raw_score": 13,
+      "published_at": "2026-11-06",
+      "score": 7.0,
+      "raw_score": 14,
       "matched_keywords": [
         "agi",
-        "world model",
-        "planning",
-        "robot"
+        "language model",
+        "in-context learning",
+        "retrieval",
+        "rag"
       ]
     }
   ]

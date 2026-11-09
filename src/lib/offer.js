@@ -261,17 +261,17 @@ export const offer = Object.freeze({
         'alike. It is not available yet and is not part of the $5 preorder. ' +
         "An announcement will be made when it is, if you wish to pick one up " +
         'in addition to what you already have.',
-      // CC BY-SA 4.0, Bengt Oberger (Boberger), Wikimedia Commons, 2023.
+      // CC BY-SA 3.0, Simon Eugster (LivingShadow), Wikimedia Commons, 2008.
       // Resized to 960px wide; credit and license are shown on the page.
       image: Object.freeze({
         src: '/images/hand-binding.jpg',
-        alt: 'A bookbinder sewing a book by hand on a wooden sewing frame.',
+        alt: 'A needle and thread sewing the pages of a book together by hand.',
         width: 960,
-        height: 640,
-        credit: 'Bengt Oberger',
-        license: 'CC BY-SA 4.0',
-        licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Apprentice_in_bookbinding_01.jpg'
+        height: 638,
+        credit: 'Simon Eugster',
+        license: 'CC BY-SA 3.0',
+        licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bookbinding_tie_thread_2.jpg'
       })
     })
   ]),

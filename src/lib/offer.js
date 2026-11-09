@@ -251,6 +251,16 @@ export const offer = Object.freeze({
         'editions every year or two. Five dollars buys you half off the next ' +
         'one, not the book itself. Anyone selling you a hardback for five ' +
         'dollars is selling you a shipping delay.'
+    }),
+    Object.freeze({
+      id: 'authors-edition',
+      title: "Not included: the Author's Edition.",
+      detail:
+        "A hand-bound, signed Author's Edition of the book will be available " +
+        'later. Each one is a piece of art, a one of one: no two are exactly ' +
+        'alike. It is not available yet and is not part of the $5 preorder. ' +
+        "An announcement will be made when it is, if you wish to pick one up " +
+        'in addition to what you already have.'
     })
   ]),
 

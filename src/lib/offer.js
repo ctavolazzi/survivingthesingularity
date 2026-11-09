@@ -262,13 +262,13 @@ export const offer = Object.freeze({
         "An announcement will be made when it is, if you wish to pick one up " +
         'in addition to what you already have.',
       // CC BY-SA 3.0, Simon Eugster (LivingShadow), Wikimedia Commons, 2008.
-      // Resized to 960px wide; credit and license are shown on the page.
+      // Resized to 960px wide and cropped; credit and license are shown on the page.
       image: Object.freeze({
         src: '/images/hand-binding.jpg',
         alt: 'The pages of a book, sewn together by hand with thread and tapes.',
         width: 960,
-        height: 638,
-        credit: 'Simon Eugster',
+        height: 410,
+        credit: 'Simon Eugster (cropped)',
         license: 'CC BY-SA 3.0',
         licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bookbinding_tied_block.jpg'

@@ -260,7 +260,19 @@ export const offer = Object.freeze({
         'later. Each one is a piece of art, a one of one: no two are exactly ' +
         'alike. It is not available yet and is not part of the $5 preorder. ' +
         "An announcement will be made when it is, if you wish to pick one up " +
-        'in addition to what you already have.'
+        'in addition to what you already have.',
+      // CC BY-SA 4.0, Bengt Oberger (Boberger), Wikimedia Commons, 2023.
+      // Resized to 960px wide; credit and license are shown on the page.
+      image: Object.freeze({
+        src: '/images/hand-binding.jpg',
+        alt: 'A bookbinder sewing a book by hand on a wooden sewing frame.',
+        width: 960,
+        height: 640,
+        credit: 'Bengt Oberger',
+        license: 'CC BY-SA 4.0',
+        licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Apprentice_in_bookbinding_01.jpg'
+      })
     })
   ]),
 

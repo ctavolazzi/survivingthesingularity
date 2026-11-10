@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T22:56:04Z",
+  "generated_at": "2026-11-10T20:23:24Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -278,6 +278,32 @@
       ]
     },
     {
+      "id": "2611.12835",
+      "source": "arxiv",
+      "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+      "url": "https://arxiv.org/abs/2611.12835",
+      "authors": [
+        "Hanxiao Li",
+        "Shutong Liu",
+        "Yongjia Ma",
+        "Jiaming Ji"
+      ],
+      "summary": "As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfulness of underlying reasoning, tool use, and environmental effects. Prior mitigations address this partial observability by predefined evaluator latent belief space or one-shot monitoring, which do not extend to free-form language space and vulnerable to stronger deceptions that evade simple monitor",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-11-09",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
+        "reasoning",
+        "deceptive",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.02909",
       "source": "arxiv",
       "title": "Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration",
@@ -530,6 +556,31 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2611.10819",
+      "source": "arxiv",
+      "title": "Selective Cooperative Perception via Blind Spot Reasoning and Agentic Dialogue with Vision-Language Models",
+      "url": "https://arxiv.org/abs/2611.10819",
+      "authors": [
+        "Chengyuan Ma",
+        "Shixiao Liang",
+        "Hangyu Li",
+        "Zheng Li"
+      ],
+      "summary": "Real-time cooperative perception (CP) in multi-agent traffic environments is highly resource-intensive, which posing scalability challenges for large-scale deployment. Efficiency can be significantly improved by selectively performing CP only in safety-critical scenarios and for key occluding objects. Vision-Language Models (VLMs) are well-suited for complex reasoning in dynamic and uncertain environments, making them a promising tool for this selective CP task. This study proposes a VLM-driven agentic framework for blind spot reasoning and dialogue-based CP. A mixed-model architecture is desi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-07",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "reasoning",
+        "language model"
       ]
     },
     {
@@ -1431,103 +1482,51 @@
       ]
     },
     {
-      "id": "2611.09349",
+      "id": "2611.12377",
       "source": "arxiv",
-      "title": "ReSUM: Reasoning-Driven Multi-Agent Framework for Query-Focused Summarization",
-      "url": "https://arxiv.org/abs/2611.09349",
+      "title": "Detecting Shadow AI: Unsanctioned LLM Agents on Enterprise Endpoints: A Taxonomy, an Open Detector and a Controlled Evaluation",
+      "url": "https://arxiv.org/abs/2611.12377",
       "authors": [
-        " Sonali",
-        "Deeksha Varshney",
-        "Asif Ekbal"
+        "Jeremy Canale",
+        "Fabien Soulis"
       ],
-      "summary": "LLMs excel at language tasks, but long-meeting QFS remains difficult due to complex speaker dynamics, sparse key information, and limited data. Meetings involve disfluencies, long transcripts and complex discourse. QFS have high risk of information omission, hallucination, even for advanced models such as GPT-4-mini and Gemini. Existing end-to-end methods compress retrieval, evidence extraction, and summary generation into a single pass, failing to handle the complex reasoning required for targeted meeting summaries. We propose ReSUM, a modular multi-LLM framework coordinated by a planner that",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-06",
+      "summary": "Shadow IT, the use of technology that the IT organisation has not approved, is a long-standing governance problem. We argue that autonomous AI agents can make it grow much faster: agents make building tools nearly free, act with their user's privileges, and leave behind scripts, automations and MCP servers that are themselves unsanctioned. A simple compounding model shows that, under its assumptions, shadow IT grows exponentially once agentic artifacts reproduce faster than the organisation retires them; retiring them starts with detecting them. We then ask whether unsanctioned agents can be d",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-09",
       "score": 7.5,
       "raw_score": 15,
       "matched_keywords": [
         "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2611.08449",
-      "source": "arxiv",
-      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
-      "url": "https://arxiv.org/abs/2611.08449",
-      "authors": [
-        "Yu-Cheng Chou",
-        "Shihao Wang",
-        "Jin Huang",
-        "Chi-Pin Huang"
-      ],
-      "summary": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-05",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
+        "agentic",
         "autonomous",
-        "planning",
-        "robot",
-        "robotics",
-        "physical ai",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.07140",
-      "source": "arxiv",
-      "title": "More Agents, More Reliable? System-Level Reliability of Multi-Agent LLMs under Operational-Profile Uncertainty",
-      "url": "https://arxiv.org/abs/2611.07140",
-      "authors": [
-        "Burkay Tunçtürk",
-        "Koorosh Aslansefat",
-        "Yiannis Papadopoulos",
-        "Bao Nguyen"
-      ],
-      "summary": "Teams increasingly build software from cooperating large language model (LLM) agents, often assuming more agents mean more reliability. Yet the usual evidence, average benchmark accuracy, ignores the input mix a deployed system meets and the rule merging the agents' answers. Building on HIP-LLM, a hierarchical imprecise-probability assessment of single LLMs, we propose a framework combining it with a Bayesian network of the system's failure logic for multi-agent systems. Agent failure-probability intervals propagate through this network, where the combining rule can itself fail, into a reliabi",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-04",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
         "llm",
-        "language model",
-        "rag"
+        "automation"
       ]
     },
     {
-      "id": "2611.09491",
+      "id": "2611.12269",
       "source": "arxiv",
-      "title": "An Effective Spoken Language Understanding Approach Leveraging Query-Adaptive Intent Detection",
-      "url": "https://arxiv.org/abs/2611.09491",
+      "title": "Agent4Crypto: A Dual-Reflective and Market-Feedback-Aligned LLM-Based Multi-Agent System for Cryptocurrency Trading",
+      "url": "https://arxiv.org/abs/2611.12269",
       "authors": [
-        "Bing-Long Kuo",
-        "Yu-Hsuan Fang",
-        "Tien-Hong Lo",
-        "Hsueh-Wei Liao"
+        "Guangyan Gan",
+        "Jiahao Li",
+        "Jiashun Wang",
+        "Lin William Cong"
       ],
-      "summary": "Large language models enable fine-tuning-free spoken language understanding (SLU) through in-context learning, but direct query-based retrieval may select semantically similar yet intent irrelevant demonstrations. This paper presents Query-Adaptive Intent Detection via Prototype Extraction (APEX), a two-stage retrieval framework that first selects candidate intents using intent-level prototypes and then retrieves contextual exemplars within the selected intent space. Experiments on the SLURP dataset evaluate joint SLU performance using Exact Match Accuracy (EMA) under full-transcript and perpl",
+      "summary": "Cryptocurrency markets provide a natural testbed for autonomous AI agents because they are digital-native, high-frequency, and machine-speed environments, yet existing methods often struggle with non-stationary market regimes, opaque decisions, and fixed aggregation rules. In this paper, we propose Agent4Crypto, a dual-reflective and market-feedback-aligned multi-agent system. The framework coordinates specialized agents for data collection, analysis, risk assessment, reflection, and trading, synthesizing heterogeneous signals from prices, indicators, news, and charts in an interpretable decis",
       "category": "cs.CL",
       "tag": "Research",
-      "published_at": "2026-11-06",
-      "score": 7.0,
-      "raw_score": 14,
+      "published_at": "2026-11-09",
+      "score": 7.5,
+      "raw_score": 15,
       "matched_keywords": [
-        "agi",
-        "language model",
-        "in-context learning",
-        "retrieval",
-        "rag"
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "interpret",
+        "llm"
       ]
     }
   ]

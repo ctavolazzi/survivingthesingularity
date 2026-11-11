@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T20:23:24Z",
+  "generated_at": "2026-11-11T20:05:47Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -88,6 +88,33 @@
         "embodied",
         "robot",
         "scaling"
+      ]
+    },
+    {
+      "id": "2611.14115",
+      "source": "arxiv",
+      "title": "LEASH: Stay Safe in Agentic Robotics",
+      "url": "https://arxiv.org/abs/2611.14115",
+      "authors": [
+        "Qinfeng Zhu",
+        "Weiguang Zhao",
+        "Ke Sun",
+        "Xihao Guo"
+      ],
+      "summary": "Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path toward artificial general intelligence in robotics. However, we find that using foundation models to control robots poses serious safety risks, and comprehensive safety evaluation is still lacking. We introduce RoboRisk, a comprehensive benchmark for evaluating safety in agentic robotics. Its 92 simulated tasks and 13 physical-robot tasks fall into five categories: Task-level Refusal (T), Plan Repair (P), Execution-tim",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-10",
+      "score": 11.0,
+      "raw_score": 22,
+      "matched_keywords": [
+        "artificial general intelligence",
+        "foundation model",
+        "agent",
+        "agentic",
+        "embodied",
+        "robot",
+        "robotics"
       ]
     },
     {
@@ -278,6 +305,32 @@
       ]
     },
     {
+      "id": "2611.14419",
+      "source": "arxiv",
+      "title": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
+      "url": "https://arxiv.org/abs/2611.14419",
+      "authors": [
+        "Souhaila Djaffal",
+        "Amna Jamal",
+        "Gagana Madhugiri Devaraja",
+        "Anidipta Pal"
+      ],
+      "summary": "Formal world models can support planning, verification, and safety reasoning, but constructing them from open-ended natural-language situations is difficult, particularly in multi-agent settings where several formalizations may be plausible. We study whether five LLMs can generate such world models as partially observable stochastic games and whether mechanical validity is sufficient to establish that the resulting model faithfully represents the intended decision problem. We introduce a benchmark of 44 scenarios spanning game, situational, and cultural settings and evaluate generated world mo",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-10",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "world model",
+        "agent",
+        "multi-agent",
+        "planning",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
       "id": "2611.12835",
       "source": "arxiv",
       "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
@@ -378,6 +431,32 @@
         "agent",
         "autonomous",
         "autonomy"
+      ]
+    },
+    {
+      "id": "2611.14106",
+      "source": "arxiv",
+      "title": "ProofCoder: Continuous Reasoning for Automated Software Verification",
+      "url": "https://arxiv.org/abs/2611.14106",
+      "authors": [
+        "Martim Afonso",
+        "Inês Lynce",
+        "Maurizio Morisio",
+        "João F. Ferreira"
+      ],
+      "summary": "Formal verification using proof assistants provides strong correctness guarantees for software, but constructing proofs remains labor-intensive and requires significant expertise. Recent approaches based on large language models (LLMs) have shown promise in automating proof synthesis. However, these approaches typically constrain the model to a rigid tactic-generation loop, in which the surrounding system controls premise retrieval, proof-state management, and backtracking. We introduce ProofCoder, an agentic proof-synthesis system for Rocq that approaches theorem proving from a coding-agent p",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-10",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval"
       ]
     },
     {
@@ -1183,6 +1262,31 @@
       ]
     },
     {
+      "id": "2611.13196",
+      "source": "arxiv",
+      "title": "From Process Models to Composable Agentic Workflows: Combining BPMN, Agents and Enterprise Knowledge",
+      "url": "https://arxiv.org/abs/2611.13196",
+      "authors": [
+        "Christian Fillies",
+        "Jan Fillies",
+        "Frauke Weichhardt",
+        "Gay Anne Wood-Albrecht"
+      ],
+      "summary": "LLM-based agents can reason, use tools and collaborate. However, coordinating increasingly complex agentic applications becomes difficult to understand, monitor and improve. Decisions distributed across prompts, tool calls and application logic make workflows implicit. We introduce **Recursive Capability Composition**, enabling agents to execute business processes and expose them as reusable Agentic Tools.\n  This paper presents a BPMN-based approach to Agentic Workflows, combining explicit orchestration with autonomous reasoning. SemTalk BPMN models are transformed into executable workflows us",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-09",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
       "id": "2611.09891",
       "source": "arxiv",
       "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
@@ -1430,103 +1534,6 @@
         "agentic",
         "language model",
         "rag"
-      ]
-    },
-    {
-      "id": "2610.35051",
-      "source": "arxiv",
-      "title": "VISTA: Active Exploration for Self-Improvement in Embodied Agents",
-      "url": "https://arxiv.org/abs/2610.35051",
-      "authors": [
-        "Zhang Zhang",
-        "Shengjun Zhang",
-        "Simin Huang",
-        "Min Chen"
-      ],
-      "summary": "Agentic embodied intelligence plays a foundational role in open-ended, dynamic physical environments. Rather than treating policy learning as an end-to-end mapping from instructions to actions, recent studies reveal that embodied systems depend not only on pre-trained foundation models, but also on harness. Prior approaches largely treat rollouts as static logs for post-hoc reflection, producing harness updates without autonomously testing and refining them through subsequent embodied interaction. To address this challenge, we propose VISTA, a meta-agent framework that transforms post-hoc roll",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-26",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "autonomous",
-        "embodied"
-      ]
-    },
-    {
-      "id": "2610.36325",
-      "source": "arxiv",
-      "title": "Ontology-guided multi-agent reasoning for explainable differential diagnosis",
-      "url": "https://arxiv.org/abs/2610.36325",
-      "authors": [
-        "Roxana Ramona Szomiu",
-        "George Ursu",
-        "Adrian Groza"
-      ],
-      "summary": "Effective differential diagnosis depends on well structured and unambiguous patient case descriptions, since incomplete or ambiguous clinical information readily leads to diagnostic errors and inconsistent reasoning. Large Language Models (LLMs) have recently shown promising capabilities in medical question answering and clinical reasoning; however, even when achieving competitive performance on medical benchmarks, they often rely on pattern recognition learned from training data rather than grounded clinical evidence, and can generate plausible yet unsupported diagnostic conclusions. Their re",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-26",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.12377",
-      "source": "arxiv",
-      "title": "Detecting Shadow AI: Unsanctioned LLM Agents on Enterprise Endpoints: A Taxonomy, an Open Detector and a Controlled Evaluation",
-      "url": "https://arxiv.org/abs/2611.12377",
-      "authors": [
-        "Jeremy Canale",
-        "Fabien Soulis"
-      ],
-      "summary": "Shadow IT, the use of technology that the IT organisation has not approved, is a long-standing governance problem. We argue that autonomous AI agents can make it grow much faster: agents make building tools nearly free, act with their user's privileges, and leave behind scripts, automations and MCP servers that are themselves unsanctioned. A simple compounding model shows that, under its assumptions, shadow IT grows exponentially once agentic artifacts reproduce faster than the organisation retires them; retiring them starts with detecting them. We then ask whether unsanctioned agents can be d",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-11-09",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "llm",
-        "automation"
-      ]
-    },
-    {
-      "id": "2611.12269",
-      "source": "arxiv",
-      "title": "Agent4Crypto: A Dual-Reflective and Market-Feedback-Aligned LLM-Based Multi-Agent System for Cryptocurrency Trading",
-      "url": "https://arxiv.org/abs/2611.12269",
-      "authors": [
-        "Guangyan Gan",
-        "Jiahao Li",
-        "Jiashun Wang",
-        "Lin William Cong"
-      ],
-      "summary": "Cryptocurrency markets provide a natural testbed for autonomous AI agents because they are digital-native, high-frequency, and machine-speed environments, yet existing methods often struggle with non-stationary market regimes, opaque decisions, and fixed aggregation rules. In this paper, we propose Agent4Crypto, a dual-reflective and market-feedback-aligned multi-agent system. The framework coordinates specialized agents for data collection, analysis, risk assessment, reflection, and trading, synthesizing heterogeneous signals from prices, indicators, news, and charts in an interpretable decis",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-11-09",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "interpret",
-        "llm"
       ]
     }
   ]

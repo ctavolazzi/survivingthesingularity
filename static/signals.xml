@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 10 Nov 2026 20:23:24 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 11 Nov 2026 20:05:47 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -27,6 +27,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.09124</guid>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
       <description>Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execut... [Score: 12.0 | Flagged for: foundation model, agent, multi-agent, agentic, autonomy] Authors: Chao Liang, Ke Chen, et al.</description>
+    </item>
+    <item>
+      <title>LEASH: Stay Safe in Agentic Robotics</title>
+      <link>https://arxiv.org/abs/2611.14115</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.14115</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path toward artificial general intelligence in robotics. However, we find that using foundation models to control robots poses ... [Score: 11.0 | Flagged for: artificial general intelligence, foundation model, agent, agentic, embodied] Authors: Qinfeng Zhu, Weiguang Zhao, et al.</description>
     </item>
     <item>
       <title>Scaling Multi-Agent Intelligence with Substrate-Centric Coordination</title>
@@ -78,6 +85,13 @@
       <description>3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion p... [Score: 10.5 | Flagged for: foundation model, agent, agentic, alignment, robot] Authors: Weichen Lyu, Chong Xia, et al.</description>
     </item>
     <item>
+      <title>Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning</title>
+      <link>https://arxiv.org/abs/2611.14419</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.14419</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Formal world models can support planning, verification, and safety reasoning, but constructing them from open-ended natural-language situations is difficult, particularly in multi-agent settings where several formalizations may be plausible. We study whether five LLMs can generate such world models ... [Score: 9.5 | Flagged for: world model, agent, multi-agent, planning, reasoning] Authors: Souhaila Djaffal, Amna Jamal, et al.</description>
+    </item>
+    <item>
       <title>Mitigating Agentic Deception via Evaluation-Side Partially Observable Games</title>
       <link>https://arxiv.org/abs/2611.12835</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.12835</guid>
@@ -104,6 +118,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.21055</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       <description>Recursive self-improvement, in which AI systems build stronger AI systems, is one promising route to superintelligence. We study a weaker form that can be measured today: frontier agents post-training a small raw base model with public data, as a test of their research potential. We build Athanor, a... [Score: 9.5 | Flagged for: superintelligence, recursive self-improvement, agent, autonomous, autonomy] Authors: Yufa Zhou, Yichen Wang, et al.</description>
+    </item>
+    <item>
+      <title>ProofCoder: Continuous Reasoning for Automated Software Verification</title>
+      <link>https://arxiv.org/abs/2611.14106</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.14106</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Formal verification using proof assistants provides strong correctness guarantees for software, but constructing proofs remains labor-intensive and requires significant expertise. Recent approaches based on large language models (LLMs) have shown promise in automating proof synthesis. However, these... [Score: 9.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Martim Afonso, Inês Lynce, et al.</description>
     </item>
     <item>
       <title>Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis</title>
@@ -195,27 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.06553</guid>
       <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
       <description>Large language models (LLMs) undergo safety alignment to prevent harmful generations, yet they remain vulnerable to jailbreak attacks. Recent work reveals a deeper structural weakness: safety alignment can be highly sparse, such that pruning a small number of safety-critical neurons or ablating a si... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Hamid Dashtbani, Alexandra Dmitrienko</description>
-    </item>
-    <item>
-      <title>Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action</title>
-      <link>https://arxiv.org/abs/2611.05058</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.05058</guid>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Recent multimodal language models can reason directly about robot scenes, but it is unclear whether they need to repeatedly reinterpret raw visual observations at every step of an interaction. We propose shifting routine spatial reasoning from images to text and symbols through a 3D geometric abstra... [Score: 8.5 | Flagged for: agent, agentic, reasoning, interpret, robot] Authors: Yihang Liu, Yiming Chen, et al.</description>
-    </item>
-    <item>
-      <title>Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture</title>
-      <link>https://arxiv.org/abs/2611.04972</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.04972</guid>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <description>By harnessing the inherent commonsense capabilities of pretrained Large Language Models (LLMs) and Vision-Language Models (VLMs), current Vision-Language Action(VLA) models for legged robots excel at interpreting language-based navigation commands but lack the physical grounding and explicit safety ... [Score: 8.5 | Flagged for: agi, planning, interpret, robot, llm] Authors: Abhijeet M. Kulkarni, Saimouli Katragadda, et al.</description>
-    </item>
-    <item>
-      <title>TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation</title>
-      <link>https://arxiv.org/abs/2611.03584</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.03584</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Open-world robotic mobile manipulation requires acting in physical environments with only partial information. While recent Large Vision-Language Model (LVLM) agents show strong open-world reasoning capabilities, existing architectures that rely on direct tool calling struggle with geometric uncerta... [Score: 8.5 | Flagged for: agent, agentic, planning, reasoning, robot] Authors: Utkarsh A. Mishra, Alperen Degirmenci, et al.</description>
     </item>
   </channel>
 </rss>

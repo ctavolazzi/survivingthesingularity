@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Wed, 11 Nov 2026 20:05:47 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 12 Nov 2026 20:43:24 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -34,13 +34,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.14115</guid>
       <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
       <description>Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path toward artificial general intelligence in robotics. However, we find that using foundation models to control robots poses ... [Score: 11.0 | Flagged for: artificial general intelligence, foundation model, agent, agentic, embodied] Authors: Qinfeng Zhu, Weiguang Zhao, et al.</description>
-    </item>
-    <item>
-      <title>Scaling Multi-Agent Intelligence with Substrate-Centric Coordination</title>
-      <link>https://arxiv.org/abs/2610.16120</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.16120</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Existing large language model (LLM) based multi-agent systems have been shown to scale poorly, and we identify three problems: reading burden that grows with the group, useful information diluted by shared work of unknown quality, and fragility to failed agents. We argue that the problems are largel... [Score: 11.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Zhenting Qi, Zhuokai Zhao, et al.</description>
     </item>
     <item>
       <title>CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.06553</guid>
       <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
       <description>Large language models (LLMs) undergo safety alignment to prevent harmful generations, yet they remain vulnerable to jailbreak attacks. Recent work reveals a deeper structural weakness: safety alignment can be highly sparse, such that pruning a small number of safety-critical neurons or ablating a si... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Hamid Dashtbani, Alexandra Dmitrienko</description>
+    </item>
+    <item>
+      <title>Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action</title>
+      <link>https://arxiv.org/abs/2611.05058</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.05058</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Recent multimodal language models can reason directly about robot scenes, but it is unclear whether they need to repeatedly reinterpret raw visual observations at every step of an interaction. We propose shifting routine spatial reasoning from images to text and symbols through a 3D geometric abstra... [Score: 8.5 | Flagged for: agent, agentic, reasoning, interpret, robot] Authors: Yihang Liu, Yiming Chen, et al.</description>
     </item>
   </channel>
 </rss>

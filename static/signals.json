@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T20:05:47Z",
+  "generated_at": "2026-11-12T20:43:24Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -115,33 +115,6 @@
         "embodied",
         "robot",
         "robotics"
-      ]
-    },
-    {
-      "id": "2610.16120",
-      "source": "arxiv",
-      "title": "Scaling Multi-Agent Intelligence with Substrate-Centric Coordination",
-      "url": "https://arxiv.org/abs/2610.16120",
-      "authors": [
-        "Zhenting Qi",
-        "Zhuokai Zhao",
-        "Rulin Shao",
-        "Kerem Oktar"
-      ],
-      "summary": "Existing large language model (LLM) based multi-agent systems have been shown to scale poorly, and we identify three problems: reading burden that grows with the group, useful information diluted by shared work of unknown quality, and fragility to failed agents. We argue that the problems are largely due to agent-centric designs: the coordination structure is wired into fixed workflows, central coordinators, or peer-to-peer messaging, and recent blackboard-style methods that move the coordination into a shared medium relieve only the last problem. To close the gaps, we build ScaleMAS, where as",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-12",
-      "score": 11.0,
-      "raw_score": 22,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "scaling",
-        "rag"
       ]
     },
     {
@@ -1533,6 +1506,30 @@
         "multi-agent",
         "agentic",
         "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.14415",
+      "source": "arxiv",
+      "title": "Exploring Post-Hoc Disentanglement of Audio Foundation Models for Music Similarity",
+      "url": "https://arxiv.org/abs/2611.14415",
+      "authors": [
+        "Lucas de Souza Brandão",
+        "Gabriel da Costa Merlin",
+        "Diego Furtado Silva"
+      ],
+      "summary": "Audio foundation models like CLAP, MuQ, and MERT excel at capturing general musical similarity. On the other hand, their entangled latent spaces limit interpretability and fine-grained attribute control. Conditional Similarity Networks (CSN) address this by pairing a backbone representation model with learned masks that gate the embedding space into attribute-specific subspaces. However, existing methods train the backbone from scratch, rather than leveraging pretrained foundation models. We instead present a systematic study of post-hoc disentanglement, adapting CSN to gate frozen pretrained ",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-11-10",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "foundation model",
+        "interpretability",
+        "interpret",
         "rag"
       ]
     }

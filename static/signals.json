@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T20:43:24Z",
+  "generated_at": "2026-11-13T20:25:16Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -278,6 +278,32 @@
       ]
     },
     {
+      "id": "2611.16082",
+      "source": "arxiv",
+      "title": "Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD",
+      "url": "https://arxiv.org/abs/2611.16082",
+      "authors": [
+        "Yi Liu",
+        "Xiantao Fan",
+        "Mingqi Xu",
+        "Jian-Xun Wang"
+      ],
+      "summary": "Turbulence modeling relies on human choices of closure form, physical inputs, and tunable parameters. Training closures a posteriori is efficient only with gradients through long chaotic rollouts, which few solvers provide. Most a posteriori approaches therefore resort to gradient-free optimization, and nearly all fix the closure form in advance, learning only its parameters. In this work, we introduce a gradient-aware agentic framework that poses closure discovery as a bilevel problem: a multi-agent large language model (LLM) system searches over closure forms, while a GPU-native differentiab",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-11",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomous",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.14419",
       "source": "arxiv",
       "title": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
@@ -404,6 +430,31 @@
         "agent",
         "autonomous",
         "autonomy"
+      ]
+    },
+    {
+      "id": "2611.16409",
+      "source": "arxiv",
+      "title": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
+      "url": "https://arxiv.org/abs/2611.16409",
+      "authors": [
+        "Doyoung Kim",
+        "Byeongguk Jeon",
+        "Kailin Zhang",
+        "Sherry Yang"
+      ],
+      "summary": "It is common to train Large Language Models (LLMs) for agentic tasks with Reinforcement Learning (RL) from scalar rewards. However, this throws away the fine-grained information about the environment that the agent experienced during the trial (e.g., error logs). To utilize this rich information, recent works wrap the agent in a harness that refines its own inputs through reflection or compaction and hands past experience to future rollouts, but the construction of the handed-off artifacts (e.g., a playbook) is itself not learned. We want the best of both worlds: gradient updates from a scalar",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-12",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "agentic",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -608,6 +659,55 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2611.17110",
+      "source": "arxiv",
+      "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
+      "url": "https://arxiv.org/abs/2611.17110",
+      "authors": [
+        "Jiachun Jin",
+        "Zetong Zhou",
+        "Haonan Wang",
+        "Xiao Yang"
+      ],
+      "summary": "Embodied foundation models hinge on diverse robot interaction data, which are costly to collect. Egocentric human videos offer a complementary source of experience, and latent action models (LAMs) provide a popular means of leveraging these videos for policy supervision. Compared with world-action models (WAMs), LAMs can offer greater training efficiency and potentially lower inference costs by avoiding explicit pixel prediction during policy learning and execution. However, most existing LAMs learn latent actions solely through video reconstruction, which can cause their representations to cl",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-12",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "foundation model",
+        "embodied",
+        "robot",
+        "scaling",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.16315",
+      "source": "arxiv",
+      "title": "Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation",
+      "url": "https://arxiv.org/abs/2611.16315",
+      "authors": [
+        "Carolina Fortuna",
+        "Blaz Bertalanic"
+      ],
+      "summary": "Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct test. We decompose the log10 error of each answer into the mean error of its model on the item, common to all its draws on the item, and a residual, and estimate both from 2.51M answers given before any communication by 15 open-weight models (3B-72B) on realFP, with replication under a single prompt pa",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-12",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -1432,105 +1532,6 @@
         "agentic",
         "reasoning",
         "embodied"
-      ]
-    },
-    {
-      "id": "2610.40379",
-      "source": "arxiv",
-      "title": "Agentic LLM reasoning in pediatric diabetes outcome prediction from multimodal medical records",
-      "url": "https://arxiv.org/abs/2610.40379",
-      "authors": [
-        "Daniel Palacios",
-        "Guantong Qi",
-        "Anna Kadi",
-        "Natali Borrego"
-      ],
-      "summary": "Large language model (LLM) agents are proposed for clinical prediction but are untested in pediatrics, where cohorts are small and outcomes are uncommon. Using records from 2,489 youth with type 2 diabetes (T2D) and 4,018 with type 1 diabetes (T1D), spanning structured data, note-derived social determinants and, in T1D, continuous glucose monitoring data, we predicted seven T2D outcomes, four also in T1D, at 24 months from 18 months of follow-up. CEDAR (Clinical Evidence-Driven Agent for Risk-prediction), an evidence-citing, self-auditing LLM pipeline, outperformed trained machine learning in ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-29",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.40927",
-      "source": "arxiv",
-      "title": "Agentic World Modeling for Agent Test-time Scaling without Environment Replica",
-      "url": "https://arxiv.org/abs/2610.40927",
-      "authors": [
-        "Wendi Li",
-        "Huseyin A. Inan",
-        "Wei-Ning Chen",
-        "Yanzhi Chen"
-      ],
-      "summary": "Test-time scaling (TTS) improves large language model agents by sampling and selecting among multiple candidate trajectories, but common realizations assume that these trajectories can be executed in parallel. This assumption breaks in realistic deployments, where enterprise workspaces and cloud services are shared and persistent, costly or infeasible to replicate, and actions may introduce irreversible side effects or cross-trajectory interference. Existing generative world models avoid direct execution, but typically compress environment state into a single prompt, limiting their ability to ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-29",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "world model",
-        "agent",
-        "agentic",
-        "language model",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2610.38145",
-      "source": "arxiv",
-      "title": "El Agente Quntur: Agentic Active-Space Selection for CASSCF",
-      "url": "https://arxiv.org/abs/2610.38145",
-      "authors": [
-        "Juan B. Pérez-Sánchez",
-        "Viviana Roman-Ventura",
-        "Olalla Nieto-Faza",
-        "Aiwei Yin"
-      ],
-      "summary": "Multireference calculations require time-consuming expert decisions about active spaces, state identity, and convergence. This study asks whether agents can make these decisions reliably. Using the El Agente Quntur multi-agent harness with GPT-5.6 Sol and GPT-5.6 Terra as its language models, agents study 32 fixed-geometry singlet excitations, detect missing active orbitals, compare excited states, and revise state assignments as calculations progress. Prompts specify equal-weight two-singlet state-averaged complete active space self-consistent field (CASSCF) calculations followed by strongly ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-28",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2611.14415",
-      "source": "arxiv",
-      "title": "Exploring Post-Hoc Disentanglement of Audio Foundation Models for Music Similarity",
-      "url": "https://arxiv.org/abs/2611.14415",
-      "authors": [
-        "Lucas de Souza Brandão",
-        "Gabriel da Costa Merlin",
-        "Diego Furtado Silva"
-      ],
-      "summary": "Audio foundation models like CLAP, MuQ, and MERT excel at capturing general musical similarity. On the other hand, their entangled latent spaces limit interpretability and fine-grained attribute control. Conditional Similarity Networks (CSN) address this by pairing a backbone representation model with learned masks that gate the embedding space into attribute-specific subspaces. However, existing methods train the backbone from scratch, rather than leveraging pretrained foundation models. We instead present a systematic study of post-hoc disentanglement, adapting CSN to gate frozen pretrained ",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-11-10",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "foundation model",
-        "interpretability",
-        "interpret",
-        "rag"
       ]
     }
   ]

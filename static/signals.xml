@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 12 Nov 2026 20:43:24 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 13 Nov 2026 20:25:16 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -78,6 +78,13 @@
       <description>3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion p... [Score: 10.5 | Flagged for: foundation model, agent, agentic, alignment, robot] Authors: Weichen Lyu, Chong Xia, et al.</description>
     </item>
     <item>
+      <title>Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</title>
+      <link>https://arxiv.org/abs/2611.16082</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.16082</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Turbulence modeling relies on human choices of closure form, physical inputs, and tunable parameters. Training closures a posteriori is efficient only with gradients through long chaotic rollouts, which few solvers provide. Most a posteriori approaches therefore resort to gradient-free optimization,... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, autonomous, llm] Authors: Yi Liu, Xiantao Fan, et al.</description>
+    </item>
+    <item>
       <title>Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning</title>
       <link>https://arxiv.org/abs/2611.14419</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.14419</guid>
@@ -111,6 +118,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.21055</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       <description>Recursive self-improvement, in which AI systems build stronger AI systems, is one promising route to superintelligence. We study a weaker form that can be measured today: frontier agents post-training a small raw base model with public data, as a test of their research potential. We build Athanor, a... [Score: 9.5 | Flagged for: superintelligence, recursive self-improvement, agent, autonomous, autonomy] Authors: Yufa Zhou, Yichen Wang, et al.</description>
+    </item>
+    <item>
+      <title>Experience-Handoff Reinforcement Learning for Recursive Self-Improvement</title>
+      <link>https://arxiv.org/abs/2611.16409</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.16409</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>It is common to train Large Language Models (LLMs) for agentic tasks with Reinforcement Learning (RL) from scalar rewards. However, this throws away the fine-grained information about the environment that the agent experienced during the trial (e.g., error logs). To utilize this rich information, re... [Score: 9.0 | Flagged for: recursive self-improvement, agent, agentic, llm, language model] Authors: Doyoung Kim, Byeongguk Jeon, et al.</description>
     </item>
     <item>
       <title>ProofCoder: Continuous Reasoning for Automated Software Verification</title>
@@ -169,6 +183,20 @@
       <description>Reasoning over long document contexts remains a challenge for large language models (LLMs). Standard retrieval methods are inherently reactive, bottlenecking agents with complex, cross-document reasoning at inference time, while precomputed structures like knowledge graphs often fall short because t... [Score: 9.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Anikait Singh, Teresa Zhang, et al.</description>
     </item>
     <item>
+      <title>SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models</title>
+      <link>https://arxiv.org/abs/2611.17110</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.17110</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Embodied foundation models hinge on diverse robot interaction data, which are costly to collect. Egocentric human videos offer a complementary source of experience, and latent action models (LAMs) provide a popular means of leveraging these videos for policy supervision. Compared with world-action m... [Score: 8.5 | Flagged for: agi, foundation model, embodied, robot, scaling] Authors: Jiachun Jin, Zetong Zhou, et al.</description>
+    </item>
+    <item>
+      <title>Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation</title>
+      <link>https://arxiv.org/abs/2611.16315</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.16315</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct tes... [Score: 8.5 | Flagged for: agi, agent, multi-agent, language model, rag] Authors: Carolina Fortuna, Blaz Bertalanic</description>
+    </item>
+    <item>
       <title>Selective Cooperative Perception via Blind Spot Reasoning and Agentic Dialogue with Vision-Language Models</title>
       <link>https://arxiv.org/abs/2611.10819</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.10819</guid>
@@ -188,34 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
       <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
-    </item>
-    <item>
-      <title>Task-Efficient Agent Evaluation Using Cached Traces</title>
-      <link>https://arxiv.org/abs/2611.06803</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.06803</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each ... [Score: 8.5 | Flagged for: agi, agent, agentic, llm, rag] Authors: Ben Johnson, Hayden Helm</description>
-    </item>
-    <item>
-      <title>Interactive World Simulation with Cosmos for Physical AI</title>
-      <link>https://arxiv.org/abs/2611.06627</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.06627</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>We present a shared framework that adapts Cosmos world foundation models for real-time interactive world simulation in Physical AI. By streaming visual observations in response to actions and scene controls, the framework enables users and embodied agents to interact with evolving virtual environmen... [Score: 8.5 | Flagged for: foundation model, agent, autonomous, embodied, robot] Authors:  NVIDIA,  :, et al.</description>
-    </item>
-    <item>
-      <title>Addition by Subtraction: Toward Mitigating Fragile Safety Alignment in Large Language Models</title>
-      <link>https://arxiv.org/abs/2611.06553</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.06553</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) undergo safety alignment to prevent harmful generations, yet they remain vulnerable to jailbreak attacks. Recent work reveals a deeper structural weakness: safety alignment can be highly sparse, such that pruning a small number of safety-critical neurons or ablating a si... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Hamid Dashtbani, Alexandra Dmitrienko</description>
-    </item>
-    <item>
-      <title>Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action</title>
-      <link>https://arxiv.org/abs/2611.05058</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.05058</guid>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Recent multimodal language models can reason directly about robot scenes, but it is unclear whether they need to repeatedly reinterpret raw visual observations at every step of an interaction. We propose shifting routine spatial reasoning from images to text and symbols through a 3D geometric abstra... [Score: 8.5 | Flagged for: agent, agentic, reasoning, interpret, robot] Authors: Yihang Liu, Yiming Chen, et al.</description>
     </item>
   </channel>
 </rss>

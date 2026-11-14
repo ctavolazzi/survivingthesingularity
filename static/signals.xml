@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Fri, 13 Nov 2026 20:25:16 +0000</lastBuildDate>
+   <lastBuildDate>Sat, 14 Nov 2026 18:41:52 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -69,13 +69,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.22344</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       <description>Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a pr... [Score: 10.5 | Flagged for: recursive self-improvement, agent, agentic, autonomous, llm] Authors: Shangheng Du, Jinxin Shi, et al.</description>
-    </item>
-    <item>
-      <title>PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition</title>
-      <link>https://arxiv.org/abs/2610.20560</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.20560</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-      <description>3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion p... [Score: 10.5 | Flagged for: foundation model, agent, agentic, alignment, robot] Authors: Weichen Lyu, Chong Xia, et al.</description>
     </item>
     <item>
       <title>Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
       <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
+    </item>
+    <item>
+      <title>Task-Efficient Agent Evaluation Using Cached Traces</title>
+      <link>https://arxiv.org/abs/2611.06803</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.06803</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each ... [Score: 8.5 | Flagged for: agi, agent, agentic, llm, rag] Authors: Ben Johnson, Hayden Helm</description>
     </item>
   </channel>
 </rss>

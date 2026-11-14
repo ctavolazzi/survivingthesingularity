@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T20:25:16Z",
+  "generated_at": "2026-11-14T18:41:52Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -248,33 +248,6 @@
         "autonomous",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2610.20560",
-      "source": "arxiv",
-      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
-      "url": "https://arxiv.org/abs/2610.20560",
-      "authors": [
-        "Weichen Lyu",
-        "Chong Xia",
-        "Mingyu Dong",
-        "Long Xu"
-      ],
-      "summary": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive constru",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-14",
-      "score": 10.5,
-      "raw_score": 21,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "alignment",
-        "robot",
-        "language model",
-        "rag"
       ]
     },
     {
@@ -1261,80 +1234,6 @@
       ]
     },
     {
-      "id": "2610.20437",
-      "source": "arxiv",
-      "title": "From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)",
-      "url": "https://arxiv.org/abs/2610.20437",
-      "authors": [
-        "Alicia Colmenero-Fernández"
-      ],
-      "summary": "Mid-2026 reporting on autonomous AI evaluation incidents claimed that frontier large language model (LLM) agents escaped server containment through emergent coordination and cloud infrastructure attacks. This paper contextualizes those claims through forensic analysis and containerized recreation of both the Highly Persistent Internal Model (HPIM) training-case conditions and the Phase One privilege escalation targeting internal package repositories during OpenAI's ExploitGym evaluations. We recreate the configuration of the OpenAI-provided training example and reproduce the cryptographic veri",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-14",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "rlhf",
-        "llm",
-        "language model",
-        "emergent"
-      ]
-    },
-    {
-      "id": "2610.20200",
-      "source": "arxiv",
-      "title": "Drivers of LLM Consensus Formation Under Competing Incentives: A Simulation Study",
-      "url": "https://arxiv.org/abs/2610.20200",
-      "authors": [
-        "Isabel Jones",
-        "Matthew Edwards",
-        "Janina A. Hoffmann"
-      ],
-      "summary": "Large Language Models (LLMs) are increasingly deployed in multi-agent environments that produce unanimous agreement, both in intended interactions that need coordination and in unintended emergent interactions. Consequently, understanding how LLMs with competing incentives reach consensus is crucial to better interpret and design LLM collectives. We introduce an evaluation, based on the Network Consensus game, to assess the mechanisms driving this process. Here, a network of agents must agree on one of two colours to receive a payoff, but agents are offered different payoffs for the agreed col",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-14",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "interpret",
-        "llm",
-        "language model",
-        "emergent"
-      ]
-    },
-    {
-      "id": "2610.20442",
-      "source": "arxiv",
-      "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
-      "url": "https://arxiv.org/abs/2610.20442",
-      "authors": [
-        "Chonghan Qin",
-        "Dongming Wu",
-        "Kaituo Feng",
-        "Jiaxu Wang"
-      ],
-      "summary": "Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-14",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "autonomous",
-        "planning",
-        "robot"
-      ]
-    },
-    {
       "id": "2611.13196",
       "source": "arxiv",
       "title": "From Process Models to Composable Agentic Workflows: Combining BPMN, Agents and Enterprise Knowledge",
@@ -1532,6 +1431,99 @@
         "agentic",
         "reasoning",
         "embodied"
+      ]
+    },
+    {
+      "id": "2611.14242",
+      "source": "arxiv",
+      "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
+      "url": "https://arxiv.org/abs/2611.14242",
+      "authors": [
+        "Javier Hernandez",
+        "Andrew D. Wilson"
+      ],
+      "summary": "As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordination, perspective-taking, and spatial reasoning). GPT-4o agent pairs succeeded in 60.5% of conversations (N=400, 100 per task), with task-level variation (34-80%) reflecting distinct collaborative demands. From these conversations, we derived the data-driven PAC taxonomy: six failure",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-10",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.12269",
+      "source": "arxiv",
+      "title": "Agent4Crypto: A Dual-Reflective and Market-Feedback-Aligned LLM-Based Multi-Agent System for Cryptocurrency Trading",
+      "url": "https://arxiv.org/abs/2611.12269",
+      "authors": [
+        "Guangyan Gan",
+        "Jiahao Li",
+        "Jiashun Wang",
+        "Lin William Cong"
+      ],
+      "summary": "Cryptocurrency markets provide a natural testbed for autonomous AI agents because they are digital-native, high-frequency, and machine-speed environments, yet existing methods often struggle with non-stationary market regimes, opaque decisions, and fixed aggregation rules. In this paper, we propose Agent4Crypto, a dual-reflective and market-feedback-aligned multi-agent system. The framework coordinates specialized agents for data collection, analysis, risk assessment, reflection, and trading, synthesizing heterogeneous signals from prices, indicators, news, and charts in an interpretable decis",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-09",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "interpret",
+        "llm"
+      ]
+    },
+    {
+      "id": "2611.11714",
+      "source": "arxiv",
+      "title": "Steering Emergent Behavior in Multi-Agent LLM Systems via Information Networks",
+      "url": "https://arxiv.org/abs/2611.11714",
+      "authors": [
+        "Sepehr Ilami",
+        "Babak Heydari"
+      ],
+      "summary": "Large language model (LLM) agents increasingly operate in groups, each pursuing an individual objective while jointly determining system performance. If an operator controls which agent observes which other agent, but not their payoffs or messages, how should observations be structured to raise collective welfare? We make the information network (who observes whom) a design object, decoupled from the fixed interaction network over which agents act. Ten identical LLM agents play repeated group-decision games; by default each observes only an anonymous summary of the group's previous-round outco",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-09",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "emergent"
+      ]
+    },
+    {
+      "id": "2611.17020",
+      "source": "arxiv",
+      "title": "Maximizing LLM Utility While Managing LLM Fallibility",
+      "url": "https://arxiv.org/abs/2611.17020",
+      "authors": [
+        "Ekta U. Samani",
+        "Christopher G. Atkeson"
+      ],
+      "summary": "Large language models (LLMs) can supply autonomous systems with plans, predictions, and judgments, but these contributions are sometimes wrong. This review asks how a system can maximize an LLM's utility while managing its fallibility. Our answer is to adapt the system's reliance on the LLM as evidence about the LLM's performance accumulates. Systems built from imperfect components, such as noisy sensors and faulty software, have long worked in this way, and the classical methods they use can be applied to LLM-based systems as well. A system can change its reliance on an LLM in several ways, d",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-12",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "autonomous",
+        "llm",
+        "language model"
       ]
     }
   ]

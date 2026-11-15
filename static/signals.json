@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:41:52Z",
+  "generated_at": "2026-11-15T19:18:14Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -225,32 +225,6 @@
       ]
     },
     {
-      "id": "2610.22344",
-      "source": "arxiv",
-      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
-      "url": "https://arxiv.org/abs/2610.22344",
-      "authors": [
-        "Shangheng Du",
-        "Jinxin Shi",
-        "Shuaiyu Zhang",
-        "Yiming Wu"
-      ],
-      "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward this pursuit through complex orchestration that manages long-horizon experimentation, while recent MLE systems adopt model-directed interaction, allowing models to autonomously organize experiments and adapt optimization strategies based on execution feedback. However, feedback f",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-15",
-      "score": 10.5,
-      "raw_score": 21,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "agent",
-        "agentic",
-        "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2611.16082",
       "source": "arxiv",
       "title": "Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD",
@@ -378,31 +352,6 @@
         "robotics",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2610.21055",
-      "source": "arxiv",
-      "title": "Athanor: An Agent-Native System for Autonomous Post-Training Research",
-      "url": "https://arxiv.org/abs/2610.21055",
-      "authors": [
-        "Yufa Zhou",
-        "Yichen Wang",
-        "Jiakun Fan",
-        "Ziqi Shu"
-      ],
-      "summary": "Recursive self-improvement, in which AI systems build stronger AI systems, is one promising route to superintelligence. We study a weaker form that can be measured today: frontier agents post-training a small raw base model with public data, as a test of their research potential. We build Athanor, an open agent-native system for autonomous post-training research (AutoPostTrain) on real GPUs. We give the agents full research autonomy, low-friction engineering tools, and efficient starter code. The agents carry out the research themselves: they read datasets and evaluation results, build their t",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-15",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "superintelligence",
-        "recursive self-improvement",
-        "agent",
-        "autonomous",
-        "autonomy"
       ]
     },
     {
@@ -606,32 +555,6 @@
         "multi-agent",
         "agentic",
         "rag"
-      ]
-    },
-    {
-      "id": "2610.22273",
-      "source": "arxiv",
-      "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries",
-      "url": "https://arxiv.org/abs/2610.22273",
-      "authors": [
-        "Anikait Singh",
-        "Teresa Zhang",
-        "Yoonho Lee",
-        "Roshen Sanjay Nair"
-      ],
-      "summary": "Reasoning over long document contexts remains a challenge for large language models (LLMs). Standard retrieval methods are inherently reactive, bottlenecking agents with complex, cross-document reasoning at inference time, while precomputed structures like knowledge graphs often fall short because they rely on rigid heuristics. Instead, can we allow agents to perform anticipatory directed curation: learning to proactively reorganize unstructured corpora prior to inference to efficiently serve diverse future queries. We build on a key asymmetry in modern agentic harnesses (e.g., Claude Code): w",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-15",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval"
       ]
     },
     {
@@ -1524,6 +1447,77 @@
         "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2611.16221",
+      "source": "arxiv",
+      "title": "BWM-Forge: Agentic World Programming for Embodied Intelligence",
+      "url": "https://arxiv.org/abs/2611.16221",
+      "authors": [
+        " BWM Team"
+      ],
+      "summary": "Generating diverse robot videos requires control over scene geometry, robot motion, and viewpoints. End-to-end video generation offers limited direct access to these variables, making targeted edits and reuse across tasks difficult. We present BWM-Forge, a code-driven framework for controllable video generation in robotics. Given robot assets and a task description, the framework accepts an initial image, an image with motion data, or a human demonstration video. A coding agent constructs editable Blender scene programs that specify objects, robot motion, and cameras. The resulting proxy video",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-12",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "embodied",
+        "robot",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2611.14846",
+      "source": "arxiv",
+      "title": "Open Challenges and Opportunities in Human-Agent Systems",
+      "url": "https://arxiv.org/abs/2611.14846",
+      "authors": [
+        "Reuth Mirsky",
+        "Sarath Sreedharan",
+        "Nitay Alon",
+        "Stefan Sarkadi"
+      ],
+      "summary": "Agentic AI systems increasingly undertake extended tasks and act on people's behalf, making human-agent interaction central to their effectiveness. Successful interaction requires understanding human perspectives, coordinating complementary capabilities, and maintaining productive relationships within socio-technical environments. This paper examines how foundations developed by the Autonomous Agents and Multi-Agent Systems (AAMAS) community inform these demands. We consider interactions ranging from individual human-agent partnerships to teams and larger groups, where participants differ in t",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-10",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomous"
+      ]
+    },
+    {
+      "id": "2611.14492",
+      "source": "arxiv",
+      "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
+      "url": "https://arxiv.org/abs/2611.14492",
+      "authors": [
+        "Kaiyuan Hou",
+        "Yang Ping Kuo",
+        "Indranil Bhattacharya",
+        "Rohith Nama"
+      ],
+      "summary": "Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrace, which turns an SOP and a few logged agent runs into a reusable workflow in which code, not an LLM, selects the next step. The agent's reasoning, the explanation it writes with each tool call, often states why it took an action; the tool calls alone do not. ReTrace extracts the condition behind ea",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-10",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "llm",
+        "language model",
+        "automation"
       ]
     }
   ]

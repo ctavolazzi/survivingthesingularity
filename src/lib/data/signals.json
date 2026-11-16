@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T19:18:14Z",
+  "generated_at": "2026-11-16T22:49:08Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -88,6 +88,34 @@
         "embodied",
         "robot",
         "scaling"
+      ]
+    },
+    {
+      "id": "2611.18359",
+      "source": "arxiv",
+      "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+      "url": "https://arxiv.org/abs/2611.18359",
+      "authors": [
+        "Grid Robotics",
+        " :",
+        "Qingfeng Lan",
+        "Duo Li"
+      ],
+      "summary": "The release of GPT-6 Astra marks the emergence of a new paradigm in robotics: agentic robotics. Within weeks, frontier models with agentic harnesses matched or exceeded task-specific policies on many embodied benchmarks. Instead of training a dedicated policy for each family of tasks, an agentic robotic system applies a foundation model to open-world embodied tasks. It operates in a closed loop: observing the environment, interpreting user intent, reasoning about the task, invoking skills and tools, verifying outcomes, and adapting its strategy. Despite these advances, the community has yet to",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-13",
+      "score": 11.0,
+      "raw_score": 22,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "reasoning",
+        "interpret",
+        "embodied",
+        "robot",
+        "robotics"
       ]
     },
     {
@@ -193,33 +221,6 @@
         "tool-use",
         "reasoning",
         "interpret",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.23599",
-      "source": "arxiv",
-      "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents",
-      "url": "https://arxiv.org/abs/2610.23599",
-      "authors": [
-        "Yewei Zhao",
-        "Derong Xu",
-        "Wei Chen",
-        "Yin Xu"
-      ],
-      "summary": "Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skill-evolution methods largely organize knowledge around skill artifacts, overlooking the functional heterogeneity within individual skills and its implications for knowledge maintenance and use. Inspired by cognitive science, we propose Cognitive Differentiation in Skill Evolution (CDSE), which evolve",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-16",
-      "score": 10.5,
-      "raw_score": 21,
-      "matched_keywords": [
-        "self-improving",
-        "agent",
-        "tool use",
-        "planning",
-        "reasoning",
         "llm",
         "language model"
       ]
@@ -350,6 +351,32 @@
         "embodied",
         "robot",
         "robotics",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.18514",
+      "source": "arxiv",
+      "title": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
+      "url": "https://arxiv.org/abs/2611.18514",
+      "authors": [
+        "Mohamed Aghzal",
+        "Mor Geva",
+        "Gregory J. Stein",
+        "Ziyu Yao"
+      ],
+      "summary": "Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analyzes to Qwen2.5-7B-Instruct as it interacts with live websites. We find that a linear probe trained o",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-13",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "interpretability",
+        "interpret",
         "llm",
         "language model"
       ]
@@ -569,8 +596,8 @@
         "Xiao Yang"
       ],
       "summary": "Embodied foundation models hinge on diverse robot interaction data, which are costly to collect. Egocentric human videos offer a complementary source of experience, and latent action models (LAMs) provide a popular means of leveraging these videos for policy supervision. Compared with world-action models (WAMs), LAMs can offer greater training efficiency and potentially lower inference costs by avoiding explicit pixel prediction during policy learning and execution. However, most existing LAMs learn latent actions solely through video reconstruction, which can cause their representations to cl",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.RO",
+      "tag": "Robotics",
       "published_at": "2026-11-12",
       "score": 8.5,
       "raw_score": 17,
@@ -604,6 +631,33 @@
         "multi-agent",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.17549",
+      "source": "arxiv",
+      "title": "Talk to Act: A Synthetic Multi-Turn Dialogue Benchmark for Human Intent Extraction and Action Planning in Robotics",
+      "url": "https://arxiv.org/abs/2611.17549",
+      "authors": [
+        "Deepu Krishnareddy",
+        "Mohammad Haziq Khan",
+        "Michael Danner",
+        "Matthias Rätsch"
+      ],
+      "summary": "Multi-turn conversational human-robot interaction (HRI) continues to be a challenging problem in robotics, as many existing systems rely on rigid, command-driven interfaces that can be unintuitive for users. Recent advances in Large Language Models (LLMs) provide a promising direction, given their ability to process natural language, generate structured outputs, and support tool-based reasoning, all of which are relevant for interpreting user intent in robotic settings. However, progress in this area is constrained by the limited availability of datasets and benchmarks that capture the nuances",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-12",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "planning",
+        "reasoning",
+        "interpret",
+        "robot",
+        "robotics",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1132,28 +1186,28 @@
       ]
     },
     {
-      "id": "2610.23334",
+      "id": "2611.18484",
       "source": "arxiv",
-      "title": "LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence",
-      "url": "https://arxiv.org/abs/2610.23334",
+      "title": "From AI-Enabled Remote Patient Monitoring Toward Agentic Robotics: Embodiment, Governance, and Care Integration",
+      "url": "https://arxiv.org/abs/2611.18484",
       "authors": [
-        "Jiajun Cao",
-        "Kai Tang",
-        "Bohua Zhang",
-        "Zezhong Qian"
+        "Ivana Ragusa",
+        "Lorenzo Guiducci",
+        "Filippo Cavallo"
       ],
-      "summary": "World-action models jointly predict actions and future world states, but long-horizon manipulation further requires language reasoning to plan subtask objectives, assess execution progress, and guide action selection. We present LAW, a closed-loop VLM--WAM framework that unifies language reasoning, action generation, and world modeling through semantic subtask progress. Within the LAW agent, a hybrid-expert vision-language model plans the remaining subtasks, estimates the values of and fuses actions proposed by a world-action model, and asynchronously assesses execution status to support conti",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-16",
-      "score": 8.5,
-      "raw_score": 17,
+      "summary": "AI-enabled remote patient monitoring is evolving beyond passive data collection toward agentic AI systems that interpret patient states, coordinate care, and initiate action across domestic and clinical settings. This structured scoping review finds that mature agentic care has not yet emerged: Most systems remain human led, while stronger decision-action coupling and embodied AI remain largely confined to prototypes and pilots. Healthcare robotics makes the transition from monitoring to action especially visible by translating AI-generated recommendations and decisions into speech, movement, ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-13",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
-        "world model",
         "agent",
         "agentic",
-        "reasoning",
-        "language model"
+        "interpret",
+        "embodied",
+        "robot",
+        "robotics"
       ]
     },
     {
@@ -1357,6 +1411,31 @@
       ]
     },
     {
+      "id": "2611.18176",
+      "source": "arxiv",
+      "title": "ESI: An Embodied Self-Improvement Flywheel for LLM-VLA Agents",
+      "url": "https://arxiv.org/abs/2611.18176",
+      "authors": [
+        "Yundi Cai",
+        "Zihan Wang",
+        "Chenxi Han",
+        "Yi Cheng"
+      ],
+      "summary": "Independently pretrained language models and vision-language-action (VLA) policies provide complementary building blocks for embodied agents, but connecting them does not automatically produce coordinated behavior. The VLA may generate actions that diverge from the LLM's intended subtask and, upon regaining control after a correction, undo the promising state restored by the LLM. We introduce ESI (Embodied Self-Improvement), an automated flywheel that uses environmental interaction to align reasoning and action. ESI treats the modular agent as the unit of post-training, repeatedly refining the",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-13",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "embodied",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.14242",
       "source": "arxiv",
       "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
@@ -1428,96 +1507,27 @@
       ]
     },
     {
-      "id": "2611.17020",
+      "id": "2611.18140",
       "source": "arxiv",
-      "title": "Maximizing LLM Utility While Managing LLM Fallibility",
-      "url": "https://arxiv.org/abs/2611.17020",
+      "title": "Large Language Model-Empowered Intelligent Agent for Adaptive Fast-Charging Control of Lithium-Ion Batteries",
+      "url": "https://arxiv.org/abs/2611.18140",
       "authors": [
-        "Ekta U. Samani",
-        "Christopher G. Atkeson"
+        "Joey Chan",
+        "Haoyu Pan",
+        "Zhen Chen",
+        "ErShun Pan"
       ],
-      "summary": "Large language models (LLMs) can supply autonomous systems with plans, predictions, and judgments, but these contributions are sometimes wrong. This review asks how a system can maximize an LLM's utility while managing its fallibility. Our answer is to adapt the system's reliance on the LLM as evidence about the LLM's performance accumulates. Systems built from imperfect components, such as noisy sensors and faulty software, have long worked in this way, and the classical methods they use can be applied to LLM-based systems as well. A system can change its reliance on an LLM in several ways, d",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-12",
+      "summary": "Fast charging of lithium-ion batteries is a multi-objective control problem that requires reducing charging time and sustaining high energy throughput while suppressing accelerated degradation and safety-critical electrochemical reactions. Conventional protocols are easy to implement but have limited ability to adapt to variations in battery chemistry, operating conditions, and aging state. Model-based optimization and conventional data-driven control often require accurate models, costly iterative search, or task-specific policies. We develop a large language model (LLM)-empowered intelligent",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-13",
       "score": 7.0,
       "raw_score": 14,
       "matched_keywords": [
         "agi",
-        "autonomous",
+        "agent",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2611.16221",
-      "source": "arxiv",
-      "title": "BWM-Forge: Agentic World Programming for Embodied Intelligence",
-      "url": "https://arxiv.org/abs/2611.16221",
-      "authors": [
-        " BWM Team"
-      ],
-      "summary": "Generating diverse robot videos requires control over scene geometry, robot motion, and viewpoints. End-to-end video generation offers limited direct access to these variables, making targeted edits and reuse across tasks difficult. We present BWM-Forge, a code-driven framework for controllable video generation in robotics. Given robot assets and a task description, the framework accepts an initial image, an image with motion data, or a human demonstration video. A coding agent constructs editable Blender scene programs that specify objects, robot motion, and cameras. The resulting proxy video",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-12",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "embodied",
-        "robot",
-        "robotics"
-      ]
-    },
-    {
-      "id": "2611.14846",
-      "source": "arxiv",
-      "title": "Open Challenges and Opportunities in Human-Agent Systems",
-      "url": "https://arxiv.org/abs/2611.14846",
-      "authors": [
-        "Reuth Mirsky",
-        "Sarath Sreedharan",
-        "Nitay Alon",
-        "Stefan Sarkadi"
-      ],
-      "summary": "Agentic AI systems increasingly undertake extended tasks and act on people's behalf, making human-agent interaction central to their effectiveness. Successful interaction requires understanding human perspectives, coordinating complementary capabilities, and maintaining productive relationships within socio-technical environments. This paper examines how foundations developed by the Autonomous Agents and Multi-Agent Systems (AAMAS) community inform these demands. We consider interactions ranging from individual human-agent partnerships to teams and larger groups, where participants differ in t",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-10",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous"
-      ]
-    },
-    {
-      "id": "2611.14492",
-      "source": "arxiv",
-      "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
-      "url": "https://arxiv.org/abs/2611.14492",
-      "authors": [
-        "Kaiyuan Hou",
-        "Yang Ping Kuo",
-        "Indranil Bhattacharya",
-        "Rohith Nama"
-      ],
-      "summary": "Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrace, which turns an SOP and a few logged agent runs into a reusable workflow in which code, not an LLM, selects the next step. The agent's reasoning, the explanation it writes with each tool call, often states why it took an action; the tool calls alone do not. ReTrace extracts the condition behind ea",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-10",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "llm",
-        "language model",
-        "automation"
       ]
     }
   ]

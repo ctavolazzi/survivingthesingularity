@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 15 Nov 2026 19:18:14 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 16 Nov 2026 22:49:08 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -27,6 +27,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.09124</guid>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
       <description>Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execut... [Score: 12.0 | Flagged for: foundation model, agent, multi-agent, agentic, autonomy] Authors: Chao Liang, Ke Chen, et al.</description>
+    </item>
+    <item>
+      <title>Envisioning Agentic Robotics: A New Era of Robotic Systems</title>
+      <link>https://arxiv.org/abs/2611.18359</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.18359</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <description>The release of GPT-6 Astra marks the emergence of a new paradigm in robotics: agentic robotics. Within weeks, frontier models with agentic harnesses matched or exceeded task-specific policies on many embodied benchmarks. Instead of training a dedicated policy for each family of tasks, an agentic rob... [Score: 11.0 | Flagged for: foundation model, agent, agentic, reasoning, interpret] Authors: Grid Robotics,  :, et al.</description>
     </item>
     <item>
       <title>LEASH: Stay Safe in Agentic Robotics</title>
@@ -55,13 +62,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.26860</guid>
       <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
       <description>Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only m... [Score: 10.5 | Flagged for: agent, agentic, tool-use, reasoning, interpret] Authors: Yu Zhou, Cheng-Fu Yang, et al.</description>
-    </item>
-    <item>
-      <title>From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents</title>
-      <link>https://arxiv.org/abs/2610.23599</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.23599</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skil... [Score: 10.5 | Flagged for: self-improving, agent, tool use, planning, reasoning] Authors: Yewei Zhao, Derong Xu, et al.</description>
     </item>
     <item>
       <title>Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</title>
@@ -97,6 +97,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.27865</guid>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <description>Recent studies have explored the potential of multimodal large language models for robot control, yet the models' embodied capabilities remain insufficiently characterized across models, tasks, and execution settings. We conduct a multidimensional comparative evaluation on RoboColiseum across four t... [Score: 9.5 | Flagged for: agent, reasoning, embodied, robot, robotics] Authors: Da Huang, Jichao Wang, et al.</description>
+    </item>
+    <item>
+      <title>Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination</title>
+      <link>https://arxiv.org/abs/2611.18514</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.18514</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challen... [Score: 9.0 | Flagged for: agent, agentic, interpretability, interpret, llm] Authors: Mohamed Aghzal, Mor Geva, et al.</description>
     </item>
     <item>
       <title>Experience-Handoff Reinforcement Learning for Recursive Self-Improvement</title>
@@ -169,6 +176,13 @@
       <description>Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct tes... [Score: 8.5 | Flagged for: agi, agent, multi-agent, language model, rag] Authors: Carolina Fortuna, Blaz Bertalanic</description>
     </item>
     <item>
+      <title>Talk to Act: A Synthetic Multi-Turn Dialogue Benchmark for Human Intent Extraction and Action Planning in Robotics</title>
+      <link>https://arxiv.org/abs/2611.17549</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.17549</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Multi-turn conversational human-robot interaction (HRI) continues to be a challenging problem in robotics, as many existing systems rely on rigid, command-driven interfaces that can be unintuitive for users. Recent advances in Large Language Models (LLMs) provide a promising direction, given their a... [Score: 8.5 | Flagged for: planning, reasoning, interpret, robot, robotics] Authors: Deepu Krishnareddy, Mohammad Haziq Khan, et al.</description>
+    </item>
+    <item>
       <title>Selective Cooperative Perception via Blind Spot Reasoning and Agentic Dialogue with Vision-Language Models</title>
       <link>https://arxiv.org/abs/2611.10819</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.10819</guid>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.06627</guid>
       <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
       <description>We present a shared framework that adapts Cosmos world foundation models for real-time interactive world simulation in Physical AI. By streaming visual observations in response to actions and scene controls, the framework enables users and embodied agents to interact with evolving virtual environmen... [Score: 8.5 | Flagged for: foundation model, agent, autonomous, embodied, robot] Authors:  NVIDIA,  :, et al.</description>
-    </item>
-    <item>
-      <title>Addition by Subtraction: Toward Mitigating Fragile Safety Alignment in Large Language Models</title>
-      <link>https://arxiv.org/abs/2611.06553</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.06553</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) undergo safety alignment to prevent harmful generations, yet they remain vulnerable to jailbreak attacks. Recent work reveals a deeper structural weakness: safety alignment can be highly sparse, such that pruning a small number of safety-critical neurons or ablating a si... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Hamid Dashtbani, Alexandra Dmitrienko</description>
-    </item>
-    <item>
-      <title>Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action</title>
-      <link>https://arxiv.org/abs/2611.05058</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.05058</guid>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Recent multimodal language models can reason directly about robot scenes, but it is unclear whether they need to repeatedly reinterpret raw visual observations at every step of an interaction. We propose shifting routine spatial reasoning from images to text and symbols through a 3D geometric abstra... [Score: 8.5 | Flagged for: agent, agentic, reasoning, interpret, robot] Authors: Yihang Liu, Yiming Chen, et al.</description>
     </item>
   </channel>
 </rss>

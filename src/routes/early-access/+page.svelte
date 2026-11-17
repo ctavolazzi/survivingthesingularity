@@ -222,29 +222,37 @@
   </div>
 </section>
 
-<!-- ── CONTENT PREVIEW (the novel's own pictures) ── -->
+<!-- ── CONTENT PREVIEW (real machines) ──
+     CT, 2026-11-17: "move away from the purely AI generated imagery and bring
+     back the videos and real world examples. These sections capture people's
+     attention." The novel's own illustrations stay inside the reader; the sales
+     pages show photographs of machines that exist. -->
 <section class="ea-preview">
   <div class="ea-preview-inner">
-    <p class="ea-label">A look inside</p>
-    <h2 class="ea-preview-heading">A look inside the novel.</h2>
-    <p class="ea-preview-sub">{novel.opening}</p>
+    <p class="ea-label">The real world</p>
+    <h2 class="ea-preview-heading">The story is fiction. The machines are real.</h2>
+    <p class="ea-preview-sub">Robot arms, a robot that tends a garden bed, cars with no driver: the novel is built out of things that already work.</p>
 
     <div class="ea-image-grid">
       <div class="ea-img-cell ea-img-large">
-        <img src="/book-images/novel-p016.webp" alt="Four men at a bar. Three raise their glasses; the fourth sits at a laptop and does not." loading="lazy" decoding="async" />
-        <div class="ea-img-cap">The Bear Flag. Three glasses up.</div>
+        <img src="/book-images/ch02-factory-robots.webp" alt="Robot arms working on a factory line." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">Physical Automation</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/novel-p040.webp" alt="A man stands at an apartment window at dawn, a notebook open on the desk behind him." loading="lazy" decoding="async" />
-        <div class="ea-img-cap">The near end.</div>
+        <img src="/book-images/ch11-spot.webp" alt="Boston Dynamics Spot, a four-legged robot, walking a forest trail." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">Field Robotics</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/novel-p194.webp" alt="A woman with a wrist brace speaks at a microphone in a county meeting room." loading="lazy" decoding="async" />
-        <div class="ea-img-cap">Rosa, with a minute to spare.</div>
+        <img src="/book-images/ch12-farmbot.webp" alt="FarmBot, an open-source gantry robot, working a raised garden bed." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">Food Autonomy</div>
+      </div>
+      <div class="ea-img-cell">
+        <img src="/book-images/ch02-waymo.webp" alt="Waymo autonomous vehicle" loading="lazy" decoding="async" />
+        <div class="ea-img-cap">Autonomous Transport</div>
       </div>
       <div class="ea-img-cell ea-img-wide">
-        <img src="/book-images/novel-p115.webp" alt="A woman passes a bowl across a long plywood table to a man, with others eating around them." loading="lazy" decoding="async" />
-        <div class="ea-img-cap">Pass the beans.</div>
+        <img src="/book-images/ch01-atlas.webp" alt="Boston Dynamics Atlas, a humanoid robot." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">The New Era</div>
       </div>
     </div>
   </div>

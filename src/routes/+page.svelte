@@ -3,9 +3,11 @@
   import BookCover from '$lib/components/BookCover.svelte';
   import LiteYouTube from '$lib/components/LiteYouTube.svelte';
   // No offer prose is typed into this file. See src/lib/offer.js.
-  import { offer, evolution } from '$lib/offer';
+  import { offer } from '$lib/offer';
   import { novel, acts } from '$lib/novelActs.js';
   import { stance } from '$lib/stance.js';
+
+  export let data;
 
   let agiYears = '--';
   let agiDays = '---';
@@ -123,12 +125,11 @@
           The future<br><span class="headline-nowrap">isn't coming&hellip;</span>
           <em>It's here.</em>
         </h1>
-        <div class="hero-sub-stack">
-          <p class="hero-sub-line">A novel about AI, work, and what we owe each other when the machines arrive.</p>
-          <p class="hero-sub-line hero-sub-punch">Doom-scrolling is not a plan.</p>
-          <p class="hero-sub-line">{novel.opening}</p>
-          <p class="hero-sub-line">{stance.short}</p>
-        </div>
+        <!-- One promise. The novel's own first sentence is the hook; the last
+             line is the author's answer to the fear ($lib/stance.js). -->
+        <p class="hero-kicker">A novel by Christopher Tavolazzi</p>
+        <p class="hero-hook">{novel.opening}</p>
+        <p class="hero-hope">{stance.short}</p>
         <div class="hero-actions">
           <a href="/early-access" class="btn-primary">
             Preorder the Book: {offer.price}
@@ -136,7 +137,7 @@
               <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </a>
-          <a href="/sample" class="btn-ghost">Read a Free Sample</a>
+          <a href="/sample" class="btn-ghost">Read the First Chapter Free</a>
         </div>
       </div>
 
@@ -186,40 +187,6 @@
           </div>
         </div>
       </a>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="stat-strip" aria-label="By the numbers">
-    <div class="section-inner">
-      <div class="ss-grid reveal">
-        <div class="ss-item">
-          <span class="ss-label">Scale</span>
-          <div class="ss-figure"><span class="ss-num">300M</span></div>
-          <span class="ss-desc">full-time-job equivalents potentially exposed to automation by generative AI worldwide. Exposure is not a count of jobs lost.</span>
-          <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs, 2023 estimate</a>
-        </div>
-        <div class="ss-item">
-          <span class="ss-label">Speed</span>
-          <div class="ss-figure"><span class="ss-num">99%</span></div>
-          <span class="ss-desc">of surveyed executives expect AI-related headcount reductions affecting 1–20% of roles within two years. These are expectations, not measured job losses.</span>
-          <a href="https://www.mercer.com/en-gb/insights/talent-and-transformation/skill-based-talent-management/ai-and-early-career/" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Mercer, 2026 survey</a>
-        </div>
-        <div class="ss-item">
-          <span class="ss-label">Tools to explore</span>
-          <div class="ss-figure">
-            <span class="ss-num">Open</span>
-          </div>
-          <span class="ss-desc">robotics designs and training tools you can inspect. Low-cost experimental arms are not equivalent to industrial systems.</span>
-          <a href="https://github.com/huggingface/lerobot" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">LeRobot project and documentation</a>
-        </div>
-        <div class="ss-item">
-          <span class="ss-label">Food first</span>
-          <div class="ss-figure"><span class="ss-num">1</span></div>
-          <span class="ss-desc">place to start: <strong>make sure people eat, even when paid work changes.</strong></span>
-          <a href="/sample" class="ss-src ss-src-link">Explore the proposal</a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -278,16 +245,16 @@
     </div>
   </section>
 
-  <!-- HOPE: the turn. Everything above this is the scary part, and it stays.
-       This is the author's answer to it, in his words ($lib/stance.js). -->
+  <!-- HOPE: the turn. What comes before this is the scary part, kept short.
+       This is the author's answer to it, in his words ($lib/stance.js): name
+       the feeling, turn, one belief, one picture. The longer statement lives
+       on /about. -->
   <section class="hope-section" id="hope" aria-labelledby="hope-heading">
     <div class="hope-inner reveal">
-      <span class="section-label">{stance.label}</span>
+      <p class="hope-punch">Doom-scrolling is not a plan.</p>
       <p class="hope-ack">{stance.acknowledge}</p>
       <p class="hope-turn">{stance.turn}</p>
       <h2 id="hope-heading" class="hope-heading">{stance.heading}</h2>
-      <p class="hope-body">{stance.belief}</p>
-      <p class="hope-body">{stance.honest}</p>
       <p class="hope-body hope-landing">{stance.landing}</p>
 
       <figure class="hope-label">
@@ -298,13 +265,7 @@
         <figcaption>{stance.labelLine}</figcaption>
       </figure>
 
-      <p class="hope-body">{stance.moment}</p>
       <p class="hope-close">{stance.close}</p>
-      <div class="hope-actions">
-        <a href="/checklist" class="btn-primary">Get involved: start the checklist</a>
-        <a href="/sample" class="hope-link">Read the first chapter free</a>
-      </div>
-      <p class="hope-sign">Christopher Tavolazzi</p>
     </div>
   </section>
 
@@ -328,71 +289,98 @@
     </div>
   </section>
 
-  <!-- SHARED SURVIVAL -->
-  <section class="reality-section" aria-labelledby="shared-survival-heading">
-    <div class="reality-inner reveal">
-      <h2 id="shared-survival-heading" class="reality-heading">Losing your job shouldn't mean going hungry.</h2>
-      <p class="reality-intro">What if it all goes right? Machines are taking on more of the work we're paid to do. The novel follows one man and nineteen households trying to use them to make ordinary life more secure, starting with food. Money stays. It just stops being the ticket to staying alive.</p>
-      <div class="reality-cols">
-        <div class="reality-col">
-          <h3 class="reality-col-label">What is at stake</h3>
-          <ul class="reality-list">
-            <li>Food access tied to a paycheck</li>
-            <li>Control of useful equipment</li>
-            <li>Decisions about public resources</li>
-          </ul>
-        </div>
-        <div class="reality-col reality-col-action">
-          <h3 class="reality-col-label">Where you can act</h3>
-          <ul class="reality-list">
-            <li>Work with a local food provider on an unmet need</li>
-            <li>Help set ownership, repair, and access terms</li>
-            <li>Bring a concrete proposal to the body that can decide it</li>
-          </ul>
-        </div>
+  <!-- THE STORY. Moved up from the bottom of the page: a visitor is being
+       asked to buy a novel, so they meet it before the buy block. The passage
+       is cut from Chapter 0 at build time (+page.server.js), not retyped. -->
+  <section id="chapters" aria-labelledby="story-heading">
+    <div class="section-inner">
+      <div class="chapters-header reveal">
+        <span class="section-label">The Book</span>
+        <h2 class="section-heading" id="story-heading">It&rsquo;s a novel.</h2>
+        <p class="section-sub">{novel.premise}</p>
+      </div>
+
+      <figure class="story-excerpt reveal">
+        <figcaption class="story-excerpt-label">From Chapter 0, one week after he showed three realtors what the machine could do</figcaption>
+        <blockquote class="story-excerpt-text">{@html data.excerptHtml}</blockquote>
+        <a href="/sample" class="story-excerpt-link">Read the whole first chapter free <span aria-hidden="true">&rarr;</span></a>
+      </figure>
+
+      <div class="book-parts reveal reveal-d1">
+        {#each acts as act, i}
+          <div class="book-part book-part-{i + 1}">
+            <span class="book-part-num">{act.num}</span>
+            <h3 class="book-part-title">{act.title}</h3>
+            <p class="book-part-desc">{act.desc}</p>
+          </div>
+        {/each}
       </div>
     </div>
   </section>
 
-  <!-- MIDDLE -->
-  <section class="middle-section" aria-label="Why this matters">
+  <!-- CTA -->
+  <section id="act" aria-labelledby="act-heading">
     <div class="section-inner">
-      <div class="middle-inner">
+      <!-- Keep the purchase path visible even if a scroll animation stalls. -->
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>{offer.priceWords}.</em></h2>
 
-        <div class="middle-facts reveal">
-          <h2 class="middle-heading">The tools matter.<br>So do the terms.</h2>
-          <div class="middle-diagram" aria-hidden="true">
-            <svg viewBox="0 0 560 210" preserveAspectRatio="xMidYMid meet">
-              <line x1="30" y1="185" x2="540" y2="185" class="md-axis" />
-              <line x1="30" y1="15" x2="30" y2="185" class="md-axis" />
-              <path class="md-curve md-curve-up" d="M30,175 C220,168 400,120 540,25" fill="none" />
-              <path class="md-curve md-curve-down" d="M30,45 C220,60 380,150 540,178" fill="none" />
-              <text x="330" y="60" class="md-label md-label-up">what AI can do</text>
-              <text x="310" y="140" class="md-label md-label-down">what it costs</text>
-            </svg>
+        <div class="cta-cover">
+          <div class="product-cover-glow" aria-hidden="true"></div>
+          <BookCover width="min(220px, 60vw)" glow={false} />
+        </div>
+
+        <p class="cta-belief">{stance.belief}</p>
+        <p class="cta-sub">{offer.preorderPlain}</p>
+
+        <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
+          Preorder the Book: {offer.price}
+          <span class="btn-icon" aria-hidden="true">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <p class="cta-terms">{offer.sentence} {offer.windowClose} {offer.purchaseTerms}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GO DEEPER. Everything below the buy block is for the visitor who wants
+       the argument: the numbers, the timeline, the demonstrations, the
+       proposals. Nothing was removed from the page; it was moved below the
+       story so the page reads fear, hope, book, buy. -->
+  <div class="deeper-divider" aria-hidden="true"><span>Go deeper</span></div>
+
+  <!-- STATS -->
+  <section class="stat-strip" aria-label="By the numbers">
+    <div class="section-inner">
+      <div class="ss-grid reveal">
+        <div class="ss-item">
+          <span class="ss-label">Scale</span>
+          <div class="ss-figure"><span class="ss-num">300M</span></div>
+          <span class="ss-desc">full-time-job equivalents potentially exposed to automation by generative AI worldwide. Exposure is not a count of jobs lost.</span>
+          <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs, 2023 estimate</a>
+        </div>
+        <div class="ss-item">
+          <span class="ss-label">Speed</span>
+          <div class="ss-figure"><span class="ss-num">99%</span></div>
+          <span class="ss-desc">of surveyed executives expect AI-related headcount reductions affecting 1–20% of roles within two years. These are expectations, not measured job losses.</span>
+          <a href="https://www.mercer.com/en-gb/insights/talent-and-transformation/skill-based-talent-management/ai-and-early-career/" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Mercer, 2026 survey</a>
+        </div>
+        <div class="ss-item">
+          <span class="ss-label">Tools to explore</span>
+          <div class="ss-figure">
+            <span class="ss-num">Open</span>
           </div>
-          <p class="middle-fine">Conceptual illustration, not a measured data series.</p>
-          <ul class="middle-list">
-            <li>AI can change tasks, staffing, and bargaining power. The scale and timing of its effects depend on adoption, policy, and decisions people make.</li>
-            <li>Open-source robotics makes experimentation more accessible. Reliability, safety, maintenance, and total cost still need to be measured for each job.</li>
-            <li>Who owns a tool, who sets its terms, and who can use its output shape what it does for a community.</li>
-            <li>Find people working on food, useful equipment, or public decisions near you. Bring a skill, a question, or a concrete request.</li>
-          </ul>
+          <span class="ss-desc">robotics designs and training tools you can inspect. Low-cost experimental arms are not equivalent to industrial systems.</span>
+          <a href="https://github.com/huggingface/lerobot" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">LeRobot project and documentation</a>
         </div>
-
-        <div class="middle-offer reveal reveal-d1">
-          <p class="middle-offer-label">Start here</p>
-          <ul class="middle-offer-list">
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The novel: the current draft, every chapter, readable now</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>A free sample: the first chapter, no email needed</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The readiness checklist: concrete moves, ordered by impact</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The Precedent File: {offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed</li>
-          </ul>
-          <a href="/early-access" class="middle-btn">Preorder the book: {offer.price}</a>
-          <p class="middle-fine">One-time. When the preorder window closes, this price is gone.</p>
-          <p class="middle-fine middle-why">{offer.preorderPlain}</p>
+        <div class="ss-item">
+          <span class="ss-label">Food first</span>
+          <div class="ss-figure"><span class="ss-num">1</span></div>
+          <span class="ss-desc">place to start: <strong>make sure people eat, even when paid work changes.</strong></span>
+          <a href="/sample" class="ss-src ss-src-link">Explore the proposal</a>
         </div>
-
       </div>
     </div>
   </section>
@@ -496,54 +484,71 @@
     </div>
   </section>
 
-  <!-- BOOK STRUCTURE -->
-  <section id="chapters" aria-label="What's in the book">
-    <div class="section-inner">
-      <div class="chapters-header reveal">
-        <span class="section-label">The Book</span>
-        <h2 class="section-heading">A novel in four acts.</h2>
-        <p class="section-sub">{novel.premise}</p>
+  <!-- SHARED SURVIVAL -->
+  <section class="reality-section" aria-labelledby="shared-survival-heading">
+    <div class="reality-inner reveal">
+      <h2 id="shared-survival-heading" class="reality-heading">Losing your job shouldn't mean going hungry.</h2>
+      <p class="reality-intro">What if it all goes right? Machines are taking on more of the work we're paid to do. The novel follows one man and nineteen households trying to use them to make ordinary life more secure, starting with food. Money stays. It just stops being the ticket to staying alive.</p>
+      <div class="reality-cols">
+        <div class="reality-col">
+          <h3 class="reality-col-label">What is at stake</h3>
+          <ul class="reality-list">
+            <li>Food access tied to a paycheck</li>
+            <li>Control of useful equipment</li>
+            <li>Decisions about public resources</li>
+          </ul>
+        </div>
+        <div class="reality-col reality-col-action">
+          <h3 class="reality-col-label">Where you can act</h3>
+          <ul class="reality-list">
+            <li>Work with a local food provider on an unmet need</li>
+            <li>Help set ownership, repair, and access terms</li>
+            <li>Bring a concrete proposal to the body that can decide it</li>
+          </ul>
+        </div>
       </div>
-      <div class="book-parts reveal reveal-d1">
-        {#each acts as act, i}
-          <div class="book-part book-part-{i + 1}">
-            <span class="book-part-num">{act.num}</span>
-            <h3 class="book-part-title">{act.title}</h3>
-            <p class="book-part-sub">{act.range}</p>
-            <p class="book-part-desc">{act.desc}</p>
-          </div>
-        {/each}
-      </div>
-      <p class="book-change reveal">
-        <strong>{evolution.heading}.</strong> {evolution.story} {evolution.now}
-        <a href="/about#how-it-changed">What that means if you already preordered</a>.
-      </p>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="act" aria-labelledby="act-heading">
+  <!-- MIDDLE -->
+  <section class="middle-section" aria-label="Why this matters">
     <div class="section-inner">
-      <!-- Keep the purchase path visible even if a scroll animation stalls. -->
-      <div class="cta-inner">
-        <div class="cta-glow" aria-hidden="true"></div>
-        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>{offer.priceWords}.</em></h2>
+      <div class="middle-inner">
 
-        <div class="cta-cover">
-          <div class="product-cover-glow" aria-hidden="true"></div>
-          <BookCover width="min(220px, 60vw)" glow={false} />
+        <div class="middle-facts reveal">
+          <h2 class="middle-heading">The tools matter.<br>So do the terms.</h2>
+          <div class="middle-diagram" aria-hidden="true">
+            <svg viewBox="0 0 560 210" preserveAspectRatio="xMidYMid meet">
+              <line x1="30" y1="185" x2="540" y2="185" class="md-axis" />
+              <line x1="30" y1="15" x2="30" y2="185" class="md-axis" />
+              <path class="md-curve md-curve-up" d="M30,175 C220,168 400,120 540,25" fill="none" />
+              <path class="md-curve md-curve-down" d="M30,45 C220,60 380,150 540,178" fill="none" />
+              <text x="330" y="60" class="md-label md-label-up">what AI can do</text>
+              <text x="310" y="140" class="md-label md-label-down">what it costs</text>
+            </svg>
+          </div>
+          <p class="middle-fine">Conceptual illustration, not a measured data series.</p>
+          <ul class="middle-list">
+            <li>AI can change tasks, staffing, and bargaining power. The scale and timing of its effects depend on adoption, policy, and decisions people make.</li>
+            <li>Open-source robotics makes experimentation more accessible. Reliability, safety, maintenance, and total cost still need to be measured for each job.</li>
+            <li>Who owns a tool, who sets its terms, and who can use its output shape what it does for a community.</li>
+            <li>Find people working on food, useful equipment, or public decisions near you. Bring a skill, a question, or a concrete request.</li>
+          </ul>
         </div>
 
-        <p class="cta-hope">{stance.close}</p>
-        <p class="cta-sub">{offer.sentence}<br><br>{offer.windowClose}</p>
+        <div class="middle-offer reveal reveal-d1">
+          <p class="middle-offer-label">Start here</p>
+          <ul class="middle-offer-list">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The novel: the current draft, every chapter, readable now</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>A free sample: the first chapter, no email needed</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The readiness checklist: concrete moves, ordered by impact</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The Precedent File: {offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed</li>
+          </ul>
+          <a href="/early-access" class="middle-btn">Preorder the book: {offer.price}</a>
+          <p class="middle-fine">One-time. When the preorder window closes, this price is gone.</p>
+          <p class="middle-fine middle-why">{offer.preorderPlain}</p>
+        </div>
 
-        <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
-          Preorder the Book: {offer.price}
-          <span class="btn-icon" aria-hidden="true">
-            <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </a>
-        <p style="font-size:0.9rem; color:#94a3b8; margin-top:14px;">{offer.purchaseTerms}</p>
       </div>
     </div>
   </section>
@@ -891,9 +896,9 @@
     .hero-actions .btn-ghost { max-width: 100%; white-space: normal; }
   }
   .hero-sub { font-size: clamp(1.1rem, 2.5vw, 1.4rem); color: var(--text-2); line-height: 1.65; max-width: 52ch; }
-  .hero-sub-stack { display: flex; flex-direction: column; gap: 12px; max-width: 44ch; text-align: center; }
-  .hero-sub-line { font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--text-2); line-height: 1.45; margin: 0; }
-  .hero-sub-punch { color: var(--text-1); font-weight: 700; font-size: clamp(1.1rem, 2.5vw, 1.35rem); }
+  .hero-kicker { margin: 0; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); }
+  .hero-hook { margin: 0; max-width: 30ch; text-align: center; font-size: clamp(1.25rem, 3.4vw, 1.9rem); line-height: 1.32; font-weight: 600; font-style: italic; color: var(--text-1); }
+  .hero-hope { margin: 0; max-width: 40ch; text-align: center; font-size: clamp(1.02rem, 2.2vw, 1.2rem); line-height: 1.5; color: var(--text-2); }
   .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; max-width: 100%; }
   /* STAT STRIP */
   .stat-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: clamp(40px, 6vw, 64px) 0; }
@@ -1269,6 +1274,7 @@
   /* HOPE */
   .hope-section { border-top: 1px solid var(--border); padding: clamp(56px, 9vw, 104px) 0; background: radial-gradient(ellipse at 50% 0%, rgba(16,185,129,0.09), transparent 62%); }
   .hope-inner { max-width: min(760px, 100%); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
+  .hope-punch { margin: 0; font-size: clamp(1.5rem, 5.4vw, 2.4rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.1; color: var(--text-1); }
   .hope-ack { margin: 18px 0 0; font-size: clamp(1.05rem, 2.4vw, 1.25rem); line-height: 1.7; color: var(--text-3); }
   .hope-turn { margin: 18px 0 0; font-size: clamp(1.2rem, 3vw, 1.6rem); line-height: 1.45; font-weight: 700; color: var(--text-1); }
   .hope-heading { margin: clamp(28px, 5vw, 44px) 0 clamp(18px, 3vw, 26px); font-size: clamp(2.3rem, 8.5vw, 4.6rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.02; color: var(--green); }
@@ -1279,10 +1285,16 @@
   .hope-seal svg { width: 1.2em; height: 1.2em; }
   .hope-label figcaption { flex: 1 1 260px; font-size: clamp(1rem, 2.2vw, 1.15rem); line-height: 1.6; color: var(--text-2); }
   .hope-close { margin: 8px 0 0; font-size: clamp(1.3rem, 3.6vw, 1.9rem); line-height: 1.35; font-weight: 800; color: var(--text-1); letter-spacing: -0.01em; }
-  .hope-actions { margin-top: clamp(22px, 4vw, 32px); display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
-  .hope-link { color: var(--green); font-weight: 700; text-underline-offset: 4px; }
-  .hope-sign { margin: 22px 0 0; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); }
-  .cta-hope { margin: 0 0 14px; font-size: clamp(1.05rem, 2.6vw, 1.3rem); font-weight: 700; color: var(--green); }
+  .cta-belief { max-width: 40ch; margin: 0 auto 18px; font-size: clamp(1.05rem, 2.6vw, 1.3rem); line-height: 1.5; font-weight: 700; color: var(--green); }
+  .cta-terms { max-width: 60ch; margin: 18px auto 0; font-size: 0.85rem; line-height: 1.6; color: #94a3b8; }
+  .story-excerpt { margin: 0 0 clamp(28px, 5vw, 48px); padding: clamp(20px, 4vw, 36px); border-left: 3px solid var(--amber); background: rgba(245,158,11,0.04); border-radius: 0 var(--r-card) var(--r-card) 0; }
+  .story-excerpt-label { margin-bottom: 14px; font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); line-height: 1.5; }
+  .story-excerpt-text { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.08rem, 2.5vw, 1.3rem); line-height: 1.65; color: var(--text-1); }
+  .story-excerpt-text :global(p) { margin: 0 0 0.9em; }
+  .story-excerpt-text :global(p:last-child) { margin-bottom: 0; }
+  .story-excerpt-link { display: inline-block; margin-top: 18px; color: var(--amber); font-weight: 700; text-underline-offset: 4px; }
+  .deeper-divider { display: flex; align-items: center; gap: 16px; max-width: min(1100px, 100%); margin: clamp(40px, 8vw, 80px) auto 0; padding: 0 clamp(20px, 5vw, 48px); font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-3); }
+  .deeper-divider::before, .deeper-divider::after { content: ''; flex: 1; height: 1px; background: var(--border-mid); }
 
   .reality-section { border-top: 1px solid var(--border); padding: clamp(48px, 8vw, 80px) 0; }
   .reality-inner { max-width: min(900px, 100%); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
@@ -1340,11 +1352,7 @@
   .book-part-4 { background: linear-gradient(145deg, rgba(245,158,11,0.06) 0%, rgba(15,23,42,0.4) 100%); }
   .book-part-4:hover { border-color: rgba(245,158,11,0.3); }
   .book-part-4 .book-part-num { color: var(--amber); }
-  .book-change { margin-top: 28px; max-width: 760px; font-size: clamp(0.9rem, 1.8vw, 1rem); line-height: 1.65; color: var(--text-2); }
-  .book-change strong { color: var(--text-1); }
-  .book-change a { color: var(--amber); }
   .book-part-title { font-size: clamp(1.25rem, 2.8vw, 1.6rem); font-weight: 900; color: var(--text-1); letter-spacing: -0.02em; line-height: 1.15; margin: 0; }
-  .book-part-sub { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-3); letter-spacing: 0.04em; }
   .book-part-desc { font-size: clamp(0.9rem, 1.8vw, 1rem); color: var(--text-2); line-height: 1.65; flex: 1; }
 
   /* ── TRANSFORMATION SECTION ── */

@@ -3,7 +3,7 @@
   import { page } from '$app/stores';
   import BookCover from '$lib/components/BookCover.svelte';
   // Nothing on this page states the offer in its own words. See src/lib/offer.js.
-  import { offer, offerBlurb, evolution } from '$lib/offer';
+  import { offer, offerBlurb } from '$lib/offer';
   import { book } from '$lib/bookContent';
   import { novel, acts } from '$lib/novelActs.js';
   import { stance } from '$lib/stance.js';
@@ -111,7 +111,7 @@
   <meta property="og:image:alt" content="Preorder Surviving the Singularity for {offer.price} and get the bundle now." />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Preorder the book. Get the bundle now." />
+  <meta name="twitter:title" content="Preorder the novel. Read it today." />
   <meta name="twitter:description" content={offerBlurb()} />
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/early-access.png?v=0.11" />
 </svelte:head>
@@ -135,7 +135,7 @@
             <circle cx="6" cy="6" r="6" fill="#f59e0b" opacity="0.2"/>
             <circle cx="6" cy="6" r="3" fill="#f59e0b"/>
           </svg>
-          A novel. {book.edition}.
+          A novel. Read the current draft today.
         </div>
       </div>
     </div>
@@ -148,9 +148,12 @@
       </div>
 
       <h1 class="ea-heading">
-        Preorder the book.<br><span class="ea-amber">Get the bundle now.</span>
+        Preorder the novel.<br><span class="ea-amber">Read it today.</span>
       </h1>
-      <p class="ea-sub">{offer.sentence}</p>
+      <!-- The book first, the terms after. The full offer sentence is in the
+           includes section and at the bottom buy block. -->
+      <p class="ea-sub ea-hook">{novel.opening}</p>
+      <p class="ea-sub">{offer.preorderPlain}</p>
       <p class="ea-sub ea-sub-label">You get:</p>
       <ul class="ea-hero-list">
         {#each offer.included as item}
@@ -165,7 +168,7 @@
             <span class="ea-price-type">one-time preorder</span>
             <!-- Derived from src/lib/data/novel/book.json, the same file /book and
                  /read read: the reader sees the name of the draft they get today. -->
-            <span class="ea-price-version">You get the {book.edition.toLowerCase()} today, dated {book.lastUpdated}</span>
+            <span class="ea-price-version">You get the current draft today, dated {book.lastUpdated}</span>
           </div>
         </div>
 
@@ -280,14 +283,6 @@
       <footer>Christopher Tavolazzi, Author&rsquo;s Note. The same note says: &ldquo;{novel.forecastDoubt}&rdquo;</footer>
     </blockquote>
 
-    <!-- The book people preordered was a nonfiction guide. Say what changed,
-         here, next to the description, not only on /about. Derived from
-         $lib/offer.js so every surface tells it the same way. -->
-    <div class="ea-change" id="how-it-changed">
-      <p class="ea-change-title">{evolution.heading}</p>
-      <p class="ea-change-body">{evolution.story} {evolution.now}</p>
-      <p class="ea-change-body">{evolution.earlierBuyers} <a href={evolution.archivePath} class="ea-author-link">Open the archive</a>.</p>
-    </div>
   </div>
 </section>
 
@@ -353,6 +348,11 @@
       <p class="ea-scope-body">{offer.foreverScope}</p>
       <p class="ea-scope-body">{offer.windowClose}</p>
     </div>
+
+    <!-- For the people who bought the earlier nonfiction draft. One quiet line
+         here; the full statement is on /about, so a new visitor is not asked
+         to think about a book they never saw. -->
+    <p class="ea-earlier">Preordered before the book became a novel? <a href="/about#how-it-changed" class="ea-author-link">What changed, and what you keep</a>.</p>
   </div>
 </section>
 
@@ -369,7 +369,9 @@
       <p class="ea-label">Who's building this</p>
       <p class="ea-author-name"><a href="https://www.linkedin.com/in/christopher-tavolazzi/" target="_blank" rel="noopener noreferrer" class="ea-author-link">Christopher Tavolazzi</a></p>
       <p class="ea-author-text">
-        {stance.turn} {stance.belief} {stance.landing}<br><br>
+        {stance.turn}<br><br>
+        {stance.belief}<br><br>
+        {stance.landing}<br><br>
         {offer.sentence}<br><br>
         Your purchase email is used for your receipt, access links, and updates to what you bought. Optional Signal Dispatches are a separate choice on the checklist.<br><br>
         Read the <a href="/sample" class="ea-author-link">free sample</a>, the first chapter, before deciding.
@@ -861,10 +863,8 @@
     padding: 2px 8px; border-radius: 4px;
   }
   .ea-tag-live { background: rgba(16,185,129,0.12); color: var(--green); }
-  .ea-change { margin-top: 32px; padding: 20px 22px; border: 1px solid rgba(245,158,11,0.25); border-radius: 12px; background: var(--amber-dim); }
-  .ea-change-title { font-weight: 800; color: var(--amber); margin: 0 0 8px; }
-  .ea-change-body { margin: 0 0 8px; line-height: 1.65; }
-  .ea-change-body:last-child { margin-bottom: 0; }
+  .ea-hook { font-style: italic; font-weight: 600; color: var(--text-1, #f8fafc); }
+  .ea-earlier { margin: 24px 0 0; font-size: 0.9rem; color: #94a3b8; }
   .ea-tag-draft { background: var(--amber-dim); color: var(--amber); }
   .ea-tag-soon { background: rgba(148,163,184,0.08); color: var(--text-3); }
 

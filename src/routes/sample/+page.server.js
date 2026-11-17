@@ -4,8 +4,9 @@ import { renderMarkdown } from '$lib/utils/bookMarkdown.js';
 // The public sample always comes from the same canonical source as the reader.
 export const prerender = true;
 export async function load() {
-  // The free sample is the Author's Note and the first chapter of the novel.
-  const ids = ['authors-note', 'chapter0'];
+  // The free sample is the first chapter of the novel, then the Author's Note.
+  // Story first: a visitor came to see whether the book is any good.
+  const ids = ['chapter0', 'authors-note'];
   return {
     version: book.version,
     edition: book.edition,

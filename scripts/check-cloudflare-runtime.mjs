@@ -124,7 +124,7 @@ try {
     ['/book', 'Read the Book | Surviving the Singularity'],
     ['/read', 'Book access password'],
     ['/sample', 'Start with the book.'],
-    ['/early-access', 'Get the bundle now.']
+    ['/early-access', 'Read it today.']
   ]) {
     const html = await (await get(path)).text();
     assert(html.includes(marker), `${path}: expected rendered page content`);

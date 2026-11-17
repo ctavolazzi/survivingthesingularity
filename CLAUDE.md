@@ -27,10 +27,19 @@ Two book sources, never mixed:
 `src/lib/offer.js` `evolution` is the one statement of how the book changed
 and what earlier buyers keep. Do not restate it in a page.
 
-**Not done yet (2026-11-17):** the paid bundle, the confirmation email and the
-receipt page still deliver the earlier draft and The Precedent File, and the
-novel has no PDF or EPUB download. Do not merge sales copy that promises the
-novel as a download until that release step is done.
+**The paid download is the novel** (`src/lib/data/bundleManifest.js`,
+`kind: "novel"`), built by `scripts/build_novel_downloads.py`: the author's
+PDF, an EPUB made from the chapter files, and a START-HERE page. `offer.js`
+reads the manifest to decide whether The Precedent File is part of what is
+sold (it is not, for the novel), and the email and receipt page follow.
+The release steps are in `src/lib/data/novel/README.md`. **As of 2026-11-17
+the ZIP that manifest describes has not been uploaded and the hosting
+settings do not name it**, so checkout on a deploy of this code is refused
+until both are done. That is the intended failure.
+
+`src/lib/bookNotice.js` is the one statement that the book is fiction and
+is not advice; the disclaimer, terms, policies and footer read it.
+`src/lib/stance.js` is the author's hope statement for the sales pages.
 
 PDFs, EPUBs, snapshots, and bonus archives are generated.
 Do not hand-edit those outputs. `publication/README.md` describes the current

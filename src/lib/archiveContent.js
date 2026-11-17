@@ -23,3 +23,16 @@ export const archiveSections = archiveBook.sections.map(section => {
   const raw = expandRefs(eagerMarkdown[`/src/lib/data/book/${section.file}`] || '');
   return { ...describeSection(section, raw), raw };
 });
+
+// The bonus file earlier buyers were delivered with that draft. Frozen build
+// output (see src/lib/data/archive/README.md). YAML front matter is dropped:
+// it was written for the PDF build, not for a page.
+const extras = import.meta.glob('$lib/data/archive/*.md', { query: '?raw', import: 'default', eager: true });
+const body = raw => (raw || '').replace(/^---[\s\S]*?---\s*/, '');
+export const archiveExtras = [
+  { id: 'precedent-file', title: 'The Precedent File', file: 'The-Precedent-File.md' },
+  { id: 'precedent-sources', title: 'The Precedent File: sources and citations', file: 'Sources-and-Citations.md' }
+].map(extra => {
+  const raw = body(extras[`/src/lib/data/archive/${extra.file}`]);
+  return { ...describeSection(extra, raw), raw };
+});

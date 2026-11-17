@@ -18,7 +18,7 @@ Marta looked at the renders for a while.
 
 So he designed it again. The second version was a Raspberry Pi the regional supplier had in stock, screw terminals instead of poetry, and four-dollar probes you could swap by hand. Every unit had a laminated one-page repair card zip-tied inside the lid, because Marta’s rule was that documentation you have to go find is documentation that doesn’t exist.
 
-![The controller. Screw terminals instead of poetry.](/book-images/novel-p125.webp)
+![Pixel-art drawing of a small circuit board inside an open yellow case, labeled The Controller.](/book-images/novel-p125.webp)
 
 *The controller. Screw terminals instead of poetry.*
 
@@ -32,7 +32,7 @@ The build took the shed three weekends. On the first one, everybody was in a lin
 
 “Reuben Vance,” Marta said, not looking up from the crimper. “The part of the machine that runs on paper.”
 
-![Reuben Vance. Handles the part of the machine that runs on paper.](/book-images/novel-p127.webp)
+![Pixel-art portrait of Reuben Vance, a man in a dark coat holding papers and a briefcase.](/book-images/novel-p127.webp)
 
 *Reuben Vance. Handles the part of the machine that runs on paper.*
 

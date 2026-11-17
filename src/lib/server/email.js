@@ -578,12 +578,20 @@ export async function sendDownloadEmail({
   // "research PDFs, papers, images, and source documents" while the archive held
   // four .txt files totalling 3KB and no book at all. If the bundle's contents
   // change, change this sentence in the same commit.
-  const body =
-    `${confirmLine}${entitlementCopy} ` +
-    `Your download is The Precedent File: ${offer.precedentFileCaseCount} documented cases of people meeting a machine that changed everything, ` +
-    `${offer.precedentFileSourcedCount} of them with their sources listed inline so you can check the work. ` +
-    'It carries the sources index, the cover art, and the Robotics Company Index alongside it. ' +
-    'It also carries the current book in PDF and EPUB. Publicly available files are marked in the archive list below.';
+  //
+  // Two bundles have existed. The novel's (bundleManifest.kind === 'novel',
+  // built by scripts/build_novel_downloads.py) holds the book as a PDF and an
+  // EPUB. The earlier one was built around The Precedent File. The sentence
+  // follows whichever manifest is active, so it cannot describe the other one.
+  const downloadCopy = offer.includesPrecedentFile
+    ? `Your download is The Precedent File: ${offer.precedentFileCaseCount} documented cases of people meeting a machine that changed everything, ` +
+      `${offer.precedentFileSourcedCount} of them with their sources listed inline so you can check the work. ` +
+      'It carries the sources index, the cover art, and the Robotics Company Index alongside it. ' +
+      'It also carries the current book in PDF and EPUB. Publicly available files are marked in the archive list below.'
+    : 'Your download is the novel, as a PDF and as an EPUB for e-readers, with a short page on how to open them. ' +
+      'It is the current draft; the finished book reaches you the same way when it publishes.';
+  const downloadLabel = offer.includesPrecedentFile ? 'Download The Precedent File' : 'Download the book';
+  const body = `${confirmLine}${entitlementCopy} ${downloadCopy}`;
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.
@@ -669,7 +677,7 @@ export async function sendDownloadEmail({
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
-    <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download The Precedent File</a>
+    <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">${downloadLabel}</a>
     <div style="background:rgba(148,163,184,0.04);border:1px solid rgba(148,163,184,0.15);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
       <p style="font-size:12px;color:#64748b;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700;">In your archive</p>
       <p style="font-size:12px;color:#64748b;margin:0 0 6px;">${bundleManifest.bundle.entries} files, ${formatBytes(bundleManifest.bundle.bytes)} zipped.</p>
@@ -691,7 +699,7 @@ export async function sendDownloadEmail({
     <div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);border-radius:10px;padding:16px 20px;margin-top:8px;">
       <p style="font-size:13px;color:#64748b;margin:0 0 10px;">Also included in your early access:</p>
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">
-        Full book: current draft <a href="${customerUrl('/book')}" style="color:#f59e0b;">Read the book online</a>
+        The novel, current draft: <a href="${customerUrl('/book')}" style="color:#f59e0b;">read it online</a>
       </p>
       <p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(BOOK_ACCESS_PASSWORD)}</strong></p>
     </div>

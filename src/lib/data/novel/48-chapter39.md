@@ -6,7 +6,7 @@ There were ten copies, in a cardboard box from a print shop two towns over, with
 
 *This is what I was trying to say on the phone.*
 
-![The proofs. Ten copies. The book, finally.](/book-images/novel-p244.webp)
+![Pixel-art drawing of an open cardboard box holding copies of a book, labeled The Proofs.](/book-images/novel-p244.webp)
 
 *The proofs. Ten copies. The book, finally.*
 

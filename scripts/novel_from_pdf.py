@@ -80,6 +80,38 @@ for it in items:
         for w in re.findall(r"[A-Za-z’']+(?:‐[A-Za-z’']+)*", it["text"].rstrip(HY)):
             allwords[w.lower()] += 1
 kept_hyphens = []
+# Picture descriptions for readers who cannot see the pictures, keyed by the
+# first words of each caption (page numbers move between drafts; captions
+# mostly do not). Written by looking at the 2026-11-17 draft's pictures. A
+# picture whose caption is not listed here falls back to its caption, and the
+# run says so, so a new picture does not ship without a description unnoticed.
+ALT = {
+    "The Bear Flag.": "Illustration: three men in blazers raise beer glasses at a bar while a fourth man sits beside them at a laptop, not smiling.",
+    "Devendra.": "Pixel-art portrait of Devendra, a man in a suit and tie holding a laptop. The picture's own label reads: senior and calm. wrong about the thing that mattered.",
+    "The rig.": "Pixel-art drawing of a desktop computer tower with two graphics cards. The picture's own label reads: two GPUs zip-tied in. it throttles by design.",
+    "The near end.": "Illustration: a man seen from behind stands at an apartment window at sunrise, looking out over rooftops and trees. An open notebook lies on the desk.",
+    "The Fisher.": "Pixel-art drawing of a black cast-iron wood stove with a fire burning inside, labeled The Fisher.",
+    "The tool wall.": "Pixel-art drawing of hammers, screwdrivers, a wrench and a saw hung on a board, labeled The Tool Wall.",
+    "Pass the beans.": "Illustration: at a long plywood table in a workshop, an older woman passes a bowl to a bearded man while others eat around them.",
+    "Gary.": "Pixel-art portrait of Gary, a man in work overalls. The picture's own label reads: stayed informed. couldn't fix a fence.",
+    "The controller.": "Pixel-art drawing of a small circuit board inside an open yellow case, labeled The Controller.",
+    "Reuben Vance.": "Pixel-art portrait of Reuben Vance, a man in a dark coat holding papers and a briefcase.",
+    "The Crucible.": "Pixel-art drawing of three stacked server cabinets beside a salvaged car radiator, labeled The Crucible.",
+    "The vise.": "Pixel-art drawing of a bench vise gripping a piece of metal, labeled The Vise.",
+    "Frank Kowalski.": "Pixel-art portrait of Frank Kowalski, a bearded man in glasses and a shop apron.",
+    "The bell.": "Pixel-art drawing of a hardware store doorway with a brass bell hung beside it, labeled The Bell.",
+    "The probe.": "Pixel-art drawing of a soil probe with three prongs of different lengths, labeled The Probe.",
+    "Ink for what is funded.": "Diagram titled Ink for What Is Funded. Two calendar pages: one reads Through June with a check mark, labeled Secured; the other reads Continuation, proposed, labeled Not yet promised. Below: Name the cover. Pay for the work. Tell households what is actually secured.",
+    "Rosa, with a minute": "Illustration: a woman with a brace on her wrist speaks at a podium microphone in a county meeting room while the audience and the board watch.",
+    "The proofs.": "Pixel-art drawing of an open cardboard box holding copies of a book, labeled The Proofs.",
+    "One that grows the food": "Pixel-art panel titled The Robots That Grow Your Food and Build Your House: a tracked farming robot watering plants, and a robot assembling the frame of a house.",
+}
+def alt_for(caption):
+    for start, text in ALT.items():
+        if caption.startswith(start): return text
+    undescribed.append(caption or "(no caption)")
+    return caption or "Illustration"
+undescribed = []
 KEEP = {"polite|but","Commission|brained","eighty|some","in|law","plant|disease","mail|forwarding","fire|lookout","cast|iron","twenty|two","Twenty|two","per|second","load|ins"}
 JOIN = {"DE|CLARES"}
 
@@ -247,7 +279,7 @@ for n, s in enumerate(sections):
         elif b[0] == "break": lines += ["---", ""]
         elif b[0] == "attr": lines += [f"ATTR::{clean(b[1])}", ""]
         elif b[0] == "img":
-            lines += [f"![{clean(b[2]) or 'Illustration'}](/book-images/{b[1]['name']}.webp)", ""]
+            lines += [f"![{alt_for(clean(b[2]))}](/book-images/{b[1]['name']}.webp)", ""]
             if b[2]: lines += [f"*{clean(b[2])}*", ""]
     s["md"] = "\n".join(lines).rstrip() + "\n"
     manifest.append(dict(id=s["id"], title=s["title"], kind=s["kind"], words=len(re.findall(r"\b[\w’'-]+\b", s["md"]))))
@@ -258,7 +290,7 @@ json.dump(dict(sections=manifest, pics=pics, hyphens=kept_hyphens), open(out + "
 # ---- install into the site ---------------------------------------------------
 nd = ROOT / "src/lib/data/novel"; imgdir = ROOT / "static/book-images"
 nd.mkdir(parents=True, exist_ok=True)
-for old in nd.glob("*.md"): old.unlink()
+for old in nd.glob("[0-9][0-9]-*.md"): old.unlink()      # the generated sections only, never README.md
 for old in imgdir.glob("novel-p*.webp"): old.unlink()
 dims = {}
 for p in pics:
@@ -292,4 +324,5 @@ book = {"title": "Surviving the Singularity", "subtitle": "A Novel", "author": "
 shutil.rmtree(out)
 print(len(secs), "sections,", sum(m["words"] for m in manifest), "words,", len(pics), "pictures")
 und = [h for h in kept_hyphens if h.startswith("?") or h.startswith("K?")]
+print("pictures with no written description (add to ALT):", undescribed or "none")
 print("line-end joins decided by the fallback rule (check, then add to KEEP or JOIN):", und or "none")

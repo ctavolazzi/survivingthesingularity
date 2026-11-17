@@ -174,8 +174,13 @@ const RULES = [
   },
   {
     id: 'precedent-file-case-count',
-    active: true,
-    re: countRe(requireCount('precedentFileCaseCount', offer.precedentFileCaseCount)),
+    // Only while the active bundle contains The Precedent File. The novel's
+    // bundle does not, so there is no count to police and no rule to build;
+    // requireCount would (correctly) refuse to build one from undefined.
+    active: offer.includesPrecedentFile,
+    re: offer.includesPrecedentFile
+      ? countRe(requireCount('precedentFileCaseCount', offer.precedentFileCaseCount))
+      : null,
     what: `the Precedent File case count ${offer.precedentFileCaseCount} typed by hand`,
     fix: 'render {offer.precedentFileCaseCount} from $lib/offer instead'
   },

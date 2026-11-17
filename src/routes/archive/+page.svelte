@@ -7,7 +7,7 @@
   // the novel's reader (reading position, progressive mounting, font controls).
   // A table of contents and the sections, each rendered when opened.
   import { renderMarkdown } from '$lib/utils/bookMarkdown.js';
-  import { archiveBook, archiveSections } from '$lib/archiveContent.js';
+  import { archiveBook, archiveSections, archiveExtras } from '$lib/archiveContent.js';
   import { downloadHref, releasedVersion } from '$lib/bookManifest.js';
   import { evolution } from '$lib/offer';
   import '$lib/styles/book-figures.css';
@@ -58,6 +58,22 @@
       </li>
     {/each}
   </ol>
+
+  <h2 class="extras-heading">The Precedent File</h2>
+  <p class="extras-sub">The bonus research file that came with the preorder of that draft.</p>
+  <ol class="archive-list">
+    {#each archiveExtras as section}
+      <li id={section.id}>
+        <button type="button" class="row" aria-expanded={!!open[section.id]} on:click={() => toggle(section)}>
+          <span class="row-title">{section.title}</span>
+          <span class="row-meta">{section.wordCount.toLocaleString()} words</span>
+        </button>
+        {#if open[section.id]}
+          <div class="prose">{@html html[section.id]}</div>
+        {/if}
+      </li>
+    {/each}
+  </ol>
 </div>
 
 <style>
@@ -68,6 +84,9 @@
   .archive-head a { color: #f59e0b; }
   .files { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
   .files a { display: inline-block; padding: 10px 16px; border: 1px solid rgba(245,158,11,0.4); border-radius: 8px; text-decoration: none; font-weight: 700; }
+  .extras-heading { margin: 56px 0 6px; font-size: 1.5rem; font-weight: 900; color: #f8fafc; }
+  .extras-sub { margin: 0; line-height: 1.6; }
+  .extras-sub + .archive-list { margin-top: 20px; }
   .archive-list { list-style: none; padding: 0; margin: 36px 0 0; border-top: 1px solid rgba(255,255,255,0.1); }
   .archive-list li { border-bottom: 1px solid rgba(255,255,255,0.1); }
   .row { width: 100%; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 16px 4px; background: none; border: 0; color: #f8fafc; font: inherit; font-weight: 700; text-align: left; cursor: pointer; }

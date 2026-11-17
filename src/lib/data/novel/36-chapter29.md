@@ -54,7 +54,7 @@ Reuben drew a second column. The co-op could put up part of what it had set asid
 
 They wrote *funded through June* in ink. The rest went underneath in pencil, with the meeting date beside it. Curtis said he’d be the one to tell the households what was promised and what wasn’t. Grace asked for somebody besides Curtis to learn the route. Two hands went up.
 
-![Ink for what is funded. Pencil for what is hoped.](/book-images/novel-p189.webp)
+![Diagram titled Ink for What Is Funded. Two calendar pages: one reads Through June with a check mark, labeled Secured; the other reads Continuation, proposed, labeled Not yet promised. Below: Name the cover. Pay for the work. Tell households what is actually secured.](/book-images/novel-p189.webp)
 
 *Ink for what is funded. Pencil for what is hoped.*
 

@@ -24,7 +24,7 @@ Elijah blinked at her.
 
 “Plant closed in ’09,” she said. “You know that part. Nine hundred of us. What I never told you is what the next year did, because the layoff is one day, they cater it, there’s a folder. The after goes on, and nobody caters that.” She leaned back. “There were two men on my line. Gary and Sal. Same job, same severance. On the company form they looked interchangeable. Gary went home and read everything: the news, the forums, the unemployment numbers, which plant was next. He was going to stay informed. He was going to stay on top of it. You’d see him at the store and he’d have the whole national picture. Every betrayal, chapter and verse. The picture was so big there was no place in it small enough for him to stand.”
 
-![Gary. Stayed informed.](/book-images/novel-p120.webp)
+![Pixel-art portrait of Gary, a man in work overalls. The picture's own label reads: stayed informed. couldn't fix a fence.](/book-images/novel-p120.webp)
 
 *Gary. Stayed informed.*
 

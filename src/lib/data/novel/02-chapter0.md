@@ -152,7 +152,7 @@ Elijah smiled and stood up into the handshake, and some part of him began to bra
 
 Three glasses up, catching the neon.
 
-![The Bear Flag. Three glasses up.](/book-images/novel-p016.webp)
+![Illustration: three men in blazers raise beer glasses at a bar while a fourth man sits beside them at a laptop, not smiling.](/book-images/novel-p016.webp)
 
 *The Bear Flag. Three glasses up.*
 

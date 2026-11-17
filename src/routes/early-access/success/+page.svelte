@@ -62,8 +62,13 @@
           </svg>
         </div>
         <div>
-          <p class="download-name">The Precedent File</p>
-          <p class="download-meta">{offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed inline</p>
+          {#if offer.includesPrecedentFile}
+            <p class="download-name">The Precedent File</p>
+            <p class="download-meta">{offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed inline</p>
+          {:else}
+            <p class="download-name">Surviving the Singularity, the novel</p>
+            <p class="download-meta">The current draft as a PDF and as an EPUB for e-readers</p>
+          {/if}
         </div>
       </div>
 

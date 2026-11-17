@@ -106,7 +106,7 @@ And that was when Marta, who had been eating through the whole exchange like a w
 
 Denny held out his hand for the bowl. Marta passed it.
 
-![Pass the beans.](/book-images/novel-p115.webp)
+![Illustration: at a long plywood table in a workshop, an older woman passes a bowl to a bearded man while others eat around them.](/book-images/novel-p115.webp)
 
 *Pass the beans.*
 

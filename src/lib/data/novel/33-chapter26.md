@@ -160,7 +160,7 @@ He sat in the dirt with his ruined conclusion and started laughing. First the vi
 
 The fix cost about twelve dollars a bed: probes at three depths on a length of plastic pipe, five, fifteen and thirty centimeters, checked against the shovel. Priya made him keep doing that part monthly. Pit and squeeze and smell, on the first of the month, “so the instruments stay honest and so do you.”
 
-![The probe. Five, fifteen, thirty centimeters.](/book-images/novel-p175.webp)
+![Pixel-art drawing of a soil probe with three prongs of different lengths, labeled The Probe.](/book-images/novel-p175.webp)
 
 *The probe. Five, fifteen, thirty centimeters.*
 

@@ -2,7 +2,7 @@
 
 Every controller the co-op ever shipped had parts from Kowalski’s in it. Whenever anybody in the shed said *from town,* the counter they meant was Frank’s. It was the third bay off the square, with wood worn pale where four generations of forearms had rested on it and a bell over the door that Frank’s grandfather had hung. Frank could tell you the torque spec for a head bolt from memory, and he would carry a two-dollar part out to your truck like it was an appliance.
 
-![Frank Kowalski. Knows the torque spec from memory.](/book-images/novel-p161.webp)
+![Pixel-art portrait of Frank Kowalski, a bearded man in glasses and a shop apron.](/book-images/novel-p161.webp)
 
 *Frank Kowalski. Knows the torque spec from memory.*
 
@@ -64,7 +64,7 @@ Then Frank hung his grandfather’s bell over the tool library door. The first t
 
 The parts still came from suppliers beyond the valley. Frank still knew which ones.
 
-![The bell. Frank’s grandfather hung it over the door.](/book-images/novel-p165.webp)
+![Pixel-art drawing of a hardware store doorway with a brass bell hung beside it, labeled The Bell.](/book-images/novel-p165.webp)
 
 *The bell. Frank’s grandfather hung it over the door.*
 

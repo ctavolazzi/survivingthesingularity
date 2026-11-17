@@ -38,7 +38,7 @@ And under that:
 
 Outside, the sky was doing its slow gray warm-up. He made coffee and stood at the window with it, feeling weirdly light. His grandmother had never once worried about the valley she couldn’t farm.
 
-![The near end.](/book-images/novel-p040.webp)
+![Illustration: a man seen from behind stands at an apartment window at sunrise, looking out over rooftops and trees. An open notebook lies on the desk.](/book-images/novel-p040.webp)
 
 *The near end.*
 

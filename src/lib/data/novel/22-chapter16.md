@@ -6,7 +6,7 @@ It was an old apple-packing shed off the county road, with a roll-up door open t
 
 A woman in a leather apron stood at the plasma table with her back to him, watching the cut. She was fifty-something, with thick forearms.
 
-![The tool wall. Shadow-boarded like an evidence display.](/book-images/novel-p104.webp)
+![Pixel-art drawing of hammers, screwdrivers, a wrench and a saw hung on a board, labeled The Tool Wall.](/book-images/novel-p104.webp)
 
 *The tool wall. Shadow-boarded like an evidence display.*
 

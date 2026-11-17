@@ -16,7 +16,7 @@ On the first cold boot, with the fans screaming like weather, they loaded the mo
 
 Elijah sat with that for a minute in the dark of the shed.
 
-![The Crucible. Three filing cabinets and a salvaged radiator.](/book-images/novel-p141.webp)
+![Pixel-art drawing of three stacked server cabinets beside a salvaged car radiator, labeled The Crucible.](/book-images/novel-p141.webp)
 
 *The Crucible. Three filing cabinets and a salvaged radiator.*
 

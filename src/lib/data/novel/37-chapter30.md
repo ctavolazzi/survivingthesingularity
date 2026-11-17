@@ -22,7 +22,7 @@ Rosa went second. She hadn’t told anyone she was coming. She was still in her 
 
 “I pack fruit for a living,” she said. “Afternoon shift. The route comes late enough that I can get it. I’m not here to say thank you, though I am thankful. I’m here because every month we don’t know if it’s the last month. You can’t plan a week around maybe.” She looked at the supervisor with the almonds. “I asked them to tell us before the week it stops. They said they would. I’m asking you the same thing.”
 
-![Rosa, with a minute to spare.](/book-images/novel-p194.webp)
+![Illustration: a woman with a brace on her wrist speaks at a podium microphone in a county meeting room while the audience and the board watch.](/book-images/novel-p194.webp)
 
 *Rosa, with a minute to spare.*
 

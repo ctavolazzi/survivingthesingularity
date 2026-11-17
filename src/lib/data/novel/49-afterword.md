@@ -76,7 +76,7 @@ If a robot can fold laundry and walk a dog, why can’t it help grow food and bu
 
 If a robot can grow my food and build my house, why am I still renting my survival?
 
-![One that grows the food, one that builds the house. The pieces are arriving. The work is putting them in your neighbors’ hands.](/book-images/novel-p256.webp)
+![Pixel-art panel titled The Robots That Grow Your Food and Build Your House: a tracked farming robot watering plants, and a robot assembling the frame of a house.](/book-images/novel-p256.webp)
 
 *One that grows the food, one that builds the house. The pieces are arriving. The work is putting them in your neighbors’ hands.*
 

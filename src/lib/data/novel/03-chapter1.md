@@ -4,7 +4,7 @@ The Monday after the toast, Elijah brought the printout to work.
 
 He’d read “Attention Is All You Need” so many times over the weekend that the pages had gone soft at the corners, furred with highlighter in four colors that had stopped meaning anything. He’d slept maybe five hours across two nights. He carried the thing into Claypot the way you carry a lab result you don’t want confirmed. He went looking for Devendra, because Devendra was senior, and calm, and had been doing this since before Elijah could spell gradient descent. Elijah needed someone to tell him he was overreacting. He found him at the good coffee machine on the fourth floor.
 
-![Devendra. Senior and calm.](/book-images/novel-p021.webp)
+![Pixel-art portrait of Devendra, a man in a suit and tie holding a laptop. The picture's own label reads: senior and calm. wrong about the thing that mattered.](/book-images/novel-p021.webp)
 
 *Devendra. Senior and calm.*
 
@@ -70,7 +70,7 @@ Later that night Elijah decided to settle it with his own hands. He’d try to b
 
 He had an old tower at home, a space heater of a machine he’d built for cheap when he was learning, two consumer GPUs zip-tied into a case that didn’t quite fit them. He pulled a modest open model and started training it further on his own data. He told himself that if he could feel where it topped out, if he could find the ceiling by touch, he’d know it was just software, bounded like all software, and he could sleep.
 
-![The rig. Two GPUs zip-tied into a case that never fit them.](/book-images/novel-p024.webp)
+![Pixel-art drawing of a desktop computer tower with two graphics cards. The picture's own label reads: two GPUs zip-tied in. it throttles by design.](/book-images/novel-p024.webp)
 
 *The rig. Two GPUs zip-tied into a case that never fit them.*
 

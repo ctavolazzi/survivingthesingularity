@@ -56,7 +56,7 @@ His grandmother had heated a whole farmhouse with it. She cooked on it, dried so
 
 For a minute he wanted to count the cost as nothing but fuel and muscle. Then he remembered the borrowed trailer, the neighbor who helped when her shoulder went, the business of keeping a chimney clear. There had been a whole small arrangement around that stove. His grandmother knew what it needed and who she could call.
 
-![The Fisher. Four hundred pounds of steel, one cracked firebrick. Older than him.](/book-images/novel-p045.webp)
+![Pixel-art drawing of a black cast-iron wood stove with a fire burning inside, labeled The Fisher.](/book-images/novel-p045.webp)
 
 *The Fisher. Four hundred pounds of steel, one cracked firebrick. Older than him.*
 

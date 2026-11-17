@@ -182,14 +182,31 @@ export const license = Object.freeze({
 import bundleManifest from './data/bundleManifest.js';
 
 const LEDGER_PRECEDENT_COUNT = 24;
-const PRECEDENT_FILE_CASE_COUNT = bundleManifest.counts.precedent_file_cases;
-const PRECEDENT_FILE_SOURCED_COUNT = bundleManifest.counts.cases_with_sources;
+
+/**
+ * IS THE PRECEDENT FILE PART OF WHAT IS SOLD TODAY? THE BUNDLE ANSWERS.
+ *
+ * While the book was a nonfiction draft, the paid download was built around a
+ * research file and its manifest counted the cases. The novel's bundle
+ * (scripts/build_novel_downloads.py) holds the novel and nothing else, and its
+ * manifest carries no counts. CT, 2026-11-17: the earlier draft and its bonus
+ * file are an archive for past buyers; "new buyers get the novel only".
+ *
+ * So nothing here is switched by hand. If the active manifest counts cases,
+ * the offer lists The Precedent File; if it does not, the offer does not
+ * mention it, and the two count fields below are undefined. Every surface that
+ * prints them checks `offer.includesPrecedentFile` first.
+ */
+const PRECEDENT_FILE_CASE_COUNT = bundleManifest.counts?.precedent_file_cases;
+const PRECEDENT_FILE_SOURCED_COUNT = bundleManifest.counts?.cases_with_sources;
+const INCLUDES_PRECEDENT_FILE = Number.isInteger(PRECEDENT_FILE_CASE_COUNT);
+const NOVEL_DOWNLOAD = bundleManifest.kind === 'novel';
 const REFUND_WINDOW_DAYS = 30;
 const DIGITAL_SCOPE =
   'Every digital thing this project publishes is included, starting with the ' +
-  'novel (the current draft now, the finished book when it publishes) and ' +
-  'The Precedent File. Future digital editions remain included while the ' +
-  'project is maintained. ' +
+  'novel (the current draft now, the finished book when it publishes)' +
+  (INCLUDES_PRECEDENT_FILE ? ' and The Precedent File' : '') +
+  '. Future digital editions remain included while the project is maintained. ' +
   'Preorder buyers never pay the planned membership. Print is sold separately.';
 
 export const offer = Object.freeze({
@@ -233,7 +250,7 @@ export const offer = Object.freeze({
 
   access:
     'A public sample is available without an account. Your purchase email ' +
-    'contains the downloads and the shared access password for the full ' +
+    'contains the download and the shared access password for the full ' +
     'online draft. If you lose access, contact info@survivingthesingularity.com ' +
     'from the email address used to buy; you do not need to buy again.',
 
@@ -243,6 +260,8 @@ export const offer = Object.freeze({
     `Digital purchases can be refunded within ${REFUND_WINDOW_DAYS} days.`,
 
   ledgerPrecedentCount: LEDGER_PRECEDENT_COUNT,
+  includesPrecedentFile: INCLUDES_PRECEDENT_FILE,
+  novelDownload: NOVEL_DOWNLOAD,
   precedentFileCaseCount: PRECEDENT_FILE_CASE_COUNT,
   precedentFileSourcedCount: PRECEDENT_FILE_SOURCED_COUNT,
 
@@ -267,8 +286,9 @@ export const offer = Object.freeze({
       id: 'book-draft',
       title: 'The novel.',
       detail:
-        'Read the current draft on the site now, every chapter. The finished ' +
-        'book replaces it when it publishes.',
+        'Read the current draft on the site now, every chapter' +
+        (NOVEL_DOWNLOAD ? ', and download it as a PDF and an EPUB to keep' : '') +
+        '. The finished book replaces it when it publishes.',
       available: true
     }),
     /**
@@ -279,16 +299,18 @@ export const offer = Object.freeze({
      * honest fraction is worth more than the tidy claim, and it is derived so
      * it cannot quietly become the tidy claim again.
      */
-    Object.freeze({
-      id: 'precedent-file',
-      title: 'The Precedent File.',
-      detail:
-        `${PRECEDENT_FILE_CASE_COUNT} documented cases of people meeting a ` +
-        'machine that changed everything, ' +
-        `${PRECEDENT_FILE_SOURCED_COUNT} of them with their sources listed ` +
-        'inline so you can check the work.',
-      available: true
-    }),
+    ...(INCLUDES_PRECEDENT_FILE ? [
+      Object.freeze({
+        id: 'precedent-file',
+        title: 'The Precedent File.',
+        detail:
+          `${PRECEDENT_FILE_CASE_COUNT} documented cases of people meeting a ` +
+          'machine that changed everything, ' +
+          `${PRECEDENT_FILE_SOURCED_COUNT} of them with their sources listed ` +
+          'inline so you can check the work.',
+        available: true
+      })
+    ] : []),
     Object.freeze({
       id: 'early-access-list',
       title: 'A permanent place on the early-access list.',
@@ -481,5 +503,5 @@ export function refundClause() {
  * paragraph will not fit. Derived so it cannot drift from `sentence`.
  */
 export function offerBlurb() {
-  return `${offer.price} once. The novel (the current draft now, the finished book when it publishes), The Precedent File, and future digital editions while the project is maintained. Preorder buyers never pay the planned membership. Print is sold separately.`;
+  return `${offer.price} once. The novel (the current draft now, the finished book when it publishes)${INCLUDES_PRECEDENT_FILE ? ', The Precedent File,' : ''} and future digital editions while the project is maintained. Preorder buyers never pay the planned membership. Print is sold separately.`;
 }

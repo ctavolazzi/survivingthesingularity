@@ -20,7 +20,7 @@ He asked for a seam on the header beam, the long spine that would carry the roof
 
 The bead snapped clean down its own centerline. Inside, the break was bright and grainy and full of small round holes, like honeycomb cast in nickel.
 
-![The vise. The metal does the truth.](/book-images/novel-p155.webp)
+![Pixel-art drawing of a bench vise gripping a piece of metal, labeled The Vise.](/book-images/novel-p155.webp)
 
 *The vise. The metal does the truth.*
 

@@ -1,0 +1,262 @@
+{
+  "title": "Surviving the Singularity",
+  "subtitle": "A Novel",
+  "author": "Christopher Tavolazzi",
+  "edition": "Final rough draft",
+  "version": "1.0.0-draft",
+  "released": "1.0.0-draft",
+  "lastUpdated": "2026-11-17",
+  "source": "Built by scripts/novel_from_pdf.py from the author's PDF (258 pages), received 2026-11-17.",
+  "sections": [
+    {
+      "id": "authors-note",
+      "title": "Author’s Note",
+      "file": "00-authors-note.md"
+    },
+    {
+      "id": "part-1",
+      "title": "Act One: The Bar",
+      "file": "01-part-1.md"
+    },
+    {
+      "id": "chapter0",
+      "title": "Chapter 0: The Demonstration",
+      "file": "02-chapter0.md"
+    },
+    {
+      "id": "chapter1",
+      "title": "Chapter 1: You’ll Calibrate",
+      "file": "03-chapter1.md"
+    },
+    {
+      "id": "chapter2",
+      "title": "Chapter 2: Terms of Service",
+      "file": "04-chapter2.md"
+    },
+    {
+      "id": "meanwhile-1",
+      "title": "Meanwhile",
+      "file": "05-meanwhile-1.md"
+    },
+    {
+      "id": "chapter3",
+      "title": "Chapter 3: 9:40 on Sunday",
+      "file": "06-chapter3.md"
+    },
+    {
+      "id": "chapter4",
+      "title": "Chapter 4: The Ladder",
+      "file": "07-chapter4.md"
+    },
+    {
+      "id": "chapter5",
+      "title": "Chapter 5: The First Watt",
+      "file": "08-chapter5.md"
+    },
+    {
+      "id": "part-2",
+      "title": "Act Two: The City",
+      "file": "09-part-2.md"
+    },
+    {
+      "id": "chapter6",
+      "title": "Chapter 6: For Friends and Family",
+      "file": "10-chapter6.md"
+    },
+    {
+      "id": "chapter7",
+      "title": "Chapter 7: Out of Hand",
+      "file": "11-chapter7.md"
+    },
+    {
+      "id": "chapter8",
+      "title": "Chapter 8: Out of His League",
+      "file": "12-chapter8.md"
+    },
+    {
+      "id": "chapter9",
+      "title": "Chapter 9: The Architect",
+      "file": "13-chapter9.md"
+    },
+    {
+      "id": "chapter10",
+      "title": "Chapter 10: Cigarettes",
+      "file": "14-chapter10.md"
+    },
+    {
+      "id": "meanwhile-2",
+      "title": "Meanwhile",
+      "file": "15-meanwhile-2.md"
+    },
+    {
+      "id": "chapter11",
+      "title": "Chapter 11: Two Million Dollars of Robot Arms",
+      "file": "16-chapter11.md"
+    },
+    {
+      "id": "chapter12",
+      "title": "Chapter 12: Not on the List",
+      "file": "17-chapter12.md"
+    },
+    {
+      "id": "chapter13",
+      "title": "Chapter 13: One O’Clock on Saturday",
+      "file": "18-chapter13.md"
+    },
+    {
+      "id": "chapter14",
+      "title": "Chapter 14: Hand Up",
+      "file": "19-chapter14.md"
+    },
+    {
+      "id": "chapter15",
+      "title": "Chapter 15: Concerned",
+      "file": "20-chapter15.md"
+    },
+    {
+      "id": "part-3",
+      "title": "Act Three: The Farm",
+      "file": "21-part-3.md"
+    },
+    {
+      "id": "chapter16",
+      "title": "Chapter 16: Swarf",
+      "file": "22-chapter16.md"
+    },
+    {
+      "id": "chapter17",
+      "title": "Chapter 17: Pass the Beans",
+      "file": "23-chapter17.md"
+    },
+    {
+      "id": "chapter18",
+      "title": "Chapter 18: Somebody Came By at Eight",
+      "file": "24-chapter18.md"
+    },
+    {
+      "id": "chapter19",
+      "title": "Chapter 19: Ugly Is a Maintenance Feature",
+      "file": "25-chapter19.md"
+    },
+    {
+      "id": "chapter20",
+      "title": "Chapter 20: What a Tomato Costs",
+      "file": "26-chapter20.md"
+    },
+    {
+      "id": "chapter21",
+      "title": "Chapter 21: Bait",
+      "file": "27-chapter21.md"
+    },
+    {
+      "id": "chapter22",
+      "title": "Chapter 22: The Crucible",
+      "file": "28-chapter22.md"
+    },
+    {
+      "id": "chapter23",
+      "title": "Chapter 23: Forty Acres",
+      "file": "29-chapter23.md"
+    },
+    {
+      "id": "meanwhile-3",
+      "title": "Meanwhile",
+      "file": "30-meanwhile-3.md"
+    },
+    {
+      "id": "chapter24",
+      "title": "Chapter 24: First Fire",
+      "file": "31-chapter24.md"
+    },
+    {
+      "id": "chapter25",
+      "title": "Chapter 25: Gradually",
+      "file": "32-chapter25.md"
+    },
+    {
+      "id": "chapter26",
+      "title": "Chapter 26: Thirty Centimeters",
+      "file": "33-chapter26.md"
+    },
+    {
+      "id": "chapter27",
+      "title": "Chapter 27: Ship Them",
+      "file": "34-chapter27.md"
+    },
+    {
+      "id": "chapter28",
+      "title": "Chapter 28: Node 7",
+      "file": "35-chapter28.md"
+    },
+    {
+      "id": "chapter29",
+      "title": "Chapter 29: People in It",
+      "file": "36-chapter29.md"
+    },
+    {
+      "id": "chapter30",
+      "title": "Chapter 30: Three Minutes",
+      "file": "37-chapter30.md"
+    },
+    {
+      "id": "chapter31",
+      "title": "Chapter 31: The Dark Night",
+      "file": "38-chapter31.md"
+    },
+    {
+      "id": "part-4",
+      "title": "Act Four: Home",
+      "file": "39-part-4.md"
+    },
+    {
+      "id": "meanwhile-4",
+      "title": "Meanwhile",
+      "file": "40-meanwhile-4.md"
+    },
+    {
+      "id": "chapter32",
+      "title": "Chapter 32: Hush",
+      "file": "41-chapter32.md"
+    },
+    {
+      "id": "chapter33",
+      "title": "Chapter 33: Normal",
+      "file": "42-chapter33.md"
+    },
+    {
+      "id": "chapter34",
+      "title": "Chapter 34: A Few Thousand Dollars of Robot Arms",
+      "file": "43-chapter34.md"
+    },
+    {
+      "id": "chapter35",
+      "title": "Chapter 35: The Plants Look Thirsty",
+      "file": "44-chapter35.md"
+    },
+    {
+      "id": "chapter36",
+      "title": "Chapter 36: The Fire",
+      "file": "45-chapter36.md"
+    },
+    {
+      "id": "chapter37",
+      "title": "Chapter 37: Go Home",
+      "file": "46-chapter37.md"
+    },
+    {
+      "id": "chapter38",
+      "title": "Chapter 38: Thanksgiving",
+      "file": "47-chapter38.md"
+    },
+    {
+      "id": "chapter39",
+      "title": "Chapter 39: Back to Bear Flag",
+      "file": "48-chapter39.md"
+    },
+    {
+      "id": "afterword",
+      "title": "Afterword: We Don’t Have to Live Like This",
+      "file": "49-afterword.md"
+    }
+  ]
+}

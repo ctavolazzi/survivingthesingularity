@@ -214,7 +214,7 @@
         is {offer.price} and it helps the book get finished.
       </p>
       <p class="closing-note">
-        Commentary and informational only. Not professional advice of any kind. See the
+        The book is a novel, a work of fiction. Not professional advice of any kind. See the
         <a href="/disclaimer" class="closing-link">Disclaimer</a> and
         <a href="/terms" class="closing-link">Terms</a>.
       </p>

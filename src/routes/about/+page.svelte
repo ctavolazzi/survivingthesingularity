@@ -62,6 +62,7 @@
       <p>{evolution.story}</p>
       <p>{evolution.now}</p>
       <p>{evolution.earlierBuyers} <a href={evolution.archivePath} class="note-link">Open the archive</a>.</p>
+      {#if evolution.refund}<p>{evolution.refund} <a href="/policies#refunds" class="note-link">How to ask</a>.</p>{/if}
       <p>{evolution.landing}</p>
       <p>{stance.close}</p>
     </section>
@@ -111,7 +112,7 @@
 
     <section class="about-section about-note">
       <p>
-        This is commentary and informational only. Not professional advice of any kind. See the <a href="/disclaimer" class="note-link">Disclaimer</a>, <a href="/policies" class="note-link">Privacy Policy</a>, and <a href="/terms" class="note-link">Terms of Use</a> for the full picture.
+        The book is a novel. The rest of this site is commentary. None of it is professional advice. See the <a href="/disclaimer" class="note-link">Disclaimer</a>, <a href="/policies" class="note-link">Privacy Policy</a>, and <a href="/terms" class="note-link">Terms of Use</a> for the full picture.
       </p>
     </section>
   </div>

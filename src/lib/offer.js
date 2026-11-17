@@ -87,7 +87,52 @@ export const evolution = Object.freeze({
     'happening, all this stuff that\u2019s coming, feels immense and scary. ' +
     'It doesn\u2019t have to be. We can level up our own understanding of how ' +
     'this stuff works, and we can stick the landing.',
+  // A refund for the people who bought a different book than the one that
+  // exists. Added 2026-11-17 after looking at how others handle it: no rule
+  // was found that squarely covers a changed digital preorder, but the common
+  // practice when a funded book changes scope is to offer the money back, and
+  // the ordinary refund window (thirty days from purchase) had already closed
+  // for people who bought in August. No deadline on purpose: it is at most a
+  // few dozen five-dollar purchases, and a deadline is one more promise to
+  // track. CT can remove this line; nothing else depends on it.
+  refund:
+    'If you preordered while this site described the book as a nonfiction ' +
+    'guide, and a novel is not what you wanted, you can have a full refund ' +
+    'whenever you ask, however long ago you bought.',
   archivePath: '/archive'
+});
+
+/**
+ * WHAT IS BEING SOLD, IN THE WORDS CALIFORNIA ASKS FOR.
+ *
+ * California Business and Professions Code section 17500.6 (AB 2426, in force
+ * since 2025-01-01) covers digital books. A seller who uses "buy" or
+ * "purchase" for a digital good that is really a license must either get the
+ * buyer's acknowledgment or state, clearly and apart from the other terms,
+ * that it is a license, with a link to the full terms. Goods the buyer can
+ * download and keep offline are outside it; an online reader that lasts
+ * "while the project is maintained" is not. So the buy buttons carry
+ * `license.short`, on its own line, and /policies carries `license.full`.
+ *
+ * Read from law-firm summaries of the statute, not the statute itself: the
+ * official text could not be fetched from this environment. NOT REVIEWED BY A
+ * LAWYER.
+ */
+export const license = Object.freeze({
+  short:
+    'You are buying a license to read this book, not ownership of it. Online ' +
+    'access lasts while the project is maintained; files delivered to you ' +
+    'are yours to keep.',
+  full:
+    'Your payment buys a personal, non-transferable license to read the ' +
+    'digital book. It does not transfer the copyright or any ownership of ' +
+    'the work, which stay with the author. The license covers the online ' +
+    'reader for as long as this project is maintained, and any files ' +
+    'delivered to you, which you may keep and read offline for your own ' +
+    'use. You may not resell, republish or redistribute the book. If the ' +
+    'project ends, the online reader can end with it; what you have ' +
+    'already downloaded stays yours to read.',
+  termsPath: '/policies#license'
 });
 
 /**

@@ -3,7 +3,7 @@
   import { page } from '$app/stores';
   import BookCover from '$lib/components/BookCover.svelte';
   // Nothing on this page states the offer in its own words. See src/lib/offer.js.
-  import { offer, offerBlurb } from '$lib/offer';
+  import { offer, offerBlurb, license } from '$lib/offer';
   import { book } from '$lib/bookContent';
   import { novel, acts } from '$lib/novelActs.js';
   import { stance } from '$lib/stance.js';
@@ -190,6 +190,10 @@
           on:keydown={(e) => e.key === 'Enter' && checkout(e.currentTarget)}
           disabled={checkoutLoading}
         />
+
+        <!-- California B&P 17500.6: say it is a license, plainly, on its own
+             line and before the purchase, with a link to the full terms. -->
+        <p class="ea-license">{license.short} <a href={license.termsPath}>What that means</a>.</p>
 
         <button
           class="ea-buy-btn"
@@ -414,6 +418,8 @@
       on:keydown={(e) => e.key === 'Enter' && checkout(e.currentTarget)}
       disabled={checkoutLoading}
     />
+
+    <p class="ea-license">{license.short} <a href={license.termsPath}>What that means</a>.</p>
 
     <button
       class="ea-bottom-btn"
@@ -658,6 +664,8 @@
     display: flex; align-items: center; gap: 8px;
     font-size: 0.85rem; color: var(--text-2);
   }
+  .ea-license { margin: 0 0 12px; font-size: 0.85rem; line-height: 1.5; color: var(--text-2); }
+  .ea-license a { color: var(--amber); text-underline-offset: 2px; }
   .ea-secure-note {
     display: flex; align-items: center; gap: 6px;
     font-size: 0.75rem; color: var(--text-3); padding-top: 12px;

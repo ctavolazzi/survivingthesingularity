@@ -3,7 +3,8 @@
   // Every offer claim on this page is derived, never typed. See src/lib/offer.js
   // for why: the sales pages and this page used to describe two different
   // transactions, and the fix is one object rather than better proofreading.
-  import { offer, cadence, evolution, refundClause } from '$lib/offer';
+  import { offer, cadence, evolution, license, refundClause } from '$lib/offer';
+  import { bookNotice } from '$lib/bookNotice.js';
   import book from '$lib/data/novel/book.json';
 
   onMount(() => {
@@ -42,7 +43,7 @@
   <div class="policies-inner">
     <header class="p-header">
       <h1>Our Policies</h1>
-      <p class="p-sub">Last updated: 12 October 2026.</p>
+      <p class="p-sub">Last updated: 17 November 2026.</p>
     </header>
 
     <section id="what-you-buy" class="p-section">
@@ -189,8 +190,20 @@
         {offer.price} purchase gives access to the current digital material
         after payment; it does not wait for a future publication date.
       </p>
-      <p>
+      <p id="refunds">
         <strong>Digital preorder refunds:</strong> {refundClause()}
+      </p>
+      {#if evolution.refund}
+        <p>
+          <strong>If you bought before the book became a novel:</strong>
+          {evolution.refund} Email
+          <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a>
+          from the address used to place the order with the subject line
+          "{offer.refund.subjectLine}".
+        </p>
+      {/if}
+      <p id="license">
+        <strong>A license, not ownership:</strong> {license.full}
       </p>
       <p>
         <strong>Help with a purchase:</strong> Contact
@@ -204,12 +217,16 @@
     <section id="disclaimers" class="p-section">
       <h2>Disclaimers</h2>
       <p>
-        <strong>This content represents personal opinions and speculation.</strong>
+        <strong>The book is a novel.</strong>
+        {bookNotice.fiction} {bookNotice.intent}
+      </p>
+      <p>
+        <strong>The rest of the site is personal opinion and speculation.</strong>
         Nothing on this site should be considered certain or guaranteed. All discussions about future events are speculation, not certainty.
       </p>
       <p>
         <strong>Not professional advice.</strong>
-        This information is for educational purposes only and should not be taken as financial, legal, investment, medical, or other professional advice.
+        Nothing here, in the book or outside it, should be taken as financial, legal, investment, medical, or other professional advice.
       </p>
       <p>
         <strong>Do your own research.</strong>

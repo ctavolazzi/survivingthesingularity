@@ -1,23 +1,27 @@
+<script>
+  import { bookNotice } from '$lib/bookNotice.js';
+</script>
+
 <svelte:head>
   <title>Disclaimer - Surviving the Singularity</title>
-  <meta name="description" content="Full disclaimer for Surviving the Singularity. Research and entertainment content only. Not professional advice." />
+  <meta name="description" content="Disclaimer for Surviving the Singularity. The book is a novel, a work of fiction. The rest of the site is commentary, not professional advice." />
   <meta name="robots" content="index, follow" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:title" content="Disclaimer" />
-  <meta property="og:description" content="Full disclaimer for Surviving the Singularity. Research and entertainment content only. Not professional advice." />
+  <meta property="og:description" content="Disclaimer for Surviving the Singularity. The book is a novel, a work of fiction. The rest of the site is commentary, not professional advice." />
   <meta property="og:url" content="https://survivingthesingularity.com/disclaimer" />
   <meta property="og:image" content="https://survivingthesingularity.com/images/og/home.png" />
   <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/home.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
-  <meta property="og:image:alt" content="Surviving the Singularity: a practical field guide for staying human in the age of AI." />
+  <meta property="og:image:alt" content="Surviving the Singularity, a novel by Christopher Tavolazzi." />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Disclaimer" />
-  <meta name="twitter:description" content="Full disclaimer for Surviving the Singularity. Research and entertainment content only. Not professional advice." />
+  <meta name="twitter:description" content="Disclaimer for Surviving the Singularity. The book is a novel, a work of fiction. The rest of the site is commentary, not professional advice." />
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/home.png" />
 </svelte:head>
 
@@ -34,22 +38,41 @@
       </div>
       <h1>Disclaimer</h1>
       <p class="dpg-sub">
-        Last updated: 26 May 2026. This page governs everything published at
-        survivingthesingularity.com - including the book, the blueprint, blog posts,
-        calculators, dashboards, and any linked resources.
+        Last updated: 17 November 2026. This page covers everything published at
+        survivingthesingularity.com: the novel, the blog, the checklist, the
+        countdown, the research feed, the archived earlier draft, and any
+        linked resources.
       </p>
     </header>
 
-    <section class="dpg-callout dpg-callout-major">
-      <h2>Informational and educational use only</h2>
+    <section class="dpg-callout dpg-callout-major" id="novel">
+      <h2>The book is a novel</h2>
+      <p><strong>{bookNotice.fiction}</strong></p>
+      <p>{bookNotice.realThings}</p>
+      <p>{bookNotice.intent} {bookNotice.story}</p>
+      <p>{bookNotice.opinion}</p>
+    </section>
+
+    <section class="dpg-section" id="site">
+      <h2>The rest of this site is commentary</h2>
       <p>
-        <strong>This site is for informational and educational purposes only.
-        It is not professional advice and should not be used in place of
-        professional advice. Please consult all relevant professionals before
-        making any decisions.</strong> Everything published here is the
-        author's commentary, supposition, and synthesis of publicly available
-        information. It may be wrong. It is almost certainly incomplete. It
-        will go out of date. See our <a href="/policies">privacy policy</a> and <a href="/terms">terms of use</a> for details on how this site operates and what you agree to by using it.
+        {bookNotice.site} It should not be used in place of professional
+        advice. It may be wrong. It is almost certainly incomplete. It will go
+        out of date. See our <a href="/policies">privacy policy</a> and
+        <a href="/terms">terms of use</a> for how this site operates and what
+        you agree to by using it.
+      </p>
+    </section>
+
+    <section class="dpg-section" id="archive">
+      <h2>The archived earlier draft</h2>
+      <p>
+        Before it became a novel, this book was a nonfiction draft. That draft
+        is kept, unrevised, for the people who preordered it. It is a
+        historical document: the author's commentary and speculation as of its
+        last update, no longer maintained or corrected. Everything on this
+        page about commentary, forecasts, risk and professional advice applies
+        to it in full. Nothing in it is a plan to follow.
       </p>
     </section>
 
@@ -82,9 +105,11 @@
     <section class="dpg-section">
       <h2>Speculation, forecasts, and forward-looking statements</h2>
       <p>
-        Many statements on this site - including predictions about AI, AGI, the
-        economy, housing, employment, geopolitics, technology timelines, and the
-        future generally - are <strong>speculation, conjecture, and supposition</strong>.
+        Many statements on this site outside the novel - including the countdown
+        on the homepage and predictions about AI, AGI, the economy, housing,
+        employment, geopolitics, technology timelines, and the future generally -
+        are <strong>speculation, conjecture, and supposition</strong>. Inside
+        the novel, the future is invented.
         They are not predictions you should rely on. The author can be, and often
         will be, wrong. Past commentary should not be read as a track record.
       </p>
@@ -272,7 +297,7 @@
         a pointer to a source you should evaluate yourself, not as a vetted recommendation.
       </p>
       <p>
-        For the book's sourced argument, see <a href="/book">the book page</a>. Claims there are curated by the author and held to a higher standard than the automated feed.
+        The feed has nothing to do with the novel, which is fiction and makes no claims of its own.
       </p>
     </section>
 

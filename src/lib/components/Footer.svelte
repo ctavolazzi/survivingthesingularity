@@ -45,7 +45,7 @@
 
     <div class="footer-bottom">
       <p class="footer-consent">
-        This site is for informational and educational purposes only, not professional advice. By using it, you agree to our
+        The book is a novel. The rest of this site is commentary. None of it is professional advice. By using it, you agree to our
         <a href="/terms" class="footer-disclaimer-link">Terms</a>,
         <a href="/disclaimer" class="footer-disclaimer-link">Disclaimer</a>, and
         <a href="/policies" class="footer-disclaimer-link">Privacy Policy</a>.

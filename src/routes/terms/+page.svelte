@@ -1,7 +1,8 @@
 <script>
   // These Terms describe a site that sells something, so the price comes from
   // the offer object rather than being typed here. See src/lib/offer.js.
-  import { offer } from '$lib/offer';
+  import { offer, license, evolution } from '$lib/offer';
+  import { bookNotice } from '$lib/bookNotice.js';
 </script>
 
 <svelte:head>
@@ -30,19 +31,22 @@
   <div class="terms-inner">
     <header class="t-header">
       <h1>Terms of Use</h1>
-      <p class="t-sub">Last updated: 12 October 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
+      <p class="t-sub">Last updated: 17 November 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
     </header>
 
     <section class="t-section">
-      <h2>1. Informational purposes only</h2>
+      <h2>1. A novel, and commentary</h2>
       <p>
-        All content on the Site is provided for <strong>informational, research,
-        commentary, and entertainment purposes only</strong>. Nothing on the
-        Site is, or should be construed as, financial, legal, tax, accounting,
-        medical, mental-health, real-estate, construction, engineering,
-        investment, security, or any other professional advice. <strong>Always
-        consult the relevant licensed professionals before making any
-        decisions.</strong> See the
+        <strong>{bookNotice.fiction}</strong> {bookNotice.intent}
+      </p>
+      <p>
+        All other content on the Site is provided for <strong>commentary,
+        general information, and entertainment only</strong>. Nothing on the
+        Site, in the book or outside it, is or should be construed as
+        financial, legal, tax, accounting, medical, mental-health, real-estate,
+        construction, engineering, investment, security, or any other
+        professional advice. <strong>Always consult the relevant licensed
+        professionals before making any decisions.</strong> See the
         <a href="/disclaimer">full disclaimer</a> for additional detail; the
         disclaimer is incorporated into these Terms by reference.
       </p>
@@ -54,8 +58,8 @@
         {offer.sentence}
       </p>
       <p>
-        The Site offers a one-time {offer.price} preorder. It grants digital
-        access and delivers immediately. <strong>Nothing is shipped.</strong>
+        The Site offers a one-time {offer.price} preorder of a novel. It grants
+        digital access and delivers immediately. <strong>Nothing is shipped.</strong>
         The Print Edition is a separate product, at its own price, and is not
         included in the preorder; the preorder includes a discount right
         against it once it exists.
@@ -68,6 +72,13 @@
         <a href="/policies">policies page</a>, which is incorporated into these
         Terms by reference. Where these Terms and the policies page disagree
         about what is being sold, the policies page governs.
+      </p>
+      <p>
+        <strong>A license, not ownership.</strong> {license.full}
+      </p>
+      <p>
+        <strong>The book changed.</strong> {evolution.story} {evolution.earlierBuyers}
+        {#if evolution.refund}{evolution.refund}{/if}
       </p>
       <p>
         Nothing in section 1 above limits your statutory rights as a consumer in
@@ -126,7 +137,8 @@
         from it, entirely at your own risk. Topics referenced on the Site -
         including but not limited to construction, off-grid systems,
         agriculture, electrical work, finance, investing, business, AI
-        deployment, healthcare topics, and lifestyle changes - involve real
+        deployment, healthcare topics, and lifestyle changes, whether they
+        appear in commentary or in the events of the novel - involve real
         physical, financial, legal, and other risks. <strong>You are solely
         responsible for any decision you make or action you take based on
         anything you read on the Site.</strong>

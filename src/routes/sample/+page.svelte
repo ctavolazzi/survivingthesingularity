@@ -7,23 +7,23 @@
 </script>
 
 <svelte:head>
-  <title>Free sample & reading guide | Surviving the Singularity</title>
-  <meta name="description" content="Read the introduction and choose a path through Surviving the Singularity. A free sample from the current draft, with no email or password required." />
+  <title>Free sample | Surviving the Singularity</title>
+  <meta name="description" content="Read the Author's Note and the first chapter of Surviving the Singularity, a novel. No email or password required." />
 </svelte:head>
 
 <SocialMeta
   title="Read a free sample | Surviving the Singularity"
-  description="Read the introduction and reading guide from the current draft. No email or password required."
+  description="Read the Author's Note and the first chapter of the novel. No email or password required."
   type="website"
   image="/images/og/sample.png"
-  imageAlt="Read a free sample of Surviving the Singularity: the introduction and reading guide, with no email required."
+  imageAlt="Read a free sample of Surviving the Singularity, a novel: the first chapter, with no email required."
 />
 
 <div class="sample-page">
   <header>
-    <p class="eyebrow">FREE SAMPLE · DRAFT v{data.version}</p>
+    <p class="eyebrow">FREE SAMPLE · {data.edition.toUpperCase()}</p>
     <h1>Start with the book.</h1>
-    <p>Read the introduction, then use the reading guide to choose a path for your work, household, or community. These excerpts come from the current draft.</p>
+    <p>The Author&rsquo;s Note and the first chapter of the novel, as they stand in the current draft.</p>
     <nav aria-label="Sample sections">
       {#each data.excerpts as excerpt}
         <a href={'#' + excerpt.id}>{excerpt.title}</a>
@@ -38,8 +38,8 @@
   {/each}
 
   <aside aria-label="Continue reading">
-    <h2>Continue with the full draft</h2>
-    <p>The full reader uses the draft access code supplied with your purchase. This sample stays open to everyone.</p>
+    <h2>Keep reading</h2>
+    <p>The full reader uses the access code supplied with your purchase. This sample stays open to everyone.</p>
     <div class="actions">
       <a href="/early-access">See the {offer.price} book offer</a>
       <a href="/book">Open the full reader</a>

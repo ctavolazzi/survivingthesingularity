@@ -1,8 +1,12 @@
 import { marked } from 'marked';
 import { sanitizeHtml } from './sanitizeHtml.js';
 import { katexExtension } from './katexExtension.js';
-import imageDimensions from '../data/book/image-dimensions.json';
+import archiveImageDimensions from '../data/book/image-dimensions.json';
+import novelImageDimensions from '../data/novel/image-dimensions.json';
 import visuals from '../data/book/visuals.json';
+
+// Both book sources render through here: the novel and the archived draft.
+const imageDimensions = { ...archiveImageDimensions, ...novelImageDimensions };
 
 // Configure once per module, including when a route reuses its component.
 marked.use(katexExtension);

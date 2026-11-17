@@ -4,11 +4,14 @@
   import { sectionsWithMeta, book } from '$lib/bookContent';
   import { bookPage } from '$lib/stores/bookPage';
   import BookCover from '$lib/components/BookCover.svelte';
-  import { downloadHref, releasedVersion } from '$lib/bookManifest.js';
+  import { evolution } from '$lib/offer';
+  import { novel } from '$lib/novelActs.js';
 
   // Derived from the RELEASED build, not the open working version; mid-cycle
   // those differ and only released's file exists.
-  const pdfHref = downloadHref(releasedVersion(book), 'pdf');
+  // No file download here yet: the novel's PDF and EPUB are made at release.
+  // The earlier draft's files stay with the archive.
+  const chapterCount = sectionsWithMeta.filter(s => /^chapter\d+$/.test(s.id)).length;
 
   let visible = false;
   let lastVisitedId = null;
@@ -24,8 +27,8 @@
 
   $: lastVisitedSection = sectionsWithMeta.find(s => s.id === lastVisitedId) ?? null;
 
-  // Group the flat section list into Front Matter / Part I / II / III / Back
-  // Matter for the table of contents, using the "part-N" divider entries
+  // Group the flat section list into Front Matter and the four acts for the
+  // table of contents, using the "part-N" act-divider entries
   // already in book.json as the group boundaries.
   const tocGroups = (() => {
     const groups = [];
@@ -59,21 +62,18 @@
       </div>
       <h1 class="eyebrow">Surviving the Singularity</h1>
       <p class="preface-text">
-        This book explores how AI and automation could help make ordinary life more secure,
-        starting with food. It combines historical cases, speculative stories, and proposals
-        for practical cooperation. Forecasts remain uncertain; proposed systems need evidence,
-        competent operators, and the participation of the people who depend on them.
-        What follows is the complete current draft, organized by section. Your purchase email
-        contains the shared reader password and downloads. A public sample and reading guide
-        are available at <a href="/sample">Read a Free Sample</a>.
+        This is a novel. {novel.premise}
+        What follows is the complete current draft, in order. Your purchase email
+        contains the shared reader password. A public sample, the first chapter, is at
+        <a href="/sample">Read a Free Sample</a>.
       </p>
-      <p class="preface-meta">Draft v{book.version} &middot; {sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words total</p>
+      <p class="preface-meta">{book.edition} &middot; {chapterCount} chapters in four acts &middot; {totalWords.toLocaleString()} words</p>
       <div class="pdf-actions">
         <a href="/read" class="pdf-btn pdf-btn-primary">
           Read it straight through <span aria-hidden="true">&rarr;</span>
         </a>
-        <a href={pdfHref} target="_blank" rel="noopener" class="pdf-btn pdf-btn-ghost">
-          View the PDF in your browser <span aria-hidden="true">&nearr;</span>
+        <a href={evolution.archivePath} class="pdf-btn pdf-btn-ghost">
+          The earlier nonfiction draft <span aria-hidden="true">&rarr;</span>
         </a>
       </div>
     </div>

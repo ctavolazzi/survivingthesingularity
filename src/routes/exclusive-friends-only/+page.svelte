@@ -6,14 +6,10 @@
   import { bookUnlocked } from '$lib/stores/bookAccess.js';
   import BookCover from '$lib/components/BookCover.svelte';
   import { offer } from '$lib/offer';
-  import { downloadHref, releasedVersion } from '$lib/bookManifest.js';
 
   // Downloads derive from the RELEASED build, never the open working version:
   // mid-cycle those differ, and a version-derived href is the 404 this page
   // shipped once already.
-  const released = releasedVersion(book);
-  const pdfHref = downloadHref(released, 'pdf');
-  const epubHref = downloadHref(released, 'epub');
 
   let password = '';
   let formError = '';
@@ -140,16 +136,16 @@
       <p class="eyebrow">Access granted</p>
       <h1 class="welcome-title">You're in. Take the whole thing.</h1>
       <p class="welcome-text">
-        This is the complete current draft of <em>Surviving the Singularity</em>, v{book.version},
-        the same file that goes out to preorders. Start reading right here, right now, or take
-        the PDF with you. No paywall between you and any of it.
+        This is the complete current draft of <em>Surviving the Singularity</em>, the novel,
+        the same text preorder readers get. Start reading right here, right now.
+        No paywall between you and any of it.
       </p>
       <p class="welcome-text">
-        It's a draft, so it's still moving. If something reads wrong, or you spot a claim that
-        doesn't hold up, tell me. That's the actual reason you have this early.
+        It's a draft, so it's still moving. If something reads wrong, tell me.
+        That's the actual reason you have this early.
       </p>
       <p class="welcome-meta">
-        Draft v{book.version} &middot; {sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words
+        {book.edition} &middot; {sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words
       </p>
     </div>
   </section>
@@ -195,40 +191,17 @@
   </section>
 
   <!-- ── DOWNLOADS ──
-       Deliberately second. Reading online is the thing that works instantly;
-       the file is the thing you take with you. Both hrefs are derived from
-       book.json, and scripts/check-book-downloads.mjs fails the build if the
-       matching file is not in static/downloads - these links 404'd in
-       production once because nothing asserted that. -->
+       The novel has no built PDF or EPUB on the site yet; those are made at
+       release. Until then this section points at the earlier nonfiction draft,
+       whose files are still in static/downloads and still checked by
+       scripts/check-book-downloads.mjs through the archive. -->
   <section class="downloads">
     <div class="inner">
-      <p class="section-label">It's also a file</p>
-      <h2 class="read-title">Take the current draft with you.</h2>
+      <p class="section-label">The earlier draft</p>
+      <h2 class="read-title">The book used to be a nonfiction guide.</h2>
       <p class="read-sub">
-        The latest built edition, v{released}, as a file you own. Keep it, print it,
-        put it on an e-reader, send it to somebody. It's a draft, so it'll be replaced by a
-        newer one, but this copy is yours.
+        That draft is still readable, with its PDF and EPUB, in <a href="/archive">the archive</a>.
       </p>
-      <div class="dl-grid">
-        <a href={pdfHref} class="dl-card" download>
-          <span class="dl-format">PDF</span>
-          <span class="dl-title">The full book, laid out</span>
-          <span class="dl-note">Illustrated edition. Reads well on a laptop or printed.</span>
-          <span class="dl-action">Download <span aria-hidden="true">&darr;</span></span>
-        </a>
-        <a href={epubHref} class="dl-card" download>
-          <span class="dl-format">EPUB</span>
-          <span class="dl-title">For your e-reader</span>
-          <span class="dl-note">Kindle, Kobo, Apple Books. Reflows to your screen.</span>
-          <span class="dl-action">Download <span aria-hidden="true">&darr;</span></span>
-        </a>
-        <a href={pdfHref} class="dl-card" target="_blank" rel="noopener">
-          <span class="dl-format">Browser</span>
-          <span class="dl-title">Just open the PDF</span>
-          <span class="dl-note">No download. Opens in a new tab, exactly as printed.</span>
-          <span class="dl-action">Open <span aria-hidden="true">&nearr;</span></span>
-        </a>
-      </div>
     </div>
   </section>
 

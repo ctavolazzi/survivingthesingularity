@@ -363,7 +363,7 @@
     {:else}
       <footer class="end">
         <p class="end-line">That's the current draft.</p>
-        <p class="end-sub">Draft v{book.version} &middot; {totalWords.toLocaleString()} words. It updates as it's written.</p>
+        <p class="end-sub">{book.edition} &middot; {totalWords.toLocaleString()} words. The finished book replaces it when it publishes.</p>
         <div class="end-actions">
           <button class="end-btn" on:click={startOver}>Back to the top</button>
           <a href="/book" class="end-link">Leave the reader</a>

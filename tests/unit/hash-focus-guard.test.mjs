@@ -14,7 +14,7 @@ function extractedFunction(code) {
 }
 function focusHarness(code) {
   const callbacks = [], writes = [];
-  const original = 'https://survivingthesingularity.com/sample?utm_source=instagram#how-to-use';
+  const original = 'https://survivingthesingularity.com/sample?utm_source=instagram#chapter0';
   const location = { href: original, replace(url) { this.href = String(url); writes.push({ kind: 'location', url: this.href }); } };
   const history = { state: { navigation: 'sample' }, replaceState(state, _title, url) { this.state = state; location.href = String(url); writes.push({ kind: 'history', url: location.href }); } };
   const sandbox = {

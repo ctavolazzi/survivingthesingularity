@@ -22,7 +22,7 @@
         Reskilling people to pilot robots and do real, meaningful work. An autonomous seed-to-table pipeline bridging kitchens and community gardens with AI-driven robotics.
       </p>
       <p>
-        I write to make sense of the shift in real time. The book updates as the world does.
+        I write to make sense of the shift in real time. The book is a novel.
       </p>
       <div class="bio-links">
         <a href="https://thecoffeejesus.com" target="_blank" rel="noopener noreferrer">🌐 Home base</a>

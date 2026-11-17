@@ -125,7 +125,7 @@ test('no-JavaScript visitors can read the sample and get a checkout explanation'
   try {
     await page.goto(baseURL + '/sample');
     await expect(page.getByRole('heading', { name: 'Start with the book.', exact: true })).toBeVisible();
-    await expect(page.locator('#how-to-use')).toContainText('How to Use This Book');
+    await expect(page.locator('#chapter0')).toContainText('Chapter 0: The Demonstration');
     await page.goto(baseURL + '/early-access');
     const fallback = page.locator('noscript p').filter({ hasText: 'Checkout needs JavaScript' });
     await expect(fallback).toBeVisible();
@@ -210,14 +210,14 @@ test('a tagged social link survives sample navigation, back, forward and reload'
   await context.addInitScript(() => sessionStorage.setItem('sts:splash', 'seen'));
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.goto('/sample?utm_source=instagram&utm_medium=social&utm_campaign=book-launch#how-to-use', { waitUntil: 'networkidle' });
-  await expect(page.locator('#how-to-use')).toContainText('How to Use This Book');
+  await page.goto('/sample?utm_source=instagram&utm_medium=social&utm_campaign=book-launch#chapter0', { waitUntil: 'networkidle' });
+  await expect(page.locator('#chapter0')).toContainText('Chapter 0: The Demonstration');
   await page.getByRole('link', { name: /See the \$5 book offer/ }).click();
   await expect(page).toHaveURL(/\/early-access$/);
   await expect(page.locator('#ea-email')).toBeVisible();
   await page.goBack({ waitUntil: 'networkidle' });
-  await expect(page).toHaveURL(/utm_campaign=book-launch#how-to-use$/);
-  await expect(page.locator('#how-to-use')).toContainText('How to Use This Book');
+  await expect(page).toHaveURL(/utm_campaign=book-launch#chapter0$/);
+  await expect(page.locator('#chapter0')).toContainText('Chapter 0: The Demonstration');
   await page.goForward({ waitUntil: 'networkidle' });
   await expect(page).toHaveURL(/\/early-access$/);
   // A history traversal changes the URL before Kit finishes its data request.
@@ -248,11 +248,11 @@ test('a superseded hash-focus callback cannot rewrite the next history entry', a
       return nativeTimeout(callback, delay, ...args);
     };
   });
-  await page.goto('/sample?utm_source=instagram#how-to-use', { waitUntil: 'networkidle' });
+  await page.goto('/sample?utm_source=instagram#chapter0', { waitUntil: 'networkidle' });
   await page.getByRole('link', { name: /See the \$5 book offer/ }).click();
   await expect(page.locator('#ea-email')).toBeVisible();
   await page.goBack({ waitUntil: 'networkidle' });
-  await expect(page.locator('#how-to-use')).toContainText('How to Use This Book');
+  await expect(page.locator('#chapter0')).toContainText('Chapter 0: The Demonstration');
   await expect.poll(() => page.evaluate(() => window.__deferredHashFocus.length)).toBe(1);
   await page.goForward({ waitUntil: 'networkidle' });
   await expect(page).toHaveURL(/\/early-access$/);

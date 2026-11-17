@@ -3,15 +3,36 @@
 ## Product and stack
 
 SvelteKit 2 / Svelte 4 / Vite 5 site for the book **Surviving the Singularity**.
-The v0.11 release combines the book, a free public sample and checklist, a blog,
-and the $5 digital preorder. `src/lib/offer.js` owns purchase promises. Keep
-consumer copy consistent with that module; print is a separate product.
+Since 2026-11-17 the book is a **novel** (four acts, chapters 0 to 39, an
+afterword). The site combines the novel, a free public sample and checklist, a
+blog, and the $5 digital preorder. The earlier nonfiction draft (v0.11.0) is
+kept as an archive for the people who preordered it. `src/lib/offer.js` owns
+purchase promises. Keep consumer copy consistent with that module; print is a separate product.
 
 ## Source and generated files
 
-Read README.md's **Book content: the single source of truth** before changing
-book prose. `src/lib/data/book/book.json` sets the order of canonical Markdown
-in that directory. PDFs, EPUBs, snapshots, and bonus archives are generated.
+Two book sources, never mixed:
+
+- **The novel: `src/lib/data/novel/`.** `book.json` there sets the order.
+  The files are generated from the author's PDF by `scripts/novel_from_pdf.py`;
+  read `src/lib/data/novel/README.md` before touching them. `/book`, `/read`
+  and `/sample` read it through `src/lib/bookContent.js`.
+  `src/lib/novelActs.js` holds the act descriptions the sales pages show.
+- **The archive: `src/lib/data/book/`.** The nonfiction draft, v0.11.0,
+  frozen. `/archive` reads it through `src/lib/archiveContent.js`. Everything
+  README.md's **Book content: the single source of truth** says, and the whole
+  publication pipeline below, still describes this directory. Its
+  `book.json` sets the order of canonical Markdown in that directory.
+
+`src/lib/offer.js` `evolution` is the one statement of how the book changed
+and what earlier buyers keep. Do not restate it in a page.
+
+**Not done yet (2026-11-17):** the paid bundle, the confirmation email and the
+receipt page still deliver the earlier draft and The Precedent File, and the
+novel has no PDF or EPUB download. Do not merge sales copy that promises the
+novel as a download until that release step is done.
+
+PDFs, EPUBs, snapshots, and bonus archives are generated.
 Do not hand-edit those outputs. `publication/README.md` describes the current
 artifact pipeline and provenance checks.
 
@@ -21,7 +42,8 @@ of the current book. Do not describe URL/image resolution as factual support.
 
 ## Routes and data
 
-- `/sample`: open introduction and reading guide from canonical book source.
+- `/sample`: the Author's Note and first chapter of the novel, from its source.
+- `/archive`: the earlier nonfiction draft, behind the same access-code gate.
 - `/book`, `/book/[sectionId]`, `/read`: draft readers with a shared access-code
   gate. This is intentional client-side friction, not authentication.
 - `/early-access` and `/early-access/success`: purchase and verified receipt access.

@@ -2,6 +2,7 @@
   import SocialMeta from '$lib/components/SocialMeta.svelte';
   import summary from '$lib/data/factcheck-summary.json';
   import book from '$lib/data/book/book.json';
+  import novelBook from '$lib/data/novel/book.json';
 
   // Nothing on this page is a typed-in number. Every figure comes from
   // factcheck-summary.json, which sts.py generates alongside the trace itself,
@@ -54,10 +55,11 @@
   <section class="fc-section fc-honest" aria-labelledby="coverage-heading">
     <h2 id="coverage-heading">This snapshot covers an older edition</h2>
     <p>
-      The current manuscript is version <strong>{book.version}</strong>, updated
-      {book.lastUpdated}. The trace below covers <strong>{summary.book_version}</strong>.
+      The book is now a novel ({novelBook.edition.toLowerCase()}, dated {novelBook.lastUpdated}).
+      The trace below covers <strong>{summary.book_version}</strong> of the earlier
+      nonfiction draft, whose last version was <strong>{book.version}</strong>.
       Its counts and GitHub links describe that historical source, not the present
-      text. A new whole-manuscript audit has not been published here.
+      text. The novel has not been audited here.
     </p>
     <p>
       Automated statuses describe mechanical checks. <strong>SUPPORTED</strong>

@@ -24,17 +24,16 @@
   const EXIT = 170;      // ms the boot screen takes to split open
   const TEARDOWN = 60;   // ms of overrun before the node is removed
 
-  // The nine stages, in book order. Chapter 2 of the manuscript.
+  // Elijah's stages, in the novel's order and wording (Chapters 2 and 3).
+  // He names seven; past Stage 7 he writes, "I don't have paper big enough."
   const STAGES = [
     'THE CASH GRAB',
     'THE PANIC AND THE PLUG',
     'THE ADULTS STEP IN',
-    'THE END OF LABOR',
-    'THE PRIMATE BACKLASH',
-    'THE ASI EXODUS',
-    'THE ULTIMATE CURE',
-    'THE TRANSITION TO USI',
-    'THE APEX INTELLIGENCE'
+    'THE END OF THE DEAL',
+    'THE BACKLASH',
+    'IT IMPROVES ITSELF',
+    'IT LEAVES'
   ];
 
   let done = false;      // true once the node should leave the DOM
@@ -170,7 +169,7 @@
           <span class="hud-clock">T+{clock}<i>MS</i></span>
         </header>
 
-        <p class="hud-task">MAPPING THE NINE STAGES</p>
+        <p class="hud-task">MAPPING THE STAGES</p>
 
         <ol class="stages">
           {#each STAGES as stage, i}

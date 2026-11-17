@@ -14,7 +14,11 @@ import { setTimeout as delay } from 'node:timers/promises';
 import { expandRefs, assetName, releasedVersion } from '../src/lib/bookManifest.js';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
-const book = JSON.parse(await readFile(join(root, 'src/lib/data/book/book.json'), 'utf8'));
+// Two manifests since 2026-11-17. `book` is the novel the readers serve.
+// `archiveBook` is the frozen nonfiction draft whose PDF and EPUB are still the
+// only book files in static/downloads, so the download checks below use it.
+const book = JSON.parse(await readFile(join(root, 'src/lib/data/novel/book.json'), 'utf8'));
+const archiveBook = JSON.parse(await readFile(join(root, 'src/lib/data/book/book.json'), 'utf8'));
 // Local emulation only. A root Wrangler file with pages_build_output_dir opts
 // production into file-managed settings and replaces dashboard variables.
 const config = JSON.parse(await readFile(join(root, 'tests/fixtures/cloudflare-runtime.json'), 'utf8'));
@@ -113,7 +117,7 @@ try {
     assert(html.includes('Book access password'), `${path}: SSR reader gate`);
     assert(html.includes('content="noindex"'), `${path}: private-reader indexing policy`);
     const data = await (await get(`${path}/__data.json`)).json();
-    const canonical = expandRefs(book, await readFile(join(root, 'src/lib/data/book', section.file), 'utf8'));
+    const canonical = expandRefs(book, await readFile(join(root, 'src/lib/data/novel', section.file), 'utf8'));
     assert(data.nodes?.some((node) => Array.isArray(node?.data) && node.data.includes(canonical)), `${path}: complete canonical markdown in server load`);
   }
   for (const [path, marker] of [
@@ -125,19 +129,21 @@ try {
     const html = await (await get(path)).text();
     assert(html.includes(marker), `${path}: expected rendered page content`);
     if (path === '/sample') {
-      assert(html.includes('The Uncompromising Truth') && html.includes('How to Use This Book'), 'Public sample renders both excerpts');
-      assert(html.includes('Upton Sinclair'), 'Public sample includes rendered canonical prose');
+      assert(html.includes('Author’s Note') && html.includes('Chapter 0: The Demonstration'), 'Public sample renders both excerpts');
+      assert(html.includes('Elijah Galen Madrone'), 'Public sample includes rendered canonical prose');
     }
   }
   const sitemap = await (await get('/sitemap.xml')).text();
   assert.equal(sitemap, await readFile(join(root, 'static/sitemap.xml'), 'utf8'), 'Published sitemap matches the authoritative file');
   await get('/fonts/inter-v20-latin.woff2', { method: 'HEAD' });
-  const pdf = `/downloads/${assetName(releasedVersion(book), 'pdf')}`;
+  const pdf = `/downloads/${assetName(releasedVersion(archiveBook), 'pdf')}`;
   const pdfResponse = await get(pdf, { method: 'HEAD' });
   assert(pdfResponse.headers.get('content-type')?.includes('application/pdf'), 'Current PDF has the correct MIME type');
   const alias = await get('/downloads/Surviving-the-Singularity.pdf', { method: 'HEAD', status: 302 });
   assert.equal(new URL(alias.headers.get('location'), origin).pathname, pdf, 'Stable PDF alias reaches current release');
   await get('/book/not-a-canonical-section', { status: 404 });
+  const archive = await (await get('/archive')).text();
+  assert(archive.includes('Book access password') && archive.includes('content="noindex"'), '/archive: gated and not indexed');
   const previews = spawnSync('python3', [join(root, 'scripts/check-social-previews.py'), '--origin', origin], {
     cwd: scratch, env, stdio: 'inherit'
   });

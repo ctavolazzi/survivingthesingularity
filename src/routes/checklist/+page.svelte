@@ -7,7 +7,7 @@
   import BookCover from '$lib/components/BookCover.svelte';
   import LiteYouTube from '$lib/components/LiteYouTube.svelte';
   import { offer } from '$lib/offer';
-  import bookManifest from '$lib/data/book/book.json';
+  import { novel } from '$lib/novelActs.js';
 
   const categories = {
     foundation:     { label: 'Foundation',     color: '#f59e0b', desc: 'Understand your actual situation before you change anything.' },
@@ -71,14 +71,6 @@
   const teaser = allItems.filter(i => i.free);
   const gated  = allItems.filter(i => !i.free);
 
-  const relatedChapters = [
-    { id: 'chapter1', n: '01', tag: 'Foundation', color: '#f59e0b' },
-    { id: 'chapter10', n: '10', tag: 'Practice', color: '#3b82f6' },
-    { id: 'chapter11', n: '11', tag: 'Tools', color: '#3b82f6' },
-    { id: 'chapter12', n: '12', tag: 'Housing and land', color: '#10b981' },
-    { id: 'chapter16', n: '16', tag: 'Digital work', color: '#3b82f6' },
-    { id: 'chapter18', n: '18', tag: 'Planning', color: '#a78bfa' },
-  ].map(chapter => ({ ...chapter, title: bookManifest.sections.find(section => section.id === chapter.id)?.title || chapter.id }));
 
   // ── Interactive state ──────────────────────────────────────────────────────
   let answers = Object.fromEntries(
@@ -376,11 +368,7 @@
         <BookCover width="100%" sizes="(max-width: 640px) 80px, 200px" glow={false} />
       </div>
 
-      <ul class="cl-book-sales-parts">
-        <li><span class="cl-book-part-label">Part I</span> An argument about AI futures, with forecasts distinguished from evidence.</li>
-        <li><span class="cl-book-part-label">Part II</span> How people and communities can respond to change.</li>
-        <li><span class="cl-book-part-label">Part III</span> Practical proposals to examine and adapt to your circumstances.</li>
-      </ul>
+<p class="cl-book-sales-premise">A novel. {novel.premise}</p>
 
       <a href="/early-access" class="cl-book-sales-btn">
         Get Early Access. {offer.price}.
@@ -499,26 +487,14 @@
         </div>
       </section>
 
-      <!-- Go deeper: Blueprint chapter links -->
+      <!-- Go deeper. The chapter cards that used to sit here pointed into the
+           nonfiction draft; the book is a novel now, so this points at its
+           free first chapter instead. -->
       <section class="cl-deeper">
         <p class="cl-section-label">Go deeper</p>
         <h2 class="cl-deeper-heading">Continue with the book.</h2>
-        <p class="cl-deeper-sub">Early-access readers can open these chapters with their book password. For a free starting point, read the introduction and reading guide.</p>
-        <p class="cl-deeper-sub"><a href="/sample">Open the free sample &amp; reading guide</a></p>
-        <div class="cl-chapters">
-          {#each relatedChapters as ch}
-            <a href="/book/{ch.id}" class="cl-chapter-card">
-              <span class="cl-chapter-n" style="color: {ch.color}">{ch.n}</span>
-              <div class="cl-chapter-body">
-                <span class="cl-chapter-tag" style="color: {ch.color}">{ch.tag}</span>
-                <span class="cl-chapter-title">{ch.title}</span>
-              </div>
-              <svg class="cl-chapter-arrow" width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          {/each}
-        </div>
+        <p class="cl-deeper-sub">The book is a novel. It follows one man and nineteen households working through moves like these, and getting some of them wrong. The first chapter is free.</p>
+        <p class="cl-deeper-sub"><a href="/sample">Open the free sample</a></p>
       </section>
 
       <!-- Upgrade CTA -->
@@ -1005,6 +981,7 @@
   }
 
   /* ── GO DEEPER ── */
+  .cl-book-sales-premise { margin: 0 0 16px; line-height: 1.6; color: var(--text-2, #cbd5e1); font-size: 0.95rem; }
   .cl-deeper {
     margin: 2.5rem 0;
     padding-top: 2rem;

@@ -67,7 +67,7 @@
       <a href="/early-access" class="gate-hint-link">Preorder for {offer.price}</a>
       and your code arrives by email.
     </p>
-    <p class="gate-hint"><a href="/sample" class="gate-hint-link">Read the free sample &amp; reading guide</a>. No email or password needed.</p>
+    <p class="gate-hint"><a href="/sample" class="gate-hint-link">Read the free sample</a>, the first chapter. No email or password needed.</p>
     <p class="gate-hint">Already purchased? Check your order email, or <a href="mailto:ctavolazzi@gmail.com" class="gate-hint-link">contact us with your purchase email</a> for help recovering access.</p>
   </form>
 </section>

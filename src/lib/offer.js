@@ -46,8 +46,48 @@ export const cadence = Object.freeze({
   research: 'Research runs daily.',
   site: 'New coverage on the site as often as daily, whenever the news cycle gives us something worth publishing.',
   newsletter: 'A newsletter every week.',
-  book: 'The digital book itself updates monthly.',
+  // Until 2026-11-17 this said "The digital book itself updates monthly." That
+  // was true of the nonfiction draft and is not true of a novel, which gets
+  // finished. The replacement is the author's own sentence about what comes
+  // next, and it deliberately names no schedule.
+  book: 'The book is a novel. The current draft is replaced once, by the finished book, when it publishes.',
+  followUps: 'I intend to create follow-up works as time goes on, as time and resources allow.',
   print: 'A new Print Edition every year or two.'
+});
+
+/**
+ * HOW THE BOOK CHANGED, said once so every surface says it the same way.
+ *
+ * Through v0.11.0 the book was a nonfiction guide, and people preordered that.
+ * On 2026-11-17 the author's manuscript arrived as a novel. The site says so
+ * plainly instead of quietly swapping the description, because the people who
+ * paid were told one thing and are getting another.
+ *
+ * `story`, `now` and `landing` are the author's words from 2026-11-17, trimmed
+ * for the page. `earlierBuyers` is the commitment he chose the same day:
+ * earlier buyers get the novel, lose nothing they were promised, and keep the
+ * earlier draft readable. That last part is not new generosity. It is the
+ * sentence already in `foreverScope` below ("you keep everything already
+ * delivered and the archive stays readable"), kept.
+ */
+export const evolution = Object.freeze({
+  heading: 'How this book changed',
+  story:
+    'Surviving the Singularity started as a nonfiction guide. The book has ' +
+    'evolved over time, as the technology has evolved and as our perceptions ' +
+    'of that technology have evolved. It is now a novel.',
+  now:
+    'Right now, the novel is the only thing available. ' + cadence.followUps,
+  earlierBuyers:
+    'If you preordered before the change: the novel is yours at no extra ' +
+    'cost, every promise made at checkout still stands, and the earlier ' +
+    'nonfiction draft and The Precedent File stay readable in the archive.',
+  landing:
+    'We all want to survive the singularity. All this stuff that\u2019s ' +
+    'happening, all this stuff that\u2019s coming, feels immense and scary. ' +
+    'It doesn\u2019t have to be. We can level up our own understanding of how ' +
+    'this stuff works, and we can stick the landing.',
+  archivePath: '/archive'
 });
 
 /**
@@ -102,8 +142,9 @@ const PRECEDENT_FILE_SOURCED_COUNT = bundleManifest.counts.cases_with_sources;
 const REFUND_WINDOW_DAYS = 30;
 const DIGITAL_SCOPE =
   'Every digital thing this project publishes is included, starting with the ' +
-  'current book draft and The Precedent File. Substantial updates and future ' +
-  'digital editions remain included while the project is maintained. ' +
+  'novel (the current draft now, the finished book when it publishes) and ' +
+  'The Precedent File. Future digital editions remain included while the ' +
+  'project is maintained. ' +
   'Preorder buyers never pay the planned membership. Print is sold separately.';
 
 export const offer = Object.freeze({
@@ -142,7 +183,7 @@ export const offer = Object.freeze({
    * about. It names no amount, so a price change cannot strand it.
    */
   preorderPlain:
-    'This is a digital book preorder. You read the current draft now and ' +
+    'This is a digital preorder of a novel. You read the current draft now and ' +
     'receive future digital editions while the project is maintained.',
 
   access:
@@ -172,16 +213,17 @@ export const offer = Object.freeze({
       id: 'all-digital',
       title: 'All the digital content.',
       detail:
-        'Everything this project publishes in digital form. There is no ' +
-        'digital tier above this one and nothing else to buy.',
+        'Everything this project publishes in digital form. Right now that ' +
+        'is the novel. There is no digital tier above this one and nothing ' +
+        'else to buy.',
       available: true
     }),
     Object.freeze({
       id: 'book-draft',
-      title: 'The book as it is being written.',
+      title: 'The novel.',
       detail:
-        'Read the current pre-release version on the site, every section, ' +
-        'updated monthly as the field moves.',
+        'Read the current draft on the site now, every chapter. The finished ' +
+        'book replaces it when it publishes.',
       available: true
     }),
     /**
@@ -394,5 +436,5 @@ export function refundClause() {
  * paragraph will not fit. Derived so it cannot drift from `sentence`.
  */
 export function offerBlurb() {
-  return `${offer.price} once. The current book draft, The Precedent File, and future digital editions while the project is maintained. Preorder buyers never pay the planned membership. Print is sold separately.`;
+  return `${offer.price} once. The novel (the current draft now, the finished book when it publishes), The Precedent File, and future digital editions while the project is maintained. Preorder buyers never pay the planned membership. Print is sold separately.`;
 }

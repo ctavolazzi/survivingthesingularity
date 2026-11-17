@@ -3,8 +3,8 @@
   // Every offer claim on this page is derived, never typed. See src/lib/offer.js
   // for why: the sales pages and this page used to describe two different
   // transactions, and the fix is one object rather than better proofreading.
-  import { offer, cadence, refundClause } from '$lib/offer';
-  import book from '$lib/data/book/book.json';
+  import { offer, cadence, evolution, refundClause } from '$lib/offer';
+  import book from '$lib/data/novel/book.json';
 
   onMount(() => {
     if (window.location.hash) {
@@ -73,7 +73,7 @@
 
       <p>
         <strong>How often things change:</strong> {cadence.research} {cadence.site}
-        {cadence.newsletter} {cadence.book} {cadence.print}
+        {cadence.newsletter} {cadence.book} {cadence.followUps} {cadence.print}
       </p>
     </section>
 
@@ -116,7 +116,7 @@
           <strong>No personal accounts:</strong> There are no profiles or
           individual sign-ins. The full online draft uses a shared book-access
           password; this is separate from an account password. The
-          <a href="/sample">public sample and reading guide</a> need no password.
+          <a href="/sample">public sample</a> needs no password.
           {offer.access}
         </p>
         <p>
@@ -182,9 +182,10 @@
         does not delete a previously sent email or server record.
       </p>
       <p>
-        <strong>Book status:</strong> The current manuscript is version
-        {book.version}, updated {book.lastUpdated}. It remains in development.
-        There is no confirmed final-edition or print release date. The
+        <strong>Book status:</strong> The book is a novel. The current manuscript
+        is the {book.edition.toLowerCase()}, dated {book.lastUpdated}. It remains in development.
+        There is no confirmed print release date. {evolution.story}
+        {evolution.earlierBuyers} The
         {offer.price} purchase gives access to the current digital material
         after payment; it does not wait for a future publication date.
       </p>

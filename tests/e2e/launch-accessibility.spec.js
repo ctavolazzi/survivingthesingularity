@@ -135,12 +135,12 @@ test('public sample renders both excerpts and the guide works without an access 
   await acceptNotice(page);
   await page.goto('/sample', { waitUntil: 'networkidle' });
   await expect(page.getByRole('heading', { name: 'Start with the book.', exact: true })).toBeVisible();
-  await expect(page.locator('#introduction')).toContainText(/introduction/i);
+  await expect(page.locator('#authors-note')).toContainText(/author/i);
   await expect(page.getByLabel('Book access password', { exact: true })).toHaveCount(0);
-  const guide = page.getByRole('navigation', { name: 'Sample sections' }).getByRole('link', { name: 'How to Use This Book', exact: true });
+  const guide = page.getByRole('navigation', { name: 'Sample sections' }).getByRole('link', { name: 'Chapter 0: The Demonstration', exact: true });
   await guide.click();
-  await expect(page).toHaveURL(/\/sample#how-to-use$/);
-  await expect(page.locator('#how-to-use')).toContainText('How to Use This Book');
+  await expect(page).toHaveURL(/\/sample#chapter0$/);
+  await expect(page.locator('#chapter0')).toContainText('Chapter 0: The Demonstration');
   await expect(page.getByRole('link', { name: /See the \$5 book offer/ })).toHaveAttribute('href', '/early-access');
 });
 
@@ -254,7 +254,7 @@ test('book gate has a persistent label, a public sample, and recoverable invalid
   await page.goto('/book', { waitUntil: 'networkidle' });
   const password = page.getByLabel('Book access password', { exact: true });
   await expect(password).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Read the free sample & reading guide', exact: true })).toHaveAttribute('href', '/sample');
+  await expect(page.getByRole('link', { name: 'Read the free sample', exact: true })).toHaveAttribute('href', '/sample');
   await password.fill('incorrect');
   await page.getByRole('button', { name: 'Unlock', exact: true }).click();
   await expect(page.getByRole('alert')).toHaveText('Incorrect password.');
@@ -276,7 +276,7 @@ test('unlocked readers can open the continuous book, resize text, and jump to a 
   await page.getByRole('button', { name: 'Chapters', exact: true }).click();
   const chapters = page.getByRole('dialog', { name: 'Chapters', exact: true });
   await expect(chapters.getByRole('button', { name: 'Close chapter list' })).toBeFocused();
-  await chapters.getByRole('button', { name: /Chapter 1: The Event Horizon/ }).click();
+  await chapters.getByRole('button', { name: /Chapter 1: You.ll Calibrate/ }).click();
   await expect(page.locator('#s-chapter1').locator('h1, h2').first()).toBeFocused();
   await expect(chapters).not.toBeVisible();
 });

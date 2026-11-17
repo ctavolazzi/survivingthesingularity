@@ -3,9 +3,9 @@
   import { page } from '$app/stores';
   import BookCover from '$lib/components/BookCover.svelte';
   // Nothing on this page states the offer in its own words. See src/lib/offer.js.
-  import { offer, offerBlurb } from '$lib/offer';
+  import { offer, offerBlurb, evolution } from '$lib/offer';
   import { book } from '$lib/bookContent';
-  import { releasedVersion } from '$lib/bookManifest.js';
+  import { novel, acts } from '$lib/novelActs.js';
   import { requestJson, RequestTimeoutError } from '$lib/requestJson.js';
 
   let checkoutLoading = false;
@@ -134,7 +134,7 @@
             <circle cx="6" cy="6" r="6" fill="#f59e0b" opacity="0.2"/>
             <circle cx="6" cy="6" r="3" fill="#f59e0b"/>
           </svg>
-          Draft v{book.version}, in progress
+          A novel. {book.edition}.
         </div>
       </div>
     </div>
@@ -162,13 +162,9 @@
           <div class="ea-price-amount"><sup>$</sup>{offer.priceCents / 100}</div>
           <div class="ea-price-meta-col">
             <span class="ea-price-type">one-time preorder</span>
-            <!-- Derived from src/lib/data/book/book.json, the same file /book and
-                 /read already read. A reader who buys "the book as it is being
-                 written" should see the version they can DOWNLOAD today, which
-                 is the released build, not the open working label that runs
-                 ahead of it mid-cycle (RELEASES.md: never tell a reader they
-                 are getting the unbuilt version). -->
-            <span class="ea-price-version">You get v{releasedVersion(book)}, updated {book.lastUpdated}</span>
+            <!-- Derived from src/lib/data/novel/book.json, the same file /book and
+                 /read read: the reader sees the name of the draft they get today. -->
+            <span class="ea-price-version">You get the {book.edition.toLowerCase()} today, dated {book.lastUpdated}</span>
           </div>
         </div>
 
@@ -225,33 +221,29 @@
   </div>
 </section>
 
-<!-- ── CONTENT PREVIEW (chapter images) ── -->
+<!-- ── CONTENT PREVIEW (the novel's own pictures) ── -->
 <section class="ea-preview">
   <div class="ea-preview-inner">
     <p class="ea-label">A look inside</p>
-    <h2 class="ea-preview-heading">A look inside the current draft.</h2>
-    <p class="ea-preview-sub">Written in public, updated as the field moves. You're reading it as it's being built.</p>
+    <h2 class="ea-preview-heading">A look inside the novel.</h2>
+    <p class="ea-preview-sub">{novel.opening}</p>
 
     <div class="ea-image-grid">
       <div class="ea-img-cell ea-img-large">
-        <img src="/book-images/ch02-factory-robots.webp" alt="Factory automation robots. Chapter 2." loading="lazy" decoding="async" />
-        <div class="ea-img-cap">Physical Automation</div>
+        <img src="/book-images/novel-p016.webp" alt="Four men at a bar. Three raise their glasses; the fourth sits at a laptop and does not." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">The Bear Flag. Three glasses up.</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch11-spot.webp" alt="Boston Dynamics Spot, Chapter 11" loading="lazy" decoding="async" />
-        <div class="ea-img-cap">Field Robotics</div>
+        <img src="/book-images/novel-p040.webp" alt="A man stands at an apartment window at dawn, a notebook open on the desk behind him." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">The near end.</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch12-farmbot.webp" alt="FarmBot garden automation, Chapter 12" loading="lazy" decoding="async" />
-        <div class="ea-img-cap">Food Autonomy</div>
-      </div>
-      <div class="ea-img-cell">
-        <img src="/book-images/ch02-waymo.webp" alt="Waymo autonomous vehicle" loading="lazy" decoding="async" />
-        <div class="ea-img-cap">Autonomous Transport</div>
+        <img src="/book-images/novel-p194.webp" alt="A woman with a wrist brace speaks at a microphone in a county meeting room." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">Rosa, with a minute to spare.</div>
       </div>
       <div class="ea-img-cell ea-img-wide">
-        <img src="/book-images/ch01-atlas.webp" alt="Boston Dynamics Atlas, Chapter 1" loading="lazy" decoding="async" />
-        <div class="ea-img-cap">The New Era</div>
+        <img src="/book-images/novel-p115.webp" alt="A woman passes a bowl across a long plywood table to a man, with others eating around them." loading="lazy" decoding="async" />
+        <div class="ea-img-cap">Pass the beans.</div>
       </div>
     </div>
   </div>
@@ -261,37 +253,32 @@
 <section class="ea-parts">
   <div class="ea-parts-inner">
     <p class="ea-label">Inside the book</p>
-    <h2 class="ea-preview-heading">Three parts. A future to argue about. Work to begin.</h2>
-    <p class="ea-preview-sub">Historical cases, speculative fiction, and proposals for practical cooperation. The reading guide helps you start with the questions that matter to you.</p>
+    <h2 class="ea-preview-heading">A novel in four acts.</h2>
+    <p class="ea-preview-sub">{novel.premise}</p>
 
     <div class="ea-parts-grid">
-      <div class="ea-part-card">
-        <span class="ea-part-num">Part I</span>
-        <h3 class="ea-part-title">What Is the Singularity?</h3>
-        <p class="ea-part-desc">
-          What recent AI can do, what researchers forecast, and where the evidence stops. The author's nine-stage framework explores increasingly speculative futures alongside the physical limits of energy, computing, and materials. It is a scenario to examine, not a demonstrated path from today's models to superintelligence.
-        </p>
-      </div>
-      <div class="ea-part-card">
-        <span class="ea-part-num">Part II</span>
-        <h3 class="ea-part-title">How Humans React</h3>
-        <p class="ea-part-desc">
-          What do we owe each other when technology changes how people earn a living? Historical cases and fictional scenes explore fear, power, resistance, and cooperation. The book asks which lessons travel to the present, where the comparisons break down, and what people can do together.
-        </p>
-      </div>
-      <div class="ea-part-card">
-        <span class="ea-part-num">Part III</span>
-        <h3 class="ea-part-title">How to Survive the Transition</h3>
-        <p class="ea-part-desc">
-          Start with food, useful skills, household needs, and willing neighbors. Explore proposed food trials, shared tools, local energy, and the agreements needed to keep them working. The author's Adequate Level of Care asks who actually receives food, shelter, and care. These are proposals to test with real costs, qualified help, and backup plans, not a proven self-sufficient system.
-        </p>
-      </div>
+      {#each acts as act}
+        <div class="ea-part-card">
+          <span class="ea-part-num">{act.num}</span>
+          <h3 class="ea-part-title">{act.title}</h3>
+          <p class="ea-part-desc">{act.desc}</p>
+        </div>
+      {/each}
     </div>
 
     <blockquote class="ea-pull-quote">
-      "This is my forecast, not a mathematical deadline. I could be wrong about the date, the capability, or both."
-      <footer>Christopher Tavolazzi, Chapter 1, on his November 2027 forecast.</footer>
+      &ldquo;{novel.forecast}&rdquo;
+      <footer>Christopher Tavolazzi, Author&rsquo;s Note. The same note says: &ldquo;{novel.forecastDoubt}&rdquo;</footer>
     </blockquote>
+
+    <!-- The book people preordered was a nonfiction guide. Say what changed,
+         here, next to the description, not only on /about. Derived from
+         $lib/offer.js so every surface tells it the same way. -->
+    <div class="ea-change" id="how-it-changed">
+      <p class="ea-change-title">{evolution.heading}</p>
+      <p class="ea-change-body">{evolution.story} {evolution.now}</p>
+      <p class="ea-change-body">{evolution.earlierBuyers} <a href={evolution.archivePath} class="ea-author-link">Open the archive</a>.</p>
+    </div>
   </div>
 </section>
 
@@ -375,7 +362,7 @@
       <p class="ea-author-text">
         {offer.sentence}<br><br>
         Your purchase email is used for your receipt, access links, and updates to what you bought. Optional Signal Dispatches are a separate choice on the checklist.<br><br>
-        Read the <a href="/sample" class="ea-author-link">free sample and reading guide</a> before deciding.
+        Read the <a href="/sample" class="ea-author-link">free sample</a>, the first chapter, before deciding.
       </p>
     </div>
   </div>
@@ -748,7 +735,7 @@
   }
   .ea-parts-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-top: clamp(28px, 4vw, 44px);
   }
@@ -864,6 +851,10 @@
     padding: 2px 8px; border-radius: 4px;
   }
   .ea-tag-live { background: rgba(16,185,129,0.12); color: var(--green); }
+  .ea-change { margin-top: 32px; padding: 20px 22px; border: 1px solid rgba(245,158,11,0.25); border-radius: 12px; background: var(--amber-dim); }
+  .ea-change-title { font-weight: 800; color: var(--amber); margin: 0 0 8px; }
+  .ea-change-body { margin: 0 0 8px; line-height: 1.65; }
+  .ea-change-body:last-child { margin-bottom: 0; }
   .ea-tag-draft { background: var(--amber-dim); color: var(--amber); }
   .ea-tag-soon { background: rgba(148,163,184,0.08); color: var(--text-3); }
 

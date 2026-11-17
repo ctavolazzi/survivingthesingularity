@@ -1,6 +1,7 @@
 <script>
   import AuthorBio from '$lib/components/AuthorBio.svelte';
-  import { offerBlurb } from '$lib/offer';
+  import { offerBlurb, evolution } from '$lib/offer';
+  import { novel } from '$lib/novelActs.js';
 </script>
 
 <svelte:head>
@@ -31,9 +32,9 @@
   <div class="about-page">
     <header class="about-header">
       <p class="about-label">About</p>
-      <h1 class="about-title">I'm writing this in real time.</h1>
+      <h1 class="about-title">It became a novel.</h1>
       <p class="about-subtitle">
-        Developer, futurist, founder of Johnny Autoseed. I write to make sense of the AI shift as it happens. This book updates as the world does.
+        Developer, futurist, founder of Johnny Autoseed. I write to make sense of the AI shift as it happens. The book is a novel.
       </p>
     </header>
 
@@ -48,8 +49,16 @@
         I started writing this to work it out for myself.
       </p>
       <p>
-        It became a book that combines historical cases, speculative stories, and proposals for practical cooperation. Predictions in it are arguments to examine, not guarantees; the useful work should still matter if my timeline is wrong.
+        It became a novel. {novel.premise} The forecast in it is mine, and you can doubt it; the useful work should still matter if my timeline is wrong.
       </p>
+    </section>
+
+    <section class="about-section" id="how-it-changed">
+      <h2>{evolution.heading}</h2>
+      <p>{evolution.story}</p>
+      <p>{evolution.now}</p>
+      <p>{evolution.earlierBuyers} <a href={evolution.archivePath} class="note-link">Open the archive</a>.</p>
+      <p>{evolution.landing}</p>
     </section>
 
     <div class="scroll-prompt" aria-hidden="true">
@@ -65,8 +74,8 @@
       <div class="provides-grid">
         <div class="provide-item">
           <h3>The Book</h3>
-          <p>Three parts: what the singularity is, how people react, and what you can do. Updated as it's written.</p>
-          <a href="/sample" class="provide-link">Read a free sample and reading guide</a>
+          <p>A novel in four acts: The Bar, The City, The Farm, Home.</p>
+          <a href="/sample" class="provide-link">Read the first chapter free</a>
         </div>
         <div class="provide-item">
           <h3>The Checklist</h3>
@@ -88,7 +97,7 @@
 
     <section class="about-section about-cta">
       <h2>Start here</h2>
-      <p>Read the introduction and choose a route through the book without signing up. The full online draft uses the access password delivered with a purchase. Or start free with the checklist.</p>
+      <p>Read the first chapter without signing up. The full online draft uses the access password delivered with a purchase. Or start free with the checklist.</p>
       <div class="about-actions">
         <a href="/sample" class="btn-primary">Read a Free Sample</a>
         <a href="/checklist" class="btn-secondary">Start the Checklist</a>

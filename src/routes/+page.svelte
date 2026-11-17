@@ -3,7 +3,8 @@
   import BookCover from '$lib/components/BookCover.svelte';
   import LiteYouTube from '$lib/components/LiteYouTube.svelte';
   // No offer prose is typed into this file. See src/lib/offer.js.
-  import { offer } from '$lib/offer';
+  import { offer, evolution } from '$lib/offer';
+  import { novel, acts } from '$lib/novelActs.js';
 
   let agiYears = '--';
   let agiDays = '---';
@@ -80,8 +81,8 @@
 </script>
 
 <svelte:head>
-  <title>Surviving the Singularity: New Era, New Playbook</title>
-  <meta name="description" content="A practical field guide for staying human in the age of AI. Preorder the book for {offer.price} and read the draft now." />
+  <title>Surviving the Singularity: A Novel</title>
+  <meta name="description" content="A novel about a man who helps set off the age of AI from a barstool, and what he owes people afterward. Preorder for {offer.price} and read the draft now." />
   <!-- Share card is a 1200x630 landscape render, not the cover art. The cover
        is 1410x2056; every scraper crops og:image to roughly 1.91:1, so pointing
        at the portrait art sliced the book in half. Rebuild with
@@ -89,18 +90,18 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:title" content="Surviving the Singularity" />
-  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Preorder the book for {offer.price} and read the draft now." />
+  <meta property="og:description" content="A novel about a man who helps set off the age of AI from a barstool, and what he owes people afterward. Preorder for {offer.price} and read the draft now." />
   <meta property="og:url" content="https://survivingthesingularity.com/" />
   <meta property="og:image" content="https://survivingthesingularity.com/images/og/home.png" />
   <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/home.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
-  <meta property="og:image:alt" content="Surviving the Singularity: a practical field guide for staying human in the age of AI." />
+  <meta property="og:image:alt" content="Surviving the Singularity, a novel by Christopher Tavolazzi." />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Surviving the Singularity" />
-  <meta name="twitter:description" content="A practical field guide for staying human in the age of AI." />
+  <meta name="twitter:description" content="A novel about the age of AI, work, and what we owe each other. By Christopher Tavolazzi." />
   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/home.png" />
 </svelte:head>
 
@@ -122,10 +123,10 @@
           <em>It's here.</em>
         </h1>
         <div class="hero-sub-stack">
-          <p class="hero-sub-line">A book about AI, work, and making ordinary life more secure, starting with food.</p>
+          <p class="hero-sub-line">A novel about AI, work, and what we owe each other when the machines arrive.</p>
           <p class="hero-sub-line hero-sub-punch">Doom-scrolling is not a plan.</p>
-          <p class="hero-sub-line">History, speculative stories, and practical proposals for working with other people.</p>
-          <p class="hero-sub-line">Start where you are, whether you rent, build, organize, or care for others.</p>
+          <p class="hero-sub-line">{novel.opening}</p>
+          <p class="hero-sub-line">It feels immense and scary. It doesn&rsquo;t have to be.</p>
         </div>
         <div class="hero-actions">
           <a href="/early-access" class="btn-primary">
@@ -282,10 +283,10 @@
       <div class="video-header reveal">
         <span class="section-label">The Other Side</span>
         <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
-        <p class="section-sub">FarmBot can automate planting, watering, and some weeding in a prepared garden bed. People still provide inputs, maintenance, and harvesting. The book explores these tools as part of food provision, without promising a self-sufficient food supply.</p>
+        <p class="section-sub">FarmBot can automate planting, watering, and some weeding in a prepared garden bed. People still provide inputs, maintenance, and harvesting. In the novel, a co-op builds a slow one of its own. Nobody there is promised a self-sufficient food supply.</p>
         <blockquote class="thesis-quote">
           <p>If a robot can grow my food and build my house, why am I still renting my survival?</p>
-          <cite>Surviving the Singularity, Introduction</cite>
+          <cite>Surviving the Singularity, Afterword</cite>
         </blockquote>
       </div>
     </div>
@@ -300,7 +301,7 @@
   <section class="reality-section" aria-labelledby="shared-survival-heading">
     <div class="reality-inner reveal">
       <h2 id="shared-survival-heading" class="reality-heading">Losing your job shouldn't mean going hungry.</h2>
-      <p class="reality-intro">What if it all goes right? Machines are taking on more of the work we're paid to do. This book is an optimist's field manual for using them to make ordinary life more secure, starting with food. Money stays. It just stops being the ticket to staying alive.</p>
+      <p class="reality-intro">What if it all goes right? Machines are taking on more of the work we're paid to do. The novel follows one man and nineteen households trying to use them to make ordinary life more secure, starting with food. Money stays. It just stops being the ticket to staying alive.</p>
       <div class="reality-cols">
         <div class="reality-col">
           <h3 class="reality-col-label">What is at stake</h3>
@@ -349,12 +350,12 @@
         </div>
 
         <div class="middle-offer reveal reveal-d1">
-          <p class="middle-offer-label">Here's what you do about it</p>
+          <p class="middle-offer-label">Start here</p>
           <ul class="middle-offer-list">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The novel: the current draft, every chapter, readable now</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>A free sample: the first chapter, no email needed</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The readiness checklist: concrete moves, ordered by impact</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Reading routes for workers, parents, organizers, makers, and skeptics</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The Precedent File: {offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Book draft, updated as it's written</li>
           </ul>
           <a href="/early-access" class="middle-btn">Preorder the book: {offer.price}</a>
           <p class="middle-fine">One-time. When the preorder window closes, this price is gone.</p>
@@ -469,38 +470,23 @@
     <div class="section-inner">
       <div class="chapters-header reveal">
         <span class="section-label">The Book</span>
-        <h2 class="section-heading">Three parts. The complete picture.</h2>
-        <p class="section-sub">What's happening. How people react. What you can do. In that order.</p>
+        <h2 class="section-heading">A novel in four acts.</h2>
+        <p class="section-sub">{novel.premise}</p>
       </div>
       <div class="book-parts reveal reveal-d1">
-        <div class="book-part book-part-1">
-          <span class="book-part-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M4 28 C12 27 20 20 28 4" /><path d="M22 4 h6 v6" /></svg>
-          </span>
-          <span class="book-part-num">Part I</span>
-          <h3 class="book-part-title">What is the Singularity?</h3>
-          <p class="book-part-sub">Evidence, forecasts, and physical limits.</p>
-          <p class="book-part-desc">How recent AI developed, what researchers forecast, and where the evidence stops. The author's nine-stage framework is a speculative way to explore possible futures, not a validated mathematical law.</p>
-        </div>
-        <div class="book-part book-part-2">
-          <span class="book-part-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="4"/><circle cx="22" cy="10" r="4"/><path d="M4 26 c0-5 4-8 6-8 s6 3 6 8"/><path d="M16 26 c0-5 4-8 6-8 s6 3 6 8"/></svg>
-          </span>
-          <span class="book-part-num">Part II</span>
-          <h3 class="book-part-title">How Humans React</h3>
-          <p class="book-part-sub">Transition dynamics. Fear to footing. The egalitarian pivot.</p>
-          <p class="book-part-desc">Historical cases and fictional scenes explore different responses to disruption. Use them to question your assumptions and think through how people might cooperate, without assuming everyone follows the same path.</p>
-        </div>
-        <div class="book-part book-part-3">
-          <span class="book-part-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14 L16 6 L26 14"/><path d="M9 12 v12 h14 v-12"/><path d="M13 24 v-6 h6 v6"/></svg>
-          </span>
-          <span class="book-part-num">Part III</span>
-          <h3 class="book-part-title">How to Survive the Transition</h3>
-          <p class="book-part-sub">Shouse Grids. DC-native microgrids. Hardware you own.</p>
-          <p class="book-part-desc">Actionable mechanics, not abstract advice: Shouse Grids, DC-native microgrids, and mechanical transducer systems that refine local waste into value. The author's separate venture, Johnny Autoseed LLC, researches the same open-source robotics stack.</p>
-        </div>
+        {#each acts as act, i}
+          <div class="book-part book-part-{i + 1}">
+            <span class="book-part-num">{act.num}</span>
+            <h3 class="book-part-title">{act.title}</h3>
+            <p class="book-part-sub">{act.range}</p>
+            <p class="book-part-desc">{act.desc}</p>
+          </div>
+        {/each}
       </div>
+      <p class="book-change reveal">
+        <strong>{evolution.heading}.</strong> {evolution.story} {evolution.now}
+        <a href="/about#how-it-changed">What that means if you already preordered</a>.
+      </p>
     </div>
   </section>
 
@@ -692,7 +678,7 @@
     line-height: 1.7;
     max-width: 50ch;
   }
-  /* The question the book turns on (Introduction). */
+  /* The question the book turns on (Afterword). */
   .thesis-quote {
     margin: 32px 0 0;
     padding: 2px 0 2px 24px;
@@ -1288,8 +1274,8 @@
   .middle-why { font-size: 0.9rem; color: var(--text-2); line-height: 1.55; }
 
   /* BOOK PARTS */
-  .book-parts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  @media (max-width: 760px) { .book-parts { grid-template-columns: 1fr; } }
+  .book-parts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 620px) { .book-parts { grid-template-columns: 1fr; } }
   .book-part { padding: clamp(24px, 3vw, 36px); border: 1px solid var(--border-mid); border-radius: var(--r-card); display: flex; flex-direction: column; gap: 10px; transition: border-color 0.2s ease; }
   .book-part-1 { background: linear-gradient(145deg, rgba(245,158,11,0.06) 0%, rgba(15,23,42,0.4) 100%); }
   .book-part-1:hover { border-color: rgba(245,158,11,0.3); }
@@ -1301,6 +1287,12 @@
   .book-part-1 .book-part-num { color: var(--amber); }
   .book-part-2 .book-part-num { color: var(--blue); }
   .book-part-3 .book-part-num { color: var(--green); }
+  .book-part-4 { background: linear-gradient(145deg, rgba(245,158,11,0.06) 0%, rgba(15,23,42,0.4) 100%); }
+  .book-part-4:hover { border-color: rgba(245,158,11,0.3); }
+  .book-part-4 .book-part-num { color: var(--amber); }
+  .book-change { margin-top: 28px; max-width: 760px; font-size: clamp(0.9rem, 1.8vw, 1rem); line-height: 1.65; color: var(--text-2); }
+  .book-change strong { color: var(--text-1); }
+  .book-change a { color: var(--amber); }
   .book-part-title { font-size: clamp(1.25rem, 2.8vw, 1.6rem); font-weight: 900; color: var(--text-1); letter-spacing: -0.02em; line-height: 1.15; margin: 0; }
   .book-part-sub { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-3); letter-spacing: 0.04em; }
   .book-part-desc { font-size: clamp(0.9rem, 1.8vw, 1rem); color: var(--text-2); line-height: 1.65; flex: 1; }
@@ -1419,8 +1411,6 @@
   .vh-em { font-style: italic; color: var(--amber); }
 
   /* BOOK PART ICONS */
-  .book-part-icon { display: block; width: 30px; height: 30px; margin-bottom: 12px; }
-  .book-part-icon svg { width: 100%; height: 100%; display: block; }
 
   /* CTA COVER (folded into the CTA section, was a separate PRODUCT section) */
   .cta-cover { position: relative; display: flex; justify-content: center; margin: clamp(20px, 4vw, 32px) 0; }

@@ -5,6 +5,7 @@
   // No offer prose is typed into this file. See src/lib/offer.js.
   import { offer, evolution } from '$lib/offer';
   import { novel, acts } from '$lib/novelActs.js';
+  import { stance } from '$lib/stance.js';
 
   let agiYears = '--';
   let agiDays = '---';
@@ -126,7 +127,7 @@
           <p class="hero-sub-line">A novel about AI, work, and what we owe each other when the machines arrive.</p>
           <p class="hero-sub-line hero-sub-punch">Doom-scrolling is not a plan.</p>
           <p class="hero-sub-line">{novel.opening}</p>
-          <p class="hero-sub-line">It feels immense and scary. It doesn&rsquo;t have to be.</p>
+          <p class="hero-sub-line">{stance.short}</p>
         </div>
         <div class="hero-actions">
           <a href="/early-access" class="btn-primary">
@@ -274,6 +275,36 @@
           </figcaption>
         </figure>
       </div>
+    </div>
+  </section>
+
+  <!-- HOPE: the turn. Everything above this is the scary part, and it stays.
+       This is the author's answer to it, in his words ($lib/stance.js). -->
+  <section class="hope-section" id="hope" aria-labelledby="hope-heading">
+    <div class="hope-inner reveal">
+      <span class="section-label">{stance.label}</span>
+      <p class="hope-ack">{stance.acknowledge}</p>
+      <p class="hope-turn">{stance.turn}</p>
+      <h2 id="hope-heading" class="hope-heading">{stance.heading}</h2>
+      <p class="hope-body">{stance.belief}</p>
+      <p class="hope-body">{stance.honest}</p>
+      <p class="hope-body hope-landing">{stance.landing}</p>
+
+      <figure class="hope-label">
+        <div class="hope-seal" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>{stance.labelWord}</span>
+        </div>
+        <figcaption>{stance.labelLine}</figcaption>
+      </figure>
+
+      <p class="hope-body">{stance.moment}</p>
+      <p class="hope-close">{stance.close}</p>
+      <div class="hope-actions">
+        <a href="/checklist" class="btn-primary">Get involved: start the checklist</a>
+        <a href="/sample" class="hope-link">Read the first chapter free</a>
+      </div>
+      <p class="hope-sign">Christopher Tavolazzi</p>
     </div>
   </section>
 
@@ -503,6 +534,7 @@
           <BookCover width="min(220px, 60vw)" glow={false} />
         </div>
 
+        <p class="cta-hope">{stance.close}</p>
         <p class="cta-sub">{offer.sentence}<br><br>{offer.windowClose}</p>
 
         <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
@@ -1234,6 +1266,24 @@
 
   /* CTA */
   /* ── REALITY SECTION ── */
+  /* HOPE */
+  .hope-section { border-top: 1px solid var(--border); padding: clamp(56px, 9vw, 104px) 0; background: radial-gradient(ellipse at 50% 0%, rgba(16,185,129,0.09), transparent 62%); }
+  .hope-inner { max-width: min(760px, 100%); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
+  .hope-ack { margin: 18px 0 0; font-size: clamp(1.05rem, 2.4vw, 1.25rem); line-height: 1.7; color: var(--text-3); }
+  .hope-turn { margin: 18px 0 0; font-size: clamp(1.2rem, 3vw, 1.6rem); line-height: 1.45; font-weight: 700; color: var(--text-1); }
+  .hope-heading { margin: clamp(28px, 5vw, 44px) 0 clamp(18px, 3vw, 26px); font-size: clamp(2.3rem, 8.5vw, 4.6rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.02; color: var(--green); }
+  .hope-body { margin: 0 0 16px; font-size: clamp(1.05rem, 2.4vw, 1.25rem); line-height: 1.7; color: var(--text-2); }
+  .hope-landing { color: var(--text-1); font-weight: 600; }
+  .hope-label { margin: clamp(28px, 5vw, 40px) 0; padding: clamp(20px, 4vw, 30px); border: 1px solid rgba(16,185,129,0.3); border-radius: var(--r-card); background: rgba(16,185,129,0.05); display: flex; flex-wrap: wrap; align-items: center; gap: clamp(16px, 4vw, 28px); }
+  .hope-seal { flex: none; display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; border: 2.5px solid var(--green); border-radius: 999px; color: var(--green); font-family: var(--font-mono); font-size: clamp(1rem, 3.6vw, 1.3rem); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transform: rotate(-3deg); }
+  .hope-seal svg { width: 1.2em; height: 1.2em; }
+  .hope-label figcaption { flex: 1 1 260px; font-size: clamp(1rem, 2.2vw, 1.15rem); line-height: 1.6; color: var(--text-2); }
+  .hope-close { margin: 8px 0 0; font-size: clamp(1.3rem, 3.6vw, 1.9rem); line-height: 1.35; font-weight: 800; color: var(--text-1); letter-spacing: -0.01em; }
+  .hope-actions { margin-top: clamp(22px, 4vw, 32px); display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+  .hope-link { color: var(--green); font-weight: 700; text-underline-offset: 4px; }
+  .hope-sign { margin: 22px 0 0; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); }
+  .cta-hope { margin: 0 0 14px; font-size: clamp(1.05rem, 2.6vw, 1.3rem); font-weight: 700; color: var(--green); }
+
   .reality-section { border-top: 1px solid var(--border); padding: clamp(48px, 8vw, 80px) 0; }
   .reality-inner { max-width: min(900px, 100%); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
   .reality-heading {

@@ -6,6 +6,7 @@
   import { offer, offerBlurb, evolution } from '$lib/offer';
   import { book } from '$lib/bookContent';
   import { novel, acts } from '$lib/novelActs.js';
+  import { stance } from '$lib/stance.js';
   import { requestJson, RequestTimeoutError } from '$lib/requestJson.js';
 
   let checkoutLoading = false;
@@ -360,6 +361,7 @@
       <p class="ea-label">Who's building this</p>
       <p class="ea-author-name"><a href="https://www.linkedin.com/in/christopher-tavolazzi/" target="_blank" rel="noopener noreferrer" class="ea-author-link">Christopher Tavolazzi</a></p>
       <p class="ea-author-text">
+        {stance.turn} {stance.belief} {stance.landing}<br><br>
         {offer.sentence}<br><br>
         Your purchase email is used for your receipt, access links, and updates to what you bought. Optional Signal Dispatches are a separate choice on the checklist.<br><br>
         Read the <a href="/sample" class="ea-author-link">free sample</a>, the first chapter, before deciding.

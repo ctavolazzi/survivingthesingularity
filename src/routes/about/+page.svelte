@@ -2,6 +2,7 @@
   import AuthorBio from '$lib/components/AuthorBio.svelte';
   import { offerBlurb, evolution } from '$lib/offer';
   import { novel } from '$lib/novelActs.js';
+  import { stance } from '$lib/stance.js';
 </script>
 
 <svelte:head>
@@ -49,6 +50,9 @@
         I started writing this to work it out for myself.
       </p>
       <p>
+        {stance.turn} {stance.belief} {stance.honest} {stance.landing}
+      </p>
+      <p>
         It became a novel. {novel.premise} The forecast in it is mine, and you can doubt it; the useful work should still matter if my timeline is wrong.
       </p>
     </section>
@@ -59,6 +63,7 @@
       <p>{evolution.now}</p>
       <p>{evolution.earlierBuyers} <a href={evolution.archivePath} class="note-link">Open the archive</a>.</p>
       <p>{evolution.landing}</p>
+      <p>{stance.close}</p>
     </section>
 
     <div class="scroll-prompt" aria-hidden="true">

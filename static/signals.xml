@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Mon, 16 Nov 2026 22:49:08 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 17 Nov 2026 21:38:39 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -69,6 +69,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.16082</guid>
       <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
       <description>Turbulence modeling relies on human choices of closure form, physical inputs, and tunable parameters. Training closures a posteriori is efficient only with gradients through long chaotic rollouts, which few solvers provide. Most a posteriori approaches therefore resort to gradient-free optimization,... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, autonomous, llm] Authors: Yi Liu, Xiantao Fan, et al.</description>
+    </item>
+    <item>
+      <title>Macro Control and Capability Evaluation of Black-Box World Models: A Two-Regime Framework for LLM-Agent Markets</title>
+      <link>https://arxiv.org/abs/2611.19311</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.19311</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Large language model (LLM) agents can be organized into multi-agent markets that act as world models, mapping macro information to emergent macro dynamics while the evaluator observes only macro inputs and outputs. This paper separates a model's capability into two stages that a single aggregate sco... [Score: 9.5 | Flagged for: world model, agent, multi-agent, llm, language model] Authors: Zhiyang Niu, Chuanjie Li, et al.</description>
     </item>
     <item>
       <title>Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning</title>
@@ -162,6 +169,13 @@
       <description>Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands... [Score: 9.0 | Flagged for: agi, agent, multi-agent, agentic, rag] Authors: Garima Agrawal, Prasun Das, et al.</description>
     </item>
     <item>
+      <title>Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks</title>
+      <link>https://arxiv.org/abs/2611.21259</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.21259</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or information propagate between components. We... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Sahaya Jestus Lazer, Kshitiz Aryal, et al.</description>
+    </item>
+    <item>
       <title>SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models</title>
       <link>https://arxiv.org/abs/2611.17110</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.17110</guid>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
       <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
-    </item>
-    <item>
-      <title>Task-Efficient Agent Evaluation Using Cached Traces</title>
-      <link>https://arxiv.org/abs/2611.06803</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.06803</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each ... [Score: 8.5 | Flagged for: agi, agent, agentic, llm, rag] Authors: Ben Johnson, Hayden Helm</description>
-    </item>
-    <item>
-      <title>Interactive World Simulation with Cosmos for Physical AI</title>
-      <link>https://arxiv.org/abs/2611.06627</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.06627</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>We present a shared framework that adapts Cosmos world foundation models for real-time interactive world simulation in Physical AI. By streaming visual observations in response to actions and scene controls, the framework enables users and embodied agents to interact with evolving virtual environmen... [Score: 8.5 | Flagged for: foundation model, agent, autonomous, embodied, robot] Authors:  NVIDIA,  :, et al.</description>
     </item>
   </channel>
 </rss>

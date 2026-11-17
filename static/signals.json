@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T22:49:08Z",
+  "generated_at": "2026-11-17T21:38:39Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -249,6 +249,32 @@
         "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2611.19311",
+      "source": "arxiv",
+      "title": "Macro Control and Capability Evaluation of Black-Box World Models: A Two-Regime Framework for LLM-Agent Markets",
+      "url": "https://arxiv.org/abs/2611.19311",
+      "authors": [
+        "Zhiyang Niu",
+        "Chuanjie Li",
+        "Huayuan Shen",
+        "Mengmeng Zhao"
+      ],
+      "summary": "Large language model (LLM) agents can be organized into multi-agent markets that act as world models, mapping macro information to emergent macro dynamics while the evaluator observes only macro inputs and outputs. This paper separates a model's capability into two stages that a single aggregate score cannot separate: information simulation, from macro information to micro behavior, and macro emergence, from micro behavior to the macro outcome. We introduce a soft macro-control method that announces a public reference path day by day without touching individual decisions, orders, or matching, ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-14",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "world model",
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "emergent"
       ]
     },
     {
@@ -582,6 +608,31 @@
         "multi-agent",
         "agentic",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.21259",
+      "source": "arxiv",
+      "title": "Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks",
+      "url": "https://arxiv.org/abs/2611.21259",
+      "authors": [
+        "Sahaya Jestus Lazer",
+        "Kshitiz Aryal",
+        "Maanak Gupta",
+        "Elisa Bertino"
+      ],
+      "summary": "Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or information propagate between components. We evaluate LangChain, LangGraph, AutoGen, and OpenClaw through twelve experiments mapped to the OWASP Top 10 for Agentic Applications using a common LLM (gpt-4o-mini). The experiments cover prompt injection, unauthorized resource access and command execution, memory poisoning, and inter-agent trust a",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-16",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1186,6 +1237,81 @@
       ]
     },
     {
+      "id": "2611.21441",
+      "source": "arxiv",
+      "title": "Learning to Reason with Predictive Gains for Generative Recommendation",
+      "url": "https://arxiv.org/abs/2611.21441",
+      "authors": [
+        "Zhuoyang Li",
+        "Teng Shi",
+        "Jiakai Tang",
+        "Weijie Yu"
+      ],
+      "summary": "Reasoning-enhanced generative recommendation (GR) has attracted increasing attention for leveraging the reasoning capabilities of large language models (LLMs) to improve next-item prediction. However, existing methods primarily optimize reasoning through Group Relative Policy Optimization (GRPO) with rule-based rewards determined by final recommendation performance, which faces two key limitations: (i) unmeasured predictive contributions within reasoning, where the predictive contributions of individual reasoning steps are not directly reflected in optimization signals, and (ii) weakly discrim",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-16",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.21373",
+      "source": "arxiv",
+      "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+      "url": "https://arxiv.org/abs/2611.21373",
+      "authors": [
+        "Yipeng Du",
+        "Yuxi Li",
+        "Ying Zhang",
+        "Chong Sun"
+      ],
+      "summary": "Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefined multi-agent workflows that offer limited flexibility in selecting relevant inspections. Even with adaptive investigation, optimizing the investigation policy alone does not directly improve the forensic capabilities of fixed experts. We introduce WeVisForensics, an agentic framework in which a main investigator agent coordinates a self-evolving lib",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-16",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "reasoning",
+        "chain-of-thought"
+      ]
+    },
+    {
+      "id": "2611.21208",
+      "source": "arxiv",
+      "title": "Validating LLM-Based Essay Scorers: A Comparative Analysis in Critical Online Reasoning in Medical Education",
+      "url": "https://arxiv.org/abs/2611.21208",
+      "authors": [
+        "Daniel Baumartz",
+        "Alexander Mehler",
+        "Mevlüt Bagci",
+        "Maxim Konca"
+      ],
+      "summary": "Automated essay scorers (AES) based on large language models (LLMs) promise human-level accuracy. However, training, fine-tuning, and evaluating LLMs for specific assessment tasks is costly. In particular, the question arises whether these AES should be trained for specific domains or whether models based on generic LLMs might be sufficient. Human annotations, by contrast, are often more valid but far more expensive. This study evaluates whether ensembles of AES systems based on general-purpose LLMs can approximate human ratings of medical-education writing tasks by leveraging encoded linguist",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-16",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2611.18484",
       "source": "arxiv",
       "title": "From AI-Enabled Remote Patient Monitoring Toward Agentic Robotics: Embodiment, Governance, and Care Integration",
@@ -1196,8 +1322,8 @@
         "Filippo Cavallo"
       ],
       "summary": "AI-enabled remote patient monitoring is evolving beyond passive data collection toward agentic AI systems that interpret patient states, coordinate care, and initiate action across domestic and clinical settings. This structured scoping review finds that mature agentic care has not yet emerged: Most systems remain human led, while stronger decision-action coupling and embodied AI remain largely confined to prototypes and pilots. Healthcare robotics makes the transition from monitoring to action especially visible by translating AI-generated recommendations and decisions into speech, movement, ",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-11-13",
       "score": 8.0,
       "raw_score": 16,
@@ -1408,126 +1534,6 @@
         "agentic",
         "reasoning",
         "embodied"
-      ]
-    },
-    {
-      "id": "2611.18176",
-      "source": "arxiv",
-      "title": "ESI: An Embodied Self-Improvement Flywheel for LLM-VLA Agents",
-      "url": "https://arxiv.org/abs/2611.18176",
-      "authors": [
-        "Yundi Cai",
-        "Zihan Wang",
-        "Chenxi Han",
-        "Yi Cheng"
-      ],
-      "summary": "Independently pretrained language models and vision-language-action (VLA) policies provide complementary building blocks for embodied agents, but connecting them does not automatically produce coordinated behavior. The VLA may generate actions that diverge from the LLM's intended subtask and, upon regaining control after a correction, undo the promising state restored by the LLM. We introduce ESI (Embodied Self-Improvement), an automated flywheel that uses environmental interaction to align reasoning and action. ESI treats the modular agent as the unit of post-training, repeatedly refining the",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-13",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "embodied",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.14242",
-      "source": "arxiv",
-      "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
-      "url": "https://arxiv.org/abs/2611.14242",
-      "authors": [
-        "Javier Hernandez",
-        "Andrew D. Wilson"
-      ],
-      "summary": "As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordination, perspective-taking, and spatial reasoning). GPT-4o agent pairs succeeded in 60.5% of conversations (N=400, 100 per task), with task-level variation (34-80%) reflecting distinct collaborative demands. From these conversations, we derived the data-driven PAC taxonomy: six failure",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-10",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.12269",
-      "source": "arxiv",
-      "title": "Agent4Crypto: A Dual-Reflective and Market-Feedback-Aligned LLM-Based Multi-Agent System for Cryptocurrency Trading",
-      "url": "https://arxiv.org/abs/2611.12269",
-      "authors": [
-        "Guangyan Gan",
-        "Jiahao Li",
-        "Jiashun Wang",
-        "Lin William Cong"
-      ],
-      "summary": "Cryptocurrency markets provide a natural testbed for autonomous AI agents because they are digital-native, high-frequency, and machine-speed environments, yet existing methods often struggle with non-stationary market regimes, opaque decisions, and fixed aggregation rules. In this paper, we propose Agent4Crypto, a dual-reflective and market-feedback-aligned multi-agent system. The framework coordinates specialized agents for data collection, analysis, risk assessment, reflection, and trading, synthesizing heterogeneous signals from prices, indicators, news, and charts in an interpretable decis",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-09",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "interpret",
-        "llm"
-      ]
-    },
-    {
-      "id": "2611.11714",
-      "source": "arxiv",
-      "title": "Steering Emergent Behavior in Multi-Agent LLM Systems via Information Networks",
-      "url": "https://arxiv.org/abs/2611.11714",
-      "authors": [
-        "Sepehr Ilami",
-        "Babak Heydari"
-      ],
-      "summary": "Large language model (LLM) agents increasingly operate in groups, each pursuing an individual objective while jointly determining system performance. If an operator controls which agent observes which other agent, but not their payoffs or messages, how should observations be structured to raise collective welfare? We make the information network (who observes whom) a design object, decoupled from the fixed interaction network over which agents act. Ten identical LLM agents play repeated group-decision games; by default each observes only an anonymous summary of the group's previous-round outco",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-09",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "emergent"
-      ]
-    },
-    {
-      "id": "2611.18140",
-      "source": "arxiv",
-      "title": "Large Language Model-Empowered Intelligent Agent for Adaptive Fast-Charging Control of Lithium-Ion Batteries",
-      "url": "https://arxiv.org/abs/2611.18140",
-      "authors": [
-        "Joey Chan",
-        "Haoyu Pan",
-        "Zhen Chen",
-        "ErShun Pan"
-      ],
-      "summary": "Fast charging of lithium-ion batteries is a multi-objective control problem that requires reducing charging time and sustaining high energy throughput while suppressing accelerated degradation and safety-critical electrochemical reactions. Conventional protocols are easy to implement but have limited ability to adapt to variations in battery chemistry, operating conditions, and aging state. Model-based optimization and conventional data-driven control often require accurate models, costly iterative search, or task-specific policies. We develop a large language model (LLM)-empowered intelligent",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-11-13",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "llm",
-        "language model"
       ]
     }
   ]

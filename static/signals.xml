@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 17 Nov 2026 21:38:39 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 18 Nov 2026 21:15:25 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -169,6 +169,13 @@
       <description>Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands... [Score: 9.0 | Flagged for: agi, agent, multi-agent, agentic, rag] Authors: Garima Agrawal, Prasun Das, et al.</description>
     </item>
     <item>
+      <title>Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving</title>
+      <link>https://arxiv.org/abs/2611.22880</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.22880</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Recent progress in integrating vision-language-action (VLA) models with world modeling has significantly advanced end-to-end autonomous driving by allowing systems to reason about imagined futures instead of merely reacting to current observations. However, most world VLA models generate future fram... [Score: 8.5 | Flagged for: agi, world model, agent, autonomous, planning] Authors: Guoqing Wang, Pin Tang, et al.</description>
+    </item>
+    <item>
       <title>Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks</title>
       <link>https://arxiv.org/abs/2611.21259</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.21259</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.09568</guid>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
       <description>Post-training language models for reasoning typically rely on gold answers, task-specific verifiers, or learned reward models, limiting scalability when such signals are scarce. Multi-agent debate offers a self-supervised alternative, but converting debate into reliable training supervision remains ... [Score: 8.5 | Flagged for: agent, multi-agent, reasoning, alignment, language model] Authors: Nikhil Verma, Dingxian Wang, et al.</description>
-    </item>
-    <item>
-      <title>The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI</title>
-      <link>https://arxiv.org/abs/2611.08428</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
     </item>
   </channel>
 </rss>

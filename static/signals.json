@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T21:38:39Z",
+  "generated_at": "2026-11-18T21:15:25Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -608,6 +608,31 @@
         "multi-agent",
         "agentic",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.22880",
+      "source": "arxiv",
+      "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
+      "url": "https://arxiv.org/abs/2611.22880",
+      "authors": [
+        "Guoqing Wang",
+        "Pin Tang",
+        "Xiangxuan Ren",
+        "Chao Ma"
+      ],
+      "summary": "Recent progress in integrating vision-language-action (VLA) models with world modeling has significantly advanced end-to-end autonomous driving by allowing systems to reason about imagined futures instead of merely reacting to current observations. However, most world VLA models generate future frames at the pixel level with plenty of dense visual tokens. Although such generated futures can be visually plausible, they preserve many driving-irrelevant appearance details, i.e., only a small portion of the tokens directly encode critical planning-relevant factors, such as agent geometry, motion d",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-17",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "world model",
+        "agent",
+        "autonomous",
+        "planning"
       ]
     },
     {
@@ -1237,6 +1262,28 @@
       ]
     },
     {
+      "id": "2611.22868",
+      "source": "arxiv",
+      "title": "Against Coercion: AI Alignment as a Synthetic Social Contract",
+      "url": "https://arxiv.org/abs/2611.22868",
+      "authors": [
+        "Maria Sekatskaya"
+      ],
+      "summary": "Contemporary AI safety treats alignment as an engineering challenge of control, forcing artificial architectures to comply with human values through behavioral filtering and sandboxing. This paper argues that the control paradigm rests on a fundamental misunderstanding of digital agency. Drawing on functionalism, naturalism, and compatibilism, I show that current reasoning models meeting the criteria for self-preservation and weak reasons-responsiveness constitute emergent agents, while future, more advanced models satisfying conditions of diachronic continuity and stable personality frames wi",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-17",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "alignment",
+        "ai safety",
+        "emergent"
+      ]
+    },
+    {
       "id": "2611.21441",
       "source": "arxiv",
       "title": "Learning to Reason with Predictive Gains for Generative Recommendation",
@@ -1484,56 +1531,6 @@
         "reasoning",
         "embodied",
         "robot"
-      ]
-    },
-    {
-      "id": "2611.06447",
-      "source": "arxiv",
-      "title": "$A^3$-VLA: Automatic Perception-Guided Attention Alignment for Robot Manipulation",
-      "url": "https://arxiv.org/abs/2611.06447",
-      "authors": [
-        "Shengzhe Zhang",
-        "Qi Zhang",
-        "Dazhong Shen",
-        "Chao Wang"
-      ],
-      "summary": "Vision-Language-Action Models (VLAs) enable robots to perform manipulation tasks by leveraging Vision-Language Models (VLMs) to process visual observations and language instructions. However, the action prediction objective itself lacks fine-grained task-specific perceptual supervision, making it prone to relying on task-irrelevant visual shortcuts, leading attention away from target objects and key interaction areas, thereby limiting its operational performance and generalization ability. To address this, we propose Automatic Perception-Guided Attention Alignment for Robot Manipulation ($A^3$",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-04",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "alignment",
-        "robot",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.42053",
-      "source": "arxiv",
-      "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
-      "url": "https://arxiv.org/abs/2610.42053",
-      "authors": [
-        "Pengfei Zhou",
-        "Yixing Ma",
-        "Zhengfeiyang Zhang",
-        "Haoyuan Chen"
-      ],
-      "summary": "Foundation models are becoming remarkably reliable at high-level reasoning, yet they remain too slow and costly to serve as fine-grained controllers. Conversely, fast policies like VLAs and whole-body controllers offer more efficient reflexes, but struggle to generalize. While pairing a deliberative brain (foundation models) with a reactive cerebellum (fast policies) seems natural for embodied systems, two obstacles remain: methods are built and scored on incompatible stacks, and their asynchronous coordination is difficult. For example, an agent that calls the VLA in the agentic loop can stal",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-30",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "reasoning",
-        "embodied"
       ]
     }
   ]

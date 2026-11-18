@@ -605,7 +605,7 @@ energy of Jesus about you." "Don't be like me."
 **Suggestions.**
 1. He is Walt. In your Golden Plates outline the thrift shopkeeper is "mysterious and
    wizard-like," with "an air of magic but shows no actual magical abilities." This is the same
-   man eleven years later, and the rule should be the same rule: nothing he does is magic. An
+   man, years on, and the rule should be the same rule: nothing he does is magic. An
    unmarked apple out of a duffel bag in August, a twenty folded small, and he is not in the
    line the next day. That is the right amount. Do not add any.
 2. Never explain the toy.

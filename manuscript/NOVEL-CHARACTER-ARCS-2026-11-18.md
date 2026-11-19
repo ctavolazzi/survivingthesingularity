@@ -66,7 +66,8 @@ first prayer in twenty years.
 (Ch 25). The broom (Ch 29). The shouse key (Ch 37). The lamb, the empty place, "I lost. A bet's
 a bet." (Ch 38). Finished.
 
-**His mother.** Flat on purpose, and she moves at the very end: "I didn't follow it, baby"
+**His mother.** *(Changed 19 November: you decided she dies in Act Two. What follows describes
+the draft as it stands. See `drafts/draft-elijah-crash-out-arc.md`.)* Flat on purpose, and she moves at the very end: "I didn't follow it, baby"
 (Ch 7) becomes "It reads better than it sounded" (Ch 39). The 9:40 call is the gauge of how
 honest Elijah is being: "I'm eating, Ma" (Ch 3), "Working late. All good." (Ch 13), "Ma. I'm
 not okay." (Ch 31). Her taking the lamp is his principle tested on the person he loves most.

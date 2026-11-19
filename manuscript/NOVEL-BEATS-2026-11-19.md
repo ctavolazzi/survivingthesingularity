@@ -14,6 +14,153 @@ Seventeen beats, about a thousand words of new text in all. Five of them change 
 
 ---
 
+# Pushback, 19 November: read this first
+
+You said it is a little predictable, and that where you gave no plot point I filled the gap with
+formula. You are right. This section is my own review of what I wrote below and in the scene
+draft, and what I would do instead. Nothing below it has been changed yet.
+
+## What I did wrong
+
+- **Every thread got tied.** Wes buys back the guitar. David was secretly sitting with her. The
+  realtors hand him the buyer. The aide is the girl from next door. One of those is a nice
+  surprise. Four of them is a small world where nothing is ever lost.
+- **Everyone is kind.** The doctor, the woman with the lanyard, the church lady, the aide. No
+  one fails him in an ordinary, selfish way.
+- **Elijah is always in the right.** At the fire I gave him the clean answer: "No. They can." A
+  man who wins the argument cleanly has not been in a real fight.
+- **Stock props.** The voicemail he replays. Being called by his father's name. Milk cartons and
+  glasses in the bread drawer. A reader has seen every one of them.
+- **I told the reader what was coming.** "He would think of it again at another fire."
+
+## What would actually surprise
+
+The best surprises in this book will not be twists. They will be his own want turned around on
+him. He wants to be believed. So:
+
+### A. His mother believed him
+
+**The surprise:** she is the only person who took the video seriously. That is where the
+mortgage money went.
+
+> The barn was full.
+>
+> There were pallets where the hay had been. White buckets, stacked five high, the lids taped.
+> Rice. Beans. Wheat he could not picture her grinding. Four blue water barrels. A generator
+> still in its box.
+>
+> On a card table by the door there was a spiral notebook in her handwriting. On the first page
+> she had copied out his list. One through five. She had left a space after five, the way he
+> had.
+>
+> The receipts were in a coffee can. They started the week of the video.
+>
+> "I didn't follow it, baby," she had said.
+>
+> She had followed it all the way to the bank.
+
+**Why it is the one to do:** he left stages six and seven out of the video because "My mom's
+watching." She prepared anyway. For two years he wanted one person to believe him, and one did.
+It also changes the last chapter. David says "You're not that powerful, Mad," and Elijah has to
+let him say it, knowing about the barn.
+
+**Risk:** it is dark, and it makes the ending bittersweet where it is now a comfort.
+
+### B. At the fire, he strikes first
+
+**The surprise:** the gentle one goes for the wound. He knows about the man who refused to
+leave. He uses it.
+
+> "You're not trying to save them," he said. "You're trying to save him. He's dead, Grace. You
+> wrote REFUSED and you went to the next door."
+>
+> He heard it leave his mouth.
+>
+> "And now you're taking out your mother trauma on me!"
+
+**Why:** your line says "now," which means he has just done something to her. Then your next
+beat ("the woman he trusted most") cuts both ways. He feels betrayed one breath after he
+betrayed her, and he does not see it. The reader does. "I can't believe I did this again" then
+means she told a man where she was hurt and he used it.
+
+**This replaces** my clean exchange ("I asked her." "They can.").
+
+### C. Her one word is "Home?"
+
+**The surprise:** not "thin." She asks to go home, every Sunday, to the house he sold.
+
+> "Home?" she said.
+>
+> It was the first whole word she had found since the hospital.
+>
+> "Soon, Ma," he said.
+
+**Why:** Grace says "Maybe you should go home." Act Four is called Home. And chapter 39 already
+lists, among the things he can still do, "tell the truth when asked straight." His mother asks
+him straight every week. On Thanksgiving he finally answers her.
+
+### D. Ray was the one sitting with her
+
+**The surprise:** not David. David's father, the one with the horses, drove out every Sunday
+until he died. Then David kept it going, and he is not gracious about it.
+
+> "You missed my dad," David said.
+>
+> "I know."
+>
+> "No. You don't." David put the rag down. "He drove out to that place every Sunday. Sat with
+> your mother. Eight months, till he died. He said somebody ought to." He picked the rag up
+> again. "And you couldn't come down for one hour to bury him."
+>
+> "Who goes now?"
+>
+> "Who do you think."
+
+**Why:** it makes missing the funeral unforgivable in a specific way, and it keeps David angry.
+A friend who does the right thing and resents it is truer than a saint.
+
+### E. The guitar is gone, and Wes sends a thumb
+
+**The surprise:** not everything comes back. The ninety days run out while he is learning to
+sweep. He never sees the Telecaster again. In chapter 39 he sends Wes the answer he owed him,
+and a minute later the phone buzzes once. A thumb.
+
+**Why:** the thumb is the book's own currency. David "answered with a thumb." It is funnier and
+harder than forgiveness.
+
+### F. He asks the internet for help, and that is what turns it
+
+**The surprise, and it closes a hole:** a man with that many followers could raise his mother's
+care in a day. A reader will ask why he does not. So he does.
+
+He posts one line asking for help. The forklift driver in Tulsa sends twenty dollars. Then the
+rest arrive. "And there it is." "The end of the world costs nine grand a month." Somebody makes
+a clip. He takes it down inside the hour and sends Tulsa her twenty back.
+
+**Why:** you asked at the start for people to be contemptuous of him and not trust him anymore.
+This is how that happens to someone like him. It is also why he posts "I don't want all this
+attention" and logs out.
+
+**This could replace** the two phone numbers (beat 5 below).
+
+## What I would cut
+
+- The realtor's card (beat 6). Too neat.
+- The aide being the Hollis girl (beat 10). One connection too many.
+- Wes buying the guitar back (beat 3). Replaced by E.
+- David as the secret visitor (beat 2). Replaced by D.
+- The voicemail. She would not have left one. She thought the phone told you who it was. So
+  there is no voice to play back, and at 9:40 he has only a phone that does not ring.
+- "Tom," the milk, the glasses in the bread drawer.
+- "He would think of it again at another fire."
+
+## What I would keep exactly as it is
+
+The notice on the front door nobody used. The stove in the back of the truck. Bidwell's outfit
+buying the farm. And your crash out: the shouting, the silence and the rain need nothing added.
+
+---
+
 # The five that change the book
 
 ## 1. At the fire, Grace uses his mother against him

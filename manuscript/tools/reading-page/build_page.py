@@ -343,7 +343,7 @@ page = f'''<title>Singularity Cast Bible</title>
 </section>
 
 <section id="view-book" class="view book">
-  <p class="eyebrow">My best version, 19 November 2026. Not in your Doc.</p>
+  <p class="eyebrow">My best version, 19 November 2026. This is what is in your Doc now.</p>
   <h1>Surviving the Singularity</h1>
   <p class="lede">The whole book, start to finish, after my pass. Plain text is yours, untouched. A bar in the margin means it is not.</p>
   <ul class="bookkey">
@@ -358,7 +358,7 @@ page = f'''<title>Singularity Cast Bible</title>
 </section>
 
 <section id="view-changes" class="view prose">
-  <p class="eyebrow">Story and consistency pass, 19 November 2026. Not in your Doc.</p>
+  <p class="eyebrow">Story and consistency pass, 19 November 2026. In your Doc.</p>
   <h1>The best version I can give you</h1>
   {changes_html}
 </section>

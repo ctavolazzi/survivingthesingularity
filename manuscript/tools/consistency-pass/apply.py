@@ -21,7 +21,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__)) + '/'
 REPO = os.path.normpath(HERE + '../..') + '/'
 sys.path.insert(0, HERE)
-from ops import OPS, LEFT, DECIDED, REJECTED, I, E, DEL, NB  # noqa: E402
+from ops import OPS, OPS2, LEFT, DECIDED, REJECTED, I, E, DEL, NB  # noqa: E402
 
 src, out = sys.argv[1], sys.argv[2].rstrip('/') + '/'
 P = open(src).read().split('\n')
@@ -154,11 +154,13 @@ for t in titles:
     new_13_15.append([t, 'changed' if t.startswith('Chapter 13') else 'new'])
     new_13_15.extend(chapters[t])
 n_before = act3 - h13
+os.makedirs(out, exist_ok=True)
+json.dump(new_13_15, open(out + 'built-13-15.json', 'w'))
 P = P[:h13] + new_13_15 + P[act3:]
 
 # ---------- the single-spot changes ----------
 report = {}
-for ch, kind, find, repl, why in OPS:
+for ch, kind, find, repl, why in OPS + OPS2:
     if kind == 'R':
         hits = [(i, m) for i, p in enumerate(P) for m in [re.search(find, p[0])] if m]
     else:
@@ -203,7 +205,7 @@ open(out + 'corrected.txt', 'w').write('\n'.join(p[0] for p in P) + '\n')
 
 n_ops = sum(len(v) for v in report.values())
 md = ['# The best version I can give you', '',
-      '*19 November 2026. This is my pass over the whole book: the story decisions first, then the consistency fixes. It is all in the **Book** tab, start to finish, with everything that is not yours marked in the margin. Nothing is in your Doc.*',
+      '*19 November 2026. This is my pass over the whole book: the story decisions first, then the consistency fixes. It is all in your Doc now, checked paragraph by paragraph against the **Book** tab, where everything that is not yours is marked in the margin. The version of the Doc from before the pass is in its version history.*',
       '',
       '## What I decided', '',
       'Each of these starts from something already on your page. Each one I argued with before I kept it.', '']

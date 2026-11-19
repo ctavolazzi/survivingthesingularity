@@ -18,8 +18,16 @@ Read this before the rest. It is newer.
 - The reading page has two new tabs. **Book** is the whole manuscript after the pass, with a
   bar in the margin beside anything that is not his. **Changes** is the decisions and every
   change. The Later tab is gone, its content is in the pass.
-- **Nothing is in the Google Doc.** A write was tried once and blocked, because his first
-  message said not to write there unless he says so. He has to say it in so many words.
+- **The pass is in the Google Doc.** CT said "write it to the Doc" on 19 November. It was
+  written with `tools/consistency-pass/doc_sync.py` and checked: the Doc matches `book.json`
+  paragraph for paragraph, text and italics. The Doc as it was before the pass is in its version
+  history. Later story changes go in `OPS2` in `ops.py` and are sent the same way (`STAGE=2`).
+- His sister is Melody (his name for her). She is his father's daughter from before, in Miami.
+  Her call the night after the sale sets off the crash out. Her lines in that call are his
+  dictation.
+- The work now is the story structure. He asks a plain question about the story ("why didn't he
+  keep some money?"), the answer shows a weak joint, and it gets fixed in the Doc. Do not hand
+  him lists of fixes. Tell him the story.
 - To rebuild: read the Doc with the Docs connector, turn it into one paragraph per line with
   italics marked `[[i]]...[[/i]]`, run `apply.py`, then build the page. The working copies go in
   `drafts/_private/`, which git ignores.

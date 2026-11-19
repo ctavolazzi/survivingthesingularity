@@ -371,6 +371,25 @@ OPS = [
      'She sent him to find out if they ate, and never learns the answer.'),
 ]
 
+# Stage 2: written after stage 1 was already in the Doc. Same format. Applied after OPS.
+OPS2 = [
+    (13, 'L', 'After his father died, a lawyer in town had put the place in a trust.',
+     'After his father died, and after what Melody said at the funeral, a lawyer in town had put the place in a trust.',
+     'Why there is a trust at all. It also tells the reader, before the call, that she and the farm have a history.'),
+    (15, 'L', 'Every twenty he took out came off the far end of her room.',
+     'Every twenty he took out came off the far end of her room. And there was a woman in Miami who was sure he had kept it. He would have starved before he proved her right.',
+     'Your question: why does he keep nothing? This is the answer, said once, right where he is going hungry beside the money.'),
+    (26, 'L', 'and he let her think it was about the money.',
+     'and he let her think it was about the money.\nReuben cut the first check that Friday. Elijah put it in the back of a notebook and did not cash it. He did the same with the next one.',
+     'His pay is voted in chapter 26 and never seen again. A man who cannot take money would not cash it.'),
+    (39, 'L', 'The proofs came back the Tuesday before Thanksgiving.',
+     'The proofs came back the Tuesday before Thanksgiving.\nHe had paid the print shop with a co-op check. Reuben had cut him one every month since the vote, at half, and for sixteen months he had put them in the back of a notebook. He cashed the newest one for this. He heard the word when he did it. He did it anyway.',
+     'The end of the money thread. He does not get over it. He hears "grub" and takes what he earned anyway. It also answers who paid for the proofs.'),
+    (39, 'L', 'He could let his mother keep her lamp, and her Barry.',
+     'He could let his mother keep her lamp, and her Barry. He could leave one number blocked.',
+     'Melody asked "Do I need to come home?" and was never heard from again. Accepting things does not mean making up with everyone.'),
+]
+
 # Audit items left alone on purpose, with the reason.
 LEFT = [
     ('Audit 25', 'Chat Horizon is "for free" and "twenty dollars a month" in chapter 0. Both are true of the real thing, and chapter 0 is your hand-edited text. Not touched.'),
@@ -384,8 +403,8 @@ OPS.sort(key=lambda op: op[2].startswith("He went into his old bedroom"))
 
 # The story decisions, for the top of the report. (what, where, why)
 DECIDED = [
-    ('His sister, and why he will not take money', 'Chapters 10, 13, 14 and 31',
-     'Yours, 19 November. Melody is his father\'s daughter from before, in Miami. She called him "greedy little grub" when he was small. The night after he sells the farm she calls, and the call is what sets off the crash out. Her side of it and most of his are your words as you said them. He blocks her, which he has never done, and takes it for weakness. One hint before (he hears "Grub" when Ruby offers him money) and one after (Patricia asks who paid for his year in the city). Her name, Melody, is yours.'),
+    ('His sister, and why he will not take money', 'Chapters 10, 13, 14, 15, 26, 31 and 39',
+     'Yours, 19 November. Melody is his father\'s daughter from before, in Miami. She called him "greedy little grub" when he was small. The night after he sells the farm she calls, and the call is what sets off the crash out. Her side of it and most of his are your words as you said them. He blocks her, which he has never done, and takes it for weakness. One hint before (he hears "Grub" when Ruby offers him money) and one after (Patricia asks who paid for his year in the city). Her name, Melody, is yours. The thread then runs to the end: he never cashes his co-op pay, he pays for the proofs with the first check he lets himself cash, and her number stays blocked.'),
     ('The three weeks after he arrives', 'Chapter 17',
      'You ruled the farm people nurse him back. The book jumped from "Eat. Then I\'ll show you where you sleep" to three weeks later. Now there is half a page: a cot, a plate twice a day, a pump to fix, gloves on the step, and nobody asks him anything.'),
     ('How he and Grace become a couple', 'Chapter 25',

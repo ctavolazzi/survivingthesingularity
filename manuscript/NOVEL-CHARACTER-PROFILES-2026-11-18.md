@@ -1055,8 +1055,7 @@ lives.
 2. "A divorce." He does not name anyone, and he "had, everyone knew, already started" drafting
    the fix. A man does not think of that risk first unless he has been through it. Leave it
    there.
-3. Keep the almost-smile to exactly these two, plus a third if he is the one who reads Bidwell's
-   name out at Thanksgiving.
+3. Keep the almost-smile to exactly these two.
 
 ## Frank Kowalski
 

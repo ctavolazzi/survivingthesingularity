@@ -186,11 +186,12 @@ cast. Four steps are missing.
    Then his "I'm letting it go" in Ch 36 is a no to her face, and the fire is earned.
    *Risk:* it makes Elijah harder to like in Ch 36. I think that is correct. He is choosing his
    principle over her people, and the reader should feel the cost.
-4. **Her big speech is not in her voice.** At the fire she says "Millions of people die every
-   single day" and talks about poisoning the planet. Nothing she says anywhere else sounds like
-   that. Patricia talks that way.
-   *Proposal:* rewrite it in what she counts. Rosa. The hundred and forty. The door with the
-   tape on it.
+4. **Her big speech has no root earlier in the book.** At the fire she says "Millions of people
+   die every single day" and talks about poisoning the planet. **Corrected 19 November:** I
+   called this out of her voice and proposed rewriting it. It is your own dictation of the scene
+   on 14 November, nearly word for word, so that proposal is withdrawn.
+   *What still holds:* nothing she says anywhere else prepares it. Plant the sentence once,
+   earlier, in her mouth. The kitchen on a bad Tuesday would do.
 
 ---
 
@@ -229,15 +230,12 @@ happened.
 
 He does not need to change. He is the fence. But his story has no last scene.
 
-*Proposal:* the machine keeps its word. It said it would ask the people who live there. At
-Thanksgiving, among forty phones, Reuben's has a second message. It names the buyer behind the
-eleven companies and asks. Reuben, whose grandfather lost sixty acres, is the one who reads the
-name out. That pays "He circled the link for Reuben to check" (Ch 23), Bidwell's "Let them
-finish," and Reuben's own history in one beat. Elijah is not there to hear it, which is right.
-*Risk:* it makes the machine the hero of the land plot. I think that is the unsettling kind of
-right. The Architect says "I am afraid of the part where it is kind," and a machine that turns
-in its owner to a dinner table is that fear on the page. If it feels too tidy, the smaller
-version is one line: Reuben looks at his phone and says, "It's telling me who Sacramento is."
+**Corrected 19 November.** I proposed here that the machine name him to the co-op at
+Thanksgiving. Your Story plan, in the manuscript Doc, decides the opposite: he is "pulling the
+strings in the background without the other characters ever knowing," and "he never really meets
+them." That proposal is withdrawn. His ending as written is your design: "The heroes do not beat
+him. His own machine stops serving him." The one thing still loose is the forty-acre hole, which
+no scene closes.
 
 ### Ruby
 
@@ -327,7 +325,8 @@ Three changes carry the most weight for the least new text.
    Three of the four are under a page each.
 2. **Wes gets his answer** in chapter 39. A few lines, and it corrects the one real wrong in the
    book.
-3. **Bidwell's last beat** at Thanksgiving. One message on one phone.
+3. **Lou in chapter 23.** One look at Irene's table from the man who lost his own ground to a
+   single buyer. (This replaces the Bidwell proposal, which is withdrawn.)
 
 After those, every named character either changes or is tested, and every one of them can be
 placed on the one question.

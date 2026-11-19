@@ -3,6 +3,12 @@
 *Drafted 2026-11-18 against the "final rough draft" PDF (chapters 12 to 15, PDF pages 85 to 101).
 Nothing in the book source has been changed. This is a proposal plus new prose.*
 
+*Revised 2026-11-19 with four things found in your Drive: the morning after ("Everything I was
+afraid of came to pass. And yet I'm still here."), the pawned guitar ("They keep it as
+collateral."), seventeen dollars ("both nothing and everything"), and the other people living on
+that street ("Not because they love tiny sinks and compost toilets."). Sources are in
+`NOVEL-DRIVE-FINDINGS-2026-11-19.md`.*
+
 ## What CT asked for
 
 A crash out in the vehicle after the rooms, the attention and the cold welcome back home.
@@ -196,9 +202,17 @@ under.
 
 ### Chapter 14: One O'Clock on Saturday
 
+He woke at first light with the windshield fogged and his neck bent wrong.
+
+Everything he had ever been afraid of had happened. He lay there and went down it, the way
+you check yourself after a fall. The job. The friends. The rooms. His own name in a
+stranger's mouth outside a bar. All of it had come to pass.
+
+He was still there.
+
 He lived like that for five weeks.
 
-In the morning he walked two miles to a gas station with a can and spent the last of the
+That morning he walked two miles to a gas station with a can and spent the last of the
 cannery money, which was eleven dollars. He did not go to his mother's. He drove south to
 Santa Rosa, where nobody knew his truck, and parked on a side street by a park, under a
 sycamore.
@@ -209,6 +223,10 @@ the county. Now there were four hundred guys sitting in parking lots staring at 
 phones. Half the short runs went to the little white carts that rolled down the sidewalk
 on six wheels. He got the long ones the carts couldn't do, out to the hills, eleven miles
 for six dollars. On a good day he cleared thirty. The truck ate fifteen of it.
+
+He was not the only one on that street. There was a van with foil in the windows and a
+Corolla with a comforter folded in the back seat. Nobody was there because they loved
+small spaces.
 
 He applied for jobs in the cab at night with the phone propped on the wheel. Warehouse.
 Feed store. Help desk. A winery that needed somebody to drive a forklift. He filled in the
@@ -221,6 +239,28 @@ window for a while and closed it.
 
 He smoked what was left of the bag at night so he could sleep, until it was gone. He
 showered at the Y for five dollars, and when five dollars got to be a lot he stopped.
+
+In the third week he took the Telecaster out from behind the seat.
+
+He had not opened the case since the last gig. He carried it into a place on Fourth Street
+with guitars hanging in the window like hams. The man behind the counter turned it over,
+looked down the neck, and plugged it into a little amp without asking. He played one chord.
+It was in tune. That was the worst part.
+
+"I'm not selling it," Elijah said.
+
+"Nobody is." The man wrote on a pad. "It's a loan. We keep it as collateral. Ninety days.
+You come back with the money and the ticket, it's yours again."
+
+"And if I don't?"
+
+"Then it's in the window."
+
+He gave him a hundred and ten dollars and a yellow ticket. Elijah put the ticket in the
+notebook, behind a gas receipt with a phone number on it.
+
+On the sidewalk his left hand kept closing on nothing. He had been a guitar player. That
+one was on the list.
 
 On Sundays at 9:40 the phone rang on the dash. He let it stop. Then he typed *Working
 late. All good. Love you*, and sent it.
@@ -247,7 +287,10 @@ That was a Tuesday. On Wednesday the app sent him a notice. It thanked him for h
 service. His completion rate had fallen below the threshold for his market, it said, and
 it wished him luck. He'd turned down too many six-dollar runs to the hills.
 
-He had four dollars and a sleeve of crackers. He ate the crackers on Thursday.
+He had seventeen dollars. In Stockton seventeen dollars had been a shower. Here it was
+nothing, and it was everything, because it was all there was.
+
+By Thursday it was four dollars and a sleeve of crackers. He ate the crackers.
 
 Those were dark days.
 
@@ -294,8 +337,8 @@ the last time strangers had invited him somewhere he had ended up holding a rich
 empty glass. It could be a cult. It could be nothing, an empty shed and a woman who talked
 too much.
 
-He ran it the other way. He was thirty-six. He had two bags of groceries, a notebook and a
-truck that ran on a homeless man's money. He had yelled at God and got rained on.
+He ran it the other way. He was thirty-six. He had two bags of groceries, a notebook, a
+pawn ticket and a truck that ran on a homeless man's money. He had yelled at God and got rained on.
 
 *Can't be worse*, he thought.
 
@@ -317,3 +360,9 @@ Somewhere past Cloverdale the check-engine light came on.
 - **The friend.** Grace invites him by email, as in the draft. She does not meet him in
   person before the farm.
 - **Pruitt** and his sister-in-law are new, and so is every number in the delivery passage.
+- **The guitar.** The pawn shop, its street, the hundred and ten dollars and the yellow ticket
+  are invented around your line. The novel never says where the Telecaster is after chapter 15,
+  so nothing later breaks. It does mean the ticket runs out about when he reaches the farm, and
+  "There was a guitar" on the night of the fire is no longer his.
+- **His father and the truck.** Not written in. If the Ranger was his father's, this whole
+  stretch happens inside the last thing of his father's he has.

@@ -11,28 +11,7 @@ Asked whether the full novel should be committed to this repository, which is pu
 So he writes in his Google Doc, "FINAL StS Manuscript," and the copy here is pulled from it. If
 the two differ, the Doc is the newer one.
 
-## What is in this folder
-
-| File | What it is |
-|---|---|
-| `FINAL-StS-Manuscript.md` | The whole Doc from top to bottom as Markdown: his planning notes, the novel, and the notes for the next book. |
-| `CHANGES.md` | This file. One entry for each version, newest first, and then the full record of the pass of 19 November. |
-| `dictation-2026-11-19-morning.md` | His dictation of that morning, word for word: the argument over money, the leader's speech, the camera and the megaphone, and Ricardo. |
-| `readers-grace/` | Six readers' reports on Grace, 19 November. They cite line numbers. Line N is paragraph N of the Doc, and `doc_sync.py dump` prints the Doc one paragraph to a line so a number can be found again. |
-
-The manuscripts from before the novel, up to v0.11.0, are the files beside this folder.
-
-## How to make a new version
-
-1. Read the Doc with the Docs connector's `read_doc`. The result is too large to show and is saved
-   to a file.
-2. `python3 manuscript/tools/consistency-pass/doc_sync.py md <saved-read.json> manuscript/novel/FINAL-StS-Manuscript.md`
-3. `git diff --word-diff manuscript/novel/FINAL-StS-Manuscript.md` shows what changed.
-4. Add an entry at the top of the list below: the date, who made the change, what changed and why.
-5. Commit the manuscript and this file together and nothing else with them. One version is one
-   commit.
-
-`git log --follow manuscript/novel/FINAL-StS-Manuscript.md` is the version history.
+`README.md` beside this file says what is in the folder and how to make a new version.
 
 ## Versions
 

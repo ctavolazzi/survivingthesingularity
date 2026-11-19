@@ -19,6 +19,21 @@ Read `FACTCHECK.md` before editing the claim harness or trace page. The current
 public trace is a historical mechanical snapshot, not semantic certification
 of the current book. Do not describe URL/image resolution as factual support.
 
+## The novel in progress
+
+The next version of the book is a novel. It is not the text in `src/lib/data/book/`.
+Read `manuscript/novel/README.md` before any work on it. In short:
+
+- The author writes in his Google Doc, "FINAL StS Manuscript." The copy in the repository is
+  `manuscript/novel/FINAL-StS-Manuscript.md`, and its commit history is the version history.
+- The newest copy is on the version branch, `book/<version>` (the name is in
+  `manuscript/novel/VERSION`). `main` can be behind it. Fetch the version branch first.
+- `python3 manuscript/tools/book.py status` shows where everything stands. `verify` checks the
+  repository copy against the Doc, and `pull` makes a new version from it.
+- Writing to the Doc needs the author's say-so each time. Proposed changes wait on a
+  `character/<name>` branch. Each character has a folder in `manuscript/novel/characters/`.
+- Pushing to `main` redeploys the live site. Merge the book into `main` only when he says.
+
 ## Routes and data
 
 - `/sample`: open introduction and reading guide from canonical book source.

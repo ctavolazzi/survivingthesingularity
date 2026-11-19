@@ -230,6 +230,20 @@ Three ways people get this wrong:
 
 For version and word count, the only authorities are `book.json` and `scripts/sts.py` run live. Any document asserting a number is making a claim, not a measurement.
 
+### The novel in progress
+
+The next version of the book is a novel, and it is kept in `manuscript/novel/` with its version
+history. It is a different text from the book the site sells now, which is the Markdown in
+`src/lib/data/book/` described above.
+
+- Start at [`manuscript/novel/README.md`](manuscript/novel/README.md). It says where the current
+  version is, how the branches work, and how to make a new version.
+- The manuscript is `manuscript/novel/FINAL-StS-Manuscript.md`. Christopher writes in a Google Doc
+  and that file is pulled from it.
+- The newest copy is on the version branch, `book/<version>`. `main` holds the last checkpoint.
+- `python3 manuscript/tools/book.py status` shows where everything stands.
+- Each character has a folder in `manuscript/novel/characters/` and a branch, `character/<name>`.
+
 ### Blueprint content
 
 [`src/lib/data/blueprint.js`](src/lib/data/blueprint.js) still exists but **no route renders it** - the `/blueprint` route was removed in a past redesign. Treat it as orphaned rather than as a content source, and do not link to `/blueprint`.

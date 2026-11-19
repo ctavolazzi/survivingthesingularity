@@ -390,6 +390,97 @@ OPS2 = [
      'Melody asked "Do I need to come home?" and was never heard from again. Accepting things does not mean making up with everyone.'),
 ]
 
+# Stage 3: from the ten readers' reports, 19 November. Checked against the text before fixing.
+OPS3 = [
+    # ---- plain slips ----
+    (7, 'L', 'is my neighbor ok,', 'is this guy ok,', 'The Hollis place was sold in chapter 3. She is not his neighbor anymore.'),
+    (13, 'L', 'She ate one a night, standing at the counter with the radio on, and had for as long as he could remember. When he was small she let him have the lid.',
+     'When he was small she let him have the lid.', 'Chapter 11 now shows her at the counter with the ice cream. This was the same picture twice.'),
+    (13, 'L', "He had been living in his old bedroom that spring. One night she asked him twice in ten minutes if he'd eaten, and he said yes both times. Once she called him Joe,",
+     'That spring, in his old bedroom, he had heard the same question twice in one evening and let it go. Once she called him Joe,',
+     'Same: chapter 11 shows it, so chapter 13 only has to remember it.'),
+    (13, 'L', 'He had been flown out before, and he knew what it paid.', 'He had been on their stages before, and he knew what it paid.',
+     'Nobody ever flew him anywhere. The lab never sent the ticket, and he drove to San Francisco.'),
+    (13, 'L', 'The money went into an account with her name on it and his name under hers, and the place with the rose garden took the first of it that afternoon.',
+     'On Friday, when it closed, the money would go into an account with her name on it and his name under hers, and the place with the rose garden would take the first of it that afternoon.',
+     'The sale closes in five days ("Heard they close Friday"). The money cannot arrive the day he signs.'),
+    (13, 'L', 'The trust wanted one.', 'The title company wanted one before it would close.', 'He had already signed, so the trust did not need it. The closing did.'),
+    (13, 'L', 'He could not have said why. By the fifth week he had some ideas.', 'He could not have said why.',
+     'The "ideas" never came back. A promise the book did not keep.'),
+    (13, 'L', 'going down the drive, and Elijah lifted his hand.',
+     'going down the drive, and Elijah lifted his hand.\n'
+     'Manny stayed a minute after. He had not said ten words all morning. He said four through the window of his truck.\n'
+     '"Back room\'s empty, Elijah."\n'
+     'Elijah thanked him. He could not have slept in sight of that barn.',
+     'Chapter 37 says Manny offered the back room "once, three years back, through a truck window, in four words." There was no such scene. Now there is.'),
+    (13, 'L', 'and after what Melody said at the funeral,', 'and after Melody stood up at the funeral lunch and asked what the place was worth,',
+     'A cold reader asked what she said. One clause, and you know who she is before she calls.'),
+    (14, 'L', 'He had a quarter tank and no place on earth he was expected.', 'He had what was left of a quarter tank and no place on earth he was willing to be.',
+     'He had a quarter tank a week of driving earlier. And he has just turned down a room and a job, so "expected" was not true.'),
+    (15, 'L', 'He found the night aide at the desk, a big quiet woman with reading glasses on a chain.',
+     'He stayed until the night aide came on, a big quiet woman with reading glasses on a chain.', 'She is the night aide and he was there in the daytime.'),
+    (15, 'L', 'He drove to the gas station on the corner, put all twenty dollars in the tank, and went north.',
+     'On Tuesday he drove to the gas station on the corner, put all twenty dollars in the tank, and went north.',
+     'He left on a Sunday and arrived, three hours later, on a Tuesday. Grace is on the route when he gets there, and the route is Tuesday.'),
+    (17, 'L', 'He was thin enough that October that he could see it scared people.', 'He was thin enough when he came that he could see it scared people.',
+     'He arrives at the very end of October. Most of the three weeks are November.'),
+    (18, 'L', 'He did his own savings math four times, arriving at four different terrifying answers.',
+     "He did the arithmetic on his mother's room four times, arriving at four different terrifying dates.", 'He has no savings. He has her room to pay for.'),
+    (21, 'L', 'for about ninety days, and a billionaire', 'for one winter, and a billionaire', 'Chapter 10 says he had been a face for four months, with ninety days still to go.'),
+    (23, 'L', 'They had not been two fences from her. He had sold them her kitchen.', 'It had not stopped at the Hollis place. He had sold them her kitchen.', 'The first sentence was unclear.'),
+    (26, 'L', 'and did not cash it. He did the same with the next one.', 'and did not cash it. He knew whose voice he would hear if he did. He did the same with the next one.',
+     'A cold reader asked why he will not cash them.'),
+    (31, 'L', 'For two and a half years he had told that phone the same thing. Working. All good.',
+     'For two and a half years, whatever else he told that phone, he had ended on the same thing. Working. All good.',
+     'He has told her about the soup, Ray and the Fisher on those calls. What never changed was how he signed off.'),
+    (31, 'L', 'He had told somebody he was not okay. It was the first time.', 'He had told her he was not okay. It was the first time.',
+     'In chapter 18 he already tells people at the co-op when the panic is back. It is the first time he has told her.'),
+    (35, 'L', " You don't control when you have to pee. Nobody was ever driving.\"", " You don't control when you have to pee.\"",
+     'My added sentence made Lou contradict himself. In chapters 20 and 26 he is the one who says people decide. Your two lines stay.'),
+    (36, 'L', "she couldn't sit in a room with a wood stove.", "she couldn't sit within eight feet of a wood stove.",
+     'Two years before, at the first fire, she sat in that room. Eight feet back.'),
+    (36, 'L', 'I told you that in the dark.', 'I told you that at your stove.', 'She told him by the stove, with the fire going.'),
+    (37, 'L', 'That one went back to the first October.', 'That one went back to the first November.', 'Elijah does not go north until the end of October.'),
+    (37, 'L', 'It was the first time in his life he had seen her sit down without getting up again for something.',
+     'Three years, and he was still not used to it: his mother sitting down, and not getting up again for something.',
+     'He has seen her in that chair every visit since 2024, so it cannot be the first time.'),
+    (39, 'L', 'He heard the word when he did it.', 'He heard ' + I + 'grub' + E + ' when he did it.', 'A reader could not tell which word.'),
+    (39, 'L', 'a text he had never answered.', 'a text he had never really answered.', 'He did answer in chapter 2: "Let me look into it." He never did look into it.'),
+    (39, 'L', 'Sat with your mother. Seven months, till he died.', 'Sat with your mother. Right up till he died.', 'By the book\'s own dates it is nearer six months than seven. Now it does not have to count.'),
+    (39, 'L', 'He looked. It was a thumb.', 'He looked. It was Wes. It was a thumb.', 'Two readers could not tell who sent it.'),
+
+    # ---- things planted and never paid ----
+    (37, 'L', 'His was the one fence left on that road without a light on it.',
+     "His was the one fence left on that road without a light on it.\nIn the morning he fried two eggs in his mother's pot, because it was the only pan he owned. He washed it himself, and set it in Manny's rack.",
+     'The pot nobody else was allowed to wash is carried through three chapters and never used. He washes it.'),
+    (38, 'L', 'Plate, fork, knife, a glass.', 'Plate, fork, knife, a glass. He set a bottle of wine beside it and did not open it.',
+     '"I\'ll bring wine," Devendra said in chapter 6. He does.'),
+
+    # ---- the story change: the deed ----
+    (25, 'L', 'because that was how the co-op stayed healthy and he trusted it now.',
+     'because that was how the co-op stayed healthy and he trusted it now. There was one thing he had not said at that table, and it was not about Frank.',
+     'He confesses about Frank while still sitting on his own secret. See "The deed" at the top.'),
+    (29, 'L', "That night, after everyone had gone, Elijah rebuilt the model with the room's amendments.",
+     'Reuben was the last one out. He stacked the chairs, which he never did. Then he took a plastic sleeve out of his folder and laid it on the table by the laptop.\n'
+     '"You circled a link for me once," he said. "The outfit that bought a dairy down by your mother\'s. You asked me to check it."\n'
+     'It was one page from a county recorder, three hours south. A grant deed, September of 2024. The grantee had three letters and an LLC. The grantor was a family trust, and under it, typed, was the trustee\'s name.\n'
+     '"I checked it that week," Reuben said. "I\'ve had this going on two years."\n'
+     'Elijah looked at his own name. The stove ticked.\n'
+     '"I\'ve been reading deeds a long time. I know what a man signs when his mother\'s in a bed. I\'m not asking why you sold." He squared the sleeve to the edge of the table. "I\'m asking why I had to go and look."\n'
+     '"Who else knows?"\n'
+     '"I don\'t carry tales. But it\'s a public record, and you taught half this valley how to search one." He buttoned his coat. "You modeled forty ways for us to die tonight. Marta told you what you left out."\n'
+     'He went out and pulled the door to behind him, carefully, the way he did everything.\n'
+     "That night, after everyone had gone, Elijah rebuilt the model with the room's amendments.",
+     'The deed. See the top of this tab.'),
+    (29, 'L', 'Every way to die carried two names now: who it happens to, and who is watching for it.',
+     'Every way to die carried two names now: who it happens to, and who is watching for it. There was one he did not enter.', ''),
+    (30, 'L', '"And a study has a due date."',
+     '"And a study has a due date."\nShe capped the pen. "We asked nicely," she said, to nobody. "I want that written down somewhere."',
+     'Between chapter 27 and chapter 33 Grace says nothing about asking or not asking. This is a step on her way to "just do it": the county is where asking stops working for her.'),
+    (31, 'L', 'The checking in and the blessings and the soup.', 'The checking in and the blessings and the soup. They had all read the deed.',
+     'The deed again: he does not know who knows, and on the worst night of his life he decides everyone does.'),
+]
+
 # Audit items left alone on purpose, with the reason.
 LEFT = [
     ('Audit 25', 'Chat Horizon is "for free" and "twenty dollars a month" in chapter 0. Both are true of the real thing, and chapter 0 is your hand-edited text. Not touched.'),
@@ -405,6 +496,8 @@ OPS.sort(key=lambda op: op[2].startswith("He went into his old bedroom"))
 DECIDED = [
     ('His sister, and why he will not take money', 'Chapters 10, 13, 14, 15, 26, 31 and 39',
      'Yours, 19 November. Melody is his father\'s daughter from before, in Miami. She called him "greedy little grub" when he was small. The night after he sells the farm she calls, and the call is what sets off the crash out. Her side of it and most of his are your words as you said them. He blocks her, which he has never done, and takes it for weakness. One hint before (he hears "Grub" when Ruby offers him money) and one after (Patricia asks who paid for his year in the city). Her name, Melody, is yours. The thread then runs to the end: he never cashes his co-op pay, he pays for the proofs with the first check he lets himself cash, and her number stays blocked.'),
+    ('The deed', 'Chapters 23, 25, 29 and 31',
+     'This is the one large thing I added after the readers reported, and it is the fix for the flat middle. From chapter 25 to chapter 30 nothing of his was at risk. And one reader caught that after he confesses the leak and confesses Frank\'s chart, he hides one thing: the farm he sold went to the same buyers the co-op is fighting. So that is now a live wire. In chapter 23 he asks Reuben to check a link and does not say how he knows. Reuben checks. In chapter 29, the night of "Run it again with people in it," Reuben lays the recorded deed on his table: "I\'m not asking why you sold. I\'m asking why I had to go and look." He has had it two years. Elijah never learns who else knows, and this time he does not ring the bell. So when the table goes cold in chapter 31, he has earned some of it, and on the night of the tea he decides they have all read it.'),
     ('The three weeks after he arrives', 'Chapter 17',
      'You ruled the farm people nurse him back. The book jumped from "Eat. Then I\'ll show you where you sleep" to three weeks later. Now there is half a page: a cot, a plate twice a day, a pump to fix, gloves on the step, and nobody asks him anything.'),
     ('How he and Grace become a couple', 'Chapter 25',

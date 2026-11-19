@@ -110,9 +110,10 @@ def req(find, repl, regex=False):
 
 
 def planned(private):
-    from ops import OPS, OPS2
-    if os.environ.get('STAGE') == '2':
-        return [req(find, repl, kind == 'R') for ch, kind, find, repl, why in OPS2]
+    from ops import OPS, OPS2, OPS3
+    stage = os.environ.get('STAGE')
+    if stage in ('2', '3'):
+        return [req(find, repl, kind == 'R') for ch, kind, find, repl, why in (OPS2 if stage == '2' else OPS3)]
     built = [p[0] for p in json.load(open(private + 'built-13-15.json'))]
     steps = [
         req("Chapter 13: One O'Clock on Saturday", 'Chapter 13: Two in the Afternoon'),

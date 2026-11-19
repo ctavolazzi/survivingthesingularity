@@ -25,6 +25,13 @@ Read this before the rest. It is newer.
 - His sister is Melody (his name for her). She is his father's daughter from before, in Miami.
   Her call the night after the sale sets off the crash out. Her lines in that call are his
   dictation.
+- Ten Sonnet readers went through the whole book on 19 November (CT asked for subagents on
+  Sonnet 5.5, fetching information for the main session to judge). Their reports are in
+  `drafts/_private/readers/` in a live session and are not in git. What was acted on is `OPS3`
+  in `ops.py`: about thirty plain slips, and one story change, "the deed" (Reuben finds that the
+  farm Elijah sold went to the co-op's enemy; chapters 23, 25, 29, 31). Not acted on, because
+  they are CT's: the letter Elijah signs half read in chapter 8, the leaked journal's three
+  crawlers, the welder for the gap, and why he says no to Gus.
 - The work now is the story structure. He asks a plain question about the story ("why didn't he
   keep some money?"), the answer shows a weak joint, and it gets fixed in the Doc. Do not hand
   him lists of fixes. Tell him the story.

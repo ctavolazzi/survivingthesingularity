@@ -21,7 +21,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__)) + '/'
 REPO = os.path.normpath(HERE + '../..') + '/'
 sys.path.insert(0, HERE)
-from ops import OPS, OPS2, LEFT, DECIDED, REJECTED, I, E, DEL, NB  # noqa: E402
+from ops import OPS, OPS2, OPS3, LEFT, DECIDED, REJECTED, I, E, DEL, NB  # noqa: E402
 
 src, out = sys.argv[1], sys.argv[2].rstrip('/') + '/'
 P = open(src).read().split('\n')
@@ -160,7 +160,7 @@ P = P[:h13] + new_13_15 + P[act3:]
 
 # ---------- the single-spot changes ----------
 report = {}
-for ch, kind, find, repl, why in OPS + OPS2:
+for ch, kind, find, repl, why in OPS + OPS2 + OPS3:
     if kind == 'R':
         hits = [(i, m) for i, p in enumerate(P) for m in [re.search(find, p[0])] if m]
     else:

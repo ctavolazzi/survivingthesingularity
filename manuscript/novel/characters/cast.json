@@ -1,0 +1,282 @@
+[
+ {
+  "slug": "elijah",
+  "name": "Elijah Galen Madrone",
+  "find": "\\bElijah\\b|\\bMad\\b|Madrone",
+  "keys": [
+   "Elijah"
+  ],
+  "note": "The lead."
+ },
+ {
+  "slug": "grace",
+  "name": "Grace",
+  "find": "\\bGrace\\b",
+  "keys": [],
+  "note": "The second lead. She invites him, loves him, and tells him to go home."
+ },
+ {
+  "slug": "his-mother",
+  "name": "His mother",
+  "find": "\\bMa\\b|[Hh]is mother|[Hh]er Sunday|\\bBarry\\b",
+  "keys": [
+   "Elijah's mother"
+  ],
+  "note": "Never named. After the stroke she has one word, \"Barry.\""
+ },
+ {
+  "slug": "melody",
+  "name": "Melody",
+  "find": "Melody",
+  "keys": [],
+  "note": "His half-sister, in Miami. One phone call and a blocked number."
+ },
+ {
+  "slug": "david",
+  "name": "David McGrath",
+  "find": "\\bDavid\\b|\\bDave\\b",
+  "keys": [
+   "David"
+  ],
+  "note": "His oldest friend, behind the bar at the Bear Flag."
+ },
+ {
+  "slug": "ray",
+  "name": "Ray McGrath",
+  "find": "\\bRay\\b|David's father",
+  "keys": [
+   "Ray"
+  ],
+  "note": "David's father. Club soda, the framed prayer, the horses."
+ },
+ {
+  "slug": "his-grandmother",
+  "name": "His grandmother",
+  "find": "grandmother",
+  "keys": [],
+  "note": "The madrones and the Fisher stove."
+ },
+ {
+  "slug": "his-father-and-manny",
+  "name": "His father, Manny and the uncle",
+  "find": "[Hh]is father|\\bJoe\\b|\\bManny\\b|his dad",
+  "keys": [],
+  "note": "His father is dead about ten years. Manny has the next place over."
+ },
+ {
+  "slug": "nate-and-wes",
+  "name": "Nate and Wes",
+  "find": "\\bNate\\b|\\bWes\\b",
+  "keys": [
+   "Wes and Nate"
+  ],
+  "note": "The band, Second Crop."
+ },
+ {
+  "slug": "devendra",
+  "name": "Devendra",
+  "find": "Devendra",
+  "keys": [],
+  "note": "Senior and calm at Claypot. Loser cooks."
+ },
+ {
+  "slug": "the-realtors-and-the-three",
+  "name": "The realtors, and Kelsey, Carol and Mateo",
+  "find": "realtor|Kelsey|\\bCarol\\b|Mateo|Donna|blazers",
+  "keys": [
+   "Kelsey, Carol and Mateo"
+  ],
+  "note": "The toast, and the three people who were let go."
+ },
+ {
+  "slug": "lindas-granddaughter",
+  "name": "Linda's granddaughter",
+  "find": "Hollis girl|Linda's granddaughter",
+  "keys": [],
+  "note": "The Hollis girl. She is how the video gets out."
+ },
+ {
+  "slug": "ruby",
+  "name": "Ruby Roth-Jones",
+  "find": "\\bRuby\\b",
+  "keys": [
+   "Ruby"
+  ],
+  "note": "Twenty-four. He made the lamp that talks."
+ },
+ {
+  "slug": "the-architect",
+  "name": "The Architect",
+  "find": "Architect",
+  "keys": [],
+  "note": "She built it without asking, and works on whether it asks first."
+ },
+ {
+  "slug": "gus",
+  "name": "Gus",
+  "find": "\\bGus\\b",
+  "keys": [],
+  "note": "The robot arms, the bus line, \"Your choice.\""
+ },
+ {
+  "slug": "bidwell",
+  "name": "Aaron Bidwell",
+  "find": "Bidwell|\\bAaron\\b",
+  "keys": [
+   "Bidwell"
+  ],
+  "note": "The one man behind Claypot, the land companies and the Memphis platform."
+ },
+ {
+  "slug": "bidwells-reader",
+  "name": "Bidwell's reader",
+  "find": "[Tt]he reader\\b",
+  "keys": [],
+  "note": "The person who reads for him."
+ },
+ {
+  "slug": "the-old-man-on-the-curb",
+  "name": "The old man on the curb",
+  "find": "old man",
+  "keys": [],
+  "note": "Twenty dollars and the food bank."
+ },
+ {
+  "slug": "the-others-on-the-road",
+  "name": "The others on the road",
+  "find": "\\bTrent\\b|\\bEarl\\b|Tulsa|Pruitt",
+  "keys": [],
+  "note": "Trent, Earl, the woman in Tulsa, Pruitt and the rest."
+ },
+ {
+  "slug": "the-machine",
+  "name": "The machine",
+  "find": "Chat Horizon|Silvana|the Crucible|Rod Code|Porchlight|Companion|[Tt]he machine|[Tt]he lamp\\b",
+  "keys": [],
+  "note": "Silvana, Chat Horizon, Companion, Rod Code, the Crucible, Porchlight, and what wakes in March."
+ },
+ {
+  "slug": "marta",
+  "name": "Marta Okonkwo",
+  "find": "\\bMarta\\b",
+  "keys": [
+   "Marta"
+  ],
+  "note": "The welder. \"We'll see.\""
+ },
+ {
+  "slug": "lou",
+  "name": "Lou",
+  "find": "\\bLou\\b",
+  "keys": [],
+  "note": "He grows the food, and he says the two things that turn Elijah."
+ },
+ {
+  "slug": "denny",
+  "name": "Denny Osei",
+  "find": "\\bDenny\\b",
+  "keys": [
+   "Denny"
+  ],
+  "note": "Two ladders, both moved. The channel is his."
+ },
+ {
+  "slug": "curtis",
+  "name": "Curtis",
+  "find": "\\bCurtis\\b",
+  "keys": [],
+  "note": "The fence, the basement, the route."
+ },
+ {
+  "slug": "tyler",
+  "name": "Tyler",
+  "find": "\\bTyler\\b",
+  "keys": [],
+  "note": "Nineteen when he arrives. \"I used Rod Code.\""
+ },
+ {
+  "slug": "priya",
+  "name": "Priya",
+  "find": "\\bPriya\\b",
+  "keys": [],
+  "note": "The beds, the pencil, thirty centimeters."
+ },
+ {
+  "slug": "reuben",
+  "name": "Reuben Vance",
+  "find": "\\bReuben\\b",
+  "keys": [
+   "Reuben"
+  ],
+  "note": "The part of the machine that runs on paper."
+ },
+ {
+  "slug": "frank",
+  "name": "Frank Kowalski",
+  "find": "\\bFrank\\b|Kowalski",
+  "keys": [
+   "Frank"
+  ],
+  "note": "The hardware store and the bell."
+ },
+ {
+  "slug": "wren",
+  "name": "Wren",
+  "find": "\\bWren\\b",
+  "keys": [],
+  "note": "The Sunday circle and the candles."
+ },
+ {
+  "slug": "patricia",
+  "name": "Patricia",
+  "find": "\\bPatricia\\b",
+  "keys": [],
+  "note": "Policy director for the CSA network. She has been using it all along."
+ },
+ {
+  "slug": "rosa",
+  "name": "Rosa",
+  "find": "\\bRosa\\b",
+  "keys": [],
+  "note": "The converted garage. \"Pass the lamb.\""
+ },
+ {
+  "slug": "irene",
+  "name": "Irene Calder",
+  "find": "\\bIrene\\b",
+  "keys": [
+   "Irene"
+  ],
+  "note": "Walt's widow. The forty acres."
+ },
+ {
+  "slug": "the-girl-and-the-mother-from-redding",
+  "name": "The girl with the laptop, and the mother from Redding",
+  "find": "Redding|Subaru|pen in her teeth",
+  "keys": [],
+  "note": "Two strangers near the end."
+ },
+ {
+  "slug": "ricardo",
+  "name": "Ricardo",
+  "find": "Ricardo",
+  "keys": [],
+  "note": "Not in the book yet. He comes from CT's dictation of the morning of 19 November: a staunch anti-capitalist, with a girlfriend who agrees with him. \"Ricardo\" is his first try at the name, and he says \"Carl\" once.",
+  "dictation": [
+   1,
+   2,
+   4
+  ]
+ },
+ {
+  "slug": "the-leader",
+  "name": "The leader of the farm",
+  "find": "",
+  "keys": [],
+  "note": "Not in the book yet. He comes from CT's dictation of the morning of 19 November: the one who stops the argument over money. Who he is has not been decided. The co-op has no leader on the page.",
+  "dictation": [
+   1,
+   2
+  ]
+ }
+]

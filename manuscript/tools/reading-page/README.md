@@ -12,6 +12,7 @@ It is built from these files and nothing else:
 | Drive | `NOVEL-DRIVE-FINDINGS-2026-11-19.md` |
 | Scene | `drafts/draft-elijah-crash-out-arc.md` |
 | Book | `drafts/_private/book.json`, made by `tools/consistency-pass/apply.py` and kept out of git |
+| Readers | `drafts/_private/readers/NN-*.md`, the readers' reports, kept out of git |
 | Changes | `drafts/_private/CHANGES.md`, made by `tools/consistency-pass/apply.py` and kept out of git |
 | Beats | `NOVEL-BEATS-2026-11-19.md` |
 | Shape | `NOVEL-STRUCTURE-2026-11-19.md` (the chart is drawn from its chapter table) |

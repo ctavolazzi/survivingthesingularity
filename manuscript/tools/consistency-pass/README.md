@@ -19,3 +19,15 @@ python3 manuscript/tools/consistency-pass/apply.py /path/to/doc-paragraphs.txt m
 ```
 
 The input is the Doc's text with one paragraph per line, taken from a read of the Doc.
+
+## The rest of the tools
+
+- `ops.py` holds every change in stages (`OPS`, `OPS2`, `OPS3`, `OPS4`), the story decisions
+  (`DECIDED`), the ideas turned down (`REJECTED`) and what was left alone on purpose (`LEFT`).
+- `doc_sync.py` is for putting a stage into the Google Doc once CT has said to write there:
+  `dump` turns a saved read of the Doc into one paragraph per line, `emit` simulates the stage
+  against the Doc and writes the request batches, `fixup` writes the batch that sets italics
+  and deletes marked paragraphs, and `verify` compares the Doc with `book.json` paragraph by
+  paragraph. It never calls the connector. The steps are in `NOVEL-METHOD-2026-11-19.md`.
+- `make_pdf.py` and `make_pdf.cjs` print `book.json` to a PDF: cover art first, then text only.
+  The PDF holds the manuscript, so it stays in `drafts/_private/`.

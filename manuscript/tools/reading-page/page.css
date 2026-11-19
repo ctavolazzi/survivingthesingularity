@@ -248,3 +248,12 @@ td:first-child { font-variant-numeric: tabular-nums; }
 .booktext .fig { font-family: var(--ui); font-size: 13.5px; color: var(--muted); }
 .booktext em { font-style: italic; }
 @media (max-width: 480px) { .booktext p { font-size: 17.5px; } }
+
+/* the Readers tab: one fold per report */
+.rep { border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+.rep > summary { cursor: pointer; padding: 12px 14px; font: 600 15.5px/1.3 var(--ui); }
+.rep > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.repbody { padding: 4px 14px 16px; font-size: 14.5px; overflow-wrap: anywhere; min-width: 0; }
+.repbody > p, .repbody > ul, .repbody > ol { font-size: 14.5px; line-height: 1.5; }
+.repbody h2 { font-size: 17px; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--rule); }
+.repbody h3 { font-size: 15.5px; }

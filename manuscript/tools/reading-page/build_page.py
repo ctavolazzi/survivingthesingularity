@@ -175,6 +175,19 @@ scene_html = md(strip_h1(SCENE), 'scene')
 later_html = md(strip_h1(LATER), 'later')
 changes_html = md(strip_h1(CHANGES), 'changes')
 
+# The Readers tab: the ten readers' full reports. They quote the book, so they are kept out of git.
+import glob as _glob
+_reports = sorted(_glob.glob(REPO + 'drafts/_private/readers/[0-9][0-9]-*.md'))
+readers_html = '<p>Not built in this copy. The reports are made by the readers described in NOVEL-METHOD-2026-11-19.md.</p>'
+if _reports:
+    parts = []
+    for k, f in enumerate(_reports, 1):
+        text = open(f).read()
+        title = text.lstrip().split('\n', 1)[0].lstrip('# ').strip() or os.path.basename(f)
+        parts.append('<details class="rep"><summary>%d. %s</summary><div class="prose repbody">%s</div></details>'
+                     % (k, html.escape(title), md(strip_h1(text))))
+    readers_html = '\n'.join(parts)
+
 # The Book tab: the whole manuscript after the pass, with what is not CT's marked in the margin.
 _book = REPO + 'drafts/_private/book.json'
 book_html, book_toc = '<p>Not built in this copy. Run tools/consistency-pass/apply.py first.</p>', ''
@@ -288,6 +301,7 @@ page = f'''<title>Singularity Cast Bible</title>
     <nav class="tabs" aria-label="Sections">
       <a id="tab-book" href="#book">Book</a>
       <a id="tab-changes" href="#changes">Changes</a>
+      <a id="tab-readers" href="#readers">Readers</a>
       <a id="tab-people" href="#people">People</a>
       <a id="tab-map" href="#map">Map</a>
       <a id="tab-drive" href="#drive">Drive</a>
@@ -355,6 +369,13 @@ page = f'''<title>Singularity Cast Bible</title>
   <div class="booktext">
 {book_html}
   </div>
+</section>
+
+<section id="view-readers" class="view prose">
+  <p class="eyebrow">Ten readers, 19 November 2026</p>
+  <h1>What the readers brought back</h1>
+  <p>Ten readers each went through the whole manuscript for one thing. These are their full reports, as they wrote them. Line numbers are lines in the working copy of the text, not pages. What was done about each finding is on the Changes tab.</p>
+  {readers_html}
 </section>
 
 <section id="view-changes" class="view prose">

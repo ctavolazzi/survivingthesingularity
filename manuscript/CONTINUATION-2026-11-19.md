@@ -1,5 +1,8 @@
 # Continuation prompt: Surviving the Singularity, the novel, 2026-11-19
 
+**Superseded the same evening by `CONTINUATION-2026-11-19-B.md`. Read that one. This file is
+kept as the record of where things stood that morning, and parts of it are no longer true.**
+
 Read this at the start of a fresh session. It says where the novel work stands, where every
 piece is, what CT has decided, what is still his to decide, and how he wants to be worked with.
 

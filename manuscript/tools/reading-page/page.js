@@ -1,5 +1,5 @@
 (function () {
-  var views = ['people', 'map', 'drive', 'scene', 'later', 'beats', 'shape', 'rhymes', 'arcs', 'fixes', 'method'];
+  var views = ['changes', 'people', 'map', 'drive', 'scene', 'later', 'beats', 'shape', 'rhymes', 'arcs', 'fixes', 'method'];
   var jump = document.getElementById('jump');
   var jumpwrap = document.getElementById('jumpwrap');
 

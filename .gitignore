@@ -98,3 +98,6 @@ __pycache__/
 
 # Versioned editable handoffs are generated from reviewed source.
 publication/package-v*/
+
+# Private working copies of manuscript text. The repo is public.
+manuscript/drafts/_private/

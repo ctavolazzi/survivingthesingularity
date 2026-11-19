@@ -11,6 +11,7 @@ It is built from these files and nothing else:
 | Map | `NOVEL-MAP-EVERYONE-2026-11-19.md` and `NOVEL-MAP-ELIJAH-2026-11-19.md` |
 | Drive | `NOVEL-DRIVE-FINDINGS-2026-11-19.md` |
 | Scene | `drafts/draft-elijah-crash-out-arc.md` |
+| Changes | `drafts/_private/CHANGES.md`, made by `tools/consistency-pass/apply.py` and kept out of git |
 | Later | `drafts/draft-later-chapters-36-37-39.md` |
 | Beats | `NOVEL-BEATS-2026-11-19.md` |
 | Shape | `NOVEL-STRUCTURE-2026-11-19.md` (the chart is drawn from its chapter table) |

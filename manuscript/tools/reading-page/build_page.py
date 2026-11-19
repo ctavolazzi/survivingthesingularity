@@ -17,6 +17,9 @@ AUDIT = open(REPO + 'NOVEL-CONSISTENCY-AUDIT-2026-11-18.md').read()
 DRIVE = open(REPO + 'NOVEL-DRIVE-FINDINGS-2026-11-19.md').read()
 SCENE = open(REPO + 'drafts/draft-elijah-crash-out-arc.md').read()
 LATER = open(REPO + 'drafts/draft-later-chapters-36-37-39.md').read()
+# Made by tools/consistency-pass/apply.py. It quotes the manuscript, so it is kept out of git.
+_changes = REPO + 'drafts/_private/CHANGES.md'
+CHANGES = open(_changes).read() if os.path.exists(_changes) else '# Changes\n\nNot built in this copy. Run tools/consistency-pass/apply.py first.\n'
 BEATS = open(REPO + 'NOVEL-BEATS-2026-11-19.md').read()
 STRUCT = open(REPO + 'NOVEL-STRUCTURE-2026-11-19.md').read()
 MAPE = open(REPO + 'NOVEL-MAP-ELIJAH-2026-11-19.md').read()
@@ -170,6 +173,7 @@ audit_html = md(strip_h1(AUDIT), 'fixes')
 drive_html = md(strip_h1(DRIVE), 'drive')
 scene_html = md(strip_h1(SCENE), 'scene')
 later_html = md(strip_h1(LATER), 'later')
+changes_html = md(strip_h1(CHANGES), 'changes')
 beats_html = md(strip_h1(BEATS), 'beats')
 shape_html = md(strip_h1(STRUCT), 'shape')
 map_fig = ('<figure class="mapfig">' + map_svg.draw(MAPE, 'Elijah', 'map-elijah')
@@ -246,6 +250,7 @@ page = f'''<title>Singularity Cast Bible</title>
 <header class="bar">
   <div class="barin">
     <nav class="tabs" aria-label="Sections">
+      <a id="tab-changes" href="#changes">Changes</a>
       <a id="tab-people" href="#people">People</a>
       <a id="tab-map" href="#map">Map</a>
       <a id="tab-drive" href="#drive">Drive</a>
@@ -299,6 +304,12 @@ page = f'''<title>Singularity Cast Bible</title>
   <p class="eyebrow">Draft, fourth version, 19 November 2026</p>
   <h1>His mother's stroke, the choice, the crash out and the road to the farm</h1>
   {scene_html}
+</section>
+
+<section id="view-changes" class="view prose">
+  <p class="eyebrow">Consistency pass, 19 November 2026. Not in your Doc yet.</p>
+  <h1>What the consistency pass changes</h1>
+  {changes_html}
 </section>
 
 <section id="view-later" class="view prose">

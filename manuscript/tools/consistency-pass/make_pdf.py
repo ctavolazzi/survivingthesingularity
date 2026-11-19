@@ -19,7 +19,7 @@ def inline(t):
     return html.escape(t, quote=False).replace('[[i]]', '<em>').replace('[[/i]]', '</em>')
 
 
-rows, prev = [], ''
+rows, prev, skip_caption = [], '', False
 for text, _ in paras[a:b]:
     bare = text.replace('[[i]]', '').replace('[[/i]]', '')
     if head.match(bare):
@@ -37,17 +37,15 @@ for text, _ in paras[a:b]:
         rows.append('<p class="brk">&#8226;</p>')
         prev = 'brk'
     elif bare.startswith('[Figure:'):
-        rows.append('<p class="fig">%s</p>' % html.escape(bare))
-        prev = 'fig'
-    elif prev == 'fig':
-        rows.append('<p class="cap">%s</p>' % html.escape(bare))
-        prev = 'cap'
+        skip_caption = True      # text only: no picture placeholders and no captions
+    elif skip_caption:
+        skip_caption = False
     elif re.match(r'^[A-Z][A-Za-z\' ]{2,60}$', bare) and prev != 'head' and len(bare) < 50 and bare in (
             'Listen to the words between the lines', "We don't have to live like this", 'Food first', 'Get involved'):
         rows.append('<h3>%s</h3>' % html.escape(bare))
         prev = 'head'
     else:
-        cls = ' class="first"' if prev in ('head', 'brk', 'cap') else ''
+        cls = ' class="first"' if prev in ('head', 'brk') else ''
         rows.append('<p%s>%s</p>' % (cls, inline(text)))
         prev = 'p'
 

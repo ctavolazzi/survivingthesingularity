@@ -1,6 +1,7 @@
 """Helpers for putting the pass into the Google Doc, once CT has said to write it there.
 
   dump   READ.json OUT.txt          paragraphs, one per line, italics as [[i]]..[[/i]]
+  md     READ.json OUT.md           the whole Doc as Markdown, for the copy kept in novel/
   emit   READ.json PRIVATE OUTDIR   the replaceAllText batches still needed, checked by simulation
   fixup  READ.json PRIVATE OUT.json the one batch of styles and deletes that follows the text
   verify READ.json PRIVATE          compare the Doc with book.json, paragraph by paragraph
@@ -164,12 +165,72 @@ def strip_old(paras):
     return out
 
 
+HASH = {'HEADING_1': '# ', 'HEADING_2': '## ', 'HEADING_3': '### ', 'HEADING_4': '#### '}
+
+
+def styled(runs):
+    """One paragraph's runs as Markdown. Italic is *..*, bold is **..**, and the marks hug the words."""
+    chars = []
+    for content, it, bo in runs:
+        chars.extend((ch, it, bo) for ch in content)
+    while chars and chars[-1][0] == '\n':
+        chars.pop()
+    out, i, n = [], 0, len(chars)
+    while i < n:
+        ch, it, bo = chars[i]
+        if not ch.strip() or not (it or bo):
+            out.append(ch)
+            i += 1
+            continue
+        j = i
+        while j < n and (not chars[j][0].strip() or chars[j][1:] == (it, bo)):
+            j += 1
+        while not chars[j - 1][0].strip():
+            j -= 1
+        mark = ('**' if bo else '') + ('*' if it else '')
+        out.append(mark + ''.join(c[0] for c in chars[i:j]) + mark[::-1])
+        i = j
+    return ''.join(out)
+
+
+def markdown(path):
+    """The whole Doc as Markdown, one block per paragraph. Returns (text, paragraph count)."""
+    d = json.load(open(path))
+    d = d.get('content', d)
+    blocks, was_item = [], False
+    for el in d['tabs'][0]['documentTab']['body']['content']:
+        p = el.get('paragraph')
+        if not p:
+            continue
+        runs = [(e['textRun']['content'], bool(e['textRun'].get('textStyle', {}).get('italic')),
+                 bool(e['textRun'].get('textStyle', {}).get('bold'))) for e in p['elements'] if e.get('textRun')]
+        plain = ''.join(r[0] for r in runs).rstrip('\n')
+        style = p['paragraphStyle'].get('namedStyleType')
+        item = bool(p.get('bullet'))
+        if plain == NB or not plain.strip():
+            line = '<p align="center">&middot;</p>'            # a scene break
+        elif style in HASH:
+            line = HASH[style] + plain
+        else:
+            line = re.sub(r'^(\d+)([.)]) ', r'\1\\\2 ', styled(runs))   # "1. The Cash Grab" is a sentence, not a list
+            if item:
+                line = '- ' + line
+        blocks.append(('\n' if item and was_item else '\n\n') + line)
+        was_item = item
+    return ''.join(blocks).lstrip('\n') + '\n', len(blocks)
+
+
 cmd = sys.argv[1]
 rev, doc = load(sys.argv[2])
 
 if cmd == 'dump':
     open(sys.argv[3], 'w').write('\n'.join(marked(p['text'], mask(p)) for p in doc) + '\n')
     print(rev, len(doc))
+
+elif cmd == 'md':
+    text, count = markdown(sys.argv[2])
+    open(sys.argv[3], 'w').write(text)
+    print(rev, count, 'paragraphs,', len(text.split()), 'words')
 
 elif cmd == 'emit':
     private, outdir = sys.argv[3].rstrip('/') + '/', sys.argv[4].rstrip('/') + '/'

@@ -184,10 +184,10 @@ his thirties with a horse."
 
 ## His mother
 
-*Changed 19 November: you decided she dies in Act Two, of a sudden brain hemorrhage, after months
-of forgetting things, and that the farm is foreclosed. This profile describes her as the draft
-has her now, alive to the end. The new version and every later scene it touches are in
-`drafts/draft-elijah-crash-out-arc.md`.*
+*Changed 19 November: you decided she has a massive stroke in Act Two, after months of
+forgetting things, and goes into a care facility, and that Elijah sells the farm to pay for it.
+This profile describes her as the draft has her now. The new version and every later scene it
+touches are in `drafts/draft-elijah-crash-out-arc.md`.*
 
 **Portrait.** She is seventy-one and the book never says her name. She calls every Sunday at 9:40,
 "when her day ended, whether she had seen him that week or not," and starts talking before

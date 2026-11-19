@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Wed, 18 Nov 2026 21:15:25 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 19 Nov 2026 21:17:02 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -55,13 +55,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.28397</guid>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <description>Agentic AI extends large language models (LLMs) from generating responses to planning and executing complex workflows, substantially expanding their utility while exposing applications to unsafe actions, information leakage, and adversarial manipulation. Multi-agent systems further expand these capa... [Score: 10.5 | Flagged for: agent, multi-agent, agentic, planning, llm] Authors: Mohammad Kachuee, Phu Mon Htut, et al.</description>
-    </item>
-    <item>
-      <title>OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory</title>
-      <link>https://arxiv.org/abs/2610.26860</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.26860</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only m... [Score: 10.5 | Flagged for: agent, agentic, tool-use, reasoning, interpret] Authors: Yu Zhou, Cheng-Fu Yang, et al.</description>
     </item>
     <item>
       <title>Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.09568</guid>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
       <description>Post-training language models for reasoning typically rely on gold answers, task-specific verifiers, or learned reward models, limiting scalability when such signals are scarce. Multi-agent debate offers a self-supervised alternative, but converting debate into reliable training supervision remains ... [Score: 8.5 | Flagged for: agent, multi-agent, reasoning, alignment, language model] Authors: Nikhil Verma, Dingxian Wang, et al.</description>
+    </item>
+    <item>
+      <title>The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI</title>
+      <link>https://arxiv.org/abs/2611.08428</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
     </item>
   </channel>
 </rss>

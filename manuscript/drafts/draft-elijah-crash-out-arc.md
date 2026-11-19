@@ -272,9 +272,9 @@ signing, and that was where the payment on the place had gone since spring.
 
 The Fisher was in the back, under its tarp, behind the wheat.
 
-He went in and sat down at the table. There was nobody to call. His father was ten years gone. He had no
-brother and no sister. There was an aunt once, in Fresno, and she was dead too. He went down
-it twice, to be sure.
+He went in and sat down at the table. There was nobody to call. His father was ten years gone. There was
+Dana, in Miami, his father's daughter from before he met Elijah's mother. He had not heard her
+voice since the funeral, and he did not want to hear it now. He went down it twice, to be sure.
 
 He was the call.
 
@@ -480,6 +480,93 @@ stove?*
 
 That was all of it. She had said those words to him the first time eleven months ago. They
 were the last whole sentences she had.
+
+The phone lit up in his hand.
+
+*Dana.*
+
+It went through him the way it always had, his whole life. A spike, straight up from the
+stomach. He was six years old and he had taken the bigger piece.
+
+*Oh my God. She's calling.*
+
+He watched it ring. He thought about not taking it. He could let it go, the way he had let
+another call go on a Sunday.
+
+He took it.
+
+"Hello?"
+
+"You sold the fucking farm?"
+
+"Hello. Nice to hear from you too."
+
+"Are you fucking insane?"
+
+He closed his eyes. He breathed in, all the way.
+
+"How dare you? How could you fucking do this? What's wrong with you? I always knew you were
+such a fucking piece of shit, but I can't believe you would do this."
+
+"Dana. My mom had a stroke."
+
+She paused for a second.
+
+"I don't fucking care. You sold the fucking farm. How much money did you keep, you greedy little
+piece of shit?"
+
+When he was six it had been *greedy little grub*. She had changed the one word.
+
+"I didn't keep any, Dana."
+
+"I don't believe you. That's a fucking lie."
+
+"I didn't keep any. I don't have any money. I'm living in my fucking truck."
+
+"Oh, are you doing fucking drugs?"
+
+"I'm not doing any drugs. I don't know what I'm supposed to do, but I didn't keep any money. It
+went into a fund. It's helping her live. She's living in a facility."
+
+"You put her in a fucking home? Oh my God, you are such a fucking piece of shit."
+
+"Well, I don't see you around anywhere taking care of her. I don't see you fucking helping."
+
+"She's not my fucking mother. I don't need to help her. But I was entitled to some of that
+fucking money from that fucking farm, you fucking asshole. How dare you? What the fuck?"
+
+He could not have said why it was that minute and not some other one in thirty years. It was
+over. He was done.
+
+"Oh, I'm sure you're having a lot of fucking fun in Miami," he said. "Living it up with all
+your fucking rich friends."
+
+"Don't you talk about my fucking friends. And how dare you judge my lifestyle? You said you're
+living in your truck, so you're homeless now?" He could hear her breathing. "Do I need to come
+home?"
+
+"You can do whatever you want."
+
+He hung up.
+
+It rang again before he had the phone down. He let it ring. It stopped, and it rang again, and
+he let that one ring too.
+
+Then the texts started. They came in one on top of the other, faster than he could read them.
+
+*Hey, stop,* he typed. *Don't do this. I don't appreciate it.*
+
+They kept coming.
+
+He did something then that he had never done in his life. He blocked her.
+
+It took one thumb. It took more nerve than anything he had done in a year, and he did not know
+that. He thought it was the weakest thing he had ever done. He thought it was what a man does
+when he has lost.
+
+The phone was quiet.
+
+He laughed. It came out of him like a bark. Then it was not laughing.
 
 "I hate this," he said.
 

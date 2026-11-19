@@ -360,6 +360,12 @@ OPS = [
     (35, 'L', 'Their whole identity is built around the illusion of control."',
      'Their whole identity is built around the illusion of control. And it is one, man. You don\'t control when you get hungry. You don\'t control when you have to pee. Nobody was ever driving."',
      'Your words of 19 November on what the book is about, in the mouth of the man who already says it.'),
+    (10, 'L', "He didn't know where that had come from. Ruby didn't seem to mind.",
+     "He didn't know where that had come from. " + I + 'Grub,' + E + " somebody said, a long way back in his head. Ruby didn't seem to mind.",
+     'The first hint of his sister. The reader does not know who it is yet.'),
+    (31, 'L', "He didn't have an answer he liked, and he didn't give one.",
+     "He didn't have an answer he liked, and he didn't give one. He had blocked that number two and a half years ago, and he could still hear it.",
+     'Patricia asks who paid for him, and it sounds like Dana.'),
     (39, 'L', 'pouring beer twenty minutes from this stool.',
      'pouring beer twenty minutes from this stool. He would have to tell Marta.',
      'She sent him to find out if they ate, and never learns the answer.'),
@@ -378,6 +384,8 @@ OPS.sort(key=lambda op: op[2].startswith("He went into his old bedroom"))
 
 # The story decisions, for the top of the report. (what, where, why)
 DECIDED = [
+    ('His sister, and why he will not take money', 'Chapters 10, 13, 14 and 31',
+     'Yours, 19 November. Dana is his father\'s daughter from before, in Miami. She called him "greedy little grub" when he was small. The night after he sells the farm she calls, and the call is what sets off the crash out. Her side of it and most of his are your words as you said them. He blocks her, which he has never done, and takes it for weakness. One hint before (he hears "Grub" when Ruby offers him money) and one after (Patricia asks who paid for his year in the city). Her name is mine. Change it with one word.'),
     ('The three weeks after he arrives', 'Chapter 17',
      'You ruled the farm people nurse him back. The book jumped from "Eat. Then I\'ll show you where you sleep" to three weeks later. Now there is half a page: a cot, a plate twice a day, a pump to fix, gloves on the step, and nobody asks him anything.'),
     ('How he and Grace become a couple', 'Chapter 25',

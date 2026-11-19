@@ -1,4 +1,4 @@
-# CT's dictation, night of 19 November 2026
+# CT's dictation, morning of 19 November 2026
 
 His words, as sent, in the order sent. Nothing changed.
 

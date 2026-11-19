@@ -1,6 +1,6 @@
 # Versions of the manuscript
 
-CT, the night of 19 November 2026:
+CT, 19 November 2026:
 
 > "I'd like you to have version changes and the most current up-to-date version in the GitHub
 > repository with like a version history as well." "I'm going to work on the Google Doc myself."
@@ -17,7 +17,7 @@ the two differ, the Doc is the newer one.
 |---|---|
 | `FINAL-StS-Manuscript.md` | The whole Doc from top to bottom as Markdown: his planning notes, the novel, and the notes for the next book. |
 | `CHANGES.md` | This file. One entry for each version, newest first, and then the full record of the pass of 19 November. |
-| `dictation-2026-11-19-night.md` | His dictation of that night, word for word: the argument over money, the leader's speech, the camera and the megaphone, and Ricardo. |
+| `dictation-2026-11-19-morning.md` | His dictation of that morning, word for word: the argument over money, the leader's speech, the camera and the megaphone, and Ricardo. |
 | `readers-grace/` | Six readers' reports on Grace, 19 November. They cite line numbers. Line N is paragraph N of the Doc, and `doc_sync.py dump` prints the Doc one paragraph to a line so a number can be found again. |
 
 The manuscripts from before the novel, up to v0.11.0, are the files beside this folder.
@@ -36,15 +36,15 @@ The manuscripts from before the novel, up to v0.11.0, are the files beside this 
 
 ## Versions
 
-### 2026-11-19, night. The first copy in the repository
+### 2026-11-19. The first copy in the repository
 
 - **Changed by:** nobody. This is the Doc as it stood.
-- **What changed:** nothing since the pass of 19 November. The Doc was read twice that day, in the
-  evening and at night, and the two reads are the same. It also matches the Book tab of the
+- **What changed:** nothing since the pass of 19 November. The Doc was read twice that day, at
+  15:00 and at 21:21 UTC, and the two reads are the same. It also matches the Book tab of the
   reading page paragraph for paragraph.
 - **What it holds:** his final rough draft of 16 November with the story and consistency pass of
   19 November written in. The record of that pass is below.
-- **Measured from the Doc that night:** 3,391 paragraphs and 79,413 words in the whole Doc. The
+- **Measured from the 21:21 read:** 3,391 paragraphs and 79,413 words in the whole Doc. The
   novel itself, from the Author's Note to the end of the Afterword, is 2,835 paragraphs and
   66,664 words.
 - **Doc revision:** `AHj4eMTeT1boW-S64FVvJyz`, the first 23 characters of the id the Doc gave.

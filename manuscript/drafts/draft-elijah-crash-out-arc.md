@@ -273,7 +273,7 @@ signing, and that was where the payment on the place had gone since spring.
 The Fisher was in the back, under its tarp, behind the wheat.
 
 He went in and sat down at the table. There was nobody to call. His father was ten years gone. There was
-Dana, in Miami, his father's daughter from before he met Elijah's mother. He had not heard her
+Melody, in Miami, his father's daughter from before he met Elijah's mother. He had not heard her
 voice since the funeral, and he did not want to hear it now. He went down it twice, to be sure.
 
 He was the call.
@@ -483,7 +483,7 @@ were the last whole sentences she had.
 
 The phone lit up in his hand.
 
-*Dana.*
+*Melody.*
 
 It went through him the way it always had, his whole life. A spike, straight up from the
 stomach. He was six years old and he had taken the bigger piece.
@@ -508,7 +508,7 @@ He closed his eyes. He breathed in, all the way.
 "How dare you? How could you fucking do this? What's wrong with you? I always knew you were
 such a fucking piece of shit, but I can't believe you would do this."
 
-"Dana. My mom had a stroke."
+"Melody. My mom had a stroke."
 
 She paused for a second.
 
@@ -517,7 +517,7 @@ piece of shit?"
 
 When he was six it had been *greedy little grub*. She had changed the one word.
 
-"I didn't keep any, Dana."
+"I didn't keep any, Melody."
 
 "I don't believe you. That's a fucking lie."
 

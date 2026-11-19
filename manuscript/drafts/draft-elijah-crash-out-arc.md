@@ -1,11 +1,31 @@
 # Draft: his mother's stroke, the choice, the crash out and the road to the farm
 
-*Fourth version, 2026-11-19. Written against the "final rough draft" (chapters 12 to 15). Nothing
+*Fifth version, 2026-11-19. Written against the "final rough draft" (chapters 12 to 15). Nothing
 in the manuscript has been changed. This is a proposal plus new prose.*
 
 ## What CT decided
 
-**19 November, latest:** "Instead of having her die, let's actually have her have a massive
+**19 November, latest, after the pushback:**
+
+- The barn full of supplies stays. "But also she doesn't believe him. She's just humoring him
+  because she doesn't understand anything because she's slipping."
+- "She eats a pint of ice cream every single day and all kinds of other stuff. She's not super
+  healthy. Not a pint, but like, you know, like a little Ben and Jerry's tub quart thing."
+- "I want her to say the word Barry." "Elijah doesn't know who Barry is." "It would be cool and
+  cute if it was her first love. He thinks that she's just losing it, and she is, but she's
+  asking for her first love."
+- "He asks his followers to help and gets mocked." "The contempt, the hate in the comments."
+  "Hateful DMs from old friends." "And at the same time, he's being offered incredible
+  opportunities. So he's just so fucking confused. It overwhelms him. He decides to step away
+  from it."
+- "The guitar is gone for good."
+- Ray was the one sitting with her. "D is good."
+- "She's nice, she's kind, she's funny, she's sweet, she's charming, but she's also a
+  perfectionist and a catastrophizer."
+- "The voicemail might have a place." Tom, the milk and the glasses "might also have a place."
+  All four are still in this draft. What each one is: see the end of this file.
+
+**19 November, before that:** "Instead of having her die, let's actually have her have a massive
 stroke and be put in the care facility. And Elijah has to make an impossible choice, which is to
 sell the house and use the money to pay for his mother's care."
 
@@ -30,23 +50,26 @@ it. He lives through the truck weeks on gig work and the pawned guitar.
 | 1 | Cannery, launch party, sick in the lot. "He didn't call his mother." | Ch 12 as written. |
 | 2 | Sunday, 9:40. The phone rings on the dash. He lets it ring, texts "Working late. All good. Love you," and turns the phone off. | Ch 13 as written. It is now the last time she ever calls him. |
 | 3 | Tuesday. Her number, at two in the afternoon. It is Manny. | New. In Ch 22 the book already uses a call "at two in the afternoon, which she never did" for the worst news. |
-| 4 | The hospital. What is left. What the forgetting was. | New. |
-| 5 | The kitchen. The burned pot, the notes, the drawer of unopened envelopes, the notice on the front door nobody used. | New. |
-| 6 | **The choice.** A bed that costs nothing, two hours away. A room ten minutes from the farm that costs everything. He asks her. She cannot answer. | New. |
-| 7 | A man from Sacramento with a folder. He sells. | New. Same outfit that bought the Hollis place. |
-| 8 | Main Street. Nate and Wes look away. Pruitt. | Ch 14 scene, kept. |
-| 9 | David and the hand truck. The stove goes in the truck. "You could just come back." | Ch 15 scene, kept, with a new reason. |
-| 10 | He moves her in. The kitchen radio goes on her windowsill. | New. |
-| 11 | The back road, the madrones, the first rain. **The crash out.** | New. |
-| 12 | Time jump. Five weeks in the truck. Deliveries, applications, the pawned guitar. Sunday afternoons he sits with her. At 9:40 the phone does not ring. | New. |
-| 13 | "You're not crazy. You're early." He posts one line and logs out. Grace's email comes and he does not answer it. | Ch 15, moved into the truck. |
-| 14 | The money is gone. The old man, the twenty, the food bank. | Ch 13 as written. |
-| 15 | He answers Grace. He tells his mother he is going north for work. The twenty goes in the tank. | Ch 13 and Ch 15, joined. |
+| 4 | The hospital. She has one word left, and it is "Barry." He does not know any Barry. The doctor asks what she eats. | New. The word and the ice cream are yours, 19 November. |
+| 5 | The kitchen. The burned pot, the notes, the freezer of little tubs, the drawer of unopened envelopes, the notice on the front door nobody used. | New. |
+| 6 | **The barn.** It is full of buckets. For one breath he thinks she believed him. Then he reads her notebook: "Be nice about it." | New. Yours, 19 November: she was humoring him. |
+| 7 | **The choice.** A bed that costs nothing, two hours away. A room ten minutes from the farm that costs everything. He asks her. She looks at the door and asks for Barry. | New. |
+| 8 | **He asks his followers.** Twenty dollars from Tulsa. Then the hate, then the messages from old friends, and by morning the offers are back. He takes the link down. | New. Yours, 19 November. |
+| 9 | A man from Sacramento with a folder. He sells. | New. Same outfit that bought the Hollis place. |
+| 10 | Main Street. Nate and Wes look away. Pruitt. | Ch 14 scene, kept. |
+| 11 | David and the hand truck. The stove goes in the truck. "You could just come back." | Ch 15 scene, kept, with a new reason. |
+| 12 | He moves her in. The kitchen radio goes on her windowsill. | New. |
+| 13 | The back road, the madrones, the first rain. **The crash out.** | New. Yours, 18 November. |
+| 14 | Time jump. Five weeks in the truck. Deliveries, applications, a schedule in the visor that lasts four days, the comments every night, the pawned guitar. Sunday afternoons he sits with her. At 9:40 the phone does not ring. | New. |
+| 15 | "You're not crazy. You're early." He posts one line and logs out. Grace's email comes and he does not answer it. | Ch 15, moved into the truck. The line he posts now answers five weeks of hate. |
+| 16 | The money is gone. The old man, the twenty, the food bank. | Ch 13 as written. |
+| 17 | He answers Grace. He tells his mother he is going north for work. The twenty goes in the tank. | Ch 13 and Ch 15, joined. |
 
 Why this version is the strongest of the three:
 
 - **He has to decide for someone who cannot be asked.** The book's question is "Did you ask
-  anybody?" He asks his mother and she cannot answer. That night he asks God and gets rain. Three
+  anybody?" He asks three times. His mother asks for someone else. His followers tear him up.
+  That night he asks God and gets rain. Three
   years later he tells Grace "it's not our responsibility to choose for them," and he is the one
   person at that fire who has done exactly that, to the person he loves most.
 - **Nothing happens to him. He does it.** In the foreclosure version he loses the house. Here he
@@ -88,6 +111,15 @@ Why this version is the strongest of the three:
 4. **No family.** Cut the uncle (Ch 3 and Ch 39). Manny stays as the neighbor.
 5. **Season.** The launch party moves to mid September so the first rain can fall. He reaches the
    farm in late October.
+6. **He keeps posting.** You said he makes a lot of videos about what he is going through and
+   what he thinks is coming. The book has one video in Ch 6 and the plain ones in Ch 11. Ch 7 to
+   10 need a line each of him filming as he goes: the senator's hallway, the lab, the truck.
+   Then the people who turn on him in Ch 13 have been watching the whole time.
+7. **The ice cream, once, early.** One line in Ch 3 or Ch 11: the spoon in the little tub, at
+   the counter, with the radio on.
+8. **Nothing to add for the perfectionist and the catastrophizer.** She is already both. "The
+   pot she never let anyone else wash." "Every disaster the farm had ever taught her." "The
+   Hendersons had a chimney fire in '88 and your grandmother talked about it for ten years."
 
 ## New prose
 
@@ -133,10 +165,25 @@ the last easy thing that happened that week.
 She worked at it. He watched her go and get the word, like a woman reaching for something on a
 high shelf.
 
-"Baby," she said.
+"Barry," she said.
 
-The doctor was young and kind and stood at the foot of the bed with a tablet. A bleed, a big
-one, on the left side. She had probably been on the kitchen floor since Monday night. There had
+"It's Elijah, Ma."
+
+She looked at him as if he had said something a little beside the point.
+
+"She's been saying that since they brought her up." A nurse was hanging a bag. "Is that your
+dad?"
+
+"My dad was Tom."
+
+"Brother?"
+
+"There isn't any Barry."
+
+The nurse nodded. It was an answer she got a lot.
+
+The doctor was young and stood at the foot of the bed with a tablet. He did not sit down. A
+clot, a big one, on the left side. She had probably been on the kitchen floor since Monday night. There had
 been small ones before this, he thought, going back months. You could see them on the picture
 like old hail damage.
 
@@ -144,7 +191,18 @@ like old hail damage.
 
 "Yeah," Elijah said. "Since spring."
 
-"That would be those."
+"That would be those." He scrolled. "Her pressure's been up a long time. Her sugar. This
+didn't start Monday. What does she eat?"
+
+Elijah started to say she ate fine. She cooked for everybody.
+
+"Ice cream," he said.
+
+The doctor waited.
+
+"Every night. One of the little tubs."
+
+The doctor wrote it down. He had the next room to get to, and it showed.
 
 He asked what she would get back. The doctor said a good many things, carefully, and the answer
 was in what he left out.
@@ -162,12 +220,17 @@ two of them were open. Her reading glasses were in the bread drawer. His phone n
 the refrigerator door in her handwriting, on a yellow note, and on a second yellow note right
 under it.
 
+The freezer was the one thing in order. It was all Ben and Jerry's, the little tubs, a week of
+them, labels out. She ate one a night, standing at the counter with the radio on, and had for as
+long as he could remember. When he was small she let him have the lid.
+
 He had been living in his old bedroom that spring. One night she asked him twice in ten
 minutes if he'd eaten, and he said yes both times. Once she called him Tom, and laughed, and
 said *listen to me*. She was sweet about it. She was sweet about everything. He had seen it,
 and he had gone to Stockton to bolt down robot arms.
 
-The mail was in the drawer with the rubber bands and the dead batteries. It went back to
+She was a woman who wrote the date on a battery before it went in the flashlight, and there was
+a flashlight in every room. Her mail was in the drawer with the rubber bands. It went back to
 March. Most of it had never been opened. The bank's name was in the corner window of about
 every third envelope. One had been opened, and folded up again, and put back in.
 
@@ -177,7 +240,39 @@ Nobody in that house had used the front door since his father's funeral. They us
 Everybody did. The paper had been out there eighteen days with the sale date on it, facing the
 road.
 
-He sat down at the table. There was nobody to call. His father was ten years gone. He had no
+He went out to the barn to look at the stove, because it was the one thing on the place that
+was his.
+
+The barn was full.
+
+There were pallets where the hay had been. White buckets, stacked five high, with the lids
+taped. Rice. Beans. Wheat she had no way to grind. Four blue water barrels, forty yards from a
+well. A generator in its box, and next to it the same generator in its box.
+
+He stood there with his hand on a bucket. She had believed him. One person had, and it was her.
+
+There was a card table by the door with a spiral notebook on it, squared to the corner. At the
+top of the first page she had written herself a note.
+
+*Elijah is worried about the computers. Be nice about it.*
+
+Under that she had copied out his list, one through five, in her good handwriting, the way she
+copied a recipe off the radio. Next to number four there was a question mark. *What deal? Ask
+him.*
+
+It was on the next page too. And the next. *Ask him.*
+
+She never had. *It's just tools, baby.* She had not followed one word of it. She knew her boy
+was frightened of something, and she knew what you did about a worry. The farm had taught her.
+You put something by.
+
+The slips were in a coffee can. *Thank you for your monthly order.* The first was dated the
+week of the video. The last was three weeks old. Somebody had kept bringing it and she had kept
+signing, and that was where the payment on the place had gone since spring.
+
+The Fisher was in the back, under its tarp, behind the wheat.
+
+He went in and sat down at the table. There was nobody to call. His father was ten years gone. He had no
 brother and no sister. There was an aunt once, in Fresno, and she was dead too. He went down
 it twice, to be sure.
 
@@ -224,11 +319,65 @@ what he would be selling.
 "I need you to tell me, Ma. I need you to tell me what to do."
 
 She looked at him the whole time. She understood that he was upset. He could see her
-understand it. Her good hand came up off the blanket and found his face.
+understand it. Her good hand came up off the blanket and patted his.
 
-"Thin," she said.
+Then she looked past him, at the door.
+
+"Barry?" she said.
 
 He waited. That was all there was.
+
+•
+
+He asked them, too.
+
+He did it in the hospital garage with the phone propped on the wheel. He had been talking to
+that phone for a year. He had told it what was coming and how it was going, from hay bales and
+green rooms and the front seat of this truck. A number of people he didn't look at had listened.
+He had never asked them for one thing.
+
+He did not do it well. He said his mother had had a stroke. He said what a room cost. He said,
+"I don't know how to ask this. I need help." He put up a link and went back upstairs.
+
+The woman in Tulsa sent twenty dollars inside the minute. *For your mom.* The elevator man sent
+ten.
+
+Then the rest of them got there.
+
+*And there it is.*
+
+*Why the fuck do you need help?*
+
+*Says the world's ending. Wants your Venmo.*
+
+*Fuck you. You're just asking for handouts.*
+
+*Get a job. Oh wait.*
+
+Somebody cut it down to the three words and ran his list under it, set to music. It went
+further in a day than the plain videos had gone all spring.
+
+The other kind came in on the side, where strangers couldn't see. A guy he had played ball
+with. A girl who had booked Second Crop at the grange nine years running. *Always knew you
+thought you were better than us.* And Nate, who had stood two feet to his left for seventeen
+years. *Take the band's name off that page.*
+
+He read every one. His mother had raised him to answer a letter. He couldn't answer these, and
+he couldn't stop reading them.
+
+He took the link down inside the hour. He sent Tulsa her twenty back, and the elevator man his
+ten.
+
+It didn't matter. The clip did what clips do. By morning the other mail was back, as if the
+spring had never happened. A man with a podcast would fly him out. Somebody's assistant wanted
+him on a stage in Austin in the fall. A lab he had never heard of asked for his rate. He didn't
+have a rate. He had been flown out before, and he knew what it paid.
+
+He stood in a hallway that smelled like hand sanitizer with all of it in one hand. In one
+window he was a beggar. In the next he was a get. Forty feet away his mother was asking a nurse
+for Barry. He could not make it fit in one head, and the head was his.
+
+He didn't answer any of it.
 
 •
 
@@ -260,6 +409,8 @@ and the place with the rose garden took the first of it that afternoon.
 He did not keep any. He thought about it for the length of time it took the notary to find her
 stamp.
 
+The buckets went with the place. He did not bring them up, and neither did the man.
+
 •
 
 *[Existing scene, from Chapter 14: he is in town, now for a doctor's letter the trust needs. The
@@ -286,7 +437,8 @@ called him. "Heard they close Friday." "Heard you've got a stove." "I'm not doin
 Fisher goes into the bed of the Ranger. "You could just come back." "I can't, Dave." Two fingers
 off the wheel.]*
 
-He took the stove, a bag of clothes, the notebooks, the manuscript and the pot.
+He took the stove, a bag of clothes, the notebooks, the manuscript and the pot. He did not take
+one bucket. He could not have said why. By the fifth week he had some ideas.
 
 He took the kitchen radio to her.
 
@@ -319,7 +471,7 @@ bought a keyboard. He'd been a guy with a stool. He'd been a data cowboy, and th
 a face was worth exactly a heart from a woman with a cooling company. He had bolted two million
 dollars of robot arms to a floor and he was not on the list.
 
-He was somebody's son. She had one word for him, and tonight she was saying it to a window.
+He was somebody's son. She had one word left, and it was another man's name.
 
 He played the voicemail.
 
@@ -436,6 +588,18 @@ Unfortunately. He knew what was reading them. He had helped build its grandfathe
 One of them asked him to record a video introduction. He looked at himself in the little window
 for a while and closed it.
 
+He decided the trouble was discipline. He wrote it out on the back of a delivery receipt and
+squared it in the visor, the way she would have. *5:30 up. 100 push-ups. 10 applications. One
+meal. No phone after 9.*
+
+It held four days. On the fifth he was hungry at ten in the morning, receipt or no receipt. He
+had to find a bathroom twice before noon. At a quarter past nine that night he was reading the
+comments.
+
+He had taken the link down. The clip did not need him. It was still going around with his face
+on it and the three words under it. Every night there were more of them, and every night he
+read them all. He could not have told you what he was looking for. One that was fair.
+
 He smoked what was left of the bag at night so he could sleep, until it was gone. He showered
 at the Y for five dollars, and when five dollars got to be a lot he stopped.
 
@@ -445,8 +609,14 @@ at the balance once a week, to see that the room had been paid. He never thought
 On Sundays he shaved in the mirror at the Y and drove down to sit with her.
 
 She was in the chair by the window with the radio going. Some days she knew him right off.
-Some days it took a minute. The second Sunday she called him Tom, and smiled at him the way she
-used to smile at his father. He let her.
+Some days it took a minute. Every Sunday, sooner or later, she looked at the door.
+
+"Barry?"
+
+"It's Elijah, Ma. There's no Barry."
+
+She took that the way she had taken the end of the world. Pleasantly. A little while later she
+asked again.
 
 "Working," he told her. "It's all good, Ma."
 
@@ -508,6 +678,9 @@ He had seventeen dollars. In Stockton seventeen dollars had been a shower. Here 
 and it was everything, because it was all there was.
 
 By Thursday it was four dollars and a sleeve of crackers. He ate the crackers.
+
+He had her pot and four hundred pounds of wood stove, and nothing to put in either one. He
+thought about the barn. He had signed for the rice too.
 
 Those were dark days.
 
@@ -585,15 +758,17 @@ who calls whom, and what she can say.
 
 | Chapter | What is there now | What it could become |
 |---|---|---|
-| All | She calls every Sunday at 9:40. | He calls. The night aide holds the phone by her ear. She has a few words. |
+| All | She calls every Sunday at 9:40. | He calls. The night aide holds the phone by her ear. She has one word, and it is "Barry?" |
 | 18 | He turns off every notification "except his mother's number." | Except the number of the place with the rose garden. |
-| 22 | She calls at two in the afternoon to say Ray has died, and covers for him: "I said working." | David texts it himself. Nobody covers for him. |
+| 18 or 19 | Nothing. | The ninety days on the yellow ticket run out in January. He is under a sink at the time and finds out two days late. The guitar is gone for good. |
+| 22 | She calls at two in the afternoon to say Ray has died, and covers for him: "I said working." | David texts it himself. Nobody covers for him. Ray had been sitting with her every Sunday. Elijah does not know that yet. |
 | 23 | She checks a church newsletter and he sees the buyers are "two fences away from her." | He takes his own closing papers out of the glove box. Same agent. They are not next door. He sold them her kitchen. |
-| 24 | He sends her the photograph of the first fire. "Is that pipe double-wall?" "It looks like somewhere." | He drives down and holds the phone up for her. She says one word: "Mom's." |
-| 31 | "Ma. I'm not okay." "I know, baby. Are you eating?" "Then you're somewhere." | He says it into a phone an aide is holding. She cannot answer the old way. After a while: "Baby." Then: "Eating?" It may be better than what is there. |
+| 24 | He sends her the photograph of the first fire. "Is that pipe double-wall?" "It looks like somewhere." | He drives down and holds the phone up for her. She looks at the stove a long time and puts one finger on it. That night, after Grace tells him about the gate, he tells her about the two pages. |
+| 31 | "Ma. I'm not okay." "I know, baby. Are you eating?" "Then you're somewhere." | He says it into a phone an aide is holding. The radio. Her breathing. "Barry?" Nobody has answered him, and he finds he has said it anyway. |
 | 32 | She reports the well and the hum. "It was ten miles from his mother's kitchen, drinking her well." | Linda's granddaughter sends a picture. "It was on his mother's ground, drinking her well." He signed for it. |
-| 37 | He goes home to her house. She has the lamp from the church ladies. "It's company, with the radio." "It was her house." | He goes to her room. The lamp is on the sill beside the radio. When he walks in it says what it says in the draft now: "You must be Elijah. She's told me about you." She has a handful of words. "It was her room." He leaves the lamp alone. |
-| 39 | First copy to her. "She read hers in two days." "It reads better than it sounded." Thanksgiving dinner at her table. | He reads it to her over two Sundays. She says one word about it. Thanksgiving dinner is two trays in the dining room at the rose garden, then the bar at six. "Let his mother keep her lamp" stays as written. |
+| 36 | The fire, as you dictated it. | Two insertions. He tells Grace, kindly, that this is the gate. She hears an attack and answers with your line. The text is in the beats file. |
+| 37 | He goes home to her house. She has the lamp from the church ladies. "It's company, with the radio." "It was her house." | He goes to her room. The lamp is on the sill beside the radio. It is the first time in his life he has seen her sit down without getting up again for something. "Barry?" "Not yet, Ma." He has stopped correcting her. He still does not know who Barry is. |
+| 39 | First copy to her. "She read hers in two days." "It reads better than it sounded." Thanksgiving dinner at her table. | He reads it to her over two Sundays. When he finishes she pats his hand. Thanksgiving dinner is two trays in the dining room at the rose garden, then the bar at six. David tells him Ray sat with her, and who Barry was. "Let his mother keep her lamp" stays, and Barry goes with it. He answers Wes at last. Wes sends a thumb. |
 
 Smaller ones: "cried on his mother's couch for four days" (Ch 39) becomes the night in the
 truck. Three audit items go away: the Hollis distance, the Sunday call in proofs week, and
@@ -602,13 +777,49 @@ Manny's pressure switch.
 **One option, not written in.** If the money from the farm lasts about three years, it runs out
 at Thanksgiving 2027. That would put a clock under the whole book. It is yours to want or not.
 
+## What the voicemail, Tom, the milk and the glasses are
+
+You said you were not sure what these were. All four are still in the draft.
+
+- **The voicemail.** On the Sunday he lets her call ring out, she leaves a message: "Hi, baby. I
+  watched your video. You look thin. Is that Mom's stove?" It is the last whole sentence he has
+  of her. He plays it in the truck the night of the crash out and every Sunday after.
+- **Tom.** The name I gave his father. The book never names him. In the spring before the
+  stroke she calls Elijah "Tom" once and laughs. Now that her word is Barry, Tom is out of her
+  room at the care home and still in the spring, and in the hospital: "My dad was Tom." It is
+  why he hears "Barry" as one more slip.
+- **The milk and the glasses.** What he finds in her kitchen: three cartons of milk, two of
+  them open, and her reading glasses in the bread drawer. Signs she had been slipping.
+
 ## What I invented, for you to check
+
+New on 19 November, after your rulings:
+
+- The nurse, and "There isn't any Barry."
+- That it was a clot and not a bleed. A clot fits the ice cream and the small strokes before.
+  This is my understanding, not medical advice.
+- "Her pressure. Her sugar." You said "all kinds of other stuff." The other stuff is yours to
+  name.
+- The freezer in order, labels out, and that she let him have the lid.
+- The date on every battery, a flashlight in every room.
+- Everything in the barn: the buckets, the two generators, the notebook, "Be nice about it,"
+  "What deal? Ask him," and the monthly order slips.
+- That the buckets go with the place and he does not take one.
+- How he asks: the hospital garage, "I need help," a link. Two of the comments are your words.
+  The other three are mine.
+- The old friends: the ball player, the girl from the grange, and Nate's line about the band's
+  name. You said "old friends" and named nobody.
+- The offers: the podcast, the stage in Austin, the lab asking his rate.
+- That he sends the money back.
+- The schedule in the visor, and "One that was fair."
+- "Not yet, Ma."
+
+From before:
 
 - That all of the money goes to her care and he keeps none.
 - The trust his father's lawyer set up, which is what lets him sign.
 - Her last voicemail repeating her first messages about the video.
 - "Tom" as his father's name. The book never names him.
-- What she has left: "Baby," "Thin," and that some days she takes him for his father.
 - The small strokes behind the forgetting.
 - The two yellow notes, the three milks, the glasses in the bread drawer, the notice taped to a
   front door nobody used. (Posting the notice on the property is how it is really done.)

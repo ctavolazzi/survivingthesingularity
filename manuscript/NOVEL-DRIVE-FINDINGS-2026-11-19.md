@@ -158,10 +158,11 @@ arc are proposals built from what is on the page. Strike and rewrite freely.
 ### Elijah's mother
 - Leans toward: the Salt of the Earth (yours).
 - Want: her son fed and rested.
-- Flaw: she hears only what will fit in her kitchen. "It's just tools, baby."
-- Arc: from "I didn't follow it, baby" to "It reads better than it sounded." Then she takes the
-  lamp. She gets to the future by her own road and chooses the thing he fears, and he has to
-  leave it alone.
+- Flaw (yours, 19 November): "a perfectionist and a catastrophizer." She hears only what will
+  fit in her kitchen. "It's just tools, baby."
+- Arc (changed 19 November): from "I didn't follow it, baby" and a notebook that says "Be nice
+  about it," to a stroke that takes everything she kept in order. She is left with one word,
+  "Barry," her first love. She sits in the sun with the radio on. He has to leave that alone.
 
 ### Aaron Bidwell
 - Leans toward: none. He is outside the four.

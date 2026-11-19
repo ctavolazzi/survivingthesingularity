@@ -113,6 +113,8 @@ his old room.
 
 ## David McGrath
 
+*Added 19 November: after Ray dies, David is the one who sits with Elijah's mother on Sundays. He is angry about it and does it anyway. In chapter 39 he is the one who tells Elijah who Barry was.*
+
 **Portrait.** He rode the same school bus as Elijah for eleven years and has poured his beer for
 fifteen. He stopped asking what Elijah wanted a long time ago. "Elijah would sit down and it
 would already be there."
@@ -161,6 +163,8 @@ not that powerful, Mad."
 
 ## Ray McGrath
 
+*Added 19 November: you ruled that Ray sat with Elijah's mother every Sunday for eight months, until he died. She asked him for Barry, and he knew who Barry was.*
+
 **Portrait.** The last stool, at the far end, with a club soda and a lime, under a framed prayer
 he hung the year he quit drinking. He has one line in the book. He comes down from his stool for
 a refill, looks at Elijah's open notebook, "at the tight columns, the underlines, the dates with
@@ -186,8 +190,12 @@ his thirties with a horse."
 
 *Changed 19 November: you decided she has a massive stroke in Act Two, after months of
 forgetting things, and goes into a care facility, and that Elijah sells the farm to pay for it.
-This profile describes her as the draft has her now. The new version and every later scene it
-touches are in `drafts/draft-elijah-crash-out-arc.md`.*
+After the stroke she has one word, "Barry," and it turns out to be her first love. In your
+words she is "nice, she's kind, she's funny, she's sweet, she's charming, but she's also a
+perfectionist and a catastrophizer," and she eats a little tub of Ben and Jerry's every day.
+She never believed the video. She was humoring him. This profile describes her as the draft
+has her before the stroke. The new version and every later scene it touches are in
+`drafts/draft-elijah-crash-out-arc.md`.*
 
 **Portrait.** She is seventy-one and the book never says her name. She calls every Sunday at 9:40,
 "when her day ended, whether she had seen him that week or not," and starts talking before
@@ -271,6 +279,8 @@ never speaks. The uncle thinks it is the pump.
    to her. Put his cup in the rack next to the pot.
 
 ## Nate and Wes
+
+*Added 19 November: "The guitar is gone for good." When Elijah asks his followers for help, Nate writes to tell him to take the band's name off the page. In chapter 39 Elijah finally answers Wes, and Wes sends a thumb.*
 
 **Portrait.** Bass and drums. Seventeen years of loading "the same amps into the same van." Wes
 has made every Second Crop flyer since 2006, on Claypot software, "and for the last four years
@@ -685,6 +695,8 @@ ends by asking.
 
 ## Grace
 
+*Added 19 November: at the fire Elijah tells her, kindly, that this is about the gate. She hears an attack and answers: "And now you're taking out your mother trauma on me!" The text is in the Beats tab, under B.*
+
 **Portrait.** She arrives fighting a trailer hitch. "Come on, you son of a bitch. Come on. I
 greased you. I greased you Sunday." She kicks the tongue, it drops, "and she said 'Thank you,' to
 it, sincerely." She is "in her thirties, in rubber boots and a canvas coat with an apron under
@@ -804,6 +816,8 @@ outright that Emeka died.
    says so. I would cut that gloss and trust the count.
 
 ## Lou
+
+*Added 19 November: your two lines, "You don't control when you get hungry. You don't control when you have to pee," go to Lou in chapter 35. He is the one who already gives Elijah the book's wisdom.*
 
 **Portrait.** "A man of about sixty who was sunburned right up to his hat line," with "very pale
 eyes in all that sunburn." He cracks walnuts into a bowl through a whole dinner "without once

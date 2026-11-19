@@ -14,207 +14,103 @@ Seventeen beats, about a thousand words of new text in all. Five of them change 
 
 ---
 
-# Pushback, 19 November: read this first
+# Decided, 19 November: read this first
 
-You said it is a little predictable, and that where you gave no plot point I filled the gap with
-formula. You are right. This section is my own review of what I wrote below and in the scene
-draft, and what I would do instead. Nothing below it has been changed yet.
+I pushed back on my own beats and offered six alternatives, A to F. You ruled on them. This
+section is the current word. Where a beat further down disagrees with it, this wins, and that
+beat is marked.
 
-## What I did wrong
+## Your rulings
 
-- **Every thread got tied.** Wes buys back the guitar. David was secretly sitting with her. The
-  realtors hand him the buyer. The aide is the girl from next door. One of those is a nice
-  surprise. Four of them is a small world where nothing is ever lost.
-- **Everyone is kind.** The doctor, the woman with the lanyard, the church lady, the aide. No
-  one fails him in an ordinary, selfish way.
-- **Elijah is always in the right.** At the fire I gave him the clean answer: "No. They can." A
-  man who wins the argument cleanly has not been in a real fight.
-- **Stock props.** The voicemail he replays. Being called by his father's name. Milk cartons and
-  glasses in the bread drawer. A reader has seen every one of them.
-- **I told the reader what was coming.** "He would think of it again at another fire."
+| | In your words | Where the text is |
+|---|---|---|
+| A | The barn stays. "But also she doesn't believe him. She's just humoring him because she doesn't understand anything because she's slipping." | Scene tab, Chapter 13, and below |
+| B | "He should strike first, but he should not necessarily be aware of it. He's just pointing something out, and that's what makes Grace defensive." | Below |
+| C | "I want her to say the word Barry." "He thinks that she's just losing it, and she is, but she's asking for her first love." | Scene tab, and below |
+| D | Ray was the one sitting with her. "D is good." | Below |
+| E | "The guitar is gone for good." | Below |
+| F | "He asks his followers to help and gets mocked." "And at the same time, he's being offered incredible opportunities." "He decides to step away from it." | Scene tab, Chapters 13 and 15 |
 
-## What would actually surprise
+You also said the voicemail, Tom, the milk and the glasses "might have a place." They are still
+in the scene draft, and the end of that draft says what each one is.
 
-The best surprises in this book will not be twists. They will be his own want turned around on
-him. He wants to be believed. So:
+## A. The barn: she was being nice
 
-### A. His mother believed him
-
-**The surprise:** she is the only person who took the video seriously. That is where the
-mortgage money went.
+Chapter 13, after he finds the notice on the front door.
 
 > The barn was full.
 >
-> There were pallets where the hay had been. White buckets, stacked five high, the lids taped.
-> Rice. Beans. Wheat he could not picture her grinding. Four blue water barrels. A generator
-> still in its box.
+> There were pallets where the hay had been. White buckets, stacked five high, with the lids
+> taped. Rice. Beans. Wheat she had no way to grind. Four blue water barrels, forty yards from a
+> well. A generator in its box, and next to it the same generator in its box.
 >
-> On a card table by the door there was a spiral notebook in her handwriting. On the first page
-> she had copied out his list. One through five. She had left a space after five, the way he
-> had.
+> He stood there with his hand on a bucket. She had believed him. One person had, and it was
+> her.
 >
-> The receipts were in a coffee can. They started the week of the video.
+> There was a card table by the door with a spiral notebook on it, squared to the corner. At the
+> top of the first page she had written herself a note.
 >
-> "I didn't follow it, baby," she had said.
+> *Elijah is worried about the computers. Be nice about it.*
 >
-> She had followed it all the way to the bank.
-
-**Why it is the one to do:** he left stages six and seven out of the video because "My mom's
-watching." She prepared anyway. For two years he wanted one person to believe him, and one did.
-It also changes the last chapter. David says "You're not that powerful, Mad," and Elijah has to
-let him say it, knowing about the barn.
-
-**Risk:** it is dark, and it makes the ending bittersweet where it is now a comfort.
-
-### B. At the fire, he strikes first
-
-**The surprise:** the gentle one goes for the wound. He knows about the man who refused to
-leave. He uses it.
-
-> "You're not trying to save them," he said. "You're trying to save him. He's dead, Grace. You
-> wrote REFUSED and you went to the next door."
+> Under that she had copied out his list, one through five, in her good handwriting, the way
+> she copied a recipe off the radio. Next to number four there was a question mark. *What deal?
+> Ask him.*
 >
-> He heard it leave his mouth.
+> It was on the next page too. And the next. *Ask him.*
 >
-> "And now you're taking out your mother trauma on me!"
+> She never had. *It's just tools, baby.* She had not followed one word of it. She knew her boy
+> was frightened of something, and she knew what you did about a worry. The farm had taught
+> her. You put something by.
 
-**Why:** your line says "now," which means he has just done something to her. Then your next
-beat ("the woman he trusted most") cuts both ways. He feels betrayed one breath after he
-betrayed her, and he does not see it. The reader does. "I can't believe I did this again" then
-means she told a man where she was hurt and he used it.
+**Why it works your way:** he gets what he wanted for one breath, and then he reads the note.
+She did not believe him. She loved him and she was slipping, and the catastrophizer in her did
+the one thing it knew. Number four on his list is "The End of the Deal. You work, you eat." It
+is the deal she lived by, and it is the one she could not follow.
 
-**This replaces** my clean exchange ("I asked her." "They can.").
+## B. The fire: he points at her gate, kindly
 
-### C. Her one word is "Home?"
+Two insertions. None of your dictated lines move.
 
-**The surprise:** not "thin." She asks to go home, every Sunday, to the house he sold.
-
-> "Home?" she said.
->
-> It was the first whole word she had found since the hospital.
->
-> "Soon, Ma," he said.
-
-**Why:** Grace says "Maybe you should go home." Act Four is called Home. And chapter 39 already
-lists, among the things he can still do, "tell the truth when asked straight." His mother asks
-him straight every week. On Thanksgiving he finally answers her.
-
-### D. Ray was the one sitting with her
-
-**The surprise:** not David. David's father, the one with the horses, drove out every Sunday
-until he died. Then David kept it going, and he is not gracious about it.
-
-> "You missed my dad," David said.
->
-> "I know."
->
-> "No. You don't." David put the rag down. "He drove out to that place every Sunday. Sat with
-> your mother. Eight months, till he died. He said somebody ought to." He picked the rag up
-> again. "And you couldn't come down for one hour to bury him."
->
-> "Who goes now?"
->
-> "Who do you think."
-
-**Why:** it makes missing the funeral unforgivable in a specific way, and it keeps David angry.
-A friend who does the right thing and resents it is truer than a saint.
-
-### E. The guitar is gone, and Wes sends a thumb
-
-**The surprise:** not everything comes back. The ninety days run out while he is learning to
-sweep. He never sees the Telecaster again. In chapter 39 he sends Wes the answer he owed him,
-and a minute later the phone buzzes once. A thumb.
-
-**Why:** the thumb is the book's own currency. David "answered with a thumb." It is funnier and
-harder than forgiveness.
-
-### F. He asks the internet for help, and that is what turns it
-
-**The surprise, and it closes a hole:** a man with that many followers could raise his mother's
-care in a day. A reader will ask why he does not. So he does.
-
-He posts one line asking for help. The forklift driver in Tulsa sends twenty dollars. Then the
-rest arrive. "And there it is." "The end of the world costs nine grand a month." Somebody makes
-a clip. He takes it down inside the hour and sends Tulsa her twenty back.
-
-**Why:** you asked at the start for people to be contemptuous of him and not trust him anymore.
-This is how that happens to someone like him. It is also why he posts "I don't want all this
-attention" and logs out.
-
-**This could replace** the two phone numbers (beat 5 below).
-
-## What I would cut
-
-- The realtor's card (beat 6). Too neat.
-- The aide being the Hollis girl (beat 10). One connection too many.
-- Wes buying the guitar back (beat 3). Replaced by E.
-- David as the secret visitor (beat 2). Replaced by D.
-- The voicemail. She would not have left one. She thought the phone told you who it was. So
-  there is no voice to play back, and at 9:40 he has only a phone that does not ring.
-- "Tom," the milk, the glasses in the bread drawer.
-- "He would think of it again at another fire."
-
-## What I would keep exactly as it is
-
-The notice on the front door nobody used. The stove in the back of the truck. Bidwell's outfit
-buying the farm. And your crash out: the shouting, the silence and the rain need nothing added.
-
----
-
-# The five that change the book
-
-## 1. At the fire, Grace uses his mother against him
-
-**Built from:** her story at the first fire ("My house, my choice." REFUSED). Your dictated
-quarrel. The choice he made in chapter 13.
-
-**What it does:** right now the last fight is two positions. This makes it an argument he can
-lose. He is the one person at that fire who has decided for somebody who could not say no, and
-she knows it. His answer is the book's answer: he asked first, and his mother could not reply.
-The people Grace wants to save can.
-
-**Who it changes:** Grace gets the strongest case anyone makes against him. Elijah has to say
-out loud where the line is.
-
-**Where:** two places. He tells her in chapter 24. She uses it in chapter 36.
-
-**Cost:** about 190 words. It is an insertion into your dictated scene. None of your lines move.
-
-**Chapter 24, after her fire story and his bar story:**
+**Chapter 24, at the stove.** She has just told him about the man at the end of the road.
+Your text then has him tell the bar story. He tells this one too:
 
 > He told her the other one too. He had not meant to. The two pages, the room with the window,
 > the man with the folder.
 >
 > "Did you ask her?" Grace said.
 >
-> "She said 'thin.'"
+> "She asked for somebody named Barry."
 >
 > Grace looked at the stove for a while.
 >
 > "I'd have signed," she said. "I'd have signed in the parking lot."
->
-> It was the kindest thing anybody had said to him about it. He would think of it again at
-> another fire.
 
-**Chapter 36, after "it's not our responsibility to choose for them" and "Yes, it is":**
+**Chapter 36, after "I'm saying that it's not our responsibility to choose for them" and "Yes,
+it is":**
 
-> She wiped her face with the heel of her hand.
+> He looked at her. Her fist was still against her chest. He thought he saw it then, the whole
+> shape of it.
 >
-> "You chose for your mother."
+> "Grace," he said. He said it quietly. "This is the gate."
 >
-> He didn't say anything.
+> She went still.
 >
-> "She was sitting in a chair and she couldn't say one word, and you sold her house out from
-> under her. And you were right. You were right, Elijah. That's all I'm asking you to do."
+> "The man at the end of the road. He told you. *My house, my choice.* You couldn't have made
+> him. That wasn't yours either."
 >
-> "I asked her."
+> It was the kindest thing he had.
 >
-> "She couldn't answer."
+> She took a step back from it.
 >
-> "No," he said. "They can."
+> "Don't." Her hand came up between them, flat. "Don't you bring him out here. I told you that
+> in the dark."
 >
-> "Oh, don't," she said. "Don't you dare. You can't live with what you did, so now nobody gets
-> to choose for anybody. And now you're taking out your mother trauma on me!"
+> "I'm not..."
+>
+> "You are. You kept it, and now you get it out." She was looking at his hands. "You signed
+> your mother's house away and she couldn't tell you yes or no, and you've been sick over it
+> for three years. So now nobody gets to choose for anybody. And now you're taking out your
+> mother trauma on me!"
 >
 > She growled, low in her throat, and shook both hands up by her chin.
 >
@@ -222,14 +118,270 @@ out loud where the line is.
 >
 > Here was the woman he trusted most. In one instant all of that trust was utterly shattered.
 
-Her line and the three beats after it are yours (19 November), put into the book's past tense.
-The line lands here because it is partly true, and because she is doing the same thing to him
-with the man in the fire. A few lines later she says "I can't believe I did this again."
+Her last line and the three beats after it are yours.
 
-Then your scene goes on as you dictated it: she breaks the silence. "Look, I thought you were
-one of us."
+**What is underneath, and never said:**
+
+- He thinks he is listening. He names what he hears and offers it as comfort. It is the same
+  sentence her husband used: "You can't make them leave, Grace." Your chapter 24 already says
+  of the captain, "He thought it was comfort." And Elijah has already agreed with him once, to
+  her face: "He wasn't wrong, though."
+- She is not listening either. She is watching his hands. Each of them told the other one
+  thing at that stove, and at this fire each one gets it handed back.
+- Your scene already pays this off a few lines later: "he was the captain. He had been the
+  captain all along."
+
+**One overlap to settle.** Your new beat ("Elijah was speechless") lands where the draft
+already has "he just stood there. He loved her so much. He could not find one word." I would
+keep yours and drop "He could not find one word."
+
+## C. "Barry"
+
+**In the hospital, the first thing she says:**
+
+> "Barry," she said.
+>
+> "It's Elijah, Ma."
+>
+> She looked at him as if he had said something a little beside the point.
+>
+> "She's been saying that since they brought her up." A nurse was hanging a bag. "Is that your
+> dad?"
+>
+> "My dad was Tom."
+>
+> "Brother?"
+>
+> "There isn't any Barry."
+
+**At the choice,** when he asks her to tell him what to do:
+
+> Her good hand came up off the blanket and patted his.
+>
+> Then she looked past him, at the door.
+>
+> "Barry?" she said.
+>
+> He waited. That was all there was.
+
+**Every Sunday in the truck weeks:**
+
+> "Barry?"
+>
+> "It's Elijah, Ma. There's no Barry."
+>
+> She took that the way she had taken the end of the world. Pleasantly. A little while later
+> she asked again.
+
+**How he finds out.** You said "some circumstance." My pick is David, in chapter 39, because
+Ray is the one person who sat with her and was old enough to know. It is written into D below.
+
+A second way, if you would rather he learn it sooner: one of the church ladies is visiting on a
+Sunday, hears her say it, and laughs. "Barry Whitlow? Honey, that was 1971."
+
+## D. Ray sat with her, and Ray knew who Barry was
+
+Chapter 39. This replaces "I asked your mom where you were. She said working." Your lines are
+marked.
+
+> "You missed my dad," David said. *(yours)*
+>
+> "I know." *(yours)*
+>
+> "No. You don't." David put the rag down. "He drove out to that place every Sunday. Sat with
+> your mother. Eight months, till he died. He said somebody ought to." He picked the rag up
+> again. "And you couldn't come down for one hour to bury him."
+>
+> "I was fixing something I broke. It's not a reason. I'm sorry, Dave. I should've been
+> standing there." *(yours)*
+>
+> David nodded. He picked up another glass. He wasn't going to say it was okay, because it
+> hadn't been. It was just over. *(yours)*
+>
+> "Who goes now?"
+>
+> "Who do you think."
+>
+> Elijah didn't say anything.
+>
+> "She ask you for Barry?" David said.
+>
+> "Every Sunday. There isn't any Barry."
+>
+> "There's a Barry." David held the glass up to the light. "She asked Dad the first week and
+> he about fell off the chair. Barry Whitlow. Pitched for Analy. She went with him two summers,
+> before your dad was anybody. Dad said he had a Mustang and no sense."
+>
+> "I thought it was the stroke."
+>
+> "It is the stroke." David set the glass down with the others. "It's also Barry."
+>
+> "He'd have told you to sit down." *(yours)*
+
+Then, a page later, "You're not that powerful, Mad" lands on two things: the three people he
+thought he ruined, and the word he thought was about him.
+
+In your list of what he can still do, one word is added: "He could let his mother keep her
+lamp, and her Barry."
+
+Your text already gives this a rhyme. The prayer he reads on the wall a page later is Ray's.
+Chapter 0 has Ray on the last stool "under a little framed prayer he'd hung" himself. The man
+who sat with his mother is the man who hung "accept the things I cannot change."
+
+## E. The guitar is gone for good
+
+**Chapter 18 or 19, one line:**
+
+> The ninety days on the yellow ticket ran out on a Tuesday in January. He was under a sink at
+> the time. He didn't find out until Thursday.
+
+**Chapter 39, in the truck, before he goes into the Bear Flag:**
+
+> He scrolled back five years to a text he had never answered. *is my stuff in that thing.*
+>
+> *Yes,* he typed. *All of it. I should have said so that night. The guitar's gone, by the way.
+> I hocked it in Santa Rosa and never went back.*
+>
+> He sent it and went in.
+
+**Later, at the bar, before the television:**
+
+> His phone buzzed once against his leg. He looked. It was a thumb.
+
+## F. He asks his followers for help
+
+The full text is in the scene draft, Chapter 13, after he asks his mother. In short:
+
+1. He posts from the hospital garage. "I don't know how to ask this. I need help."
+2. The woman in Tulsa sends twenty dollars.
+3. Then the comments. Two are your words: *Why the fuck do you need help?* and *Fuck you. You're
+   just asking for handouts.*
+4. Then the private ones, from people he knows. Nate: *Take the band's name off that page.*
+5. By morning the offers are back, because the clip is everywhere. A podcast, a stage, a lab
+   asking his rate.
+6. "In one window he was a beggar. In the next he was a get." He answers none of it.
+7. In the truck he reads the comments every night for five weeks. Then he posts your existing
+   line, "I don't want all this attention. I just want to understand what is right," and logs
+   out.
+
+**What it does for the plot:** he now asks three times in a row and gets no answer three times.
+His mother, his followers, then God. And it closes the hole: nobody can say "why didn't he just
+raise the money."
+
+**What the book needs earlier:** you said he makes a lot of videos about what is happening to
+him. The book has one in chapter 6 and the plain ones in chapter 11. Chapters 7 to 10 need a
+line each of him filming as he goes.
+
+## What the book is about, in your words
+
+"Surviving the singularity involves surviving yourself." "It's about adjusting your own
+expectations. It's not about like how to get ahead of the tech and the tools." "It's actually
+about just feeling your body, feeling your feelings, being present. It's not about control.
+It's actually about acceptance, letting go of the illusion of control and accepting that you
+were never in control to begin with." "You don't control when you get hungry. You don't control
+when you have to pee."
+
+### It is already in the book
+
+You said this wisdom "needs to be imparted by someone." Someone already does. It is Lou, in
+chapter 35, in the tomatoes.
+
+- He asks about the feeling first: "Did it hurt your feelings, or did it piss you off?"
+- He names it: "Their whole identity is built around the illusion of control."
+- He turns it on Elijah: "How much time do you spend thinking about nuclear winter?"
+- He ends in his body, in the present: "Right now? I'll probably turn on the water. The plants
+  look thirsty."
+
+And it lands in chapter 39, on David's wall: "God, grant me the serenity to accept the things I
+cannot change." "That was about all he had any say over. Sitting there, he found he was okay
+with that."
+
+So I would not add a speech. Three small things would finish it.
+
+### 1. Your two lines, in Lou's mouth
+
+Chapter 35, straight after "the illusion of control":
+
+> "Their whole identity is built around the illusion of control." He picked his coffee back up.
+> "And it is one. You don't control when you get hungry. You don't control when you have to
+> pee. Nobody was ever driving."
+>
+> "Okay, but…"
+
+### 2. The trap, tried once and failed
+
+You said he might be tempted by control and self-discipline. He already is: the notebooks,
+every date with his initials beside it, the one-page plan, the slides. One more, in the truck
+weeks, where his own body breaks it:
+
+> He decided the trouble was discipline. He wrote it out on the back of a delivery receipt and
+> squared it in the visor, the way she would have. *5:30 up. 100 push-ups. 10 applications. One
+> meal. No phone after 9.*
+>
+> It held four days. On the fifth he was hungry at ten in the morning, receipt or no receipt.
+> He had to find a bathroom twice before noon. At a quarter past nine that night he was reading
+> the comments.
+
+Three years later Lou tells him why.
+
+### 3. His mother, full circle
+
+"She's nice, she's kind, she's funny, she's sweet, she's charming, but she's also a
+perfectionist and a catastrophizer." She is already both in your text: "the pot she never let
+anyone else wash," and "every disaster the farm had ever taught her."
+
+She kept everything in order and expected the worst, and the worst came anyway. Chapter 37,
+when he goes home and sits with her:
+
+> She had worried for seventy years. The well, the bank, the Hendersons' chimney. Nobody else
+> could wash the pot. Now two girls lifted her in the morning and somebody else did the dishes
+> for a hundred people, and she sat in the sun with the radio going. It was the first time in
+> his life he had seen her sit down without getting up again for something.
+>
+> "Barry?" she said.
+>
+> "Not yet, Ma," he said.
+
+That is the circle. Her note in the barn said "Be nice about it." Now he is being nice about
+Barry. He stops correcting her before he knows who Barry is. Two chapters later David tells
+him.
+
+It also rhymes with your own line for him the morning after the crash out: "Everything he had
+ever been afraid of had happened. He was still there." It is true of her too.
+
+## What I filled in, for you to check
+
+- What he points out at the fire. You said "he's just pointing something out." I chose the
+  gate.
+- How Barry is revealed, and everything about him: the last name, the school, the Mustang.
+- Everything in the barn except that it is full.
+- "Her pressure. Her sugar." You said "all kinds of other stuff." The other stuff is yours to
+  name.
+- Which old friends write to him, and Nate's line.
+- The offers that come back, and that he sends the twenty dollars back.
+- The schedule in the visor.
+- "Not yet, Ma."
+
+## Cut
+
+The realtor's card (beat 6), the aide being the Hollis girl (beat 10), Wes buying the guitar
+back (beat 3), and David as the secret visitor (beat 2). You did not object to those. They are
+still below, each marked, in case you want one back.
+
+---
+
+# The five that change the book
+
+## 1. At the fire, he points at her gate and she throws his mother back
+
+**Rewritten 19 November.** The current text is at the top, under "B. The fire." In the first
+version Grace brought up his mother first and Elijah won the exchange. You ruled that he
+strikes first without knowing it, and that she is defending herself from an attack that is not
+happening.
 
 ## 2. David has been sitting with his mother every Sunday
+
+**Replaced 19 November** by Ray. See "D" at the top. Kept here as a record.
 
 **Built from:** David "who answered with a thumb." "I watch that guy. Every week." "He had never
 said it was every week." "You missed my dad." The new 9:40 call.
@@ -270,6 +422,8 @@ He takes it for one of the church ladies.
 > "We don't open till four on Sundays," he said.
 
 ## 3. Wes bought the guitar back
+
+**Replaced 19 November.** You said: "The guitar is gone for good." See "E" at the top. Kept here as a record.
 
 **Built from:** the pawn ticket ("Then it's in the window"). Wes's text from chapter 2, "is my
 stuff in that thing," and "He never did." Main Street, where Wes looked away.
@@ -344,6 +498,8 @@ Then what is already there: what Irene finally asks is about Walt's tractor.
 
 ## 5. There were two other ways to pay for that room
 
+**Check this one.** "F" at the top now answers the same question: why he does not just take the money. Keep both, or let F do it alone.
+
 **Built from:** the two numbers in his phone that the book never uses. Ruby: triple his salary
 "for doing nothing." Gus: "Gus would come. That was the thing." Gus's line: "The ones for
 nothing are the expensive ones."
@@ -385,6 +541,8 @@ call.
 # Six that tie people together
 
 ## 6. The realtor's card
+
+**Cut 19 November.** Too neat. Kept here as a record.
 
 **Built from:** chapter 0. The silver-haired realtor "took the napkin, read it, folded it into
 his breast pocket." "Good people, don't get me wrong. But the numbers just don't…"
@@ -457,6 +615,8 @@ said. Not a word of yours changes.
 
 ## 10. The night aide is the Hollis girl
 
+**Cut 19 November.** One connection too many. Kept here as a record.
+
 **Built from:** "Linda's granddaughter, the one with the nose ring," who sent the video to his
 mother. Her family's place was the first one the outfit bought.
 
@@ -467,6 +627,8 @@ tell him, in chapter 32, what has been built on both places.
 **Where:** chapters 15, 31, 32, 37. **Cost:** a name on a character who is already there.
 
 ## 11. Lou in the tomatoes
+
+**Added to on 19 November.** Your two lines about being hungry and having to pee go into this scene. See "What the book is about" at the top.
 
 **Built from:** "You grew up on one. Who ate it at your place?" "My mom."
 
@@ -515,14 +677,14 @@ eleven at night." Add: and he was no longer sure she should be driving at night.
 
 # What these replace
 
-- **Wes getting his answer** is now beat 3.
+- **Wes getting his answer** is now "E" at the top: he answers, and Wes sends a thumb.
 - **Lou in chapter 23** is now inside beat 4.
 - **The three weeks after he arrives** has beat 7. It could still take a page.
-- **Grace's missing steps:** beat 1 does the work of her turn before the fire. Three are still
+- **Grace's missing steps:** "B" at the top does the work of her turn before the fire. Three are still
   open: how they become a couple, "You're the lamp" coming back, and her asking him out loud for
   the truck.
 
 # What I would not add
 
-More about Bidwell. Your plan keeps him out of sight, and beats 4, 6 and 10 already let the
-reader feel him without anyone learning his name.
+More about Bidwell. Your plan keeps him out of sight, and beat 4 already lets the reader feel
+him without anyone learning his name.

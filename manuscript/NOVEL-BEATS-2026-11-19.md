@@ -31,7 +31,7 @@ out loud where the line is.
 
 **Where:** two places. He tells her in chapter 24. She uses it in chapter 36.
 
-**Cost:** about 150 words. It is an insertion into your dictated scene. None of your lines move.
+**Cost:** about 190 words. It is an insertion into your dictated scene. None of your lines move.
 
 **Chapter 24, after her fire story and his bar story:**
 
@@ -68,13 +68,19 @@ out loud where the line is.
 >
 > "Oh, don't," she said. "Don't you dare. You can't live with what you did, so now nobody gets
 > to choose for anybody. And now you're taking out your mother trauma on me!"
+>
+> She growled, low in her throat, and shook both hands up by her chin.
+>
+> Elijah was speechless. His heart sank and fell out the bottom of his gut.
+>
+> Here was the woman he trusted most. In one instant all of that trust was utterly shattered.
 
-Her last line is yours, word for word (19 November). It lands here because it is partly true,
-and because she is doing the same thing to him with the man in the fire. Two lines later she
-says "I can't believe I did this again."
+Her line and the three beats after it are yours (19 November), put into the book's past tense.
+The line lands here because it is partly true, and because she is doing the same thing to him
+with the man in the fire. A few lines later she says "I can't believe I did this again."
 
-Then your scene goes on as you dictated it: they look at each other, he cannot think what to
-say, and she says, "Look, I thought you were one of us."
+Then your scene goes on as you dictated it: she breaks the silence. "Look, I thought you were
+one of us."
 
 ## 2. David has been sitting with his mother every Sunday
 

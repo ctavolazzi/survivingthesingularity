@@ -3,6 +3,13 @@
 Read this first. It replaces `CONTINUATION-2026-11-19.md`, which is kept as a record of the
 morning and is out of date in several places.
 
+**Changed the night of 19 November.** CT ruled that the manuscript is kept in this repository
+with a version history, and that he will work on the Google Doc himself. Asked whether the full
+novel should go in a public repository, he said "Yes, commit it." It is in `novel/`, and
+`novel/CHANGES.md` says how to pull a new version from the Doc. Where this file says the
+manuscript is not in the repository, that is no longer so. His personal journal material still
+stays out.
+
 Then read, in this order:
 
 1. `NOVEL-SUBSTRATE-2026-11-19.md`. What CT wants next, and where each major character stands.

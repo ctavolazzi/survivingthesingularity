@@ -227,3 +227,24 @@ td:first-child { font-variant-numeric: tabular-nums; }
 .mapjump button { font: 600 13px var(--ui); padding: 8px 14px; min-height: 40px; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); color: var(--ink); cursor: pointer; }
 .mapjump button:hover { border-color: var(--ink); }
 .mapjump button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* the Book tab: the manuscript itself, in the reading face, with a bar beside anything that is not CT's */
+.book { gap: 14px; }
+.bookkey { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; color: var(--muted); }
+.bookkey li { display: flex; align-items: center; gap: 10px; }
+.sw { display: inline-block; width: 4px; height: 18px; border-radius: 2px; flex: none; }
+.sw-new { background: var(--accent); }
+.sw-changed { background: var(--muted); }
+.sw-moved { background: transparent; border-left: 4px dotted var(--muted); width: 0; border-radius: 0; }
+#bookjump { width: 100%; font: 500 15px/1.3 var(--ui); color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 8px 10px; }
+.booktext { display: flex; flex-direction: column; min-width: 0; }
+.booktext p { font-family: var(--read); font-size: 18.5px; line-height: 1.62; margin: 0 0 .85em; max-width: 66ch; padding-left: 12px; border-left: 4px solid transparent; }
+.booktext h2 { font: 700 24px/1.2 var(--ui); margin: 44px 0 6px; padding: 16px 0 0 12px; border-top: 2px solid var(--ink); border-left: 4px solid transparent; text-wrap: balance; scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 96px); }
+.booktext h3 { font: 700 20px/1.25 var(--ui); margin: 34px 0 14px; padding-left: 12px; border-left: 4px solid transparent; text-wrap: balance; scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 96px); }
+.booktext .mk-new { border-left-color: var(--accent); }
+.booktext .mk-changed { border-left-color: var(--muted); }
+.booktext .mk-moved { border-left: 4px dotted var(--muted); }
+.booktext .brk { text-align: center; color: var(--muted); margin: .4em 0 1.2em; }
+.booktext .fig { font-family: var(--ui); font-size: 13.5px; color: var(--muted); }
+.booktext em { font-style: italic; }
+@media (max-width: 480px) { .booktext p { font-size: 17.5px; } }

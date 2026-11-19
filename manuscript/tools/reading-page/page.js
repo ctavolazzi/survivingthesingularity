@@ -1,10 +1,10 @@
 (function () {
-  var views = ['changes', 'people', 'map', 'drive', 'scene', 'later', 'beats', 'shape', 'rhymes', 'arcs', 'fixes', 'method'];
+  var views = ['book', 'changes', 'people', 'map', 'drive', 'scene', 'beats', 'shape', 'rhymes', 'arcs', 'fixes', 'method'];
   var jump = document.getElementById('jump');
   var jumpwrap = document.getElementById('jumpwrap');
 
   function show(name) {
-    if (views.indexOf(name) < 0) name = 'people';
+    if (views.indexOf(name) < 0) name = 'book';
     views.forEach(function (v) {
       document.getElementById('view-' + v).hidden = v !== name;
       var tab = document.getElementById('tab-' + v);
@@ -108,5 +108,12 @@
     if (e.key === 'ArrowLeft') { show(at - 1); e.preventDefault(); }
     else if (e.key === 'ArrowRight') { show(at + 1); e.preventDefault(); }
     else if (e.key === 'Escape') { hide(); }
+  });
+
+  var bookjump = document.getElementById('bookjump');
+  if (bookjump) bookjump.addEventListener('change', function () {
+    var el = document.getElementById(bookjump.value);
+    if (el) el.scrollIntoView({ block: 'start' });
+    bookjump.value = '';
   });
 })();

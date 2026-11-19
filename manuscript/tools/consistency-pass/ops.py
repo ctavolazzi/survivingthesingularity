@@ -30,8 +30,13 @@ OPS = [
      'He turned the dome light off. He smelled like cigarettes. He did not tell the phone about any of it.',
      'The one night he does not film.'),
     (11, 'L', "He went into his old bedroom, under a poster of a band he'd opened for once.",
-     "He went into his old bedroom, under a poster of a band he'd opened for once.\nHis mother fed him. After supper she stood at the counter with the radio on and ate her ice cream out of the little tub, the way she had every night of his life. Twice in one evening she asked him if he'd eaten. He said yes both times.",
-     'The ice cream once, early, and the forgetting.'),
+     "He went into his old bedroom, under a poster of a band he'd opened for once.\n"
+     'He told his mother it was only for a while.\n'
+     '"Well." The pot went into the rack. "Then you\'re somewhere."\n'
+     "She fed him. After supper she stood at the counter with the radio on and ate her ice cream out of the little tub, the way she had every night of his life. Twice in one evening she asked him if he'd eaten. He said yes both times.\n"
+     'He was there a month before she looked at him over her glasses.\n'
+     '"Go be useful, baby. You\'re underfoot."',
+     'Two of her lines the stroke would have cost you, moved to before it: "Then you\'re somewhere" and "Go be useful, baby." The second now sends him to Stockton. Also the ice cream, and the forgetting.'),
 
     # ---- audit line fixes, chapters 9 to 12 ----
     (9, 'L', 'Twenty years of his stuff went into one of these', 'Seventeen years of his stuff went into one of these',
@@ -44,11 +49,15 @@ OPS = [
      'The five weeks in the truck move this scene to October.'),
 
     # ---- chapter 17 ----
-    (17, 'L', 'The co-op ate together on the first Friday of every month.', 'The co-op ate together every Friday.',
-     'Audit 1. It is weekly everywhere else.'),
-    (17, 'L', 'that he found out where the lines actually ran.',
-     "that he found out where the lines actually ran. Nobody had told him he could come to the first two, and he hadn't asked.",
-     'Audit 1. Why his first dinner is three weeks in.'),
+    (17, 'L', 'The co-op ate together on the first Friday of every month.',
+     'For three weeks nobody asked him anything.\n'
+     'He had a cot in the room over the pump house. The Fisher sat under a tarp in the corner of the shed, because there was nowhere to put it. The first night he slept fourteen hours. Grace put a plate in front of him at the kitchen trailer twice a day and stood there until it was empty. She did not ask about his mother. He had told her in six lines, and she let the six lines be all of it.\n'
+     'Marta gave him the floor. Then the benches. Then a pump off the wash station that nobody had gotten to, which he took apart on a tarp and put back together right. She looked at it and gave him another one.\n'
+     'Somebody left a pair of work gloves on his step. Somebody left a jacket that was too big. He never found out who. He was thin enough that October that he could see it scared people. By the second week it had stopped scaring them.\n'
+     'On Sundays at 9:40 he sat on the pump house steps and called the place with the rose garden. The night aide held the phone by his mother\'s ear. He told the radio about his week.\n'
+     "Nobody had told him he could come on Fridays, and he hadn't asked.\n"
+     + NB + '\nThe co-op ate together every Friday.',
+     'Your ruling of 18 November: the farm people nurse him back. The three weeks were a blank. Also audit 1: the dinner is weekly, and this is why his first one is three weeks in.'),
     (17, 'L', 'Elijah offered what sounded like the reasonable middle.',
      '"Face down, Curtis," Grace said. He put the phone face down by his plate. After that night it was a rule.\nElijah offered what sounded like the reasonable middle.',
      'Audit 18. The phone rule starts the night Curtis reads from his.'),
@@ -115,7 +124,7 @@ OPS = [
     (24, 'L', 'He wrote it in the notebook after she hung up.', 'He wrote it in the notebook before he went back in.',
      'Nobody hangs up.'),
     (24, 'L', 'By eleven everyone had gone but Grace.',
-     'The next Sunday he drove down and held the picture where she could see it. She looked at it a long time. Then her good hand came up off the blanket, and she put one finger on the stove.\n'
+     'The next Sunday he drove down and held the picture where she could see it. "It looks like somewhere, Ma," he said. She looked at it a long time. Then her good hand came up off the blanket, and she put one finger on the stove.\n'
      + NB + '\nBy eleven everyone had gone but Grace.',
      'What she does with the photograph, since she cannot say it.'),
     (24, 'L', "He'd never told anyone up here.", "He'd never told the whole of it to anyone up here.",
@@ -150,10 +159,10 @@ OPS = [
     (31, 'L', '"I know, baby," she said. "Are you eating?"', DEL, 'Her line is gone.'),
     (31, 'L', '"Who\'s Curtis?"', DEL, 'Her line is gone.'),
     (31, 'L', '"He\'s a guy who thinks the world\'s ending. He fixed my truck."', '"Barry?" she said.', ''),
-    (31, 'L', '"Curtis made eggs."', '"Curtis made eggs," he said. "He\'s a guy who thinks the world\'s ending. He fixed my truck."',
-     'He tells her without being asked.'),
-    (31, 'L', '"Well." The pot went into the rack. "Then you\'re somewhere."', 'It was the first time he had said it to anybody.',
-     '"Then you\'re somewhere" cannot be said anymore.'),
+    (31, 'L', '"Curtis made eggs."', '"Curtis made eggs," he said. "He\'s a guy who thinks the world\'s ending. He fixed my truck." He waited a second. "So I\'m somewhere, Ma."',
+     'He tells her without being asked, and says her line for her.'),
+    (31, 'L', '"Well." The pot went into the rack. "Then you\'re somewhere."', 'He had told somebody he was not okay. It was the first time.',
+     'Her line is in chapter 11 now, and he has just said it back to her.'),
 
     # ---- chapter 32 ----
     (32, 'L', "He didn't bring anybody a plan.",
@@ -204,11 +213,13 @@ OPS = [
      'She took a step back from it.\n'
      '"Don\'t." Her hand came up between them, flat. "Don\'t you bring him out here. I told you that in the dark."\n'
      '"I\'m not..."\n'
-     '"You are. You kept it, and now you get it out." She was looking at his hands. "You signed your mother\'s house away and she couldn\'t tell you yes or no, and you\'ve been sick over it for three years. So now nobody gets to choose for anybody. And now you\'re taking out your mother trauma on me!"\n'
+     '"You are. You kept it, and now you get it out." She was looking at his hands. "You do that. You called me the lamp. Did you know that? On your floor, with your head in my hands. ' + I + "You're just the lamp." + E + ' You don\'t even remember saying it."\n'
+     "He didn't.\n"
+     '"You signed your mother\'s house away and she couldn\'t tell you yes or no, and you\'ve been sick over it for three years. So now nobody gets to choose for anybody. And now you\'re taking out your mother trauma on me!"\n'
      'She growled, low in her throat, and shook both hands up by her chin.\n'
      'Elijah was speechless. His heart sank and fell out the bottom of his gut.\n'
      'Here was the woman he trusted most. In one instant all of that trust was utterly shattered.',
-     'Your ruling B: he strikes first without knowing it. Her last line and the three beats after it are your words.'),
+     'Your ruling B: he strikes first without knowing it. Her last line and the three beats after it are your words. "You\'re the lamp" was planted in chapter 31 and never fired. It fires here: the first thing he ever struck her with, and he did not know that either.'),
     (36, 'L', 'He loved her so much. He could not find one word.', 'He loved her so much.',
      'Your new beat already says he is speechless.'),
 
@@ -241,7 +252,9 @@ OPS = [
      'He pulled the other chair over.\n"Barry?" she said.\nFor three years he had told her there wasn\'t one.\n"Not yet, Ma."\nShe patted his hand.',
      'He stops correcting her.'),
     (37, 'L', '"Somewhere."', '"It\'s chicken tonight," the aide said. "I can have them send two."', ''),
-    (37, 'L', 'She nodded, and went to get the chicken.', 'He said two would be fine.', ''),
+    (37, 'L', 'She nodded, and went to get the chicken.',
+     "He said two would be fine.\nHe slept that night at Manny's, in the back room, with his boots by the door. Manny had offered it once, three years back, through a truck window, in four words. It turned out the offer was still good. His was the one fence left on that road without a light on it.",
+     'The house is sold, so he needs somewhere to be. Manny has carried the stove three times and never spoken. He is the last neighbor beside the machine.'),
 
     # ---- chapter 38 ----
     (38, 'L', "That's what he called it.", "That's what he calls it.", 'Audit 8. The ridge is first said at the co-op.'),
@@ -253,8 +266,9 @@ OPS = [
      'The first copy went to his mother. He had written a note in pencil inside the front, and he read her that first.',
      'There is no kitchen table now, and she cannot read it.'),
     (39, 'R', r'His mother read hers in two days\..*He was in the next room\.',
+     "He had mailed one other thing north that month. The week he got back he dug a pit behind Manny's barn, square-sided, a spade-width at a time, and sent Priya a paper bag of what was at thirty. It was dust. It was dust at fifty.\n"
      'He read his mother the book. It took Tuesday afternoon and all of Wednesday and an hour on Thursday morning. He read it over the radio. He did not ask anybody to turn it down. She looked at the window for most of it. She slept through the spreadsheet. The lamp did not say anything. He had thought it might.',
-     'Audit 3 goes away with this: no Sunday between the Tuesday and the Thursday.'),
+     'Priya hands him a sample bag in chapter 37: "Dig one at home. Tell me what you find at thirty." This is what he finds, next to the machine that is drinking the well. And audit 3 goes away: no Sunday between the Tuesday and the Thursday.'),
     (39, 'R', r'"I kept hearing you try to tell me this," she said,.*pressure switch\."',
      'At the part with the trees she turned her head toward him. It might have been the trees. A cart had gone by in the hall.\n'
      'When he shut it she said, "Barry?"\n"Not yet, Ma."\nShe patted the cover.',
@@ -296,12 +310,114 @@ OPS = [
     (39, 'L', '"You never looked up."',
      '"You never looked up."\nHis phone buzzed once against his leg. He looked. It was a thumb.',
      "Wes answers the way David always has."),
+
+    # ---- the story pass: structure and character ----
+    (5, 'L', 'He and Manny got it up one flight of stairs',
+     "Manny had the next place over and had been fixing things on theirs since Elijah's father got sick. The two of them got it up one flight of stairs",
+     'Manny carries the stove three times and the book never says who he is. He matters at the end now.'),
+    (6, 'L', 'The meeting was short. They called it a restructuring.',
+     'The meeting was short. They called it a restructuring. The pipeline he had built ran without him now. It had for a year.',
+     'The layoff had no cause. His own work lets him go, the way it let three strangers go.'),
+    (7, 'L', 'By Friday it was four hundred people and he quit counting.',
+     "It had gotten out through the Hollis girl. Linda's granddaughter had put it on her own page with one line, " + I + 'is my neighbor ok,' + E + ' and eleven thousand people watched her do her eyebrows. By Friday it was four hundred people and he quit counting.',
+     'A video on a page with two hundred followers had no way to spread. She is already the one who sends it to his mother, and she is the one who sends him the picture in chapter 32.'),
+    (11, 'L', 'and he got there at six in the morning because the email said six.',
+     'and he got there at six in the morning because the email said six. He had left the Ranger in the cannery lot the night before and ridden over with the crew at four.',
+     'Audit B3. Otherwise the truck he sleeps in at the cannery is still in Oakland.'),
+    (23, 'L', 'There was a long quiet on the line, the box fan working,',
+     "Lou had come along and stood by the door with his hat in his hands. He had lost his pears outside Ukiah to one buyer and one price. He hadn't said a word all afternoon.\nThere was a long quiet on the line, the box fan working,",
+     'Lou lost his ground to a single buyer and was missing from the one chapter where a single buyer loses.'),
+    (23, 'L', 'Grace went over the next afternoon and sat on the porch with her for four hours.',
+     'By the door, Lou put his hat back on.\nGrace went over the next afternoon and sat on the porch with her for four hours.', ''),
+    (24, 'L', 'and looked, for Curtis, content.',
+     "and looked, for Curtis, content.\nElijah watched them from beside the stove. It was his room, and they were all in it, and he caught himself making a list of what he would do differently if the place were his to run. He put that away. It didn't stay put.",
+     'The midpoint was a high with no turn in it. This is where he stops learning the co-op and starts wanting to steer it, so the five failures from chapter 27 on read as one want and not five relapses.'),
+    (25, 'L', "He didn't throw any of it away.",
+     "He didn't throw any of it away.\n" + NB + '\n'
+     'That was the night she knocked.\n'
+     'It was late, after the Friday table had been broken down. One knock. Then the latch, and Grace was standing inside his door with her coat still on and a jar in her hand, looking like she had surprised herself.\n'
+     '"I didn\'t wait," she said.\n'
+     '"No."\n'
+     '"I brought soup. I don\'t know why I brought soup. You\'re fine."\n'
+     '"I\'m fine."\n'
+     '"I know you are." She set the jar on the table. "You went and told him. Frank. You walked in there with the chart."\n'
+     '"You told me to."\n'
+     '"I tell everybody to." She sat down in Reuben\'s chair, on the far side of the room from the stove, and finally unbuttoned the coat. "Nobody does."\n'
+     'He put a split of oak in and shut the door on it. He did not go and sit by her. He sat down on the floor where he was, the way he had the first night, and after a while she picked up the chair and brought it over.\n'
+     'Her truck was still in the gravel in the morning. Curtis walked past it on his way to the shop and found something to look at in the other direction.',
+     'How they become a couple was not on the page: a chair moved a foot, and a year later she is in his shirt. In chapter 18 she says "I should have knocked like Marta." The same day she tells him to knock on Frank, she knocks on him. He still never reaches for her, which chapter 36 needs.'),
+    (27, 'L', 'and a budget that stops in June."',
+     'and a budget that stops in June. Every winter there\'s somebody on that route we don\'t get to in time. I can tell you their names."',
+     'Her speech at the fire, "Millions of people die every single day," had no root earlier in the book. She counts the dead, and she knows their names. He never learned the names of his three.'),
+    (31, 'L', 'He ate what was in the pan.',
+     "He ate what was in the pan. When he carried it out there was one of Wren's candles on the step, unlit, with no note.",
+     "Wren leads the circle that puts him on the floor and the book never makes her look at it."),
+    (32, 'L', 'to the dollar, plus ten percent."',
+     'to the dollar, plus ten percent. And the last line asks. It says if she would rather not, she will not hear from them again. I have never seen a buyer put that in writing."',
+     'Audit B1. In the same month the machine tells Bidwell it would rather ask. A letter that does not ask contradicted that. Now the letter is the first sign of it.'),
+    (34, 'L', 'knew where he had spent 2024,', 'knew where he had been the winter before he came,',
+     'Audit B2. On the page his time in the city is one day and one night. Patricia\'s "your year in the city" stays, as her unfair version.'),
+    (35, 'L', 'Their whole identity is built around the illusion of control."',
+     'Their whole identity is built around the illusion of control. And it is one, man. You don\'t control when you get hungry. You don\'t control when you have to pee. Nobody was ever driving."',
+     'Your words of 19 November on what the book is about, in the mouth of the man who already says it.'),
+    (39, 'L', 'pouring beer twenty minutes from this stool.',
+     'pouring beer twenty minutes from this stool. He would have to tell Marta.',
+     'She sent him to find out if they ate, and never learns the answer.'),
 ]
 
 # Audit items left alone on purpose, with the reason.
 LEFT = [
     ('Audit 25', 'Chat Horizon is "for free" and "twenty dollars a month" in chapter 0. Both are true of the real thing, and chapter 0 is your hand-edited text. Not touched.'),
     ('Audit 12', 'The two first laughs. The second one was on the couch, and the couch is gone.'),
-    ('Audit B1 to B6', 'These are decisions, not fixes: whether the machine always asks, "his year in the city," how the Ranger gets to the cannery, the last line, why the video spreads, and what is left open at the end. Not touched.'),
+    ('Audit B4 and B6', 'The last line, "You\'re holding it," and what is left open at the end (the route money, the welder for the gap, his pay, the letter he signed half read). Yours.'),
     ('The top of the Doc', 'Your TO DO, Story plan and Character pages still describe the earlier version. Not touched.'),
+]
+
+# Chapter 11 reuses her line from chapter 31, so chapter 31 has to be changed first.
+OPS.sort(key=lambda op: op[2].startswith("He went into his old bedroom"))
+
+# The story decisions, for the top of the report. (what, where, why)
+DECIDED = [
+    ('The three weeks after he arrives', 'Chapter 17',
+     'You ruled the farm people nurse him back. The book jumped from "Eat. Then I\'ll show you where you sleep" to three weeks later. Now there is half a page: a cot, a plate twice a day, a pump to fix, gloves on the step, and nobody asks him anything.'),
+    ('How he and Grace become a couple', 'Chapter 25',
+     'It was a chair moved one foot, and then a year later she is wearing his shirt. Now, on the same day she tells him "You knock, Elijah," she knocks on his door once and does not wait. He still never reaches for her. Chapter 36 depends on that.'),
+    ('"You\'re the lamp" comes back', 'Chapter 36',
+     'He says it to her in chapter 31 and "would never remember it. She would." Then nothing. It now fires inside the fight, as the first thing he ever struck her with without knowing. That is your ruling B twice over.'),
+    ('The midpoint turns', 'Chapter 24',
+     'At the first fire he catches himself listing what he would change if the place were his to run. From chapter 27 he fails five times running (paid plans, node 7, the slides, the one-page plan, the arms). With this line those read as one want, to steer, and not five relapses.'),
+    ('Grace\'s speech gets a root', 'Chapter 27',
+     '"Millions of people die every single day" came from nowhere. Now, when she loses the vote: "Every winter there\'s somebody on that route we don\'t get to in time. I can tell you their names."'),
+    ('Her lines survive the stroke', 'Chapters 11, 24 and 31',
+     '"Then you\'re somewhere" and "Go be useful, baby. You\'re underfoot" move to the spring before the stroke, where the second one now sends him to Stockton. After the stroke he says her lines for her: "It looks like somewhere, Ma." "So I\'m somewhere, Ma."'),
+    ('Where he lives at the end', 'Chapters 37 and 39',
+     'The house is sold. He sleeps in Manny\'s back room, beside the one fence on that road without a light on it. He digs Priya\'s pit there. At thirty centimeters it is dust.'),
+    ('The lamp calls him Barry', 'Chapter 37',
+     'She cannot tell it about anyone. It has listened to her for months and it has one name. He does not correct it, and he has just stopped correcting her.'),
+    ('The visitors\' book', 'Chapters 22, 37 and 39',
+     'Ray sat with her, then David. If David is there every Sunday, Elijah would meet him in her room before the bar. So he reads it in the sign-in book the day he comes home, and walks into the Bear Flag already knowing. In chapter 22 the aide says "Her Sunday company didn\'t come," and he takes it to mean the church.'),
+    ('The machine\'s letter asks', 'Chapter 32',
+     'The letter to the new widow was perfect and did not ask, in the same month the machine tells Bidwell it would rather ask. Now its last line asks, and Reuben has never seen a buyer put that in writing.'),
+    ('Lou at Irene\'s table', 'Chapter 23',
+     'He lost his pears to one buyer and was absent from the one chapter where one buyer loses. He stands by the door with his hat, says nothing, and puts it back on when she takes the folders.'),
+    ('Causes for three things that just happened', 'Chapters 6, 7 and 11',
+     'The layoff: the pipeline he built runs without him. The video: the Hollis girl reposts it. The truck: he leaves it at the cannery the night before.'),
+    ('Your two lines, in Lou\'s mouth', 'Chapter 35',
+     '"You don\'t control when you get hungry. You don\'t control when you have to pee."'),
+]
+
+# What I considered and turned down, and why.
+REJECTED = [
+    ('Grace asks him out loud to bring the arms.',
+     'My earlier notes proposed it. I now think it is wrong. She wants the truck to just arrive, the way she wants the machine to "just do it." Her not asking is the character.'),
+    ('Grace makes the call herself and the truck comes.',
+     'A new plot event, and it would change the scene you dictated.'),
+    ('A clock on her room: the money from the farm runs out at Thanksgiving 2027.',
+     'It would give the ending a second question, and it would make every plan he brings to the table look like it is about his own bills. I added one line in chapter 15 so the reader knows why he will not touch that account. The clock is still there for you if you want it.'),
+    ('A second Meanwhile for Ruby, or David explaining what happened to the band.',
+     'Chapter 39 already settles David, his mother, the three, Wes and Gus. One more and it is a checklist.'),
+    ('"They ate," texted to Marta from the bar.',
+     'Two texts in one chapter. It is a thought now: "He would have to tell Marta."'),
+    ('Giving her last three lost lines to somebody else.',
+     '"It reads better than it sounded," "She married? I\'m asking," and "Where\'s the Fisher?" are gone. They only work in her mouth.'),
 ]

@@ -3,6 +3,29 @@
 Read this at the start of a fresh session. It says where the novel work stands, where every
 piece is, what CT has decided, what is still his to decide, and how he wants to be worked with.
 
+## Update, 19 November, later the same day
+
+Read this before the rest. It is newer.
+
+- CT asked for one thing, in his words: "create a structure and a scaffolding onto which I can
+  paint." Find and fix the inconsistencies, improve the story structure, test the characters
+  against their motivations, argue with the result, and present the best version. He then edits
+  for style. He does not want to be asked what he wants at each step, and he does not want
+  guesses presented as questions.
+- That pass exists. `tools/consistency-pass/` holds it: `ops.py` (105 single-spot changes, the
+  story decisions and what was turned down) and `apply.py` (rebuilds chapters 13 to 15 and
+  applies everything to a copy of the Doc's text).
+- The reading page has two new tabs. **Book** is the whole manuscript after the pass, with a
+  bar in the margin beside anything that is not his. **Changes** is the decisions and every
+  change. The Later tab is gone, its content is in the pass.
+- **Nothing is in the Google Doc.** A write was tried once and blocked, because his first
+  message said not to write there unless he says so. He has to say it in so many words.
+- To rebuild: read the Doc with the Docs connector, turn it into one paragraph per line with
+  italics marked `[[i]]...[[/i]]`, run `apply.py`, then build the page. The working copies go in
+  `drafts/_private/`, which git ignores.
+- `drafts/draft-later-chapters-36-37-39.md` is superseded by the pass in three places: the lamp
+  line is now inside the fire, David says seven months, and Elijah sleeps at Manny's.
+
 ## The job
 
 CT is finishing his novel, "Surviving the Singularity." The protagonist is Elijah Madrone. The

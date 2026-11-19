@@ -174,6 +174,42 @@ drive_html = md(strip_h1(DRIVE), 'drive')
 scene_html = md(strip_h1(SCENE), 'scene')
 later_html = md(strip_h1(LATER), 'later')
 changes_html = md(strip_h1(CHANGES), 'changes')
+
+# The Book tab: the whole manuscript after the pass, with what is not CT's marked in the margin.
+_book = REPO + 'drafts/_private/book.json'
+book_html, book_toc = '<p>Not built in this copy. Run tools/consistency-pass/apply.py first.</p>', ''
+if os.path.exists(_book):
+    import json
+    paras = json.load(open(_book))
+    a = next(i for i, p in enumerate(paras) if p[0] == "Author's Note")
+    b = next(i for i, p in enumerate(paras) if p[0].startswith('Next book:'))
+    head = re.compile(r"^(Author's Note|Act \w+: .*|Chapter \d+: .*|Meanwhile|Afterword: .*)$")
+    rows, toc, n = [], [], 0
+    counts = {'new': 0, 'changed': 0, 'moved': 0}
+
+    def inline(t):
+        t = html.escape(t, quote=False)
+        return t.replace('[[i]]', '<em>').replace('[[/i]]', '</em>')
+
+    for text, mark in paras[a:b]:
+        cls = (' class="mk mk-%s"' % mark) if mark else ''
+        if mark:
+            counts[mark] += 1
+        bare = text.replace('[[i]]', '').replace('[[/i]]', '')
+        if head.match(bare):
+            n += 1
+            tag = 'h2' if bare.startswith(('Act ', "Author's", 'Afterword')) else 'h3'
+            rows.append('<%s id="bk-%d"%s>%s</%s>' % (tag, n, cls, html.escape(bare), tag))
+            toc.append('<option value="bk-%d">%s</option>' % (n, html.escape(bare)))
+        elif bare == '\u00a0' or not bare.strip():
+            rows.append('<p class="brk" aria-hidden="true">&middot;</p>')
+        elif bare.startswith('[Figure:'):
+            rows.append('<p class="fig">%s</p>' % html.escape(bare))
+        else:
+            rows.append('<p%s>%s</p>' % (cls, inline(text)))
+    book_html = '\n'.join(rows)
+    book_toc = ''.join(toc)
+    book_counts = counts
 beats_html = md(strip_h1(BEATS), 'beats')
 shape_html = md(strip_h1(STRUCT), 'shape')
 map_fig = ('<figure class="mapfig">' + map_svg.draw(MAPE, 'Elijah', 'map-elijah')
@@ -250,12 +286,12 @@ page = f'''<title>Singularity Cast Bible</title>
 <header class="bar">
   <div class="barin">
     <nav class="tabs" aria-label="Sections">
+      <a id="tab-book" href="#book">Book</a>
       <a id="tab-changes" href="#changes">Changes</a>
       <a id="tab-people" href="#people">People</a>
       <a id="tab-map" href="#map">Map</a>
       <a id="tab-drive" href="#drive">Drive</a>
       <a id="tab-scene" href="#scene">Scene</a>
-      <a id="tab-later" href="#later">Later</a>
       <a id="tab-beats" href="#beats">Beats</a>
       <a id="tab-shape" href="#shape">Shape</a>
       <a id="tab-rhymes" href="#rhymes">Rhymes</a>
@@ -306,16 +342,25 @@ page = f'''<title>Singularity Cast Bible</title>
   {scene_html}
 </section>
 
-<section id="view-changes" class="view prose">
-  <p class="eyebrow">Consistency pass, 19 November 2026. Not in your Doc yet.</p>
-  <h1>What the consistency pass changes</h1>
-  {changes_html}
+<section id="view-book" class="view book">
+  <p class="eyebrow">My best version, 19 November 2026. Not in your Doc.</p>
+  <h1>Surviving the Singularity</h1>
+  <p class="lede">The whole book, start to finish, after my pass. Plain text is yours, untouched. A bar in the margin means it is not.</p>
+  <ul class="bookkey">
+    <li><span class="sw sw-new"></span>New. I wrote it.</li>
+    <li><span class="sw sw-changed"></span>Yours, with words changed.</li>
+    <li><span class="sw sw-moved"></span>Yours, moved from another chapter.</li>
+  </ul>
+  <select id="bookjump" aria-label="Jump to a chapter"><option value="">Jump to a chapter…</option>{book_toc}</select>
+  <div class="booktext">
+{book_html}
+  </div>
 </section>
 
-<section id="view-later" class="view prose">
-  <p class="eyebrow">Draft, first version, 19 November 2026</p>
-  <h1>Chapters 36, 37 and 39 after the stroke</h1>
-  {later_html}
+<section id="view-changes" class="view prose">
+  <p class="eyebrow">Story and consistency pass, 19 November 2026. Not in your Doc.</p>
+  <h1>The best version I can give you</h1>
+  {changes_html}
 </section>
 
 <section id="view-beats" class="view prose">

@@ -75,7 +75,7 @@ p.fig { text-indent: 0; font-size: 9pt; color: #555; text-align: center; margin:
 p.cap { text-indent: 0; font-size: 9.5pt; font-style: italic; text-align: center; margin: 0 0 12pt; }
 em { font-style: italic; }
 </style></head><body>
-<section class="title"><h1>SURVIVING THE SINGULARITY</h1><p class="sub">What If We Didn't Have to Live Like This?</p><p class="genre">A Solarpunk Novel</p><p class="by">Christopher Tavolazzi</p><p class="ver">Revised manuscript, 19 November 2026</p></section>
+<section class="title"><h1>SURVIVING THE SINGULARITY</h1><p class="genre">A Solarpunk Novel</p><p class="by">Christopher Tavolazzi</p><p class="ver">Revised manuscript, 19 November 2026</p></section>
 ''' + '\n'.join(rows) + '\n</body></html>\n'
 open(out, 'w').write(doc)
 print('paragraphs', len(rows))

@@ -484,8 +484,8 @@ OPS3 = [
 # Stage 4. Kind "P": find is one whole paragraph, matched exactly.
 OPS4 = [
     (0, 'P', "We Don't Have to Live Like This",
-     I + "What If We Didn't Have to Live Like This?" + E + '\n' + I + 'A Solarpunk Novel' + E,
-     'The subtitle, yours, 19 November. The cover asks the question. The Afterword keeps its title, "We Don\'t Have to Live Like This," as the answer.'),
+     I + 'A Solarpunk Novel' + E,
+     'The subtitle, yours, 19 November. The old line stays as the title of the Afterword.'),
 ]
 
 # Audit items left alone on purpose, with the reason.

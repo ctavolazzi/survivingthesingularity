@@ -16,6 +16,7 @@ ARCS = open(REPO + 'NOVEL-CHARACTER-ARCS-2026-11-18.md').read()
 AUDIT = open(REPO + 'NOVEL-CONSISTENCY-AUDIT-2026-11-18.md').read()
 DRIVE = open(REPO + 'NOVEL-DRIVE-FINDINGS-2026-11-19.md').read()
 SCENE = open(REPO + 'drafts/draft-elijah-crash-out-arc.md').read()
+LATER = open(REPO + 'drafts/draft-later-chapters-36-37-39.md').read()
 BEATS = open(REPO + 'NOVEL-BEATS-2026-11-19.md').read()
 STRUCT = open(REPO + 'NOVEL-STRUCTURE-2026-11-19.md').read()
 MAPE = open(REPO + 'NOVEL-MAP-ELIJAH-2026-11-19.md').read()
@@ -168,6 +169,7 @@ arcs_html = md(strip_h1(ARCS), 'arcs')
 audit_html = md(strip_h1(AUDIT), 'fixes')
 drive_html = md(strip_h1(DRIVE), 'drive')
 scene_html = md(strip_h1(SCENE), 'scene')
+later_html = md(strip_h1(LATER), 'later')
 beats_html = md(strip_h1(BEATS), 'beats')
 shape_html = md(strip_h1(STRUCT), 'shape')
 map_fig = ('<figure class="mapfig">' + map_svg.draw(MAPE, 'Elijah', 'map-elijah')
@@ -248,6 +250,7 @@ page = f'''<title>Singularity Cast Bible</title>
       <a id="tab-map" href="#map">Map</a>
       <a id="tab-drive" href="#drive">Drive</a>
       <a id="tab-scene" href="#scene">Scene</a>
+      <a id="tab-later" href="#later">Later</a>
       <a id="tab-beats" href="#beats">Beats</a>
       <a id="tab-shape" href="#shape">Shape</a>
       <a id="tab-rhymes" href="#rhymes">Rhymes</a>
@@ -298,6 +301,12 @@ page = f'''<title>Singularity Cast Bible</title>
   {scene_html}
 </section>
 
+<section id="view-later" class="view prose">
+  <p class="eyebrow">Draft, first version, 19 November 2026</p>
+  <h1>Chapters 36, 37 and 39 after the stroke</h1>
+  {later_html}
+</section>
+
 <section id="view-beats" class="view prose">
   <p class="eyebrow">19 November 2026</p>
   <h1>Beats like the choice</h1>
@@ -336,7 +345,7 @@ page = f'''<title>Singularity Cast Bible</title>
 </section>
 
 <footer class="foot">
-  <p>The same text lives in the book repo, in <code>manuscript/</code>: <code>NOVEL-CHARACTER-PROFILES</code>, <code>NOVEL-CHARACTER-ARCS</code>, <code>NOVEL-CONSISTENCY-AUDIT</code>, <code>NOVEL-DRIVE-FINDINGS</code>, <code>NOVEL-BEATS</code>, <code>NOVEL-STRUCTURE</code>, <code>NOVEL-MAP-ELIJAH</code> and <code>drafts/draft-elijah-crash-out-arc.md</code>. Nothing here has gone into the manuscript.</p>
+  <p>The same text lives in the book repo, in <code>manuscript/</code>: <code>NOVEL-CHARACTER-PROFILES</code>, <code>NOVEL-CHARACTER-ARCS</code>, <code>NOVEL-CONSISTENCY-AUDIT</code>, <code>NOVEL-DRIVE-FINDINGS</code>, <code>NOVEL-BEATS</code>, <code>NOVEL-STRUCTURE</code>, <code>NOVEL-MAP-ELIJAH</code>, <code>drafts/draft-elijah-crash-out-arc.md</code> and <code>drafts/draft-later-chapters-36-37-39.md</code>. Nothing here has gone into the manuscript.</p>
 </footer>
 
 </main>

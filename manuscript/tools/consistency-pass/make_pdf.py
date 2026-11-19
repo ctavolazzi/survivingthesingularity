@@ -58,7 +58,8 @@ body { margin: 0; }
 .title { height: 7.2in; display: flex; flex-direction: column; justify-content: center; text-align: center; page-break-after: always; }
 .title h1 { font-size: 26pt; line-height: 1.15; margin: 0 0 14pt; letter-spacing: .02em; }
 .title p { text-indent: 0; text-align: center; }
-.title .sub { font-style: italic; font-size: 13pt; margin: 0 0 40pt; }
+.title .sub { font-style: italic; font-size: 13pt; margin: 0 0 10pt; }
+.title .genre { font-size: 10pt; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 40pt; }
 .title .by { font-size: 12pt; margin: 0 0 6pt; }
 .title .ver { font-size: 9pt; color: #555; margin: 30pt 0 0; }
 .act { page-break-before: always; page-break-after: always; height: 7in; display: flex; align-items: center; justify-content: center; }
@@ -74,7 +75,7 @@ p.fig { text-indent: 0; font-size: 9pt; color: #555; text-align: center; margin:
 p.cap { text-indent: 0; font-size: 9.5pt; font-style: italic; text-align: center; margin: 0 0 12pt; }
 em { font-style: italic; }
 </style></head><body>
-<section class="title"><h1>SURVIVING THE SINGULARITY</h1><p class="sub">We Don't Have to Live Like This</p><p class="by">Christopher Tavolazzi</p><p class="ver">Revised manuscript, 19 November 2026</p></section>
+<section class="title"><h1>SURVIVING THE SINGULARITY</h1><p class="sub">What If We Didn't Have to Live Like This?</p><p class="genre">A Solarpunk Novel</p><p class="by">Christopher Tavolazzi</p><p class="ver">Revised manuscript, 19 November 2026</p></section>
 ''' + '\n'.join(rows) + '\n</body></html>\n'
 open(out, 'w').write(doc)
 print('paragraphs', len(rows))

@@ -21,7 +21,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__)) + '/'
 REPO = os.path.normpath(HERE + '../..') + '/'
 sys.path.insert(0, HERE)
-from ops import OPS, OPS2, OPS3, LEFT, DECIDED, REJECTED, I, E, DEL, NB  # noqa: E402
+from ops import OPS, OPS2, OPS3, OPS4, LEFT, DECIDED, REJECTED, I, E, DEL, NB  # noqa: E402
 
 src, out = sys.argv[1], sys.argv[2].rstrip('/') + '/'
 P = open(src).read().split('\n')
@@ -160,8 +160,10 @@ P = P[:h13] + new_13_15 + P[act3:]
 
 # ---------- the single-spot changes ----------
 report = {}
-for ch, kind, find, repl, why in OPS + OPS2 + OPS3:
-    if kind == 'R':
+for ch, kind, find, repl, why in OPS + OPS2 + OPS3 + OPS4:
+    if kind == 'P':
+        hits = [(i, re.search(re.escape(p[0]), p[0])) for i, p in enumerate(P) if bare(p[0]) == find]
+    elif kind == 'R':
         hits = [(i, m) for i, p in enumerate(P) for m in [re.search(find, p[0])] if m]
     else:
         hits = [(i, None) for i, p in enumerate(P) if find in p[0]]
@@ -225,7 +227,7 @@ md += ['', '## What the stroke costs', '',
        '', '## Every other change, by chapter', '',
        '%d changes in %d chapters. Each one was run against a copy of your text and lands in exactly one place.' % (n_ops, len(report)), '']
 for ch in sorted(report):
-    md += ['### Chapter %d' % ch, '']
+    md += ['### ' + ('Chapter %d' % ch if ch else 'Title page'), '']
     for was, repl, why in report[ch]:
         if repl.endswith('\x00'):
             continue

@@ -1,0 +1,384 @@
+{
+  "title": "Surviving the Singularity",
+  "subtitle": "A Solarpunk Novel",
+  "author": "Christopher Tavolazzi",
+  "source": "Google Doc \"Surviving the Singularity, Revised Manuscript v2\", revision AHj4eMSV3xQb",
+  "sections": [
+    {
+      "id": "authors-note",
+      "title": "Author's Note",
+      "group": "Front matter",
+      "file": "authors-note.md",
+      "words": 336,
+      "figures": 0
+    },
+    {
+      "id": "chapter-0",
+      "title": "Chapter 0: The Demonstration",
+      "group": "Act One: The Bar",
+      "file": "chapter-0.md",
+      "words": 3378,
+      "figures": 1
+    },
+    {
+      "id": "chapter-1",
+      "title": "Chapter 1: You'll Calibrate",
+      "group": "Act One: The Bar",
+      "file": "chapter-1.md",
+      "words": 968,
+      "figures": 2
+    },
+    {
+      "id": "chapter-2",
+      "title": "Chapter 2: Terms of Service",
+      "group": "Act One: The Bar",
+      "file": "chapter-2.md",
+      "words": 1160,
+      "figures": 0
+    },
+    {
+      "id": "meanwhile-1",
+      "title": "Meanwhile",
+      "group": "Act One: The Bar",
+      "file": "meanwhile-1.md",
+      "words": 276,
+      "figures": 0
+    },
+    {
+      "id": "chapter-3",
+      "title": "Chapter 3: 9:40 on Sunday",
+      "group": "Act One: The Bar",
+      "file": "chapter-3.md",
+      "words": 1118,
+      "figures": 0
+    },
+    {
+      "id": "chapter-4",
+      "title": "Chapter 4: The Ladder",
+      "group": "Act One: The Bar",
+      "file": "chapter-4.md",
+      "words": 767,
+      "figures": 1
+    },
+    {
+      "id": "chapter-5",
+      "title": "Chapter 5: The First Watt",
+      "group": "Act One: The Bar",
+      "file": "chapter-5.md",
+      "words": 957,
+      "figures": 1
+    },
+    {
+      "id": "chapter-6",
+      "title": "Chapter 6: For Friends and Family",
+      "group": "Act Two: The City",
+      "file": "chapter-6.md",
+      "words": 1026,
+      "figures": 0
+    },
+    {
+      "id": "chapter-7",
+      "title": "Chapter 7: Out of Hand",
+      "group": "Act Two: The City",
+      "file": "chapter-7.md",
+      "words": 2111,
+      "figures": 0
+    },
+    {
+      "id": "chapter-8",
+      "title": "Chapter 8: Out of His League",
+      "group": "Act Two: The City",
+      "file": "chapter-8.md",
+      "words": 1549,
+      "figures": 0
+    },
+    {
+      "id": "chapter-9",
+      "title": "Chapter 9: The Architect",
+      "group": "Act Two: The City",
+      "file": "chapter-9.md",
+      "words": 1675,
+      "figures": 0
+    },
+    {
+      "id": "chapter-10",
+      "title": "Chapter 10: Cigarettes",
+      "group": "Act Two: The City",
+      "file": "chapter-10.md",
+      "words": 1318,
+      "figures": 0
+    },
+    {
+      "id": "meanwhile-2",
+      "title": "Meanwhile",
+      "group": "Act Two: The City",
+      "file": "meanwhile-2.md",
+      "words": 347,
+      "figures": 0
+    },
+    {
+      "id": "chapter-11",
+      "title": "Chapter 11: Two Million Dollars of Robot Arms",
+      "group": "Act Two: The City",
+      "file": "chapter-11.md",
+      "words": 2060,
+      "figures": 0
+    },
+    {
+      "id": "chapter-12",
+      "title": "Chapter 12: Not on the List",
+      "group": "Act Two: The City",
+      "file": "chapter-12.md",
+      "words": 639,
+      "figures": 0
+    },
+    {
+      "id": "chapter-13",
+      "title": "Chapter 13: Two in the Afternoon",
+      "group": "Act Two: The City",
+      "file": "chapter-13.md",
+      "words": 3262,
+      "figures": 0
+    },
+    {
+      "id": "chapter-14",
+      "title": "Chapter 14: Rain",
+      "group": "Act Two: The City",
+      "file": "chapter-14.md",
+      "words": 1464,
+      "figures": 0
+    },
+    {
+      "id": "chapter-15",
+      "title": "Chapter 15: One O'Clock on Saturday",
+      "group": "Act Two: The City",
+      "file": "chapter-15.md",
+      "words": 3728,
+      "figures": 0
+    },
+    {
+      "id": "chapter-16",
+      "title": "Chapter 16: Swarf",
+      "group": "Act Three: The Farm",
+      "file": "chapter-16.md",
+      "words": 1255,
+      "figures": 1
+    },
+    {
+      "id": "chapter-17",
+      "title": "Chapter 17: Pass the Beans",
+      "group": "Act Three: The Farm",
+      "file": "chapter-17.md",
+      "words": 2397,
+      "figures": 1
+    },
+    {
+      "id": "chapter-18",
+      "title": "Chapter 18: Somebody Came By at Eight",
+      "group": "Act Three: The Farm",
+      "file": "chapter-18.md",
+      "words": 1240,
+      "figures": 1
+    },
+    {
+      "id": "chapter-19",
+      "title": "Chapter 19: Ugly Is a Maintenance Feature",
+      "group": "Act Three: The Farm",
+      "file": "chapter-19.md",
+      "words": 1636,
+      "figures": 2
+    },
+    {
+      "id": "chapter-20",
+      "title": "Chapter 20: What a Tomato Costs",
+      "group": "Act Three: The Farm",
+      "file": "chapter-20.md",
+      "words": 1126,
+      "figures": 0
+    },
+    {
+      "id": "chapter-21",
+      "title": "Chapter 21: Bait",
+      "group": "Act Three: The Farm",
+      "file": "chapter-21.md",
+      "words": 805,
+      "figures": 0
+    },
+    {
+      "id": "chapter-22",
+      "title": "Chapter 22: The Crucible",
+      "group": "Act Three: The Farm",
+      "file": "chapter-22.md",
+      "words": 1719,
+      "figures": 1
+    },
+    {
+      "id": "chapter-23",
+      "title": "Chapter 23: Forty Acres",
+      "group": "Act Three: The Farm",
+      "file": "chapter-23.md",
+      "words": 1143,
+      "figures": 0
+    },
+    {
+      "id": "meanwhile-3",
+      "title": "Meanwhile",
+      "group": "Act Three: The Farm",
+      "file": "meanwhile-3.md",
+      "words": 354,
+      "figures": 0
+    },
+    {
+      "id": "chapter-24",
+      "title": "Chapter 24: First Fire",
+      "group": "Act Three: The Farm",
+      "file": "chapter-24.md",
+      "words": 1749,
+      "figures": 1
+    },
+    {
+      "id": "chapter-25",
+      "title": "Chapter 25: Gradually",
+      "group": "Act Three: The Farm",
+      "file": "chapter-25.md",
+      "words": 1638,
+      "figures": 2
+    },
+    {
+      "id": "chapter-26",
+      "title": "Chapter 26: Thirty Centimeters",
+      "group": "Act Three: The Farm",
+      "file": "chapter-26.md",
+      "words": 2100,
+      "figures": 1
+    },
+    {
+      "id": "chapter-27",
+      "title": "Chapter 27: Ship Them",
+      "group": "Act Three: The Farm",
+      "file": "chapter-27.md",
+      "words": 1231,
+      "figures": 0
+    },
+    {
+      "id": "chapter-28",
+      "title": "Chapter 28: Node 7",
+      "group": "Act Three: The Farm",
+      "file": "chapter-28.md",
+      "words": 1084,
+      "figures": 0
+    },
+    {
+      "id": "chapter-29",
+      "title": "Chapter 29: People in It",
+      "group": "Act Three: The Farm",
+      "file": "chapter-29.md",
+      "words": 1586,
+      "figures": 1
+    },
+    {
+      "id": "chapter-30",
+      "title": "Chapter 30: Three Minutes",
+      "group": "Act Three: The Farm",
+      "file": "chapter-30.md",
+      "words": 1135,
+      "figures": 1
+    },
+    {
+      "id": "chapter-31",
+      "title": "Chapter 31: The Dark Night",
+      "group": "Act Three: The Farm",
+      "file": "chapter-31.md",
+      "words": 2189,
+      "figures": 0
+    },
+    {
+      "id": "meanwhile-4",
+      "title": "Meanwhile",
+      "group": "Act Four: Home",
+      "file": "meanwhile-4.md",
+      "words": 437,
+      "figures": 0
+    },
+    {
+      "id": "chapter-32",
+      "title": "Chapter 32: Hush",
+      "group": "Act Four: Home",
+      "file": "chapter-32.md",
+      "words": 1244,
+      "figures": 0
+    },
+    {
+      "id": "chapter-33",
+      "title": "Chapter 33: Normal",
+      "group": "Act Four: Home",
+      "file": "chapter-33.md",
+      "words": 1351,
+      "figures": 0
+    },
+    {
+      "id": "chapter-34",
+      "title": "Chapter 34: A Few Thousand Dollars of Robot Arms",
+      "group": "Act Four: Home",
+      "file": "chapter-34.md",
+      "words": 1300,
+      "figures": 0
+    },
+    {
+      "id": "chapter-35",
+      "title": "Chapter 35: The Plants Look Thirsty",
+      "group": "Act Four: Home",
+      "file": "chapter-35.md",
+      "words": 1698,
+      "figures": 0
+    },
+    {
+      "id": "chapter-36",
+      "title": "Chapter 36: The Fire",
+      "group": "Act Four: Home",
+      "file": "chapter-36.md",
+      "words": 1871,
+      "figures": 0
+    },
+    {
+      "id": "chapter-37",
+      "title": "Chapter 37: Go Home",
+      "group": "Act Four: Home",
+      "file": "chapter-37.md",
+      "words": 1522,
+      "figures": 0
+    },
+    {
+      "id": "chapter-38",
+      "title": "Chapter 38: Thanksgiving",
+      "group": "Act Four: Home",
+      "file": "chapter-38.md",
+      "words": 1768,
+      "figures": 0
+    },
+    {
+      "id": "chapter-39",
+      "title": "Chapter 39: Back to Bear Flag",
+      "group": "Act Four: Home",
+      "file": "chapter-39.md",
+      "words": 2338,
+      "figures": 1
+    },
+    {
+      "id": "afterword",
+      "title": "Afterword: We Don't Have to Live Like This",
+      "group": "Back matter",
+      "file": "afterword.md",
+      "words": 1120,
+      "figures": 1
+    },
+    {
+      "id": "appendix",
+      "title": "Appendix: The People, the Places and the Sides",
+      "group": "Back matter",
+      "file": "appendix.md",
+      "words": 771,
+      "figures": 0
+    }
+  ]
+}

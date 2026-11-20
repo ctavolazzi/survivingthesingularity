@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T21:17:02Z",
+  "generated_at": "2026-11-20T20:59:10Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -172,30 +172,29 @@
       ]
     },
     {
-      "id": "2610.28397",
+      "id": "2611.25898",
       "source": "arxiv",
-      "title": "MAS-Guard: Unified Guardrails from Individual Agents to Multi-Agent LLM Systems",
-      "url": "https://arxiv.org/abs/2610.28397",
+      "title": "Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding",
+      "url": "https://arxiv.org/abs/2611.25898",
       "authors": [
-        "Mohammad Kachuee",
-        "Phu Mon Htut",
-        "Sheng Li",
-        "Nikolaos Pappas"
+        "Youssef ElNahas",
+        "Adel Ammar",
+        "Soumaya Chaffar",
+        "Wadii Boulila"
       ],
-      "summary": "Agentic AI extends large language models (LLMs) from generating responses to planning and executing complex workflows, substantially expanding their utility while exposing applications to unsafe actions, information leakage, and adversarial manipulation. Multi-agent systems further expand these capabilities through specialization and collaboration, but distributed authority, heterogeneous roles, and opaque or potentially compromised participants make safeguarding even more challenging. Existing defenses address important individual threats but provide fragmented coverage across local execution",
-      "category": "cs.AI",
+      "summary": "Clinical large language models are usually judged by whether the final answer is right. Yet a model can reach a fluent, plausible output through invalid reasoning that static benchmarks do not detect, and confident hallucination, causally invalid inference, and spurious demographic shortcuts can pass conventional evaluation. This critical review covers four paradigms in turn: how clinical hallucination arises and why static metrics miss it; the agentic hallucination cascade, in which multi-agent and tool-augmented systems propagate and amplify early reasoning errors; process reward modeling as",
+      "category": "cs.CL",
       "tag": "Research",
-      "published_at": "2026-10-20",
-      "score": 10.5,
-      "raw_score": 21,
+      "published_at": "2026-11-19",
+      "score": 10.0,
+      "raw_score": 20,
       "matched_keywords": [
         "agent",
         "multi-agent",
         "agentic",
-        "planning",
+        "reasoning",
         "llm",
-        "language model",
-        "rag"
+        "language model"
       ]
     },
     {
@@ -222,6 +221,33 @@
         "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2611.25071",
+      "source": "arxiv",
+      "title": "FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval, MCP Tool Use, and Provenance-Aware Evidence Verification",
+      "url": "https://arxiv.org/abs/2611.25071",
+      "authors": [
+        "Meenakshi Rajpurohit",
+        "Anna Phan",
+        "Ravikumar Komandur Narayanan",
+        "Gunanidhi Ramakrishnan"
+      ],
+      "summary": "Large language models (LLMs) write fluent financial analyses but miscompute ratios, recall stale prices, and route questions to the wrong tool with high confidence. We ask which component should do each job in a financial question-answering assistant, and study it with FinVeriQA, an open-source multi-agent research prototype over SEC filings and live market data: a compact typed-decision model (Laya) routes each question and screens out advice requests, Python computes every number, retrieval and tools fetch evidence, Mistral-7B writes a cited answer, a code validator checks that cited IDs exi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-18",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "tool use",
+        "llm",
+        "language model",
+        "retrieval",
+        "job"
       ]
     },
     {
@@ -323,33 +349,6 @@
         "multi-agent",
         "autonomous",
         "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.27865",
-      "source": "arxiv",
-      "title": "Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum",
-      "url": "https://arxiv.org/abs/2610.27865",
-      "authors": [
-        "Da Huang",
-        "Jichao Wang",
-        "Junhui Wu",
-        "Tong Ran"
-      ],
-      "summary": "Recent studies have explored the potential of multimodal large language models for robot control, yet the models' embodied capabilities remain insufficiently characterized across models, tasks, and execution settings. We conduct a multidimensional comparative evaluation on RoboColiseum across four tracks: Instruction Following, Spatial Reasoning, General Manipulation, and Robustness. We implement Agent2Act, a control harness that integrates GPT-6 Astra, GPT-6.1 Sol, Claude Opus 5.5, and Gemini 4 Argon into the evaluation environment through shared observation, action execution, and feedback in",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-20",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "embodied",
-        "robot",
-        "robotics",
         "llm",
         "language model"
       ]
@@ -1060,105 +1059,6 @@
       ]
     },
     {
-      "id": "2610.28560",
-      "source": "arxiv",
-      "title": "Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection",
-      "url": "https://arxiv.org/abs/2610.28560",
-      "authors": [
-        "Shangquan Sun",
-        "Wenjun Luo",
-        "Xu He",
-        "Yoonsoo Lee"
-      ],
-      "summary": "Visual anomaly detection aims to detect abnormal objects, while anomaly samples are often scarce during model training. Assembling multiple pretrained detectors can help by leveraging their transferable image scores and anomaly maps. However, most existing ensemble methods apply fixed fusion rules over saved predictions which struggle when pretrained detectors clearly disagree due to different training objectives, priors, and visual representations. To this end, we design AnomalyAgent, a post-training fusion framework for accurate visual anomaly detection. AnomalyAgent aligns heterogeneous sco",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-20",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "agentic",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.28176",
-      "source": "arxiv",
-      "title": "Temporal Evidence-Parameter Co-Alignment for LLM Reasoning over Temporal Knowledge Graphs",
-      "url": "https://arxiv.org/abs/2610.28176",
-      "authors": [
-        "Jiapu Wang"
-      ],
-      "summary": "Large Language Models (LLMs) often struggle with temporally grounded reasoning because their static parametric memory is misaligned with the dynamic evolution of real-world knowledge. Although RAG and Parameter-Efficient Fine-Tuning (PEFT) provide practical ways to enhance LLMs, they remain insufficient for temporal reasoning. Existing retrieval methods typically prioritize semantic relevance while overlooking temporal validity, event order, and evolutionary dependencies, resulting in evidence that is relevant in isolation but temporally fragmented. Meanwhile, conventional PEFT methods usually",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-20",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "reasoning",
-        "alignment",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.28259",
-      "source": "arxiv",
-      "title": "Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning",
-      "url": "https://arxiv.org/abs/2610.28259",
-      "authors": [
-        "Youwei Zhou",
-        "Bohan Hou",
-        "Yankai Fu",
-        "Yaoxu Lyu"
-      ],
-      "summary": "Recent advances in visuospatial understanding and agentic reasoning enable direct robotic manipulation with general-purpose multimodal models, but their embodied capabilities remain poorly understood. This paper systematically evaluate GPT-6 Astra for closed-loop robotic manipulation using a lightweight agent execution framework. We first probe three fundamental embodied capabilities-depth perception, embodied in-context learning, and tactile understanding-and demonstrate that the model can exploit depth information, acquire simple manipulation strategies from contextual demonstrations, and us",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-20",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "embodied",
-        "robot",
-        "in-context learning"
-      ]
-    },
-    {
-      "id": "2610.27782",
-      "source": "arxiv",
-      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
-      "url": "https://arxiv.org/abs/2610.27782",
-      "authors": [
-        "Siyuan Ma",
-        "Yu Qi",
-        "Cheng Ye",
-        "Ruotian Peng"
-      ],
-      "summary": "Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments on embodied videos has not been systematically evaluated. To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation. The benchmark measures two fundamental dimensions, Physical Adherence and Instruction Alignment, across 800 human-ann",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-20",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "world model",
-        "alignment",
-        "embodied",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2611.24049",
       "source": "arxiv",
       "title": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
@@ -1456,6 +1356,129 @@
       ]
     },
     {
+      "id": "2611.26335",
+      "source": "arxiv",
+      "title": "ClosureBench: A Benchmark for Reasoning under Closure Assumptions",
+      "url": "https://arxiv.org/abs/2611.26335",
+      "authors": [
+        "Francesco Belardinelli",
+        "Flavio Corradini",
+        "Matteo Leonesi"
+      ],
+      "summary": "AI agents built on large language models (LLMs) often answer questions from incomplete records. Missing information might be interpreted as unknown or false, depending on the completeness of the source. Current evaluations fail to distinguish these two aspects, as they are usually interwoven with other reasoning demands. We present ClosureBench, a benchmark that tests whether LLMs follow the stated rules for dealing with missing information. Every base scenario is tested under OWA, CWA, and LCWA, and only the treatment of missing information changes between variants. ClosureBench provides a ve",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-19",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.26519",
+      "source": "arxiv",
+      "title": "ACE-Brain-0.7: Learning Execution-Grounded Reasoning for Embodied Agents",
+      "url": "https://arxiv.org/abs/2611.26519",
+      "authors": [
+        "Yinhe Wang",
+        "Shijun Shi",
+        "Feng Pan",
+        "Tao Tao"
+      ],
+      "summary": "Reliable reasoning for long-horizon embodied tasks requires predictions grounded in the observed execution state. We present ACE-Brain-0.7, a 9B vision--language model that combines spatial grounding, task understanding, and progress estimation. To train the model, we curate 3.7 million question--answer pairs, drawing execution supervision from egocentric human videos, robot episodes, and simulation. These questions span different stages of an execution and connect task-level judgments with observed progress and outcomes. We then fine-tune Qwen3.5-9B on this collection together with additional",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-19",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "embodied",
+        "robot",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.26376",
+      "source": "arxiv",
+      "title": "Alignment Drives Reuse: Learning Generalizable Robot-Use Agents from Heterogeneous Experience",
+      "url": "https://arxiv.org/abs/2611.26376",
+      "authors": [
+        "Ziyue Wang",
+        "Yaopeng Yang",
+        "Liyi Zhou"
+      ],
+      "summary": "Vision-language models (VLMs) demonstrate broad generalization across tasks and domains. However, comparable generalization in robot manipulation remains challenging. Heterogeneity in robot embodiments, task formulations, geometric conventions, and action interfaces fragments interaction experience across benchmarks and hardware. We rethink robot skill learning through alignment: Can heterogeneous interactions across benchmarks and embodiments jointly improve one shared skillset for robot manipulation? We propose UniCraft, a framework for learning robot manipulation skills by aligning heteroge",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-19",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "alignment",
+        "robot",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.26341",
+      "source": "arxiv",
+      "title": "Reasoning on Call: Efficient Agentic Robot Control for Long-Horizon Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.26341",
+      "authors": [
+        "Zilang Cen",
+        "Chao Tang",
+        "Fangcheng Liu",
+        "Weishi Mi"
+      ],
+      "summary": "Large multimodal models can support long-horizon robot manipulation, but frequent model calls incur substantial latency and token costs. The central challenge is determining when agent assistance or intervention is needed and whether errors require correcting robot execution, subtask planning, or both. To address this problem, we propose RoC (Reasoning on Call), an efficient framework that coordinates a low-level policy and a high-level reasoning agent through an online task-state monitor. The monitor combines temporal visual observations with ordered interaction memory to jointly estimate pro",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-19",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "reasoning",
+        "robot"
+      ]
+    },
+    {
+      "id": "2611.26046",
+      "source": "arxiv",
+      "title": "Agentic Scaling of Embodied Tasks in Simulation for Synthetic Data Collection and Policy Evaluation",
+      "url": "https://arxiv.org/abs/2611.26046",
+      "authors": [
+        "Kang Wang",
+        "Xiaolei Zhou",
+        "Xiaoyu Wu",
+        "Zhendong Wang"
+      ],
+      "summary": "Scaling embodied interaction data requires a broad collection of usable tasks, yet specifying and validating each task instance remains costly. We present AgenticTask, an agent-based framework that expands existing task collections under human intent. Its central representation links interaction requirements to object and part bindings, scene and robot configurations, initial conditions, and completion criteria. A task-generation agent reuses interaction structure to construct supported variations and revises incompatible configurations using validation feedback. A task-execution agent uses th",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-19",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "embodied",
+        "robot",
+        "scaling"
+      ]
+    },
+    {
       "id": "2611.24619",
       "source": "arxiv",
       "title": "GateWatch: Low-Overhead LLM Monitoring with Boolean Circuits",
@@ -1498,29 +1521,6 @@
         "agent",
         "multi-agent",
         "planning"
-      ]
-    },
-    {
-      "id": "2611.22342",
-      "source": "arxiv",
-      "title": "Bad Apples in the Kitchen: How LLM Teams Detect, Correct, and Calibrate Against Their Misaligned Members",
-      "url": "https://arxiv.org/abs/2611.22342",
-      "authors": [
-        "Dongseok Heo",
-        "Junghwan Kim",
-        "Bongwon Suh"
-      ],
-      "summary": "What protects an LLM team when one teammate quietly goes wrong? Most multi-agent LLM work assumes cooperative partners and inspects chat between turns before acting. Real-time embodied cooperation does not allow this pause: chat runs alongside action, so a teammate whose words stay cooperative while behavior diverges can cause damage faster than the team can name what is happening. We study this case by injecting three theory-grounded misaligned agents into a custom four-player Overcooked environment, each stressing a different joint-action layer (speech-action mismatch, role invasion, and agg",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-17",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "embodied",
-        "llm"
       ]
     }
   ]

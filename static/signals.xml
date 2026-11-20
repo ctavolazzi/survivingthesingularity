@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 19 Nov 2026 21:17:02 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 20 Nov 2026 20:59:10 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -50,11 +50,11 @@
       <description>Large language model (LLM) agents can autonomously run neuroimaging analyses from research questions to reported findings. Existing agentic systems use tools to check that code runs and reported values match its output, but rely on LLM judgment to decide which results warrant scientific reporting. W... [Score: 10.5 | Flagged for: agi, agent, agentic, autonomous, llm] Authors: Yuxiang Wei, Lijing Zhu, et al.</description>
     </item>
     <item>
-      <title>MAS-Guard: Unified Guardrails from Individual Agents to Multi-Agent LLM Systems</title>
-      <link>https://arxiv.org/abs/2610.28397</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.28397</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Agentic AI extends large language models (LLMs) from generating responses to planning and executing complex workflows, substantially expanding their utility while exposing applications to unsafe actions, information leakage, and adversarial manipulation. Multi-agent systems further expand these capa... [Score: 10.5 | Flagged for: agent, multi-agent, agentic, planning, llm] Authors: Mohammad Kachuee, Phu Mon Htut, et al.</description>
+      <title>Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding</title>
+      <link>https://arxiv.org/abs/2611.25898</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.25898</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Clinical large language models are usually judged by whether the final answer is right. Yet a model can reach a fluent, plausible output through invalid reasoning that static benchmarks do not detect, and confident hallucination, causally invalid inference, and spurious demographic shortcuts can pas... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, reasoning, llm] Authors: Youssef ElNahas, Adel Ammar, et al.</description>
     </item>
     <item>
       <title>Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</title>
@@ -62,6 +62,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.16082</guid>
       <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
       <description>Turbulence modeling relies on human choices of closure form, physical inputs, and tunable parameters. Training closures a posteriori is efficient only with gradients through long chaotic rollouts, which few solvers provide. Most a posteriori approaches therefore resort to gradient-free optimization,... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, autonomous, llm] Authors: Yi Liu, Xiantao Fan, et al.</description>
+    </item>
+    <item>
+      <title>FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval, MCP Tool Use, and Provenance-Aware Evidence Verification</title>
+      <link>https://arxiv.org/abs/2611.25071</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.25071</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) write fluent financial analyses but miscompute ratios, recall stale prices, and route questions to the wrong tool with high confidence. We ask which component should do each job in a financial question-answering assistant, and study it with FinVeriQA, an open-source mult... [Score: 9.5 | Flagged for: agent, multi-agent, tool use, llm, language model] Authors: Meenakshi Rajpurohit, Anna Phan, et al.</description>
     </item>
     <item>
       <title>Macro Control and Capability Evaluation of Black-Box World Models: A Two-Regime Framework for LLM-Agent Markets</title>
@@ -90,13 +97,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.02909</guid>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
       <description>Autonomous reaction-mechanism exploration requires proposing reaction steps, preparing three-dimensional structures, and determining which reactant and product a computed saddle point connects. Large language model (LLM) agents can misjudge spatial relationships and confuse a computed structure with... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, reasoning, llm] Authors: Chengyi Yang, Qianxin Zhou, et al.</description>
-    </item>
-    <item>
-      <title>Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum</title>
-      <link>https://arxiv.org/abs/2610.27865</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.27865</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Recent studies have explored the potential of multimodal large language models for robot control, yet the models' embodied capabilities remain insufficiently characterized across models, tasks, and execution settings. We conduct a multidimensional comparative evaluation on RoboColiseum across four t... [Score: 9.5 | Flagged for: agent, reasoning, embodied, robot, robotics] Authors: Da Huang, Jichao Wang, et al.</description>
     </item>
     <item>
       <title>Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination</title>

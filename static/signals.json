@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T20:59:10Z",
+  "generated_at": "2026-11-21T19:59:58Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -1034,31 +1034,6 @@
       ]
     },
     {
-      "id": "2610.30042",
-      "source": "arxiv",
-      "title": "HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning",
-      "url": "https://arxiv.org/abs/2610.30042",
-      "authors": [
-        "Sudipta Paul",
-        "Pengrui Quan",
-        "Aounon Kumar",
-        "Nicholas Tzou"
-      ],
-      "summary": "Harness optimization, which improves an agent's prompts, tools, and workflows, is an increasingly effective way to enhance agents built on frozen or closed-source LLMs. Leading approaches such as the Darwin--Godel Machine and the Huxley--Godel Machine (HGM) rely on recursive self-improvement and were developed mainly for coding, where the competence needed to improve the agent coincides with the competence being improved. Planning tasks, in which an agent must produce a sequence of tool calls that jointly satisfies interacting constraints, break this alignment. There, open-ended self-modificat",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-21",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "agent",
-        "planning",
-        "alignment",
-        "llm"
-      ]
-    },
-    {
       "id": "2611.24049",
       "source": "arxiv",
       "title": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
@@ -1521,6 +1496,30 @@
         "agent",
         "multi-agent",
         "planning"
+      ]
+    },
+    {
+      "id": "2611.26553",
+      "source": "arxiv",
+      "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
+      "url": "https://arxiv.org/abs/2611.26553",
+      "authors": [
+        "Mengxiao Wang",
+        "Mahbub Alam",
+        "Kalyan Nakka",
+        "Nitesh Saxena"
+      ],
+      "summary": "Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only says what went wrong and rarely (in)validates the incident or finds its root cause. Incident catalogs collect these reports, and benchmarks record whether agents fail, but neither replicates an incident nor tests the cause its report might identify. In this paper, we present ROGUE-AI (Replication of Agentic Security Events: Audit and Inves",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-19",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model"
       ]
     }
   ]

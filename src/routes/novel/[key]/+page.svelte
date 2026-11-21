@@ -4,6 +4,8 @@
   import { readPlace } from '$lib/novel/novelReader.js';
   import ReaderControls from './ReaderControls.svelte';
 
+  export let data;
+
   const groups = groupedSections();
   const totalWords = novel.sections.reduce((n, s) => n + s.words, 0);
   let place = null;
@@ -23,10 +25,10 @@
 
   <div class="start">
     {#if placeSection}
-      <a class="primary" href="/novel/{placeSection.id}?resume=1">Continue: {placeSection.title}</a>
-      <a class="secondary" href="/novel/{novel.sections[0].id}">Start from the beginning</a>
+      <a class="primary" href="{data.base}/{placeSection.id}?resume=1">Continue: {placeSection.title}</a>
+      <a class="secondary" href="{data.base}/{novel.sections[0].id}">Start from the beginning</a>
     {:else}
-      <a class="primary" href="/novel/{novel.sections[0].id}">Start reading</a>
+      <a class="primary" href="{data.base}/{novel.sections[0].id}">Start reading</a>
     {/if}
   </div>
 
@@ -37,7 +39,7 @@
         <ol>
           {#each group.items as item}
             <li>
-              <a href="/novel/{item.id}" class:current={place?.id === item.id}>
+              <a href="{data.base}/{item.id}" class:current={place?.id === item.id}>
                 <span class="t">{item.title}</span>
                 <span class="m">{Math.max(1, Math.round(item.words / 250))} min</span>
               </a>

@@ -1,32 +1,25 @@
 <script>
-  // Private reader for the revised novel. Not linked from the navbar, the
-  // footer or sitemap.xml, and noindex. It sits behind the same client-side
-  // password gate as /book (BookGate + the in-memory bookUnlocked store), which
-  // is friction, not authentication: see $lib/bookAccessCode.js.
+  // Private reader for the revised novel, opened from a private link (see
+  // +layout.server.js). Not linked from the navbar, the footer or
+  // sitemap.xml, and noindex.
   import { page } from '$app/stores';
-  import { bookUnlocked } from '$lib/stores/bookAccess.js';
-  import BookGate from '$lib/components/BookGate.svelte';
   import { novelPrefs } from '$lib/novel/novelReader.js';
 
   $: section = $page.data?.section;
 </script>
 
-<!-- Above the gate so the robots directive is always emitted. -->
 <svelte:head>
   <title>{section ? `${section.title} | ` : ''}Surviving the Singularity, the novel</title>
   <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
 </svelte:head>
 
-{#if !$bookUnlocked}
-  <BookGate subtitle="Enter the book password to read the novel." />
-{:else}
-  <div
+<div
     class="novel-shell theme-{$novelPrefs.theme}"
     style="--novel-size: {$novelPrefs.size}px"
   >
     <slot />
   </div>
-{/if}
 
 <style>
   .novel-shell {

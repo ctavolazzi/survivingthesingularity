@@ -54,7 +54,7 @@
 
 <main class="reader">
   <div class="bar">
-    <a class="contents" href="/novel">
+    <a class="contents" href="{data.base}">
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M8 2L4 6l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Contents
     </a>
@@ -72,15 +72,15 @@
 
   <nav class="pager" aria-label="Chapters">
     {#if data.next}
-      <a class="next" href="/novel/{data.next.id}">
+      <a class="next" href="{data.base}/{data.next.id}">
         <span class="k">Next</span>
         <span class="v">{data.next.title}</span>
       </a>
     {:else}
-      <a class="next" href="/novel"><span class="k">The end</span><span class="v">Back to contents</span></a>
+      <a class="next" href="{data.base}"><span class="k">The end</span><span class="v">Back to contents</span></a>
     {/if}
     {#if data.prev}
-      <a class="prev" href="/novel/{data.prev.id}">
+      <a class="prev" href="{data.base}/{data.prev.id}">
         <span class="k">Previous</span>
         <span class="v">{data.prev.title}</span>
       </a>

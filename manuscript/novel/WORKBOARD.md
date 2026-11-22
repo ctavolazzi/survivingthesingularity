@@ -17,8 +17,8 @@ Where the files are: [`BRIDGE.md`](BRIDGE.md), or the Drive page "sts-bridge: re
 
 | Task | Who | Since | Status |
 |---|---|---|---|
-| Fill the v4 scaffold: Ch 39 back to Ch 13, Act Three, Act Four, the four Meanwhiles | Claude Duet (phone) | Nov 22, about 12:00 | In progress. Ch 27 to 39, Act Four and all four Meanwhiles done at 12:13. Ch 26 partly. |
-| Fill the v4 scaffold: Author's Note, Act One, Act Two, Ch 0 to Ch 12 | Claude Code (desktop) | Nov 22, 12:25 | Starting. Will not touch Ch 13 or later. |
+| Fill every section of the v4 scaffold, from Ch 39 back to the Author's Note | Claude Duet (phone) | Nov 22, about 12:00 | In progress. At Ch 18 by 12:20. |
+| Check each section Duet fills against v3's text and the Decided list. Report problems in a "Checks" section at the end of the scaffold; do not edit Duet's text | Claude Code (desktop) | Nov 22, 12:20 | In progress. (It first claimed Ch 0 to Ch 12 for itself, then saw Duet would reach them first and switched to checking.) |
 
 ## Waiting on CT
 

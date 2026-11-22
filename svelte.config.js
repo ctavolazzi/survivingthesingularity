@@ -15,12 +15,19 @@ const redirectRoutes = readFileSync(new URL('./_redirects', import.meta.url), 'u
 	.map((line) => line.split(/\s+/)[0])
 	.filter((path) => !staticRoutes.some((rule) => rule.endsWith('*') ? path.startsWith(rule.slice(0, -1)) : path === rule));
 
+const cloudflare = adapter({
+	routes: { exclude: ['<build>', '<prerendered>', ...staticRoutes, ...redirectRoutes] }
+});
+// `vite dev` starts the Cloudflare Workers runtime to emulate the platform, and
+// that runtime refuses to start on macOS before 13.5. STS_NO_WORKERD=1 skips the
+// emulation for local development only. The build never calls `emulate`, so the
+// deployed site is the same with or without it.
+if (process.env.STS_NO_WORKERD) delete cloudflare.emulate;
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
-			routes: { exclude: ['<build>', '<prerendered>', ...staticRoutes, ...redirectRoutes] }
-		}),
+		adapter: cloudflare,
 		// CSP for SSR routes (Worker). SvelteKit injects a nonce into its own
 		// inline scripts and adds it to this policy so 'unsafe-inline' is not
 		// needed. Prerendered pages served as static assets get their CSP from

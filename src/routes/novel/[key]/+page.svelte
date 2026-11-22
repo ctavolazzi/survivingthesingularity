@@ -30,6 +30,7 @@
     {:else}
       <a class="primary" href="{data.base}/{novel.sections[0].id}">Start reading</a>
     {/if}
+    <a class="secondary" href="{data.base}/compendium">Compendium: the people, places and things</a>
   </div>
 
   <nav aria-label="Contents" class="toc">

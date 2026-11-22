@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import { dev } from '$app/environment';
 
 // The novel reader opens from a private link, /novel/<key>/, instead of a
 // password. Only the SHA-256 of the key lives in this public repository, so
@@ -13,8 +14,14 @@ async function sha256Hex(text) {
   return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, '0')).join('');
 }
 
+// On a developer's own machine (`npm run dev`), /novel/draft/ opens the reader
+// without the private link. `dev` is false in every build, so on the deployed
+// site "draft" is a wrong key like any other and gets the same 404.
+const DRAFT_KEY = 'draft';
+
 export async function load({ params, setHeaders }) {
-  if ((await sha256Hex(params.key)) !== KEY_SHA256) throw error(404, 'Not found');
+  const draft = dev && params.key === DRAFT_KEY;
+  if (!draft && (await sha256Hex(params.key)) !== KEY_SHA256) throw error(404, 'Not found');
   setHeaders({ 'x-robots-tag': 'noindex, nofollow', 'cache-control': 'private, no-store' });
   return { base: `/novel/${params.key}` };
 }

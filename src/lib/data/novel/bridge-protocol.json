@@ -2,6 +2,7 @@
   "asOf": "2026-11-22",
   "what": "The bridge is the one place that says where every copy of the novel is, which copy is the book right now, and how a chat changes the manuscript without breaking it. Any chat, on any surface, starts here.",
   "editing": [
+    "Check the workboard before you start (manuscript/novel/WORKBOARD.md, or the block \"Who is working on what\" at the top of the v4 scaffold), and claim your task there. Two sessions started the same job on 22 November without knowing.",
     "Find the current manuscript. Exactly one copy in the map is marked CURRENT. Edit that one and no other.",
     "Read it fresh, right before the edit. The author and other chats type in it while you work, so a read from ten minutes ago is out of date.",
     "Make the change as a suggestion, so the author can accept or reject it. Make a direct edit only when he has said so, in so many words, in this conversation.",
@@ -38,14 +39,24 @@
   ],
   "code": {
     "repository": "ctavolazzi/survivingthesingularity",
-    "branch": "claude/sts-bridge",
-    "note": "It is not on main yet. Merging to main redeploys the live site, so that waits on the author."
+    "branch": "main",
+    "note": "Merged to main on 22 November 2026. Pushing to main redeploys the live site, so code changes there wait on the author; notes such as WORKBOARD.md are fine."
   },
   "requestExample": {
     "documentId": "<the current manuscript's id>",
-    "writeControl": { "writeMode": "SUGGEST" },
+    "writeControl": {
+      "writeMode": "SUGGEST"
+    },
     "requests": [
-      { "replaceAllText": { "containsText": { "text": "old words, appearing once", "matchCase": true }, "replaceText": "new words" } }
+      {
+        "replaceAllText": {
+          "containsText": {
+            "text": "old words, appearing once",
+            "matchCase": true
+          },
+          "replaceText": "new words"
+        }
+      }
     ]
   }
 }

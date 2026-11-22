@@ -41,15 +41,16 @@ Google Docs are named by title only, because this repository is public. Search D
 
 ## How to change the manuscript
 
-1. Find the current manuscript. Exactly one copy in the map is marked CURRENT. Edit that one and no other.
-2. Read it fresh, right before the edit. The author and other chats type in it while you work, so a read from ten minutes ago is out of date.
-3. Make the change as a suggestion, so the author can accept or reject it. Make a direct edit only when he has said so, in so many words, in this conversation.
-4. Change words by exact match, never by position. Pick a short plain passage that appears exactly once in the whole Doc, and replace it.
-5. Keep the match short. A suggestion deletes the matched words and types them again, which drops italics and links on them.
-6. Read the Doc again. Confirm your suggestion is there and that nothing else moved.
-7. Tell the author what you changed in a few plain lines, with the chapter.
-8. If the change settles a fact (a name, a distance, who knows what), write it in that character's notes file and under "Decided so far" in the v4 scaffold.
-9. If you make a new copy or a new version, add it to the map: instances.json in the repository, and the bridge page in Google Drive.
+1. Check the workboard before you start (manuscript/novel/WORKBOARD.md, or the block "Who is working on what" at the top of the v4 scaffold), and claim your task there. Two sessions started the same job on 22 November without knowing.
+2. Find the current manuscript. Exactly one copy in the map is marked CURRENT. Edit that one and no other.
+3. Read it fresh, right before the edit. The author and other chats type in it while you work, so a read from ten minutes ago is out of date.
+4. Make the change as a suggestion, so the author can accept or reject it. Make a direct edit only when he has said so, in so many words, in this conversation.
+5. Change words by exact match, never by position. Pick a short plain passage that appears exactly once in the whole Doc, and replace it.
+6. Keep the match short. A suggestion deletes the matched words and types them again, which drops italics and links on them.
+7. Read the Doc again. Confirm your suggestion is there and that nothing else moved.
+8. Tell the author what you changed in a few plain lines, with the chapter.
+9. If the change settles a fact (a name, a distance, who knows what), write it in that character's notes file and under "Decided so far" in the v4 scaffold.
+10. If you make a new copy or a new version, add it to the map: instances.json in the repository, and the bridge page in Google Drive.
 
 ## House rules
 

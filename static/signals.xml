@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 21 Nov 2026 19:59:58 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 22 Nov 2026 20:14:33 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -13,13 +13,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.34836</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
       <description>Multi-agent large language model (LLM) systems can exhibit emergent behaviors through interaction, yet whether a similar phenomenon exists for reasoning alignment remains largely unexplored. We study whether agent interaction produces additional reference-grounded reasoning alignment beyond matched ... [Score: 14.0 | Flagged for: agent, multi-agent, agentic, reasoning, alignment] Authors: Boxuan Wang, Zhuoyun Li, et al.</description>
-    </item>
-    <item>
-      <title>SCOPE: Scene-graph Construction Optimized by Plan Error-correction for Robot Long-term Planning Datasets</title>
-      <link>https://arxiv.org/abs/2610.31518</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.31518</guid>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Task and Motion Planning (TAMP) stands as a fundamental challenge in robotics, essential for enabling autonomous agents to execute complex, long-horizon tasks in diverse environments. While Large Language Models (LLMs) introduce a new paradigm for TAMP by leveraging extensive common sense, their inh... [Score: 14.0 | Flagged for: agi, agent, autonomous, planning, reasoning] Authors: Chaoyue Li, Zeyu Gao, et al.</description>
     </item>
     <item>
       <title>Toward the Era of Agentic Embodied Intelligence</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
       <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
+    </item>
+    <item>
+      <title>Task-Efficient Agent Evaluation Using Cached Traces</title>
+      <link>https://arxiv.org/abs/2611.06803</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.06803</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each ... [Score: 8.5 | Flagged for: agi, agent, agentic, llm, rag] Authors: Ben Johnson, Hayden Helm</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:59:58Z",
+  "generated_at": "2026-11-22T20:14:33Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -29,36 +29,6 @@
         "llm",
         "language model",
         "emergent",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.31518",
-      "source": "arxiv",
-      "title": "SCOPE: Scene-graph Construction Optimized by Plan Error-correction for Robot Long-term Planning Datasets",
-      "url": "https://arxiv.org/abs/2610.31518",
-      "authors": [
-        "Chaoyue Li",
-        "Zeyu Gao",
-        "Yanfeng Lu",
-        "Fan Luo"
-      ],
-      "summary": "Task and Motion Planning (TAMP) stands as a fundamental challenge in robotics, essential for enabling autonomous agents to execute complex, long-horizon tasks in diverse environments. While Large Language Models (LLMs) introduce a new paradigm for TAMP by leveraging extensive common sense, their inherent reasoning limitations hinder direct application, and fine-tuning strategies to enhance these capabilities are currently bottlenecked by the scarcity of high-quality datasets. Existing automated generation methods often suffer from homogeneity, limiting model generalization, and unsolvability, ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-10-22",
-      "score": 14.0,
-      "raw_score": 28,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "autonomous",
-        "planning",
-        "reasoning",
-        "robot",
-        "robotics",
-        "llm",
-        "language model",
         "rag"
       ]
     },
@@ -1008,32 +978,6 @@
       ]
     },
     {
-      "id": "2610.31971",
-      "source": "arxiv",
-      "title": "Knowing Whom to Trust is not Enough: The Trust--Agreement Gap in Repeated Multi-Party LLM Negotiation",
-      "url": "https://arxiv.org/abs/2610.31971",
-      "authors": [
-        "Amit Sarker",
-        "Moumita Choudhury",
-        "Saaduddin Mahmud",
-        "Shlomo Zilberstein"
-      ],
-      "summary": "Large language model (LLM) agents increasingly participate in negotiations on behalf of individuals and organizations, yet they remain vulnerable to manipulation, particularly in repeated multi-party interactions. Classical multi-agent systems address this challenge through explicit trust and reputation models, whereas existing work on LLM negotiation largely treats trust as an emergent phenomenon. We investigate whether LLM agents can form useful trust estimates from prior interactions and leverage them to improve future negotiation outcomes. We introduce a repeated, multi-party, multi-issue ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-22",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "emergent",
-        "rag"
-      ]
-    },
-    {
       "id": "2611.24049",
       "source": "arxiv",
       "title": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
@@ -1520,6 +1464,54 @@
         "agentic",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2611.26422",
+      "source": "arxiv",
+      "title": "Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction",
+      "url": "https://arxiv.org/abs/2611.26422",
+      "authors": [
+        "Jihong Zhang",
+        "Zijing Jin",
+        "Mingfeng Xue"
+      ],
+      "summary": "Large language models (LLMs) can generate Q-matrices for diagnostic classification models that approximate expert specifications, but evaluations have focused on the final matrices, leaving the basis of individual item-attribute assignments unexamined. This opacity limits the responsible use of AI in measurement. We propose Reasoning-Trace Analysis (RTA), a framework in which an LLM generates attribute-labeled reasoning steps through chain-of-thought (CoT) prompting and these steps are analyzed to reconstruct, compare, and inspect each assignment. RTA is intended to supplement expert review an",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-19",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "reasoning",
+        "chain-of-thought",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.25705",
+      "source": "arxiv",
+      "title": "STARK: Moving towards Personalized Agents That Truly Learn and Remember",
+      "url": "https://arxiv.org/abs/2611.25705",
+      "authors": [
+        "Aryan Jain",
+        "Abhishek Jha",
+        "Anish Nediyanchath",
+        "Promod Yenigalla"
+      ],
+      "summary": "Long-term memory is essential for personalized agentic systems that interact with users over long time periods, yet current architectures only capture what happened while leaving the reasoning of why it happened to be derived later by underlying LLMs.%, and silo knowledge within individual users. These events can, however, convey not only what a user experienced but also how that experience shaped their behavioral patterns. We introduce STARK, a dual-graph memory architecture which treats these events not just as nodes but also as edges between behavioral insights. STARK maintains an Episodic ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-19",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm"
       ]
     }
   ]

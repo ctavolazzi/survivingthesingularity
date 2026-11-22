@@ -1,0 +1,51 @@
+{
+  "asOf": "2026-11-22",
+  "what": "The bridge is the one place that says where every copy of the novel is, which copy is the book right now, and how a chat changes the manuscript without breaking it. Any chat, on any surface, starts here.",
+  "editing": [
+    "Find the current manuscript. Exactly one copy in the map is marked CURRENT. Edit that one and no other.",
+    "Read it fresh, right before the edit. The author and other chats type in it while you work, so a read from ten minutes ago is out of date.",
+    "Make the change as a suggestion, so the author can accept or reject it. Make a direct edit only when he has said so, in so many words, in this conversation.",
+    "Change words by exact match, never by position. Pick a short plain passage that appears exactly once in the whole Doc, and replace it.",
+    "Keep the match short. A suggestion deletes the matched words and types them again, which drops italics and links on them.",
+    "Read the Doc again. Confirm your suggestion is there and that nothing else moved.",
+    "Tell the author what you changed in a few plain lines, with the chapter.",
+    "If the change settles a fact (a name, a distance, who knows what), write it in that character's notes file and under \"Decided so far\" in the v4 scaffold.",
+    "If you make a new copy or a new version, add it to the map: instances.json in the repository, and the bridge page in Google Drive."
+  ],
+  "rules": [
+    "No em dashes or en dashes anywhere in the book or in notes about it.",
+    "When the author dictates lines, use his words. Fix typos and change nothing else.",
+    "The pictures stay in Revised Manuscript v3.",
+    "The book never says who Bidwell's watcher is. No edit may clear anyone of being that person.",
+    "The author's personal journal material stays out of every file.",
+    "Pushing to main on GitHub redeploys the live site. Do it only when he says.",
+    "Reply to the author in a few short plain lines. Lead with what happened."
+  ],
+  "withCode": [
+    "node scripts/sts-bridge.mjs status              every copy, and which one is the book right now",
+    "node scripts/sts-bridge.mjs check               is the map sound",
+    "node scripts/sts-bridge.mjs where <name>        an entry, a chapter (chapter-9), or a copy (site-reader)",
+    "node scripts/sts-bridge.mjs edit READ.json --find \"old words\" --replace \"new words\"     checks the change and prints the request to send",
+    "node scripts/sts-bridge.mjs suggestions READ.json     the suggestions waiting in the Doc, by chapter",
+    "node scripts/sts-bridge.mjs verify READ.json --replace \"new words\"     after sending: is it there"
+  ],
+  "withoutCode": [
+    "Open the bridge page in Google Drive (search Drive for \"sts-bridge\"). It lists every copy with a link and marks the current one.",
+    "Read the current manuscript with the Docs connector.",
+    "Count how many times your passage appears. If it is not exactly once, lengthen it until it is.",
+    "Send one replaceAllText request with writeControl.writeMode set to SUGGEST and matchCase true.",
+    "Read the Doc again and find your suggestion."
+  ],
+  "code": {
+    "repository": "ctavolazzi/survivingthesingularity",
+    "branch": "claude/sts-bridge",
+    "note": "It is not on main yet. Merging to main redeploys the live site, so that waits on the author."
+  },
+  "requestExample": {
+    "documentId": "<the current manuscript's id>",
+    "writeControl": { "writeMode": "SUGGEST" },
+    "requests": [
+      { "replaceAllText": { "containsText": { "text": "old words, appearing once", "matchCase": true }, "replaceText": "new words" } }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "title": "Compendium",
+  "note": "Draft. One sample entry for each topic, written from Revised Manuscript v4 on 2026-11-22. Words in quotation marks are the book's own. Links are written [[id]] or [[id|words to show]].",
+  "topics": [
+    { "id": "characters", "name": "Characters", "mark": "C", "blurb": "The people in the book." },
+    { "id": "locations", "name": "Locations", "mark": "L", "blurb": "Where it happens." },
+    { "id": "items", "name": "Items", "mark": "I", "blurb": "Things people carry, fix and keep." },
+    { "id": "scenes", "name": "Scenes", "mark": "S", "blurb": "Moments the book turns on." },
+    { "id": "groups", "name": "Groups", "mark": "G", "blurb": "People who stand together." },
+    { "id": "ideas", "name": "Ideas", "mark": "?", "blurb": "Bets, lists and things people say." }
+  ],
+  "entries": [
+    {
+      "id": "elijah-madrone",
+      "topic": "characters",
+      "name": "Elijah Madrone",
+      "summary": "Farm kid, musician, self-taught data guy.",
+      "find": "\\bElijah\\b|\\bMad\\b|Madrone",
+      "image": {
+        "src": "/images/novel/compendium/elijah-madrone.png",
+        "alt": "Pixel-art portrait of Elijah: a thin, tired man in his thirties with hair grown too long, in a work jacket over a flannel shirt, holding a notebook.",
+        "credit": "Draft portrait, made with PixelLab on 22 November 2026.",
+        "pixelArt": true
+      },
+      "facts": [
+        { "label": "Full name", "value": "Elijah Galen Madrone" },
+        { "label": "Called", "value": "\"Mad\" by David. \"College\" by Marta and Lou." },
+        { "label": "From", "value": "A working farm in Sonoma County" },
+        { "label": "Band", "value": "Second Crop, with Nate on bass and Wes on drums" },
+        { "label": "Worked at", "value": "Claypot, the design software company" },
+        { "label": "First seen", "value": "[[section:chapter-0|Chapter 0]]" }
+      ],
+      "body": [
+        "Elijah grew up on a working farm in Sonoma County. His grandmother used to walk him through the hills behind her place and put his hand flat against the madrone trees. \"That's your tree,\" she told him. \"It can burn to the ground and come back from the root.\"",
+        "Before the pandemic his life ran on three engines: music, drawing in the hours nobody paid for, and delivery driving. In the dead hours between routes, parked in a lot with his phone propped on the wheel, he started teaching himself to code. It got him to Claypot.",
+        "In late 2022 he shows a chatbot to three realtors at [[the-bear-flag|the Bear Flag]]. A week later they raise their glasses to him. That is [[the-toast|the toast]], and the book follows what he does about it. The Monday after, he makes [[the-bet|the bet]].",
+        "When he drives north to [[the-co-op|the co-op]], his grandmother's woodstove, [[the-fisher|the Fisher]], is in the bed of the truck."
+      ],
+      "quotes": [
+        { "text": "MADRONE IS NOT A DRONE.", "from": "His notebook, at Claypot. [[section:chapter-0|Chapter 0]]" }
+      ]
+    },
+    {
+      "id": "the-bear-flag",
+      "topic": "locations",
+      "name": "The Bear Flag",
+      "summary": "David's bar, in the town where Elijah and David grew up.",
+      "find": "Bear Flag",
+      "image": null,
+      "facts": [
+        { "label": "Kind", "value": "A bar" },
+        { "label": "Behind the bar", "value": "David McGrath, every night" },
+        { "label": "On the wall", "value": "A little framed prayer, hung behind the register by David's father the year he quit drinking" },
+        { "label": "A beer", "value": "Four dollars in 2022" },
+        { "label": "First seen", "value": "[[section:chapter-0|Chapter 0]]" }
+      ],
+      "body": [
+        "The book starts here. David McGrath rode the same school bus as [[elijah-madrone|Elijah]] for eleven years and has been pouring his beer for fifteen. He stopped asking what Elijah wanted a long time ago.",
+        "It has sticky wood, a neon bear, and a television nobody watches. David's father sits on the last stool with a club soda and a lime.",
+        "In late 2022 Elijah sits at the bar night after night with his laptop, having a chatbot walk him through building software. Three realtors at the corner of the bar look over at his screen. [[the-toast|The toast]] happens on the same stool one week later."
+      ],
+      "quotes": [
+        { "text": "You're scaring the hoes, Mad.", "from": "David, to [[elijah-madrone|Elijah]]. \"It was their oldest line.\"" }
+      ]
+    },
+    {
+      "id": "the-fisher",
+      "topic": "items",
+      "name": "The Fisher",
+      "summary": "A squat black woodstove, older than Elijah.",
+      "find": "\\bFisher\\b",
+      "image": null,
+      "facts": [
+        { "label": "Kind", "value": "Woodstove" },
+        { "label": "Made of", "value": "Four hundred pounds of plate steel" },
+        { "label": "Flaw", "value": "A crack in one firebrick" },
+        { "label": "Came from", "value": "His grandmother's things, under tarps in the barn at his mother's farm" },
+        { "label": "First seen", "value": "[[section:chapter-5|Chapter 5]]" }
+      ],
+      "body": [
+        "His grandmother heated a whole farmhouse with it. She cooked on it, dried socks over it, and kept lambs alive behind it in bad Februaries, all on wood she bucked herself from her own downed oaks.",
+        "In 2023 [[elijah-madrone|Elijah]] and Manny, his mother's neighbor, get it up one flight of stairs into his apartment with an appliance dolly. There is no pipe coming out of it. He sits on the floor in front of it to record his video.",
+        "It rides north in the bed of his truck with its door wired shut, \"like a passenger who didn't care for conversation.\" At [[the-co-op|the co-op]] it sits under a tarp in the corner of the shed, because there is nowhere to put it."
+      ],
+      "quotes": []
+    },
+    {
+      "id": "the-toast",
+      "topic": "scenes",
+      "name": "The Toast",
+      "summary": "Three realtors raise their glasses to Elijah for the three people they let go.",
+      "find": "\\btoast(ed)?\\b|[Tt]hree glasses",
+      "image": null,
+      "facts": [
+        { "label": "Where", "value": "[[the-bear-flag|The Bear Flag]]" },
+        { "label": "When", "value": "Late 2022, one week after he showed them the machine" },
+        { "label": "Who", "value": "[[elijah-madrone|Elijah]], David, and three realtors" },
+        { "label": "Chapter", "value": "[[section:chapter-0|Chapter 0: The Demonstration]]" }
+      ],
+      "body": [
+        "A week earlier [[elijah-madrone|Elijah]] had turned his laptop toward three realtors at the bar and shown them a machine writing code. Then he slid a bar napkin with his email address across the wood. He thought he was handing them a telescope.",
+        "One week later, almost to the hour, a hand lands on his shoulder \"like a gavel.\" The silver-haired realtor tells the bar that this guy saved him so much money. They let three people go that week: their transaction coordinator, their marketing gal, and the kid who did their listing videos.",
+        "Three glasses go up, catching the neon. Elijah's arm lifts his own. \"The beer was cold and tasted like nothing.\" He says congratulations.",
+        "The Monday after, he makes [[the-bet|the bet]]."
+      ],
+      "quotes": [
+        { "text": "I just want people to see what's coming.", "from": "[[elijah-madrone|Elijah]], the week before" },
+        { "text": "There was nothing special about these three men except that they'd gotten the demonstration early.", "from": "[[section:chapter-0|Chapter 0]]" }
+      ]
+    },
+    {
+      "id": "the-co-op",
+      "topic": "groups",
+      "name": "The Co-op",
+      "summary": "Nineteen households up past Cloverdale.",
+      "find": "\\bco-op\\b|[Nn]ineteen households",
+      "image": null,
+      "facts": [
+        { "label": "Size", "value": "Nineteen households" },
+        { "label": "Where", "value": "Up past Cloverdale, off the county road" },
+        { "label": "Ground", "value": "The shed, the shouse, the seed house, the packing shed and Irene's forty acres" },
+        { "label": "First seen", "value": "[[section:chapter-15|Chapter 15]]" }
+      ],
+      "body": [
+        "Grace's email to [[elijah-madrone|Elijah]] says what it is: \"We grow food and fix things and run a kitchen that feeds folks who can't.\" She also tells him the table is split about him. \"Half the table thinks you're right. The other half thinks you're a guy who got famous scaring people. They both come to dinner Friday.\"",
+        "The shed is an old apple-packing shed with a plasma table in it. Marta Okonkwo runs it.",
+        "Grace runs the town kitchen and the route. Denny Osei runs the channel. Lou grew pears outside Ukiah and grows most of what is on the table. Curtis drives the route. Priya digs the pits. Reuben Vance handles the part of the machine that runs on paper. Frank Kowalski ran the hardware store and then the tool library. Tyler writes the firmware. Patricia speaks for the grower network. Irene Calder owns the forty acres. Rosa packs fruit. Wren leads the Sunday circle.",
+        "Elijah arrives in November 2024 with [[the-fisher|the Fisher]] riding low in the back of his truck."
+      ],
+      "quotes": [
+        { "text": "Co-op. Nineteen households. We make what we can't afford to buy and fix what the market says to throw away.", "from": "Marta, at the plasma table. [[section:chapter-16|Chapter 16]]" }
+      ]
+    },
+    {
+      "id": "the-bet",
+      "topic": "ideas",
+      "name": "The Bet",
+      "summary": "Thanksgiving 2027. Loser cooks.",
+      "find": "Loser cooks|Thanksgiving,? 2027|\\bthe bet\\b",
+      "image": null,
+      "facts": [
+        { "label": "Between", "value": "[[elijah-madrone|Elijah]] and Devendra, his colleague at Claypot" },
+        { "label": "Made", "value": "Late 2022, at the coffee machine, the Monday after [[the-toast|the toast]]" },
+        { "label": "The call", "value": "\"A machine that can do any job in this building.\"" },
+        { "label": "The date", "value": "Thanksgiving 2027" },
+        { "label": "The stake", "value": "Dinner. Loser cooks." },
+        { "label": "Chapter", "value": "[[section:chapter-1|Chapter 1: You'll Calibrate]]" }
+      ],
+      "body": [
+        "[[elijah-madrone|Elijah]] brings a printout to work and tells Devendra he thinks it is already over. Devendra is senior and calm. \"You'll calibrate. Everybody's first month feels like the apocalypse.\"",
+        "Devendra lands a point first. \"Three jobs in one bar is an anecdote,\" he says. \"You build models for a living. What's your n?\" Elijah doesn't have one. Then Devendra asks him for a date, and Elijah finds out he has one when he says it.",
+        "Devendra peels a sticky note off the pad by the sugar, writes on it in small square letters, and presses it to the side of the coffee machine, under the sign about descaling."
+      ],
+      "quotes": [
+        { "text": "E.M. Thanksgiving 2027. Loser cooks.", "from": "The sticky note" },
+        { "text": "I like lamb.", "from": "Devendra" }
+      ]
+    }
+  ]
+}

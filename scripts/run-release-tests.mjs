@@ -7,6 +7,8 @@ const suites = [
   ['tests/unit/bundle-release.test.mjs'],
   ['tests/unit/book-math.test.mjs'],
   ['tests/unit/sanitize-html.test.mjs'],
+  ['tests/unit/novel-bridge.test.mjs'],
+  ['tests/unit/novel-doc-edit.test.mjs'],
   ['tests/unit/request-json.test.mjs'],
   ['tests/unit/hash-focus-guard.test.mjs'],
   ['scripts/check-launch-readiness.test.mjs'],

@@ -22,16 +22,22 @@ of the current book. Do not describe URL/image resolution as factual support.
 ## The novel in progress
 
 The next version of the book is a novel. It is not the text in `src/lib/data/book/`.
-Read `manuscript/novel/README.md` before any work on it. In short:
+**Start with the bridge: read `manuscript/novel/BRIDGE.md`.** It says which copy is the book right
+now, lists every other copy, and gives the one way to change the manuscript. In short:
 
-- The author writes in his Google Doc, "FINAL StS Manuscript." The copy in the repository is
-  `manuscript/novel/FINAL-StS-Manuscript.md`, and its commit history is the version history.
-- The newest copy is on the version branch, `book/<version>` (the name is in
-  `manuscript/novel/VERSION`). `main` can be behind it. Fetch the version branch first.
-- `python3 manuscript/tools/book.py status` shows where everything stands. `verify` checks the
-  repository copy against the Doc, and `pull` makes a new version from it.
-- Writing to the Doc needs the author's say-so each time. Proposed changes wait on a
-  `character/<name>` branch. Each character has a folder in `manuscript/novel/characters/`.
+- The manuscript is a Google Doc, and it moves between Docs. Do not assume which one from memory
+  or from an older note. `node scripts/sts-bridge.mjs status` marks exactly one copy CURRENT.
+- To change the manuscript: read the current Doc fresh with the Docs connector, then
+  `node scripts/sts-bridge.mjs edit READ.json --find "old words" --replace "new words"`. It checks
+  that the passage appears exactly once and prints the request to send. Changes go in as
+  suggestions the author accepts or rejects. A direct edit needs his say-so each time.
+- `node scripts/sts-bridge.mjs suggestions READ.json` lists what is waiting on him.
+- When a copy is made or the current one changes, update `src/lib/data/novel/instances.json`,
+  run `node scripts/sts-bridge.mjs export md > manuscript/novel/BRIDGE.md`, and remake the bridge
+  page in Google Drive ("sts-bridge: read this first"), which chats without code read.
+- `manuscript/novel/README.md` and `manuscript/tools/book.py` describe the method of 19 November,
+  when the manuscript was "FINAL StS Manuscript". The repository copy made then is behind.
+- Each character has a folder in `manuscript/novel/characters/` and a notes file in Drive.
 - Pushing to `main` redeploys the live site. Merge the book into `main` only when he says.
 
 ## Routes and data

@@ -1,0 +1,123 @@
+{
+  "asOf": "2026-11-22",
+  "note": "Every copy of the novel, which version each one holds, and what it was made from. Google Docs are named by title only: this repository is public, so their ids stay out of it. `holds` is what was recorded on the asOf date. `checked` says how that was established, or that it was not.",
+  "versions": ["2026-11-19", "final", "v1", "v2", "v3", "v4"],
+  "instances": [
+    {
+      "id": "doc-final-sts",
+      "kind": "google-doc",
+      "title": "FINAL StS Manuscript",
+      "holds": "2026-11-19",
+      "from": null,
+      "role": "The author's Doc as it stood on 19 November, with his planning notes above the novel.",
+      "checked": "Drive lists its last edit as 19 November 2026. Its text was not compared with anything on 22 November."
+    },
+    {
+      "id": "repo-manuscript",
+      "kind": "repo-file",
+      "path": "manuscript/novel/FINAL-StS-Manuscript.md",
+      "holds": "2026-11-19",
+      "from": "doc-final-sts",
+      "role": "The repository copy of that Doc. Its commit history is the version history up to 19 November.",
+      "tool": "python3 manuscript/tools/book.py verify | pull",
+      "checked": "manuscript/novel/CHANGES.md records the pull. Not compared again on 22 November."
+    },
+    {
+      "id": "doc-final",
+      "kind": "google-doc",
+      "title": "Surviving the Singularity, Final Manuscript",
+      "holds": "final",
+      "from": null,
+      "role": "The novel alone, 20 November. The first Revised Manuscript was made from it.",
+      "checked": "The Revised Manuscript's change log names it as the starting text. Which Doc it was made from was not checked."
+    },
+    {
+      "id": "doc-revised-v1",
+      "kind": "google-doc",
+      "title": "Surviving the Singularity, Revised Manuscript",
+      "holds": "v1",
+      "from": "doc-final",
+      "role": "Contradictions fixed, the 19 picture placeholders filled, the appendix added.",
+      "checked": "Its change log, dated 20 November 2026, says it was made from the Final Manuscript."
+    },
+    {
+      "id": "doc-revised-v2",
+      "kind": "google-doc",
+      "title": "Surviving the Singularity, Revised Manuscript v2",
+      "holds": "v2",
+      "from": "doc-revised-v1",
+      "role": "The fact-checked text: 204 claims checked, 13 changed.",
+      "checked": "The Fact-Check Log (v2) says its fixes were made in v2."
+    },
+    {
+      "id": "site-reader",
+      "kind": "site",
+      "path": "src/lib/data/novel/",
+      "title": "The private reader at /novel/<key>/",
+      "holds": "v2",
+      "from": "doc-revised-v2",
+      "role": "What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures.",
+      "checked": "novel.json names Revised Manuscript v2 as its source, and the commit that added it says 2,839 paragraphs were checked against that Doc."
+    },
+    {
+      "id": "doc-revised-v3",
+      "kind": "google-doc",
+      "title": "Surviving the Singularity, Revised Manuscript v3",
+      "holds": "v3",
+      "from": "doc-revised-v2",
+      "current": true,
+      "role": "The book right now, and the Doc being edited. The Revision Plan applied (193 changes), then more edits on 22 November: the band renamed Crop Dust, new scenes, about 2,300 words added. It keeps its 19 pictures.",
+      "checked": "Read on 22 November 2026: 19 pictures, and 5 tracked suggestions waiting on the author. The 193 changes of the plan were not checked one by one against the text."
+    },
+    {
+      "id": "doc-v3-text-only",
+      "kind": "google-doc",
+      "title": "OLD: v3 text-only copy from Nov 22 morning (not v4)",
+      "holds": "v3",
+      "stale": true,
+      "from": "doc-revised-v3",
+      "role": "Superseded. A copy of v3 made at 8:05 on 22 November with the 19 pictures and captions removed. It has none of the edits made to v3 after that. It was first titled Revised Manuscript v4.",
+      "checked": "Read back when it was made: 0 pictures, and the only text missing against v3 at that hour was the 19 captions."
+    },
+    {
+      "id": "doc-v4-scaffold",
+      "kind": "google-doc",
+      "title": "v4 scaffold",
+      "holds": "v4",
+      "from": "doc-revised-v3",
+      "role": "The skeleton for version 4: v3's contents, acts and chapter titles with empty bullets under each. No prose.",
+      "checked": "Read back on 22 November 2026: its 53 section headings match v3's in order, 209 bullets, no pictures."
+    },
+    {
+      "id": "doc-v4-final-draft",
+      "kind": "google-doc",
+      "title": "StS Final Draft v4 Surviving the Singularity",
+      "holds": "v4",
+      "from": null,
+      "role": "Where version 4 will be written. Empty when it was made.",
+      "checked": "Read back on 22 November 2026: one empty paragraph."
+    },
+    {
+      "id": "site-compendium",
+      "kind": "site",
+      "path": "src/lib/data/novel/compendium.json",
+      "title": "The compendium at /novel/<key>/compendium",
+      "holds": "v3",
+      "stale": true,
+      "from": "doc-v3-text-only",
+      "role": "Topics and entries about the people, places and things in the book. Written from v3 as it stood on the morning of 22 November. Out of date since: it still says Second Crop (now Crop Dust), and its Items entry is the Fisher woodstove, which v3 has replaced with an amp.",
+      "checked": "Every quotation in the six sample entries was searched for in that morning's text. Not checked against v3 since."
+    }
+  ],
+  "notes": [
+    { "title": "Surviving the Singularity: Revision Plan", "about": "doc-revised-v3", "what": "The plan v3 was made from, 21 November." },
+    { "title": "Surviving the Singularity: The Harshest Critics", "about": "doc-revised-v2", "what": "What hostile readers would say about v2, 21 November." },
+    { "title": "Surviving the Singularity, v3 Change Log", "about": "doc-revised-v3", "what": "Every change from v2 to v3, with the words before and after." },
+    { "title": "Surviving the Singularity, Fact-Check Log (v2)", "about": "doc-revised-v2", "what": "204 claims and their sources." },
+    { "title": "Surviving the Singularity, Revised Manuscript: Change Log", "about": "doc-revised-v1", "what": "Every change from the Final Manuscript to the first revision." },
+    { "title": "Story Map 1 to 5", "about": "doc-final", "what": "Chapter by chapter, timeline, places, factions, characters. Written against the Final Manuscript on 21 November, so later versions can disagree with them." },
+    { "title": "00 Summary report, and dossiers 01 to 28", "about": "doc-final", "what": "One Drive dossier for each character, checked against the Final Manuscript." },
+    { "title": "Surviving the Singularity, Lived Layer (Nov 22, 2026)", "about": "doc-revised-v3", "what": "A new layer for 21 dossiers. Its own note says none of it is in the book yet." },
+    { "title": "manuscript/novel/characters/", "about": "repo-manuscript", "what": "A folder for each of 35 characters in the repository, built from the text of 19 November." }
+  ]
+}

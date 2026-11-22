@@ -7,7 +7,30 @@ CT, 19 November 2026: "I'd like you to have version changes and the most current
 version in the GitHub repository with like a version history as well." "We need to have a version
 branch, just like version control for any software, but version control for a book."
 
-## Where the current book is
+## Read this first: the book moved on 20 November
+
+**As of 22 November 2026 the current text is the Google Doc "Surviving the Singularity, Revised
+Manuscript v3."** It is not "FINAL StS Manuscript," and the copy in this folder is four versions
+behind it. Version 4 has been started in two more Docs, "v4 scaffold" (structure, no prose) and
+"StS Final Draft v4 Surviving the Singularity" (empty). The rest of this page describes how things
+stood on 19 November and is kept as the record of that method.
+
+**Read `BRIDGE.md` in this folder next.** It lists every copy of the book and gives the one way to
+change the manuscript. From the command line:
+
+```bash
+node scripts/sts-bridge.mjs status     # every copy, and which one is the book right now
+node scripts/sts-bridge.mjs check      # is the map sound?
+node scripts/sts-bridge.mjs edit READ.json --find "old words" --replace "new words"
+node scripts/sts-bridge.mjs suggestions READ.json   # what is waiting on the author
+```
+
+The map is `src/lib/data/novel/instances.json`. Change it when a copy changes. The code that
+reads it is `src/lib/novel/bridge.js` ("the bridge"), which also holds the compendium at
+`/novel/<key>/compendium`. On your own machine, `STS_NO_WORKERD=1 npm run dev` and
+`/novel/draft/` open the reader without the private link.
+
+## Where the current book was, on 19 November
 
 - **CT writes in his Google Doc, "FINAL StS Manuscript."** That is the one he edits.
 - **The copy here is `FINAL-StS-Manuscript.md`.** It is the whole Doc, pulled in and checked

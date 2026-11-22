@@ -21,7 +21,7 @@ change `src/lib/data/novel/instances.json` or `bridge-protocol.json` and export 
 | v2 | behind by 1 | What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures. | The private reader at /novel/<key>/ |
 | v3 | CURRENT | The book right now, and the Doc being edited. The Revision Plan applied (193 changes), then more edits on 22 November: the band renamed Crop Dust, new scenes, about 2,300 words added. It keeps its 19 pictures. | Surviving the Singularity, Revised Manuscript v3 |
 | v3 | stale copy | Superseded. A copy of v3 made at 8:05 on 22 November with the 19 pictures and captions removed. It has none of the edits made to v3 after that. It was first titled Revised Manuscript v4. | OLD: v3 text-only copy from Nov 22 morning (not v4) |
-| v4 | next version | The skeleton for version 4: v3's contents, acts and chapter titles with empty bullets under each. No prose. | v4 scaffold |
+| v4 | next version | The plan for version 4, filled out on 22 November by Claude Duet: the rulings ("Decided so far"), a profile for every character, open questions, a list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
 | v4 | next version | Where version 4 will be written. Empty when it was made. | StS Final Draft v4 Surviving the Singularity |
 | v3 | stale copy | Topics and entries about the people, places and things in the book. Written from v3 as it stood on the morning of 22 November. Out of date since: it still says Second Crop (now Crop Dust), and its Items entry is the Fisher woodstove, which v3 has replaced with an amp. | The compendium at /novel/<key>/compendium |
 
@@ -38,6 +38,11 @@ Google Docs are named by title only, because this repository is public. Search D
 - **00 Summary report, and dossiers 01 to 28.** One Drive dossier for each character, checked against the Final Manuscript.
 - **Surviving the Singularity, Lived Layer (Nov 22, 2026).** A new layer for 21 dossiers. Its own note says none of it is in the book yet.
 - **manuscript/novel/characters/.** A folder for each of 35 characters in the repository, built from the text of 19 November.
+- **Surviving the Singularity, Characters (Drive folder).** The summary report, 28 character dossiers and the Lived Layer. Checked against the Final Manuscript of 20 November; the v4 scaffold's Characters section is newer.
+- **Surviving the Singularity, Story Map (Drive folder).** Story Maps 1 to 5: contradictions, chapter by chapter, timeline and places, characters. Written 20 to 21 November.
+- **Surviving the Singularity, Revision Notes (Drive folder).** The Revision Plan, the Harshest Critics, and the v3 Change Log, which ends with the November 22 passes.
+- **Surviving the Singularity, Revised Manuscript v3 (compressed).pdf.** A PDF of v3 made early on 22 November, before that day's edits.
+- **StS Preorders and Discount Codes (from Supabase, 2026-11-22).** A spreadsheet another session made on 22 November. It holds customer data, so it is listed by title only and was not opened.
 
 ## How to change the manuscript
 

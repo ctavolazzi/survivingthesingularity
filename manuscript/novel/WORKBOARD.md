@@ -15,23 +15,28 @@ Where the files are: [`BRIDGE.md`](BRIDGE.md), or the Drive page "sts-bridge: re
 
 ## Working now
 
-| Task | Who | Since | Status |
-|---|---|---|---|
-| Fill every section of the v4 scaffold, from Ch 39 back to the Author's Note | Claude Duet (phone) | Nov 22, about 12:00 | All 49 sections filled by about 12:40. Now writing character profiles and a "Fixes for the final version" list near the top of the scaffold. |
-| Check each section Duet fills against v3's text and the Decided list. Report problems in a "Checks" section at the end of the scaffold; do not edit Duet's text | Claude Code (desktop) | Nov 22, 12:20 | In progress. (It first claimed Ch 0 to Ch 12 for itself, then saw Duet would reach them first and switched to checking.) |
+Nobody, as of 12:55 on Nov 22. CT is reading the v4 scaffold, step by step.
 
-## Waiting on CT
+## Next, when CT says go (in this order)
 
-- 15 paragraphs of suggestions in Revised Manuscript v3: Sparrow (Ch 7, Ch 19, Author's Note), Nadzieja Czekaj (Ch 3, Appendix), Bidwell's watcher (Meanwhiles 2 and 3), the machine's speech (Ch 38), and some from other sessions.
-- Chapter 9: whether Nadzieja becomes a ghost Elijah never meets.
-- The 800 miles: which of Ma's farm and the co-op moves, since 800 miles does not fit inside Northern California.
-- The port of v3 and the character bios to v4: copy v3 to "StS Final Draft v4", lock v3, carry the waiting suggestions over. Proposed, not started.
+1. **CT reads the v4 scaffold.** Its top says how: Decided so far, Characters, Open questions, Fixes, the chapters, then Checks.
+2. **CT settles the suggestions still open in Revised Manuscript v3**: Sparrow (Ch 7, Ch 19, Author's Note), Nadzieja Czekaj (Ch 3, Appendix), Bidwell's watcher (Meanwhiles 2 and 3), the machine's speech (Ch 38), and Duet's.
+3. **Rulings CT still has to make**:
+   - Chapter 9: is Nadzieja a ghost Elijah never meets?
+   - The 800 miles between Ma and the co-op cannot fit in Northern California. Which place moves? v3 says "three hours" in Ch 15, 16, 22, 23, 29 and the Appendix.
+   - Frank's profile cites "When I was his age we put a man on the moon" (Ch 25). It is not in v3. Add the line or drop the citation.
+4. **Small edits into v3, once ruled**: Elijah's middle name Gaelen (v3 says Galen, twice); the "Fixes for the final version" list in the scaffold.
+5. **The port.** Copy v3 in Drive to make "StS Final Draft v4" (a copy keeps the text, italics, 19 pictures and any open suggestions exactly). Rename the empty "StS Final Draft v4" placeholder to OLD. Compare the copy to v3 paragraph by paragraph. Make v3 read-only, and tell Duet to work in v4. Copy the Characters folder the same way. Then update `src/lib/data/novel/instances.json`, export `BRIDGE.md`, and remake the Drive bridge page.
+6. **Amazon (KDP)**: a Kindle ebook needs no ISBN. A first book cannot be a pre-order with Thanksgiving as release day (the final file is due 5 days before), so publish directly; review takes up to 72 hours. Build the Kindle file from v4 once it holds the settled text, text only, and check it against the Doc.
+7. **The website**: every Cloudflare deploy of `main` has failed since at least Nov 9. The likely cause is the hosted deployment gate (`scripts/check-hosted-deployment.mjs`), which stops the build until payment prerequisites are verified (see `docs/launch-readiness-2026-10-13/README.md`). Not confirmed: the Cloudflare log needs CT's login. The live site still serves an old version.
 
 ## Done today (Nov 22)
 
-- v4 scaffold created (Claude Code), with "Decided so far" (Claude Code and Duet) and "Open for v4" notes on 14 sections (Claude Code).
-- The bridge: `BRIDGE.md`, `scripts/sts-bridge.mjs`, and the Drive page (Claude Code). Merged to main.
-- Many edits to v3 by Duet: Crop Dust, the Fishman amp, Linda Madrone and Joan Hollis, Devendra stays in San Jose, Elijah reaches the farm in March 2025, Lou and Bidwell are cousins. See the v3 Change Log, "November 22" passes.
+- **v4 scaffold**: created by Claude Code; "Decided so far" by Claude Code and Duet; "Open for v4" notes by Claude Code; every chapter, a profile for every character, open questions and fixes filled by Duet (about 12:00 to 12:45); checked by Claude Code (Checks section, 3 passes). Duet also fixed its own heading styles.
+- **The bridge**: `BRIDGE.md`, `scripts/sts-bridge.mjs` (status, check, where, edit, suggestions, verify, export), the Drive page, and this workboard. Merged to main.
+- **v3**: many edits by Duet (Crop Dust, the Fishman amp, Linda Madrone and Joan Hollis, Devendra stays in San Jose, March 2025, Lou and Bidwell are cousins); suggestions by Claude Code (Sparrow, Nadzieja, Bidwell's watcher, the machine's speech).
+- **Notes in Drive**: the Ma dossier (800 miles), the Architect's dossier (her name, CT's direction), the machine's dossier (a full bio).
+- **Draft compendium** in the private reader at `/novel/<key>/compendium`: six sample entries, now out of date (it still says Second Crop and the Fisher).
 
 ## How to claim
 

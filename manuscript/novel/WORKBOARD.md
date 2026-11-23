@@ -15,28 +15,96 @@ Where the files are: [`BRIDGE.md`](BRIDGE.md), or the Drive page "sts-bridge: re
 
 ## Working now
 
-Nobody, as of 12:55 on Nov 22. CT is reading the v4 scaffold, step by step.
+**CT is making his final pass in "StS Final Draft v4 Surviving the Singularity"**, as of 8:42 PM on
+Nov 22. He is typing in it. Read it fresh before any edit, make edits as suggestions, and do not
+touch a paragraph he is in.
 
-## Next, when CT says go (in this order)
+No Claude session has a task open.
 
-1. **CT reads the v4 scaffold.** Its top says how: Decided so far, Characters, Open questions, Fixes, the chapters, then Checks.
-2. **CT settles the suggestions still open in Revised Manuscript v3**: Sparrow (Ch 7, Ch 19, Author's Note), Nadzieja Czekaj (Ch 3, Appendix), Bidwell's watcher (Meanwhiles 2 and 3), the machine's speech (Ch 38), and Duet's.
-3. **Rulings CT still has to make**:
-   - Chapter 9: is Nadzieja a ghost Elijah never meets?
-   - The 800 miles between Ma and the co-op cannot fit in Northern California. Which place moves? v3 says "three hours" in Ch 15, 16, 22, 23, 29 and the Appendix.
-   - Frank's profile cites "When I was his age we put a man on the moon" (Ch 25). It is not in v3. Add the line or drop the citation.
-4. **Small edits into v3, once ruled**: Elijah's middle name Gaelen (v3 says Galen, twice); the "Fixes for the final version" list in the scaffold.
-5. **The port.** Copy v3 in Drive to make "StS Final Draft v4" (a copy keeps the text, italics, 19 pictures and any open suggestions exactly). Rename the empty "StS Final Draft v4" placeholder to OLD. Compare the copy to v3 paragraph by paragraph. Make v3 read-only, and tell Duet to work in v4. Copy the Characters folder the same way. Then update `src/lib/data/novel/instances.json`, export `BRIDGE.md`, and remake the Drive bridge page.
-6. **Amazon (KDP)**: a Kindle ebook needs no ISBN. A first book cannot be a pre-order with Thanksgiving as release day (the final file is due 5 days before), so publish directly; review takes up to 72 hours. Build the Kindle file from v4 once it holds the settled text, text only, and check it against the Doc.
-7. **The website**: every Cloudflare deploy of `main` has failed since at least Nov 9. The likely cause is the hosted deployment gate (`scripts/check-hosted-deployment.mjs`), which stops the build until payment prerequisites are verified (see `docs/launch-readiness-2026-10-13/README.md`). Not confirmed: the Cloudflare log needs CT's login. The live site still serves an old version.
+**47 tracked suggestions from Claude Code are waiting in v4** (placed Nov 23, 7:30 to 8:00 AM): clarity,
+spelling, "commissioner" for "supervisor", a few one-sentence cuts, Chapter 39's beer exchange in
+CT's words, and six fixes made around lines CT wants kept. None changes a line CT dictated. Leave them for him to accept or reject. The reasons are in the Drive Doc "StS v4: Editor's
+Letter and Readiness Audit (Nov 23)", which also holds ten calls that are his and a punch list for
+all 46 sections. Read that Doc before proposing any edit to the prose.
 
-## Done today (Nov 22)
+## The book is in v4 now
 
-- **v4 scaffold**: created by Claude Code; "Decided so far" by Claude Code and Duet; "Open for v4" notes by Claude Code; every chapter, a profile for every character, open questions and fixes filled by Duet (about 12:00 to 12:45); checked by Claude Code (Checks section, 3 passes). Duet also fixed its own heading styles.
-- **The bridge**: `BRIDGE.md`, `scripts/sts-bridge.mjs` (status, check, where, edit, suggestions, verify, export), the Drive page, and this workboard. Merged to main.
-- **v3**: many edits by Duet (Crop Dust, the Fishman amp, Linda Madrone and Joan Hollis, Devendra stays in San Jose, March 2025, Lou and Bidwell are cousins); suggestions by Claude Code (Sparrow, Nadzieja, Bidwell's watcher, the machine's speech).
-- **Notes in Drive**: the Ma dossier (800 miles), the Architect's dossier (her name, CT's direction), the machine's dossier (a full bio).
-- **Draft compendium** in the private reader at `/novel/<key>/compendium`: six sample entries, now out of date (it still says Second Crop and the Fisher).
+"StS Final Draft v4 Surviving the Singularity" holds the whole book: 47 sections, 80,264 words, 19
+pictures. Claude Duet built it from v3 with CT's rulings of Nov 22 and 23. "Revised Manuscript v3" is
+the version before it and is left as it was. What changed from v3:
+
+- The co-op is outside Ardell, Washington, eight hundred miles north of Ma (v3 said three hours).
+- Every chapter has a new title, from the Doc "StS v4 Chapter Arcs".
+- Chapter 9: Elijah stays in the hall and hears the Architect through a door.
+- Chapter 20: Lou's exchange with Elijah about essays and meat, in CT's words.
+- Chapter 33: a new Friday dinner. The chapter grew from 1,404 words to 3,856.
+- Chapters 38 and 39: the machine's message, with CT's lines, and its thanks to Nadzieja Czekaj.
+- Gaelen, Sparrow Systems, Bidwell's watcher, Crop Dust and the amp are all in.
+
+## Waiting on CT (from the review of v4, Nov 22, about 9 PM)
+
+Claude Code read v4 against v3, the arcs Doc and the rulings. The stories hold together and v4 is
+ready for his final pass. These are his to rule on. The same list is at the top of the v4 scaffold.
+Nothing here has been changed in v4.
+
+1. **Chapter 0 and Chapter 39.** Settled Nov 23: the first line keeps "a free beer". Chapter 39 is
+   rewritten to fit it, in CT's words ("It's six now." ... "God, inflation's a bitch"), as a suggestion.
+   **The rule he gave with it: when his choice collides with other text, fix the other text. Do not
+   argue for undoing his choice.**
+2. **Chapter 20.** Wren is the one who hears Lou's essay and meat exchange. CT asked for "the Critical
+   guy who disagrees with Lou a lot". The man who fights Lou at every dinner is Curtis, and he is not
+   in this scene.
+3. **Chapters 17, 26, 29 and 30** said "county supervisor". Now six suggestions in v4 change it to
+   "commissioner".
+4. **Chapter 33.** Marianne is named twice and never called Lou's wife. The only other mention is "my
+   wife's nephew" in Chapter 17.
+5. **Chapter 33's facts** were written after the fact-check of Nov 20 and nobody has looked them up:
+   the cotton gin, Jevons, Stockton, the thousand-a-month study, a third of food thrown out, seven in
+   ten people in jail not convicted, the Pentagon drone program, the "best behavior" quotation.
+6. **Chapter 33's length.** The arcs Doc marks it "not fully standing alone". Claude Code's view: it
+   works as it is.
+7. **Chapters 8 and 9.** He sees her profile in the lobby, and Chapter 9 says "He never saw her face."
+
+## Next, when CT says go
+
+1. **Apply his answers to the list above**, as suggestions in v4.
+2. **A source check of Chapter 33's facts**, the way the Nov 20 fact-check was done.
+3. **The branch `novel/v4-arcs-titles-prompt`** holds the instructions the arcs were written from. It
+   is not merged. CT has not said whether to merge it.
+4. **Amazon (KDP)**: a Kindle ebook needs no ISBN. A first book cannot be a pre-order with
+   Thanksgiving as release day (the final file is due 5 days before), so publish directly; review
+   takes up to 72 hours. Build the Kindle file from v4 once CT's pass is done, and check it against
+   the Doc. The answer to Amazon's question about AI is his.
+5. **The website**: every Cloudflare deploy of `main` has failed since at least Nov 9. The likely
+   cause is the hosted deployment gate (`scripts/check-hosted-deployment.mjs`), which stops the build
+   until payment prerequisites are verified (see `docs/launch-readiness-2026-10-13/README.md`). Not
+   confirmed: the Cloudflare log needs CT's login. The live site still serves an old version. The
+   private reader still holds v2, and the draft compendium still says Second Crop and the Fisher.
+
+## Done (Nov 23)
+
+- **Editor's pass**: all 46 sections of v4 read; the Drive Doc "StS v4: Editor's Letter and Readiness
+  Audit (Nov 23)" written, with 124 quoted lines checked against v4; 47 suggestions placed in v4 and
+  read back. The scripts are in `manuscript/tools/editor-pass/`.
+
+## Done (Nov 22)
+
+- **v4 draft**: built by Claude Duet from v3 and CT's rulings. Reviewed by Claude Code in the evening:
+  all 47 sections compared with v3 and every changed paragraph read (32 sections changed; Chapters 9 and
+  33 read whole), every ruling of the day found in the text, 426 quotations in the
+  arcs Doc checked (6 are not word for word), no dashes, no place left in the wrong state apart from
+  the "supervisor" lines above.
+- **Chapter arcs and titles**: the Doc "StS v4 Chapter Arcs", by another session. The titles are in
+  v4's contents and headings, and match the Doc.
+- **v4 scaffold**: created by Claude Code; filled by Duet; checked by Claude Code against v3 (Checks
+  section); then updated by Duet to match v4.
+- **The bridge**: `BRIDGE.md`, `scripts/sts-bridge.mjs` (status, check, where, edit, suggestions,
+  verify, export), the Drive page, and this workboard. Merged to main. The map now marks v4 as the
+  book.
+- **v3**: many edits by Duet; suggestions by Claude Code (Sparrow, Nadzieja, Bidwell's watcher, the
+  machine's speech). All of it was carried into v4.
+- **Notes in Drive**: the Ma dossier (800 miles), the Architect's dossier (her name, CT's direction),
+  the machine's dossier (a full bio).
 
 ## How to claim
 

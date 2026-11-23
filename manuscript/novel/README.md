@@ -9,11 +9,11 @@ branch, just like version control for any software, but version control for a bo
 
 ## Read this first: the book moved on 20 November
 
-**As of 22 November 2026 the current text is the Google Doc "Surviving the Singularity, Revised
-Manuscript v3."** It is not "FINAL StS Manuscript," and the copy in this folder is four versions
-behind it. Version 4 has been started in two more Docs, "v4 scaffold" (structure, no prose) and
-"StS Final Draft v4 Surviving the Singularity" (empty). The rest of this page describes how things
-stood on 19 November and is kept as the record of that method.
+**As of the evening of 22 November 2026 the current text is the Google Doc "StS Final Draft v4
+Surviving the Singularity."** It is not "FINAL StS Manuscript," and the copy in this folder is five
+versions behind it. "Revised Manuscript v3" is the version before it and is left as it was. The Doc
+"v4 scaffold" holds the plan and the notes waiting on the author, with no prose. The rest of this
+page describes how things stood on 19 November and is kept as the record of that method.
 
 **Read `BRIDGE.md` in this folder next.** It lists every copy of the book and gives the one way to
 change the manuscript. From the command line:

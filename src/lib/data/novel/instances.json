@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-22",
+  "asOf": "2026-11-23",
   "note": "Every copy of the novel, which version each one holds, and what it was made from. Google Docs are named by title only: this repository is public, so their ids stay out of it. `holds` is what was recorded on the asOf date. `checked` says how that was established, or that it was not.",
   "versions": [
     "2026-11-19",
@@ -72,9 +72,8 @@
       "title": "Surviving the Singularity, Revised Manuscript v3",
       "holds": "v3",
       "from": "doc-revised-v2",
-      "current": true,
-      "role": "The book right now, and the Doc being edited. The Revision Plan applied (193 changes), then more edits on 22 November: the band renamed Crop Dust, new scenes, about 2,300 words added. It keeps its 19 pictures.",
-      "checked": "Read on 22 November 2026: 19 pictures, and 5 tracked suggestions waiting on the author. The 193 changes of the plan were not checked one by one against the text."
+      "role": "The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is.",
+      "checked": "Compared with version 4 section by section on 22 November 2026: 32 of 47 sections differ. The 193 changes of the Revision Plan were not checked one by one against the text."
     },
     {
       "id": "doc-v3-text-only",
@@ -92,17 +91,18 @@
       "title": "v4 scaffold",
       "holds": "v4",
       "from": "doc-revised-v3",
-      "role": "The plan for version 4, filled out on 22 November by Claude Duet: the rulings (\"Decided so far\"), a profile for every character, open questions, a list of fixes, and four notes for every chapter. No prose.",
-      "checked": "Checked by Claude Code on 22 November 2026 against v3: all 44 chapter and Meanwhile sections have all four notes; 1,183 quotations, all in v3 except lines marked as cut or proposed. See its \"Checks\" section."
+      "role": "The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and \"Waiting on you\". Then the rulings (\"Decided so far\"), a profile for every character, the list of fixes, and four notes for every chapter. No prose.",
+      "checked": "Checked by Claude Code on 22 November 2026 against v3: 1,183 quotations, all in v3 except lines marked as cut or proposed. Claude Duet then updated it to match version 4; that update was not checked."
     },
     {
       "id": "doc-v4-final-draft",
       "kind": "google-doc",
       "title": "StS Final Draft v4 Surviving the Singularity",
       "holds": "v4",
-      "from": null,
-      "role": "Where version 4 will be written. Empty when it was made.",
-      "checked": "Read back on 22 November 2026: one empty paragraph."
+      "from": "doc-revised-v3",
+      "current": true,
+      "role": "The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November: the co-op is outside Ardell, Washington, eight hundred miles from Ma; every chapter has a new title; Chapter 33 has a new Friday dinner. It has the 19 pictures.",
+      "checked": "Read on 23 November 2026: 47 sections, about 80,260 words, 19 pictures, and 39 tracked suggestions from Claude Code waiting on the author. All 46 sections were read for the Editor's Letter. The author is editing it."
     },
     {
       "id": "site-compendium",
@@ -186,6 +186,21 @@
       "title": "StS Preorders and Discount Codes (from Supabase, 2026-11-22)",
       "about": "doc-revised-v3",
       "what": "A spreadsheet another session made on 22 November. It holds customer data, so it is listed by title only and was not opened."
+    },
+    {
+      "title": "StS v4 Chapter Arcs",
+      "about": "doc-v4-final-draft",
+      "what": "A story arc for each of the 46 sections, and the new chapter titles, written from version 4 by another session. Claude Code checked its 426 quotations against version 4: 6 are not word for word. The instructions it followed are in the Doc \"Claude Code prompt: v4 chapter arcs and chapter titles\" and on the branch novel/v4-arcs-titles-prompt."
+    },
+    {
+      "title": "OLD: V3 to V4 Readiness Audit (made without seeing the book; see the Editor's Letter)",
+      "about": "doc-v4-final-draft",
+      "what": "Made by a tool that could not see the book. It contains nothing about the text. Replaced by the Editor's Letter."
+    },
+    {
+      "title": "StS v4: Editor's Letter and Readiness Audit (Nov 23)",
+      "about": "doc-v4-final-draft",
+      "what": "The editorial read of version 4, 23 November: answers on arcs, sentences and voice, ten calls for the author, small continuity questions, notes for the Amazon file, and a punch list for all 46 sections. Its 124 quoted lines were checked against version 4."
     }
   ]
 }

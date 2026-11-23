@@ -43,6 +43,7 @@ Google Docs are named by title only, because this repository is public. Search D
 - **Surviving the Singularity, Revision Notes (Drive folder).** The Revision Plan, the Harshest Critics, and the v3 Change Log, which ends with the November 22 passes.
 - **Surviving the Singularity, Revised Manuscript v3 (compressed).pdf.** A PDF of v3 made early on 22 November, before that day's edits.
 - **StS Preorders and Discount Codes (from Supabase, 2026-11-22).** A spreadsheet another session made on 22 November. It holds customer data, so it is listed by title only and was not opened.
+- **manuscript/novel/prompts/v4-chapter-arcs-and-titles.md.** A prompt for Claude Code, 23 November: write a chapter arc for every chapter of v4 into a new Doc, "StS v4 Chapter Arcs", then write each chapter's title from its arc and put the titles in v4's contents and chapter headings.
 
 ## How to change the manuscript
 

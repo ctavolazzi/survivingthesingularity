@@ -186,6 +186,11 @@
       "title": "StS Preorders and Discount Codes (from Supabase, 2026-11-22)",
       "about": "doc-revised-v3",
       "what": "A spreadsheet another session made on 22 November. It holds customer data, so it is listed by title only and was not opened."
+    },
+    {
+      "title": "manuscript/novel/prompts/v4-chapter-arcs-and-titles.md",
+      "about": "doc-v4-final-draft",
+      "what": "A prompt for Claude Code, 23 November: write a chapter arc for every chapter of v4 into a new Doc, \"StS v4 Chapter Arcs\", then write each chapter's title from its arc and put the titles in v4's contents and chapter headings."
     }
   ]
 }

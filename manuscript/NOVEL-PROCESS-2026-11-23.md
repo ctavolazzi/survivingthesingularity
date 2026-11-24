@@ -333,6 +333,21 @@ in the book: Ch 3 "it had never crossed her mind to ask", Ch 36 "He thought abou
 been the captain all along", Ch 37 "then he heard Lou". The checker was taught these changes and
 passes (93, none failed).
 
+**Two contradictions fixed after a last cover-to-cover read.** He asked for the whole book to be read
+again, then: "fix any contradictions that this found." Fifteen readers covered all 3,634 lines. Every
+continuity flag was then checked by hand against the text; two were real.
+
+1. Ch 8: "Only his mother had asked about the amp." Ruby asks about it two lines earlier. Now "Until
+   now only his mother had asked about the amp."
+2. Ch 22: "Priya's question was still up in the corner, in her handwriting. Nobody had answered it."
+   Elijah answers it aloud in the scene before. Now "Nobody had wiped it off."
+
+Checked and left, because the book agrees with itself: the Chapter 8 title "Elijah Madrona" (it is
+the misspelled lanyard), Ma's list "one through five" (he stops at five in the video), "the fourth
+table" (Ch 38, the people who keep the food moving), the friend who gave him the amp (not Nate), and
+"close in five days" against Friday. These two edits went in by exact match without a fresh read of the
+whole Doc, because his own pass had begun; the checker was not run again after them.
+
 **Not touched, on his instruction at the start of that session:** v4, the Drive "StS Canon and Change
 Record", the Drive Change log and the Story Structure article. So the Canon record and the Change log
 do not list the changes above. This section does.

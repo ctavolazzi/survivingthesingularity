@@ -37,3 +37,10 @@ One entry per decision he makes about the book. Each entry gives the date, the d
 - Changed: v5, 17 lines: Ch 16 (2), 18, 19, 20, 22, 24, 25 (3), 26, 28, 29, 31, 33, 35, and Elijah's Appendix entry. Read back from v5: only those 17 lines differ.
 - Kept: "Okay, professor. Close the laptop." (Ch 26), "You want her on your side of that, professor." (Ch 35), and the two real uses of "community college" (Ch 15, Ch 18).
 - Also changed: the Character Bible (Lou's and Marta's tics, Marta's surface-want quote) and the Story Structure and Arcs article (Lou's nicknames), in Drive and the repo. Also logged in: Drive, "StS v4 final edits, Nov 23" folder, Change log.
+
+## Nov 24: v5 read fixes
+
+- His words, on the list of 3: "Accept all".
+- Changed: v5, 3 lines. Ch 26: Lou's "Like, two inches." is now "Two inches, they're saying." Ch 26: "not on that knee" is now "not on the knee that was still his" (Lou's titanium knee, Ch 20). Ch 32: the bonsai run is now "at the end of March", after the late-March stove scene. Read back from v5: only those 3 lines differ.
+- Not changed: Tyler is "twenty-one" in Ch 29, 30 and 37, which matches the book's own ages.
+- Also logged in: Drive, "StS v4 final edits, Nov 23" folder, Change log.

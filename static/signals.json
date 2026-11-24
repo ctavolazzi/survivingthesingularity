@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T00:40:37Z",
+  "generated_at": "2026-11-24T22:57:59Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -142,6 +142,32 @@
       ]
     },
     {
+      "id": "2611.31223",
+      "source": "arxiv",
+      "title": "Agentic AI for Intent Management and Control in Autonomous Communication Networks",
+      "url": "https://arxiv.org/abs/2611.31223",
+      "authors": [
+        "Burak Demirel",
+        "Yu Wang",
+        "Pablo Soldati"
+      ],
+      "summary": "Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network optimization and control functions largely unaddressed. This article proposes a triadic agentic AI framework that co-designs intent management and intent fulfillment through three agents: an interpreter, powered by a language model, that translates and refines intents into machine-readable optimizatio",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-11-23",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "interpret",
+        "llm",
+        "language model",
+        "automation"
+      ]
+    },
+    {
       "id": "2611.25898",
       "source": "arxiv",
       "title": "Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding",
@@ -191,6 +217,33 @@
         "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2611.31002",
+      "source": "arxiv",
+      "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+      "url": "https://arxiv.org/abs/2611.31002",
+      "authors": [
+        "Jinkun Liu",
+        "Yingze Wang",
+        "Situ Wang",
+        "Deyao Hong"
+      ],
+      "summary": "Agentic Robotics, in which foundation models act as coding agents to control robots through executable programs, has emerged as a compelling paradigm for embodied intelligence. Yet unlike software engineering, where massive executable environments power post-training, robotics remains constrained by small, manual benchmarks and in-distribution evaluation. To bridge this gap, we introduce RoboUniverse-10K, 10,807 interactive, resettable, and verifiable physics environments built from real-world videos via an automated Real2Sim and quality assurance pipeline. Each runs in an isolated, Harbor-com",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-23",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "embodied",
+        "robot",
+        "robotics",
+        "scaling"
       ]
     },
     {
@@ -521,6 +574,32 @@
         "agent",
         "autonomous",
         "planning",
+        "robot",
+        "robotics",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.30997",
+      "source": "arxiv",
+      "title": "Generalizing Agentic Robotics via Multi-Teacher On-Policy Distillation",
+      "url": "https://arxiv.org/abs/2611.30997",
+      "authors": [
+        "Xinxin Liu",
+        "Anh Dao",
+        "Wenrui Bao",
+        "Rafid Ahmed"
+      ],
+      "summary": "Building general-purpose robots is a central goal in robotics. Agentic robotics pursues this goal with planners that control robots through tool calls. However, existing methods either rely on proprietary models accessed through APIs, which incur high costs and latency, or post-train a planner with reinforcement learning (RL) in a single domain, requiring a separate specialist for each domain with incompatible tools. In large language model (LLM) post-training, multi-teacher on-policy distillation (MOPD) has been used to consolidate domain specialists into a single generalist. Yet whether MOPD",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-23",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
         "robot",
         "robotics",
         "llm",
@@ -989,8 +1068,8 @@
         "Wenqiao Zhang"
       ],
       "summary": "Vision-language model (VLM)-based agents offer a promising approach to robotic manipulation, yet remain limited by inadequate memory organization, uncertain failure attribution, and limited reuse of execution experience. We propose Embodied-Harness, a dual-agent framework that improves manipulation by refining the execution harness without updating model parameters. The Actor interacts with the environment through a robot-control interface, while the Reflector converts execution evidence into reusable operational guidance. Hierarchical Memory Architecture maintains short-term execution context",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-11-20",
       "score": 8.0,
       "raw_score": 16,
@@ -1351,6 +1430,56 @@
       ]
     },
     {
+      "id": "2611.31173",
+      "source": "arxiv",
+      "title": "EmboEagle: An Efficient Agentic Embodied Framework for Long-horizon Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.31173",
+      "authors": [
+        "Fan Xu",
+        "Zhongtao Wang",
+        "Hao Wu",
+        "Yitong Zhu"
+      ],
+      "summary": "Long-horizon robotic manipulation demands reliable execution across interdependent stages, yet standalone World-Action Models (WAMs) suffer from compounding physical errors, while stateless Vision-Language Model (VLM) supervision incurs prohibitive chunkwise latency and lacks 3D spatial persistence. We present EmboEagle, a closed-loop agentic framework that unifies subtask-conditioned WAM control, latent-space adaptive supervision, and memory-guided geometric recovery. First, we adapt sequential WAMs via decoupled two-stage flow matching that preserves cross-stage visual history while calibrat",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-23",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "embodied",
+        "robot",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.31098",
+      "source": "arxiv",
+      "title": "Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.31098",
+      "authors": [
+        "Jinzhong Gu",
+        "Jiakai Chen",
+        "Xinyi Cao",
+        "Yan Shen"
+      ],
+      "summary": "Scaling robot manipulation learning remains challenging due to the high cost of collecting real-world interaction data. Real-to-Sim-to-Real (Real2Sim2Real) offers a promising route by enabling policy learning in simulation grounded in real-world observations, yet scaling this paradigm across diverse tasks and physical interactions remains difficult. We introduce Real2Worlds2Real, a self-improving agentic framework that integrates scalable simulation-world construction with policy development. Given limited visual observations and task descriptions, its tool-orchestration harness constructs fai",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-23",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "self-improving",
+        "agent",
+        "agentic",
+        "robot",
+        "scaling"
+      ]
+    },
+    {
       "id": "2611.27353",
       "source": "arxiv",
       "title": "WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection",
@@ -1396,128 +1525,6 @@
         "llm",
         "language model",
         "retrieval"
-      ]
-    },
-    {
-      "id": "2611.27713",
-      "source": "arxiv",
-      "title": "MetaRigor: From Agentic Automation to Verifiable End-to-End Meta-Analysis Through Scientific Decision Boundaries",
-      "url": "https://arxiv.org/abs/2611.27713",
-      "authors": [
-        "Yifeng Xie",
-        "Chenke Li",
-        "Yangshuo Miao",
-        "Jingyuan Zheng"
-      ],
-      "summary": "Automated meta-analysis requires not only accurate numerical extraction but also the consistent preservation of result identity across stages, including the associated study, comparison, population, outcome, time point, and analysis conditions. We present MetaRigor, an LLM workflow framework for verifiable end-to-end evidence synthesis. MetaRigor organizes study results as Study x Target units and operationalizes scientific decision boundaries at the task level through Task Contracts, programmatic rules, and source binding. The model performs semantic interpretation that depends on study conte",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-11-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "interpret",
-        "llm",
-        "automation"
-      ]
-    },
-    {
-      "id": "2611.27725",
-      "source": "arxiv",
-      "title": "A Cognitive Agentic AI Framework for Interactive Process Analysis and Optimization",
-      "url": "https://arxiv.org/abs/2611.27725",
-      "authors": [
-        "Trung Ngoc Trinha",
-        "Roman Tschentscher",
-        "Trong Dong Nguyen",
-        "Trung Thanh Nguyen"
-      ],
-      "summary": "Complex multivariable process analysis and optimization require coordinated access to simulation, structured data, machine learning (ML), optimization, and scientific literature, often across disconnected software tools. We present a Cognitive Agentic AI Framework (CAAF) that enables interactive, iterative process investigation through natural-language prompts within an established flowsheet. Following harness-engineering principles, CAAF assigns task interpretation, planning, knowledge synthesis, and context management to a large language model while delegating numerical calculations to speci",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "interpret",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.27545",
-      "source": "arxiv",
-      "title": "Epistemic Social Learning: Latent Behavioral Structure under Endogenous Multi-Agent Interaction",
-      "url": "https://arxiv.org/abs/2611.27545",
-      "authors": [
-        "Jainendra Shukla",
-        "Dhruv Jaiswal",
-        "Divyanshi Beniwal",
-        "Kiriti Kanjilal"
-      ],
-      "summary": "In multi-agent interaction, a learner's actions shape the observations from which it infers other agents' behavior. A behavioral model may predict these observations well yet support poor adaptation when opponents change. We introduce Epistemic Social Learning (ESL), which couples fast, interaction-specific Bayesian beliefs with slower online learning of population-shared behavioral prototypes. Belief-conditioned decisions influence subsequent observations and, in turn, the representations learned from them. Under explicit regularity and averaging assumptions, we provide a conditional stochast",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "rag"
-      ]
-    },
-    {
-      "id": "2611.27499",
-      "source": "arxiv",
-      "title": "NavRSI: Recursive Harness Self-Improvement for Vision-and-Language Navigation",
-      "url": "https://arxiv.org/abs/2611.27499",
-      "authors": [
-        "Guangzhao Dai",
-        "Guoxin Lian",
-        "Shuo Wang",
-        "Shengbin Yue"
-      ],
-      "summary": "Frontier large language models (LLMs) have enabled vision-and-language navigation (VLN) through direct closed-loop perception and action. However, navigation performance depends strongly on the harness governing LLM-environment interactions, while existing harnesses largely rely on manually designed navigation tools, memory, and agent roles. We introduce NavRSI, a harness-centric recursive self-improvement framework that optimizes the navigation behavior of frozen LLMs through closed-loop experience. In each round, NavRSI iteratively collects navigation trajectories and failure diagnostics, em",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "agent",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.26335",
-      "source": "arxiv",
-      "title": "ClosureBench: A Benchmark for Reasoning under Closure Assumptions",
-      "url": "https://arxiv.org/abs/2611.26335",
-      "authors": [
-        "Francesco Belardinelli",
-        "Flavio Corradini",
-        "Matteo Leonesi"
-      ],
-      "summary": "AI agents built on large language models (LLMs) often answer questions from incomplete records. Missing information might be interpreted as unknown or false, depending on the completeness of the source. Current evaluations fail to distinguish these two aspects, as they are usually interwoven with other reasoning demands. We present ClosureBench, a benchmark that tests whether LLMs follow the stated rules for dealing with missing information. Every base scenario is tested under OWA, CWA, and LCWA, and only the treatment of missing information changes between variants. ClosureBench provides a ve",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-11-19",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "interpret",
-        "llm",
-        "language model"
       ]
     }
   ]

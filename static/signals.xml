@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 24 Nov 2026 00:40:37 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 24 Nov 2026 22:57:59 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -43,6 +43,13 @@
       <description>Large language model (LLM) agents can autonomously run neuroimaging analyses from research questions to reported findings. Existing agentic systems use tools to check that code runs and reported values match its output, but rely on LLM judgment to decide which results warrant scientific reporting. W... [Score: 10.5 | Flagged for: agi, agent, agentic, autonomous, llm] Authors: Yuxiang Wei, Lijing Zhu, et al.</description>
     </item>
     <item>
+      <title>Agentic AI for Intent Management and Control in Autonomous Communication Networks</title>
+      <link>https://arxiv.org/abs/2611.31223</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.31223</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network op... [Score: 10.0 | Flagged for: agent, agentic, autonomous, interpret, llm] Authors: Burak Demirel, Yu Wang, et al.</description>
+    </item>
+    <item>
       <title>Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding</title>
       <link>https://arxiv.org/abs/2611.25898</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.25898</guid>
@@ -55,6 +62,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.16082</guid>
       <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
       <description>Turbulence modeling relies on human choices of closure form, physical inputs, and tunable parameters. Training closures a posteriori is efficient only with gradients through long chaotic rollouts, which few solvers provide. Most a posteriori approaches therefore resort to gradient-free optimization,... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, autonomous, llm] Authors: Yi Liu, Xiantao Fan, et al.</description>
+    </item>
+    <item>
+      <title>RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments</title>
+      <link>https://arxiv.org/abs/2611.31002</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.31002</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Agentic Robotics, in which foundation models act as coding agents to control robots through executable programs, has emerged as a compelling paradigm for embodied intelligence. Yet unlike software engineering, where massive executable environments power post-training, robotics remains constrained by... [Score: 9.5 | Flagged for: foundation model, agent, agentic, embodied, robot] Authors: Jinkun Liu, Yingze Wang, et al.</description>
     </item>
     <item>
       <title>FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval, MCP Tool Use, and Provenance-Aware Evidence Verification</title>
@@ -148,6 +162,13 @@
       <description>Large Language Models (LLMs) are widely adopted for reflective error correction in task planning; however, existing approaches primarily rely on autonomous exploration, rendering them prone to accumulating erroneous experiences during early interactions with new environments. To address this limitat... [Score: 9.0 | Flagged for: agent, autonomous, planning, robot, robotics] Authors: Qingmiao Liang, Jiatao Zhang, et al.</description>
     </item>
     <item>
+      <title>Generalizing Agentic Robotics via Multi-Teacher On-Policy Distillation</title>
+      <link>https://arxiv.org/abs/2611.30997</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.30997</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Building general-purpose robots is a central goal in robotics. Agentic robotics pursues this goal with planners that control robots through tool calls. However, existing methods either rely on proprietary models accessed through APIs, which incur high costs and latency, or post-train a planner with ... [Score: 8.5 | Flagged for: agent, agentic, robot, robotics, llm] Authors: Xinxin Liu, Anh Dao, et al.</description>
+    </item>
+    <item>
       <title>AMARIS: Merging Generalist and Specialist LLMs via Adaptive Subspace Inheritance</title>
       <link>https://arxiv.org/abs/2611.27369</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.27369</guid>
@@ -195,27 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.10819</guid>
       <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
       <description>Real-time cooperative perception (CP) in multi-agent traffic environments is highly resource-intensive, which posing scalability challenges for large-scale deployment. Efficiency can be significantly improved by selectively performing CP only in safety-critical scenarios and for key occluding object... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, reasoning, language model] Authors: Chengyuan Ma, Shixiao Liang, et al.</description>
-    </item>
-    <item>
-      <title>Alignment by Confident Debate: Preference Learning from Multi-Agent Debate</title>
-      <link>https://arxiv.org/abs/2611.09568</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.09568</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Post-training language models for reasoning typically rely on gold answers, task-specific verifiers, or learned reward models, limiting scalability when such signals are scarce. Multi-agent debate offers a self-supervised alternative, but converting debate into reliable training supervision remains ... [Score: 8.5 | Flagged for: agent, multi-agent, reasoning, alignment, language model] Authors: Nikhil Verma, Dingxian Wang, et al.</description>
-    </item>
-    <item>
-      <title>The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI</title>
-      <link>https://arxiv.org/abs/2611.08428</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.08428</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of... [Score: 8.5 | Flagged for: agent, agentic, llm, language model, retrieval] Authors: Julian Kunkel, Ali Doosthosseini</description>
-    </item>
-    <item>
-      <title>Task-Efficient Agent Evaluation Using Cached Traces</title>
-      <link>https://arxiv.org/abs/2611.06803</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.06803</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each ... [Score: 8.5 | Flagged for: agi, agent, agentic, llm, rag] Authors: Ben Johnson, Hayden Helm</description>
     </item>
   </channel>
 </rss>

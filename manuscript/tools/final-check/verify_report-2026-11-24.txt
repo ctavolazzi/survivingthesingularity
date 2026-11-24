@@ -1,0 +1,114 @@
+VERIFY v5   2026-11-24 20:33   Doc revision AHj4eMTKC_xZh0JD3A
+PASS 93   FAIL 0   WARN 0   OPEN 7
+
+== A coverage
+  PASS  Doc text today is identical to the text that was read line by line   [sha256 3384929ad6b10ecd, 3629 lines]
+  PASS  The logged read ranges cover every line, first to last   [lines 1 to 3629, no gap]
+  PASS  No line is long enough to be cut off by the reader (limit 2000 characters)   [longest line is 843 characters]
+  PASS  The Docs API copy and the text export are the same document   [3610 paragraphs rebuild the export exactly]
+== B edits
+  PASS  Today's text == session-start text + the 16 approved edits, and nothing else   [15 line edits and 1 paragraph move replay exactly]
+  PASS  Each approved edit is present exactly once and its old wording is gone   [15 of 15]
+  PASS  Ch 39: the phone paragraph now comes before the madrones paragraph
+== C locked
+  PASS  Every locked line is present, the right number of times, unchanged since session start   [16 locked lines]
+  PASS  Ch 39 Bear Flag ending is word for word what it was at session start
+  PASS  Ch 38 machine speech is word for word what it was at session start
+  PASS  Ch 19 "Immediately the vibe shifted." stays cut
+== D rules
+  PASS  No em dash anywhere
+  PASS  No en dash anywhere
+  PASS  No figure dash anywhere
+  PASS  No bar anywhere
+  PASS  No minus sign anywhere
+  PASS  No hyphen used as a dash
+  PASS  Straight quotes only
+  PASS  Ellipses are the single character, never three dots
+  PASS  "never once" appears only inside dialogue
+  PASS  "hand flat" only for the madrone, the amp, the pit and Patricia's binder
+  PASS  "Thoreau" only from Ch 33 on   [{'Ch 33': 1, 'Ch 35': 2}]
+  PASS  "Ivy League" only in Ch 20 to 26   [{'Ch 20': 1, 'Ch 26': 1}]
+  PASS  "professor" exactly twice, Ch 26 and Ch 35   [{'Ch 26': 1, 'Ch 35': 1}]
+  PASS  Nobody says "college" (only "community college" as a place)
+  PASS  Marta's "spreadsheet" is not spoken from Ch 37 on   [last spoken in 31]
+  PASS  Ch 37: Marta says "Go on, Elijah"
+  PASS  "bud" is spoken (Frank, and Curtis in Ch 17)   [{'Ch 17': 2, 'Ch 25': 1, 'Ch 34': 1}]
+  PASS  Grace has no surname on the page
+  PASS  Canon lines are on the page, once each, in the right chapter   [21 canon lines]
+  PASS  Ch 38: Grace sings and never plays the amp
+  PASS  The co-op is in Washington and the Architect is Nadzieja Czekaj
+  PASS  The Epilogue ends on Elijah sending Grace the recording
+== E continuity
+  PASS  Thanksgiving 2027 is Thursday, November 25
+  PASS  December 28, 2027 (last route box) is a Tuesday, the route day
+  PASS  "We stop in five weeks" fits Nov 25 to Dec 28
+  PASS  The models go dark June 12, 2026, a Friday, and come back June 30: eighteen days
+  PASS  Late 2022 toast, laid off eleven months later, in fall 2023
+  PASS  The amp always weighs twenty-one pounds   [3 mentions, all twenty-one]
+  PASS  The co-op is always nineteen households   [15 mentions, all forty / newest / nineteen / the / which]
+  PASS  No stray household count
+  PASS  The route is always a hundred and forty boxes or households   [8 mentions, all a hundred and forty / hundred and forty]
+  PASS  The Sunday call is always 9:40   [9 mentions, all 9:40]
+  PASS  The drive north is always eight hundred miles   [8 mentions, all eight hundred]
+  PASS  Bidwell always has eleven companies   [4 mentions]
+  PASS  Bidwell's parcels: fifty-three (fifty-some where Elijah is estimating)   [['fifty-some', 'fifty-three', 'fifty-three']]
+  PASS  Elijah always has eleven notebooks in Act Four   [4 mentions]
+  PASS  Manny's well is four feet down both times
+  PASS  The power bill is $211.46, then $211
+  PASS  Walt's tractor repair is sixty dollars every time
+  PASS  Every 'eighteen days' is eighteen   [4 mentions]
+  PASS  Lou's wife: thirty-one years of fourth grade (twice now, not three times)
+  PASS  The checks: sixteen months since the vote, at half
+  PASS  Elijah's age only goes up: 35, 36, 36, 37   [[('Ch 7', 'thirty-five'), ('Ch 15', 'thirty-six'), ('Ch 15', 'thirty-six'), ('Ch 20', 'thirty-seven')]]
+  PASS  Tyler's age only goes up: 19, 19, 20, 20, 21, 21, 21   [[19, 19, 20, 20, 21, 21, 21]]
+  PASS  The download count only goes up: 51, 58, 66, 80 thousand
+  PASS  The bet is the same everywhere: Thanksgiving 2027, loser cooks
+  PASS  Grace's phone: laid by her fork, then in her back pocket when she leaves the table
+  PASS  Visitor book: Ray's Sundays start in the first spring, after Elijah's first-winter Sundays stop
+  PASS  The note is four words and reads "I love you too"
+  PASS  "You're good" is two words, as the next line says
+  PASS  The seat belt runs through the amp handle in Ch 13, 14 and 15, and is buckled across nothing in Ch 37
+  PASS  The Appendix timeline carries the same dates as the chapters
+== F structure
+  PASS  The contents list matches the headings, in order   [53 headings]
+  PASS  Chapters run 0 to 39 with none missing or repeated
+  PASS  Four acts and four Meanwhile interludes
+  PASS  Order: Author's Note, the novel, Epilogue, About This Book, Afterword, Appendix
+  PASS  The Doc has one tab
+  PASS  No pending suggestions
+  PASS  19 pictures, each in its own paragraph, same as at session start
+  PASS  Scene breaks: same count as at session start, none doubled   [78 scene breaks]
+  PASS  No stray empty paragraphs
+  PASS  Every quotation mark is closed (a speech that runs on reopens in the next paragraph)   [1 paragraph(s) run on correctly]
+  PASS  Every parenthesis is closed
+  PASS  No heading appears twice
+== G formatting
+  PASS  Body text is in one font   [{'(inherited)': 461910}]
+  PASS  Body text is in one size   [{'(inherited)': 461910}]
+  PASS  No underline, strikethrough, highlight, link or raised text in the body
+  PASS  Bold text is exactly what it was at session start   [46 bold runs]
+  PASS  Paragraph styling is exactly what it was at session start (the moved paragraph included)   [5 distinct paragraph styles, same counts]
+  PASS  Every one of the 53 headings is a real heading paragraph (so the Kindle contents can find it)   [{'HEADING_1': 55, 'NORMAL_TEXT': 3546, 'HEADING_2': 9}]
+  PASS  No paragraph of prose is styled as a heading
+== H italics
+  PASS  Nothing that was italic at session start has lost its italics   [268 italic spans at session start, all still italic]
+  PASS  All 31 thought, typed and remembered spots fixed this session are italic
+  PASS  Every in-story all-capitals phrase is italic (abbreviations, SHOCKED and LADDER.xlsx excepted)
+== I hygiene
+  PASS  A thought, typed or written cue with no italics within reach   [3 flagged, all reviewed and accepted]
+  PASS  The same word twice in a row   [2 flagged, all reviewed and accepted]
+  PASS  Spacing or punctuation slips (space before a mark, missing space, doubled mark, double space)   [nothing found]
+  PASS  Spelling: every distinct word in the book is in the vocabulary that was read through word by word   [5395 distinct words, none new]
+  PASS  A sentence of nine or more words that appears more than once   [7 flagged, all reviewed and accepted]
+  PASS  A whole paragraph that appears twice   [nothing found]
+  PASS  Four or more paragraphs in a row opening on the same word   [1 flagged, all reviewed and accepted]
+  PASS  A sentence in narration that starts with a lower-case letter   [1 flagged, all reviewed and accepted]
+
+== OPEN (not provable by code, not counted as passed)
+  OPEN  Ch 36: "She shook both hands up by her chin." (gesture unclear, held for the author's words)
+  OPEN  Ch 36: "There was disgust in her face, and rage" (names the feeling, held for the author's words)
+  OPEN  Ch 39: the stream cuts from the prayer straight to Grace's face (author's call; reads as a cut)
+  OPEN  Author's open items: the parade joke (Ch 19, Ch 25), a "looked at" pass (Ch 15, Ch 17), the repeats "forty", "nine days", "like a kid"
+  OPEN  Afterword: the United Nations quotation was matched by web search only on 24 Nov (the search result gives the same words from the UN page "Global Issues: Food"); the page itself could not be opened from the checking machine
+  OPEN  How the file renders on a Kindle (page breaks, pictures, contents links) has not been looked at
+  OPEN  Judgment no code can make: whether any scene is confusing, runs long, or fails to land

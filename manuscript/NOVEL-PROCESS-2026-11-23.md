@@ -215,33 +215,130 @@ every voice is its own, consistent, and of 2026. Tyler and Wren sound their age.
 and beats stay. Three readers have marked dated lines in Chapters 16 to 38 as a start; none of them
 is applied.
 
+## 9. The final edit of 24 November
+
+A later session on 24 November, working only in v5. His brief: finish the read from the Chapter 33
+tomato scene to the end, report each finding with the words as they are and the words proposed, and
+wait for his yes. Then, in his words: "Proceed to the finish line my friend", "Read the whole book
+now, start to finish", "fix the italics", "fix the Ch 0 ones too", "fix the all caps and the Epilogue
+names too".
+
+**Read.** All of v5, lines 1 to 3,629 of the plain text export, in order, after the edits went in.
+
+**16 edits to the words**, each on his yes. Before, then after:
+
+1. Ch 5: "He was sleeping about four hours a night." Now "Elijah was sleeping about four hours a night."
+2. Ch 17: "He got the notebook out and turned to the names page." Now "Elijah got the notebook out..."
+3. Ch 13: "The key to the house stayed on its kitchen table, on top of the mail." Now "He left the key
+   to the house on its kitchen table, on top of the mail."
+4. Ch 15: "The amp rode on the floor beside him, like a passenger who didn't care for conversation."
+   Now "The amp rode on the floor beside him with the belt through its handle, like a passenger..."
+5. Ch 32: "He was on grounds now, and he did the work." Now "Elijah was on grounds now, and he did the work."
+6. Ch 38: "Her phone was in her back pocket." Now "Her phone had gone into her back pocket when she
+   left the table."
+7. Ch 37: "That one went back to the first November." Now "That one went back to the first spring."
+   Ray's Sundays begin after Elijah's stop (Ch 22: "Her Sunday company didn't come").
+8. Ch 34: "which nobody was saying out loud." Now "which nobody was saying out loud tonight."
+9. Ch 39: the paragraph that begins "The phone started going off on the seat before he was out of the
+   lot" moved above "He went the long way". No words changed.
+10. Ch 33: "He wasn't a big man, but he had a titanium knee". Now "Lou wasn't a big man, but he had a
+    titanium knee".
+11. Ch 38: "scooted her chair six inches the other way." Now "scooted her chair six inches away from her."
+12. Ch 33: "She had her hand flat on the table." Now "She had her palm pressed to the table." (the
+    "hand flat" rule).
+13. Ch 35: "She taught fourth grade thirty-one years. Said it never once felt like the cosmos." Now
+    "Said fourth grade never once felt like the cosmos." (the years are already in Ch 20).
+14. Ch 34: "toward Patricia, because the network's name was on the banner and she spoke for the
+    network." Now "toward Patricia, because she spoke for the network."
+15. Ch 33: "I think they're the ones who hold the line." Now "I think it's them."
+16. About This Book: the sentence that gave the book's length now ends "they got whittled down to
+    this book."
+
+**Held, not changed.** Ch 36: "She shook both hands up by her chin." Ch 36: "There was disgust in her
+face, and rage, and he just stood there." Ch 39: the stream cuts from the prayer to Grace's face.
+These wait for his words.
+
+**Italics, 60 ranges, no words changed.** Thoughts, typed and written words, and remembered lines
+(Ch 3 to Ch 38 and the Epilogue's "Worm."), four in Chapter 0, and the in-story capitals (signs,
+captions, the notebook titles) with the two names in the Epilogue. Left plain on purpose: the title
+page, abbreviations, "SHOCKED" (Ch 21) and "LADDER.xlsx". The full list is in
+`manuscript/tools/final-check/verify_v5.py`, group H.
+
+**The check.** He asked for code: "I need this to be ironclad." `manuscript/tools/final-check/`
+holds it. Last run: 93 pass, 0 fail, 7 open items that code cannot settle. A second script plants
+21 faults and requires each to be caught; all 21 were. A fresh export at the end of the session was
+the same bytes as the text that was read (sha256 begins `50569d5afaaeff33`).
+
+**Storylines and voices.** Read against the Character Bible and Story Map 5. One real exception to a
+voice note: Lou preaches in Ch 35. The Bible now says so. v5 was not changed for it.
+
+**The Character Bible.** On his word ("update the character Bible to match the text", then "add the
+rest of the characters"): 21 corrections to the six entries already there, 21 new entries and a list
+of minor characters. Every quotation was looked up in v5 by code. Drive Doc and
+`manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md` now hold the same text.
+
+**The Afterword's United Nations quotation.** Searched on his word. The search result gives the same
+words from the UN page "Global Issues: Food" (headed "A wake-up call to fight hunger"): "Even though
+today's global food production is enough to feed everyone on the planet, hunger continues to
+increase in some parts of the world." The page itself could not be opened from the session's
+machine, so this is a match by search, not a read of the page.
+
+**Not touched, on his instruction at the start of that session:** v4, the Drive "StS Canon and Change
+Record", the Drive Change log and the Story Structure article. So the Canon record and the Change log
+do not list the changes above. This section does.
+
 ## Locked lines
 
 These stay word for word. A pass may flag them, never change them.
 
 - The Chapter 39 bar ending (apart from the two words above).
 - The Chapter 0 prayer passage, his rewrite.
-- Ch 19: "Immediately the vibe shifted."
+- Ch 19: "Immediately the vibe shifted." He cut this line himself on 24 November. It stays cut.
 - Ch 20: "pure ivory tower..."
 - Ch 26: Wren's "wouldn't it just leave".
 - Ch 31: "Then, because he was who he was, he asked it".
-- Ch 32: "It caught on the first strike."
+- Ch 32: "It caught on the first strike." He joined it to the sentence before on 24 November: "She struck it, and it caught on the first strike."
 - Ch 34: "His face went hot. He felt like an asshole."
 - Ch 35: the notebooks paragraph, and "He'd never really thought about that before."
 - Ch 37: "Instead he changed the name to Don't."
-- Ch 38: the wink line.
+- Ch 38: the wink line, and the machine's speech.
 - R9, "Nobody had asked him to." (all three), S22 and S50.
 
 Other standing decisions: Lou calls Elijah "college", "professor" and "Thoreau" on purpose. The book
 never says who Bidwell's watcher is.
 
-## Where v5 stands
+## Where v5 stands at the end of 24 November
+
+- 3,610 paragraphs, 53 headings (the Author's Note, Chapters 0 to 39, four acts, four Meanwhiles, the
+  Epilogue and the back matter), 19 pictures, 78 scene breaks, one tab.
+- No suggestions waiting. No em or en dashes. Straight quotation marks throughout, on his rule.
+- The 16 edits and the italics of section 9 are in. The checker passes.
+- He has not started his hand pass: the export taken last was unchanged.
+
+## Where v5 stood early on 24 November
 
 - Six scenes in and read back against the drafts. No em dashes.
 - About 88,100 words in the whole Doc, and about 85,000 from Chapter 0 to the end of Chapter 39 (v4
   was about 81,000 for the same span).
 
-## What is left
+## What is left at the end of 24 November
+
+1. His own hand pass through v5. His words: "my next step is going to be going through manually
+   reading the whole thing, manually editing and changing anything that I don't want or that I'd
+   like to change myself."
+2. His to decide, and nobody else's: the two held lines in Ch 36, the stream cut in Ch 39, the parade
+   joke (Ch 19, Ch 25), a "looked at" pass on Ch 15 and Ch 17, and the repeats "forty", "nine days"
+   and "like a kid".
+3. After his pass: run `manuscript/tools/editor-pass/preflight.py` and groups C to F and I of the
+   final check on a fresh read.
+4. The Kindle file and the KDP upload, which is his. Launch is Thursday 26 November. Nobody has
+   looked at how the file renders on a Kindle.
+5. The Drive Canon record and Change log do not have the changes of section 9 (see there).
+
+## What was left early on 24 November
+
+Kept as written then. Items 1 and 7 are done: the book no longer states a count, and the Drive
+bridge page names v5.
 
 1. The Author's Note still says "about 83,544". It gets the final count after the polish passes.
 2. Six polish passes on v5, on his "Do it please": the first pages, every chapter's first and last

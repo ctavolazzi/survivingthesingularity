@@ -5,8 +5,11 @@ One entry per character: what they want, where they come from, and how they talk
 ## Elijah Gaelen Madrone
 
 **Core motivation**
-- Surface want: for people to see what's coming and believe him. "I just want people to see what's coming" (Ch 8).
-- Real want (proposed): to be forgiven for what his help cost: three jobs at the Bear Flag and his mother's farm. "Am I crazy?" (Ch 0, 7, 15, 31) is the fear on top of it. He learns to be useful without choosing for anyone, and in Ch 39 finds out the three realtor employees are fine.
+- Surface want (his call): to be heard and believed. "I just want people to see what's coming" (Ch 0, Ch 8). "Am I crazy?" (Ch 0, 7, 15, 31) is the fear under it.
+- Real want (his call): to belong.
+- Under it (proposed): being believed is how he tries to earn a place. He counts only when he's right, and he can't stand being alone with what he sees.
+- Payoff (proposed): the co-op takes him in once he stops needing to be right. Ma believed him all along: she copied his list into her notebook and filled the barn with buckets. "She had believed him. One person had, and it was her." (Ch 13)
+- Mirror (proposed): Grace needs someone to stay; Elijah needs somewhere to belong. Neither can ask for it.
 
 **Backstory (checked against v5)**
 - A Sonoma County farm kid. Ma's place is ten miles out of town, and the madrone hill behind it was his grandmother's: "That's your tree... It can burn to the ground and come back from the root" (Ch 0).
@@ -68,7 +71,124 @@ One entry per character: what they want, where they come from, and how they talk
   - "People will vote for the fire if it's warm." (Ch 27)
 
 **Flags (dossier vs v5; v5 not changed)**
-1. The dossier's title is "Grace Arden Land," but no surname appears in v5 or the Appendix. He decides whether she has one.
+1. Full name Grace Lane (his call, Nov 24). It isn't used on the page; she's just Grace. Her dossier said "Grace Arden Land" and is now corrected.
 2. The dossier quotes "I have to save them" (Ch 36). v5 doesn't have that line; the nearest is "People say no to all kinds of things that would save them."
 3. The dossier says she "lights the Fisher" in Ch 32 and Ch 38. In v5 it's Walt's stove ("Grace lit the stove at noon," Ch 38).
 4. The dossier lists her want as "to save everyone" and her flaw as "can't let people choose." That's now the surface want, under his real want above.
+
+## Lou Parker
+
+**Core motivation**
+- Surface want: to feed the 140 households and keep the co-op's tools in the co-op's hands. "Long as the robot's mine" (Ch 20).
+- Real want (proposed): never to be bought again, and to hand what he knows to someone who will stay. He lost his orchard to a single buyer. He calls Elijah "son" and tells him the hard thing: "You'd rather be gone and tidy than here and a mess" (Ch 37).
+
+**Backstory (checked against v5)**
+- He grew pears outside Ukiah until a single buyer took the orchard (his story in Ch 34).
+- In Ch 17 he's "about sixty," cracking walnuts without looking at his hands. In Ch 20 he's sixty-one. One knee is titanium, "and the titanium one's the good one" (Ch 20).
+- His wife taught fourth grade for thirty-one years and left him her pension (Ch 20). The joke "cheaper than my wife's nephew" is in Ch 17.
+- He grows most of what's on the table, on land that isn't his.
+- Appendix only: his mother and Bidwell's mother were half-sisters, so he and Bidwell are cousins. Nobody says so in the book.
+- Endings: he takes the shouse key and sees the amp left by the stove, "the first untidy thing you've done since you got here" (Ch 37). At Thanksgiving he pours one glass at the empty place (Ch 38).
+
+**Voice (2026)**
+- Length: short questions that sound simple and aren't, then one hard statement. When he tells a story it runs long and plain, with no lesson stated.
+- Vocabulary: a grower's numbers (cost, hands, households, rows), dry profanity ("Shit," said happily), and plain words for big ideas ("five scared people and a clock").
+- Tics: nicknames that tell you where Elijah stands with him: "college," "professor," "Thoreau," then "son." He answers a question with a question. He changes the subject to the work ("The plants look thirsty").
+- Would never say (proposed): a slogan, a policy word, or anything that sounds like a sermon. He's sixty-one in 2026, a grower who uses a phone and a laptop when he has to, so no "reckon" or old-timey talk.
+- Real lines from v5:
+  - "Who ate it at your place?" (Ch 20)
+  - "That's up to you, big boy." (Ch 35)
+  - "That's the whole trouble with you, son. You'd rather be gone and tidy than here and a mess." (Ch 37)
+
+**Flags (dossier vs v5; v5 not changed)**
+1. The dossier quotes "I'm saying pick one" (Ch 26). It isn't in v5.
+2. The dossier says Curtis gives him the hose ("Keep it," Ch 37) and he lifts it like a trophy. Neither is in v5.
+3. The dossier names the nephew Kyle. v5 doesn't name him.
+4. The cousin tie to Bidwell is only in the Appendix, so readers learn it there. That fits his call that the watcher is never revealed, but it's worth his knowing that it's the only place it appears.
+
+## Marta Okonkwo
+
+**Core motivation**
+- Surface want: nothing leaves the shed that can hurt somebody, and nothing gets big. "That's not a limitation, college. That's the load-bearing wall" (Ch 16).
+- Real want (proposed): never again to vouch for someone and watch them get hurt. That's Emeka. "It doesn't bring him back. I know that. It's what I can do before noon" (Ch 31).
+
+**Backstory (checked against v5)**
+- She gave fifteen years to a plant that put nine hundred people out in 2009: "There was no machine. There was a spreadsheet and a tax break" (Ch 16).
+- Her cousin Emeka was nineteen. She got him on at the plant and walked him in herself. In his third week, a man who'd run the press for twenty years showed him how to skip the guard to make rate. It was a Tuesday, and she had called her aunt that morning to say how proud she was (Ch 31).
+- She has broken welds in a vise for twenty years (Ch 31). She has a bad shoulder (Ch 18), and it goes on the list of ways the co-op dies (Ch 29). By Ch 37 "the shoulder was done," and Tyler hauls the pipe on Elijah's last coupon.
+- She modeled in Los Angeles at sixteen, for two years she never talks about (Ch 25, Appendix). That's why she watches Elijah around Grace.
+- She fixed Walt's tractor for sixty dollars: "the fuel line, not the pump. Dealer wanted nine hundred" (Ch 23). That wins Irene.
+- She tells the Gary and Sal story from her line at the plant (Ch 18).
+- Endings: his last coupon bends and holds, "It became the steel," "Go on, Elijah" (Ch 37). At Thanksgiving she says "as we forgive" (Ch 38).
+
+**Voice (2026)**
+- Length: the shortest sentences at the table. Numbered points ("Okay. One."). Spec-sheet rhythm, "the tone she used for load ratings."
+- Vocabulary: shop words (swarf, bead, coupon, lockout, rate) and history said flat (Parliament, enclosure, the Luddites).
+- Tics: "We'll see" is her only yes. "college" until Ch 37. She ends a speech on a chore ("Pass the beans." "Swarf goes in the red bin."). Glove off finger by finger before she says the real thing.
+- Would never say (proposed): praise out loud, her own feelings unprompted, or anything about the modeling years.
+- Real lines from v5:
+  - "Swarf goes in the red bin. We'll see." (Ch 16)
+  - "Ugly is a maintenance feature. Ugly means the next guy can see how it works." (Ch 19)
+  - "I have been breaking welds in a vise for twenty years. It doesn't bring him back. I know that. It's what I can do before noon." (Ch 31)
+
+**Flags (dossier vs v5; v5 not changed)**
+1. The dossier calls her shoulder "right shoulder (rotator cuff)" with "physical therapy on Tuesdays." v5 says only "her bad shoulder" and never gives the side or the therapy.
+2. Emeka's timing: "twenty years" in the vise (Ch 31) puts his death around 2007, before the 2009 closing. That fits, and nothing on the page contradicts it.
+
+## David McGrath
+
+**Core motivation**
+- Surface want: for Elijah to come back, to the bar, to the stool, to a normal life. "You could just come back" (Ch 13).
+- Real want (proposed): not to lose a second person he loves to an obsession. "I watched my dad go like this for ten years, with the horses" (Ch 7).
+
+**Backstory (checked against v5)**
+- He rode the same school bus as Elijah for eleven years and has poured his beer for thirteen (Ch 0). He has been friends with Elijah since they were eight (Ch 39).
+- Ray, his father, had the horses ("Mine was horses," Ch 5). One big win at Golden Gate Fields bought the Bear Flag, which Ray put in his wife's name before he quit: "You and your mother shouldn't have to pay the interest on my sins" (Ch 5). Ray hung the serenity prayer.
+- He's only sat on the customer side twice in fourteen years: the night Elijah's father died, and the Giants' 2010 Series. The third time is the Ch 7 intervention.
+- In Ch 13 he shows up with a hand truck, offers shifts ("Benny quit"), and takes the no.
+- Ray dies (Ch 22). Elijah misses the funeral.
+- The visitor book at the rose garden shows "D. McGrath, 10:15" every Sunday for more than two years (Ch 37). He tells Elijah who Barry Whitlow was (Ch 39).
+
+**Voice (2026)**
+- Length: short, dry, bartender-timed. He lets a line sit and wipes the rail.
+- Vocabulary: bar talk and old in-jokes ("scaring the hoes"), prices, plain care with no therapy words. He's "Dave" only to Elijah.
+- Tics: "Mad" every time. He gives money back ("Your money's no good here"). He says the hard thing gently and then waits.
+- Would never say (proposed): "crazy" to Elijah's face (the dossier notes he never does), or "I told you so."
+- Real lines from v5:
+  - "You're scaring the hoes, Mad." (Ch 0)
+  - "You don't have to go anywhere, Mad. I've got shifts. Benny quit." (Ch 13)
+  - "You're not that powerful, Mad. I've been trying to tell you since we were eight." (Ch 39)
+
+**Flags (dossier vs v5; v5 not changed)**
+1. The dossier says he has poured Elijah's beer for fifteen years. v5 says thirteen (Ch 0), and fourteen years by Ch 7. The page is consistent with itself.
+2. The dossier quotes "I've been saving the seat since 2023" and "Heard you've got a stove... I'm not doing it twice." Neither is in v5.
+3. The dossier says he moves "the Fisher" in Ch 13. In v5 it's the amp.
+
+## Linda Madrone, "Ma"
+
+**Core motivation**
+- Surface want: for her son to be fed and settled. "Are you eating? You sound thin." "You'd sleep better if you'd taken that job at the county like I told you" (Ch 3).
+- Real want (proposed): to keep her boy safe in the only way she knows, without asking what he wants. That's his direction for her: she thinks about what she wants for him, never what he wants for himself. The barn of buckets is that want: "She knew her boy was frightened of something, and she knew what you did about a worry" (Ch 13).
+
+**Backstory (checked against v5)**
+- Her name is Linda (Manny calls her that, Ch 13). The Gaelen in Elijah's name is for her Irish side (Ch 0). Her husband was Joe. Her farm is ten miles out of town, and the madrone hill behind it was her mother's land.
+- Before Joe she went two summers with Barry Whitlow, who pitched for Analy (Ch 39).
+- She calls at 9:40 every Sunday with the radio on, and eats ice cream out of the little tub every night (Ch 11). Manny has the next place over and has fixed things on theirs since Elijah's father got sick (Ch 13).
+- She has a stroke in September 2024 (Ch 13). In the barn: pallets of white buckets, and a notebook that copies his list: "Elijah is worried about the computers. Be nice about it." After the stroke she asks for Barry.
+- She moves to the place with the rose garden, ten minutes from the farm. She keeps his stove photo on the windowsill (Ch 24). The church ladies give her a Porchlight lamp for her birthday, and it greets Elijah with "You must be Barry" (Ch 37). He reads her the book (Ch 39).
+
+**Voice (2026)**
+- Length: short, warm, and practical, with the dig delivered smiling.
+- Vocabulary: kitchen and farm (the pot, the pump, the pressure switch), neighbors by name, "baby."
+- Tics: "baby" at the end. A question that turns the worry back on him ("So what do you want me to do about it?"). After the stroke, "Barry?"
+- Would never say (proposed): that she's worried, or that she needs anything.
+- Real lines from v5:
+  - "It's just tools, baby. There's always somebody has to fix the tools. That'll be you." (Ch 3)
+  - "Okay, baby. So what do you want me to do about it?" (Ch 3)
+  - "Barry," she said. (Ch 13)
+
+**Flags (dossier vs v5; v5 not changed)**
+1. The dossier quotes "Is that Mom's stove?" v5 doesn't have it. The grandmother's stove is gone from the book; the shouse stove is Walt's.
+2. The dossier says "the order slips ate the mortgage." v5 doesn't say how the money went. The man from Sacramento brings the sale date, the amount owing and the back taxes (Ch 13).
+3. The dossier gives her age as "about 70." v5 doesn't state it.
+4. The dossier's "three hours from home" note (Ch 15, 24, 29) is fixed: v5 says eight hundred miles.

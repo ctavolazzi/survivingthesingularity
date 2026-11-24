@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "note": "Every copy of the novel, which version each one holds, and what it was made from. Google Docs are named by title only: this repository is public, so their ids stay out of it. `holds` is what was recorded on the asOf date. `checked` says how that was established, or that it was not.",
   "versions": [
     "2026-11-19",
@@ -7,7 +7,8 @@
     "v1",
     "v2",
     "v3",
-    "v4"
+    "v4",
+    "v5"
   ],
   "instances": [
     {
@@ -100,9 +101,18 @@
       "title": "StS Final Draft v4 Surviving the Singularity",
       "holds": "v4",
       "from": "doc-revised-v3",
+      "role": "Version 4, kept as the safe fallback. Every line-level pass of 23 and 24 November went in here on the author's yes: the F list, the R, S, V and G check, and the P list. Left untouched once v5 was copied from it.",
+      "checked": "Read on 23 November 2026 at 3:50 PM Pacific: 47 sections, 83,564 words of text, 19 pictures each with a caption, no suggestions or comments open. A code preflight (manuscript/tools/editor-pass/preflight.py) was run twice and was clean. Read back after each batch of the passes that followed, as the process file records: every change landed and nothing else moved, 19 pictures, no em dashes."
+    },
+    {
+      "id": "doc-v5-draft",
+      "kind": "google-doc",
+      "title": "StS v5 draft (Nov 23)",
+      "holds": "v5",
+      "from": "doc-v4-final-draft",
       "current": true,
-      "role": "The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures.",
-      "checked": "Read on 23 November 2026 at 3:50 PM Pacific: 47 sections, 83,564 words of text, 19 pictures each with a caption, no suggestions or comments open. A code preflight (manuscript/tools/editor-pass/preflight.py) was run twice and is clean. The author is making his final pass in it."
+      "role": "The book right now, and the Doc being edited. A copy of v4 with six hands-on project scenes added in Chapters 26 to 34 on the author's calls. Since then, each on his yes: the polish passes, the new Ch 25 exchange where Elijah asks Marta about Grace, and Elijah's nicknames (Marta's \"spreadsheet\"; Lou's \"Ivy League,\" \"Thoreau\" and \"son\"). Every change is listed in the StS Canon and Change Record. See manuscript/NOVEL-PROCESS-2026-11-23.md.",
+      "checked": "Read back on 24 November 2026 after the six scenes went in and the bonsai scene moved to the end of Chapter 32: 3,583 paragraphs, about 88,100 words (85,027 from Chapter 0 to the end of Chapter 39), no em dashes. Read back again on 24 November after the Ch 25 exchange and the 17 nickname lines: 3,608 paragraphs, no em dashes, and only the planned lines differed."
     },
     {
       "id": "site-compendium",
@@ -175,7 +185,7 @@
     {
       "title": "Surviving the Singularity, Revision Notes (Drive folder)",
       "about": "doc-revised-v3",
-      "what": "The Revision Plan, the Harshest Critics, and the v3 Change Log, which ends with the November 22 passes."
+      "what": "The Revision Plan, the Harshest Critics, and the v3 Change Log, which ends with the November 22 passes. Since 24 November it also holds the Character Bible, the Story Structure and Character Arcs, and the StS Canon and Change Record."
     },
     {
       "title": "Surviving the Singularity, Revised Manuscript v3 (compressed).pdf",
@@ -206,6 +216,26 @@
       "title": "StS workboard: who is doing what",
       "about": "doc-v4-final-draft",
       "what": "A Drive copy of manuscript/novel/WORKBOARD.md for chats that cannot read GitHub, made on 23 November at 6 PM. Whoever changes the workboard remakes this copy."
+    },
+    {
+      "title": "StS v4 final edits, Nov 23 (Drive folder)",
+      "about": "doc-v5-draft",
+      "what": "The Change log, the Scene pass and the Editing method from the final editing night. The Change log's last section, \"v5 changes\", logs every change made to v5 since 24 November, with the words before and after. The process is recorded in manuscript/NOVEL-PROCESS-2026-11-23.md."
+    },
+    {
+      "title": "StS Canon and Change Record",
+      "about": "doc-v5-draft",
+      "what": "One entry for each decision the author makes about the book: the date, his words, and every file and place it changed. Started 24 November. In the Revision Notes folder. Repository copy: manuscript/NOVEL-CANON-AND-CHANGE-RECORD.md."
+    },
+    {
+      "title": "Surviving the Singularity: Character Bible",
+      "about": "doc-v5-draft",
+      "what": "For each character: core motivation (marked as the author's call or proposed), backstory checked against v5, 2026 voice with three real v5 lines, and flags where the Drive character files disagree with v5. Elijah, Grace, Lou, Marta, David and Ma are done; the co-op table and the people outside it are to come. In the Revision Notes folder. Repository copy: manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md. A Claude Doc with the same title is on claude.ai."
+    },
+    {
+      "title": "Surviving the Singularity: Story Structure and Character Arcs",
+      "about": "doc-v5-draft",
+      "what": "The four-act structure of v5 and the arc of each main character, written from v5 on 23 November. In the Revision Notes folder. Repository copy: the file in manuscript/ whose name starts NOVEL-STORY-STRUCTURE (23 November). A Claude Doc with the same title is on claude.ai."
     }
   ]
 }

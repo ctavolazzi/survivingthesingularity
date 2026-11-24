@@ -113,7 +113,7 @@ test('BRIDGE.md in the repository is what the data says today', () => {
 test('the page names exactly one current copy and every editing step', () => {
   const p = page();
   assert.equal(p.copies.filter((c) => c.state === 'CURRENT').length, 1);
-  assert.equal(p.current.title, 'StS Final Draft v4 Surviving the Singularity');
+  assert.equal(p.current.title, 'StS v5 draft (Nov 23)');
   assert.ok(p.editing.length >= 6);
   const md = bridgeMarkdown(p);
   for (const step of p.editing) assert.ok(md.includes(step));

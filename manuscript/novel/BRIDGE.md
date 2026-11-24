@@ -2,27 +2,28 @@
 
 The bridge is the one place that says where every copy of the novel is, which copy is the book right now, and how a chat changes the manuscript without breaking it. Any chat, on any surface, starts here.
 
-Recorded on 2026-11-23. This page is written by `node scripts/sts-bridge.mjs export md`. Do not edit it by hand:
+Recorded on 2026-11-24. This page is written by `node scripts/sts-bridge.mjs export md`. Do not edit it by hand:
 change `src/lib/data/novel/instances.json` or `bridge-protocol.json` and export again.
 
 ## The book right now
 
-**StS Final Draft v4 Surviving the Singularity** (a Google Doc). The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures.
+**StS v5 draft (Nov 23)** (a Google Doc). The book right now, and the Doc being edited. A copy of v4 with six hands-on project scenes added in Chapters 26 to 34 on the author's calls. Since then, each on his yes: the polish passes, the new Ch 25 exchange where Elijah asks Marta about Grace, and Elijah's nicknames (Marta's "spreadsheet"; Lou's "Ivy League," "Thoreau" and "son"). Every change is listed in the StS Canon and Change Record. See manuscript/NOVEL-PROCESS-2026-11-23.md.
 
 ## Every copy of the book
 
 | Holds | State | What | Where |
 |---|---|---|---|
-| 2026-11-19 | behind by 5 | The author's Doc as it stood on 19 November, with his planning notes above the novel. | FINAL StS Manuscript |
-| 2026-11-19 | behind by 5 | The repository copy of that Doc. Its commit history is the version history up to 19 November. | manuscript/novel/FINAL-StS-Manuscript.md |
-| final | behind by 4 | The novel alone, 20 November. The first Revised Manuscript was made from it. | Surviving the Singularity, Final Manuscript |
-| v1 | behind by 3 | Contradictions fixed, the 19 picture placeholders filled, the appendix added. | Surviving the Singularity, Revised Manuscript |
-| v2 | behind by 2 | The fact-checked text: 204 claims checked, 13 changed. | Surviving the Singularity, Revised Manuscript v2 |
-| v2 | behind by 2 | What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures. | The private reader at /novel/<key>/ |
-| v3 | behind by 1 | The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is. | Surviving the Singularity, Revised Manuscript v3 |
+| 2026-11-19 | behind by 6 | The author's Doc as it stood on 19 November, with his planning notes above the novel. | FINAL StS Manuscript |
+| 2026-11-19 | behind by 6 | The repository copy of that Doc. Its commit history is the version history up to 19 November. | manuscript/novel/FINAL-StS-Manuscript.md |
+| final | behind by 5 | The novel alone, 20 November. The first Revised Manuscript was made from it. | Surviving the Singularity, Final Manuscript |
+| v1 | behind by 4 | Contradictions fixed, the 19 picture placeholders filled, the appendix added. | Surviving the Singularity, Revised Manuscript |
+| v2 | behind by 3 | The fact-checked text: 204 claims checked, 13 changed. | Surviving the Singularity, Revised Manuscript v2 |
+| v2 | behind by 3 | What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures. | The private reader at /novel/<key>/ |
+| v3 | behind by 2 | The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is. | Surviving the Singularity, Revised Manuscript v3 |
 | v3 | stale copy | Superseded. A copy of v3 made at 8:05 on 22 November with the 19 pictures and captions removed. It has none of the edits made to v3 after that. It was first titled Revised Manuscript v4. | OLD: v3 text-only copy from Nov 22 morning (not v4) |
-| v4 | up to date | The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and "Waiting on you". Then the rulings ("Decided so far"), a profile for every character, the list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
-| v4 | CURRENT | The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures. | StS Final Draft v4 Surviving the Singularity |
+| v4 | behind by 1 | The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and "Waiting on you". Then the rulings ("Decided so far"), a profile for every character, the list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
+| v4 | behind by 1 | Version 4, kept as the safe fallback. Every line-level pass of 23 and 24 November went in here on the author's yes: the F list, the R, S, V and G check, and the P list. Left untouched once v5 was copied from it. | StS Final Draft v4 Surviving the Singularity |
+| v5 | CURRENT | The book right now, and the Doc being edited. A copy of v4 with six hands-on project scenes added in Chapters 26 to 34 on the author's calls. Since then, each on his yes: the polish passes, the new Ch 25 exchange where Elijah asks Marta about Grace, and Elijah's nicknames (Marta's "spreadsheet"; Lou's "Ivy League," "Thoreau" and "son"). Every change is listed in the StS Canon and Change Record. See manuscript/NOVEL-PROCESS-2026-11-23.md. | StS v5 draft (Nov 23) |
 | v3 | stale copy | Topics and entries about the people, places and things in the book. Written from v3 as it stood on the morning of 22 November. Out of date since: it still says Second Crop (now Crop Dust), and its Items entry is the Fisher woodstove, which v3 has replaced with an amp. | The compendium at /novel/<key>/compendium |
 
 Google Docs are named by title only, because this repository is public. Search Drive for the title.
@@ -40,13 +41,17 @@ Google Docs are named by title only, because this repository is public. Search D
 - **manuscript/novel/characters/.** A folder for each of 35 characters in the repository, built from the text of 19 November.
 - **Surviving the Singularity, Characters (Drive folder).** The summary report, 28 character dossiers and the Lived Layer. Checked against the Final Manuscript of 20 November; the v4 scaffold's Characters section is newer.
 - **Surviving the Singularity, Story Map (Drive folder).** Story Maps 1 to 5: contradictions, chapter by chapter, timeline and places, characters. Written 20 to 21 November.
-- **Surviving the Singularity, Revision Notes (Drive folder).** The Revision Plan, the Harshest Critics, and the v3 Change Log, which ends with the November 22 passes.
+- **Surviving the Singularity, Revision Notes (Drive folder).** The Revision Plan, the Harshest Critics, and the v3 Change Log, which ends with the November 22 passes. Since 24 November it also holds the Character Bible, the Story Structure and Character Arcs, and the StS Canon and Change Record.
 - **Surviving the Singularity, Revised Manuscript v3 (compressed).pdf.** A PDF of v3 made early on 22 November, before that day's edits.
 - **StS Preorders and Discount Codes (from Supabase, 2026-11-22).** A spreadsheet another session made on 22 November. It holds customer data, so it is listed by title only and was not opened.
 - **StS v4 Chapter Arcs.** A story arc for each of the 46 sections, and the new chapter titles, written from version 4 by another session. Claude Code checked its 426 quotations against version 4: 6 are not word for word. The instructions it followed are in the Doc "Claude Code prompt: v4 chapter arcs and chapter titles" and on the branch novel/v4-arcs-titles-prompt.
 - **OLD: V3 to V4 Readiness Audit (made without seeing the book; see the Editor's Letter).** Made by a tool that could not see the book. It contains nothing about the text. Replaced by the Editor's Letter.
 - **StS v4: Editor's Letter and Readiness Audit (Nov 23).** The editorial read of version 4, 23 November: answers on arcs, sentences and voice, ten calls for the author, small continuity questions, notes for the Amazon file, and a punch list for all 46 sections. Its 124 quoted lines were checked against version 4.
 - **StS workboard: who is doing what.** A Drive copy of manuscript/novel/WORKBOARD.md for chats that cannot read GitHub, made on 23 November at 6 PM. Whoever changes the workboard remakes this copy.
+- **StS v4 final edits, Nov 23 (Drive folder).** The Change log, the Scene pass and the Editing method from the final editing night. The Change log's last section, "v5 changes", logs every change made to v5 since 24 November, with the words before and after. The process is recorded in manuscript/NOVEL-PROCESS-2026-11-23.md.
+- **StS Canon and Change Record.** One entry for each decision the author makes about the book: the date, his words, and every file and place it changed. Started 24 November. In the Revision Notes folder. Repository copy: manuscript/NOVEL-CANON-AND-CHANGE-RECORD.md.
+- **Surviving the Singularity: Character Bible.** For each character: core motivation (marked as the author's call or proposed), backstory checked against v5, 2026 voice with three real v5 lines, and flags where the Drive character files disagree with v5. Elijah, Grace, Lou, Marta, David and Ma are done; the co-op table and the people outside it are to come. In the Revision Notes folder. Repository copy: manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md. A Claude Doc with the same title is on claude.ai.
+- **Surviving the Singularity: Story Structure and Character Arcs.** The four-act structure of v5 and the arc of each main character, written from v5 on 23 November. In the Revision Notes folder. Repository copy: the file in manuscript/ whose name starts NOVEL-STORY-STRUCTURE (23 November). A Claude Doc with the same title is on claude.ai.
 
 ## How to change the manuscript
 

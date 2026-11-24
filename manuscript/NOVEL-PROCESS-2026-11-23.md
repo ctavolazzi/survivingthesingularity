@@ -18,8 +18,7 @@ proposals, the scene drafts) was written by Claude for him to accept, change or 
 
 His call on the rework: "We are reworking it not and worrying about the details later."
 
-`BRIDGE.md` and `src/lib/data/novel/instances.json` still mark v4 as current. v5 is not in the map
-yet.
+`BRIDGE.md` and `src/lib/data/novel/instances.json` now mark v5 as current and v4 as one behind.
 
 The Drive folder "StS v4 final edits, Nov 23" holds three Docs that go with this page: the Change
 log (every change with the old and new words), the Scene pass (the scene map and the character
@@ -185,12 +184,14 @@ The six scenes, all now in v5:
 | 2 | Ch 27 | Priya | Measuring Walt's well with a chalked steel tape, pump off, waiting for it to recover. Tyler wants a sensor; Priya wants the number first. A new section at the end of the chapter. Four short paragraphs at the pledge table became one line ("Priya didn't argue with him..."). | no |
 | 4 | end of Ch 30 | Marta | Teaching Tyler to weld from a bucket, with her hands under her legs because her shoulder won't let her show him. The welds fail; the rod oven was unplugged and the rod was wet. | no |
 | 3 | Ch 31 | Marta | Lockout on the press, then two ninety-degree bends on the hand brake. Replaces her visit with the Emeka story. | yes |
-| 5 | Ch 32 | Tyler, Wren | Tyler's trimmer for Walt's juniper cuts a branch back to bare wood. Wren stops him testing on the tree, and in June shows him how to turn the dead branch into deadwood. | no |
+| 5 | end of Ch 32 | Tyler, Wren | Tyler's trimmer for Walt's juniper cuts a branch back to bare wood. Wren stops him testing on the tree, and in June shows him how to turn the dead branch into deadwood. | no |
 | 6 | opens Ch 34 | Curtis, Lou | The tractor drops into limp mode; the new sensor needs the dealer's laptop, nine days out. Lou's pear story, then Walt's old tractor out of Irene's barn. | no |
 
 They went in one at a time on his yes ("Put it in v5" for #3 and #1), then the rest on his word:
 "Put whatever in there you think belongs I don't need to approve it." His one line edit: Marta's
-"Get your boots on" became "You're gonna want to get your boots on", both times.
+"Get your boots on" became "You're gonna want to get your boots on", both times. The bonsai scene
+first sat before the late-March stove scene, which made the timeline jump back from June to March.
+His call: "Move the bonsai." It now closes Chapter 32, and Chapter 33 opens in June.
 
 The craft in them rests on real practice: a steel tape and carpenter's chalk for a well level, from
 a fixed measuring point, with the pump off until the level stops rising; junipers not regrowing
@@ -242,14 +243,16 @@ never says who Bidwell's watcher is.
 
 ## What is left
 
-1. His calls at the seams of the new scenes.
-2. The Author's Note still says "about 83,544". The number is his to change.
+1. The Author's Note still says "about 83,544". It gets the final count after the polish passes.
+2. Six polish passes on v5, on his "Do it please": the first pages, every chapter's first and last
+   line, filter words, soft qualifiers, dialogue tags, and long paragraphs that read as walls on a
+   phone. Candidates are found by search, and he sees only the line and the change.
 3. The voice sheet and the dialogue pass in v5 (paused at his word, see above).
 4. One check over all new and changed text: typos, repetition ("never once", "hand flat", "for a
    long time", "looked down the table"), continuity with the chapters around it, and his clarity
    method.
 5. The C (clarity) and E (emotion words) lists: drafted, paused.
 6. His own hand pass.
-7. Add v5 to the bridge map.
+7. Remake the Drive bridge page ("sts-bridge: read this first") from the new map.
 8. The Kindle file (copyright page) and the KDP upload, which is his. Launch is Thursday 26
    November.

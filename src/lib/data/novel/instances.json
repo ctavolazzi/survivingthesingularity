@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "note": "Every copy of the novel, which version each one holds, and what it was made from. Google Docs are named by title only: this repository is public, so their ids stay out of it. `holds` is what was recorded on the asOf date. `checked` says how that was established, or that it was not.",
   "versions": [
     "2026-11-19",
@@ -7,7 +7,8 @@
     "v1",
     "v2",
     "v3",
-    "v4"
+    "v4",
+    "v5"
   ],
   "instances": [
     {
@@ -100,9 +101,18 @@
       "title": "StS Final Draft v4 Surviving the Singularity",
       "holds": "v4",
       "from": "doc-revised-v3",
+      "role": "Version 4, kept as the safe fallback. Every line-level pass of 23 and 24 November went in here on the author's yes: the F list, the R, S, V and G check, and the P list. Left untouched once v5 was copied from it.",
+      "checked": "Read on 23 November 2026: 47 sections, about 80,260 words, 19 pictures, and 39 tracked suggestions from Claude Code waiting on the author. All 46 sections were read for the Editor's Letter. The author is editing it. Read back after each batch on 24 November: every change landed and nothing else moved, 19 pictures, no em dashes."
+    },
+    {
+      "id": "doc-v5-draft",
+      "kind": "google-doc",
+      "title": "StS v5 draft (Nov 23)",
+      "holds": "v5",
+      "from": "doc-v4-final-draft",
       "current": true,
-      "role": "The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November: the co-op is outside Ardell, Washington, eight hundred miles from Ma; every chapter has a new title; Chapter 33 has a new Friday dinner. It has the 19 pictures.",
-      "checked": "Read on 23 November 2026: 47 sections, about 80,260 words, 19 pictures, and 39 tracked suggestions from Claude Code waiting on the author. All 46 sections were read for the Editor's Letter. The author is editing it."
+      "role": "The book right now, and the Doc being edited. A copy of v4 with six hands-on project scenes added in Chapters 26 to 34 on the author's calls, and the 2026 voice work to come. See manuscript/NOVEL-PROCESS-2026-11-23.md.",
+      "checked": "Read back on 24 November 2026 after the six scenes went in and the bonsai scene moved to the end of Chapter 32: 3,583 paragraphs, about 88,100 words (85,027 from Chapter 0 to the end of Chapter 39), no em dashes."
     },
     {
       "id": "site-compendium",
@@ -201,6 +211,11 @@
       "title": "StS v4: Editor's Letter and Readiness Audit (Nov 23)",
       "about": "doc-v4-final-draft",
       "what": "The editorial read of version 4, 23 November: answers on arcs, sentences and voice, ten calls for the author, small continuity questions, notes for the Amazon file, and a punch list for all 46 sections. Its 124 quoted lines were checked against version 4."
+    },
+    {
+      "title": "StS v4 final edits, Nov 23 (Drive folder)",
+      "about": "doc-v5-draft",
+      "what": "The Change log, the Scene pass and the Editing method from the final editing night. The process is recorded in manuscript/NOVEL-PROCESS-2026-11-23.md."
     }
   ]
 }

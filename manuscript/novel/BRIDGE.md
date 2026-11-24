@@ -7,7 +7,7 @@ change `src/lib/data/novel/instances.json` or `bridge-protocol.json` and export 
 
 ## The book right now
 
-**StS Final Draft v4 Surviving the Singularity** (a Google Doc). The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November: the co-op is outside Ardell, Washington, eight hundred miles from Ma; every chapter has a new title; Chapter 33 has a new Friday dinner. It has the 19 pictures.
+**StS Final Draft v4 Surviving the Singularity** (a Google Doc). The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures.
 
 ## Every copy of the book
 
@@ -22,7 +22,7 @@ change `src/lib/data/novel/instances.json` or `bridge-protocol.json` and export 
 | v3 | behind by 1 | The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is. | Surviving the Singularity, Revised Manuscript v3 |
 | v3 | stale copy | Superseded. A copy of v3 made at 8:05 on 22 November with the 19 pictures and captions removed. It has none of the edits made to v3 after that. It was first titled Revised Manuscript v4. | OLD: v3 text-only copy from Nov 22 morning (not v4) |
 | v4 | up to date | The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and "Waiting on you". Then the rulings ("Decided so far"), a profile for every character, the list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
-| v4 | CURRENT | The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November: the co-op is outside Ardell, Washington, eight hundred miles from Ma; every chapter has a new title; Chapter 33 has a new Friday dinner. It has the 19 pictures. | StS Final Draft v4 Surviving the Singularity |
+| v4 | CURRENT | The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures. | StS Final Draft v4 Surviving the Singularity |
 | v3 | stale copy | Topics and entries about the people, places and things in the book. Written from v3 as it stood on the morning of 22 November. Out of date since: it still says Second Crop (now Crop Dust), and its Items entry is the Fisher woodstove, which v3 has replaced with an amp. | The compendium at /novel/<key>/compendium |
 
 Google Docs are named by title only, because this repository is public. Search Drive for the title.

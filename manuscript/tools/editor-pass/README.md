@@ -14,6 +14,7 @@ Run them with `python3 -I`. Find the current manuscript through the bridge first
 | `rulings_check.py SECTIONS.json [group ...]` | Searches for the author's rulings (names, places, the watcher, the machine's lines), dashes and the banned word. |
 | `ctx.py SECTIONS.json key:paragraph ...` | Prints the paragraphs around a spot, to check a reader's flag against the text. |
 | `build_suggestions.py READ.json OUT.json` | Plans small suggestions. Refuses any passage that does not appear exactly once, spans paragraphs, or carries italics. Whole-paragraph cuts are pinned to the revision that was read. |
+| `preflight.py READ.json [group ...]` | The check to run before the author's final pass and again before building a file for sale: structure, typography, leftovers, spelling, names, numbers that must agree, and where each story thread appears. |
 | `editor_letter.py SECTIONS.json REPORT.json OUT.html` | Builds the letter. Refuses to write it if any quoted line is not in the manuscript word for word. |
 | `suggestions-2026-11-23.json` | The 39 suggestions of that morning, each with its reason. Eight more followed by hand the same day (Chapter 39's beer, and six fixes made around lines the author wants kept). |
 

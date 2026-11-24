@@ -21,11 +21,27 @@ touch a paragraph he is in.
 
 No Claude session has a task open.
 
-**47 tracked suggestions from Claude Code are waiting in v4** (placed Nov 23, 7:30 to 8:00 AM): clarity,
-spelling, "commissioner" for "supervisor", a few one-sentence cuts, Chapter 39's beer exchange in
-CT's words, and six fixes made around lines CT wants kept. None changes a line CT dictated. Leave them for him to accept or reject. The reasons are in the Drive Doc "StS v4: Editor's
-Letter and Readiness Audit (Nov 23)", which also holds ten calls that are his and a punch list for
-all 46 sections. Read that Doc before proposing any edit to the prose.
+**No suggestions or comments are open in v4** (checked Nov 23, 3 PM). CT settled all 47 of this morning's
+suggestions and added about 4,000 words: the two robot arms, Grace's sister Faith and her father, the
+note in the amp's pouch, and a new ending. The Doc is at about 83,500 words.
+
+**A code preflight passed at 3 PM** (`manuscript/tools/editor-pass/preflight.py`): 40 chapters in order,
+19 pictures each with a caption, no dashes, no stray spacing, no unbalanced quotes, no placeholders, no
+misspelled names, numbers that must agree do agree. v4 is ready for CT's own final pass.
+**Do not place new suggestions in v4 during his pass unless he asks.**
+
+Two small gaps were closed at 3:50 PM on CT's instruction, as direct edits through the bridge: Ch 19 now
+says Tyler is "the Tyler who had found Elijah's email for Grace", and Ch 25 names the nickname ("It was
+the truck song from then on.") right after Grace mocks "The Weight". One spelling was made American
+("canceled", Ch 22). The preflight was run again afterwards and is clean, and every callback in
+Chapters 38 and 39 has its setup earlier in the book.
+
+A lesson for the next session: Claude Code first reported that the truck song was never set up. It was.
+The search had looked for the literal words. Before saying a thing is missing from the book, read the
+chapter around its first use.
+
+For the Kindle build (Claude Code's job, not CT's): 72 scene breaks are blank lines and need a visible
+mark; straight quotes become curly; the 19 captions come out if the pictures do; a copyright page.
 
 ## The book is in v4 now
 

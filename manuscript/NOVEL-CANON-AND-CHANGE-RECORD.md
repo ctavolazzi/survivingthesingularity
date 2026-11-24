@@ -23,3 +23,17 @@ One entry per decision he makes about the book. Each entry gives the date, the d
 - His words: "What Elijah wants is for people to listen to him. He wants to be believed." Then: "deep motivation to be heard. He wants to be heard and believed. What he really wants is to belong."
 - Surface want: to be heard and believed. Real want: to belong.
 - Changed: the Character Bible (Drive and repo), Elijah's Core motivation. It replaces my earlier proposed reading ("to be forgiven for what his help cost"), which was never his call.
+
+## Nov 24: Ch 25, Elijah asks Marta about Grace
+
+- His words: "Elijah should ask Marta if Grace has a boyfriend or a girlfriend. He's inclusive, right? That's the joke." Then, on the draft: "Put the Marta scene in".
+- Changed: v5, Ch 25, the roll-up door scene. The line "You like her," she said. "Don't you." became four lines: Elijah asks "Does Grace have... someone?", Marta asks "Like a boyfriend?", Elijah says "Or a girlfriend. Whatever.", and Marta says "Oh. You like her." Everything around it is unchanged. Read back from v5: only those lines differ.
+- Also logged in: Drive, "StS v4 final edits, Nov 23" folder, Change log.
+
+## Nov 24: Elijah's nicknames
+
+- His words: "Ivy League, spreadsheet, Thoreau are all better than college in my opinion." Then, on a proposed split: "Do that split". Then: "No a professor or two can stay". On the list of 17 changes: "Accept all".
+- The rule now: Marta calls him "spreadsheet" until Ch 37, where she says "Elijah" for the first time. Lou calls him "Ivy League" (Ch 20 to 26), "professor" twice when Elijah lectures (Ch 26, Ch 35), "Thoreau" from Ch 33 on, and "son" (Ch 29, Ch 37). Nobody calls him "college".
+- Changed: v5, 17 lines: Ch 16 (2), 18, 19, 20, 22, 24, 25 (3), 26, 28, 29, 31, 33, 35, and Elijah's Appendix entry. Read back from v5: only those 17 lines differ.
+- Kept: "Okay, professor. Close the laptop." (Ch 26), "You want her on your side of that, professor." (Ch 35), and the two real uses of "community college" (Ch 15, Ch 18).
+- Also changed: the Character Bible (Lou's and Marta's tics, Marta's surface-want quote) and the Story Structure and Arcs article (Lou's nicknames), in Drive and the repo. Also logged in: Drive, "StS v4 final edits, Nov 23" folder, Change log.

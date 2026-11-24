@@ -80,10 +80,10 @@ One entry per character: what they want, where they come from, and how they talk
 
 **Core motivation**
 - Surface want: to feed the 140 households and keep the co-op's tools in the co-op's hands. "Long as the robot's mine" (Ch 20).
-- Real want (proposed): never to be bought again, and to hand what he knows to someone who will stay. He lost his orchard to a single buyer. He calls Elijah "son" and tells him the hard thing: "You'd rather be gone and tidy than here and a mess" (Ch 37).
+- Real want (proposed): never to be bought again, and to hand what he knows to someone who will stay. He lost his orchard to one buyer (Ch 20). He calls Elijah "son" and tells him the hard thing: "You'd rather be gone and tidy than here and a mess" (Ch 37).
 
 **Backstory (checked against v5)**
-- He grew pears outside Ukiah until a single buyer took the orchard (his story in Ch 34).
+- He grew pears outside Ukiah and lost the orchard to one buyer and one price, after the packing house that bought everybody's pears got bought by a bigger one (Ch 20, Ch 23). In Ch 34 he tells Curtis he lost a crop fighting the packing house over grades.
 - In Ch 17 he's "about sixty," cracking walnuts without looking at his hands. In Ch 20 he's sixty-one. One knee is titanium, "and the titanium one's the good one" (Ch 20).
 - His wife taught fourth grade for thirty-one years and left him her pension (Ch 20). The joke "cheaper than my wife's nephew" is in Ch 17.
 - He grows most of what's on the table, on land that isn't his.
@@ -93,7 +93,7 @@ One entry per character: what they want, where they come from, and how they talk
 **Voice (2026)**
 - Length: short questions that sound simple and aren't, then one hard statement. When he tells a story it runs long and plain, with no lesson stated.
 - Vocabulary: a grower's numbers (cost, hands, households, rows), dry profanity ("Shit," said happily), and plain words for big ideas ("five scared people and a clock").
-- Tics: nicknames that tell you where Elijah stands with him: "college," "professor," "Thoreau," then "son." He answers a question with a question. He changes the subject to the work ("The plants look thirsty").
+- Tics: nicknames that tell you where Elijah stands with him: "Ivy League" (Ch 20 to 26), "professor" when Elijah lectures (Ch 26, Ch 35), "Thoreau" once he eats what he grew (Ch 33 on), and "son" (Ch 29, Ch 37). He answers a question with a question. He changes the subject to the work ("The plants look thirsty").
 - Would never say (proposed): a slogan, a policy word, or anything that sounds like a sermon. He's sixty-one in 2026, a grower who uses a phone and a laptop when he has to, so no "reckon" or old-timey talk.
 - Real lines from v5:
   - "Who ate it at your place?" (Ch 20)
@@ -109,7 +109,7 @@ One entry per character: what they want, where they come from, and how they talk
 ## Marta Okonkwo
 
 **Core motivation**
-- Surface want: nothing leaves the shed that can hurt somebody, and nothing gets big. "That's not a limitation, college. That's the load-bearing wall" (Ch 16).
+- Surface want: nothing leaves the shed that can hurt somebody, and nothing gets big. "That's not a limitation, spreadsheet. That's the load-bearing wall" (Ch 16).
 - Real want (proposed): never again to vouch for someone and watch them get hurt. That's Emeka. "It doesn't bring him back. I know that. It's what I can do before noon" (Ch 31).
 
 **Backstory (checked against v5)**
@@ -124,7 +124,7 @@ One entry per character: what they want, where they come from, and how they talk
 **Voice (2026)**
 - Length: the shortest sentences at the table. Numbered points ("Okay. One."). Spec-sheet rhythm, "the tone she used for load ratings."
 - Vocabulary: shop words (swarf, bead, coupon, lockout, rate) and history said flat (Parliament, enclosure, the Luddites).
-- Tics: "We'll see" is her only yes. "college" until Ch 37. She ends a speech on a chore ("Pass the beans." "Swarf goes in the red bin."). Glove off finger by finger before she says the real thing.
+- Tics: "We'll see" is her only yes. "spreadsheet" until Ch 37, when she says "Elijah" for the first time. She ends a speech on a chore ("Pass the beans." "Swarf goes in the red bin."). Glove off finger by finger before she says the real thing.
 - Would never say (proposed): praise out loud, her own feelings unprompted, or anything about the modeling years.
 - Real lines from v5:
   - "Swarf goes in the red bin. We'll see." (Ch 16)

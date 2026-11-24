@@ -64,7 +64,7 @@ Her last scene is the one the book has been building toward. At Thanksgiving in 
 
 ## Lou Parker: The Teacher Who Asks Questions
 
-Lou is sixty-one. He lost a pear orchard to a single buyer, was raised by his mother alone, and now grows food for 140 households on land that isn't his. He calls Elijah "college," "professor," "Thoreau" and "son," and teaches by asking a few questions and then telling him one thing.
+Lou is sixty-one. He lost a pear orchard to a single buyer, was raised by his mother alone, and now grows food for 140 households on land that isn't his. He calls Elijah "Ivy League," "professor," "Thoreau" and "son," and teaches by asking a few questions and then telling him one thing.
 
 He starts out guarding the co-op from Elijah. In Ch 17 he asks Grace to be gentle with their guest. In Ch 20 he puts Elijah on his knees laying drip tape, then shows him the HANDS column on the seed box and what a tomato would cost without it. In Ch 26 he lays a crooked bed out again with string and stakes and teaches that you can't code your way out of it. In Ch 29 he catches Elijah sanding a weld that was already finished at 10 p.m. and tells him they need him at six, then shows up with two coffees.
 

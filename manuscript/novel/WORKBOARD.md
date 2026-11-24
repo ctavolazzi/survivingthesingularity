@@ -28,11 +28,12 @@ No Claude session has a task open.
 ## The state of the book (Nov 24, end of day)
 
 - v5 holds the whole book: 53 headings (the Author's Note, Chapters 0 to 39, four acts, four
-  Meanwhiles, the Epilogue, About This Book, the Afterword and the Appendix), 3,610 paragraphs, 19
+  Meanwhiles, the Epilogue, About This Book, the Afterword and the Appendix), 3,615 paragraphs, 19
   pictures, 78 scene breaks.
 - No suggestions are waiting in it. No em or en dashes. Straight quotation marks, on his rule.
 - It was read whole, line by line, on Nov 24 after the final edit: 16 edits to the words and 60
-  italic ranges, each on his yes, then four changes to Lou in Chapter 35 on his "Do it". The list is in
+  italic ranges, each on his yes, then four changes to Lou in Chapter 35 and a last set in Chapters 19, 31, 33, 38 and 39, on his word.
+  The list is in
   `manuscript/NOVEL-PROCESS-2026-11-23.md`, section 9.
 - The checker in `manuscript/tools/final-check/` passes: 93 checks, none failed. Its self-test
   planted 21 faults and caught all 21.

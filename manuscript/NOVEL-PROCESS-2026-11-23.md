@@ -305,6 +305,34 @@ Not changed: "The man who refuses to launch it", "mutually assured survival", th
 carries into Chapter 36, the control speech, and the locked lines. The other audit findings were left
 for his own pass. The checker was taught these four changes and passes (93, none failed).
 
+**The last changes of the night.** After the audit he dictated a conversation he wanted in the book,
+starting from the line "what you're saying doesn't sound like complaints about tech, it sounds like
+complaints about capitalism." He was shown every change first, said some of the proposed cuts took
+texture out, and four of seven cuts were withdrawn for that reason. Then: "Do it with those two
+tweaks". Read back from the Doc with no other difference:
+
+1. Ch 19. His line added to Tyler's speech to Patricia, before "It's a tool": "What you're saying
+   doesn't sound like complaints about tech, it sounds like complaints about capitalism."
+2. Ch 33, the dinner. Nothing removed. Lou's first paragraph now closes, and six short paragraphs
+   from his dictation follow it: Lou asks "If you knew you had food to eat, good, healthy food, and a
+   safe place to live, would that change the way you felt about the technology?", Patricia answers "I
+   work seventy, eighty hours a week", Lou asks "What if you didn't have to?", and Patricia starts
+   one sentence and stops. Lou's "Pull apart what it takes to stay alive" then runs as before.
+3. Ch 33. Denny's line gains his words at the front: "If you're mad, I get it. I'm mad too. I just
+   think we should put our anger where it actually belongs. Not on some AI no-face boogeyman. Let's
+   put it on the people that are making our lives harder every year."
+4. Ch 31. Cut: "He had told her he was not okay. It was the first time." The call ends on "Barry?"
+5. Ch 38. Cut: "It was the porch rail again. It was three days of soup on a step." (His rule for
+   Grace of 24 November: nobody says her want.)
+6. Ch 39. Cut: "He had learned how."
+
+Left out of his dictation, and he was told why: the hamburger line (nobody eats one in the book, and
+Elijah gives the careful water answer in Ch 27), and the military, "the elites" and "teach yourself
+one more thing" beats, which Curtis and Lou already say in the same scene. Withdrawn cuts, which stay
+in the book: Ch 3 "it had never crossed her mind to ask", Ch 36 "He thought about Lou" and "He had
+been the captain all along", Ch 37 "then he heard Lou". The checker was taught these changes and
+passes (93, none failed).
+
 **Not touched, on his instruction at the start of that session:** v4, the Drive "StS Canon and Change
 Record", the Drive Change log and the Story Structure article. So the Canon record and the Change log
 do not list the changes above. This section does.
@@ -331,11 +359,12 @@ never says who Bidwell's watcher is.
 
 ## Where v5 stands at the end of 24 November
 
-- 3,610 paragraphs, 53 headings (the Author's Note, Chapters 0 to 39, four acts, four Meanwhiles, the
+- 3,615 paragraphs, 53 headings (the Author's Note, Chapters 0 to 39, four acts, four Meanwhiles, the
   Epilogue and the back matter), 19 pictures, 78 scene breaks, one tab.
 - No suggestions waiting. No em or en dashes. Straight quotation marks throughout, on his rule.
-- The 16 edits, the italics and the four Chapter 35 changes of section 9 are in. The checker passes.
-- He had not started his hand pass when the Chapter 35 changes went in: the Doc was unchanged until then.
+- The 16 edits, the italics, the four Chapter 35 changes and the last changes of section 9 are in. The
+  checker passes.
+- He had not started his hand pass when the last changes went in: the Doc had no edits but these.
 
 ## Where v5 stood early on 24 November
 

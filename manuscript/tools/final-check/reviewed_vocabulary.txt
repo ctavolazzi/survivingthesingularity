@@ -119,6 +119,7 @@ ancient
 and
 anecdote
 angeles
+anger
 angle
 angry
 animals
@@ -368,6 +369,7 @@ bellied
 bells
 belly
 belonged
+belongs
 below
 belt
 ben
@@ -458,6 +460,7 @@ bombed
 bone
 bonfire
 bonus
+boogeyman
 book
 booked
 books
@@ -620,6 +623,7 @@ canyons
 cap
 capable
 capacities
+capitalism
 capitals
 capo
 capped
@@ -871,6 +875,7 @@ company
 company's
 compiled
 complain
+complaints
 complete
 completed
 completely
@@ -3622,6 +3627,7 @@ prove
 proved
 provide
 provided
+providing
 pruitt
 prunings
 public
@@ -3693,6 +3699,7 @@ rained
 raise
 raised
 raises
+raising
 rake
 ramp
 ran
@@ -4701,6 +4708,7 @@ team
 team's
 tear
 tears
+tech
 technical
 technically
 technician

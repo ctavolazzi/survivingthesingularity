@@ -1,14 +1,14 @@
-VERIFY v5   2026-11-24 22:00   Doc revision AHj4eMRECvc3WK3mr4
+VERIFY v5   2026-11-24 22:53   Doc revision AHj4eMQB896-GYw0aE
 PASS 93   FAIL 0   WARN 0   OPEN 7
 
 == A coverage
-  PASS  Doc text today is identical to the text that was read line by line   [sha256 49e286a23e31d8f0, 3629 lines]
-  PASS  The logged read ranges cover every line, first to last   [lines 1 to 3629, no gap]
+  PASS  Doc text today is identical to the text that was read line by line   [sha256 272b61cfc2b25567, 3634 lines]
+  PASS  The logged read ranges cover every line, first to last   [lines 1 to 3634, no gap]
   PASS  No line is long enough to be cut off by the reader (limit 2000 characters)   [longest line is 843 characters]
-  PASS  The Docs API copy and the text export are the same document   [3610 paragraphs rebuild the export exactly]
+  PASS  The Docs API copy and the text export are the same document   [3615 paragraphs rebuild the export exactly]
 == B edits
-  PASS  Today's text == session-start text + the approved edits (16, then 4 in Ch 35), and nothing else   [18 line edits and 2 paragraph moves replay exactly]
-  PASS  Each approved edit is present exactly once and its old wording is gone   [18 of 18]
+  PASS  Today's text == session-start text + the approved edits (16, then 4 in Ch 35, then the last changes), and nothing else   [24 line edits and 2 paragraph moves replay exactly]
+  PASS  Each approved edit is present exactly once and its old wording is gone   [24 of 24]
   PASS  Ch 39: the phone paragraph now comes before the madrones paragraph
 == C locked
   PASS  Every locked line is present, the right number of times, unchanged since session start   [16 locked lines]
@@ -79,16 +79,16 @@ PASS 93   FAIL 0   WARN 0   OPEN 7
   PASS  19 pictures, each in its own paragraph, same as at session start
   PASS  Scene breaks: same count as at session start, none doubled   [78 scene breaks]
   PASS  No stray empty paragraphs
-  PASS  Every quotation mark is closed (a speech that runs on reopens in the next paragraph)   [1 paragraph(s) run on correctly]
+  PASS  Every quotation mark is closed (a speech that runs on reopens in the next paragraph)   [0 paragraph(s) run on correctly]
   PASS  Every parenthesis is closed
   PASS  No heading appears twice
 == G formatting
-  PASS  Body text is in one font   [{'(inherited)': 461789}]
-  PASS  Body text is in one size   [{'(inherited)': 461789}]
+  PASS  Body text is in one font   [{'(inherited)': 462584}]
+  PASS  Body text is in one size   [{'(inherited)': 462584}]
   PASS  No underline, strikethrough, highlight, link or raised text in the body
   PASS  Bold text is exactly what it was at session start   [46 bold runs]
-  PASS  Paragraph styling is exactly what it was at session start (the moved paragraph included)   [5 distinct paragraph styles, same counts]
-  PASS  Every one of the 53 headings is a real heading paragraph (so the Kindle contents can find it)   [{'HEADING_1': 55, 'NORMAL_TEXT': 3546, 'HEADING_2': 9}]
+  PASS  Paragraph styling is exactly what it was at session start (the moved paragraph included)   [5 distinct paragraph styles, same counts apart from the 5 body paragraphs the last edit added (6 in Ch 33, less 1 cut in Ch 31)]
+  PASS  Every one of the 53 headings is a real heading paragraph (so the Kindle contents can find it)   [{'HEADING_1': 55, 'NORMAL_TEXT': 3551, 'HEADING_2': 9}]
   PASS  No paragraph of prose is styled as a heading
 == H italics
   PASS  Nothing that was italic at session start has lost its italics   [268 italic spans at session start, all still italic]
@@ -98,7 +98,7 @@ PASS 93   FAIL 0   WARN 0   OPEN 7
   PASS  A thought, typed or written cue with no italics within reach   [3 flagged, all reviewed and accepted]
   PASS  The same word twice in a row   [2 flagged, all reviewed and accepted]
   PASS  Spacing or punctuation slips (space before a mark, missing space, doubled mark, double space)   [nothing found]
-  PASS  Spelling: every distinct word in the book is in the vocabulary that was read through word by word   [5395 distinct words, none new]
+  PASS  Spelling: every distinct word in the book is in the vocabulary that was read through word by word   [5403 distinct words, none new]
   PASS  A sentence of nine or more words that appears more than once   [7 flagged, all reviewed and accepted]
   PASS  A whole paragraph that appears twice   [nothing found]
   PASS  Four or more paragraphs in a row opening on the same word   [1 flagged, all reviewed and accepted]

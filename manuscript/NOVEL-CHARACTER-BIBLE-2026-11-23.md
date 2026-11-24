@@ -46,15 +46,19 @@ One entry per character: what they want, where they come from, and how they talk
 - Real want (his call): for someone to stay. She wants to be enough. On the page:
   - the porch race her sister Faith always won (Ch 22)
   - "I used to think if I was just good enough" (Ch 22)
+  - the captain who let her go: "I still left." "He let me." (Ch 24)
+  - Faith on the porch with their dad: "She stayed." (Ch 33)
   - the soup she left on his step for three days, waiting (Ch 33)
   - "I thought you were one of us" and "I can't believe I did this again" (Ch 36)
+  - at the bonfire she looks halfway over her shoulder and slows, long enough for him to say something; her chin quivers, the tears don't come (Ch 36)
+  - "She took a long time with the straps." (Ch 37)
   - Nobody says it outright.
 
 **Backstory (checked against v5)**
 - A dark-skinned woman in her thirties (Ch 16). Faith is two years older. Faith got the Christmas solo, and Grace got the robe. They raced to the porch rail when Dad came home, and the winner got to sit with him while he played. Faith always won (Ch 22).
 - Her dad is "the Loudbox guy" who doesn't play anymore. He gave his days to the TV, then the phone, then one man on the phone who "means me." Faith sits next to him on that porch now. The sisters say Merry Christmas, and it takes about four minutes (Ch 22, Ch 33).
 - She worked for a fire district as the one sent ahead to knock. A man at the end of a road refused. She wrote REFUSED and tied orange tape on his gate. The fire came that night, and the tape was the only thing on the road still a color (Ch 24).
-- She was married to a captain who always said "You can't make them leave, Grace." She quit the job and left him within one month (Ch 24). She hadn't sat that close to a stove in six years.
+- She was married to a captain who always said "You can't make them leave, Grace." She quit the job and left him within one month (Ch 24). "He let me." She hadn't sat that close to a stove in six years.
 - At the co-op she runs the town kitchen and the route: 140 households, a budget that keeps running out (June, then December). She signs off "Blessings, G." She loves bass music (Tipper, the October festival, Ch 25), and she has sat with people on tea (Ch 31).
 - Her grandmother said "there's one of him every couple of generations" (Ch 33).
 - Endings: she lights Walt's stove at noon on Thanksgiving, plays "The Weight" on Elijah's amp, and finds the note (Ch 38). Elijah sees her on Denny's livestream (Ch 39).

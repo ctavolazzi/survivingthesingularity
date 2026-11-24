@@ -44,3 +44,10 @@ One entry per decision he makes about the book. Each entry gives the date, the d
 - Changed: v5, 3 lines. Ch 26: Lou's "Like, two inches." is now "Two inches, they're saying." Ch 26: "not on that knee" is now "not on the knee that was still his" (Lou's titanium knee, Ch 20). Ch 32: the bonsai run is now "at the end of March", after the late-March stove scene. Read back from v5: only those 3 lines differ.
 - Not changed: Tyler is "twenty-one" in Ch 29, 30 and 37, which matches the book's own ages.
 - Also logged in: Drive, "StS v4 final edits, Nov 23" folder, Change log.
+
+## Nov 24: Grace's beats
+
+- His words: "Accept all four". On the bonfire line: "No wet face that's too much cheese. She cries later or indiscernably somehow." and "She kept walking. Her chin quivered only for a moment threatening tears that didn't come." Then: "She looked halfway over her shoulder. That's better".
+- The rule: her want (someone to stay, to be enough) is shown through the people who let her go and her waiting to be asked to stay. Nobody says it.
+- Changed: v5, 4 lines. Ch 24: after "I still left." she adds "He let me." Ch 33: "Faith sits right there next to him. She stayed." Ch 36, the bonfire: she looks halfway over her shoulder and slows, long enough for him to say something; when he doesn't, she keeps walking, and her chin quivers but the tears don't come ("Her face was wet" is gone). Ch 37: "She took a long time with the straps." Read back from v5: only those 4 lines differ.
+- Also changed: the Character Bible, Grace's entry (Drive and repo). Also logged in: Drive, "StS v4 final edits, Nov 23" folder, Change log.

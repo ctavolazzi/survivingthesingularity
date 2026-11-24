@@ -283,6 +283,28 @@ today's global food production is enough to feed everyone on the planet, hunger 
 increase in some parts of the world." The page itself could not be opened from the session's
 machine, so this is a match by search, not a read of the page.
 
+**Later the same evening: Lou in Chapter 35.** He asked for an audit of the characters (do they act
+from their own wants, or speak for the author). Four separate full reads found the cast holds, with one
+exception: Lou at the end of the Chapter 33 dinner and in Chapter 35. His answer on the stove scene:
+the moral has to hit hard and come from someone wise, like Snape's "Always". Then: "Do it. Do it with
+dexterity. Surgically. Bare minimum". Four changes, all in Chapter 35, read back from the Doc with no
+other difference:
+
+1. The field. "That's what this lady's doing. That's what all these people are doing here at the
+   farm." Now "That's what this lady's doing." (The meeting the night before gave each of them a reason
+   of their own.)
+2. The stove. Cut after the grange hall question: "I believe they're the ones who will hold the line
+   when the day comes. I believe women will save us." (He says it of the mothers in Chapter 33.)
+3. The stove. The cosmos line and the line about his wife moved below the GDP and ALC exchange, so
+   they are the last thing Lou says. No words changed by the move, and nothing was cut from the exchange.
+4. The stove. One sentence added to the end of the line about his wife: "But I was the kid in the back
+   seat." It points at his mother (Chapter 20, and "Me in the back seat saying the Our Father" in
+   Chapter 33) without naming her.
+
+Not changed: "The man who refuses to launch it", "mutually assured survival", the two sentences Elijah
+carries into Chapter 36, the control speech, and the locked lines. The other audit findings were left
+for his own pass. The checker was taught these four changes and passes (93, none failed).
+
 **Not touched, on his instruction at the start of that session:** v4, the Drive "StS Canon and Change
 Record", the Drive Change log and the Story Structure article. So the Canon record and the Change log
 do not list the changes above. This section does.
@@ -312,8 +334,8 @@ never says who Bidwell's watcher is.
 - 3,610 paragraphs, 53 headings (the Author's Note, Chapters 0 to 39, four acts, four Meanwhiles, the
   Epilogue and the back matter), 19 pictures, 78 scene breaks, one tab.
 - No suggestions waiting. No em or en dashes. Straight quotation marks throughout, on his rule.
-- The 16 edits and the italics of section 9 are in. The checker passes.
-- He has not started his hand pass: the export taken last was unchanged.
+- The 16 edits, the italics and the four Chapter 35 changes of section 9 are in. The checker passes.
+- He had not started his hand pass when the Chapter 35 changes went in: the Doc was unchanged until then.
 
 ## Where v5 stood early on 24 November
 

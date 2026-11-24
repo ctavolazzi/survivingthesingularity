@@ -32,7 +32,8 @@ No Claude session has a task open.
   pictures, 78 scene breaks.
 - No suggestions are waiting in it. No em or en dashes. Straight quotation marks, on his rule.
 - It was read whole, line by line, on Nov 24 after the final edit: 16 edits to the words and 60
-  italic ranges, each on his yes. The list is in `manuscript/NOVEL-PROCESS-2026-11-23.md`, section 9.
+  italic ranges, each on his yes, then four changes to Lou in Chapter 35 on his "Do it". The list is in
+  `manuscript/NOVEL-PROCESS-2026-11-23.md`, section 9.
 - The checker in `manuscript/tools/final-check/` passes: 93 checks, none failed. Its self-test
   planted 21 faults and caught all 21.
 - The Character Bible (Drive, and `manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md`) has every

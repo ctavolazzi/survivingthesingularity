@@ -11,7 +11,7 @@ Find the current manuscript through the bridge first (`node scripts/sts-bridge.m
 | --- | --- |
 | `verify_v5.py DATA_DIR` | The checker. 93 checks in nine groups (below). Writes `verify_report.txt` into DATA_DIR. Exits 1 on any FAIL. |
 | `selftest.py DATA_DIR WORK_DIR` | Shows the checker can fail. It plants 21 faults, one at a time, in copies of the manuscript and requires the named check to catch each one. |
-| `line_edits.json` | The 15 one-line edits of the session, each with the words before and after. The sixteenth edit, a paragraph moved in Chapter 39, is written into the checker. |
+| `line_edits.json` | The 18 one-line edits of the session, each with the words before and after: 15 from the final edit and 3 in Chapter 35 made later that evening. The two paragraph moves (Chapter 39, and the close of the stove scene in Chapter 35) are written into the checker. |
 | `reviewed_vocabulary.txt` | Every distinct word in v5 (5,395), read through by eye. The spelling check fails on any word that is not in it. There was no dictionary on the machine. |
 | `verify_report-2026-11-24.txt` | The last run: 93 pass, 0 fail, 0 warnings, 7 open items. |
 | `bible_entries.py V5.txt OUT.json` | Built the 21 new Character Bible entries and the minor characters list. It looks up every quotation in the v5 text, takes the chapter from the text, and stops if a quotation is not there word for word. |
@@ -21,8 +21,8 @@ Find the current manuscript through the bridge first (`node scripts/sts-bridge.m
 
 - **A. Coverage.** The Doc's text today is, byte for byte, the text that was read line by line. The
   read covered lines 1 to 3,629. No line was long enough to be cut off.
-- **B. Edits.** Today's text is the text at the start of the session plus exactly the 16 agreed
-  edits. Nothing else changed.
+- **B. Edits.** Today's text is the text at the start of the session plus exactly the agreed edits
+  (16, then 4 in Chapter 35). Nothing else changed.
 - **C. Locked lines.** Each is still word for word what it was.
 - **D. Rules.** No dashes, straight quotes only, "never once" only in speech, "hand flat" only where
   he allows it, the nicknames in their chapters, the canon lines.
@@ -44,8 +44,8 @@ other four are the full text of the novel, so they are not in this public reposi
 
 | File | What it is | sha256, first 16 |
 | --- | --- | --- |
-| `current_export_raw.txt` | A plain text export of the Doc, as downloaded. Taken again at the end of the session: the same bytes. | `50569d5afaaeff33` |
-| `text_as_read.txt` | The same text with carriage returns and the byte order mark removed. This is what was read. | `3384929ad6b10ecd` |
+| `current_export_raw.txt` | A plain text export of the Doc, as downloaded after the Chapter 35 changes. (Before them it was `50569d5afaaeff33`.) | `bf48c5ca3d60c06d` |
+| `text_as_read.txt` | The same text with carriage returns and the byte order mark removed. The whole book was read at `3384929ad6b10ecd`; the four Chapter 35 changes were then read in the comparison of the two exports, which showed no other difference. | `49e286a23e31d8f0` |
 | `session_start_export.txt` | The export from before the session's first edit. | `468f949d131d6e1b` |
 | `current_doc.json`, `session_start_doc.json` | Docs reads at the same two moments, for formatting and italics. | |
 

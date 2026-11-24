@@ -5,7 +5,7 @@ verify_v5.py  --  mechanical proof-check for "StS v5 draft (Nov 23)".
 What it proves (hard checks, FAIL stops the release):
   A. Coverage    the Doc's text today is byte-for-byte the text that was read line by line,
                  the read covered every line, and no line was long enough to be cut off.
-  B. Edits       today's text == session-start text + exactly the 16 approved edits. Nothing else.
+  B. Edits       today's text == session-start text + exactly the approved edits (16, then 4 in Ch 35). Nothing else.
   C. Locked      every locked line is still word for word what it was at session start.
   D. Rules       dashes, quotes, "never once", "hand flat", nicknames, cut line, canon lines.
   E. Continuity  calendar facts and every recurring number agree with themselves.
@@ -30,7 +30,7 @@ DATA_DIR must hold:
   session_start_export.txt   normalized export taken before any edit this session
   session_start_doc.json     Docs API read taken before any edit this session
   text_as_read.txt           the normalized text that was read line by line
-  line_edits.json            the 15 approved find/replace edits [[n, old, new], ...]
+  line_edits.json            the 18 approved find/replace edits [[n, old, new], ...]
 Exit code 0 only if there is no FAIL.
 """
 import sys, os, re, json, hashlib, datetime, collections, difflib
@@ -228,13 +228,23 @@ try:
     ex_lines.insert(i_tgt, MOVE_PARA)
 except (ValueError, StopIteration):
     problems.append("could not replay the Ch 39 paragraph move")
+# Ch 35, on the author's "Do it" late on 24 Nov: the cosmos line and the line after it now close the stove scene.
+CH35_MOVES = ['"There is no more powerful force in all the cosmos than a mother protecting her young."',
+              'He was quiet a second. "My wife would\'ve told me I was romanticizing. Said fourth grade never once felt like the cosmos. But I was the kid in the back seat."']
+CH35_BEFORE = "The firelight moved across Lou's face."
+try:
+    for para in CH35_MOVES:
+        ex_lines.pop(ex_lines.index(para))
+        ex_lines.insert(next(i for i, l in enumerate(ex_lines) if l.startswith(CH35_BEFORE)), para)
+except (ValueError, StopIteration):
+    problems.append("could not replay the Ch 35 paragraph move")
 expected = "\n".join(ex_lines)
 if expected != cur_text:
     d = [l for l in difflib.unified_diff(expected.split("\n"), lines, lineterm="", n=0)
          if not l.startswith(("---", "+++", "@@"))]
     problems.append("text differs from session start + approved edits: %s" % d[:6])
-check("B edits", "Today's text == session-start text + the 16 approved edits, and nothing else",
-      not problems, "; ".join(problems), "15 line edits and 1 paragraph move replay exactly")
+check("B edits", "Today's text == session-start text + the approved edits (16, then 4 in Ch 35), and nothing else",
+      not problems, "; ".join(problems), "%d line edits and 2 paragraph moves replay exactly" % len(LINE_EDITS))
 bad = []
 for n, old, new in LINE_EDITS:
     if cur_text.count(new) != 1 or cur_text.count(old) != 0:

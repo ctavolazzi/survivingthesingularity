@@ -1,14 +1,14 @@
-VERIFY v5   2026-11-24 20:33   Doc revision AHj4eMTKC_xZh0JD3A
+VERIFY v5   2026-11-24 22:00   Doc revision AHj4eMRECvc3WK3mr4
 PASS 93   FAIL 0   WARN 0   OPEN 7
 
 == A coverage
-  PASS  Doc text today is identical to the text that was read line by line   [sha256 3384929ad6b10ecd, 3629 lines]
+  PASS  Doc text today is identical to the text that was read line by line   [sha256 49e286a23e31d8f0, 3629 lines]
   PASS  The logged read ranges cover every line, first to last   [lines 1 to 3629, no gap]
   PASS  No line is long enough to be cut off by the reader (limit 2000 characters)   [longest line is 843 characters]
   PASS  The Docs API copy and the text export are the same document   [3610 paragraphs rebuild the export exactly]
 == B edits
-  PASS  Today's text == session-start text + the 16 approved edits, and nothing else   [15 line edits and 1 paragraph move replay exactly]
-  PASS  Each approved edit is present exactly once and its old wording is gone   [15 of 15]
+  PASS  Today's text == session-start text + the approved edits (16, then 4 in Ch 35), and nothing else   [18 line edits and 2 paragraph moves replay exactly]
+  PASS  Each approved edit is present exactly once and its old wording is gone   [18 of 18]
   PASS  Ch 39: the phone paragraph now comes before the madrones paragraph
 == C locked
   PASS  Every locked line is present, the right number of times, unchanged since session start   [16 locked lines]
@@ -83,8 +83,8 @@ PASS 93   FAIL 0   WARN 0   OPEN 7
   PASS  Every parenthesis is closed
   PASS  No heading appears twice
 == G formatting
-  PASS  Body text is in one font   [{'(inherited)': 461910}]
-  PASS  Body text is in one size   [{'(inherited)': 461910}]
+  PASS  Body text is in one font   [{'(inherited)': 461789}]
+  PASS  Body text is in one size   [{'(inherited)': 461789}]
   PASS  No underline, strikethrough, highlight, link or raised text in the body
   PASS  Bold text is exactly what it was at session start   [46 bold runs]
   PASS  Paragraph styling is exactly what it was at session start (the moved paragraph included)   [5 distinct paragraph styles, same counts]

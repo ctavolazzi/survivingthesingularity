@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T20:14:33Z",
+  "generated_at": "2026-11-24T00:40:37Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -528,27 +528,27 @@
       ]
     },
     {
-      "id": "2610.32851",
+      "id": "2611.27369",
       "source": "arxiv",
-      "title": "Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves",
-      "url": "https://arxiv.org/abs/2610.32851",
+      "title": "AMARIS: Merging Generalist and Specialist LLMs via Adaptive Subspace Inheritance",
+      "url": "https://arxiv.org/abs/2611.27369",
       "authors": [
-        "Garima Agrawal",
-        "Prasun Das",
-        "Akshay Sarvade",
-        "Priyanka L"
+        "Hwee Young Kang",
+        "Irwin De Tao Chin",
+        "Wen-Haw Chong",
+        "Hai Leong Chieu"
       ],
-      "summary": "Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands of artifacts describing scope, journeys, rules and acceptance criteria. Recovery does not confer usability. Entities like offer, eligibility, and activation recur across services under a shared vocabulary, related in name but operationally distinct, so one end-to-end journey implicates over a thous",
-      "category": "cs.AI",
+      "summary": "Domain specialization of large language models (LLMs) often improves target-domain performance but degrades broad capabilities. Model merging is an attractive training-free alternative, yet common parameter-space strategies (for example, interpolation and sparsified averaging) provide limited control over task-specific interference. We introduce Adaptive Model Alignment via Ranked Inherited Subspaces (AMARIS), a covariance-driven framework that transfers specialist updates only along selected activation directions. AMARIS formulates merging as budgeted subspace inheritance: it seeks high speci",
+      "category": "cs.CL",
       "tag": "Research",
-      "published_at": "2026-10-23",
-      "score": 9.0,
-      "raw_score": 18,
+      "published_at": "2026-11-20",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
         "agi",
-        "agent",
-        "multi-agent",
-        "agentic",
+        "alignment",
+        "llm",
+        "language model",
         "rag"
       ]
     },
@@ -978,6 +978,82 @@
       ]
     },
     {
+      "id": "2611.27689",
+      "source": "arxiv",
+      "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.27689",
+      "authors": [
+        "Zhenxuan Fan",
+        "Zhuoya Wang",
+        "Yuqian Yuan",
+        "Wenqiao Zhang"
+      ],
+      "summary": "Vision-language model (VLM)-based agents offer a promising approach to robotic manipulation, yet remain limited by inadequate memory organization, uncertain failure attribution, and limited reuse of execution experience. We propose Embodied-Harness, a dual-agent framework that improves manipulation by refining the execution harness without updating model parameters. The Actor interacts with the environment through a robot-control interface, while the Reflector converts execution evidence into reusable operational guidance. Hierarchical Memory Architecture maintains short-term execution context",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-20",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "embodied",
+        "robot",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.27326",
+      "source": "arxiv",
+      "title": "Reasoning in Fewer Tokens: Concept-Normalized Multilingual Scratchpads and Reversible Model-Adaptive Reasoning Codes",
+      "url": "https://arxiv.org/abs/2611.27326",
+      "authors": [
+        "Rabimba Karanjai",
+        "Suryabhan Singh Hada",
+        "Hemanth Hegadehalli Madhavarao",
+        "Qun Gu"
+      ],
+      "summary": "Chain-of-thought prompting significantly improves the reasoning capabilities of large language models (LLMs) but incurs high inference costs due to lengthy autoregressive decoding. While previous efficiency approaches reduce costs by discarding tokens or utilizing continuous latent representations, these lossy methods fundamentally sacrifice interpretability and auditability. In this work, we introduce a novel compression framework for intermediate reasoning. We apply Byte-Pair Encoding (BPE) to reasoning corpora to learn a compressed vocabulary of Private Use Area (PUA) tokens, each represent",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-20",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "reasoning",
+        "chain-of-thought",
+        "interpretability",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.27286",
+      "source": "arxiv",
+      "title": "Belief-State Management Meets Rubric Rewards for Agentic Forecasting",
+      "url": "https://arxiv.org/abs/2611.27286",
+      "authors": [
+        "Jingyi Chai",
+        "Yun Liao",
+        "Hao Lu",
+        "Kemeng Zhang"
+      ],
+      "summary": "Current large language model (LLM) agents still struggle to forecast real-world events. This stems from two primary limitations: i) standard ReAct harness accumulates reasoning and evidence within one growing context, and ii) outcome-based rewards in forecasting lead to a slow and noisy signal that cannot distinguish sound reasoning from lucky guesses. To address these, we introduce a forecasting training framework including harness design and post-training. For the harness side, we propose Proactive Belief-State Management (PBM), equipping agents with a fold tool to compress lengthy context i",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-20",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.24049",
       "source": "arxiv",
       "title": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
@@ -1275,6 +1351,152 @@
       ]
     },
     {
+      "id": "2611.27353",
+      "source": "arxiv",
+      "title": "WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection",
+      "url": "https://arxiv.org/abs/2611.27353",
+      "authors": [
+        "Marc Boëlle",
+        "Lucas Dixon",
+        "Alexandre Ramé"
+      ],
+      "summary": "As the capabilities of large language models keep improving, traditional mechanistic interpretability methods struggle to keep pace. In contrast, trainable introspection methods emerge as a promising alternative; they repurpose the model itself as a self-diagnostic tool, trained to verbalize what it has learned during finetuning in natural language. While training on datasets of finetuned experts achieves encouraging results, it currently lacks robustness and generalization. Building on the data augmentation framework of MiXup, we introduce WaXup, a method that augments the introspection train",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-20",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "interpretability",
+        "interpret",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.27138",
+      "source": "arxiv",
+      "title": "Double counting in LLM evidence fusion: exact posteriors separate rule compliance from posterior gain",
+      "url": "https://arxiv.org/abs/2611.27138",
+      "authors": [
+        "Tengfei Shao",
+        "Asma Rezaei",
+        "Ali Reza Kamali"
+      ],
+      "summary": "Language models fuse reports in retrieval, multi-agent consensus and agent memory, where treating shared-source reports as independent can double count evidence. A common remedy is an instruction to count each source once. Its value depends on the receiver's raw baseline. Pricing it needs an exact reference. We build the graded-dependence exact reference: binary worlds with single-report reliability 0.65 and four dependence levels, whose disclosed parameters give every world an exact posterior and every rule a target risk. The paired gain protocol scores raw and instructed answers of four conf",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-20",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "2611.27713",
+      "source": "arxiv",
+      "title": "MetaRigor: From Agentic Automation to Verifiable End-to-End Meta-Analysis Through Scientific Decision Boundaries",
+      "url": "https://arxiv.org/abs/2611.27713",
+      "authors": [
+        "Yifeng Xie",
+        "Chenke Li",
+        "Yangshuo Miao",
+        "Jingyuan Zheng"
+      ],
+      "summary": "Automated meta-analysis requires not only accurate numerical extraction but also the consistent preservation of result identity across stages, including the associated study, comparison, population, outcome, time point, and analysis conditions. We present MetaRigor, an LLM workflow framework for verifiable end-to-end evidence synthesis. MetaRigor organizes study results as Study x Target units and operationalizes scientific decision boundaries at the task level through Task Contracts, programmatic rules, and source binding. The model performs semantic interpretation that depends on study conte",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "interpret",
+        "llm",
+        "automation"
+      ]
+    },
+    {
+      "id": "2611.27725",
+      "source": "arxiv",
+      "title": "A Cognitive Agentic AI Framework for Interactive Process Analysis and Optimization",
+      "url": "https://arxiv.org/abs/2611.27725",
+      "authors": [
+        "Trung Ngoc Trinha",
+        "Roman Tschentscher",
+        "Trong Dong Nguyen",
+        "Trung Thanh Nguyen"
+      ],
+      "summary": "Complex multivariable process analysis and optimization require coordinated access to simulation, structured data, machine learning (ML), optimization, and scientific literature, often across disconnected software tools. We present a Cognitive Agentic AI Framework (CAAF) that enables interactive, iterative process investigation through natural-language prompts within an established flowsheet. Following harness-engineering principles, CAAF assigns task interpretation, planning, knowledge synthesis, and context management to a large language model while delegating numerical calculations to speci",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "interpret",
+        "language model"
+      ]
+    },
+    {
+      "id": "2611.27545",
+      "source": "arxiv",
+      "title": "Epistemic Social Learning: Latent Behavioral Structure under Endogenous Multi-Agent Interaction",
+      "url": "https://arxiv.org/abs/2611.27545",
+      "authors": [
+        "Jainendra Shukla",
+        "Dhruv Jaiswal",
+        "Divyanshi Beniwal",
+        "Kiriti Kanjilal"
+      ],
+      "summary": "In multi-agent interaction, a learner's actions shape the observations from which it infers other agents' behavior. A behavioral model may predict these observations well yet support poor adaptation when opponents change. We introduce Epistemic Social Learning (ESL), which couples fast, interaction-specific Bayesian beliefs with slower online learning of population-shared behavioral prototypes. Belief-conditioned decisions influence subsequent observations and, in turn, the representations learned from them. Under explicit regularity and averaging assumptions, we provide a conditional stochast",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "2611.27499",
+      "source": "arxiv",
+      "title": "NavRSI: Recursive Harness Self-Improvement for Vision-and-Language Navigation",
+      "url": "https://arxiv.org/abs/2611.27499",
+      "authors": [
+        "Guangzhao Dai",
+        "Guoxin Lian",
+        "Shuo Wang",
+        "Shengbin Yue"
+      ],
+      "summary": "Frontier large language models (LLMs) have enabled vision-and-language navigation (VLN) through direct closed-loop perception and action. However, navigation performance depends strongly on the harness governing LLM-environment interactions, while existing harnesses largely rely on manually designed navigation tools, memory, and agent roles. We introduce NavRSI, a harness-centric recursive self-improvement framework that optimizes the navigation behavior of frozen LLMs through closed-loop experience. In each round, NavRSI iteratively collects navigation trajectories and failure diagnostics, em",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.26335",
       "source": "arxiv",
       "title": "ClosureBench: A Benchmark for Reasoning under Closure Assumptions",
@@ -1296,222 +1518,6 @@
         "interpret",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2611.26519",
-      "source": "arxiv",
-      "title": "ACE-Brain-0.7: Learning Execution-Grounded Reasoning for Embodied Agents",
-      "url": "https://arxiv.org/abs/2611.26519",
-      "authors": [
-        "Yinhe Wang",
-        "Shijun Shi",
-        "Feng Pan",
-        "Tao Tao"
-      ],
-      "summary": "Reliable reasoning for long-horizon embodied tasks requires predictions grounded in the observed execution state. We present ACE-Brain-0.7, a 9B vision--language model that combines spatial grounding, task understanding, and progress estimation. To train the model, we curate 3.7 million question--answer pairs, drawing execution supervision from egocentric human videos, robot episodes, and simulation. These questions span different stages of an execution and connect task-level judgments with observed progress and outcomes. We then fine-tune Qwen3.5-9B on this collection together with additional",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-19",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "embodied",
-        "robot",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.26376",
-      "source": "arxiv",
-      "title": "Alignment Drives Reuse: Learning Generalizable Robot-Use Agents from Heterogeneous Experience",
-      "url": "https://arxiv.org/abs/2611.26376",
-      "authors": [
-        "Ziyue Wang",
-        "Yaopeng Yang",
-        "Liyi Zhou"
-      ],
-      "summary": "Vision-language models (VLMs) demonstrate broad generalization across tasks and domains. However, comparable generalization in robot manipulation remains challenging. Heterogeneity in robot embodiments, task formulations, geometric conventions, and action interfaces fragments interaction experience across benchmarks and hardware. We rethink robot skill learning through alignment: Can heterogeneous interactions across benchmarks and embodiments jointly improve one shared skillset for robot manipulation? We propose UniCraft, a framework for learning robot manipulation skills by aligning heteroge",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-19",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "alignment",
-        "robot",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2611.26341",
-      "source": "arxiv",
-      "title": "Reasoning on Call: Efficient Agentic Robot Control for Long-Horizon Robot Manipulation",
-      "url": "https://arxiv.org/abs/2611.26341",
-      "authors": [
-        "Zilang Cen",
-        "Chao Tang",
-        "Fangcheng Liu",
-        "Weishi Mi"
-      ],
-      "summary": "Large multimodal models can support long-horizon robot manipulation, but frequent model calls incur substantial latency and token costs. The central challenge is determining when agent assistance or intervention is needed and whether errors require correcting robot execution, subtask planning, or both. To address this problem, we propose RoC (Reasoning on Call), an efficient framework that coordinates a low-level policy and a high-level reasoning agent through an online task-state monitor. The monitor combines temporal visual observations with ordered interaction memory to jointly estimate pro",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-19",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "reasoning",
-        "robot"
-      ]
-    },
-    {
-      "id": "2611.26046",
-      "source": "arxiv",
-      "title": "Agentic Scaling of Embodied Tasks in Simulation for Synthetic Data Collection and Policy Evaluation",
-      "url": "https://arxiv.org/abs/2611.26046",
-      "authors": [
-        "Kang Wang",
-        "Xiaolei Zhou",
-        "Xiaoyu Wu",
-        "Zhendong Wang"
-      ],
-      "summary": "Scaling embodied interaction data requires a broad collection of usable tasks, yet specifying and validating each task instance remains costly. We present AgenticTask, an agent-based framework that expands existing task collections under human intent. Its central representation links interaction requirements to object and part bindings, scene and robot configurations, initial conditions, and completion criteria. A task-generation agent reuses interaction structure to construct supported variations and revises incompatible configurations using validation feedback. A task-execution agent uses th",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-11-19",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "embodied",
-        "robot",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2611.24619",
-      "source": "arxiv",
-      "title": "GateWatch: Low-Overhead LLM Monitoring with Boolean Circuits",
-      "url": "https://arxiv.org/abs/2611.24619",
-      "authors": [
-        "Firas Spanioli",
-        "Yaniv David"
-      ],
-      "summary": "As large language models (LLMs) and LLM-based agents are increasingly deployed, monitoring their behavior becomes important for detecting unsafe or unintended actions. Activation probes offer an efficient approach, but existing methods face trade-offs between accuracy, interpretability, and computational overhead. Probes on raw activations lack interpretable inputs, whereas sparse autoencoder (SAE) probes use interpretable features but often rely on additive classifiers and large SAE encoders, limiting interpretability and increasing memory overhead. We introduce GateWatch, a compact, interpre",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-11-18",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "interpretability",
-        "interpret",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.21828",
-      "source": "arxiv",
-      "title": "Coordination of Heterogeneous Teams with Uncertain Task Requirements",
-      "url": "https://arxiv.org/abs/2611.21828",
-      "authors": [
-        "Jongann Lee",
-        "Melkior Ornik"
-      ],
-      "summary": "Coordinating a team of heterogeneous agents to complete tasks with unknown requirements is a challenging multi-agent planning problem. Agents differ in their ability to discover task requirements and in their ability to engage tasks, so the planner must coordinate task discovery, execution, and staging. This paper introduces a hierarchical planner that uses a graph neural network policy to assign actions to agents, then finds a path to the action's location using a shortest-path algorithm. The central part of our approach is the CAAT graph, which is a graph representation of the planning conte",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-11-16",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "planning"
-      ]
-    },
-    {
-      "id": "2611.26553",
-      "source": "arxiv",
-      "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
-      "url": "https://arxiv.org/abs/2611.26553",
-      "authors": [
-        "Mengxiao Wang",
-        "Mahbub Alam",
-        "Kalyan Nakka",
-        "Nitesh Saxena"
-      ],
-      "summary": "Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only says what went wrong and rarely (in)validates the incident or finds its root cause. Incident catalogs collect these reports, and benchmarks record whether agents fail, but neither replicates an incident nor tests the cause its report might identify. In this paper, we present ROGUE-AI (Replication of Agentic Security Events: Audit and Inves",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-11-19",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.26422",
-      "source": "arxiv",
-      "title": "Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction",
-      "url": "https://arxiv.org/abs/2611.26422",
-      "authors": [
-        "Jihong Zhang",
-        "Zijing Jin",
-        "Mingfeng Xue"
-      ],
-      "summary": "Large language models (LLMs) can generate Q-matrices for diagnostic classification models that approximate expert specifications, but evaluations have focused on the final matrices, leaving the basis of individual item-attribute assignments unexamined. This opacity limits the responsible use of AI in measurement. We propose Reasoning-Trace Analysis (RTA), a framework in which an LLM generates attribute-labeled reasoning steps through chain-of-thought (CoT) prompting and these steps are analyzed to reconstruct, compare, and inspect each assignment. RTA is intended to supplement expert review an",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-11-19",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "reasoning",
-        "chain-of-thought",
-        "interpret",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2611.25705",
-      "source": "arxiv",
-      "title": "STARK: Moving towards Personalized Agents That Truly Learn and Remember",
-      "url": "https://arxiv.org/abs/2611.25705",
-      "authors": [
-        "Aryan Jain",
-        "Abhishek Jha",
-        "Anish Nediyanchath",
-        "Promod Yenigalla"
-      ],
-      "summary": "Long-term memory is essential for personalized agentic systems that interact with users over long time periods, yet current architectures only capture what happened while leaving the reasoning of why it happened to be derived later by underlying LLMs.%, and silo knowledge within individual users. These events can, however, convey not only what a user experienced but also how that experience shaped their behavioral patterns. We introduce STARK, a dual-graph memory architecture which treats these events not just as nodes but also as edges between behavioral insights. STARK maintains an Episodic ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-11-19",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm"
       ]
     }
   ]

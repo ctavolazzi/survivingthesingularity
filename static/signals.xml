@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 22 Nov 2026 20:14:33 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 24 Nov 2026 00:40:37 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
@@ -148,11 +148,11 @@
       <description>Large Language Models (LLMs) are widely adopted for reflective error correction in task planning; however, existing approaches primarily rely on autonomous exploration, rendering them prone to accumulating erroneous experiences during early interactions with new environments. To address this limitat... [Score: 9.0 | Flagged for: agent, autonomous, planning, robot, robotics] Authors: Qingmiao Liang, Jiatao Zhang, et al.</description>
     </item>
     <item>
-      <title>Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves</title>
-      <link>https://arxiv.org/abs/2610.32851</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.32851</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands... [Score: 9.0 | Flagged for: agi, agent, multi-agent, agentic, rag] Authors: Garima Agrawal, Prasun Das, et al.</description>
+      <title>AMARIS: Merging Generalist and Specialist LLMs via Adaptive Subspace Inheritance</title>
+      <link>https://arxiv.org/abs/2611.27369</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.27369</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Domain specialization of large language models (LLMs) often improves target-domain performance but degrades broad capabilities. Model merging is an attractive training-free alternative, yet common parameter-space strategies (for example, interpolation and sparsified averaging) provide limited contro... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Hwee Young Kang, Irwin De Tao Chin, et al.</description>
     </item>
     <item>
       <title>Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving</title>

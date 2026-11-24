@@ -46,6 +46,7 @@ Google Docs are named by title only, because this repository is public. Search D
 - **StS v4 Chapter Arcs.** A story arc for each of the 46 sections, and the new chapter titles, written from version 4 by another session. Claude Code checked its 426 quotations against version 4: 6 are not word for word. The instructions it followed are in the Doc "Claude Code prompt: v4 chapter arcs and chapter titles" and on the branch novel/v4-arcs-titles-prompt.
 - **OLD: V3 to V4 Readiness Audit (made without seeing the book; see the Editor's Letter).** Made by a tool that could not see the book. It contains nothing about the text. Replaced by the Editor's Letter.
 - **StS v4: Editor's Letter and Readiness Audit (Nov 23).** The editorial read of version 4, 23 November: answers on arcs, sentences and voice, ten calls for the author, small continuity questions, notes for the Amazon file, and a punch list for all 46 sections. Its 124 quoted lines were checked against version 4.
+- **StS workboard: who is doing what.** A Drive copy of manuscript/novel/WORKBOARD.md for chats that cannot read GitHub, made on 23 November at 6 PM. Whoever changes the workboard remakes this copy.
 
 ## How to change the manuscript
 

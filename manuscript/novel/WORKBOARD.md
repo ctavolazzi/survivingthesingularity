@@ -8,8 +8,8 @@ page stops that.
 you finish or stop, say so here.** Times are Pacific.
 
 If your chat cannot write to GitHub, use the block "Who is working on what" at the top of the Google
-Doc "v4 scaffold" instead. A copy of this page is also at the bottom of the Drive page "sts-bridge:
-read this first". Whoever can write here copies the claims across.
+Doc "v4 scaffold" instead. A copy of this page is also in Drive, as the Doc "StS workboard: who is
+doing what", linked from the page "sts-bridge: read this first". Whoever can write here copies the claims across.
 
 Where the files are: [`BRIDGE.md`](BRIDGE.md), or the Drive page "sts-bridge: read this first".
 

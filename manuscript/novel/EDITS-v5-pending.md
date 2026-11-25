@@ -186,6 +186,23 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     Ch 13), and Melody's "greedy little piece of shit" a minute earlier. "Said sure to every request" echoes Ch 7:
     weddings, "where the whole job is to say sure".]
 
+95. The meltdown, the question to God (CT: he screams "Why? Why me? Why now? Why?", waits for God's answer, and it is
+    met only with the crushing weight of his own feelings in the silence). After the paragraph that ends "...Why did
+    you do this to me? What did I do? Tell me what I did!", the next lines "He waited." / "He actually waited. He sat
+    there with his chest going..." / "Nothing answered." become:
+
+    > "Why? Why me? Why now? Why?"
+    >
+    > He waited for God's answer.
+    >
+    > He actually waited. He sat there with his chest going and his hands open on his knees, like a man who has asked
+    > a fair question and is owed an answer.
+    >
+    > It was met only with the crushing weight of his own feelings in the silence.
+
+    Then "The engine ticked as it cooled..." as before. [CT's lines. Kept from the book: "He actually waited..." The
+    paragraph before already has a "Why me?" in the middle; CT's cry is the last thing he shouts.]
+
 ## Needs CT (answered)
 
 Settled by CT on 2026-11-25: keep edit 5 ("chasm"), keep edits 14 and 56 (David's line), keep edit 9 ("first month

@@ -160,6 +160,10 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     CALLED: Chapter 13 has the same callback ("scrolled up, past his own link, to Wes. is my stuff in that thing.
     Under it, Let me look into it."). Change it to end on the unanswered question too?
 
+### Meanwhile (the first one, after Chapter 2: the Bidwell scene)
+26. "Corpus. The body of work. Everything anyone ever made with the software." becomes: "Corpus. The body of work.
+    Everything anyone ever made with their software and stored on their servers."
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

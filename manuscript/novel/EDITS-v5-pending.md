@@ -351,10 +351,14 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     laughed nicely. becomes:
 
     > "Elijah, your video went parabolic," the moderator said. "And your music is fantastic. We all love what you
-    > bring to the table." The room laughed nicely.
+    > bring to the table." The room laughed nicely. "Now, your biggest video, of course we've all seen it. But some of
+    > your recent ones seem to be going into a little more of the nuance of what we're all going through. Tell me, do
+    > you fancy yourself sort of the people's forecaster? But first. Everybody here keeps saying AGI. For the folks
+    > at home, what precisely does it mean?"
 
-    Then "Everybody here keeps saying AGI. For the folks at home, what precisely does it mean?" as before. ("The
-    people's forecaster" appears nowhere else in the book, so nothing else changes.)
+    The forecaster question is CT's. CALLED: "But first." is added so the existing AGI question still comes last,
+    because Elijah's answer that follows ("It's, um. ... It's when the thing can do, like. Most things.") and the
+    paragraph about the Architect's sentence in his notebook both answer the AGI question.
 
 ## Claude's calls (2026-11-25)
 

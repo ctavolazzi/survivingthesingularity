@@ -540,6 +540,15 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      **Open, for CT:** the touch lines and "Your knowledge earns your keep here, Elijah. That's all." are Claude's
      wording for his beats; "marketing" is his word. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
 
+111. **Chapter 17, the drive home: Curtis shifts his weight.** CT: after Curtis's line "You don't knock out a wall
+     till you know what it's holding up," he should "adjust his body, mirroring the line that he just spoke ... He
+     adjusted his weight from one foot to the other. Something like that." Curtis is driving, so the body move
+     is in the seat [Claude's adaptation of CT's "something like that"]. Book now: "...You don't knock out a wall
+     till you know what it's holding up. So go on. What's your solution, then, bud?" Change to:
+
+     > ... You don't knock out a wall till you know what it's holding up." He shifted his weight in the seat. "So
+     > go on. What's your solution, then, bud?"
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

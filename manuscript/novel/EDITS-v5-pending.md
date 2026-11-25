@@ -78,6 +78,32 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     Change it too?
 22. After Elijah texts Wes "Let me look into it, he sent." the next line, "He never did.", becomes: "He meant to do it,
     but he never got the chance." (The later callbacks in Chapters 6 and 13 quote only the texts, so they still fit.)
+23. Lena. He does not follow her to her car; he goes over to her in the room as everyone is leaving. Replace the
+    paragraphs from "Afterward he went looking for the woman from illustration tools." through "She got in and
+    slammed the door. He stood there while she backed out." with this draft (CT's beats and lines; the connecting
+    narration is mine):
+
+    > In the shuffle afterward, with everybody talking and comparing notes, some people excited and some maybe
+    > apprehensive, Elijah saw the woman from illustration tools gathering her things. He wanted to ask her about what
+    > she'd said. He went over. Her badge was clipped to her bag. LENA, it said, and under that, ILLUSTRATION.
+    >
+    > "Hey," he said, gently. "I liked what you said there."
+    >
+    > She looked up. She looked at his badge. "You're data team."
+    >
+    > "Yeah. I mean, I worked on some of it."
+    >
+    > "Then don't." She started putting things back in her bag.
+    >
+    > "Look, I'm not trying to…"
+    >
+    > "I said don't." She zipped the bag. "God, you people don't have any concern for what other people want. You just
+    > think about you."
+    >
+    > She left.
+
+    The next paragraph starts "He went back up and found Devendra at the good coffee machine". He no longer went
+    outside, so "went back up" becomes "He found Devendra at the good coffee machine" (mine).
 
 ## Applied
 

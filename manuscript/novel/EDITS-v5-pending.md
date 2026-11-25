@@ -435,6 +435,10 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     > "She doesn't do the face-to-face part," Ruby said. "The last guy with a notebook was a trucker. He cried. She
     > didn't like that."
 
+### Chapter 10: Frozen Peas
+52. On the fire escape with Ruby: "It tasted like the best night of his twenties." becomes "It tasted like the best
+    nights of his twenties."
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

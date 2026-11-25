@@ -12,6 +12,7 @@
 
 It never calls Google. Pictures are fetched from the read's contentUri links, which expire; read the Doc again if
 they fail.
+--small-pictures makes the pictures 800 pixels wide, so the .docx fits under the Drive connector's limit.
 """
 import json, re, subprocess, sys
 from pathlib import Path
@@ -138,13 +139,14 @@ def write_docx(paras, images, objects, out, imgdir):
                     uri = objects[oid]["inlineObjectProperties"]["embeddedObject"]["imageProperties"]["contentUri"]
                     if subprocess.run(["curl", "-sS", "-L", "-f", "-o", str(f), uri]).returncode:
                         sys.exit(f"could not fetch picture {oid}; read the v5 Doc again")
-                j = imgdir / f"{oid}.jpg"
+                wmax, q = (800, 70) if "--small-pictures" in sys.argv else (1400, 82)
+                j = imgdir / f"{oid}-{wmax}.jpg"
                 if not j.exists():
                     from PIL import Image
                     im = Image.open(f).convert("RGB")
-                    if im.width > 1400:
-                        im = im.resize((1400, round(im.height * 1400 / im.width)), Image.LANCZOS)
-                    im.save(j, "JPEG", quality=82, optimize=True)
+                    if im.width > wmax:
+                        im = im.resize((wmax, round(im.height * wmax / im.width)), Image.LANCZOS)
+                    im.save(j, "JPEG", quality=q, optimize=True)
                 p.add_run().add_picture(str(j), width=Inches(6))
             else:
                 r = p.add_run("".join(g[1])); r.italic = g[2][0] or None; r.bold = g[2][1] or None

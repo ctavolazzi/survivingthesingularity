@@ -313,13 +313,15 @@ Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude
     "The arms came up that first week, the day before the lien sale. Somebody had a flatbed..." becomes:
 
     > On the fourth day he asked Grace if the dry end of the shed was still free. She had offered it in her first
-    > email, after she saw his post about the arms. He told her the rest of it: two crates in a storage unit off
+    > message, after she saw his post about the arms. He told her the rest of it: two crates in a storage unit off
     > Highway 99, a lien sale at the end of the week, and nothing to pay it with.
     >
     > The arms came up the day before the lien sale. Somebody had a flatbed...
 
     and the paragraph goes on as before (the table voting to cover the unit as a loan, the crates in the dry end of
     the equipment shed). [Claude's wording, from CT's question. "On the fourth day" follows edit 87's three days.]
+    Corrected 25 Nov (third logging chat): "her first email" became "her first message". The shed offer is in
+    Grace's message in Chapter 15; her email from April is the one he opens at the food bank (edit 100).
 89. The Sunday calls on the pump house steps, and how he meets Lou (CT: the calls are 9:40 on Sunday mornings, as
     changed in edit 30; the farm lets him be; a fan comes up and tries to talk to him, and one of them shoos the
     fan off, and that's how he meets Lou). Edit 30 already changes "The night aide held the phone" to "The aide
@@ -1133,10 +1135,10 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      "So he designed it again." becomes [Claude's wording, except "a startup out of Iowa", "came up for air", "Did he
      actually need to know all this?", "remembered his training" and "got to work", which are CT's]:
 
-     > So he designed it again, and this time he started the old way. He spent his nights at the bench with calipers
+     > So he designed it again, and this time he started the old way. He spent a weekend at the bench with calipers
      > and graph paper, measuring relays out of Marta's coffee can one at a time, because no two of them had the same
      > footprint. By the end of the weekend he had a third of a board and a stack of crossed-out pages. The first
-     > design had already eaten the better part of a month, and the growers needed the boxes before planting.
+     > design had already eaten the better part of a month, and forty growers had seedlings waiting on him.
      >
      > So he went looking for help. A startup out of Iowa had an AI that laid out circuit boards. One evening with it
      > turned into two, and every answer opened three more questions. By midnight on the second night, Elijah was
@@ -1180,6 +1182,10 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      "Does a tree need to read its own DNA to produce fruit?" and "What?". CT: "I think we should cut it. He should
      find the PCB AI designer, but not that conversation shouldn't happen until the [Rod Code] conversation." Do not
      add it. The wording is in git history.
+     Corrected 25 Nov, contradictions pass: "his nights at the bench" became "a weekend at the bench" (the next
+     sentence ends "By the end of the weekend"), and "the growers needed the boxes before planting" became "forty
+     growers had seedlings waiting on him" (the boxes ship in June; the order already says "real customers with
+     seedlings on the line").
 
 132. **Chapter 19, the Rod Code scene: the board is the real reason, and Tyler knows.** Reworked 25 Nov to the plan.
      First logged as one line ("And there was the board, where he had used one himself."), which CT asked for ("Log
@@ -1377,12 +1383,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > her that either.
      >
      > Tyler was still out on the trunk of the Corolla when the yard light came on, with nineteen boxes to go.
-     > Elijah carried a spare unit out from the shed and sat down on the bumper.
+     > Elijah carried a finished unit out from the shed and sat down on the bumper.
      >
      > "Marta's question," he said. "Let's find out."
      >
      > Neither of them could have said where the answer was in the code, so they tested it. Tyler pulled the probe
-     > wire on the spare, and the two of them sat and watched the little valve. A dead probe looked exactly like dry
+     > wire on it, and the two of them sat and watched the little valve. A dead probe looked exactly like dry
      > dirt. The valve clicked open and stayed open. On the coldest night of the year, it would have stayed open all
      > night.
      >
@@ -1407,6 +1413,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      answer (probe out, valve clicks open). Grace's "You had both halves of it in your head" stays: she thinks he had
      two halves, and the new line says he had a third. The zero on the whiteboard waits for Ch 26, where Tyler admits
      he can't read his code and the two of them learn to. Curtis's hose is left as it is; it returns in Ch 23.
+     Corrected 25 Nov, contradictions pass: "a spare unit" became "a finished unit" (the order is for forty; there
+     is no spare).
 
 137. **Chapter 22, at the dinner bell: he tells them about the board.** From the plan for Chapter 19 (section 6, and
      "the bare minimum" in chat, 25 Nov): a secret the reader has been shown has to come out once, and if he confesses
@@ -1418,13 +1426,31 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      After it, in the same paragraph, add [Claude's wording]:
 
      > Then, because he was already standing there, he told them about the board too. The startup out of Iowa, the
-     > one night it took, and the two weeks of firmware he had blocked out to make it square. At the back of the
+     > two nights it took, and the two weeks of firmware he had blocked out to make it square. At the back of the
      > crowd, Tyler looked at the floor.
 
      Then the scene break and "Marta did not raise her voice." as before. Nothing after it changes. The replies
      already in the scene now cover both: Curtis's "You brought their machine inside the wire," and Priya's "we took
      his confidence for a check." The line before it, "He thought about keeping it to himself. Then he pictured Marta
      finding out some other way," points back at Marta's "Now that's ours" (edit 131).
+     Corrected 25 Nov, contradictions pass: "the one night it took" became "the two nights it took" (edit 131 has
+     two evenings and a night).
+
+138. **Chapter 15: two lines edit 100 left behind.** CT, 25 Nov: "Before we do any more work, you MUST resolve
+     contradictions that may have been created." Both were open items under edit 100. Claude's fix: cut, add nothing.
+
+     **Change 1.** Book now, after "Don't ask me. Ask Tyler.":
+
+     > He went and looked. It was there, from April, under eleven hundred other things he hadn't opened. It had
+     > been sitting there the whole time.
+
+     Cut. Since edit 100 he has already found and opened her April email at the food bank, so this line contradicts
+     it. "He asked for the video call." now follows "Ask Tyler."
+
+     **Change 2.** Book now: "...holding a rich man's empty glass. It could be a cult. It could be nothing, an empty
+     shed and a woman who talked too much." Change to: "...holding a rich man's empty glass. It could be nothing, an
+     empty shed and a woman who talked too much." Edit 100 already has "It could be a cult with a nice website" a
+     page earlier.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

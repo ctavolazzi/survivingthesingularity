@@ -14,7 +14,7 @@ OPS = [
 "Do you actually believe he's just some guy who made a video or two?\""""),
 # 88, Ch 17
 (88, "The arms came up that first week, the day before the lien sale.",
-"""On the fourth day he asked Grace if the dry end of the shed was still free. She had offered it in her first email, after she saw his post about the arms. He told her the rest of it: two crates in a storage unit off Highway 99, a lien sale at the end of the week, and nothing to pay it with.
+"""On the fourth day he asked Grace if the dry end of the shed was still free. She had offered it in her first message, after she saw his post about the arms. He told her the rest of it: two crates in a storage unit off Highway 99, a lien sale at the end of the week, and nothing to pay it with.
 The arms came up the day before the lien sale."""),
 # 89, Ch 17
 (89, "He told the radio about his week.",
@@ -244,7 +244,7 @@ Elijah volunteered for the design."""),
 The four months on the pawn ticket had run out in May while he was under a sink. By the time he remembered, his Telecaster was in the window on Fourth Street."""),
 # 131, Ch 19
 (131, "So he designed it again. The second version",
-"""So he designed it again, and this time he started the old way. He spent his nights at the bench with calipers and graph paper, measuring relays out of Marta's coffee can one at a time, because no two of them had the same footprint. By the end of the weekend he had a third of a board and a stack of crossed-out pages. The first design had already eaten the better part of a month, and the growers needed the boxes before planting.
+"""So he designed it again, and this time he started the old way. He spent a weekend at the bench with calipers and graph paper, measuring relays out of Marta's coffee can one at a time, because no two of them had the same footprint. By the end of the weekend he had a third of a board and a stack of crossed-out pages. The first design had already eaten the better part of a month, and forty growers had seedlings waiting on him.
 So he went looking for help. A startup out of Iowa had an AI that laid out circuit boards. One evening with it turned into two, and every answer opened three more questions. By midnight on the second night, Elijah was lost.
 Finally he came up for air. Did he actually need to know all this?
 Not really. Then he remembered his training: the minimum viable product, the least you can build that still does the job. Forty boxes. Read the dirt, read the air, open a vent. With that, he got to work, and by morning the board was done.
@@ -310,9 +310,9 @@ Tyler didn't ask what happened with the realtors. He was nineteen, and he still 
 (136, """"You picked." She turned off the tap. "You picked nothing.\"""",
 """"You picked." She turned off the tap. "You picked nothing."
 He had picked. He had picked keeping his board quiet over a nineteen-year-old on a bucket, and he didn't tell her that either.
-Tyler was still out on the trunk of the Corolla when the yard light came on, with nineteen boxes to go. Elijah carried a spare unit out from the shed and sat down on the bumper.
+Tyler was still out on the trunk of the Corolla when the yard light came on, with nineteen boxes to go. Elijah carried a finished unit out from the shed and sat down on the bumper.
 "Marta's question," he said. "Let's find out."
-Neither of them could have said where the answer was in the code, so they tested it. Tyler pulled the probe wire on the spare, and the two of them sat and watched the little valve. A dead probe looked exactly like dry dirt. The valve clicked open and stayed open. On the coldest night of the year, it would have stayed open all night.
+Neither of them could have said where the answer was in the code, so they tested it. Tyler pulled the probe wire on it, and the two of them sat and watched the little valve. A dead probe looked exactly like dry dirt. The valve clicked open and stayed open. On the coldest night of the year, it would have stayed open all night.
 "Shit," Tyler said.
 He asked Rod Code for a fix, and four lines came back. They pulled the wire again. This time the valve stayed shut, and a light on the lid started blinking. Neither of them could have told you why the four lines worked, and Elijah was in no position to complain about that. He wrote a new line for the repair card: *Light blinking? Valve stays shut. Swap the probe.* In the morning Marta read it, and ran the card through the laminator herself.
 The last number on her whiteboard was still a zero. Nobody in the valley could read what was inside those boxes, including the two people who had put it there."""),
@@ -320,5 +320,8 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "Two probes died in the first month. Both valves failed shut. The growers changed the probes by hand"),
 # 137, Ch 22
 (137, "and read them the timestamps.",
-"and read them the timestamps. Then, because he was already standing there, he told them about the board too. The startup out of Iowa, the one night it took, and the two weeks of firmware he had blocked out to make it square. At the back of the crowd, Tyler looked at the floor."),
+"and read them the timestamps. Then, because he was already standing there, he told them about the board too. The startup out of Iowa, the two nights it took, and the two weeks of firmware he had blocked out to make it square. At the back of the crowd, Tyler looked at the floor."),
+# 138, Ch 15: two lines edit 100 left behind
+(138, "\nHe went and looked. It was there, from April, under eleven hundred other things he hadn't opened. It had been sitting there the whole time.\n", "\n"),
+(138, "holding a rich man's empty glass. It could be a cult. It could be nothing,", "holding a rich man's empty glass. It could be nothing,"),
 ]

@@ -438,6 +438,20 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 ### Chapter 10: Frozen Peas
 52. On the fire escape with Ruby: "It tasted like the best night of his twenties." becomes "It tasted like the best
     nights of his twenties."
+53. Ruby ups the offer as Elijah leaves. After "It's downstairs. They moved it." the next lines become (CT's line is
+    "How about half a mill?"; "Elijah started for the door." and "Elijah smiled and shook his head." are Claude's):
+
+    > "It's downstairs. They moved it."
+    >
+    > Of course they had. Elijah started for the door.
+    >
+    > "How about half a mill?"
+    >
+    > Elijah smiled and shook his head. Ruby walked him to the elevator in his socks. He stood there with his hands
+    > in the hoodie pocket while they waited for it.
+
+    Then "Hey, if you're ever in the city, give me a call. I'd love to do this again." as before. (The earlier offer
+    was triple his Claypot pay of one-forty, so about $420,000; half a million is more.)
 
 ## Claude's calls (2026-11-25)
 

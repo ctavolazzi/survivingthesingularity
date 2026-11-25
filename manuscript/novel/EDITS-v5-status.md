@@ -121,4 +121,4 @@ Edit 57 was never used.
 | 108 | Ch 17 | not in the Doc | "I was just asking him if he wanted to play." |
 | 109 | Ch 17 | not in the Doc | "You don't owe us a work day," he told her. |
 | 110 | Ch 17 | not in the Doc | "Mijo, you look muy flaco. Come in, eat." |
-| 111 | Ch 17 | not in the Doc | He shifted his weight in the seat. "So go on. |
+| 111 | Ch 17 | not in the Doc | Curtis adjusted his weight from one foot to the other. "So go on. |

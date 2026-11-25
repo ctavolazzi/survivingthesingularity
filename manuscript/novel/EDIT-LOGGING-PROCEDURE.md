@@ -89,8 +89,7 @@ Elijah's, other people's come through what he sees them do, and the storyteller 
 Elijah cannot know.
 
 ## What is still open (25 Nov, end of the second logging chat)
-Edits 87 to 136 are logged but not yet in the Doc (edit 57 was never used). The next edit is 137; CT has finished
-Chapter 19. Before more Chapter 19 edits, read "Direction from CT, 25 Nov: stakes and personality conflict" at the
+Edits 1 to 138 are in v6 (edit 57 was never used). The next edit is 139; CT has finished Chapter 19. Before more Chapter 19 edits, read "Direction from CT, 25 Nov: stakes and personality conflict" at the
 top of `EDITS-v5-pending.md`. Third logging chat, 25 Nov: the plan is written there ("The plan for Chapter 19");
 edits 131, 132, 133, 135 and 136 get reworked in place, to that plan, when CT says go. Its section 9 lists what is
 open for him. Eight Chapter 14 sentence-opening changes were given in chat and
@@ -100,10 +99,11 @@ play"), edit 109 (the touch lines), edit 112 (gravel lot or a store), edit 116 (
 118, edit 121 ("one thing" or "one real thing"), and the Chapter 13 "dark out" 9:40 call.
 
 ## v6 (25 Nov)
-Edits 1 to 137 are all in v6 (`manuscript/tools/edits-v6/`, see "Applied" in `EDITS-v5-pending.md`). CT reads v6 in
-the large print PDF and makes his final edits there. New edits go on from 138, as find and replace rows in
-`manuscript/tools/edits-v6/ops.py` plus a check row, against the v6 text. Once the v6 Google Doc exists, it is the
-CURRENT copy in the bridge map and edits are made against a fresh read of it.
+Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
+`manuscript/tools/edits-v6/make_v6.py` (see "Applied" in `EDITS-v5-pending.md`). CT reads v6 in the large print PDF
+and makes his final edits there. The next edit is 139. Log it the same way (number, where, "Book now," "Change
+to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
+against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
 ## Later, when CT says go
 Apply 87 onward to the Doc as suggestions, re-read, run verify. CT accepts the suggestions. Run

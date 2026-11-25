@@ -2460,14 +2460,15 @@ listing videos.
 
 - **v6, 25 Nov (third logging chat), on CT's "Make a new google doc for v6 ... Go on the plan ... it's go time."**
   `manuscript/tools/edits-v6/make_v6.py` took the v5 Doc (read 25 Nov, revision unchanged all day) with every
-  suggestion accepted, applied edits 87 to 137 from `ops.py` (56 replacements), and checked all 137 rows of
-  `checks.py`: every one passes. The v5 Doc was not touched. The large print PDF was built from that text
-  (661 pages, 6 x 9) and is in the Drive folder "StS v5 Publication Files" as
-  surviving-the-singularity-v6-large-print-6x9.pdf. The v6 Google Doc is not made yet: the .docx with the 19
-  pictures is 5.6 MB, over the connector's limit, so it was sent to CT to drop into Drive (Drive turns it into a
-  Doc). Left out of v6 on purpose: the placeholder for Grace's April email (edit 100), which is CT's to write.
-  Still as the book has them, for CT's pass: "He went and looked. It was there, from April" and the second "It
-  could be a cult." (both Ch 15, edit 100's open items).
+  suggestion accepted, applied edits 87 to 138 from `ops.py`, and checked every row of `checks.py`: all pass. The
+  v5 Doc was not touched. The .docx (19 pictures, made 800 pixels wide to fit the Drive connector) became the Google
+  Doc "StS v6 draft (Nov 25)", now CURRENT in the bridge map. Then CT: "Before we do any more work, you MUST resolve
+  contradictions that may have been created." Seven fixes, made in ops.py and directly in the v6 Doc (edit 138 and
+  the corrections noted under 88, 131, 136 and 137). Read back: all 138 edits accepted, and the Doc's text matches
+  make_v6.py's output word for word. The large print PDF built from that read (659 pages) is in the Drive folder
+  "StS v5 Publication Files" as surviving-the-singularity-v6-large-print-6x9.pdf; the copy from before the fixes is
+  titled "OLD (before contradictions pass)". Left out on purpose: the placeholder for Grace's April email (edit
+  100), which is CT's to write.
 - Author's Note, 2026-11-25: "They may tell you they moved on because I was an asshole, and they might be right."
   and "But I'm not wrong about our trajectory." Entered in the Doc as suggestions. Still pending in the read of
   2026-11-25 (revision AHj4eMResiURoAJEhT0nN-6E), with the rest. The publication files were built as if accepted.

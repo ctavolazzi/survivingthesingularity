@@ -2,28 +2,29 @@
 
 The bridge is the one place that says where every copy of the novel is, which copy is the book right now, and how a chat changes the manuscript without breaking it. Any chat, on any surface, starts here.
 
-Recorded on 2026-11-24. This page is written by `node scripts/sts-bridge.mjs export md`. Do not edit it by hand:
+Recorded on 2026-11-25. This page is written by `node scripts/sts-bridge.mjs export md`. Do not edit it by hand:
 change `src/lib/data/novel/instances.json` or `bridge-protocol.json` and export again.
 
 ## The book right now
 
-**StS v5 draft (Nov 23)** (a Google Doc). The book right now, and the Doc the author is making his own hand pass in. A copy of v4 with six hands-on project scenes added in Chapters 26 to 34 on the author's calls. Since then, each on his yes: the polish passes, the new Ch 25 exchange where Elijah asks Marta about Grace, Elijah's nicknames (Marta's "spreadsheet"; Lou's "Ivy League," "Thoreau" and "son"), his calls on the ending and the Epilogue, and the final edit of 24 November (16 edits to the words and 60 italic ranges, then four changes to Lou in Chapter 35 and a last set in Chapters 19, 31, 33, 38 and 39). Do not place edits or suggestions in it during his pass unless he asks in so many words. See manuscript/NOVEL-PROCESS-2026-11-23.md, section 9.
+**StS v6 draft (Nov 25)** (a Google Doc). The book right now, and the Doc the author reads for his final edits, mostly in the large print PDF built from it. Made 25 November by manuscript/tools/edits-v6/make_v6.py: v5 with every suggestion accepted (edits 1 to 86 and the follow-ups), then edits 87 to 138 from manuscript/novel/EDITS-v5-pending.md, written as a .docx with the 19 pictures (made smaller to fit the Drive connector) and converted by Drive. Seven fixes from the contradictions pass were then made in it directly, on the author's word. New edits start at 138 and go in manuscript/tools/edits-v6/ops.py with a check row.
 
 ## Every copy of the book
 
 | Holds | State | What | Where |
 |---|---|---|---|
-| 2026-11-19 | behind by 6 | The author's Doc as it stood on 19 November, with his planning notes above the novel. | FINAL StS Manuscript |
-| 2026-11-19 | behind by 6 | The repository copy of that Doc. Its commit history is the version history up to 19 November. | manuscript/novel/FINAL-StS-Manuscript.md |
-| final | behind by 5 | The novel alone, 20 November. The first Revised Manuscript was made from it. | Surviving the Singularity, Final Manuscript |
-| v1 | behind by 4 | Contradictions fixed, the 19 picture placeholders filled, the appendix added. | Surviving the Singularity, Revised Manuscript |
-| v2 | behind by 3 | The fact-checked text: 204 claims checked, 13 changed. | Surviving the Singularity, Revised Manuscript v2 |
-| v2 | behind by 3 | What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures. | The private reader at /novel/<key>/ |
-| v3 | behind by 2 | The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is. | Surviving the Singularity, Revised Manuscript v3 |
+| 2026-11-19 | behind by 7 | The author's Doc as it stood on 19 November, with his planning notes above the novel. | FINAL StS Manuscript |
+| 2026-11-19 | behind by 7 | The repository copy of that Doc. Its commit history is the version history up to 19 November. | manuscript/novel/FINAL-StS-Manuscript.md |
+| final | behind by 6 | The novel alone, 20 November. The first Revised Manuscript was made from it. | Surviving the Singularity, Final Manuscript |
+| v1 | behind by 5 | Contradictions fixed, the 19 picture placeholders filled, the appendix added. | Surviving the Singularity, Revised Manuscript |
+| v2 | behind by 4 | The fact-checked text: 204 claims checked, 13 changed. | Surviving the Singularity, Revised Manuscript v2 |
+| v2 | behind by 4 | What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures. | The private reader at /novel/<key>/ |
+| v3 | behind by 3 | The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is. | Surviving the Singularity, Revised Manuscript v3 |
 | v3 | stale copy | Superseded. A copy of v3 made at 8:05 on 22 November with the 19 pictures and captions removed. It has none of the edits made to v3 after that. It was first titled Revised Manuscript v4. | OLD: v3 text-only copy from Nov 22 morning (not v4) |
-| v4 | behind by 1 | The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and "Waiting on you". Then the rulings ("Decided so far"), a profile for every character, the list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
-| v4 | behind by 1 | Version 4, kept as the safe fallback. Every line-level pass of 23 and 24 November went in here on the author's yes: the F list, the R, S, V and G check, and the P list. Left untouched once v5 was copied from it. Do not edit it. | StS Final Draft v4 Surviving the Singularity |
-| v5 | CURRENT | The book right now, and the Doc the author is making his own hand pass in. A copy of v4 with six hands-on project scenes added in Chapters 26 to 34 on the author's calls. Since then, each on his yes: the polish passes, the new Ch 25 exchange where Elijah asks Marta about Grace, Elijah's nicknames (Marta's "spreadsheet"; Lou's "Ivy League," "Thoreau" and "son"), his calls on the ending and the Epilogue, and the final edit of 24 November (16 edits to the words and 60 italic ranges, then four changes to Lou in Chapter 35 and a last set in Chapters 19, 31, 33, 38 and 39). Do not place edits or suggestions in it during his pass unless he asks in so many words. See manuscript/NOVEL-PROCESS-2026-11-23.md, section 9. | StS v5 draft (Nov 23) |
+| v4 | behind by 2 | The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and "Waiting on you". Then the rulings ("Decided so far"), a profile for every character, the list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
+| v4 | behind by 2 | Version 4, kept as the safe fallback. Every line-level pass of 23 and 24 November went in here on the author's yes: the F list, the R, S, V and G check, and the P list. Left untouched once v5 was copied from it. Do not edit it. | StS Final Draft v4 Surviving the Singularity |
+| v5 | behind by 1 | The book as it stood through 25 November, kept untouched. It holds the author's edits 1 to 86 as suggestions he never accepted, and none of 87 onward. v6 was made from it. Do not edit it. | StS v5 draft (Nov 23) |
+| v6 | CURRENT | The book right now, and the Doc the author reads for his final edits, mostly in the large print PDF built from it. Made 25 November by manuscript/tools/edits-v6/make_v6.py: v5 with every suggestion accepted (edits 1 to 86 and the follow-ups), then edits 87 to 138 from manuscript/novel/EDITS-v5-pending.md, written as a .docx with the 19 pictures (made smaller to fit the Drive connector) and converted by Drive. Seven fixes from the contradictions pass were then made in it directly, on the author's word. New edits start at 138 and go in manuscript/tools/edits-v6/ops.py with a check row. | StS v6 draft (Nov 25) |
 | v3 | stale copy | Topics and entries about the people, places and things in the book. Written from v3 as it stood on the morning of 22 November. Out of date since: it still says Second Crop (now Crop Dust), and its Items entry is the Fisher woodstove, which v3 has replaced with an amp. | The compendium at /novel/<key>/compendium |
 
 Google Docs are named by title only, because this repository is public. Search Drive for the title.

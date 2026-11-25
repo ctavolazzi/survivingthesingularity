@@ -938,6 +938,16 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     [CT's beats and most of the words. Claude: the order, "If you do come" for the gas money, and "He asked for the
     video call", so it is his choice. It echoes the Architect in Ch 9: "I work on whether it asks first."]
 
+84. His answer to the way she asks. After Grace's reply ("...Blessings, / Grace / P.S. Eat something first. It's two
+    days of driving and you look thin.") and before "He read the last three words again.", add:
+
+    > There was something about the way she asked that reminded Elijah of the truth he had seen in the eyes of the
+    > woman at Ruby's party. As burned and cautious as he was, something in him felt a tug.
+
+    [CT] It points back to edit 63 ("there was truth in her eyes") and the whisper at the coffee urn in Ch 8 (edit 45).
+    Note: that was the conference Ruby got him into, not a party at Ruby's place; CT's "Ruby's party" may read as the
+    night on Ruby's fire escape in Ch 10. Kept as CT said it.
+
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put
     themselves. He stood in that line forty minutes, and he couldn't find one person in it who had." becomes "He got
     in it. Once, at the Bear Flag, David had told him people land somewhere. There's always a job. He stood in that

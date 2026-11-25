@@ -1,0 +1,19 @@
+/* Kindle / EPUB 3. Fonts are left to the reading device. */
+body { margin: 0 5%; line-height: 1.5; }
+p { margin: 0; text-indent: 1.4em; }
+h1 + p, h2 + p, .break + p, .art + p { text-indent: 0; }
+h1 { font-size: 1.4em; text-align: center; margin: 3em 0 2em; page-break-after: avoid; }
+h2 { font-size: 1.1em; margin: 1.6em 0 0.6em; page-break-after: avoid; }
+.break { margin: 1em 0; }
+.break p { text-indent: 0; text-align: center; }
+.art { margin: 1.2em 0; text-align: center; page-break-inside: avoid; }
+.art p { text-indent: 0; }
+.art img { max-width: 100%; height: auto; }
+section.titlepage { text-align: center; }
+section.titlepage h1 { font-size: 1.8em; margin-top: 4em; margin-bottom: 0.5em; }
+section.titlepage p { text-indent: 0; text-align: center; }
+section.titlepage p.author { margin-top: 3em; }
+div.copyright { page-break-before: always; margin-top: 4em; text-align: left; }
+div.copyright p { text-indent: 0; text-align: left; font-size: 0.9em; }
+nav#toc ol { list-style: none; padding-left: 0; }
+nav#toc li { margin: 0.3em 0; }

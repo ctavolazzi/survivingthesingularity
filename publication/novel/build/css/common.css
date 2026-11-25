@@ -1,0 +1,33 @@
+@font-face { font-family: "Book Serif"; src: url("{{FONTS}}/SourceSerif4-Regular.otf"); }
+@font-face { font-family: "Book Serif"; font-style: italic; src: url("{{FONTS}}/SourceSerif4-It.otf"); }
+@font-face { font-family: "Book Serif"; font-weight: 600; src: url("{{FONTS}}/SourceSerif4-Semibold.otf"); }
+
+html { font-family: "Book Serif", serif; font-size: {{SIZE}}; line-height: {{LEAD}}; }
+body { margin: 0; }
+p { margin: 0; text-indent: 1.4em; text-align: {{ALIGN}}; hyphens: {{HYPHENS}}; orphans: 2; widows: 2; }
+h1 + p, h2 + p, .break + p, .art + p { text-indent: 0; }
+strong { font-weight: 600; }
+
+h1 { font-size: 1.45em; line-height: 1.25; font-weight: 600; text-align: center; hyphens: none;
+     margin: 0 0 2.2em; padding-top: 14%; break-after: avoid; }
+h1.sec { string-set: chaptitle content(text), booktitle "{{TITLE}}"; }
+h2 { font-size: 1.08em; font-weight: 600; margin: 1.7em 0 0.6em; hyphens: none; break-after: avoid; }
+
+section { break-before: page; }
+section.act h1 { font-size: 1.9em; padding-top: 45%; }
+.break { text-align: center; margin: 0.9em 0; break-before: avoid; break-after: avoid; }
+.break p { text-indent: 0; text-align: center; }
+.art { margin: 1.1em 0; text-align: center; break-inside: avoid; }
+.art img { width: {{ARTW}}; }
+
+section.titlepage { text-align: center; bookmark-level: none; }
+section.titlepage h1 { font-size: 2.1em; padding-top: 38%; margin-bottom: 0.6em; bookmark-level: none; }
+section.titlepage p { text-indent: 0; text-align: center; }
+section.titlepage p.author { margin-top: 4.5em; font-size: 1.15em; }
+section.copyright p { text-indent: 0; text-align: left; font-size: 0.85em; hyphens: none; }
+section.copyright { padding-top: 110%; }
+
+ul.toc { list-style: none; margin: 0; padding: 0; font-size: 0.95em; line-height: 1.4; }
+ul.toc li a::after { content: leader(" ") target-counter(attr(href), page); }
+ul.toc li.strong { font-weight: 600; margin-top: 0.7em; }
+a { color: inherit; text-decoration: none; }

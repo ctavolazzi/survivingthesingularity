@@ -1,0 +1,14 @@
+{
+  "version": "v5",
+  "slug": "surviving-the-singularity",
+  "title": "Surviving the Singularity",
+  "language": "en-US",
+  "copyright_lines": ["Copyright © 2026 Christopher Tavolazzi.", "All rights reserved."],
+  "cover": "scripts/book-cover.png",
+  "fonts": "publication/assets/fonts",
+  "scene_break": "* * *",
+  "sample_chapters": 3,
+  "image_quality": 90,
+  "epub_image_width": 1200,
+  "epub_image_quality": 80
+}

@@ -1,0 +1,9 @@
+/* Reader PDF: letter size, simple layout, page numbers only. */
+@page { size: 8.5in 11in; margin: 1in 1.35in 1in 1.35in;
+  @bottom-center { content: counter(page); font: 0.85em "Book Serif"; } }
+@page front { @bottom-center { content: none; } }
+@page cover { margin: 0; @bottom-center { content: none; } }
+section.cover { page: cover; text-align: center; break-before: auto; }
+section.cover img { height: 11in; }
+section.titlepage, section.copyright, section.contents { page: front; }
+section.copyright { padding-top: 90%; }

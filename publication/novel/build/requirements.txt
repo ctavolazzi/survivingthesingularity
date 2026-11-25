@@ -1,0 +1,6 @@
+weasyprint==70.0
+epubcheck==5.4.0
+python-docx
+pypdf
+Pillow
+lxml

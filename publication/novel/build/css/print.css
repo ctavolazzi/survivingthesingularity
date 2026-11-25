@@ -1,0 +1,17 @@
+/* KDP paperback interior: mirrored margins, running heads, page numbers. */
+@page { size: {{W}} {{H}}; margin: {{TOP}} {{OUTER}} {{BOTTOM}} {{INNER}}; }
+@page :left  { margin-left: {{OUTER}}; margin-right: {{INNER}};
+  @top-center { content: string(booktitle, first-except); font: italic 0.8em "Book Serif"; vertical-align: bottom; padding-bottom: 0.22in; }
+  @bottom-center { content: counter(page); font: 0.85em "Book Serif"; vertical-align: top; padding-top: 0.2in; } }
+@page :right { margin-left: {{INNER}}; margin-right: {{OUTER}};
+  @top-center { content: string(chaptitle, first-except); font: italic 0.8em "Book Serif"; vertical-align: bottom; padding-bottom: 0.22in; }
+  @bottom-center { content: counter(page); font: 0.85em "Book Serif"; vertical-align: top; padding-top: 0.2in; } }
+@page :blank { @top-center { content: none; } @bottom-center { content: none; } }
+@page front:left  { @top-center { content: none; } @bottom-center { content: none; } }
+@page front:right { @top-center { content: none; } @bottom-center { content: none; } }
+@page act:left  { @top-center { content: none; } @bottom-center { content: none; } }
+@page act:right { @top-center { content: none; } @bottom-center { content: none; } }
+
+section.titlepage, section.copyright, section.contents { page: front; }
+section.act { page: act; }
+section.titlepage, section.contents, section.act, section.recto { break-before: right; }

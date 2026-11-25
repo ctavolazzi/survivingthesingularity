@@ -846,17 +846,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Book now: "So he designed it again. The second version was a Raspberry Pi the regional supplier had in
      stock..." The sentence "So he designed it again." becomes [CT's beats; Claude's wording, except "a startup out
-     of Iowa", "came up for air", "Did he actually need to know all this?" and "He remembered his training", which
-     are CT's]:
+     of Iowa", "came up for air", "Did he actually need to know all this?", "remembered his training" and "got to
+     work", which are CT's. Sentence openings varied at CT's request: "Instead of starting everything with a
+     pronoun, you gotta vary the sentence structure, bro."]:
 
      > So he designed it again, and this time he went looking for help. A startup out of Iowa had an AI that laid
-     > out circuit boards. He spent an evening with it, and then another. Every answer opened three more questions,
-     > and somewhere past midnight on the second night he realized he was lost.
+     > out circuit boards. One evening with it turned into two, and every answer opened three more questions. By
+     > midnight on the second night, Elijah was lost.
      >
-     > He came up for air. Did he actually need to know all this?
+     > Finally he came up for air. Did he actually need to know all this?
      >
-     > He didn't. He remembered his training: the minimum viable product, the least you can build that still does
-     > the job. Forty boxes. Read the dirt, read the air, open a vent. He got to work.
+     > Not really. Then he remembered his training: the minimum viable product, the least you can build that still
+     > does the job. Forty boxes. Read the dirt, read the air, open a vent. With that, he got to work.
 
      Then "The second version was a Raspberry Pi..." and that paragraph as before.
 
@@ -871,9 +872,10 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      himself, so when Patricia asks "how many companies make Rod Code?" the reader may wonder why nobody points at
      him, or why he doesn't think of it. Claude's line, which CT asked to log ("Log that line as 132"). Book now, in
      the paragraph of his silence: "...He knew what the thing drank. He also knew a nineteen-year-old had just done in
-     a night what would have taken him two weeks..." After "He knew what the thing drank." add [Claude's wording]:
+     a night what would have taken him two weeks..." After "He knew what the thing drank." add [Claude's wording,
+     reworded so it doesn't open with "He" like the sentences around it, at CT's request]:
 
-     > He had used one on the board himself.
+     > And there was the board, where he had used one himself.
 
      Then "He also knew a nineteen-year-old..." as before.
      (An earlier edit 132, Priya's "No, she's right ... I use it every day", was cut by CT with the argument in edit

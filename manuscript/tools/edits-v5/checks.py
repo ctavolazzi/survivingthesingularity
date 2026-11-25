@@ -136,6 +136,6 @@ C=[
 (128,"Ch 19",["Reuben had spent thirty years as a title officer at the county"],["came in with it. He looked too pleased with himself"]),
 (129,"Ch 19",["Reuben notices things. It's what makes him such a pain in the ass. But he's quite useful."],['"Reuben notices."']),
 (130,"Ch 19",["Saved our ass quite a few times,\" Lou said, from down the line."],[]),
-(131,"Ch 19",["A startup out of Iowa had an AI that laid out circuit boards.","He came up for air. Did he actually need to know all this?","He remembered his training: the minimum viable product"],[]),
-(132,"Ch 19",["He knew what the thing drank. He had used one on the board himself. He also knew"],[]),
+(131,"Ch 19",["A startup out of Iowa had an AI that laid out circuit boards.","Finally he came up for air. Did he actually need to know all this?","Then he remembered his training: the minimum viable product","With that, he got to work."],[]),
+(132,"Ch 19",["He knew what the thing drank. And there was the board, where he had used one himself. He also knew"],[]),
 ]

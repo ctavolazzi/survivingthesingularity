@@ -665,6 +665,28 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      The notebook line stays: "In the notebook he wrote Sal's rule, one real thing before noon, and underneath it,
      somebody came by at eight." **Open, for CT:** Marta says "one thing"; the notebook says "one real thing."
 
+122. **Chapter 18, the Sunday call after the soup: 9:40 in the morning.** CT: "it's 9:40 in the morning, so we're
+     going to need to make sure that as we're editing, we catch those moving forward. Because after the stroke, he
+     calls in the morning. There's the one call that happens at night, which is ... useful to tell that she's
+     confused. But it happens. She's getting older ... It's not really a reason for alarm. But then we reveal the
+     rest of the story as it comes on." In the book the line sits after the noon soup, the jars and the notebook, so
+     it reads as 9:40 at night. Book now: "At 9:40 he called the place with the rose garden, the way he had every
+     Sunday since he came north." Change to [Claude's wording]:
+
+     > At 9:40 that morning he called the place with the rose garden, the way he had every Sunday since he came north.
+
+     (Marta comes Sunday morning, so 9:40 falls before her "Soup's on at noon.")
+
+**Final pass, CT's standing request (25 Nov): check every 9:40 and every call to his mother.** After the stroke Elijah
+calls in the morning, Sunday 9:40. Before it, his mother called him Sundays at 9:40 (church time). Exactly one call
+happens at night, and it is meant to show she is confused: small, not alarming, and the rest is revealed later. Found
+in the 25 Nov read: Ch 0 "The phone rang at 9:40 on Sunday ... church time" (fine); Ch 2 "On Sunday at 9:40 the phone
+rang on the dash. It was dark out" (**which is it, the night call or an error? she calls at 9:40 in the morning**);
+Ch 12 "The next Sunday at 9:40 in the morning, under the sycamore" (fine); Ch 17 "On Sundays at 9:40 he sat on the
+pump house steps" (fine); Ch 18 (edit 122); Ch 23 "The morning before, at 9:40" (fine); Ch 26-ish "The next morning
+at 9:40 he stepped out under the eave" (fine); "The next Sunday at 9:40 the aide said" (fine); Ch 33 "On Sunday at
+9:40 he called the rose garden" (fine). Check each again on the final pass, and any new one added since.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -48,6 +48,10 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 - An unquoted heredoc with backticks ran the build. Use quoted heredocs ('EOF').
 - Counts drifting: the Totals line must match the latest verify run.
 
+## Final-pass checks (CT's standing list)
+- Every call to his mother: after the stroke, Elijah calls Sunday 9:40 in the MORNING. Exactly one call is at night
+  (shows she is confused, not alarming). See the end of edit 122 in `EDITS-v5-pending.md` for the list.
+
 ## What is still open (25 Nov)
 Edits 87 to 111 are logged but not yet in the Doc. Eight Chapter 14 sentence-opening changes were given in chat and
 never logged. Open for CT: Grace's April email (edit 100), "He went and looked. It was there, from April," the

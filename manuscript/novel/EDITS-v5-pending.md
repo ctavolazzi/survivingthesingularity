@@ -801,6 +801,28 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      **Open, for CT:** the touch lines and "Your knowledge earns your keep here, Elijah. That's all." are Claude's
      wording for his beats; "marketing" is his word. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
 
+110. **Chapter 17, Rosa at the door: she says "mijo" out loud.** CT: before the book says she called them mijo,
+     "she needs to say the word mijo": "Mijo, you look muy flaco. Come in, eat." She "reminds him of some of his
+     extended family. And we don't need to go into that. We can just leave it there." Context from CT, not for the
+     page: "now we're demonstrating the cross-cultural power of the farm"; Marta contributes to Elijah's recovery,
+     and so does Rosa.
+
+     Book now: "Rosa opened the door with her left hand and a smile that took in both of them, and asked if they
+     were hungry before they could ask her anything. Her right wrist was in a brace." Change to [CT's lines; the
+     joining words are Claude's]:
+
+     > Rosa opened the door with her left hand and a smile that took in both of them. She looked at Elijah.
+     >
+     > "Mijo, you look muy flaco. Come in, eat."
+     >
+     > She reminded him of some of his extended family.
+     >
+     > Her right wrist was in a brace.
+
+     The later line "She called them both mijo, Curtis included, who had twenty years on her." stays.
+     (Restored 25 Nov, third logging chat: this entry was dropped by mistake when edit 109 was rewritten, commit
+     f8e5160. Its check row had stayed in checks.py. Text as first logged, commit 140050b.)
+
 111. **Chapter 17, the drive home: Curtis adjusts himself in the seat.** CT: after Curtis's line "You don't knock
      out a wall till you know what it's holding up," he adjusts his body, mirroring the line he just spoke. CT first
      said "from one foot to the other"; Curtis is driving the truck, so CT settled it: "he should just sort of adjust

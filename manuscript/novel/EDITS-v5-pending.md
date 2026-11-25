@@ -651,6 +651,20 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      > He brought the jars in. Then he put the phone on Do Not Disturb, with one exception: the number for the place
      > with the rose garden. He put it in a drawer that closed.
 
+121. **Chapter 18, Marta names Sal's rule.** CT asked where "Sal's rule" is set up before the notebook uses it (the
+     notebook, and later the controller test in Chapter 19 and the Chapter 23 notebook). In the book Marta never calls
+     it a rule: she says "fix one thing before noon ... Something with an end to it," and the brother-in-law "started
+     coming by at eight." Claude's fix, approved by CT: Marta says the name herself. Book now, in her speech: "He
+     just declined to rehearse it all day." She shrugged. "I used to tell that story as if Sal had found the right
+     attitude and Gary hadn't." Change to [Claude's wording]:
+
+     > ... He knew it was bad. He just declined to rehearse it all day. That was Sal's rule, if he'd have called it
+     > one: one thing with an end to it, before noon." She shrugged. "I used to tell that story as if Sal had found
+     > the right attitude and Gary hadn't."
+
+     The notebook line stays: "In the notebook he wrote Sal's rule, one real thing before noon, and underneath it,
+     somebody came by at eight." **Open, for CT:** Marta says "one thing"; the notebook says "one real thing."
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

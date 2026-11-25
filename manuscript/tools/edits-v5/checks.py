@@ -134,4 +134,5 @@ C=[
 (126,"Ch 19",["which from her was practically a parade."],["which from her was a parade."]),
 (127,"Ch 19",["The build took all of them three weekends","like maybe he was starting to fit in somewhere.","wondering what, exactly, Curtis and Grace had agreed on. But recent events and the flow of the day put that doubt out of his mind quickly.","The work felt good, to him and to everybody else in the line."],["The build took the shed three weekends."]),
 (128,"Ch 19",["Reuben had spent thirty years as a title officer at the county"],["came in with it. He looked too pleased with himself"]),
+(129,"Ch 19",["Reuben notices things. It's what makes him such a pain in the ass. But he's quite useful."],['"Reuben notices."']),
 ]

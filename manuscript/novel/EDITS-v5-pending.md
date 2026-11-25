@@ -814,6 +814,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Then "Reuben Vance," Marta said, ... as before.
 
+129. **Chapter 19, Priya on Reuben: a pain in the ass, but useful.** CT: "Nobody asks Ruben. Ruben notices things.
+     And Priya will go on to say it's what makes him such a pain in the ass. But he's quite useful." (Dictation said
+     "Ruben"; Reuben.) Book now: "Nobody asks Reuben," Priya said, from the crimping line. "Reuben notices." Change
+     to [CT's words; set as Priya's speech, since he said she goes on to say it]:
+
+     > "Nobody asks Reuben," Priya said, from the crimping line. "Reuben notices things. It's what makes him such a
+     > pain in the ass. But he's quite useful."
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -780,14 +780,15 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      hesitant. He doesn't want to ... give too much into this. But for everyone involved, the build out feels pretty
      good." Book now: "The build took the shed three weekends. On the first one, everybody was in a line, deburring
      cases and crimping wire ends, when the door opened and let in the cold." Change to [CT's beats; Claude's
-     wording, except "for the first time in a while ... maybe he belonged somewhere," which is CT's]:
+     wording, except "for the first time in a while" and "like maybe he was starting to fit in somewhere" (CT's
+     correction of "belonged"), which are CT's]:
 
      > The build took all of them three weekends, and it took something out of every one of them. Thumbs got cut on
      > case edges. Curtis swore at a crimper until Tyler showed him the trick of it. Priya asked what every part did
      > and wrote the answers down. Lou, who had never held a multimeter, was arguing with one by the second Saturday.
      >
-     > Elijah felt, for the first time in a while, like maybe he belonged somewhere. He didn't lean on the feeling. He
-     > had leaned on things before. But the work felt good, to him and to everybody else in the line.
+     > Elijah felt, for the first time in a while, like maybe he was starting to fit in somewhere. He didn't lean on
+     > the feeling. He had leaned on things before. But the work felt good, to him and to everybody else in the line.
      >
      > On the first weekend they were all in that line, deburring cases and crimping wire ends, when the door opened
      > and let in the cold.

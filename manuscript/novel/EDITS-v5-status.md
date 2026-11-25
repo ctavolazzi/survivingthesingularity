@@ -142,4 +142,4 @@ Edit 57 was never used.
 | 129 | Ch 19 | not in the Doc | Reuben notices things. It's what makes him such a pain in the ass. ... |
 | 130 | Ch 19 | not in the Doc | Saved our ass quite a few times," Lou said, from down the line. |
 | 131 | Ch 19 | not in the Doc | A startup out of Iowa had an AI that laid out circuit boards. |
-| 132 | Ch 19 | not in the Doc | No, Lou's right," Priya said. "I don't know how my own body functio... |
+| 132 | Ch 19 | not in the Doc | No, she's right," Priya said. "I don't know how my own body functio... |

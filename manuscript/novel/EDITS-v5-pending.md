@@ -882,16 +882,16 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      >
      > "Yeah, that's what they put on all the pull requests," Curtis said. "LGTM. Nobody even reads it anymore."
      >
-     > "Does a tree need to read its own DNA to produce fruit?" Lou said.
+     > "Does a tree need to read its own DNA to produce fruit?" Grace said.
      >
-     > Everybody looked at Lou. He looked around at all of them looking back.
+     > Everybody looked at Grace. She looked around at all of them looking back.
      >
      > "What?"
 
      "LGTM" is left unexplained on purpose: Elijah's "It looks good to me" one line earlier spells it out.
-     The tree line is Lou's. CT named "the nature character" (Wren), but the reader doesn't meet her until Chapter 20
-     ("That was Wren, who led the Sunday circle..."). Claude recommended Lou, who grows things and rarely talks, so it
-     still lands as unexpected; CT: "Lou is fine. I mean, he's there, right? In this scene. So it would make sense."
+     The tree line is Grace's (CT, 25 Nov: "Grace, give the line to Grace."). CT named "the nature character" (Wren),
+     but the reader doesn't meet her until Chapter 20 ("That was Wren, who led the Sunday circle..."). Lou was
+     logged first, then CT changed it to Grace.
 
 132. **Chapter 19, right after edit 131: Priya comes around.** CT: "Then they can have a little micro discussion about
      it where it's like, no, she's right, Priya will say. I mean, I don't know how my own mind functions physically,
@@ -899,10 +899,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      while dictating; the last version is kept.) After the "What?" of edit 131 and before the scene break and "The
      cases came from a kid named Tyler.", add [CT's words; the tag is Claude's]:
 
-     > "No, Lou's right," Priya said. "I don't know how my own body functions physically, but I use it every day."
+     > "No, she's right," Priya said. "I don't know how my own body functions physically, but I use it every day."
 
-     CT said "she's right", thinking of Wren; the tree line is Lou's (edit 131), so it is "Lou's right" (CT, 25 Nov:
-     "Lou is fine").
+     The tree line is Grace's (edit 131), so CT's "she's right" stands as he said it.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

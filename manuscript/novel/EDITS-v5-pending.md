@@ -318,6 +318,12 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     do? Yank the tap handle?" ("Tap handle" for the beer tap; CT's dictation came through as "tab handle".) Elijah's
     "Give it a few years." still follows.
 
+### Chapter 8: Elijah Madrona
+44. The two kinds of people. "They wore a lot of gray and they said off-ramp and guardrails." becomes "They wore a lot
+    of gray and they said guardrails and slow down." and "...and they said ship." becomes "...and they said ship and
+    accelerate." ("Off-ramp" is dropped so the two sides match CT's wording: guardrails, slow down / ship and
+    accelerate.)
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

@@ -151,6 +151,33 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     had ever offered him." [Claude, from CT's "that's why he decides not to take it".] CT: "Same thing for the next
     opportunity" (Gus, Ch 11) needs no line.
 
+### Chapter 14: A Stain Shaped Like Ohio
+
+94. When he blocks Melody, the memories come (CT: a rush of memory of being bullied his whole life, told he was
+    greedy, shitty, dumb, selfish, self-absorbed; how he tried to make up for it by being generous and giving, and as
+    a performer by getting people to like him; small, not a diatribe; his subconscious decides it's time to process
+    decades of suppressed trauma; then the breakdown, wherever it fits; the reader should see he isn't a privileged
+    kid who threw it all away, but someone falsely accused of being a piece of shit who spent his whole life trying
+    to prove otherwise; don't use "suddenly"). The book's meltdown starts right here ("I hate this"), so the memories
+    go just before it. After "...He thought it was what a man does when he has lost.", the line "The phone was quiet."
+    becomes:
+
+    > The phone was quiet, and the quiet let everything else in. Some part of him had decided it was time, finally,
+    > to go through thirty years of things he had put away. Greedy little grub, at six, over a piece of cake. The
+    > boys at the back of the bus asking him questions just to watch him try. Selfish. Dumb. Full of himself.
+    > Always knew you thought you were better than us. He had heard every one of them from people who were supposed
+    > to know him, and he had spent his whole life trying to prove them wrong. He gave away the bigger piece. He
+    > picked up the tab. He played every wedding and said sure to every request, and he learned to read a room and
+    > make it like him. Everything he had ever done to be liked, he had done to be anything but that.
+    >
+    > And here he was, in a truck under a tree, and his sister had just called him a greedy little piece of shit.
+
+    Then "He laughed. It came out of him like a bark. Then it was not laughing." and the meltdown, as before.
+    [CT's beats. Claude's wording. Every insult is one the book already gives him: Melody's "greedy little grub" at
+    six (Ch 13 and 14), the boys on the bus (Ch 1), "Always knew you thought you were better than us" (the messages,
+    Ch 13), and Melody's "greedy little piece of shit" a minute earlier. "Said sure to every request" echoes Ch 7:
+    weddings, "where the whole job is to say sure".]
+
 ## Needs CT (answered)
 
 Settled by CT on 2026-11-25: keep edit 5 ("chasm"), keep edits 14 and 56 (David's line), keep edit 9 ("first month

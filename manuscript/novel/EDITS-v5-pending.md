@@ -890,8 +890,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      "LGTM" is left unexplained on purpose: Elijah's "It looks good to me" one line earlier spells it out.
      **Open, for CT:** the nature character is Wren, and the reader doesn't meet her until Chapter 20 ("That was
-     Wren, who led the Sunday circle..."). Claude's recommendation: give the tree line to Lou, who grows things and
-     rarely talks, so it still lands as unexpected.
+     Wren, who led the Sunday circle..."). Claude first recommended Lou; CT's "she's right" in edit 132 makes it a
+     woman. See edit 132.
+
+132. **Chapter 19, right after edit 131: Priya comes around.** CT: "Then they can have a little micro discussion about
+     it where it's like, no, she's right, Priya will say. I mean, I don't know how my own mind functions physically,
+     but I don't know how my own body functions physically, but I use it every day." (He restated "mind" as "body"
+     while dictating; the last version is kept.) After the "What?" of edit 131 and before the scene break and "The
+     cases came from a kid named Tyler.", add [CT's words; the tag is Claude's]:
+
+     > "No, [WHO]'s right," Priya said. "I don't know how my own body functions physically, but I use it every day."
+
+     **Open, for CT:** CT says "she", so the tree line is a woman's, not Lou's. Wren is first met in Chapter 20; in
+     this scene the women are Grace, Marta and Priya. Marta's rule a page earlier is "Ugly means the next guy can see
+     how it works", so the tree line cuts against her. Claude's recommendation: Grace.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

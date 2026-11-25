@@ -428,6 +428,12 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     because the Architect never uses them. Ruby keeps his ("It's").
 50. The kitchen, after "That is the wrong verb." In her paragraph that ends "I would like it to remember you. I spend
     some of my time on that.", the last sentence becomes "I spend much of my time working out how to make it care."
+51. Ruby at the window, after she leaves without seeing Elijah: "The trucker cried," Ruby said. "She didn't like
+    that." CT: very confusing. CALLED (Claude's wording): Ruby is explaining why she left by the back door; she said
+    earlier that one year "it was a man who drove trucks". It becomes:
+
+    > "She doesn't do the face-to-face part," Ruby said. "The last guy with a notebook was a trucker. He cried. She
+    > didn't like that."
 
 ## Claude's calls (2026-11-25)
 

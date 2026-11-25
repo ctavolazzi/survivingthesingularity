@@ -32,6 +32,7 @@ CFG = json.loads((HERE / "book.json").read_text(encoding="utf-8"))
 # KDP minimum inside margin by page count, plus 0.125in so text clears the spine.
 GUTTERS = [(150, 0.375), (300, 0.5), (500, 0.625), (700, 0.75), (828, 0.875)]
 GUTTER_EXTRA = 0.125
+ACCEPT_SUGGESTIONS = False
 
 
 def copyright_lines():
@@ -78,7 +79,11 @@ def paras_from_google_json(path, imgdir):
             if "textRun" in e:
                 tr = e["textRun"]
                 if tr.get("suggestedInsertionIds") or tr.get("suggestedDeletionIds"):
-                    die("the Doc has pending suggestions; accept or reject them first")
+                    if not ACCEPT_SUGGESTIONS:
+                        die("the Doc has pending suggestions; accept or reject them first, "
+                            "or pass --accept-suggestions to build as if all were accepted")
+                    if tr.get("suggestedDeletionIds"):
+                        continue
                 ts = tr.get("textStyle", {})
                 runs.append([tr["content"].replace("\n", "").replace("\x0b", " "),
                              ts.get("italic", False), ts.get("bold", False)])
@@ -684,7 +689,11 @@ def main():
     ap.add_argument("source", nargs="?", help=".docx or Google Docs JSON (default: newest file in ../source/)")
     ap.add_argument("--only", help="comma list of: kindle,print,large,reader,docx,sample; or just: cover")
     ap.add_argument("--no-check", action="store_true")
+    ap.add_argument("--accept-suggestions", action="store_true",
+                    help="Google Docs JSON only: build as if every pending suggestion were accepted")
     a = ap.parse_args()
+    global ACCEPT_SUGGESTIONS
+    ACCEPT_SUGGESTIONS = a.accept_suggestions
     only = set(a.only.split(",")) if a.only else None
     want = lambda k: only is None or k in only
 

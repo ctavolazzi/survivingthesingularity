@@ -309,7 +309,8 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 41. "His mother called at 9:40 on a Sunday, the way she did." becomes "His mother called at 9:55 that Sunday. A
     little late, but not terribly unusual." With edits 39 and 31 this is the second small sign before her stroke.
 42. The replies: "By Friday it was four hundred replies and he quit counting." becomes "By Friday it was four thousand
-    replies and he quit counting." CALLED, knock-ons in Chapter 8 (Ruby): "All four hundred, and then you kept going"
+    replies and he quit counting." CALLED, knock-ons in Chapter 8 (Ruby; his whole exchange is now edit 48, which supersedes this):
+    "All four hundred, and then you kept going"
     becomes "All four thousand, and then you kept going", and "Because there's four hundred of them and one of you,
     and next month it's forty thousand. It's arithmetic." becomes (CT): "Because there's four thousand of them and one
     of you. And tomorrow it'll be eight thousand. Who knows what it'll be next week? Do you know how this game goes?"
@@ -383,6 +384,29 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     "She took her coffee back into the hall." follows as before, and "She didn't pat him." before her first line
     stays. "That's not a forecast. It's a mirror." is gone. ("She picked up her cup." is Claude's, so the walk into
     the hall follows.)
+48. Ruby by the dumpster. His opening lines through "Because there's four hundred of them and one of you, and next
+    month it's forty thousand. It's arithmetic." become (CT's lines and beats; Claude's: Elijah's "No." and Ruby's
+    "Then you have to stop that.", which connect CT's new lines to the four-thousand line from edit 42; "I read
+    them." and the description of his voice are kept from the book):
+
+    > "The replies. Under your video. You answered all of them the first day. I read them."
+    >
+    > "Yeah. Why wouldn't I?"
+    >
+    > "Nobody does that, man." He had a quick, light voice, like someone who'd never had to wait for a turn. "The
+    > forklift lady. The drummer. Some guy named Earl who thinks you're a demon, and you wrote Earl three paragraphs.
+    > There's way too many now. You must have given up."
+    >
+    > "No."
+    >
+    > "Then you have to stop that."
+    >
+    > "Why?"
+    >
+    > "Because there's four thousand of them and one of you. And tomorrow it'll be eight thousand. Who knows what
+    > it'll be next week? Do you know how this game goes?"
+
+    "He stood up and wiped his hand on his jeans and held it out. 'Ruby.'" follows as before.
 
 ## Claude's calls (2026-11-25)
 

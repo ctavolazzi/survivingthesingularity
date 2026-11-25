@@ -724,8 +724,11 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     and gets no details beyond why it ended; nothing else in the book mentions a past relationship. Why it ended is
     Claude's: his saying yes until there is nothing left, the pattern the book already gives him ("Yeah. No, yeah, of
     course" in Ch 7, Wren's "You were saying yes the way people say it when they mean please" in Ch 31). It sets up
-    Grace, where Ch 25 has him asking Marta "Does Grace have... someone?" The needle on the quarter tank sets up
-    "He didn't remember the drive. He remembered the gauge."]
+    Grace, where Ch 25 has him asking Marta "Does Grace have... someone?"]
+
+71. After Manny's call: "He didn't remember the drive. He remembered the gauge." becomes "He didn't remember the
+    drive." [CT] ("The gauge" was the gas gauge: a quarter tank, no money, two hours to Santa Rosa. Nobody could
+    tell.)
 
 ### Chapter 15: The Twenty, Folded Small
 

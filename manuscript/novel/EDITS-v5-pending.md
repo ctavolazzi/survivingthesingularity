@@ -569,6 +569,18 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      The place is left to the next paragraph (the gravel lot). **Open, for CT:** keep it at the gravel lot, or set
      the crisis in a store? "Claypot shipped Companion 2.0 on a Thursday..." follows unchanged.
 
+113. **Chapter 18, who reads the post.** CT: "It's not clear who was reading the announcement post. So Elijah read
+     the announcement post for Companion 2.0." Book now: "Claypot shipped Companion 2.0 on a Thursday. He read the
+     launch post standing in the gravel lot with a late cold snap coming through his jacket, and the feature list..."
+     Change to [CT's sentence, with "Companion 2.0" kept in the sentence before it, since that sentence already
+     names it; Claude's join]:
+
+     > Claypot shipped Companion 2.0 on a Thursday. Elijah read the announcement post standing in the gravel lot
+     > with a late cold snap coming through his jacket, and the feature list...
+
+     If CT wants it in the sentence itself: "Elijah read the announcement post for Companion 2.0 standing in the
+     gravel lot..." and the first sentence goes.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -118,4 +118,5 @@ C=[
 (110,"Ch 17",["\"Mijo, you look muy flaco. Come in, eat.\"","She reminded him of some of his extended family."],["and asked if they were hungry before they could ask her anything."]),
 (111,"Ch 17",["Curtis adjusted himself in the seat. \"So go on."],[]),
 (112,"Ch 18",["Elijah's next crisis found him in late April","He more or less stumbled into it."],["The spiral found Elijah again in late April."]),
+(113,"Ch 18",["Elijah read the announcement post standing in the gravel lot"],["He read the launch post standing in the gravel lot"]),
 ]

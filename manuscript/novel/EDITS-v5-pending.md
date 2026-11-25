@@ -325,6 +325,25 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     of gray and they said guardrails and slow down." and "...and they said ship." becomes "...and they said ship and
     accelerate." ("Off-ramp" is dropped so the two sides match CT's wording: guardrails, slow down / ship and
     accelerate.)
+45. The woman at the coffee urn (the cooling founder). The paragraph introducing her ends "She looked at the room and
+    spoke low, not really to him." CALLED: that becomes "She looked at the room, and then at him." Her line and the
+    paragraph after it, "You know what this is? Nobody in here has a friend." Then somebody called her name, and her
+    whole face came back on, and she went., become (CT's beats and lines; narration wording is Claude's, and "her
+    whole face came back on" is kept from the book for snapping back into her persona):
+
+    > "You know, you look pretty green."
+    >
+    > "I've never done anything like this before."
+    >
+    > "I thought not." She leaned in close. He could smell her perfume, and it was nice, and he felt a rush. She was
+    > pretty attractive. Her hair brushed his cheek, and she said it right into his ear.
+    >
+    > "Trust no one."
+    >
+    > She backed up, looked him right in the eyes, and nodded. Then somebody called her name, and her whole face came
+    > back on, and she went.
+
+    "Nobody in here has a friend." is gone.
 
 ## Claude's calls (2026-11-25)
 

@@ -231,6 +231,14 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     world everyone they love still lives in." becomes "...out of the world everyone they love still believes in."
     Only "lives in" changes to "believes in".
 
+### Chapter 4: Cell G14
+33. End of the Kardashev paragraph: "He typed it in scientific notation, 3.8 times ten to the twenty-sixth watts, and
+    sat back, and felt nothing." becomes "He typed it in scientific notation, 3.8 times ten to the twenty-sixth watts,
+    and sat back. He felt nearly nothing." CALLED: CT said "He typed the numbers into the Kardashev scale and sat
+    back. ... He felt nearly nothing." The number stays in the sentence because the next paragraph refers back to
+    it ("ten-to-the-twenty-sixth watts sat in its cell"), and he types it into the spreadsheet cell, not into the
+    scale.
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

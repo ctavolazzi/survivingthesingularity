@@ -292,6 +292,21 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     Then "The engine ticked as it cooled..." as before. [CT's lines. Kept from the book: "He actually waited..." The
     paragraph before already has a "Why me?" in the middle; CT's cry is the last thing he shouts.]
 
+107. **Chapter 14, the meltdown: "I lost everything!" and the steering wheel.** CT: "I want Elijah to also scream
+     'I lost everything!' And some physical action of maybe shaking the steering wheel, which remained attached
+     despite the force of Elijah's body. 'Everything!!'" The book already has "He had the wheel in both hands and he
+     was shaking it." That paragraph and the next become [CT's lines; the joining words are Claude's]:
+
+     > He was sitting up now. He had the wheel in both hands and he was shaking it with the whole force of his body.
+     > Somehow it stayed attached.
+     >
+     > "I lost everything!" He shook it again. "Everything!!"
+     >
+     > "I wish I never saw it! I wish I never typed a goddamn word! I wish this never happened!"
+
+     Placed at the wheel, the one place the scene already has him holding it, before "I wish I never saw it!" Then
+     the scene goes on as before.
+
 ### From CT's other chat, morning of 25 November (edits 100 to 103)
 
 CT dictated these in a chat that could not write to GitHub or the Doc, and pasted the list here. Copied as given.

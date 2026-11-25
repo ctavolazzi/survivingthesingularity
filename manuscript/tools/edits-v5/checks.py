@@ -112,4 +112,5 @@ C=[
 (104,"Ch 17",["He looked at the page a long time, while listening to the frogs at the pond nearby.","You know, he thought, this is a pretty good bleed-out spot.","A chuckle came over him and he went to bed that night feeling a little bit lighter."],[]),
 (105,"Ch 17",["[break] That Sunday Grace helped him clean out the truck."],[]),
 (106,"Ch 17",["\"Can I?\"","She asked me first, Elijah thought.","his nervous system was beginning to let down its guard.","She had the amp out on the tailgate, turning it to the light"],["She had the amp out on the tailgate before he could say anything"]),
+(107,"Ch 14",["shaking it with the whole force of his body. Somehow it stayed attached.","\"I lost everything!\" He shook it again. \"Everything!!\""],[]),
 ]

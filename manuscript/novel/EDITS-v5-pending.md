@@ -70,6 +70,13 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 20. Chapter 1, when the tower shuts off. Elijah says "Shit." Placement (mine): after "The fans coasted to silence.",
     so the paragraph ends: Black screen. The fans coasted to silence. "Shit." The room ticked as it cooled.
 
+### Chapter 2: The Coin Slot
+21. At the all-hands, "He was done being surprised. He would write things down before they happened." becomes:
+    "He was done being blindsided. He would try to pay closer attention."
+    OPEN: later in Chapter 2 the promise is called back: "That night Elijah sat at the kitchen table with the
+    notebook and did what he'd promised. He wrote it down before it happened." That no longer matches the promise.
+    Change it too?
+
 ## Applied
 
 - Author's Note, 2026-11-25: "They may tell you they moved on because I was an asshole, and they might be right."

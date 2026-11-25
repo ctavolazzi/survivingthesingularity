@@ -889,6 +889,12 @@ talk. But then he can also remember the woman's words." Placement and wording ar
       Elijah hadn't called him. Nobody had." Now Elijah did call. That line becomes "Elijah had called him once and
       he hadn't picked up. Nobody had told him to come."
 
+80. Pruitt, outside the Bear Flag. He appears only in this chapter. "There were two men smoking out front. He knew one
+    of them. Pruitt, who had the tire shop." becomes "There were two men smoking out front. He recognized one of
+    them: Pruitt, from the tire shop, who had put every set of tires on the Ranger since Elijah bought it." [CT: "He
+    recognized Pruitt from the tire shop. Or something like that." Claude's wording; the Ranger detail is added so
+    the reader knows why Elijah knows him.]
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

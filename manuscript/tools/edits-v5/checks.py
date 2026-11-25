@@ -123,4 +123,5 @@ C=[
 (115,"Ch 18",["It had grown harder to tell whose voice was worth listening to in all the clutter","somewhere between all the different voices was something that resembled consensus. The truth was never clean.","like Frankenstein's monster, made of everyone's hopes and dreams and pain."],[]),
 (116,"Ch 18",["Elijah had been here before. At a kitchen table with a chatbot"],["He had been here before. At a kitchen table"]),
 (117,"Ch 18",["It doesn't leave much room in the day for the good things to surprise you."],["It doesn't leave much day."]),
+(118,"Ch 18",["Don't let her effort go to waste."],["she will never once ask if you can walk. Don't let her.\" She straightened up"]),
 ]

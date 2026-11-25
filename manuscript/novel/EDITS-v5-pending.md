@@ -623,6 +623,17 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
 
      (It answers her own "can't surprise you" earlier in the line.)
 
+118. **Chapter 18, Marta at the door: "Don't let her effort go to waste."** CT: "Instead of ... she'll carry you till
+     her arms give out, don't let her, I want Marta to say, don't let her effort go to waste." Logged as: only the
+     last two words of her sentence change; "Grace will carry you till her arms give out" stays. Book now: "Grace
+     will carry you till her arms give out, and she will never once ask if you can walk. Don't let her." Change to:
+
+     > "Grace will carry you till her arms give out, and she will never once ask if you can walk. Don't let her
+     > effort go to waste."
+
+     **Open, for CT:** if you meant the whole sentence to go, tell me and I'll cut "Grace will carry you till her
+     arms give out, and she will never once ask if you can walk."
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

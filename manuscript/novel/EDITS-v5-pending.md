@@ -456,6 +456,40 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      after it is CT's, verbatim (25 Nov), placed between the nod and her taking the amp out. CT then changed its last words: "His
      nervous system was beginning to let down its guard. That's a better way to say it."
 
+108. **Chapter 17, the kitchen trailer: Lou and Grace, longer.** CT: the scene is too short after "more than most of
+     us." Grace "should protest ... she's defensive": "I was just asking if you wanted to play." Lou delivers
+     "another big kernel of wisdom": "He will play when he's ready. We cannot force the music out of him." Grace
+     processes that for a second, grabs some water and says "I'm gonna go see if Marta needs any help." Lou smiles
+     with one side of his mouth, nods, pats her on the shoulder: "You do that," he says. (Dictation said "Blue" for
+     Lou and "Martha" for Marta.)
+
+     Book now, after "That man has been through more than most of us.": "She didn't say anything for a while.
+     Through the little window over the sink she could see the truck, and Elijah putting the blanket back over the
+     amp and tucking in the corners, like something asleep." Then the scene ends. Change to [CT's lines; "I was just
+     asking him" and the joining words are Claude's; the window paragraph is the book's, kept as her second of
+     processing]:
+
+     > "Grace," he said. "Please be gentle with our guest." He started taking the radishes out one bunch at a time
+     > and lining them up. "That man has been through more than most of us."
+     >
+     > "I was just asking him if he wanted to play."
+     >
+     > "I know you were." Lou set down another bunch. "He will play when he's ready. We cannot force the music out
+     > of him."
+     >
+     > She didn't say anything for a while. Through the little window over the sink she could see the truck, and
+     > Elijah putting the blanket back over the amp and tucking in the corners, like something asleep.
+     >
+     > She got a glass down and filled it at the sink and drank some of it. "I'm gonna go see if Marta needs any
+     > help."
+     >
+     > Lou smiled with one side of his mouth and nodded, and patted her on the shoulder.
+     >
+     > "You do that," he said.
+
+     **Open, for CT:** CT said "if you wanted to play"; she is talking to Lou about Elijah, so logged as "if he
+     wanted to play". Lou's "I know you were." is Claude's.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

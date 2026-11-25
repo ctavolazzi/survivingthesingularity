@@ -113,4 +113,5 @@ C=[
 (105,"Ch 17",["[break] That Sunday Grace helped him clean out the truck."],[]),
 (106,"Ch 17",["\"Can I?\"","She asked me first, Elijah thought.","his nervous system was beginning to let down its guard.","She had the amp out on the tailgate, turning it to the light"],["She had the amp out on the tailgate before he could say anything"]),
 (107,"Ch 14",["shaking it with the whole force of his body. Somehow it stayed attached.","\"I lost everything!\" He shook it again. \"Everything!!\""],[]),
+(108,"Ch 17",["\"I was just asking him if he wanted to play.\"","He will play when he's ready. We cannot force the music out of him.","I'm gonna go see if Marta needs any help.","\"You do that,\" he said."],[]),
 ]

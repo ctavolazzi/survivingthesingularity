@@ -314,6 +314,9 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     and next month it's forty thousand" becomes "Because there's four thousand of them and one of you, and next month
     it's forty thousand." (Ruby also says "You answered all of them." Four thousand answers is a lot, but it fits
     a man who has stopped sleeping.)
+43. David at the bar: "I pour beer, Mad. What's it going to do, pour it?" becomes "I pour beer, Mad. What's it gonna
+    do? Yank the tap handle?" ("Tap handle" for the beer tap; CT's dictation came through as "tab handle".) Elijah's
+    "Give it a few years." still follows.
 
 ## Claude's calls (2026-11-25)
 

@@ -747,11 +747,12 @@ at 9:40 he stepped out under the eave" and "The next Sunday at 9:40 the aide sai
 
      **Change 1.** After "Real money, a real deadline, real customers with seedlings on the line." and before
      "Elijah volunteered for the design.", add (each reaction sets up something later in the chapter: Grace proud
-     at the demo, Reuben's folder, Marta's whiteboard):
+     at the demo, Marta's whiteboard. Reuben was in the first draft and was taken out: he is not introduced until the
+     build, a page later; Lou asks about the parts instead, approved by CT 25 Nov):
 
      > Denny wanted to film the order coming in. Grace hugged Priya, and then Lou, and then Priya again. Curtis asked
-     > what happened if they couldn't deliver, and nobody answered him right away. Reuben asked who had signed what.
-     > Marta didn't say anything. She read the order twice and pinned it to the whiteboard.
+     > what happened if they couldn't deliver, and nobody answered him right away. Lou asked who was paying for the
+     > parts. Marta didn't say anything. She read the order twice and pinned it to the whiteboard.
 
      **Change 2.** Cut "The four months on the yellow ticket ran out on a Tuesday in May. He was under a sink at the
      time. He didn't find out until Thursday." from that paragraph. Add, after "Marta pinned the repair emails to the
@@ -801,6 +802,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      read as Elijah.
      The Curtis sentence (Claude's, approved by CT, then smoothed at his request) gives the hesitation a source:
      Curtis's "I thought we agreed" from the kitchen scene (edit 109). It replaced "He had leaned on things before."
+
+128. **Chapter 19, Reuben's first appearance: who he is.** CT: "Have we introduced this guy already? I don't see a
+     description of him." This is his first appearance, and the book never says who he is; later he runs the agenda,
+     handles the trust, files with the county clerk, and says "I've been reading deeds a long time." Claude's line,
+     approved by CT ("I agree with this"): he is a retired title officer. Book now: "A lean man in a good coat came
+     in with it. He looked too pleased with himself for a Saturday." Change to:
+
+     > A lean man in a good coat came in with it. Reuben had spent thirty years as a title officer at the county, and
+     > he looked too pleased with himself for a Saturday.
+
+     Then "Reuben Vance," Marta said, ... as before.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

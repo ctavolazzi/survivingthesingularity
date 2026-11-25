@@ -347,6 +347,14 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     > Then somebody called her name, and her whole face came back on, and she went.
 
     (CT: the friends line stays, Elijah is confused because they all look like friends, and it becomes clear later.)
+46. The panel moderator. "Elijah, you've become sort of the people's forecaster," the moderator said, and the room
+    laughed nicely. becomes:
+
+    > "Elijah, your video went parabolic," the moderator said. "And your music is fantastic. We all love what you
+    > bring to the table." The room laughed nicely.
+
+    Then "Everybody here keeps saying AGI. For the folks at home, what precisely does it mean?" as before. ("The
+    people's forecaster" appears nowhere else in the book, so nothing else changes.)
 
 ## Claude's calls (2026-11-25)
 

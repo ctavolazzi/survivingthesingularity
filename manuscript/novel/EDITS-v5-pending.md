@@ -811,7 +811,11 @@ talk. But then he can also remember the woman's words." Placement and wording ar
 
     Then the next paragraph opens with a new sentence [CT]: "He was polite and kind, but firm. He was very sorry
     about Elijah's mother..." and goes on as before. ("He" for CT's "The man from Sacramento", since the line before
-    already names him.) [CT's beats and the Oldsmobile lines. Claude's
+    already names him.)
+    Knock-on: a few paragraphs later, "A notary came out in a Camry and they did it on the kitchen table." becomes "A
+    notary came out and they did it on the kitchen table." The Camry was the notary's car, not the man's, but CT read
+    it as the same car, so the second car is dropped and the Oldsmobile is the only one. [CT: "we need to keep it
+    consistent"; the fix is Claude's.] [CT's beats and the Oldsmobile lines. Claude's
     wording otherwise. The man no longer comes "Monday, in a clean pickup"; he arrives in the middle of this. Ruby's
     number here is the golden handcuffs coming back (edits 45, 53, 55).]
 

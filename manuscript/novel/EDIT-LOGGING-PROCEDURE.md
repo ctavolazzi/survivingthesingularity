@@ -77,10 +77,21 @@ Not built yet. When CT says go:
 those moments, but not every time. It's kind of like dealer's choice here." Example: edit 134, "Marta hadn't said a
 word either, not since Grace walked Patricia down the line." Claude's judgment where; not every short line.
 
+## The narration is hybrid (CT, 25 Nov)
+CT, planning the Chapter 19 rework: "whose feelings? Elijah's and his observations of others. BUT ... we have a
+hybrid narration style going on here." The book sits on Elijah's shoulder, and above him is a storyteller who knows
+more than he does ("Although Elijah was quite unaware of it," edit 106), leaves him for a scene (the kitchen
+trailer in Chapter 17, Bidwell, Chapter 38), goes into other heads (Tyler in Chapter 26) and talks to the reader
+("Most people never do, at moments like that," edit 100). In anything Claude writes for an edit: feelings are
+Elijah's, other people's come through what he sees them do, and the storyteller can tell the reader, briefly, what
+Elijah cannot know.
+
 ## What is still open (25 Nov, end of the second logging chat)
 Edits 87 to 136 are logged but not yet in the Doc (edit 57 was never used). The next edit is 137; CT has finished
 Chapter 19. Before more Chapter 19 edits, read "Direction from CT, 25 Nov: stakes and personality conflict" at the
-top of `EDITS-v5-pending.md` and plan it with him. Eight Chapter 14 sentence-opening changes were given in chat and
+top of `EDITS-v5-pending.md`. Third logging chat, 25 Nov: the plan is written there ("The plan for Chapter 19");
+edits 131, 132, 133, 135 and 136 get reworked in place, to that plan, when CT says go. Its section 9 lists what is
+open for him. Eight Chapter 14 sentence-opening changes were given in chat and
 never logged. Open for CT: Grace's April email (edit 100), "He went and looked. It was there, from April," the
 duplicate "It could be a cult," "He looked around the table, then back" (edit 103), edit 108 ("if he wanted to
 play"), edit 109 (the touch lines), edit 112 (gravel lot or a store), edit 116 ("been here" or "done this"), edit

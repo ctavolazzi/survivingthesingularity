@@ -23,7 +23,8 @@ file changes. Each new edit gets a check row when it is logged.
 
 ## Direction from CT, 25 Nov: stakes and personality conflict (context, not for the page)
 
-Given after edit 136, at the end of Chapter 19. Nothing below is an edit yet. Plan it with CT first.
+Given after edit 136, at the end of Chapter 19. Nothing below is an edit yet. The plan is written ("The plan for
+Chapter 19", below the first thinking); the rework waits for CT's go.
 
 CT: "at the beginning here, we have everything sort of centered around perspectives and viewpoints, but we haven't
 introduced any sort of like cross-character consequences. The stakes are so low, and we haven't raised them at all
@@ -35,7 +36,7 @@ If he tells people that he just used AI to generate it, Priya's going to have a 
 have a problem. Like we haven't done I don't think a very good job of introducing personality conflict into this
 manuscript."
 
-**Claude's thinking (not decided):**
+**Claude's first thinking (25 Nov, kept for the record; the plan below it replaces it where they differ):**
 
 1. Where the gap is. From Chapter 22 on, things Elijah does cost other people: the leak he has to confess (Ch 22),
    the retreat plan voted down and the tea circle (Ch 31), the arms meeting where Wren cries (Ch 34). Chapters 16 to
@@ -66,6 +67,220 @@ manuscript."
    now," edit 109). Cheaper to let two or three of those cost something than to invent new ones.
 7. What it touches. Edits 131, 132, 133, 135 and 136 would be reworked, not stacked on. CT has said the book is
    long enough, so this should replace telling ("The forty units shipped in June") rather than add pages.
+
+### The plan for Chapter 19 (Claude's, written 25 Nov at CT's request)
+
+**Status:** a plan, not edits. Edits 131, 132, 133, 135 and 136 below are still as first logged. They get reworked
+in place, with the same numbers, when CT says go. CT on the outline in chat: "Okay, I think this is stronger," then:
+"this is the first real opportunity for conflict among the crew, and I'd like it to be handled carefully with all
+of the lessons that we've learned so far ... this is literally the midway point of the book, and it needs to keep
+and hold the reader's interest and set things up for the end." Everything in this plan is Claude's unless it is in
+quotation marks.
+
+#### 1. What the book already has (25 Nov read of the Doc)
+
+The ending leans on this scene already. Nothing below needs a new page later in the book.
+
+- **Patricia is hiding the same thing.** At Thanksgiving (Ch 38) she says: "I've used it every day for three
+  years. Every report. Every grant. I'd have lost the job in 2025." Chapter 19 is spring 2025, so she is using it
+  when she goes after Tyler. The plant is in the scene now: "she kept her phone face down on the bench beside her
+  the whole time." It is face down again in Ch 31 and Ch 34, and face up in Ch 38.
+- **Her confession is Elijah's silence, said out loud.** Ch 38: "I used it and I still think it's wrong. Both of
+  those." Ch 19: "Elijah thought they were both right. That was his excuse."
+- **Tyler is the one who keeps secrets.** Ch 26, when the models go dark and he works out Patricia's: "He never
+  said a word about what he'd figured out. He was twenty. He just put it away." Ch 38, to Patricia: "You could
+  just tell them." and "I wasn't going to say anything."
+- **Tyler cannot read his own code, and the book saves that for Ch 26.** "I can't read it. I told Patricia I read
+  all of it. I read it like you read the terms on an app." Then Elijah pulls a stool over and they read the
+  gantry's code line by line for ten days, with two coffees every morning.
+- **Patricia's two questions are Marta's numbers.** Marta, on the first design: one supplier, and zero people in
+  the valley who can fix it. Patricia, in the shed: "how many companies make Rod Code?" (one) and "how many people
+  in this shed can read what it wrote?" That is why "Something had gone out of her face."
+- **"Nobody asked" runs through the chapter.** Tyler's cases: "Nobody had asked him to." Reuben: "Nobody asks
+  Reuben." Patricia: "Nobody asked them." It ends at the Architect's "It asked." (Ch 33).
+- **Who has what riding on the order.** It came "through a friend of a friend of Priya's." The network "buys more
+  than half of what Lou grows." Grace walks Patricia down the line, proud of them.
+- **The next chapter already shows the bruise.** Ch 20: "the tractor's broke ... and Curtis is in a mood." Curtis
+  and Lou trade the Matrix lines. Ch 34: Curtis "told everybody the very first night that laptop people show up
+  and bring their friends."
+- **The controller's paperwork has two mistakes later.** Ch 21: the repair card "named the wrong terminal." Ch 27:
+  "One connector label in the controller drawing was wrong." They read differently once the reader knows who drew
+  the board.
+- **Chapter 22 is the same sin, bigger.** A quiet shortcut ("just to rule it out"), then: "He thought about
+  keeping it to himself. Then he pictured Marta finding out some other way." Priya: "we took his confidence for a
+  check."
+- **The fights get bigger from here.** Ch 22 (the leak), Ch 31 (the vote), Ch 34 ("It was two arguments, and then
+  it was four"), Ch 38 ("three tables now, at one table"). Chapter 19 is the first crack, so it stays the smallest.
+
+#### 2. The idea
+
+Three people in the shed have used an AI. One of them is nineteen and says so. The two adults keep quiet and let
+him take it, one from each side of the argument. The reader knows about Elijah now and learns about Patricia at
+the end, and the Chapter 19 scene turns over in their memory when they do.
+
+That makes the midpoint a win with a debt inside it. The boxes ship and Elijah fits in for the first time (edit
+127). He paid for it with the oldest habit he has: "he learned to read a room and make it like him" (edit 94).
+CT's note on him holds: he is not cunning. He is a man who was told he was a piece of shit and has just found a
+table that likes him.
+
+#### 3. Narration (CT, 25 Nov)
+
+CT: "whose feelings? Elijah's and his observations of others. BUT ... we have a hybrid narration style going on
+here." The book sits on Elijah's shoulder, and above him is a storyteller who knows more than he does ("Although
+Elijah was quite unaware of it," edit 106), leaves him (the kitchen trailer in Ch 17, Bidwell, Ch 38), goes into
+other heads (Tyler in Ch 26, Grace in Ch 38) and talks to the reader ("Most people never do, at moments like
+that," edit 100).
+
+How the rework uses it:
+
+- The fight stays on Elijah's shoulder. His silence is the event, so the reader has to be inside it.
+- The others' feelings come through what he sees them do: Marta's crimper not moving, Grace's hands coming down,
+  Lou setting something on the bench.
+- The storyteller steps in twice, briefly, for things Elijah cannot know: that the network buys more than half of
+  Lou's crop (said before the fight, so the reader watches him stand there without knowing it), and that Tyler
+  knows about the board and is choosing not to say so.
+- No scene leaves Elijah. Grace and Patricia at the car stay seen from the shed door. Going over there would make
+  the storyteller either give Patricia away or visibly hold back.
+- No new hint about Patricia. The phone is enough (edit 109's lesson: a seed, "not gone into hard").
+
+**Open, for CT:** whether Chapter 19 should leave Elijah for a scene. This plan says no.
+
+#### 4. Edit by edit
+
+**Edit 131, the second design. Book now: "So he designed it again."** Becomes a short scene in four beats:
+
+1. *The clock.* The first design cost him the weeks he had. One sentence from the storyteller gives Lou's stake
+   here; Elijah still doesn't know it, so Grace's line at the wash station and "He hadn't known that" stay.
+2. *The old way.* He starts the plain board by hand. Continuity: he laid out the four-layer board himself, so the
+   trouble is not that he can't. It is time, and that the parts are now from the drawer and the hardware store:
+   relays out of a coffee can (edit 124's drawer), measured with calipers, drawn one at a time. He loses a weekend
+   and has a third of a board.
+3. *CT's beats, in his words:* "a startup out of Iowa," the rabbit hole where he is lost, "came up for air," "Did
+   he actually need to know all this?", "remembered his training," the minimum viable product, "got to work." The
+   board is done in a night.
+4. *The foreshadowing lands.* Marta's three numbers are still on the whiteboard, with the order pinned beside them
+   (edit 125). One company makes the thing that drew his board. Zero people in the valley can read why it put a
+   trace where it did, and he is one of the zero. A page earlier Marta asked him to "spend a little more time
+   making this feel more like us than like Claypot" and told him "You're a good engineer. I mean it." He doesn't
+   mention Iowa. Then he blocks out two weeks to write the firmware himself, by hand, to make up for it.
+
+   Then "The second version was a Raspberry Pi..." as before.
+
+**Edits 132 and 133, his silence in the shed.** Same two paragraphs, every fact and name kept (the $2,011.46 bill,
+Kelsey, Carol, Mateo, the deburring tool, "both of them noticed"). What changes:
+
+- "They were both right" is still his excuse. The board is the real reason, and the paragraph says so (132).
+- "what would have taken him two weeks" now means the two weeks he set aside to do it honestly. A kid did it in a
+  night with the same kind of tool and said so cheerfully.
+- Patricia's two questions land on him as Marta's two numbers. He ran them on himself already, at the whiteboard.
+- Tyler looks down the line at him once. The storyteller tells the reader what Elijah doesn't know: Tyler has seen
+  the board's files, with the Iowa company's name at the top. To Tyler it was never a secret, it was a file ("Why
+  wouldn't I?"). He sees Elijah's face, understands, and doesn't say it. Nobody asked him to.
+- Sentence openings varied, as edit 133 already does.
+
+Edit 134 ("Marta hadn't said a word either, not since Grace walked Patricia down the line") stays as logged.
+
+**Edit 135, the end of the shed scene.** Marta's question, "I'd have to look," "Look," Tyler scrolling, "We'll
+see," Patricia leaving and Grace going to the kitchen trailer all stay. Two things change:
+
+- *The first crack in the crew,* after Grace is in the trailer and before Elijah finds Tyler outside. Six to eight
+  lines of dialogue, every speaker named. It is not the argument about AI again (CT cut that once, edit 131). It
+  is about what to do with forty boxes, and it is between the members:
+  - Curtis goes at Tyler: throw the code out, write it by hand.
+  - Lou tells Curtis to lay off the kid. It is Lou's buyer and Lou's date. (His pears stay in Ch 20.)
+  - Priya, whose friend of a friend sent the order: don't believe it and don't burn it, test it, and write down
+    what fails.
+  - Somebody turns to Elijah: you're the engineer, is the kid's code good? He can't vouch for it, because he
+    hasn't read it. He can't condemn it, because of the board. He gives them Tyler's own words back: it passed the
+    bench. It is the second time that morning he picks nothing.
+  - Marta ends it with the work, not a verdict. Her "We'll see" is still the only yes anyone gets.
+  - Tyler takes his laptop and a crate of units outside. That is now why he is on the trunk of the Corolla.
+
+  Not in it: Wren (the reader meets her in Ch 20), Grace (in the trailer), and any speech.
+- *The trunk.* Elijah's half-confession stays ("I showed an AI to some realtors once. In a bar."). Tyler's "Okay"
+  stays. Then Tyler says he knows about the board, and one line more: Elijah could have just told them. (Ch 38,
+  Tyler to Patricia: "You could just tell them.") Tyler doesn't ask what happened with the realtors. He is
+  nineteen and has twenty-six boxes to go.
+
+Grace at the wash station is the book's, unchanged. She says "You had both halves of it in your head." He had
+three, and he doesn't tell her either.
+
+**Edit 136, the night, and June.**
+
+- One line after "You picked nothing.": he had picked, and he knew what.
+- The night scene stays (yard light, nineteen boxes to go, "Marta's question"), but they answer it **by test, not
+  by reading.** They pull the probe's wire on a unit and watch: the valve opens and stays open. "Shit." Tyler asks
+  Rod Code for the fix and gets four lines. They test it again: valve shut, light blinking. Neither of them can
+  say why the four lines work, and Elijah, of all people, can't object. The card line and Marta's laminator stay.
+  Marta's zero is still zero, and the storyteller can say so in a sentence.
+- Why: as logged, 136 has them read the firmware "all of it this time, line by line." That is the Chapter 26
+  scene, a year early, and it takes the weight off Tyler's "I can't read it." No coffees here either; Ch 26 has
+  them.
+- June: the paragraph "The forty units shipped in June. An electrician the CSA hired ... two growers ran the first
+  boxes for a week" keeps its facts and gets a cause. They are what Patricia asked for at the car, the price of
+  keeping the order. "Two probes died in the first month. Both valves failed shut." stays (edit 136, change 2).
+
+#### 5. What each person carries out of the chapter
+
+| Who | What it costs |
+|---|---|
+| Tyler | Takes the customer's anger alone, then Curtis's. Keeps Elijah's secret without being asked. |
+| Lou | His buyer saw a fight in his shed. He crosses Curtis over a kid. |
+| Curtis | Loses the argument. "In a mood" by Chapter 20. |
+| Priya | Her name brought the order in. She wants a test and gets a "We'll see." |
+| Marta | Her rule is broken twice in her own shed, and she knows about one. She has just told him he is a good engineer. |
+| Grace | Her warm voice fails in front of her friend. She uses the other one on Elijah, and gets half an answer. |
+| Patricia | Nothing yet. Her bill comes at Thanksgiving. |
+| Elijah | Owes a nineteen-year-old. Has lied by leaving things out to Marta and Grace. The belonging he just got is resting on it. He has been wondering what Curtis and Grace agreed on (edit 127); now he is the one in the line with a secret. |
+
+#### 6. Later chapters
+
+Pays off with no change: Ch 20 (Curtis's mood; Lou and Curtis), Ch 21 (the wrong terminal), Ch 22 ("That's
+Patricia's argument." / "I know. I stood there while she made it."; "we took his confidence for a check"), Ch 26
+(Tyler can't read it; "Elijah knew that face"; Tyler puts Patricia's secret away, the second one he has kept),
+Ch 27 (the pledge, the wrong connector label), Ch 34 (the leaf), Ch 38 ("You could just tell them"; "Both of
+those").
+
+To decide when CT reaches them, nothing made now:
+
+- **Chapter 22, where Elijah tells it.** Recommended: at the bell, in a line or two, with Tyler in the room. If he
+  confesses the leak and still hides the board, the book's first honest confession is half of one. The other
+  place is Chapter 32, the page of small failures with the rubber band.
+- **Edit 125** (the co-op's reactions to the order) and **edit 127** (the build) stand as logged.
+
+#### 7. Lessons from edits 1 to 136 that the rework has to follow
+
+- Take the reader through what is felt, not through the events (edit 100).
+- People do the work, not objects (edit 127).
+- Always clear who is speaking and who is in the room (edits 102, 109, 111).
+- People get drawn out; they don't make speeches (edit 90).
+- A seed, not a speech (edit 109).
+- Never the same argument twice (edit 131, the cut).
+- Marta is hard and kind in the same breath (edit 124). Her disappointment costs more than her anger.
+- A chapter ends on something that moves the story (edit 136).
+- A short line that would confuse out of context gets a little redundancy (edit 134).
+- Vary the sentence openings (edit 133). No "suddenly" (edit 94).
+- CT's words first, Claude's marked, his context never on the page.
+- Check every later line that points back (the continuity pass).
+- Replace telling with scenes. The book is long enough.
+
+#### 8. Length
+
+Claude's estimate: about one page added. The crew's argument and the longer trunk scene add; the June paragraph
+turned into cause, and the reading cut from the night scene, give some back.
+
+#### 9. Open for CT
+
+1. Go, or changes.
+2. Leave Elijah for a scene, or stay with him (section 3).
+3. Tyler's line on the trunk, the one that sets up "You could just tell them." CT's wording if he has one.
+4. Who puts the question to Elijah in the crew's argument: Priya, Lou or Curtis.
+5. Where the secret comes out: Chapter 22 or Chapter 32 (section 6). Not needed for the rework.
+
+#### 10. On go
+
+Rework 131, 132, 133, 135 and 136 in place, one at a time, each with "Book now" and "Change to," its check row
+updated in `manuscript/tools/edits-v5/checks.py`, verify run, commit and push. Then edit 137.
 
 ## New edits (from 87)
 

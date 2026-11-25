@@ -137,4 +137,5 @@ C=[
 (129,"Ch 19",["Reuben notices things. It's what makes him such a pain in the ass. But he's quite useful."],['"Reuben notices."']),
 (130,"Ch 19",["Saved our ass quite a few times,\" Lou said, from down the line."],[]),
 (131,"Ch 19",["A startup out of Iowa had an AI that laid out circuit boards.","He came up for air. Did he actually need to know all this?","He remembered his training: the minimum viable product"],[]),
+(132,"Ch 19",["He knew what the thing drank. He had used one on the board himself. He also knew"],[]),
 ]

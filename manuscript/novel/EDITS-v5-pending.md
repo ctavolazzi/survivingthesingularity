@@ -867,8 +867,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      shed can read what it wrote?" CT: "I think we should cut it. He should find the PCB AI designer, but not that
      conversation shouldn't happen until the [Rod Code] conversation." Do not add it. The wording is in git history.
 
-132. **Cut by CT (25 Nov), with the argument in edit 131.** It was Priya's "No, she's right ... I don't know how my
-     own body functions physically, but I use it every day." Not in the book. The number is not reused.
+132. **Chapter 19, the Rod Code scene: Elijah used an AI too.** Since edit 131 Elijah has used an AI on the board
+     himself, so when Patricia asks "how many companies make Rod Code?" the reader may wonder why nobody points at
+     him, or why he doesn't think of it. Claude's line, which CT asked to log ("Log that line as 132"). Book now, in
+     the paragraph of his silence: "...He knew what the thing drank. He also knew a nineteen-year-old had just done in
+     a night what would have taken him two weeks..." After "He knew what the thing drank." add [Claude's wording]:
+
+     > He had used one on the board himself.
+
+     Then "He also knew a nineteen-year-old..." as before.
+     (An earlier edit 132, Priya's "No, she's right ... I use it every day", was cut by CT with the argument in edit
+     131. This line took the number.)
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

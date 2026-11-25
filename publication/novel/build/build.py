@@ -120,10 +120,15 @@ def structure(paras):
     imgdir = WORK / "images"
     shutil.rmtree(imgdir, ignore_errors=True)
     imgdir.mkdir(parents=True)
+    shutil.rmtree(WORK / "epub", ignore_errors=True)
+    (WORK / "epub" / "images").mkdir(parents=True)
 
-    blocks, nimg = [], 0
+    blocks, nimg, left_out = [], 0, 0
     for p in paras:
         for blob in p["images"]:
+            if not CFG.get("include_pictures", True):
+                left_out += 1
+                continue
             nimg += 1
             name = f"fig-{nimg:02d}.jpg"
             im = Image.open(io.BytesIO(blob)).convert("RGB")
@@ -176,7 +181,7 @@ def structure(paras):
                          "title_runs": blocks[start]["runs"],
                          "chapter": int(m.group(1)) if m else None, "blocks": clean})
     return {"title_display": title, "title_block": title_block, "author": author,
-            "toc": toc, "sections": sections, "images": nimg}
+            "toc": toc, "sections": sections, "images": nimg, "pictures_left_out": left_out}
 
 
 def ingest(source):

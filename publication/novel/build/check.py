@@ -264,7 +264,7 @@ def check_file(name, spec):
            f"{chap_label}; each section is its own file (chapter break)", "headings differ from manuscript")
         ok(e["italic_chars"] == src_em, f"italics kept ({src_em:,} italic characters)",
            f"italics differ: {e['italic_chars']} vs {src_em}")
-        ok(e["images"] - (1 if e["cover"] else 0) == n_img, f"{n_img} pictures in place",
+        ok(e["images"] - (1 if e["cover"] else 0) == n_img, (f"{n_img} pictures in place" if n_img else "no pictures inside the book"),
            f"pictures: {e['images']} found, {n_img} expected")
         ok(e["cover"], "cover embedded", "no cover embedded")
         ok(e["front_order"][:3] == ["cover", "title page", "contents"], "order: cover, title page, copyright page, contents")
@@ -294,7 +294,7 @@ def check_file(name, spec):
            f"contents links: {d['toc_links']} of {len(titles)}")
         ok(d["italic_chars"] == src_em, f"italics kept ({src_em:,} italic characters)",
            f"italics differ: {d['italic_chars']} vs {src_em}")
-        ok(d["images"] == n_img, f"{n_img} pictures in place", f"pictures: {d['images']} of {n_img}")
+        ok(d["images"] == n_img, (f"{n_img} pictures in place" if n_img else "no pictures inside the book"), f"pictures: {d['images']} of {n_img}")
         ok(all(l in d["lines"] for l in CFG["copyright_lines"]), "title page and copyright page present")
         text = "\n".join(d["lines"])
     else:
@@ -326,7 +326,7 @@ def check_file(name, spec):
            f"contents page numbers wrong: shown {p['toc_nums'][:6]}, real {real[:6]}")
         ok(not p["fonts_not_embedded"], f"all {p['fonts']} fonts embedded", f"not embedded: {p['fonts_not_embedded']}")
         want_img = n_img + (1 if spec["layout"] == "reader" and (WORK / "cover.jpg").exists() else 0)
-        ok(p["images"] == want_img, f"{n_img} pictures in place" + (", cover on page 1" if want_img > n_img else ""),
+        ok(p["images"] == want_img, (f"{n_img} pictures in place" if n_img else "no pictures inside the book") + (", cover on page 1" if want_img > n_img else ""),
            f"pictures: {p['images']} of {want_img}")
         ok(all(squeeze([l]) in b for l in CFG["copyright_lines"]), "title page and copyright page present")
         if spec["layout"] == "print":
@@ -359,7 +359,9 @@ def main():
     src_words = len(words([l for l in expected_lines("full")])) - len(words(CFG["copyright_lines"]))
     out = ["# Checks: " + CFG["title"] + " " + CFG["version"], "",
            f"Source: `{Path(MODEL['source']).name}` ({src_words:,} words, {len(MODEL['sections'])} sections, "
-           f"{MODEL['images']} pictures).",
+           f"{MODEL['images']} pictures inside the book" +
+           (f"; the manuscript's {MODEL['pictures_left_out']} pictures are left out on purpose"
+            if MODEL.get("pictures_left_out") else "") + ").",
            "Words added by the build: the copyright page only (" + " ".join(CFG["copyright_lines"]) + ").", ""]
     failed = False
     for r in results:

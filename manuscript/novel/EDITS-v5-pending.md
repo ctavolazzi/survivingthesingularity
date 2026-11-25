@@ -155,9 +155,9 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     didn't answer." be the end?
 
     Chapter 6, where he opens the band chat. "Above the box, still, was Wes. is my stuff in that thing. Under it, his
-    own. Let me look into it. Nobody had written in there since." becomes: "Above the box, still, was Wes. is my
-    stuff in that thing. Under it, his own. Let me look into it. Under that, Wes again: the link about the water, and
-    is this true. He had never answered. Nobody had written in there since."
+    own. Let me look into it. Nobody had written in there since." becomes (CT, a throwaway mention of the article):
+    "Above the box, still, was Wes. is my stuff in that thing. Under it, his own. Let me look into it. Under that,
+    Wes's link to the water article. Nobody had written in there since."
 
     CALLED: Chapter 13 has the same callback ("scrolled up, past his own link, to Wes. is my stuff in that thing.
     Under it, Let me look into it."). Change it to end on the unanswered question too?
@@ -320,9 +320,9 @@ CT can overrule any of them.
   the artists get, and nobody answered her", which still fits.
 - 25: The link arrives in Ch 2 right after "Let me look into it, he sent." Order: the link, "is this true",
   "Elijah didn't answer.", then edit 22 "He meant to do it, but he never got the chance."
-- 25, Ch 13: the callback becomes "...scrolled up, past his own link, to Wes. is my stuff in that thing. Under it,
-  Let me look into it. Under that, is this true, with nothing under it. He sat with them for a while." (replacing
-  "He sat with the two of them for a while.")
+- 25, Ch 13: the callback matches Ch 6: "...scrolled up, past his own link, to Wes. is my stuff in that thing.
+  Under it, Let me look into it. Under that, the link to the water article. He sat with them for a while."
+  (replacing "He sat with the two of them for a while.")
 
 Still CT's to decide: 5 (the word for "bridge").
 

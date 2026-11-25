@@ -658,6 +658,14 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     Chapter 13 still opens "In the morning the fever was down enough to drive.", which is him having slept it off,
     and things get worse from there.
 
+### Chapter 13: The Buckets in the Barn
+
+68. First lines of the chapter. "In the morning the fever was down enough to drive. He did not go in to get sorted
+    out." becomes "In the morning the fever was down enough to drive. He decided not to go to the hospital. He was
+    tough. He could tough it out." [CT]
+    Note: "go in to get sorted out" probably meant going into the cannery office to get paid, echoing Trent's "We'll
+    sort you out Friday". With CT's line that echo is gone; the arms deal (edit 66) is still settled in Chapter 15.
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

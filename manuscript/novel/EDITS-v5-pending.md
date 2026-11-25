@@ -363,6 +363,14 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     CT's lines and beats. Claude's: the stammer words "I, uh. I mean..." and moving the room's laugh to after the
     forecaster question (it was after the compliment). "He knew this. He'd watched the Architect's old lecture..."
     follows as before.
+47. After the panel, the woman who sat on his left, at the coffee urn. "Both sides like you because you never say
+    what anyone should do," she said. "That's not a forecast. It's a mirror." becomes:
+
+    > "Both sides like you," she said. "Don't ruin that. You have no idea how valuable it is to be able to speak
+    > your mind and not worry what anyone thinks about it."
+
+    "She took her coffee back into the hall." follows as before, and "She didn't pat him." before it stays. "That's
+    not a forecast. It's a mirror." is gone.
 
 ## Claude's calls (2026-11-25)
 

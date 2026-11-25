@@ -61,51 +61,52 @@ Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude
     >
     > "Lou," he said, and went back to the beds.
 
-    Knock-on, at the first Friday dinner: Lou's description moves earlier in the dinner and names him as the man from
-    the pump house steps (see edit 90).
+    Knock-on, at the first Friday dinner: "...without once looking at his hands. That was Lou. Lou ran the growing
+    side, which meant the actual food." becomes "...without once looking at his hands. It was Lou, from the pump
+    house steps. Lou ran the growing side, which meant the actual food."
     [CT's beats. Claude's wording. Lou's look (about sixty, sunburned) is taken from his description at the dinner.]
-90. The first Friday dinner: they have to coax him before he talks (CT: after everything, he wouldn't just go off
-    on these people; they goad him: we read your stuff, we like you, we watch your videos, there's a reason you're
-    here, just tell us your thoughts; Grace steps in, and Lou and Marta; Priya is looking forward to arguing; Denny
-    is really trying to get him to talk; Lou puts a foot down, "only if you're comfortable", echoing Grace). After
-    Denny's "...I don't want the conference version." and before "Elijah lowered his fork. He'd choked on this once,
-    under lights.", insert:
+90. The first Friday dinner: they have to coax the horse ranch story out of him (CT: after everything about the
+    horses, he wouldn't just go off on these people; they goad him: we read your stuff, we like you, we watch your
+    videos, there's a reason you're here, just tell us your thoughts; Grace steps in, and Lou and Marta; Priya is
+    looking forward to arguing; Denny is really trying to get him to talk; Lou puts a foot down, "only if you're
+    comfortable", echoing Grace; Elijah thinks about it; "Well," begrudgingly, "imagine you run a horse ranch";
+    Denny: "I like him already"; Elijah is taken aback; "This was the first warm, safe camaraderie he'd felt in a
+    long time.").
+    The dinner runs as before through Elijah's definitions, Lou's "What's it eat?" and Priya's "What would you
+    measure?", up to "Nobody said anything for a second. The dog sneezed." Then "'I've got a story about it,' Elijah
+    said. 'It's kind of dumb.' / 'Good,' said Denny. / 'Okay. Say you work on a horse ranch. Every morning your job
+    is..." becomes:
 
-    > Elijah looked at his plate. "I don't know. I'm kind of off that."
+    > "I've got a story about it," Elijah said. "It's kind of dumb." He looked at his plate. "I don't know. I'm kind
+    > of off telling it."
     >
     > "Come on, man." Denny leaned in. "We read your stuff. We watch your videos. We like what you put out there.
     > There's a reason you're here. Just tell us what you think."
     >
-    > At the far end a small woman with a pencil behind her ear set her fork down, like somebody pulling a chair up
-    > to a fight she had been looking forward to.
+    > Priya took the pencil from behind her ear, like somebody pulling a chair up to a fight she had been looking
+    > forward to.
     >
     > "Denny," Grace said. "Only if he's comfortable."
     >
     > "Let him eat first," Marta said.
     >
-    > In the corner a man of about sixty, sunburned right up to his hat line, had been cracking walnuts into a bowl
-    > the whole time without once looking at his hands. It was Lou, from the pump house steps. Lou ran the growing
-    > side, which meant the actual food. He didn't look up. "Only if you're comfortable," he said.
+    > Lou didn't look up from his walnuts. "Only if you're comfortable," he said.
+    >
+    > Elijah thought about it.
+    >
+    > "Well," he said, begrudgingly. "Imagine you run a horse ranch."
+    >
+    > "I like him already," Denny said.
+    >
+    > Elijah was taken aback. This was the first warm, safe camaraderie he'd felt in a long time.
+    >
+    > "Every morning your job is to make sure the horses have enough to eat. One day you walk out to the stable..."
 
-    Then "Elijah lowered his fork. He'd choked on this once, under lights." and his answer as before.
-    Knock-on: further down, "'What's it eat?' / That came from the corner of the table, from a man of about sixty who
-    was sunburned right up to his hat line and had been cracking walnuts into a bowl the whole time without once
-    looking at his hands. That was Lou. Lou ran the growing side, which meant the actual food." becomes "'What's it
-    eat?' / That was Lou again." [CT's beats; Denny's lines close to CT's words; "Only if you're comfortable" is CT's.
-    Claude's wording otherwise. Priya is not named here, because the book introduces her by name a page later and
-    says she "hadn't said a thing since the check-in"; she only sets her fork down.]
-
-How to read it:
-
-- **[CT]** means the words are CT's, as he said them. **[Claude]** means Claude wrote the wording, from a beat CT
-  described or to keep the book consistent. CT can overrule anything marked [Claude].
-- CT, 2026-11-25: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ...
-  I'm trusting you to keep track of where stuff goes and the details of how to keep the composition rolling."
-  That is the basis for every [Claude] knock-on below.
-- Edit numbers are the order CT gave them and never change. Numbers 56 to 62 are knock-ons found in the full
-  continuity pass of 2026-11-25 (see "Continuity pass" at the end).
-- When an edit is made, move it to "Applied" with the date. To change the Doc, use the bridge:
-  `node scripts/sts-bridge.mjs edit READ.json --find "old words" --replace "new words"`.
+    and the story goes on as before. [CT's beats and lines: Denny's push, "Only if you're comfortable", "Well,"
+    begrudgingly, "Imagine you run a horse ranch", "I like him already", the camaraderie line in his final wording.
+    Claude: placing it right before the horse story, where the reluctance belongs; Elijah's "I don't know. I'm kind
+    of off telling it."; Priya's pencil; Marta's "Let him eat first". This replaces the earlier draft of edit 90,
+    which put the coaxing before his definitions; Lou is introduced at "What's it eat?" as in edit 89.]
 
 ## Needs CT (answered)
 

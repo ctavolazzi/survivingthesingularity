@@ -741,6 +741,17 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     [CT's last sentence. Claude's bridge: "He got up and went down the hall and ran cold water over his face.", so
     the mirror is really there; he was sitting at the kitchen table.]
 
+73. The hospital woman with the lanyard. "Is there anybody else in the family who should be part of this?" / "No." /
+    "Then it's you," she said, and she was sorry about it. becomes:
+
+    > "Is there somebody else?"
+    >
+    > "No. It's just me."
+    >
+    > She nodded, with a knowing smile, and that was it.
+
+    [CT]
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

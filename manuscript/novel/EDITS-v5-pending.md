@@ -819,6 +819,59 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     wording otherwise. The man no longer comes "Monday, in a clean pickup"; he arrives in the middle of this. Ruby's
     number here is the golden handcuffs coming back (edits 45, 53, 55).]
 
+79. He doesn't just sign (CT: he'd tell the man to get bent, snap, yell, all the stress finally comes out; "I'll
+    fucking figure it out"; he thinks of the robot arms and how they could be leveraged, everything he could have
+    done, the money he turned down; then the dam breaks and he sobs over the kitchen counter where they made
+    Christmas dinner, over the sink where his mom washed his hand after he took a digger and the gravel chewed his
+    palm up, covered it in Crisco, an old wives' tale that kind of worked, and bandaged it; he looks around the house
+    where he spent so much of his life wishing to be anywhere else; he calls David, who doesn't pick up; he cries
+    harder, goes to bed crying, wakes up crying; when he gets himself together he thinks of everyone he could call
+    for advice and comes up empty). After the man names the outfit ("...They liked the valley, he said."), and
+    before "A notary came out and they did it on the kitchen table" (edit 78), insert:
+
+    > Elijah stood up. "Get bent."
+    >
+    > The man didn't move. "Mr. Madrone..."
+    >
+    > "No. You don't get to come in here with a folder while she's lying in that bed." He was yelling. He could hear
+    > himself, and he couldn't stop, and ten months of it came up at once. "That's my grandmother's hill out there.
+    > This is her kitchen. I'll fucking figure it out."
+    >
+    > The man set the folder on the table, squared it to the edge, and put his card on top. "The offer's good through
+    > Friday," he said. "I am sorry about your mother." The Oldsmobile backed down the drive.
+    >
+    > Elijah sat back down. He would figure it out. He went through it. The two arms Trent owed him, still crated on
+    > the cannery dock; he had heard Gus say what one of those cost. The million he had turned down at an elevator.
+    > The stages, the podcasts, the rate he didn't have. All the things he could have done, and hadn't.
+    >
+    > Then the dam broke.
+    >
+    > He sobbed. He stood over the kitchen counter where they had made every Christmas dinner of his life, and he
+    > sobbed over the sink where his mother had washed out his hand the summer he took a digger in the driveway and
+    > the gravel chewed his palm up. She had covered it in Crisco, an old wives' tale that kind of worked, and
+    > bandaged it. He looked around the house where he had spent so much of his life wishing he was anywhere else.
+    >
+    > He called David. David didn't pick up.
+    >
+    > He cried harder. He went to bed that night crying, and he woke up the next morning crying.
+    >
+    > When he finally got himself together, he sat at the table and thought of everyone he could call for advice. He
+    > came up empty.
+    >
+    > He picked up the man's card.
+
+    Then "A notary came out and they did it on the kitchen table. Elijah signed where the yellow tabs were..." and
+    the rest as before. [CT's beats and lines ("Get bent", "I'll fucking figure it out", "Then the dam broke" in
+    substance, the digger, the Crisco, "came up empty"). Claude's wording otherwise, and "He picked up the man's
+    card." to bring him back to signing, which the rest of the book needs: the farm is sold.]
+    Claude's calls:
+    - The arms. In the book they only become his, and go into storage, in Chapter 15 (edit 66). Here they are still
+      "the two arms Trent owed him, still crated on the cannery dock". CT said "the robot arms that he put in
+      storage"; moving them into storage this early would need Chapter 15 reworked. CT can say so.
+    - David. Later in this chapter: "David showed up Thursday morning with a hand truck in the back of his pickup. /
+      Elijah hadn't called him. Nobody had." Now Elijah did call. That line becomes "Elijah had called him once and
+      he hadn't picked up. Nobody had told him to come."
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

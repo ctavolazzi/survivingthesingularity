@@ -766,6 +766,18 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     The message itself stays "Now you want my twenty?" (CT quoted it as "now you want my money"; "twenty" ties to the
     next paragraph, where he sends Tulsa her twenty back.)
 
+76. In the hospital hallway. "...Forty feet away his mother was asking a nurse for Barry. He could not make it fit in
+    one head, and the head was his." / "He didn't answer any of it." becomes:
+
+    > ...Forty feet away his mother was asking a nurse for Barry.
+    >
+    > It was too much.
+    >
+    > He didn't answer any of it. He put his phone away and went for a walk to go buy cigarettes.
+
+    [CT. Claude kept "He didn't answer any of it." because it closes out the offers in the paragraph before. He
+    already smokes by then: Ch 12, "He had started smoking again in February, on a fire escape."]
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

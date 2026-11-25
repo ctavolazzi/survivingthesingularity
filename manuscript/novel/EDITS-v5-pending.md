@@ -1333,31 +1333,47 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      - "In a bar" points back to edit 133 ("Once, in a bar, he had shown one off"). Edit 134 changes the line just
        before "Frost week".
 
-136. **Chapter 19, the end: Marta's question answered, and Elijah picks something.** CT: "what is the moral of the end
+136. **Chapter 19, the end: Marta's question answered, and what Elijah picked.** CT: "what is the moral of the end
      of that chapter? It feels like it's just moving things along instead of progressing the story ... come up with
      something that helps tie things together a little bit instead of it just being like, and then this happened,
      and then this happened." Claude's reading, agreed by CT: the moral is Marta's three numbers, a thing is yours
      only if somebody here can fix it. Two threads were loose: Marta's "Frost week. Probe fails. Valve open or shut?"
-     is never answered in the book, and Grace's "You picked nothing" gets no reply. CT approved the draft: "I agree.
-     Proceed." Claude's wording throughout. Italics are marked with `*`.
+     is never answered in the book, and Grace's "You picked nothing" gets no reply. CT approved the first draft ("I
+     agree. Proceed."). Reworked 25 Nov to the plan, on CT's "Go on the plan." Claude's wording throughout. Italics
+     are marked with `*`.
+
+     Why it was reworked: the first draft had Elijah and Tyler read the firmware "all of it this time, line by line."
+     That contradicts the book twice. In Ch 26, a year later, Tyler says "I can't read it. I told Patricia I read all
+     of it," and he and Elijah read the gantry's code line by line for ten days. In Ch 32 he writes firmware "line by
+     line, the way he'd learned on the gantry the summer before." So here they answer Marta's question by test, and
+     nobody reads anything. The two coffees are gone too; Ch 26 has them.
 
      **Change 1.** After Grace's "You picked." She turned off the tap. "You picked nothing." and before the scene
      break and "The forty units shipped in June.", add:
 
+     > He had picked. He had picked keeping his board quiet over a nineteen-year-old on a bucket, and he didn't tell
+     > her that either.
+     >
      > Tyler was still out on the trunk of the Corolla when the yard light came on, with nineteen boxes to go.
-     > Elijah brought two coffees and sat down on the bumper.
+     > Elijah carried a spare unit out from the shed and sat down on the bumper.
      >
-     > "Marta's question," he said. "Show me where it answers it."
+     > "Marta's question," he said. "Let's find out."
      >
-     > Tyler didn't know where. So the two of them read it, all of it this time, line by line, with the laptop between
-     > them. Around eleven they found it. A dead probe looked exactly like dry dirt. On the coldest night of the year
-     > the valve would open and stay open.
+     > Neither of them could have said where the answer was in the code, so they tested it. Tyler pulled the probe
+     > wire on the spare, and the two of them sat and watched the little valve. A dead probe looked exactly like dry
+     > dirt. The valve clicked open and stayed open. On the coldest night of the year, it would have stayed open all
+     > night.
      >
      > "Shit," Tyler said.
      >
-     > It took him four lines to fix. A dead probe now meant a shut valve and a blinking light. Elijah wrote a new
-     > line for the repair card: *Light blinking? Valve stays shut. Swap the probe.* In the morning Marta read it,
-     > and ran the card through the laminator herself.
+     > He asked Rod Code for a fix, and four lines came back. They pulled the wire again. This time the valve stayed
+     > shut, and a light on the lid started blinking. Neither of them could have told you why the four lines worked,
+     > and Elijah was in no position to complain about that. He wrote a new line for the repair card: *Light
+     > blinking? Valve stays shut. Swap the probe.* In the morning Marta read it, and ran the card through the
+     > laminator herself.
+     >
+     > The last number on her whiteboard was still a zero. Nobody in the valley could read what was inside those
+     > boxes, including the two people who had put it there.
 
      **Change 2.** In June: "Two growers needed new probes in the first month. They changed them by hand, off the
      card, without throwing anything away." becomes:
@@ -1366,8 +1382,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > card, without throwing anything away.
 
      Notes: "nineteen boxes to go" follows edit 135's twenty-six that afternoon. The bench test already showed the
-     answer (probe out, valve clicks open). Nobody mentions Patricia or sides: the work is Elijah's answer to Grace,
-     and it turns Marta's zero into one. Curtis's hose is left as it is; it returns in Chapter 23.
+     answer (probe out, valve clicks open). Grace's "You had both halves of it in your head" stays: she thinks he had
+     two halves, and the new line says he had a third. The zero on the whiteboard waits for Ch 26, where Tyler admits
+     he can't read his code and the two of them learn to. Curtis's hose is left as it is; it returns in Ch 23.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

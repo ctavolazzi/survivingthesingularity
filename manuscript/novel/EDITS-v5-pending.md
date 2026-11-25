@@ -809,7 +809,9 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     >
     > The man from Sacramento got out with a folder.
 
-    Then "He was very sorry about Elijah's mother..." as before. [CT's beats and the Oldsmobile lines. Claude's
+    Then the next paragraph opens with a new sentence [CT]: "He was polite and kind, but firm. He was very sorry
+    about Elijah's mother..." and goes on as before. ("He" for CT's "The man from Sacramento", since the line before
+    already names him.) [CT's beats and the Oldsmobile lines. Claude's
     wording otherwise. The man no longer comes "Monday, in a clean pickup"; he arrives in the middle of this. Ruby's
     number here is the golden handcuffs coming back (edits 45, 53, 55).]
 

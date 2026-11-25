@@ -6,6 +6,13 @@ Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 111. R
 CT reads the v5 manuscript and dictates changes by voice. Claude logs them. Claude does not change the Google Doc
 unless CT clears it (a change goes in only as a suggestion). CT's standing words: "I just want you to log the edits."
 "Stop asking for permission. You can just do it." "Don't push back. Don't overthink. Just roll with the punches."
+Then, the same day: "you're welcome to push back when there's continuity errors, when there's conflict that makes
+the story more confusing ... contradictions, problems, things that'll confuse the reader ... I encourage it."
+
+## When to push back, and when not to
+Push back on: continuity errors, contradictions, logistics that can't happen (who is in the room, who is driving),
+anything that makes the story more confusing, and anything that brings back a problem already edited out.
+Don't push back on: his taste, his word choices, his style, or a decision he has already made. Log those as given.
 
 ## Sort every message into one of four kinds
 1. **An edit**: text for the page. Log it.

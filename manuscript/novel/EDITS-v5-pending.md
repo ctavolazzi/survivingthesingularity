@@ -61,10 +61,39 @@ Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude
     >
     > "Lou," he said, and went back to the beds.
 
-    Knock-on, at the first Friday dinner: "...without once looking at his hands. That was Lou. Lou ran the growing
-    side, which meant the actual food." becomes "...without once looking at his hands. It was Lou, from the pump
-    house steps. Lou ran the growing side, which meant the actual food."
+    Knock-on, at the first Friday dinner: Lou's description moves earlier in the dinner and names him as the man from
+    the pump house steps (see edit 90).
     [CT's beats. Claude's wording. Lou's look (about sixty, sunburned) is taken from his description at the dinner.]
+90. The first Friday dinner: they have to coax him before he talks (CT: after everything, he wouldn't just go off
+    on these people; they goad him: we read your stuff, we like you, we watch your videos, there's a reason you're
+    here, just tell us your thoughts; Grace steps in, and Lou and Marta; Priya is looking forward to arguing; Denny
+    is really trying to get him to talk; Lou puts a foot down, "only if you're comfortable", echoing Grace). After
+    Denny's "...I don't want the conference version." and before "Elijah lowered his fork. He'd choked on this once,
+    under lights.", insert:
+
+    > Elijah looked at his plate. "I don't know. I'm kind of off that."
+    >
+    > "Come on, man." Denny leaned in. "We read your stuff. We watch your videos. We like what you put out there.
+    > There's a reason you're here. Just tell us what you think."
+    >
+    > At the far end a small woman with a pencil behind her ear set her fork down, like somebody pulling a chair up
+    > to a fight she had been looking forward to.
+    >
+    > "Denny," Grace said. "Only if he's comfortable."
+    >
+    > "Let him eat first," Marta said.
+    >
+    > In the corner a man of about sixty, sunburned right up to his hat line, had been cracking walnuts into a bowl
+    > the whole time without once looking at his hands. It was Lou, from the pump house steps. Lou ran the growing
+    > side, which meant the actual food. He didn't look up. "Only if you're comfortable," he said.
+
+    Then "Elijah lowered his fork. He'd choked on this once, under lights." and his answer as before.
+    Knock-on: further down, "'What's it eat?' / That came from the corner of the table, from a man of about sixty who
+    was sunburned right up to his hat line and had been cracking walnuts into a bowl the whole time without once
+    looking at his hands. That was Lou. Lou ran the growing side, which meant the actual food." becomes "'What's it
+    eat?' / That was Lou again." [CT's beats; Denny's lines close to CT's words; "Only if you're comfortable" is CT's.
+    Claude's wording otherwise. Priya is not named here, because the book introduces her by name a page later and
+    says she "hadn't said a thing since the check-in"; she only sets her fork down.]
 
 How to read it:
 

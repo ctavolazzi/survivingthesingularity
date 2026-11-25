@@ -183,9 +183,40 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     callback ("I said once, in a lecture, that I was afraid of us. I was being polite.") still fits.
 29. The first Sunday call. "The phone rang at 9:40 on Sunday, because it always rang at 9:40 on Sunday." becomes:
     "The phone rang at 9:40 on Sunday because it always rang around 9:40 every Sunday. That was church time."
-    OPEN: the book has this call at 9:40 at night. The next line says "She called when her day ended", and Chapters
-    15, 18 and 31 say "At 9:40 that night"; Chapter 24 has him call from the stove-room gathering, which runs past
-    eleven. "Church time" reads as morning. Morning or night?
+    CT decided: the Sunday call is in the MORNING, and the other chapters change to match (edit 30).
+30. The Sunday 9:40 call moves to the morning everywhere (CT: "morning, change the other chapters to match"). Every
+    change below is CALLED by Claude to make that true; CT's only fixed point is 9:40 Sunday morning, church time.
+    - Ch 3: "She called when her day ended, whether she had seen him that week or not." becomes "She called on her
+      way out the door, whether she had seen him that week or not." (The radio, the running water and the pot she
+      never let anyone else wash still fit: breakfast dishes before church.)
+    - Ch 13: his text "Working late. All good. Love you" becomes "Working. All good. Love you" (it's Sunday
+      morning; Ch 31 already quotes it as "Working. All good.").
+    - Ch 15, the habit while he lives in the truck: "At 9:40 that night, back under the sycamore, the phone did not
+      ring." becomes "That Sunday at 9:40, before he drove down, the phone did not ring. He sat under the sycamore
+      and watched it not ring." The rest stays ("Then he played the voicemail. After that he did it every week.").
+    - Ch 15, arranging the calls before he goes north: "Sundays," he said. "Nine-forty at night. I'm going to call.
+      Could you just hold it by her ear?" becomes "Nine-forty in the morning. I'm going to call. Could somebody
+      just hold it by her ear?" (The night aide is still the one he asks; she reappears in Ch 37, so she stays.)
+    - Ch 17: "The night aide held the phone by his mother's ear." becomes "The aide held the phone by his mother's
+      ear."
+    - Ch 18: "At 9:40 that night he called the place with the rose garden" becomes "At 9:40 he called the place with
+      the rose garden" (Marta came by at eight that morning and soup is at noon, so 9:40 sits between them). "The
+      night aide held the phone" becomes "The aide held the phone", and "that was all for tonight, honey" becomes
+      "that was all for today, honey".
+    - Ch 22: "The night before, at 9:40, he called the rose garden." becomes "The day before, at 9:40, he called the
+      rose garden." "She's been looking at that door all day" becomes "all morning", and "Her Sunday company didn't
+      come." becomes "Her Sunday company didn't come last week." (David signs in at 10:15 on Sundays, after the
+      call, so it has to be last week's visit Ray never made.)
+    - Ch 24, the first fire in the stove room: "It was a Sunday. At 9:40 he stepped out under the eave and called the
+      rose garden." becomes "It was a Saturday. The next morning at 9:40 he stepped out under the eave and called the
+      rose garden." (The gathering runs past eleven at night.) "He wrote it in the notebook before he went back in."
+      stays.
+    - Ch 31: "At 9:40 that night he called the rose garden." becomes "On Sunday at 9:40 he called the rose garden."
+      and the paragraph after the call, "In the morning it was the first of the month, the day for the pit.",
+      becomes "The next morning was the first of the month, the day for the pit."
+    - No change needed: Ch 7 (she's doing dishes; fine in the morning), Ch 13 voicemail "Sunday, 9:41", Ch 24's
+      "The next Sunday at 9:40", Ch 25 ("Elijah called him on Sundays, after his mother"), Ch 37 (the night aide
+      and the lamp that "talks to her at night").
 
 ## Claude's calls (2026-11-25)
 

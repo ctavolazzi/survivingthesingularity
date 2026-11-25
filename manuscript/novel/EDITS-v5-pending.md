@@ -726,10 +726,18 @@ at 9:40 he stepped out under the eave" and "The next Sunday at 9:40 the aide sai
      > Elijah's shoulders dropped a little.
      >
      > "You're a good engineer," she said. "I mean it. I just want you to spend a little more time making this feel
-     > more like us than like Claypot. Parts from the drawer, parts from the hardware store, and nothing your
-     > neighbor can't fix with the tools he already owns."
+     > more like us than like Claypot."
+     >
+     > Marta hooked the bottom drawer of the parts cabinet with her boot and slid it open. It rattled. Resistors in
+     > envelopes, a coil of wire, a coffee can of old relays.
+     >
+     > "Parts from the drawer," she said. "Parts from the hardware store, and nothing your neighbor can't fix with
+     > the tools he already owns."
 
-     Then "That'll be uglier," Elijah said. as before.
+     Then "That'll be uglier," Elijah said. as before. CT, on the first version: "split that up right there" after
+     "more like us than Claypot," with action ("what is she doing with her body?") and her name again so the reader
+     remembers who is talking. The drawer action is Claude's (her boot, not her hand: her bad shoulder); it shows
+     the drawer she is talking about. Nothing in it the hardware store supplies later (the screw terminals).
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

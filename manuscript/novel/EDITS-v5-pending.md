@@ -8,7 +8,28 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 
 ## New edits (from 87)
 
-None yet.
+Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude's.
+
+### Chapter 17: Twice Certified
+
+87. The opening line, "For three weeks nobody asked him anything.", becomes:
+
+    > For three days, no one really asked him anything. They let him settle. They fed him. They had discussions
+    > about him behind closed doors, and he caught pieces of them through the wall of the kitchen trailer.
+    >
+    > "He looks thin."
+    >
+    > "Is he eating?"
+    >
+    > "Are we really sure this is a good idea?"
+    >
+    > "Do you actually believe he's just some guy who made a video or two?"
+
+    Then "He had a cot in the room over the pump house..." as before. [CT: three days, they let him settle, they fed
+    him, discussions behind closed doors, and the four lines. Claude: "and he caught pieces of them through the wall
+    of the kitchen trailer", so the reader hears them from where Elijah is.] Left as is: "three weeks after he
+    picked up the broom" at his first Friday dinner, a few paragraphs on; the co-op talked about him for three days,
+    and he still waited three weeks for Friday.
 
 How to read it:
 

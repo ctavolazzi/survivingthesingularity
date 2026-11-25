@@ -15,13 +15,33 @@ Where the files are: [`BRIDGE.md`](BRIDGE.md), or the Drive page "sts-bridge: re
 
 ## Working now
 
-**CT is making his own final pass in "StS Final Draft v4 Surviving the Singularity"** (Nov 23, evening).
-He types in it. **Do not place suggestions or edits in v4 during his pass unless he asks for one in so
-many words.** If he does ask, read the Doc fresh first and go through the bridge.
+**CT is making his own hand pass in "StS v5 draft (Nov 23)"** (from Nov 24, evening). His words: "my
+next step is going to be going through manually reading the whole thing, manually editing and
+changing anything that I don't want or that I'd like to change myself." **Do not place suggestions or
+edits in v5 during his pass unless he asks for one in so many words.** If he does ask, read the Doc
+fresh first and go through the bridge.
+
+**"StS Final Draft v4 Surviving the Singularity" is the untouched fallback. Do not edit it.**
 
 No Claude session has a task open.
 
-## The state of the book (Nov 23, 3:50 PM)
+## The state of the book (Nov 24, end of day)
+
+- v5 holds the whole book: 53 headings (the Author's Note, Chapters 0 to 39, four acts, four
+  Meanwhiles, the Epilogue, About This Book, the Afterword and the Appendix), 3,615 paragraphs, 19
+  pictures, 78 scene breaks.
+- No suggestions are waiting in it. No em or en dashes. Straight quotation marks, on his rule.
+- It was read whole, line by line, on Nov 24 after the final edit: 16 edits to the words and 60
+  italic ranges, each on his yes, then four changes to Lou in Chapter 35 and a last set in Chapters 19, 31, 33, 38 and 39, on his word.
+  The list is in
+  `manuscript/NOVEL-PROCESS-2026-11-23.md`, section 9.
+- The checker in `manuscript/tools/final-check/` passes: 93 checks, none failed. Its self-test
+  planted 21 faults and caught all 21.
+- The Character Bible (Drive, and `manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md`) has every
+  character, checked against v5.
+- Verdict given to CT: nothing more for a Claude session to do before his own pass.
+
+## v4 as it stood on Nov 23, 3:50 PM (now the fallback)
 
 - v4 holds the whole book: 47 sections, 83,564 words, 19 pictures each with a caption.
 - No suggestions and no comments are open in it.
@@ -68,20 +88,45 @@ What v4 has that v3 did not:
 - CT rejected the tracked suggestions as records and put the changes he wanted into the text
   himself. The text is what counts.
 
+## Settled on Nov 24. Do not reopen these
+
+- Chapter 38: Grace sings "The Weight" with the amp off. She does not play. Elijah does not hear the song.
+- Chapter 39: the number Elijah does not call is Ruby's. He turns Wes down for now.
+- Chapter 37: "Instead he changed the name to Don't." Chapter 19: "Immediately the vibe shifted."
+  stays cut.
+- Melody flies in from Miami and signs the visitor book "M. Madrone". Ray's Sundays in that book go
+  back to the first spring.
+- The amp rides on the floor of the truck with the seat belt through its handle.
+- Yvonne is Denny's wife. The Architect is Nadzieja Czekaj. The stove is Walt's.
+- Lou calls Elijah "Ivy League", "professor", "Thoreau" and "son". Nobody says "college" (this
+  replaces the Nov 23 line above). Marta calls him "spreadsheet". Frank says "bud".
+- No "never once" in narration. "Hand flat" only for Elijah's madrone, the amp and the pit, and
+  Patricia's binder.
+- The locked lines are listed in `manuscript/NOVEL-PROCESS-2026-11-23.md`.
+
 ## Still open, and CT's to call
 
+- (Closed Nov 25: the two held lines in Chapter 36 stay as written, his call. The Chapter 8 title
+  "Elijah Madrona" stays.)
+- Chapter 39: the stream cuts from the prayer straight to Grace's face.
+- The parade joke (Chapters 19 and 25), a "looked at" pass on Chapters 15 and 17, and the repeats
+  "forty", "nine days" and "like a kid".
+- The Afterword's United Nations quotation matches the UN page by web search. The page itself was
+  not opened.
 - The facts in Chapter 33 have not been source-checked, old or new.
-- The contents page says "Afterword" and "Appendix" where the headings carry their full titles.
+- (Closed Nov 24: the contents list now matches all 53 headings.)
 - Pictures in or out of the Amazon edition. He has not answered.
 - The Drive Doc "StS v4: Editor's Letter and Readiness Audit (Nov 23)" lists more calls. They are
   optional, and some describe text that has changed since that morning.
 
 ## Next, when CT says go (in this order)
 
-1. **After his pass: run the preflight again** on a fresh read.
-2. **Build the Kindle file from v4** and check it against the Doc. The build must turn the 72
-   blank-line scene breaks into a visible mark, make the quotation marks curly, add a copyright page,
-   and take the 19 captions out if the pictures come out.
+1. **After his pass: run the preflight again** on a fresh read, with groups C to F and I of
+   `manuscript/tools/final-check/verify_v5.py`.
+2. **Build the Kindle file from v5** and check it against the Doc. The build must turn the 78 scene
+   breaks (each a paragraph holding one non-breaking space) into a visible mark, add a copyright
+   page, and take the 19 captions out if the pictures come out. Curly quotation marks are a choice
+   for the build; in the Doc the straight ones stay.
 3. **Amazon (KDP)**: a Kindle ebook needs no ISBN. A first book cannot be a pre-order with
    Thanksgiving as release day (the final file is due 5 days before), so publish directly; review
    takes up to 72 hours. The answer to Amazon's question about AI is his.
@@ -95,6 +140,14 @@ What v4 has that v3 did not:
 
 ## Done
 
+- **Nov 24, later**: v5 read whole; 16 edits and 60 italic ranges applied on CT's yes; the checker
+  and its self-test written and run; the Character Bible corrected and completed (27 entries and the
+  minor characters); the process file, the map, this page and the Drive bridge page brought up to
+  date. Left alone on his instruction: v4, the Drive Canon record, the Change log and the Story
+  Structure article.
+- **Nov 24, early**: v5 copied from v4; six project scenes, the polish passes, the Chapter 25
+  exchange, the nicknames, Grace's beats, his calls on the ending and the Epilogue. The record is
+  `manuscript/NOVEL-PROCESS-2026-11-23.md` and `manuscript/NOVEL-CANON-AND-CHANGE-RECORD.md`.
 - **Nov 23, afternoon**: preflight written and run twice; two gaps closed; this page and the map
   brought up to date and pushed; the Drive bridge page remade.
 - **Nov 23, morning**: all 46 sections of v4 read for the Editor's Letter (124 quoted lines checked);

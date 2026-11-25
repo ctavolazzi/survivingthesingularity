@@ -116,5 +116,5 @@ C=[
 (108,"Ch 17",["\"I was just asking him if he wanted to play.\"","He will play when he's ready. We cannot force the music out of him.","I'm gonna go see if Marta needs any help.","\"You do that,\" he said."],[]),
 (109,"Ch 17",["\"You don't owe us a work day,\" he told her.","I thought I was here to contribute.","\"You are,\" Grace said. \"And you do.\"","Curtis, I said not now."],["They got to the kitchen before it closed and drove back."]),
 (110,"Ch 17",["\"Mijo, you look muy flaco. Come in, eat.\"","She reminded him of some of his extended family."],["and asked if they were hungry before they could ask her anything."]),
-(111,"Ch 17",["Curtis adjusted his weight from one foot to the other. \"So go on."],[]),
+(111,"Ch 17",["Curtis adjusted himself in the seat. \"So go on."],[]),
 ]

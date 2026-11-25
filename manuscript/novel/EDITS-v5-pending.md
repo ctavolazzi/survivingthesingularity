@@ -540,16 +540,14 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      **Open, for CT:** the touch lines and "Your knowledge earns your keep here, Elijah. That's all." are Claude's
      wording for his beats; "marketing" is his word. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
 
-111. **Chapter 17, the drive home: Curtis shifts his weight.** CT: after Curtis's line "You don't knock out a wall
-     till you know what it's holding up," "Curtis adjusted his weight from one foot to the other." (It mirrors the
-     line he just spoke.) Book now: "...You don't knock out a wall till you know what it's holding up. So go on.
-     What's your solution, then, bud?" Change to [CT's sentence, verbatim]:
+111. **Chapter 17, the drive home: Curtis adjusts himself in the seat.** CT: after Curtis's line "You don't knock
+     out a wall till you know what it's holding up," he adjusts his body, mirroring the line he just spoke. CT first
+     said "from one foot to the other"; Curtis is driving the truck, so CT settled it: "he should just sort of adjust
+     himself in the seat." Book now: "...You don't knock out a wall till you know what it's holding up. So go on.
+     What's your solution, then, bud?" Change to [Claude's wording for CT's instruction]:
 
-     > ... You don't knock out a wall till you know what it's holding up." Curtis adjusted his weight from one foot
-     > to the other. "So go on. What's your solution, then, bud?"
-
-     **Open, for CT:** Curtis is driving when he says it (the truck, "downshifted for the grade"), so "from one foot
-     to the other" would be on the pedals. Logged as CT said it until he decides.
+     > ... You don't knock out a wall till you know what it's holding up." Curtis adjusted himself in the seat. "So
+     > go on. What's your solution, then, bud?"
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

@@ -453,6 +453,10 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     Then "Hey, if you're ever in the city, give me a call. I'd love to do this again." as before. (The earlier offer
     was triple his Claypot pay of one-forty, so about $420,000; half a million is more.)
 
+### Meanwhile (the second one, after Chapter 10: Bidwell and his reader)
+54. "Half of it believes him. The other half made a song about him." becomes "Half of it believes him. The other half
+    is laughing at a song about him." ("He was at the dinner. He didn't sit down." follows as before.)
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

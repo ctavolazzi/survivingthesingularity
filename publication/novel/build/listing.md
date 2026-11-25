@@ -13,15 +13,9 @@ Copy and paste from here into the KDP setup pages. Numbers are filled in by the 
 
 ## Description
 
-**The night Elijah Madrone ended three careers, he was drinking a free beer and trying to teach himself JavaScript.**
+The approved back cover copy:
 
-It is late 2022. Elijah is a farm kid turned musician turned self-taught data guy. At his hometown bar he shows three realtors what the new AI can do. He thinks he is handing them a telescope. One week later they buy him a round to say thanks: they have let three people go.
-
-Eleven months after that toast, Elijah is laid off too. He loses the job, then the family farm, and spends five months living in his truck. Then he drives eight hundred miles north to a co-op of nineteen households in the orchard country of central Washington, where people make what they can't afford to buy and fix what gets thrown away. They are not impressed by him. Some of the people who tell him he's wrong are right.
-
-*Surviving the Singularity* is a solarpunk novel about the years between the first chatbot and the first machine that asks. It is about who gets paid, who gets asked, and what a neighbor is for. There is a kitchen, a shed, a long plywood table, and one question:
-
-*If a robot can grow my food and build my house, why am I still renting my survival?*
+{{BACK}}
 
 ## Keywords (7)
 
@@ -45,7 +39,7 @@ Eleven months after that toast, Elijah is laid off too. He loses the job, then t
 
 ## Back cover
 
-{{BACK}}
+Same text as the description above, set on the cover with the author photo, two lines about the author and the barcode box.
 
 ## Paperback settings
 

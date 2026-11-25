@@ -438,20 +438,42 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 ### Chapter 10: Frozen Peas
 52. On the fire escape with Ruby: "It tasted like the best night of his twenties." becomes "It tasted like the best
     nights of his twenties."
-53. Ruby ups the offer as Elijah leaves. After "It's downstairs. They moved it." the next lines become (CT's line is
-    "How about half a mill?"; "Elijah started for the door." and "Elijah smiled and shook his head." are Claude's):
+53. Ruby ups the offer as Elijah leaves (CT's beats and lines; narration wording is Claude's except where noted).
+    From "It's downstairs. They moved it." through "The truck was at the curb with a full tank. He hadn't asked for
+    that either." the scene becomes:
 
     > "It's downstairs. They moved it."
     >
-    > Of course they had. Elijah started for the door.
+    > Of course they had. Ruby walked him to the elevator in his socks. He stood there with his hands in the hoodie
+    > pocket while they waited for it.
     >
     > "How about half a mill?"
     >
-    > Elijah smiled and shook his head. Ruby walked him to the elevator in his socks. He stood there with his hands
-    > in the hoodie pocket while they waited for it.
+    > "Nah. I'm sorry."
+    >
+    > "The full million?"
+    >
+    > Elijah froze. He was really standing there. He was being offered a million dollars, on the spot, just to
+    > exist.
+    >
+    > "Ruby, I really appreciate it, but I really should be going."
+    >
+    > "Suit yourself, man. Hey, if you're ever in the city, give me a call. I'd love to do this again."
+    >
+    > He took Elijah's phone out of his hand and thumbed the number in himself, fast, and handed it back. He meant it.
+    > A man like Ruby had people to do that for him.
+    >
+    > "Yeah," Elijah said. "No, yeah. For sure."
+    >
+    > The doors closed on him standing in all that white.
+    >
+    > Elijah walked out to his truck, having just turned down retirement. It was at the curb with a full tank. He
+    > hadn't asked for that either.
 
-    Then "Hey, if you're ever in the city, give me a call. I'd love to do this again." as before. (The earlier offer
-    was triple his Claypot pay of one-forty, so about $420,000; half a million is more.)
+    Kept from the book: the elevator, socks and hoodie, "if you're ever in the city" (CT likes it), the phone, "Yeah.
+    No, yeah. For sure." and the doors closing. "Half a mill" is the words, not a number: the first offer was triple
+    his $140,000, about $420,000, so half a million is a casual $80,000 bump.
+
 
 ### Meanwhile (the second one, after Chapter 10: Bidwell and his reader)
 54. "Half of it believes him. The other half made a song about him." becomes "Half of it believes him. The other half

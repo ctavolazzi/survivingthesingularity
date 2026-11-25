@@ -902,6 +902,16 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     who told David. Manny is at the farm that morning, lives next door, and David already knows him ("Manny's always
     right" in Ch 7).]
 
+82. The last line of the chapter jumps from the rose garden to the farmhouse. "He left the key to the house on its
+    kitchen table, on top of the mail." becomes a new paragraph:
+
+    > Friday morning, he said goodbye to his childhood home, and to what he had always assumed would be his
+    > inheritance. Everything he'd taken for granted. For some reason, all the tears he'd cried there were unavailable
+    > to him now. Elijah simply laid the house key down on the kitchen table and allowed the door to lock behind him.
+
+    [CT. Claude: "Friday morning," as the opening (CT dictated "Friday. Morning."), "now" for "in that moment", and
+    "previously" dropped after "cried there". The tears are the ones from edit 79.] Chapter 14 follows as before.
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

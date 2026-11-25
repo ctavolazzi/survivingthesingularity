@@ -189,8 +189,7 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     - Ch 3: "She called when her day ended, whether she had seen him that week or not." becomes "She called on her
       way out the door, whether she had seen him that week or not." (The radio, the running water and the pot she
       never let anyone else wash still fit: breakfast dishes before church.)
-    - Ch 13: his text "Working late. All good. Love you" becomes "Working. All good. Love you" (it's Sunday
-      morning; Ch 31 already quotes it as "Working. All good.").
+    - Ch 13: see edit 31 (this one call stays at night, on purpose).
     - Ch 15, the habit while he lives in the truck: "At 9:40 that night, back under the sycamore, the phone did not
       ring." becomes "That Sunday at 9:40, before he drove down, the phone did not ring. He sat under the sycamore
       and watched it not ring." The rest stays ("Then he played the voicemail. After that he did it every week.").
@@ -217,6 +216,17 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     - No change needed: Ch 7 (she's doing dishes; fine in the morning), Ch 13 voicemail "Sunday, 9:41", Ch 24's
       "The next Sunday at 9:40", Ch 25 ("Elijah called him on Sundays, after his mother"), Ch 37 (the night aide
       and the lamp that "talks to her at night").
+31. One call comes at night, as the first sign something is off with his mother (CT's idea: she thinks it's morning,
+    but it's evening). CALLED by Claude: the call in Chapter 13, the Sunday before her stroke, the one he doesn't
+    answer. Her voicemail is the last whole sentences she ever says to him, so the wrong hour lands there.
+    - Ch 13: "On Sunday at 9:40 the phone rang on the dash. He watched it until it stopped." becomes "On Sunday the
+      phone rang on the dash at 9:40 at night. She always called in the morning. He watched it until it stopped."
+      His text stays "Working late. All good. Love you", which fits at night.
+    - Ch 13: "There was one voicemail, from Sunday, 9:41." becomes "There was one voicemail, from Sunday, 9:41 p.m."
+    - Ch 14, the voicemail: "Hi, baby. I watched your video." becomes "Morning, baby. I watched your video." The rest
+      of the voicemail stays as it is.
+    - Ch 15 ("That Sunday at 9:40, before he drove down, the phone did not ring.") stays morning: after the stroke
+      he waits at her usual time.
 
 ## Claude's calls (2026-11-25)
 

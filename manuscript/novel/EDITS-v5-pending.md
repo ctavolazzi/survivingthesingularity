@@ -832,29 +832,22 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the line that weekend (edit 127 has him at the multimeter), he has been at the co-op longest, and not Tyler,
      who is new and has no history with Reuben.
 
-131. **Chapter 19, the second design: Elijah uses an AI, and the shop argues about it.** CT (25 Nov): Elijah uses
+131. **Chapter 19, the second design: Elijah finds an AI that lays out circuit boards.** CT (25 Nov): Elijah uses
      the new AI to help design the controller. Context from CT, NOT for the page: this is a chance to talk about
      local AI, but skip it, "that's a fucking can of worms ... Book's already long enough." His beats: research turns
      up a startup out of Iowa with an AI PCB designer; it sends him down a rabbit hole where he feels lost; he comes up
      for air and asks "do I actually need to know all this?"; he remembers his training, the MVP, minimum viable
      product, and gets to work. Context from CT, NOT for the page: "it's obviously like character development, this
-     is growth." Then: somebody asks how he turned it around so fast; "I've found an AI that helps"; Priya: "man, I
-     hate that AI crap. How do you even know it's trustworthy?"; Elijah: "I didn't just press a button and throw
-     caution to the wind. I did my research. I checked the design. It looks good to me."; Curtis: "yeah, that's what
-     they put on all the pull requests. LGTM. Nobody even reads it anymore."; the nature character: "does a tree need
-     to read its own DNA to produce fruit?"; they all look at her because it's unexpected; she looks around at
-     everybody looking at her: "What?" CT: "there's got to be like an easier, better, smoother way to write this. But
-     that's how I see it in my head." Context from CT, NOT for the page: the "What?" beat is becoming a trope in the
-     book; these are all people doing the same thing.
+     is growth."
 
      Placed at the redesign, not the first design: the MVP is the growth, and the first design (four layers, Swiss
      sensors, sealed in resin) is the opposite of one, so it belongs after Marta's "Ugly means the next guy can see
      how it works."
 
-     **Change 1.** Book now: "So he designed it again. The second version was a Raspberry Pi the regional supplier
-     had in stock..." The sentence "So he designed it again." becomes [CT's beats; Claude's wording, except "a
-     startup out of Iowa", "came up for air", "Did he actually need to know all this?" and "He remembered his
-     training", which are CT's]:
+     Book now: "So he designed it again. The second version was a Raspberry Pi the regional supplier had in
+     stock..." The sentence "So he designed it again." becomes [CT's beats; Claude's wording, except "a startup out
+     of Iowa", "came up for air", "Did he actually need to know all this?" and "He remembered his training", which
+     are CT's]:
 
      > So he designed it again, and this time he went looking for help. A startup out of Iowa had an AI that laid
      > out circuit boards. He spent an evening with it, and then another. Every answer opened three more questions,
@@ -867,41 +860,15 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Then "The second version was a Raspberry Pi..." and that paragraph as before.
 
-     **Change 2.** After that paragraph ("...Cut the problem in half and ask which half it's in.") and before the
-     scene break and "The cases came from a kid named Tyler.", add [CT's lines; the tags, "Priya made a face" and
-     Denny as the one who asks are Claude's]:
+     **Cut by CT (25 Nov): the shop's argument about it.** First logged here as a second change: Denny asking how he
+     turned it around so fast, Priya's "I hate that AI crap", Elijah's "It looks good to me", Curtis's "LGTM", Grace's
+     "Does a tree need to read its own DNA to produce fruit?" and "What?". Claude pointed out that the chapter already
+     has that argument a few pages later, when Tyler says he used Rod Code and Patricia asks "how many people in this
+     shed can read what it wrote?" CT: "I think we should cut it. He should find the PCB AI designer, but not that
+     conversation shouldn't happen until the [Rod Code] conversation." Do not add it. The wording is in git history.
 
-     > "How did you turn this around so fast?" Denny said.
-     >
-     > "I found an AI that helps."
-     >
-     > Priya made a face. "Man, I hate that AI crap. How do you even know it's trustworthy?"
-     >
-     > "I didn't just press a button and throw caution to the wind," Elijah said. "I did my research. I checked the
-     > design. It looks good to me."
-     >
-     > "Yeah, that's what they put on all the pull requests," Curtis said. "LGTM. Nobody even reads it anymore."
-     >
-     > "Does a tree need to read its own DNA to produce fruit?" Grace said.
-     >
-     > Everybody looked at Grace. She looked around at all of them looking back.
-     >
-     > "What?"
-
-     "LGTM" is left unexplained on purpose: Elijah's "It looks good to me" one line earlier spells it out.
-     The tree line is Grace's (CT, 25 Nov: "Grace, give the line to Grace."). CT named "the nature character" (Wren),
-     but the reader doesn't meet her until Chapter 20 ("That was Wren, who led the Sunday circle..."). Lou was
-     logged first, then CT changed it to Grace.
-
-132. **Chapter 19, right after edit 131: Priya comes around.** CT: "Then they can have a little micro discussion about
-     it where it's like, no, she's right, Priya will say. I mean, I don't know how my own mind functions physically,
-     but I don't know how my own body functions physically, but I use it every day." (He restated "mind" as "body"
-     while dictating; the last version is kept.) After the "What?" of edit 131 and before the scene break and "The
-     cases came from a kid named Tyler.", add [CT's words; the tag is Claude's]:
-
-     > "No, she's right," Priya said. "I don't know how my own body functions physically, but I use it every day."
-
-     The tree line is Grace's (edit 131), so CT's "she's right" stands as he said it.
+132. **Cut by CT (25 Nov), with the argument in edit 131.** It was Priya's "No, she's right ... I don't know how my
+     own body functions physically, but I use it every day." Not in the book. The number is not reused.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

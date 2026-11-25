@@ -86,7 +86,7 @@ def main():
                "", "Totals: " + ", ".join(f"{k}: {v}" for k, v in sorted(counts.items())) + ".", "",
                "The edits themselves, with CT's words, are in `EDITS-v5-pending.md`. Row 90 in `checks.py` is the",
                "follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as \"follow-ups\".",
-               "Edit 57 was never used.", "",
+               "Edit 57 was never used. Edit 132 was cut by CT.", "",
                "| Edit | Where | Status | Checked for |", "|---|---|---|---|"]
         for n, where, st, key in rows:
             label = "follow-ups" if where == "follow-ups" else str(n)

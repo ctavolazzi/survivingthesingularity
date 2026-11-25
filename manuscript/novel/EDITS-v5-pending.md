@@ -107,18 +107,31 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     Devendra at the good coffee machine, watching the drip like it owed him money."
 24. The Devendra exchange that follows. Devendra notices Elijah is rattled, asks like a concerned supervisor, and
     shows his thick skin. After "The sticky note was still on the side of it.", replace the exchange from "Good
-    quarter," Devendra said... through "You did," Devendra said. "And you took the bonus." with (CT's lines; the
-    tags and "He rinsed his cup." placement are mine; "went back to his desk" is kept from the book):
+    quarter," Devendra said... through "He rinsed his cup and went back to his desk." with (CT's lines and beats;
+    the tags and the sentence about the room thinning are mine):
 
     > Devendra looked at him. "You doing okay? You look a little rattled."
     >
     > "Well, I just had a weird exchange with that woman who spoke."
     >
     > "Don't mind people like that," Devendra said. "People like that have always existed. Luddites. They'll come
-    > around. They always do." He rinsed his cup. "And if they don't, then, well, maybe she should start looking for
-    > another job."
+    > around. They always do. And if they don't, then, well, maybe she should start looking for another job."
     >
-    > He went back to his desk.
+    > "Yeah, but don't we have a responsibility to caretake the rollout? Mitigate some of these effects?"
+    >
+    > "Why?"
+    >
+    > They looked at each other for a second. Behind them the commons was thinning out, people drifting back toward
+    > their desks.
+    >
+    > "What do you mean, why?"
+    >
+    > "I'm not their dad. You're not their mom." Devendra slapped him on the shoulder. "Man. You did a good thing
+    > contributing to this. I'm really proud of you. We're going to change the world."
+    >
+    > Then he turned around and walked away.
+    >
+    > Elijah was left with a pit in his stomach.
 
     OPEN: this cuts the enclosure lines (the commons, the hedges, "That's the hedge. I helped plant it.") and "And you
     took the bonus." entirely. Keep any of them?

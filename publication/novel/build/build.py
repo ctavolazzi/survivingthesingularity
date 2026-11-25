@@ -684,6 +684,24 @@ def default_source():
     die("give the manuscript path: build.py path/to/manuscript.docx")
 
 
+def edit_gate(source, accept, skip, cover_only):
+    """Stop the build unless every edit in manuscript/novel/EDITS-v5-pending.md is in the source.
+
+    Uses manuscript/tools/edits-v5/verify.py. A Google Docs JSON read must show every edit accepted, or at
+    least suggested when building with --accept-suggestions. A .docx cannot be checked, so it needs
+    --skip-edit-gate. Cover-only builds are not gated."""
+    if skip or cover_only:
+        return
+    verify = Path(__file__).resolve().parents[3] / "manuscript/tools/edits-v5/verify.py"
+    if not str(source).endswith(".json"):
+        sys.exit("Edit gate: only a Google Docs JSON read can be checked against the v5 edit list. "
+                 "Build from a fresh read_doc JSON, or pass --skip-edit-gate.")
+    r = subprocess.run([sys.executable, str(verify), str(source), "--require",
+                        "present" if accept else "accepted"])
+    if r.returncode:
+        sys.exit("Edit gate: not every v5 edit is in the source (see NOT READY above). Nothing was built.")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("source", nargs="?", help=".docx or Google Docs JSON (default: newest file in ../source/)")
@@ -691,6 +709,8 @@ def main():
     ap.add_argument("--no-check", action="store_true")
     ap.add_argument("--accept-suggestions", action="store_true",
                     help="Google Docs JSON only: build as if every pending suggestion were accepted")
+    ap.add_argument("--skip-edit-gate", action="store_true",
+                    help="build even if the v5 edit list is not all in the source (not for release)")
     a = ap.parse_args()
     global ACCEPT_SUGGESTIONS
     ACCEPT_SUGGESTIONS = a.accept_suggestions
@@ -698,8 +718,10 @@ def main():
     want = lambda k: only is None or k in only
 
     OUT.mkdir(exist_ok=True)
+    source = a.source or default_source()
+    edit_gate(source, a.accept_suggestions, a.skip_edit_gate, a.only == "cover")
     prepare_cover()
-    model = ingest(a.source or default_source())
+    model = ingest(source)
     base = f"{CFG['slug']}-{CFG['version']}"
     full, sample = model["sections"], sample_sections(model)
     specs = {}

@@ -6,6 +6,13 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 2026-11-25 against a fresh read of the Doc; the edit-by-edit record is `EDITS-v5-applied.md`. New edits start at
 87 and go in "New edits" below. The publication files (`publication/novel/build/build.sh`) have not been rebuilt.
 
+**So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
+`python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md` on a fresh
+read of the Doc after every step; `EDITS-v5-status.md` is the one table of where each edit stands. The build
+refuses to run unless every edit passes. A copy of this list lives in Google Drive as "StS v5 edit list (mirror of
+GitHub)" (https://docs.google.com/document/d/1XRD8m-UJXxFkrJS0qqkuE1ftrsm_p9XzLSkWkAcqghA); refresh it when this
+file changes. Each new edit gets a check row when it is logged.
+
 ## Character notes from CT (context, not for the page)
 
 - Elijah, 2026-11-25: "It makes sense that people think he's just some punk-ass rich kid with a bone to pick with

@@ -562,12 +562,25 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     end."
 
 65. Gus's pitch for the show. He plays his cards too soon (CT: "Nobody would do that if they're trying to sell
-    somebody on an idea"). Cut the paragraph right after the pitch: He kept his eyes on the road. "Truth is, I've
-    got a shop full of arms nobody wanted and a bus with nobody in the other seat. I'm tired of driving it alone."
-    The pitch then ends on "I'll fly you out to the shop next week. Let's do it." and goes straight to "It was a
-    good idea. Elijah could see it." [CT's call; Claude chose to cut the whole paragraph. Nothing later depends on
-    it. It is the only place Gus admits he is lonely; if CT wants that kept, it would have to come after Elijah
-    says no, not before.]
+    somebody on an idea"), so the admission moves to after Elijah says no.
+    - Cut from the pitch: He kept his eyes on the road. "Truth is, I've got a shop full of arms nobody wanted and a
+      bus with nobody in the other seat. I'm tired of driving it alone." The pitch ends on "I'll fly you out to the
+      shop next week. Let's do it." and goes straight to "It was a good idea. Elijah could see it."
+    - After Elijah's no and "Elijah braced. He figured the air would change...", Gus's reply "Your choice," Gus
+      said. "I can't force you to do it." becomes:
+
+      > "Yeah, I figured," Gus said. "Thought I'd ask, though." He kept his eyes on the road. "Truth is, I got a
+      > bunch of arms nobody wants, and I'm just tired of driving alone. If you ever do want to, though, I'll give
+      > you my number."
+
+    - Then "Gus reached over and turned the radio up a little..." as before. At the dock he writes the number on the
+      gas receipt, as in the book, and that pays off the promise.
+
+    [CT's lines; "tired of driving alone" for his dictated "driving along". Claude: "Gus said", "He kept his eyes on
+    the road" (moved from the cut paragraph), and "I'll give you my number" as the way he offers it, since he hands
+    it over at the dock. Writing context from CT, not for the page: Gus had a feeling Elijah would say no, which is
+    why he lets it slip. The chapter already counts him as billionaire number two: "Two billionaires, two phone
+    numbers."]
 
 ### Chapter 15: The Twenty, Folded Small
 

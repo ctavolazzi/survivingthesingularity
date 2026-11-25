@@ -877,9 +877,38 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      > And there was the board, where he had used one himself.
 
-     Then "He also knew a nineteen-year-old..." as before.
+     Then "He also knew a nineteen-year-old..." as before (edit 133 then varies these openings).
      (An earlier edit 132, Priya's "No, she's right ... I use it every day", was cut by CT with the argument in edit
      131. This line took the number.)
+
+133. **Chapter 19, Elijah's silence in the Rod Code scene: vary the sentence openings.** CT: "Instead of starting
+     everything with a pronoun, you gotta vary the sentence structure, bro." Then, of the book's own sentences in these
+     two paragraphs: "yeah, vary those too." Book now (with the $2,011.46 follow-up and edit 132 in place):
+
+     > Elijah thought they were both right. That was his excuse. He had a power bill for $2,011.46 in a box
+     > somewhere. He knew what the thing drank. And there was the board, where he had used one himself. He also knew
+     > a nineteen-year-old had just done in a night what would have taken him two weeks, and that the boxes worked,
+     > and that forty growers would get them for a price they could pay.
+     >
+     > He had helped build one of these machines. He had shown one off in a bar, and three people lost their jobs.
+     > Kelsey. Carol. Mateo. Their names had come off the realtors' website the week after the toast. He had never
+     > looked them up. He could have said any of it. He stood there with a case in one hand and a deburring tool in
+     > the other and didn't say a word, and both of them noticed.
+
+     Change to [Claude's wording; only the openings and joins change, every fact and name stays]:
+
+     > Elijah thought they were both right. That was his excuse. He had a power bill for $2,011.46 in a box
+     > somewhere, so he knew what the thing drank. And there was the board, where he had used one himself. But he
+     > also knew a nineteen-year-old had just done in a night what would have taken him two weeks, and that the boxes
+     > worked, and that forty growers would get them for a price they could pay.
+     >
+     > He had helped build one of these machines. Once, in a bar, he had shown one off, and three people lost their
+     > jobs. Kelsey. Carol. Mateo. Their names had come off the realtors' website the week after the toast, and he
+     > had never looked them up. He could have said any of it. Instead he stood there with a case in one hand and a
+     > deburring tool in the other and didn't say a word, and both of them noticed.
+
+     When it goes into the Doc: "a power bill for $2,011.46" is itself a pending suggestion (the follow-ups), so match
+     from "somewhere. He knew" onward and leave the bill's words alone.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

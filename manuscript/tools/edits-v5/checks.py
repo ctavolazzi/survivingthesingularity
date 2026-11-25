@@ -137,5 +137,6 @@ C=[
 (129,"Ch 19",["Reuben notices things. It's what makes him such a pain in the ass. But he's quite useful."],['"Reuben notices."']),
 (130,"Ch 19",["Saved our ass quite a few times,\" Lou said, from down the line."],[]),
 (131,"Ch 19",["A startup out of Iowa had an AI that laid out circuit boards.","Finally he came up for air. Did he actually need to know all this?","Then he remembered his training: the minimum viable product","With that, he got to work."],[]),
-(132,"Ch 19",["He knew what the thing drank. And there was the board, where he had used one himself. He also knew"],[]),
+(132,"Ch 19",["And there was the board, where he had used one himself."],[]),
+(133,"Ch 19",["somewhere, so he knew what the thing drank. And there was the board, where he had used one himself. But he also knew a nineteen-year-old","Once, in a bar, he had shown one off, and three people lost their jobs.","the week after the toast, and he had never looked them up. He could have said any of it. Instead he stood there"],["He had shown one off in a bar"]),
 ]

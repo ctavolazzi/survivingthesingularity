@@ -114,6 +114,6 @@ C=[
 (106,"Ch 17",["\"Can I?\"","She asked me first, Elijah thought.","his nervous system was beginning to let down its guard.","She had the amp out on the tailgate, turning it to the light"],["She had the amp out on the tailgate before he could say anything"]),
 (107,"Ch 14",["shaking it with the whole force of his body. Somehow it stayed attached.","\"I lost everything!\" He shook it again. \"Everything!!\""],[]),
 (108,"Ch 17",["\"I was just asking him if he wanted to play.\"","He will play when he's ready. We cannot force the music out of him.","I'm gonna go see if Marta needs any help.","\"You do that,\" he said."],[]),
-(109,"Ch 17",["I thought I was here to contribute.","You are, and you do.","Curtis, I said not now."],[]),
+(109,"Ch 17",["\"You don't owe us a work day,\" he told her.","I thought I was here to contribute.","\"You are,\" Grace said. \"And you do.\"","Curtis, I said not now."],["They got to the kitchen before it closed and drove back."]),
 (110,"Ch 17",["\"Mijo, you look muy flaco. Come in, eat.\"","She reminded him of some of his extended family."],["and asked if they were hungry before they could ask her anything."]),
 ]

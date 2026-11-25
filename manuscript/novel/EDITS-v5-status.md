@@ -119,5 +119,5 @@ Edit 57 was never used.
 | 106 | Ch 17 | not in the Doc | "Can I?" |
 | 107 | Ch 14 | not in the Doc | shaking it with the whole force of his body. Somehow it stayed atta... |
 | 108 | Ch 17 | not in the Doc | "I was just asking him if he wanted to play." |
-| 109 | Ch 17 | not in the Doc | I thought I was here to contribute. |
+| 109 | Ch 17 | not in the Doc | "You don't owe us a work day," he told her. |
 | 110 | Ch 17 | not in the Doc | "Mijo, you look muy flaco. Come in, eat." |

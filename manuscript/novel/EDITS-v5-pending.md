@@ -490,47 +490,53 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      **Open, for CT:** CT said "if you wanted to play"; she is talking to Lou about Elijah, so logged as "if he
      wanted to play". Lou's "I know you were." is Claude's.
 
-109. **Chapter 17, the ride-along to Rosa's: "You don't owe us a work day" (WORDING WAITING ON CT).** CT: the
-     exchange where Curtis says "You don't owe us a work day" is confusing; clean it up "to indicate who's talking
-     and what's actually happening." CT's beats, as he said them:
-     - Elijah is confused: "I'm sorry, I thought I was here to contribute."
-     - Grace: "You are, and you do." She touches him on the arm: "an electric moment for him," "a clearly
-       affectionate touch, one of the first ones he's felt in a while." Her meaning: "your knowledge earns your keep
-       here, you know, Elijah."
-     - Curtis: "Your knack for marketing is going to come in real handy."
-     - Grace scolds him: "Curtis, not now."
-     - Curtis: "What? The dude's got the gift for gab. I thought we agreed."
-     - Grace cuts it off: "Curtis, I said not now."
-     - Elijah "just felt affection, but now he's feeling doubt ... a little bit of a seed of doubt in his mind. But
-       we don't need to go into it too hard. It's just clear from the scene that something else is going on."
+109. **Chapter 17, the ride-along to Rosa's: who is talking, and the kitchen scene.** CT (25 Nov): the "You don't
+     owe us a work day" exchange is confusing; clean it up "to indicate who's talking and what's actually
+     happening." CT approved this placement: the exchange moves to the town kitchen, the one moment that day when
+     Elijah, Grace and Curtis are in the same room (at Rosa's, Grace is only on speaker). CT's beats: Elijah is
+     confused ("I'm sorry, I thought I was here to contribute"); Grace: "You are, and you do," touches his arm
+     (electric, clearly affectionate, one of the first in a while; his knowledge earns his keep); Curtis: "Your
+     knack for marketing is going to come in real handy"; Grace: "Curtis, not now"; Curtis: "What? The dude's got
+     the gift for gab. I thought we agreed."; Grace: "Curtis, I said not now." Affection, then a seed of doubt, not
+     gone into hard. Context from CT, NOT for the page: this is the first time the reader might remember Bidwell
+     ("Find out where he lands. Then put somebody near him.") and wonder if one of these people is the spy.
 
-     Book now: at Rosa's door, Rosa: "He said co-op. I can't do work days. Not now." / Curtis lowered the phone.
-     "You don't owe us a work day." Grace is not there in person; she is on Curtis's phone, on speaker.
-     Context from CT, NOT for the page: "This is the first time the reader might remember what Bidwell had said and
-     be like, oh, are one of these people the spy?" (Bidwell, in the Meanwhile: "Find out where he lands. Then put
-     somebody near him.") The doubt Curtis's slip plants should let that thought arrive on its own.
+     **Change 1, at Rosa's door.** Book now: "Curtis lowered the phone. "You don't owe us a work day."" Change to
+     [tag only, Claude's]: Curtis lowered the phone. "You don't owe us a work day," he told her.
 
-     **Open, for CT:** where Grace is when she touches his arm (see the question in chat, 25 Nov).
+     **Change 2, replace "They got to the kitchen before it closed and drove back."** with [CT's lines; the joining
+     words, and the last two lines, are Claude's]:
 
-110. **Chapter 17, Rosa at the door: she says "mijo" out loud.** CT: before the book says she called them mijo,
-     "she needs to say the word mijo": "Mijo, you look muy flaco. Come in, eat." She "reminds him of some of his
-     extended family. And we don't need to go into that. We can just leave it there." Context from CT, not for the
-     page: "now we're demonstrating the cross-cultural power of the farm"; Marta contributes to Elijah's recovery,
-     and so does Rosa.
-
-     Book now: "Rosa opened the door with her left hand and a smile that took in both of them, and asked if they
-     were hungry before they could ask her anything. Her right wrist was in a brace." Change to [CT's lines; the
-     joining words are Claude's]:
-
-     > Rosa opened the door with her left hand and a smile that took in both of them. She looked at Elijah.
+     > They got to the kitchen before it closed. Grace was at the pass with a clipboard. While Curtis loaded the
+     > right container into the cooler, Elijah stayed where he was.
      >
-     > "Mijo, you look muy flaco. Come in, eat."
+     > "Can I ask you something? At Rosa's, Curtis told her she didn't owe us a work day." He heard how it sounded.
+     > "I'm sorry. I thought I was here to contribute."
      >
-     > She reminded him of some of his extended family.
+     > "You are," Grace said. "And you do." She touched his arm.
      >
-     > Her right wrist was in a brace.
+     > It went through him like current. It was a plain, warm, affectionate touch, and it was one of the first he'd
+     > felt in a long while. He didn't move, in case it stopped.
+     >
+     > "Your knowledge earns your keep here, Elijah. That's all."
+     >
+     > "Your knack for marketing is going to come in real handy," Curtis said from the cooler.
+     >
+     > Grace didn't turn around. "Curtis. Not now."
+     >
+     > "What? The dude's got the gift for gab. I thought we agreed."
+     >
+     > "Curtis, I said not now."
+     >
+     > Curtis shut the cooler lid. Nobody said anything else. The warm place on Elijah's arm stayed warm, but
+     > something behind it had gone quiet.
+     >
+     > They drove back.
 
-     The later line "She called them both mijo, Curtis included, who had twenty years on her." stays.
+     Then "Rosa checked the containers..." as before. Rosa's "mijo" (edit 110) comes right after the doubt.
+     **Open, for CT:** the touch lines and "Your knowledge earns your keep here, Elijah. That's all." are Claude's
+     wording for his beats; "marketing" is his word and the book has not set up Elijah's marketing yet, so check it
+     reads. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

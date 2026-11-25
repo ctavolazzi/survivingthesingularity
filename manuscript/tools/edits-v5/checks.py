@@ -136,7 +136,7 @@ C=[
 (128,"Ch 19",["Reuben had spent thirty years as a title officer at the county"],["came in with it. He looked too pleased with himself"]),
 (129,"Ch 19",["Reuben notices things. It's what makes him such a pain in the ass. But he's quite useful."],['"Reuben notices."']),
 (130,"Ch 19",["Saved our ass quite a few times,\" Lou said, from down the line."],[]),
-(131,"Ch 19",["A startup out of Iowa had an AI that laid out circuit boards.","Finally he came up for air. Did he actually need to know all this?","Then he remembered his training: the minimum viable product","With that, he got to work."],[]),
+(131,"Ch 19",["and this time he started the old way.","A startup out of Iowa had an AI that laid out circuit boards.","Finally he came up for air. Did he actually need to know all this?","Then he remembered his training: the minimum viable product","With that, he got to work, and by morning the board was done.","\"Now that's ours,\" she said.","He didn't mention Iowa.","as if that squared it."],["So he designed it again. The second version"]),
 (132,"Ch 19",["And there was the board, where he had used one himself."],[]),
 (133,"Ch 19",["somewhere, so he knew what the thing drank. And there was the board, where he had used one himself. But he also knew a nineteen-year-old","Once, in a bar, he had shown one off, and three people lost their jobs.","the week after the toast, and he had never looked them up. He could have said any of it. Instead he stood there"],["He had shown one off in a bar"]),
 (134,"Ch 19",["Marta hadn't said a word either, not since Grace walked Patricia down the line."],["Marta hadn't said anything either."]),

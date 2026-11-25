@@ -141,7 +141,7 @@ Edit 57 was never used.
 | 128 | Ch 19 | not in the Doc | Reuben had spent thirty years as a title officer at the county |
 | 129 | Ch 19 | not in the Doc | Reuben notices things. It's what makes him such a pain in the ass. ... |
 | 130 | Ch 19 | not in the Doc | Saved our ass quite a few times," Lou said, from down the line. |
-| 131 | Ch 19 | not in the Doc | A startup out of Iowa had an AI that laid out circuit boards. |
+| 131 | Ch 19 | not in the Doc | and this time he started the old way. |
 | 132 | Ch 19 | not in the Doc | And there was the board, where he had used one himself. |
 | 133 | Ch 19 | not in the Doc | somewhere, so he knew what the thing drank. And there was the board... |
 | 134 | Ch 19 | not in the Doc | Marta hadn't said a word either, not since Grace walked Patricia do... |

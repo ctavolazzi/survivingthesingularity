@@ -1093,41 +1093,71 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the line that weekend (edit 127 has him at the multimeter), he has been at the co-op longest, and not Tyler,
      who is new and has no history with Reuben.
 
-131. **Chapter 19, the second design: Elijah finds an AI that lays out circuit boards.** CT (25 Nov): Elijah uses
-     the new AI to help design the controller. Context from CT, NOT for the page: this is a chance to talk about
-     local AI, but skip it, "that's a fucking can of worms ... Book's already long enough." His beats: research turns
-     up a startup out of Iowa with an AI PCB designer; it sends him down a rabbit hole where he feels lost; he comes up
-     for air and asks "do I actually need to know all this?"; he remembers his training, the MVP, minimum viable
-     product, and gets to work. Context from CT, NOT for the page: "it's obviously like character development, this
-     is growth."
+131. **Chapter 19, the second design: the old way, the AI out of Iowa, and the secret.** Reworked 25 Nov to the plan
+     ("The plan for Chapter 19", above), on CT's "Go on the plan." CT's beats (first logging): Elijah uses the new AI
+     to help design the controller; research turns up a startup out of Iowa with an AI PCB designer; it sends him down
+     a rabbit hole where he feels lost; he comes up for air and asks "do I actually need to know all this?"; he
+     remembers his training, the MVP, minimum viable product, and gets to work. CT's direction on stakes (25 Nov):
+     "the struggle of the old way of doing things, and then Elijah's just like, wait a minute, I can just use AI for
+     this. And so he does. But then he realizes, because of some kind of foreshadowing ... If he tells people that he
+     just used AI to generate it ... Somebody else is going to have a problem."
+     Context from CT, NOT for the page: local AI is "a fucking can of worms ... Book's already long enough"; and "it's
+     obviously like character development, this is growth."
 
-     Placed at the redesign, not the first design: the MVP is the growth, and the first design (four layers, Swiss
-     sensors, sealed in resin) is the opposite of one, so it belongs after Marta's "Ugly means the next guy can see
-     how it works."
+     Placed at the redesign, after Marta's "Ugly means the next guy can see how it works." Book now:
 
-     Book now: "So he designed it again. The second version was a Raspberry Pi the regional supplier had in
-     stock..." The sentence "So he designed it again." becomes [CT's beats; Claude's wording, except "a startup out
-     of Iowa", "came up for air", "Did he actually need to know all this?", "remembered his training" and "got to
-     work", which are CT's. Sentence openings varied at CT's request: "Instead of starting everything with a
-     pronoun, you gotta vary the sentence structure, bro."]:
+     > So he designed it again. The second version was a Raspberry Pi the regional supplier had in stock...
 
-     > So he designed it again, and this time he went looking for help. A startup out of Iowa had an AI that laid
-     > out circuit boards. One evening with it turned into two, and every answer opened three more questions. By
-     > midnight on the second night, Elijah was lost.
+     "So he designed it again." becomes [Claude's wording, except "a startup out of Iowa", "came up for air", "Did he
+     actually need to know all this?", "remembered his training" and "got to work", which are CT's]:
+
+     > So he designed it again, and this time he started the old way. He spent his nights at the bench with calipers
+     > and graph paper, measuring relays out of Marta's coffee can one at a time, because no two of them had the same
+     > footprint. By the end of the weekend he had a third of a board and a stack of crossed-out pages. The first
+     > design had already eaten the better part of a month, and the growers needed the boxes before planting.
+     >
+     > So he went looking for help. A startup out of Iowa had an AI that laid out circuit boards. One evening with it
+     > turned into two, and every answer opened three more questions. By midnight on the second night, Elijah was
+     > lost.
      >
      > Finally he came up for air. Did he actually need to know all this?
      >
      > Not really. Then he remembered his training: the minimum viable product, the least you can build that still
-     > does the job. Forty boxes. Read the dirt, read the air, open a vent. With that, he got to work.
+     > does the job. Forty boxes. Read the dirt, read the air, open a vent. With that, he got to work, and by morning
+     > the board was done.
+     >
+     > He printed it out and laid it on the bench under the whiteboard. Marta's three numbers were still up there,
+     > with the order pinned beside them. Forty small boxes that could open a vent or a valve without asking a server
+     > in Virginia for permission. One company made the thing that had drawn his board. Zero people in the valley
+     > could say why it had put a trace where it did, and he was one of the zero.
+     >
+     > Marta came in with her coffee and looked the drawing over for a long time. She ran a finger along one of the
+     > traces.
+     >
+     > "Now that's ours," she said.
+     >
+     > He didn't mention Iowa. It was a tool, he told himself, and he would have gotten there by hand in a couple of
+     > weeks anyway. Then he blocked out two weeks to write the firmware himself, line by line, as if that squared it.
 
      Then "The second version was a Raspberry Pi..." and that paragraph as before.
 
+     Why each piece is there:
+     - The old way: the relays from the coffee can are the drawer Marta opens in edit 124. He laid out the four-layer
+       board himself, so the trouble is time and odd parts, not skill.
+     - The foreshadowing is the book's own: the order already asks for boxes that work "without asking a server in
+       Virginia for permission," and Marta's eleven, one, zero is still on the whiteboard (Ch 31 still has it there).
+     - Marta's "Now that's ours" answers her own "It'll be ours" a page earlier. She praises what she thinks he did by
+       hand, so saying nothing is now a lie to her. Ch 22 already has him picture "Marta finding out some other way."
+     - The two weeks: the book already says "Elijah had blocked out two weeks to write it. Tyler had shown up on
+       Thursday with it done." Now the reader knows why he blocked them out.
+     - The storyteller's voice ("as if that squared it") tells the reader what Elijah won't admit (CT, 25 Nov: the
+       narration is hybrid).
+
      **Cut by CT (25 Nov): the shop's argument about it.** First logged here as a second change: Denny asking how he
      turned it around so fast, Priya's "I hate that AI crap", Elijah's "It looks good to me", Curtis's "LGTM", Grace's
-     "Does a tree need to read its own DNA to produce fruit?" and "What?". Claude pointed out that the chapter already
-     has that argument a few pages later, when Tyler says he used Rod Code and Patricia asks "how many people in this
-     shed can read what it wrote?" CT: "I think we should cut it. He should find the PCB AI designer, but not that
-     conversation shouldn't happen until the [Rod Code] conversation." Do not add it. The wording is in git history.
+     "Does a tree need to read its own DNA to produce fruit?" and "What?". CT: "I think we should cut it. He should
+     find the PCB AI designer, but not that conversation shouldn't happen until the [Rod Code] conversation." Do not
+     add it. The wording is in git history.
 
 132. **Chapter 19, the Rod Code scene: Elijah used an AI too.** Since edit 131 Elijah has used an AI on the board
      himself, so when Patricia asks "how many companies make Rod Code?" the reader may wonder why nobody points at

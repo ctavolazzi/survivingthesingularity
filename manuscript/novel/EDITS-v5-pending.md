@@ -690,22 +690,23 @@ at 9:40 he stepped out under the eave" and "The next Sunday at 9:40 the aide sai
 123. **Chapter 18, the end: Grace and the jars.** CT: "Martha Knox [= Marta knocks], like a cop, she chuckled, and
      Elijah found himself studying the curves of her mouth. Found his eyes lingering on the curves of her mouth. With
      some doors, that's the right approach, she says. Maybe I'm a little too cautious. And Elijah will say, I think
-     what you're doing is just right." Book now:
+     what you're doing is just right." Then CT added: "And then she'll say, maybe I should have knocked like Marta.
+     And he'll say, I think what you're doing is just right." Book now:
 
      > "Marta knocks like a cop," she said. "Some doors, that's right." She was still looking at the jars. "I should
      > have knocked like Marta."
 
-     Change to [CT's words, merged; "found his eyes lingering" is the version he chose of his two, tense and joins are
-     Claude's; the book's "She was still looking at the jars" kept]:
+     Change to [CT's words, merged; "found his eyes lingering" is the version he chose of his two; tense and joins are
+     Claude's; the book's "She was still looking at the jars" kept. His reply comes once, after her last line, since
+     CT gave it twice]:
 
      > "Marta knocks like a cop," she said, and chuckled. Elijah found his eyes lingering on the curves of her mouth.
      > "With some doors, that's the right approach." She was still looking at the jars. "Maybe I'm a little too
-     > cautious."
+     > cautious. Maybe I should have knocked like Marta."
      >
      > "I think what you're doing is just right," he said.
 
-     Cut: "I should have knocked like Marta." (replaced by "Maybe I'm a little too cautious.") Then "Chapter 19" as
-     before.
+     Then "Chapter 19" as before.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

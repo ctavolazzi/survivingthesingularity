@@ -793,6 +793,25 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     like that"; an executor only acts after a death, and she is alive. For a farm held in a trust, the person who
     steps in is the successor trustee, and that is what lets him sell it to the man from Sacramento in the next
     scene. Claude's general knowledge, not checked with a lawyer.]
+78. After the trust paper, before the man from Sacramento. Elijah sits with what the paper means and thinks about
+    calling Ruby or a few other people, and then a car pulls in (CT: "A very nice yellow Oldsmobile. You don't see
+    those anymore."). "The man from Sacramento came Monday, in a clean pickup, with a folder." becomes:
+
+    > He sat at her table with it a long time. If she couldn't, he could. The farm, the barn, the well with the
+    > pressure switch, his grandmother's hill. All of it was his to sign for now, and he had never signed for anything
+    > bigger than a truck.
+    >
+    > He got the phone out and scrolled to ruby, lower case. A million dollars, at an elevator. He could call and say
+    > he had changed his mind. He scrolled past it to Gus, and to David, and back up to ruby, and sat there with his
+    > thumb over the screen.
+    >
+    > A car pulled into the driveway. It was a very nice yellow Oldsmobile. You don't see those anymore.
+    >
+    > The man from Sacramento got out with a folder.
+
+    Then "He was very sorry about Elijah's mother..." as before. [CT's beats and the Oldsmobile lines. Claude's
+    wording otherwise. The man no longer comes "Monday, in a clean pickup"; he arrives in the middle of this. Ruby's
+    number here is the golden handcuffs coming back (edits 45, 53, 55).]
 
 ### Chapter 15: The Twenty, Folded Small
 

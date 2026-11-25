@@ -369,8 +369,20 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     > "Both sides like you," she said. "Don't ruin that. You have no idea how valuable it is to be able to speak
     > your mind and not worry what anyone thinks about it."
 
-    "She took her coffee back into the hall." follows as before, and "She didn't pat him." before it stays. "That's
-    not a forecast. It's a mirror." is gone.
+    Then (CT's lines; tags and "She looked at him." are Claude's):
+
+    > "What do you think I should do?"
+    >
+    > "You want my opinion on what you should do?"
+    >
+    > "Yeah. To be honest with you, I feel a little out of my depth here."
+    >
+    > She looked at him. "You are." She picked up her cup. "That's your advantage. You have beginner's luck. What you
+    > choose to do with it is up to you."
+
+    "She took her coffee back into the hall." follows as before, and "She didn't pat him." before her first line
+    stays. "That's not a forecast. It's a mirror." is gone. ("She picked up her cup." is Claude's, so the walk into
+    the hall follows.)
 
 ## Claude's calls (2026-11-25)
 

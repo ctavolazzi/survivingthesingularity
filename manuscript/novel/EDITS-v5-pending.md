@@ -605,6 +605,14 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      > somewhere between all the different voices was something that resembled consensus. The truth was never clean.
      > It often came as an amalgamation, like Frankenstein's monster, made of everyone's hopes and dreams and pain.
 
+116. **Chapter 18, after "Nothing but cortisol and tabs.": name him.** CT: "I want it to say Elijah had done this
+     before." Book now: "He had been here before. At a kitchen table with a chatbot at four in the morning. In a
+     truck in a parking lot in Stockton. Nobody had come either time." Change to [only the name; the book's "been
+     here" kept, since CT said "done this" from memory and the next lines name the places]:
+
+     > Elijah had been here before. At a kitchen table with a chatbot at four in the morning. In a truck in a
+     > parking lot in Stockton. Nobody had come either time.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

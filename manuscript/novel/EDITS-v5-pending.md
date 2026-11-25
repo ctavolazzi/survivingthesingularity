@@ -573,8 +573,21 @@ talk. But then he can also remember the woman's words." Placement and wording ar
       > bunch of arms nobody wants, and I'm just tired of driving alone. If you ever do want to, though, I'll give
       > you my number."
 
-    - Then "Gus reached over and turned the radio up a little..." as before. At the dock he writes the number on the
-      gas receipt, as in the book, and that pays off the promise.
+    - Then "Gus reached over and turned the radio up a little..." as before.
+    - At the cannery dock. "When the last arm was off the truck, he took a pen out of his jacket and wrote on the
+      back of a gas receipt and handed it to Elijah." stays. The next line, "Here's my phone number. Give me a call if
+      you ever want to talk about anything.", becomes:
+
+      > Elijah started to tell him he didn't have to.
+      >
+      > "No, take my number. I meant it. Here." He pushed the receipt at him. "Give me a call if you ever want to talk
+      > about anything."
+
+      Then the rest as before: "Okay. Thanks. I mean it, thank you." / "Sure." / the bus to go look at / "Oh, by the
+      way. I saw that you're working on a book. Let me know when it comes out." [CT: "No, take my number, I meant
+      it. Here." Claude: Elijah starting to wave it off, so Gus's "No" answers something, and "He pushed the receipt
+      at him." "Give me a call if you ever want to talk about anything." is kept from the book. Elijah's "I mean it"
+      now echoes Gus's "I meant it".]
 
     [CT's lines; "tired of driving alone" for his dictated "driving along". Claude: "Gus said", "He kept his eyes on
     the road" (moved from the cut paragraph), and "I'll give you my number" as the way he offers it, since he hands

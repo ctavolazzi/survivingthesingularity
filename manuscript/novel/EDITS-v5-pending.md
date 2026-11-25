@@ -614,10 +614,9 @@ talk. But then he can also remember the woman's words." Placement and wording ar
       >
       > So they let him carry stuff.
 
-    - Ch 11, when Gus prices them ("About three-thirty apiece, installed. I got them for a lot less..."), at the end
-      of that paragraph, after "He rattled the door down and latched it. 'You want to drive or you want me to
-      drive?'", nothing changes; but after Elijah's "These are two million dollars?" and Gus's answer, add before
-      "They're yours?": "Elijah did the arithmetic on two of them and kept it to himself."
+    - Ch 11, when Gus prices them. After Gus's paragraph that starts "About three-thirty apiece, installed." and
+      before Elijah's "They're yours?", add a line: "Elijah did the arithmetic on two of them and kept it to
+      himself."
     - Ch 12, first line: "He worked at the cannery for three weeks on a promise." becomes "He worked at the cannery
       for three weeks on Trent's promise."
     - Ch 12, the paid guy at lunch: "'You on the books?' Elijah said they were sorting him out Friday." becomes

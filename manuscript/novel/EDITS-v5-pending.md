@@ -256,10 +256,10 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     welcome in the bar; the wording is Claude's):
 
     > David loved him for it. Whatever else his father had gotten wrong, when it counted he had put the two of them
-    > first. That was why Ray still had his stool at the end of the bar, club soda and lime, every night. Some
-    > nights he still fell asleep on the bar top, even though he didn't drink. Alcohol is not the only vice.
+    > first. That was why Ray still had his stool at the end of the bar, club soda and lime, every night. He
+    > sometimes still fell asleep on the bar top, even though he didn't drink. Alcohol is not the only vice.
 
-    (The last two sentences are CT's bridge into Elijah, whose habit is the notebooks.)
+    (The last two sentences are CT's words, as he said them.)
 
     Then "Elijah was sleeping about four hours a night..." as before. (Chapter 0 already has Ray on the last stool
     with "his usual club soda and lime".)

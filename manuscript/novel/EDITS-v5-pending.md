@@ -613,6 +613,16 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      > Elijah had been here before. At a kitchen table with a chatbot at four in the morning. In a truck in a
      > parking lot in Stockton. Nobody had come either time.
 
+117. **Chapter 18, Marta at the laptop: "It doesn't leave much day."** CT: "I wanted to say, it doesn't leave much
+     room in the day for the good things to surprise you." (Dictation said "Martha"; Marta.) Book now: "You're trying
+     to watch every bad thing closely enough that it can't surprise you," she said. "I know the trick. It doesn't
+     leave much day." Change to [CT's words]:
+
+     > "You're trying to watch every bad thing closely enough that it can't surprise you," she said. "I know the
+     > trick. It doesn't leave much room in the day for the good things to surprise you."
+
+     (It answers her own "can't surprise you" earlier in the line.)
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

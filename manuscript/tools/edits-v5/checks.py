@@ -122,4 +122,5 @@ C=[
 (114,"Ch 18",["a man with an anime avatar explaining whose fault it was.","the compelling crackpots of the world rose to meet his demand."],["a man with a flag avatar"]),
 (115,"Ch 18",["It had grown harder to tell whose voice was worth listening to in all the clutter","somewhere between all the different voices was something that resembled consensus. The truth was never clean.","like Frankenstein's monster, made of everyone's hopes and dreams and pain."],[]),
 (116,"Ch 18",["Elijah had been here before. At a kitchen table with a chatbot"],["He had been here before. At a kitchen table"]),
+(117,"Ch 18",["It doesn't leave much room in the day for the good things to surprise you."],["It doesn't leave much day."]),
 ]

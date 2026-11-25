@@ -708,6 +708,29 @@ at 9:40 he stepped out under the eave" and "The next Sunday at 9:40 the aide sai
 
      Then "Chapter 19" as before.
 
+124. **Chapter 19, Marta on the first design: gentler, and she pumps him back up.** CT: "It's a gorgeous design, but it
+     has your prior work experience written all over it. It reminds me way too much of the mainstream devices we're
+     starting to see come out, Elijah. And then he's a little dejected, but like she pumps him back up. You're a good
+     engineer. I mean it. I just want you to spend a little more time making this feel more like us than like
+     Claypot." Book now:
+
+     > She capped the marker. "It's a gorgeous design. It's a Claypot design. Design it again. Parts from the drawer,
+     > parts from the hardware store, and nothing your neighbor can't fix with the tools he already owns."
+
+     Change to [CT's lines; "Elijah's shoulders dropped a little." is Claude's for "he's a little dejected"; the
+     book's parts line kept, since the next lines ("That'll be uglier") answer it]:
+
+     > She capped the marker. "It's a gorgeous design, but it has your prior work experience written all over it. It
+     > reminds me way too much of the mainstream devices we're starting to see come out, Elijah."
+     >
+     > Elijah's shoulders dropped a little.
+     >
+     > "You're a good engineer," she said. "I mean it. I just want you to spend a little more time making this feel
+     > more like us than like Claypot. Parts from the drawer, parts from the hardware store, and nothing your
+     > neighbor can't fix with the tools he already owns."
+
+     Then "That'll be uglier," Elijah said. as before.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

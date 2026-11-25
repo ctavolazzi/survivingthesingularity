@@ -97,5 +97,14 @@
     "author_photo": "static/author-headshot.png",
     "website": "survivingthesingularity.com",
     "approved": "CT, 2026-11-25"
+  },
+  "spine_title_from_art": {
+    "box": [
+      5,
+      165,
+      960,
+      420
+    ],
+    "note": "where the title sits in the cover art, in pixels; the spine title is cut from these letters"
   }
 }

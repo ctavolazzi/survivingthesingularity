@@ -506,6 +506,54 @@ def prepare_cover():
         shutil.copy(target, OUT / f"{CFG['slug']}-{CFG['version']}-kindle-cover.jpg")
 
 
+def spine_title_image(ink):
+    """Cut the title's own letters out of the cover art and set them on one line.
+
+    The front title is part of the picture, so there is no font file to reuse. This keeps
+    the spine in the same lettering. Returns the image path, or None when not configured.
+    """
+    import numpy as np
+    from PIL import Image
+    cfg = CFG.get("spine_title_from_art")
+    if not cfg:
+        return None
+    box, k = cfg["box"], 4
+    art = Image.open(REPO / CFG["cover"]).convert("RGB").crop(box)
+    big = np.asarray(art.resize((art.width * k, art.height * k), Image.LANCZOS)).astype(float)
+    r, g, b = big[..., 0], big[..., 1], big[..., 2]
+    alpha = np.clip((r - 195) / 40, 0, 1) * np.clip((g - 185) / 40, 0, 1) * np.clip((b - 120) / 50, 0, 1)
+    rows = alpha.sum(1)
+    ys = np.where(rows > rows.max() * 0.02)[0]
+    lo = ys.min() + (ys.max() - ys.min()) // 4
+    hi = ys.min() + (ys.max() - ys.min()) * 3 // 5
+    split = lo + int(np.argmin(rows[lo:hi]))
+
+    def line(y0, y1):
+        m = alpha[y0:y1]
+        cols, rws = np.where(m.sum(0) > 2)[0], np.where(m.sum(1) > 2)[0]
+        return m[rws.min():rws.max() + 1, cols.min():cols.max() + 1]
+
+    def cap(m):
+        t = np.where(m.sum(1) > m.sum(1).max() * 0.25)[0]
+        return t.max() - t.min()
+
+    l1, l2 = line(ys.min(), split), line(split, ys.max() + 1)
+    scale = cap(l2) / cap(l1)
+    a = Image.fromarray((l1 * 255).astype("uint8")).resize(
+        (int(l1.shape[1] * scale), int(l1.shape[0] * scale)), Image.LANCZOS)
+    c = Image.fromarray((l2 * 255).astype("uint8"))
+    gap = int(cap(l2) * 0.75)
+    mask = Image.new("L", (a.width + gap + c.width, max(a.height, c.height)), 0)
+    mask.paste(a, (0, 0))
+    mask.paste(c, (a.width + gap, 0))
+    rgb = tuple(int(ink[i:i + 2], 16) for i in (1, 3, 5))
+    out = Image.new("RGBA", mask.size, rgb + (255,))
+    out.putalpha(mask)
+    path = WORK / "spine-title.png"
+    out.save(path)
+    return path, mask.width / mask.height
+
+
 def build_wrap(pages, target, name, model):
     """Full paperback cover for KDP: back, spine, front on one sheet with 0.125in bleed.
 
@@ -535,7 +583,14 @@ def build_wrap(pages, target, name, model):
     body = "".join(f"<p{cls[k]}>{esc(t)}</p>" for k, t in bc["blocks"])
     photo = REPO / bc["author_photo"]
     photo_html = f'<img src="{photo.as_uri()}" alt="" />' if photo.exists() else ""
-    spine_html = (f'<div class="spine"><span class="st">{esc(CFG["title"])}</span><span class="sa">{esc(model["author"])}</span></div>'
+    cut = spine_title_image(col["spine_title"])
+    title_h = min(0.30, spine - 0.2)
+    if cut:
+        title_html = (f'<img class="st" src="{cut[0].as_uri()}" alt="{esc(CFG["title"])}" '
+                      f'style="height:{title_h}in;top:{(spine - title_h) / 2}in" />')
+    else:
+        title_html = f'<span class="st">{esc(CFG["title"])}</span>'
+    spine_html = (f'<div class="spine">{title_html}<span class="sa">{esc(model["author"])}</span></div>'
                   if pages >= 80 else "")
     doc = f"""<!DOCTYPE html><html lang="{CFG['language']}"><head><meta charset="utf-8" />
 <title>{esc(CFG['title'])} cover</title><style>
@@ -543,7 +598,6 @@ def build_wrap(pages, target, name, model):
 @font-face {{ font-family: S; font-style: italic; src: url("{fonts}/SourceSerif4-It.otf"); }}
 @font-face {{ font-family: S; font-weight: 600; src: url("{fonts}/SourceSerif4-Semibold.otf"); }}
 @font-face {{ font-family: S; font-weight: 700; src: url("{(HERE / 'fonts').as_uri()}/SourceSerif4-Bold.otf"); }}
-@font-face {{ font-family: N; font-weight: 700; src: url("{(HERE / 'fonts').as_uri()}/SourceSans3-Bold.otf"); }}
 @font-face {{ font-family: N; src: url("{fonts}/SourceSansPro-Regular.otf"); }}
 @font-face {{ font-family: N; font-weight: 600; src: url("{fonts}/SourceSansPro-Semibold.otf"); }}
 @page {{ size: {width}in {height}in; margin: 0; }}
@@ -571,8 +625,9 @@ p.turn + p.turn {{ margin-top: -0.35em; }}
 .spine {{ position: absolute; left: {bleed + tw + spine}in; top: 0; width: {height}in; height: {spine}in;
           transform-origin: 0 0; transform: rotate(90deg); background: {col['spine_band']}; line-height: {spine}in;
           white-space: nowrap; }}
-.spine .st {{ position: absolute; left: {bleed + 0.55}in; top: 0; font-family: N; font-weight: 700; text-transform: uppercase;
-              font-size: {min(18, round((spine - 0.14) * 72 * 0.5, 1))}pt; letter-spacing: 0.15em; color: {col['spine_title']}; }}
+.spine img.st {{ position: absolute; left: {bleed + 0.55}in; }}
+.spine span.st {{ position: absolute; left: {bleed + 0.55}in; top: 0; font-weight: 700; text-transform: uppercase;
+              font-size: {min(21, round((spine - 0.14) * 72 * 0.55, 1))}pt; letter-spacing: 0.1em; color: {col['spine_title']}; }}
 .spine .sa {{ position: absolute; right: {bleed + 0.55}in; top: 0; font-family: N; font-weight: 600;
               font-size: {min(9.5, round((spine - 0.14) * 72 * 0.26, 1))}pt; letter-spacing: 0.2em; text-transform: uppercase;
               color: {col['spine_author']}; }}

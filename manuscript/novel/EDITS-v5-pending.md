@@ -76,6 +76,8 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     OPEN: later in Chapter 2 the promise is called back: "That night Elijah sat at the kitchen table with the
     notebook and did what he'd promised. He wrote it down before it happened." That no longer matches the promise.
     Change it too?
+22. After Elijah texts Wes "Let me look into it, he sent." the next line, "He never did.", becomes: "He meant to do it,
+    but he never got the chance." (The later callbacks in Chapters 6 and 13 quote only the texts, so they still fit.)
 
 ## Applied
 

@@ -959,6 +959,9 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     becomes "She gestured with her chin toward the sparks. 'That thing right there is worth something, not some
     app.'" [CT] It now points plainly at the work on the table; "In the quiet the plasma table ticked as it cooled."
     follows as before.
+86. Marta hands him the broom. "'Swarf goes in the red bin,' she said. 'We'll see.'" becomes "'We'll see,' she said.
+    'Swarf goes in the red bin.'" [CT] Her answer comes first, and the chore lands last; the chapter is named for the
+    bin.
 
 ### Chapter 25: Long Enough to Laminate
 

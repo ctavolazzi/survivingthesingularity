@@ -44,6 +44,27 @@ Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude
 
     and the paragraph goes on as before (the table voting to cover the unit as a loan, the crates in the dry end of
     the equipment shed). [Claude's wording, from CT's question. "On the fourth day" follows edit 87's three days.]
+89. The Sunday calls on the pump house steps, and how he meets Lou (CT: the calls are 9:40 on Sunday mornings, as
+    changed in edit 30; the farm lets him be; a fan comes up and tries to talk to him, and one of them shoos the
+    fan off, and that's how he meets Lou). Edit 30 already changes "The night aide held the phone" to "The aide
+    held the phone" here; that is in the Doc as a pending suggestion. The paragraph "On Sundays at 9:40 he sat on
+    the pump house steps and called the place with the rose garden. The aide held the phone by his mother's ear.
+    He told the radio about his week." gets a new last sentence and is followed by:
+
+    > ...He told the radio about his week. The co-op let him be.
+    >
+    > The second Sunday a man he didn't know came up the gravel with his phone already out. He had seen the video.
+    > He wanted a picture, and he wanted to ask about the list, and he started in before Elijah had hung up.
+    >
+    > A sunburned man of about sixty set a bucket down by the pump house and walked over. "He's on the phone with
+    > his mother," he said. "Go on, now." The man went. The sunburned one picked his bucket back up.
+    >
+    > "Lou," he said, and went back to the beds.
+
+    Knock-on, at the first Friday dinner: "...without once looking at his hands. That was Lou. Lou ran the growing
+    side, which meant the actual food." becomes "...without once looking at his hands. It was Lou, from the pump
+    house steps. Lou ran the growing side, which meant the actual food."
+    [CT's beats. Claude's wording. Lou's look (about sixty, sunburned) is taken from his description at the dinner.]
 
 How to read it:
 

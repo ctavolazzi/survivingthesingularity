@@ -64,7 +64,8 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 
 19. End of Chapter 1: "He left the tower off for a week. Then he opened the notebook where he'd written MADRONE IS NOT A
     DRONE, turned to a clean page, wrote the date at the top, and started keeping track." becomes: "...Then he opened
-    the notebook where he'd written MADRONE IS NOT A DRONE and started writing." (Comma dropped, mine.)
+    the notebook where he'd written MADRONE IS NOT A DRONE, turned to a clean page, and started writing." Only "wrote
+    the date at the top" is cut, and "started keeping track" becomes "started writing".
 
 ## Applied
 

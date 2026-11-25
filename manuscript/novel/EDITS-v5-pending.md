@@ -1239,11 +1239,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      It ties back to "Grace walked her down the line with a hand on her arm, introducing everybody" at the start of
      the scene.
 
-135. **Chapter 19, the end of the Rod Code scene: Marta, Patricia leaving, Elijah and Tyler.** CT: "Page 283 with
-     everybody leaving and Patricia and Martha and all that other stuff, it just reads awkward, man. I feel like we
-     just need to rework it." What read awkward: Marta's "Look" and her "We'll see" sit back to back with nothing
-     between them; Patricia's exit is three clipped sentences; and Elijah's "I showed some realtors once" is too
-     short to follow out of context (CT's rule, edit 134). Every beat and line of dialogue stays. Book now:
+135. **Chapter 19, the end of the Rod Code scene: Marta, Patricia leaving, the crew's first crack, Elijah and
+     Tyler.** CT: "Page 283 with everybody leaving and Patricia and Martha and all that other stuff, it just reads
+     awkward, man. I feel like we just need to rework it." What read awkward: Marta's "Look" and her "We'll see" sit
+     back to back with nothing between them; Patricia's exit is three clipped sentences; and Elijah's "I showed some
+     realtors once" is too short to follow out of context (CT's rule, edit 134). Reworked 25 Nov to the plan: the
+     crew's first argument after Patricia leaves (CT: "this is the first real opportunity for conflict among the
+     crew"), and Tyler on the trunk tells Elijah he knows. Book now:
 
      > "Frost week," she said to Tyler. "Probe fails. Valve open or shut?"
      >
@@ -1264,7 +1266,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      >
      > He didn't ask what happened. He was nineteen and he had twenty-six boxes left.
 
-     Change to [Claude's wording; the dialogue is the book's, except "an AI" and "In a bar." added to Elijah's line]:
+     Change to [Claude's wording; the book's dialogue kept, with "an AI" and "In a bar." added to Elijah's line]:
 
      > "Frost week," she said to Tyler. "Probe fails. Valve open or shut?"
      >
@@ -1279,17 +1281,57 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > to the car, and the two of them talked low beside it for a while. Then Grace came back alone and went straight
      > to the kitchen trailer without looking at anybody.
      >
-     > Afterward Elijah found Tyler outside, sitting on the trunk of a Corolla and flashing units one after another.
+     > Nobody picked a crimper back up.
+     >
+     > "So we pull it," Curtis said. He was looking at the laptop, not at Tyler. "Throw the code out and write it by
+     > hand. That's what she was telling us."
+     >
+     > "Lay off the kid, Curtis," Lou said. "Those boxes go out in June either way."
+     >
+     > "Nobody's throwing anything out," Priya said. "We test it. Whatever fails goes up on the board, with the date."
+     >
+     > Curtis turned around. "You're the engineer, bud. Is the kid's code any good or isn't it?"
+     >
+     > Elijah hadn't read it. He couldn't vouch for it, and with his own board sitting in the same box, he couldn't
+     > say one word against how it was made, either.
+     >
+     > "It passed the bench," he said.
+     >
+     > It was Tyler's line, and everybody in the shed had just heard Tyler say it. Curtis looked at Elijah a second
+     > longer than he needed to. Then he went back to his crimper.
+     >
+     > "Wire ends," Marta said, and that was the end of it.
+     >
+     > Tyler shut the laptop, picked up a crate of units and carried them outside. Afterward Elijah found him there,
+     > sitting on the trunk of a Corolla and flashing units one after another.
      >
      > "I showed an AI to some realtors once," Elijah said. "In a bar." It was as close as he could get to the rest
      > of it.
      >
-     > "Okay," Tyler said.
+     > "Okay," Tyler said. He didn't look up from the screen. "Your board's from Iowa, man. It says so in the file."
      >
-     > Tyler didn't ask what happened. He was nineteen, and he still had twenty-six boxes to go.
+     > Elijah didn't have anything to say to that.
+     >
+     > "You could've just told them."
+     >
+     > Tyler didn't ask what happened with the realtors. He was nineteen, and he still had twenty-six boxes to go.
 
-     Then "Grace found Elijah that evening at the wash station..." as before. "In a bar" points back to edit 133
-     ("Once, in a bar, he had shown one off"). Edit 134 changes the line just before "Frost week".
+     Then "Grace found Elijah that evening at the wash station..." as before.
+     Notes:
+     - The argument is about the forty boxes, not about AI again (CT cut that once, edit 131). Each speaker is named,
+       and each minds for his or her own reason: Curtis the machine, Lou the date (his buyer, which Elijah doesn't
+       know yet, so Grace's "He hadn't known that" at the wash station still holds), Priya the test (Ch 22: "Then that
+       goes on the board too").
+     - Curtis puts the question to Elijah ("bud" is his word for him, Ch 17). It is the second time that day Elijah
+       picks nothing, before Grace says so; the scene doesn't say it for her.
+     - Curtis's look leads into Ch 20, where "Curtis is in a mood."
+     - Tyler's "You could've just told them." sets up Ch 38, Tyler to Patricia: "You could just tell them." Claude's
+       wording; CT's if he has one.
+     - Not in the scene: Wren (the reader meets her in Ch 20), Grace (in the kitchen trailer), Denny and Reuben (not
+       on the line that weekend). Elijah tells Tyler only a piece of the bar story; Ch 24 says he never told the whole
+       of it to anyone up there.
+     - "In a bar" points back to edit 133 ("Once, in a bar, he had shown one off"). Edit 134 changes the line just
+       before "Frost week".
 
 136. **Chapter 19, the end: Marta's question answered, and Elijah picks something.** CT: "what is the moral of the end
      of that chapter? It feels like it's just moving things along instead of progressing the story ... come up with

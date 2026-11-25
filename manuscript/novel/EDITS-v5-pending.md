@@ -206,7 +206,8 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     > dollars.
     >
     > It had been a minute, so he fed the money into the other machine, the one on the wall, not the one in his
-    > pocket. After that he took one every other day, and when the money got low he stopped.
+    > pocket. After that he discovered that Planet Fitness was only twenty-five dollars a month, and they had all the
+    > showers you need.
 
     [CT's beats and lines, lightly smoothed at his request: "Sometimes." joined to the sentence before it, and "It had been a minute" joined
     to the next sentence; "Only problem?" kept.

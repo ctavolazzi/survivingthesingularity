@@ -595,21 +595,45 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     why he lets it slip. The chapter already counts him as billionaire number two: "Two billionaires, two phone
     numbers."]
 
-66. Why he is at the cannery, and for how long (CT: "I'm not exactly sure what he's doing there, and especially not
-    for 3 weeks"). The deal is never stated; Chapter 12 just says "He worked at the cannery for three weeks on a
-    promise." [Claude's wording throughout; no pay figure, since CT never gave one.]
+66. Why he is at the cannery: the promise is two of the arms (CT: "the promise is that he's going to get two of the
+    arms, that they'll be his. That's where the connection is. And that's where his insurance policy is ... It's
+    enough to survive off of. It's his big emergency fund that comes into play later in the book. But right now, it
+    just needs to be more clear how this bridges with the rest of the stuff.") In v5 the arms only turn up in
+    Chapter 15, as a surprise, "in place of his wages". Now they are the deal from the start. [CT's facts; all
+    wording Claude's; no dollar figures added.]
     - Ch 11: after "I can carry stuff," Elijah said. "I drove delivery for six years. I'm good at carrying stuff.",
       the line "So they let him carry stuff." becomes:
 
-      > Trent thought about that. They had six robot arms coming down from Oakland and a launch party in three
-      > weeks, and nobody to put them in. "Ride down with the arms," he said. "Help the crew bolt them in for the
-      > launch. We'll get you on the books by Friday."
+      > Trent thought about that. They had six robot arms coming down from Oakland, a launch party in three weeks
+      > and nobody to put them in. They also had two spares in crates that they were never going to need. "Tell you
+      > what," he said. "Ride down with the arms. Help the crew bolt them in for the launch. Do that, and the two
+      > spares are yours."
+      >
+      > Elijah didn't know what one of those was worth. He knew it was more than he had. It wasn't a salary. It was
+      > an insurance policy, something to stand on if the floor went out.
       >
       > So they let him carry stuff.
 
+    - Ch 11, when Gus prices them ("About three-thirty apiece, installed. I got them for a lot less..."), at the end
+      of that paragraph, after "He rattled the door down and latched it. 'You want to drive or you want me to
+      drive?'", nothing changes; but after Elijah's "These are two million dollars?" and Gus's answer, add before
+      "They're yours?": "Elijah did the arithmetic on two of them and kept it to himself."
     - Ch 12, first line: "He worked at the cannery for three weeks on a promise." becomes "He worked at the cannery
-      for three weeks on Trent's promise." The rest fits as it is: "You on the books?", "We'll sort you out
-      Friday", the third Friday launch party, and Chapter 15's "There was no money for him".
+      for three weeks on Trent's promise."
+    - Ch 12, the paid guy at lunch: "'You on the books?' Elijah said they were sorting him out Friday." becomes
+      "'You on the books?' Elijah said he was getting paid in arms. Two of them, Friday." The guy's answer stays:
+      "He's done this to two guys already. You're working for a picture, man." So does "Elijah said Trent was good
+      for it." and Trent's "We'll sort you out Friday."
+    - Ch 15: "In the second week Trent's office finally wrote back. There was no money for him, a woman said, and
+      she was sorry about that. But two spare arms were still sitting on the cannery dock in their crates, never
+      unpacked, and the company would sign them over in place of his wages if he could get them off the property by
+      Friday." becomes "In the second week Trent's office finally wrote back. The two spare arms were still sitting
+      on the cannery dock in their crates, never unpacked, a woman said, and the company would sign them over, the
+      way Trent had promised, if he could get them off the property by Friday." The rest of Chapter 15 stays: the
+      storage unit, no bids on eBay, the scrap offer, "there were always the arms. He could sell them." That is the
+      insurance policy failing to pay out, which is the point.
+    - Nothing changes later: the arms go north in Ch 17, and in Ch 34 to 37 they are the emergency fund that comes
+      into play.
 
 ### Chapter 15: The Twenty, Folded Small
 

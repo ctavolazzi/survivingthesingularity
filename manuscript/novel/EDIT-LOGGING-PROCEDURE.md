@@ -97,6 +97,12 @@ duplicate "It could be a cult," "He looked around the table, then back" (edit 10
 play"), edit 109 (the touch lines), edit 112 (gravel lot or a store), edit 116 ("been here" or "done this"), edit
 118, edit 121 ("one thing" or "one real thing"), and the Chapter 13 "dark out" 9:40 call.
 
+## v6 (25 Nov)
+Edits 1 to 137 are all in v6 (`manuscript/tools/edits-v6/`, see "Applied" in `EDITS-v5-pending.md`). CT reads v6 in
+the large print PDF and makes his final edits there. New edits go on from 138, as find and replace rows in
+`manuscript/tools/edits-v6/ops.py` plus a check row, against the v6 text. Once the v6 Google Doc exists, it is the
+CURRENT copy in the bridge map and edits are made against a fresh read of it.
+
 ## Later, when CT says go
 Apply 87 onward to the Doc as suggestions, re-read, run verify. CT accepts the suggestions. Run
 `build.sh` (the gate stops it until every edit is in), then refresh the Drive uploads.

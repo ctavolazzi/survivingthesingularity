@@ -4,7 +4,9 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 **Nothing on this list has been applied to the Doc yet.** CT will say when to make the changes and rebuild the
 publication files (`publication/novel/build/build.sh`).
 
-Wording in quotes is CT's unless marked "mine". Items marked OPEN need a decision from CT.
+Wording in quotes is CT's unless marked "mine". Items marked OPEN need a decision from CT. Items marked CALLED were settled by Claude under CT's 2026-11-25 instruction
+("I'm trusting you to keep track of where stuff goes and the details of how to keep the composition rolling"); see
+"Claude's calls" below. CT can overrule any of them.
 When an edit is made, move it to "Applied" with the date. To change the Doc, use the bridge:
 `node scripts/sts-bridge.mjs edit READ.json --find "old words" --replace "new words"`.
 
@@ -41,18 +43,18 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     Forecaster? Be my guest. Give me a date."
 11. Devendra's reply to "Five years. Thanksgiving, 2027. A machine that can do any job in this building." becomes:
     "Five years," Devendra said. "That's one of the more aggressive ones I've heard yet. Okay, fine. And if it's just
-    another Tuesday?" ("Devendra said" and "Okay" are mine.) OPEN: Thanksgiving 2027 is a Thursday (the Appendix
+    another Tuesday?" ("Devendra said" and "Okay" are mine.) CALLED: Thanksgiving 2027 is a Thursday (the Appendix
     says so). Keep "Tuesday" or go back to "Thursday"?
-12. "Loser cooks" becomes "Loser cooks dinner." OPEN: it appears five times (Ch 1 Elijah's reply; Ch 1 sticky note;
+12. "Loser cooks" becomes "Loser cooks dinner." CALLED: it appears five times (Ch 1 Elijah's reply; Ch 1 sticky note;
     Ch 2 note in the corner; Ch 6 "I bet a guy dinner on it. Loser cooks."; Appendix). Add "dinner" in all five or
     only in Chapter 1? Chapter 6 would repeat the word "dinner".
 14. The exchange at the bar. Replace Elijah's "Sure. They'll land somewhere..." with:
     "You sleeping?" / "Sure. A little. I can't stop thinking about the people the realtors fired." /
     "They'll land somewhere," David said. "There's always a job." / "I'm not so sure about that." David's next line,
-    "What's a job for?", follows as it is. OPEN: Elijah's old speech ("People land where they put themselves. Retrain,
+    "What's a job for?", follows as it is. CALLED: Elijah's old speech ("People land where they put themselves. Retrain,
     learn the new thing. Nobody owes you a job.") is gone in this version. Keep any of it?
 15. "Devendra wanted an n. He'd get one. He'd try to break a model himself." becomes: "Devendra wanted a prediction.
-    He'd give it one. And he'd do it by cracking one of these things open himself." OPEN: Elijah already gave a date
+    He'd give it one. And he'd do it by cracking one of these things open himself." CALLED: Elijah already gave a date
     at the coffee machine, so "He'd give it one" can read as repeating himself.
 16. "The limit he found was heat." becomes: "He had found his first limit. The limit he found was heat, specifically
     overheating."
@@ -73,7 +75,7 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 ### Chapter 2: The Coin Slot
 21. At the all-hands, "He was done being surprised. He would write things down before they happened." becomes:
     "He was done being blindsided. He would try to pay closer attention."
-    OPEN: later in Chapter 2 the promise is called back: "That night Elijah sat at the kitchen table with the
+    CALLED: later in Chapter 2 the promise is called back: "That night Elijah sat at the kitchen table with the
     notebook and did what he'd promised. He wrote it down before it happened." That no longer matches the promise.
     Change it too?
 22. After Elijah texts Wes "Let me look into it, he sent." the next line, "He never did.", becomes: "He meant to do it,
@@ -133,13 +135,13 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     >
     > Elijah was left with a pit in his stomach.
 
-    OPEN: this cuts the enclosure lines (the commons, the hedges, "That's the hedge. I helped plant it.") and "And you
+    CALLED: this cuts the enclosure lines (the commons, the hedges, "That's the hedge. I helped plant it.") and "And you
     took the bonus." entirely. Keep any of them?
 
 25. Wes sends a second text: a link to a hit piece about how much water the new product (Companion) uses, with
     "is this true". Elijah never answers it. Drafts below; wording outside CT's "is this true" is mine.
 
-    Chapter 2, after "Let me look into it, he sent." (OPEN: here, or later in the timeline?):
+    Chapter 2, after "Let me look into it, he sent." (CALLED: here, or later in the timeline?):
 
     > A minute later Wes sent a link. It was a hit piece on how much water Companion was going to drink.
     >
@@ -147,7 +149,7 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     >
     > Elijah didn't answer.
 
-    OPEN: edit 22 ("He meant to do it, but he never got the chance.") follows here now. Keep it, or let "Elijah
+    CALLED: edit 22 ("He meant to do it, but he never got the chance.") follows here now. Keep it, or let "Elijah
     didn't answer." be the end?
 
     Chapter 6, where he opens the band chat. "Above the box, still, was Wes. is my stuff in that thing. Under it, his
@@ -155,8 +157,35 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     stuff in that thing. Under it, his own. Let me look into it. Under that, Wes again: the link about the water, and
     is this true. He had never answered. Nobody had written in there since."
 
-    OPEN: Chapter 13 has the same callback ("scrolled up, past his own link, to Wes. is my stuff in that thing.
+    CALLED: Chapter 13 has the same callback ("scrolled up, past his own link, to Wes. is my stuff in that thing.
     Under it, Let me look into it."). Change it to end on the unanswered question too?
+
+## Claude's calls (2026-11-25)
+
+CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you
+to keep track of where stuff goes and the details of how to keep the composition rolling." Settled on that basis;
+CT can overrule any of them.
+
+- 11: "And if it's just another Thursday?" Keeps CT's "just another" and the real day: Thanksgiving 2027 is a
+  Thursday, as the Appendix and later chapters say.
+- 12: "Loser cooks dinner." in Ch 1 (Elijah's reply and the sticky note), Ch 2 (the note in the corner) and the
+  Appendix. Ch 6 stays "Loser cooks." because "I bet a guy dinner on it" is right before it.
+- 14: Elijah's old speech is cut. David's "What's a job for?" still lands after "I'm not so sure about that."
+- 15: "Devendra wanted a prediction. He'd give him a better one. And he'd do it by cracking one of these things open
+  himself." ("him" for "it", and "a better one" because Elijah already gave a date.)
+- 21: The callback becomes "That night Elijah sat at the kitchen table with the notebook and did what he'd promised.
+  He paid closer attention, and he wrote down what he saw coming." The list of stages still follows it.
+- 24: The enclosure lines, "That's the hedge. I helped plant it." and "And you took the bonus." are cut from Ch 2.
+  Nothing is lost: Reuben gives the enclosure history in Ch 23, and the bonus comes up in Ch 10 ("With the bonus.").
+  "Good quarter" and the moat line are cut with them. Ch 9 still says Lena "stood up at our all-hands and asked what
+  the artists get, and nobody answered her", which still fits.
+- 25: The link arrives in Ch 2 right after "Let me look into it, he sent." Order: the link, "is this true",
+  "Elijah didn't answer.", then edit 22 "He meant to do it, but he never got the chance."
+- 25, Ch 13: the callback becomes "...scrolled up, past his own link, to Wes. is my stuff in that thing. Under it,
+  Let me look into it. Under that, is this true, with nothing under it. He sat with them for a while." (replacing
+  "He sat with the two of them for a while.")
+
+Still CT's to decide: 5 (the word for "bridge") and 19 ("scrawled" or "scraped").
 
 ## Applied
 

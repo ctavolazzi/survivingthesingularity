@@ -422,6 +422,20 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      paragraph between "He looked at the page a long time." (edit 104 adds the frogs) and "That Sunday Grace helped
      him clean out the truck." The build turns it into the mark.
 
+106. **Chapter 17, the truck clean-out: Grace asks before she touches the amp.** CT: "Grace would ask Elijah's
+     consent to touch his amp." Book now: "Oh my God." / "She had the amp out on the tailgate before he could say
+     anything, turning it to the light, reading the stickers like a yearbook." Change to [Claude's wording for CT's
+     instruction]:
+
+     > "Oh my God." She looked at him. "Can I?"
+     >
+     > He nodded.
+     >
+     > She had the amp out on the tailgate, turning it to the light, reading the stickers like a yearbook.
+
+     Cut: "before he could say anything". **Open, for CT:** how he answers. Logged as a nod; his "I just don't wanna
+     play" a few lines later still works, since saying yes to her looking is not saying yes to playing.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

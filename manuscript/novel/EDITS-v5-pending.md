@@ -159,6 +159,28 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     had ever offered him." [Claude, from CT's "that's why he decides not to take it".] CT: "Same thing for the next
     opportunity" (Gus, Ch 11) needs no line.
 
+### Chapter 8: Elijah Madrona
+
+96. At the conference (the event Ruby got him into), before the woman at the coffee urn. After "They would not stand
+    near each other. ... It was like a wedding where the families had already been to court." and before "A woman
+    was next to him at the urn, filling a paper cup.", add:
+
+    > Across the hall two young women were looking at him. One leaned in and whispered something to the other, and
+    > they both laughed and looked away, and then looked back.
+    >
+    > He thought about going over. He was no stranger to that kind of look. His days as a musician had been a lot of
+    > fun.
+    >
+    > But after the last relationship he was in, he had decided that at this point in his life he was looking for
+    > forever, not just tonight. Not that tonight couldn't turn into forever. But he had a picture of what he was
+    > looking for, and tonight he just wasn't feeling it.
+    >
+    > He went to get a coffee.
+
+    [CT's beats and most of the words, including "His days as a musician had been a lot of fun." and the forever
+    lines. Claude: the first paragraph's wording and "He went to get a coffee.", which walks him to the urn. Not a
+    womanizer, per CT. The last relationship is the one he remembers in Chapter 13 (edit 69).]
+
 ### Chapter 14: A Stain Shaped Like Ohio
 
 94. When he blocks Melody, the memories come (CT: a rush of memory of being bullied his whole life, told he was

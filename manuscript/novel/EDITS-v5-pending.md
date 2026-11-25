@@ -1,8 +1,9 @@
 # v5 edits waiting for CT's go
 
 Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Google Doc "StS v5 draft (Nov 23)").
-**Nothing on this list has been applied to the Doc yet.** CT will say when to make the changes and rebuild the
-publication files (`publication/novel/build/build.sh`).
+**Every edit on this list is in the Doc as a suggestion, as of 2026-11-25.** None is accepted yet; CT accepts or
+rejects them in the Doc. See "Applied" at the end. The publication files (`publication/novel/build/build.sh`) have
+not been rebuilt.
 
 How to read it:
 
@@ -18,7 +19,8 @@ How to read it:
 
 ## Needs CT
 
-Four things only he can settle. Everything else is ready to apply.
+Settled by CT on 2026-11-25: keep edit 5 ("chasm"), keep edits 14 and 56 (David's line), keep edit 9 ("first month
+here"). The satellite office is in the North Bay. The original questions follow, for the record.
 
 1. **Edit 5, "bridge".** Claude's reading of his dictation: the second sentence becomes "Until he saw what was on
    the other side of that chasm." Confirm.
@@ -1004,3 +1006,20 @@ listing videos.
 - Author's Note, 2026-11-25: "They may tell you they moved on because I was an asshole, and they might be right."
   and "But I'm not wrong about our trajectory." Entered in the Doc as suggestions; CT said he accepted them, but two
   reads afterwards still showed them pending. The publication files were built as if accepted. Confirm in the Doc.
+- All edits 1 to 86, 2026-11-25: entered in the Doc as suggestions, through the Appendix, and read back after each
+  batch. Nothing accepted yet. CT's rulings above went in as written.
+- Follow-ups CT asked for on 2026-11-25, also suggestions:
+  - The power bill is $2,011.46 in Chapters 5, 19 and 21 (CT: "$2011.46 in all places"; the comma matches the
+    book's other amounts).
+  - CT chose to keep the bill and explain it. Chapter 5, "One month. One month of training runs..." becomes "The
+    utility had been guessing at his meter for most of the year, forty-something dollars at a time, and this was the
+    catch-up, all at once and billed at the top tier. Months of training runs..." [Claude] (Claude's estimate: about
+    ten months of the tower at 600 watts is about 4,300 kWh, roughly $1,900 to $2,000 at top-tier California rates.)
+  - North Bay office: "in San Jose" cut from Devendra's lines in Chapters 25 and 32; the Appendix's "He stays in San
+    Jose." becomes "He stays put." [Claude]
+  - Chapter 13: "it took the notary to find her stamp" becomes "it had taken the notary to find her stamp", since the
+    stamp now comes at the bank, before the wire. [Claude]
+- Checked and left alone: Chapter 7, where Ma talks about the video as new. The book already says, right after,
+  that she watched it in October and wrote to him twice; it is her memory going, before the stroke.
+- Back cover (`publication/novel/build/book.json`): "A few weeks later, they fired their social media team" becomes
+  "A week later, ...", to match Chapter 0 ("One week later, almost to the hour").

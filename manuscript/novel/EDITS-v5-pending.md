@@ -102,8 +102,9 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     >
     > She left.
 
-    The next paragraph starts "He went back up and found Devendra at the good coffee machine". He no longer went
-    outside, so "went back up" becomes "He found Devendra at the good coffee machine" (mine).
+    The next paragraph, "He went back up and found Devendra at the good coffee machine, watching the drip like it
+    owed him money.", becomes: "Feeling weird, he went looking for a familiar face, a friendlier one, and found
+    Devendra at the good coffee machine, watching the drip like it owed him money."
 
 ## Applied
 

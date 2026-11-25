@@ -68,7 +68,9 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     DRONE, turned to a clean page, wrote the date at the top, and started keeping track." becomes: "...Then he opened
     the notebook where he'd written MADRONE IS NOT A DRONE, turned to a clean page, and started writing." Only "wrote
     the date at the top" is cut, and "started keeping track" becomes "started writing".
-    Also "where he'd written MADRONE IS NOT A DRONE" changes "written" to "scrawled" or "scraped". OPEN: which one?
+    Also "where he'd written MADRONE IS NOT A DRONE" changes "written" to "scrawled" (CT chose it). Full sentence:
+    "Then he opened the notebook where he'd scrawled MADRONE IS NOT A DRONE, turned to a clean page, and started
+    writing."
 20. Chapter 1, when the tower shuts off. Elijah says "Shit." Placement (mine): after "The fans coasted to silence.",
     so the paragraph ends: Black screen. The fans coasted to silence. "Shit." The room ticked as it cooled.
 
@@ -190,7 +192,7 @@ CT can overrule any of them.
   Let me look into it. Under that, is this true, with nothing under it. He sat with them for a while." (replacing
   "He sat with the two of them for a while.")
 
-Still CT's to decide: 5 (the word for "bridge") and 19 ("scrawled" or "scraped").
+Still CT's to decide: 5 (the word for "bridge").
 
 ## Applied
 

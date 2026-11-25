@@ -953,6 +953,13 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     in it. Once, at the Bear Flag, David had told him people land somewhere. There's always a job. He stood in that
     line forty minutes. This was somewhere." [Claude, forced by edit 14. NEEDS CT (item 2).]
 
+### Chapter 16: The Red Bin
+
+85. Marta at the plasma table. "She jerked her chin toward the sparks. 'That could be worth something. Not an app.'"
+    becomes "She gestured with her chin toward the sparks. 'That thing right there is worth something, not some
+    app.'" [CT] It now points plainly at the work on the table; "In the quiet the plasma table ticked as it cooled."
+    follows as before.
+
 ### Chapter 25: Long Enough to Laminate
 
 59. Devendra: "I have a mortgage and two kids in a good school" becomes "I have a mortgage and three kids in a good

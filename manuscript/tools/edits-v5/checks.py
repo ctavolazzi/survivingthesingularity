@@ -124,4 +124,5 @@ C=[
 (116,"Ch 18",["Elijah had been here before. At a kitchen table with a chatbot"],["He had been here before. At a kitchen table"]),
 (117,"Ch 18",["It doesn't leave much room in the day for the good things to surprise you."],["It doesn't leave much day."]),
 (118,"Ch 18",["Don't let her effort go to waste."],["she will never once ask if you can walk. Don't let her.\" She straightened up"]),
+(119,"Ch 18",["That's not a reward, spreadsheet, for all your doom scrolling.","Her eyes twinkled.","It's just lunch."],["That's not a reward, spreadsheet. It's lunch."]),
 ]

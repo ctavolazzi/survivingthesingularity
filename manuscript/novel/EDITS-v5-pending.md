@@ -634,6 +634,14 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      **Open, for CT:** if you meant the whole sentence to go, tell me and I'll cut "Grace will carry you till her
      arms give out, and she will never once ask if you can walk."
 
+119. **Chapter 18, Marta's last line: "It's lunch" is too neat.** CT: "That's not a reward spreadsheet, it's lunch.
+     That reads as AI to me, so it's not a reward spreadsheet for all your doom scrolling. And then her eyes
+     twinkle. It's just lunch." Book now: "Soup's on at noon. That's not a reward, spreadsheet. It's lunch." Change
+     to [CT's words; "Her eyes twinkled." is Claude's wording for his "her eyes twinkle"]:
+
+     > "Soup's on at noon. That's not a reward, spreadsheet, for all your doom scrolling." Her eyes twinkled. "It's
+     > just lunch."
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

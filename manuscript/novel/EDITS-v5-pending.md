@@ -739,6 +739,34 @@ at 9:40 he stepped out under the eave" and "The next Sunday at 9:40 the aide sai
      remembers who is talking. The drawer action is Claude's (her boot, not her hand: her bad shoulder); it shows
      the drawer she is talking about. Nothing in it the hardware store supplies later (the screw terminals).
 
+125. **Chapter 19: the co-op's reactions to the order, and the Telecaster said plainly.** CT: "we've said Tuesday quite
+     a few times ... Ran out on a Tuesday in May, the yellow ticket. What the fuck is that?" He wanted the line
+     strengthened by "describing the way that people are expressing themselves ... People are excited. People are
+     celebrating ... Other people are nervous and worried and cautious." Claude's proposal, approved by CT ("Yes, log
+     the reactions and Telecaster as 125"). Claude's wording throughout.
+
+     **Change 1.** After "Real money, a real deadline, real customers with seedlings on the line." and before
+     "Elijah volunteered for the design.", add (each reaction sets up something later in the chapter: Grace proud
+     at the demo, Reuben's folder, Marta's whiteboard):
+
+     > Denny wanted to film the order coming in. Grace hugged Priya, and then Lou, and then Priya again. Curtis asked
+     > what happened if they couldn't deliver, and nobody answered him right away. Reuben asked who had signed what.
+     > Marta didn't say anything. She read the order twice and pinned it to the whiteboard.
+
+     **Change 2.** Cut "The four months on the yellow ticket ran out on a Tuesday in May. He was under a sink at the
+     time. He didn't find out until Thursday." from that paragraph. Add, after "Marta pinned the repair emails to the
+     corkboard the way other shops hang their first dollar." and before "And somewhere in the middle of all that,
+     somebody finally fixed Elijah's check-engine light.":
+
+     > The four months on the pawn ticket had run out in May while he was under a sink. By the time he remembered,
+     > his Telecaster was in the window on Fourth Street.
+
+     (The pawn is in Chapter 15: a hundred and ten dollars, a yellow ticket, four months. Marta's later line "as red
+     as the Telecaster he'd pawned" still holds.)
+
+**Final pass, CT's standing request (25 Nov): day-of-week tics.** "Tuesday" appears 31 times in the 25 Nov read. Cut
+the ones that only mark time. Keep a day where it matters (a deadline, a service, a dinner).
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

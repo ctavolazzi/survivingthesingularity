@@ -130,4 +130,5 @@ C=[
 (122,"Ch 18",["At 9:40 that morning he called the place with the rose garden"],["\nAt 9:40 he called the place with the rose garden"]),
 (123,"Ch 18",["Elijah found his eyes lingering on the curves of her mouth.","Maybe I'm a little too cautious. Maybe I should have knocked like Marta.","I think what you're doing is just right,"],["\"I should have knocked like Marta.\"\nChapter 19"]),
 (124,"Ch 19",["it has your prior work experience written all over it.","You're a good engineer,\" she said. \"I mean it.","more like us than like Claypot.\"","Marta hooked the bottom drawer of the parts cabinet with her boot"],["It's a Claypot design. Design it again."]),
+(125,"Ch 19",["Denny wanted to film the order coming in.","She read the order twice and pinned it to the whiteboard.","his Telecaster was in the window on Fourth Street."],["The four months on the yellow ticket ran out on a Tuesday in May."]),
 ]

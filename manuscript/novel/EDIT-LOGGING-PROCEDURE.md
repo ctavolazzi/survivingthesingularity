@@ -51,6 +51,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 ## Final-pass checks (CT's standing list)
 - Every call to his mother: after the stroke, Elijah calls Sunday 9:40 in the MORNING. Exactly one call is at night
   (shows she is confused, not alarming). See the end of edit 122 in `EDITS-v5-pending.md` for the list.
+- Day-of-week tics: "Tuesday" appears 31 times. Cut the ones that only mark time (see after edit 125).
 
 ## What is still open (25 Nov)
 Edits 87 to 111 are logged but not yet in the Doc. Eight Chapter 14 sentence-opening changes were given in chat and

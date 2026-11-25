@@ -922,6 +922,58 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      It ties back to "Grace walked her down the line with a hand on her arm, introducing everybody" at the start of
      the scene.
 
+135. **Chapter 19, the end of the Rod Code scene: Marta, Patricia leaving, Elijah and Tyler.** CT: "Page 283 with
+     everybody leaving and Patricia and Martha and all that other stuff, it just reads awkward, man. I feel like we
+     just need to rework it." What read awkward: Marta's "Look" and her "We'll see" sit back to back with nothing
+     between them; Patricia's exit is three clipped sentences; and Elijah's "I showed some realtors once" is too
+     short to follow out of context (CT's rule, edit 134). Every beat and line of dialogue stays. Book now:
+
+     > "Frost week," she said to Tyler. "Probe fails. Valve open or shut?"
+     >
+     > Tyler looked at the screen. "I'd have to look."
+     >
+     > "Look," Marta said.
+     >
+     > "We'll see," she said, to nobody, and went back to work.
+     >
+     > Patricia left before lunch. She shook everyone's hand. Grace walked her to the car, talking low, and came back
+     > alone and went straight to the kitchen trailer without looking at anybody.
+     >
+     > Elijah found Tyler outside afterward, sitting on the trunk of a Corolla, flashing units one after another.
+     >
+     > "I showed some realtors once," Elijah said.
+     >
+     > "Okay," Tyler said.
+     >
+     > He didn't ask what happened. He was nineteen and he had twenty-six boxes left.
+
+     Change to [Claude's wording; the dialogue is the book's, except "an AI" and "In a bar." added to Elijah's line]:
+
+     > "Frost week," she said to Tyler. "Probe fails. Valve open or shut?"
+     >
+     > Tyler looked at the screen. "I'd have to look."
+     >
+     > "Look," Marta said.
+     >
+     > He scrolled. The whole line waited on him, and he was still scrolling when Marta went back to crimping.
+     > "We'll see," she said, to nobody.
+     >
+     > Patricia left before lunch. On her way out she went down the line and shook everyone's hand. Grace walked her
+     > to the car, and the two of them talked low beside it for a while. Then Grace came back alone and went straight
+     > to the kitchen trailer without looking at anybody.
+     >
+     > Afterward Elijah found Tyler outside, sitting on the trunk of a Corolla and flashing units one after another.
+     >
+     > "I showed an AI to some realtors once," Elijah said. "In a bar." It was as close as he could get to the rest
+     > of it.
+     >
+     > "Okay," Tyler said.
+     >
+     > Tyler didn't ask what happened. He was nineteen, and he still had twenty-six boxes to go.
+
+     Then "Grace found Elijah that evening at the wash station..." as before. "In a bar" points back to edit 133
+     ("Once, in a bar, he had shown one off"). Edit 134 changes the line just before "Frost week".
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

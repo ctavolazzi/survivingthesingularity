@@ -140,4 +140,5 @@ C=[
 (132,"Ch 19",["And there was the board, where he had used one himself."],[]),
 (133,"Ch 19",["somewhere, so he knew what the thing drank. And there was the board, where he had used one himself. But he also knew a nineteen-year-old","Once, in a bar, he had shown one off, and three people lost their jobs.","the week after the toast, and he had never looked them up. He could have said any of it. Instead he stood there"],["He had shown one off in a bar"]),
 (134,"Ch 19",["Marta hadn't said a word either, not since Grace walked Patricia down the line."],["Marta hadn't said anything either."]),
+(135,"Ch 19",["He scrolled. The whole line waited on him, and he was still scrolling when Marta went back to crimping.","On her way out she went down the line and shook everyone's hand.","the two of them talked low beside it for a while. Then Grace came back alone","I showed an AI to some realtors once,\" Elijah said. \"In a bar.\" It was as close as he could get to the rest of it.","Tyler didn't ask what happened. He was nineteen, and he still had twenty-six boxes to go."],["I showed some realtors once","He was nineteen and he had twenty-six boxes left."]),
 ]

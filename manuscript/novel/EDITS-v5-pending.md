@@ -105,6 +105,23 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     The next paragraph, "He went back up and found Devendra at the good coffee machine, watching the drip like it
     owed him money.", becomes: "Feeling weird, he went looking for a familiar face, a friendlier one, and found
     Devendra at the good coffee machine, watching the drip like it owed him money."
+24. The Devendra exchange that follows. Devendra notices Elijah is rattled, asks like a concerned supervisor, and
+    shows his thick skin. After "The sticky note was still on the side of it.", replace the exchange from "Good
+    quarter," Devendra said... through "You did," Devendra said. "And you took the bonus." with (CT's lines; the
+    tags and "He rinsed his cup." placement are mine; "went back to his desk" is kept from the book):
+
+    > Devendra looked at him. "You doing okay? You look a little rattled."
+    >
+    > "Well, I just had a weird exchange with that woman who spoke."
+    >
+    > "Don't mind people like that," Devendra said. "People like that have always existed. Luddites. They'll come
+    > around. They always do." He rinsed his cup. "And if they don't, then, well, maybe she should start looking for
+    > another job."
+    >
+    > He went back to his desk.
+
+    OPEN: this cuts the enclosure lines (the commons, the hedges, "That's the hedge. I helped plant it.") and "And you
+    took the bonus." entirely. Keep any of them?
 
 ## Applied
 

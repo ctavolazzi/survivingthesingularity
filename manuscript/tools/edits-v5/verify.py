@@ -5,6 +5,7 @@
 
 READ.json is the Docs connector's read_doc output for "StS v5 draft (Nov 23)". The checks for each edit are in
 checks.py next to this file: words that must be in the book once the edit is made, and words that must be gone.
+In a check, "[break]" stands for a scene break (an empty paragraph in the Doc).
 
 Each edit gets one status:
   accepted        the change is in the text itself
@@ -44,6 +45,7 @@ def views(path):
 
 def flat(s):
     s = s.replace("\u2019", "'").replace("\u201c", '"').replace("\u201d", '"').replace("\xa0", " ")
+    s = re.sub(r"\n[ \t\xa0]*\n", " [break] ", s)  # an empty paragraph is a scene break
     return re.sub(r"\s+", " ", s)
 
 def status(A, O, have, gone):

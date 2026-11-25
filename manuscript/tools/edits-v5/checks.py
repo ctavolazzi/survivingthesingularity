@@ -110,4 +110,5 @@ C=[
 (102,"Ch 17",["Denny picked up his water glass","\"So the robots have taken over,\" he said."],[]),
 (103,"Ch 17",["Priya was looking straight at Denny","But Denny kept going anyway, oblivious to the mood of the people around him, as he usually was."],[]),
 (104,"Ch 17",["He looked at the page a long time, while listening to the birds."],[]),
+(105,"Ch 17",["[break] That Sunday Grace helped him clean out the truck."],[]),
 ]

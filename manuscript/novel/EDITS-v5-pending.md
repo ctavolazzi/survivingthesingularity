@@ -403,6 +403,11 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
 
      > He looked at the page a long time, while listening to the birds.
 
+105. **Chapter 17: a scene break before "That Sunday Grace helped him clean out the truck."** CT: "I want the
+     [scene] break indicator in there," the three dots used at the other scene breaks. In the Doc that is an empty
+     paragraph between "He looked at the page a long time." (edit 104 adds the birds) and "That Sunday Grace helped
+     him clean out the truck." The build turns it into the mark.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

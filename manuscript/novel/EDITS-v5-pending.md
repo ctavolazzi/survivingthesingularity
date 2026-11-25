@@ -549,6 +549,26 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      > ... You don't knock out a wall till you know what it's holding up." Curtis adjusted himself in the seat. "So
      > go on. What's your solution, then, bud?"
 
+112. **Chapter 18, the opening: less heavy-handed.** CT: "The spiral found Elijah again in late April" is "a little
+     heavy-handed." Set the stage instead: his "next crisis found him in the middle of" an ordinary place, "it didn't
+     announce itself ... as most don't. He just more or less stumbled into it, or he somewhat stumbled into it." CT
+     did not remember what kind of place (hardware store, grocery store). In the book it is neither: "the shop" is the
+     co-op's workshop, and he reads the Claypot launch post standing in the gravel lot, then goes up to the room over
+     the pump house. Book now:
+
+     > The spiral found Elijah again in late April.
+     >
+     > It was seven weeks after he'd walked into the shop, and it did not announce itself as a spiral. It announced
+     > itself as diligence.
+
+     Change to [CT's sentence shapes; Claude's wording]:
+
+     > Elijah's next crisis found him in late April, seven weeks after he'd walked into the shop. It didn't announce
+     > itself, as most don't. He more or less stumbled into it.
+
+     The place is left to the next paragraph (the gravel lot). **Open, for CT:** keep it at the gravel lot, or set
+     the crisis in a store? "Claypot shipped Companion 2.0 on a Thursday..." follows unchanged.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

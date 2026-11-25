@@ -117,4 +117,5 @@ C=[
 (109,"Ch 17",["\"You don't owe us a work day,\" he told her.","I thought I was here to contribute.","\"You are,\" Grace said. \"And you do.\"","Curtis, I said not now."],["They got to the kitchen before it closed and drove back."]),
 (110,"Ch 17",["\"Mijo, you look muy flaco. Come in, eat.\"","She reminded him of some of his extended family."],["and asked if they were hungry before they could ask her anything."]),
 (111,"Ch 17",["Curtis adjusted himself in the seat. \"So go on."],[]),
+(112,"Ch 18",["Elijah's next crisis found him in late April","He more or less stumbled into it."],["The spiral found Elijah again in late April."]),
 ]

@@ -239,7 +239,7 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
 
 99. Applying for jobs from the truck. "One of them asked him to record a video introduction. He looked at himself in
     the little window for a while and closed it." The second sentence becomes "He looked at himself in the phone
-    screen and realized just how haggard he'd become. He closed it." [CT]
+    screen and realized just how haggard he'd become. He closed it and put it away with disgust." [CT]
 
 ### Chapter 14: A Stain Shaped Like Ohio
 

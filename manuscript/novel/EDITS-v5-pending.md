@@ -271,6 +271,17 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 
     Then "Ray nodded like that was fair, and took his club soda back to his stool. David didn't look at Elijah the
     rest of the night." as before.
+38. The jump after the Bear Flag. "On Sunday he got the amp out of the hall closet, where it had been sitting in its
+    bag since the last gig before the pandemic." becomes:
+
+    > Back home in his apartment that weekend, Elijah was waiting for a call from his mother, and decided to kill
+    > some time with a jam. He got the amp out of the hall closet, where it had been sitting in its bag since the
+    > last gig before the pandemic.
+
+    CALLED, knock-on: a few paragraphs later the book says "He set it in the corner of the living room and didn't
+    plug anything into it, as a monument, which was the point." That now contradicts the jam, so it becomes "He never
+    got around to the jam. He set it in the corner of the living room and didn't plug anything into it, as a
+    monument, which was the point."
 
 ## Claude's calls (2026-11-25)
 

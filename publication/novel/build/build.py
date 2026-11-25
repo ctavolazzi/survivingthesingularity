@@ -558,6 +558,7 @@ body {{ width: {width}in; height: {height}in; position: relative; overflow: hidd
 p {{ font-size: 10.8pt; line-height: 1.5; margin: 0 0 0.7em; }}
 p.turn {{ font-weight: 600; font-size: 16pt; line-height: 1.25; margin: 0.75em 0 0.8em; color: {col['accent']}; }}
 p.close {{ font-style: italic; font-size: 13pt; line-height: 1.4; margin-top: 1em; }}
+p.close + p.close {{ margin-top: 0.35em; }}
 .foot {{ position: absolute; left: {bleed + 0.62}in; bottom: {bleed + 0.38}in; width: 2.7in; min-height: 0.8in;
          padding-left: 0.95in; box-sizing: border-box; font-family: N; font-size: 8.3pt; line-height: 1.4; color: {col['soft']}; }}
 .foot img {{ position: absolute; left: 0; top: 0.02in; width: 0.8in; height: 0.8in; border-radius: 50%; }}

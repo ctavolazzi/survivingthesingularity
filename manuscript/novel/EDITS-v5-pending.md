@@ -1386,6 +1386,24 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      two halves, and the new line says he had a third. The zero on the whiteboard waits for Ch 26, where Tyler admits
      he can't read his code and the two of them learn to. Curtis's hose is left as it is; it returns in Ch 23.
 
+137. **Chapter 22, at the dinner bell: he tells them about the board.** From the plan for Chapter 19 (section 6, and
+     "the bare minimum" in chat, 25 Nov): a secret the reader has been shown has to come out once, and if he confesses
+     the leak and still hides the board, the book's first honest confession is half of one. CT: "Go on the plan."
+     Book now:
+
+     > ...and stood in his funeral shirt in front of everyone it brought, and read them the timestamps.
+
+     After it, in the same paragraph, add [Claude's wording]:
+
+     > Then, because he was already standing there, he told them about the board too. The startup out of Iowa, the
+     > one night it took, and the two weeks of firmware he had blocked out to make it square. At the back of the
+     > crowd, Tyler looked at the floor.
+
+     Then the scene break and "Marta did not raise her voice." as before. Nothing after it changes. The replies
+     already in the scene now cover both: Curtis's "You brought their machine inside the wire," and Priya's "we took
+     his confidence for a check." The line before it, "He thought about keeping it to himself. Then he pictured Marta
+     finding out some other way," points back at Marta's "Now that's ours" (edit 131).
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

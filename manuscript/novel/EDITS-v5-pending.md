@@ -1011,10 +1011,9 @@ listing videos.
 - Follow-ups CT asked for on 2026-11-25, also suggestions:
   - The power bill is $2,011.46 in Chapters 5, 19 and 21 (CT: "$2011.46 in all places"; the comma matches the
     book's other amounts).
-  - CT chose to keep the bill and explain it. Chapter 5, "One month. One month of training runs..." becomes "The
-    utility had been guessing at his meter for most of the year, forty-something dollars at a time, and this was the
-    catch-up, all at once and billed at the top tier. Months of training runs..." [Claude] (Claude's estimate: about
-    ten months of the tower at 600 watts is about 4,300 kWh, roughly $1,900 to $2,000 at top-tier California rates.)
+  - CT chose to keep the bill and explain it: "A rate hike cuz he went over a limit of some kind." Chapter 5, "One
+    month. One month of training runs..." becomes "He had gone over some limit the utility set, and once he crossed
+    it, the rate jumped. One month. One month of training runs..." [Claude's wording of CT's beat]
   - North Bay office: "in San Jose" cut from Devendra's lines in Chapters 25 and 32; the Appendix's "He stays in San
     Jose." becomes "He stays put." [Claude]
   - Chapter 13: "it took the notary to find her stamp" becomes "it had taken the notary to find her stamp", since the

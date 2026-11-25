@@ -235,6 +235,18 @@ moment yet in all of human history. / You can rise to meet it. / Let's begin to 
     [CT. Claude: "We do not" instead of "We don't", because she never uses a contraction anywhere in the book.]
     Then "Elijah wrote it all down. Then he watched it again." as before. Her Chapter 9 callback ("I said once, in a
     lecture, that I was afraid of us. I was being polite.") still fits.
+70. Who Manny is (CT: "It's Manny. Who the fuck is Manny?"). He is introduced only by name in Ch 3 and Ch 7, and the
+    book explains him for the first time after his phone call in Ch 13. He matters later: Elijah ends the book
+    sleeping in Manny's back room and digging his soil pits behind Manny's barn. [Claude's wording]
+    - Ch 3, on the phone with his mother, after "Pump's doing that thing again. Manny says it's the pressure switch.
+      The well man says it's the pump." add: "Manny had the next place over. He had been fixing things on theirs
+      since Elijah's father got sick." (Then "A pause, the sound of the pot being set in the rack..." as before.)
+    - Ch 13, the call: "It's Manny." The radio was on behind him. "I'm at the house, Elijah..." becomes "It's Manny.
+      From next door." The radio was on behind him. "I'm at the house, Elijah..."
+    - Ch 13, later: "Manny had smelled it from the yard. Manny had the next place over and had been fixing things on
+      theirs since Elijah's father got sick. All his life..." becomes "Manny had smelled it from the yard. All his
+      life..." (the introduction has moved to Ch 3).
+
 29. "The phone rang at 9:40 on Sunday, because it always rang at 9:40 on Sunday." becomes "The phone rang at 9:40 on
     Sunday because it always rang around 9:40 every Sunday. That was church time." [CT]
 30. The Sunday call is in the MORNING everywhere. [CT: "morning, change the other chapters to match". Every line

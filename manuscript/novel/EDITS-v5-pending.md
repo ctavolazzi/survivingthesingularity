@@ -1,9 +1,14 @@
-# v5 edits waiting for CT's go
+# v5 edits: the running list
 
 Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Google Doc "StS v5 draft (Nov 23)").
-**Every edit on this list is in the Doc as a suggestion, as of 2026-11-25.** None is accepted yet; CT accepts or
-rejects them in the Doc. See "Applied" at the end. The publication files (`publication/novel/build/build.sh`) have
-not been rebuilt.
+
+**Edits 1 to 86 are done: all of them are in the Doc as suggestions, waiting for CT to accept them.** Checked
+2026-11-25 against a fresh read of the Doc; the edit-by-edit record is `EDITS-v5-applied.md`. New edits start at
+87 and go in "New edits" below. The publication files (`publication/novel/build/build.sh`) have not been rebuilt.
+
+## New edits (from 87)
+
+None yet.
 
 How to read it:
 
@@ -17,7 +22,7 @@ How to read it:
 - When an edit is made, move it to "Applied" with the date. To change the Doc, use the bridge:
   `node scripts/sts-bridge.mjs edit READ.json --find "old words" --replace "new words"`.
 
-## Needs CT
+## Needs CT (answered)
 
 Settled by CT on 2026-11-25: keep edit 5 ("chasm"), keep edits 14 and 56 (David's line), keep edit 9 ("first month
 here"). The satellite office is in the North Bay. The original questions follow, for the record.
@@ -37,7 +42,7 @@ here"). The satellite office is in the North Bay. The original questions follow,
    Elijah has been at Claypot more than a year by then (his pipeline project was fourteen months earlier). Keep
    "here", or drop it?
 
-## The edits, in book order
+## Edits 1 to 86, in book order (all in the Doc as suggestions)
 
 ### Author's Note
 
@@ -1004,10 +1009,11 @@ listing videos.
 ## Applied
 
 - Author's Note, 2026-11-25: "They may tell you they moved on because I was an asshole, and they might be right."
-  and "But I'm not wrong about our trajectory." Entered in the Doc as suggestions; CT said he accepted them, but two
-  reads afterwards still showed them pending. The publication files were built as if accepted. Confirm in the Doc.
+  and "But I'm not wrong about our trajectory." Entered in the Doc as suggestions. Still pending in the read of
+  2026-11-25 (revision AHj4eMResiURoAJEhT0nN-6E), with the rest. The publication files were built as if accepted.
 - All edits 1 to 86, 2026-11-25: entered in the Doc as suggestions, through the Appendix, and read back after each
-  batch. Nothing accepted yet. CT's rulings above went in as written.
+  batch. Nothing accepted yet. CT's rulings above went in as written. Checked again the same day by a separate
+  session against a fresh read: every edit present. Record: `EDITS-v5-applied.md`.
 - Follow-ups CT asked for on 2026-11-25, also suggestions:
   - The power bill is $2,011.46 in Chapters 5, 19 and 21 (CT: "$2011.46 in all places"; the comma matches the
     book's other amounts).

@@ -25,6 +25,15 @@ fresh first and go through the bridge.
 
 No Claude session has a task open.
 
+## Waiting in v5 (Nov 25)
+
+- CT's edit list of 25 November (edits 1 to 86, and the follow-ups) is in v5 as **156 suggestions**, placed on
+  his request. None is accepted yet. The list is `EDITS-v5-pending.md`; what is in the Doc, edit by edit, is
+  `EDITS-v5-applied.md`, checked against a fresh read on Nov 25 with `manuscript/tools/edits-v5/verify.py`.
+- The two Author's Note changes from earlier that day are also still suggestions.
+- After CT accepts them: read v5 fresh, run the verifier (every edit should read "accepted"), then rebuild the
+  publication files.
+
 ## The state of the book (Nov 24, end of day)
 
 - v5 holds the whole book: 53 headings (the Author's Note, Chapters 0 to 39, four acts, four
@@ -140,6 +149,9 @@ What v4 has that v3 did not:
 
 ## Done
 
+- **Nov 25**: CT's edit list (edits 1 to 86) logged in `EDITS-v5-pending.md` and placed in v5 as suggestions by
+  a second session; checked edit by edit against a fresh read (`EDITS-v5-applied.md`); a verifier added in
+  `manuscript/tools/edits-v5/`. Left: CT accepting the suggestions, then a rebuild.
 - **Nov 24, later**: v5 read whole; 16 edits and 60 italic ranges applied on CT's yes; the checker
   and its self-test written and run; the Character Bible corrected and completed (27 entries and the
   minor characters); the process file, the map, this page and the Drive bridge page brought up to

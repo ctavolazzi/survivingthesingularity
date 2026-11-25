@@ -136,6 +136,28 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     OPEN: this cuts the enclosure lines (the commons, the hedges, "That's the hedge. I helped plant it.") and "And you
     took the bonus." entirely. Keep any of them?
 
+25. Wes sends a second text: a link to a hit piece about how much water the new product (Companion) uses, with
+    "is this true". Elijah never answers it. Drafts below; wording outside CT's "is this true" is mine.
+
+    Chapter 2, after "Let me look into it, he sent." (OPEN: here, or later in the timeline?):
+
+    > A minute later Wes sent a link. It was a hit piece on how much water Companion was going to drink.
+    >
+    > is this true
+    >
+    > Elijah didn't answer.
+
+    OPEN: edit 22 ("He meant to do it, but he never got the chance.") follows here now. Keep it, or let "Elijah
+    didn't answer." be the end?
+
+    Chapter 6, where he opens the band chat. "Above the box, still, was Wes. is my stuff in that thing. Under it, his
+    own. Let me look into it. Nobody had written in there since." becomes: "Above the box, still, was Wes. is my
+    stuff in that thing. Under it, his own. Let me look into it. Under that, Wes again: the link about the water, and
+    is this true. He had never answered. Nobody had written in there since."
+
+    OPEN: Chapter 13 has the same callback ("scrolled up, past his own link, to Wes. is my stuff in that thing.
+    Under it, Let me look into it."). Change it to end on the unanswered question too?
+
 ## Applied
 
 - Author's Note, 2026-11-25: "They may tell you they moved on because I was an asshole, and they might be right."

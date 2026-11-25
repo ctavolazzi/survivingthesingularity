@@ -914,6 +914,30 @@ talk. But then he can also remember the woman's words." Placement and wording ar
 
 ### Chapter 15: The Twenty, Folded Small
 
+83. Grace's invitation asks first (CT: he's been through a lot and won't just trust strangers from the internet; she
+    is polite, asks permission and consent, asks what he wants; "We have a farm. We'd like to have you on it";
+    "obviously we know who you are, but also that's not the point"; people up here think he'd bring a lot to the
+    group; an offer to come stay a little while if he'd like; they don't expect him to take their word for it or to
+    just come; a video call or two if he wants; "Up to you"). Her reply after "I don't want a boss. I don't want to be
+    one either." / "She answered in an hour." keeps its first paragraph ("Good. We already have a welder who thinks
+    she's the boss..."). The next line, "Come see. I'm sending gas money. If you hate it I'll buy your gas home too.",
+    becomes:
+
+    > We have a farm, and we'd like to have you on it. Obviously we know who you are, but that's not the point. The
+    > point is, people up here think you'd bring a lot to the group, and we'd like to offer you the chance to come
+    > stay with us for a little while, if you want to.
+    >
+    > We don't expect you to take our word for it, and we don't expect you to just come. You can get to know us
+    > first. If you want, we could do a video call or two. Up to you.
+    >
+    > If you do come, I'll send gas money. If you hate it I'll buy your gas home too.
+
+    Then "Blessings, / Grace / P.S. Eat something first..." as before.
+    Later, the video call: "Early Sunday she put him on a video call with the kitchen." becomes "He asked for the
+    video call. Early Sunday she put him on with the kitchen." The rest of that paragraph stays.
+    [CT's beats and most of the words. Claude: the order, "If you do come" for the gas money, and "He asked for the
+    video call", so it is his choice. It echoes the Architect in Ch 9: "I work on whether it asks first."]
+
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put
     themselves. He stood in that line forty minutes, and he couldn't find one person in it who had." becomes "He got
     in it. Once, at the Bear Flag, David had told him people land somewhere. There's always a job. He stood in that

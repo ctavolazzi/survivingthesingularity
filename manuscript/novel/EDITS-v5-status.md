@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-25 from a read of the Doc "StS v5 draft
 (Nov 23)", revision `AHj4eMResiURoAJEhT0nN-6ES_tQIDdj_X3aWEqVEABhyEVNM5iLc6398G1zJ9vPFPVfi5nw5CdyKZlpeEgUZI3AvFIgQOYHcUOjxVJXSSM`. 156 suggestions were waiting in the Doc at that read.
 
-Totals: not in the Doc: 36, suggested: 86.
+Totals: not in the Doc: 37, suggested: 86.
 
 The edits themselves, with CT's words, are in `EDITS-v5-pending.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -133,3 +133,4 @@ Edit 57 was never used.
 | 120 | Ch 18 | not in the Doc | he put the phone on Do Not Disturb, with one exception: the number ... |
 | 121 | Ch 18 | not in the Doc | That was Sal's rule, if he'd have called it one: one thing with an ... |
 | 122 | Ch 18 | not in the Doc | At 9:40 that morning he called the place with the rose garden |
+| 123 | Ch 18 | not in the Doc | Elijah found his eyes lingering on the curves of her mouth. |

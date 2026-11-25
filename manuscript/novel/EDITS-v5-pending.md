@@ -687,6 +687,26 @@ pump house steps" (fine); Ch 18 (edit 122); Ch 22 "The morning before, at 9:40" 
 at 9:40 he stepped out under the eave" and "The next Sunday at 9:40 the aide said" (fine); Ch 31 "On Sunday at
 9:40 he called the rose garden" (fine). Check each again on the final pass, and any new one added since.
 
+123. **Chapter 18, the end: Grace and the jars.** CT: "Martha Knox [= Marta knocks], like a cop, she chuckled, and
+     Elijah found himself studying the curves of her mouth. Found his eyes lingering on the curves of her mouth. With
+     some doors, that's the right approach, she says. Maybe I'm a little too cautious. And Elijah will say, I think
+     what you're doing is just right." Book now:
+
+     > "Marta knocks like a cop," she said. "Some doors, that's right." She was still looking at the jars. "I should
+     > have knocked like Marta."
+
+     Change to [CT's words, merged; "found his eyes lingering" is the version he chose of his two, tense and joins are
+     Claude's; the book's "She was still looking at the jars" kept]:
+
+     > "Marta knocks like a cop," she said, and chuckled. Elijah found his eyes lingering on the curves of her mouth.
+     > "With some doors, that's the right approach." She was still looking at the jars. "Maybe I'm a little too
+     > cautious."
+     >
+     > "I think what you're doing is just right," he said.
+
+     Cut: "I should have knocked like Marta." (replaced by "Maybe I'm a little too cautious.") Then "Chapter 19" as
+     before.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

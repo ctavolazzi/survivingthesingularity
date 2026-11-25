@@ -128,4 +128,5 @@ C=[
 (120,"Ch 18",["he put the phone on Do Not Disturb, with one exception: the number for the place with the rose garden."],["turned the notifications off, all of them except the number of the place with the rose garden"]),
 (121,"Ch 18",["That was Sal's rule, if he'd have called it one: one thing with an end to it, before noon."],[]),
 (122,"Ch 18",["At 9:40 that morning he called the place with the rose garden"],["\nAt 9:40 he called the place with the rose garden"]),
+(123,"Ch 18",["Elijah found his eyes lingering on the curves of her mouth.","Maybe I'm a little too cautious.","I think what you're doing is just right,"],["I should have knocked like Marta."]),
 ]

@@ -1,6 +1,6 @@
 # How to log CT's v5 edits (the procedure)
 
-Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 111. Read this before logging the next one.
+Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 128. Read this before logging the next one.
 
 ## What CT is doing
 CT reads the v5 manuscript and dictates changes by voice. Claude logs them. Claude does not change the Google Doc
@@ -37,8 +37,8 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
    gone; `[break]` means a scene break).
 8. Run `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md`.
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk`.
-10. Update the Drive copy "StS v5 edit list (mirror of GitHub)" (id 1XRD8m-UJXxFkrJS0qqkuE1ftrsm_p9XzLSkWkAcqghA):
-   the edit text, the Totals line, and the "Edits 104 to N" line.
+10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v5 edit list
+   (mirror of GitHub)" (id 1XRD8m-UJXxFkrJS0qqkuE1ftrsm_p9XzLSkWkAcqghA) once, at the end of the session.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
 
 ## Things that have gone wrong before
@@ -54,7 +54,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 - Day-of-week tics: "Tuesday" appears 31 times. Cut the ones that only mark time (see after edit 125).
 
 ## What is still open (25 Nov)
-Edits 87 to 111 are logged but not yet in the Doc. Eight Chapter 14 sentence-opening changes were given in chat and
+Edits 87 to 128 are logged but not yet in the Doc (edit 57 was never used). Eight Chapter 14 sentence-opening changes were given in chat and
 never logged. Open for CT: Grace's April email (edit 100), "He went and looked. It was there, from April," the
 duplicate "It could be a cult," "He looked around the table, then back," and edit 108 ("if he wanted to play").
 

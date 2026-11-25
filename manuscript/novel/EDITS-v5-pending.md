@@ -191,7 +191,7 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     you do this to me? What did I do? Tell me what I did!", the next lines "He waited." / "He actually waited. He sat
     there with his chest going..." / "Nothing answered." become:
 
-    > "Why? Why me? Why now? Why?"
+    > "Why? Why me? Why now? Why!?!"
     >
     > He waited for God's answer.
     >

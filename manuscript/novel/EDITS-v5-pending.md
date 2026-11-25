@@ -824,10 +824,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
 130. **Chapter 19, right after edit 129: somebody else answers Priya.** CT: "And then somebody else will say, saved our
      ass quite a few times." After Priya's "...But he's quite useful." and before the scene break and "The second
-     weekend, Grace brought a visitor.", add [CT's line; the tag is Claude's, with no name, since CT said
-     "somebody else"]:
+     weekend, Grace brought a visitor.", add [CT's line; the tag is Claude's]:
 
-     > "Saved our ass quite a few times," somebody said, from down the line.
+     > "Saved our ass quite a few times," Lou said, from down the line.
+
+     CT: "Curtis already has enough lines leading up to this, make it someone else." Claude chose Lou: he is in
+     the line that weekend (edit 127 has him at the multimeter), he has been at the co-op longest, and not Tyler,
+     who is new and has no history with Reuben.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

@@ -140,4 +140,4 @@ Edit 57 was never used.
 | 127 | Ch 19 | not in the Doc | The build took all of them three weekends |
 | 128 | Ch 19 | not in the Doc | Reuben had spent thirty years as a title officer at the county |
 | 129 | Ch 19 | not in the Doc | Reuben notices things. It's what makes him such a pain in the ass. ... |
-| 130 | Ch 19 | not in the Doc | Saved our ass quite a few times," somebody said, from down the line. |
+| 130 | Ch 19 | not in the Doc | Saved our ass quite a few times," Lou said, from down the line. |

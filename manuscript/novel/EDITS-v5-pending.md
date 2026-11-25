@@ -778,6 +778,22 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     [CT. Claude kept "He didn't answer any of it." because it closes out the offers in the paragraph before. He
     already smokes by then: Ch 12, "He had started smoking again in February, on a fire escape."]
 
+77. The trust paper. "After his father died, and after Melody stood up at the funeral lunch and asked what the place
+    was worth, a lawyer in town had put it in a trust. Elijah had signed a page at twenty-six and never thought about
+    it again. He found it in the drawer under the bank's envelopes. It said that if she couldn't, he could." becomes:
+
+    > After his father died, and after Melody stood up at the funeral lunch and asked what the place was worth, a
+    > lawyer in town had put the farm in a trust. Elijah had signed a page at twenty-six and forgotten about it,
+    > until now, going through his mother's important papers. He found it in the drawer under the bank's envelopes.
+    > It named him the successor trustee. In plain words, it said that if she couldn't, he could. The farm was his to
+    > sign for, and his to sell.
+
+    [CT's beats: he signed at 26 and forgot, finds it rummaging through her papers, and the paper has to say what it
+    is. Claude's wording and the legal term. CT suggested "executor of the will and power of attorney, or something
+    like that"; an executor only acts after a death, and she is alive. For a farm held in a trust, the person who
+    steps in is the successor trustee, and that is what lets him sell it to the man from Sacramento in the next
+    scene. Claude's general knowledge, not checked with a lawyer.]
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

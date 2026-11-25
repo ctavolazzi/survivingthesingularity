@@ -181,6 +181,11 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     Then "Elijah wrote it all down. Then he watched it again." as before. CALLED: "We do not" instead of "We don't",
     because she never uses contractions. The pit echoes the end of the Devendra scene (edit 24). Chapter 9's
     callback ("I said once, in a lecture, that I was afraid of us. I was being polite.") still fits.
+29. The first Sunday call. "The phone rang at 9:40 on Sunday, because it always rang at 9:40 on Sunday." becomes:
+    "The phone rang at 9:40 on Sunday because it always rang around 9:40 every Sunday. That was church time."
+    OPEN: the book has this call at 9:40 at night. The next line says "She called when her day ended", and Chapters
+    15, 18 and 31 say "At 9:40 that night"; Chapter 24 has him call from the stove-room gathering, which runs past
+    eleven. "Church time" reads as morning. Morning or night?
 
 ## Claude's calls (2026-11-25)
 

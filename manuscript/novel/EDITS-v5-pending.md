@@ -274,10 +274,15 @@ moment yet in all of human history. / You can rise to meet it. / Let's begin to 
 31. One call comes at night, as a sign something is off with his mother: she thinks it is morning. [CT's idea.
     Claude chose the call and the wording.] It is the Chapter 13 call, the Sunday before her stroke, the one he lets
     ring. Her voicemail from it holds the last whole sentences she ever says to him.
-    - Ch 13: "On Sunday at 9:40 the phone rang on the dash. He watched it until it stopped." becomes "On Sunday the
-      phone rang on the dash at 9:40 at night. She always called in the morning. He watched it until it stopped." His
-      text stays "Working late. All good. Love you".
+    - Ch 13: "On Sunday at 9:40 the phone rang on the dash. He watched it until it stopped. Then he typed Working
+      late. All good. Love you, and sent it, and turned the phone off." becomes "On Sunday at 9:40 the phone rang on
+      the dash. It was dark out, and he was too sick to wonder why. He watched it until it stopped. Then he typed
+      Working. All good. Love you, and sent it, and turned the phone off." [CT, 2026-11-25: reading "at 9:40" he
+      pictures morning, so "Working late" is wrong; his option, "it rang at 9:40 p.m. and Elijah was still too sick to
+      notice". Claude's wording. "It was dark out" tells the reader it is night; Elijah doesn't register it. "Working.
+      All good." also matches how Chapter 31 quotes his texts.]
     - Ch 13: "There was one voicemail, from Sunday, 9:41." becomes "There was one voicemail, from Sunday, 9:41 p.m."
+      (This is where the hour first registers, on Tuesday, when he turns the phone back on.)
     - Ch 14, the voicemail: "Hi, baby. I watched your video." becomes "Morning, baby. I watched your video." The rest
       of it is unchanged.
 32. In the notebook: "It takes the people who see it coming, out of the world everyone they love still lives in."

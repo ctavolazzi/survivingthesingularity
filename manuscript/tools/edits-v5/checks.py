@@ -109,6 +109,6 @@ C=[
 (101,"Ch 15",["Can't be much worse, he thought."],["Can't be worse, he thought."]),
 (102,"Ch 17",["Denny picked up his water glass","\"So the robots have taken over,\" he said."],[]),
 (103,"Ch 17",["Priya was looking straight at Denny","But Denny kept going anyway, oblivious to the mood of the people around him, as he usually was."],[]),
-(104,"Ch 17",["He looked at the page a long time, while listening to the frogs at the pond nearby.","He smiled and chuckled."],[]),
+(104,"Ch 17",["He looked at the page a long time, while listening to the frogs at the pond nearby.","This is a pretty good bleed-out spot, he thought. He smiled and chuckled."],[]),
 (105,"Ch 17",["[break] That Sunday Grace helped him clean out the truck."],[]),
 ]

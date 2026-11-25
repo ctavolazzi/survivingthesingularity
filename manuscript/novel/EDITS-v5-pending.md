@@ -402,12 +402,11 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      that he's been through." Book now: "He looked at the page a long time." Change to:
 
      > He looked at the page a long time, while listening to the frogs at the pond nearby. This is a pretty good
-     > bug-out spot, he thought. He smiled and chuckled.
+     > bleed-out spot, he thought. He smiled and chuckled.
 
-     CT added the joke: "he thought to himself, this is a pretty good [bug-out] spot. He smiled and chuckled." Context
-     from CT, not for the page: the smile is "obviously a sign that his nervous system is finally starting to
-     relax." **Open, for CT:** the dictation came through as "bleed out spot"; logged as "bug-out spot" until CT
-     confirms the word.
+     CT added the joke: "he thought to himself, this is a pretty good bleed out spot. He smiled and chuckled." CT
+     confirmed the word: "Bleed out. I meant bleed out." Context from CT, not for the page: the smile is "obviously
+     a sign that his nervous system is finally starting to relax."
 
      CT changed birds to frogs (it is late at night, and birds don't usually sing then): "maybe he's listening to
      the frogs at the pond nearby." Note: the book has no pond at Grace's farm yet; the only one is the flooded low

@@ -427,7 +427,7 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     CALLED: of CT's two options she says "I do not believe you." and "It is so much more", without contractions,
     because the Architect never uses them. Ruby keeps his ("It's").
 50. The kitchen, after "That is the wrong verb." In her paragraph that ends "I would like it to remember you. I spend
-    some of my time on that.", the last sentence becomes "I spend much of my time teaching it to care."
+    some of my time on that.", the last sentence becomes "I spend much of my time working out how to make it care."
 
 ## Claude's calls (2026-11-25)
 

@@ -431,10 +431,14 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      >
      > He nodded.
      >
+     > She asked me first, Elijah thought. He liked the way it made him feel. He was more or less accustomed to
+     > being treated like a thing. Inside his psyche something started to turn. Although Elijah was quite unaware
+     > of it, his nervous system was beginning to relax.
+     >
      > She had the amp out on the tailgate, turning it to the light, reading the stickers like a yearbook.
 
-     Cut: "before he could say anything". **Open, for CT:** how he answers. Logged as a nod; his "I just don't wanna
-     play" a few lines later still works, since saying yes to her looking is not saying yes to playing.
+     Cut: "before he could say anything". The nod is Claude's wording (CT did not say otherwise). The paragraph
+     after it is CT's, verbatim (25 Nov), placed between the nod and her taking the amp out.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

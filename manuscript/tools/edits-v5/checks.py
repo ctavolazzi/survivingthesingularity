@@ -111,5 +111,5 @@ C=[
 (103,"Ch 17",["Priya was looking straight at Denny","But Denny kept going anyway, oblivious to the mood of the people around him, as he usually was."],[]),
 (104,"Ch 17",["He looked at the page a long time, while listening to the frogs at the pond nearby.","You know, he thought, this is a pretty good bleed-out spot.","A chuckle came over him and he went to bed that night feeling a little bit lighter."],[]),
 (105,"Ch 17",["[break] That Sunday Grace helped him clean out the truck."],[]),
-(106,"Ch 17",["\"Can I?\"","She had the amp out on the tailgate, turning it to the light"],["She had the amp out on the tailgate before he could say anything"]),
+(106,"Ch 17",["\"Can I?\"","She asked me first, Elijah thought.","his nervous system was beginning to relax.","She had the amp out on the tailgate, turning it to the light"],["She had the amp out on the tailgate before he could say anything"]),
 ]

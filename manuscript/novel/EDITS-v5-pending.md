@@ -401,8 +401,13 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      around. And: "this is when [Elijah's] nervous system is first starting to relax after all that shit
      that he's been through." Book now: "He looked at the page a long time." Change to:
 
-     > He looked at the page a long time, while listening to the frogs at the pond nearby. This is a pretty good
-     > bleed-out spot, he thought. He smiled and chuckled.
+     > He looked at the page a long time, while listening to the frogs at the pond nearby. You know, he thought,
+     > this is a pretty good bleed-out spot.
+     >
+     > A chuckle came over him and he went to bed that night feeling a little bit lighter.
+
+     CT's final wording (25 Nov): "You know, he thought, this is a pretty good bleed out spot. / A chuckle came over
+     him and he went to bed that night feeling a little bit lighter." It replaces "He smiled and chuckled."
 
      CT added the joke: "he thought to himself, this is a pretty good bleed out spot. He smiled and chuckled." CT
      confirmed the word: "Bleed out. I meant bleed out." Context from CT, not for the page: the smile is "obviously

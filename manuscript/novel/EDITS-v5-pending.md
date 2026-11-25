@@ -312,7 +312,7 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     replies and he quit counting." CALLED, knock-ons in Chapter 8 (Ruby): "All four hundred, and then you kept going"
     becomes "All four thousand, and then you kept going", and "Because there's four hundred of them and one of you,
     and next month it's forty thousand" becomes "Because there's four thousand of them and one of you, and next month
-    it's forty thousand." (Ruby also says "You answered all of them." Four thousand answers is a lot, but it fits
+    it's eight thousand." (CT: forty thousand comments doesn't happen; doubling to eight thousand is feasible.) (Ruby also says "You answered all of them." Four thousand answers is a lot, but it fits
     a man who has stopped sleeping.)
 43. David at the bar: "I pour beer, Mad. What's it going to do, pour it?" becomes "I pour beer, Mad. What's it gonna
     do? Yank the tap handle?" ("Tap handle" for the beer tap; CT's dictation came through as "tab handle".) Elijah's

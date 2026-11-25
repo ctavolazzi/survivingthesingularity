@@ -238,6 +238,9 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     back. ... He felt nearly nothing." The number stays in the sentence because the next paragraph refers back to
     it ("ten-to-the-twenty-sixth watts sat in its cell"), and he types it into the spreadsheet cell, not into the
     scale.
+34. Last line of Chapter 4: "The electric bill was in the mailbox that Monday." becomes "The new electric bill would
+    show up next Monday, and Elijah was dreading it." Chapter 5's opening still fits: "The envelope was thin, which
+    fooled him." now reads as false relief after the dread.
 
 ## Claude's calls (2026-11-25)
 

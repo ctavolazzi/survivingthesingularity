@@ -767,6 +767,12 @@ at 9:40 he stepped out under the eave" and "The next Sunday at 9:40 the aide sai
 **Final pass, CT's standing request (25 Nov): day-of-week tics.** "Tuesday" appears 31 times in the 25 Nov read. Cut
 the ones that only mark time. Keep a day where it matters (a deadline, a service, a dinner).
 
+126. **Chapter 19, Marta and Tyler's cases: "practically a parade."** CT: "Martha said, huh, which from her was
+     practically a parade." (Marta.) Book now: "Marta turned one over in her hands and said "Huh," which from her was
+     a parade." Change to:
+
+     > Marta turned one over in her hands and said "Huh," which from her was practically a parade.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

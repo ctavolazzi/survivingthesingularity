@@ -507,37 +507,78 @@ def prepare_cover():
 
 
 def build_wrap(pages, target, name, model):
-    """Full paperback cover for KDP: back, spine, front on one sheet with 0.125in bleed."""
+    """Full paperback cover for KDP: back, spine, front on one sheet with 0.125in bleed.
+
+    The back and spine sit on the front art mirrored, blurred and tinted, so the colour
+    runs round the spine. The white box at the lower right of the back is left empty:
+    KDP prints the ISBN barcode there.
+    """
+    from PIL import Image, ImageFilter, ImageOps
     from weasyprint import HTML
     per_page = {"white": 0.002252, "cream": 0.0025}[CFG["paper"]]
     spine = round(pages * per_page, 4)
     bleed, tw, th = 0.125, 6.0, 9.0
     width, height = bleed + tw + spine + tw + bleed, th + 2 * bleed
-    col = CFG["cover_colors"]
-    bc = CFG["back_cover"]
-    back = f'<div class="hl">{esc(bc["headline"])}</div>' + "".join(f"<p>{esc(t)}</p>" for t in bc["paragraphs"])
-    spine_html = (f'<div class="spine"><span class="st">{esc(CFG["title"])}</span>'
-                  f'<span class="sa">{esc(model["author"])}</span></div>') if pages >= 80 else ""
+    col, bc = CFG["cover_colors"], CFG["back_cover"]
+    fonts = (REPO / CFG["fonts"]).as_uri()
+
+    art = Image.open(WORK / "cover-art.jpg")
+    px_h = 1400
+    px_w = round(px_h * (bleed + tw + spine) / height)
+    bg = ImageOps.mirror(art)
+    bg = bg.resize((max(px_w, round(bg.width * px_h / bg.height)), px_h))
+    bg = bg.crop((bg.width - px_w, 0, bg.width, px_h)).filter(ImageFilter.GaussianBlur(28))
+    bg = Image.blend(bg, Image.new("RGB", bg.size, tuple(col["tint"])), 0.80)
+    bg.save(WORK / f"{name}-back.jpg", quality=92)
+
+    cls = {"p": "", "turn": ' class="turn"', "close": ' class="close"'}
+    body = "".join(f"<p{cls[k]}>{esc(t)}</p>" for k, t in bc["blocks"])
+    photo = REPO / bc["author_photo"]
+    photo_html = f'<img src="{photo.as_uri()}" alt="" />' if photo.exists() else ""
+    spine_html = (f'<div class="spine">{esc(CFG["title"])}<span class="sa">{esc(model["author"])}</span></div>'
+                  if pages >= 80 else "")
     doc = f"""<!DOCTYPE html><html lang="{CFG['language']}"><head><meta charset="utf-8" />
 <title>{esc(CFG['title'])} cover</title><style>
-@font-face {{ font-family: "Book Serif"; font-weight: 600; src: url("{(REPO / CFG['fonts']).as_uri()}/SourceSerif4-Semibold.otf"); }}
-@font-face {{ font-family: "Book Serif"; font-weight: 400; src: url("{(REPO / CFG['fonts']).as_uri()}/SourceSerif4-Regular.otf"); }}
+@font-face {{ font-family: S; src: url("{fonts}/SourceSerif4-Regular.otf"); }}
+@font-face {{ font-family: S; font-style: italic; src: url("{fonts}/SourceSerif4-It.otf"); }}
+@font-face {{ font-family: S; font-weight: 600; src: url("{fonts}/SourceSerif4-Semibold.otf"); }}
+@font-face {{ font-family: N; src: url("{fonts}/SourceSansPro-Regular.otf"); }}
+@font-face {{ font-family: N; font-weight: 600; src: url("{fonts}/SourceSansPro-Semibold.otf"); }}
 @page {{ size: {width}in {height}in; margin: 0; }}
 html, body {{ margin: 0; padding: 0; }}
-body {{ width: {width}in; height: {height}in; background: {col['background']}; position: relative;
-       font-family: "Book Serif"; font-weight: 600; color: {col['text']}; overflow: hidden; }}
-.front {{ position: absolute; top: 0; left: {bleed + tw + spine}in; width: {tw + bleed}in; height: {height}in;
-          overflow: hidden; }}
+body {{ width: {width}in; height: {height}in; position: relative; overflow: hidden; font-family: S; color: {col['ink']}; }}
+.bg {{ position: absolute; left: 0; top: 0; width: {bleed + tw + spine}in; height: {height}in; }}
+.front {{ position: absolute; top: 0; left: {bleed + tw + spine}in; width: {tw + bleed}in; height: {height}in; overflow: hidden; }}
 .front img {{ height: {height}in; display: block; }}
-.back {{ position: absolute; left: {bleed + 0.6}in; top: {bleed + 0.75}in; width: {tw - 1.2}in; }}
-.back .hl {{ font-size: 25pt; line-height: 1.2; margin-bottom: 0.32in; }}
-.back p {{ font-family: "Book Serif"; font-weight: 400; font-size: 12pt; line-height: 1.5; margin: 0 0 0.75em; }}
+.back {{ position: absolute; left: {bleed + 0.62}in; top: {bleed + 0.62}in; width: {tw - 1.24}in; }}
+.label {{ font-family: N; font-weight: 600; font-size: 8.5pt; letter-spacing: 0.22em; text-transform: uppercase;
+          color: {col['accent']}; margin-bottom: 0.2in; }}
+.hl {{ font-weight: 600; font-size: 23pt; line-height: 1.16; margin-bottom: 0.22in; white-space: nowrap; }}
+.rule {{ width: 0.9in; height: 2.5pt; background: {col['accent']}; margin-bottom: 0.24in; }}
+p {{ font-size: 10.8pt; line-height: 1.5; margin: 0 0 0.7em; }}
+p.turn {{ font-weight: 600; font-size: 16pt; line-height: 1.25; margin: 0.75em 0 0.8em; color: {col['accent']}; }}
+p.close {{ font-style: italic; font-size: 13pt; line-height: 1.4; margin-top: 1em; }}
+.foot {{ position: absolute; left: {bleed + 0.62}in; bottom: {bleed + 0.38}in; width: 2.7in; min-height: 0.8in;
+         padding-left: 0.95in; box-sizing: border-box; font-family: N; font-size: 8.3pt; line-height: 1.4; color: {col['soft']}; }}
+.foot img {{ position: absolute; left: 0; top: 0.02in; width: 0.8in; height: 0.8in; border-radius: 50%; }}
+.foot b {{ font-weight: 600; color: {col['ink']}; font-size: 9pt; letter-spacing: 0.04em; text-transform: uppercase; }}
+.foot .web {{ margin-top: 0.07in; color: {col['accent']}; font-weight: 600; letter-spacing: 0.05em; }}
+.code {{ position: absolute; left: {bleed + tw - 0.25 - 2.0}in; bottom: {bleed + 0.25}in; width: 2in; height: 1.2in; background: #fff; }}
 .spine {{ position: absolute; left: {bleed + tw + spine}in; top: 0; width: {height}in; height: {spine}in;
           transform-origin: 0 0; transform: rotate(90deg); text-align: center; line-height: {spine}in;
-          font-size: {min(16, round((spine - 0.14) * 72 * 0.62, 1))}pt; white-space: nowrap; }}
-.spine .sa {{ margin-left: 4em; font-size: 0.8em; }}
+          font-weight: 600; font-size: {min(15, round((spine - 0.14) * 72 * 0.62, 1))}pt; white-space: nowrap; }}
+.spine .sa {{ margin-left: 3.5em; font-family: N; font-size: 0.63em; letter-spacing: 0.18em; text-transform: uppercase;
+              color: {col['accent']}; }}
 </style></head><body>
-<div class="back">{back}</div>
+<img class="bg" src="{(WORK / f'{name}-back.jpg').as_uri()}" alt="" />
+<div class="back">
+<div class="label">{esc(bc['label'])}</div>
+<div class="hl">{'<br />'.join(esc(l) for l in bc['headline'])}</div>
+<div class="rule"></div>
+{body}
+</div>
+<div class="foot">{photo_html}<b>{esc(bc['author_name'])}</b><br />{esc(bc['author_line'])}<div class="web">{esc(bc['website'])}</div></div>
+<div class="code"></div>
 {spine_html}
 <div class="front"><img src="{(WORK / 'cover-art.jpg').as_uri()}" alt="" /></div>
 </body></html>"""
@@ -560,7 +601,7 @@ def write_listing(specs, base):
             "COST": f"{cost(pb['pages']):.2f}", "MIN": f"{cost(pb['pages']) / 0.6:.2f}",
             "LP_COST": f"{cost(lp['pages']):.2f}", "LP_MIN": f"{cost(lp['pages']) / 0.6:.2f}",
             "PAPER": CFG["paper"],
-            "BACK": "\n\n".join([CFG["back_cover"]["headline"]] + CFG["back_cover"]["paragraphs"]), "BIO": "\n\n".join(CFG["about_author"]["paragraphs"]),
+            "BACK": "\n\n".join([" ".join(CFG["back_cover"]["headline"])] + [t for _, t in CFG["back_cover"]["blocks"]]), "BIO": "\n\n".join(CFG["about_author"]["paragraphs"]),
             "VERSION": CFG["version"]}
     text = tpl.read_text(encoding="utf-8")
     for k, v in vals.items():

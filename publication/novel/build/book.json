@@ -39,17 +39,52 @@
   ],
   "paper": "white",
   "cover_colors": {
-    "background": "#1f3a2d",
-    "text": "#f7f1dc"
+    "tint": [
+      238,
+      231,
+      205
+    ],
+    "ink": "#1f3a2d",
+    "accent": "#b8452c",
+    "soft": "#3d5547"
   },
   "back_cover": {
-    "headline": "So the robots have taken over. Congratulations! You've lost.",
-    "paragraphs": [
-      "Surviving the Singularity isn't just about fending off hordes of Terminator bots or finding food in the era of economic collapse, and climate famines. It's also about staying hidden from autonomous drone swarms and filtering out nanobots from the water!",
-      "Ah, who am I kidding? You don't need to worry about the nanobots in the water. You're just a disembodied brain in a jar. Every sensation you've ever had, every person you've ever known is simply a hallucination produced by neural link electrodes.",
-      "Or maybe none of this is real at all. You're not even a brain in a jar. You're nothing. You're lines of computer code in a simulation. And all of this is just some future society trying desperately to prevent their collapse. You're nothing more than a sim in an alien game.",
-      "Regardless of the true nature of reality, it is happening all around you. And right now, everything is getting a lot weirder, a lot faster."
+    "label": "A Solarpunk Novel",
+    "headline": [
+      "So the robots have taken over.",
+      "Congratulations!",
+      "You’ve lost."
     ],
-    "source": "src/lib/data/sample.md, the original introduction, word for word"
+    "blocks": [
+      [
+        "p",
+        "The night Elijah Madrone ended three careers, he was using artificial intelligence to teach himself how to code."
+      ],
+      [
+        "p",
+        "He showed some realtors what PorusAI could do. A few weeks later, they fired their social media team. Soon after, the layoffs came for Elijah’s friends, then for him."
+      ],
+      [
+        "p",
+        "Now he’s 800 miles north on a solarpunk co-op, trying to predict the future."
+      ],
+      [
+        "p",
+        "But this isn’t a story about fending off hordes of murder bots or uploading your consciousness. This is a story about humanity, falling in love, getting along with your neighbors, and just trying to survive."
+      ],
+      [
+        "turn",
+        "What if AGI arrives and it’s… chill?"
+      ],
+      [
+        "close",
+        "Right now, everything is getting a lot weirder, a lot faster. How are you getting ready?"
+      ]
+    ],
+    "author_name": "Christopher Tavolazzi",
+    "author_line": "is a developer, musician and futurist. He makes videos as The Coffee Jesus and is the founder of Johnny Autoseed.",
+    "author_photo": "static/author-headshot.png",
+    "website": "survivingthesingularity.com",
+    "approved": "CT, 2026-11-25"
   }
 }

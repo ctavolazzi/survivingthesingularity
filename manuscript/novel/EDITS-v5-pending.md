@@ -30,6 +30,20 @@ Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude
     of the kitchen trailer", so the reader hears them from where Elijah is.] Left as is: "three weeks after he
     picked up the broom" at his first Friday dinner, a few paragraphs on; the co-op talked about him for three days,
     and he still waited three weeks for Friday.
+88. How the arms get north (CT: how do they know anything about his life; he would have asked permission; they
+    wouldn't just show up). What the book already has: Grace saw his public post ("Anybody have a dry corner for two
+    robot arms? Can't pay much. Can work.") and offered the shed in her first email ("Your arms can live there for
+    free while you figure it out."). Nobody up north knows about the lien sale. So Elijah asks, and tells them.
+    "The arms came up that first week, the day before the lien sale. Somebody had a flatbed..." becomes:
+
+    > On the fourth day he asked Grace if the dry end of the shed was still free. She had offered it in her first
+    > email, after she saw his post about the arms. He told her the rest of it: two crates in a storage unit off
+    > Highway 99, a lien sale at the end of the week, and nothing to pay it with.
+    >
+    > The arms came up the day before the lien sale. Somebody had a flatbed...
+
+    and the paragraph goes on as before (the table voting to cover the unit as a loan, the crates in the dry end of
+    the equipment shed). [Claude's wording, from CT's question. "On the fourth day" follows edit 87's three days.]
 
 How to read it:
 

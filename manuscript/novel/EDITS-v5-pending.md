@@ -895,6 +895,11 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     recognized Pruitt from the tire shop. Or something like that." Claude's wording; the Ranger detail is added so
     the reader knows why Elijah knows him.]
 
+81. David shows up Thursday with the hand truck. After "David showed up Thursday morning with a hand truck in the back
+    of his pickup." and "Elijah had called him once and he hadn't picked up. Nobody had told him to come." (edit 79),
+    add: "He didn't mention the call. Neither did Elijah." Then "'Heard they close Friday,' David said." as before.
+    [Claude's line, approved by CT. It closes the unanswered call from edit 79 without David explaining it.]
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

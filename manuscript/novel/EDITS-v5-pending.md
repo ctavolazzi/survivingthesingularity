@@ -401,11 +401,15 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      around. And: "this is when [Elijah's] nervous system is first starting to relax after all that shit
      that he's been through." Book now: "He looked at the page a long time." Change to:
 
-     > He looked at the page a long time, while listening to the birds.
+     > He looked at the page a long time, while listening to the frogs at the pond nearby.
+
+     CT changed birds to frogs (it is late at night, and birds don't usually sing then): "maybe he's listening to
+     the frogs at the pond nearby." Note: the book has no pond at Grace's farm yet; the only one is the flooded low
+     spot at the end of bed three, later.
 
 105. **Chapter 17: a scene break before "That Sunday Grace helped him clean out the truck."** CT: "I want the
      [scene] break indicator in there," the three dots used at the other scene breaks. In the Doc that is an empty
-     paragraph between "He looked at the page a long time." (edit 104 adds the birds) and "That Sunday Grace helped
+     paragraph between "He looked at the page a long time." (edit 104 adds the frogs) and "That Sunday Grace helped
      him clean out the truck." The build turns it into the mark.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way

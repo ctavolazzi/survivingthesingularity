@@ -114,5 +114,5 @@ Edit 57 was never used.
 | 101 | Ch 15 | not in the Doc | Can't be much worse, he thought. |
 | 102 | Ch 17 | not in the Doc | Denny picked up his water glass |
 | 103 | Ch 17 | not in the Doc | Priya was looking straight at Denny |
-| 104 | Ch 17 | not in the Doc | He looked at the page a long time, while listening to the birds. |
+| 104 | Ch 17 | not in the Doc | He looked at the page a long time, while listening to the frogs at ... |
 | 105 | Ch 17 | not in the Doc | [break] That Sunday Grace helped him clean out the truck. |

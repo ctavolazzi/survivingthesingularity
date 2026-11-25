@@ -538,8 +538,7 @@ talk. But then he can also remember the woman's words." Placement and wording ar
 
 58. Lines in the book that already mention the offer, brought up to date:
     - Ch 11, in the truck with Gus: "He offered me a job," Elijah said. "Ruby. For doing nothing. Triple what I
-      made." becomes "...For doing nothing. A million dollars." Gus's answer stays: "Good. The ones for nothing are
-      the expensive ones."
+      made." becomes "...For doing nothing. A million dollars." Gus's answer changes under edit 64.
     - Ch 31: "He had turned down the triple salary and the ads and the room." becomes "He had turned down the
       million dollars and the ads and the room."
 55. New lines:
@@ -553,6 +552,14 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     - Ch 15, paying for his mother's room, after "Every twenty he took out came off the far end of her room." add:
       "A million dollars would have pushed the far end of that room out past where he could see it. He did that
       division too, once, and then he stopped doing it."
+
+### Chapter 11: It's Always a Strap
+
+64. In the truck with Gus, after "You take it?" / "No.": "Good. The ones for nothing are the expensive ones." becomes
+    "Good. The ones they offer you for nothing usually cost the most in the end." [CT]
+    With edit 58 the exchange reads: "He offered me a job," Elijah said. "Ruby. For doing nothing. A million
+    dollars." / "You take it?" / "No." / "Good. The ones they offer you for nothing usually cost the most in the
+    end."
 
 ### Chapter 15: The Twenty, Folded Small
 

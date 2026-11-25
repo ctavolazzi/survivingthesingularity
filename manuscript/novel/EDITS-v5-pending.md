@@ -299,6 +299,22 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     This sits in 2023, a year before her stroke; with edit 31 it makes two early signs, this missed call and the
     night call in Chapter 13. She calls normally again in Chapter 7.
 
+### Chapter 6: Four Minutes and Eleven Seconds
+40. He posts the video on a whim. After "He posted the video there, with no caption, because he couldn't think of
+    one." add (CT's beat; wording close to his): "He didn't think about it much. He'd been posting on that page for
+    years as a musician. He just wanted to put it out there in the world." Then "Then he opened the band chat to send
+    the link." as before.
+
+### Chapter 7: You're Early
+41. "His mother called at 9:40 on a Sunday, the way she did." becomes "His mother called at 9:55 that Sunday. A
+    little late, but not terribly unusual." With edits 39 and 31 this is the second small sign before her stroke.
+42. The replies: "By Friday it was four hundred replies and he quit counting." becomes "By Friday it was four thousand
+    replies and he quit counting." CALLED, knock-ons in Chapter 8 (Ruby): "All four hundred, and then you kept going"
+    becomes "All four thousand, and then you kept going", and "Because there's four hundred of them and one of you,
+    and next month it's forty thousand" becomes "Because there's four thousand of them and one of you, and next month
+    it's forty thousand." (Ruby also says "You answered all of them." Four thousand answers is a lot, but it fits
+    a man who has stopped sleeping.)
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

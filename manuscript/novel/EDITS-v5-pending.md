@@ -730,6 +730,17 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     drive." [CT] ("The gauge" was the gas gauge: a quarter tank, no money, two hours to Santa Rosa. Nobody could
     tell.)
 
+72. At his mother's kitchen table, finding there is nobody to call. "...He had not heard her voice since the funeral,
+    and he did not want to hear it now. He went down the list twice, to be sure." / "He was the call." becomes:
+
+    > ...He had not heard her voice since the funeral, and he did not want to hear it now.
+    >
+    > He got up and went down the hall and ran cold water over his face. He went through the list every which way,
+    > but the only person to call was staring at him in the bathroom mirror.
+
+    [CT's last sentence. Claude's bridge: "He got up and went down the hall and ran cold water over his face.", so
+    the mirror is really there; he was sitting at the kitchen table.]
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

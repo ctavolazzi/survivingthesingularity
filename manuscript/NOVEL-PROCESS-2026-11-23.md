@@ -348,6 +348,12 @@ table" (Ch 38, the people who keep the food moving), the friend who gave him the
 "close in five days" against Friday. These two edits went in by exact match without a fresh read of the
 whole Doc, because his own pass had begun; the checker was not run again after them.
 
+**The rest of the flags, and his last calls (25 November).** The 107 flags the first check did not
+reach were each checked against the text, and every claimed contradiction had a second reader try to
+refute it. None held up. All 147 flags are now checked, and the book's only two contradictions were
+the two fixed above. His calls: the Chapter 8 title "Elijah Madrona" stays, and the two held lines
+in Chapter 36 stay as they are ("leave them as they are"). Nothing is left open on the text.
+
 **Not touched, on his instruction at the start of that session:** v4, the Drive "StS Canon and Change
 Record", the Drive Change log and the Story Structure article. So the Canon record and the Change log
 do not list the changes above. This section does.

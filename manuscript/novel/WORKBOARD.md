@@ -106,8 +106,8 @@ What v4 has that v3 did not:
 
 ## Still open, and CT's to call
 
-- Chapter 36, held for his words: "She shook both hands up by her chin." and "There was disgust in
-  her face, and rage, and he just stood there."
+- (Closed Nov 25: the two held lines in Chapter 36 stay as written, his call. The Chapter 8 title
+  "Elijah Madrona" stays.)
 - Chapter 39: the stream cuts from the prayer straight to Grace's face.
 - The parade joke (Chapters 19 and 25), a "looked at" pass on Chapters 15 and 17, and the repeats
   "forty", "nine days" and "like a kid".

@@ -136,4 +136,5 @@ C=[
 (128,"Ch 19",["Reuben had spent thirty years as a title officer at the county"],["came in with it. He looked too pleased with himself"]),
 (129,"Ch 19",["Reuben notices things. It's what makes him such a pain in the ass. But he's quite useful."],['"Reuben notices."']),
 (130,"Ch 19",["Saved our ass quite a few times,\" Lou said, from down the line."],[]),
+(131,"Ch 19",["A startup out of Iowa had an AI that laid out circuit boards.","He came up for air. Did he actually need to know all this?","the minimum viable product","\"How did you turn this around so fast?\" Denny said.","Man, I hate that AI crap. How do you even know it's trustworthy?","I didn't just press a button and throw caution to the wind,","LGTM. Nobody even reads it anymore.","Does a tree need to read its own DNA to produce fruit?"],[]),
 ]

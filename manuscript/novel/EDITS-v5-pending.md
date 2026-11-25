@@ -62,6 +62,10 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 18. Near the end of Chapter 1: "One tower in one apartment was an n of one." becomes "One tower in one apartment
     wasn't much of a prediction engine." (The sentence before it, "He didn't tell Devendra any of this.", stays.)
 
+19. End of Chapter 1: "He left the tower off for a week. Then he opened the notebook where he'd written MADRONE IS NOT A
+    DRONE, turned to a clean page, wrote the date at the top, and started keeping track." becomes: "...Then he opened
+    the notebook where he'd written MADRONE IS NOT A DRONE and started writing." (Comma dropped, mine.)
+
 ## Applied
 
 - Author's Note, 2026-11-25: "They may tell you they moved on because I was an asshole, and they might be right."

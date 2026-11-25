@@ -910,6 +910,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      When it goes into the Doc: "a power bill for $2,011.46" is itself a pending suggestion (the follow-ups), so match
      from "somewhere. He knew" onward and leave the bill's words alone.
 
+134. **Chapter 19, the Rod Code scene: "Marta hadn't said anything either."** CT asked whether it is true (it is: in
+     this scene Marta does not speak until "Frost week"), then: "Short sentences like that can be confusing if taken
+     out of context. So we need to add a little bit of redundancy in those moments, but not every time. It's kind of
+     like dealer's choice here." Book now: "Marta hadn't said anything either. She was looking at Tyler and at the
+     laptop on his knee." Change to [Claude's wording]:
+
+     > Marta hadn't said a word either, not since Grace walked Patricia down the line. She was looking at Tyler and at
+     > the laptop on his knee.
+
+     It ties back to "Grace walked her down the line with a hand on her arm, introducing everybody" at the start of
+     the scene.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -71,6 +71,11 @@ Not built yet. When CT says go:
   logged, in "Places to look at" in `EDITS-v5-pending.md`), and the other runs listed there.
 - Until then, vary the openings in every line Claude writes for an edit.
 
+## Short lines out of context (CT, 25 Nov)
+"Short sentences like that can be confusing if taken out of context. So we need to add a little bit of redundancy in
+those moments, but not every time. It's kind of like dealer's choice here." Example: edit 134, "Marta hadn't said a
+word either, not since Grace walked Patricia down the line." Claude's judgment where; not every short line.
+
 ## What is still open (25 Nov)
 Edits 87 to 128 are logged but not yet in the Doc (edit 57 was never used). Eight Chapter 14 sentence-opening changes were given in chat and
 never logged. Open for CT: Grace's April email (edit 100), "He went and looked. It was there, from April," the

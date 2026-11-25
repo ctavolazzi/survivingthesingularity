@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-23",
   "note": "Every copy of the novel, which version each one holds, and what it was made from. Google Docs are named by title only: this repository is public, so their ids stay out of it. `holds` is what was recorded on the asOf date. `checked` says how that was established, or that it was not.",
   "versions": [
     "2026-11-19",
@@ -7,8 +7,7 @@
     "v1",
     "v2",
     "v3",
-    "v4",
-    "v5"
+    "v4"
   ],
   "instances": [
     {
@@ -101,18 +100,9 @@
       "title": "StS Final Draft v4 Surviving the Singularity",
       "holds": "v4",
       "from": "doc-revised-v3",
-      "role": "The book as it stood before version 5, which was made from it. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures. Leave it as it is.",
-      "checked": "Read on 23 November 2026 at 3:50 PM Pacific: 47 sections, 83,564 words of text, 19 pictures each with a caption, no suggestions or comments open. A code preflight (manuscript/tools/editor-pass/preflight.py) was run twice and is clean. The author is making his final pass in it."
-    },
-    {
-      "id": "doc-v5-draft",
-      "kind": "google-doc",
-      "title": "StS v5 draft (Nov 23)",
-      "holds": "v5",
-      "from": "doc-v4-final-draft",
       "current": true,
-      "role": "The book right now, and the Doc being edited. The author's edits of 25 November (manuscript/novel/EDITS-v5-pending.md) are in it as suggestions waiting on him.",
-      "checked": "Drive lists it as created on 23 November 2026 at 6:54 PM Pacific. That it was made from version 4 is taken from its title and that time; it was not compared with version 4. Read on 25 November 2026: 19 pictures, about 90,600 words if every suggestion is accepted, and 156 suggestions open."
+      "role": "The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures.",
+      "checked": "Read on 23 November 2026 at 3:50 PM Pacific: 47 sections, 83,564 words of text, 19 pictures each with a caption, no suggestions or comments open. A code preflight (manuscript/tools/editor-pass/preflight.py) was run twice and is clean. The author is making his final pass in it."
     },
     {
       "id": "site-compendium",

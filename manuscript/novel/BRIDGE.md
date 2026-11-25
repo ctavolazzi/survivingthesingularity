@@ -2,28 +2,27 @@
 
 The bridge is the one place that says where every copy of the novel is, which copy is the book right now, and how a chat changes the manuscript without breaking it. Any chat, on any surface, starts here.
 
-Recorded on 2026-11-25. This page is written by `node scripts/sts-bridge.mjs export md`. Do not edit it by hand:
+Recorded on 2026-11-23. This page is written by `node scripts/sts-bridge.mjs export md`. Do not edit it by hand:
 change `src/lib/data/novel/instances.json` or `bridge-protocol.json` and export again.
 
 ## The book right now
 
-**StS v5 draft (Nov 23)** (a Google Doc). The book right now, and the Doc being edited. The author's edits of 25 November (manuscript/novel/EDITS-v5-pending.md) are in it as suggestions waiting on him.
+**StS Final Draft v4 Surviving the Singularity** (a Google Doc). The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures.
 
 ## Every copy of the book
 
 | Holds | State | What | Where |
 |---|---|---|---|
-| 2026-11-19 | behind by 6 | The author's Doc as it stood on 19 November, with his planning notes above the novel. | FINAL StS Manuscript |
-| 2026-11-19 | behind by 6 | The repository copy of that Doc. Its commit history is the version history up to 19 November. | manuscript/novel/FINAL-StS-Manuscript.md |
-| final | behind by 5 | The novel alone, 20 November. The first Revised Manuscript was made from it. | Surviving the Singularity, Final Manuscript |
-| v1 | behind by 4 | Contradictions fixed, the 19 picture placeholders filled, the appendix added. | Surviving the Singularity, Revised Manuscript |
-| v2 | behind by 3 | The fact-checked text: 204 claims checked, 13 changed. | Surviving the Singularity, Revised Manuscript v2 |
-| v2 | behind by 3 | What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures. | The private reader at /novel/<key>/ |
-| v3 | behind by 2 | The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is. | Surviving the Singularity, Revised Manuscript v3 |
+| 2026-11-19 | behind by 5 | The author's Doc as it stood on 19 November, with his planning notes above the novel. | FINAL StS Manuscript |
+| 2026-11-19 | behind by 5 | The repository copy of that Doc. Its commit history is the version history up to 19 November. | manuscript/novel/FINAL-StS-Manuscript.md |
+| final | behind by 4 | The novel alone, 20 November. The first Revised Manuscript was made from it. | Surviving the Singularity, Final Manuscript |
+| v1 | behind by 3 | Contradictions fixed, the 19 picture placeholders filled, the appendix added. | Surviving the Singularity, Revised Manuscript |
+| v2 | behind by 2 | The fact-checked text: 204 claims checked, 13 changed. | Surviving the Singularity, Revised Manuscript v2 |
+| v2 | behind by 2 | What a reader with the private link sees. One Markdown file for each section, in the order novel.json gives, with the 19 pictures. | The private reader at /novel/<key>/ |
+| v3 | behind by 1 | The book as it stood before version 4, which was made from it. It keeps its 19 pictures. Leave it as it is. | Surviving the Singularity, Revised Manuscript v3 |
 | v3 | stale copy | Superseded. A copy of v3 made at 8:05 on 22 November with the 19 pictures and captions removed. It has none of the edits made to v3 after that. It was first titled Revised Manuscript v4. | OLD: v3 text-only copy from Nov 22 morning (not v4) |
-| v4 | behind by 1 | The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and "Waiting on you". Then the rulings ("Decided so far"), a profile for every character, the list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
-| v4 | behind by 1 | The book as it stood before version 5, which was made from it. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures. Leave it as it is. | StS Final Draft v4 Surviving the Singularity |
-| v5 | CURRENT | The book right now, and the Doc being edited. The author's edits of 25 November (manuscript/novel/EDITS-v5-pending.md) are in it as suggestions waiting on him. | StS v5 draft (Nov 23) |
+| v4 | up to date | The plan for version 4 and the place where sessions leave notes for the author. At the top: who is working on what, and "Waiting on you". Then the rulings ("Decided so far"), a profile for every character, the list of fixes, and four notes for every chapter. No prose. | v4 scaffold |
+| v4 | CURRENT | The book right now, and the Doc being edited. Built from v3 by Claude Duet with the author's rulings of 22 and 23 November, then extended by the author on 23 November (the two robot arms, Grace's sister Faith and her father, the note in the amp's pouch, a new ending). It has the 19 pictures. | StS Final Draft v4 Surviving the Singularity |
 | v3 | stale copy | Topics and entries about the people, places and things in the book. Written from v3 as it stood on the morning of 22 November. Out of date since: it still says Second Crop (now Crop Dust), and its Items entry is the Fisher woodstove, which v3 has replaced with an amp. | The compendium at /novel/<key>/compendium |
 
 Google Docs are named by title only, because this repository is public. Search Drive for the title.

@@ -110,6 +110,47 @@ Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude
     of off telling it."; Priya's pencil; Marta's "Let him eat first". This replaces the earlier draft of edit 90,
     which put the coaxing before his definitions; Lou is introduced at "What's it eat?" as in edit 89.]
 
+### Elijah's father, and why he turns down the money (Chapters 0, 8, 10)
+
+CT, 2026-11-25: Elijah turns down the money because of his father. His dad worked hard his whole life, made smart
+investments (not prolific, not an early Google investor; a friend helped him play the market well), and retired
+from the utility company with a good pension, back when they still gave those, so he was retired for most of
+Elijah's life and they had a lot of good time together. He always told Elijah never to take a handout: "You gotta
+work hard for every penny"; "The hand that feeds you controls you, remember that. So at least pick someone kind to
+work for." Ironic, since he lived on a pension. When the woman says "Trust no one", Elijah remembers his father,
+and that is why he says no to Ruby. Foreshadow it where the book first introduces him, and have a friend say "Man,
+I sure wish I could get a handout. Every month I feel like I'm barely getting by."
+What the book already says about him: he got sick (the star thistle summer), died about ten years before the
+story, watched Iron Derby with Elijah, and is Melody's father. Nothing below contradicts that.
+
+91. Chapter 0. After the paragraph "Elijah had grown up on a working farm in Sonoma County... That, it would turn
+    out, was the most useful thing he ever learned." and before "Before the pandemic, Elijah's life ran on three
+    engines.", add:
+
+    > His father worked his whole life, and he worked his ass off. He had a career at the utility company and a
+    > friend who helped him play the market well. He was never rich. He was no early Google investor. But he made
+    > smart choices, and when he retired he got a good pension, back when they still gave those. He was retired for
+    > most of Elijah's life, so the two of them got a lot of good time together, out on the farm and in front of the
+    > TV.
+    >
+    > He told Elijah the same thing for twenty years. "Never take a handout. You work hard for every penny you get in
+    > this life, son. The hand that feeds you controls you. Remember that. So at least pick someone kind to work
+    > for." It was a long time before Elijah noticed that this came from a man living on a pension.
+    >
+    > He said it once to Wes, in the van after a gig, splitting a tip jar three ways. Wes laughed. "Man, I sure wish
+    > I could get a handout. Every month I feel like I'm barely getting by."
+
+    [CT's facts and lines. Claude's wording; the friend is Wes, the band's flyer maker, who is barely getting by in
+    the book, and the tip jar is the band's. "In front of the TV" points to Iron Derby in Ch 11.]
+92. Chapter 8, the whisper at the coffee urn (edit 45). After "Trust no one. Don't take the golden handcuffs." and
+    before "She backed up, looked him right in the eyes, and nodded.", add: "For a second it was his father's voice.
+    The hand that feeds you controls you." [Claude]
+93. Chapter 10, after he turns down the million (edit 63). The paragraph "He didn't know why he listened to her and
+    not Ruby. ... He was always someone who had trusted his gut." gets a last sentence: "And there was his father,
+    plain as the kitchen table: never take a handout. A million dollars to do nothing was the biggest handout anyone
+    had ever offered him." [Claude, from CT's "that's why he decides not to take it".] CT: "Same thing for the next
+    opportunity" (Gus, Ch 11) needs no line.
+
 ## Needs CT (answered)
 
 Settled by CT on 2026-11-25: keep edit 5 ("chasm"), keep edits 14 and 56 (David's line), keep edit 9 ("first month

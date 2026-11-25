@@ -235,6 +235,12 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     [CT's beats and most of the words. Claude: "and she was always keeping things from him so he wouldn't be", which
     says why it was a frustration on both sides.]
 
+### Chapter 15: The Twenty, Folded Small
+
+99. Applying for jobs from the truck. "One of them asked him to record a video introduction. He looked at himself in
+    the little window for a while and closed it." The second sentence becomes "He looked at himself in the phone
+    screen and realized just how haggard he'd become. He closed it." [CT]
+
 ### Chapter 14: A Stain Shaped Like Ohio
 
 94. When he blocks Melody, the memories come (CT: a rush of memory of being bullied his whole life, told he was

@@ -506,6 +506,10 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
 
      Book now: at Rosa's door, Rosa: "He said co-op. I can't do work days. Not now." / Curtis lowered the phone.
      "You don't owe us a work day." Grace is not there in person; she is on Curtis's phone, on speaker.
+     Context from CT, NOT for the page: "This is the first time the reader might remember what Bidwell had said and
+     be like, oh, are one of these people the spy?" (Bidwell, in the Meanwhile: "Find out where he lands. Then put
+     somebody near him.") The doubt Curtis's slip plants should let that thought arrive on its own.
+
      **Open, for CT:** where Grace is when she touches his arm (see the question in chat, 25 Nov).
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way

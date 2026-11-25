@@ -119,4 +119,5 @@ C=[
 (111,"Ch 17",["Curtis adjusted himself in the seat. \"So go on."],[]),
 (112,"Ch 18",["Elijah's next crisis found him in late April","He more or less stumbled into it."],["The spiral found Elijah again in late April."]),
 (113,"Ch 18",["Elijah read the announcement post standing in the gravel lot"],["He read the launch post standing in the gravel lot"]),
+(114,"Ch 18",["a man with an anime avatar explaining whose fault it was.","the compelling crackpots of the world rose to meet his demand."],["a man with a flag avatar"]),
 ]

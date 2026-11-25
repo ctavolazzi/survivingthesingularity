@@ -581,6 +581,19 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      If CT wants it in the sentence itself: "Elijah read the announcement post for Companion 2.0 standing in the
      gravel lot..." and the first sentence goes.
 
+114. **Chapter 18, the reading spiral: anime avatar, and he consumes.** CT: "not a man with a flag avatar, a man with an
+     anime avatar. He saw many such posts, right? He consumed until he couldn't consume anymore. He was voracious in
+     his appetite. And the compelling crackpots of the world rose to meet his demand." Book now: "...a different
+     economist explaining why it was over, a man with a flag avatar explaining whose fault it was." Change to [CT's
+     words, verbatim, with the "right?" dropped]:
+
+     > ...a different economist explaining why it was over, a man with an anime avatar explaining whose fault it was.
+     >
+     > He saw many such posts. He consumed until he couldn't consume anymore. He was voracious in his appetite. And
+     > the compelling crackpots of the world rose to meet his demand.
+
+     Then "Somewhere after midnight he found the layoff tracker..." as before.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

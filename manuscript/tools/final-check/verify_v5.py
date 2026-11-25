@@ -438,8 +438,16 @@ vals = [v for v, i, m in values(r"\b(\w+) feet(?: from Walt's| down|\. never bee
 vals2 = [v for v, i, m in values(r"well(?:'s)?,? (?:down )?(\w+) feet")]
 check("E continuity", "Manny's well is four feet down both times", [v for v in vals + vals2 if v in ("four",)].__len__() >= 2 and
       "manny says his well's down four feet" in cur_text and "Manny's well, four feet down" in cur_text)
-check("E continuity", "The power bill is $211.46, then $211", "$211.46" in cur_text and
-      set(re.findall(r"\$211(?:\.\d\d)?", cur_text)) <= {"$211.46", "$211"})
+check("E continuity", "The power bill is $2,011.46 every time (Ch 5, 19, 21)",
+      cur_text.count("$2,011.46") == 3 and not re.search(r"\$2,?011(?!\.46)|\$2011|\$211\b", cur_text) and
+      "Nearly two thousand dollars of difference" in cur_text,
+      "; ".join(sorted(set(re.findall(r"\$2?,?011(?:\.\d\d)?|\$211(?:\.\d\d)?", cur_text)))))
+check("E continuity", "Devendra has three kids (Ch 1 and Ch 25)",
+      '"I got a mortgage and three kids.' in cur_text and "I have a mortgage and three kids in a good school" in cur_text and
+      not re.search(r"mortgage and two kids", cur_text))
+check("E continuity", "The replies are four thousand (Ch 7 and Ch 8)",
+      "By Friday it was four thousand replies" in cur_text and "Because there's four thousand of them and one of you" in cur_text and
+      not re.search(r"four hundred (?:replies|of them)|hundreds of (?:strangers|them)", cur_text))
 check("E continuity", "Walt's tractor repair is sixty dollars every time",
       cur_text.count('"Sixty," Marta said.') == 1 and "running for sixty bucks once" in cur_text and
       "fixed the husband's tractor for sixty dollars" in cur_text)

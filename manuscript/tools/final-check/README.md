@@ -9,7 +9,7 @@ Find the current manuscript through the bridge first (`node scripts/sts-bridge.m
 
 | File | What it does |
 | --- | --- |
-| `verify_v5.py DATA_DIR` | The checker. 93 checks in nine groups (below). Writes `verify_report.txt` into DATA_DIR. Exits 1 on any FAIL. |
+| `verify_v5.py DATA_DIR` | The checker. 95 checks in nine groups (below). Writes `verify_report.txt` into DATA_DIR. Exits 1 on any FAIL. |
 | `selftest.py DATA_DIR WORK_DIR` | Shows the checker can fail. It plants 21 faults, one at a time, in copies of the manuscript and requires the named check to catch each one. |
 | `line_edits.json` | The 24 edits of the session that can be written as find and replace, each with the words before and after: 15 from the final edit, 3 in Chapter 35, and 6 from the last changes (Chapters 19, 31, 33, 38 and 39). The two paragraph moves (Chapter 39, and the close of the stove scene in Chapter 35) are written into the checker. |
 | `reviewed_vocabulary.txt` | Every distinct word in v5 (5,403), read through by eye. The spelling check fails on any word that is not in it. There was no dictionary on the machine. |

@@ -1231,9 +1231,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > Elijah thought they were both right. That was his excuse. He had a power bill for $2,011.46 in a box
      > somewhere, so he knew what the thing drank. But the real reason was the board, where he had used one himself,
      > at midnight, and told no one. One company. Zero people who could read it. He had done that arithmetic at the
-     > whiteboard, and then he had kept going. Now a nineteen-year-old had done the same thing out loud, in a night,
-     > with the two weeks Elijah had set aside to make up for it. The boxes worked. Forty growers would get them for a
-     > price they could pay.
+     > whiteboard, and then he had kept going. Now a nineteen-year-old had done the same thing out loud. In one night
+     > he had written the firmware Elijah had set aside two weeks to write by hand, to make up for the board. The
+     > boxes worked. Forty growers would get them for a price they could pay.
      >
      > He had helped build one of these machines. Once, in a bar, he had shown one off, and three people lost their
      > jobs. Kelsey. Carol. Mateo. Their names had come off the realtors' website the week after the toast, and he
@@ -1244,8 +1244,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > company's name was at the top of every one of them. To Tyler it had never been a secret. It was a file. He
      > looked down the line at Elijah once, saw his face, and understood. He didn't say it. Nobody had asked him to.
 
-     "what would have taken him two weeks" becomes "with the two weeks Elijah had set aside to make up for it": since
-     edit 131 the two weeks are his penance for the board, so the kid did in a night what Elijah meant to do by hand.
+     "what would have taken him two weeks" becomes "In one night he had written the firmware Elijah had set aside two
+     weeks to write by hand, to make up for the board": since edit 131 the two weeks are his penance for the board.
      When it goes into the Doc: "a power bill for $2,011.46" is itself a pending suggestion (the follow-ups), so match
      from "somewhere. He knew" onward and leave the bill's words alone.
 

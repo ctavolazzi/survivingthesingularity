@@ -172,8 +172,8 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     > fun.
     >
     > But after the last relationship he was in, he had decided that at this point in his life he was looking for
-    > forever, not just tonight. Not that tonight couldn't turn into forever. But he had a picture of what he was
-    > looking for, and tonight he just wasn't feeling it.
+    > forever, not just tonight. Not that tonight couldn't turn into forever. But he didn't feel like getting
+    > entangled in a city he barely knew. At least, not today.
     >
     > He went to get a coffee.
 

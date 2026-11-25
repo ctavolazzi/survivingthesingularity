@@ -561,6 +561,14 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     dollars." / "You take it?" / "No." / "Good. The ones they offer you for nothing usually cost the most in the
     end."
 
+65. Gus's pitch for the show. He plays his cards too soon (CT: "Nobody would do that if they're trying to sell
+    somebody on an idea"). Cut the paragraph right after the pitch: He kept his eyes on the road. "Truth is, I've
+    got a shop full of arms nobody wanted and a bus with nobody in the other seat. I'm tired of driving it alone."
+    The pitch then ends on "I'll fly you out to the shop next week. Let's do it." and goes straight to "It was a
+    good idea. Elijah could see it." [CT's call; Claude chose to cut the whole paragraph. Nothing later depends on
+    it. It is the only place Gus admits he is lonely; if CT wants that kept, it would have to come after Elijah
+    says no, not before.]
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

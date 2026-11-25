@@ -217,6 +217,24 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     Chapter 0. His typed line is lower case with no punctuation, like the texts in the book; the reply is set like
     its other replies (Ch 7: "You're not crazy, Elijah, it wrote. You're early.").]
 
+### Chapter 13: The Buckets in the Barn
+
+98. In the barn, why she never told him (CT: he realizes she didn't tell him because she didn't want him to worry;
+    it was a constant thing and a big frustration between them, because he was always worried about her, the farm,
+    his family, his friends, everything; people often said it seemed like he just didn't care, but that couldn't be
+    further from the truth; it wasn't that he didn't care, he didn't always know how to show it). After "The slips
+    were in a coffee can. ... and that was where the payment on the place had gone since the new year." and before
+    "The amp was in the back, under its blanket, behind the wheat.", add:
+
+    > She hadn't told him because she didn't want him to worry. It was a constant thing between them, and a big
+    > frustration. He was always worried, about her, about the farm, about his family and his friends and
+    > everything else, and she was always keeping things from him so he wouldn't be. People often said it seemed
+    > like he just didn't care. That couldn't have been further from the truth. It wasn't that he didn't care. He
+    > just didn't always know how to show it.
+
+    [CT's beats and most of the words. Claude: "and she was always keeping things from him so he wouldn't be", which
+    says why it was a frustration on both sides.]
+
 ### Chapter 14: A Stain Shaped Like Ohio
 
 94. When he blocks Melody, the memories come (CT: a rush of memory of being bullied his whole life, told he was

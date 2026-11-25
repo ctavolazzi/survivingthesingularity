@@ -490,6 +490,24 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      **Open, for CT:** CT said "if you wanted to play"; she is talking to Lou about Elijah, so logged as "if he
      wanted to play". Lou's "I know you were." is Claude's.
 
+109. **Chapter 17, the ride-along to Rosa's: "You don't owe us a work day" (WORDING WAITING ON CT).** CT: the
+     exchange where Curtis says "You don't owe us a work day" is confusing; clean it up "to indicate who's talking
+     and what's actually happening." CT's beats, as he said them:
+     - Elijah is confused: "I'm sorry, I thought I was here to contribute."
+     - Grace: "You are, and you do." She touches him on the arm: "an electric moment for him," "a clearly
+       affectionate touch, one of the first ones he's felt in a while." Her meaning: "your knowledge earns your keep
+       here, you know, Elijah."
+     - Curtis: "Your knack for marketing is going to come in real handy."
+     - Grace scolds him: "Curtis, not now."
+     - Curtis: "What? The dude's got the gift for gab. I thought we agreed."
+     - Grace cuts it off: "Curtis, I said not now."
+     - Elijah "just felt affection, but now he's feeling doubt ... a little bit of a seed of doubt in his mind. But
+       we don't need to go into it too hard. It's just clear from the scene that something else is going on."
+
+     Book now: at Rosa's door, Rosa: "He said co-op. I can't do work days. Not now." / Curtis lowered the phone.
+     "You don't owe us a work day." Grace is not there in person; she is on Curtis's phone, on speaker.
+     **Open, for CT:** where Grace is when she touches his arm (see the question in chat, 25 Nov).
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

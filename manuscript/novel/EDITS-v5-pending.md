@@ -6,6 +6,14 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 2026-11-25 against a fresh read of the Doc; the edit-by-edit record is `EDITS-v5-applied.md`. New edits start at
 87 and go in "New edits" below. The publication files (`publication/novel/build/build.sh`) have not been rebuilt.
 
+## Character notes from CT (context, not for the page)
+
+- Elijah, 2026-11-25: "It makes sense that people think he's just some punk-ass rich kid with a bone to pick with
+  the world. And from a certain perspective, he kind of is. But from his perspective, he's just trying to
+  demonstrate that he cares in all the ways he was told that he didn't." Also: "somebody who was falsely accused of
+  being a piece of shit and spent his whole life trying to prove otherwise."
+- Gus expected Elijah to say no to the show, which is why he lets the loneliness slip (edit 65).
+
 ## New edits (from 87)
 
 Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude's.

@@ -163,6 +163,7 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 ### Meanwhile (the first one, after Chapter 2: the Bidwell scene)
 26. "Corpus. The body of work. Everything anyone ever made with the software." becomes: "Corpus. The body of work.
     Everything anyone ever made with their software and stored on their servers."
+27. "Find out what the dirt costs," he said. becomes: "Find out what their dirt costs," he said.
 
 ## Claude's calls (2026-11-25)
 

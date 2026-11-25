@@ -66,6 +66,8 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     DRONE, turned to a clean page, wrote the date at the top, and started keeping track." becomes: "...Then he opened
     the notebook where he'd written MADRONE IS NOT A DRONE, turned to a clean page, and started writing." Only "wrote
     the date at the top" is cut, and "started keeping track" becomes "started writing".
+20. Chapter 1, when the tower shuts off. Elijah says "Shit." Placement (mine): after "The fans coasted to silence.",
+    so the paragraph ends: Black screen. The fans coasted to silence. "Shit." The room ticked as it cooled.
 
 ## Applied
 

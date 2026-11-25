@@ -752,6 +752,14 @@ talk. But then he can also remember the woman's words." Placement and wording ar
 
     [CT]
 
+74. The messages after the clip. "He read every one. His mother had raised him to answer a letter. He couldn't answer
+    these, and he couldn't stop reading them." becomes "He read every one. His mother had always raised him to be
+    someone who wrote back. He couldn't bring himself to answer these, but he also couldn't stop himself from
+    reading." [CT]
+    Knock-on [Claude]: the same phrase first appears in Ch 7, when the first messages come in: "They had taken the
+    trouble to write, and his mother had raised him to answer a letter." becomes "...and his mother had raised him to
+    be someone who wrote back." so the Ch 13 line still reads as a callback.
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

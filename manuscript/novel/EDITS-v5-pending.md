@@ -433,12 +433,13 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      >
      > She asked me first, Elijah thought. He liked the way it made him feel. He was more or less accustomed to
      > being treated like a thing. Inside his psyche something started to turn. Although Elijah was quite unaware
-     > of it, his nervous system was beginning to relax.
+     > of it, his nervous system was beginning to let down its guard.
      >
      > She had the amp out on the tailgate, turning it to the light, reading the stickers like a yearbook.
 
      Cut: "before he could say anything". The nod is Claude's wording (CT did not say otherwise). The paragraph
-     after it is CT's, verbatim (25 Nov), placed between the nod and her taking the amp out.
+     after it is CT's, verbatim (25 Nov), placed between the nod and her taking the amp out. CT then changed its last words: "His
+     nervous system was beginning to let down its guard. That's a better way to say it."
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

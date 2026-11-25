@@ -812,7 +812,7 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     Then the next paragraph opens with a new sentence [CT]: "He was polite and kind, but firm. He was very sorry
     about Elijah's mother..." and goes on as before. ("He" for CT's "The man from Sacramento", since the line before
     already names him.)
-    Knock-on: the notary and her Camry are gone (edit 79 signs it over DocuSign), so the Oldsmobile is the only car.
+    Knock-on: the notary's Camry is gone (edit 79 moves the signing to the bank), so the Oldsmobile is the only car.
     [CT: "we need to keep it consistent".] [CT's beats and the Oldsmobile lines. Claude's
     wording otherwise. The man no longer comes "Monday, in a clean pickup"; he arrives in the middle of this. Ruby's
     number here is the golden handcuffs coming back (edits 45, 53, 55).]
@@ -858,15 +858,28 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     >
     > After staring at the card the man had left behind for what felt like an hour, Elijah picked up the phone.
     >
-    > The deal was done over DocuSign. Nice and easy, clean. Elijah signed where the yellow tabs were.
+    > Before he signed anything, he took it all to the bank, to make sure what he was doing was legit. He may have
+    > been naive, but he wasn't an idiot. The banker went through every page and said the paperwork was in order,
+    > and asked if he wanted to use the bank's notary. He did. Elijah signed where the yellow tabs were, and the bank
+    > faxed everything over to the man from Sacramento. Going through somebody in the middle made it all feel a
+    > little safer.
+    >
+    > A few days later, on Friday, the wire cleared. The money went into an account that said Linda Madrone across
+    > the top, with his name under hers, and the place with the rose garden took the first of it that afternoon.
+    > Elijah knew his mother was safe.
+    >
+    > He did not keep any. He thought about it for the length of time it took the notary to find her stamp.
 
-    That replaces "A notary came out in a Camry and they did it on the kitchen table. Elijah signed where the yellow
-    tabs were." ["After staring at the card..." and the DocuSign line are CT's. "Elijah signed where the yellow tabs
-    were." is kept from the book; DocuSign marks the places to sign with yellow tabs.] Then "On Friday, when it
-    closed, the money would go into an account that said Linda Madrone across the top..." as before. Knock-on
-    [Claude]: "He did not keep any. He thought about it for the length of time it took the notary to find her
-    stamp." becomes "...He thought about it for the length of time it took the page to load." "The buckets went with
-    the place. He did not bring them up, and neither did the man." stays. [CT's beats and lines ("Get bent", "I'll fucking figure it out", "Then the dam broke" in
+    This replaces the book's "A notary came out in a Camry and they did it on the kitchen table. Elijah signed where
+    the yellow tabs were. On Friday, when it closed, the money would go into an account that said Linda Madrone
+    across the top, with his name under hers, and the place with the rose garden would take the first of it that
+    afternoon. / He did not keep any. He thought about it for the length of time it took the notary to find her
+    stamp." [CT: the card and the phone, the bank first, "He may have been naive, but he wasn't an idiot", the bank's
+    notary, the bank faxing it over, the intermediary feeling safer, the wire clearing a few days later, "Elijah knew
+    his mother was safe". The DocuSign line from CT's earlier message is dropped, since his newer version runs it
+    through the bank. Kept from the book: the yellow tabs, the account in her name, the rose garden, and the notary
+    finding her stamp, which now happens at the bank. "On Friday" keeps David's later "Heard they close Friday"
+    true.] "The buckets went with the place. He did not bring them up, and neither did the man." stays. [CT's beats and lines ("Get bent", "I'll fucking figure it out", "Then the dam broke" in
     substance, the digger, the Crisco, "came up empty", the card and the phone). Claude's wording otherwise.]
     Claude's calls:
     - The arms. In the book they only become his, and go into storage, in Chapter 15 (edit 66). Here they are still

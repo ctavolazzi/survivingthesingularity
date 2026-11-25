@@ -534,9 +534,11 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      > They drove back.
 
      Then "Rosa checked the containers..." as before. Rosa's "mijo" (edit 110) comes right after the doubt.
+     Context from CT, NOT for the page: "marketing" is deliberate. Elijah is a creator, not a marketer: he has done
+     code, social media and some good videos, and has not really sold anything. Curtis's line is the slip: they
+     want him for something he has no experience in. Nothing in the book needs to fix that.
      **Open, for CT:** the touch lines and "Your knowledge earns your keep here, Elijah. That's all." are Claude's
-     wording for his beats; "marketing" is his word and the book has not set up Elijah's marketing yet, so check it
-     reads. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
+     wording for his beats; "marketing" is his word. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

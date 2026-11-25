@@ -408,6 +408,25 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 
     "He stood up and wiped his hand on his jeans and held it out. 'Ruby.'" follows as before.
 
+### Chapter 9: The Wrong Verb
+49. The kitchen, the third word. After "The singularity," Ruby said, with his mouth full. and before her explanation
+    ("It is borrowed from physics..."), add (CT's lines):
+
+    > "Do you know what it means?"
+    >
+    > "Of course I know what it means."
+    >
+    > "I do not believe you."
+    >
+    > "It's just a single point."
+    >
+    > "It is so much more than that."
+    >
+    > "Okay. Well then, enlighten me."
+
+    CALLED: of CT's two options she says "I do not believe you." and "It is so much more", without contractions,
+    because the Architect never uses them. Ruby keeps his ("It's").
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

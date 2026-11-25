@@ -24,8 +24,8 @@ section.titlepage { text-align: center; bookmark-level: none; }
 section.titlepage h1 { font-size: 2.1em; padding-top: 38%; margin-bottom: 0.6em; bookmark-level: none; }
 section.titlepage p { text-indent: 0; text-align: center; }
 section.titlepage p.author { margin-top: 4.5em; font-size: 1.15em; }
-section.copyright p { text-indent: 0; text-align: left; font-size: 0.85em; hyphens: none; }
-section.copyright { padding-top: 110%; }
+section.copyright p { text-indent: 0; text-align: left; font-size: 0.82em; line-height: 1.4; hyphens: none; margin-bottom: 0.8em; }
+section.copyright { padding-top: 55%; }
 
 ul.toc { list-style: none; margin: 0; padding: 0; font-size: 0.95em; line-height: 1.4; }
 ul.toc li a::after { content: leader(" ") target-counter(attr(href), page); }

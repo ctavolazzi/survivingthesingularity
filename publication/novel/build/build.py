@@ -34,6 +34,15 @@ GUTTERS = [(150, 0.375), (300, 0.5), (500, 0.625), (700, 0.75), (828, 0.875)]
 GUTTER_EXTRA = 0.125
 
 
+def copyright_lines():
+    labels = {"paperback": "paperback", "large_print": "large print paperback", "ebook": "ebook"}
+    isbns = [f"ISBN {v} ({labels[k]})" for k, v in CFG.get("isbn", {}).items() if v]
+    out = []
+    for line in CFG["copyright_page"]:
+        out += isbns if line == "{ISBN}" else [line]
+    return out
+
+
 def die(msg):
     sys.exit(f"build: {msg}")
 
@@ -76,6 +85,9 @@ def paras_from_google_json(path, imgdir):
             elif "inlineObjectElement" in e:
                 oid = e["inlineObjectElement"]["inlineObjectId"]
                 cached = SRC_CACHE / "images" / f"{oid}.png"
+                if not CFG.get("include_pictures", True):
+                    images.append(b"")
+                    continue
                 if not cached.exists():
                     uri = objects[oid]["inlineObjectProperties"]["embeddedObject"]["imageProperties"]["contentUri"]
                     cached.parent.mkdir(parents=True, exist_ok=True)
@@ -180,7 +192,18 @@ def structure(paras):
         sections.append({"id": f"sec-{n + 1:02d}", "kind": kind, "title": heading,
                          "title_runs": blocks[start]["runs"],
                          "chapter": int(m.group(1)) if m else None, "blocks": clean})
-    return {"title_display": title, "title_block": title_block, "author": author,
+    if [t["text"] for t in toc] != [s["title"] for s in sections]:
+        die("the Contents list in the manuscript does not match the headings:\n" + "\n".join(
+            f"  list: {a!r}  heading: {b!r}" for a, b in
+            zip([t["text"] for t in toc], [s["title"] for s in sections]) if a != b))
+    bio = CFG.get("about_author")
+    if bio:
+        sections.append({"id": f"sec-{len(sections) + 1:02d}", "kind": "matter", "title": bio["title"],
+                         "title_runs": [[bio["title"], False, False]], "chapter": None, "added": True,
+                         "blocks": [{"t": "p", "runs": [[t, False, False]]} for t in bio["paragraphs"]]})
+        toc.append({"text": bio["title"], "strong": False, "added": True})
+    return {"copyright_lines": copyright_lines(),
+            "title_display": title, "title_block": title_block, "author": author,
             "toc": toc, "sections": sections, "images": nimg, "pictures_left_out": left_out}
 
 
@@ -237,7 +260,7 @@ def body_html(sections, with_classes=True):
     first = True
     for s in sections:
         cls = [s["kind"]]
-        if prev_kind == "act" or s["title"] in ("About This Book", "Afterword", "Appendix"):
+        if prev_kind == "act" or s["title"] in ("About This Book", "Afterword", "Appendix", "About the Author"):
             cls.append("recto")
         if first:
             cls += ["recto", "pageone"]
@@ -268,7 +291,7 @@ def title_html(model):
 
 
 def copyright_html():
-    return "\n".join(f"<p>{esc(line)}</p>" for line in CFG["copyright_lines"])
+    return "\n".join(f"<p>{esc(line)}</p>" for line in copyright_lines())
 
 
 def css(names, **vars):
@@ -375,7 +398,7 @@ def build_epub(model, sections, target, name, ident):
             "--resource-path", str(WORK / "epub"),
             "-M", f"title={CFG['title']}", "-M", f"author={model['author']}",
             "-M", f"lang={CFG['language']}", "-M", "toc-title=Contents",
-            "-M", "rights=" + " ".join(CFG["copyright_lines"]),
+            "-M", "rights=" + CFG["copyright_page"][1] + ". All rights reserved.",
             "-M", f"identifier=urn:uuid:{uuid.uuid5(uuid.NAMESPACE_URL, ident)}"]
     if (WORK / "cover.jpg").exists():
         args += ["--epub-cover-image", str(WORK / "cover.jpg")]
@@ -390,7 +413,7 @@ def build_docx(model, sections, target, name):
     front = [f'<div custom-style="Title"><p>{inline(tb[0]["runs"])}</p></div>']
     front += [f'<div custom-style="Subtitle"><p>{inline(b["runs"])}</p></div>' for b in tb[1:-1]]
     front.append(f'<div custom-style="Author"><p>{inline(tb[-1]["runs"])}</p></div>')
-    lines = CFG["copyright_lines"]
+    lines = copyright_lines()
     front.append(f'<div custom-style="Copyright First"><p>{esc(lines[0])}</p></div>')
     front += [f'<div custom-style="Copyright"><p>{esc(l)}</p></div>' for l in lines[1:]]
     body = body_html(sections, with_classes=False)
@@ -451,8 +474,8 @@ def style_docx(path, author):
     st("Title", size=28, bold=True, align=AL.CENTER, before=180, after=12)
     st("Subtitle", size=14, align=AL.CENTER, after=72)
     st("Author", size=14, align=AL.CENTER)
-    st("Copyright First", size=10, before=400, page_break=True)
-    st("Copyright", size=10)
+    st("Copyright First", size=10, before=200, after=8, page_break=True)
+    st("Copyright", size=10, after=8)
     st("Scene Break", align=AL.CENTER, before=12, after=12, keep=True)
     st("Picture", align=AL.CENTER, before=12, after=12)
     for name in ("Hyperlink",):
@@ -473,7 +496,76 @@ def prepare_cover():
     target = WORK / "cover.jpg"
     target.unlink(missing_ok=True)
     if src and src.exists():
-        Image.open(src).convert("RGB").save(target, "JPEG", quality=92, optimize=True)
+        im = Image.open(src).convert("RGB")
+        im.save(WORK / "cover-art.jpg", "JPEG", quality=95)
+        w, h = CFG["kindle_cover_px"]
+        # Kindle's recommended size. The title sits at the left edge of the art,
+        # so the art is scaled to full height and any extra width comes off the right.
+        scaled = im.resize((max(w, round(im.width * h / im.height)), h), Image.LANCZOS)
+        scaled.crop((0, 0, w, h)).save(target, "JPEG", quality=92, optimize=True)
+        shutil.copy(target, OUT / f"{CFG['slug']}-{CFG['version']}-kindle-cover.jpg")
+
+
+def build_wrap(pages, target, name, model):
+    """Full paperback cover for KDP: back, spine, front on one sheet with 0.125in bleed."""
+    from weasyprint import HTML
+    per_page = {"white": 0.002252, "cream": 0.0025}[CFG["paper"]]
+    spine = round(pages * per_page, 4)
+    bleed, tw, th = 0.125, 6.0, 9.0
+    width, height = bleed + tw + spine + tw + bleed, th + 2 * bleed
+    col = CFG["cover_colors"]
+    bc = CFG["back_cover"]
+    back = f'<div class="hl">{esc(bc["headline"])}</div>' + "".join(f"<p>{esc(t)}</p>" for t in bc["paragraphs"])
+    spine_html = (f'<div class="spine"><span class="st">{esc(CFG["title"])}</span>'
+                  f'<span class="sa">{esc(model["author"])}</span></div>') if pages >= 80 else ""
+    doc = f"""<!DOCTYPE html><html lang="{CFG['language']}"><head><meta charset="utf-8" />
+<title>{esc(CFG['title'])} cover</title><style>
+@font-face {{ font-family: "Book Serif"; font-weight: 600; src: url("{(REPO / CFG['fonts']).as_uri()}/SourceSerif4-Semibold.otf"); }}
+@font-face {{ font-family: "Book Serif"; font-weight: 400; src: url("{(REPO / CFG['fonts']).as_uri()}/SourceSerif4-Regular.otf"); }}
+@page {{ size: {width}in {height}in; margin: 0; }}
+html, body {{ margin: 0; padding: 0; }}
+body {{ width: {width}in; height: {height}in; background: {col['background']}; position: relative;
+       font-family: "Book Serif"; font-weight: 600; color: {col['text']}; overflow: hidden; }}
+.front {{ position: absolute; top: 0; left: {bleed + tw + spine}in; width: {tw + bleed}in; height: {height}in;
+          overflow: hidden; }}
+.front img {{ height: {height}in; display: block; }}
+.back {{ position: absolute; left: {bleed + 0.6}in; top: {bleed + 0.75}in; width: {tw - 1.2}in; }}
+.back .hl {{ font-size: 25pt; line-height: 1.2; margin-bottom: 0.32in; }}
+.back p {{ font-family: "Book Serif"; font-weight: 400; font-size: 12pt; line-height: 1.5; margin: 0 0 0.75em; }}
+.spine {{ position: absolute; left: {bleed + tw + spine}in; top: 0; width: {height}in; height: {spine}in;
+          transform-origin: 0 0; transform: rotate(90deg); text-align: center; line-height: {spine}in;
+          font-size: {min(16, round((spine - 0.14) * 72 * 0.62, 1))}pt; white-space: nowrap; }}
+.spine .sa {{ margin-left: 4em; font-size: 0.8em; }}
+</style></head><body>
+<div class="back">{back}</div>
+{spine_html}
+<div class="front"><img src="{(WORK / 'cover-art.jpg').as_uri()}" alt="" /></div>
+</body></html>"""
+    src = WORK / f"{name}.html"
+    src.write_text(doc, encoding="utf-8")
+    HTML(filename=str(src)).write_pdf(str(target))
+    return {"kind": "cover", "pages": pages, "spine_in": spine, "width_in": round(width, 4), "height_in": height}
+
+
+def write_listing(specs, base):
+    """KDP-LISTING.md: the listing copy from listing.md with this build's numbers filled in."""
+    tpl = HERE / "listing.md"
+    pb, lp = specs.get(f"{base}-print-6x9.pdf"), specs.get(f"{base}-large-print-6x9.pdf")
+    cv, lcv = specs.get(f"{base}-paperback-cover.pdf"), specs.get(f"{base}-large-print-cover.pdf")
+    if not (tpl.exists() and pb and lp and cv and lcv):
+        return
+    cost = lambda n: 1.00 + 0.012 * n  # KDP US black ink, 110 to 828 pages
+    vals = {"PAGES": pb["pages"], "LP_PAGES": lp["pages"], "SPINE": f"{cv['spine_in']:.3f}",
+            "LP_SPINE": f"{lcv['spine_in']:.3f}", "WRAP": f"{cv['width_in']:.3f} x {cv['height_in']}",
+            "COST": f"{cost(pb['pages']):.2f}", "MIN": f"{cost(pb['pages']) / 0.6:.2f}",
+            "LP_COST": f"{cost(lp['pages']):.2f}", "LP_MIN": f"{cost(lp['pages']) / 0.6:.2f}",
+            "PAPER": CFG["paper"],
+            "BACK": "\n\n".join([CFG["back_cover"]["headline"]] + CFG["back_cover"]["paragraphs"]), "BIO": "\n\n".join(CFG["about_author"]["paragraphs"]),
+            "VERSION": CFG["version"]}
+    text = tpl.read_text(encoding="utf-8")
+    for k, v in vals.items():
+        text = text.replace("{{" + k + "}}", str(v))
+    (OUT / "KDP-LISTING.md").write_text(text, encoding="utf-8")
 
 
 def default_source():
@@ -494,8 +586,8 @@ def main():
     want = lambda k: only is None or k in only
 
     OUT.mkdir(exist_ok=True)
-    model = ingest(a.source or default_source())
     prepare_cover()
+    model = ingest(a.source or default_source())
     base = f"{CFG['slug']}-{CFG['version']}"
     full, sample = model["sections"], sample_sections(model)
     specs = {}
@@ -511,10 +603,16 @@ def main():
         print("Print PDF, 6 x 9")
         s = build_print(model, full, OUT / f"{base}-print-6x9.pdf", "print", "11pt", "1.42", "justify", "auto")
         specs[f"{base}-print-6x9.pdf"] = {"kind": "pdf", "layout": "print", "scope": "full", **s}
+        if (WORK / "cover-art.jpg").exists():
+            specs[f"{base}-paperback-cover.pdf"] = build_wrap(
+                s["pages"], OUT / f"{base}-paperback-cover.pdf", "cover-paperback", model)
     if want("large"):
         print("Large print PDF, 6 x 9")
         s = build_print(model, full, OUT / f"{base}-large-print-6x9.pdf", "large", "16pt", "1.5", "left", "none")
         specs[f"{base}-large-print-6x9.pdf"] = {"kind": "pdf", "layout": "print", "scope": "full", **s}
+        if (WORK / "cover-art.jpg").exists():
+            specs[f"{base}-large-print-cover.pdf"] = build_wrap(
+                s["pages"], OUT / f"{base}-large-print-cover.pdf", "cover-large-print", model)
     if want("reader"):
         print("Reader PDF, letter")
         s = build_reader(model, full, OUT / f"{base}-reader-letter.pdf", "reader")
@@ -532,6 +630,7 @@ def main():
         specs[f"{base}-sample-first-{n}-chapters.epub"] = {"kind": "epub", "scope": "sample"}
 
     spec_file.write_text(json.dumps(specs, indent=1))
+    write_listing(specs, base)
     if not a.no_check:
         sys.exit(subprocess.run([sys.executable, str(HERE / "check.py")]).returncode)
 

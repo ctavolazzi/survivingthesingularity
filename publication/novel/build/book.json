@@ -3,7 +3,6 @@
   "slug": "surviving-the-singularity",
   "title": "Surviving the Singularity",
   "language": "en-US",
-  "copyright_lines": ["Copyright © 2026 Christopher Tavolazzi.", "All rights reserved."],
   "cover": "scripts/book-cover.png",
   "fonts": "publication/assets/fonts",
   "scene_break": "* * *",
@@ -11,5 +10,46 @@
   "include_pictures": false,
   "image_quality": 90,
   "epub_image_width": 1200,
-  "epub_image_quality": 80
+  "epub_image_quality": 80,
+  "copyright_page": [
+    "Surviving the Singularity",
+    "Copyright © 2026 Christopher Tavolazzi",
+    "All rights reserved. No part of this book may be reproduced, stored or transmitted in any form or by any means without the written permission of the author, except for brief quotations in reviews.",
+    "This is a work of fiction. Names, characters, businesses, places and events are products of the author's imagination or are used fictitiously. Any resemblance to actual persons, living or dead, or to actual events is coincidental.",
+    "{ISBN}",
+    "First published 2026",
+    "survivingthesingularity.com"
+  ],
+  "isbn": {
+    "paperback": "",
+    "large_print": "",
+    "ebook": ""
+  },
+  "about_author": {
+    "title": "About the Author",
+    "paragraphs": [
+      "Christopher Tavolazzi is a developer, musician and futurist. He makes videos as The Coffee Jesus and is the founder of Johnny Autoseed, a project to put AI and robotics to work growing food for kitchens and community gardens.",
+      "He dictated most of this novel into his phone over several years, walking around and talking out the characters, and rewrote it thirteen times.",
+      "Find him at survivingthesingularity.com."
+    ]
+  },
+  "kindle_cover_px": [
+    1600,
+    2560
+  ],
+  "paper": "white",
+  "cover_colors": {
+    "background": "#1f3a2d",
+    "text": "#f7f1dc"
+  },
+  "back_cover": {
+    "headline": "So the robots have taken over. Congratulations! You've lost.",
+    "paragraphs": [
+      "Surviving the Singularity isn't just about fending off hordes of Terminator bots or finding food in the era of economic collapse, and climate famines. It's also about staying hidden from autonomous drone swarms and filtering out nanobots from the water!",
+      "Ah, who am I kidding? You don't need to worry about the nanobots in the water. You're just a disembodied brain in a jar. Every sensation you've ever had, every person you've ever known is simply a hallucination produced by neural link electrodes.",
+      "Or maybe none of this is real at all. You're not even a brain in a jar. You're nothing. You're lines of computer code in a simulation. And all of this is just some future society trying desperately to prevent their collapse. You're nothing more than a sim in an alien game.",
+      "Regardless of the true nature of reality, it is happening all around you. And right now, everything is getting a lot weirder, a lot faster."
+    ],
+    "source": "src/lib/data/sample.md, the original introduction, word for word"
+  }
 }

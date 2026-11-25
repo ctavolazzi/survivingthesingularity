@@ -41,7 +41,7 @@ def expected_lines(scope):
     secs = sections_for(scope)
     keep = {s["title"] + s["id"] for s in secs}
     lines = [plain(b["runs"]) for b in MODEL["title_block"]]
-    lines += CFG["copyright_lines"]
+    lines += MODEL["copyright_lines"]
     lines.append("Contents")
     lines += [t["text"] for t, s in zip(MODEL["toc"], MODEL["sections"]) if s["title"] + s["id"] in keep]
     for s in secs:
@@ -268,7 +268,7 @@ def check_file(name, spec):
            f"pictures: {e['images']} found, {n_img} expected")
         ok(e["cover"], "cover embedded", "no cover embedded")
         ok(e["front_order"][:3] == ["cover", "title page", "contents"], "order: cover, title page, copyright page, contents")
-        ok(all(l in e["lines"] for l in CFG["copyright_lines"]), "copyright page present")
+        ok(all(l in e["lines"] for l in MODEL["copyright_lines"]), "copyright page present")
         res["note"].append(f"metadata: {e['meta']}")
         text = "\n".join(got)
         try:
@@ -295,7 +295,7 @@ def check_file(name, spec):
         ok(d["italic_chars"] == src_em, f"italics kept ({src_em:,} italic characters)",
            f"italics differ: {d['italic_chars']} vs {src_em}")
         ok(d["images"] == n_img, (f"{n_img} pictures in place" if n_img else "no pictures inside the book"), f"pictures: {d['images']} of {n_img}")
-        ok(all(l in d["lines"] for l in CFG["copyright_lines"]), "title page and copyright page present")
+        ok(all(l in d["lines"] for l in MODEL["copyright_lines"]), "title page and copyright page present")
         text = "\n".join(d["lines"])
     else:
         p = read_pdf(path, spec["layout"])
@@ -328,7 +328,7 @@ def check_file(name, spec):
         want_img = n_img + (1 if spec["layout"] == "reader" and (WORK / "cover.jpg").exists() else 0)
         ok(p["images"] == want_img, (f"{n_img} pictures in place" if n_img else "no pictures inside the book") + (", cover on page 1" if want_img > n_img else ""),
            f"pictures: {p['images']} of {want_img}")
-        ok(all(squeeze([l]) in b for l in CFG["copyright_lines"]), "title page and copyright page present")
+        ok(all(squeeze([l]) in b for l in MODEL["copyright_lines"]), "title page and copyright page present")
         if spec["layout"] == "print":
             ok(p["size_in"] == (6.0, 9.0), "trim 6 x 9 in, no bleed", f"page size {p['size_in']}")
             inner = float(spec["INNER"].rstrip("in"))
@@ -353,16 +353,22 @@ def check_file(name, spec):
 def main():
     results = []
     for name, spec in SPECS.items():
+        if spec["kind"] == "cover":
+            continue
         if (OUT / name).exists():
             print("checking", name)
             results.append(check_file(name, spec))
-    src_words = len(words([l for l in expected_lines("full")])) - len(words(CFG["copyright_lines"]))
+    added = [s for s in MODEL["sections"] if s.get("added")]
+    added_words = len(words(MODEL["copyright_lines"])) + sum(
+        len(words([s["title"]] * 2 + [plain(b["runs"]) for b in s["blocks"]])) for s in added)
+    src_words = len(words([l for l in expected_lines("full")])) - added_words
     out = ["# Checks: " + CFG["title"] + " " + CFG["version"], "",
            f"Source: `{Path(MODEL['source']).name}` ({src_words:,} words, {len(MODEL['sections'])} sections, "
            f"{MODEL['images']} pictures inside the book" +
            (f"; the manuscript's {MODEL['pictures_left_out']} pictures are left out on purpose"
             if MODEL.get("pictures_left_out") else "") + ").",
-           "Words added by the build: the copyright page only (" + " ".join(CFG["copyright_lines"]) + ").", ""]
+           "Words added by the build: the copyright page" +
+           "".join(f" and the page \"{s['title']}\"" for s in added) + f" ({added_words} words, from book.json).", ""]
     failed = False
     for r in results:
         out.append(f"## {r['file']} ({r['size'] / 1e6:.1f} MB)")

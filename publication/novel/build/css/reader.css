@@ -6,4 +6,4 @@
 section.cover { page: cover; text-align: center; break-before: auto; }
 section.cover img { height: 11in; }
 section.titlepage, section.copyright, section.contents { page: front; }
-section.copyright { padding-top: 90%; }
+section.copyright { padding-top: 60%; }

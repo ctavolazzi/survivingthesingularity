@@ -46,7 +46,10 @@
     ],
     "ink": "#1f3a2d",
     "accent": "#b8452c",
-    "soft": "#3d5547"
+    "soft": "#3d5547",
+    "spine_band": "#1f3a2d",
+    "spine_title": "#f7f1dc",
+    "spine_author": "#f0876a"
   },
   "back_cover": {
     "label": "A Solarpunk Novel",

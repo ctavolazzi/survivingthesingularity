@@ -535,7 +535,7 @@ def build_wrap(pages, target, name, model):
     body = "".join(f"<p{cls[k]}>{esc(t)}</p>" for k, t in bc["blocks"])
     photo = REPO / bc["author_photo"]
     photo_html = f'<img src="{photo.as_uri()}" alt="" />' if photo.exists() else ""
-    spine_html = (f'<div class="spine">{esc(CFG["title"])}<span class="sa">{esc(model["author"])}</span></div>'
+    spine_html = (f'<div class="spine"><span class="st">{esc(CFG["title"])}</span><span class="sa">{esc(model["author"])}</span></div>'
                   if pages >= 80 else "")
     doc = f"""<!DOCTYPE html><html lang="{CFG['language']}"><head><meta charset="utf-8" />
 <title>{esc(CFG['title'])} cover</title><style>
@@ -568,11 +568,13 @@ p.turn + p.turn {{ margin-top: -0.35em; }}
 .foot .web {{ margin-top: 0.07in; color: {col['accent']}; font-weight: 600; letter-spacing: 0.05em; }}
 .code {{ position: absolute; left: {bleed + tw - 0.25 - 2.0}in; bottom: {bleed + 0.25}in; width: 2in; height: 1.2in; background: #fff; }}
 .spine {{ position: absolute; left: {bleed + tw + spine}in; top: 0; width: {height}in; height: {spine}in;
-          transform-origin: 0 0; transform: rotate(90deg); text-align: center; line-height: {spine}in;
-          font-weight: 700; font-size: {min(19, round((spine - 0.14) * 72 * 0.62, 1))}pt; letter-spacing: 0.16em;
+          transform-origin: 0 0; transform: rotate(90deg); background: {col['spine_band']}; line-height: {spine}in;
           white-space: nowrap; }}
-.spine .sa {{ margin-left: 3em; font-family: N; font-weight: 600; font-size: 0.5em; letter-spacing: 0.18em;
-              text-transform: uppercase; color: {col['accent']}; }}
+.spine .st {{ position: absolute; left: {bleed + 0.55}in; top: 0; font-weight: 700; text-transform: uppercase;
+              font-size: {min(18, round((spine - 0.14) * 72 * 0.5, 1))}pt; letter-spacing: 0.15em; color: {col['spine_title']}; }}
+.spine .sa {{ position: absolute; right: {bleed + 0.55}in; top: 0; font-family: N; font-weight: 600;
+              font-size: {min(9.5, round((spine - 0.14) * 72 * 0.26, 1))}pt; letter-spacing: 0.2em; text-transform: uppercase;
+              color: {col['spine_author']}; }}
 </style></head><body>
 <img class="bg" src="{(WORK / f'{name}-back.jpg').as_uri()}" alt="" />
 <div class="back">

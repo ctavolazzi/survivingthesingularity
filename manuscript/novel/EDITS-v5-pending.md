@@ -634,6 +634,30 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     - Nothing changes later: the arms go north in Ch 17, and in Ch 34 to 37 they are the emergency fund that comes
       into play.
 
+### Chapter 12: The Seventeen-Dollar Shower
+
+67. Sick in the truck after the launch party. The jump to "if he died" is too fast (CT: he's not depressed, he's
+    overwhelmed and sick from doing too much; he doesn't want to bother anybody, he already feels like enough of a
+    bother, so he decides to sleep it off in the truck; the "if he died" line is his humor, and it gets worse from
+    there). After "The phone went face down on the dash.", the paragraph "He wasn't angry. He was too sick to be
+    angry. He'd spent ten months saying yes to people. If he died in this truck tonight, the party would go until
+    one. Somebody would notice the Ranger on Monday. They just didn't have a place to put him." becomes:
+
+    > He wasn't angry. He was too sick to be angry, and too tired. He'd spent ten months saying yes to people on four
+    > hours of sleep, and somewhere in there his body had stopped asking his permission. He didn't want to be a
+    > bother. He had been underfoot at his mother's, and a lot at the Bear Flag, and one more person who wanted
+    > something everywhere else. He'd sleep it off. People slept things off in trucks all the time.
+    >
+    > He pulled the jacket up to his chin. If he died in this truck tonight, he thought, the party would go until
+    > one, and somebody would notice the Ranger on Monday. It was almost funny. They just didn't have a place to put
+    > him.
+
+    [CT's beats. Claude's wording; "underfoot" calls back his mother's "You're underfoot" in Chapter 11, and "one
+    more person who wanted something" calls back the Ruby text a few paragraphs earlier. "It was almost funny." is
+    there so the line reads as his humor. "They just didn't have a place to put him." is kept from the book.]
+    Chapter 13 still opens "In the morning the fever was down enough to drive.", which is him having slept it off,
+    and things get worse from there.
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

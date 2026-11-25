@@ -512,6 +512,26 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
 
      **Open, for CT:** where Grace is when she touches his arm (see the question in chat, 25 Nov).
 
+110. **Chapter 17, Rosa at the door: she says "mijo" out loud.** CT: before the book says she called them mijo,
+     "she needs to say the word mijo": "Mijo, you look muy flaco. Come in, eat." She "reminds him of some of his
+     extended family. And we don't need to go into that. We can just leave it there." Context from CT, not for the
+     page: "now we're demonstrating the cross-cultural power of the farm"; Marta contributes to Elijah's recovery,
+     and so does Rosa.
+
+     Book now: "Rosa opened the door with her left hand and a smile that took in both of them, and asked if they
+     were hungry before they could ask her anything. Her right wrist was in a brace." Change to [CT's lines; the
+     joining words are Claude's]:
+
+     > Rosa opened the door with her left hand and a smile that took in both of them. She looked at Elijah.
+     >
+     > "Mijo, you look muy flaco. Come in, eat."
+     >
+     > She reminded him of some of his extended family.
+     >
+     > Her right wrist was in a brace.
+
+     The later line "She called them both mijo, Curtis included, who had twenty years on her." stays.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

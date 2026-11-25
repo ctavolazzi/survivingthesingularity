@@ -351,14 +351,18 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     laughed nicely. becomes:
 
     > "Elijah, your video went parabolic," the moderator said. "And your music is fantastic. We all love what you
-    > bring to the table." The room laughed nicely. "Now, your biggest video, of course we've all seen it. But some of
-    > your recent ones seem to be going into a little more of the nuance of what we're all going through. Tell me, do
-    > you fancy yourself sort of the people's forecaster? But first. Everybody here keeps saying AGI. For the folks
-    > at home, what precisely does it mean?"
+    > bring to the table. Now, your biggest video, of course we've all seen it. But some of your recent ones seem to
+    > be going into a little more of the nuance of what we're all going through. Tell me, do you fancy yourself sort
+    > of the people's forecaster?"
+    >
+    > The room laughed nicely. Elijah didn't really know how to answer. "I, uh. I mean..."
+    >
+    > "Don't answer that. Don't worry about it. Listen. Everybody keeps saying AGI. I keep hearing it from all my
+    > friends. It hasn't quite hit the mainstream yet. For anybody watching, can you define AGI for us?"
 
-    The forecaster question is CT's. CALLED: "But first." is added so the existing AGI question still comes last,
-    because Elijah's answer that follows ("It's, um. ... It's when the thing can do, like. Most things.") and the
-    paragraph about the Architect's sentence in his notebook both answer the AGI question.
+    CT's lines and beats. Claude's: the stammer words "I, uh. I mean..." and moving the room's laugh to after the
+    forecaster question (it was after the compliment). "He knew this. He'd watched the Architect's old lecture..."
+    follows as before.
 
 ## Claude's calls (2026-11-25)
 

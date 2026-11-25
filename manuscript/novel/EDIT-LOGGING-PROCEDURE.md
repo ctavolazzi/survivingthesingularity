@@ -19,17 +19,20 @@ unless CT clears it (a change goes in only as a suggestion). CT's standing words
 2. Write it in `EDITS-v5-pending.md` with the next number: where, "Book now," "Change to."
 3. Use CT's words word for word. Mark anything Claude worded ("Claude's wording"). Smooth only dictation breaks.
    Never rewrite what he did not ask to rewrite ("merge, don't rewrite").
-4. Fix dictation errors silently when the meaning is plain (Blue = Lou, Martha = Marta). When a fix would change
+4. When CT restates a line inside one message ("the truth. Was reality. So ... something that resembled
+   consensus"), the restatement is his correction while dictating. Keep the last version, drop the first; don't
+   log both and don't flag it as a repeat.
+5. Fix dictation errors silently when the meaning is plain (Blue = Lou, Martha = Marta). When a fix would change
    the meaning ("bleed out" vs "bug-out"), log it as he said it and ask one short question.
-5. If something he asks cannot work in the book as it stands (Grace is only on speaker, Curtis is driving), say
+6. If something he asks cannot work in the book as it stands (Grace is only on speaker, Curtis is driving), say
    it in one line, give one recommendation, and wait. Once he decides, log his decision without arguing.
-6. Add a check row to `manuscript/tools/edits-v5/checks.py` (words that must be in the book, words that must be
+7. Add a check row to `manuscript/tools/edits-v5/checks.py` (words that must be in the book, words that must be
    gone; `[break]` means a scene break).
-7. Run `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md`.
-8. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk`.
-9. Update the Drive copy "StS v5 edit list (mirror of GitHub)" (id 1XRD8m-UJXxFkrJS0qqkuE1ftrsm_p9XzLSkWkAcqghA):
+8. Run `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md`.
+9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk`.
+10. Update the Drive copy "StS v5 edit list (mirror of GitHub)" (id 1XRD8m-UJXxFkrJS0qqkuE1ftrsm_p9XzLSkWkAcqghA):
    the edit text, the Totals line, and the "Edits 104 to N" line.
-10. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
+11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
 
 ## Things that have gone wrong before
 - Rewriting when he said smooth ("you're overdoing it"). Adding things he didn't ask for.

@@ -596,15 +596,14 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
 
 115. **Chapter 18, the reading spiral: the truth is never clean.** CT (25 Nov), continuing edit 114; placed right after
      "...the compelling crackpots of the world rose to meet his demand." and before "Somewhere after midnight he
-     found the layoff tracker...". CT's words, verbatim:
+     found the layoff tracker...". CT dictated: "...somewhere in between all the different voices was the truth. Was
+     reality. So it was clear that somewhere between all the different voices was something that resembled
+     consensus." The second phrasing is his correction of the first, made while dictating: not the truth, something
+     that resembled consensus, because the next line says the truth was never clean. Merged, his words:
 
      > It had grown harder to tell whose voice was worth listening to in all the clutter, but it was clear that
-     > somewhere in between all the different voices was the truth. Was reality. So it was clear that somewhere
-     > between all the different voices was something that resembled consensus. The truth was never clean. It often
-     > came as an amalgamation, like Frankenstein's monster, made of everyone's hopes and dreams and pain.
-
-     **Open, for CT:** the second and third sentences make the same point ("the truth. Was reality." then "something
-     that resembled consensus"); logged as dictated.
+     > somewhere between all the different voices was something that resembled consensus. The truth was never clean.
+     > It often came as an amalgamation, like Frankenstein's monster, made of everyone's hopes and dreams and pain.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

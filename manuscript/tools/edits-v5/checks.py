@@ -120,5 +120,5 @@ C=[
 (112,"Ch 18",["Elijah's next crisis found him in late April","He more or less stumbled into it."],["The spiral found Elijah again in late April."]),
 (113,"Ch 18",["Elijah read the announcement post standing in the gravel lot"],["He read the launch post standing in the gravel lot"]),
 (114,"Ch 18",["a man with an anime avatar explaining whose fault it was.","the compelling crackpots of the world rose to meet his demand."],["a man with a flag avatar"]),
-(115,"Ch 18",["It had grown harder to tell whose voice was worth listening to in all the clutter","like Frankenstein's monster, made of everyone's hopes and dreams and pain."],[]),
+(115,"Ch 18",["It had grown harder to tell whose voice was worth listening to in all the clutter","somewhere between all the different voices was something that resembled consensus. The truth was never clean.","like Frankenstein's monster, made of everyone's hopes and dreams and pain."],[]),
 ]

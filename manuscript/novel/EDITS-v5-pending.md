@@ -974,6 +974,42 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Then "Grace found Elijah that evening at the wash station..." as before. "In a bar" points back to edit 133
      ("Once, in a bar, he had shown one off"). Edit 134 changes the line just before "Frost week".
 
+136. **Chapter 19, the end: Marta's question answered, and Elijah picks something.** CT: "what is the moral of the end
+     of that chapter? It feels like it's just moving things along instead of progressing the story ... come up with
+     something that helps tie things together a little bit instead of it just being like, and then this happened,
+     and then this happened." Claude's reading, agreed by CT: the moral is Marta's three numbers, a thing is yours
+     only if somebody here can fix it. Two threads were loose: Marta's "Frost week. Probe fails. Valve open or shut?"
+     is never answered in the book, and Grace's "You picked nothing" gets no reply. CT approved the draft: "I agree.
+     Proceed." Claude's wording throughout. Italics are marked with `*`.
+
+     **Change 1.** After Grace's "You picked." She turned off the tap. "You picked nothing." and before the scene
+     break and "The forty units shipped in June.", add:
+
+     > Tyler was still out on the trunk of the Corolla when the yard light came on, with nineteen boxes to go.
+     > Elijah brought two coffees and sat down on the bumper.
+     >
+     > "Marta's question," he said. "Show me where it answers it."
+     >
+     > Tyler didn't know where. So the two of them read it, all of it this time, line by line, with the laptop between
+     > them. Around eleven they found it. A dead probe looked exactly like dry dirt. On the coldest night of the year
+     > the valve would open and stay open.
+     >
+     > "Shit," Tyler said.
+     >
+     > It took him four lines to fix. A dead probe now meant a shut valve and a blinking light. Elijah wrote a new
+     > line for the repair card: *Light blinking? Valve stays shut. Swap the probe.* In the morning Marta read it,
+     > and ran the card through the laminator herself.
+
+     **Change 2.** In June: "Two growers needed new probes in the first month. They changed them by hand, off the
+     card, without throwing anything away." becomes:
+
+     > Two probes died in the first month. Both valves failed shut. The growers changed the probes by hand, off the
+     > card, without throwing anything away.
+
+     Notes: "nineteen boxes to go" follows edit 135's twenty-six that afternoon. The bench test already showed the
+     answer (probe out, valve clicks open). Nobody mentions Patricia or sides: the work is Elijah's answer to Grace,
+     and it turns Marta's zero into one. Curtis's hose is left as it is; it returns in Chapter 23.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

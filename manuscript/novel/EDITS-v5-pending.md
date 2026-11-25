@@ -339,7 +339,7 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     > "I thought not." She leaned in close. He could smell her perfume, and it was nice, and he felt a rush. She was
     > pretty attractive. Her hair brushed his cheek, and she said it right into his ear.
     >
-    > "Trust no one."
+    > "Trust no one. Don't take the golden handcuffs."
     >
     > She backed up, looked him right in the eyes, and nodded. "Nobody in here has any friends."
     >
@@ -348,6 +348,8 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     > Then somebody called her name, and her whole face came back on, and she went.
 
     (CT: the friends line stays, Elijah is confused because they all look like friends, and it becomes clear later.)
+    (CT, later: she also says "Don't take the golden handcuffs." It pays off when Ruby offers the million, edit 53,
+    and in the callbacks of edit 55.)
 46. The panel moderator. "Elijah, you've become sort of the people's forecaster," the moderator said, and the room
     laughed nicely. becomes:
 
@@ -478,6 +480,19 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 ### Meanwhile (the second one, after Chapter 10: Bidwell and his reader)
 54. "Half of it believes him. The other half made a song about him." becomes "Half of it believes him. The other half
     is laughing at a song about him." ("He was at the dinner. He didn't sit down." follows as before.)
+
+### Thread across the book
+55. Elijah remembers turning down Ruby's million, and the whisper, when things get hard (CT: "When things get hard,
+    he can remember that conversation. When stuff goes on with his mom, he can remember that talk. But then he can
+    also remember the woman's words"). CALLED, three placements and draft lines, all Claude's wording:
+    - Ch 13, in the truck after the cannery, after "He had a quarter tank and no money.": "Once, a man in his socks
+      had offered him a million dollars just to exist. He thought about that a lot that week."
+    - Ch 14, under the madrones, at the end of the paragraph that ends "a face was worth exactly a heart from a woman
+      with a cooling company.": "He had turned down a million dollars at an elevator. Trust no one, she had said into
+      his ear. Don't take the golden handcuffs. He had taken her advice, and here he was."
+      (The "woman with a cooling company" is the same founder who whispered to him in Chapter 8.)
+    - Ch 15, after "Every twenty he took out came off the far end of her room.": "Half a mill would have paid for that
+      room for the rest of her life. He did that division too, once, and then he stopped doing it."
 
 ## Claude's calls (2026-11-25)
 

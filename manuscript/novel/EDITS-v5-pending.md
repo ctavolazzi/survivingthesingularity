@@ -788,13 +788,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > and wrote the answers down. Lou, who had never held a multimeter, was arguing with one by the second Saturday.
      >
      > Elijah felt, for the first time in a while, like maybe he was starting to fit in somewhere. He didn't lean on
-     > the feeling. Every so often he caught himself watching Curtis down the line and wondering what, exactly, they
-     > had agreed. But the work felt good, to him and to everybody else in the line.
+     > the feeling. Every so often he caught himself watching Curtis down the line and wondering what, exactly, Curtis and
+     > Grace had agreed on. But recent events and the flow of the day put that doubt out of his mind quickly. The work
+     > felt good, to him and to everybody else in the line.
      >
      > On the first weekend they were all in that line, deburring cases and crimping wire ends, when the door opened
      > and let in the cold.
 
      Then "A lean man in a good coat came in with it." as before.
+     CT's correction (25 Nov): "Wondering what, exactly, he and Grace had agreed on. But recent events and the flow of
+     the day put that doubt out of his mind quickly." His "he" is Curtis; written as "Curtis and Grace" so it can't
+     read as Elijah.
      The Curtis sentence (Claude's, approved by CT, then smoothed at his request) gives the hesitation a source:
      Curtis's "I thought we agreed" from the kitchen scene (edit 109). It replaced "He had leaned on things before."
 

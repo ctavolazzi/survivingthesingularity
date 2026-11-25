@@ -282,6 +282,22 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     plug anything into it, as a monument, which was the point." That now contradicts the jam, so it becomes "He never
     got around to the jam. He set it in the corner of the living room and didn't plug anything into it, as a
     monument, which was the point."
+39. The call that doesn't come (follows edit 38). New paragraphs after "He never got around to the jam. He set it in
+    the corner of the living room ... as a monument, which was the point." and before "He put his hand flat on the
+    grille the way his grandmother used to put his hand on the madrones". CT's beats and lines; "the two of them,
+    from years ago" and the first paragraph's wording are Claude's:
+
+    > The call never came. He looked at the clock. It was 10:30. That didn't make sense.
+    >
+    > He called her. It rang until the machine picked up, and there they were, the two of them, from years ago. His
+    > own voice first: "Hello, you've reached the Madrones." Then hers: "Please leave a message after the beep."
+    >
+    > "Hey, Ma. Haven't heard from you. Hope everything's going okay. Don't make me call the local hospitals, all
+    > right? You're probably just busy with Joan. Give me a call when you get a chance, all right?"
+
+    CALLED: the friend is Joan (Joan Hollis, Ma's neighbor, already in the book) instead of a new "Margaret".
+    This sits in 2023, a year before her stroke; with edit 31 it makes two early signs, this missed call and the
+    night call in Chapter 13. She calls normally again in Chapter 7.
 
 ## Claude's calls (2026-11-25)
 

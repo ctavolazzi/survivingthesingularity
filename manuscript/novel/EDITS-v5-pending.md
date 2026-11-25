@@ -595,6 +595,22 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     why he lets it slip. The chapter already counts him as billionaire number two: "Two billionaires, two phone
     numbers."]
 
+66. Why he is at the cannery, and for how long (CT: "I'm not exactly sure what he's doing there, and especially not
+    for 3 weeks"). The deal is never stated; Chapter 12 just says "He worked at the cannery for three weeks on a
+    promise." [Claude's wording throughout; no pay figure, since CT never gave one.]
+    - Ch 11: after "I can carry stuff," Elijah said. "I drove delivery for six years. I'm good at carrying stuff.",
+      the line "So they let him carry stuff." becomes:
+
+      > Trent thought about that. They had six robot arms coming down from Oakland and a launch party in three
+      > weeks, and nobody to put them in. "Ride down with the arms," he said. "Help the crew bolt them in for the
+      > launch. We'll get you on the books by Friday."
+      >
+      > So they let him carry stuff.
+
+    - Ch 12, first line: "He worked at the cannery for three weeks on a promise." becomes "He worked at the cannery
+      for three weeks on Trent's promise." The rest fits as it is: "You on the books?", "We'll sort you out
+      Friday", the third Friday launch party, and Chapter 15's "There was no money for him".
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

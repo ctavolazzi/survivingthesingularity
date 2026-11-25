@@ -181,6 +181,14 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     lines. Claude: the first paragraph's wording and "He went to get a coffee.", which walks him to the urn. Not a
     womanizer, per CT. The last relationship is the one he remembers in Chapter 13 (edit 69).]
 
+### Chapter 12: The Seventeen-Dollar Shower
+
+97. The title's line gets its own paragraph (CT). In the paragraph that starts "'We'll sort you out Friday,' Trent
+    said, the first Friday." the last two sentences, "A shower at the truck stop on the highway was seventeen
+    dollars. He took one every other day, and when the money got low he stopped.", become a paragraph of their own,
+    unchanged. The paragraph before now ends "...with the windows cracked and a towel over the wheel." [No words
+    change.]
+
 ### Chapter 14: A Stain Shaped Like Ohio
 
 94. When he blocks Melody, the memories come (CT: a rush of memory of being bullied his whole life, told he was

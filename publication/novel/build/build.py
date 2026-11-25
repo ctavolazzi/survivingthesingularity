@@ -542,6 +542,7 @@ def build_wrap(pages, target, name, model):
 @font-face {{ font-family: S; src: url("{fonts}/SourceSerif4-Regular.otf"); }}
 @font-face {{ font-family: S; font-style: italic; src: url("{fonts}/SourceSerif4-It.otf"); }}
 @font-face {{ font-family: S; font-weight: 600; src: url("{fonts}/SourceSerif4-Semibold.otf"); }}
+@font-face {{ font-family: S; font-weight: 700; src: url("{(HERE / 'fonts').as_uri()}/SourceSerif4-Bold.otf"); }}
 @font-face {{ font-family: N; src: url("{fonts}/SourceSansPro-Regular.otf"); }}
 @font-face {{ font-family: N; font-weight: 600; src: url("{fonts}/SourceSansPro-Semibold.otf"); }}
 @page {{ size: {width}in {height}in; margin: 0; }}
@@ -559,6 +560,7 @@ p {{ font-size: 10.8pt; line-height: 1.5; margin: 0 0 0.7em; }}
 p.turn {{ font-weight: 600; font-size: 16pt; line-height: 1.25; margin: 0.75em 0 0.8em; color: {col['accent']}; }}
 p.close {{ font-style: italic; font-size: 13pt; line-height: 1.4; margin-top: 1em; }}
 p.close + p.close {{ margin-top: 0.35em; }}
+p.turn + p.turn {{ margin-top: -0.35em; }}
 .foot {{ position: absolute; left: {bleed + 0.62}in; bottom: {bleed + 0.38}in; width: 2.7in; min-height: 0.8in;
          padding-left: 0.95in; box-sizing: border-box; font-family: N; font-size: 8.3pt; line-height: 1.4; color: {col['soft']}; }}
 .foot img {{ position: absolute; left: 0; top: 0.02in; width: 0.8in; height: 0.8in; border-radius: 50%; }}
@@ -567,9 +569,10 @@ p.close + p.close {{ margin-top: 0.35em; }}
 .code {{ position: absolute; left: {bleed + tw - 0.25 - 2.0}in; bottom: {bleed + 0.25}in; width: 2in; height: 1.2in; background: #fff; }}
 .spine {{ position: absolute; left: {bleed + tw + spine}in; top: 0; width: {height}in; height: {spine}in;
           transform-origin: 0 0; transform: rotate(90deg); text-align: center; line-height: {spine}in;
-          font-weight: 600; font-size: {min(15, round((spine - 0.14) * 72 * 0.62, 1))}pt; white-space: nowrap; }}
-.spine .sa {{ margin-left: 3.5em; font-family: N; font-size: 0.63em; letter-spacing: 0.18em; text-transform: uppercase;
-              color: {col['accent']}; }}
+          font-weight: 700; font-size: {min(19, round((spine - 0.14) * 72 * 0.62, 1))}pt; letter-spacing: 0.16em;
+          white-space: nowrap; }}
+.spine .sa {{ margin-left: 3em; font-family: N; font-weight: 600; font-size: 0.5em; letter-spacing: 0.18em;
+              text-transform: uppercase; color: {col['accent']}; }}
 </style></head><body>
 <img class="bg" src="{(WORK / f'{name}-back.jpg').as_uri()}" alt="" />
 <div class="back">
@@ -621,7 +624,7 @@ def default_source():
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("source", nargs="?", help=".docx or Google Docs JSON (default: newest file in ../source/)")
-    ap.add_argument("--only", help="comma list of: kindle,print,large,reader,docx,sample")
+    ap.add_argument("--only", help="comma list of: kindle,print,large,reader,docx,sample; or just: cover")
     ap.add_argument("--no-check", action="store_true")
     a = ap.parse_args()
     only = set(a.only.split(",")) if a.only else None
@@ -655,6 +658,15 @@ def main():
         if (WORK / "cover-art.jpg").exists():
             specs[f"{base}-large-print-cover.pdf"] = build_wrap(
                 s["pages"], OUT / f"{base}-large-print-cover.pdf", "cover-large-print", model)
+    if only == {"cover"}:
+        for kind, nm in (("print-6x9", "paperback"), ("large-print-6x9", "large-print")):
+            interior = specs.get(f"{base}-{kind}.pdf")
+            if interior:
+                specs[f"{base}-{nm}-cover.pdf"] = build_wrap(
+                    interior["pages"], OUT / f"{base}-{nm}-cover.pdf", f"cover-{nm}", model)
+        spec_file.write_text(json.dumps(specs, indent=1))
+        write_listing(specs, base)
+        return
     if want("reader"):
         print("Reader PDF, letter")
         s = build_reader(model, full, OUT / f"{base}-reader-letter.pdf", "reader")

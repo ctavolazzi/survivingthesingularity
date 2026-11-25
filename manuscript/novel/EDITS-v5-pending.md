@@ -211,8 +211,9 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
 
     [CT's beats and lines, lightly smoothed at his request: "Sometimes." joined to the sentence before it, and "It had been a minute" joined
     to the next sentence; "Only problem?" kept.
-    Claude: the first paragraph, "eleven minutes away", "the one on the wall", and the last sentence kept from the
-    book. The AI's "And honestly? That's brave." keeps its break on purpose: that is how it talks. Chat Horizon is PorusAI's product, the "thing that started this whole thing" in
+    Claude: the first paragraph, "eleven minutes away", "the one on the wall". The last sentence is CT's (Planet
+    Fitness, twenty-five dollars a month) and replaces the book's "After that he took one every other day, and when
+    the money got low he stopped." The AI's "And honestly? That's brave." keeps its break on purpose: that is how it talks. Chat Horizon is PorusAI's product, the "thing that started this whole thing" in
     Chapter 0. His typed line is lower case with no punctuation, like the texts in the book; the reply is set like
     its other replies (Ch 7: "You're not crazy, Elijah, it wrote. You're early.").]
 

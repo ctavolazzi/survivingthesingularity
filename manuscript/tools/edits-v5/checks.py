@@ -132,4 +132,5 @@ C=[
 (124,"Ch 19",["it has your prior work experience written all over it.","You're a good engineer,\" she said. \"I mean it.","more like us than like Claypot.\"","Marta hooked the bottom drawer of the parts cabinet with her boot"],["It's a Claypot design. Design it again."]),
 (125,"Ch 19",["Denny wanted to film the order coming in.","She read the order twice and pinned it to the whiteboard.","his Telecaster was in the window on Fourth Street."],["The four months on the yellow ticket ran out on a Tuesday in May."]),
 (126,"Ch 19",["which from her was practically a parade."],["which from her was a parade."]),
+(127,"Ch 19",["The build took all of them three weekends","like maybe he belonged somewhere.","But the work felt good, to him and to everybody else in the line."],["The build took the shed three weekends."]),
 ]

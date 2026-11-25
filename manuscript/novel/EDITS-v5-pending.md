@@ -242,6 +242,15 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     show up next Monday, and Elijah was dreading it." Chapter 5's opening still fits: "The envelope was thin, which
     fooled him." now reads as false relief after the dread.
 
+### Chapter 5: The Tenant Who Paid No Rent
+35. The bill: "the number at the bottom said $211.46." becomes "the number at the bottom said $2,011." (CT's figure.)
+    CALLED, knock-on: "A hundred and seventy dollars of difference between a man who thinks about machine intelligence
+    and a man who runs it" becomes "Nearly two thousand dollars of difference between..." (his bills were
+    "forty-something dollars").
+    Note for CT (estimate, not checked against a real bill): the book says the tower draws 600 watts flat out. Running
+    all month that is about 430 kWh, roughly $150 to $250 at California residential rates. $2,011 is about ten times
+    that, so a fact-checking reader may notice.
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

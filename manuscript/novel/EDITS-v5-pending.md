@@ -183,11 +183,35 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
 
 ### Chapter 12: The Seventeen-Dollar Shower
 
-97. The title's line gets its own paragraph (CT). In the paragraph that starts "'We'll sort you out Friday,' Trent
-    said, the first Friday." the last two sentences, "A shower at the truck stop on the highway was seventeen
-    dollars. He took one every other day, and when the money got low he stopped.", become a paragraph of their own,
-    unchanged. The paragraph before now ends "...with the windows cracked and a towel over the wheel." [No words
-    change.]
+97. The seventeen-dollar shower becomes a short scene (CT: he searches online for somewhere to shower and sees in a
+    Reddit thread that you can sometimes use truck stops; he asks the PorusAI thing that started all this, "where can
+    I take a fucking shower right now?"; it answers in classic AI language, "Oh man, sounds like you need a quick spot
+    to get clean. I hear you. And honestly? That's brave."; he hated the way it talked, sometimes, but goddamn was it
+    useful; it told him about the truck stop nearby; there was a shower; only problem? it was seventeen goddamn
+    dollars; it had been a minute, so he forked over the money to the other machine, not the one in his pocket).
+    In the paragraph that starts "'We'll sort you out Friday,' Trent said, the first Friday.", the last two
+    sentences, "A shower at the truck stop on the highway was seventeen dollars. He took one every other day, and when
+    the money got low he stopped.", come out of that paragraph (it now ends "...with the windows cracked and a towel
+    over the wheel.") and are replaced by:
+
+    > By the end of the first week he needed a shower worse than he needed to eat. He searched for somewhere to get
+    > one, and a Reddit thread said truck stops sometimes had them. He asked Chat Horizon, because it was faster.
+    >
+    > where can I take a fucking shower right now
+    >
+    > Oh man, sounds like you need a quick spot to get clean. I hear you. And honestly? That's brave.
+    >
+    > He hated the way it talked. Sometimes. But goddamn, was it useful. It told him about a truck stop out on the
+    > highway, eleven minutes away, and sure enough there was a shower. Only problem? It was seventeen goddamn
+    > dollars.
+    >
+    > It had been a minute. He fed the money into the other machine, the one on the wall, not the one in his pocket.
+    > After that he took one every other day, and when the money got low he stopped.
+
+    [CT's beats and lines. Claude: the first paragraph, "eleven minutes away", "the one on the wall", and the last
+    sentence kept from the book. Chat Horizon is PorusAI's product, the "thing that started this whole thing" in
+    Chapter 0. His typed line is lower case with no punctuation, like the texts in the book; the reply is set like
+    its other replies (Ch 7: "You're not crazy, Elijah, it wrote. You're early.").]
 
 ### Chapter 14: A Stain Shaped Like Ohio
 

@@ -642,6 +642,15 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      > "Soup's on at noon. That's not a reward, spreadsheet, for all your doom scrolling." Her eyes twinkled. "It's
      > just lunch."
 
+120. **Chapter 18, the phone after Marta leaves: notifications for one number.** CT: "I don't think you can turn off
+     notifications for specific numbers ... That line about the rose garden doesn't make sense." Claude's version,
+     approved by CT ("Yeah, that's better"): Do Not Disturb with one exception. Book now: "He brought the jars in.
+     Then he went and turned the notifications off, all of them except the number of the place with the rose garden,
+     and put the phone in a drawer that closed." Change to:
+
+     > He brought the jars in. Then he put the phone on Do Not Disturb, with one exception: the number for the place
+     > with the rose garden. He put it in a drawer that closed.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

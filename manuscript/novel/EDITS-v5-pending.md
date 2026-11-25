@@ -277,7 +277,7 @@ moment yet in all of human history. / You can rise to meet it. / Let's begin to 
     - Ch 13: "On Sunday at 9:40 the phone rang on the dash. He watched it until it stopped. Then he typed Working
       late. All good. Love you, and sent it, and turned the phone off." becomes "On Sunday at 9:40 the phone rang on
       the dash. It was dark out, and he was too sick to wonder why. He watched it until it stopped. Then he typed
-      Working. All good. Love you, and sent it, and turned the phone off." [CT, 2026-11-25: reading "at 9:40" he
+      Working. All good. Love you, and sent it, and put the phone face down on the seat." (See edit 69.) [CT, 2026-11-25: reading "at 9:40" he
       pictures morning, so "Working late" is wrong; his option, "it rang at 9:40 p.m. and Elijah was still too sick to
       notice". Claude's wording. "It was dark out" tells the reader it is night; Elijah doesn't register it. "Working.
       All good." also matches how Chapter 31 quotes his texts.]
@@ -670,6 +670,11 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     tough. He could tough it out." [CT]
     Note: "go in to get sorted out" probably meant going into the cannery office to get paid, echoing Trent's "We'll
     sort you out Friday". With CT's line that echo is gone; the arms deal (edit 66) is still settled in Chapter 15.
+69. After the night call. "He turned it back on Tuesday, to look for work." CT: he wouldn't do that. [Claude's fix]
+    He no longer turns the phone off (edit 31 now ends "...and put the phone face down on the seat."), and the line
+    becomes "He slept through most of Monday. By Tuesday the fever had broken, and he picked the phone up." Then, as
+    before: "There was one voicemail, from Sunday, 9:41 p.m. He would listen to it later. He would listen to it a
+    great many times." / "At two in the afternoon the phone rang in his hand, and it was her number."
 
 ### Chapter 15: The Twenty, Folded Small
 

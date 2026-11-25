@@ -760,6 +760,12 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     trouble to write, and his mother had raised him to answer a letter." becomes "...and his mother had raised him to
     be someone who wrote back." so the Ch 13 line still reads as a callback.
 
+75. The illustrator in Petaluma. "One was from an illustrator in Petaluma he had never met. You built the thing that
+    took my clients. Now you want my twenty? He read that one more than the rest." The last sentence becomes "He only
+    needed to read that one once. It bounced around inside his head, rent-free, for days after." [CT]
+    The message itself stays "Now you want my twenty?" (CT quoted it as "now you want my money"; "twenty" ties to the
+    next paragraph, where he sends Tulsa her twenty back.)
+
 ### Chapter 15: The Twenty, Folded Small
 
 56. The food bank line. "He got in it. Once, at the Bear Flag, he'd told David that people land where they put

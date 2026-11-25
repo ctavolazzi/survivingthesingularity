@@ -21,6 +21,52 @@ file changes. Each new edit gets a check row when it is logged.
   being a piece of shit and spent his whole life trying to prove otherwise."
 - Gus expected Elijah to say no to the show, which is why he lets the loneliness slip (edit 65).
 
+## Direction from CT, 25 Nov: stakes and personality conflict (context, not for the page)
+
+Given after edit 136, at the end of Chapter 19. Nothing below is an edit yet. Plan it with CT first.
+
+CT: "at the beginning here, we have everything sort of centered around perspectives and viewpoints, but we haven't
+introduced any sort of like cross-character consequences. The stakes are so low, and we haven't raised them at all
+... this big delivery of these products, it's sort of like glossed over. It's just like, oh, and then they did it.
+But like it could have been an opportunity to talk about like the struggle of the old way of doing things, and then
+Elijah's just like, wait a minute, I can just use AI for this. And so he does. But then he realizes, because of some
+kind of foreshadowing, that even though this is a solar punk farm where they are friendly to this type of thing ...
+If he tells people that he just used AI to generate it, Priya's going to have a problem. Somebody else is going to
+have a problem. Like we haven't done I don't think a very good job of introducing personality conflict into this
+manuscript."
+
+**Claude's thinking (not decided):**
+
+1. Where the gap is. From Chapter 22 on, things Elijah does cost other people: the leak he has to confess (Ch 22),
+   the retreat plan voted down and the tea circle (Ch 31), the arms meeting where Wren cries (Ch 34). Chapters 16 to
+   21 are lessons: somebody corrects him with a story, and nothing he does lands on anyone else. CT is in that
+   stretch now.
+2. Chapter 19 already holds the pieces. Since edits 131 and 132, Elijah used an AI on the board himself, and in the
+   Rod Code scene Tyler, nineteen, takes the customer's anger for doing the same thing while Elijah stands there
+   with a deburring tool. If Elijah kept the board AI quiet, that silence stops being indecision and becomes a kid
+   paying for Elijah's secret, in front of the buyer of more than half of Lou's crop. Grace's "You picked nothing"
+   lands harder, because she doesn't know the half of it.
+3. Raise the stakes on the order itself. The book says the network buys more than half of what Lou grows only
+   after the fight (Grace, at the wash station). Said when the order comes in, the forty boxes are a risk to Lou's
+   living, and Curtis's "what happened if they couldn't deliver" (edit 125) has teeth. The first design burns
+   time (Marta's eleven weeks); laying out a second board the old way would take weeks he doesn't have. That is
+   the struggle, and the reason he reaches for the AI.
+4. Who would have the problem. Pushback on Priya as the one who hates it: in Chapter 21 she asks "What did it
+   learn from?" and wants help searching her plant-disease references. Her line is provenance and proof, not
+   hatred. The people the book already gives a reason: Curtis ("wanted nothing to do with any of it," Ch 21;
+   Judgment Day, Ch 17), Denny (the arms took his warehouse), Marta (zero people can fix it), and Wren, who the
+   reader meets in Chapter 20. Each minds for a different reason, which is the personality conflict.
+5. The secret needs a bill. Options: he tells Tyler on the bumper the night they read the firmware (edit 136);
+   Marta or Grace finds out; or it stays buried until Chapter 22, where he takes another quiet shortcut ("just to
+   rule it out") and this time rings the bell and confesses. The last makes Chapter 22 the second time, not the
+   first, and shows the growth.
+6. Conflict between the members, not only with Elijah. The book has frictions that stay polite: Marta and Grace
+   on how to treat him (the broom against "Grace will carry you"), Curtis against everyone on machines, Priya
+   against Denny on saying a thing before it is measured (edits 90 and 103), Grace and Curtis ("Curtis, not
+   now," edit 109). Cheaper to let two or three of those cost something than to invent new ones.
+7. What it touches. Edits 131, 132, 133, 135 and 136 would be reworked, not stacked on. CT has said the book is
+   long enough, so this should replace telling ("The forty units shipped in June") rather than add pages.
+
 ## New edits (from 87)
 
 Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude's.

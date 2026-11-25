@@ -36,7 +36,8 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 7. Add a check row to `manuscript/tools/edits-v5/checks.py` (words that must be in the book, words that must be
    gone; `[break]` means a scene break).
 8. Run `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md`.
-9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk`.
+9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
+   "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v5 edit list
    (mirror of GitHub)" (id 1XRD8m-UJXxFkrJS0qqkuE1ftrsm_p9XzLSkWkAcqghA) once, at the end of the session.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -76,10 +77,14 @@ Not built yet. When CT says go:
 those moments, but not every time. It's kind of like dealer's choice here." Example: edit 134, "Marta hadn't said a
 word either, not since Grace walked Patricia down the line." Claude's judgment where; not every short line.
 
-## What is still open (25 Nov)
-Edits 87 to 128 are logged but not yet in the Doc (edit 57 was never used). Eight Chapter 14 sentence-opening changes were given in chat and
+## What is still open (25 Nov, end of the second logging chat)
+Edits 87 to 136 are logged but not yet in the Doc (edit 57 was never used). The next edit is 137; CT has finished
+Chapter 19. Before more Chapter 19 edits, read "Direction from CT, 25 Nov: stakes and personality conflict" at the
+top of `EDITS-v5-pending.md` and plan it with him. Eight Chapter 14 sentence-opening changes were given in chat and
 never logged. Open for CT: Grace's April email (edit 100), "He went and looked. It was there, from April," the
-duplicate "It could be a cult," "He looked around the table, then back," and edit 108 ("if he wanted to play").
+duplicate "It could be a cult," "He looked around the table, then back" (edit 103), edit 108 ("if he wanted to
+play"), edit 109 (the touch lines), edit 112 (gravel lot or a store), edit 116 ("been here" or "done this"), edit
+118, edit 121 ("one thing" or "one real thing"), and the Chapter 13 "dark out" 9:40 call.
 
 ## Later, when CT says go
 Apply 87 onward to the Doc as suggestions, re-read, run verify. CT accepts the suggestions. Run

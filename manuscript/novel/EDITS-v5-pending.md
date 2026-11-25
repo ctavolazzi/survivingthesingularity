@@ -398,7 +398,8 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
 
 104. **Chapter 17, after the dinner: the notebook page of names.** CT: "he looked at that page for a long time,
      while listening to the birds." Context from CT, not for the page: birds don't chirp when there are predators
-     around. Book now: "He looked at the page a long time." Change to:
+     around. And: "this is when [Elijah's] nervous system is first starting to relax after all that shit
+     that he's been through." Book now: "He looked at the page a long time." Change to:
 
      > He looked at the page a long time, while listening to the birds.
 

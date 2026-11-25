@@ -227,6 +227,9 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
       of the voicemail stays as it is.
     - Ch 15 ("That Sunday at 9:40, before he drove down, the phone did not ring.") stays morning: after the stroke
       he waits at her usual time.
+32. Ch 3, in the notebook: "It won't take the machines away first. It takes the people who see it coming, out of the
+    world everyone they love still lives in." becomes "...out of the world everyone they love still believes in."
+    Only "lives in" changes to "believes in".
 
 ## Claude's calls (2026-11-25)
 

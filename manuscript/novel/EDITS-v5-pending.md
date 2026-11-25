@@ -250,6 +250,16 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     Note for CT (estimate, not checked against a real bill): the book says the tower draws 600 watts flat out. Running
     all month that is about 430 kWh, roughly $150 to $250 at California residential rates. $2,011 is about ten times
     that, so a fact-checking reader may notice.
+36. More room after Ray's story, before the scene switches back to Elijah. After the paragraph that ends "My dad told
+    me, 'You and your mother shouldn't have to pay the interest on my sins.'" add a new paragraph (CT's beat: David
+    appreciates that his father put him and his mother first even when he had problems, and that's why Ray is still
+    welcome in the bar; the wording is Claude's):
+
+    > David loved him for it. Whatever else his father had gotten wrong, when it counted he had put the two of them
+    > first. That was why Ray still had his stool at the end of the bar, club soda and lime, every night.
+
+    Then "Elijah was sleeping about four hours a night..." as before. (Chapter 0 already has Ray on the last stool
+    with "his usual club soda and lime".)
 
 ## Claude's calls (2026-11-25)
 

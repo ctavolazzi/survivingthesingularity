@@ -11,7 +11,7 @@ How to read it:
 - CT, 2026-11-25: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ...
   I'm trusting you to keep track of where stuff goes and the details of how to keep the composition rolling."
   That is the basis for every [Claude] knock-on below.
-- Edit numbers are the order CT gave them and never change. Numbers 56 and up are knock-ons found in the full
+- Edit numbers are the order CT gave them and never change. Numbers 56 to 62 are knock-ons found in the full
   continuity pass of 2026-11-25 (see "Continuity pass" at the end).
 - When an edit is made, move it to "Applied" with the date. To change the Doc, use the bridge:
   `node scripts/sts-bridge.mjs edit READ.json --find "old words" --replace "new words"`.
@@ -514,6 +514,17 @@ moment yet in all of human history. / You can rise to meet it. / Let's begin to 
     turned down retirement". Kept from the book: the elevator, the city line CT likes, the phone, the doors. The
     rest is Claude's.] It fits what Ruby says earlier on the fire escape, "Everybody says no the first time." The
     first offer was triple his $140,000, about $420,000, so half a mill is a casual $80,000 bump.
+
+63. Why he said no. A new paragraph right after "Elijah walked out to his truck, having just turned down retirement.
+    It was at the curb with a full tank. He hadn't asked for that either." and before "He sat behind the wheel with
+    the dome light on and looked at the phone.":
+
+    > He didn't know why he listened to her and not Ruby. I mean, Ruby had invited him and made the whole thing
+    > happen, but this woman was just some face in the crowd. He didn't even remember her name. But there was truth
+    > in her eyes. There was sincerity. He was always someone who had trusted his gut.
+
+    [CT's words, as he said them. Placement is Claude's: it answers the reader's "why did he just do that?" at the
+    moment he does it, and points back to the whisper in edit 45.]
 
 ### Meanwhile (the second one, after Chapter 10)
 

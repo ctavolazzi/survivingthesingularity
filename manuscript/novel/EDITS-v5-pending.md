@@ -59,8 +59,8 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 17. The first two sentences of the next paragraph, "The machine that had dissolved three careers at the Bear Flag
     needed watts. It needed cooling.", become: "The machine that had ended three careers at the Bear Flag needed
     watts, of course, but it also needed cooling."
-18. OPEN. Near the end of Chapter 1: "One tower in one apartment was an n of one." It is the same jargon and has
-    lost its setup. Change it or cut it?
+18. Near the end of Chapter 1: "One tower in one apartment was an n of one." becomes "One tower in one apartment
+    wasn't much of a prediction engine." (The sentence before it, "He didn't tell Devendra any of this.", stays.)
 
 ## Applied
 

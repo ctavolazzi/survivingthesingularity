@@ -340,10 +340,13 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     >
     > "Trust no one."
     >
-    > She backed up, looked him right in the eyes, and nodded. Then somebody called her name, and her whole face came
-    > back on, and she went.
+    > She backed up, looked him right in the eyes, and nodded. "Nobody in here has any friends."
+    >
+    > Elijah looked around the room. They all looked like friends to him.
+    >
+    > Then somebody called her name, and her whole face came back on, and she went.
 
-    "Nobody in here has a friend." is gone.
+    (CT: the friends line stays, Elijah is confused because they all look like friends, and it becomes clear later.)
 
 ## Claude's calls (2026-11-25)
 

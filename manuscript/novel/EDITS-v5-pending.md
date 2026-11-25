@@ -263,6 +263,14 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
 
     Then "Elijah was sleeping about four hours a night..." as before. (Chapter 0 already has Ray on the last stool
     with "his usual club soda and lime".)
+37. Right after edit 36. Elijah's line "Horses don't take anybody's job, Ray," he said. becomes (CT's beat: he says it
+    deadpan, doesn't realize how heavy it is, but everyone else notices; wording is Claude's):
+
+    > "Horses don't take anybody's job, Ray," he said, deadpan. He didn't realize how heavy that was. Everybody
+    > else did.
+
+    Then "Ray nodded like that was fair, and took his club soda back to his stool. David didn't look at Elijah the
+    rest of the night." as before.
 
 ## Claude's calls (2026-11-25)
 

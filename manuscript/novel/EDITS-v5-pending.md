@@ -285,6 +285,130 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     Then "The engine ticked as it cooled..." as before. [CT's lines. Kept from the book: "He actually waited..." The
     paragraph before already has a "Why me?" in the middle; CT's cry is the last thing he shouts.]
 
+### From CT's other chat, morning of 25 November (edits 100 to 103)
+
+CT dictated these in a chat that could not write to GitHub or the Doc, and pasted the list here. Copied as given.
+Every "Find" appears exactly once in the Doc (checked against the 25 November read). The list asked for v5 to be
+added to the bridge map and marked CURRENT; that is already done on this branch. Italics are marked with `*`.
+
+100. **Chapter 15, the food bank to his reply to Grace.** More feeling, sentence openings varied, the email beat,
+     and his hesitation. CT: "It doesn't feel ... this feels like you're moving the reader along through the story
+     events, not through the emotions he's feeling."
+     **Find** (the whole run, from the start of this paragraph through the italic line): "Nobody asked him for
+     anything. There was no form. ... I don't want a boss. I don't want to be one either."
+     **Replace with:**
+
+     > Nobody asked him for anything. There was no form. Two women at a folding table were handing out bags, and
+     > when he got to the front one of them looked at him the way his mother would have, and handed him two.
+     >
+     > "You come back in two weeks, honey," she said. "We're here every other Saturday."
+     >
+     > Honey. It landed somewhere under his ribs. He said thank you and got out of the way fast, before his face
+     > could do anything in front of all those people.
+     >
+     > He looked for the old man in the line. Not seeing him sat in his chest longer than it should have.
+     >
+     > The first peanut butter sandwich went down in the truck with the door open, so fast he barely tasted it. The
+     > second one he ate slowly, because it might have to last, and because his body had finally figured out it was
+     > allowed to be hungry.
+     >
+     > Then he sat there with the twenty in his hand. It had gone soft from being folded, warm from the old man's
+     > coat and then from his own fist. *Somebody did it for me.*
+     >
+     > *Focus on the people that say yes,* an old man had told him.
+     >
+     > He turned the phone over. It occurred to him that he hadn't checked his email in a while. Months, maybe. What
+     > the hell. Maybe somebody owed him a free coffee. Maybe he had enough points for free guac at Chipotle.
+     >
+     > He scrolled. Eleven hundred unread, give or take, and most of them were people who wanted something. Then,
+     > down in April, a name he knew now.
+     >
+     > Grace.
+     >
+     > He didn't know why he stopped on it. Most people never do, at moments like that. But something told him to
+     > open it, so he did.
+     >
+     > [GRACE'S APRIL EMAIL. CT TO WRITE. Her DM earlier in the chapter says "I emailed you last spring, too, and
+     > never heard back."]
+     >
+     > She had been saying yes to him since spring. He just hadn't been looking.
+     >
+     > He didn't answer right away. He sat with his thumb over the screen and ran it the way he ran everything now.
+     > A stranger, eight hundred miles away, offering a broke man a room. He had seen that one before. It could be a
+     > scam. It could be a cult with a nice website. It could be one more person who wanted him to be something, and
+     > he didn't have anything left to be.
+     >
+     > Then that same little voice spoke up again, the one that had told him to open it. The quiet one that steers
+     > you toward where you're supposed to be, if you let it.
+     >
+     > So he typed out his reply.
+     >
+     > Writing back was the hardest thing he'd done in that town. Twenty minutes of thumbs, and what came out was
+     > six lines. That he was living in his truck. That his mother was in a chair by a window. He had never typed
+     > that to anybody, and seeing it on the screen made it true in a way it hadn't been in his head. He had to stop
+     > and look out the windshield a while before he could finish. The important line was the last one, and it was
+     > the only one he didn't have to think about.
+     >
+     > *I don't want a boss. I don't want to be one either.*
+     >
+     > He sent it.
+
+     **Still open, for CT:**
+     - Write Grace's April email (the placeholder above).
+     - A few paragraphs later, "He went and looked. It was there, from April, under eleven hundred other things he
+       hadn't opened. It had been sitting there the whole time." He has now already found it. Cut it or turn it into
+       a callback (suggested: "He'd found it in a search for free guac.").
+     - "It could be a cult." now appears twice in the chapter (the new hesitation paragraph, and later in "He
+       didn't know these people up north"). Reword one.
+
+     How it sits with this list: edit 99 (the video introduction) comes before it in the chapter, and edits 83
+     and 84 (Grace's answer, and the tug he feels) come right after "He sent it." Nothing overlaps.
+
+101. **Chapter 15, the drive north.** "Can't be worse, he thought." becomes "Can't be much worse, he thought." (keep
+     the italics on the thought)
+102. **Chapter 17, Denny's toast: make the speaker clear.** CT: "It's unclear who says the line." "He picked up his
+     water glass and held it out over the table like a man at a wedding." / "So the robots have taken over.
+     Congratulations! You've lost." becomes:
+
+     > Denny picked up his water glass and held it out over the table like a man at a wedding.
+     >
+     > "So the robots have taken over," he said. "Congratulations! You've lost."
+
+103. **Chapter 17, the reskilling speech: the table's discomfort.** CT: Denny's speech "needs to be punctuated by
+     their clear discomfort ... he kept going anyway, oblivious to the mood of the people around him, as he usually
+     was." Priya is not looking down; she is looking straight at Denny, waiting to pounce. Insert after the paragraph
+     ending "Six months. Nights." and before "He looked around the table, then back.":
+
+     > Nobody moved. Priya was looking straight at Denny, almost daring him to say something to her directly,
+     > waiting for her moment to pounce. Curtis found something interesting about his napkin. Across the table
+     > somebody started to say something and stopped, and the quiet got heavier for it. Elijah could feel the whole
+     > table wishing he hadn't said the word.
+     >
+     > But Denny kept going anyway, oblivious to the mood of the people around him, as he usually was.
+
+     **Open, for CT:** "He looked around the table, then back." now follows "oblivious". It can read as him seeing
+     faces without registering them. If it jars, cut that one line.
+
+**Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
+and a big moment is told as a list of events; CT asked only to be made aware of these):
+
+1. Chapter 13, leaving the farm: "He took the amp, a bag of clothes, the notebooks ..." through "He left the key to
+   the house on its kitchen table." Strongest candidate. (Edit 82 already rewrites its last line.)
+2. Chapter 15: "That was a Tuesday. On Wednesday the delivery app ..." through "He ate the crackers."
+3. Chapter 23: "He had sold them Ma's kitchen." gets one sentence before "He circled the link for Reuben" and "He
+   built a map."
+4. Chapter 37, leaving Grace's farm: "He gave it a week. He turned the compost. He fixed a drip line ..." and "It took
+   a morning. A bag of clothes ..."
+5. Chapter 31, after the breakdown: "He slept. He got up and swept. He ate what was in the pan." Probably deliberate
+   numbness.
+6. Chapter 39, Thanksgiving with Ma: "They ate at two on Thursday, in the dining room, off two trays ..." Probably
+   deliberate.
+7. Probably fine: Chapter 13, "He did not do it well. He said his mother had had a stroke. He said what a room cost
+   ..."
+8. From this session: Chapter 14 (pages 186 to 195 of the large print PDF), where 50 of 193 sentences start with
+   "He". Eight proposed changes were given to CT in chat on 25 November and not logged.
+
+
 ## Needs CT (answered)
 
 Settled by CT on 2026-11-25: keep edit 5 ("chasm"), keep edits 14 and 56 (David's line), keep edit 9 ("first month

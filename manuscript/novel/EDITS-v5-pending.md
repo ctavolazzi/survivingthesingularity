@@ -887,7 +887,7 @@ talk. But then he can also remember the woman's words." Placement and wording ar
       storage"; moving them into storage this early would need Chapter 15 reworked. CT can say so.
     - David. Later in this chapter: "David showed up Thursday morning with a hand truck in the back of his pickup. /
       Elijah hadn't called him. Nobody had." Now Elijah did call. That line becomes "Elijah had called him once and
-      he hadn't picked up. Nobody had told him to come."
+      he hadn't picked up. Manny had called him." (CT chose Manny; see edit 81.)
 
 80. Pruitt, outside the Bear Flag. He appears only in this chapter. "There were two men smoking out front. He knew one
     of them. Pruitt, who had the tire shop." becomes "There were two men smoking out front. He recognized one of
@@ -896,9 +896,11 @@ talk. But then he can also remember the woman's words." Placement and wording ar
     the reader knows why Elijah knows him.]
 
 81. David shows up Thursday with the hand truck. After "David showed up Thursday morning with a hand truck in the back
-    of his pickup." and "Elijah had called him once and he hadn't picked up. Nobody had told him to come." (edit 79),
-    add: "He didn't mention the call. Neither did Elijah." Then "'Heard they close Friday,' David said." as before.
-    [Claude's line, approved by CT. It closes the unanswered call from edit 79 without David explaining it.]
+    of his pickup.", the book's "Elijah hadn't called him. Nobody had." becomes "Elijah had called him once and he
+    hadn't picked up. Manny had called him." Then add: "He didn't mention the call. Neither did Elijah." Then
+    "'Heard they close Friday,' David said." as before. [Claude's lines; CT approved both and chose Manny as the one
+    who told David. Manny is at the farm that morning, lives next door, and David already knows him ("Manny's always
+    right" in Ch 7).]
 
 ### Chapter 15: The Twenty, Folded Small
 

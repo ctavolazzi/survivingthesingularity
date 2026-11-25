@@ -89,12 +89,10 @@ Elijah's, other people's come through what he sees them do, and the storyteller 
 Elijah cannot know.
 
 ## What is still open (25 Nov, end of the second logging chat)
-Edits 1 to 138 are in v6 (edit 57 was never used). The next edit is 139; CT has finished Chapter 19. Before more Chapter 19 edits, read "Direction from CT, 25 Nov: stakes and personality conflict" at the
-top of `EDITS-v5-pending.md`. Third logging chat, 25 Nov: the plan is written there ("The plan for Chapter 19");
-edits 131, 132, 133, 135 and 136 get reworked in place, to that plan, when CT says go. Its section 9 lists what is
-open for him. Eight Chapter 14 sentence-opening changes were given in chat and
-never logged. Open for CT: Grace's April email (edit 100), "He went and looked. It was there, from April," the
-duplicate "It could be a cult," "He looked around the table, then back" (edit 103), edit 108 ("if he wanted to
+Edits 1 to 138 are in v6 (edit 57 was never used). The next edit is 139; CT has finished Chapter 19. The plan for
+Chapter 19 ("Direction from CT, 25 Nov" in `EDITS-v5-pending.md`) is done: edits 131 to 136 were reworked to it on
+CT's go, and edit 137 is its Chapter 22 line. Eight Chapter 14 sentence-opening changes were given in chat and
+never logged. Open for CT: Grace's April email (edit 100), "He looked around the table, then back" (edit 103), edit 108 ("if he wanted to
 play"), edit 109 (the touch lines), edit 112 (gravel lot or a store), edit 116 ("been here" or "done this"), edit
 118, edit 121 ("one thing" or "one real thing"), and the Chapter 13 "dark out" 9:40 call.
 

@@ -24,7 +24,7 @@ file changes. Each new edit gets a check row when it is logged.
 ## Direction from CT, 25 Nov: stakes and personality conflict (context, not for the page)
 
 Given after edit 136, at the end of Chapter 19. Nothing below is an edit yet. The plan is written ("The plan for
-Chapter 19", below the first thinking); the rework waits for CT's go.
+Chapter 19", below the first thinking); on CT's go it was carried out in edits 131 to 137.
 
 CT: "at the beginning here, we have everything sort of centered around perspectives and viewpoints, but we haven't
 introduced any sort of like cross-character consequences. The stakes are so low, and we haven't raised them at all
@@ -70,8 +70,8 @@ manuscript."
 
 ### The plan for Chapter 19 (Claude's, written 25 Nov at CT's request)
 
-**Status:** a plan, not edits. Edits 131, 132, 133, 135 and 136 below are still as first logged. They get reworked
-in place, with the same numbers, when CT says go. CT on the outline in chat: "Okay, I think this is stronger," then:
+**Status:** done. CT: "Go on the plan." Edits 131, 132, 133, 135 and 136 below were reworked in place to it, and
+edit 137 is its Chapter 22 line; the contradictions pass then corrected 131, 136 and 137 (noted under each). CT on the outline in chat: "Okay, I think this is stronger," then:
 "this is the first real opportunity for conflict among the crew, and I'd like it to be handled carefully with all
 of the lessons that we've learned so far ... this is literally the midway point of the book, and it needs to keep
 and hold the reader's interest and set things up for the end." Everything in this plan is Claude's unless it is in

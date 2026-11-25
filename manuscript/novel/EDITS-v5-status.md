@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-25 from a read of the Doc "StS v5 draft
 (Nov 23)", revision `AHj4eMResiURoAJEhT0nN-6ES_tQIDdj_X3aWEqVEABhyEVNM5iLc6398G1zJ9vPFPVfi5nw5CdyKZlpeEgUZI3AvFIgQOYHcUOjxVJXSSM`. 156 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 1, not in the Doc: 49, suggested: 86.
+Totals: not in the Doc: 50, suggested: 86.
 
 The edits themselves, with CT's words, are in `EDITS-v5-pending.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -146,4 +146,4 @@ Edit 57 was never used.
 | 133 | Ch 19 | not in the Doc | somewhere, so he knew what the thing drank. But the real reason was... |
 | 134 | Ch 19 | not in the Doc | Marta hadn't said a word either, not since Grace walked Patricia do... |
 | 135 | Ch 19 | not in the Doc | He scrolled. The whole line waited on him, and he was still scrolli... |
-| 136 | Ch 19 | PARTIAL | You picked nothing." / He had picked. He had picked keeping his boa... |
+| 136 | Ch 19 | not in the Doc | You picked nothing." / He had picked. He had picked keeping his boa... |

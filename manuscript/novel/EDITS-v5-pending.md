@@ -396,6 +396,12 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      **Open, for CT:** "He looked around the table, then back." now follows "oblivious". It can read as him seeing
      faces without registering them. If it jars, cut that one line.
 
+104. **Chapter 17, after the dinner: the notebook page of names.** CT: "he looked at that page for a long time,
+     while listening to the birds." Context from CT, not for the page: birds don't chirp when there are predators
+     around. Book now: "He looked at the page a long time." Change to:
+
+     > He looked at the page a long time, while listening to the birds.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

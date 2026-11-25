@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-25 from a read of the Doc "StS v5 draft
 (Nov 23)", revision `AHj4eMResiURoAJEhT0nN-6ES_tQIDdj_X3aWEqVEABhyEVNM5iLc6398G1zJ9vPFPVfi5nw5CdyKZlpeEgUZI3AvFIgQOYHcUOjxVJXSSM`. 156 suggestions were waiting in the Doc at that read.
 
-Totals: not in the Doc: 17, suggested: 86.
+Totals: not in the Doc: 18, suggested: 86.
 
 The edits themselves, with CT's words, are in `EDITS-v5-pending.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -114,3 +114,4 @@ Edit 57 was never used.
 | 101 | Ch 15 | not in the Doc | Can't be much worse, he thought. |
 | 102 | Ch 17 | not in the Doc | Denny picked up his water glass |
 | 103 | Ch 17 | not in the Doc | Priya was looking straight at Denny |
+| 104 | Ch 17 | not in the Doc | He looked at the page a long time, while listening to the birds. |

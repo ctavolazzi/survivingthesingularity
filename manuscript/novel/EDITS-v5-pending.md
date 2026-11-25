@@ -201,15 +201,16 @@ story, watched Iron Derby with Elijah, and is Melody's father. Nothing below con
     >
     > Oh man, sounds like you need a quick spot to get clean. I hear you. And honestly? That's brave.
     >
-    > He hated the way it talked. Sometimes. But goddamn, was it useful. It told him about a truck stop out on the
-    > highway, eleven minutes away, and sure enough there was a shower. Only problem? It was seventeen goddamn
-    > dollars.
+    > He hated the way it talked sometimes, but goddamn, was it useful. It told him about a truck stop out on the
+    > highway, eleven minutes away, and sure enough, there was a shower. The only problem was that it cost seventeen
+    > goddamn dollars.
     >
-    > It had been a minute. He fed the money into the other machine, the one on the wall, not the one in his pocket.
-    > After that he took one every other day, and when the money got low he stopped.
+    > It had been a minute, so he fed the money into the other machine, the one on the wall, not the one in his
+    > pocket. After that he took one every other day, and when the money got low he stopped.
 
-    [CT's beats and lines. Claude: the first paragraph, "eleven minutes away", "the one on the wall", and the last
-    sentence kept from the book. Chat Horizon is PorusAI's product, the "thing that started this whole thing" in
+    [CT's beats and lines, smoothed at his request (dictation had put breaks in: "Sometimes." and "Only problem?").
+    Claude: the first paragraph, "eleven minutes away", "the one on the wall", and the last sentence kept from the
+    book. The AI's "And honestly? That's brave." keeps its break on purpose: that is how it talks. Chat Horizon is PorusAI's product, the "thing that started this whole thing" in
     Chapter 0. His typed line is lower case with no punctuation, like the texts in the book; the reply is set like
     its other replies (Ch 7: "You're not crazy, Elijah, it wrote. You're early.").]
 

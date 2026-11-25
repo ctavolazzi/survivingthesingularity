@@ -1,4 +1,4 @@
-# How to log CT's v5 edits (the process)
+# How to log CT's v5 edits (the procedure)
 
 Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 111. Read this before logging the next one.
 
@@ -14,7 +14,7 @@ unless CT clears it (a change goes in only as a suggestion). CT's standing words
 3. **A correction to an edit**: the newest wording wins. Replace it in place. Git history keeps the older versions.
 4. **A question or "think it through"**: answer in chat. Build and log nothing until he settles it.
 
-## Steps for each edit
+## Procedure for each edit
 1. Find the passage in the latest read of the Doc, so "Book now" is quoted exactly. Do this before writing.
 2. Write it in `EDITS-v5-pending.md` with the next number: where, "Book now," "Change to."
 3. Use CT's words word for word. Mark anything Claude worded ("Claude's wording"). Smooth only dictation breaks.

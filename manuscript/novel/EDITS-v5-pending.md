@@ -98,12 +98,14 @@ Not in the Doc yet. Same rules as below: [CT] is his wording, [Claude] is Claude
     >
     > "I like him already," Denny said.
     >
-    > Elijah was taken aback. This was the first warm, safe camaraderie he'd felt in a long time.
+    > Elijah was taken aback. This was the first genuine camaraderie he'd felt in a hot minute. He noticed his
+    > shoulders relax a bit.
     >
     > "Every morning your job is to make sure the horses have enough to eat. One day you walk out to the stable..."
 
     and the story goes on as before. [CT's beats and lines: Denny's push, "Only if you're comfortable", "Well,"
-    begrudgingly, "Imagine you run a horse ranch", "I like him already", the camaraderie line in his final wording.
+    begrudgingly, "Imagine you run a horse ranch", "I like him already", "This was the first genuine camaraderie he'd
+    felt in a hot minute. He noticed his shoulders relax a bit." (CT's final wording).
     Claude: placing it right before the horse story, where the reluctance belongs; Elijah's "I don't know. I'm kind
     of off telling it."; Priya's pencil; Marta's "Let him eat first". This replaces the earlier draft of edit 90,
     which put the coaxing before his definitions; Lou is introduced at "What's it eat?" as in edit 89.]

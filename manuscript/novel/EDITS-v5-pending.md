@@ -167,6 +167,21 @@ When an edit is made, move it to "Applied" with the date. To change the Doc, use
     Everything anyone ever made with their software and stored on their servers."
 27. "Find out what the dirt costs," he said. becomes: "Find out what their dirt costs," he said.
 
+### Chapter 3: A Satellite Over the Star Thistle
+28. The Architect's lecture video. After "I am often asked if I am afraid of it," she said. "I am not. I am afraid of
+    us." add CT's lines, so it reads:
+
+    > "I am often asked if I am afraid of it," she said. "I am not. I am afraid of us. I am afraid of what mankind
+    > might do with such a thing."
+    >
+    > The pit in Elijah's stomach grew deeper.
+    >
+    > "We do not exactly have a glowing track record with new technology."
+
+    Then "Elijah wrote it all down. Then he watched it again." as before. CALLED: "We do not" instead of "We don't",
+    because she never uses contractions. The pit echoes the end of the Devendra scene (edit 24). Chapter 9's
+    callback ("I said once, in a lecture, that I was afraid of us. I was being polite.") still fits.
+
 ## Claude's calls (2026-11-25)
 
 CT: "We should definitely keep whatever's relevant to the story and useful for dialogue purposes ... I'm trusting you

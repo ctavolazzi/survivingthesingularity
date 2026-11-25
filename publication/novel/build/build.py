@@ -543,6 +543,7 @@ def build_wrap(pages, target, name, model):
 @font-face {{ font-family: S; font-style: italic; src: url("{fonts}/SourceSerif4-It.otf"); }}
 @font-face {{ font-family: S; font-weight: 600; src: url("{fonts}/SourceSerif4-Semibold.otf"); }}
 @font-face {{ font-family: S; font-weight: 700; src: url("{(HERE / 'fonts').as_uri()}/SourceSerif4-Bold.otf"); }}
+@font-face {{ font-family: N; font-weight: 700; src: url("{(HERE / 'fonts').as_uri()}/SourceSans3-Bold.otf"); }}
 @font-face {{ font-family: N; src: url("{fonts}/SourceSansPro-Regular.otf"); }}
 @font-face {{ font-family: N; font-weight: 600; src: url("{fonts}/SourceSansPro-Semibold.otf"); }}
 @page {{ size: {width}in {height}in; margin: 0; }}
@@ -570,7 +571,7 @@ p.turn + p.turn {{ margin-top: -0.35em; }}
 .spine {{ position: absolute; left: {bleed + tw + spine}in; top: 0; width: {height}in; height: {spine}in;
           transform-origin: 0 0; transform: rotate(90deg); background: {col['spine_band']}; line-height: {spine}in;
           white-space: nowrap; }}
-.spine .st {{ position: absolute; left: {bleed + 0.55}in; top: 0; font-weight: 700; text-transform: uppercase;
+.spine .st {{ position: absolute; left: {bleed + 0.55}in; top: 0; font-family: N; font-weight: 700; text-transform: uppercase;
               font-size: {min(18, round((spine - 0.14) * 72 * 0.5, 1))}pt; letter-spacing: 0.15em; color: {col['spine_title']}; }}
 .spine .sa {{ position: absolute; right: {bleed + 0.55}in; top: 0; font-family: N; font-weight: 600;
               font-size: {min(9.5, round((spine - 0.14) * 72 * 0.26, 1))}pt; letter-spacing: 0.2em; text-transform: uppercase;

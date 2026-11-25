@@ -52,6 +52,24 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 - Every call to his mother: after the stroke, Elijah calls Sunday 9:40 in the MORNING. Exactly one call is at night
   (shows she is confused, not alarming). See the end of edit 122 in `EDITS-v5-pending.md` for the list.
 - Day-of-week tics: "Tuesday" appears 31 times. Cut the ones that only mark time (see after edit 125).
+- Sentences that all open with "He" (or another pronoun). See "Asked for the future" below.
+
+## Asked for the future (CT, 25 Nov): a checker for sentence openings
+CT, after edits 131 to 133 (Chapter 19, where most sentences in Elijah's silence opened with "He"): "Instead of
+starting everything with a pronoun, you gotta vary the sentence structure, bro." Then: "This is something that I want
+you to more or less just scan the book for. Instead of me like manually fixing this every time, there's an opportunity
+for us to create a new bit of code, a checker or something that will just scan the book for those instances and fix
+them. We don't need to do it now, but I do want you to update whatever document we're using to drive the editing
+process. And I want it to show that this is something that I'm asking you to do in the future."
+
+Not built yet. When CT says go:
+- Write a checker in `manuscript/tools/` that reads a fresh read of the Doc and lists every paragraph where too many
+  sentences open with the same pronoun, chapter by chapter.
+- Fix each one the way edit 133 was done: change only the openings and joins; every fact, name and line of dialogue
+  stays. Each fix is logged as an edit with a check row, like any other, and goes into the Doc only as a suggestion.
+- Known so far: Chapter 14, where 50 of 193 sentences open with "He" (the eight changes given in chat and never
+  logged, in "Places to look at" in `EDITS-v5-pending.md`), and the other runs listed there.
+- Until then, vary the openings in every line Claude writes for an edit.
 
 ## What is still open (25 Nov)
 Edits 87 to 128 are logged but not yet in the Doc (edit 57 was never used). Eight Chapter 14 sentence-opening changes were given in chat and

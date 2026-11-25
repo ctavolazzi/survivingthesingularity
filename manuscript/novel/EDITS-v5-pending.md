@@ -1159,45 +1159,71 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      find the PCB AI designer, but not that conversation shouldn't happen until the [Rod Code] conversation." Do not
      add it. The wording is in git history.
 
-132. **Chapter 19, the Rod Code scene: Elijah used an AI too.** Since edit 131 Elijah has used an AI on the board
-     himself, so when Patricia asks "how many companies make Rod Code?" the reader may wonder why nobody points at
-     him, or why he doesn't think of it. Claude's line, which CT asked to log ("Log that line as 132"). Book now, in
-     the paragraph of his silence: "...He knew what the thing drank. He also knew a nineteen-year-old had just done in
-     a night what would have taken him two weeks..." After "He knew what the thing drank." add [Claude's wording,
-     reworded so it doesn't open with "He" like the sentences around it, at CT's request]:
+132. **Chapter 19, the Rod Code scene: the board is the real reason, and Tyler knows.** Reworked 25 Nov to the plan.
+     First logged as one line ("And there was the board, where he had used one himself."), which CT asked for ("Log
+     that line as 132"), because since edit 131 the reader may wonder why nobody points at Elijah. Now the board is
+     the real reason he keeps quiet, and the second half of the answer is Tyler. Book now, the paragraph of his
+     silence, then "Marta hadn't said anything either." (edit 134):
 
-     > And there was the board, where he had used one himself.
+     > ...He stood there with a case in one hand and a deburring tool in the other and didn't say a word, and both of
+     > them noticed.
+     >
+     > Marta hadn't said anything either.
 
-     Then "He also knew a nineteen-year-old..." as before (edit 133 then varies these openings).
-     (An earlier edit 132, Priya's "No, she's right ... I use it every day", was cut by CT with the argument in edit
-     131. This line took the number.)
+     Change 1, in the first paragraph of his silence: after "He knew what the thing drank." add [Claude's wording]:
+
+     > But the real reason was the board, where he had used one himself, at midnight, and told no one. One company.
+     > Zero people who could read it. He had done that arithmetic at the whiteboard, and then he had kept going.
+
+     Change 2, after "...didn't say a word, and both of them noticed." and before "Marta hadn't said a word either..."
+     (edit 134), add [Claude's wording]:
+
+     > Tyler noticed something else. He had the board's files on his laptop, the way he had everything, and the Iowa
+     > company's name was at the top of every one of them. To Tyler it had never been a secret. It was a file. He
+     > looked down the line at Elijah once, saw his face, and understood. He didn't say it. Nobody had asked him to.
+
+     Notes: Patricia's two questions ("how many companies make Rod Code?" and "how many people in this shed can read
+     what it wrote?") are Marta's one and zero; Change 1 makes Elijah hear that. Change 2 is the storyteller telling
+     the reader what Elijah can't know (CT, 25 Nov: the narration is hybrid). "Nobody had asked him to" is the
+     chapter's phrase (Tyler's cases, "Nobody asks Reuben," Patricia's "Nobody asked them"). It sets up Ch 26 ("He
+     never said a word about what he'd figured out") and Ch 38 ("You could just tell them"). It does not clear Tyler
+     of being Bidwell's watcher. Edit 134's "either" now follows Tyler not saying it, and still reads.
 
 133. **Chapter 19, Elijah's silence in the Rod Code scene: vary the sentence openings.** CT: "Instead of starting
      everything with a pronoun, you gotta vary the sentence structure, bro." Then, of the book's own sentences in these
-     two paragraphs: "yeah, vary those too." Book now (with the $2,011.46 follow-up and edit 132 in place):
+     two paragraphs: "yeah, vary those too." Reworked 25 Nov with edit 132 in place. Book now (with the $2,011.46
+     follow-up):
 
      > Elijah thought they were both right. That was his excuse. He had a power bill for $2,011.46 in a box
-     > somewhere. He knew what the thing drank. And there was the board, where he had used one himself. He also knew
-     > a nineteen-year-old had just done in a night what would have taken him two weeks, and that the boxes worked,
-     > and that forty growers would get them for a price they could pay.
+     > somewhere. He knew what the thing drank. He also knew a nineteen-year-old had just done in a night what would
+     > have taken him two weeks, and that the boxes worked, and that forty growers would get them for a price they
+     > could pay.
      >
      > He had helped build one of these machines. He had shown one off in a bar, and three people lost their jobs.
      > Kelsey. Carol. Mateo. Their names had come off the realtors' website the week after the toast. He had never
      > looked them up. He could have said any of it. He stood there with a case in one hand and a deburring tool in
      > the other and didn't say a word, and both of them noticed.
 
-     Change to [Claude's wording; only the openings and joins change, every fact and name stays]:
+     Change to [Claude's wording; only the openings and joins change, plus edit 132; every fact and name stays]:
 
      > Elijah thought they were both right. That was his excuse. He had a power bill for $2,011.46 in a box
-     > somewhere, so he knew what the thing drank. And there was the board, where he had used one himself. But he
-     > also knew a nineteen-year-old had just done in a night what would have taken him two weeks, and that the boxes
-     > worked, and that forty growers would get them for a price they could pay.
+     > somewhere, so he knew what the thing drank. But the real reason was the board, where he had used one himself,
+     > at midnight, and told no one. One company. Zero people who could read it. He had done that arithmetic at the
+     > whiteboard, and then he had kept going. Now a nineteen-year-old had done the same thing out loud, in a night,
+     > with the two weeks Elijah had set aside to make up for it. The boxes worked. Forty growers would get them for a
+     > price they could pay.
      >
      > He had helped build one of these machines. Once, in a bar, he had shown one off, and three people lost their
      > jobs. Kelsey. Carol. Mateo. Their names had come off the realtors' website the week after the toast, and he
      > had never looked them up. He could have said any of it. Instead he stood there with a case in one hand and a
      > deburring tool in the other and didn't say a word, and both of them noticed.
+     >
+     > Tyler noticed something else. He had the board's files on his laptop, the way he had everything, and the Iowa
+     > company's name was at the top of every one of them. To Tyler it had never been a secret. It was a file. He
+     > looked down the line at Elijah once, saw his face, and understood. He didn't say it. Nobody had asked him to.
 
+     "what would have taken him two weeks" becomes "with the two weeks Elijah had set aside to make up for it": since
+     edit 131 the two weeks are his penance for the board, so the kid did in a night what Elijah meant to do by hand.
      When it goes into the Doc: "a power bill for $2,011.46" is itself a pending suggestion (the follow-ups), so match
      from "somewhere. He knew" onward and leave the bill's words alone.
 

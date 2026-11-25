@@ -142,8 +142,8 @@ Edit 57 was never used.
 | 129 | Ch 19 | not in the Doc | Reuben notices things. It's what makes him such a pain in the ass. ... |
 | 130 | Ch 19 | not in the Doc | Saved our ass quite a few times," Lou said, from down the line. |
 | 131 | Ch 19 | not in the Doc | and this time he started the old way. |
-| 132 | Ch 19 | not in the Doc | And there was the board, where he had used one himself. |
-| 133 | Ch 19 | not in the Doc | somewhere, so he knew what the thing drank. And there was the board... |
+| 132 | Ch 19 | not in the Doc | But the real reason was the board, where he had used one himself, a... |
+| 133 | Ch 19 | not in the Doc | somewhere, so he knew what the thing drank. But the real reason was... |
 | 134 | Ch 19 | not in the Doc | Marta hadn't said a word either, not since Grace walked Patricia do... |
 | 135 | Ch 19 | not in the Doc | He scrolled. The whole line waited on him, and he was still scrolli... |
 | 136 | Ch 19 | not in the Doc | You picked nothing." Tyler was still out on the trunk of the Coroll... |

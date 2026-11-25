@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-25 from a read of the Doc "StS v5 draft
 (Nov 23)", revision `AHj4eMResiURoAJEhT0nN-6ES_tQIDdj_X3aWEqVEABhyEVNM5iLc6398G1zJ9vPFPVfi5nw5CdyKZlpeEgUZI3AvFIgQOYHcUOjxVJXSSM`. 156 suggestions were waiting in the Doc at that read.
 
-Totals: not in the Doc: 28, suggested: 86.
+Totals: not in the Doc: 29, suggested: 86.
 
 The edits themselves, with CT's words, are in `EDITS-v5-pending.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -125,3 +125,4 @@ Edit 57 was never used.
 | 112 | Ch 18 | not in the Doc | Elijah's next crisis found him in late April |
 | 113 | Ch 18 | not in the Doc | Elijah read the announcement post standing in the gravel lot |
 | 114 | Ch 18 | not in the Doc | a man with an anime avatar explaining whose fault it was. |
+| 115 | Ch 18 | not in the Doc | It had grown harder to tell whose voice was worth listening to in a... |

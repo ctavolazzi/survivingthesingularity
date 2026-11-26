@@ -435,6 +435,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 170, Ch 20
 (170, "Lou put him on drip tape in May, and it just about killed him.",
 "What Lou did to Elijah in May just about killed him."),
+# 171, Ch 20
+(171, "\"Ivy League,\" he said, wiping his eyes.",
+"\"Hey, Ivy League,\" he said, wiping his eyes."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

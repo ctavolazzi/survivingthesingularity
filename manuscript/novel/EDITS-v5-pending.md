@@ -1984,6 +1984,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      a little later in the chapter ("a quarter mile of plastic tubing", "This is drip tape"). Logged only; not in the
      v6 Doc yet.
 
+171. **Chapter 20, Lou laughing at the drip tape: "Hey, Ivy League."** CT (26 Nov): "\"Ivy League\" > \"Hey Ivy League\"".
+     Book now: "Ivy League," he said, wiping his eyes. "You look like a man trying to put pants on an octopus." Change to [CT's words; the comma after
+     "Hey" is Claude's]: "Hey, Ivy League," he said, wiping his eyes. The Appendix's list of Lou's names for him ("Ivy League") stays. Logged only;
+     not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

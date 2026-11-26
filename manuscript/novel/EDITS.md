@@ -3172,6 +3172,110 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      scared people to be more scared") is echoed on purpose. Corrected the same day, in place: "He read it twice. Then
      he wrote back." cut. CT: "Don't do the pattern." Logged only; not in the v6 Doc yet.
 
+197. **The counting pattern, Chapters 0 to 19 and 37 to 39.** CT (26 Nov), on the list from the sweep (see "The counting
+     pattern, swept 26 Nov"): "Great, add these all to the edits to be fixed." The fixes are Claude's. Kept on Claude's
+     advice and not changed: CT's own laugh line (edit 188), "David checked the buckle again," "Nobody let go right away.
+     Then Grace did." and its mirror on the phone, "Then she reached out and turned it off" and its mirror, "He read it
+     again, slower," and the Epilogue's "Then he played something else." Chapters 20 to 36 are fixed in the rewrite.
+     Book now, then Change to:
+
+     1. "He'd underlined it twice. Then he'd gone back to nodding."
+        > He'd underlined it twice and gone back to nodding.
+     2. "David looked at him a second longer than he needed to. Then he went to change a keg."
+        > David looked at him a second longer than he needed to, and went to change a keg.
+     3. "Curtis looked at Elijah a second longer than he needed to. Then he went back to his crimper."
+        > Curtis held Elijah's eye a beat too long and went back to his crimper.
+     4. "He left the tower off for a week. Then he opened the notebook where he'd scrawled MADRONE IS NOT A DRONE, turned to a clean page, and started writing."
+        > He left the tower off for a week, and when he opened the notebook where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean page and started writing.
+     5. "Elijah wrote it all down. Then he watched it again."
+        > Elijah wrote it all down.
+     6. "Then he sat very still, because he was dizzy."
+        > He sat very still, because he was dizzy.
+     7. "Then he needed energy figures, so he found the Kardashev numbers"
+        > For energy figures he found the Kardashev numbers
+     8. "He poured the pitchers. Then he came back, put on"
+        > He poured the pitchers and came back, put on
+     9. "Then he opened the band chat to send the link."
+        > He opened the band chat to send the link.
+     10. "He pasted the link under that anyway. Then he sent it to the other two chats and typed"
+        > He pasted the link under that anyway, sent it to the other two chats, and typed
+     11. "Then there was a paralegal in Fresno, so he wrote him back too. Then a guy who taught high school shop, and a nurse."
+        > There was a paralegal in Fresno, so he wrote him back too, and a guy who taught high school shop, and a nurse.
+     12. "Elijah read that one twice. He answered"
+        > He answered
+     13. "Elijah watched it four times looking for the lie."
+        > Elijah watched it looking for the lie.
+     14. "He told the phone about the forty-eight dollars. Then he went in."
+        > He told the phone about the forty-eight dollars and went in.
+     15. "Then he asked about the farm, and what they grew"
+        > He asked about the farm, and what they grew
+     16. "and looked at it a while. Then he thought about Wes."
+        > and looked at it a while, thinking about Wes.
+     17. "He watched it until it stopped. Then he typed Working."
+        > When it stopped, he typed Working.
+     18. "It lasted a second or two. Then David looked back down"
+        > It lasted a second or two before David looked back down
+     19. "He sat with them for a while. Then he started the truck."
+        > He sat with them a while and started the truck.
+     20. "local pickup only. Then he watched it. A week went by."
+        > local pickup only. A week went by.
+     21. "He got as far as the first line. Then he thought about the comments"
+        > He got as far as the first line and thought about the comments
+     22. "He watched it not ring. Then he played the voicemail."
+        > He watched it not ring and played the voicemail.
+     23. "He read it twice with the door open"
+        > He read it with the door open
+     24. "He thought about a chair by a window. Then he put the phone face down"
+        > He thought about a chair by a window and put the phone face down
+     25. "The old man nodded and put it away. Then he looked at Elijah for a while."
+        > The old man nodded, put it away, and looked at Elijah for a while.
+     26. "He stood there a second getting his balance. Then he went into the coat one more time"
+        > When he had his balance he went into the coat one more time
+     27. "Elijah took a breath and read the email again. Three, four, five times he read it, waiting to feel different."
+        > Elijah took a breath and read the email again, waiting to feel different.
+     28. "He read the last three words again. It was the second time in two days somebody had said them to him."
+        > You look thin. It was the second time in two days somebody had said that to him.
+     29. "Marta looked at him for another second. Then she picked up a push broom"
+        > Marta looked at him another second and picked up a push broom
+     30. "She held the amp a second longer. Then she set it down"
+        > She held the amp a second longer before she set it down
+     31. "the same way you might say termites. Then she went back to her bench."
+        > the same way you might say termites, and went back to her bench.
+     32. "He brought the jars in. Then he put the phone on Do Not Disturb"
+        > He brought the jars in and put the phone on Do Not Disturb
+     33. "She read the order twice and pinned it"
+        > She read the order and pinned it
+     34. "Not really. Then he remembered his training"
+        > Not really. But he remembered his training
+     35. "Then Grace came back alone and went straight"
+        > Grace came back alone and went straight
+     36. "and stood there holding it. Then he carried it back"
+        > and stood there holding it. He carried it back
+     37. "He wrote his name and the time. Then he turned back a page, and another."
+        > He wrote his name and the time and turned back a page, and another.
+     38. "Then he laid one more place, at the corner"
+        > He laid one more place, at the corner
+     39. "Then everyone had one in their hand"
+        > Soon everyone had one in their hand
+     40. "Grace had read hers twice. She laid it down"
+        > Grace laid hers down
+     41. "She stood over it a second. Then she pulled the blanket off and folded"
+        > She stood over it a second before she pulled the blanket off and folded
+     42. "without asking. Then he slid the four ones back across with two fingers."
+        > without asking, and slid the four ones back across with two fingers.
+     43. "He looked at it a while. Then he typed, Can't this time."
+        > He looked at it a while before he typed, Can't this time.
+     44. "Then he thought of Manny's well, four feet down, and it went back where it came from."
+        > The thought of Manny's well, down four feet, sent the smile back where it came from.
+     45. "Then a face filled the screen."
+        > A face filled the screen.
+     46. "Then he took the book out of his jacket"
+        > He took the book out of his jacket
+
+     Earlier check rows narrowed or updated to the new words so both pass: 19, 120, 125, 131, 135, 159, 165, 172.
+     19, 125, 131 and 135 now show PARTIAL against the v6 Doc, and 197 too (some of its short new lines, such as "He
+     answered", are already in the Doc); expected, as for 30, 137 and 182. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 
@@ -3192,7 +3296,7 @@ and a big moment is told as a list of events; CT asked only to be made aware of 
    "He". Eight proposed changes were given to CT in chat on 25 November and not logged.
 
 
-## The counting pattern, swept 26 Nov (not logged; waiting on CT)
+## The counting pattern, swept 26 Nov (Chapters 0 to 19 and 37 to 39 logged as edit 197; 20 to 36 in the rewrite)
 
 CT, after edit 196: "Don't do the pattern. He read it twice, then he wrote back." Then: "it's boring and repetitive.
 Send out some readers and find other instances of that pattern." A script listed 75 candidates; two readers judged

@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 3, accepted: 140, not in the Doc: 53.
+Totals: PARTIAL: 8, accepted: 136, not in the Doc: 53.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -29,7 +29,7 @@ Edit 57 was never used.
 | 16 | Ch 1 | accepted | He had found his first limit. The limit he found was heat, specific... |
 | 17 | Ch 1 | accepted | needed watts, of course, but it also needed cooling. |
 | 18 | Ch 1 | accepted | wasn't much of a prediction engine. |
-| 19 | Ch 1 | accepted | where he'd scrawled MADRONE IS NOT A DRONE, turned to a clean page,... |
+| 19 | Ch 1 | PARTIAL | where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean pa... |
 | 20 | Ch 1 | accepted | The fans coasted to silence. "Shit." The room ticked |
 | 21 | Ch 2 | accepted | He was done being blindsided. He would try to pay closer attention. |
 | 22 | Ch 2 | accepted | He meant to do it, but he never got the chance. |
@@ -130,22 +130,22 @@ Edit 57 was never used.
 | 117 | Ch 18 | accepted | It doesn't leave much room in the day for the good things to surpri... |
 | 118 | Ch 18 | accepted | Don't let her effort go to waste. |
 | 119 | Ch 18 | accepted | That's not a reward, spreadsheet, for all your doom scrolling. |
-| 120 | Ch 18 | accepted | he put the phone on Do Not Disturb, with one exception: the number ... |
+| 120 | Ch 18 | accepted | put the phone on Do Not Disturb, with one exception: the number for... |
 | 121 | Ch 18 | accepted | That was Sal's rule, if he'd have called it one: one thing with an ... |
 | 122 | Ch 18 | accepted | At 9:40 that morning he called the place with the rose garden |
 | 123 | Ch 18 | accepted | Elijah found his eyes lingering on the curves of her mouth. |
 | 124 | Ch 19 | accepted | it has your prior work experience written all over it. |
-| 125 | Ch 19 | accepted | Denny wanted to film the order coming in. |
+| 125 | Ch 19 | PARTIAL | Denny wanted to film the order coming in. |
 | 126 | Ch 19 | accepted | which from her was practically a parade. |
 | 127 | Ch 19 | accepted | The build took all of them three weekends |
 | 128 | Ch 19 | accepted | Reuben had spent thirty years as a title officer at the county |
 | 129 | Ch 19 | accepted | Reuben notices things. It's what makes him such a pain in the ass. ... |
 | 130 | Ch 19 | accepted | Saved our ass quite a few times," Lou said, from down the line. |
-| 131 | Ch 19 | accepted | and this time he started the old way. |
+| 131 | Ch 19 | PARTIAL | and this time he started the old way. |
 | 132 | Ch 19 | accepted | But the real reason was the board, where he had used one himself, a... |
 | 133 | Ch 19 | accepted | somewhere, so he knew what the thing drank. But the real reason was... |
 | 134 | Ch 19 | accepted | Marta hadn't said a word either, not since Grace walked Patricia do... |
-| 135 | Ch 19 | accepted | He scrolled. The whole line waited on him, and he was still scrolli... |
+| 135 | Ch 19 | PARTIAL | He scrolled. The whole line waited on him, and he was still scrolli... |
 | 136 | Ch 19 | accepted | You picked nothing." / He had picked. He had picked keeping his boa... |
 | 137 | Ch 22 | PARTIAL | read them the timestamps. Then, because he was already standing the... |
 | 138 | Ch 15 | accepted | "No, your website had the email. Don't ask me. Ask Tyler." / He ask... |
@@ -175,7 +175,7 @@ Edit 57 was never used.
 | 162 | Ch 10 to 39 | not in the Doc | "Fire escape," Ruby said, already sliding a window up. "It's the on... |
 | 163 | Ch 17 | not in the Doc | "I don't know, I'm kind of turned off on telling it." |
 | 164 | Ch 17 | not in the Doc | Without being conscious of it, his shoulders relaxed a few inches. |
-| 165 | Ch 17 | not in the Doc | said one word, "Musicians," the same way you might say termites. |
+| 165 | Ch 17 | not in the Doc | said one word, "Musicians," the same way you might say termites, |
 | 166 | Ch 18 | not in the Doc | "I think the way you're doing it is just right," Elijah said. / Out... |
 | 167 | Ch 19 | not in the Doc | Chapter 19: Eleven, One, Zero / In April the order came |
 | 168 | Ch 19 | not in the Doc | I just want you to spend a little more time making this feel like i... |
@@ -207,3 +207,4 @@ Edit 57 was never used.
 | 194 | Ch 20 | not in the Doc | Then I found out a machine wrote it, and I felt like a fraud and li... |
 | 195 | Ch 20 | not in the Doc | That was Wren. She led the Sunday circle and made the candles, and ... |
 | 196 | Ch 7 | not in the Doc | Mr. Ostrander had taught him Spanish for three years |
+| 197 | Ch 0 to 39 | PARTIAL | He'd underlined it twice and gone back to nodding. |

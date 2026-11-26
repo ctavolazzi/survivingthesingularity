@@ -153,6 +153,12 @@ now"). The pond is never a place. The ladder, each rung a loss that stays lost:
 11. Ch 35: Lou's night sermon cut down. Ch 36: the fire now lands on things the reader saw.
 Questions for CT: the heat failure as the spine; Denny leaves and comes back (or someone else, or for good); the kiss
 at the pond; the north-house couple.
+CT's answers (26 Nov): "Kiss at the pond, yes, but we need a good setup for it. Denny leaves and comes back. Yeah, that
+sounds right. That sounds fine. The North House couple leaving permanently, yes. But that doesn't really add serious
+stakes because we don't know them. The heat failure as the spine, I need a little more explanation for that."
+Claude's idea for the couple (not decided): make them the grower who loses the starts in the Ch 21 heat failure, the
+houses node 7 cut off in the Ch 28 storm, and the ones who leave in Ch 34, so the reader knows them and their leaving
+is the bill for Elijah's shortcuts. They need names.
 
 **Spine (Claude's proposal, CT to decide):** one running problem from Ch 20 to about Ch 30 that the co-op gets wrong
 before it gets right: the forty controllers go bad in the field. The failing part is the board Elijah made with an AI

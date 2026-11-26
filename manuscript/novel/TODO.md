@@ -72,8 +72,9 @@ Need CT's yes:
 - [x] Ch 25: one line of logic at the truck stop (his scene). CT: "yes."
 - [x] Split Chapter 26 at the October night: "Pondwater" (CT's title), unnumbered.
 - [x] ~~Ch 13: the sale of the farm as a scene.~~ Withdrawn: on reading, it already is one (CT's words).
-- [x] The continuity items in the report, section 6 (edit 219, and "parade" in 204). Left: "For three years he had told
-      her there wasn't one" (Ch 37), which holds only from Chapter 13.
+- [x] The continuity items in the report, section 6 (edit 219, and "parade" in 204). "For three years he had told her
+      there wasn't one" (Ch 37) holds: the stroke is fall 2024 (Ch 13, "There isn't any Barry."), and Chapter 37 is 25
+      November 2027 (checked in the tenth chat).
 - [x] ~~Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate.~~ Withdrawn (CT: "I don't care how long it gets I want
       it to be good"; both read and both earn their place).
 - [x] ~~Chapter 33's tomato dinner: cut the cotton gin numbers, the saber-tooth and the rent, and "Pull apart what it takes
@@ -90,7 +91,11 @@ Need CT's yes:
       chapter. For the rest of the book: his two places first, in his words (the truck he lives in, Chapters 14 and 15;
       the high-dollar party, Chapters 9 and 10), then any scene where a smell would carry the feeling. Each one shown to
       CT, since Chapters 0 to 19 are done.
-- [ ] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only.
+- [x] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only. Built in the tenth chat:
+      `manuscript/tools/edits-v6/openers.py OUT/v6.txt --ch 20-36`. After edit 223 it finds 35 runs of three or more
+      sentences opening with the same word, 38 runs of five pronoun-or-name openers, 21 paragraphs (Ch 0 to 19: 72, 59,
+      47). About a dozen of the 35 are real pronoun stacks; the rest are lists and repeats on purpose ("The horse. The
+      rifle. The radio."). Fixing them is on CT's go (the procedure, "Asked for the future").
 - [x] A last readers' pass over the whole book for continuity, every quote grep-checked; fix what it finds. Done 26 Nov
       (edit 222): 50 fixed; 10 held for CT in `drafts/pass-2026-11-26.md`, "Held for CT".
 - [x] ~~Words: Chapters 27 to 36 at or under 22,590 in total.~~ Dropped: length is not the measure (CT, 26 Nov).
@@ -105,9 +110,10 @@ Need CT's yes:
 
 ## 4. Every session (start and end)
 
-- [ ] Start: `REFERENCE.md`, section 1.
-- [ ] End: `REFERENCE.md`, section 4.7 (this file, the procedure's "Where things stand", STATE.md and LOG.md in
-      `_workbench`, the Drive mirror once).
+Not boxes, so `build_gate.py` can say READY when the real work is done:
+- Start: `REFERENCE.md`, section 1.
+- End: `REFERENCE.md`, section 4.7 (this file, the procedure's "Where things stand", STATE.md and LOG.md in
+  `_workbench`, the Drive mirror once).
 
 ## Done
 

@@ -3360,6 +3360,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+211. **Chapter 32: the late payment, the missed stop, the April quarrel, the coffee can.** CT's ask of 26 Nov (the missed
+     payment echoing his mother; a worse quarrel than the first; he apologizes; frozen yogurt; "it's his fault, or so he
+     thinks"), to the plan's section 10.3; written by Claude (Book now and Change to in
+     `manuscript/novel/drafts/chapter-32.md`). Grace buys him a week; Mrs. Delgado's box sits at the gate; Irene's "Tell
+     Reuben I don't mind waiting"; "A coffee can of order slips, in the barn"; "Don't handle me. Not like she did."; he
+     goes after her; "One cup. Two spoons."; the change can on the Friday table. Also Frank's chart, the truck song low,
+     Frank for Denny in the juniper scene. 2,068 words to 2,989. Logged only; not in the v6 Doc yet.
+
 210. **Chapter 31: Denny leaves; "Nothing that mattered" on the page; the roster cut.** From the plan (CT: "Denny leaves
      and comes back"); written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-31.md`). Denny on his
      porch, "Because you said it out loud," gone by the weekend; Grace deciding, in front of us, to say "Nothing that

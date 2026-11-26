@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 65.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 66.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -221,3 +221,4 @@ Edit 57 was never used.
 | 208 | Ch 29 | not in the Doc | Yvonne Osei, Denny's wife, worked nights at the care home in Ardell |
 | 209 | Ch 30 | not in the Doc | The night before the county meeting Priya found Grace in the kitche... |
 | 210 | Ch 31, 32 | not in the Doc | Two days later Denny waved him up onto his porch. |
+| 211 | Ch 32 | not in the Doc | Frank's chart leaned where he had propped it. |

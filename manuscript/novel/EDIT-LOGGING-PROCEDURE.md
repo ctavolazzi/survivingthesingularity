@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v6 edit list
-   (mirror of GitHub)" (id 1YcVosABMe0MUbQjItpzieXDAuRjuHEI7lJ5QLoyJW5Q) once, at the end of the session.
+   (mirror of GitHub)" (id 14h5XTCSN_O3ZHBwVKYSIzaRcvl5WudY8PCfS7CLvTFg, edits 1 to 220) once, at the end of the session.
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -222,8 +222,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
 ## Where things stand (end of the eighth logging chat, 26 Nov)
 - The v6 Google Doc "StS v6 draft (Nov 25)" is the book (CURRENT in the bridge). In the Doc: edits 1 to 138, 141 and
-  151. Logged in GitHub only: 139, 140, 142 to 219 except 151. **The next edit is 220.** (217: the arms at Praether's, Ch 37.
-  218: Devendra's text, Ch 39. 219: continuity in Ch 11, 13, 15, 19.) Nothing has been put into
+  151. Logged in GitHub only: 139, 140, 142 to 220 except 151. **The next edit is 221.** (217: the arms at Praether's, Ch 37.
+  218: Devendra's text, Ch 39. 219: continuity in Ch 11, 13, 15, 19. 220: Lou on Praether and the ace in the hole, Ch 18.) Nothing has been put into
   either Doc. Do not change the Doc; CT has not cleared it.
 - **Chapters 20 to 36 are all rewritten and logged:** 198 to 204 (Ch 20 to 26), 206 to 215 (Ch 27 to 36). Edit 205 is
   the Praether scene in Chapter 17. Each has its Book now and Change to in `drafts/`. Corrections from the story report
@@ -231,9 +231,9 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   night is now its own unnumbered chapter, "Pondwater".
 - Chapter 37 to the Epilogue stand as CT loves them, except the lines waiting on his yes (plan, section 13). The build
   gate (`build_gate.py`) says READY for its lines.
-- make_v6.py on a fresh v5 read passes all 219 rows. verify.py on the v6 Doc shows the nine expected PARTIALs (19, 30,
+- make_v6.py on a fresh v5 read passes all 220 rows. verify.py on the v6 Doc shows the nine expected PARTIALs (19, 30,
   125, 131, 135, 137, 182, 197, 201).
-- Length: 99,104 words; length is not the measure (CT, 26 Nov). Earlier note: 98,808 words (95,675 before Chapters 27 to 36 and the report's fixes). Chapters 27 to 36 hold 25,177 words
+- Length: 99,399 words; length is not the measure (CT, 26 Nov). Earlier note: 98,808 words (95,675 before Chapters 27 to 36 and the report's fixes). Chapters 27 to 36 hold 25,177 words
   against a budget of 22,590: about 2,600 over, mostly CT's new scenes (the April quarrel, the reveal, the women's scenes).
   The cuts that would pay for it need his yes (`TODO.md`, section 2a: Chapter 33's dinner, Chapter 4, Chapter 20).
 - What is waiting on CT is the top of `TODO.md` and its section 2a. The structure and gate for the next build:

@@ -120,3 +120,33 @@ place, it goes here.**
   that chapter is written (the reveal, with Priya's and Lou's lines).
 - Chapter 37 still says "two robot arms in the back of the equipment shed." It changes on CT's yes.
 - Chapter 26: Grace tells Marta (to write, with the scenes that have just the women).
+
+## Changed later on 26 Nov (CT: "Consider Praether's lines as an homage to pop culture for moments like these, and then deliver the twist at the end via Grace who sees the letters from the VA")
+
+Praether's speech and the drive out now read:
+
+> "One Saturday a month, then. Don't come to the door." Praether looked at the barn, and at the two of them. He put one
+> finger up. "Mark my words." His voice came up, like a man calling across a field. "Beware the military! They never
+> built one thing in their lives. They wait till some nice kid builds something useful, and they come around with a
+> check. Somebody always wants the thing that works." He pointed the finger at the barn, and then at Elijah. "Don't say
+> nobody warned you." His voice dropped again. "They'll be polite about it. That's how you'll know."
+>
+> Grace got the truck as far as the end of his drive before she laughed.
+>
+> "Did he say beware?"
+>
+> "He said beware."
+>
+> "He's the guy at the gas station. In the movie." She put one finger up. "Don't go up to the lake, kids. Mark my words."
+>
+> "What happens to the ones who go up to the lake?"
+>
+> "Nothing good, Elijah."
+>
+> The mailbox leaned on its post at the end of the fence, where the boards gave out. Grace stopped the truck beside it.
+> An envelope lay in the weeds under the box, gone soft with rain. She got out, picked it up and read the corner of it,
+> and the grin went off her face before she put it in the box.
+
+"Beware the military!" is CT's. The rest is Claude's. Out: "I carried what the nice kids built." The reveal that he is a
+Gulf War veteran is Lou's, at the top of Chapter 18 (edit 220, `chapter-18.md`); his own telling is at his mailbox in
+Chapter 26.

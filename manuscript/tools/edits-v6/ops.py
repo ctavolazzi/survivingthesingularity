@@ -1062,8 +1062,14 @@ One of the rust buckets was a loader, and it started on the first try. He had th
 "I can't pay much," Elijah said, when the door was shut. "I can work."
 "You know what a brush hog is?"
 "Yes, sir."
-"One Saturday a month, then. Don't come to the door." Praether looked at the barn, and at him. "Somebody's going to want those. Somebody always wants the thing that works." His voice came up, like a man calling across a field. "Beware the military! They never built one thing in their lives. They wait till some nice kid builds something useful, and they come around with a check. I carried what the nice kids built." His voice dropped again. "They'll be polite about it. That's how you'll know."
-The mailbox leaned on its post at the end of the fence, where the boards gave out. Grace stopped the truck beside it. An envelope lay in the weeds under the box, gone soft with rain. She got out, picked it up and read the corner of it before she put it in the box.
+"One Saturday a month, then. Don't come to the door." Praether looked at the barn, and at the two of them. He put one finger up. "Mark my words." His voice came up, like a man calling across a field. "Beware the military! They never built one thing in their lives. They wait till some nice kid builds something useful, and they come around with a check. Somebody always wants the thing that works." He pointed the finger at the barn, and then at Elijah. "Don't say nobody warned you." His voice dropped again. "They'll be polite about it. That's how you'll know."
+Grace got the truck as far as the end of his drive before she laughed.
+"Did he say beware?"
+"He said beware."
+"He's the guy at the gas station. In the movie." She put one finger up. "Don't go up to the lake, kids. Mark my words."
+"What happens to the ones who go up to the lake?"
+"Nothing good, Elijah."
+The mailbox leaned on its post at the end of the fence, where the boards gave out. Grace stopped the truck beside it. An envelope lay in the weeds under the box, gone soft with rain. She got out, picked it up and read the corner of it, and the grin went off her face before she put it in the box.
 "What?" Elijah said.
 "Department of Veterans Affairs." She shut the little door. Neither of them said anything until the grange.
 Some nights he drove out and looked at the barn from the road. He couldn't have told you what for."""),
@@ -1314,6 +1320,22 @@ It passed. Hector voted for it. Lupe kept her hands in her lap. Reuben said the 
 (219, "David showed up Thursday morning with a hand truck", "David showed up the next morning with a hand truck"),
 (219, "He had not opened the case since the last gig.", "He had hardly opened the case since the last gig."),
 (219, "The cases came from a kid named Tyler.\nTyler worked the register at Kowalski's Hardware in town, where Elijah had bought the screw terminals, forty at a time, until Tyler asked what they were for.", "The cases came from Tyler, the kid at the register who had sent him out to Praether's.\nElijah had been buying the screw terminals at Kowalski's, forty at a time, until Tyler asked what they were for."),
+# 220, Ch 18: Lou on Praether and the ace in the hole (CT's scene, 26 Nov)
+(220, "Elijah's next crisis found him in late April, seven weeks after he'd walked into the shop.", """Lou got the two of them alone the week after that dinner. He was weeding the end of a bed, and he didn't get up.
+"Grace says you met Richard."
+"He yelled at us about the military," Elijah said.
+"He would." Lou sat back on his heels. "Richard went over to the Gulf in ninety-one. He came home with something wrong in him that nobody would put a name to, and the government has been writing him letters about it ever since. Most of what he says is true. He says it loud, is all."
+Grace looked at Elijah. Neither of them brought up the envelope.
+"Anybody else know what's in his barn?" Lou said.
+"No."
+"You need to have an ace in the hole, Elijah," Lou said with a knowing gaze, "never reveal all of your cards again. I would have thought you'd have learned that by now."
+Elijah felt the heat of embarrassment wash over him, but it was quickly softened by Grace, who wrapped her arm around him.
+"Don't worry, Lou, I won't let him do anything stupid!" She smiled and looked him right in the eyes from inches away.
+"Right?"
+"Right," Elijah said, barely containing his enthusiasm to be so close to Grace.
+"I won't do anything stupid."
+
+Elijah's next crisis found him in late April, seven weeks after he'd walked into the shop."""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

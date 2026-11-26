@@ -3360,6 +3360,32 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+220. **Chapter 18 opens on Lou: Praether's war, and the ace in the hole.** CT (26 Nov): "Then in the next chapter the
+     reveal: Praether is a Gulf War vet, and maybe this is where Lou tells Elijah and Grace to keep the arms to
+     themselves?" A short scene before "Elijah's next crisis found him in late April", then a scene break. CT's, word
+     for word: "You need to have an ace in the hole, Elijah," Lou said with a knowing gaze, "never reveal all of your
+     cards again. I would have thought you'd have learned that by now." / Elijah felt the heat of embarrassment wash
+     over him, but it was quickly softened by Grace, who wrapped her arm around him. / "Don't worry, Lou, I won't let
+     him do anything stupid!" She smiled and looked him right in the eyes from inches away. / "Right?" / "Right," Elijah
+     said, barely containing his enthusiasm to be so close to Grace. / "I won't do anything stupid." Three marks
+     changed in his lines: "glaze" to "gaze", a comma after "Don't worry", and "Right." to "Right," before "Elijah
+     said". Claude's: the lines before it ("Lou got the two of them alone the week after that dinner. He was weeding
+     the end of a bed, and he didn't get up." "Grace says you met Richard." "He yelled at us about the military."
+     "Richard went over to the Gulf in ninety-one. He came home with something wrong in him that nobody would put a
+     name to, and the government has been writing him letters about it ever since. Most of what he says is true. He
+     says it loud, is all." "Grace looked at Elijah. Neither of them brought up the envelope." "Anybody else know
+     what's in his barn?" "No."). It answers Elijah's "Why?" in Chapter 17 ("He didn't say. That's Lou. You'll meet
+     him."). Logged only; not in the v6 Doc yet.
+
+Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
+these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware
+the military!" stays, with "They never built one thing in their lives ... they come around with a check. Somebody
+always wants the thing that works." and "Don't say nobody warned you." Out: "I carried what the nice kids built" (it
+gave the war away before the letter). New, in the truck: Grace laughs at the end of his drive. "Did he say beware?" "He
+said beware." "He's the guy at the gas station. In the movie." She put one finger up. "Don't go up to the lake, kids.
+Mark my words." "What happens to the ones who go up to the lake?" "Nothing good, Elijah." Then the envelope: "the grin
+went off her face before she put it in the box." All Claude's words except "Beware the military!" No film is named.
+
 219. **Chapters 11, 13, 15 and 19: five continuity fixes.** CT (26 Nov): "Yes pelase did the continuity errors." From
      `STORY-REPORT-2026-11-26.md`, section 6. Words by Claude.
      - Ch 11: "He carried the amp down the stairs himself, and it went into his mother's barn under a moving blanket"

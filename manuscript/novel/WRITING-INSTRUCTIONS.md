@@ -356,6 +356,12 @@ Everything here is from a line CT dictated or approved, or is in the book.
   time ago." [9]); David ("What's it gonna do? Yank the tap handle?" [43]); Rosa ("Mijo, you look muy flaco. Come in,
   eat." [110]).
 
+**Richard Praether** (CT, 26 Nov): "Consider Praether's lines as an homage to pop culture for moments like these, and
+then deliver the twist at the end via Grace who sees the letters from the VA." He is the old man in the movie who warns
+the kids: one finger up, "Mark my words," "Beware the military!" (CT's line), "Don't say nobody warned you." The scene
+is allowed to be funny, and Grace is allowed to say so in the truck. The weight comes after, from the envelope, and from
+Lou in the next chapter. Don't put his history in his own first speech. No film is named or quoted.
+
 ## 13. Before a chapter is logged
 
 1. Read the chapter whole, its part of the plan, and this file's sections 5 to 12.

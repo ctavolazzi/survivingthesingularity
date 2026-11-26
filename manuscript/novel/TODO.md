@@ -3,8 +3,8 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 220.** Chapters 20 to 36 are written; CT's eight choices of 26 Nov are in (edits 217 to 219 and corrections to 198
-and 204). Next: the women's scene about the tall rover (Chapter 34; section 1), then section 3.
+**Next edit: 221.** Chapters 20 to 36 are written; CT's eight choices of 26 Nov are in (edits 217 to 219 and corrections to 198
+and 204), and his Lou scene opens Chapter 18 (edit 220). The checkpoint and the prompt for the next chat: `CHECKPOINT-2026-11-26.md`. Next: the women's scene about the tall rover (Chapter 34; section 1), then section 3.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 

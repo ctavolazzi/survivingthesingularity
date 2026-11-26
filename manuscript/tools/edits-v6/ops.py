@@ -426,6 +426,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 167, Ch 19
 (167, "Chapter 19: Eleven, One, Zero\nThe co-op's first real manufacturing run was forty greenhouse controllers.\nIn April the order came",
 "Chapter 19: Eleven, One, Zero\nIn April the order came"),
+# 168, Ch 19
+(168, "I just want you to spend a little more time making this feel more like us than like Claypot.\"",
+"I just want you to spend a little more time making this feel like it was made by us and not Claypot.\""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

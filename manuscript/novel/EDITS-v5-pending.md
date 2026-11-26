@@ -1967,6 +1967,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      opens "In April the order came, through a friend of a friend of Priya's, from the CSA network two valleys over.
      Forty small boxes that could read soil moisture and air temperature..." Logged only; not in the v6 Doc yet.
 
+168. **Chapter 19, Marta on the first design: "made by us and not Claypot."** CT (26 Nov): "I just want you to spend a
+     little more time making this feel like it was made by us and not Claypot." Book now (edit 124): "I just want you to
+     spend a little more time making this feel more like us than like Claypot." Change to [CT's words]: "I just want you
+     to spend a little more time making this feel like it was made by us and not Claypot." Logged only; not in the v6
+     Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

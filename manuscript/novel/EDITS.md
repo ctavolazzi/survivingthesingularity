@@ -2,16 +2,18 @@
 
 Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Google Doc "StS v5 draft (Nov 23)").
 
-**Edits 1 to 86 are done: all of them are in the Doc as suggestions, waiting for CT to accept them.** Checked
-2026-11-25 against a fresh read of the Doc; the edit-by-edit record is `EDITS-v5-applied.md`. New edits start at
-87 and go in "New edits" below. The publication files (`publication/novel/build/build.sh`) have not been rebuilt.
+**Where the edits stand (26 Nov, tenth logging chat):** every edit, 1 to 223, is in the book, the Google Doc "StS v8
+draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py`'s build (the v5 Doc with its
+suggestions accepted, then every row of `ops.py`). Each entry below still says where it stood when it was logged
+("Logged only; not in the v6 Doc yet."); that is its history. New edits start at 224 and are logged only, until CT
+clears them for the Doc.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
-`python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh
-read of the Doc after every step; `EDITS-status.md` is the one table of where each edit stands. The build
-refuses to run unless every edit passes. A copy of this list lives in Google Drive as "StS edit list, edits 1 to 223 (mirror of
-GitHub)" (https://docs.google.com/document/d/1WMgBw6IDVq2ZY-WuPkFpiCX5df8WX8iQw5BSjAKAPqE); refresh it when this
-file changes. Each new edit gets a check row when it is logged.
+`python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
+v8 Doc; `EDITS-status.md` is the one table of where each edit stands (all 223 "accepted" on 26 Nov). A copy of this list
+lives in Google Drive as "StS edit list, edits 1 to 223 (mirror of GitHub)"
+(https://docs.google.com/document/d/1WMgBw6IDVq2ZY-WuPkFpiCX5df8WX8iQw5BSjAKAPqE; the id is also in
+`EDIT-LOGGING-PROCEDURE.md`, step 10). It is refreshed once, at the end of a session.
 
 ## Character notes from CT (context, not for the page)
 

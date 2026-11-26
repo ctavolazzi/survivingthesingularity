@@ -1,9 +1,9 @@
 # Edits to the novel: status of every edit
 
-Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
-revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
+Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v8 draft (Nov 26)",
+revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 78.
+Totals: accepted: 223.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -29,7 +29,7 @@ Edit 57 was never used.
 | 16 | Ch 1 | accepted | He had found his first limit. |
 | 17 | Ch 1 | accepted | needed watts, of course, but it also needed cooling. |
 | 18 | Ch 1 | accepted | wasn't much of a prediction engine. |
-| 19 | Ch 1 | PARTIAL | where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean pa... |
+| 19 | Ch 1 | accepted | where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean pa... |
 | 20 | Ch 1 | accepted | The fans coasted to silence. "Shit." The room ticked |
 | 21 | Ch 2 | accepted | He was done being blindsided. He would try to pay closer attention. |
 | 22 | Ch 2 | accepted | He meant to do it, but he never got the chance. |
@@ -40,7 +40,7 @@ Edit 57 was never used.
 | 27 | Meanwhile 1 | accepted | Find out what their dirt costs |
 | 28 | Ch 3 | accepted | I am afraid of what mankind might do with such a thing. |
 | 29 | Ch 3 | accepted | because it always rang around 9:40 every Sunday. That was church time. |
-| 30 | Ch 3-31 | PARTIAL | She called on her way out the door |
+| 30 | Ch 3-31 | accepted | She called on her way out the door |
 | 31 | Ch 13, 14 | accepted | It was dark out, and he was too sick to wonder why. |
 | 32 | Ch 3 | accepted | out of the world everyone they love still believes in. |
 | 33 | Ch 4 | accepted | and sat back. He felt nearly nothing. |
@@ -135,102 +135,102 @@ Edit 57 was never used.
 | 122 | Ch 18 | accepted | At 9:40 that morning he called the place with the rose garden |
 | 123 | Ch 18 | accepted | Elijah found his eyes lingering on the curves of her mouth. |
 | 124 | Ch 19 | accepted | it has your prior work experience written all over it. |
-| 125 | Ch 19 | PARTIAL | Denny wanted to film the order coming in. |
+| 125 | Ch 19 | accepted | Denny wanted to film the order coming in. |
 | 126 | Ch 19 | accepted | which from her was practically a parade. |
 | 127 | Ch 19 | accepted | The build took all of them three weekends |
 | 128 | Ch 19 | accepted | Reuben had spent thirty years as a title officer at the county |
 | 129 | Ch 19 | accepted | Reuben notices things. It's what makes him such a pain in the ass. ... |
 | 130 | Ch 19 | accepted | Saved our ass quite a few times," Lou said, from down the line. |
-| 131 | Ch 19 | PARTIAL | and this time he started the old way. |
+| 131 | Ch 19 | accepted | and this time he started the old way. |
 | 132 | Ch 19 | accepted | But the real reason was the board, where he had used one himself, a... |
 | 133 | Ch 19 | accepted | somewhere, so he knew what the thing drank. But the real reason was... |
 | 134 | Ch 19 | accepted | Marta hadn't said a word either, not since Grace walked Patricia do... |
-| 135 | Ch 19 | PARTIAL | He scrolled. The whole line waited on him, and he was still scrolli... |
+| 135 | Ch 19 | accepted | He scrolled. The whole line waited on him, and he was still scrolli... |
 | 136 | Ch 19 | accepted | You picked nothing." / He had picked. He had picked keeping his boa... |
-| 137 | Ch 22 (changed by 201) | PARTIAL | read them the timestamps. |
+| 137 | Ch 22 (changed by 201) | accepted | read them the timestamps. |
 | 138 | Ch 15 | accepted | "No, your website had the email. Don't ask me. Ask Tyler." / He ask... |
 | 139 | Author's Note (replaced by 185) | accepted | (nothing left to check) |
-| 140 | Author's Note (replaced by 185) | not in the Doc | gone: I'm not asking you to trust me. |
+| 140 | Author's Note (replaced by 185) | accepted | gone: I'm not asking you to trust me. |
 | 141 | Author's Note (replaced by 185) | accepted | gone: you might not be paying enough attention. [break] This could be |
-| 142 | Ch 1 | not in the Doc | So it had a ceiling. Whoever could pay for the power and the cooling |
+| 142 | Ch 1 | accepted | So it had a ceiling. Whoever could pay for the power and the cooling |
 | 143 | Ch 2 (italics; checked by make_v6.py) | accepted | is this true / Elijah didn't answer. |
-| 144 | Ch 2 | not in the Doc | so that later he could look back and see if he was right. |
-| 145 | Ch 5 | not in the Doc | He plugged in and started to play, but a few bars in he noticed the... |
-| 146 | Ch 6 | not in the Doc | "Keep your head down and stay focused for me," she said. |
-| 147 | Ch 6 | not in the Doc | For a year he had tried explaining it to each of them one at a time. |
-| 148 | Ch 9 | not in the Doc | Ruby walked through the swinging door, and it swung shut behind him... |
-| 149 | Ch 10 | not in the Doc | He couldn't write a billionaire without wanting something, and for ... |
-| 150 | Ch 11 | not in the Doc | Trent pondered for a moment. |
+| 144 | Ch 2 | accepted | so that later he could look back and see if he was right. |
+| 145 | Ch 5 | accepted | He plugged in and started to play, but a few bars in he noticed the... |
+| 146 | Ch 6 | accepted | "Keep your head down and stay focused for me," she said. |
+| 147 | Ch 6 | accepted | For a year he had tried explaining it to each of them one at a time. |
+| 148 | Ch 9 | accepted | Ruby walked through the swinging door, and it swung shut behind him... |
+| 149 | Ch 10 | accepted | He couldn't write a billionaire without wanting something, and for ... |
+| 150 | Ch 11 | accepted | Trent pondered for a moment. |
 | 151 | Ch 11 | accepted | Let's do it." / It was a good idea. Elijah could see it. |
-| 152 | Ch 12 | not in the Doc | a towel over the wheel. / The farm was two hours north, and his mot... |
-| 153 | Ch 13 | not in the Doc | They took her to Santa Rosa." / He left immediately. He didn't reme... |
-| 154 | Ch 13 | not in the Doc | When he got to the house, he saw what had happened. There was a pot... |
-| 155 | Ch 7 | not in the Doc | Hey, you heard from the guys? |
-| 156 | Ch 13 | not in the Doc | Eventually his hand came down. The doctor's letter was still waitin... |
-| 157 | Ch 13 | not in the Doc | David heaved the hand truck back into his pickup and looked at the ... |
-| 158 | Ch 14 | not in the Doc | Slowly he lay back down and pulled the jacket up. Then the crying c... |
-| 159 | Ch 15, 26 | not in the Doc | But something told him to open it, so he did. / Mr. Madrone, |
-| 160 | Ch 16 | not in the Doc | Going off wasn't the plan. All he'd meant to say was hello. |
-| 161 | Ch 17 | not in the Doc | "That's a picture," Priya said, fidgeting with the pencil behind he... |
-| 162 | Ch 10 to 39 | not in the Doc | "Fire escape," Ruby said, already sliding a window up. "It's the on... |
-| 163 | Ch 17 | not in the Doc | "I don't know, I'm kind of turned off on telling it." |
-| 164 | Ch 17 | not in the Doc | Without being conscious of it, his shoulders relaxed a few inches. |
-| 165 | Ch 17 | not in the Doc | said one word, "Musicians," the same way you might say termites, |
-| 166 | Ch 18 | not in the Doc | "I think the way you're doing it is just right," Elijah said. / Out... |
-| 167 | Ch 19 | not in the Doc | Chapter 19: Eleven, One, Zero / Earlier that April the order had come |
-| 168 | Ch 19 | not in the Doc | I just want you to spend a little more time making this feel like i... |
-| 169 | Ch 19 | not in the Doc | and the fledgling production team fixed what they found before the ... |
-| 170 | Ch 20 | not in the Doc | What Lou did to Elijah in May just about killed him. |
-| 171 | Ch 20 | not in the Doc | "Hey, Ivy League," he said, wiping his eyes. |
-| 172 | Ch 20 to 39 | not in the Doc | He had come north to do something about it, and he also believed no... |
-| 173 | Ch 33, 34, 38 | not in the Doc | "Owned by who?" Curtis said, not looking up from his plate. |
-| 174 | Ch 32, 34, 35, 38 | not in the Doc | "Curtis, it's an arm. It's bolted |
-| 175 | Ch 31 | not in the Doc | He had turned down the million dollars and the ads and the room. Th... |
-| 176 | Ch 26 | not in the Doc | the low spot at the end of bed three was under water, |
-| 177 | Ch 37 | not in the Doc | Somebody checked. / Out by the pond, the birds had started up. / He... |
-| 178 | Ch 37 | not in the Doc | It took a morning. A bag of clothes went in, and the laptop. Then a... |
-| 179 | Ch 24, 28, 30 | not in the Doc | The sweep signed off on it. |
-| 180 | Ch 17 | not in the Doc | He looked around the table, then back at Elijah. |
-| 181 | Ch 17 | not in the Doc | The warm place on Elijah's arm stayed warm, but under it was a ques... |
-| 182 | Ch 21 to 39 | PARTIAL | Elijah watched her do forty in a night. |
-| 183 | Ch 18 | not in the Doc | Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen... |
-| 184 | Dedication | not in the Doc | like I'd finally lost it. / Recognize Your Power / Act One |
-| 185 | Contents, Dedication | not in the Doc | Contents / Dedication / Act One |
-| 186 | End | not in the Doc | Thursday, November 25, 2027. Thanksgiving. / Thank You / Thank you ... |
-| 187 | Ch 31 | not in the Doc | He believed her because he wanted to. / The next Sunday at 9:40 he ... |
-| 188 | Ch 15 | not in the Doc | Somewhere past Cloverdale the check-engine light came on. / Elijah ... |
-| 189 | Ch 18 | not in the Doc | Don't let her effort go to waste." She straightened up and looked h... |
-| 190 | Ch 20 | not in the Doc | Elijah had no idea. He was a little ashamed of that. / So Lou showe... |
-| 191 | Ch 20 | not in the Doc | "It doesn't work, my man. It works because we're lucky. Our specifi... |
-| 192 | Ch 20 | not in the Doc | Elijah thought about his mother, and the sacred pot she never let a... |
-| 193 | Ch 20 | not in the Doc | Not a subscription. I already lost one orchard." |
-| 194 | Ch 20 | not in the Doc | Then I found out a machine wrote it, and I felt like a fraud and li... |
-| 195 | Ch 20 | not in the Doc | That was Wren. She led the Sunday circle and made the candles, and ... |
-| 196 | Ch 7 | not in the Doc | Mr. Ostrander had taught him Spanish for three years |
-| 197 | Ch 0 to 39 | PARTIAL | He'd underlined it twice and gone back to nodding. |
-| 198 | Ch 25, 26 | not in the Doc | Behind him were a hundred, and a man who would fix it for nothing. |
-| 199 | Ch 19, 20 | not in the Doc | Those boxes go out in May either way. |
-| 200 | Ch 21 | not in the Doc | under a year and a half of everything else |
-| 201 | Ch 22 | PARTIAL | "There's one more thing," he said. "The board in the boxes. I didn'... |
-| 202 | Ch 23 | not in the Doc | He saw the pattern all at once, on the third evening. |
-| 203 | Ch 24 | not in the Doc | The first new board was done in the middle of August. |
-| 204 | Ch 26, 32, 33 | not in the Doc | Write your models accordingly. / Pondwater / That fall, it was Mart... |
-| 205 | Ch 17 | not in the Doc | On the fourth day Grace asked about the arms. |
-| 206 | Ch 27 | not in the Doc | Elijah wrapped the outside taps against the frost and went to bed. |
-| 207 | Ch 28 | not in the Doc | came up the valley in December. |
-| 208 | Ch 29 | not in the Doc | Yvonne Osei, Denny's wife, worked nights at the care home in Ardell |
-| 209 | Ch 30 | not in the Doc | The night before the county meeting Priya found Grace in the kitche... |
-| 210 | Ch 31, 32 | not in the Doc | Two days later Denny waved him up onto his porch. |
-| 211 | Ch 32 | not in the Doc | Frank's chart leaned where he had propped it. |
-| 212 | Ch 33 | not in the Doc | It was Denny's. Elijah swung the gate open. |
-| 213 | Ch 34 | not in the Doc | They wanted the tall one now, the frame that straddles a whole bed,... |
-| 214 | Ch 35 | not in the Doc | That's what Patricia's doing. |
-| 215 | Ch 36 | not in the Doc | The Ochoas left the Saturday before the festival. |
-| 216 | Ch 38 | not in the Doc | the new rover stood parked over bed four |
-| 217 | Ch 37 | not in the Doc | All that was left were two robot arms in Richard Praether's pole barn. |
-| 218 | Ch 39 | not in the Doc | His phone buzzed against his leg. It was Devendra. / Dinner's on me... |
-| 219 | Ch 11, 13, 15, 19 | not in the Doc | by the next morning she had it out in the barn under a moving blanket |
-| 220 | Ch 18 | not in the Doc | Lou got the two of them alone the week after that dinner. |
-| 221 | Ch 34 | not in the Doc | The afternoon before the October meeting, Priya took her sheet up t... |
-| 222 | Ch 0 to 36, Appendix | not in the Doc | He had found his first limit. It was heat. |
-| 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | not in the Doc | It won't start with the machines. First it takes the people who see... |
+| 152 | Ch 12 | accepted | a towel over the wheel. / The farm was two hours north, and his mot... |
+| 153 | Ch 13 | accepted | They took her to Santa Rosa." / He left immediately. He didn't reme... |
+| 154 | Ch 13 | accepted | When he got to the house, he saw what had happened. There was a pot... |
+| 155 | Ch 7 | accepted | Hey, you heard from the guys? |
+| 156 | Ch 13 | accepted | Eventually his hand came down. The doctor's letter was still waitin... |
+| 157 | Ch 13 | accepted | David heaved the hand truck back into his pickup and looked at the ... |
+| 158 | Ch 14 | accepted | Slowly he lay back down and pulled the jacket up. Then the crying c... |
+| 159 | Ch 15, 26 | accepted | But something told him to open it, so he did. / Mr. Madrone, |
+| 160 | Ch 16 | accepted | Going off wasn't the plan. All he'd meant to say was hello. |
+| 161 | Ch 17 | accepted | "That's a picture," Priya said, fidgeting with the pencil behind he... |
+| 162 | Ch 10 to 39 | accepted | "Fire escape," Ruby said, already sliding a window up. "It's the on... |
+| 163 | Ch 17 | accepted | "I don't know, I'm kind of turned off on telling it." |
+| 164 | Ch 17 | accepted | Without being conscious of it, his shoulders relaxed a few inches. |
+| 165 | Ch 17 | accepted | said one word, "Musicians," the same way you might say termites, |
+| 166 | Ch 18 | accepted | "I think the way you're doing it is just right," Elijah said. / Out... |
+| 167 | Ch 19 | accepted | Chapter 19: Eleven, One, Zero / Earlier that April the order had come |
+| 168 | Ch 19 | accepted | I just want you to spend a little more time making this feel like i... |
+| 169 | Ch 19 | accepted | and the fledgling production team fixed what they found before the ... |
+| 170 | Ch 20 | accepted | What Lou did to Elijah in May just about killed him. |
+| 171 | Ch 20 | accepted | "Hey, Ivy League," he said, wiping his eyes. |
+| 172 | Ch 20 to 39 | accepted | He had come north to do something about it, and he also believed no... |
+| 173 | Ch 33, 34, 38 | accepted | "Owned by who?" Curtis said, not looking up from his plate. |
+| 174 | Ch 32, 34, 35, 38 | accepted | "Curtis, it's an arm. It's bolted |
+| 175 | Ch 31 | accepted | He had turned down the million dollars and the ads and the room. Th... |
+| 176 | Ch 26 | accepted | the low spot at the end of bed three was under water, |
+| 177 | Ch 37 | accepted | Somebody checked. / Out by the pond, the birds had started up. / He... |
+| 178 | Ch 37 | accepted | It took a morning. A bag of clothes went in, and the laptop. Then a... |
+| 179 | Ch 24, 28, 30 | accepted | The sweep signed off on it. |
+| 180 | Ch 17 | accepted | He looked around the table, then back at Elijah. |
+| 181 | Ch 17 | accepted | The warm place on Elijah's arm stayed warm, but under it was a ques... |
+| 182 | Ch 21 to 39 | accepted | Elijah watched her do forty in a night. |
+| 183 | Ch 18 | accepted | Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen... |
+| 184 | Dedication | accepted | like I'd finally lost it. / Recognize Your Power / Act One |
+| 185 | Contents, Dedication | accepted | Contents / Dedication / Act One |
+| 186 | End | accepted | Thursday, November 25, 2027. Thanksgiving. / Thank You / Thank you ... |
+| 187 | Ch 31 | accepted | He believed her because he wanted to. / The next Sunday at 9:40 he ... |
+| 188 | Ch 15 | accepted | Somewhere past Cloverdale the check-engine light came on. / Elijah ... |
+| 189 | Ch 18 | accepted | Don't let her effort go to waste." She straightened up and looked h... |
+| 190 | Ch 20 | accepted | Elijah had no idea. He was a little ashamed of that. / So Lou showe... |
+| 191 | Ch 20 | accepted | "It doesn't work, my man. It works because we're lucky. Our specifi... |
+| 192 | Ch 20 | accepted | Elijah thought about his mother, and the sacred pot she never let a... |
+| 193 | Ch 20 | accepted | Not a subscription. I already lost one orchard." |
+| 194 | Ch 20 | accepted | Then I found out a machine wrote it, and I felt like a fraud and li... |
+| 195 | Ch 20 | accepted | That was Wren. She led the Sunday circle and made the candles, and ... |
+| 196 | Ch 7 | accepted | Mr. Ostrander had taught him Spanish for three years |
+| 197 | Ch 0 to 39 | accepted | He'd underlined it twice and gone back to nodding. |
+| 198 | Ch 25, 26 | accepted | Behind him were a hundred, and a man who would fix it for nothing. |
+| 199 | Ch 19, 20 | accepted | Those boxes go out in May either way. |
+| 200 | Ch 21 | accepted | under a year and a half of everything else |
+| 201 | Ch 22 | accepted | "There's one more thing," he said. "The board in the boxes. I didn'... |
+| 202 | Ch 23 | accepted | He saw the pattern all at once, on the third evening. |
+| 203 | Ch 24 | accepted | The first new board was done in the middle of August. |
+| 204 | Ch 26, 32, 33 | accepted | Write your models accordingly. / Pondwater / That fall, it was Mart... |
+| 205 | Ch 17 | accepted | On the fourth day Grace asked about the arms. |
+| 206 | Ch 27 | accepted | Elijah wrapped the outside taps against the frost and went to bed. |
+| 207 | Ch 28 | accepted | came up the valley in December. |
+| 208 | Ch 29 | accepted | Yvonne Osei, Denny's wife, worked nights at the care home in Ardell |
+| 209 | Ch 30 | accepted | The night before the county meeting Priya found Grace in the kitche... |
+| 210 | Ch 31, 32 | accepted | Two days later Denny waved him up onto his porch. |
+| 211 | Ch 32 | accepted | Frank's chart leaned where he had propped it. |
+| 212 | Ch 33 | accepted | It was Denny's. Elijah swung the gate open. |
+| 213 | Ch 34 | accepted | They wanted the tall one now, the frame that straddles a whole bed,... |
+| 214 | Ch 35 | accepted | That's what Patricia's doing. |
+| 215 | Ch 36 | accepted | The Ochoas left the Saturday before the festival. |
+| 216 | Ch 38 | accepted | the new rover stood parked over bed four |
+| 217 | Ch 37 | accepted | All that was left were two robot arms in Richard Praether's pole barn. |
+| 218 | Ch 39 | accepted | His phone buzzed against his leg. It was Devendra. / Dinner's on me... |
+| 219 | Ch 11, 13, 15, 19 | accepted | by the next morning she had it out in the barn under a moving blanket |
+| 220 | Ch 18 | accepted | Lou got the two of them alone the week after that dinner. |
+| 221 | Ch 34 | accepted | The afternoon before the October meeting, Priya took her sheet up t... |
+| 222 | Ch 0 to 36, Appendix | accepted | He had found his first limit. It was heat. |
+| 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | accepted | It won't start with the machines. First it takes the people who see... |

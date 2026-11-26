@@ -817,8 +817,12 @@ Where each lands (Claude's answer to "do you have any feedback"; CT has not repl
 - **The rover on its way when Elijah leaves** collides twice. The rover has been in the field since May 2026 (Ch 26,
   from CT's direction earlier the same day), and the fire needs the table to have said no ("Because they said no."; "I
   kept looking up the driveway for a truck."). Proposed: the rover stays as written; the arms are the machine on the
-  table in Chapter 34; the table tables it; the Ochoas leave anyway, because tabled means it comes back. **Waiting on
-  CT. This is the one open question in the plan.**
+  table in Chapter 34; the table tables it; the Ochoas leave anyway, because tabled means it comes back. **CT, 26 Nov:
+  "Yes".** And: "I had originally envisioned Elijah storing the arms on the farm to sort of prove his value and save
+  money. A moment he would have longed for since the electrical bill." The arms have sat in the equipment shed since
+  Chapter 17 (the table covered the storage unit as a loan); his line for that moment, "No bills, except my phone,
+  which at this point more or less pays for itself with the Creator Fund," goes in Chapter 17. In Chapter 34 the
+  arms he kept to prove his value are what he offers.
 
 ## 11. Chapter by chapter, 27 to 36
 

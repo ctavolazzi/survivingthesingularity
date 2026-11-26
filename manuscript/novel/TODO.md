@@ -7,8 +7,12 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
-- [ ] **The rover and the arms.** Keep the rover as written (in the field since May 2026), with the robot arms as the
-      machine the table says no to in Chapter 34? Claude recommends yes. Needed before Chapter 34. (Plan, 10.4.)
+- [x] **The rover and the arms.** CT, 26 Nov: "Yes". The rover stays as written; the arms are the machine the table
+      says no to in Chapter 34. His addition: "I had originally envisioned Elijah storing the arms on the farm to sort
+      of prove his value and save money. A moment he would have longed for since the electrical bill." With his line,
+      "No bills, except my phone, which at this point more or less pays for itself with the Creator Fund." It goes in
+      Chapter 17, where the crates go into the equipment shed; waiting on one word from him ("Creator Fund" or "creator
+      fund").
 - [ ] **Grace's father.** He left when she was a teenager (CT, 26 Nov), or he checked out without leaving the porch?
       The fire says "Your dad chose. Every day, on the porch, on his phone," and Faith sits beside him there now.
       Claude recommends checked out. Needed before the Chapter 24 correction below.

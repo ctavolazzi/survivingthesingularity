@@ -8,6 +8,13 @@ in `EDITS.md` under "Direction from CT, 26 Nov". Everything not in quotation mar
 **For the endgame, sections 10 to 13 are the working plan; `TODO.md` is the order of work and `REFERENCE.md` the
 procedure.**
 
+**Where the plan stands (tenth logging chat, 26 Nov, after edit 223; the book is the v8 Doc).** Everything in sections
+10 to 12 is written and logged (edits 198 to 223) or was withdrawn by CT. Section 13 is done except two lines that are
+his: the gas cap (item 5) and "Marta had heard it as a murder" (item 7). Section 8's items are all closed in 12.1. Row 14 of
+12.1 is done too: the checker is `manuscript/tools/edits-v6/openers.py` (built in the tenth chat). The word
+counts in sections 6 and 11 are from when each was written; the current ones are in the appendix of
+`STORY-REPORT-2026-11-26.md`. Section 12.1, row 15, happened: the copy is "StS v8 draft (Nov 26)".
+
 Marks: **KEEP** is in the book now and stays. **CHANGE** reworks something that is there. **NEW** is added, and
 something comes out to make room (the book does not get longer). **CT** means he decided it.
 

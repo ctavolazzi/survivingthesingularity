@@ -324,4 +324,6 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 138, Ch 15: two lines edit 100 left behind
 (138, "\nHe went and looked. It was there, from April, under eleven hundred other things he hadn't opened. It had been sitting there the whole time.\n", "\n"),
 (138, "holding a rich man's empty glass. It could be a cult. It could be nothing,", "holding a rich man's empty glass. It could be nothing,"),
+# 139, Author's Note
+(139, "was a tool that does a thing. The shovel never dug its own hole.", "was a tool that does a thing. But this is different. The shovel never dug its own hole."),
 ]

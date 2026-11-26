@@ -1452,6 +1452,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      empty shed and a woman who talked too much." Edit 100 already has "It could be a cult with a nice website" a
      page earlier.
 
+139. **Author's Note: "But this is different."** CT (26 Nov, reading v6): "Was a thing that did a thing. The shovel never
+     dug its own hole. I want to say in between those two lines, but this is different." Book now:
+
+     > Everything humanity ever built before was a tool that does a thing. The shovel never dug its own hole.
+
+     Change to [CT's words]:
+
+     > Everything humanity ever built before was a tool that does a thing. But this is different. The shovel never
+     > dug its own hole.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

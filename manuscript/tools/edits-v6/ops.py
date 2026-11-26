@@ -521,6 +521,27 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "He meant the part about another time. The phone went back in his pocket."),
 (172, "He drank half. He tipped like a man who used to get tipped. He took the book out",
 "He drank half and tipped like a man who used to get tipped. Then he took the book out"),
+# 173, Ch 33, 34, 38
+(173, "\"Owned by who?\" Curtis said.",
+"\"Owned by who?\" Curtis said, not looking up from his plate."),
+(173, "\"Name one,\" Marta said.",
+"\"Name one,\" Marta said, and set her cup down."),
+(173, "\"Easy for you,\" Curtis said.",
+"\"Easy for you,\" Curtis said, sitting back in his chair."),
+(173, "\"Most of them,\" Denny said.",
+"\"Most of them,\" Denny said, raising his glass."),
+(173, "\"Nine days,\" Curtis said.",
+"\"Nine days,\" Curtis said, looking out the windshield."),
+(173, "\"Item four,\" Reuben said.",
+"\"Item four,\" Reuben said, turning a page."),
+(173, "\"Hell, I'll look at it,\" said Lou.",
+"\"Hell, I'll look at it,\" said Lou, and held out his hand for the laptop."),
+(173, "\"That's a thermometer, Curtis,\" Frank said.",
+"\"That's a thermometer, Curtis,\" Frank said, rubbing his eyes."),
+(173, "\"I know,\" Tyler said.",
+"\"I know,\" Tyler said, looking at his plate."),
+(173, "\"Sit down, Curtis,\" Rosa said.",
+"\"Sit down, Curtis,\" Rosa said, and patted the bench beside her."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

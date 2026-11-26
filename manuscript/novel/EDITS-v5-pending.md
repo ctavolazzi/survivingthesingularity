@@ -2239,6 +2239,70 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+173. **Chapters 33, 34 and 38: physical beats in the table scenes.** CT (26 Nov), on the recommendations. The three big table arguments carry most of the book's bare "X said." tags (37, 14 and 19). Ten beats, each where nobody in the lines around it is moving, the same rule as edit 162. Claude's choice and wording.
+
+     1. Book now:
+     > "Owned by who?" Curtis said.
+
+        Change to:
+     > "Owned by who?" Curtis said, not looking up from his plate.
+
+     2. Book now:
+     > "Name one," Marta said.
+
+        Change to:
+     > "Name one," Marta said, and set her cup down.
+
+     3. Book now:
+     > "Easy for you," Curtis said.
+
+        Change to:
+     > "Easy for you," Curtis said, sitting back in his chair.
+
+     4. Book now:
+     > "Most of them," Denny said.
+
+        Change to:
+     > "Most of them," Denny said, raising his glass.
+
+     5. Book now:
+     > "Nine days," Curtis said.
+
+        Change to:
+     > "Nine days," Curtis said, looking out the windshield.
+
+     6. Book now:
+     > "Item four," Reuben said.
+
+        Change to:
+     > "Item four," Reuben said, turning a page.
+
+     7. Book now:
+     > "Hell, I'll look at it," said Lou.
+
+        Change to:
+     > "Hell, I'll look at it," said Lou, and held out his hand for the laptop.
+
+     8. Book now:
+     > "That's a thermometer, Curtis," Frank said.
+
+        Change to:
+     > "That's a thermometer, Curtis," Frank said, rubbing his eyes.
+
+     9. Book now:
+     > "I know," Tyler said.
+
+        Change to:
+     > "I know," Tyler said, looking at his plate.
+
+     10. Book now:
+     > "Sit down, Curtis," Rosa said.
+
+        Change to:
+     > "Sit down, Curtis," Rosa said, and patted the bench beside her.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -1943,6 +1943,25 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      termites." Book now: ...and then at him, and said one word, "Musician," the way you'd say termites. Change to [CT's words]: ...and then at him, and said one word, "Musicians," the same way you might say termites.
      Logged only; not in the v6 Doc yet.
 
+166. **Chapter 18, the last lines: "Elijah said", and the birds at the pond.** CT (26 Nov): "I think what you're doing is
+     just right, he said. It's clear that it's Elijah talking, but since it's a new page, I want to say, I think the way
+     you're doing it is just right, Elijah said. And then, if this is nighttime, we should say something about the
+     frogs at the pond. If this is daytime, we should say something about the birds at the pond." The scene has no
+     clock time, but he returns the jars at the kitchen trailer "that week", when he works the bench from seven to
+     noon, so it reads as daytime: birds. Book now (edit 123):
+
+     > "I think what you're doing is just right," he said.
+
+     Change to [CT's words; the bird line is Claude's]:
+
+     > "I think the way you're doing it is just right," Elijah said.
+     >
+     > Out by the pond, the birds were singing.
+
+     Then "Chapter 19" as before. The pond is the one from edit 104 (the frogs at night). Context from CT, NOT for the
+     page (edit 104): birds don't sing when there are predators around; it is his nervous system settling. Logged
+     only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

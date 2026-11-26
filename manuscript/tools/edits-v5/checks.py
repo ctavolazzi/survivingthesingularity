@@ -128,7 +128,7 @@ C=[
 (120,"Ch 18",["he put the phone on Do Not Disturb, with one exception: the number for the place with the rose garden."],["turned the notifications off, all of them except the number of the place with the rose garden"]),
 (121,"Ch 18",["That was Sal's rule, if he'd have called it one: one thing with an end to it, before noon."],[]),
 (122,"Ch 18",["At 9:40 that morning he called the place with the rose garden"],["\nAt 9:40 he called the place with the rose garden"]),
-(123,"Ch 18",["Elijah found his eyes lingering on the curves of her mouth.","Maybe I'm a little too cautious. Maybe I should have knocked like Marta.","I think what you're doing is just right,"],["\"I should have knocked like Marta.\"\nChapter 19"]),
+(123,"Ch 18",["Elijah found his eyes lingering on the curves of her mouth.","Maybe I'm a little too cautious. Maybe I should have knocked like Marta.","Maybe I'm a little too cautious. Maybe I should have knocked like Marta."],["\"I should have knocked like Marta.\"\nChapter 19"]),
 (124,"Ch 19",["it has your prior work experience written all over it.","You're a good engineer,\" she said. \"I mean it.","more like us than like Claypot.\"","Marta hooked the bottom drawer of the parts cabinet with her boot"],["It's a Claypot design. Design it again."]),
 (125,"Ch 19",["Denny wanted to film the order coming in.","Lou asked who was paying for the parts.","She read the order twice and pinned it to the whiteboard.","his Telecaster was in the window on Fourth Street."],["The four months on the yellow ticket ran out on a Tuesday in May."]),
 (126,"Ch 19",["which from her was practically a parade."],["which from her was a parade."]),
@@ -171,4 +171,5 @@ C=[
 (163,"Ch 17",["\"I don't know, I'm kind of turned off on telling it.\""],["\"I don't know. I'm kind of off telling it.\""]),
 (164,"Ch 17",["Without being conscious of it, his shoulders relaxed a few inches."],["He noticed his shoulders relax a bit."]),
 (165,"Ch 17",["said one word, \"Musicians,\" the same way you might say termites."],["said one word, \"Musician,\" the way you'd say termites."]),
+(166,"Ch 18",["\"I think the way you're doing it is just right,\" Elijah said.\nOut by the pond, the birds were singing.\nChapter 19"],["\"I think what you're doing is just right,\" he said."]),
 ]

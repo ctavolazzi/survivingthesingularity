@@ -3300,6 +3300,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      (the amp night moved there ends with her head against his, and the kiss is still to be written). Open: whether
      the check-engine light was nothing. Logged only; not in the v6 Doc yet.
 
+199. **Chapter 20: the boxes waiting on summer, Ma and Barry, Wren's comeback.** From the plan; drafted by Claude in
+     `manuscript/novel/drafts/chapter-20.md` (Book now and Change to are there). CT's corrections on the boxes
+     paragraph: "What the fuck is that, bro?" (draft 1's one long sentence and its joke), then "It hadn't been very hot
+     yet. This is foreshadowing, right?" and "we can combine them together ... It was still a cool spring. It hadn't
+     been very hot yet." (CT's words), then "do the work." Claude's wording otherwise. Line flags 1 and 2 of the 59 are
+     fixed here. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

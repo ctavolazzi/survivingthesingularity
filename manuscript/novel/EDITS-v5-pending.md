@@ -1785,6 +1785,22 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+158. **Chapter 14, the rain on the truck: sentence openings.** CT (26 Nov): "Same story with the part where it says he lay
+     back down, he pulled the jacket up, he did this, he did that." Book now:
+
+     > He lay back down.
+     >
+     > He pulled the jacket up. He cried the way he had yelled, all the way, with his mouth open. Nobody was going to
+     > hear it over that. He cried until his ribs hurt, and then for a while after that he just lay there and leaked.
+
+     Change to [Claude's wording; only the openings and joins change, every fact and image stays]:
+
+     > Slowly he lay back down and pulled the jacket up. Then the crying came, the way the yelling had, all the way,
+     > with his mouth open. Nobody was going to hear it over that. It went on until his ribs hurt, and for a while
+     > after that he just lay there and leaked.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

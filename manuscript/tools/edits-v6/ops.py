@@ -370,6 +370,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 157, Ch 13
 (157, "He heaved the hand truck back into his pickup. He looked at the porch a second. There was nobody on it. He lifted two fingers off the wheel going down the drive, and Elijah lifted his hand.",
 "David heaved the hand truck back into his pickup and looked at the porch a second. There was nobody on it. Going down the drive, he lifted two fingers off the wheel, and Elijah lifted his hand."),
+# 158, Ch 14
+(158, "He lay back down.\nHe pulled the jacket up. He cried the way he had yelled, all the way, with his mouth open. Nobody was going to hear it over that. He cried until his ribs hurt, and then for a while after that he just lay there and leaked.",
+"Slowly he lay back down and pulled the jacket up. Then the crying came, the way the yelling had, all the way, with his mouth open. Nobody was going to hear it over that. It went on until his ribs hurt, and for a while after that he just lay there and leaked."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -1336,6 +1336,28 @@ Elijah felt the heat of embarrassment wash over him, but it was quickly softened
 "I won't do anything stupid."
 
 Elijah's next crisis found him in late April, seven weeks after he'd walked into the shop."""),
+# 221, Ch 34: the women weigh the tall rover at Irene's table (CT's direction, 26 Nov; drafts/chapter-34.md)
+(221, "On it, in marker, he wrote DECEMBER.", "On it, in marker, he wrote DECEMBER.\n\n" + """The afternoon before the October meeting, Priya took her sheet up to Irene's house, and Marta and Grace went with her.
+Irene had two pots of windfalls cooking down on the stove. The smell had climbed the kitchen walls and gotten into the curtains, and it was out on the back step before they knocked.
+Priya had the sheet flat on the oilcloth before her coat was off. It was one page, in pencil. Across the top she had copied the number from the bottom of Reuben's page and put a ring around it.
+"The little one does four beds," she said. "The tall one does all twelve, in about the time the little one does a row. It waters and it weeds, and it never touches the food." She tapped the last line. "I read the pledge again. It covers the field to the box. This thing never gets near a box."
+"You read it again," Marta said.
+"Three times."
+Irene was at the stove with her back to them, working a wooden spoon around the bottom of the near pot. "And what does all that come to?"
+"Four days a week back. Maybe five. I'll know when I measure it." Priya ran her pencil down the page. "With the same hands, call it sixty more boxes a week by summer."
+Marta read it with her right arm held in close against her side. "My last year at the plant, they bought a robot welder," she said. "It was going to give everybody a day a week back. It did. By spring it had given six of us the whole week."
+"Who would we lay off?" Priya said. "Us?"
+"I know it. I'm just telling you how it sounds."
+"It isn't the beds anybody's worried about," Grace said. She had both hands around a mug of Irene's coffee and hadn't drunk any. "Two of the families on the route asked me last week if a robot packs their box. I said no. One of them said, not yet. Wren won't walk past bed four anymore. And Lupe stopped me at the gate yesterday and told me what she thinks of the little one, and the tall one, and anything taller than that." She smiled a little. "I didn't ask her."
+Irene turned the burner down. She came to the end of the table and sat, and it took her a minute, with one hand on the chair back the whole way.
+"When somebody comes up your drive to tell you what they think, and you never asked," she said, "it's hardly ever about the thing. People came up ours about every new thing this place ever bought. The sprayer. The pivot. They weren't there about the pivot, honey. They wanted to know if they still had a say on this road."
+"So what do you tell them?" Priya said.
+"Not the numbers. You'll win on the numbers, and they'll go home and stay there." Irene picked a curl of apple peel off her sleeve. "You tell them they've still got a say. Then you'd better make it true."
+"And if they still don't want it?" Grace said.
+"Then you decide. If it's right, you buy it. Just don't tell yourself afterward it was free."
+On the low burner the near pot had gone to a slow tick. Marta took the pencil and signed under Priya's name with her elbow tucked in. Grace sat with it until the pot ticked again, and signed under Marta.
+"I'll go talk to Lupe," she said.
+"You do that," Irene said. "And somebody stir that pot before it catches. My hands are done for the day.\""""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -3360,6 +3360,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+221. **Chapter 34: the women weigh the tall rover at Irene's table.** CT (26 Nov): a scene before the meeting where the
+     women weigh the taller machine and the yield against pushback from the community and decide for it, with an older
+     woman's advice on people who tell you what they think without being asked ("Not ABOUT men, but PEOPLE," read as a
+     note for Claude, not a line). Written by Claude, every word (Book now and Change to in
+     `manuscript/novel/drafts/chapter-34.md`, section 221). After "DECEMBER.", a new scene: Priya, Marta and Grace take
+     Priya's sheet up to Irene's house the afternoon before the October meeting. Priya: twelve beds, not four; "It never
+     touches the food" (the pledge covers the field to the box). Marta: the robot welder at her plant ("By spring it had
+     given six of us the whole week."). Grace: what the route and Lupe have said, unasked. Irene, the older woman: "it's
+     hardly ever about the thing ... They wanted to know if they still had a say on this road" and "Just don't tell
+     yourself afterward it was free." Marta and Grace sign; Grace will talk to Lupe. The meeting's "Marta and Grace had
+     signed it under her" and Marta's "She's not wrong about the factories" now have their setup. The treasurer stays
+     Reuben. 612 words in, none out. Logged only; not in the v6 Doc yet.
+
 220. **Chapter 18 opens on Lou: Praether's war, and the ace in the hole.** CT (26 Nov): "Then in the next chapter the
      reveal: Praether is a Gulf War vet, and maybe this is where Lou tells Elijah and Grace to keep the arms to
      themselves?" A short scene before "Elijah's next crisis found him in late April", then a scene break. CT's, word

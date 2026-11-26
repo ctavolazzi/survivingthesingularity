@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 75.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 76.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -231,3 +231,4 @@ Edit 57 was never used.
 | 218 | Ch 39 | not in the Doc | His phone buzzed against his leg. It was Devendra. / Dinner's on me... |
 | 219 | Ch 11, 13, 15, 19 | not in the Doc | by the next morning she had it out in the barn under a moving blanket |
 | 220 | Ch 18 | not in the Doc | Lou got the two of them alone the week after that dinner. |
+| 221 | Ch 34 | not in the Doc | The afternoon before the October meeting, Priya took her sheet up t... |

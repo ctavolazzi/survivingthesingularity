@@ -275,3 +275,116 @@ stunned; the people who leave have watched the footage from Ukraine and won't be
 ## Changed later on 26 Nov (the two rovers; CT)
 
 CT's direction (plan, section 10.8), all in the rows above. **CT's words, word for word, in the closing scene:** Lou's "They were concerned by the potential for the technology to be misused, and didn't want to feel complicit in the militarization of the farm."; "That's ridiculous" and "we're not militarizing anything!" (given to Tyler); "That is not the way the Ochoas feel, and we would do well to respect it." with Lou squeezing the counter; "We will surely encounter resistance like this again along our path."; "Yeah, but they're wrong!"; "They don't see it that way. Elijah knows what I'm talking about."; the heads turning to Elijah "mid-bite in a hunk of cheese"; "You must have a hard-won understanding of how ill-informed good intentions can become dangerous."; the band and "utterly shunned by his former buds" ("lept" read as "leapt"); "I mean ... I get it but I think they're just scared."; "It is reasonable to be afraid of the unknown. The shape of monsters is noticed more in the dark."; Curtis's catgirls; Grace's "Curtis!" and the smack; Priya chewing her pencil ("It has found its way out from behind her eat" read as "It had ... her ear"). Claude's: the three lines that set the scene (the kitchen trailer, Lou at the sink, "The Ochoas are leaving ... End of the month." and Tyler's "Why?"), and the rover vote (Reuben's money, Priya's sheet, Lupe's "I can't carry that," Marta's "She's not wrong about the factories," "It passed."). The Trekkie exchange moved from the arms argument to the rover vote, where CT first placed it. The Ochoas' leaving itself moved to the top of Chapter 36.
+
+## 221: the women weigh the tall rover (26 Nov, ninth chat)
+
+From CT's direction of 26 Nov (`TODO.md`, section 1): a scene in Chapter 34, before the meeting, where the women weigh
+the taller machine and the yield against pushback from the community and decide for it, with an older woman's advice
+on people who tell you what they think without being asked ("Not ABOUT men, but PEOPLE"). His full words of that
+direction are not on file; the TODO line is the record. "Not ABOUT men, but PEOPLE" is read as a note for Claude (the
+advice is about people), so it is not on the page. Every word of the scene is Claude's. The treasurer stays Reuben, as
+said in the eighth chat. Words: Chapter 34, 3,057 before, 3,669 after (612 in, none out).
+
+Book now:
+
+> Curtis put a strip of Grace's orange tape across its dash. On it, in marker, he wrote DECEMBER.
+>
+> (scene break)
+>
+> The harvest festival was two weeks off, and they were eighteen people short.
+
+Change to (after "DECEMBER.", a scene break, then):
+
+> The afternoon before the October meeting, Priya took her sheet up to Irene's house, and Marta and Grace went with her.
+>
+> Irene had two pots of windfalls cooking down on the stove. The smell had climbed the kitchen walls and gotten into
+> the curtains, and it was out on the back step before they knocked.
+>
+> Priya had the sheet flat on the oilcloth before her coat was off. It was one page, in pencil. Across the top she had
+> copied the number from the bottom of Reuben's page and put a ring around it.
+>
+> "The little one does four beds," she said. "The tall one does all twelve, in about the time the little one does a
+> row. It waters and it weeds, and it never touches the food." She tapped the last line. "I read the pledge again. It
+> covers the field to the box. This thing never gets near a box."
+>
+> "You read it again," Marta said.
+>
+> "Three times."
+>
+> Irene was at the stove with her back to them, working a wooden spoon around the bottom of the near pot. "And what
+> does all that come to?"
+>
+> "Four days a week back. Maybe five. I'll know when I measure it." Priya ran her pencil down the page. "With the same
+> hands, call it sixty more boxes a week by summer."
+>
+> Marta read it with her right arm held in close against her side. "My last year at the plant, they bought a robot
+> welder," she said. "It was going to give everybody a day a week back. It did. By spring it had given six of us the
+> whole week."
+>
+> "Who would we lay off?" Priya said. "Us?"
+>
+> "I know it. I'm just telling you how it sounds."
+>
+> "It isn't the beds anybody's worried about," Grace said. She had both hands around a mug of Irene's coffee and
+> hadn't drunk any. "Two of the families on the route asked me last week if a robot packs their box. I said no. One of
+> them said, not yet. Wren won't walk past bed four anymore. And Lupe stopped me at the gate yesterday and told me what
+> she thinks of the little one, and the tall one, and anything taller than that." She smiled a little. "I didn't ask
+> her."
+>
+> Irene turned the burner down. She came to the end of the table and sat, and it took her a minute, with one hand on
+> the chair back the whole way.
+>
+> "When somebody comes up your drive to tell you what they think, and you never asked," she said, "it's hardly ever
+> about the thing. People came up ours about every new thing this place ever bought. The sprayer. The pivot. They
+> weren't there about the pivot, honey. They wanted to know if they still had a say on this road."
+>
+> "So what do you tell them?" Priya said.
+>
+> "Not the numbers. You'll win on the numbers, and they'll go home and stay there." Irene picked a curl of apple peel
+> off her sleeve. "You tell them they've still got a say. Then you'd better make it true."
+>
+> "And if they still don't want it?" Grace said.
+>
+> "Then you decide. If it's right, you buy it. Just don't tell yourself afterward it was free."
+>
+> On the low burner the near pot had gone to a slow tick. Marta took the pencil and signed under Priya's name with her
+> elbow tucked in. Grace sat with it until the pot ticked again, and signed under Marta.
+>
+> "I'll go talk to Lupe," she said.
+>
+> "You do that," Irene said. "And somebody stir that pot before it catches. My hands are done for the day."
+
+### Whose words
+
+CT's beats: before the meeting; the women; the taller machine and the yield against the community's pushback; they
+decide for it; an older woman's advice on people who tell you what they think without being asked, about people. All
+the wording is Claude's.
+
+### Facts Claude invented
+
+- The scene is at Irene's kitchen table (the oilcloth is from Ch 23), the afternoon before the meeting; Irene cooking
+  down windfalls.
+- Priya's numbers: all twelve beds; a bed in the time the little one does a row; four or five days a week back; sixty
+  more boxes a week by summer. She copied Reuben's number onto the sheet.
+- Marta's plant bought a robot welder her last year there; by spring six people were let go.
+- Two route families asked whether a robot packs their box ("not yet"); Wren won't walk past bed four; Lupe stopped
+  Grace at the gate.
+- Irene's neighbors came up the drive about the sprayer and the pivot.
+- Grace says she will talk to Lupe before the meeting.
+
+### Checked
+
+- Bechdel: four women, all talk about the machine, the money and the neighbors.
+- The pledge (Ch 27): "no machine handling the food between the field and the box"; the rover waters and weeds, so
+  Priya's reading holds and Patricia does not object to it at the meeting.
+- Marta's right arm (Ch 29), Irene's hands (Ch 32), the rover at bed four (Ch 33), Grace's hundred and forty on the
+  route (Ch 27).
+- Smell: the windfalls, with verbs that move (climbed, gotten into, out on the back step).
+- No day name, no em dash, numbers in words; "without being asked" is already in the book twice, so Irene says "and
+  you never asked."
+
+### Touches other chapters
+
+- None outside Chapter 34. In the meeting: "Marta and Grace had signed it under her" and "She's not wrong about the
+  factories" now pay off this scene; Lupe still says no after Grace's talk, which Irene's "And if they still don't
+  want it?" allows, and the Ochoas' leaving answers her "don't tell yourself afterward it was free."

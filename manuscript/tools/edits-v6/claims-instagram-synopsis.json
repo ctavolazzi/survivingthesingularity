@@ -1,0 +1,15 @@
+[
+ {"claim": "A love story", "look": ["kissed h", "I love you"], "max": 6},
+ {"claim": "Older lesbians giving advice (is any co-op woman's partner or sexuality on the page?)", "look": ["lesbian", "her wife", "her girlfriend", "her partner", "Marta's (wife|husband|partner)", "Or a girlfriend"]},
+ {"claim": "Groups of families living together on a farm", "look": ["nineteen households", "kids at the far table", "north houses, up where"], "max": 5},
+ {"claim": "A data scientist developing AI at Claypot", "look": ["self-taught data science", "data team", "pipeline that walked", "Built the data pipeline"], "ch": "0-7"},
+ {"claim": "Claypot makes art software", "look": ["Claypot built the tools"], "ch": "0-2"},
+ {"claim": "Companion takes a great many jobs overnight (what does Companion do on the page?)", "look": ["Companion"], "max": 12},
+ {"claim": "Who loses a job in the opening, and to which machine", "look": ["let three folks go", "Chat Horizon, and one Tuesday", "got laid off"], "ch": "0-6"},
+ {"claim": "Friends and family don't listen", "look": ["good for you, buddy", "tried explaining it to each of them", "A chatbot\\?"], "ch": "0-7"},
+ {"claim": "A video on his musician page goes viral", "look": ["page from the music days", "four thousand replies", "It was supposed to be for Nate"], "ch": "6-7"},
+ {"claim": "A spotlight of money and power", "look": ["million dollars", "get you in the room", "senator's office", "want all this attention"], "ch": "7-15", "max": 6},
+ {"claim": "An email from a woman at a solarpunk farm co-op, a free room", "look": ["Are you familiar with solarpunk", "you get it\\.", "a cot here and a private room", "formal invitation", "Half the table thinks"], "ch": "15-15"},
+ {"claim": "What the hell, what's the worst that could happen", "look": ["What the hell\\. Maybe", "Can't be much worse"], "ch": "15-15"},
+ {"claim": "The good guys save the day (how does it end?)", "look": ["three tables now, at one table", "I AM ASKING FOR YOUR VOTE", "PARCELS HELD IN TRUST", "Hello, ridge"], "max": 6}
+]

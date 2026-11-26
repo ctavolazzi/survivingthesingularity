@@ -799,8 +799,11 @@ Where each lands (Claude's answer to "do you have any feedback"; CT has not repl
 - **"He left when she was a teenager"** collides with the book: he is on that porch now, Faith sits beside him, and
   the fire says "Your dad chose. Every day, on the porch, on his phone." Proposed: he checked out when she was a
   teenager without going anywhere. Waiting on CT.
-- **"Like David's dad."** Ray's was horses, and he quit ("I had one of those. Mine was horses."). The pairing holds:
-  Ray quit his and her father never quit his.
+- **"Like David's dad."** CT is right and Claude's first answer was wrong (it came from one grepped line). Chapter 5:
+  Ray nearly lost the house to the horses, bought the Bear Flag with one win, "put it in his wife's name, and quit
+  drinking the same year." "You and your mother shouldn't have to pay the interest on my sins." Chapter 0 has the
+  prayer he hung "the year he quit drinking." So Ray is the father who quit, and Grace's father is the one who never
+  did. In.
 - **Festival girl.** In. The book has her at a festival every October since nineteen. She tells Elijah about those
   years at the stove (Ch 24), and he has his pause there.
 - **The farmers market and the panels.** In: one line each (Ch 27's money talk, Ch 28).

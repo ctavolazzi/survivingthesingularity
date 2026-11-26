@@ -2800,6 +2800,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      The next lines are unchanged ("That's not a reward, spreadsheet ... Her eyes twinkled. "It's just lunch.""), so
      the twinkle now lets him off the hook. Logged only; not in the v6 Doc yet.
 
+190. **Chapter 20, Lou's pop quiz: cut the cable box line.** CT (26 Nov): "What does the notebook with the wattage have
+     anything to do with what's going on around it?" It points back to Chapter 5 (the cable box, twenty-three watts),
+     about 150 pages earlier, and never says the contrast. CT: "It does read like a random fact. We don't really need
+     it." Then: "Yeah, let's cut it." Book now:
+
+     > Elijah had no idea. He was a little ashamed of that. He had a notebook with the wattage of his cable box in it.
+
+     Change to:
+
+     > Elijah had no idea. He was a little ashamed of that.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

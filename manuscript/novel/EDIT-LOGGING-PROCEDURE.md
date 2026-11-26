@@ -175,12 +175,13 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
 ## Where things stand (seventh logging chat, 26 Nov, mid-session)
 - The v6 Google Doc "StS v6 draft (Nov 25)" is the book CT is editing (CURRENT in the bridge). In the Doc: edits 1 to
-  138, 141 and 151. Logged, not in the Doc yet: 139, 140, 142 to 189 except 151. The next edit is 190. CT has said
+  138, 141 and 151. Logged, not in the Doc yet: 139, 140, 142 to 190 except 151. The next edit is 191. CT has said
   nothing about putting 139 onward into the Doc; log only. Do not change the Doc.
 - Done in the seventh chat: 187 (Ch 31: "The next Sunday at 9:40 he called the rose garden."; check row 30 narrowed);
   188 (end of Ch 15: the check-engine light, the laugh, Willie Nelson's "On the Road Again", "Figures ... I hope
   they have a good mechanic."; corrected in place three times, see "Writing a beat for CT"); 189 (Ch 18: Marta's
-  line about Grace ends in a warning, "You waste it, and you and me are going to have a problem."). Edit 116
+  line about Grace ends in a warning, "You waste it, and you and me are going to have a problem."). 190 (Ch 20: cut
+  "He had a notebook with the wattage of his cable box in it."). Edit 116
   settled with no change. How to write a line for the novel is now also in the repository's `CLAUDE.md`.
 - Names cleaned up at CT's request ("The naming system is confusing me"): the edit list is `EDITS.md` (was
   EDITS-v5-pending.md), its status table `EDITS-status.md`; the Drive folder is "StS Publication Files", with
@@ -195,7 +196,7 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   "Recognize Your Power" is the last line). When a new one is made, the old one goes to "Older builds" as "OLD: ...".
   It has edits 1 to 186; 187 on are logged only. Make a new one only when CT asks.
 - verify.py on a fresh read of the v6 Doc shows 30, 137 and 182 PARTIAL. That is expected: edit 182 changes words of
-  30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (189).
+  30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (190).
 - Quote "Book now" from make_v6.py's v6.txt (every logged edit applied), not from the raw Doc, which lacks 139 on.
 - The Docs reads are too big to show in chat; the connector saves each to a file. Copy it and use it as READ.json.
 - Each new edit: log it in `EDITS.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a find and replace

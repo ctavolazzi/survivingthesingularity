@@ -679,6 +679,9 @@ Figures, he thought. I hope they have a good mechanic."""),
 # 189, Ch 18: Marta's line about Grace reads as a warning
 (189, "go to waste.\" She straightened up. \"Soup's on",
 "go to waste.\" She straightened up and looked him dead in the eye. \"You waste it, and you and me are going to have a problem.\" She let that sit. \"Soup's on"),
+# 190, Ch 20: cut the cable box line
+(190, "He was a little ashamed of that. He had a notebook with the wattage of his cable box in it.",
+"He was a little ashamed of that."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

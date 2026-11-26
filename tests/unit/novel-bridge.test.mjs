@@ -121,16 +121,19 @@ test('each "First seen" fact names the section where the entry is first named', 
 
 test('status() says which copy is the book and how far each other copy is behind', () => {
   const bridge = createBridge(data());
-  assert.equal(bridge.current().id, 'doc-v6-draft');
+  assert.equal(bridge.current().id, 'doc-v8-draft');
   const byId = Object.fromEntries(bridge.status().map((s) => [s.id, s]));
-  assert.equal(byId['doc-v6-draft'].behind, 0);
-  assert.equal(byId['doc-v5-draft'].behind, 1);
-  assert.equal(byId['doc-v4-final-draft'].behind, 2);
-  assert.equal(byId['doc-revised-v3'].behind, 3);
-  assert.equal(byId['site-reader'].behind, 4);
-  assert.equal(byId['repo-manuscript'].behind, 7);
-  // The scaffold describes version 4, two versions before the book.
-  assert.equal(byId['doc-v4-scaffold'].behind, 2);
+  assert.equal(byId['doc-v8-draft'].behind, 0);
+  assert.equal(byId['doc-v8-backup'].behind, 0);
+  assert.equal(byId['doc-v7-draft'].behind, 1);
+  assert.equal(byId['doc-v6-draft'].behind, 2);
+  assert.equal(byId['doc-v5-draft'].behind, 3);
+  assert.equal(byId['doc-v4-final-draft'].behind, 4);
+  assert.equal(byId['doc-revised-v3'].behind, 5);
+  assert.equal(byId['site-reader'].behind, 6);
+  assert.equal(byId['repo-manuscript'].behind, 9);
+  // The scaffold describes version 4, four versions before the book.
+  assert.equal(byId['doc-v4-scaffold'].behind, 4);
 });
 
 test('no Google Doc id is written into the map', () => {

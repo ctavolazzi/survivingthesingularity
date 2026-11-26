@@ -116,6 +116,29 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   you know, she's strong-willed, but she can be silly. We need to show those parts of her. We can't just list them. I
   feel like a lot of this book, as I'm reading it right now, is kind of a lot of lists. And I want it to feel a
   little bit more vivid without being heavy-handed and without going over the line."
+- CT, on the kiss, the year after it, Ma, and the letter scene: "I like it better if it's the fall, but it's to prevent
+  him from leaving. The kiss is to prevent him from leaving. There needs to be another few months of like a will they,
+  won't they. Maybe a full year goes by before he really like decides to go for it. He does something romantic that's
+  meaningful to her personally. There needs to be backstory there that informs it, that's written somewhere in the
+  book that foreshadows what he's going to do. He remembers. It's really sweet. We don't just drop his mom off the face
+  of the earth either, right? There needs to be another conflict that maybe happens with his mom, like he has a scare.
+  And he's like, maybe I need to go home right now. Like he goes home a couple of times to visit her on holidays and
+  stuff, and he's writing her letters ... we can write a scene right now where he is writing a letter and Grace comes
+  in to talk to him and sits on his desk, and it reveals some sort of like personal conflict that foreshadows the
+  blowout fight that causes him to leave. They have their first little tiff, and she's like, why are you acting this
+  way? And he goes, because I just, and he scratches his head and he breathes to try and calm himself down ... He
+  grabs his hair up on the top of his head and he's like, I've lost a lot of people who were important to me, okay?
+  I've been through a lot. Finishing this book is really important to me. You are really important to me. This farm is
+  really important to me. These people are really important to me. And she's like, so then why can't you just whatever
+  ... I don't know what she wants, but whatever it is that she wants, she's confronting him about it ... And he's
+  like, because it's just, it's not fair. And she'll be like confused and like take a step back and cross her arms.
+  Fair to who? And he's like, I don't know. Don't worry about it. And she's like, you're almost 40 and these are your
+  conflict resolution skills? And he looks at her and ... he almost gets mad. And then he decides to just let it go,
+  realizing, you know, it's not worth it to fight over something like this. He's like, Grace. He takes her hands. He's
+  like, look, I'm sorry, okay? I'm sorry. Do you want to go into town and get ice cream? And she lights up ... but
+  she's still a little mad. You can see it in her eyes ... She squints to show him that she's mad, but grins just a
+  little bit. And she's like, I want frozen yogurt. And that makes them go to the store where Tyler is, where they
+  have whatever pivotal conversation they have with Tyler."
 - What the book has now (corrected 26 Nov; Claude first told CT there was no kiss, which was wrong): one kiss, in
   Chapter 25, in the shouse after a Friday dinner ("she leaned down and kissed him, once, and stayed there with her
   forehead on his"), and her truck still in the gravel the next morning. Earlier in Chapter 25: Marta's scene ("You

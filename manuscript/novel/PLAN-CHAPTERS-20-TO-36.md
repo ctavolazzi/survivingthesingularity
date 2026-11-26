@@ -145,6 +145,56 @@ don't, though." / "I really hope you stay." In the book now she kisses him by th
 her truck is in the gravel the next morning. In CT's scene she walks off, so that night moves later. Open: whether
 this is the July night of the bell (Ch 22) or the fall (Ch 25); see section 8.
 
+**The shape of the romance, settled by CT (26 Nov, later): the kiss in the fall, to keep him; then a year; then he
+goes for it.** His words are in `EDITS.md`. This changes the table above from Chapter 25 on, and Chapters 25 and 26 in
+section 6. Claude's working-out:
+
+- **Fall 2025, Ch 25. The letter scene (CT's, dialogue in `EDITS.md`).** He is writing Ma a letter. Grace comes in and
+  sits on his desk. Their first tiff. "Why can't you just ...?" / "Because it's just, it's not fair." / "Fair to who?"
+  / "I don't know. Don't worry about it." / "You're almost 40 and these are your conflict resolution skills?" He lets
+  it go, takes her hands, offers ice cream. "I want frozen yogurt."
+  - What she wants (CT left it open; Claude's proposal): he has been redoing all forty boards alone, by hand, since
+    July, and won't let Tyler help. "Why can't you just let Tyler help you?" Not fair to Tyler, who already took the
+    blame for him once, and who isn't paid. He can't say that without saying the rest. It is the fire in small: there
+    she asks why he can't just make one phone call, and he holds to a principle he can't explain to her.
+  - Already in the book and waiting for this scene: Ma "ate her ice cream out of the little tub, the way she had every
+    night of his life" (Ch 8 area, and he tells the doctor so in Ch 13); and across from the hospital in Ch 13 "was a
+    frozen yogurt place. A couple came out of it, young, sharing one cup with two spoons." He offers Ma's ice cream.
+    She asks for the thing he once watched a couple share.
+  - "You are really important to me" comes out in a list, between the book and the farm. She hears it anyway.
+  - He was thirty-six in the winter before he came north, so thirty-seven here. "Almost 40" is her needling him.
+- **The same day: town, and Tyler.** Tyler works the register at Kowalski's Hardware. This is where the store's end
+  comes out: Frank can't keep him, and Elijah has sat on the chart for nine months with Grace standing there. (KEEP,
+  moved: Tyler's "I could've started looking in March"; Grace's "You knock, Elijah.") Third time his silence has
+  cost someone: the starts, the journal, Frank and Tyler.
+- **That week: he decides to go, and the pond.** CT's kiss scene, above. He stays.
+- **The year, fall 2025 to fall 2026, Ch 25 to 26.** She knocked. By her own rule the other person gets to answer,
+  and she won't knock twice. He doesn't answer: the coworker, the rule, the fear. Everyone knows. Glances at the
+  Friday table (CT). Outside things keep taking the moment: the couple's bad year, the models going dark, the pay
+  vote (Grace argues for his pay and the table hears why).
+- **Ma, through that year (CT: "We don't just drop his mom off the face of the earth").** KEEP the Sunday 9:40 calls.
+  NEW: letters (he already mails her the picture of the stove, Ch 24: "It looks like somewhere, Ma."). NEW: a visit at
+  the holidays, seen once; the visitor book in Ch 37 already says his name stops after the first winter. NEW: a scare,
+  a call from the aide that isn't Sunday, and "maybe I need to go home right now." Open for CT: when, and whether he
+  goes. It should cost the farm or Grace something either way, and it makes "Maybe you should go home" at the fire
+  cut twice, because home is Ma.
+- **Fall 2026, end of Ch 26: he goes for it (CT: "something romantic that's meaningful to her personally ... He
+  remembers.").** The backstory is already written: her father "used to sit out on the porch with it in the summer,
+  him and his guitar and whoever showed up. He played till the porch light went off and then he'd sing without it"
+  (Ch 17), and she has gone to her festival every October since she was nineteen (Ch 25). Claude's proposal: this
+  October she can't go (the harvest is short-handed, "another October like the last one"). Marta gives him the push
+  (KEEP her whole scene, moved a year: "You like her." ... "She likes bass music." ... "That amp of yours has
+  Bluetooth." ... "Don't make me sorry."). He sets the Loudbox on the tailgate at the pond, the amp he swore he would
+  not turn on, and plays her music through it until the light goes. KEEP the amp night nearly whole (the truck song,
+  "It's doing its best," "the optimal sonic zone," the blanket), now his doing. This time he kisses her.
+  - He does not play guitar here. The book saves that: in Ch 33 her father "would have played it for you without
+    being asked," Elijah's own guitar is hocked, and the Epilogue is where he finally plays for her.
+- **After: together from late 2026.** It fits what the book already says: she has slept through the night "since
+  about Christmas" (Ch 32), and she watched him light the stove "for a year and a half from as far across a room as
+  she could get." A year together before the fire, with a small couple moment in most chapters from 27 to 33.
+- **The mirror with the ending:** after the pond she waits a year for him to answer. In the Epilogue he sends the
+  song and "left the next part to her." Same rule, turned around.
+
 **How it stays vivid without going over the line**
 - One touch, growing: the book's own motif is her hand on his forearm (Ch 16, 17, 22). It lands, then it stays, then
   at the pond it's the first time he reaches for hers. The fire's "he had never reached for hers" needs a look after.

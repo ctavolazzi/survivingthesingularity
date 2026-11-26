@@ -1,11 +1,11 @@
-# v5 edits: status of every edit
+# Edits to the novel: status of every edit
 
-Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v5 draft
-(Nov 23)", revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
+Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
+revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 141, not in the Doc: 30.
+Totals: PARTIAL: 3, accepted: 139, not in the Doc: 41.
 
-The edits themselves, with CT's words, are in `EDITS-v5-pending.md`. Row 90 in `checks.py` is the
+The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
 Edit 57 was never used.
 
@@ -40,7 +40,7 @@ Edit 57 was never used.
 | 27 | Meanwhile 1 | accepted | Find out what their dirt costs |
 | 28 | Ch 3 | accepted | I am afraid of what mankind might do with such a thing. |
 | 29 | Ch 3 | accepted | because it always rang around 9:40 every Sunday. That was church time. |
-| 30 | Ch 3-31 | accepted | She called on her way out the door |
+| 30 | Ch 3-31 | PARTIAL | She called on her way out the door |
 | 31 | Ch 13, 14 | accepted | It was dark out, and he was too sick to wonder why. |
 | 32 | Ch 3 | accepted | out of the world everyone they love still believes in. |
 | 33 | Ch 4 | accepted | and sat back. He felt nearly nothing. |
@@ -123,7 +123,7 @@ Edit 57 was never used.
 | 110 | Ch 17 | accepted | "Mijo, you look muy flaco. Come in, eat." |
 | 111 | Ch 17 | accepted | Curtis adjusted himself in the seat. "So go on. |
 | 112 | Ch 18 | accepted | Elijah's next crisis found him in late April |
-| 113 | Ch 18 | accepted | Elijah read the announcement post standing in the gravel lot |
+| 113 | Ch 18 | accepted | Elijah read the announcement post standing in the |
 | 114 | Ch 18 | accepted | a man with an anime avatar explaining whose fault it was. |
 | 115 | Ch 18 | accepted | It had grown harder to tell whose voice was worth listening to in a... |
 | 116 | Ch 18 | accepted | Elijah had been here before. At a kitchen table with a chatbot |
@@ -147,7 +147,7 @@ Edit 57 was never used.
 | 134 | Ch 19 | accepted | Marta hadn't said a word either, not since Grace walked Patricia do... |
 | 135 | Ch 19 | accepted | He scrolled. The whole line waited on him, and he was still scrolli... |
 | 136 | Ch 19 | accepted | You picked nothing." / He had picked. He had picked keeping his boa... |
-| 137 | Ch 22 | accepted | read them the timestamps. Then, because he was already standing the... |
+| 137 | Ch 22 | PARTIAL | read them the timestamps. Then, because he was already standing the... |
 | 138 | Ch 15 | accepted | "No, your website had the email. Don't ask me. Ask Tyler." / He ask... |
 | 139 | Author's Note | not in the Doc | was a tool that does a thing. But this is different. The shovel nev... |
 | 140 | Author's Note | not in the Doc | If I can ask anything of anyone, it's that you take a look at this ... |
@@ -182,3 +182,15 @@ Edit 57 was never used.
 | 169 | Ch 19 | not in the Doc | and the fledgling production team fixed what they found before the ... |
 | 170 | Ch 20 | not in the Doc | What Lou did to Elijah in May just about killed him. |
 | 171 | Ch 20 | not in the Doc | "Hey, Ivy League," he said, wiping his eyes. |
+| 172 | Ch 20 to 39 | not in the Doc | He had come north to do something about it, and he also believed no... |
+| 173 | Ch 33, 34, 38 | not in the Doc | "Owned by who?" Curtis said, not looking up from his plate. |
+| 174 | Ch 32, 34, 35, 38 | not in the Doc | "Curtis, it's an arm. It's bolted |
+| 175 | Ch 31 | not in the Doc | He had turned down the million dollars and the ads and the room. Th... |
+| 176 | Ch 26 | not in the Doc | the low spot at the end of bed three was under water, |
+| 177 | Ch 37 | not in the Doc | Somebody checked. / Out by the pond, the birds had started up. / He... |
+| 178 | Ch 37 | not in the Doc | It took a morning. A bag of clothes went in, and the laptop. Then a... |
+| 179 | Ch 24, 28, 30 | not in the Doc | The sweep signed off on it. |
+| 180 | Ch 17 | not in the Doc | He looked around the table, then back at Elijah. |
+| 181 | Ch 17 | not in the Doc | The warm place on Elijah's arm stayed warm, but under it was a ques... |
+| 182 | Ch 21 to 39 | PARTIAL | Elijah watched her do forty in a night. |
+| 183 | Ch 18 | not in the Doc | Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen... |

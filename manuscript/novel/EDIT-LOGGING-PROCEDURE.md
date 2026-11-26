@@ -1,4 +1,4 @@
-# How to log CT's v5 edits (the procedure)
+# How to log CT's edits (the procedure)
 
 Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 128. Read this before logging the next one.
 
@@ -23,7 +23,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 
 ## Procedure for each edit
 1. Find the passage in the latest read of the Doc, so "Book now" is quoted exactly. Do this before writing.
-2. Write it in `EDITS-v5-pending.md` with the next number: where, "Book now," "Change to."
+2. Write it in `EDITS.md` with the next number: where, "Book now," "Change to."
 3. Use CT's words word for word. Mark anything Claude worded ("Claude's wording"). Smooth only dictation breaks.
    Never rewrite what he did not ask to rewrite ("merge, don't rewrite").
 4. When CT restates a line inside one message ("the truth. Was reality. So ... something that resembled
@@ -35,10 +35,10 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
    it in one line, give one recommendation, and wait. Once he decides, log his decision without arguing.
 7. Add a check row to `manuscript/tools/edits-v5/checks.py` (words that must be in the book, words that must be
    gone; `[break]` means a scene break).
-8. Run `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md`.
+8. Run `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md`.
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
-10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v5 edit list
+10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v6 edit list
    (mirror of GitHub)" (id 1fXM4q_rP40WTSHTYzW-THeVyrXScV48jjnotUBoz5Nc) once, at the end of the session.
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
@@ -53,7 +53,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 
 ## Final-pass checks (CT's standing list)
 - Every call to his mother: after the stroke, Elijah calls Sunday 9:40 in the MORNING. Exactly one call is at night
-  (shows she is confused, not alarming). See the end of edit 122 in `EDITS-v5-pending.md` for the list.
+  (shows she is confused, not alarming). See the end of edit 122 in `EDITS.md` for the list.
 - Day-of-week tics: "Tuesday" appears 31 times. Cut the ones that only mark time (see after edit 125).
 - Sentences that all open with "He" (or another pronoun). See "Asked for the future" below.
 
@@ -71,7 +71,7 @@ Not built yet. When CT says go:
 - Fix each one the way edit 133 was done: change only the openings and joins; every fact, name and line of dialogue
   stays. Each fix is logged as an edit with a check row, like any other, and goes into the Doc only as a suggestion.
 - Known so far: Chapter 14, where 50 of 193 sentences open with "He" (the eight changes given in chat and never
-  logged, in "Places to look at" in `EDITS-v5-pending.md`), and the other runs listed there.
+  logged, in "Places to look at" in `EDITS.md`), and the other runs listed there.
 - Until then, vary the openings in every line Claude writes for an edit.
 
 ## Short lines out of context (CT, 25 Nov)
@@ -101,12 +101,12 @@ Open for CT, to ask one at a time with the line quoted and Claude's recommendati
 - Edit 121: "one thing" (Marta) or "one real thing" (the notebook).
 - Ch 13: the "dark out" 9:40 call. Night call or error?
 Then, each on CT's go: the eight Chapter 14 sentence-opening fixes (written again from a fresh read, the way edit 133
-was done), then "Places to look at" in `EDITS-v5-pending.md` (each shown to CT with a proposed fix before it is
+was done), then "Places to look at" in `EDITS.md` (each shown to CT with a proposed fix before it is
 logged).
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
-`manuscript/tools/edits-v6/make_v6.py` (see "Applied" in `EDITS-v5-pending.md`). CT reads v6 in the large print PDF
+`manuscript/tools/edits-v6/make_v6.py` (see "Applied" in `EDITS.md`). CT reads v6 in the large print PDF
 and makes his final edits there. The next edit is 139. Log it the same way (number, where, "Book now," "Change
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
@@ -124,14 +124,15 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (182).
 - Quote "Book now" from make_v6.py's v6.txt (every logged edit applied), not from the raw Doc, which lacks 139 on.
 - The Docs reads are too big to show in chat; the connector saves each to a file. Copy it and use it as READ.json.
-- Each new edit: log it in `EDITS-v5-pending.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a
+- Each new edit: log it in `EDITS.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a
   find and replace row to `manuscript/tools/edits-v6/ops.py` (above the ITALIC list; italics as *...*), run
   `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx` (every row must pass), commit and push.
   A correction to an edit not in the Doc yet replaces it in place; a change to words already in the Doc is a new edit.
 - Waiting on CT: the questions above; which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; the dedication
   (who it is to) for v7; the sentence-opening checker (say go).
-- The large print PDF in Drive ("StS v5 Publication Files") is from 25 Nov: none of 139 onward. Rebuild only when CT
-  asks.
+- The large print PDF CT reads is "StS v6 large print (edits 1 to 183).pdf" in the Drive folder "StS Publication
+  Files", made 26 Nov from make_v6.py's v6.docx (`publication/novel/build/build.py v6.docx --only large
+  --skip-edit-gate`). Everything older is in that folder's "Older builds". Rebuild only when CT asks.
 
 ## v7 (26 Nov): a separate copy
 CT: "keep v7 as a totally new, totally separate thing ... I want to keep working on v6." The Google Doc "StS v7

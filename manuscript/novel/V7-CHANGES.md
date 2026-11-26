@@ -4,7 +4,7 @@ The Google Doc "StS v7 draft (Nov 26)", made 26 November 2026 at CT's request: "
 google doc, and then keep that separate. I want to keep working on v6 for the remainder of the duration of our
 sessions, but keep v7 as a totally new, totally separate thing."
 
-**v6 stays the book CT is editing.** New edits go into v6 (`manuscript/novel/EDITS-v5-pending.md`, from 172). v7 does
+**v6 stays the book CT is editing.** New edits go into v6 (`manuscript/novel/EDITS.md`, from 172). v7 does
 not follow them unless CT asks.
 
 ## How it was made

@@ -2,7 +2,7 @@
 
 Each op: (edit number, find, replace). The find must appear exactly once. In a replacement, a newline starts a new
 paragraph, an empty line between two newlines is a scene break, and *...* is italic. The wording is copied from
-manuscript/novel/EDITS-v5-pending.md, which stays the record of who wrote what.
+manuscript/novel/EDITS.md, which stays the record of who wrote what.
 """
 OPS = [
 # 87, Ch 17

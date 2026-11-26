@@ -685,7 +685,7 @@ def default_source():
 
 
 def edit_gate(source, accept, skip, cover_only):
-    """Stop the build unless every edit in manuscript/novel/EDITS-v5-pending.md is in the source.
+    """Stop the build unless every edit in manuscript/novel/EDITS.md is in the source.
 
     Uses manuscript/tools/edits-v5/verify.py. A Google Docs JSON read must show every edit accepted, or at
     least suggested when building with --accept-suggestions. A .docx cannot be checked, so it needs

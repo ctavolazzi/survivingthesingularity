@@ -13,7 +13,7 @@ Each edit gets one status:
   not in the Doc  nothing of it is there yet
   PARTIAL         some of it is there and some is not: look at it by hand
 
---table FILE      also writes the status table as Markdown (EDITS-v5-status.md)
+--table FILE      also writes the status table as Markdown (EDITS-status.md)
 --require accepted  exit 1 unless every edit is accepted (used before a rebuild)
 --require present   exit 1 unless every edit is at least suggested
 Without --require it exits 1 only if an edit is PARTIAL.
@@ -80,11 +80,12 @@ def main():
     print("totals:", ", ".join(f"{k}: {v}" for k, v in sorted(counts.items())))
     if a.table:
         today = datetime.date.today().isoformat()
-        out = [f"# v5 edits: status of every edit", "",
-               f"Written by `manuscript/tools/edits-v5/verify.py` on {today} from a read of the Doc \"StS v5 draft",
-               f"(Nov 23)\", revision `{rev}`. {nsug} suggestions were waiting in the Doc at that read.",
+        title = json.load(open(a.read)).get("content", {}).get("title", "the Doc")
+        out = [f"# Edits to the novel: status of every edit", "",
+               f"Written by `manuscript/tools/edits-v5/verify.py` on {today} from a read of the Doc \"{title}\",",
+               f"revision `{rev}`. {nsug} suggestions were waiting in the Doc at that read.",
                "", "Totals: " + ", ".join(f"{k}: {v}" for k, v in sorted(counts.items())) + ".", "",
-               "The edits themselves, with CT's words, are in `EDITS-v5-pending.md`. Row 90 in `checks.py` is the",
+               "The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the",
                "follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as \"follow-ups\".",
                "Edit 57 was never used.", "",
                "| Edit | Where | Status | Checked for |", "|---|---|---|---|"]

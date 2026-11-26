@@ -1,4 +1,4 @@
-# v5 edits: the running list
+# Edits to the novel: the running list
 
 Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Google Doc "StS v5 draft (Nov 23)").
 
@@ -7,9 +7,9 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 87 and go in "New edits" below. The publication files (`publication/novel/build/build.sh`) have not been rebuilt.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
-`python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md` on a fresh
-read of the Doc after every step; `EDITS-v5-status.md` is the one table of where each edit stands. The build
-refuses to run unless every edit passes. A copy of this list lives in Google Drive as "StS v5 edit list (mirror of
+`python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh
+read of the Doc after every step; `EDITS-status.md` is the one table of where each edit stands. The build
+refuses to run unless every edit passes. A copy of this list lives in Google Drive as "StS v6 edit list (mirror of
 GitHub)" (https://docs.google.com/document/d/1fXM4q_rP40WTSHTYzW-THeVyrXScV48jjnotUBoz5Nc); refresh it when this
 file changes. Each new edit gets a check row when it is logged.
 
@@ -3717,7 +3717,7 @@ listing videos.
   contradictions that may have been created." Seven fixes, made in ops.py and directly in the v6 Doc (edit 138 and
   the corrections noted under 88, 131, 136 and 137). Read back: all 138 edits accepted, and the Doc's text matches
   make_v6.py's output word for word. The large print PDF built from that read (659 pages) is in the Drive folder
-  "StS v5 Publication Files" as surviving-the-singularity-v6-large-print-6x9.pdf; the copy from before the fixes is
+  "StS Publication Files" as surviving-the-singularity-v6-large-print-6x9.pdf; the copy from before the fixes is
   titled "OLD (before contradictions pass)". Left out on purpose: the placeholder for Grace's April email (edit
   100), which is CT's to write.
 - Author's Note, 2026-11-25: "They may tell you they moved on because I was an asshole, and they might be right."

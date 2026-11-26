@@ -1,6 +1,6 @@
 # v5 edits: what is in the Doc
 
-Cross-reference for `manuscript/novel/EDITS-v5-pending.md`. Every edit CT gave on 2026-11-25 (numbers 1 to 86;
+Cross-reference for `manuscript/novel/EDITS.md`. Every edit CT gave on 2026-11-25 (numbers 1 to 86;
 57 was never used), and the follow-ups of the same day, is in the Google Doc "StS v5 draft (Nov 23)" as a
 **suggestion**. Another session placed them on 2026-11-25 (branch `claude/new-session-o5vtdv`). None is accepted
 yet; CT accepts or rejects them in the Doc.

@@ -1,4 +1,4 @@
-"""Checks for the v5 edit list (manuscript/novel/EDITS-v5-pending.md) against a read of the v5 Doc.
+"""Checks for the v5 edit list (manuscript/novel/EDITS.md) against a read of the v5 Doc.
 
 Each row: (edit number, where, text that must be in the Doc as accepted, text that must be gone).
 Row 90 is the follow-ups of 2026-11-25 (bill $2,011.46, rate hike, San Jose, notary).

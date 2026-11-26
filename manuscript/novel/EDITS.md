@@ -3360,6 +3360,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+213. **Chapter 34: Curtis's wound, the arms revealed, the war on the phones, Curtis the Trekkie, the Ochoas leave.** CT's
+     direction of 26 Nov, with his lines for Priya, Lou, Curtis and Marta word for word (listed in
+     `manuscript/novel/drafts/chapter-34.md`, with Book now and Change to). The arms are in Praether's barn "since my first
+     week"; Lou's "I told our friend Elijah to keep the arms a secret"; Lupe and the footage from Ukraine; "I'm also a
+     Trekkie" and "You want your own Commander Data"; Curtis's granddad's wheat ("I held the gate for them"); the table
+     still tables it; the Ochoas leave and Lupe gives Grace the clipboard. 2,320 words to 2,669. Logged only; not in the
+     v6 Doc yet.
+
 212. **Chapter 33: Denny comes back; "I sold it to them"; the tomato dinner trimmed.** From the plan (CT: Denny leaves and
      comes back); written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-33.md`). Denny at the gate
      with a script and a company polo, "Nobody ran me off. That was me."; Elijah tells the table he sold his mother's

@@ -5,14 +5,14 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Wed, 25 Nov 2026 22:17:45 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 26 Nov 2026 22:12:20 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs</title>
-      <link>https://arxiv.org/abs/2610.34836</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.34836</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Multi-agent large language model (LLM) systems can exhibit emergent behaviors through interaction, yet whether a similar phenomenon exists for reasoning alignment remains largely unexplored. We study whether agent interaction produces additional reference-grounded reasoning alignment beyond matched ... [Score: 14.0 | Flagged for: agent, multi-agent, agentic, reasoning, alignment] Authors: Boxuan Wang, Zhuoyun Li, et al.</description>
+      <title>Do We Still Need Reinforcement Learning When We Can Read the World Model?</title>
+      <link>https://arxiv.org/abs/2611.34656</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.34656</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Reinforcement learning has achieved remarkable success in sequential decision-making, but learning effective policies often requires substantial interaction experience. Model-based reinforcement learning alleviates this dependence by leveraging world models, which are typically used to support plann... [Score: 12.5 | Flagged for: agi, world model, agent, autonomous, planning] Authors: Mingchao Zhang, Miduo Cui, et al.</description>
     </item>
     <item>
       <title>Toward the Era of Agentic Embodied Intelligence</title>
@@ -69,6 +69,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.32917</guid>
       <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
       <description>Deep search agents address complex information needs through iterative retrieval and reasoning, where the relevance of retrieved evidence influences downstream performance. Existing rerankers improve retrieval effectiveness but introduce substantial latency and cost when invoked throughout the searc... [Score: 9.5 | Flagged for: agi, agent, agentic, reasoning, retrieval] Authors: Amin Bigdeli, Liye Fu, et al.</description>
+    </item>
+    <item>
+      <title>CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems</title>
+      <link>https://arxiv.org/abs/2611.33242</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.33242</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange messages and invoke tools reliably. Existing evaluations typically couple communication with open domain tasks, making it difficult to determine whether a failure arises ... [Score: 9.5 | Flagged for: agent, multi-agent, tool use, reasoning, llm] Authors: Danil Kostromin, Andrey Sakhovskiy, et al.</description>
     </item>
     <item>
       <title>RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments</title>
@@ -162,11 +169,11 @@
       <description>Cooperative multi-agent reinforcement learning (MARL) enables teams of agents, such as robots and autonomous vehicles, to learn coordinated behavior, but what such teams learn is largely determined by their reward function. Because task success alone provides too little guidance for learning, interm... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, robot, llm] Authors: Dogan Urgun</description>
     </item>
     <item>
-      <title>FISRF: Flexible Instructional Scaffolding Reflection Framework for Robotics Task Planning with Large Language Model</title>
-      <link>https://arxiv.org/abs/2610.35686</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.35686</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large Language Models (LLMs) are widely adopted for reflective error correction in task planning; however, existing approaches primarily rely on autonomous exploration, rendering them prone to accumulating erroneous experiences during early interactions with new environments. To address this limitat... [Score: 9.0 | Flagged for: agent, autonomous, planning, robot, robotics] Authors: Qingmiao Liang, Jiatao Zhang, et al.</description>
+      <title>Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents</title>
+      <link>https://arxiv.org/abs/2611.34778</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.34778</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Recent vision-language models (VLMs) can act as robot-use agents that understand diverse scenes and control robots through policy code and tools. However, they predict 3D gripper poses poorly even with extended reasoning, struggling with precise manipulation. Vision-language-action (VLA) and world-a... [Score: 8.5 | Flagged for: agent, agentic, reasoning, robot, robotics] Authors: Yuxiang Lai, Jike Zhong, et al.</description>
     </item>
     <item>
       <title>Generalizing Agentic Robotics via Multi-Teacher On-Policy Distillation</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.16315</guid>
       <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
       <description>Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct tes... [Score: 8.5 | Flagged for: agi, agent, multi-agent, language model, rag] Authors: Carolina Fortuna, Blaz Bertalanic</description>
-    </item>
-    <item>
-      <title>Talk to Act: A Synthetic Multi-Turn Dialogue Benchmark for Human Intent Extraction and Action Planning in Robotics</title>
-      <link>https://arxiv.org/abs/2611.17549</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2611.17549</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
-      <description>Multi-turn conversational human-robot interaction (HRI) continues to be a challenging problem in robotics, as many existing systems rely on rigid, command-driven interfaces that can be unintuitive for users. Recent advances in Large Language Models (LLMs) provide a promising direction, given their a... [Score: 8.5 | Flagged for: planning, reasoning, interpret, robot, robotics] Authors: Deepu Krishnareddy, Mohammad Haziq Khan, et al.</description>
     </item>
   </channel>
 </rss>

@@ -15,8 +15,11 @@ from ops_v7 import OPS_V7, NOTE_START, NOTE_END, DEDICATION
 def main():
     src, out = sys.argv[1], Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
     chars, attrs, images, objects = m.load(src)
-    chars, attrs, images, _ = m.apply(chars, attrs, images)
-    bad = m.check("".join(chars))
+    # v7 was made from v6 through edit 171 (26 Nov); later v6 edits (and 184 to 186, which bring these very
+    # changes into v6) are not in it.
+    chars, attrs, images, _ = m.apply(chars, attrs, images, [o for o in m.OPS if o[0] <= 171])
+    # Rows 30 and 137 now hold the words edit 182 gave them, so they are left out here.
+    bad = m.check("".join(chars), [r for r in m.C if r[0] <= 171 and r[0] not in (30, 137)])
     if bad:
         sys.exit(f"v6 edits fail: {bad[:3]}")
     text = "".join(chars)

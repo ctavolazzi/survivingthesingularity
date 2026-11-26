@@ -2703,6 +2703,45 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+184. **The very beginning: "Recognize Your Power".** CT (26 Nov): "Yes. I want the v6 that I'm reading in large print to
+     be the most current version," of the v7 changes (`V7-CHANGES.md`). CT's words, from v7: "'Recognize Your Power' is
+     the last final line in the entire text, at the ver very end, and at the very, very beginning." Change: a new first
+     line, centered, above the title:
+
+     > Recognize Your Power
+
+     [CT's words.] The large print PDF gives it a page of its own, before the title page. Logged only; not in the v6
+     Doc yet.
+
+185. **The Author's Note becomes a Dedication.** CT (26 Nov, for v7, now v6 too): "About the author and author's note
+     need to be revised to be a dedication instead of an author's note." In Contents, "Author's Note" becomes
+     "Dedication", and "Thank You" is added after "Appendix". The heading "Author's Note" and the whole note (from
+     "For years, I've been talking about this." to "Let's begin to imagine how.") are replaced by a heading
+     "Dedication" and one centered line:
+
+     > For the people I love who looked me in the eye like I'd finally lost it.
+
+     [Claude's draft, made from CT's own sentence in the note: "I've watched people I love look me in the eye like I'd
+     finally lost it." CT has not said who the dedication is to.] Edits 1, 2 and 139 to 141 were in the Author's Note,
+     so their check rows now say "replaced by 185". Logged only; not in the v6 Doc yet.
+
+186. **The very end: Thank You, and "Recognize Your Power".** CT (26 Nov, for v7, now v6 too): "the about is a
+     gratitude to the reader for their time, and a gentle request to use what they learned about the world and
+     themselves to do better than Elijah, but also to remember to believe in themselves." After the Appendix's last
+     line, "Thursday, November 25, 2027. Thanksgiving.", a heading "Thank You" and [Claude's draft, from CT's brief]:
+
+     > Thank you for your time. I know how much of it you gave me, and I don't take that lightly.
+     >
+     > You just spent a whole book with a man who saw it coming and still got most of it wrong. Take what you learned,
+     > about the world and about yourself, and do better than Elijah did. Ask before you fix. Listen longer than feels
+     > comfortable. Do one real thing before noon.
+     >
+     > And when it gets loud, believe in yourself. Most of what you need, you already have.
+
+     Then the last line of the book, centered: "Recognize Your Power" [CT's words]. The large print PDF no longer adds
+     the "About the Author" page after it (`about_author_in_book` in `publication/novel/build/book.json`; the bio stays
+     there for the back cover). Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -40,7 +40,8 @@ def expected_lines(scope):
     """The manuscript text in output order. The copyright page is the one addition."""
     secs = sections_for(scope)
     keep = {s["title"] + s["id"] for s in secs}
-    lines = [plain(b["runs"]) for b in MODEL["title_block"]]
+    lines = [plain(b["runs"]) for b in MODEL.get("opening", [])]
+    lines += [plain(b["runs"]) for b in MODEL["title_block"]]
     lines += MODEL["copyright_lines"]
     lines.append("Contents")
     lines += [t["text"] for t, s in zip(MODEL["toc"], MODEL["sections"]) if s["title"] + s["id"] in keep]

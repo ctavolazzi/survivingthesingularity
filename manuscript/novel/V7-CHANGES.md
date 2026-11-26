@@ -7,6 +7,10 @@ sessions, but keep v7 as a totally new, totally separate thing."
 **v6 stays the book CT is editing.** New edits go into v6 (`manuscript/novel/EDITS.md`, from 172). v7 does
 not follow them unless CT asks.
 
+**26 Nov, later: the v7 changes are in v6 too.** CT: "I want the v6 that I'm reading in large print to be the most
+current version." They are v6 edits 184 (first line), 185 (Dedication) and 186 (Thank You, last line). v7 itself is
+unchanged and stays separate; `make_v7.py` still makes it from v6 through edit 171.
+
 ## How it was made
 
 `manuscript/tools/edits-v7/make_v7.py` takes the v5 Doc with every suggestion accepted, applies every logged v6

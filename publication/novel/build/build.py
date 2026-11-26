@@ -166,7 +166,9 @@ def structure(paras):
     h1s = [i for i, b in enumerate(blocks) if b["t"] == "h1"]
     if len(h1s) < 3 or plain(blocks[h1s[1]]["runs"]).strip() != "Contents":
         die("expected the manuscript to open with a title heading, then a 'Contents' heading")
-    title_block = [b for b in blocks[:h1s[1]] if b["t"] in ("h1", "p")]
+    # Lines before the title heading (v6 edit 184, "Recognize Your Power") get a page of their own, first.
+    opening = [b for b in blocks[:h1s[0]] if b["t"] == "p"]
+    title_block = [b for b in blocks[h1s[0]:h1s[1]] if b["t"] in ("h1", "p")]
     if title_block[0]["t"] != "h1" or len(title_block) < 2:
         die("expected the title heading first, then the author line")
     title = plain(title_block[0]["runs"]).strip()
@@ -201,13 +203,15 @@ def structure(paras):
         die("the Contents list in the manuscript does not match the headings:\n" + "\n".join(
             f"  list: {a!r}  heading: {b!r}" for a, b in
             zip([t["text"] for t in toc], [s["title"] for s in sections]) if a != b))
-    bio = CFG.get("about_author")
+    # CT, 26 Nov: the About page becomes the Thank You, and "Recognize Your Power" is the last line of the
+    # book (v6 edit 186). The bio stays in book.json for the back cover.
+    bio = CFG.get("about_author") if CFG.get("about_author_in_book", True) else None
     if bio:
         sections.append({"id": f"sec-{len(sections) + 1:02d}", "kind": "matter", "title": bio["title"],
                          "title_runs": [[bio["title"], False, False]], "chapter": None, "added": True,
                          "blocks": [{"t": "p", "runs": [[t, False, False]]} for t in bio["paragraphs"]]})
         toc.append({"text": bio["title"], "strong": False, "added": True})
-    return {"copyright_lines": copyright_lines(),
+    return {"copyright_lines": copyright_lines(), "opening": opening,
             "title_display": title, "title_block": title_block, "author": author,
             "toc": toc, "sections": sections, "images": nimg, "pictures_left_out": left_out}
 
@@ -295,6 +299,13 @@ def title_html(model):
     return "\n".join(out)
 
 
+def opening_html(model, tag="section", attrs=' class="opening"'):
+    if not model.get("opening"):
+        return ""
+    lines = "".join(f"<p>{inline(b['runs'])}</p>" for b in model["opening"])
+    return f"<{tag}{attrs}>{lines}</{tag}>"
+
+
 def copyright_html():
     return "\n".join(f"<p>{esc(line)}</p>" for line in copyright_lines())
 
@@ -322,6 +333,7 @@ def pdf_html(model, sections, style, cover=None):
 <meta name="author" content="{esc(model['author'])}" />
 <style>{style}</style></head><body>
 {cover_html}
+{opening_html(model)}
 <section class="titlepage">{title_html(model)}</section>
 <section class="copyright">{copyright_html()}</section>
 <section class="contents"><h1>Contents</h1><ul class="toc">{toc}</ul></section>
@@ -390,7 +402,7 @@ def build_epub(model, sections, target, name, ident):
     # pandoc's own EPUB page template, with the title page replaced by the
     # manuscript's title block followed by the copyright page.
     tpl = subprocess.run(["pandoc", "-D", "epub3"], capture_output=True, text=True, check=True).stdout
-    front = (f'<section epub:type="titlepage" class="titlepage">\n{title_html(model)}\n'
+    front = (f'<section epub:type="titlepage" class="titlepage">\n{opening_html(model, "div")}{title_html(model)}\n'
              f'<div class="copyright" epub:type="copyright-page">\n{copyright_html()}\n</div>\n</section>')
     start = tpl.index('<section epub:type="titlepage"')
     end = tpl.index("</section>", start) + len("</section>")

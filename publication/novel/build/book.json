@@ -25,6 +25,7 @@
     "large_print": "",
     "ebook": ""
   },
+  "about_author_in_book": false,
   "about_author": {
     "title": "About the Author",
     "paragraphs": [

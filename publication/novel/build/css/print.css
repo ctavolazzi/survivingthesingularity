@@ -12,6 +12,6 @@
 @page act:left  { @top-center { content: none; } @bottom-center { content: none; } }
 @page act:right { @top-center { content: none; } @bottom-center { content: none; } }
 
-section.titlepage, section.copyright, section.contents { page: front; }
+section.opening, section.titlepage, section.copyright, section.contents { page: front; }
 section.act { page: act; }
-section.titlepage, section.contents, section.act, section.recto { break-before: right; }
+section.opening, section.titlepage, section.contents, section.act, section.recto { break-before: right; }

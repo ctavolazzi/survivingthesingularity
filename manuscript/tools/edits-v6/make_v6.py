@@ -4,7 +4,9 @@
 
 1. Takes the v5 Doc as if every pending suggestion were accepted (edits 1 to 86 and the follow-ups).
 2. Applies edits 87 onward from ops.py, each one a find (must appear exactly once) and a replacement.
-   In a replacement, "\n" starts a new paragraph and *...* is italic.
+   In a replacement, "\n" starts a new paragraph and *...* is italic. A find can also be a pair (start, end): the
+   span from the one start to the first end after it. An empty find inserts at the very start of the book. At the start of a new paragraph, "§H1 " makes it a heading
+   and "§C " centers it (added 26 Nov for edits 184 to 186, the v7 changes brought into v6).
 3. Checks the result against every row of manuscript/tools/edits-v5/checks.py: each edit's words must be there,
    and its removed words must be gone. It stops if any edit fails.
 4. Writes OUT_DIR/v6.docx (headings, italics, bold, centered lines, the 19 pictures) to upload to Drive as the
@@ -69,7 +71,13 @@ def apply(chars, attrs, images, ops=None):
     log = []
     for n, find, repl in (OPS if ops is None else ops):
         text = "".join(chars).replace("\xa0", " ")
-        k = text.count(find)
+        if isinstance(find, tuple):
+            start, end = find
+            if text.count(start) != 1:
+                sys.exit(f"edit {n}: start appears {text.count(start)} times: {start[:80]!r}")
+            a = text.index(start); b = text.index(end, a) + len(end)
+            find = text[a:b]
+        k = 1 if find == "" else text.count(find)  # an empty find inserts at the very start
         if k != 1:
             sys.exit(f"edit {n}: find appears {k} times: {find[:80]!r}")
         a = text.index(find); b = a + len(find)
@@ -97,7 +105,25 @@ def apply(chars, attrs, images, ops=None):
         shift = len(new_c) - (b - a)
         images = {(i + shift if i >= b else i): o for i, o in images.items()}
         log.append(n)
+    chars, attrs, images = markers(chars, attrs, images)
     return chars, attrs, images, log
+
+
+def markers(chars, attrs, images):
+    """Set the style of each paragraph that opens with "§H1 " or "§C ", then drop the marker."""
+    i = 0
+    while i < len(chars):
+        if i == 0 or chars[i - 1] == "\n":
+            for mark, key, val in (("§H1 ", "style", "HEADING_1"), ("§C ", "align", "CENTER")):
+                if "".join(chars[i:i + len(mark)]) == mark:
+                    j = chars.index("\n", i)
+                    attrs[j] = dict(attrs[j]); attrs[j][key] = val
+                    del chars[i:i + len(mark)]; del attrs[i:i + len(mark)]
+                    images = {(k - len(mark) if k > i else k): o for k, o in images.items()}
+        i += 1
+    if "§" in "".join(chars):
+        sys.exit("a § marker was left in the text")
+    return chars, attrs, images
 
 
 def flat(s):
@@ -105,9 +131,9 @@ def flat(s):
     return re.sub(r"\s+", " ", s)
 
 
-def check(text):
+def check(text, rows=None):
     A = flat(text.replace("￼", "")); bad = []
-    for n, where, have, gone in C:
+    for n, where, have, gone in (C if rows is None else rows):
         miss = [h for h in have if flat(h) not in A]
         left = [g for g in gone if flat(g) in A]
         if miss or left:

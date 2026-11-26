@@ -3360,6 +3360,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+222. **Whole book: the last continuity pass.** CT (26 Nov): "continuity errors, confusing moments, repetition, bad
+     sentence structure, anything that might cause problems for the reader," then "Go on the pass." Eight readers read
+     the book after edit 221 in eight ranges; 79 findings, every quote machine-checked; Claude judged each on the page.
+     50 fixed (51 ops rows), all Claude's wording, among them: the woman who whispered about golden handcuffs named
+     (Ch 10, CT's paragraph, the pronoun only), Ruby hands the notebook back (Ch 9), the confession's unseen promise
+     (Ch 22), Elijah, not Curtis, mows Praether's fence (Ch 26), the storm lights the co-op, not nineteen houses (Ch 28),
+     Marta's shoulder "Worse since the summer" (Ch 29), a hundred visitors a year, not twenty, pay for the route
+     (Ch 31), the price list before Elijah shows it (Ch 34), Lupe's INSTALLED BY line (Ch 36), the Appendix's shed.
+     10 held for CT (four in the ending, four of his own lines, two others); 19 dropped. Each change, with Book now and
+     Change to, and the held list: `manuscript/novel/drafts/pass-2026-11-26.md`. Rows 16, 63, 133, 167, 182, 198, 201,
+     202, 210, 211 and 220 updated or narrowed to the new words. Logged only; not in the v6 Doc yet.
+
 221. **Chapter 34: the women weigh the tall rover at Irene's table.** CT (26 Nov): a scene before the meeting where the
      women weigh the taller machine and the yield against pushback from the community and decide for it, with an older
      woman's advice on people who tell you what they think without being asked ("Not ABOUT men, but PEOPLE," read as a

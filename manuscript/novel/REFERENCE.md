@@ -160,6 +160,8 @@ for what it is ("v7" is taken by a frozen side copy).
 ## 6. Pitfalls learned
 
 - A check row's must-have that is already in the Doc, or a gone-word that never was, makes verify.py show PARTIAL.
+  Exactly: a row reads "not in the Doc" only if every gone-word is still in the v6 Doc. A gone-word that came in
+  through a logged edit (so is not in the Doc) makes PARTIAL; leave it out of the row (learned 26 Nov, edit 222).
 - The same find string can sit in two ops rows (an old row and a correction). Change the newest one, and check
   `s.count()` before any scripted replace.
 - An ops row's text and its check row must be changed together.

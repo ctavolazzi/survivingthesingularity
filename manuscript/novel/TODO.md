@@ -3,7 +3,7 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 222.** Chapters 20 to 36 are written; CT's eight choices of 26 Nov are in (edits 217 to 219 and corrections to 198
+**Next edit: 223.** Chapters 20 to 36 are written; CT's eight choices of 26 Nov are in (edits 217 to 219 and corrections to 198
 and 204), and his Lou scene opens Chapter 18 (edit 220). The checkpoint and the prompt for the next chat: `CHECKPOINT-2026-11-26.md`. Next: the women's scene about the tall rover (Chapter 34; section 1), then section 3.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
@@ -88,7 +88,8 @@ Need CT's yes:
       the high-dollar party, Chapters 9 and 10), then any scene where a smell would carry the feeling. Each one shown to
       CT, since Chapters 0 to 19 are done.
 - [ ] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only.
-- [ ] A last readers' pass over the whole book for continuity, every quote grep-checked; fix what it finds.
+- [x] A last readers' pass over the whole book for continuity, every quote grep-checked; fix what it finds. Done 26 Nov
+      (edit 222): 50 fixed; 10 held for CT in `drafts/pass-2026-11-26.md`, "Held for CT".
 - [x] ~~Words: Chapters 27 to 36 at or under 22,590 in total.~~ Dropped: length is not the measure (CT, 26 Nov).
 - [ ] `build_gate.py OUT/v6.txt --todo manuscript/novel/TODO.md` says READY.
 - [ ] Ask CT how the final copy is made (a new Doc from make_v6.py's .docx, or the edits as suggestions in the v6

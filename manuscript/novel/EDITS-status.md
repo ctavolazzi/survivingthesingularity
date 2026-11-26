@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 76.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 77.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -26,7 +26,7 @@ Edit 57 was never used.
 | 13 | Ch 0 | accepted | satellite office |
 | 14 | Ch 1 | accepted | Sure. A little. I can't stop thinking about the people the realtors... |
 | 15 | Ch 1 | accepted | Devendra wanted a prediction. He'd give him a better one. And he'd ... |
-| 16 | Ch 1 | accepted | He had found his first limit. The limit he found was heat, specific... |
+| 16 | Ch 1 | accepted | He had found his first limit. |
 | 17 | Ch 1 | accepted | needed watts, of course, but it also needed cooling. |
 | 18 | Ch 1 | accepted | wasn't much of a prediction engine. |
 | 19 | Ch 1 | PARTIAL | where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean pa... |
@@ -72,7 +72,7 @@ Edit 57 was never used.
 | 60 | Ch 7 | accepted | thousands of strangers |
 | 61 | Ch 3 | accepted | He was back at the same window that night. |
 | 62 | Ch 5 | accepted | braced for it |
-| 63 | Ch 10 | accepted | He didn't know why he listened to her and not Ruby. |
+| 63 | Ch 10 | accepted | He didn't know why he listened to |
 | 64 | Ch 11 | accepted | The ones they offer you for nothing usually cost the most in the end. |
 | 65 | Ch 11 | accepted | Yeah, I figured," Gus said. "Thought I'd ask, though. |
 | 66 | Ch 11, 12, 15 | accepted | Ride down with the arms. Help the crew bolt them in for the launch. |
@@ -177,7 +177,7 @@ Edit 57 was never used.
 | 164 | Ch 17 | not in the Doc | Without being conscious of it, his shoulders relaxed a few inches. |
 | 165 | Ch 17 | not in the Doc | said one word, "Musicians," the same way you might say termites, |
 | 166 | Ch 18 | not in the Doc | "I think the way you're doing it is just right," Elijah said. / Out... |
-| 167 | Ch 19 | not in the Doc | Chapter 19: Eleven, One, Zero / In April the order came |
+| 167 | Ch 19 | not in the Doc | Chapter 19: Eleven, One, Zero / Earlier that April the order had come |
 | 168 | Ch 19 | not in the Doc | I just want you to spend a little more time making this feel like i... |
 | 169 | Ch 19 | not in the Doc | and the fledgling production team fixed what they found before the ... |
 | 170 | Ch 20 | not in the Doc | What Lou did to Elijah in May just about killed him. |
@@ -232,3 +232,4 @@ Edit 57 was never used.
 | 219 | Ch 11, 13, 15, 19 | not in the Doc | by the next morning she had it out in the barn under a moving blanket |
 | 220 | Ch 18 | not in the Doc | Lou got the two of them alone the week after that dinner. |
 | 221 | Ch 34 | not in the Doc | The afternoon before the October meeting, Priya took her sheet up t... |
+| 222 | Ch 0 to 36, Appendix | not in the Doc | He had found his first limit. It was heat. |

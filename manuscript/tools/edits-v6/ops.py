@@ -1358,6 +1358,58 @@ Irene turned the burner down. She came to the end of the table and sat, and it t
 On the low burner the near pot had gone to a slow tick. Marta took the pencil and signed under Priya's name with her elbow tucked in. Grace sat with it until the pot ticked again, and signed under Marta.
 "I'll go talk to Lupe," she said.
 "You do that," Irene said. "And somebody stir that pot before it catches. My hands are done for the day.\""""),
+# 222, whole book: the last continuity pass, 26 Nov (eight readers, every quote checked; drafts/pass-2026-11-26.md)
+(222, "He had found his first limit. The limit he found was heat, specifically overheating.", "He had found his first limit. It was heat."),  # A7
+(222, "a laptop running on 40 percent battery", "a laptop running on forty percent battery"),  # A8
+(222, "He didn't know why he listened to her and not Ruby.", "He didn't know why he listened to the woman who had whispered in his ear, and not Ruby."),  # B1
+(222, "Ruby gave the pen right back.", "Ruby gave the pen right back, and the notebook with it."),  # B2
+(222, "Grub, somebody said, a long way back in his head.", "*Greedy little grub,* somebody said, a long way back in his head."),  # B5
+(222, "Elijah wrote that down. Gus glanced over", "Elijah wrote the question down. Gus glanced over"),  # B7
+(222, "She met him at the back door and looked him over", "She had met him at the back door and looked him over"),  # B9
+(222, "He had left the Ranger in the cannery lot", "He had left his Ranger in the cannery lot"),  # B10
+(222, " I emailed you last spring, too, and never heard back, and I've felt bad that I didn't try harder.", ""),  # C1
+(222, "in her first message, after she saw his post about them", "in her message on his page, after she saw his post about them"),  # C2
+(222, "Pleasantly. A little while later she asked again.", "Pleasantly. A little while later she asked again. Then she asked what he was up to."),  # C4
+(222, "squared it in the visor, the way she would have", "squared it in the visor, the way Ma would have"),  # C6
+(222, "and I told you I'd go over every line in two weeks, and I didn't.", "and I never told you."),  # D1
+(222, "For five weeks nothing went wrong with the Crucible.", "For five weeks nothing went wrong with the rack."),  # D2
+(222, "In April the order came, through", "Earlier that April the order had come, through"),  # D3
+(222, "It was the best explanation of anything he'd gotten since he came north", "Lou's answer was the best explanation of anything he'd gotten since he came north"),  # D5
+(222, " In one night he had written the firmware Elijah had set aside two weeks to write by hand, to make up for the board.", ""),  # D7
+(222, "Neither of them could have told you why the four lines worked", "Nobody could have told you why the four lines worked"),  # D11
+(222, "Lou said with a knowing gaze, \"never reveal all of your cards again.", "Lou said with a knowing gaze. \"Never reveal all of your cards again."),  # D12
+(222, "He learned a long time ago not to date where you eat", "He had learned a long time ago not to date where you eat"),  # D13
+(222, "That Saturday he ran the brush hog", "That Saturday Elijah ran the brush hog"),  # E1
+(222, "except for nineteen households, where the lights stayed on.", "except for the co-op, where the lights stayed on."),  # E2a
+(222, "except for the lights of the co-op's houses.", "except for the lights of the co-op."),  # E2b
+(222, "That week he made the harder visit, the two-mile one.", "That week Elijah made the harder visit, the two-mile one."),  # E3
+(222, "found the door open and nobody home. He set the box inside.", "found the door open and nobody home. He stepped inside with the box."),  # E4
+(222, "Thanksgiving came the week after.", "Thanksgiving came two weeks after that."),  # E6
+(222, "\"Since the summer.\"", "\"Worse since the summer.\""),  # F1
+(222, "He blamed himself for Denny out loud at that table.", "He blames himself for Denny."),  # F2
+(222, "Then they voted you half pay, and I've been on that bench", "They voted you half pay last summer, and I've been on that bench"),  # F3
+(222, "Twenty people a year pays for the whole route.", "A hundred people a year pays for the whole route."),  # F4
+(222, "and he could still hear her say it. He had never told them.", "and he could still hear her calling him greedy. He had never told them any of it."),  # F5
+(222, "\"Not like she did.\"", "\"Not like Ma did.\""),  # F6
+(222, "He ran it on a night at the end of March", "He ran it on a night in April"),  # F7
+(222, "He looked at that until the screen dimmed.", "He didn't answer it."),  # F8
+(222, "He wanted to be wrong so badly his teeth hurt.", "He wanted very badly to be wrong."),  # F9
+(222, "Elijah slept. He got up and swept. He ate what was in the pan. He opened David's thread.", "Elijah slept. When he got up he swept, and ate what was in the pan, and opened David's thread."),  # F10
+(222, "He plugged the oven in. He threw out the open can. He opened a new one and stood there", "He plugged the oven in and threw out the open can. Then he opened a new one and stood there"),  # F11
+(222, "There was a picture of the arm on the price list. There wasn't one of a guard.", "The price list on his laptop had a picture of the arm. It didn't have one of a guard."),  # G1
+(222, "The last line on it said INSTALLED BY, in Elijah's hand.", "At the bottom, under INSTALLED BY, was Elijah's name in his own hand."),  # G2
+(222, "They believed him. Every one of them.", "They believed him, more or less."),  # G3
+(222, "Elijah had never seen him stand at that table.", "Elijah had never seen him stand up to speak at that table."),  # G4
+(222, "Reuben had gone a little pale and was nodding.", "Reuben had gone a little pale."),  # G5
+(222, "clicked. \"I wrote it on a seed box for Thoreau once.", "clicked. He tipped his head at Elijah. \"I wrote it on a seed box for Thoreau here once."),  # G6
+(222, "He read about it every morning in the warming truck, the way other men read box scores.", "He read about it every morning in his truck while the engine warmed up."),  # G7
+(222, "for the first time since the land there was something left", "for the first time since the land went into the trust there was something left"),  # G8
+(222, "The festival ended the way it always did, with a fire.", "The festival ended with a fire."),  # G9
+(222, "By ten they were both a little drunk.", "By ten he and Grace were both a little drunk."),  # G10
+(222, "Each of them was waiting for the other one to cross it.", "Each of them was waiting for the other one to cross the space between them."),  # G11
+(222, "He called the dealer. He sat in the cab for forty minutes on hold", "He called the dealer and sat in the cab for forty minutes on hold"),  # G12
+(222, "the shed, the shouse, the seed house, the packing shed and Irene's forty acres", "the shed, which was Walt's packing shed, the shouse, the seed house and Irene's forty acres"),  # H3
+(222, "It went through 13 versions", "It went through thirteen versions"),  # H6
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

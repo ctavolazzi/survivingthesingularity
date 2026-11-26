@@ -2770,18 +2770,21 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      > Somewhere past Cloverdale the check-engine light came on.
 
-     Change to [Claude's wording and Claude's choice of song, from CT's beats; "Figures. I hope they have a good
-     mechanic." is CT's]:
+     Change to [Claude's wording and Claude's choice of song, from CT's beats; "All his pent-up pain started rolling
+     out of his lungs at once." and "Figures. I hope they have a good mechanic." are CT's]:
 
      > Somewhere past Cloverdale the check-engine light came on.
      >
-     > Elijah saw it and rolled his eyes. Then a laugh came up out of him, and it kept coming until he had to wipe
-     > his eyes with the back of his wrist. He reached over and turned up the radio. Willie Nelson was singing "On
-     > the Road Again."
+     > Elijah looked at it and rolled his eyes. Then he snorted, and the snort turned into a laugh, and the laugh got
+     > away from him. All his pent-up pain started rolling out of his lungs at once. He wiped his eyes and turned up
+     > the radio. Willie Nelson was singing "On the Road Again."
      >
      > Figures, he thought. I hope they have a good mechanic.
 
-     Only the song's title is used, no lyrics. Logged only; not in the v6 Doc yet.
+     Only the song's title is used, no lyrics. Corrected the same day, in place (not in the Doc yet): the first
+     version ("a laugh came up out of him") sat too close to CT's "A chuckle came over him" in Chapter 17 (edit 105
+     area); the second read "really dry"; the third (ribs, blurry road, "a broke man in a truck") was "a little too
+     much". CT took the middle one and added the pent-up pain line. Logged only; not in the v6 Doc yet.
 
 189. **Chapter 18, Marta at the door: the line about Grace is a warning.** Edit 118 is in the v6 Doc, so this is a new
      edit. CT (26 Nov): "it's supposed to read as a warning, like a, you know, treat my baby girl right or else we'll

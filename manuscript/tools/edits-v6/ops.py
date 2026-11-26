@@ -674,7 +674,7 @@ Please consider how much of a difference each and every one of us can make in th
 # 188, Ch 15: the check-engine light
 (188, "Somewhere past Cloverdale the check-engine light came on.",
 """Somewhere past Cloverdale the check-engine light came on.
-Elijah saw it and rolled his eyes. Then a laugh came up out of him, and it kept coming until he had to wipe his eyes with the back of his wrist. He reached over and turned up the radio. Willie Nelson was singing "On the Road Again."
+Elijah looked at it and rolled his eyes. Then he snorted, and the snort turned into a laugh, and the laugh got away from him. All his pent-up pain started rolling out of his lungs at once. He wiped his eyes and turned up the radio. Willie Nelson was singing "On the Road Again."
 Figures, he thought. I hope they have a good mechanic."""),
 # 189, Ch 18: Marta's line about Grace reads as a warning
 (189, "go to waste.\" She straightened up. \"Soup's on",

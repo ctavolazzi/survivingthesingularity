@@ -126,6 +126,18 @@ Not built yet. When CT says go:
 those moments, but not every time. It's kind of like dealer's choice here." Example: edit 134, "Marta hadn't said a
 word either, not since Grace walked Patricia down the line." Claude's judgment where; not every short line.
 
+## Writing a beat for CT (learned 26 Nov, edit 188, the laugh)
+Three tries before CT took one: the first echoed his own phrase from another chapter, the second was "really dry",
+the third "a little too much". What the one he took does:
+- Before writing, grep v6.txt for the key word and its cousins (laugh, chuckle), so the new line doesn't repeat a
+  construction the book already has.
+- Show the thing happening in two or three small steps (snort, laugh, it gets away from him). Not one flat
+  statement, and not a pile of detail (ribs, blurry road, a summary of his life).
+- One beat, one short run of sentences. Don't explain why it matters; the reader has the chapter for that.
+- Leave room for CT's line. He added the feeling himself ("All his pent-up pain started rolling out of his lungs at
+  once."). Claude writes the action plainly; the sentence that names the emotion is his to give.
+- Offer one version, sized in the middle. If he says dry, add one step, not five.
+
 ## The narration is hybrid (CT, 25 Nov)
 CT, planning the Chapter 19 rework: "whose feelings? Elijah's and his observations of others. BUT ... we have a
 hybrid narration style going on here." The book sits on Elijah's shoulder, and above him is a storyteller who knows

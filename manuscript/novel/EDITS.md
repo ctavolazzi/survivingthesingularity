@@ -159,6 +159,15 @@ stakes because we don't know them. The heat failure as the spine, I need a littl
 Claude's idea for the couple (not decided): make them the grower who loses the starts in the Ch 21 heat failure, the
 houses node 7 cut off in the Ch 28 storm, and the ones who leave in Ch 34, so the reader knows them and their leaving
 is the bill for Elijah's shortcuts. They need names.
+CT (26 Nov), yes to the heat failure and to the couple: "That hurts. That's good. Like, this is why we can't blindly
+trust the machines. We need to double check everything. Like, we can lean on them for a lot, but for the critical stuff
+that cannot fail, we need to do it ourselves to the best of our ability. I mean, of course we need to use the tools,
+but there's an old IBM quote, and I think Lou should say it ... a machine cannot be held accountable, therefore a
+machine should never make a management decision. And then, like, the starts are lost, yes, and that's a huge blow, but
+it's not a break moment. It's not like he ruined everything. Elijah's going to feel terrible and want to leave. He's
+going to, try to retreat in shame, but grace should stop him. And then that's what sets up their kiss."
+(The IBM line, from a 1979 IBM training slide, reads "A computer can never be held accountable, therefore a computer
+must never make a management decision." Lou can say it his way.)
 
 **Spine (Claude's proposal, CT to decide):** one running problem from Ch 20 to about Ch 30 that the co-op gets wrong
 before it gets right: the forty controllers go bad in the field. The failing part is the board Elijah made with an AI

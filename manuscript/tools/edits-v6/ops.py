@@ -354,7 +354,7 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 151, Ch 11: the empty paragraph (scene break) inside Gus's offer
 (151, "Let's do it.\"\n\nIt was a good idea. Elijah could see it.", "Let's do it.\"\nIt was a good idea. Elijah could see it."),
 # 152, Ch 12
-(152, "with the windows cracked and a towel over the wheel.", "with the windows cracked and a towel over the wheel.\nThe farm was two hours north, and his mother would have left the porch light on for him. But gas there and back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back through her door with nothing to show for it."),
+(152, "with the windows cracked and a towel over the wheel.", "with the windows cracked and a towel over the wheel.\nThe farm was two hours north, and his mother would have left the porch light on for him. But gas there and back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back through the door with nothing to show for it. Not again. Not after what happened last time."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -1633,15 +1633,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > ...and at night he slept in the cab of the Ranger at the far end of the cannery lot, with the windows cracked
      > and a towel over the wheel.
 
-     After it, a new paragraph [Claude's wording, from the book's own facts]:
+     After it, a new paragraph [Claude's wording, from the book's own facts; the last sentence and "Not again. Not
+     after what happened last time." are CT's correction, 26 Nov]:
 
      > The farm was two hours north, and his mother would have left the porch light on for him. But gas there and
      > back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back
-     > through her door with nothing to show for it.
+     > through the door with nothing to show for it. Not again. Not after what happened last time.
 
      The reasons are all in the book: "Home was two hours north" (later in this chapter), no money until Friday, and
      Ma's "Go be useful, baby. You're underfoot." (Ch 11). Then "By the end of the first week he needed a shower..."
-     (edit 97) as before. Logged only; not in the v6 Doc yet.
+     (edit 97) as before. Context from CT, NOT for the page: what happened last time is never explained ("we just
+     don't ever need to, like, go into that"). Logged only; not in the v6 Doc yet.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

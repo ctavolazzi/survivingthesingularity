@@ -44,9 +44,12 @@ def load(path):
             ts = tr.get("textStyle", {})
             for ch in tr["content"]:
                 if ch == "\n":
+                    # A paragraph ends only where a kept newline is. When a suggestion deletes a paragraph's
+                    # newline, accepting it joins that paragraph to the next one (fixed 26 Nov: this used to
+                    # leave a blank paragraph, which the build prints as a scene break).
+                    chars.append("\n"); attrs.append(pa)
                     continue
                 chars.append(ch); attrs.append((bool(ts.get("italic")), bool(ts.get("bold"))))
-        chars.append("\n"); attrs.append(pa)
     return chars, attrs, images, tab.get("inlineObjects", {})
 
 

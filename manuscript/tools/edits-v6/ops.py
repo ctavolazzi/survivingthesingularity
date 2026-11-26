@@ -328,8 +328,7 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (139, "was a tool that does a thing. The shovel never dug its own hole.", "was a tool that does a thing. But this is different. The shovel never dug its own hole."),
 # 140, Author's Note
 (140, "I'm not asking you to trust me. I'm asking you to take a look for yourself.", "If I can ask anything of anyone, it's that you take a look at this for yourself."),
-# 141, Author's Note: the empty paragraph (scene break) before the last three lines
-(141, "you might not be paying enough attention.\n\nThis could be the most pivotal moment", "you might not be paying enough attention.\nThis could be the most pivotal moment"),
+# 141: no op. The blank paragraph came from a bug in make_v6.py (fixed 26 Nov); see edit 141 in the list.
 # 142, Ch 1
 (142, "So it had a ceiling. The ceiling was a power bill. Whoever", "So it had a ceiling. Whoever"),
 # 143, Ch 2: Wes's text in italics
@@ -351,8 +350,7 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 150, Ch 11
 (150, "Trent thought about that. They had six robot arms coming down from Oakland, a launch party in three weeks and nobody to put them in. They also had two spares in crates that they were never going to need. \"Tell you what,\" he said. \"Ride down with the arms. Help the crew bolt them in for the launch. Do that, and the two spares are yours.\"",
 "Trent pondered for a moment. They had six robot arms coming down from Oakland, a launch party in three weeks and nobody to put them in. \"Tell you what,\" he said. \"You say you're good at carrying stuff. I got a lot of things that need to be carried, and some of them are quite expensive. Ride down with the arms. Help the crew bolt them in for the launch. If you do the work, we got two spare robot arms with your name on 'em.\""),
-# 151, Ch 11: the empty paragraph (scene break) inside Gus's offer
-(151, "Let's do it.\"\n\nIt was a good idea. Elijah could see it.", "Let's do it.\"\nIt was a good idea. Elijah could see it."),
+# 151: no op, for the same reason as 141.
 # 152, Ch 12
 (152, "with the windows cracked and a towel over the wheel.", "with the windows cracked and a towel over the wheel.\nThe farm was two hours north, and his mother would have left the porch light on for him. But gas there and back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back through the door with nothing to show for it. Not again. Not after what happened last time."),
 # 153, Ch 13

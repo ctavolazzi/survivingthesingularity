@@ -1484,6 +1484,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the Doc between "...you might not be paying enough attention." and "This could be the most pivotal moment yet in
      all of human history." Change: delete that empty paragraph, so the two lines follow each other like the rest of
      the note. No words change. Logged only; not in the v6 Doc yet.
+     Done 26 Nov, and the cause found: the blank paragraph was made by a bug in make_v6.py (when a suggestion joined
+     two paragraphs, it left a blank one behind). Fixed in the tool, and all 12 such blanks (here, Ch 2 before
+     Devendra's "You doing okay?", Ch 11, and two in Ch 13) deleted from the v6 Doc on CT's yes.
 
 142. **Chapter 1: "So it had a ceiling."** CT (26 Nov): "So it had a ceiling. The ceiling was a power bill. That's
      confusing because we didn't talk about power before that. We talked about heat. So it had a ceiling. Just leave
@@ -1625,6 +1628,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      paragraph in the Doc between Gus's "...I'll fly you out to the shop next week. Let's do it." and "It was a good
      idea. Elijah could see it." Change: delete that empty paragraph. No words change. Logged only; not in the v6 Doc
      yet.
+     Done 26 Nov, and the cause found: the blank paragraph was made by a bug in make_v6.py (when a suggestion joined
+     two paragraphs, it left a blank one behind). Fixed in the tool, and all 12 such blanks (here, Ch 2 before
+     Devendra's "You doing okay?", Ch 11, and two in Ch 13) deleted from the v6 Doc on CT's yes.
 
 152. **Chapter 12, the cannery lot: why he doesn't go stay with his mother.** CT (26 Nov): "We need a line somewhere in here
      that makes sense for why he doesn't just go stay with his mom. Like, why doesn't he just go stay with his mom?"

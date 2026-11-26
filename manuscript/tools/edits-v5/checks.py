@@ -146,4 +146,5 @@ C=[
 (138,"Ch 15",["\"No, your website had the email. Don't ask me. Ask Tyler.\"\nHe asked for the video call.","holding a rich man's empty glass. It could be nothing,"],["He went and looked. It was there, from April","holding a rich man's empty glass. It could be a cult."]),
 (139,"Author's Note",["was a tool that does a thing. But this is different. The shovel never dug its own hole."],[]),
 (140,"Author's Note",["If I can ask anything of anyone, it's that you take a look at this for yourself."],["I'm not asking you to trust me."]),
+(141,"Author's Note",["you might not be paying enough attention.\nThis could be the most pivotal moment"],["you might not be paying enough attention. [break] This could be"]),
 ]

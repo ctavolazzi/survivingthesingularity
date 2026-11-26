@@ -1478,6 +1478,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      The next lines, "Get your goddamn hands on it." / "Use it yourself." / "Then you'll know.", stay. Logged only;
      not in the v6 Doc yet.
 
+141. **Author's Note: no scene break before "This could be the most pivotal moment".** CT (26 Nov): "I don't really
+     understand why there's 3 stars there at the end. Right before this could be the most pivotal moment in human
+     history. Let's remove those stars." The stars are the build's scene-break mark, made from an empty paragraph in
+     the Doc between "...you might not be paying enough attention." and "This could be the most pivotal moment yet in
+     all of human history." Change: delete that empty paragraph, so the two lines follow each other like the rest of
+     the note. No words change. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

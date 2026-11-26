@@ -7,9 +7,13 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
-- [ ] **Where the arms are kept.** CT's wrinkle (plan, 10.5): not on the farm at first; Tyler's lead to Richard
-      Praether's yard; the reveal with Priya's and Lou's lines. Claude's way to fit it: the reveal is Chapter 34 and the
-      table still says no. Waiting on his yes or no. Needed before Chapter 34 (and it changes Chapters 15, 17 and 37).
+- [x] **Where the arms are kept.** CT, 26 Nov: at Richard Praether's (plan, 10.5). To write: the Praether scene in
+      Chapter 17 (changes his edit 88), Grace telling Marta (Ch 26), the reveal in Chapter 34, one line in Chapter 37
+      on his yes.
+- [ ] **What Praether says.** CT: "some of the hardest wisdom in the whole book." His line so far: "Beware the
+      military!" Anything more is his to give before the Chapter 17 scene is written.
+- [ ] **Scenes with just the women** (plan, 10.6): three proposed (Grace and Lupe, Marta and Grace, Grace and Mrs.
+      Delgado). Waiting on his yes.
 - [x] **The rover and the arms.** CT, 26 Nov: "Yes". The rover stays as written; the arms are the machine the table
       says no to in Chapter 34. His addition: "I had originally envisioned Elijah storing the arms on the farm to sort
       of prove his value and save money. A moment he would have longed for since the electrical bill." With his line,

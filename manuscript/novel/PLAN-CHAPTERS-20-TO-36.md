@@ -824,7 +824,7 @@ Where each lands (Claude's answer to "do you have any feedback"; CT has not repl
   which at this point more or less pays for itself with the Creator Fund," goes in Chapter 17. In Chapter 34 the
   arms he kept to prove his value are what he offers.
 
-### 10.5 CT's wrinkle on the arms (26 Nov, later still). Not decided; nothing written
+### 10.5 CT's wrinkle on the arms (26 Nov, later still). Decided by CT; nothing written yet
 
 His words, in order. First: "I had originally envisioned Elijah storing the arms on the farm to sort of prove his value
 and save money. A moment he would have longed for since the electrical bill." "No bills, except my phone, which at this
@@ -848,6 +848,48 @@ What it collides with in the book as written (Claude, for CT to rule on): Grace'
 the arms (Ch 15) and his edit 88 has him ask for it on the fourth day (Ch 17); the table covers the storage bill as a
 loan (Ch 17); Chapter 34 has him offer "the two in the equipment shed" and the table say no, which the fire needs; and
 Chapter 37 leaves them in the shed ("He left them where they were").
+
+**Decided by CT (26 Nov):** "The arms will be kept at Praether's and Praether's is a witch character that gives a
+warning. 'Beware the millitary!' He's a veteran with PTSD, that's why he lives out there. We reveal that when they
+leave, because Grace notices a letter on the ground by the mailbox near the end of the delapidated fence from the VA."
+"Grace and Elijah will take the arms from their highway storage location to Richard's house, of course. it's a secret
+between Lou, Grace, Elijah, and, eventually, Marta. Grace tells her when she and Marta have a conversation about
+Elijah."
+
+How Claude fits it to the book (each is his to overrule):
+- **Chapter 17** (his edit 88 changes). The storage unit is off Highway 99 near Stockton, two days south, so the crates
+  still come north on the flatbed with the baler. Lou arranges it and covers what Elijah owes on the unit, between the
+  two of them (no table vote, nothing on the whiteboard). Tyler gives the lead without knowing what it is for: an old
+  man out the county road with a barn he doesn't use. Grace and Elijah take the crates the last leg to Praether's.
+  CT's description of the yard goes in as he wrote it. Praether's warning: "Beware the military!" Leaving, Grace sees
+  the VA letter on the ground by the mailbox at the end of the fence.
+- **Chapter 15.** Grace's first message offers the shed for the arms. It can stand: he turns the shed down.
+- **In between.** "Some nights he went and looked at them" (Ch 17) becomes going out to Praether's.
+- **The conversation where Grace tells Marta:** in the year of glances (Ch 26), in the shop.
+- **Chapter 34 is the reveal**, with CT's lines word for word: Denny stunned; Priya, "So you've been sitting on
+  industrial technology this entire time??"; Lou, "I told our friend Elijah to keep the arms a secret ... I thought it
+  best if we didn't set up too much of a power differential while our poor boy was simply trying to heal." The table
+  still says no (CT's yes of the same day), so the fire holds.
+- **Chapter 37** says the arms are "in the back of the equipment shed ... He left them where they were." That line
+  changes to Praether's, on CT's yes (section 13).
+- **The war thread:** Praether's warning in Chapter 17 is the first of it; Curtis in Chapter 33 and the Ukraine footage
+  in Chapter 34 are where it comes due.
+
+### 10.6 Scenes with just the women (CT, 26 Nov)
+
+CT: "we need to make the book pass the Bechdel test, so we need to have scenes with JUSt the women that pass the test
+please." Measured 26 Nov by script over make_v6.py's v6.txt (edits 1 to 204): 127 scenes, and none has only women in
+it. Women do speak to each other about something other than a man inside mixed scenes (Grace and Irene about the
+machine and the route, Ch 38; Priya and Irene about the well, Ch 27), so the test's letter is met and its spirit isn't.
+
+Claude's proposal: three short scenes, each in place of a summary the book already has, so the length holds. This is
+CT's say for scenes away from Elijah (`WRITING-INSTRUCTIONS.md`, section 7, rule 16).
+1. **Grace and Lupe (Ch 23).** Grace tells her there is no money this year. Now it is seen from Elijah's bench as a
+   truck parked for an hour. On the page: the hoop house, the clipboard, October.
+2. **Marta and Grace (Ch 26), in the shop.** It opens on Marta's shoulder and who takes the shop after her, which is
+   the part that passes; then it turns to Elijah, and Grace tells her where the arms are.
+3. **Grace and Mrs. Delgado (Ch 32).** The night the box sat at the gate. Grace carries it in.
+Possible fourth: Priya and Wren, or Patricia's call to Grace on day nine of the dark (Ch 26).
 
 ## 11. Chapter by chapter, 27 to 36
 

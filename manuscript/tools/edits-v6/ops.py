@@ -668,6 +668,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 Thank you for reading. Thank you for your time.
 Please consider how much of a difference each and every one of us can make in this world if we really try. But you don't really need to make that big of a difference to everyone. You are someone. And if you touch any heart, please be sure to start with your own.
 §C Recognize Your Power"""),
+# 187, Ch 31: the call moves a week, because Marta's knock at eight, the shop, the eggs and Wren all come first
+(187, "On Sunday at 9:40 he called the rose garden.",
+"The next Sunday at 9:40 he called the rose garden."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

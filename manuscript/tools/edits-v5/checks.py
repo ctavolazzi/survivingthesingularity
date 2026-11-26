@@ -36,7 +36,7 @@ C=[
 (28,"Ch 3",["I am afraid of what mankind might do with such a thing.","The pit in Elijah's stomach grew deeper.","We do not exactly have a glowing track record with new technology."],[]),
 (70,"Ch 3, 13",["Manny had the next place over. He had been fixing things on theirs since Elijah's father got sick.","It's Manny. From next door."],[]),
 (29,"Ch 3",["because it always rang around 9:40 every Sunday. That was church time."],[]),
-(30,"Ch 3-31",["She called on her way out the door","Nine-forty in the morning.","Could somebody just hold it by her ear?","that was all for today, honey","She's waiting on her Sunday company.","It was a Saturday. The next morning at 9:40","On Sunday at 9:40 he called the rose garden.","Ma had had a good night","The next morning was the first of the month"],["She called when her day ended","Nine-forty at night","that was all for tonight, honey","At 9:40 that night"]),
+(30,"Ch 3-31",["She called on her way out the door","Nine-forty in the morning.","Could somebody just hold it by her ear?","that was all for today, honey","She's waiting on her Sunday company.","It was a Saturday. The next morning at 9:40","Sunday at 9:40 he called the rose garden.","Ma had had a good night","The next morning was the first of the month"],["She called when her day ended","Nine-forty at night","that was all for tonight, honey","At 9:40 that night"]),
 (61,"Ch 3",["He was back at the same window that night."],[]),
 (32,"Ch 3",["out of the world everyone they love still believes in."],["still lives in."]),
 (31,"Ch 13, 14",["It was dark out, and he was too sick to wonder why.","from Sunday, 9:41 p.m.","Morning, baby. I watched your video."],["Working late."]),
@@ -192,4 +192,5 @@ C=[
 (184,"Dedication",["like I'd finally lost it.\nRecognize Your Power\nAct One"],[]),
 (185,"Contents, Dedication",["Contents\nDedication\nAct One", "Appendix\nThank You\nDedication\nFor the people I love who looked me in the eye like I'd finally lost it."],["Author's Note\nFor years, I've been talking about this."]),
 (186,"End",["Thursday, November 25, 2027. Thanksgiving.\nThank You\nThank you for reading. Thank you for your time.", "please be sure to start with your own.\nRecognize Your Power"],[]),
+(187,"Ch 31",["He took it.\nThe next Sunday at 9:40 he called the rose garden."],["He took it.\nOn Sunday at 9:40 he called the rose garden."]),
 ]

@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 3, accepted: 140, not in the Doc: 43.
+Totals: PARTIAL: 3, accepted: 140, not in the Doc: 44.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -197,3 +197,4 @@ Edit 57 was never used.
 | 184 | Dedication | not in the Doc | like I'd finally lost it. / Recognize Your Power / Act One |
 | 185 | Contents, Dedication | not in the Doc | Contents / Dedication / Act One |
 | 186 | End | not in the Doc | Thursday, November 25, 2027. Thanksgiving. / Thank You / Thank you ... |
+| 187 | Ch 31 | not in the Doc | He took it. / The next Sunday at 9:40 he called the rose garden. |

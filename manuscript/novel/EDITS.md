@@ -2748,6 +2748,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the "About the Author" page after it (`about_author_in_book` in `publication/novel/build/book.json`; the bio stays
      there for the back cover). Logged only; not in the v6 Doc yet.
 
+187. **Chapter 31: the call to Ma moves to the next Sunday.** The same Sunday, Marta knocks at eight and takes him to
+     the shop; then Curtis's eggs, he sleeps, sweeps and eats, and Wren comes by. None of that fits before 9:40 that
+     morning. CT (26 Nov), after weighing a shift of it all to Saturday (which would put the circle on the night of
+     the Friday table): "The next Sunday." Book now:
+
+     > On Sunday at 9:40 he called the rose garden.
+
+     Change to [CT's words]:
+
+     > The next Sunday at 9:40 he called the rose garden.
+
+     Changes words of edit 30, which is in the v6 Doc: check row 30 narrowed to "Sunday at 9:40 he called the rose
+     garden." Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

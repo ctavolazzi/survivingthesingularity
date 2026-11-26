@@ -197,4 +197,5 @@ C=[
 (189,"Ch 18",["Don't let her effort go to waste.\" She straightened up and looked him dead in the eye. \"You waste it, and you and me are going to have a problem.\" She let that sit. \"Soup's on at noon."],["go to waste.\" She straightened up. \"Soup's on"]),
 (190,"Ch 20",["Elijah had no idea. He was a little ashamed of that.\nSo Lou showed him."],["He had a notebook with the wattage of his cable box in it."]),
 (191,"Ch 20",["\"It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique advantages.\"\n\"Such as?\"\n\"Well,\" Lou said. \"Nine people here don't get paid,"],["It doesn't work, man. It's never worked."]),
+(192,"Ch 20",["Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner."],["Elijah thought about his mother, and the pot she never let anyone else wash."]),
 ]

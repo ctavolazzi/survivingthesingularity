@@ -2834,6 +2834,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      The rest of his speech is unchanged. "It's never worked" goes, since CT's version leaves it out. Logged only;
      not in the v6 Doc yet.
 
+192. **Chapter 20, after Lou's "Who ate it at your place?": the pot points back to Chapter 13.** CT asked where the pot
+     was set up; it is named as hers alone only in Chapter 3, about 200 pages earlier, and burned on the back burner
+     in Chapter 13 (how Manny found her). Claude suggested pointing the line at the burned pot. CT (26 Nov): "Her
+     sacred pot burned to a crisp on the back burner." Book now:
+
+     > Elijah thought about his mother, and the pot she never let anyone else wash.
+
+     Change to [CT's words]:
+
+     > Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

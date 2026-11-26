@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 3, accepted: 140, not in the Doc: 48.
+Totals: PARTIAL: 3, accepted: 140, not in the Doc: 49.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -202,3 +202,4 @@ Edit 57 was never used.
 | 189 | Ch 18 | not in the Doc | Don't let her effort go to waste." She straightened up and looked h... |
 | 190 | Ch 20 | not in the Doc | Elijah had no idea. He was a little ashamed of that. / So Lou showe... |
 | 191 | Ch 20 | not in the Doc | "It doesn't work, my man. It works because we're lucky. Our specifi... |
+| 192 | Ch 20 | not in the Doc | Elijah thought about his mother, and her sacred pot burned to a cri... |

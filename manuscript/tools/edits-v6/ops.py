@@ -685,6 +685,9 @@ Figures, he thought. I hope they have a good mechanic."""),
 # 191, Ch 20: Lou, "my man", and "Such as?"
 (191, "\"It doesn't work, man. It's never worked. It works because nine people here don't get paid,",
 "\"It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique advantages.\"\n\"Such as?\"\n\"Well,\" Lou said. \"Nine people here don't get paid,"),
+# 192, Ch 20: the pot points back to Ch 13
+(192, "Elijah thought about his mother, and the pot she never let anyone else wash.",
+"Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

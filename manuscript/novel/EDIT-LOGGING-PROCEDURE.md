@@ -149,7 +149,17 @@ the third "a little too much". What the one he took does:
   already have one; don't end a paragraph by summing it up ("That was all there was."); vary sentence length, and
   never three clipped sentences where one would do. From fiction line-editing guides (filter words, leading words,
   repeated gestures, sentence rhythm) and Wikipedia's "Signs of AI writing" (summary closers, commentary).
- The mirrored contrast line ("It's not X. It's Y."; "They can. They just
+- Measure openings before showing CT a draft (26 Nov, Ch 25 draft 1: "You're still overusing pronouns and not varying
+  the sentence structure."). Count the first words of the narration's sentences; no one opener (He, She, a name)
+  should carry a run, and swapping "She" for "Grace" ten times is the same problem.
+- Fixing openings with tricks is the same failure (Ch 25 draft 2; CT: "I've told you to change this a dozen times and
+  you keep doing it ... We just looked up information about signs of AI writing"). Draft 2 traded pronouns for
+  inversions ("Off she went," "Around she turned again"), quips that close a paragraph ("The corner of her mouth
+  didn't get the message," "Her face did what it wanted anyway"), stacked fragments ("Gas down, gas back, food: that
+  much he had. A tow, no."), "like a man who ... the way he said it would," and lines built to be quoted ("The money
+  for the room by the window was the room by the window"). Draft 3 is plain: a subject, a verb, the concrete thing,
+  varied lengths.
+- Don't bring back a problem already fixed. The mirrored contrast line ("It's not X. It's Y."; "They can. They just
   won't."; Claude's own "He's on this side of the fence. His friends aren't.", 26 Nov) was edited out in 119 and 174.
   CT: "I don't want you to introduce like previous problems that we've already overcome ... We've already established
   that we can do better than this." Before showing any line, check it against every lesson in this file and in

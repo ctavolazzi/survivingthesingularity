@@ -542,6 +542,15 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "\"I know,\" Tyler said, looking at his plate."),
 (173, "\"Sit down, Curtis,\" Rosa said.",
 "\"Sit down, Curtis,\" Rosa said, and patted the bench beside her."),
+# 174, Ch 32, 34, 35, 38
+(174, "\"It's not the Terminator, Curtis. It's an arm. It's bolted",
+"\"Curtis, it's an arm. It's bolted"),
+(174, "\"It's not that they can't. It's that they won't.\"",
+"\"They can. They just won't.\""),
+(174, "This time it wasn't a yes. It was three tables now, at one table.",
+"This time nobody said yes. There were three tables now, at one table."),
+(174, "But it didn't break. It's on purpose.",
+"But it didn't break. Somebody did it on purpose."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

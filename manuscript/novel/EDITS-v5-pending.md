@@ -2303,6 +2303,34 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+174. **"It's not X. It's Y." lines.** CT (26 Nov), on the recommendations; the shape he called AI-sounding in edit 119. Four of about 25 loosened. Kept on purpose: "That's not a principle, Elijah. That's your mother." (Ch 36; Ch 37 quotes it back), "That's not food yet. That's a poem about tide pools." (Ch 33's title), and the ones that are plain argument. Claude's wording.
+
+     1. Book now:
+     > "It's not the Terminator, Curtis. It's an arm. It's bolted
+
+        Change to:
+     > "Curtis, it's an arm. It's bolted
+
+     2. Book now:
+     > "It's not that they can't. It's that they won't."
+
+        Change to:
+     > "They can. They just won't."
+
+     3. Book now:
+     > This time it wasn't a yes. It was three tables now, at one table.
+
+        Change to:
+     > This time nobody said yes. There were three tables now, at one table.
+
+     4. Book now:
+     > But it didn't break. It's on purpose.
+
+        Change to:
+     > But it didn't break. Somebody did it on purpose.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -3360,6 +3360,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+214. **Chapter 35: the night scene cut to the walnuts, the man who refuses, and ALC; Lou lets Grace drop.** From the plan;
+     written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-35.md`). Lou's second speech about
+     mothers and "mutually assured survival" come out; "What's Grace say about the arms?" "She hasn't said." and he lets
+     it go; "They can. They just won't." out (edit 174's debt); "this lady," "the steam engine," "In the same lane" and a
+     bare "man" fixed. Row 174 narrowed. 1,686 words to 1,392. Logged only; not in the v6 Doc yet.
+
 213. **Chapter 34: Curtis's wound, the arms revealed, the war on the phones, Curtis the Trekkie, the Ochoas leave.** CT's
      direction of 26 Nov, with his lines for Priya, Lou, Curtis and Marta word for word (listed in
      `manuscript/novel/drafts/chapter-34.md`, with Book now and Change to). The arms are in Praether's barn "since my first

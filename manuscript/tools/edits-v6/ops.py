@@ -1225,6 +1225,35 @@ Curtis turned and looked at her, and she looked back at him.
 Then it broke open. Tyler said this was exactly the kind of fear that kept them broke. Hector said he'd take a robot over another October like the last one, and Lupe told him to hush. Priya wanted to know what an arm actually did to a squash, physically, did it bruise, and nobody answered her. Wren was crying a little. Frank and Irene had gotten off onto a milking machine somebody's father bought in 1961. It was two arguments, and then it was four."""),
 (213, "\"Is this what it was all for?\" said the wife of the man from the north houses.", "\"Is this what it was all for?\" Lupe said."),
 (213, "\"Item four,\" Reuben said, turning a page. \"Toilets.\"", "\"Item four,\" Reuben said, turning a page. \"Toilets.\"\n\nThe Ochoas left that week. Hector backed the stock trailer up to the hoop house himself and loaded the wire benches, and he shook Elijah's hand at the truck, once, hard, and didn't say anything.\nLupe took the clipboard off its nail by the door and gave it to Grace. The last line on it said INSTALLED BY, in Elijah's hand.\n\"Somebody should keep checking,\" Lupe said, and got in the truck.\nIn the shouse, Reuben rubbed out the twenty-two on the whiteboard and wrote twenty."),
+# 214, Ch 35: the night scene cut to the walnut, the man who refuses, ALC; Lou lets Grace drop (drafts/chapter-35.md)
+(214, "That's what this lady's doing.", "That's what Patricia's doing."),
+(214, "It makes sense the way the steam engine made sense.", "It makes sense the way the car made sense."),
+(214, "\"They can. They just won't.\" Lou shook his head.", "Lou shook his head."),
+(214, "And it is one, man.", "And it is one, my man."),
+(214, "\"In the same lane, my friend.\"", "\"Same boat, my friend.\""),
+(214, ("That night Lou had the barrel stove going behind the packing shed, with the door swung open so he could see the fire.", "For about as long as the joint lasted, it was."),
+"""That night Lou had the barrel stove going behind the packing shed, with the door swung open so he could see the fire.
+Elijah came down the path a little after nine. He hadn't decided to. His feet had. Lou pointed at the other lawn chair with a walnut.
+They sat a while. Elijah rolled a joint and lit it off a stick from the stove. Up the field the irrigation was still ticking over.
+"What's Grace say about the arms?" Lou said.
+"She hasn't said."
+Lou nodded and let it go. He cracked two walnuts in one fist and looked at the fire, not at him. "You've heard of mutually assured destruction, Elijah."
+"Of course."
+"Our parents did drills in school. Got under their desks for a bomb that never came. Or at least, not yet." He picked the meat out with his thumbnail and tossed the shells in the stove. "I believe in something even more powerful."
+"What could be more powerful than the nuclear bomb?"
+Lou turned in his chair and looked him right in the eyes. He had very pale eyes, and the fire was in both of them.
+"The man who refuses to launch it."
+Elijah didn't say anything.
+"Choice, my friend. We always have a choice."
+"Yeah, but they'd court-martial him. They'd throw him under the prison."
+"And he can choose," Lou said, "to suffer those consequences."
+Elijah sat with it. He had filled eleven notebooks with the people who would launch the machine. The ones who wouldn't, given the chance? He didn't know a single name.
+"You've got eleven notebooks of the ways it goes wrong, Thoreau," Lou said. "You got anything in there about how it goes right?"
+"One." Elijah hadn't said it out loud before. "We measure the whole country by GDP. How much got made and sold. I'd put another number next to it. ALC. Adequate level of care. Is everybody fed, housed, doctored. And if they're not, why not, and what are we pointing the machines at to fix it."
+"Don't we already do that?" Lou said. "With money?"
+"Money tells you what got sold. It doesn't tell you who didn't eat."
+Lou looked at the fire and didn't argue.
+The firelight moved across his face. Elijah took another drag. He wanted it to be that simple. For about as long as the joint lasted, it was."""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

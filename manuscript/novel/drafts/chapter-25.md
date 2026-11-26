@@ -261,3 +261,9 @@ The text above is as first logged. These lines now read:
 - "Elijah was still back in the fastener aisle. The clamp had been the last one on its hook. He stood in front of that hook, and the empty hooks on either side of it, and looked at them with no surprise at all."
 - "the part that overheated in June"; "The duffel went back under the bed."
 - Old text: "eight months" (twice, was nine); "a paid job once the library could carry one"; "He had lost a register and had all week now, and he spent it building"; "a nineteen-year-old had the name".
+
+## Changed later on 26 Nov (CT: "yes. Fix it for nothing thank you.")
+
+At the truck stop, after "The money for Ma's room was for Ma's room.": "Ahead of him were seven hundred miles with
+nobody on them. Behind him were a hundred, and a man who would fix it for nothing." Claude's words in CT's scene.
+Invented: seven hundred miles still to go.

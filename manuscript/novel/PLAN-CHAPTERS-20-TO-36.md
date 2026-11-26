@@ -722,7 +722,7 @@ get to know.
 **Frank.** "You can't download me" (27). Holds the camera badly (32). "Who fixes it at two in the morning?" (34).
 **Ma.** Sunday 9:40 calls (31). He means to drive down at Thanksgiving 2026 and mails a letter (27). No visit until
 Chapter 37.
-**Devendra.** The "somebody" Bidwell had put near him (section 12).
+**Devendra.** Not the "somebody" (CT: never revealed). He pays the bet by text in Chapter 39: *Dinner's on me!* (edit 218).
 
 ### 10.3 Elijah and Grace, quarrel by quarrel
 
@@ -1056,7 +1056,7 @@ says **Claude's call**, and his word replaces it.
 | 2 | The north-house couple's names | Hector and Lupe Ochoa stay. **Claude's call**; four chapters use them and CT hasn't objected | Done |
 | 3 | Was the check-engine light at Thanksgiving 2025 nothing? | Yes. Curtis plugs in his reader the next morning: the gas cap. He could have made it. He tells nobody. **Claude's call**; it is one line added to CT's scene, so it waits for his yes | Ch 25, on his yes |
 | 4 | Curtis's wound | His grandfather's wheat place, lost to a locked combine, a dealer eleven days out and two days of rain; his neighbors bid at the sale. The book already points there: "like I owned that tractor" (Ch 33) and "Again" (Ch 34). **Claude's call** | Ch 34, in the cab |
-| 5 | Bidwell's "somebody near him" | Devendra. The book already has him on Bidwell's "land side," and his "checking in" email arrives in Ch 25 after a year and a half of silence. In the Ch 23 "Meanwhile," "Close enough to eat with" becomes a clue that fits him (he is the one Elijah phones on Sundays). The payoff is one sentence in Devendra's Ch 37 call. **Claude's call** | Ch 23 on his yes; Ch 37 on his yes (section 13) |
+| 5 | Bidwell's "somebody near him" | **Never named** (CT, 26 Nov: "we never need to reveal the somebody"). Devendra instead texts *Dinner's on me!* in Chapter 39 (edit 218). The earlier idea, Devendra as the somebody, is dropped | Done |
 | 6 | Marta's double speak | In her kind lines and her warnings only; plain about the press, Emeka and safety. First one is in: "Pick a side of that door. You're heating the whole valley." (Ch 24). **Claude's call** | As each chapter is written |
 | 7 | Edit 121, "one thing" or "one real thing" | Keep both, as they stand | No change |
 | 8 | The "dark out" call at 9:40 | It is the one night call (edit 31; `EDITS.md` says so in its own note). Not an error | No change |
@@ -1084,7 +1084,7 @@ says **Claude's call**, and his word replaces it.
 | "Go to the next meeting, Curtis" | Irene's order (Ch 30) | He goes (Ch 32) |
 | Mrs. Delgado | First named at the fire | Seen (Ch 26), missed (Ch 32), named at the fire (Ch 36) |
 | The three a.m. address taking every file | Priya's margin note (Ch 29) | "Log it" (Ch 29); "I checked that file" (Ch 38, as written) |
-| Bidwell's "somebody" | Planted twice, never paid | Devendra (12.1, item 5) |
+| Bidwell's "somebody" | Planted twice | Never named, on CT's word (12.1, item 5) |
 | David's "Saw the stove" | Unanswered (Ch 27, 31) | Ch 39, as written |
 | The uncashed checks | Ch 26 | He offers them in the April fight and Grace shows him why that pays nothing (Ch 32); Ch 39, as written |
 | The pay Grace promised | Ch 15, 16, 25 | Voted at half (Ch 26) |
@@ -1159,12 +1159,11 @@ To carry into Chapters 27 to 36 as they are written (all from the readers):
 
 Shown here so nothing is hidden. Nothing below is logged.
 
-1. **Ch 38, the last gantry.** "the gantry stood parked over bed four with its arm tucked up" to "the rover stood
+1. **Ch 38, the last gantry.** Done (edit 216). "the gantry stood parked over bed four with its arm tucked up" to "the rover stood
    parked over bed four with its arm tucked up."
-2. **Ch 37, Devendra's call** (only if Devendra is the "somebody"). After "I've been trying to say it for three
-   years.": "And two years ago somebody upstairs asked me to check in on you. I'd have called anyway."
-3. **Ch 23, Bidwell's reader** (the same question). "There is somebody near him. Close enough to eat with." to "We have
-   somebody he'll take a call from." (Devendra's "checking in" email comes that fall, in Chapter 25.)
+2. ~~Ch 37, Devendra's call~~ and 3. ~~Ch 23, Bidwell's reader~~. Dropped: CT, 26 Nov, "we never need to reveal the
+   somebody." His line instead: Devendra texts *Dinner's on me!* in Chapter 39 (edit 218). Also done on his yes: the
+   arms "in Richard Praether's pole barn" in Chapter 37 (edit 217).
 4. **Ch 37, a mirrored line Claude put in with edit 178.** "It should have felt like traveling light. It felt like he
    had hardly been here at all." to "It felt like he had hardly been here at all."
 5. **Ch 25, Thanksgiving** (CT's scene). After "So did I.": the next morning Curtis plugs in his reader and says

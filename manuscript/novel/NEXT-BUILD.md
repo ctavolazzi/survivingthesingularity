@@ -67,7 +67,8 @@ from Claude's own reading.
 | M3 | Meanwhile | | 525 | Bidwell's map; the hole; Lou is his cousin | one line waits on CT |
 | 24 | A Chair a Foot Closer | August and September 2025 | 2,174 | The shouse, the broken coupon, the first fire, the gate and the captain, the pond | REWRITTEN, edit 203; one addition waits on CT |
 | 25 | Long Enough to Laminate | fall 2025 | 2,820 | The letter and the tiff, frozen yogurt, Frank's store, the kiss at the pond, the Thanksgiving U-turn | REWRITTEN, edit 198 |
-| 26 | The Indignant Worm | spring to October 2026 | 4,525 | The soil trial, the little rover (a JetAuto Pro), the models go dark, Ma's fall, the pay vote, the amp at the pond | REWRITTEN, edit 204; report: split at October? |
+| 26 | The Indignant Worm | spring 2026 to fall | 3,776 | The soil trial, the little rover (a JetAuto Pro), the models go dark, Ma's fall, the pay vote, Praether at his mailbox | REWRITTEN, edit 204 |
+| (none) | Pondwater | October 2026 | 1,175 | Marta tells him about the music; the amp on the tailgate at the pond; the band joke; Grace's father; the kiss | REWRITTEN, edit 204; CT's title, unnumbered |
 | 27 | Blueprints of a Wall | October 2026 to February 2027 | 2,294 | The fire video, eleven towns, the plans given away, the pledge, the well | REWRITTEN, edit 206 |
 | 28 | Hello, Ridge | winter 2026 | 1,194 | One night dark; the co-op's lights stay on; the Ochoas drop off the map; the rain fly | REWRITTEN, edit 207 |
 | 29 | Ink and Pencil | early 2027 | 2,141 | The annual meeting: ways to die, Marta's shoulder, Denny unpaid, Reuben's deed | REWRITTEN, edit 208 |
@@ -115,8 +116,8 @@ Thank You; "Recognize Your Power".
 
 `python3 manuscript/tools/edits-v6/build_gate.py OUT/v6.txt --todo manuscript/novel/TODO.md` lists every line that
 must be gone and every line that must be there before the build is made (`build-gate.json` beside it), and every
-unticked box in the to-do list. On 26 Nov, after Chapters 27 to 36, it reports one line still to go, in the ending and
-waiting on CT's yes (Ch 37's "equipment shed"; Ch 38's "gantry" is done, edit 216), plus the to-do list's open boxes. The build is ready when:
+unticked box in the to-do list. On 26 Nov, after Chapters 27 to 36, it reported one line still to go (Ch 37's "equipment shed"). That is done
+(edit 217), and the gate says READY for its lines; the to-do list's open boxes remain. The build is ready when:
 
 1. ~~Chapters 27 to 36 are written and logged (edits 206 to 215).~~ Done 26 Nov.
 2. The corrections to Chapters 22 to 26 from the report are in, or CT has said no to them.

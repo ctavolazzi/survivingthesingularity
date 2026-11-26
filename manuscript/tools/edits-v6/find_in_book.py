@@ -20,7 +20,7 @@ def load(path):
     # skip the table of contents: the book starts at the last "Chapter 0:" heading
     starts = [i for i, l in enumerate(lines) if re.match(r"Chapter 0:", l)]
     body = starts[-1] if starts else 0
-    head = re.compile(r"^(Chapter (\d+): .*|Meanwhile|Epilogue|Appendix|Afterword|About This Book|Act \w+: .*)$")
+    head = re.compile(r"^(Chapter (\d+): .*|Meanwhile|Pondwater|Epilogue|Appendix|Afterword|About This Book|Act \w+: .*)$")
     chap, num, out = "front", -1, []
     for i, l in enumerate(lines):
         m = head.match(l) if i >= body else None

@@ -87,7 +87,7 @@ def chapters(book):
     for n, num, chap, l in book:
         if not (0 <= num <= 40):
             continue
-        if chap.startswith("Chapter") or chap == "Epilogue":
+        if chap.startswith("Chapter") or chap in ("Epilogue", "Pondwater"):
             key = chap
         elif chap == "Meanwhile":
             if last != "Meanwhile" or l.strip() == "Meanwhile":
@@ -104,6 +104,8 @@ def short(c):
     m = re.match(r"Chapter (\d+)", c)
     if m:
         return m.group(1)
+    if c == "Pondwater":
+        return "Pw"
     return "M" + c.split()[-1] if c.startswith("Meanwhile") else "Ep"
 
 def number(c):

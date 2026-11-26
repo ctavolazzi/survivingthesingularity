@@ -3,7 +3,8 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 217.** Chapters 27 to 36 are written (edits 206 to 215). Next: CT's yes-items (section 1 and 2a), then section 3.
+**Next edit: 220.** Chapters 20 to 36 are written; CT's eight choices of 26 Nov are in (edits 217 to 219 and corrections to 198
+and 204). Next: the women's scene about the tall rover (Chapter 34; section 1), then section 3.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
@@ -17,20 +18,24 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
       other women from the co-op the extended families." To write with their chapters: Priya and Grace the night
       before the county meeting (Ch 29 into 30); Marta, Yvonne and the women in the grange hall kitchen (Ch 29); Grace
       and Lupe (Ch 23); Grace and Mrs. Delgado (Ch 32).
-- [ ] **Praether's wound** (plan, 10.7): Claude recommends the 1991 Gulf War (the pills, Khamisiyah, the letters).
-      Waiting on his yes; then a small correction to edit 205.
+- [x] **Praether's wound** (plan, 10.7). CT, 26 Nov: "yes gulf war vet." Said at his mailbox in Chapter 26 (edit 204);
+      Chapter 17 stays cryptic so the VA letter is still the reveal.
 - [x] **The rover and the arms.** CT, 26 Nov: "Yes". The rover stays as written; the arms are the machine the table
       says no to in Chapter 34. His addition: "I had originally envisioned Elijah storing the arms on the farm to sort
       of prove his value and save money. A moment he would have longed for since the electrical bill." With his line,
       "No bills, except my phone, which at this point more or less pays for itself with the Creator Fund." It goes in
       Chapter 17, where the crates go into the equipment shed; waiting on one word from him ("Creator Fund" or "creator
       fund").
-- [ ] **Grace's father.** He left when she was a teenager (CT, 26 Nov), or he checked out without leaving the porch?
-      The fire says "Your dad chose. Every day, on the porch, on his phone," and Faith sits beside him there now.
-      Claude recommends checked out. Needed before the Chapter 24 correction below.
-- [ ] **The ending lines**, shown one at a time (plan, section 13): the last "gantry" (Ch 38); Devendra as the
-      "somebody" (Ch 37 and the Ch 23 "Meanwhile"); "It should have felt like traveling light" (Ch 37); the gas cap
-      (Ch 25, his scene); the Appendix; the Ch 37 to 39 line flags.
+- [x] **Grace's father.** CT, 26 Nov: checked out on the porch, "numb, barely himself anymore ... a husk, a shell, a
+      container for her father's soul, one she grieved and let go of long ago. That's all she really needs to say about
+      it." She says it on the blanket in "Pondwater" (edit 204).
+- [ ] **The women and the tall rover** (CT, 26 Nov): a scene in Chapter 34, before the meeting, where the women weigh
+      the taller machine and the yield against pushback from the community and decide for it, with an older woman's
+      advice on people who tell you what they think without being asked ("Not ABOUT men, but PEOPLE"). Asked and not yet
+      answered: does he have her line, and is the treasurer Reuben or a woman.
+- [ ] **The ending lines** still open (plan, section 13): "It should have felt like traveling light" (Ch 37); the gas
+      cap (Ch 25, his scene); the Appendix; the Ch 37 to 39 line flags. Done: the rover in Ch 38 (216), the arms at
+      Praether's in Ch 37 (217), Devendra's text in Ch 39 (218). Bidwell's "somebody" is never named (CT).
 - [ ] **The Instagram synopsis**: fix the four things the book doesn't do, or leave it. Claude's answer is in the chat
       of 26 Nov; the check reruns with `find_in_book.py ... claims claims-instagram-synopsis.json`.
 
@@ -51,7 +56,7 @@ Words are measured by `story_report.py` (27 Nov correction: the first table here
 | [x] | 34 A Guy With Arms | 213 | 2,320 | 2,410 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |
 | [x] | 35 Two Walnuts in One Fist | 214 | 1,686 | 1,305 | night scene cut to the walnut, "The man who refuses to launch it" and ALC; "They can. They just won't." fixed |
 | [x] | 36 This Is the Gate | 215 | 2,167 | 2,175 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
-| [ ] | 24, a correction to edit 203 | 203 | | | at the stove: her father's drinking and her festival years; his pause about festival girls (after CT rules on "he left") |
+| [x] | "Pondwater" (was the end of 26) | 204 | 1,175 | | her father and her festival years, said on the blanket; his pause about festival girls after Marta's line (CT's words, 26 Nov) |
 
 ## 2a. From the story report (`STORY-REPORT-2026-11-26.md`, section 9)
 
@@ -61,10 +66,11 @@ No decision needed (corrections to chapters already rewritten):
 - [x] Ch 26: the year's obstacle, said once. Ma's fall stays open overnight.
 - [ ] Praether twice more before Chapter 34 (he mows there). One done (Ch 26, at his mailbox); one to go (Ch 29 or 32).
 Need CT's yes:
-- [ ] Ch 25: one line of logic at the truck stop (his scene).
-- [ ] Split Chapter 26 at the October night (a new chapter and its title).
+- [x] Ch 25: one line of logic at the truck stop (his scene). CT: "yes."
+- [x] Split Chapter 26 at the October night: "Pondwater" (CT's title), unnumbered.
 - [x] ~~Ch 13: the sale of the farm as a scene.~~ Withdrawn: on reading, it already is one (CT's words).
-- [ ] The seven continuity items in the report, section 6 (Ch 5, 11, 13, 15, 19, 26 and the ending).
+- [x] The continuity items in the report, section 6 (edit 219, and "parade" in 204). Left: "For three years he had told
+      her there wasn't one" (Ch 37), which holds only from Chapter 13.
 - [x] ~~Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate.~~ Withdrawn (CT: "I don't care how long it gets I want
       it to be good"; both read and both earn their place).
 - [x] ~~Chapter 33's tomato dinner: cut the cotton gin numbers, the saber-tooth and the rent, and "Pull apart what it takes
@@ -76,7 +82,8 @@ Need CT's yes:
 
 - [ ] The ending lines CT said yes to, logged one at a time.
 - [ ] The Appendix brought up to date (plan, section 13, item 6).
-- [ ] The smell pass (CT, 26 Nov; `WRITING-INSTRUCTIONS.md`, section 7a). From Chapter 27 on it is part of writing each
+- [ ] The smell pass, **in a new chat just for smell** (CT, 26 Nov: "I'll do this with you later in a new chat dedicated
+      just to smell"; `WRITING-INSTRUCTIONS.md`, section 7a). From Chapter 27 on it is part of writing each
       chapter. For the rest of the book: his two places first, in his words (the truck he lives in, Chapters 14 and 15;
       the high-dollar party, Chapters 9 and 10), then any scene where a smell would carry the feeling. Each one shown to
       CT, since Chapters 0 to 19 are done.
@@ -98,6 +105,7 @@ Need CT's yes:
 
 ## Done
 
+- 26 Nov, eighth chat: CT's eight choices (edits 217 to 219; "Pondwater"; corrections to 198 and 204).
 - 26 Nov, eighth chat: Chapter 17's Praether scene (edit 205).
 - 26 Nov, eighth chat: the story report, `NEXT-BUILD.md`, `story_report.py` and `build_gate.py`.
 - 26 Nov, eighth chat: Chapters 23 (edit 202), 24 (203) and 26 (204) rewritten and logged; continuity fixes to edits

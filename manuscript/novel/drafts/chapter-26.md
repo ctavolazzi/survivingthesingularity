@@ -598,3 +598,48 @@ lines are the book's own (Ch 1, Ch 2). Lou's "my man" follows CT's rule for Lou 
 ## Changed later on 26 Nov (the two rovers; CT)
 
 CT's direction (plan, section 10.8): the rover is a JetAuto Pro, the cheaper and smaller of two, bought as a compromise with Lupe's concern ("Could I pick it up?"); Reuben keeps the books; Curtis and Elijah bond over programming it ("By midnight Curtis had written the first ten lines of code of his life"). The description of a tall frame is gone from this chapter; the tall one is voted in Chapter 34. Also from the story report: Ma's fall stays open overnight; his side of the year; Praether at his mailbox. Facts Claude invented here: the tall one's price ("more than the co-op had cleared all spring"), that the kit "would have fit in an apple box," Lupe's question, the second camera on a mast, Curtis's ten lines.
+
+## Changed later on 26 Nov (CT's eight choices)
+
+- **The October night is its own chapter, "Pondwater"** (CT: "title it 'Pondwater'"). It starts at "That fall, it was
+  Marta who told him about the music." The heading has no number, like "Meanwhile", so Chapters 27 to 39 keep theirs
+  (Claude's call; numbering it would renumber thirteen chapters). It is in the Contents after Chapter 26.
+- After Marta's "Don't make me sorry." (CT's words): "He had dated a few festival girls in the past. That hadn't exactly
+  gone so well for him. But Grace seemed like she had it all together."
+- On the blanket, after "He found he didn't mind at all.":
+
+> "We should start a band," Grace said. "Whales and a sad guy on a stool."
+>
+> "We should call it Pondwater!"
+>
+> She laughed until she had to roll onto her side, and he laughed because she was laughing. When it wore off they were
+> both looking up at the first stars.
+>
+> "My dad had one of these," she said, toward the amp.
+>
+> "You told me. My first month."
+>
+> "He started drinking when I was in high school. Then it was harder stuff than drinking. I made a lot of weird choices
+> back then. I was a little festy girl." She smiled at the sky, and stopped smiling. "He's still on that porch. Numb.
+> Barely himself anymore. The father who raised me is gone. The one I love, the one I grew up admiring. What's there now
+> is a husk, a shell, a container for my father's soul. I grieved him and let go of him a long time ago."
+>
+> That was all she said about it.
+>
+> He turned onto his elbow. She was already looking at him. He kissed her.
+
+  CT's: "We should call it Pondwater!"; the joke about starting a band and the laugh as the turn; her father's
+  drinking, "harder" things, "I made a lot of weird choices", "a little festy girl"; "numb, barely himself anymore",
+  "Gone is the father who raised her, the one she loves, the one she grew up admiring. Instead is a husk, a shell, a
+  container for her father's soul, one she grieved and let go of long ago" (moved into her voice); "That's all she
+  really needs to say about it". Claude's: "Whales and a sad guy on a stool", the laugh, "My dad had one of these" (it
+  points back to her line in Chapter 18), "She smiled at the sky, and stopped smiling." Out: "When the songs ran out".
+- "which from Marta was practically a parade" becomes "which from Marta was a blessing" (Chapter 19 has the parade).
+- **Praether at his mailbox, the Gulf War** (CT: "yes gulf war vet"). After "So did ours, the first year.":
+
+> He held up an envelope from the stack. "They gave us pills in ninety-one and said take them. Then they blew an ammo
+> dump upwind of us, full of nerve gas, and wrote and told me about it six years later. They still write." He put the
+> envelope in his coat. "Real polite letters." He went back up the drive.
+
+  Claude's words. Sourced, not invented: the pyridostigmine bromide pills (FDA waiver, January 1991), the Khamisiyah
+  demolitions (March 1991), the Defense Department's letters (1997 and 2000). Invented: that Praether was there.

@@ -53,12 +53,27 @@
   {
    "ch": 37,
    "text": "two robot arms in the back of the equipment shed",
-   "why": "the arms are at Praether's; needs CT's yes"
+   "why": "the arms are at Praether's (edit 217, CT's yes)"
   },
   {
    "ch": 38,
    "text": "the gantry stood parked over bed four",
    "why": "it is a rover; needs CT's yes"
+  },
+  {
+   "ch": 11,
+   "text": "and it went into his mother's barn",
+   "why": "Ma puts the amp in the barn; the barn is a surprise in Ch 13 (edit 219)"
+  },
+  {
+   "ch": 13,
+   "text": "since Monday night",
+   "why": "Sunday (edit 219)"
+  },
+  {
+   "ch": 19,
+   "text": "The cases came from a kid named Tyler.",
+   "why": "Tyler is met in Ch 17 (edit 219)"
   }
  ],
  "there": [

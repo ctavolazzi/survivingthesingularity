@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 71.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 74.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -208,13 +208,13 @@ Edit 57 was never used.
 | 195 | Ch 20 | not in the Doc | That was Wren. She led the Sunday circle and made the candles, and ... |
 | 196 | Ch 7 | not in the Doc | Mr. Ostrander had taught him Spanish for three years |
 | 197 | Ch 0 to 39 | PARTIAL | He'd underlined it twice and gone back to nodding. |
-| 198 | Ch 25, 26 | not in the Doc | Most weeks he wrote to Ma on a yellow pad |
+| 198 | Ch 25, 26 | not in the Doc | Behind him were a hundred, and a man who would fix it for nothing. |
 | 199 | Ch 19, 20 | not in the Doc | Those boxes go out in May either way. |
 | 200 | Ch 21 | not in the Doc | under a year and a half of everything else |
 | 201 | Ch 22 | PARTIAL | "There's one more thing," he said. "The board in the boxes. I didn'... |
 | 202 | Ch 23 | not in the Doc | He saw the pattern all at once, on the third evening. |
 | 203 | Ch 24 | not in the Doc | The first new board was done in the middle of August. |
-| 204 | Ch 26, 32, 33 | not in the Doc | The other was a kit called a JetAuto Pro |
+| 204 | Ch 26, 32, 33 | not in the Doc | Write your models accordingly. / Pondwater / That fall, it was Mart... |
 | 205 | Ch 17 | not in the Doc | On the fourth day Grace asked about the arms. |
 | 206 | Ch 27 | not in the Doc | Elijah wrapped the outside taps against the frost and went to bed. |
 | 207 | Ch 28 | not in the Doc | came up the valley in December. |
@@ -227,3 +227,6 @@ Edit 57 was never used.
 | 214 | Ch 35 | not in the Doc | That's what Patricia's doing. |
 | 215 | Ch 36 | not in the Doc | The Ochoas left the Saturday before the festival. |
 | 216 | Ch 38 | not in the Doc | the new rover stood parked over bed four |
+| 217 | Ch 37 | not in the Doc | All that was left were two robot arms in Richard Praether's pole barn. |
+| 218 | Ch 39 | not in the Doc | His phone buzzed against his leg. It was Devendra. / Dinner's on me... |
+| 219 | Ch 11, 13, 15, 19 | not in the Doc | by the next morning she had it out in the barn under a moving blanket |

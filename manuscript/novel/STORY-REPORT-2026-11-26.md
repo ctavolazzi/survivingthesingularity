@@ -129,7 +129,10 @@ wants Lou wrong once).
 visible months" at Frank's counter (now eight); Marta calling him "Elijah" in Ch 19, when Ch 37 says "She had never
 called him that, not once" (now "spreadsheet"; the vocative was the only word changed).
 
-**Still open, each needing CT's yes** (chapters he called done, or the ending):
+**Fixed on CT's yes, 26 Nov evening** (edits 217 to 219 and edit 204): items 1 to 6 below, and the arms in item 7.
+Bidwell's "somebody" is never named, on his word. Still open: "For three years he had told her there wasn't one."
+
+**The list as it stood** (chapters he called done, or the ending):
 
 1. Ch 13: "since Monday night" (should be Sunday).
 2. Ch 13: Friday before Wednesday and Thursday.

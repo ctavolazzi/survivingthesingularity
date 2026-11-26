@@ -205,9 +205,9 @@ Elijah cannot know.
 **The endgame runs from three files: `REFERENCE.md` (how), `GOALS.md` (what done is), `TODO.md` (what is next).**
 Every question that was open is decided in `PLAN-CHAPTERS-20-TO-36.md`, section 12 (where a decision was CT's and
 Claude made it, it says so). What is still CT's is the top of `TODO.md`:
-- The rover and the arms: keep the rover as written, with the arms as the machine on the table in Chapter 34?
-- Grace's father: left when she was a teenager, or checked out without leaving the porch?
-- The ending lines in the plan, section 13, one at a time.
+- The women's scene about the tall rover (Chapter 34): his line for the older woman, and who the treasurer is.
+- The ending lines still open in the plan, section 13 (traveling light, the gas cap, the Appendix, the line flags).
+- The smell pass, which he will do in a new chat just for smell.
 - The Instagram synopsis: fix or leave.
 - Cover credit (CT, 26 Nov, for "the book proper"): his words are "cover credit : me, the author, sketches and
   Midjourney", cheeky and without a name. It goes inside, on the copyright page, where other books have it (CT), not
@@ -222,16 +222,18 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
 ## Where things stand (end of the eighth logging chat, 26 Nov)
 - The v6 Google Doc "StS v6 draft (Nov 25)" is the book (CURRENT in the bridge). In the Doc: edits 1 to 138, 141 and
-  151. Logged in GitHub only: 139, 140, 142 to 216 except 151. **The next edit is 217.** (216 is Ch 38's "the new rover".) Nothing has been put into
+  151. Logged in GitHub only: 139, 140, 142 to 219 except 151. **The next edit is 220.** (217: the arms at Praether's, Ch 37.
+  218: Devendra's text, Ch 39. 219: continuity in Ch 11, 13, 15, 19.) Nothing has been put into
   either Doc. Do not change the Doc; CT has not cleared it.
 - **Chapters 20 to 36 are all rewritten and logged:** 198 to 204 (Ch 20 to 26), 206 to 215 (Ch 27 to 36). Edit 205 is
   the Praether scene in Chapter 17. Each has its Book now and Change to in `drafts/`. Corrections from the story report
-  went into 201, 203 and 204 in place.
+  went into 201, 203 and 204 in place. CT's eight choices of the evening went into 198 and 204 in place: the October
+  night is now its own unnumbered chapter, "Pondwater".
 - Chapter 37 to the Epilogue stand as CT loves them, except the lines waiting on his yes (plan, section 13). The build
-  gate (`build_gate.py`) has one line open: the arms "in the back of the equipment shed" in Chapter 37.
-- make_v6.py on a fresh v5 read passes all 215 rows. verify.py on the v6 Doc shows the nine expected PARTIALs (19, 30,
+  gate (`build_gate.py`) says READY for its lines.
+- make_v6.py on a fresh v5 read passes all 219 rows. verify.py on the v6 Doc shows the nine expected PARTIALs (19, 30,
   125, 131, 135, 137, 182, 197, 201).
-- Length: 98,808 words (95,675 before Chapters 27 to 36 and the report's fixes). Chapters 27 to 36 hold 25,177 words
+- Length: 99,104 words; length is not the measure (CT, 26 Nov). Earlier note: 98,808 words (95,675 before Chapters 27 to 36 and the report's fixes). Chapters 27 to 36 hold 25,177 words
   against a budget of 22,590: about 2,600 over, mostly CT's new scenes (the April quarrel, the reveal, the women's scenes).
   The cuts that would pay for it need his yes (`TODO.md`, section 2a: Chapter 33's dinner, Chapter 4, Chapter 20).
 - What is waiting on CT is the top of `TODO.md` and its section 2a. The structure and gate for the next build:

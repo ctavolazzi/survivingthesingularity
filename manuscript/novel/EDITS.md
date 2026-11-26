@@ -3360,6 +3360,57 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+219. **Chapters 11, 13, 15 and 19: five continuity fixes.** CT (26 Nov): "Yes pelase did the continuity errors." From
+     `STORY-REPORT-2026-11-26.md`, section 6. Words by Claude.
+     - Ch 11: "He carried the amp down the stairs himself, and it went into his mother's barn under a moving blanket"
+       becomes "He carried the amp down the stairs himself. At his mother's he set it on the back porch, and by the next
+       morning she had it out in the barn under a moving blanket". He isn't in the barn in April, so it can be full in
+       Chapter 13. **Invented: Ma is the one who carries it out there.**
+     - Ch 13: "since Monday night" becomes "since Sunday night" (he calls Sunday and gets no answer).
+     - Ch 13, the week of the sale, which ran Friday, Wednesday, Thursday: "On Wednesday he drove into town" becomes
+       "Two days before that, on the Wednesday, he had driven into town"; "David showed up Thursday morning" becomes
+       "David showed up the next morning".
+     - Ch 15: "He had not opened the case since the last gig." becomes "He had hardly opened the case since the last
+       gig." (he plays it in Chapter 5).
+     - Ch 19: "The cases came from a kid named Tyler. Tyler worked the register at Kowalski's Hardware in town, where
+       Elijah had bought the screw terminals" becomes "The cases came from Tyler, the kid at the register who had sent
+       him out to Praether's. Elijah had been buying the screw terminals at Kowalski's" (he is met in Chapter 17, edit 205).
+     Logged only; not in the v6 Doc yet.
+
+218. **Chapter 39: Devendra's text.** CT (26 Nov): "Devendra could text Elijah after the AGI comes out 'Dinner's on me!'
+     And that would be a good closure in the final chapter before Elijah walks out into the night air." After
+     "No, I didn't." and before "Elijah donned his jacket.": "His phone buzzed against his leg. It was Devendra.
+     *Dinner's on me!*" The text is CT's, italic; the line before it is Claude's. It pays the bet from Chapter 1.
+     Bidwell's "somebody" is never named (CT: "we never need to reveal the somebody"). Logged only; not in the v6 Doc yet.
+
+217. **Chapter 37: the arms are at Praether's.** CT (26 Nov): "Resolve the contradiction because the arms should be in
+     Praether's barn." "All that was left were two robot arms in the back of the equipment shed." becomes "All that was
+     left were two robot arms in Richard Praether's pole barn." Row 178's check was narrowed. Logged only; not in the
+     v6 Doc yet.
+
+Corrected in place, 26 Nov (eighth chat), on CT's eight choices (none of it in the Doc):
+- Edit 204: the October night is its own chapter, "Pondwater" (CT: "title it 'Pondwater'"), set as a heading with no
+  number, like "Meanwhile", so Chapters 27 to 39 keep their numbers; it is in the Contents after Chapter 26. On the
+  blanket: "We should start a band" (Claude), "We should call it Pondwater!" (CT's line), they laugh, and it turns
+  tender. Then Grace on her father, from CT's words, put in her mouth: "He started drinking when I was in high school.
+  Then it was harder stuff than drinking. I made a lot of weird choices back then. I was a little festy girl." and
+  "He's still on that porch. Numb. Barely himself anymore. The father who raised me is gone. The one I love, the one I
+  grew up admiring. What's there now is a husk, a shell, a container for my father's soul. I grieved him and let go of
+  him a long time ago." Then "That was all she said about it." (CT: "That's all she really needs to say about it").
+  After Marta's "Don't make me sorry.": "He had dated a few festival girls in the past. That hadn't exactly gone so
+  well for him. But Grace seemed like she had it all together." (CT's words). "practically a parade" (used of Marta in
+  Chapter 19) becomes "a blessing".
+- Edit 204, Praether at his mailbox (CT: "yes gulf war vet"): after "So did ours, the first year." he holds up an
+  envelope: "They gave us pills in ninety-one and said take them. Then they blew an ammo dump upwind of us, full of
+  nerve gas, and wrote and told me about it six years later. They still write." "Real polite letters." Claude's
+  words. Sourced: pyridostigmine bromide pills under an FDA waiver (January 1991); the Khamisiyah demolitions (4 and
+  10 March 1991); the Defense Department's letters to veterans (1997, again in 2000). Chapter 17's speech stays as it
+  was, so the VA letter is still the reveal.
+- Edit 198, the truck stop (CT: "yes. Fix it for nothing thank you."): after "The money for Ma's room was for Ma's
+  room.": "Ahead of him were seven hundred miles with nobody on them. Behind him were a hundred, and a man who would
+  fix it for nothing." Claude's words. **Invented: seven hundred miles left to go** (the book puts him about a hundred
+  miles south, past Yakima).
+
 Corrected in place, 26 Nov (eighth chat), on CT's direction about the two rovers (his words in
 `PLAN-CHAPTERS-20-TO-36.md`, section 10.8; none of it in the Doc): edit 204, the rover is a JetAuto Pro, the smaller and
 cheaper of two, bought on Lupe's "Could I pick it up?", and Curtis and Elijah program it together (Ch 26; "parked at the

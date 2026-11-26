@@ -3192,6 +3192,41 @@ and a big moment is told as a list of events; CT asked only to be made aware of 
    "He". Eight proposed changes were given to CT in chat on 25 November and not logged.
 
 
+## The counting pattern, swept 26 Nov (not logged; waiting on CT)
+
+CT, after edit 196: "Don't do the pattern. He read it twice, then he wrote back." Then: "it's boring and repetitive.
+Send out some readers and find other instances of that pattern." A script listed 75 candidates; two readers judged
+them and found about 70 more by hand. Line numbers are make_v6.py's v6.txt with edits 1 to 196. "(logged)" means the
+line came in through an earlier logged edit, CT's words or Claude's.
+
+Chapters 0 to 19 (36): 72 underlined it twice / Then he'd gone back to nodding; 216 David "a second longer than he
+needed to. Then he went to change a keg" (and 1816 Curtis, the same move, logged); 227 left the tower off for a week.
+Then (logged); 332 Then he watched it again (logged); 341 Then he sat very still; 370 Then he needed energy figures;
+404 Then he came back, put on the drugstore glasses; 467 Then he opened the band chat; 469 Then he sent it to the other
+two chats; 485 Elijah read that one twice, and "Then there was a paralegal ... Then a guy"; 487 watched it four times
+looking for the lie; 587 forty-eight dollars. Then he went in; 661 Then he asked about the farm; 685 Then he thought
+about Wes; 995 Then he typed Working (logged); 1140 Then David looked back down; 1142 Then he started the truck; 1262
+Then he watched it; 1265 Then he thought about the comments; 1283 Then he played the voicemail; 1313 He read it twice
+with the door open; 1314 Then he put the phone face down (logged); 1329 Then he looked at Elijah for a while; 1406 Then
+he went into the coat one more time; 1436 Three, four, five times he read it (logged); 1453 He read the last three
+words again (logged); 1472 Then he snorted (edit 188, CT's pick); 1498 Then she picked up a push broom; 1633 Then she
+set it down on the tailgate; 1640 Then she went back to her bench (logged); 1725 Then he put the phone on Do Not
+Disturb (logged); 1739 She read the order twice (logged); 1755 Then he remembered his training (logged); 1808 Then
+Grace came back alone (logged).
+
+Chapters 20 to 36 (37, fixed as part of the rewrite): 1974, 1976, 2009, 2017, 2047, 2139, 2177, 2196, 2237, 2262,
+2289, 2326, 2393, 2442, 2443, 2505, 2509, 2516, 2527, 2531, 2542, 2551, 2553, 2592, 2701, 2720, 2740, 2796, 2839, 2846,
+3000, 3028, 3056, 3097, 3157, 3187, 3216. Also repeated there: "a split of oak" (2139, 2261, 2701) and "Neither of them
+said anything for a while" (2177, 2262, 3187).
+
+Chapter 37 to the Epilogue (16; CT loves the ending, so lightest touch): 3334 Then he carried it back; 3408 Then he
+turned back a page; 3437 Then he laid one more place; 3445 Then everyone had one in their hand; 3476 Grace had read
+hers twice; 3543 and 3667 "Then Grace did" / "Then one of them did" (a pair; Claude: keep); 3544 Then she pulled the
+blanket off; 3550 and 3671 "Then she reached out" (a pair; Claude: keep); 3577 Then he slid the four ones back; 3623
+He read it again, slower (Claude: keep); 3632 Then he typed, Can't this time; 3647 Then he thought of Manny's well
+(also line flag 57); 3668 Then a face filled the screen; 3678 Then he took the book out of his jacket; 3693 Then he
+played something else (Claude: keep).
+
 ## Needs CT (answered)
 
 Settled by CT on 2026-11-25: keep edit 5 ("chasm"), keep edits 14 and 56 (David's line), keep edit 9 ("first month

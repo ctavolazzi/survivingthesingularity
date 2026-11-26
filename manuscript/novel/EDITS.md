@@ -3530,33 +3530,51 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      on the farm before Chapter 38; reasons in the record). Record: `manuscript/novel/drafts/edit-228-lou-comes-in.md`.
      Logged only; not in the v8 Doc yet.
 
-229. **Chapter 27: Curtis and the Riemann hypothesis, at Friday dinner.** CT (26 Nov, dictated): "this is the one
-     that will really make it click for anybody who's out of the loop. The Riemann hypothesis ... Curtis can bring it
-     to everyone's attention because that's kind of his role ... they're all just chilling. It's a normal day. And this
+229. **Chapter 27: Curtis and the Riemann hypothesis, at Friday dinner; RSI; Grace's promise.** CT (26 Nov, dictated in
+     two messages; the second extends the first, and replaces its last line in place). First: "this is the one that
+     will really make it click for anybody who's out of the loop. The Riemann hypothesis ... Curtis can bring it to
+     everyone's attention because that's kind of his role ... they're all just chilling. It's a normal day. And this
      doesn't need to be a new section or a new chapter or anything. This can be worked into an appropriate spot ... it
      can go in the proper timeline in the book with real life ... the fact that it shocks Marta makes the others kind
      of snap in. Because Curtis is a wingnut. But there can be a moment where they really lock in because Marta's
-     shaken. And Priya asks Marta, because she respects her opinion, Marta, what does this mean? It means AI is better
-     than humanity at math." Where: after "He'd never answered David ... he didn't know how to start.", before
-     Thanksgiving 2026. The real announcement was Friday, 20 November 2026, the Friday before Thanksgiving, so it is
-     that week's Friday dinner. No scene break. His words: every line of dialogue except the three named below, the
-     chorus paragraph, "Curtis was a wingnut", "Marta was shaken", the hand wave. Who says the lines he left open is
-     Claude's choice: Grace ("what does that mean"), Frank ("those of us that don't speak math"), Denny ("why are you
-     freaking out", "What is that?"), Tyler (cryptography and bank accounts). Claude's wording: the opening paragraph;
-     "Curtis hadn't sat back down."; "Curtis went right past him."; "That was Marta, from the far end of the table.";
-     Tyler's "Perelman. Russian guy. Twenty ten. He literally said no to a million dollars."; "and she stopped there";
-     "and the table had learned to eat through his headlines"; "Sentences didn't get left unfinished when they were
-     hers. The forks stopped."; "There was nobody at that table whose opinion she respected more."; "She thought for a
-     second."; the last line (Lou laughs, Marta picks her fork back up). Facts looked up, 26 Nov (web search; the
-     articles themselves could not be opened from this session): an Anthropic mathematician announced on 20 Nov 2026 a
-     proof found with an unreleased model, checked by computer and certified the next day; mathematicians have not yet
-     read it through and the prize institute still lists the problem as open; the problem dates from 1859; OpenAI
-     announced a Navier-Stokes solution on 8 Sep 2026 (NPR, 22 Sep), used for CT's "the Neumann flow or whatever";
-     Grigori Perelman turned down the million in 2010 (Poincare conjecture). A proof of it does not break
-     cryptography, which is Marta's "not exactly". The book names no real lab, so neither does the scene. Forced by
-     it: "Thanksgiving came two weeks after that." becomes "Thanksgiving came the week after." (row 222 narrowed; row
-     229 checks the new words). 543 words in, 6 out. Record: `manuscript/novel/drafts/edit-229-riemann.md`. Logged only; not in the
-     v8 Doc yet.
+     shaken." Second: "And then maybe Marta can explain, and it always will ... Elijah's going to think to himself, so
+     it can do everything I did at Claypot and more. And maybe one of the more naive people, like younger, whoever's
+     there that's the youngest ... And then Elijah speaks up. It means we're one step, well, more like one giant leap
+     closer to RSI ... Elijah's like a little suspicious of their naivety from that point forward ... I feel like this
+     is kind of a linchpin scene for what happens later with the ASI sort of like all of a sudden existing." Then the
+     talk with Grace, which he chose over giving the Will Smith line to Curtis ("I think it would be better if it was
+     that"), through "I promise" and "thank you, I believe you."
+     Where: after "He'd never answered David ... he didn't know how to start.", before Thanksgiving 2026. The real
+     announcement was Friday, 20 November 2026, so it is that week's Friday dinner. No scene break.
+     His words: every line of dialogue except the ones named below; the chorus paragraph; "Curtis was a wingnut";
+     "Marta was shaken"; the hand wave; Elijah's two thoughts; the room going silent; the twinkle; people grumbling and
+     walking off; "That was how people had been reacting so far ..." to the end of that paragraph; "She got it, but she
+     didn't totally get it."; taken aback, the furrowed brow; both bodies tensing; the gesture at the notebooks; the
+     hands, the forehead, the hair. "I don't like doing my homework" is left out: he restated it as "I don't like doing
+     math problems."
+     Claude's choices: who says the lines he left open. Grace ("what does that mean"), Frank ("those of us that don't
+     speak math"), Denny ("why are you freaking out", "What is that?"), Tyler (cryptography and bank accounts). The
+     youngest at the table is Tyler, so the "who cares" lines, "RSI?", the video game and GTA 6 are his; Chapter 26
+     already has him working something out and never saying a word, and Chapter 38 has his "Finally."
+     Claude's wording: the opening paragraph; "Curtis hadn't sat back down."; "Curtis went right past him."; "That was
+     Marta, from the far end of the table."; Tyler's "Perelman. Russian guy. Twenty ten. He literally said no to a
+     million dollars."; "and she stopped there"; "and the table had learned to eat through his headlines"; "Sentences
+     didn't get left unfinished when they were hers. The forks stopped."; "There was nobody at that table whose opinion
+     she respected more."; "She thought for a second."; "Lou laughed so hard he had to put his cup down. Marta didn't
+     laugh."; "He meant recursive self-improvement, a machine that could do the math to build a better machine." (the
+     book spells the idea out once, in Chapter 3, and never uses the letters RSI); "Heads shook up and down the table."
+     and "somebody said"; "But Tyler went right back to it."; "Grace stayed behind after the rest had gone. She had
+     questions."; "these dishes" in Grace's last line (he left the next thing open).
+     Facts looked up, 26 Nov (web search; the articles themselves could not be opened from this session): an Anthropic
+     mathematician announced on 20 Nov 2026 a proof found with an unreleased model, checked by computer and certified
+     the next day; mathematicians have not yet read it through and the prize institute still lists the problem as
+     open; the problem dates from 1859; OpenAI announced a Navier-Stokes solution on 8 Sep 2026 (NPR, 22 Sep), used for
+     CT's "the Neumann flow or whatever"; Grigori Perelman turned down the million in 2010 (Poincare conjecture); GTA 6
+     came out on 19 Nov 2026, the day before. A proof does not break cryptography, which is Marta's "not exactly". The
+     book names no real lab, so neither does the scene.
+     Forced by it: "Thanksgiving came two weeks after that." becomes "Thanksgiving came the week after." (row 222
+     narrowed; row 229 checks the new words). 1,049 words in, 6 out. Record:
+     `manuscript/novel/drafts/edit-229-riemann.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

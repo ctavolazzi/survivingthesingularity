@@ -1,11 +1,10 @@
-# Edit 229: Curtis and the Riemann hypothesis, at Friday dinner (Ch 27)
+# Edit 229: Curtis and the Riemann hypothesis, RSI, and Grace's promise (Ch 27)
 
-26 November 2026. Source: CT's dictation of that day (quoted in `EDITS.md`, edit 229). 543 words in, 6 out. Logged
-only; not in the v8 Doc.
+26 November 2026. Source: CT's two dictations of that day (quoted in `EDITS.md`, edit 229). 1,049 words in, 6 out.
+Logged only; not in the v8 Doc.
 
-The lines of dialogue are CT's, smoothed only where dictation broke, except Tyler's Perelman line. The narration
-between them is Claude's except "Curtis was a wingnut", "Marta was shaken", the chorus paragraph and the hand wave.
-The full split is in `EDITS.md`.
+The lines of dialogue are CT's, smoothed only where dictation broke, except Tyler's Perelman line and "these dishes".
+Which narration is his and which is Claude's is listed in `EDITS.md`.
 
 ## Added in Chapter 27, after "...and he didn't know how to start."
 
@@ -57,7 +56,79 @@ A chorus of voices came back at her. That can't be true. No, there's still this.
 
 "Yeah," Curtis said. "AI's doing a kickflip with math right now."
 
-Lou laughed so hard he had to put his cup down. Marta picked her fork back up.
+Lou laughed so hard he had to put his cup down. Marta didn't laugh.
+
+"And it always will," she said. "From this point forward, it's reasonable to assume that artificial intelligence will always be better at math than humans."
+
+So it can do everything I did at Claypot and more, Elijah thought.
+
+"So what? Who cares?" Tyler said. "It's good at math. Isn't that a good thing? I hate math. I don't like doing math problems. Isn't it good if that's solved?"
+
+Elijah spoke up. "It means we're one step, well, more like one giant leap closer to RSI."
+
+The whole room went silent. He meant recursive self-improvement, a machine that could do the math to build a better machine.
+
+"RSI?" Tyler said.
+
+Heads shook up and down the table. "Oh my God," somebody said.
+
+"What? Come on. What is that, like a video game?" Tyler looked at Elijah with a twinkle in his eye.
+
+Oh wait, Elijah thought. Does he know?
+
+But Tyler went right back to it. "What? Who cares? GTA 6 is awesome. The physics are really good. Why is this a bad thing?"
+
+People got up grumbling. They walked off to go think about it, and also just to get back to what they'd been doing.
+
+"I gotta get back to work," Priya said.
+
+That was how people had been reacting so far. I gotta get back to my job. I can't think about this. But Elijah knew. And now he suspected Tyler knew too, more than he was letting on.
+
+Grace stayed behind after the rest had gone. She had questions. She got it, but she didn't totally get it.
+
+"One moment it can't do video at all," Elijah said. "And the next moment we've got photorealistic Will Smith eating spaghetti."
+
+"Okay, but isn't that dangerous?"
+
+"I mean, only if people use it wrong."
+
+Grace scoffed. "Elijah, when have people ever used things right the first time?"
+
+"Yeah, I know, but this is different. This is something where on the table is curing all disease, is solving so many problems."
+
+"Oh, come on. You don't actually believe that, do you?"
+
+Elijah was taken aback. He furrowed his brow, confused. "I staked my life on it."
+
+Grace got tense. Both of their bodies tensed up, and their shoulders went up.
+
+"Elijah."
+
+"Grace."
+
+"Don't tell me you drank the Kool-Aid while you were there at Claypot."
+
+"Not exactly, but," he said, and gestured to his notebooks. "I am sort of working on a book about this."
+
+"Look." She took him by the hands. "I care about you so much. Please tell me that no matter what happens, you'll put people first."
+
+"Of course."
+
+"No, I mean it. I'm serious."
+
+Elijah was still a little confused, still a little lost.
+
+"Babe," she said. "Please promise me, no matter what happens, you will put humans first."
+
+"Grace, I'm already doing that."
+
+"No. Promise me."
+
+He looked at her, and she looked at him.
+
+"I promise."
+
+She smiled. She kissed him on the forehead and tousled his hair. "Thank you. I believe you. Now, do you want to help me with these dishes?"
 
 ## Changed
 

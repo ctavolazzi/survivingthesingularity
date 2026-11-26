@@ -31,16 +31,15 @@ words are in **bold**. Everything else in a NEW passage is Claude's. KEEP passag
 
 ## Scene one: the letter (NEW)
 
-Sunday nights were for Ma now: a letter on a yellow pad, because the aide said she liked having something to hold.
-The beds went in, and the weather, and the stove. According to Lou it had been a decent year for squash, and Lou didn't
-say that about anything. The room at the rose garden was paid through March. That part stayed off the page.
+Sunday nights he wrote to Ma on a yellow pad, because the aide said she liked having something to hold. This letter
+had the beds in it, and the first frost, and the stove in the shouse. Lou thought it had been a decent year for squash.
+The room at the rose garden was paid through March, and the letter left that out.
 
-Grace came in without knocking, the way everybody did by then, and sat down on the table he used for a desk, right on
-top of the letter.
+Grace came in without knocking and sat down on the table he used as a desk, on top of the letter.
 
 "You're on my letter."
 
-"I know." The letter stayed under her. "I want to bring your pay to the table Friday."
+"I know. I want to bring your pay to the table Friday."
 
 "No."
 
@@ -48,37 +47,35 @@ top of the letter.
 
 "I know you did."
 
-"So let me be good for it." Her head tipped down to catch his eye. **"Why are you acting this way?"**
+"So let me be good for it." **"Why are you acting this way?"**
 
-**"Because I just,"** he said, and stopped to scratch his head. A slow breath in through the nose, and out. With the
-next one his hand went up, took a fistful of hair on top of his head and held on.
+**"Because I just,"** he said, and stopped. He scratched his head and pulled a long breath in through his nose. On the
+way out, his hand went up and took hold of the hair on top of his head.
 
 **"I've lost a lot of people who were important to me, okay? I've been through a lot. Finishing this book is really
 important to me. You are really important to me. This farm is really important to me. These people are really
 important to me."**
 
-The one in the middle landed. Elijah watched her decide not to say so.
+Grace's hand stopped halfway to her braid.
 
 **"So then why can't you just"** let me bring it to the table?
 
 **"Because it's just,"** he said. **"It's not fair."**
 
-Grace slid off the table, stepped back and crossed her arms. **"Fair to who?"**
+She slid off the table, stepped back and crossed her arms. **"Fair to who?"**
 
-Out the window, past the shop, the north houses had their lights on. One of them still had a greenhouse standing
-empty from July.
+Through the window the north houses had their lights on. One greenhouse up there had stood empty since July.
 
 **"I don't know. Don't worry about it."**
 
 **"You're almost forty, and these are your conflict resolution skills?"**
 
-His jaw set. On the table between them the pad said Dear Ma in his own handwriting, and the words he had ready stayed
-in his mouth.
+His jaw set. The pad between them still said Dear Ma at the top. He looked at it and let his breath go.
 
 **"Grace."** He took her hands. **"Look, I'm sorry, okay? I'm sorry. Do you want to go into town and get ice cream?"**
 
-That lit her up, though she tried not to let it. Narrowed eyes told him she was still mad. The corner of her mouth didn't get the
-message.
+She lit up and tried to hide it. She squinted at him, hard, so he would know she was still mad, and grinned a little
+anyway.
 
 **"I want frozen yogurt."**
 
@@ -86,22 +83,19 @@ message.
 
 ## Scene two: town (NEW, with the book's lines from the kitchen trailer)
 
-The frozen yogurt place in Ardell shared a wall with the laundromat and smelled a little like both. Grace got the tart
-kind, buried it in mochi and gummy bears and ate it walking; the napkins were his job. Since the wash station needed a
-hose clamp, they walked it off down to the square, to Kowalski's, under the bell.
+The frozen yogurt place in Ardell was next to the laundromat. Grace got the tart kind with mochi and gummy bears on
+top and ate it on the sidewalk. The wash station needed a hose clamp, so they walked down to the square, to Kowalski's.
 
-It was a Saturday, so Tyler was on the register. Saturdays were all he had left.
+Tyler was on the register. Since August he had only worked Saturdays.
 
-"You guys need anybody?" Tyler asked the screen while he rang up the clamp. "Out at the shed. I'd do it for gas money."
+"You guys need anybody out at the shed?" Tyler said, ringing up the clamp. "I'd do it for gas money."
 
 "We don't pay anybody, hon," Grace said. "We're working on it."
 
-Elijah was already in the fastener aisle, which nobody had needed to show him. In front of the gap where the hose
-clamps used to be, and the gap beside it, his face didn't change at all, and that didn't get past her.
+Elijah had already walked to the fastener aisle. He stopped in front of the empty hooks where the hose clamps used to
+hang, and the empty hooks next to them, and looked at them with no surprise at all. Grace was watching his face.
 
-It kept until the truck.
-
-"You knew."
+In the truck she said, "You knew."
 
 "Since spring."
 
@@ -112,34 +106,28 @@ It kept until the truck.
 "So you let him go through it by himself." She pointed the spoon at him. "You knock, Elijah. He gets to slam it in
 your face. That part's his. But you knock."
 
-Through the windshield Tyler was taping a sign to the inside of the door. HOURS, it said, and under it a strip of
-fresh tape over the old ones.
-
-Who it wasn't fair to, she didn't ask again.
+Through the windshield they could see Tyler taping a new HOURS sign to the inside of the door.
 
 ---
 
 ## Scene three: the pond (NEW; CT's scene)
 
-The last of the forty went out the second week of November. Every board in them was his now, laid out by hand, with
-room left around the part that had cooked a greenhouse in July. Denny drove the last box to a grower outside Wenatchee
-in an apple crate. As the truck went down the gravel, Elijah went and got his duffel.
+The last of the forty boxes went out in the second week of November. Elijah had laid out every board in them by hand,
+with room around the part that overheated in July. Denny drove the last one to a grower outside Wenatchee. Once the
+truck was gone, Elijah packed his duffel.
 
-Packing waited until dark, so nobody would have to watch. Afterward he walked out to the pond, the one place on the
-forty acres where he had never fixed or broken anything.
+When it was dark he put the duffel in the Ranger and walked out to the pond. The frogs had gone quiet weeks ago.
+Geese were going over, south, calling to each other.
 
-The cold had sent the frogs down into the mud weeks ago. Somewhere up in the dark a line of geese was going south, talking to
-each other the whole way.
+Grace found him there. She had seen the duffel in the truck.
 
-Grace found him there. The duffel in the truck had told her, and she didn't mention it.
-
-"It's heat," he said, with his back to her. "The first thing I ever learned about a machine, the first thing, was
-heat. I cooked a tower in my apartment over it. I should have caught it. I should have tested it in a sealed box in the
-sun. I should have laid out that board myself. I should have."
+"It's heat," he said, with his back to her. "The first thing I ever learned about a machine was heat. I cooked a tower
+in my apartment over it. I should have caught it. I should have tested it in a sealed box in the sun. I should have
+laid out that board myself. I should have."
 
 "Elijah."
 
-"Then the journal. Then Frank." Now he turned. **"You guys need somebody better than me. You need somebody more
+"Then the journal. Then Frank." He turned around. **"You guys need somebody better than me. You need somebody more
 qualified than me."**
 
 "You went and told him. Frank. You walked in there with the chart."
@@ -148,26 +136,25 @@ qualified than me."**
 
 "I tell everybody to. Nobody does."
 
-Grace grabbed the front of his jacket. **"You can't leave."**
+She grabbed the front of his jacket. **"You can't leave."**
 
 **"Why?"**
 
-Her face screwed up, and her arm gave a furious little shake at the end of it, like she was trying to get water off
-her hand. Both hands came up to his face, and she kissed him.
+She made a face at him and shook her arm out hard, as if she were flicking water off her hand. She took his face in
+both hands and kissed him.
 
-When she let go, he was still standing exactly the way she had found him, his hands out a little from his sides.
+He stood there with his hands out from his sides.
 
 **"There,"** she said. **"Now if you leave, at least I got to do that."**
 
-Off she went, fast, back up toward the lights. Halfway to the gravel she yelled over her shoulder,
-**"I really hope you don't, though."**
+She walked off fast toward the lights. Halfway to the gravel she yelled over her shoulder, **"I really hope you don't,
+though."**
 
-A few steps on, she half turned and kept going backward so she could see him. **"I really hope
-you stay."**
+A few steps later she turned halfway around and walked backward so she could see him. **"I really hope you stay."**
 
-Around she turned again, with a little hop and a kick nobody was supposed to see, and was gone over the rise.
+Facing forward again, she gave a little jump and a kick and hurried up over the rise.
 
-Elijah stood at the edge of the pond. The geese were still going over, somewhere up there in the dark.
+The geese were still going over. Elijah stayed at the edge of the pond and listened to them.
 
 **[CT: a line here for what he feels, if you want one.]**
 
@@ -175,11 +162,11 @@ Elijah stood at the edge of the pond. The geese were still going over, somewhere
 
 ## Scene four: Thanksgiving (NEW; CT's scene)
 
-Two weeks went by, and nobody said a word about the pond, least of all the two people who had been at it. The duffel
-went back under the cot. On the Wednesday before Thanksgiving it came back out.
+Two weeks went by. Grace didn't bring up the pond, and Elijah didn't either. The duffel went back under the cot. On
+the Wednesday before Thanksgiving he took it out again and told everyone he was driving down to see his mother.
 
-To see his mother, he told everyone. The keys were in his hand when Lou came up from the beds and sat down on the
-shouse step, slowly, for the knee.
+He was by the truck with his keys when Lou came up from the beds and sat on the shouse step, slowly, because of the
+knee.
 
 **"What are you going for?"**
 
@@ -187,7 +174,7 @@ shouse step, slowly, for the knee.
 
 **"I mean, is it?"**
 
-Elijah looked at him.
+Elijah stared at him.
 
 **"What do you mean?"**
 
@@ -195,7 +182,7 @@ Elijah looked at him.
 
 **"Yeah, but she can still recognize me. She still knows that I'm there."**
 
-Lou looked at the gravel between his boots.
+Lou looked down at the gravel.
 
 **"Does she?"**
 
@@ -203,54 +190,50 @@ Lou looked at the gravel between his boots.
 
 **"All right,"** Lou said.
 
-Curtis had the Ranger's door open and was leaning in over the seat, reading the dash like a newspaper. "Light comes
-back on, you call me," he said. "Don't you dare call a dealer." He shut the door. "Hose is in the glove box."
+Curtis was leaning in the open door of the Ranger, reading the dash. "Light comes back on, you call me," he said.
+"Don't you dare call a dealer. Hose is in the glove box."
 
-Up at the kitchen trailer, somebody stepped back from the window.
+Someone in the kitchen trailer stepped back from the window.
 
-About a hundred miles out, somewhere south of Yakima, the check-engine light came on again, small and orange and
-patient, like it had been waiting for him.
+About a hundred miles south, past Yakima, the check-engine light came on.
 
-The next exit was a truck stop, the big kind, with a diesel island and a restaurant and a sign by the door
-that said SHOWERS, and a price.
+He pulled off at the next exit, a truck stop with a diesel island, a restaurant and a sign by the door that said
+SHOWERS. He parked at the far end of the lot and left the engine running.
 
-At the far edge of the lot, engine running, he did the arithmetic. Curtis's hose was in the glove box, and there was
-no way to know if this was two dollars of hose or twelve hundred dollars and a week. Gas down, gas back, food: that
-much he had. A tow, no. The money for the room by the window was the room by the window, and it stayed where it was.
+The light could mean two dollars of hose or twelve hundred dollars and a week at a dealer. He had enough money for gas
+there and back and for food. He did not have enough for a tow. The money for Ma's room was for Ma's room.
 
-The arms, if anyone had ever bid on them. The Telecaster in the window on Fourth Street, if he had the money to get
-it out, and a corner somewhere to play for tips. Something he could make and put on his page.
+He went through what he could sell. Nobody had ever bid on the arms. His Telecaster was still in a pawnshop window on
+Fourth Street, and he couldn't afford to get it out. He could make something and post it on his page and wait.
 
-Across the lot the sign still said SHOWERS. In Stockton it had been seventeen dollars, counted out at a counter in
-ones.
+The sign by the door said SHOWERS. In Stockton a shower at a place like this had cost seventeen dollars, and he had
+paid it in ones.
 
 It was too big a risk.
 
-**A single tear slipped out of his eye.** The truck went into drive. A U across the empty end of the lot, and he was
+**A single tear slipped out of his eye.** He put the truck in drive, made a U-turn across the empty end of the lot and
 headed back north, **disappointed in himself for a whole bunch of reasons.**
 
 &nbsp;
 
-The kitchen trailer was lit when he came up the gravel, and full, because Thursday was a dinner for forty and somebody
-had to peel it. Tyler saw the truck first.
+The kitchen trailer was lit when he came up the gravel. Thursday was dinner for forty, and the peeling started on
+Wednesday night. Tyler saw the truck first.
 
 **"We thought you were going home."**
 
 "So did I."
 
-Grace was at the counter with a rolling pin. One look up, one look back down, and the dough got rolled a lot harder
-than dough needs. Her face did what it wanted anyway.
+Grace was at the counter rolling out dough. She looked up when he came in, then down at the dough, and rolled it
+harder. She was smiling and trying not to.
 
-Marta, by the coffee, watched Grace do that.
+Marta saw it from the coffee pot. Lou saw it from the sink, where he was peeling potatoes. He looked over at Marta,
+and Marta looked back at him, and he went back to the potatoes.
 
-Lou, at the sink with the potatoes, watched Grace do that too. He looked over at Marta, and Marta looked back at him,
-and Lou went back to the potatoes like a man who has just watched the weather come in the way he said it would.
-
-Later, on the trailer step, with the cold coming down and the dishes done, Elijah sat down one step below her.
+After the dishes, Elijah sat on the trailer step, one step below Grace.
 
 "Friday," he said. "Bring it."
 
-She knew what, and didn't make him say the rest.
+"Friday," she said.
 
 ---
 
@@ -261,7 +244,8 @@ She knew what, and didn't make him say the rest.
 - **The truck:** left open. The light comes on and he never finds out if it was nothing. Your call.
 - **Lines other chapters owe this one:** Elijah telling Lou that all she says is Barry (Ch 20); the heat failure, the
   greenhouse "standing empty from July", and the forty boards redone by hand (Ch 21 and 22).
-- **Checked:** no "He read it twice"-type counting; no "It's not X. It's Y."; no "Then he" step-walking except where
+- **Checked against the tic list (draft 3):** no inversions, no quips that close a paragraph, no stacked fragments, no
+  "the way" or "like a man who" comparisons, no named feelings except yours; no "He read it twice"-type counting; no "It's not X. It's Y."; no "Then he" step-walking except where
   the beat is the point; Ma's calls untouched; he is thirty-seven ("almost forty" is her needling him).
 - **Length:** the four new scenes add about 1,700 words. Marta's scene and the amp night move to Ch 26 rather than
   leaving the book, and the stove kiss (about 300 words) comes out. The book grows by about 1,400 words here.

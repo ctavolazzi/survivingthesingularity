@@ -102,6 +102,68 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   of his, and stayed"). Marta's matchmaking is one line right after it ("she'd told Grace the same week that the
   spreadsheet had a soft spot for old music"). The pond appears in Chapters 9, 18 and 37, never with the two of them.
 
+### The plan for Chapter 20 to the end (Claude's draft, 26 Nov; nothing logged, waiting on CT)
+
+Made from five readers' passes over make_v6.py's v6.txt (setups and payoffs, Elijah's arc, the co-op cast, moments
+told instead of shown, relationships), every anchor grep-checked. Their verdict on CT's question: the personal threads
+mostly land (David and the bar, "Barry", the amp, the coupon that "became the steel", Curtis's fence, Rosa), and
+Chapters 37 to 39 carry weight. It still reads as a series of events because (1) Chapters 20 to 30 are separate lessons,
+each solved inside its chapter and ending on a notebook line; (2) the late payoffs are handed to Elijah by someone else
+(David, Devendra, Lou); (3) outward threads go quiet (Bidwell's planted "somebody", the bet, the board secret, the
+route's January, Marta's welder gap). Cast: Priya has a role, not an arc; Curtis's arc is good but undone in one line in
+Ch 34; Lou lands through a job or a joke and turns into a lectern in Ch 33 and 35, is never wrong at a cost, and shapes
+only Elijah and Curtis; Wren, Reuben and Denny are flat; dialogue works short and in a trade, is forced as a thesis.
+
+**Spine (Claude's proposal, CT to decide):** one running problem from Ch 20 to about Ch 30 that the co-op gets wrong
+before it gets right: the forty controllers go bad in the field. The failing part is the board Elijah made with an AI
+(Ch 19); Tyler knew; Patricia is the customer; Marta's "zero people can fix it" is the problem; Curtis, Priya, Denny and
+Lou each argue it their own way and are each partly wrong (CT: "characters ask each other questions ... other
+characters interject to correct things that are wrong, but be wrong about things as well").
+
+**Threads, each a small set of edits (replace telling with a scene; the book doesn't get longer):**
+A. The board secret comes due. Ch 22: the one-clause confession becomes a choice ("because Tyler was standing at the
+   back") and gets reactions: Curtis "Twice", Tyler "It said so in the file", Grace "And the board. In front of that
+   kid." Feeds the spine.
+B. Grace and Elijah. Marta's nudge grows across chapters (now one line, end of Ch 24); first kiss at the pond (CT);
+   Ch 31: the morning after on the page, Grace choosing "Nothing that mattered", Elijah telling her "I'm not okay";
+   Ch 37: the lamp makes him hear "You're the lamp"; Ch 39: Grace on the "could" side (he can knock, and let her slam it).
+C. Lou fallible. Cut the Ch 35 night sermon to the walnut, "The man who refuses to launch it" and ALC; Grace to Lou in
+   Ch 38, "He got that from you"; on the step in Ch 37, "I told you people change their own. I didn't tell you to quit
+   showing up while they did."
+D. Members against each other. Ch 38: Grace and Patricia ("I'm the one who asked Tyler"); Ch 34: Curtis, "He's on this
+   side of the fence. His friends aren't."; the free-files vote's bill (Ch 27 Grace and Frank; Ch 38 Curtis to Marta,
+   "Ship them, you said", and Priya's margin note costs her); Ch 38: Wren, "It had mine too. Nobody thanked me."; Tyler
+   and Wren at Thanksgiving; Ch 37: Marta, "I told you not to make me sorry", and she steps out of the door; Ch 26:
+   Grace, "He asked it looking at me."
+E. Elijah closes his own threads. Ch 33: "I sold it to them" (pays FOUNDER HIDES THINGS; Reuben); Ch 37: the uncashed
+   checks endorsed to the route; Epilogue: Marta gets "They ate"; the bet paid with Devendra's lamb photo and the rubber
+   band off the first notebook; a copy at the desk for M. Madrone; Ch 39: David's forgiveness after the apology, not
+   before; one line to Denny ("I forgot your warehouse").
+F. On the page, not summary. Festival week (Elijah picks Lou's squash row; "Guy with arms"); the hour of Ray's
+   funeral passing (Ch 22); Tyler's yes to the apprenticeship (Ch 29); the land trust closing with Lou there (Ch 23);
+   the morning Tyler loses his job (Ch 25); Devendra's call reaching Ma (Ch 37).
+G. Dropped threads. Bidwell's "somebody" folded into Devendra ("They asked me to keep calling you. I'd have called
+   anyway."); the Hollis cousins kept or cut; the route's January answered in Lou's picture in the Epilogue; Marta's
+   welder gap closed at "It became the steel"; the manuscript seen being written once.
+H. Repetition cut. Ch 28 node lesson (repeats Ch 22); the resentment that lands twice (Ch 31 and 34); the Ch 39
+   can/can't list and the lines that explain what the actions already show.
+
+**Line flags, Chapter 20 to the end** (59 given to CT in chat on 26 Nov; not logged; the ones inside a thread above
+are handled there). Same order as in chat: Ch 20: "She'd eaten his too"; Wren's "call you back". Ch 21: "had been the
+internet". Ch 22: Ray's words "A club soda with a lime"; "the first one they'd read". Ch 23: the power bill "said so";
+"the kitchen-table meeting". Ch 24: "the place were his to run"; "nothing got built only once"; "where no room had
+been". Ch 25: "augmented, not replaced"; paired the phone "so she wouldn't see his hands"; the truck song and the laugh;
+"confessed to it". Ch 26: "spread it in all directions"; inches and centimeters; Lou's "man". Ch 27: Walt's card "two
+lines under"; "pinned it at the paint"; "I'm just saying"; "did the pipes"; Irene's towels. Ch 29: "one he did not
+keep"; Priya's margin note; "Marta or Frank"; "make one finished". Ch 30: "changed more to the rest"; Lou's "man" twice.
+Ch 31: Marta's "I've lost one" (maybe deliberate); Melody's number "could still hear it"; "a year in the city". Ch 32:
+the date "with his initials"; Reuben's "six years". Ch 33: "wrote well"; Wes's "It went to the TV"; "nobody asked the
+three of them"; the empty line under Curtis's name; "Nights at the hospital in Ukiah"; Marta's fence (check her oh-nine
+story); Lou's "Here."; the 50-word hinge sentence. Ch 34: the price list. Ch 35: the steam engine; Lou's "man"; "In the
+same lane"; "this lady". Ch 36: "cross it". Ch 37: "before theirs did". Ch 38: "race her to the rail"; "looked at
+Marta"; "what could be considered a wink". Ch 39: "Marta had heard it as a murder"; "one number blocked"; "a glass went
+down"; "Not for good"; "Manny's well, four feet down"; "a hinge and a gatepost"; "donned".
+
 ### The plan for Chapter 19 (Claude's, written 25 Nov at CT's request)
 
 **Status:** done. CT: "Go on the plan." Edits 131, 132, 133, 135 and 136 below were reworked in place to it, and

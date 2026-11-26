@@ -20,13 +20,14 @@ Change to (one paragraph between them):
 >
 > Out in forty greenhouses two valleys over, the co-op's boxes were opening vents on their own every warm afternoon.
 > Lou had driven six of them out himself and come home with a photo of each one bolted to its post, which he showed
-> people whether they asked or not. Every one of those boxes had Elijah's board inside it, the one an Iowa company's
-> machine had laid out at midnight, and nobody had tested a single one in July yet, because it was May.
+> people whether they asked or not. Inside every one was the board Elijah had let an AI lay out at midnight and told
+> nobody about. It hadn't been hot yet.
 >
 > At noon they sat on the tailgate of Lou's truck and ate Grace's sandwiches ...
 
 Why: the heat failure in Chapter 21 needs the reader to know the boxes are out, that Lou is proud of them, and that
-the board is the secret from Chapter 19. "Because it was May" is the one dry line.
+the board is the secret from Chapter 19. Draft 1 crammed all of it into one sentence and ended on a joke ("because
+it was May"); CT: "What the fuck is that, bro?" Now two plain sentences, and the heat is left for Chapter 21.
 
 ## 2. Ma, and Barry (NEW, after "There you go."; and line flag 1)
 
@@ -72,7 +73,7 @@ Why: the reader had to work out who "somebody" was. Same joke, said straight.
 
 ## Checked
 
-- Openings in the new lines vary (Out in, Lou had, Every one, "Where's she now?", A place, "Barry,"). No counting, no
+- Openings in the new lines vary (Out in, Lou had, Inside every one, "Where's she now?", A place, "Barry,"). No counting, no
   "Then he," no mirrored lines.
 - "The way he'd say the name of a seed he meant to look up" is one "the way" comparison, in Lou's trade.
 - Nothing else in the chapter is on the counting list. The chapter grows by about 120 words.

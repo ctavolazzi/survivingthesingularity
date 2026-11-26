@@ -167,6 +167,10 @@ the third "a little too much". What the one he took does:
   about, not by tricks; cut the extras. So a quip, an inversion or a dry closing line is welcome where it adds levity
   or reads literary, one at a time; never in a heavy moment (shame, grief, the truck stop, the fire), and never as a
   way to dodge a pronoun.
+- One idea per sentence. Ch 20 draft 1 packed the boxes, the AI board, the secret, the missing heat test and a joke into
+  one sentence ("Every one of those boxes had Elijah's board inside it, the one an Iowa company's machine had laid out
+  at midnight, and nobody had tested a single one in July yet, because it was May."). CT: "What the fuck is that,
+  bro?" A quip has to be funny on its own and sit at the end of something light, not ride on the back of a clause.
 - Don't bring back a problem already fixed. The mirrored contrast line ("It's not X. It's Y."; "They can. They just
   won't."; Claude's own "He's on this side of the fence. His friends aren't.", 26 Nov) was edited out in 119 and 174.
   CT: "I don't want you to introduce like previous problems that we've already overcome ... We've already established

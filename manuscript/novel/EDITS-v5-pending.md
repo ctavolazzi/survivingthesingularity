@@ -1939,6 +1939,10 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      his shoulders relax a bit." Change the last sentence to [CT's words]: "Without being conscious of it, his
      shoulders relaxed a few inches." Logged only; not in the v6 Doc yet.
 
+165. **Chapter 17, Marta at the roll-up door: "Musicians."** CT (26 Nov): "'Musicians' the same way you might say
+     termites." Book now: ...and then at him, and said one word, "Musician," the way you'd say termites. Change to [CT's words]: ...and then at him, and said one word, "Musicians," the same way you might say termites.
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

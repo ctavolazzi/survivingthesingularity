@@ -417,6 +417,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 164, Ch 17
 (164, "He noticed his shoulders relax a bit.",
 "Without being conscious of it, his shoulders relaxed a few inches."),
+# 165, Ch 17
+(165, "said one word, \"Musician,\" the way you'd say termites.",
+"said one word, \"Musicians,\" the same way you might say termites."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

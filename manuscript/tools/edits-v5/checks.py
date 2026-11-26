@@ -197,7 +197,7 @@ C=[
 (189,"Ch 18",["Don't let her effort go to waste.\" She straightened up and looked him dead in the eye. \"You waste it, and you and me are going to have a problem.\" She let that sit. \"Soup's on at noon."],["go to waste.\" She straightened up. \"Soup's on"]),
 (190,"Ch 20",["Elijah had no idea. He was a little ashamed of that.\nSo Lou showed him."],["He had a notebook with the wattage of his cable box in it."]),
 (191,"Ch 20",["\"It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique advantages.\"\n\"Such as?\"\n\"Well,\" Lou said. \"Nine people here don't get paid,"],["It doesn't work, man. It's never worked."]),
-(192,"Ch 20",["Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner."],["Elijah thought about his mother, and the pot she never let anyone else wash."]),
+(192,"Ch 20",["Elijah thought about his mother, and the sacred pot she never let anyone else wash that had been burned to a crisp on the back burner."],["and the pot she never let anyone else wash."]),
 (193,"Ch 20",["Not a subscription. I already lost one orchard.\""],["lost one orchard to one buyer."]),
 (194,"Ch 20",["Then I found out a machine wrote it, and I felt like a fraud and like a stranger had helped themselves to the inside of my house.\""],["I felt like somebody had been in my house."]),
 (195,"Ch 20",["That was Wren. She led the Sunday circle and made the candles, and she had painted every wall of the seed house, inside and out, with things that were half heron and half radio tower. She was twenty-four, and one of the best artists most people had ever met."],["That was Wren, who led", "the best artist Elijah had ever met."]),

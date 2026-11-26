@@ -687,7 +687,7 @@ Figures, he thought. I hope they have a good mechanic."""),
 "\"It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique advantages.\"\n\"Such as?\"\n\"Well,\" Lou said. \"Nine people here don't get paid,"),
 # 192, Ch 20: the pot points back to Ch 13
 (192, "Elijah thought about his mother, and the pot she never let anyone else wash.",
-"Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner."),
+"Elijah thought about his mother, and the sacred pot she never let anyone else wash that had been burned to a crisp on the back burner."),
 # 193, Ch 20: Lou, "I already lost one orchard."
 (193, "Not a subscription. I already lost one orchard to one buyer.\"",
 "Not a subscription. I already lost one orchard.\""),

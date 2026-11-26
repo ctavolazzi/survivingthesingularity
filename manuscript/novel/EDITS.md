@@ -2837,13 +2837,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 192. **Chapter 20, after Lou's "Who ate it at your place?": the pot points back to Chapter 13.** CT asked where the pot
      was set up; it is named as hers alone only in Chapter 3, about 200 pages earlier, and burned on the back burner
      in Chapter 13 (how Manny found her). Claude suggested pointing the line at the burned pot. CT (26 Nov): "Her
-     sacred pot burned to a crisp on the back burner." Book now:
+     sacred pot burned to a crisp on the back burner." Corrected the same day, in place (not in the Doc yet), after a
+     reader flagged that the burned pot alone pictures her decline, not her paying for the farm. CT: "Change the
+     sacred pot to the sacred pot she never let anyone wash that had been burned to a crisp on the back burner.
+     Right? Like, there's some irony there." Book now:
 
      > Elijah thought about his mother, and the pot she never let anyone else wash.
 
-     Change to [CT's words]:
+     Change to [CT's words; "else" kept from the book, as in Chapter 3]:
 
-     > Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner.
+     > Elijah thought about his mother, and the sacred pot she never let anyone else wash that had been burned to a
+     > crisp on the back burner.
 
      Logged only; not in the v6 Doc yet.
 

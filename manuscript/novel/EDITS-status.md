@@ -202,7 +202,7 @@ Edit 57 was never used.
 | 189 | Ch 18 | not in the Doc | Don't let her effort go to waste." She straightened up and looked h... |
 | 190 | Ch 20 | not in the Doc | Elijah had no idea. He was a little ashamed of that. / So Lou showe... |
 | 191 | Ch 20 | not in the Doc | "It doesn't work, my man. It works because we're lucky. Our specifi... |
-| 192 | Ch 20 | not in the Doc | Elijah thought about his mother, and her sacred pot burned to a cri... |
+| 192 | Ch 20 | not in the Doc | Elijah thought about his mother, and the sacred pot she never let a... |
 | 193 | Ch 20 | not in the Doc | Not a subscription. I already lost one orchard." |
 | 194 | Ch 20 | not in the Doc | Then I found out a machine wrote it, and I felt like a fraud and li... |
 | 195 | Ch 20 | not in the Doc | That was Wren. She led the Sunday circle and made the candles, and ... |

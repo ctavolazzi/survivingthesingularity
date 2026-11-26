@@ -1,7 +1,7 @@
 # How to log CT's edits (the procedure)
 
 Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 128, and kept up to date by every logging
-chat since (six by 26 Nov). Read all of it before logging the next edit: it is the whole method, and "Where things
+chat since (seven by 26 Nov). Read all of it before logging the next edit: it is the whole method, and "Where things
 stand" near the end says exactly where the book is.
 
 ## What CT is doing
@@ -147,23 +147,24 @@ trailer in Chapter 17, Bidwell, Chapter 38), goes into other heads (Tyler in Cha
 Elijah's, other people's come through what he sees them do, and the storyteller can tell the reader, briefly, what
 Elijah cannot know.
 
-## What is still open (26 Nov, end of the sixth logging chat)
-Settled in the sixth chat: edit 112's question (the co-op's gravel lot; edit 183).
+## What is still open (26 Nov, seventh logging chat, mid-session)
+Settled in the seventh chat: the Ch 31 call (edit 187, "The next Sunday at 9:40"); edit 116 (keep "been here
+before"); edit 118's question (CT wanted a warning: edit 189).
 Open for CT, to ask one at a time with the line quoted and Claude's recommendation in one line:
-- Ch 31: "On Sunday at 9:40 he called the rose garden." Asked, no answer yet. The same Sunday, Marta knocks at eight
-  and takes him to the shop; then Curtis's eggs, he sleeps, sweeps, eats, and Wren comes by; the next line is "The
-  next morning was the first of the month." Claude recommends "The next Sunday at 9:40 he called the rose garden.":
-  all of that can't fit between eight and 9:40 on one morning.
-- Edit 116: "been here before" or "done this before".
-- Edit 118: change only "Don't let her," or cut the whole "Grace will carry you" sentence.
-- Edit 121: "one thing" (Marta) or "one real thing" (the notebook).
+- Edit 121: "one thing" (Marta) or "one real thing" (the notebook). Asked; Claude recommends keeping both (the
+  notebook's "real" is Elijah making the rule his own). No answer yet.
 - Ch 13: the "dark out" 9:40 call. Night call or error?
+- Marta's voice (CT, 26 Nov): "Marta talks really straightforward ... a little bit too direct ... I see Marta as
+  like an older lesbian ... there's an opportunity to add a little bit of, I don't know, almost double speak to
+  the way she talks." Claude's answer: yes, in a handful of her kind or warning lines (she says the mild thing and
+  means the heavy one); she stays plain about the press, Emeka and safety; about one such line per scene. Offered
+  to pull her lines chapter by chapter with candidates before logging any. Waiting on CT's go.
 Then, each on CT's go: the eight Chapter 14 sentence-opening fixes (written again from a fresh read of v6.txt, the way
 edit 133 was done: only openings and joins, every fact, name and line of dialogue kept), then "Places to look at" in
 `EDITS.md` (Ch 31 and 39 marked probably deliberate; Ch 23 and the Ch 37 packing line already handled in edits 172 and
 178; each shown to CT with a proposed fix before it is logged).
-Also waiting on CT: which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; go on the sentence-opening checker. The
-dedication is settled (CT, 26 Nov: "The dedication was good. I liked what you wrote.").
+Also waiting on CT: which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; go on the sentence-opening checker;
+how to make the next version.
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -172,17 +173,15 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
-## Where things stand (end of the sixth logging chat, 26 Nov)
+## Where things stand (seventh logging chat, 26 Nov, mid-session)
 - The v6 Google Doc "StS v6 draft (Nov 25)" is the book CT is editing (CURRENT in the bridge). In the Doc: edits 1 to
-  138, 141 and 151. Logged, not in the Doc yet: 139, 140, 142 to 186 except 151. The next edit is 187. CT has said
+  138, 141 and 151. Logged, not in the Doc yet: 139, 140, 142 to 189 except 151. The next edit is 190. CT has said
   nothing about putting 139 onward into the Doc; log only. Do not change the Doc.
-- Done in the sixth chat: 183 (Ch 18: "the co-op's gravel lot", and Claypot ships "on a Thursday afternoon, just
-  fifteen minutes before the financial markets closed"); 184 to 186, the v7 changes brought into v6 at CT's word ("I
-  want the v6 that I'm reading in large print to be the most current version"): the Author's Note turned into a
-  Dedication that ends on "Recognize Your Power", and CT's own Thank You at the end, closing on "Recognize Your
-  Power". (184 first put the line on a page of its own before the title; CT: "I don't want the first page to be
-  recognize your power. This is a manuscript." Corrected in place.) Check rows 1, 2 and 139 to 141 now read
-  "replaced by 185".
+- Done in the seventh chat: 187 (Ch 31: "The next Sunday at 9:40 he called the rose garden."; check row 30 narrowed);
+  188 (end of Ch 15: the check-engine light, the laugh, Willie Nelson's "On the Road Again", "Figures ... I hope
+  they have a good mechanic."; corrected in place three times, see "Writing a beat for CT"); 189 (Ch 18: Marta's
+  line about Grace ends in a warning, "You waste it, and you and me are going to have a problem."). Edit 116
+  settled with no change. How to write a line for the novel is now also in the repository's `CLAUDE.md`.
 - Names cleaned up at CT's request ("The naming system is confusing me"): the edit list is `EDITS.md` (was
   EDITS-v5-pending.md), its status table `EDITS-status.md`; the Drive folder is "StS Publication Files", with
   everything older in its "Older builds"; the Drive mirror is "StS v6 edit list (mirror of GitHub)".
@@ -194,8 +193,9 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   publication/novel/build/requirements.txt` and `mkdir -p publication/novel/work` first in a fresh container). It has
   no pictures (book.json `include_pictures: false`) and no About the Author page (`about_author_in_book: false`, so
   "Recognize Your Power" is the last line). When a new one is made, the old one goes to "Older builds" as "OLD: ...".
+  It has edits 1 to 186; 187 on are logged only. Make a new one only when CT asks.
 - verify.py on a fresh read of the v6 Doc shows 30, 137 and 182 PARTIAL. That is expected: edit 182 changes words of
-  30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (186).
+  30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (189).
 - Quote "Book now" from make_v6.py's v6.txt (every logged edit applied), not from the raw Doc, which lacks 139 on.
 - The Docs reads are too big to show in chat; the connector saves each to a file. Copy it and use it as READ.json.
 - Each new edit: log it in `EDITS.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a find and replace

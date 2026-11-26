@@ -2,7 +2,7 @@
 
 From CT's direction of 26 Nov (`PLAN-CHAPTERS-20-TO-36.md`, section 10.5). CT's words are in **bold**. Everything
 else new is Claude's. It changes his edit 88 (the arms no longer go into the equipment shed, and the table doesn't
-vote on the storage bill). The rest of the chapter stays as it was. Words: the chapter goes from 4,463 to 4,880.
+vote on the storage bill). The rest of the chapter stays as it was. Words: the chapter goes from 4,463 to 5,040 (577 more).
 
 ## Book now
 

@@ -140,7 +140,16 @@ the third "a little too much". What the one he took does:
 - No beat-counting pattern: "He read it twice. Then he wrote back." (edit 196). CT: "Don't do the pattern." The book
   already leans on reading or watching a thing a counted number of times, and on a short fact followed by "Then he
   ...". Go straight to the action.
-- Don't bring back a problem already fixed. The mirrored contrast line ("It's not X. It's Y."; "They can. They just
+- Prose tics measured in the book (26 Nov, make_v6.py's v6.txt, 93,742 words; counts by script): "the way you/a/she
+  ..." similes 76; "He knew" / "he didn't know" 69; X, Y, and Z lists 73; runs of three or more very short sentences
+  63; "looked at him/her/it" 59; "for a while" / "a long time" 50; "didn't say anything" / "said nothing" 39; "nodded" /
+  "shrugged" 29; "That was all/it/the ..." closers 28; "He" opens 16% of sentences. In anything Claude writes: no
+  filter words where the thing itself can be shown (knew, thought, saw, watched, felt, realized, noticed); no leading
+  words that walk the reader step by step (then, so, soon, suddenly); body beats only when the next few lines don't
+  already have one; don't end a paragraph by summing it up ("That was all there was."); vary sentence length, and
+  never three clipped sentences where one would do. From fiction line-editing guides (filter words, leading words,
+  repeated gestures, sentence rhythm) and Wikipedia's "Signs of AI writing" (summary closers, commentary).
+ The mirrored contrast line ("It's not X. It's Y."; "They can. They just
   won't."; Claude's own "He's on this side of the fence. His friends aren't.", 26 Nov) was edited out in 119 and 174.
   CT: "I don't want you to introduce like previous problems that we've already overcome ... We've already established
   that we can do better than this." Before showing any line, check it against every lesson in this file and in

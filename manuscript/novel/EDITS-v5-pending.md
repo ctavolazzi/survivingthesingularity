@@ -1754,6 +1754,23 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Mad." exchange; CT's new lines take their places. Then "...and finished their beers." as before. Logged only; not
      in the v6 Doc yet.
 
+156. **Chapter 13, after the bandmates drive off: "He got the letter."** CT (26 Nov): "There's a line when his bandmates
+     walk past him where he says he got the letter. Maybe we could rephrase that because there's still a lot of
+     repetition with he did this, he did that. We could rephrase that sentence structure." The letter is the one from
+     her doctor that he drove into town for ("On Wednesday he drove into town for a letter from her doctor."), which the
+     short line doesn't say. Book now:
+
+     > He put his hand down.
+     >
+     > He got the letter. He walked back to the truck the other way, which took him past the Bear Flag.
+
+     Change to [Claude's wording; every fact kept]:
+
+     > Eventually his hand came down. The doctor's letter was still waiting at the office, so he went and picked it
+     > up. On the way back to the truck he went around the other way, which took him past the Bear Flag.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

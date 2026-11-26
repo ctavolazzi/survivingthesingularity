@@ -364,6 +364,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "\"I'm serious, dude. You gotta stop. Why don't you just stick to music? You were good. People loved you up there. Stay in your lane.\"\n\"I mean, as much as I'd like to, we're living through historic times, Dave. This is an unprecedented moment, and I kind of helped create it.\"\nDavid didn't say anything to that. He let his eyes drop to his beer and kept them there."),
 (155, "\"It's not like that.\"\n\"Okay.\"\n\"Dave. It's not.\"\n\"Okay, Mad.\"\nThen they sat there",
 "\"I'm fine,\" Elijah said. \"I just know things, and I'm trying to figure out how to tell people what I know.\"\n\"People don't care what you know, man. They care how you make them feel. You should know that from all your years playing music with all of us.\"\nElijah thought about it for a second. \"I appreciate that, man. But this is just too important.\"\nDavid made a face. \"All right,\" he said. \"Well, can I get you anything else?\"\nThen they sat there"),
+# 156, Ch 13
+(156, "He put his hand down.\nHe got the letter. He walked back to the truck the other way, which took him past the Bear Flag.",
+"Eventually his hand came down. The doctor's letter was still waiting at the office, so he went and picked it up. On the way back to the truck he went around the other way, which took him past the Bear Flag."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

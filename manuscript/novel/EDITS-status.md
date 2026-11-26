@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 3, accepted: 139, not in the Doc: 41.
+Totals: PARTIAL: 3, accepted: 140, not in the Doc: 43.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -11,8 +11,8 @@ Edit 57 was never used.
 
 | Edit | Where | Status | Checked for |
 |---|---|---|---|
-| 1 | Author's Note | accepted | gone: You can doubt my forecast. |
-| 2 | Author's Note | accepted | You can rise to meet it. / Let's begin to imagine how. |
+| 1 | Author's Note (replaced by 185) | accepted | gone: You can doubt my forecast. |
+| 2 | Author's Note (replaced by 185) | accepted | (nothing left to check) |
 | 3 | Ch 0 | accepted | The band was called Crop Dust. Har har. / Nate played bass |
 | 4 | Ch 0 | accepted | Elijah's grandmother used to walk him |
 | 5 | Ch 0 | accepted | He thought of himself as a bridge. |
@@ -149,9 +149,9 @@ Edit 57 was never used.
 | 136 | Ch 19 | accepted | You picked nothing." / He had picked. He had picked keeping his boa... |
 | 137 | Ch 22 | PARTIAL | read them the timestamps. Then, because he was already standing the... |
 | 138 | Ch 15 | accepted | "No, your website had the email. Don't ask me. Ask Tyler." / He ask... |
-| 139 | Author's Note | not in the Doc | was a tool that does a thing. But this is different. The shovel nev... |
-| 140 | Author's Note | not in the Doc | If I can ask anything of anyone, it's that you take a look at this ... |
-| 141 | Author's Note | accepted | you might not be paying enough attention. / This could be the most ... |
+| 139 | Author's Note (replaced by 185) | accepted | (nothing left to check) |
+| 140 | Author's Note (replaced by 185) | not in the Doc | gone: I'm not asking you to trust me. |
+| 141 | Author's Note (replaced by 185) | accepted | gone: you might not be paying enough attention. [break] This could be |
 | 142 | Ch 1 | not in the Doc | So it had a ceiling. Whoever could pay for the power and the cooling |
 | 143 | Ch 2 (italics; checked by make_v6.py) | accepted | is this true / Elijah didn't answer. |
 | 144 | Ch 2 | not in the Doc | so that later he could look back and see if he was right. |
@@ -194,3 +194,6 @@ Edit 57 was never used.
 | 181 | Ch 17 | not in the Doc | The warm place on Elijah's arm stayed warm, but under it was a ques... |
 | 182 | Ch 21 to 39 | PARTIAL | Elijah watched her do forty in a night. |
 | 183 | Ch 18 | not in the Doc | Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen... |
+| 184 | Start | not in the Doc | Recognize Your Power / SURVIVING THE SINGULARITY / A Solarpunk Novel |
+| 185 | Contents, Dedication | not in the Doc | Contents / Dedication / Act One |
+| 186 | End | not in the Doc | Thursday, November 25, 2027. Thanksgiving. / Thank You / Thank you ... |

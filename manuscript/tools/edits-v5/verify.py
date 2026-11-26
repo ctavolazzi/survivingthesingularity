@@ -70,7 +70,7 @@ def main():
     A, O = flat(acc), flat(orig)
     rows = []
     for n, where, have, gone in sorted(C, key=lambda r: r[0]):
-        rows.append((n, where, status(A, O, have, gone), have[0] if have else "gone: " + gone[0]))
+        rows.append((n, where, status(A, O, have, gone), have[0] if have else "gone: " + gone[0] if gone else "(nothing left to check)"))
     counts = {}
     for r in rows:
         counts[r[2]] = counts.get(r[2], 0) + 1

@@ -127,6 +127,8 @@ Lou each argue it their own way and are each partly wrong (CT: "characters ask e
 characters interject to correct things that are wrong, but be wrong about things as well").
 
 **Threads, each a small set of edits (replace telling with a scene; the book doesn't get longer):**
+(The quoted lines below are the readers' placeholders for what each beat says, not prose. Several are the mirrored
+contrast shape CT has ruled out; every line gets written fresh, in the characters' own voices, before CT sees it.)
 A. The board secret comes due. Ch 22: the one-clause confession becomes a choice ("because Tyler was standing at the
    back") and gets reactions: Curtis "Twice", Tyler "It said so in the file", Grace "And the board. In front of that
    kid." Feeds the spine.

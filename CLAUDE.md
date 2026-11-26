@@ -51,6 +51,10 @@ Before writing any line for the book, read "Writing a beat for CT" in
 - One beat. Don't explain why it matters.
 - Write the action plainly and leave the sentence that names the feeling to the author.
 - Offer one version, sized in the middle. If he says it's dry, add one step, not five.
+- No mirrored contrast lines: "It's not X. It's Y.", "They can. They just won't.", "He's on this side of the fence.
+  His friends aren't." CT called the shape AI-sounding (edits 119 and 174) and, 26 Nov: "We've already established that
+  we can do better than this." People talk in their own trade and habits, half-finished, concrete, sometimes wrong; a
+  line that sounds built to be quoted is the wrong line.
 - When he corrects a line, add what was learned to that section of the procedure file.
 
 ## Routes and data

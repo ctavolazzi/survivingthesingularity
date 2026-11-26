@@ -1104,6 +1104,15 @@ Some nights he drove out and looked at the barn from the road. He couldn't have 
 (208, "He wanted, very badly, for Lou to tell him the bracket was good.", "He wanted, very badly, for Lou to tell him the mount was good."),
 (208, "He said, \"Bracket's done.", "He said, \"Mount's done."),
 (208, "When he was gone, Elijah stood with his hand on the bracket for a while. It was good, and nobody had said so, and he was going to have to get used to that.", "When he was gone, Elijah stood there with his hand on the mount."),
+# 209, Ch 30: Priya and Grace the night before, Denny's last video, Lou's "my man" (drafts/chapter-30.md)
+(209, "Chapter 30: Item Seven\nThe county chambers smelled like wet coats and floor wax.", "Chapter 30: Item Seven\nThe night before the county meeting Priya found Grace in the kitchen trailer with the banker's box open on the counter and the receipts sorted into piles by month.\n\"How long do you get?\" Priya said.\n\"Three minutes.\"\n\"Then you get one number.\" Priya pulled a stool over. \"When I ran, I had three minutes at every grange hall in the district. I spent the first two on why I was running. Nobody remembered anything but the red light.\"\n\"Which number?\"\n\"What it costs to feed one person on the route for a week. Not the total. The total scares them.\"\nGrace ran her finger down a page. \"Eleven dollars and forty cents.\"\n\"Say that first. Then stop.\"\n\"I've stood on a lot of porches with three minutes,\" Grace said. \"Telling people why they had to leave. You don't open with a number. You open with who.\"\nPriya thought about that. \"Then one name,\" she said. \"Then the number. Then stop.\"\nGrace picked up a pen and wrote a name on the back of her hand.\n\nThe county chambers smelled like wet coats and floor wax."),
+(209, "Irene Calder came last and took the aisle seat as if she'd been assigned it.", "Irene Calder came last and took the aisle seat as if she'd been assigned it. Denny set up a tripod in the back row and filmed the whole thing."),
+(209, "That's all politics is, man.", "That's all politics is, my man."),
+(209, "She sat with the banker's box on her knees and did not say anything.", "She sat with the banker's box on her knees and did not say anything. The name on the back of her hand was Rosa's."),
+(209, "She read it back to him and changed more to the rest.", "She read it back to him and changed \"more\" to \"the rest.\"\nAt the truck Denny folded the tripod and handed the bag to Tyler. \"You hang onto that,\" he said, and didn't ask for it back."),
+(209, "\"Yeah, man,\" Lou said. \"She did.\"", "\"Yeah, my man,\" Lou said. \"She did.\""),
+(209, "On Thursday he ran a whole coupon", "By the end of the week he ran a whole coupon"),
+(209, "Friday he ran it again.", "The next day he ran it again."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

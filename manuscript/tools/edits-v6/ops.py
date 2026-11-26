@@ -397,8 +397,6 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "\"They broke things,\" Curtis said, pointing his fork down the table at her."),
 (162, "\"Every month,\" Reuben said.",
 "\"Every month,\" Reuben said, pushing his glasses up onto his forehead."),
-(162, "\"You could find out,\" Grace said.",
-"\"You could find out,\" Grace said, holding her hands out to the stove."),
 (162, "starts with lettuce,\" Curtis said. \"Then it's Skynet.\"",
 "starts with lettuce,\" Curtis said, shaking the cold water off his hands. \"Then it's Skynet.\""),
 (162, "\"Wait, so the plan is chalk,\" Tyler said.",
@@ -407,8 +405,6 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "\"I know it,\" Lou said, and set down his fork."),
 (162, "\"It's a sensor,\" Curtis said. \"It's two wires.\"",
 "\"It's a sensor,\" Curtis said, pinching the bridge of his nose. \"It's two wires.\""),
-(162, "\"You swept,\" Lou said.",
-"\"You swept,\" Lou said, looking past him into the shouse."),
 (162, "\"Thirty years that's been on that wall,\" David said.",
 "\"Thirty years that's been on that wall,\" David said, following his eyes up to the frame."),
 # 163, Ch 17

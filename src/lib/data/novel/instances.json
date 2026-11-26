@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "note": "Every copy of the novel, which version each one holds, and what it was made from. Google Docs are named by title only: this repository is public, so their ids stay out of it. `holds` is what was recorded on the asOf date. `checked` says how that was established, or that it was not.",
   "versions": [
     "2026-11-19",
@@ -10,7 +10,8 @@
     "v4",
     "v5",
     "v6",
-    "v7"
+    "v7",
+    "v8"
   ],
   "instances": [
     {
@@ -121,8 +122,7 @@
       "title": "StS v6 draft (Nov 25)",
       "holds": "v6",
       "from": "doc-v5-draft",
-      "current": true,
-      "role": "The book right now, and the Doc the author reads for his final edits, mostly in the large print PDF built from it. Made 25 November by manuscript/tools/edits-v6/make_v6.py: v5 with every suggestion accepted (edits 1 to 86 and the follow-ups), then edits 87 to 138 from manuscript/novel/EDITS.md, written as a .docx with the 19 pictures (made smaller to fit the Drive connector) and converted by Drive. Seven fixes from the contradictions pass were then made in it directly, on the author's word. Edits from 139 on are logged in manuscript/novel/EDITS.md, with a row in manuscript/tools/edits-v6/ops.py and a check row; they are not in this Doc until the author says so.",
+      "role": "The book until 26 November, when v8 was made from the same build. It holds edits 1 to 138, 141 and 151; edits 139 to 223 are logged in manuscript/novel/EDITS.md and are in v8, not here. Kept as it is. Made 25 November by manuscript/tools/edits-v6/make_v6.py: v5 with every suggestion accepted (edits 1 to 86 and the follow-ups), then edits 87 to 138 from manuscript/novel/EDITS.md, written as a .docx with the 19 pictures (made smaller to fit the Drive connector) and converted by Drive. Seven fixes from the contradictions pass were then made in it directly, on the author's word. Edits from 139 on are logged in manuscript/novel/EDITS.md, with a row in manuscript/tools/edits-v6/ops.py and a check row; they are not in this Doc until the author says so.",
       "checked": "Read on 25 November 2026 after the fixes: 3,806 paragraphs, 64 headings, 19 pictures, no suggestions. manuscript/tools/edits-v5/verify.py: all 138 edits accepted. Its text matches make_v6.py's output word for word. Large print PDF built from that read: 659 pages."
     },
     {
@@ -133,6 +133,25 @@
       "from": "doc-v6-draft",
       "role": "A separate copy, kept apart from v6 on the author's word (\"keep v7 as a totally new, totally separate thing\"). v6 with every logged edit through 171, plus v7-only changes: \"Recognize Your Power\" at the very beginning and the very end, the Author's Note turned into a Dedication, and a Thank You to the reader. v6 stays the book he is editing; v7 does not follow its new edits unless he asks. See manuscript/novel/V7-CHANGES.md.",
       "checked": "Read on 26 November 2026 after Drive made it: the text matches manuscript/tools/edits-v7/make_v7.py's output word for word; 56 headings, 9 subheadings, 19 pictures, no suggestions."
+    },
+    {
+      "id": "doc-v8-draft",
+      "kind": "google-doc",
+      "title": "StS v8 draft (Nov 26)",
+      "holds": "v8",
+      "from": "doc-v5-draft",
+      "current": true,
+      "role": "The book right now. Made 26 November by manuscript/tools/edits-v6/make_v6.py from a fresh read of the v5 Doc: every suggestion accepted, then every logged edit, 1 to 223 (Chapters 20 to 36 rewritten, the whole-book continuity pass, its held items resolved), written as a .docx without the 19 pictures (--no-pictures; with them the file was over the Drive connector's limit) and converted by Drive. The large print PDF built from the same .docx is in Drive as \"StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf\". The name v8 is the author's (v7 is a separate frozen copy).",
+      "checked": "Read on 26 November 2026 after Drive made it: verify.py shows all 223 edits accepted, and its text matches make_v6.py's v6.txt paragraph for paragraph except the 19 empty paragraphs where the pictures were."
+    },
+    {
+      "id": "doc-v8-backup",
+      "kind": "google-doc",
+      "title": "StS v8 BACKUP (Nov 26), do not edit",
+      "holds": "v8",
+      "from": "doc-v8-draft",
+      "role": "A Drive copy of v8 made the moment it was made, at the author's request, and locked read-only. Edit the draft, not this.",
+      "checked": "Made by Drive's copy on 26 November 2026 straight after the draft was checked; locked read-only."
     },
     {
       "id": "site-compendium",

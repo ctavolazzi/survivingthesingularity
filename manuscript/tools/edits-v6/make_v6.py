@@ -9,7 +9,7 @@
    and "§C " centers it (added 26 Nov for edits 184 to 186, the v7 changes brought into v6).
 3. Checks the result against every row of manuscript/tools/edits-v5/checks.py: each edit's words must be there,
    and its removed words must be gone. It stops if any edit fails.
-4. Writes OUT_DIR/v6.docx (headings, italics, bold, centered lines, the 19 pictures) to upload to Drive as the
+4. Writes OUT_DIR/v6.docx (headings, italics, bold, centered lines, the 19 pictures; --no-pictures leaves them out) to upload to Drive as the
    new Google Doc, OUT_DIR/v6.txt (plain text), and OUT_DIR/v6-read.json (a Docs-like read for verify.py).
 
 It never calls Google. Pictures are fetched from the read's contentUri links, which expire; read the Doc again if
@@ -173,6 +173,8 @@ def write_docx(paras, images, objects, out, imgdir):
                 groups.append(("txt", [ch], at))
         for g in groups:
             if g[0] == "img":
+                if "--no-pictures" in sys.argv:
+                    continue
                 oid = g[1]
                 f = imgdir / f"{oid}.png"
                 if not f.exists():

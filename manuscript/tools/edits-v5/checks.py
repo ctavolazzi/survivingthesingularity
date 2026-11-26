@@ -95,7 +95,7 @@ C=[
 (87,"Ch 17",["For three days, no one really asked him anything.","Do you actually believe he's just some guy who made a video or two?"],["For three weeks nobody asked him anything."]),
 (88,"Ch 17",["On the fourth day he asked Grace if the dry end of the shed was still free.","The arms came up the day before the lien sale."],["The arms came up that first week, the day before the lien sale."]),
 (89,"Ch 17",["He told the radio about his week. The co-op let him be.","\"Lou,\" he said, and went back to the beds.","It was Lou, from the pump house steps."],["That was Lou. Lou ran the growing side"]),
-(90,"Ch 17",["He looked at his plate.","Only if you're comfortable,\" he said.","\"I like him already,\" Denny said.","He noticed his shoulders relax a bit."],["\"Good,\" said Denny.","Okay. Say you work on a horse ranch."]),
+(90,"Ch 17",["He looked at his plate.","Only if you're comfortable,\" he said.","\"I like him already,\" Denny said.","the first genuine camaraderie he'd felt in a hot minute."],["\"Good,\" said Denny.","Okay. Say you work on a horse ranch."]),
 (91,"Ch 0",["The hand that feeds you controls you. Remember that.","Man, I sure wish I could get a handout."],[]),
 (92,"Ch 8",["For a second it was his father's voice."],[]),
 (93,"Ch 10",["A million dollars to do nothing was the biggest handout anyone had ever offered him."],[]),
@@ -169,4 +169,5 @@ C=[
 (161,"Ch 17",["\"That's a picture,\" Priya said, fidgeting with the pencil behind her ear. \"What would you measure?\""],[]),
 (162,"Ch 10 to 39",["\"Fire escape,\" Ruby said, already sliding a window up. \"It's the only good room.\"", "\"Heard they close Friday,\" David said, looking past him at the house.", "\"They broke things,\" Curtis said, pointing his fork down the table at her.", "\"Every month,\" Reuben said, pushing his glasses up onto his forehead.", "\"You could find out,\" Grace said, holding her hands out to the stove.", "starts with lettuce,\" Curtis said, shaking the cold water off his hands. \"Then it's Skynet.\"", "\"Wait, so the plan is chalk,\" Tyler said, shifting the reel to his other arm.", "\"I know it,\" Lou said, and set down his fork.", "\"It's a sensor,\" Curtis said, pinching the bridge of his nose. \"It's two wires.\"", "\"You swept,\" Lou said, looking past him into the shouse.", "\"Thirty years that's been on that wall,\" David said, following his eyes up to the frame."],[]),
 (163,"Ch 17",["\"I don't know, I'm kind of turned off on telling it.\""],["\"I don't know. I'm kind of off telling it.\""]),
+(164,"Ch 17",["Without being conscious of it, his shoulders relaxed a few inches."],["He noticed his shoulders relax a bit."]),
 ]

@@ -1934,6 +1934,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Change to [CT's words]: He looked at his plate. "I don't know, I'm kind of turned off on telling it." Logged only;
      not in the v6 Doc yet.
 
+164. **Chapter 17, the first Friday dinner: his shoulders.** CT (26 Nov): "Without being conscious of it, his shoulders
+     relaxed a few inches." Book now (edit 90): "...the first genuine camaraderie he'd felt in a hot minute. He noticed
+     his shoulders relax a bit." Change the last sentence to [CT's words]: "Without being conscious of it, his
+     shoulders relaxed a few inches." Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -414,6 +414,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 163, Ch 17
 (163, "\"I don't know. I'm kind of off telling it.\"",
 "\"I don't know, I'm kind of turned off on telling it.\""),
+# 164, Ch 17
+(164, "He noticed his shoulders relax a bit.",
+"Without being conscious of it, his shoulders relaxed a few inches."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

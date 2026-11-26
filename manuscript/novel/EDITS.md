@@ -3325,6 +3325,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      crawler logs. Line flags 4 and 5 of the 59 fixed; the counting fixes at the old lines 1974, 1976, 2009, 2017 done.
      Rows 137 and 182 narrowed to the words that still hold. Logged only; not in the v6 Doc yet.
 
+202. **Chapter 23: the land or the Ochoas, Grace tells them, where you eat, Lou at the county window.** From the plan;
+     written by Claude and logged on CT's "Do it" (Book now and Change to in `manuscript/novel/drafts/chapter-23.md`).
+     The down payment takes the channel's whole surplus, the money promised to Hector and Lupe for October; Reuben says
+     what three missed payments do; the table argues it (Priya, Curtis, Wren: "So the ones it cost get paid last.") and
+     votes for the land; Grace tells the Ochoas herself and sits in her truck after. Elijah's errands past Irene's lead
+     to the coworker and CT's line "He learned a long time ago not to date where you eat, but there was just something
+     so alluring about Grace." [CT's words]. Lou drives Reuben to the county and keeps his hand on the stamped stack.
+     Cut: Reuben's mirrored "data problem" line, the dashboard summary closers, part of Reuben's speech, Lou at the
+     kitchen door (a repeat of Ch 22), "Tuesday". Line flags: the power bill "said so", "the kitchen-table meeting".
+     Counting fix at the old line 2047. About 405 words in, 231 out. Logged only; not in the v6 Doc yet.
+
 Corrected in place, 26 Nov, after an audit of the day's edits against CT's standing rules (none of it in the Doc):
 written messages set in italics in edits 196 (Mr. Ostrander's messages and Elijah's replies), 198 (*Dear Ma*) and 200
 (*You're a liar. And you need to stop.*; Marta's card, *Power or brain? Halve it.*); two day names that only marked

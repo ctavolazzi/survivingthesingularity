@@ -19,8 +19,8 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
    `verify.py`; `manuscript/tools/edits-v6/find_in_book.py`.
 5. Read both Docs fresh with the Docs connector (the result is saved to a file; copy it and use it as READ.json):
    - v8, the book since 26 Nov: "StS v8 draft (Nov 26)", id `1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8`. It holds
-     every edit, 1 to 223, without the 19 pictures. Run verify.py on it; expect every row "accepted" and nothing
-     PARTIAL (new edits from 224 show "not in the Doc" until CT clears them). Its locked twin is "StS v8 BACKUP (Nov
+     every edit, 1 to 223, without the 19 pictures. Run verify.py on it; expect rows 1 to 223 "accepted", nothing
+     PARTIAL, and the newer edits (224 to 227 at the end of the tenth chat) "not in the Doc" until CT clears them. Its locked twin is "StS v8 BACKUP (Nov
      26), do not edit" (`18gmZKWiUPyujRkRY_ZSh80ifdchZKtk8oPOpVuycOPM`).
    - v5, the base: "StS v5 draft (Nov 23)", id `1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA`. Run make_v6.py on it;
      every row must pass. Work from its `v6.txt`. (make_v6.py keeps its name; it builds v8.)
@@ -158,10 +158,18 @@ for what it is ("v7" is taken by a frozen side copy).
 | `... find_in_book.py OUT/v6.txt claims FILE.json` | Evidence for each claim in a list |
 | `python3 manuscript/tools/edits-v6/story_report.py OUT/v6.txt` | Measures the story: length and talk by chapter, who is on the page, where each thread opens and closes, tics, smells, scenes with only women, long speeches, numbers that must agree |
 | `python3 manuscript/tools/edits-v6/build_gate.py OUT/v6.txt [--todo TODO.md]` | What must be gone and what must be there before the next build (`build-gate.json`), and the unticked boxes |
+| `python3 manuscript/tools/edits-v6/openers.py OUT/v6.txt [--ch 20-36]` | The sentence-opening checker: runs of sentences that open with the same word, runs of pronoun-or-name openers, paragraphs one opener dominates |
 | `python3 manuscript/tools/book.py cast` | Rebuilds the character folders |
 | `node scripts/sts-bridge.mjs status` | Which Doc is CURRENT |
 
 ## 6. Pitfalls learned
+
+- The newest checkpoint is `CHECKPOINT-2026-11-26-tenth.md` (what is open with CT, and the prompt for the next chat).
+- A polish pass (edit 227): readers return candidates, every quote is machine-matched, and each is read on the page and
+  checked for whose words it is before anything changes. Of 50 candidates, 20 were changed. CT's dictated lines, the
+  done chapters, the ending and the fire were left; repetition on purpose and quips in light moments are not faults.
+- A check row's must-have that a later edit rewrites makes make_v6.py fail on the older row; take that string out of
+  the older row (rows 172 and 204 were narrowed this way for edits 226 and 227).
 
 - A check row's must-have that is already in the Doc, or a gone-word that never was, makes verify.py show PARTIAL.
   Exactly: a row reads "not in the Doc" only if every gone-word is still in the Doc being checked (v8 from 26 Nov). A gone-word that came in

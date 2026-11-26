@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS edit list, edits 1 to N
-   (mirror of GitHub)" (id 1WMgBw6IDVq2ZY-WuPkFpiCX5df8WX8iQw5BSjAKAPqE, edits 1 to 223) once, at the end of the session.
+   (mirror of GitHub)" (id 1vAttOSe_VzJWKg56J34gYm53YpUyLPiFwsRwcpD_FuE, edits 1 to 227; https://docs.google.com/document/d/1vAttOSe_VzJWKg56J34gYm53YpUyLPiFwsRwcpD_FuE) once, at the end of the session.
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -201,17 +201,20 @@ trailer in Chapter 17, Bidwell, Chapter 38), goes into other heads (Tyler in Cha
 Elijah's, other people's come through what he sees them do, and the storyteller can tell the reader, briefly, what
 Elijah cannot know.
 
-## What is still open (26 Nov, end of the ninth logging chat)
+## What is still open (26 Nov, end of the tenth logging chat)
 **The endgame runs from `REFERENCE.md` (how), `GOALS.md` (what done is), `TODO.md` (what is next).** The prompt for
-the housekeeping pass is in `CHECKPOINT-2026-11-26-v8.md`. What is still CT's:
-- Two lines left from the pass: the gas cap (Ch 25, his scene; it ends on "Friday," she said.) and "Marta had heard it
-  as a murder" (Ch 39).
-- The eight thin places in `CHECKPOINT-2026-11-26.md`, section 3 (Praether after Ch 26, Mrs. Delgado, Bidwell's last
-  beat, the welder gap, Faith, the Telecaster, Wren, "For three years").
-- The 19 pictures: v8 has none (19 empty paragraphs where they were). Put them back, or take the empty paragraphs out.
-- The smell pass, in its own chat. The Instagram synopsis. The ISBN, the release build (PDF and EPUB), and whether
-  the book goes to `main`.
-- Names: "OLD:" on the v6 and v7 Docs (his Docs; his yes).
+the next chat, and the full list of what is open with CT (fifteen items, grouped), are in
+`CHECKPOINT-2026-11-26-tenth.md`. In short, what is still CT's:
+- From the tenth chat: edit 226's held line ("under 6 months" or "under a year"); Grace's winter away (his idea, not
+  written); five lines the polish pass put to him; edits 224 to 227 into the Doc.
+- Carried over: the gas cap (Ch 25); "Marta had heard it as a murder" (Ch 39); the "Creator Fund" line; the 19 empty
+  paragraphs in the v8 Doc; the thin places (Praether after Ch 26, Mrs. Delgado, Bidwell's last beat, the welder gap,
+  the Telecaster, Faith); the Instagram synopsis; "OLD:" on the v6 and v7 Docs; the duplicate build files in Drive's
+  "Older builds"; the site's private reader (v2) and compendium (v3); the merge to `main`; the ISBN and the release
+  build.
+- The smell pass, in its own chat.
+- The sentence-opening checker is built (`manuscript/tools/edits-v6/openers.py`). It was run on Chapters 20 to 36; the
+  runs it finds at key moments were read in the polish pass (edit 227) and are mostly repetition on purpose.
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -220,21 +223,21 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
-## Where things stand (end of the ninth logging chat, 26 Nov)
-- **The book is the Google Doc "StS v8 draft (Nov 26)"** (CURRENT in the bridge map), made on CT's word from
-  make_v6.py's build: the v5 Doc with its suggestions accepted plus every logged edit, 1 to 223, without the 19
-  pictures (the .docx with them was over the Drive connector's limit; CT chose "No pictures"). verify.py on it: all
-  223 accepted. Its locked backup: "StS v8 BACKUP (Nov 26), do not edit". The old v6 Doc is unchanged.
-- **The PDF CT reads:** "StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf" in "StS
-  Publication Files" (https://drive.google.com/file/d/1B0nwZM5XXGxfeEjRAjyl0bICQNxsHtGp/view), 738 pages, every
-  check in `publication/novel/output/CHECKS.md` passing, the cover credit on the copyright page, no ISBN yet. The
-  edits 1 to 186 PDF is "OLD:" in "Older builds".
-- This chat: edit 221 (the women and the tall rover, Ch 34, corrected in place for three lines), 222 (the whole-book
-  continuity pass: eight readers, 79 findings, 50 fixed), 223 (the pass's held items resolved on CT's "resolve as many
-  of these as you can without my help"). **The next edit is 224.**
-- make_v6.py on a fresh v5 read passes all 223 rows. The bridge map, BRIDGE.md and the Drive bridge page
-  ("sts-bridge: read this first", remade; the old one is "OLD:") all say v8.
-- 103,064 words in the build (`CHECKS.md`).
+## Where things stand (end of the tenth logging chat, 26 Nov)
+- **The book is the Google Doc "StS v8 draft (Nov 26)"** (CURRENT in the bridge map): the v5 Doc with its suggestions
+  accepted plus edits 1 to 223, without pictures. Its locked backup: "StS v8 BACKUP (Nov 26), do not edit". Neither was
+  changed in the tenth chat.
+- **Edits 224 to 227 are logged in GitHub only:** 224 (the laser weeder and the brain organoid, "Pondwater"), 225 (the
+  panel, "overwhelmed", fifty million views and Ruby's pitch, Ch 8 to 10), 226 (why Elijah waits after the pond, Ch
+  26), 227 (the polish pass at key moments, 20 places). verify.py on a v8 read shows 223 "accepted" and these four "not
+  in the Doc". **The next edit is 228.**
+- make_v6.py on a fresh v5 read passes all 227 rows (547 replacements). 101,092 words in the chapters
+  (`story_report.py`).
+- **The PDF CT reads** is still "StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf"
+  (https://drive.google.com/file/d/1B0nwZM5XXGxfeEjRAjyl0bICQNxsHtGp/view). It does not have edits 224 to 227.
+- The Drive copy of the edit list is "StS edit list, edits 1 to 227 (mirror of GitHub)" (step 10); the 1 to 223 copy is
+  "OLD:" with a pointer at its top.
+- The bridge map, BRIDGE.md and the Drive bridge page still say v8, which is right.
 
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including

@@ -2,18 +2,17 @@
 
 Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Google Doc "StS v5 draft (Nov 23)").
 
-**Where the edits stand (26 Nov, tenth logging chat):** every edit, 1 to 223, is in the book, the Google Doc "StS v8
-draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py`'s build (the v5 Doc with its
-suggestions accepted, then every row of `ops.py`). Each entry below still says where it stood when it was logged
-("Logged only; not in the v6 Doc yet."); that is its history. New edits start at 224 and are logged only, until CT
-clears them for the Doc.
+**Where the edits stand (26 Nov, end of the tenth logging chat):** edits 1 to 223 are in the book, the Google Doc "StS
+v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py`'s build (the v5 Doc with its
+suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
+("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 227 (tenth chat) are logged only, until CT
+clears them for the Doc. The next edit is 228.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
 v8 Doc; `EDITS-status.md` is the one table of where each edit stands (all 223 "accepted" on 26 Nov). A copy of this list
-lives in Google Drive as "StS edit list, edits 1 to 223 (mirror of GitHub)"
-(https://docs.google.com/document/d/1WMgBw6IDVq2ZY-WuPkFpiCX5df8WX8iQw5BSjAKAPqE; the id is also in
-`EDIT-LOGGING-PROCEDURE.md`, step 10). It is refreshed once, at the end of a session.
+lives in Google Drive as "StS edit list, edits 1 to N (mirror of GitHub)"; the link to the newest one is in
+`EDIT-LOGGING-PROCEDURE.md`, step 10. It is refreshed once, at the end of a session.
 
 ## Character notes from CT (context, not for the page)
 

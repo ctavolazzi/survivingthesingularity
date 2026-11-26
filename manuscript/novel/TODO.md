@@ -1,12 +1,13 @@
 # To do: the novel, from here to done
 
-Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
+Updated 26 Nov 2026, end of the tenth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 227.** (226: why Elijah waits after the pond, Ch 26; "under 6 months" held for CT.) (Tenth chat: 224, the laser weeder and the brain organoid, in "Pondwater"; 225, the panel, "overwhelmed", fifty million views and Ruby's pitch, Ch 8 to 10. Both logged only.) The book is the Google Doc "StS v8 draft (Nov 26)" (every edit, 1 to 223; no pictures), with a
-locked backup; the large print PDF of v8 is in Drive. This chat (26 Nov, ninth): the women's scene in Chapter 34
-(221), the whole-book continuity pass (222), its held items resolved (223), v8. Next: the housekeeping pass; its
-prompt is in `CHECKPOINT-2026-11-26-v8.md`.
+**Next edit: 228.** The book in the Docs is "StS v8 draft (Nov 26)" (edits 1 to 223; no pictures), with a locked
+backup. Edits 224 to 227 are logged in GitHub only (tenth chat, 26 Nov): the laser weeder and the brain organoid
+("Pondwater"); the panel, "overwhelmed", fifty million views and Ruby's pitch (Ch 8 to 10); why Elijah waits after the
+pond (Ch 26; "under 6 months" held for CT); the polish pass at key moments. Next: the eleventh chat opens by putting
+the "Open with CT" list in `CHECKPOINT-2026-11-26-tenth.md` to him.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
@@ -41,6 +42,10 @@ prompt is in `CHECKPOINT-2026-11-26-v8.md`.
       Praether's in Ch 37 (217), Devendra's text in Ch 39 (218). Bidwell's "somebody" is never named (CT).
 - [ ] **The Instagram synopsis**: fix the four things the book doesn't do, or leave it. Claude's answer is in the chat
       of 26 Nov; the check reruns with `find_in_book.py ... claims claims-instagram-synopsis.json`.
+- [ ] **From the tenth chat** (all in `CHECKPOINT-2026-11-26-tenth.md`, "Open with CT"): edit 226's held line; Grace's
+      winter away; five lines from the polish pass; edits 224 to 227 into the Doc; and the carried-over list (the gas
+      cap, "heard it as a murder", the "Creator Fund" line, the 19 empty paragraphs, the thin places, the Docs' names,
+      Drive's duplicates, the site's reader, the merge, the ISBN and the release build).
 
 ## 2. Chapters (one at a time; each is one edit with several ops rows)
 
@@ -116,6 +121,9 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
   `_workbench`, the Drive mirror once).
 
 ## Done
+
+- 26 Nov, tenth chat: the housekeeping list (the opening checker, the files brought to v8); edits 224 to 227; the
+  checkpoint and the prompt for the eleventh chat; the Drive mirror remade (edits 1 to 227).
 
 - 26 Nov, ninth chat: edits 221 to 223; v8 Doc and its backup; the v8 large print PDF; the bridge remade.
 

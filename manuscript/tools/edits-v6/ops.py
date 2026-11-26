@@ -1260,6 +1260,8 @@ The firelight moved across his face. Elijah took another drag. He wanted it to b
 (215, "Wren fainted at the cider press on Saturday and went right back to it.", "Wren fainted at the cider press on the busiest day and went right back to it."),
 (215, "The rain came Thursday and the county opened burn season Friday. On Sunday night, when the last car from Idaho had pulled out,", "The rain came at the end of the week, and the county opened burn season. On the last night, when the last car from Idaho had pulled out,"),
 (215, "What choosing for people looked like, he knew.", "He knew what choosing for people looked like."),
+# 216, Ch 38: the last gantry is the rover (CT, 26 Nov: "It's meant to be a rover. Not a gantry.")
+(216, "the gantry stood parked over bed four", "the rover stood parked over bed four"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

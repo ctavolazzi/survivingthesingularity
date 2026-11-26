@@ -3360,6 +3360,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+216. **Chapter 38: the last "gantry" is the rover.** CT (26 Nov): "It's meant to be a rover. Not a gantry." Book now:
+     "the gantry stood parked over bed four with its arm tucked up"; change to "the rover stood parked over bed four with
+     its arm tucked up". His reference for the machine: the Hiwonder JetAuto Pro
+     (https://www.hiwonder.com/products/jetauto-pro), a small four-wheel mecanum robot with an arm, lidar and a depth
+     camera. Logged only; not in the v6 Doc yet.
+
 215. **Chapter 36: festival week, Lou's squash row; one debt in the fire.** From the plan; written by Claude (Book now and
      Change to in `manuscript/novel/drafts/chapter-36.md`). Twenty people did the work of forty; Elijah picks Lou's row by
      hand; three day names out; "What choosing for people looked like, he knew." back to "He knew what choosing for people

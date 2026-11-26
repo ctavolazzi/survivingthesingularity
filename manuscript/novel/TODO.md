@@ -3,7 +3,7 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 216.** Chapters 27 to 36 are written (edits 206 to 215). Next: CT's yes-items (section 1 and 2a), then section 3.
+**Next edit: 217.** Chapters 27 to 36 are written (edits 206 to 215). Next: CT's yes-items (section 1 and 2a), then section 3.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 

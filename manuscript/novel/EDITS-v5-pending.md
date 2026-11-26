@@ -2343,6 +2343,28 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+176. **Chapter 26: the flooded bed is not the pond.** CT (26 Nov), on the recommendations. Since edits 104 and 166 the farm has a pond nearby; Chapter 26 called the flooded low spot "a pond" three times, which can read as that pond. Claude's wording.
+
+     1. Book now:
+     > the low spot at the end of bed three was a pond,
+
+        Change to:
+     > the low spot at the end of bed three was under water,
+
+     2. Book now:
+     > looked at the pond, and wrote it down.
+
+        Change to:
+     > looked at the water, and wrote it down.
+
+     3. Book now:
+     > He got down in the pond with his shoulder
+
+        Change to:
+     > He got down in the water with his shoulder
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

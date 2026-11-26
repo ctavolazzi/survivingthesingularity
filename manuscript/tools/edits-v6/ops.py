@@ -554,6 +554,13 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 175, Ch 31
 (175, "He had turned down the million dollars and the ads and the room. And these people",
 "He had turned down the million dollars and the ads and the room. That was his father in him: never take a handout. And these people"),
+# 176, Ch 26
+(176, "the low spot at the end of bed three was a pond,",
+"the low spot at the end of bed three was under water,"),
+(176, "looked at the pond, and wrote it down.",
+"looked at the water, and wrote it down."),
+(176, "He got down in the pond with his shoulder",
+"He got down in the water with his shoulder"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

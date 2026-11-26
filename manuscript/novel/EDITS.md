@@ -88,6 +88,15 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   There should be little bits where the reader is like, yeah, but I'm interested in this other thing that was going
   on over here ... The pond is where they should have like their first kiss, because obviously, right? Like
   obviously. I don't even know in the story where they have their first kiss right now."
+- CT: "one of the strongest ways that we can flesh things out is to have the characters ask each other questions and
+  then answer to the best of their ability, and have other characters interject to correct things that are wrong, but
+  be wrong about things as well. These characters are not infallible, and they're not just pawns in a plot to deliver
+  a sermon. I'm trying to figure out how to make them fully realized and have their story arcs really impart something
+  memorable. I don't feel like the text currently does that, and I feel like chapter 20 is where I personally am
+  starting to lose interest and where things are starting to get a little repetitive. We need to add some conflict.
+  We need to add some drama. We need to add obstacles for the characters to overcome. Like, we've just seen that they
+  can work together really well. They shipped 40 units. Things are going great. We need setbacks. We need problems.
+  We need challenges for them to face."
 - What the book has now (checked 26 Nov in make_v6.py's v6.txt): no kiss between Elijah and Grace anywhere. The
   closest moment is the end of Chapter 24, on the blanket by the amp ("her head came over and rested against the side
   of his, and stayed"). Marta's matchmaking is one line right after it ("she'd told Grace the same week that the

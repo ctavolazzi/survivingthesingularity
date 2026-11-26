@@ -71,18 +71,21 @@ Carried over from the housekeeping list (asked in this chat, not answered):
 
 Not for this list: the smell pass is its own chat.
 
-## The prompt for the next chat
+## The prompt for the next chat (an editing chat)
+
+CT, at the end of the tenth chat: "let's make a continuation prompt for editing in a new chat session." So the next
+chat opens ready for his edits. The "Open with CT" list above is there when he asks for it; it is not put to him first.
 
 ```
-We're finishing my novel, Surviving the Singularity. This is the eleventh logging chat. Spin up before you do anything
-else:
+We're finishing my novel, Surviving the Singularity. This is the eleventh logging chat, and it's an editing chat: I
+dictate edits, you log them. Spin up before you do anything else:
 
 1. Work on branch claude/singularity-publication-build-kparqk in both repos (ctavolazzi/survivingthesingularity and
    ctavolazzi/_workbench). Push every commit there, whatever branch this chat was given. Don't open or watch pull
    requests.
 2. Read, in this order: manuscript/novel/REFERENCE.md (start at section 1), manuscript/novel/CHECKPOINT-2026-11-26-tenth.md,
-   manuscript/novel/TODO.md, and all of manuscript/novel/WRITING-INSTRUCTIONS.md. Then STATE.md and the newest entry in
-   sessions/LOG.md in _workbench.
+   manuscript/novel/TODO.md, and all of manuscript/novel/WRITING-INSTRUCTIONS.md (section 4a is how I work a line).
+   Then STATE.md and the newest entry in sessions/LOG.md in _workbench.
 3. The book is the Google Doc "StS v8 draft (Nov 26)", id 1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8. Its base is the
    v5 Doc "StS v5 draft (Nov 23)", id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Read both with the Docs connector
    and save the reads to your scratchpad. Do not change either Doc, or the locked "StS v8 BACKUP (Nov 26), do not
@@ -92,24 +95,30 @@ else:
 
 Where we are (end of 26 Nov): v8 holds edits 1 to 223. Edits 224 to 227 are logged in GitHub only (the laser weeder and
 the brain organoid, the panel and Ruby, why Elijah waits, the polish pass). The PDF I have is "StS v8 large print
-CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf"; it doesn't have 224 to 227. The next edit is 228. What is
-open with me is in the checkpoint file, "Open with CT".
+CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf"; it doesn't have 224 to 227. The next edit is 228.
 
-First: show me the "Open with CT" list in one grouped message, short, and wait for my answers. Then do what I answer.
+Waiting on my word, in the checkpoint file under "Open with CT": Grace's winter away (my idea, not written), the line
+"It took under 6 months for him to change his mind" (held), five lines from the polish pass, and the older list. Don't
+put that list to me unless I ask for it. If an edit I dictate settles one of them, mark it settled.
 
 How I want it done:
-- Just do it. Anything that changes the book is logged the usual way (EDITS.md, a check row, ops rows, a record in
-  manuscript/novel/drafts/), make_v6.py, commit, push. Then tell me in a few lines what changed, every fact you
-  invented, and anything that touches another chapter.
-- My words go in word for word and are marked mine. When I restate a line, the last version is the line. Take the
-  dictation fillers out. Mark what you worded.
+- I dictate, you log. Find the passage in the built book, put my words in, log it the usual way (EDITS.md, a check row,
+  ops rows, a record in manuscript/novel/drafts/), run make_v6.py, commit, push. Then tell me in a few lines what
+  changed, every fact you invented, and anything that touches another chapter.
+- My words go in word for word and are marked mine. When I restate a line, the last version is the line; "there we go"
+  marks the keeper. Take the dictation fillers out ("like", "well", "he's like"). Mark what you worded.
+- When I say where my words stop ("you can connect it", "carry this through"), write the rest to the writing
+  instructions and tell me which words are yours.
 - When something I ask depends on a condition, check the pages for it, tell me what's in the way, log the rest and hold
   the one line.
+- Push back on continuity errors, contradictions and anything that confuses the reader. Not on my taste or my
+  decisions.
 - When I correct you, change the thing I named, keep the rest, and add the lesson to WRITING-INSTRUCTIONS.md in the
   same turn.
 - Read the pages before you claim anything about the book. Use the code (find_in_book.py, story_report.py,
   build_gate.py, openers.py) instead of tokens. Check every quote a reader returns.
 - A question from me gets an answer, not an action. Answer first, short. No em dashes.
+- Stay on the novel. Don't touch the site's code or tests unless I ask.
 - The smell pass is its own chat. Don't start it here.
 - Nothing gets trashed or deleted without my yes; old copies get "OLD:" in front.
 - Make a PDF only when I ask.
@@ -119,3 +128,11 @@ How I want it done:
 
 When you're done spinning up, tell me in one line that you're ready and that the next edit is 228.
 ```
+
+## After the checkpoint was written (same chat)
+
+CT asked why the GitHub run was failing. Two of the site's unit tests still expected v6 as the current copy
+(`tests/unit/novel-bridge.test.mjs`, `tests/unit/novel-doc-edit.test.mjs`); every push since v8 was made (run 650) had
+failed "build guard" on them. Both now expect v8 (commit `afec35c`). Locally the release tests, the type check, the
+build and the Cloudflare check pass. Nothing in the novel changed. If a later chat makes a new current copy, these two
+tests change with the bridge map.

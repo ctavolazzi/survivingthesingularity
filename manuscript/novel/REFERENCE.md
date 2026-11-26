@@ -165,6 +165,9 @@ for what it is ("v7" is taken by a frozen side copy).
 ## 6. Pitfalls learned
 
 - The newest checkpoint is `CHECKPOINT-2026-11-26-tenth.md` (what is open with CT, and the prompt for the next chat).
+- When the current copy changes in the bridge map, two site tests name it and must change too:
+  `tests/unit/novel-bridge.test.mjs` and `tests/unit/novel-doc-edit.test.mjs` (they kept "build guard" red from v8's
+  making until the tenth chat). Run `npm run test:release` after any change to `instances.json`.
 - A polish pass (edit 227): readers return candidates, every quote is machine-matched, and each is read on the page and
   checked for whose words it is before anything changes. Of 50 candidates, 20 were changed. CT's dictated lines, the
   done chapters, the ending and the fire were left; repetition on purpose and quips in light moments are not faults.

@@ -3,7 +3,7 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 215.** Next chapter: 36.
+**Next edit: 216.** Chapters 27 to 36 are written (edits 206 to 215). Next: CT's yes-items (section 1 and 2a), then section 3.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
@@ -50,7 +50,7 @@ Words are measured by `story_report.py` (27 Nov correction: the first table here
 | [x] | 33 A Poem About Tide Pools | 212 | 4,255 | 3,550 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
 | [x] | 34 A Guy With Arms | 213 | 2,320 | 2,410 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |
 | [x] | 35 Two Walnuts in One Fist | 214 | 1,686 | 1,305 | night scene cut to the walnut, "The man who refuses to launch it" and ALC; "They can. They just won't." fixed |
-| [ ] | 36 This Is the Gate | 215 | 2,167 | 2,175 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
+| [x] | 36 This Is the Gate | 215 | 2,167 | 2,175 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
 | [ ] | 24, a correction to edit 203 | 203 | | | at the stove: her father's drinking and her festival years; his pause about festival girls (after CT rules on "he left") |
 
 ## 2a. From the story report (`STORY-REPORT-2026-11-26.md`, section 9)

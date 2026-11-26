@@ -1254,6 +1254,12 @@ Elijah sat with it. He had filled eleven notebooks with the people who would lau
 "Money tells you what got sold. It doesn't tell you who didn't eat."
 Lou looked at the fire and didn't argue.
 The firelight moved across his face. Elijah took another drag. He wanted it to be that simple. For about as long as the joint lasted, it was."""),
+# 215, Ch 36: festival week, Lou's squash row; one debt in the fire (drafts/chapter-36.md)
+(215, "Twenty-two people did the work of forty for nine days.", "Twenty people did the work of forty for nine days."),
+(215, "Lou's bad knee, the one that was still his, swelled up like a grapefruit.", "Lou's bad knee, the one that was still his, swelled up like a grapefruit on the second day, and Elijah picked Lou's squash row by hand, the whole length of it, while Lou sat on a bucket at the end and told him he was doing it wrong."),
+(215, "Wren fainted at the cider press on Saturday and went right back to it.", "Wren fainted at the cider press on the busiest day and went right back to it."),
+(215, "The rain came Thursday and the county opened burn season Friday. On Sunday night, when the last car from Idaho had pulled out,", "The rain came at the end of the week, and the county opened burn season. On the last night, when the last car from Idaho had pulled out,"),
+(215, "What choosing for people looked like, he knew.", "He knew what choosing for people looked like."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

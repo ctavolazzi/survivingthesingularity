@@ -3360,6 +3360,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+215. **Chapter 36: festival week, Lou's squash row; one debt in the fire.** From the plan; written by Claude (Book now and
+     Change to in `manuscript/novel/drafts/chapter-36.md`). Twenty people did the work of forty; Elijah picks Lou's row by
+     hand; three day names out; "What choosing for people looked like, he knew." back to "He knew what choosing for people
+     looked like." (undoing edit 172's inversion; row 172 narrowed). The fire otherwise as written. 2,167 words to 2,208.
+     Logged only; not in the v6 Doc yet.
+
 214. **Chapter 35: the night scene cut to the walnuts, the man who refuses, and ALC; Lou lets Grace drop.** From the plan;
      written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-35.md`). Lou's second speech about
      mothers and "mutually assured survival" come out; "What's Grace say about the arms?" "She hasn't said." and he lets

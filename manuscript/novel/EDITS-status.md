@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 69.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 70.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -225,3 +225,4 @@ Edit 57 was never used.
 | 212 | Ch 33 | not in the Doc | It was Denny's. Elijah swung the gate open. |
 | 213 | Ch 34 | not in the Doc | "My granddad had wheat out by Ritzville," he said. |
 | 214 | Ch 35 | not in the Doc | That's what Patricia's doing. |
+| 215 | Ch 36 | not in the Doc | Twenty people did the work of forty for nine days. |

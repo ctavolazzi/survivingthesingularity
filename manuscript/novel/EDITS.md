@@ -139,6 +139,29 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   she's still a little mad. You can see it in her eyes ... She squints to show him that she's mad, but grins just a
   little bit. And she's like, I want frozen yogurt. And that makes them go to the store where Tyler is, where they
   have whatever pivotal conversation they have with Tyler."
+- CT, on visiting Ma (after Claude's push-back that a visit home would break the visitor book in Ch 37): "I feel like
+  that's fine ... he wants to go, he means to go. But it's just, it's too hard. And like, she's not even there anyway.
+  And maybe one of the characters can even say that to him on the farm. Like, he's packing up, he's getting ready to
+  leave. Because he feels like he just has to. He feels like he should. But then maybe someone, I don't know who, can
+  ask him questions like, what are you going for? ... He's like, just to see her, just to show up. Like, I need to go
+  see her. It's the right thing to do. And then they're like, I mean, is it? He's like, he just like looks at them
+  like stunned. What do you mean? I mean, you said so yourself, like, all she says is Barry. And he's like, yeah, but
+  she can still recognize me. Like, she still knows that I'm there. And like, does she? And he's like, I'm going. All
+  right. And then he goes. And he gets maybe 100 miles before that check engine light comes back on. And he realizes
+  that he really doesn't have enough money to fix it if it breaks on the road. He doesn't have anyone to ask. He can't
+  take money from the fund that pays for his mom's care. And the best bet he has to get that money is on the farm
+  with these people. He thinks through, like, maybe he could sell, go back to doing music ... Maybe he could make
+  some art, sell it on his page ... But as he's thinking through the options, parked at a truck stop, he remembers
+  the $17 shower and how desperate that felt and how awful that was. And he realizes he, even though he does have just
+  enough to get there and back with gas, food, and everything else, at this point in time, it's just too big of a
+  risk. And that just fucking eats him up, just tears him up. He gets emotional. A single tear slips out of his eye.
+  He puts the truck in drive and flips a U and heads back towards the farm. Disappointed in himself for a whole bunch
+  of reasons. He shows back up in the next part, or maybe the next chapter, and everybody's like, we thought you were
+  going home. Not everybody, but like, you know, the people that knew ... Grace is excited, right? She sees him come
+  back and she tries to hide her excitement, but she can't really hide it. Marta notices that Grace is excited. Lou
+  notices that Grace is excited too. And if we weave it into the right part, then maybe this would be like Lou maybe
+  realizing that those two like each other. Or if he's already known ... him like confirming something that he
+  already knew. I don't know. You can read enough of the book to figure it out ... Let's finish the fight."
 - What the book has now (corrected 26 Nov; Claude first told CT there was no kiss, which was wrong): one kiss, in
   Chapter 25, in the shouse after a Friday dinner ("she leaned down and kissed him, once, and stayed there with her
   forehead on his"), and her truck still in the gravel the next morning. Earlier in Chapter 25: Marta's scene ("You

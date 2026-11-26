@@ -109,6 +109,8 @@ the fall, at the pond, and every step toward it is a scene where one side of Gra
 
 **The steps (each one shows her, none lists her)**
 
+(Rows for Chapter 25 are replaced by "The shape of the romance" below the table.)
+
 | Where | The moment | What it shows | What stops it |
 |---|---|---|---|
 | Ch 16 to 18, KEEP | Her hand on his forearm; the plate she stands over; "Okay, Mr. Grumpy Pants"; the soup jars | Caring, a little bossy, silly | They've just met. He has nothing |
@@ -181,6 +183,35 @@ section 6. Claude's working-out:
   moved: Tyler's "I could've started looking in March"; Grace's "You knock, Elijah.") Third time his silence has
   cost someone: the starts, the journal, Frank and Tyler.
 - **That week: he decides to go, and the pond.** CT's kiss scene, above. He stays.
+- **Thanksgiving 2025, end of Ch 25: the drive home that turns around (CT's scene, his words in `EDITS.md`).** Where
+  it goes and who does what, worked out from the book:
+  - **When.** Chapter 25 already stands at this date: Devendra, on the phone, about the bet: "Not till Thanksgiving.
+    You've got two years." About a month after the pond. She kissed him, he has said nothing since, and now he is
+    loading the truck. He says it's to see his mother. She can't be sure he's coming back.
+  - **Who asks the questions: Lou.** It is his method, in the book's own words (Ch 20): "He asked you about three
+    questions first, to find out where you were standing, and then he told you one thing." CT's scene is three
+    questions: what are you going for; is it; does she. Lou has guarded those Sunday calls from the pump house steps
+    since Ch 17, so "you said so yourself, all she says is Barry" is true to him (one small line earlier, where Elijah
+    tells him). And Lou is wrong, which the book needs him to be once: this is the man whose own mother worked nights
+    while he said the Our Father in the back seat. He asks out of kindness, or for the farm, or for Grace. He isn't
+    sure which, and neither are we.
+  - **Curtis is at the truck.** In June he fixed the check-engine light in nine minutes: "A cracked vacuum line. Two
+    dollars of hose," and "left the rest of the hose on the dashboard." It is in the glove box still (Ch 23, Ch 37).
+    So the Thanksgiving leaving has the same two men in the same two places as the real one in Ch 37: Lou on the
+    step, Curtis under the hood. The reader will feel the second one because of the first.
+  - **A hundred miles out** the light "comes back on." He has Curtis's hose and no idea whether this is two dollars
+    or the dealership's twelve hundred. The truck stop. In the book: "In Stockton seventeen dollars had been a shower"
+    (Ch 12, Ch 15). Music, art, his page: he runs the options (the Telecaster is in a pawn window on Fourth Street
+    since May). He "can't take money from the fund that pays for his mom's care." A single tear. The U-turn.
+  - **What it turns.** "The best bet he has to get that money is on the farm with these people." So he tells Grace
+    yes: bring the pay to the table. The letter scene's fight is settled by a truck, the vote comes in Ch 26, and it
+    passes at half.
+  - **Coming back.** Those who knew: "we thought you were going home." Grace tries to hide it and can't. Marta sees.
+    Marta has watched the two of them since summer ("the way she watched a weld cool"). For Lou it is the confirming
+    of what he half knew, and it lands on top of the three questions he asked that morning. Lou and Marta look at
+    each other. From here they are in it together, and it takes them a year.
+  - Possible, CT's call: Curtis plugs in the fourteen-dollar gadget when he's back, and it was nothing. He could
+    have made it.
 - **The year, fall 2025 to fall 2026, Ch 25 to 26.** She knocked. By her own rule the other person gets to answer,
   and she won't knock twice. He doesn't answer: the coworker, the rule, the fear. Everyone knows. Glances at the
   Friday table (CT). Outside things keep taking the moment: the couple's bad year, the models going dark, the pay
@@ -205,6 +236,8 @@ section 6. Claude's working-out:
     forty greenhouses, and it's June again. Then the aide calls back: she's all right, "she's got company." He takes
     it for the church, the way he did in Ch 22 ("She's waiting on her Sunday company." He took it to mean the church).
     It is David. He stays, relieved, and ashamed of being relieved.
+    - It does not repeat Thanksgiving. That time the truck and the money stopped him. This time Grace takes both
+      away ("I'll drive") and the only thing left stopping him is him.
     - Why there: the farm truly needs him that week, so staying is defensible and still wrong. Grace told him to
       go to his mother once and he didn't; at the fire, "That's your mother" and "Maybe you should go home" land on
       that. And David's line in Ch 39 gets heavier without a word of it changing.
@@ -290,21 +323,34 @@ serves section 2.
 - **CHANGE**: Grace stays fifteen feet from the stove, as written. When she needs air they walk to the pond. It is
   the first time the pond is a place. (Ch 17: "this is a pretty good bleed-out spot." He can tell her that.)
 
-### Chapter 25: Long Enough to Laminate (fall 2025)
-- **KEEP**: Frank's store, "You knock, Elijah," Marta's scene ("You like her." ... "Don't make me sorry."), the amp
-  night and the truck song, her truck in the gravel in the morning.
-- **CHANGE, CT**: the kiss moves from the stove to the pond. It also fixes a slip: Ch 32 says she kept as far from
-  his stove as she could for a year and a half, and the kiss scene now has her beside it.
-- **NEW** (small): the morning Tyler loses his job at Kowalski's, on the page.
-- Setup for the kiss, in order: the forearm (Ch 16, 17), the soup (Ch 18), she stops him (Ch 22), the stove and the
-  walk (Ch 24), Marta's push and the amp (Ch 25), the pond.
+### Chapter 25: Long Enough to Laminate (fall 2025, through Thanksgiving)
+The detail is in section 5a. In order:
+- **KEEP**: Frank's store and the laminated paper; the chart Elijah sat on for nine months; Devendra's call.
+- **NEW, CT**: the letter to Ma, Grace on his desk, the first tiff (his pay and the table), ice cream, frozen yogurt.
+- **CHANGE**: town. Tyler at the register, the store's end, "I could've started looking in March," Grace's "You knock,
+  Elijah." (all KEEP, now one afternoon, with Grace there).
+- **NEW, CT**: the last reworked board ships. He packs. The pond, the kiss that keeps him. She walks off happy.
+- **NEW, CT**: Thanksgiving. Lou's three questions, Curtis at the truck, a hundred miles, the truck stop, the U-turn.
+  He comes back. Grace can't hide it. Marta and Lou see.
+- **MOVES to the end of Chapter 26** (a year later, nearly whole): Grace at her festival and his jealousy, Marta's
+  scene, the amp night and the blanket. **Comes out**: the kiss by the stove, "I didn't wait," her truck in the gravel.
+- Emotions: Elijah, shame (three silences now), then the stun of being wanted, then the smaller shame of the
+  U-turn. Grace, frustration, nerve, joy, and a month of not knowing. Cost that stays: Frank's store, Tyler's job,
+  a Thanksgiving with his mother.
 
 ### Chapter 26: The Indignant Worm (spring to October 2026)
-- **KEEP**: the soil trial, the gantry, the flood and the three-four-five string, the models going dark, pay at half.
-- **CHANGE**: one short scene of them as a couple in place of "where she slept now."
-- **CHANGE**: the pay vote costs Grace something with Curtis and Denny, said to her face. The seed of Denny's leaving.
-- **NEW** (small): Mrs. Delgado on the Coyote Flat stop, seen once, through Rosa or Grace. The fire needs her.
-- **NEW**: the replacement starts didn't all take. "Another October like the last one" (Ch 34) is this October.
+- **KEEP**: the soil trial, the gantry, the flood and the three-four-five string, the models going dark, the pay
+  vote at half, the checks he won't cash, the probe-depth lesson.
+- **CHANGE**: "wearing his shirt" and "where she slept now" come out. They are not together yet. Everyone at the
+  table knows what is going on except, apparently, the two of them. The glances (CT). Lou and Marta, watching.
+- **CHANGE**: the pay vote. Grace brings it because he finally said yes, and Curtis asks "why you and not Denny"
+  looking straight at her. The seed of Denny's leaving.
+- **NEW, CT**: June, the models dark: Ma's fall, Grace's "I'll drive," and he stays.
+- **NEW** (small): Mrs. Delgado on the Coyote Flat stop, seen once. The fire needs her.
+- **NEW**: the replacement starts didn't all take. "Another October like the last one" (Ch 34) is this October,
+  and it is why Grace can't go to her festival.
+- **MOVED HERE, CT**: October. Marta's push ("You like her." ... "Don't make me sorry."). He sets the Loudbox on the
+  tailgate at the pond and plays her music until the light goes. The blanket. He kisses her. Her truck in the gravel.
 
 ### Chapter 27: Blueprints of a Wall (November 2026 to February 2027)
 - **KEEP**: the fire video, eleven towns, the vote to give the plans away, the $49 knockoff, Patricia's pledge, the well.

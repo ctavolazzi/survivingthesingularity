@@ -1113,6 +1113,25 @@ Some nights he drove out and looked at the barn from the road. He couldn't have 
 (209, "\"Yeah, man,\" Lou said. \"She did.\"", "\"Yeah, my man,\" Lou said. \"She did.\""),
 (209, "On Thursday he ran a whole coupon", "By the end of the week he ran a whole coupon"),
 (209, "Friday he ran it again.", "The next day he ran it again."),
+# 210, Ch 31: Denny leaves, "Nothing that mattered" on the page, the roster cut (drafts/chapter-31.md)
+(210, ("He stood in front of the roster with his coffee and finally saw the whole thing.", "and it would never let him drive.\n \nHe didn't go to the shop that week."),
+"""He stood in front of the roster with his coffee and finally saw the whole thing.
+He would not do it the city's way. He had turned down the million dollars and the ads and the room. That was his father in him: never take a handout. And these people would not do it his way. They would rather stay small and broke and good, and ask the county for it every six months.
+The farm would feed him every Friday for the rest of his life, and it would never let him drive.
+Two days later Denny waved him up onto his porch. Yvonne's car was gone; she was on nights again.
+"I called Spokane back," Denny said. "Forty-two and the truck. I start the first."
+Elijah stopped on the step. "Because of the plan."
+"Because you said it out loud." Denny turned his cup a quarter turn on the porch rail. "You stood up and told the table what my bench is worth to a tool company. Then they voted you half pay, and I've been on that bench seven days a week for nothing. Yvonne's on nights so I can do it."
+"I didn't mean it like that."
+"I know you didn't. That's why I'm telling you, instead of just going." He looked out at the beds. "I'll give it a year. Maybe I'm wrong."
+He was gone by the weekend. Tyler had the tripod, and nobody knew what to post.
+
+He didn't go to the shop that week."""),
+(210, "He had blocked Melody's number two and a half years ago, and he could still hear it.", "He had blocked Melody's number two and a half years ago, and he could still hear her say it."),
+(210, "\"I should have heard it.\"\nHe took it.", "\"I should have heard it.\"\nHe took it.\nGrace came back after dark with a plate from the grange hall under a dish towel. She set it on the stove to keep warm and sat on the floor with her back against the woodbox.\n\"What did I say?\" he said. \"Last night.\"\nShe looked at the stove. Her mouth opened, and closed again. He watched her decide.\n\"Nothing that mattered,\" she said, and squeezed his arm.\nHe believed her because he wanted to."),
+(210, " Later he had asked Grace what he'd said to her that night in the shouse, and she'd said, \"Nothing that mattered,\" and squeezed his arm. He believed her because he wanted to.", ""),
+(210, " Nobody answered for him. That was fair. But nobody told Patricia it wasn't her business, either.", ""),
+(210, " He had never been any good at staying.", ""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

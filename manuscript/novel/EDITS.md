@@ -3360,6 +3360,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+210. **Chapter 31: Denny leaves; "Nothing that mattered" on the page; the roster cut.** From the plan (CT: "Denny leaves
+     and comes back"); written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-31.md`). Denny on his
+     porch, "Because you said it out loud," gone by the weekend; Grace deciding, in front of us, to say "Nothing that
+     mattered" (its summary in Ch 32 comes out); the roster paragraph cut to CT's lines about his father; two line flags.
+     Rows 58, 172, 175, 182 and 187 narrowed or updated. Ch 31, 2,996 words to 3,146. Logged only; not in the v6 Doc yet.
+
 209. **Chapter 30: Priya and Grace the night before, Denny's last video, Lou's "my man".** From the plan and CT's ask
      ("Priya and Grace need to talk"); written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-30.md`).
      Priya on one number and the red light; Grace, "You open with who," and a name on the back of her hand, which turns

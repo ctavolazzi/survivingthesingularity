@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 64.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 65.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -197,7 +197,7 @@ Edit 57 was never used.
 | 184 | Dedication | not in the Doc | like I'd finally lost it. / Recognize Your Power / Act One |
 | 185 | Contents, Dedication | not in the Doc | Contents / Dedication / Act One |
 | 186 | End | not in the Doc | Thursday, November 25, 2027. Thanksgiving. / Thank You / Thank you ... |
-| 187 | Ch 31 | not in the Doc | He took it. / The next Sunday at 9:40 he called the rose garden. |
+| 187 | Ch 31 | not in the Doc | He believed her because he wanted to. / The next Sunday at 9:40 he ... |
 | 188 | Ch 15 | not in the Doc | Somewhere past Cloverdale the check-engine light came on. / Elijah ... |
 | 189 | Ch 18 | not in the Doc | Don't let her effort go to waste." She straightened up and looked h... |
 | 190 | Ch 20 | not in the Doc | Elijah had no idea. He was a little ashamed of that. / So Lou showe... |
@@ -220,3 +220,4 @@ Edit 57 was never used.
 | 207 | Ch 28 | not in the Doc | came up the valley in December. |
 | 208 | Ch 29 | not in the Doc | Yvonne Osei, Denny's wife, worked nights at the care home in Ardell |
 | 209 | Ch 30 | not in the Doc | The night before the county meeting Priya found Grace in the kitche... |
+| 210 | Ch 31, 32 | not in the Doc | Two days later Denny waved him up onto his porch. |

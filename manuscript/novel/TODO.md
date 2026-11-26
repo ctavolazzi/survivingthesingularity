@@ -3,7 +3,7 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 210.** Next chapter: 31.
+**Next edit: 211.** Next chapter: 32.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
@@ -45,7 +45,7 @@ Words are measured by `story_report.py` (27 Nov correction: the first table here
 | [x] | 28 Hello, Ridge | 207 | 1,125 | 1,105 | overnight, not three days; power when it counts; the Ochoas' house drops off the map; Lupe on the radio |
 | [x] | 29 Ink and Pencil | 208 | 1,821 | 1,885 | Denny argues ("I'm not burned out. I'm unpaid."); Lupe: "Somebody quits"; Tyler says yes; Priya logs the 3 a.m. address; the welder gap |
 | [x] | 30 Item Seven | 209 | 2,074 | 2,030 | Denny films his last one; Lou's "my man" |
-| [ ] | 31 Six Eggs on the Floor | 210 | 2,996 | 2,910 | Denny's goodbye on his porch; "Nothing that mattered" on the page |
+| [x] | 31 Six Eggs on the Floor | 210 | 2,996 | 2,910 | Denny's goodbye on his porch; "Nothing that mattered" on the page |
 | [ ] | 32 The Rubber Band | 211 | 2,100 | 2,670 | the late payment, the missed stop, the April quarrel, frozen yogurt, the coffee can on the table (plan, 10.3); Denny out of the juniper; Frank's chart |
 | [ ] | 33 A Poem About Tide Pools | 212 | 4,255 | 3,550 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
 | [ ] | 34 A Guy With Arms | 213 | 2,320 | 2,410 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |

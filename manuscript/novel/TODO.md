@@ -3,7 +3,7 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 212.** Next chapter: 33.
+**Next edit: 213.** Next chapter: 34.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
@@ -47,7 +47,7 @@ Words are measured by `story_report.py` (27 Nov correction: the first table here
 | [x] | 30 Item Seven | 209 | 2,074 | 2,030 | Denny films his last one; Lou's "my man" |
 | [x] | 31 Six Eggs on the Floor | 210 | 2,996 | 2,910 | Denny's goodbye on his porch; "Nothing that mattered" on the page |
 | [x] | 32 The Rubber Band | 211 | 2,100 | 2,670 | the late payment, the missed stop, the April quarrel, frozen yogurt, the coffee can on the table (plan, 10.3); Denny out of the juniper; Frank's chart |
-| [ ] | 33 A Poem About Tide Pools | 212 | 4,255 | 3,550 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
+| [x] | 33 A Poem About Tide Pools | 212 | 4,255 | 3,550 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
 | [ ] | 34 A Guy With Arms | 213 | 2,320 | 2,410 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |
 | [ ] | 35 Two Walnuts in One Fist | 214 | 1,686 | 1,305 | night scene cut to the walnut, "The man who refuses to launch it" and ALC; "They can. They just won't." fixed |
 | [ ] | 36 This Is the Gate | 215 | 2,167 | 2,175 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
@@ -66,6 +66,9 @@ Need CT's yes:
 - [ ] Ch 13: the sale of the farm as a scene.
 - [ ] The seven continuity items in the report, section 6 (Ch 5, 11, 13, 15, 19, 26 and the ending).
 - [ ] Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate.
+- [ ] Chapter 33's tomato dinner: cut the cotton gin numbers, the saber-tooth and the rent, and "Pull apart what it takes
+      to stay alive" (they say the Afterword's argument a second time; about 400 words). They may be CT's own words, so
+      not cut without his yes.
 - [ ] The name of the next build, and "OLD:" on the frozen v7 Doc (`NEXT-BUILD.md`, section 1).
 
 ## 3. After Chapter 36

@@ -3360,6 +3360,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+212. **Chapter 33: Denny comes back; "I sold it to them"; the tomato dinner trimmed.** From the plan (CT: Denny leaves and
+     comes back); written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-33.md`). Denny at the gate
+     with a script and a company polo, "Nobody ran me off. That was me."; Elijah tells the table he sold his mother's
+     place to them and answers Reuben; the second "Listen to me" comes out. The rest of the planned cut to Lou's dinner
+     speeches waits on CT (they may be his). Row 182 narrowed. 4,255 words to 4,363. Logged only; not in the v6 Doc yet.
+
 211. **Chapter 32: the late payment, the missed stop, the April quarrel, the coffee can.** CT's ask of 26 Nov (the missed
      payment echoing his mother; a worse quarrel than the first; he apologizes; frozen yogurt; "it's his fault, or so he
      thinks"), to the plan's section 10.3; written by Claude (Book now and Change to in

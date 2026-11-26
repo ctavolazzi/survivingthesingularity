@@ -1180,6 +1180,11 @@ That Friday he brought the ledger to the table himself. He told them the payment
 "One month I can wait," Irene said, from the head of the table. "Three I can't. Dale reads the papers too."
 It went on the trust's record as one late payment, with the clock still running."""),
 (211, "A wood base Denny cut him from a pallet.", "A wood base Frank cut him from a pallet."),
+# 212, Ch 33: Denny comes back, "I sold it to them", the tomato dinner trimmed (drafts/chapter-33.md)
+(212, "He wrote it under the others. His hand wasn't steady.", "He wrote it under the others. His hand wasn't steady.\nHe was still at the gate when a truck came up the county road, slowed, and stopped with its blinker on. It was Denny's. Elijah swung the gate open.\nDenny rolled the window down. He had on a company polo with a saw blade over the heart.\n\"They gave me a script,\" he said. \"Every video. What to say about the saws, and what not to say about anything else.\" He looked past Elijah at the beds. \"Nobody ran me off. That was me. I want that straight.\"\n\"Okay.\"\n\"Yvonne says I'm a pain in the ass to live with when I'm not on the porch.\" He put the truck in gear. \"Is Friday still Friday?\""),
+(212, "\"I think so. I think it's on my mom's old place.\"", "\"I think so. I think it's on my mom's old place.\" He made himself go on. \"I sold it to them. My mother's place. Three letters and an LLC.\" He looked down the table at Reuben. \"You asked me why you had to go and look. I didn't want anybody up here to know.\"\nReuben nodded, once, and wrote something on the tab of his folder."),
+(212, "It went around again, all of them at once, Tyler asking what people are even for if a robot does everything, Wren saying that was the only question and nobody ever lets her ask it, Patricia saying this was why she didn't come on Fridays.\nLou let it run. Then he put one hand up, flat, like he was stopping a truck at a gate.\n\"Listen to me,\" he said again. \"Please.\"\nHe waited until he had them.\n", "Lou put one hand up, flat, like he was stopping a truck at a gate, and waited until he had them.\n"),
+(212, "Denny had stopped turning his glass.\n", ""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

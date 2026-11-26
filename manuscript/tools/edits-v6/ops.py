@@ -342,6 +342,8 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 146, Ch 6
 (146, """"Head down," she said. "For me."\nHe didn't put his head down. He didn't know how anymore.""",
 """"Keep your head down and stay focused for me," she said.\nHe meant to. He wanted to. But life gets in the way sometimes."""),
+# 147, Ch 6
+(147, "For a year he had explained it to every one of them, one at a time.", "For a year he had tried explaining it to each of them one at a time."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -1557,6 +1557,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+147. **Chapter 6: "For a year he had tried explaining it to each of them one at a time."** CT (26 Nov), confirmed: "Yes,
+     that's what I want." Book now:
+
+     > For a year he had explained it to every one of them, one at a time.
+
+     Change to [CT's words]:
+
+     > For a year he had tried explaining it to each of them one at a time.
+
+     The rest of the paragraph ("He'd explained it across the bar and over the gate latch and in the van...") stays.
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

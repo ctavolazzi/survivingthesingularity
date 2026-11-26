@@ -577,6 +577,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 180, Ch 17
 (180, "He looked around the table, then back.\n\"You know what I asked him?",
 "He looked around the table, then back at Elijah.\n\"You know what I asked him?"),
+# 181, Ch 17
+(181, "The warm place on Elijah's arm stayed warm, but something behind it had gone quiet.",
+"The warm place on Elijah's arm stayed warm, but under it was a question he hadn't had a minute ago. Agreed on what?"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

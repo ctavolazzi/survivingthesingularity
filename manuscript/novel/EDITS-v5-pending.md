@@ -806,8 +806,8 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      Context from CT, NOT for the page: "marketing" is deliberate. Elijah is a creator, not a marketer: he has done
      code, social media and some good videos, and has not really sold anything. Curtis's line is the slip: they
      want him for something he has no experience in. Nothing in the book needs to fix that.
-     **Open, for CT:** the touch lines and "Your knowledge earns your keep here, Elijah. That's all." are Claude's
-     wording for his beats; "marketing" is his word. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
+     **Settled by CT (26 Nov):** the touch lines and "Your knowledge earns your keep here, Elijah. That's all." stay
+     (Claude's wording for his beats; "marketing" is his word); the last line is changed by edit 181. The Chapter 17 notebook ending ("Ask. Don't guess." / "What's your solution?") is unchanged.
 
 110. **Chapter 17, Rosa at the door: she says "mijo" out loud.** CT: before the book says she called them mijo,
      "she needs to say the word mijo": "Mijo, you look muy flaco. Come in, eat." She "reminds him of some of his
@@ -2432,6 +2432,21 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Change to [Claude's wording, approved by CT: "Yes."]:
 
      > He looked around the table, then back at Elijah.
+
+     Logged only; not in the v6 Doc yet.
+
+181. **Chapter 17, the town kitchen: "Agreed on what?"** Settles the open question under edit 109. CT (26 Nov): "Clarity
+     and continuity ... Those are the key things." Claude's read: the touch lines and "Your knowledge earns your keep" are
+     clear and stay; the last line was too vague to follow. The new one plants the question edit 127 picks up in
+     Chapter 19 ("wondering what, exactly, Curtis and Grace had agreed on"). Book now:
+
+     > Curtis shut the cooler lid. Nobody said anything else. The warm place on Elijah's arm stayed warm, but
+     > something behind it had gone quiet.
+
+     Change to [Claude's wording, approved by CT: "Yes."]:
+
+     > Curtis shut the cooler lid. Nobody said anything else. The warm place on Elijah's arm stayed warm, but under
+     > it was a question he hadn't had a minute ago. Agreed on what?
 
      Logged only; not in the v6 Doc yet.
 

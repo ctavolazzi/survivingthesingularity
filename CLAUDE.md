@@ -55,6 +55,7 @@ Before writing any line for the book, read "Writing a beat for CT" in
   His friends aren't." CT called the shape AI-sounding (edits 119 and 174) and, 26 Nov: "We've already established that
   we can do better than this." People talk in their own trade and habits, half-finished, concrete, sometimes wrong; a
   line that sounds built to be quoted is the wrong line.
+- No beat-counting: "He read it twice. Then he wrote back." (CT: "Don't do the pattern.") Go straight to the action.
 - When he corrects a line, add what was learned to that section of the procedure file.
 
 ## Routes and data

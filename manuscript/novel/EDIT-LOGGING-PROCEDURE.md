@@ -137,6 +137,9 @@ the third "a little too much". What the one he took does:
 - Leave room for CT's line. He added the feeling himself ("All his pent-up pain started rolling out of his lungs at
   once."). Claude writes the action plainly; the sentence that names the emotion is his to give.
 - Offer one version, sized in the middle. If he says dry, add one step, not five.
+- No beat-counting pattern: "He read it twice. Then he wrote back." (edit 196). CT: "Don't do the pattern." The book
+  already leans on reading or watching a thing a counted number of times, and on a short fact followed by "Then he
+  ...". Go straight to the action.
 - Don't bring back a problem already fixed. The mirrored contrast line ("It's not X. It's Y."; "They can. They just
   won't."; Claude's own "He's on this side of the fence. His friends aren't.", 26 Nov) was edited out in 119 and 174.
   CT: "I don't want you to introduce like previous problems that we've already overcome ... We've already established

@@ -3151,7 +3151,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      >
      > You don't know what you're talking about. That's never going to happen.
      >
-     > He read it twice. Then he wrote back. Oh, Mr. Ostrander, it's really nice to hear from you. Hope everything's good. Hope you're well.
+     > Oh, Mr. Ostrander, Elijah wrote back. It's really nice to hear from you. Hope everything's good. Hope you're well.
      >
      > The answer came before he'd set the phone down. Cut the crap, kid. You're out of your league here. You have no idea what you're talking about. This isn't going to happen. This isn't true. And you need to stop spreading fear online.
      >
@@ -3169,7 +3169,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      The rattle is the senator's office in the next line ("A senator's office wanted fifteen minutes"), which echoes
      the night the video spread (the phone "rattled against the grille"). Earl's line just before ("You're telling
-     scared people to be more scared") is echoed on purpose. Logged only; not in the v6 Doc yet.
+     scared people to be more scared") is echoed on purpose. Corrected the same day, in place: "He read it twice. Then
+     he wrote back." cut. CT: "Don't do the pattern." Logged only; not in the v6 Doc yet.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

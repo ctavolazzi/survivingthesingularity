@@ -97,6 +97,12 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   We need to add some drama. We need to add obstacles for the characters to overcome. Like, we've just seen that they
   can work together really well. They shipped 40 units. Things are going great. We need setbacks. We need problems.
   We need challenges for them to face."
+- CT: "I love the way the book ends. It made me cry ... The end of the book is really good. I think we close out a lot
+  of threads ... The argument between Grace and Elijah is pivotal, but the events leading up to the fire, all of the
+  things that they've been through together, all of the challenges that they've overcome, the setbacks that they
+  face, losses. There needs to be, like, stakes. Somebody needs to leave the farm. And it hurts. They leave for greener
+  pastures. They give up. They decide that it's not worth it. Like, they give up on the vision too soon. That's a
+  normal thing that would happen." So: Chapter 37 to the Epilogue stay; the work is Chapters 20 to 36.
 - What the book has now (checked 26 Nov in make_v6.py's v6.txt): no kiss between Elijah and Grace anywhere. The
   closest moment is the end of Chapter 24, on the blanket by the amp ("her head came over and rested against the side
   of his, and stayed"). Marta's matchmaking is one line right after it ("she'd told Grace the same week that the

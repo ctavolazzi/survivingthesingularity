@@ -47,15 +47,25 @@ He had the names wrong, and he didn't care.
 
 "I'll keep my tinfoil hat handy," Elijah said.
 
-The grimace went, and Praether threw him a smile. "You sure will. I like this one." He looked at Grace. "Don't let him go."
+"You messing with me, son?"
+
+"You messing with me? You're not one of those reptilians, are you?"
+
+Praether looked at him. Elijah looked back.
+
+"I'm not trying to help no lizard people," Elijah said.
+
+That was when Praether laughed. "I like this guy." He looked at Grace. "Don't let him go."
 
 "I, uh," Grace said. "I…"
 
-"So you're going to have them shipped up here?" Praether said.
+"All right, yeah, we're good. You can keep your arms here. It's going to be all right." Praether wiped his eye with a knuckle. "So you're going to have them shipped up here?"
 
 "You betcha. They'll be here on Wednesday."
 
-"Cool. I'll have the door unlocked. You can just have whoever it is put them right in the barn. I'll keep them there as long as I can. If something else comes up, I'll let you know."
+"Cool. I'll have the door unlocked. You can just have whoever it is put them right in the barn. I'll keep them for as long as you need me to. Unless something else comes up. I'll let you know."
+
+He never did.
 
 Elijah thanked him, and he and Grace walked off down the drive.
 

@@ -3617,6 +3617,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      down flat on his porch boards"; "Lou watched him do it and said nothing."; in Chapter 18, "Richard give you the
      speech?", "The military-industrial complex," and "Good. Keep it that way." Tyler at the hardware store still
      names Praether's barn first (Chapter 19 says he sent Elijah out there).
+     Corrected in place the same day. CT: "I don't think actually they would bond over just a tinfoil hat comment.
+     Richard would push back." His: "You messing with me, son?", the reptilians, the look, "I'm not trying to help no
+     lizard people", the laugh, "I like this guy. All right, yeah, we're good. You can keep your arms here. It's going
+     to be all right. I'll keep them for as long as you need me to. Unless something else comes up, I'll let you know."
+     and "And then he doesn't" (on the page: "He never did."). Out: "The grimace went, and Praether threw him a smile.
+     You sure will. I like this one." and "as long as I can". Claude's: "Praether wiped his eye with a knuckle."
      Rows 88, 205, 220 and 222 narrowed. Record: `manuscript/novel/drafts/edit-230-praether-and-lou.md`. Logged only;
      not in the v8 Doc yet.
 

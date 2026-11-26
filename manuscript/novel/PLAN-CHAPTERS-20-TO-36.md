@@ -153,10 +153,23 @@ section 6. Claude's working-out:
   sits on his desk. Their first tiff. "Why can't you just ...?" / "Because it's just, it's not fair." / "Fair to who?"
   / "I don't know. Don't worry about it." / "You're almost 40 and these are your conflict resolution skills?" He lets
   it go, takes her hands, offers ice cream. "I want frozen yogurt."
-  - What she wants (CT left it open; Claude's proposal): he has been redoing all forty boards alone, by hand, since
-    July, and won't let Tyler help. "Why can't you just let Tyler help you?" Not fair to Tyler, who already took the
-    blame for him once, and who isn't paid. He can't say that without saying the rest. It is the fire in small: there
-    she asks why he can't just make one phone call, and he holds to a principle he can't explain to her.
+  - What she wants. CT left it open, then: "review everything that you can review within reason and try to answer
+    those questions for yourself." Claude's answer, from the book: **she wants to bring his pay to the Friday table, and
+    he won't let her.** She promised it twice and it is still hanging: "I want to pay you" (her first message, Ch 15)
+    and "It has to go to the table ... I'm good for it. I promise" (Ch 16). He has no money: in Ch 18 he "did the
+    arithmetic on his mother's room four times, arriving at four different terrifying dates." He is writing to the
+    mother whose room that is. And this is the fall after the starts cooked and six households canceled. "Why can't
+    you just let me bring it to the table?" / "Because it's just, it's not fair." / "Fair to who?" Fair to the people
+    who would have to vote yes: the couple, Denny on the bench seven days for nothing, Tyler. He can't say it without
+    sounding like he is judging her promise, so: "I don't know. Don't worry about it."
+    - Why this one: it is the fire with the same two people in the same two places. She wants to push something
+      through the table for someone she loves. He says it isn't fair to the people who'd have to say yes.
+    - It pays off three times, all already written: the pay vote in Ch 26 ("At half ... I thought I could bring
+      them"; Curtis: "why you and not Denny"); the checks he won't cash because he hears "Greedy little grub"; and
+      Ch 39, "For this he cashed the newest one. He heard grub when he did it. He did it anyway."
+    - Then they walk into Kowalski's and there is Tyler, unpaid by the co-op and about to lose the register.
+      "Fair to who?" gets its answer without anyone saying it.
+    - Runner-up, if CT prefers: "Why can't you just let Tyler help you?" (he is redoing the forty boards alone).
   - Already in the book and waiting for this scene: Ma "ate her ice cream out of the little tub, the way she had every
     night of his life" (Ch 8 area, and he tells the doctor so in Ch 13); and across from the hospital in Ch 13 "was a
     frozen yogurt place. A couple came out of it, young, sharing one cup with two spoons." He offers Ma's ice cream.
@@ -172,12 +185,29 @@ section 6. Claude's working-out:
   and she won't knock twice. He doesn't answer: the coworker, the rule, the fear. Everyone knows. Glances at the
   Friday table (CT). Outside things keep taking the moment: the couple's bad year, the models going dark, the pay
   vote (Grace argues for his pay and the table hears why).
-- **Ma, through that year (CT: "We don't just drop his mom off the face of the earth").** KEEP the Sunday 9:40 calls.
-  NEW: letters (he already mails her the picture of the stove, Ch 24: "It looks like somewhere, Ma."). NEW: a visit at
-  the holidays, seen once; the visitor book in Ch 37 already says his name stops after the first winter. NEW: a scare,
-  a call from the aide that isn't Sunday, and "maybe I need to go home right now." Open for CT: when, and whether he
-  goes. It should cost the farm or Grace something either way, and it makes "Maybe you should go home" at the fire
-  cut twice, because home is Ma.
+- **Ma, through that year (CT: "We don't just drop his mom off the face of the earth").** Claude's answers, from the
+  book (an earlier note here, that his name is in the visitor book the first winter, was wrong; the book has no such
+  line):
+  - **He does not go home before Chapter 37. The ending depends on it.** In Ch 37 he opens the visitor book and
+    finds what he never knew: "There was a name on every Sunday. D. McGrath, 10:15 ... Before that the hand changed.
+    R. McGrath ... That one went back to the first spring." The lamp greets him: "Welcome back ... You must be Barry."
+    In Ch 39 David has to tell him who Barry is, and David's anger is that he never came down. One holiday visit and
+    he would have seen that book. So the visits CT asked for can't be on the page without rewriting the ending he
+    loves. Push-back, for CT to rule on.
+  - **What keeps Ma in the book instead:** the Sunday 9:40 calls (KEEP: Ch 17, 18, 22, 24, 31). Letters (NEW; he
+    already mails her the picture of the stove in Ch 24, "It looks like somewhere, Ma," and the aide shows it to her).
+    Each Thanksgiving he means to drive down and doesn't: 2025 (no money, the boards, the pond), 2026 (the route, the
+    vote). Thanksgiving is the date of the bet, so the reader is already counting. Then Ch 39's dinner with her off
+    two trays is the first in three years.
+  - **The scare: June 2026, in the eighteen days the models are dark (Ch 26), and he does not go.** The aide calls on
+    a day that isn't Sunday. Ma has fallen. "Maybe I need to go home right now." He has the keys in his hand. Grace
+    says go, and that she'll drive. But Tyler is ten days into firmware nobody else can read, forty boxes are in
+    forty greenhouses, and it's June again. Then the aide calls back: she's all right, "she's got company." He takes
+    it for the church, the way he did in Ch 22 ("She's waiting on her Sunday company." He took it to mean the church).
+    It is David. He stays, relieved, and ashamed of being relieved.
+    - Why there: the farm truly needs him that week, so staying is defensible and still wrong. Grace told him to
+      go to his mother once and he didn't; at the fire, "That's your mother" and "Maybe you should go home" land on
+      that. And David's line in Ch 39 gets heavier without a word of it changing.
 - **Fall 2026, end of Ch 26: he goes for it (CT: "something romantic that's meaningful to her personally ... He
   remembers.").** The backstory is already written: her father "used to sit out on the porch with it in the summer,
   him and his guitar and whoever showed up. He played till the porch light went off and then he'd sing without it"

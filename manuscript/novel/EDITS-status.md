@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 1.
+Totals: accepted: 223, not in the Doc: 2.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -235,3 +235,4 @@ Edit 57 was never used.
 | 222 | Ch 0 to 36, Appendix | accepted | He had found his first limit. It was heat. |
 | 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | accepted | It won't start with the machines. First it takes the people who see... |
 | 224 | Pondwater | not in the Doc | "Laser weeder," he said. "Watch." |
+| 225 | Ch 8, 9, 10 | not in the Doc | your video went parabolic. Fifty million views, |

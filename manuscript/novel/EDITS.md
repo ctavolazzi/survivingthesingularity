@@ -3362,6 +3362,34 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+225. **Chapters 8 to 10: the panel goes further; Elijah says he is overwhelmed; fifty million views; Ruby's pitch.**
+     CT (26 Nov, tenth chat), dictated: "do we at any point explain how overwhelmed Elijah is? ... I don't remember
+     reading anything about him just saying like how overwhelmed he feels." (He doesn't: the nearest are "I feel a
+     little out of my depth here" in Ch 8 and "It was too much." in Ch 13.) "We also never really give a number for
+     the video. We say parabolic ... I think it would be reasonable to say like 50 million views on one video." "I
+     think the scene with the panel falls flat, but doesn't go as far as it could or needs to." "you can clean up the
+     language there based on our editing rules and the writing guide. I trust you to be able to carry this through the
+     rest of the way." Seven ops rows; Book now and Change to, with his words in bold, in
+     `manuscript/novel/drafts/edit-225-panel-and-ruby.md`.
+     Ch 8, the moderator: "your video went parabolic. Fifty million views". Ch 8, the panel, after the woman defines
+     AGI: a panelist (a "sneakers one" on Elijah's right, Claude's) asks what stops it destroying everything; the
+     alignment problem; "You mean like my car?"; "there isn't really a mechanic for what this thing could do."; the
+     experts' ten years; "So what's your prediction?"; he thinks of Devendra's thirty years and says "I said it in the
+     video"; "By 2027."; "I mean, yeah. That's what the math says."; the killer robots and "Get to your bunker. Kiss
+     your dog and your family goodbye. Elijah Madrone here says it's the end of the world before the end of the
+     decade." "The room was kind about it" and "It was worse than if they'd laughed" are gone; "Nobody asked him about
+     the math." (Claude's). Ch 8, the dock: Ruby's "Damn, that was brave, bro. That was brave. I admire the hustle." /
+     "It's not really a hustle." / "Well, I know, because allegedly you're not selling anything."; and after "You
+     hate this. It's okay.", Elijah: "I mean, honestly, I'm quite a bit overwhelmed. There's been a lot of changes
+     happening in my life recently, and it's been a bit much." Ruby slaps his back, an arm around his shoulders:
+     "Happens to the best of us." "Come on. I want to show you something." Ch 9, the car: "Here, you got a second? I
+     want to talk to you about something." Ch 10, the fire escape, before the offer: "Fifty million views on one video
+     ... Do you know how much money you should be making, according to your numbers?" / "I don't really think about
+     that kind of stuff." / "I know you don't ... You're the artist." / "But if I were in your shoes, and I have been,
+     I'd have another paid-off house." / "So listen. Here's the deal." and "Believe me, it's a good list."
+     CT's lines are his, with dictation fillers removed ("like", "well", "he's like"; "doing" to "making"). **Invented
+     by Claude:** who the panelist is. 617 words in, 25 out. Logged only; not in the v8 Doc yet.
+
 224. **Pondwater: Curtis shows the table a laser weeder run by a brain organoid; Grace tells Elijah about her
      festival outside.** CT (26 Nov, tenth chat): "Do we have a scene in the book where they mention or discuss laser
      weeders? Or any other modern industrial agtech? I feel like the near-future stuff should be in there. Also...maybe

@@ -411,6 +411,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "\"You swept,\" Lou said, looking past him into the shouse."),
 (162, "\"Thirty years that's been on that wall,\" David said.",
 "\"Thirty years that's been on that wall,\" David said, following his eyes up to the frame."),
+# 163, Ch 17
+(163, "\"I don't know. I'm kind of off telling it.\"",
+"\"I don't know, I'm kind of turned off on telling it.\""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

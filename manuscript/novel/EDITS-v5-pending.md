@@ -1929,6 +1929,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+163. **Chapter 17, the first Friday dinner: "turned off on telling it."** CT (26 Nov): "I don't know, I'm kind of turned
+     off on telling it." Book now (edit 90): He looked at his plate. "I don't know. I'm kind of off telling it."
+     Change to [CT's words]: He looked at his plate. "I don't know, I'm kind of turned off on telling it." Logged only;
+     not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

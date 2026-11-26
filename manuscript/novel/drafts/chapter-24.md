@@ -13,6 +13,18 @@ Book now:
 
 Change to:
 
+> The first new board was done in the middle of August. Elijah drove it up to the north houses himself. Lupe met him
+> at the hoop house door with the clipboard, and the temperature was on it twice a day again, in her writing.
+>
+> Hector held the ladder while Elijah put the box back up on the end wall, in the shade this time. Neither of them
+> said anything until it was done.
+>
+> "Took you a month," Hector said.
+>
+> Lupe held out the clipboard. At the bottom she had ruled a new line, INSTALLED BY. He signed it.
+>
+>
+>
 > The containers came up the hill on a tilt-bed in the last week of August, one at a time. The co-op had paid for
 > them in the spring, before the plugs cooked.
 
@@ -187,3 +199,6 @@ Section 13 of `WRITING-INSTRUCTIONS.md`. Phrases searched first (none of "Little
 "cattails", "Pick a side", "dripping" is in the book). No "the way" comparison, no mirrored line, no counting, no "Then
 he". No day name. The quip ("I could tell.", "That's on you") is in a light moment; none in her fire story.
 
+## From the story report, 26 Nov (eighth chat)
+
+From the story report (section 4: Elijah never faced the Ochoas): the chapter now opens on him carrying the first new board to the north houses, Hector's "Took you a month," and Lupe's clipboard with INSTALLED BY. It is in row 1 above.

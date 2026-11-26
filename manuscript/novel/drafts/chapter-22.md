@@ -167,3 +167,8 @@ The text above is as first logged. These lines now read:
 - "He wanted the vent logs on his phone for the drive, every temperature Tyler had pulled off the boxes since the plugs cooked" (the boxes "don't talk to anything," Chapter 19).
 - "At St. Rose they would be standing up for the first hymn." (was "In Santa Rosa").
 - "For five weeks nothing went wrong with the Crucible."
+
+## From the story report, 26 Nov (eighth chat)
+
+- The confession is played: "There's one more thing," he said. "The board in the boxes. I didn't lay it out. I gave it to a company in Iowa, and their machine did it in two nights, and I told you I'd go over every line in two weeks, and I didn't. The part that cooked Lupe's plugs is the one it packed in tight against the motor driver." He made himself say the rest. "I saw it the night they cooked. Standing behind Tyler in the shed. I said check the battery." / Nobody moved. In April Marta had run her finger along the drawing of that board and called it theirs. / "You let me say that," Marta said. "Ours."
+- After the rule: "Grace called Patricia from the kitchen trailer before breakfast. Elijah heard her through the screen. 'It wasn't Tyler's code. It was the board, and Elijah's the one who had it made.'" (Patricia had blamed Tyler's code in Chapter 21.)

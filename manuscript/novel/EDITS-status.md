@@ -211,9 +211,9 @@ Edit 57 was never used.
 | 198 | Ch 25, 26 | not in the Doc | Most weeks he wrote to Ma on a yellow pad |
 | 199 | Ch 19, 20 | not in the Doc | Those boxes go out in May either way. |
 | 200 | Ch 21 | not in the Doc | under a year and a half of everything else |
-| 201 | Ch 22 | PARTIAL | At St. Rose they would be standing up for the first hymn. |
+| 201 | Ch 22 | PARTIAL | "There's one more thing," he said. "The board in the boxes. I didn'... |
 | 202 | Ch 23 | not in the Doc | He saw the pattern all at once, on the third evening. |
-| 203 | Ch 24 | not in the Doc | The co-op had paid for them in the spring, before the plugs cooked. |
-| 204 | Ch 26, 32, 33 | not in the Doc | It was the first music out of that amp in three years. |
+| 203 | Ch 24 | not in the Doc | The first new board was done in the middle of August. |
+| 204 | Ch 26, 32, 33 | not in the Doc | Nobody called back that evening. |
 | 205 | Ch 17 | not in the Doc | On the fourth day Grace asked about the arms. |
 | 206 | Ch 27 | not in the Doc | Elijah wrapped the outside taps against the frost and went to bed. |

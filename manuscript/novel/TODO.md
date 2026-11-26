@@ -56,10 +56,10 @@ Words are measured by `story_report.py` (27 Nov correction: the first table here
 ## 2a. From the story report (`STORY-REPORT-2026-11-26.md`, section 9)
 
 No decision needed (corrections to chapters already rewritten):
-- [ ] Ch 22: play the board confession (his words, Marta's answer, Tyler cleared in front of Patricia).
-- [ ] Ch 23 or 24: Elijah carries the new board to the Ochoas; Hector and Lupe each get a line.
-- [ ] Ch 26: the year's obstacle, said once. Ma's fall stays open overnight.
-- [ ] Praether twice more before Chapter 34 (he mows there).
+- [x] Ch 22: play the board confession (his words, Marta's answer, Tyler cleared in front of Patricia).
+- [x] Ch 23 or 24: Elijah carries the new board to the Ochoas; Hector and Lupe each get a line.
+- [x] Ch 26: the year's obstacle, said once. Ma's fall stays open overnight.
+- [ ] Praether twice more before Chapter 34 (he mows there). One done (Ch 26, at his mailbox); one to go (Ch 29 or 32).
 Need CT's yes:
 - [ ] Ch 25: one line of logic at the truck stop (his scene).
 - [ ] Split Chapter 26 at the October night (a new chapter and its title).

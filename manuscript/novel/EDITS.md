@@ -3360,6 +3360,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+Corrected in place, 26 Nov (eighth chat), from `STORY-REPORT-2026-11-26.md` (none of it in the Doc): edit 201, the board
+confession is played with his words and Marta's "You let me say that. Ours.", and Grace tells Patricia it wasn't Tyler's
+code; edit 203, Chapter 24 opens on Elijah carrying the first new board to the Ochoas (Hector: "Took you a month.";
+Lupe's clipboard, INSTALLED BY); edit 204, Ma's fall stays open overnight, the year gets his side of it, and Praether
+appears once more ("So did ours, the first year."). Rows 137 and 182 updated to the confession's new words.
+
 206. **Chapter 27: what the farm lives on, the knockoff, the pledge and the Ochoas, Thanksgiving 2026.** From the plan,
      the to-do list and the story report; written by Claude on CT's "Do it" (Book now and Change to in
      `manuscript/novel/drafts/chapter-27.md`). The co-op's money named (the farmers market is CT's); Grace, Frank and Marta

@@ -105,6 +105,15 @@ Change to:
 > hands. He started to say something to Wren, and didn't.
 >
 > They got all four hundred heads out by noon.
+>
+> That Saturday he ran the brush hog along Praether's fence line, the way he had once a month since the arms went
+> into the barn. Praether watched from the porch until he was done, then walked down to the mailbox.
+>
+> "Hear you got a robot," he said.
+>
+> "It waters lettuce."
+>
+> "So did ours, the first year." He took his mail and went back up the drive.
 
 ## 4
 
@@ -218,15 +227,20 @@ Change to:
 > Through the door he could see Tyler at the bench with the rover's file open, six days into code nobody else on the
 > place could read. Out in forty greenhouses were forty new boards, and it was June again.
 >
-> He was still standing there with the keys when the phone rang again.
+> He stood there with the keys. Grace waited on the gravel with her own in her hand until it got dark, and then she
+> went in.
+>
+> Nobody called back that evening. He sat up in the shed with his phone face up on the bench and Tyler's code open
+> in front of him, and didn't read a line of it.
+>
+> The aide called at seven the next morning.
 >
 > "She's all right," the aide said. "Nothing's broken. She's bruised up and cross about it and back in her room.
 > Don't you worry. She's got company."
 >
 > He took it to mean the church.
 >
-> He put the keys back in his pocket and went inside to Tyler. Grace stayed out on the gravel with her own keys in
-> her hand.
+> He put the keys back in his pocket and went to make two coffees.
 
 ## 13
 
@@ -245,6 +259,10 @@ Change to:
 > away. Everybody saw it but Denny. Lou would glance down the table at Marta, and Marta would go back to her plate.
 >
 > Grace had knocked once, at the pond. By her own rule the answer was his to give, and she didn't knock again.
+>
+> His side of it he never said out loud. If the pay vote passed, he would be the one person at that table drawing a
+> check, and Grace was the one bringing it to a vote. Greedy little grub, Melody would have said, and he would have
+> heard it every time Grace touched his arm.
 >
 > Grace told him about the vote herself, one morning in his kitchen, over coffee.
 
@@ -529,3 +547,6 @@ lines are the book's own (Ch 1, Ch 2). Lou's "my man" follows CT's rule for Lou 
   line already doesn't hold. Nothing here reaches for her hand. To settle in the Ch 36 rewrite.
 - Chapter 38: the gantry line, above.
 
+## From the story report, 26 Nov (eighth chat)
+
+From the story report (sections 3 and 4): Ma's fall stays open overnight ("Nobody called back that evening"; the aide calls at seven the next morning; Grace waits on the gravel until dark); the year gets his side ("His side of it he never said out loud ... Greedy little grub, Melody would have said"); and Praether once more, at his mailbox: "Hear you got a robot." / "It waters lettuce." / "So did ours, the first year."

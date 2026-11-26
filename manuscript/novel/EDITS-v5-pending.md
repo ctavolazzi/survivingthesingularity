@@ -1464,6 +1464,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+140. **Author's Note: what he asks of the reader.** CT (26 Nov): "I am asking them to trust me, so we need to change
+     that." He tried "I'm not asking you to take me at my word" and "I'm not asking you to just blindly accept this",
+     then: "No, none of those are good. If I can ask anything of anyone, it's that you take a look at this for
+     yourself." His last version kept. Book now:
+
+     > I'm not asking you to trust me. I'm asking you to take a look for yourself.
+
+     Change to [CT's words]:
+
+     > If I can ask anything of anyone, it's that you take a look at this for yourself.
+
+     The next lines, "Get your goddamn hands on it." / "Use it yourself." / "Then you'll know.", stay. Logged only;
+     not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

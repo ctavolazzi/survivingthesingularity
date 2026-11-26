@@ -2395,6 +2395,28 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+179. **Tuesdays that only mark time.** CT's standing request (25 Nov, after edit 125): cut the ones that only mark time, keep a day where it matters. 22 in Chapters 20 to 39; three cut. Kept: the route day, Ray's death, Marta's PT, the empty houses, Emeka, the county stamp at 11:04, the festival meeting, the packing day, the proofs, and every Tuesday in dialogue. Claude's wording.
+
+     1. Book now:
+     > The sweep signed off on it Tuesday.
+
+        Change to:
+     > The sweep signed off on it.
+
+     2. Book now:
+     > The county's power was back Tuesday.
+
+        Change to:
+     > The county's power came back three days later.
+
+     3. Book now:
+     > He'd filed it with the clerk on Tuesday.
+
+        Change to:
+     > He'd already filed it with the clerk.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

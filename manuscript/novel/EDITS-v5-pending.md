@@ -1857,6 +1857,33 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+160. **Chapter 16, meeting Marta: sentence openings.** CT (26 Nov), with a screenshot of the page: "Here's another instance
+     of that pattern we talked about" (sentences that all open with "He"). Book now, after "And Elijah went off.":
+
+     > He hadn't meant to. He'd meant to say hello. But he had spent a year being told he'd calibrate, and then
+     > most of a year being agreed with by people who weren't listening. And here was a stranger who made things
+     > and fixed things for her neighbors. He told her what was coming, fast: the models, the list, the end of the
+     > deal. And then he started pitching.
+     >
+     > He heard himself say the shop could scale. He said platform. He said there ought to be an app, a network of
+     > co-ops, a marketplace layer. He could build it in a month. This thing could be in fifty towns by Christmas.
+     > They could get ahead of the wave. He said *first-mover,* and heard it come out of his mouth in Ruby's voice,
+     > quick and light.
+
+     Change to [Claude's wording; only the openings and joins change, every fact and the italics stay]:
+
+     > Going off wasn't the plan. All he'd meant to say was hello. But he had spent a year being told he'd
+     > calibrate, and then most of a year being agreed with by people who weren't listening. And here was a
+     > stranger who made things and fixed things for her neighbors. So he told her what was coming, fast: the
+     > models, the list, the end of the deal. And then he started pitching.
+     >
+     > The shop could scale, he heard himself say. Platform. There ought to be an app, a network of co-ops, a
+     > marketplace layer. He could build it in a month. This thing could be in fifty towns by Christmas. They could
+     > get ahead of the wave. *First-mover,* he said, and heard it come out of his mouth in Ruby's voice, quick and
+     > light.
+
+     Then "Somewhere in there he ran out of gas..." as before. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

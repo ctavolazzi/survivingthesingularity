@@ -380,6 +380,11 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "Inside his chest was that same little voice that told him to join Crop Dust, to take the job at Claypot, and to do every other harebrained thing he had never regretted.\nHe started typing his reply."),
 (159, "Elijah had never heard the word.",
 "Elijah had seen the word once, in Grace's first email, and never thought about it again."),
+# 160, Ch 16
+(160, "He hadn't meant to. He'd meant to say hello. But he had spent",
+"Going off wasn't the plan. All he'd meant to say was hello. But he had spent"),
+(160, "fixed things for her neighbors. He told her what was coming, fast: the models, the list, the end of the deal. And then he started pitching.\nHe heard himself say the shop could scale. He said platform. He said there ought to be an app, a network of co-ops, a marketplace layer. He could build it in a month. This thing could be in fifty towns by Christmas. They could get ahead of the wave. He said first-mover, and heard it come out of his mouth in Ruby's voice, quick and light.",
+"fixed things for her neighbors. So he told her what was coming, fast: the models, the list, the end of the deal. And then he started pitching.\nThe shop could scale, he heard himself say. Platform. There ought to be an app, a network of co-ops, a marketplace layer. He could build it in a month. This thing could be in fifty towns by Christmas. They could get ahead of the wave. *First-mover,* he said, and heard it come out of his mouth in Ruby's voice, quick and light."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

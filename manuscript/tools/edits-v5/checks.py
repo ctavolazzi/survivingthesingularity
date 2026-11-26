@@ -149,4 +149,5 @@ C=[
 (141,"Author's Note",["you might not be paying enough attention.\nThis could be the most pivotal moment"],["you might not be paying enough attention. [break] This could be"]),
 (142,"Ch 1",["So it had a ceiling. Whoever could pay for the power and the cooling"],["The ceiling was a power bill."]),
 (143,"Ch 2 (italics; checked by make_v6.py)",["is this true\nElijah didn't answer."],[]),
+(144,"Ch 2",["so that later he could look back and see if he was right."],["couldn't pretend he hadn't seen it coming."]),
 ]

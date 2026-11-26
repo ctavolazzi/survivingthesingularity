@@ -1504,6 +1504,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      to drink.": the line "is this true" in roman. Change to: *is this true*, in italics. No words change (edit 22's
      line). Logged only; not in the v6 Doc yet. verify.py reads words, not italics, so make_v6.py checks this one.
 
+144. **Chapter 2, the dated page: "so later he could look back and see if he was right."** CT (26 Nov): "So later he
+     couldn't pretend he hadn't seen it coming. That's confusing as well. So later he could look back and see if he
+     was right is better." Book now:
+
+     > He dated the page and put his initials next to the date, so that later he couldn't pretend he hadn't seen it
+     > coming.
+
+     Change to [CT's words]:
+
+     > He dated the page and put his initials next to the date, so that later he could look back and see if he was
+     > right.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

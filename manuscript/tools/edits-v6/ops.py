@@ -334,6 +334,8 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (142, "So it had a ceiling. The ceiling was a power bill. Whoever", "So it had a ceiling. Whoever"),
 # 143, Ch 2: Wes's text in italics
 (143, "to drink.\nis this true\nElijah didn't answer.", "to drink.\n*is this true*\nElijah didn't answer."),
+# 144, Ch 2
+(144, "so that later he couldn't pretend he hadn't seen it coming.", "so that later he could look back and see if he was right."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

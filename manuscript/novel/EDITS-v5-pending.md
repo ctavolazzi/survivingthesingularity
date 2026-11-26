@@ -1658,6 +1658,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      (Chapter 0's "He didn't remember the drive home." is a different scene, after the bar; it already has "Elijah
      left without looking up." before it.) Logged only; not in the v6 Doc yet.
 
+154. **Chapter 13, the kitchen: "When he got to the house, he saw what had happened."** CT (26 Nov): "The line, 'the pot was
+     on the stove,' needs to be changed to, 'when he got to the house, he saw what had happened. There was a pot on the
+     stove,' and then we go into it." Book now, after the scene break that follows the hospital:
+
+     > The pot was on the stove.
+
+     Change to [CT's words]:
+
+     > When he got to the house, he saw what had happened. There was a pot on the stove.
+
+     Then "It was not in the rack. It was on the back burner..." as before. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -159,4 +159,5 @@ C=[
 (151,"Ch 11",["Let's do it.\"\nIt was a good idea. Elijah could see it."],["Let's do it.\" [break] It was a good idea."]),
 (152,"Ch 12",["a towel over the wheel.\nThe farm was two hours north, and his mother would have left the porch light on for him. But gas there and back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back through the door with nothing to show for it. Not again. Not after what happened last time."],[]),
 (153,"Ch 13",["They took her to Santa Rosa.\"\nHe left immediately. He didn't remember the drive."],[]),
+(154,"Ch 13",["When he got to the house, he saw what had happened. There was a pot on the stove.\nIt was not in the rack."],["The pot was on the stove.\nIt was not in the rack."]),
 ]

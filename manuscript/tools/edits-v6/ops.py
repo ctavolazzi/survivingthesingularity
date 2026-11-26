@@ -357,6 +357,8 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (152, "with the windows cracked and a towel over the wheel.", "with the windows cracked and a towel over the wheel.\nThe farm was two hours north, and his mother would have left the porch light on for him. But gas there and back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back through the door with nothing to show for it. Not again. Not after what happened last time."),
 # 153, Ch 13
 (153, "They took her to Santa Rosa.\"\nHe didn't remember the drive.", "They took her to Santa Rosa.\"\nHe left immediately. He didn't remember the drive."),
+# 154, Ch 13
+(154, "\nThe pot was on the stove.\nIt was not in the rack.", "\nWhen he got to the house, he saw what had happened. There was a pot on the stove.\nIt was not in the rack."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

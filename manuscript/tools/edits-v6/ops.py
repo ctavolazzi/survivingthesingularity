@@ -373,7 +373,14 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 158, Ch 14
 (158, "He lay back down.\nHe pulled the jacket up. He cried the way he had yelled, all the way, with his mouth open. Nobody was going to hear it over that. He cried until his ribs hurt, and then for a while after that he just lay there and leaked.",
 "Slowly he lay back down and pulled the jacket up. Then the crying came, the way the yelling had, all the way, with his mouth open. Nobody was going to hear it over that. It went on until his ribs hurt, and for a while after that he just lay there and leaked."),
+# 159, Ch 15 and 26: Grace's April email
+(159, "But something told him to open it, so he did.\nShe had been saying yes to him since spring.",
+"But something told him to open it, so he did.\n*Mr. Madrone,*\n*It has been an absolute pleasure watching you online. Everyone here at the farm agrees: you get it.*\n*We've been working on something for a long time now, and we think you'll appreciate it. Are you familiar with solarpunk? Like that stupid Chobani yogurt commercial, \"Dear Alice\"?*\n*Well, we're doing our best to build it in real life.*\n*If you're interested, there's a cot here and a private room with your name on it. Your own door, a shared kitchen, and a bunch of land.*\n*We would like to extend a formal invitation to host you while you build out your vision of the future with us.*\n*If you're interested, please just say the word and the spot is yours.*\n*Looking forward to working with you,*\n*Grace Lane*\nElijah took a breath and read the email again. Three, four, five times he read it, waiting to feel different.\nShe had been saying yes to him since spring."),
+(159, "Then that same little voice spoke up again, the one that had told him to open it. The quiet one that steers you toward where you're supposed to be, if you let it.\nSo he typed out his reply.",
+"Inside his chest was that same little voice that told him to join Crop Dust, to take the job at Claypot, and to do every other harebrained thing he had never regretted.\nHe started typing his reply."),
+(159, "Elijah had never heard the word.",
+"Elijah had seen the word once, in Grace's first email, and never thought about it again."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).
-ITALIC = [(143, "is this true")]
+ITALIC = [(143, "is this true")] + [(159, e) for e in ["Mr. Madrone,", "It has been an absolute pleasure watching you online. Everyone here at the farm agrees: you get it.", "We've been working on something for a long time now, and we think you'll appreciate it. Are you familiar with solarpunk? Like that stupid Chobani yogurt commercial, \"Dear Alice\"?", "Well, we're doing our best to build it in real life.", "If you're interested, there's a cot here and a private room with your name on it. Your own door, a shared kitchen, and a bunch of land.", "We would like to extend a formal invitation to host you while you build out your vision of the future with us.", "If you're interested, please just say the word and the spot is yours.", "Looking forward to working with you,", "Grace Lane"]]

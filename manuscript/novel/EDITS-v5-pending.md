@@ -1801,6 +1801,62 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+159. **Chapter 15, Grace's April email (the placeholder in edit 100).** CT (26 Nov) wrote the email and what follows it:
+     "Mr. Madron. It has been an absolute pleasure watching you online, period. Everyone here at the farm agrees, you
+     get it. ... Looking forward to working with you, Grace Lane / Elijah took a breath and read the email again.
+     Three, four, five times he read it, waiting to feel different. / Inside his chest was that same little voice that
+     told him to join Crop Dust, to take the job at Claypot, and to do every other hairbrained thing he had never
+     regretted. / He started typing his reply." Fixed silently: "Madron" to Madrone (his name in the book), "yoghurt"
+     to yogurt, "hairbrained" to harebrained, the comma splice after "agrees" to a colon. Set in italics, like every
+     message in the book. "Grace Lane" is the first time the book gives her surname.
+
+     **Change 1.** After "But something told him to open it, so he did." and before "She had been saying yes to him
+     since spring." (where edit 100 had the placeholder), add [CT's words]:
+
+     > Mr. Madrone,
+     >
+     > It has been an absolute pleasure watching you online. Everyone here at the farm agrees: you get it.
+     >
+     > We've been working on something for a long time now, and we think you'll appreciate it. Are you familiar
+     > with solarpunk? Like that stupid Chobani yogurt commercial, "Dear Alice"?
+     >
+     > Well, we're doing our best to build it in real life.
+     >
+     > If you're interested, there's a cot here and a private room with your name on it. Your own door, a shared
+     > kitchen, and a bunch of land.
+     >
+     > We would like to extend a formal invitation to host you while you build out your vision of the future with
+     > us.
+     >
+     > If you're interested, please just say the word and the spot is yours.
+     >
+     > Looking forward to working with you,
+     >
+     > Grace Lane
+     >
+     > Elijah took a breath and read the email again. Three, four, five times he read it, waiting to feel
+     > different.
+
+     **Change 2.** Edit 100's "Then that same little voice spoke up again, the one that had told him to open it. The
+     quiet one that steers you toward where you're supposed to be, if you let it. / So he typed out his reply." is the
+     same beat, so CT's new version replaces it instead of repeating it [CT's words]:
+
+     > Inside his chest was that same little voice that told him to join Crop Dust, to take the job at Claypot, and
+     > to do every other harebrained thing he had never regretted.
+     >
+     > He started typing his reply.
+
+     **Change 3, knock-on (Chapter 26, the gantry).** Book now: "Elijah had never heard the word." Since the email
+     asks "Are you familiar with solarpunk?", that line contradicts it. Change to [Claude's wording]: "Elijah had seen
+     the word once, in Grace's first email, and never thought about it again." His "It's what?" before it stays.
+
+     **Open, for CT:** "Everyone here at the farm agrees" sits a few pages from Grace's later message, "Half the table
+     thinks you're right. The other half thinks you're a guy who got famous scaring people," and "We have been
+     arguing about your list at dinner for a year." Recommendation: "Most of us here at the farm agree." Logged as he
+     wrote it until he says.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

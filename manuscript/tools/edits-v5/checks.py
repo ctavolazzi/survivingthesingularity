@@ -154,4 +154,5 @@ C=[
 (146,"Ch 6",["\"Keep your head down and stay focused for me,\" she said.","He meant to. He wanted to. But life gets in the way sometimes."],["\"Head down,\" she said. \"For me.\"","He didn't put his head down. He didn't know how anymore."]),
 (147,"Ch 6",["For a year he had tried explaining it to each of them one at a time."],["For a year he had explained it to every one of them, one at a time."]),
 (148,"Ch 9",["Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was going on. But from the hall, he could still hear."],["Ruby shouldered through the swinging door. It swung shut behind him."]),
+(149,"Ch 10",["He couldn't write a billionaire without wanting something, and for the life of him, he still couldn't figure out what he wanted."],["He couldn't figure out how to write to a billionaire"]),
 ]

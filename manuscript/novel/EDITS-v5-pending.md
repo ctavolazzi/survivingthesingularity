@@ -1583,6 +1583,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Then ""I brought you one," Ruby said on the other side." as before. The round window is already "papered over
      from the inside", so he can't see through it. Logged only; not in the v6 Doc yet.
 
+149. **Chapter 10, the text to Ruby: "for the life of him."** CT (26 Nov): "He couldn't write a billionaire without
+     wanting something, and for the life of him, he still couldn't figure out what he wanted." Book now:
+
+     > He couldn't figure out how to write to a billionaire without wanting something, and he couldn't figure out what
+     > he wanted.
+
+     Change to [CT's words]:
+
+     > He couldn't write a billionaire without wanting something, and for the life of him, he still couldn't figure out
+     > what he wanted.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

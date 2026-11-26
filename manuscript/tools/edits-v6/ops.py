@@ -346,6 +346,8 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (147, "For a year he had explained it to every one of them, one at a time.", "For a year he had tried explaining it to each of them one at a time."),
 # 148, Ch 9
 (148, "Ruby shouldered through the swinging door. It swung shut behind him.", "Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was going on. But from the hall, he could still hear."),
+# 149, Ch 10
+(149, "He couldn't figure out how to write to a billionaire without wanting something, and he couldn't figure out what he wanted.", "He couldn't write a billionaire without wanting something, and for the life of him, he still couldn't figure out what he wanted."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

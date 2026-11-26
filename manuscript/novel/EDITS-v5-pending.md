@@ -1973,6 +1973,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      to spend a little more time making this feel like it was made by us and not Claypot." Logged only; not in the v6
      Doc yet.
 
+169. **Chapter 19, June: the team fixes it, not Elijah alone.** CT (26 Nov): "And Elijah fixed what they found > and the
+     fledgling production team fixed what they found..." Book now: "...two growers ran the first boxes for a week and
+     sent back notes in pencil, and Elijah fixed what they found before the rest went out." Change to [CT's words]:
+     "...and the fledgling production team fixed what they found before the rest went out." Logged only; not in the v6
+     Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

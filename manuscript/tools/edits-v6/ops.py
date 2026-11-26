@@ -429,6 +429,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 168, Ch 19
 (168, "I just want you to spend a little more time making this feel more like us than like Claypot.\"",
 "I just want you to spend a little more time making this feel like it was made by us and not Claypot.\""),
+# 169, Ch 19
+(169, "and Elijah fixed what they found",
+"and the fledgling production team fixed what they found"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

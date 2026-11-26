@@ -174,4 +174,5 @@ C=[
 (166,"Ch 18",["\"I think the way you're doing it is just right,\" Elijah said.\nOut by the pond, the birds were chirping magnificently.\nChapter 19"],["\"I think what you're doing is just right,\" he said."]),
 (167,"Ch 19",["Chapter 19: Eleven, One, Zero\nIn April the order came"],["The co-op's first real manufacturing run was forty greenhouse controllers."]),
 (168,"Ch 19",["I just want you to spend a little more time making this feel like it was made by us and not Claypot.\""],["more like us than like Claypot."]),
+(169,"Ch 19",["and the fledgling production team fixed what they found before the rest went out."],["and Elijah fixed what they found"]),
 ]

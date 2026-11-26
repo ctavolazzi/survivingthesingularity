@@ -2365,6 +2365,24 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+177. **Chapter 37, at the gate: the birds.** CT (26 Nov), on the recommendations. The birds and frogs at the pond (edits 104 and 166) were his nervous system settling, and they never came back. One line, at the gate, when he finds Grace's new tape, before he cries. Claude's wording, after CT's "Out by the pond, the birds were chirping" (edit 166). Context from CT, NOT for the page (edit 104): birds don't sing when there are predators around.
+
+     Book now:
+
+     > Somebody checked.
+     >
+     > He sat there with the engine running and cried.
+
+     Change to:
+
+     > Somebody checked.
+     >
+     > Out by the pond, the birds had started up.
+     >
+     > He sat there with the engine running and cried.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

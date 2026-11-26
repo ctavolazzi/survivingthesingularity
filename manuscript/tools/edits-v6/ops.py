@@ -561,6 +561,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "looked at the water, and wrote it down."),
 (176, "He got down in the pond with his shoulder",
 "He got down in the water with his shoulder"),
+# 177, Ch 37
+(177, "Somebody checked.\nHe sat there with the engine running and cried.",
+"Somebody checked.\nOut by the pond, the birds had started up.\nHe sat there with the engine running and cried."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -432,6 +432,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 169, Ch 19
 (169, "and Elijah fixed what they found",
 "and the fledgling production team fixed what they found"),
+# 170, Ch 20
+(170, "Lou put him on drip tape in May, and it just about killed him.",
+"What Lou did to Elijah in May just about killed him."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

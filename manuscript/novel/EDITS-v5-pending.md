@@ -1979,6 +1979,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      "...and the fledgling production team fixed what they found before the rest went out." Logged only; not in the v6
      Doc yet.
 
+170. **Chapter 20, the first line.** CT (26 Nov): "Lou put him on a drip tape in may > What Lou did to Elijah in May just
+     about killed him." Book now: "Lou put him on drip tape in May, and it just about killed him." Change to [CT's words]: "What Lou did to Elijah in May just about killed him." The drip tape is named
+     a little later in the chapter ("a quarter mile of plastic tubing", "This is drip tape"). Logged only; not in the
+     v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

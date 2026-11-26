@@ -175,4 +175,5 @@ C=[
 (167,"Ch 19",["Chapter 19: Eleven, One, Zero\nIn April the order came"],["The co-op's first real manufacturing run was forty greenhouse controllers."]),
 (168,"Ch 19",["I just want you to spend a little more time making this feel like it was made by us and not Claypot.\""],["more like us than like Claypot."]),
 (169,"Ch 19",["and the fledgling production team fixed what they found before the rest went out."],["and Elijah fixed what they found"]),
+(170,"Ch 20",["What Lou did to Elijah in May just about killed him."],["Lou put him on drip tape in May, and it just about killed him."]),
 ]

@@ -88,21 +88,23 @@ trailer in Chapter 17, Bidwell, Chapter 38), goes into other heads (Tyler in Cha
 Elijah's, other people's come through what he sees them do, and the storyteller can tell the reader, briefly, what
 Elijah cannot know.
 
-## What is still open (26 Nov, end of the fifth logging chat)
-Settled since 25 Nov: Grace's April email (edit 159), "He went and looked" and the second "It could be a cult" (edit
-138), edit 103 (kept, and edit 180 makes it "then back at Elijah"), edit 108 (kept as "if he wanted to play"), edit
-109 (the touch lines kept; edit 181 changes the last line), and the open questions of the Chapter 19 plan.
+## What is still open (26 Nov, end of the sixth logging chat)
+Settled in the sixth chat: edit 112's question (the co-op's gravel lot; edit 183).
 Open for CT, to ask one at a time with the line quoted and Claude's recommendation in one line:
-- Edit 112 (Ch 18): "the co-op's gravel lot" instead of "the gravel lot" (Claude recommends it; no answer yet).
-- Ch 31: "On Sunday at 9:40 he called the rose garden." It follows Marta coming by at eight that Sunday, and the
-  next line is "The next morning was the first of the month." Same Sunday morning ("Later that morning, at 9:40")?
+- Ch 31: "On Sunday at 9:40 he called the rose garden." Asked, no answer yet. The same Sunday, Marta knocks at eight
+  and takes him to the shop; then Curtis's eggs, he sleeps, sweeps, eats, and Wren comes by; the next line is "The
+  next morning was the first of the month." Claude recommends "The next Sunday at 9:40 he called the rose garden.":
+  all of that can't fit between eight and 9:40 on one morning.
 - Edit 116: "been here before" or "done this before".
 - Edit 118: change only "Don't let her," or cut the whole "Grace will carry you" sentence.
 - Edit 121: "one thing" (Marta) or "one real thing" (the notebook).
 - Ch 13: the "dark out" 9:40 call. Night call or error?
-Then, each on CT's go: the eight Chapter 14 sentence-opening fixes (written again from a fresh read, the way edit 133
-was done), then "Places to look at" in `EDITS.md` (each shown to CT with a proposed fix before it is
-logged).
+Then, each on CT's go: the eight Chapter 14 sentence-opening fixes (written again from a fresh read of v6.txt, the way
+edit 133 was done: only openings and joins, every fact, name and line of dialogue kept), then "Places to look at" in
+`EDITS.md` (Ch 31 and 39 marked probably deliberate; Ch 23 and the Ch 37 packing line already handled in edits 172 and
+178; each shown to CT with a proposed fix before it is logged).
+Also waiting on CT: which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; who the dedication is to (the line in
+edit 185 is Claude's draft); go on the sentence-opening checker.
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -111,34 +113,42 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
-## Where things stand (end of the fifth logging chat, 26 Nov)
+## Where things stand (end of the sixth logging chat, 26 Nov)
 - The v6 Google Doc "StS v6 draft (Nov 25)" is the book CT is editing (CURRENT in the bridge). In the Doc: edits 1 to
-  138, 141 and 151. Logged, not in the Doc yet: 139, 140, 142 to 182 except 151. The next edit is 183. CT has said
-  nothing about putting 139 onward into the Doc; log only.
-- Done in the fifth chat: 172 to 179 (Claude's recommendations for the second half: sentence openings, beats in the
-  table scenes, "It's not X. It's Y." lines, the handout echo in Ch 31, the Ch 26 pond, the birds at the gate,
-  packing the truck, Tuesdays); 180 (Denny looks "back at Elijah"); 181 ("Agreed on what?"); 182 (a clarity pass
-  through Ch 21 to 39: pronouns, speakers, repeats). Edit 162 lost two beats that repeated a few lines later.
-  172 to 179 and 182 are Claude's wording, approved by CT from a summary, not line by line.
+  138, 141 and 151. Logged, not in the Doc yet: 139, 140, 142 to 186 except 151. The next edit is 187. CT has said
+  nothing about putting 139 onward into the Doc; log only. Do not change the Doc.
+- Done in the sixth chat: 183 (Ch 18: "the co-op's gravel lot", and Claypot ships "on a Thursday afternoon, just
+  fifteen minutes before the financial markets closed"); 184 to 186, the v7 changes brought into v6 at CT's word ("I
+  want the v6 that I'm reading in large print to be the most current version"): "Recognize Your Power" first and last,
+  the Author's Note turned into a Dedication, a Thank You at the end. Check rows 1, 2 and 139 to 141 now read
+  "replaced by 185".
+- Names cleaned up at CT's request ("The naming system is confusing me"): the edit list is `EDITS.md` (was
+  EDITS-v5-pending.md), its status table `EDITS-status.md`; the Drive folder is "StS Publication Files", with
+  everything older in its "Older builds"; the Drive mirror is "StS v6 edit list (mirror of GitHub)".
+- The large print PDF CT reads: "StS v6 large print CURRENT (26 Nov, edits 1 to 186, Dedication and Recognize Your
+  Power).pdf" in "StS Publication Files" (https://drive.google.com/file/d/1Jnn--avJ8IRG0Cu6cFg_Fk9kHrCEgRGh/view),
+  664 pages, every build check passing. Made with `make_v6.py V5_READ.json OUT` (with the .docx), then
+  `python3 publication/novel/build/build.py OUT/v6.docx --only large --skip-edit-gate` (run `pip install -r
+  publication/novel/build/requirements.txt` and `mkdir -p publication/novel/work` first in a fresh container). It has
+  no pictures (book.json `include_pictures: false`) and no About the Author page (`about_author_in_book: false`, so
+  "Recognize Your Power" is the last line). When a new one is made, the old one goes to "Older builds" as "OLD: ...".
 - verify.py on a fresh read of the v6 Doc shows 30, 137 and 182 PARTIAL. That is expected: edit 182 changes words of
-  30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (182).
+  30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (186).
 - Quote "Book now" from make_v6.py's v6.txt (every logged edit applied), not from the raw Doc, which lacks 139 on.
 - The Docs reads are too big to show in chat; the connector saves each to a file. Copy it and use it as READ.json.
-- Each new edit: log it in `EDITS.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a
-  find and replace row to `manuscript/tools/edits-v6/ops.py` (above the ITALIC list; italics as *...*), run
+- Each new edit: log it in `EDITS.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a find and replace
+  row to `manuscript/tools/edits-v6/ops.py` (above the ITALIC list; italics as *...*; "§H1 " and "§C " at the start of
+  a paragraph make a heading or center it; a find can be "" for the very start or a (start, end) pair for a span), run
   `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx` (every row must pass), commit and push.
-  A correction to an edit not in the Doc yet replaces it in place; a change to words already in the Doc is a new edit.
-- Waiting on CT: the questions above; which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; the dedication
-  (who it is to) for v7; the sentence-opening checker (say go).
-- The large print PDF CT reads is "StS v6 large print (edits 1 to 183).pdf" in the Drive folder "StS Publication
-  Files", made 26 Nov from make_v6.py's v6.docx (`publication/novel/build/build.py v6.docx --only large
-  --skip-edit-gate`). Everything older is in that folder's "Older builds". Rebuild only when CT asks.
+  A correction to an edit not in the Doc yet replaces it in place; a change to words already in the Doc is a new edit,
+  and the older edit's check row is narrowed or updated so both pass (as 113 was for 183).
 
 ## v7 (26 Nov): a separate copy
 CT: "keep v7 as a totally new, totally separate thing ... I want to keep working on v6." The Google Doc "StS v7
 draft (Nov 26)" is v6 through edit 171 plus the v7-only changes in `manuscript/tools/edits-v7/ops_v7.py`
 (Dedication, Thank You, "Recognize Your Power" first and last). Record: `manuscript/novel/V7-CHANGES.md`. New edits
 go into v6 as before, from 172; v7 does not follow them unless CT asks.
+Since 26 Nov the same v7 changes are also in v6 (edits 184 to 186); the v7 Doc itself is unchanged.
 
 ## Later, when CT says go
 Apply 87 onward to the Doc as suggestions, re-read, run verify. CT accepts the suggestions. Run

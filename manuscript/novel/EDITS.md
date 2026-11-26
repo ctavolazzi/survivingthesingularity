@@ -9,8 +9,8 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh
 read of the Doc after every step; `EDITS-status.md` is the one table of where each edit stands. The build
-refuses to run unless every edit passes. A copy of this list lives in Google Drive as "StS v6 edit list (mirror of
-GitHub)" (https://docs.google.com/document/d/14h5XTCSN_O3ZHBwVKYSIzaRcvl5WudY8PCfS7CLvTFg); refresh it when this
+refuses to run unless every edit passes. A copy of this list lives in Google Drive as "StS edit list, edits 1 to 223 (mirror of
+GitHub)" (https://docs.google.com/document/d/1WMgBw6IDVq2ZY-WuPkFpiCX5df8WX8iQw5BSjAKAPqE); refresh it when this
 file changes. Each new edit gets a check row when it is logged.
 
 ## Character notes from CT (context, not for the page)

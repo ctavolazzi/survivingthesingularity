@@ -48,8 +48,8 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
    table (new edits show "not in the Doc", which is right until CT says to put them in).
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
-10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v6 edit list
-   (mirror of GitHub)" (id 14h5XTCSN_O3ZHBwVKYSIzaRcvl5WudY8PCfS7CLvTFg, edits 1 to 220) once, at the end of the session.
+10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS edit list, edits 1 to N
+   (mirror of GitHub)" (id 1WMgBw6IDVq2ZY-WuPkFpiCX5df8WX8iQw5BSjAKAPqE, edits 1 to 223) once, at the end of the session.
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -201,17 +201,17 @@ trailer in Chapter 17, Bidwell, Chapter 38), goes into other heads (Tyler in Cha
 Elijah's, other people's come through what he sees them do, and the storyteller can tell the reader, briefly, what
 Elijah cannot know.
 
-## What is still open (26 Nov, end of the eighth logging chat)
-**The endgame runs from three files: `REFERENCE.md` (how), `GOALS.md` (what done is), `TODO.md` (what is next).**
-Every question that was open is decided in `PLAN-CHAPTERS-20-TO-36.md`, section 12 (where a decision was CT's and
-Claude made it, it says so). What is still CT's is the top of `TODO.md`:
-- The women's scene about the tall rover (Chapter 34): his line for the older woman, and who the treasurer is.
-- The ending lines still open in the plan, section 13 (traveling light, the gas cap, the Appendix, the line flags).
-- The smell pass, which he will do in a new chat just for smell.
-- The Instagram synopsis: fix or leave.
-- Cover credit (CT, 26 Nov, for "the book proper"): his words are "cover credit : me, the author, sketches and
-  Midjourney", cheeky and without a name. It goes inside, on the copyright page, where other books have it (CT), not
-  on the outside of the cover: `copyright_page` in `publication/novel/build/book.json`. Add it at the final build.
+## What is still open (26 Nov, end of the ninth logging chat)
+**The endgame runs from `REFERENCE.md` (how), `GOALS.md` (what done is), `TODO.md` (what is next).** The prompt for
+the housekeeping pass is in `CHECKPOINT-2026-11-26-v8.md`. What is still CT's:
+- Two lines left from the pass: the gas cap (Ch 25, his scene; it ends on "Friday," she said.) and "Marta had heard it
+  as a murder" (Ch 39).
+- The eight thin places in `CHECKPOINT-2026-11-26.md`, section 3 (Praether after Ch 26, Mrs. Delgado, Bidwell's last
+  beat, the welder gap, Faith, the Telecaster, Wren, "For three years").
+- The 19 pictures: v8 has none (19 empty paragraphs where they were). Put them back, or take the empty paragraphs out.
+- The smell pass, in its own chat. The Instagram synopsis. The ISBN, the release build (PDF and EPUB), and whether
+  the book goes to `main`.
+- Names: "OLD:" on the v6 and v7 Docs (his Docs; his yes).
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -220,25 +220,21 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
-## Where things stand (end of the eighth logging chat, 26 Nov)
-- The v6 Google Doc "StS v6 draft (Nov 25)" is the book (CURRENT in the bridge). In the Doc: edits 1 to 138, 141 and
-  151. Logged in GitHub only: 139, 140, 142 to 220 except 151. **The next edit is 221.** (217: the arms at Praether's, Ch 37.
-  218: Devendra's text, Ch 39. 219: continuity in Ch 11, 13, 15, 19. 220: Lou on Praether and the ace in the hole, Ch 18.) Nothing has been put into
-  either Doc. Do not change the Doc; CT has not cleared it.
-- **Chapters 20 to 36 are all rewritten and logged:** 198 to 204 (Ch 20 to 26), 206 to 215 (Ch 27 to 36). Edit 205 is
-  the Praether scene in Chapter 17. Each has its Book now and Change to in `drafts/`. Corrections from the story report
-  went into 201, 203 and 204 in place. CT's eight choices of the evening went into 198 and 204 in place: the October
-  night is now its own unnumbered chapter, "Pondwater".
-- Chapter 37 to the Epilogue stand as CT loves them, except the lines waiting on his yes (plan, section 13). The build
-  gate (`build_gate.py`) says READY for its lines.
-- make_v6.py on a fresh v5 read passes all 220 rows. verify.py on the v6 Doc shows the nine expected PARTIALs (19, 30,
-  125, 131, 135, 137, 182, 197, 201).
-- Length: 99,399 words; length is not the measure (CT, 26 Nov). Earlier note: 98,808 words (95,675 before Chapters 27 to 36 and the report's fixes). Chapters 27 to 36 hold 25,177 words
-  against a budget of 22,590: about 2,600 over, mostly CT's new scenes (the April quarrel, the reveal, the women's scenes).
-  The cuts that would pay for it need his yes (`TODO.md`, section 2a: Chapter 33's dinner, Chapter 4, Chapter 20).
-- What is waiting on CT is the top of `TODO.md` and its section 2a. The structure and gate for the next build:
-  `NEXT-BUILD.md`. The evaluation: `STORY-REPORT-2026-11-26.md`.
-- The large print PDF CT has is still the one with edits 1 to 186. Make a new one only when he asks.
+## Where things stand (end of the ninth logging chat, 26 Nov)
+- **The book is the Google Doc "StS v8 draft (Nov 26)"** (CURRENT in the bridge map), made on CT's word from
+  make_v6.py's build: the v5 Doc with its suggestions accepted plus every logged edit, 1 to 223, without the 19
+  pictures (the .docx with them was over the Drive connector's limit; CT chose "No pictures"). verify.py on it: all
+  223 accepted. Its locked backup: "StS v8 BACKUP (Nov 26), do not edit". The old v6 Doc is unchanged.
+- **The PDF CT reads:** "StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf" in "StS
+  Publication Files" (https://drive.google.com/file/d/1B0nwZM5XXGxfeEjRAjyl0bICQNxsHtGp/view), 738 pages, every
+  check in `publication/novel/output/CHECKS.md` passing, the cover credit on the copyright page, no ISBN yet. The
+  edits 1 to 186 PDF is "OLD:" in "Older builds".
+- This chat: edit 221 (the women and the tall rover, Ch 34, corrected in place for three lines), 222 (the whole-book
+  continuity pass: eight readers, 79 findings, 50 fixed), 223 (the pass's held items resolved on CT's "resolve as many
+  of these as you can without my help"). **The next edit is 224.**
+- make_v6.py on a fresh v5 read passes all 223 rows. The bridge map, BRIDGE.md and the Drive bridge page
+  ("sts-bridge: read this first", remade; the old one is "OLD:") all say v8.
+- 103,064 words in the build (`CHECKS.md`).
 
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including

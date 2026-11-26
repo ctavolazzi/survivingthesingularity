@@ -41,7 +41,7 @@ please be sure to start with your own. Recognize your power."
 | Goal | How it is checked |
 |---|---|
 | Every change is logged in GitHub and can be rebuilt | `EDITS.md` entry, check row, ops rows and a `drafts/` file for each edit; make_v6.py passes every row |
-| The Docs are untouched until CT clears them | verify.py on a fresh read of the v6 Doc shows only the known PARTIAL rows (19, 30, 125, 131, 135, 137, 182, 197, 201) and "not in the Doc" for everything newer |
+| The Docs are untouched until CT clears them | verify.py on a fresh read of the v8 Doc shows every logged edit "accepted" (v8 was made from all 223, on CT's word, 26 Nov) and "not in the Doc" for everything newer |
 | A new chat can pick up cold | `REFERENCE.md` and `TODO.md` are current at the end of every session, with "Where things stand" in `EDIT-LOGGING-PROCEDURE.md` |
 
 ## 4. The finished book

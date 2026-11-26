@@ -3,8 +3,10 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 224.** Chapters 20 to 36 are written; CT's eight choices of 26 Nov are in (edits 217 to 219 and corrections to 198
-and 204), and his Lou scene opens Chapter 18 (edit 220). The checkpoint and the prompt for the next chat: `CHECKPOINT-2026-11-26.md`. Next: the women's scene about the tall rover (Chapter 34; section 1), then section 3.
+**Next edit: 224.** The book is the Google Doc "StS v8 draft (Nov 26)" (every edit, 1 to 223; no pictures), with a
+locked backup; the large print PDF of v8 is in Drive. This chat (26 Nov, ninth): the women's scene in Chapter 34
+(221), the whole-book continuity pass (222), its held items resolved (223), v8. Next: the housekeeping pass; its
+prompt is in `CHECKPOINT-2026-11-26-v8.md`.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
@@ -33,7 +35,8 @@ and 204), and his Lou scene opens Chapter 18 (edit 220). The checkpoint and the 
       the taller machine and the yield against pushback from the community and decide for it, with an older woman's
       advice on people who tell you what they think without being asked ("Not ABOUT men, but PEOPLE"). Asked and not yet
       answered: does he have her line, and is the treasurer Reuben or a woman.
-- [ ] **The ending lines** still open (plan, section 13): "It should have felt like traveling light" (Ch 37); the gas
+- [x] **The ending lines** (plan, section 13): done in edit 223, except the gas cap (his scene) and "heard it as a
+      murder". Was: "It should have felt like traveling light" (Ch 37); the gas
       cap (Ch 25, his scene); the Appendix; the Ch 37 to 39 line flags. Done: the rover in Ch 38 (216), the arms at
       Praether's in Ch 37 (217), Devendra's text in Ch 39 (218). Bidwell's "somebody" is never named (CT).
 - [ ] **The Instagram synopsis**: fix the four things the book doesn't do, or leave it. Claude's answer is in the chat
@@ -76,12 +79,12 @@ Need CT's yes:
 - [x] ~~Chapter 33's tomato dinner: cut the cotton gin numbers, the saber-tooth and the rent, and "Pull apart what it takes
       to stay alive" (they say the Afterword's argument a second time; about 400 words). They may be CT's own words, so
       not cut without his yes.
-- [ ] The name of the next build, and "OLD:" on the frozen v7 Doc (`NEXT-BUILD.md`, section 1).
+- [x] The name of the next build: v8 (CT, 26 Nov). Still open: "OLD:" on the frozen v6 and v7 Docs (his Docs, his yes).
 
 ## 3. After Chapter 36
 
-- [ ] The ending lines CT said yes to, logged one at a time.
-- [ ] The Appendix brought up to date (plan, section 13, item 6).
+- [x] The ending lines, logged (edit 223; CT: "resolve as many of these as you can without my help").
+- [x] The Appendix brought up to date (edit 223).
 - [ ] The smell pass, **in a new chat just for smell** (CT, 26 Nov: "I'll do this with you later in a new chat dedicated
       just to smell"; `WRITING-INSTRUCTIONS.md`, section 7a). From Chapter 27 on it is part of writing each
       chapter. For the rest of the book: his two places first, in his words (the truck he lives in, Chapters 14 and 15;
@@ -92,9 +95,11 @@ Need CT's yes:
       (edit 222): 50 fixed; 10 held for CT in `drafts/pass-2026-11-26.md`, "Held for CT".
 - [x] ~~Words: Chapters 27 to 36 at or under 22,590 in total.~~ Dropped: length is not the measure (CT, 26 Nov).
 - [ ] `build_gate.py OUT/v6.txt --todo manuscript/novel/TODO.md` says READY.
-- [ ] Ask CT how the final copy is made (a new Doc from make_v6.py's .docx, or the edits as suggestions in the v6
+- [x] v8 made on CT's word (26 Nov): a new Doc from make_v6.py's .docx, no pictures, plus a locked backup; bridge map
+      updated. Was: Ask CT how the final copy is made (a new Doc from make_v6.py's .docx, or the edits as suggestions in the v6
       Doc), then do it on his go and update the bridge map.
-- [ ] The cover credit on the copyright page (`copyright_page` in `publication/novel/build/book.json`), his words.
+- [x] The cover credit on the copyright page (in book.json, 26 Nov: "Cover credit: me, the author, sketches and Midjourney.")
+      Was: The cover credit on the copyright page (`copyright_page` in `publication/novel/build/book.json`), his words.
 - [ ] The ISBN, when CT has it.
 - [ ] The large print PDF and the release build, when CT asks.
 
@@ -105,6 +110,8 @@ Need CT's yes:
       `_workbench`, the Drive mirror once).
 
 ## Done
+
+- 26 Nov, ninth chat: edits 221 to 223; v8 Doc and its backup; the v8 large print PDF; the bridge remade.
 
 - 26 Nov, eighth chat: CT's eight choices (edits 217 to 219; "Pondwater"; corrections to 198 and 204).
 - 26 Nov, eighth chat: Chapter 17's Praether scene (edit 205).

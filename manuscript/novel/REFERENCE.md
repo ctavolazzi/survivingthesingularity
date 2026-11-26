@@ -18,10 +18,14 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 4. The tools: `manuscript/tools/edits-v6/make_v6.py` and `ops.py`; `manuscript/tools/edits-v5/checks.py` and
    `verify.py`; `manuscript/tools/edits-v6/find_in_book.py`.
 5. Read both Docs fresh with the Docs connector (the result is saved to a file; copy it and use it as READ.json):
-   - v6, the book: "StS v6 draft (Nov 25)", id `11nzQG2J-FciJ1XvU2LoPNTboL2N7pBVA0Dy-YCxqGuM`. Run verify.py on it;
-     expect only the known PARTIAL rows (19, 30, 125, 131, 135, 137, 182, 197, 201).
+   - v8, the book since 26 Nov: "StS v8 draft (Nov 26)", id `1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8`. It holds
+     every edit, 1 to 223, without the 19 pictures. Run verify.py on it; expect every row "accepted" and nothing
+     PARTIAL (new edits from 224 show "not in the Doc" until CT clears them). Its locked twin is "StS v8 BACKUP (Nov
+     26), do not edit" (`18gmZKWiUPyujRkRY_ZSh80ifdchZKtk8oPOpVuycOPM`).
    - v5, the base: "StS v5 draft (Nov 23)", id `1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA`. Run make_v6.py on it;
-     every row must pass. Work from its `v6.txt`.
+     every row must pass. Work from its `v6.txt`. (make_v6.py keeps its name; it builds v8.)
+   - The old v6 Doc ("StS v6 draft (Nov 25)", `11nzQG2J-FciJ1XvU2LoPNTboL2N7pBVA0Dy-YCxqGuM`) is no longer the book.
+     On it verify.py shows the nine old PARTIAL rows (19, 30, 125, 131, 135, 137, 182, 197, 201).
 6. Tell CT in one line that you are ready, and the next edit number.
 
 ## 2. Where everything is
@@ -41,13 +45,13 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | How CT writes, each character's voice | `WRITING-INSTRUCTIONS.md`, sections 5 and 12 |
 | Character notes | `characters/<name>/` (gathered by `manuscript/tools/book.py cast`) |
 | Which Doc is the book | `BRIDGE.md` (generated: `node scripts/sts-bridge.mjs export md`) |
-| The PDF CT has | "StS v6 large print CURRENT (26 Nov, edits 1 to 186 ...)" in Drive folder "StS Publication Files" (`1QmqU-MsDcqfh1sC5Q_DsGeqcdyf_kLB_`); older builds in `12CbC-hEUy_5rArVtz8v393rc_ciV9Ltv` |
-| Drive copy of the edit list | "StS v6 edit list (mirror of GitHub)"; its current id is in `EDIT-LOGGING-PROCEDURE.md`, step 10 |
+| The PDF CT has | "StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf" (`1B0nwZM5XXGxfeEjRAjyl0bICQNxsHtGp`) in Drive folder "StS Publication Files" (`1QmqU-MsDcqfh1sC5Q_DsGeqcdyf_kLB_`); older builds in `12CbC-hEUy_5rArVtz8v393rc_ciV9Ltv` |
+| Drive copy of the edit list | "StS edit list, edits 1 to N (mirror of GitHub)"; its current id is in `EDIT-LOGGING-PROCEDURE.md`, step 10 |
 | Build settings (copyright page, cover) | `publication/novel/build/book.json`; build steps in `publication/README.md` |
 
 ## 3. Policies (CT's standing rules)
 
-- **Nothing goes into either Google Doc** until CT clears it. Log in GitHub only.
+- **Nothing goes into the Google Docs** until CT clears it. Log in GitHub only. (v8 was made on his word, 26 Nov.)
 - **His words go in word for word** and are marked his. Smooth only what dictation broke. Mark what Claude worded.
   His notes that aren't for the page never go in the text.
 - **Flag every fact Claude invents**, in the report for that chapter.
@@ -97,7 +101,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
    bold), the facts Claude invented, what touches another chapter. The scratchpad script used on 26 Nov builds the
    Book now and Change to blocks from the ops rows; it is easy to rewrite.
 10. Add the edit to `EDITS.md`, above the line "Corrected in place, 26 Nov ...", with the number, a bold title, a few
-    lines of what changed and whose words, and "Logged only; not in the v6 Doc yet."
+    lines of what changed and whose words, and "Logged only; not in the v8 Doc yet."
 11. Run `python3 manuscript/tools/edits-v5/verify.py V6_READ.json --table manuscript/novel/EDITS-status.md`. The
     PARTIAL list must not grow.
 12. Tick the chapter in `TODO.md`. Commit (one change, plain message), push to the branch.
@@ -138,8 +142,8 @@ for what it is ("v7" is taken by a frozen side copy).
 2. `EDIT-LOGGING-PROCEDURE.md`: "What is still open" and "Where things stand".
 3. `WRITING-INSTRUCTIONS.md`: any new lesson from CT's corrections.
 4. `_workbench`: `STATE.md` (Next moves, item 0) and a new entry at the top of `sessions/LOG.md`.
-5. The Drive mirror of the edit list, once: create a new Google Doc from `EDITS.md`'s text titled "StS v6 edit list
-   (mirror of GitHub)"; rename the old one "OLD: StS v6 edit list (mirror of GitHub)" and put a pointer to the new one
+5. The Drive mirror of the edit list, once: upload `EDITS.md` as text/plain (a file reference, not typed) titled
+   "StS edit list, edits 1 to N (mirror of GitHub)"; rename the old one with "OLD:" in front and put a pointer to the new one
    at its top; write the new id into `EDIT-LOGGING-PROCEDURE.md` (step 10) and `EDITS.md`.
 6. Commit and push both repos.
 
@@ -160,7 +164,7 @@ for what it is ("v7" is taken by a frozen side copy).
 ## 6. Pitfalls learned
 
 - A check row's must-have that is already in the Doc, or a gone-word that never was, makes verify.py show PARTIAL.
-  Exactly: a row reads "not in the Doc" only if every gone-word is still in the v6 Doc. A gone-word that came in
+  Exactly: a row reads "not in the Doc" only if every gone-word is still in the Doc being checked (v8 from 26 Nov). A gone-word that came in
   through a logged edit (so is not in the Doc) makes PARTIAL; leave it out of the row (learned 26 Nov, edit 222).
 - The same find string can sit in two ops rows (an old row and a correction). Change the newest one, and check
   `s.count()` before any scripted replace.
@@ -172,3 +176,7 @@ for what it is ("v7" is taken by a frozen side copy).
 - Count words from `v6.txt` with `story_report.py`, never from a file with line numbers in it (the first targets
   were 1,500 words off for that reason).
 - An edit that is in the Doc is never changed in place. Add a new row that finds its words and replaces them.
+- The Drive connector refuses any call over about 3.1 MB of files. The .docx with its 19 pictures is 5.6 MB, so v8
+  was made with `make_v6.py ... --no-pictures` (CT's choice, 26 Nov). The PDF (0.9 MB) and the edit list fit.
+- A shell heredoc that is not quoted runs anything in backticks (`make_v6.py` vanished from a record this way on 26 Nov).
+  Quote the heredoc ('EOF').

@@ -3362,6 +3362,21 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+227. **The polish pass at key moments.** CT (26 Nov, tenth chat): "there are some key moments where there's still
+     opportunity to buff it out and polish it up. I'd like you to do a pass to tighten everything here and now." Four
+     readers, one range each; 50 sentences returned, every quote machine-matched; Claude read each on the page and
+     checked whose words it was. 20 places fixed (21 ops rows), all Claude's wording, none of CT's dictated lines:
+     Ch 21 (the opening's "Not dramatically. Just constantly."), Ch 22 ("He could not delete what they had copied";
+     "the worst available outcome"; "Useful was easier than David."; "which she did not."), Ch 24 ("went to his
+     lane"), Ch 25 ("confessed to it"), Pondwater ("He remembered what she had told him ... about her dad and a
+     porch." cut), Ch 29 ("one he did not keep"), Ch 31 ("So of course they knew."; "finally saw the whole thing"; "He
+     didn't go to the shop"), Ch 32 ("Except there was no demo."), Ch 33 (the hinge inversion from edit 172; "He read
+     them out"; "Elijah realized"), Ch 34 ("He didn't have to."; "They could have run that shed"), Ch 35 ("His feet
+     had."), Ch 36 ("He told Grace"). 30 left, among them everything in Chapters 0 to 19, the ending and the fire. Five
+     lines are put to CT (four mirrored lines in done chapters; "which one of them he'd helped", Ch 36). Each change
+     with Book now, Change to and why, and the left list: `manuscript/novel/drafts/polish-2026-11-26.md`. Row 172
+     narrowed. 58 words in, 78 out. Logged only; not in the v8 Doc yet.
+
 226. **Chapter 26: why Elijah waits after the pond.** CT (26 Nov, tenth chat), dictated, for "the reason why Elijah
      waits so long in between when Grace kisses him to keep him from leaving the farm and when they actually decide to
      date". Where: Chapter 26, after "By her own rule the answer was his to give, and she didn't knock again.", in

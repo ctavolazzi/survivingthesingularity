@@ -1440,6 +1440,28 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (225, "You'd be on a list. It's a good list.", "You'd be on a list. Believe me, it's a good list."),
 # 226, Ch 26: why Elijah waits after the pond (CT, 26 Nov, tenth chat; drafts/chapter-26.md, foot)
 (226, 'His side of it he never said out loud. If the pay vote passed, he would be the one person at that table drawing a check, and Grace was the one bringing it to a vote. Greedy little grub, Melody would have said, and he would have heard it every time Grace touched his arm.', "Elijah didn't quite know why he didn't go for it right away. Maybe it was a combination of his prior dating history and his steadfast commitment to not rocking the boat any more than he needed to, but he felt like hooking up with Grace would be, at that point in time, a bad call. Even though she'd made it clearer than an alpine day that she was into him, he ultimately decided not to jeopardize his room and board by getting entangled. It was a decision he truly meant to stand by.\nThe pay was part of it too. If the pay vote passed, he would be the one person at that table drawing a check, and Grace was the one bringing it to a vote. Greedy little grub, Melody would have said, and he would have heard it every time Grace touched his arm.\nBut alas, fate has a way of wearing you down. And time had a different story to tell. Watching Grace work the land would do that to just about anyone."),
+# 227, the polish pass at key moments (CT, 26 Nov, tenth chat: "buff it out and polish it up"; drafts/polish-2026-11-26.md)
+(227, 'The co-op needed money the way every real thing needs money.', 'The co-op needed money the way every real thing needs money, a little at a time and all the time.'),
+(227, "Not dramatically. Just constantly. In Elijah's first spring", "In Elijah's first spring"),
+(227, 'He could delete it from his own server. He could not delete what they had copied.', 'He could delete it from his own server, but not what they had copied.'),
+(227, 'Everyone in the shed understood that to be the worst available outcome.', 'Everyone in the shed would rather she had.'),
+(227, 'So he stayed where he was useful. Useful was easier than David.', 'So he stayed where he was useful. It was easier than facing David.'),
+(227, 'She put her hand on his forearm, the way she did with everyone, and then she left it there, which she did not.', 'She put her hand on his forearm, the way she did with everyone. This time she left it there.'),
+(227, 'So Marta welded the spine of his house, and Elijah went to his lane.', 'So Marta welded the spine of his house, and Elijah did the part he knew.'),
+(227, 'Elijah laid the chart on the worn wood and confessed to it.', 'Elijah laid the chart on the worn wood and told him.'),
+(227, ' He remembered what she had told him his first month, about her dad and a porch.', ''),
+(227, 'There was one he did not keep.', 'There was one row he did not keep.'),
+(227, 'He had never told them any of it. So of course they knew.', 'He had never told them any of it. Sitting there, he felt like all of them knew anyway.'),
+(227, 'He stood in front of the roster with his coffee and finally saw the whole thing.', 'He stood in front of the roster with his coffee going cold.'),
+(227, "He didn't go to the shop that week.", "Elijah didn't go to the shop that week."),
+(227, 'Except there was no demo. There was a hum by a county road.', 'Except this time there was no demo, only a hum by a county road.'),
+(227, 'Carefully he put the hinge down on the post, and then he was back', 'He put the hinge down on the post, carefully, and then he was back'),
+(227, 'He read them out at Friday dinner.', 'Elijah read the posts out at Friday dinner.'),
+(227, "Elijah realized on the walk up to the shouse that he hadn't said one word all night.", "It occurred to Elijah on the walk up to the shouse that he hadn't said one word all night."),
+(227, "He didn't say who. He didn't have to. Everybody in that room knew", "He didn't say who. Everybody in that room knew"),
+(227, 'They could have run that shed better and more precisely than it had ever been run.', 'The arms could have run that shed better and more precisely than it had ever been run.'),
+(227, "He hadn't decided to. His feet had.", "He hadn't planned to."),
+(227, 'He told her on the Wednesday of festival week', 'He told Grace on the Wednesday of festival week'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

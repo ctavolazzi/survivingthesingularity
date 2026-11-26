@@ -103,10 +103,13 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   face, losses. There needs to be, like, stakes. Somebody needs to leave the farm. And it hurts. They leave for greener
   pastures. They give up. They decide that it's not worth it. Like, they give up on the vision too soon. That's a
   normal thing that would happen." So: Chapter 37 to the Epilogue stay; the work is Chapters 20 to 36.
-- What the book has now (checked 26 Nov in make_v6.py's v6.txt): no kiss between Elijah and Grace anywhere. The
-  closest moment is the end of Chapter 24, on the blanket by the amp ("her head came over and rested against the side
-  of his, and stayed"). Marta's matchmaking is one line right after it ("she'd told Grace the same week that the
-  spreadsheet had a soft spot for old music"). The pond appears in Chapters 9, 18 and 37, never with the two of them.
+- What the book has now (corrected 26 Nov; Claude first told CT there was no kiss, which was wrong): one kiss, in
+  Chapter 25, in the shouse after a Friday dinner ("she leaned down and kissed him, once, and stayed there with her
+  forehead on his"), and her truck still in the gravel the next morning. Earlier in Chapter 25: Marta's scene ("You
+  like her." ... "Don't make me sorry."), then the blanket by the amp ("her head came over and rested against the side
+  of his, and stayed"), then Marta's nudge to Grace ("somebody ought to bring him something loud"). They become a
+  couple off the page: Chapter 26 only says she wears his shirt and "where she slept now". The pond appears three times
+  (Ch 17 frogs, Ch 18 and Ch 37 birds) and is never described or used for a scene.
 
 ### The plan for Chapter 20 to the end (Claude's draft, 26 Nov; nothing logged, waiting on CT)
 

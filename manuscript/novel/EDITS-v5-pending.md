@@ -1645,6 +1645,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      (edit 97) as before. Context from CT, NOT for the page: what happened last time is never explained ("we just
      don't ever need to, like, go into that"). Logged only; not in the v6 Doc yet.
 
+153. **Chapter 13, after Manny's call: "He left immediately."** CT (26 Nov): "In front of he didn't remember the drive, we need
+     to say he left immediately. He didn't remember the drive." Book now, after Manny's "...Linda's alive. They took her
+     to Santa Rosa.":
+
+     > He didn't remember the drive.
+
+     Change to [CT's words]:
+
+     > He left immediately. He didn't remember the drive.
+
+     (Chapter 0's "He didn't remember the drive home." is a different scene, after the bar; it already has "Elijah
+     left without looking up." before it.) Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

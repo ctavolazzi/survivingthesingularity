@@ -158,4 +158,5 @@ C=[
 (150,"Ch 11",["Trent pondered for a moment.","You say you're good at carrying stuff. I got a lot of things that need to be carried, and some of them are quite expensive.","If you do the work, we got two spare robot arms with your name on 'em."],["They also had two spares in crates that they were never going to need."]),
 (151,"Ch 11",["Let's do it.\"\nIt was a good idea. Elijah could see it."],["Let's do it.\" [break] It was a good idea."]),
 (152,"Ch 12",["a towel over the wheel.\nThe farm was two hours north, and his mother would have left the porch light on for him. But gas there and back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back through the door with nothing to show for it. Not again. Not after what happened last time."],[]),
+(153,"Ch 13",["They took her to Santa Rosa.\"\nHe left immediately. He didn't remember the drive."],[]),
 ]

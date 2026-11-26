@@ -3347,6 +3347,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      place were his to run". Counting fix at the old line 2139. About 312 words in, 56 out. Logged only; not in the v6
      Doc yet.
 
+204. **Chapter 26: the rover and the argument about labor, Ma's fall, the pay vote, Mrs. Delgado, the October night at
+     the pond.** From the plan and CT's direction of 26 Nov; written by Claude and logged on CT's "Do it" (Book now and
+     Change to in `manuscript/novel/drafts/chapter-26.md`, with whose words are whose). The gantry becomes a rover (here
+     and in Ch 32 and 33; Ch 38's "the gantry stood parked" waits for CT). CT's lines for Lou ("We're not being
+     replaced, we're expanding our capacity. We're having productivity gains."), Curtis (the drones, "I need to go build
+     an EMP."), Priya ("wildly illegal") and Lou ("I'll go talk to him.") go into the wash-station argument, with
+     Elijah hearing Devendra and the CPO in it. Ma falls on day six of the dark ("Maybe I need to go home right now." is
+     CT's); Grace offers to drive; he stays. The pay vote is brought the Friday after Thanksgiving and waits until
+     summer; Curtis "asked it looking at me." Mrs. Delgado seen once. October: Grace can't go to her festival; Marta's
+     push; he sets the amp on the tailgate at the pond, knocks, they play music until the light goes, he kisses her;
+     the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
+     and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
+
 Corrected in place, 26 Nov, after an audit of the day's edits against CT's standing rules (none of it in the Doc):
 written messages set in italics in edits 196 (Mr. Ostrander's messages and Elijah's replies), 198 (*Dear Ma*) and 200
 (*You're a liar. And you need to stop.*; Marta's card, *Power or brain? Halve it.*); two day names that only marked

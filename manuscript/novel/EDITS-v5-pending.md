@@ -2331,6 +2331,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+175. **Chapter 31: his father's rule, once more.** CT (26 Nov), on the recommendations. "Never take a handout" (edits 91 to 93) is not heard after Chapter 10. One echo, where Elijah remembers turning down the million. Claude's wording, from the father's line in edit 91.
+
+     Book now:
+
+     > He had turned down the million dollars and the ads and the room. And these people
+
+     Change to:
+
+     > He had turned down the million dollars and the ads and the room. That was his father in him: never take a handout. And these people
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

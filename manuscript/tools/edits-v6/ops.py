@@ -551,6 +551,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "This time nobody said yes. There were three tables now, at one table."),
 (174, "But it didn't break. It's on purpose.",
 "But it didn't break. Somebody did it on purpose."),
+# 175, Ch 31
+(175, "He had turned down the million dollars and the ads and the room. And these people",
+"He had turned down the million dollars and the ads and the room. That was his father in him: never take a handout. And these people"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

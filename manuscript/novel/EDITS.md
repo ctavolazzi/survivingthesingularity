@@ -3360,6 +3360,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+208. **Chapter 29: the women at the grange hall, Denny argues, Lupe, Tyler's yes, the welder gap.** From the plan and CT's
+     ask for scenes with only women; written by Claude (Book now and Change to in `manuscript/novel/drafts/chapter-29.md`).
+     Marta, Yvonne, Lupe, Rosa and Irene in the grange hall kitchen; Denny's "I'm not burned out. I'm unpaid." and the
+     tool company's number; Lupe's "Somebody quits."; Tyler's "Does it pay?" "No." "Monday."; Marta's "Somebody whose
+     coupons bend."; Priya's "Log it." 1,821 words to 2,141. Logged only; not in the v6 Doc yet.
+
 207. **Chapter 28: one night dark, power when it counts, the Ochoas' house off the map.** From the plan and CT's direction
      (overnight; power when it counts; the panels cut costs); written by Claude (Book now and Change to in
      `manuscript/novel/drafts/chapter-28.md`). The battery bank carries the mesh, the freezer and the kitchen trailer;

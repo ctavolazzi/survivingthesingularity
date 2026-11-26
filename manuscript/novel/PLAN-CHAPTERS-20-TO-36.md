@@ -352,6 +352,27 @@ The detail is in section 5a. In order:
 - **MOVED HERE, CT**: October. Marta's push ("You like her." ... "Don't make me sorry."). He sets the Loudbox on the
   tailgate at the pond and plays her music until the light goes. The blanket. He kisses her. Her truck in the gravel.
 
+- **NEW, CT: the rover, in place of the gantry.** The gantry (Ch 26: "a steel bridge that rode on two tracks down
+  the length of a bed") becomes a high-clearance rover that drives over the beds, so it can work any field, not one
+  bed. KEEP the scene around it: Tyler's "It's solarpunk," the wash-station argument, Wren's "Wouldn't it make more
+  sense for it to just leave?", Irene and Walt's kidney, Lou's "he'd marry it if it ever learned to pick."
+  - CT's new beats go into that same argument (the book already has Curtis on the movies there: "Every one of those
+    movies starts with lettuce ... Then it's Skynet."), so it is one argument, not two.
+  - The question is now labor: what it should do, and whose work that is.
+  - Lou (CT): "we're not being replaced, we're expanding our capacity. We're having productivity gains."
+  - Elijah's flashback (CT), to lines already in the book: Devendra, Ch 1, "Augmentation, not replacement." The CPO at
+    the all-hands, Ch 2, "Value flows back to creators through productivity gains." Lou is the man he trusts most up
+    here, using Claypot's words, and Elijah built the rover's sensors.
+  - Curtis (CT): government surveillance drones next; "I need to go build an EMP." He walks off. Lou shakes his head.
+  - "You're not actually going to let him build an EMP, are you? That's wildly illegal." (CT's line.) Who: Priya
+    (Claude's pick). It's her trial the rover is working, she argues with evidence, and she once ran for office and
+    "told everyone it was practice for Congress," so she knows exactly which law. Patricia is off the page in Ch 26.
+  - Lou (CT): "I'll go talk to him." He leaves. The book stays with Elijah. His guilt is shown, never named: what his
+    hands do with the head of lettuce, the rover's sensor he can't stop looking at, the thing he starts to say and
+    doesn't. The feeling sentence, if any, is CT's.
+  - Pays forward: Lou's own "expanding our capacity" is the argument Elijah uses for the arms in Ch 34, and Denny's
+    "I went" answers it.
+
 ### Chapter 27: Blueprints of a Wall (November 2026 to February 2027)
 - **KEEP**: the fire video, eleven towns, the vote to give the plans away, the $49 knockoff, Patricia's pledge, the well.
 - **CHANGE**: when the knockoff goes up on the screen somebody says something. Grace lost that vote and the route
@@ -359,6 +380,13 @@ The detail is in section 5a. In order:
 - Patricia's "No generated code" now has the cooked greenhouse behind it. She means it, and she's hiding her own use.
 
 ### Chapter 28: Hello, Ridge (first winter storm)
+- **CHANGE, CT: overnight, not three days.** "The county's power came back three days later" becomes the next
+  morning. Check "three days dark" anywhere else (the Appendix, section 7's list).
+- **NEW, CT: power when it counts.** The county goes dark at eight; the co-op doesn't. The panels and the battery
+  bank keep the radio mesh, the shop's freezer and the kitchen trailer running through the night, and the soup goes
+  out (KEEP Curtis's "who still needed soup taken over"). Denny films it. It is the proof the reader has been waiting
+  for that the place works when it counts, and the north houses, on Elijah's dead node, are the ones that can't
+  check in.
 - **KEEP**: the storm, three days dark, Curtis and the rain fly, the network getting along without him.
 - **CHANGE**: the node 7 lesson repeats Ch 22, so its weight moves. The houses that drop off the map are the
   couple's. The radio check-in is her voice. Second time his work has failed that house.

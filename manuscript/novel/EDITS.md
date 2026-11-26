@@ -162,6 +162,20 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   notices that Grace is excited too. And if we weave it into the right part, then maybe this would be like Lou maybe
   realizing that those two like each other. Or if he's already known ... him like confirming something that he
   already knew. I don't know. You can read enough of the book to figure it out ... Let's finish the fight."
+- CT, on the storm, power, the rover and the argument about being replaced: "The county goes dark for 3 days? That's
+  ridiculous. That's not believable at all ... We need to change that to overnight. We also need to add power when it
+  counts, and the farm needs to get a rover, one of those high tower rovers. And they need to discuss how to use it to
+  do labor. And when they are discussing how to use it to do labor, there needs to be a philosophical argument, of
+  course, about being replaced. And then Lou says, we're not being replaced, we're expanding our capacity. We're having
+  productivity gains. And then Elijah has a flashback to what they said at Claypot. And Curtis isn't so sure because
+  he's seen a lot of movies. And Curtis is like, next thing you know, we got government surveillance drones flying all
+  over us. And he's like, I need to go build an EMP. And then he walks off and Lou shakes his head. And Marta's like, or
+  whoever's there, Patricia maybe, if she's there, she's like, you're not actually going to let him build an EMP, are
+  you? That's wildly illegal. And if it's Marta that says it, that's great. If it's Patricia that says it, that's also
+  great. Maybe Priya says it, whoever's there in the scene, and it makes the most sense. And Lou's like, I'll go talk
+  to him. And then he leaves. But since Elijah's the narrator and he's like the focal point of the story, we don't see
+  that conversation. What we see is Elijah's apprehension and guilt. And we don't need to say Elijah was apprehensive
+  and guilty. We need to show it."
 - What the book has now (corrected 26 Nov; Claude first told CT there was no kiss, which was wrong): one kiss, in
   Chapter 25, in the shouse after a Friday dinner ("she leaned down and kissed him, once, and stayed there with her
   forehead on his"), and her truck still in the gravel the next morning. Earlier in Chapter 25: Marta's scene ("You

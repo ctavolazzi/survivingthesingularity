@@ -4,6 +4,10 @@
 completeness, its emotional impact, its memorability and believability, contradictions, continuity errors, and
 anything else structurally problematic that we might want to adjust, edit, or change."
 
+**Since then** (tenth logging chat): the evaluation below is from edits 1 to 205 and is kept as it was written. Its
+section 9 has been acted on (see `TODO.md`, section 2a). The appendix was measured again after edit 223, the text of
+the v8 Doc.
+
 ## How this was made, and what it can't claim
 
 - **Measured by code:** `manuscript/tools/edits-v6/story_report.py` over make_v6.py's v6.txt with edits 1 to 205
@@ -218,193 +222,201 @@ pages in the book and every reader said so.
 
 ## Appendix: the measurements
 
-Measured from `v6.txt`: 95,675 words in Chapters 0 to 39, the four "Meanwhile" sections and the Epilogue.
+Measured again in the tenth logging chat (26 Nov), after edit 223: the build that is the v8 Doc.
+The report above was written from edits 1 to 205; where its text quotes a number, this appendix has the current one.
+
+Measured from `v6.txt`: 100,005 words in Chapters 0 to 39, the four "Meanwhile" sections and the Epilogue.
 
 ### Length, talk and scenes
 
 | Ch | Title | Words | In quotes | Scenes | Smells |
 |---|---|---|---|---|---|
 | 0 | Three Glasses Up | 3,606 | 11% | 6 | 0 |
-| 1 | A Bet for Lamb | 1,246 | 26% | 3 | 1 |
+| 1 | A Bet for Lamb | 1,244 | 26% | 3 | 1 |
 | 2 | The Coin Slot | 1,363 | 23% | 3 | 0 |
 | M1 | Meanwhile 1 | 280 | 60% | 1 | 0 |
-| 3 | A Satellite Over the Star Thistle | 1,307 | 27% | 2 | 0 |
+| 3 | A Satellite Over the Star Thistle | 1,310 | 27% | 2 | 0 |
 | 4 | Cell G14 | 761 | 0% | 1 | 0 |
-| 5 | The Tenant Who Paid No Rent | 1,474 | 6% | 3 | 0 |
+| 5 | The Tenant Who Paid No Rent | 1,491 | 6% | 3 | 0 |
 | 6 | Four Minutes and Eleven Seconds | 1,420 | 31% | 3 | 0 |
 | 7 | You're Early | 2,544 | 24% | 4 | 0 |
 | 8 | Elijah Madrona | 2,151 | 24% | 2 | 3 |
-| 9 | The Wrong Verb | 2,041 | 46% | 2 | 0 |
-| 10 | Frozen Peas | 1,484 | 37% | 2 | 2 |
+| 9 | The Wrong Verb | 2,046 | 45% | 2 | 0 |
+| 10 | Frozen Peas | 1,493 | 36% | 2 | 2 |
 | M2 | Meanwhile 2 | 375 | 53% | 1 | 0 |
-| 11 | It's Always a Strap | 2,366 | 39% | 3 | 0 |
+| 11 | It's Always a Strap | 2,383 | 38% | 3 | 0 |
 | 12 | The Seventeen-Dollar Shower | 988 | 4% | 1 | 0 |
-| 13 | The Buckets in the Barn | 4,559 | 7% | 9 | 2 |
+| 13 | The Buckets in the Barn | 4,567 | 7% | 9 | 2 |
 | 14 | A Stain Shaped Like Ohio | 1,752 | 24% | 1 | 0 |
-| 15 | The Twenty, Folded Small | 5,637 | 17% | 2 | 0 |
+| 15 | The Twenty, Folded Small | 5,626 | 17% | 2 | 0 |
 | 16 | The Red Bin | 1,341 | 33% | 2 | 0 |
-| 17 | Twice Certified | 5,040 | 34% | 6 | 0 |
-| 18 | Gary and Sal | 1,486 | 38% | 1 | 0 |
-| 19 | Eleven, One, Zero | 3,182 | 21% | 4 | 0 |
-| 20 | The Bottom of the Column | 1,982 | 40% | 1 | 1 |
+| 17 | Twice Certified | 5,125 | 34% | 6 | 0 |
+| 18 | Gary and Sal | 1,698 | 40% | 2 | 0 |
+| 19 | Eleven, One, Zero | 3,160 | 21% | 4 | 0 |
+| 20 | The Bottom of the Column | 1,983 | 40% | 1 | 1 |
 | 21 | Forty-One Views | 1,867 | 21% | 2 | 0 |
-| 22 | Two Slashes | 2,599 | 24% | 4 | 0 |
-| 23 | Owner or Occupant | 1,421 | 16% | 1 | 0 |
+| 22 | Two Slashes | 2,677 | 27% | 4 | 0 |
+| 23 | Owner or Occupant | 1,422 | 16% | 1 | 0 |
 | M3 | Meanwhile 3 | 525 | 48% | 1 | 0 |
-| 24 | A Chair a Foot Closer | 2,076 | 28% | 4 | 0 |
-| 25 | Long Enough to Laminate | 2,820 | 24% | 7 | 0 |
-| 26 | The Indignant Worm | 4,361 | 23% | 8 | 1 |
-| 27 | Blueprints of a Wall | 2,046 | 22% | 4 | 0 |
-| 28 | Hello, Ridge | 1,125 | 11% | 1 | 0 |
-| 29 | Ink and Pencil | 1,821 | 24% | 2 | 0 |
-| 30 | Item Seven | 2,074 | 25% | 2 | 1 |
-| 31 | Six Eggs on the Floor | 2,996 | 22% | 6 | 1 |
+| 24 | A Chair a Foot Closer | 2,174 | 27% | 5 | 0 |
+| 25 | Long Enough to Laminate | 2,845 | 24% | 7 | 0 |
+| 26 | The Indignant Worm | 3,777 | 24% | 6 | 1 |
+| Pw | Pondwater | 1,175 | 27% | 2 | 0 |
+| 27 | Blueprints of a Wall | 2,295 | 21% | 4 | 0 |
+| 28 | Hello, Ridge | 1,193 | 10% | 1 | 0 |
+| 29 | Ink and Pencil | 2,142 | 27% | 3 | 0 |
+| 30 | Item Seven | 2,308 | 27% | 3 | 1 |
+| 31 | Six Eggs on the Floor | 3,149 | 24% | 6 | 1 |
 | M4 | Meanwhile 4 | 471 | 23% | 1 | 0 |
-| 32 | The Rubber Band | 2,100 | 19% | 3 | 0 |
-| 33 | A Poem About Tide Pools | 4,255 | 58% | 4 | 1 |
-| 34 | A Guy With Arms | 2,320 | 27% | 2 | 0 |
-| 35 | Two Walnuts in One Fist | 1,686 | 49% | 2 | 0 |
-| 36 | This Is the Gate | 2,167 | 41% | 2 | 0 |
-| 37 | New Tape on an Old Gate | 2,677 | 18% | 4 | 0 |
-| 38 | A Truck Over a Cattle Guard | 2,766 | 30% | 1 | 0 |
-| 39 | It's Six Now | 2,826 | 19% | 3 | 0 |
+| 32 | The Rubber Band | 2,978 | 22% | 4 | 0 |
+| 33 | A Poem About Tide Pools | 4,369 | 58% | 4 | 1 |
+| 34 | A Guy With Arms | 3,676 | 37% | 4 | 1 |
+| 35 | Two Walnuts in One Fist | 1,392 | 46% | 2 | 0 |
+| 36 | This Is the Gate | 2,299 | 39% | 3 | 0 |
+| 37 | New Tape on an Old Gate | 2,669 | 18% | 4 | 0 |
+| 38 | A Truck Over a Cattle Guard | 2,761 | 30% | 1 | 0 |
+| 39 | It's Six Now | 2,843 | 19% | 3 | 0 |
 | Ep | Epilogue | 291 | 0% | 1 | 0 |
 
 ### Who is on the page (mentions per chapter; blank is none)
 
-| Who | 0 | 1 | 2 | M1 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | M2 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | M3 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | M4 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | Ep |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Elijah | 39 | 15 | 13 |  | 5 | 3 | 9 | 6 | 29 | 18 | 18 | 13 |  | 24 | 7 | 30 |  | 35 | 5 | 42 | 9 | 23 | 19 | 20 | 14 | 11 |  | 6 | 24 | 25 | 9 | 7 | 13 | 9 | 6 |  | 2 | 10 | 5 | 22 | 8 | 12 | 4 | 13 | 1 |
-| Grace |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 5 | 5 | 26 | 3 | 11 | 2 | 4 | 8 | 7 |  | 14 | 10 | 20 | 5 | 3 | 4 | 3 | 8 |  | 3 | 12 | 2 |  | 9 | 2 | 13 | 4 | 1 |
-| Ma | 1 |  |  |  | 6 |  | 2 | 2 | 2 | 2 |  | 1 |  | 3 | 3 | 11 |  | 6 |  | 4 | 4 |  | 4 |  | 3 | 1 | 2 | 7 | 6 | 1 |  |  | 1 |  | 7 |  | 2 | 1 |  |  | 1 | 5 |  | 5 | 1 |
-| David | 14 | 7 |  |  |  |  | 7 | 2 | 26 |  |  |  |  |  |  | 21 |  | 2 |  |  |  |  |  |  | 7 |  |  |  |  |  | 2 |  |  |  | 1 |  |  | 1 |  |  |  |  |  | 27 |  |
-| Devendra |  | 11 | 4 |  |  |  | 1 | 3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 5 | 1 |  |  |  |  |  |  | 3 |  |  |  |  | 4 |  | 1 |  |
-| Lou |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 14 |  | 6 | 30 | 5 | 2 | 3 | 1 | 2 | 5 | 17 |  |  | 9 | 7 | 2 |  |  | 34 | 9 | 30 | 4 | 10 | 9 |  | 1 |
-| Marta |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4 | 11 | 6 | 18 | 1 | 2 | 9 | 4 |  | 10 | 3 | 15 | 6 | 7 | 9 | 3 | 7 |  | 1 | 8 | 5 |  |  | 2 | 5 | 2 |  |
-| Curtis |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 32 |  | 9 | 4 | 2 | 5 | 2 |  | 2 | 1 | 7 | 2 | 8 | 3 | 6 | 4 |  |  | 16 | 16 |  | 1 | 1 | 9 |  |  |
-| Priya |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 6 | 1 | 6 |  | 4 | 10 | 1 |  |  |  | 15 | 12 | 2 | 4 |  | 1 |  |  | 5 | 4 |  |  | 1 | 6 | 1 | 1 |
-| Denny |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 19 | 1 | 2 | 1 | 21 | 4 | 1 |  | 1 | 3 | 3 | 4 | 1 | 3 |  | 2 |  | 1 | 10 | 3 |  | 2 | 2 | 5 |  |  |
-| Tyler |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2 |  |  |  | 25 |  | 5 | 6 |  |  | 2 | 10 | 9 | 9 | 1 | 3 | 4 |  |  | 8 | 11 | 3 |  |  | 5 | 13 |  |  |
-| Wren |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 9 |  |  | 1 |  |  |  | 3 |  |  |  |  | 4 |  | 4 | 5 | 6 |  | 1 | 1 | 4 |  |  |
-| Reuben |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 7 | 1 |  | 5 | 12 |  | 2 | 1 | 1 |  | 1 | 7 | 5 | 1 |  | 2 | 2 | 7 |  |  | 1 | 5 | 1 |  |
-| Patricia |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 8 |  | 4 | 1 | 2 |  |  |  | 2 | 1 |  |  |  | 2 |  |  | 10 | 6 | 1 | 2 |  | 10 |  |  |
-| Irene |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 15 |  | 1 |  | 1 | 6 |  | 1 | 5 |  |  | 8 | 7 | 4 |  |  |  | 5 |  |  |
-| Frank |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 22 |  | 4 | 1 | 5 |  |  |  | 3 | 4 | 4 |  |  | 1 | 7 |  |  |
-| Ochoas |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 10 | 2 | 4 |  | 3 | 2 | 1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Rosa |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1 |  | 1 |  | 5 |  |  |  |  |  |  |  |  |  |  |  |  | 1 | 3 | 1 |  |  | 1 | 1 |  | 1 |  | 4 | 2 |  |
-| Bidwell |  |  |  | 4 |  |  |  |  |  |  |  |  | 4 |  |  |  |  |  |  |  |  |  |  |  |  |  | 8 |  |  |  |  |  |  |  |  | 4 |  |  |  |  |  |  |  |  |  |
-| Praether |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 5 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Who | 0 | 1 | 2 | M1 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | M2 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | M3 | 24 | 25 | 26 | Pw | 27 | 28 | 29 | 30 | 31 | M4 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | Ep |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Elijah | 39 | 15 | 13 |  | 5 | 3 | 9 | 6 | 29 | 18 | 18 | 13 |  | 24 | 7 | 30 |  | 35 | 5 | 44 | 15 | 22 | 19 | 20 | 16 | 11 |  | 8 | 25 | 25 | 2 | 9 | 7 | 13 | 9 | 7 |  | 6 | 13 | 10 | 19 | 11 | 12 | 4 | 13 | 1 |
+| Grace |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 5 | 5 | 27 | 7 | 11 | 2 | 4 | 9 | 7 |  | 14 | 10 | 11 | 13 | 7 | 3 | 4 | 7 | 9 |  | 9 | 12 | 8 | 1 | 11 | 2 | 13 | 4 | 1 |
+| Ma | 1 |  |  |  | 6 |  | 2 | 2 | 2 | 2 |  | 1 |  | 3 | 3 | 11 |  | 7 |  | 4 | 4 |  | 4 |  | 3 | 1 | 2 | 7 | 6 | 1 |  | 2 |  | 1 |  | 7 |  | 4 | 1 |  |  | 1 | 5 |  | 5 | 1 |
+| David | 14 | 7 |  |  |  |  | 7 | 2 | 26 |  |  |  |  |  |  | 21 |  | 2 |  |  |  |  |  |  | 7 |  |  |  |  |  |  | 2 |  |  |  | 1 |  |  | 1 |  |  |  |  |  | 27 |  |
+| Devendra |  | 11 | 4 |  |  |  | 1 | 3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 5 | 1 |  |  |  |  |  |  |  | 3 |  |  |  |  | 4 |  | 2 |  |
+| Lou |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 14 | 5 | 6 | 31 | 5 | 2 | 3 | 1 | 2 | 5 | 17 |  |  |  | 9 | 7 | 2 |  | 1 | 34 | 14 | 25 | 6 | 10 | 9 |  | 1 |
+| Marta |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4 | 11 | 6 | 18 | 1 | 2 | 11 | 4 |  | 10 | 3 | 3 | 11 | 8 | 7 | 16 | 3 | 7 |  | 1 | 8 | 14 |  |  | 2 | 4 | 2 |  |
+| Curtis |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 32 |  | 9 | 4 | 2 | 5 | 2 |  | 2 | 1 | 9 | 1 | 2 | 8 | 3 | 6 | 4 |  | 2 | 16 | 21 |  | 1 | 1 | 9 |  |  |
+| Priya |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 6 | 1 | 6 |  | 4 | 10 | 1 |  |  |  | 15 |  | 12 | 2 | 5 | 4 | 1 |  | 1 | 5 | 15 |  |  | 1 | 6 | 1 | 1 |
+| Denny |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 19 | 1 | 2 | 1 | 21 | 4 | 1 |  | 1 | 3 | 3 |  | 4 | 2 | 5 | 2 | 5 |  | 3 | 11 | 5 |  | 2 | 2 | 5 |  |  |
+| Tyler |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2 |  |  |  | 24 |  | 5 | 7 |  |  | 2 | 10 | 10 |  | 10 | 1 | 6 | 5 | 1 |  | 9 | 10 | 5 |  |  | 5 | 13 |  |  |
+| Wren |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 9 |  |  | 1 |  |  |  | 3 |  |  |  |  |  | 4 |  | 4 | 4 | 7 |  | 1 | 1 | 4 |  |  |
+| Reuben |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 7 | 1 |  | 5 | 12 |  | 2 | 1 | 2 |  |  | 1 | 7 | 5 | 1 |  | 8 | 4 | 10 |  | 1 | 1 | 5 | 1 |  |
+| Patricia |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 8 |  | 4 | 2 | 2 |  |  |  | 2 |  | 2 |  |  |  | 1 |  |  | 9 | 6 | 1 | 2 |  | 10 |  |  |
+| Irene |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 15 |  | 1 |  | 1 |  | 5 |  | 2 | 5 |  |  | 18 | 7 | 11 |  |  |  | 5 |  |  |
+| Frank |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 22 |  |  | 5 | 1 | 5 |  |  |  | 6 | 4 | 4 |  |  | 1 | 7 |  |  |
+| Ochoas |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 10 | 2 | 4 |  | 7 | 2 | 2 | 1 | 3 | 2 | 5 |  |  |  | 3 |  | 15 |  | 4 |  |  |  |  |
+| Rosa |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1 |  | 1 |  | 5 |  |  |  |  |  |  |  |  |  |  |  |  |  | 2 | 4 | 1 |  |  | 1 | 1 |  | 1 |  | 4 | 2 |  |
+| Bidwell |  |  |  | 4 |  |  |  |  |  |  |  |  | 4 |  |  |  |  |  |  |  |  |  |  |  |  |  | 8 |  |  |  |  |  |  |  |  |  | 4 |  |  |  |  |  |  |  |  |  |
+| Praether |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 5 |  | 1 |  |  |  |  |  |  |  | 2 |  |  |  |  |  |  |  |  |  | 2 |  |  | 1 |  |  |  |
 
 ### Threads: where each opens, where it is last seen, and its longest silence
 
 | Thread | First | Last | Chapters it is in | Longest gap (chapters) |
 |---|---|---|---|---|
-| the bet (Thanksgiving 2027, loser cooks) | 1 | 37 | 5 | 28 (after Ch 6) |
-| the three who were fired | 0 | 39 | 7 | 12 (after Ch 19) |
-| the amp | 5 | 39 | 16 | 7 (after Ch 26) |
-| the Telecaster / playing guitar | 0 | Ep | 15 | 10 (after Ch 26) |
+| the bet (Thanksgiving 2027, loser cooks) | 1 | 37 | 5 | 29 (after Ch 6) |
+| the three who were fired | 0 | 39 | 7 | 13 (after Ch 19) |
+| the amp | 5 | 39 | 16 | 7 (after Ch Pw) |
+| the Telecaster / playing guitar | 0 | Ep | 15 | 10 (after Ch Pw) |
 | the notebooks and the stages | 0 | 39 | 33 | 1 (after Ch 9) |
-| Ma's Sunday call | 3 | 37 | 11 | 10 (after Ch 3) |
+| Ma's Sunday call | 3 | 37 | 12 | 10 (after Ch 3) |
 | Barry | 13 | Ep | 11 | 6 (after Ch 31) |
-| Ma's pot | 3 | Ep | 12 | 4 (after Ch 7) |
+| Ma's pot | 3 | Ep | 13 | 4 (after Ch 7) |
 | the handout rule / grub | 0 | 39 | 9 | 8 (after Ch 31) |
-| Melody | 13 | Ep | 6 | 9 (after Ch 22) |
+| Melody | 13 | Ep | 8 | 7 (after Ch 14) |
 | David and Ray | 0 | 39 | 12 | 6 (after Ch 7) |
 | Ruby and the lamp | 7 | Ep | 13 | 8 (after Ch 16) |
-| the Architect / It asked | 3 | 39 | 8 | 21 (after Ch 13) |
+| the Architect / It asked | 3 | 39 | 8 | 22 (after Ch 13) |
 | Bidwell and his somebody | M1 | M4 | 4 | 13 (after Ch M2) |
-| the robot arms | 11 | 37 | 12 | 9 (after Ch 25) |
-| the old man on the curb / the twenty | 4 | 39 | 8 | 9 (after Ch 28) |
-| the hose in the glove box | 17 | 37 | 6 | 12 (after Ch 25) |
+| the robot arms | 11 | 37 | 15 | 9 (after Ch 26) |
+| the old man on the curb / the twenty | 4 | 39 | 9 | 9 (after Ch 17) |
+| the hose in the glove box | 17 | 37 | 7 | 9 (after Ch 28) |
 | the board he hid / the boxes | 3 | Ep | 16 | 12 (after Ch 3) |
-| the Ochoas | 21 | 38 | 9 | 6 (after Ch 28) |
-| the land trust and its payments | 2 | M4 | 8 | 12 (after Ch 2) |
-| the route and its money | 0 | 38 | 14 | 17 (after Ch 0) |
-| Mrs. Delgado | 26 | 36 | 2 | 10 (after Ch 26) |
+| the Ochoas | 21 | 38 | 14 | 3 (after Ch 29) |
+| the land trust and its payments | 2 | 34 | 10 | 12 (after Ch 2) |
+| the route and its money | 0 | 38 | 15 | 17 (after Ch 0) |
+| Mrs. Delgado | Pw | 36 | 3 | 6 (after Ch Pw) |
 | his pay and the uncashed checks | 0 | 39 | 14 | 7 (after Ch 0) |
-| the coupon / became the steel | 24 | 37 | 6 | 6 (after Ch 31) |
+| the coupon / became the steel | 24 | 37 | 8 | 4 (after Ch 32) |
 | the tape / the gate / somebody checked | 6 | 37 | 12 | 10 (after Ch 6) |
-| you knock | 0 | 37 | 9 | 18 (after Ch 0) |
-| the pond | 17 | 37 | 6 | 11 (after Ch 26) |
-| the truck song | 26 | Ep | 5 | 7 (after Ch 26) |
+| you knock | 0 | 37 | 11 | 18 (after Ch 0) |
+| the pond | 17 | 37 | 8 | 6 (after Ch Pw) |
+| the truck song | Pw | Ep | 6 | 6 (after Ch Pw) |
 | Grace's father and Faith | 5 | 33 | 6 | 8 (after Ch 5) |
-| the stove / her fear of fire | 13 | Ep | 13 | 11 (after Ch 13) |
+| the stove / her fear of fire | 13 | Ep | 15 | 11 (after Ch 13) |
 | the pit and the worm | 2 | Ep | 9 | 24 (after Ch 3) |
-| Denny's channel and porch | 12 | Ep | 17 | 3 (after Ch 17) |
+| Denny's channel and porch | 12 | Ep | 18 | 3 (after Ch 17) |
 | the welder gap / Marta's shoulder | 29 | 30 | 2 | 0 |
 | the names column / Ship them | 27 | 38 | 3 | 9 (after Ch 29) |
-| the machine on the dairy / since March | M3 | 38 | 6 | 9 (after Ch M3) |
-| war and the military | 17 | 38 | 5 | 9 (after Ch 17) |
-| the rover | 26 | 38 | 4 | 6 (after Ch 26) |
-| the Crucible | 22 | 31 | 5 | 3 (after Ch 22) |
+| the machine on the dairy / since March | M3 | 38 | 6 | 10 (after Ch M3) |
+| war and the military | 17 | 38 | 6 | 8 (after Ch 26) |
+| the rover | 26 | 38 | 6 | 5 (after Ch 27) |
+| the Crucible | 22 | 31 | 5 | 3 (after Ch 26) |
 | node 7 and the mesh | 28 | 38 | 2 | 10 (after Ch 28) |
 
 ### Tics CT has ruled on (count per 1,000 words, by block of chapters)
 
 | Tic | 0 to 19 | 20 to 26 | 27 to 36 | 37 to Epilogue | Whole book (count) |
 |---|---|---|---|---|---|
-| day names | 1.9 | 2.4 | 2.5 | 2.6 | 209 |
-| the way ... | 0.8 | 0.6 | 1.2 | 1.4 | 88 |
-| He knew / didn't know | 0.8 | 0.4 | 0.6 | 0.6 | 62 |
-| Then he/she | 0.5 | 0.3 | 0.9 | 0.6 | 52 |
-| not X. It's Y | 0.2 | 0.1 | 0.4 | 0.4 | 23 |
-| for a while / a long time | 0.5 | 0.5 | 0.5 | 0.6 | 51 |
-| looked at him/her/it | 0.5 | 0.6 | 0.5 | 0.8 | 51 |
-| nodded / shrugged | 0.4 | 0.1 | 0.3 | 0.5 | 29 |
-| didn't say anything | 0.2 | 0.3 | 0.3 | 0.1 | 22 |
+| day names | 1.8 | 2.4 | 1.8 | 2.6 | 200 |
+| the way ... | 0.8 | 0.6 | 1.0 | 1.4 | 87 |
+| He knew / didn't know | 0.8 | 0.4 | 0.5 | 0.6 | 62 |
+| Then he/she | 0.5 | 0.3 | 0.8 | 0.6 | 53 |
+| not X. It's Y | 0.2 | 0.1 | 0.3 | 0.4 | 24 |
+| for a while / a long time | 0.5 | 0.6 | 0.5 | 0.6 | 53 |
+| looked at him/her/it | 0.5 | 0.6 | 0.5 | 0.8 | 54 |
+| nodded / shrugged | 0.4 | 0.1 | 0.3 | 0.5 | 30 |
+| didn't say anything | 0.2 | 0.3 | 0.2 | 0.1 | 22 |
 
 ### Scenes where two or more women speak
 
 | Line | Chapter | Women speaking | Men speaking |
 |---|---|---|---|
-| 1565 | 17 | Grace, Marta, Priya | Denny, Elijah, Lou |
-| 1672 | 17 | Grace, Rosa | Curtis, Elijah |
-| 1786 | 19 | Marta, Priya | Elijah, Lou, Reuben |
-| 1799 | 19 | Grace, Marta, Patricia, Priya | Curtis, Elijah, Lou, Tyler |
-| 1938 | 21 | Marta, Priya | Denny, Elijah |
-| 1980 | 21 | Lupe, Patricia, Priya | Curtis, Denny, Lou, Tyler |
-| 2040 | 22 | Grace, Marta, Priya | Curtis, Lou, Tyler |
-| 2099 | 23 | Grace, Irene, Marta | Curtis, Dale, Elijah, Lou, Reuben |
-| 2179 | 24 | Irene, Marta | none tagged |
-| 2214 | 24 | Grace, Marta | none tagged |
-| 2400 | 26 | Priya, Wren | Curtis, Lou, Tyler |
-| 2511 | 26 | Grace, Marta | none tagged |
-| 2573 | 27 | Grace, Marta | Elijah, Frank |
-| 2679 | 29 | Grace, Marta, Priya | Curtis, Denny, Reuben |
-| 2738 | 30 | Grace, Irene | Curtis, Elijah, Lou, Reuben |
-| 2803 | 31 | Marta, Priya | Curtis |
-| 3001 | 32 | Irene, Wren | Tyler |
-| 3040 | 33 | Marta, Patricia, Priya | Denny, Elijah, Frank, Tyler |
-| 3109 | 33 | Grace, Irene, Marta, Patricia, Priya, Wren | Curtis, Denny, Frank, Lou, Reuben, Tyler |
-| 3242 | 34 | Marta, Patricia, Priya, Wren | Curtis, Denny, Lou, Reuben, Tyler |
-| 3610 | 38 | Grace, Irene, Marta, Patricia, Priya, Rosa, Wren | Curtis, Frank, Reuben, Tyler |
+| 1573 | 17 | Grace, Marta, Priya | Denny, Elijah, Lou |
+| 1680 | 17 | Grace, Rosa | Curtis, Elijah |
+| 1808 | 19 | Marta, Priya | Elijah, Lou, Reuben |
+| 1821 | 19 | Grace, Marta, Patricia, Priya | Curtis, Elijah, Lou, Tyler |
+| 1960 | 21 | Marta, Priya | Denny, Elijah |
+| 2002 | 21 | Lupe, Patricia, Priya | Curtis, Denny, Lou, Tyler |
+| 2065 | 22 | Grace, Marta, Priya | Curtis, Lou, Tyler |
+| 2125 | 23 | Grace, Irene, Marta | Curtis, Dale, Elijah, Lou, Reuben |
+| 2211 | 24 | Irene, Marta | none tagged |
+| 2245 | 24 | Grace, Marta | none tagged |
+| 2431 | 26 | Priya, Wren | Curtis, Lou, Tyler |
+| 2558 | Pw | Grace, Marta | none tagged |
+| 2629 | 27 | Grace, Marta | Elijah, Frank |
+| 2744 | 29 | Irene, Lupe, Marta, Rosa, Yvonne | none tagged |
+| 2760 | 29 | Grace, Marta, Priya | Curtis, Denny, Reuben |
+| 2826 | 30 | Grace, Priya | none tagged |
+| 2839 | 30 | Grace, Irene | Curtis, Elijah, Lou, Reuben |
+| 2904 | 31 | Marta, Priya | Curtis |
+| 3113 | 32 | Grace, Irene | Curtis |
+| 3156 | 32 | Irene, Wren | Tyler |
+| 3200 | 33 | Marta, Patricia, Priya | Denny, Elijah, Frank, Tyler |
+| 3270 | 33 | Grace, Irene, Marta, Patricia, Priya, Wren | Curtis, Denny, Frank, Lou, Reuben, Tyler |
+| 3401 | 34 | Grace, Irene, Marta, Priya | none tagged |
+| 3423 | 34 | Lupe, Marta, Patricia, Priya, Wren | Curtis, Denny, Hector, Lou, Reuben, Tyler |
+| 3816 | 38 | Grace, Irene, Marta, Patricia, Priya, Rosa, Wren | Curtis, Frank, Reuben, Tyler |
 
-Scenes with two or more women tagged as speaking and no man tagged: 3 (check each by reading; a man can be in the room untagged).
+Scenes with two or more women tagged as speaking and no man tagged: 6 (check each by reading; a man can be in the room untagged).
 
 ### Speeches over 90 words in one paragraph
 
 | Line | Ch | Words in quotes | Opens |
 |---|---|---|---|
-| 351 | 3 | 92 | No. Any work. And then the next one does it  |
-| 919 | 11 | 98 | I've got a museum. An old Elks lodge, up the |
-| 1599 | 17 | 102 | Every morning your job is to make sure the h |
-| 1733 | 18 | 126 | Sal cried for a week. Honestly, ugly, scared |
-| 2757 | 30 | 102 | My father-in-law got told the same thing, |
-| 2961 | 32 | 102 | The Aldersons, out past the grange. Tom died |
-| 3084 | 33 | 96 | The Loudbox guy. |
-| 3137 | 33 | 92 | You're right. They're building it to kill pe |
-| 3149 | 33 | 100 | I don't support him. I'm saying he did it. T |
-| 3194 | 33 | 91 | Pull apart what it takes to stay alive from  |
+| 352 | 3 | 92 | No. Any work. And then the next one does it  |
+| 921 | 11 | 98 | I've got a museum. An old Elks lodge, up the |
+| 1607 | 17 | 102 | Every morning your job is to make sure the h |
+| 1755 | 18 | 126 | Sal cried for a week. Honestly, ugly, scared |
+| 2857 | 30 | 102 | My father-in-law got told the same thing, |
+| 3073 | 32 | 102 | The Aldersons, out past the grange. Tom died |
+| 3245 | 33 | 96 | The Loudbox guy. |
+| 3298 | 33 | 92 | You're right. They're building it to kill pe |
+| 3310 | 33 | 100 | I don't support him. I'm saying he did it. T |
+| 3351 | 33 | 91 | Pull apart what it takes to stay alive from  |
 
 ### Numbers that have to agree
 
 | What | Where (chapter: words) |
 |---|---|
-| households | 15: nineteen households; 15: nineteen households; 22: nineteen households; M3: nineteen households; 27: nineteen households; 28: nineteen households; 39: nineteen households |
-| people at harvest | 31: Twenty people; 34: eighteen people short; 34: twenty-two; 34: eighteen people short |
+| households | 15: nineteen households; 15: nineteen households; 22: nineteen households; M3: nineteen households; 27: nineteen households; 39: nineteen households |
+| people at harvest | 34: eighteen people short; 34: twenty-two; 34: eighteen people short; 36: twenty-two; 36: Twenty people |
 | route boxes | 20: a hundred and forty; 27: a hundred and forty; 33: a hundred and forty; 34: a hundred and forty; 36: a hundred and forty |
-| route money runs to | 7: in December; 25: in June; 27: past June; 27: in June; 27: in December; 29: through June; 29: through June; 30: through June; 30: through December; 30: through December; 30: in June; 32: in June; 33: in December; 34: in December; 34: in June; 36: in December; 38: after December |
+| route money runs to | 7: in December; 25: in June; 27: past June; 27: in June; 27: in June; 27: in June; 27: in December; 28: in December; 29: in December; 29: through June; 29: through June; 30: through June; 30: through December; 30: through December; 30: in June; 32: in June; 33: in December; 34: in December; 34: in June; 36: in December; 38: after December |
 | Elijah's age | 7: thirty-five; 15: thirty-six; 15: thirty-six; 20: thirty-seven; 26: thirty-five |
-| Tyler's age | 7: was twenty; 10: was twenty; 15: was nineteen; 19: was nineteen; 19: nineteen-year-old; 19: was nineteen; 19: nineteen-year-old; 20: was twenty; M3: was twenty; 25: nineteen-year-old; 26: was twenty; 26: was nineteen; 29: twenty-one years old; 30: was twenty; 31: was nineteen; 37: twenty-one years old |
-| storm outage | 5: overnight; 26: overnight; 27: overnight; 28: three days later |
-| going on N years | 5: for two years; 7: for three years; 21: for three years; 26: for two years; 31: for two years; 31: for two years; 31: for two years; 31: for two years; 33: for two years; 36: for three years; 36: going on three years; 37: for two years; 37: for three years; 37: going on three years; 38: for three years; 38: almost three years; 39: for five years |
+| Tyler's age | 7: was twenty; 10: was twenty; 15: was nineteen; 19: was nineteen; 19: nineteen-year-old; 19: was nineteen; 19: nineteen-year-old; 20: was twenty; M3: was twenty; 25: nineteen-year-old; 26: was twenty; Pw: was nineteen; 29: twenty-one years old; 30: was twenty; 31: was nineteen; 37: twenty-one years old |
+| storm outage | 5: overnight; 26: overnight; 27: overnight |
+| going on N years | 5: for two years; 7: for three years; 21: for three years; Pw: for two years; 31: for two years; 31: for two years; 31: for two years; 33: for two years; 36: for three years; 36: going on three years; 37: for two years; 37: for three years; 37: going on three years; 38: for three years; 38: almost three years; 39: for five years |

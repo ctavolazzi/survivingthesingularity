@@ -33,7 +33,7 @@ please be sure to start with your own. Recognize your power."
 | It sounds like CT | Every new passage passes the checklist in `WRITING-INSTRUCTIONS.md`, section 13, before it is logged |
 | His words are his | CT's words go in word for word and are marked in each chapter's file in `drafts/` |
 | Length is not the measure (CT, 26 Nov: "I don't care how long it gets I want it to be good"). The row below is kept for the record only |
-| ~~The book does not get longer~~ | Chapters 27 to 36 total 22,590 words now (`story_report.py`, edits 1 to 205; an earlier 24,084 counted line numbers). They finish at or under that. Each chapter's target is in the plan, section 11 |
+| ~~The book does not get longer~~ | Chapters 27 to 36 totalled 22,590 words at edits 1 to 205 (`story_report.py`; an earlier 24,084 counted line numbers) and 25,801 after edit 223 (v8). They finish at or under that. Each chapter's target is in the plan, section 11 |
 | Every invented fact is flagged | Each chapter report lists what Claude invented; CT changes what he wants |
 
 ## 3. The record
@@ -48,7 +48,7 @@ please be sure to start with your own. Recognize your power."
 
 | Goal | How it is checked |
 |---|---|
-| One current copy | A new Google Doc made from make_v6.py's .docx (on CT's go), named for what it is, marked CURRENT in the bridge map. Its structure and gate: `NEXT-BUILD.md`; `build_gate.py` says READY |
-| The front and back are right | Title page first; Dedication; Thank You and "Recognize Your Power" last; the cover credit on the copyright page (CT: "cover credit : me, the author, sketches and Midjourney", inside, where other books have it); an ISBN CT buys |
+| One current copy | A new Google Doc made from make_v6.py's .docx (on CT's go), named for what it is, marked CURRENT in the bridge map. Its structure and gate: `NEXT-BUILD.md`; `build_gate.py` says READY. **Met 26 Nov:** "StS v8 draft (Nov 26)", every edit 1 to 223, CURRENT in the bridge map; the gate's lines all pass, and it waits only on open boxes in `TODO.md` |
+| The front and back are right | Title page first; Dedication; Thank You and "Recognize Your Power" last; the cover credit on the copyright page (CT: "cover credit : me, the author, sketches and Midjourney", inside, where other books have it); an ISBN CT buys. **Met except the ISBN** (v8 large print PDF, 26 Nov) |
 | The files he sells | The large print PDF on request, then the release build (PDF and EPUB) with every check in `publication/novel/output/CHECKS.md` passing |
 | CT says it's done | CT's word |

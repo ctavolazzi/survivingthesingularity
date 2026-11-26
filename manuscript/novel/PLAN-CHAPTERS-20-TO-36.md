@@ -5,6 +5,9 @@ home stretch"). **A plan. Nothing here is logged as an edit or written as prose.
 over the current text (make_v6.py's v6.txt, edits 1 to 195) and from CT's direction of the same day, which is quoted
 in `EDITS.md` under "Direction from CT, 26 Nov". Everything not in quotation marks is Claude's proposal.
 
+**For the endgame, sections 10 to 13 are the working plan; `TODO.md` is the order of work and `REFERENCE.md` the
+procedure.**
+
 Marks: **KEEP** is in the book now and stays. **CHANGE** reworks something that is there. **NEW** is added, and
 something comes out to make room (the book does not get longer). **CT** means he decided it.
 

@@ -11,7 +11,8 @@ the chat of 26 Nov. A rule marked **[C]** is Claude's working rule, drawn from h
 practice; he has not said it himself, and his word beats it.
 
 Read this whole file before writing a line for the book. Then `PLAN-CHAPTERS-20-TO-36.md` (what happens) and
-`EDIT-LOGGING-PROCEDURE.md` (how an edit is logged and checked).
+`EDIT-LOGGING-PROCEDURE.md` (how an edit is logged and checked). The endgame runs from `REFERENCE.md` (how),
+`GOALS.md` (what done is) and `TODO.md` (what is next).
 
 ## 1. The one instruction under all the others
 
@@ -352,6 +353,14 @@ Everything here is from a line CT dictated or approved, or is in the book.
 - When he corrects something, add the lesson to this file in the same turn.
 - Code before tokens. A script finds patterns for free; a reader (subagent) is for judgment, and every quote a
   reader returns gets grep-checked.
+- **Read before you claim.** CT, 26 Nov, after a synopsis check built from grepped lines: "Right now it feels like
+  you're just giving me what you think I want. I consistently don't want that. I want you to actually read the book
+  ... write some code ... And then give me a real answer." To say whether something is true of the book, find it with
+  `manuscript/tools/edits-v6/find_in_book.py`, then read the chapters it is in, and say plainly what an earlier answer
+  got wrong. The same day Claude told him Ray's vice was horses and not drink; Chapter 5 says Ray "quit drinking the
+  same year." He remembered his book; Claude hadn't read it.
+- When an idea of his collides with a page already written, say which page and offer one way through; that is the
+  push-back he asks for (the rover "on its way", Grace's father "left", 26 Nov).
 
 ## 15. Debts in edits already logged
 
@@ -382,3 +391,4 @@ Found by the audit. None is in the Doc. Fix each when its chapter is rewritten, 
 | cut "a cool spring" for his line | "we can combine them together, right?" | keep the good, build on it |
 | "I still get letters" | "we don't know what kind of letters ... make things clear" | "weird letters" |
 | a first draft of these instructions that called every rule his | the audit | rules marked his or **[C]**; sections 5, 6, 9, 11, 12 and 15 added |
+| a synopsis check from grepped lines; "Ray's was horses" | "you're just giving me what you think I want ... actually read the book" | read the chapters, then answer claim by claim; `find_in_book.py` and a claims file |

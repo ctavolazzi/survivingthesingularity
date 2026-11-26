@@ -40,6 +40,12 @@ now, lists every other copy, and gives the one way to change the manuscript. In 
 - Each character has a folder in `manuscript/novel/characters/` and a notes file in Drive.
 - Pushing to `main` redeploys the live site. Merge the book into `main` only when he says.
 
+### Finishing the novel (from 26 November)
+
+Three files run the endgame: `manuscript/novel/REFERENCE.md` (how: reading order, policies, procedures, tools),
+`manuscript/novel/GOALS.md` (what done is) and `manuscript/novel/TODO.md` (what is next, with the next edit number).
+Start a session at `REFERENCE.md`, section 1.
+
 ### Writing a line for the novel (the author's corrections, 26 November)
 
 **Before writing any line for the book, read `manuscript/novel/WRITING-INSTRUCTIONS.md`, all of it.** It is the full

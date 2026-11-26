@@ -201,39 +201,17 @@ trailer in Chapter 17, Bidwell, Chapter 38), goes into other heads (Tyler in Cha
 Elijah's, other people's come through what he sees them do, and the storyteller can tell the reader, briefly, what
 Elijah cannot know.
 
-## What is still open (26 Nov, end of the seventh logging chat)
-The work changed in this chat. CT is no longer only dictating line edits: Chapters 20 to 36 are being rewritten to
-`PLAN-CHAPTERS-20-TO-36.md`, a chapter at a time, by Claude, under `WRITING-INSTRUCTIONS.md`. **Read both before
-anything else.** Done and logged: Chapters 20, 21, 22 and 25 (edits 198 to 201). Next: Chapter 23, then 24, 26, and on
-to 36 in the plan's order; then the few lines in Chapter 37 to the Epilogue that have to match.
-
-Settled in the seventh chat: the Ch 31 call (edit 187); edit 116 (keep "been here before"); edit 118's question (edit
-189); the ending stays (Ch 37 to the Epilogue); the spine (the heat failure); Lou's IBM line; Denny leaves and comes
-back; the Ochoas leave for good; the kiss at the pond in fall 2025, to keep him, and a year before Elijah's own move;
-he does not go home before Ch 37 (the Thanksgiving drive turns around); the storm is overnight; the gantry becomes a
-rover; the middle path on quips.
-
-Open for CT (ask only when the chapter needs it; he has said "Stop hedging ... just do it"):
-- Whether the check-engine light at Thanksgiving turns out to have been nothing (Ch 25 leaves it open).
-- The Ochoas' names (Hector and Lupe are Claude's; CT has not objected).
-- Curtis's wound: why he built the fence. Bidwell's "somebody near him": who.
-- Marta's double speak: he asked for a little in her kind lines and warnings; no candidates shown yet.
-- Edit 121: "one thing" (Marta) or "one real thing" (the notebook); Claude recommends keeping both.
-- Ch 13: the "dark out" 9:40 call. Night call or error?
-- The 59 line flags (in `EDITS.md`, under the plan): 1 to 5 are fixed; the rest get fixed as their chapters are
-  rewritten, and the Ch 37 to 39 ones wait for a yes.
-- The counting pattern: Chapters 0 to 19 and 37 to 39 are logged (edit 197); the 37 instances in Chapters 20 to 36
-  are listed in `EDITS.md` and get fixed as each chapter is rewritten (Ch 22's are done).
-- Other tics measured in the book ("the way ...", "He knew", lists of three, short-sentence runs): CT has not asked
-  for a sweep. Offered once.
-- The eight Chapter 14 sentence-opening fixes, "Places to look at", the 16 scene breaks, the sentence-opening checker.
+## What is still open (26 Nov, end of the eighth logging chat)
+**The endgame runs from three files: `REFERENCE.md` (how), `GOALS.md` (what done is), `TODO.md` (what is next).**
+Every question that was open is decided in `PLAN-CHAPTERS-20-TO-36.md`, section 12 (where a decision was CT's and
+Claude made it, it says so). What is still CT's is the top of `TODO.md`:
+- The rover and the arms: keep the rover as written, with the arms as the machine on the table in Chapter 34?
+- Grace's father: left when she was a teenager, or checked out without leaving the porch?
+- The ending lines in the plan, section 13, one at a time.
+- The Instagram synopsis: fix or leave.
 - Cover credit (CT, 26 Nov, for "the book proper"): his words are "cover credit : me, the author, sketches and
-  Midjourney", cheeky and without a name. It is not in the build yet. The build's copyright page is
-  `copyright_page` in `publication/novel/build/book.json`. CT: inside the book, on the credits page where other
-  books have it (the copyright page), not on the outside of the cover. Add the line when the final build is made.
-- How to make the next version, and what to call it ("v7" is taken by a frozen side copy).
-- Chapter 26 owes: the rover scene, Ma's fall in June, the October night at the pond (Elijah's move; "wearing his
-  shirt and drinking coffee" the morning after), a line where the pay vote is brought because he said yes.
+  Midjourney", cheeky and without a name. It goes inside, on the copyright page, where other books have it (CT), not
+  on the outside of the cover: `copyright_page` in `publication/novel/build/book.json`. Add it at the final build.
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -242,37 +220,21 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
-## Where things stand (end of the seventh logging chat, 26 Nov)
+## Where things stand (end of the eighth logging chat, 26 Nov)
 - The v6 Google Doc "StS v6 draft (Nov 25)" is the book (CURRENT in the bridge). In the Doc: edits 1 to 138, 141 and
-  151. Logged in GitHub only: 139, 140, 142 to 201 except 151. The next edit is 202. Nothing has been put into either
-  Doc in this chat. Do not change the Doc; CT has not cleared it.
-- Edits of the seventh chat: 187 (Ch 31 call, "The next Sunday"); 188 (the check-engine laugh); 189 (Marta's warning);
-  190 to 195 (Ch 20 lines); 196 (Ch 7, the Spanish teacher, Mr. Ostrander); 197 (the counting pattern, 46 fixes in
-  Ch 0 to 19 and 37 to 39); 198 (Chapter 25 rebuilt: the letter, town, the pond, Thanksgiving; Marta's scene and the
-  amp night moved to the end of Ch 26; the stove kiss out); 199 (Ch 20: the boxes waiting on summer, Barry); 200 (Ch
-  21: Denny's fans, Priya's weird letters, the heat); 201 (Ch 22: why the leak happens, both confessions, Lou's IBM
-  line, the pot, the hour of the funeral).
-- A chapter rewrite is logged as one edit with several ops rows. Its Book now and Change to live in
-  `manuscript/novel/drafts/chapter-NN.md`, with CT's words in bold; `EDITS.md` has the summary and who wrote what.
-- The book between rewritten and unrewritten chapters does not line up yet. Chapter 26 still has the old summer with
-  Marta's scene and the amp night tacked on its end, and no kiss; Chapters 23 and 24 don't know about the Ochoas.
-  That is expected until each chapter is done.
-- make_v6.py on a fresh v5 read passes every row (201). verify.py on a fresh read of the v6 Doc shows 19, 30, 125,
-  131, 135, 137, 182, 197 and 201 PARTIAL: later edits changed words of earlier ones that are already in the Doc.
-  Before edit 197 it was 30, 137 and 182.
-- Tools learned in this chat: an ops find can be a (start, end) pair to cut or move a long passage; a moved passage is
-  cut with one row and re-inserted with another (check the passage for italics first; edit 198's had none); when a
-  later edit changes an earlier edit's words, narrow or update the earlier check row (never delete it). Readers
-  (subagents) are good for sweeps and audits: give them file paths and line numbers, ask for verbatim quotes, and
-  grep-check every quote they return. A script counts tics for free; use it before spending a reader.
-- The large print PDF CT has is still "StS v6 large print CURRENT (26 Nov, edits 1 to 186, Dedication and Thank
-  You).pdf" in "StS Publication Files" (link in STATE.md). It has none of 187 to 201. Make a new one only when CT asks.
-- Quote "Book now" from make_v6.py's v6.txt (every logged edit applied), not from the raw Doc.
-- The Docs reads are too big to show in chat; the connector saves each to a file. Copy it and use it as READ.json.
-- Each new edit: `EDITS.md`, a check row in `manuscript/tools/edits-v5/checks.py`, ops rows in
-  `manuscript/tools/edits-v6/ops.py` (above the ITALIC list; italics as *...*; a newline starts a paragraph and an
-  empty line is a scene break), run `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx` (every
-  row must pass), commit and push. A correction to an edit not in the Doc yet replaces it in place.
+  151. Logged in GitHub only: 139, 140, 142 to 204 except 151. **The next edit is 205, Chapter 27.** Nothing has been
+  put into either Doc. Do not change the Doc; CT has not cleared it.
+- Chapters 20 to 26 are rewritten and logged: 198 (Ch 25), 199 (Ch 20), 200 (Ch 21), 201 (Ch 22), 202 (Ch 23), 203
+  (Ch 24), 204 (Ch 26; the rover also in Ch 32 and 33). Each has its Book now and Change to in `drafts/`. Three readers
+  audited 19 to 26 and the ending; their continuity fixes are in place (plan, section 12.3).
+- Chapters 27 to 36 are next, in order, to the plan's sections 10 and 11 (targets there; they total 24,084 words now).
+  Then the ending lines CT says yes to (section 13). Chapter 37 to the Epilogue otherwise stay.
+- make_v6.py on a fresh v5 read passes all 204 rows. verify.py on a fresh v6 read shows 19, 30, 125, 131, 135, 137,
+  182, 197 and 201 PARTIAL (expected) and everything from 139 on that isn't in the Doc as "not in the Doc".
+- New tool: `manuscript/tools/edits-v6/find_in_book.py` (chapters, find, claims). The Instagram synopsis check is
+  `claims-instagram-synopsis.json` beside it.
+- The large print PDF CT has is still the one with edits 1 to 186 (link in STATE.md). Make a new one only when he asks.
+- A chapter rewrite is one edit with several ops rows; the procedure is `REFERENCE.md`, section 4.1.
 
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including

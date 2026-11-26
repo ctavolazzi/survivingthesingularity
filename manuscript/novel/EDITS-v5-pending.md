@@ -10,7 +10,7 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-v5-status.md` on a fresh
 read of the Doc after every step; `EDITS-v5-status.md` is the one table of where each edit stands. The build
 refuses to run unless every edit passes. A copy of this list lives in Google Drive as "StS v5 edit list (mirror of
-GitHub)" (https://docs.google.com/document/d/1Dmp-kAOg05YMn9zSlvvYSeX4ni9SkhhGdXJjYZ4dzfA); refresh it when this
+GitHub)" (https://docs.google.com/document/d/1fXM4q_rP40WTSHTYzW-THeVyrXScV48jjnotUBoz5Nc); refresh it when this
 file changes. Each new edit gets a check row when it is logged.
 
 ## Character notes from CT (context, not for the page)

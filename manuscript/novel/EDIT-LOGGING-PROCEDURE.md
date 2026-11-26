@@ -39,7 +39,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v5 edit list
-   (mirror of GitHub)" (id 1Dmp-kAOg05YMn9zSlvvYSeX4ni9SkhhGdXJjYZ4dzfA) once, at the end of the session.
+   (mirror of GitHub)" (id 1fXM4q_rP40WTSHTYzW-THeVyrXScV48jjnotUBoz5Nc) once, at the end of the session.
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -88,13 +88,21 @@ trailer in Chapter 17, Bidwell, Chapter 38), goes into other heads (Tyler in Cha
 Elijah's, other people's come through what he sees them do, and the storyteller can tell the reader, briefly, what
 Elijah cannot know.
 
-## What is still open (25 Nov, end of the second logging chat)
-Edits 1 to 138 are in v6 (edit 57 was never used). The next edit is 139; CT has finished Chapter 19. The plan for
-Chapter 19 ("Direction from CT, 25 Nov" in `EDITS-v5-pending.md`) is done: edits 131 to 136 were reworked to it on
-CT's go, and edit 137 is its Chapter 22 line. Eight Chapter 14 sentence-opening changes were given in chat and
-never logged. Open for CT: Grace's April email (edit 100), "He looked around the table, then back" (edit 103), edit 108 ("if he wanted to
-play"), edit 109 (the touch lines), edit 112 (gravel lot or a store), edit 116 ("been here" or "done this"), edit
-118, edit 121 ("one thing" or "one real thing"), and the Chapter 13 "dark out" 9:40 call.
+## What is still open (26 Nov, end of the fifth logging chat)
+Settled since 25 Nov: Grace's April email (edit 159), "He went and looked" and the second "It could be a cult" (edit
+138), edit 103 (kept, and edit 180 makes it "then back at Elijah"), edit 108 (kept as "if he wanted to play"), edit
+109 (the touch lines kept; edit 181 changes the last line), and the open questions of the Chapter 19 plan.
+Open for CT, to ask one at a time with the line quoted and Claude's recommendation in one line:
+- Edit 112 (Ch 18): "the co-op's gravel lot" instead of "the gravel lot" (Claude recommends it; no answer yet).
+- Ch 31: "On Sunday at 9:40 he called the rose garden." It follows Marta coming by at eight that Sunday, and the
+  next line is "The next morning was the first of the month." Same Sunday morning ("Later that morning, at 9:40")?
+- Edit 116: "been here before" or "done this before".
+- Edit 118: change only "Don't let her," or cut the whole "Grace will carry you" sentence.
+- Edit 121: "one thing" (Marta) or "one real thing" (the notebook).
+- Ch 13: the "dark out" 9:40 call. Night call or error?
+Then, each on CT's go: the eight Chapter 14 sentence-opening fixes (written again from a fresh read, the way edit 133
+was done), then "Places to look at" in `EDITS-v5-pending.md` (each shown to CT with a proposed fix before it is
+logged).
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -103,18 +111,27 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
-## Where things stand (end of the fourth logging chat, 26 Nov)
-- The v6 Google Doc "StS v6 draft (Nov 25)" is the book CT is editing (CURRENT in the bridge). He reads it in the
-  large print PDF and dictates edits. In the Doc: edits 1 to 138, 141 and 151. Logged, not in the Doc yet: 139, 140,
-  142 to 171 except 151. The next edit is 172. CT has said nothing about putting 139 onward into the Doc; log only.
+## Where things stand (end of the fifth logging chat, 26 Nov)
+- The v6 Google Doc "StS v6 draft (Nov 25)" is the book CT is editing (CURRENT in the bridge). In the Doc: edits 1 to
+  138, 141 and 151. Logged, not in the Doc yet: 139, 140, 142 to 182 except 151. The next edit is 183. CT has said
+  nothing about putting 139 onward into the Doc; log only.
+- Done in the fifth chat: 172 to 179 (Claude's recommendations for the second half: sentence openings, beats in the
+  table scenes, "It's not X. It's Y." lines, the handout echo in Ch 31, the Ch 26 pond, the birds at the gate,
+  packing the truck, Tuesdays); 180 (Denny looks "back at Elijah"); 181 ("Agreed on what?"); 182 (a clarity pass
+  through Ch 21 to 39: pronouns, speakers, repeats). Edit 162 lost two beats that repeated a few lines later.
+  172 to 179 and 182 are Claude's wording, approved by CT from a summary, not line by line.
+- verify.py on a fresh read of the v6 Doc shows 30, 137 and 182 PARTIAL. That is expected: edit 182 changes words of
+  30 and 137 that are already in the Doc. make_v6.py on a fresh v5 read passes every row (182).
+- Quote "Book now" from make_v6.py's v6.txt (every logged edit applied), not from the raw Doc, which lacks 139 on.
+- The Docs reads are too big to show in chat; the connector saves each to a file. Copy it and use it as READ.json.
 - Each new edit: log it in `EDITS-v5-pending.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a
-  find and replace row to `manuscript/tools/edits-v6/ops.py` (above the ITALIC list), run
-  `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx` (V5_READ is a fresh read of the v5 Doc;
-  every row must pass) and `verify.py` on a fresh read of the v6 Doc, then commit and push.
-- Waiting on CT: which of the 16 scene breaks in `manuscript/novel/SCENE-BREAKS-v6.md` to cut ("all 16" or numbers);
-  the dedication (who it is to) for v7; the sentence-opening checker (say go).
-- The large print PDF in Drive ("StS v5 Publication Files") is from 25 Nov: it still has the 12 bug-made scene
-  breaks, now gone from the Doc, and none of 139 onward. Rebuild only when CT asks.
+  find and replace row to `manuscript/tools/edits-v6/ops.py` (above the ITALIC list; italics as *...*), run
+  `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx` (every row must pass), commit and push.
+  A correction to an edit not in the Doc yet replaces it in place; a change to words already in the Doc is a new edit.
+- Waiting on CT: the questions above; which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; the dedication
+  (who it is to) for v7; the sentence-opening checker (say go).
+- The large print PDF in Drive ("StS v5 Publication Files") is from 25 Nov: none of 139 onward. Rebuild only when CT
+  asks.
 
 ## v7 (26 Nov): a separate copy
 CT: "keep v7 as a totally new, totally separate thing ... I want to keep working on v6." The Google Doc "StS v7

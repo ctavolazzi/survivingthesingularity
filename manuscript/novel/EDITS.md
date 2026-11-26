@@ -3360,6 +3360,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+206. **Chapter 27: what the farm lives on, the knockoff, the pledge and the Ochoas, Thanksgiving 2026.** From the plan,
+     the to-do list and the story report; written by Claude on CT's "Do it" (Book now and Change to in
+     `manuscript/novel/drafts/chapter-27.md`). The co-op's money named (the farmers market is CT's); Grace, Frank and Marta
+     answer the $49 knockoff; the pledge carries the Ochoas' greenhouse and a no-machine clause, the co-op signs, Lupe
+     signs and Hector won't ("Nobody was checking. Your leaf don't fix that."); Thanksgiving 2026, a route instead of the
+     drive home, dinner in Grace's room in Ardell, a letter to Ma. Line flags, counting and day names fixed. 2,046 words
+     to 2,294. Row 172 narrowed. Logged only; not in the v6 Doc yet.
+
 Corrected 26 Nov (eighth chat), after the evaluation in `STORY-REPORT-2026-11-26.md`, as new rows under edits 198 and 199
 (the old words are in the v6 Doc): Lou's "Those boxes go out in June either way" is "in May" (Ch 19); Marta's "starting
 to see come out, Elijah." is "spreadsheet" (Ch 19; Chapter 37 says "She had never called him that, not once"); "Nine

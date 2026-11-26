@@ -3,7 +3,7 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 206.** Next chapter: 27.
+**Next edit: 207.** Next chapter: 28.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
@@ -41,7 +41,7 @@ Words are measured by `story_report.py` (27 Nov correction: the first table here
 
 | Box | Chapter | Edit | Words now | Target | What it has to do (plan, section 11) |
 |---|---|---|---|---|---|
-| [ ] | 27 Blueprints of a Wall | 206 | 2,046 | 2,010 | farmers market line; Grace on the $49 knockoff; the pledge with the Ochoas' greenhouse behind it; Thanksgiving 2026 letter to Ma; "Every winter there's somebody" fixed; Grace's room in Ardell placed |
+| [x] | 27 Blueprints of a Wall | 206 | 2,046 | 2,010 | farmers market line; Grace on the $49 knockoff; the pledge with the Ochoas' greenhouse behind it; Thanksgiving 2026 letter to Ma; "Every winter there's somebody" fixed; Grace's room in Ardell placed |
 | [ ] | 28 Hello, Ridge | 207 | 1,125 | 1,105 | overnight, not three days; power when it counts; the Ochoas' house drops off the map; Lupe on the radio |
 | [ ] | 29 Ink and Pencil | 208 | 1,821 | 1,885 | Denny argues ("I'm not burned out. I'm unpaid."); Lupe: "Somebody quits"; Tyler says yes; Priya logs the 3 a.m. address; the welder gap |
 | [ ] | 30 Item Seven | 209 | 2,074 | 2,030 | Denny films his last one; Lou's "my man" |

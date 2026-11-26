@@ -123,6 +123,37 @@ route's January, Marta's welder gap). Cast: Priya has a role, not an arc; Curtis
 Ch 34; Lou lands through a job or a joke and turns into a lectern in Ch 33 and 35, is never wrong at a cost, and shapes
 only Elijah and Curtis; Wren, Reuben and Denny are flat; dialogue works short and in a trade, is forced as a thesis.
 
+**Plan v2 for Chapters 20 to 36 (Claude's, 26 Nov, after three more readers: timeline and stakes, who could
+leave, Grace and Elijah beat by beat; CT keeps Ch 37 to the Epilogue as they are).** What the readers found: in Ch 20
+to 36 the group never loses anything lasting (no money, land, member, customer or building; only the leaked data and
+"Six CSA households canceled", never mentioned again). The route's money is restated, not escalated. Mrs. Delgado and
+her insulin are first named at the fire. Denny's burnout, the county study, the welder gap and Bidwell's "somebody"
+are dropped. The first kiss is in Ch 25, in the shouse; they become a couple off the page (Ch 26, "where she slept
+now"). The pond is never a place. The ladder, each rung a loss that stays lost:
+1. Ch 21, June 2025: the first heat wave. A controller on Patricia's network fails and a grower loses a house of
+   starts (heat is Elijah's "first limit", Ch 1). Tyler traces it to the board; Elijah knows it is the AI-made part
+   and says nothing. Patricia's Ch 27 pledge ("No generated code") then has a reason.
+2. Ch 22, July: the leak and the bell; he confesses both, and people react. The six households that cancel get a
+   number on the page, and the hole it leaves is the first money trouble. The hour of Ray's funeral passes on the page.
+3. Ch 23: the trust saves the land, but the down payment takes the channel's surplus; Reuben's pages on a missed
+   payment are planted.
+4. Ch 18, 22, 24, 25: Marta's matchmaking spread across chapters (now all in Ch 25). Ch 25: the kiss moves from the
+   shouse to the pond, where in Ch 17 he joked "this is a pretty good bleed-out spot".
+5. Ch 26 and 27, 2026: one short beat of them as a couple in place of "where she slept now"; Grace pays for his pay
+   vote with Curtis; Mrs. Delgado seen once on the route, through Rosa or Grace.
+6. Ch 29 and 30: Denny's burnout named, the tool company's offer real, the welder gap open.
+7. Ch 31, February 2027: Denny leaves for the tool company. The goodbye is on the page and it hurts. The channel's
+   money stops and the trust payment is at risk; Elijah's $800 visitor plan becomes his panic fix (it already puts
+   Denny's bench in it); the table turns it down; the tea circle.
+8. Ch 32, March to June: Denny gone, Elijah alone with the signs; the route misses a delivery for the first time.
+9. Ch 33, June: Denny comes back, quietly, before the July dinner (his Ch 33 and 34 lines, his porch in Ch 37 and
+   the Thanksgiving livestream all stand, and mean more).
+10. Ch 34 (optional): the north-house couple ("he'd take a robot over another October") leave for good after the
+   arms are tabled, so "eighteen people short" is real and festival week costs what it says.
+11. Ch 35: Lou's night sermon cut down. Ch 36: the fire now lands on things the reader saw.
+Questions for CT: the heat failure as the spine; Denny leaves and comes back (or someone else, or for good); the kiss
+at the pond; the north-house couple.
+
 **Spine (Claude's proposal, CT to decide):** one running problem from Ch 20 to about Ch 30 that the co-op gets wrong
 before it gets right: the forty controllers go bad in the field. The failing part is the board Elijah made with an AI
 (Ch 19); Tyler knew; Patricia is the customer; Marta's "zero people can fix it" is the problem; Curtis, Priya, Denny and

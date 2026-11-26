@@ -65,9 +65,9 @@ def parse_markup(s):
     return out
 
 
-def apply(chars, attrs, images):
+def apply(chars, attrs, images, ops=None):
     log = []
-    for n, find, repl in OPS:
+    for n, find, repl in (OPS if ops is None else ops):
         text = "".join(chars).replace("\xa0", " ")
         k = text.count(find)
         if k != 1:
@@ -81,7 +81,18 @@ def apply(chars, attrs, images):
                 new_c.append("\n"); new_a.append({"style": "NORMAL_TEXT", "align": None})
             else:
                 new_c.append(ch); new_a.append((it, False))
-        # a paragraph mark that ends a heading keeps its style if the find ends on it
+        # Leave the unchanged start and end of the find alone, so a heading's paragraph mark and the italics
+        # on words the edit doesn't touch survive it (fixed 26 Nov: edit 167 had turned Chapter 19's heading
+        # into body text). Characters count as unchanged only if the letter and its italics are both the same.
+        same = lambda k, j: chars[k] == new_c[j] and (chars[k] == "\n" or attrs[k][0] == new_a[j][0])
+        p = 0
+        while p < min(b - a, len(new_c)) and same(a + p, p):
+            p += 1
+        s = 0
+        while s < min(b - a, len(new_c)) - p and same(b - 1 - s, len(new_c) - 1 - s):
+            s += 1
+        new_c, new_a = new_c[p:len(new_c) - s], new_a[p:len(new_a) - s]
+        a, b = a + p, b - s
         chars[a:b] = new_c; attrs[a:b] = new_a
         shift = len(new_c) - (b - a)
         images = {(i + shift if i >= b else i): o for i, o in images.items()}

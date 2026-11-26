@@ -103,6 +103,12 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
+## v7 (26 Nov): a separate copy
+CT: "keep v7 as a totally new, totally separate thing ... I want to keep working on v6." The Google Doc "StS v7
+draft (Nov 26)" is v6 through edit 171 plus the v7-only changes in `manuscript/tools/edits-v7/ops_v7.py`
+(Dedication, Thank You, "Recognize Your Power" first and last). Record: `manuscript/novel/V7-CHANGES.md`. New edits
+go into v6 as before, from 172; v7 does not follow them unless CT asks.
+
 ## Later, when CT says go
 Apply 87 onward to the Doc as suggestions, re-read, run verify. CT accepts the suggestions. Run
 `build.sh` (the gate stops it until every edit is in), then refresh the Drive uploads.

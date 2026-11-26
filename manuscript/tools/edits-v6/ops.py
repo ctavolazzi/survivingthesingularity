@@ -903,9 +903,9 @@ Figures, he thought. I hope they have a good mechanic."""),
 "Elijah went to his lane. Before"),
 # 204, Ch 26: the rover and the argument about labor, Ma's fall, the pay vote, Mrs. Delgado, the October night at the pond (drafts/chapter-26.md)
 (204, "The robot was Tyler's idea, and Marta's rails, and Elijah's sensors.\nIt was a gantry, a steel bridge that rode on two tracks down the length of a bed, with an arm that could come down anywhere in it. It could drop a seed,",
-"The robot was Tyler's idea, and Marta's frame, and Elijah's sensors.\nIt was a rover, a tall steel frame on four wheels that straddled a bed and drove down it, with an arm that could come down anywhere underneath. It wasn't bolted to one bed. It could drive itself to any field on the place. It could drop a seed,"),
+"The robot was Tyler's idea.\nHe had two picked out, and he brought both to the Friday table on his phone. One was a tall steel frame on wheels that straddled a whole bed, the kind the big growers ran, and it cost more than the co-op had cleared all spring. The other was a kit called a JetAuto Pro: four fat wheels that could roll sideways, a little arm on top, a spinning lidar the size of a hockey puck, and a camera. It would have fit in an apple box.\n\"Could I pick it up?\" Lupe Ochoa said.\n\"With one hand,\" Tyler said.\n\"Then that one. If it does something stupid in my field, I want to be able to carry it out.\"\nReuben kept the books, and he said the little one was also the one they could pay for. They bought the little one. Elijah wired a second camera onto a mast for it.\nIt could drop a seed,"),
 (204, "They got it running on a Saturday in May. It rolled out over the lettuce in the evening light,",
-"They got it running one evening in May. It rolled out over the lettuce in the last of the light,"),
+"They got it running one evening in May. It rolled out along the lettuce in the last of the light,"),
 (204, ("Not everybody thought it was solarpunk.", "and it was one of the better mornings Elijah ever had up there."),
 """Irene Calder had driven her golf cart over special. She watched the thing water one seedling and skip the next, and she said Walt would have sold a kidney for it. "He spent forty years on a tractor seat watering the weeds right along with the hay. He'd have named it."
 Lou said he'd marry it if it ever learned to pick. Tyler said give him a year.
@@ -928,7 +928,7 @@ He walked off up the gravel, dripping. Lou watched him go and shook his head.
 "You're not actually going to let him build an EMP, are you?" Priya said. "That's wildly illegal."
 "I'll go talk to him," Lou said. He dried his hands on his pants and went.
 Out at the end of bed three the rover sat with its arm tucked up. On top of its mast was the little black camera Elijah had wired in himself, at night in the shed, pleased with it. He turned the head of lettuce over in his hands. He started to say something to Wren, and didn't.
-They got all four hundred heads out by noon.\nThat Saturday he ran the brush hog along Praether's fence line, the way he had once a month since the arms went into the barn. Praether watched from the porch until he was done, then walked down to the mailbox.\n\"Hear you got a robot,\" he said.\n\"It waters lettuce.\"\n\"So did ours, the first year.\" He took his mail and went back up the drive."""),
+They got all four hundred heads out by noon.\nCurtis turned up at the shed the next night. He didn't mention the EMP.\n\"If that thing's going to have a camera,\" he said, \"I want to see what it sees.\"\nElijah put the feed up on the laptop. It was lettuce. Curtis watched lettuce for a full minute.\n\"Show me how you tell it where to go.\"\nBy midnight Curtis had written the first ten lines of code of his life, and the rover drove to bed four and back because he had told it to. He was at the shed most nights after that.\nThat Saturday he ran the brush hog along Praether's fence line, the way he had once a month since the arms went into the barn. Praether watched from the porch until he was done, then walked down to the mailbox.\n\"Hear you got a robot,\" he said.\n\"It waters lettuce.\"\n\"So did ours, the first year.\" He took his mail and went back up the drive."""),
 (204, "The rain came Thursday night, and it came all night.",
 "Two nights later the rain came, and it came all night."),
 (204, "The water had shoved the side board out in a long belly, and the board had taken the track with it. The gantry sat at the head of the bed with one wheel up on the kink. It had tried to cross. The motor buzzed and quit, and buzzed and quit.",
@@ -940,7 +940,7 @@ They got all four hundred heads out by noon.\nThat Saturday he ran the brush hog
 (204, "and he held it there while Lou drove the stake behind it. Then the next one. Then they bolted the track back down, and Elijah's arms were shaking.",
 "and he held it there while Lou drove the stake behind it, and the next one, and the one after that. By the time the board was straight, Elijah's arms were shaking."),
 (204, "The gantry came down the bed at its usual crawl. It rolled over the place where the kink had been and didn't notice.",
-"The rover came down the bed at its usual crawl. It rolled past the place where the belly had been and didn't notice."),
+"The rover came down the path at its usual crawl. It rolled past the place where the belly had been and didn't notice."),
 (204, "It was coming, all right. It was coming down a rail he'd just spent an hour holding straight.",
 "It was coming, all right, the thing he'd spent three years warning people about. It was coming down a bed he'd just spent an hour holding straight."),
 (204, "with the gantry's firmware open", "with the rover's firmware open"),
@@ -1020,7 +1020,7 @@ Later that morning Marta looked at him over her welding hood for a long second a
 # the rover in Ch 32 and 33 (the Ch 38 line is left for CT)
 (204, "Tuesday it could do the whole gantry file", "Tuesday it could do the whole rover file"),
 (204, "the way he'd learned on the gantry the summer before.", "the way he'd learned on the rover the summer before."),
-(204, "The gantry was parked at the end of bed four with", "The rover was parked over bed four with"),
+(204, "The gantry was parked at the end of bed four with", "The rover was parked at the end of bed four with"),
 (204, "She was looking at the gantry.", "She was looking at the rover."),
 (204, "She smiled at the gantry, and then she didn't.", "She smiled at the rover, and then she didn't."),
 # Continuity fixes of 26 Nov (eighth chat), after the readers' audit; old text in Chapters 19, 21, 22, 25 and 26
@@ -1211,20 +1211,26 @@ Elijah opened his mouth.
 There was a picture of the arm on the price list. There wasn't one of a guard.
 Denny had gone back to his water glass, a quarter turn and back. The arms had come into Denny's warehouse in 2019. Elijah had heard that story at his first Friday dinner, and he had forgotten it. His face went hot. He felt like an asshole.
 \"They came into my building bolted to the floor too, man,\" Denny said, to the glass. \"Couldn't go anywhere. I went.\"
-Lupe Ochoa had her phone face up on the plywood, which nobody did at that table. \"I watch the videos from Ukraine every night,\" she said. \"The drones. Some kid in a basement flies one into a man in a field.\" She turned the phone over. \"Same factories. They don't make a nice kind for farms.\"
-\"Lupe,\" Hector said. \"It packs squash.\"
-\"This year it packs squash.\"
-Priya looked down the table at Curtis, with her pencil up, ready. \"I thought you would share their feelings.\"
-\"I mean, I kind of do,\" Curtis said. \"I get it a little bit.\" He scratched his jaw. \"For all my fear-mongering about Skynet, and being worried that I'm plugged into the Matrix right now, I'm also a Trekkie.\"
-Blank faces, all the way down the plywood.
-\"Oh, come on. Star Trek? Really? Nobody's seen Star Trek around here?\"
-\"You want your own Commander Data,\" Marta said.
-Curtis turned and looked at her, and she looked back at him.
-\"Yes,\" he said. \"Absolutely. You get it.\"
-\"Beam me up, Scotty,\" Marta said, and for a second they were the only two people at the table smiling.
 Then it broke open. Tyler said this was exactly the kind of fear that kept them broke. Hector said he'd take a robot over another October like the last one, and Lupe told him to hush. Priya wanted to know what an arm actually did to a squash, physically, did it bruise, and nobody answered her. Wren was crying a little. Frank and Irene had gotten off onto a milking machine somebody's father bought in 1961. It was two arguments, and then it was four."""),
 (213, "\"Is this what it was all for?\" said the wife of the man from the north houses.", "\"Is this what it was all for?\" Lupe said."),
-(213, "\"Item four,\" Reuben said, turning a page. \"Toilets.\"", "\"Item four,\" Reuben said, turning a page. \"Toilets.\"\n\nThe Ochoas left that week. Hector backed the stock trailer up to the hoop house himself and loaded the wire benches, and he shook Elijah's hand at the truck, once, hard, and didn't say anything.\nLupe took the clipboard off its nail by the door and gave it to Grace. The last line on it said INSTALLED BY, in Elijah's hand.\n\"Somebody should keep checking,\" Lupe said, and got in the truck.\nIn the shouse, Reuben rubbed out the twenty-two on the whiteboard and wrote twenty."),
+(213, "\"Item four,\" Reuben said, turning a page. \"Toilets.\"", """\"Item four,\" Reuben said, turning a page. \"Toilets.\"
+
+Afterward the kitchen trailer was full of people doing dishes who didn't want to go home yet. Lou came in last. He had walked Hector and Lupe out to their truck, and he went straight to the sink and ran the water.
+\"The Ochoas are leaving,\" he said, to the dishwater. \"End of the month.\"
+\"Why?\" Tyler said.
+\"They were concerned by the potential for the technology to be misused, and didn't want to feel complicit in the militarization of the farm.\"
+\"That's ridiculous,\" Tyler said. \"We're not militarizing anything!\"
+\"That is not the way the Ochoas feel, and we would do well to respect it.\" Lou squeezed the edge of the counter tightly for a moment, then turned around. \"We will surely encounter resistance like this again along our path.\"
+\"Yeah, but they're wrong!\"
+\"They don't see it that way. Elijah knows what I'm talking about.\"
+Heads among the group turned toward Elijah, who was mid-bite in a hunk of cheese.
+\"You must have a hard-won understanding of how ill-informed good intentions can become dangerous.\"
+Elijah didn't want to think about his band back home, but he couldn't help it. The image of being utterly shunned by his former buds leapt to mind.
+\"I mean,\" Elijah said, \"I get it, but I think they're just scared.\"
+\"It is reasonable to be afraid of the unknown. The shape of monsters is noticed more in the dark.\" Lou went back to washing the dishes as Curtis jumped in to cut the tension.
+\"Yeah, well, when Skynet wakes up, I hope it comes with catgirls!\"
+\"Curtis!\" Grace's admonition was loud but friendly. She smacked Curtis on the arm. Several members of the room laughed and seemed to relax.
+Priya was chewing her pencil. It had found its way out from behind her ear into the corner of her mouth."""),
 # 214, Ch 35: the night scene cut to the walnut, the man who refuses, ALC; Lou lets Grace drop (drafts/chapter-35.md)
 (214, "That's what this lady's doing.", "That's what Patricia's doing."),
 (214, "It makes sense the way the steam engine made sense.", "It makes sense the way the car made sense."),
@@ -1261,7 +1267,31 @@ The firelight moved across his face. Elijah took another drag. He wanted it to b
 (215, "The rain came Thursday and the county opened burn season Friday. On Sunday night, when the last car from Idaho had pulled out,", "The rain came at the end of the week, and the county opened burn season. On the last night, when the last car from Idaho had pulled out,"),
 (215, "What choosing for people looked like, he knew.", "He knew what choosing for people looked like."),
 # 216, Ch 38: the last gantry is the rover (CT, 26 Nov: "It's meant to be a rover. Not a gantry.")
-(216, "the gantry stood parked over bed four", "the rover stood parked over bed four"),
+(216, "the gantry stood parked over bed four", "the new rover stood parked over bed four"),
+(204, "They built it from free plans off the internet and what was in the drawer. It was not fast. It crossed a bed like an old man crossing a street.", "It was not fast. It went down a path like an old man crossing a street."),
+(204, "and it lowered its arm and watered exactly one seedling.\nTyler stood there with his cyberdeck under his arm.", "and it reached its arm over the side board and watered exactly one seedling.\nTyler stood there with his cyberdeck under his arm."),
+(213, "Patricia was there, at the end of the table, because the network's name went on the banner. She had a binder. She had her phone face down next to it.",
+"""Patricia was there, at the end of the table, because the network's name went on the banner. She had a binder. She had her phone face down next to it.
+Reuben took the money first. He kept the books, and for the first time since the land there was something left at the bottom of the page. The channel had come back with Denny.
+Priya had one sheet of paper, and Marta and Grace had signed it under her. The little rover had watered and weeded four beds for two seasons. They wanted the tall one now, the frame that straddles a whole bed, in time for spring.
+\"It gave us back a day a week,\" Priya said. \"I measured.\"
+Lupe Ochoa had her phone face up on the plywood, which nobody did at that table.
+\"When we bought the little one, I said I wanted to be able to carry it out of my field,\" she said. \"I can't carry that.\" She turned the phone around so the table could see it. \"I watch the videos from Ukraine every night. The drones. Some kid in a basement flies one into a man in a field. Same factories. They don't make a nice kind for farms.\"
+\"Lupe,\" Hector said. \"It waters lettuce.\"
+\"So did the little one. Now look what we're buying.\"
+\"She's not wrong about the factories,\" Marta said.
+Priya looked down the table at Curtis, with her pencil up, ready. \"I thought you would share their feelings.\"
+\"I mean, I kind of do,\" Curtis said. \"I get it a little bit.\" He scratched his jaw. \"For all my fear-mongering about Skynet, and being worried that I'm plugged into the Matrix right now, I'm also a Trekkie.\"
+Blank faces, all the way down the plywood.
+\"Oh, come on. Star Trek? Really? Nobody's seen Star Trek around here?\"
+\"You want your own Commander Data,\" Marta said.
+Curtis turned and looked at her, and she looked back at him.
+\"Yes,\" he said. \"Absolutely. You get it.\"
+\"Beam me up, Scotty,\" Marta said, and for a second they were the only two people at the table smiling.
+It passed. Hector voted for it. Lupe kept her hands in her lap. Reuben said the frame would take six weeks to come."""),
+(213, "But he got comfortable, and he had a beer in him, and he said it the way you'd offer to bring ice.", "But the table had just voted for a robot, and he had a beer in him, and he said it the way you'd offer to bring ice."),
+(215, "Chapter 36: This Is the Gate\nHe told her on the Wednesday of festival week,", "Chapter 36: This Is the Gate\nThe Ochoas left the Saturday before the festival. Hector backed the stock trailer up to the hoop house himself and loaded the wire benches, and he shook Elijah's hand at the truck, once, hard, and didn't say anything.\nLupe took the clipboard off its nail by the door and gave it to Grace. The last line on it said INSTALLED BY, in Elijah's hand.\n\"Somebody should keep checking,\" Lupe said, and got in the truck.\nIn the shouse, Reuben rubbed out the twenty-two on the whiteboard and wrote twenty.\n\nHe told her on the Wednesday of festival week,"),
+(213, "They went around on it for half an hour. Could the high school send kids.", "Then the harvest, and the eighteen. They went around on it for half an hour. Could the high school send kids."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

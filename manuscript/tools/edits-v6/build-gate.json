@@ -1,29 +1,146 @@
 {
  "gone": [
-  {"ch": 27, "text": "Every winter there's somebody on that route we don't get to in time.", "why": "the missed stop in Ch 32 is the first"},
-  {"ch": 28, "text": "The county's power came back three days later.", "why": "CT: overnight"},
-  {"ch": 29, "text": "Denny started to argue and then didn't", "why": "Denny argues his own case"},
-  {"ch": 32, "text": "A wood base Denny cut him from a pallet.", "why": "Denny is gone from February to July 2027"},
-  {"ch": 33, "text": "this was why she didn't come on Fridays", "why": "Patricia is at three Friday tables"},
-  {"ch": 34, "text": "The two in the equipment shed. They've been sitting there since I got here.", "why": "the arms are at Praether's (edit 205)"},
-  {"ch": 34, "text": "A man from the north houses said", "why": "he is Hector Ochoa"},
-  {"ch": 35, "text": "\"They can. They just won't.\"", "why": "mirrored line (edit 174's debt)"},
-  {"ch": 36, "text": "Twenty-two people did the work of forty", "why": "twenty, after the Ochoas leave"},
-  {"ch": 36, "text": "What choosing for people looked like, he knew.", "why": "edit 172's inversion"},
-  {"ch": 37, "text": "two robot arms in the back of the equipment shed", "why": "the arms are at Praether's; needs CT's yes"},
-  {"ch": 38, "text": "the gantry stood parked over bed four", "why": "it is a rover; needs CT's yes"}
+  {
+   "ch": 27,
+   "text": "Every winter there's somebody on that route we don't get to in time.",
+   "why": "the missed stop in Ch 32 is the first"
+  },
+  {
+   "ch": 28,
+   "text": "The county's power came back three days later.",
+   "why": "CT: overnight"
+  },
+  {
+   "ch": 29,
+   "text": "Denny started to argue and then didn't",
+   "why": "Denny argues his own case"
+  },
+  {
+   "ch": 32,
+   "text": "A wood base Denny cut him from a pallet.",
+   "why": "Denny is gone from February to July 2027"
+  },
+  {
+   "ch": 33,
+   "text": "this was why she didn't come on Fridays",
+   "why": "Patricia is at three Friday tables"
+  },
+  {
+   "ch": 34,
+   "text": "The two in the equipment shed. They've been sitting there since I got here.",
+   "why": "the arms are at Praether's (edit 205)"
+  },
+  {
+   "ch": 34,
+   "text": "A man from the north houses said",
+   "why": "he is Hector Ochoa"
+  },
+  {
+   "ch": 35,
+   "text": "\"They can. They just won't.\"",
+   "why": "mirrored line (edit 174's debt)"
+  },
+  {
+   "ch": 36,
+   "text": "Twenty-two people did the work of forty",
+   "why": "twenty, after the Ochoas leave"
+  },
+  {
+   "ch": 36,
+   "text": "What choosing for people looked like, he knew.",
+   "why": "edit 172's inversion"
+  },
+  {
+   "ch": 37,
+   "text": "two robot arms in the back of the equipment shed",
+   "why": "the arms are at Praether's; needs CT's yes"
+  },
+  {
+   "ch": 38,
+   "text": "the gantry stood parked over bed four",
+   "why": "it is a rover; needs CT's yes"
+  }
  ],
  "there": [
-  {"ch": 17, "text": "Beware the military!", "why": "Praether's warning (CT)"},
-  {"ch": 26, "text": "We're not being replaced, we're expanding our capacity.", "why": "Lou's line (CT)"},
-  {"ch": 32, "text": "Tell Reuben I don't mind waiting", "why": "the late payment (CT's April quarrel)"},
-  {"ch": 33, "text": "I sold it to them", "why": "Reuben's question answered at the table"},
-  {"ch": 34, "text": "I told our friend Elijah to keep the arms a secret.", "why": "Lou's line at the reveal (CT)"},
-  {"ch": 34, "text": "So you've been sitting on industrial technology this entire time", "why": "Priya's line (CT)"},
-  {"ch": 34, "text": "I'm also a Trekkie", "why": "Curtis (CT)"},
-  {"ch": 34, "text": "Commander Data", "why": "Marta (CT)"},
-  {"ch": 34, "text": "Beam me up, Scotty", "why": "Marta (CT)"},
-  {"ch": 36, "text": "Maybe you should go home", "why": "the fire, kept whole"},
-  {"ch": 38, "text": "Nineteen households", "why": "the ending's count"}
+  {
+   "ch": 17,
+   "text": "Beware the military!",
+   "why": "Praether's warning (CT)"
+  },
+  {
+   "ch": 26,
+   "text": "We're not being replaced, we're expanding our capacity.",
+   "why": "Lou's line (CT)"
+  },
+  {
+   "ch": 32,
+   "text": "Tell Reuben I don't mind waiting",
+   "why": "the late payment (CT's April quarrel)"
+  },
+  {
+   "ch": 33,
+   "text": "I sold it to them",
+   "why": "Reuben's question answered at the table"
+  },
+  {
+   "ch": 34,
+   "text": "I told our friend Elijah to keep the arms a secret.",
+   "why": "Lou's line at the reveal (CT)"
+  },
+  {
+   "ch": 34,
+   "text": "So you've been sitting on industrial technology this entire time",
+   "why": "Priya's line (CT)"
+  },
+  {
+   "ch": 34,
+   "text": "I'm also a Trekkie",
+   "why": "Curtis (CT)"
+  },
+  {
+   "ch": 34,
+   "text": "Commander Data",
+   "why": "Marta (CT)"
+  },
+  {
+   "ch": 34,
+   "text": "Beam me up, Scotty",
+   "why": "Marta (CT)"
+  },
+  {
+   "ch": 36,
+   "text": "Maybe you should go home",
+   "why": "the fire, kept whole"
+  },
+  {
+   "ch": 38,
+   "text": "Nineteen households",
+   "why": "the ending's count"
+  },
+  {
+   "ch": 26,
+   "text": "The other was a kit called a JetAuto Pro",
+   "why": "the small rover first (CT)"
+  },
+  {
+   "ch": 34,
+   "text": "didn't want to feel complicit in the militarization of the farm.",
+   "why": "Lou on why the Ochoas leave (CT)"
+  },
+  {
+   "ch": 34,
+   "text": "The shape of monsters is noticed more in the dark.",
+   "why": "Lou (CT)"
+  },
+  {
+   "ch": 34,
+   "text": "I hope it comes with catgirls!",
+   "why": "Curtis (CT)"
+  },
+  {
+   "ch": 38,
+   "text": "the new rover stood parked over bed four",
+   "why": "the tall one, come after he left (CT)"
+  }
  ]
 }

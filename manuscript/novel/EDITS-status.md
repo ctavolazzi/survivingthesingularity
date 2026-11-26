@@ -214,7 +214,7 @@ Edit 57 was never used.
 | 201 | Ch 22 | PARTIAL | "There's one more thing," he said. "The board in the boxes. I didn'... |
 | 202 | Ch 23 | not in the Doc | He saw the pattern all at once, on the third evening. |
 | 203 | Ch 24 | not in the Doc | The first new board was done in the middle of August. |
-| 204 | Ch 26, 32, 33 | not in the Doc | Nobody called back that evening. |
+| 204 | Ch 26, 32, 33 | not in the Doc | The other was a kit called a JetAuto Pro |
 | 205 | Ch 17 | not in the Doc | On the fourth day Grace asked about the arms. |
 | 206 | Ch 27 | not in the Doc | Elijah wrapped the outside taps against the frost and went to bed. |
 | 207 | Ch 28 | not in the Doc | came up the valley in December. |
@@ -223,7 +223,7 @@ Edit 57 was never used.
 | 210 | Ch 31, 32 | not in the Doc | Two days later Denny waved him up onto his porch. |
 | 211 | Ch 32 | not in the Doc | Frank's chart leaned where he had propped it. |
 | 212 | Ch 33 | not in the Doc | It was Denny's. Elijah swung the gate open. |
-| 213 | Ch 34 | not in the Doc | "My granddad had wheat out by Ritzville," he said. |
+| 213 | Ch 34 | not in the Doc | They wanted the tall one now, the frame that straddles a whole bed,... |
 | 214 | Ch 35 | not in the Doc | That's what Patricia's doing. |
-| 215 | Ch 36 | not in the Doc | Twenty people did the work of forty for nine days. |
-| 216 | Ch 38 | not in the Doc | the rover stood parked over bed four |
+| 215 | Ch 36 | not in the Doc | The Ochoas left the Saturday before the festival. |
+| 216 | Ch 38 | not in the Doc | the new rover stood parked over bed four |

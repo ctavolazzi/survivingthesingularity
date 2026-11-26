@@ -17,11 +17,23 @@ Book now:
 
 Change to:
 
-> The robot was Tyler's idea, and Marta's frame, and Elijah's sensors.
+> The robot was Tyler's idea.
 >
-> It was a rover, a tall steel frame on four wheels that straddled a bed and drove down it, with an arm that could
-> come down anywhere underneath. It wasn't bolted to one bed. It could drive itself to any field on the place. It
-> could drop a seed,
+> He had two picked out, and he brought both to the Friday table on his phone. One was a tall steel frame on wheels
+> that straddled a whole bed, the kind the big growers ran, and it cost more than the co-op had cleared all spring.
+> The other was a kit called a JetAuto Pro: four fat wheels that could roll sideways, a little arm on top, a
+> spinning lidar the size of a hockey puck, and a camera. It would have fit in an apple box.
+>
+> "Could I pick it up?" Lupe Ochoa said.
+>
+> "With one hand," Tyler said.
+>
+> "Then that one. If it does something stupid in my field, I want to be able to carry it out."
+>
+> Reuben kept the books, and he said the little one was also the one they could pay for. They bought the little one.
+> Elijah wired a second camera onto a mast for it.
+>
+> It could drop a seed,
 
 ## 2
 
@@ -31,7 +43,7 @@ Book now:
 
 Change to:
 
-> They got it running one evening in May. It rolled out over the lettuce in the last of the light,
+> They got it running one evening in May. It rolled out along the lettuce in the last of the light,
 
 ## 3
 
@@ -106,6 +118,17 @@ Change to:
 >
 > They got all four hundred heads out by noon.
 >
+> Curtis turned up at the shed the next night. He didn't mention the EMP.
+>
+> "If that thing's going to have a camera," he said, "I want to see what it sees."
+>
+> Elijah put the feed up on the laptop. It was lettuce. Curtis watched lettuce for a full minute.
+>
+> "Show me how you tell it where to go."
+>
+> By midnight Curtis had written the first ten lines of code of his life, and the rover drove to bed four and back
+> because he had told it to. He was at the shed most nights after that.
+>
 > That Saturday he ran the brush hog along Praether's fence line, the way he had once a month since the arms went
 > into the barn. Praether watched from the porch until he was done, then walked down to the mailbox.
 >
@@ -179,7 +202,7 @@ Book now:
 
 Change to:
 
-> The rover came down the bed at its usual crawl. It rolled past the place where the belly had been and didn't
+> The rover came down the path at its usual crawl. It rolled past the place where the belly had been and didn't
 > notice.
 
 ## 10
@@ -467,7 +490,7 @@ Book now:
 
 Change to:
 
-> The rover was parked over bed four with
+> The rover was parked at the end of bed four with
 
 ## 22
 
@@ -498,6 +521,31 @@ Book now:
 Change to:
 
 > Patricia called Grace on day nine, in tears. Her grant reports
+
+## 25
+
+Book now:
+
+> They built it from free plans off the internet and what was in the drawer. It was not fast. It crossed a bed like
+> an old man crossing a street.
+
+Change to:
+
+> It was not fast. It went down a path like an old man crossing a street.
+
+## 26
+
+Book now:
+
+> and it lowered its arm and watered exactly one seedling.
+>
+> Tyler stood there with his cyberdeck under his arm.
+
+Change to:
+
+> and it reached its arm over the side board and watered exactly one seedling.
+>
+> Tyler stood there with his cyberdeck under his arm.
 
 ## Whose words
 
@@ -547,6 +595,6 @@ lines are the book's own (Ch 1, Ch 2). Lou's "my man" follows CT's rule for Lou 
   line already doesn't hold. Nothing here reaches for her hand. To settle in the Ch 36 rewrite.
 - Chapter 38: the gantry line, above.
 
-## From the story report, 26 Nov (eighth chat)
+## Changed later on 26 Nov (the two rovers; CT)
 
-From the story report (sections 3 and 4): Ma's fall stays open overnight ("Nobody called back that evening"; the aide calls at seven the next morning; Grace waits on the gravel until dark); the year gets his side ("His side of it he never said out loud ... Greedy little grub, Melody would have said"); and Praether once more, at his mailbox: "Hear you got a robot." / "It waters lettuce." / "So did ours, the first year."
+CT's direction (plan, section 10.8): the rover is a JetAuto Pro, the cheaper and smaller of two, bought as a compromise with Lupe's concern ("Could I pick it up?"); Reuben keeps the books; Curtis and Elijah bond over programming it ("By midnight Curtis had written the first ten lines of code of his life"). The description of a tall frame is gone from this chapter; the tall one is voted in Chapter 34. Also from the story report: Ma's fall stays open overnight; his side of the year; Praether at his mailbox. Facts Claude invented here: the tall one's price ("more than the co-op had cleared all spring"), that the kit "would have fit in an apple box," Lupe's question, the second camera on a mast, Curtis's ten lines.

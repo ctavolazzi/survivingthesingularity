@@ -57,6 +57,32 @@ Change to:
 
 > He knew what choosing for people looked like.
 
+## 6
+
+Book now:
+
+> Chapter 36: This Is the Gate
+>
+> He told her on the Wednesday of festival week,
+
+Change to:
+
+> Chapter 36: This Is the Gate
+>
+> The Ochoas left the Saturday before the festival. Hector backed the stock trailer up to the hoop house himself and
+> loaded the wire benches, and he shook Elijah's hand at the truck, once, hard, and didn't say anything.
+>
+> Lupe took the clipboard off its nail by the door and gave it to Grace. The last line on it said INSTALLED BY, in
+> Elijah's hand.
+>
+> "Somebody should keep checking," Lupe said, and got in the truck.
+>
+> In the shouse, Reuben rubbed out the twenty-two on the whiteboard and wrote twenty.
+>
+>
+>
+> He told her on the Wednesday of festival week,
+
 ## Notes
 
 - Twenty people, not twenty-two (the Ochoas left in Chapter 34).
@@ -71,3 +97,6 @@ Change to:
 
 - Nothing new. The ending lines still waiting on CT are in the plan, section 13.
 
+## Changed later on 26 Nov (the two rovers; CT)
+
+The chapter now opens on the Ochoas leaving (moved here from the end of Chapter 34, which ends on CT's kitchen scene): the stock trailer, Hector's handshake, Lupe's clipboard, twenty on the whiteboard.

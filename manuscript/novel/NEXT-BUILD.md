@@ -67,7 +67,7 @@ from Claude's own reading.
 | M3 | Meanwhile | | 525 | Bidwell's map; the hole; Lou is his cousin | one line waits on CT |
 | 24 | A Chair a Foot Closer | August and September 2025 | 2,174 | The shouse, the broken coupon, the first fire, the gate and the captain, the pond | REWRITTEN, edit 203; one addition waits on CT |
 | 25 | Long Enough to Laminate | fall 2025 | 2,820 | The letter and the tiff, frozen yogurt, Frank's store, the kiss at the pond, the Thanksgiving U-turn | REWRITTEN, edit 198 |
-| 26 | The Indignant Worm | spring to October 2026 | 4,525 | The soil trial, the rover, the models go dark, Ma's fall, the pay vote, the amp at the pond | REWRITTEN, edit 204; report: split at October? |
+| 26 | The Indignant Worm | spring to October 2026 | 4,525 | The soil trial, the little rover (a JetAuto Pro), the models go dark, Ma's fall, the pay vote, the amp at the pond | REWRITTEN, edit 204; report: split at October? |
 | 27 | Blueprints of a Wall | October 2026 to February 2027 | 2,294 | The fire video, eleven towns, the plans given away, the pledge, the well | REWRITTEN, edit 206 |
 | 28 | Hello, Ridge | winter 2026 | 1,194 | One night dark; the co-op's lights stay on; the Ochoas drop off the map; the rain fly | REWRITTEN, edit 207 |
 | 29 | Ink and Pencil | early 2027 | 2,141 | The annual meeting: ways to die, Marta's shoulder, Denny unpaid, Reuben's deed | REWRITTEN, edit 208 |
@@ -77,9 +77,9 @@ from Claude's own reading.
 | M4 | Meanwhile | March 2027 | 471 | The machine on the dairy: "may I ask the people who live there?" (opens Act Four) | stays |
 | 32 | The Rubber Band | March to June 2027 | 2,989 | Five signs kept to himself; the stove; the late payment and the April quarrel; the missed stop; the juniper | REWRITTEN, edit 211 |
 | 33 | A Poem About Tide Pools | June and July 2027 | 4,363 | "It asked." Denny comes back. Believed, and told no. "I love you." The tomato dinner | REWRITTEN, edit 212 |
-| 34 | A Guy With Arms | October 2027 | 2,669 | The locked tractor; the arms revealed and refused; the war on the phones; Curtis the Trekkie; the Ochoas leave | REWRITTEN, edit 213 |
+| 34 | A Guy With Arms | October 2027 | 2,669 | The locked tractor; the tall rover voted in; the war on the phones; Curtis the Trekkie; the arms revealed and refused; Lou on why the Ochoas are leaving | REWRITTEN, edit 213 |
 | 35 | Two Walnuts in One Fist | October 2027 | 1,392 | Lou in the field: "You can't change anyone's mind." The walnuts | REWRITTEN, edit 214 |
-| 36 | This Is the Gate | late October 2027 | 2,208 | Festival week. The fire. "Maybe you should go home." | REWRITTEN, edit 215 (the fire kept whole) |
+| 36 | This Is the Gate | late October 2027 | 2,208 | The Ochoas leave. Festival week. The fire. "Maybe you should go home." | REWRITTEN, edit 215 (the fire kept whole) |
 | 37 | New Tape on an Old Gate | November 2027 | 2,677 | He leaves the amp and the note. The goodbyes. The tape. Home; the visitor book; the lamp | STAYS; lines in plan section 13 need CT |
 | 38 | A Truck Over a Cattle Guard | 25 November 2027 | 2,766 | Thanksgiving at the co-op. The machine asks for a vote. Four tables. The note | STAYS; one word needs CT |
 | 39 | It's Six Now | November 2027 | 2,826 | He reads Ma the book. The Bear Flag. "You're good." The three names. The book on the bar | STAYS |
@@ -115,8 +115,8 @@ Thank You; "Recognize Your Power".
 
 `python3 manuscript/tools/edits-v6/build_gate.py OUT/v6.txt --todo manuscript/novel/TODO.md` lists every line that
 must be gone and every line that must be there before the build is made (`build-gate.json` beside it), and every
-unticked box in the to-do list. On 26 Nov, after Chapters 27 to 36, it reports two lines still to go, both in the ending and
-both waiting on CT's yes (Ch 37's "equipment shed" and Ch 38's "gantry"), plus the to-do list's open boxes. The build is ready when:
+unticked box in the to-do list. On 26 Nov, after Chapters 27 to 36, it reports one line still to go, in the ending and
+waiting on CT's yes (Ch 37's "equipment shed"; Ch 38's "gantry" is done, edit 216), plus the to-do list's open boxes. The build is ready when:
 
 1. ~~Chapters 27 to 36 are written and logged (edits 206 to 215).~~ Done 26 Nov.
 2. The corrections to Chapters 22 to 26 from the report are in, or CT has said no to them.

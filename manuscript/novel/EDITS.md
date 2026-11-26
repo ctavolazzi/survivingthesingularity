@@ -3360,6 +3360,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+Corrected in place, 26 Nov (eighth chat), on CT's direction about the two rovers (his words in
+`PLAN-CHAPTERS-20-TO-36.md`, section 10.8; none of it in the Doc): edit 204, the rover is a JetAuto Pro, the smaller and
+cheaper of two, bought on Lupe's "Could I pick it up?", and Curtis and Elijah program it together (Ch 26; "parked at the
+end of bed four" in Ch 33); edit 213, the table votes for the tall one (Lupe: "I can't carry that"; the Trekkie exchange
+moves here), then refuses the arms, and the chapter ends on CT's kitchen scene word for word ("the militarization of
+the farm"; "The shape of monsters is noticed more in the dark"; catgirls; Priya's pencil); edit 215, Chapter 36 opens on
+the Ochoas leaving; edit 216, Ch 38 reads "the new rover stood parked over bed four."
+
 216. **Chapter 38: the last "gantry" is the rover.** CT (26 Nov): "It's meant to be a rover. Not a gantry." Book now:
      "the gantry stood parked over bed four with its arm tucked up"; change to "the rover stood parked over bed four with
      its arm tucked up". His reference for the machine: the Hiwonder JetAuto Pro

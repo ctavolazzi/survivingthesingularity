@@ -917,6 +917,35 @@ and 101,000 in 2000 (health.mil; GulfLINK). So the harm came from his own side's
 in the mail. The letter by his mailbox carries that. Agent Orange (Vietnam) also fits his age; burn pits (Iraq and
 Afghanistan) are the most recent, and would make him a career sergeant in his mid-sixties.
 
+### 10.8 The two rovers, and why the Ochoas leave (CT, 26 Nov, last direction of the day; written)
+
+CT: "It's meant to be a rover. Not a gantry. The hiwonder https://www.hiwonder.com/products/jetauto-pro" Then: "The
+JetAuto Pro is what I want. They will have a discussion about which to buy since money is tight and they go with the
+cheaper option. BUT the symbolism of the robot TOWERING OVER the bed really isn't lost on me. Can we do both? Maybe
+they start with the smaller one as a compromise with the concerns of the family driving hte decision, and it's
+successful and helps and Curtis and Elijah bond over programming it, and maybe the women decide to scale up the
+operation with the bump in the budget that somebody keeps (who's the treasurer?) and then they have a small argument
+over the concerns of the family again, in a way that is short and moves the story along but also respecte the
+contradictory cautionary viewpoint, and then delivers the blow when the family decides to leave?" His closing scene,
+dictated whole (Lou at the counter, "the militarization of the farm," Elijah and the cheese, "The shape of monsters is
+noticed more in the dark," Curtis's catgirls, Grace's smack, Priya chewing her pencil), with "End chapter there."
+
+How it is in the book now:
+- **Ch 26 (May 2026):** Tyler brings two to the table; Lupe: "Could I pick it up?"; they buy the JetAuto Pro, which is
+  also what Reuben, who keeps the books, says they can pay for. Curtis comes to the shed to see what its camera sees
+  and writes his first ten lines of code with Elijah.
+- **Ch 33:** the little rover is "parked at the end of bed four."
+- **Ch 34 (October 2027):** Reuben reports the first money left over since the land. Priya's sheet, signed by Marta
+  and Grace, asks for the tall one. Lupe: "I can't carry that," and the footage from Ukraine. Marta: "She's not wrong
+  about the factories." The Trekkie exchange follows, about the rover (as CT first described it). It passes; six
+  weeks to come. Then the harvest, and Elijah, who has just watched the table vote for a robot, offers the arms; that
+  is refused (the pledge covers machines handling the food), so the fire still stands on a no. The chapter ends on
+  CT's kitchen scene, the same night, so Chapter 35's "the next morning" holds.
+- **Ch 36** opens on the Ochoas leaving (the handshake, the clipboard, twenty on the whiteboard).
+- **Ch 38:** "the new rover stood parked over bed four": the tall one, come after Elijah left.
+- [name] is Tyler; [family name] is the Ochoas; the treasurer is Reuben (he cuts the checks in Ch 26 and runs the
+  year's numbers in Ch 29). All three are Claude's reading of the book.
+
 ## 11. Chapter by chapter, 27 to 36
 
 Words now, from make_v6.py's v6.txt with edits 1 to 204. **Correction, later the same day:** these counts included line

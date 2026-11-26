@@ -11,7 +11,7 @@ The old man's yard was covered in foliage and rust buckets. Wavering somewhere b
 
 They left the Ranger by the mailbox. Grace leaned on the horn until a man came around the side of the pole barn. He stopped where he could see the road and both of them at once. He was seventy or so, in a canvas coat, with a white beard he had plainly cut himself. A burn barrel was going behind the house. The smoke lay down flat across the yard and got into everything.
 
-"Lou tells me you want to store some robot arms out in my old barn," Praether said. "I don't care about that, as long as they're unplugged and turned off and the military can't access them."
+"Lou tells me you want to store some robot arms out in my old barn," Praether said, a rattle in his voice like a can of paint being turned over. "I don't care about that, as long as they're unplugged and turned off and the military can't access them."
 
 Grace and Elijah looked at each other, and then at him.
 

@@ -3623,6 +3623,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      to be all right. I'll keep them for as long as you need me to. Unless something else comes up, I'll let you know."
      and "And then he doesn't" (on the page: "He never did."). Out: "The grimace went, and Praether threw him a smile.
      You sure will. I like this one." and "as long as I can". Claude's: "Praether wiped his eye with a knuckle."
+     Then CT: "We could use the phrase rattle in his voice for old Richard", on his first line, "Like a can of paint
+     being turned over." It is now on "Lou tells me you want to store some robot arms out in my old barn," Praether
+     said, "a rattle in his voice like a can of paint being turned over."
      Rows 88, 205, 220 and 222 narrowed. Record: `manuscript/novel/drafts/edit-230-praether-and-lou.md`. Logged only;
      not in the v8 Doc yet.
 

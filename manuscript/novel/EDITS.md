@@ -3133,6 +3133,44 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      The rest of the paragraph is unchanged. Logged only; not in the v6 Doc yet.
 
+196. **Chapter 7, the first messages after the video: his old Spanish teacher.** CT (26 Nov): "We need to add a part at
+     the beginning when his video first goes viral, talking about like how he's surprised with the backlash ... like
+     maybe his Spanish teacher ... extremely condescending, negative, rude, mean, spirited ... And then something in the
+     environment needs to happen so that it calls his attention away from it, and then it moves the story forward."
+     Full words in "Direction from CT, 26 Nov". On the name: "I don't care what the teacher's name is." Book now:
+
+     > It was supposed to be for Nate and Wes and his mother and David.
+     >
+     > Then the other kind of message started showing up.
+
+     Change to (inserted between them) [the messages, his thoughts and "He really looked up to this guy. He loved this
+     guy. And his old teacher just called him a liar?" are CT's words; the teacher's introduction, the name, "a good
+     ear", the phone on the amp and the rattle are Claude's]:
+
+     > Then a name came in that he hadn't seen since high school. Mr. Ostrander had taught him Spanish for three years, and once, after class, had told him he had a good ear and should never let anybody talk him out of using it. Elijah opened it smiling.
+     >
+     > You don't know what you're talking about. That's never going to happen.
+     >
+     > He read it twice. Then he wrote back. Oh, Mr. Ostrander, it's really nice to hear from you. Hope everything's good. Hope you're well.
+     >
+     > The answer came before he'd set the phone down. Cut the crap, kid. You're out of your league here. You have no idea what you're talking about. This isn't going to happen. This isn't true. And you need to stop spreading fear online.
+     >
+     > Spreading fear? He scrolled back up through it. I'm not spreading fear, he thought. Am I?
+     >
+     > Hey, he typed. Maybe something got misconstrued. Maybe there's a miscommunication here. I'm not trying to spread fear. I'm just trying to share what I've personally experienced and let people know what's happening.
+     >
+     > You're making stuff up and I don't appreciate it. This isn't true. That didn't happen. You're a liar. And you need to stop.
+     >
+     > Whoa, he thought. What the hell?
+     >
+     > He set the phone face down on the amp. He really looked up to this guy. He loved this guy. And his old teacher just called him a liar?
+     >
+     > The phone rattled against the grille.
+
+     The rattle is the senator's office in the next line ("A senator's office wanted fifteen minutes"), which echoes
+     the night the video spread (the phone "rattled against the grille"). Earl's line just before ("You're telling
+     scared people to be more scared") is echoed on purpose. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

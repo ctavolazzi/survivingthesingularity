@@ -1626,6 +1626,23 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      idea. Elijah could see it." Change: delete that empty paragraph. No words change. Logged only; not in the v6 Doc
      yet.
 
+152. **Chapter 12, the cannery lot: why he doesn't go stay with his mother.** CT (26 Nov): "We need a line somewhere in here
+     that makes sense for why he doesn't just go stay with his mom. Like, why doesn't he just go stay with his mom?"
+     Book now, end of the paragraph that starts "'We'll sort you out Friday,' Trent said":
+
+     > ...and at night he slept in the cab of the Ranger at the far end of the cannery lot, with the windows cracked
+     > and a towel over the wheel.
+
+     After it, a new paragraph [Claude's wording, from the book's own facts]:
+
+     > The farm was two hours north, and his mother would have left the porch light on for him. But gas there and
+     > back every day was more than he had, and she had sent him off to be useful. He wasn't going to walk back
+     > through her door with nothing to show for it.
+
+     The reasons are all in the book: "Home was two hours north" (later in this chapter), no money until Friday, and
+     Ma's "Go be useful, baby. You're underfoot." (Ch 11). Then "By the end of the first week he needed a shower..."
+     (edit 97) as before. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

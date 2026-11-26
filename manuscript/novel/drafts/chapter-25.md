@@ -247,3 +247,17 @@ After the dishes, Elijah sat on the trailer step, one step below Grace.
   the beat is the point; Ma's calls untouched; he is thirty-seven ("almost forty" is her needling him).
 - **Length:** the four new scenes add about 1,700 words. Marta's scene and the amp night move to Ch 26 rather than
   leaving the book, and the stove kiss (about 300 words) comes out. The book grows by about 1,400 words here.
+
+## Continuity fixes, 26 Nov (eighth chat), after the readers' audit
+
+The text above is as first logged. These lines now read:
+
+- "Most weeks he wrote to Ma on a yellow pad" (was "Sunday nights"; Tyler works Saturdays and they drive to town).
+- "He had done the arithmetic on her room again that morning, and the letter left that out." (was "paid through March").
+- "Grace came in and sat down on the table" ("without knocking" out; Chapter 37 says "She had knocked once").
+- "The day you got here. I said I'm good for it." (was "Before you ever got here").
+- "Through the window he could see the north houses up the road. The last one was Hector and Lupe's."
+- "You guys got anything out at the shed that pays?" ... "I'd take gas money." / "We can't pay anybody yet, hon."
+- "Elijah was still back in the fastener aisle. The clamp had been the last one on its hook. He stood in front of that hook, and the empty hooks on either side of it, and looked at them with no surprise at all."
+- "the part that overheated in June"; "The duffel went back under the bed."
+- Old text: "eight months" (twice, was nine); "a paid job once the library could carry one"; "He had lost a register and had all week now, and he spent it building"; "a nineteen-year-old had the name".

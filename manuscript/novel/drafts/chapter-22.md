@@ -159,3 +159,11 @@ Change to:
 > At eleven he was in the shed with the crawler logs open, reading who had copied what, line by line. The clock in the corner of the screen went to 11:00. In Santa Rosa they would be standing up for the first hymn. He kept reading.
 >
 > On Monday he sent flowers, a day late, with a card he rewrote four times. He texted David that he was sorry. David didn't answer.
+
+## Continuity fixes, 26 Nov (eighth chat), after the readers' audit
+
+The text above is as first logged. These lines now read:
+
+- "He wanted the vent logs on his phone for the drive, every temperature Tyler had pulled off the boxes since the plugs cooked" (the boxes "don't talk to anything," Chapter 19).
+- "At St. Rose they would be standing up for the first hymn." (was "In Santa Rosa").
+- "For five weeks nothing went wrong with the Crucible."

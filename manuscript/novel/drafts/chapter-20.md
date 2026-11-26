@@ -79,3 +79,12 @@ Why: the reader had to work out who "somebody" was. Same joke, said straight.
   comparison (the book has 76); no inversion; no counting, no "Then he," no mirrored lines; the one light touch is
   Lou showing the photos "whether they asked or not."
 - Nothing else in the chapter is on the counting list. The chapter grows by about 120 words.
+
+## Continuity fixes, 26 Nov (eighth chat), after the readers' audit
+
+The text above is as first logged. These lines now read:
+
+- "Out in forty greenhouses, most of them two valleys over" (the Ochoas' is up the co-op's road).
+- "Lou had ridden along with Denny on six of the deliveries and come home with a photo of each box bolted to its post" (Chapter 19 has Denny delivering).
+- "A place back home with a rose garden." (her room is ten minutes from the farm, not in Santa Rosa).
+- Chapter 19: "The forty units shipped in May." (was June; Chapters 20 to 22 have them running in May).

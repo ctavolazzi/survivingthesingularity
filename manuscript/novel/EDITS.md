@@ -3360,6 +3360,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+Corrected in place, 26 Nov (eighth chat), after three readers audited continuity across edits 198 to 204 (none of it in
+the Doc): the boxes ship in May (Chapter 19, one word), not June; the plugs cook in June, not July; Ma's room is back
+home and Ray's service is at St. Rose, not in Santa Rosa; the letter scene loses "Sunday nights," "paid through March"
+and "without knocking"; Tyler asks for work "that pays"; the last hose clamp; Tyler is nineteen in fall 2025; eight
+months, not nine; Marta's scene remembers the kiss ("She kissed you at that pond a year ago, spreadsheet, and you're
+asking me."); "Grace had knocked once, at the pond."; Curtis drives the route; the pay vote is in July. The full list is
+in `PLAN-CHAPTERS-20-TO-36.md`, section 12.3, and at the foot of each chapter's file in `drafts/`.
+
 Corrected in place, 26 Nov, after an audit of the day's edits against CT's standing rules (none of it in the Doc):
 written messages set in italics in edits 196 (Mr. Ostrander's messages and Elijah's replies), 198 (*Dear Ma*) and 200
 (*You're a liar. And you need to stop.*; Marta's card, *Power or brain? Halve it.*); two day names that only marked

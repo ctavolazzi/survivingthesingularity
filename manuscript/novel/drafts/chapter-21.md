@@ -126,3 +126,11 @@ Change to:
   hung a machine on Hector's wall and went home," and the last line. No feeling is named; the reflection is shown
   through what is still in his phone.
 - **Length:** about 1,050 words added. The chapter was the shortest in the book (937 words).
+
+## Continuity fixes, 26 Nov (eighth chat), after the readers' audit
+
+The text above is as first logged. These lines now read:
+
+- "under a year and a half of everything else" (was three years; the video was late 2023).
+- "Eleven of the boxes have no shade on them" (was "are on south walls"; the instructions put every box on a south wall).
+- "Within days two other channels" (was "By Saturday").

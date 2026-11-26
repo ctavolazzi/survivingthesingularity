@@ -267,6 +267,9 @@ section 6. Claude's working-out:
 
 ## 6. The map, chapter by chapter
 
+**Chapters 20 to 26 are written (edits 198 to 204). For Chapters 27 to 36, sections 10 and 11 are the working plan and
+win where they differ from this section.**
+
 Years are the Appendix's. Each chapter: what stays, what changes, who does what and why, what it costs, and how it
 serves section 2.
 
@@ -475,6 +478,8 @@ The detail is in section 5a. In order:
 
 ## 8. Open, for CT
 
+**Closed on 26 Nov in section 12. One question is open: the rover and the arms (section 10.4).**
+
 1. When the kiss scene happens (CT's scene is in section 5a). July, the night of the bell, with the shame fresh; or
    the fall, after the summer's push and pull, when the last reworked board ships and nothing holds him but her.
    Claude recommends the fall. CT has said both "We don't want the kiss to be sudden" and "I want the kiss to happen
@@ -582,3 +587,462 @@ up to par ... use like sub-bullet points as well."). Chapter 25 first: it is mos
 been nothing; a yes or no on the 59 line flags.
 **Owed at the end of the session:** "Where things stand" and "What is still open" in the procedure file, STATE.md and
 sessions/LOG.md in _workbench, and the Drive copy of the edit list refreshed once.
+
+## 10. The endgame: arcs for Chapters 27 to 36 (26 Nov, eighth chat)
+
+CT, 26 Nov: "Plan out the story arcs, the beats of the character drama, the obstacles, challenges, and flaws, and how
+the characters work to overcome them individually and together ... Any outstanding questions, confusion, loose ends,
+continuity errors, or other editorial problems must be finished and completed right now." And, the same day, on the
+late trust payment: "the missed payment is obviously going to echo some of Elijah's past trauma with his mother ... a
+lover's quarrel, a more serious one than the prior, where he apologizes and then they go out to ice cream ... there's
+a little more panic that could happen when the payment gets missed. And it's his fault, or so he thinks."
+
+Written after Claude read Chapter 27 to the Appendix whole and three readers audited continuity (Ch 20 to 26, Ch 27 to
+36, the ending). Chapters 20 to 26 are written and logged (edits 198 to 204). Sections 10 to 13 are the working plan
+for 27 to 36; where they differ from section 6, these win. Everything here is Claude's unless it is in quotation marks.
+
+### 10.1 One chain of cause
+
+Each loss causes the next. Nothing is solved inside its own chapter.
+
+1. His shortcut cooks the Ochoas' starts (Ch 21). Shame makes him work alone, and that leaks the journal (Ch 22).
+2. Saving Irene's land takes the money that would have made the Ochoas whole (Ch 23). The trust has a clock: miss
+   three payments in a row and the ground goes back to Irene, then to Dale.
+3. The land payments ride on Denny's channel. Denny is unpaid, on the bench seven days a week (Ch 26, 29).
+4. Elijah's $800 plan puts a price on Denny's bench in front of everyone (Ch 31). Denny takes a tool company's money
+   and goes.
+5. With Denny gone the channel falls, and April's payment to Irene comes up short (Ch 32). Grace keeps it from Elijah
+   for a week. He finds out, and it is the coffee can from his mother's kitchen all over again.
+6. The same week the route misses its first stop, Mrs. Delgado's, because nobody told the stand-in driver what Grace
+   knows about that gate (Ch 32). From then on Grace is afraid of who she won't get to.
+7. He learns of the machine and promises her not to post it (Ch 33). She says "I love you." He doesn't say it back.
+8. Short of hands at harvest, he offers the arms. The table says no, and the Ochoas leave for good (Ch 34).
+9. Lou tells him "You can't change anyone's mind" (Ch 35). He takes it as a rule.
+10. Grace wanted him to bring the arms anyway. He holds to the rule, and it costs him Grace (Ch 36).
+
+### 10.2 The people: flaw, what is in the way, the beats, how they get past it
+
+**Elijah.** Flaw: he fixes things alone and in secret, and he takes all of the blame or none of it.
+- In the way: Melody's "greedy little grub"; the page he signed for Ma; three people he thinks he ruined.
+- Beats: loses the vote beside Grace (27). His solo update drops the Ochoas' house off the map (28). Deletes FOUNDER
+  HIDES THINGS (29). Fourteen slides fail where Rosa's two minutes work (30). Prices Denny's bench; the tea circle; "Ma.
+  I'm not okay." (31). The five signs, kept to himself; the late payment; his first raised voice at Grace; the first
+  time he goes after her (32). Reads the signs out, is believed, says "I sold it to them" at the table (33). Forgets
+  Denny's warehouse (34). Takes Lou's sentence as a rule (35). Keeps the rule at the fire (36).
+- Alone: he learns to say the true thing out loud (to Ma in 31, to Grace in 32, to the table in 33).
+- With others: Marta gives him one real thing a day. Curtis holds the rain fly. Denny tells him the leaving was Denny's
+  own choice (33). The table covers the payment in the open (32).
+- What he still can't do by Chapter 36: say "I love you" back, or stay when it is a mess. Lou names it in Chapter 37.
+
+**Grace.** Flaw: she carries people without asking if they can walk, and she protects people by deciding what they
+get to know.
+- In the way: her father on the porch; the man at the gate; the captain who was right and let her go.
+- Beats: lit up by eleven kitchens, then outvoted (27). Soup for the whole road (28). The route funded "through June"
+  in ink (29). "We asked nicely. I want that written down." (30). Can't back him at the table; sits beside him at the
+  circle; decides, on the page, to say "Nothing that mattered" (31). Lights the stove. Keeps the late payment from him.
+  Mrs. Delgado's box sits at the gate (32). "I love you. I'm not helping you scare people." "Which one of us helped?"
+  (33). Counts something else at the whiteboard (34). Wants the arms brought in over the table's no (36).
+- Alone: she lights the fire she was afraid of (32, 36).
+- With others: Marta is who she tells everything. Elijah comes out to the truck the night of the missed stop (in
+  Chapter 23 he only watched her sit there).
+- The turn: asking nicely fails Mrs. Delgado once, in April. By October she wants somebody to stop asking and do it.
+
+**Lou.** Flaw: he vouches too fast, and when a thing gets hard between people he turns on the water.
+- In the way: the orchard he lost; Greg Holt, who started the place with him and left.
+- Beats: "Nobody up here needs you perfect" (29). Five scared people and a clock; Elijah doesn't listen (30). The
+  head shake at the plan (31). The tomato dinner: potholes, Genghis Khan, shouted down, and Curtis catches him on
+  "Why would anybody need to steal" (33). The pears, to Curtis (34). "You can't change anyone's mind." He asks about
+  Grace and lets it drop (35). His knee goes in festival week (36).
+- What it costs: his advice loses the farm Elijah. He knows it on the step in Chapter 37.
+
+**Marta.** Flaw: she tests people by breaking what they make, and "We'll see" lets her not answer.
+- In the way: Emeka and the press.
+- Beats: "Ship them" (27). Puts herself on the list; the shoulder; offers Tyler four years (29). Teaches with her hands
+  under her thighs (30). The lockout and Emeka; "Go find out if they ate" (31). "We'll see" stops sounding like yes
+  (31, 33). "Show me the guard" (34).
+- With others: Tyler says her own rule back to her from the floor (30).
+- Planted for the ending: the welder gap stays open, and she says the one thing that could close it is Elijah's
+  coupons bending (29). In Chapter 37 one does, the day he leaves.
+
+**Denny.** Flaw: he can't stop, and he won't say what he needs.
+- Beats: "I'm not burned out. I'm unpaid." He says the tool company's number out loud (29). Films the county meeting,
+  his last one, and doesn't say so (30). "You put my bench in it." The goodbye on his porch (31). Gone from February to
+  July; Tyler edits, Frank holds the camera, the numbers fall (32). Comes back up the gravel the week of "It asked,"
+  and Elijah opens the gate for him (33). "I say it and I'm wrong once, nobody comes to the porch again" (33). "I
+  went." (34).
+- How he gets past it: he finds out what the porch is worth by selling it. The company sent him a script. He tells
+  Elijah the leaving was his own doing.
+
+**Tyler.** Flaw: speed. He believes the machine fixes everything, and he says what isn't his to say.
+- Beats: the chalk and the well (27). "Power or brain?" on the radio (28). Says yes to four unpaid years (29). The rod
+  oven (30). Takes over the edit; the juniper, "You can't undo a cut" (32). "Finally." (33). "Let's automate stuff." (34).
+- With others: Priya, Marta and Wren each teach him to wait, one tool at a time.
+
+**Curtis.** Flaw: he trusts only what he can open with his own hands.
+- The wound, decided here (section 12): his grandfather's wheat place. A combine locked up the last week of harvest,
+  the dealer was eleven days out and the rain was two. The bank sold it the next spring, and his own neighbors bid on
+  the equipment. He tells Lou in the truck cab (34), after Lou tells the pears.
+- Beats: the rain fly (28). "They shouldn't have to keep wondering who's generous this month" (29). "That's greed";
+  Irene: "Go to the next meeting, Curtis." (30). The eggs (31). He goes to the next meeting, and the one after (32).
+  "Who's holding the plug?" (33). Walt's tractor at midnight (34). Against the arms and for the man, in the room (34).
+- Change: from "fence them out" to telling a room to lay off the man it wants to fence out.
+
+**Priya.** Flaw: she waits for proof, and waiting is a decision too.
+- Beats: the pencil note on the pledge; "Give it five years" (27). "Not a person?" in the margin, and when Tyler asks
+  whether to block the address she says to log it (29). She checks the file and passes it (29). "I'd write it down. I
+  wouldn't publish it." (33).
+- The bill is already in the ending: "That's ours. That's the names column ... I checked that file." (Ch 38).
+
+**Wren.** Flaw: she says the hard thing sideways.
+- Beats: the green-marker note with a heart (31). "I should have heard it" (31). She is the one who knows junipers
+  (32). "Does anybody ask the old lady?" (33). "Three years, and it's still a machine with you." (34).
+- The ending pays it: "I'm relieved you're going. I wanted to say it to your face."
+
+**Reuben.** Flaw: everything on paper, and he kept one paper to himself for a year and a half.
+- Beats: the divorce clause (29). The deed, and "why I had to go and look" (29). He won't carry the late payment
+  off the books; a week is all Grace gets from him (32). The Alderson letter (32). Elijah answers him at the table (33).
+
+**Patricia.** Flaw: clean hands in public.
+- Beats: the pledge, with the Ochoas' greenhouse as its reason (27). "Who paid for yours?" (31). "A source." (33). "If
+  I look at it, I'll want it." (34). The ending has her bill.
+
+**Hector and Lupe Ochoa.** They trusted the boxes and the network, and both failed them.
+- Beats: the starts (21). Told there is no money this year (23). Hector at the first fire, Lupe not (24). Half the
+  fall starts fail (26). Lupe signs Patricia's pledge and Hector doesn't (27). Their house drops off the map in the
+  storm; Lupe's voice on the radio (28). At the pre-mortem Lupe says "Somebody quits" (29). Hector drives the route the
+  day of the missed stop (32). Hector would "take a robot over another October like the last one"; Lupe: "Is this what
+  it was all for?" (34). They leave that week. Hector shakes Elijah's hand. Lupe gives her clipboard to Grace.
+- They leave for opposite reasons, together: he wanted the help and the table said no, and she is done with Elijah's
+  machines.
+
+**Irene.** The creditor who can wait one month and says so. The wire her road strung (30). The juniper (32).
+**Frank.** "You can't download me" (27). Holds the camera badly (32). "Who fixes it at two in the morning?" (34).
+**Ma.** Sunday 9:40 calls (31). He means to drive down at Thanksgiving 2026 and mails a letter (27). No visit until
+Chapter 37.
+**Devendra.** The "somebody" Bidwell had put near him (section 12).
+
+### 10.3 Elijah and Grace, quarrel by quarrel
+
+Each one is worse than the last, and each loads something the fire uses.
+
+1. **Fall 2025, the letter (Ch 25, written).** He dodges ("I don't know. Don't worry about it."). She needles. Ice
+   cream, then "I want frozen yogurt."
+2. **February 2027, after the plan (Ch 31).** "You used my route as your reason. You could have shown me first." Cold and
+   short. The repair is her sitting beside him at the circle.
+3. **April 2027, the late payment (Ch 32, new, CT's ask).** Below.
+4. **July 2027 (Ch 33).** They disagree and stay kind. "I love you. I'm not helping you scare people." He promises not
+   to post. "Which one of us helped?" goes unanswered.
+5. **October 2027, the fire (Ch 36).** Everything above comes back.
+
+**The April quarrel, beat by beat.**
+- The first of April. The channel has been falling since Denny left, and Irene's check is short. Reuben wants it on
+  Friday's agenda. Grace asks him for one week. Elijah broke in February, he isn't sleeping, and she saw him blame
+  himself for Denny. She goes to Irene, who says pay when you can.
+- That week Curtis is at the county for the food study (it comes back "revisit next cycle," so December stands).
+  Hector drives the route off the printed list. The list doesn't say that Mrs. Delgado can't carry a box. It sits at her
+  gate overnight. A neighbor phones the kitchen. Grace drives out in the dark.
+- She comes home and sits in the truck with both hands on the wheel. In Chapter 23 he watched her do that from the
+  bench. This time he goes out and gets in the other side. She tells him about the box. She doesn't tell him about the
+  payment.
+- Days later Irene stops her golf cart by the compost: "Tell Reuben I don't mind waiting." Irene thinks he knows.
+- Reuben shows him the ledger the minute he asks. Elijah sees the channel column fall off in February. He does the
+  arithmetic four times, the way he did on Ma's room. Two more misses and it is Dale's, and the buyer who wrote the
+  Alderson letter is still writing.
+- The shouse. He raises his voice at her for the first time. His mother kept the payments on the house from him so he
+  wouldn't worry, and he found out from a coffee can. He says he'll pay it himself with the checks in the notebook.
+  Grace: those checks are the co-op's own money, so he'd be paying Irene out of the account that's already short. She
+  is better at this than he is, and it stops him.
+- He says the thing that crosses the line: not to handle him the way his mother did. She asks what he's got in the
+  notebook with the rubber band on it. He doesn't answer. She walks out. It is the first time she walks away from him.
+- It is the first time he goes after anybody. He finds her at the pond. He apologizes, and this time he answers the
+  question instead of saying "Don't worry about it": what he is scared of, said plainly, in his own words (the feeling
+  sentence is CT's to give). She says she was wrong to sit in that truck and let him comfort her with it in her pocket.
+- He offers frozen yogurt before she can ask for it. One cup, two spoons (the couple he watched from the hospital in
+  Chapter 13).
+- Friday he brings it to the table himself, with the ledger: the payment is late, and he thinks it's his doing. Nobody
+  lets him have all of it. Lou gets the coffee can the kitchen trailer keeps its change in and sets it on the plywood,
+  and it goes around. Irene: one month she can wait, three she can't, because Dale reads the papers too.
+- What stays lost: one late payment on the record, with the clock running. A week Mrs. Delgado went without. And each
+  of them still has one thing in a pocket: his notebook, and her "Nothing that mattered."
+
+**What the fire throws, and where it was loaded**
+
+| At the fire (Ch 36, kept as written) | Loaded in |
+|---|---|
+| "You promised me." | Ch 33, the promise |
+| "You called me the lamp ... You don't even remember saying it." | Ch 31, and her "Nothing that mattered" |
+| "That's not a principle, Elijah. That's your mother." | Ch 24 at the stove; Ch 32, where he brings his mother into a fight himself |
+| "Your dad chose. Every day, on the porch, on his phone." | Ch 22 on the steps; Ch 33 at the beds |
+| "This is the gate." | Ch 24 |
+| "I didn't wait for you to ask." | her first message, Ch 15 |
+| "Maybe you should go home." | she stopped him in Ch 22 and Ch 25; the Thanksgiving U-turn; "Go. I'll drive." in Ch 26 |
+| Mrs. Delgado, the Coyote Flat stop | Ch 26; the missed stop in Ch 32 |
+
+### 10.4 CT's later direction (26 Nov), and where it stands
+
+His words: Grace gets so frustrated at the fire "because of her dad ... she's trying to save everyone because she
+tried to save her dad and couldn't. Let's make her dad an alcoholic like David's dad, but David's dad quit and figured
+it out ... Grace's dad never quit and kept going and started to get into the harder stuff. And he left when she was
+young. Like when she was a teenager. She made a lot of weird choices during that time ... She was a little festy girl."
+Elijah "dated a few festival girls in the past. That didn't exactly go so well for him." The farm: "They sell at the
+farmers market. And the solar panels help reduce costs." "We can't have a book called Surviving the Singularity
+without actual war"; people on the farm have "been watching the footage from Ukraine. They don't like the idea of
+being complicit in something like that, and that's why they leave." Curtis: "for all my fear-mongering about Skynet,
+and being worried that I'm plugged into the Matrix right now, I'm also a Trekkie ... oh, come on, Star Trek? Really?
+Nobody's seen Star Trek around here?" Marta: "you want your own Commander Data." Curtis: "yes, absolutely, you get it."
+Marta: "beam me up, Scotty." And the rover: "maybe they order one and it's on its way when Elijah has his fight with
+Grace, and then he leaves the farm before the rover shows up."
+
+Where each lands (Claude's answer to "do you have any feedback"; CT has not replied yet):
+- **Her dad drinks and never quit.** In. It goes under what the book has (the porch, the guitar, then the TV, then the
+  phone) and is never tied to the fire out loud.
+- **"He left when she was a teenager"** collides with the book: he is on that porch now, Faith sits beside him, and
+  the fire says "Your dad chose. Every day, on the porch, on his phone." Proposed: he checked out when she was a
+  teenager without going anywhere. Waiting on CT.
+- **"Like David's dad."** Ray's was horses, and he quit ("I had one of those. Mine was horses."). The pairing holds:
+  Ray quit his and her father never quit his.
+- **Festival girl.** In. The book has her at a festival every October since nineteen. She tells Elijah about those
+  years at the stove (Ch 24), and he has his pause there.
+- **The farmers market and the panels.** In: one line each (Ch 27's money talk, Ch 28).
+- **War on the phones.** In, Chapter 34. Curtis already says the machines are "getting built right now to find a man
+  in a field" (Ch 33). The Ukraine footage is the Ochoas' reason to go.
+- **Curtis the Trekkie, Marta's Commander Data.** In, Chapter 34, word for word. It is how Curtis can be against the
+  arms and not against the man, and it is where he and Marta become friends.
+- **The rover on its way when Elijah leaves** collides twice. The rover has been in the field since May 2026 (Ch 26,
+  from CT's direction earlier the same day), and the fire needs the table to have said no ("Because they said no."; "I
+  kept looking up the driveway for a truck."). Proposed: the rover stays as written; the arms are the machine on the
+  table in Chapter 34; the table tables it; the Ochoas leave anyway, because tabled means it comes back. **Waiting on
+  CT. This is the one open question in the plan.**
+
+## 11. Chapter by chapter, 27 to 36
+
+Words now, from make_v6.py's v6.txt with edits 1 to 204. The ten chapters total 24,084 words. The target is to finish
+at or under that.
+
+### Chapter 24, one addition (CT, section 10.4)
+- At the stove, Grace tells him about her father's drinking and her festival years. He has dated festival girls, and
+  it gives him a second's pause. Three or four lines, in talk. Logged as a correction to edit 203 once CT rules on
+  "he left."
+
+### Chapter 27: Blueprints of a Wall (2,135 words; target 2,100)
+- KEEP: the fire video, eleven towns, "Saw the stove," the kitchen-table plan, Frank, "Ship them," losing together,
+  the machinist's fix, the well.
+- NEW (CT, one line): what the farm lives on. The CSA boxes, Patricia's network, the farmers market, the channel.
+- CHANGE: when the forty-nine-dollar knockoff goes up on the screen, Grace says what it is: somebody else is getting
+  paid for June. Frank answers. Marta: "We'll see."
+- CHANGE: Patricia's pledge gives the Ochoas' greenhouse as its reason. Lupe signs; Hector doesn't.
+- NEW (short): Thanksgiving 2026. He means to drive down. He mails Ma a letter.
+- Cut: the midterms paragraph to two sentences, "did the pipes," "I'm just saying," the counting ("He read it three
+  times").
+
+### Chapter 28: Hello, Ridge (1,168; target 1,150)
+- CHANGE (CT): the county is dark overnight. Power is back in the morning.
+- NEW (CT): power when it counts. The panels cut the co-op's costs all year (one line), and with the battery bank they keep the mesh, the shop freezer and the kitchen
+  trailer up. The soup goes out. Denny films it.
+- CHANGE: the house that drops off the map is the Ochoas'. Lupe on the voice radio. It is the second time his work has
+  failed that house, and he did the update alone.
+- KEEP: the climb, "Power or brain?", Tyler on the net, Curtis and the rain fly, "Hello, ridge."
+- Cut: the lines that teach the two-person rule again, the day names, "three days later."
+
+### Chapter 29: Ink and Pencil (1,886; target 1,950)
+- KEEP: the pre-mortem, "Run it again with people in it," the divorce clause, the route's page, Rosa's note, ink and
+  pencil, Reuben's deed, FOUNDER HIDES THINGS, Lou and the bracket (trimmed).
+- CHANGE: Denny argues his own case. "I'm not burned out. I'm unpaid." He says the tool company's number.
+- NEW: Lupe: "Somebody quits."
+- CHANGE: Tyler answers Marta on the page. He asks if it pays. It doesn't. He says Monday.
+- NEW (one line each): Marta on what could close the welder gap. Priya tells Tyler to log the three a.m. address.
+
+### Chapter 30: Item Seven (2,144; target 2,100)
+- KEEP nearly all: the slides, Lou's seed catalog, Rosa, Irene's wire, four to one, "Go to the next meeting, Curtis,"
+  the rod oven.
+- NEW (two lines): Denny films it. At the truck he hands Tyler the tripod bag and doesn't take it back.
+- Fix: Lou's "man" twice (to "my man"), "changed more to the rest."
+
+### Chapter 31: Six Eggs on the Floor (3,637; target 3,550)
+- KEEP: the plan, "You put my bench in it," "Who paid for yours?", "You could have shown me first," the whiteboard
+  note, the magnet, "Am I crazy?", the circle, "You're the lamp," Marta's lockout and Emeka, the eggs, Wren's candle,
+  "Ma. I'm not okay.", the pit.
+- NEW: Denny's goodbye, on his porch. Yvonne lifts grown men out of bed at three in the morning; he has been on the
+  bench seven days a week for nothing while Elijah draws half pay. He says the number again. He is gone by the weekend.
+  It is what tips Elijah into three nights of reading.
+- NEW: Sunday evening Grace comes back from the grange hall with a plate. He asks what he said. She decides, in front
+  of us, to say "Nothing that mattered." (The summary of it comes out of Chapter 32.)
+- Cut to pay: the long paragraph of what he "finally saw" at the roster, down to its two plainest sentences.
+
+### Chapter 32: The Rubber Band (2,178; target 2,750)
+- KEEP: the five signs (Denny's part goes; Frank cuts the pallet base for Tyler), telling no one, the rubber band,
+  Grace lighting the stove, the juniper.
+- NEW: one look at Frank's chart on the shelf. He is sitting on a pattern again.
+- NEW (CT): the late payment, the missed stop, the quarrel, the frozen yogurt, the coffee can on the table (10.3).
+- This is the one chapter that grows. Chapters 33 and 35 pay for it.
+
+### Chapter 33: A Poem About Tide Pools (4,453; target 3,750)
+- KEEP: the poems, "It asked." at the gate, the dinner that believes him, "I love you," the promise, the beds at dusk,
+  "Which one of us helped?"
+- NEW: Denny's truck comes up the gravel while Elijah is at the gate with the hinge. Elijah opens it. The company
+  sent Denny a script. He says the leaving was his.
+- NEW: at the dinner, when he says it's on his mother's old place: "I sold it to them." Reuben's question is answered.
+- CHANGE: the tomato dinner comes down by about a third. Kept: potholes, "Owned by who?", the locked tractor, Genghis
+  Khan and the uproar, "The mothers" and Marta's "Name one," Marianne's pension, Wren's old lady, OnlyFans, "Why would
+  anybody need to steal?" and Curtis's answer, "I'd like it to be you." Cut: the second "Listen to me," the cotton gin
+  figures, the mammoth and the rent, and the lines that say the Afterword's argument a second time.
+
+### Chapter 34: A Guy With Arms (2,411; target 2,500)
+- KEEP: the locked tractor, the pears, Walt's tractor, the meeting, "I went," "If I look at it, I'll want it," tabled.
+- NEW: Curtis's wound, in the cab, after Lou's pears.
+- NEW (CT, section 10.4): the Ukraine footage is in the room; it is why "arms" lands the way it does. Curtis's
+  Trekkie lines and Marta's "Commander Data" and "Beam me up, Scotty," word for word.
+- CHANGE: the north-house man and wife are Hector and Lupe by name.
+- CHANGE: Curtis is against the arms and tells the room to lay off the man.
+- NEW: the Ochoas leave that week. The handshake, the clipboard. Twenty-two people are twenty.
+
+### Chapter 35: Two Walnuts in One Fist (1,779; target 1,400)
+- KEEP: the morning in the field, "You can't change anyone's mind," the water.
+- CHANGE: the night scene is the walnuts, "The man who refuses to launch it," and ALC. Lou asks what Grace says about
+  the arms, hears "She hasn't said," and lets it drop. "Mutually assured survival" and the second speech about mothers
+  come out (Chapter 33 has the mothers).
+- Fix: "They can. They just won't." (edit 174's debt); Lou's "man."
+
+### Chapter 36: This Is the Gate (2,293; target 2,300)
+- CHANGE: festival week is one scene. Twenty people do the work of forty. Lou's knee goes, and Elijah picks Lou's
+  squash row by hand. The packing shed at midnight stays as written.
+- KEEP the fire, every line. One debt paid: edit 172's inversion goes back to "He knew what choosing for people looked
+  like."
+
+## 12. Everything that was open, closed (26 Nov, eighth chat)
+
+CT: "Any outstanding questions, confusion, loose ends, continuity errors, or other editorial problems must be finished
+and completed right now." Each item has a decision. Where the decision is Claude's call on a question that was CT's, it
+says **Claude's call**, and his word replaces it.
+
+### 12.1 Questions that were waiting on CT
+
+| # | Question | Decision | Where it lands |
+|---|---|---|---|
+| 1 | When the kiss happens | Settled by CT: fall 2025, to keep him; a year; then Elijah's move | Done, Ch 25 and 26 |
+| 2 | The north-house couple's names | Hector and Lupe Ochoa stay. **Claude's call**; four chapters use them and CT hasn't objected | Done |
+| 3 | Was the check-engine light at Thanksgiving 2025 nothing? | Yes. Curtis plugs in his reader the next morning: the gas cap. He could have made it. He tells nobody. **Claude's call**; it is one line added to CT's scene, so it waits for his yes | Ch 25, on his yes |
+| 4 | Curtis's wound | His grandfather's wheat place, lost to a locked combine, a dealer eleven days out and two days of rain; his neighbors bid at the sale. The book already points there: "like I owned that tractor" (Ch 33) and "Again" (Ch 34). **Claude's call** | Ch 34, in the cab |
+| 5 | Bidwell's "somebody near him" | Devendra. The book already has him on Bidwell's "land side," and his "checking in" email arrives in Ch 25 after a year and a half of silence. In the Ch 23 "Meanwhile," "Close enough to eat with" becomes a clue that fits him (he is the one Elijah phones on Sundays). The payoff is one sentence in Devendra's Ch 37 call. **Claude's call** | Ch 23 on his yes; Ch 37 on his yes (section 13) |
+| 6 | Marta's double speak | In her kind lines and her warnings only; plain about the press, Emeka and safety. First one is in: "Pick a side of that door. You're heating the whole valley." (Ch 24). **Claude's call** | As each chapter is written |
+| 7 | Edit 121, "one thing" or "one real thing" | Keep both, as they stand | No change |
+| 8 | The "dark out" call at 9:40 | It is the one night call (edit 31; `EDITS.md` says so in its own note). Not an error | No change |
+| 9 | More of Elijah's threads closed in the ending (the bet, "They ate" to Marta, a copy for Melody) | No. CT loves the ending. The bet is paid as written (Devendra cooks) | No change |
+| 10 | The 59 line flags | 1 to 5 and the Ch 23, 24 and 26 ones are fixed. Ch 27 to 36 are fixed as each chapter is written. Ch 37 to 39: verdicts in section 13 | Section 13 |
+| 11 | The counting pattern in Ch 27 to 36 | Fixed as each chapter is written (the list is in `EDITS.md`) | Ch 27 to 36 |
+| 12 | Other tics (the way, He knew, lists of three) | No sweep. Kept out of everything new | Closed |
+| 13 | The eight Ch 14 fixes, "Places to look at," the 16 scene breaks | Closed without change: "0 to 19 are done." They stay listed in `EDITS.md` if CT wants them | Closed |
+| 14 | The sentence-opening checker CT asked for | Built after Chapter 36 is logged, and run on Chapters 20 to 36 only | After Ch 36 |
+| 15 | How the next version is made, and its name | After Chapter 36 and the ending lines: a new Google Doc from make_v6.py's .docx, named for what it is ("StS final draft" and the date). Needs CT's go | After Ch 36 |
+| 16 | Lou's bare "man" | "my man" when he is talking to Elijah (CT's rule from edit 191). Ch 26 done; Ch 30 (twice) and Ch 35 as written | Ch 30, 35 |
+| 17 | Whose doing the late payment is | Grace keeps it from him for a week (the coffee can). He thinks the miss is his doing because of Denny. **Claude's call**, from CT's ask | Ch 32 |
+
+### 12.2 Loose ends, each with its ending
+
+| Thread | Where it stood | How it closes |
+|---|---|---|
+| The board secret | Confessed at the bell (Ch 22) | Closed |
+| The six households and the Ochoas' loss | Named and priced (Ch 22, 23) | The Ochoas leave (Ch 34) |
+| The trust's clock | Planted (Ch 23) | One late payment (Ch 32). It never goes to three; Bidwell waits |
+| Reuben's question, "why I had to go and look" | Asked (Ch 29) | Answered at the table (Ch 33) |
+| The welder gap | UNRESOLVED on the board (Ch 29) | Marta names what could close it (Ch 29); "It became the steel" (Ch 37, as written) |
+| Denny's burnout | Named and dropped (Ch 29) | He leaves and comes back (Ch 31, 33) |
+| The county's food study | Due in June and never heard of again (Ch 30) | It comes back "revisit next cycle" the day of the missed stop (Ch 32). December stands |
+| "Go to the next meeting, Curtis" | Irene's order (Ch 30) | He goes (Ch 32) |
+| Mrs. Delgado | First named at the fire | Seen (Ch 26), missed (Ch 32), named at the fire (Ch 36) |
+| The three a.m. address taking every file | Priya's margin note (Ch 29) | "Log it" (Ch 29); "I checked that file" (Ch 38, as written) |
+| Bidwell's "somebody" | Planted twice, never paid | Devendra (12.1, item 5) |
+| David's "Saw the stove" | Unanswered (Ch 27, 31) | Ch 39, as written |
+| The uncashed checks | Ch 26 | He offers them in the April fight and Grace shows him why that pays nothing (Ch 32); Ch 39, as written |
+| The pay Grace promised | Ch 15, 16, 25 | Voted at half (Ch 26) |
+| The hose in the glove box | Ch 19, 23, 25 | "Keep it." (Ch 37, as written) |
+| Frank's chart | Ch 25 | One look at it while he sits on the five signs (Ch 32) |
+| The bet with Devendra | Ch 1, 25 | Ch 37 and 39, as written |
+| Ma | Calls, the letter, the fall, "She's got company" | He means to go at Thanksgiving 2026 and mails a letter (Ch 27); no visit before Ch 37 |
+| "They ate" | Marta's order (Ch 31) | David answers it (Ch 39). He never tells Marta on the page. Left as it is |
+| Melody; Ruby's number | Ch 31, 37 | "one number blocked," "Don't" (as written) |
+| The Telecaster | In the pawn window (Ch 25) | His text to Wes (Ch 39, as written) |
+
+### 12.3 Continuity
+Three readers audited the text with edits 1 to 204 (every quote grep-checked). Fixed in place on 26 Nov, in edits 198
+to 204, none of it in the Doc:
+
+- **When the boxes shipped.** Chapter 19 said June; Chapters 20 to 22 had them running in May. Chapter 19 now says
+  "The forty units shipped in May." Lou "had ridden along with Denny on six of the deliveries" (Chapter 19 has Denny
+  delivering). Most of the forty greenhouses are two valleys over; the Ochoas' is up the co-op's road.
+- **June, not July.** The plugs cooked the last week of June. Chapter 25 said July twice.
+- **The boxes don't talk to anything** (Ch 19). So in Chapter 22 he wants the logs Tyler pulled off the boxes by hand.
+- **Where Ma is.** Her room is back home, ten minutes from the farm, and Ray's service is at St. Rose. Two new lines
+  had put both in Santa Rosa.
+- **The letter scene** no longer says "Sunday nights" (Tyler only works Saturdays, and they drive to town) or "paid
+  through March" (she is still in the room in 2027). Grace no longer comes in "without knocking."
+- **Tyler at Kowalski's** asks if there is anything at the shed "that pays." He is already at the shed every week.
+- **The hose clamp** is the last one on its hook (they bought one from an aisle described as empty).
+- **Tyler's age.** Nineteen in fall 2025, so that he is twenty-one in Chapter 37 as written.
+- **Eight months**, not nine, of watching the store die (March to November).
+- **Frank's paid job** starts "once the library could carry one"; the land had taken the surplus.
+- **The amp** made sound in 2023 (Ch 5), so the October night is "the first music out of that amp in three years."
+- **His first month**, not his first week, for the frogs and for her story about her dad's porch.
+- **Marta's scene, a year on.** He asks "Does Grace have… someone? Now, I mean." and Marta answers "She kissed you at
+  that pond a year ago, spreadsheet, and you're asking me." The old exchange forgot the kiss.
+- **Curtis drives the route** (Appendix, Ch 29, 30). A new line had Grace running it alone.
+- **"She had knocked once"** (Ch 37) now has its knock: "Grace had knocked once, at the pond. By her own rule the answer
+  was his to give, and she didn't knock again." (Ch 26).
+- **Patricia called Grace "in tears"** on day nine, so Tyler's "you called Grace crying" (Ch 38) holds.
+- **The pay vote is in July 2026**, so "for sixteen months" (Ch 39) counts out.
+- Small: "a year and a half" of messages in his phone (not three years); eleven boxes "have no shade on them"; "Within
+  days" for "By Saturday"; the Crucible named in "For five weeks nothing went wrong"; the duffel under the bed.
+
+Checked and holding, no change:
+- "he had never reached for hers" (Ch 36): he has taken her hands and held her hand, and has never reached for her
+  arm, which is her gesture. Nothing new has him do it.
+- Ma's pot: Grace carries it back to the kitchen trailer in Chapter 22, and he takes it from there in Chapter 37.
+- "She's got company" on a weekday in June 2026: David, called by the home. The visitor book in Chapter 37 only shows
+  Elijah the Sundays.
+- "I told you that at your stove" (Ch 36): the story, told in Chapter 24.
+- "race her to the rail" (Ch 38): set up in Chapter 22.
+
+To carry into Chapters 27 to 36 as they are written (all from the readers):
+- **Households.** Nineteen through Chapter 31. A machinist from Ohio, the one who fixed the connector label in
+  Chapter 27, moves up with his family in 2027: twenty. The Ochoas leave: nineteen at Thanksgiving, as the ending
+  says. He is one of "the two newest households" (Ch 38); the other joins on the 2026 roster (Ch 29).
+- **People.** "We have twenty-two" at the meeting (Ch 34). After the Ochoas leave, "Twenty people did the work of
+  forty" (Ch 36).
+- **Ch 27:** Grace's "Every winter there's somebody on that route we don't get to in time" becomes somebody they
+  don't get onto the route in time, so April's missed stop is the first box that was packed and didn't reach its door.
+  The pledge says plainly that the co-op signed it and that it covers machines handling the food, so the arms break it
+  and the field rover doesn't. One phrase places Grace's room in Ardell (Ch 37 needs it).
+- **Ch 28:** the three days, and "the north houses" as a group, become one night and the Ochoas' house.
+- **Ch 29:** Denny argues (the old line has him start and stop).
+- **Ch 32:** Denny out of the juniper (Frank cuts the base). "Halve it" is explained once in the book, in Chapter 30.
+  One night Grace puts the truck song on, low (Ch 37: "the way she had").
+- **Ch 33:** Patricia "didn't come on Fridays," yet she is at three Friday tables: the line goes. Irene's bottom step,
+  "loose since February," gets fixed by Elijah with a hammer (Ch 36), the one item on Lou's list a person can do.
+- **Ch 34:** "A man from the north houses" and "his wife" become Hector and Lupe. Curtis doesn't repeat "laptop people."
+- **Ch 36:** the route boxes are packed on Wednesday for the next Tuesday (festival week).
+- Day names that only mark time: 24 in Chapters 27 to 36, cut as each chapter is written.
+
+## 13. Waiting on CT's yes (the ending he loves, and two of his own scenes)
+
+Shown here so nothing is hidden. Nothing below is logged.
+
+1. **Ch 38, the last gantry.** "the gantry stood parked over bed four with its arm tucked up" to "the rover stood
+   parked over bed four with its arm tucked up."
+2. **Ch 37, Devendra's call** (only if Devendra is the "somebody"). After "I've been trying to say it for three
+   years.": "And two years ago somebody upstairs asked me to check in on you. I'd have called anyway."
+3. **Ch 23, Bidwell's reader** (the same question). "There is somebody near him. Close enough to eat with." to "We have
+   somebody he'll take a call from." (Devendra's "checking in" email comes that fall, in Chapter 25.)
+4. **Ch 37, a mirrored line Claude put in with edit 178.** "It should have felt like traveling light. It felt like he
+   had hardly been here at all." to "It felt like he had hardly been here at all."
+5. **Ch 25, Thanksgiving** (CT's scene). After "So did I.": the next morning Curtis plugs in his reader and says
+   "Gas cap," and clicks it three times.
+6. **Appendix.** The cast gains "Hector and Lupe Ochoa grew plugs at the north houses until the fall of 2027." The
+   timeline's 2025 line gains the heat in June, and three lines are added: "Fall 2025. The pond. He starts for home at
+   Thanksgiving and turns around." "October 2026. The amp on the tailgate." "February to July 2027. Denny is gone."
+7. **The line flags in Chapters 37 to 39.** Claude's verdicts:
+   - Change: "so the sale would close before theirs did" to "before the bank's did." "the way she had looked at Marta
+     when she needed a yes" to "the way she always had when she needed a yes." "its version of what could be considered
+     a wink" to "its version of a wink." "Marta had heard it as a murder" to "Marta had told him he told it like a
+     murder." "He could leave one number blocked" to "He could leave Melody's number blocked." "Elijah donned his
+     jacket" to "Elijah put his jacket on."
+   - Leave: "race her to the rail," "Not for good," "a glass went down," "a hinge and a gatepost."

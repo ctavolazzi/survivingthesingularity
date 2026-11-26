@@ -14,7 +14,7 @@ Book now:
 Change to:
 
 > The containers came up the hill on a tilt-bed in the last week of August, one at a time. The co-op had paid for
-> them in April, before the plugs cooked.
+> them in the spring, before the plugs cooked.
 
 ## 2
 
@@ -104,7 +104,8 @@ Change to:
 > He went with her. The pond was down past the pump house, black and still, with the shouse's one lit window lying
 > on top of it. Crickets were going in the dry grass.
 >
-> "My first week here, I sat out by this pond and thought, this is a pretty good bleed-out spot," he said.
+> "My first month here, I lay up there listening to this pond and thought, this is a pretty good bleed-out spot," he
+> said.
 >
 > Grace turned all the way around to look at him.
 >
@@ -175,10 +176,10 @@ Change to:
 
 ## Facts Claude invented
 
-- The containers were paid for in April.
+- The containers were paid for in the spring.
 - Hector comes to the first fire for half an hour; Lupe doesn't come.
 - The pond is down past the pump house; cattails; crickets in late September.
-- Elijah sat out by the pond his first week (Chapter 17 has him "listening to the frogs at the pond nearby").
+- Elijah lay in the room over the pump house his first month "listening to the frogs at the pond nearby" (Chapter 17).
 
 ## Checked
 

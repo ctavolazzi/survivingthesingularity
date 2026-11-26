@@ -239,11 +239,12 @@ Book now:
 Change to:
 
 > Grace had brought his pay to the table the Friday after Thanksgiving, the way she'd said she would. The surplus
-> had gone into the land, so it waited for a vote until summer, more than a year after he came.
+> had gone into the land, so it waited for a vote until July, more than a year after he came.
 >
 > All that spring and summer, at the Friday table, the two of them kept catching each other looking and looking
-> away. Denny never noticed a thing. Everybody else did. Lou would glance down the table at Marta, and Marta would
-> go back to her plate.
+> away. Everybody saw it but Denny. Lou would glance down the table at Marta, and Marta would go back to her plate.
+>
+> Grace had knocked once, at the pond. By her own rule the answer was his to give, and she didn't knock again.
 >
 > Grace told him about the vote herself, one morning in his kitchen, over coffee.
 
@@ -305,10 +306,10 @@ Change to:
 > years she never talked about. "So she knows exactly what a guy with a guitar case looks like when he's looking at
 > a girl," Grace said. "And she's usually right. Don't take it personally."
 >
-> Half the Ochoas' fall starts hadn't taken that year, the harvest was short of hands, and Grace ran the route by
-> herself most days. Elijah rode it with her once. At the Coyote Flat stop a woman in house slippers named Mrs.
-> Delgado met the truck at her gate and asked Grace to carry the box in, because of her hands. Grace set it on the
-> counter and moved the insulin back to the door of the fridge, where it went.
+> Half the Ochoas' fall starts hadn't taken that year, and the harvest was short of hands. Elijah rode the route
+> with Grace and Curtis once. At the Coyote Flat stop a woman in house slippers named Mrs. Delgado met the truck at
+> her gate and asked Grace to carry the box in, because of her hands. Grace set it on the counter and moved the
+> insulin back to the door of the fridge, where it went.
 >
 > At dinner one night Grace said she wasn't going to her festival this year, and that it was fine, and she left
 > before the pie.
@@ -318,13 +319,14 @@ Change to:
 >
 > She wiped her hands on a rag and stood next to him and looked too.
 >
-> "So," he said, to the gravel. "Does Grace have… someone?"
+> "So," he said, to the gravel. "Does Grace have… someone? Now, I mean."
 >
 > "What do you mean, someone?" Marta said. "Like a boyfriend?"
 >
 > "Or a girlfriend. Whatever."
 >
-> Marta turned and looked at him. "Oh," she said. "You still like her."
+> Marta turned and looked at him. "She kissed you at that pond a year ago, spreadsheet, and you're asking me." She
+> shook her head. "Oh. You still like her."
 >
 > "I," he said. "She's. She's very intelligent."
 >
@@ -352,7 +354,7 @@ Change to:
 >
 > The amp had been sitting by the shouse door since he moved in, still under its blanket. The night after that he
 > carried it out to the Ranger, drove it down past the pump house to the pond and set it on the tailgate, facing the
-> water. He remembered what she had told him the first week, about her dad and a porch.
+> water. He remembered what she had told him his first month, about her dad and a porch.
 >
 > Then he walked up to the kitchen trailer and knocked.
 >
@@ -403,8 +405,8 @@ Change to:
 > parking garage, and he told her so. He played her Gillian Welch, and she said it sounded like being sad on a porch
 > on purpose, and then asked him to play it again. Neither of them moved off the blanket.
 >
-> It was the first sound out of that amp since before the pandemic. It wasn't his music, and he found he didn't
-> mind. He found he didn't mind at all.
+> It was the first music out of that amp in three years. It wasn't his music, and he found he didn't mind. He found
+> he didn't mind at all.
 >
 > When the songs ran out he turned onto his elbow. She was already looking at him. He kissed her.
 >
@@ -468,6 +470,16 @@ Book now:
 Change to:
 
 > She smiled at the rover, and then she didn't.
+
+## 24
+
+Book now:
+
+> Patricia called Grace on day nine. Her grant reports
+
+Change to:
+
+> Patricia called Grace on day nine, in tears. Her grant reports
 
 ## Whose words
 

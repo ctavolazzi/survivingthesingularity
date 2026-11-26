@@ -1058,6 +1058,10 @@ The mailbox leaned on its post at the end of the fence, where the boards gave ou
 "What?" Elijah said.
 "Department of Veterans Affairs." She shut the little door. Neither of them said anything until the grange.
 Some nights he drove out and looked at the barn from the road. He couldn't have told you what for."""),
+(198, "Elijah laid the chart on the worn wood and confessed to it. Nine months, the distributor,", "Elijah laid the chart on the worn wood and confessed to it. Eight months, the distributor,"),
+(198, "the nine visible months of it.", "the eight visible months of it."),
+(199, "Those boxes go out in June either way.", "Those boxes go out in May either way."),
+(199, "the mainstream devices we're starting to see come out, Elijah.", "the mainstream devices we're starting to see come out, spreadsheet."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -4,7 +4,8 @@ Written 26 Nov 2026, eighth logging chat, at CT's request ("a reference guide fo
 whatever else you need"). It is the index to everything else, not a copy of it. When a rule here and a rule in a
 linked file disagree, CT's words in the chat win, then the linked file, then this one.
 
-The three endgame files: `GOALS.md` (what done is), `TODO.md` (what is next), `REFERENCE.md` (this file, how).
+The three endgame files: `GOALS.md` (what done is), `TODO.md` (what is next), `REFERENCE.md` (this file, how). Beside
+them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the structure and the gate for the next build).
 
 ## 1. Start of a session (in this order)
 
@@ -34,6 +35,8 @@ The three endgame files: `GOALS.md` (what done is), `TODO.md` (what is next), `R
 | Arcs, quarrels, the chain of cause | the plan, section 10 |
 | Every open question and its decision | the plan, section 12; anything still CT's is in `TODO.md`, section 1 |
 | Ending lines waiting on CT | the plan, section 13 |
+| The evaluation of the whole story | `STORY-REPORT-2026-11-26.md` |
+| The next build: the book in order, what it is made of, its gate | `NEXT-BUILD.md` |
 | What the ending depends on | the plan, section 7 |
 | How CT writes, each character's voice | `WRITING-INSTRUCTIONS.md`, sections 5 and 12 |
 | Character notes | `characters/<name>/` (gathered by `manuscript/tools/book.py cast`) |
@@ -149,6 +152,8 @@ for what it is ("v7" is taken by a frozen side copy).
 | `python3 manuscript/tools/edits-v6/find_in_book.py OUT/v6.txt chapters` | Chapter list with line numbers and word counts |
 | `... find_in_book.py OUT/v6.txt find "regex" ["regex"] [--ch 27-36]` | Every line matching all the regexes, with its chapter |
 | `... find_in_book.py OUT/v6.txt claims FILE.json` | Evidence for each claim in a list |
+| `python3 manuscript/tools/edits-v6/story_report.py OUT/v6.txt` | Measures the story: length and talk by chapter, who is on the page, where each thread opens and closes, tics, smells, scenes with only women, long speeches, numbers that must agree |
+| `python3 manuscript/tools/edits-v6/build_gate.py OUT/v6.txt [--todo TODO.md]` | What must be gone and what must be there before the next build (`build-gate.json`), and the unticked boxes |
 | `python3 manuscript/tools/book.py cast` | Rebuilds the character folders |
 | `node scripts/sts-bridge.mjs status` | Which Doc is CURRENT |
 
@@ -162,3 +167,6 @@ for what it is ("v7" is taken by a frozen side copy).
 - Day names, "the way", "He knew", "Then he" chains and mirrored lines creep back in; count them before logging.
 - A plan written from grepped lines missed facts the chapters had (Ray quit drinking, Chapter 5). Read the chapter.
 - Readers are good at sweeps and bad at judgment calls about CT's taste. Grep every quote they return.
+- Count words from `v6.txt` with `story_report.py`, never from a file with line numbers in it (the first targets
+  were 1,500 words off for that reason).
+- An edit that is in the Doc is never changed in place. Add a new row that finds its words and replaces them.

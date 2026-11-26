@@ -209,7 +209,7 @@ Edit 57 was never used.
 | 196 | Ch 7 | not in the Doc | Mr. Ostrander had taught him Spanish for three years |
 | 197 | Ch 0 to 39 | PARTIAL | He'd underlined it twice and gone back to nodding. |
 | 198 | Ch 25, 26 | not in the Doc | Most weeks he wrote to Ma on a yellow pad |
-| 199 | Ch 20 | not in the Doc | The forty units shipped in May. |
+| 199 | Ch 19, 20 | not in the Doc | Those boxes go out in May either way. |
 | 200 | Ch 21 | not in the Doc | under a year and a half of everything else |
 | 201 | Ch 22 | PARTIAL | At St. Rose they would be standing up for the first hymn. |
 | 202 | Ch 23 | not in the Doc | He saw the pattern all at once, on the third evening. |

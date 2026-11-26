@@ -36,19 +36,37 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 ## 2. Chapters (one at a time; each is one edit with several ops rows)
 
+Words are measured by `story_report.py` (27 Nov correction: the first table here counted line numbers and a
+"Meanwhile"; the ten chapters hold 22,590 words, not 24,084). Targets total 22,050.
+
 | Box | Chapter | Edit | Words now | Target | What it has to do (plan, section 11) |
 |---|---|---|---|---|---|
-| [ ] | 27 Blueprints of a Wall | 206 | 2,135 | 2,100 | farmers market line; Grace on the $49 knockoff; the pledge with the Ochoas' greenhouse behind it; Thanksgiving 2026 letter to Ma; "Every winter there's somebody" fixed; Grace's room in Ardell placed |
-| [ ] | 28 Hello, Ridge | 207 | 1,168 | 1,150 | overnight, not three days; power when it counts; the Ochoas' house drops off the map; Lupe on the radio |
-| [ ] | 29 Ink and Pencil | 208 | 1,886 | 1,950 | Denny argues ("I'm not burned out. I'm unpaid."); Lupe: "Somebody quits"; Tyler says yes; Priya logs the 3 a.m. address; the welder gap |
-| [ ] | 30 Item Seven | 209 | 2,144 | 2,100 | Denny films his last one; Lou's "my man" |
-| [ ] | 31 Six Eggs on the Floor | 210 | 3,637 | 3,550 | Denny's goodbye on his porch; "Nothing that mattered" on the page |
-| [ ] | 32 The Rubber Band | 211 | 2,178 | 2,750 | the late payment, the missed stop, the April quarrel, frozen yogurt, the coffee can on the table (plan, 10.3); Denny out of the juniper; Frank's chart |
-| [ ] | 33 A Poem About Tide Pools | 212 | 4,453 | 3,750 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
-| [ ] | 34 A Guy With Arms | 213 | 2,411 | 2,500 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |
-| [ ] | 35 Two Walnuts in One Fist | 214 | 1,779 | 1,400 | night scene cut to the walnut, "The man who refuses to launch it" and ALC; "They can. They just won't." fixed |
-| [ ] | 36 This Is the Gate | 215 | 2,293 | 2,300 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
+| [ ] | 27 Blueprints of a Wall | 206 | 2,046 | 2,010 | farmers market line; Grace on the $49 knockoff; the pledge with the Ochoas' greenhouse behind it; Thanksgiving 2026 letter to Ma; "Every winter there's somebody" fixed; Grace's room in Ardell placed |
+| [ ] | 28 Hello, Ridge | 207 | 1,125 | 1,105 | overnight, not three days; power when it counts; the Ochoas' house drops off the map; Lupe on the radio |
+| [ ] | 29 Ink and Pencil | 208 | 1,821 | 1,885 | Denny argues ("I'm not burned out. I'm unpaid."); Lupe: "Somebody quits"; Tyler says yes; Priya logs the 3 a.m. address; the welder gap |
+| [ ] | 30 Item Seven | 209 | 2,074 | 2,030 | Denny films his last one; Lou's "my man" |
+| [ ] | 31 Six Eggs on the Floor | 210 | 2,996 | 2,910 | Denny's goodbye on his porch; "Nothing that mattered" on the page |
+| [ ] | 32 The Rubber Band | 211 | 2,100 | 2,670 | the late payment, the missed stop, the April quarrel, frozen yogurt, the coffee can on the table (plan, 10.3); Denny out of the juniper; Frank's chart |
+| [ ] | 33 A Poem About Tide Pools | 212 | 4,255 | 3,550 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
+| [ ] | 34 A Guy With Arms | 213 | 2,320 | 2,410 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |
+| [ ] | 35 Two Walnuts in One Fist | 214 | 1,686 | 1,305 | night scene cut to the walnut, "The man who refuses to launch it" and ALC; "They can. They just won't." fixed |
+| [ ] | 36 This Is the Gate | 215 | 2,167 | 2,175 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
 | [ ] | 24, a correction to edit 203 | 203 | | | at the stove: her father's drinking and her festival years; his pause about festival girls (after CT rules on "he left") |
+
+## 2a. From the story report (`STORY-REPORT-2026-11-26.md`, section 9)
+
+No decision needed (corrections to chapters already rewritten):
+- [ ] Ch 22: play the board confession (his words, Marta's answer, Tyler cleared in front of Patricia).
+- [ ] Ch 23 or 24: Elijah carries the new board to the Ochoas; Hector and Lupe each get a line.
+- [ ] Ch 26: the year's obstacle, said once. Ma's fall stays open overnight.
+- [ ] Praether twice more before Chapter 34 (he mows there).
+Need CT's yes:
+- [ ] Ch 25: one line of logic at the truck stop (his scene).
+- [ ] Split Chapter 26 at the October night (a new chapter and its title).
+- [ ] Ch 13: the sale of the farm as a scene.
+- [ ] The seven continuity items in the report, section 6 (Ch 5, 11, 13, 15, 19, 26 and the ending).
+- [ ] Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate.
+- [ ] The name of the next build, and "OLD:" on the frozen v7 Doc (`NEXT-BUILD.md`, section 1).
 
 ## 3. After Chapter 36
 
@@ -60,7 +78,8 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
       CT, since Chapters 0 to 19 are done.
 - [ ] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only.
 - [ ] A last readers' pass over the whole book for continuity, every quote grep-checked; fix what it finds.
-- [ ] Words: Chapters 27 to 36 at or under 24,084 in total.
+- [ ] Words: Chapters 27 to 36 at or under 22,590 in total.
+- [ ] `build_gate.py OUT/v6.txt --todo manuscript/novel/TODO.md` says READY.
 - [ ] Ask CT how the final copy is made (a new Doc from make_v6.py's .docx, or the edits as suggestions in the v6
       Doc), then do it on his go and update the bridge map.
 - [ ] The cover credit on the copyright page (`copyright_page` in `publication/novel/build/book.json`), his words.
@@ -76,6 +95,7 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 ## Done
 
 - 26 Nov, eighth chat: Chapter 17's Praether scene (edit 205).
+- 26 Nov, eighth chat: the story report, `NEXT-BUILD.md`, `story_report.py` and `build_gate.py`.
 - 26 Nov, eighth chat: Chapters 23 (edit 202), 24 (203) and 26 (204) rewritten and logged; continuity fixes to edits
   198 to 204 from three readers' audit; the endgame plan (plan, sections 10 to 13); `find_in_book.py`; the cover credit
   noted; these three files.

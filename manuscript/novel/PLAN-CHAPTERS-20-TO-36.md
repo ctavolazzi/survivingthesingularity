@@ -919,8 +919,9 @@ Afghanistan) are the most recent, and would make him a career sergeant in his mi
 
 ## 11. Chapter by chapter, 27 to 36
 
-Words now, from make_v6.py's v6.txt with edits 1 to 204. The ten chapters total 24,084 words. The target is to finish
-at or under that.
+Words now, from make_v6.py's v6.txt with edits 1 to 204. **Correction, later the same day:** these counts included line
+numbers and a "Meanwhile." Measured by `story_report.py` the ten chapters hold 22,590 words, and the targets, scaled the
+same way, total 22,050; the corrected figures are the table in `TODO.md`.
 
 ### Chapter 24, one addition (CT, section 10.4)
 - At the stove, Grace tells him about her father's drinking and her festival years. He has dated festival girls, and

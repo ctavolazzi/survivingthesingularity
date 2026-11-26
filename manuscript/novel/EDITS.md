@@ -3360,6 +3360,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+Corrected 26 Nov (eighth chat), after the evaluation in `STORY-REPORT-2026-11-26.md`, as new rows under edits 198 and 199
+(the old words are in the v6 Doc): Lou's "Those boxes go out in June either way" is "in May" (Ch 19); Marta's "starting
+to see come out, Elijah." is "spreadsheet" (Ch 19; Chapter 37 says "She had never called him that, not once"); "Nine
+months" and "the nine visible months" at Frank's counter are eight (Ch 25).
+
 205. **Chapter 17: the arms go to Richard Praether's.** CT, 26 Nov (his words in `PLAN-CHAPTERS-20-TO-36.md`, section
      10.5): Elijah wouldn't trust the farm with the arms in his first week; a lead from Tyler; "a weird old man" whose
      yard is "a dump"; "Beware the military!"; a veteran with PTSD, shown by the VA letter Grace finds by the mailbox;

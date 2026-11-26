@@ -229,7 +229,8 @@ Open for CT (ask only when the chapter needs it; he has said "Stop hedging ... j
 - The eight Chapter 14 sentence-opening fixes, "Places to look at", the 16 scene breaks, the sentence-opening checker.
 - Cover credit (CT, 26 Nov, for "the book proper"): his words are "cover credit : me, the author, sketches and
   Midjourney", cheeky and without a name. It is not in the build yet. The build's copyright page is
-  `copyright_page` in `publication/novel/build/book.json`; where the line goes is not decided.
+  `copyright_page` in `publication/novel/build/book.json`. CT: inside the book, on the credits page where other
+  books have it (the copyright page), not on the outside of the cover. Add the line when the final build is made.
 - How to make the next version, and what to call it ("v7" is taken by a frozen side copy).
 - Chapter 26 owes: the rover scene, Ma's fall in June, the October night at the pond (Elijah's move; "wearing his
   shirt and drinking coffee" the morning after), a line where the pay vote is brought because he said yes.

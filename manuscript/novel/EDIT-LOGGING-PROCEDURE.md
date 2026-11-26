@@ -175,6 +175,9 @@ the third "a little too much". What the one he took does:
   Like you're seeding, we're planting ideas, we're writing, we're doing the work of creating a story. We're not just
   laying out a sequence of events. We are writing." A short line that points at what's coming stays; cutting tics must
   not cut the story's setups.
+  Then: "But we can combine them together, right? It was still a cool spring. It hadn't been very hot yet ... you
+  know what to do, so just do it." When a correction cuts something, keep what was good in the old line and build on
+  it. Write the first draft as the craft, not as the safe version.
 - Don't bring back a problem already fixed. The mirrored contrast line ("It's not X. It's Y."; "They can. They just
   won't."; Claude's own "He's on this side of the fence. His friends aren't.", 26 Nov) was edited out in 119 and 174.
   CT: "I don't want you to introduce like previous problems that we've already overcome ... We've already established

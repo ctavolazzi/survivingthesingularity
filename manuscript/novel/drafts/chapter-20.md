@@ -21,12 +21,12 @@ Change to (one paragraph between them):
 > Out in forty greenhouses two valleys over, the co-op's boxes were opening vents on their own every warm afternoon.
 > Lou had driven six of them out himself and come home with a photo of each one bolted to its post, which he showed
 > people whether they asked or not. The board inside every one of them was the one Elijah had let an AI lay out at
-> midnight, and he hadn't told anybody. It hadn't been very hot yet.
+> midnight, and he hadn't told anybody. It was still a cool spring. It hadn't been very hot yet.
 >
 > At noon they sat on the tailgate of Lou's truck and ate Grace's sandwiches ...
 
 Why: the heat failure in Chapter 21 needs the reader to know the boxes are out, that Lou is proud of them, and that
-the board is the secret from Chapter 19. "It hadn't been very hot yet." is CT's line (26 Nov: "This is
+the board is the secret from Chapter 19. "It was still a cool spring. It hadn't been very hot yet." is CT's (both lines, tied together) (26 Nov: "This is
 foreshadowing, right? ... We're not just laying out a sequence of events. We are writing."). Draft 1 crammed all of it into one sentence and ended on a joke ("because
 it was May"); CT: "What the fuck is that, bro?" Now two plain sentences, and the heat is left for Chapter 21.
 

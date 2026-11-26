@@ -357,6 +357,13 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (153, "They took her to Santa Rosa.\"\nHe didn't remember the drive.", "They took her to Santa Rosa.\"\nHe left immediately. He didn't remember the drive."),
 # 154, Ch 13
 (154, "\nThe pot was on the stove.\nIt was not in the rack.", "\nWhen he got to the house, he saw what had happened. There was a pot on the stove.\nIt was not in the rack."),
+# 155, Ch 7
+(155, "\"Wes doing okay?\"\n\"I don't know. He's not really answering me.\"",
+"\"Hey, you heard from the guys?\"\n\"No. I haven't heard from a lot of people, actually. Wes isn't really answering me.\""),
+(155, "\"I'm serious, man. Why don't you just stick to music? You were good. People loved you up there. Stay in your lane.\"\n\"Bro. What do you mean?\"\nDavid didn't say what he meant. He let his eyes drop to his beer and kept them there.",
+"\"I'm serious, dude. You gotta stop. Why don't you just stick to music? You were good. People loved you up there. Stay in your lane.\"\n\"I mean, as much as I'd like to, we're living through historic times, Dave. This is an unprecedented moment, and I kind of helped create it.\"\nDavid didn't say anything to that. He let his eyes drop to his beer and kept them there."),
+(155, "\"It's not like that.\"\n\"Okay.\"\n\"Dave. It's not.\"\n\"Okay, Mad.\"\nThen they sat there",
+"\"I'm fine,\" Elijah said. \"I just know things, and I'm trying to figure out how to tell people what I know.\"\n\"People don't care what you know, man. They care how you make them feel. You should know that from all your years playing music with all of us.\"\nElijah thought about it for a second. \"I appreciate that, man. But this is just too important.\"\nDavid made a face. \"All right,\" he said. \"Well, can I get you anything else?\"\nThen they sat there"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -1676,6 +1676,84 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Then "It was not in the rack. It was on the back burner..." as before. Logged only; not in the v6 Doc yet.
 
+155. **Chapter 7, David and Elijah at the Bear Flag: "People don't care what you know."** CT (26 Nov): "the breakdown
+     between him and his friends. Like, he thinks he's trying to help, but it's obvious that he's making people
+     uncomfortable. He's not necessarily aware of that." His beats, for "their conversation" before his mother's stroke
+     (the January beer in Chapter 7): David asks if he's heard from the guys, "No, I haven't heard from a lot of people,
+     actually"; "you're scaring the hoes, man", he laughs it off; "I'm serious, dude, like, you gotta stop"; "as much
+     as I'd like to, we're living through historic times. This is an unprecedented moment, and I kind of helped create
+     it"; David says "Elijah" to catch his attention, and Elijah is taken aback, because David calls him Mad (dictation
+     said "Matt"); "I'm worried about you, man"; "I'm fine. I just, I know things, and I'm trying to figure out how to
+     tell people what I know"; "people don't care what you know, they care how you make them feel, man. You should know
+     that from all your years playing music with all of us" (his last version of "with"/"for"); "I appreciate that,
+     man, but this is just too important"; David makes a face: "All right, well, can I get you anything else?"
+     Context from CT, NOT for the page: Elijah thinks he's helping and doesn't see that he makes people uncomfortable.
+
+     The scene already has three of these beats, so they are kept, not repeated: "Hey. You're scaring the hoes." with
+     "Elijah laughed. He thought they were back."; "'Elijah,' he said. David had not called him Elijah since they were
+     eight years old."; and "I'm worried about you, man." The new lines go in at three places [CT's lines; the joins,
+     "Wes isn't really answering me" kept from the book, "Dave", and "David didn't say anything to that" are Claude's]:
+
+     **Change 1.** Book now:
+
+     > "Wes doing okay?"
+     >
+     > "I don't know. He's not really answering me."
+
+     Change to:
+
+     > "Hey, you heard from the guys?"
+     >
+     > "No. I haven't heard from a lot of people, actually. Wes isn't really answering me."
+
+     **Change 2.** Book now:
+
+     > "I'm serious, man. Why don't you just stick to music? You were good. People loved you up there. Stay in your
+     > lane."
+     >
+     > "Bro. What do you mean?"
+     >
+     > David didn't say what he meant. He let his eyes drop to his beer and kept them there.
+
+     Change to:
+
+     > "I'm serious, dude. You gotta stop. Why don't you just stick to music? You were good. People loved you up
+     > there. Stay in your lane."
+     >
+     > "I mean, as much as I'd like to, we're living through historic times, Dave. This is an unprecedented moment,
+     > and I kind of helped create it."
+     >
+     > David didn't say anything to that. He let his eyes drop to his beer and kept them there.
+
+     **Change 3.** After David's speech ("...I'd have just wanted you to go to bed."). Book now:
+
+     > "It's not like that."
+     >
+     > "Okay."
+     >
+     > "Dave. It's not."
+     >
+     > "Okay, Mad."
+     >
+     > Then they sat there
+
+     Change to:
+
+     > "I'm fine," Elijah said. "I just know things, and I'm trying to figure out how to tell people what I know."
+     >
+     > "People don't care what you know, man. They care how you make them feel. You should know that from all your
+     > years playing music with all of us."
+     >
+     > Elijah thought about it for a second. "I appreciate that, man. But this is just too important."
+     >
+     > David made a face. "All right," he said. "Well, can I get you anything else?"
+     >
+     > Then they sat there
+
+     Cut by this: Elijah's "Bro. What do you mean?" and the "It's not like that." / "Okay." / "Dave. It's not." / "Okay,
+     Mad." exchange; CT's new lines take their places. Then "...and finished their beers." as before. Logged only; not
+     in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

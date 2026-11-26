@@ -277,6 +277,13 @@ turned into cause, and the reading cut from the night scene, give some back.
 4. Who puts the question to Elijah in the crew's argument: Priya, Lou or Curtis.
 5. Where the secret comes out: Chapter 22 or Chapter 32 (section 6). Not needed for the rework.
 
+**Settled 26 Nov.** CT asked Claude to answer these with its best reasoning, then: "OK." Nothing in the edits changes.
+1. Go: done (edits 131 to 137).
+2. Chapter 19 stays with Elijah. A scene at the car would make the storyteller give Patricia away or visibly hold back.
+3. Tyler's line stays as logged in edit 135: "You could've just told them." It echoes his Ch 38 line to Patricia.
+4. Curtis puts the question to Elijah (edit 135). He is the one who distrusts the machines; it leads into his mood in Ch 20.
+5. The secret comes out in Chapter 22, at the bell (edit 137), so his first confession is a whole one.
+
 #### 10. On go
 
 Rework 131, 132, 133, 135 and 136 in place, one at a time, each with "Book now" and "Change to," its check row

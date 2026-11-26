@@ -3362,6 +3362,27 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+226. **Chapter 26: why Elijah waits after the pond.** CT (26 Nov, tenth chat), dictated, for "the reason why Elijah
+     waits so long in between when Grace kisses him to keep him from leaving the farm and when they actually decide to
+     date". Where: Chapter 26, after "By her own rule the answer was his to give, and she didn't knock again.", in
+     place of Claude's "His side of it he never said out loud." CT's, word for word (the last version where he
+     restated a line): "Elijah didn't quite know why he didn't go for it right away. Maybe it was a combination of his
+     prior dating history and his steadfast commitment to not rocking the boat any more than he needed to, but he felt
+     like hooking up with Grace would be, at that point in time, a bad call. Even though she'd made it clearer than an
+     alpine day that she was into him, he ultimately decided not to jeopardize his room and board by getting
+     entangled. It was a decision he truly meant to stand by." / (the pay sentences already there, now opening "The
+     pay was part of it too.", Claude's five words) / "But alas, fate has a way of wearing you down. And time had a
+     different story to tell. Watching Grace work the land would do that to just about anyone."
+     **Held, not logged:** "It took under 6 months for him to change his mind." CT made it conditional ("if there's
+     nothing mechanically in the way during that time"). There is: the pond kiss is the second week of November 2025
+     (Ch 25) and the amp night is October 2026, eleven months on, and that month is fixed by Grace's festival ("every
+     October since she was nineteen"), Marta's "She kissed you at that pond a year ago", the June and July scenes of
+     Chapter 26 that are written with the two of them not yet together (Ma's fall, the pay vote), Chapter 27 opening
+     in October 2026, and the Appendix timeline. No time jump was made; Chapter 26's year stays. Asked CT whether the
+     line should say "under a year".
+     Row 204 narrowed ("His side of it he never said out loud." is gone). 128 words in, 7 out. Record: the foot of
+     `manuscript/novel/drafts/chapter-26.md`. Logged only; not in the v8 Doc yet.
+
 225. **Chapters 8 to 10: the panel goes further; Elijah says he is overwhelmed; fifty million views; Ruby's pitch.**
      CT (26 Nov, tenth chat), dictated: "do we at any point explain how overwhelmed Elijah is? ... I don't remember
      reading anything about him just saying like how overwhelmed he feels." (He doesn't: the nearest are "I feel a

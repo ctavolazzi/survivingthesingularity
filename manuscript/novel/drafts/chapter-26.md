@@ -643,3 +643,32 @@ CT's direction (plan, section 10.8): the rover is a JetAuto Pro, the cheaper and
 
   Claude's words. Sourced, not invented: the pyridostigmine bromide pills (FDA waiver, January 1991), the Khamisiyah
   demolitions (March 1991), the Defense Department's letters (1997 and 2000). Invented: that Praether was there.
+
+## Edit 226 (26 Nov, tenth chat): why Elijah waits after the pond
+
+CT's words in bold; the rest was already in the book or is Claude's.
+
+### Book now
+
+His side of it he never said out loud. If the pay vote passed, he would be the one person at that table drawing a
+check, and Grace was the one bringing it to a vote. Greedy little grub, Melody would have said, and he would have heard
+it every time Grace touched his arm.
+
+### Change to
+
+**Elijah didn't quite know why he didn't go for it right away. Maybe it was a combination of his prior dating history
+and his steadfast commitment to not rocking the boat any more than he needed to, but he felt like hooking up with Grace
+would be, at that point in time, a bad call. Even though she'd made it clearer than an alpine day that she was into
+him, he ultimately decided not to jeopardize his room and board by getting entangled. It was a decision he truly meant
+to stand by.**
+
+The pay was part of it too. If the pay vote passed, he would be the one person at that table drawing a check, and Grace
+was the one bringing it to a vote. Greedy little grub, Melody would have said, and he would have heard it every time
+Grace touched his arm.
+
+**But alas, fate has a way of wearing you down. And time had a different story to tell. Watching Grace work the land
+would do that to just about anyone.**
+
+Held for CT: "It took under 6 months for him to change his mind." The pond is November 2025 and the amp night is
+October 2026 (eleven months), fixed by the festival, Marta's "a year ago", the June and July scenes and the Appendix.
+Invented by Claude: nothing. Claude's wording: "The pay was part of it too."

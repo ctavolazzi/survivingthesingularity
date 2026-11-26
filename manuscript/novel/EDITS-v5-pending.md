@@ -1619,6 +1619,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Cut: "They also had two spares in crates that they were never going to need." Then "Elijah didn't know what one
      of those was worth..." as before. Logged only; not in the v6 Doc yet.
 
+151. **Chapter 11, Gus's offer: no scene break before "It was a good idea."** CT (26 Nov): "In the scene where he's talking
+     to Gus, there's 3 dots above. It was a good idea, Elijah could see it, but the 3 dots have been used more to
+     indicate like time passing or a big scene change. This doesn't seem like that." The stars come from an empty
+     paragraph in the Doc between Gus's "...I'll fly you out to the shop next week. Let's do it." and "It was a good
+     idea. Elijah could see it." Change: delete that empty paragraph. No words change. Logged only; not in the v6 Doc
+     yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

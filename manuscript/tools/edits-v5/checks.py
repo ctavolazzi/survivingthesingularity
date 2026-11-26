@@ -156,4 +156,5 @@ C=[
 (148,"Ch 9",["Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was going on. But from the hall, he could still hear."],["Ruby shouldered through the swinging door. It swung shut behind him."]),
 (149,"Ch 10",["He couldn't write a billionaire without wanting something, and for the life of him, he still couldn't figure out what he wanted."],["He couldn't figure out how to write to a billionaire"]),
 (150,"Ch 11",["Trent pondered for a moment.","You say you're good at carrying stuff. I got a lot of things that need to be carried, and some of them are quite expensive.","If you do the work, we got two spare robot arms with your name on 'em."],["They also had two spares in crates that they were never going to need."]),
+(151,"Ch 11",["Let's do it.\"\nIt was a good idea. Elijah could see it."],["Let's do it.\" [break] It was a good idea."]),
 ]

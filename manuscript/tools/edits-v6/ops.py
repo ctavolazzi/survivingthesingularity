@@ -351,6 +351,8 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 150, Ch 11
 (150, "Trent thought about that. They had six robot arms coming down from Oakland, a launch party in three weeks and nobody to put them in. They also had two spares in crates that they were never going to need. \"Tell you what,\" he said. \"Ride down with the arms. Help the crew bolt them in for the launch. Do that, and the two spares are yours.\"",
 "Trent pondered for a moment. They had six robot arms coming down from Oakland, a launch party in three weeks and nobody to put them in. \"Tell you what,\" he said. \"You say you're good at carrying stuff. I got a lot of things that need to be carried, and some of them are quite expensive. Ride down with the arms. Help the crew bolt them in for the launch. If you do the work, we got two spare robot arms with your name on 'em.\""),
+# 151, Ch 11: the empty paragraph (scene break) inside Gus's offer
+(151, "Let's do it.\"\n\nIt was a good idea. Elijah could see it.", "Let's do it.\"\nIt was a good idea. Elijah could see it."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

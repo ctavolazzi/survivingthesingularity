@@ -1,4 +1,4 @@
-# Chapter 20: The Bottom of the Column (draft 1, 26 Nov)
+# Chapter 20: The Bottom of the Column (draft 3, 26 Nov)
 
 A draft for CT, from `PLAN-CHAPTERS-20-TO-36.md`. **Nothing here is logged.** The chapter stays as it is except for
 three changes. CT's words would be in **bold**; there are none new in this chapter. Everything under "Change to" that
@@ -20,8 +20,8 @@ Change to (one paragraph between them):
 >
 > Out in forty greenhouses two valleys over, the co-op's boxes were opening vents on their own every warm afternoon.
 > Lou had driven six of them out himself and come home with a photo of each one bolted to its post, which he showed
-> people whether they asked or not. Inside every one was the board Elijah had let an AI lay out at midnight and told
-> nobody about. It hadn't been hot yet.
+> people whether they asked or not. The board inside every one of them was the one Elijah had let an AI lay out at
+> midnight, and he hadn't told anybody. It was still a cool spring.
 >
 > At noon they sat on the tailgate of Lou's truck and ate Grace's sandwiches ...
 
@@ -50,7 +50,7 @@ Change to:
 > "A place in Santa Rosa with a rose garden. I call Sundays." Elijah hadn't planned on the rest of it. "Mostly she asks
 > for somebody named Barry."
 >
-> "Barry," Lou said, the way he'd say the name of a seed he meant to look up.
+> "Huh," Lou said. "Barry."
 >
 > It was the best explanation of anything he'd gotten since he came north ...
 
@@ -73,7 +73,8 @@ Why: the reader had to work out who "somebody" was. Same joke, said straight.
 
 ## Checked
 
-- Openings in the new lines vary (Out in, Lou had, Inside every one, "Where's she now?", A place, "Barry,"). No counting, no
-  "Then he," no mirrored lines.
-- "The way he'd say the name of a seed he meant to look up" is one "the way" comparison, in Lou's trade.
+- Draft 3, checked line by line against "Writing a beat for CT" in the procedure file: one idea per sentence; openings
+  by what the sentence is about (Out in, Lou had, The board, "Where's she now?", A place, "Huh,"); no "the way"
+  comparison (the book has 76); no inversion; no counting, no "Then he," no mirrored lines; the one light touch is
+  Lou showing the photos "whether they asked or not."
 - Nothing else in the chapter is on the counting list. The chapter grows by about 120 words.

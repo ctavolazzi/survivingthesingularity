@@ -649,6 +649,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "He heard Grace. Under all the others."),
 (182, "Wes kept texting dates. He hadn't made one yet.",
 "Wes kept texting dates. Elijah hadn't made one yet."),
+# 183, Ch 18
+(183, "Claypot shipped Companion 2.0 on a Thursday. Elijah read the announcement post standing in the gravel lot",
+"Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen minutes before the financial markets closed. Elijah read the announcement post standing in the co-op's gravel lot"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

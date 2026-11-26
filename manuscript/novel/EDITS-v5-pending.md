@@ -859,6 +859,7 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
 
      The place is left to the next paragraph (the gravel lot). **Open, for CT:** keep it at the gravel lot, or set
      the crisis in a store? "Claypot shipped Companion 2.0 on a Thursday..." follows unchanged.
+     **Settled by CT (26 Nov):** the co-op's gravel lot. Edit 183.
 
 113. **Chapter 18, who reads the post.** CT: "It's not clear who was reading the announcement post. So Elijah read
      the announcement post for Companion 2.0." Book now: "Claypot shipped Companion 2.0 on a Thursday. He read the
@@ -2686,6 +2687,21 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
         > Wes kept texting dates. Elijah hadn't made one yet.
 
      Logged only; not in the v6 Doc yet. Item 6 changes words of edit 137, which is in the v6 Doc.
+
+183. **Chapter 18: the co-op's gravel lot, and when Claypot shipped.** Settles the open question under edit 112. CT
+     (26 Nov): "Yes. And they shopped it on a Thursday afternoon, just 15 minutes before the financial markets
+     closed." ("shopped" is "shipped".) Book now:
+
+     > Claypot shipped Companion 2.0 on a Thursday. Elijah read the announcement post standing in the gravel lot
+     > with a late cold snap coming through his jacket...
+
+     Change to [CT's words; "fifteen" spelled out, like the book's other numbers]:
+
+     > Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen minutes before the financial markets
+     > closed. Elijah read the announcement post standing in the co-op's gravel lot with a late cold snap coming
+     > through his jacket...
+
+     Logged only; not in the v6 Doc yet.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

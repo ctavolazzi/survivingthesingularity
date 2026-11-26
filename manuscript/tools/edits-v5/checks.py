@@ -193,4 +193,5 @@ C=[
 (185,"Contents, Dedication",["Contents\nDedication\nAct One", "Appendix\nThank You\nDedication\nFor the people I love who looked me in the eye like I'd finally lost it."],["Author's Note\nFor years, I've been talking about this."]),
 (186,"End",["Thursday, November 25, 2027. Thanksgiving.\nThank You\nThank you for reading. Thank you for your time.", "please be sure to start with your own.\nRecognize Your Power"],[]),
 (187,"Ch 31",["He took it.\nThe next Sunday at 9:40 he called the rose garden."],["He took it.\nOn Sunday at 9:40 he called the rose garden."]),
+(188,"Ch 15",["Somewhere past Cloverdale the check-engine light came on.\nElijah saw it and rolled his eyes. Then a laugh came up out of him, and it kept coming until he had to wipe his eyes with the back of his wrist. He reached over and turned up the radio. Willie Nelson was singing \"On the Road Again.\"\nFigures, he thought. I hope they have a good mechanic.\nAct Three: The Farm"],[]),
 ]

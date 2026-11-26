@@ -671,6 +671,11 @@ Please consider how much of a difference each and every one of us can make in th
 # 187, Ch 31: the call moves a week, because Marta's knock at eight, the shop, the eggs and Wren all come first
 (187, "On Sunday at 9:40 he called the rose garden.",
 "The next Sunday at 9:40 he called the rose garden."),
+# 188, Ch 15: the check-engine light
+(188, "Somewhere past Cloverdale the check-engine light came on.",
+"""Somewhere past Cloverdale the check-engine light came on.
+Elijah saw it and rolled his eyes. Then a laugh came up out of him, and it kept coming until he had to wipe his eyes with the back of his wrist. He reached over and turned up the radio. Willie Nelson was singing "On the Road Again."
+Figures, he thought. I hope they have a good mechanic."""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

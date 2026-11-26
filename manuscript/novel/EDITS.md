@@ -2762,6 +2762,25 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Changes words of edit 30, which is in the v6 Doc: check row 30 narrowed to "Sunday at 9:40 he called the rose
      garden." Logged only; not in the v6 Doc yet.
 
+188. **Chapter 15, the last lines before Act Three: the check-engine light.** CT (26 Nov): "I want Elijah to just see
+     it. Roll his eyes, and then be overcome with laughter. I want him to turn up the music. I want you to choose a
+     fitting song, and I want him to think the words figures. I hope they have a good mechanic." Book now:
+
+     > Somewhere past Cloverdale the check-engine light came on.
+
+     Change to [Claude's wording and Claude's choice of song, from CT's beats; "Figures. I hope they have a good
+     mechanic." is CT's]:
+
+     > Somewhere past Cloverdale the check-engine light came on.
+     >
+     > Elijah saw it and rolled his eyes. Then a laugh came up out of him, and it kept coming until he had to wipe
+     > his eyes with the back of his wrist. He reached over and turned up the radio. Willie Nelson was singing "On
+     > the Road Again."
+     >
+     > Figures, he thought. I hope they have a good mechanic.
+
+     Only the song's title is used, no lyrics. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

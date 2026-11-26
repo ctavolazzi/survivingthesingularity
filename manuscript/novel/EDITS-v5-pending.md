@@ -1596,6 +1596,29 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+150. **Chapter 11, Trent's deal: he says it himself.** CT (26 Nov): "Instead of just declaratively stating that they have
+     two spares, let's make Trent say it. Trent pondered for a moment and then said, you know what? And then said,
+     you know, tell you what. You say you're good at carrying stuff. I got a lot of things that need to be carried,
+     and some of them are quite expensive. If you do the work, we got two spare robot arms with your name on em."
+     His last version of the opening kept ("tell you what"). Book now (edit 66):
+
+     > Trent thought about that. They had six robot arms coming down from Oakland, a launch party in three weeks and
+     > nobody to put them in. They also had two spares in crates that they were never going to need. "Tell you what,"
+     > he said. "Ride down with the arms. Help the crew bolt them in for the launch. Do that, and the two spares are
+     > yours."
+
+     Change to [CT's words; kept from the book, so the trip to the Oakland warehouse that follows is still set up:
+     "They had six robot arms coming down from Oakland, a launch party in three weeks and nobody to put them in." and
+     "Ride down with the arms. Help the crew bolt them in for the launch."]:
+
+     > Trent pondered for a moment. They had six robot arms coming down from Oakland, a launch party in three weeks
+     > and nobody to put them in. "Tell you what," he said. "You say you're good at carrying stuff. I got a lot of
+     > things that need to be carried, and some of them are quite expensive. Ride down with the arms. Help the crew
+     > bolt them in for the launch. If you do the work, we got two spare robot arms with your name on 'em."
+
+     Cut: "They also had two spares in crates that they were never going to need." Then "Elijah didn't know what one
+     of those was worth..." as before. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

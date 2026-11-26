@@ -68,7 +68,7 @@ C=[
 (58,"Ch 11, 31",["For doing nothing. A million dollars.","turned down the million dollars"],["Triple what I made.","the triple salary"]),
 (64,"Ch 11",["The ones they offer you for nothing usually cost the most in the end."],["The ones for nothing are the expensive ones."]),
 (65,"Ch 11",["Yeah, I figured,\" Gus said. \"Thought I'd ask, though.","tired of driving alone","No, take my number. I meant it. Here."],["a bus with nobody in the other seat"]),
-(66,"Ch 11, 12, 15",["the two spares are yours","an insurance policy","Elijah did the arithmetic on two of them","on Trent's promise","paid in arms"],["in place of his wages"]),
+(66,"Ch 11, 12, 15",["Ride down with the arms. Help the crew bolt them in for the launch.","an insurance policy","Elijah did the arithmetic on two of them","on Trent's promise","paid in arms"],["in place of his wages"]),
 (67,"Ch 12",["He didn't want to be a bother.","It was almost funny."],[]),
 (55,"Ch 12, 14, 15",["offered him a million dollars at an elevator","Don't take the golden handcuffs. He had taken her advice","pushed the far end of that room out"],[]),
 (68,"Ch 13",["He decided not to go to the hospital. He was tough. He could tough it out."],["He did not go in to get sorted out."]),
@@ -155,4 +155,5 @@ C=[
 (147,"Ch 6",["For a year he had tried explaining it to each of them one at a time."],["For a year he had explained it to every one of them, one at a time."]),
 (148,"Ch 9",["Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was going on. But from the hall, he could still hear."],["Ruby shouldered through the swinging door. It swung shut behind him."]),
 (149,"Ch 10",["He couldn't write a billionaire without wanting something, and for the life of him, he still couldn't figure out what he wanted."],["He couldn't figure out how to write to a billionaire"]),
+(150,"Ch 11",["Trent pondered for a moment.","You say you're good at carrying stuff. I got a lot of things that need to be carried, and some of them are quite expensive.","If you do the work, we got two spare robot arms with your name on 'em."],["They also had two spares in crates that they were never going to need."]),
 ]

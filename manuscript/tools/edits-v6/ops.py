@@ -348,6 +348,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (148, "Ruby shouldered through the swinging door. It swung shut behind him.", "Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was going on. But from the hall, he could still hear."),
 # 149, Ch 10
 (149, "He couldn't figure out how to write to a billionaire without wanting something, and he couldn't figure out what he wanted.", "He couldn't write a billionaire without wanting something, and for the life of him, he still couldn't figure out what he wanted."),
+# 150, Ch 11
+(150, "Trent thought about that. They had six robot arms coming down from Oakland, a launch party in three weeks and nobody to put them in. They also had two spares in crates that they were never going to need. \"Tell you what,\" he said. \"Ride down with the arms. Help the crew bolt them in for the launch. Do that, and the two spares are yours.\"",
+"Trent pondered for a moment. They had six robot arms coming down from Oakland, a launch party in three weeks and nobody to put them in. \"Tell you what,\" he said. \"You say you're good at carrying stuff. I got a lot of things that need to be carried, and some of them are quite expensive. Ride down with the arms. Help the crew bolt them in for the launch. If you do the work, we got two spare robot arms with your name on 'em.\""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

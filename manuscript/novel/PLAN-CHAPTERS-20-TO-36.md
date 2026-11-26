@@ -458,23 +458,88 @@ One chapter at a time. For each: draft the changed scenes under section 4's rule
 the rules and section 7, and show CT "Book now" and "Change to" before anything is logged. Each yes becomes numbered
 edits with check rows, as always. Nothing goes into the Google Doc until CT says so.
 
-**The next turn (CT, 26 Nov: "Write the bullet points of what the next turn needs to do"). Chapter 25 first, because it
-is mostly CT's own three scenes.**
-1. Read Chapter 25 whole in make_v6.py's v6.txt, with section 5a here and "Writing a beat for CT" in the procedure file.
-2. Draft, in order: the letter to Ma and the tiff; town, frozen yogurt and Tyler at Kowalski's; the packing and the
-   pond; Thanksgiving (Lou's three questions, Curtis at the truck, the truck stop, the U-turn); the return.
-3. CT's lines go in word for word and are marked his. Everything Claude words is marked. Claude writes the action
-   and leaves the feeling sentences for CT.
-4. List what comes out of Chapter 25 (the kiss by the stove, "I didn't wait," her truck in the gravel) and what moves
-   to the end of Chapter 26 untouched (her festival, Marta's scene, the amp night and the blanket).
-5. Check the draft: search the book for every key phrase first; no mirrored contrast lines; openings varied; clear
-   who speaks; he is thirty-seven; Ma's calls Sunday 9:40. Then against the ending: "She had knocked once" (Ch 37),
-   "I didn't wait for you to ask" (Ch 36), the truck song (Ch 33), sleeping through "since about Christmas" (Ch 32).
-6. Note the lines other chapters owe Chapter 25: Elijah telling Lou about Barry (Ch 20); the heat failure and the
-   forty boards redone by hand (Ch 21, 22), which are planned and not yet written.
-7. Show CT the chapter scene by scene. On each yes: log it from edit 196 on, add the check row and the ops row, run
-   make_v6.py, commit, push.
-8. Then, in order: Chapters 21 and 22 (the heat failure and the bell), 23 and 24, 26, and on to 36.
+**The next turn, in detail (CT, 26 Nov: "Write the bullet points of what the next turn needs to do to bring this all
+up to par ... use like sub-bullet points as well."). Chapter 25 first: it is mostly CT's own three scenes.**
+
+1. **Get ready (no drafting yet)**
+   - Read Chapter 25 whole in make_v6.py's v6.txt (it is about 105 paragraphs), section 5a here, and "Writing a beat
+     for CT" in the procedure file.
+   - Read the three passages the new scenes lean on: Ch 13 (the frozen yogurt couple, "sharing one cup with two
+     spoons"; Ma's ice cream "out of the little tub"), Ch 12 and 15 (the seventeen-dollar shower), the end of Ch 19
+     (Curtis, the vacuum line, the hose on the dashboard).
+   - Read Ch 37's leaving (Lou on the step, Curtis under the hood) so Thanksgiving 2025 rehearses it without
+     using its lines up.
+2. **How Chapter 25 runs now, and what happens to each piece**
+   - The store dying, the ledger and the chart, nine months of saying nothing, the laminated paper: KEEP.
+   - Devendra's call ("Not till Thanksgiving. You've got two years."): KEEP.
+   - He tells Grace at the kitchen trailer; "You knew since spring and you didn't knock?" ... "You knock, Elijah.":
+     KEEP the lines, MOVE them to town, the afternoon of the frozen yogurt.
+   - The next morning he lays the chart on Frank's counter; the Hemingway line: KEEP.
+   - Marta "short with him"; Grace at her festival; "Does Grace have… someone?"; "You like her."; "That amp of yours
+     has Bluetooth."; "Don't make me sorry.": MOVE whole to October 2026, the end of Chapter 26.
+   - The amp night, "The Weight," the truck song, Tipper, "the optimal sonic zone," the blanket, Marta saying nothing
+     over her hood: MOVE whole to the end of Chapter 26, changed so that he sets it up.
+   - Friday dinner, the confession to everyone, Tyler's "I could've started looking in March," Denny's "You of all
+     people": KEEP. It becomes the last push toward his packing.
+   - Frank's offer, the bell, the tool library, Tyler's cyberdeck, the cold joints, the chart on the shelf: KEEP.
+   - "The night of that Friday dinner, she knocked." "I didn't wait." The soup, Reuben's chair, the kiss, the truck
+     song, her truck in the gravel: COMES OUT, replaced by the pond. Save what is good in it: her "You went and told
+     him. Frank. You walked in there" is a reason she can give him at the pond for why he can't leave.
+3. **Scene one to draft: the letter and the tiff (CT's scene)**
+   - Where: his room. What he's writing: a letter to Ma (what he tells her and what he leaves out shows the money).
+   - Grace comes in, sits on his desk. She wants to bring his pay to the Friday table; he won't let her.
+   - CT's lines, word for word: "I've lost a lot of people who were important to me, okay? I've been through a lot.
+     Finishing this book is really important to me. You are really important to me. This farm is really important
+     to me. These people are really important to me." / "because it's just, it's not fair." / "Fair to who?" / "I
+     don't know. Don't worry about it." / "you're almost 40 and these are your conflict resolution skills?" /
+     "Grace." ... "look, I'm sorry, okay? I'm sorry. Do you want to go into town and get ice cream?" / "I want frozen
+     yogurt."
+   - CT's actions: he scratches his head, breathes, grabs the hair on top of his head; she steps back and crosses
+     her arms; he almost gets mad and lets it go; he takes her hands; she squints to show she's mad and grins anyway.
+   - Claude words: how she comes in, what she asks for, the joins. Marked as Claude's.
+4. **Scene two: town**
+   - Frozen yogurt, one beat only. Whether it is one cup and two spoons is CT's call.
+   - Kowalski's: Tyler at the register on three days a week, the laminated paper on the door. This is how Grace
+     learns he has known since spring. "You knock, Elijah." lands here, with Tyler in earshot or not (CT's call).
+   - Nobody answers "Fair to who?" Tyler standing there does.
+5. **Scene three: the pond (CT's scene)**
+   - What pushes him: the last reworked board has shipped, and Denny's "You of all people" at Friday dinner. Three
+     silences now: the starts, the journal, Frank.
+   - He says it out loud to Grace (CT): they need somebody better, somebody more qualified.
+   - CT's lines, word for word: "You can't leave." / "Why?" / "There. Now if you leave, at least I got to do that." /
+     "I really hope you don't, though." / "I really hope you stay."
+   - CT's actions: she makes a face and shakes her arm in frustration, grabs his face and kisses him; he is
+     dumbfounded; she walks off, yells over her shoulder, turns and walks backward, turns again, a little jump and a
+     kick, speeds off. He stands at the pond listening.
+   - To settle while drafting: time of day and the sound. It is November on the dry side of the mountains, so
+     probably no frogs (frogs were April, Ch 17).
+6. **Scene four: Thanksgiving (CT's scene)**
+   - Lou's three questions, CT's words: "what are you going for?" / "just to see her, just to show up ... It's the
+     right thing to do." / "I mean, is it?" / "What do you mean?" / "you said so yourself, like, all she says is Barry."
+     / "yeah, but she can still recognize me. Like, she still knows that I'm there." / "does she?" / "I'm going."
+   - Curtis at the truck, saying little. The hose is in the glove box.
+   - A hundred miles. The light. The truck stop. The options he runs (music, art, his page), the fund for Ma's care
+     he won't touch, the seventeen-dollar shower. "A single tear." The U-turn.
+   - The return: "we thought you were going home." Grace hiding it and failing. Marta sees. Lou sees, and it lands on
+     his three questions. Lou and Marta look at each other.
+   - After: he tells Grace yes, bring it to the table (one line; the vote is Chapter 26).
+7. **Check the draft before CT sees it**
+   - Search the book for every key phrase first, so nothing repeats (the lesson of the laugh line).
+   - No mirrored contrast lines. Openings varied. Clear who speaks and who "he" is. He is thirty-seven.
+   - Each beat two or three small steps. The sentences that name a feeling are left for CT, with the place marked.
+   - Against the ending: Ch 37, "She had knocked once" (now the pond, or keep one literal knock: decide); Ch 36, "I
+     didn't wait for you to ask" (it is about her first message, so it stands); Ch 33, "your truck song" (named in
+     the amp night, now October 2026, still before Ch 33); Ch 32, sleeping through "since about Christmas."
+   - Length: what comes in against what moves out. The chapter should not grow.
+8. **Show CT, scene by scene**
+   - Each scene as "Book now" and "Change to," CT's words and Claude's marked apart.
+   - On each yes: log it from edit 196, add the check row and the ops row, run make_v6.py (every row must pass),
+     commit, push, reply in two or three lines.
+9. **What other chapters now owe, listed and not yet written**
+   - Ch 20: Elijah tells Lou about Barry (one line), and the forty boxes waiting on summer.
+   - Ch 21 and 22: the heat failure, the bell with both confessions, Lou's IBM line, the forty boards redone by hand.
+   - Ch 26: the scenes moved out of 25, the pay vote brought because he said yes, Ma's fall in June.
+   - Then 23 and 24, and 27 to 36, in the order of section 6.
 
 **Still needed from CT:** names for the north-house couple (before Chapter 21); whether the truck turns out to have
 been nothing; a yes or no on the 59 line flags.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T22:57:59Z",
+  "generated_at": "2026-11-25T22:17:45Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -217,6 +217,32 @@
         "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2611.32917",
+      "source": "arxiv",
+      "title": "SOARS: System One Assisted Reranking for Agentic Search",
+      "url": "https://arxiv.org/abs/2611.32917",
+      "authors": [
+        "Amin Bigdeli",
+        "Liye Fu",
+        "Fattane Zarrinkalam",
+        "Joel Stremmel"
+      ],
+      "summary": "Deep search agents address complex information needs through iterative retrieval and reasoning, where the relevance of retrieved evidence influences downstream performance. Existing rerankers improve retrieval effectiveness but introduce substantial latency and cost when invoked throughout the search trajectory. We introduce SOARS, a training-free framework leveraging a System One model for fast, calibrated relevance estimation. At each search step, SOARS selects query-relevant passages from long documents and reranks candidates in a single call, jointly considering the original question and a",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-24",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "reasoning",
+        "retrieval",
+        "rag"
       ]
     },
     {
@@ -1430,6 +1456,31 @@
       ]
     },
     {
+      "id": "2611.32813",
+      "source": "arxiv",
+      "title": "Atomic Policy: Composing Atomic Manipulation Skills with Agentic Reasoning",
+      "url": "https://arxiv.org/abs/2611.32813",
+      "authors": [
+        "Kaidi Zhang",
+        "Pengyuan Guo",
+        "Zhengtong Xu",
+        "Caiyi Zhang"
+      ],
+      "summary": "Long-horizon manipulation requires robots to translate task intent into physical interactions as the scene changes. Vision-language models (VLMs) offer semantic and spatial reasoning, while visuomotor policies provide fine-grained control. Yet ambiguous goals and dependencies between actions make their integration challenging. We introduce Atomic Policy, a framework that composes learned manipulation skills through grounded steering and execution feedback. A VLM estimates the symbolic state and goal, and a PDDL solver constructs a skill plan. An agentic harness steers each skill through langua",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-11-24",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "robot",
+        "language model"
+      ]
+    },
+    {
       "id": "2611.31173",
       "source": "arxiv",
       "title": "EmboEagle: An Efficient Agentic Embodied Framework for Long-horizon Robotic Manipulation",
@@ -1477,54 +1528,6 @@
         "agentic",
         "robot",
         "scaling"
-      ]
-    },
-    {
-      "id": "2611.27353",
-      "source": "arxiv",
-      "title": "WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection",
-      "url": "https://arxiv.org/abs/2611.27353",
-      "authors": [
-        "Marc Boëlle",
-        "Lucas Dixon",
-        "Alexandre Ramé"
-      ],
-      "summary": "As the capabilities of large language models keep improving, traditional mechanistic interpretability methods struggle to keep pace. In contrast, trainable introspection methods emerge as a promising alternative; they repurpose the model itself as a self-diagnostic tool, trained to verbalize what it has learned during finetuning in natural language. While training on datasets of finetuned experts achieves encouraging results, it currently lacks robustness and generalization. Building on the data augmentation framework of MiXup, we introduce WaXup, a method that augments the introspection train",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-11-20",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "interpretability",
-        "interpret",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2611.27138",
-      "source": "arxiv",
-      "title": "Double counting in LLM evidence fusion: exact posteriors separate rule compliance from posterior gain",
-      "url": "https://arxiv.org/abs/2611.27138",
-      "authors": [
-        "Tengfei Shao",
-        "Asma Rezaei",
-        "Ali Reza Kamali"
-      ],
-      "summary": "Language models fuse reports in retrieval, multi-agent consensus and agent memory, where treating shared-source reports as independent can double count evidence. A common remedy is an instruction to count each source once. Its value depends on the receiver's raw baseline. Pricing it needs an exact reference. We build the graded-dependence exact reference: binary worlds with single-report reliability 0.65 and four dependence levels, whose disclosed parameters give every world an exact posterior and every rule a target risk. The paired gain protocol scores raw and instructed answers of four conf",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-11-20",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "retrieval"
       ]
     }
   ]

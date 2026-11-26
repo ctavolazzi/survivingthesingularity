@@ -1441,6 +1441,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      finding out some other way," points back at Marta's "Now that's ours" (edit 131).
      Corrected 25 Nov, contradictions pass: "the one night it took" became "the two nights it took" (edit 131 has
      two evenings and a night).
+     Changed 26 Nov by edit 182, item 6: "the board" became "the circuit board" (the whiteboard is "the board" on the
+     same page). This part of 137 is in the v6 Doc, so 182 changes it there too when it goes in.
 
 138. **Chapter 15: two lines edit 100 left behind.** CT, 25 Nov: "Before we do any more work, you MUST resolve
      contradictions that may have been created." Both were open items under edit 100. Claude's fix: cut, add nothing.
@@ -2449,6 +2451,241 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > it was a question he hadn't had a minute ago. Agreed on what?
 
      Logged only; not in the v6 Doc yet.
+
+182. **Chapters 21 to 39: clarity pass.** CT (26 Nov): "search through the second half of the book for other moments
+     where the perspective could be confusing, where we use pronouns and it's not exactly clear who we're talking
+     about, where things are repetitive ... so that I can just nip them in the bud in one fell swoop." Four readers
+     went through Chapters 20 to 39; Claude checked every finding against the text and kept 48, then on CT's "Which
+     ones belong and which should be changed?" dropped 11 that were clear or deliberate (Priya's "Yes. And we let",
+     Phoenix twice, Marta's long second, "At Friday dinner", the stove door, "Neither of them said anything" twice,
+     Curtis's arms, "There's always crime", "He had promised her", "He had never said it back" (kept unsaid: Ch 36
+     "He had not said it to her yet", and the note in the amp in Ch 38), and the quarter turn of the glass). Two more
+     were corrections to edit 162 (its beats 5 and 10, dropped). CT: "Proceed." Claude's wording throughout; each
+     change only names who or when, or cuts a repeat.
+
+     1. Ch 21 (no man is named in the paragraph). Book now:
+        > He watched her do forty in a night.
+
+        Change to:
+        > Elijah watched her do forty in a night.
+
+     2. Ch 21 (a new paragraph; it names who is still talking). Book now:
+        > He set the next lid down. "You put my face
+
+        Change to:
+        > Denny set the next lid down. "You put my face
+
+     3. Ch 22 (Chapter 21 ends in June, so this steps back). Book now:
+        > The servers arrived at the end of May, in the back of Denny's truck.
+
+        Change to:
+        > The servers had come at the end of May, in the back of Denny's truck.
+
+     4. Ch 22 (the last man named is Reuben). Book now:
+        > He started calling the rack the Crucible.
+
+        Change to:
+        > Elijah started calling the rack the Crucible.
+
+     5. Ch 22 (who sent it, and three he's in a row). Book now:
+        > He had a text that said Saw the video with the warehouse guy. He's good, and he'd put a thumb on it
+
+        Change to:
+        > He had a text from David that said Saw the video with the warehouse guy. He's good. Elijah had put a thumb on it
+
+     6. Ch 22 (the whiteboard is "the board" on the same page; this changes edit 137's words, which are in the v6 Doc). Book now:
+        > he told them about the board too.
+
+        Change to:
+        > he told them about the circuit board too.
+
+     7. Ch 22 (the paragraph before ends "that summer"). Book now:
+        > The co-op adopted a rule that Saturday.
+
+        Change to:
+        > The co-op adopted a rule that same Saturday.
+
+     8. Ch 22 (same reason). Book now:
+        > That night Grace found him on the pump house steps.
+
+        Change to:
+        > That Saturday night Grace found him on the pump house steps.
+
+     9. Ch 22 (saves the reader counting back from Monday). Book now:
+        > The morning before, at 9:40, he called the rose garden.
+
+        Change to:
+        > The morning before, on Sunday at 9:40, he called the rose garden.
+
+     10. Ch 24 ("her" could be the aide). Book now:
+        > The aide held the phone by her ear.
+
+        Change to:
+        > The aide held the phone by his mother's ear.
+
+     11. Ch 24 (two women in one clause). Book now:
+        > the aide said she had shown it to her.
+
+        Change to:
+        > the aide said she had shown it to his mother.
+
+     12. Ch 25 (Devendra is the last man named). Book now:
+        > Elijah called him on Sundays, after his mother.
+
+        Change to:
+        > Elijah called him on Sundays, after he called Ma.
+
+     13. Ch 27 ("It" points at nothing). Book now:
+        > It came to the table anyway.
+
+        Change to:
+        > The argument came to the table anyway.
+
+     14. Ch 28 (Denny is the last man named). Book now:
+        > All of it happened around him, because
+
+        Change to:
+        > All of it happened around Elijah, because
+
+     15. Ch 28 (as two paragraphs, the first reads as Elijah's). Book now:
+        > "Now I'm holding your rain fly."
+        > 
+        > "Still want the fence," Curtis said.
+
+        Change to:
+        > "Now I'm holding your rain fly. Still want the fence," Curtis said.
+
+     16. Ch 29 (it follows a beat of Elijah's). Book now:
+        > "I've been reading deeds a long time. I know what a man signs
+
+        Change to:
+        > "I've been reading deeds a long time," Reuben said. "I know what a man signs
+
+     17. Ch 31 (the chapter before ends on Tyler). Book now:
+        > He brought the Friday table a plan.
+
+        Change to:
+        > Elijah brought the Friday table a plan.
+
+     18. Ch 31 (Melody is named just before). Book now:
+        > But nobody told her it wasn't her business, either.
+
+        Change to:
+        > But nobody told Patricia it wasn't her business, either.
+
+     19. Ch 31 (Curtis has just left). Book now:
+        > He slept. He got up and swept.
+
+        Change to:
+        > Elijah slept. He got up and swept.
+
+     20. Ch 31 ("she" could be the aide). Book now:
+        > The aide said she'd had a good night
+
+        Change to:
+        > The aide said Ma had had a good night
+
+     21. Ch 33 (two men in play). Book now:
+        > He means me. He's said so.
+
+        Change to:
+        > My dad means me. He's said so.
+
+     22. Ch 33 (it answers Curtis, after a beat of his). Book now:
+        > "Us. Like Irene's wire."
+
+        Change to:
+        > "Us," Lou said. "Like Irene's wire."
+
+     23. Ch 33 (the same words as his first time standing). Book now:
+        > like he was stopping a truck at a gate.
+        > 
+        > "Listen to me," he said. "Please."
+
+        Change to:
+        > like he was stopping a truck at a gate.
+        > 
+        > "Listen to me," he said again. "Please."
+
+     24. Ch 33 (four lines after "Lou looked down the table."). Book now:
+        > He looked down the table. "So tell me this.
+
+        Change to:
+        > He looked from face to face. "So tell me this.
+
+     25. Ch 37 (the next "He" is Lou). Book now:
+        > Lou was on the step when he came out.
+
+        Change to:
+        > Lou was on the step when Elijah came out.
+
+     26. Ch 37 (his third paragraph in a row, and Elijah said nearly the same words). Book now:
+        > "I'll keep the stove going." He slid the key
+
+        Change to:
+        > "I'll keep the stove going," Lou said. He slid the key
+
+     27. Ch 37 (Tyler is the last man named). Book now:
+        > She held it out to him. He took it.
+
+        Change to:
+        > She held it out to Elijah. He took it.
+
+     28. Ch 37 ("Elijah" opens the sentence before too). Book now:
+        > Elijah had wanted to ask him one more question.
+
+        Change to:
+        > He had wanted to ask Lou one more question.
+
+     29. Ch 37 (the last woman named is M. Madrone in the visitor book). Book now:
+        > She was in the chair by the window.
+
+        Change to:
+        > His mother was in the chair by the window.
+
+     30. Ch 37 (Elijah's or Manny's). Book now:
+        > His was the one fence left on that road
+
+        Change to:
+        > Manny's was the one fence left on that road
+
+     31. Ch 38 ("away" twice, three "her"s). Book now:
+        > scooted her chair six inches away from her.
+
+        Change to:
+        > scooted her chair six inches back from Patricia's.
+
+     32. Ch 38 (Lou is the last man named). Book now:
+        > just as he had left it.
+
+        Change to:
+        > just as Elijah had left it.
+
+     33. Ch 39 (the sender isn't named). Book now:
+        > a text he had never really answered.
+
+        Change to:
+        > a text from Wes he had never really answered.
+
+     34. Ch 39 (he already set it down a few lines before). Book now:
+        > "Mad." David put the glass down. He leaned on the bar
+
+        Change to:
+        > "Mad." David leaned on the bar
+
+     35. Ch 39 (the last woman named is the girl with the laptop). Book now:
+        > He heard her. Under all the others.
+
+        Change to:
+        > He heard Grace. Under all the others.
+
+     36. Epilogue ("He" reads as Wes). Book now:
+        > Wes kept texting dates. He hadn't made one yet.
+
+        Change to:
+        > Wes kept texting dates. Elijah hadn't made one yet.
+
+     Logged only; not in the v6 Doc yet. Item 6 changes words of edit 137, which is in the v6 Doc.
 
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):

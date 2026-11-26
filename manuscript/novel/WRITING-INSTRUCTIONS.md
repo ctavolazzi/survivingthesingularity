@@ -79,6 +79,28 @@ sequence of events. We are writing." (chat, 26 Nov)
   households; Mr. Ostrander (he said "I don't care what the teacher's name is"); Yakima and Wenatchee; "paid through
   March"; the frozen yogurt place by the laundromat; Lou's wife's fridge as the home of the IBM line.
 
+## 4a. How CT works a line (26 Nov, tenth chat)
+
+CT, after dictating edits 224 to 226: "You see my methodology with writing? You see how I refine things that I'm not
+totally sure about?" What it looks like in his dictation:
+
+- He says the line, hears what is off, and says it again until it lands: "clearer than crystal ... clearer than an
+  alpine day. There we go." "Watching Grace work would do that ... work on the farm ... work the land would do that to
+  just about anyone." "There we go" marks the keeper. The last version is the line; the earlier tries are never logged.
+- He trims while he goes: "fate would wear him down over time" became "fate has a way of wearing you down. And time had
+  a different story to tell" (the second "time" made him drop the first).
+- He reaches for the fresh comparison over the stock one (crystal became an alpine day).
+- He says what a choice depends on: "if there's nothing mechanically in the way during that time." Check the pages for
+  that condition and tell him what is in the way; log the rest and hold the one line (edit 226).
+- He says where his words stop and Claude's start: "you can connect it to the next story elements with what she says
+  after that"; "you can clean up the language there based on our editing rules ... I trust you to be able to carry this
+  through." Fillers from dictation ("like", "well", "he's like") come out; his lines stay.
+- His standard for a polish pass: "Not every stanza, not every paragraph needs to be a work of fucking art, but there
+  are some key moments where there's still opportunity to buff it out and polish it up." Passable sentences that move
+  the story along are left alone.
+
+When Claude words a line, do the same thing before he sees it: say it, hear what is off, try it again, keep the last.
+
 ## 5. What CT's own writing sounds like
 
 These lines are his, dictated and kept:

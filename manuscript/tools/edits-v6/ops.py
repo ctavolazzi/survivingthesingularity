@@ -344,6 +344,8 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 """"Keep your head down and stay focused for me," she said.\nHe meant to. He wanted to. But life gets in the way sometimes."""),
 # 147, Ch 6
 (147, "For a year he had explained it to every one of them, one at a time.", "For a year he had tried explaining it to each of them one at a time."),
+# 148, Ch 9
+(148, "Ruby shouldered through the swinging door. It swung shut behind him.", "Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was going on. But from the hall, he could still hear."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

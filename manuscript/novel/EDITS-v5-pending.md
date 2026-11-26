@@ -1569,6 +1569,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      The rest of the paragraph ("He'd explained it across the bar and over the gate latch and in the van...") stays.
      Logged only; not in the v6 Doc yet.
 
+148. **Chapter 9, the swinging door: Elijah stays on the other side.** CT (26 Nov): "It needs to be very clear that Elijah
+     is on the other side of the swinging door. Like, it swung shut. Ruby walked through the door, it swung shut behind
+     him, closing Elijah off from seeing what was going on, but he could still hear." Book now:
+
+     > Ruby shouldered through the swinging door. It swung shut behind him.
+
+     Change to [CT's words; "from the hall" is Claude's, to place him]:
+
+     > Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was
+     > going on. But from the hall, he could still hear.
+
+     Then ""I brought you one," Ruby said on the other side." as before. The round window is already "papered over
+     from the inside", so he can't see through it. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

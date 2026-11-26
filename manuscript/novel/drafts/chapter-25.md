@@ -47,7 +47,7 @@ Grace came in without knocking and sat down on the table he used as a desk, on t
 
 "I know you did."
 
-"So let me be good for it." **"Why are you acting this way?"**
+"So let me be good for it. **Why are you acting this way?"**
 
 **"Because I just,"** he said, and stopped. He scratched his head and pulled a long breath in through his nose. On the
 way out, his hand went up and took hold of the hair on top of his head.

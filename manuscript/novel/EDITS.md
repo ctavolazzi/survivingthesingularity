@@ -3276,6 +3276,30 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      19, 125, 131 and 135 now show PARTIAL against the v6 Doc, and 197 too (some of its short new lines, such as "He
      answered", are already in the Doc); expected, as for 30, 137 and 182. Logged only; not in the v6 Doc yet.
 
+198. **Chapter 25 rebuilt: the letter, town, the pond, Thanksgiving.** CT's scenes (26 Nov; his words in "Direction from
+     CT, 26 Nov" and section 5a of `PLAN-CHAPTERS-20-TO-36.md`), drafted by Claude in
+     `manuscript/novel/drafts/chapter-25.md`. CT on draft 1: "You're still overusing pronouns and not varying the
+     sentence structure." On draft 2: "I've told you to change this a dozen times and you keep doing it." On draft 3:
+     "Yes, this is way better." The draft file is the record of Book now and Change to, with CT's words in bold. In
+     the book:
+     - New, after "Surely Frank knew.": a scene break, the letter to Ma and the first tiff, and town (frozen yogurt,
+       Tyler at Kowalski's, "You knew."). The kitchen-trailer exchange ("You knew since spring and you didn't
+       knock?" through "But you knock.") moves into the truck, with her frozen yogurt spoon.
+     - Frank letting Tyler go moves after the laminated paper. "Elijah told Grace that night, at the kitchen trailer"
+       through "and didn't argue." comes out. "In the morning he made the harder visit" becomes "That week he made the
+       harder visit" [Claude's wording].
+     - Marta's scene, the festival and the amp night ("That fall, it was Marta who told him about the music." through
+       "somebody ought to bring him something loud.") move, unchanged, to the end of Chapter 26.
+     - The stove kiss ("The night of that Friday dinner, she knocked." through "in the other direction.") comes out.
+       In its place: the pond (CT's kiss) and Thanksgiving (Lou's questions, the truck stop, the U-turn, the return).
+     - Chapter 26, one line, to match [Claude's wording]: "She told him on a Saturday morning, in his kitchen, wearing
+       his shirt. Nobody at the Friday table had said one word about where she slept now." becomes "She told him on a
+       Saturday morning, in his kitchen, over coffee."
+     Still owed, so the book reads true (all in the plan): Elijah telling Lou about Barry (Ch 20); the heat failure,
+     the empty greenhouse and the forty boards redone (Ch 21, 22); Chapter 26's October night where he makes his move
+     (the amp night moved there ends with her head against his, and the kiss is still to be written). Open: whether
+     the check-engine light was nothing. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

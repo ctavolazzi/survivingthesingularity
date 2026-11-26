@@ -1033,6 +1033,31 @@ Later that morning Marta looked at him over her welding hood for a long second a
 (198, "He had lost a register and gained forty hours a week, and he spent them building", "He had lost a register and had all week now, and he spent it building"),
 (198, "and a twenty-year-old had the name.", "and a nineteen-year-old had the name."),
 (204, "Patricia called Grace on day nine. Her grant reports", "Patricia called Grace on day nine, in tears. Her grant reports"),
+# 205, Ch 17: the arms go to Richard Praether's (CT, 26 Nov; changes edit 88) (drafts/chapter-17.md)
+(205, ("On the fourth day he asked Grace if the dry end of the shed was still free.", "Some nights he went and looked at them. He couldn't have told you what for."),
+"""On the fourth day Grace asked about the arms. She had offered the dry end of the equipment shed in her first message, after she saw his post about them. He told her the rest of it: two crates in a storage unit off Highway 99, a lien sale at the end of the week, and nothing to pay it with. He didn't say yes to the shed. Those crates were the only things he owned that were worth anything, and he had known these people four days.
+Grace didn't argue. That evening she told him a man named Lou would cover what he owed on the unit.
+"He says pay him back when you can. And he says keep it between the three of us."
+"Why?"
+"He didn't say. That's Lou. You'll meet him."
+A place to put them came from a kid at a cash register. Marta had sent Elijah into Ardell for a pump seal, to the hardware store on the square, and the kid ringing it up had a laptop open under the counter with the sound off. He was teaching himself something between customers. Elijah had been that kid, in a parking lot, with a phone propped on a steering wheel. He hadn't meant to ask anybody. He asked him.
+"Is there anywhere around here to keep a couple of big crates? Cheap?"
+"There's the U-Store. It's like ninety a month." The name on his apron said TYLER. "Or old Praether, out past the grange. He's got a pole barn with nothing in it. He comes in here for nails and pays in quarters." He handed over the seal. "Honk before you go up his drive. Like, a lot."
+The arms came up the day before the lien sale. Somebody had a flatbed, because up there somebody always had a flatbed, and Lou knew a man outside Stockton with a baler that needed to come north anyway. Grace and Elijah met the flatbed at the grange hall and led it out the county road in the Ranger.
+The old man's yard was covered in foliage and rust buckets. Wavering somewhere between "Haunted House" and "condemned by the city," Richard Praether's property was, for lack of a better word, a dump.
+Grace leaned on the horn until a man came around the side of the pole barn. He stopped where he could see the road and all three of them at once. He was seventy or so, in a canvas coat, with a white beard he had plainly cut himself. A burn barrel was going behind the house. The smoke lay down flat across the yard and got into everything. When he rolled the barn door back, the barn had kept its own air, cold gear oil and mouse.
+"What's in them?" Praether said.
+"Arms." Elijah heard it. "Robot arms. Out of a cannery. They put cans in boxes."
+"I know what they put in boxes."
+One of the rust buckets was a loader, and it started on the first try. He had the first crate up on the forks when a tie-down let go with a bang. Praether was on the ground behind the front tire before the strap finished falling. He got up slowly and brushed off his knees. Nobody said anything.
+"I can't pay much," Elijah said, when the door was shut. "I can work."
+"You know what a brush hog is?"
+"Yes, sir."
+"One Saturday a month, then. Don't come to the door." Praether looked at the barn, and at him. "Somebody's going to want those. Somebody always wants the thing that works." His voice came up, like a man calling across a field. "Beware the military! They never built one thing in their lives. They wait till some nice kid builds something useful, and they come around with a check. I carried what the nice kids built." His voice dropped again. "They'll be polite about it. That's how you'll know."
+The mailbox leaned on its post at the end of the fence, where the boards gave out. Grace stopped the truck beside it. An envelope lay in the weeds under the box, gone soft with rain. She got out, picked it up and read the corner of it before she put it in the box.
+"What?" Elijah said.
+"Department of Veterans Affairs." She shut the little door. Neither of them said anything until the grange.
+Some nights he drove out and looked at the barn from the road. He couldn't have told you what for."""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

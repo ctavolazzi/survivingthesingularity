@@ -3,15 +3,16 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 205.** Next chapter: 27.
+**Next edit: 206.** Next chapter: 27.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
 - [x] **Where the arms are kept.** CT, 26 Nov: at Richard Praether's (plan, 10.5). To write: the Praether scene in
       Chapter 17 (changes his edit 88), Grace telling Marta (Ch 26), the reveal in Chapter 34, one line in Chapter 37
       on his yes.
-- [ ] **What Praether says.** CT: "some of the hardest wisdom in the whole book." His line so far: "Beware the
-      military!" Anything more is his to give before the Chapter 17 scene is written.
+- [x] **What Praether says.** CT: "More of course lol, but that's his message, and it foreshadows the stuff about
+      Ukraine and the people leaving the farm." The Chapter 17 scene is written (edit 205); the rest of Praether's
+      lines are Claude's and his to correct. The smell of that barn is marked for him.
 - [ ] **Scenes with just the women** (plan, 10.6): three proposed (Grace and Lupe, Marta and Grace, Grace and Mrs.
       Delgado). Waiting on his yes.
 - [x] **The rover and the arms.** CT, 26 Nov: "Yes". The rover stays as written; the arms are the machine the table
@@ -33,16 +34,16 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 | Box | Chapter | Edit | Words now | Target | What it has to do (plan, section 11) |
 |---|---|---|---|---|---|
-| [ ] | 27 Blueprints of a Wall | 205 | 2,135 | 2,100 | farmers market line; Grace on the $49 knockoff; the pledge with the Ochoas' greenhouse behind it; Thanksgiving 2026 letter to Ma; "Every winter there's somebody" fixed; Grace's room in Ardell placed |
-| [ ] | 28 Hello, Ridge | 206 | 1,168 | 1,150 | overnight, not three days; power when it counts; the Ochoas' house drops off the map; Lupe on the radio |
-| [ ] | 29 Ink and Pencil | 207 | 1,886 | 1,950 | Denny argues ("I'm not burned out. I'm unpaid."); Lupe: "Somebody quits"; Tyler says yes; Priya logs the 3 a.m. address; the welder gap |
-| [ ] | 30 Item Seven | 208 | 2,144 | 2,100 | Denny films his last one; Lou's "my man" |
-| [ ] | 31 Six Eggs on the Floor | 209 | 3,637 | 3,550 | Denny's goodbye on his porch; "Nothing that mattered" on the page |
-| [ ] | 32 The Rubber Band | 210 | 2,178 | 2,750 | the late payment, the missed stop, the April quarrel, frozen yogurt, the coffee can on the table (plan, 10.3); Denny out of the juniper; Frank's chart |
-| [ ] | 33 A Poem About Tide Pools | 211 | 4,453 | 3,750 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
-| [ ] | 34 A Guy With Arms | 212 | 2,411 | 2,500 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |
-| [ ] | 35 Two Walnuts in One Fist | 213 | 1,779 | 1,400 | night scene cut to the walnut, "The man who refuses to launch it" and ALC; "They can. They just won't." fixed |
-| [ ] | 36 This Is the Gate | 214 | 2,293 | 2,300 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
+| [ ] | 27 Blueprints of a Wall | 206 | 2,135 | 2,100 | farmers market line; Grace on the $49 knockoff; the pledge with the Ochoas' greenhouse behind it; Thanksgiving 2026 letter to Ma; "Every winter there's somebody" fixed; Grace's room in Ardell placed |
+| [ ] | 28 Hello, Ridge | 207 | 1,168 | 1,150 | overnight, not three days; power when it counts; the Ochoas' house drops off the map; Lupe on the radio |
+| [ ] | 29 Ink and Pencil | 208 | 1,886 | 1,950 | Denny argues ("I'm not burned out. I'm unpaid."); Lupe: "Somebody quits"; Tyler says yes; Priya logs the 3 a.m. address; the welder gap |
+| [ ] | 30 Item Seven | 209 | 2,144 | 2,100 | Denny films his last one; Lou's "my man" |
+| [ ] | 31 Six Eggs on the Floor | 210 | 3,637 | 3,550 | Denny's goodbye on his porch; "Nothing that mattered" on the page |
+| [ ] | 32 The Rubber Band | 211 | 2,178 | 2,750 | the late payment, the missed stop, the April quarrel, frozen yogurt, the coffee can on the table (plan, 10.3); Denny out of the juniper; Frank's chart |
+| [ ] | 33 A Poem About Tide Pools | 212 | 4,453 | 3,750 | Denny comes back; "I sold it to them"; the tomato dinner cut by a third |
+| [ ] | 34 A Guy With Arms | 213 | 2,411 | 2,500 | Curtis's wound; the Ukraine footage; Curtis the Trekkie and Marta's "Commander Data" (CT's words); Hector and Lupe by name; they leave |
+| [ ] | 35 Two Walnuts in One Fist | 214 | 1,779 | 1,400 | night scene cut to the walnut, "The man who refuses to launch it" and ALC; "They can. They just won't." fixed |
+| [ ] | 36 This Is the Gate | 215 | 2,293 | 2,300 | festival week as one scene; Lou's knee; Elijah picks the squash row; the fire kept whole |
 | [ ] | 24, a correction to edit 203 | 203 | | | at the stove: her father's drinking and her festival years; his pause about festival girls (after CT rules on "he left") |
 
 ## 3. After Chapter 36
@@ -70,6 +71,7 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 ## Done
 
+- 26 Nov, eighth chat: Chapter 17's Praether scene (edit 205).
 - 26 Nov, eighth chat: Chapters 23 (edit 202), 24 (203) and 26 (204) rewritten and logged; continuity fixes to edits
   198 to 204 from three readers' audit; the endgame plan (plan, sections 10 to 13); `find_in_book.py`; the cover credit
   noted; these three files.

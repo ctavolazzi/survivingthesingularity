@@ -222,7 +222,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
 ## Where things stand (end of the eighth logging chat, 26 Nov)
 - The v6 Google Doc "StS v6 draft (Nov 25)" is the book (CURRENT in the bridge). In the Doc: edits 1 to 138, 141 and
-  151. Logged in GitHub only: 139, 140, 142 to 204 except 151. **The next edit is 205, Chapter 27.** Nothing has been
+  151. Logged in GitHub only: 139, 140, 142 to 205 except 151. **The next edit is 206, Chapter 27.** Edit 205 is the
+  Praether scene in Chapter 17 (the arms kept off the farm; it changes edit 88). Nothing has been
   put into either Doc. Do not change the Doc; CT has not cleared it.
 - Chapters 20 to 26 are rewritten and logged: 198 (Ch 25), 199 (Ch 20), 200 (Ch 21), 201 (Ch 22), 202 (Ch 23), 203
   (Ch 24), 204 (Ch 26; the rover also in Ch 32 and 33). Each has its Book now and Change to in `drafts/`. Three readers

@@ -3360,6 +3360,15 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+205. **Chapter 17: the arms go to Richard Praether's.** CT, 26 Nov (his words in `PLAN-CHAPTERS-20-TO-36.md`, section
+     10.5): Elijah wouldn't trust the farm with the arms in his first week; a lead from Tyler; "a weird old man" whose
+     yard is "a dump"; "Beware the military!"; a veteran with PTSD, shown by the VA letter Grace finds by the mailbox;
+     a secret between Lou, Grace and Elijah. Written by Claude; Book now and Change to in
+     `manuscript/novel/drafts/chapter-17.md`, CT's words in bold. It changes edit 88, which is in the v6 Doc: the arms no
+     longer go into the equipment shed and the table doesn't vote on the storage bill (Lou covers it). Check row 88
+     narrowed to the words that still hold. Chapters 34 and 37 still say "equipment shed" until they are done.
+     Logged only; not in the v6 Doc yet.
+
 Corrected in place, 26 Nov (eighth chat), after three readers audited continuity across edits 198 to 204 (none of it in
 the Doc): the boxes ship in May (Chapter 19, one word), not June; the plugs cook in June, not July; Ma's room is back
 home and Ray's service is at St. Rose, not in Santa Rosa; the letter scene loses "Sunday nights," "paid through March"

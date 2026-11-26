@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 59.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 60.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -97,7 +97,7 @@ Edit 57 was never used.
 | 85 | Ch 16 | accepted | That thing right there is worth something, not some app. |
 | 86 | Ch 16 | accepted | "We'll see," she said. "Swarf goes in the red bin." |
 | 87 | Ch 17 | accepted | For three days, no one really asked him anything. |
-| 88 | Ch 17 | accepted | On the fourth day he asked Grace if the dry end of the shed was sti... |
+| 88 | Ch 17 (changed by 205) | accepted | The arms came up the day before the lien sale. |
 | 89 | Ch 17 | accepted | He told the radio about his week. The co-op let him be. |
 | follow-ups | follow-ups | accepted | $2,011.46 |
 | 90 | Ch 17 | accepted | He looked at his plate. |
@@ -215,3 +215,4 @@ Edit 57 was never used.
 | 202 | Ch 23 | not in the Doc | He saw the pattern all at once, on the third evening. |
 | 203 | Ch 24 | not in the Doc | The co-op had paid for them in the spring, before the plugs cooked. |
 | 204 | Ch 26, 32, 33 | not in the Doc | It was the first music out of that amp in three years. |
+| 205 | Ch 17 | not in the Doc | On the fourth day Grace asked about the arms. |

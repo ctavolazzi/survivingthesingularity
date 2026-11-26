@@ -328,8 +328,8 @@ Everything here is from a line CT dictated or approved, or is in the book.
   doesn't work, man, to Elijah"], "professor", "Ivy League", "Thoreau", "son". He asks about three questions and then
   says one thing. His wisdom comes in whole sentences: "He will play when he's ready. We cannot force the music out of
   him." [108] He reaches for an odd big phrase: "Our specific constellation has some unique advantages." [191] He is
-  wrong sometimes ("I mean, is it?" "Does she?"). Three bare "man"s of his remain in Chapters 26, 30 and 35; changing
-  them is Claude's proposal, not yet his ruling.
+  wrong sometimes ("I mean, is it?" "Does she?"). His bare "man"s are gone: Chapters 26 and 30 say "my
+  man", and Chapter 35 has none (checked after edit 223; the plan, 12.1, row 16).
 - **Marta.** Calls him "spreadsheet". The blow, then the praise: "You're a good engineer. I mean it." [124] She
   finishes the thought [117]. Her warning about Grace is "treat my baby girl right or else we'll have problems"
   [189]. CT, 26 Nov: "Marta talks really straightforward, and I do like that, but it's a little bit too direct ... I
@@ -366,7 +366,8 @@ Lou in the next chapter. Don't put his history in his own first speech. No film 
 
 1. Read the chapter whole, its part of the plan, and this file's sections 5 to 12.
 2. Search the book for each key phrase, so nothing repeats a construction already there.
-3. Count the first words of the narration's sentences. No opener carries a run.
+3. Count the first words of the narration's sentences. No opener carries a run
+   (`python3 manuscript/tools/edits-v6/openers.py OUT/v6.txt --ch NN-NN` lists the runs).
 4. Read every new line against sections 6 and 10. Unpack anything clever. One idea per sentence.
 5. Read each line as a stranger: who, what, what kind, where is he standing?
 6. Would a person do that? Has everyone named been introduced?
@@ -403,16 +404,16 @@ Lou in the next chapter. Don't put his history in his own first speech. No film 
 
 ## 15. Debts in edits already logged
 
-Found by the audit. None is in the Doc. Fix each when its chapter is rewritten, or ask CT about the ones in the ending.
-- Edit 172 put inversions into Chapters 20 to 39 before the "no tricks" correction ("What choosing for people looked
-  like, he knew."; "That one went without a note."; "Eleven notebooks rested on it."). His last word is the middle
-  path ("When it feels literary, absolutely"), so judge each one where it stands.
-- Edit 174, item 2, turned one mirrored line into another ("They can. They just won't.", Ch 35). Redo in the Ch 35
-  rewrite.
-- Edit 178 (Ch 37) has "It should have felt like traveling light. It felt like he had hardly been here at all." It
-  is in the ending; needs his yes.
-- Edits 172 and 197 lean on "So he", "Instead he", "Soon". One is fine; watch for chains.
-- Chapter 26 still has the old summer, with Marta's scene and the amp night moved to its end and no kiss yet.
+Found by the audit. Where each stands after edit 223 (checked in the tenth chat with `find_in_book.py` and
+`build_gate.py`):
+- Edit 172's inversions in Chapters 20 to 39. "What choosing for people looked like, he knew." is gone (Ch 36 now says
+  "He knew what choosing for people looked like."). "That one went without a note." and "Eleven notebooks rested on
+  it." stand in Chapter 39, the ending (lightest touch); his last word is the middle path ("When it feels literary,
+  absolutely").
+- Edit 174's mirrored "They can. They just won't." (Ch 35): gone in the Chapter 35 rewrite (edit 214).
+- Edit 178's "It should have felt like traveling light." (Ch 37): cut in edit 223.
+- Edits 172 and 197 lean on "So he", "Instead he", "Soon". One is fine; watch for chains. `openers.py` counts openers.
+- Chapter 26's old summer: rewritten in edit 204 (the kiss is in "Pondwater").
 
 ## 16. Corrections of 26 November, as they happened
 

@@ -691,6 +691,9 @@ Figures, he thought. I hope they have a good mechanic."""),
 # 193, Ch 20: Lou, "I already lost one orchard."
 (193, "Not a subscription. I already lost one orchard to one buyer.\"",
 "Not a subscription. I already lost one orchard.\""),
+# 194, Ch 20: Wren, "a stranger had helped themselves to the inside of my house"
+(194, "Then I found out a machine wrote it, and I felt like somebody had been in my house.\"",
+"Then I found out a machine wrote it, and I felt like a fraud and like a stranger had helped themselves to the inside of my house.\""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

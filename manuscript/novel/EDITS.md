@@ -2858,6 +2858,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+194. **Chapter 20, Wren on the machine-written essay.** CT (26 Nov): "I felt like a fraud, and how about she says, I
+     felt like a fraud and like a stranger had helped themselves to the inside of my house." Book now:
+
+     > Then I found out a machine wrote it, and I felt like somebody had been in my house."
+
+     Change to [CT's words]:
+
+     > Then I found out a machine wrote it, and I felt like a fraud and like a stranger had helped themselves to the
+     > inside of my house."
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -1962,6 +1962,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      page (edit 104): birds don't sing when there are predators around; it is his nervous system settling. Logged
      only; not in the v6 Doc yet.
 
+167. **Chapter 19, the first line: cut.** CT (26 Nov): "Remove the sentence about 40 greenhouse controllers at the beginning
+     of chapter 19." Cut: "The co-op's first real manufacturing run was forty greenhouse controllers." The chapter now
+     opens "In April the order came, through a friend of a friend of Priya's, from the CSA network two valleys over.
+     Forty small boxes that could read soil moisture and air temperature..." Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

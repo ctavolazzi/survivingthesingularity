@@ -423,6 +423,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 166, Ch 18
 (166, "\"I think what you're doing is just right,\" he said.",
 "\"I think the way you're doing it is just right,\" Elijah said.\nOut by the pond, the birds were chirping magnificently."),
+# 167, Ch 19
+(167, "Chapter 19: Eleven, One, Zero\nThe co-op's first real manufacturing run was forty greenhouse controllers.\nIn April the order came",
+"Chapter 19: Eleven, One, Zero\nIn April the order came"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

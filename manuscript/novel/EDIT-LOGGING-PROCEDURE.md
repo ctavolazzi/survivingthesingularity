@@ -1,6 +1,8 @@
 # How to log CT's edits (the procedure)
 
-Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 128. Read this before logging the next one.
+Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 128, and kept up to date by every logging
+chat since (six by 26 Nov). Read all of it before logging the next edit: it is the whole method, and "Where things
+stand" near the end says exactly where the book is.
 
 ## What CT is doing
 CT reads the v5 manuscript and dictates changes by voice. Claude logs them. Claude does not change the Google Doc
@@ -22,7 +24,8 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 4. **A question or "think it through"**: answer in chat. Build and log nothing until he settles it.
 
 ## Procedure for each edit
-1. Find the passage in the latest read of the Doc, so "Book now" is quoted exactly. Do this before writing.
+1. Find the passage in make_v6.py's `v6.txt` (every logged edit applied; grep it, don't read the whole file), so
+   "Book now" is quoted exactly as the book stands now. Not from the raw Doc: it lacks every edit not put in yet.
 2. Write it in `EDITS.md` with the next number: where, "Book now," "Change to."
 3. Use CT's words word for word. Mark anything Claude worded ("Claude's wording"). Smooth only dictation breaks.
    Never rewrite what he did not ask to rewrite ("merge, don't rewrite").
@@ -34,8 +37,11 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 6. If something he asks cannot work in the book as it stands (Grace is only on speaker, Curtis is driving), say
    it in one line, give one recommendation, and wait. Once he decides, log his decision without arguing.
 7. Add a check row to `manuscript/tools/edits-v5/checks.py` (words that must be in the book, words that must be
-   gone; `[break]` means a scene break).
-8. Run `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md`.
+   gone; `[break]` means a scene break) and a find and replace row to `manuscript/tools/edits-v6/ops.py` (above the
+   ITALIC list). See "The tools" below for what a row can do.
+8. Run `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx`: every row must pass. Then
+   `python3 manuscript/tools/edits-v5/verify.py V6_READ.json --table manuscript/novel/EDITS-status.md` for the status
+   table (new edits show "not in the Doc", which is right until CT says to put them in).
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v6 edit list
@@ -50,6 +56,46 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 - Check numbers colliding (the follow-ups row was once 90).
 - An unquoted heredoc with backticks ran the build. Use quoted heredocs ('EOF').
 - Counts drifting: the Totals line must match the latest verify run.
+- A later edit that changes words of an earlier one breaks the earlier check row. Narrow the earlier row to the words
+  that still hold (row 113 for edit 183) or update it to the new words (row 137 for edit 182); never delete it.
+- An edit that replaces a whole section (185, the Author's Note) leaves the older rows nothing to find. Their "where"
+  says "replaced by 185" and their "must be there" list is empty; keep any "must be gone" words.
+- A find that covers italic text gets retyped, and the paragraph it touches can lose its heading style (edit 184 first
+  turned the title into body text, because "A Solarpunk Novel" is italic). Keep finds off italics where you can, and
+  after a structural edit open the .docx and check the styles of the paragraphs it touched.
+- The build adds pages of its own (copyright, and until 26 Nov "About the Author" after the last line). After a build,
+  look at the first and last pages of the PDF, not only the checks.
+- Naming: CT got lost between v5 and v6 names (26 Nov: "The naming system is confusing me"). Name things for what they
+  are now: the edit list is `EDITS.md`; the PDF to read has CURRENT, the date and the edit range in its title; old
+  copies say "OLD:" and go in "Older builds". Don't leave an old version number on something current.
+- Tokens: CT asked (26 Nov) "Are you trying to conserve tokens when you can?" Use code: grep `v6.txt` and the saved
+  Doc reads instead of reading them; ask Drive for `excludeContentSnippets` and small pages; don't print big JSON.
+
+## The tools
+- `manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT [--no-docx]`: the v5 Doc with its suggestions accepted, then
+  every row of `ops.py`, then every check row. Writes `OUT/v6.txt`, `OUT/v6-read.json` and (without `--no-docx`)
+  `OUT/v6.docx` with the 19 pictures. It never calls Google.
+- An `ops.py` row is (edit number, find, replace). The find must appear exactly once. In the replacement a newline
+  starts a paragraph, an empty line is a scene break, `*...*` is italic, and at the start of a paragraph `§H1 ` makes
+  it a heading and `§C ` centers it. A find of `""` inserts at the very start of the book (edit 184); a find of
+  `(start, end)` replaces the span from the one start to the first end after it (edit 185).
+- `ITALIC` in `ops.py`: lines that must be italic end to end (verify.py cannot see italics).
+- `manuscript/tools/edits-v5/verify.py READ.json`: where each edit stands in a Doc (accepted, suggested, not in the
+  Doc, PARTIAL).
+- `manuscript/tools/edits-v7/make_v7.py`: remakes the separate v7 copy (v6 through edit 171 plus `ops_v7.py`). Leave
+  it alone unless CT asks about v7.
+
+## Making the large print PDF (only when CT asks)
+1. In a fresh container: `pip install -r publication/novel/build/requirements.txt` and `mkdir -p publication/novel/work`.
+2. `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT` (with the .docx; the picture links in a read
+   expire, so use a fresh v5 read).
+3. `python3 publication/novel/build/build.py OUT/v6.docx --only large --skip-edit-gate`. Every check in
+   `publication/novel/output/CHECKS.md` must pass. The PDF has no pictures (`include_pictures: false` in book.json)
+   and no About the Author page (`about_author_in_book: false`, so "Recognize Your Power" is the last line).
+4. Look at the first and last pages (`pdftotext -f 1 -l 5`, and the last five).
+5. Upload to the Drive folder "StS Publication Files" (id 1QmqU-MsDcqfh1sC5Q_DsGeqcdyf_kLB_) titled "StS v6 large
+   print CURRENT (date, edits 1 to N, what is new).pdf". Rename the one it replaces "OLD: StS v6 large print (edits
+   1 to M).pdf" and move it to "Older builds" (id 12CbC-hEUy_5rArVtz8v393rc_ciV9Ltv). Give CT the link.
 
 ## Final-pass checks (CT's standing list)
 - Every call to his mother: after the stroke, Elijah calls Sunday 9:40 in the MORNING. Exactly one call is at night
@@ -142,6 +188,13 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx` (every row must pass), commit and push.
   A correction to an edit not in the Doc yet replaces it in place; a change to words already in the Doc is a new edit,
   and the older edit's check row is narrowed or updated so both pass (as 113 was for 183).
+
+## Which copy is the most current (CT, 26 Nov)
+"I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including
+anything first made for v7 (edits 184 to 186). v7 is a frozen side copy; nothing goes into it unless CT asks. The next
+version of the book (CT hopes the last) will be made from v6 with every logged edit: when he says go, the logged
+edits go into the v6 Doc as suggestions (see "Later, when CT says go"), or a new Doc is made from make_v6.py's .docx
+the way v6 was made from v5. Ask him which before doing either, then add the new copy to the bridge map.
 
 ## v7 (26 Nov): a separate copy
 CT: "keep v7 as a totally new, totally separate thing ... I want to keep working on v6." The Google Doc "StS v7

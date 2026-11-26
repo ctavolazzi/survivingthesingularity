@@ -1345,16 +1345,16 @@ Priya had the sheet flat on the oilcloth before her coat was off. It was one pag
 "Three times."
 Irene was at the stove with her back to them, working a wooden spoon around the bottom of the near pot. "And what does all that come to?"
 "Four days a week back. Maybe five. I'll know when I measure it." Priya ran her pencil down the page. "With the same hands, call it sixty more boxes a week by summer."
-Marta read it with her right arm held in close against her side. "My last year at the plant, they bought a robot welder," she said. "It was going to give everybody a day a week back. It did. By spring it had given six of us the whole week."
+Marta read it with her right arm held in close against her side. "My last year at the plant, they bought a robot welder," she said. "It was going to give everybody a day a week back. It did, for a while. By spring they'd laid off six of us."
 "Who would we lay off?" Priya said. "Us?"
 "I know it. I'm just telling you how it sounds."
 "It isn't the beds anybody's worried about," Grace said. She had both hands around a mug of Irene's coffee and hadn't drunk any. "Two of the families on the route asked me last week if a robot packs their box. I said no. One of them said, not yet. Wren won't walk past bed four anymore. And Lupe stopped me at the gate yesterday and told me what she thinks of the little one, and the tall one, and anything taller than that." She smiled a little. "I didn't ask her."
 Irene turned the burner down. She came to the end of the table and sat, and it took her a minute, with one hand on the chair back the whole way.
-"When somebody comes up your drive to tell you what they think, and you never asked," she said, "it's hardly ever about the thing. People came up ours about every new thing this place ever bought. The sprayer. The pivot. They weren't there about the pivot, honey. They wanted to know if they still had a say on this road."
+"When somebody comes up your drive to tell you what they think, and you never asked," she said, "it's hardly ever about the thing. People came up ours about every new thing this place ever bought. The sprayer. The pivot. Every time, honey, what they wanted to know was whether they still had a say on this road."
 "So what do you tell them?" Priya said.
 "Not the numbers. You'll win on the numbers, and they'll go home and stay there." Irene picked a curl of apple peel off her sleeve. "You tell them they've still got a say. Then you'd better make it true."
 "And if they still don't want it?" Grace said.
-"Then you decide. If it's right, you buy it. Just don't tell yourself afterward it was free."
+"Then you decide. If it's right, you buy it, and you know going in that some of them won't stay."
 On the low burner the near pot had gone to a slow tick. Marta took the pencil and signed under Priya's name with her elbow tucked in. Grace sat with it until the pot ticked again, and signed under Marta.
 "I'll go talk to Lupe," she said.
 "You do that," Irene said. "And somebody stir that pot before it catches. My hands are done for the day.\""""),
@@ -1410,6 +1410,24 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (222, "He called the dealer. He sat in the cab for forty minutes on hold", "He called the dealer and sat in the cab for forty minutes on hold"),  # G12
 (222, "the shed, the shouse, the seed house, the packing shed and Irene's forty acres", "the shed, which was Walt's packing shed, the shouse, the seed house and Irene's forty acres"),  # H3
 (222, "It went through 13 versions", "It went through thirteen versions"),  # H6
+# 223, the held items of the pass resolved (CT, 26 Nov: "resolve as many of these as you can without my help"; drafts/pass-2026-11-26.md)
+(223, "It won't take the machines away first. It takes the people who see it coming, out of the world everyone they love still believes in.", "*It won't start with the machines. First it takes the people who see it coming, and pulls them out of the world everyone they love still believes in.*"),
+(223, "Everyone's first month here feels like the apocalypse.", "Everyone's first month with one of these feels like the apocalypse."),
+(223, "That night, on his way to bed, he unplugged the cable box.", "She called back at noon, from Joan's. Her phone had been dead in her purse all morning.\nThat night, on his way to bed, he unplugged the cable box."),
+(223, "That's my grandmother's hill out there. This is her kitchen.", "That's my grandmother's hill out there. This is my mother's kitchen."),
+(223, "She smiled and looked him right in the eyes from inches away.", "She smiled and looked Elijah right in the eyes from inches away."),
+(223, "Grace waited on the gravel with her own in her hand until it got dark, and then she went in.", "Grace waited on the gravel with her own in her hand for a long time, and then she went in."),
+(223, "It should have felt like traveling light. It felt like he had hardly been here at all.", "It felt like he had hardly been here at all."),
+(223, "so the sale would close before theirs did", "so the sale would close before the bank's did"),
+(223, "The machine made its version of what could be considered a wink", "The machine made its version of a wink"),
+(223, "Grace looked down the table at her, the way she had looked at Marta when she needed a yes.", "Grace looked down the table at her, the way she always had when she needed a yes."),
+(223, "The last time a glass went down on this stretch of wood, three went up.", "The night of the toast, one glass had gone down on this stretch of wood, and three had gone up."),
+(223, "He could leave one number blocked.", "He could leave Melody's number blocked."),
+(223, "Elijah donned his jacket.", "Elijah zipped his jacket."),
+(223, "Wren, a Gen Z artist born in 2001, leads the Sunday circle and paints the seed house.", "Wren, a Gen Z artist born in 2001, leads the Sunday circle and paints the seed house. Hector and Lupe Ochoa grew plugs at the north houses until the fall of 2027."),
+(223, "2025. The controllers, Denny's channel in June, the Crucible and the leak in July. Ray dies. Irene's land goes into the trust. The first fire.", "2025. The controllers, the heat and Denny's channel in June, the Crucible and the leak in July. Ray dies. Irene's land goes into the trust. The first fire.\nFall 2025. The pond. He starts for home at Thanksgiving and turns around."),
+(223, "November 2026. The co-op ships its files free.", "October 2026. The amp on the tailgate.\nNovember 2026. The co-op ships its files free."),
+(223, "March 2027. The machine on the dairy. Five small things go wrong.", "February to July 2027. Denny is gone.\nMarch 2027. The machine on the dairy. Five small things go wrong."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

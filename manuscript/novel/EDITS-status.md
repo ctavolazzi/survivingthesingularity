@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 9, accepted: 136, not in the Doc: 77.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 78.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -19,7 +19,7 @@ Edit 57 was never used.
 | 6 | Ch 0 | accepted | If Google was Einstein, PorusAI was Oppenheimer. |
 | 7 | Ch 0 | accepted | David gave him the look too, but at least David's looks came with a... |
 | 8 | Ch 1 | accepted | Devendra liked his coffee the same way every day and got very annoy... |
-| 9 | Ch 1 | accepted | Everyone's first month here feels like the apocalypse. |
+| 9 | Ch 1 | accepted | You'll calibrate. |
 | 10 | Ch 1 | accepted | You build models for a living. Relax. |
 | 11 | Ch 1 | accepted | That's one of the more aggressive ones I've heard yet. |
 | 12 | Ch 1, 2, Appendix | accepted | "Loser cooks dinner." |
@@ -233,3 +233,4 @@ Edit 57 was never used.
 | 220 | Ch 18 | not in the Doc | Lou got the two of them alone the week after that dinner. |
 | 221 | Ch 34 | not in the Doc | The afternoon before the October meeting, Priya took her sheet up t... |
 | 222 | Ch 0 to 36, Appendix | not in the Doc | He had found his first limit. It was heat. |
+| 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | not in the Doc | It won't start with the machines. First it takes the people who see... |

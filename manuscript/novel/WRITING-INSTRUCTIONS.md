@@ -431,3 +431,4 @@ Found by the audit. None is in the Doc. Fix each when its chapter is rewritten, 
 | "I still get letters" | "we don't know what kind of letters ... make things clear" | "weird letters" |
 | a first draft of these instructions that called every rule his | the audit | rules marked his or **[C]**; sections 5, 6, 9, 11, 12 and 15 added |
 | a synopsis check from grepped lines; "Ray's was horses" | "you're just giving me what you think I want ... actually read the book" | read the chapters, then answer claim by claim; `find_in_book.py` and a claims file |
+| Irene's advice in edit 221: "They weren't there about the pivot ... They wanted to know"; "Just don't tell yourself afterward it was free." | (caught in Claude's own review before CT read it) | the mirrored shape and the quotable closer creep into an elder's advice; say the plain thing ("what they wanted to know was ..."; "some of them won't stay") |

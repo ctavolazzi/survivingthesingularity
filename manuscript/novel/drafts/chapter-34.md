@@ -388,3 +388,13 @@ the wording is Claude's.
 - None outside Chapter 34. In the meeting: "Marta and Grace had signed it under her" and "She's not wrong about the
   factories" now pay off this scene; Lupe still says no after Grace's talk, which Irene's "And if they still don't
   want it?" allows, and the Ochoas' leaving answers her "don't tell yourself afterward it was free."
+
+### Corrected in place, 26 Nov (Claude's own review, before CT saw it)
+
+Three lines broke the writing rules (a mirrored line and two built to be quoted):
+- "They weren't there about the pivot, honey. They wanted to know if they still had a say on this road." becomes
+  "Every time, honey, what they wanted to know was whether they still had a say on this road."
+- "Then you decide. If it's right, you buy it. Just don't tell yourself afterward it was free." becomes "Then you
+  decide. If it's right, you buy it, and you know going in that some of them won't stay."
+- "It did. By spring it had given six of us the whole week." becomes "It did, for a while. By spring they'd laid off
+  six of us."

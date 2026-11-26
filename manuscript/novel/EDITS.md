@@ -3360,6 +3360,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+223. **The pass's held items, resolved.** CT (26 Nov): "I want you to resolve as many of these as you can without my
+     help." From `drafts/pass-2026-11-26.md`, "Held for CT", and the plan's section 13; Claude's wording throughout.
+     Ch 3, his italic note made plain ("It won't start with the machines. First it takes the people who see it coming,
+     and pulls them out of the world everyone they love still believes in."). Ch 1, Devendra's "first month with one of
+     these". Ch 5, Ma calls back at noon, from Joan's (**invented**: her phone dead in her purse). Ch 13, "my mother's
+     kitchen". Ch 18, "looked Elijah right in the eyes" (his line, the pronoun only). Ch 26, Grace waits "for a long
+     time", not until dark. Ch 37, "It should have felt like traveling light." cut (plan 13, item 4). Ch 37, "before the
+     bank's did". Ch 38, "its version of a wink"; "the way she always had when she needed a yes". Ch 39, "The night of
+     the toast, one glass had gone down on this stretch of wood, and three had gone up."; "Melody's number"; "Elijah
+     zipped his jacket." Appendix: the Ochoas in the cast; the heat in June, the pond and the U-turn, the amp on the
+     tailgate, and Denny gone in the timeline (plan 13, item 6). Left for CT: the gas cap (his scene ends on "Friday,"
+     she said.), and "Marta had heard it as a murder" (the plan's change read worse). Rows 9, 178, 204, 218 and 220
+     narrowed or moved to the new words. Logged only; not in the v6 Doc yet.
+
 222. **Whole book: the last continuity pass.** CT (26 Nov): "continuity errors, confusing moments, repetition, bad
      sentence structure, anything that might cause problems for the reader," then "Go on the pass." Eight readers read
      the book after edit 221 in eight ranges; 79 findings, every quote machine-checked; Claude judged each on the page.
@@ -3383,7 +3397,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      hardly ever about the thing ... They wanted to know if they still had a say on this road" and "Just don't tell
      yourself afterward it was free." Marta and Grace sign; Grace will talk to Lupe. The meeting's "Marta and Grace had
      signed it under her" and Marta's "She's not wrong about the factories" now have their setup. The treasurer stays
-     Reuben. 612 words in, none out. Logged only; not in the v6 Doc yet.
+     Reuben. 612 words in, none out. Corrected in place, 26 Nov (ninth chat, Claude's own review): Irene's mirrored "They weren't there about the pivot ... They
+     wanted to know" became "Every time, honey, what they wanted to know was whether they still had a say on this
+     road."; "Just don't tell yourself afterward it was free." became "and you know going in that some of them won't
+     stay."; Marta's "It did. By spring it had given six of us the whole week." became "It did, for a while. By spring
+     they'd laid off six of us." Logged only; not in the v6 Doc yet.
 
 220. **Chapter 18 opens on Lou: Praether's war, and the ace in the hole.** CT (26 Nov): "Then in the next chapter the
      reveal: Praether is a Gulf War vet, and maybe this is where Lou tells Elijah and Grace to keep the arms to

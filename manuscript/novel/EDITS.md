@@ -113,6 +113,9 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
 
 ### The plan for Chapter 20 to the end (Claude's draft, 26 Nov; nothing logged, waiting on CT)
 
+**The current map is `PLAN-CHAPTERS-20-TO-36.md`** (same folder), written later the same day. What follows is the
+earlier working: the readers' findings, plan v2 and the 59 line flags.
+
 Made from five readers' passes over make_v6.py's v6.txt (setups and payoffs, Elijah's arc, the co-op cast, moments
 told instead of shown, relationships), every anchor grep-checked. Their verdict on CT's question: the personal threads
 mostly land (David and the bar, "Barry", the amp, the coupon that "became the steel", Curtis's fence, Rosa), and

@@ -164,6 +164,13 @@ Open for CT, to ask one at a time with the line quoted and Claude's recommendati
   the way she talks." Claude's answer: yes, in a handful of her kind or warning lines (she says the mild thing and
   means the heavy one); she stays plain about the press, Emeka and safety; about one such line per scene. Offered
   to pull her lines chapter by chapter with candidates before logging any. Waiting on CT's go.
+- **The home stretch (CT, 26 Nov): `manuscript/novel/PLAN-CHAPTERS-20-TO-36.md`.** The map for reworking Chapters 20
+  to 36 so the fire in Ch 36 lands on losses the reader saw: what stays, what changes, who wants what, the rules for
+  writing it, what the ending depends on, and seven open questions. CT has decided: Ch 0 to 19 done; Ch 37 to the
+  Epilogue stay; the heat failure (a box cooks a greenhouse of starts) as the spine; Lou says the IBM line; Elijah
+  tries to leave and Grace stops him; the kiss at the pond; Denny leaves and comes back; the north-house couple leave
+  for good. A plan only: nothing in it is logged. Read it before drafting anything for those chapters. The readers'
+  reports behind it are summarized in `EDITS.md` ("Direction from CT, 26 Nov" and the plan sections after it).
 Then, each on CT's go: the eight Chapter 14 sentence-opening fixes (written again from a fresh read of v6.txt, the way
 edit 133 was done: only openings and joins, every fact, name and line of dialogue kept), then "Places to look at" in
 `EDITS.md` (Ch 31 and 39 marked probably deliberate; Ch 23 and the Ch 37 packing line already handled in edits 172 and

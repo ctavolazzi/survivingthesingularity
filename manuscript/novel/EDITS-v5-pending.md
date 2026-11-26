@@ -1498,6 +1498,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      The rest of the paragraph ("He stood at the window in his boxers...") stays. Logged only; not in the v6 Doc yet.
 
+143. **Chapter 2: Wes's "is this true" in italics.** CT (26 Nov): "The 'is this true' line is not italicized in Wes's
+     text. It needs to be." The book sets texts in italics (*is my stuff in that thing*, *Let me look into it,* he
+     sent). Book now, after "A minute later Wes sent a link. It was a hit piece on how much water Companion was going
+     to drink.": the line "is this true" in roman. Change to: *is this true*, in italics. No words change (edit 22's
+     line). Logged only; not in the v6 Doc yet. verify.py reads words, not italics, so make_v6.py checks this one.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

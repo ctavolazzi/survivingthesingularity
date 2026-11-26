@@ -18,7 +18,7 @@ import json, re, subprocess, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / "edits-v5"))
-from ops import OPS
+from ops import OPS, ITALIC
 from checks import C
 
 
@@ -176,6 +176,11 @@ def main():
     chars, attrs, images, log = apply(chars, attrs, images)
     text = "".join(chars)
     bad = check(text)
+    for n, line in ITALIC:
+        paras = paragraphs(chars, attrs)
+        hit = [r for pa, r in paras if "".join(c for _, c, _ in r) == line]
+        if len(hit) != 1 or not all(at[0] for _, _, at in hit[0]):
+            bad.append((n, "italics", [f"*{line}*"], []))
     for n, where, miss, left in bad:
         print(f"FAIL {n} ({where}): missing {miss} still there {left}")
     if bad:

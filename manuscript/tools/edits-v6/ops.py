@@ -332,4 +332,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (141, "you might not be paying enough attention.\n\nThis could be the most pivotal moment", "you might not be paying enough attention.\nThis could be the most pivotal moment"),
 # 142, Ch 1
 (142, "So it had a ceiling. The ceiling was a power bill. Whoever", "So it had a ceiling. Whoever"),
+# 143, Ch 2: Wes's text in italics
+(143, "to drink.\nis this true\nElijah didn't answer.", "to drink.\n*is this true*\nElijah didn't answer."),
 ]
+
+# Lines that must be italic from end to end (verify.py cannot see italics).
+ITALIC = [(143, "is this true")]

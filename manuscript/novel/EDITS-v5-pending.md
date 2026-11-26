@@ -1771,6 +1771,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+157. **Chapter 13, David leaves the farm: who heaves the hand truck.** CT (26 Nov): "Similarly, he took the hand truck back
+     into his pickup. Who are we talking about here?" It is David; the line before is his ("Yeah, I figured."), but it
+     opens on "He" and so do the next three sentences. Book now:
+
+     > He heaved the hand truck back into his pickup. He looked at the porch a second. There was nobody on it. He
+     > lifted two fingers off the wheel going down the drive, and Elijah lifted his hand.
+
+     Change to [Claude's wording; every fact kept]:
+
+     > David heaved the hand truck back into his pickup and looked at the porch a second. There was nobody on it.
+     > Going down the drive, he lifted two fingers off the wheel, and Elijah lifted his hand.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

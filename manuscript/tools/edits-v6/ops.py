@@ -367,6 +367,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 156, Ch 13
 (156, "He put his hand down.\nHe got the letter. He walked back to the truck the other way, which took him past the Bear Flag.",
 "Eventually his hand came down. The doctor's letter was still waiting at the office, so he went and picked it up. On the way back to the truck he went around the other way, which took him past the Bear Flag."),
+# 157, Ch 13
+(157, "He heaved the hand truck back into his pickup. He looked at the porch a second. There was nobody on it. He lifted two fingers off the wheel going down the drive, and Elijah lifted his hand.",
+"David heaved the hand truck back into his pickup and looked at the porch a second. There was nobody on it. Going down the drive, he lifted two fingers off the wheel, and Elijah lifted his hand."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -1485,6 +1485,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      all of human history." Change: delete that empty paragraph, so the two lines follow each other like the rest of
      the note. No words change. Logged only; not in the v6 Doc yet.
 
+142. **Chapter 1: "So it had a ceiling."** CT (26 Nov): "So it had a ceiling. The ceiling was a power bill. That's
+     confusing because we didn't talk about power before that. We talked about heat. So it had a ceiling. Just leave
+     it at that." Book now:
+
+     > So it had a ceiling. The ceiling was a power bill. Whoever could pay for the power and the cooling could have
+     > as much of it as they wanted.
+
+     Change to [CT's cut]:
+
+     > So it had a ceiling. Whoever could pay for the power and the cooling could have as much of it as they wanted.
+
+     The rest of the paragraph ("He stood at the window in his boxers...") stays. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

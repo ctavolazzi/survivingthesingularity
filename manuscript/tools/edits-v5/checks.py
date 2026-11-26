@@ -147,4 +147,5 @@ C=[
 (139,"Author's Note",["was a tool that does a thing. But this is different. The shovel never dug its own hole."],[]),
 (140,"Author's Note",["If I can ask anything of anyone, it's that you take a look at this for yourself."],["I'm not asking you to trust me."]),
 (141,"Author's Note",["you might not be paying enough attention.\nThis could be the most pivotal moment"],["you might not be paying enough attention. [break] This could be"]),
+(142,"Ch 1",["So it had a ceiling. Whoever could pay for the power and the cooling"],["The ceiling was a power bill."]),
 ]

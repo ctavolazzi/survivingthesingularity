@@ -330,4 +330,6 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (140, "I'm not asking you to trust me. I'm asking you to take a look for yourself.", "If I can ask anything of anyone, it's that you take a look at this for yourself."),
 # 141, Author's Note: the empty paragraph (scene break) before the last three lines
 (141, "you might not be paying enough attention.\n\nThis could be the most pivotal moment", "you might not be paying enough attention.\nThis could be the most pivotal moment"),
+# 142, Ch 1
+(142, "So it had a ceiling. The ceiling was a power bill. Whoever", "So it had a ceiling. Whoever"),
 ]

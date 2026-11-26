@@ -171,5 +171,5 @@ C=[
 (163,"Ch 17",["\"I don't know, I'm kind of turned off on telling it.\""],["\"I don't know. I'm kind of off telling it.\""]),
 (164,"Ch 17",["Without being conscious of it, his shoulders relaxed a few inches."],["He noticed his shoulders relax a bit."]),
 (165,"Ch 17",["said one word, \"Musicians,\" the same way you might say termites."],["said one word, \"Musician,\" the way you'd say termites."]),
-(166,"Ch 18",["\"I think the way you're doing it is just right,\" Elijah said.\nOut by the pond, the birds were chirping beautifully.\nChapter 19"],["\"I think what you're doing is just right,\" he said."]),
+(166,"Ch 18",["\"I think the way you're doing it is just right,\" Elijah said.\nOut by the pond, the birds were chirping magnificently.\nChapter 19"],["\"I think what you're doing is just right,\" he said."]),
 ]

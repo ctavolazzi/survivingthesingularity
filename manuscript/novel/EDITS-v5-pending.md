@@ -1956,7 +1956,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      > "I think the way you're doing it is just right," Elijah said.
      >
-     > Out by the pond, the birds were chirping beautifully.
+     > Out by the pond, the birds were chirping magnificently.
 
      Then "Chapter 19" as before. The pond is the one from edit 104 (the frogs at night). Context from CT, NOT for the
      page (edit 104): birds don't sing when there are predators around; it is his nervous system settling. Logged

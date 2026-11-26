@@ -3,7 +3,8 @@
 Updated 26 Nov 2026, end of the tenth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 229.** Edit 228 (eleventh chat): Lou's heavier entrance at the end of Chapter 16; Rosa's two scenes and
+**Next edit: 230.** Edit 229: Curtis and the Riemann hypothesis at Friday dinner, the week before Thanksgiving 2026
+(Ch 27; logged on the branch `claude/riemann-hypothesis-scene-li2h5n`). Edit 228 (eleventh chat): Lou's heavier entrance at the end of Chapter 16; Rosa's two scenes and
 the "stay for free" talk with Grace are held for CT (`drafts/edit-228-lou-comes-in.md`). The book in the Docs is "StS v8 draft (Nov 26)" (edits 1 to 223; no pictures), with a locked
 backup. Edits 224 to 227 are logged in GitHub only (tenth chat, 26 Nov): the laser weeder and the brain organoid
 ("Pondwater"); the panel, "overwhelmed", fifty million views and Ruby's pitch (Ch 8 to 10); why Elijah waits after the

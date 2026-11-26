@@ -3576,6 +3576,50 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      narrowed; row 229 checks the new words). 1,049 words in, 6 out. Record:
      `manuscript/novel/drafts/edit-229-riemann.md`. Logged only; not in the v8 Doc yet.
 
+230. **Chapters 17 and 18: Praether's terms, "I speak wingnut", and Lou at the barn.** CT (26 Nov, dictated): "The
+     warning given by Richard Praether when they're out there talking to him ... yeah, I heard from whoever that you
+     wanted to store some robot arms out in my old barn. I don't care about that as long as they're unplugged and
+     turned off and the military can't access them ... we don't have to say taken aback because we've already had that
+     a few times ... The guy says some other stuff. You can help me with that part ... he gets the names wrong. But he
+     doesn't care ... as far as I can remember, they're not dating at that point. So Grace stammers ... She wouldn't
+     put it back down on the ground. She puts it in the mailbox ... then the next beat should just say, the arms
+     arrived on time. Elijah canceled the storage unit. And had someone ... Won't be Grace ... It would make sense if
+     it was Lou, actually. Because then Lou can warn Elijah to keep it a secret ... And then he has that exchange that
+     we talked about earlier ... they're your people too now. And he looks him in the eyes real serious. He's like,
+     don't forget that."
+     What changed in the book. Chapter 17: Grace and Elijah now go out to Praether's before the arms come, on foot up
+     his drive, and make the deal; the arms come on the Wednesday and Lou, not Grace and not Praether, puts them in
+     the barn with Elijah. Replaced: the delivery scene of edit 205 from "The arms came up the day before the lien
+     sale." to "Neither of them said anything until the grange." (533 words out, 1,018 in). Chapter 18's opening
+     (edit 220) keeps Lou telling the two of them about the Gulf and Grace's lines; the ace in the hole moved to the
+     barn.
+     His words: Praether's lines from "you want to store some robot arms out in my old barn" to "If something else
+     comes up, I'll let you know."; Elijah's and Grace's answers; "Grace went to argue."; the shake; the grimace and
+     the smile; "He had the names wrong, and he didn't care."; "What the hell was that?" and "I speak wingnut"; "maybe
+     I should", "maybe I shouldn't", "maybe we shouldn't" and the mailbox; "The arms arrived on time. Elijah canceled
+     the storage unit"; all of Lou's lines and Elijah's at the barn. Lou's "You need to have an ace in the hole,
+     Elijah," Lou said with a knowing gaze, "Never reveal all of your cards again. I would have thought you'd have
+     learned that by now." and "Elijah felt the heat of embarrassment wash over him" are his from edit 220, joined to
+     the new wording. His "whoever" became Lou ("Lou maybe was the one that connected him with Richard"). His "I like
+     Ike, whoever it was" became "Like old Ike said."
+     Kept from the book: his description of the yard; Praether's looks and the burn barrel; "I can't pay much" and
+     the brush hog, one Saturday a month (Chapter 26 depends on it), as the "other stuff"; one finger up and "Mark my
+     words."; the barn's air; the loader and the tie-down that lets go with a bang, with Praether now going down on
+     his porch and Lou watching; "Some nights he drove out and looked at the barn from the road."
+     Out: "What's in them?" "Arms."; "Beware the military! They never built one thing ... That's how you'll know."
+     (the warning is now the military-industrial complex); the gas station movie talk in the truck (replaced by "I
+     speak wingnut"); the grin going off Grace's face.
+     Claude's wording: "Getting them north was the easy part."; "Lou said he'd have a word with Richard Praether
+     first. Then Grace and Elijah drove out the county road in the Ranger to ask the man themselves."; "They left the
+     Ranger by the mailbox."; "Grace and Elijah looked at each other, and then at him."; "Praether's face had set into
+     a big grimace."; "The grimace went"; "down the drive"; the letter's corner and "gone soft with rain, like it had
+     been there a while"; "The door was unlocked, like Praether had said it would be."; "Up at the house, Praether was
+     down flat on his porch boards"; "Lou watched him do it and said nothing."; in Chapter 18, "Richard give you the
+     speech?", "The military-industrial complex," and "Good. Keep it that way." Tyler at the hardware store still
+     names Praether's barn first (Chapter 19 says he sent Elijah out there).
+     Rows 88, 205, 220 and 222 narrowed. Record: `manuscript/novel/drafts/edit-230-praether-and-lou.md`. Logged only;
+     not in the v8 Doc yet.
+
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware
 the military!" stays, with "They never built one thing in their lives ... they come around with a check. Somebody

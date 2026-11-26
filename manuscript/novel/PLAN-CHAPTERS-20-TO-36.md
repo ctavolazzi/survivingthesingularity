@@ -891,6 +891,32 @@ CT's say for scenes away from Elijah (`WRITING-INSTRUCTIONS.md`, section 7, rule
 3. **Grace and Mrs. Delgado (Ch 32).** The night the box sat at the gate. Grace carries it in.
 Possible fourth: Priya and Wren, or Patricia's call to Grace on day nine of the dark (Ch 26).
 
+**CT's answer (26 Nov):** "Priya and Grace need to talk. Marta and some of the other women from the co-op the extended
+families. That type of thing please." So the list becomes (Claude's placing; none written yet):
+1. **Priya and Grace, the night before the county meeting (Ch 29 into 30), at the kitchen trailer with the banker's
+   box.** Priya ran for office and lost by about two hundred votes; Grace knocked on doors ahead of fires. Both have
+   stood on a stranger's step with three minutes. Priya coaches her on the red light and on bringing a number; Grace
+   brings names. It is the book's argument (proof, or act now) between the two women who hold its two ends, and it
+   sets up Thanksgiving, where they sit on different sides.
+2. **Marta and the women of the co-op and its families, in the grange hall kitchen on a Sunday (start of Ch 29).** The
+   kitchen feeds forty there every Sunday. Yvonne (Denny's wife, who "lifts grown men out of bed at three in the
+   morning") looks at Marta's shoulder and tells her what it is. Lupe, Rosa, Irene and Wren are at the counters. It is
+   where Marta gets the "two years" she announces at the annual meeting.
+3. **Grace and Lupe (Ch 23)** and **Grace and Mrs. Delgado (Ch 32)** stay on the list as short ones.
+Grace telling Marta where the arms are (Ch 26) is a separate scene; it is about Elijah.
+
+### 10.7 Praether's wound (CT's question, 26 Nov; not decided)
+
+CT: "Maybe he was a vet who got harmed by military tech? Like he got hit by agent orange or something similar, but
+maybe more contemporary from the recent past?" Claude's answer: the 1991 Gulf War. A man of about seventy was in his
+mid-thirties then. Two real things, both checked 26 Nov: (1) troops were given pyridostigmine bromide pills, an
+investigational use, after the FDA waived informed consent in January 1991, and many were told they could not refuse
+(RAND; a 1994 Senate committee survey); (2) on 4 and 10 March 1991 US engineers blew up the Khamisiyah depot, which held
+sarin and cyclosarin; the Defense Department learned of it in 1996 and told about 99,000 veterans by letter in 1997,
+and 101,000 in 2000 (health.mil; GulfLINK). So the harm came from his own side's technology, and the news of it came
+in the mail. The letter by his mailbox carries that. Agent Orange (Vietnam) also fits his age; burn pits (Iraq and
+Afghanistan) are the most recent, and would make him a career sergeant in his mid-sixties.
+
 ## 11. Chapter by chapter, 27 to 36
 
 Words now, from make_v6.py's v6.txt with edits 1 to 204. The ten chapters total 24,084 words. The target is to finish

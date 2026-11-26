@@ -13,8 +13,12 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 - [x] **What Praether says.** CT: "More of course lol, but that's his message, and it foreshadows the stuff about
       Ukraine and the people leaving the farm." The Chapter 17 scene is written (edit 205); the rest of Praether's
       lines are Claude's and his to correct. The smell of that barn is marked for him.
-- [ ] **Scenes with just the women** (plan, 10.6): three proposed (Grace and Lupe, Marta and Grace, Grace and Mrs.
-      Delgado). Waiting on his yes.
+- [x] **Scenes with just the women** (plan, 10.6). CT, 26 Nov: "Priya and Grace need to talk. Marta and some of the
+      other women from the co-op the extended families." To write with their chapters: Priya and Grace the night
+      before the county meeting (Ch 29 into 30); Marta, Yvonne and the women in the grange hall kitchen (Ch 29); Grace
+      and Lupe (Ch 23); Grace and Mrs. Delgado (Ch 32).
+- [ ] **Praether's wound** (plan, 10.7): Claude recommends the 1991 Gulf War (the pills, Khamisiyah, the letters).
+      Waiting on his yes; then a small correction to edit 205.
 - [x] **The rover and the arms.** CT, 26 Nov: "Yes". The rover stays as written; the arms are the machine the table
       says no to in Chapter 34. His addition: "I had originally envisioned Elijah storing the arms on the farm to sort
       of prove his value and save money. A moment he would have longed for since the electrical bill." With his line,

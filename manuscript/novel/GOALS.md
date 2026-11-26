@@ -32,7 +32,8 @@ please be sure to start with your own. Recognize your power."
 |---|---|
 | It sounds like CT | Every new passage passes the checklist in `WRITING-INSTRUCTIONS.md`, section 13, before it is logged |
 | His words are his | CT's words go in word for word and are marked in each chapter's file in `drafts/` |
-| The book does not get longer | Chapters 27 to 36 total 22,590 words now (`story_report.py`, edits 1 to 205; an earlier 24,084 counted line numbers). They finish at or under that. Each chapter's target is in the plan, section 11 |
+| Length is not the measure (CT, 26 Nov: "I don't care how long it gets I want it to be good"). The row below is kept for the record only |
+| ~~The book does not get longer~~ | Chapters 27 to 36 total 22,590 words now (`story_report.py`, edits 1 to 205; an earlier 24,084 counted line numbers). They finish at or under that. Each chapter's target is in the plan, section 11 |
 | Every invented fact is flagged | Each chapter report lists what Claude invented; CT changes what he wants |
 
 ## 3. The record

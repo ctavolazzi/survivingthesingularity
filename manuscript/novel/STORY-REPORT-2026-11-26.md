@@ -23,10 +23,10 @@ anything else structurally problematic that we might want to adjust, edit, or ch
    buckets in the barn, the old man's twenty, the broom, Denny's ladder, the soup jars, the cooked trays, the pot
    carried back inside, the missed funeral hour, the stove, the pond, the fire, the tape on the gate, "It became the
    steel," the note in the amp, "No, man. You're good."
-2. **It goes flat where the largest things are summarized.** Three of the biggest are told in a sentence: he sells his
-   mother's farm (Ch 13), he confesses the board (Ch 22), and a year passes between two people who want each other
-   (Ch 26). The fire's deepest cut, "You signed your mother's house away," lands on a moment the reader was told about
-   and never watched.
+2. **It goes flat where the largest things are summarized.** Two of the biggest were told in a sentence: he confesses
+   the board (Ch 22; since played, edit 201) and a year passes between two people who want each other (Ch 26). (A third
+   claim here, that the sale of the farm in Ch 13 is summary, was a reader's and was wrong; Claude read the pages
+   later the same day. The sale is a full scene in CT's words.)
 3. **The middle now has a chain of losses, and three links are weak:** Elijah never stands in front of the Ochoas; the
    year of waiting has no obstacle on his side; and several costs are refunded inside the chapter that charges them.
 4. **Continuity is close.** About thirty errors were fixed on 26 November. Seven remain in chapters CT called done,
@@ -76,7 +76,7 @@ raised hand in the street (Ch 13). The twenty (Ch 15). Denny's ladder (Ch 17). "
 
 | Where | What happens | Why it matters |
 |---|---|---|
-| Ch 13, the sale of the farm (reader) | "Then the dam broke." ... "Elijah picked up the phone." ... "Elijah knew his mother was safe." Three sentences of summary | It is the act he carries for the rest of the book. Grace throws it at him at the fire. The reader should have watched him sign |
+| Ch 13, the sale of the farm (reader) | **Corrected the same evening, after Claude read the pages:** this finding was wrong. The offer is a full scene in CT's words (the yellow Oldsmobile, the folder, "Get bent," "Then the dam broke," the Crisco). Only the signing at the bank is brief | Nothing to rewrite. Two small continuity items remain (section 6, items 1 and 2) |
 | Ch 22, the confession | "told them about the circuit board too," with no spoken line. Marta, who had said "Now that's ours" of the board, never answers the lie. Nobody tells Patricia it wasn't Tyler's code | The secret was built for three chapters |
 | Ch 26, the year | Three sentences. The only reason given is hers ("she didn't knock again") | A year of two people at one table is the will-they-won't-they CT asked for |
 | Ch 4 (reader) | No dialogue; all summary | The one chapter no reader remembers anything from |
@@ -205,9 +205,9 @@ New from this report:
 | 5 | Praether twice more before Ch 34 | Ch 24 or 25, and 29 or 32 | about 60 words each | nothing |
 | 6 | Ma's fall stays open overnight | Ch 26 | reorder, no words | nothing; corrects 204 |
 | 7 | Split Chapter 26 at the October night | Ch 26 | a new heading and title | CT's yes (a new chapter and its name) |
-| 8 | The farm sale as a scene | Ch 13 | about 200 words in place of 60 | CT's yes (a done chapter) |
+| 8 | ~~The farm sale as a scene~~ (withdrawn: it already is one) | Ch 13 | | |
 | 9 | The seven continuity items in section 6 | Ch 5, 11, 13, 15, 19, 26, 37, 38 | a word or a line each | CT's yes |
-| 10 | Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate | Ch 3, 4, 20 | minus about 600 words | CT's yes |
+| 10 | ~~Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate~~ (withdrawn after reading both: Chapter 4 is where he decides to "work the near end," and Chapter 20's argument carries CT's own lines) | | | |
 | 11 | The smell pass, his two places first | Ch 9 or 10, 14, 15 | a line each | his lines |
 
 Not recommended: touching the fire, Chapters 37 to 39 beyond the listed lines, or the Epilogue. They are the best

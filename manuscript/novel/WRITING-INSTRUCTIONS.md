@@ -34,7 +34,12 @@ From his feedback file (7 Nov): "Please don't give me basic predictable crap tha
   rewrite forces.
 - Chapters 20 to 36 are being rewritten to the plan. "I don't want you to delete things willy-nilly. Keep as much of
   what we have as you can that makes sense to keep."
-- **Reduce.** "We could chop, cut, remove a lot of the like filler and chaff ... this is the reduction process ...
+- **Length is not the measure (CT, 26 Nov, evening): "I don't care how long it gets I want it to be good."** This
+  replaces the word budgets below. Still cut filler, summary and repeated lessons, because they are not good; never
+  cut a scene, or hold one back, to hit a count. Claude had recommended three cuts for length, two of them on a
+  reader's word without reading the pages (Chapter 4, and "the farm sale is summary" in Chapter 13); on reading them,
+  both recommendations were wrong.
+- **Reduce** (his earlier word, now read as "cut what is weak"). "We could chop, cut, remove a lot of the like filler and chaff ... this is the reduction process ...
   We're making a risotto." The four chapters done so far each grew (Ch 20 by about 120 words, Ch 21 by 1,050, Ch 22
   by about 500, Ch 25 by 1,400). The book is long enough [edit 131 note: "Book's already long enough"]. From Chapter
   23 on, count the words in and out, and cut summary, repeated lessons and filler to pay for what is added. **[C]**

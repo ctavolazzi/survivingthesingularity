@@ -63,10 +63,11 @@ No decision needed (corrections to chapters already rewritten):
 Need CT's yes:
 - [ ] Ch 25: one line of logic at the truck stop (his scene).
 - [ ] Split Chapter 26 at the October night (a new chapter and its title).
-- [ ] Ch 13: the sale of the farm as a scene.
+- [x] ~~Ch 13: the sale of the farm as a scene.~~ Withdrawn: on reading, it already is one (CT's words).
 - [ ] The seven continuity items in the report, section 6 (Ch 5, 11, 13, 15, 19, 26 and the ending).
-- [ ] Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate.
-- [ ] Chapter 33's tomato dinner: cut the cotton gin numbers, the saber-tooth and the rent, and "Pull apart what it takes
+- [x] ~~Fold Chapter 4 into 3; cut the essay half of Chapter 20's debate.~~ Withdrawn (CT: "I don't care how long it gets I want
+      it to be good"; both read and both earn their place).
+- [x] ~~Chapter 33's tomato dinner: cut the cotton gin numbers, the saber-tooth and the rent, and "Pull apart what it takes
       to stay alive" (they say the Afterword's argument a second time; about 400 words). They may be CT's own words, so
       not cut without his yes.
 - [ ] The name of the next build, and "OLD:" on the frozen v7 Doc (`NEXT-BUILD.md`, section 1).
@@ -81,7 +82,7 @@ Need CT's yes:
       CT, since Chapters 0 to 19 are done.
 - [ ] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only.
 - [ ] A last readers' pass over the whole book for continuity, every quote grep-checked; fix what it finds.
-- [ ] Words: Chapters 27 to 36 at or under 22,590 in total.
+- [x] ~~Words: Chapters 27 to 36 at or under 22,590 in total.~~ Dropped: length is not the measure (CT, 26 Nov).
 - [ ] `build_gate.py OUT/v6.txt --todo manuscript/novel/TODO.md` says READY.
 - [ ] Ask CT how the final copy is made (a new Doc from make_v6.py's .docx, or the edits as suggestions in the v6
       Doc), then do it on his go and update the bridge map.

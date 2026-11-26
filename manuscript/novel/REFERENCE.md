@@ -51,8 +51,8 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 - **His words go in word for word** and are marked his. Smooth only what dictation broke. Mark what Claude worded.
   His notes that aren't for the page never go in the text.
 - **Flag every fact Claude invents**, in the report for that chapter.
-- **Reduce.** "The book is long enough." Count words in and out for each chapter; cut summary, repeated lessons and
-  filler to pay for what is added. Targets: the plan, section 11.
+- **Good, not short.** CT, 26 Nov: "I don't care how long it gets I want it to be good." Cut summary, repeated
+  lessons and filler because they are weak, never to hit a count. Still report words in and out so he can see it.
 - **Push back on** continuity errors, contradictions, logistics that can't happen and anything that confuses the
   reader. **Not** on his taste or a decision he has made.
 - **A question from CT gets an answer, not an action.** Answer first, short. "Think about" and "let's figure out" mean

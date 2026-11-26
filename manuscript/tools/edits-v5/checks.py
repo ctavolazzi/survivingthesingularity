@@ -198,4 +198,5 @@ C=[
 (190,"Ch 20",["Elijah had no idea. He was a little ashamed of that.\nSo Lou showed him."],["He had a notebook with the wattage of his cable box in it."]),
 (191,"Ch 20",["\"It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique advantages.\"\n\"Such as?\"\n\"Well,\" Lou said. \"Nine people here don't get paid,"],["It doesn't work, man. It's never worked."]),
 (192,"Ch 20",["Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner."],["Elijah thought about his mother, and the pot she never let anyone else wash."]),
+(193,"Ch 20",["Not a subscription. I already lost one orchard.\""],["lost one orchard to one buyer."]),
 ]

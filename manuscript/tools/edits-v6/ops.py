@@ -688,6 +688,9 @@ Figures, he thought. I hope they have a good mechanic."""),
 # 192, Ch 20: the pot points back to Ch 13
 (192, "Elijah thought about his mother, and the pot she never let anyone else wash.",
 "Elijah thought about his mother, and her sacred pot burned to a crisp on the back burner."),
+# 193, Ch 20: Lou, "I already lost one orchard."
+(193, "Not a subscription. I already lost one orchard to one buyer.\"",
+"Not a subscription. I already lost one orchard.\""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

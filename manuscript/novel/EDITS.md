@@ -2847,6 +2847,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+193. **Chapter 20, Lou on robots: "I already lost one orchard."** CT (26 Nov): "Lou says, I already lost one orchard
+     to one buyer, and that doesn't make sense. I already lost one orchard is enough." Book now:
+
+     > Not leased. Not a subscription. I already lost one orchard to one buyer."
+
+     Change to [CT's words]:
+
+     > Not leased. Not a subscription. I already lost one orchard."
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -1884,6 +1884,51 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Then "Somewhere in there he ran out of gas..." as before. Logged only; not in the v6 Doc yet.
 
+161. **Chapter 17, the first Friday dinner: Priya and her pencil.** CT (26 Nov), on the page with "That's a picture": "Priya
+     said, fidgeting with the pencil behind her ear." Book now:
+
+     > "That's a picture," Priya said. "What would you measure?"
+
+     Change to [CT's words; placed by Claude on this line, her challenge to him, since the page has two "Priya said"]:
+
+     > "That's a picture," Priya said, fidgeting with the pencil behind her ear. "What would you measure?"
+
+     A few lines later (edit 90) she "took the pencil from behind her ear, like somebody pulling a chair up to a
+     fight", so the fidgeting leads into it. Logged only; not in the v6 Doc yet.
+
+162. **Physical beats on bare dialogue tags, through the book.** CT (26 Nov): "There's many opportunities to show physical
+     action in moments like these. Please find some and add them to the edits. DO NOT OVERDO IT. Simple physical
+     actions that make sense and add character, texture, and color to the book is what I'm after." Claude's choice
+     and wording: eleven lines, out of about 110 bare "X said." tags, each where nobody in the scene is already
+     moving, using what the book already gives each person (Ruby's fire escape, Reuben's glasses, Grace at the stove,
+     Curtis's hands in the wash water, Tyler carrying the reel, the serenity prayer frame behind David's bar).
+     Left alone: anywhere the paragraph before already has an action, and Lou's walnuts, which belong to Chapter 35.
+
+     1. Ch 10: "Fire escape," Ruby said. "It's the only good room." becomes:
+        > "Fire escape," Ruby said, already sliding a window up. "It's the only good room."
+     2. Ch 13: "Heard they close Friday," David said. becomes:
+        > "Heard they close Friday," David said, looking past him at the house.
+     3. Ch 17: "They broke things," Curtis said. becomes:
+        > "They broke things," Curtis said, pointing his fork down the table at her.
+     4. Ch 23: "Every month," Reuben said. becomes:
+        > "Every month," Reuben said, pushing his glasses up onto his forehead.
+     5. Ch 24: "You could find out," Grace said. becomes:
+        > "You could find out," Grace said, holding her hands out to the stove.
+     6. Ch 26: starts with lettuce," Curtis said. "Then it's Skynet." becomes:
+        > starts with lettuce," Curtis said, shaking the cold water off his hands. "Then it's Skynet."
+     7. Ch 27: "Wait, so the plan is chalk," Tyler said. becomes:
+        > "Wait, so the plan is chalk," Tyler said, shifting the reel to his other arm.
+     8. Ch 33: "I know it," Lou said. becomes:
+        > "I know it," Lou said, and set down his fork.
+     9. Ch 34: "It's a sensor," Curtis said. "It's two wires." becomes:
+        > "It's a sensor," Curtis said, pinching the bridge of his nose. "It's two wires."
+     10. Ch 37: "You swept," Lou said. becomes:
+        > "You swept," Lou said, looking past him into the shouse.
+     11. Ch 39: "Thirty years that's been on that wall," David said. becomes:
+        > "Thirty years that's been on that wall," David said, following his eyes up to the frame.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

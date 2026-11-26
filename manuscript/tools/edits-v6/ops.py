@@ -385,6 +385,32 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "Going off wasn't the plan. All he'd meant to say was hello. But he had spent"),
 (160, "fixed things for her neighbors. He told her what was coming, fast: the models, the list, the end of the deal. And then he started pitching.\nHe heard himself say the shop could scale. He said platform. He said there ought to be an app, a network of co-ops, a marketplace layer. He could build it in a month. This thing could be in fifty towns by Christmas. They could get ahead of the wave. He said first-mover, and heard it come out of his mouth in Ruby's voice, quick and light.",
 "fixed things for her neighbors. So he told her what was coming, fast: the models, the list, the end of the deal. And then he started pitching.\nThe shop could scale, he heard himself say. Platform. There ought to be an app, a network of co-ops, a marketplace layer. He could build it in a month. This thing could be in fifty towns by Christmas. They could get ahead of the wave. *First-mover,* he said, and heard it come out of his mouth in Ruby's voice, quick and light."),
+# 161, Ch 17
+(161, "\"That's a picture,\" Priya said. \"What would you measure?\"",
+"\"That's a picture,\" Priya said, fidgeting with the pencil behind her ear. \"What would you measure?\""),
+# 162, physical beats
+(162, "\"Fire escape,\" Ruby said. \"It's the only good room.\"",
+"\"Fire escape,\" Ruby said, already sliding a window up. \"It's the only good room.\""),
+(162, "\"Heard they close Friday,\" David said.",
+"\"Heard they close Friday,\" David said, looking past him at the house."),
+(162, "\"They broke things,\" Curtis said.",
+"\"They broke things,\" Curtis said, pointing his fork down the table at her."),
+(162, "\"Every month,\" Reuben said.",
+"\"Every month,\" Reuben said, pushing his glasses up onto his forehead."),
+(162, "\"You could find out,\" Grace said.",
+"\"You could find out,\" Grace said, holding her hands out to the stove."),
+(162, "starts with lettuce,\" Curtis said. \"Then it's Skynet.\"",
+"starts with lettuce,\" Curtis said, shaking the cold water off his hands. \"Then it's Skynet.\""),
+(162, "\"Wait, so the plan is chalk,\" Tyler said.",
+"\"Wait, so the plan is chalk,\" Tyler said, shifting the reel to his other arm."),
+(162, "\"I know it,\" Lou said.",
+"\"I know it,\" Lou said, and set down his fork."),
+(162, "\"It's a sensor,\" Curtis said. \"It's two wires.\"",
+"\"It's a sensor,\" Curtis said, pinching the bridge of his nose. \"It's two wires.\""),
+(162, "\"You swept,\" Lou said.",
+"\"You swept,\" Lou said, looking past him into the shouse."),
+(162, "\"Thirty years that's been on that wall,\" David said.",
+"\"Thirty years that's been on that wall,\" David said, following his eyes up to the frame."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

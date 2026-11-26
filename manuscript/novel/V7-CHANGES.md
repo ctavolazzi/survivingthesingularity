@@ -8,7 +8,9 @@ sessions, but keep v7 as a totally new, totally separate thing."
 not follow them unless CT asks.
 
 **26 Nov, later: the v7 changes are in v6 too.** CT: "I want the v6 that I'm reading in large print to be the most
-current version." They are v6 edits 184 (first line), 185 (Dedication) and 186 (Thank You, last line). v7 itself is
+current version." They are v6 edits 185 (Dedication), 184 ("Recognize Your Power" closing it) and 186 (Thank You, last line).
+In v6 they differ from v7 on CT's word: no first page of "Recognize Your Power" (the title page comes first), and
+the Thank You is in CT's own words. v7 itself is
 unchanged and stays separate; `make_v7.py` still makes it from v6 through edit 171.
 
 ## How it was made

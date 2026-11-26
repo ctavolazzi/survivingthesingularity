@@ -78,7 +78,8 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 - An `ops.py` row is (edit number, find, replace). The find must appear exactly once. In the replacement a newline
   starts a paragraph, an empty line is a scene break, `*...*` is italic, and at the start of a paragraph `§H1 ` makes
   it a heading and `§C ` centers it. A find of `""` inserts at the very start of the book (edit 184); a find of
-  `(start, end)` replaces the span from the one start to the first end after it (edit 185).
+  `(start, end)` replaces the span from the one start to the first end after it (edit 185). The build gives any line
+  before the title a page of its own; nothing uses that now (CT: the title page comes first).
 - `ITALIC` in `ops.py`: lines that must be italic end to end (verify.py cannot see italics).
 - `manuscript/tools/edits-v5/verify.py READ.json`: where each edit stands in a Doc (accepted, suggested, not in the
   Doc, PARTIAL).
@@ -149,8 +150,8 @@ Then, each on CT's go: the eight Chapter 14 sentence-opening fixes (written agai
 edit 133 was done: only openings and joins, every fact, name and line of dialogue kept), then "Places to look at" in
 `EDITS.md` (Ch 31 and 39 marked probably deliberate; Ch 23 and the Ch 37 packing line already handled in edits 172 and
 178; each shown to CT with a proposed fix before it is logged).
-Also waiting on CT: which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; who the dedication is to (the line in
-edit 185 is Claude's draft); go on the sentence-opening checker.
+Also waiting on CT: which of the 16 scene breaks in `SCENE-BREAKS-v6.md` to cut; go on the sentence-opening checker. The
+dedication is settled (CT, 26 Nov: "The dedication was good. I liked what you wrote.").
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -165,15 +166,18 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   nothing about putting 139 onward into the Doc; log only. Do not change the Doc.
 - Done in the sixth chat: 183 (Ch 18: "the co-op's gravel lot", and Claypot ships "on a Thursday afternoon, just
   fifteen minutes before the financial markets closed"); 184 to 186, the v7 changes brought into v6 at CT's word ("I
-  want the v6 that I'm reading in large print to be the most current version"): "Recognize Your Power" first and last,
-  the Author's Note turned into a Dedication, a Thank You at the end. Check rows 1, 2 and 139 to 141 now read
+  want the v6 that I'm reading in large print to be the most current version"): the Author's Note turned into a
+  Dedication that ends on "Recognize Your Power", and CT's own Thank You at the end, closing on "Recognize Your
+  Power". (184 first put the line on a page of its own before the title; CT: "I don't want the first page to be
+  recognize your power. This is a manuscript." Corrected in place.) Check rows 1, 2 and 139 to 141 now read
   "replaced by 185".
 - Names cleaned up at CT's request ("The naming system is confusing me"): the edit list is `EDITS.md` (was
   EDITS-v5-pending.md), its status table `EDITS-status.md`; the Drive folder is "StS Publication Files", with
   everything older in its "Older builds"; the Drive mirror is "StS v6 edit list (mirror of GitHub)".
-- The large print PDF CT reads: "StS v6 large print CURRENT (26 Nov, edits 1 to 186, Dedication and Recognize Your
-  Power).pdf" in "StS Publication Files" (https://drive.google.com/file/d/1Jnn--avJ8IRG0Cu6cFg_Fk9kHrCEgRGh/view),
-  664 pages, every build check passing. Made with `make_v6.py V5_READ.json OUT` (with the .docx), then
+- How the book opens (CT, 26 Nov): title page, copyright page, Contents, Dedication (ending "Recognize Your Power"),
+  then Act One and Chapter 0. No introduction; the Author's Note is gone.
+- The large print PDF CT reads: "StS v6 large print CURRENT (26 Nov, edits 1 to 186, Dedication and Thank You).pdf"
+  in "StS Publication Files" (link in STATE.md), 662 pages, every build check passing. Made with `make_v6.py V5_READ.json OUT` (with the .docx), then
   `python3 publication/novel/build/build.py OUT/v6.docx --only large --skip-edit-gate` (run `pip install -r
   publication/novel/build/requirements.txt` and `mkdir -p publication/novel/work` first in a fresh container). It has
   no pictures (book.json `include_pictures: false`) and no About the Author page (`about_author_in_book: false`, so
@@ -199,7 +203,7 @@ the way v6 was made from v5. Ask him which before doing either, then add the new
 ## v7 (26 Nov): a separate copy
 CT: "keep v7 as a totally new, totally separate thing ... I want to keep working on v6." The Google Doc "StS v7
 draft (Nov 26)" is v6 through edit 171 plus the v7-only changes in `manuscript/tools/edits-v7/ops_v7.py`
-(Dedication, Thank You, "Recognize Your Power" first and last). Record: `manuscript/novel/V7-CHANGES.md`. New edits
+(Dedication, Thank You, "Recognize Your Power" first and last; v6 has its own versions of these). Record: `manuscript/novel/V7-CHANGES.md`. New edits
 go into v6 as before, from 172; v7 does not follow them unless CT asks.
 Since 26 Nov the same v7 changes are also in v6 (edits 184 to 186); the v7 Doc itself is unchanged.
 

@@ -654,19 +654,19 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen minutes before the financial markets closed. Elijah read the announcement post standing in the co-op's gravel lot"),
 # 184 to 186, the v7 changes brought into v6 (CT, 26 Nov: "I want the v6 that I'm reading in large print to be the
 # most current version"). The wording is in manuscript/tools/edits-v7/ops_v7.py and V7-CHANGES.md.
-# 184, the very beginning
-(184, "", "§C Recognize Your Power\n"),
 # 185, Contents and the Author's Note: the note becomes a Dedication, and Thank You joins the contents
 (185, "Contents\nAuthor's Note\n", "Contents\nDedication\n"),
 (185, ("Appendix\nAuthor's Note\nFor years, I've been talking about this.\n", "Let's begin to imagine how."),
 "Appendix\nThank You\n§H1 Dedication\n§C For the people I love who looked me in the eye like I'd finally lost it."),
+# 184, "Recognize Your Power" closes the Dedication (corrected 26 Nov: it was a first page of its own)
+(184, "For the people I love who looked me in the eye like I'd finally lost it.",
+"For the people I love who looked me in the eye like I'd finally lost it.\n§C Recognize Your Power"),
 # 186, the very end: Thank You, and the last line
 (186, "Thursday, November 25, 2027. Thanksgiving.",
 """Thursday, November 25, 2027. Thanksgiving.
 §H1 Thank You
-Thank you for your time. I know how much of it you gave me, and I don't take that lightly.
-You just spent a whole book with a man who saw it coming and still got most of it wrong. Take what you learned, about the world and about yourself, and do better than Elijah did. Ask before you fix. Listen longer than feels comfortable. Do one real thing before noon.
-And when it gets loud, believe in yourself. Most of what you need, you already have.
+Thank you for reading. Thank you for your time.
+Please consider how much of a difference each and every one of us can make in this world if we really try. But you don't really need to make that big of a difference to everyone. You are someone. And if you touch any heart, please be sure to start with your own.
 §C Recognize Your Power"""),
 ]
 

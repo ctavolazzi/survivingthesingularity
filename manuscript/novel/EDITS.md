@@ -2703,15 +2703,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
-184. **The very beginning: "Recognize Your Power".** CT (26 Nov): "Yes. I want the v6 that I'm reading in large print to
-     be the most current version," of the v7 changes (`V7-CHANGES.md`). CT's words, from v7: "'Recognize Your Power' is
-     the last final line in the entire text, at the ver very end, and at the very, very beginning." Change: a new first
-     line, centered, above the title:
+184. **"Recognize Your Power" closes the Dedication.** CT (26 Nov): "Yes. I want the v6 that I'm reading in large print
+     to be the most current version," of the v7 changes (`V7-CHANGES.md`). Corrected the same day, in place (not in the
+     Doc yet): first logged as a first page of its own, above the title. CT: "I don't want the first page to be
+     recognize your power. This is a manuscript. So the first page should be the title, and then the like copyright
+     information ... and then there's the dedication ... We don't have an introduction ... we just have chapter 0, and
+     I kind of just want to start it there ... So the recognize your power bit should be part of the dedication."
+     Change: after the Dedication's line (edit 185), a second centered line:
 
+     > For the people I love who looked me in the eye like I'd finally lost it.
+     >
      > Recognize Your Power
 
-     [CT's words.] The large print PDF gives it a page of its own, before the title page. Logged only; not in the v6
-     Doc yet.
+     [CT's words.] Then Act One and Chapter 0, as before. The book opens: title page, copyright page (the build adds
+     it), Contents, Dedication, Act One, Chapter 0. Logged only; not in the v6 Doc yet.
 
 185. **The Author's Note becomes a Dedication.** CT (26 Nov, for v7, now v6 too): "About the author and author's note
      need to be revised to be a dedication instead of an author's note." In Contents, "Author's Note" becomes
@@ -2722,21 +2727,22 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > For the people I love who looked me in the eye like I'd finally lost it.
 
      [Claude's draft, made from CT's own sentence in the note: "I've watched people I love look me in the eye like I'd
-     finally lost it." CT has not said who the dedication is to.] Edits 1, 2 and 139 to 141 were in the Author's Note,
+     finally lost it." CT (26 Nov): "The dedication was good. I liked what you wrote."] Edits 1, 2 and 139 to 141 were in the Author's Note,
      so their check rows now say "replaced by 185". Logged only; not in the v6 Doc yet.
 
 186. **The very end: Thank You, and "Recognize Your Power".** CT (26 Nov, for v7, now v6 too): "the about is a
-     gratitude to the reader for their time, and a gentle request to use what they learned about the world and
-     themselves to do better than Elijah, but also to remember to believe in themselves." After the Appendix's last
-     line, "Thursday, November 25, 2027. Thanksgiving.", a heading "Thank You" and [Claude's draft, from CT's brief]:
+     gratitude to the reader." Claude's first draft was replaced the same day, in place (not in the Doc yet), by CT's
+     own words: "the acknowledgement is a thank you for reading, thank you for your time. Please consider how much of a
+     difference each and every one of us can make in this world if we really try. But you don't really need to make
+     that big of a difference to everyone. You are someone. And if you touch any heart, please be sure to start with
+     your own. Recognize your power." After the Appendix's last line, "Thursday, November 25, 2027. Thanksgiving.", a
+     heading "Thank You" and [CT's words; only the sentence breaks are Claude's]:
 
-     > Thank you for your time. I know how much of it you gave me, and I don't take that lightly.
+     > Thank you for reading. Thank you for your time.
      >
-     > You just spent a whole book with a man who saw it coming and still got most of it wrong. Take what you learned,
-     > about the world and about yourself, and do better than Elijah did. Ask before you fix. Listen longer than feels
-     > comfortable. Do one real thing before noon.
-     >
-     > And when it gets loud, believe in yourself. Most of what you need, you already have.
+     > Please consider how much of a difference each and every one of us can make in this world if we really try. But
+     > you don't really need to make that big of a difference to everyone. You are someone. And if you touch any heart,
+     > please be sure to start with your own.
 
      Then the last line of the book, centered: "Recognize Your Power" [CT's words]. The large print PDF no longer adds
      the "About the Author" page after it (`about_author_in_book` in `publication/novel/build/book.json`; the bio stays

@@ -3,7 +3,7 @@
 Updated 26 Nov 2026, end of the eighth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 224.** The book is the Google Doc "StS v8 draft (Nov 26)" (every edit, 1 to 223; no pictures), with a
+**Next edit: 225.** (224, tenth chat: the laser weeder and the brain organoid, in "Pondwater".) The book is the Google Doc "StS v8 draft (Nov 26)" (every edit, 1 to 223; no pictures), with a
 locked backup; the large print PDF of v8 is in Drive. This chat (26 Nov, ninth): the women's scene in Chapter 34
 (221), the whole-book continuity pass (222), its held items resolved (223), v8. Next: the housekeeping pass; its
 prompt is in `CHECKPOINT-2026-11-26-v8.md`.

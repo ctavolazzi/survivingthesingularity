@@ -3362,6 +3362,31 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+224. **Pondwater: Curtis shows the table a laser weeder run by a brain organoid; Grace tells Elijah about her
+     festival outside.** CT (26 Nov, tenth chat): "Do we have a scene in the book where they mention or discuss laser
+     weeders? Or any other modern industrial agtech? I feel like the near-future stuff should be in there. Also...maybe
+     brain organoids?" The book had neither. He dictated the scene from Priya's "You mean..." to Grace's "Hey so,
+     changing the subject," and: "And then you can connect it to the next story elements with what she says after
+     that." Context from CT, NOT for the page: "The scene resolves with a brief conversation between Elijah and Grace
+     outside after everyone parts ways."
+     Where: Pondwater, in place of the one sentence "At dinner one night Grace said she wasn't going to her festival
+     this year, and that it was fine, and she left before the pie." (Claude's choice of place: October 2026, the dinner
+     the chapter already had; what Grace says next is the festival, which Marta explains the next evening.)
+     CT's, word for word: everything from "You mean…" to "Hey so, changing the subject,". Marks changed in his lines:
+     "??" to "?", "bonafied" to "bona fide", "round him" to "around him", "beside Curtis" to "besides Curtis", commas
+     and periods around the tags ("I'm out, Curtis,"; "I'm going for a walk," said Priya; "Aye aye, captain." Curtis
+     made an exaggerated salute.), and the thought set in italics as he asked.
+     Claude's: the lead-in (Curtis sets the laptop on the plywood ahead of the pie; "Laser weeder," he said. "Watch.";
+     the steel box behind a tractor and the weeds going up in threads of smoke; Tyler's "We've all seen those. The big
+     growers run them. They're like a million dollars."; Curtis's "That's last year's ... They call it a brain
+     organoid."), and the end ("I'm not going to my festival this year." It was fine, she said. She was gone before he
+     could ask what festival, and before anybody had cut the pie.).
+     **Invented by Claude:** that a laser weeder with an organoid in it was shown the year before; how Curtis says it
+     works (grown in a dish from skin cells, the size of a lentil, taught, fed sugar water); the price Tyler gives.
+     Note for CT: the book says nearly the same thing of Denny in Chapter 17 ("oblivious to the mood of the people
+     around him, as he usually was", his edit 103); "Ever-oblivious" is now said of Curtis too. Logged as he gave it.
+     403 words in, 9 out. Record: `manuscript/novel/drafts/edit-224-organoids.md`. Logged only; not in the v8 Doc yet.
+
 223. **The pass's held items, resolved.** CT (26 Nov): "I want you to resolve as many of these as you can without my
      help." From `drafts/pass-2026-11-26.md`, "Held for CT", and the plan's section 13; Claude's wording throughout.
      Ch 3, his italic note made plain ("It won't start with the machines. First it takes the people who see it coming,

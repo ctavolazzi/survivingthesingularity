@@ -39,7 +39,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v5 edit list
-   (mirror of GitHub)" (id 1YIxK_1g68UoFJs00cCAbdsGOMaEMvDM9ojj5XnNs7tM) once, at the end of the session.
+   (mirror of GitHub)" (id 1Dmp-kAOg05YMn9zSlvvYSeX4ni9SkhhGdXJjYZ4dzfA) once, at the end of the session.
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -102,6 +102,19 @@ Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURREN
 and makes his final edits there. The next edit is 139. Log it the same way (number, where, "Book now," "Change
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
+
+## Where things stand (end of the fourth logging chat, 26 Nov)
+- The v6 Google Doc "StS v6 draft (Nov 25)" is the book CT is editing (CURRENT in the bridge). He reads it in the
+  large print PDF and dictates edits. In the Doc: edits 1 to 138, 141 and 151. Logged, not in the Doc yet: 139, 140,
+  142 to 171 except 151. The next edit is 172. CT has said nothing about putting 139 onward into the Doc; log only.
+- Each new edit: log it in `EDITS-v5-pending.md`, add a check row to `manuscript/tools/edits-v5/checks.py` and a
+  find and replace row to `manuscript/tools/edits-v6/ops.py` (above the ITALIC list), run
+  `python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx` (V5_READ is a fresh read of the v5 Doc;
+  every row must pass) and `verify.py` on a fresh read of the v6 Doc, then commit and push.
+- Waiting on CT: which of the 16 scene breaks in `manuscript/novel/SCENE-BREAKS-v6.md` to cut ("all 16" or numbers);
+  the dedication (who it is to) for v7; the sentence-opening checker (say go).
+- The large print PDF in Drive ("StS v5 Publication Files") is from 25 Nov: it still has the 12 bug-made scene
+  breaks, now gone from the Doc, and none of 139 onward. Rebuild only when CT asks.
 
 ## v7 (26 Nov): a separate copy
 CT: "keep v7 as a totally new, totally separate thing ... I want to keep working on v6." The Google Doc "StS v7

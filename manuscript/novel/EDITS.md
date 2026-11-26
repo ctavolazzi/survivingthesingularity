@@ -68,6 +68,31 @@ manuscript."
 7. What it touches. Edits 131, 132, 133, 135 and 136 would be reworked, not stacked on. CT has said the book is
    long enough, so this should replace telling ("The forty units shipped in June") rather than add pages.
 
+## Direction from CT, 26 Nov: Chapter 20 to the end (context, not for the page)
+
+Given while reading Chapter 20, after the first readers' passes. Nothing below is an edit yet.
+
+- CT: "this is the part where there's the payoff for all of that suffering that Elijah went through. So, like, are we
+  doing what we should be doing here? ... Does Priya have a good arc? Does Curtis have a good arc? Does Lou guide
+  everyone and help shape these people in his way where he's kind of silly, but also kind of serious? Is there a
+  moment where we get to see different sides of the characters? ... Does the dialogue feel like natural? ... Do we
+  have satisfying conclusions to the stuff that we put out there, or is it just like a series of events?"
+- CT: "dialogue should be where a lot of the character traits, backstory, ideas, decisions, things that are
+  discussed, dialogue should be where it is. And right now I feel like a lot of what I'm reading is just sort of a
+  series of events that transpire without chutzpah ... Not always. There's quite a lot of special sauce in there.
+  There's some memorable stuff. But I feel like we could chop, cut, remove a lot of the like filler and chaff, and we
+  can replace it with ... this is the reduction process ... We're making a risotto, and we can use metaphor, simile,
+  idioms. We can use the beauty and the color of language to make it more than just interesting events. We can make
+  it impactful. We can make it relatable, topical, relevant, timeless, archetypal."
+- CT: "Marta wanting to set Grace and Elijah up, and then having that actually pay off should take several chapters.
+  There should be little bits where the reader is like, yeah, but I'm interested in this other thing that was going
+  on over here ... The pond is where they should have like their first kiss, because obviously, right? Like
+  obviously. I don't even know in the story where they have their first kiss right now."
+- What the book has now (checked 26 Nov in make_v6.py's v6.txt): no kiss between Elijah and Grace anywhere. The
+  closest moment is the end of Chapter 24, on the blanket by the amp ("her head came over and rested against the side
+  of his, and stayed"). Marta's matchmaking is one line right after it ("she'd told Grace the same week that the
+  spreadsheet had a soft spot for old music"). The pond appears in Chapters 9, 18 and 37, never with the two of them.
+
 ### The plan for Chapter 19 (Claude's, written 25 Nov at CT's request)
 
 **Status:** done. CT: "Go on the plan." Edits 131, 132, 133, 135 and 136 below were reworked in place to it, and

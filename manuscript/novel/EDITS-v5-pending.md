@@ -1850,10 +1850,10 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      asks "Are you familiar with solarpunk?", that line contradicts it. Change to [Claude's wording]: "Elijah had seen
      the word once, in Grace's first email, and never thought about it again." His "It's what?" before it stays.
 
-     **Open, for CT:** "Everyone here at the farm agrees" sits a few pages from Grace's later message, "Half the table
-     thinks you're right. The other half thinks you're a guy who got famous scaring people," and "We have been
-     arguing about your list at dinner for a year." Recommendation: "Most of us here at the farm agree." Logged as he
-     wrote it until he says.
+     **Settled by CT (26 Nov):** "Everyone here at the farm agrees" stays as he wrote it, though Grace's later message
+     says half the table disagrees. CT: "It's supposed to be the way I wrote it. It's a sales email lol it's meant to
+     be overly optimistic ... that contradiction is totally fine." Context from CT, NOT for the page: the April email
+     is a sales pitch, overly optimistic on purpose.
 
      Logged only; not in the v6 Doc yet.
 

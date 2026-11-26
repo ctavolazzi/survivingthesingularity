@@ -56,6 +56,8 @@ Before writing any line for the book, read "Writing a beat for CT" in
   we can do better than this." People talk in their own trade and habits, half-finished, concrete, sometimes wrong; a
   line that sounds built to be quoted is the wrong line.
 - No beat-counting: "He read it twice. Then he wrote back." (CT: "Don't do the pattern.") Go straight to the action.
+- The middle path: quips, a dry closing line or an inversion are welcome where they add levity or read literary, never
+  where they cheapen a heavy moment, and never as a trick to vary openings (CT: "Find the middle path").
 - When he corrects a line, add what was learned to that section of the procedure file.
 
 ## Routes and data

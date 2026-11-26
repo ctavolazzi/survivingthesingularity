@@ -74,8 +74,7 @@ His jaw set. The pad between them still said Dear Ma at the top. He looked at it
 
 **"Grace."** He took her hands. **"Look, I'm sorry, okay? I'm sorry. Do you want to go into town and get ice cream?"**
 
-She lit up and tried to hide it. She squinted at him, hard, so he would know she was still mad, and grinned a little
-anyway.
+She lit up and tried to hide it. She squinted at him, hard, so he would know she was still mad. The corner of her mouth didn't get the message.
 
 **"I want frozen yogurt."**
 
@@ -147,7 +146,7 @@ He stood there with his hands out from his sides.
 
 **"There,"** she said. **"Now if you leave, at least I got to do that."**
 
-She walked off fast toward the lights. Halfway to the gravel she yelled over her shoulder, **"I really hope you don't,
+Off she went, fast, back toward the lights. Halfway to the gravel she yelled over her shoulder, **"I really hope you don't,
 though."**
 
 A few steps later she turned halfway around and walked backward so she could see him. **"I really hope you stay."**
@@ -223,8 +222,7 @@ Wednesday night. Tyler saw the truck first.
 
 "So did I."
 
-Grace was at the counter rolling out dough. She looked up when he came in, then down at the dough, and rolled it
-harder. She was smiling and trying not to.
+Grace was at the counter rolling out dough. She looked up when he came in, then down at the dough, and rolled it harder than dough needs. Her face did what it wanted anyway.
 
 Marta saw it from the coffee pot. Lou saw it from the sink, where he was peeling potatoes. He looked over at Marta,
 and Marta looked back at him, and he went back to the potatoes.

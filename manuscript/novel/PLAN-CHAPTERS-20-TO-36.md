@@ -355,6 +355,9 @@ The detail is in section 5a. In order:
 - **NEW** (small): Mrs. Delgado on the Coyote Flat stop, seen once. The fire needs her.
 - **NEW**: the replacement starts didn't all take. "Another October like the last one" (Ch 34) is this October,
   and it is why Grace can't go to her festival.
+- **CT, 26 Nov: keep "wearing his shirt."** Edit 198 took it out of the summer line, because they are not together
+  until October now. It comes back in the morning after his move: her in his shirt, drinking coffee (CT: "wearing his
+  shirt and drinking coffee ... that's a great way to explain it").
 - **MOVED HERE, CT**: October. Marta's push ("You like her." ... "Don't make me sorry."). He sets the Loudbox on the
   tailgate at the pond and plays her music until the light goes. The blanket. He kisses her. Her truck in the gravel.
 

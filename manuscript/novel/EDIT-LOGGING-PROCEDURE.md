@@ -159,6 +159,14 @@ the third "a little too much". What the one he took does:
   much he had. A tow, no."), "like a man who ... the way he said it would," and lines built to be quoted ("The money
   for the room by the window was the room by the window"). Draft 3 is plain: a subject, a verb, the concrete thing,
   varied lengths.
+- The middle path (CT, 26 Nov, after Ch 25 draft 3): "I do like the quips, though. They are welcome ... wearing his shirt
+  is good. You're changing too much. You're doing too much. Find the middle path ... this is better, but it's lost some
+  of its charm ... Little jokes at the end of the paragraph, the corner of her mouth didn't get the message. That's
+  great. I love that. But not when it cheapens the emotional weight of the scenes. When it adds levity, sure. When it
+  feels literary, absolutely. But not at the cost of the message." Agreed in full: vary sentences by what they're
+  about, not by tricks; cut the extras. So a quip, an inversion or a dry closing line is welcome where it adds levity
+  or reads literary, one at a time; never in a heavy moment (shame, grief, the truck stop, the fire), and never as a
+  way to dodge a pronoun.
 - Don't bring back a problem already fixed. The mirrored contrast line ("It's not X. It's Y."; "They can. They just
   won't."; Claude's own "He's on this side of the fence. His friends aren't.", 26 Nov) was edited out in 119 and 174.
   CT: "I don't want you to introduce like previous problems that we've already overcome ... We've already established

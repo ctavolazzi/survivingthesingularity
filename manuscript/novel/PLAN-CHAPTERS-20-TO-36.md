@@ -122,6 +122,29 @@ the fall, at the pond, and every step toward it is a scene where one side of Gra
 | Ch 25, NEW, CT | The next Friday table: they keep looking and looking away. Lou sees. Marta sees. Somebody makes a joke that isn't about them | The whole table knows before they do | Forty people |
 | Ch 25, CHANGE | After that dinner, the pond. She kisses him: "I didn't wait." (KEEP the line; the fire throws it back at him: "I didn't wait for you to ask.") | She knocks | Nothing, this time |
 
+**The kiss scene, in CT's words (26 Nov). This replaces the last row of the table: the kiss is how she keeps him.**
+CT: "I want the kiss to happen as a way to keep Elijah from leaving the farm." Then the scene:
+
+> "He's ashamed of himself for overlooking something so simple, so silly, so stupid. Like, he should have caught it.
+> He should have thought about it. He should have blah, blah, blah. He's shooting himself. He's shooting all over
+> himself. [Dictation: "shoulding all over himself."] And he'll say that out loud to Grace. Like, you guys need
+> somebody better than me. You need somebody more qualified than me ... And then Grace will just, like, grab him and
+> be like, you can't leave. And he'll go, why? And then she'll, like, make a face, kind of like, shake her arm,
+> indicating frustration. And then just grab Elijah's face and kiss him. She just lays one right on him. Boom, there
+> it is. And then he'll be in shock, and he's just dumbfounded. And she goes, there. Now if you leave, at least I got
+> to do that. And then she'll hurriedly turn and walk away, and then yell over her shoulder, foreshadowing the
+> yelling at the fire. I really hope you don't, though. And then she'll keep walking, but then she'll turn halfway,
+> facing him, still walking backward, though. I really hope you stay. And then she'll turn all the way around and,
+> like, do a little jump and a little, like, kick, because she's happy. She's excited. She just got to kiss him. And
+> then she sort of speeds off. And Elijah's still left there by the pond, dumbfounded. Listening to whatever sound
+> is appropriate for that time of day."
+
+Notes for drafting: the pond's sounds in the book are frogs at night (Ch 17) and birds in the morning (Ch 18, 37).
+Her lines are CT's: "You can't leave." / "There. Now if you leave, at least I got to do that." / "I really hope you
+don't, though." / "I really hope you stay." In the book now she kisses him by the stove and says "I didn't wait";
+her truck is in the gravel the next morning. In CT's scene she walks off, so that night moves later. Open: whether
+this is the July night of the bell (Ch 22) or the fall (Ch 25); see section 8.
+
 **How it stays vivid without going over the line**
 - One touch, growing: the book's own motif is her hand on his forearm (Ch 16, 17, 22). It lands, then it stays, then
   at the pond it's the first time he reaches for hers. The fire's "he had never reached for hers" needs a look after.
@@ -289,7 +312,10 @@ serves section 2.
 
 ## 8. Open, for CT
 
-1. Settled (CT, 26 Nov): the kiss is not sudden. Fall, at the pond, after the steps in section 5a.
+1. When the kiss scene happens (CT's scene is in section 5a). July, the night of the bell, with the shame fresh; or
+   the fall, after the summer's push and pull, when the last reworked board ships and nothing holds him but her.
+   Claude recommends the fall. CT has said both "We don't want the kiss to be sudden" and "I want the kiss to happen
+   as a way to keep Elijah from leaving the farm."
 2. Names for the north-house couple.
 3. Curtis's wound: the book never says why he built the fence.
 4. Bidwell's "somebody near him": the book never says who. One reader's idea is Devendra, in his Ch 37 call. That

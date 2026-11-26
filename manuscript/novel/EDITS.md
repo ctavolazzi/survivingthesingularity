@@ -2783,6 +2783,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Only the song's title is used, no lyrics. Logged only; not in the v6 Doc yet.
 
+189. **Chapter 18, Marta at the door: the line about Grace is a warning.** Edit 118 is in the v6 Doc, so this is a new
+     edit. CT (26 Nov): "it's supposed to read as a warning, like a, you know, treat my baby girl right or else we'll
+     have problems." Book now:
+
+     > Don't let her effort go to waste." She straightened up. "Soup's on at noon.
+
+     Change to [Claude's wording, from CT's direction]:
+
+     > Don't let her effort go to waste." She straightened up and looked him dead in the eye. "You waste it, and you
+     > and me are going to have a problem." She let that sit. "Soup's on at noon.
+
+     The next lines are unchanged ("That's not a reward, spreadsheet ... Her eyes twinkled. "It's just lunch.""), so
+     the twinkle now lets him off the hook. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -676,6 +676,9 @@ Please consider how much of a difference each and every one of us can make in th
 """Somewhere past Cloverdale the check-engine light came on.
 Elijah saw it and rolled his eyes. Then a laugh came up out of him, and it kept coming until he had to wipe his eyes with the back of his wrist. He reached over and turned up the radio. Willie Nelson was singing "On the Road Again."
 Figures, he thought. I hope they have a good mechanic."""),
+# 189, Ch 18: Marta's line about Grace reads as a warning
+(189, "go to waste.\" She straightened up. \"Soup's on",
+"go to waste.\" She straightened up and looked him dead in the eye. \"You waste it, and you and me are going to have a problem.\" She let that sit. \"Soup's on"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

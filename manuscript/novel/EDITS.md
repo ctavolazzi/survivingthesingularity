@@ -176,6 +176,19 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   to him. And then he leaves. But since Elijah's the narrator and he's like the focal point of the story, we don't see
   that conversation. What we see is Elijah's apprehension and guilt. And we don't need to say Elijah was apprehensive
   and guilty. We need to show it."
+- CT, on fans, wingnuts and the teacher: "Denny should get excited that they have fans online. There should be a
+  conversation somewhere in there where Priya cautions him about crazy people and wingnuts. And he's like, what do you
+  mean? And she's like, I ran for office, don't you remember? Like, there are some wild people out there. And then she
+  looks over at Elijah and she's like, I mean, you know what I'm talking about, don't you? And Elijah does ... This is
+  an opportunity for him to reflect. Like, yeah, he got some cool opportunities. Yeah, there were some wonderful
+  things that happened. But also, he remembers some very hateful DMs that he got, and the way that his friends treated
+  him, the way that his, community treated him was really hard, was really tough. We need to add a part at the
+  beginning when his video first goes viral, talking about like how he's surprised with the backlash. He thought he
+  was doing people a favor, but the messages that he gets from people online, like let's say his one of his old school
+  teachers throws him a message. Somebody that he admired, somebody he really looked up to, like maybe his Spanish
+  teacher. And the message that he gets from that guy is extremely condescending, negative, rude, mean, spirited ...
+  And then something in the environment needs to happen so that it calls his attention away from it, and then it
+  moves the story forward." (The teacher's lines are in edit 196.)
 - What the book has now (corrected 26 Nov; Claude first told CT there was no kiss, which was wrong): one kiss, in
   Chapter 25, in the shouse after a Friday dinner ("she leaned down and kissed him, once, and stayed there with her
   forehead on his"), and her truck still in the gravel the next morning. Earlier in Chapter 25: Marta's scene ("You

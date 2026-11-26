@@ -291,6 +291,12 @@ serves section 2.
 - Cost that stays: the starts, the couple's trust, Patricia's trust. Theme: heat was his "first limit" in Chapter 1.
   He, of all people, shipped a box that can't take heat.
 
+- **NEW, CT: Denny's fans, and Priya on wingnuts.** Denny's one take spreads and he's thrilled people are watching.
+  Priya warns him about "crazy people and wingnuts." "What do you mean?" / "I ran for office, don't you remember?
+  ... there are some wild people out there." She looks at Elijah: "you know what I'm talking about, don't you?" He does.
+  He remembers both: the senator's office, the podcast, the woman in Tulsa; and Earl, and his old Spanish teacher
+  calling him a liar (edit 196, Ch 7), and the thumbs from Nate and David. Shown in a beat or two, not told.
+
 ### Chapter 22: Two Slashes (July 2025)
 - **KEEP**: the Crucible, the two slashes, the journal copied, the bell, six households cancel, the two-person rule,
   Ray's funeral missed, Grace and Faith on the pump house steps.

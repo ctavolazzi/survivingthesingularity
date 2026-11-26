@@ -1518,6 +1518,27 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+145. **Chapter 5, the amp and the call: he starts to play, and the call he was expecting.** CT (26 Nov): "We got some
+     confusing wording here. The call never came. The call he was expecting never came. And also he never got around
+     to the jam. That's also confusing. He started playing but didn't continue because he noticed the time." Both
+     lines were edits 38 and 39 (the "never got around to the jam" was Claude's knock-on). Book now:
+
+     > He never got around to the jam. He set it in the corner of the living room and didn't plug anything into it,
+     > as a monument, which was the point.
+     >
+     > The call never came. He looked at the clock. It was 10:30. That didn't make sense.
+
+     Change to [CT's beats and "The call he was expecting never came."; the first sentence is Claude's wording of
+     "He started playing but didn't continue because he noticed the time", and "again" is Claude's knock-on]:
+
+     > He plugged in and started to play, but a few bars in he noticed the time and stopped. He set the amp in the
+     > corner of the living room and didn't plug anything into it again, as a monument, which was the point.
+     >
+     > The call he was expecting never came. He looked at the clock. It was 10:30. That didn't make sense.
+
+     Why "again": the book says he "didn't plug anything into it"; now he plays first, so it would contradict itself
+     without the word. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

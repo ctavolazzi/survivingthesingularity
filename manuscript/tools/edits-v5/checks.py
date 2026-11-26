@@ -150,4 +150,5 @@ C=[
 (142,"Ch 1",["So it had a ceiling. Whoever could pay for the power and the cooling"],["The ceiling was a power bill."]),
 (143,"Ch 2 (italics; checked by make_v6.py)",["is this true\nElijah didn't answer."],[]),
 (144,"Ch 2",["so that later he could look back and see if he was right."],["couldn't pretend he hadn't seen it coming."]),
+(145,"Ch 5",["He plugged in and started to play, but a few bars in he noticed the time and stopped.","didn't plug anything into it again, as a monument","The call he was expecting never came."],["He never got around to the jam.","The call never came."]),
 ]

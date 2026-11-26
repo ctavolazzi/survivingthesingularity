@@ -336,6 +336,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 (143, "to drink.\nis this true\nElijah didn't answer.", "to drink.\n*is this true*\nElijah didn't answer."),
 # 144, Ch 2
 (144, "so that later he couldn't pretend he hadn't seen it coming.", "so that later he could look back and see if he was right."),
+# 145, Ch 5
+(145, "He never got around to the jam. He set it in the corner of the living room and didn't plug anything into it, as a monument, which was the point.\nThe call never came.",
+"He plugged in and started to play, but a few bars in he noticed the time and stopped. He set the amp in the corner of the living room and didn't plug anything into it again, as a monument, which was the point.\nThe call he was expecting never came."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -756,8 +756,8 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      >
      > "You do that," he said.
 
-     **Open, for CT:** CT said "if you wanted to play"; she is talking to Lou about Elijah, so logged as "if he
-     wanted to play". Lou's "I know you were." is Claude's.
+     **Settled by CT (26 Nov):** "if he wanted to play" stays; she is talking to Lou about Elijah, so it is the clear
+     one. CT: "Always clarity." Lou's "I know you were." is Claude's.
 
 109. **Chapter 17, the ride-along to Rosa's: who is talking, and the kitchen scene.** CT (25 Nov): the "You don't
      owe us a work day" exchange is confusing; clean it up "to indicate who's talking and what's actually

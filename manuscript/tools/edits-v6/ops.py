@@ -564,6 +564,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 # 177, Ch 37
 (177, "Somebody checked.\nHe sat there with the engine running and cried.",
 "Somebody checked.\nOut by the pond, the birds had started up.\nHe sat there with the engine running and cried."),
+# 178, Ch 37
+(178, "It took a morning. A bag of clothes. The laptop. A milk crate of notebooks, eleven of them now, and the manuscript, which was three hundred pages and had a title. The broken coupons, in a coffee can. His mother's pot. Everything he owned fit in the bed of the Ranger with room left over, except two robot arms in the back of the equipment shed.",
+"It took a morning. A bag of clothes went in, and the laptop. Then a milk crate of notebooks, eleven of them now, and the manuscript, which was three hundred pages and had a title. He stood holding that one a while before he set it down. The broken coupons went in a coffee can. His mother's pot went in beside them. Going on three years, and everything he owned fit in the bed of the Ranger with room left over. It should have felt like traveling light. It felt like he had hardly been here at all. All that was left were two robot arms in the back of the equipment shed."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

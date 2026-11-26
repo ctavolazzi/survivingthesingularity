@@ -1,213 +1,384 @@
 # How to write for this book (instructions for the next session)
 
 Written 26 November 2026, at the end of the seventh logging chat, at CT's request: "write a complete, comprehensive
-set of writing instructions for the next session." Built from his corrections that day and from the whole edit list.
-Every rule here traces to something CT said; his words are in quotation marks.
+set of writing instructions for the next session, and then please critique them for actual completeness." The first
+draft was audited by a second reader against all of `EDITS.md` (edits 1 to 201), the procedure file, the plan, the
+accepted chapter drafts, the Character Bible, CT's feedback file and the book's text. This is the version after that
+audit.
 
-Read this file all the way through before writing a single line for the book. Then read `PLAN-CHAPTERS-20-TO-36.md`
-(what happens) and `EDIT-LOGGING-PROCEDURE.md` (how an edit is logged and checked). This file is how the words go down.
+**How to read the marks.** Words in quotation marks are CT's, from the edit list (edit number in brackets) or from
+the chat of 26 Nov. A rule marked **[C]** is Claude's working rule, drawn from his corrections or from line-editing
+practice; he has not said it himself, and his word beats it.
+
+Read this whole file before writing a line for the book. Then `PLAN-CHAPTERS-20-TO-36.md` (what happens) and
+`EDIT-LOGGING-PROCEDURE.md` (how an edit is logged and checked).
 
 ## 1. The one instruction under all the others
 
 CT, 26 Nov: "Read back through the edits. Read through the way that I correct you. And think about that while you're
 doing your writing. Don't just press on with whatever the fuck it is that you want to do. Think about the rules that
-we've laid out for how to write, and then write that way." And: "You know what to do, so just do it."
+we've laid out for how to write, and then write that way." "You know what to do, so just do it." "Stop hedging. Stop
+hesitating. Stop fishing for what I want, and just do it."
 
-The failure he keeps catching is one failure in different clothes: Claude writes the default version first and
-applies his rules only after he complains. Write the first draft to these rules. Check it against section 9 before he
-sees it.
+The failure he keeps catching is one failure: Claude writes its default first and applies his rules only after he
+complains, then overcorrects. Write the first draft to these rules. Run section 13 before he sees anything.
 
-## 2. What we are doing
+From his feedback file (7 Nov): "Please don't give me basic predictable crap that you would give to everyone else."
+"It feels like you're fishing for what I want to hear, instead of thinking for yourself."
 
-CT: "This is called writing. This is called foreshadowing. This is called crafting a story." And: "We're not just
-laying out a sequence of events. We are writing."
+## 2. Scope
 
-- The book is a story with stakes, losses that stay lost, people who are wrong sometimes, and payoffs that were
-  planted earlier. A scene that only moves things along is unfinished (edit 136: "It feels like it's just moving
-  things along instead of progressing the story ... instead of it just being like, and then this happened, and then
-  this happened").
-- Take the reader through what is felt, with the events as the way in (edit 100: "this feels like you're moving the
-  reader along through the story events, not through the emotions he's feeling").
-- Plant, then pay. A short line that points at what is coming is the work ("It was still a cool spring. It hadn't
-  been very hot yet."). Cutting tics must never cut a setup.
-- People do things; objects and places don't (edit 127: "it's not an object that's doing the work ... it's the
-  people").
-- A chapter ends on something that moves the story, and it costs somebody something.
-- The book is long enough. New scenes replace summary or weaker scenes.
+- "0 to 19 are done. We don't need to mess with them anymore." Line fixes he asks for still go in.
+- "I love the way the book ends. It made me cry." Chapter 37 to the Epilogue get the lightest touch, and only what the
+  rewrite forces.
+- Chapters 20 to 36 are being rewritten to the plan. "I don't want you to delete things willy-nilly. Keep as much of
+  what we have as you can that makes sense to keep."
+- **Reduce.** "We could chop, cut, remove a lot of the like filler and chaff ... this is the reduction process ...
+  We're making a risotto." The four chapters done so far each grew (Ch 20 by about 120 words, Ch 21 by 1,050, Ch 22
+  by about 500, Ch 25 by 1,400). The book is long enough [edit 131 note: "Book's already long enough"]. From Chapter
+  23 on, count the words in and out, and cut summary, repeated lessons and filler to pay for what is added. **[C]**
+- Nothing goes into the Google Doc. Log in GitHub only.
 
-## 3. Whose words
+## 3. What we are doing
 
-- CT's words go in word for word. Smooth only what dictation broke. Mark anything Claude worded. "Merge, don't
-  rewrite."
+"This is called writing. This is called foreshadowing. This is called crafting a story." "We're not just laying out a
+sequence of events. We are writing." (chat, 26 Nov)
+
+- A scene that only moves things along is unfinished. [136] "It feels like it's just moving things along instead of
+  progressing the story ... instead of it just being like, and then this happened, and then this happened."
+- Through the feeling, with the events as the way in. [100] "this feels like you're moving the reader along through
+  the story events, not through the emotions he's feeling."
+- Plant, then pay. "It was still a cool spring. It hadn't been very hot yet." Cutting tics must never cut a setup.
+- People do things; objects don't. [127] "it's not an object that's doing the work ... it's the people."
+- "We need setbacks. We need problems. We need challenges for them to face." A loss stays lost, and the next chapter
+  opens on it. **[C]**
+- His questions for any chapter (26 Nov): "Does Priya have a good arc? Does Curtis have a good arc? Does Lou guide
+  everyone ... kind of silly, but also kind of serious? Is there a moment where we get to see different sides of the
+  characters? Are they one-dimensional? ... Does the dialogue feel like natural? Does it feel forced? ... Do we have
+  satisfying conclusions to the stuff that we put out there, or is it just like a series of events?"
+
+## 4. Whose words, and whose facts
+
+- CT's words go in word for word. Smooth only what dictation broke (the procedure file's "merge, don't rewrite").
+  Mark what Claude worded.
 - When he restates a line inside one message, the last version is the line.
-- Fix dictation slips when the meaning is plain (Martha is Marta, "shopped" is "shipped", "shooting all over himself"
-  is "shoulding"). When a fix would change the meaning, log it as said and ask one short question.
+- Dictation slips get fixed when the meaning is plain (Martha is Marta; "shopped" is "shipped"; "shooting all over
+  himself" is "shoulding"). If a fix would change the meaning, log it as said and ask one short question.
 - His context ("for our notes", "not for the page") never goes on the page.
-- The sentence that names a feeling is his. Claude writes what can be seen and leaves the place for it. He added
-  "All his pent-up pain started rolling out of his lungs at once." and "He really looked up to this guy. He loved
-  this guy." himself.
-- When he gives a line, keep what was good in the line it replaces and build on both. He wanted "It was still a
-  cool spring." and "It hadn't been very hot yet." together; Claude had swapped one for the other.
+- When he gives a line, keep what was good in the line it replaces and build on both. "But we can combine them
+  together, right?"
+- **Flag every fact Claude invents.** His standing rule: "Never fill a gap with an assumption." He has also said
+  "just do it." Both hold: write it, log it, and list each invented fact in the report so he can change it. Invented
+  so far and not yet ruled on: Hector and Lupe Ochoa and their six thousand plugs; $210 a week for the six lost
+  households; Mr. Ostrander (he said "I don't care what the teacher's name is"); Yakima and Wenatchee; "paid through
+  March"; the frozen yogurt place by the laundromat; Lou's wife's fridge as the home of the IBM line.
 
-## 4. What CT's own writing sounds like
+## 5. What CT's own writing sounds like
 
-Learn it from the lines he dictated and kept:
+These lines are his, dictated and kept:
 
-- "A chuckle came over him and he went to bed that night feeling a little bit lighter."
-- "Without being conscious of it, his shoulders relaxed a few inches."
-- "Out by the pond, the birds were chirping magnificently."
-- "the sacred pot she never let anyone else wash that had been burned to a crisp on the back burner"
-- "I felt like a fraud and like a stranger had helped themselves to the inside of my house."
-- "There. Now if you leave, at least I got to do that."
-- "That's not a reward, spreadsheet, for all your doom scrolling." Her eyes twinkled. "It's just lunch."
-- "You're almost 40 and these are your conflict resolution skills?"
-- "said one word, 'Musicians,' the same way you might say termites"
+1. "David gave him the look too, but at least David's looks came with a side of beer." [7]
+2. "He sometimes still fell asleep on the bar top, even though he didn't drink. Alcohol is not the only vice." [36]
+3. "The ones they offer you for nothing usually cost the most in the end." [64]
+4. "It bounced around inside his head, rent-free, for days after." [75]
+5. "It was a very nice yellow Oldsmobile. You don't see those anymore." [78]
+6. "He may have been naive, but he wasn't an idiot." [79]
+7. "For some reason, all the tears he'd cried there were unavailable to him now. Elijah simply laid the house key
+   down on the kitchen table and allowed the door to lock behind him." [82]
+8. "He hated the way it talked sometimes. But goddamn, was it useful." "Only problem? It was seventeen goddamn
+   dollars." [97]
+9. "A chuckle came over him and he went to bed that night feeling a little bit lighter." [104]
+10. "He was more or less accustomed to being treated like a thing. Inside his psyche something started to turn." [106]
+11. "He meant to. He wanted to. But life gets in the way sometimes." [146]
+12. "People don't care what you know, man. They care how you make them feel." [155]
+13. "Without being conscious of it, his shoulders relaxed a few inches." [164]
+14. "Out by the pond, the birds were chirping magnificently." [166]
+15. "All his pent-up pain started rolling out of his lungs at once." [188]
+16. "There. Now if you leave, at least I got to do that." (the pond)
+17. "You're almost 40 and these are your conflict resolution skills?"
+18. "It was still a cool spring. It hadn't been very hot yet." [199]
+
+His reworkings of the book's lines show the same hand: the sacred pot "burned to a crisp on the back burner" [192];
+"I felt like a fraud and like a stranger had helped themselves to the inside of my house" [194]; "That's not a
+reward, spreadsheet, for all your doom scrolling ... It's just lunch." [119].
 
 What they share:
-- Spoken, plain, a little wry. The words a person would say out loud to a friend.
-- Concrete things: a pot, a back burner, a house, shoulders, a few inches.
-- Feelings named simply and directly when he chooses to name them, often with a small physical sign.
-- Sentences that run on a breath, joined with "and", next to short ones.
-- Warmth and humor inside serious moments. A twinkle. Irony he points out ("there's some irony there").
-- A little extra that makes a line clear, never a line so neat it sounds manufactured.
+- Spoken and plain. The words a person says out loud to a friend, a little wry.
+- **Feelings named flat**, often in a stock body phrase: "a pit in his stomach" [24], "taken aback" [90], "he felt a
+  rush" [45], "It was too much." [76], "He really looked up to this guy. He loved this guy." [196]
+- **Softeners** that take the edge off an absolute: "more or less", "practically a parade" [126], "nearly nothing"
+  [33], "like maybe he was starting to fit in somewhere" [127], "a little bit lighter".
+- **The storyteller turns to the reader**: "You don't see those anymore." "Alcohol is not the only vice." "as most
+  don't" [112]. "back when they still gave those" [91].
+- **Today's slang in the narration**: "a hot minute" [90], "rent-free" [75], "took a digger" [79], "doom scrolling"
+  [119], "Har har." [3]
+- **One formal word dropped into plain talk**: psyche, voracious [114], magnificently, begrudgingly [90],
+  "unavailable to him", "conflict resolution skills".
+- **Gallows humor from Elijah at the bottom**: "this is a pretty good bleed-out spot" [104]; "Figures ... I hope they
+  have a good mechanic." [188]
+- **Rhetorical fragments in thought**: "Only problem?" "Spreading fear? ... I'm not spreading fear, am I?"
+- **Repetition for weight**: "really important to me" four times; "He went to bed that night crying, and he woke up
+  the next morning crying." [79]
+- **Brands and pop references**: Einstein and Oppenheimer [6], Chobani [159], Planet Fitness [97], Crisco [79].
+- **A scene can end on something small and ordinary**: "I want frozen yogurt."
+- **Big, slightly comic body acting**: she shakes her arm in frustration; "a little jump and a little, like, kick".
+- **Profanity is welcome and he adds it**: "Shit." [20], "worked his ass off" [91], "Get bent." [79], "pain in the
+  ass" [129]. He has set no limit for the novel.
 
-## 5. Story and scene rules
+## 6. Unpack the clever line
 
-1. Dialogue carries it. "Dialogue should be where a lot of the character traits, backstory, ideas, decisions" are.
+His most frequent correction in edits 1 to 86: a compressed, clever line becomes a longer plain one.
+
+| Book had | He made it |
+|---|---|
+| "The ones for nothing are the expensive ones." | "The ones they offer you for nothing usually cost the most in the end." [64] |
+| "He was the call." | "...the only person to call was staring at him in the bathroom mirror." [72] |
+| "He could not make it fit in one head, and the head was his." | "It was too much." [76] |
+| "That's not a forecast. It's a mirror." | cut [47] |
+| "It's arithmetic." | cut [48] |
+| "That's not a reward, spreadsheet. It's lunch." | "That reads as AI to me." Unpacked, with the twinkle [119] |
+
+- "Head down for me is confusing." [146] "That's confusing as well. So later he could look back and see if he was
+  right is better." [144]
+- Plain words over jargon: "What's your n?" became "Relax." and "a prediction" [10, 15, 18]; "off-ramp" became "slow
+  down" [44]; "dissolved" became "ended" [17].
+- If a line sounds like an aphorism, say the plain thing it means. **[C]**
+
+## 7. Story and scene rules
+
+1. "Dialogue should be where a lot of the character traits, backstory, ideas, decisions, things that are discussed"
+   are. Put facts in mouths: [150] "Instead of just declaratively stating that they have two spares, let's make Trent
+   say it." [110] "she needs to say the word mijo."
 2. People ask each other questions and answer "to the best of their ability"; others "interject to correct things
-   that are wrong, but be wrong about things as well." "These characters are not infallible, and they're not just
-   pawns in a plot to deliver a sermon."
-3. People get drawn out; they don't make speeches (edit 90). A seed, not a speech (edit 109). Any speech over three
-   sentences gets interrupted, questioned or laughed at. Lou included.
-4. Show a trait in a scene where it changes what happens. "We need to show those parts of her. We can't just list
+   that are wrong, but be wrong about things as well. These characters are not infallible, and they're not just pawns
+   in a plot to deliver a sermon."
+3. People get drawn out; they don't make speeches [90]. A seed, "not gone into hard" [109]. A long speech gets broken
+   by what the body is doing ([124] "split that up right there ... what is she doing with her body?") or by the room
+   ([103] the speech "needs to be punctuated by their clear discomfort"). A speech over about three sentences gets
+   interrupted, questioned or laughed at, Lou included. **[C]**
+4. In a group moment, show each person's reaction. [125] "describing the way that people are expressing themselves ...
+   People are excited ... Other people are nervous and worried and cautious."
+5. Spread the lines around. [130] "Curtis already has enough lines leading up to this, make it someone else."
+6. Show a trait in a scene where it changes what happens. "We need to show those parts of her. We can't just list
    them. I feel like a lot of this book ... is kind of a lot of lists."
-5. Nothing sudden that should be earned. "We don't want the kiss to be sudden. We want it to be obviously
-   foreshadowed and set up." Push and pull: something outside stops it and something inside stops it.
-6. Stakes: "We need setbacks. We need problems. We need challenges for them to face." A loss stays lost and the next
-   chapter opens on it.
-7. Never the same lesson or argument twice (edit 131). No previous problem brought back.
-8. "Make it more than just interesting events": "metaphor, simile, idioms ... the beauty and the color of
-   language", "relatable, topical, relevant, timeless, archetypal". In the speaker's own trade: Marta in steel, Lou in
-   dirt and seed, Priya in measurements, Curtis in engines, fences and movies, Reuben in paper.
-9. "Vivid without being heavy-handed and without going over the line." One touch that grows (her hand on his
-   forearm) does more than description.
-10. Physical beats: "simple, in character, not overdone." Check that the next few lines don't already have the same
-    beat.
-11. The narration sits on Elijah's shoulder, with a storyteller above who can briefly tell the reader what Elijah
-    can't know, leave him for a scene, or talk to the reader. Feelings are Elijah's; other people's come through
-    what he sees them do. When Elijah is not in a conversation, the book stays with him (CT on Lou going to talk to
-    Curtis: "we don't see that conversation. What we see is Elijah's apprehension and guilt. And we don't need to say
-    Elijah was apprehensive and guilty. We need to show it.").
-12. Push back on continuity errors, contradictions, logistics that can't happen and anything that confuses the
-    reader. Never on his taste or a decision he has made.
+7. Earn it. "We don't want the kiss to be sudden. We want it to be obviously foreshadowed and set up." Something
+   outside stops it and something inside stops it.
+8. Never the same lesson or argument twice [131]. "I don't want you to introduce like previous problems that we've
+   already overcome."
+9. Color: "metaphor, simile, idioms ... the beauty and the color of language", "relatable, topical, relevant, timeless,
+   archetypal." In the speaker's own trade. **[C]**
+10. "Vivid without being heavy-handed and without going over the line."
+11. Physical beats. [162] "DO NOT OVERDO IT. Simple physical actions that make sense and add character, texture, and
+    color to the book is what I'm after." Check the next few lines don't already have the same beat.
+12. Inner memory stays small: a rush, not a diatribe [94]. "A single tear."
+13. Openings don't announce a theme. [112] "a little heavy-handed"; a spiral "didn't announce itself ... as most
+    don't." He cut Chapter 19's topic sentence [167] and wrote "What Lou did to Elijah in May just about killed him."
+    [170]
+14. A scene needs a way out. [196] "something in the environment needs to happen so that it calls his attention away
+    from it, and then it moves the story forward." Use what belongs to the place and hour: frogs at night and birds by
+    day at the pond [166]; "whatever sound is appropriate for that time of day."
+15. A chapter ends on something that ties it together [136].
+16. Narration: the book sits on Elijah's shoulder, with a storyteller above who can speak to the reader. New scenes
+    stay with Elijah: "since Elijah's the narrator ... we don't see that conversation. What we see is Elijah's
+    apprehension and guilt." Scenes the book already has away from him stand. A new one needs CT's say.
 
-## 6. Clarity
+## 8. Clarity and sense
 
-- "Clarity and continuity first. If it isn't clear, it gets changed."
-- Always clear who is speaking, who is in the room, and who "he" or "she" is. Name the person when it could be
-  two people (edit 182).
-- A line that leaves the reader asking "what kind?" gets the word that answers it. Priya's "I still get letters"
-  had to be "I still get weird letters": "we don't know what kind of letters they are. It's not clear. You need to
-  make things clear."
-- A qualifier that doesn't make sense comes off ("I already lost one orchard to one buyer": "that doesn't make
-  sense").
-- A callback the reader can't place gets cut or made plain (the cable box line: "It does read like a random fact. We
-  don't really need it."). If it can be tied to something the reader does remember, tie it (the sacred pot).
+- "Clarity and continuity first. If it isn't clear, it gets changed." [181] "Clarity and continuity ... Those are the
+  key things." [108] "Always clarity."
+- Who is speaking, who is in the room, who "he" is. [102] "It's unclear who says the line." Name the person
+  when it could be two people [182]. Name the speaker again after a gap: [166] "It's clear that it's Elijah talking,
+  but since it's a new page, I want to say ... Elijah said."
+- A line that leaves the reader asking "what kind?" gets the word that answers it: "I still get weird letters."
+- A qualifier that doesn't make sense comes off: "I already lost one orchard is enough." [193]
+- A callback the reader can't place gets cut ("It does read like a random fact. We don't really need it." [190]) or
+  tied to something remembered (the sacred pot [192]).
+- **Introduce a person the first time they are named.** [70] "It's Manny. Who the fuck is Manny?" [128] "Have we
+  introduced this guy already? I don't see a description of him." Stakes need people we know: "that doesn't really
+  add serious stakes because we don't know them."
+- **Orient before the image.** [154] "when he got to the house, he saw what had happened. There was a pot on the
+  stove." [148] "It needs to be very clear that Elijah is on the other side of the swinging door."
+- **Would a person do that?** [65] "Nobody would do that if they're trying to sell somebody on an idea." [120] "I
+  don't think you can turn off notifications for specific numbers." [152] "why doesn't he just go stay with his mom?"
+  "The county goes dark for 3 days? That's ridiculous." "Not testing them for the heat seems like a rookie mistake.
+  Why would they do that?"
+- Don't state a quality the book hasn't shown. [195] "We haven't established any sort of artistry ... That's just
+  stating something for no reason."
+- **Some history is named and left.** [110] "we don't need to go into that. We can just leave it there." [152] "we
+  just don't ever need to, like, go into that." Be clear about who, what, when and what kind; a wound can stay shut.
 - "Short sentences like that can be confusing if taken out of context. So we need to add a little bit of redundancy
   in those moments, but not every time. It's kind of like dealer's choice."
-- One idea per sentence. Claude's "Every one of those boxes had Elijah's board inside it, the one an Iowa company's
-  machine had laid out at midnight, and nobody had tested a single one in July yet, because it was May." got: "What
-  the fuck is that, bro?"
-- A run-on gets split ("There's a fat run-on sentence here").
-- Don't state a quality the book hasn't shown ("the best artist Elijah has ever met. We haven't established any sort
-  of artistry ... That's just stating something for no reason").
-- Ma's calls after the stroke are Sunday, 9:40 in the morning. Day names that only mark time come out. No
-  "suddenly".
+- One idea per sentence. A run-on gets split ("There's a fat run-on sentence here").
+- Ma's calls after the stroke: Sunday, 9:40 in the morning; exactly one at night. Day names that only mark time come
+  out: [125] "we've said Tuesday quite a few times ... What the fuck is that?" Claude put two new ones into edits 200
+  and 201 and had to take them out. No "suddenly" [94].
+- Push back on continuity errors, contradictions, logistics that can't happen and anything that confuses the reader.
+  Never on his taste or a decision he has made.
 
-## 7. Sentences
+## 9. Feelings
 
-**Vary them by what they are about.** CT, three times in one day: "Instead of starting everything with a pronoun,
-you gotta vary the sentence structure, bro." "You're still overusing pronouns and not varying the sentence
-structure." "I've told you to change this a dozen times and you keep doing it."
-- A sentence can start with the person, a thing in the room, a place, a time, a clause, or the line of dialogue.
-  Choose by what the sentence is about.
-- Swapping "She" for "Grace" ten times is the same problem.
-- Mix lengths. Never three clipped sentences where one would do.
+Three of his statements have to be held together:
+- Take the reader through what is felt [100].
+- "We don't need to say Elijah was apprehensive and guilty. We need to show it."
+- His own lines name feelings flat: "She asked me first, Elijah thought. He liked the way it made him feel." [106]
 
-**Never do these:**
-- Counting as filler: "He read it twice. Then he wrote back." ("Don't do the pattern ... it's boring and
-  repetitive.") Also "watched it four times", "read the email again".
-- Step-walking: a short flat sentence followed by "Then he ..." Go straight to the action.
-- Mirrored contrast lines: "It's not X. It's Y." "They can. They just won't." "He's on this side of the fence. His
-  friends aren't." ("That reads as AI to me." "We've already established that we can do better than this.")
-- A line built to be quoted, or too neat ("It's lunch" was "too neat").
-- Tricks to dodge a pronoun: an inversion or a fragment used only for variety.
-- Stacked fragments ("Gas down, gas back, food: that much he had. A tow, no.").
-- A paragraph that ends by summing itself up ("That was all there was.").
-- A list of three qualities in a row.
-- Filter words where the thing itself can be shown: knew, thought, saw, watched, felt, realized, noticed.
-- "The way a person does X" comparisons as a habit (the book has 76), "like a man who", "for a while", "looked at
-  him", "nodded", "didn't say anything". Each is fine once in a scene and a tic by the third.
+So: show the feeling in two or three small steps of action. Where a sentence names it, write it in his plain manner
+(section 5) or leave the place marked for him; he often adds it himself. "He thought" and "he felt" are his and are
+allowed. What to keep out is Claude's habit of "He knew" and "he realized" as narration glue (69 in the book). **[C]**
 
-**The middle path.** After Claude stripped a draft bare, CT: "I do like the quips, though. They are welcome ... You're
-changing too much. You're doing too much. Find the middle path ... this is better, but it's lost some of its charm."
-- Welcome: a quip, a dry line at the end of a paragraph, an inversion, a turn of phrase that reads literary. "Wearing
-  his shirt" is "a great way to explain it." "The corner of her mouth didn't get the message. That's great. I love
-  that."
-- The test, in his words: "not when it cheapens the emotional weight of the scenes. When it adds levity, sure. When it
-  feels literary, absolutely. But not at the cost of the message."
-- So: none in shame, grief, the truck stop, the fire. One at a time. Funny or lovely on its own, never riding on the
-  back of a clause, never there to fix a rhythm.
-- When a correction lands, change the thing he named and keep the rest. Overcorrecting is its own failure.
+## 10. Sentences
 
-## 8. People's voices (checked against the book)
+**Vary them by what they are about.** "Instead of starting everything with a pronoun, you gotta vary the sentence
+structure, bro." "You're still overusing pronouns and not varying the sentence structure." "I've told you to change
+this a dozen times and you keep doing it."
+- Start a sentence with whatever it is about: the person, a thing in the room, a place, a time, a clause, the line
+  of dialogue. Swapping "She" for "Grace" ten times is the same problem. Mix lengths.
 
-- Lou: "my man", "my friend", "honey" to Wren, "professor" and "Ivy League" to Elijah. Never a bare "man". Silly and
-  serious in one breath. He asks about three questions and then says one thing. He can be wrong.
-- Marta: calls Elijah "spreadsheet". Hard and kind in the same breath; her disappointment costs more than her anger.
-  CT wants a little double speak in her kind lines and her warnings, and plain speech about the press, Emeka and
-  safety.
-- Grace: two voices, the warm one and the one she uses on trailer hitches. "Hon." Her hand on a forearm. Assertive,
-  caring, silly; shown, never listed.
-- Curtis: movies, fences, engines. Loyal in what he does, sour in what he says.
-- Priya: proof before anything is said; the pencil behind her ear; she ran for office and lost by about two hundred.
-- Denny: talks with his hands, says "man", turns his glass a quarter turn.
-- Tyler: young, quick, says the true thing to his plate.
-- Wren: gentle, a hand on her chest. Use the gesture rarely; give her the sharp thing to say.
-- Elijah's thoughts can be questions: "Spreading fear? ... I'm not spreading fear, am I?"
+**Keep these out of Claude's own wording.** (His words always go in as he said them, even when they have one of
+these shapes: "we're not being replaced, we're expanding our capacity" is his line for Lou.)
+- Counting as filler: "He read it twice. Then he wrote back." "Don't do the pattern ... it's boring and repetitive."
+- Step-walking chains: short flat sentence, "Then he", short flat sentence, "Then he". One "then" is fine. **[C]**
+- Mirrored contrast: "It's not X. It's Y." "He's on this side of the fence. His friends aren't." "That reads as AI to
+  me." "We've already established that we can do better than this."
+- Lines built to be quoted (section 6).
+- An inversion, fragment or quip used only to dodge a pronoun or fix a rhythm.
+- Stacked fragments. Five ideas in one sentence. A joke riding on the back of a clause ("What the fuck is that, bro?").
+- **[C]**, from line-editing practice and the count of the book's tics: a paragraph that ends by summing itself up;
+  three qualities listed in a row; "the way a person does X" as a habit (76 in the book); "like a man who"; "for a
+  while"; "looked at him"; "nodded"; "didn't say anything". Each is fine once in a scene. CT has not asked for a
+  sweep of these.
 
-## 9. Before CT sees a draft
+**Kept on purpose, so don't "fix" them:** his laugh line ("Then he snorted, and the snort turned into a laugh");
+"Nobody let go right away. Then Grace did." and its mirror on the phone; "Then she reached out and turned it off";
+"He read it again, slower"; the Epilogue's "Then he played something else."
 
-1. Search the book for each key phrase, so nothing repeats a construction already there.
-2. Count the first words of the narration's sentences. No opener carries a run.
-3. Read every new line against section 7's list.
-4. Read each line as a stranger: is it clear who, what, what kind?
-5. Check each heavy moment for a quip that doesn't belong, and each light moment for one that would help.
-6. Check the facts against the book: ages, dates, who is in the room, what each person knows by then.
-7. Check the lines later chapters depend on (`PLAN-CHAPTERS-20-TO-36.md`, section 7).
-8. Mark CT's words and Claude's apart.
+**The middle path.** "I do like the quips, though. They are welcome ... You're changing too much. You're doing too
+much. Find the middle path ... this is better, but it's lost some of its charm."
+- Welcome: a quip, a dry line to close a paragraph, an inversion, a phrase that reads literary. "Wearing his shirt"
+  is "a great way to explain it." "The corner of her mouth didn't get the message. That's great. I love that."
+- His test: "not when it cheapens the emotional weight of the scenes. When it adds levity, sure. When it feels
+  literary, absolutely. But not at the cost of the message."
+- Elijah's own dark joke at a low moment is in character. The narrator cracking wise over his pain is what stays
+  out. **[C]**
+- When a correction lands, change the thing he named and keep the rest.
 
-## 10. How CT wants the work to go
+## 11. Mechanics
 
-- "Stop hedging. Stop hesitating. Stop fishing for what I want, and just do it." Write the chapter, log it, tell him
-  in a few lines what changed, and move to the next. He will correct what he doesn't like.
-- A question from him gets an answer. "Think about" and "let's figure out" mean plan with him and build nothing.
-- Answer first, short. No em dashes. Use code instead of tokens.
-- Offer one version. If he says it's dry, add one step, not five. If he says it's too much, take one step back.
-- When he corrects something, write the lesson into this file the same turn.
+- **Written messages are italic**: texts, emails, chat lines, a card, a note. [143] "The 'is this true' line is not
+  italicized in Wes's text. It needs to be." Grace's email is set in italics, like every message in the book [159, the
+  edit list's note]. In ops rows,
+  wrap them in `*...*`. (Edits 196, 198 and 200 went in without them and were fixed on 26 Nov.)
+- Thoughts: the book has both. Recent edits use roman with a tag ("Figures, he thought."; "She asked me first, Elijah
+  thought."). Keep italics where a thought already has them [101].
+- Casual texts are lower case with little punctuation ("you probably want to lock your journal, brother"). The
+  chatbot talks like a chatbot on purpose [97]. The Architect and the machine use no contractions [28, 49].
+- A scene break (an empty paragraph, printed as * * *) is for a real jump: [151] "the 3 dots have been used more to
+  indicate like time passing or a big scene change."
+- Numbers in words in prose and speech ("fifteen", "half a mill" [53, 183]).
+- Tag adverbs are his when he gives them: "deadpan" [37], "begrudgingly" [90], "gently" [23]. Claude doesn't add them.
+- No em dashes anywhere.
 
-## 11. Corrections of 26 November, as they happened
+## 12. People
+
+Everything here is from a line CT dictated or approved, or is in the book.
+
+- **Elijah.** Means well. Never callous, creepy or cunning: his callous bar speech was cut [14]; he does not follow a
+  woman to her car [23]; not a womanizer [96]; overwhelmed, not depressed [67]. [155] "he thinks he's trying to help,
+  but it's obvious that he's making people uncomfortable. He's not necessarily aware of that." He hedges and
+  apologizes ("Yeah. No, yeah. For sure." [53]; "Look, I'm sorry, okay?"). He is polite to people who attack him
+  ("Oh, Mr. Ostrander ... It's really nice to hear from you."). He swears when he breaks ("Get bent." [79]). CT's
+  note: "somebody who was falsely accused of being a piece of shit and spent his whole life trying to prove
+  otherwise."
+- **People on the farm ask first.** [106] "Grace would ask Elijah's consent to touch his amp." "Up to you." [83]
+  "Only if you're comfortable." [90] It is the book's theme ("It asked."), so a person who doesn't ask is doing
+  something that matters.
+- **Lou.** "Kind of silly, but also kind of serious." To Elijah: "my man" [191, CT: "I don't think Lou would say it
+  doesn't work, man, to Elijah"], "professor", "Ivy League", "Thoreau", "son". He asks about three questions and then
+  says one thing. His wisdom comes in whole sentences: "He will play when he's ready. We cannot force the music out of
+  him." [108] He reaches for an odd big phrase: "Our specific constellation has some unique advantages." [191] He is
+  wrong sometimes ("I mean, is it?" "Does she?"). Three bare "man"s of his remain in Chapters 26, 30 and 35; changing
+  them is Claude's proposal, not yet his ruling.
+- **Marta.** Calls him "spreadsheet". The blow, then the praise: "You're a good engineer. I mean it." [124] She
+  finishes the thought [117]. Her warning about Grace is "treat my baby girl right or else we'll have problems"
+  [189]. CT, 26 Nov: "Marta talks really straightforward, and I do like that, but it's a little bit too direct ... I
+  see Marta as like an older lesbian ... there's an opportunity to add a little bit of, I don't know, almost double
+  speak to the way she talks." Claude's answer, not ruled on: in her kind lines and warnings only; plain about the
+  press, Emeka and safety.
+- **Grace.** Asks first: "Can I?" [106] Doubts herself out loud: "Maybe I'm a little too cautious." [123] Two voices,
+  the warm one and the one she uses on trailer hitches. Her written voice is formal with cheek ("that stupid Chobani
+  yogurt commercial" [159]). She squints to show she's mad and grins anyway. "Intelligent", "assertive", "cares so
+  much", "strong-willed, but she can be silly": shown, never listed.
+- **Curtis.** Movies, fences, engines. "The dude's got the gift for gab. I thought we agreed." [109] "I need to go
+  build an EMP."
+- **Priya.** Spoiling for the argument: "almost daring him to say something to her directly, waiting for her moment to
+  pounce" [103]. "It's what makes him such a pain in the ass. But he's quite useful." [129] "I ran for office, don't
+  you remember?" The pencil behind her ear.
+- **Denny.** "Oblivious to the mood of the people around him, as he usually was" [103]. "I like him already." [90] He
+  "should get excited that they have fans online." Talks with his hands; turns his glass a quarter turn.
+- **Wren.** Gentle, a hand on her chest (the book leans on it; give her the sharp thing to say **[C]**). "One of the
+  best artists most people had ever met" [195].
+- **Reuben.** A retired title officer; paper and folders. Others vouch for him: "Saved our ass quite a few times."
+  [130]
+- **Tyler.** No voice fact of CT's on file; his lines so far are Claude's. Young, quick, unpaid.
+- **Coming back in Chapters 23 to 36:** Devendra ("I got a mortgage and three kids. I gave up identity crises a long
+  time ago." [9]); David ("What's it gonna do? Yank the tap handle?" [43]); Rosa ("Mijo, you look muy flaco. Come in,
+  eat." [110]).
+
+## 13. Before a chapter is logged
+
+1. Read the chapter whole, its part of the plan, and this file's sections 5 to 12.
+2. Search the book for each key phrase, so nothing repeats a construction already there.
+3. Count the first words of the narration's sentences. No opener carries a run.
+4. Read every new line against sections 6 and 10. Unpack anything clever. One idea per sentence.
+5. Read each line as a stranger: who, what, what kind, where is he standing?
+6. Would a person do that? Has everyone named been introduced?
+7. Each heavy moment: no narrator's quip. Each light one: would one help?
+8. Messages in italics. No day name that only marks time. Numbers in words.
+9. Facts against the book: ages, dates, who is in the room, what each person knows by then. The lines later chapters
+   and the ending depend on (`PLAN-CHAPTERS-20-TO-36.md`, section 7).
+10. His chapter questions (section 3): does each person in the scene want something, does anyone change or pay, does
+    the dialogue sound like talk, does it end on something?
+11. Words in, words out.
+12. Mark CT's words, Claude's words and Claude's invented facts apart.
+
+## 14. How CT wants the work to go
+
+- Write the chapter, check it, log it, and report in a few lines: what changed, anything Claude invented, anything
+  that touches another chapter. Then the next one. He corrects what he doesn't like, and a correction to an edit not
+  in the Doc replaces it in place.
+- A question from him gets an answer, plainly. "Think about" and "let's figure out" mean plan with him.
+- Answer first, short. "Is it live? Did you do what I asked you to do or not?"
+- One version. Dry: add one step. Too much: take one back.
+- When he corrects something, add the lesson to this file in the same turn.
+- Code before tokens. A script finds patterns for free; a reader (subagent) is for judgment, and every quote a
+  reader returns gets grep-checked.
+
+## 15. Debts in edits already logged
+
+Found by the audit. None is in the Doc. Fix each when its chapter is rewritten, or ask CT about the ones in the ending.
+- Edit 172 put inversions into Chapters 20 to 39 before the "no tricks" correction ("What choosing for people looked
+  like, he knew."; "That one went without a note."; "Eleven notebooks rested on it."). His last word is the middle
+  path ("When it feels literary, absolutely"), so judge each one where it stands.
+- Edit 174, item 2, turned one mirrored line into another ("They can. They just won't.", Ch 35). Redo in the Ch 35
+  rewrite.
+- Edit 178 (Ch 37) has "It should have felt like traveling light. It felt like he had hardly been here at all." It
+  is in the ending; needs his yes.
+- Edits 172 and 197 lean on "So he", "Instead he", "Soon". One is fine; watch for chains.
+- Chapter 26 still has the old summer, with Marta's scene and the amp night moved to its end and no kiss yet.
+
+## 16. Corrections of 26 November, as they happened
 
 | Claude wrote | CT said | What it became |
 |---|---|---|
-| "a laugh came up out of him" (echoed his "A chuckle came over him") | "Is there a way to like switch that up?" | checked the book first |
+| "a laugh came up out of him" (echoed his "A chuckle came over him") | "Is there a way to like switch that up?" | search the book first |
 | "Then he started laughing, and couldn't stop" | "it reads really dry" | steps: snort, laugh, it gets away from him |
 | ribs, blurry road, "a broke man in a truck" | "Now it's a little too much." | the middle, and his own feeling line |
 | "He's on this side of the fence. His friends aren't." | "We've already established that we can do better than this" | no mirrored lines, even in a plan |
 | "He read it twice. Then he wrote back." | "Don't do the pattern." | straight to the reply |
 | Ch 25 draft 1, every sentence He or She | "You're still overusing pronouns" | openings by subject |
 | Ch 25 draft 2, inversions and quips to dodge pronouns | "I've told you to change this a dozen times" | plain: subject, verb, the concrete thing |
-| Ch 25 draft 3, all quips gone | "it's lost some of its charm ... Find the middle path" | three quips back, in light moments |
+| Ch 25 draft 3, every quip gone | "it's lost some of its charm ... Find the middle path" | three quips back, in light moments |
 | five ideas and a joke in one sentence | "What the fuck is that, bro?" | one idea per sentence |
 | cut "a cool spring" for his line | "we can combine them together, right?" | keep the good, build on it |
 | "I still get letters" | "we don't know what kind of letters ... make things clear" | "weird letters" |
+| a first draft of these instructions that called every rule his | the audit | rules marked his or **[C]**; sections 5, 6, 9, 11, 12 and 15 added |

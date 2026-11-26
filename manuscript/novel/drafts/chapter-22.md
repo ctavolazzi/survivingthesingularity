@@ -42,7 +42,7 @@ Change to:
 
 > He thought about keeping it to himself until he pictured Marta finding out some other way. So he went and rang the dinner bell, on a Saturday morning before it was light, which the co-op did not do, and stood in his funeral shirt in front of everyone it brought, and read them the timestamps.
 >
-> Tyler was standing at the back, by the door. Elijah looked at him and told them about the circuit board too. The startup out of Iowa, the board its machine had laid out in two nights, and the little part on it, packed in tight, that had cooked the Ochoas' plugs. He had seen it on Tuesday, standing behind Tyler in the shed, and said check the battery.
+> Tyler was standing at the back, by the door. Elijah looked at him and told them about the circuit board too. The startup out of Iowa, the board its machine had laid out in two nights, and the little part on it, packed in tight, that had cooked the Ochoas' plugs. He had seen it the night the plugs cooked, standing behind Tyler in the shed, and said check the battery.
 
 ## 5
 

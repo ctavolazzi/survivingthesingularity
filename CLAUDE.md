@@ -42,8 +42,10 @@ now, lists every other copy, and gives the one way to change the manuscript. In 
 
 ### Writing a line for the novel (the author's corrections, 26 November)
 
-Before writing any line for the book, read "Writing a beat for CT" in
-`manuscript/novel/EDIT-LOGGING-PROCEDURE.md`. In short:
+**Before writing any line for the book, read `manuscript/novel/WRITING-INSTRUCTIONS.md`, all of it.** It is the full
+set of the author's writing rules, his own voice with examples, each character's speech, and a checklist to run
+before a chapter is logged. Chapters 20 to 36 are being rewritten to `manuscript/novel/PLAN-CHAPTERS-20-TO-36.md`.
+The history of each correction is in "Writing a beat for CT" in `manuscript/novel/EDIT-LOGGING-PROCEDURE.md`. In short:
 
 - Search the current text for the key word and its cousins first, so the new line doesn't repeat a phrase the
   book already has.
@@ -58,7 +60,8 @@ Before writing any line for the book, read "Writing a beat for CT" in
 - No beat-counting: "He read it twice. Then he wrote back." (CT: "Don't do the pattern.") Go straight to the action.
 - The middle path: quips, a dry closing line or an inversion are welcome where they add levity or read literary, never
   where they cheapen a heavy moment, and never as a trick to vary openings (CT: "Find the middle path").
-- When he corrects a line, add what was learned to that section of the procedure file.
+- Unpack a clever line into the plain thing it means. Written messages are italic. Flag every fact you invent.
+- When he corrects a line, add what was learned to `WRITING-INSTRUCTIONS.md` in the same turn.
 
 ## Routes and data
 

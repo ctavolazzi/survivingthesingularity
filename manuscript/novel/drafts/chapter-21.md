@@ -26,7 +26,7 @@ Change to:
 >
 > "She knows. She wants one anyway."
 >
-> Denny hadn't stopped grinning since Tuesday. Priya had been eating with her soil book open beside her plate, and she
+> Denny hadn't stopped grinning in days. Priya had been eating with her soil book open beside her plate, and she
 > closed it on her pencil.
 >
 > **"Be careful with that,"** Priya said. "Some of them are going to be **crazy people. Wingnuts."**

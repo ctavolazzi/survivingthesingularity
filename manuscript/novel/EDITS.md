@@ -3325,6 +3325,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      crawler logs. Line flags 4 and 5 of the 59 fixed; the counting fixes at the old lines 1974, 1976, 2009, 2017 done.
      Rows 137 and 182 narrowed to the words that still hold. Logged only; not in the v6 Doc yet.
 
+Corrected in place, 26 Nov, after an audit of the day's edits against CT's standing rules (none of it in the Doc):
+written messages set in italics in edits 196 (Mr. Ostrander's messages and Elijah's replies), 198 (*Dear Ma*) and 200
+(*You're a liar. And you need to stop.*; Marta's card, *Power or brain? Halve it.*); two day names that only marked
+time taken out ("since Tuesday" in 200 is "in days"; "He had seen it on Tuesday" in 201 is "He had seen it the night
+the plugs cooked"). The audit and the rules are in `WRITING-INSTRUCTIONS.md`.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

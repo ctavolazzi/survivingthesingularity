@@ -4,6 +4,10 @@ Written 2026-11-25 from the chat where CT read v5 and dictated edits 1 to 128, a
 chat since (seven by 26 Nov). Read all of it before logging the next edit: it is the whole method, and "Where things
 stand" near the end says exactly where the book is.
 
+**Since 26 Nov the work is also writing, not only logging.** Before writing any line for the book, read
+`WRITING-INSTRUCTIONS.md` (how CT wants it written) and `PLAN-CHAPTERS-20-TO-36.md` (what happens). This file is the
+mechanics: how an edit is logged and checked, and where things stand.
+
 ## What CT is doing
 CT reads the v5 manuscript and dictates changes by voice. Claude logs them. Claude does not change the Google Doc
 unless CT clears it (a change goes in only as a suggestion). CT's standing words: "I just want you to log the edits."

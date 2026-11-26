@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS v6 edit list
-   (mirror of GitHub)" (id 1rVTwjoikmOaTNwbsVJ0L3f9H0nlNykM58MGBRe4T_XE) once, at the end of the session.
+   (mirror of GitHub)" (id 1YcVosABMe0MUbQjItpzieXDAuRjuHEI7lJ5QLoyJW5Q) once, at the end of the session.
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.

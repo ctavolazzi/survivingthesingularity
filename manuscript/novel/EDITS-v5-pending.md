@@ -1539,6 +1539,24 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Why "again": the book says he "didn't plug anything into it"; now he plays first, so it would contradict itself
      without the word. Logged only; not in the v6 Doc yet.
 
+146. **Chapter 6, Nina in the parking structure: "Keep your head down and stay focused for me."** CT (26 Nov): "Head
+     down for me is confusing. Let's say she says, keep your head down and stay focused for me. And then the next one
+     is, he meant to, he wanted to, but life gets in the way sometimes." Book now:
+
+     > He thanked her. She hugged him, there in the parking structure, which nobody at Claypot did. "Head down," she
+     > said. "For me."
+     >
+     > He didn't put his head down. He didn't know how anymore.
+
+     Change to [CT's words; "she said" placed by Claude]:
+
+     > He thanked her. She hugged him, there in the parking structure, which nobody at Claypot did. "Keep your head
+     > down and stay focused for me," she said.
+     >
+     > He meant to. He wanted to. But life gets in the way sometimes.
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

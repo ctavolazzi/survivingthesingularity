@@ -3307,6 +3307,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      been very hot yet." (CT's words), then "do the work." Claude's wording otherwise. Line flags 1 and 2 of the 59 are
      fixed here. Logged only; not in the v6 Doc yet.
 
+200. **Chapter 21: Denny's fans, Priya on wingnuts, the heat.** From the plan and CT's direction of 26 Nov; drafted by
+     Claude in `manuscript/novel/drafts/chapter-21.md` (Book now and Change to there, CT's words in bold). CT on draft
+     1: Priya "must say, and I still get weird letters ... we don't know what kind of letters they are. It's not
+     clear. You need to make things clear." The couple are Hector and Lupe Ochoa (Claude's names). Line flag 3 of the
+     59 is fixed here. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

@@ -33,7 +33,7 @@ Change to:
 >
 > **"What do you mean?"**
 >
-> **"I ran for office, don't you remember?** I lost by two hundred votes, and I still get letters. **There are some wild
+> **"I ran for office, don't you remember?** I lost by two hundred votes, and I still get **weird** letters. **There are some wild
 > people out there."** She looked down the table at Elijah. **"I mean, you know what I'm talking about, don't you?"**
 >
 > Elijah did. Somewhere in his phone, under three years of everything else, was a message from a woman in Tulsa who

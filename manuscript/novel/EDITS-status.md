@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 8, accepted: 136, not in the Doc: 55.
+Totals: PARTIAL: 8, accepted: 136, not in the Doc: 56.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -210,3 +210,4 @@ Edit 57 was never used.
 | 197 | Ch 0 to 39 | PARTIAL | He'd underlined it twice and gone back to nodding. |
 | 198 | Ch 25, 26 | not in the Doc | Grace came in without knocking and sat down on the table he used as... |
 | 199 | Ch 20 | not in the Doc | It was still a cool spring. It hadn't been very hot yet. |
+| 200 | Ch 21 | not in the Doc | all over the internet once |

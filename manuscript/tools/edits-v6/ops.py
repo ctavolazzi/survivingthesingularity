@@ -1080,6 +1080,16 @@ Some nights he drove out and looked at the barn from the road. He couldn't have 
 (206, "Somebody asked, lightly, who'd voted for whom. Somebody else said it was a fair question. It was the first time anyone at that table had been asked.\n", ""),
 (206, " She'd borrowed it from a retired hydrologist in town who still had three.", ""),
 (206, "Irene brought coffee down in a thermos.\n", ""),
+# 207, Ch 28: one night dark, power when it counts, the Ochoas' house off the map (drafts/chapter-28.md)
+(207, "The first hard storm of the winter came up the valley on a Friday.", "The first hard storm of the winter came up the valley in December."),
+(207, "and the valley was back in 1890, except for nineteen households, where the lights stayed on.", "and the valley was back in 1890, except for nineteen households, where the lights stayed on.\nAll year the co-op's panels had been taking a bite out of its power bill, and the battery bank in the shop had been mostly a line on Reuben's budget. That night it carried the mesh, the shop's freezer and the kitchen trailer."),
+(207, "She started it in the twenty-quart pot, which meant she'd already decided it was for the whole road.", "She started it in the twenty-quart pot, which meant she'd already decided it was for the whole road. Denny went from the shop to the kitchen trailer with his phone up, filming the lit windows against the black."),
+(207, "And, the previous Sunday, his update, done alone, in a hurry, ahead of the weather, without a second set of eyes. It was just a repeater. The rule was for things that touched the open internet. He had let himself believe that.", "And, the week before, his update, done alone, in a hurry, ahead of the weather, without a second set of eyes."),
+(207, "The north houses checked in on the voice radios, one by one. Everyone was fine. The hole was only in the map. But the hole was his.", "The north houses checked in on the voice radios, one by one. The last was the house where the road bends.\n\"Ochoas,\" Lupe said. \"We're fine. We're just not on your map.\"\nThe last time his work had failed that house, she had been standing in the doorway with the hose running into the gravel."),
+(207, "Gods with cold fingers and a multimeter, that's the job. Next time you touch a node, somebody's watching. Come down. Grace has soup.\"", "Gods with cold fingers and a multimeter, that's the job. Come down. Grace has soup.\""),
+(207, "They came down. There was soup. Grace had fed half the county road by then, out of the back of the kitchen trailer, by lantern,", "They came down. Halfway down the trail the soup came up to meet them, onions and bacon fat riding the wind out of the kitchen trailer. Grace had fed half the county road by then, out of the back of the trailer, under the one light on the road,"),
+(207, "The storm blew out by noon Saturday. The county's power came back three days later.", "The storm blew out before morning, and the county's power came back on a little after six."),
+(207, "\nThe rule got its amendment on Sunday, in Reuben's careful language. It covered everything people depended on now.", ""),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -3360,6 +3360,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      the morning after, "wearing his shirt and drinking coffee" (CT). Rows 172 and 198 narrowed (the festival jealousy
      and "something loud" are gone; "wearing his shirt" is back). Logged only; not in the v6 Doc yet.
 
+207. **Chapter 28: one night dark, power when it counts, the Ochoas' house off the map.** From the plan and CT's direction
+     (overnight; power when it counts; the panels cut costs); written by Claude (Book now and Change to in
+     `manuscript/novel/drafts/chapter-28.md`). The battery bank carries the mesh, the freezer and the kitchen trailer;
+     Denny films it; Lupe on the radio, "We're just not on your map."; the soup comes up the trail to meet them; the
+     county's power is back by morning. The lines re-teaching the two-person rule come out. 1,125 words to 1,194. Row
+     179 updated. Logged only; not in the v6 Doc yet.
+
 Corrected in place, 26 Nov (eighth chat), from `STORY-REPORT-2026-11-26.md` (none of it in the Doc): edit 201, the board
 confession is played with his words and Marta's "You let me say that. Ours.", and Grace tells Patricia it wasn't Tyler's
 code; edit 203, Chapter 24 opens on Elijah carrying the first new board to the Ochoas (Hector: "Took you a month.";

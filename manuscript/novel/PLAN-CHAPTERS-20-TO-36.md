@@ -454,7 +454,29 @@ The detail is in section 5a. In order:
 
 ## 9. How it gets written
 
-One chapter at a time, in order, starting at Chapter 21. For each: a reader drafts the changed scenes under section
-4's rules, Claude checks the draft against the book, the rules and section 7, and CT sees "Book now" and "Change to"
-before anything is logged. Each yes becomes numbered edits with check rows, as always. Nothing goes into the Google
-Doc until CT says so.
+One chapter at a time. For each: draft the changed scenes under section 4's rules, check the draft against the book,
+the rules and section 7, and show CT "Book now" and "Change to" before anything is logged. Each yes becomes numbered
+edits with check rows, as always. Nothing goes into the Google Doc until CT says so.
+
+**The next turn (CT, 26 Nov: "Write the bullet points of what the next turn needs to do"). Chapter 25 first, because it
+is mostly CT's own three scenes.**
+1. Read Chapter 25 whole in make_v6.py's v6.txt, with section 5a here and "Writing a beat for CT" in the procedure file.
+2. Draft, in order: the letter to Ma and the tiff; town, frozen yogurt and Tyler at Kowalski's; the packing and the
+   pond; Thanksgiving (Lou's three questions, Curtis at the truck, the truck stop, the U-turn); the return.
+3. CT's lines go in word for word and are marked his. Everything Claude words is marked. Claude writes the action
+   and leaves the feeling sentences for CT.
+4. List what comes out of Chapter 25 (the kiss by the stove, "I didn't wait," her truck in the gravel) and what moves
+   to the end of Chapter 26 untouched (her festival, Marta's scene, the amp night and the blanket).
+5. Check the draft: search the book for every key phrase first; no mirrored contrast lines; openings varied; clear
+   who speaks; he is thirty-seven; Ma's calls Sunday 9:40. Then against the ending: "She had knocked once" (Ch 37),
+   "I didn't wait for you to ask" (Ch 36), the truck song (Ch 33), sleeping through "since about Christmas" (Ch 32).
+6. Note the lines other chapters owe Chapter 25: Elijah telling Lou about Barry (Ch 20); the heat failure and the
+   forty boards redone by hand (Ch 21, 22), which are planned and not yet written.
+7. Show CT the chapter scene by scene. On each yes: log it from edit 196 on, add the check row and the ops row, run
+   make_v6.py, commit, push.
+8. Then, in order: Chapters 21 and 22 (the heat failure and the bell), 23 and 24, 26, and on to 36.
+
+**Still needed from CT:** names for the north-house couple (before Chapter 21); whether the truck turns out to have
+been nothing; a yes or no on the 59 line flags.
+**Owed at the end of the session:** "Where things stand" and "What is still open" in the procedure file, STATE.md and
+sessions/LOG.md in _workbench, and the Drive copy of the edit list refreshed once.

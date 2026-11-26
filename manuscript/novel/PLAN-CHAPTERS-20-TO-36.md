@@ -824,6 +824,31 @@ Where each lands (Claude's answer to "do you have any feedback"; CT has not repl
   which at this point more or less pays for itself with the Creator Fund," goes in Chapter 17. In Chapter 34 the
   arms he kept to prove his value are what he offers.
 
+### 10.5 CT's wrinkle on the arms (26 Nov, later still). Not decided; nothing written
+
+His words, in order. First: "I had originally envisioned Elijah storing the arms on the farm to sort of prove his value
+and save money. A moment he would have longed for since the electrical bill." "No bills, except my phone, which at this
+point more or less pays for itself with the Creator Fund." Then: "now that I think about it, he wouldn't do that. He
+barely knows these people at the beginning. Why would he trust them?? He kind of wouldn't. He may be naive, but he's
+not dumb. Let's make it so that he gets a lead from one of the folks on the farm in a relevant conversation, maybe
+Tyler ... why would he lie to Tyler? And what does he care what some 19 year old guy says or does...until he reminds
+Elijah of himself???" The lead is "a space to store the arms." Then: "It'll be a weird old man who delivers some of the
+hardest wisdom in the whole book. Like a classic 'witches hut' trope. The old man's yard was covered in foliage and
+rust buckets. Wavering one where between 'Haunted House' and 'condemned by the city' Richard Praether's property was,
+for lack of a better word, a dump." And the payoff: "At the end, we have a loose end to tie up - what Elijah does with
+the arms? He decides to sell them to the farm after Curtis refines the design for the off-grid microcontrollers and
+gets a surge of demand, Elijah reveals the location of the arms to Denny and offers to donate them to the farm so they
+can increase production and meet demand. Denny is stunned, and Priya (ever the confrontational one) demands to know
+why he didn't say something sooner. 'So you've been sitting on industrial technology this entire time??' Lou steps in.
+'I told our friend Elijah to keep the arms a secret.' Lou's presence was somehow larger, even through he had barely
+moved an inch. His voice was firm, but warm. 'I thought it best if we didn't set up too much of a power differential
+while our poor boy was simply trying to heal.'"
+
+What it collides with in the book as written (Claude, for CT to rule on): Grace's first message offers the shed for
+the arms (Ch 15) and his edit 88 has him ask for it on the fourth day (Ch 17); the table covers the storage bill as a
+loan (Ch 17); Chapter 34 has him offer "the two in the equipment shed" and the table say no, which the fire needs; and
+Chapter 37 leaves them in the shed ("He left them where they were").
+
 ## 11. Chapter by chapter, 27 to 36
 
 Words now, from make_v6.py's v6.txt with edits 1 to 204. The ten chapters total 24,084 words. The target is to finish

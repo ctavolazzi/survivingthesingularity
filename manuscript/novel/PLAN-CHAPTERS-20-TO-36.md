@@ -89,6 +89,46 @@ From CT's corrections (the full list is in `EDIT-LOGGING-PROCEDURE.md` and secti
 | The north-house couple (names needed, CT) | A season that pays | They trusted the boxes and the network, and both failed them | Their own place, working | Yes | NEW, CT: they lose the starts (Ch 21), lose the map in the storm (Ch 28), and leave for good (Ch 34) |
 | Bidwell and his "somebody" | The land and the water | Lou's cousin, though neither says so | To own the hole in the ground | No | Open: the book never says who the "somebody" near Elijah is |
 
+## 5a. Elijah and Grace: the push and pull (CT, 26 Nov)
+
+CT: "We don't want the kiss to be sudden. We want it to be obviously foreshadowed and set up ... something external
+prevents them from taking it further, and something internal inside Elijah prevents him." And: "We need to show those
+parts of her. We can't just list them. I feel like a lot of this book ... is kind of a lot of lists." So the kiss is in
+the fall, at the pond, and every step toward it is a scene where one side of Grace changes what happens.
+
+**What holds them back**
+- Inside Elijah (NEW, CT): he got involved with someone he worked with once, and this feels the same. He "learned a
+  long time ago not to date where you eat," and here he eats at her table every night. No name, no details (CT). The
+  book has no earlier relationship of his, so this is the first mention; two or three sentences, once, in Chapter 23,
+  where he is already driving past Irene's twice "on errands he'd invented."
+- Inside Grace (in the book, never connected): she left the captain, and Marta says she "will carry you till her
+  arms give out, and she will never once ask if you can walk." She is afraid of picking another man to carry. She says
+  it at the fire ("I can't believe I did this again"); the reader should feel it holding her back long before.
+- Outside: she brought him here, so her judgment is on trial every time he fails (Ch 19, 21, 22). The whole table is
+  watching, Marta most of all. And every time they get close, the farm needs one of them.
+
+**The steps (each one shows her, none lists her)**
+
+| Where | The moment | What it shows | What stops it |
+|---|---|---|---|
+| Ch 16 to 18, KEEP | Her hand on his forearm; the plate she stands over; "Okay, Mr. Grumpy Pants"; the soup jars | Caring, a little bossy, silly | They've just met. He has nothing |
+| Ch 19, KEEP | "You picked. You picked nothing." | Assertive: the warm voice goes | He's hiding the board |
+| Ch 21, NEW | After the starts cook she works the phones: Patricia, the couple, the route, in an hour, and has a plan before the men finish arguing about blame. He watches her do it | Intelligent. He sees she is better at this than he is | The crisis, and his secret |
+| Ch 22, CT | She stops him at the truck. Then Faith, and her hand left on his arm (KEEP) | Strong-willed. She won't let him be her father | Marta in the shop door. Everything is on fire |
+| Ch 23, NEW | His two invented errands (KEEP), and the thought that stops him: the coworker, the rule, and that he wants to anyway | His side of the pull | Himself |
+| Ch 24, CHANGE | The stove she can't sit near; the gate and the captain; "she looked at him, a little too long"; "God. We're fun." (KEEP). Then the walk to the pond, where she is silly on purpose to get them both out of it, and it nearly happens | Brave about her fear; silly as a kindness | Something small and outside: a flashlight, a voice, the dog from her first voice note. It should be funny |
+| Ch 25, KEEP | She's gone to the festival; he's jealous of "somebody with a job and a bed frame and no notebook"; Marta: "You like her." | He admits it, to Marta first | She isn't there |
+| Ch 25, KEEP | The amp, the truck song, the blanket, her head against his | They fit | Neither moves |
+| Ch 25, NEW, CT | The next Friday table: they keep looking and looking away. Lou sees. Marta sees. Somebody makes a joke that isn't about them | The whole table knows before they do | Forty people |
+| Ch 25, CHANGE | After that dinner, the pond. She kisses him: "I didn't wait." (KEEP the line; the fire throws it back at him: "I didn't wait for you to ask.") | She knocks | Nothing, this time |
+
+**How it stays vivid without going over the line**
+- One touch, growing: the book's own motif is her hand on his forearm (Ch 16, 17, 22). It lands, then it stays, then
+  at the pond it's the first time he reaches for hers. The fire's "he had never reached for hers" needs a look after.
+- What he loves comes through what he watches her do, in that scene, with a verb. No sentence that names three
+  qualities in a row.
+- The feeling sentences are CT's (rule 8). Claude drafts the action and leaves the space.
+
 ## 6. The map, chapter by chapter
 
 Years are the Appendix's. Each chapter: what stays, what changes, who does what and why, what it costs, and how it
@@ -249,8 +289,7 @@ serves section 2.
 
 ## 8. Open, for CT
 
-1. The kiss: the same July night she stops him, or in the fall at the pond after Marta's push and the amp night.
-   Claude recommends the fall: July starts it and the pond finishes it.
+1. Settled (CT, 26 Nov): the kiss is not sudden. Fall, at the pond, after the steps in section 5a.
 2. Names for the north-house couple.
 3. Curtis's wound: the book never says why he built the fence.
 4. Bidwell's "somebody near him": the book never says who. One reader's idea is Devendra, in his Ch 37 call. That

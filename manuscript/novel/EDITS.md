@@ -103,6 +103,19 @@ Given while reading Chapter 20, after the first readers' passes. Nothing below i
   face, losses. There needs to be, like, stakes. Somebody needs to leave the farm. And it hurts. They leave for greener
   pastures. They give up. They decide that it's not worth it. Like, they give up on the vision too soon. That's a
   normal thing that would happen." So: Chapter 37 to the Epilogue stay; the work is Chapters 20 to 36.
+- CT, on Elijah and Grace: "One of the big things I think we are overlooking is the will they, won't they push and
+  pull between Elijah and Grace. We don't want the kiss to be sudden. We want it to be obviously foreshadowed and set
+  up. Like, they like each other. They had that little moment where they were laying on the ground. Maybe there could
+  be a line somewhere after that happens where they, like, shoot glances at each other. But something external
+  prevents them from taking it further, and something internal inside Elijah prevents him from taking it further,
+  where he is like, yes, I want to, but, like, also, I don't know. He thinks back on his pain from his prior
+  relationships. And we don't need to get into the details there ... he's gotten involved with a coworker before, and
+  this kind of feels the same. He learned a long time ago not to date where you eat, but there was just something so
+  alluring about Grace. And then we can list some of her character traits. Like, Elijah loves that she's intelligent.
+  He loves that that she's assertive. He loves that she cares so much. But in order to have him love those things,
+  you know, she's strong-willed, but she can be silly. We need to show those parts of her. We can't just list them. I
+  feel like a lot of this book, as I'm reading it right now, is kind of a lot of lists. And I want it to feel a
+  little bit more vivid without being heavy-handed and without going over the line."
 - What the book has now (corrected 26 Nov; Claude first told CT there was no kiss, which was wrong): one kiss, in
   Chapter 25, in the shouse after a Friday dinner ("she leaned down and kissed him, once, and stayed there with her
   forehead on his"), and her truck still in the gravel the next morning. Earlier in Chapter 25: Marta's scene ("You

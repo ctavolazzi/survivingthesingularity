@@ -1989,6 +1989,256 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      "Hey" is Claude's]: "Hey, Ivy League," he said, wiping his eyes. The Appendix's list of Lou's names for him ("Ivy League") stays. Logged only;
      not in the v6 Doc yet.
 
+172. **Chapters 20 to 39: sentence openings.** CT (26 Nov), on the recommendations for the second half ("Prepare these edits for the future the same way we have with the other edits"). Claude counted 42 paragraphs in Chapters 20 to 39 where most sentences open with "He" and changed the openings and joins in the ones that read as a tic, the way edits 133, 156 to 158 and 160 were done. Every fact and line of dialogue stays. Left alone on purpose, because the repetition is the point: the dashboard in Ch 23 ("He built a map. He built, God help him, a dashboard."), the welding beads in Ch 30, the work and the numbness in Ch 31 ("He scribed the lines. He clamped the strip.", "He stood there. He wanted to leave", "He slept. He got up and swept."), "He didn't go help" in Ch 32, Lou and the bracket in Ch 29, Denny going live in Ch 38, and "He couldn't change ... He could" in Ch 39. Claude's wording throughout.
+
+     1. Book now:
+     > He had come north to do something about it. He also believed nobody could do anything about it. He had never put those two facts next to each other.
+
+        Change to:
+     > He had come north to do something about it, and he also believed nobody could do anything about it. Until now, those two facts had never sat next to each other in his head.
+
+     2. Book now:
+     > He stood there with the keys and thought about the logs
+
+        Change to:
+     > Instead he stood there with the keys and thought about the logs
+
+     3. Book now:
+     > He stayed where he was useful. Useful was easier than David.
+
+        Change to:
+     > So he stayed where he was useful. Useful was easier than David.
+
+     4. Book now:
+     > He swept the shop twice. He checked his phone for nothing. He thought about a field full of people who could dance
+
+        Change to:
+     > He swept the shop twice and checked his phone for nothing. Then he thought about a field full of people who could dance
+
+     5. Book now:
+     > He wanted to draw a line through it and extend it. He opened the inbox.
+
+        Change to:
+     > He wanted to draw a line through it and extend it. Instead he opened the inbox.
+
+     6. Book now:
+     > he had stopped sleeping for a month. He read it standing up, with the coffee going cold.
+
+        Change to:
+     > he had stopped sleeping for a month. This time he read it standing up, with the coffee going cold.
+
+     7. Book now:
+     > He read it three times. He typed I'm sorry I missed and looked at it
+
+        Change to:
+     > He read it three times, then typed I'm sorry I missed and looked at it
+
+     8. Book now:
+     > He pocketed the phone to answer later, when he could think, and went to find Grace.
+
+        Change to:
+     > Then he pocketed the phone to answer later, when he could think, and went to find Grace.
+
+     9. Book now:
+     > He'd come with a better plan. He had it on his phone.
+
+        Change to:
+     > He'd come with a better plan, and he had it on his phone.
+
+     10. Book now:
+     > every fifteen minutes. He'd already priced it. He showed her.
+
+        Change to:
+     > every fifteen minutes. It was already priced. He showed her.
+
+     11. Book now:
+     > He didn't sleep. He lay in the shouse with the phone on his chest
+
+        Change to:
+     > He didn't sleep. All night he lay in the shouse with the phone on his chest
+
+     12. Book now:
+     > The stove ticked as it cooled. He lay there and listened to it until the window went gray.
+
+        Change to:
+     > The stove ticked as it cooled, and he listened to it until the window went gray.
+
+     13. Book now:
+     > He'd have a fix drafted by March. He had, everyone knew, already started.
+
+        Change to:
+     > A fix would be drafted by March. He had, everyone knew, already started.
+
+     14. Book now:
+     > Then the red light came on. He watched himself skip to the last slide
+
+        Change to:
+     > Then the red light came on. From somewhere outside himself he watched himself skip to the last slide
+
+     15. Book now:
+     > into the microphone. He sat down with eight minutes of the talk unsaid.
+
+        Change to:
+     > into the microphone. When he sat down, eight minutes of the talk were still unsaid.
+
+     16. Book now:
+     > He wanted numbers. He had a notebook of them already.
+
+        Change to:
+     > What he wanted was numbers, and he had a notebook of them already.
+
+     17. Book now:
+     > He knew what he was doing. He had a name for it in the notebook and a rule against it. He did it for three nights anyway.
+
+        Change to:
+     > He knew what he was doing. There was a name for it in the notebook, and a rule against it. For three nights he did it anyway.
+
+     18. Book now:
+     > He didn't bring anybody a plan. He had said out loud, at a Friday table, that he was done bringing plans. Wren had put her hand on her chest. He had asked Grace
+
+        Change to:
+     > Nobody got a plan from him. At a Friday table he had said out loud that he was done bringing plans, and Wren had put her hand on her chest. Later he had asked Grace
+
+     19. Book now:
+     > He looked at the date in the corner, the one with his initials
+
+        Change to:
+     > There was the date in the corner, the one with his initials
+
+     20. Book now:
+     > He didn't tell anyone. He had nothing he could show them.
+
+        Change to:
+     > He didn't tell anyone. There was nothing he could show them.
+
+     21. Book now:
+     > He closed the notebook and snapped a rubber band around it.
+
+        Change to:
+     > So he closed the notebook and snapped a rubber band around it.
+
+     22. Book now:
+     > He wanted to argue. He wanted to run it again, with the fix in, right now, and show everybody it worked. He looked at Irene.
+
+        Change to:
+     > He wanted to argue, to run it again with the fix in, right now, and show everybody it worked. Then he looked at Irene.
+
+     23. Book now:
+     > He put the hinge down on the post. He was back in a hallway
+
+        Change to:
+     > Carefully he put the hinge down on the post, and then he was back in a hallway
+
+     24. Book now:
+     > He had gotten it from Nate and Wes, and from his mother, and from David across a bar.
+
+        Change to:
+     > Nate and Wes had given it to him, and his mother, and David across a bar.
+
+     25. Book now:
+     > Curtis stood up. He didn't say a word. He wiped his mouth
+
+        Change to:
+     > Curtis stood up. Without a word, he wiped his mouth
+
+     26. Book now:
+     > He had heard no in that room before.
+
+        Change to:
+     > That room had told him no before.
+
+     27. Book now:
+     > He sat there with the laptop pointed at her shoulder.
+
+        Change to:
+     > So he sat there with the laptop pointed at her shoulder.
+
+     28. Book now:
+     > He had eleven notebooks about a machine and not one line about that. He never thought about it. He didn't think about it because
+
+        Change to:
+     > Eleven notebooks about a machine, and not one line about that. He never thought about it, because
+
+     29. Book now:
+     > He heard how it sounded the second it was out. He meant that he wished
+
+        Change to:
+     > The second it was out, he heard how it sounded. What he meant was that he wished
+
+     30. Book now:
+     > He knew what choosing for people looked like. He'd been paid for it.
+
+        Change to:
+     > What choosing for people looked like, he knew. He'd been paid for it.
+
+     31. Book now:
+     > He drove past the turn twice on the way to the feed store and didn't take it.
+
+        Change to:
+     > Twice, on the way to the feed store, he drove past the turn and didn't take it.
+
+     32. Book now:
+     > He tuned it, and it slipped, and he tuned it again.
+
+        Change to:
+     > It took him a minute to tune it, and it slipped, and he tuned it again.
+
+     33. Book now:
+     > He leaned the guitar back in its corner and put the blanket back on.
+
+        Change to:
+     > Afterward he leaned the guitar back in its corner and put the blanket back on.
+
+     34. Book now:
+     > He lifted the hose over his head with one hand
+
+        Change to:
+     > From down there he lifted the hose over his head with one hand
+
+     35. Book now:
+     > He cashed the newest one for this.
+
+        Change to:
+     > For this he cashed the newest one.
+
+     36. Book now:
+     > He didn't put a note in that one.
+
+        Change to:
+     > That one went without a note.
+
+     37. Book now:
+     > He knew what it was. He had known since a hinge and a gatepost in July.
+
+        Change to:
+     > He knew what it was, and had known since a hinge and a gatepost in July.
+
+     38. Book now:
+     > He would have to be careful in here now, more careful than he used to be.
+
+        Change to:
+     > From now on he would have to be careful in here, more careful than he used to be.
+
+     39. Book now:
+     > He'd built eleven notebooks on it.
+
+        Change to:
+     > Eleven notebooks rested on it.
+
+     40. Book now:
+     > He meant the part about another time. He put the phone back in his pocket.
+
+        Change to:
+     > He meant the part about another time. The phone went back in his pocket.
+
+     41. Book now:
+     > He drank half. He tipped like a man who used to get tipped. He took the book out
+
+        Change to:
+     > He drank half and tipped like a man who used to get tipped. Then he took the book out
+
+     Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

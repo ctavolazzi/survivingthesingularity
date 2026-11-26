@@ -171,6 +171,10 @@ the third "a little too much". What the one he took does:
   one sentence ("Every one of those boxes had Elijah's board inside it, the one an Iowa company's machine had laid out
   at midnight, and nobody had tested a single one in July yet, because it was May."). CT: "What the fuck is that,
   bro?" A quip has to be funny on its own and sit at the end of something light, not ride on the back of a clause.
+- Plain is not flat. Seed what is coming (CT, 26 Nov, on "It hadn't been very hot yet."): "This is foreshadowing, right?
+  Like you're seeding, we're planting ideas, we're writing, we're doing the work of creating a story. We're not just
+  laying out a sequence of events. We are writing." A short line that points at what's coming stays; cutting tics must
+  not cut the story's setups.
 - Don't bring back a problem already fixed. The mirrored contrast line ("It's not X. It's Y."; "They can. They just
   won't."; Claude's own "He's on this side of the fence. His friends aren't.", 26 Nov) was edited out in 119 and 174.
   CT: "I don't want you to introduce like previous problems that we've already overcome ... We've already established

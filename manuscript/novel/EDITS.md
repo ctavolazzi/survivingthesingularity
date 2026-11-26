@@ -3313,6 +3313,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      clear. You need to make things clear." The couple are Hector and Lupe Ochoa (Claude's names). Line flag 3 of the
      59 is fixed here. Logged only; not in the v6 Doc yet.
 
+201. **Chapter 22: the leak, the bell, Lou's IBM line, the pot, the hour of the funeral.** From the plan; written by
+     Claude and logged on CT's "just do it" (Book now and Change to in `manuscript/novel/drafts/chapter-22.md`). He
+     opens the gate to read the vent logs alone on the drive (shame makes him work alone, and that causes the leak);
+     at the bell he chooses to confess the board, with Tyler at the back; Curtis "Twice"; Tyler "It was in the file";
+     Lou's IBM line (CT's, 26 Nov: "a machine cannot be held accountable, therefore a machine should never make a
+     management decision"), said Lou's way, from his wife's fridge, and the rule that a person opens the vents on hot
+     days and signs for it; he packs to leave for good and Grace takes his mother's pot back out of the truck ("You're
+     not taking the pot."), with Marta watching from the shop door; six households with a dollar figure ($210 a week,
+     Claude's estimate); the Sunday 9:40 call in its place, and the hour of Ray's service passing while he reads
+     crawler logs. Line flags 4 and 5 of the 59 fixed; the counting fixes at the old lines 1974, 1976, 2009, 2017 done.
+     Rows 137 and 182 narrowed to the words that still hold. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

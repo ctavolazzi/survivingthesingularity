@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v6 draft (Nov 25)",
 revision `AHj4eMRd7h3mRU6OT9VlPhG1iDnilKES-6yWvkTAp6QNH9NS0KVNux3eD5m6SNm93b20U75M3xHD-_aQR_WNu7tKwUXrfzEMz9w-WC3MM8U`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: PARTIAL: 8, accepted: 136, not in the Doc: 56.
+Totals: PARTIAL: 9, accepted: 136, not in the Doc: 56.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -147,7 +147,7 @@ Edit 57 was never used.
 | 134 | Ch 19 | accepted | Marta hadn't said a word either, not since Grace walked Patricia do... |
 | 135 | Ch 19 | PARTIAL | He scrolled. The whole line waited on him, and he was still scrolli... |
 | 136 | Ch 19 | accepted | You picked nothing." / He had picked. He had picked keeping his boa... |
-| 137 | Ch 22 | PARTIAL | read them the timestamps. Then, because he was already standing the... |
+| 137 | Ch 22 (changed by 201) | PARTIAL | read them the timestamps. |
 | 138 | Ch 15 | accepted | "No, your website had the email. Don't ask me. Ask Tyler." / He ask... |
 | 139 | Author's Note (replaced by 185) | accepted | (nothing left to check) |
 | 140 | Author's Note (replaced by 185) | not in the Doc | gone: I'm not asking you to trust me. |
@@ -211,3 +211,4 @@ Edit 57 was never used.
 | 198 | Ch 25, 26 | not in the Doc | Grace came in without knocking and sat down on the table he used as... |
 | 199 | Ch 20 | not in the Doc | It was still a cool spring. It hadn't been very hot yet. |
 | 200 | Ch 21 | not in the Doc | all over the internet once |
+| 201 | Ch 22 | PARTIAL | thought about Ray at the end of the bar with his club soda and lime. |

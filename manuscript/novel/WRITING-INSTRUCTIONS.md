@@ -183,6 +183,32 @@ His most frequent correction in edits 1 to 86: a compressed, clever line becomes
     stay with Elijah: "since Elijah's the narrator ... we don't see that conversation. What we see is Elijah's
     apprehension and guilt." Scenes the book already has away from him stand. A new one needs CT's say.
 
+## 7a. Smell, and verbs that carry physics (CT, 26 Nov)
+
+CT, for "the penultimate pass": "Smell. I need you to carefully consider the strength of the emotion and texture of
+SMELL. Other senses, sure. Sight is the main one we use to tell the story. Then Sound. But SMELL is one that really you
+can only describe properly if you've BEEN there." His two examples:
+
+- "the Smell of a car you've been living in. The way you stop noticing it after a while but everyone else sure does,
+  right away."
+- "the SMELL of a high-dollar party. The faint back notes of cleaning supplies. The perfume, how it acts like a
+  lightning rod for knuckleheads and more or less behaves like a slime mold, expanding out in every direction, but how
+  it is utterly decimated by the ferocity of the air from the kitchen."
+
+"And see how I used ACTION words that convey subtle subtext about physics in my language? Those are the top tip cream
+of the crop bits of professional highest level advice I can give to you."
+
+What that means on the page:
+- A smell is a fact only someone who was there would know. Use the one that proves it (what the truck smells like to
+  the person who opens the door, not to the man who sleeps in it).
+- The smell does something, with a verb that says how it moves: it expands, it draws people, it gets "decimated" by
+  the kitchen air. One thing overpowers another; a smell arrives before the thing does; you stop noticing your own.
+- The same goes for any description: choose the verb that carries the physics (what pushes, spreads, settles, wins).
+- Measured 26 Nov (`find_in_book.py`, edits 1 to 204): about 13 real smells in 98,128 words, nearly all in the form
+  "smelled like X" (diesel and low tide, hand sanitizer, wet coats and floor wax, wet soil). None in the two truck
+  chapters (14 and 15). The party has one flat line ("He could smell her perfume, and it was nice").
+- Don't overdo it ([162]: "DO NOT OVERDO IT"). Where it carries feeling, not one per page. **[C]**
+
 ## 8. Clarity and sense
 
 - "Clarity and continuity first. If it isn't clear, it gets changed." [181] "Clarity and continuity ... Those are the
@@ -335,6 +361,8 @@ Everything here is from a line CT dictated or approved, or is in the book.
 6. Would a person do that? Has everyone named been introduced?
 7. Each heavy moment: no narrator's quip. Each light one: would one help?
 8. Messages in italics. No day name that only marks time. Numbers in words.
+8a. Smell (section 7a): is there a place in this chapter where a smell only someone who was there would know does
+    the work, with a verb that moves? Are the verbs in the descriptions doing physics?
 9. Facts against the book: ages, dates, who is in the room, what each person knows by then. The lines later chapters
    and the ending depend on (`PLAN-CHAPTERS-20-TO-36.md`, section 7).
 10. His chapter questions (section 3): does each person in the scene want something, does anyone change or pay, does

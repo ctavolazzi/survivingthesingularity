@@ -7,6 +7,9 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 ## 1. Waiting on CT (ask only when the step needs it; one question at a time)
 
+- [ ] **Where the arms are kept.** CT's wrinkle (plan, 10.5): not on the farm at first; Tyler's lead to Richard
+      Praether's yard; the reveal with Priya's and Lou's lines. Claude's way to fit it: the reveal is Chapter 34 and the
+      table still says no. Waiting on his yes or no. Needed before Chapter 34 (and it changes Chapters 15, 17 and 37).
 - [x] **The rover and the arms.** CT, 26 Nov: "Yes". The rover stays as written; the arms are the machine the table
       says no to in Chapter 34. His addition: "I had originally envisioned Elijah storing the arms on the farm to sort
       of prove his value and save money. A moment he would have longed for since the electrical bill." With his line,
@@ -42,6 +45,10 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 - [ ] The ending lines CT said yes to, logged one at a time.
 - [ ] The Appendix brought up to date (plan, section 13, item 6).
+- [ ] The smell pass (CT, 26 Nov; `WRITING-INSTRUCTIONS.md`, section 7a). From Chapter 27 on it is part of writing each
+      chapter. For the rest of the book: his two places first, in his words (the truck he lives in, Chapters 14 and 15;
+      the high-dollar party, Chapters 9 and 10), then any scene where a smell would carry the feeling. Each one shown to
+      CT, since Chapters 0 to 19 are done.
 - [ ] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only.
 - [ ] A last readers' pass over the whole book for continuity, every quote grep-checked; fix what it finds.
 - [ ] Words: Chapters 27 to 36 at or under 24,084 in total.

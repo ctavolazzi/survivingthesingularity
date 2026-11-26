@@ -16,7 +16,7 @@
   "rules": [
     "No em dashes or en dashes anywhere in the book or in notes about it.",
     "When the author dictates lines, use his words. Fix typos and change nothing else.",
-    "The 19 pictures stay in the manuscript. Do not remove them.",
+    "The book has no pictures (the author cut them). The Google Docs still hold 19 old ones; the build leaves them out. Do not put pictures in the book.",
     "The book never says who Bidwell's watcher is. No edit may clear anyone of being that person.",
     "The author's personal journal material stays out of every file.",
     "Pushing to main on GitHub redeploys the live site. Do it only when he says.",

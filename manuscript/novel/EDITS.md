@@ -2813,6 +2813,27 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+191. **Chapter 20, Lou on why the farm works: "my man", and "Such as?"** CT (26 Nov): "I don't think Lou would say it
+     doesn't work, man, to Elijah. I think he would say it doesn't work, my man. It works because we're lucky, because
+     our specific constellation has some unique advantages. And then Elijah would say, such as, and then he would say,
+     well, and then explain the rest of it." Book now:
+
+     > "It doesn't work, man. It's never worked. It works because nine people here don't get paid, and Grace is some
+     > kind of saint, and my wife taught fourth grade ...
+
+     Change to [CT's words; the sentence break after "lucky" and "Lou said" are Claude's]:
+
+     > "It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique
+     > advantages."
+     >
+     > "Such as?"
+     >
+     > "Well," Lou said. "Nine people here don't get paid, and Grace is some kind of saint, and my wife taught fourth
+     > grade ...
+
+     The rest of his speech is unchanged. "It's never worked" goes, since CT's version leaves it out. Logged only;
+     not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

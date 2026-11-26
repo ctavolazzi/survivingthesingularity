@@ -682,6 +682,9 @@ Figures, he thought. I hope they have a good mechanic."""),
 # 190, Ch 20: cut the cable box line
 (190, "He was a little ashamed of that. He had a notebook with the wattage of his cable box in it.",
 "He was a little ashamed of that."),
+# 191, Ch 20: Lou, "my man", and "Such as?"
+(191, "\"It doesn't work, man. It's never worked. It works because nine people here don't get paid,",
+"\"It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique advantages.\"\n\"Such as?\"\n\"Well,\" Lou said. \"Nine people here don't get paid,"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

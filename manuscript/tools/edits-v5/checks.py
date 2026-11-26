@@ -196,4 +196,5 @@ C=[
 (188,"Ch 15",["Somewhere past Cloverdale the check-engine light came on.\nElijah looked at it and rolled his eyes. Then he snorted, and the snort turned into a laugh, and the laugh got away from him. All his pent-up pain started rolling out of his lungs at once. He wiped his eyes and turned up the radio. Willie Nelson was singing \"On the Road Again.\"\nFigures, he thought. I hope they have a good mechanic.\nAct Three: The Farm"],[]),
 (189,"Ch 18",["Don't let her effort go to waste.\" She straightened up and looked him dead in the eye. \"You waste it, and you and me are going to have a problem.\" She let that sit. \"Soup's on at noon."],["go to waste.\" She straightened up. \"Soup's on"]),
 (190,"Ch 20",["Elijah had no idea. He was a little ashamed of that.\nSo Lou showed him."],["He had a notebook with the wattage of his cable box in it."]),
+(191,"Ch 20",["\"It doesn't work, my man. It works because we're lucky. Our specific constellation has some unique advantages.\"\n\"Such as?\"\n\"Well,\" Lou said. \"Nine people here don't get paid,"],["It doesn't work, man. It's never worked."]),
 ]

@@ -121,7 +121,7 @@
       "holds": "v6",
       "from": "doc-v5-draft",
       "current": true,
-      "role": "The book right now, and the Doc the author reads for his final edits, mostly in the large print PDF built from it. Made 25 November by manuscript/tools/edits-v6/make_v6.py: v5 with every suggestion accepted (edits 1 to 86 and the follow-ups), then edits 87 to 138 from manuscript/novel/EDITS-v5-pending.md, written as a .docx with the 19 pictures (made smaller to fit the Drive connector) and converted by Drive. Seven fixes from the contradictions pass were then made in it directly, on the author's word. New edits start at 139 and go in manuscript/tools/edits-v6/ops.py with a check row.",
+      "role": "The book right now, and the Doc the author reads for his final edits, mostly in the large print PDF built from it. Made 25 November by manuscript/tools/edits-v6/make_v6.py: v5 with every suggestion accepted (edits 1 to 86 and the follow-ups), then edits 87 to 138 from manuscript/novel/EDITS-v5-pending.md, written as a .docx with the 19 pictures (made smaller to fit the Drive connector) and converted by Drive. Seven fixes from the contradictions pass were then made in it directly, on the author's word. Edits from 139 on are logged in manuscript/novel/EDITS-v5-pending.md, with a row in manuscript/tools/edits-v6/ops.py and a check row; they are not in this Doc until the author says so.",
       "checked": "Read on 25 November 2026 after the fixes: 3,806 paragraphs, 64 headings, 19 pictures, no suggestions. manuscript/tools/edits-v5/verify.py: all 138 edits accepted. Its text matches make_v6.py's output word for word. Large print PDF built from that read: 659 pages."
     },
     {

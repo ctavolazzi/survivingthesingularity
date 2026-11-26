@@ -2870,6 +2870,23 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      Logged only; not in the v6 Doc yet.
 
+195. **Chapter 20, Wren introduced: the run-on split, and "one of the best artists".** CT (26 Nov), on the page: "There's
+     a fat run-on sentence here." Claude proposed the split. Then CT: "and the best artist Elijah has ever met. We
+     haven't established any sort of artistry. We don't have any frame of reference for that. That's just stating
+     something for no reason. And one of the best artists most people had ever met." Book now:
+
+     > That was Wren, who led the Sunday circle and made the candles and had painted every wall of the seed house,
+     > inside and out, with things that were half heron and half radio tower. She was twenty-four, and the best
+     > artist Elijah had ever met.
+
+     Change to [the split is Claude's wording; "one of the best artists most people had ever met" is CT's]:
+
+     > That was Wren. She led the Sunday circle and made the candles, and she had painted every wall of the seed
+     > house, inside and out, with things that were half heron and half radio tower. She was twenty-four, and one of
+     > the best artists most people had ever met.
+
+     The rest of the paragraph is unchanged. Logged only; not in the v6 Doc yet.
+
 **Places to look at, no changes made** (from the other chat's scan for runs where most sentences open the same way
 and a big moment is told as a list of events; CT asked only to be made aware of these):
 

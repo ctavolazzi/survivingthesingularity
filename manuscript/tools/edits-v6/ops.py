@@ -694,6 +694,9 @@ Figures, he thought. I hope they have a good mechanic."""),
 # 194, Ch 20: Wren, "a stranger had helped themselves to the inside of my house"
 (194, "Then I found out a machine wrote it, and I felt like somebody had been in my house.\"",
 "Then I found out a machine wrote it, and I felt like a fraud and like a stranger had helped themselves to the inside of my house.\""),
+# 195, Ch 20: Wren introduced, the run-on split
+(195, "That was Wren, who led the Sunday circle and made the candles and had painted every wall of the seed house, inside and out, with things that were half heron and half radio tower. She was twenty-four, and the best artist Elijah had ever met.",
+"That was Wren. She led the Sunday circle and made the candles, and she had painted every wall of the seed house, inside and out, with things that were half heron and half radio tower. She was twenty-four, and one of the best artists most people had ever met."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

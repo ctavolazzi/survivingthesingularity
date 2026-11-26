@@ -1952,11 +1952,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
      > "I think what you're doing is just right," he said.
 
-     Change to [CT's words; the bird line is Claude's]:
+     Change to [CT's words; the bird line is CT's correction of Claude's, 26 Nov]:
 
      > "I think the way you're doing it is just right," Elijah said.
      >
-     > Out by the pond, the birds were singing.
+     > Out by the pond, the birds were chirping beautifully.
 
      Then "Chapter 19" as before. The pond is the one from edit 104 (the frogs at night). Context from CT, NOT for the
      page (edit 104): birds don't sing when there are predators around; it is his nervous system settling. Logged

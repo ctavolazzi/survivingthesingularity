@@ -422,7 +422,7 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "said one word, \"Musicians,\" the same way you might say termites."),
 # 166, Ch 18
 (166, "\"I think what you're doing is just right,\" he said.",
-"\"I think the way you're doing it is just right,\" Elijah said.\nOut by the pond, the birds were singing."),
+"\"I think the way you're doing it is just right,\" Elijah said.\nOut by the pond, the birds were chirping beautifully."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

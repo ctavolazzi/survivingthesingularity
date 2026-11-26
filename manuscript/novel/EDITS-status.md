@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 4.
+Totals: accepted: 223, not in the Doc: 5.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -238,3 +238,4 @@ Edit 57 was never used.
 | 225 | Ch 8, 9, 10 | not in the Doc | your video went parabolic. Fifty million views, |
 | 226 | Ch 26 | not in the Doc | Elijah didn't quite know why he didn't go for it right away. |
 | 227 | Ch 21 to 36, Pondwater | not in the Doc | a little at a time and all the time. |
+| 228 | Ch 16, 17, 33 | not in the Doc | "The artists have a valid point, don't they?" a woman said. |

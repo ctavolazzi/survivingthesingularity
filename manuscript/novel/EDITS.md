@@ -3510,6 +3510,26 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      what's in his barn?" "No."). It answers Elijah's "Why?" in Chapter 17 ("He didn't say. That's Lou. You'll meet
      him."). Logged only; not in the v6 Doc yet.
 
+228. **Lou comes in heavier, on Elijah's first night (Ch 16, 17, 33).** CT (26 Nov, eleventh chat): "maybe an
+     introduction to Lou can come in a little heavier. There could be a discussion amongst some of the characters about
+     the artist reaction to AI ... And then Lou could interject, like enter the conversation, enter the room, turn a
+     corner or whatever, and say, they will adapt, as the Lamplighters did. And then we introduce Lou, and we give him
+     a physical description. He's imposing, he's big, he's a big guy. But there's a certain temperance to him that is
+     noticeable. He moves gently ... Lou's steps are light as a feather. Elijah should be reminded of his uncle, who
+     was a Hopi tribesman ... but that's another story for another time ... Lou could say, like, does everyone please
+     welcome our new guest, Elijah. He'll be staying with us for a while. And then I see in my head, like, that next
+     chapter is like, nobody asked him any questions for about 3 days." Added at the end of Chapter 16, so Chapter 17
+     still opens on his three days. His words: the four lines about the artists, Lou's lamplighters line, the
+     description, the uncle, the welcome. Claude's: the people unloading the trailer, Lou's buckets, Grace's "Lou. This
+     is him.", the last three sentences. The book's "about sixty, sunburned right up to his hat line" moved here from
+     the Friday dinner. Forced by it: "a man named Lou" and "You'll meet him." (Ch 17); the pump house steps, where the
+     stranger's one word "Lou," from CT's edit 89 is gone because Elijah has met him; "It was Lou, from the pump house
+     steps." (the dinner); and Chapter 33's "Lou wasn't a big man", now "Lou was a big man". Row 89 narrowed. 302 words
+     in, 47 out. Held for CT, from the same message: Rosa feeding him in the first three days, Rosa and the ladle
+     ("the heart of a helper", the tamales), and "take this to Grace" with the talk about staying for free (Rosa is not
+     on the farm before Chapter 38; reasons in the record). Record: `manuscript/novel/drafts/edit-228-lou-comes-in.md`.
+     Logged only; not in the v8 Doc yet.
+
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware
 the military!" stays, with "They never built one thing in their lives ... they come around with a check. Somebody

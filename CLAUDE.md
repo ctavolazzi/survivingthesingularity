@@ -40,6 +40,19 @@ now, lists every other copy, and gives the one way to change the manuscript. In 
 - Each character has a folder in `manuscript/novel/characters/` and a notes file in Drive.
 - Pushing to `main` redeploys the live site. Merge the book into `main` only when he says.
 
+### Writing a line for the novel (the author's corrections, 26 November)
+
+Before writing any line for the book, read "Writing a beat for CT" in
+`manuscript/novel/EDIT-LOGGING-PROCEDURE.md`. In short:
+
+- Search the current text for the key word and its cousins first, so the new line doesn't repeat a phrase the
+  book already has.
+- Show the thing in two or three small steps. One flat statement reads dry; a pile of detail is too much.
+- One beat. Don't explain why it matters.
+- Write the action plainly and leave the sentence that names the feeling to the author.
+- Offer one version, sized in the middle. If he says it's dry, add one step, not five.
+- When he corrects a line, add what was learned to that section of the procedure file.
+
 ## Routes and data
 
 - `/sample`: open introduction and reading guide from canonical book source.

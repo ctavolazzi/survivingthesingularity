@@ -574,6 +574,9 @@ The last number on her whiteboard was still a zero. Nobody in the valley could r
 "The county's power came back three days later."),
 (179, "He'd filed it with the clerk on Tuesday.",
 "He'd already filed it with the clerk."),
+# 180, Ch 17
+(180, "He looked around the table, then back.\n\"You know what I asked him?",
+"He looked around the table, then back at Elijah.\n\"You know what I asked him?"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

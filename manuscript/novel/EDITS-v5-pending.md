@@ -678,8 +678,7 @@ added to the bridge map and marked CURRENT; that is already done on this branch.
      >
      > But Denny kept going anyway, oblivious to the mood of the people around him, as he usually was.
 
-     **Open, for CT:** "He looked around the table, then back." now follows "oblivious". It can read as him seeing
-     faces without registering them. If it jars, cut that one line.
+     **Settled by CT (26 Nov):** keep the line. "Then back to what?" Edit 180 makes it "then back at Elijah."
 
 104. **Chapter 17, after the dinner: the notebook page of names.** CT: "he looked at that page for a long time,
      while listening to the birds." Context from CT, not for the page: birds don't chirp when there are predators
@@ -2421,6 +2420,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
         Change to:
      > He'd already filed it with the clerk.
+
+     Logged only; not in the v6 Doc yet.
+
+180. **Chapter 17, Denny's reskilling speech: "then back at Elijah."** Settles the open question under edit 103. CT
+     (26 Nov): "Keep it. Then back to what?" Denny "folded his hands and looked at Elijah" before the speech, and the
+     speech is aimed at him; after edit 103's paragraph on the table, the line no longer says where he looks. Book now:
+
+     > He looked around the table, then back.
+
+     Change to [Claude's wording, approved by CT: "Yes."]:
+
+     > He looked around the table, then back at Elijah.
 
      Logged only; not in the v6 Doc yet.
 

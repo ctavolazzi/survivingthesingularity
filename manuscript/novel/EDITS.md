@@ -3336,6 +3336,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      kitchen door (a repeat of Ch 22), "Tuesday". Line flags: the power bill "said so", "the kitchen-table meeting".
      Counting fix at the old line 2047. About 405 words in, 231 out. Logged only; not in the v6 Doc yet.
 
+203. **Chapter 24: the containers paid for before the plugs cooked, Hector at the first fire, Marta at the door, the pond.**
+     From the plan; written by Claude and logged on CT's "Do it" (Book now and Change to in
+     `manuscript/novel/drafts/chapter-24.md`). The containers were bought in April, so the house doesn't come out of
+     the Ochoas' money; Hector comes to the first fire for half an hour, Lupe doesn't; Marta leaves last and tells Grace
+     in the doorway, "Pick a side of that door. You're heating the whole valley." (her double speak, Claude's wording);
+     after the captain, Grace needs air and they walk to the pond for the first time: his bleed-out joke from Chapter
+     17, her four-foot rock, nearly a kiss, and the dog from the Friday dinners shakes pond water on both of them; back
+     inside, her wet shoes point at the stove. Line flags: "nothing got built only once", "where no room had been", "the
+     place were his to run". Counting fix at the old line 2139. About 312 words in, 56 out. Logged only; not in the v6
+     Doc yet.
+
 Corrected in place, 26 Nov, after an audit of the day's edits against CT's standing rules (none of it in the Doc):
 written messages set in italics in edits 196 (Mr. Ostrander's messages and Elijah's replies), 198 (*Dear Ma*) and 200
 (*You're a liar. And you need to stop.*; Marta's card, *Power or brain? Halve it.*); two day names that only marked

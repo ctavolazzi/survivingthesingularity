@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edit 292 (27 Nov, the sixteenth chat), logged only. The next edit is 293.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 and 293 (27 Nov, the sixteenth chat), logged only. The next edit is 294.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4121,6 +4121,16 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Chapter 15, where he reads her first email. CT on seeing it: "Keep it." Searched: "stopped talking", "grocery", "ancient
      texts" and "intellectual property" are nowhere else; "aisle" only as the fastener aisle at Kowalski's (Ch 25).
      Scene 87 goes from 176 to 221 words. Logged only.
+
+293. **Chapter 27: the coats soaked up Rosa's cooking.** CT's words from the smell chat (27 Nov), where he corrected
+     Claude's draft of the Thanksgiving smell: "Their coats had soaked up **Rosa's cooking** all afternoon, sage and turkey
+     fat, and the little room filled with **the heavenly scent** of it the minute the door shut." It waited, not logged.
+     In the sixteenth chat's senses pass Claude's lean was to log "Rosa's cooking" alone: Rosa made that dinner ("Rosa made
+     the dinner that year, her first for the farm"), and since then CT's edit 287 gave Chapter 6 the coffee that "smelled
+     like a slice of heaven", after he asked for a search so nothing else smelled like it. CT: "Go with your leans on all
+     seven." So "the kitchen" became "Rosa's cooking"; "the heavenly scent" is not in the book. CT's words. Searched:
+     "Rosa's cooking" is nowhere else. Check row 206 narrowed to "Their coats had soaked up". Scene word count unchanged.
+     Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

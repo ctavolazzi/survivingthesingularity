@@ -1676,6 +1676,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (291, "but he did enjoy the money.\nElijah worked out of a satellite office", "but he did enjoy the money. His father always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his father's face.\nElijah worked out of a satellite office"),
 # 292, Ch 27: once they started they never stopped talking (CT's words, 27 Nov, sixteenth chat; the third sentence finished by Claude on his word, corrected in place)
 (292, "she was enjoying taking the scenic route.\nThey danced on a hillside", "she was enjoying taking the scenic route.\nOnce they started they just never stopped talking. Topics crossed intellectual property lines, ranging from ancient texts to which aisle was their favorite in the grocery store. There was something about Grace that made him want to know what she thought of just about everything.\nThey danced on a hillside"),
+# 293, Ch 27: the coats soaked up Rosa's cooking (CT's words, drafted in the smell chat; logged 27 Nov, sixteenth chat, on his "Go with your leans")
+(293, "Their coats had soaked up the kitchen all afternoon", "Their coats had soaked up Rosa's cooking all afternoon"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

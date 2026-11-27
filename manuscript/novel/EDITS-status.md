@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 224, not in the Doc: 69.
+Totals: accepted: 224, not in the Doc: 70.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -304,3 +304,4 @@ Edit 57 was never used.
 | 290 | Ch 0 | not in the Doc | gone back to nodding. Elijah did not like the corporate bobbleheadi... |
 | 291 | Ch 0 | not in the Doc | enjoy the money. His father always said he had a champagne appetite... |
 | 292 | Ch 27 | not in the Doc | taking the scenic route. Once they started they just never stopped ... |
+| 293 | Ch 27 | not in the Doc | Their coats had soaked up Rosa's cooking all afternoon, sage and tu... |

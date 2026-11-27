@@ -55,6 +55,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | Character notes | `characters/<name>/` (gathered by `manuscript/tools/book.py cast`) |
 | Which Doc is the book | `BRIDGE.md` (generated: `node scripts/sts-bridge.mjs export md`) |
 | The PDF CT has | "StS v8 large print CURRENT (27 Nov, edits 1 to 243).pdf" (`14MdeTNd1djyhORwqpP422I-XZq42j7kj`); it has neither edit 244 (the Dedication) nor 245 (Ch 0) in Drive folder "StS Publication Files" (`1QmqU-MsDcqfh1sC5Q_DsGeqcdyf_kLB_`); older builds in `12CbC-hEUy_5rArVtz8v393rc_ciV9Ltv` |
+| The Doc of Chapters 0 to 5 | "StS v9 draft, Chapters 0 to 5 (Nov 27, edits 1 to 270)" (`1EIYyOWtzeRjW6S_XO510lOZ3gnIX7Fts3uOLO7_OcY0`), made on CT's ask from `make_v6.py ... --no-pictures`, cut after Chapter 5 (front matter, contents to Ch 5); checked word for word against the built book. A reading copy, not the manuscript; edits still go in GitHub |
 | Drive copy of the edit list | "StS edit list, edits 1 to N (mirror of GitHub)"; its current id is in `EDIT-LOGGING-PROCEDURE.md`, step 10 |
 | Build settings (copyright page, cover) | `publication/novel/build/book.json`; build steps in `publication/README.md` |
 

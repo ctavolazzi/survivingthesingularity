@@ -1555,6 +1555,10 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (245, 'Elijah would sit down and it would already be there. At the far end, on the last stool,', 'Elijah would sit down and it would appear like magic.\nAt the far end, on the last stool,'),# 246, Ch 0: the run-on in the demos split (CT, 27 Nov, fourteenth chat: "Run on sentence. Change to 'Styles with names attached...'")
 (246, 'including styles he recognized, styles with names attached, people attached, rent payments attached.', 'including styles he recognized. Styles with names attached, people attached, rent payments attached.'),# 247, Ch 0: Google made the engine of AI and threw nitro on the industry (CT, 27 Nov, fourteenth chat)
 (247, 'Google drew the engine.', "Google had made the engine of AI. With that paper release they'd thrown nitro all over the industry."),
+# 248, Ch 0: three line fixes (CT, 27 Nov, fourteenth chat): "of his self-teaching" out; cross becomes conquer; the realtors are paying close attention
+(248, 'that had eaten whole weekends of his self-teaching and', 'that had eaten whole weekends and'),
+(248, 'of all canyons, to cross first.', 'of all canyons, to conquer first.'),
+(248, 'To his surprise, some realtors were watching.', 'To his surprise, some realtors were paying close attention.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

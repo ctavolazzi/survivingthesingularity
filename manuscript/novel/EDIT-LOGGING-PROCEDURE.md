@@ -296,9 +296,28 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   long Reuben has had the deed (Ch 29, "a year and a half"), "Took you a month" (Ch 24, about seven weeks by the book's
   dates), and "Three years" said in October 2027 (Ch 34, 35; two years and seven months; the narration says "going on
   three years"). For CT, not changed.
+- **Thirteen more cells for the scene sheet, rows 1 to 24**, each with the line from the page that proves it:
+  `scene-sheet-fixes-rows-1-24.md` (from the tenth chat; not applied, so the CSV and the Google Sheet stay in step).
 - **Unchecked since the sixth chat changed the build code** (a page for a line before the title, no About the
   Author page): the paperback, ebook and docx builds, and the site's own tests after the edit list was renamed
   `EDITS.md`. Run them before a release.
+
+
+## Four things in the book for CT, from a third check of the scene sheet (27 Nov, the fifth logging chat)
+Found by four readers against the book built with edits 1 to 234 and confirmed on the page in that build's v6.txt.
+Not yet in the lists above. For CT; nothing changed. (The sheet fixes this check found were already made by the
+second full read above; the "four thousand" replies and the Sunday lien sale are already recorded.)
+- **Who sent Ma the video.** Ch 6: Elijah sends the link to her chat, and she writes at 6:10, "I watched it. You look
+  thin." Ch 7: "I watched your video," she said. "The Hollis girl sent it to me." Both can be true, but the page
+  doesn't say so.
+- **The squash.** Ch 34, scene 1: Lou says "the squash has to come in this week" and Curtis pulls the first wagon.
+  Two weeks or more later, at the October meeting: "The winter squash had to come in," and the next morning rows of
+  squash still sit in the field.
+- **Phones face up.** Ch 38: Patricia's "phone was face up. For the first time anybody could remember." Weeks earlier,
+  Ch 34: "Lupe Ochoa had her phone face up on the plywood, which nobody did at that table." The Ch 38 line can mean
+  Patricia's phone; the reader may hear "anybody's".
+- **Melody's visits.** Ch 37: "A Saturday in April. One in May. Two in August. The last one was three weeks ago." Three
+  weeks before early November is October, which the list leaves out.
 
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including
@@ -317,3 +336,23 @@ Since 26 Nov the same v7 changes are also in v6 (edits 184 to 186); the v7 Doc i
 ## Later, when CT says go
 Apply 87 onward to the Doc as suggestions, re-read, run verify. CT accepts the suggestions. Run
 `build.sh` (the gate stops it until every edit is in), then refresh the Drive uploads.
+
+## Readers' notes on the book text, for the final pass (27 Nov, from the chat of edits 217 to 220)
+
+Two readers checked Chapters 0 to 9 and 16 to 21 against edit 234's build. No hard contradiction. The scene sheet
+fixes they found are covered by the sheet's full read (commit f644636e). Tensions in the text, each quoted and
+grep-checked; none is fixed, each is CT's to rule on:
+- Ch 6 and 8: "By Friday it was four thousand replies" (October 2023) and Ruby in February 2024, after "Fifty million
+  views": "Because there's four thousand of them and one of you. And tomorrow it'll be eight thousand."
+- Ch 8: "He hadn't known he was a speaker until a young man with a tablet took him there." and later "A seat on the
+  four o'clock panel, because someone's flight from Austin had been canceled."
+- Ch 17 and 19: Curtis's tractor story, "the laptop says twelve hundred dollars and a week. I knew it was two dollars
+  of hose.", and Elijah's truck: "A dealership had quoted him twelve hundred dollars and a week." An echo, or a
+  leftover.
+- Ch 17 and 19: Tyler sent Elijah to Praether's with "a couple of big crates", and he is on the farm every build
+  weekend, so a fourth person could connect the arms to the barn.
+- Ch 19: an April order, most of a month on the first design, a redesign, three build weekends and a field week, all
+  done in time for "The forty units shipped in May" and a week of laying tape still in May. It only fits if the order
+  came in the first days of April.
+- Ch 17 and 19: Grace's offer came "in her message on his page"; Tyler "had found Elijah's email for Grace".
+Chapters 10 to 15 and 22 to the Epilogue were not re-read by this chat; its readers stopped at a usage limit.

@@ -6,6 +6,9 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 **Before the final pass:** `scene-sheet-audit-2026-11-27.md` lists what a 27 Nov check of the scene sheet found still open (sheet cells, three contradictions in the text for CT, and rows 71 to 105 and the timeline not yet checked).
 
 **Next edit: 235.** Edit 234 was logged on 27 Nov, after the smell pass prompt was written (CT's dictation in the Riemann
+
+**The one branch for the book: `claude/singularity-publication-build-kparqk`, in both repos.** Every other novel branch is merged into it (27 Nov). To check the scene sheet against the built book: `python3 manuscript/tools/edits-v6/scene_sheet.py check OUT/v6.txt manuscript/novel/scene-sheet-2026-11-27.csv` (structure, words and opening lines must all pass; names, numbers, threads and questions are lists to read).
+
 chat: Grace doesn't know about the arms until the table finds out; Ch 17, 18, 34, 35, 36;
 `drafts/edit-234-grace-doesnt-know.md`). So a spin-up now shows **234 check rows passing (608 replacements), 223
 accepted in v8 and 224 to 234 not in the Doc**; that is right. Next chat: the smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`). That prompt was run once on

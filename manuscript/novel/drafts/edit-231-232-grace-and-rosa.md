@@ -95,21 +95,26 @@ where the farm is praying and they're saying the Lord's Prayer". Asked which pra
 whatever Hispanic Catholics say as she holds a rosary."** (The frame at the Bear Flag holds the Serenity Prayer, not the
 Lord's Prayer; the Lord's Prayer is the farm's in Chapter 38, which Elijah hears under the frame in Chapter 39.)
 
-Then CT, the same day: **"It's her first time making Thanksgiving dinner for the farm, but she's got lots of
+Then CT, the same day (and then, "Sorry better Spanglish", the line about life and the two lines after the
+clapping): **"It's her first time making Thanksgiving dinner for the farm, but she's got lots of
 experience"** and **"They appreciate her and the events unfold with the writing edits and style we've established"**.
 
 Rosa made the dinner that year, **her first for the farm**. She had been in the kitchen trailer since before it was
 light, her wrist still in the brace. Curtis asked her where she'd learned to cook for forty.
 
-**"I had a big family, but life got away from us. The love is still there, deep down, even if the finances maybe get in
+**"I had a big family, but life, it get away from us. The love is still there, deep down, even if the finances maybe get in
 the way sometimes," Rosa explained. "But for the last couple years I volunteer at the church kitchen and we cook a lot
 of food, I cook all day, and now I cook all day here for you!"**
 
 Lou started the clapping, and the whole trailer took it up. Rosa flapped a dish towel at them until they quit.
 
+**"I know someday I cook for my family again. But maybe sometimes is ok to give love a little breathing room."**
+
 Before anybody ate, she took a **rosary** out of her apron pocket, held it in her good hand, and said **grace**.
 
 *Bendícenos, Señor, y bendice estos alimentos que por tu bondad vamos a recibir. Por Cristo nuestro Señor. Amén.*
+
+**She set a casserole dish on its placeholder, and the feast began.**
 
 Elijah carried pots. He had built the holiday route into an app the night before, with a map and a backup for every
 stop, and between pots he showed it to her.
@@ -173,4 +178,7 @@ After review (same day): the first sentence was "One night, when his plate was e
 with her own."; "empty" repeated the line before it ("stood there until it was empty"). Wren's "She put her palm on her
 own chest." in Chapter 31 was cut while Rosa's scene opened that chapter, and put back when the scene moved.
 
-Words: 186 in (231), 329 in (232), 3 out (Ch 38).
+His "placeholder" is kept as he said it ("trivet" if he meant the hot pad). Grace comes before the casserole, so it
+is said before anybody eats.
+
+Words: 186 in (231), 361 in (232), 3 out (Ch 38).

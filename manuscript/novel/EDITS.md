@@ -3650,9 +3650,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      of Chapter 31; moved on 27 Nov on his word: "And the meal is Thanksgiving, maybe? and they pray", "Rosa's own
      grace, in Spanish, whatever Hispanic Catholics say as she holds a rosary", and "It's her first time making
      Thanksgiving dinner for the farm, but she's got lots of experience" with her line, word for word: "I had a big
-     family, but life got away from us. The love is still there, deep down, even if the finances maybe get in the way
+     family, but life, it get away from us. The love is still there, deep down, even if the finances maybe get in the way
      sometimes," Rosa explained. "But for the last couple years I volunteer at the church kitchen and we cook a lot of
-     food, I cook all day, and now I cook all day here for you!" Then, his, from 26 Nov: "I don't really understand all
+     food, I cook all day, and now I cook all day here for you!" / "I know someday I cook for my family again. But
+     maybe sometimes is ok to give love a little breathing room." / She set a casserole dish on its placeholder, and the
+     feast began. ("Sorry better Spanglish": "life, it get away from us".) Then, his, from 26 Nov: "I don't really understand all
      this technology stuff," she said. "It goes over my head. In one ear, out the other." / She paused, turned around
      with the ladle ... "I do know good food. In this place, they make a lot of good food. Nourishes the whole
      community." She pointed at him and tapped him on the chest. Then she put her whole palm on his chest and rubbed it
@@ -3667,7 +3669,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      and "After the kitchen trailer fed forty,". Forced by it: Chapter 38's "And Rosa, at her first dinner, in a good
      blouse," is "And Rosa, in a good blouse,". Her lesson now comes before the county meeting (Ch 30); Chapter 31's
      "One page. He had learned that much." is where it lands. Open: Chapter 17 has her unable to cook in spring 2025,
-     inside "the last couple years". 329 words in, 3 out. Record: `drafts/edit-231-232-grace-and-rosa.md`. Logged only;
+     inside "the last couple years". 361 words in, 3 out. Record: `drafts/edit-231-232-grace-and-rosa.md`. Logged only;
      not in the v8 Doc yet.
 
 233. **The finishing pass (Ch 0 to the Appendix).** CT (26 Nov, eleventh chat): "Send out readers ... to finish the

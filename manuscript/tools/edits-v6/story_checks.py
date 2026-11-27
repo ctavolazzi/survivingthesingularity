@@ -790,7 +790,7 @@ OBJECTS = [
         ("In the morning he fried two eggs in his mother's pot, because it was the only pan he owned.", "Manny's kitchen, then Manny's rack"),
     ]),
     ("The notebooks", [
-        ("when he opened the notebook where he'd scrawled MADRONE IS NOT A DRONE", "the first"),
+        ("He opened the notebook where he'd scrawled MADRONE IS NOT A DRONE", "the first"),
         ("He was on his second notebook by then.", "two"),
         ("He had two bags of groceries, his notebooks, a pawn ticket", "the Ranger"),
         ("He had two years of notebooks, and he didn't know.", "his room over the pump house"),

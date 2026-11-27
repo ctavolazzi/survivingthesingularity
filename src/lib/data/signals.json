@@ -1,34 +1,33 @@
 {
-  "generated_at": "2026-11-25T22:17:45Z",
+  "generated_at": "2026-11-26T22:12:20Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
     {
-      "id": "2610.34836",
+      "id": "2611.34656",
       "source": "arxiv",
-      "title": "Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs",
-      "url": "https://arxiv.org/abs/2610.34836",
+      "title": "Do We Still Need Reinforcement Learning When We Can Read the World Model?",
+      "url": "https://arxiv.org/abs/2611.34656",
       "authors": [
-        "Boxuan Wang",
-        "Zhuoyun Li",
-        "Sarvapali D. Ramchurn",
-        "Xiaowei Huang"
+        "Mingchao Zhang",
+        "Miduo Cui",
+        "Kangze He",
+        "Yuanjun Li"
       ],
-      "summary": "Multi-agent large language model (LLM) systems can exhibit emergent behaviors through interaction, yet whether a similar phenomenon exists for reasoning alignment remains largely unexplored. We study whether agent interaction produces additional reference-grounded reasoning alignment beyond matched individual self-refinement, and introduce REMAP (Reference-Entailment-Matrix for Agentic Process), a framework that quantifies this effect through Semantic Coverage and interaction-specific alignment gains. Across diverse model families and two multi-hop reasoning benchmarks, we observe broadly posi",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-26",
-      "score": 14.0,
-      "raw_score": 28,
+      "summary": "Reinforcement learning has achieved remarkable success in sequential decision-making, but learning effective policies often requires substantial interaction experience. Model-based reinforcement learning alleviates this dependence by leveraging world models, which are typically used to support planning or policy optimization. In this paper, we investigate an alternative paradigm in which autonomous LLM-based coding agents directly synthesize control policies by reasoning over readable world models. By examining environment source code, these agents translate environmental knowledge into execut",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-11-25",
+      "score": 12.5,
+      "raw_score": 25,
       "matched_keywords": [
+        "agi",
+        "world model",
         "agent",
-        "multi-agent",
-        "agentic",
+        "autonomous",
+        "planning",
         "reasoning",
-        "alignment",
         "llm",
-        "language model",
-        "emergent",
         "rag"
       ]
     },
@@ -243,6 +242,31 @@
         "reasoning",
         "retrieval",
         "rag"
+      ]
+    },
+    {
+      "id": "2611.33242",
+      "source": "arxiv",
+      "title": "CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2611.33242",
+      "authors": [
+        "Danil Kostromin",
+        "Andrey Sakhovskiy",
+        "Semen Budennyy"
+      ],
+      "summary": "Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange messages and invoke tools reliably. Existing evaluations typically couple communication with open domain tasks, making it difficult to determine whether a failure arises from reasoning, malformed tool use, lost messages, or forgotten requests. Prior benchmarks do not isolate communication execution or measure routing redundancy against a known optimal path. We introduce CypherMAS, a synthetic benchmark that isolates communication and routing in fixed multi-agent gra",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-11-24",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -580,29 +604,28 @@
       ]
     },
     {
-      "id": "2610.35686",
+      "id": "2611.34778",
       "source": "arxiv",
-      "title": "FISRF: Flexible Instructional Scaffolding Reflection Framework for Robotics Task Planning with Large Language Model",
-      "url": "https://arxiv.org/abs/2610.35686",
+      "title": "Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents",
+      "url": "https://arxiv.org/abs/2611.34778",
       "authors": [
-        "Qingmiao Liang",
-        "Jiatao Zhang",
-        "Runxin Zou",
-        "Yufan Song"
+        "Yuxiang Lai",
+        "Jike Zhong",
+        "Yu-Jhe Li",
+        "Lan Wang"
       ],
-      "summary": "Large Language Models (LLMs) are widely adopted for reflective error correction in task planning; however, existing approaches primarily rely on autonomous exploration, rendering them prone to accumulating erroneous experiences during early interactions with new environments. To address this limitation, we propose the Flexible Instructional Scaffolding Reflection Framework (FISRF), an agent--mentor architecture that estimates the robot's Zone of Proximal Development (ZPD) in task planning and adaptively selects reflection strategies and mentor guidance, thereby facilitating the accumulation of",
+      "summary": "Recent vision-language models (VLMs) can act as robot-use agents that understand diverse scenes and control robots through policy code and tools. However, they predict 3D gripper poses poorly even with extended reasoning, struggling with precise manipulation. Vision-language-action (VLA) and world-action (WAM) models are the opposite: they execute fast, smooth control on trained tasks, yet fail under domain shifts or when tasks require long-horizon memory and reasoning. Agentic robots therefore combine VLM reasoning and perception with precise VLA/WAM control through a policy harness. Yet harn",
       "category": "cs.RO",
       "tag": "Robotics",
-      "published_at": "2026-10-26",
-      "score": 9.0,
-      "raw_score": 18,
+      "published_at": "2026-11-25",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
         "agent",
-        "autonomous",
-        "planning",
+        "agentic",
+        "reasoning",
         "robot",
         "robotics",
-        "llm",
         "language model"
       ]
     },
@@ -1056,30 +1079,6 @@
         "robot",
         "llm",
         "scaling"
-      ]
-    },
-    {
-      "id": "2610.35434",
-      "source": "arxiv",
-      "title": "Skill$^{\\infty}$: Recursive Self-Improvement for Agent Skill Optimization",
-      "url": "https://arxiv.org/abs/2610.35434",
-      "authors": [
-        "Wangcheng Tao",
-        "Zhanglu Yan",
-        "Han Wu",
-        "Weng-Fai Wong"
-      ],
-      "summary": "Recursive self-improvement (RSI), in which a system also improves the way it improves, is a long-standing aspiration on the path to AGI. Language agents increasingly store procedural knowledge in reusable skills. Optimizing skills offers a direct way to achieve RSI, because the optimization procedure itself can be encoded as a skill. Existing skill optimizers, however, follow a hand-designed procedure. Even methods that evolve a meta-skill confine it to a fixed pipeline and relearn it for each task. We present Skill$^{\\infty}$, which makes skill optimization recursively self-improving: a meta ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-26",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "recursive self-improvement",
-        "self-improving",
-        "agent"
       ]
     },
     {

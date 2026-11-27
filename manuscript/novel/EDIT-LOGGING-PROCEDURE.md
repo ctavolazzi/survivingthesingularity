@@ -296,6 +296,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   long Reuben has had the deed (Ch 29, "a year and a half"), "Took you a month" (Ch 24, about seven weeks by the book's
   dates), and "Three years" said in October 2027 (Ch 34, 35; two years and seven months; the narration says "going on
   three years"). For CT, not changed.
+- **Thirteen more cells for the scene sheet, rows 1 to 24**, each with the line from the page that proves it:
+  `scene-sheet-fixes-rows-1-24.md` (from the tenth chat; not applied, so the CSV and the Google Sheet stay in step).
 - **Unchecked since the sixth chat changed the build code** (a page for a line before the title, no About the
   Author page): the paperback, ebook and docx builds, and the site's own tests after the edit list was renamed
   `EDITS.md`. Run them before a release.
@@ -354,3 +356,11 @@ grep-checked; none is fixed, each is CT's to rule on:
   came in the first days of April.
 - Ch 17 and 19: Grace's offer came "in her message on his page"; Tyler "had found Elijah's email for Grace".
 Chapters 10 to 15 and 22 to the Epilogue were not re-read by this chat; its readers stopped at a usage limit.
+
+## The site branch from the first novel chat (27 Nov)
+`claude/manuscript-review-sts-updates-gu5849` rebuilt the site from the 17 Nov draft of the novel. Its book text is
+superseded by v8 plus edits 224 to 234 on this branch. Do not merge it as is. Parts that may be worth porting after the
+final pass: the legal pages and fiction notice (`src/lib/bookNotice.js`), the refund and license lines in
+`src/lib/offer.js`, the EPUB and download builder (`scripts/build_novel_downloads.py`), and the hope copy
+(`src/lib/stance.js`). The scene sheet audit that chat ran on 27 Nov found nothing that the full read above and the
+four items above do not already cover.

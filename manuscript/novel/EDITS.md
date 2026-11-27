@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 284 (27 Nov, the fourteenth chat), logged only. The next edit is 285.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 285 (27 Nov, the fourteenth chat), logged only. The next edit is 286.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4052,6 +4052,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      changes, shown; CT: "Go on the Chapter 7 comment fixes". "The first comment from a stranger, under the video, came from
      a woman in Tulsa." "Then a name came up in the comments that he hadn't seen since high school." "Then the other kind of
      message started showing up in his inbox." Logged only.
+285. **Chapter 17: Lou's vibe check, the sausage makers.** CT, 27 Nov: "I want to close the loop on Elijah's trauma with ...
+     being dismissed and kind of mistreated by people that he trusted ... With a conversation with Lou early on in his time
+     at the co-op ... Lou needs to ... give him a little bit of a hard vibe check ... they're not stupid. They gotta protect
+     themselves", with the whole exchange in his words ("It was a lot." "Yeah, I can imagine it was." "Nobody wants to know
+     how the sausage is made" ... "Sausage makers." ... "You're in good company here, my new friend. Just take it slow. No
+     need to go throwing guts everywhere."), the elbow on "the same fence where he talks to Grace", and Lou recognizing the
+     look as a veteran, implied, not said. Claude's draft, shown; CT changed the last line to "Far better to let the good
+     parts cook slow." Placed on the third evening, before "On the fourth day Grace asked about the arms.": the chapter's
+     "For three days, no one really asked him anything" and "Are we really sure this is a good idea?" set it up, and Lou's
+     offer on the pump house steps the next evening rests on it. Claude's: why he is at the fence, "Lou Parker ran the
+     growing side." (Lou's first scene now), Lou's eyes going somewhere (the implication; Praether hitting the porch boards a
+     few days later, "Lou watched him do it and said nothing", is the other half), the elbow, the flat mouth, "a big laugh
+     that went off like a shot". Flagged to CT: the book never says Lou served; the Friday dinner introduces him again
+     ("Lou ran the growing side, which meant the actual food."). Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

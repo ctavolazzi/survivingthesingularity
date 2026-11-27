@@ -291,4 +291,5 @@ C=[
 (282, 'Ch 10', ['"Suit yourself, man," Ruby shrugged, the fur of his magnificent jacket going up and down like an endangered fox in an arid desert. "Hey, if you\'re ever in the city,'], []),
 (283, 'Ch 10', ["and handed it back. Elijah could tell he meant it. If he didn't, then why would he put his number in Elijah's phone himself? A man like Ruby had people to do that for him."], ['and handed it back. He meant it.']),
 (284, 'Ch 7', ['The first comment from a stranger, under the video, came from a woman in Tulsa.', "Then a name came up in the comments that he hadn't seen since high school.", 'Then the other kind of message started showing up in his inbox.'], ['The first message from a stranger', 'Then a name came in that']),
+(285, 'Ch 17', ['On the third evening Elijah walked out to the old wooden fence along the east field', '"So how did everything go?" he said. "What was it like, getting that much attention all at once?"', 'Elijah\'s eyes went somewhere past the field. "It was a lot."', '"Sausage makers." Lou let out a big laugh', 'Far better to let the good parts cook slow."\nOn the fourth day Grace asked about the arms.'], []),
 ]

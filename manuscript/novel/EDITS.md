@@ -3727,7 +3727,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      What changed, chapter by chapter:
      - Ch 17, the fourth day. Elijah tells Grace the arms are gone, a lien sale, and leaves out that the sale is not
        until the end of the week. She says she is sorry and never asks again. Lou hears it from her, asks him when the
-       sale was, gets "This Friday", covers the unit and keeps it between the two of them. Her message in Chapter 15
+       sale was, gets "This Sunday", covers the unit and keeps it between the two of them. Her message in Chapter 15
        stands.
      - Ch 17, Praether's. Lou goes with Elijah in Grace's place: "Lou here tells me", "Elijah and Lou looked at each
        other", Elijah asks about the ordnance, "Look, kid" (was "Look, lady"), "Lou went to argue.", "Don't let him go."
@@ -3746,7 +3746,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
        touched.
      Claude's wording and invented facts (all his to change): everything in the fourth-day passage (the lie itself,
      "Grace said she was sorry. She never asked about them again.", Lou's two questions on the pump house steps,
-     "Elijah took too long to answer.", "This Friday", "Lou didn't say."); "to ask the man together"; "here" in "Lou
+     "Elijah took too long to answer.", "This Sunday", "Lou didn't say."); "to ask the man together"; "here" in "Lou
      here tells me"; "kid" for "lady"; "I don't intend to," Lou said.; "in the truck"; both lines about Grace at the
      barn, including Lou's reason for keeping it from her; "She had turned in her chair to face him."; "Grace," he
      said, and that was as far as he got.; "She turned on Lou."; "Grace opened her mouth, and shut it. She turned back
@@ -3760,7 +3760,10 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      reads as her wanting them used and him refusing. Should she throw the three years of hiding at him there, in
      his words?
      Also settled by this edit: "Grace telling Marta about the arms" (the plan, 10.5) cannot happen and is off the
-     open list. Rows 205, 213, 214, 220, 223, 230 and 233 narrowed. 103,503 words in the chapters (60 more than
+     open list. Corrected in place the same day (Claude's slip, found in the scene sheet check): Elijah's answer to
+     Lou was "Friday. This Friday.", but the book puts the sale on a Sunday (Ch 15: on a Wednesday "the lien sale was
+     eleven days out"; he arrives the next Tuesday, and the fourth day is that Friday). It is "Sunday. This Sunday."
+     Rows 205, 213, 214, 220, 223, 230 and 233 narrowed. 103,503 words in the chapters (60 more than
      after 233). Record: `manuscript/novel/drafts/edit-234-grace-doesnt-know.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like

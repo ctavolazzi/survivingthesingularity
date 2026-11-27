@@ -20,7 +20,7 @@ Lou found him on the pump house steps that evening.
 
 Elijah took too long to answer.
 
-"Friday," he said. "This Friday."
+"Sunday," he said. "This Sunday."
 
 Lou nodded. He said he would cover what Elijah owed on the unit, and that it stayed between the two of them.
 

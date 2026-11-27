@@ -3,7 +3,10 @@
 Updated 27 Nov 2026, end of the eleventh logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 234.** Next chat: the smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`). That prompt was run once on
+**Next edit: 235.** Edit 234 was logged on 27 Nov, after the smell pass prompt was written (CT's dictation in the Riemann
+chat: Grace doesn't know about the arms until the table finds out; Ch 17, 18, 34, 35, 36;
+`drafts/edit-234-grace-doesnt-know.md`). So a spin-up now shows **234 check rows passing (608 replacements), 223
+accepted in v8 and 224 to 234 not in the Doc**; that is right. Next chat: the smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`). That prompt was run once on
 27 Nov inside the Riemann chat: spin-up clean, nothing shown or logged, so the smell pass is still to do. That chat's
 closing notes (what is done, what is open, CT's words, the stakes answer) are the first section of
 `CHECKPOINT-2026-11-26-riemann-praether.md`. The scene

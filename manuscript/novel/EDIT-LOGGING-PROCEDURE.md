@@ -227,6 +227,9 @@ short, what is still CT's:
   one idea of Claude's is with CT unanswered (a line at the gate in Chapter 36 that picks up Grace's "put humans first"
   promise from Chapter 27). That section also holds his words about what the Riemann scene is for, the answer to his
   question about the stakes, and the source links.
+- From edit 234: one question held for him (should the fight at the fire in Chapter 36 name the three years he hid
+  the arms from her), and his lines from edits 220 and 230 that came out, kept in
+  `drafts/edit-234-grace-doesnt-know.md` in case he wants them placed elsewhere.
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -256,6 +259,10 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 - The bridge map, BRIDGE.md and the Drive bridge page still say v8, which is right.
 - Checked again on 27 Nov at the close of the Riemann and Praether chat, on fresh reads of both Docs: the same counts
   (233 rows pass, 591 replacements; 223 accepted, 224 to 233 not in the Doc, nothing PARTIAL).
+- **Since then, edit 234 (27 Nov, the Riemann chat, CT's dictation):** Grace doesn't know about the arms until the
+  table finds out (Ch 17, 18, 34, 35, 36). make_v6.py now passes **234 rows (608 replacements)**; verify.py on v8 shows
+  223 accepted and **224 to 234 not in the Doc**, nothing PARTIAL; 103,503 words. **The next edit is 235.** The lines
+  above this one describe the end of the eleventh chat and are one edit behind.
 
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including

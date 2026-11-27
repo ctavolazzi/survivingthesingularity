@@ -8,6 +8,15 @@ it up.
 
 The chat ran on after the prompt further down was written. Where its work stands now:
 
+- **Edit 234, logged last (27 Nov), changes what the bullets below say about counts.** CT: "She can't know about the
+  arms. It has to be a secret he's been keeping from her, or else the breakup doesn't work." Grace now believes the
+  arms went at a lien sale, Lou goes to Praether's with Elijah, Chapter 18's opening is cut, and she finds out at the
+  table in Chapter 34. It reverses his decision of 26 Nov in the plan, 10.5. The build now passes 234 rows (608
+  replacements), 224 to 234 are not in the Doc, and **the next edit is 235**. One question is held for him: should the
+  fight at the fire name the hiding. Record: `drafts/edit-234-grace-doesnt-know.md`.
+- **The scene sheet** was brought up to edit 234 in four rows (52, 53, 59 and 123), in the repo copy and in the Google
+  Sheet. Row 59 (the cut Chapter 18 scene) is kept and marked as cut, so the numbering holds.
+
 - **Edits 229 and 230 are on `claude/singularity-publication-build-kparqk`**, merged on CT's word ("I think it should
   be merged into the current branch"). The eleventh chat was logging at the same time and renumbered its own edits to
   231 to 233 at the merge; 229 and 230 kept their numbers. The session branch

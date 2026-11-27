@@ -3704,6 +3704,65 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      merge. Left for CT: Ruby's numbers (Ch 8), "Grace printed your cover page" (Ch 17), "signed right under her"
      (Epilogue). Record: `manuscript/novel/drafts/finishing-2026-11-27.md`. Logged only; not in the v8 Doc yet.
 
+234. **Grace doesn't know about the arms until the table finds out (Ch 17, 18, 34, 35, 36).** CT (27 Nov, dictated in
+     the Riemann chat): "Wait, if they argue about this at the table at that time, and Grace knew about the arms the
+     whole time because she went with Elijah to the old guy's house, then why wouldn't she suggest the fix sooner? She
+     can't know about the arms. It has to be a secret he's been keeping from her, or else the breakup doesn't work.
+     She has to find out there in that moment and then react so strongly. You've been lying to me this whole time?
+     You've kept the arms from me this whole time? How did I not know about this? So Elijah and Lou go together. And
+     then Grace and Elijah fight, but Grace and Lou don't necessarily need to talk about the arms. She might confront
+     him later at some point and be like, did you know? Lou's like, yeah, I helped him move the arms over there. Maybe
+     that happens at the dinner. And now Grace is just pissed."
+     Context from CT, NOT for the page: "But she wants a father figure so bad, she doesn't want to lose Lou. She
+     doesn't want to lose Elijah either, but she's mad enough at Elijah that she chooses the farm, her home, and Lou
+     over Elijah. Misplaced anger. This is classic."
+     What was in the way: Grace has known about the arms since her first message (Ch 15: "Your arms can live there for
+     free"), she asks about them on the fourth day and passes on Lou's cover (Ch 17), edit 230 took her to Praether's,
+     and Chapter 18 opened with Lou swearing her and Elijah to secrecy. His decision of 26 Nov (the plan, 10.5: "a
+     secret between Lou, Grace, Elijah, and, eventually, Marta") is replaced by this one.
+     His words on the page (Ch 34): "You've been lying to me this whole time?" "You've kept the arms from me this whole
+     time? How did I not know about this?" "Did you know?" "Yeah. I helped him move the arms over there." Lou's
+     admission is at the dinner (his last word on where). Lou's own line from the plan follows it unchanged ("I told
+     our friend Elijah to keep the arms a secret ...").
+     What changed, chapter by chapter:
+     - Ch 17, the fourth day. Elijah tells Grace the arms are gone, a lien sale, and leaves out that the sale is not
+       until the end of the week. She says she is sorry and never asks again. Lou hears it from her, asks him when the
+       sale was, gets "This Friday", covers the unit and keeps it between the two of them. Her message in Chapter 15
+       stands.
+     - Ch 17, Praether's. Lou goes with Elijah in Grace's place: "Lou here tells me", "Elijah and Lou looked at each
+       other", Elijah asks about the ordnance, "Look, kid" (was "Look, lady"), "Lou went to argue.", "Don't let him go."
+       is said to Lou ("I don't intend to," Lou said.), "What the hell was that?" is Lou's, Elijah picks up the VA
+       letter and puts it in the mailbox, and Lou says "Yeah, maybe we shouldn't". Lou tells him about the Gulf in the
+       truck (the lines moved from Chapter 18).
+     - Ch 17, the barn. After "Keep it close to your chest.": "Grace thinks they went at the sale." "Then let her think
+       it," Lou said. "Grace most of all. She'd want to put them to work, and this place isn't ready for that." The
+       three in "between the three of us" are now Lou, Elijah and Praether.
+     - Ch 18. The opening scene with Lou, Grace and Elijah is cut, with its scene break. The chapter opens on "Elijah's
+       next crisis found him in late April".
+     - Ch 34. Grace's lines and Lou's answer, after Priya's "this entire time?". Then: "Grace opened her mouth, and
+       shut it. She turned back around in her chair." "Grace had not looked at him once." is "again."
+     - Ch 35. "What's Grace say about the arms?" / "She hasn't said." is "Grace talking to you yet?" / "No."
+     - Ch 36. In the packing shed: "She had hardly spoken to him since the meeting." The fight at the fire is not
+       touched.
+     Claude's wording and invented facts (all his to change): everything in the fourth-day passage (the lie itself,
+     "Grace said she was sorry. She never asked about them again.", Lou's two questions on the pump house steps,
+     "Elijah took too long to answer.", "This Friday", "Lou didn't say."); "to ask the man together"; "here" in "Lou
+     here tells me"; "kid" for "lady"; "I don't intend to," Lou said.; "in the truck"; both lines about Grace at the
+     barn, including Lou's reason for keeping it from her; "She had turned in her chair to face him."; "Grace," he
+     said, and that was as far as he got.; "She turned on Lou."; "Grace opened her mouth, and shut it. She turned back
+     around in her chair."; "Grace talking to you yet?" / "No."; "She had hardly spoken to him since the meeting."
+     His lines that came out, because they only work if Grace knows: from edit 220, "Don't worry, Lou, I won't let him
+     do anything stupid!" She smiled and looked Elijah right in the eyes from inches away. / "Right?" / "Right," Elijah
+     said, barely containing his enthusiasm to be so close to Grace. / "I won't do anything stupid."; from edit 230,
+     "I, uh," Grace said. "I ...", "Grace went to argue." and "Look, lady". They are kept in the record so he can
+     place them elsewhere.
+     Held for CT (one question): the fight at the fire (Ch 36) never mentions that he hid the arms from her. It
+     reads as her wanting them used and him refusing. Should she throw the three years of hiding at him there, in
+     his words?
+     Also settled by this edit: "Grace telling Marta about the arms" (the plan, 10.5) cannot happen and is off the
+     open list. Rows 205, 213, 214, 220, 223, 230 and 233 narrowed. 103,503 words in the chapters (60 more than
+     after 233). Record: `manuscript/novel/drafts/edit-234-grace-doesnt-know.md`. Logged only; not in the v8 Doc yet.
+
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware
 the military!" stays, with "They never built one thing in their lives ... they come around with a check. Somebody

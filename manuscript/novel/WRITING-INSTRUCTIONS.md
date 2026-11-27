@@ -368,6 +368,9 @@ Everything here is from a line CT dictated or approved, or is in the book.
   much", "strong-willed, but she can be silly": shown, never listed.
   To Elijah once they are together (edit 229): "Babe." She asks for the promise twice and won't take "I'm already
   doing that" ("No. Promise me."), then "Thank you. I believe you."
+  Context from CT, not for the page (27 Nov, edit 234): "she wants a father figure so bad, she doesn't want to lose
+  Lou. She doesn't want to lose Elijah either, but she's mad enough at Elijah that she chooses the farm, her home, and
+  Lou over Elijah. Misplaced anger." So when Lou admits his part, she says nothing to him and turns it on Elijah.
 - **Curtis.** Movies, fences, engines. "The dude's got the gift for gab. I thought we agreed." [109] "I need to go
   build an EMP."
   He is the one who brings the news to the table (CT, 26 Nov: "that's kind of his role"), and "Curtis is a wingnut",
@@ -494,6 +497,11 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 - Read new lines against the whole book for repeats before logging. This chat's own scenes said Lou's secrecy three
   times and reused "Good. Keep it that way." from early in the book; the finishing pass (edit 233) had to take them
   out.
+- Before logging a scene, check who knows what, and since when, against the scene it has to pay off in. CT, 27 Nov:
+  "if ... Grace knew about the arms the whole time because she went with Elijah to the old guy's house, then why
+  wouldn't she suggest the fix sooner? She can't know about the arms. It has to be a secret he's been keeping from
+  her, or else the breakup doesn't work." A secret pays off only if the page has shown the person not knowing. Edit 230
+  put Grace at Praether's and nobody asked what that did to the fire; edit 234 took her out.
 
 ## 16. Corrections of 26 November, as they happened
 

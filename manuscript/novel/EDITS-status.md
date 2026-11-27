@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 10.
+Totals: accepted: 223, not in the Doc: 11.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -230,7 +230,7 @@ Edit 57 was never used.
 | 217 | Ch 37 | accepted | All that was left were two robot arms in Richard Praether's pole barn. |
 | 218 | Ch 39 | accepted | His phone buzzed against his leg. It was Devendra. / Dinner's on me... |
 | 219 | Ch 11, 13, 15, 19 | accepted | by the next morning she had it out in the barn under a moving blanket |
-| 220 | Ch 18 | accepted | alone the week after that dinner. |
+| 220 | Ch 18 (opening scene cut by 234; the Gulf lines moved to Ch 17) | accepted | (nothing left to check) |
 | 221 | Ch 34 | accepted | The afternoon before the October meeting, Priya took her sheet up t... |
 | 222 | Ch 0 to 36, Appendix | accepted | He had found his first limit. It was heat. |
 | 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | accepted | It won't start with the machines. First it takes the people who see... |
@@ -240,7 +240,8 @@ Edit 57 was never used.
 | 227 | Ch 21 to 36, Pondwater | not in the Doc | a little at a time and all the time. |
 | 228 | Ch 16, 17, 33 | not in the Doc | "The artists have a valid point, don't they?" a woman said. |
 | 229 | Ch 27 | not in the Doc | "Guys. They just solved the Riemann hypothesis." |
-| 230 | Ch 17, 18 | not in the Doc | "Lou tells me you want to store some robot arms out in my old barn,... |
+| 230 | Ch 17, 18 | not in the Doc | I got ordnance out here." |
 | 231 | Ch 17 | not in the Doc | "How are you liking your bed? Is it comfy enough?" |
 | 232 | Ch 27, 38 | not in the Doc | Rosa made the dinner that year, her first for the farm. |
 | 233 | Ch 0 to 39, Appendix | not in the Doc | Elijah said it once to Wes |
+| 234 | Ch 17, 18, 34, 35, 36 | not in the Doc | He told her they were gone. |

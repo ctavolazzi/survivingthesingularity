@@ -882,6 +882,12 @@ How Claude fits it to the book (each is his to overrule):
 - **The war thread:** Praether's warning in Chapter 17 is the first of it; Curtis in Chapter 33 and the Ukraine footage
   in Chapter 34 are where it comes due.
 
+**Changed by CT, 27 Nov (edit 234):** "She can't know about the arms. It has to be a secret he's been keeping from her,
+or else the breakup doesn't work ... So Elijah and Lou go together." Grace is no longer in the secret: Elijah tells her
+on the fourth day that the arms went at a lien sale, Lou goes with him to Praether's, Chapter 18's opening is cut, and
+she finds out at the table in Chapter 34 ("You've been lying to me this whole time?"). Marta is never told either, so
+"the conversation where Grace tells Marta" above is void. Everything else in this section stands.
+
 ### 10.6 Scenes with just the women (CT, 26 Nov)
 
 CT: "we need to make the book pass the Bechdel test, so we need to have scenes with JUSt the women that pass the test

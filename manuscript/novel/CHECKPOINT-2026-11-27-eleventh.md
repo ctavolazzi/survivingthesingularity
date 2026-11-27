@@ -68,16 +68,23 @@ From the close of the Riemann chat (27 Nov; `CHECKPOINT-2026-11-26-riemann-praet
 gate (Ch 36) that picks up Grace's "put humans first" promise (Ch 27). It is Claude's idea, said to him once, not
 answered. The lien sale (item 4 of that chat's fix list) was checked on the page and needs nothing.
 
+From edit 234 (27 Nov, the Riemann chat): should the fight at the fire (Ch 36) name the three years he hid the arms
+from her; and his lines that came out with that edit (Grace's "I won't let him do anything stupid!" exchange from
+Chapter 18, her stammer at Praether's), kept in `drafts/edit-234-grace-doesnt-know.md`. Settled by it and off this
+list: "Grace telling Marta about the arms" (plan 10.5), since Grace no longer knows.
+
 Carried over (tenth checkpoint): edit 226's "under 6 months"; Grace's winter away and Faith; the five polish-pass
 lines; the gas cap (Ch 25); "Marta had heard it as a murder" (Ch 39); "Creator Fund"; the 19 empty paragraphs in v8;
 the thin places (Praether after Ch 26, Mrs. Delgado after the fire, Bidwell's last beat, the welder gap, the
-Telecaster); Grace telling Marta about the arms (plan 10.5); the Instagram synopsis; "OLD:" on v6 and v7; Drive's
+Telecaster); the Instagram synopsis; "OLD:" on v6 and v7; Drive's
 duplicate builds; the site's private reader and compendium; the merge to `main`; the ISBN and the release build.
 
 ## The prompt for the next chat (the smell pass)
 
 Run once already, on 27 Nov, inside the Riemann chat: spin-up was clean, CT asked about the story's stakes instead, and
-no smell line was shown or logged. It can be pasted again as it is. The next edit is still 234.
+no smell line was shown or logged. Edit 234 was logged after that, so the numbers in the prompt below were brought up
+to it on 27 Nov (234 rows, 224 to 234, next edit 235). A copy of the prompt saved before then says 233 and 234; the
+counts in `TODO.md` are the right ones.
 
 ```
 We're finishing my novel, Surviving the Singularity. This is the twelfth chat: the smell pass. Spin up before you do
@@ -94,16 +101,16 @@ anything else:
    v5 Doc "StS v5 draft (Nov 23)", id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Read both with the Docs connector
    and save the reads to your scratchpad. Do not change either Doc, or the locked "StS v8 BACKUP (Nov 26), do not
    edit"; I haven't cleared that.
-4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 233 check rows passing, 223 rows
-   "accepted" in v8, edits 224 to 233 "not in the Doc", and nothing PARTIAL. If you get anything else, stop and tell me.
+4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 234 check rows passing, 223 rows
+   "accepted" in v8, edits 224 to 234 "not in the Doc", and nothing PARTIAL. If you get anything else, stop and tell me.
 5. The scene sheet: Google Sheet "Surviving the Singularity: scene sheet (edits 1 to 233)", id
    1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY, with a full copy at manuscript/novel/scene-sheet-2026-11-27.csv. One
    row per scene: when, where, whose scene, who's on the page, what turns, threads, numbers. Use it to find the places;
    check a cell on the page before you rely on it.
 
-Where we are (end of 27 Nov): v8 holds edits 1 to 223. Edits 224 to 233 are logged in GitHub only. The PDF I have is
-"StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf"; it doesn't have 224 to 233. The next
-edit is 234. After this I don't really want to change or add anything: it's about refining, revising, deleting,
+Where we are (end of 27 Nov): v8 holds edits 1 to 223. Edits 224 to 234 are logged in GitHub only. The PDF I have is
+"StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf"; it doesn't have 224 to 234. The next
+edit is 235. After this I don't really want to change or add anything: it's about refining, revising, deleting,
 buffing out the hard spots, polishing.
 
 The job: the smell pass (TODO.md section 3, WRITING-INSTRUCTIONS.md 7a). My two places first, in my words: the truck
@@ -138,5 +145,5 @@ How I want it done:
   WRITING-INSTRUCTIONS.md, and STATE.md and sessions/LOG.md in _workbench, and refresh the Drive mirror of the edit list
   once (upload EDITS.md as text/plain; a markdown upload renumbers the edits).
 
-When you're done spinning up, tell me in one line that you're ready and that the next edit is 234.
+When you're done spinning up, tell me in one line that you're ready and that the next edit is 235.
 ```

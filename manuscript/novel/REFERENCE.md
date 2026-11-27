@@ -21,7 +21,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 5. Read both Docs fresh with the Docs connector (the result is saved to a file; copy it and use it as READ.json):
    - v8, the book since 26 Nov: "StS v8 draft (Nov 26)", id `1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8`. It holds
      every edit, 1 to 223, without the 19 pictures. Run verify.py on it; expect rows 1 to 223 "accepted", nothing
-     PARTIAL, and the newer edits (224 to 233 at the end of the eleventh chat) "not in the Doc" until CT clears them. Its locked twin is "StS v8 BACKUP (Nov
+     PARTIAL, and the newer edits (224 to 234 since 27 Nov; `TODO.md` has the current count) "not in the Doc" until CT clears them. Its locked twin is "StS v8 BACKUP (Nov
      26), do not edit" (`18gmZKWiUPyujRkRY_ZSh80ifdchZKtk8oPOpVuycOPM`).
    - v5, the base: "StS v5 draft (Nov 23)", id `1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA`. Run make_v6.py on it;
      every row must pass. Work from its `v6.txt`. (make_v6.py keeps its name; it builds v8.)

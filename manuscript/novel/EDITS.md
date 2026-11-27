@@ -3976,14 +3976,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      later Wes sent a link." becomes "A bit later Wes sent a link." Logged only.
 266. **Chapter 2: the fence line out.** CT: "Remove 'all you have to build is the fence'". Elijah's line to Devendra now
      ends "It just stopped being theirs." Logged only.
-267. **Chapters 2 to 34: thirteen scene breaks out.** CT, 27 Nov: "I feel still like there's too many [breaks] especially
+267. **Chapters 2 to 34: twelve scene breaks out** (thirteen at first; the Ch 7 one is back, see the end of this entry). CT, 27 Nov: "I feel still like there's too many [breaks] especially
      early on." Claude listed the 15 of 93 where nothing jumps (same place, minutes later, or the next line picks up the
      same moment); CT: "Go" on the 13 outside the ending. Out: Ch 2 (after Wes's "is this true"), Ch 6 ("Sometime after
      two"), Ch 7 (the truck outside the bar), Ch 8 (the STAFF door), Ch 9 ("They didn't stay for dinner."), Ch 10 ("Elijah
      walked out to his truck"), Ch 11 (the cannery dock), Ch 16 ("He swept until the sun was low."), Ch 17 ("The real
      fight" and "In the kitchen trailer"), Ch 22 ("Marta did not raise her voice."), Ch 33 ("They walked out to the beds
      afterward"), Ch 34 ("Afterward the kitchen trailer"). Kept for CT's call: Ch 37 (the gravel) and Ch 39 (the
-     television). 126 scenes now; the scene sheet and story sheets merged to match. Logged only.
+     television). 126 scenes then; the scene sheet and story sheets merged to match. Logged only.
+     Then CT, reading the Ch 7 break (David picks up the knife; Elijah in the truck): "This is a scene break that I feel
+     helps with the pacing ... it's emotionally severing the reader from what's happening. It's allowing them to process a
+     little bit ... forcing you to like sit with the emotional resonance and the intensity of what just went down." Put
+     back: twelve out, 127 scenes. The lesson is in WRITING-INSTRUCTIONS.md, section 11.
 268. **Chapter 3: caffeine.** CT: "Change coffee to caffeine". "Grad students, coffee, conference deadlines." becomes
      "Grad students, caffeine, conference deadlines." Logged only.
 269. **Chapter 4: the witching hour.** CT: "Change to sitting there at the witching hour when the bars

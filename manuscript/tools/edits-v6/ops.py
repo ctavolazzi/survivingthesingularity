@@ -1599,11 +1599,10 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (265, 'A minute later Wes sent a link.', 'A bit later Wes sent a link.'),
 # 266, Ch 2: "All you have to build is the fence." out (CT, 27 Nov, fourteenth chat)
 (266, 'It just stopped being theirs. All you have to build is the fence."', 'It just stopped being theirs."'),
-# 267, Ch 2 to 34: thirteen scene breaks out where nothing jumps (CT, 27 Nov: "I feel still like there's too many
+# 267, Ch 2 to 34: twelve scene breaks out (the Ch 7 truck break went back in on CT's word) where nothing jumps (CT, 27 Nov: "I feel still like there's too many
 # especially early on"; Claude's list, CT's "Go")
 (267, 'to do it, but he never got the chance.\n \nIn the shuffle afterward,', 'to do it, but he never got the chance.\nIn the shuffle afterward,'),
 (267, 'He dried the pan and went to bed.\n \nSometime after two the phone', 'He dried the pan and went to bed.\nSometime after two the phone'),
-(267, 'around the bar and picked up the knife.\n \nElijah sat in the truck with the engine off.', 'around the bar and picked up the knife.\nElijah sat in the truck with the engine off.'),
 (267, 'She took her coffee back into the hall.\n \nHe went out a side door that said STAFF', 'She took her coffee back into the hall.\nHe went out a side door that said STAFF'),
 (267, 'Ruby said. "She didn\'t like that."\n \nThey didn\'t stay for dinner.', 'Ruby said. "She didn\'t like that."\nThey didn\'t stay for dinner.'),
 (267, 'on him standing in all that white.\n \nElijah walked out to his truck,', 'on him standing in all that white.\nElijah walked out to his truck,'),

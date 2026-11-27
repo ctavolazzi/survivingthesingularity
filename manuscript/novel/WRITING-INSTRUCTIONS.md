@@ -328,6 +328,13 @@ much. Find the middle path ... this is better, but it's lost some of its charm."
   chatbot talks like a chatbot on purpose [97]. The Architect and the machine use no contractions [28, 49].
 - A scene break (an empty paragraph, printed as * * *) is for a real jump: [151] "the 3 dots have been used more to
   indicate like time passing or a big scene change."
+  A break can also be a pause after a blow, even when only minutes pass (CT, 27 Nov, edit 267, the Ch 7 break between
+  David picking up the knife and Elijah crying in the truck): "it's emotionally severing the reader from what's happening.
+  It's allowing them to process ... forcing you to like sit with the emotional resonance and the intensity of what just
+  went down." So before taking a break out for being a short jump, ask whether the scene before it ends on a rejection,
+  a loss or a turn the reader needs a beat to take in. Keep those. **[C]** for the test; the reason is his.
+  He also said, the same day: "still I think we're overusing them", "especially early on": the ones that only cover a walk
+  to another room or the same dinner come out.
 - Numbers in words in prose and speech ("fifteen", "half a mill" [53, 183]).
 - Tag adverbs are his when he gives them: "deadpan" [37], "begrudgingly" [90], "gently" [23]. Claude doesn't add them.
 - No em dashes anywhere.

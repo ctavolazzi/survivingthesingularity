@@ -281,4 +281,5 @@ C=[
 (273, 'Ch 6', ['Elijah got laid off eleven months after the toast.'], ['laid off on a Tuesday']),
 (274, 'Ch 6', ["So I got laid off today. That's not the big news."], ["That's not the news."]),
 (275, 'Contents and Ch 6', ["Chapter 6: Two Minutes and Eleven Seconds\nChapter 7: You're Early", 'Chapter 6: Two Minutes and Eleven Seconds\nElijah got laid off', 'He reached forward and stopped it. Two minutes and eleven seconds.', "It's two minutes. Please just watch it."], ['Four Minutes and Eleven Seconds', 'Four minutes and eleven seconds', "It's four minutes."]),
+(276, 'Ch 7', ['It was the most affirming thing anyone had said to him since this started.'], ['the nicest thing anybody had said to him all year']),
 ]

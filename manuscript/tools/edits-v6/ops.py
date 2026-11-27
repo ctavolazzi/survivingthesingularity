@@ -1633,6 +1633,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (275, 'Chapter 6: Four Minutes and Eleven Seconds', 'Chapter 6: Two Minutes and Eleven Seconds'),
 (275, 'He reached forward and stopped it. Four minutes and eleven seconds.', 'He reached forward and stopped it. Two minutes and eleven seconds.'),
 (275, "It's four minutes. Please just watch it.", "It's two minutes. Please just watch it."),
+# 276, Ch 7: the most affirming thing (CT, 27 Nov, fourteenth chat)
+(276, 'It was the nicest thing anybody had said to him all year.', 'It was the most affirming thing anyone had said to him since this started.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -1,5 +1,7 @@
 # Smell table, 27 Nov 2026 (the smell pass)
 
+**Since 27 Nov (sixteenth chat) the senses sheet is the place to look:** `senses-2026-11-27.csv` and the "Senses" tab of the story checks workbook (all five senses, every scene, at edit 292). The open rows below are still CT's to rule on; they are the first step of the senses pass.
+
 Every smell on the page in the built book (edits 1 to 234), plus CT's two places and the two places where a smell
 could start a memory someone shares. Quotes are from `OUT/v6.txt`. "Whose words" is traced through the v5 Doc,
 `EDITS.md`, `ops.py` and `drafts/`. "Older text" means the book's text from before CT's edit list of 25 Nov. Nothing

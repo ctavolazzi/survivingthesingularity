@@ -1036,8 +1036,80 @@ def plants(book, outdir, date):
         counts[r[3]] = counts.get(r[3], 0) + 1
     print(f"{len(rows)} questions: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items())))
 
+
+# ---------------------------------------------------------------- senses (an inventory, seven readers' pass)
+# Every sound, touch, smell and taste line on the page, scene by scene, with the strongest things seen and any food
+# eaten or drunk with no taste given. The lines are in senses-data-2026-11-27.json (seven readers read all 128 scenes at
+# edit 292, 27 Nov, sixteenth chat; every quote must still be in the book). No scores: this is where the senses are,
+# so CT can see the page and decide. WHOSE is traced through the v5 Doc, EDITS.md, ops.py and drafts/ (whose_words.py,
+# then the record read); it covers the smell and taste lines only.
+SENSE_WHOSE = {
+    "The beer was cold and tasted like nothing.": "older text",
+    "that thick engine heat with a smell to it": "older text",
+    "The coffee smelled like a slice of heaven.": "CT's (edit 287)",
+    "going to miss the smell of that coffee maker doing its thing": "CT's; \"doing its thing\" his correction (edit 287)",
+    "It smelled like diesel and low tide.": "older text",
+    "He could smell her perfume, and it was nice, and he felt a rush.": "CT's beat, Claude's narration (edit 45)",
+    "Under the candles and the wine were the faint back notes of cleaning supplies.": "CT's (edit 236)",
+    "the kitchen air came out into the hall, hot, with fish and butter in it": "CT's idea, Claude's words; fish and butter invented (edit 236)",
+    "He turned the dome light off. He smelled like cigarettes.": "older text",
+    "It tasted like the best nights of his twenties.": "older text; \"nights\" CT's (edit 52)",
+    "Manny had smelled it from the yard.": "older text",
+    "In a hallway that smelled like hand sanitizer he stood with all of it in one hand.": "older text",
+    "smoke, a wet jacket, and the delivery bag, which had held on to just about every order": "CT's phrase; smoke, the jacket and the bag Claude's; \"just about\" CT's (edit 235)",
+    "went down in the truck with the door open, so fast he barely tasted it": "edit 100, from CT's other chat, copied as given",
+    "the barn had kept its own air, cold gear oil and mouse": "Claude's (edit 234); the record asks CT for the real smell",
+    "It cut straight through what five months had done to the cab": "CT's scene, Claude's narration (edit 242)",
+    "She smelled great, better than anyone he'd ever smelled before": "CT's (edit 242)",
+    "\"The soup was good,\" he said.": "older text",
+    "a thermos of something that smelled like a wet lawn": "older text",
+    "Grace got the tart kind with mochi and gummy bears on top and ate it on the sidewalk": "Claude's (edit 201); \"I want frozen yogurt\" is CT's",
+    "the one that smelled like petrichor and moss when it rained": "CT's (edit 238)",
+    "She smells better than anyone I've ever known. And she doesn't even wear deodorant.": "CT's (edit 242)",
+    "sage and turkey fat, and the little room filled with it the minute the door shut": "Claude's (edit 206); CT's \"Rosa's cooking\" and \"the heavenly scent\" drafted, not logged",
+    "onions and bacon fat riding the wind out of the kitchen trailer": "Claude's (edit 207)",
+    "The county chambers smelled like wet coats and floor wax.": "older text",
+    "The seed house was warm and smelled like wet soil.": "older text",
+    "The tea tasted like dirt and ginger.": "older text",
+    "He could still taste the tea.": "older text",
+    "The smell had climbed the kitchen walls and gotten into the curtains": "Claude's (edit 221)",
+}
+SENSE_CALL = {23: "Logged, edit 236 (the party)", 39: "Logged, edit 235 (the truck)"}
+
+
+def senses(book, outdir, date):
+    b = Book(book, outdir)
+    sheet = {int(r[0]): r for r in list(csv.reader(open(os.path.join(outdir, "scene-sheet-2026-11-27.csv"))))[1:] if r[-1] != "(cut)"}
+    data = {s["scene"]: s for s in json.load(open(os.path.join(outdir, "senses-data-2026-11-27.json")))}
+    if set(data) != {s[0] for s in b.scenes}:
+        sys.exit("senses-data does not cover the book's scenes: a scene was added, cut or merged. Read the new scenes and fix the data.")
+    rows, lines, whose = [], 0, []
+    for no, head, first, last in b.scenes:
+        s, body = data[no], [norm(l) for l in b.lines[first:last + 1]]
+        cells = []
+        for k in ("sound", "touch", "smell", "taste", "sight", "food_or_drink_not_tasted"):
+            got = []
+            for q in s[k]:
+                hit = [i for i, l in enumerate(body) if norm(q) in l]
+                if not hit:
+                    sys.exit(f"NO LONGER IN SCENE {no} ({k}): {q!r}. An edit changed it: reread the scene and fix the data.")
+                got.append(f"line {first + hit[0] + 1}: \"{q}\"")
+                lines += 1
+                if k in ("smell", "taste"):
+                    if q not in SENSE_WHOSE:
+                        sys.exit(f"WHOSE WORDS NOT TRACED: {q!r}. Trace it (whose_words.py, then the record) and add it to SENSE_WHOSE.")
+                    whose.append(f"\"{q[:40]}...\": {SENSE_WHOSE[q]}")
+            cells.append(" | ".join(got))
+        w = [f"{q[:40]}...: {SENSE_WHOSE[q]}" for q in s["smell"] + s["taste"]]
+        rows.append([no, head.split(":")[0], sheet[no][10]] + cells + ["; ".join(w), SENSE_CALL.get(no, "")])
+    write_csv(outdir, "senses", date, ["#", "Chapter", "What happens (scene sheet)", "Sound", "Touch", "Smell", "Taste",
+              "Sight (the strongest)", "Eaten or drunk, no taste given", "Smell and taste: whose words", "CT's call"], rows)
+    n = lambda k: sum(1 for s in data.values() if s[k])
+    print(f"{len(rows)} scenes, {lines} lines found in the book; scenes with sound {n('sound')}, touch {n('touch')}, "
+          f"smell {n('smell')}, taste {n('taste')}; food with no taste in {n('food_or_drink_not_tasted')}")
+
 if __name__ == "__main__":
-    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2, "money": money, "objects": objects, "plants": plants}
+    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2, "money": money, "objects": objects, "plants": plants, "senses": senses}
     if len(sys.argv) < 4 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
     date = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else "2026-11-27"

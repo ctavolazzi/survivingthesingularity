@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 280 (27 Nov, the fourteenth chat), logged only. The next edit is 281.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 282 (27 Nov, the fourteenth chat), logged only. The next edit is 283.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4029,6 +4029,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      said. "That's a lot of views, man, especially for a subject like that." Now: "Fifty million views on one video, and it's
      still going," Ruby said. "It'll taper off eventually, but man, you really struck a nerve. And your follow-ups ..."
      Logged only.
+281. **Chapters 8 to 10: Ruby's jacket.** CT: "I want Ruby to be wearing a jacket that looks like it came straight out of
+     Almost Famous. And I want that line in there. You know, fur on the cuffs and on the collar, bright red mottled pattern. I
+     want him to look like a proper movie star. Handsome as hell." Claude's draft, shown, built on his words: "He had on a
+     jacket that looked like it came straight out of *Almost Famous*, bright red and mottled, with fur on the cuffs and the
+     collar. White sneakers with nothing on them. He looked like a proper movie star, handsome as hell, and he was eating the
+     same little sandwiches out of a napkin. His fingernails were bitten ..." In place of "He looked like he'd come to fix the
+     wifi. Black hoodie, hood up, white sneakers ...". The hoodie's three other lines follow it: "Ruby put his hands in his
+     jacket pockets." (Ch 8), "Ruby kept his on." (Ch 9, the dinner), "with his hands in his jacket pockets" (Ch 10, the
+     elevator). CT's next line built on the jacket, taken as his yes. Logged only.
+282. **Chapter 10: the fur going up and down.** CT: "Suit yourself, man, Ruby shrugged. The fur of his magnificent jacket.
+     Going up and down like an endangered fox. In an arid desert." Dictation's breaks joined (Claude): "'Suit yourself,
+     man,' Ruby shrugged, the fur of his magnificent jacket going up and down like an endangered fox in an arid desert. 'Hey,
+     if you're ever in the city, give me a call. I'd love to do this again.'" Ruby also shrugs eleven paragraphs earlier, on
+     the fire escape ("He shrugged with one shoulder."); flagged to CT. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

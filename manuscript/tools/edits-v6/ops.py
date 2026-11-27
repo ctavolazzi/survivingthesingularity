@@ -1643,6 +1643,13 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (279, 'And tomorrow it\'ll be eight thousand. Who knows what it\'ll be next week? Do you know how this game goes?"', 'And on your next video, maybe it\'s eight thousand. Do you know how this game goes? You don\'t have time to do the important work and engage with everyone. It\'s okay to let some things go."'),
 # 280, Ch 10: Ruby's fifty million, still going (CT's words, 27 Nov, fourteenth chat)
 (280, '"Fifty million views on one video," Ruby said. "That\'s a lot of views, man, especially for a subject like that. And your follow-ups', '"Fifty million views on one video, and it\'s still going," Ruby said. "It\'ll taper off eventually, but man, you really struck a nerve. And your follow-ups'),
+# 281, Ch 8 to 10: Ruby's Almost Famous jacket (CT's look and words, 27 Nov, fourteenth chat; Claude's draft, shown; the hoodie lines follow)
+(281, "He looked like he'd come to fix the wifi. Black hoodie, hood up, white sneakers with nothing on them. He was eating the same little sandwiches out of a napkin, and his fingernails were bitten", 'He had on a jacket that looked like it came straight out of *Almost Famous*, bright red and mottled, with fur on the cuffs and the collar. White sneakers with nothing on them. He looked like a proper movie star, handsome as hell, and he was eating the same little sandwiches out of a napkin. His fingernails were bitten'),
+(281, 'Ruby put his hands in the hoodie pocket.', 'Ruby put his hands in his jacket pockets.'),
+(281, 'Ruby kept his hoodie.', 'Ruby kept his on.'),
+(281, 'with his hands in the hoodie pocket while they waited', 'with his hands in his jacket pockets while they waited'),
+# 282, Ch 10: Ruby shrugs at the elevator, the fur going up and down (CT's words, 27 Nov, fourteenth chat)
+(282, '"Suit yourself, man. Hey, if you\'re ever in the city,', '"Suit yourself, man," Ruby shrugged, the fur of his magnificent jacket going up and down like an endangered fox in an arid desert. "Hey, if you\'re ever in the city,'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

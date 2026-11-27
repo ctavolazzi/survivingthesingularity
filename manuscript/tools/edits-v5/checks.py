@@ -62,7 +62,7 @@ C=[
 (50,"Ch 9",["I spend much of my time working out how to make it care."],["I spend some of my time on that."]),
 (51,"Ch 9",["That trucker she talked about? He cried on her,"],["\"The trucker cried,\""]),
 (52,"Ch 10",["the best nights of his twenties"],["the best night of his twenties"]),
-(53,"Ch 10",["How about half a mill?","The full million?","Suit yourself, man.","having just turned down retirement"],[]),
+(53,"Ch 10",["How about half a mill?","The full million?","Suit yourself, man","having just turned down retirement"],[]),  # the period became a comma in edit 282
 (63,"Ch 10",["He didn't know why he listened to","He was always someone who had trusted his gut."],[]),
 (54,"Meanwhile 2",["The other half is laughing at a song about him."],["made a song about him"]),
 (58,"Ch 11, 31",["For doing nothing. A million dollars.","turned down the million dollars"],["Triple what I made.","the triple salary"]),
@@ -287,4 +287,6 @@ C=[
 (278, 'Ch 7', ['He told her the floor was clean now, side-eyeing a growing pile of dirty laundry.'], ['He told her the floor was clean.']),
 (279, 'Ch 8', ['And on your next video, maybe it\'s eight thousand. Do you know how this game goes? You don\'t have time to do the important work and engage with everyone. It\'s okay to let some things go."'], ["And tomorrow it'll be eight thousand.", "Who knows what it'll be next week?"]),
 (280, 'Ch 10', ['"Fifty million views on one video, and it\'s still going," Ruby said. "It\'ll taper off eventually, but man, you really struck a nerve. And your follow-ups'], []),
+(281, 'Ch 8 to 10', ['He had on a jacket that looked like it came straight out of Almost Famous, bright red and mottled, with fur on the cuffs and the collar.', 'He looked like a proper movie star, handsome as hell,', 'Ruby put his hands in his jacket pockets.', 'Ruby kept his on.', 'with his hands in his jacket pockets while they waited'], ['Black hoodie', 'the hoodie pocket', 'kept his hoodie', 'fix the wifi']),
+(282, 'Ch 10', ['"Suit yourself, man," Ruby shrugged, the fur of his magnificent jacket going up and down like an endangered fox in an arid desert. "Hey, if you\'re ever in the city,'], []),
 ]

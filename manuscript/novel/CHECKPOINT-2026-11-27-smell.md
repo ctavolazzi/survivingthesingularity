@@ -128,6 +128,11 @@ Look for: who runs the route while Grace is away for the winter; any line that s
 winter trip and the October festival read as two trips; and anything the knowledge sheet says a person shouldn't
 know yet. Tell me what you find before changing anything.
 
+Then, before the taste pass, a scene I dictated and want drafted: Elijah confides in Grace about his mother, the farm
+and Melody; "Nobody talks about my man like that"; her whisper; a bang that wakes them. My words and what the page
+gives it are in manuscript/novel/next-version-scenes-2026-11-26.md, section 7. Place it; don't audit it. Show me the
+draft before it's logged.
+
 Then the job: the taste pass. Taste only someone who was there would know, with a verb that carries the physics, where it
 carries the feeling or tells you something about the person, not one per page. If I haven't given you my own taste
 lines, ask me for them in one short question before you propose any of yours; the smell pass worked because the two

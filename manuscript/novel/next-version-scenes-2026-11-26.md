@@ -676,3 +676,79 @@ What that means for the page (Claude's reading, for his yes):
   some pages on that they took the scenic route.
 - Two of the lines that come out can be kept there: "A year. A whole year, Elijah." fits the pillow talk (the kiss at
   the pond was November 2025, exactly a year before), and Marta's look fits "later that morning".
+
+**Section 6 is logged as edit 240** (the pond ends on the near kiss; the weeks after, the pillow talk and Marta in the
+shop are in Chapter 27). Still not written from section 6: the Hinge profile and "maybe I'll be a spinstress after all".
+
+## 7. Elijah confides in Grace: his mother, the farm, Melody; "my man"; the whisper (CT, 27 Nov 2026, the smell chat). Not written, not logged.
+
+His words, as sent:
+
+One scene I feel like would add to the betrayal feeling inside Grace at the end so it's not such a snap judgement feeling is a tender moment where Elijah confides in her about his mother, her stroke, his selling of the family farm to pay off the liens avoid foreclosure and protect his mother by paying for her ongoing medical care.
+
+She empathizes and listens well, he goes on to share about blocking his sister and how much that hurt. He didn't even know why he did it.
+
+Grace provides clarity there
+
+"Because you were overwhelmed." She starts caressing him gently with her fingertips, to sooth him and reassure.
+
+"I get it, Elijah, believe me. I understand"
+
+"You've sold your family inheritance to cover bills and not made a single penny off it too?"
+
+She half-laughs, then continues
+
+"No, I have a crazy sister too. Sometimes I wish I was brave enough to block her."
+
+Brave. Not the word Elijah would have chosen. More like cowardice, but Grace continued.
+
+"Look, babe, I think you did the right thing and I feel like you think that too."
+
+"Yeah, sometimes, maybe."
+He said. "And other times I feel like a huge pile of dog shit."
+
+"Hey," she said, sternly enough that it kind of startled him.
+
+"Nobody talks about my man like that."
+
+My man.
+
+The words reverberated inside Elijah's head.
+
+Her man.
+
+His woman.
+
+They sat like that for a bit until Elijah laid down and put his head on her lap. She played with his hair until he started to drift off to sleep.
+
+Elijah began breathing heavy, feeling himself drift away. He almost missed it, but Grace, believing he was already asleep, whispered it for the first time.
+
+"I wish I could help you love yourself as much as I do."
+
+Elijah's breathing softened even more and he drifted off to sleep.
+
+He has bad dreams after that that wake him up, and then we can have a big event happen or something that connects and weaves the stories all together. A bang that startles them both. Maybe Curtis yelling about something or someone
+Else trying to prevent an accident with one of the machines?
+
+The little rover going haywire?
+
+What the page gives it (checked against the knowledge sheet and the book with edits 1 to 240):
+- **When.** "Babe" and "my man" put it after they are together (November 2026) and before the table learns about the
+  arms (October 2027). Claude's suggestion: the end of Chapter 27, a night in December 2026, after the Thanksgiving
+  letter to Ma.
+- **The bang.** Chapter 28 opens the same month with "The first hard storm of the winter came up the valley in
+  December." and the whole county losing power. If the bang that wakes them is that storm arriving, the scene runs
+  straight into the next chapter and needs no new event. A rover going haywire at night would be new material.
+- **He has told her some of this before.** Melody and the blocked number: Chapter 22, on the pump house steps (July
+  2025), where Grace answers with Faith ("Turns out she was never keeping score. I was."). The stroke and the sale:
+  Chapter 24, at the first fire (September 2025), in summary ("He told her the other one too ... The two pages, the
+  room with the window, the man with the folder."), and she says "I'd have signed in the parking lot." Those are the
+  facts, told before they were a couple. This scene can be the first time he says what it cost him, with one line
+  that it isn't the first time she has heard it.
+- **"Whispered it for the first time."** Chapter 33 (July 2027) has her say "I love you" at the table, and the
+  narration says "She had never said it before." With this scene that wants a word ("She had never said it to his
+  face").
+- **What it does for the ending.** At the fire she throws exactly this at him ("You signed your mother's house away
+  ... That's not a principle, Elijah. That's your mother."), and it is "the one he had never told anybody". After this
+  scene it is the thing he gave her with his head in her lap. And it is the night he tells her everything except the
+  arms, which is what "You've been lying to me this whole time?" needs.

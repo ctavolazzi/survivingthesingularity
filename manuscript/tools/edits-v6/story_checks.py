@@ -90,81 +90,82 @@ WHEN = """
 51|2025-05-20|May 2025: the boxes ship|stated
 52|2025-05-12|May 2025: the drip tape|stated
 53|2025-06-09|June 2025 (the second week): the two videos|stated
-54|2025-06-26|The last week of June 2025: a hundred and four|stated
-55|2025-05-30|The end of May to early July 2025: the servers|stated
-56|2025-07-03|Thursday 3 July to Saturday 5 July 2025: Ray, the leak; then that Saturday morning|worked
-57|2025-07-05|That weekend, to Monday|stated
-58|2025-07-15|July and August 2025: the land trust|worked
-59|2025-08|Summer 2025|worked
-60|2025-08-15|The middle of August 2025|stated
-61|2025-08-25|The last week of August into September 2025: the shouse|stated
-62|2025-09-27|Saturday 27 September 2025: the first fire; Sunday the call|stated
-63|2025-10-05|The next Sunday|stated
-64|2025-09-27|The same night, by eleven|stated
-65|2025-03|Spring to fall 2025: the store dies|stated
-66|2025-10-15|Fall 2025, after the first frost: the letter, the frozen yogurt|stated
-67|2025-10-17|A Friday dinner|stated
-68|2025-10-25|Fall 2025: the cyberdeck|worked
-69|2025-11-12|The second week of November 2025: the pond|stated
-70|2025-11-26|Wednesday 26 November 2025: he starts for home and turns back|stated
-71|2025-11-26|That night|stated
-72|2025-12-09|December 2025, the evening before Grace leaves for the winter: Lou and the cider|worked
-73|2025-12-10|The next morning: Grace leaves|worked
-74|2026-03|Spring 2026: the beds|stated
-75|2026-05|May 2026: the rover|stated
-76|2026-05|Two nights later|stated
-77|2026-05-22|A Friday in May 2026, before dinner: Miles Renner on the big screen|worked
-78|2026-06-12|Friday 12 June to 30 June 2026: the models go dark|stated
-79|2025-11-28|The Friday after Thanksgiving 2025 to July 2026: the pay|stated
-80|2026-08|August to October 2026: the pits|stated
-81|2026-10|October 2026: the laser weeder; Marta|stated
-82|2026-10|The night after: the amp at the pond|stated
-83|2026-10|October 2026: the first fire video; a week later|worked
-84|2026-10|The same morning, and that Friday|stated
-85|2026-10|To Friday 6 November 2026, after the midterms|stated
-86|2026-11-10|October to November 2026: the weeks after the pond; the morning in his T-shirt|stated
-87|2026-11-10|That afternoon, in the shop: Marta's look|stated
-88|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
-89|2026-12-05|Saturday 5 December 2026: the well|stated
-90|2026-12-15|December 2026: the storm|stated
-91|2027-01|January 2027: the grange kitchen|stated
-92|2027-01|January 2027: the annual meeting|worked
-93|2027-01|A few nights after|stated
-94|2027-02|The night before the county meeting|stated
-95|2027-02|The county meeting|worked
-96|2027-02|The third week of the apprenticeship|stated
-97|2027-02-12|February 2027, a Friday: the plan|stated
-98|2027-02-15|The Monday after, and two days later|stated
-99|2027-02-16|That week|stated
-100|2027-02-20|Saturday 20 February 2027: the tea|worked
-101|2027-02-21|Sunday 21 February: Marta, the brake|stated
-102|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
-103|2027-03|March 2027, on the dairy|worked
-104|2027-03|March 2027: five small things|stated
-105|2027-03-28|Late March 2027|stated
-106|2027-04-01|The first of April 2027, the pit: Priya's ankle|stated
-107|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
-108|2027-04-10|April to June 2027: the juniper|stated
-109|2027-06|June to Friday 9 July 2027|stated
-110|2027-07-09|Friday dinner, 9 July 2027; then the same evening|worked
-111|2027-07-16|The next Friday|stated
-112|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
-113|2027-10-11|The afternoon before the October meeting|stated
-114|2027-10-12|A Tuesday in the middle of October 2027: the meeting; then the same night|stated
-115|2027-10-13|Six the next morning|stated
-116|2027-10-13|That night|stated
-117|2027-10-23|The Saturday before the festival|stated
-118|2027-10-27|The Wednesday of festival week|stated
-119|2027-10-30|The last night of the festival: the fire|worked
-120|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
-121|2027-11-09|The same Tuesday|stated
+54|2025-06-16|The middle of June 2025: the shouse on the whiteboard (edit 296)|stated
+55|2025-06-26|The last week of June 2025: a hundred and four|stated
+56|2025-05-30|The end of May to early July 2025: the servers|stated
+57|2025-07-03|Thursday 3 July to Saturday 5 July 2025: Ray, the leak; then that Saturday morning|worked
+58|2025-07-05|That weekend, to Monday|stated
+59|2025-07-15|July and August 2025: the land trust|worked
+60|2025-08|Summer 2025|worked
+61|2025-08-15|The middle of August 2025|stated
+62|2025-08-25|The last week of August into September 2025: the shouse|stated
+63|2025-09-27|Saturday 27 September 2025: the first fire; Sunday the call|stated
+64|2025-10-05|The next Sunday|stated
+65|2025-09-27|The same night, by eleven|stated
+66|2025-03|Spring to fall 2025: the store dies|stated
+67|2025-10-15|Fall 2025, after the first frost: the letter, the frozen yogurt|stated
+68|2025-10-17|A Friday dinner|stated
+69|2025-10-25|Fall 2025: the cyberdeck|worked
+70|2025-11-12|The second week of November 2025: the pond|stated
+71|2025-11-26|Wednesday 26 November 2025: he starts for home and turns back|stated
+72|2025-11-26|That night|stated
+73|2025-12-09|December 2025, the evening before Grace leaves for the winter: Lou and the cider|worked
+74|2025-12-10|The next morning: Grace leaves|worked
+75|2026-03|Spring 2026: the beds|stated
+76|2026-05|May 2026: the rover|stated
+77|2026-05|Two nights later|stated
+78|2026-05-22|A Friday in May 2026, before dinner: Miles Renner on the big screen|worked
+79|2026-06-12|Friday 12 June to 30 June 2026: the models go dark|stated
+80|2025-11-28|The Friday after Thanksgiving 2025 to July 2026: the pay|stated
+81|2026-08|August to October 2026: the pits|stated
+82|2026-10|October 2026: the laser weeder; Marta|stated
+83|2026-10|The night after: the amp at the pond|stated
+84|2026-10|October 2026: the first fire video; a week later|worked
+85|2026-10|The same morning, and that Friday|stated
+86|2026-10|To Friday 6 November 2026, after the midterms|stated
+87|2026-11-10|October to November 2026: the weeks after the pond; the morning in his T-shirt|stated
+88|2026-11-10|That afternoon, in the shop: Marta's look|stated
+89|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
+90|2026-12-05|Saturday 5 December 2026: the well|stated
+91|2026-12-15|December 2026: the storm|stated
+92|2027-01|January 2027: the grange kitchen|stated
+93|2027-01|January 2027: the annual meeting|worked
+94|2027-01|A few nights after|stated
+95|2027-02|The night before the county meeting|stated
+96|2027-02|The county meeting|worked
+97|2027-02|The third week of the apprenticeship|stated
+98|2027-02-12|February 2027, a Friday: the plan|stated
+99|2027-02-15|The Monday after, and two days later|stated
+100|2027-02-16|That week|stated
+101|2027-02-20|Saturday 20 February 2027: the tea|worked
+102|2027-02-21|Sunday 21 February: Marta, the brake|stated
+103|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
+104|2027-03|March 2027, on the dairy|worked
+105|2027-03|March 2027: five small things|stated
+106|2027-03-28|Late March 2027|stated
+107|2027-04-01|The first of April 2027, the pit: Priya's ankle|stated
+108|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
+109|2027-04-10|April to June 2027: the juniper|stated
+110|2027-06|June to Friday 9 July 2027|stated
+111|2027-07-09|Friday dinner, 9 July 2027; then the same evening|worked
+112|2027-07-16|The next Friday|stated
+113|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
+114|2027-10-11|The afternoon before the October meeting|stated
+115|2027-10-12|A Tuesday in the middle of October 2027: the meeting; then the same night|stated
+116|2027-10-13|Six the next morning|stated
+117|2027-10-13|That night|stated
+118|2027-10-23|The Saturday before the festival|stated
+119|2027-10-27|The Wednesday of festival week|stated
+120|2027-10-30|The last night of the festival: the fire|worked
+121|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
 122|2027-11-09|The same Tuesday|stated
-123|2027-11-09|Two days south; the rose garden; Manny's|stated
-124|2027-11-25|Thursday 25 November 2027|stated
-125|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
-126|2027-11-25|Thanksgiving night, the Bear Flag|stated
-127|2027-11-25|The same night|stated
-128|2027-12|December 2027 to April 2028|stated
+123|2027-11-09|The same Tuesday|stated
+124|2027-11-09|Two days south; the rose garden; Manny's|stated
+125|2027-11-25|Thursday 25 November 2027|stated
+126|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
+127|2027-11-25|Thanksgiving night, the Bear Flag|stated
+128|2027-11-25|The same night|stated
+129|2027-12|December 2027 to April 2028|stated
 """
 BACK_ON_PURPOSE = {36, 48, 52, 55, 64, 65, 79, 125}  # renumbered after edit 267 merged thirteen scenes  # scenes the book tells out of order
 
@@ -227,8 +228,8 @@ CHECKS = [  # (what, [quotes], function -> (verdict, detail))
      lambda: (False, "He arrives Tuesday 4 March; the arms come the Wednesday after the Sunday lien sale, 12 March: his second week. (Already in the scene sheet audit.)")),
     ("NOT ON THE CALENDAR'S SIDE: the squash", ["But the squash has to come in this week.", "The winter squash had to come in.", "We'd have the squash in by Wednesday."],
      lambda: (False, "The tractor scene is at least nine days before the mid October meeting, and the squash 'has to come in this week'; at the meeting and in festival week it is still in the field. (Already in the scene sheet audit.)")),
-    ("NOT ON THE CALENDAR'S SIDE: the last grant 'ran out in June'", ["and the last one ran out in June.", "\"The route's got no money past June.\""],
-     lambda: (False, "It is October 2026 and the route is running: the scene means next June. (Already open with CT.)")),
+    ("The last grant 'would run out in June' (fixed at edit 299)", ["and the last one would run out in June.", "\"The route's got no money past June.\""],
+     lambda: (True, "It is October 2026 and the route is running: the narration now says the grant would run out the coming June, as Elijah's line does. It read 'ran out in June' until edit 299 (27 Nov, seventeenth chat).")),
     ("TIGHT, NOT BROKEN: the board is 'ours' in April", ["Earlier that April the order had come", "The first design had already eaten the better part of a month", "In April Marta had run her finger along the drawing of that board", "I saw it in April."],
      lambda: (None, "The order comes in April, the first design takes 'the better part of a month', and Marta and Tyler both place the finished board in April. It holds only if the order came in the first days of April; the build weekends then run into May, when the boxes ship.")),
     ("ODD, LOW: route boxes are packed on a Wednesday night", ["He told Grace on the Wednesday of festival week, in the packing shed, a little before midnight.", "They were building route boxes by hand."],
@@ -860,7 +861,9 @@ def objects(book, outdir, date):
 # ---------------------------------------------------------------- plants and payoffs (CT, 27 Nov)
 # Every question the scene sheet's "Opens a question" column holds, with Claude's verdict from the read:
 # paid (the line that pays it), same scene (answered where it is asked), open on purpose (the book ends on it),
-# never (with the words searched; the script counts the hits after the scene that opens it).
+# never (with the words searched; the script counts the hits after the scene that opens it),
+# left open (CT, 27 Nov) (the four that were "never" until the seventeenth chat; CT: "The four unanswered things are
+# fine to be left unanswered ... Not essential to the story as far as I'm concerned." The line cited is where each is left).
 # A question in the scene sheet that is missing here stops the run.
 PLANTS = {
     "What will the realtors do with his offer?": ("paid", "Then Donna spent a weekend with it."),
@@ -926,7 +929,7 @@ PLANTS = {
     "What would you measure? (Priya on the third word)": ("paid", "DEPTH OF SENSOR: 1 cm. DEPTH OF ROOT: 30."),
     "Where do Denny and his daughter stand for six months?": ("paid", "So we built something. Here's ours. Come see it. Bring your kid."),
     "Why won't Elijah play?": ("paid", "It was the first music out of that amp in three years."),
-    "What did Grace and Curtis agree on about Elijah?": ("never", r"agreed|\bagree\b|knack|marketing"),
+    "What did Grace and Curtis agree on about Elijah?": ("left open (CT, 27 Nov)", "I thought we agreed."),
     "What happens when the route funding ends?": ("paid", "The board voted four to one to extend the route through December"),
     "Will his hidden AI board come out?": ("paid", "I gave it to a company in Iowa, and their machine did it in two nights"),
     "What will the county say about the shed?": ("paid", "By then Reuben's yellow tab had an answer stapled to it"),
@@ -947,16 +950,17 @@ PLANTS = {
     "What has Elijah still not told the table?": ("paid", "I sold it to them. My mother's place."),
     "Will Elijah stay?": ("paid", "\"We thought you were going home.\""),
     "Will Grace give Elijah a chance?": ("paid", "she woke up wearing his T-shirt."),
-    "Why did Lou have Grace write to Elijah?": ("never", r"reach out|write to (him|you)|asked you to|a reason why"),
+    "Why did Lou have Grace write to Elijah?": ("left open (CT, 27 Nov)", "But there's a reason why I asked you to reach out to him."),
     "Will she come back to him?": ("paid", "Grace was back by the time the beds went in."),
     "Who is the arm for?": ("same scene", "\"For what the nine of us can't get to,\" Lou said."),
     "Does Elijah know a billionaire, and will Grace find out?": ("paid", "I know a guy who'd ship a few more up."),
     "Why were Patricia's reports suddenly a problem?": ("paid", "I've used it every day for three years,"),
     "Will Elijah ever cash the checks?": ("paid", "For this he cashed the newest one."),
-    "Will the trial hold up next year?": ("never", r"fork|broadfork|trial|run it again"),
+    "Will the trial hold up next year?": ("left open (CT, 27 Nov)", "It's a reason to run it again next year, properly."),
     "Why is Grace skipping her festival?": ("paid", "She's gone every October since she was nineteen. Not this one."),
     "Who pays for the route after June?": ("paid", "The board voted four to one to extend the route through December"),
-    "What did Priya write on the back of the pledge?": ("never", r"back of the pledge|shirt pocket|the pledge"),
+    "What did Priya write on the back of the pledge?": ("left open (CT, 27 Nov)", "wrote something small on the back of the pledge"),
+    "What are Elijah's good, bad ideas?": ("paid", "No, like robot arms. Two of them, off a cannery line in Stockton."),
     "Does Tyler know more than he lets on?": ("paid", "Your reports got really good in, like, a week."),
     "Will the well ever read low in March?": ("paid", "manny says his well's down four feet. never been down in march, she wrote."),
     "Who will weld when Marta can't?": ("paid", "She stepped back and nodded at Tyler, and Tyler set his feet and took the pipe in both hands and hauled."),

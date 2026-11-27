@@ -2,12 +2,12 @@ Who,With,Lines traded,Scenes,First,Last,Where
 Elijah,Grace,228,35,Ch 15,Ch 39,"Ch 15, Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 23, Ch 24, Ch 25, Ch 26, Pondwater, Ch 27, Ch 30, Ch 31, Ch 32, Ch 33, Ch 34, Ch 36, Ch 39"
 Elijah,Lou,109,17,Ch 17,Ch 38,"Ch 17, Ch 20, Ch 21, Ch 26, Ch 29, Ch 30, Ch 32, Ch 33, Ch 34, Ch 35, Ch 37, Ch 38"
 David,Elijah,95,8,Ch 0,Ch 39,"Ch 0, Ch 1, Ch 5, Ch 7, Ch 13, Ch 39"
-Elijah,Marta,65,18,Ch 16,Ch 37,"Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 24, Pondwater, Ch 27, Ch 29, Ch 31, Ch 33, Ch 34, Ch 37"
+Elijah,Marta,67,19,Ch 16,Ch 37,"Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 24, Pondwater, Ch 27, Ch 29, Ch 31, Ch 33, Ch 34, Ch 37"
 Elijah,Ruby,63,3,Ch 8,Ch 10,"Ch 8, Ch 9, Ch 10"
 Elijah,the old man,62,2,Ch 15,Ch 17,"Ch 15, Ch 17"
 Bidwell,Bidwell's reader,44,3,Meanwhile (after Ch 2),Meanwhile (after Ch 23),"Meanwhile (after Ch 2), Meanwhile (after Ch 10), Meanwhile (after Ch 23)"
+Elijah,Priya,39,12,Ch 17,Ch 38,"Ch 17, Ch 19, Ch 21, Ch 22, Ch 26, Ch 27, Ch 29, Ch 31, Ch 32, Ch 38"
 Devendra,Elijah,38,6,Ch 1,Ch 37,"Ch 1, Ch 2, Ch 6, Ch 25, Ch 32, Ch 37"
-Elijah,Priya,33,11,Ch 17,Ch 38,"Ch 17, Ch 19, Ch 21, Ch 22, Ch 26, Ch 27, Ch 29, Ch 31, Ch 32, Ch 38"
 Denny,Elijah,32,7,Ch 17,Ch 38,"Ch 17, Ch 21, Ch 31, Ch 33, Ch 34, Ch 37, Ch 38"
 Elijah,Gus,31,1,Ch 11,Ch 11,Ch 11
 Ruby,the Architect,30,1,Ch 9,Ch 9,Ch 9
@@ -17,9 +17,9 @@ Grace,Marta,25,7,Ch 16,Ch 38,"Ch 16, Ch 17, Ch 24, Ch 31, Ch 33, Ch 34, Ch 38"
 Elijah,the moderator,23,1,Ch 8,Ch 8,Ch 8
 Grace,Priya,20,7,Ch 17,Ch 38,"Ch 17, Ch 22, Ch 26, Ch 30, Ch 32, Ch 34, Ch 38"
 Lou,Wren,20,3,Ch 20,Ch 33,"Ch 20, Ch 26, Ch 33"
+Marta,Priya,20,8,Ch 21,Ch 34,"Ch 21, Ch 22, Pondwater, Ch 27, Ch 28, Ch 29, Ch 34"
 Elijah,Tyler,19,8,Ch 19,Ch 38,"Ch 19, Ch 22, Pondwater, Ch 27, Ch 32, Ch 34, Ch 37, Ch 38"
 Curtis,Grace,18,7,Ch 17,Ch 32,"Ch 17, Ch 22, Ch 26, Pondwater, Ch 27, Ch 29, Ch 32"
-Marta,Priya,18,7,Ch 22,Ch 34,"Ch 22, Pondwater, Ch 27, Ch 28, Ch 29, Ch 34"
 Elijah,Praether,17,1,Ch 17,Ch 17,Ch 17
 Curtis,Priya,17,8,Ch 19,Ch 34,"Ch 19, Ch 21, Ch 22, Ch 26, Pondwater, Ch 28, Ch 34"
 Curtis,Elijah,16,8,Ch 17,Ch 33,"Ch 17, Ch 19, Ch 22, Pondwater, Ch 28, Ch 29, Ch 30, Ch 33"

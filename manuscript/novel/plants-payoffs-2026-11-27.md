@@ -22,7 +22,7 @@ In Drive: tab "Plants and payoffs" in the story checks workbook (`11zW0LizfKqEXE
 
 ## Counts
 
-130 questions: 99 paid, 15 in the same scene, 11 open on purpose, 1 after the book ends, 4 never.
+131 questions (edits 1 to 299): 100 paid, 15 in the same scene, 11 open on purpose, 1 after the book ends, 4 left open on CT's word. Until the seventeenth chat (27 Nov) those four read "never"; CT: "The four unanswered things are fine to be left unanswered ... Not essential to the story as far as I'm concerned." They are the four listed under Findings below.
 
 ## Findings (only two kinds: the page contradicts itself, or something is set up and never paid)
 

@@ -2741,6 +2741,34 @@
     "turn": "Elijah's optimized cut sits at forty-one views while Denny's single take spreads, and Elijah takes the cut down so the channel becomes Denny's."
   },
   {
+    "sheet": 130,
+    "chapter": "Ch 21",
+    "people": [
+      "Elijah",
+      "Lou",
+      "Marta",
+      "Priya"
+    ],
+    "wants": [
+      {
+        "person": "Priya",
+        "want": "credit for the reading that let a shop and a house share a roof",
+        "quote": "I read the county building code."
+      },
+      {
+        "person": "Lou",
+        "want": "to know what Elijah is cooking up",
+        "quote": "What wheels are turning in that brilliant mind of yours, professor?"
+      },
+      {
+        "person": "Elijah",
+        "want": "a use for the two arms he is keeping secret",
+        "quote": "I got some really good, bad ideas."
+      }
+    ],
+    "turn": "Elijah meets the shouse as a drawing on the shed whiteboard; Priya's reading of the county code is why it can be built, and the drawing sets him thinking about the arms in Praether's barn, which only Lou knows about."
+  },
+  {
     "sheet": 55,
     "chapter": "Ch 21",
     "people": [

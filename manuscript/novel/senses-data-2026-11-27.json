@@ -1122,6 +1122,23 @@
   ]
  },
  {
+  "scene": 130,
+  "sound": [
+   "\"It isn't against the law,\" Priya said, a little louder."
+  ],
+  "touch": [],
+  "smell": [],
+  "taste": [],
+  "sight": [
+   "Two long boxes sat side by side, with the wall between them rubbed out.",
+   "He was looking up into the rafters of the old packing shed like he had never been in the building before."
+  ],
+  "physics": [
+   "Lou screwed the cap back on his jug and didn't ask him anything else."
+  ],
+  "food_or_drink_not_tasted": []
+ },
+ {
   "scene": 55,
   "sound": [],
   "touch": [

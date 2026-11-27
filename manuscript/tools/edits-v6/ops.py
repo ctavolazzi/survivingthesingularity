@@ -1618,6 +1618,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (268, 'Grad students, coffee, conference deadlines.', 'Grad students, caffeine, conference deadlines.'),
 # 269, Ch 4: the witching hour (CT, 27 Nov, fourteenth chat)
 (269, "Sitting there at 1 a.m. with the sun's wattage", "Sitting there at the witching hour when the bars normally closed, with the sun's wattage"),
+# 270, Ch 4: truth for knowledge (CT, 27 Nov, fourteenth chat)
+(270, "and stacking guesses doesn't get you knowledge. It gets you a mural of knowledge.", "and stacking guesses doesn't get you truth. It gets you a mural of knowledge."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

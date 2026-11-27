@@ -1,0 +1,345 @@
+{
+ "votes": {
+  "1": {
+   "flags": 1,
+   "notes": [
+    "fine/fine: This is the scene's first comparison and its best. It is specific, it comes from the mother's own world, and it sets up 'her standard' two sentences later. The pie at 928 echoes it on purpose and ties Gus to her, so leave both. [elsewhere: 928 'looked at the load the way Elijah's mother looked at a pie' (same frame, a callback); 1760 'She looked him over.'; 'melon' appears only here]",
+    "flag/flag: Three 'the way' comparisons sit in four lines (906 twice, 909), and this sentence says 'looked' twice. Twenty-two lines later Gus 'looked at the load the way Elijah's mother looked at a pie' (928), the same move about the same mother, so keep the pie as the callback and make this one 'She had met him at the back door and sized him up like a melon at the market.' The melon paragraph isn't in FINAL-StS-Manuscript.md or EDITS.md, so if it turns out to be CT's dictation, it stays and the pie line changes instead. [elsewhere: 928 (Ch 11) 'looked at the load the way Elijah's mother looked at a pie'; 1084 (Ch 13) Ma again, 'the way she copied a recipe off the radio'; 'looked him over' nowhere else in the book.]",
+    "fine/fine: Concrete and wry, from her own world. The list of complaints after it pays it off. This is the kind of fresh comparison CT reaches for, so it stays. [elsewhere: 928 \"looked at the load the way Elijah's mother looked at a pie\" (a callback that ties Gus to her, fine as an echo); 1760 \"She looked him over\" (Grace); \"the way she\" 24 times in the book]"
+   ]
+  },
+  "2": {
+   "flags": 3,
+   "notes": [
+    "flag/flag: This is the second 'the way' in one paragraph, with a third three lines later (909). It is also the first of three back-to-back 'all his life' markers ('since he was six' in the next sentence, then 'every night of his life'). Cut the tag and let the kitchen do the work: 'Then she smiled, and the whole kitchen came up a notch.' [elsewhere: 1224 'It went through him the way it always had, his whole life.' (same phrase); 906 'the way she looked over a melon' and 909 'the way she had every night of his life' in this scene; 'the way ' 145 times in the book; 'a notch' only here]",
+    "flag/fine: 'The whole kitchen came up a notch' already does what the kitchen example asks: the room itself acts. Keep that and end the sentence there, because 'the way it always had' is the second 'the way' in the paragraph and repeats the 'always' that 'every night of his life' says three lines later. [elsewhere: 'the way it always had' and 'came up a notch' nowhere else; the same 'Then she ..., the way she had ...' shape at 742 (Ch 9), 160 lines back; habitual 'the way she had' at 752 (Ch 9) and 909 (Ch 11).]",
+    "flag/flag: \"Came up a notch\" already does the kitchen-example work: her smile turns the room up like a dial. The tail is the second \"the way\" in one paragraph and the third in four lines, and the same tail comes back at 1224. Change to: \"Then she smiled, and the whole kitchen came up a notch, like it always did.\" [elsewhere: 1224 \"It went through him the way it always had, his whole life\"; same scene 906 (melon) and 909 (ice cream); \"the way it\" 9 times in the book; \"like it always did\" none found]"
+   ]
+  },
+  "3": {
+   "flags": 0,
+   "notes": [
+    "fine/fine: 'Then' marks the one turn from inspection to warmth. It is a single beat, not a step-walking chain. Keep it when the tag after it comes off (row 2). [elsewhere: 914 'Then some folks called about a car factory.' (8 lines on); 908 'Then you're somewhere.' in her speech; 'Then she ' 23 in the book]",
+    "fine/fine: This is the scene's only 'Then she', and it marks the turn from her list of complaints to her warmth. Chapters 0 to 10 start eight sentences with 'Then he/she' and none is closer than Ch 9, so a reader won't feel it. [elsewhere: Sentence-start 'Then he/she' in Ch 0 to 10: 160, 281, 291, 405, 416, 428, 470, 742. 'She smiled' once before, at 445 (Ch 6).]",
+    "fine/fine: It's the only \"Then she\" in the chapter, and it marks a real turn from inspecting him to warming to him. It isn't a step chain. [elsewhere: Nearby 742, 1108, 1245, 1317; \"Then she\" 24 times in the book]"
+   ]
+  },
+  "4": {
+   "flags": 0,
+   "notes": [
+    "fine/fine: It is what a man says when he moves back home, the hedge is Elijah's, and her 'Then you're somewhere' answers it. It is reported speech, not narration filler. [elsewhere: 971 'They rode a while.' (this chapter); 998 'The guy looked at his sandwich a while.' (next page); 'for a while' 22 in the book, and this is the only 'only for a while']",
+    "fine/fine: 'Only for a while' is what Elijah tells his mother, the thing people say when they move back home, not narration filler, and her 'Then you're somewhere' answers it. The three uses in Chapters 0 to 10 all mean something else. [elsewhere: 311 (Ch 2) 'quiet for a while', 479 (Ch 6) 'listened to it for a while', 780 (Ch 9) 'For a while there was nothing'; 936 (Ch 11) 'looked at the thermos for a while'.]",
+    "fine/fine: This is reported speech, the thing a person actually says, and her \"Then you're somewhere\" answers it. Plain and right. [elsewhere: \"only for a while\" none found; \"for a while\" 23 times in the book, nearby 936, 1283, 1366]"
+   ]
+  },
+  "5": {
+   "flags": 0,
+   "notes": [
+    "fine/fine: The ritual is the point of the line, and 'every night of his life' appears nowhere else in the book. With row 2's tag cut, this is the scene's one 'always'. [elsewhere: 'every night of his life' and 'the way she had' only here; 906 has the scene's other two 'the way']",
+    "fine/fine: This is the scene's one 'the way' worth keeping: 'every night of his life' is specific, and CHANGES.md says the ice cream sets up the forgetting later. It is fine once rows 1 and 2 drop theirs. [elsewhere: 'every night of his life' nowhere else; 'the way she had' at 742 and 752 (Ch 9), about a different woman, 150 lines back.]",
+    "fine/fine: A habit that matters, set up for after her stroke (CHANGES.md: \"the ice cream, and the forgetting\"). With row 2's tail changed, it is the scene's second \"the way\", which is fine. [elsewhere: \"every night of\" none found; \"the way she had\" 742, 1317, 3968; ice cream again only at 2443 (different use)]"
+   ]
+  },
+  "6": {
+   "flags": 0,
+   "notes": [
+    "fine/fine: Looking over her glasses is the mother's own gesture, it holds the month of patience, and it is what sends him out. If one look in this run changes, it should be Trent's (row 8), not this one. [elsewhere: 2905 'Marta looked at him over her welding hood for a long second and said nothing'; 'looked at him' 38 in the book]",
+    "fine/fine: The look over her glasses is her own gesture, used once in the whole book, and it says 'time's up' before she does. It reads cleaner once 906 stops saying 'looked' twice four lines above. [elsewhere: 'over her glasses' nowhere else in v6. 'looked at him' in Ch 0 to 10: 219, 273, 445, 665, 728. Ch 11 has 10 'looked' in 2,383 words, denser than every chapter from 0 to 10 except Ch 8 (14 in 2,652).]",
+    "fine/fine: \"Over her glasses\" is a specific gesture used once in the book. It carries her impatience and sends him off to Stockton. [elsewhere: \"over her glasses\" none found elsewhere; 2905 \"Marta looked at him over her welding hood\" (similar, far off); \"looked at him\" nearby 917, 973]"
+   ]
+  },
+  "7": {
+   "flags": 0,
+   "notes": [
+    "fine/fine: This is not the silence beat. It says what his videos left out, and it pairs with 'didn't do the list'. [elsewhere: 955 'Gus glanced over and didn't say anything.' (the chapter's other, used as a silence beat); 'didn't say anything' 20 in the book]",
+    "fine/fine: This isn't the silence habit. 'Didn't say anything scary' is what he left out of the videos, and it pairs with 'didn't do the list'. The same three words come back for Gus at 955 in a different sense, 43 lines later, which is too mild to snag. [elsewhere: 'didn't say anything' at 551 (Ch 7), 832 (Ch 10), 955 (Ch 11).]",
+    "fine/fine: This isn't a silence beat. It says what the videos left out, plainly. [elsewhere: \"didn't say anything\" as a silence beat at 832, 955, 1174 (20 in the book)]"
+   ]
+  },
+  "8": {
+   "flags": 1,
+   "notes": [
+    "flag/flag: This is the fifth 'looked' in about fifteen lines (903, 906 twice, 910). And 445 already has someone look at him 'like the question didn't parse', which is the same beat. Change the verb so the face stalls: 'Trent blinked at him like he'd answered in Portuguese.' [elsewhere: 445 'She looked at him like the question didn't parse.'; 3559 'not one of them looked at him like he was crazy'; 903, 906, 910 in this scene; 'blinked at' only at 1855 'Elijah blinked at her.']",
+    "fine/fine: The Portuguese line is a quip that lands, and Trent's blank reaction to Elijah's plain answer is the point of the exchange. Ch 6 and Ch 13 use the same move, someone looking at Elijah as if he made no sense, and of the three this is the one to keep. [elsewhere: 445 (Ch 6) 'She looked at him like the question didn't parse.'; 1053 (Ch 13) 'She looked at him as if he had said something a little beside the point.'; 910, seven lines up, 'looked at him over her glasses'.]",
+    "fine/fine: Fresh and funny: Trent's blank look shown as a language barrier. A plain comparison that does its job. [elsewhere: 445 \"She looked at him like the question didn't parse\" (same shape, a published chapter, about 470 lines back); 3559]"
+   ]
+  },
+  "9": {
+   "flags": 1,
+   "notes": [
+    "fine/fine: It sets up the price Gus names at 931 and 'the arithmetic on two of them' at 932. Plain, and needed. [elsewhere: 932 'Elijah did the arithmetic on two of them and kept it to himself.'; 'didn't know what' 7 in the book (173, 627, 826, 1351, 2604)]",
+    "fine/flag: Chapter 10 just ran two sentences starting 'He didn't know' (845, 869), and this chapter ends on 'He didn't exactly know why' (993), so a third one here gets felt. 'Elijah had no idea what one of those was worth' keeps the setup for Gus's price and 'did the arithmetic' at 931 to 932. [elsewhere: 845 (Ch 10) 'He didn't know where that had come from.'; 869 (Ch 10) 'He didn't know why he listened...'; 993 (Ch 11) 'He didn't exactly know why.'; 8 'he didn't know' in Ch 0 to 10 (67, 112, 149, 173, 252, 627, 845, 869).]",
+    "fine/fine: Keep this clause. It sets up 932, \"Elijah did the arithmetic on two of them and kept it to himself.\" The trouble is in the sentences after it (rows 10 and 11). [elsewhere: \"Elijah didn't know what\" none found; \"didn't know\" 36 times in the book]"
+   ]
+  },
+  "10": {
+   "flags": 2,
+   "notes": [
+    "fine/fine: This is not narration glue. It answers row 9 with a broke man's math, wry and plain. Keep this pair and fix the mirror that follows it (row 11), so the paragraph doesn't bounce back and forth twice. [elsewhere: 'He knew it was' at 1860, 2863, 3138; 'He knew' 60 in the book]",
+    "flag/flag: Together with row 9 this is a didn't-know/knew pair, and row 11 then adds a wasn't/was pair: two mirrors in three sentences. 'He knew' is the narration glue the guide names (19 times in Ch 0 to 10), so join it to row 9: 'Elijah had no idea what one of those was worth, but it was more than he had.' [elsewhere: 'he knew' / 'Elijah knew' in Ch 0 to 10 at 74 (twice), 149, 171, 173, 192, 246, 339, 416 (twice), 472, 510, 586, 589, 601, 631, 678, 705; next at 1040 (Ch 13).]",
+    "flag/flag: \"He knew\" right after \"didn't know\" makes a ping-pong, and it is Claude's narration glue (edit 66 says the wording is Claude's). Fold it in: \"Elijah didn't know what one of those was worth, only that it was more than he had.\" [elsewhere: \"He knew\" 60 times in the book, nearby 1161, 1295; \"more than he had\" again at 1000 (Ch 12, gas money)]"
+   ]
+  },
+  "11": {
+   "flags": 3,
+   "notes": [
+    "flag/flag: This is the guide's mirrored contrast, in Claude's wording (edit 66: the facts are CT's, the wording is Claude's), and it is the paragraph's second back-and-forth in a row. Keep CT's 'insurance policy' and the floor going out: 'Two robot arms would be an insurance policy, something to stand on if the floor went out.' The 'would be' also hints at Chapter 15, where the policy doesn't pay out. [elsewhere: 149 'it wasn't a client. It was the tide.'; 192 'It wasn't from work. It was from the back of the bus'; 342 'wasn't careers anymore. It was watts and silicon' (all in published chapters, so the reader has met this shape three times by here); 'insurance policy' only here]",
+    "flag/flag: This is the mirrored contrast the guide keeps out. The wording is Claude's (edit 66), 'insurance policy' is CT's word, and the shape matches Ch 0's 'it wasn't a client. It was the tide.' Cut 'It wasn't a salary.' and start with the arms: 'Two of them would be an insurance policy, something to stand on if the floor went out.' Keep the floor going out; that is the physics in the line. [elsewhere: 149 (Ch 0) 'it wasn't a client. It was the tide.'; 192 (Ch 1) 'It wasn't from work. It was from the back of the bus'; 342 (Ch 3) 'wasn't careers anymore. It was watts'; after it: 1026 (Ch 12) 'He wasn't angry. He was...', 1071 and 1076 (Ch 13).]",
+    "flag/flag: This is Claude's mirrored contrast (edit 66), stacked on the knew/didn't-know pair, and Chapters 12 and 13 have more of the same shape at 1026 and 1071. Keep CT's \"insurance policy\" and the floor image and drop the mirror: \"The pair of them would be his insurance policy, something to stand on if the floor went out.\" (Ch 12 at 998 still makes it clear he isn't on the payroll.) [elsewhere: Same mirrored shape at 192, 384, 1026, 1071, 1415, 2206, 3042, 4014]"
+   ]
+  },
+  "12": {
+   "flags": 3,
+   "notes": [
+    "flag/flag: One line holds two habits. It has the same shape as 903 'He looked at that one for a whole minute' in this chapter, and 'They rode a while' (971) is in the same scene. Let his eye do the remembering: 'Elijah's eyes kept going back to the thermos.' That shows a half memory tugging at him, where 'for a while' only measures time. [elsewhere: 903 'He looked at that one for a whole minute.'; 971 'They rode a while.'; 998 'The guy looked at his sandwich a while.' (next page); 1596 Lou 'looked at the field for a while', 2471 Frank 'looked at the chart for a while', 3891 Lou 'looked at the kale for a while'; 'kept going back' appears nowhere in the book]",
+    "flag/flag: This repeats 903's 'He looked at that one for a whole minute' from 33 lines up, and Ch 12 opens with 'looked at his sandwich a while' (998). The same scene also has 'They rode a while' (971) and 'Elijah looked at him' (973). Let the thing act: 'The thermos kept catching Elijah's eye.' The recognition tugs at him before he places it, then 'Wait.' [elsewhere: 903 (Ch 11) 'looked at that one for a whole minute'; 719 (Ch 9) 'looked at it a while'; 971 (Ch 11) 'They rode a while.'; 998 (Ch 12) 'looked at his sandwich a while'; 'caught Elijah's eye' only far later (2665, 3229).]",
+    "flag/flag: This is the third \"looked at [a thing] for a stretch\" in about 100 lines, and it misses the worn letters the line before puts right there, which can do the recognizing. Change to: \"Elijah read what was left of the letters.\" [elsewhere: 903 \"He looked at that one for a whole minute\"; 998 \"The guy looked at his sandwich a while\"; 1596, 2471, 3891 (\"looked at the field / the chart / the kale for a while\")]"
+   ]
+  },
+  "13": {
+   "flags": 1,
+   "notes": [
+    "fine/fine: This is the storyteller turning to the reader, which is CT's own habit, and it is true of a cab. 'The way you do' appears only three times in the book, far apart. [elsewhere: 452 'the way you do with someone who's moving to a country'; 3552 'the way you do stepping off a curb in the dark'; 928 'the way Elijah's mother looked at a pie' earlier in this scene]",
+    "flag/flag: 'The way you ...' is the book's most used comparison, nine times in Ch 0 to 9, including 'the way you do with someone...' at 452, and the pie at 928 is already this scene's 'the way' (the habit sheet missed it). Try 'The rest came out in pieces, a mile at a time.' The story arrives with the road, and the sentence starts with the thing instead of Elijah. [elsewhere: 'the way you' at 121, 128, 179, 183, 239, 399, 452, 586, 713; 'the way you do' exactly at 452 (Ch 6); 928 in this scene; 'a mile at a time' nowhere in the book.]",
+    "fine/fine: The storyteller turning to the reader, which is CT's own mode. \"The way you do\" appears only three times in the book. [elsewhere: 452 \"the way you do with someone who's moving to a country\"; 3552 \"the way you do stepping off a curb in the dark\"]"
+   ]
+  },
+  "14": {
+   "flags": 2,
+   "notes": [
+    "fine/flag: In the scene it does a job: Gus lets Elijah sit with the question. It comes right after 'didn't have the end of it', and it is one of 20 'didn't say anything' in the book. Give Gus a verb that does that work: 'Gus glanced over and left the question where it was.' [elsewhere: 551, 832, 1174, 1406, 2274, 2675, 3206, 3928, 4334 among 20 in the book; 912 in this chapter, in a different sense; 'where it was' only at 338, in another sense]",
+    "fine/fine: The point is that Gus lets the question go unanswered, and the plain line shows it. There are only two 'didn't say anything' in Ch 0 to 10, the nearest 120 lines back, so there's no fatigue; 'let it sit' would be the obvious swap, but Ch 9 already uses it (756). [elsewhere: 551 (Ch 7) 'David didn't say anything to that.'; 832 (Ch 10) 'he didn't say anything for a bit'; 912 (Ch 11) in another sense; 'let it sit' at 756 (Ch 9).]",
+    "fine/flag: It's the only one in the scene, but \"didn't say anything\" is used 20 times in the book, with 832 and 1174 on either side. Gus choosing not to press is the kind man's move. \"Gus glanced over and let it ride.\" puts that choice in a driver's idiom and leaves the unanswered question riding along in the cab. [elsewhere: 832, 1174, 1406, 1794, 1854, 2274 and others (20 in the book); \"said nothing\" 4]"
+   ]
+  },
+  "15": {
+   "flags": 0,
+   "notes": [
+    "fine/fine: It is the only nod in the chapter, and 'like they were neighbors' carries meaning: Gus knows these people, as his next line proves. [elsewhere: 420 'Ray nodded like that was fair'; 'nodded' 29 in the book]",
+    "fine/fine: This one already works the way the kitchen example does: the nod tells you the famous names are just people down the road to Gus, and his next line proves it. 'Nodded like' appears only once before, 540 lines back. [elsewhere: 420 (Ch 5) 'Ray nodded like that was fair'; nods and shrugs in Ch 0 to 10: 276, 420, 537, 621, 853, 864; next at 1058 (Ch 13).]",
+    "fine/fine: The comparison carries meaning: Gus knows these people the way you know your neighbors, and 962 pays it off with Roth's grandmother. It's the only nod in the chapter. [elsewhere: 420 \"Ray nodded like that was fair\"; \"nodded\" 29 times in the book, nearby 1058, 1102]"
+   ]
+  },
+  "16": {
+   "flags": 0,
+   "notes": [
+    "fine/fine: It is the plain beat that Gus's 'I'm serious' answers, and the short paragraph gives the pause. The row says 'edit 201', but that edit is in Chapter 22 (the same sentence is at 2184), so this line is probably base text. [elsewhere: 2184 'Tyler was standing at the back, by the door. Elijah looked at him.'; 3901 'Lou waited until Elijah looked at him.'; 964 'He looked over.' (Gus, same scene)]",
+    "fine/fine: The look is the pause that makes Gus say 'I'm serious,' and with 936 changed it is the scene's only stare. The line is in the base manuscript (FINAL-StS-Manuscript.md line 2216), not edit 201, and a bare 'X looked at him.' appears only twice in Ch 0 to 10. [elsewhere: 273 (Ch 2) 'Devendra looked at him.'; 665 (Ch 8) 'She looked at him.'; Ch 11: 910, 917.]",
+    "fine/fine: A bare, deadpan look is right before \"I'm serious,\" which answers it, and it is Elijah's only look at Gus in the scene. The \"edit 201\" source tag looks like a mismatch with the identical sentence in Ch 22 at 2184. [elsewhere: 2184 \"Elijah looked at him.\"; 3901 \"Lou waited until Elijah looked at him\"; \"looked at him\" 38 times in the book]"
+   ]
+  }
+ },
+ "flagged": [
+  2,
+  10,
+  11,
+  12,
+  14
+ ],
+ "byRow": {
+  "2": {
+   "A": {
+    "n": 2,
+    "original": "the whole kitchen came up a notch, the way it always had.",
+    "replacement": "the whole kitchen came up a notch.",
+    "why": "The kitchen coming up a notch already does the work (her smile turns the room up like a dial), and cutting the tail removes the paragraph's second \"the way\" and an \"always\" that \"since he was six\" and \"every night of his life\" already say."
+   },
+   "B": {
+    "n": 2,
+    "original": "the whole kitchen came up a notch, the way it always had.",
+    "replacement": "the whole kitchen came up a notch.",
+    "why": "The kitchen coming up a notch already does the work, and dropping the tail takes out the second \"the way\" in the paragraph and leaves the history to \"since he was six\" and \"every night of his life\"."
+   },
+   "C": {
+    "n": 2,
+    "original": "came up a notch, the way it always had.",
+    "replacement": "came up a notch, like it always did.",
+    "why": "Her smile still turns the kitchen up like a dial, and saying it the way you'd say it about your own mom drops the second 'the way' in the paragraph and the exact phrase that comes back at line 1224."
+   }
+  },
+  "10": {
+   "A": {
+    "n": 10,
+    "original": "Elijah didn't know what one of those was worth. He knew it was more than he had.",
+    "replacement": "Elijah didn't know what one of those was worth, only that it was more than he had.",
+    "why": "Joining the two sentences takes out the \"He knew\" narration glue and the didn't-know/knew back-and-forth, and keeps the broke man's wry math (\"more than he had\" also turns up at 1000 in Ch 12, but that was already the case)."
+   },
+   "B": {
+    "n": 10,
+    "original": "Elijah didn't know what one of those was worth. He knew it was more than he had.",
+    "replacement": "Elijah didn't know what one of those was worth, only that it was more than he had.",
+    "why": "Folding the two sentences together keeps the broke man's math and drops the \"He knew\" glue that bounced off \"didn't know\"; \"only that\" is nowhere else in the book."
+   },
+   "C": {
+    "n": 10,
+    "original": "worth. He knew it was more than he had.",
+    "replacement": "worth, but it had to be more than he had.",
+    "why": "'He knew' is Claude's narration glue, and it bounces off the 'didn't know' right before it; folding the two together gives a broke man's guess in plain words."
+   }
+  },
+  "11": {
+   "A": {
+    "n": 11,
+    "original": "It wasn't a salary. It was an insurance policy",
+    "replacement": "The two spares would be his insurance policy",
+    "why": "This drops the mirrored contrast (the wording is Claude's) and keeps CT's \"insurance policy\" and the floor going out; \"spares\" is Trent's word from the line above, it avoids a third \"two of them\" (932, 997), and \"would be\" leaves room for Chapter 15, where the policy doesn't pay out."
+   },
+   "B": {
+    "n": 11,
+    "original": "It wasn't a salary. It was an insurance policy, something to stand on if the floor went out.",
+    "replacement": "The two spares would be his insurance policy, something to stand on if the floor went out.",
+    "why": "This drops the mirrored contrast and keeps CT's \"his insurance policy\" and the floor going out; \"the two spares\" picks up Trent's own words and stays off \"two of them\", which already comes at 932 and 998."
+   },
+   "C": {
+    "n": 11,
+    "original": "It wasn't a salary. It was an insurance policy",
+    "replacement": "The two spares would be his insurance policy",
+    "why": "This drops the mirrored 'wasn't X, was Y' but keeps CT's 'insurance policy' and the floor going out, and 'spares' picks up Trent's word and is what you keep around for an emergency."
+   }
+  },
+  "12": {
+   "A": {
+    "n": 12,
+    "original": "Elijah looked at the thermos for a while.",
+    "replacement": "Elijah's eyes kept going back to the thermos.",
+    "why": "His eye being pulled back again and again shows a half memory tugging at him before the \"Wait,\" where \"looked at ... for a while\" only measured time and echoed 903's \"looked at that one for a whole minute\" (\"kept going back\" appears nowhere else in the book)."
+   },
+   "B": {
+    "n": 12,
+    "original": "Elijah looked at the thermos for a while.",
+    "replacement": "Elijah read what was left of the name.",
+    "why": "Reading the worn-off letters is what makes him place it, so the action covers the time \"for a while\" was measuring, and it avoids a repeat of 903's \"looked at that one for a whole minute\" (I used \"name\" so \"letters\" doesn't come twice in a row)."
+   },
+   "C": {
+    "n": 12,
+    "original": "Elijah looked at the thermos for a while.",
+    "replacement": "Something about that thermos kept nagging at Elijah.",
+    "why": "It repeats line 903's 'looked at that one for a whole minute' from just up the page, and here the thermos does the work, tugging at a half memory until he gets to 'Wait.'"
+   }
+  },
+  "14": {
+   "A": {
+    "n": 14,
+    "original": "Gus glanced over and didn't say anything.",
+    "replacement": "Gus glanced over and let it ride.",
+    "why": "Gus choosing not to press his point is the kind man's move, and a plain driver's idiom gives it a verb, with the unanswered question riding along in the cab, in place of one of the book's 20 \"didn't say anything\" (\"let it ride\" appears nowhere else)."
+   },
+   "B": {
+    "n": 14,
+    "original": "Gus glanced over and didn't say anything.",
+    "replacement": "Gus glanced over and let him chew on it.",
+    "why": "It's the same kind choice not to push, said as a plain spoken idiom that shows Elijah working the question over, and \"chew on\" appears nowhere else in the book."
+   },
+   "C": {
+    "n": 14,
+    "original": "Gus glanced over and didn't say anything.",
+    "replacement": "Gus glanced over and let it ride.",
+    "why": "'Didn't say anything' is used 20 times in the book, and a driver's idiom shows Gus choosing not to press, with the unanswered question riding along in the cab (and a quiet nod to his money that keeps growing)."
+   }
+  }
+ },
+ "picks": [
+  {
+   "picks": [
+    {
+     "n": 2,
+     "pick": "C",
+     "reason": "The repetition is real. Line 906 has two \"the way\" in one paragraph (the melon, then \"the way it always had\"), line 909 has a third, and \"the way it always had\" comes back word for word at line 1224. C fixes all of that. It keeps what the tail says, that her smile has always turned the room up, and says it the way a son talks about his mother. It changes the fewest words and keeps the meaning, which is the middle path. Her smile still does the work: the kitchen comes up a notch.",
+     "problem_with_others": "A and B make the same cut and only explain it differently. Dropping the tail loses the note that her smile has always done this. \"Since he was six\" is about her standard and \"every night of his life\" is about the ice cream, so neither carries it. That makes the line shorter by losing meaning, when a plain swap fixes the repeat."
+    },
+    {
+     "n": 10,
+     "pick": "A",
+     "reason": "The wording is Claude's (edit 66), and \"He knew\" is the narration glue that guide section 9 keeps out. Here it also makes a didn't-know/knew pair that mirrors itself. Joining the two sentences with \"only that\" is plain speech and keeps the broke man's math. It also reads better before the next sentence once row 11 changes. The reason is accurate, and it honestly flags that \"more than he had\" comes back at line 1000 in Chapter 12.",
+     "problem_with_others": "B gives the same wording with an accurate reason. A is picked only because it tells CT about the nearby repeat of \"more than he had\" at line 1000. C's \"but it had to be more than he had\" turns the fact into a guess and puts \"had to be\" next to \"he had\", which is clunky to say out loud."
+    },
+    {
+     "n": 11,
+     "pick": "B",
+     "reason": "\"It wasn't a salary. It was an insurance policy\" is the mirrored contrast CT has already rejected (\"We've already established that we can do better than this\"), and the wording is Claude's. \"Insurance policy\" is CT's own idea (edit 66: \"that's where his insurance policy is\"). The new line keeps CT's \"his insurance policy\" and the floor going out, and \"the two spares\" picks up Trent's \"two spare robot arms\" from the line above. \"Would be\" is still true when the policy fails to pay out in Chapter 15. Chapter 12 already covers the no-salary point (\"getting paid in arms\"), so nothing is lost. B's reason is accurate: \"two of them\" is at line 932 and \"Two of them, Friday\" is at line 998.",
+     "problem_with_others": "A and C give the same wording, so they lose only on their reasons. A puts the second \"two of them\" at line 997, but it is at line 998 (997 is \"He worked at the cannery for three weeks on Trent's promise\"). C's reason is fine but thinner, and B quotes CT's words exactly."
+    },
+    {
+     "n": 12,
+     "pick": "B",
+     "reason": "The original has two habits in one sentence (\"looked at\" and \"for a while\"). It also echoes line 903's \"He looked at that one for a whole minute\" a page earlier, and the chapter already has \"a while\" at 907 and 971. B swaps the time count for the action that makes him place it. The line before says the thermos read IRON DERBY \"with most of the letters worn off\", so reading what is left of the name sets up \"Wait\" and Gus grinning at the road. It is plain and concrete, and nothing happens that did not happen before.",
+     "problem_with_others": "A: \"his eyes kept going back\" is a stock line with his eyes as the subject, and it shows nothing new about the thermos. C: \"Something about that thermos kept nagging at Elijah\" is vague (\"something about\"). It also names the feeling instead of showing it and reads like a cliché, so the thermos acts only on paper."
+    },
+    {
+     "n": 14,
+     "pick": "A",
+     "reason": "\"Didn't say anything\" is the book's most-used silence beat (20 times, measured), and another one comes at line 832, about a page back. \"Let it ride\" is plain spoken idiom, and the verb does the kitchen-example work: the unanswered \"Who's it work for?\" rides along in the cab with them. That fits the next line, where Elijah moves on to \"So what do you do with it?\" It is also the move of the kind man who doesn't press, which Gus repeats when he takes the no about the show without pushing. The phrase appears nowhere else in the book.",
+     "problem_with_others": "C gives the same wording, but its reason leans on a hidden money meaning (letting a bet ride), the kind of cleverness CT unpacks. Both A and C call it a driver's idiom, which it isn't quite, though the phrase works on the page. B's \"let him chew on it\" is plain too, but it has Elijah working the question over right before he asks Gus something else, so it fits the next line less well."
+    }
+   ]
+  },
+  {
+   "picks": [
+    {
+     "n": 2,
+     "pick": "A",
+     "reason": "The cut is better than the original. Line 906 already has \"the way she looked over a melon\", 909 has \"the way she had every night of his life\" two lines later, 928 has \"the way Elijah's mother looked at a pie\", and \"the way it always had\" comes back word for word at 1224 (\"It went through him the way it always had, his whole life\"). The sentence now ends on its own image, her smile turning the kitchen up like a dial, and the very next sentence (\"since he was six\") carries the history. The source is base, so these aren't CT's words. Nothing factual changes, and the line isn't any cleverer, only shorter by a redundant tail. A and B give the same text; A's reason is accurate.",
+     "problem_with_others": "B gives the same text as A, so either would do. C keeps a habitual tail (\"like it always did\") right before the paragraph's history and two lines ahead of 909's \"every night of his life\", so the paragraph still stacks two \"it always happened\" endings. It also keeps the \"always\" that \"since he was six\" already covers. It's better than the original but not as clean as the cut."
+    },
+    {
+     "n": 10,
+     "pick": "C",
+     "reason": "Guide section 9 names \"He knew\" as narration glue Claude falls into, and here it bounces off the \"didn't know\" just before it, so the line should change. C reads like a broke man guessing out loud (\"it had to be more than he had\") and keeps the wry math in plain spoken words. \"had to be more\" is nowhere else in the book (\"had to be\" turns up only at 3049 and 3728, in other senses), and no facts change.",
+     "problem_with_others": "A and B give the same text: \"didn't know X, only that Y\" is a stock written construction, common in AI prose, and it reads more literary than CT's spoken manner. It also keeps the know/didn't-know framing in a softer form. Neither is wrong, but C sounds more like a person talking."
+    },
+    {
+     "n": 11,
+     "pick": "B",
+     "reason": "The original \"It wasn't a salary. It was an insurance policy\" is Claude's wording (EDITS.md item 66: CT's facts, all wording Claude's), and it is the mirrored contrast CT has called out as reading like AI. The new sentence keeps CT's own idea (he dictated \"that's where his insurance policy is\") and the floor going out. \"The two spares\" picks up Trent's \"two spare robot arms\" from 919. \"would be\" stays true both to Chapter 15, where the policy fails to pay out, and to Chapters 34 to 37, where the arms become the emergency fund. Ch 12's \"getting paid in arms\" (998) still makes the no-wages point. All three candidates give the same text. B's reason is the accurate one: CT's dictation does say \"his insurance policy\", and \"Two of them, Friday.\" is at 998.",
+     "problem_with_others": "A and C give the same text as B. A's reason has a wrong line number (it cites 997; \"Two of them, Friday.\" is at 998). C's reason is fine but doesn't say what it keeps clear of. Neither has a problem in the text itself."
+    },
+    {
+     "n": 12,
+     "pick": "B",
+     "reason": "\"looked\" is everywhere in this chapter (903, 906 twice, 910, 917, 928 twice, 964, 973), and \"looked at X for a while\" is a book-wide habit (\"for a while\" 23 times; \"looked at Elijah for a while\" 1366, \"looked at the field for a while\" 1596, \"studied the renders for a while\" 1890). B gives Elijah a real action that comes out of the sentence before it, the thermos \"with most of the letters worn off\". Reading the leftover letters is what makes him place the show, so cause leads to effect before \"Wait.\" It's a concrete thing only someone in that cab would do, it fills the time \"for a while\" used to measure, and Gus grinning at the road still fits. \"read what\" appears elsewhere only in other senses, and \"what was left of\" appears once, 300 lines later (1214).",
+     "problem_with_others": "A (\"Elijah's eyes kept going back to the thermos\") is plain and acceptable, but it's a stock fiction move that would fit any object, and it doesn't use the worn letters. C (\"Something about that thermos kept nagging at Elijah\") tells the feeling instead of showing it. \"nagging at\" is a cliche, and \"something about\" repeats a construction already used five times in the book (1305, 1489, 1636, 2059, 2896). The \"thing acts\" in C is vague, not physical."
+    },
+    {
+     "n": 14,
+     "pick": "A",
+     "reason": "\"didn't say anything\" appears 20 times in the book and already once in this chapter (912). \"let it ride\" means the same thing (Gus doesn't press his point) but makes it a choice, which fits the kind man. It also fits what comes next, where the subject changes (\"So what do you do with it?\"). It is a plain spoken idiom, appears nowhere else in the book, and changes no facts. A and C give the same text. A's reason sticks to meaning and doesn't sell a hidden pun.",
+     "problem_with_others": "B (\"let him chew on it\") suggests Elijah keeps working the question, but the next line drops it for a new subject. It also adds another \"let him\" to the chapter (921 \"So they let him carry stuff\"; 15 in the book). C gives the same text as A, but its reason pitches \"a quiet nod to his money that keeps growing\", a hidden pun of the kind guide section 6 warns against. The text doesn't depend on that, so the text is fine, but the reason isn't."
+    }
+   ]
+  },
+  {
+   "picks": [
+    {
+     "n": 2,
+     "pick": "C",
+     "reason": "Paragraph 906 already has \"the way she looked over a melon\", and \"the way it always had\" comes back word for word at 1224 (\"It went through him the way it always had\"). Line 909's ice cream \"the way\" makes three in two paragraphs, so a reader feels the habit. \"like it always did\" keeps the full meaning, that her smile has always lifted the room after the critique. It also keeps the line's length and rhythm and sounds like a son talking about his mom (CT's plain spoken register). \"like it always did\" appears nowhere else in the book.",
+     "problem_with_others": "A and B are the same cut. It reads cleanly, but it drops the \"always\", the sense that critique followed by the smile is her lifelong pattern. \"since he was six\" covers the standard, not the smile. It also tightens the line, where C changes the habit and nothing else. The original keeps the doubled \"the way\" in one paragraph and the exact phrase repeated at 1224."
+    },
+    {
+     "n": 10,
+     "pick": "B",
+     "reason": "Edit 66 says the wording is Claude's, and \"He knew\" is the narration glue the guide flags (section 9). Joined into one sentence, the didn't-know/knew bounce goes away and the broke man's wry math stays intact. It also reads smoothly into row 11's new line (\"...only that it was more than he had. The two spares would be his insurance policy...\"). I checked that \"only that\" appears nowhere else in the book.",
+     "problem_with_others": "A has the same text, and its note is also correct (\"more than he had\" is at 1000). I picked B for its cleaner reasoning; the text is identical. C turns a certainty into a guess (\"had to be\"), which changes the meaning slightly, and it stacks \"had to be more than he had\". The original keeps the mirrored didn't-know/knew pair and the flagged \"He knew\"."
+    },
+    {
+     "n": 11,
+     "pick": "B",
+     "reason": "Edit 66 shows \"It wasn't a salary. It was an insurance policy\" is Claude's wording, and it is the mirrored contrast CT has rejected (section 10). CT's own words in edit 66 were \"that's where his insurance policy is\", and his edit 150 note says \"two spares\". So the new line is built from his words plus Trent's \"spare\". \"would be\" fits a promise he hasn't earned yet, and it fits Chapter 15, where the policy fails to pay out. The payment-in-kind idea that \"wasn't a salary\" carried comes back in Ch 12 (\"getting paid in arms\"). I checked the line numbers: \"two of them\" is at 932 and 998.",
+     "problem_with_others": "A and C give the same wording. A gives the second \"two of them\" as 997, but it is at 998. C's reasoning is fine but less complete. The original is Claude's mirrored \"wasn't X. was Y\" contrast, which the guide says to keep out of Claude's wording."
+    },
+    {
+     "n": 12,
+     "pick": "A",
+     "reason": "\"looked at the thermos for a while\" repeats 903's \"He looked at that one for a whole minute\" a page up, and \"for a while\" already came at 907. With \"Elijah's eyes kept going back to the thermos\", the thermos acts as a pull on him (CT's kitchen point, in plain words). It holds the same stretch of time and half memory before \"Wait\". It is also something Gus can see, which sets up \"Gus grinned at the road.\" \"kept going back\" appears nowhere else in the book.",
+     "problem_with_others": "B (\"read what was left of the name\") is terser and a little writerly. It cuts the slow dawning, and it has him reading a name the narrator has just told us in full. C (\"Something about that thermos kept nagging at Elijah\") is vague and internal, and it would be a third \"something about ... Elijah\" construction (1489, 2896). Gus also can't see a nag, so his grin has less to answer. The original repeats the 903 shape and the chapter's \"for a while\"."
+    },
+    {
+     "n": 14,
+     "pick": "C",
+     "reason": "\"didn't say anything\" appears 20 times in the book, so a reader will feel it as the go-to silence beat. \"let it ride\" gives Gus a verb with intent: the kind man chooses not to press. The unanswered question rides along in the cab, and Elijah changes the subject with \"So what do you do with it?\". The idiom's gambling sense, leaving winnings on the table, quietly echoes the endowment he has just described. That is the layered subtext CT asked for, in a plain idiom. I checked that \"let it ride\" appears nowhere else.",
+     "problem_with_others": "A has the same text. Its reasoning calls it a \"driver's idiom\" and misses the money echo that makes it work; C at least names that echo. B (\"let him chew on it\") moves the focus off Gus's choice and onto Elijah, and reads slightly cuter. The original works but is one of 20 uses of the stock beat."
+    }
+   ]
+  }
+ ]
+}

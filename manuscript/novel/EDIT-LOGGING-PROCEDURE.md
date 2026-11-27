@@ -258,6 +258,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 - CT, 27 Nov: the four questions the plants sheet called "never" stay open. Every other open continuity item has a
   status in `CHECKPOINT-2026-11-27-seventeenth.md`.
 - Drive was not updated: the edit list mirror and the Google Sheet stop at edit 295. Neither Doc was changed.
+- **The habits pass** (CT, 27 Nov) is set up and its first batch has not been run: `HABITS-PASS.md`. Chapter 11 was a
+  trial; nothing from it is logged.
 
 ## Where things stand (end of the eleventh logging chat, 27 Nov)
 - **The book is the Google Doc "StS v8 draft (Nov 26)"** (CURRENT in the bridge map): the v5 Doc with its suggestions

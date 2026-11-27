@@ -523,6 +523,27 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   woman and Grace are kind to him anyway, and that is left as it is. `smell-table-2026-11-27.md` has every smell,
   whose words it is, and the places still open.
 
+## 15f. Learned 27 November (seventeenth chat: the shouse, and the habits pass)
+
+- **A thing left unsaid can be the point.** CT, on why Lou had Grace write to Elijah: "I want to leave that ambiguous on
+  purpose. I don't want to close that out." And: "reason is implied, isn't it?" Before calling something unanswered,
+  ask whether the page implies it. Four questions the plants sheet called "never" stay open on his word.
+- **An explaining line is not a fault by itself.** Shown six lines of narration that explain a moment, he kept five. A
+  line stays when it is "explaining something that's maybe a little bit confusing" (the twenty-quart pot) or when it
+  "helps explain the intensity of the moment" (the fire). Flag these only as a question, never cut them on taste.
+- **"The way" can change to "how"** (CT): "how it usually did". His softener rides along: "always had" became "usually
+  did".
+- **When he is "not convinced by your first attempt", bring kinds of fix, not one more fix.** He asked for "other ways
+  to add variety". The moves are in `habits-moves.json`; `HABITS-PASS.md` says how they are dealt.
+- **Follow the order he gives.** He said Chapter 11 through the rest of the book; Claude planned to start at the densest
+  chapter. CT: "Why are you starting with chapter 18 when I just told you to start with chapter 11?" **[C]**
+- **Code before readers, again.** The Chapter 11 trial sent nine readers at 16 lines and spent about 1.3 million tokens
+  to change four. CT: "knocking out some of the repetitiveness in one fell swoop without consuming a billion fucking
+  tokens." Count first; read only the pile-ups; write the change yourself.
+- **In a scene that plants a secret, do not name the secret in the narration unless he asks.** Claude's shouse scene
+  (edit 296) names the arms before "good, bad ideas"; his sketch had only "ideas start forming in his mind". Flagged to
+  him, not ruled on. **[C]**
+
 ## 15e. Learned 27 November (sixteenth chat, the senses pass)
 
 - **A scene without a smell is not a gap.** The readers flagged 20 strong scenes with no smell or taste; on reading,

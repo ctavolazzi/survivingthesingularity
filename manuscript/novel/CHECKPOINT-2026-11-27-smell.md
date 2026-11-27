@@ -121,86 +121,100 @@ like dirt and ginger" and "He could still taste the tea" (Ch 31). Food is everyw
 ice cream, Grace's soup, the frozen yogurt, Lou's tomatoes, Rosa's conchas and tamales, the lamb of the bet, the
 free beer at the end. Whose words each one is has not been checked.
 
-## The prompt for the next chat (the taste pass)
+## The prompt for the next chat (the thirteenth)
+
+Written at the very end of the smell chat, on CT's word ("Write the continuation prompt for the next session"). It
+replaces the earlier taste-pass prompt that stood here.
 
 ```
-We're finishing my novel, Surviving the Singularity. This is the thirteenth chat: the taste pass. Spin up before you
-do anything else:
+We're finishing my novel, Surviving the Singularity. This is the thirteenth chat. Spin up before you do anything else:
 
 1. Work on branch claude/singularity-publication-build-kparqk in both repos (ctavolazzi/survivingthesingularity and
    ctavolazzi/_workbench). Push every commit there, whatever branch this chat was given; I've said yes to that. Don't
    open or watch pull requests. Another chat may be logging on the same branch: fetch it first, read the "Next edit"
    line in manuscript/novel/TODO.md before you number anything, fetch again before every commit, and merge, never
    force-push. Ignore BRIDGE.md and WORKBOARD.md on main; they're out of date.
-2. Read, in this order: manuscript/novel/REFERENCE.md (start at section 1, and read section 6), manuscript/novel/
-   CHECKPOINT-2026-11-27-smell.md, manuscript/novel/TODO.md, and all of manuscript/novel/WRITING-INSTRUCTIONS.md
-   (7a is the senses, 4a is how I work a line, 15c is the newest lessons). Then manuscript/novel/
-   smell-table-2026-11-27.md and drafts/edit-235-236-smell.md: that's how the smell pass was done, and the taste pass
-   works the same way. Then manuscript/novel/knowledge-sheet-2026-11-27.md (who knows what, and when); check it
-   before you place any line. Then STATE.md and the newest entry in sessions/LOG.md in _workbench.
+2. Read, in this order: manuscript/novel/REFERENCE.md (section 1, then section 6), manuscript/novel/
+   CHECKPOINT-2026-11-27-smell.md (its list "Everything open with CT at the very end of the chat" is the current one),
+   manuscript/novel/TODO.md, and all of manuscript/novel/WRITING-INSTRUCTIONS.md (7a is the senses, 4a is how I work
+   a line, 15c is the newest lessons, including "place it; don't audit it" and "move the people"). Then
+   manuscript/novel/knowledge-sheet-2026-11-27.md (who knows what, and when) and
+   manuscript/novel/next-version-scenes-2026-11-26.md, sections 4 to 7 (my dictation from 27 Nov, word for word).
+   Then STATE.md and the newest entry in sessions/LOG.md in _workbench.
 3. The book is the Google Doc "StS v8 draft (Nov 26)", id 1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8. Its base is the
    v5 Doc "StS v5 draft (Nov 23)", id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Read both with the Docs connector
    and save the reads to your scratchpad. Do not change either Doc, or the locked "StS v8 BACKUP (Nov 26), do not
    edit"; I haven't cleared that.
 4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 241 check rows passing (619
-   replacements), 223 rows "accepted" in v8, edits 224 to 241 "not in the Doc", and nothing PARTIAL. If you get
-   anything else, stop and tell me.
+   replacements), 223 rows "accepted" in v8, edits 224 to 241 "not in the Doc", and nothing PARTIAL. Then
+   scene_sheet.py check against manuscript/novel/scene-sheet-2026-11-27.csv: 142 scenes, nothing different. If you
+   get anything else, stop and tell me.
 
 Where we are (end of 27 Nov): v8 holds edits 1 to 223. Edits 224 to 241 are logged in GitHub only. The next edit is
-242. After this I don't really want to change or add anything: it's about refining, revising, deleting, buffing out
-the hard spots, polishing.
+242. 104,977 words in 142 scenes. In Drive: the scene sheet (13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o), the
+story checks workbook (11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8: who knows what, the calendar, the conversation
+map) and the edit list (1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY). I'd rather revise what we have than add, but
+if a scene needs adding, we can.
 
-The first job, before anything else: read the end of Chapter 25 through Chapter 27 in the built book, in order. Edits
-237 to 240 put five new scenes and a new ending for "Pondwater" there in one night and nobody has read them in place.
-Look for: who runs the route while Grace is away for the winter; any line that says she came back; whether her
-winter trip and the October festival read as two trips; and anything the knowledge sheet says a person shouldn't
-know yet. Tell me what you find before changing anything.
+The work, in this order:
 
-Then, before the taste pass, a scene I dictated and want drafted: Elijah confides in Grace about his mother, the farm
-and Melody; "Nobody talks about my man like that"; her whisper; a bang that wakes them (the little rover going haywire, which leads into the women's talk about upgrading
-in Chapter 34). My words and what the page
-gives it are in manuscript/novel/next-version-scenes-2026-11-26.md, section 7. Place it; don't audit it. Show me the
-draft before it's logged.
+1. Read the end of Chapter 25 through Chapter 27 in the built book, in order. Edits 237 to 241 put five new scenes
+   there in one night (Lou and Grace at the fence; Grace leaves for the winter; Miles Renner on the big screen; the
+   pond ending on the near kiss; the weeks after, the pillow talk and Marta in the shop) and nobody has read them in
+   place. Look for: who runs the route while Grace is away for the winter; any line that says she came back; whether
+   her winter trip and the October festival read as two trips; anything the knowledge sheet says a person shouldn't
+   know yet. Tell me what you find before changing anything.
 
-Then a sheet I asked for: what every character wants, as they go through the book. Two tabs.
-- Characters: one row per person. Where and how they are introduced (the chapter, the scene and the first line that
-  names them; a script can find those). What they want when we meet them. What they want by the end, and the scene
-  where it changes. Whether they get it. Start from manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md (its "surface want"
-  and "real want" for 28 people, checked against v5 on 24 Nov), but check every want against the built book: it was
-  written before Chapters 20 to 36 were rewritten and before edits 237 to 241.
-- Scenes: one row per scene (142), for what each person in it is after there.
-Do it in the same reading pass as layer two of the conversation map (conversations-2026-11-27.md), from a fresh read,
-with a quoted line for every want. Add it as a command in manuscript/tools/edits-v6/story_checks.py the way knowledge.py
-is built, put it in the story checks workbook in Drive as two more tabs, and end with a short list of what you found:
-a want that is set up and never paid, a person who wants nothing on the page, a change with no scene behind it. A fix
-to text already there, or flag it for me if only a scene would close it.
+2. Draft the scene I dictated where Elijah confides in Grace about his mother, the farm and Melody ("Nobody talks
+   about my man like that"; her whisper, "I wish I could help you love yourself as much as I do"). My words are in
+   next-version-scenes-2026-11-26.md, section 7. It goes in the week of Chapter 34, October 2027: the bang that wakes
+   them is the little rover going haywire, and it leads into the women's talk about upgrading in Irene's kitchen.
+   Still open: who says "If that little guy only works half the time then maybe it's time we upgraded to something
+   more heavy duty." Ask me in one short question if I haven't said. Place it as I gave it; don't audit it. Show me
+   the draft before it's logged.
 
-Then the job: the taste pass. Taste only someone who was there would know, with a verb that carries the physics, where it
-carries the feeling or tells you something about the person, not one per page. If I haven't given you my own taste
-lines, ask me for them in one short question before you propose any of yours; the smell pass worked because the two
-lines that went in were mine. Then read the whole built book and make a short taste table like the smell table: only
-the scenes with a taste on the page now, plus a few real candidates, with whose words each one is
-(whose_words.py, then the record). Cut the candidates down before you show me. Show me every line before it's logged,
-and show me again if you change it after I've said yes.
+3. One reading pass, from a fresh read of the whole book, for two sheets:
+   - Layer two of the conversation map (conversations-2026-11-27.md): for each conversation that matters, what each
+     person wants, what changes between them, and what it sets up or pays off. Start from the leads in that file
+     (first: Grace and Lou barely talk before Chapter 34, now with the fence scene added).
+   - The desires sheet I asked for. Two tabs. Characters: one row per person, with where and how they are introduced
+     (the chapter, the scene and the first line that names them; a script can find those), what they want when we
+     meet them, what they want by the end and the scene where it changes, and whether they get it. Scenes: one row
+     per scene, for what each person in it is after. Start from manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md
+     ("surface want" and "real want" for 28 people) but check every want against the built book; it was written
+     before Chapters 20 to 36 were rewritten and before tonight's edits.
+   A quoted line for every want, found by the script, the way knowledge.py works. Add both as commands in
+   manuscript/tools/edits-v6/story_checks.py, add them to the story checks workbook as more tabs, and end with a short
+   list: a want set up and never paid, a person who wants nothing on the page, a change with no scene behind it. Each
+   with a fix to text already there, or flagged for me if only a scene would close it.
+
+4. Then whatever I pick from the open list in the checkpoint (the small calendar fixes, the eighteen days as a ban,
+   the two smell drafts, the birthday, the Hinge profile, the taste pass, the money, objects and plants sheets). Don't
+   put the list to me unless I ask for it.
 
 How I want it done:
 - What I say in the chat is the job, even when a file says something different.
 - A question from me gets an answer, not an action. Answer first, short. No em dashes.
-- I dictate, you log. My words go in word for word and are marked mine; keep my phrase whole when you place it. Take
-  the dictation fillers out. Mark what you worded, and list every fact you invented.
-- No absolutes where one can't be true (15c).
-- Read the pages before you claim anything about the book, and check a doubt against the page before acting on it
-  too. Use the code (find_in_book.py, story_report.py, openers.py, whose_words.py) instead of tokens.
+- I dictate, you log. My words go in word for word and are marked mine; keep my phrase whole and keep my order of
+  events. Take the dictation fillers out. Mark what you worded, and list every fact you invented.
+- When I hand you a scene I'm pleased with, place it. If it collides with the page, say so in one line with the fix.
+- Say the time and how people got there before the image (WRITING-INSTRUCTIONS 15c, "move the people").
+- No absolutes where one can't be true.
+- Read the pages before you claim anything about the book, and check a doubt against the page before acting on it.
+  Use the code (find_in_book.py, story_report.py, openers.py, whose_words.py, knowledge.py, story_checks.py,
+  scene_sheet.py) instead of tokens.
+- Show me every line before it's logged, and show me again if you change it after I've said yes.
+- After every edit: make_v6.py, verify.py, and rebuild the sheets (scene_sheet.py check, story_checks.py calendar and
+  conversations, knowledge.py). A new scene needs a scene sheet row and a calendar date.
 - Push back on continuity errors, contradictions and anything that confuses the reader. Not on my taste or my
   decisions.
 - When I correct you, change the thing I named, keep the rest, and add the lesson to WRITING-INSTRUCTIONS.md in the
   same turn.
 - Stay on the novel. Nothing gets trashed or deleted without my yes; old copies get "OLD:" in front. Make a PDF only
   when I ask.
-- The smell table's open rows and the rest of "Open with CT" wait until I ask for them.
 - At the end: update "Where things stand" and "What is still open" in EDIT-LOGGING-PROCEDURE.md, TODO.md,
-  WRITING-INSTRUCTIONS.md, and STATE.md and sessions/LOG.md in _workbench; refresh the Drive mirror of the edit list
-  once (upload EDITS.md as text/plain); write the next checkpoint and prompt.
+  WRITING-INSTRUCTIONS.md, and STATE.md and sessions/LOG.md in _workbench; refresh the Drive copies once (the edit
+  list as text/plain, the scene sheet, the story checks); write the next checkpoint and prompt.
 
 When you're done spinning up, tell me in one line that you're ready and that the next edit is 242.
 ```

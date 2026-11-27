@@ -654,3 +654,25 @@ Then, as now: "Later that morning Marta looked at him over her welding hood ..."
 Claude's words: "Grace," he said. "We work together." (a bridge: in his dictation "did you date a coworker before?"
 answered the rule line, which is now a month later; something has to bring up work at the pond); "She moved a little
 closer"; "scrunched up one shoulder"; "His voice came down, lower and quieter"; "into the pillow"; "November".
+
+### CT's next direction (27 Nov 2026): end the pond on the near kiss. NOT logged.
+
+His words: "Because if he takes her hand, if he puts his hand on her hand, and then that scene ends with him saying, 'Is
+that what you want? For us to just be coworkers?' And then they look at each other's lips and move closer and closer.
+But we don't tell the reader what happened. Then they'll turn the page and the next scene will be something different.
+They'll be like, did they fuck? Like, what happened? The reader will be left wanting to know."
+
+What that means for the page (Claude's reading, for his yes):
+- "Pondwater" ends on: "**Is that what you want?**" ... "**For us to only be coworkers?**" and then, his: they look
+  at each other's lips and move closer and closer. Nothing after it. The next page is Chapter 27 ("The video that
+  did it was the first fire."), which is something different.
+- These lines, in the book now, tell the reader what happened and would come out of "Pondwater": "He kissed her." /
+  "A year," she said, after. "A whole year, Elijah." / "I know." / "She pulled him back down by his collar." / "In the
+  morning she was in his kitchen, wearing his shirt and drinking coffee." / "Later that morning Marta looked at him
+  over her welding hood for a long second and said nothing, which from Marta was a blessing."
+- The answer comes later, in Chapter 27, as its own short scene before the Friday dinner of 20 November (where she
+  calls him "Babe"): his "It went on like that for weeks ..." passage, "one day in November, she woke up wearing his
+  T-shirt", and the pillow talk ("Why'd you wait so long?" / his rule). So the reader who asked "did they?" learns
+  some pages on that they took the scenic route.
+- Two of the lines that come out can be kept there: "A year. A whole year, Elijah." fits the pillow talk (the kiss at
+  the pond was November 2025, exactly a year before), and Marta's look fits "later that morning".

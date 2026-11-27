@@ -1,4 +1,4 @@
-# Edit 231: the finishing pass (Ch 0 to the Appendix)
+# Edit 233: the finishing pass (Ch 0 to the Appendix)
 
 27 November 2026, eleventh logging chat. CT (26 Nov): "Send out readers, evaluate what you think is the best course of
 action. I want you to really think hard here. Process as much as is reasonable to really get this done, to finish the
@@ -11,13 +11,16 @@ and Marta; Curtis and Priya; Denny, Tyler, Wren and Reuben; Rosa, the Ochoas, Ir
 Ma, David, Devendra, Melody, Ray and Ruby; Praether, Bidwell and the machine), three followed the threads and the
 numbers. 108 raw gaps, 69 after merging, each checked on the page by a skeptic: 33 real, 36 dropped (not real, or
 already ruled on by CT). Three planners (fewest changes, the people, the reader), a judge and a critic. Every quote was
-checked against the built book. Edits 229 and 230 (CT's dictation) came out of the same plan.
+checked against the built book. Edits 231 and 232 (CT's dictation) came out of the same plan. First logged as 231; renumbered
+when another chat's edits 229 and 230 were merged from the same branch. That chat's edit 230 rewrote the Praether
+scene in Chapter 17, which settled three of the places this pass had (the lien-sale timing, "They put cans in boxes.",
+who drives the loader); three items from its fix list were added here.
 
-**What it is.** 31 places, all line fixes: a word, a phrase, a cut sentence, or one added sentence where the page had a
+**What it is.** 30 places, all line fixes: a word, a phrase, a cut sentence, or one added sentence where the page had a
 setup with no payoff. No new scenes. All the wording is Claude's except where noted. The readers found no filler scene
 to cut; the whittling CT wants starts from what feels long to him when he reads. Logged only; not in the v8 Doc.
 
-## The 31 places
+## The 30 places
 
 ### Ch 0
 
@@ -53,35 +56,11 @@ The same replay, the same missing text.
 
 ### Ch 17
 
-Book now: ""He says pay him back when you can. And he says keep it between the three of us.""
+Book now: "That evening she told him Lou would cover what he owed on the unit. / "He says pay him back when you can. And he says keep it between the three of us." / "Why?""
 
-Change to: ""He says keep it between the three of us.""
+Change to: "That evening she told him Lou would cover what he owed on the unit. / "Why?""
 
-Lou's cover was a loan that is never paid or mentioned again. It is a gift now. Lou's "Nobody up here is keeping score but you." (Ch 37) answers it, and "Why?" / "He didn't say. That's Lou." covers the money and the secret. CT's secret (plan 10.5) stands.
-
-### Ch 17
-
-Book now: "The arms came up the day before the lien sale."
-
-Change to: "The arms came up that first week."
-
-Lou's money took away the lien sale, and a flatbed from Highway 99 needs two or three days. Chapter 34's "since my first week" stays true.
-
-### Ch 17
-
-Book now: "They put cans in boxes.""
-
-Change to: "They could put cans in boxes.""
-
-On the page these arms never packed cans: they came from a plant in Fremont into the cannery that builds trucks (Ch 11), and his two were never unpacked (Ch 15). With "could" it is Elijah making them sound harmless. Praether's "I know what they put in boxes." stays.
-
-### Ch 17
-
-Book now: "He had the first crate up on the forks"
-
-Change to: "Elijah had the first crate up on the forks"
-
-"He" read as Praether, who is then on the ground behind the tire. Praether is on foot when the strap goes.
+Lou's cover was a loan that is never paid or mentioned again. It is a gift now: Lou's "Nobody up here is keeping score but you." (Ch 37) answers it, and "Why?" / "He didn't say. That's Lou." asks why he'd pay. The secrecy was said three times running (here, Lou at the barn, and Ch 18); Lou's own words at the barn (CT's, edit 230) keep it. Item 1 of the fix list in `CHECKPOINT-2026-11-26-riemann-praether.md`.
 
 ### Ch 17
 
@@ -98,6 +77,14 @@ Book now: "Lou got the two of them alone the week after that dinner."
 Change to: "Lou got Grace and Elijah alone the week after that dinner."
 
 Chapter 17 ends on Curtis and Elijah in the truck, so "the two of them" read as those two.
+
+### Ch 18
+
+Book now: ""No." / "Good. Keep it that way." / Grace wrapped her arm around Elijah."
+
+Change to: ""No." / Grace wrapped her arm around Elijah."
+
+The third time the secrecy is said, a few lines after Lou's barn talk, and "Good. Keep it that way." is already near the start of the book. Grace's "Don't worry, Lou, I won't let him do anything stupid!" now answers his question. Items 1 and 2 of the fix list in `CHECKPOINT-2026-11-26-riemann-praether.md`.
 
 ### Ch 26
 
@@ -130,6 +117,14 @@ Book now: "he'd read every line of the rover's code by hand that June"
 Change to: "he'd read every line of the boxes' code and the rover's by hand that June"
 
 The pledge says "No generated code", and the forty boxes run firmware Tyler made with Rod Code (Ch 19). The co-op signs on his word, so his word has to cover the boxes too. It also makes good on his Chapter 26 "I told Patricia I read all of it."
+
+### Ch 27
+
+Book now: "...and it was three weeks old, and he didn't know how to start. / Dinner on the Friday before Thanksgiving was just dinner."
+
+Change to: the same, with a scene break between them.
+
+The Friday after the midterms ran straight into the Friday before Thanksgiving, two weeks later, with no break. Item 3 of the fix list in `CHECKPOINT-2026-11-26-riemann-praether.md`.
 
 ### Ch 29
 
@@ -270,8 +265,6 @@ He is in six chapters and holds the arms at the end (Ch 37), and the cast list h
 ## Facts Claude invented
 
 - Lou's cover of the storage unit is a gift, not a loan (Ch 17).
-- The arms come up in his first week, not the day before the lien sale (Ch 17).
-- Elijah drives Praether's loader (Ch 17).
 - Tyler read the forty boxes' code by hand in June 2026, as well as the rover's (Ch 27).
 - Denny's daughter asked him last week what he gets paid (Ch 31).
 - The Ohio machinist comes up in June 2027 with his family (not named or counted) and his father's tools (Ch 33).

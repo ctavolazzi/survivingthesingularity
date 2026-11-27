@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 8.
+Totals: accepted: 223, not in the Doc: 10.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -97,7 +97,7 @@ Edit 57 was never used.
 | 85 | Ch 16 | accepted | That thing right there is worth something, not some app. |
 | 86 | Ch 16 | accepted | "We'll see," she said. "Swarf goes in the red bin." |
 | 87 | Ch 17 | accepted | For three days, no one really asked him anything. |
-| 88 | Ch 17 (changed by 205) | accepted | The arms came up |
+| 88 | Ch 17 (changed by 205) | accepted | gone: The arms came up that first week, the day before the lien sale. |
 | 89 | Ch 17 | accepted | He told the radio about his week. The co-op let him be. |
 | follow-ups | follow-ups | accepted | $2,011.46 |
 | 90 | Ch 17 | accepted | He looked at his plate. |
@@ -239,6 +239,8 @@ Edit 57 was never used.
 | 226 | Ch 26 | not in the Doc | Elijah didn't quite know why he didn't go for it right away. |
 | 227 | Ch 21 to 36, Pondwater | not in the Doc | a little at a time and all the time. |
 | 228 | Ch 16, 17, 33 | not in the Doc | "The artists have a valid point, don't they?" a woman said. |
-| 229 | Ch 17 | not in the Doc | "How are you liking your bed? Is it comfy enough?" |
-| 230 | Ch 31 | not in the Doc | The Sunday after the county meeting, Elijah carried pots at the gra... |
-| 231 | Ch 0 to 39, Appendix | not in the Doc | Elijah said it once to Wes |
+| 229 | Ch 27 | not in the Doc | "Guys. They just solved the Riemann hypothesis." |
+| 230 | Ch 17, 18 | not in the Doc | "Lou tells me you want to store some robot arms out in my old barn,... |
+| 231 | Ch 17 | not in the Doc | "How are you liking your bed? Is it comfy enough?" |
+| 232 | Ch 31 | not in the Doc | The Sunday after the county meeting, Elijah carried pots at the gra... |
+| 233 | Ch 0 to 39, Appendix | not in the Doc | Elijah said it once to Wes |

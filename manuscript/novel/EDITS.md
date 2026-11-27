@@ -5,8 +5,8 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 **Where the edits stand (26 Nov, end of the tenth logging chat):** edits 1 to 223 are in the book, the Google Doc "StS
 v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py`'s build (the v5 Doc with its
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
-("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 227 (tenth chat) and 228 to 231 (eleventh
-chat) are logged only, until CT clears them for the Doc. The next edit is 232.
+("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
+until CT clears them for the Doc. The next edit is 234.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3530,7 +3530,106 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      on the farm before Chapter 38; reasons in the record). Record: `manuscript/novel/drafts/edit-228-lou-comes-in.md`.
      Logged only; not in the v8 Doc yet.
 
-229. **Chapter 17: Grace's talk about the bed and staying for free.** CT (26 Nov, eleventh chat), dictated with edit
+229. **Chapter 27: Curtis and the Riemann hypothesis, at Friday dinner; RSI; Grace's promise.** CT (26 Nov, dictated in
+     two messages; the second extends the first, and replaces its last line in place). First: "this is the one that
+     will really make it click for anybody who's out of the loop. The Riemann hypothesis ... Curtis can bring it to
+     everyone's attention because that's kind of his role ... they're all just chilling. It's a normal day. And this
+     doesn't need to be a new section or a new chapter or anything. This can be worked into an appropriate spot ... it
+     can go in the proper timeline in the book with real life ... the fact that it shocks Marta makes the others kind
+     of snap in. Because Curtis is a wingnut. But there can be a moment where they really lock in because Marta's
+     shaken." Second: "And then maybe Marta can explain, and it always will ... Elijah's going to think to himself, so
+     it can do everything I did at Claypot and more. And maybe one of the more naive people, like younger, whoever's
+     there that's the youngest ... And then Elijah speaks up. It means we're one step, well, more like one giant leap
+     closer to RSI ... Elijah's like a little suspicious of their naivety from that point forward ... I feel like this
+     is kind of a linchpin scene for what happens later with the ASI sort of like all of a sudden existing." Then the
+     talk with Grace, which he chose over giving the Will Smith line to Curtis ("I think it would be better if it was
+     that"), through "I promise" and "thank you, I believe you."
+     Where: after "He'd never answered David ... he didn't know how to start.", before Thanksgiving 2026. The real
+     announcement was Friday, 20 November 2026, so it is that week's Friday dinner. No scene break.
+     His words: every line of dialogue except the ones named below; the chorus paragraph; "Curtis was a wingnut";
+     "Marta was shaken"; the hand wave; Elijah's two thoughts; the room going silent; the twinkle; people grumbling and
+     walking off; "That was how people had been reacting so far ..." to the end of that paragraph; "She got it, but she
+     didn't totally get it."; taken aback, the furrowed brow; both bodies tensing; the gesture at the notebooks; the
+     hands, the forehead, the hair. "I don't like doing my homework" is left out: he restated it as "I don't like doing
+     math problems."
+     Claude's choices: who says the lines he left open. Grace ("what does that mean"), Frank ("those of us that don't
+     speak math"), Denny ("why are you freaking out", "What is that?"), Tyler (cryptography and bank accounts). The
+     youngest at the table is Tyler, so the "who cares" lines, "RSI?", the video game and GTA 6 are his; Chapter 26
+     already has him working something out and never saying a word, and Chapter 38 has his "Finally."
+     Claude's wording: the opening paragraph; "Curtis hadn't sat back down."; "Curtis went right past him."; "That was
+     Marta, from the far end of the table."; Tyler's "Perelman. Russian guy. Twenty ten. He literally said no to a
+     million dollars."; "and she stopped there"; "and the table had learned to eat through his headlines"; "Sentences
+     didn't get left unfinished when they were hers. The forks stopped."; "There was nobody at that table whose opinion
+     she respected more."; "She thought for a second."; "Lou laughed so hard he had to put his cup down. Marta didn't
+     laugh."; "He meant recursive self-improvement, a machine that could do the math to build a better machine." (the
+     book spells the idea out once, in Chapter 3, and never uses the letters RSI); "Heads shook up and down the table."
+     and "somebody said"; "But Tyler went right back to it."; "Grace stayed behind after the rest had gone. She had
+     questions."; "these dishes" in Grace's last line (he left the next thing open).
+     Facts looked up, 26 Nov (web search; the articles themselves could not be opened from this session): an Anthropic
+     mathematician announced on 20 Nov 2026 a proof found with an unreleased model, checked by computer and certified
+     the next day; mathematicians have not yet read it through and the prize institute still lists the problem as
+     open; the problem dates from 1859; OpenAI announced a Navier-Stokes solution on 8 Sep 2026 (NPR, 22 Sep), used for
+     CT's "the Neumann flow or whatever"; Grigori Perelman turned down the million in 2010 (Poincare conjecture); GTA 6
+     came out on 19 Nov 2026, the day before. A proof does not break cryptography, which is Marta's "not exactly". The
+     book names no real lab, so neither does the scene.
+     Forced by it: "Thanksgiving came two weeks after that." becomes "Thanksgiving came the week after." (row 222
+     narrowed; row 229 checks the new words). 1,049 words in, 6 out. Record:
+     `manuscript/novel/drafts/edit-229-riemann.md`. Logged only; not in the v8 Doc yet.
+
+230. **Chapters 17 and 18: Praether's terms, "I speak wingnut", and Lou at the barn.** CT (26 Nov, dictated): "The
+     warning given by Richard Praether when they're out there talking to him ... yeah, I heard from whoever that you
+     wanted to store some robot arms out in my old barn. I don't care about that as long as they're unplugged and
+     turned off and the military can't access them ... we don't have to say taken aback because we've already had that
+     a few times ... The guy says some other stuff. You can help me with that part ... he gets the names wrong. But he
+     doesn't care ... as far as I can remember, they're not dating at that point. So Grace stammers ... She wouldn't
+     put it back down on the ground. She puts it in the mailbox ... then the next beat should just say, the arms
+     arrived on time. Elijah canceled the storage unit. And had someone ... Won't be Grace ... It would make sense if
+     it was Lou, actually. Because then Lou can warn Elijah to keep it a secret ... And then he has that exchange that
+     we talked about earlier ... they're your people too now. And he looks him in the eyes real serious. He's like,
+     don't forget that."
+     What changed in the book. Chapter 17: Grace and Elijah now go out to Praether's before the arms come, on foot up
+     his drive, and make the deal; the arms come on the Wednesday and Lou, not Grace and not Praether, puts them in
+     the barn with Elijah. Replaced: the delivery scene of edit 205 from "The arms came up the day before the lien
+     sale." to "Neither of them said anything until the grange." (533 words out, 1,018 in). Chapter 18's opening
+     (edit 220) keeps Lou telling the two of them about the Gulf and Grace's lines; the ace in the hole moved to the
+     barn.
+     His words: Praether's lines from "you want to store some robot arms out in my old barn" to "If something else
+     comes up, I'll let you know."; Elijah's and Grace's answers; "Grace went to argue."; the shake; the grimace and
+     the smile; "He had the names wrong, and he didn't care."; "What the hell was that?" and "I speak wingnut"; "maybe
+     I should", "maybe I shouldn't", "maybe we shouldn't" and the mailbox; "The arms arrived on time. Elijah canceled
+     the storage unit"; all of Lou's lines and Elijah's at the barn. Lou's "You need to have an ace in the hole,
+     Elijah," Lou said with a knowing gaze, "Never reveal all of your cards again. I would have thought you'd have
+     learned that by now." and "Elijah felt the heat of embarrassment wash over him" are his from edit 220, joined to
+     the new wording. His "whoever" became Lou ("Lou maybe was the one that connected him with Richard"). His "I like
+     Ike, whoever it was" became "Like old Ike said."
+     Kept from the book: his description of the yard; Praether's looks and the burn barrel; "I can't pay much" and
+     the brush hog, one Saturday a month (Chapter 26 depends on it), as the "other stuff"; one finger up and "Mark my
+     words."; the barn's air; the loader and the tie-down that lets go with a bang, with Praether now going down on
+     his porch and Lou watching; "Some nights he drove out and looked at the barn from the road."
+     Out: "What's in them?" "Arms."; "Beware the military! They never built one thing ... That's how you'll know."
+     (the warning is now the military-industrial complex); the gas station movie talk in the truck (replaced by "I
+     speak wingnut"); the grin going off Grace's face.
+     Claude's wording: "Getting them north was the easy part."; "Lou said he'd have a word with Richard Praether
+     first. Then Grace and Elijah drove out the county road in the Ranger to ask the man themselves."; "They left the
+     Ranger by the mailbox."; "Grace and Elijah looked at each other, and then at him."; "Praether's face had set into
+     a big grimace."; "The grimace went"; "down the drive"; the letter's corner and "gone soft with rain, like it had
+     been there a while"; "The door was unlocked, like Praether had said it would be."; "Up at the house, Praether was
+     down flat on his porch boards"; "Lou watched him do it and said nothing."; in Chapter 18, "Richard give you the
+     speech?", "The military-industrial complex," and "Good. Keep it that way." Tyler at the hardware store still
+     names Praether's barn first (Chapter 19 says he sent Elijah out there).
+     Corrected in place the same day. CT: "I don't think actually they would bond over just a tinfoil hat comment.
+     Richard would push back." His: "You messing with me, son?", the reptilians, the look, "I'm not trying to help no
+     lizard people", the laugh, "I like this guy. All right, yeah, we're good. You can keep your arms here. It's going
+     to be all right. I'll keep them for as long as you need me to. Unless something else comes up, I'll let you know."
+     and "And then he doesn't" (on the page: "He never did."). Out: "The grimace went, and Praether threw him a smile.
+     You sure will. I like this one." and "as long as I can". Claude's: "Praether wiped his eye with a knuckle."
+     Then CT: "We could use the phrase rattle in his voice for old Richard", on his first line, "Like a can of paint
+     being turned over." It is now on "Lou tells me you want to store some robot arms out in my old barn," Praether
+     said, "a rattle in his voice like a can of paint being turned over."
+     Rows 88, 205, 220 and 222 narrowed. Record: `manuscript/novel/drafts/edit-230-praether-and-lou.md`. Logged only;
+     not in the v8 Doc yet.
+
+231. **Chapter 17: Grace's talk about the bed and staying for free.** CT (26 Nov, eleventh chat), dictated with edit
      228 and held then; placed on his next word, "Send out readers, evaluate what you think is the best course of
      action". His, word for word, fillers out: "How are you liking your bed? Is it comfy enough?" / He raised an eyebrow.
      "Yeah, it's great. It gets a little cold in there at night, but you guys give me plenty of blankets, so I feel
@@ -3544,9 +3643,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Claude's: "One night, when his plate was empty, she sat down across from him with her own." (Rosa can't send him
      in his first days: she lives in town, wrist in a brace, and he meets her on the route weeks later.) "Stay here for
      free" is the room, as her message has it; the pay still goes to the table (Ch 16, 26). 186 words in. Record:
-     `manuscript/novel/drafts/edit-229-230-grace-and-rosa.md`. Logged only; not in the v8 Doc yet.
+     `manuscript/novel/drafts/edit-231-232-grace-and-rosa.md`. Logged only; not in the v8 Doc yet.
 
-230. **Chapter 31 opens on Rosa and the ladle.** CT (26 Nov, eleventh chat), held with 229: "maybe Rosa can come back
+232. **Chapter 31 opens on Rosa and the ladle.** CT (26 Nov, eleventh chat), held with 231: "maybe Rosa can come back
      in later in the book as like part of the proletariat". His, word for word: "I don't really understand all this
      technology stuff," she said. "It goes over my head. In one ear, out the other." / She paused, turned around with
      the ladle ... "I do know good food. In this place, they make a lot of good food. Nourishes the whole community."
@@ -3557,22 +3656,25 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      food", "one in one ear". Claude's: "The Sunday after the county meeting, Elijah carried pots at the grange hall.
      Rosa was serving. She had seen his slides.", "and filled a bowl" for his "drops it in the bowl", "She held out the
      bowl." A scene break follows, then "Elijah brought the Friday table a plan.", whose "No laser pointer. One page. He
-     had learned that much." pays it off. 160 words in. Record: `drafts/edit-229-230-grace-and-rosa.md`. Logged only;
+     had learned that much." pays it off. 160 words in. Record: `drafts/edit-231-232-grace-and-rosa.md`. Logged only;
      not in the v8 Doc yet.
 
-231. **The finishing pass (Ch 0 to the Appendix).** CT (26 Nov, eleventh chat): "Send out readers ... to finish the
+233. **The finishing pass (Ch 0 to the Appendix).** CT (26 Nov, eleventh chat): "Send out readers ... to finish the
      story arc, to finish the narratives, to finish the characters, to finish everything. After this, if possible, I
      don't really want to change or add anything." Seventeen readers, 69 gaps, 33 verified on the page, a plan judged
-     from three and checked by a critic. 31 line fixes, all Claude's wording: Ch 0 "Elijah said it once to Wes" and
-     "didn't know him"; Wes's *is this true* back in the Ch 6 and Ch 13 replays; Ch 17 Lou's cover a gift, the arms
-     "that first week", "They could put cans in boxes.", Elijah on the loader, Priya's pencil back behind her ear; Ch 18
-     "Grace and Elijah"; Ch 26 "That was in the first notebook" (he heard the Architect's answer in Ch 9) and the July
-     coffee "at the kitchen trailer"; Ch 27 "in June" out of the pledge and Tyler's reading covers the boxes; Ch 29
+     from three and checked by a critic. 30 line fixes, all Claude's wording: Ch 0 "Elijah said it once to Wes" and
+     "didn't know him"; Wes's *is this true* back in the Ch 6 and Ch 13 replays; Ch 17 Lou's cover a gift (Grace's line
+     out, the secrecy now said once, by Lou at the barn), Priya's pencil back behind her ear; Ch 18 "Grace and Elijah" and
+     "Good. Keep it that way." out; Ch 26 "That was in the first notebook" (he heard the Architect's answer in Ch 9) and the July
+     coffee "at the kitchen trailer"; Ch 27 "in June" out of the pledge, Tyler's reading covers the boxes, and a scene break between the two
+     Fridays; Ch 29
      "delivery time"; Ch 31 "A hundred strangers" twice and Denny's daughter; Ch 32 "a whole file", "six years" out,
      the second "Halve it" out, "till June" out; Ch 33 the Ohio machinist's household and Lou's back seat "before her
      shift"; Ch 34 Marta's welder at the shop after the plant, "What guy?", "found the price list"; Ch 36 Irene's step
-     and "Two years before ... eight feet" out; Ch 39 "A while later"; Praether in the Appendix. Rows 88, 197, 205 and
-     220 narrowed. Left for CT: Ruby's numbers (Ch 8), "Grace printed your cover page" (Ch 17), "signed right under her"
+     and "Two years before ... eight feet" out; Ch 39 "A while later"; Praether in the Appendix. Rows 197, 205 and 220
+     narrowed. Items 1 to 3 of the fix list in `CHECKPOINT-2026-11-26-riemann-praether.md` are done here; that chat's
+     edit 230 had already settled three places this pass found in Ch 17. First logged as 229 to 231, renumbered at the
+     merge. Left for CT: Ruby's numbers (Ch 8), "Grace printed your cover page" (Ch 17), "signed right under her"
      (Epilogue). Record: `manuscript/novel/drafts/finishing-2026-11-27.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like

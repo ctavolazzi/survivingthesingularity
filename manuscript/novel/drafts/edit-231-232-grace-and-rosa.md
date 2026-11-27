@@ -1,10 +1,11 @@
-# Edits 229 and 230: Grace's talk about the bed (Ch 17) and Rosa's ladle (Ch 31)
+# Edits 231 and 232: Grace's talk about the bed (Ch 17) and Rosa's ladle (Ch 31)
 
 27 November 2026, eleventh logging chat. Source: CT's dictation of 26 Nov, held when edit 228 was logged (the held part
 is in `edit-228-lou-comes-in.md`, "Held for CT"). CT then asked: "Send out readers, evaluate what you think is the best
 course of action ... to finish the story arc, to finish the narratives, to finish the characters, to finish everything."
 Seventeen readers read the book; the plan they produced placed his dictation where the page can hold it. Logged only;
-not in the v8 Doc.
+not in the v8 Doc. (First logged as 229 and 230; renumbered when another chat's edits 229 and 230, the Riemann
+hypothesis and Praether's terms, were merged from the same branch.)
 
 **CT's words are in bold.** Everything else is Claude's.
 
@@ -55,7 +56,7 @@ there for free while you figure it out. That's not a trick. We just have the roo
 **"So when do I start paying"** is him offering rent. The pay she promised him ("I want to pay you", Ch 15; "About the
 pay." / "It has to go to the table", Ch 16) still goes to the table and is voted at half in Chapter 26.
 
-## 1. Edit 229, Chapter 17 (after "she let the six lines be all of it.", before "Marta gave him the floor.")
+## 1. Edit 231, Chapter 17 (after "she let the six lines be all of it.", before "Marta gave him the floor.")
 
 One night, when his plate was empty, she sat down across from him with her own.
 
@@ -88,7 +89,7 @@ Taken out: the fillers "like" and "he's like", and "pauses for a minute" folded 
 good to be true?" is said out loud, as he dictated it ("He's like, is this too good to be true?"). Claude's: the first
 sentence, and "and" in "He thought about it, and lingered a minute."
 
-## 2. Edit 230, Chapter 31 (a new first scene, then a scene break, before "Elijah brought the Friday table a plan.")
+## 2. Edit 232, Chapter 31 (a new first scene, then a scene break, before "Elijah brought the Friday table a plan.")
 
 The Sunday after the county meeting, Elijah carried pots at the grange hall. Rosa was serving. She had seen his slides.
 
@@ -116,9 +117,9 @@ serving", not cooking: in February her wrist is still in the brace (Ch 30), and 
 
 ## Facts Claude invented
 
-- One night in his first days Grace sits down across from him at the kitchen trailer with her own plate (229).
+- One night in his first days Grace sits down across from him at the kitchen trailer with her own plate (231).
 - The Sunday after the county meeting Elijah carries pots at the grange hall; Rosa is serving there; she had seen his
-  slides; Grace is working in the hall that morning (230). The book already has the kitchen feeding forty at the grange
+  slides; Grace is working in the hall that morning (232). The book already has the kitchen feeding forty at the grange
   hall on Sunday mornings (Ch 31) and Rosa at its sink (Ch 29).
 
 ## Touches other chapters
@@ -131,4 +132,4 @@ serving", not cooking: in February her wrist is still in the brace (Ch 30), and 
 - It can no longer be "one of the first reasons why Elijah and Grace talk": by Chapter 31 they have talked for two
   years. The first-days talk is in Chapter 17 instead.
 
-Words: 186 in (229), 160 in (230), none out.
+Words: 186 in (231), 160 in (232), none out.

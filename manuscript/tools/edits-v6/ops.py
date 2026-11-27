@@ -1591,6 +1591,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (261, 'the tower in his apartment at 1:20 in the morning.', 'the tower in his apartment at 2:20 in the morning.'),
 # 262, Ch 2: the opening line (CT, 27 Nov, fourteenth chat)
 (262, 'They announced the future on a Thursday morning, with pastries.', 'They announced the future like it was a regular morning, with pastries and free juice.'),
+# 263, Ch 2: the baby robot and the car factory (CT, 27 Nov, fourteenth chat)
+(263, 'The realtors had watched a demonstration. This was the factory, and he had helped build it.', 'The realtors had watched a demonstration of a tiny baby robot. This was more like a car factory, and he had helped build it.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

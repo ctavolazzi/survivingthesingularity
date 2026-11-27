@@ -268,4 +268,5 @@ C=[
 (260, 'Ch 1', ['Devendra wanted a prediction, and Elijah had given him a guess. He could do better than that. After everything that had just happened, he wanted to crack one of these things open for himself.'], ["He'd give him a better one."]),
 (261, 'Ch 0, 1, 8, 39', ['the laptop open, 12:30 in the morning, and the cursor', "Elijah couldn't remember, at 12:30 a.m.,", "a document he'd started at 12:30 in the morning,", 'At 2:20 a.m. the machine threw', 'the tower in his apartment at 2:20 in the morning.'], ['1:40', '1:20']),
 (262, 'Ch 2', ['They announced the future like it was a regular morning, with pastries and free juice.'], ['announced the future on a Thursday']),
+(263, 'Ch 2', ['The realtors had watched a demonstration of a tiny baby robot. This was more like a car factory, and he had helped build it.'], ['This was the factory,']),
 ]

@@ -300,6 +300,23 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   Author page): the paperback, ebook and docx builds, and the site's own tests after the edit list was renamed
   `EDITS.md`. Run them before a release.
 
+
+## Four things in the book for CT, from a third check of the scene sheet (27 Nov, the fifth logging chat)
+Found by four readers against the book built with edits 1 to 234 and confirmed on the page in that build's v6.txt.
+Not yet in the lists above. For CT; nothing changed. (The sheet fixes this check found were already made by the
+second full read above; the "four thousand" replies and the Sunday lien sale are already recorded.)
+- **Who sent Ma the video.** Ch 6: Elijah sends the link to her chat, and she writes at 6:10, "I watched it. You look
+  thin." Ch 7: "I watched your video," she said. "The Hollis girl sent it to me." Both can be true, but the page
+  doesn't say so.
+- **The squash.** Ch 34, scene 1: Lou says "the squash has to come in this week" and Curtis pulls the first wagon.
+  Two weeks or more later, at the October meeting: "The winter squash had to come in," and the next morning rows of
+  squash still sit in the field.
+- **Phones face up.** Ch 38: Patricia's "phone was face up. For the first time anybody could remember." Weeks earlier,
+  Ch 34: "Lupe Ochoa had her phone face up on the plywood, which nobody did at that table." The Ch 38 line can mean
+  Patricia's phone; the reader may hear "anybody's".
+- **Melody's visits.** Ch 37: "A Saturday in April. One in May. Two in August. The last one was three weeks ago." Three
+  weeks before early November is October, which the list leaves out.
+
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including
 anything first made for v7 (edits 184 to 186). v7 is a frozen side copy; nothing goes into it unless CT asks. The next

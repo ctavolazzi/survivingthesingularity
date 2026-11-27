@@ -129,50 +129,51 @@ WHEN = """
 96|2026-10|October 2026: the first fire video; a week later|worked
 97|2026-10|The same morning, and that Friday|stated
 98|2026-10|To Friday 6 November 2026, after the midterms|stated
-99|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
-100|2026-12-05|Saturday 5 December 2026: the well|stated
-101|2026-12-15|December 2026: the storm|stated
-102|2027-01|January 2027: the grange kitchen|stated
-103|2027-01|January 2027: the annual meeting|worked
-104|2027-01|A few nights after|stated
-105|2027-02|The night before the county meeting|stated
-106|2027-02|The county meeting|worked
-107|2027-02|The third week of the apprenticeship|stated
-108|2027-02-12|February 2027, a Friday: the plan|stated
-109|2027-02-15|The Monday after, and two days later|stated
-110|2027-02-16|That week|stated
-111|2027-02-20|Saturday 20 February 2027: the tea|worked
-112|2027-02-21|Sunday 21 February: Marta, the brake|stated
-113|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
-114|2027-03|March 2027, on the dairy|worked
-115|2027-03|March 2027: five small things|stated
-116|2027-03-28|Late March 2027|stated
-117|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
-118|2027-04-10|April to June 2027: the juniper|stated
-119|2027-06|June to Friday 9 July 2027|stated
-120|2027-07-09|Friday dinner, 9 July 2027|worked
-121|2027-07-09|The same evening|stated
-122|2027-07-16|The next Friday|stated
-123|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
-124|2027-10-11|The afternoon before the October meeting|stated
-125|2027-10-12|A Tuesday in the middle of October 2027: the meeting|stated
-126|2027-10-12|The same night|stated
-127|2027-10-13|Six the next morning|stated
-128|2027-10-13|That night|stated
-129|2027-10-23|The Saturday before the festival|stated
-130|2027-10-27|The Wednesday of festival week|stated
-131|2027-10-30|The last night of the festival: the fire|worked
-132|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
-133|2027-11-09|The same Tuesday|stated
+99|2026-11-10|October to November 2026: the weeks after the pond; the morning in his T-shirt|stated
+100|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
+101|2026-12-05|Saturday 5 December 2026: the well|stated
+102|2026-12-15|December 2026: the storm|stated
+103|2027-01|January 2027: the grange kitchen|stated
+104|2027-01|January 2027: the annual meeting|worked
+105|2027-01|A few nights after|stated
+106|2027-02|The night before the county meeting|stated
+107|2027-02|The county meeting|worked
+108|2027-02|The third week of the apprenticeship|stated
+109|2027-02-12|February 2027, a Friday: the plan|stated
+110|2027-02-15|The Monday after, and two days later|stated
+111|2027-02-16|That week|stated
+112|2027-02-20|Saturday 20 February 2027: the tea|worked
+113|2027-02-21|Sunday 21 February: Marta, the brake|stated
+114|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
+115|2027-03|March 2027, on the dairy|worked
+116|2027-03|March 2027: five small things|stated
+117|2027-03-28|Late March 2027|stated
+118|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
+119|2027-04-10|April to June 2027: the juniper|stated
+120|2027-06|June to Friday 9 July 2027|stated
+121|2027-07-09|Friday dinner, 9 July 2027|worked
+122|2027-07-09|The same evening|stated
+123|2027-07-16|The next Friday|stated
+124|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
+125|2027-10-11|The afternoon before the October meeting|stated
+126|2027-10-12|A Tuesday in the middle of October 2027: the meeting|stated
+127|2027-10-12|The same night|stated
+128|2027-10-13|Six the next morning|stated
+129|2027-10-13|That night|stated
+130|2027-10-23|The Saturday before the festival|stated
+131|2027-10-27|The Wednesday of festival week|stated
+132|2027-10-30|The last night of the festival: the fire|worked
+133|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
 134|2027-11-09|The same Tuesday|stated
-135|2027-11-09|Two days south; the rose garden; Manny's|stated
-136|2027-11-25|Thursday 25 November 2027|stated
-137|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
-138|2027-11-25|Thanksgiving night, the Bear Flag|stated
-139|2027-11-25|The same night|stated
-140|2027-12|December 2027 to April 2028|stated
+135|2027-11-09|The same Tuesday|stated
+136|2027-11-09|Two days south; the rose garden; Manny's|stated
+137|2027-11-25|Thursday 25 November 2027|stated
+138|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
+139|2027-11-25|Thanksgiving night, the Bear Flag|stated
+140|2027-11-25|The same night|stated
+141|2027-12|December 2027 to April 2028|stated
 """
-BACK_ON_PURPOSE = {2, 3, 45, 60, 64, 67, 77, 78, 92, 137}  # scenes the book tells out of order
+BACK_ON_PURPOSE = {2, 3, 45, 60, 64, 67, 77, 78, 92, 138}  # scenes the book tells out of order
 
 
 def D(y, m, d):

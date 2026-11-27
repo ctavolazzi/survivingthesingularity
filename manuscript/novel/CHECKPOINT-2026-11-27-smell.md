@@ -6,10 +6,11 @@ CT: "Get ready to close out this session. The next sense for the next session is
 
 - **In the Google Docs:** "StS v8 draft (Nov 26)" (`1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8`) holds edits 1 to
   223. Its locked twin is "StS v8 BACKUP (Nov 26), do not edit". Neither was touched in this chat.
-- **In GitHub only:** edits 224 to 239. `make_v6.py` on the v5 read passes all 239 check rows (614 replacements).
-  `verify.py` on the v8 read: 223 "accepted", 224 to 239 "not in the Doc", nothing PARTIAL. **The next edit is 240.**
-  (Edits 237 to 239, three new scenes in Chapter 26, were logged after this checkpoint was first written.)
-- 104,647 words in the chapters (`story_report.py`), 140 scenes. `build_gate.py`: NOT READY, 10 open boxes (the taste pass is one).
+- **In GitHub only:** edits 224 to 240. `make_v6.py` on the v5 read passes all 240 check rows (617 replacements).
+  `verify.py` on the v8 read: 223 "accepted", 224 to 240 "not in the Doc", nothing PARTIAL. **The next edit is 241.**
+  (Edits 237 to 240 were logged after this checkpoint was first written: three new scenes in Chapter 26, a new
+  ending for "Pondwater" and a new scene in Chapter 27. They have not been read in place, in order.)
+- 104,857 words in the chapters (`story_report.py`), 141 scenes. `build_gate.py`: NOT READY, 10 open boxes (the taste pass is one).
 - **The PDF CT has** is still the edits 1 to 223 one. A new one is made only when he asks.
 - **Drive copy of the edit list:** "StS edit list, edits 1 to 236 (mirror of GitHub)",
   `1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE`. The 1 to 233 copy is "OLD:".
@@ -113,15 +114,21 @@ do anything else:
    v5 Doc "StS v5 draft (Nov 23)", id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Read both with the Docs connector
    and save the reads to your scratchpad. Do not change either Doc, or the locked "StS v8 BACKUP (Nov 26), do not
    edit"; I haven't cleared that.
-4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 239 check rows passing (614
-   replacements), 223 rows "accepted" in v8, edits 224 to 239 "not in the Doc", and nothing PARTIAL. If you get
+4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 240 check rows passing (617
+   replacements), 223 rows "accepted" in v8, edits 224 to 240 "not in the Doc", and nothing PARTIAL. If you get
    anything else, stop and tell me.
 
-Where we are (end of 27 Nov): v8 holds edits 1 to 223. Edits 224 to 239 are logged in GitHub only. The next edit is
-240. After this I don't really want to change or add anything: it's about refining, revising, deleting, buffing out
+Where we are (end of 27 Nov): v8 holds edits 1 to 223. Edits 224 to 240 are logged in GitHub only. The next edit is
+241. After this I don't really want to change or add anything: it's about refining, revising, deleting, buffing out
 the hard spots, polishing.
 
-The job: the taste pass. Taste only someone who was there would know, with a verb that carries the physics, where it
+The first job, before anything else: read the end of Chapter 25 through Chapter 27 in the built book, in order. Edits
+237 to 240 put five new scenes and a new ending for "Pondwater" there in one night and nobody has read them in place.
+Look for: who runs the route while Grace is away for the winter; any line that says she came back; whether her
+winter trip and the October festival read as two trips; and anything the knowledge sheet says a person shouldn't
+know yet. Tell me what you find before changing anything.
+
+Then the job: the taste pass. Taste only someone who was there would know, with a verb that carries the physics, where it
 carries the feeling or tells you something about the person, not one per page. If I haven't given you my own taste
 lines, ask me for them in one short question before you propose any of yours; the smell pass worked because the two
 lines that went in were mine. Then read the whole built book and make a short taste table like the smell table: only
@@ -148,5 +155,5 @@ How I want it done:
   WRITING-INSTRUCTIONS.md, and STATE.md and sessions/LOG.md in _workbench; refresh the Drive mirror of the edit list
   once (upload EDITS.md as text/plain); write the next checkpoint and prompt.
 
-When you're done spinning up, tell me in one line that you're ready and that the next edit is 240.
+When you're done spinning up, tell me in one line that you're ready and that the next edit is 241.
 ```

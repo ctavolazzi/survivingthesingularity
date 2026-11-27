@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 239 (27 Nov, the same chat), logged only. The next edit is 240.
+smell chat) and edits 237 to 240 (27 Nov, the same chat), logged only. The next edit is 241.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3828,6 +3828,23 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      kid"), the road, "She got in the truck." Settles the open item "Grace's winter away". 518 words in, none out, for
      238 and 239 together; 104,647 words in the chapters; 140 scenes. Record:
      `manuscript/novel/drafts/edit-238-239-lou-grace-goodbye.md`. Logged only; not in the v8 Doc yet.
+240. **"Pondwater", Chapter 27, Chapter 36: the pond ends on the near kiss; the weeks after; the pillow talk.** CT (27
+     Nov, dictated over several messages; in full in `next-version-scenes-2026-11-26.md`, section 6). (1) On the
+     blanket, her father now comes first and she changes the subject herself ("We should start a band"); then, new:
+     "Grace," he said. "We work together." / "Oh, did you date a coworker before?" / "Is that what you are to me? A
+     coworker? Is that what we are? Coworkers?" / "I mean. If that's what you want, we can just be coworkers." / his
+     heart pounding, his hand over hers / "Is that what you want? For us to only be coworkers?" / "They looked at each
+     other's lips, and moved closer, and closer." The chapter ends there (his: "we don't tell the reader what
+     happened"). Out of "Pondwater": the kiss, "A year. A whole year, Elijah.", the collar, the shirt in his kitchen.
+     (2) A new scene in Chapter 27, before the Friday dinner of 20 November: "After the pond, it went on like that for
+     weeks ... she was enjoying taking the scenic route ... one day in November, she woke up wearing his T-shirt.",
+     then the pillow talk: "Why'd you wait so long? A year. A whole year, Elijah." / his rule / "Well, I think we're
+     past that now." / "I mean, I don't hear you complaining." / her fingers on his chest / "How much energy do you
+     have left?", and Marta's look, moved from "Pondwater". (3) Chapter 36: "and he had never reached for hers" and
+     its sentence are out (his: "that's just not true and not good"). Claude's words: the bridge "We work together",
+     "She moved a little closer", "scrunched up one shoulder", "After the pond,", "into the pillow", "November", the
+     wording of her pose. Rows 204 and 233 narrowed. 210 more words; 104,857 in the chapters; 141 scenes. Record:
+     `manuscript/novel/drafts/edit-240-pond-and-pillow.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

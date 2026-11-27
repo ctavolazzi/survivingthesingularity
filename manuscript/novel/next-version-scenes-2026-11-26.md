@@ -796,6 +796,24 @@ she pulled the blanket off the floor on the passenger side and stopped.":
 > "**Oh, you want to know my backstory?**" Elijah said. "**How much time you got?**"
 >
 > She ducked back into the cab.
+>
+> "**I don't want to know anything you don't want to tell me,**" she said, **from** inside. "**All I need to know is, am I going to find anything sharp in here?**"
+>
+> "**Sharp?**"
+>
+> She **looked behind her again, out** of the cab. "**Needles. Or knives.**"
+>
+> "**Oh, no. I don't do anything like that. Never have.**"
+>
+> "**Good.**" She went back to the floor mats. "**But you didn't answer me about the knives.**"
+>
+> "**Well, there's a can of pepper spray in the glove box.**"
+>
+> She **shook her head.** "**Pepper spray is only good outside. Don't tell me you were trying to defend yourself from inside the cab with something that can blow back right in your face.**"
+>
+> "**There's also a big stick under the seat,**" he said, **kind of defensively.**
+>
+> She **laughed.** "**Pepper spray and a big stick. And you lived like this for how long?**"
 
 The interruption is the scene's own next line: she pulls the blanket off the passenger side and finds the amp ("Oh my
 God."). Claude's words: "Somewhere in there", "It cut straight through what five months had done to the cab" (the
@@ -818,6 +836,19 @@ clothes, with an armful of clothes,"): "a bag of junk" is "an armful of clothes"
 And again (CT: "Instead of him saying my story, she's like, you from the city? What's your deal? And then he
 responds, oh, you want to know my backstory? Elijah says, how much time you got?"): "What's your story?" is "What's
 your deal?" and "my story" is "my backstory".
+
+And more (CT, same night), his words as sent: "And then from the inside of the cab, she'll just say, I don't want to
+know anything you don't want to tell me. All I need to know is, am I going to find anything sharp in here? And he'll
+ask, sharp? And she'll pull out and she'll look behind her again, out the cab, and be like, needles. She'll go, you do
+hard drugs? No, she just say needles. Needles. Or knives. And he'll go, oh, no. I don't do anything like that. Never
+have. And she'll go, good. She'll go, but you didn't answer me about the knives. He's like, well, there's a can of
+pepper spray in the glove box. And she'll shake her head. Pepper spray is only good outside. Don't tell me you were
+trying to defend yourself. From inside the cab with something that can blow back right in your face. And he'll say,
+there's also a big stick under the seat, kind of defensively. And she'll laugh and she'll be like, pepper spray and a
+big stick. And you lived like this for how long? And then something can interrupt them." In the draft: his last
+version ("Needles. Or knives.", not "you do hard drugs?"); Claude's only words are "she said", "of the cab", "She went
+back to the floor mats". The interruption is the book's next line: she pulls the blanket off and finds the amp, so
+"how long?" goes unanswered.
 
 ### An echo with Marta ("Pondwater"). CT, same night. His words, as sent:
 

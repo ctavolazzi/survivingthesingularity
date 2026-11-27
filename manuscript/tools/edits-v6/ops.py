@@ -1582,6 +1582,13 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (259, 'People ate for about three hundred thousand years before anybody punched a clock.', 'People ate for a few hundred thousand years before anybody ever punched a clock.'),
 # 260, Ch 1: the prediction and the guess (CT, 27 Nov, fourteenth chat)
 (260, "Devendra wanted a prediction. He'd give him a better one. And he'd do it by cracking one of these things open himself.", 'Devendra wanted a prediction, and Elijah had given him a guess. He could do better than that. After everything that had just happened, he wanted to crack one of these things open for himself.'),
+# 261, Ch 0 and 1: the blank document at 12:30, the tower off at 2:20 (CT, 27 Nov, fourteenth chat); the two other
+# mentions of 1:40 (Ch 0 and Ch 8) and the look back at the tower's 1:20 (Ch 39) moved with it for continuity (Claude)
+(261, 'the laptop open, 1:40 in the morning, and the cursor', 'the laptop open, 12:30 in the morning, and the cursor'),
+(261, "Elijah couldn't remember, at 1:40 a.m.,", "Elijah couldn't remember, at 12:30 a.m.,"),
+(261, "a document he'd started at 1:40 in the morning,", "a document he'd started at 12:30 in the morning,"),
+(261, 'At 1:20 a.m. the machine threw', 'At 2:20 a.m. the machine threw'),
+(261, 'the tower in his apartment at 1:20 in the morning.', 'the tower in his apartment at 2:20 in the morning.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

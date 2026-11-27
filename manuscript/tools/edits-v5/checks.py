@@ -256,7 +256,7 @@ C=[
 (248, 'Ch 0', ['the kind of problems that had eaten whole weekends and watched it', 'of all canyons, to conquer first.', 'To his surprise, some realtors were paying close attention.'], ['weekends of his self-teaching', 'canyons, to cross first', 'some realtors were watching.']),
 (249, 'Ch 0', ['Then he leaned in and said with a concerned tone, "Mad, you look like you just buried somebody."'], ['"You look like you buried somebody."']),
 (250, 'Ch 0', ['"They\'d have found a reason," he said. "They always do."'], ['"They\'d have found a reason, Mad,"']),
-(251, 'Ch 0', ['the laptop open, 1:40 in the morning,'], ['the laptop open, the hour,']),
+(251, 'Ch 0', ['the laptop open, 12:30 in the morning,'], ['the laptop open, the hour,']),  # the time is edit 261's
 (252, 'Ch 0', ['not "Actually Indians" typing behind the scenes', '\nIt was genuinely thinking.\nNot very well at first, but Elijah had not only watched its capacity to think get better, he had helped it'], []),
 (253, 'Ch 0', ['Elijah put a twenty on the bar.\n"Your money'], ['David slid it back across the wood.\n"Your money']),
 (254, 'Ch 0', ['quietly replaced the heart of machine intelligence.'], ['quietly replaced the engine of machine intelligence.']),
@@ -266,4 +266,5 @@ C=[
 (258, 'Ch 1', ['"Five years," Devendra scoffed. "That'], ['"Five years," Devendra said.']),
 (259, 'Ch 1', ['People ate for a few hundred thousand years before anybody ever punched a clock.'], ['People ate for about three hundred thousand years']),
 (260, 'Ch 1', ['Devendra wanted a prediction, and Elijah had given him a guess. He could do better than that. After everything that had just happened, he wanted to crack one of these things open for himself.'], ["He'd give him a better one."]),
+(261, 'Ch 0, 1, 8, 39', ['the laptop open, 12:30 in the morning, and the cursor', "Elijah couldn't remember, at 12:30 a.m.,", "a document he'd started at 12:30 in the morning,", 'At 2:20 a.m. the machine threw', 'the tower in his apartment at 2:20 in the morning.'], ['1:40', '1:20']),
 ]

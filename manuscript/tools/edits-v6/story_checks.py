@@ -39,7 +39,7 @@ TIME = re.compile(r"(?i)\b(20[12]\d|January|February|March|April|May\b(?! be)|Ju
 WHEN = """
 1|2022-11-08|November 2022, the night he shows the realtors, with his back story (scenes merged by edit 255)|worked
 2|2022-11-15|A week later, a Tuesday: the toast|stated
-3|2022-11-15|That night, 1:40 a.m.|stated
+3|2022-11-15|That night, 12:30 a.m.|stated
 4|2022-11-21|The Monday after the toast: the bet|stated
 5|2022-11-21|The same Monday, at the Bear Flag|stated
 6|2022-11-21|That night: the tower|stated
@@ -216,7 +216,7 @@ CHECKS = [  # (what, [quotes], function -> (verdict, detail))
     ("He leaves on a Tuesday while Grace is on the route", ["On Tuesday he packed.", "She was on the route. It was Tuesday."], lambda: (True, "both say Tuesday")),
     ("The laid-off video is four years before Thanksgiving 2027 and eleven months after the toast", ["Elijah got laid off on a Tuesday, eleven months after the toast.", "That's four years.", "She had watched it in October, the morning after he posted"],
      lambda: (True, "toast November 2022, layoff October 2023, four years and a month to November 2027")),
-    ("The document was started 'fifteen months back' from February 2024", ["he'd started at 1:40 in the morning, fifteen months back"],
+    ("The document was started 'fifteen months back' from February 2024", ["he'd started at 12:30 in the morning, fifteen months back"],
      lambda: ((2024 - 2022) * 12 + (2 - 11) == 15, "November 2022 to February 2024 is 15 months")),
     ("The lecture is 'twelve years old' in early 2023 and 'thirteen years before' in February 2024", ["It was twelve years old and the sound was bad.", "thirteen years before"],
      lambda: (True, "a lecture from 2011 fits both")),

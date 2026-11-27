@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 18.
+Totals: accepted: 223, not in the Doc: 19.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -252,3 +252,4 @@ Edit 57 was never used.
 | 239 | Ch 26 | not in the Doc | "For real? Like, you're the one that's leaving?" |
 | 240 | Pondwater, Ch 27, Ch 36 | not in the Doc | "Grace," he said. "We work together." |
 | 241 | Ch 33 | not in the Doc | She had never said it boldly to his face. |
+| 242 | Ch 17, Pondwater | not in the Doc | Through process of elimination, he figured, something that kind of ... |

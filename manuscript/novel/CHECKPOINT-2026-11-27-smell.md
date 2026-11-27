@@ -13,7 +13,7 @@ CT: "Get ready to close out this session. The next sense for the next session is
 - 104,977 words in the chapters (`story_report.py`), 142 scenes. `build_gate.py`: NOT READY, 10 open boxes (the taste pass is one).
 - **The PDF CT has** is still the edits 1 to 223 one. A new one is made only when he asks.
 - **Drive copy of the edit list:** "StS edit list, edits 1 to 236 (mirror of GitHub)",
-  `1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY`. The 1 to 233 copy is "OLD:".
+  `1iMTDBkZeVOphVySnKMBNRHNZO2stZrsaUYi7VgRcZXc`. The 1 to 233 copy is "OLD:".
 - **Backup** of this branch as it stood before the smell chat: `backup/book-branch-2026-11-27`, both repos.
 
 ## What this chat did
@@ -139,26 +139,27 @@ We're finishing my novel, Surviving the Singularity. This is the thirteenth chat
    manuscript/novel/TODO.md, and all of manuscript/novel/WRITING-INSTRUCTIONS.md (7a is the senses, 4a is how I work
    a line, 15c is the newest lessons, including "place it; don't audit it" and "move the people"). Then
    manuscript/novel/knowledge-sheet-2026-11-27.md (who knows what, and when) and
-   manuscript/novel/next-version-scenes-2026-11-26.md, sections 4 to 7 (my dictation from 27 Nov, word for word).
+   manuscript/novel/next-version-scenes-2026-11-26.md, sections 4 to 8 (my dictation from 27 Nov, word for word).
    Then STATE.md and the newest entry in sessions/LOG.md in _workbench.
 3. The book is the Google Doc "StS v8 draft (Nov 26)", id 1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8. Its base is the
    v5 Doc "StS v5 draft (Nov 23)", id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Read both with the Docs connector
    and save the reads to your scratchpad. Do not change either Doc, or the locked "StS v8 BACKUP (Nov 26), do not
    edit"; I haven't cleared that.
-4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 241 check rows passing (619
-   replacements), 223 rows "accepted" in v8, edits 224 to 241 "not in the Doc", and nothing PARTIAL. Then
+4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 242 check rows passing (621
+   replacements), 223 rows "accepted" in v8, edits 224 to 242 "not in the Doc", and nothing PARTIAL. Then
    scene_sheet.py check against manuscript/novel/scene-sheet-2026-11-27.csv: 142 scenes, nothing different. If you
    get anything else, stop and tell me.
 
-Where we are (end of 27 Nov): v8 holds edits 1 to 223. Edits 224 to 241 are logged in GitHub only. The next edit is
-242. 104,977 words in 142 scenes. In Drive: the scene sheet (13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o), the
+Where we are (end of 27 Nov): v8 holds edits 1 to 223. Edits 224 to 242 are logged in GitHub only. The next edit is
+243. 105,307 words in 142 scenes. In Drive: the scene sheet (13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o), the
 story checks workbook (11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8: who knows what, the calendar, the conversation
-map) and the edit list (1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY). I'd rather revise what we have than add, but
+map) and the edit list (1iMTDBkZeVOphVySnKMBNRHNZO2stZrsaUYi7VgRcZXc). I'd rather revise what we have than add, but
 if a scene needs adding, we can.
 
 The work, in this order:
 
-1. Read the end of Chapter 25 through Chapter 27 in the built book, in order. Edits 237 to 241 put five new scenes
+1. Read the end of Chapter 25 through Chapter 27 in the built book, in order, and the truck scene in Chapter 17 (edit
+   242). Edits 237 to 241 put five new scenes
    there in one night (Lou and Grace at the fence; Grace leaves for the winter; Miles Renner on the big screen; the
    pond ending on the near kiss; the weeks after, the pillow talk and Marta in the shop) and nobody has read them in
    place. Look for: who runs the route while Grace is away for the winter; any line that says she came back; whether
@@ -216,5 +217,5 @@ How I want it done:
   WRITING-INSTRUCTIONS.md, and STATE.md and sessions/LOG.md in _workbench; refresh the Drive copies once (the edit
   list as text/plain, the scene sheet, the story checks); write the next checkpoint and prompt.
 
-When you're done spinning up, tell me in one line that you're ready and that the next edit is 242.
+When you're done spinning up, tell me in one line that you're ready and that the next edit is 243.
 ```

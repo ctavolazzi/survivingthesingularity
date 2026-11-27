@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 241 (27 Nov, the same chat), logged only. The next edit is 242.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), logged only. The next edit is 243.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3857,6 +3857,21 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      said it boldly to his face is good." It makes room for the whisper in the scene he dictated the same night
      (`next-version-scenes-2026-11-26.md`, section 7), wherever that scene is placed. "Boldly" is his word. Record:
      `manuscript/novel/drafts/edit-241-boldly.md`.
+242. **Chapter 17 and "Pondwater": Grace smells better than anyone.** CT (27 Nov, the very end of the smell chat,
+     seven messages; in full in `next-version-scenes-2026-11-26.md`, section 8). In Chapter 17, while Grace cleans out
+     the truck: he catches a smell he doesn't recognize; "Through process of elimination, he figured, something that
+     kind of weirded him out. It must be Grace. She smelled great, better than anyone he'd ever smelled before." / "But
+     could I ask what kind of perfume you're wearing?" / "Perfume? Oh. You really are new to this, aren't you?" / "I
+     don't wear perfume. Very few people out here do. You from the city? What's your deal?" / "Oh, you want to know my
+     backstory? How much time you got?" / "I don't want to know anything you don't want to tell me. All I need to know
+     is, am I going to find anything sharp in here?" / "Needles. Or knives." / pepper spray in the glove box, "Pepper
+     spray is only good outside" / a big stick under the seat / "Pepper spray and a big stick. And you lived like this
+     for how long?" Then the amp interrupts. In "Pondwater", after Marta's "Okay, spreadsheet.": "Marta, forgive me if
+     this is weird." / "Marta braced for impact." / "She smells better than anyone I've ever known. And she doesn't even
+     wear deodorant." / "Pheromones. You two have chemistry." His corrections on the way: the sock out of her hand; "an
+     armful of clothes", not "a bag of junk" ("who says it's junk?"); both are lessons in `WRITING-INSTRUCTIONS.md` 15c.
+     330 words in; 105,307 in the chapters. Record: `manuscript/novel/drafts/edit-242-grace-smells.md`. Logged only;
+     not in the v8 Doc yet.
      104,977 words in the chapters. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like

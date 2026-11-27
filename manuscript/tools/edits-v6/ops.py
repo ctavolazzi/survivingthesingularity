@@ -1614,6 +1614,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (267, 'let me say that," Marta said. "Ours."\n \nMarta did not raise her voice.', 'let me say that," Marta said. "Ours."\nMarta did not raise her voice.'),
 (267, 'agree with her. He said it anyway.\n \nThey walked out to the beds afterward', 'agree with her. He said it anyway.\nThey walked out to the beds afterward'),
 (267, 'Reuben said, turning a page. "Toilets."\n\nAfterward the kitchen trailer was full', 'Reuben said, turning a page. "Toilets."\nAfterward the kitchen trailer was full'),
+# 268, Ch 3: caffeine for coffee (CT, 27 Nov, fourteenth chat)
+(268, 'Grad students, coffee, conference deadlines.', 'Grad students, caffeine, conference deadlines.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

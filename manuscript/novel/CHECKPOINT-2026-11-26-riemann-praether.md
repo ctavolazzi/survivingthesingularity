@@ -150,7 +150,7 @@ is 234.
 1. **Lou's secrecy is said three times in a row.** Grace in Chapter 17 ("keep it between the three of us"), Lou at the
    barn (same words), and the Chapter 18 opening ("Good. Keep it that way."). Cut the Chapter 18 instance, and probably
    Grace's "three of us."
-2. **"Good. Keep it that way."** already appears near the start of the book (about Chapter 5), so fix 1 also clears
+2. **"Good. Keep it that way."** already appears earlier in the book (Chapter 9; first written here as "about Chapter 5"), so fix 1 also clears
    this repeat.
 3. **Chapter 27 has two Friday dinners with no break between them.** The Riemann dinner runs straight on from the
    post-midterms dinner about two weeks earlier. It needs a scene break or a time line.

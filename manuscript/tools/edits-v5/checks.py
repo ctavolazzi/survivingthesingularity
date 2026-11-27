@@ -277,6 +277,6 @@ C=[
 (269, 'Ch 4', ["Sitting there at the witching hour when the bars normally closed, with the sun's wattage"], ['Sitting there at 1 a.m.']),
 (270, 'Ch 4', ["and stacking guesses doesn't get you truth. It gets you a mural of knowledge."], ["doesn't get you knowledge."]),
 (271, 'Ch 5', ['So before he could ruin it he bought the Bear Flag,'], ['So before the next weekend he bought']),
-(272, 'Ch 5', ['and every guy and gal at every open mic'], ['every guy at every open mic']),
+(272, 'Ch 5', ['and all the guys and gals at every open mic'], ['every guy at every open mic', 'every guy and gal']),
 (273, 'Ch 6', ['Elijah got laid off eleven months after the toast.'], ['laid off on a Tuesday']),
 ]

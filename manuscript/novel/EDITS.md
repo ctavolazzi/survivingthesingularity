@@ -3993,8 +3993,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      knowledge stays". Now: "and stacking guesses doesn't get you truth. It gets you a mural of knowledge." Logged only.
 271. **Chapter 5: before he could ruin it.** CT: "Change to 'so before he could ruin it he bought...'". "So before the next
      weekend he bought the Bear Flag," becomes "So before he could ruin it he bought the Bear Flag,". Logged only.
-272. **Chapter 5: every guy and gal.** CT: "Every guy and gal". "and every guy at every open mic" becomes "and every guy and
-     gal at every open mic". Logged only.
+272. **Chapter 5: all the guys and gals.** CT: "Every guy and gal", then "Change every guy and gal to all the guys and
+     gals". "and every guy at every open mic" becomes "and all the guys and gals at every open mic". Logged only.
 273. **Chapter 6: "on a Tuesday" out.** CT: "Remove superfluous days like this 'on a Tuesday' doesn't add much to the
      story here does it?" "Elijah got laid off on a Tuesday, eleven months after the toast." becomes "Elijah got laid off
      eleven months after the toast." "The Friday before" stays (it times Nina's warning). Logged only.

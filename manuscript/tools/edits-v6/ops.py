@@ -1622,8 +1622,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (270, "and stacking guesses doesn't get you knowledge. It gets you a mural of knowledge.", "and stacking guesses doesn't get you truth. It gets you a mural of knowledge."),
 # 271, Ch 5: Ray buys the bar before he could ruin it (CT, 27 Nov, fourteenth chat)
 (271, 'So before the next weekend he bought the Bear Flag,', 'So before he could ruin it he bought the Bear Flag,'),
-# 272, Ch 5: every guy and gal (CT, 27 Nov, fourteenth chat)
-(272, 'and every guy at every open mic', 'and every guy and gal at every open mic'),
+# 272, Ch 5: all the guys and gals (CT, 27 Nov, fourteenth chat; his second wording replaces the first)
+(272, 'and every guy at every open mic', 'and all the guys and gals at every open mic'),
 # 273, Ch 6: "on a Tuesday" out (CT, 27 Nov, fourteenth chat)
 (273, 'Elijah got laid off on a Tuesday, eleven months after the toast.', 'Elijah got laid off eleven months after the toast.'),
 ]

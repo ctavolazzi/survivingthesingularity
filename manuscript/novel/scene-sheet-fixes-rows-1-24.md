@@ -1,6 +1,6 @@
 # Scene sheet, rows 1 to 24: cells to fix (27 Nov, from the tenth chat)
 
-A reader checked rows 1 to 24 of  against the book built with edits 1 to 234. Each finding
+A reader checked rows 1 to 24 of `scene-sheet-2026-11-27.csv` against the book built with edits 1 to 234. Each finding
 below quotes the page, and every quote was matched against the scene text by script. Listed here are only the cells
 still as the reader found them after the later full read (13 of its 15). Nothing in the sheet or the book was changed
 by this file; the final pass applies them, to the CSV and the Google Sheet together.

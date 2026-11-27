@@ -1074,7 +1074,7 @@ SENSE_WHOSE = {
     "He could still taste the tea.": "older text",
     "The smell had climbed the kitchen walls and gotten into the curtains": "Claude's (edit 221)",
 }
-SENSE_CALL = {23: "Logged, edit 236 (the party)", 39: "Logged, edit 235 (the truck); corrected wording kept (CT, 27 Nov, sixteenth chat: \"Proceed\")"}
+SENSE_CALL = {23: "Logged, edit 236 (the party)", 39: "Logged, edit 235 (the truck); corrected wording kept (CT, 27 Nov, sixteenth chat: \"I like the way it reads now.\")"}
 
 
 def senses(book, outdir, date):

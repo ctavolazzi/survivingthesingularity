@@ -67,7 +67,7 @@ CT: "Get ready to close out this session. The next sense for the next session is
 ## Open with CT (his to decide; put to him only when he asks)
 
 From this chat:
-1. The corrected wording of edit 235 (not ruled on), and Claude's invented details in 235 and 236 (smoke, a wet
+1. The corrected wording of edit 235 (ruled on 27 Nov, sixteenth chat, CT: "I like the way it reads now."), and Claude's invented details in 235 and 236 (smoke, a wet
    jacket, the delivery bag; the two men behind the woman's chair; fish and butter).
 2. The open rows of the smell table: the cooked plugs (Ch 21) and Priya's pits (Ch 26), which need the smell from
    him; woodsmoke reaching Grace at the door before the gate story (Ch 24, one line); Elijah telling Grace what the

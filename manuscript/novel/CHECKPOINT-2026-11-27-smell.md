@@ -27,6 +27,18 @@ CT: "Get ready to close out this session. The next sense for the next session is
 5. A tool: `manuscript/tools/edits-v6/whose_words.py` (where a line came from). It finds the record; it does not
    judge it.
 6. Lessons for the next chat in `REFERENCE.md`, section 6 ("Learned in the smell chat").
+7. After the prompt below was written, CT asked for more:
+   - **The knowledge sheet** (who knows what, and when): `knowledge-sheet-2026-11-27.md`, three CSVs, the tool
+     `knowledge.py`, and the Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)"
+     (`1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`). 35 secrets, 113 lines of evidence, eight findings for him.
+   - **Two more smell lines drafted and shown, not logged** (he asked for the drafts and has not said to log them):
+     Ch 25, after "So did I.": "The heat came out the door at him with celery and butter in it, and a pot of turkey
+     necks going for the gravy. Ma put hers on the night before, too." (all Claude's; invented: celery, butter, the
+     necks, Ma's habit). Ch 27: "Their coats had soaked up **Rosa's cooking** all afternoon, sage and turkey fat, and
+     the little room filled with **the heavenly scent** of it the minute the door shut." (bold is CT's, 27 Nov).
+     If he says yes they are edits 237 and 238.
+   - **The birthday.** The scene is drafted in `next-version-scenes-2026-11-26.md` (section 2) and is not in the book.
+     His new plan for it (27 Nov) is recorded at the end of that section. Open question to him: how Grace finds out.
 
 ## Open with CT (his to decide; put to him only when he asks)
 
@@ -39,6 +51,11 @@ From this chat:
 3. The scene sheet's word counts for rows 29 and 48 (100 and 48 words short) and its title ("edits 1 to 233").
 4. `main`'s `BRIDGE.md` and `WORKBOARD.md` still say v4, so a chat that starts on `main` is misled. Fixing them means
    a merge to `main`, which redeploys the site: his call.
+
+5. The eight findings at the foot of `knowledge-sheet-2026-11-27.md` (first among them: Grace never says "why did
+   you pretend to be poor", and the fire never mentions the hiding).
+6. The Ch 25 and Ch 27 smell drafts (log them or not), and the birthday plan (how Grace finds out; then the scene
+   moves to spring 2026).
 
 Everything older is in `CHECKPOINT-2026-11-27-eleventh.md`, "Open with CT".
 
@@ -66,7 +83,8 @@ do anything else:
    CHECKPOINT-2026-11-27-smell.md, manuscript/novel/TODO.md, and all of manuscript/novel/WRITING-INSTRUCTIONS.md
    (7a is the senses, 4a is how I work a line, 15c is the newest lessons). Then manuscript/novel/
    smell-table-2026-11-27.md and drafts/edit-235-236-smell.md: that's how the smell pass was done, and the taste pass
-   works the same way. Then STATE.md and the newest entry in sessions/LOG.md in _workbench.
+   works the same way. Then manuscript/novel/knowledge-sheet-2026-11-27.md (who knows what, and when); check it
+   before you place any line. Then STATE.md and the newest entry in sessions/LOG.md in _workbench.
 3. The book is the Google Doc "StS v8 draft (Nov 26)", id 1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8. Its base is the
    v5 Doc "StS v5 draft (Nov 23)", id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Read both with the Docs connector
    and save the reads to your scratchpad. Do not change either Doc, or the locked "StS v8 BACKUP (Nov 26), do not

@@ -205,6 +205,32 @@ They let him up. He blew it out. He didn't make a wish. He couldn't think what h
 
 Lou cut the cake and passed him the first piece.
 
+### CT's new plan for the birthday (27 Nov 2026, the smell chat). Not written, not logged.
+
+His words: "I feel like it should happen sooner. Like the birthday scene should happen. I don't know. Maybe his first
+year on the farm." Then: "Or maybe the second, because his first year on the farm, maybe his birthday comes and goes,
+and he doesn't really celebrate it, doesn't really tell anybody. Grace finds out, and she makes sure that the next
+one is a good one."
+
+What the page gives it (checked 27 Nov against the book with edits 1 to 236):
+- **The birthday that passes (spring 2025).** His ages put the birthday between mid-March and May, and he arrives in
+  March. Ch 20 already says "He was thirty-seven years old and he had never been so tired in his life" that May; one
+  line there could say he had turned thirty-seven and told nobody. (His first weeks are too soon for the party
+  itself: Curtis has just called him the kind you fence out, it would land on the late-April crash in Ch 18, and Frank
+  is not at the co-op yet.)
+- **Grace finds out (fall 2025).** Open: CT has not said how. Claude's suggestion: Ch 25, where she sits down on his
+  letter to Ma, a page before his line "You're almost forty, and these are your conflict resolution skills?", which
+  already has her knowing his age with no source on the page.
+- **The party (spring 2026, Ch 26).** He turns thirty-eight. Changes to the draft above: "thirty-nine" to
+  "thirty-eight"; "Reuben notices," Priya said, becomes Grace's doing; the line about the fence around his mother's
+  place comes out (he doesn't learn that until March 2027); Priya's crutch needs the ankle scene to move with it, or
+  another reason for her to stay out of the hug.
+- Curtis on the ridge that December (Ch 28: "Still want the fence. You're just on this side of it.") still reads
+  right after "I love you, man"; nothing there has to change.
+- What it gives up: where it is drafted (Ch 32, spring 2027) it comes right after the tea and "Ma, I'm not okay",
+  six months before "This is my home" breaks.
+- Smell: the draft has the sheet cake and Wren's candle "fat and the color of honey"; neither has a smell yet.
+
 ## 3. Priya's ankle, and Lou says "Combat"
 
 ### His words

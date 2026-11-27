@@ -148,7 +148,8 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
 
 - 27 Nov, smell chat (twelfth): the whole built book read for smell; `smell-table-2026-11-27.md`; edits 235 (the
   truck, Ch 15) and 236 (the party, Ch 9), CT's words; `WRITING-INSTRUCTIONS.md` 15c; the Drive mirror of the edit list
-  remade (edits 1 to 236). Not done: the scene sheet's word counts for rows 29 and 48, which are now 100 and
+  remade (edits 1 to 236); the knowledge sheet (`knowledge-sheet-2026-11-27.md`, `knowledge.py`, and a Google Sheet).
+  Not done: the scene sheet's word counts for rows 29 and 48, which are now 100 and
   48 words short (measured by diff of the two builds).
 
 - 26 Nov, tenth chat: the housekeeping list (the opening checker, the files brought to v8); edits 224 to 227; the

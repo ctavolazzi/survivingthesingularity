@@ -36,6 +36,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | The book as it stands (every logged edit applied) | make_v6.py's `OUT/v6.txt` (rebuilt each session from the v5 read) |
 | Each edit: who said what, Book now, Change to | `EDITS.md` (summary) and `drafts/chapter-NN.md` (full text, CT's words in bold) |
 | Edit status against the Doc | `EDITS-status.md` (written by verify.py) |
+| Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)" (`1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`). Rebuilt by `knowledge.py` |
 | What happens in each chapter | `PLAN-CHAPTERS-20-TO-36.md`, sections 6 and 11 (11 wins for 27 to 36) |
 | Arcs, quarrels, the chain of cause | the plan, section 10 |
 | Every open question and its decision | the plan, section 12; anything still CT's is in `TODO.md`, section 1 |
@@ -83,7 +84,8 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 1. Read the chapter whole in `v6.txt` (`find_in_book.py OUT/v6.txt chapters` gives the line numbers), its rows in
    the plan (sections 10 and 11), and `WRITING-INSTRUCTIONS.md` sections 5 to 12.
 2. Read the lines in other chapters it depends on or feeds (the plan's sections 7 and 12.3; grep for names, objects,
-   dates).
+   dates). Check the knowledge sheet (`knowledge-sheet-2026-11-27.md`) for every secret the new lines touch: who
+   knows it by then, and who must still not know.
 3. Search the book for each new key phrase (`find_in_book.py OUT/v6.txt find "phrase"`) so nothing repeats.
 4. Write the changes as ops rows in `manuscript/tools/edits-v6/ops.py`, above the `ITALIC` list, under a comment line
    `# NNN, Ch NN: what (drafts/chapter-NN.md)`. A find must appear exactly once; a `(start, end)` pair replaces a span.
@@ -161,6 +163,7 @@ for what it is ("v7" is taken by a frozen side copy).
 | `python3 manuscript/tools/edits-v6/build_gate.py OUT/v6.txt [--todo TODO.md]` | What must be gone and what must be there before the next build (`build-gate.json`), and the unticked boxes |
 | `python3 manuscript/tools/edits-v6/openers.py OUT/v6.txt [--ch 20-36]` | The sentence-opening checker: runs of sentences that open with the same word, runs of pronoun-or-name openers, paragraphs one opener dominates |
 | `python3 manuscript/tools/edits-v6/whose_words.py V5_READ.json "phrase" ["phrase"]` | Where a line came from: the v5 Doc, an ops row, which edit in `EDITS.md` quotes it, which `drafts/` files. Run it before calling a line CT's or Claude's |
+| `python3 manuscript/tools/edits-v6/knowledge.py OUT/v6.txt manuscript/novel --date YYYY-MM-DD` | The knowledge sheet: who knows, suspects or has wrong each of 35 secrets, by chapter and by phase. Its `FACTS` list is the only hand-written part; a quote no longer in the book stops the run |
 | `python3 manuscript/tools/book.py cast` | Rebuilds the character folders |
 | `node scripts/sts-bridge.mjs status` | Which Doc is CURRENT |
 

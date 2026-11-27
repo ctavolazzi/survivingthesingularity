@@ -279,7 +279,11 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   list, edits 1 to 236 (mirror of GitHub)", id `1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE`, uploaded as text/plain and checked against `EDITS.md` (the
   same text, edit numbers intact). The 1 to 233 copy is "OLD:" with the new id in its title and a pointer at its
   top. The scene sheet (Sheet and CSV) was not changed: rows 29
-  and 48 are 100 and 48 words short, and its title still says edits 1 to 233. A backup of this branch as it stood
+  and 48 are 100 and 48 words short, and its title still says edits 1 to 233. **The knowledge sheet** (who knows
+  what, and when; CT asked for it at the close of the smell chat): `knowledge-sheet-2026-11-27.md` and three CSVs
+  here, built by `manuscript/tools/edits-v6/knowledge.py`, and in Drive as the Google Sheet "Surviving the
+  Singularity: who knows what (edits 1 to 236)", id `1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`
+  (https://docs.google.com/spreadsheets/d/1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU/edit), three tabs. A backup of this branch as it stood
   before the smell chat is the branch `backup/book-branch-2026-11-27`, in both repos.
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)

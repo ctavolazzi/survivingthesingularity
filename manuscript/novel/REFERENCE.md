@@ -36,7 +36,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | The book as it stands (every logged edit applied) | make_v6.py's `OUT/v6.txt` (rebuilt each session from the v5 read) |
 | Each edit: who said what, Book now, Change to | `EDITS.md` (summary) and `drafts/chapter-NN.md` (full text, CT's words in bold) |
 | Edit status against the Doc | `EDITS-status.md` (written by verify.py) |
-| Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)" (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`). Rebuilt by `knowledge.py` |
+| Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: story checks (edits 1 to 292)" (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`; all 15 tabs brought to edit 292 in place on 27 Nov, sixteenth chat, same id). Rebuilt by `knowledge.py` |
 | When every scene happens, and what a calendar can test | `calendar-2026-11-27.md` and its two CSVs; Google Sheet `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`. Rebuilt by `story_checks.py calendar` |
 | Who talks to whom, how much, and the sense words in each scene (layer one, rough) | `conversations-2026-11-27.md` and its three CSVs; Google Sheet `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`. Rebuilt by `story_checks.py conversations` |
 | What each person wants, when we meet them and by the end; what each person is after in each scene | `desires-2026-11-27.md` and its CSVs (characters, scenes); tabs in the story checks workbook (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`). Rebuilt by `story_checks.py desires` |

@@ -322,9 +322,20 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
 - **Since then (27 Nov, thirteenth to fifteenth chats):** edits 243 to 291 are logged in GitHub only; `TODO.md`'s
   "Next edit" line is the current count (**292** at the close of the fifteenth chat, every check row passing, 223
-  accepted in v8, nothing PARTIAL, 128 scenes). The Drive copies of the scene sheet and story checks are at edit 245
-  and wait on CT's ask; the Drive edit list was last remade at 242. The free sample (Chapters 0 to 10 at edit 291)
+  accepted in v8, nothing PARTIAL, 128 scenes). The Drive copies of the scene sheet and story checks were at edit 245
+  until the sixteenth chat (next lines); the Drive edit list was last remade at 242. The free sample (Chapters 0 to 10 at edit 291)
   is in `REFERENCE.md`, section 2.
+- **Sixteenth chat (27 Nov):** edit 292 (Ch 27, "Once they started they just never stopped talking ...", CT's words);
+  next edit 293. **Drive brought to edit 292 in place, on CT's word ("just bring it all up to date. But don't change
+  things that don't need it"), same ids:** the scene sheet's "Scenes" tab (`13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o`,
+  now titled "... scene sheet (edits 1 to 292)", 128 scenes plus the cut row) and all 15 tabs of the story checks
+  workbook (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`, now "... story checks (edits 1 to 292)"). Every tab was
+  compared with its CSV here after the update: 0 cells differ. The scene sheet's "Numbers to check" tab is hand-written
+  and was left alone (its scene numbers are the ones from before edits 237 to 240, as its own header says).
+  How, so nothing is typed and the tabs keep their ids and formatting: build one .xlsx from the CSVs, upload it to
+  Drive as a Sheet by file reference, `copy_sheet_to_another_spreadsheet` each tab into the workbook, then one
+  `update_spreadsheet` call that clears the old tab's values, `copyPaste`s the copy over it as values and deletes the
+  copy. The staging file is "OLD: staging copy (story sheets at edit 292, 27 Nov)" (`1NOGmviClC5YgYhf-BZwe9GW_P1inMQ7v1JUUnBwwE_4`).
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
 - **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and

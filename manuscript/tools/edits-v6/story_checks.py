@@ -19,6 +19,7 @@ conversations  Layer one of the conversation map: what a script can count. For e
 (money, objects and plants are to come; CT asked for them on 27 Nov 2026.)
 """
 import csv
+import json
 import datetime as dt
 import os
 import re
@@ -396,8 +397,308 @@ def conversations(book, outdir, date):
     return pair, lines_by, chapters
 
 
+# ---------------------------------------------------------------- shared: find a quote, say where it is
+class Book:
+    """The built book, line by line, with each line's chapter and scene-sheet row (#).
+
+    find(quote) returns (line number, chapter, sheet row) for the nth line holding the quote, and stops the run
+    if the quote is not in the book. Sheet rows are the scene sheet's own numbers (its row 59 is a cut scene)."""
+
+    def __init__(self, book, outdir):
+        self.lines = norm(open(book).read()).split("\n")
+        sc = scene_sheet.scenes(book)
+        sheet = list(csv.reader(open(os.path.join(outdir, "scene-sheet-2026-11-27.csv"))))[1:]
+        key = lambda s: re.sub(r"[^a-z ]", "", norm(s).lower().replace("...", ""))[:30]
+        sheet_no = {key(r[-1]): int(r[0]) for r in sheet}
+        self.where = {}          # line index -> (chapter, sheet row)
+        self.scenes = []         # (sheet row, chapter, first line index, last line index)
+        i = 0
+        for head, _, paras in sc:
+            first = None
+            for p in paras:
+                p = norm(p)
+                while self.lines[i] != p:
+                    i += 1
+                first = i if first is None else first
+                self.where[i] = (head, sheet_no.get(key(paras[0]), 0))
+            self.scenes.append((sheet_no.get(key(paras[0]), 0), head, first, i))
+        if len(self.scenes) != 142 or 0 in [s[0] for s in self.scenes]:
+            sys.exit("The scenes no longer match the scene sheet: rebuild the sheet first.")
+
+    def find(self, quote, nth=1):
+        q = norm(quote)
+        hits = [i for i, l in enumerate(self.lines) if q in l]
+        if len(hits) < nth:
+            sys.exit(f"NOT IN THE BOOK ({len(hits)} found, wanted number {nth}): {quote!r}")
+        i = hits[nth - 1]
+        ch, no = self.where.get(i, (self.heading_at(i), ""))
+        return i + 1, ch.split(":")[0].replace("Chapter ", "Ch "), no
+
+    def heading_at(self, i):
+        for j in range(i, -1, -1):
+            if scene_sheet.SECTION.match(self.lines[j]) or self.lines[j] in scene_sheet.STOP:
+                return self.lines[j]
+        return "front"
+
+    def first(self, pattern):
+        rx = re.compile(pattern)
+        body = [i for i in sorted(self.where) if rx.search(self.lines[i])]
+        if not body:
+            sys.exit(f"NO LINE NAMES {pattern!r}")
+        i = body[0]
+        ch, no = self.where[i]
+        return i + 1, ch.split(":")[0].replace("Chapter ", "Ch "), no, " ".join(self.lines[i].split()[:30])
+
+
+def write_csv(outdir, name, date, header, rows):
+    path = os.path.join(outdir, f"{name}-{date}.csv")
+    with open(path, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(header)
+        w.writerows(rows)
+    print("wrote", path)
+
+
+def cite(b, q, nth=1):
+    """'Ch 17, #56, line 1600' for a quote."""
+    if not q:
+        return ""
+    ln, ch, no = b.find(q, nth)
+    return f"{ch}, #{no}, line {ln}" if no else f"{ch}, line {ln}"
+
+
+# ---------------------------------------------------------------- desires (CT, 27 Nov: "what the characters want")
+# One row per person. NAME is the pattern the script uses to find the first line that names them (counted).
+# Every other column is Claude's reading of the built book (edits 1 to 245), each with the exact line it rests on.
+# (person, NAME pattern, want when we meet them, quote, want by the end, quote, where it changes, quote, gets it, quote)
+DESIRES = [
+    ("Elijah", r"\bElijah\b", "for people to see what is coming", "I just want people to see what's coming.",
+     "to be some use with what he can change: the pit, the truth when asked, the song to Grace", "He sent it to Grace, and turned the phone face down on the step, and left the next part to her.",
+     "Lou tells him he can't change anyone's mind", "You can't change anyone's mind.",
+     "partly: they saw, and he'd rather have been wrong", "\"I'd rather have been wrong,\" he said."),
+    ("Ma (Linda Madrone)", r"\b[Hh]is mother\b", "Elijah safe in a county job, and playing again", "You'd sleep better if you'd taken that job at the county like I told you.",
+     "Barry, her Sunday company, the radio", "She patted the cover.",
+     "the stroke", "\"Barry,\" she said.",
+     "partly: he plays again, after she can no longer hear it from him", "He played the opening of \"The Weight.\" He missed the change into the chorus"),
+    ("David McGrath", r"\bDavid\b", "to keep Mad the way he was: at the bar, in his lane, playing", "Why don't you just stick to music?",
+     "for Mad to stop carrying what isn't his", "You're not that powerful, Mad,",
+     "he gives him the beer and says he's good", "\"No, man,\" he said. \"You're good.\"",
+     "partly: forgiven in practice, not in words", "He wasn't forgiven, exactly. He wasn't cast out, either."),
+    ("Ray McGrath", r"David's father|\bRay\b", "to spare his family his sins", "You and your mother shouldn't have to pay the interest on my sins.",
+     "someone at Ma's side on Sundays", "He said somebody ought to.",
+     "(off the page) he starts visiting Ma", "She asked Dad the first week and he about fell off the chair.",
+     "yes", "D. McGrath, 10:15."),
+    ("Devendra", r"\bDevendra\b", "for Elijah to calibrate and calm down", "You'll calibrate.",
+     "to settle the bet and the sale", "A bet's a bet.",
+     "he admits the land side pushed the sale", "The three letters. That was us.",
+     "yes: he cooks", "Dinner's on me!"),
+    ("Wes", r"\bWes\b", "to know if his work is in the machine", "is my stuff in that thing",
+     "Elijah back on a stage with them", "we got the grange saturday. come sit in. we have a guitar.",
+     "Elijah answers him, five years late", "Yes, he typed. All of it.",
+     "yes, answered", "It was one word. figured."),
+    ("Nate", r"\bNate\b", "a friend's paperback passed on; later, the band's name off Elijah's page", "Take the band's name off that page.",
+     "(nothing more on the page)", "",
+     "", "",
+     "never shown", ""),
+    ("Nina Haverford", r"\bNina\b", "for Elijah to keep his head down until his stock vests", "Get to March, your stock vests, and then you can breathe.",
+     "", "", "", "", "no: he is laid off", "Elijah got laid off on a Tuesday, eleven months after the toast."),
+    ("Ruby Roth-Jones", r"\bRuby\b", "to collect Elijah", "I just like having people like you around. I collect them.",
+     "(his lamp keeps Ma company)", "You must be Barry. She asks for you.",
+     "Elijah says no to a million", "\"Nah. I'm sorry.\"",
+     "no", "Instead he changed the name to Don't."),
+    ("The Architect (Nadzieja Czekaj)", r"the Architect|Nadzieja", "a machine that asks first", "I am trying to make one that wants it.",
+     "the same", "It asked.",
+     "", "", "yes", "She is the one who taught me to ask first."),
+    ("Aaron Bidwell", r"\bAaron\b|\bBidwell\b", "farmland's records, and the dirt", "Find out what their dirt costs,",
+     "the hole in his map, and to own the machine", "Does it know it's mine?",
+     "the machine asks before taking the hole", "I can. Before I do, may I ask the people who live there?",
+     "no", "Somebody owns everything,"),
+    ("Gus", r"\bGus\b", "to do a show with Elijah, and not drive alone", "Let's do a show together.",
+     "to hear when the book comes out", "Let me know when it comes out.",
+     "", "", "yes: the second copy goes to his lodge", "The second he mailed to an old Elks lodge up the valley"),
+    ("Trent", r"\bTrent\b", "Elijah in the ads", "They wanted him in the ads.",
+     "", "", "", "", "no", "\"I don't want to do that,\" Elijah said."),
+    ("Melody", r"\bMelody\b", "her share of the farm", "How much money did you keep, you greedy little piece of shit?",
+     "to come home", "Do I need to come home?",
+     "", "", "yes: she visits Ma", "M. Madrone, the second Saturday."),
+    ("Manny", r"\bManny\b", "to give Elijah a room", "Back room's empty, Elijah.",
+     "", "", "", "", "yes", "It turned out the offer was still good."),
+    ("Grace", r"\bGrace\b", "to do more for regular people, with Elijah", "But now I see that you want to do more for regular people, and that's what I want to do too.",
+     "the machine to stop asking and feed people; Elijah home (typed and deleted)", "Why is it standing on the step? Who told it to do that? Just do it.",
+     "the fire: she can't make anyone choose, and hates it", "I wish I could choose not to care like you.",
+     "not yet: the route stops in five weeks", "\"There's no money for the route after December,\" Grace said."),
+    ("Marta", r"\bMarta\b", "to make what people need; no apps", "You need something made?",
+     "a welder for the gap, and to know if the machine became the steel", "\"Did it become the steel,\" Marta said, \"or is it sitting on top of it?\"",
+     "his coupon bends", "It became the steel.",
+     "partly: the weld holds, and he goes", "\"Go on, Elijah,\" she said."),
+    ("Lou", r"\bLou\b", "Elijah welcomed and staying", "He'll be staying with us for a while.",
+     "everybody eats, and Elijah's place kept", "Thanksgiving, there's a place at that table with your name on it, whether you sit in it or not.",
+     "", "",
+     "no: he lays the place and Elijah doesn't come", "\"I know he's not coming.\" Lou squared the fork."),
+    ("Denny", r"\bDenny\b", "the plain version, from the horse", "I want to hear it from the horse. And say it like I'm on my couch.",
+     "not to be scared on a Tuesday; the table filmed as it is", "I wanted not to be scared on a Tuesday.",
+     "he leaves for Spokane, and comes back", "Is Friday still Friday?",
+     "yes, for now", "\"It's Thanksgiving,\" he said to it. \"Here's ours.\""),
+    ("Curtis", r"\bCurtis\b", "a fence against the unprepared", "That's who you plan for. That's who you fence out.",
+     "to know who holds the plug", "I just want to know who's holding the plug.",
+     "on the ridge, Elijah is on his side of the fence", "You're just on this side of it.",
+     "no: it is in the walls", "It's in the walls. He put it in the walls."),
+    ("Priya", r"\bPriya\b", "the measurement, not the picture", "What would you measure?",
+     "the truth at thirty centimeters", "That's ours. That's the names column.",
+     "", "", "yes", "circled. Worm."),
+    ("Tyler", r"\bTyler\b", "gas money, and to learn", "I'd take gas money.",
+     "the machine here, and to use it", "\"Finally,\" Tyler said.",
+     "Marta's apprenticeship", "\"Monday,\" he said.",
+     "yes", "I'd rather it was here."),
+    ("Reuben", r"\bReuben\b", "the paper right, and the old fight won", "I have been waiting my entire adult life for this exact fight.",
+     "", "", "", "", "yes", "PARCELS HELD IN TRUST: 1."),
+    ("Patricia", r"\bPatricia\b", "to see what forty of her growers were buying", "to see what forty of her growers were buying",
+     "to know who signs off on the machine", "Who signs off on a thing like this?",
+     "she confesses she has used it for three years", "I've used it every day for three years,",
+     "no", "\"I can't be part of this,\" Patricia said."),
+    ("Wren", r"\bWren\b", "some things kept for people; a vote", "Not the machine. Nobody getting a vote.",
+     "the same, and it unsettles her when it comes", "Now it's asking for mine, and I don't know why I'm not glad.",
+     "", "", "partly: the vote is offered", "It wants a vote,"),
+    ("Frank", r"\bFrank\b", "to have chosen instead of hoped", "I'd have chosen some things, instead of hoping them.",
+     "someone to fix things at two in the morning", "Who fixes it at two in the morning in festival week, bud?",
+     "the tool library takes him on", "It turned out what it needed was a man who knew where every last thing was.",
+     "yes", "Then Frank hung his grandfather's bell over the tool library door."),
+    ("Irene", r"\bIrene\b", "to keep her house", "Irene Calder did not want to leave her house.",
+     "the table to pray together", "Walt always did the Lord's Prayer,",
+     "", "", "yes", "PARCELS HELD IN TRUST: 1."),
+    ("Rosa", r"(?<!Santa )\bRosa\b", "to cook again; something she can heat", "\"I said I used to cook.\"",
+     "to be told before it stops; and dinner unchanged", "You told me it doesn't change my dinner. Was that true or wasn't it?",
+     "she cooks Thanksgiving 2026", "Rosa made the dinner that year, her first for the farm.",
+     "yes", "\"Pass the lamb,\" Rosa said."),
+    ("Hector", r"\bHector\b", "real checking, not a label", "\"Nobody was checking,\" he said. \"Your leaf don't fix that.\"",
+     "a robot over another October like the last", "Hector said he'd take a robot over another October like the last one",
+     "", "", "no: they leave", "The Ochoas are leaving,"),
+    ("Lupe", r"\bLupe\b", "a machine she can carry out of her field", "If it does something stupid in my field, I want to be able to carry it out.",
+     "someone to keep checking", "\"Somebody should keep checking,\" Lupe said,",
+     "", "", "no: they leave", "The Ochoas are leaving,"),
+    ("Richard Praether", r"\bPraether\b", "the arms off and the military away", "as long as they're unplugged and turned off and the military can't access them.",
+     "", "", "", "", "yes: the arms stay put", "He left them where they were."),
+    ("Yvonne Osei", r"\bYvonne\b", "Marta to get the scan and stop working overhead", "You need the scan.",
+     "", "", "", "", "never shown", ""),
+    ("Dale Calder", r"\bDale\b", "someone to drive his mother to the doctor", "I'm asking who drives her to the doctor.",
+     "", "", "", "", "yes", "who drove her to the doctor and on which Thursdays"),
+]
+
+
+def desires(book, outdir, date):
+    b = Book(book, outdir)
+    rows = []
+    for person, pat, want, wq, end, eq, chg, cq, gets, gq in DESIRES:
+        ln, ch, no, line = b.first(pat)
+        rows.append([person, ch, no, ln, line, want, wq, cite(b, wq), end, eq, cite(b, eq), chg, cq, cite(b, cq), gets, gq, cite(b, gq)])
+    write_csv(outdir, "desires-characters", date,
+              ["Person", "Introduced (chapter)", "Scene #", "Line", "First line that names them (script)",
+               "Wants when we meet them", "The line", "Where", "Wants by the end", "The line", "Where",
+               "Where it changes", "The line", "Where", "Gets it?", "The line", "Where"], rows)
+    data = json.load(open(os.path.join(outdir, "desires-scenes-data-2026-11-27.json")))
+    srows, bad = [], 0
+    for s in data:
+        wants = []
+        for w in s["wants"]:
+            try:
+                ln, _, _ = b.find(w["quote"])
+            except SystemExit:
+                bad += 1
+                continue
+            wants.append(f"{w['person']}: {w['want']} (line {ln}: \"{w['quote']}\")")
+        srows.append([s["sheet"], s["chapter"], "; ".join(s["people"]), " | ".join(wants), s["turn"]])
+    write_csv(outdir, "desires-scenes", date, ["#", "Chapter", "On the page (readers)", "What each person is after (readers; every quote found by the script)", "What turns (readers)"], srows)
+    print(f"{len(rows)} people, {len(srows)} scenes; {bad} scene quotes no longer in the book (dropped)")
+
+
+
+# ---------------------------------------------------------------- conversations, layer two (a reader's pass)
+# Only what the scene sheet's "What happens" and "What turns" don't say: what each person wants from the other,
+# what changes between them, and the line it sets up or pays off (cross-checked with the knowledge sheet).
+# (who, with, a line from the conversation, A wants from B, B wants from A, what changes, sets up / pays off, its line)
+CONVERSATIONS2 = [
+    ("Elijah", "Devendra", "Five years. Thanksgiving, 2027. A machine that can do any job in this building.",
+     "to be told he is overreacting", "for Elijah to calibrate, and a sure bet", "a joke becomes a dated bet in ink",
+     "pays off Ch 39: Devendra loses and cooks", "Dinner's on me!"),
+    ("Elijah", "Ma", "Okay, baby. So what do you want me to do about it?",
+     "for her to see it", "for him to be fed and safe", "nothing on the call; she acts on it in secret",
+     "pays off Ch 13: the barn of buckets and her copy of his list", "Elijah is worried about the computers. Be nice about it."),
+    ("Elijah", "David", "Have you talked to, like, a mental health professional lately?",
+     "for David to say holy shit, Mad", "for Mad to sleep and come back to himself", "the friend who always looked at him looks at the twenty",
+     "pays off Ch 39: the same line, looking at him", "He was looking at Elijah when he said it."),
+    ("Elijah", "Ruby", "Does it work on you?",
+     "something he can't name, then nothing", "to collect him", "Elijah's question stops Ruby for one breath; the million is refused",
+     "pays off Ch 37: Ruby's lamp keeps Ma company", "You must be Barry. She asks for you."),
+    ("Elijah", "Gus", "Let's do a show together.",
+     "not to be one more yes", "company on the road", "Elijah says no to the kind one",
+     "pays off Ch 39: the second copy of the book", "The second he mailed to an old Elks lodge up the valley"),
+    ("Elijah", "Melody", "Do I need to come home?",
+     "to be believed that he kept nothing", "the money; under it, whether to come", "he blocks her",
+     "pays off Ch 37: she has been visiting", "M. Madrone, in round, careful letters."),
+    ("Elijah", "the old man", "Somebody did this for me.",
+     "to know why people won't help", "to pass on what was done for him", "Elijah takes the twenty",
+     "pays off Ch 39: the same advice on David's wall", "God, grant me the serenity to accept the things I cannot change"),
+    ("Elijah", "Marta", "Swarf goes in the red bin.",
+     "to be useful; first, to pitch", "to see if he finishes the job", "the pitch dies and the broom starts",
+     "pays off Ch 37: she calls him Elijah", "\"Go on, Elijah,\" she said."),
+    ("Grace", "Elijah", "am I going to find anything sharp in here?",
+     "to know he is safe to have around", "to keep his backstory", "a laugh, and the amp found",
+     "pays off Pondwater: the smell, said to Marta", "\"Pheromones,\" Marta said. \"You two have chemistry.\""),
+    ("Lou", "Grace", "He will play when he's ready. We cannot force the music out of him.",
+     "for her to be gentle with their guest", "for Elijah to play", "she goes to Marta instead of back to the truck",
+     "pays off Ch 38: she sings at the amp he left", "She started to sing. It was \"The Weight.\""),
+    ("Lou", "Elijah", "Then let her think it,",
+     "the arms kept from Grace", "to help", "Elijah keeps a secret from Grace on Lou's word",
+     "pays off Ch 34: Lou owns it at the table", "I told our friend Elijah to keep the arms a secret."),
+    ("Grace", "Elijah", "You picked nothing.",
+     "for him to take a side", "not to pick", "the first time she is angry at him",
+     "pays off Ch 36: he picks nothing again, out loud", "\"No, we don't.\""),
+    ("Grace", "Elijah", "That's what the tape is. Somebody checked.",
+     "to be understood without being fixed", "to tell her about the realtors and the sale", "they trade the two stories they've told nobody",
+     "pays off Ch 36 and 37: the gate, and the new tape", "Next to it there was a new one."),
+    ("Lou", "Grace", "I would hate for you to miss out on something grand because you settled for good enough.",
+     "for her to give Elijah a chance", "her freedom, and her tradition", "she goes away for the winter, and in October skips her festival",
+     "pays off Ch 34: she turns on Lou and gets one word", "\"Yeah. I helped him move the arms over there.\""),
+    ("Grace", "Elijah", "Elijah, do you personally know a billionaire?",
+     "the truth about where he came from", "to keep it light", "he skips off to dinner",
+     "pays off Ch 34: 'I know a guy', to the table, not to her", "I know a guy who'd ship a few more up."),
+    ("Reuben", "Elijah", "I'm asking why I had to go and look.",
+     "to be told, not to find out", "to keep the deed quiet", "Elijah deletes the row about himself",
+     "pays off Ch 33: he tells the table", "I sold it to them. My mother's place."),
+    ("Marta", "Elijah", "Go find out if they ate.",
+     "for him to stop telling it like a murder", "to leave", "he finishes the bracket",
+     "pays off Ch 39: David tells him they ate", "They're fine. They were fine by that spring."),
+    ("Grace", "Elijah", "Which one of us helped, Elijah.",
+     "an answer about the door", "to talk about doors", "he can't say",
+     "pays off Ch 36: the Subaru, and he doesn't know which one he helped", "didn't know which one of them he'd helped."),
+    ("Lou", "Elijah", "People have to change their own minds.",
+     "for him to see his own impact", "to know why they said no", "he lets the arms go",
+     "pays off Ch 36: he says it to Grace, and it breaks them", "\"I'm saying that it's not our responsibility to choose for them.\""),
+    ("Grace", "Elijah", "That's not a principle, Elijah. That's your mother.",
+     "for him to act for Mrs. Delgado", "for her to let people choose", "each uses the thing the other told them in trust",
+     "pays off Ch 37 and 38: the note in the pouch, and the tape", "I love you too"),
+    ("Devendra", "Elijah", "The three letters. That was us.",
+     "to be forgiven for helping", "to have been told", "the sale he hated was done by a friend, to save the room",
+     "pays off Ch 13: the paper eighteen days on the door", "The paper had been out there eighteen days with the sale date on it, facing the road."),
+    ("David", "Elijah", "There's a Barry.",
+     "for Mad to stop carrying it", "to know about Ma and the three", "Barry is real, and the three ate",
+     "pays off Ch 13 onward: 'There isn't any Barry.'", "There isn't any Barry."),
+]
+
+
+def conversations2(book, outdir, date):
+    b = Book(book, outdir)
+    rows = []
+    for a, w, line, a_wants, w_wants, change, pays, pline in CONVERSATIONS2:
+        rows.append([a, w, cite(b, line), line, a_wants, w_wants, change, pays, cite(b, pline), pline])
+    write_csv(outdir, "conversations-layer-two", date,
+              ["Who", "With", "Where", "A line from it", "What the first wants from the second", "What the second wants from the first",
+               "What changes between them", "Sets up / pays off", "Where", "The line"], rows)
+    print(f"{len(rows)} conversations; every line found in the book")
+
 if __name__ == "__main__":
-    if len(sys.argv) < 4 or sys.argv[1] not in ("calendar", "conversations"):
+    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2}
+    if len(sys.argv) < 4 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
     date = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else "2026-11-27"
-    {"calendar": calendar, "conversations": conversations}[sys.argv[1]](sys.argv[2], sys.argv[3], date)
+    cmds[sys.argv[1]](sys.argv[2], sys.argv[3], date)

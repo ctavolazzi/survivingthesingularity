@@ -1589,6 +1589,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (261, "a document he'd started at 1:40 in the morning,", "a document he'd started at 12:30 in the morning,"),
 (261, 'At 1:20 a.m. the machine threw', 'At 2:20 a.m. the machine threw'),
 (261, 'the tower in his apartment at 1:20 in the morning.', 'the tower in his apartment at 2:20 in the morning.'),
+# 262, Ch 2: the opening line (CT, 27 Nov, fourteenth chat)
+(262, 'They announced the future on a Thursday morning, with pastries.', 'They announced the future like it was a regular morning, with pastries and free juice.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -43,7 +43,7 @@ WHEN = """
 4|2022-11-21|The Monday after the toast: the bet|stated
 5|2022-11-21|The same Monday, at the Bear Flag|stated
 6|2022-11-21|That night: the tower|stated
-7|2023-02|Early 2023, a Thursday: the all-hands|worked
+7|2023-02|Early 2023, a morning: the all-hands|worked
 8|2023-02|The same morning|stated
 9|2023-02|That night|stated
 10|2023-02|The same day, in the air|worked

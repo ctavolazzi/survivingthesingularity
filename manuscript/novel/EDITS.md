@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat), logged only. The next edit is 292.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edit 292 (27 Nov, the sixteenth chat), logged only. The next edit is 293.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4106,6 +4106,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      (Ch 13), years before Claypot. CT's words. Check rows 255 and 290 loosened. Corrected in place the same day, on
      CT's "Yes please fix it": "His dad" and "his dad's face" became "His father" and "his father's face", to match
      the narration's "his father" a few paragraphs up. Logged only.
+292. **Chapter 27: once they started they never stopped talking.** CT, 27 Nov (sixteenth chat), asking whether the book
+     shows that Grace and Elijah get along and have a lot in common: "even a couple additional paragraphs would do it /
+     Like \"once they started they just never stopped talking.\" / \"Topics crossed intellectual property lines, ranging
+     from ancient texts to which aisle was their favorite in the grocery store. There was something about...\"" Claude's
+     answer from a read of their scenes: the care, the shared wound and the fun are on the page; what is missing is the
+     two of them just talking once they are together, and the place for it is the weeks after the pond. CT: "Yes place
+     the edits in the proper locations". Placed by Claude as a paragraph of its own in Chapter 27, after "For the first
+     time in her romantic life, she was enjoying taking the scenic route." and before "They danced on a hillside". CT's
+     words, his two finished sentences, with "once" capitalized. His unfinished "There was something about..." is not
+     in the book; it waits on the rest of the sentence from him. Searched: "stopped talking", "grocery", "ancient
+     texts" and "intellectual property" are nowhere else; "aisle" only as the fastener aisle at Kowalski's (Ch 25).
+     Scene 87 goes from 176 to 203 words. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

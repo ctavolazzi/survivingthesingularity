@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 19.
+Totals: accepted: 224, not in the Doc: 69.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -25,11 +25,11 @@ Edit 57 was never used.
 | 12 | Ch 1, 2, Appendix | accepted | "Loser cooks dinner." |
 | 13 | Ch 0 | accepted | satellite office |
 | 14 | Ch 1 | accepted | Sure. A little. I can't stop thinking about the people the realtors... |
-| 15 | Ch 1 | accepted | Devendra wanted a prediction. He'd give him a better one. And he'd ... |
+| 15 | Ch 1 | accepted | Devendra wanted a prediction |
 | 16 | Ch 1 | accepted | He had found his first limit. |
 | 17 | Ch 1 | accepted | needed watts, of course, but it also needed cooling. |
 | 18 | Ch 1 | accepted | wasn't much of a prediction engine. |
-| 19 | Ch 1 | accepted | where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean pa... |
+| 19 | Ch 1 | accepted | where he'd scrawled MADRONE IS NOT A DRONE,  |
 | 20 | Ch 1 | accepted | The fans coasted to silence. "Shit." The room ticked |
 | 21 | Ch 2 | accepted | He was done being blindsided. He would try to pay closer attention. |
 | 22 | Ch 2 | accepted | He meant to do it, but he never got the chance. |
@@ -194,7 +194,7 @@ Edit 57 was never used.
 | 181 | Ch 17 | accepted | The warm place on Elijah's arm stayed warm, but under it was a ques... |
 | 182 | Ch 21 to 39 | accepted | Elijah watched her do forty in a night. |
 | 183 | Ch 18 | accepted | Claypot shipped Companion 2.0 on a Thursday afternoon, just fifteen... |
-| 184 | Dedication | accepted | like I'd finally lost it. / Recognize Your Power / Act One |
+| 184 | Dedication | accepted | (nothing left to check) |
 | 185 | Contents, Dedication | accepted | Contents / Dedication / Act One |
 | 186 | End | accepted | Thursday, November 25, 2027. Thanksgiving. / Thank You / Thank you ... |
 | 187 | Ch 31 | accepted | He believed her because he wanted to. / The next Sunday at 9:40 he ... |
@@ -253,3 +253,54 @@ Edit 57 was never used.
 | 240 | Pondwater, Ch 27, Ch 36 | not in the Doc | "Grace," he said. "We work together." |
 | 241 | Ch 33 | not in the Doc | She had never said it boldly to his face. |
 | 242 | Ch 17, Pondwater | not in the Doc | Through process of elimination, he figured, something that kind of ... |
+| 243 | Ch 26 | not in the Doc | Grace was back by the time the beds went in. Curtis had run the rou... |
+| 244 | Dedication | not in the Doc | Dedication / To the people who called me crazy. Thank you for the m... |
+| 245 | Ch 0 | not in the Doc | Elijah would sit down and it would appear like magic. / At the far ... |
+| 246 | Ch 0 | not in the Doc | including styles he recognized. Styles with names attached, people ... |
+| 247 | Ch 0 | not in the Doc | Google had made the engine of AI. With that paper release they'd th... |
+| 248 | Ch 0 | not in the Doc | the kind of problems that had eaten whole weekends and watched it |
+| 249 | Ch 0 | not in the Doc | Then he leaned in and said with a concerned tone, "Mad, you look li... |
+| 250 | Ch 0 | not in the Doc | "They'd have found a reason," he said. "They always do." |
+| 251 | Ch 0 | not in the Doc | the laptop open, 12:30 in the morning, |
+| 252 | Ch 0 | not in the Doc | not "Actually Indians" typing behind the scenes |
+| 253 | Ch 0 | not in the Doc | Elijah put a twenty on the bar. / "Your money |
+| 254 | Ch 0 | not in the Doc | quietly replaced the heart of machine intelligence. |
+| 255 | Ch 0 | not in the Doc | rub that in his father's face. / Elijah worked out of a satellite o... |
+| 256 | Ch 1 | not in the Doc | I watched three people get replaced last week. Real people. And the... |
+| 257 | Ch 1 | not in the Doc | "Three jobs is a rounding error, Elijah," Devendra said. "You build... |
+| 258 | Ch 1 | not in the Doc | "Five years," Devendra scoffed. "That |
+| 259 | Ch 1 | not in the Doc | People ate for a few hundred thousand years before anybody ever pun... |
+| 260 | Ch 1 | not in the Doc | Devendra wanted a prediction, and Elijah had given him a guess. He ... |
+| 261 | Ch 0, 1, 8, 39 | not in the Doc | the laptop open, 12:30 in the morning, and the cursor |
+| 262 | Ch 2 | not in the Doc | They announced the future like it was a regular morning, with pastr... |
+| 263 | Ch 2 | not in the Doc | The realtors had watched a demonstration of a tiny baby robot. This... |
+| 264 | Ch 1 | not in the Doc | He left the tower off for a week while he processed things, kept up... |
+| 265 | Ch 2 | not in the Doc | A bit later Wes sent a link. |
+| 266 | Ch 2 | not in the Doc | It just stopped being theirs." Elijah nodded at the screen |
+| 267 | Ch 2 to 34 | not in the Doc | to do it, but he never got the chance. / In the shuffle afterward, |
+| 267 | Ch 7 (kept) | accepted | picked up the knife. /   / Elijah sat in the truck with the engine ... |
+| 268 | Ch 3 | not in the Doc | Grad students, caffeine, conference deadlines. |
+| 269 | Ch 4 | not in the Doc | Sitting there at the witching hour when the bars normally closed, w... |
+| 270 | Ch 4 | not in the Doc | and stacking guesses doesn't get you truth. It gets you a mural of ... |
+| 271 | Ch 5 | not in the Doc | So before he could ruin it he bought the Bear Flag, |
+| 272 | Ch 5 | not in the Doc | and all the guys and gals at every open mic |
+| 273 | Ch 6 | not in the Doc | Elijah got laid off eleven months after the toast. |
+| 274 | Ch 6 | not in the Doc | So I got laid off today. That's not the big news. |
+| 275 | Contents and Ch 6 | not in the Doc | Chapter 6: Two Minutes and Eleven Seconds / Chapter 7: You're Early |
+| 276 | Ch 7 | not in the Doc | It was the most affirming thing anyone had said to him since this b... |
+| 277 | Ch 7 | not in the Doc | "I didn't follow it, baby, but the numbers are big! You keep this u... |
+| 278 | Ch 7 | not in the Doc | He told her the floor was clean now, side-eyeing a growing pile of ... |
+| 279 | Ch 8 | not in the Doc | And on your next video, maybe it's eight thousand. Do you know how ... |
+| 280 | Ch 10 | not in the Doc | "Fifty million views on one video, and it's still going," Ruby said... |
+| 281 | Ch 8 to 10 | not in the Doc | He had on a jacket that looked like it came straight out of Almost ... |
+| 282 | Ch 10 | not in the Doc | the fur of his magnificent jacket going up and down like an endange... |
+| 283 | Ch 10 | not in the Doc | and handed it back. Elijah could tell he meant it. If he didn't, th... |
+| 284 | Ch 7 | not in the Doc | The first comment from a stranger, under the video, came from a wom... |
+| 285 | Ch 17 | not in the Doc | On the third evening Elijah walked out to the old wooden fence alon... |
+| 286 | Ch 32 | not in the Doc | before the oak had caught. /  / In April, when he dug the pit, Priy... |
+| 287 | Ch 6 | not in the Doc | the ink going brown. The coffee smelled like a slice of heaven. He ... |
+| 288 | Ch 10 | not in the Doc | "Suit yourself, man," Ruby shrugged again, the fur |
+| 289 | Ch 0 | not in the Doc | He had never actually read what was inside it. You should know how ... |
+| 290 | Ch 0 | not in the Doc | gone back to nodding. Elijah did not like the corporate bobbleheadi... |
+| 291 | Ch 0 | not in the Doc | enjoy the money. His father always said he had a champagne appetite... |
+| 292 | Ch 27 | not in the Doc | taking the scenic route. Once they started they just never stopped ... |

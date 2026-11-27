@@ -602,3 +602,55 @@ overlap. Left out: "Heart pounding in his chest", his direction for the hand whe
 move is already made. Claude's words: "into the pillow", "She moved a little closer", "scrunched up one shoulder",
 "His voice came down, lower and quieter", "November". The shirt morning must fall before Friday 20 November 2026, when
 she calls him "Babe" (Ch 27).
+
+### CT's correction (27 Nov 2026): which part is the move and which is the pillow talk. Draft follows; NOT logged.
+
+His words: "No, I wanted that scene where he's like, is that what you want, for us to just be coworkers? That's when he
+takes the chance and kisses her and makes his move. That's not pillow talk. The why'd you wait so long is the pillow
+talk."
+
+Claude had it backwards in the draft above. Corrected: the coworkers exchange is the night at the pond, and it ends in
+the kiss. "Why'd you wait so long?" and his rule are the pillow talk, a month later. **His words are in bold.**
+Lines already in the book are marked (book).
+
+The pond (October 2026), on the blanket, after "That was all she said about it.":
+
+> He turned onto his elbow. She was already looking at him. (book)
+>
+> "Grace," he said. "We work together."
+>
+> "**Oh, did you date a coworker before?**"
+>
+> "**Is that what you are to me? A coworker? Is that what we are? Coworkers?**"
+>
+> She moved a little closer. "**I mean.**" She scrunched up one shoulder. "**If that's what you want, we can just be coworkers.**"
+>
+> His **heart** was **pounding in his chest**. He slid **his hand over onto hers** and squeezed it.
+>
+> "**Is that what you want?**" His voice came down, lower and quieter. "**For us to only be coworkers?**"
+>
+> He kissed her. (book)
+>
+> "A year," she said, after. "A whole year, Elijah." (book)
+>
+> "I know." (book)
+>
+> She pulled him back down by his collar. (book)
+
+Then, in place of "In the morning she was in his kitchen, wearing his shirt and drinking coffee.":
+
+> **It went on like that for weeks, both of them teasing the other. A peck here, a stolen tongue kiss there. Elijah enjoyed holding back, and Grace begrudgingly enjoyed being tortured by Elijah's boundaries. It took everything in her not to push him.**
+>
+> **For the first time in her romantic life, she was enjoying taking the scenic route.**
+>
+> **They danced on a hillside every few nights for a month before, one day in** November**, she woke up wearing his** T-shirt.
+>
+> "**Why'd you wait so long?**" she said, into the pillow.
+>
+> "**Well, I mean, I kind of have a rule about not messing things up. Where I work.**"
+
+Then, as now: "Later that morning Marta looked at him over her welding hood ..."
+
+Claude's words: "Grace," he said. "We work together." (a bridge: in his dictation "did you date a coworker before?"
+answered the rule line, which is now a month later; something has to bring up work at the pond); "She moved a little
+closer"; "scrunched up one shoulder"; "His voice came down, lower and quieter"; "into the pillow"; "November".

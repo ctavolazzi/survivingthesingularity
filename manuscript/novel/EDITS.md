@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat), logged only. The next edit is 296.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 299 (27 Nov, the seventeenth chat), logged only. The next edit is 300.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4145,6 +4145,48 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      week's rain, and when it caught, its smoke came out low over the field and smelled like moss." **Claude's wording.**
      Searched: "smoke ... lay down flat" (Praether, Ch 17) and "rolled out" (the rover, Ch 26) were avoided. Check row
      233 now reads "grinned like a kid. The old fence was still wet". Scene 120 grows by 26 words. Logged only.
+
+296. **Chapters 21 and 24: the shouse lands in a scene.** CT, 27 Nov (seventeenth chat): "the shop house, the SHOUSE,
+     may be a weak point in the book. Do we have a scene where Elijah is introduced to it and he marvels at it?" The book
+     had none: the word came in a one-line flashback in Chapter 24 ("he'd asked, the first time he saw it on the
+     whiteboard"), and Elijah watches the shouse get built, so he cannot walk into a finished one. CT asked for each
+     decision to be walked through from the sheets, then: "Yes, please" to drafting on six calls, and after seeing the
+     draft: "close out this session with all of the fixes implemented, logged". New scene in Chapter 21, between "He read
+     the next few to himself." and "The last week of June the valley hit a hundred and four." (447 words; scene 130 on
+     the scene sheet). The drawing is on the shed whiteboard in the middle of June; Marta says what the word means; Priya
+     read the county building code and Reuben filed it; Elijah looks up into the rafters and out at the kitchen trailer
+     and thinks of the two arms in Praether's barn; Lou asks, Elijah answers, Priya asks, "Oh, yeah."
+     **CT's words** (he said "don't use these words exactly ... I'm just brainstorming", so the beats are his and these
+     lines are kept close): "this is really cool"; "How'd you guys get the permits for this?"; "What wheels are turning in
+     that brilliant mind of yours" (Claude added "professor", Lou's name for him); "Oh, I got some good, bad ideas. I got
+     some really good, bad ideas."; "Did you mean to say good, bad?"; "Oh, yeah." and the scene ending there. **The
+     book's words:** "What the fuck is a shouse?" and Marta's "Shop. House. A shop that's set up to keep the person
+     running it alive.", moved out of Chapter 24 so the word lands once ("he'd asked, the first time he saw it on the
+     whiteboard" is gone; Chapter 24 now runs "...a rectangle of dirt that was his." straight into "He had wanted to weld
+     on it."). **Claude's wording:** everything else. **Invented by Claude, his to change:** the middle of June; what
+     the drawing shows (a bed and a stove at one end, a workbench at the other); "They come in August" (from Chapter 24's
+     last week of August); Priya's paper sample bags; that Priya read the county building code, Reuben filed, and the
+     county sends one inspector for the house and another for the shop (not fact-checked against any real county's code;
+     Ardell's county is the book's own); Marta's "She's the reason there's a drawing"; Lou's water jug. Changed from
+     CT's sketch, with the reason: no RV (the book has none; the kitchen trailer stands in), the rafters are the packing
+     shed's (the shouse is two containers), Grace is not in the scene (she cannot know about the arms before Chapter 34,
+     edit 234), and the arms are not named aloud. Pays off at "So you've been sitting on industrial technology this
+     entire time?" (Priya, Chapter 34, CT's line). Searched: "smirk", "share a roof", "miserable", "really cool",
+     "forgot about" and "good, bad" are nowhere else. `drafts/edit-296-299-shouse.md`. Logged only.
+297. **Chapter 24: a workbench in the shouse.** The page defines a shouse as a shop a person lives in, and until now no
+     shouse line had a bench or a tool in it. After "every person standing in it had lived in bigger.", a new paragraph:
+     "The workbench went in along one wall and the bed at the far end, the way the drawing had it." **Claude's wording**,
+     on CT's yes to the six calls (call 4: no heavy machines, because the annual meeting and Thanksgiving need the one
+     room). Scene 62 is 685 words (698 before 296 and 297). Logged only.
+298. **Chapter 27: one town asks for the shouse drawings.** Chapter 24 says "anybody could build the next one from the
+     notes", and the eleven towns asked only how to start and for the controller plans. "A tribal housing authority."
+     becomes "A tribal housing authority that wanted the shouse drawings." **Claude's wording** in a base-text line, on
+     CT's yes to the six calls (call 6). Scene 84 grows by 5 words. Logged only.
+299. **Chapter 27: the last grant would run out in June.** It is October 2026 and the route is running; Elijah has just
+     said "The route's got no money past June." The narration's "and the last one ran out in June." becomes "and the last
+     one would run out in June." Claude's wording in Claude's line (edit 206); open with CT since the scene sheet audit
+     and the calendar check, closed under his "all of the fixes implemented, logged". The calendar check now holds.
+     Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

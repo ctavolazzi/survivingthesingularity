@@ -358,12 +358,20 @@ Everything here is from a line CT dictated or approved, or is in the book.
   see Marta as like an older lesbian ... there's an opportunity to add a little bit of, I don't know, almost double
   speak to the way she talks." Claude's answer, not ruled on: in her kind lines and warnings only; plain about the
   press, Emeka and safety.
+  On the math (CT, 26 Nov, edit 229): short and plain, "Because it's one of the Millennium Prize problems." He started
+  her on "something that has eluded humanity's ..." and stopped: "No, she wouldn't talk like that." She can tease and
+  swear inside an analogy ("Hold your horses, young lady."; "Just absolutely wreck your shit."). The table half
+  listens to Curtis; when Marta is shaken, it stops eating.
 - **Grace.** Asks first: "Can I?" [106] Doubts herself out loud: "Maybe I'm a little too cautious." [123] Two voices,
   the warm one and the one she uses on trailer hitches. Her written voice is formal with cheek ("that stupid Chobani
   yogurt commercial" [159]). She squints to show she's mad and grins anyway. "Intelligent", "assertive", "cares so
   much", "strong-willed, but she can be silly": shown, never listed.
+  To Elijah once they are together (edit 229): "Babe." She asks for the promise twice and won't take "I'm already
+  doing that" ("No. Promise me."), then "Thank you. I believe you."
 - **Curtis.** Movies, fences, engines. "The dude's got the gift for gab. I thought we agreed." [109] "I need to go
   build an EMP."
+  He is the one who brings the news to the table (CT, 26 Nov: "that's kind of his role"), and "Curtis is a wingnut",
+  so nobody takes it in until someone steadier does.
 - **Priya.** Spoiling for the argument: "almost daring him to say something to her directly, waiting for her moment to
   pounce" [103]. "It's what makes him such a pain in the ass. But he's quite useful." [129] "I ran for office, don't
   you remember?" The pencil behind her ear.
@@ -373,7 +381,12 @@ Everything here is from a line CT dictated or approved, or is in the book.
   best artists most people had ever met" [195].
 - **Reuben.** A retired title officer; paper and folders. Others vouch for him: "Saved our ass quite a few times."
   [130]
-- **Tyler.** No voice fact of CT's on file; his lines so far are Claude's. Young, quick, unpaid.
+- **Tyler.** Young, quick, unpaid. CT's lines for him (26 Nov, edit 229): "So what? Who cares? ... I hate math. I don't
+  like doing math problems. Isn't it good if that's solved?"; "What is that, like a video game?" with "a twinkle in his
+  eye"; "GTA 6 is awesome. The physics are really good. Why is this a bad thing?" He is the youngest at the table, and
+  from that dinner Elijah suspects he knows "more than he was letting on". CT: it doesn't have to pay off, only connect
+  loosely (Chapter 26 has him saying nothing about what he worked out; Chapter 38 has his "Finally."). His other lines
+  are Claude's.
 - **Coming back in Chapters 23 to 36:** Devendra ("I got a mortgage and three kids. I gave up identity crises a long
   time ago." [9]); David ("What's it gonna do? Yank the tap handle?" [43]); Rosa ("Mijo, you look muy flaco. Come in,
   eat." [110]).
@@ -386,6 +399,14 @@ then deliver the twist at the end via Grace who sees the letters from the VA." H
 the kids: one finger up, "Mark my words," "Beware the military!" (CT's line), "Don't say nobody warned you." The scene
 is allowed to be funny, and Grace is allowed to say so in the truck. The weight comes after, from the envelope, and from
 Lou in the next chapter. Don't put his history in his own first speech. No film is named or quoted.
+
+Since edit 230 (CT, 26 Nov): his first line has "a rattle in his voice like a can of paint being turned over". He sets
+terms ("unplugged and turned off and the military can't access them"; "I got ordnance out here"), warns about "the
+military-industrial complex" ("Like old Ike said") and gets the names wrong without caring ("Skylinks and Starnets").
+He does not warm to a quip. CT: "I don't think actually they would bond over just a tinfoil hat comment. Richard would
+push back." So: "You messing with me, son?", and he laughs only when Elijah tops it ("I'm not trying to help no lizard
+people"). Out of the book now: "Beware the military!", "Don't say nobody warned you." and the gas station movie talk in
+the truck (it is "What the hell was that?" "Oh, it's okay. I speak wingnut."). "Mark my words." and the one finger stay.
 
 ## 13. Before a chapter is logged
 
@@ -426,6 +447,9 @@ Lou in the next chapter. Don't put his history in his own first speech. No film 
   same year." He remembered his book; Claude hadn't read it.
 - When an idea of his collides with a page already written, say which page and offer one way through; that is the
   push-back he asks for (the rover "on its way", Grace's father "left", 26 Nov).
+- **Read the chat before you ask.** CT, 26 Nov, when Claude asked what "Make a list of fixes" covered: "Read the chat.
+  You should be able to answer that question for yourself if you read the chat." Ask only what the chat, the files and
+  the pages cannot answer. When the answer is there, act on it and say in one line what you took it to mean. **[C]**
 
 ## 15. Debts in edits already logged
 
@@ -450,6 +474,26 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   chest landed a page apart while the ladle opened Chapter 31.
 - A clause that can attach to the wrong noun gets a comma and a subject: "The shop I went to after the plant bought a
   robot welder" read as the plant buying it; "At the shop I went to after the plant, they bought a robot welder".
+
+## 15b. Learned 26 and 27 November (the Riemann and Praether chat, edits 229 and 230)
+
+- A real event goes in at its real date. CT: "it can go in the proper timeline in the book with real life." Look the
+  date up, then find the scene already standing on it (the announcement was Friday 20 Nov 2026, and Chapter 27 had a
+  Friday dinner that week). The sources go in the record.
+- When he leaves a speaker open ("somebody will ask", "whoever's there that's the youngest"), choose from the book's
+  facts (ages, who is at that table, who already carries the thread) and name each choice in the report.
+- A stage direction he has called worn gets shown another way. CT: "we don't have to say taken aback because we've
+  already had that a few times." (Grace and Elijah "looked at each other, and then at him.")
+- Two people don't bond over one quip. CT: "Richard would push back." The other man tests him first, and the laugh
+  comes when the joke is topped.
+- When his new scene collides with pages already written, keep what later chapters depend on (the brush hog in Chapter
+  26, Tyler sending him out to Praether's in Chapter 19), move his own earlier lines rather than drop them (the ace in
+  the hole went from Chapter 18 to the barn), and list every call in the report.
+- An acronym the book has never used gets one plain sentence the first time (RSI: "He meant recursive
+  self-improvement, a machine that could do the math to build a better machine."). **[C]**
+- Read new lines against the whole book for repeats before logging. This chat's own scenes said Lou's secrecy three
+  times and reused "Good. Keep it that way." from early in the book; the finishing pass (edit 233) had to take them
+  out.
 
 ## 16. Corrections of 26 November, as they happened
 

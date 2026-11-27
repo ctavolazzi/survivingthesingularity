@@ -64,6 +64,10 @@ From this chat:
 From the other chat's list: "wingnut" three times (Priya, Ch 17, Ch 27); "taken aback" twice (Ch 16, and his own in
 Ch 27); Praether's "I'll check them myself" and the ordnance threat, which never pay off (he said loose is fine).
 
+From the close of the Riemann chat (27 Nov; `CHECKPOINT-2026-11-26-riemann-praether.md`, first section): a line at the
+gate (Ch 36) that picks up Grace's "put humans first" promise (Ch 27). It is Claude's idea, said to him once, not
+answered. The lien sale (item 4 of that chat's fix list) was checked on the page and needs nothing.
+
 Carried over (tenth checkpoint): edit 226's "under 6 months"; Grace's winter away and Faith; the five polish-pass
 lines; the gas cap (Ch 25); "Marta had heard it as a murder" (Ch 39); "Creator Fund"; the 19 empty paragraphs in v8;
 the thin places (Praether after Ch 26, Mrs. Delgado after the fire, Bidwell's last beat, the welder gap, the
@@ -71,6 +75,9 @@ Telecaster); Grace telling Marta about the arms (plan 10.5); the Instagram synop
 duplicate builds; the site's private reader and compendium; the merge to `main`; the ISBN and the release build.
 
 ## The prompt for the next chat (the smell pass)
+
+Run once already, on 27 Nov, inside the Riemann chat: spin-up was clean, CT asked about the story's stakes instead, and
+no smell line was shown or logged. It can be pasted again as it is. The next edit is still 234.
 
 ```
 We're finishing my novel, Surviving the Singularity. This is the twelfth chat: the smell pass. Spin up before you do

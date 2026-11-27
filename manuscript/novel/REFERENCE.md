@@ -14,7 +14,8 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 2. `_workbench`: `STATE.md`, and the newest entry in `sessions/LOG.md`.
 3. Here, all of each: `WRITING-INSTRUCTIONS.md` (how CT wants it written), `PLAN-CHAPTERS-20-TO-36.md` (what happens;
    sections 10 to 13 are the working plan for 27 to 36), `EDIT-LOGGING-PROCEDURE.md` (mechanics, "What is still open",
-   "Where things stand"), `TODO.md`, the accepted chapters in `drafts/`.
+   "Where things stand"), `TODO.md` and the checkpoint files its first paragraph names, the accepted chapters in
+   `drafts/`.
 4. The tools: `manuscript/tools/edits-v6/make_v6.py` and `ops.py`; `manuscript/tools/edits-v5/checks.py` and
    `verify.py`; `manuscript/tools/edits-v6/find_in_book.py`.
 5. Read both Docs fresh with the Docs connector (the result is saved to a file; copy it and use it as READ.json):

@@ -3,7 +3,10 @@
 Updated 27 Nov 2026, end of the eleventh logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 234.** Next chat: the smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`). The scene
+**Next edit: 234.** Next chat: the smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`). That prompt was run once on
+27 Nov inside the Riemann chat: spin-up clean, nothing shown or logged, so the smell pass is still to do. That chat's
+closing notes (what is done, what is open, CT's words, the stakes answer) are the first section of
+`CHECKPOINT-2026-11-26-riemann-praether.md`. The scene
 sheet, one row per scene: Google Sheet id `1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY`, copy in `scene-sheet-2026-11-27.csv`. Two chats logged on this branch on 26 and 27 Nov. One: edit 229, Curtis and the Riemann
 hypothesis at Friday dinner, RSI, and Grace's promise (Ch 27); edit 230, Praether's terms and Lou at the barn (Ch 17,
 18); its fix list and prompt are in `CHECKPOINT-2026-11-26-riemann-praether.md`. The other (eleventh): edit 228, Lou's
@@ -104,6 +107,8 @@ Need CT's yes:
       chapter. For the rest of the book: his two places first, in his words (the truck he lives in, Chapters 14 and 15;
       the high-dollar party, Chapters 9 and 10), then any scene where a smell would carry the feeling. Each one shown to
       CT, since Chapters 0 to 19 are done.
+      Not started (27 Nov): the prompt was run once in the Riemann chat and stopped at "ready". Scene sheet rows for
+      his two places: 29 to 32 (the party) and 47 to 49 (the truck).
 - [x] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only. Built in the tenth chat:
       `manuscript/tools/edits-v6/openers.py OUT/v6.txt --ch 20-36`. After edit 223 it finds 35 runs of three or more
       sentences opening with the same word, 38 runs of five pronoun-or-name openers, 21 paragraphs (Ch 0 to 19: 72, 59,

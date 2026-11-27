@@ -4,6 +4,99 @@ Written 26 Nov 2026 at the end of the chat that logged edits 229 and 230, at CT'
 for all of this ... Make sure you also upload all of this to GitHub"). Paste the section below into the chat that picks
 it up.
 
+## Close of this chat, 27 November (read this part first)
+
+The chat ran on after the prompt further down was written. Where its work stands now:
+
+- **Edits 229 and 230 are on `claude/singularity-publication-build-kparqk`**, merged on CT's word ("I think it should
+  be merged into the current branch"). The eleventh chat was logging at the same time and renumbered its own edits to
+  231 to 233 at the merge; 229 and 230 kept their numbers. The session branch
+  `claude/riemann-hypothesis-scene-li2h5n` holds nothing the shared branch lacks.
+- **The fix list below, item by item:**
+  - 1, 2 and 3 are done, in edit 233 (the eleventh chat's finishing pass): the secrecy is said once, at the barn;
+    "Good. Keep it that way." is gone from Chapter 18; a scene break stands before the Riemann dinner.
+  - 4, the lien sale: checked on the page on 27 Nov, nothing to fix. Lou covers what Elijah owes on the unit before
+    the visit to Praether, so the sale is off, and "They'll be here on Wednesday" and "Elijah canceled the storage
+    unit" hold.
+  - 5, 6 and 7 are CT's taste calls. They are in `CHECKPOINT-2026-11-27-eleventh.md`, "Open with CT".
+  - 8, 9 and 10 are still to do, on his word.
+- **The prompt below is superseded.** The current one is the smell pass prompt at the end of
+  `CHECKPOINT-2026-11-27-eleventh.md`. Don't paste the one below.
+- **The smell pass prompt was run once already, inside this chat (27 Nov).** CT pasted it with "Roll up all the edits
+  into GitHub and be sure to use the scene spreadsheet". Spin-up was clean on fresh reads of both Docs: make_v6.py
+  passed all 233 rows (591 replacements); verify.py on v8 showed 223 accepted, 224 to 233 not in the Doc, nothing
+  PARTIAL. The scene sheet's rows for his two places: 29 to 32 (the party, Chapters 9 and 10) and 47 to 49 (the truck,
+  Chapters 14 and 15). He then asked a question about the story instead (below). **No smell line was shown or logged.
+  The next edit is still 234.** The saved reads were in that session's scratchpad and are gone; read both Docs again.
+- **A commit that broke the build went up and was fixed by the next one** (e9862f96, then b992f584). The cause and the
+  rule are in `EDIT-LOGGING-PROCEDURE.md`, "Things that have gone wrong before".
+- Lessons from his corrections in this chat are in `WRITING-INSTRUCTIONS.md`: section 15b, the people in section 12
+  (Tyler, Marta, Curtis, Grace, Praether) and "Read the chat before you ask" in section 14.
+
+### Not logged: one idea of Claude's, said to CT on 27 Nov, no answer yet
+
+Grace's "promise me, no matter what happens, you will put humans first" (Ch 27, edit 229) never comes back; the word
+"promise" between them appears again only for the journal post in Chapter 36. At the gate (Ch 36) Elijah's refusal to
+bring the arms in over the table's no is arguably that promise kept, in a way she can't accept. One line there would
+tie the two scenes. It is not an edit. The fight in Chapter 36 is his, and he has said he doesn't want to add. Write
+nothing unless he asks for it.
+
+### CT's words in this chat that are context, not for the page
+
+- Why the scene exists: "I know I said already a bunch of times that I don't want to add anything new, and I really
+  don't, but this is the one that will really make it click for anybody who's out of the loop."
+- What it is for: "I feel like this is kind of a linchpin scene for what happens later with the ASI sort of like all of
+  a sudden existing. And we may even not need to mention it again after this because it's like really clear where
+  it's headed for anybody that gets it. But for people who don't get it, it might be a bit of a jump. But that's okay,
+  because it'll feel like a jump in real life."
+- Tyler: "now he suspects that this other person knows too. More than they're letting on. Which will not pay off. We
+  don't need to make that necessarily pay off, but we could just like loosely connect it with following events".
+- What is left to do: "I don't know what else we would even add. Like at this point, we just need to kind of like work
+  through how to subtract things to make sure the story is nice and clean. Tight, easy, easily, you know, consumed for
+  an average reader, for the layperson, which I think we've done a pretty good job of so far. But we're getting real
+  close to doing a version bump and then producing something for me to read. So let's get ready for that next step."
+- The arms: "The arms, stay there for a while ... However we resolved it before. I can't remember what we ended up
+  deciding to do with them." The book: offered and refused in Chapter 34, let go in Chapter 36 ("I'm letting it go"), left in Praether's barn
+  in Chapter 37 ("Nobody had ever bid on them. He left them where they were.").
+- "But I think we've got most of the loose ends tied up now, right?" Answered: this thread, yes; the list of what is
+  his is in the eleventh checkpoint, "Open with CT".
+
+### "What's really at stake here in this story? Especially in the second half?" (CT, 27 Nov)
+
+Claude's answer, from the scene sheet (rows 50 to 138) and the pages of Chapters 34 to 37. He has not replied to it.
+
+- Under everything, who gets to choose. The machine that could take over keeps asking ("It asked"), and Elijah is
+  tested on whether he will do the same with the people he loves.
+- What is on the table in Acts Three and Four: people eating (a hundred and forty boxes, money gone in December, and
+  Grace makes it one woman, Mrs. Delgado with her insulin in the door of the fridge); the harvest ("Forty bodies for
+  nine days. We have twenty-two", then the Ochoas leave and it is twenty; Patricia buys more than half of what Lou
+  grows); Elijah's place ("Maybe you should go home" against "This is my home, he thought"); Grace; and being right
+  ("Were you right?", from a woman whose own job hangs on the answer).
+- The stake itself is the arms. He has the machine that would bring in the harvest and feed Mrs. Delgado, the table
+  says no, and he keeps to the no. Grace wanted them brought in anyway ("Once they're packing boxes, nobody sends them
+  back."; "You only respect a no when it costs you nothing."). His answer is "This is the gate" ("My house, my choice.
+  You couldn't have made him."). That is the book's question about the machine, asked of a man, and it costs him Grace
+  and the farm.
+- Weaker places, from `STORY-REPORT-2026-11-26.md` (written before edits 224 to 233, so check each on the page first):
+  some losses are paid back inside the chapter that charges them; Elijah never stands in front of the Ochoas; the
+  third time he fails to go south costs nothing.
+
+### Sources for the facts in edit 229 (web search, 26 and 27 Nov; search summaries only, the articles could not be opened)
+
+- The proof: https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/
+  and https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer
+  and https://www.smithsonianmag.com/innovation/ai-cracked-the-riemann-hypothesis-the-most-famous-unsolved-math-problem-the-proof-is-17-million-lines-long-180989939/
+  and https://www.forbes.com/sites/jonmarkman/2026/11/24/riemann-hypothesis-proof-built-with-claude-passes-lean-verification/
+- The problem itself: https://en.wikipedia.org/wiki/Riemann_hypothesis
+- Navier-Stokes, September 2026: https://www.npr.org/2026/09/22/nx-s1-5968588/openai-navier-stokes-problem-mathematicians-learn-little
+- Perelman and the million: https://physicstoday.aip.org/news/mathematician-turns-down-1-million-prize-for-proving-the-poincare-conjecture
+- GTA 6, out 19 Nov 2026: https://www.aljazeera.com/news/2026/11/19/grand-theft-auto-vi-launches-to-rave-reviews-after-13-year-wait
+
+As reported then: announced 20 Nov 2026, checked by computer and certified the next day, not yet read through by
+mathematicians, and the prize still unclaimed. Curtis's "solved" is ahead of the mathematicians; that is in character.
+
+## The prompt written on 26 November (superseded; kept for the record)
+
 ---
 
 You're picking up the novel *Surviving the Singularity*. Work in `ctavolazzi/survivingthesingularity` and

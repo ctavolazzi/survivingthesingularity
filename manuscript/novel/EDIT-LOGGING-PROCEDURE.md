@@ -61,6 +61,10 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 - An unquoted heredoc with backticks ran the build. Use quoted heredocs ('EOF').
 - Two chats logged on the same branch at once (26 and 27 Nov) and both took edits 229 and 230. Fetch the branch and read
   TODO.md's "Next edit" before numbering, and fetch again before every commit; merge, never force-push.
+- A broken check row was committed and pushed (26 Nov, e9862f96; fixed in b992f584). A script that edits several
+  files stopped on an assert after changing two of them, and the shell line went on to commit and push because its
+  steps were joined with `;`. Join the build, the commit and the push with `&&`, so nothing is committed unless
+  make_v6.py has just passed.
 - Counts drifting: the Totals line must match the latest verify run.
 - A later edit that changes words of an earlier one breaks the earlier check row. Narrow the earlier row to the words
   that still hold (row 113 for edit 183) or update it to the new words (row 137 for edit 182); never delete it.
@@ -218,6 +222,11 @@ short, what is still CT's:
   Instagram synopsis; "OLD:" on the v6 and v7 Docs; Drive's duplicate builds; the site's private reader and
   compendium; the merge to `main`; the ISBN and the release build.
 - The smell pass, in its own chat (next).
+- From the close of the Riemann and Praether chat (27 Nov; `CHECKPOINT-2026-11-26-riemann-praether.md`, first
+  section): the smell pass prompt was run once there (clean spin-up, nothing shown or logged, next edit still 234), and
+  one idea of Claude's is with CT unanswered (a line at the gate in Chapter 36 that picks up Grace's "put humans first"
+  promise from Chapter 27). That section also holds his words about what the Riemann scene is for, the answer to his
+  question about the stakes, and the source links.
 
 ## v6 (25 Nov)
 Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURRENT copy in the bridge map, made by
@@ -245,6 +254,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 - The Drive copy of the edit list is "StS edit list, edits 1 to 233 (mirror of GitHub)" (step 10); the 1 to 227 copy,
   and a markdown upload that renumbered the edits, are "OLD:" with the new id in their titles.
 - The bridge map, BRIDGE.md and the Drive bridge page still say v8, which is right.
+- Checked again on 27 Nov at the close of the Riemann and Praether chat, on fresh reads of both Docs: the same counts
+  (233 rows pass, 591 replacements; 223 accepted, 224 to 233 not in the Doc, nothing PARTIAL).
 
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including

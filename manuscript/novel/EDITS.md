@@ -3575,6 +3575,15 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Forced by it: "Thanksgiving came two weeks after that." becomes "Thanksgiving came the week after." (row 222
      narrowed; row 229 checks the new words). 1,049 words in, 6 out. Record:
      `manuscript/novel/drafts/edit-229-riemann.md`. Logged only; not in the v8 Doc yet.
+     Context from CT, NOT for the page (26 Nov): "I know I said already a bunch of times that I don't want to add
+     anything new, and I really don't, but this is the one that will really make it click for anybody who's out of the
+     loop." On Tyler: "now he suspects that this other person knows too. More than they're letting on. Which will not
+     pay off. We don't need to make that necessarily pay off, but we could just like loosely connect it with following
+     events". On what comes after: "we may even not need to mention it again after this because it's like really clear
+     where it's headed for anybody that gets it. But for people who don't get it, it might be a bit of a jump. But
+     that's okay, because it'll feel like a jump in real life." Not used: Curtis saying the Will Smith line (he chose
+     Grace and Elijah). Grace's promise is not picked up again anywhere in the book (checked 27 Nov). The source links
+     and the rest of that chat's notes: `CHECKPOINT-2026-11-26-riemann-praether.md`, first section.
 
 230. **Chapters 17 and 18: Praether's terms, "I speak wingnut", and Lou at the barn.** CT (26 Nov, dictated): "The
      warning given by Richard Praether when they're out there talking to him ... yeah, I heard from whoever that you
@@ -3628,6 +3637,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      said, "a rattle in his voice like a can of paint being turned over."
      Rows 88, 205, 220 and 222 narrowed. Record: `manuscript/novel/drafts/edit-230-praether-and-lou.md`. Logged only;
      not in the v8 Doc yet.
+     Context from CT, NOT for the page (26 Nov): "The arms, stay there for a while ... However we resolved it before."
+     They do: offered and refused in Chapter 34, left in the barn in Chapter 37. Praether's "I'll check them myself"
+     and the ordnance are not paid off, which is his call (the eleventh checkpoint, "Open with CT"). Since edit 233 the
+     secrecy is said once, at the barn. The lien sale needs nothing: Lou covers what is owed before the visit, so the
+     sale is off (checked 27 Nov).
 
 231. **Chapter 17: Grace's talk about the bed and staying for free.** CT (26 Nov, eleventh chat), dictated with edit
      228 and held then; placed on his next word, "Send out readers, evaluate what you think is the best course of

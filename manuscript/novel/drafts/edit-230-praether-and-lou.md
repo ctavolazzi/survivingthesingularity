@@ -122,3 +122,10 @@ The ace in the hole lines and "but it was quickly softened by Grace, who wrapped
 Grace wrapped her arm around Elijah.
 
 Her lines after that stand.
+
+## Later
+
+- Edit 233 (27 Nov) changed lines around this scene: Lou's cover is a gift, Grace's "keep it between the three of us"
+  is out, and Chapter 18's "Good. Keep it that way." is out, so the secrecy is said once, at the barn
+  (`finishing-2026-11-27.md`).
+- The lien sale: Lou covers what is owed before the visit, so the sale is off. Nothing to fix (checked 27 Nov).

@@ -130,6 +130,13 @@ He looked at her, and she looked at him.
 
 She smiled. She kissed him on the forehead and tousled his hair. "Thank you. I believe you. Now, do you want to help me with these dishes?"
 
+## Later
+
+- Edit 233 (27 Nov) put a scene break before "Dinner on the Friday before Thanksgiving was just dinner."
+  (`finishing-2026-11-27.md`).
+- The source links for the facts, CT's context for the scene and what is still open are in
+  `../CHECKPOINT-2026-11-26-riemann-praether.md`, first section.
+
 ## Changed
 
 "Thanksgiving came two weeks after that." becomes "Thanksgiving came the week after."

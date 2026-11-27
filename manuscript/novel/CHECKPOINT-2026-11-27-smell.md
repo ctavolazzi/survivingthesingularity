@@ -219,3 +219,76 @@ How I want it done:
 
 When you're done spinning up, tell me in one line that you're ready and that the next edit is 243.
 ```
+
+## A second prompt: the sheets still to build (CT, 27 Nov: "Make a prompt to follow up on them")
+
+For a chat that does only the sheets. It can run before or after the thirteenth chat above; if both run, the one that
+runs second fetches first and builds on the other's edits.
+
+```
+We're finishing my novel, Surviving the Singularity. This chat builds the story sheets that are still missing. It
+does not change the book unless I say so. Spin up first:
+
+1. Work on branch claude/singularity-publication-build-kparqk in both repos (ctavolazzi/survivingthesingularity and
+   ctavolazzi/_workbench). Push every commit there; I've said yes. No pull requests. Fetch before you start and before
+   every commit, merge, never force-push. Ignore BRIDGE.md and WORKBOARD.md on main.
+2. Read manuscript/novel/REFERENCE.md (section 1 and section 6), manuscript/novel/CHECKPOINT-2026-11-27-smell.md and
+   manuscript/novel/TODO.md. Then the sheets that already exist and how they are built: knowledge-sheet-2026-11-27.md,
+   calendar-2026-11-27.md and conversations-2026-11-27.md in manuscript/novel, and the code in
+   manuscript/tools/edits-v6/knowledge.py and story_checks.py. Every new sheet is built the same way: a hand-written
+   list of facts, each with the exact line from the book, which the script finds in the built book; a quote that is
+   no longer in the book stops the run.
+3. Read both Docs with the Docs connector and save the reads to your scratchpad: the book, "StS v8 draft (Nov 26)",
+   1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8, and its base, "StS v5 draft (Nov 23)",
+   1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Change neither. Run make_v6.py on the v5 read and verify.py on the
+   v8 read, then scene_sheet.py check. Read the "Next edit" line in TODO.md and use its counts; if what you get doesn't
+   match, stop and tell me.
+4. Read the whole built book (OUT/v6.txt), start to finish, before you write a row. The sheets that need judgment
+   come from this read, not from memory or a grep.
+
+The sheets, in this order:
+
+1. Desires. Two tabs.
+   - Characters: one row per person. Where and how they are introduced (chapter, scene, the first line that names
+     them; the script finds these). What they want when we meet them. What they want by the end, and the scene where
+     it changes. Whether they get it. Start from manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md ("surface want" and
+     "real want" for 28 people), but check every want against the built book: it predates the rewrite of Chapters 20
+     to 36 and every edit from 237 on.
+   - Scenes: one row per scene, for what each person in it is after.
+2. The conversation map, layer two. For each conversation that matters: what each person wants from the other, what
+   changes between them, and what it sets up or pays off (cross-check the knowledge sheet). Start from the leads in
+   conversations-2026-11-27.md. Do it in the same reading pass as the desires sheet. Add only what the scene sheet's
+   "What happens" and "What turns" columns don't already say.
+3. The money. Every dollar figure on the page and what it implies: Ma's room against the account, the route at $11.40
+   a person, the trust's payment to Irene, his half pay and the checks he doesn't cash, the storage unit, the arms'
+   value. Check that the co-op's books and his own could work, and test Grace's "why did you pretend to be poor"
+   against what the page says he had.
+4. Objects. Where each thing is at every point it appears: the amp (and the note in its pouch), Ma's pot, the
+   notebooks (the count reaches eleven), the Telecaster and its pawn ticket, the orange tape, Curtis's hose, the gas
+   receipt with Gus's number, the checks, the arms. A thing in two places at once is a finding.
+5. Plants and payoffs. Everything the book sets up, and where it pays off, or "never". Start from the scene sheet's
+   "Opens a question" and "Closes a question" columns, but check each on the page. For a "never", list the words you
+   searched for so I can see what was looked for.
+
+How to build them:
+- Each is a new command in manuscript/tools/edits-v6/story_checks.py, writing CSVs to manuscript/novel with a notes
+  file beside them (what it is, how far to trust it, and the findings).
+- A quoted line for every judgment cell. Say plainly which columns are counted by the script and which are your
+  reading.
+- Add each as tabs in the story checks workbook in Drive (11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8): write the new
+  tabs there, and don't make a new file unless you have to. If you do, title the old one "OLD:".
+- Each sheet ends in a short findings list of two kinds only: the page contradicts itself, or something is set up and
+  never paid. Each finding gets the smallest fix to text already there, or is flagged for me if only a scene would
+  close it. Don't change the book; show me the list.
+- Show me each sheet's findings as it lands, so I can stop you after any one.
+
+How I want it done:
+- A question from me gets an answer, not an action. Answer first, short. No em dashes.
+- Read before you claim anything about the book. Code before tokens.
+- Nothing trashed or deleted without my yes.
+- At the end: add the new sheets and tools to REFERENCE.md (sections 2 and 5), update TODO.md, and STATE.md and
+  sessions/LOG.md in _workbench. Commit and push both repos.
+
+When you're done spinning up, tell me in one line that you're ready, the next edit number, and that you've read the
+whole book.
+```

@@ -1573,7 +1573,9 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (255, "He'd underlined it twice and gone back to nodding.\n \nYou should know", "He'd underlined it twice and gone back to nodding.\nYou should know"),
 (255, 'PorusAI had no such patience.\n \nPorusAI was the other kind', 'PorusAI had no such patience.\nPorusAI was the other kind'),
 (255, 'paying close attention.\n \nThere were three of them', 'paying close attention.\nThere were three of them'),# 256, Ch 1: "A bar, a Tuesday, three jobs, gone." out (CT: "Remove that line. It's unnecessary")
-(256, 'Real people. A bar, a Tuesday, three jobs, gone. And the guys', 'Real people. And the guys'),
+(256, 'Real people. A bar, a Tuesday, three jobs, gone. And the guys', 'Real people. And the guys'),# 257, Ch 1: "a rounding error" (CT, 27 Nov, fourteenth chat)
+(257, '"Three jobs in one bar is an anecdote," Devendra said.', '"Three jobs is a rounding error, Elijah," Devendra said.'),
+(257, "Elijah didn't relax. He still looked stressed.", "Elijah didn't relax. He still looked stressed. How long until this whole office was a rounding error?"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

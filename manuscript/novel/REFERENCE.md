@@ -20,7 +20,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 5. Read both Docs fresh with the Docs connector (the result is saved to a file; copy it and use it as READ.json):
    - v8, the book since 26 Nov: "StS v8 draft (Nov 26)", id `1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8`. It holds
      every edit, 1 to 223, without the 19 pictures. Run verify.py on it; expect rows 1 to 223 "accepted", nothing
-     PARTIAL, and the newer edits (224 to 227 at the end of the tenth chat) "not in the Doc" until CT clears them. Its locked twin is "StS v8 BACKUP (Nov
+     PARTIAL, and the newer edits (224 to 233 at the end of the eleventh chat) "not in the Doc" until CT clears them. Its locked twin is "StS v8 BACKUP (Nov
      26), do not edit" (`18gmZKWiUPyujRkRY_ZSh80ifdchZKtk8oPOpVuycOPM`).
    - v5, the base: "StS v5 draft (Nov 23)", id `1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA`. Run make_v6.py on it;
      every row must pass. Work from its `v6.txt`. (make_v6.py keeps its name; it builds v8.)
@@ -164,7 +164,13 @@ for what it is ("v7" is taken by a frozen side copy).
 
 ## 6. Pitfalls learned
 
-- The newest checkpoint is `CHECKPOINT-2026-11-26-tenth.md` (what is open with CT, and the prompt for the next chat).
+- The newest checkpoint is `CHECKPOINT-2026-11-27-eleventh.md` (what is open with CT, and the prompt for the next chat,
+  the smell pass). The other chat of 26 Nov left `CHECKPOINT-2026-11-26-riemann-praether.md`.
+- Two chats can log on this branch at once. Fetch it and read TODO.md's "Next edit" before numbering; fetch again
+  before every commit, and merge (never force-push). On 27 Nov both chats had taken 229 and 230.
+- The scene sheet (27 Nov): one row per scene with date, place, whose scene, who is on the page, what turns, threads,
+  questions and numbers. Google Sheet id `1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY`; copy in `scene-sheet-2026-11-27.csv`. It is a snapshot of
+  edits 1 to 233, filled by readers; check a cell on the page before relying on it.
 - When the current copy changes in the bridge map, two site tests name it and must change too:
   `tests/unit/novel-bridge.test.mjs` and `tests/unit/novel-doc-edit.test.mjs` (they kept "build guard" red from v8's
   making until the tenth chat). Run `npm run test:release` after any change to `instances.json`.

@@ -377,6 +377,9 @@ Everything here is from a line CT dictated or approved, or is in the book.
 - **Coming back in Chapters 23 to 36:** Devendra ("I got a mortgage and three kids. I gave up identity crises a long
   time ago." [9]); David ("What's it gonna do? Yank the tap handle?" [43]); Rosa ("Mijo, you look muy flaco. Come in,
   eat." [110]).
+- **Rosa** (CT, 27 Nov, edit 232): Spanglish, his: "but life, it get away from us"; "I know someday I cook for my family
+  again. But maybe sometimes is ok to give love a little breathing room." Present tense where English wants past, the
+  subject said twice ("life, it"), no article where one is expected. Keep it light; she is never a joke.
 
 **Richard Praether** (CT, 26 Nov): "Consider Praether's lines as an homage to pop culture for moments like these, and
 then deliver the twist at the end via Grace who sees the letters from the VA." He is the old man in the movie who warns
@@ -436,6 +439,17 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 - Edit 178's "It should have felt like traveling light." (Ch 37): cut in edit 223.
 - Edits 172 and 197 lean on "So he", "Instead he", "Soon". One is fine; watch for chains. `openers.py` counts openers.
 - Chapter 26's old summer: rewritten in edit 204 (the kiss is in "Pondwater").
+
+## 15a. Learned 27 November (eleventh chat)
+
+- When a scene moves, check every "first", "last" and "only" it touches elsewhere. Rosa's ladle moved to Thanksgiving
+  2026, so Chapter 38's "Rosa, at her first dinner" stopped being true and came out.
+- When his line puts a fact against another chapter (Rosa cooking "for the last couple years" against Chapter 17, where
+  her wrist keeps her from cooking), log it as he said it and give him the one-word fix. He took "this last year".
+- Read every new line against the next page for the same gesture: Rosa's palm on his chest and Wren's palm on her own
+  chest landed a page apart while the ladle opened Chapter 31.
+- A clause that can attach to the wrong noun gets a comma and a subject: "The shop I went to after the plant bought a
+  robot welder" read as the plant buying it; "At the shop I went to after the plant, they bought a robot welder".
 
 ## 16. Corrections of 26 November, as they happened
 

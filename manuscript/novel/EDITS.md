@@ -2,7 +2,7 @@
 
 Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Google Doc "StS v5 draft (Nov 23)").
 
-**Where the edits stand (26 Nov, end of the tenth logging chat):** edits 1 to 223 are in the book, the Google Doc "StS
+**Where the edits stand (27 Nov, end of the eleventh logging chat):** edits 1 to 223 are in the book, the Google Doc "StS
 v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py`'s build (the v5 Doc with its
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,

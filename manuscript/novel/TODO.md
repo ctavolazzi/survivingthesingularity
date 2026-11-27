@@ -1,9 +1,10 @@
 # To do: the novel, from here to done
 
-Updated 26 Nov 2026, end of the tenth logging chat. Top item first. Tick a box in the same commit that does the work.
+Updated 27 Nov 2026, end of the eleventh logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 234.** Two chats logged on this branch on 26 and 27 Nov. One: edit 229, Curtis and the Riemann
+**Next edit: 234.** Next chat: the smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`). The scene
+sheet, one row per scene: Google Sheet id `1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY`, copy in `scene-sheet-2026-11-27.csv`. Two chats logged on this branch on 26 and 27 Nov. One: edit 229, Curtis and the Riemann
 hypothesis at Friday dinner, RSI, and Grace's promise (Ch 27); edit 230, Praether's terms and Lou at the barn (Ch 17,
 18); its fix list and prompt are in `CHECKPOINT-2026-11-26-riemann-praether.md`. The other (eleventh): edit 228, Lou's
 heavier entrance (end of Ch 16); edits 231 and 232, CT's held dictation placed (Grace's talk about the bed in Ch 17,

@@ -497,6 +497,9 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   man has lived in for five months, because a sock was on the page a line earlier. CT: "The sock? She's not gonna pull
   a cum sock out of the fucking truck. Come on, bro." A detail picked up for continuity still carries what a reader
   will hear in it. Before giving a character something to hold, ask what it says about the people in the room.
+- **A judging noun needs a judge.** Claude had Grace back out of the truck "with a bag of junk." CT: "who says it's
+  junk? Who's making that determination?" On Elijah's shoulder, the narration can't call his things junk unless he
+  would. Name the thing ("an armful of clothes", his words), not a verdict on it.
 - **When he hands over something he is pleased with, place it; don't audit it. [C]** Three times in one night
   Claude answered a scene of his with a list of objections or a rearrangement of its own (Grace staying home from the
   festival; the coworkers exchange as pillow talk; the kiss shown). Each time he had to say it again. Push back on a
@@ -558,4 +561,5 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 | "the delivery bag, which held on to every order he'd ever carried" (smell pass draft, 27 Nov) | "which had held on to just about every order ... only a Sith deals in absolutes" | soften an absolute that can't be literally true (15c) |
 | "Later that morning Marta looked at him over her welding hood" straight after the pillow talk (edit 240) | "That's a jump. We need to explain the physical movement of people" | a scene break, the time, and how he got there (15c) |
 | Grace backs out of his truck "with a bag of junk in one hand and the sock in the other" (smell chat draft) | "The sock? She's not gonna pull a cum sock out of the fucking truck. Come on, bro." | the sock out of her hand; read a prop the way a reader will (15c) |
+| "She backed out of the cab with a bag of junk" (smell chat draft) | "who says it's junk? Who's making that determination?" | "an armful of clothes"; a judging noun needs a judge (15c) |
 | Irene's advice in edit 221: "They weren't there about the pivot ... They wanted to know"; "Just don't tell yourself afterward it was free." | (caught in Claude's own review before CT read it) | the mirrored shape and the quotable closer creep into an elder's advice; say the plain thing ("what they wanted to know was ..."; "some of them won't stay") |

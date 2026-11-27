@@ -791,7 +791,7 @@ she pulled the blanket off the floor on the passenger side and stopped.":
 >
 > She **looked behind her from inside the truck.** "**Perfume?**" Then: "**Oh. You really are new to this, aren't you?**"
 >
-> She backed out of the cab with **a bag of junk.** "**I don't wear perfume. Very few people out here do.**" She looked him over. "**You from the city? What's your story?**"
+> She backed out of the cab with **an armful of clothes.** "**I don't wear perfume. Very few people out here do.**" She looked him over. "**You from the city? What's your story?**"
 >
 > "**Oh, you want to know my story?**" Elijah said. "**How much time you got?**"
 >
@@ -811,6 +811,9 @@ CT's next words for that line: "It took him a second to work out that it was gra
 he figured, something that kind of weirded him out. It must be grace. She smelled great, better than anyone he'd ever
 smelled before." He said "it was Grace" and then "It must be Grace"; the second is the keeper, so the first became
 "It took him a second to work it out."
+
+Corrected again (CT: "With a bag of junk, who says it's junk? Who's making that determination? With a pile of
+clothes, with an armful of clothes,"): "a bag of junk" is "an armful of clothes" (his last version).
 
 ### An echo with Marta ("Pondwater"). CT, same night. His words, as sent:
 

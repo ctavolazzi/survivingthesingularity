@@ -117,7 +117,7 @@ Need CT's yes:
       27 Nov, smell chat: his two places logged (edit 235, the truck, Ch 15; edit 236, the party, Ch 9). Every smell
       on the page, whose words it is, and the places still open (the cooked plugs, Ch 21; Priya's pits, Ch 26; the two
       memory spots, Ch 24 and Ch 27) are in `smell-table-2026-11-27.md`, last column his. Open until he rules on those.
-- [ ] The story checks (CT, 27 Nov): the calendar is done (`calendar-2026-11-27.md`) and so is layer one of the
+- [x] The story checks (CT, 27 Nov), all built (fourteenth chat, 27 Nov, at edit 245): desires, layer two of the conversation map, money, objects, plants and payoffs, each a `story_checks.py` command with a notes file and a workbook tab. Their findings, for CT: `desires-2026-11-27.md` (3), `money-2026-11-27.md` (1), `objects-2026-11-27.md` (1), `plants-payoffs-2026-11-27.md` (4, one shared with desires). Was: the calendar is done (`calendar-2026-11-27.md`) and so is layer one of the
       conversation map (`conversations-2026-11-27.md`, which also counts the sense words). To do, in this order: layer
       two of the conversation map and the desires sheet (what each character wants, from their introduction to the
       end, and scene by scene; one reader's pass, from a fresh read), then the money, objects, plants and payoffs.
@@ -150,6 +150,10 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
   `_workbench`, the Drive mirror once).
 
 ## Done
+
+- 27 Nov, fourteenth chat (the story sheets): spin-up clean (243 rows); the whole built book read; edits 244 (the
+  Dedication, CT's words) and 245 (Ch 0, "it would appear like magic", CT's words); a large print PDF at edit 243 for
+  CT; five story sheets with findings (`desires`, `conversations2`, `money`, `objects`, `plants` in `story_checks.py`).
 
 - 27 Nov, close of the smell chat: edits 237 to 240 (five new scenes; the pond ends on the near kiss); the scene sheet
   brought to 142 scenes and checked; the knowledge sheet, the calendar and layer one of the conversation map; all of

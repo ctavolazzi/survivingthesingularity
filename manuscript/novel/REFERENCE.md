@@ -39,6 +39,11 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)" (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`). Rebuilt by `knowledge.py` |
 | When every scene happens, and what a calendar can test | `calendar-2026-11-27.md` and its two CSVs; Google Sheet `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`. Rebuilt by `story_checks.py calendar` |
 | Who talks to whom, how much, and the sense words in each scene (layer one, rough) | `conversations-2026-11-27.md` and its three CSVs; Google Sheet `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`. Rebuilt by `story_checks.py conversations` |
+| What each person wants, when we meet them and by the end; what each person is after in each scene | `desires-2026-11-27.md` and its CSVs (characters, scenes); tabs in the story checks workbook (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`). Rebuilt by `story_checks.py desires` |
+| The conversations that matter: what each wants from the other, what changes, what it sets up or pays off (layer two) | `conversations-layer-two-2026-11-27.csv` (notes in `desires-2026-11-27.md`); workbook tab. Rebuilt by `story_checks.py conversations2` |
+| Every money figure on the page, and whether the money adds up | `money-2026-11-27.md` and its two CSVs; workbook tabs. Rebuilt by `story_checks.py money` |
+| Where each object is, every time it appears (the amp, the pot, the notebooks, the Telecaster, the tape, the hose, the receipt, the checks, the arms) | `objects-2026-11-27.md` and its CSV; workbook tab. Rebuilt by `story_checks.py objects` |
+| Everything set up, and where it pays off or "never" | `plants-payoffs-2026-11-27.md` and its CSV; workbook tab. Rebuilt by `story_checks.py plants` |
 | What happens in each chapter | `PLAN-CHAPTERS-20-TO-36.md`, sections 6 and 11 (11 wins for 27 to 36) |
 | Arcs, quarrels, the chain of cause | the plan, section 10 |
 | Every open question and its decision | the plan, section 12; anything still CT's is in `TODO.md`, section 1 |
@@ -49,7 +54,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | How CT writes, each character's voice | `WRITING-INSTRUCTIONS.md`, sections 5 and 12 |
 | Character notes | `characters/<name>/` (gathered by `manuscript/tools/book.py cast`) |
 | Which Doc is the book | `BRIDGE.md` (generated: `node scripts/sts-bridge.mjs export md`) |
-| The PDF CT has | "StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf" (`1B0nwZM5XXGxfeEjRAjyl0bICQNxsHtGp`) in Drive folder "StS Publication Files" (`1QmqU-MsDcqfh1sC5Q_DsGeqcdyf_kLB_`); older builds in `12CbC-hEUy_5rArVtz8v393rc_ciV9Ltv` |
+| The PDF CT has | "StS v8 large print CURRENT (27 Nov, edits 1 to 243).pdf" (`14MdeTNd1djyhORwqpP422I-XZq42j7kj`); it has neither edit 244 (the Dedication) nor 245 (Ch 0) in Drive folder "StS Publication Files" (`1QmqU-MsDcqfh1sC5Q_DsGeqcdyf_kLB_`); older builds in `12CbC-hEUy_5rArVtz8v393rc_ciV9Ltv` |
 | Drive copy of the edit list | "StS edit list, edits 1 to N (mirror of GitHub)"; its current id is in `EDIT-LOGGING-PROCEDURE.md`, step 10 |
 | Build settings (copyright page, cover) | `publication/novel/build/book.json`; build steps in `publication/README.md` |
 
@@ -167,6 +172,11 @@ for what it is ("v7" is taken by a frozen side copy).
 | `python3 manuscript/tools/edits-v6/whose_words.py V5_READ.json "phrase" ["phrase"]` | Where a line came from: the v5 Doc, an ops row, which edit in `EDITS.md` quotes it, which `drafts/` files. Run it before calling a line CT's or Claude's |
 | `python3 manuscript/tools/edits-v6/knowledge.py OUT/v6.txt manuscript/novel --date YYYY-MM-DD` | The knowledge sheet: who knows, suspects or has wrong each of 35 secrets, by chapter and by phase. Its `FACTS` list is the only hand-written part; a quote no longer in the book stops the run |
 | `python3 manuscript/tools/edits-v6/story_checks.py calendar OUT/v6.txt manuscript/novel --date YYYY-MM-DD` | The calendar: a date for each of the 137 scenes, the time words on the page, and 28 checks (weekdays, intervals, ages). It stops if the scene count changes or a quoted line is gone. Money, objects, plants and payoffs, and the senses are to be added as further commands |
+| `python3 manuscript/tools/edits-v6/story_checks.py desires OUT/v6.txt manuscript/novel` | The desires sheet: one row per person (the script finds the first line naming them; the wants are Claude's reading, each with its line) and one per scene (fourteen readers' pass, from `desires-scenes-data-2026-11-27.json`) |
+| `... story_checks.py conversations2 OUT/v6.txt manuscript/novel` | Layer two of the conversation map: 22 conversations, what each wants, what changes, the line it pays off |
+| `... story_checks.py money OUT/v6.txt manuscript/novel` | Every money figure on the page (counted) and 12 checks with the lines they rest on |
+| `... story_checks.py objects OUT/v6.txt manuscript/novel` | Where each object is at every sighting, sorted into book order by the script |
+| `... story_checks.py plants OUT/v6.txt manuscript/novel` | Every question in the scene sheet's "Opens a question" column with a verdict and the line that pays it; for "never", the words searched and the hits. A sheet question with no verdict stops the run |
 | `python3 manuscript/tools/book.py cast` | Rebuilds the character folders |
 | `node scripts/sts-bridge.mjs status` | Which Doc is CURRENT |
 
@@ -191,6 +201,14 @@ for what it is ("v7" is taken by a frozen side copy).
     with the truck.
   - A list of candidates gets cut before he sees it. The first answer gave eight scenes that "need" a smell; two did
     (his). Mark the rest as optional or drop them.
+- Learned in the story sheets chat (fourteenth, 27 Nov):
+  - The scene sheet numbers its own rows, and its row 59 is a cut scene ("(cut)"), so from scene 59 on its "#" is one
+    more than the scene's place in the book. `story_checks.py`'s `Book` class reads the sheet's numbers; use it.
+  - A tab too big to type into a call (the scenes tab is 128 KB) goes up by file reference: upload the CSV to Drive as a
+    Sheet (`create_file` with `sha256:<hash>:<path>`), copy its tab into the workbook (`copy_sheet_to_another_spreadsheet`),
+    rename the tab, and title the staging file "OLD: staging copy". Nothing is typed, so nothing is mistyped.
+  - The scene sheet's "Opens a question" and "Closes a question" columns word the same question differently: matching
+    them by script found 9 of 126. The pairings in `PLANTS` are read, not matched.
 - Two chats can log on this branch at once. Fetch it and read TODO.md's "Next edit" before numbering; fetch again
   before every commit, and merge (never force-push). On 27 Nov both chats had taken 229 and 230.
 - The scene sheet (27 Nov): one row per scene with date, place, whose scene, who is on the page, what turns, threads,

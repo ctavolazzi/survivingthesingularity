@@ -16,7 +16,12 @@ conversations  Layer one of the conversation map: what a script can count. For e
           not read for meaning: what a conversation does for the story is layer two, a reader's job.
           Writes conversations-DATE.csv, conversation-pairs-DATE.csv and conversation-lines-DATE.csv.
 
-(money, objects and plants are to come; CT asked for them on 27 Nov 2026.)
+desires        The desires sheet: one row per person (DESIRES) and one per scene (desires-scenes-data-DATE.json).
+conversations2 Layer two of the conversation map (CONVERSATIONS2): what each wants from the other, what changes, what it pays off.
+money          Every money figure on the page (counted by MONEY_RX) and MONEY_CHECKS, with verdicts.
+objects        Where each object is at every sighting (OBJECTS), in book order.
+plants         Every question in the scene sheet's "Opens a question" column, with a verdict from PLANTS.
+All five use Book: each quoted line is found in the built book, and a line that is gone stops the run.
 """
 import csv
 import json

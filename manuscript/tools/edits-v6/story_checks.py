@@ -696,8 +696,61 @@ def conversations2(book, outdir, date):
                "What changes between them", "Sets up / pays off", "Where", "The line"], rows)
     print(f"{len(rows)} conversations; every line found in the book")
 
+
+# ---------------------------------------------------------------- money (CT, 27 Nov)
+MONEY_RX = re.compile(r"(?i)\$\d[\d,]*(?:\.\d+)?|\b(?:a|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|\d+)(?:[ -](?:hundred|thousand|million|billion|and|one|two|three|four|five|six|seven|eight|nine|ten|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|apiece))*[ -](?:dollars?|bucks|grand|cents)\b|\bhalf a mill\b|\b(?:a|the full) million\b|\bone-forty\b|\bthree-thirty apiece\b|\bforty-two and the truck\b|\b[\w-]+ percent (?:over|of)\b|\b[\w-]+-something dollars\b|\b[\w-]+ goddamn dollars\b|\b(?:forty-two thousand|four hundred million|twenty-nine|ninety)(?: a (?:month|year)| in new revenue)\b|\b(?:hundreds of thousands or )?millions of dollars\b")
+# (the check, [lines it rests on], verdict: holds / does not hold / can't tell, why)
+MONEY_CHECKS = [
+    ("Ma's room against the account", ["At the bottom of the page was a number for one month. The first time he read it he took it for a year.",
+      "The money went into an account that said Linda Madrone across the top", "Every twenty he took out came off the far end of her room.", "The room got paid."],
+     "holds", "The page never gives the room's cost or the account's balance, so nothing can contradict. What it gives agrees: the sale closed over what the bank wanted (Ch 37), he took none of it (Ch 13, 14, 15), and three years on the room is still paid (Ch 37)."),
+    ("The route at $11.40 a person a week, against the plan that would pay for it", ["Eleven dollars and forty cents.", "I've got a hundred and forty on the route", "Eight hundred dollars. A hundred people a year pays for the whole route."],
+     "holds", "140 people x $11.40 x 52 weeks = $82,992 a year. Elijah's plan, 100 visitors x $800 = $80,000 a year. Within four percent: his arithmetic is right, which is what makes the table's no about something else."),
+    ("The trust's payment to Irene", ["Every month,", "Miss three in a row and the ground goes back to Irene.", "On the first of April the trust's check to Irene came up short.", "One month I can wait,", "for the first time since the land went into the trust there was something left at the bottom of the page."],
+     "holds", "The down payment takes the channel's first surplus (Ch 23); the monthly check rides on the channel; the channel falls after Denny leaves (February 2027) and the April check comes up short; one month late, never three; the channel comes back with Denny and by October there is a surplus. No amounts are given and none are needed."),
+    ("His half pay and the checks he never cashes", ["It passed,", "Half of what I told you.", "Reuben cut the first check that week. Elijah put it in the back of a notebook and did not cash it.", "You'd be paying Irene with Irene's money.", "for sixteen months he had put them in the back of a notebook. For this he cashed the newest one."],
+     "holds", "Vote in July 2026, a check a month, sixteen checks to November 2027 (the calendar sheet counts it). The co-op's books carry a debt to him that is never drawn, which is why Grace can say his checks and Irene's come out of the same account. What Grace first offered is never given as a number."),
+    ("The storage unit and the lien sale", ["ten by thirty, three hundred and forty dollars a month. The first month went on a credit card.", "On a good day he cleared thirty. The truck ate twenty of it.", "In the fifth month the storage place sent him a photo of a notice", "He said he would cover what Elijah owed on the unit"],
+     "holds", "Ten dollars a day on a good day cannot carry $340 a month; the unit falls behind and goes to a lien notice in the fifth month (February 2025); Lou covers it (Ch 17); the U-Store's ninety a month and Praether's free barn are the cheaper places that follow."),
+    ("What the arms are worth", ["Two million dollars,", "About three-thirty apiece, installed. I got them for a lot less.", "Two industrial robot arms, low hours, local pickup only. A week went by. No bids.",
+      "A scrap yard in Lodi offered to take both for the weight, and the weight came to less than two months of the unit.", "It costs like a few thousand."],
+     "holds", "Six at about $330,000 installed is about $2 million, as Gus says. Installed price is not resale price: Gus bought them as salvage, nobody bids on eBay, and scrap is under $680. Elijah's 'a few thousand' at the table is a used price list, which fits Gus buying for a lot less."),
+    ("Where Elijah's pocket money comes from on the farm", ["Nine people here don't get paid,", "Elijah started to say he would cover it himself, and stopped. He didn't have it.",
+      "He had enough money for gas there and back and for food.", "He meant to drive down, and he had the Ranger's oil changed for it.", "He had the picture printed at the drugstore in Ardell and mailed it"],
+     "does not hold", "From March 2025 to November 2027 the page names no income for him: no pay until the July 2026 vote, and those checks go uncashed until the book is printed. Yet he buys gas for 200 miles at Thanksgiving 2025, an oil change, prints, flowers for Ray's funeral and the drive south in 2027. The only income ever named is the app's forty or sixty dollars every couple of weeks, in Santa Rosa (Ch 15)."),
+    ("Grace's 'why did you pretend to be poor', tested against what he had", ["Nobody had ever bid on the arms.", "He had seventeen dollars, and the lien sale was eleven days out.",
+      "He gave him a hundred and ten dollars and a yellow ticket.", "He did not keep any.", "You've been lying to me this whole time?"],
+     "holds (he was poor)", "On the page he had: the farm money, in Ma's name, paying her room, none of it taken; two arms nobody would buy; a guitar pawned for $110 and lost; seventeen dollars, then four. He turned down Ruby's million, which Grace never learns. What he hid was an asset with no buyer. The line is not in the book; if it goes in, the page gives Elijah his answer, one Grace does not have (knowledge sheet A5: she never learns nobody bid)."),
+    ("The power bill", ["forty-something dollars, autopay", "the number at the bottom said $2,011.46.", "Nearly two thousand dollars of difference"],
+     "holds", "$2,011.46 less a usual forty-something is just under $1,970: 'nearly two thousand'."),
+    ("Ruby's offer", ["\"I don't know. One-forty. With the bonus.\"", "I'll triple it.", "\"How about half a mill?\"", "\"The full million?\""],
+     "holds", "$140,000 tripled is $420,000; half a million; a million. Each offer goes up."),
+    ("The two tractor repairs", ["\"Sixty,\" Marta said. \"It was the fuel line, not the pump. Dealer wanted nine hundred.\"", "She fixed the husband's tractor for sixty dollars", "Marta got that running for sixty bucks once,"],
+     "holds", "Sixty dollars all three times, in three mouths."),
+    ("The hose", ["A dealership had quoted him twelve hundred dollars and a week.", "Two dollars of hose.", "The light could mean two dollars of hose or twelve hundred dollars and a week at a dealer."],
+     "holds", "The same two numbers at the shop and at the truck stop."),
+]
+
+
+def money(book, outdir, date):
+    b = Book(book, outdir)
+    figs = []
+    for i, l in enumerate(b.lines):
+        if i not in b.where:
+            continue
+        for m in MONEY_RX.finditer(l):
+            ch, no = b.where[i]
+            s = l[max(0, m.start() - 90): m.end() + 60]
+            figs.append([no, ch.split(":")[0].replace("Chapter ", "Ch "), i + 1, m.group(0), " ".join(s.split())])
+    write_csv(outdir, "money-figures", date, ["#", "Chapter", "Line", "The figure (script)", "Around it"], figs)
+    rows = []
+    for what, quotes, verdict, why in MONEY_CHECKS:
+        rows.append([what, verdict, why, " | ".join(f"{cite(b, q)}: \"{q}\"" for q in quotes)])
+    write_csv(outdir, "money-checks", date, ["The check", "Verdict (Claude's reading)", "Why", "The lines it rests on (found by the script)"], rows)
+    print(f"{len(figs)} money figures on the page; {len(rows)} checks: " + ", ".join(f"{v} {sum(1 for r in rows if r[1].startswith(v))}" for v in ("holds", "does not hold")))
+
 if __name__ == "__main__":
-    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2}
+    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2, "money": money}
     if len(sys.argv) < 4 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
     date = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else "2026-11-27"

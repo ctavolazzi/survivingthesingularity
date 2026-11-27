@@ -10,7 +10,7 @@ CT: "Get ready to close out this session. The next sense for the next session is
   `verify.py` on the v8 read: 223 "accepted", 224 to 240 "not in the Doc", nothing PARTIAL. **The next edit is 241.**
   (Edits 237 to 240 were logged after this checkpoint was first written: three new scenes in Chapter 26, a new
   ending for "Pondwater" and a new scene in Chapter 27. They have not been read in place, in order.)
-- 104,868 words in the chapters (`story_report.py`), 142 scenes. `build_gate.py`: NOT READY, 10 open boxes (the taste pass is one).
+- 104,974 words in the chapters (`story_report.py`), 142 scenes. `build_gate.py`: NOT READY, 10 open boxes (the taste pass is one).
 - **The PDF CT has** is still the edits 1 to 223 one. A new one is made only when he asks.
 - **Drive copy of the edit list:** "StS edit list, edits 1 to 236 (mirror of GitHub)",
   `1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE`. The 1 to 233 copy is "OLD:".

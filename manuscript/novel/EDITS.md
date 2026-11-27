@@ -3845,7 +3845,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      "She moved a little closer", "scrunched up one shoulder", "After the pond,", "into the pillow", "November", the
      wording of her pose. Rows 204 and 233 narrowed. Corrected in place the same night (CT: "That's a jump. We need to explain the physical
      movement of people"): Marta's look is now its own short scene, "Later that afternoon, when Elijah was making his
-     rounds, he came through the shop. Marta looked at him ...". 221 more words; 104,868 in the chapters; 142 scenes. Record:
+     rounds, he came through the shop. Marta looked at him ...". Then extended with CT's own lines, as he wrote them:
+     "which from Marta was as good as a blessing. Elijah blushed, but he didn't quite know why." / "Marta, I…" / her
+     welding torch cuts him off / "Sorry, busy. Come back after you've had a shower." / "An alone shower. All by
+     yourself." / he scuttles off "with his proverbial tail between his legs" / "His steps for the rest of the day
+     could have been made by an astronaut on the moon, given how bouncy his spirit was." Row 204 narrowed again.
+     104,974 words in the chapters; 142 scenes. Record:
      `manuscript/novel/drafts/edit-240-pond-and-pillow.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like

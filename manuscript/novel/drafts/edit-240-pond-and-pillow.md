@@ -82,6 +82,29 @@ right? Like, later that afternoon, when Elijah was making his rounds."): Marta's
 looked at him ..." with no break after the pillow talk. "Later that afternoon, when Elijah was making his rounds" is
 his; "he came through the shop" is Claude's.
 
+Extended the same night with CT's own lines, typed out by him and placed as he wrote them. The scene in the shop now
+reads, after "he came through the shop.":
+
+> Marta looked at him over her welding hood for a long second and said nothing, which from Marta was as good as a blessing. Elijah blushed, but he didn't quite know why.
+>
+> "Marta, I…" he started, but her welding torch cut him off.
+>
+> "Sorry," she exclaimed, "busy. Come back after you've had a shower."
+>
+> She flipped up her visor to inspect her work.
+>
+> "Marta, I…" he tried once more, and was immediately cut off again.
+>
+> "An alone shower. All by yourself."
+>
+> Now Elijah was really blushing. He scuttled off with his proverbial tail between his legs.
+>
+> Although, something inside his heart felt lightweight. His steps for the rest of the day could have been made by an astronaut on the moon, given how bouncy his spirit was.
+
+His, word for word, from "was as good as a blessing" to the end. Claude changed only the marks: his hyphens after
+"Marta, I" are the book's "…", a closing quote and a comma were added, and "Marta I" has its comma. "Welding torch" and
+"visor" are his words (the book elsewhere says "welding hood").
+
 ## Whose words
 
 His: all the dialogue except the bridge; "heart pounding in his chest", his hand over hers, the lowered voice, the

@@ -749,8 +749,124 @@ def money(book, outdir, date):
     write_csv(outdir, "money-checks", date, ["The check", "Verdict (Claude's reading)", "Why", "The lines it rests on (found by the script)"], rows)
     print(f"{len(figs)} money figures on the page; {len(rows)} checks: " + ", ".join(f"{v} {sum(1 for r in rows if r[1].startswith(v))}" for v in ("holds", "does not hold")))
 
+
+# ---------------------------------------------------------------- objects (CT, 27 Nov): where each thing is, every time it appears
+# (object, [(the line, where it is then: Claude's reading)])
+OBJECTS = [
+    ("The amp", [
+        ("He got the amp out of the hall closet, where it had been sitting in its bag since the last gig before the pandemic.", "his apartment: out of the hall closet"),
+        ("A little leather pouch was glued to one side, soft as an old glove, and it had been his gig bag ever since: picks, a capo, a spare cable, a set list folded in quarters.", "the pouch: picks, capo, spare cable, a set list"),
+        ("He set the amp in the corner of the living room", "his apartment: living room corner"),
+        ("He'd left it on top of the amp, face down", "his apartment, the phone on it"),
+        ("At his mother's he set it on the back porch, and by the next morning she had it out in the barn under a moving blanket", "Ma's barn, under a moving blanket"),
+        ("The amp was in the back, under its blanket, behind the wheat.", "Ma's barn"),
+        ("and the three of them set it on the floor of the cab.", "the Ranger, floor of the cab, belted"),
+        ("On the floor of the cab the amp sat under its blanket, with the seat belt still through the handle.", "the Ranger, under the madrones"),
+        ("Elijah had an amp on the floor of the cab that would take a guitar and a microphone at once", "the Ranger, Santa Rosa"),
+        ("The amp rode on the floor beside him with the belt through its handle", "the Ranger, driving north"),
+        ("The amp stayed in the truck, under its blanket, because he couldn't think where else to put it.", "the Ranger, at the co-op"),
+        ("She had the amp out on the tailgate, turning it to the light", "the Ranger's tailgate"),
+        ("Elijah putting the blanket back over the amp and tucking in the corners, like something asleep.", "the Ranger, under the blanket again"),
+        ("The duffel went in the Ranger, and the notebooks, and the amp.", "packed in the Ranger (he stays)"),
+        ("The amp had been sitting by the shouse door since he moved in, still under its blanket.", "the shouse, by the door"),
+        ("drove it down past the pump house to the pond and set it on the tailgate, facing the water.", "the Ranger's tailgate, at the pond"),
+        ("He pulled the blanket off the amp and plugged in", "the shouse"),
+        ("He carried it back and set it down on the floor by the stove.", "the shouse, by the stove: left behind"),
+        ("put it in the leather pouch on the side of the amp, under the picks.", "the pouch: his note goes in under the picks"),
+        ("where the amp sat on the floor under its blanket, just as Elijah had left it.", "the shouse, by the stove"),
+        ("Picks. A capo. A set list folded in quarters, except it wasn't a set list.", "the pouch: picks, capo, one folded page (his note)"),
+        ("and the amp on the floor with its blanket off.", "the shouse, on Denny's stream"),
+    ]),
+    ("Ma's pot", [
+        ("the clank of the pot she never let anyone else wash.", "Ma's kitchen"),
+        ("It was on the back burner with a wooden spoon in it and something burned to the bottom.", "Ma's stove, burned"),
+        ("He took the amp, a bag of clothes, the notebooks, the manuscript and the pot.", "the Ranger"),
+        ("He had her pot and an amp he wouldn't turn on", "the Ranger, Santa Rosa"),
+        ("Last came his mother's pot, out of the kitchen trailer, wrapped in a dish towel.", "the co-op kitchen trailer, then the Ranger's bed"),
+        ("got the pot out from between the notebooks and carried it back inside against her chest", "back in the kitchen trailer"),
+        ("His mother's pot went in beside them.", "the Ranger, leaving"),
+        ("In the morning he fried two eggs in his mother's pot, because it was the only pan he owned.", "Manny's kitchen, then Manny's rack"),
+    ]),
+    ("The notebooks", [
+        ("when he opened the notebook where he'd scrawled MADRONE IS NOT A DRONE", "the first"),
+        ("He was on his second notebook by then.", "two"),
+        ("He had two bags of groceries, his notebooks, a pawn ticket", "the Ranger"),
+        ("He had two years of notebooks, and he didn't know.", "his room over the pump house"),
+        ("He got the first notebook down and turned to the old page.", "the shouse, on a shelf"),
+        ("So he closed the notebook and snapped a rubber band around it.", "the shouse table, banded"),
+        ("Eleven notebooks about a machine, and not one line about that.", "eleven"),
+        ("Then a milk crate of notebooks, eleven of them now, and the manuscript", "the Ranger, leaving: eleven"),
+        ("Eleven notebooks rested on it.", "eleven, at the Bear Flag"),
+    ]),
+    ("The Telecaster and its pawn ticket", [
+        ("a photo of him holding a Telecaster at the Gravenstein fair in 2016", "a photo, 2016"),
+        ("In the fourth month he took the Telecaster out from behind the seat.", "behind the Ranger's seat"),
+        ("Elijah slipped the ticket into the notebook, behind a gas receipt with a phone number on it.", "pawned on Fourth Street; the ticket in the notebook"),
+        ("He got the notebook out from under the seat before she did, with the yellow ticket still in it behind the gas receipt", "the ticket in the notebook, under the seat"),
+        ("The four months on the pawn ticket had run out in May while he was under a sink.", "in the pawnshop window"),
+        ("His Telecaster was still in a pawnshop window on Fourth Street", "in the window, Fourth Street"),
+        ("The guitar's gone, by the way. I hocked it in Santa Rosa and never went back.", "gone"),
+    ]),
+    ("The orange tape", [
+        ("Out by the road there was a gatepost with a strip of orange flagging tape tied around it", "the co-op gatepost, faded to pink"),
+        ("There was orange tape on the hitch pin.", "Grace's hitch pin, and her cooler"),
+        ("And I tied a piece of flagging tape on his gate", "the man's gate at the end of the road (her story)"),
+        ("Grace with a banker's box of receipts, and orange tape on the lid.", "the banker's box, county meeting"),
+        ("There was a strip of orange tape tied to the handle of his door.", "the shouse door, after the tea"),
+        ("Curtis put a strip of Grace's orange tape across its dash.", "the green tractor's dash: DECEMBER"),
+        ("The old strip of flagging tape was on the post, where it had been the first night, faded almost white.", "the gatepost, faded white"),
+        ("Next to it there was a new one.", "the gatepost: new, bright, the day he leaves"),
+    ]),
+    ("Curtis's hose (and the closing papers)", [
+        ("He did the repair while the coffee brewed, and left the rest of the hose on the dashboard.", "the Ranger's dashboard"),
+        ("Elijah stashed the hose in the glove box.", "the glove box"),
+        ("His own closing papers were in the glove box, under Curtis's hose", "the glove box, on the closing papers"),
+        ("Hose is in the glove box.", "the glove box"),
+        ("\"It's in the glove box.\"", "the glove box, the day he leaves"),
+        ("three letters on a closing paper in his glove box.", "the closing papers, still in the glove box"),
+    ]),
+    ("The gas receipt with Gus's number", [
+        ("wrote on the back of a gas receipt and handed it to Elijah.", "Gus's number, in Elijah's hand"),
+        ("He filed the receipt in the notebook and went to help.", "in the notebook"),
+        ("And a contact he'd typed in himself off a gas receipt, which just said Gus.", "copied into his phone"),
+        ("behind a gas receipt with a phone number on it.", "in the notebook, in front of the pawn ticket"),
+    ]),
+    ("The pay checks", [
+        ("Reuben cut the first check that week. Elijah put it in the back of a notebook and did not cash it.", "the back of a notebook"),
+        ("next to the checks he hadn't cashed.", "the back of the notebook"),
+        ("He had the notebook out, the back of it, where the checks were.", "the back of the notebook"),
+        ("For this he cashed the newest one.", "the newest cashed, for the print shop"),
+    ]),
+    ("The arms", [
+        ("we got two spare robot arms with your name on 'em.", "promised, Stockton cannery"),
+        ("The two arms Trent owed him, still crated on the cannery dock", "crated, the cannery dock"),
+        ("A guy from the crew moved them on a flatbed for fifty dollars, to a storage place off Highway 99", "storage unit, off Highway 99"),
+        ("He told her they were gone.", "(his lie to Grace: gone at a lien sale)"),
+        ("Lou had the first crate up on the forks", "Praether's pole barn"),
+        ("the way he had once a month since the arms went into the barn.", "Praether's pole barn"),
+        ("They're in Richard Praether's pole barn, out past the grange.", "Praether's pole barn (said at the table)"),
+        ("All that was left were two robot arms in Richard Praether's pole barn.", "Praether's pole barn, left there"),
+    ]),
+]
+
+
+def objects(book, outdir, date):
+    b = Book(book, outdir)
+    rows = []
+    for obj, seen in OBJECTS:
+        hits = []
+        for q, where in seen:
+            ln, ch, no = b.find(q)
+            hits.append((ln, ch, no, where, q))
+        if [h[0] for h in hits] != sorted(h[0] for h in hits):
+            print(f"  note: {obj} rows are not in book order; sorted")
+        for ln, ch, no, where, q in sorted(hits):
+            rows.append([obj, ch, no, ln, where, q])
+    write_csv(outdir, "objects", date, ["Object", "Chapter", "Scene #", "Line", "Where it is (Claude's reading)", "The line (found by the script)"], rows)
+    print(f"{len(OBJECTS)} objects, {len(rows)} sightings; every line found in the book")
+
 if __name__ == "__main__":
-    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2, "money": money}
+    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2, "money": money, "objects": objects}
     if len(sys.argv) < 4 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
     date = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else "2026-11-27"

@@ -270,4 +270,5 @@ C=[
 (262, 'Ch 2', ['They announced the future like it was a regular morning, with pastries and free juice.'], ['announced the future on a Thursday']),
 (263, 'Ch 2', ['The realtors had watched a demonstration of a tiny baby robot. This was more like a car factory, and he had helped build it.'], ['This was the factory,']),
 (264, 'Ch 1', ['He left the tower off for a week while he processed things, kept up with his day job and tried not to go off the deep end.', 'This scales up forever, he thought. Is there really no limit? That can\'t be right.', 'MADRONE IS NOT A DRONE, turned to a clean page and started writing.'], ['and when he opened the notebook where']),
+(265, 'Ch 2', ['A bit later Wes sent a link.'], ['A minute later Wes sent a link.']),
 ]

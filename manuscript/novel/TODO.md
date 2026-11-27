@@ -156,3 +156,14 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
   noted; these three files.
 - 26 Nov, seventh chat: Chapters 20, 21, 22 and 25 (edits 198 to 201); `WRITING-INSTRUCTIONS.md`; the plan.
 - 25 and 26 Nov: edits 1 to 197; v6 made (edits 1 to 138 in the Doc).
+
+## Branch and loose ends (seventh logging chat, closing check, 27 Nov)
+
+- **The one branch:** `claude/singularity-publication-build-kparqk`, in both repos. Every chat pushes there.
+- Checked at close: every other branch on both repos (`riemann-hypothesis-scene-li2h5n`, `singularity-v5-edits-cont-59rn8y`,
+  `singularity-edit-logging-9gajfd`, `surviving-singularity-curtis-scene-kjesg6`, `_workbench`'s `sts-final-edit-gl60p6`)
+  holds nothing for the book that this branch lacks. The Curtis branch's scenes file is identical to this one's;
+  `sts-final-edit` is the 24 to 25 Nov log, superseded.
+- Scene sheet, small: about 18 rows count one word too many (the built text's "[picture]" placeholder was counted;
+  the book prints no pictures). Rows include 5, 7, 9, 16, 19, 50, 55, 60, 61, 62, 68, 75, 79, 82, 91, 101, 104, 135.
+  Recount when the sheet is next regenerated; no story fact depends on it.

@@ -263,6 +263,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   table finds out (Ch 17, 18, 34, 35, 36). make_v6.py now passes **234 rows (608 replacements)**; verify.py on v8 shows
   223 accepted and **224 to 234 not in the Doc**, nothing PARTIAL; 103,503 words. **The next edit is 235.** The lines
   above this one describe the end of the eleventh chat and are one edit behind.
+- The Drive copy of the edit list is still "edits 1 to 233": edit 234 and the context notes added under 229 and 230
+  on 27 Nov are not in it. Refresh it at the end of the next session (step 10).
 
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including

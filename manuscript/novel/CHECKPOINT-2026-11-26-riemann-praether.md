@@ -4,6 +4,30 @@ Written 26 Nov 2026 at the end of the chat that logged edits 229 and 230, at CT'
 for all of this ... Make sure you also upload all of this to GitHub"). Paste the section below into the chat that picks
 it up.
 
+## Hand-off prompt (27 Nov, after edit 234; paste this into the chat that picks it up)
+
+```
+We're finishing my novel, Surviving the Singularity. Pick up where the Riemann and Praether chat left off.
+
+1. Work on branch claude/singularity-publication-build-kparqk in both repos (ctavolazzi/survivingthesingularity and
+   ctavolazzi/_workbench). Push every commit there, whatever branch this chat was given. No pull requests. Another
+   chat may be logging on the same branch: fetch first, read the "Next edit" line in manuscript/novel/TODO.md before
+   you number anything, fetch again before every commit, and merge, never force-push.
+2. Read manuscript/novel/REFERENCE.md (start at section 1 and follow it), then the first section of
+   manuscript/novel/CHECKPOINT-2026-11-26-riemann-praether.md, then CHECKPOINT-2026-11-27-eleventh.md, TODO.md and all
+   of WRITING-INSTRUCTIONS.md. Then STATE.md and the top entry of sessions/LOG.md in _workbench.
+3. Read both Docs fresh with the Docs connector (ids in REFERENCE.md, section 1) and run make_v6.py and verify.py. You
+   should get all 234 check rows passing, 223 rows "accepted" in v8, edits 224 to 234 "not in the Doc", and nothing
+   PARTIAL. If you get anything else, stop and tell me.
+4. Don't change any Google Doc. Don't put the open list to me unless I ask for it.
+
+The last thing logged was edit 234: Grace doesn't know about the arms until the table finds out in Chapter 34. One
+question from it is waiting on me (whether the fight at the fire should name the hiding). The smell pass has not been
+started; its own prompt is at the end of CHECKPOINT-2026-11-27-eleventh.md.
+
+When you're done spinning up, tell me in one line that you're ready and that the next edit is 235.
+```
+
 ## Close of this chat, 27 November (read this part first)
 
 The chat ran on after the prompt further down was written. Where its work stands now:

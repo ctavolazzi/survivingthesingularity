@@ -5131,6 +5131,30 @@
     "sheet": 107,
     "chapter": "Ch 32",
     "people": [
+      "Elijah",
+      "Grace",
+      "Lou",
+      "Marta",
+      "Priya"
+    ],
+    "wants": [
+      {
+        "person": "Priya",
+        "want": "the pit read and written down, even hurt",
+        "quote": "Somebody finish the pit"
+      },
+      {
+        "person": "Lou",
+        "want": "to get her leg safe before anything else",
+        "quote": "Then that's all I'm doing."
+      }
+    ],
+    "turn": "Lou says he is a veteran; Grace and Elijah did not know."
+  },
+  {
+    "sheet": 108,
+    "chapter": "Ch 32",
+    "people": [
       "Curtis",
       "Elijah",
       "Grace",
@@ -5211,7 +5235,7 @@
     "turn": "Elijah learns Grace has known since the first and fights her, they make up at the pond, and the shortfall goes to the table where it is logged as one late payment."
   },
   {
-    "sheet": 108,
+    "sheet": 109,
     "chapter": "Ch 32",
     "people": [
       "Irene",
@@ -5253,7 +5277,7 @@
     "turn": "The cutter takes a branch to bare wood on the fifth turn, Tyler closes the laptop and waits until summer, and in June the dead wood is kept as jin."
   },
   {
-    "sheet": 109,
+    "sheet": 110,
     "chapter": "Ch 33",
     "people": [
       "Denny",
@@ -5285,7 +5309,7 @@
     "turn": "Elijah logs the Architect's post, and Denny, who says he left on his own, asks whether Friday is still on."
   },
   {
-    "sheet": 110,
+    "sheet": 111,
     "chapter": "Ch 33",
     "people": [
       "Curtis",
@@ -5374,7 +5398,7 @@
     "turn": "The table believes Elijah for about a minute, then refuses to act, and Grace gets his promise not to post the notebook. Grace asks which of them helped at the door, Elijah talks about doors and does not answer, and the light goes."
   },
   {
-    "sheet": 111,
+    "sheet": 112,
     "chapter": "Ch 33",
     "people": [
       "Curtis",
@@ -5521,7 +5545,7 @@
     "turn": "Lou asks whether food and a safe home would change how people feel about the machine, Curtis asks who holds the plug, Lou says he would like it to be Curtis, and Elijah writes the exchange in the notebook without speaking."
   },
   {
-    "sheet": 112,
+    "sheet": 113,
     "chapter": "Ch 34",
     "people": [
       "Curtis",
@@ -5559,7 +5583,7 @@
     "turn": "The tractor is out for nine days, and Curtis stops the jailbreak talk and turns to Walt's old tractor in Irene's barn."
   },
   {
-    "sheet": 113,
+    "sheet": 114,
     "chapter": "Ch 34",
     "people": [
       "Grace",
@@ -5592,7 +5616,7 @@
     "turn": "Marta and Grace sign Priya's sheet, and Grace takes on talking to Lupe."
   },
   {
-    "sheet": 114,
+    "sheet": 115,
     "chapter": "Ch 34",
     "people": [
       "Curtis",
@@ -5715,7 +5739,7 @@
     "turn": "The arms come out, Lou admits he helped hide them, Patricia will not look at the price list, and Reuben tables it and moves on to toilets. Lou says the Ochoas are leaving at the end of the month, and the room turns on Elijah."
   },
   {
-    "sheet": 115,
+    "sheet": 116,
     "chapter": "Ch 35",
     "people": [
       "Elijah",
@@ -5756,7 +5780,7 @@
     "turn": "Elijah admits he is doing what the room did and asks what to do, and Lou hands it back and turns on the water."
   },
   {
-    "sheet": 116,
+    "sheet": 117,
     "chapter": "Ch 35",
     "people": [
       "Elijah",
@@ -5787,7 +5811,7 @@
     "turn": "Elijah gives Lou his ALC measure out loud for the first time, and Lou does not argue."
   },
   {
-    "sheet": 117,
+    "sheet": 118,
     "chapter": "Ch 36",
     "people": [
       "Elijah",
@@ -5816,7 +5840,7 @@
     "turn": "The Ochoas leave, Lupe hands Grace the clipboard with Elijah's name still on it, and Reuben changes the count to twenty."
   },
   {
-    "sheet": 118,
+    "sheet": 119,
     "chapter": "Ch 36",
     "people": [
       "Elijah",
@@ -5847,7 +5871,7 @@
     "turn": "Elijah says he is dropping the arms, Grace answers with Mrs. Delgado and the December route, and the thing sits between them."
   },
   {
-    "sheet": 119,
+    "sheet": 120,
     "chapter": "Ch 36",
     "people": [
       "Elijah",
@@ -5934,7 +5958,7 @@
     "turn": "The fire turns into a fight: Grace wants the arms brought in for Mrs. Delgado's January box, Elijah says choosing for others is the gate, and when he throws her father back at her she tells him to go home."
   },
   {
-    "sheet": 120,
+    "sheet": 121,
     "chapter": "Ch 37",
     "people": [
       "Devendra",
@@ -5997,7 +6021,7 @@
     "turn": "Elijah stops waiting for Grace, packs, and leaves the amp and four written words behind, and Devendra admits his company's part in the sale."
   },
   {
-    "sheet": 121,
+    "sheet": 122,
     "chapter": "Ch 37",
     "people": [
       "Elijah",
@@ -6024,7 +6048,7 @@
     "turn": "The weld holds, and Marta shakes his bare hand and calls him Elijah for the first time in three years."
   },
   {
-    "sheet": 122,
+    "sheet": 123,
     "chapter": "Ch 37",
     "people": [
       "Curtis",
@@ -6081,7 +6105,7 @@
     "turn": "Each person sends him off, Curtis leaves the hose with him, and at the gate a new orange flagging tape appears beside the old one."
   },
   {
-    "sheet": 123,
+    "sheet": 124,
     "chapter": "Ch 37",
     "people": [
       "Elijah",
@@ -6123,7 +6147,7 @@
     "turn": "Elijah answers his mother 'Not yet, Ma' instead of saying there is no Barry, accepts two dinners, and sleeps at Manny's, the one place with no light on it."
   },
   {
-    "sheet": 124,
+    "sheet": 125,
     "chapter": "Ch 38",
     "people": [
       "Curtis",
@@ -6285,7 +6309,7 @@
     "turn": "The machine's video splits the table, Patricia confesses her daily use, Curtis sits back down, the table says the Lord's Prayer, and Grace sings 'The Weight' by the amp, types Come home and deletes it, then turns off Denny's live feed."
   },
   {
-    "sheet": 125,
+    "sheet": 126,
     "chapter": "Ch 39",
     "people": [
       "Elijah",
@@ -6327,7 +6351,7 @@
     "turn": "Elijah reads his mother the book and answers Wes's five-year-old text: yes, all of it is in the thing, and the guitar is gone."
   },
   {
-    "sheet": 126,
+    "sheet": 127,
     "chapter": "Ch 39",
     "people": [
       "David",
@@ -6399,7 +6423,7 @@
     "turn": "David refuses Elijah's money and tells him the three laid-off people are fine, so Elijah laughs and cries, then declines Wes's invitation to sit in at the Grange this time."
   },
   {
-    "sheet": 127,
+    "sheet": 128,
     "chapter": "Ch 39",
     "people": [
       "David",
@@ -6458,7 +6482,7 @@
     "turn": "Elijah tells the girl to go see the farm, raises a glass to the table and the video, and on the screen Grace says the stove is going and that she lit it herself."
   },
   {
-    "sheet": 128,
+    "sheet": 129,
     "chapter": "Epilogue",
     "people": [
       "Elijah",

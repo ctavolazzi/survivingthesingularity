@@ -142,30 +142,31 @@ WHEN = """
 103|2027-03|March 2027, on the dairy|worked
 104|2027-03|March 2027: five small things|stated
 105|2027-03-28|Late March 2027|stated
-106|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
-107|2027-04-10|April to June 2027: the juniper|stated
-108|2027-06|June to Friday 9 July 2027|stated
-109|2027-07-09|Friday dinner, 9 July 2027; then the same evening|worked
-110|2027-07-16|The next Friday|stated
-111|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
-112|2027-10-11|The afternoon before the October meeting|stated
-113|2027-10-12|A Tuesday in the middle of October 2027: the meeting; then the same night|stated
-114|2027-10-13|Six the next morning|stated
-115|2027-10-13|That night|stated
-116|2027-10-23|The Saturday before the festival|stated
-117|2027-10-27|The Wednesday of festival week|stated
-118|2027-10-30|The last night of the festival: the fire|worked
-119|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
-120|2027-11-09|The same Tuesday|stated
+106|2027-04-01|The first of April 2027, the pit: Priya's ankle|stated
+107|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
+108|2027-04-10|April to June 2027: the juniper|stated
+109|2027-06|June to Friday 9 July 2027|stated
+110|2027-07-09|Friday dinner, 9 July 2027; then the same evening|worked
+111|2027-07-16|The next Friday|stated
+112|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
+113|2027-10-11|The afternoon before the October meeting|stated
+114|2027-10-12|A Tuesday in the middle of October 2027: the meeting; then the same night|stated
+115|2027-10-13|Six the next morning|stated
+116|2027-10-13|That night|stated
+117|2027-10-23|The Saturday before the festival|stated
+118|2027-10-27|The Wednesday of festival week|stated
+119|2027-10-30|The last night of the festival: the fire|worked
+120|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
 121|2027-11-09|The same Tuesday|stated
-122|2027-11-09|Two days south; the rose garden; Manny's|stated
-123|2027-11-25|Thursday 25 November 2027|stated
-124|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
-125|2027-11-25|Thanksgiving night, the Bear Flag|stated
-126|2027-11-25|The same night|stated
-127|2027-12|December 2027 to April 2028|stated
+122|2027-11-09|The same Tuesday|stated
+123|2027-11-09|Two days south; the rose garden; Manny's|stated
+124|2027-11-25|Thursday 25 November 2027|stated
+125|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
+126|2027-11-25|Thanksgiving night, the Bear Flag|stated
+127|2027-11-25|The same night|stated
+128|2027-12|December 2027 to April 2028|stated
 """
-BACK_ON_PURPOSE = {36, 48, 52, 55, 64, 65, 79, 124}  # renumbered after edit 267 merged thirteen scenes  # scenes the book tells out of order
+BACK_ON_PURPOSE = {36, 48, 52, 55, 64, 65, 79, 125}  # renumbered after edit 267 merged thirteen scenes  # scenes the book tells out of order
 
 
 def D(y, m, d):

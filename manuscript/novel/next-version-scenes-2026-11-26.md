@@ -233,6 +233,9 @@ What the page gives it (checked 27 Nov against the book with edits 1 to 236):
 
 ## 3. Priya's ankle, and Lou says "Combat"
 
+**Logged as edit 286 on 27 Nov (CT: "Yes, log the ankle scene"), with two changes for the page: it opens "In April, when
+he dug the pit," and "the gantry rail" is "the side board of the bed". See EDITS.md, 286.**
+
 ### His words
 
 Maybe we can have a scene where it's busted and oh no. And then Lou can demonstrate just how good he is at not only leading and giving great advice, but helping render a first aid. There's a first aid kit in the shed. Go get it. Should be splint material with it. It's a big one. Grab the big one. Sure, there's a first aid kit in the shed. Go get it. Grab the big one. And then he grabs a stick nearby for a splint. Wraps up Priya's leg. Snaps the stick. Does proper first aid. Field dressing. And then maybe Grace asks, "Where'd you learn to do that, Lou?" Somewhere in the book that makes sense, right? "Where'd you learn to do that, Lou?" Like Priya's like, "Ow, ow, ow." And Marta grabs her and takes her with her off to the hospital, which involves a drive into town. Grace, "Where'd you learn to do that, Lou?" And Lou says, "Combat." And whoever's there like looks at him, like neck snap over. And he says, "I'm a veteran." "Did you guys not know that?" "No, Lou." And he goes, "Oh, to most people it's obvious." And Grace is like, "Well, you're not like any veteran I've ever met." And Elijah says, "Amen to that." And Lou goes, "Well, you guys need to get out more." Which is a joke, right? Because they all live on the farm together. They all get out basically the same amount.

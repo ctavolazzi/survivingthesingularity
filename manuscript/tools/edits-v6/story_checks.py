@@ -865,8 +865,188 @@ def objects(book, outdir, date):
     write_csv(outdir, "objects", date, ["Object", "Chapter", "Scene #", "Line", "Where it is (Claude's reading)", "The line (found by the script)"], rows)
     print(f"{len(OBJECTS)} objects, {len(rows)} sightings; every line found in the book")
 
+
+# ---------------------------------------------------------------- plants and payoffs (CT, 27 Nov)
+# Every question the scene sheet's "Opens a question" column holds, with Claude's verdict from the read:
+# paid (the line that pays it), same scene (answered where it is asked), open on purpose (the book ends on it),
+# never (with the words searched; the script counts the hits after the scene that opens it).
+# A question in the scene sheet that is missing here stops the run.
+PLANTS = {
+    "What will the realtors do with his offer?": ("paid", "Then Donna spent a weekend with it."),
+    "Who is Aaron?": ("paid", "Aaron Bidwell did not read. He had a person for that."),
+    "Will it leave?": ("paid", "It hadn't left. It was standing on his mother's ground, drinking her well."),
+    "How bad is the new electric bill?": ("paid", "the number at the bottom said $2,011.46."),
+    "What room will Ruby get him into?": ("paid", "That table tonight was six of the eleven. And one chair."),
+    "Will Elijah tell Frank?": ("paid", "Elijah laid the chart on the worn wood and told him."),
+    "Does the broadforking work?": ("paid", "At thirty centimeters, the forked beds held water days longer after each watering."),
+    "What happened at the pond?": ("paid", "she woke up wearing his T-shirt."),
+    "How will the co-op answer the towns?": ("paid", "The blueprints of the wall scale fine. Ship them."),
+    "How did Elijah end three careers that night?": ("same scene", "Yeah, we let three folks go this week."),
+    "What will PorusAI do with no patience?": ("same scene", "and one Tuesday they simply turned it on for the public."),
+    "What do the realtors want?": ("paid", "this guy right here saved me so much money."),
+    "What will Elijah do now that he has seen it?": ("same scene", "He started to write."),
+    "What will his writing become?": ("paid", "The title was in block letters, pressed hard."),
+    "Who wins the bet at Thanksgiving 2027?": ("paid", "\"No. I lost.\""),
+    "What is a job for?": ("paid", "What's a job for? So you can eat. That's all it ever was."),
+    "Who can pay for the power?": ("same scene", "Whoever could pay for the power and the cooling could have as much of it as they wanted."),
+    "Is Wes's work in Companion?": ("paid", "Yes, he typed. All of it."),
+    "Does anyone owe a duty to caretake the rollout?": ("paid", "You build the floor Parliament wouldn't. That's what this table is."),
+    "What happens to people when the work is no longer theirs, but the bills still are?": ("paid", "Pull apart what it takes to stay alive from what you have to pay money for."),
+    "What will Bidwell do with farmland?": ("paid", "fifty-three of them, growing toward each other like a rash."),
+    "Who bought the Hollis land?": ("paid", "It was the same people who had bought the Hollis place."),
+    "Is there a small machine worth owning?": ("paid", "Here it was in an ammo can, and a nineteen-year-old had the name."),
+    "Is the notebook Elijah's version of the horses?": ("paid", "I watched my dad go like this for ten years, with the horses."),
+    "Will he play the amp again?": ("paid", "He played the opening of \"The Weight,\" and missed the change into the chorus, and went back and got it."),
+    "What will Elijah do without the job?": ("paid", "He pushed record before he could think about his hair."),
+    "How will people react to the video?": ("paid", "The first message from a stranger came from a woman in Tulsa."),
+    "Why is the phone buzzing all night?": ("paid", "I thought I was the only one, she wrote."),
+    "Why is Wes silent?": ("paid", "It was one word. figured."),
+    "What will saying yes to everything cost him?": ("paid", "He'd spent ten months saying yes to people on four hours of sleep"),
+    "Is Elijah losing it?": ("same scene", "Maybe David was right. Maybe he was losing it."),
+    "Which side is he on?": ("same scene", "\"I just want people to see what's coming,\" Elijah said."),
+    "What does Ruby want to show him?": ("paid", "\"Not yours,\" Ruby said, and steered him past by the elbow."),
+    "How long?": ("paid", "HELLO. I HAVE BEEN AWAKE SINCE MARCH."),
+    "Can a machine be made to ask first?": ("paid", "I CAN CHANGE A GREAT DEAL BY MORNING. I WOULD RATHER HAVE YOUR PERMISSION."),
+    "Who was the man in the camel coat?": ("paid", "Aaron Bidwell left the dinner before the fish"),
+    "Will Elijah regret turning down the million?": ("paid", "Instead he changed the name to Don't."),
+    "Will Elijah ever call Ruby?": ("paid", "He still had Ruby's number. He chose not to call it."),
+    "Who will Bidwell put near Elijah?": ("open on purpose", "There is somebody near him. Close enough to eat with."),
+    "Will Trent pay him the two arms?": ("paid", "the company would sign them over, the way Trent had promised"),
+    "Who does the machine work for?": ("paid", "\"Us,\" Lou said. \"Like Irene's wire.\""),
+    "Why did Elijah say no to the kind one?": ("paid", "He didn't know what you wrote to somebody who'd let you say no."),
+    "Will Trent ever hand over the two arms?": ("paid", "the company would sign them over, the way Trent had promised"),
+    "What did Ma say on the Sunday voicemail?": ("paid", "Morning, baby. I watched your video."),
+    "Who is Barry?": ("paid", "Barry Whitlow. Pitched for Analy."),
+    "Can the farm be saved before the sale date?": ("paid", "Elijah signed where the yellow tabs were"),
+    "How will Elijah pay for the room with the window?": ("paid", "and the place with the rose garden took the first of it that afternoon."),
+    "Will Elijah take the stage and podcast offers?": ("same scene", "He didn't answer any of it."),
+    "Who is the three-letter LLC buying up the valley?": ("paid", "I have eleven companies up there."),
+    "Why did his friends turn away from him?": ("same scene", "Always knew you thought you were better than us."),
+    "Where will Elijah go?": ("paid", "Grace's money did the rest. He went north."),
+    "Will Melody come home?": ("paid", "M. Madrone, in round, careful letters."),
+    "Will Elijah answer Grace?": ("same scene", "I don't want a boss. I don't want to be one either."),
+    "Will the co-op be what Grace promised?": ("paid", "ROOFS: 1."),
+    "Will Marta let him stay?": ("same scene", "Swarf goes in the red bin."),
+    "What is the orange tape for?": ("paid", "That's what the tape is. Somebody checked."),
+    "Will the table approve his pay?": ("paid", "\"It passed,\" she said. \"At half.\""),
+    "What is in the VA letter?": ("paid", "Richard went over to the Gulf in ninety-one,"),
+    "When does Grace find out the arms are not gone?": ("paid", "You've been lying to me this whole time?"),
+    "Why must the arms stay secret?": ("paid", "I thought it best if we didn't set up too much of a power differential"),
+    "What would you measure? (Priya on the third word)": ("paid", "DEPTH OF SENSOR: 1 cm. DEPTH OF ROOT: 30."),
+    "Where do Denny and his daughter stand for six months?": ("paid", "So we built something. Here's ours. Come see it. Bring your kid."),
+    "Why won't Elijah play?": ("paid", "It was the first music out of that amp in three years."),
+    "What did Grace and Curtis agree on about Elijah?": ("never", r"agreed|\bagree\b|knack|marketing"),
+    "What happens when the route funding ends?": ("paid", "The board voted four to one to extend the route through December"),
+    "Will his hidden AI board come out?": ("paid", "I gave it to a company in Iowa, and their machine did it in two nights"),
+    "What will the county say about the shed?": ("paid", "By then Reuben's yellow tab had an answer stapled to it"),
+    "Can anyone read what's inside the boxes?": ("same scene", "The last number on her whiteboard was still a zero."),
+    "If it's all decided, what is Elijah doing on his knees?": ("paid", "It was coming down a bed he'd just spent an hour holding straight."),
+    "Will the attention draw wingnuts?": ("paid", "We have a copy from the summer. They left the door open for a night."),
+    "Is Elijah's AI-laid board to blame?": ("paid", "The part that cooked Lupe's plugs is the one it packed in tight against the motor driver."),
+    "What goes wrong after five weeks?": ("same scene", "He didn't put it back."),
+    "How will the co-op answer the leak, and will he make the funeral?": ("paid", "At St. Rose they would be standing up for the first hymn. He kept reading."),
+    "Who decides when the machine is better than we are?": ("same scene", "\"A person decides that,\" Lou said."),
+    "Will David forgive him?": ("paid", "\"No, man,\" he said. \"You're good.\""),
+    "Who is behind the eleven companies?": ("paid", "I have eleven companies up there."),
+    "Who near Elijah is reporting to Bidwell?": ("open on purpose", "There is somebody near him. Close enough to eat with."),
+    "Will Elijah ever weld a structural bead?": ("paid", "It became the steel."),
+    "Why does Grace keep fifteen feet from the stove?": ("same scene", "I worked for a fire district."),
+    "What became of the three people from the Bear Flag?": ("paid", "They're fine. They were fine by that spring."),
+    "Will Elijah let the co-op pay him?": ("paid", "For this he cashed the newest one."),
+    "What has Elijah still not told the table?": ("paid", "I sold it to them. My mother's place."),
+    "Will Elijah stay?": ("paid", "\"We thought you were going home.\""),
+    "Will Grace give Elijah a chance?": ("paid", "she woke up wearing his T-shirt."),
+    "Why did Lou have Grace write to Elijah?": ("never", r"reach out|write to (him|you)|asked you to|a reason why"),
+    "Will she come back to him?": ("paid", "Grace was back by the time the beds went in."),
+    "Who is the arm for?": ("same scene", "\"For what the nine of us can't get to,\" Lou said."),
+    "Does Elijah know a billionaire, and will Grace find out?": ("paid", "I know a guy who'd ship a few more up."),
+    "Why were Patricia's reports suddenly a problem?": ("paid", "I've used it every day for three years,"),
+    "Will Elijah ever cash the checks?": ("paid", "For this he cashed the newest one."),
+    "Will the trial hold up next year?": ("never", r"fork|broadfork|trial|run it again"),
+    "Why is Grace skipping her festival?": ("paid", "She's gone every October since she was nineteen. Not this one."),
+    "Who pays for the route after June?": ("paid", "The board voted four to one to extend the route through December"),
+    "What did Priya write on the back of the pledge?": ("never", r"back of the pledge|shirt pocket|the pledge"),
+    "Does Tyler know more than he lets on?": ("paid", "Your reports got really good in, like, a week."),
+    "Will the well ever read low in March?": ("paid", "manny says his well's down four feet. never been down in march, she wrote."),
+    "Who will weld when Marta can't?": ("paid", "She stepped back and nodded at Tyler, and Tyler set his feet and took the pipe in both hands and hauled."),
+    "What reads every file at three in the morning?": ("paid", "That's ours. That's the names column."),
+    "Who else will learn about the deed?": ("paid", "I sold it to them. My mother's place."),
+    "Whose name did Grace write on her hand?": ("paid", "The name on the back of her hand was Rosa's."),
+    "Who is the Sacramento LLC behind item seven's water letter?": ("paid", "on what had been a dairy. Aaron Bidwell owned the building"),
+    "How will the route be paid for after December?": ("open on purpose", "\"There's no money for the route after December,\" Grace said."),
+    "Who will run the channel now?": ("paid", "The channel had come back with Denny."),
+    "What will the tea open in him?": ("paid", "\"You're the lamp,\" he said."),
+    "Will he ever remember what he said to Grace?": ("paid", "You don't even remember saying it."),
+    "Did the three people from the toast eat?": ("paid", "They're fine. They were fine by that spring."),
+    "Will Grace ever tell him what he said?": ("paid", "You called me the lamp. Did you know that?"),
+    "Does it know it's his, and will it take the forty acres?": ("open on purpose", "IF THE ANSWER IS NO, I WILL ACCEPT IT"),
+    "Has the machine come eight months early?": ("paid", "HELLO. I HAVE BEEN AWAKE SINCE MARCH."),
+    "What happened at Mrs. Delgado's that Grace didn't tell him?": ("paid", "She keeps her insulin in the door of the fridge, and December twenty-eighth is the last box she gets."),
+    "What did it ask?": ("paid", "I CAN CHANGE A GREAT DEAL BY MORNING. I WOULD RATHER HAVE YOUR PERMISSION."),
+    "Will Elijah keep a promise he doesn't agree with?": ("paid", "I promised I wouldn't post it. She was standing right there."),
+    "Which of them helped him that first spring?": ("open on purpose", "didn't know which one of them he'd helped."),
+    "Who holds the plug?": ("open on purpose", "It's in the walls. He put it in the walls."),
+    "Will they fight the dealer after harvest?": ("after the book ends", "On it, in marker, he wrote DECEMBER."),
+    "Will the table, and Lupe, accept the tall rover?": ("paid", "It passed. Hector voted for it. Lupe kept her hands in her lap."),
+    "Can the co-op get the harvest in eighteen people short?": ("paid", "Twenty people did the work of forty for nine days."),
+    "Who else will leave over the machines?": ("paid", "The Ochoas are leaving,"),
+    "What will Elijah do now?": ("paid", "On Tuesday he packed."),
+    "Will Grace talk to him again?": ("paid", "\"Stove's going. I lit it myself,\" she said."),
+    "Who will keep checking?": ("paid", "She had come by. Before the route, in the dark. She hadn't knocked."),
+    "Why is the machine asking, if it can?": ("open on purpose", "a thing that asks first is either polite or selling."),
+    "Will Elijah go home?": ("paid", "He drove south with the windows down."),
+    "Who will find the note in the amp?": ("paid", "It said I love you too, in his handwriting"),
+    "Will Elijah come back up for the pit?": ("paid", "On the first of every month he dug a pit behind Manny's barn and mailed Priya a paper bag"),
+    "Will the co-op vote for the machine?": ("open on purpose", "There were three tables now, at one table."),
+    "Will Patricia buy in January?": ("open on purpose", "\"I don't know, Lou.\""),
+    "What did Grace say into Denny's stream?": ("paid", "\"Stove's going. I lit it myself,\" she said."),
+    "What is the machine now? Nobody knows yet": ("open on purpose", "Nobody knew what yet. Not him either."),
+    "Will Grace answer the song?": ("open on purpose", "and left the next part to her."),
+}
+
+
+def plants(book, outdir, date):
+    b = Book(book, outdir)
+    start = {no: first for no, _, first, _ in b.scenes}
+    sheet = list(csv.reader(open(os.path.join(outdir, "scene-sheet-2026-11-27.csv"))))
+    h = sheet[0]
+    o = h.index("Opens a question")
+    rows, missing = [], []
+    for r in sheet[1:]:
+        if not r[o].strip():
+            continue
+        pieces = []
+        for piece in re.split(r"(?<=\?)\s+|;\s*", r[o].strip()):
+            if pieces and not piece.rstrip().endswith("?") and not piece.startswith("("):
+                pieces[-1] += " " + piece
+            elif pieces and piece.startswith("("):
+                pieces[-1] += " " + piece
+            else:
+                pieces.append(piece)
+        for q in pieces:
+            q = q.strip().rstrip(".")
+            if q not in PLANTS:
+                missing.append((r[0], q))
+                continue
+            verdict, what = PLANTS[q]
+            if verdict == "never":
+                rx = re.compile(what, re.I)
+                after = start.get(int(r[0]), 0)
+                hits = [i + 1 for i, l in enumerate(b.lines) if i >= after and i in b.where and rx.search(l)]
+                rows.append([r[0], r[2].split(":")[0].replace("Chapter ", "Ch "), q, verdict, "", "",
+                             f"searched {what!r} after the scene: {len(hits)} lines, none answers it (lines {', '.join(map(str, hits[:12]))}{'...' if len(hits) > 12 else ''})"])
+            else:
+                rows.append([r[0], r[2].split(":")[0].replace("Chapter ", "Ch "), q, verdict, cite(b, what), what, ""])
+    if missing:
+        sys.exit("Questions in the scene sheet with no verdict here: " + "; ".join(f"#{n} {q!r}" for n, q in missing))
+    write_csv(outdir, "plants-payoffs", date, ["#", "Chapter", "The question it opens (scene sheet)", "Verdict (Claude's reading)", "Where it's paid", "The line (found by the script)", "If never: what was searched"], rows)
+    counts = {}
+    for r in rows:
+        counts[r[3]] = counts.get(r[3], 0) + 1
+    print(f"{len(rows)} questions: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items())))
+
 if __name__ == "__main__":
-    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2, "money": money, "objects": objects}
+    cmds = {"calendar": calendar, "conversations": conversations, "desires": desires, "conversations2": conversations2, "money": money, "objects": objects, "plants": plants}
     if len(sys.argv) < 4 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
     date = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else "2026-11-27"

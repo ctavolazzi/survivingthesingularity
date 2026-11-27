@@ -24,6 +24,7 @@
     <p class="eyebrow">FREE SAMPLE · DRAFT v{data.version}</p>
     <h1>Start with the book.</h1>
     <p>Read the introduction, then use the reading guide to choose a path for your work, household, or community. These excerpts come from the current draft.</p>
+    <p class="novel-sample"><a href="/downloads/Surviving-the-Singularity-Chapters-0-11.pdf">Read Chapters 0 to 11 free (PDF)</a></p>
     <nav aria-label="Sample sections">
       {#each data.excerpts as excerpt}
         <a href={'#' + excerpt.id}>{excerpt.title}</a>
@@ -55,6 +56,7 @@
   h2, .sample-prose :global(h1), .sample-prose :global(h2), .sample-prose :global(h3) { color: #f1f5f9; line-height: 1.3; }
   .sample-prose :global(h2) { font-size: 1.65rem; font-weight: 700; margin: 1.5rem 0 1rem; }
   .sample-prose :global(h3) { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 1rem; }
+  .novel-sample { font-size: 1.15rem; font-weight: 700; margin: 1.25rem 0 0; }
   .eyebrow { font-family: monospace; color: #fbbf24; letter-spacing: .08em; }
   nav, .actions { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; margin-top: 1.5rem; }
   a, .sample-prose :global(a) { color: #fbbf24; text-decoration: underline; text-underline-offset: .2em; }

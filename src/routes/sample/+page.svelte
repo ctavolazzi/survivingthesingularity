@@ -24,7 +24,7 @@
     <p class="eyebrow">FREE SAMPLE · DRAFT v{data.version}</p>
     <h1>Start with the book.</h1>
     <p>Read the introduction, then use the reading guide to choose a path for your work, household, or community. These excerpts come from the current draft.</p>
-    <p class="novel-sample"><a href="/downloads/Surviving-the-Singularity-Chapters-0-11.pdf">Read Chapters 0 to 11 free (PDF)</a></p>
+    <p class="novel-sample"><a href="/downloads/Surviving-the-Singularity-Chapters-0-10.pdf">Read Chapters 0 to 10 free (PDF)</a></p>
     <nav aria-label="Sample sections">
       {#each data.excerpts as excerpt}
         <a href={'#' + excerpt.id}>{excerpt.title}</a>

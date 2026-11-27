@@ -313,6 +313,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   - The story checks, one workbook, eight tabs: "Surviving the Singularity: story checks (edits 1 to 240)",
     `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8` (who knows what, knows by phase, evidence; the calendar and its checks; conversations by scene,
     pairs, lines by chapter).
+  - (After this, edit 241 was logged: Chapter 33, "She had never said it boldly to his face." 241 rows pass, 619
+    replacements, 224 to 241 not in the Doc, 104,977 words, next edit 242. The Drive copies below stop at edit 240.)
   - The edit list: "StS edit list, edits 1 to 240 (mirror of GitHub)", `1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I`.
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)

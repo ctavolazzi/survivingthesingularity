@@ -52,7 +52,7 @@ WHEN = """
 13|2023-04|The next Monday and the week after: the bill|stated
 14|2023-04|A Wednesday|stated
 15|2023-04|That weekend|stated
-16|2023-10-17|October 2023, a Tuesday, eleven months after the toast: laid off|stated
+16|2023-10-17|October 2023, eleven months after the toast: laid off|stated
 17|2023-10-17|The same day: the video; then that night and the next morning|stated
 18|2023-10-20|October to December 2023: the replies|stated
 19|2023-12|A Sunday, 9:55|stated
@@ -201,7 +201,7 @@ CHECKS = [  # (what, [quotes], function -> (verdict, detail))
     ("The late April crisis is 'seven weeks after he'd walked into the shop'", ["found him in late April, seven weeks after he'd walked into the shop", "Claypot shipped Companion 2.0 on a Thursday afternoon"],
      lambda: (abs((D(2025, 4, 24) - D(2025, 3, 4)).days - 49) <= 3, f"4 March to Thursday 24 April 2025 is {(D(2025, 4, 24) - D(2025, 3, 4)).days} days")),
     ("He leaves on a Tuesday while Grace is on the route", ["On Tuesday he packed.", "She was on the route. It was Tuesday."], lambda: (True, "both say Tuesday")),
-    ("The laid-off video is four years before Thanksgiving 2027 and eleven months after the toast", ["Elijah got laid off on a Tuesday, eleven months after the toast.", "That's four years.", "She had watched it in October, the morning after he posted"],
+    ("The laid-off video is four years before Thanksgiving 2027 and eleven months after the toast", ["Elijah got laid off eleven months after the toast.", "That's four years.", "She had watched it in October, the morning after he posted"],
      lambda: (True, "toast November 2022, layoff October 2023, four years and a month to November 2027")),
     ("The document was started 'fifteen months back' from February 2024", ["he'd started at 12:30 in the morning, fifteen months back"],
      lambda: ((2024 - 2022) * 12 + (2 - 11) == 15, "November 2022 to February 2024 is 15 months")),
@@ -490,7 +490,7 @@ DESIRES = [
      "", "",
      "never shown", ""),
     ("Nina Haverford", r"\bNina\b", "for Elijah to keep his head down until his stock vests", "Get to March, your stock vests, and then you can breathe.",
-     "", "", "", "", "no: he is laid off", "Elijah got laid off on a Tuesday, eleven months after the toast."),
+     "", "", "", "", "no: he is laid off", "Elijah got laid off eleven months after the toast."),
     ("Ruby Roth-Jones", r"\bRuby\b", "to collect Elijah", "I just like having people like you around. I collect them.",
      "(his lamp keeps Ma company)", "You must be Barry. She asks for you.",
      "Elijah says no to a million", "\"Nah. I'm sorry.\"",

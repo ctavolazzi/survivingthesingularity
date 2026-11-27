@@ -278,4 +278,5 @@ C=[
 (270, 'Ch 4', ["and stacking guesses doesn't get you truth. It gets you a mural of knowledge."], ["doesn't get you knowledge."]),
 (271, 'Ch 5', ['So before he could ruin it he bought the Bear Flag,'], ['So before the next weekend he bought']),
 (272, 'Ch 5', ['and every guy and gal at every open mic'], ['every guy at every open mic']),
+(273, 'Ch 6', ['Elijah got laid off eleven months after the toast.'], ['laid off on a Tuesday']),
 ]

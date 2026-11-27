@@ -1624,6 +1624,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (271, 'So before the next weekend he bought the Bear Flag,', 'So before he could ruin it he bought the Bear Flag,'),
 # 272, Ch 5: every guy and gal (CT, 27 Nov, fourteenth chat)
 (272, 'and every guy at every open mic', 'and every guy and gal at every open mic'),
+# 273, Ch 6: "on a Tuesday" out (CT, 27 Nov, fourteenth chat)
+(273, 'Elijah got laid off on a Tuesday, eleven months after the toast.', 'Elijah got laid off eleven months after the toast.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

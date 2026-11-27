@@ -356,3 +356,11 @@ grep-checked; none is fixed, each is CT's to rule on:
   came in the first days of April.
 - Ch 17 and 19: Grace's offer came "in her message on his page"; Tyler "had found Elijah's email for Grace".
 Chapters 10 to 15 and 22 to the Epilogue were not re-read by this chat; its readers stopped at a usage limit.
+
+## The site branch from the first novel chat (27 Nov)
+`claude/manuscript-review-sts-updates-gu5849` rebuilt the site from the 17 Nov draft of the novel. Its book text is
+superseded by v8 plus edits 224 to 234 on this branch. Do not merge it as is. Parts that may be worth porting after the
+final pass: the legal pages and fiction notice (`src/lib/bookNotice.js`), the refund and license lines in
+`src/lib/offer.js`, the EPUB and download builder (`scripts/build_novel_downloads.py`), and the hope copy
+(`src/lib/stance.js`). The scene sheet audit that chat ran on 27 Nov found nothing that the full read above and the
+four items above do not already cover.

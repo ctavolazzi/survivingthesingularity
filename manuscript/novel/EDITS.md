@@ -4103,7 +4103,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could
      rub that in his dad's face." In the same paragraph, after edit 290's line. Searched: champagne, caviar, "beer
      budget" and "rub that in" are nowhere else. Fits the timeline: his father died when Elijah was about twenty-six
-     (Ch 13), years before Claypot. CT's words. Check rows 255 and 290 loosened. Logged only.
+     (Ch 13), years before Claypot. CT's words. Check rows 255 and 290 loosened. Corrected in place the same day, on
+     CT's "Yes please fix it": "His dad" and "his dad's face" became "His father" and "his father's face", to match
+     the narration's "his father" a few paragraphs up. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

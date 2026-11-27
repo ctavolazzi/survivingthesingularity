@@ -1673,7 +1673,7 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 # 290, Ch 0: the corporate bobbleheading and the money (CT's words, 27 Nov, fifteenth chat)
 (290, "He'd underlined it twice and gone back to nodding.\nElijah worked out of a satellite office", "He'd underlined it twice and gone back to nodding. Elijah did not like the corporate bobbleheading, but he did enjoy the money.\nElijah worked out of a satellite office"),
 # 291, Ch 0: a champagne appetite on a beer budget (CT's words, 27 Nov, fifteenth chat)
-(291, "but he did enjoy the money.\nElijah worked out of a satellite office", "but he did enjoy the money. His dad always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his dad's face.\nElijah worked out of a satellite office"),
+(291, "but he did enjoy the money.\nElijah worked out of a satellite office", "but he did enjoy the money. His father always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his father's face.\nElijah worked out of a satellite office"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

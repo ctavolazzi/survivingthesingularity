@@ -261,7 +261,7 @@ C=[
 (253, 'Ch 0', ['Elijah put a twenty on the bar.\n"Your money'], ['David slid it back across the wood.\n"Your money']),
 (254, 'Ch 0', ['quietly replaced the heart of machine intelligence.'], ['quietly replaced the engine of machine intelligence.']),
 # 255 loosened at edits 289 to 291 (the notebook moved to Claypot, then CT's two lines): still no break before the satellite office.
-(255, 'Ch 0', ["rub that in his dad's face.\nElijah worked out of a satellite office",'no such patience.\nPorusAI was the other kind', 'paying close attention.\nThere were three of them'], []),
+(255, 'Ch 0', ["rub that in his father's face.\nElijah worked out of a satellite office",'no such patience.\nPorusAI was the other kind', 'paying close attention.\nThere were three of them'], []),
 (256, 'Ch 1', ['I watched three people get replaced last week. Real people. And the guys who did it'], ['A bar, a Tuesday, three jobs, gone.']),
 (257, 'Ch 1', ['"Three jobs is a rounding error, Elijah," Devendra said. "You build models for a living. Relax."', 'He still looked stressed. How long until this whole office was a rounding error?'], ['Three jobs in one bar is an anecdote']),
 (258, 'Ch 1', ['"Five years," Devendra scoffed. "That'], ['"Five years," Devendra said.']),
@@ -303,5 +303,5 @@ C=[
              'Weather that never really cleared up. The other meaning of his name'],  # its "nodding. Elijah worked out" item dropped at edit 290 (CT's line follows "nodding." now)
  ['came back around. The other meaning of his name']),
 (290, 'Ch 0', ['gone back to nodding. Elijah did not like the corporate bobbleheading, but he did enjoy the money.'], []),  # narrowed at edit 291 (CT's next line follows it)
-(291, 'Ch 0', ["enjoy the money. His dad always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his dad's face. Elijah worked out of a satellite office"], []),
+(291, 'Ch 0', ["enjoy the money. His father always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his father's face. Elijah worked out of a satellite office"], []),
 ]

@@ -1,5 +1,5 @@
 Who,With,Lines traded,Scenes,First,Last,Where
-Elijah,Grace,219,35,Ch 15,Ch 39,"Ch 15, Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 23, Ch 24, Ch 25, Ch 26, Pondwater, Ch 27, Ch 30, Ch 31, Ch 32, Ch 33, Ch 34, Ch 36, Ch 39"
+Elijah,Grace,223,36,Ch 15,Ch 39,"Ch 15, Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 23, Ch 24, Ch 25, Ch 26, Pondwater, Ch 27, Ch 30, Ch 31, Ch 32, Ch 33, Ch 34, Ch 36, Ch 39"
 Elijah,Lou,102,17,Ch 17,Ch 38,"Ch 17, Ch 20, Ch 21, Ch 26, Ch 29, Ch 30, Ch 33, Ch 34, Ch 35, Ch 37, Ch 38"
 David,Elijah,97,8,Ch 0,Ch 39,"Ch 0, Ch 1, Ch 5, Ch 7, Ch 13, Ch 39"
 Elijah,Ruby,68,4,Ch 8,Ch 10,"Ch 8, Ch 9, Ch 10"
@@ -24,6 +24,7 @@ Elijah,Praether,17,1,Ch 17,Ch 17,Ch 17
 Curtis,Priya,17,8,Ch 19,Ch 34,"Ch 19, Ch 21, Ch 22, Ch 26, Pondwater, Ch 28, Ch 34"
 Curtis,Elijah,16,8,Ch 17,Ch 33,"Ch 17, Ch 19, Ch 22, Pondwater, Ch 28, Ch 29, Ch 30, Ch 33"
 Elijah,Patricia,16,3,Ch 33,Ch 38,"Ch 33, Ch 34, Ch 38"
+Grace,Lou,15,3,Ch 17,Ch 26,"Ch 17, Ch 23, Ch 26"
 Marta,Tyler,13,5,Ch 19,Ch 33,"Ch 19, Ch 27, Ch 29, Ch 30, Ch 33"
 Lou,Patricia,12,3,Ch 21,Ch 34,"Ch 21, Ch 33, Ch 34"
 Priya,Tyler,12,6,Ch 26,Ch 38,"Ch 26, Ch 27, Ch 33, Ch 38"
@@ -72,7 +73,6 @@ Grace,Rosa,3,1,Ch 27,Ch 27,Ch 27
 Frank,Wren,3,2,Ch 34,Ch 38,"Ch 34, Ch 38"
 Ma,Manny,2,1,Ch 3,Ch 3,Ch 3
 Denny,Grace,2,2,Ch 17,Ch 29,"Ch 17, Ch 29"
-Grace,Lou,2,2,Ch 17,Ch 23,"Ch 17, Ch 23"
 Marta,Reuben,2,2,Ch 19,Ch 23,"Ch 19, Ch 23"
 Grace,the aide,2,2,Ch 22,Ch 26,"Ch 22, Ch 26"
 Ma,the aide,2,2,Ch 22,Ch 37,"Ch 22, Ch 37"

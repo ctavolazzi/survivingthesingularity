@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edit 237 (27 Nov, the same chat), logged only. The next edit is 238.
+smell chat) and edits 237 to 239 (27 Nov, the same chat), logged only. The next edit is 240.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3804,6 +3804,30 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      never answered. 482 words in, none out; 104,129 words in the chapters. The book now has 138 scenes, so the scene
      sheet (137 rows) is one behind. Record: `manuscript/novel/drafts/edit-237-renner.md`. Logged only; not in the v8
      Doc yet.
+238. **Chapter 26 (its new opening): Lou and Grace at the fence with cider.** CT (27 Nov, dictated; in full in
+     `next-version-scenes-2026-11-26.md`, section 5), after the conversation map showed that Lou and Grace barely
+     talk before Chapter 34: "We need to establish their bond and their value. We need to have a scene where Lou talks
+     Grace off the edge. They're drinking cider, spiked cider, while watching a sunset ..." All the dialogue is his,
+     with his last version where he restated a line, except "She runs that shop for a reason." (his "She's the
+     treasurer for a reason"; Reuben keeps the books; he said yes to the fix). His smell line: the fence "that smelled
+     like petrichor and moss when it rained". Placed in December 2025, the evening before she leaves for the winter
+     (his correction: "I do want her to go"). A scene without Elijah, like the radishes in Chapter 17. New fact, his:
+     Lou asked Grace to write to Elijah ("there's a reason why I asked you to reach out to him"); Elijah never learns
+     it; it is row D10 of the knowledge sheet. Invented: the evening before she leaves, Denny's cider, the east field,
+     the sun behind the ridge, "like she'd come at him with a shovel". Logged only; not in the v8 Doc yet.
+239. **Chapter 26: Grace leaves for the winter; the kiss on the cheek.** CT (26 Nov, the tenth chat, held as "Grace's
+     winter away": "for real? Like, you're the one that's leaving?" / "I'm just going away for a little while, like I
+     do every year. I'm gonna hang out with my girls. I'm gonna see my family, my sister"; and 27 Nov: "I didn't paint
+     you for a party girl" / "Oh, there's a lot of things you don't know about me", she tousles his hair / "It's okay
+     if you meet someone out there and you hit it off. I would never want to keep anyone from their destiny." / "Well,
+     if I do, they'll have to be better than you."). The kiss is on the cheek (his last word: "which Elijah reads as
+     maybe like a, okay, maybe she just does this type of stuff"), so Chapter 26's "Grace had knocked once, at the
+     pond" stands. "my sister" is "my cousins" (she and Faith only trade "Merry Christmas", Ch 22; he said yes to the
+     fix). Claude's: the packed truck, the tailgate, her hands on his face "the way she had at the pond", "A few
+     months. I've done it since I was a kid." (from his "only gonna be gone for a few months ... since she was a
+     kid"), the road, "She got in the truck." Settles the open item "Grace's winter away". 518 words in, none out, for
+     238 and 239 together; 104,647 words in the chapters; 140 scenes. Record:
+     `manuscript/novel/drafts/edit-238-239-lou-grace-goodbye.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

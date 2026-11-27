@@ -290,6 +290,12 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   the Doc**; 104,129 words; 138 scenes. **The next edit is 238.** The Drive copy of the edit list (edits 1 to 236)
   does not have it. The scene sheet (137 rows) does not have the new scene, so `scene_sheet.py check` will report a
   structure difference until a row is added.
+- **Then edits 238 and 239 (27 Nov, the same chat, CT's dictation):** Lou and Grace at the fence with cider, and
+  Grace leaving for the winter, the two new scenes that open Chapter 26. make_v6.py passes **239 rows (614
+  replacements)**; verify.py on v8 shows 223 accepted and **224 to 239 not in the Doc**; 104,647 words; 140 scenes.
+  **The next edit is 240.** "Grace's winter away" is settled. Still his, from the same dictation and not written:
+  Grace's Hinge profile and "maybe I'll be a spinstress after all", and the coworkers exchange for the night they
+  get together (`next-version-scenes-2026-11-26.md`, section 6).
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
 - **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and

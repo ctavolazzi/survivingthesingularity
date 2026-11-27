@@ -519,3 +519,31 @@ But maybe she kisses Elijah cause the first kiss they have is to prevent him fro
 What Claude got wrong in the first draft above: his dictation said she is "getting ready to go away for the festival
 season." The draft was placed so that Lou's talk makes her stay, because "Pondwater" says "Not this one." That turned
 his scene into a different story without asking. The conflict with the page should have been put to him.
+
+**Sections 4 and 5 are logged:** the Renner scene is edit 237; the cider scene and the goodbye are edits 238 and 239
+(December 2025, the opening of Chapter 26; "treasurer" and "my sister" fixed on his yes; the second kiss on the cheek).
+
+## 6. The year of waiting, and the night they get together (CT, 27 Nov 2026, the smell chat). Not written, not logged.
+
+His words, as sent, after "Yes, log them both with the fixes":
+
+Maybe the second kiss could be just a kiss on the cheek, not on the lips. The first one's a kiss on the lips, second one's a kiss on the cheek, which Elijah reads as maybe like a, okay, maybe she just does this type of stuff.
+
+He's also very reticent, and he doesn't want to rock the boat. Maybe she's waiting for him to make a move. Maybe everybody's waiting for him to make a move. Maybe somebody does make a move. Maybe she makes a Hinge profile or something. Maybe she's getting tired of waiting. And Lou's comment about, like, she's not getting any younger kind of sat with her a little bit. She's right. And then maybe she has a conversation with Marta. No, that would be too much overhead. She just decides one day to, like, make a Hinge profile, get back in the online dating world. After a few weeks of those conversations, though, she deletes the app and swears herself off to celibacy. There's got to be some kind of way to show that, but keep the perspective that we have. She's like, maybe I'll be a spinstress after all. And Elijah just about chokes on whatever he's drinking, which is like, you know, big reveal your hand moment. The will they, won't they feels a little silly at that point because it's like, you guys should. But something has to push it over the edge, and I'm not sure what. Maybe they get a little drunk at the next year's harvest festival after like a summer of hard work and like sweating, and Elijah watching Grace tend the land, and that line that I had in there, like, anybody would fall for her, watching her tend the land. Like, she's obviously hot. And she's like, why'd you wait so long? And he goes, well, I mean, I kind of have a rule about not messing things up. Where I work. And she'll say, oh, did you date a coworker before? And he's like, is that what you are to me? A coworker? Is that what we are? Coworkers? And she'll, like, maybe she moves a little closer to him, and she's like, I mean. And then, like, scrunch up her shoulder or whatever, and she'll be like, if that's what you want, we can just be coworkers. And that's where Elijah makes his move. Heart pounding in his chest. Just slide his hand over onto hers and squeeze it. He's like, is that what you want? And then he lowers his voice. Like, in both pitch and loudness, for us to only be coworkers? Question mark?
+
+What the page already gives it (checked against the book with edits 1 to 239):
+- **The cheek** is in edit 239, with "Okay, he thought. Maybe she just does this type of stuff."
+- **The Hinge profile and "maybe I'll be a spinstress after all."** The place is Chapter 26's paragraph "All that spring
+  and summer, at the Friday table, the two of them kept catching each other looking and looking away." Kept on his
+  shoulder: he sees or hears it, he doesn't follow her. Her spinster line and his choking could be at a Friday table
+  or the wash station that summer (2026). "She's not getting any younger" from the cider scene is what it answers.
+- **His rule.** Chapter 24 already has it: "Once, years ago, he had gotten involved with someone he worked with ... He
+  had learned a long time ago not to date where you eat." Chapter 26 has his line that watching Grace work the land
+  "would do that to just about anyone."
+- **The push over the edge.** "Pondwater" (October 2026) is already that night: Marta tells him about the bass music,
+  he carries the amp to the pond, they lie on the blanket, she tells him about her father, he kisses her, and she says
+  "A year. A whole year, Elijah." His new exchange ("Why'd you wait so long?" ... "for us to only be coworkers?") is a
+  second version of the same moment, with Elijah making the move as he does there. It could go on the blanket, before
+  "He turned onto his elbow", or at a harvest festival the same month. The co-op's harvest festival exists (Ch 34:
+  "the one big thing the co-op did all year"), but the 2026 one is not on the page.
+- "A year. A whole year, Elijah" and "Why'd you wait so long?" say the same thing; one of them would give way.

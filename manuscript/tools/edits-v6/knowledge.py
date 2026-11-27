@@ -188,6 +188,10 @@ FACTS = [
         E("Grace", "K", "The dude's got the gift for gab. I thought we agreed."),
         E("Elijah", "S", "Agreed on what?", note="never answered on the page"),
     ]),
+    ("D10", "Lou", "Lou asked Grace to write to Elijah in the first place", [
+        E("Lou", "K", "But there's a reason why I asked you to reach out to him.", as_of="Chapter 15"),
+        E("Grace", "K", "But there's a reason why I asked you to reach out to him.", as_of="Chapter 15"),
+    ]),
     ("D8", "The table", "The April payment to Irene came up short, and Grace sat on it for a week", [
         E("Reuben", "K", '"Give me a week," Grace said.'),
         E("Grace", "K", '"Give me a week," Grace said.'),

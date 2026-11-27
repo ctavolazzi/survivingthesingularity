@@ -4061,11 +4061,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      look as a veteran, implied, not said. Claude's draft, shown; CT changed the last line to "Far better to let the good
      parts cook slow." Placed on the third evening, before "On the fourth day Grace asked about the arms.": the chapter's
      "For three days, no one really asked him anything" and "Are we really sure this is a good idea?" set it up, and Lou's
-     offer on the pump house steps the next evening rests on it. Claude's: why he is at the fence, "Lou Parker ran the
-     growing side." (Lou's first scene now), Lou's eyes going somewhere (the implication; Praether hitting the porch boards a
+     offer on the pump house steps the next evening rests on it. Claude's: why he is at the fence, Lou's eyes going somewhere (the implication; Praether hitting the porch boards a
      few days later, "Lou watched him do it and said nothing", is the other half), the elbow, the flat mouth, "a big laugh
-     that went off like a shot". Flagged to CT: the book never says Lou served; the Friday dinner introduces him again
-     ("Lou ran the growing side, which meant the actual food."). Logged only.
+     that went off like a shot". Flagged to CT: the book never says Lou served. (The shown draft also had "Lou Parker ran the
+     growing side.", on Claude's wrong belief that this was Lou's first scene; Ch 16 already introduces him, so it came out
+     before CT read it.) Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

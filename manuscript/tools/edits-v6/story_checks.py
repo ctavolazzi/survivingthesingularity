@@ -888,7 +888,7 @@ PLANTS = {
     "Is the notebook Elijah's version of the horses?": ("paid", "I watched my dad go like this for ten years, with the horses."),
     "Will he play the amp again?": ("paid", "He played the opening of \"The Weight,\" and missed the change into the chorus, and went back and got it."),
     "What will Elijah do without the job?": ("paid", "He pushed record before he could think about his hair."),
-    "How will people react to the video?": ("paid", "The first message from a stranger came from a woman in Tulsa."),
+    "How will people react to the video?": ("paid", "The first comment from a stranger, under the video, came from a woman in Tulsa."),
     "Why is the phone buzzing all night?": ("paid", "I thought I was the only one, she wrote."),
     "Why is Wes silent?": ("paid", "It was one word. figured."),
     "What will saying yes to everything cost him?": ("paid", "He'd spent ten months saying yes to people on four hours of sleep"),

@@ -1652,6 +1652,10 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (282, '"Suit yourself, man. Hey, if you\'re ever in the city,', '"Suit yourself, man," Ruby shrugged, the fur of his magnificent jacket going up and down like an endangered fox in an arid desert. "Hey, if you\'re ever in the city,'),
 # 283, Ch 10: why Elijah can tell Ruby meant it (CT's words, 27 Nov, fourteenth chat)
 (283, 'and handed it back. He meant it. A man like Ruby had people to do that for him.', "and handed it back. Elijah could tell he meant it. If he didn't, then why would he put his number in Elijah's phone himself? A man like Ruby had people to do that for him."),
+# 284, Ch 7: the replies are comments under the video; the senator and the rest come to his inbox (CT's ask and go, Claude's wording, 27 Nov)
+(284, 'The first message from a stranger came from a woman in Tulsa.', 'The first comment from a stranger, under the video, came from a woman in Tulsa.'),
+(284, "Then a name came in that he hadn't seen since high school.", "Then a name came up in the comments that he hadn't seen since high school."),
+(284, 'Then the other kind of message started showing up.', 'Then the other kind of message started showing up in his inbox.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

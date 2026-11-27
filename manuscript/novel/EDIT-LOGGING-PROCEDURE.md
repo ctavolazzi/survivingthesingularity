@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS edit list, edits 1 to N
-   (mirror of GitHub)" (id 1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE, edits 1 to 236; https://docs.google.com/document/d/1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
+   (mirror of GitHub)" (id 1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I, edits 1 to 236; https://docs.google.com/document/d/1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -256,7 +256,7 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 - make_v6.py on a fresh v5 read passes all 233 rows (591 replacements). 103,443 words in the chapters
   (`story_report.py`). build_gate.py: NOT READY, 8 open boxes in `TODO.md`.
 - **The scene sheet:** "Surviving the Singularity: scene sheet (edits 1 to 233)", a Google Sheet in CT's Drive, id
-  `1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY` (https://docs.google.com/spreadsheets/d/1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY/edit). One row per scene (138),
+  `13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o` (https://docs.google.com/spreadsheets/d/13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o/edit). One row per scene (138),
   with a "Numbers to check" tab. A full copy is in this folder: `scene-sheet-2026-11-27.csv`.
 - **The PDF CT reads** is still "StS v8 large print CURRENT (26 Nov, edits 1 to 223, the continuity pass).pdf"
   (https://drive.google.com/file/d/1B0nwZM5XXGxfeEjRAjyl0bICQNxsHtGp/view). It does not have edits 224 to 233.
@@ -276,14 +276,14 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   make_v6.py passes **236 rows (611 replacements)**; verify.py on v8 shows 223 accepted and **224 to 236 not in the
   Doc**, nothing PARTIAL; 103,647 words; build_gate.py NOT READY, 10 open boxes once the taste pass box was added at the close. **The next edit is 237.** Neither Doc
   was changed. The Drive copy of the edit list was refreshed at the end of the smell chat, on CT's word: "StS edit
-  list, edits 1 to 236 (mirror of GitHub)", id `1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE`, uploaded as text/plain and checked against `EDITS.md` (the
+  list, edits 1 to 236 (mirror of GitHub)", id `1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I`, uploaded as text/plain and checked against `EDITS.md` (the
   same text, edit numbers intact). The 1 to 233 copy is "OLD:" with the new id in its title and a pointer at its
   top. The scene sheet (Sheet and CSV) was not changed: rows 29
   and 48 are 100 and 48 words short, and its title still says edits 1 to 233. **The knowledge sheet** (who knows
   what, and when; CT asked for it at the close of the smell chat): `knowledge-sheet-2026-11-27.md` and three CSVs
   here, built by `manuscript/tools/edits-v6/knowledge.py`, and in Drive as the Google Sheet "Surviving the
-  Singularity: who knows what (edits 1 to 236)", id `1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`
-  (https://docs.google.com/spreadsheets/d/1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU/edit), three tabs. A backup of this branch as it stood
+  Singularity: who knows what (edits 1 to 236)", id `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`
+  (https://docs.google.com/spreadsheets/d/11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8/edit), three tabs. A backup of this branch as it stood
   before the smell chat is the branch `backup/book-branch-2026-11-27`, in both repos.
 - **Then edit 237 (27 Nov, the same chat, CT's dictation):** Miles Renner on the big screen, a new scene in Chapter
   26. make_v6.py passes **237 rows (612 replacements)**; verify.py on v8 shows 223 accepted and **224 to 237 not in
@@ -301,6 +301,19 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   **240 rows (618 replacements)**; verify.py on v8 shows 223 accepted and **224 to 240 not in the Doc**; 104,974
   words; 142 scenes. **The next edit is 241.** Edits 237 to 240 have not been read in place, in order: that is the
   first job of the next chat.
+- **Drive, brought up to edit 240 at the close of the smell chat (27 Nov), on CT's word.** Each was remade as a new
+  file (the connector cannot replace a file's contents), so the ids changed; the old copies are titled "OLD:" with
+  the new id. **The ids on this page and in `REFERENCE.md` are the new ones**, even where an older sentence around
+  them describes an earlier state.
+  - The scene sheet: "Surviving the Singularity: scene sheet (edits 1 to 240)", `13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o`. 143 rows: the 142 scenes
+    of the book plus the cut row 59. Five rows are new (the cider, the goodbye, Miles Renner, the weeks and the
+    pillow talk, Marta in the shop), the second "Pondwater" row is rewritten, and every word count is recounted.
+    `scene_sheet.py check` passes on structure, words and opening lines. Row numbers after 85 moved up; older notes
+    that cite a row number (the audit files) use the old numbering.
+  - The story checks, one workbook, eight tabs: "Surviving the Singularity: story checks (edits 1 to 240)",
+    `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8` (who knows what, knows by phase, evidence; the calendar and its checks; conversations by scene,
+    pairs, lines by chapter).
+  - The edit list: "StS edit list, edits 1 to 240 (mirror of GitHub)", `1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I`.
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
 - **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and

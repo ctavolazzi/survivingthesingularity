@@ -12,7 +12,7 @@ a script can count. Built from the book with edits 1 to 236 by
 | `conversation-lines-2026-11-27.csv` | Each person's lines of talk, chapter by chapter |
 
 In Drive: the Google Sheet "Surviving the Singularity: story checks, conversations (edits 1 to 236)"; id
-`1frR-rdgqZ_d7Dq70T0gG-0uhlc7siyZHEzlNP81lhxg`, three tabs.
+`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`, three tabs.
 
 ## How far to trust it
 

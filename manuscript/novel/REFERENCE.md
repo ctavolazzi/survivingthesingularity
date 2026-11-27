@@ -36,9 +36,9 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | The book as it stands (every logged edit applied) | make_v6.py's `OUT/v6.txt` (rebuilt each session from the v5 read) |
 | Each edit: who said what, Book now, Change to | `EDITS.md` (summary) and `drafts/chapter-NN.md` (full text, CT's words in bold) |
 | Edit status against the Doc | `EDITS-status.md` (written by verify.py) |
-| Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)" (`1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`). Rebuilt by `knowledge.py` |
-| When every scene happens, and what a calendar can test | `calendar-2026-11-27.md` and its two CSVs; Google Sheet `1p1IZDCCkdvO7tK9oFlvQhj3zf4-qg7TamU4Cd2nD3HA`. Rebuilt by `story_checks.py calendar` |
-| Who talks to whom, how much, and the sense words in each scene (layer one, rough) | `conversations-2026-11-27.md` and its three CSVs; Google Sheet `1frR-rdgqZ_d7Dq70T0gG-0uhlc7siyZHEzlNP81lhxg`. Rebuilt by `story_checks.py conversations` |
+| Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)" (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`). Rebuilt by `knowledge.py` |
+| When every scene happens, and what a calendar can test | `calendar-2026-11-27.md` and its two CSVs; Google Sheet `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`. Rebuilt by `story_checks.py calendar` |
+| Who talks to whom, how much, and the sense words in each scene (layer one, rough) | `conversations-2026-11-27.md` and its three CSVs; Google Sheet `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`. Rebuilt by `story_checks.py conversations` |
 | What happens in each chapter | `PLAN-CHAPTERS-20-TO-36.md`, sections 6 and 11 (11 wins for 27 to 36) |
 | Arcs, quarrels, the chain of cause | the plan, section 10 |
 | Every open question and its decision | the plan, section 12; anything still CT's is in `TODO.md`, section 1 |
@@ -194,7 +194,7 @@ for what it is ("v7" is taken by a frozen side copy).
 - Two chats can log on this branch at once. Fetch it and read TODO.md's "Next edit" before numbering; fetch again
   before every commit, and merge (never force-push). On 27 Nov both chats had taken 229 and 230.
 - The scene sheet (27 Nov): one row per scene with date, place, whose scene, who is on the page, what turns, threads,
-  questions and numbers. Google Sheet id `1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY`; copy in `scene-sheet-2026-11-27.csv`. It is a snapshot of
+  questions and numbers. Google Sheet id `13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o`; copy in `scene-sheet-2026-11-27.csv`. It is a snapshot of
   edits 1 to 233, filled by readers; check a cell on the page before relying on it.
 - When the current copy changes in the bridge map, two site tests name it and must change too:
   `tests/unit/novel-bridge.test.mjs` and `tests/unit/novel-doc-edit.test.mjs` (they kept "build guard" red from v8's

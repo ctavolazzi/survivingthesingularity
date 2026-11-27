@@ -13,7 +13,7 @@ CT: "Get ready to close out this session. The next sense for the next session is
 - 104,974 words in the chapters (`story_report.py`), 142 scenes. `build_gate.py`: NOT READY, 10 open boxes (the taste pass is one).
 - **The PDF CT has** is still the edits 1 to 223 one. A new one is made only when he asks.
 - **Drive copy of the edit list:** "StS edit list, edits 1 to 236 (mirror of GitHub)",
-  `1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE`. The 1 to 233 copy is "OLD:".
+  `1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I`. The 1 to 233 copy is "OLD:".
 - **Backup** of this branch as it stood before the smell chat: `backup/book-branch-2026-11-27`, both repos.
 
 ## What this chat did
@@ -32,17 +32,17 @@ CT: "Get ready to close out this session. The next sense for the next session is
 7. After the prompt below was written, CT asked for more:
    - **The knowledge sheet** (who knows what, and when): `knowledge-sheet-2026-11-27.md`, three CSVs, the tool
      `knowledge.py`, and the Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)"
-     (`1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`). 35 secrets, 113 lines of evidence, eight findings for him.
+     (`11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`). 35 secrets, 113 lines of evidence, eight findings for him.
    - **Five story checks** (CT, 27 Nov: "what other spreadsheets could we use ... filling any holes, finding any
      gaps"). Order agreed: the calendar, the money, objects, plants and payoffs, all five senses in one table. Each
      ends in a short findings list with the smallest fix to text already there (CT: "if we need to add more scenes,
      we can. But at this point, I'd rather just revise what we already have"); a hole that only a scene can close is
      flagged for him. **Done: the calendar** (`calendar-2026-11-27.md`, `story_checks.py calendar`, Google Sheet
-     `1p1IZDCCkdvO7tK9oFlvQhj3zf4-qg7TamU4Cd2nD3HA`): 23 checks hold, 3 known slips do not, 2 new ones to read, and
+     `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`): 23 checks hold, 3 known slips do not, 2 new ones to read, and
      Elijah's age turns out to be consistent and to set his birthday between about 3 March and mid May. **Next: the
      money.** Build each as a new command in `story_checks.py`, from the page, the way `knowledge.py` is built.
    - **The conversation map** (CT, 27 Nov), in two layers. **Layer one is built** (`conversations-2026-11-27.md`,
-     `story_checks.py conversations`, Google Sheet `1frR-rdgqZ_d7Dq70T0gG-0uhlc7siyZHEzlNP81lhxg`): who speaks in each scene, pairs,
+     `story_checks.py conversations`, Google Sheet `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8`): who speaks in each scene, pairs,
      lines by chapter, and sense words (551 sound, 370 touch, 17 smell, 14 taste; 122 of 137 scenes have no smell
      word). Speaker counts are rough (10% of lines not placed; an unnamed "he" is given to Elijah). **Layer two is for
      the next chat, from a fresh read:** what each conversation that matters does for the two people in it. First

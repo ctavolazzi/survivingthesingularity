@@ -1553,7 +1553,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 # 244, the Dedication, CT's words (27 Nov, fourteenth chat): "To the people who called me crazy. ..."
 (244, "For the people I love who looked me in the eye like I'd finally lost it.\n§C Recognize Your Power", "To the people who called me crazy. Thank you for the motivation.\n§C And to you, dear reader.\n§C Recognize your power."),# 245, Ch 0: the beer appears like magic; David's father gets his own paragraph (CT, 27 Nov, fourteenth chat)
 (245, 'Elijah would sit down and it would already be there. At the far end, on the last stool,', 'Elijah would sit down and it would appear like magic.\nAt the far end, on the last stool,'),# 246, Ch 0: the run-on in the demos split (CT, 27 Nov, fourteenth chat: "Run on sentence. Change to 'Styles with names attached...'")
-(246, 'including styles he recognized, styles with names attached, people attached, rent payments attached.', 'including styles he recognized. Styles with names attached, people attached, rent payments attached.'),
+(246, 'including styles he recognized, styles with names attached, people attached, rent payments attached.', 'including styles he recognized. Styles with names attached, people attached, rent payments attached.'),# 247, Ch 0: Google made the engine of AI and threw nitro on the industry (CT, 27 Nov, fourteenth chat)
+(247, 'Google drew the engine.', "Google had made the engine of AI. With that paper release they'd thrown nitro all over the industry."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

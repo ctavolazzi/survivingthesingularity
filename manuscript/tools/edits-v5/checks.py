@@ -252,4 +252,5 @@ C=[
 (244, 'Dedication', ["Dedication\nTo the people who called me crazy. Thank you for the motivation.\nAnd to you, dear reader.\nRecognize your power.\nAct One"], ["For the people I love who looked me in the eye like I'd finally lost it."]),
 (245, 'Ch 0', ['Elijah would sit down and it would appear like magic.\nAt the far end, on the last stool, David'], ['it would already be there.']),
 (246, 'Ch 0', ['including styles he recognized. Styles with names attached, people attached, rent payments attached.'], ['including styles he recognized, styles with names attached']),
+(247, 'Ch 0', ["Google had made the engine of AI. With that paper release they'd thrown nitro all over the industry. If Google was Einstein"], ['Google drew the engine.']),
 ]

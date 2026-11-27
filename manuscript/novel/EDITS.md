@@ -3651,7 +3651,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      grace, in Spanish, whatever Hispanic Catholics say as she holds a rosary", and "It's her first time making
      Thanksgiving dinner for the farm, but she's got lots of experience" with her line, word for word: "I had a big
      family, but life, it get away from us. The love is still there, deep down, even if the finances maybe get in the way
-     sometimes," Rosa explained. "But for the last couple years I volunteer at the church kitchen and we cook a lot of
+     sometimes," Rosa explained. "But this last year I volunteer at the church kitchen and we cook a lot of
      food, I cook all day, and now I cook all day here for you!" / "I know someday I cook for my family again. But
      maybe sometimes is ok to give love a little breathing room." / She set a casserole dish on its trivet, and the
      feast began. (His "placeholder"; CT: "The coaster thing".) ("Sorry better Spanglish": "life, it get away from us".) Then, his, from 26 Nov: "I don't really understand all
@@ -3668,8 +3668,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      holiday route, "and filled a bowl", "She held out the bowl." Between "he said yes before he had thought about it."
      and "After the kitchen trailer fed forty,". Forced by it: Chapter 38's "And Rosa, at her first dinner, in a good
      blouse," is "And Rosa, in a good blouse,". Her lesson now comes before the county meeting (Ch 30); Chapter 31's
-     "One page. He had learned that much." is where it lands. Open: Chapter 17 has her unable to cook in spring 2025,
-     inside "the last couple years". 361 words in, 3 out. Record: `drafts/edit-231-232-grace-and-rosa.md`. Logged only;
+     "One page. He had learned that much." is where it lands. "for the last couple years" became "this last year" on his
+     word, so Chapter 17's spring 2025, when she can't cook, stays clear. 361 words in, 3 out. Record: `drafts/edit-231-232-grace-and-rosa.md`. Logged only;
      not in the v8 Doc yet.
 
 233. **The finishing pass (Ch 0 to the Appendix).** CT (26 Nov, eleventh chat): "Send out readers ... to finish the

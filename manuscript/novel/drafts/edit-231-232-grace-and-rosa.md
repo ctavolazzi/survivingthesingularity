@@ -103,7 +103,7 @@ Rosa made the dinner that year, **her first for the farm**. She had been in the 
 light, her wrist still in the brace. Curtis asked her where she'd learned to cook for forty.
 
 **"I had a big family, but life, it get away from us. The love is still there, deep down, even if the finances maybe get in
-the way sometimes," Rosa explained. "But for the last couple years I volunteer at the church kitchen and we cook a lot
+the way sometimes," Rosa explained. "But this last year I volunteer at the church kitchen and we cook a lot
 of food, I cook all day, and now I cook all day here for you!"**
 
 Lou started the clapping, and the whole trailer took it up. Rosa flapped a dish towel at them until they quit.
@@ -167,8 +167,8 @@ when he couldn't think what else." (Ch 38) still reads as the table reaching for
 - Chapter 38: "And Rosa, at her first dinner, in a good blouse," is now "And Rosa, in a good blouse," (19 Nov text;
   she made the farm's Thanksgiving the year before).
 - Chapter 17 (spring 2025) has her unable to cook for her wrist ("I said I used to cook." / "I asked if they had
-  anything I could heat."), inside his "for the last couple years I volunteer at the church kitchen ... I cook all
-  day". Logged as he said it; "this last year" would square it. His call.
+  anything I could heat."). His "for the last couple years" is now "this last year" (CT: "Make it "this last year" in
+  Rosa's line"), so the church kitchen comes after her wrist got better.
 - Grace gets the bowl during the meal, and after it she and Elijah eat a chicken off one plate in her room (the book's
   line, kept).
 - It can no longer be "one of the first reasons why Elijah and Grace talk": by Thanksgiving 2026 they are together.

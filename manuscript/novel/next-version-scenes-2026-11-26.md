@@ -337,3 +337,95 @@ What the page gives this scene (checked against the book with edits 1 to 236 and
 - **The billionaire.** He knows two, Ruby and Gus, and nobody at the farm knows about either (knowledge sheet, A6). At the first fire (Ch 24) he told her about "a guy in the city" who makes the lamp, without the name or the money. Her question is never answered on the page. It plants Chapter 34, where he says "I know a guy who'd ship a few more up" and Marta asks "What guy?"
 - **The CEO's name: Miles Renner.** CT, 27 Nov: "pick a random name for the CEO. I don't care what you name him, but obviously he's our version of Sam Altman." Claude's pick; "Renner" is not in the book. (The page names no CEO of PorusAI; the Architect is its co-founder.) CT also weighed the chips, an IPO, Curtis's indignation at rewarded men and a bought off-grid AI, and decided against them: "I could see it also bogging things down more than it benefits ... we don't need to add more to the story. There's already so much here. I'd like to finish this tonight if possible." A screen: the shouse has the wall screen (Ch 29) and the shed has "the big screen" (Ch 27).
 - "Porous AI" in his dictation is PorusAI.
+
+### More for this scene from CT (27 Nov 2026, later the same chat). His words, as sent:
+
+Priya can talk about how much she hates billionaires in that exchange where Curtis has his righteous indignation as well. She can say, anyone who hoards that much wealth and doesn't use it to immediately try and solve problems like homelessness is just leveraging suffering for their own gain. It's sick, it's disgusting. And then somebody needs to push back and be like, I don't know, I feel like they earned that wealth by being smart. And Priya immediately snaps at them. Nobody earns $1 billion. They steal it. And Ren will be like, does anyone want to go look at mushrooms with me outside? And somebody will take her up on that. Maybe more than one somebody. And then they go. And somebody will say, man, you sure know how to clear out a room, Priya. And Priya will fire back immediately. My morals make people want to commune with nature. I call that a win.
+
+("Ren" is Wren.)
+
+### The draft (27 Nov 2026; shown to CT; NOT logged). **His words are in bold.**
+
+Placed in Chapter 26, May 2026, as a new scene after the string and the rover ("Get your knee out of it, Ivy League.")
+and before "On June 12 the big models went dark."
+
+> Curtis had the big screen on in the packing shed before dinner that Friday, while the plywood was still going down. A man in a gray sweater sat in a chair on a stage with one ankle on his knee. He was telling a room how it felt to be fired by his own board on a Friday and hired back by Tuesday.
+>
+> "That's Miles Renner," Curtis said, to nobody. "PorusAI. They threw him out and took him back inside of a week."
+>
+> Priya had stopped with a stack of plates against her hip.
+>
+> "**Do you believe this guy?**" Grace said.
+>
+> "**Well, I mean, he is the CEO of one of the most powerful companies in the world,**" Curtis said.
+>
+> "**Curtis, you can't be serious,**" Priya said.
+>
+> "**I mean, I don't trust everything he says, but he does have privileged information and access to the models they don't release to the public.**"
+>
+> Grace rolled her eyes.
+>
+> Priya set the plates down. "**Anyone who hoards that much wealth and doesn't use it to immediately try and solve problems like homelessness is just leveraging suffering for their own gain. It's sick. It's disgusting.**"
+>
+> "**I don't know,**" Tyler said, from the bench. "**I feel like they earned that wealth by being smart.**"
+>
+> "**Nobody earns a billion dollars,**" Priya snapped. "**They steal it.**"
+>
+> Wren stood up. "**Does anyone want to go look at mushrooms with me outside?**" she said. "The rain brought them up along the ditch."
+>
+> Tyler was on his feet before she finished. Lou went too.
+>
+> "**Man, you sure know how to clear out a room, Priya,**" Denny said.
+>
+> "**My morals make people want to commune with nature,**" Priya said. "**I call that a win.**"
+>
+> She and Curtis were still at it when Grace caught Elijah's eye and nodded at the door.
+>
+> Outside, the gravel was still dark from the rain. They got as far as the wash station.
+>
+> "**My dad used to argue with the TV like that,**" Grace said.
+>
+> She stopped there. She was looking at the beds, and for a little while she wasn't in the yard at all.
+>
+> "**Hey,**" Elijah said. "**We don't have to talk about anything you don't want to talk about.**"
+>
+> "**No, it's fine.**" She shook her head. "**But man, I remember him giving speeches like that CEO guy on the TV. He had so much charisma.**"
+>
+> "**You think that guy has charisma?**"
+>
+> Grace looked at him. "**You don't?**"
+>
+> "**That guy seems like a sleazeball to me.**"
+>
+> "**Oh, like you know what billionaires are really like.**"
+>
+> Elijah didn't say anything. He made a face.
+>
+> Grace stopped walking. "**Elijah, do you personally know a billionaire?**"
+>
+> Up at the shed the dinner bell went, and Marta's voice after it.
+>
+> "**Sorry, Grace, gotta go,**" he said, grinning at her.
+>
+> "**Elijah! Do you know a billionaire?**"
+>
+> **But Elijah** had already **skipped off** up the gravel. **He wasn't about to miss dinner.**
+
+Claude's choices, all his to change:
+- **May 2026, not July.** Wren's mushrooms need rain, and Chapter 26 has it rain all night that May. In July, on the
+  dry side of the mountains, there are none. So the firing comes a few weeks before the ban of 12 June, not after it.
+- **Who says the open lines.** "They earned that wealth by being smart": Tyler (the youngest, and the one who says
+  "It's just a tool"). The ones who go with Wren: Tyler and Lou. "You sure know how to clear out a room": Denny.
+- **Left out: "He just started getting into the harder stuff and then never really came back."** She says it in
+  "Pondwater" five months later, in his own words from 26 Nov. Here she drifts off and comes back to the charisma.
+  One word from him puts it back.
+- **Left out: Curtis's indignation** ("these motherfuckers with no morals go cheat on their wife and then get rewarded
+  with billions of dollars. It's bullshit."). In this scene Curtis is the one defending Renner, and the line would
+  need a fact about Renner the book doesn't have.
+- "The TV" in her line is the big screen in the shed; kept as he said it.
+- "$1 billion" is "a billion dollars" (numbers in words).
+- Invented: Renner's gray sweater, the stage, "fired on a Friday and hired back by Tuesday", the plates, the
+  mushrooms "along the ditch", the wash station, the dinner bell with Marta's voice (the co-op has a dinner bell,
+  Ch 22).
+- What it sets up: Priya says nobody earns a billion dollars seventeen months before Elijah tells that table "I know
+  a guy" (Ch 34). Grace's question is never answered on the page.

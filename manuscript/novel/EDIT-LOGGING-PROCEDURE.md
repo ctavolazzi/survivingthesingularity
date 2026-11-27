@@ -296,6 +296,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   long Reuben has had the deed (Ch 29, "a year and a half"), "Took you a month" (Ch 24, about seven weeks by the book's
   dates), and "Three years" said in October 2027 (Ch 34, 35; two years and seven months; the narration says "going on
   three years"). For CT, not changed.
+- **Thirteen more cells for the scene sheet, rows 1 to 24**, each with the line from the page that proves it:
+   (from the tenth chat; not applied, so the CSV and the Google Sheet stay in step).
 - **Unchecked since the sixth chat changed the build code** (a page for a line before the title, no About the
   Author page): the paperback, ebook and docx builds, and the site's own tests after the edit list was renamed
   `EDITS.md`. Run them before a release.
@@ -334,3 +336,23 @@ Since 26 Nov the same v7 changes are also in v6 (edits 184 to 186); the v7 Doc i
 ## Later, when CT says go
 Apply 87 onward to the Doc as suggestions, re-read, run verify. CT accepts the suggestions. Run
 `build.sh` (the gate stops it until every edit is in), then refresh the Drive uploads.
+
+## Readers' notes on the book text, for the final pass (27 Nov, from the chat of edits 217 to 220)
+
+Two readers checked Chapters 0 to 9 and 16 to 21 against edit 234's build. No hard contradiction. The scene sheet
+fixes they found are covered by the sheet's full read (commit f644636e). Tensions in the text, each quoted and
+grep-checked; none is fixed, each is CT's to rule on:
+- Ch 6 and 8: "By Friday it was four thousand replies" (October 2023) and Ruby in February 2024, after "Fifty million
+  views": "Because there's four thousand of them and one of you. And tomorrow it'll be eight thousand."
+- Ch 8: "He hadn't known he was a speaker until a young man with a tablet took him there." and later "A seat on the
+  four o'clock panel, because someone's flight from Austin had been canceled."
+- Ch 17 and 19: Curtis's tractor story, "the laptop says twelve hundred dollars and a week. I knew it was two dollars
+  of hose.", and Elijah's truck: "A dealership had quoted him twelve hundred dollars and a week." An echo, or a
+  leftover.
+- Ch 17 and 19: Tyler sent Elijah to Praether's with "a couple of big crates", and he is on the farm every build
+  weekend, so a fourth person could connect the arms to the barn.
+- Ch 19: an April order, most of a month on the first design, a redesign, three build weekends and a field week, all
+  done in time for "The forty units shipped in May" and a week of laying tape still in May. It only fits if the order
+  came in the first days of April.
+- Ch 17 and 19: Grace's offer came "in her message on his page"; Tyler "had found Elijah's email for Grace".
+Chapters 10 to 15 and 22 to the Epilogue were not re-read by this chat; its readers stopped at a usage limit.

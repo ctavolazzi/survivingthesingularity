@@ -30,6 +30,14 @@ When you're done spinning up, tell me in one line that you're ready and that the
 
 ## Close of this chat, 27 November (read this part first)
 
+- **Last word from this chat (27 Nov, final turn).** The one branch for the book is
+  `claude/singularity-publication-build-kparqk`, in both repos; every commit from this chat is on it (the session
+  branch `claude/riemann-hypothesis-scene-li2h5n` holds nothing it lacks). This chat started a cell-by-cell check of
+  the scene sheet against the book; its readers stopped on a usage limit and returned nothing. That check is
+  **superseded** by the other chat's full read (commit f644636e, 30 cells fixed, the Epilogue's word count among them)
+  and its thread tags (1d339a15). This chat's own sheet fixes (rows 52, 53, 59, 123, and "This Sunday" for the lien
+  sale) are in both the Sheet and the repo copy. Where this section and newer notes disagree, the newer notes win.
+
 The chat ran on after the prompt further down was written. Where its work stands now:
 
 - **Edit 234, logged last (27 Nov), changes what the bullets below say about counts.** CT: "She can't know about the

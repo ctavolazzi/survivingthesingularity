@@ -1056,7 +1056,13 @@ SENSE_WHOSE = {
     "It tasted like the best nights of his twenties.": "older text; \"nights\" CT's (edit 52)",
     "Manny had smelled it from the yard.": "older text",
     "In a hallway that smelled like hand sanitizer he stood with all of it in one hand.": "older text",
-    "smoke, a wet jacket, and the delivery bag, which had held on to just about every order": "CT's phrase; smoke, the jacket and the bag Claude's; \"just about\" CT's (edit 235)",
+    "By then the cab had the smell of a car you've been living in: smoke, a wet jacket, and the delivery bag, which had held on to just about every order he'd ever carried.": "CT's phrase; smoke, the jacket and the bag Claude's; \"just about\" CT's (edit 235)",
+    "You stop noticing it after a while, but everyone else sure does, right away.": "CT's (edit 235)",
+    "Over all of it was the perfume.": "CT's (edit 236)",
+    "The perfume had come down the hall with Elijah and Ruby.": "CT's idea, Claude's words (edit 236)",
+    "It was utterly decimated by the ferocity of the air from the kitchen.": "CT's (edit 236)",
+    "The smoke lay down flat across the yard and got into everything.": "Claude's (edit 230)",
+    "Somewhere in there he caught a smell he didn't quite recognize.": "CT's (edit 242)",
     "went down in the truck with the door open, so fast he barely tasted it": "edit 100, from CT's other chat, copied as given",
     "the barn had kept its own air, cold gear oil and mouse": "Claude's (edit 234); the record asks CT for the real smell",
     "It cut straight through what five months had done to the cab": "CT's scene, Claude's narration (edit 242)",
@@ -1087,7 +1093,7 @@ def senses(book, outdir, date):
     for no, head, first, last in b.scenes:
         s, body = data[no], [norm(l) for l in b.lines[first:last + 1]]
         cells = []
-        for k in ("sound", "touch", "smell", "taste", "sight", "food_or_drink_not_tasted"):
+        for k in ("sound", "touch", "smell", "taste", "sight", "physics", "food_or_drink_not_tasted"):
             got = []
             for q in s[k]:
                 hit = [i for i, l in enumerate(body) if norm(q) in l]
@@ -1102,8 +1108,18 @@ def senses(book, outdir, date):
             cells.append(" | ".join(got))
         w = [f"{q[:40]}...: {SENSE_WHOSE[q]}" for q in s["smell"] + s["taste"]]
         rows.append([no, head.split(":")[0], sheet[no][10]] + cells + ["; ".join(w), SENSE_CALL.get(no, "")])
+    uncited = []
+    for no, head, first, last in b.scenes:
+        cited = [norm(q) for k in ("sound", "touch", "smell", "taste", "sight", "physics", "food_or_drink_not_tasted") for q in data[no][k]]
+        for i in range(first, last + 1):
+            for m in re.finditer(SENSES["Smell"] + "|" + SENSES["Taste"], b.lines[i], flags=re.I):
+                if not any(c in b.lines[i] and b.lines[i].find(c) <= m.start() <= b.lines[i].find(c) + len(c) for c in cited):
+                    uncited.append(f"line {i + 1} (scene {no}): {b.lines[i][max(0, m.start() - 50):m.end() + 50]}")
+    if uncited:
+        print("Smell or taste words the sheet does not cite (figures of speech, or a line the data missed):")
+        print("\n".join("  " + u for u in uncited))
     write_csv(outdir, "senses", date, ["#", "Chapter", "What happens (scene sheet)", "Sound", "Touch", "Smell", "Taste",
-              "Sight (the strongest)", "Eaten or drunk, no taste given", "Smell and taste: whose words", "CT's call"], rows)
+              "Sight (the strongest)", "Physics (verbs that move)", "Eaten or drunk, no taste given", "Smell and taste: whose words", "CT's call"], rows)
     n = lambda k: sum(1 for s in data.values() if s[k])
     print(f"{len(rows)} scenes, {lines} lines found in the book; scenes with sound {n('sound')}, touch {n('touch')}, "
           f"smell {n('smell')}, taste {n('taste')}; food with no taste in {n('food_or_drink_not_tasted')}")

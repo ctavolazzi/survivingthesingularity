@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat), logged only. The next edit is 237.
+smell chat) and edit 237 (27 Nov, the same chat), logged only. The next edit is 238.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3787,6 +3787,23 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      kitchen." His verbs put in past tense. Invented: the two men, the fish and butter. 148 words in, none out, for
      235 and 236 together; 103,647 words in the chapters. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
      Logged only; not in the v8 Doc yet.
+237. **Chapter 26: Miles Renner on the big screen; Priya on billionaires; "do you personally know a billionaire?"**
+     CT (27 Nov, two dictations in the smell chat; his words in full in `next-version-scenes-2026-11-26.md`, section
+     4): "Curtis is watching the CEO of Porous AI give a talk about being fired and reinstated, and Priya's watching it
+     with him, and Grace maybe asks, 'Do you believe this guy?' ..." and "Priya can talk about how much she hates
+     billionaires ... Nobody earns $1 billion. They steal it. ... My morals make people want to commune with nature. I
+     call that a win." A new scene in May 2026, after "Get your knee out of it, Ivy League." and before "On June 12 the
+     big models went dark." All the dialogue is his except Curtis's "That's Miles Renner ... inside of a week" and
+     Wren's "The rain brought them up along the ditch." The CEO's name, Miles Renner, is Claude's pick at his word.
+     Claude's choices: May, not July (Wren's mushrooms need the rain Chapter 26 already has); Tyler says the rich
+     earned it, Tyler and Lou go with Wren, Denny says "clear out a room"; "$1 billion" is "a billion dollars". Left
+     out, his to put back: "He just started getting into the harder stuff and then never really came back" (she says
+     it in "Pondwater", five months later) and Curtis's indignation at rewarded men. Invented: the gray sweater and
+     the stage, "fired on a Friday and hired back by Tuesday", the plates, the mushrooms along the ditch, the wash
+     station, the dinner bell with Marta's voice. It plants Chapter 34 ("I know a guy" / "What guy?"); her question is
+     never answered. 482 words in, none out; 104,129 words in the chapters. The book now has 138 scenes, so the scene
+     sheet (137 rows) is one behind. Record: `manuscript/novel/drafts/edit-237-renner.md`. Logged only; not in the v8
+     Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

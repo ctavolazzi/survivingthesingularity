@@ -118,58 +118,59 @@ WHEN = """
 85|2026-03|Spring 2026: the beds|stated
 86|2026-05|May 2026: the rover|stated
 87|2026-05|Two nights later|stated
-88|2026-06-12|Friday 12 June to 30 June 2026: the models go dark|stated
-89|2025-11-28|The Friday after Thanksgiving 2025 to July 2026: the pay|stated
-90|2026-08|August to October 2026: the pits|stated
-91|2026-10|October 2026: the laser weeder; Marta|stated
-92|2026-10|The night after: the amp at the pond|stated
-93|2026-10|October 2026: the first fire video; a week later|worked
-94|2026-10|The same morning, and that Friday|stated
-95|2026-10|To Friday 6 November 2026, after the midterms|stated
-96|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
-97|2026-12-05|Saturday 5 December 2026: the well|stated
-98|2026-12-15|December 2026: the storm|stated
-99|2027-01|January 2027: the grange kitchen|stated
-100|2027-01|January 2027: the annual meeting|worked
-101|2027-01|A few nights after|stated
-102|2027-02|The night before the county meeting|stated
-103|2027-02|The county meeting|worked
-104|2027-02|The third week of the apprenticeship|stated
-105|2027-02-12|February 2027, a Friday: the plan|stated
-106|2027-02-15|The Monday after, and two days later|stated
-107|2027-02-16|That week|stated
-108|2027-02-20|Saturday 20 February 2027: the tea|worked
-109|2027-02-21|Sunday 21 February: Marta, the brake|stated
-110|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
-111|2027-03|March 2027, on the dairy|worked
-112|2027-03|March 2027: five small things|stated
-113|2027-03-28|Late March 2027|stated
-114|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
-115|2027-04-10|April to June 2027: the juniper|stated
-116|2027-06|June to Friday 9 July 2027|stated
-117|2027-07-09|Friday dinner, 9 July 2027|worked
-118|2027-07-09|The same evening|stated
-119|2027-07-16|The next Friday|stated
-120|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
-121|2027-10-11|The afternoon before the October meeting|stated
-122|2027-10-12|A Tuesday in the middle of October 2027: the meeting|stated
-123|2027-10-12|The same night|stated
-124|2027-10-13|Six the next morning|stated
-125|2027-10-13|That night|stated
-126|2027-10-23|The Saturday before the festival|stated
-127|2027-10-27|The Wednesday of festival week|stated
-128|2027-10-30|The last night of the festival: the fire|worked
-129|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
-130|2027-11-09|The same Tuesday|stated
+88|2026-05-22|A Friday in May 2026, before dinner: Miles Renner on the big screen|worked
+89|2026-06-12|Friday 12 June to 30 June 2026: the models go dark|stated
+90|2025-11-28|The Friday after Thanksgiving 2025 to July 2026: the pay|stated
+91|2026-08|August to October 2026: the pits|stated
+92|2026-10|October 2026: the laser weeder; Marta|stated
+93|2026-10|The night after: the amp at the pond|stated
+94|2026-10|October 2026: the first fire video; a week later|worked
+95|2026-10|The same morning, and that Friday|stated
+96|2026-10|To Friday 6 November 2026, after the midterms|stated
+97|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
+98|2026-12-05|Saturday 5 December 2026: the well|stated
+99|2026-12-15|December 2026: the storm|stated
+100|2027-01|January 2027: the grange kitchen|stated
+101|2027-01|January 2027: the annual meeting|worked
+102|2027-01|A few nights after|stated
+103|2027-02|The night before the county meeting|stated
+104|2027-02|The county meeting|worked
+105|2027-02|The third week of the apprenticeship|stated
+106|2027-02-12|February 2027, a Friday: the plan|stated
+107|2027-02-15|The Monday after, and two days later|stated
+108|2027-02-16|That week|stated
+109|2027-02-20|Saturday 20 February 2027: the tea|worked
+110|2027-02-21|Sunday 21 February: Marta, the brake|stated
+111|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
+112|2027-03|March 2027, on the dairy|worked
+113|2027-03|March 2027: five small things|stated
+114|2027-03-28|Late March 2027|stated
+115|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
+116|2027-04-10|April to June 2027: the juniper|stated
+117|2027-06|June to Friday 9 July 2027|stated
+118|2027-07-09|Friday dinner, 9 July 2027|worked
+119|2027-07-09|The same evening|stated
+120|2027-07-16|The next Friday|stated
+121|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
+122|2027-10-11|The afternoon before the October meeting|stated
+123|2027-10-12|A Tuesday in the middle of October 2027: the meeting|stated
+124|2027-10-12|The same night|stated
+125|2027-10-13|Six the next morning|stated
+126|2027-10-13|That night|stated
+127|2027-10-23|The Saturday before the festival|stated
+128|2027-10-27|The Wednesday of festival week|stated
+129|2027-10-30|The last night of the festival: the fire|worked
+130|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
 131|2027-11-09|The same Tuesday|stated
-132|2027-11-09|Two days south; the rose garden; Manny's|stated
-133|2027-11-25|Thursday 25 November 2027|stated
-134|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
-135|2027-11-25|Thanksgiving night, the Bear Flag|stated
-136|2027-11-25|The same night|stated
-137|2027-12|December 2027 to April 2028|stated
+132|2027-11-09|The same Tuesday|stated
+133|2027-11-09|Two days south; the rose garden; Manny's|stated
+134|2027-11-25|Thursday 25 November 2027|stated
+135|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
+136|2027-11-25|Thanksgiving night, the Bear Flag|stated
+137|2027-11-25|The same night|stated
+138|2027-12|December 2027 to April 2028|stated
 """
-BACK_ON_PURPOSE = {2, 3, 45, 60, 64, 67, 77, 78, 89, 134}  # scenes the book tells out of order
+BACK_ON_PURPOSE = {2, 3, 45, 60, 64, 67, 77, 78, 90, 135}  # scenes the book tells out of order
 
 
 def D(y, m, d):

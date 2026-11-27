@@ -75,6 +75,7 @@ FACTS = [
     ("A6", "His money", "Ruby offered him a million dollars to do nothing, and he said no", [
         E("Elijah", "K", '"The full million?"'),
         E("Others", "K", '"He offered me a job," Elijah said. "Ruby. For doing nothing. A million dollars."', note="Gus"),
+        E("Grace", "S", "Elijah, do you personally know a billionaire?", note="asks; he never answers (edit 237)"),
     ]),
     ("A7", "His money", "The farm money sits in an account with his name on it; he treats it as Ma's and takes none", [
         E("Elijah", "K", "The money went into an account that said Linda Madrone across the top, with his name under hers"),

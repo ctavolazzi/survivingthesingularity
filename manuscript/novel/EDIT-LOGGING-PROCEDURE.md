@@ -285,6 +285,11 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   Singularity: who knows what (edits 1 to 236)", id `1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`
   (https://docs.google.com/spreadsheets/d/1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU/edit), three tabs. A backup of this branch as it stood
   before the smell chat is the branch `backup/book-branch-2026-11-27`, in both repos.
+- **Then edit 237 (27 Nov, the same chat, CT's dictation):** Miles Renner on the big screen, a new scene in Chapter
+  26. make_v6.py passes **237 rows (612 replacements)**; verify.py on v8 shows 223 accepted and **224 to 237 not in
+  the Doc**; 104,129 words; 138 scenes. **The next edit is 238.** The Drive copy of the edit list (edits 1 to 236)
+  does not have it. The scene sheet (137 rows) does not have the new scene, so `scene_sheet.py check` will report a
+  structure difference until a row is added.
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
 - **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and

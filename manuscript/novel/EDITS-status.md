@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 13.
+Totals: accepted: 223, not in the Doc: 14.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -247,3 +247,4 @@ Edit 57 was never used.
 | 234 | Ch 17, 18, 34, 35, 36 | not in the Doc | He told her they were gone. |
 | 235 | Ch 15 | not in the Doc | By then the cab had the smell of a car you've been living in: smoke... |
 | 236 | Ch 9 | not in the Doc | the faint back notes of cleaning supplies. |
+| 237 | Ch 26 | not in the Doc | "That's Miles Renner," Curtis said, to nobody. |

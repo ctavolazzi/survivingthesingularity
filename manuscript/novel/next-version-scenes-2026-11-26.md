@@ -429,3 +429,79 @@ Claude's choices, all his to change:
   Ch 22).
 - What it sets up: Priya says nobody earns a billion dollars seventeen months before Elijah tells that table "I know
   a guy" (Ch 34). Grace's question is never answered on the page.
+
+## 5. Lou and Grace at the fence, with cider (CT, 27 Nov 2026, the smell chat)
+
+Came out of the conversation map: Grace and Lou barely talk on the page before Chapter 34 tests them. CT: "yes, your
+mapping of the story has yielded something valuable. You are right. Lou and Grace never really talk. We need to
+establish their bond and their value." Drafted and shown; NOT logged. His words, as sent:
+
+We need to have a scene where Lou talks Grace off the edge. They're drinking cider, spiked cider, while watching a sunset in one of the times when Grace is like getting ready to go away for the festival season. And Lou has noticed that Grace is soft on Elijah, and Grace has also, of course, noticed, but Lou decides to point it out because she's going away for festival season. And Lou can say something like, he likes you, you know. And that maybe if this is before Marta says it, then great. But if this is after Marta says it, then she can be like, that's what Marta says too. And Lou will go, Marta knows what she's talking about. She's the treasurer for a reason. Grace. And he like turns around and leans on the fence, the wooden fence, the old wooden fence. The one that smelled like petrichor and dirt when it rained. Petrichor and moss when it rained. Grace, you know I'd do anything for you. And Grace is like, you have. And Lou goes, yeah, don't mention it. Like sarcastically, right? Look, he may not seem like he's got it all together. And Grace will say, because he doesn't. And Lou will go, and you're not wrong, but there's a reason why I had you reach out to him. There's a reason why you decided I asked you to reach out to him. There's a reason why I asked you to reach out to him. And there's a reason why he responded to your email. And Grace will go, Lou, I'm not 19 anymore. You know I go away just to see my girls and my cousins. This is tradition for me. And Lou will say, and you know I would never tell you and you know I would never try to live your life for you. But Grace, and then he turns back around and leans on the fence this time, with his elbows down, holding his steaming mug of cider. I would hate for you to miss out on something grand. In the pursuit of something good enough. I would hate for you to miss out on something grand in the pursuit of something good enough. I would hate for... That seems awkward. You know what I'm trying to say, though. I would hate for you to miss out on something grand because you settled for good enough. And Grace will say, don't I get to make that choice, Lou? And Lou will go, well, I'm not trying to be rude or anything, but, and he looks her up and down. No, maybe he shouldn't look her up and down. That sounds creepy. I'm not trying to be rude or anything. And then he like rolls his whole head and eyes over to her and looks her in the face. Looks her right in the eyes and goes, you're not getting any younger. And she'll smack him. Lou, she says. And he'll flinch, jokingly. Like, clearly showing the camaraderie between them. And you don't have to use my, like, action words exactly. I feel like you could probably do better than this. But he'll go, look, I get it. Live your life, have your fun, do your thing. But he's a good one. You might want to consider giving him a chance. And then they'll both take a sip of their cider at the same time. And without looking over at him, Grace will say, jinx. And Lou will just smile. From the corner of his eyes up to the top of his wise and schemy head.
+
+### The draft (shown to CT; NOT logged). **His words are in bold.** Where he restated a line, the last version is used.
+
+Placed in "Pondwater", early October 2026, as a new scene after the Coyote Flat paragraph (Mrs. Delgado) and before
+"At dinner one night Curtis set the laptop on the plywood".
+
+> The evening before Grace was to leave for her festival, Lou found her at **the old wooden fence** along the east field, **the one that smelled like petrichor and moss when it rained.** He had two mugs of Denny's cider, hot, with something stronger in it. The sun was going down behind the ridge.
+>
+> They drank and watched it.
+>
+> "**He likes you, you know,**" Lou said.
+>
+> "**That's what Marta says too.**"
+>
+> "**Marta knows what she's talking about. She's the treasurer for a reason.**" He turned around and leaned his back on the fence. "**Grace. You know I'd do anything for you.**"
+>
+> "**You have.**"
+>
+> "**Yeah, don't mention it.**" He waited a second. "**Look, he may not seem like he's got it all together.**"
+>
+> "**Because he doesn't.**"
+>
+> "**And you're not wrong. But there's a reason why I asked you to reach out to him. And there's a reason why he responded to your email.**"
+>
+> "**Lou, I'm not nineteen anymore. You know I go away just to see my girls and my cousins. This is tradition for me.**"
+>
+> "**And you know I would never try to live your life for you. But Grace.**" He turned back around and set his elbows on the top rail, with the mug steaming between his hands. "**I would hate for you to miss out on something grand because you settled for good enough.**"
+>
+> "**Don't I get to make that choice, Lou?**"
+>
+> "**Well, I'm not trying to be rude or anything, but.**" He rolled his whole head over and looked her right in the eyes. "**You're not getting any younger.**"
+>
+> She smacked him on the arm. "**Lou!**"
+>
+> He flinched like she'd come at him with a shovel.
+>
+> "**Look, I get it. Live your life, have your fun, do your thing. But he's a good one. You might want to consider giving him a chance.**"
+>
+> They both took a sip of cider at the same time.
+>
+> "**Jinx,**" Grace said, without looking over.
+>
+> **Lou just smiled, from the corners of his eyes up to the top of his wise and schemy head.**
+
+What the page gives it, and what is in the way (checked against the book with edits 1 to 237):
+- **Why October 2026.** Marta, in "Pondwater": "She's gone every October since she was nineteen. Not this one." His
+  line for Grace, "I'm not nineteen anymore", matches it. Placed the night before she would leave, Lou's talk becomes
+  the reason she stays: a few lines later she tells Elijah "I'm not going to my festival this year," Marta sends him
+  to the pond with the amp, and they kiss. It is also after Marta has been watching the two of them for a year, so
+  "That's what Marta says too" works.
+- **"She's the treasurer for a reason."** Marta is not the treasurer. Reuben keeps the books (Ch 26: "Reuben kept the
+  books"; Ch 34: "He kept the books"; CT's ruling with edit 221: "the treasurer stays Reuben"). Logged as he said it
+  if he wants; the small fix is "She runs that shop for a reason."
+- **"There's a reason why I asked you to reach out to him."** New fact: Lou asked Grace to write to Elijah. Until now
+  the page has her acting alone (Ch 16: "Somebody had to go get him. Everybody watched that video. Nobody went."; Ch
+  36: "I wrote to you, Elijah ... I didn't wait for you to ask."). It does not contradict those lines, but it changes
+  them: she went, and Lou sent her. Elijah never learns it. It also makes Lou the man who brought him to the farm,
+  kept his arms secret and steered Grace toward him, which a reader looking for Bidwell's watcher will notice. That
+  is allowed (the rule is that no edit may clear anyone) but he should know it is there. It would be a new row in
+  the knowledge sheet.
+- **A scene without Elijah.** The book sits on his shoulder; scenes away from him need CT's say. This one is his.
+  The radish scene (Ch 17) is the same kind.
+- The fence: there is a fence post at the east field (Ch 35), and "the old fence" goes on the bonfire pile in
+  October 2027 (Ch 36), so the fence they lean on here is the one that burns a year later.
+- The cider: Denny's, "stronger than Denny admitted" (Ch 36).
+- "Petrichor" is not in the book. This is CT's own smell line, the third after the truck and the party.
+- Invented: the evening before she leaves; Denny's cider; the east field; the sun behind the ridge; "like she'd come
+  at him with a shovel" (his "he'll flinch, jokingly"; he said the action words could be bettered).

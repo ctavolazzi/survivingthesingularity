@@ -5,7 +5,7 @@ know them at what time would really help us."
 
 Built from the book with edits 1 to 236 by `manuscript/tools/edits-v6/knowledge.py`. The only thing written by hand is
 the list of facts and, for each person, the exact line where the page shows them knowing it. The script finds every
-line in the built book and reads the chapter off the page: 35 facts, 113 lines, all found.
+line in the built book and reads the chapter off the page: 35 facts, 114 lines, all found (rebuilt after edit 237).
 
 | File | What it is |
 |---|---|

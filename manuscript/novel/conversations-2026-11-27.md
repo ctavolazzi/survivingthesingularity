@@ -7,7 +7,7 @@ a script can count. Built from the book with edits 1 to 236 by
 
 | File | What it is |
 |---|---|
-| `conversations-2026-11-27.csv` | One row per scene (137): words, how much is talk, lines of talk, who speaks and how many lines, and counts of sound, touch, smell and taste words |
+| `conversations-2026-11-27.csv` | One row per scene (138, rebuilt after edit 237): words, how much is talk, lines of talk, who speaks and how many lines, and counts of sound, touch, smell and taste words |
 | `conversation-pairs-2026-11-27.csv` | Each pair of people: lines traded, scenes, first and last chapter, every chapter |
 | `conversation-lines-2026-11-27.csv` | Each person's lines of talk, chapter by chapter |
 
@@ -16,7 +16,7 @@ In Drive: the Google Sheet "Surviving the Singularity: story checks, conversatio
 
 ## How far to trust it
 
-The book has 1,937 lines of talk. 700 have the speaker's name beside them. 1,040 more were placed by rule: "she said"
+The book has 1,958 lines of talk. 714 have the speaker's name beside them. 1,047 more were placed by rule: "she said"
 goes to the last woman named, an unnamed "he" goes to Elijah (the book sits on his shoulder), and an untagged line
 between two people goes to the other one. 197 (10%) were not placed. **So the counts by person and by pair are rough.**
 The rule gives Elijah too many lines and other men too few: Lou in the radish scene (Ch 17) and Curtis under the
@@ -25,8 +25,8 @@ which scenes are mostly talk, how many voices a scene holds, and the sense words
 
 ## What it shows (solid)
 
-- **The senses.** Across the book: 551 sound words, 370 touch words, 17 smell words, 14 taste words. 122 of 137 scenes
-  have no smell word and 126 have no taste word. Sound and touch are everywhere. This is the measure behind CT's
+- **The senses.** Across the book: 551 sound words, 370 touch words, 17 smell words, 14 taste words. 122 of the 137 scenes
+  (counted before edit 237) have no smell word and 126 have no taste word. Sound and touch are everywhere. This is the measure behind CT's
   smell pass and the taste pass to come.
 - **The most talk:** the walk to the beds and the tomato dinner (Ch 33, 71% and 66% in quotes), Priya and Grace the
   night before the county meeting (Ch 30), Irene's kitchen (Ch 34), the ride with Gus (Ch 11).

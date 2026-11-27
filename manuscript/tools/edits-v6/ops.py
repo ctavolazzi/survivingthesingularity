@@ -1578,6 +1578,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (257, "Elijah didn't relax. He still looked stressed.", "Elijah didn't relax. He still looked stressed. How long until this whole office was a rounding error?"),
 # 258, Ch 1: Devendra scoffed (CT, 27 Nov, fourteenth chat)
 (258, '"Five years," Devendra said.', '"Five years," Devendra scoffed.'),
+# 259, Ch 1: David's clock line (CT, 27 Nov, fourteenth chat)
+(259, 'People ate for about three hundred thousand years before anybody punched a clock.', 'People ate for a few hundred thousand years before anybody ever punched a clock.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

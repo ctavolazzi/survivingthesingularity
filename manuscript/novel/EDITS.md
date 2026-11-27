@@ -4079,8 +4079,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      search the book ... He's really going to miss the smell of that coffee maker." Searched: "heaven" is only in the
      Architect's line (Ch 8) and the Lord's Prayer (Ch 39); nothing else smells like it. Placed on the layoff day, his last
      stop at the fourth floor: "The sticky note was still on the side of it, curled now, the ink going brown. The coffee
-     smelled like a slice of heaven. He was really going to miss the smell of that coffee maker." "The coffee" for "It" is
-     Claude's, so it can't read as the sticky note. Logged only.
+     smelled like a slice of heaven. He was really going to miss the smell of that coffee maker doing its thing." (CT
+     added "doing its thing": "It would be better if ..."). "The coffee" for "It" is Claude's, so it can't read as the
+     sticky note. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

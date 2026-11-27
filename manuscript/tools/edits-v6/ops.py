@@ -1635,6 +1635,9 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (275, "It's four minutes. Please just watch it.", "It's two minutes. Please just watch it."),
 # 276, Ch 7: the most affirming thing (CT, 27 Nov, fourteenth chat)
 (276, 'It was the nicest thing anybody had said to him all year.', 'It was the most affirming thing anyone had said to him since this began.'),
+# 277, Ch 7: Ma's compliment, and what Elijah hears (CT's words, 27 Nov, fourteenth chat; placed by Claude)
+(277, '"I didn\'t follow it, baby." She was doing the dishes', '"I didn\'t follow it, baby, but the numbers are big! You keep this up, you\'ll finally be famous!" She was doing the dishes'),
+(277, 'You were sitting right on it."\nHe told her the floor was clean.', 'You were sitting right on it."\nAs always, she meant well, but Elijah heard what she wasn\'t saying. We all have dynamics with our family, and Elijah\'s mother had a long history of hiding criticisms within compliments.\nHe told her the floor was clean.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

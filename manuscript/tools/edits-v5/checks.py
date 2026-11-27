@@ -282,4 +282,5 @@ C=[
 (274, 'Ch 6', ["So I got laid off today. That's not the big news."], ["That's not the news."]),
 (275, 'Contents and Ch 6', ["Chapter 6: Two Minutes and Eleven Seconds\nChapter 7: You're Early", 'Chapter 6: Two Minutes and Eleven Seconds\nElijah got laid off', 'He reached forward and stopped it. Two minutes and eleven seconds.', "It's two minutes. Please just watch it."], ['Four Minutes and Eleven Seconds', 'Four minutes and eleven seconds', "It's four minutes."]),
 (276, 'Ch 7', ['It was the most affirming thing anyone had said to him since this began.'], ['the nicest thing anybody had said to him all year']),
+(277, 'Ch 7', ['"I didn\'t follow it, baby, but the numbers are big! You keep this up, you\'ll finally be famous!" She was doing the dishes', "As always, she meant well, but Elijah heard what she wasn't saying. We all have dynamics with our family, and Elijah's mother had a long history of hiding criticisms within compliments.\nHe told her the floor was clean."], ["\"I didn't follow it, baby.\""]),
 ]

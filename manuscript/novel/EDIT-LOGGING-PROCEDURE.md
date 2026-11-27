@@ -298,7 +298,7 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   get together (`next-version-scenes-2026-11-26.md`, section 6).
 - **Then edit 240 (27 Nov, the same chat, CT's dictation):** "Pondwater" ends on the near kiss; a new scene in
   Chapter 27 has the weeks after and the pillow talk; one sentence is out of the fire in Chapter 36. make_v6.py passes
-  **240 rows (617 replacements)**; verify.py on v8 shows 223 accepted and **224 to 240 not in the Doc**; 104,974
+  **240 rows (618 replacements)**; verify.py on v8 shows 223 accepted and **224 to 240 not in the Doc**; 104,974
   words; 142 scenes. **The next edit is 241.** Edits 237 to 240 have not been read in place, in order: that is the
   first job of the next chat.
 

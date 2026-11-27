@@ -6,7 +6,7 @@ CT: "Get ready to close out this session. The next sense for the next session is
 
 - **In the Google Docs:** "StS v8 draft (Nov 26)" (`1nSA0h5SlWtlVVPUYdq5AEt5BPjKuew5tKJjw3lWfVk8`) holds edits 1 to
   223. Its locked twin is "StS v8 BACKUP (Nov 26), do not edit". Neither was touched in this chat.
-- **In GitHub only:** edits 224 to 240. `make_v6.py` on the v5 read passes all 240 check rows (617 replacements).
+- **In GitHub only:** edits 224 to 240. `make_v6.py` on the v5 read passes all 240 check rows (618 replacements).
   `verify.py` on the v8 read: 223 "accepted", 224 to 240 "not in the Doc", nothing PARTIAL. **The next edit is 241.**
   (Edits 237 to 240 were logged after this checkpoint was first written: three new scenes in Chapter 26, a new
   ending for "Pondwater" and a new scene in Chapter 27. They have not been read in place, in order.)
@@ -114,7 +114,7 @@ do anything else:
    v5 Doc "StS v5 draft (Nov 23)", id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA. Read both with the Docs connector
    and save the reads to your scratchpad. Do not change either Doc, or the locked "StS v8 BACKUP (Nov 26), do not
    edit"; I haven't cleared that.
-4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 240 check rows passing (617
+4. Run make_v6.py on the v5 read and verify.py on the v8 read. You should get all 240 check rows passing (618
    replacements), 223 rows "accepted" in v8, edits 224 to 240 "not in the Doc", and nothing PARTIAL. If you get
    anything else, stop and tell me.
 

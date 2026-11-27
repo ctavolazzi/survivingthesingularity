@@ -125,5 +125,5 @@ book's line, moved into the pillow talk on his yes (the kiss at the pond was Nov
 
 ## Checks
 
-`make_v6.py`: all 240 check rows pass (617 replacements). `verify.py` on the v8 read: 223 accepted, 224 to 240 not in
+`make_v6.py`: all 240 check rows pass (618 replacements). `verify.py` on the v8 read: 223 accepted, 224 to 240 not in
 the Doc, nothing PARTIAL. No dashes. 104,868 words in the chapters (221 more than after 239).

@@ -3,6 +3,8 @@
 Updated 27 Nov 2026, end of the eleventh logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
+**Before the final pass:** `scene-sheet-audit-2026-11-27.md` lists what a 27 Nov check of the scene sheet found still open (sheet cells, three contradictions in the text for CT, and rows 71 to 105 and the timeline not yet checked).
+
 **Next edit: 235.** Edit 234 was logged on 27 Nov, after the smell pass prompt was written (CT's dictation in the Riemann
 chat: Grace doesn't know about the arms until the table finds out; Ch 17, 18, 34, 35, 36;
 `drafts/edit-234-grace-doesnt-know.md`). So a spin-up now shows **234 check rows passing (608 replacements), 223

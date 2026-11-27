@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 249 (27 Nov, the fourteenth chat), logged only. The next edit is 250.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 255 (27 Nov, the fourteenth chat), logged only. The next edit is 256.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3907,6 +3907,30 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      buried somebody.\"" In place of "\"Your money's no good here,\" David said. \"You look like you buried somebody.\""
      The line before it, "David slid it back across the wood.", stands (flagged to CT: the cash now goes back twice).
      Logged only; not in the v8 Doc yet.
+250. **Chapter 0: "Mad" out.** CT: "Remove Mad from 'They'd have found a reason, they always do'". Now "\"They'd
+     have found a reason,\" he said. \"They always do.\"" Logged only.
+251. **Chapter 0: "the hour" out.** CT: "The hour? What hour? Confusing, remove hour". Now "the laptop open, 1:40 in the
+     morning, and the cursor blinking on a blank document." Logged only.
+252. **Chapter 0: not "Actually Indians"; it was genuinely thinking.** CT's dictation (27 Nov, "Or something like that"),
+     drafted, shown and logged on his "Yes log all changes so far", after "Nobody was cheating.": "AI really meant
+     Artificial Intelligence, not \"Actually Indians\" typing behind the scenes or any of the other bad jokes he'd seen
+     online. People thought it was just fancy autocomplete, but they hadn't read the research papers." / "It was
+     genuinely thinking." / "Not very well at first, but Elijah had not only watched its capacity to think get better,
+     he had helped it, a lot faster than he thought possible." / then "That made it worse ..." as its own paragraph.
+     Claude's wording: "had not only watched its capacity to think get better, he had helped it" (his: "had not only
+     watched but contributed to helping its capacity to think get better"). Flagged and not cut: "he had helped it"
+     tells Chapter 2's turn early. Logged only.
+253. **Chapter 0: the cash goes back once.** "David slid it back across the wood." cut, since edit 249 has David
+     "pushing the cash back". Claude's fix, CT's yes ("log all changes so far"). Logged only.
+254. **Chapter 0: "engine" once.** "quietly replaced the engine of machine intelligence" becomes "quietly replaced the
+     heart of machine intelligence", since edit 247 has "Google had made the engine of AI." Claude's fix, CT's yes.
+     Logged only.
+255. **Chapter 0: three scene breaks out.** CT: "I feel like there's too many of these stars in the first chapter."
+     Out: the breaks after "gone back to nodding.", "PorusAI had no such patience." and "some realtors were paying close
+     attention." Kept: before "One week later" and before "He didn't remember the drive home." Claude's list, CT's yes.
+     The book now has 139 scenes; the scene sheet, the calendar's scene list and the desires scene data are merged to
+     match. Also, not an edit: with `--no-pictures`, make_v6.py no longer writes a paragraph for a picture that is left
+     out, so the 19 places where a picture was stop printing as scene breaks in the PDF. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

@@ -255,4 +255,10 @@ C=[
 (247, 'Ch 0', ["Google had made the engine of AI. With that paper release they'd thrown nitro all over the industry. If Google was Einstein"], ['Google drew the engine.']),
 (248, 'Ch 0', ['the kind of problems that had eaten whole weekends and watched it', 'of all canyons, to conquer first.', 'To his surprise, some realtors were paying close attention.'], ['weekends of his self-teaching', 'canyons, to cross first', 'some realtors were watching.']),
 (249, 'Ch 0', ['Then he leaned in and said with a concerned tone, "Mad, you look like you just buried somebody."'], ['"You look like you buried somebody."']),
+(250, 'Ch 0', ['"They\'d have found a reason," he said. "They always do."'], ['"They\'d have found a reason, Mad,"']),
+(251, 'Ch 0', ['the laptop open, 1:40 in the morning,'], ['the laptop open, the hour,']),
+(252, 'Ch 0', ['not "Actually Indians" typing behind the scenes', '\nIt was genuinely thinking.\nNot very well at first, but Elijah had not only watched its capacity to think get better, he had helped it'], []),
+(253, 'Ch 0', ['Elijah put a twenty on the bar.\n"Your money'], ['David slid it back across the wood.\n"Your money']),
+(254, 'Ch 0', ['quietly replaced the heart of machine intelligence.'], ['quietly replaced the engine of machine intelligence.']),
+(255, 'Ch 0', ['gone back to nodding.\nYou should know', 'no such patience.\nPorusAI was the other kind', 'paying close attention.\nThere were three of them'], []),
 ]

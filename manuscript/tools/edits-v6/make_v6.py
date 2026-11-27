@@ -159,6 +159,8 @@ def write_docx(paras, images, objects, out, imgdir):
     st = d.styles["Normal"]; st.font.name = "Arial"; st.font.size = Pt(11)
     imgdir.mkdir(parents=True, exist_ok=True)
     for pa, runs in paras:
+        if "--no-pictures" in sys.argv and runs and all(ch in "￼ \xa0" for _, ch, _ in runs) and any(ch == "￼" for _, ch, _ in runs):
+            continue  # a picture-only paragraph, with the pictures left out: drop it, or the book build prints it as a scene break
         style = {"HEADING_1": "Heading 1", "HEADING_2": "Heading 2"}.get(pa["style"], "Normal")
         p = d.add_paragraph(style=style)
         if pa.get("align") == "CENTER":

@@ -6,30 +6,21 @@
    "Claypot vice president",
    "David",
    "Elijah",
+   "Elijah's father",
    "Elijah's grandmother",
    "Ma",
-   "Ray McGrath"
+   "Nate",
+   "Ray McGrath",
+   "Wes",
+   "silver-haired realtor",
+   "the researcher"
   ],
   "wants": [
    {
     "person": "Elijah",
     "want": "to teach himself JavaScript",
     "quote": "trying to teach himself JavaScript"
-   }
-  ],
-  "turn": "none; backstory on his name, the madrone lesson and the notebook line (lines 69 to 73)"
- },
- {
-  "sheet": 2,
-  "chapter": "Ch 0",
-  "people": [
-   "Elijah",
-   "Elijah's father",
-   "Nate",
-   "Wes",
-   "the researcher"
-  ],
-  "wants": [
+   },
    {
     "person": "Elijah",
     "want": "to build tools that made his friends more secure",
@@ -54,21 +45,7 @@
     "person": "Wes",
     "want": "a handout, so he is not barely getting by",
     "quote": "Man, I sure wish I could get a handout."
-   }
-  ],
-  "turn": "Elijah takes the Claypot job wanting to build tools for his friends, then sees the demos and asks whether anyone else sees what he sees."
- },
- {
-  "sheet": 3,
-  "chapter": "Ch 0",
-  "people": [
-   "David",
-   "Elijah",
-   "Ma",
-   "Nate",
-   "Wes"
-  ],
-  "wants": [
+   },
    {
     "person": "Elijah",
     "want": "to convince people that this is different",
@@ -87,20 +64,8 @@
    {
     "person": "Elijah",
     "want": "to learn the front end, the canyon he has never crossed",
-    "quote": "So he picked that one, of all canyons, to cross first."
-   }
-  ],
-  "turn": "His friends and family are polite and change the subject, so Elijah stops trying to make them see it and uses the tool for himself."
- },
- {
-  "sheet": 4,
-  "chapter": "Ch 0",
-  "people": [
-   "David",
-   "Elijah",
-   "silver-haired realtor"
-  ],
-  "wants": [
+    "quote": "So he picked that one, of all canyons, to conquer first."
+   },
    {
     "person": "silver-haired realtor",
     "want": "to know what the code on Elijah's screen is",
@@ -132,10 +97,10 @@
     "quote": "Somebody had finally listened."
    }
   ],
-  "turn": "Elijah hands the silver-haired realtor his email on a napkin, and the realtor pockets it and buys him a beer."
+  "turn": "none; backstory on his name, the madrone lesson and the notebook line (lines 69 to 73) Elijah takes the Claypot job wanting to build tools for his friends, then sees the demos and asks whether anyone else sees what he sees. His friends and family are polite and change the subject, so Elijah stops trying to make them see it and uses the tool for himself. Elijah hands the silver-haired realtor his email on a napkin, and the realtor pockets it and buys him a beer."
  },
  {
-  "sheet": 5,
+  "sheet": 2,
   "chapter": "Ch 0",
   "people": [
    "Carol",
@@ -182,7 +147,7 @@
   "turn": "The realtors say three people were let go and toast Elijah; David refuses his money, and Elijah leaves without looking up."
  },
  {
-  "sheet": 6,
+  "sheet": 3,
   "chapter": "Ch 0",
   "people": [
    "Elijah",
@@ -198,7 +163,7 @@
   "turn": "Elijah starts writing at 1:40 a.m. and types the working title SURVIVING THE FINAL TURNING."
  },
  {
-  "sheet": 7,
+  "sheet": 4,
   "chapter": "Ch 1",
   "people": [
    "Devendra",
@@ -244,7 +209,7 @@
   "turn": "Asked for a date, Elijah names Thanksgiving 2027 and a loser-cooks bet, and Devendra writes it on a sticky note stuck to the coffee machine."
  },
  {
-  "sheet": 8,
+  "sheet": 5,
   "chapter": "Ch 1",
   "people": [
    "David",
@@ -266,7 +231,7 @@
   "turn": "David asks what a job is for, Elijah has no answer, and David goes to change a keg."
  },
  {
-  "sheet": 9,
+  "sheet": 6,
   "chapter": "Ch 1",
   "people": [
    "Devendra",
@@ -292,7 +257,7 @@
   "turn": "The tower hits its temperature warning and shuts off, so Elijah's test for 'just software' finds a first limit, which is heat, and he leaves the tower off for a week."
  },
  {
-  "sheet": 10,
+  "sheet": 7,
   "chapter": "Ch 2",
   "people": [
    "Aaron Bidwell",
@@ -351,7 +316,7 @@
   "turn": "Elijah sends Wes 'Let me look into it' instead of an answer, and Wes sends a water story and asks if it is true."
  },
  {
-  "sheet": 11,
+  "sheet": 8,
   "chapter": "Ch 2",
   "people": [
    "Devendra",
@@ -408,7 +373,7 @@
   "turn": "Lena tells Elijah to think about someone other than himself and leaves; Devendra turns down the responsibility, says he is proud, and walks away."
  },
  {
-  "sheet": 12,
+  "sheet": 9,
   "chapter": "Ch 2",
   "people": [
    "Elijah",
@@ -434,7 +399,7 @@
   "turn": "Elijah writes five dated predictions and one question about bills; Wes's text and Elijah's own reply are still on the screen."
  },
  {
-  "sheet": 13,
+  "sheet": 10,
   "chapter": "Meanwhile (after Ch 2",
   "people": [
    "Aaron Bidwell"
@@ -474,7 +439,7 @@
   "turn": "Bidwell stops the reader's revenue figures, asks whether farmland has a corpus, and tells him to find out what the dirt costs."
  },
  {
-  "sheet": 14,
+  "sheet": 11,
   "chapter": "Ch 3",
   "people": [
    "Elijah",
@@ -484,7 +449,7 @@
   "turn": "none"
  },
  {
-  "sheet": 15,
+  "sheet": 12,
   "chapter": "Ch 3",
   "people": [
    "Elijah",
@@ -505,7 +470,7 @@
   "turn": "After she hangs up he writes that it won't start with the machines, but with the people who see it coming."
  },
  {
-  "sheet": 16,
+  "sheet": 13,
   "chapter": "Ch 4",
   "people": [
    "Elijah"
@@ -530,7 +495,7 @@
   "turn": "A units error makes him see that every cell past Stage 7 is a guess; he stops mapping the far end and decides to work the near end."
  },
  {
-  "sheet": 17,
+  "sheet": 14,
   "chapter": "Ch 5",
   "people": [
    "Elijah"
@@ -545,7 +510,7 @@
   "turn": "The $2,011.46 bill sends him counting watts, and he starts looking for a machine between the tower's six hundred watts and his phone's five."
  },
  {
-  "sheet": 18,
+  "sheet": 15,
   "chapter": "Ch 5",
   "people": [
    "David",
@@ -562,7 +527,7 @@
   "turn": "David reads both notebooks without giving the verdict, and Elijah's horses joke lands hard on Ray and David."
  },
  {
-  "sheet": 19,
+  "sheet": 16,
   "chapter": "Ch 5",
   "people": [
    "Elijah",
@@ -578,7 +543,7 @@
   "turn": "He plugs the amp in, stops, and leaves it in the corner as a monument; his mother calls back at noon; he unplugs the cable box, the first watts he takes back."
  },
  {
-  "sheet": 20,
+  "sheet": 17,
   "chapter": "Ch 6",
   "people": [
    "Devendra",
@@ -615,7 +580,7 @@
   "turn": "Nina asks him to keep his head down until March; on Tuesday he is laid off, says thank you instead of the speech, and leaves with Devendra's wine promise."
  },
  {
-  "sheet": 21,
+  "sheet": 18,
   "chapter": "Ch 6",
   "people": [
    "Elijah",
@@ -656,7 +621,7 @@
   "turn": "He records the four-minute video, then pastes the link into all three chats with the same line."
  },
  {
-  "sheet": 22,
+  "sheet": 19,
   "chapter": "Ch 6",
   "people": [
    "David",
@@ -680,7 +645,7 @@
   "turn": "His mother writes twice, David and Nate send thumbs, and Wes sends nothing."
  },
  {
-  "sheet": 23,
+  "sheet": 20,
   "chapter": "Ch 7",
   "people": [
    "Earl",
@@ -729,7 +694,7 @@
   "turn": "A stranger says she is not the only one; his old teacher calls him a liar; he asks 'Am I crazy?' and Chat Horizon answers 'You're early.'"
  },
  {
-  "sheet": 24,
+  "sheet": 21,
   "chapter": "Ch 7",
   "people": [
    "Elijah",
@@ -750,7 +715,7 @@
   "turn": "His mother says she didn't follow the video and asks about the floor; he drops the question."
  },
  {
-  "sheet": 25,
+  "sheet": 22,
   "chapter": "Ch 7",
   "people": [
    "David",
@@ -796,7 +761,7 @@
   "turn": "David asks whether Elijah is okay and suggests a mental health professional; the holy shit does not come, and they part with 'See you' and 'Yep.'"
  },
  {
-  "sheet": 26,
+  "sheet": 23,
   "chapter": "Ch 7",
   "people": [
    "Elijah",
@@ -817,7 +782,7 @@
   "turn": "Elijah cries in the truck, then answers Ruby's message with yes instead of going back into the bar."
  },
  {
-  "sheet": 27,
+  "sheet": 24,
   "chapter": "Ch 8",
   "people": [
    "Elijah",
@@ -872,7 +837,7 @@
   "turn": "On the panel Elijah tells the room the math says 2027 instead of thirty years; the room groans; at the urn the woman on his left says 'Don't ruin that.'"
  },
  {
-  "sheet": 28,
+  "sheet": 25,
   "chapter": "Ch 8",
   "people": [
    "Elijah",
@@ -908,7 +873,7 @@
   "turn": "Ruby tells him to stop answering the replies, asks about the amp, and takes him to see the real people; Elijah gets in the car."
  },
  {
-  "sheet": 29,
+  "sheet": 26,
   "chapter": "Ch 9",
   "people": [
    "Elijah",
@@ -975,7 +940,7 @@
   "turn": "Elijah's written question is read aloud and corrected ('That is the wrong verb.'), and the notebook comes back with one word written in it."
  },
  {
-  "sheet": 30,
+  "sheet": 27,
   "chapter": "Ch 9",
   "people": [
    "Aaron Bidwell",
@@ -1012,7 +977,7 @@
   "turn": "In the car Elijah keeps the verb survive, and Ruby asks for a second to talk about something."
  },
  {
-  "sheet": 31,
+  "sheet": 28,
   "chapter": "Ch 10",
   "people": [
    "Elijah",
@@ -1073,7 +1038,7 @@
   "turn": "Ruby offers a million, Elijah turns it down, and Ruby enters his own number in Elijah's phone."
  },
  {
-  "sheet": 32,
+  "sheet": 29,
   "chapter": "Ch 10",
   "people": [
    "Elijah"
@@ -1093,7 +1058,7 @@
   "turn": "He turns off the dome light without calling and does not start the truck for a long time."
  },
  {
-  "sheet": 33,
+  "sheet": 30,
   "chapter": "Ch 10",
   "people": [
    "Aaron Bidwell",
@@ -1134,7 +1099,7 @@
   "turn": "Bidwell decides not to meet Elijah and orders someone placed near him."
  },
  {
-  "sheet": 34,
+  "sheet": 31,
   "chapter": "Ch 11",
   "people": [
    "Elijah",
@@ -1196,7 +1161,7 @@
   "turn": "Elijah refuses to appear in the ads, and Trent offers carrying work and two spare arms instead; Elijah takes it."
  },
  {
-  "sheet": 35,
+  "sheet": 32,
   "chapter": "Ch 11",
   "people": [
    "Elijah",
@@ -1247,7 +1212,7 @@
   "turn": "Elijah passes on Gus's show, and Gus says he will give him his number."
  },
  {
-  "sheet": 36,
+  "sheet": 33,
   "chapter": "Ch 11",
   "people": [
    "Elijah",
@@ -1279,7 +1244,7 @@
   "turn": "Gus gives Elijah his number and asks to hear when the book comes out; Elijah remembers he said the book on the podcast."
  },
  {
-  "sheet": 37,
+  "sheet": 34,
   "chapter": "Ch 12",
   "people": [
    "Elijah",
@@ -1344,7 +1309,7 @@
   "turn": "Elijah texts four people, gets one heart, does not call Ruby, Gus or his mother, and decides to sleep it off in the truck."
  },
  {
-  "sheet": 38,
+  "sheet": 35,
   "chapter": "Ch 13",
   "people": [
    "Elijah",
@@ -1375,7 +1340,7 @@
   "turn": "A call from his mother's number brings the neighbor instead, who says she is alive and in Santa Rosa, and Elijah leaves at once."
  },
  {
-  "sheet": 39,
+  "sheet": 36,
   "chapter": "Ch 13",
   "people": [
    "Elijah",
@@ -1413,7 +1378,7 @@
   "turn": "The doctor explains a clot and months of smaller ones, Elijah admits the nightly ice cream, and his mother asks for Barry; he asks what she will get back and gets an answer in what was left out."
  },
  {
-  "sheet": 40,
+  "sheet": 37,
   "chapter": "Ch 13",
   "people": [
    "Elijah",
@@ -1454,7 +1419,7 @@
   "turn": "He finds the pot on the back burner, the stockpile, the notebook with Ask him on every page, and the slips for a monthly order, and he ends the scene with nobody to call."
  },
  {
-  "sheet": 41,
+  "sheet": 38,
   "chapter": "Ch 13",
   "people": [
    "Elijah",
@@ -1475,7 +1440,7 @@
   "turn": "The hospital gives him two pages, a county bed in Stockton or a room near the farm, and when the woman's questions run out he is the only one left to answer for his mother."
  },
  {
-  "sheet": 42,
+  "sheet": 39,
   "chapter": "Ch 13",
   "people": [
    "Elijah",
@@ -1496,7 +1461,7 @@
   "turn": "He lays out the bank, the door, Stockton and the sale and asks her what to do; she pats his hand, looks at the door, asks for Barry, and gives him nothing."
  },
  {
-  "sheet": 43,
+  "sheet": 40,
   "chapter": "Ch 13",
   "people": [
    "Elijah",
@@ -1563,7 +1528,7 @@
   "turn": "He asks strangers for help for his mother; $20 and $10 arrive, then insults and gig offers, and he takes the link down and sends the money back."
  },
  {
-  "sheet": 44,
+  "sheet": 41,
   "chapter": "Ch 13",
   "people": [
    "David",
@@ -1611,7 +1576,7 @@
   "turn": "The man from Sacramento gives a five-day close; Elijah shouts him off, breaks down, and then signs at the bank, so the wire clears on Friday and the room with the rose garden is paid."
  },
  {
-  "sheet": 45,
+  "sheet": 42,
   "chapter": "Ch 13",
   "people": [
    "David",
@@ -1660,7 +1625,7 @@
   "turn": "Nate and Wes load a keyboard into their van and drive off past his raised hand, Pruitt says a sister-in-law quit her job over his video, and David looks up through the bar window and back down."
  },
  {
-  "sheet": 46,
+  "sheet": 43,
   "chapter": "Ch 13",
   "people": [
    "David",
@@ -1698,7 +1663,7 @@
   "turn": "David offers his shifts back and Elijah says he can't, Manny offers his back room, and Elijah takes the amp, the notebooks and the kitchen radio to his mother, then leaves the house key on Friday."
  },
  {
-  "sheet": 47,
+  "sheet": 44,
   "chapter": "Ch 14",
   "people": [
    "Elijah",
@@ -1750,7 +1715,7 @@
   "turn": "Melody asks how much he kept and whether she should come home; he hangs up, blocks her, shouts at God for an answer and gets rain, and lies down and cries until he sleeps."
  },
  {
-  "sheet": 48,
+  "sheet": 45,
   "chapter": "Ch 15",
   "people": [
    "Elijah",
@@ -1929,7 +1894,7 @@
   "turn": "Grace's offer goes unanswered, the Telecaster is pawned, and Elijah, down to four dollars by Thursday, takes food and a twenty from the old man."
  },
  {
-  "sheet": 49,
+  "sheet": 46,
   "chapter": "Ch 15",
   "people": [
    "Elijah",
@@ -2010,7 +1975,7 @@
   "turn": "Elijah says no to being a boss, takes Grace's invitation and a video call, and on Monday drives north on the old man's twenty and Grace's money."
  },
  {
-  "sheet": 50,
+  "sheet": 47,
   "chapter": "Ch 16",
   "people": [
    "Elijah",
@@ -2056,7 +2021,7 @@
   "turn": "Elijah's app pitch dies in front of Marta, and he offers his hands instead. She gives him a push broom."
  },
  {
-  "sheet": 51,
+  "sheet": 48,
   "chapter": "Ch 16",
   "people": [
    "Elijah",
@@ -2111,7 +2076,7 @@
   "turn": "Grace arrives with the kitchen trailer and the pay goes to the table, and Lou welcomes Elijah to stay for a while."
  },
  {
-  "sheet": 52,
+  "sheet": 49,
   "chapter": "Ch 17",
   "people": [
    "Elijah",
@@ -2201,7 +2166,7 @@
   "turn": "Elijah finds a barn for the arms through a cashier's tip and a handshake with Praether, Lou offers to cover his lien debt in secret, and Elijah puts the VA letter back in the mailbox."
  },
  {
-  "sheet": 53,
+  "sheet": 50,
   "chapter": "Ch 17",
   "people": [
    "Elijah",
@@ -2250,7 +2215,7 @@
   "turn": "Lou makes the arms a secret from the farm, Elijah agrees, and a visitor who wants a picture is sent off."
  },
  {
-  "sheet": 54,
+  "sheet": 51,
   "chapter": "Ch 17",
   "people": [
    "Curtis",
@@ -2311,7 +2276,7 @@
   "turn": "Asked to tell it, Elijah gives the horse-ranch story, Denny turns it around and raises a glass to him, and Elijah lifts his an inch."
  },
  {
-  "sheet": 55,
+  "sheet": 52,
   "chapter": "Ch 17",
   "people": [
    "Curtis",
@@ -2371,7 +2336,7 @@
   "turn": "Denny asks where he stands for six months, Curtis argues for a fence, and Marta answers with the Luddite floor; Elijah starts a names page that night and cannot think what to put for Grace."
  },
  {
-  "sheet": 56,
+  "sheet": 53,
   "chapter": "Ch 17",
   "people": [
    "Elijah",
@@ -2439,7 +2404,7 @@
   "turn": "Grace asks Elijah to play the amp and he refuses, and Lou takes her to the kitchen, leaving Elijah at the tailgate."
  },
  {
-  "sheet": 57,
+  "sheet": 54,
   "chapter": "Ch 17",
   "people": [
    "Elijah",
@@ -2476,7 +2441,7 @@
   "turn": "Lou asks Grace to be gentle with Elijah, and she leaves to help Marta."
  },
  {
-  "sheet": 58,
+  "sheet": 55,
   "chapter": "Ch 17",
   "people": [
    "Curtis",
@@ -2589,7 +2554,7 @@
   "turn": "Curtis owns the kitchen's mistake, Grace tells him to ask Rosa instead of guessing, and when Curtis asks for Elijah's solution he says he does not know; the notebook gets 'Ask. Don't guess.'"
  },
  {
-  "sheet": 60,
+  "sheet": 57,
   "chapter": "Ch 18",
   "people": [
    "Elijah",
@@ -2674,7 +2639,7 @@
   "turn": "Marta gets Elijah to shut the laptop and tells him about Gary and Sal; he writes Sal's rule, puts the phone on Do Not Disturb with one exception, and returns Grace's jars, and she says she should have knocked."
  },
  {
-  "sheet": 61,
+  "sheet": 58,
   "chapter": "Ch 19",
   "people": [
    "Curtis",
@@ -2706,7 +2671,7 @@
   "turn": "Marta turns down the sealed Swiss design, Elijah starts a second board from local parts, and Tyler brings forty printed cases nobody asked him to make."
  },
  {
-  "sheet": 62,
+  "sheet": 59,
   "chapter": "Ch 19",
   "people": [
    "Curtis",
@@ -2732,7 +2697,7 @@
   "turn": "Reuben arrives with a county folder and an open tab on the shed letter, and Elijah learns his assumption about agricultural equipment was wrong."
  },
  {
-  "sheet": 63,
+  "sheet": 60,
   "chapter": "Ch 19",
   "people": [
    "Curtis",
@@ -2789,7 +2754,7 @@
   "turn": "Patricia calls the AI firmware a dependency and the shop splits over it, and Marta's frost-week question sends Elijah and Tyler to a bench test that shows a dead probe leaves the valve open, so they write a repair line."
  },
  {
-  "sheet": 64,
+  "sheet": 61,
   "chapter": "Ch 19",
   "people": [
    "Curtis",
@@ -2801,7 +2766,7 @@
   "turn": "Two probes fail shut in the first month, Elijah's Telecaster goes into the pawn window, and Curtis fixes his check-engine light for two dollars of hose."
  },
  {
-  "sheet": 65,
+  "sheet": 62,
   "chapter": "Ch 20",
   "people": [
    "Curtis",
@@ -2834,7 +2799,7 @@
   "turn": "Lou asks why Elijah is on his knees in the tomatoes if the machine is already decided, and Elijah has no answer."
  },
  {
-  "sheet": 66,
+  "sheet": 63,
   "chapter": "Ch 21",
   "people": [
    "Denny",
@@ -2878,7 +2843,7 @@
   "turn": "Elijah's optimized cut sits at forty-one views while Denny's single take spreads, and Elijah takes the cut down so the channel becomes Denny's."
  },
  {
-  "sheet": 67,
+  "sheet": 64,
   "chapter": "Ch 21",
   "people": [
    "Curtis",
@@ -2912,7 +2877,7 @@
   "turn": "The Ochoas' plugs die in the heat after the co-op's box stays shut in the sun; Grace sets a hand-open plan for eleven boxes, and the board passes the cold test, so Tyler looks up at Elijah."
  },
  {
-  "sheet": 68,
+  "sheet": 65,
   "chapter": "Ch 22",
   "people": [
    "Curtis",
@@ -2962,7 +2927,7 @@
   "turn": "The rack goes together in the shed, the model is loaded, and the co-op starts putting its questions to it."
  },
  {
-  "sheet": 69,
+  "sheet": 66,
   "chapter": "Ch 22",
   "people": [
    "David",
@@ -3005,7 +2970,7 @@
   "turn": "Elijah tells the co-op the board came from an Iowa company and that he said check the battery the night the plugs cooked, and Marta answers that he let her call it theirs."
  },
  {
-  "sheet": 70,
+  "sheet": 67,
   "chapter": "Ch 22",
   "people": [
    "Curtis",
@@ -3092,7 +3057,7 @@
   "turn": "The co-op puts a named person on every hot-day vent check, Grace takes the pot back inside, and Elijah stays at the co-op instead of driving to St. Rose."
  },
  {
-  "sheet": 71,
+  "sheet": 68,
   "chapter": "Ch 22",
   "people": [
    "Curtis",
@@ -3170,7 +3135,7 @@
   "turn": "Grace and Reuben write the families by hand, the co-op posts a breach account that Elijah reads on camera, and Elijah misses the funeral and stays with the crawler logs."
  },
  {
-  "sheet": 72,
+  "sheet": 69,
   "chapter": "Ch 23",
   "people": [
    "Curtis",
@@ -3285,7 +3250,7 @@
   "turn": "The co-op votes the surplus into the land over the October money, Grace goes to tell the Ochoas, and Irene asks for her questions in writing before anyone signs."
  },
  {
-  "sheet": 73,
+  "sheet": 70,
   "chapter": "Ch 23",
   "people": [
    "Aaron Bidwell"
@@ -3325,7 +3290,7 @@
   "turn": "Bidwell decides to wait while the co-op's own records finish, instead of acting on the hole in his map."
  },
  {
-  "sheet": 74,
+  "sheet": 71,
   "chapter": "Ch 24",
   "people": [
    "Elijah",
@@ -3347,7 +3312,7 @@
   "turn": "Elijah signs INSTALLED BY for the first new board, and the vent temperatures are back on the clipboard twice a day."
  },
  {
-  "sheet": 75,
+  "sheet": 72,
   "chapter": "Ch 24",
   "people": [
    "Denny",
@@ -3390,7 +3355,7 @@
   "turn": "Marta breaks his best practice weld and turns down the header seam, Elijah starts a coupon a month, and Walt Calder's stove goes in last."
  },
  {
-  "sheet": 76,
+  "sheet": 73,
   "chapter": "Ch 24",
   "people": [
    "Curtis",
@@ -3417,7 +3382,7 @@
   "turn": "Elijah lights the first fire in the new house and tells his mother about it, she asks for Barry, and he writes ROOFS: 1 in the notebook."
  },
  {
-  "sheet": 77,
+  "sheet": 74,
   "chapter": "Ch 24",
   "people": [
    "Elijah",
@@ -3439,7 +3404,7 @@
   "turn": "The photo of the stove goes on his mother's windowsill, and she puts one finger on the stove in it."
  },
  {
-  "sheet": 78,
+  "sheet": 75,
   "chapter": "Ch 24",
   "people": [
    "Elijah",
@@ -3491,7 +3456,7 @@
   "turn": "Grace tells him about the tape, the captain and leaving her job, then ends the night by dragging her chair a foot closer to the stove."
  },
  {
-  "sheet": 79,
+  "sheet": 76,
   "chapter": "Ch 25",
   "people": [
    "Elijah",
@@ -3507,7 +3472,7 @@
   "turn": "Elijah sees the store dying and decides to say nothing, assuming Frank already knows."
  },
  {
-  "sheet": 80,
+  "sheet": 77,
   "chapter": "Ch 25",
   "people": [
    "Devendra",
@@ -3587,7 +3552,7 @@
   "turn": "Elijah stops keeping quiet: he admits to Grace he knew since spring, and takes the chart to Frank, who says the store was already dead."
  },
  {
-  "sheet": 81,
+  "sheet": 78,
   "chapter": "Ch 25",
   "people": [
    "Denny",
@@ -3616,7 +3581,7 @@
   "turn": "The co-op turns Elijah's confession into a deal: Frank's inventory goes to the tool library at honest wholesale, with a paid job once the library can carry one."
  },
  {
-  "sheet": 82,
+  "sheet": 79,
   "chapter": "Ch 25",
   "people": [
    "Elijah",
@@ -3653,7 +3618,7 @@
   "turn": "Frank reflows Tyler's cold joints, and Elijah finds the machine from his notebook already built, under a name he never had."
  },
  {
-  "sheet": 83,
+  "sheet": 80,
   "chapter": "Ch 25",
   "people": [
    "Denny",
@@ -3675,7 +3640,7 @@
   "turn": "Elijah packs his duffel to leave, but at the pond Grace kisses him and asks him to stay, and he stays at the edge of the water without answering."
  },
  {
-  "sheet": 84,
+  "sheet": 81,
   "chapter": "Ch 25",
   "people": [
    "Curtis",
@@ -3712,7 +3677,7 @@
   "turn": "Elijah gets a hundred miles south, the check-engine light stops him past Yakima, and he turns back north with the money kept for Ma's room."
  },
  {
-  "sheet": 85,
+  "sheet": 82,
   "chapter": "Ch 25",
   "people": [
    "Elijah",
@@ -3736,7 +3701,7 @@
   "turn": "Elijah stops refusing Grace's pay and says Bring it, and Grace agrees to bring it Friday."
  },
  {
-  "sheet": 86,
+  "sheet": 83,
   "chapter": "Ch 26",
   "people": [
    "Grace",
@@ -3767,7 +3732,7 @@
   "turn": "Lou pushes Grace to give Elijah a chance; she says the choice is hers, and they end on a matching sip and a Jinx, with the decision still open."
  },
  {
-  "sheet": 87,
+  "sheet": 84,
   "chapter": "Ch 26",
   "people": [
    "Elijah",
@@ -3793,7 +3758,7 @@
   "turn": "Grace leaves for the winter, and Elijah says he will not keep her from her destiny; she answers that anyone she meets will have to be better than him."
  },
  {
-  "sheet": 88,
+  "sheet": 85,
   "chapter": "Ch 26",
   "people": [
    "Elijah",
@@ -3824,7 +3789,7 @@
   "turn": "Priya plants her trial beds on the hardpan and writes down Elijah's warning about the standing water in the low spot."
  },
  {
-  "sheet": 89,
+  "sheet": 86,
   "chapter": "Ch 26",
   "people": [
    "Curtis",
@@ -3903,7 +3868,7 @@
   "turn": "The co-op buys the little robot, and Curtis drops the EMP for the camera feed and then starts writing code for the rover."
  },
  {
-  "sheet": 90,
+  "sheet": 87,
   "chapter": "Ch 26",
   "people": [
    "Elijah",
@@ -3935,7 +3900,7 @@
   "turn": "Elijah shuts the laptop and re-lays the bed by string from the dry corner, and the rover waters one seedling on the straightened bed."
  },
  {
-  "sheet": 91,
+  "sheet": 88,
   "chapter": "Ch 26",
   "people": [
    "Curtis",
@@ -3984,7 +3949,7 @@
   "turn": "After the mushroom invitation the room empties, Priya and Curtis keep arguing, and Grace asks Elijah whether he knows a billionaire, which he dodges by leaving for dinner."
  },
  {
-  "sheet": 92,
+  "sheet": 89,
   "chapter": "Ch 26",
   "people": [
    "Elijah",
@@ -4028,7 +3993,7 @@
   "turn": "Elijah does not drive to his mother in hospital; Grace goes without him, and the aide calls the next morning to say she is all right."
  },
  {
-  "sheet": 93,
+  "sheet": 90,
   "chapter": "Ch 26",
   "people": [
    "Curtis",
@@ -4078,7 +4043,7 @@
   "turn": "The pay vote passes at half, and Elijah puts the first check in a notebook without cashing it."
  },
  {
-  "sheet": 94,
+  "sheet": 91,
   "chapter": "Ch 26",
   "people": [
    "Elijah",
@@ -4129,7 +4094,7 @@
   "turn": "Priya makes Elijah dig two pits, and his failed conclusion becomes the notebook rule that the sensor sits at one centimeter while the root sits at thirty."
  },
  {
-  "sheet": 95,
+  "sheet": 92,
   "chapter": "Pondwater",
   "people": [
    "Curtis",
@@ -4196,7 +4161,7 @@
   "turn": "The weeder pitch empties the table, Grace changes the subject on the festival, and Marta stops bracing long enough to give Elijah the bass-music tip with a warning."
  },
  {
-  "sheet": 96,
+  "sheet": 93,
   "chapter": "Pondwater",
   "people": [
    "Elijah",
@@ -4242,7 +4207,7 @@
   "turn": "Elijah asks whether Grace wants only coworkers, and they move closer."
  },
  {
-  "sheet": 97,
+  "sheet": 94,
   "chapter": "Ch 27",
   "people": [
    "David",
@@ -4285,7 +4250,7 @@
   "turn": "Eleven towns write in asking how to start, and Elijah puts off answering David's text to go find Grace."
  },
  {
-  "sheet": 98,
+  "sheet": 95,
   "chapter": "Ch 27",
   "people": [
    "Curtis",
@@ -4329,7 +4294,7 @@
   "turn": "The co-op votes down the paid plan and votes to ship the files free, and Elijah is left asking who pays for June."
  },
  {
-  "sheet": 99,
+  "sheet": 96,
   "chapter": "Ch 27",
   "people": [
    "Denny",
@@ -4393,7 +4358,7 @@
   "turn": "The machinist's fix goes in, the plans show up for sale under someone else's name with Marta's note cut off, and the pledge fight ends with Elijah still not answering David."
  },
  {
-  "sheet": 100,
+  "sheet": 97,
   "chapter": "Ch 27",
   "people": [
    "Elijah",
@@ -4434,7 +4399,7 @@
   "turn": "Grace says they are past his rule, and she asks how much energy he has left."
  },
  {
-  "sheet": 101,
+  "sheet": 98,
   "chapter": "Ch 27",
   "people": [
    "Elijah",
@@ -4460,7 +4425,7 @@
   "turn": "Marta cuts Elijah off twice and sends him to shower, and he goes off blushing."
  },
  {
-  "sheet": 102,
+  "sheet": 99,
   "chapter": "Ch 27",
   "people": [
    "Curtis",
@@ -4609,7 +4574,7 @@
   "turn": "Curtis's Riemann news breaks up dinner, Grace makes Elijah promise to put people first, and Elijah gives up the drive down to take the holiday route."
  },
  {
-  "sheet": 103,
+  "sheet": 100,
   "chapter": "Ch 27",
   "people": [
    "Irene",
@@ -4671,7 +4636,7 @@
   "turn": "Tyler's data-center theory gives way to Irene's towels, and Priya hands him the chalk and a monthly rule that he keeps."
  },
  {
-  "sheet": 104,
+  "sheet": 101,
   "chapter": "Ch 28",
   "people": [
    "Curtis",
@@ -4708,7 +4673,7 @@
   "turn": "The fix brings node 7 and the north houses back, and Curtis, holding the rain fly over Elijah, says he is just on this side of the fence."
  },
  {
-  "sheet": 105,
+  "sheet": 102,
   "chapter": "Ch 29",
   "people": [
    "Irene",
@@ -4737,7 +4702,7 @@
   "turn": "Marta admits her shoulder is done, Yvonne takes the peeler, and Lupe tells her to show Tyler."
  },
  {
-  "sheet": 106,
+  "sheet": 103,
   "chapter": "Ch 29",
   "people": [
    "Curtis",
@@ -4818,7 +4783,7 @@
   "turn": "The room writes its risks with names beside them, Marta puts herself on the list, Tyler says Monday, and Reuben lays a Sonoma County deed in front of Elijah."
  },
  {
-  "sheet": 107,
+  "sheet": 104,
   "chapter": "Ch 29",
   "people": [
    "Elijah",
@@ -4839,7 +4804,7 @@
   "turn": "Lou will not call the mount good, and at six the next morning he is at the east bed with two coffees, hollering about the cover."
  },
  {
-  "sheet": 108,
+  "sheet": 105,
   "chapter": "Ch 30",
   "people": [
    "Grace",
@@ -4860,7 +4825,7 @@
   "turn": "Grace agrees to Priya's order of one name, then the number, then stop, and writes a name on the back of her hand."
  },
  {
-  "sheet": 109,
+  "sheet": 106,
   "chapter": "Ch 30",
   "people": [
    "Curtis",
@@ -4927,7 +4892,7 @@
   "turn": "The board votes four to one to extend the route through December and to study a permanent food line, Curtis calls it greed, Irene calls it a choice, and Grace writes the due date on the box lid."
  },
  {
-  "sheet": 110,
+  "sheet": 107,
   "chapter": "Ch 30",
   "people": [
    "Marta",
@@ -4958,7 +4923,7 @@
   "turn": "Tyler traces the holes to wet rod, bakes it out, and the next weld bends to sixty degrees before it cracks, and Marta puts her hand on the oven."
  },
  {
-  "sheet": 111,
+  "sheet": 108,
   "chapter": "Ch 31",
   "people": [
    "Curtis",
@@ -5022,7 +4987,7 @@
   "turn": "Nobody at the table says no, but Marta's yes goes, Denny sees his bench in the plan, and Grace tells Elijah he should have shown her first."
  },
  {
-  "sheet": 112,
+  "sheet": 109,
   "chapter": "Ch 31",
   "people": [
    "Denny",
@@ -5053,7 +5018,7 @@
   "turn": "Denny calls Spokane back and starts the first, and the roster moves Elijah's magnet from SHOP to GROUNDS."
  },
  {
-  "sheet": 113,
+  "sheet": 110,
   "chapter": "Ch 31",
   "people": [
    "Elijah",
@@ -5090,7 +5055,7 @@
   "turn": "Elijah tells Grace he will go to the circle, and she stops arguing, takes no tea, and says she will sit next to him."
  },
  {
-  "sheet": 114,
+  "sheet": 111,
   "chapter": "Ch 31",
   "people": [
    "Elijah",
@@ -5111,7 +5076,7 @@
   "turn": "Elijah loses the use of his hands in the circle, Grace walks him to the shouse, and he sees the faces around him and understands they had all read the deed."
  },
  {
-  "sheet": 115,
+  "sheet": 112,
   "chapter": "Ch 31",
   "people": [
    "Curtis",
@@ -5144,7 +5109,7 @@
   "turn": "Elijah tries to leave, then finishes the bracket on the brake after Marta tells him about Emeka and sends him to check on the three people, and Curtis leaves six eggs on the floor."
  },
  {
-  "sheet": 116,
+  "sheet": 113,
   "chapter": "Ch 31",
   "people": [
    "Elijah",
@@ -5179,7 +5144,7 @@
   "turn": "Elijah tells his mother he is not okay after two and a half years of saying he was all good, and asks the table to stay on grounds, which they grant."
  },
  {
-  "sheet": 117,
+  "sheet": 114,
   "chapter": "Act Four",
   "people": [
    "Aaron Bidwell",
@@ -5220,7 +5185,7 @@
   "turn": "Bidwell learns the reader asks before it acts, so he orders it turned off and the knowledge hushed, and the reader keeps asking."
  },
  {
-  "sheet": 118,
+  "sheet": 115,
   "chapter": "Ch 32",
   "people": [
    "Anand",
@@ -5251,7 +5216,7 @@
   "turn": "Elijah lays five small things side by side, finds nothing he can point to, and decides to tell no one."
  },
  {
-  "sheet": 119,
+  "sheet": 116,
   "chapter": "Ch 32",
   "people": [
    "Elijah",
@@ -5277,7 +5242,7 @@
   "turn": "Grace lights the stove herself and tells Elijah she has been sleeping since about Christmas."
  },
  {
-  "sheet": 120,
+  "sheet": 117,
   "chapter": "Ch 32",
   "people": [
    "Curtis",
@@ -5360,7 +5325,7 @@
   "turn": "Elijah learns Grace has known since the first and fights her, they make up at the pond, and the shortfall goes to the table where it is logged as one late payment."
  },
  {
-  "sheet": 121,
+  "sheet": 118,
   "chapter": "Ch 32",
   "people": [
    "Irene",
@@ -5402,7 +5367,7 @@
   "turn": "The cutter takes a branch to bare wood on the fifth turn, Tyler closes the laptop and waits until summer, and in June the dead wood is kept as jin."
  },
  {
-  "sheet": 122,
+  "sheet": 119,
   "chapter": "Ch 33",
   "people": [
    "Denny",
@@ -5434,7 +5399,7 @@
   "turn": "Elijah logs the Architect's post, and Denny, who says he left on his own, asks whether Friday is still on."
  },
  {
-  "sheet": 123,
+  "sheet": 120,
   "chapter": "Ch 33",
   "people": [
    "Curtis",
@@ -5498,7 +5463,7 @@
   "turn": "The table believes Elijah for about a minute, then refuses to act, and Grace gets his promise not to post the notebook."
  },
  {
-  "sheet": 124,
+  "sheet": 121,
   "chapter": "Ch 33",
   "people": [
    "Elijah",
@@ -5534,7 +5499,7 @@
   "turn": "Grace asks which of them helped at the door, Elijah talks about doors and does not answer, and the light goes."
  },
  {
-  "sheet": 125,
+  "sheet": 122,
   "chapter": "Ch 33",
   "people": [
    "Curtis",
@@ -5681,7 +5646,7 @@
   "turn": "Lou asks whether food and a safe home would change how people feel about the machine, Curtis asks who holds the plug, Lou says he would like it to be Curtis, and Elijah writes the exchange in the notebook without speaking."
  },
  {
-  "sheet": 126,
+  "sheet": 123,
   "chapter": "Ch 34",
   "people": [
    "Curtis",
@@ -5719,7 +5684,7 @@
   "turn": "The tractor is out for nine days, and Curtis stops the jailbreak talk and turns to Walt's old tractor in Irene's barn."
  },
  {
-  "sheet": 127,
+  "sheet": 124,
   "chapter": "Ch 34",
   "people": [
    "Grace",
@@ -5752,7 +5717,7 @@
   "turn": "Marta and Grace sign Priya's sheet, and Grace takes on talking to Lupe."
  },
  {
-  "sheet": 128,
+  "sheet": 125,
   "chapter": "Ch 34",
   "people": [
    "Curtis",
@@ -5855,7 +5820,7 @@
   "turn": "The arms come out, Lou admits he helped hide them, Patricia will not look at the price list, and Reuben tables it and moves on to toilets."
  },
  {
-  "sheet": 129,
+  "sheet": 126,
   "chapter": "Ch 34",
   "people": [
    "Curtis",
@@ -5890,7 +5855,7 @@
   "turn": "Lou says the Ochoas are leaving at the end of the month, and the room turns on Elijah."
  },
  {
-  "sheet": 130,
+  "sheet": 127,
   "chapter": "Ch 35",
   "people": [
    "Elijah",
@@ -5931,7 +5896,7 @@
   "turn": "Elijah admits he is doing what the room did and asks what to do, and Lou hands it back and turns on the water."
  },
  {
-  "sheet": 131,
+  "sheet": 128,
   "chapter": "Ch 35",
   "people": [
    "Elijah",
@@ -5962,7 +5927,7 @@
   "turn": "Elijah gives Lou his ALC measure out loud for the first time, and Lou does not argue."
  },
  {
-  "sheet": 132,
+  "sheet": 129,
   "chapter": "Ch 36",
   "people": [
    "Elijah",
@@ -5991,7 +5956,7 @@
   "turn": "The Ochoas leave, Lupe hands Grace the clipboard with Elijah's name still on it, and Reuben changes the count to twenty."
  },
  {
-  "sheet": 133,
+  "sheet": 130,
   "chapter": "Ch 36",
   "people": [
    "Elijah",
@@ -6022,7 +5987,7 @@
   "turn": "Elijah says he is dropping the arms, Grace answers with Mrs. Delgado and the December route, and the thing sits between them."
  },
  {
-  "sheet": 134,
+  "sheet": 131,
   "chapter": "Ch 36",
   "people": [
    "Elijah",
@@ -6109,7 +6074,7 @@
   "turn": "The fire turns into a fight: Grace wants the arms brought in for Mrs. Delgado's January box, Elijah says choosing for others is the gate, and when he throws her father back at her she tells him to go home."
  },
  {
-  "sheet": 135,
+  "sheet": 132,
   "chapter": "Ch 37",
   "people": [
    "Devendra",
@@ -6172,7 +6137,7 @@
   "turn": "Elijah stops waiting for Grace, packs, and leaves the amp and four written words behind, and Devendra admits his company's part in the sale."
  },
  {
-  "sheet": 136,
+  "sheet": 133,
   "chapter": "Ch 37",
   "people": [
    "Elijah",
@@ -6199,7 +6164,7 @@
   "turn": "The weld holds, and Marta shakes his bare hand and calls him Elijah for the first time in three years."
  },
  {
-  "sheet": 137,
+  "sheet": 134,
   "chapter": "Ch 37",
   "people": [
    "Curtis",
@@ -6256,7 +6221,7 @@
   "turn": "Each person sends him off, Curtis leaves the hose with him, and at the gate a new orange flagging tape appears beside the old one."
  },
  {
-  "sheet": 138,
+  "sheet": 135,
   "chapter": "Ch 37",
   "people": [
    "Elijah",
@@ -6298,7 +6263,7 @@
   "turn": "Elijah answers his mother 'Not yet, Ma' instead of saying there is no Barry, accepts two dinners, and sleeps at Manny's, the one place with no light on it."
  },
  {
-  "sheet": 139,
+  "sheet": 136,
   "chapter": "Ch 38",
   "people": [
    "Curtis",
@@ -6460,7 +6425,7 @@
   "turn": "The machine's video splits the table, Patricia confesses her daily use, Curtis sits back down, the table says the Lord's Prayer, and Grace sings 'The Weight' by the amp, types Come home and deletes it, then turns off Denny's live feed."
  },
  {
-  "sheet": 140,
+  "sheet": 137,
   "chapter": "Ch 39",
   "people": [
    "Elijah",
@@ -6502,7 +6467,7 @@
   "turn": "Elijah reads his mother the book and answers Wes's five-year-old text: yes, all of it is in the thing, and the guitar is gone."
  },
  {
-  "sheet": 141,
+  "sheet": 138,
   "chapter": "Ch 39",
   "people": [
    "David",
@@ -6574,7 +6539,7 @@
   "turn": "David refuses Elijah's money and tells him the three laid-off people are fine, so Elijah laughs and cries, then declines Wes's invitation to sit in at the Grange this time."
  },
  {
-  "sheet": 142,
+  "sheet": 139,
   "chapter": "Ch 39",
   "people": [
    "David",
@@ -6633,7 +6598,7 @@
   "turn": "Elijah tells the girl to go see the farm, raises a glass to the table and the video, and on the screen Grace says the stove is going and that she lit it herself."
  },
  {
-  "sheet": 143,
+  "sheet": 140,
   "chapter": "Epilogue",
   "people": [
    "Elijah",

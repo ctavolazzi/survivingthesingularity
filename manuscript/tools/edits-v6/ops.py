@@ -1559,7 +1559,20 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (248, 'that had eaten whole weekends of his self-teaching and', 'that had eaten whole weekends and'),
 (248, 'of all canyons, to cross first.', 'of all canyons, to conquer first.'),
 (248, 'To his surprise, some realtors were watching.', 'To his surprise, some realtors were paying close attention.'),# 249, Ch 0: David pushes the cash back and leans in (CT, 27 Nov, fourteenth chat)
-(249, '"Your money\'s no good here," David said. "You look like you buried somebody."', '"Your money\'s no good here," David said, pushing the cash back. Then he leaned in and said with a concerned tone, "Mad, you look like you just buried somebody."'),
+(249, '"Your money\'s no good here," David said. "You look like you buried somebody."', '"Your money\'s no good here," David said, pushing the cash back. Then he leaned in and said with a concerned tone, "Mad, you look like you just buried somebody."'),# 250, Ch 0: "Mad" out of David's line (CT, 27 Nov, fourteenth chat)
+(250, '"They\'d have found a reason, Mad," he said.', '"They\'d have found a reason," he said.'),
+# 251, Ch 0: "the hour" out (CT: "The hour? What hour? Confusing, remove hour")
+(251, 'the laptop open, the hour, 1:40 in the morning,', 'the laptop open, 1:40 in the morning,'),
+# 252, Ch 0: not "Actually Indians"; it was genuinely thinking (CT's dictation, with "or something like that"; logged on "Yes log all changes so far")
+(252, 'Nobody was cheating. That made it worse, because', 'Nobody was cheating. AI really meant Artificial Intelligence, not "Actually Indians" typing behind the scenes or any of the other bad jokes he\'d seen online. People thought it was just fancy autocomplete, but they hadn\'t read the research papers.\nIt was genuinely thinking.\nNot very well at first, but Elijah had not only watched its capacity to think get better, he had helped it, a lot faster than he thought possible.\nThat made it worse, because'),
+# 253, Ch 0: the cash goes back once (Claude's fix after edit 249, CT's yes)
+(253, 'Elijah put a twenty on the bar. David slid it back across the wood.', 'Elijah put a twenty on the bar.'),
+# 254, Ch 0: "engine" once (Claude's fix after edit 247, CT's yes)
+(254, 'and quietly replaced the engine of machine intelligence.', 'and quietly replaced the heart of machine intelligence.'),
+# 255, Ch 0: three scene breaks out, two kept (CT: "too many of these stars in the first chapter"; Claude's list, CT's yes)
+(255, "He'd underlined it twice and gone back to nodding.\n \nYou should know", "He'd underlined it twice and gone back to nodding.\nYou should know"),
+(255, 'PorusAI had no such patience.\n \nPorusAI was the other kind', 'PorusAI had no such patience.\nPorusAI was the other kind'),
+(255, 'paying close attention.\n \nThere were three of them', 'paying close attention.\nThere were three of them'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

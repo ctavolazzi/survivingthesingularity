@@ -302,7 +302,7 @@ C=[
              'the lesson came back around. Elijah had grown up on a working farm',
              'Weather that never really cleared up. The other meaning of his name'],  # its "nodding. Elijah worked out" item dropped at edit 290 (CT's line follows "nodding." now)
  ['came back around. The other meaning of his name']),
-(290, 'Ch 0', ['gone back to nodding. He did not like the corporate bobbleheading, but he did enjoy the money.'], []),  # narrowed at edit 291 (CT's next line follows it); "Elijah did not like" became "He did not like" in place, 27 Nov (seventeenth chat)
+(290, 'Ch 0', ['gone back to nodding. Elijah did not like the corporate bobbleheading, but he did enjoy the money.'], []),  # narrowed at edit 291 (CT's next line follows it)
 (291, 'Ch 0', ["enjoy the money. His father always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his father's face. Elijah worked out of a satellite office"], []),
 (292, 'Ch 27', ['taking the scenic route. Once they started they just never stopped talking. Topics crossed intellectual property lines, ranging from ancient texts to which aisle was their favorite in the grocery store. There was something about Grace that made him want to know what she thought of just about everything. They danced on a hillside'], []),
 (293, 'Ch 27', ["Their coats had soaked up Rosa's cooking all afternoon, sage and turkey fat, and the little room filled with it the minute the door shut."], ['Their coats had soaked up the kitchen all afternoon']),  # row 206 narrowed to "Their coats had soaked up" at edit 293

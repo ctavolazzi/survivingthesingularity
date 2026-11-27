@@ -301,7 +301,7 @@ Edit 57 was never used.
 | 287 | Ch 6 | not in the Doc | the ink going brown. The coffee smelled like a slice of heaven. He ... |
 | 288 | Ch 10 | not in the Doc | "Suit yourself, man," Ruby shrugged again, the fur |
 | 289 | Ch 0 | not in the Doc | He had never actually read what was inside it. You should know how ... |
-| 290 | Ch 0 | not in the Doc | gone back to nodding. He did not like the corporate bobbleheading, ... |
+| 290 | Ch 0 | not in the Doc | gone back to nodding. Elijah did not like the corporate bobbleheadi... |
 | 291 | Ch 0 | not in the Doc | enjoy the money. His father always said he had a champagne appetite... |
 | 292 | Ch 27 | not in the Doc | taking the scenic route. Once they started they just never stopped ... |
 | 293 | Ch 27 | not in the Doc | Their coats had soaked up Rosa's cooking all afternoon, sage and tu... |

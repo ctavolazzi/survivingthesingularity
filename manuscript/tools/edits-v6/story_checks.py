@@ -43,141 +43,128 @@ WHEN = """
 4|2022-11-21|The Monday after the toast: the bet|stated
 5|2022-11-21|The same Monday, at the Bear Flag|stated
 6|2022-11-21|That night: the tower|stated
-7|2023-02|Early 2023, a morning: the all-hands|worked
-8|2023-02|The same morning|stated
-9|2023-02|That night|stated
-10|2023-02|The same day, in the air|worked
-11|2023-03|Three weeks after the all-hands|stated
-12|2023-03|A Sunday, 9:40|stated
-13|2023-03|A Friday and Saturday|stated
-14|2023-04|The next Monday and the week after: the bill|stated
-15|2023-04|A Wednesday|stated
-16|2023-04|That weekend|stated
-17|2023-10-17|October 2023, a Tuesday, eleven months after the toast: laid off|stated
-18|2023-10-17|The same day: the video|stated
-19|2023-10-18|That night and the next morning|stated
-20|2023-10-20|October to December 2023: the replies|stated
-21|2023-12|A Sunday, 9:55|stated
-22|2024-01|A Thursday in January 2024|stated
-23|2024-01|The same night, in the truck|stated
-24|2024-02|February 2024: San Francisco|stated
-25|2024-02|The same afternoon|stated
-26|2024-02|That night: the house on the hill|stated
-27|2024-02|The same night|stated
-28|2024-02|The same night, until two|stated
-29|2024-02|After two in the morning|stated
-30|2024-02|The same night|worked
-31|2024-03|Spring to August 2024: the apartment goes in April, a month at Ma's, the cannery|stated
-32|2024-08-09|August 2024, six in the morning: the ride with Gus|worked
-33|2024-08-09|The same morning|stated
-34|2024-08-12|Three weeks in August 2024; the launch party is the third Friday|stated
-35|2024-08-31|The morning after, to Monday; the stroke is Sunday night|stated
-36|2024-09-02|That Monday: the hospital|stated
-37|2024-09-03|That week: the house|worked
-38|2024-09-04|That week: the two pages|worked
-39|2024-09-04|That week|worked
-40|2024-09-05|That week: he asks online|worked
-41|2024-09-06|The man from Sacramento; the signing; the wire clears on a Friday|stated
-42|2024-09-11|Two days before the wire, a Wednesday|stated
-43|2024-09-12|The next morning (Thursday), and Friday morning|stated
-44|2024-09-13|That Friday night: the first rain since April|stated
-45|2024-09-14|Five months, September 2024 to the last week of February 2025 (Tuesday to Friday)|stated
-46|2025-03-01|Saturday 1 March to Monday 3 March 2025; he drives north|worked
-47|2025-03-04|Tuesday 4 March 2025: the broom|worked
-48|2025-03-04|The same evening|stated
-49|2025-03-05|His first days: the fourth day is Friday 7 March; Praether; the arms come Wednesday 12 March|worked
-50|2025-03-12|March 2025: the barn; his first Sundays|worked
-51|2025-03-28|Friday 28 March 2025, three weeks after the broom: his first dinner|worked
-52|2025-03-28|The same dinner|stated
-53|2025-03-30|That Sunday|stated
-54|2025-03-30|The same day|stated
-55|2025-04-01|The following Tuesday|stated
-56|2025-04-24|Late April 2025, Thursday to Monday, seven weeks after the broom|stated
-57|2025-04-01|Earlier that April, to May: the order, the two designs|stated
-58|2025-05-03|The first build weekend|worked
-59|2025-05-10|The second build weekend|stated
-60|2025-05-20|May 2025: the boxes ship|stated
-61|2025-05-12|May 2025: the drip tape|stated
-62|2025-06-09|June 2025 (the second week): the two videos|stated
-63|2025-06-26|The last week of June 2025: a hundred and four|stated
-64|2025-05-30|The end of May to early July 2025: the servers|stated
-65|2025-07-03|Thursday 3 July to Saturday 5 July 2025: Ray, the leak|worked
-66|2025-07-05|That Saturday morning|stated
-67|2025-07-05|That weekend, to Monday|stated
-68|2025-07-15|July and August 2025: the land trust|worked
-69|2025-08|Summer 2025|worked
-70|2025-08-15|The middle of August 2025|stated
-71|2025-08-25|The last week of August into September 2025: the shouse|stated
-72|2025-09-27|Saturday 27 September 2025: the first fire; Sunday the call|stated
-73|2025-10-05|The next Sunday|stated
-74|2025-09-27|The same night, by eleven|stated
-75|2025-03|Spring to fall 2025: the store dies|stated
-76|2025-10-15|Fall 2025, after the first frost: the letter, the frozen yogurt|stated
-77|2025-10-17|A Friday dinner|stated
-78|2025-10-25|Fall 2025: the cyberdeck|worked
-79|2025-11-12|The second week of November 2025: the pond|stated
-80|2025-11-26|Wednesday 26 November 2025: he starts for home and turns back|stated
-81|2025-11-26|That night|stated
-82|2025-12-09|December 2025, the evening before Grace leaves for the winter: Lou and the cider|worked
-83|2025-12-10|The next morning: Grace leaves|worked
-84|2026-03|Spring 2026: the beds|stated
-85|2026-05|May 2026: the rover|stated
-86|2026-05|Two nights later|stated
-87|2026-05-22|A Friday in May 2026, before dinner: Miles Renner on the big screen|worked
-88|2026-06-12|Friday 12 June to 30 June 2026: the models go dark|stated
-89|2025-11-28|The Friday after Thanksgiving 2025 to July 2026: the pay|stated
-90|2026-08|August to October 2026: the pits|stated
-91|2026-10|October 2026: the laser weeder; Marta|stated
-92|2026-10|The night after: the amp at the pond|stated
-93|2026-10|October 2026: the first fire video; a week later|worked
-94|2026-10|The same morning, and that Friday|stated
-95|2026-10|To Friday 6 November 2026, after the midterms|stated
-96|2026-11-10|October to November 2026: the weeks after the pond; the morning in his T-shirt|stated
-97|2026-11-10|That afternoon, in the shop: Marta's look|stated
-98|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
-99|2026-12-05|Saturday 5 December 2026: the well|stated
-100|2026-12-15|December 2026: the storm|stated
-101|2027-01|January 2027: the grange kitchen|stated
-102|2027-01|January 2027: the annual meeting|worked
-103|2027-01|A few nights after|stated
-104|2027-02|The night before the county meeting|stated
-105|2027-02|The county meeting|worked
-106|2027-02|The third week of the apprenticeship|stated
-107|2027-02-12|February 2027, a Friday: the plan|stated
-108|2027-02-15|The Monday after, and two days later|stated
-109|2027-02-16|That week|stated
-110|2027-02-20|Saturday 20 February 2027: the tea|worked
-111|2027-02-21|Sunday 21 February: Marta, the brake|stated
-112|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
-113|2027-03|March 2027, on the dairy|worked
-114|2027-03|March 2027: five small things|stated
-115|2027-03-28|Late March 2027|stated
-116|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
-117|2027-04-10|April to June 2027: the juniper|stated
-118|2027-06|June to Friday 9 July 2027|stated
-119|2027-07-09|Friday dinner, 9 July 2027|worked
-120|2027-07-09|The same evening|stated
-121|2027-07-16|The next Friday|stated
-122|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
-123|2027-10-11|The afternoon before the October meeting|stated
-124|2027-10-12|A Tuesday in the middle of October 2027: the meeting|stated
-125|2027-10-12|The same night|stated
-126|2027-10-13|Six the next morning|stated
-127|2027-10-13|That night|stated
-128|2027-10-23|The Saturday before the festival|stated
-129|2027-10-27|The Wednesday of festival week|stated
-130|2027-10-30|The last night of the festival: the fire|worked
-131|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
-132|2027-11-09|The same Tuesday|stated
-133|2027-11-09|The same Tuesday|stated
-134|2027-11-09|Two days south; the rose garden; Manny's|stated
-135|2027-11-25|Thursday 25 November 2027|stated
-136|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
-137|2027-11-25|Thanksgiving night, the Bear Flag|stated
-138|2027-11-25|The same night|stated
-139|2027-12|December 2027 to April 2028|stated
+7|2023-02|Early 2023, a morning: the all-hands; then the same morning|worked
+8|2023-02|That night|stated
+9|2023-02|The same day, in the air|worked
+10|2023-03|Three weeks after the all-hands|stated
+11|2023-03|A Sunday, 9:40|stated
+12|2023-03|A Friday and Saturday|stated
+13|2023-04|The next Monday and the week after: the bill|stated
+14|2023-04|A Wednesday|stated
+15|2023-04|That weekend|stated
+16|2023-10-17|October 2023, a Tuesday, eleven months after the toast: laid off|stated
+17|2023-10-17|The same day: the video; then that night and the next morning|stated
+18|2023-10-20|October to December 2023: the replies|stated
+19|2023-12|A Sunday, 9:55|stated
+20|2024-01|A Thursday in January 2024; then the same night, in the truck|stated
+21|2024-02|February 2024: San Francisco; then the same afternoon|stated
+22|2024-02|That night: the house on the hill; then the same night|stated
+23|2024-02|The same night, until two; then after two in the morning|stated
+24|2024-02|The same night|worked
+25|2024-03|Spring to August 2024: the apartment goes in April, a month at Ma's, the cannery|stated
+26|2024-08-09|August 2024, six in the morning: the ride with Gus; then the same morning|worked
+27|2024-08-12|Three weeks in August 2024; the launch party is the third Friday|stated
+28|2024-08-31|The morning after, to Monday; the stroke is Sunday night|stated
+29|2024-09-02|That Monday: the hospital|stated
+30|2024-09-03|That week: the house|worked
+31|2024-09-04|That week: the two pages|worked
+32|2024-09-04|That week|worked
+33|2024-09-05|That week: he asks online|worked
+34|2024-09-06|The man from Sacramento; the signing; the wire clears on a Friday|stated
+35|2024-09-11|Two days before the wire, a Wednesday|stated
+36|2024-09-12|The next morning (Thursday), and Friday morning|stated
+37|2024-09-13|That Friday night: the first rain since April|stated
+38|2024-09-14|Five months, September 2024 to the last week of February 2025 (Tuesday to Friday)|stated
+39|2025-03-01|Saturday 1 March to Monday 3 March 2025; he drives north|worked
+40|2025-03-04|Tuesday 4 March 2025: the broom; then the same evening|worked
+41|2025-03-05|His first days: the fourth day is Friday 7 March; Praether; the arms come Wednesday 12 March|worked
+42|2025-03-12|March 2025: the barn; his first Sundays|worked
+43|2025-03-28|Friday 28 March 2025, three weeks after the broom: his first dinner; then the same dinner|worked
+44|2025-03-30|That Sunday; then the same day|stated
+45|2025-04-01|The following Tuesday|stated
+46|2025-04-24|Late April 2025, Thursday to Monday, seven weeks after the broom|stated
+47|2025-04-01|Earlier that April, to May: the order, the two designs|stated
+48|2025-05-03|The first build weekend|worked
+49|2025-05-10|The second build weekend|stated
+50|2025-05-20|May 2025: the boxes ship|stated
+51|2025-05-12|May 2025: the drip tape|stated
+52|2025-06-09|June 2025 (the second week): the two videos|stated
+53|2025-06-26|The last week of June 2025: a hundred and four|stated
+54|2025-05-30|The end of May to early July 2025: the servers|stated
+55|2025-07-03|Thursday 3 July to Saturday 5 July 2025: Ray, the leak; then that Saturday morning|worked
+56|2025-07-05|That weekend, to Monday|stated
+57|2025-07-15|July and August 2025: the land trust|worked
+58|2025-08|Summer 2025|worked
+59|2025-08-15|The middle of August 2025|stated
+60|2025-08-25|The last week of August into September 2025: the shouse|stated
+61|2025-09-27|Saturday 27 September 2025: the first fire; Sunday the call|stated
+62|2025-10-05|The next Sunday|stated
+63|2025-09-27|The same night, by eleven|stated
+64|2025-03|Spring to fall 2025: the store dies|stated
+65|2025-10-15|Fall 2025, after the first frost: the letter, the frozen yogurt|stated
+66|2025-10-17|A Friday dinner|stated
+67|2025-10-25|Fall 2025: the cyberdeck|worked
+68|2025-11-12|The second week of November 2025: the pond|stated
+69|2025-11-26|Wednesday 26 November 2025: he starts for home and turns back|stated
+70|2025-11-26|That night|stated
+71|2025-12-09|December 2025, the evening before Grace leaves for the winter: Lou and the cider|worked
+72|2025-12-10|The next morning: Grace leaves|worked
+73|2026-03|Spring 2026: the beds|stated
+74|2026-05|May 2026: the rover|stated
+75|2026-05|Two nights later|stated
+76|2026-05-22|A Friday in May 2026, before dinner: Miles Renner on the big screen|worked
+77|2026-06-12|Friday 12 June to 30 June 2026: the models go dark|stated
+78|2025-11-28|The Friday after Thanksgiving 2025 to July 2026: the pay|stated
+79|2026-08|August to October 2026: the pits|stated
+80|2026-10|October 2026: the laser weeder; Marta|stated
+81|2026-10|The night after: the amp at the pond|stated
+82|2026-10|October 2026: the first fire video; a week later|worked
+83|2026-10|The same morning, and that Friday|stated
+84|2026-10|To Friday 6 November 2026, after the midterms|stated
+85|2026-11-10|October to November 2026: the weeks after the pond; the morning in his T-shirt|stated
+86|2026-11-10|That afternoon, in the shop: Marta's look|stated
+87|2026-11-20|Friday 20 November 2026; Thanksgiving is the 26th|stated
+88|2026-12-05|Saturday 5 December 2026: the well|stated
+89|2026-12-15|December 2026: the storm|stated
+90|2027-01|January 2027: the grange kitchen|stated
+91|2027-01|January 2027: the annual meeting|worked
+92|2027-01|A few nights after|stated
+93|2027-02|The night before the county meeting|stated
+94|2027-02|The county meeting|worked
+95|2027-02|The third week of the apprenticeship|stated
+96|2027-02-12|February 2027, a Friday: the plan|stated
+97|2027-02-15|The Monday after, and two days later|stated
+98|2027-02-16|That week|stated
+99|2027-02-20|Saturday 20 February 2027: the tea|worked
+100|2027-02-21|Sunday 21 February: Marta, the brake|stated
+101|2027-02-28|Sunday 28 February, Monday 1 March (the pit), and that Friday|worked
+102|2027-03|March 2027, on the dairy|worked
+103|2027-03|March 2027: five small things|stated
+104|2027-03-28|Late March 2027|stated
+105|2027-04-01|Thursday 1 April 2027 to the next Friday|stated
+106|2027-04-10|April to June 2027: the juniper|stated
+107|2027-06|June to Friday 9 July 2027|stated
+108|2027-07-09|Friday dinner, 9 July 2027; then the same evening|worked
+109|2027-07-16|The next Friday|stated
+110|2027-10-02|Early October 2027, a Saturday to Tuesday: the tractor|stated
+111|2027-10-11|The afternoon before the October meeting|stated
+112|2027-10-12|A Tuesday in the middle of October 2027: the meeting; then the same night|stated
+113|2027-10-13|Six the next morning|stated
+114|2027-10-13|That night|stated
+115|2027-10-23|The Saturday before the festival|stated
+116|2027-10-27|The Wednesday of festival week|stated
+117|2027-10-30|The last night of the festival: the fire|worked
+118|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
+119|2027-11-09|The same Tuesday|stated
+120|2027-11-09|The same Tuesday|stated
+121|2027-11-09|Two days south; the rose garden; Manny's|stated
+122|2027-11-25|Thursday 25 November 2027|stated
+123|2027-11-23|Tuesday 23 to Thursday 25 November 2027|stated
+124|2027-11-25|Thanksgiving night, the Bear Flag|stated
+125|2027-11-25|The same night|stated
+126|2027-12|December 2027 to April 2028|stated
 """
-BACK_ON_PURPOSE = {42, 57, 61, 64, 74, 75, 89, 136}  # renumbered after edit 255 merged scenes 1 to 4  # scenes the book tells out of order
+BACK_ON_PURPOSE = {35, 47, 51, 54, 63, 64, 78, 123}  # renumbered after edit 267 merged thirteen scenes  # scenes the book tells out of order
 
 
 def D(y, m, d):
@@ -404,7 +391,7 @@ class Book:
     """The built book, line by line, with each line's chapter and scene-sheet row (#).
 
     find(quote) returns (line number, chapter, sheet row) for the nth line holding the quote, and stops the run
-    if the quote is not in the book. Sheet rows are the scene sheet's own numbers (its row 59 is a cut scene)."""
+    if the quote is not in the book. Sheet rows are the scene sheet's own numbers (its row 46 is a cut scene)."""
 
     def __init__(self, book, outdir):
         self.lines = norm(open(book).read()).split("\n")

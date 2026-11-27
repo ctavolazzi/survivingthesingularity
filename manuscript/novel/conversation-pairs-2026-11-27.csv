@@ -1,20 +1,20 @@
 Who,With,Lines traded,Scenes,First,Last,Where
-Elijah,Grace,224,37,Ch 15,Ch 39,"Ch 15, Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 23, Ch 24, Ch 25, Ch 26, Pondwater, Ch 27, Ch 30, Ch 31, Ch 32, Ch 33, Ch 34, Ch 36, Ch 39"
-Elijah,Lou,103,17,Ch 17,Ch 38,"Ch 17, Ch 20, Ch 21, Ch 26, Ch 29, Ch 30, Ch 33, Ch 34, Ch 35, Ch 37, Ch 38"
+Elijah,Grace,226,34,Ch 15,Ch 39,"Ch 15, Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 23, Ch 24, Ch 25, Ch 26, Pondwater, Ch 27, Ch 30, Ch 31, Ch 32, Ch 33, Ch 34, Ch 36, Ch 39"
+Elijah,Lou,103,16,Ch 17,Ch 38,"Ch 17, Ch 20, Ch 21, Ch 26, Ch 29, Ch 30, Ch 33, Ch 34, Ch 35, Ch 37, Ch 38"
 David,Elijah,95,8,Ch 0,Ch 39,"Ch 0, Ch 1, Ch 5, Ch 7, Ch 13, Ch 39"
-Elijah,Ruby,68,4,Ch 8,Ch 10,"Ch 8, Ch 9, Ch 10"
+Elijah,Marta,65,18,Ch 16,Ch 37,"Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 24, Pondwater, Ch 27, Ch 29, Ch 31, Ch 33, Ch 34, Ch 37"
+Elijah,Ruby,63,3,Ch 8,Ch 10,"Ch 8, Ch 9, Ch 10"
 Elijah,the old man,62,2,Ch 15,Ch 17,"Ch 15, Ch 17"
-Elijah,Marta,50,18,Ch 16,Ch 37,"Ch 16, Ch 17, Ch 18, Ch 19, Ch 21, Ch 22, Ch 24, Pondwater, Ch 27, Ch 29, Ch 31, Ch 33, Ch 34, Ch 37"
 Bidwell,Bidwell's reader,44,3,Meanwhile (after Ch 2),Meanwhile (after Ch 23),"Meanwhile (after Ch 2), Meanwhile (after Ch 10), Meanwhile (after Ch 23)"
-Devendra,Elijah,34,6,Ch 1,Ch 37,"Ch 1, Ch 2, Ch 6, Ch 25, Ch 32, Ch 37"
-Denny,Elijah,32,8,Ch 17,Ch 38,"Ch 17, Ch 21, Ch 31, Ch 33, Ch 34, Ch 37, Ch 38"
+Devendra,Elijah,38,6,Ch 1,Ch 37,"Ch 1, Ch 2, Ch 6, Ch 25, Ch 32, Ch 37"
+Denny,Elijah,32,7,Ch 17,Ch 38,"Ch 17, Ch 21, Ch 31, Ch 33, Ch 34, Ch 37, Ch 38"
+Elijah,Gus,31,1,Ch 11,Ch 11,Ch 11
 Ruby,the Architect,30,1,Ch 9,Ch 9,Ch 9
-Elijah,Gus,28,1,Ch 11,Ch 11,Ch 11
 Curtis,Lou,28,9,Ch 19,Ch 38,"Ch 19, Ch 20, Ch 25, Ch 26, Ch 30, Ch 33, Ch 34, Ch 38"
-Grace,Marta,24,8,Ch 16,Ch 38,"Ch 16, Ch 17, Ch 24, Ch 31, Ch 33, Ch 34, Ch 38"
+Elijah,Ma,27,8,Ch 0,Ch 36,"Ch 0, Ch 3, Ch 7, Ch 8, Ch 17, Ch 18, Ch 31, Ch 36"
+Grace,Marta,25,7,Ch 16,Ch 38,"Ch 16, Ch 17, Ch 24, Ch 31, Ch 33, Ch 34, Ch 38"
 Elijah,the moderator,23,1,Ch 8,Ch 8,Ch 8
 Elijah,Priya,22,10,Ch 17,Ch 38,"Ch 17, Ch 19, Ch 21, Ch 22, Ch 26, Ch 27, Ch 29, Ch 31, Ch 38"
-Elijah,Ma,20,8,Ch 0,Ch 36,"Ch 0, Ch 3, Ch 7, Ch 8, Ch 17, Ch 18, Ch 31, Ch 36"
 Lou,Wren,20,3,Ch 20,Ch 33,"Ch 20, Ch 26, Ch 33"
 Elijah,Tyler,19,8,Ch 19,Ch 38,"Ch 19, Ch 22, Pondwater, Ch 27, Ch 32, Ch 34, Ch 37, Ch 38"
 Grace,Priya,18,6,Ch 17,Ch 38,"Ch 17, Ch 22, Ch 26, Ch 30, Ch 34, Ch 38"
@@ -29,25 +29,26 @@ Marta,Tyler,13,5,Ch 19,Ch 33,"Ch 19, Ch 27, Ch 29, Ch 30, Ch 33"
 Lou,Patricia,12,3,Ch 21,Ch 34,"Ch 21, Ch 33, Ch 34"
 Priya,Tyler,12,6,Ch 26,Ch 38,"Ch 26, Ch 27, Ch 33, Ch 38"
 Grace,Tyler,10,5,Ch 19,Ch 38,"Ch 19, Ch 21, Ch 25, Ch 33, Ch 38"
-Lou,Tyler,10,4,Ch 22,Ch 34,"Ch 22, Ch 33, Ch 34"
+Lou,Tyler,10,3,Ch 22,Ch 34,"Ch 22, Ch 33, Ch 34"
 Curtis,Wren,10,4,Ch 23,Ch 38,"Ch 23, Ch 26, Ch 31, Ch 38"
-Elijah,Trent,9,3,Ch 11,Ch 12,"Ch 11, Ch 12"
+Elijah,Reuben,9,4,Ch 19,Ch 38,"Ch 19, Ch 29, Ch 34, Ch 38"
 Elijah,Irene,9,3,Ch 26,Ch 33,"Ch 26, Ch 32, Ch 33"
 Irene,Priya,9,2,Ch 27,Ch 34,"Ch 27, Ch 34"
-Elijah,Reuben,8,3,Ch 19,Ch 38,"Ch 19, Ch 29, Ch 38"
 Curtis,Denny,8,3,Ch 27,Ch 33,"Ch 27, Ch 30, Ch 33"
 Curtis,Marta,7,5,Ch 17,Ch 31,"Ch 17, Ch 19, Ch 22, Ch 27, Ch 31"
 Elijah,Wren,7,5,Ch 20,Ch 37,"Ch 20, Ch 23, Ch 31, Ch 37"
 Grace,Irene,7,4,Ch 30,Ch 38,"Ch 30, Ch 32, Ch 34, Ch 38"
 Elijah,the realtor,6,1,Ch 0,Ch 0,Ch 0
+Elijah,Trent,6,2,Ch 11,Ch 12,"Ch 11, Ch 12"
 Lou,Praether,6,1,Ch 17,Ch 17,Ch 17
-Denny,Marta,6,6,Ch 17,Ch 34,"Ch 17, Ch 27, Ch 29, Ch 33, Ch 34"
+Denny,Marta,6,5,Ch 17,Ch 34,"Ch 17, Ch 27, Ch 29, Ch 33, Ch 34"
 Denny,Priya,6,5,Ch 17,Ch 34,"Ch 17, Ch 21, Ch 26, Ch 31, Ch 34"
 Lou,Priya,6,6,Ch 19,Ch 26,"Ch 19, Ch 21, Ch 22, Ch 23, Ch 26"
 Denny,Reuben,6,3,Ch 23,Ch 33,"Ch 23, Ch 31, Ch 33"
 Elijah,Frank,6,3,Ch 25,Ch 38,"Ch 25, Ch 38"
 Priya,Wren,6,4,Ch 26,Ch 38,"Ch 26, Pondwater, Ch 33, Ch 38"
 Curtis,Irene,6,3,Ch 30,Ch 34,"Ch 30, Ch 33, Ch 34"
+Ma,the moderator,5,1,Ch 8,Ch 8,Ch 8
 Patricia,Tyler,5,2,Ch 19,Ch 38,"Ch 19, Ch 38"
 Irene,Marta,5,3,Ch 23,Ch 34,"Ch 23, Ch 29, Ch 34"
 Denny,Wren,5,2,Ch 26,Ch 34,"Ch 26, Ch 34"
@@ -55,6 +56,7 @@ Lupe,Marta,5,3,Ch 28,Ch 34,"Ch 28, Ch 29, Ch 34"
 Patricia,Priya,5,2,Ch 33,Ch 34,"Ch 33, Ch 34"
 Elijah,the Architect,4,2,Ch 3,Ch 39,"Ch 3, Ch 39"
 Denny,Lou,4,2,Ch 17,Ch 33,"Ch 17, Ch 33"
+Lou,Marta,4,3,Ch 17,Ch 33,"Ch 17, Ch 33"
 Elijah,Rosa,4,3,Ch 17,Ch 30,"Ch 17, Ch 27, Ch 30"
 Grace,Reuben,4,2,Ch 23,Ch 38,"Ch 23, Ch 38"
 Priya,Reuben,4,4,Ch 23,Ch 38,"Ch 23, Ch 33, Ch 34, Ch 38"
@@ -64,7 +66,6 @@ Frank,Marta,4,2,Ch 27,Ch 34,"Ch 27, Ch 34"
 Irene,Tyler,4,2,Ch 27,Ch 32,"Ch 27, Ch 32"
 Tyler,Wren,4,2,Ch 32,Ch 34,"Ch 32, Ch 34"
 David,the Architect,4,1,Ch 39,Ch 39,Ch 39
-Lou,Marta,3,2,Ch 17,Ch 33,"Ch 17, Ch 33"
 Curtis,Rosa,3,1,Ch 17,Ch 17,Ch 17
 Curtis,Reuben,3,3,Ch 23,Ch 34,"Ch 23, Ch 31, Ch 34"
 Denny,Tyler,3,2,Ch 25,Ch 33,"Ch 25, Ch 33"
@@ -92,7 +93,7 @@ Ma,the Architect,1,1,Ch 3,Ch 3,Ch 3
 Elijah,Ray,1,1,Ch 5,Ch 5,Ch 5
 David,Ray,1,1,Ch 5,Ch 5,Ch 5
 Elijah,Nina,1,1,Ch 6,Ch 6,Ch 6
-Ma,the moderator,1,1,Ch 8,Ch 8,Ch 8
+Gus,Trent,1,1,Ch 11,Ch 11,Ch 11
 Lou,Ma,1,1,Ch 17,Ch 17,Ch 17
 Praether,the old man,1,1,Ch 17,Ch 17,Ch 17
 Ma,Marta,1,1,Ch 18,Ch 18,Ch 18

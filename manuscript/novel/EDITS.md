@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 266 (27 Nov, the fourteenth chat), logged only. The next edit is 267.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 267 (27 Nov, the fourteenth chat), logged only. The next edit is 268.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3976,6 +3976,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      later Wes sent a link." becomes "A bit later Wes sent a link." Logged only.
 266. **Chapter 2: the fence line out.** CT: "Remove 'all you have to build is the fence'". Elijah's line to Devendra now
      ends "It just stopped being theirs." Logged only.
+267. **Chapters 2 to 34: thirteen scene breaks out.** CT, 27 Nov: "I feel still like there's too many [breaks] especially
+     early on." Claude listed the 15 of 93 where nothing jumps (same place, minutes later, or the next line picks up the
+     same moment); CT: "Go" on the 13 outside the ending. Out: Ch 2 (after Wes's "is this true"), Ch 6 ("Sometime after
+     two"), Ch 7 (the truck outside the bar), Ch 8 (the STAFF door), Ch 9 ("They didn't stay for dinner."), Ch 10 ("Elijah
+     walked out to his truck"), Ch 11 (the cannery dock), Ch 16 ("He swept until the sun was low."), Ch 17 ("The real
+     fight" and "In the kitchen trailer"), Ch 22 ("Marta did not raise her voice."), Ch 33 ("They walked out to the beds
+     afterward"), Ch 34 ("Afterward the kitchen trailer"). Kept for CT's call: Ch 37 (the gravel) and Ch 39 (the
+     television). 126 scenes now; the scene sheet and story sheets merged to match. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

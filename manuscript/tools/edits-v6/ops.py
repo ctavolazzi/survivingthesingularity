@@ -1599,6 +1599,21 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (265, 'A minute later Wes sent a link.', 'A bit later Wes sent a link.'),
 # 266, Ch 2: "All you have to build is the fence." out (CT, 27 Nov, fourteenth chat)
 (266, 'It just stopped being theirs. All you have to build is the fence."', 'It just stopped being theirs."'),
+# 267, Ch 2 to 34: thirteen scene breaks out where nothing jumps (CT, 27 Nov: "I feel still like there's too many
+# especially early on"; Claude's list, CT's "Go")
+(267, 'to do it, but he never got the chance.\n \nIn the shuffle afterward,', 'to do it, but he never got the chance.\nIn the shuffle afterward,'),
+(267, 'He dried the pan and went to bed.\n \nSometime after two the phone', 'He dried the pan and went to bed.\nSometime after two the phone'),
+(267, 'around the bar and picked up the knife.\n \nElijah sat in the truck with the engine off.', 'around the bar and picked up the knife.\nElijah sat in the truck with the engine off.'),
+(267, 'She took her coffee back into the hall.\n \nHe went out a side door that said STAFF', 'She took her coffee back into the hall.\nHe went out a side door that said STAFF'),
+(267, 'Ruby said. "She didn\'t like that."\n \nThey didn\'t stay for dinner.', 'Ruby said. "She didn\'t like that."\nThey didn\'t stay for dinner.'),
+(267, 'on him standing in all that white.\n \nElijah walked out to his truck,', 'on him standing in all that white.\nElijah walked out to his truck,'),
+(267, 'sat there with the bag in his hand.\n \nThey backed up to the cannery dock', 'sat there with the bag in his hand.\nThey backed up to the cannery dock'),
+(267, 'she said. "Swarf goes in the red bin."\n \nHe swept until the sun was low.', 'she said. "Swarf goes in the red bin."\nHe swept until the sun was low.'),
+(267, 'his glass an inch and put it down.\n \nThe real fight started over something small.', 'his glass an inch and put it down.\nThe real fight started over something small.'),
+(267, 'termites, and went back to her bench.\n \nIn the kitchen trailer Lou set the crate', 'termites, and went back to her bench.\nIn the kitchen trailer Lou set the crate'),
+(267, 'let me say that," Marta said. "Ours."\n \nMarta did not raise her voice.', 'let me say that," Marta said. "Ours."\nMarta did not raise her voice.'),
+(267, 'agree with her. He said it anyway.\n \nThey walked out to the beds afterward', 'agree with her. He said it anyway.\nThey walked out to the beds afterward'),
+(267, 'Reuben said, turning a page. "Toilets."\n\nAfterward the kitchen trailer was full', 'Reuben said, turning a page. "Toilets."\nAfterward the kitchen trailer was full'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

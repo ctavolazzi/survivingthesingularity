@@ -276,4 +276,5 @@ C=[
 (268, 'Ch 3', ['Grad students, caffeine, conference deadlines.'], ['Grad students, coffee, conference deadlines.']),
 (269, 'Ch 4', ["Sitting there at the witching hour when the bars normally closed, with the sun's wattage"], ['Sitting there at 1 a.m.']),
 (270, 'Ch 4', ["and stacking guesses doesn't get you truth. It gets you a mural of knowledge."], ["doesn't get you knowledge."]),
+(271, 'Ch 5', ['So before he could ruin it he bought the Bear Flag,'], ['So before the next weekend he bought']),
 ]

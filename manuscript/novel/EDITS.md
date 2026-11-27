@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 270 (27 Nov, the fourteenth chat), logged only. The next edit is 271.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 271 (27 Nov, the fourteenth chat), logged only. The next edit is 272.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3991,6 +3991,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      bars normally closed, with the sun's wattage" (the comma is Claude's). Logged only.
 270. **Chapter 4: truth.** CT: "Change to and stacking guesses doesn't get you truth." and, asked, "The mural of
      knowledge stays". Now: "and stacking guesses doesn't get you truth. It gets you a mural of knowledge." Logged only.
+271. **Chapter 5: before he could ruin it.** CT: "Change to 'so before he could ruin it he bought...'". "So before the next
+     weekend he bought the Bear Flag," becomes "So before he could ruin it he bought the Bear Flag,". Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

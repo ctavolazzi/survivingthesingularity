@@ -478,6 +478,16 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 - A clause that can attach to the wrong noun gets a comma and a subject: "The shop I went to after the plant bought a
   robot welder" read as the plant buying it; "At the shop I went to after the plant, they bought a robot welder".
 
+## 15c. Learned 27 November (the smell chat)
+
+- **No absolutes where one can't be true.** Claude drafted "the delivery bag, which held on to every order he'd ever
+  carried." CT made it "which had held on to just about every order he'd ever carried," and said: "We can't be too
+  absolute in situations that don't actually seem feasible for absolution. Remember, only a Sith deals in absolutes.
+  Human ambiguity is important but not 100% necessary." (Dictated "only a fifth deals and absolute"; the Star Wars
+  line is plain.) So: when a line says every, all, never or always about something nobody could know or that couldn't
+  be literally true, soften it the way he does ("just about", "more or less", section 5). Not a sweep: an absolute
+  that is true, or one a character means, stays. He was clear this is for lines going forward, not another pass.
+
 ## 15b. Learned 26 and 27 November (the Riemann and Praether chat, edits 229 and 230)
 
 - A real event goes in at its real date. CT: "it can go in the proper timeline in the book with real life." Look the
@@ -520,4 +530,5 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 | "I still get letters" | "we don't know what kind of letters ... make things clear" | "weird letters" |
 | a first draft of these instructions that called every rule his | the audit | rules marked his or **[C]**; sections 5, 6, 9, 11, 12 and 15 added |
 | a synopsis check from grepped lines; "Ray's was horses" | "you're just giving me what you think I want ... actually read the book" | read the chapters, then answer claim by claim; `find_in_book.py` and a claims file |
+| "the delivery bag, which held on to every order he'd ever carried" (smell pass draft, 27 Nov) | "which had held on to just about every order ... only a Sith deals in absolutes" | soften an absolute that can't be literally true (15c) |
 | Irene's advice in edit 221: "They weren't there about the pivot ... They wanted to know"; "Just don't tell yourself afterward it was free." | (caught in Claude's own review before CT read it) | the mirrored shape and the quotable closer creep into an elder's advice; say the plain thing ("what they wanted to know was ..."; "some of them won't stay") |

@@ -523,6 +523,15 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   woman and Grace are kind to him anyway, and that is left as it is. `smell-table-2026-11-27.md` has every smell,
   whose words it is, and the places still open.
 
+## 15f. Learned 27 November (seventeenth chat)
+
+- **Read the sentence after a line you place. [C]** Edit 290 put CT's "Elijah did not like the corporate bobbleheading,
+  but he did enjoy the money." straight before "Elijah worked out of a satellite office". The repeat was offered as a fix
+  after the edit was logged. CT: "He did not like the corporate bobbleheading" instead of "Elijah did not like", "since
+  the next sentence starts with Elijah". Two neighbouring sentences that open on the same name are the opener problem
+  (section 10), even when the first one is his line. Before logging a placed line, read the opener of the line after it,
+  and offer the pronoun then.
+
 ## 15e. Learned 27 November (sixteenth chat, the senses pass)
 
 - **A scene without a smell is not a gap.** The readers flagged 20 strong scenes with no smell or taste; on reading,
@@ -588,3 +597,4 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 | Grace backs out of his truck "with a bag of junk in one hand and the sock in the other" (smell chat draft) | "The sock? She's not gonna pull a cum sock out of the fucking truck. Come on, bro." | the sock out of her hand; read a prop the way a reader will (15c) |
 | "She backed out of the cab with a bag of junk" (smell chat draft) | "who says it's junk? Who's making that determination?" | "an armful of clothes"; a judging noun needs a judge (15c) |
 | Irene's advice in edit 221: "They weren't there about the pivot ... They wanted to know"; "Just don't tell yourself afterward it was free." | (caught in Claude's own review before CT read it) | the mirrored shape and the quotable closer creep into an elder's advice; say the plain thing ("what they wanted to know was ..."; "some of them won't stay") |
+| "Elijah did not like the corporate bobbleheading, but he did enjoy the money." placed right before "Elijah worked out of a satellite office" (edit 290, his words) | "He did not like the corporate bobbleheading" instead, "since the next sentence starts with Elijah" (27 Nov, seventeenth chat) | the first sentence takes the pronoun; read the opener of the line after a placed line (15f) |

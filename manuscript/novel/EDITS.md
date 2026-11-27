@@ -4098,7 +4098,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      corporate bobbleheading, but he did enjoy the money.\"" Placed by Claude after "He'd underlined it twice and gone
      back to nodding." (the Claypot meeting, where the nodding is), in the same paragraph. Searched: "bobble" is nowhere
      else; "corporate" once (Ch 16, Lou). CT's words. Check rows 255 and 289 loosened (CT's line now follows "nodding.").
-     Logged only.
+     Corrected in place, 27 Nov (seventeenth chat), on CT's word: "He did not like the corporate bobbleheading" instead
+     of "Elijah did not like", since the next sentence starts with "Elijah". The rest of the line is unchanged. Logged
+     only.
 291. **Chapter 0: a champagne appetite on a beer budget.** CT, "Right after": "His dad always said he had a champagne
      appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could
      rub that in his dad's face." In the same paragraph, after edit 290's line. Searched: champagne, caviar, "beer

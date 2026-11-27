@@ -523,6 +523,12 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   woman and Grace are kind to him anyway, and that is left as it is. `smell-table-2026-11-27.md` has every smell,
   whose words it is, and the places still open.
 
+## 15d. Learned 27 November (fifteenth chat)
+
+- **A repeated gesture can be the person.** Claude flagged Ruby's two shrugs in Chapter 10 as a repeat to cut. CT:
+  "Neither of them go. He's a shrugger. But maybe we can say he shrugged again." Before cutting a gesture that comes
+  back, ask whether it is that person's habit. If it is, keep both and let "again" own it.
+
 ## 15b. Learned 26 and 27 November (the Riemann and Praether chat, edits 229 and 230)
 
 - A real event goes in at its real date. CT: "it can go in the proper timeline in the book with real life." Look the

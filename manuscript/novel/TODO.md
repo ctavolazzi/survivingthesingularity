@@ -117,6 +117,9 @@ Need CT's yes:
       27 Nov, smell chat: his two places logged (edit 235, the truck, Ch 15; edit 236, the party, Ch 9). Every smell
       on the page, whose words it is, and the places still open (the cooked plugs, Ch 21; Priya's pits, Ch 26; the two
       memory spots, Ch 24 and Ch 27) are in `smell-table-2026-11-27.md`, last column his. Open until he rules on those.
+- [ ] The story checks (CT, 27 Nov): the calendar is done (`calendar-2026-11-27.md`). To build, in this order: the
+      money, objects, plants and payoffs, the five senses in one table (which may take the place of the taste pass).
+      Plan and rules in `CHECKPOINT-2026-11-27-smell.md`, item 7.
 - [ ] The taste pass, in its own chat (CT, 27 Nov: "The next sense for the next session is taste"). Prompt in
       `CHECKPOINT-2026-11-27-smell.md`. Done the way the smell pass was: his lines first (ask him for them), a short
       table, each line shown before it is logged. Seven tastes on the page now (that checkpoint lists them).

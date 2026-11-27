@@ -37,6 +37,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | Each edit: who said what, Book now, Change to | `EDITS.md` (summary) and `drafts/chapter-NN.md` (full text, CT's words in bold) |
 | Edit status against the Doc | `EDITS-status.md` (written by verify.py) |
 | Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)" (`1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`). Rebuilt by `knowledge.py` |
+| When every scene happens, and what a calendar can test | `calendar-2026-11-27.md` and its two CSVs; Google Sheet `1p1IZDCCkdvO7tK9oFlvQhj3zf4-qg7TamU4Cd2nD3HA`. Rebuilt by `story_checks.py calendar` |
 | What happens in each chapter | `PLAN-CHAPTERS-20-TO-36.md`, sections 6 and 11 (11 wins for 27 to 36) |
 | Arcs, quarrels, the chain of cause | the plan, section 10 |
 | Every open question and its decision | the plan, section 12; anything still CT's is in `TODO.md`, section 1 |
@@ -164,6 +165,7 @@ for what it is ("v7" is taken by a frozen side copy).
 | `python3 manuscript/tools/edits-v6/openers.py OUT/v6.txt [--ch 20-36]` | The sentence-opening checker: runs of sentences that open with the same word, runs of pronoun-or-name openers, paragraphs one opener dominates |
 | `python3 manuscript/tools/edits-v6/whose_words.py V5_READ.json "phrase" ["phrase"]` | Where a line came from: the v5 Doc, an ops row, which edit in `EDITS.md` quotes it, which `drafts/` files. Run it before calling a line CT's or Claude's |
 | `python3 manuscript/tools/edits-v6/knowledge.py OUT/v6.txt manuscript/novel --date YYYY-MM-DD` | The knowledge sheet: who knows, suspects or has wrong each of 35 secrets, by chapter and by phase. Its `FACTS` list is the only hand-written part; a quote no longer in the book stops the run |
+| `python3 manuscript/tools/edits-v6/story_checks.py calendar OUT/v6.txt manuscript/novel --date YYYY-MM-DD` | The calendar: a date for each of the 137 scenes, the time words on the page, and 28 checks (weekdays, intervals, ages). It stops if the scene count changes or a quoted line is gone. Money, objects, plants and payoffs, and the senses are to be added as further commands |
 | `python3 manuscript/tools/book.py cast` | Rebuilds the character folders |
 | `node scripts/sts-bridge.mjs status` | Which Doc is CURRENT |
 

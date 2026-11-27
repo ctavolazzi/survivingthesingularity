@@ -31,6 +31,14 @@ CT: "Get ready to close out this session. The next sense for the next session is
    - **The knowledge sheet** (who knows what, and when): `knowledge-sheet-2026-11-27.md`, three CSVs, the tool
      `knowledge.py`, and the Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)"
      (`1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`). 35 secrets, 113 lines of evidence, eight findings for him.
+   - **Five story checks** (CT, 27 Nov: "what other spreadsheets could we use ... filling any holes, finding any
+     gaps"). Order agreed: the calendar, the money, objects, plants and payoffs, all five senses in one table. Each
+     ends in a short findings list with the smallest fix to text already there (CT: "if we need to add more scenes,
+     we can. But at this point, I'd rather just revise what we already have"); a hole that only a scene can close is
+     flagged for him. **Done: the calendar** (`calendar-2026-11-27.md`, `story_checks.py calendar`, Google Sheet
+     `1p1IZDCCkdvO7tK9oFlvQhj3zf4-qg7TamU4Cd2nD3HA`): 23 checks hold, 3 known slips do not, 2 new ones to read, and
+     Elijah's age turns out to be consistent and to set his birthday between about 3 March and mid May. **Next: the
+     money.** Build each as a new command in `story_checks.py`, from the page, the way `knowledge.py` is built.
    - **Two more smell lines drafted and shown, not logged** (he asked for the drafts and has not said to log them):
      Ch 25, after "So did I.": "The heat came out the door at him with celery and butter in it, and a pot of turkey
      necks going for the gravy. Ma put hers on the night before, too." (all Claude's; invented: celery, butter, the
@@ -54,7 +62,8 @@ From this chat:
 
 5. The eight findings at the foot of `knowledge-sheet-2026-11-27.md` (first among them: Grace never says "why did
    you pretend to be poor", and the fire never mentions the hiding).
-6. The Ch 25 and Ch 27 smell drafts (log them or not), and the birthday plan (how Grace finds out; then the scene
+6. The five findings in `calendar-2026-11-27.md` (three known slips with a smallest fix each, two new to read).
+7. The Ch 25 and Ch 27 smell drafts (log them or not), and the birthday plan (how Grace finds out; then the scene
    moves to spring 2026).
 
 Everything older is in `CHECKPOINT-2026-11-27-eleventh.md`, "Open with CT".

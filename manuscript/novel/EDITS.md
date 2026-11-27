@@ -3855,7 +3855,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 241. **Chapter 33: "She had never said it boldly to his face."** In place of "She had never said it before.", after
      Grace's "I love you. I'm not helping you scare people." at the tomato dinner. CT (27 Nov): "Yes she had never
      said it boldly to his face is good." It makes room for the whisper in the scene he dictated the same night
-     (`next-version-scenes-2026-11-26.md`, section 7), wherever that scene is placed. "Boldly" is his word.
+     (`next-version-scenes-2026-11-26.md`, section 7), wherever that scene is placed. "Boldly" is his word. Record:
+     `manuscript/novel/drafts/edit-241-boldly.md`.
      104,977 words in the chapters. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like

@@ -16,11 +16,11 @@ when another chat's edits 229 and 230 were merged from the same branch. That cha
 scene in Chapter 17, which settled three of the places this pass had (the lien-sale timing, "They put cans in boxes.",
 who drives the loader); three items from its fix list were added here.
 
-**What it is.** 30 places, all line fixes: a word, a phrase, a cut sentence, or one added sentence where the page had a
+**What it is.** 31 places, all line fixes: a word, a phrase, a cut sentence, or one added sentence where the page had a
 setup with no payoff. No new scenes. All the wording is Claude's except where noted. The readers found no filler scene
 to cut; the whittling CT wants starts from what feels long to him when he reads. Logged only; not in the v8 Doc.
 
-## The 30 places
+## The 31 places
 
 ### Ch 0
 
@@ -152,6 +152,14 @@ The same: Marta answers his hundred.
 
 ### Ch 31
 
+Book now: ""I'm just noticing there's a lot of urgency in the room," said Wren. She said it kindly. She put her palm on her own chest. "You keep saying June.""
+
+Change to: ""I'm just noticing there's a lot of urgency in the room," said Wren. She said it kindly. "You keep saying June.""
+
+Found by the review of these edits: Rosa's palm on his chest (CT's, edit 232) now comes a page before it, in the same chapter. His line stays; this one goes. Wren's hand on her chest is still there in Ch 20, 23, 32, 33, 37 and 38. The sentence is from the 19 Nov text.
+
+### Ch 31
+
 Book now: "Yvonne's on nights so I can do it.""
 
 Change to: "Yvonne's on nights so I can do it. My daughter asked me last week what I get paid.""
@@ -210,7 +218,7 @@ Chapter 20 has him in the car only his first year; when the Ukiah hospital put h
 
 Book now: ""My last year at the plant, they bought a robot welder," she said."
 
-Change to: ""The shop I went to after the plant bought a robot welder," she said."
+Change to: ""At the shop I went to after the plant, they bought a robot welder," she said."
 
 In Chapter 16 Marta's point is "There was no machine. There was a spreadsheet and a tax break.", and Chapter 33 has "four men and a tax break". The welder is at the shop she worked at after the plant.
 
@@ -269,7 +277,8 @@ He is in six chapters and holds the arms at the end (Ch 37), and the cast list h
 - Denny's daughter asked him last week what he gets paid (Ch 31).
 - The Ohio machinist comes up in June 2027 with his family (not named or counted) and his father's tools (Ch 33).
 - Lou said the Our Father in the back seat before her shift (Ch 33), as Chapter 38 already has it.
-- Marta worked at another shop after the plant, and that shop bought the welder (Ch 34).
+- Marta worked at another shop after the plant, and that shop bought the welder (Ch 34). First written as "The shop I went
+  to after the plant bought a robot welder", which reads as the plant buying it; the review caught it.
 - Elijah fixes Irene's bottom step with a hammer in festival week (Ch 36).
 
 ## Touches other chapters

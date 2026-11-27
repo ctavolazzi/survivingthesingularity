@@ -3640,7 +3640,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      eating. "I trust you'll do the same." / He thought about it, and lingered a minute. "Is this too good to be true?" /
      "What? You want something?" / He raised his eyebrows and blinked a few times. "No, I'm good." / "Great. Close the
      door on your way out, would you?" After "she let the six lines be all of it.", before "Marta gave him the floor."
-     Claude's: "One night, when his plate was empty, she sat down across from him with her own." (Rosa can't send him
+     Claude's: "One night, when he had finished, she sat down across from him with a plate of her own." (Rosa can't send him
      in his first days: she lives in town, wrist in a brace, and he meets her on the route weeks later.) "Stay here for
      free" is the room, as her message has it; the pay still goes to the table (Ch 16, 26). 186 words in. Record:
      `manuscript/novel/drafts/edit-231-232-grace-and-rosa.md`. Logged only; not in the v8 Doc yet.
@@ -3662,13 +3662,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 233. **The finishing pass (Ch 0 to the Appendix).** CT (26 Nov, eleventh chat): "Send out readers ... to finish the
      story arc, to finish the narratives, to finish the characters, to finish everything. After this, if possible, I
      don't really want to change or add anything." Seventeen readers, 69 gaps, 33 verified on the page, a plan judged
-     from three and checked by a critic. 30 line fixes, all Claude's wording: Ch 0 "Elijah said it once to Wes" and
+     from three and checked by a critic. 31 line fixes, all Claude's wording: Ch 0 "Elijah said it once to Wes" and
      "didn't know him"; Wes's *is this true* back in the Ch 6 and Ch 13 replays; Ch 17 Lou's cover a gift (Grace's line
      out, the secrecy now said once, by Lou at the barn), Priya's pencil back behind her ear; Ch 18 "Grace and Elijah" and
      "Good. Keep it that way." out; Ch 26 "That was in the first notebook" (he heard the Architect's answer in Ch 9) and the July
      coffee "at the kitchen trailer"; Ch 27 "in June" out of the pledge, Tyler's reading covers the boxes, and a scene break between the two
      Fridays; Ch 29
-     "delivery time"; Ch 31 "A hundred strangers" twice and Denny's daughter; Ch 32 "a whole file", "six years" out,
+     "delivery time"; Ch 31 "A hundred strangers" twice, Denny's daughter, and Wren's palm on her chest out (Rosa's
+     comes a page before it); Ch 32 "a whole file", "six years" out,
      the second "Halve it" out, "till June" out; Ch 33 the Ohio machinist's household and Lou's back seat "before her
      shift"; Ch 34 Marta's welder at the shop after the plant, "What guy?", "found the price list"; Ch 36 Irene's step
      and "Two years before ... eight feet" out; Ch 39 "A while later"; Praether in the Appendix. Rows 197, 205 and 220

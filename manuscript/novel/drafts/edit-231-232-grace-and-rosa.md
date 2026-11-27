@@ -58,7 +58,7 @@ pay." / "It has to go to the table", Ch 16) still goes to the table and is voted
 
 ## 1. Edit 231, Chapter 17 (after "she let the six lines be all of it.", before "Marta gave him the floor.")
 
-One night, when his plate was empty, she sat down across from him with her own.
+One night, when he had finished, she sat down across from him with a plate of her own.
 
 **"How are you liking your bed? Is it comfy enough?"**
 
@@ -131,5 +131,9 @@ serving", not cooking: in February her wrist is still in the brace (Ch 30), and 
   chapters apart. Both stay; it is CT's to say whether that is weight or a repeat.
 - It can no longer be "one of the first reasons why Elijah and Grace talk": by Chapter 31 they have talked for two
   years. The first-days talk is in Chapter 17 instead.
+
+After review (same day): the first sentence was "One night, when his plate was empty, she sat down across from him
+with her own."; "empty" repeated the line before it ("stood there until it was empty"). Rosa's palm on his chest is
+kept as he said it; Wren's "She put her palm on her own chest.", a page later in Chapter 31, is cut instead (edit 233).
 
 Words: 186 in (231), 160 in (232), none out.

@@ -7,7 +7,7 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 hypothesis at Friday dinner, RSI, and Grace's promise (Ch 27); edit 230, Praether's terms and Lou at the barn (Ch 17,
 18); its fix list and prompt are in `CHECKPOINT-2026-11-26-riemann-praether.md`. The other (eleventh): edit 228, Lou's
 heavier entrance (end of Ch 16); edits 231 and 232, CT's held dictation placed (Grace's talk about the bed in Ch 17,
-Rosa and the ladle opening Ch 31, `drafts/edit-231-232-grace-and-rosa.md`); edit 233, the finishing pass, 30 line
+Rosa and the ladle opening Ch 31, `drafts/edit-231-232-grace-and-rosa.md`); edit 233, the finishing pass, 31 line
 fixes from seventeen readers (`drafts/finishing-2026-11-27.md`), which also does items 1 to 3 of that fix list. CT:
 "After this, if possible, I don't really want to change or add anything. It's now about more just refining, revising,
 deleting, buffing out the hard spots, polishing." The book in the Docs is "StS v8 draft (Nov 26)" (edits 1 to 223; no pictures), with a locked

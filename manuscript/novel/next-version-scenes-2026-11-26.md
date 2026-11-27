@@ -803,3 +803,24 @@ smell of the cab is edit 235), "It took him a second to work out that", "She bac
 page a line earlier), "She looked him over", "She ducked back into the cab". "Better than anyone he had ever smelled"
 is an absolute he means, so it stays (15c). It answers the perfume of Chapters 8 and 9: the women in the city wear
 it; Grace doesn't.
+
+### An echo with Marta ("Pondwater"). CT, same night. His words, as sent:
+
+We could echo this scene with a line in his conversation with Marta, where she's like, you like her, don't you? And he could say, Marta, forgive me if this is weird. And Marta braces for impact. But then he just says, she smells better than anyone I've ever known. And she doesn't even wear deodorant. And Marta will just say, pheromones. You two have chemistry.
+
+### The draft. **His words are in bold.**
+
+"Pondwater", at the roll-up door. The book has Marta's "Oh. You still like her.", his "I," he said. "She's. She's very
+intelligent.", his face going red, and Marta's "Very intelligent," she said. "Okay, spreadsheet." All of that stays.
+New, after "Okay, spreadsheet." and before "Something in her shoulders let go.":
+
+> "**Marta, forgive me if this is weird.**"
+>
+> **Marta braced for impact.**
+>
+> "**She smells better than anyone I've ever known. And she doesn't even wear deodorant.**"
+>
+> "**Pheromones,**" Marta said. "**You two have chemistry.**"
+
+Then, as now: "Something in her shoulders let go." Her shoulders letting go now follows "chemistry", which is where her
+guard comes down. All of it is his; Claude added only "Marta said". "Doesn't even wear deodorant" is a new fact, his.

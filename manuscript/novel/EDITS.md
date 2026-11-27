@@ -4006,7 +4006,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      stopped it. Two minutes and eleven seconds.", and his message, "It's two minutes. Please just watch it." Denny's
      "four minutes" of shouse footage (Ch 27) is left as it is. Logged only.
 276. **Chapter 7: the most affirming thing.** CT, word for word: "It was the most affirming thing anyone had said to him
-     since this started." In place of "It was the nicest thing anybody had said to him all year." Logged only.
+     since this started.", then "It's better if it's since this began, actually." Now: "...since this began." In place of "It was the nicest thing anybody had said to him all year." Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

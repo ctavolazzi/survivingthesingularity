@@ -791,9 +791,9 @@ she pulled the blanket off the floor on the passenger side and stopped.":
 >
 > She **looked behind her from inside the truck.** "**Perfume?**" Then: "**Oh. You really are new to this, aren't you?**"
 >
-> She backed out of the cab with **an armful of clothes.** "**I don't wear perfume. Very few people out here do.**" She looked him over. "**You from the city? What's your story?**"
+> She backed out of the cab with **an armful of clothes.** "**I don't wear perfume. Very few people out here do.**" She looked him over. "**You from the city? What's your deal?**"
 >
-> "**Oh, you want to know my story?**" Elijah said. "**How much time you got?**"
+> "**Oh, you want to know my backstory?**" Elijah said. "**How much time you got?**"
 >
 > She ducked back into the cab.
 
@@ -814,6 +814,10 @@ smelled before." He said "it was Grace" and then "It must be Grace"; the second 
 
 Corrected again (CT: "With a bag of junk, who says it's junk? Who's making that determination? With a pile of
 clothes, with an armful of clothes,"): "a bag of junk" is "an armful of clothes" (his last version).
+
+And again (CT: "Instead of him saying my story, she's like, you from the city? What's your deal? And then he
+responds, oh, you want to know my backstory? Elijah says, how much time you got?"): "What's your story?" is "What's
+your deal?" and "my story" is "my backstory".
 
 ### An echo with Marta ("Pondwater"). CT, same night. His words, as sent:
 

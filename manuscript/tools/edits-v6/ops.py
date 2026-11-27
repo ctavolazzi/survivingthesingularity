@@ -1593,6 +1593,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (262, 'They announced the future on a Thursday morning, with pastries.', 'They announced the future like it was a regular morning, with pastries and free juice.'),
 # 263, Ch 2: the baby robot and the car factory (CT, 27 Nov, fourteenth chat)
 (263, 'The realtors had watched a demonstration. This was the factory, and he had helped build it.', 'The realtors had watched a demonstration of a tiny baby robot. This was more like a car factory, and he had helped build it.'),
+# 264, Ch 1: why the tower stayed off, and the click (CT's reasons and thought, Claude's joins; shown and approved, 27 Nov)
+(264, "He left the tower off for a week, and when he opened the notebook where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean page and started writing.", 'He left the tower off for a week while he processed things, kept up with his day job and tried not to go off the deep end.\nThen one day he was pacing around his apartment, talking himself through yet another read of "Attention Is All You Need," and it clicked.\nThis scales up forever, he thought. Is there really no limit? That can\'t be right.\nHe opened the notebook where he\'d scrawled MADRONE IS NOT A DRONE, turned to a clean page and started writing.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

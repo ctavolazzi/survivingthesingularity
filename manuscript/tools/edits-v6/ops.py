@@ -1616,6 +1616,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (267, 'Reuben said, turning a page. "Toilets."\n\nAfterward the kitchen trailer was full', 'Reuben said, turning a page. "Toilets."\nAfterward the kitchen trailer was full'),
 # 268, Ch 3: caffeine for coffee (CT, 27 Nov, fourteenth chat)
 (268, 'Grad students, coffee, conference deadlines.', 'Grad students, caffeine, conference deadlines.'),
+# 269, Ch 4: the witching hour (CT, 27 Nov, fourteenth chat)
+(269, "Sitting there at 1 a.m. with the sun's wattage", "Sitting there at the witching hour when the bars normally closed, with the sun's wattage"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

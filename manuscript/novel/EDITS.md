@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edit 288 (27 Nov, the fifteenth chat), logged only. The next edit is 289.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 and 289 (27 Nov, the fifteenth chat), logged only. The next edit is 290.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4085,6 +4085,15 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 288. **Chapter 10: Ruby shrugged again.** Ruby shrugs twice in Chapter 10, on the fire escape ("He shrugged with one
      shoulder.") and at the elevator. CT: "Neither of them go. He's a shrugger. But maybe we can say he shrugged again."
      Now "\"Suit yourself, man,\" Ruby shrugged again, the fur of his magnificent jacket ...". CT's words. Logged only.
+289. **Chapter 0: the name block moved.** Claude's proposal, shown in full, CT: "Yes, log it". No words added or cut.
+     The bar scene goes straight from "He had never actually read what was inside it." to "You should know how he got
+     there ..."; the name, "Mad" since eight, the grandmother and "That's your tree" open the backstory, before "Elijah
+     had grown up on a working farm"; "The other meaning of his name ..." with MADRONE IS NOT A DRONE and "He'd underlined
+     it twice and gone back to nodding." go to Claypot, after "Weather that never really cleared up." Why: Claypot was
+     named a page before the book introduces it, the theme ("burn to the ground and come back from the root") was stated
+     in the sixth paragraph, and the backstory broke into the bar scene. Still before their payoffs: "Mad" (David, that
+     night), the tree ("the man named for a tree"), the notebook (Ch 1). Check row 255 loosened (its "nodding" now meets
+     the satellite office). Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

@@ -260,7 +260,8 @@ C=[
 (252, 'Ch 0', ['not "Actually Indians" typing behind the scenes', '\nIt was genuinely thinking.\nNot very well at first, but Elijah had not only watched its capacity to think get better, he had helped it'], []),
 (253, 'Ch 0', ['Elijah put a twenty on the bar.\n"Your money'], ['David slid it back across the wood.\n"Your money']),
 (254, 'Ch 0', ['quietly replaced the heart of machine intelligence.'], ['quietly replaced the engine of machine intelligence.']),
-(255, 'Ch 0', ['gone back to nodding.\nYou should know', 'no such patience.\nPorusAI was the other kind', 'paying close attention.\nThere were three of them'], []),
+# 255 loosened at edit 289 (the notebook moved to Claypot): "nodding." is now followed by the satellite office, still no break.
+(255, 'Ch 0', ['gone back to nodding.\nElijah worked out of a satellite office','no such patience.\nPorusAI was the other kind', 'paying close attention.\nThere were three of them'], []),
 (256, 'Ch 1', ['I watched three people get replaced last week. Real people. And the guys who did it'], ['A bar, a Tuesday, three jobs, gone.']),
 (257, 'Ch 1', ['"Three jobs is a rounding error, Elijah," Devendra said. "You build models for a living. Relax."', 'He still looked stressed. How long until this whole office was a rounding error?'], ['Three jobs in one bar is an anecdote']),
 (258, 'Ch 1', ['"Five years," Devendra scoffed. "That'], ['"Five years," Devendra said.']),
@@ -296,4 +297,10 @@ C=[
 (286, 'Ch 32', ['before the oak had caught.\n\nIn April, when he dug the pit, Priya came down to read it.', 'there was a sound like a carrot.', '"Where\'d you learn to do that, Lou?" Grace said.\n"Combat."', '"I\'m a veteran," he said. "Did you guys not know that?"', 'You guys need to get out more."\n\nOn the first of April the trust\'s check'], []),
 (287, 'Ch 6', ['the ink going brown. The coffee smelled like a slice of heaven. He was really going to miss the smell of that coffee maker doing its thing.'], []),
 (288, 'Ch 10', ['"Suit yourself, man," Ruby shrugged again, the fur'], []),
+(289, 'Ch 0', ['He had never actually read what was inside it. You should know how he got there',
+             'something else. His full name was Elijah Gaelen Madrone',
+             'the lesson came back around. Elijah had grown up on a working farm',
+             'Weather that never really cleared up. The other meaning of his name',
+             'gone back to nodding. Elijah worked out of a satellite office'],
+ ['came back around. The other meaning of his name']),
 ]

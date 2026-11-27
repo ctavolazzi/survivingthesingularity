@@ -1558,7 +1558,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 # 248, Ch 0: three line fixes (CT, 27 Nov, fourteenth chat): "of his self-teaching" out; cross becomes conquer; the realtors are paying close attention
 (248, 'that had eaten whole weekends of his self-teaching and', 'that had eaten whole weekends and'),
 (248, 'of all canyons, to cross first.', 'of all canyons, to conquer first.'),
-(248, 'To his surprise, some realtors were watching.', 'To his surprise, some realtors were paying close attention.'),
+(248, 'To his surprise, some realtors were watching.', 'To his surprise, some realtors were paying close attention.'),# 249, Ch 0: David pushes the cash back and leans in (CT, 27 Nov, fourteenth chat)
+(249, '"Your money\'s no good here," David said. "You look like you buried somebody."', '"Your money\'s no good here," David said, pushing the cash back. Then he leaned in and said with a concerned tone, "Mad, you look like you just buried somebody."'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

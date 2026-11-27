@@ -254,4 +254,5 @@ C=[
 (246, 'Ch 0', ['including styles he recognized. Styles with names attached, people attached, rent payments attached.'], ['including styles he recognized, styles with names attached']),
 (247, 'Ch 0', ["Google had made the engine of AI. With that paper release they'd thrown nitro all over the industry. If Google was Einstein"], ['Google drew the engine.']),
 (248, 'Ch 0', ['the kind of problems that had eaten whole weekends and watched it', 'of all canyons, to conquer first.', 'To his surprise, some realtors were paying close attention.'], ['weekends of his self-teaching', 'canyons, to cross first', 'some realtors were watching.']),
+(249, 'Ch 0', ['Then he leaned in and said with a concerned tone, "Mad, you look like you just buried somebody."'], ['"You look like you buried somebody."']),
 ]

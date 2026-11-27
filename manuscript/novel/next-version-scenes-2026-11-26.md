@@ -547,3 +547,19 @@ What the page already gives it (checked against the book with edits 1 to 239):
   "He turned onto his elbow", or at a harvest festival the same month. The co-op's harvest festival exists (Ch 34:
   "the one big thing the co-op did all year"), but the 2026 one is not on the page.
 - "A year. A whole year, Elijah" and "Why'd you wait so long?" say the same thing; one of them would give way.
+
+### More for section 6 from CT (27 Nov 2026, later the same chat). His words, as sent:
+
+After the hand scene it could be the next morning where she's wearing his shirt. Or it could be another time.
+
+It could say "it went on like that for weeks, both of them teasing the other. A peck here, a stolen tongue kiss there. Elijah enjoyed holding back, and Grace begrudgingly enjoyed being tortured by Elijah's boundaries. It took everything in her not to push him.
+
+For the first time in her romantic life, she was enjoying taking the scenic route.
+
+They danced on a hillside every few nights for a month before, one day in the ____ (spring?), she woke up wearing his tshirt.
+
+What the page says about the blank (checked against the book with edits 1 to 239): it is November, not spring. The
+night at the pond is October 2026 (the Appendix: "October 2026. The amp on the tailgate"). A month of dancing puts
+the shirt in November 2026. It cannot be later: on Friday 20 November she calls him "Babe" (Ch 27), and on
+Thanksgiving, the 26th, they eat a chicken off one plate in her room in Ardell. Spring 2027 would put it after the
+tea, the stove she lights, and her falling asleep against him.

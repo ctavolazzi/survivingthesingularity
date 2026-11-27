@@ -1691,6 +1691,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (298, 'A tribal housing authority.', 'A tribal housing authority that wanted the shouse drawings.'),
 # 299, Ch 27: the last grant would run out in June (it is October 2026 and the route is running; calendar check)
 (299, 'and the last one ran out in June.', 'and the last one would run out in June.'),
+# 300, Ch 35: Lou talks with his hands (CT's words, 27 Nov, seventeenth chat: "getting steadily more animated with each breath is better")
+(300, "Lou had started talking with his hands, which he only did when he meant it.", "Lou had started talking with his hands, getting steadily more animated with each breath."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

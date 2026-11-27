@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 299 (27 Nov, the seventeenth chat), logged only. The next edit is 300.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat), logged only. The next edit is 301.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4187,6 +4187,22 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      one would run out in June." Claude's wording in Claude's line (edit 206); open with CT since the scene sheet audit
      and the calendar check, closed under his "all of the fixes implemented, logged". The calendar check now holds.
      Logged only.
+
+300. **Chapter 35: Lou talks with his hands.** Claude had listed "Lou had started talking with his hands, which he only
+     did when he meant it." among lines that explain what the scene shows. CT, 27 Nov (seventeenth chat): "That's fine.
+     I don't see anything wrong with that. He started talking with his hands, getting more animated with each breath,
+     getting steadily more animated with each breath is better." The last version is the line: "Lou had started talking
+     with his hands, getting steadily more animated with each breath." CT's words; "Lou had started" kept from the book
+     (his "He started" was the line said back). "which he only did when he meant it" is out. Searched: "animated" and
+     "with each breath" are nowhere else. Scene 116 is 986 words. Logged only.
+     The same message ruled on the rest of that list, all of them to stay as they are: "That was his father in him:
+     never take a handout." (Ch 31, "The line about his father stays"); the twenty-quart pot, "which meant she'd already
+     decided it was for the whole road" (Ch 28, "It's explaining something that's maybe a little bit confusing");
+     "What he meant was ... What she heard was ..." at the fire (Ch 36, "That's important. That stays."); "He knew what
+     again was. A gate with a strip of tape on it." (Ch 36, "that helps explain the intensity of the moment"). Not ruled
+     on: "Nobody had said a thing. Nobody was going to. That was how it was done here." (Ch 31; he did not follow
+     Claude's note, so it stays) and the two lines of Claude's in edit 296 that Claude flagged ("Two orange robot arms
+     were sitting in crates ... he let it run." and "Nobody had ever told him you were allowed to put them together.").
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

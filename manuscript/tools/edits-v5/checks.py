@@ -312,4 +312,5 @@ C=[
 (297, 'Ch 24', ['had lived in bigger.\nThe workbench went in along one wall and the bed at the far end, the way the drawing had it.\nThe stove went in last.'], []),
 (298, 'Ch 27', ['A tribal housing authority that wanted the shouse drawings. A retired county engineer.'], ['A tribal housing authority. A retired']),
 (299, 'Ch 27', ['The route lived on grants, and the last one would run out in June.'], ['the last one ran out in June']),
+(300, 'Ch 35', ['Lou had started talking with his hands, getting steadily more animated with each breath.'], ['which he only did when he meant it']),
 ]

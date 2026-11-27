@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 224, not in the Doc: 76.
+Totals: accepted: 224, not in the Doc: 77.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -311,3 +311,4 @@ Edit 57 was never used.
 | 297 | Ch 24 | not in the Doc | had lived in bigger. / The workbench went in along one wall and the... |
 | 298 | Ch 27 | not in the Doc | A tribal housing authority that wanted the shouse drawings. A retir... |
 | 299 | Ch 27 | not in the Doc | The route lived on grants, and the last one would run out in June. |
+| 300 | Ch 35 | not in the Doc | Lou had started talking with his hands, getting steadily more anima... |

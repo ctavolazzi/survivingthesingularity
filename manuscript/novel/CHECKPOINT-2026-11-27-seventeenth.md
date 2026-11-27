@@ -7,7 +7,7 @@ otherwise saved so that they can all be closed out permanently."
 
 ## What was logged
 
-Edits 296 to 299 (`EDITS.md`; `drafts/edit-296-299-shouse.md`). make_v6.py on a fresh v5 read: 710 replacements, all 300
+Edits 296 to 300 (`EDITS.md`; `drafts/edit-296-299-shouse.md`). make_v6.py on a fresh v5 read: 711 replacements, all 301
 check rows pass. The scene sheet has a row for the new scene (numbered 130, in book order after 54, so no other row was
 renumbered) and checks clean on structure, words and opening lines. Every story check was rerun (calendar, conversations,
 desires, layer two, money, objects, plants and payoffs, senses, knowledge). The build gate no longer asks for "Beware
@@ -64,9 +64,16 @@ would be one edit.
 | Reuben has no want by the end and no change (desires sheet) | Ch 19 to 38 | Left. Not a contradiction; a thin place |
 | The gate asked for "Beware the military!" | tools | Fixed in `build-gate.json` (CT cut the line at edit 230) |
 
+## After the close-out: edit 300, and five lines CT kept
+
+CT asked whether Claude had heavy-handed anything that could breathe. Claude showed six lines of narration that explain
+a moment. He reworded one (edit 300, Lou's hands, Ch 35) and kept the rest; his words are under edit 300 in `EDITS.md`.
+Still his to rule on: the two lines of Claude's in edit 296 that Claude flagged as saying too much (the arms named in
+the narration before "good, bad ideas", and "Nobody had ever told him you were allowed to put them together.").
+
 ## Not done in this chat
 
-- The Google Docs were not touched. Edits 224 to 299 are in GitHub only.
+- The Google Docs were not touched. Edits 224 to 300 are in GitHub only.
 - Drive: the edit list mirror still stops at 295, and the scene sheet and story-check tabs in the Google Sheet are at
   edit 295. The CSVs here are at 299.
 - The fact check of Priya's county building code lines (edit 296).

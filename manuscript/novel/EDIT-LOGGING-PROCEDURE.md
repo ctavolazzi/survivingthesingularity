@@ -245,8 +245,13 @@ to"), add a check row in `checks.py` and a find and replace row in `manuscript/t
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
 ## Where things stand (end of the seventeenth chat, 27 Nov)
-- **Edits 296 to 299 are logged in GitHub only** (the shouse scene in Chapter 21 and its three follow-ons). make_v6.py on
-  a fresh v5 read: 710 replacements, all 300 check rows pass. **The next edit is 300.**
+- **Edits 296 to 300 are logged in GitHub only** (the shouse scene in Chapter 21 and its three follow-ons; Lou's hands
+  in Chapter 35, CT's words). make_v6.py on a fresh v5 read: 711 replacements, all 301 check rows pass. **The next edit
+  is 301.**
+- CT, 27 Nov, asked whether Claude had been heavy-handed where a thing could be implied. Claude searched for narration
+  that explains a moment and showed him six lines. He kept five as they are and reworded one (edit 300). His test, in
+  his words: a line that explains "something that's maybe a little bit confusing" stays, and so does one that "helps
+  explain the intensity of the moment". Do not cut an explaining line on Claude's taste alone.
 - The scene sheet CSV has the new scene as row 130 (in book order after row 54; rows are not renumbered when a scene is
   added, because the other sheets cite row numbers). `story_checks.py`'s WHEN list is keyed by book order, so a new
   scene means renumbering it from that point; the senses and desires data files each need an entry for the new row.

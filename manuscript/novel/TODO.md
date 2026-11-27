@@ -1,6 +1,6 @@
 # To do: the novel, from here to done
 
-Updated 27 Nov 2026, end of the eleventh logging chat. Top item first. Tick a box in the same commit that does the work.
+Updated 27 Nov 2026, end of the smell chat (twelfth). Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 **Before the final pass:** `scene-sheet-audit-2026-11-27.md` lists what a 27 Nov check of the scene sheet found still open (sheet cells, three contradictions in the text for CT, and rows 71 to 105 and the timeline not yet checked).
@@ -11,8 +11,7 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 chat: Grace doesn't know about the arms until the table finds out; Ch 17, 18, 34, 35, 36;
 `drafts/edit-234-grace-doesnt-know.md`). So a spin-up now shows **234 check rows passing (608 replacements), 223
-accepted in v8 and 224 to 234 not in the Doc**; that is right. Next chat: the smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`). That prompt was run once on
-27 Nov inside the Riemann chat: spin-up clean, nothing shown or logged, so the smell pass is still to do. That chat's
+accepted in v8 and 224 to 234 not in the Doc**; that was right until the smell chat (27 Nov), which logged 235 and 236: the counts at the top of this file are the current ones. The smell pass (section 3; prompt in `CHECKPOINT-2026-11-27-eleventh.md`) has been run: his two places are logged, and what is left of it is his to rule on (`smell-table-2026-11-27.md`). That chat's
 closing notes (what is done, what is open, CT's words, the stakes answer) are the first section of
 `CHECKPOINT-2026-11-26-riemann-praether.md`. The scene
 sheet, one row per scene: Google Sheet id `1vReMI4VKBIexpMvR8Sx0QpyO8Bde2w2jLOnKFCv0KYY`, copy in `scene-sheet-2026-11-27.csv`. Two chats logged on this branch on 26 and 27 Nov. One: edit 229, Curtis and the Riemann
@@ -143,6 +142,11 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
   `_workbench`, the Drive mirror once).
 
 ## Done
+
+- 27 Nov, smell chat (twelfth): the whole built book read for smell; `smell-table-2026-11-27.md`; edits 235 (the
+  truck, Ch 15) and 236 (the party, Ch 9), CT's words; `WRITING-INSTRUCTIONS.md` 15c. Not done: the Drive mirror of
+  the edit list (still "edits 1 to 233"), and the scene sheet's word counts for rows 29 and 48, which are now 100 and
+  48 words short (measured by diff of the two builds).
 
 - 26 Nov, tenth chat: the housekeeping list (the opening checker, the files brought to v8); edits 224 to 227; the
   checkpoint and the prompt for the eleventh chat; the Drive mirror remade (edits 1 to 227).

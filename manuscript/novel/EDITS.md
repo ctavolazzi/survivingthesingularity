@@ -6,7 +6,8 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py`'s build (the v5 Doc with its
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
-until CT clears them for the Doc. The next edit is 234.
+until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
+smell chat), logged only. The next edit is 237.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3767,11 +3768,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      after 233). Record: `manuscript/novel/drafts/edit-234-grace-doesnt-know.md`. Logged only; not in the v8 Doc yet.
 235. **Chapter 15: the smell of the truck.** CT (26 Nov): "the Smell of a car you've been living in. The way you stop
      noticing it after a while but everyone else sure does, right away." Placed after "when five dollars got to be a
-     lot he stopped.": "The cab had a smell by then: weed, a wet jacket, and the delivery bag, which had held on to
-     just about every order he'd ever carried. A car you've been living in gets like that. You stop noticing it after a
-     while, but everyone else sure does, right away." "which had held on to just about" is CT's correction (27 Nov:
-     "only a Sith deals in absolutes"; `WRITING-INSTRUCTIONS.md` 15c). Claude's: the first sentence and "gets like
-     that". Invented: weed, a wet jacket, the delivery bag. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
+     lot he stopped.": "By then the cab had the smell of a car you've been living in: smoke, a wet jacket, and the
+     delivery bag, which had held on to just about every order he'd ever carried. You stop noticing it after a while,
+     but everyone else sure does, right away." "which had held on to just about" is CT's correction (27 Nov: "only a
+     Sith deals in absolutes"; `WRITING-INSTRUCTIONS.md` 15c). Claude's: "By then the cab had" and the list. Invented:
+     smoke, a wet jacket, the delivery bag. Corrected in place the same day (Claude's review, on CT's "Finalize
+     changes"): the first wording, which he approved, dropped "the smell of" from his phrase, added "gets like that"
+     and repeated "weed"; he has not seen the corrected one. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
      Logged only; not in the v8 Doc yet.
 236. **Chapter 9: the smell of the high-dollar party.** CT (26 Nov): "The faint back notes of cleaning supplies. The
      perfume, how it acts like a lightning rod for knuckleheads and more or less behaves like a slime mold, expanding
@@ -3780,8 +3783,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      had found reasons to stand behind the same woman's chair." In the back hall, after the caterers come out: "The
      door swung behind them, and the kitchen air came out into the hall, hot, with fish and butter in it. The perfume
      had come down the hall with Elijah and Ruby. It was utterly decimated by the ferocity of the air from the
-     kitchen." His verbs put in past tense. Invented: the two men, the fish and butter. 150 words in, none out, for
-     235 and 236 together; 103,649 words in the chapters. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
+     kitchen." His verbs put in past tense. Invented: the two men, the fish and butter. 148 words in, none out, for
+     235 and 236 together; 103,647 words in the chapters. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
      Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like

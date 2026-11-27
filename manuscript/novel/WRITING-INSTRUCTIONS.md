@@ -487,6 +487,17 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   line is plain.) So: when a line says every, all, never or always about something nobody could know or that couldn't
   be literally true, soften it the way he does ("just about", "more or less", section 5). Not a sweep: an absolute
   that is true, or one a character means, stays. He was clear this is for lines going forward, not another pass.
+- **Keep his phrase whole when it is placed. [C]** His line was "the smell of a car you've been living in". The first
+  placement (edit 235) broke it into "The cab had a smell ... A car you've been living in gets like that", which
+  dropped two of his words and added a filler to join the pieces. Build the sentence around his phrase; don't cut the
+  phrase to fit the sentence.
+- **A reflection can overcorrect too. [C]** A second look at edit 236 called two lines wrong (the men behind the
+  woman's chair, the hot kitchen air) that the page supports (the perfume has to do something, 7a; Bidwell leaves
+  "before the fish"). Check a doubt against the page before acting on it, the same as a claim.
+- The smell pass in numbers: of about twenty smells on the page, only one makes something happen (Manny smells the
+  burnt pot, Ch 13). Nobody in Chapters 15 to 17 remarks on how Elijah or the cab smells; the old man, the food bank
+  woman and Grace are kind to him anyway, and that is left as it is. `smell-table-2026-11-27.md` has every smell,
+  whose words it is, and the places still open.
 
 ## 15b. Learned 26 and 27 November (the Riemann and Praether chat, edits 229 and 230)
 

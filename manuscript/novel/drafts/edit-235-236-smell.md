@@ -28,10 +28,17 @@ Book now:
 
 Change to:
 
-> He showered at the Y for five dollars, and when five dollars got to be a lot he stopped. The cab had a smell by then:
-> weed, a wet jacket, and **the delivery bag, which had held on to just about every order he'd ever carried. A car
-> you've been living in** gets like that. **You stop noticing it after a while, but everyone else sure does, right
-> away.** He was on the last hole of his belt by Christmas.
+> He showered at the Y for five dollars, and when five dollars got to be a lot he stopped. By then the cab had **the
+> smell of a car you've been living in**: smoke, a wet jacket, and **the delivery bag, which had held on to just about
+> every order he'd ever carried. You stop noticing it after a while, but everyone else sure does, right away.** He was
+> on the last hole of his belt by Christmas.
+
+Corrected in place the same day (Claude's own review, on CT's "Finalize changes"; the edit is not in the Doc). As first
+logged it read: "The cab had a smell by then: weed, a wet jacket, and the delivery bag, which had held on to just about
+every order he'd ever carried. A car you've been living in gets like that. You stop noticing it ..." Two faults:
+it dropped "the smell of" from his phrase and added a filler ("gets like that"), and it said "weed" three sentences
+after "The bag of weed had to last." Now his phrase is whole, the filler is gone, and "weed" is "smoke". CT approved
+the first wording and has not seen this one.
 
 ## 236, Chapter 9: the house on the hill
 
@@ -69,7 +76,8 @@ Change to:
 
 ## Facts Claude invented (his to change)
 
-- What the cab smells of: weed, a wet jacket, the delivery bag (the weed and the delivery runs are on the page).
+- What the cab smells of: smoke, a wet jacket, the delivery bag (the nightly smoke and the delivery runs are on the
+  page).
 - The two men behind the same woman's chair.
 - Fish and butter in the kitchen air. Fish fits "Meanwhile" after Chapter 10: Bidwell "left the dinner before the
   fish".
@@ -90,4 +98,4 @@ Change to:
 - `openers.py`: no new runs in Chapters 9 or 15. No dashes.
 - `make_v6.py`: all 236 check rows pass (611 replacements). `verify.py` on the v8 read: 223 accepted, 224 to 236 not
   in the Doc, nothing PARTIAL.
-- Words: 150 in, none out. 103,649 words in the chapters (`story_report.py`), from 103,499.
+- Words: 148 in, none out. 103,647 words in the chapters (`story_report.py`), from 103,499.

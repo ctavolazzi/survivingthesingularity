@@ -245,5 +245,5 @@ Edit 57 was never used.
 | 232 | Ch 27, 38 | not in the Doc | Rosa made the dinner that year, her first for the farm. |
 | 233 | Ch 0 to 39, Appendix | not in the Doc | Elijah said it once to Wes |
 | 234 | Ch 17, 18, 34, 35, 36 | not in the Doc | He told her they were gone. |
-| 235 | Ch 15 | not in the Doc | which had held on to just about every order he'd ever carried. |
+| 235 | Ch 15 | not in the Doc | By then the cab had the smell of a car you've been living in: smoke... |
 | 236 | Ch 9 | not in the Doc | the faint back notes of cleaning supplies. |

@@ -221,7 +221,12 @@ short, what is still CT's:
   heard it as a murder" (Ch 39); the "Creator Fund" line; the 19 empty paragraphs in the v8 Doc; the thin places; the
   Instagram synopsis; "OLD:" on the v6 and v7 Docs; Drive's duplicate builds; the site's private reader and
   compendium; the merge to `main`; the ISBN and the release build.
-- The smell pass, in its own chat (next).
+- The smell pass (27 Nov, the smell chat): his two places are logged (edits 235 and 236). Still his to rule on, in
+  the last column of `smell-table-2026-11-27.md`: a smell for the cooked plugs (Ch 21) and for Priya's two pits
+  (Ch 26), which need the smell from him; woodsmoke reaching Grace at the door before the gate story (Ch 24, one
+  line); and Elijah telling Grace what the Thanksgiving coats bring back (Ch 27, a short exchange, new material).
+  Also his: the corrected wording of edit 235, which he has not seen, and Claude's invented details in both edits
+  (`drafts/edit-235-236-smell.md`).
 - From the close of the Riemann and Praether chat (27 Nov; `CHECKPOINT-2026-11-26-riemann-praether.md`, first
   section): the smell pass prompt was run once there (clean spin-up, nothing shown or logged, next edit still 234), and
   one idea of Claude's is with CT unanswered (a line at the gate in Chapter 36 that picks up Grace's "put humans first"
@@ -265,6 +270,14 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   above this one describe the end of the eleventh chat and are one edit behind.
 - The Drive copy of the edit list is still "edits 1 to 233": edit 234 and the context notes added under 229 and 230
   on 27 Nov are not in it. Refresh it at the end of the next session (step 10).
+- **Since then, edits 235 and 236 (27 Nov, the smell chat, CT's words from `WRITING-INSTRUCTIONS.md` 7a):** the smell
+  of the truck (Ch 15) and the smell of the high-dollar party (Ch 9). On fresh reads of both Docs that day,
+  make_v6.py passes **236 rows (611 replacements)**; verify.py on v8 shows 223 accepted and **224 to 236 not in the
+  Doc**, nothing PARTIAL; 103,647 words; build_gate.py NOT READY, 9 open boxes. **The next edit is 237.** Neither Doc
+  was changed. The Drive copy of the edit list was not refreshed in the smell chat (CT asked for GitHub only), so it
+  is still "edits 1 to 233" and is now missing 234 to 236. The scene sheet (Sheet and CSV) was not changed: rows 29
+  and 48 are 100 and 48 words short, and its title still says edits 1 to 233. A backup of this branch as it stood
+  before the smell chat is the branch `backup/book-branch-2026-11-27`, in both repos.
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
 - **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and

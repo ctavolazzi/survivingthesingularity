@@ -82,3 +82,8 @@ his line, "For three days, no one really asked him anything."
   "You can stay here for free as long as you like" ... "Close the door on your way out, would you?"). It belongs in the
   first days, but Rosa cannot send him then. Also in the way: Grace's message says "I want to pay you", and on his
   first night he raises "About the pay."
+
+**Placed, 27 Nov (same chat), as edits 229 and 230** after CT's "Send out readers, evaluate what you think is the best
+course of action": the talk about the bed in Chapter 17 (Grace sits down with her own plate), and Rosa and the ladle as
+the first scene of Chapter 31. Rosa feeding him in the first days was already on the page. See
+`edit-229-230-grace-and-rosa.md`.

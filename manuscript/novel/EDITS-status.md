@@ -1,9 +1,9 @@
 # Edits to the novel: status of every edit
 
-Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-26 from a read of the Doc "StS v8 draft (Nov 26)",
+Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 5.
+Totals: accepted: 223, not in the Doc: 8.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -97,7 +97,7 @@ Edit 57 was never used.
 | 85 | Ch 16 | accepted | That thing right there is worth something, not some app. |
 | 86 | Ch 16 | accepted | "We'll see," she said. "Swarf goes in the red bin." |
 | 87 | Ch 17 | accepted | For three days, no one really asked him anything. |
-| 88 | Ch 17 (changed by 205) | accepted | The arms came up the day before the lien sale. |
+| 88 | Ch 17 (changed by 205) | accepted | The arms came up |
 | 89 | Ch 17 | accepted | He told the radio about his week. The co-op let him be. |
 | follow-ups | follow-ups | accepted | $2,011.46 |
 | 90 | Ch 17 | accepted | He looked at his plate. |
@@ -230,7 +230,7 @@ Edit 57 was never used.
 | 217 | Ch 37 | accepted | All that was left were two robot arms in Richard Praether's pole barn. |
 | 218 | Ch 39 | accepted | His phone buzzed against his leg. It was Devendra. / Dinner's on me... |
 | 219 | Ch 11, 13, 15, 19 | accepted | by the next morning she had it out in the barn under a moving blanket |
-| 220 | Ch 18 | accepted | Lou got the two of them alone the week after that dinner. |
+| 220 | Ch 18 | accepted | alone the week after that dinner. |
 | 221 | Ch 34 | accepted | The afternoon before the October meeting, Priya took her sheet up t... |
 | 222 | Ch 0 to 36, Appendix | accepted | He had found his first limit. It was heat. |
 | 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | accepted | It won't start with the machines. First it takes the people who see... |
@@ -239,3 +239,6 @@ Edit 57 was never used.
 | 226 | Ch 26 | not in the Doc | Elijah didn't quite know why he didn't go for it right away. |
 | 227 | Ch 21 to 36, Pondwater | not in the Doc | a little at a time and all the time. |
 | 228 | Ch 16, 17, 33 | not in the Doc | "The artists have a valid point, don't they?" a woman said. |
+| 229 | Ch 17 | not in the Doc | "How are you liking your bed? Is it comfy enough?" |
+| 230 | Ch 31 | not in the Doc | The Sunday after the county meeting, Elijah carried pots at the gra... |
+| 231 | Ch 0 to 39, Appendix | not in the Doc | Elijah said it once to Wes |

@@ -3,9 +3,12 @@
 Updated 26 Nov 2026, end of the tenth logging chat. Top item first. Tick a box in the same commit that does the work.
 What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
-**Next edit: 229.** Edit 228 (eleventh chat): Lou's heavier entrance at the end of Chapter 16; Rosa's two scenes and
-the "stay for free" talk with Grace are held for CT (`drafts/edit-228-lou-comes-in.md`). The book in the Docs is "StS v8 draft (Nov 26)" (edits 1 to 223; no pictures), with a locked
-backup. Edits 224 to 227 are logged in GitHub only (tenth chat, 26 Nov): the laser weeder and the brain organoid
+**Next edit: 232.** Eleventh chat: edit 228, Lou's heavier entrance at the end of Chapter 16; edits 229 and 230, CT's
+held dictation placed (Grace's talk about the bed in Chapter 17, Rosa and the ladle opening Chapter 31,
+`drafts/edit-229-230-grace-and-rosa.md`); edit 231, the finishing pass, 31 line fixes from seventeen readers
+(`drafts/finishing-2026-11-27.md`). CT: "After this, if possible, I don't really want to change or add anything.
+It's now about more just refining, revising, deleting, buffing out the hard spots, polishing." The book in the Docs
+is "StS v8 draft (Nov 26)" (edits 1 to 223; no pictures), with a locked backup. Edits 224 to 231 are logged in GitHub only. Tenth chat (26 Nov): the laser weeder and the brain organoid
 ("Pondwater"); the panel, "overwhelmed", fifty million views and Ruby's pitch (Ch 8 to 10); why Elijah waits after the
 pond (Ch 26; "under 6 months" held for CT); the polish pass at key moments. Next: the eleventh chat opens by putting
 the "Open with CT" list in `CHECKPOINT-2026-11-26-tenth.md` to him.

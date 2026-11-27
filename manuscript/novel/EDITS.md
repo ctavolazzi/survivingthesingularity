@@ -5,8 +5,8 @@ Running list, started 2026-11-25. These are CT's edits to the v5 manuscript (Goo
 **Where the edits stand (26 Nov, end of the tenth logging chat):** edits 1 to 223 are in the book, the Google Doc "StS
 v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py`'s build (the v5 Doc with its
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
-("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 227 (tenth chat) are logged only, until CT
-clears them for the Doc. The next edit is 228.
+("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 227 (tenth chat) and 228 to 231 (eleventh
+chat) are logged only, until CT clears them for the Doc. The next edit is 232.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3529,6 +3529,51 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      ("the heart of a helper", the tamales), and "take this to Grace" with the talk about staying for free (Rosa is not
      on the farm before Chapter 38; reasons in the record). Record: `manuscript/novel/drafts/edit-228-lou-comes-in.md`.
      Logged only; not in the v8 Doc yet.
+
+229. **Chapter 17: Grace's talk about the bed and staying for free.** CT (26 Nov, eleventh chat), dictated with edit
+     228 and held then; placed on his next word, "Send out readers, evaluate what you think is the best course of
+     action". His, word for word, fillers out: "How are you liking your bed? Is it comfy enough?" / He raised an eyebrow.
+     "Yeah, it's great. It gets a little cold in there at night, but you guys give me plenty of blankets, so I feel
+     really good. Thank you. I'm really grateful for this." / "No problem." / "So when do I start paying, or sign, or
+     whatever?" / "No, I meant it. You can stay here for free as long as you like. It's just good to have people like
+     you around, you know?" / "What do you mean, people like me?" / "You know, people who get it. Every one of these
+     families came to us in one way or another, but we're all contributing to the success of the farm." She started
+     eating. "I trust you'll do the same." / He thought about it, and lingered a minute. "Is this too good to be true?" /
+     "What? You want something?" / He raised his eyebrows and blinked a few times. "No, I'm good." / "Great. Close the
+     door on your way out, would you?" After "she let the six lines be all of it.", before "Marta gave him the floor."
+     Claude's: "One night, when his plate was empty, she sat down across from him with her own." (Rosa can't send him
+     in his first days: she lives in town, wrist in a brace, and he meets her on the route weeks later.) "Stay here for
+     free" is the room, as her message has it; the pay still goes to the table (Ch 16, 26). 186 words in. Record:
+     `manuscript/novel/drafts/edit-229-230-grace-and-rosa.md`. Logged only; not in the v8 Doc yet.
+
+230. **Chapter 31 opens on Rosa and the ladle.** CT (26 Nov, eleventh chat), held with 229: "maybe Rosa can come back
+     in later in the book as like part of the proletariat". His, word for word: "I don't really understand all this
+     technology stuff," she said. "It goes over my head. In one ear, out the other." / She paused, turned around with
+     the ladle ... "I do know good food. In this place, they make a lot of good food. Nourishes the whole community."
+     She pointed at him and tapped him on the chest. Then she put her whole palm on his chest and rubbed it in circles.
+     "You have the heart of a helper. I can tell." / "I just want everybody to be prepared," / "Prepared is sometimes
+     not helpful. Sometimes you can over-prepare. If I over-prepare my tamales, they fall apart. They don't taste too
+     good." / Elijah kind of got it. / "Please take this to Grace. It's her turn to eat." Slips fixed: "I do no good
+     food", "one in one ear". Claude's: "The Sunday after the county meeting, Elijah carried pots at the grange hall.
+     Rosa was serving. She had seen his slides.", "and filled a bowl" for his "drops it in the bowl", "She held out the
+     bowl." A scene break follows, then "Elijah brought the Friday table a plan.", whose "No laser pointer. One page. He
+     had learned that much." pays it off. 160 words in. Record: `drafts/edit-229-230-grace-and-rosa.md`. Logged only;
+     not in the v8 Doc yet.
+
+231. **The finishing pass (Ch 0 to the Appendix).** CT (26 Nov, eleventh chat): "Send out readers ... to finish the
+     story arc, to finish the narratives, to finish the characters, to finish everything. After this, if possible, I
+     don't really want to change or add anything." Seventeen readers, 69 gaps, 33 verified on the page, a plan judged
+     from three and checked by a critic. 31 line fixes, all Claude's wording: Ch 0 "Elijah said it once to Wes" and
+     "didn't know him"; Wes's *is this true* back in the Ch 6 and Ch 13 replays; Ch 17 Lou's cover a gift, the arms
+     "that first week", "They could put cans in boxes.", Elijah on the loader, Priya's pencil back behind her ear; Ch 18
+     "Grace and Elijah"; Ch 26 "That was in the first notebook" (he heard the Architect's answer in Ch 9) and the July
+     coffee "at the kitchen trailer"; Ch 27 "in June" out of the pledge and Tyler's reading covers the boxes; Ch 29
+     "delivery time"; Ch 31 "A hundred strangers" twice and Denny's daughter; Ch 32 "a whole file", "six years" out,
+     the second "Halve it" out, "till June" out; Ch 33 the Ohio machinist's household and Lou's back seat "before her
+     shift"; Ch 34 Marta's welder at the shop after the plant, "What guy?", "found the price list"; Ch 36 Irene's step
+     and "Two years before ... eight feet" out; Ch 39 "A while later"; Praether in the Appendix. Rows 88, 197, 205 and
+     220 narrowed. Left for CT: Ruby's numbers (Ch 8), "Grace printed your cover page" (Ch 17), "signed right under her"
+     (Epilogue). Record: `manuscript/novel/drafts/finishing-2026-11-27.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

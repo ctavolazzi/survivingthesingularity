@@ -5,7 +5,7 @@ What "done" means is in `GOALS.md`; how each step is done is in `REFERENCE.md`.
 
 **Before the final pass:** `scene-sheet-audit-2026-11-27.md` lists what a 27 Nov check of the scene sheet found still open (sheet cells, three contradictions in the text for CT, and rows 71 to 105 and the timeline not yet checked).
 
-**Next edit: 235.** Edit 234 was logged on 27 Nov, after the smell pass prompt was written (CT's dictation in the Riemann
+**Next edit: 237.** Edits 235 and 236 (the smell pass: the truck, Ch 15; the party, Ch 9) were logged on 27 Nov in the smell chat; `drafts/edit-235-236-smell.md`. A spin-up now shows 236 check rows passing (611 replacements), 223 accepted in v8 and 224 to 236 not in the Doc. Edit 234 was logged on 27 Nov, after the smell pass prompt was written (CT's dictation in the Riemann
 
 **The one branch for the book: `claude/singularity-publication-build-kparqk`, in both repos.** Every other novel branch is merged into it (27 Nov). To check the scene sheet against the built book: `python3 manuscript/tools/edits-v6/scene_sheet.py check OUT/v6.txt manuscript/novel/scene-sheet-2026-11-27.csv` (structure, words and opening lines must all pass; names, numbers, threads and questions are lists to read).
 
@@ -115,8 +115,9 @@ Need CT's yes:
       chapter. For the rest of the book: his two places first, in his words (the truck he lives in, Chapters 14 and 15;
       the high-dollar party, Chapters 9 and 10), then any scene where a smell would carry the feeling. Each one shown to
       CT, since Chapters 0 to 19 are done.
-      Not started (27 Nov): the prompt was run once in the Riemann chat and stopped at "ready". Scene sheet rows for
-      his two places: 29 to 32 (the party) and 47 to 49 (the truck).
+      27 Nov, smell chat: his two places logged (edit 235, the truck, Ch 15; edit 236, the party, Ch 9). Every smell
+      on the page, whose words it is, and the places still open (the cooked plugs, Ch 21; Priya's pits, Ch 26; the two
+      memory spots, Ch 24 and Ch 27) are in `smell-table-2026-11-27.md`, last column his. Open until he rules on those.
 - [x] The sentence-opening checker CT asked for (25 Nov), run on Chapters 20 to 36 only. Built in the tenth chat:
       `manuscript/tools/edits-v6/openers.py OUT/v6.txt --ch 20-36`. After edit 223 it finds 35 runs of three or more
       sentences opening with the same word, 38 runs of five pronoun-or-name openers, 21 paragraphs (Ch 0 to 19: 72, 59,

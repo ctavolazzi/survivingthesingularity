@@ -3,7 +3,7 @@
 Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 223, not in the Doc: 11.
+Totals: accepted: 223, not in the Doc: 13.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -245,3 +245,5 @@ Edit 57 was never used.
 | 232 | Ch 27, 38 | not in the Doc | Rosa made the dinner that year, her first for the farm. |
 | 233 | Ch 0 to 39, Appendix | not in the Doc | Elijah said it once to Wes |
 | 234 | Ch 17, 18, 34, 35, 36 | not in the Doc | He told her they were gone. |
+| 235 | Ch 15 | not in the Doc | which had held on to just about every order he'd ever carried. |
+| 236 | Ch 9 | not in the Doc | the faint back notes of cleaning supplies. |

@@ -3765,6 +3765,24 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      eleven days out"; he arrives the next Tuesday, and the fourth day is that Friday). It is "Sunday. This Sunday."
      Rows 205, 213, 214, 220, 223, 230 and 233 narrowed. 103,503 words in the chapters (60 more than
      after 233). Record: `manuscript/novel/drafts/edit-234-grace-doesnt-know.md`. Logged only; not in the v8 Doc yet.
+235. **Chapter 15: the smell of the truck.** CT (26 Nov): "the Smell of a car you've been living in. The way you stop
+     noticing it after a while but everyone else sure does, right away." Placed after "when five dollars got to be a
+     lot he stopped.": "The cab had a smell by then: weed, a wet jacket, and the delivery bag, which had held on to
+     just about every order he'd ever carried. A car you've been living in gets like that. You stop noticing it after a
+     while, but everyone else sure does, right away." "which had held on to just about" is CT's correction (27 Nov:
+     "only a Sith deals in absolutes"; `WRITING-INSTRUCTIONS.md` 15c). Claude's: the first sentence and "gets like
+     that". Invented: weed, a wet jacket, the delivery bag. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
+     Logged only; not in the v8 Doc yet.
+236. **Chapter 9: the smell of the high-dollar party.** CT (26 Nov): "The faint back notes of cleaning supplies. The
+     perfume, how it acts like a lightning rod for knuckleheads and more or less behaves like a slime mold, expanding
+     out in every direction, but how it is utterly decimated by the ferocity of the air from the kitchen." In the
+     dining room, a new paragraph after "people who owned things.": the cleaning supplies, the perfume, and "Two men
+     had found reasons to stand behind the same woman's chair." In the back hall, after the caterers come out: "The
+     door swung behind them, and the kitchen air came out into the hall, hot, with fish and butter in it. The perfume
+     had come down the hall with Elijah and Ruby. It was utterly decimated by the ferocity of the air from the
+     kitchen." His verbs put in past tense. Invented: the two men, the fish and butter. 150 words in, none out, for
+     235 and 236 together; 103,649 words in the chapters. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
+     Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

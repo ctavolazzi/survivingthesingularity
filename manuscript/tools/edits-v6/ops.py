@@ -1626,6 +1626,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (272, 'and every guy at every open mic', 'and all the guys and gals at every open mic'),
 # 273, Ch 6: "on a Tuesday" out (CT, 27 Nov, fourteenth chat)
 (273, 'Elijah got laid off on a Tuesday, eleven months after the toast.', 'Elijah got laid off eleven months after the toast.'),
+# 274, Ch 6: the big news (CT, 27 Nov, fourteenth chat)
+(274, "So I got laid off today. That's not the news.", "So I got laid off today. That's not the big news."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

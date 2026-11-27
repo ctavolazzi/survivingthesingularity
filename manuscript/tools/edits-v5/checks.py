@@ -279,4 +279,5 @@ C=[
 (271, 'Ch 5', ['So before he could ruin it he bought the Bear Flag,'], ['So before the next weekend he bought']),
 (272, 'Ch 5', ['and all the guys and gals at every open mic'], ['every guy at every open mic']),
 (273, 'Ch 6', ['Elijah got laid off eleven months after the toast.'], ['laid off on a Tuesday']),
+(274, 'Ch 6', ["So I got laid off today. That's not the big news."], ["That's not the news."]),
 ]

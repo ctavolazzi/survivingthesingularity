@@ -67,13 +67,20 @@ look moved to Chapter 27.
 >
 > "How much energy do you have left?"
 >
-> Later that morning Marta looked at him over her welding hood for a long second and said nothing, which from Marta was a blessing.
+> (scene break)
+>
+> Later that afternoon, when Elijah was making his rounds, he came through the shop. Marta looked at him over her welding hood for a long second and said nothing, which from Marta was a blessing.
 
 ## 3. Chapter 36, the fire: one sentence out
 
 "In going on three years she had put her hand on his arm a thousand times, and on everybody's, and he had never reached
 for hers." CT: "that's just not true and not good. We can get rid of it." The paragraph is now "She pulled away so hard
 she stumbled."
+
+Corrected in place the same night, on CT's word ("That's a jump. We need to explain the physical movement of people,
+right? Like, later that afternoon, when Elijah was making his rounds."): Marta's line was "Later that morning Marta
+looked at him ..." with no break after the pillow talk. "Later that afternoon, when Elijah was making his rounds" is
+his; "he came through the shop" is Claude's.
 
 ## Whose words
 
@@ -90,10 +97,10 @@ book's line, moved into the pillow talk on his yes (the kiss at the pond was Nov
 
 - Check rows 204 and 233 were narrowed (they named lines this edit moves).
 - The shirt morning falls between Friday 6 November and Friday 20 November 2026, when she calls him "Babe".
-- The book has 141 scenes; `story_checks.py` is updated.
+- The book has 142 scenes; `story_checks.py` is updated.
 - Still open from the same dictation: Grace's Hinge profile and "maybe I'll be a spinstress after all" (summer 2026).
 
 ## Checks
 
 `make_v6.py`: all 240 check rows pass (617 replacements). `verify.py` on the v8 read: 223 accepted, 224 to 240 not in
-the Doc, nothing PARTIAL. No dashes. 104,857 words in the chapters (210 more than after 239).
+the Doc, nothing PARTIAL. No dashes. 104,868 words in the chapters (221 more than after 239).

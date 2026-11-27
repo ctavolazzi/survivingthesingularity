@@ -3843,7 +3843,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      have left?", and Marta's look, moved from "Pondwater". (3) Chapter 36: "and he had never reached for hers" and
      its sentence are out (his: "that's just not true and not good"). Claude's words: the bridge "We work together",
      "She moved a little closer", "scrunched up one shoulder", "After the pond,", "into the pillow", "November", the
-     wording of her pose. Rows 204 and 233 narrowed. 210 more words; 104,857 in the chapters; 141 scenes. Record:
+     wording of her pose. Rows 204 and 233 narrowed. Corrected in place the same night (CT: "That's a jump. We need to explain the physical
+     movement of people"): Marta's look is now its own short scene, "Later that afternoon, when Elijah was making his
+     rounds, he came through the shop. Marta looked at him ...". 221 more words; 104,868 in the chapters; 142 scenes. Record:
      `manuscript/novel/drafts/edit-240-pond-and-pillow.md`. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like

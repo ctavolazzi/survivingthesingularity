@@ -487,6 +487,16 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   line is plain.) So: when a line says every, all, never or always about something nobody could know or that couldn't
   be literally true, soften it the way he does ("just about", "more or less", section 5). Not a sweep: an absolute
   that is true, or one a character means, stays. He was clear this is for lines going forward, not another pass.
+- **Move the people.** Claude ended the pillow talk in bed and went straight to "Later that morning Marta looked at him
+  over her welding hood." CT: "That's a jump. We need to explain the physical movement of people, right? Like, later
+  that afternoon, when Elijah was making his rounds." When a line lands somewhere new, say the time and how the person
+  got there before the image (section 8, "Orient before the image"), and give a real jump its scene break. It became
+  a scene break and "Later that afternoon, when Elijah was making his rounds, he came through the shop. Marta looked
+  at him over her welding hood ..."
+- **When he hands over something he is pleased with, place it; don't audit it. [C]** Three times in one night
+  Claude answered a scene of his with a list of objections or a rearrangement of its own (Grace staying home from the
+  festival; the coworkers exchange as pillow talk; the kiss shown). Each time he had to say it again. Push back on a
+  real collision with the page in one line, with the fix, and keep his order of events.
 - **Keep his phrase whole when it is placed. [C]** His line was "the smell of a car you've been living in". The first
   placement (edit 235) broke it into "The cab had a smell ... A car you've been living in gets like that", which
   dropped two of his words and added a filler to join the pieces. Build the sentence around his phrase; don't cut the
@@ -542,4 +552,5 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 | a first draft of these instructions that called every rule his | the audit | rules marked his or **[C]**; sections 5, 6, 9, 11, 12 and 15 added |
 | a synopsis check from grepped lines; "Ray's was horses" | "you're just giving me what you think I want ... actually read the book" | read the chapters, then answer claim by claim; `find_in_book.py` and a claims file |
 | "the delivery bag, which held on to every order he'd ever carried" (smell pass draft, 27 Nov) | "which had held on to just about every order ... only a Sith deals in absolutes" | soften an absolute that can't be literally true (15c) |
+| "Later that morning Marta looked at him over her welding hood" straight after the pillow talk (edit 240) | "That's a jump. We need to explain the physical movement of people" | a scene break, the time, and how he got there (15c) |
 | Irene's advice in edit 221: "They weren't there about the pivot ... They wanted to know"; "Just don't tell yourself afterward it was free." | (caught in Claude's own review before CT read it) | the mirrored shape and the quotable closer creep into an elder's advice; say the plain thing ("what they wanted to know was ..."; "some of them won't stay") |

@@ -1059,6 +1059,8 @@ SENSE_WHOSE = {
     "By then the cab had the smell of a car you've been living in: smoke, a wet jacket, and the delivery bag, which had held on to just about every order he'd ever carried.": "CT's phrase; smoke, the jacket and the bag Claude's; \"just about\" CT's (edit 235)",
     "You stop noticing it after a while, but everyone else sure does, right away.": "CT's (edit 235)",
     "Over all of it was the perfume.": "CT's (edit 236)",
+    "The boards still gave off the smell of it.": "Claude's (edit 294), on CT's yes",
+    "its smoke came out low over the field and smelled like moss": "Claude's (edit 295), on CT's yes",
     "The perfume had come down the hall with Elijah and Ruby.": "CT's idea, Claude's words (edit 236)",
     "It was utterly decimated by the ferocity of the air from the kitchen.": "CT's (edit 236)",
     "The smoke lay down flat across the yard and got into everything.": "Claude's (edit 230)",
@@ -1080,7 +1082,7 @@ SENSE_WHOSE = {
     "He could still taste the tea.": "older text",
     "The smell had climbed the kitchen walls and gotten into the curtains": "Claude's (edit 221)",
 }
-SENSE_CALL = {31: "Add one line; Claude's draft shown, waiting on CT's yes " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 55: "Leave (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 63: "Leave: no smoke at the door (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 72: "Claude's kitchen-heat draft dropped (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 81: "Leave: no smell for the pits (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 89: "Logged, edit 293: \"Rosa's cooking\"; \"the heavenly scent\" left out (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 120: "Add one line, the old fence's smoke; Claude's draft shown, waiting on CT's yes " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 23: "Logged, edit 236 (the party)", 39: "Logged, edit 235 (the truck); corrected wording kept (CT, 27 Nov, sixteenth chat: \"I like the way it reads now.\")"}
+SENSE_CALL = {31: "Logged, edit 294 (CT: \"Yes log both\") " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 55: "Leave (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 63: "Leave: no smoke at the door (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 72: "Claude's kitchen-heat draft dropped (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 81: "Leave: no smell for the pits (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 89: "Logged, edit 293: \"Rosa's cooking\"; \"the heavenly scent\" left out (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 120: "Logged, edit 295, the old fence's smoke (CT: \"Yes log both\") " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 23: "Logged, edit 236 (the party)", 39: "Logged, edit 235 (the truck); corrected wording kept (CT, 27 Nov, sixteenth chat: \"I like the way it reads now.\")"}
 
 
 def senses(book, outdir, date):

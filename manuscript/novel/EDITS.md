@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 and 293 (27 Nov, the sixteenth chat), logged only. The next edit is 294.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat), logged only. The next edit is 296.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4131,6 +4131,20 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      seven." So "the kitchen" became "Rosa's cooking"; "the heavenly scent" is not in the book. CT's words. Searched:
      "Rosa's cooking" is nowhere else. Check row 206 narrowed to "Their coats had soaked up". Scene word count unchanged.
      Logged only.
+
+294. **Chapter 13: the barn still gives off the smell of hay.** From the senses pass (sixteenth chat, 27 Nov): a reader
+     flagged the barn, where "There were pallets where the hay had been." and nothing is smelled, in a key scene and a
+     place he grew up in. Claude's lean was one line; CT: "Go with your leans on all seven", then, shown the line, "Yes log
+     both". After "There were pallets where the hay had been.": "The boards still gave off the smell of it." **Claude's
+     wording**; nothing invented but the smell itself. Searched: "gave off" is nowhere else; "coming off" was avoided (the
+     madrone bark, Ch 14). Scene 31 grows by 9 words. Logged only.
+295. **Chapter 36: the old fence's smoke at the bonfire.** From the senses pass: the pile has "prunings and pallet wood and
+     the old fence", and CT confirmed it is the same old wooden fence along the east field as Chapters 17 and 26 (CT:
+     "Yes it's the same fence."), the one "that smelled like petrichor and moss when it rained"; the page says the rain
+     came that week. Shown first; CT: "Yes log both". After "grinned like a kid.": "The old fence was still wet from the
+     week's rain, and when it caught, its smoke came out low over the field and smelled like moss." **Claude's wording.**
+     Searched: "smoke ... lay down flat" (Praether, Ch 17) and "rolled out" (the rover, Ch 26) were avoided. Check row
+     233 now reads "grinned like a kid. The old fence was still wet". Scene 120 grows by 26 words. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

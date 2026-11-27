@@ -1678,6 +1678,10 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (292, "she was enjoying taking the scenic route.\nThey danced on a hillside", "she was enjoying taking the scenic route.\nOnce they started they just never stopped talking. Topics crossed intellectual property lines, ranging from ancient texts to which aisle was their favorite in the grocery store. There was something about Grace that made him want to know what she thought of just about everything.\nThey danced on a hillside"),
 # 293, Ch 27: the coats soaked up Rosa's cooking (CT's words, drafted in the smell chat; logged 27 Nov, sixteenth chat, on his "Go with your leans")
 (293, "Their coats had soaked up the kitchen all afternoon", "Their coats had soaked up Rosa's cooking all afternoon"),
+# 294, Ch 13: the barn still gives off the smell of hay (Claude's line, shown first; CT: "Yes log both", 27 Nov, sixteenth chat)
+(294, "There were pallets where the hay had been. White buckets", "There were pallets where the hay had been. The boards still gave off the smell of it. White buckets"),
+# 295, Ch 36: the old fence's smoke at the bonfire (Claude's line, shown first; CT: "Yes log both", 27 Nov, sixteenth chat)
+(295, "grinned like a kid. Elijah watched her from the far side, through the heat.", "grinned like a kid. The old fence was still wet from the week's rain, and when it caught, its smoke came out low over the field and smelled like moss. Elijah watched her from the far side, through the heat."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

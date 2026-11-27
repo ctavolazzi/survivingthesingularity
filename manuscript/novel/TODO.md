@@ -137,7 +137,7 @@ Need CT's yes:
 - [x] v8 made on CT's word (26 Nov): a new Doc from make_v6.py's .docx, no pictures, plus a locked backup; bridge map
       updated. Was: Ask CT how the final copy is made (a new Doc from make_v6.py's .docx, or the edits as suggestions in the v6
       Doc), then do it on his go and update the bridge map.
-- [x] The cover credit on the copyright page (in book.json, 26 Nov: "Cover credit: me, the author, sketches and Midjourney.")
+- [x] The cover credit on the copyright page (in book.json; CT, 27 Nov, fifteenth chat: "the author using pencil, paper, and stable diffusion". It was "me, the author, sketches and Midjourney.", 26 Nov)
       Was: The cover credit on the copyright page (`copyright_page` in `publication/novel/build/book.json`), his words.
 - [ ] The ISBN, when CT has it.
 - [ ] The large print PDF and the release build, when CT asks.

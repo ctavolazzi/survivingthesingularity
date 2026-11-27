@@ -119,7 +119,8 @@ Need CT's yes:
       memory spots, Ch 24 and Ch 27) are in `smell-table-2026-11-27.md`, last column his. Open until he rules on those.
 - [ ] The story checks (CT, 27 Nov): the calendar is done (`calendar-2026-11-27.md`) and so is layer one of the
       conversation map (`conversations-2026-11-27.md`, which also counts the sense words). To do, in this order: layer
-      two of the conversation map (a reader's pass, from a fresh read), then the money, objects, plants and payoffs.
+      two of the conversation map and the desires sheet (what each character wants, from their introduction to the
+      end, and scene by scene; one reader's pass, from a fresh read), then the money, objects, plants and payoffs.
       Plan and rules in `CHECKPOINT-2026-11-27-smell.md`, item 7.
 - [ ] The taste pass, in its own chat (CT, 27 Nov: "The next sense for the next session is taste"). Prompt in
       `CHECKPOINT-2026-11-27-smell.md`. Done the way the smell pass was: his lines first (ask him for them), a short

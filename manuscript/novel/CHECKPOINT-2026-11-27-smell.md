@@ -105,7 +105,9 @@ Put to him only when he asks, except the first, which is the first job of the ne
    June"), the two to read (`calendar-2026-11-27.md`), and the eighteen days reading as a ban, not an outage.
 7. **The findings in `knowledge-sheet-2026-11-27.md`**, first among them that Grace never says "why did you pretend to
    be poor" and the fire never mentions the hiding (held since edit 234).
-8. **Layer two of the conversation map** (a reader's pass), then the money, objects, and plants and payoffs sheets.
+8. **Layer two of the conversation map and the desires sheet** (one reader's pass; CT asked for the desires sheet
+   at the very end of the chat: "what the characters want, like maybe when they're introduced, how they're introduced,
+   what they desire, what they're after"), then the money, objects, and plants and payoffs sheets.
 9. **The taste pass.**
 10. Claude's wording and invented details in edits 235 to 241, each listed in its record in `drafts/`.
 11. Edits 224 to 241 into the Doc, and a new PDF, when he says. `main`'s `BRIDGE.md` and `WORKBOARD.md` still say v4.
@@ -159,6 +161,19 @@ and Melody; "Nobody talks about my man like that"; her whisper; a bang that wake
 in Chapter 34). My words and what the page
 gives it are in manuscript/novel/next-version-scenes-2026-11-26.md, section 7. Place it; don't audit it. Show me the
 draft before it's logged.
+
+Then a sheet I asked for: what every character wants, as they go through the book. Two tabs.
+- Characters: one row per person. Where and how they are introduced (the chapter, the scene and the first line that
+  names them; a script can find those). What they want when we meet them. What they want by the end, and the scene
+  where it changes. Whether they get it. Start from manuscript/NOVEL-CHARACTER-BIBLE-2026-11-23.md (its "surface want"
+  and "real want" for 28 people, checked against v5 on 24 Nov), but check every want against the built book: it was
+  written before Chapters 20 to 36 were rewritten and before edits 237 to 241.
+- Scenes: one row per scene (142), for what each person in it is after there.
+Do it in the same reading pass as layer two of the conversation map (conversations-2026-11-27.md), from a fresh read,
+with a quoted line for every want. Add it as a command in manuscript/tools/edits-v6/story_checks.py the way knowledge.py
+is built, put it in the story checks workbook in Drive as two more tabs, and end with a short list of what you found:
+a want that is set up and never paid, a person who wants nothing on the page, a change with no scene behind it. A fix
+to text already there, or flag it for me if only a scene would close it.
 
 Then the job: the taste pass. Taste only someone who was there would know, with a verb that carries the physics, where it
 carries the feeling or tells you something about the person, not one per page. If I haven't given you my own taste

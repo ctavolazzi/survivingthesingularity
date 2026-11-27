@@ -1628,6 +1628,11 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (273, 'Elijah got laid off on a Tuesday, eleven months after the toast.', 'Elijah got laid off eleven months after the toast.'),
 # 274, Ch 6: the big news (CT, 27 Nov, fourteenth chat)
 (274, "So I got laid off today. That's not the news.", "So I got laid off today. That's not the big news."),
+# 275, Ch 6: the video is two minutes and eleven seconds, title and all (CT, 27 Nov, fourteenth chat)
+(275, "Chapter 6: Four Minutes and Eleven Seconds\nChapter 7: You're Early", "Chapter 6: Two Minutes and Eleven Seconds\nChapter 7: You're Early"),
+(275, 'Chapter 6: Four Minutes and Eleven Seconds', 'Chapter 6: Two Minutes and Eleven Seconds'),
+(275, 'He reached forward and stopped it. Four minutes and eleven seconds.', 'He reached forward and stopped it. Two minutes and eleven seconds.'),
+(275, "It's four minutes. Please just watch it.", "It's two minutes. Please just watch it."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

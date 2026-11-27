@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 274 (27 Nov, the fourteenth chat), logged only. The next edit is 275.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 275 (27 Nov, the fourteenth chat), logged only. The next edit is 276.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4000,6 +4000,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      eleven months after the toast." "The Friday before" stays (it times Nina's warning). Logged only.
 274. **Chapter 6: the big news.** CT: "So I got laid off today. That's not the big news. Add big". "That's not the news."
      becomes "That's not the big news." Logged only.
+275. **Chapter 6: two minutes and eleven seconds.** CT: "I wanna change it to 2 minutes eleven seconds ... a 4 minute video is
+     LOOOONG". Checked first: nothing later depends on 4:11, and what Elijah says on camera is 318 words, a little over two
+     minutes. Changed in the three places it appears: the chapter title (Contents and heading), "He reached forward and
+     stopped it. Two minutes and eleven seconds.", and his message, "It's two minutes. Please just watch it." Denny's
+     "four minutes" of shouse footage (Ch 27) is left as it is. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

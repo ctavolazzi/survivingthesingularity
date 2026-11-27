@@ -320,6 +320,12 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
     replacements, 224 to 241 not in the Doc, 104,977 words, next edit 242. The edit list in Drive was remade with it; the scene sheet and the story checks were built at edit 240, and edit 241 changes one sentence that neither depends on.)
   - The edit list: "StS edit list, edits 1 to 242 (mirror of GitHub)", `1iMTDBkZeVOphVySnKMBNRHNZO2stZrsaUYi7VgRcZXc`.
 
+- **Since then (27 Nov, thirteenth to fifteenth chats):** edits 243 to 291 are logged in GitHub only; `TODO.md`'s
+  "Next edit" line is the current count (**292** at the close of the fifteenth chat, every check row passing, 223
+  accepted in v8, nothing PARTIAL, 128 scenes). The Drive copies of the scene sheet and story checks are at edit 245
+  and wait on CT's ask; the Drive edit list was last remade at 242. The free sample (Chapters 0 to 10 at edit 291)
+  is in `REFERENCE.md`, section 2.
+
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
 - **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and
   _workbench). Every chat logs there, whatever branch it was given. Checked 27 Nov: no other branch in either repo

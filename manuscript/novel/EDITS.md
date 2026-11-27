@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edit 244 (27 Nov, the fourteenth chat), logged only. The next edit is 245.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 and 245 (27 Nov, the fourteenth chat), logged only. The next edit is 246.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3885,6 +3885,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      looked me in the eye like I'd finally lost it." and "Recognize Your Power"; three centered lines, his capitals and
      periods. The book's last line ("Recognize Your Power", after Thank You) is unchanged. Rows 184 and 185 narrowed
      to match. All his words; nothing invented. Logged only; not in the v8 Doc yet.
+245. **Chapter 0: "it would appear like magic."** CT (27 Nov, the fourteenth chat): "I want the beer line to say 'and
+     it would appear like magic.' (New paragraph)". "Elijah would sit down and it would already be there." becomes
+     "Elijah would sit down and it would appear like magic.", and "At the far end, on the last stool, David's father
+     sat ..." starts its own paragraph (his choice, asked: keep "At the far end"). His words; nothing invented.
+     Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

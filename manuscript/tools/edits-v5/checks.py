@@ -250,4 +250,5 @@ C=[
 (242, 'Ch 17, Pondwater', ['Through process of elimination, he figured, something that kind of weirded him out.', "But could I ask what kind of perfume you're wearing?", 'She backed out of the cab with an armful of clothes.', '"Oh, you want to know my backstory?" Elijah said. "How much time you got?"', 'am I going to find anything sharp in here?', '"Pepper spray and a big stick. And you lived like this for how long?"', 'Marta braced for impact.', '"Pheromones," Marta said. "You two have chemistry."'], []),
 (243, 'Ch 26', ['Grace was back by the time the beds went in. Curtis had run the route all winter, and said so more than once.'], []),
 (244, 'Dedication', ["Dedication\nTo the people who called me crazy. Thank you for the motivation.\nAnd to you, dear reader.\nRecognize your power.\nAct One"], ["For the people I love who looked me in the eye like I'd finally lost it."]),
+(245, 'Ch 0', ['Elijah would sit down and it would appear like magic.\nAt the far end, on the last stool, David'], ['it would already be there.']),
 ]

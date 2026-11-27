@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 286 (27 Nov, the fourteenth chat), logged only. The next edit is 287.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat), logged only. The next edit is 288.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4074,6 +4074,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      April", which the next scene opens with), and "the gantry rail" is "the side board of the bed" twice (the book has no
      gantry; the rover steers by the side boards, Ch 26). 128 scenes now. Invented in the draft and still standing: April,
      the hospital in town, the big kit under Marta's bench. Logged only.
+287. **Chapter 6: the good coffee machine.** CT: "Add a line about the good coffee maker at the satellite office. I want to
+     smell. It smelled like a slice of heaven. If there's any other lines where something smells like a slice of heaven ...
+     search the book ... He's really going to miss the smell of that coffee maker." Searched: "heaven" is only in the
+     Architect's line (Ch 8) and the Lord's Prayer (Ch 39); nothing else smells like it. Placed on the layoff day, his last
+     stop at the fourth floor: "The sticky note was still on the side of it, curled now, the ink going brown. The coffee
+     smelled like a slice of heaven. He was really going to miss the smell of that coffee maker." "The coffee" for "It" is
+     Claude's, so it can't read as the sticky note. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

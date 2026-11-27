@@ -4118,7 +4118,7 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      sentence": his "There was something about..." became "There was something about Grace that made him want to know
      what she thought of just about everything." "There was something about" is CT's; the rest is **Claude's wording**
      (no invented fact; "just about" is his softener). It echoes "There was something about the way she asked" in
-     Chapter 15, where he reads her first email. Searched: "stopped talking", "grocery", "ancient
+     Chapter 15, where he reads her first email. CT on seeing it: "Keep it." Searched: "stopped talking", "grocery", "ancient
      texts" and "intellectual property" are nowhere else; "aisle" only as the fastener aisle at Kowalski's (Ch 25).
      Scene 87 goes from 176 to 221 words. Logged only.
 

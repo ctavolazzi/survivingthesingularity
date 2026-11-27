@@ -151,3 +151,5 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
   noted; these three files.
 - 26 Nov, seventh chat: Chapters 20, 21, 22 and 25 (edits 198 to 201); `WRITING-INSTRUCTIONS.md`; the plan.
 - 25 and 26 Nov: edits 1 to 197; v6 made (edits 1 to 138 in the Doc).
+
+- [ ] **Scene sheet audit (27 Nov):** apply `SCENE-SHEET-AUDIT-2026-11-27.md` section A to the Sheet and CSV, put section B to CT, and finish the timeline, 9:40 and Tuesday checks it lists.

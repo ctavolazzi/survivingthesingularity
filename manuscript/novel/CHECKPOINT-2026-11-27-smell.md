@@ -39,6 +39,20 @@ CT: "Get ready to close out this session. The next sense for the next session is
      `1p1IZDCCkdvO7tK9oFlvQhj3zf4-qg7TamU4Cd2nD3HA`): 23 checks hold, 3 known slips do not, 2 new ones to read, and
      Elijah's age turns out to be consistent and to set his birthday between about 3 March and mid May. **Next: the
      money.** Build each as a new command in `story_checks.py`, from the page, the way `knowledge.py` is built.
+   - **The conversation map** (CT, 27 Nov), in two layers. **Layer one is built** (`conversations-2026-11-27.md`,
+     `story_checks.py conversations`, Google Sheet `1frR-rdgqZ_d7Dq70T0gG-0uhlc7siyZHEzlNP81lhxg`): who speaks in each scene, pairs,
+     lines by chapter, and sense words (551 sound, 370 touch, 17 smell, 14 taste; 122 of 137 scenes have no smell
+     word). Speaker counts are rough (10% of lines not placed; an unnamed "he" is given to Elijah). **Layer two is for
+     the next chat, from a fresh read:** what each conversation that matters does for the two people in it. First
+     lead: Grace and Lou barely talk on the page before Chapter 34 tests them. It takes the place of the separate
+     senses sheet, and goes ahead of the money and objects sheets.
+   - **A new scene from CT, not drafted:** Curtis and Priya argue over the CEO of PorusAI on the screen (fired and
+     taken back); Grace and Elijah walk out; her father and the TV; "Elijah, do you personally know a billionaire?"
+     His words and what the page gives it are in `next-version-scenes-2026-11-26.md`, section 4. The CEO's name is
+     **Miles Renner** (Claude's pick at CT's word, 27 Nov; "Renner" is not in the book). CT decided against adding
+     the chips, an IPO or a bought off-grid AI: "we don't need to add more to the story. There's already so much
+     here." Also his, same day: the eighteen days should read as a government ban, not an outage (Ch 26, 38, Appendix
+     wording).
    - **Two more smell lines drafted and shown, not logged** (he asked for the drafts and has not said to log them):
      Ch 25, after "So did I.": "The heat came out the door at him with celery and butter in it, and a pot of turkey
      necks going for the gravy. Ma put hers on the night before, too." (all Claude's; invented: celery, butter, the

@@ -9,7 +9,14 @@ calendar  Every scene on a date, every time word the scene holds, and a list of 
           stated (the page gives it), worked (worked out from other scenes) or back (back story).
           CHECKS quotes the lines each check rests on; a quote that is not in the book stops the run.
 
-(money, objects, plants and senses are to come; CT asked for all five on 27 Nov 2026.)
+conversations  Layer one of the conversation map: what a script can count. For each scene, who speaks and how
+          many lines, how much of it is talk, and how many sound, touch, smell and taste words it holds; for each
+          pair of people, how many lines they trade and where; for each person, lines by chapter. A line's speaker
+          is the first name in its narration; an untagged line between two people goes to the other one. It does
+          not read for meaning: what a conversation does for the story is layer two, a reader's job.
+          Writes conversations-DATE.csv, conversation-pairs-DATE.csv and conversation-lines-DATE.csv.
+
+(money, objects and plants are to come; CT asked for them on 27 Nov 2026.)
 """
 import csv
 import datetime as dt
@@ -280,8 +287,112 @@ def calendar(book, outdir, date):
         print("  steps back without a reason:", r[0], r[1], "|", r[4])
 
 
+# ---------------------------------------------------------------- conversations (layer one: what a script can count)
+PEOPLE_C = {  # name on the page -> who (first match in the narration of a line of talk is taken as its speaker)
+    "Elijah": "Elijah", "Grace": "Grace", "Lou": "Lou", "Marta": "Marta", "Curtis": "Curtis", "Priya": "Priya",
+    "Tyler": "Tyler", "Denny": "Denny", "Reuben": "Reuben", "Patricia": "Patricia", "Irene": "Irene", "Wren": "Wren",
+    "Frank": "Frank", "Rosa": "Rosa", "Hector": "Hector", "Lupe": "Lupe", "David": "David", "Devendra": "Devendra",
+    "Ruby": "Ruby", "Gus": "Gus", "Trent": "Trent", "Melody": "Melody", "Manny": "Manny", "Ray": "Ray",
+    "Praether": "Praether", "Bidwell": "Bidwell", "the reader": "Bidwell's reader", "The reader": "Bidwell's reader",
+    "his mother": "Ma", "His mother": "Ma", "the aide": "the aide", "Nina": "Nina", "Dale": "Dale", "Yvonne": "Yvonne",
+    "the old man": "the old man", "The old man": "the old man", "the realtor": "the realtor", "The realtor": "the realtor",
+    "the moderator": "the moderator", "the voice": "the Architect", "Tyler's": "Tyler",
+}
+WOMEN = {"Grace", "Marta", "Priya", "Patricia", "Irene", "Wren", "Rosa", "Lupe", "Melody", "Ma", "the aide", "Nina", "Yvonne", "the Architect"}
+NAME_RE = re.compile("|".join(sorted((re.escape(k) for k in PEOPLE_C), key=len, reverse=True)))
+QUOTE = re.compile(r'"[^"]*"?')
+SENSES = {
+    "Sound": r"\b(heard|hear|sound\w*|ticked|ticking|buzz\w*|rang|ring\w*|hum\w*|quiet|loud\w*|clank\w*|click\w*|voice|radio|bell|laugh\w*|shout\w*|yell\w*|whisper\w*)\b",
+    "Touch": r"\b(cold|warm\w*|hot|heat|cool|wet|damp|soft|rough|touch\w*|squeez\w*|grip\w*|hug\w*|shak\w+|shook|hand on|hands on|held|holding)\b",
+    "Smell": r"\b(smell\w*|scent|stink\w*|reek\w*|perfume)\b",
+    "Taste": r"\b(tast\w+|flavor\w*|sweet|bitter|sour|salt\w*)\b",
+}
+
+
+def conversations(book, outdir, date):
+    sc = scene_sheet.scenes(book)
+    scene_rows, pair, lines_by = [], {}, {}
+    chapters, total, named = [], 0, 0
+    for n, (head, k, paras) in enumerate(sc, 1):
+        ch = head.split(":")[0].replace("Chapter ", "Ch ")
+        if ch not in chapters:
+            chapters.append(ch)
+        last, prev2, seq = None, None, []
+        last_g = {"f": None, "m": None}
+        pov = any("Elijah" in p for p in paras)   # the book sits on his shoulder: an unnamed "he" is nearly always him
+        for p in paras:
+            p = norm(p)
+            narr = QUOTE.sub(" ", p) if '"' in p else p
+            found = [PEOPLE_C[m.group(0)] for m in NAME_RE.finditer(narr)]
+            if '"' in p:
+                total += 1
+                pro = re.search(r"\b(she|her|he|his|him)\b", narr, flags=re.I)
+                if found:
+                    who = found[0]
+                    named += 1
+                elif pro and pro.group(1).lower() in ("she", "her") and last_g["f"]:
+                    who = last_g["f"]                                   # "she said": the last woman named
+                elif pro and pro.group(1).lower() in ("he", "his", "him") and (pov or last_g["m"]):
+                    who = "Elijah" if pov else last_g["m"]
+                elif last and prev2 and last != prev2:
+                    who = prev2      # two people trading lines: an untagged line goes to the other one
+                else:
+                    who = "?"
+                if who != "?" and who != last:
+                    prev2, last = last, who
+                seq.append(who)
+            for w in found:
+                last_g["f" if w in WOMEN else "m"] = w
+        known = [w for w in dict.fromkeys(seq) if w != "?"]
+        if len(known) == 1 and pov and known[0] != "Elijah":
+            known.append("Elijah")
+        if len(known) == 2:              # a two-person scene: fill the gaps by turns
+            for i, w in enumerate(seq):
+                if w == "?":
+                    prev = seq[i - 1] if i else None
+                    seq[i] = known[1] if prev == known[0] else known[0] if prev == known[1] else "?"
+        speakers = {}
+        for w in seq:
+            if w != "?":
+                speakers[w] = speakers.get(w, 0) + 1
+                lines_by.setdefault(w, {}).setdefault(ch, 0)
+                lines_by[w][ch] += 1
+        for a, b in zip(seq, seq[1:]):
+            if a != b and "?" not in (a, b):
+                key = tuple(sorted((a, b)))
+                d = pair.setdefault(key, {"n": 0, "scenes": [], "ch": []})
+                d["n"] += 1
+                if n not in d["scenes"]:
+                    d["scenes"].append(n)
+                if ch not in d["ch"]:
+                    d["ch"].append(ch)
+        text = " ".join(paras)
+        senses = [len(re.findall(rx, text, flags=re.I)) for rx in SENSES.values()]
+        talk = sum(len(q.split()) for p in paras for q in QUOTE.findall(norm(p)))
+        words = sum(len(p.split()) for p in paras)
+        order = sorted(speakers.items(), key=lambda x: -x[1])
+        scene_rows.append([n, head, k, " ".join(paras[0].split()[:8]), words, f"{100 * talk // max(words, 1)}%", len(seq),
+                           "; ".join(f"{w} {c}" for w, c in order), seq.count("?")] + senses)
+    os.makedirs(outdir, exist_ok=True)
+
+    def write(name, header, rows):
+        with open(os.path.join(outdir, f"{name}-{date}.csv"), "w", newline="") as f:
+            w = csv.writer(f)
+            w.writerow(header)
+            w.writerows(rows)
+
+    write("conversations", ["#", "Chapter", "Scene", "Opens with", "Words", "In quotes", "Lines of talk", "Who speaks (lines)", "Lines with no speaker found"] + list(SENSES), scene_rows)
+    prow = [[a, b, d["n"], len(d["scenes"]), d["ch"][0], d["ch"][-1], ", ".join(d["ch"])] for (a, b), d in sorted(pair.items(), key=lambda x: -x[1]["n"])]
+    write("conversation-pairs", ["Who", "With", "Lines traded", "Scenes", "First", "Last", "Where"], prow)
+    who_order = sorted(lines_by, key=lambda w: -sum(lines_by[w].values()))
+    write("conversation-lines", ["Who", "All"] + chapters, [[w, sum(lines_by[w].values())] + [lines_by[w].get(c, "") for c in chapters] for w in who_order])
+    unk = sum(r[8] for r in scene_rows)
+    print(f"{len(scene_rows)} scenes, {total} lines of talk: {named} with a name beside them, {total - named - unk} placed by pronoun or by turns, {unk} not placed ({100 * unk // total}%); {len(pair)} pairs")
+    return pair, lines_by, chapters
+
+
 if __name__ == "__main__":
-    if len(sys.argv) < 4 or sys.argv[1] != "calendar":
+    if len(sys.argv) < 4 or sys.argv[1] not in ("calendar", "conversations"):
         sys.exit(__doc__)
     date = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else "2026-11-27"
-    calendar(sys.argv[2], sys.argv[3], date)
+    {"calendar": calendar, "conversations": conversations}[sys.argv[1]](sys.argv[2], sys.argv[3], date)

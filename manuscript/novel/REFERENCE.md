@@ -38,6 +38,7 @@ them: `STORY-REPORT-2026-11-26.md` (the evaluation) and `NEXT-BUILD.md` (the str
 | Edit status against the Doc | `EDITS-status.md` (written by verify.py) |
 | Who knows what, and when (the secrets) | `knowledge-sheet-2026-11-27.md` and its three CSVs; Google Sheet "Surviving the Singularity: who knows what (edits 1 to 236)" (`1KEqKBYo45ULGnSR9eNx4VcwIYNbbGuMOmln3N8eIyZU`). Rebuilt by `knowledge.py` |
 | When every scene happens, and what a calendar can test | `calendar-2026-11-27.md` and its two CSVs; Google Sheet `1p1IZDCCkdvO7tK9oFlvQhj3zf4-qg7TamU4Cd2nD3HA`. Rebuilt by `story_checks.py calendar` |
+| Who talks to whom, how much, and the sense words in each scene (layer one, rough) | `conversations-2026-11-27.md` and its three CSVs; Google Sheet `1frR-rdgqZ_d7Dq70T0gG-0uhlc7siyZHEzlNP81lhxg`. Rebuilt by `story_checks.py conversations` |
 | What happens in each chapter | `PLAN-CHAPTERS-20-TO-36.md`, sections 6 and 11 (11 wins for 27 to 36) |
 | Arcs, quarrels, the chain of cause | the plan, section 10 |
 | Every open question and its decision | the plan, section 12; anything still CT's is in `TODO.md`, section 1 |

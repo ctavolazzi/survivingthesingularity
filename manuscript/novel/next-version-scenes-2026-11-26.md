@@ -772,3 +772,34 @@ What the page gives it (this changes Claude's suggestion above from December 202
 - One line to square: in the kitchen Priya says the little rover "gave us back a day a week. I measured." His new
   line says it "only works half the time". If the new line is Marta's (or Irene's), said after the bad night, Priya
   can answer it with her sheet: it works, and it is too small.
+
+## 8. Grace smells better than anyone (CT, 27 Nov 2026, the very end of the smell chat). Drafted and shown; not logged.
+
+His words, as sent:
+
+One thing I want to add before we're all the way done is I want Elijah to notice that Grace smells better than anyone he's ever met before. And it could be early on, like when she's cleaning out his truck. There's this smell that he doesn't quite recognize, and it smells really good. And he realizes it's Grace. Like, she smells better than anyone he's ever smelled before. And you could ask her, like, hey, he's still timid at this point, right? So he's like, hey, I'm sorry. If this is too much, but could I ask what kind of perfume you're wearing? And she can, like, turn around, look behind her from inside the truck. She's like, perfume? She's like, oh. You really are new to this, aren't you? She thinks he's new to farming, right? Because she doesn't know his family backstory at that point. And she's like, she gets up with a, handful of trash or towels or whatever she's using to clean, because she's doing him a huge favor. A bag of junk or whatever it is that makes sense in the context of that scene. And she's like, I don't wear perfume. Very few people out here do. She's like, are you from the city? What's your deal? You from the city? What's your story? And Elijah will think, oh, we don't have time for that. Or he'll say out loud, oh, you want to know my story? How much time you got? And then something can interrupt the exchange, just like it would in any classic narrative.
+
+### The draft. **His words are in bold.**
+
+Chapter 17, "That Sunday Grace helped him clean out the truck." After "He got the notebook out from under the seat before
+she did, with the yellow ticket still in it behind the gas receipt, and stuffed it in his jacket." and before "Then
+she pulled the blanket off the floor on the passenger side and stopped.":
+
+> Somewhere in there he caught **a smell he didn't quite recognize.** It cut straight through what five months had done to the cab, and **it smelled really good.** It took him a second to work out that **it was Grace.** **She smelled better than anyone he had ever smelled before.**
+>
+> "**Hey, I'm sorry,**" he said. "**If this is too much. But could I ask what kind of perfume you're wearing?**"
+>
+> She **looked behind her from inside the truck.** "**Perfume?**" Then: "**Oh. You really are new to this, aren't you?**"
+>
+> She backed out of the cab with **a bag of junk** in one hand and the sock in the other. "**I don't wear perfume. Very few people out here do.**" She looked him over. "**You from the city? What's your story?**"
+>
+> "**Oh, you want to know my story?**" Elijah said. "**How much time you got?**"
+>
+> She ducked back into the cab.
+
+The interruption is the scene's own next line: she pulls the blanket off the passenger side and finds the amp ("Oh my
+God."). Claude's words: "Somewhere in there", "It cut straight through what five months had done to the cab" (the
+smell of the cab is edit 235), "It took him a second to work out that", "She backed out of the cab", "the sock" (on the
+page a line earlier), "She looked him over", "She ducked back into the cab". "Better than anyone he had ever smelled"
+is an absolute he means, so it stays (15c). It answers the perfume of Chapters 8 and 9: the women in the city wear
+it; Grace doesn't.

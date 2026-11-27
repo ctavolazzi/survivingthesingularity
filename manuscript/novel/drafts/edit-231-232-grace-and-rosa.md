@@ -1,4 +1,4 @@
-# Edits 231 and 232: Grace's talk about the bed (Ch 17) and Rosa's ladle (Ch 31)
+# Edits 231 and 232: Grace's talk about the bed (Ch 17) and Rosa's grace and ladle (Ch 27)
 
 27 November 2026, eleventh logging chat. Source: CT's dictation of 26 Nov, held when edit 228 was logged (the held part
 is in `edit-228-lou-comes-in.md`, "Held for CT"). CT then asked: "Send out readers, evaluate what you think is the best
@@ -41,10 +41,8 @@ His dictation splits in three along its own seams:
    Chapter 17 opens on "For three days, no one really asked him anything.", with "He looks thin." through the wall of
    the kitchen trailer, and Rosa says "Mijo, you look muy flaco. Come in, eat." at her door (his edit 110). Nothing
    added.
-2. **The ladle** is "later in the book", as he said. It opens Chapter 31, the Sunday after the county meeting where
-   Rosa spoke with a minute left and Elijah's slides fell apart. Her "Sometimes you can over-prepare" pays off two lines
-   later in the book as it stands: "No laser pointer. One page. He had learned that much." and "He'd kept it under three
-   minutes." Patricia's "Rosa doesn't get a year." comes a page after. The tamales come back in Chapter 38.
+2. **The ladle** is "later in the book", as he said: Thanksgiving 2026, at the end of Chapter 27, with Rosa's grace
+   (section 2). The tamales come back in Chapter 38.
 3. **The talk about the bed** has to be in his first days ("when do I start paying", "stay here for free"), so it goes
    in Chapter 17. Rosa cannot send him to Grace then: she lives in a converted garage in town, her wrist is in a brace,
    and he first meets her on Curtis's route weeks later. So the talk starts from Grace's own habit on the page ("Grace
@@ -89,9 +87,32 @@ Taken out: the fillers "like" and "he's like", and "pauses for a minute" folded 
 good to be true?" is said out loud, as he dictated it ("He's like, is this too good to be true?"). Claude's: the first
 sentence, and "and" in "He thought about it, and lingered a minute."
 
-## 2. Edit 232, Chapter 31 (a new first scene, then a scene break, before "Elijah brought the Friday table a plan.")
+## 2. Edit 232, Chapter 27, Thanksgiving 2026 (between "he said yes before he had thought about it." and "After the kitchen trailer fed forty,")
 
-The Sunday after the county meeting, Elijah carried pots at the grange hall. Rosa was serving. She had seen his slides.
+First placed as the opening scene of Chapter 31, the Sunday after the county meeting. Moved the same day on CT's word:
+"And the meal is Thanksgiving, maybe? and they pray, which would set up Rosa's ladle scene for the end of the book
+where the farm is praying and they're saying the Lord's Prayer". Asked which prayer: **"Rosa's own grace, in Spanish,
+whatever Hispanic Catholics say as she holds a rosary."** (The frame at the Bear Flag holds the Serenity Prayer, not the
+Lord's Prayer; the Lord's Prayer is the farm's in Chapter 38, which Elijah hears under the frame in Chapter 39.)
+
+Then CT, the same day: **"It's her first time making Thanksgiving dinner for the farm, but she's got lots of
+experience"** and **"They appreciate her and the events unfold with the writing edits and style we've established"**.
+
+Rosa made the dinner that year, **her first for the farm**. She had been in the kitchen trailer since before it was
+light, her wrist still in the brace. Curtis asked her where she'd learned to cook for forty.
+
+**"I had a big family, but life got away from us. The love is still there, deep down, even if the finances maybe get in
+the way sometimes," Rosa explained. "But for the last couple years I volunteer at the church kitchen and we cook a lot
+of food, I cook all day, and now I cook all day here for you!"**
+
+Lou started the clapping, and the whole trailer took it up. Rosa flapped a dish towel at them until they quit.
+
+Before anybody ate, she took a **rosary** out of her apron pocket, held it in her good hand, and said **grace**.
+
+*Bendícenos, Señor, y bendice estos alimentos que por tu bondad vamos a recibir. Por Cristo nuestro Señor. Amén.*
+
+Elijah carried pots. He had built the holiday route into an app the night before, with a map and a backup for every
+stop, and between pots he showed it to her.
 
 **"I don't really understand all this technology stuff,"** she said. **"It goes over my head. In one ear, out the
 other."**
@@ -109,31 +130,47 @@ They don't taste too good."**
 
 She held out the bowl. **"Please take this to Grace. It's her turn to eat."**
 
-Slips fixed: "I do no good food" is "I do know good food"; "one in one ear" is "In one ear". He restated the chest
-beat ("taps him on the chest ... rubs his chest, like taps him on the chest, and then puts her whole palm on his
-chest"); the last version is the line. Claude's: the three opening sentences, "filled a bowl" for his "drops it in the
-bowl" (so it can't read as dropping the ladle), and "She held out the bowl" (the same bowl goes to Grace). "Rosa was
-serving", not cooking: in February her wrist is still in the brace (Ch 30), and it comes out only in Chapter 38.
+The grace is the standard Spanish Catholic blessing before meals ("Bless us, O Lord, and these thy gifts ..."), as
+Catholic.net and Opus Dei's blessing of the table give it; some versions say "vamos a tomar" for "vamos a recibir". It
+is set in italics like the Lord's Prayer in Chapter 38, and not translated. Slips fixed: "I do no good food" is "I do
+know good food"; "one in one ear" is "In one ear". He restated the chest beat; the last version is the line. Claude's:
+"since before it was light", the brace, Curtis's question, the clapping and the dish towel, the apron pocket and her good
+hand, "Before anybody ate", Elijah carrying
+pots, the app for the holiday route (it is the "technology stuff" she means and what "prepared" answers), "and filled a
+bowl" for his "drops it in the bowl", and "She held out the bowl."
+
+What it sets up: her lesson now comes before the county meeting, so he ignores it, brings fourteen slides, and watches
+Rosa do it in under two minutes with no page (Ch 30); Chapter 31's "No laser pointer. One page. He had learned that
+much." is where it lands. The grace is the first prayer at a co-op meal; Irene's "Walt always did the Lord's Prayer,
+when he couldn't think what else." (Ch 38) still reads as the table reaching for one of its own.
 
 ## Facts Claude invented
 
 - One night in his first days Grace sits down across from him at the kitchen trailer with her own plate (231).
-- The Sunday after the county meeting Elijah carries pots at the grange hall; Rosa is serving there; she had seen his
-  slides; Grace is working in the hall that morning (232). The book already has the kitchen feeding forty at the grange
-  hall on Sunday mornings (Ch 31) and Rosa at its sink (Ch 29).
+- At Thanksgiving 2026 Rosa cooks from before light with her wrist still in the brace; Curtis asks where she learned to
+  cook for forty; Lou starts the clapping; the rosary is in her apron pocket, and she says grace before the forty eat; Elijah carries pots and built the holiday route into an app the night before; Grace is
+  working the meal (232). The book already has the kitchen trailer feeding forty that day (Ch 27) and Rosa at the grange
+  hall sink in January (Ch 29).
 
 ## Touches other chapters
 
 - Chapter 17's "For three days, no one really asked him anything." stands: "How are you liking your bed?" is small talk.
 - Chapter 17's later "I thought I was here to contribute." / "You are," Grace said. "And you do." now answers her "I
   trust you'll do the same."
-- Rosa's "You have the heart of a helper" (Ch 31) and Lou's "Your heart is in the right place." (Ch 35) sit four
-  chapters apart. Both stay; it is CT's to say whether that is weight or a repeat.
-- It can no longer be "one of the first reasons why Elijah and Grace talk": by Chapter 31 they have talked for two
-  years. The first-days talk is in Chapter 17 instead.
+- Rosa's "You have the heart of a helper" (Ch 27) and Lou's "Your heart is in the right place." (Ch 35) are eight
+  chapters apart.
+- Chapter 38: "And Rosa, at her first dinner, in a good blouse," is now "And Rosa, in a good blouse," (19 Nov text;
+  she made the farm's Thanksgiving the year before).
+- Chapter 17 (spring 2025) has her unable to cook for her wrist ("I said I used to cook." / "I asked if they had
+  anything I could heat."), inside his "for the last couple years I volunteer at the church kitchen ... I cook all
+  day". Logged as he said it; "this last year" would square it. His call.
+- Grace gets the bowl during the meal, and after it she and Elijah eat a chicken off one plate in her room (the book's
+  line, kept).
+- It can no longer be "one of the first reasons why Elijah and Grace talk": by Thanksgiving 2026 they are together.
+  The first-days talk is in Chapter 17 instead.
 
 After review (same day): the first sentence was "One night, when his plate was empty, she sat down across from him
-with her own."; "empty" repeated the line before it ("stood there until it was empty"). Rosa's palm on his chest is
-kept as he said it; Wren's "She put her palm on her own chest.", a page later in Chapter 31, is cut instead (edit 233).
+with her own."; "empty" repeated the line before it ("stood there until it was empty"). Wren's "She put her palm on her
+own chest." in Chapter 31 was cut while Rosa's scene opened that chapter, and put back when the scene moved.
 
-Words: 186 in (231), 160 in (232), none out.
+Words: 186 in (231), 329 in (232), 3 out (Ch 38).

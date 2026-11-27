@@ -3645,31 +3645,41 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      free" is the room, as her message has it; the pay still goes to the table (Ch 16, 26). 186 words in. Record:
      `manuscript/novel/drafts/edit-231-232-grace-and-rosa.md`. Logged only; not in the v8 Doc yet.
 
-232. **Chapter 31 opens on Rosa and the ladle.** CT (26 Nov, eleventh chat), held with 231: "maybe Rosa can come back
-     in later in the book as like part of the proletariat". His, word for word: "I don't really understand all this
-     technology stuff," she said. "It goes over my head. In one ear, out the other." / She paused, turned around with
-     the ladle ... "I do know good food. In this place, they make a lot of good food. Nourishes the whole community."
-     She pointed at him and tapped him on the chest. Then she put her whole palm on his chest and rubbed it in circles.
-     "You have the heart of a helper. I can tell." / "I just want everybody to be prepared," / "Prepared is sometimes
-     not helpful. Sometimes you can over-prepare. If I over-prepare my tamales, they fall apart. They don't taste too
-     good." / Elijah kind of got it. / "Please take this to Grace. It's her turn to eat." Slips fixed: "I do no good
-     food", "one in one ear". Claude's: "The Sunday after the county meeting, Elijah carried pots at the grange hall.
-     Rosa was serving. She had seen his slides.", "and filled a bowl" for his "drops it in the bowl", "She held out the
-     bowl." A scene break follows, then "Elijah brought the Friday table a plan.", whose "No laser pointer. One page. He
-     had learned that much." pays it off. 160 words in. Record: `drafts/edit-231-232-grace-and-rosa.md`. Logged only;
+232. **Chapter 27: Rosa makes Thanksgiving 2026; her grace and the ladle.** CT (26 Nov, eleventh chat), held with 231:
+     "maybe Rosa can come back in later in the book as like part of the proletariat". First placed as the opening scene
+     of Chapter 31; moved on 27 Nov on his word: "And the meal is Thanksgiving, maybe? and they pray", "Rosa's own
+     grace, in Spanish, whatever Hispanic Catholics say as she holds a rosary", and "It's her first time making
+     Thanksgiving dinner for the farm, but she's got lots of experience" with her line, word for word: "I had a big
+     family, but life got away from us. The love is still there, deep down, even if the finances maybe get in the way
+     sometimes," Rosa explained. "But for the last couple years I volunteer at the church kitchen and we cook a lot of
+     food, I cook all day, and now I cook all day here for you!" Then, his, from 26 Nov: "I don't really understand all
+     this technology stuff," she said. "It goes over my head. In one ear, out the other." / She paused, turned around
+     with the ladle ... "I do know good food. In this place, they make a lot of good food. Nourishes the whole
+     community." She pointed at him and tapped him on the chest. Then she put her whole palm on his chest and rubbed it
+     in circles. "You have the heart of a helper. I can tell." / "I just want everybody to be prepared," / "Prepared is
+     sometimes not helpful. Sometimes you can over-prepare. If I over-prepare my tamales, they fall apart. They don't
+     taste too good." / Elijah kind of got it. / "Please take this to Grace. It's her turn to eat." The grace is the
+     standard Spanish Catholic blessing before meals, in italics: *Bendícenos, Señor, y bendice estos alimentos que por
+     tu bondad vamos a recibir. Por Cristo nuestro Señor. Amén.* Claude's: "Rosa made the dinner that year, her first for
+     the farm." (his fact), "since before it was light", the brace, Curtis's question, the clapping and the dish towel,
+     the rosary in her apron pocket and her good hand, "Before anybody ate", "Elijah carried pots.", the app for the
+     holiday route, "and filled a bowl", "She held out the bowl." Between "he said yes before he had thought about it."
+     and "After the kitchen trailer fed forty,". Forced by it: Chapter 38's "And Rosa, at her first dinner, in a good
+     blouse," is "And Rosa, in a good blouse,". Her lesson now comes before the county meeting (Ch 30); Chapter 31's
+     "One page. He had learned that much." is where it lands. Open: Chapter 17 has her unable to cook in spring 2025,
+     inside "the last couple years". 329 words in, 3 out. Record: `drafts/edit-231-232-grace-and-rosa.md`. Logged only;
      not in the v8 Doc yet.
 
 233. **The finishing pass (Ch 0 to the Appendix).** CT (26 Nov, eleventh chat): "Send out readers ... to finish the
      story arc, to finish the narratives, to finish the characters, to finish everything. After this, if possible, I
      don't really want to change or add anything." Seventeen readers, 69 gaps, 33 verified on the page, a plan judged
-     from three and checked by a critic. 31 line fixes, all Claude's wording: Ch 0 "Elijah said it once to Wes" and
+     from three and checked by a critic. 30 line fixes, all Claude's wording: Ch 0 "Elijah said it once to Wes" and
      "didn't know him"; Wes's *is this true* back in the Ch 6 and Ch 13 replays; Ch 17 Lou's cover a gift (Grace's line
      out, the secrecy now said once, by Lou at the barn), Priya's pencil back behind her ear; Ch 18 "Grace and Elijah" and
      "Good. Keep it that way." out; Ch 26 "That was in the first notebook" (he heard the Architect's answer in Ch 9) and the July
      coffee "at the kitchen trailer"; Ch 27 "in June" out of the pledge, Tyler's reading covers the boxes, and a scene break between the two
      Fridays; Ch 29
-     "delivery time"; Ch 31 "A hundred strangers" twice, Denny's daughter, and Wren's palm on her chest out (Rosa's
-     comes a page before it); Ch 32 "a whole file", "six years" out,
+     "delivery time"; Ch 31 "A hundred strangers" twice and Denny's daughter; Ch 32 "a whole file", "six years" out,
      the second "Halve it" out, "till June" out; Ch 33 the Ohio machinist's household and Lou's back seat "before her
      shift"; Ch 34 Marta's welder at the shop after the plant, "What guy?", "found the price list"; Ch 36 Irene's step
      and "Two years before ... eight feet" out; Ch 39 "A while later"; Praether in the Appendix. Rows 197, 205 and 220

@@ -84,6 +84,6 @@ his line, "For three days, no one really asked him anything."
   first night he raises "About the pay."
 
 **Placed, 27 Nov (same chat), as edits 231 and 232** after CT's "Send out readers, evaluate what you think is the best
-course of action": the talk about the bed in Chapter 17 (Grace sits down with her own plate), and Rosa and the ladle as
-the first scene of Chapter 31. Rosa feeding him in the first days was already on the page. See
+course of action": the talk about the bed in Chapter 17 (Grace sits down with her own plate), and Rosa's grace and the ladle
+at Thanksgiving 2026 (Chapter 27; first placed at the start of Chapter 31, moved on CT's word). Rosa feeding him in the first days was already on the page. See
 `edit-231-232-grace-and-rosa.md`.

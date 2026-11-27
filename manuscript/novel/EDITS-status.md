@@ -242,5 +242,5 @@ Edit 57 was never used.
 | 229 | Ch 27 | not in the Doc | "Guys. They just solved the Riemann hypothesis." |
 | 230 | Ch 17, 18 | not in the Doc | "Lou tells me you want to store some robot arms out in my old barn,... |
 | 231 | Ch 17 | not in the Doc | "How are you liking your bed? Is it comfy enough?" |
-| 232 | Ch 31 | not in the Doc | The Sunday after the county meeting, Elijah carried pots at the gra... |
+| 232 | Ch 27, 38 | not in the Doc | Rosa made the dinner that year, her first for the farm. |
 | 233 | Ch 0 to 39, Appendix | not in the Doc | Elijah said it once to Wes |

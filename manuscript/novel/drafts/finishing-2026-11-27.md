@@ -16,11 +16,11 @@ when another chat's edits 229 and 230 were merged from the same branch. That cha
 scene in Chapter 17, which settled three of the places this pass had (the lien-sale timing, "They put cans in boxes.",
 who drives the loader); three items from its fix list were added here.
 
-**What it is.** 31 places, all line fixes: a word, a phrase, a cut sentence, or one added sentence where the page had a
+**What it is.** 30 places, all line fixes: a word, a phrase, a cut sentence, or one added sentence where the page had a
 setup with no payoff. No new scenes. All the wording is Claude's except where noted. The readers found no filler scene
 to cut; the whittling CT wants starts from what feels long to him when he reads. Logged only; not in the v8 Doc.
 
-## The 31 places
+## The 30 places
 
 ### Ch 0
 
@@ -149,14 +149,6 @@ Book now: "Twenty strangers a year at my press."
 Change to: "A hundred strangers a year at my press."
 
 The same: Marta answers his hundred.
-
-### Ch 31
-
-Book now: ""I'm just noticing there's a lot of urgency in the room," said Wren. She said it kindly. She put her palm on her own chest. "You keep saying June.""
-
-Change to: ""I'm just noticing there's a lot of urgency in the room," said Wren. She said it kindly. "You keep saying June.""
-
-Found by the review of these edits: Rosa's palm on his chest (CT's, edit 232) now comes a page before it, in the same chapter. His line stays; this one goes. Wren's hand on her chest is still there in Ch 20, 23, 32, 33, 37 and 38. The sentence is from the 19 Nov text.
 
 ### Ch 31
 
@@ -302,8 +294,6 @@ He is in six chapters and holds the arms at the end (Ch 37), and the cast list h
 - **Epilogue, "Some weeks he signed right under her."** It cannot happen: it is the one front-desk book, David signs
   every Sunday, and the line before has him turning back a page. The fix would be "Some weeks he signed on the same page
   as her." It is his last page.
-- **Rosa's "You have the heart of a helper" (Ch 31) and Lou's "Your heart is in the right place." (Ch 35)**, four
-  chapters apart: weight, or a repeat.
 
 ## Looked at and left alone
 

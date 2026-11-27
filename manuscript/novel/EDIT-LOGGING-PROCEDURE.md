@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS edit list, edits 1 to N
-   (mirror of GitHub)" (id 1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I, edits 1 to 236; https://docs.google.com/document/d/1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
+   (mirror of GitHub)" (id 1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY, edits 1 to 236; https://docs.google.com/document/d/1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -276,7 +276,7 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   make_v6.py passes **236 rows (611 replacements)**; verify.py on v8 shows 223 accepted and **224 to 236 not in the
   Doc**, nothing PARTIAL; 103,647 words; build_gate.py NOT READY, 10 open boxes once the taste pass box was added at the close. **The next edit is 237.** Neither Doc
   was changed. The Drive copy of the edit list was refreshed at the end of the smell chat, on CT's word: "StS edit
-  list, edits 1 to 236 (mirror of GitHub)", id `1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I`, uploaded as text/plain and checked against `EDITS.md` (the
+  list, edits 1 to 236 (mirror of GitHub)", id `1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY`, uploaded as text/plain and checked against `EDITS.md` (the
   same text, edit numbers intact). The 1 to 233 copy is "OLD:" with the new id in its title and a pointer at its
   top. The scene sheet (Sheet and CSV) was not changed: rows 29
   and 48 are 100 and 48 words short, and its title still says edits 1 to 233. **The knowledge sheet** (who knows
@@ -314,8 +314,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
     `11zW0LizfKqEXEmFIrTQ5MpeuW7rLtg9C5mrqm1zjsf8` (who knows what, knows by phase, evidence; the calendar and its checks; conversations by scene,
     pairs, lines by chapter).
   - (After this, edit 241 was logged: Chapter 33, "She had never said it boldly to his face." 241 rows pass, 619
-    replacements, 224 to 241 not in the Doc, 104,977 words, next edit 242. The Drive copies below stop at edit 240.)
-  - The edit list: "StS edit list, edits 1 to 240 (mirror of GitHub)", `1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I`.
+    replacements, 224 to 241 not in the Doc, 104,977 words, next edit 242. The edit list in Drive was remade with it; the scene sheet and the story checks were built at edit 240, and edit 241 changes one sentence that neither depends on.)
+  - The edit list: "StS edit list, edits 1 to 241 (mirror of GitHub)", `1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY`.
 
 ## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
 - **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and

@@ -13,7 +13,7 @@ CT: "Get ready to close out this session. The next sense for the next session is
 - 104,977 words in the chapters (`story_report.py`), 142 scenes. `build_gate.py`: NOT READY, 10 open boxes (the taste pass is one).
 - **The PDF CT has** is still the edits 1 to 223 one. A new one is made only when he asks.
 - **Drive copy of the edit list:** "StS edit list, edits 1 to 236 (mirror of GitHub)",
-  `1wHTtGSP7LjG0xJT5dixGKcXomXNVOPY1559H1dPGT_I`. The 1 to 233 copy is "OLD:".
+  `1zjy0yw1gZli1npknJZR6EoiGOWCHiSGDOYSTWcDeQcY`. The 1 to 233 copy is "OLD:".
 - **Backup** of this branch as it stood before the smell chat: `backup/book-branch-2026-11-27`, both repos.
 
 ## What this chat did
@@ -83,6 +83,32 @@ From this chat:
    moves to spring 2026).
 
 Everything older is in `CHECKPOINT-2026-11-27-eleventh.md`, "Open with CT".
+
+## Everything open with CT at the very end of the chat (27 Nov, late). This list is the current one.
+
+Put to him only when he asks, except the first, which is the first job of the next chat.
+
+1. **Read the end of Chapter 25 through Chapter 27 in place.** Edits 237 to 241 were logged the night he dictated
+   them. Look for: who runs the route while Grace is away for the winter; a line that says she came back; whether the
+   winter trip and the October festival read as two trips.
+2. **The confiding scene** (`next-version-scenes-2026-11-26.md`, section 7): his words are saved; not drafted. He
+   liked the haywire rover as the bang, leading into the women's talk in Chapter 34 (October 2027). One thing he has
+   not answered: who says "If that little guy only works half the time then maybe it's time we upgraded to something
+   more heavy duty." Claude's pick is Marta, with Priya answering from her sheet.
+3. **The Hinge profile and "maybe I'll be a spinstress after all"** (section 6): summer 2026, in Chapter 26. Not
+   written.
+4. **The birthday** (section 2): it passes unmarked in spring 2025, Grace finds out, the party is spring 2026. Open:
+   how Grace finds out (Claude's suggestion: his letter to Ma in Chapter 25). Not moved or logged.
+5. **Two smell drafts, shown and not logged:** Chapter 25 (the heat out the kitchen trailer door) and Chapter 27
+   ("Rosa's cooking", "the heavenly scent"). And the open rows of `smell-table-2026-11-27.md`.
+6. **Small fixes with a wording ready:** the three calendar slips ("since my first week", the squash, "ran out in
+   June"), the two to read (`calendar-2026-11-27.md`), and the eighteen days reading as a ban, not an outage.
+7. **The findings in `knowledge-sheet-2026-11-27.md`**, first among them that Grace never says "why did you pretend to
+   be poor" and the fire never mentions the hiding (held since edit 234).
+8. **Layer two of the conversation map** (a reader's pass), then the money, objects, and plants and payoffs sheets.
+9. **The taste pass.**
+10. Claude's wording and invented details in edits 235 to 241, each listed in its record in `drafts/`.
+11. Edits 224 to 241 into the Doc, and a new PDF, when he says. `main`'s `BRIDGE.md` and `WORKBOARD.md` still say v4.
 
 ## Taste in the book now (measured 27 Nov, `find_in_book.py`, edits 1 to 236)
 

@@ -563,3 +563,42 @@ night at the pond is October 2026 (the Appendix: "October 2026. The amp on the t
 the shirt in November 2026. It cannot be later: on Friday 20 November she calls him "Babe" (Ch 27), and on
 Thanksgiving, the 26th, they eat a chicken off one plate in her room in Ardell. Spring 2027 would put it after the
 tea, the stove she lights, and her falling asleep against him.
+
+### CT's next two messages on section 6 (27 Nov 2026), and the draft that follows from them. NOT logged.
+
+His words: "No, but he needs to say that line to her. That's his reason. He's explaining it to her. Do you see what I'm
+saying?" (the line is "I kind of have a rule about not messing things up. Where I work.") Then: "Maybe that could be
+pillow talk the next morning when she's wearing his t-shirt."
+
+So the night at the pond stays as it is in the book (the blanket, her father, he kisses her, "A year. A whole year,
+Elijah.", "She pulled him back down by his collar."). Only one line of the book changes: "In the morning she was in
+his kitchen, wearing his shirt and drinking coffee." becomes the passage below. **His words are in bold.**
+
+> **It went on like that for weeks, both of them teasing the other. A peck here, a stolen tongue kiss there. Elijah enjoyed holding back, and Grace begrudgingly enjoyed being tortured by Elijah's boundaries. It took everything in her not to push him.**
+>
+> **For the first time in her romantic life, she was enjoying taking the scenic route.**
+>
+> **They danced on a hillside every few nights for a month before, one day in** November**, she woke up wearing his** T-shirt.
+>
+> "**Why'd you wait so long?**" she said, into the pillow.
+>
+> "**Well, I mean, I kind of have a rule about not messing things up. Where I work.**"
+>
+> "**Oh, did you date a coworker before?**"
+>
+> "**Is that what you are to me? A coworker? Is that what we are? Coworkers?**"
+>
+> She moved a little closer. "**I mean.**" She scrunched up one shoulder. "**If that's what you want, we can just be coworkers.**"
+>
+> He slid his hand over onto hers and squeezed it.
+>
+> "**Is that what you want?**" His voice came down, lower and quieter. "**For us to only be coworkers?**"
+
+Then, as now: "Later that morning Marta looked at him over her welding hood for a long second and said nothing, which
+from Marta was a blessing."
+
+Notes: "A year. A whole year, Elijah." (the pond) and "Why'd you wait so long?" (a month later, in bed) no longer
+overlap. Left out: "Heart pounding in his chest", his direction for the hand when it was the first move; in bed the
+move is already made. Claude's words: "into the pillow", "She moved a little closer", "scrunched up one shoulder",
+"His voice came down, lower and quieter", "November". The shirt morning must fall before Friday 20 November 2026, when
+she calls him "Babe" (Ch 27).

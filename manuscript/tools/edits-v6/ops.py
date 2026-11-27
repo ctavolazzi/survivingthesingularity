@@ -1639,6 +1639,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (277, 'You were sitting right on it."\nHe told her the floor was clean.', 'You were sitting right on it."\nAs always, she meant well, but Elijah heard what she wasn\'t saying. We all have dynamics with our family, and Elijah\'s mother had a long history of hiding criticisms within compliments.\nHe told her the floor was clean.'),
 # 278, Ch 7: the floor was clean now, and the laundry (CT, 27 Nov, fourteenth chat)
 (278, 'compliments.\nHe told her the floor was clean.', 'compliments.\nHe told her the floor was clean now, side-eyeing a growing pile of dirty laundry.'),
+# 279, Ch 8: Ruby's advice, the next video and letting things go (CT's words, 27 Nov, fourteenth chat)
+(279, 'And tomorrow it\'ll be eight thousand. Who knows what it\'ll be next week? Do you know how this game goes?"', 'And on your next video, maybe it\'s eight thousand. Do you know how this game goes? You don\'t have time to do the important work and engage with everyone. It\'s okay to let some things go."'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

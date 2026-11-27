@@ -57,7 +57,7 @@ C=[
 (45,"Ch 8",["You know, you look pretty green.","Trust no one. Don't take the golden handcuffs.","Nobody in here has any friends.","They all looked like friends to him."],["Nobody in here has a friend."]),
 (46,"Ch 8",["your video went parabolic","people's forecaster?","Don't answer that. Don't worry about it."],["you've become sort of the people's forecaster"]),
 (47,"Ch 8",["Both sides like you,\" she said. \"Don't ruin that.","You have beginner's luck."],["It's a mirror."]),
-(48,"Ch 8",["You answered all of them the first day.","Nobody does that, man.","You must have given up.","And tomorrow it'll be eight thousand."],["It's arithmetic."]),
+(48,"Ch 8",["You answered all of them the first day.","Nobody does that, man.","You must have given up."],["It's arithmetic."]),  # its eight-thousand line rewritten by edit 279
 (49,"Ch 9",["Of course I know what it means.","I do not believe you.","It's just a single point.","enlighten me"],[]),
 (50,"Ch 9",["I spend much of my time working out how to make it care."],["I spend some of my time on that."]),
 (51,"Ch 9",["That trucker she talked about? He cried on her,"],["\"The trucker cried,\""]),
@@ -285,4 +285,5 @@ C=[
 (276, 'Ch 7', ['It was the most affirming thing anyone had said to him since this began.'], ['the nicest thing anybody had said to him all year']),
 (277, 'Ch 7', ['"I didn\'t follow it, baby, but the numbers are big! You keep this up, you\'ll finally be famous!" She was doing the dishes', "As always, she meant well, but Elijah heard what she wasn't saying. We all have dynamics with our family, and Elijah's mother had a long history of hiding criticisms within compliments.\nHe told her the floor was clean"], ["\"I didn't follow it, baby.\""]),
 (278, 'Ch 7', ['He told her the floor was clean now, side-eyeing a growing pile of dirty laundry.'], ['He told her the floor was clean.']),
+(279, 'Ch 8', ['And on your next video, maybe it\'s eight thousand. Do you know how this game goes? You don\'t have time to do the important work and engage with everyone. It\'s okay to let some things go."'], ["And tomorrow it'll be eight thousand.", "Who knows what it'll be next week?"]),
 ]

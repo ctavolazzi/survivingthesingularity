@@ -151,6 +151,12 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
 
 ## Done
 
+- 27 Nov, sixteenth chat: edits 292 to 295 (Grace and Elijah talking, Rosa's cooking, the barn, the old fence's smoke);
+  the senses pass and its sheet (`senses-2026-11-27.md`); Drive's scene sheet and story checks brought to edit 295; the
+  homepage cover on thecoffeejesus.com opens onto Chapter 0 through the toast, then "Read the full sample" (commit
+  7c4f1f7, build passed). Not done: the old Chapters 0 to 11 PDF on both sites (CT said take it down; this session's
+  permission check blocked removing it and pushing to main).
+
 - 27 Nov, fourteenth chat (the story sheets): spin-up clean (243 rows); the whole built book read; edits 244 (the
   Dedication, CT's words) and 245 (Ch 0, "it would appear like magic", CT's words); a large print PDF at edit 243 for
   CT; five story sheets with findings (`desires`, `conversations2`, `money`, `objects`, `plants` in `story_checks.py`).

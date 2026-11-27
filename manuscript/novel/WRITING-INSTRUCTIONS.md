@@ -523,6 +523,18 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   woman and Grace are kind to him anyway, and that is left as it is. `smell-table-2026-11-27.md` has every smell,
   whose words it is, and the places still open.
 
+## 15e. Learned 27 November (sixteenth chat, the senses pass)
+
+- **A scene without a smell is not a gap.** The readers flagged 20 strong scenes with no smell or taste; on reading,
+  two needed one, and both had the thing on the page already (the barn "where the hay had been", the old fence on the
+  pile). The rest were carried by something else: Lou's hand flat on a dead tray, Curtis biting the tomato as his
+  answer, "The soup was good. All three." Add a sense where the object is there and nothing carries the moment. **[C]**
+- **Read before claiming, again.** The first pass said "nothing to cut or sharpen" before the scenes were read, and
+  missed CT's own party lines in the sheet. Read the page in full before any verdict goes to him. **[C]**
+- **A bookend can already be closed.** The last beer looked like a place to answer Chapter 0's "tasted like nothing";
+  the ending already closes it ("For the first time in five years the word meant what it says"). Saying it with a taste
+  would be the same lesson twice (section 7, rule 8). **[C]**
+
 ## 15d. Learned 27 November (fifteenth chat)
 
 - **A repeated gesture can be the person.** Claude flagged Ruby's two shrugs in Chapter 10 as a repeat to cut. CT:

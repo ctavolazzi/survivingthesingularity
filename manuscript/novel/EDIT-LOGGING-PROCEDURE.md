@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS edit list, edits 1 to N
-   (mirror of GitHub)" (id 1iMTDBkZeVOphVySnKMBNRHNZO2stZrsaUYi7VgRcZXc, edits 1 to 236; https://docs.google.com/document/d/1iMTDBkZeVOphVySnKMBNRHNZO2stZrsaUYi7VgRcZXc) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
+   (mirror of GitHub)" (id 1sWDrdwJsfiWElYVBACrJkY6TmeqatlnhtwRtIk9MY8o, edits 1 to 295, in "StS Publication Files"; https://docs.google.com/document/d/1sWDrdwJsfiWElYVBACrJkY6TmeqatlnhtwRtIk9MY8o) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -325,6 +325,15 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   accepted in v8, nothing PARTIAL, 128 scenes). The Drive copies of the scene sheet and story checks were at edit 245
   until the sixteenth chat (next lines); the Drive edit list was last remade at 242. The free sample (Chapters 0 to 10 at edit 291)
   is in `REFERENCE.md`, section 2.
+- **Sixteenth chat (27 Nov), at the close:** edits 292 to 295, all check rows passing (296 rows), 223 accepted in v8,
+  224 to 295 not in the Doc, nothing PARTIAL, 128 scenes. **Next edit: 296.** 292 (Ch 27, "Once they started they just
+  never stopped talking ...", CT's words; the third sentence Claude's, CT: "Keep it."), 293 (Ch 27, "Rosa's cooking",
+  CT's words), 294 (Ch 13, the barn's hay smell) and 295 (Ch 36, the old fence's smoke), Claude's lines on CT's "Yes log
+  both". The senses pass is done: `senses-2026-11-27.md` (the calls), `senses-2026-11-27.csv` and the "Senses" tab,
+  `story_checks.py senses`. Drive at edit 295, same ids: the scene sheet and all 16 story-check tabs (Senses is new;
+  the rest were brought up in place from edit 245 this chat). The Drive edit list remade at 295 (step 10's id); the
+  242 copy is "OLD:". Staging files in Drive, titled "OLD: staging copy ...", were left, not trashed. CT has not sent a
+  Chapter 11 fix yet: his read of Chapter 11 is still the next job.
 - **Sixteenth chat (27 Nov):** edit 292 (Ch 27, "Once they started they just never stopped talking ...", CT's words);
   next edit 293. **Drive brought to edit 292 in place, on CT's word ("just bring it all up to date. But don't change
   things that don't need it"), same ids:** the scene sheet's "Scenes" tab (`13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o`,

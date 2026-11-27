@@ -304,5 +304,5 @@ C=[
  ['came back around. The other meaning of his name']),
 (290, 'Ch 0', ['gone back to nodding. Elijah did not like the corporate bobbleheading, but he did enjoy the money.'], []),  # narrowed at edit 291 (CT's next line follows it)
 (291, 'Ch 0', ["enjoy the money. His father always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his father's face. Elijah worked out of a satellite office"], []),
-(292, 'Ch 27', ['taking the scenic route. Once they started they just never stopped talking. Topics crossed intellectual property lines, ranging from ancient texts to which aisle was their favorite in the grocery store. They danced on a hillside'], []),
+(292, 'Ch 27', ['taking the scenic route. Once they started they just never stopped talking. Topics crossed intellectual property lines, ranging from ancient texts to which aisle was their favorite in the grocery store. There was something about Grace that made him want to know what she thought of just about everything. They danced on a hillside'], []),
 ]

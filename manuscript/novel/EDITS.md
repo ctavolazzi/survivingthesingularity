@@ -4114,10 +4114,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      two of them just talking once they are together, and the place for it is the weeks after the pond. CT: "Yes place
      the edits in the proper locations". Placed by Claude as a paragraph of its own in Chapter 27, after "For the first
      time in her romantic life, she was enjoying taking the scenic route." and before "They danced on a hillside". CT's
-     words, his two finished sentences, with "once" capitalized. His unfinished "There was something about..." is not
-     in the book; it waits on the rest of the sentence from him. Searched: "stopped talking", "grocery", "ancient
+     words, his two finished sentences, with "once" capitalized. Corrected in place the same day, on CT's "Finish the
+     sentence": his "There was something about..." became "There was something about Grace that made him want to know
+     what she thought of just about everything." "There was something about" is CT's; the rest is **Claude's wording**
+     (no invented fact; "just about" is his softener). It echoes "There was something about the way she asked" in
+     Chapter 15, where he reads her first email. Searched: "stopped talking", "grocery", "ancient
      texts" and "intellectual property" are nowhere else; "aisle" only as the fastener aisle at Kowalski's (Ch 25).
-     Scene 87 goes from 176 to 203 words. Logged only.
+     Scene 87 goes from 176 to 221 words. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

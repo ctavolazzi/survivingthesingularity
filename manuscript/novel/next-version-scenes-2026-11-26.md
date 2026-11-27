@@ -505,3 +505,17 @@ What the page gives it, and what is in the way (checked against the book with ed
 - "Petrichor" is not in the book. This is CT's own smell line, the third after the truck and the party.
 - Invented: the evening before she leaves; Denny's cider; the east field; the sun behind the ridge; "like she'd come
   at him with a shovel" (his "he'll flinch, jokingly"; he said the action words could be bettered).
+
+### CT's correction to the cider scene, and a second kiss (27 Nov 2026, later the same chat). His words, as sent:
+
+Reflect
+
+I do want her to go to the festival
+
+But maybe she kisses Elijah cause the first kiss they have is to prevent him from leaving and then she kisses him to reassure him that like she's only gonna be gone for a few months and it really is just to carry on the tradition of what she's been doing since she was a kid hell joke with her like I didn't paint you for a party girl and she goes. Oh there's a lot of things you don't know about me and then toss his hair and that can be you know tosses his hair toss I think is the word TOSSLES I'm not sure. He'll be like it's OK if you meet someone out there and you hit it off I would never want to keep anyone from their destiny and she'll go well if I do they'll have to be better than you what a line right
+
+(The word is "tousles". "hell joke" is "he'll joke".)
+
+What Claude got wrong in the first draft above: his dictation said she is "getting ready to go away for the festival
+season." The draft was placed so that Lou's talk makes her stay, because "Pondwater" says "Not this one." That turned
+his scene into a different story without asking. The conflict with the page should have been put to him.

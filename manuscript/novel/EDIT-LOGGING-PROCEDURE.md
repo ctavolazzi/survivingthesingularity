@@ -285,6 +285,17 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   of the tea, what happened at Mrs. Delgado's, who helped him that first spring, who the Sacramento LLC is. Row
   138's word count covers the Epilogue, About This Book and the Afterword, not the Appendix or Thank You. The
   Sheet's title still says "edits 1 to 233".
+- **A second, full read of the scene sheet (27 Nov, later, the Curtis-scene chat):** six readers checked every cell
+  of all 137 live rows against the book built with edits 1 to 234 (including the Sunday lien sale), and every finding
+  was checked on the page. 30 cells were fixed, in the repo copy and in the Google Sheet, and the two match cell for
+  cell. The fixes: who is on the page (Ma by voicemail in row 47, Patricia by phone in 89, Marta in 71 and 99, the
+  machine in 134 and 137, Grace on the stream in 137, the lamp in 133; Reuben out of 120), number phrases quoted as
+  written (40, 52, 61), dates and places (15, 16, 17, 24, 26, 46, 77, 92, 121), what turns (53, 101), row 60 is scene 1
+  of Chapter 18 now that row 59 is cut, and row 138 covers only the Epilogue (290 words; the back matter came out of its
+  cells). Three new rows on the Sheet's "Numbers to check" tab (not in the repo copy, which holds only "Scenes"): how
+  long Reuben has had the deed (Ch 29, "a year and a half"), "Took you a month" (Ch 24, about seven weeks by the book's
+  dates), and "Three years" said in October 2027 (Ch 34, 35; two years and seven months; the narration says "going on
+  three years"). For CT, not changed.
 - **Unchecked since the sixth chat changed the build code** (a page for a line before the title, no About the
   Author page): the paperback, ebook and docx builds, and the site's own tests after the edit list was renamed
   `EDITS.md`. Run them before a release.

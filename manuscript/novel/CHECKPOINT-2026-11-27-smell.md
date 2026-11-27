@@ -129,7 +129,8 @@ winter trip and the October festival read as two trips; and anything the knowled
 know yet. Tell me what you find before changing anything.
 
 Then, before the taste pass, a scene I dictated and want drafted: Elijah confides in Grace about his mother, the farm
-and Melody; "Nobody talks about my man like that"; her whisper; a bang that wakes them. My words and what the page
+and Melody; "Nobody talks about my man like that"; her whisper; a bang that wakes them (the little rover going haywire, which leads into the women's talk about upgrading
+in Chapter 34). My words and what the page
 gives it are in manuscript/novel/next-version-scenes-2026-11-26.md, section 7. Place it; don't audit it. Show me the
 draft before it's logged.
 

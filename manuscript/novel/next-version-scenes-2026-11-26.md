@@ -752,3 +752,23 @@ What the page gives it (checked against the knowledge sheet and the book with ed
   ... That's not a principle, Elijah. That's your mother."), and it is "the one he had never told anybody". After this
   scene it is the thing he gave her with his head in her lap. And it is the night he tells her everything except the
   arms, which is what "You've been lying to me this whole time?" needs.
+
+### More for section 7 from CT (27 Nov 2026). His words, as sent:
+
+Maybe that's what leads into the discussion the women have about upgrading? Or maybe something else?
+
+"If that little guy only works half the time then maybe it's time we upgraded to something more heavy duty."
+
+What the page gives it (this changes Claude's suggestion above from December 2026 to October 2027):
+- The women's talk about the tall rover is in Chapter 34, in Irene's kitchen, "the afternoon before the October
+  meeting" (2027). Just before it, the same chapter has the green tractor going into limp mode with the squash in the
+  field. So the chain would be: the tractor is locked by its dealer; that week, the night Elijah confides in Grace, a
+  bang wakes them and it is the little rover gone haywire (Curtis yelling; he has been writing its code since May
+  2026); the next afternoon the women weigh the tall one; the table votes for it; Elijah says "I'm a guy with arms";
+  Grace finds out. The tender scene then sits days before the betrayal, which is what he asked it to do.
+- By October 2027 she has already said "I love you" at the table (Ch 33), so "whispered it for the first time" is the
+  first time she whispers the wish, and Chapter 33 needs no change. The table has also heard that he sold the farm
+  (Ch 33, July). This scene is still the first time he says what it cost him.
+- One line to square: in the kitchen Priya says the little rover "gave us back a day a week. I measured." His new
+  line says it "only works half the time". If the new line is Marta's (or Irene's), said after the bad night, Priya
+  can answer it with her sheet: it works, and it is too small.

@@ -1641,6 +1641,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (278, 'compliments.\nHe told her the floor was clean.', 'compliments.\nHe told her the floor was clean now, side-eyeing a growing pile of dirty laundry.'),
 # 279, Ch 8: Ruby's advice, the next video and letting things go (CT's words, 27 Nov, fourteenth chat)
 (279, 'And tomorrow it\'ll be eight thousand. Who knows what it\'ll be next week? Do you know how this game goes?"', 'And on your next video, maybe it\'s eight thousand. Do you know how this game goes? You don\'t have time to do the important work and engage with everyone. It\'s okay to let some things go."'),
+# 280, Ch 10: Ruby's fifty million, still going (CT's words, 27 Nov, fourteenth chat)
+(280, '"Fifty million views on one video," Ruby said. "That\'s a lot of views, man, especially for a subject like that. And your follow-ups', '"Fifty million views on one video, and it\'s still going," Ruby said. "It\'ll taper off eventually, but man, you really struck a nerve. And your follow-ups'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

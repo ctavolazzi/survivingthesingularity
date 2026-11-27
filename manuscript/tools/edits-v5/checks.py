@@ -286,4 +286,5 @@ C=[
 (277, 'Ch 7', ['"I didn\'t follow it, baby, but the numbers are big! You keep this up, you\'ll finally be famous!" She was doing the dishes', "As always, she meant well, but Elijah heard what she wasn't saying. We all have dynamics with our family, and Elijah's mother had a long history of hiding criticisms within compliments.\nHe told her the floor was clean"], ["\"I didn't follow it, baby.\""]),
 (278, 'Ch 7', ['He told her the floor was clean now, side-eyeing a growing pile of dirty laundry.'], ['He told her the floor was clean.']),
 (279, 'Ch 8', ['And on your next video, maybe it\'s eight thousand. Do you know how this game goes? You don\'t have time to do the important work and engage with everyone. It\'s okay to let some things go."'], ["And tomorrow it'll be eight thousand.", "Who knows what it'll be next week?"]),
+(280, 'Ch 10', ['"Fifty million views on one video, and it\'s still going," Ruby said. "It\'ll taper off eventually, but man, you really struck a nerve. And your follow-ups'], ["That's a lot of views, man"]),
 ]

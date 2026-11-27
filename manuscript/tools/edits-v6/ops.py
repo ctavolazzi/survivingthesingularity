@@ -1580,6 +1580,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (258, '"Five years," Devendra said.', '"Five years," Devendra scoffed.'),
 # 259, Ch 1: David's clock line (CT, 27 Nov, fourteenth chat)
 (259, 'People ate for about three hundred thousand years before anybody punched a clock.', 'People ate for a few hundred thousand years before anybody ever punched a clock.'),
+# 260, Ch 1: the prediction and the guess (CT, 27 Nov, fourteenth chat)
+(260, "Devendra wanted a prediction. He'd give him a better one. And he'd do it by cracking one of these things open himself.", 'Devendra wanted a prediction, and Elijah had given him a guess. He could do better than that. After everything that had just happened, he wanted to crack one of these things open for himself.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

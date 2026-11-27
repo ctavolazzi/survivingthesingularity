@@ -20,7 +20,7 @@ C=[
 (11,"Ch 1",["That's one of the more aggressive ones I've heard yet.","And if it's just another Thursday?"],["And if it's just a Thursday?"]),
 (12,"Ch 1, 2, Appendix",["\"Loser cooks dinner.\"","E.M. Thanksgiving 2027. Loser cooks dinner.","in the corner: Thanksgiving 2027. Loser cooks dinner.","Thanksgiving 2027, loser cooks dinner.","I bet a guy dinner on it. Loser cooks.","LOSER COOKS,"],[]),
 (14,"Ch 1",["Sure. A little. I can't stop thinking about the people the realtors fired.","There's always a job.","I'm not so sure about that."],["People land where they put themselves. Retrain"]),
-(15,"Ch 1",["Devendra wanted a prediction. He'd give him a better one. And he'd do it by cracking one of these things open himself."],["Devendra wanted an n."]),
+(15,"Ch 1",["Devendra wanted a prediction"],["Devendra wanted an n."]),  # rest of the line rewritten by edit 260
 (20,"Ch 1",["The fans coasted to silence. \"Shit.\" The room ticked"],[]),
 (16,"Ch 1",["He had found his first limit."],[]),
 (17,"Ch 1",["needed watts, of course, but it also needed cooling."],["dissolved three careers"]),
@@ -265,4 +265,5 @@ C=[
 (257, 'Ch 1', ['"Three jobs is a rounding error, Elijah," Devendra said. "You build models for a living. Relax."', 'He still looked stressed. How long until this whole office was a rounding error?'], ['Three jobs in one bar is an anecdote']),
 (258, 'Ch 1', ['"Five years," Devendra scoffed. "That'], ['"Five years," Devendra said.']),
 (259, 'Ch 1', ['People ate for a few hundred thousand years before anybody ever punched a clock.'], ['People ate for about three hundred thousand years']),
+(260, 'Ch 1', ['Devendra wanted a prediction, and Elijah had given him a guess. He could do better than that. After everything that had just happened, he wanted to crack one of these things open for himself.'], ["He'd give him a better one."]),
 ]

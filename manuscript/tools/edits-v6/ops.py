@@ -1576,6 +1576,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (256, 'Real people. A bar, a Tuesday, three jobs, gone. And the guys', 'Real people. And the guys'),# 257, Ch 1: "a rounding error" (CT, 27 Nov, fourteenth chat)
 (257, '"Three jobs in one bar is an anecdote," Devendra said.', '"Three jobs is a rounding error, Elijah," Devendra said.'),
 (257, "Elijah didn't relax. He still looked stressed.", "Elijah didn't relax. He still looked stressed. How long until this whole office was a rounding error?"),
+# 258, Ch 1: Devendra scoffed (CT, 27 Nov, fourteenth chat)
+(258, '"Five years," Devendra said.', '"Five years," Devendra scoffed.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

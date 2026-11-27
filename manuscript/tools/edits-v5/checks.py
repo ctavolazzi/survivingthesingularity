@@ -263,4 +263,5 @@ C=[
 (255, 'Ch 0', ['gone back to nodding.\nYou should know', 'no such patience.\nPorusAI was the other kind', 'paying close attention.\nThere were three of them'], []),
 (256, 'Ch 1', ['I watched three people get replaced last week. Real people. And the guys who did it'], ['A bar, a Tuesday, three jobs, gone.']),
 (257, 'Ch 1', ['"Three jobs is a rounding error, Elijah," Devendra said. "You build models for a living. Relax."', 'He still looked stressed. How long until this whole office was a rounding error?'], ['Three jobs in one bar is an anecdote']),
+(258, 'Ch 1', ['"Five years," Devendra scoffed. "That'], ['"Five years," Devendra said.']),
 ]

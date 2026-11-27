@@ -166,7 +166,8 @@ for what it is ("v7" is taken by a frozen side copy).
 
 ## 6. Pitfalls learned
 
-- The newest checkpoint is `CHECKPOINT-2026-11-27-eleventh.md` (what is open with CT, and the prompt for the smell
+- The newest checkpoint is `CHECKPOINT-2026-11-27-smell.md` (the end of the smell chat; the prompt for the taste
+  pass). Before it: `CHECKPOINT-2026-11-27-eleventh.md` (what is open with CT, and the prompt for the smell
   pass). **That prompt has been run** (the smell chat, 27 Nov: edits 235 and 236); don't run it again. Where the
   smell pass stands is in `TODO.md` section 3 and `smell-table-2026-11-27.md`. The other chat of 26 Nov left `CHECKPOINT-2026-11-26-riemann-praether.md`.
 - Learned in the smell chat (27 Nov):

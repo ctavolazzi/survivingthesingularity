@@ -38,7 +38,8 @@ logged it read: "The cab had a smell by then: weed, a wet jacket, and the delive
 every order he'd ever carried. A car you've been living in gets like that. You stop noticing it ..." Two faults:
 it dropped "the smell of" from his phrase and added a filler ("gets like that"), and it said "weed" three sentences
 after "The bag of weed had to last." Now his phrase is whole, the filler is gone, and "weed" is "smoke". CT approved
-the first wording and has not seen this one.
+the first wording. This one was logged before he saw it, then shown to him in the chat ("Finalize changes" reply,
+27 Nov); he has not ruled on it.
 
 ## 236, Chapter 9: the house on the hill
 

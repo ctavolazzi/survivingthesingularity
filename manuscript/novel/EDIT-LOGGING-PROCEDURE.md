@@ -221,11 +221,12 @@ short, what is still CT's:
   heard it as a murder" (Ch 39); the "Creator Fund" line; the 19 empty paragraphs in the v8 Doc; the thin places; the
   Instagram synopsis; "OLD:" on the v6 and v7 Docs; Drive's duplicate builds; the site's private reader and
   compendium; the merge to `main`; the ISBN and the release build.
+- **The taste pass is next** (CT, 27 Nov), in its own chat; the prompt is in `CHECKPOINT-2026-11-27-smell.md`.
 - The smell pass (27 Nov, the smell chat): his two places are logged (edits 235 and 236). Still his to rule on, in
   the last column of `smell-table-2026-11-27.md`: a smell for the cooked plugs (Ch 21) and for Priya's two pits
   (Ch 26), which need the smell from him; woodsmoke reaching Grace at the door before the gate story (Ch 24, one
   line); and Elijah telling Grace what the Thanksgiving coats bring back (Ch 27, a short exchange, new material).
-  Also his: the corrected wording of edit 235, which he has not seen, and Claude's invented details in both edits
+  Also his: the corrected wording of edit 235 (logged before he saw it, shown to him after; he has not ruled on it), and Claude's invented details in both edits
   (`drafts/edit-235-236-smell.md`).
 - From the close of the Riemann and Praether chat (27 Nov; `CHECKPOINT-2026-11-26-riemann-praether.md`, first
   section): the smell pass prompt was run once there (clean spin-up, nothing shown or logged, next edit still 234), and
@@ -273,7 +274,7 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 - **Since then, edits 235 and 236 (27 Nov, the smell chat, CT's words from `WRITING-INSTRUCTIONS.md` 7a):** the smell
   of the truck (Ch 15) and the smell of the high-dollar party (Ch 9). On fresh reads of both Docs that day,
   make_v6.py passes **236 rows (611 replacements)**; verify.py on v8 shows 223 accepted and **224 to 236 not in the
-  Doc**, nothing PARTIAL; 103,647 words; build_gate.py NOT READY, 9 open boxes. **The next edit is 237.** Neither Doc
+  Doc**, nothing PARTIAL; 103,647 words; build_gate.py NOT READY, 10 open boxes once the taste pass box was added at the close. **The next edit is 237.** Neither Doc
   was changed. The Drive copy of the edit list was refreshed at the end of the smell chat, on CT's word: "StS edit
   list, edits 1 to 236 (mirror of GitHub)", id `1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE`, uploaded as text/plain and checked against `EDITS.md` (the
   same text, edit numbers intact). The 1 to 233 copy is "OLD:" with the new id in its title and a pointer at its

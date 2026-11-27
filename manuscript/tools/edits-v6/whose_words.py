@@ -8,6 +8,8 @@ put it there), which edit in EDITS.md quotes it and whether that entry is marked
 files in drafts/ quote it. It finds the record; read the record before saying whose words a line is
 (an entry can be "CT's beats and dialogue, narration Claude's", as edit 45 is). The v5 Doc holds CT's
 edits 1 to 86 as suggestions, so "in the v5 Doc" does not by itself mean the older text: check EDITS.md.
+It finds; it does not judge. On "He could smell her perfume" it reports "[CT" near edit 45, but that entry
+says the narration around his beats is Claude's. The answer is in the entry, not in this output.
 
 Written in the smell chat, 27 Nov 2026, after a line was called CT's wording from memory and was not.
 """

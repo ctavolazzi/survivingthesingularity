@@ -3774,7 +3774,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      Sith deals in absolutes"; `WRITING-INSTRUCTIONS.md` 15c). Claude's: "By then the cab had" and the list. Invented:
      smoke, a wet jacket, the delivery bag. Corrected in place the same day (Claude's review, on CT's "Finalize
      changes"): the first wording, which he approved, dropped "the smell of" from his phrase, added "gets like that"
-     and repeated "weed"; he has not seen the corrected one. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
+     and repeated "weed". The corrected one was logged before he saw it and shown to him after, in the same chat;
+     he has not ruled on it. Record: `manuscript/novel/drafts/edit-235-236-smell.md`.
      Logged only; not in the v8 Doc yet.
 236. **Chapter 9: the smell of the high-dollar party.** CT (26 Nov): "The faint back notes of cleaning supplies. The
      perfume, how it acts like a lightning rod for knuckleheads and more or less behaves like a slime mold, expanding

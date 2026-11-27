@@ -81,6 +81,10 @@ duplicate builds; the site's private reader and compendium; the merge to `main`;
 
 ## The prompt for the next chat (the smell pass)
 
+**Run on 27 Nov in the smell chat (twelfth): edits 235 (the truck, Ch 15) and 236 (the party, Ch 9) are logged, and
+the next edit is 237. Don't run this prompt again.** What is left of the smell pass is CT's to rule on:
+`smell-table-2026-11-27.md` and `TODO.md`, section 3. The prompt is kept below as it was.
+
 Run once already, on 27 Nov, inside the Riemann chat: spin-up was clean, CT asked about the story's stakes instead, and
 no smell line was shown or logged. Edit 234 was logged after that, so the numbers in the prompt below were brought up
 to it on 27 Nov (234 rows, 224 to 234, next edit 235). A copy of the prompt saved before then says 233 and 234; the

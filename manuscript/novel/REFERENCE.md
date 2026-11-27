@@ -160,13 +160,30 @@ for what it is ("v7" is taken by a frozen side copy).
 | `python3 manuscript/tools/edits-v6/story_report.py OUT/v6.txt` | Measures the story: length and talk by chapter, who is on the page, where each thread opens and closes, tics, smells, scenes with only women, long speeches, numbers that must agree |
 | `python3 manuscript/tools/edits-v6/build_gate.py OUT/v6.txt [--todo TODO.md]` | What must be gone and what must be there before the next build (`build-gate.json`), and the unticked boxes |
 | `python3 manuscript/tools/edits-v6/openers.py OUT/v6.txt [--ch 20-36]` | The sentence-opening checker: runs of sentences that open with the same word, runs of pronoun-or-name openers, paragraphs one opener dominates |
+| `python3 manuscript/tools/edits-v6/whose_words.py V5_READ.json "phrase" ["phrase"]` | Where a line came from: the v5 Doc, an ops row, which edit in `EDITS.md` quotes it, which `drafts/` files. Run it before calling a line CT's or Claude's |
 | `python3 manuscript/tools/book.py cast` | Rebuilds the character folders |
 | `node scripts/sts-bridge.mjs status` | Which Doc is CURRENT |
 
 ## 6. Pitfalls learned
 
-- The newest checkpoint is `CHECKPOINT-2026-11-27-eleventh.md` (what is open with CT, and the prompt for the next chat,
-  the smell pass). The other chat of 26 Nov left `CHECKPOINT-2026-11-26-riemann-praether.md`.
+- The newest checkpoint is `CHECKPOINT-2026-11-27-eleventh.md` (what is open with CT, and the prompt for the smell
+  pass). **That prompt has been run** (the smell chat, 27 Nov: edits 235 and 236); don't run it again. Where the
+  smell pass stands is in `TODO.md` section 3 and `smell-table-2026-11-27.md`. The other chat of 26 Nov left `CHECKPOINT-2026-11-26-riemann-praether.md`.
+- Learned in the smell chat (27 Nov):
+  - A new chat is given its own branch (that one got `claude/hello-azhytd`) and `main`'s `BRIDGE.md` and
+    `WORKBOARD.md` still say v4. Both are stale. This branch, its `instances.json` and the Drive page "sts-bridge: read
+    this first" are right. Ask CT before pushing to this branch if the chat was told to push somewhere else; he said
+    yes ("that's the main branch we've been working on").
+  - A Docs read comes back as a 1.5 MB file under the session's `tool-results` folder, wrapped in `{"content": ...}`.
+    Copy it as it is; make_v6.py and verify.py read it that way. The book is about 106,000 words (140,000 tokens), so
+    it can be read whole in the chat from `OUT/v6.txt` in chunks of about 400 lines.
+  - Say whose words a line is only after `whose_words.py` and the record. The perfume line in Chapter 8 was called
+    CT's wording, then "the flat one he named"; both were wrong (edit 45: his beats and dialogue, Claude's narration).
+  - When CT describes the job in the chat, that is the job, even when a prompt file says it differently. He asked for
+    "a pass over all the scenes to determine which ones need to have their smell described"; the file said to start
+    with the truck.
+  - A list of candidates gets cut before he sees it. The first answer gave eight scenes that "need" a smell; two did
+    (his). Mark the rest as optional or drop them.
 - Two chats can log on this branch at once. Fetch it and read TODO.md's "Next edit" before numbering; fetch again
   before every commit, and merge (never force-push). On 27 Nov both chats had taken 229 and 230.
 - The scene sheet (27 Nov): one row per scene with date, place, whose scene, who is on the page, what turns, threads,

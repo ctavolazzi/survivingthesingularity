@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS edit list, edits 1 to N
-   (mirror of GitHub)" (id 1Dfk8U0O9y10odszpov-S_3G5RNO2YuZrDSjMPvgAbiQ, edits 1 to 233; https://docs.google.com/document/d/1Dfk8U0O9y10odszpov-S_3G5RNO2YuZrDSjMPvgAbiQ) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
+   (mirror of GitHub)" (id 1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE, edits 1 to 236; https://docs.google.com/document/d/1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -274,8 +274,10 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   of the truck (Ch 15) and the smell of the high-dollar party (Ch 9). On fresh reads of both Docs that day,
   make_v6.py passes **236 rows (611 replacements)**; verify.py on v8 shows 223 accepted and **224 to 236 not in the
   Doc**, nothing PARTIAL; 103,647 words; build_gate.py NOT READY, 9 open boxes. **The next edit is 237.** Neither Doc
-  was changed. The Drive copy of the edit list was not refreshed in the smell chat (CT asked for GitHub only), so it
-  is still "edits 1 to 233" and is now missing 234 to 236. The scene sheet (Sheet and CSV) was not changed: rows 29
+  was changed. The Drive copy of the edit list was refreshed at the end of the smell chat, on CT's word: "StS edit
+  list, edits 1 to 236 (mirror of GitHub)", id `1YL7Tdov_VVfBSC2OtsUk2frzlw3DnZiHEqyznvVMRSE`, uploaded as text/plain and checked against `EDITS.md` (the
+  same text, edit numbers intact). The 1 to 233 copy is "OLD:" with the new id in its title and a pointer at its
+  top. The scene sheet (Sheet and CSV) was not changed: rows 29
   and 48 are 100 and 48 words short, and its title still says edits 1 to 233. A backup of this branch as it stood
   before the smell chat is the branch `backup/book-branch-2026-11-27`, in both repos.
 

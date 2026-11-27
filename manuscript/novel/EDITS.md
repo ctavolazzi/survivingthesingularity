@@ -3653,8 +3653,8 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      family, but life, it get away from us. The love is still there, deep down, even if the finances maybe get in the way
      sometimes," Rosa explained. "But for the last couple years I volunteer at the church kitchen and we cook a lot of
      food, I cook all day, and now I cook all day here for you!" / "I know someday I cook for my family again. But
-     maybe sometimes is ok to give love a little breathing room." / She set a casserole dish on its placeholder, and the
-     feast began. ("Sorry better Spanglish": "life, it get away from us".) Then, his, from 26 Nov: "I don't really understand all
+     maybe sometimes is ok to give love a little breathing room." / She set a casserole dish on its trivet, and the
+     feast began. (His "placeholder"; CT: "The coaster thing".) ("Sorry better Spanglish": "life, it get away from us".) Then, his, from 26 Nov: "I don't really understand all
      this technology stuff," she said. "It goes over my head. In one ear, out the other." / She paused, turned around
      with the ladle ... "I do know good food. In this place, they make a lot of good food. Nourishes the whole
      community." She pointed at him and tapped him on the chest. Then she put her whole palm on his chest and rubbed it

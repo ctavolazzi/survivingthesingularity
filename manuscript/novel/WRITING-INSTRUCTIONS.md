@@ -69,7 +69,7 @@ sequence of events. We are writing." (chat, 26 Nov)
   Mark what Claude worded.
 - When he restates a line inside one message, the last version is the line.
 - Dictation slips get fixed when the meaning is plain (Martha is Marta; "shopped" is "shipped"; "shooting all over
-  himself" is "shoulding"). If a fix would change the meaning, log it as said and ask one short question.
+  himself" is "shoulding"; "placeholder" for a hot dish is "trivet", CT: "The coaster thing"). If a fix would change the meaning, log it as said and ask one short question.
 - His context ("for our notes", "not for the page") never goes on the page.
 - When he gives a line, keep what was good in the line it replaces and build on both. "But we can combine them
   together, right?"

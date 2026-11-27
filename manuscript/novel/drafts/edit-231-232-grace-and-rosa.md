@@ -114,7 +114,7 @@ Before anybody ate, she took a **rosary** out of her apron pocket, held it in he
 
 *Bendícenos, Señor, y bendice estos alimentos que por tu bondad vamos a recibir. Por Cristo nuestro Señor. Amén.*
 
-**She set a casserole dish on its placeholder, and the feast began.**
+**She set a casserole dish on its** trivet**, and the feast began.**
 
 Elijah carried pots. He had built the holiday route into an app the night before, with a map and a backup for every
 stop, and between pots he showed it to her.
@@ -178,7 +178,7 @@ After review (same day): the first sentence was "One night, when his plate was e
 with her own."; "empty" repeated the line before it ("stood there until it was empty"). Wren's "She put her palm on her
 own chest." in Chapter 31 was cut while Rosa's scene opened that chapter, and put back when the scene moved.
 
-His "placeholder" is kept as he said it ("trivet" if he meant the hot pad). Grace comes before the casserole, so it
+His "placeholder" is "trivet" (CT: "The coaster thing"). Grace comes before the casserole, so it
 is said before anybody eats.
 
 Words: 186 in (231), 361 in (232), 3 out (Ch 38).

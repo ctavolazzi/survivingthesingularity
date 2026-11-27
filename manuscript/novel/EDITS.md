@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 255 (27 Nov, the fourteenth chat), logged only. The next edit is 256.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 256 (27 Nov, the fourteenth chat), logged only. The next edit is 257.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3931,6 +3931,9 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      The book now has 139 scenes; the scene sheet, the calendar's scene list and the desires scene data are merged to
      match. Also, not an edit: with `--no-pictures`, make_v6.py no longer writes a paragraph for a picture that is left
      out, so the 19 places where a picture was stop printing as scene breaks in the PDF. Logged only.
+256. **Chapter 1: "A bar, a Tuesday, three jobs, gone." out.** CT: "Remove that line. It's unnecessary". Elijah's
+     line to Devendra now reads "I watched three people get replaced last week. Real people. And the guys who did it
+     didn't even think it was a big deal." Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

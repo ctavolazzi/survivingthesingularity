@@ -261,4 +261,5 @@ C=[
 (253, 'Ch 0', ['Elijah put a twenty on the bar.\n"Your money'], ['David slid it back across the wood.\n"Your money']),
 (254, 'Ch 0', ['quietly replaced the heart of machine intelligence.'], ['quietly replaced the engine of machine intelligence.']),
 (255, 'Ch 0', ['gone back to nodding.\nYou should know', 'no such patience.\nPorusAI was the other kind', 'paying close attention.\nThere were three of them'], []),
+(256, 'Ch 1', ['I watched three people get replaced last week. Real people. And the guys who did it'], ['A bar, a Tuesday, three jobs, gone.']),
 ]

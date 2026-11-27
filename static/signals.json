@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:12:20Z",
+  "generated_at": "2026-11-27T21:52:29Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -578,29 +578,6 @@
         "robot",
         "robotics",
         "scaling"
-      ]
-    },
-    {
-      "id": "2610.37926",
-      "source": "arxiv",
-      "title": "GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2610.37926",
-      "authors": [
-        "Dogan Urgun"
-      ],
-      "summary": "Cooperative multi-agent reinforcement learning (MARL) enables teams of agents, such as robots and autonomous vehicles, to learn coordinated behavior, but what such teams learn is largely determined by their reward function. Because task success alone provides too little guidance for learning, intermediate rewards are usually designed by hand, and this effort must often be repeated whenever the environment or the team changes. Large language models (LLMs) can automate the effort by writing reward functions as code, yet the resulting rewards are typically designed and tested in a single setting.",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-27",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "robot",
-        "llm",
-        "language model"
       ]
     },
     {
@@ -1527,6 +1504,30 @@
         "agentic",
         "robot",
         "scaling"
+      ]
+    },
+    {
+      "id": "2611.34529",
+      "source": "arxiv",
+      "title": "AliceAI-Foundation-80B-A3B-Base",
+      "url": "https://arxiv.org/abs/2611.34529",
+      "authors": [
+        "Nikolay Skachkov",
+        "Ekaterina Redina",
+        "Maksim Konoplev",
+        "Evgenii Uskov"
+      ],
+      "summary": "We present AliceAI-Foundation-80B-A3B-Base, a mixture-of-experts language model with 80 billion total parameters and approximately 3 billion active parameters per token, trained from scratch at Yandex and released under the Apache 2.0 license. The model combines Kimi Delta Attention with full attention, uses Attention Residuals, and is trained with Muon. Training comprises general pretraining on 17.5 trillion tokens, two context-extension stages, and a dedicated stage for reasoning and agentic interaction. We describe the data collection and augmentation pipelines, evaluation protocols, archit",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-11-25",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "language model"
       ]
     }
   ]

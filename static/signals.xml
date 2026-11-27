@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 26 Nov 2026 22:12:20 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 27 Nov 2026 21:52:29 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Do We Still Need Reinforcement Learning When We Can Read the World Model?</title>
@@ -162,13 +162,6 @@
       <description>A key milestone toward Recursive Self-Improvement (RSI) is replacing hand-crafted optimizers with meta-learned update rules (such as Disco103 and OPEN) that discover how agents learn. Yet when a self-discovered RL model trains with adapting teammates, does co-evolution sustain capability gains or tr... [Score: 9.0 | Flagged for: recursive self-improvement, agent, multi-agent, robot, robotics] Authors: Haomin Luo, Ersha Li</description>
     </item>
     <item>
-      <title>GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2610.37926</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.37926</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Cooperative multi-agent reinforcement learning (MARL) enables teams of agents, such as robots and autonomous vehicles, to learn coordinated behavior, but what such teams learn is largely determined by their reward function. Because task success alone provides too little guidance for learning, interm... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, robot, llm] Authors: Dogan Urgun</description>
-    </item>
-    <item>
       <title>Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents</title>
       <link>https://arxiv.org/abs/2611.34778</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2611.34778</guid>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2611.16315</guid>
       <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
       <description>Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct tes... [Score: 8.5 | Flagged for: agi, agent, multi-agent, language model, rag] Authors: Carolina Fortuna, Blaz Bertalanic</description>
+    </item>
+    <item>
+      <title>Talk to Act: A Synthetic Multi-Turn Dialogue Benchmark for Human Intent Extraction and Action Planning in Robotics</title>
+      <link>https://arxiv.org/abs/2611.17549</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.17549</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Multi-turn conversational human-robot interaction (HRI) continues to be a challenging problem in robotics, as many existing systems rely on rigid, command-driven interfaces that can be unintuitive for users. Recent advances in Large Language Models (LLMs) provide a promising direction, given their a... [Score: 8.5 | Flagged for: planning, reasoning, interpret, robot, robotics] Authors: Deepu Krishnareddy, Mohammad Haziq Khan, et al.</description>
     </item>
   </channel>
 </rss>

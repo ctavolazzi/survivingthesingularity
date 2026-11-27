@@ -266,6 +266,29 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 - The Drive copy of the edit list is still "edits 1 to 233": edit 234 and the context notes added under 229 and 230
   on 27 Nov are not in it. Refresh it at the end of the next session (step 10).
 
+## One branch, and what to check before the final pass (27 Nov, close of the sixth logging chat)
+- **The one branch for the novel is `claude/singularity-publication-build-kparqk`**, in both repos (the book repo and
+  _workbench). Every chat logs there, whatever branch it was given. Checked 27 Nov: no other branch in either repo
+  holds newer novel edits. One side branch, `claude/surviving-singularity-curtis-scene-kjesg6`, held notes and drafts
+  for three scenes (Curtis and the robot OS, Elijah's birthday, Priya's ankle) that were never brought over; the file
+  is now here as `next-version-scenes-2026-11-26.md`. Nothing in it is logged as an edit. Ask CT whether any of it
+  goes in. The birthday draft bears on the age question below.
+- Before starting: `git fetch` and `git pull --ff-only` on that branch in both repos, since several chats push to it.
+- **The scene sheet was checked against the book built with edits 1 to 234** (27 Nov): every scene lines up, every
+  word count matches, every number and weekday listed is in its scene, the dated days fall on the right weekdays,
+  and the Google Sheet matches `scene-sheet-2026-11-27.csv` cell for cell. Rows 52, 53, 126 and 128 were brought up
+  to edit 234. Not re-read: the "What happens" and "What turns" summaries outside those rows.
+- **Left for CT from that check:** Elijah is 36 in early March 2025 and 37 in May (no birthday on the page); in
+  October 2026 the narration says the last grant "ran out in June" while the scene means the coming June; these
+  questions are opened in the sheet and never marked closed (some may be answered on the page): will Elijah ever
+  call Ruby, what Grace and Curtis agreed on, whose name Grace wrote on her hand, what he said to Grace the night
+  of the tea, what happened at Mrs. Delgado's, who helped him that first spring, who the Sacramento LLC is. Row
+  138's word count covers the Epilogue, About This Book and the Afterword, not the Appendix or Thank You. The
+  Sheet's title still says "edits 1 to 233".
+- **Unchecked since the sixth chat changed the build code** (a page for a line before the title, no About the
+  Author page): the paperback, ebook and docx builds, and the site's own tests after the edit list was renamed
+  `EDITS.md`. Run them before a release.
+
 ## Which copy is the most current (CT, 26 Nov)
 "I want the v6 that I'm reading in large print to be the most current version." Everything goes into v6, including
 anything first made for v7 (edits 184 to 186). v7 is a frozen side copy; nothing goes into it unless CT asks. The next

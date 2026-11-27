@@ -296,6 +296,8 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   long Reuben has had the deed (Ch 29, "a year and a half"), "Took you a month" (Ch 24, about seven weeks by the book's
   dates), and "Three years" said in October 2027 (Ch 34, 35; two years and seven months; the narration says "going on
   three years"). For CT, not changed.
+- **Thirteen more cells for the scene sheet, rows 1 to 24**, each with the line from the page that proves it:
+   (from the tenth chat; not applied, so the CSV and the Google Sheet stay in step).
 - **Unchecked since the sixth chat changed the build code** (a page for a line before the title, no About the
   Author page): the paperback, ebook and docx builds, and the site's own tests after the edit list was renamed
   `EDITS.md`. Run them before a release.

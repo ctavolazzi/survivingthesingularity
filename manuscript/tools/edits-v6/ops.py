@@ -1650,6 +1650,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (281, 'with his hands in the hoodie pocket while they waited', 'with his hands in his jacket pockets while they waited'),
 # 282, Ch 10: Ruby shrugs at the elevator, the fur going up and down (CT's words, 27 Nov, fourteenth chat)
 (282, '"Suit yourself, man. Hey, if you\'re ever in the city,', '"Suit yourself, man," Ruby shrugged, the fur of his magnificent jacket going up and down like an endangered fox in an arid desert. "Hey, if you\'re ever in the city,'),
+# 283, Ch 10: why Elijah can tell Ruby meant it (CT's words, 27 Nov, fourteenth chat)
+(283, 'and handed it back. He meant it. A man like Ruby had people to do that for him.', "and handed it back. Elijah could tell he meant it. If he didn't, then why would he put his number in Elijah's phone himself? A man like Ruby had people to do that for him."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

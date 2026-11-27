@@ -289,4 +289,5 @@ C=[
 (280, 'Ch 10', ['"Fifty million views on one video, and it\'s still going," Ruby said. "It\'ll taper off eventually, but man, you really struck a nerve. And your follow-ups'], []),
 (281, 'Ch 8 to 10', ['He had on a jacket that looked like it came straight out of Almost Famous, bright red and mottled, with fur on the cuffs and the collar.', 'He looked like a proper movie star, handsome as hell,', 'Ruby put his hands in his jacket pockets.', 'Ruby kept his on.', 'with his hands in his jacket pockets while they waited'], ['Black hoodie', 'the hoodie pocket', 'kept his hoodie', 'fix the wifi']),
 (282, 'Ch 10', ['"Suit yourself, man," Ruby shrugged, the fur of his magnificent jacket going up and down like an endangered fox in an arid desert. "Hey, if you\'re ever in the city,'], []),
+(283, 'Ch 10', ["and handed it back. Elijah could tell he meant it. If he didn't, then why would he put his number in Elijah's phone himself? A man like Ruby had people to do that for him."], ['and handed it back. He meant it.']),
 ]

@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), logged only. The next edit is 243.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), and edit 243 (27 Nov, the thirteenth chat), logged only. The next edit is 244.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3873,6 +3873,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      330 words in; 105,307 in the chapters. Record: `manuscript/novel/drafts/edit-242-grace-smells.md`. Logged only;
      not in the v8 Doc yet.
      104,977 words in the chapters. Logged only; not in the v8 Doc yet.
+243. **Chapter 26: Grace is back by spring, and Curtis ran the route all winter.** New paragraph before "The beds went
+     in on the worst ground the forty acres had.": "Grace was back by the time the beds went in. Curtis had run the
+     route all winter, and said so more than once." Found in the thirteenth chat's read of Ch 25 to 27 in place: no
+     line said she came back after the December goodbye (edit 239), and nothing said who ran the route while she was
+     away. Claude's wording, shown to CT and logged on his "Yes" (27 Nov). Invented: Curtis running the route, and
+     "said so more than once". 23 words in; 105,330 in the chapters. Record: `manuscript/novel/drafts/edit-243-grace-back.md`.
+     Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

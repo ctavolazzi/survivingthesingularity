@@ -753,6 +753,8 @@ What the page gives it (checked against the knowledge sheet and the book with ed
   scene it is the thing he gave her with his head in her lap. And it is the night he tells her everything except the
   arms, which is what "You've been lying to me this whole time?" needs.
 
+**Decided (CT, 27 Nov, thirteenth chat): Marta says "If that little guy only works half the time then maybe it's time we upgraded to something more heavy duty."** That night, over the rover; Priya answers it with her sheet in Irene's kitchen the next afternoon.
+
 ### More for section 7 from CT (27 Nov 2026). His words, as sent:
 
 Maybe that's what leads into the discussion the women have about upgrading? Or maybe something else?

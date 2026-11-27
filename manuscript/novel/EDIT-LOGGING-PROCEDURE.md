@@ -244,6 +244,16 @@ and makes his final edits there. The next edit is 139. Log it the same way (numb
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 
+## Where things stand (end of the seventeenth chat, 27 Nov)
+- **Edits 296 to 299 are logged in GitHub only** (the shouse scene in Chapter 21 and its three follow-ons). make_v6.py on
+  a fresh v5 read: 710 replacements, all 300 check rows pass. **The next edit is 300.**
+- The scene sheet CSV has the new scene as row 130 (in book order after row 54; rows are not renumbered when a scene is
+  added, because the other sheets cite row numbers). `story_checks.py`'s WHEN list is keyed by book order, so a new
+  scene means renumbering it from that point; the senses and desires data files each need an entry for the new row.
+- CT, 27 Nov: the four questions the plants sheet called "never" stay open. Every other open continuity item has a
+  status in `CHECKPOINT-2026-11-27-seventeenth.md`.
+- Drive was not updated: the edit list mirror and the Google Sheet stop at edit 295. Neither Doc was changed.
+
 ## Where things stand (end of the eleventh logging chat, 27 Nov)
 - **The book is the Google Doc "StS v8 draft (Nov 26)"** (CURRENT in the bridge map): the v5 Doc with its suggestions
   accepted plus edits 1 to 223, without pictures. Its locked backup: "StS v8 BACKUP (Nov 26), do not edit". Neither was

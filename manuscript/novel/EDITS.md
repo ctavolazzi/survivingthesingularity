@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), and edit 243 (27 Nov, the thirteenth chat), logged only. The next edit is 244.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edit 244 (27 Nov, the fourteenth chat), logged only. The next edit is 245.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -3880,6 +3880,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      away. Claude's wording, shown to CT and logged on his "Yes" (27 Nov). Invented: Curtis running the route, and
      "said so more than once". 23 words in; 105,330 in the chapters. Record: `manuscript/novel/drafts/edit-243-grace-back.md`.
      Logged only; not in the v8 Doc yet.
+244. **The Dedication.** CT (27 Nov, the fourteenth chat), word for word: "To the people who called me crazy. Thank you
+     for the motivation. / And to you, dear reader. / Recognize your power." In place of "For the people I love who
+     looked me in the eye like I'd finally lost it." and "Recognize Your Power"; three centered lines, his capitals and
+     periods. The book's last line ("Recognize Your Power", after Thank You) is unchanged. Rows 184 and 185 narrowed
+     to match. All his words; nothing invented. Logged only; not in the v8 Doc yet.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

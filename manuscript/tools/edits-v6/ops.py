@@ -1550,6 +1550,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (242, '"Very intelligent," she said. "Okay, spreadsheet."', '"Very intelligent," she said. "Okay, spreadsheet."\n"Marta, forgive me if this is weird."\nMarta braced for impact.\n"She smells better than anyone I\'ve ever known. And she doesn\'t even wear deodorant."\n"Pheromones," Marta said. "You two have chemistry."'),
 # 243, Ch 26: Grace is back by spring, and Curtis ran the route all winter (CT's yes, 27 Nov, thirteenth chat; Claude's wording; drafts/edit-243-grace-back.md)
 (243, 'The beds went in on the worst ground the forty acres had.', 'Grace was back by the time the beds went in. Curtis had run the route all winter, and said so more than once.\nThe beds went in on the worst ground the forty acres had.'),
+# 244, the Dedication, CT's words (27 Nov, fourteenth chat): "To the people who called me crazy. ..."
+(244, "For the people I love who looked me in the eye like I'd finally lost it.\n§C Recognize Your Power", "To the people who called me crazy. Thank you for the motivation.\n§C And to you, dear reader.\n§C Recognize your power."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

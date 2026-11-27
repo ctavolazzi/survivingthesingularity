@@ -1638,6 +1638,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 # 277, Ch 7: Ma's compliment, and what Elijah hears (CT's words, 27 Nov, fourteenth chat; placed by Claude)
 (277, '"I didn\'t follow it, baby." She was doing the dishes', '"I didn\'t follow it, baby, but the numbers are big! You keep this up, you\'ll finally be famous!" She was doing the dishes'),
 (277, 'You were sitting right on it."\nHe told her the floor was clean.', 'You were sitting right on it."\nAs always, she meant well, but Elijah heard what she wasn\'t saying. We all have dynamics with our family, and Elijah\'s mother had a long history of hiding criticisms within compliments.\nHe told her the floor was clean.'),
+# 278, Ch 7: the floor was clean now, and the laundry (CT, 27 Nov, fourteenth chat)
+(278, 'compliments.\nHe told her the floor was clean.', 'compliments.\nHe told her the floor was clean now, side-eyeing a growing pile of dirty laundry.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

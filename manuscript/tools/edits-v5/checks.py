@@ -251,4 +251,5 @@ C=[
 (243, 'Ch 26', ['Grace was back by the time the beds went in. Curtis had run the route all winter, and said so more than once.'], []),
 (244, 'Dedication', ["Dedication\nTo the people who called me crazy. Thank you for the motivation.\nAnd to you, dear reader.\nRecognize your power.\nAct One"], ["For the people I love who looked me in the eye like I'd finally lost it."]),
 (245, 'Ch 0', ['Elijah would sit down and it would appear like magic.\nAt the far end, on the last stool, David'], ['it would already be there.']),
+(246, 'Ch 0', ['including styles he recognized. Styles with names attached, people attached, rent payments attached.'], ['including styles he recognized, styles with names attached']),
 ]

@@ -1552,7 +1552,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (243, 'The beds went in on the worst ground the forty acres had.', 'Grace was back by the time the beds went in. Curtis had run the route all winter, and said so more than once.\nThe beds went in on the worst ground the forty acres had.'),
 # 244, the Dedication, CT's words (27 Nov, fourteenth chat): "To the people who called me crazy. ..."
 (244, "For the people I love who looked me in the eye like I'd finally lost it.\n§C Recognize Your Power", "To the people who called me crazy. Thank you for the motivation.\n§C And to you, dear reader.\n§C Recognize your power."),# 245, Ch 0: the beer appears like magic; David's father gets his own paragraph (CT, 27 Nov, fourteenth chat)
-(245, 'Elijah would sit down and it would already be there. At the far end, on the last stool,', 'Elijah would sit down and it would appear like magic.\nAt the far end, on the last stool,'),
+(245, 'Elijah would sit down and it would already be there. At the far end, on the last stool,', 'Elijah would sit down and it would appear like magic.\nAt the far end, on the last stool,'),# 246, Ch 0: the run-on in the demos split (CT, 27 Nov, fourteenth chat: "Run on sentence. Change to 'Styles with names attached...'")
+(246, 'including styles he recognized, styles with names attached, people attached, rent payments attached.', 'including styles he recognized. Styles with names attached, people attached, rent payments attached.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

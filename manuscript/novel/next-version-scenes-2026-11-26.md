@@ -791,7 +791,7 @@ she pulled the blanket off the floor on the passenger side and stopped.":
 >
 > She **looked behind her from inside the truck.** "**Perfume?**" Then: "**Oh. You really are new to this, aren't you?**"
 >
-> She backed out of the cab with **a bag of junk** in one hand and the sock in the other. "**I don't wear perfume. Very few people out here do.**" She looked him over. "**You from the city? What's your story?**"
+> She backed out of the cab with **a bag of junk.** "**I don't wear perfume. Very few people out here do.**" She looked him over. "**You from the city? What's your story?**"
 >
 > "**Oh, you want to know my story?**" Elijah said. "**How much time you got?**"
 >
@@ -799,10 +799,13 @@ she pulled the blanket off the floor on the passenger side and stopped.":
 
 The interruption is the scene's own next line: she pulls the blanket off the passenger side and finds the amp ("Oh my
 God."). Claude's words: "Somewhere in there", "It cut straight through what five months had done to the cab" (the
-smell of the cab is edit 235), "It took him a second to work out that", "She backed out of the cab", "the sock" (on the
-page a line earlier), "She looked him over", "She ducked back into the cab". "Better than anyone he had ever smelled"
+smell of the cab is edit 235), "It took him a second to work out that", "She backed out of the cab", "She looked him over", "She ducked back into the cab". "Better than anyone he had ever smelled"
 is an absolute he means, so it stays (15c). It answers the perfume of Chapters 8 and 9: the women in the city wear
 it; Grace doesn't.
+
+Corrected (CT: "The sock? She's not gonna pull a cum sock out of the fucking truck. Come on, bro."): the first
+draft had her back out "with a bag of junk in one hand and the sock in the other." The sock is gone from her hands.
+The book's list a few lines up ("A delivery bag. A sock.") is older text and was not touched.
 
 ### An echo with Marta ("Pondwater"). CT, same night. His words, as sent:
 

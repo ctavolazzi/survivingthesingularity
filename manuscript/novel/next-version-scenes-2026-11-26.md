@@ -785,7 +785,7 @@ Chapter 17, "That Sunday Grace helped him clean out the truck." After "He got th
 she did, with the yellow ticket still in it behind the gas receipt, and stuffed it in his jacket." and before "Then
 she pulled the blanket off the floor on the passenger side and stopped.":
 
-> Somewhere in there he caught **a smell he didn't quite recognize.** It cut straight through what five months had done to the cab, and **it smelled really good.** It took him a second to work out that **it was Grace.** **She smelled better than anyone he had ever smelled before.**
+> Somewhere in there he caught **a smell he didn't quite recognize.** It cut straight through what five months had done to the cab, and **it smelled really good.** It took him a second to **work** it **out. Through process of elimination, he figured, something that kind of weirded him out. It must be Grace. She smelled great, better than anyone he'd ever smelled before.**
 >
 > "**Hey, I'm sorry,**" he said. "**If this is too much. But could I ask what kind of perfume you're wearing?**"
 >
@@ -806,6 +806,11 @@ it; Grace doesn't.
 Corrected (CT: "The sock? She's not gonna pull a cum sock out of the fucking truck. Come on, bro."): the first
 draft had her back out "with a bag of junk in one hand and the sock in the other." The sock is gone from her hands.
 The book's list a few lines up ("A delivery bag. A sock.") is older text and was not touched.
+
+CT's next words for that line: "It took him a second to work out that it was grace. Through process of elimination,
+he figured, something that kind of weirded him out. It must be grace. She smelled great, better than anyone he'd ever
+smelled before." He said "it was Grace" and then "It must be Grace"; the second is the keeper, so the first became
+"It took him a second to work it out."
 
 ### An echo with Marta ("Pondwater"). CT, same night. His words, as sent:
 

@@ -1597,6 +1597,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (264, "He left the tower off for a week, and when he opened the notebook where he'd scrawled MADRONE IS NOT A DRONE, he turned to a clean page and started writing.", 'He left the tower off for a week while he processed things, kept up with his day job and tried not to go off the deep end.\nThen one day he was pacing around his apartment, talking himself through yet another read of "Attention Is All You Need," and it clicked.\nThis scales up forever, he thought. Is there really no limit? That can\'t be right.\nHe opened the notebook where he\'d scrawled MADRONE IS NOT A DRONE, turned to a clean page and started writing.'),
 # 265, Ch 2: Wes's link a bit later (CT, 27 Nov, fourteenth chat)
 (265, 'A minute later Wes sent a link.', 'A bit later Wes sent a link.'),
+# 266, Ch 2: "All you have to build is the fence." out (CT, 27 Nov, fourteenth chat)
+(266, 'It just stopped being theirs. All you have to build is the fence."', 'It just stopped being theirs."'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

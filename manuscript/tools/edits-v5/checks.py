@@ -30,7 +30,7 @@ C=[
 (22,"Ch 2",["He meant to do it, but he never got the chance."],[]),
 (25,"Ch 2, 6, 13",["hit piece on how much water Companion","is this true","Elijah didn't answer.","Wes's link to the water article","the link to the water article"],[]),
 (23,"Ch 2",["I liked what you said there.","God, you people don't have any concern for what other people want.","Feeling weird, he went looking for a familiar face, a friendlier one"],["hand on her car door","She got in and slammed the door"]),
-(24,"Ch 2",["You doing okay? You look a little rattled.","caretake the rollout","I'm not their dad. You're not their mom.","Elijah was left with a pit in his stomach.","All you have to build is the fence."],["Good quarter,","And you took the bonus.","That's the hedge"]),
+(24,"Ch 2",["You doing okay? You look a little rattled.","caretake the rollout","I'm not their dad. You're not their mom.","Elijah was left with a pit in his stomach."],["Good quarter,","And you took the bonus.","That's the hedge"]),  # its fence line cut by edit 266
 (26,"Meanwhile 1",["Everything anyone ever made with their software and stored on their servers."],[]),
 (27,"Meanwhile 1",["Find out what their dirt costs"],["what the dirt costs"]),
 (28,"Ch 3",["I am afraid of what mankind might do with such a thing.","The pit in Elijah's stomach grew deeper.","We do not exactly have a glowing track record with new technology."],[]),
@@ -271,4 +271,5 @@ C=[
 (263, 'Ch 2', ['The realtors had watched a demonstration of a tiny baby robot. This was more like a car factory, and he had helped build it.'], ['This was the factory,']),
 (264, 'Ch 1', ['He left the tower off for a week while he processed things, kept up with his day job and tried not to go off the deep end.', 'This scales up forever, he thought. Is there really no limit? That can\'t be right.', 'MADRONE IS NOT A DRONE, turned to a clean page and started writing.'], ['and when he opened the notebook where']),
 (265, 'Ch 2', ['A bit later Wes sent a link.'], ['A minute later Wes sent a link.']),
+(266, 'Ch 2', ['It just stopped being theirs." Elijah nodded at the screen'], ['All you have to build is the fence.']),
 ]

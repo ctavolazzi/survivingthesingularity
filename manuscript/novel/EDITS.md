@@ -4732,6 +4732,75 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      a parent at that age: how late he slept, the lights he left on, what time he came in." CT's beat; Claude's words,
      and the three arguments are invented. Logged only.
 
+372. **Chapter 12: his whole life saying yes; he lets it ride.** CT, 28 Nov, reading V9 (page 188): "He'd spent 10 months
+     saying yes to people on hours of sleep. That doesn't seem right. He'd spent his whole life saying yes to people when
+     he would rather have just gone home and gone to sleep. Something about this should kind of make him feel really
+     defeated on top of already feeling confused and defeated. And so he just decides to let it ride." Shown first;
+     logged with Chapter 13 on his "I think we're pretty close to ready, but I think you can extrapolate out from this
+     what I might want you to do." (a) "He'd spent ten months saying yes to people on four hours of sleep, and somewhere
+     in there his body had stopped asking his permission." becomes "He'd spent his whole life saying yes to people when he
+     would rather have just gone home and gone to sleep, and somewhere in there his body had stopped asking his
+     permission. All those yeses, and this was where they had put him. That thought took the last of the fight out of
+     him." CT's sentence, word for word; the book's "and somewhere in there ..." clause kept; the two sentences of defeat
+     are Claude's. (b) "He'd sleep it off." becomes "So he decided to let it ride. He'd sleep it off." ("let it ride" is
+     his). Check rows 325 and 329 moved. Logged only.
+373. **Chapter 13: the pronoun openers, with four senses.** CT, 28 Nov, reading V9, over six screenshots of the chapter:
+     "Whole lot of sentences that start with the pronoun he right here."; "this whole chapter has a whole bunch of the
+     pronoun he starting a whole bunch of sentences."; "This is sparse, and that's good. I like it to be sparse, but
+     we're still doing the thing where we start all these sentences with pronouns."; "Every single sentence in this
+     paragraph starts with the pronoun he."; and "In these parts where we have repetition of pronouns, we could also
+     include the other senses. You know, the sight, smell, taste, touch, sound of things." Counted by script: 109 of 416
+     narration sentences opened with "He" (26%); after this edit, 72 of 409 (18%). Every change was shown to him in a
+     before-and-after table first; logged on his "pretty close to ready ... you can extrapolate". Only openings and joins
+     change; every fact and line of dialogue stays. All wording is Claude's. Several of the sentences reworded were CT's
+     own dictated lines from edits 68, 69, 71, 74, 75, 153 and 154 (their check rows moved to the new words); they
+     changed on his ask.
+     Four senses added, each for something already on the page: the smell of wet concrete (Stockton), "The kitchen still
+     smelled of the burned pot.", her hand "was warm, and it weighed almost nothing.", "The garage gave his voice back to
+     him off the concrete."
+     Left as they are, on purpose: "He didn't answer any of it. He put his phone away and went for a walk to go buy
+     cigarettes." (CT: "such a fantastic way of showing his mood without telling his mood"); "He was tough. He could
+     tough it out."; "He would listen to it later. He would listen to it a great many times."; the sobbing and "He went
+     to bed that night crying, and he woke up the next morning crying."; "He asked her." / "He asked them, too."; "He did
+     not take one bucket."
+     The 35 rows:
+     - "He decided not to go to the hospital." becomes "A hospital was out of the question."
+     - "He left the lot with the windows down and the heater on, because he couldn't get warm. He had a quarter tank and no money." becomes "The Ranger left the lot with the windows down and the heater on, because he couldn't get warm. There was a quarter tank in it and no money in his pocket."
+     - "He wasn't going to walk into her kitchen looking like this." becomes "Walking into her kitchen looking like this was more than he could stand."
+     - "A man hosed off the sidewalk in front of a check-cashing place. A bus" becomes "A man hosed off the sidewalk in front of a check-cashing place, and the smell of wet concrete came in through the window. A bus"
+     - "He was still in go mode." becomes "Go mode hadn't shut off yet."
+     - "He watched them all the way to the corner. / He wanted that. He hadn't let himself want it in a while." becomes "His eyes followed them all the way to the corner. / He wanted that. It had been a while since he'd let himself want it."
+     - "That was why. He had nothing to offer anybody right now but a truck and a list, and he knew" becomes "That was why. A truck and a list were all he had to offer anybody right now, and he knew"
+     - "He left immediately. He didn't remember the drive." becomes "He left immediately, and afterward he couldn't remember the drive."
+     - "Her right hand lay on the blanket where somebody had put it. Her mouth went down on that side." becomes "The right side of her mouth went down, and her right hand lay on the blanket where somebody had put it."
+     - "She worked at it. He watched her go and get the word" becomes "She worked at it, and he watched her go and get the word"
+     - "He asked what she would get back." becomes "Elijah asked what she would get back."
+     - "It was not in the rack. It was on the back burner with" becomes "It sat on the back burner, not in the rack, with"
+     - "He stood in her kitchen and looked. There were three cartons of milk in the refrigerator and two of them were open. Her reading glasses were in the bread drawer. His phone number was on the refrigerator door in her handwriting," becomes "The kitchen still smelled of the burned pot. Three cartons of milk were in the refrigerator, and two of them were open. Her reading glasses were in the bread drawer. The refrigerator door had his phone number on it in her handwriting,"
+     - "He had seen it, and he had gone to Stockton" becomes "The signs had been right in front of him, and he had gone to Stockton"
+     - "She was a woman who wrote the date" becomes "This was a woman who wrote the date"
+     - "Her mail was in the drawer with the rubber bands." becomes "The mail was in the drawer with the rubber bands."
+     - "He went in and sat down at the table. There was nobody to call." becomes "Inside, he sat down at the table. There was nobody to call."
+     - "He got up and went down the hall and ran cold water over his face." becomes "Down the hall, he ran cold water over his face."
+     - "He sat by the bed with the two pages and he told her all of it" becomes "Sitting by the bed with the two pages, he told her all of it"
+     - "She looked at him the whole time. She understood that he was upset." becomes "She looked at him the whole time, and she understood that he was upset."
+     - "patted his. / Then she looked past him" becomes "patted his. It was warm, and it weighed almost nothing. / Then she looked past him"
+     - "He had been talking to that phone for a year. He had told it what was coming and how it was going," becomes "That phone had heard him talk for a year. It had heard what was coming and how it was going,"
+     - "He had never asked them for one thing." becomes "In all that time he had never asked them for one thing."
+     - "He did not do it well. He said his mother had had a stroke. He said what a room cost. He said, "I don't know how to ask this. I need help." He put up a link and went back upstairs." becomes "He did not do it well. The garage gave his voice back to him off the concrete. First came the stroke, then what a room cost. "I don't know how to ask this," he said. "I need help." The link went up, and he went back upstairs."
+     - "He finally read the second half on a stranger's post." becomes "A stranger's post was where he finally read the second half."
+     - "He couldn't bring himself to answer these, but" becomes "Answering these was more than he could manage, but"
+     - "He only needed to read that one once." becomes "Once was enough for that one."
+     - "He sent Tulsa her twenty back, and the elevator man his ten." becomes "Tulsa got her twenty back, and the elevator man his ten."
+     - "He got the phone out and scrolled to ruby, lower case. A million dollars, at an elevator. He could call and say he had changed his mind. He scrolled past it to Gus, and to David, and back up to ruby, and sat there with his thumb over the screen." becomes "The phone came out, and he scrolled to ruby, lower case. A million dollars, at an elevator. One call, and he could say he had changed his mind. His thumb went past it to Gus, and to David, and back up to ruby, and stayed there over the screen."
+     - "He had the sale date and the amount owing and the taxes, which were also behind. He had a number for" becomes "In the folder were the sale date and the amount owing and the taxes, which were also behind. There was a number for"
+     - "He thought about it for the length of time it had taken the notary to find her stamp." becomes "The thought lasted about as long as it had taken the notary to find her stamp."
+     - "He could not make it make sense." becomes "It would not make sense."
+     - "He just stood on Main Street, and his best friends banged the doors of the van shut and drove off." becomes "His best friends banged the doors of the van shut and drove off, and he just stood on Main Street."
+     - "He looked up. He saw Elijah through the glass, under the neon bear. He stopped wiping." becomes "He looked up and saw Elijah through the glass, under the neon bear. The rag stopped."
+     - "He could not have slept in sight of that barn." becomes "There was no sleeping in sight of that barn."
+     Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

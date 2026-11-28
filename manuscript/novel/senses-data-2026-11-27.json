@@ -597,10 +597,12 @@
    "windows down and the heater on, because he couldn't get warm",
    "His throat got tight."
   ],
-  "smell": [],
+  "smell": [
+   "the smell of wet concrete came in through the window"
+  ],
   "taste": [],
   "sight": [
-   "A man hosed off the sidewalk in front of a check-cashing place.",
+   "A man hosed off the sidewalk in front of a check-cashing place",
    "sharing one cup with two spoons, bumping shoulders"
   ],
   "physics": [],
@@ -613,8 +615,8 @@
   "smell": [],
   "taste": [],
   "sight": [
-   "Her right hand lay on the blanket where somebody had put it.",
-   "Her mouth went down on that side."
+   "her right hand lay on the blanket where somebody had put it",
+   "The right side of her mouth went down"
   ],
   "physics": [],
   "food_or_drink_not_tasted": []
@@ -630,12 +632,13 @@
   ],
   "smell": [
    "Manny had smelled it from the yard.",
-   "The boards still gave off the smell of it."
+   "The boards still gave off the smell of it.",
+   "The kitchen still smelled of the burned pot."
   ],
   "taste": [],
   "sight": [
    "White buckets, stacked five high, with the lids taped.",
-   "on the back burner with a wooden spoon in it and something burned to the bottom"
+   "with a wooden spoon in it and something burned to the bottom"
   ],
   "physics": [],
   "food_or_drink_not_tasted": []
@@ -656,7 +659,8 @@
   "scene": 33,
   "sound": [],
   "touch": [
-   "Her good hand came up off the blanket and patted his."
+   "Her good hand came up off the blanket and patted his.",
+   "It was warm, and it weighed almost nothing."
   ],
   "smell": [],
   "taste": [],
@@ -668,7 +672,9 @@
  },
  {
   "scene": 34,
-  "sound": [],
+  "sound": [
+   "The garage gave his voice back to him off the concrete."
+  ],
   "touch": [],
   "smell": [
    "In a hallway that smelled like hand sanitizer he stood with all of it in one hand."
@@ -703,14 +709,14 @@
  {
   "scene": 36,
   "sound": [
-   "his best friends banged the doors of the van shut and drove off"
+   "His best friends banged the doors of the van shut and drove off"
   ],
   "touch": [],
   "smell": [],
   "taste": [],
   "sight": [
    "They were laughing about something, and Wes was walking backward",
-   "He saw Elijah through the glass, under the neon bear."
+   "saw Elijah through the glass, under the neon bear"
   ],
   "physics": [
    "got the back doors open, and slid the case in",

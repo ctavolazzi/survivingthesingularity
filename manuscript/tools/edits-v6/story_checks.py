@@ -771,7 +771,7 @@ OBJECTS = [
     ]),
     ("Ma's pot", [
         ("the clank of the pot she never let anyone else wash.", "Ma's kitchen"),
-        ("It was on the back burner with a wooden spoon in it and something burned to the bottom.", "Ma's stove, burned"),
+        ("It sat on the back burner, not in the rack, with a wooden spoon in it and something burned to the bottom.", "Ma's stove, burned"),
         ("He took the amp, a bag of clothes, the notebooks, the manuscript and the pot.", "the Ranger"),
         ("He had her pot and an amp he wouldn't turn on", "the Ranger, Santa Rosa"),
         ("Last came his mother's pot, out of the kitchen trailer, wrapped in a dish towel.", "the co-op kitchen trailer, then the Ranger's bed"),
@@ -897,7 +897,7 @@ PLANTS = {
     "How will people react to the video?": ("paid", "The first comment from a stranger, under the video, came from a woman in Tulsa."),
     "Why is the phone buzzing all night?": ("paid", "I thought I was the only one, she wrote."),
     "Why is Wes silent?": ("paid", "It was one word. figured."),
-    "What will saying yes to everything cost him?": ("paid", "He'd spent ten months saying yes to people on four hours of sleep"),
+    "What will saying yes to everything cost him?": ("paid", "He'd spent his whole life saying yes to people when he would rather have just gone home and gone to sleep"),
     "Is Elijah losing it?": ("same scene", "Maybe David was right. Maybe he was losing it."),
     "Which side is he on?": ("same scene", "\"I just want people to see what's coming,\" Elijah said."),
     "What does Ruby want to show him?": ("paid", "\"Not yours,\" Ruby said, and steered him past by the elbow."),
@@ -1091,6 +1091,8 @@ SENSE_WHOSE = {
     "until his hair smelled like welding smoke": "Claude's; the final pass, CT's move of a smell for a run of He steps (edit 338)",
     "The cider was all apple at first, and then whatever Lou had added crept in underneath and stayed.": "Claude's; the final pass, a taste where it carries feeling (edit 339)",
     "It came in clean, and next to it he could smell the room.": "Claude's; the final pass, CT's smell lesson (edit 343)",
+    "the smell of wet concrete came in through the window": "Claude's; CT's move of a sense for a run of pronoun openers (edit 373, 28 Nov)",
+    "The kitchen still smelled of the burned pot.": "Claude's; CT's move of a sense for a run of pronoun openers (edit 373, 28 Nov)",
     "The eggs had gone cold, and the salt finally cut the taste of the tea.": "Claude's; the final pass, a taste where it carries feeling (edit 343)",
 }
 SENSE_CALL = {31: "Logged, edit 294 (CT: \"Yes log both\") " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 55: "Leave (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 63: "Leave: no smoke at the door (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 72: "Claude's kitchen-heat draft dropped (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 81: "Leave: no smell for the pits (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 89: "Logged, edit 293: \"Rosa's cooking\"; \"the heavenly scent\" left out (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 120: "Logged, edit 295, the old fence's smoke (CT: \"Yes log both\") " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 23: "Logged, edit 236 (the party)", 39: "Logged, edit 235 (the truck); corrected wording kept (CT, 27 Nov, sixteenth chat: \"I like the way it reads now.\")"}

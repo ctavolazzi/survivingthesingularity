@@ -602,6 +602,15 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   such a fantastic way of showing his mood without telling his mood. This is such fantastic writing right here. This is
   good imagery." A small ordinary action that carries the mood is the target. When a pass for pronoun openers reaches a
   line like this, leave the whole beat alone, the "He" openers included.
+- **Pronoun runs, the whole method (CT, 28 Nov, reading V9, Chapter 13).** "This is sparse, and that's good. I like it
+  to be sparse, but we're still doing the thing where we start all these sentences with pronouns." "In these parts
+  where we have repetition of pronouns, we could also include the other senses. You know, the sight, smell, taste,
+  touch, sound of things." So: keep it sparse; open the sentence on what it is about (the truck, the folder, her hand,
+  the place); and where the thing is already on the page, let one sentence be a sense (the burned pot still in the
+  kitchen air, his voice coming back off the garage concrete). About four senses in a chapter is the limit. "She" and
+  "Her" runs count the same as "He". The final pass had marked most of these "kept"; his read says a run of three or
+  more is not kept unless it is his repetition for weight. He then said to extrapolate: do the same in the other
+  chapters without waiting for a screenshot of each page.
 - A table row for section 16: Claude wrote "Lou noticed." and a run of "He" openers | "Of course Lou noticed. It just
   happened." "You're still repeating the he pattern" | the noticing cut; openers counted before showing.
 

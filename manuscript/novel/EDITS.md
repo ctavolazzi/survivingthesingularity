@@ -4647,6 +4647,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      really cleared up." becomes "Weather that seemed like it might never clear up." CT's words. Check row 289 moved to
      the new words. In the published sample (Chapters 0 to 10). Logged only.
 
+367. **Chapter 0: "what anyone might do".** CT, 28 Nov, reading V9 (page 22): "He did what you would do when you witness
+     something. He did what anyone might do when they witness something." The last version is the line. "He did what you
+     do when you witness something." becomes "He did what anyone might do when they witness something." CT's words. In
+     the published sample. Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

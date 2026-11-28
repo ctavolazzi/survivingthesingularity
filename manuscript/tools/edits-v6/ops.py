@@ -1868,6 +1868,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (365, '"She\'s the reason there\'s a drawing," Marta said.\nTwo orange robot arms were sitting in crates in Richard Praether\'s pole barn, doing nothing. An idea had started up in Elijah, and he let it run.\nLou had come up from the beds', '"She\'s the reason there\'s a drawing," Marta said.\nLou had come up from the beds'),
 # 366, Ch 0: the weather "seemed like it might never clear up" (CT, 28 Nov, reading V9)
 (366, "became the weather of his life. Weather that never really cleared up.", "became the weather of his life. Weather that seemed like it might never clear up."),
+# 367, Ch 0: "what anyone might do" (CT, 28 Nov, reading V9)
+(367, "He did what you do when you witness something.", "He did what anyone might do when they witness something."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

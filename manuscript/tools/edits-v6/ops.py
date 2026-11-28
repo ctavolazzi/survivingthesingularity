@@ -1838,6 +1838,12 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (350, '"Suit yourself, man," Ruby shrugged again, the fur', '"Suit yourself, man." Ruby shrugged again, the fur'),
 # 351, Ch 5: the amp "like a monument" (cover-to-cover item 3; CT's words, 28 Nov)
 (351, "He set the amp in the corner of the living room and didn't plug anything into it again, as a monument, which was the point.", "He set the amp in the corner of the living room like a monument, and considered what it would be like to never plug in again."),
+# 352, Ch 14: he runs the heater and shuts the truck off, so the engine can tick (cover-to-cover item 5; CT's beat, Claude's words, 28 Nov)
+(352, "It got dark. He lay across the bench seat", "It got dark. The cold came up through the floor. He ran the heater until his fingers loosened up, then shut the truck off again to save the gas. He lay across the bench seat"),
+# 353, Ch 15: "would have come off" (cover-to-cover item 6; the list's fix, CT's yes)
+(353, "Every twenty he took out came off the far end of her room.", "Every twenty he took out would have come off the far end of her room."),
+# 354, Ch 17: the third raised eyebrow out (cover-to-cover item 8; the list's fix, CT's yes)
+(354, 'Elijah turned and raised an eyebrow. "Excuse me?"', 'Elijah turned. "Excuse me?"'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

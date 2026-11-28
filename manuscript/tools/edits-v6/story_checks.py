@@ -694,7 +694,7 @@ MONEY_RX = re.compile(r"(?i)\$\d[\d,]*(?:\.\d+)?|\b(?:a|one|two|three|four|five|
 # (the check, [lines it rests on], verdict: holds / does not hold / can't tell, why)
 MONEY_CHECKS = [
     ("Ma's room against the account", ["At the bottom of the page was a number for one month. The first time he read it he took it for a year.",
-      "The money went into an account that said Linda Madrone across the top", "Every twenty he took out came off the far end of her room.", "The room got paid."],
+      "The money went into an account that said Linda Madrone across the top", "Every twenty he took out would have come off the far end of her room.", "The room got paid."],
      "holds", "The page never gives the room's cost or the account's balance, so nothing can contradict. What it gives agrees: the sale closed over what the bank wanted (Ch 37), he took none of it (Ch 13, 14, 15), and three years on the room is still paid (Ch 37)."),
     ("The route at $11.40 a person a week, against the plan that would pay for it", ["Eleven dollars and forty cents.", "I've got a hundred and forty on the route", "Eight hundred dollars. A hundred people a year pays for the whole route."],
      "holds", "140 people x $11.40 x 52 weeks = $82,992 a year. Elijah's plan, 100 visitors x $800 = $80,000 a year. Within four percent: his arithmetic is right, which is what makes the table's no about something else."),

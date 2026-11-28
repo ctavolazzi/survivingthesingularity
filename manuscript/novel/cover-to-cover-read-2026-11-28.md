@@ -36,16 +36,16 @@ where the reader had one; it is a suggestion only.
 
 5. **Ch 14, line 1291, "The engine ticked as it cooled."** He turned the truck off under the madrones in daylight,
    hours before; it would not still tick. The same phrase comes back for the plasma table (1545). CT's base text,
-   kept beside his lines in edit 106.
+   kept beside his lines in edit 106. **CT, 28 Nov: the line stays; he runs the heater first. Edit 352.**
 6. **Ch 15, line 1324, "Every twenty he took out came off the far end of her room."** In plain past tense this says
    he took twenties out, and the book says he took none (1168, 1250, 1366). One fix: "Every twenty he took out would
-   have come off the far end of her room." CT's base text; edit 55 hangs his million-dollar lines on it.
+   have come off the far end of her room." CT's base text; edit 55 hangs his million-dollar lines on it. **CT, 28 Nov: use the fix. Edit 353.**
 7. **Ch 16, line 1583, "he had a light step ... Lou's steps were light as a feather."** The same point twice in a row.
    Both are CT's dictation (edit 228), so it may be emphasis. One fix keeps his feather line: "he didn't pound the
-   ground like so many men his size. Lou's steps were light as a feather."
+   ground like so many men his size. Lou's steps were light as a feather." **CT, 28 Nov: leave.**
 8. **Ch 17, lines 1597, 1605, 1612: three raised eyebrows in sixteen lines** ("He raised an eyebrow.", "He raised his
    eyebrows and blinked a few times.", "Elijah turned and raised an eyebrow."). All three are CT's words (edits 231 and
-   285). One fix: "Elijah turned." at 1612.
+   285). One fix: "Elijah turned." at 1612. **CT, 28 Nov: use the fix. Edit 354.**
 9. **Ch 19, lines 1904 and 1905: Marta ends two speeches in a row on "spreadsheet".** The second was "Elijah" until 26
    Nov, changed because Ch 37 says she never called him that. Fix: "we're starting to see come out." (drop the second).
    The sentence is CT's (edit 124); the word "spreadsheet" there is Claude's correction.

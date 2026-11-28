@@ -375,4 +375,7 @@ C=[
 (349, 'Ch 0', ['since high school. Elijah drew, in the hours nobody paid for.'], ['since high school. He drew, in the hours']),
 (350, 'Ch 10', ['"Suit yourself, man." Ruby shrugged again, the fur'], ['"Suit yourself, man," Ruby shrugged again']),
 (351, 'Ch 5', ['He set the amp in the corner of the living room like a monument, and considered what it would be like to never plug in again.'], ["didn't plug anything into it again, as a monument"]),
+(352, 'Ch 14', ['It got dark. The cold came up through the floor. He ran the heater until his fingers loosened up, then shut the truck off again to save the gas. He lay across the bench seat', 'The engine ticked as it cooled.'], ['It got dark. He lay across']),
+(353, 'Ch 15', ['Every twenty he took out would have come off the far end of her room.'], ['Every twenty he took out came off']),
+(354, 'Ch 17', ['Elijah turned. "Excuse me?"'], ['Elijah turned and raised an eyebrow.']),
 ]

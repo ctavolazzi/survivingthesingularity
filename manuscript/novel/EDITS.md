@@ -4522,6 +4522,21 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      words; the two dictated pieces joined with ", and"]: "He set the amp in the corner of the living room like a
      monument, and considered what it would be like to never plug in again." ", which was the point" is not in his
      version and is out. Check row 145 narrowed. In the published sample. Logged only.
+352. **Chapter 14: he runs the heater, so the engine can tick.** Item 5 of the cover-to-cover list: "The engine ticked as
+     it cooled." comes hours after he turned the truck off. CT, 28 Nov: "Leave it. But make it so that he just had it
+     running recently and turned it off for some reason. Maybe he just turned it on to warm up the truck for some reason
+     and then shut it off and that's when he hears the ticking?" After "It got dark." [CT's beat; Claude's words, shown
+     first, logged on his "I agree with all your leans"]: "The cold came up through the floor. He ran the heater until
+     his fingers loosened up, then shut the truck off again to save the gas." Claude's choices: the cold as the reason,
+     gas as the reason to shut it off (the paragraph before has "what was left of a quarter tank"), and the place, before
+     the voicemail and Melody's call. The engine line itself is unchanged. 26 words in. Logged only.
+353. **Chapter 15: "would have come off".** Item 6 of the list: "Every twenty he took out came off the far end of her
+     room." says he took twenties out, and the book says he took none. Now "Every twenty he took out would have come off
+     the far end of her room." The list's fix, on CT's "I agree with all your leans". CT's base text otherwise. The
+     money sheet's quote moved to the new words. Logged only.
+354. **Chapter 17: the third raised eyebrow out.** Item 8 of the list: three raised eyebrows in sixteen lines, all CT's
+     words (edits 231 and 285). "Elijah turned and raised an eyebrow. \"Excuse me?\"" becomes "Elijah turned. \"Excuse
+     me?\"". The list's fix, on CT's yes. The two with Grace stay. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

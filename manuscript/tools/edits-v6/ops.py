@@ -1920,6 +1920,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (373, 'He could not have slept in sight of that barn.', 'There was no sleeping in sight of that barn.'),
 # 374, Ch 13: the smell of tobacco outside the Bear Flag (CT's line, 28 Nov, reading V9)
 (374, "There were two men smoking out front. He recognized one of them: Pruitt, from the tire shop,", "The smell of tobacco as he approached was comforting. Two men were out front, and one of them was Pruitt, from the tire shop,"),
+# 375, Ch 14: "something he never imagined", and "He blocked her." on its own line (CT's words, 28 Nov, reading V9)
+(375, "He did something then that he had never done in his life. He blocked her.", "Then he did something he never imagined he'd ever have done in his life.\nHe blocked her."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

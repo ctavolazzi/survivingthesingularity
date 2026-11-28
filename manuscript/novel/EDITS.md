@@ -4811,6 +4811,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      join (it also takes out a "He" opener). "Tobacco" and "comforting" appear nowhere else in the book. Pruitt's
      cigarette, two lines on, stays. Logged only.
 
+375. **Chapter 14: "something he never imagined", and "He blocked her." on its own line.** CT, 28 Nov, reading V9 (page
+     227), typed as two lines: "Then he did something he never imagined he'd ever have done in his life. / He blocked
+     her." "He did something then that he had never done in his life. He blocked her." becomes those two sentences,
+     the second a paragraph of its own. CT's words, word for word. Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

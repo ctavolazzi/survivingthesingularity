@@ -311,10 +311,11 @@ C=[
 (287, 'Ch 6', ['the ink going brown. The coffee smelled like a slice of heaven. He was really going to miss the smell of that coffee maker doing its thing.'], []),
 # 288 narrowed at edit 350 (the comma became a period)
 (288, 'Ch 10', ['Ruby shrugged again, the fur'], []),
+# 289 updated at edit 366 (the weather line's new words)
 (289, 'Ch 0', ['He had never actually read what was inside it. You should know how he got there',
              'something else. His full name was Elijah Gaelen Madrone',
              'the lesson came back around. Elijah had grown up on a working farm',
-             'Weather that never really cleared up. The other meaning of his name'],  # its "nodding. Elijah worked out" item dropped at edit 290 (CT's line follows "nodding." now)
+             'Weather that seemed like it might never clear up. The other meaning of his name'],  # its "nodding. Elijah worked out" item dropped at edit 290 (CT's line follows "nodding." now)
  ['came back around. The other meaning of his name']),
 (290, 'Ch 0', ['gone back to nodding. Elijah did not like the corporate bobbleheading, but he did enjoy the money.'], []),  # narrowed at edit 291 (CT's next line follows it)
 (291, 'Ch 0', ["enjoy the money. His father always said he had a champagne appetite on a beer budget. Now he could afford the occasional caviar, and he often caught himself wishing he could rub that in his father's face. Elijah worked out of a satellite office"], []),
@@ -392,4 +393,5 @@ C=[
 (363, 'Ch 37', ["Out of his back pocket came a bank card, and he held it out.", "It's your money, Elijah.", "I was concerned that you were going to continue to be stupid.", "It said ELIJAH G. MADRONE.", "There's forty-eight hundred dollars in there.", "selling those arms before they lose too much more value", "Lou slid the key into his shirt pocket and buttoned the pocket over it. \"I'll keep the stove going,\" he said."], ['Lou let go. He slid the key']),
 (364, 'Epilogue', ["Elijah came on Wednesdays, and some weeks he turned back a page to see if Melody had been. Some weeks he signed right under her name. He didn't call."], ["to see if she'd been", "signed right under her."]),
 (365, 'Ch 21', ['"She\'s the reason there\'s a drawing," Marta said.\nLou had come up from the beds to fill his water jug.', "Nobody had ever told him you were allowed to put them together."], ["An idea had started up in Elijah, and he let it run."]),
+(366, 'Ch 0', ['became the weather of his life. Weather that seemed like it might never clear up.'], ['Weather that never really cleared up.']),
 ]

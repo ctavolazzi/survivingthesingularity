@@ -4641,6 +4641,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      smell call, the Thanksgiving coats (Ch 27): Elijah does not tell Grace what they bring back; the letter to Ma that
      night carries it.
 
+366. **Chapter 0: the weather "seemed like it might never clear up".** CT, 28 Nov, reading V9: "The line [weather] that
+     never really cleared up is a little too heavy-handed, because you're basically telling the whole rest of the story.
+     [Weather] that seemed like it might never clear up." ("Whether" is dictation for "weather".) "Weather that never
+     really cleared up." becomes "Weather that seemed like it might never clear up." CT's words. Check row 289 moved to
+     the new words. In the published sample (Chapters 0 to 10). Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

@@ -1866,6 +1866,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (364, "He came on Wednesdays, and some weeks he turned back a page to see if she'd been. Some weeks he signed right under her.", "Elijah came on Wednesdays, and some weeks he turned back a page to see if Melody had been. Some weeks he signed right under her name."),
 # 365, Ch 21: the arms are not named in the shouse scene (CT's ruling on the line flagged in edit 296, 28 Nov)
 (365, '"She\'s the reason there\'s a drawing," Marta said.\nTwo orange robot arms were sitting in crates in Richard Praether\'s pole barn, doing nothing. An idea had started up in Elijah, and he let it run.\nLou had come up from the beds', '"She\'s the reason there\'s a drawing," Marta said.\nLou had come up from the beds'),
+# 366, Ch 0: the weather "seemed like it might never clear up" (CT, 28 Nov, reading V9)
+(366, "became the weather of his life. Weather that never really cleared up.", "became the weather of his life. Weather that seemed like it might never clear up."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

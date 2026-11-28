@@ -611,6 +611,12 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   "Her" runs count the same as "He". The final pass had marked most of these "kept"; his read says a run of three or
   more is not kept unless it is his repetition for weight. He then said to extrapolate: do the same in the other
   chapters without waiting for a screenshot of each page.
+- **His own example of the method (CT, 28 Nov, Ch 13, edit 374).** "There were two men smoking out front." became "The
+  smell of tobacco as he approached was comforting." What it does, in his words: "change the word from just smoking or
+  cigarettes to use a different word that we haven't used in the recent history of the book ... add some texture, add
+  some variety." So a sense line does three jobs at once: it reaches for a word the nearby pages have not used
+  (tobacco, not cigarettes again), it brings a sense in as he arrives, and it says plainly how it lands on him
+  ("comforting"). Naming the feeling flat is his; do it the same way.
 - A table row for section 16: Claude wrote "Lou noticed." and a run of "He" openers | "Of course Lou noticed. It just
   happened." "You're still repeating the he pattern" | the noticing cut; openers counted before showing.
 

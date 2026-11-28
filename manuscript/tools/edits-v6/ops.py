@@ -1918,6 +1918,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (373, 'He just stood on Main Street, and his best friends banged the doors of the van shut and drove off.', 'His best friends banged the doors of the van shut and drove off, and he just stood on Main Street.'),
 (373, 'He looked up. He saw Elijah through the glass, under the neon bear. He stopped wiping.', 'He looked up and saw Elijah through the glass, under the neon bear. The rag stopped.'),
 (373, 'He could not have slept in sight of that barn.', 'There was no sleeping in sight of that barn.'),
+# 374, Ch 13: the smell of tobacco outside the Bear Flag (CT's line, 28 Nov, reading V9)
+(374, "There were two men smoking out front. He recognized one of them: Pruitt, from the tire shop,", "The smell of tobacco as he approached was comforting. Two men were out front, and one of them was Pruitt, from the tire shop,"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -4801,6 +4801,16 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      - "He could not have slept in sight of that barn." becomes "There was no sleeping in sight of that barn."
      Logged only.
 
+374. **Chapter 13: the smell of tobacco outside the Bear Flag.** CT, 28 Nov, reading V9 (page 215), as his example of
+     the method: "Instead of saying on this page there were two men smoking out front, we could say something like, the
+     smell of tobacco, right? To change the word from just smoking or cigarettes to use a different word that we haven't
+     used in the recent history of the book. You know, we're trying to add some texture, add some variety. The smell of
+     tobacco as he approached was comforting." "There were two men smoking out front. He recognized one of them: Pruitt,
+     from the tire shop, ..." becomes "The smell of tobacco as he approached was comforting. Two men were out front, and
+     one of them was Pruitt, from the tire shop, ..." The first sentence is CT's, word for word; the second is Claude's
+     join (it also takes out a "He" opener). "Tobacco" and "comforting" appear nowhere else in the book. Pruitt's
+     cigarette, two lines on, stays. Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

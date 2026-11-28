@@ -546,6 +546,9 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   how instead of just repeating like what happened in a sequence, we're adding emotional timbre and texture to the
   story. We could even add a smell or another physical sense in moments like this." So when a run of "He did X" steps
   through a sequence, let one beat be about something else (the truck, the air, a smell) and say how it lands on him.
+  `final_check.py` finds these passages and tags each sentence (step, mind, state, texture), so the beat to change is
+  plain to see. Its other checks come from his other catches the same day: one word too often in a paragraph
+  ("people"), a line of talk with no speaker, a chapter title whose moment is off the page, the indent after a break.
 - **What the checkers turned down in the habits pass, so the next pass need not try it** **[C]**: a verb that "comes out
   of him" again ("poured out of him" beside "It came out of him like a bark"); a written phrase where he would say a
   plain one ("rose to match the yelling"); a stock face ("his face went blank"); a swap that makes the scene's peak

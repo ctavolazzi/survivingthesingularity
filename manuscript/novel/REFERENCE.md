@@ -171,6 +171,12 @@ for what it is ("v7" is taken by a frozen side copy).
 | `python3 manuscript/tools/edits-v6/find_in_book.py OUT/v6.txt chapters` | Chapter list with line numbers and word counts |
 | `... find_in_book.py OUT/v6.txt find "regex" ["regex"] [--ch 27-36]` | Every line matching all the regexes, with its chapter |
 | `... find_in_book.py OUT/v6.txt claims FILE.json` | Evidence for each claim in a list |
+| `python3 manuscript/tools/edits-v6/final_check.py run OUT/v6.txt V5_READ.json` | The final-pass checker (28 Nov, on CT's ask): everything he caught by eye, found by code. Eight checks: he (runs of the same person at the front of sentences, and steps with no feeling in them), opener, word, speaker, title, habit, phrase, mechanics. Writes `final-check-sheet.csv`. Its docstring has CT's words for each check |
+| `... final_check.py batch OUT/v6.txt V5_READ.json --check he [--worst]` | The next open findings in context, each sentence tagged and with whose words it is |
+| `... final_check.py mark ID --verdict changed --edit N` (or kept, his, on-purpose, wrong, with `--note`) | Records a verdict in `final-check-ledger.csv` |
+| `... final_check.py gate OUT/v6.txt` | READY only when every finding has a verdict: the door the V9 PDF goes through |
+| `... final_check.py titles OUT/v6.txt`, `... pdf FILE.pdf`, `... selftest` | Every chapter title against its chapter; scene-break indents in a built PDF (also in the build's own checks); the checker proved on CT's own examples |
+| `python3 manuscript/tools/edits-v6/habits.py sheet OUT/v6.txt V5_READ.json` (also piles, batch, deal, use, count, repeats) | The eight counted habits and the moves that vary them (`HABITS-PASS.md`) |
 | `python3 manuscript/tools/edits-v6/story_report.py OUT/v6.txt` | Measures the story: length and talk by chapter, who is on the page, where each thread opens and closes, tics, smells, scenes with only women, long speeches, numbers that must agree |
 | `python3 manuscript/tools/edits-v6/build_gate.py OUT/v6.txt [--todo TODO.md]` | What must be gone and what must be there before the next build (`build-gate.json`), and the unticked boxes |
 | `python3 manuscript/tools/edits-v6/openers.py OUT/v6.txt [--ch 20-36]` | The sentence-opening checker: runs of sentences that open with the same word, runs of pronoun-or-name openers, paragraphs one opener dominates |

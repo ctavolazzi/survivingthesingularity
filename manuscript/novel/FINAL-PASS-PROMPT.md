@@ -1,5 +1,7 @@
 # Prompt for the final pass before pre-release
 
+**Done 28 Nov 2026 (steps 1 to 11; `CHECKPOINT-2026-11-28-final-pass.md`). The next prompt is `FINAL-REVIEW-PROMPT.md`.**
+
 Written 28 Nov 2026 at the end of the seventeenth chat, on CT's ask. First version: "Please create a prompt that would
 induce the final pass that does all of those things." This version, the same day, after he caught a run of "He"
 openers in Chapter 13 and logged edits 323 to 326 while reading the habits-pass PDF: "Yes, output a continuation prompt

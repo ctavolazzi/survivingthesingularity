@@ -47,7 +47,7 @@ Applied to the CSV and the Google Sheet (19 cells; six items already fixed by la
 superseded by the calendar's August). Matched by content, because the sheet was renumbered after the audit. Note under
 section A in `SCENE-SHEET-AUDIT-2026-11-27.md`. Every story check and `habits.py sheet` rerun; the sheets match the book.
 
-## Step 10: Drive, at edit 347
+## Step 10: Drive, at edit 347, then 348 at the close
 
 - "Surviving the Singularity: scene sheet (edits 1 to 347)", `13hXnHxprSx-IGW_-TOFzeJFHIpzWyicHx_NtTgaya7o`: the Scenes
   tab, 0 cells differ from the CSV. The "Numbers to check" tab is hand-written and was left alone.
@@ -56,6 +56,10 @@ section A in `SCENE-SHEET-AUDIT-2026-11-27.md`. Every story check and `habits.py
 - "StS edit list, edits 1 to 347 (mirror of GitHub)", `1ZgZ-h7dP0GwdOlq378SO9A0CjhjN4AZ6fQ-iakGKTok`, checked against
   `EDITS.md` word for word. The 295 copy is "OLD:" with a pointer at its top.
 - Staging file left in Drive, not trashed: "OLD: staging copy (story sheets at edit 347, 28 Nov)".
+- At the close, after edit 348: the three cells it changed (Scenes E44; Conversations by scene E44:F44; Senses F44 and
+  K44) written and read back, both spreadsheets retitled "(edits 1 to 348)", and the edit list remade as "StS edit list,
+  edits 1 to 348 (mirror of GitHub)", `1xi1nPtyBXSWrqqoUQurS609msWcjXKr20HFVmixXGlU`, checked word for word. The 347
+  copy is "OLD:" with a pointer at its top.
 
 ## Step 11: the release check (nothing released, merged or deployed)
 
@@ -74,6 +78,6 @@ section A in `SCENE-SHEET-AUDIT-2026-11-27.md`. Every story check and `habits.py
 
 ## Waiting on CT
 
-1. The V9 PDF, on his word (`FINAL-PASS-PROMPT.md`, step 12; the gate is READY).
+1. The V9 PDF, on his word. The next chat's prompt is `FINAL-REVIEW-PROMPT.md`: the final editorial review, then V9.
 2. The last smell call above (the coats, Ch 27).
 3. The 16 items and the open audit items in `cover-to-cover-read-2026-11-28.md`.

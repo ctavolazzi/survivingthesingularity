@@ -540,6 +540,12 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 - **Code before readers, again.** The Chapter 11 trial sent nine readers at 16 lines and spent about 1.3 million tokens
   to change four. CT: "knocking out some of the repetitiveness in one fell swoop without consuming a billion fucking
   tokens." Count first; read only the pile-ups; write the change yourself.
+- **A run of "He" openers is fixed by adding feeling, not by reshuffling the order** (CT, 28 Nov, on Chapter 13: "He
+  needed a charge. He started the truck, plugged the phone into the lighter, and sat there..."): "The second sentence
+  could say this: the truck started up without issue, which pleased Elijah and gave him a sense of relief. So you see
+  how instead of just repeating like what happened in a sequence, we're adding emotional timbre and texture to the
+  story. We could even add a smell or another physical sense in moments like this." So when a run of "He did X" steps
+  through a sequence, let one beat be about something else (the truck, the air, a smell) and say how it lands on him.
 - **What the checkers turned down in the habits pass, so the next pass need not try it** **[C]**: a verb that "comes out
   of him" again ("poured out of him" beside "It came out of him like a bark"); a written phrase where he would say a
   plain one ("rose to match the yelling"); a stock face ("his face went blank"); a swap that makes the scene's peak

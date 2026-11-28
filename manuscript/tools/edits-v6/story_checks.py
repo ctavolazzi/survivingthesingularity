@@ -871,6 +871,8 @@ PLANTS = {
     "Will it leave?": ("paid", "It hadn't left. It was standing on his mother's ground, drinking her well."),
     "How bad is the new electric bill?": ("paid", "the number at the bottom said $2,011.46."),
     "What room will Ruby get him into?": ("paid", "That table tonight was six of the eleven. And one chair."),
+    "Is his list right?": ("paid", "Seven is not correct. Seven is what he hopes."),
+    "Why did they bring Elijah to the dinner?": ("paid", "You know why they had you. You're free."),
     "Will Elijah tell Frank?": ("paid", "Elijah laid the chart on the worn wood and told him."),
     "Does the broadforking work?": ("paid", "At thirty centimeters, the forked beds held water days longer after each watering."),
     "What happened at the pond?": ("paid", "she woke up wearing his T-shirt."),

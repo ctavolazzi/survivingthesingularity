@@ -36,6 +36,22 @@ report: **that check is still to do.**
 - Row 126 Opens (edit 234): "Will Grace speak to him again?" (the arms are not in the scene).
 - Row 128 Words: 333.
 
+**Applied 28 Nov (the final pass, step 9)**, to `scene-sheet-2026-11-27.csv` and the Google Sheet together. The sheet
+was renumbered after this audit (129 scenes now), so each item was matched to its current row by the scene's opening
+words, and each cell was checked on the page first. Old row to current #: 18 to 14, 22 to 17, 23 to 18, 27 to 22, 29 to
+23, 31 to 24, 35 to 27, 37 to 28, 48 to 39, 69 and 70 to 57 (merged), 71 to 58, 73 to 60, 77 to 64, 80 to 67, 82 to 69,
+84 to 71, 98 to 90, 99 to 91, 101 to 93, 102 to 94, 123 to 115, 126 to 117, 128 to 119.
+- Applied (19 cells): #14 When (basis), and "Is his list right?" opened there ("Then tell me I'm wrong."); #17 Closes;
+  #23 opens "Why did they bring Elijah to the dinner?" ("I brought you one," Ruby said ... "The guy with the list.");
+  #28, #39, #57 and #93 On the page; #57 "Who decides when the machine is better than we are?" moved to Closes (Lou: "A
+  person decides that"); #60 What happens; #64 When (basis); #67 Frank lets Tyler go; #69 Where; #71 Threads; #90 When;
+  #94 When and Where; #115 Closes ("Here, and that Lou helped move them", kept in the words #42 opens it with). The two
+  new questions have verdicts in `story_checks.py` PLANTS.
+- Already fixed by a later chat: #18 Numbers, #22 (the man from Washington), #58 (Marta), #91 (Marta in person, then
+  radio), #117 ("Will Grace talk to him again?"), #119 Words (333).
+- Superseded: old row 35's "about June". The calendar sheet and Chapter 12 ("three weeks in August 2024"; the stroke is
+  the Sunday after the launch, 31 August) put the ride with Gus in August, as #27 already says.
+
 ## B) Book continuity issues found (for CT; none changed)
 1. Replies go backward: Ch 7/8 "By Friday it was four thousand replies" (October) vs Ruby in February "there's four
    thousand of them ... tomorrow it'll be eight thousand" with fifty million views.

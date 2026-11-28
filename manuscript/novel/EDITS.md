@@ -4593,6 +4593,11 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 360. **Chapter 39: he signed at the bank.** Item 16 of the list: "He couldn't take his name back off a page on a kitchen
      table." is left from a draft where the notary came to the kitchen; he signs at the bank (Ch 13). Now "... off a page
      at the bank." The list's fix, on CT's "use your fix on 16". CT's base text otherwise. Logged only.
+361. **Chapter 11: four arms dance, two stay crated.** Audit item 5 (section B of the scene sheet audit): six arms are
+     loaded, "all six" are lit at the launch, and in Chapter 15 "The two spare arms were still sitting on the cannery
+     dock in their crates, never unpacked". "He could see them through the big roll-up door, all six, moving together"
+     becomes "... all four, moving together". Claude's fix, on CT's "I agree with your leans on them" (28 Nov). CT's base
+     text otherwise. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

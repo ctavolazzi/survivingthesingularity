@@ -386,4 +386,5 @@ C=[
 (358, 'Ch 28', ['Grace had fed half the county road by then, out of the back of it, under the one light for miles, and she handed him a bowl'], ['out of the back of the trailer, under the one light on the road']),
 (359, 'Ch 37', ["Lou closed his hand around the key. \"Are you sure you don't want to", "Lou let the hand fall, and he stayed where he was.", "But you're right. You're more right than you know.", "Elijah took inventory of what he knew he wouldn't see again, or feel again, for a while.", "Go back to the Bear Flag, where this all started.", '"Well, I understand," Lou said. "People leave.', '"We all love you, you know," he said. "Your absence will be felt."', "When Elijah could stand on his own, Lou let go. He slid the key"], ['"People leave," Lou said.', '"I\'ll keep the stove going," Lou said.']),
 (360, 'Ch 39', ["He couldn't take his name back off a page at the bank."], ['off a page on a kitchen table']),
+(361, 'Ch 11', ['through the big roll-up door, all four, moving together', 'were six robot arms'], ['roll-up door, all six, moving']),
 ]

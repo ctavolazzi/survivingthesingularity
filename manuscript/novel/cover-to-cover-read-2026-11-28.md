@@ -81,11 +81,11 @@ Still on the page, for CT:
 - 3. "SURVIVING THE FINAL TURNING ... the last two words ... belonged to Nate's paperback" (796); the paperback's word
   is only "turning" (170). **CT, 28 Nov: leave.**
 - 5 (partly). Oakland and Fremont now agree. But six arms are loaded (924) and "all six" are lit at the launch (1018),
-  and later "The two spare arms were still sitting on the cannery dock in their crates, never unpacked" (1309).
+  and later "The two spare arms were still sitting on the cannery dock in their crates, never unpacked" (1309). **CT, 28 Nov: "all six" at the launch becomes "all four". Edit 361.**
 - 7. "Half the table thinks you're right" (1360) against the April email's "Everyone here at the farm agrees" (1477)
-  and Marta's "Did the table invite a person?" (1570).
-- 8. "Wes had sent nothing" (2115) in the band chat, where Wes sent two messages (257, 262).
-- 9. "He ate the crackers." (1366), then "A sleeve of crackers with two left" (1768).
+  and Marta's "Did the table invite a person?" (1570). **CT, 28 Nov: leave.**
+- 8. "Wes had sent nothing" (2115) in the band chat, where Wes sent two messages (257, 262). **CT, 28 Nov: leave.**
+- 9. "He ate the crackers." (1366), then "A sleeve of crackers with two left" (1768). **CT, 28 Nov: leave.**
 - 10. Ma in a chair by the window Thursday (1221) before the place is first paid Friday (1167).
 - 11. The board's April: it holds only if the order came in the first days of April (1898, 1912, 2198).
 - 12. The squash "has to come in this week" (3754), still in the field at the October meeting and after (3787, 3811,

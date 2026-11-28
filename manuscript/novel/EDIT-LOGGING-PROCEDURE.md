@@ -258,8 +258,11 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 - CT, 27 Nov: the four questions the plants sheet called "never" stay open. Every other open continuity item has a
   status in `CHECKPOINT-2026-11-27-seventeenth.md`.
 - Drive was not updated: the edit list mirror and the Google Sheet stop at edit 295. Neither Doc was changed.
-- **The habits pass** (CT, 27 Nov) is set up and its first batch has not been run: `HABITS-PASS.md`. Chapter 11 was a
-  trial; nothing from it is logged.
+- **The habits pass is done** (28 Nov): edits 301 to 322 (and 297 corrected in place), every check row passing (323).
+  The PDF CT reviews: "StS v8 large print CURRENT (28 Nov, edits 1 to 322, the habits pass).pdf" (`1SS145ExuGZIvprNmiIKC-brau1aSOx8D`). **The next edit is 323.** The final pass is next: `FINAL-PASS-PROMPT.md`.
+- verify.py on the v8 Doc shows 5 PARTIAL, all expected: 66, 197, 222 and 223, because the habits pass updated their check
+  rows to its new words and v8 still has the old ones; and 306, because "Lou said he would cover" was already in v8
+  before edit 234 changed it. They clear when the edits go into a Doc.
 
 ## Where things stand (end of the eleventh logging chat, 27 Nov)
 - **The book is the Google Doc "StS v8 draft (Nov 26)"** (CURRENT in the bridge map): the v5 Doc with its suggestions

@@ -79,3 +79,9 @@ the narration before "good, bad ideas", and "Nobody had ever told him you were a
 - The fact check of Priya's county building code lines (edit 296).
 - The standing items that are CT's (the taste pass, the ISBN, the release build, the Instagram synopsis, the tenth
   chat's list, Praether once more before Chapter 34) are unchanged in `TODO.md`.
+
+## The habits pass, 28 Nov (end of the chat)
+
+Done, and in the PDF for CT: "StS v8 large print CURRENT (28 Nov, edits 1 to 322, the habits pass).pdf" (`1SS145ExuGZIvprNmiIKC-brau1aSOx8D`), with "StS habits pass: before and after (28 Nov, edits 301 to 322)" (`1S6IsTQmP6b8NQYhBTblI_3z839OJ_8orgPXCctZi7co`) beside it. Edits 301 to 322, 48 changes, plus edit 297 corrected in
+place. The whole account is at the top of `HABITS-PASS.md`. The final pass is written as a prompt in
+`FINAL-PASS-PROMPT.md` (CT, 28 Nov), for a new chat.

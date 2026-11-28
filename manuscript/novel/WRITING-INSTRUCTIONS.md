@@ -540,6 +540,12 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
 - **Code before readers, again.** The Chapter 11 trial sent nine readers at 16 lines and spent about 1.3 million tokens
   to change four. CT: "knocking out some of the repetitiveness in one fell swoop without consuming a billion fucking
   tokens." Count first; read only the pile-ups; write the change yourself.
+- **What the checkers turned down in the habits pass, so the next pass need not try it** **[C]**: a verb that "comes out
+  of him" again ("poured out of him" beside "It came out of him like a bark"); a written phrase where he would say a
+  plain one ("rose to match the yelling"); a stock face ("his face went blank"); a swap that makes the scene's peak
+  choppy ("That's where you reach for a pick. She opened it."); a cut that drops a callback or the one word that tells
+  the reader why a hand moves. Two different wordings landing on the same new phrase in two chapters ("same as she did
+  whenever") is caught only by reading the changes together; do that before logging.
 - **In a scene that plants a secret, do not name the secret in the narration unless he asks.** Claude's shouse scene
   (edit 296) names the arms before "good, bad ideas"; his sketch had only "ideas start forming in his mind". Flagged to
   him, not ruled on. **[C]**

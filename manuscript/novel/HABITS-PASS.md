@@ -1,5 +1,32 @@
 # The habits pass: Chapter 11 to the Epilogue
 
+## Done, 28 Nov 2026 (seventeenth chat)
+
+CT: "Prepare the next PDF version of the manuscript by correcting these habits with the variety I'm looking for, as
+discussed and documented." Asked whether to approve each batch first or review inside the PDF: "Inside it." So every
+change went in, and he reviews them in "StS v8 large print CURRENT (28 Nov, edits 1 to 322, the habits pass).pdf" (`1SS145ExuGZIvprNmiIKC-brau1aSOx8D`) with "StS habits pass: before and after (28 Nov, edits 301 to 322)" (`1S6IsTQmP6b8NQYhBTblI_3z839OJ_8orgPXCctZi7co`) beside it, both in "StS Publication Files". The old CURRENT
+(edits 1 to 295) is "OLD: StS v8 large print (27 Nov, edits 1 to 295).pdf" in "Older builds".
+
+- Before the pass the toolbox's "the way" pattern was widened (it missed 21 comparisons, the pie among them), and the
+  moves were cut as Claude reasoned on 27 Nov: "like" capped at 3, "Give a real amount" and "Say how long" out, the
+  clever "checked him for ripeness" example out.
+- Scope with the wider pattern: 348 instances from Chapter 11 on, 159 in 69 pile-ups. Run as one workflow: a writer per
+  batch of chapters (7), two checkers each (CT's ear; a first-time reader in the scene), one retry, then a recheck; a
+  change went in only if both checkers passed it. 40 agents, about 6 million tokens, 74 minutes. Then Claude read every
+  approved change in its paragraph and changed four calls (Grace "like she always did", David "like he had", the porch
+  "how he used to", and "He knew what it was" in Chapter 39 kept as CT wrote it: the ending gets the lightest touch).
+- Result: 48 changes, logged as edits 301 to 322, one per chapter, plus edit 297 corrected in place. 105 lines kept,
+  with a reason each, and 7 rewrites turned down. Every line is in `habits-ledger.csv` (its rows number the sheet as it
+  stood before the pass, saved as `habits-sheet-before-pass.csv`). After: 295 instances, 76 in 35 pile-ups, every one of
+  those 76 judged and kept.
+- Moves used: "how" 10 of 10 (at its cap), "same as" 4, "like" 3 of 3 (at its cap); the rest spread thin. A next pass
+  should not deal "how" or "like" again without CT raising the cap.
+- Checks: all 323 check rows pass; every changed paragraph traces to a listed change; no new opener runs; no new phrase
+  repeats except "looked at him like" (three uses in the book, Ch 6, 11, 39). The PDF passes every build check (786
+  pages, text letter for letter). The scene sheet, story checks and their data were brought to the new text.
+- The before-and-after list is also `habits-pass-before-and-after-2026-11-28.md`.
+
+
 Started 27 Nov 2026 in the seventeenth chat. **The first batch has not been run.** CT: "Don't run the first batch.
 We're going to have a different model than you run the first batch. But you can build it." This file is for that
 model. Read it, then `WRITING-INSTRUCTIONS.md` sections 4 to 12, before touching a line.

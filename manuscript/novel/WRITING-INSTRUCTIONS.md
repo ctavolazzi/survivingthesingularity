@@ -586,6 +586,11 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   going to miss"). Turning beats into narration is where the run creeps in: each beat becomes "He did X". Before he
   sees a draft, count the openers of every sentence Claude wrote (section 13, step 3) and fix a run by what the
   sentence is about (the sounds, the place, the other person by name), never by an inversion.
+- **A sense line says the plain thing.** Claude wrote "Up at the shop a grinder started and quit." CT: "Started? Just
+  started. Why would it start and quit? This is such an awkward phrasing." And for "Water was running somewhere down the
+  east field": "The sound of running water." Don't dress a sound in a little event to make it lively; name it the way a
+  person would. He also gave the paragraph a frame of his own: "Elijah took inventory of what he knew he wouldn't see
+  again, feel again for a while."
 - A table row for section 16: Claude wrote "Lou noticed." and a run of "He" openers | "Of course Lou noticed. It just
   happened." "You're still repeating the he pattern" | the noticing cut; openers counted before showing.
 

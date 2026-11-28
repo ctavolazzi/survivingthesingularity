@@ -396,4 +396,5 @@ C=[
 (366, 'Ch 0', ['became the weather of his life. Weather that seemed like it might never clear up.'], ['Weather that never really cleared up.']),
 (367, 'Ch 0', ['He did what anyone might do when they witness something.\nHe told people.'], ['He did what you do when you witness']),
 (368, 'Ch 11', ['Then the woman with the cooling company passed his email to some folks with a car factory, and they wrote.\nThey were refitting an old tomato cannery'], ['Then some folks called about a car factory.']),
+(369, 'Ch 10', ["I've paid a lot of money to be in what I thought was 'the room,' and it's a load of crap. It's eleven people who are scared of each other"], ["I've been in the room. I paid a lot to get in the room."]),
 ]

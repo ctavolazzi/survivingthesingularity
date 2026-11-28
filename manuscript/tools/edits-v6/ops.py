@@ -1872,6 +1872,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (367, "He did what you do when you witness something.", "He did what anyone might do when they witness something."),
 # 368, Ch 11: how the car factory finds him (CT's ruling, 28 Nov, reading V9; Claude's sentence, shown first)
 (368, "Then some folks called about a car factory.", "Then the woman with the cooling company passed his email to some folks with a car factory, and they wrote."),
+# 369, Ch 10: Ruby on the room (CT's words, 28 Nov, reading V9)
+(369, "I've been in the room. I paid a lot to get in the room. It's eleven people", "I've paid a lot of money to be in what I thought was 'the room,' and it's a load of crap. It's eleven people"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

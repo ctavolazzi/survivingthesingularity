@@ -4665,6 +4665,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      meet the AGI guy, as he was always going off about that kind of stuff." (On the page she is "a founder of something
      to do with cooling", Ch 8, so no boss is named for her.) Logged only.
 
+369. **Chapter 10: Ruby on the room.** CT, 28 Nov, reading V9: "I've paid a lot of money to be in what I thought was
+     \"the room\" and it's a load of crap." Asked, he confirmed: "Yes, that's for Ruby's line in Chapter 10". On the fire
+     escape, "I've been in the room. I paid a lot to get in the room." becomes "I've paid a lot of money to be in what I
+     thought was 'the room,' and it's a load of crap." CT's words; single quotes inside Ruby's speech and a comma before
+     "and" are the only marks added. The rest of the speech ("Everybody thinks there's a room ... It's eleven people who
+     are scared of each other ...") is unchanged. In the published sample. Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

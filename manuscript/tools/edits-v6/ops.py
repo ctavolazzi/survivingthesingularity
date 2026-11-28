@@ -1850,6 +1850,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (356, "with Dale on speakerphone from Phoenix, and Dale was not wrong", "with Dale on speakerphone, and Dale was not wrong"),
 # 357, Ch 26: "biting water" (cover-to-cover item 12; CT's word, 28 Nov)
 (357, "Nine people with their arms in cold water turned to her", "Nine people with their arms in biting water turned to her"),
+# 358, Ch 28: "trailer" and "road" once each (cover-to-cover item 14; the list's fix, CT's yes)
+(358, "out of the back of the trailer, under the one light on the road,", "out of the back of it, under the one light for miles,"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

@@ -59,10 +59,10 @@ where the reader had one; it is a suggestion only.
     in cold water up to the elbow"; "Nine people with their arms in cold water turned to her"). 2615 and 2623 are CT's;
     2621's "the cold water" is Claude's (edit 162) and is the easy one to drop. **CT, 28 Nov: leave the four; "cold" becomes "biting" at 2623. Edit 357.**
 13. **Ch 27, line 2908, "Topics crossed intellectual property lines".** A reader stops on the legal term in a list of
-    talk topics. CT's own sentence (edit 292): only he knows what he meant.
+    talk topics. CT's own sentence (edit 292): only he knows what he meant. **CT, 28 Nov: leave.**
 14. **Ch 28, line 3069: "trailer" and "road" twice each in two sentences** ("out of the kitchen trailer ... out of the
     back of the trailer, under the one light on the road"). Claude's words (edit 207). Fix: "out of the back of it, under
-    the one light for miles".
+    the one light for miles". **CT, 28 Nov: use the fix. Edit 358.**
 15. **Ch 37, lines 4097 to 4099: three Lou paragraphs in a row,** two opening with a quote and "Lou said". His "I'll keep
     the stove going" answers Elijah's line at 4092, two Lou paragraphs back. The 4099 tag is Claude's (edit 182, item 26).
 16. **Ch 39, line 4374, "He couldn't take his name back off a page on a kitchen table."** Left over from an older draft

@@ -4549,6 +4549,10 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      that's fine. But maybe we could find another word for cold that does the action of personifying. All right,
      instead of cold, we could use biting." "Nine people with their arms in cold water turned to her" becomes "Nine
      people with their arms in biting water turned to her". CT's word. The other three stay. Logged only.
+358. **Chapter 28: "trailer" and "road" once each.** Item 14 of the cover-to-cover list. "Grace had fed half the county road
+     by then, out of the back of the trailer, under the one light on the road," becomes "... out of the back of it, under
+     the one light for miles,". The list's fix, on CT's "I agree with number 14 ... Use the fix." The words changed were
+     Claude's (edit 207). Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

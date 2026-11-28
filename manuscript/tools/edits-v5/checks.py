@@ -382,4 +382,5 @@ C=[
 (355, 'Ch 19', ["the mainstream devices we're starting to see come out.\"", 'Including you, spreadsheet."'], ['see come out, spreadsheet.']),
 (356, 'Ch 23', ['with Dale on speakerphone, and Dale was not wrong by his own lights.', "I'm in Phoenix."], ['on speakerphone from Phoenix']),
 (357, 'Ch 26', ['Nine people with their arms in biting water turned to her', 'their arms in cold water up to the elbow'], ['their arms in cold water turned to her']),
+(358, 'Ch 28', ['Grace had fed half the county road by then, out of the back of it, under the one light for miles, and she handed him a bowl'], ['out of the back of the trailer, under the one light on the road']),
 ]

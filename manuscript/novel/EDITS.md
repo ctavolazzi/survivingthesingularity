@@ -4598,6 +4598,12 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      dock in their crates, never unpacked". "He could see them through the big roll-up door, all six, moving together"
      becomes "... all four, moving together". Claude's fix, on CT's "I agree with your leans on them" (28 Nov). CT's base
      text otherwise. Logged only.
+362. **Chapter 36: the route boxes are packed the night before the route.** Audit item 13: the route runs on Tuesdays (Ch
+     34) and the boxes were being packed "on the Wednesday of festival week". Now "He told Grace on the Monday of
+     festival week, in the packing shed, a little before midnight." Claude's fix, on CT's "I agree with your leans on all
+     four" (28 Nov); the sentence was Claude's (edit 215). Nothing else in the chapter names the day; the fire is still
+     the last night of the festival. The calendar's row for the scene moved to Monday 25 October 2027 and its check now
+     holds; the scene sheet's row 119 says Monday. Check row 227 narrowed. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

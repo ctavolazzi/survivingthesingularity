@@ -155,7 +155,7 @@ WHEN = """
 116|2027-10-13|Six the next morning|stated
 117|2027-10-13|That night|stated
 118|2027-10-23|The Saturday before the festival|stated
-119|2027-10-27|The Wednesday of festival week|stated
+119|2027-10-25|The Monday of festival week|stated
 120|2027-10-30|The last night of the festival: the fire|worked
 121|2027-11-01|The week after; he packs on Tuesday 9 November 2027|worked
 122|2027-11-09|The same Tuesday|stated
@@ -232,8 +232,8 @@ CHECKS = [  # (what, [quotes], function -> (verdict, detail))
      lambda: (True, "It is October 2026 and the route is running: the narration now says the grant would run out the coming June, as Elijah's line does. It read 'ran out in June' until edit 299 (27 Nov, seventeenth chat).")),
     ("TIGHT, NOT BROKEN: the board is 'ours' in April", ["Earlier that April the order had come", "The first design had already eaten the better part of a month", "In April Marta had run her finger along the drawing of that board", "I saw it in April."],
      lambda: (None, "The order comes in April, the first design takes 'the better part of a month', and Marta and Tyler both place the finished board in April. It holds only if the order came in the first days of April; the build weekends then run into May, when the boxes ship.")),
-    ("ODD, LOW: route boxes are packed on a Wednesday night", ["He told Grace on the Wednesday of festival week, in the packing shed, a little before midnight.", "They were building route boxes by hand."],
-     lambda: (None, "The route runs on Tuesdays, so these are packed six days ahead or the festival moved the route. Nothing on the page says which.")),
+    ("FIXED (edit 362): route boxes are packed the night before the route", ["He told Grace on the Monday of festival week, in the packing shed, a little before midnight.", "They were building route boxes by hand."],
+     lambda: (True, "The route runs on Tuesdays and the boxes are packed on the Monday night. It was 'the Wednesday of festival week' until edit 362 (CT, 28 Nov).")),
 ]
 
 

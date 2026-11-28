@@ -1858,6 +1858,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (360, "He couldn't take his name back off a page on a kitchen table.", "He couldn't take his name back off a page at the bank."),
 # 361, Ch 11: four arms dance, two stay crated (audit item 5; Claude's fix, CT's yes)
 (361, "through the big roll-up door, all six, moving together", "through the big roll-up door, all four, moving together"),
+# 362, Ch 36: the route boxes are packed the night before the route (audit item 13; Claude's fix, CT's yes)
+(362, "He told Grace on the Wednesday of festival week,", "He told Grace on the Monday of festival week,"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

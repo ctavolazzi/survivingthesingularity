@@ -86,11 +86,11 @@ Still on the page, for CT:
   and Marta's "Did the table invite a person?" (1570). **CT, 28 Nov: leave.**
 - 8. "Wes had sent nothing" (2115) in the band chat, where Wes sent two messages (257, 262). **CT, 28 Nov: leave.**
 - 9. "He ate the crackers." (1366), then "A sleeve of crackers with two left" (1768). **CT, 28 Nov: leave.**
-- 10. Ma in a chair by the window Thursday (1221) before the place is first paid Friday (1167).
-- 11. The board's April: it holds only if the order came in the first days of April (1898, 1912, 2198).
+- 10. Ma in a chair by the window Thursday (1221) before the place is first paid Friday (1167). **CT, 28 Nov: leave.**
+- 11. The board's April: it holds only if the order came in the first days of April (1898, 1912, 2198). **CT, 28 Nov: leave.**
 - 12. The squash "has to come in this week" (3754), still in the field at the October meeting and after (3787, 3811,
-  3925).
-- 13. Route boxes built "on the Wednesday of festival week" (3957) though the route runs Tuesdays (3787).
+  3925). **CT, 28 Nov: leave.**
+- 13. Route boxes built "on the Wednesday of festival week" (3957) though the route runs Tuesdays (3787). **CT, 28 Nov: "Wednesday" becomes "Monday". Edit 362.**
 - 14. The Epilogue's visitor book: David's Sunday sits between Melody's Saturday and Elijah's Wednesday, so "Some weeks
   he signed right under her" (4441) needs David to skip.
 - 15. Whether Grace knew who bought Ma's place: she knows of the sale from Ch 24 (2415); the page never says about the

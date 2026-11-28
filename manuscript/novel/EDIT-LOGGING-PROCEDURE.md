@@ -259,7 +259,7 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
   status in `CHECKPOINT-2026-11-27-seventeenth.md`.
 - Drive was not updated: the edit list mirror and the Google Sheet stop at edit 295. Neither Doc was changed.
 - **The habits pass is done** (28 Nov): edits 301 to 322 (and 297 corrected in place), every check row passing (323).
-  The PDF CT reviews: "StS v8 large print CURRENT (28 Nov, edits 1 to 322, the habits pass).pdf" (`1SS145ExuGZIvprNmiIKC-brau1aSOx8D`). Then edit 323 (Ch 0, CT's "Folks with no margin"), not in that PDF, and edit 324 (Ch 11, CT's words: who asks Gus). Edit 325 (Ch 12, CT: his state of mind in the truck). **The next edit is 326.** The final pass is next: `FINAL-PASS-PROMPT.md`.
+  The PDF CT reviews: "StS v8 large print CURRENT (28 Nov, edits 1 to 322, the habits pass).pdf" (`1SS145ExuGZIvprNmiIKC-brau1aSOx8D`). Then edit 323 (Ch 0, CT's "Folks with no margin"), not in that PDF, and edit 324 (Ch 11, CT's words: who asks Gus). Edit 325 (Ch 12, CT: his state of mind in the truck). Edit 326 (Ch 12: the shower itself). **The next edit is 327.** The final pass is next: `FINAL-PASS-PROMPT.md`.
 - verify.py on the v8 Doc shows 5 PARTIAL, all expected: 66, 197, 222 and 223, because the habits pass updated their check
   rows to its new words and v8 still has the old ones; and 306, because "Lou said he would cover" was already in v8
   before edit 234 changed it. They clear when the edits go into a Doc.

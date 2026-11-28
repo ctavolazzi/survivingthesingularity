@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 to 325 (28 Nov, CT's fixes from reading the PDF), logged only. The next edit is 326.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 to 326 (28 Nov, CT's fixes from reading the PDF), logged only. The next edit is 327.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4362,6 +4362,29 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      hundred followers); "whatever this was" for "what he was now". Searched: "crackpot" twice before (Ch 18, 25), not
      near; "down and out", "change identities", "hero of the story", "his hand out" nowhere else. Logged only; waits for
      CT's next PDF.
+
+326. **Chapter 12: the seventeen-dollar shower itself.** CT, 28 Nov, reading the PDF: "Chapter 12 is called the $17 shower.
+     And where is that $17 shower?" It was there, but offstage: he paid the machine on the wall and the next line went to
+     Planet Fitness. CT: "we need to add a moment of him actually standing in the hot water and reflecting on everything."
+     After "not the one in his pocket.", four short paragraphs, then "After that he discovered that Planet Fitness ..." as
+     before:
+
+     > The shower was a tiled room with a drain in the middle of the floor and a fan in the ceiling that rattled like it had a moth in it. It smelled like bleach and somebody else's soap. He turned the handle as hot as it would go and stepped under it.
+     >
+     > The water hit the back of his neck first, then found every place the cab had been leaning on him all week: the shoulder against the door, the hip, the crick that had moved into his lower back to stay. It ran gray off his feet and spun around the drain, and he watched it go.
+     >
+     > Last fall a senator's office had been calling him back. Now he was bolting robot arms to a floor for what the guy on the dock called a picture, and he had paid seventeen dollars to stand under a pipe at a truck stop, and it was the best thing that had happened to him all summer. Go be useful, baby, his mother had said. He was trying. He laughed a little, with the water running into his mouth, and he couldn't have said what was funny.
+     >
+     > Somebody knocked on the door. His time was up. He stood there one more second anyway.
+
+     **Claude's wording**, all of it, on CT's beat. Choices: the smell (bleach and somebody else's soap) and the water as
+     the thing that acts ("found every place the cab had been leaning on him", "spun around the drain"), from his smell
+     and physics notes; the reflection kept short (guide, 7.12: "a rush, not a diatribe"): the senator's office from
+     Chapter 7, "a picture" from the paid guy on the dock earlier in this chapter, and Ma's "Go be useful, baby" from
+     Chapter 11. The million is left out here because the chapter's end already has it. The way out is the knock (a truck
+     stop shower runs on a timer). Searched: "bleach", "somebody else's soap", "as hot as it would go", "around the drain",
+     "time was up", "best thing that had happened" are nowhere else; "went looking for" and "let it run" were avoided.
+     Logged only; waits for CT's next PDF.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

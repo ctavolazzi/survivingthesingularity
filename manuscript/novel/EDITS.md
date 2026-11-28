@@ -4507,6 +4507,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      had kept its own air, cold gear oil and the mysterious musk of an unknown small mammal or twelve." CT's words; the
      capital is dropped because the line goes on from "its own air,". The yard's smoke line ("The smoke lay down flat
      across the yard and got into everything.") stays as it is. Check row 205 moved to the new words. Logged only.
+349. **Chapter 0: "Elijah drew".** The final review (28 Nov), item 1 of `cover-to-cover-read-2026-11-28.md`: after edit 3's
+     paragraph split, "He drew, in the hours nobody paid for." follows a sentence about Nate and Wes, so "He" reads as Wes.
+     CT: "Item 1 needs to be changed." Now "Elijah drew, in the hours nobody paid for." The list's fix; the rest is CT's
+     base text. In the published sample (Chapters 0 to 10): the free sample has to be remade. Logged only.
+350. **Chapter 10: the shrug is not a speech tag.** Item 4 of the same list. CT: "1 comma to a period. Yeah, okay".
+     '"Suit yourself, man," Ruby shrugged again, the fur ...' becomes '"Suit yourself, man." Ruby shrugged again, the
+     fur ...'. Every word is CT's (edit 288). Check row 288 narrowed. In the published sample. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

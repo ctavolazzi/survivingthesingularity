@@ -1832,6 +1832,10 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (347, 'number. He chose not to call it. He left', "number, saved under *Don't*. He chose not to call it, and left"),
 # 348, Ch 17: the smell of Praether's barn (CT's words, 28 Nov: "Cold gear oil and the mysterious musk of an unknown small mammal or twelve.")
 (348, 'cold gear oil and mouse.', 'cold gear oil and the mysterious musk of an unknown small mammal or twelve.'),
+# 349, Ch 0: "Elijah drew" (the final review, cover-to-cover item 1; CT, 28 Nov: "Item 1 needs to be changed")
+(349, 'since high school. He drew, in the hours nobody paid for.', 'since high school. Elijah drew, in the hours nobody paid for.'),
+# 350, Ch 10: the shrug is not a speech tag (cover-to-cover item 4; CT, 28 Nov: "1 comma to a period. Yeah, okay")
+(350, '"Suit yourself, man," Ruby shrugged again, the fur', '"Suit yourself, man." Ruby shrugged again, the fur'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

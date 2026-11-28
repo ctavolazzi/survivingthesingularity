@@ -305,7 +305,8 @@ C=[
 (285, 'Ch 17', ['On the third evening Elijah walked out to the old wooden fence along the east field', '"So how did everything go?" he said. "What was it like, getting that much attention all at once?"', 'Elijah\'s eyes went somewhere past the field. "It was a lot."', '"Sausage makers." Lou let out a big laugh', 'Far better to let the good parts cook slow."\nOn the fourth day Grace asked about the arms.'], []),
 (286, 'Ch 32', ['before the oak had caught.\n\nIn April, when he dug the pit, Priya came down to read it.', 'there was a sound like a carrot.', '"Where\'d you learn to do that, Lou?" Grace said.\n"Combat."', '"I\'m a veteran," he said. "Did you guys not know that?"', 'You guys need to get out more."\n\nOn the first of April the trust\'s check'], []),
 (287, 'Ch 6', ['the ink going brown. The coffee smelled like a slice of heaven. He was really going to miss the smell of that coffee maker doing its thing.'], []),
-(288, 'Ch 10', ['"Suit yourself, man," Ruby shrugged again, the fur'], []),
+# 288 narrowed at edit 350 (the comma became a period)
+(288, 'Ch 10', ['Ruby shrugged again, the fur'], []),
 (289, 'Ch 0', ['He had never actually read what was inside it. You should know how he got there',
              'something else. His full name was Elijah Gaelen Madrone',
              'the lesson came back around. Elijah had grown up on a working farm',
@@ -370,4 +371,6 @@ C=[
 (346, 'Ch 35', ["didn't say anything right away. He thought about his notebooks, and every date he had ever written", "after nine. He hadn't planned to. Lou pointed at the other lawn chair with a walnut, and it was good to be told where to sit."], ['He thought about it. He thought about his notebooks', 'Lou pointed at the other lawn chair with a walnut.']),
 (347, 'Ch 39', ['Elijah had first read that name under an old lecture', 'The yellow words kept going by. I AM ASKING. A voice through', "He still had Ruby's number, saved under Don't. He chose not to call it, and left the phone in his pocket."], ['He had first read', 'Elijah watched the yellow words go', 'number. He chose not to call it. He left']),
 (348, 'Ch 17', ['the barn had kept its own air, cold gear oil and the mysterious musk of an unknown small mammal or twelve. One of the rust buckets'], ['cold gear oil and mouse.']),
+(349, 'Ch 0', ['since high school. Elijah drew, in the hours nobody paid for.'], ['since high school. He drew, in the hours']),
+(350, 'Ch 10', ['"Suit yourself, man." Ruby shrugged again, the fur'], ['"Suit yourself, man," Ruby shrugged again']),
 ]

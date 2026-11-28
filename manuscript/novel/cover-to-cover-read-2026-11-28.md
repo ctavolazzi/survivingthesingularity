@@ -64,10 +64,10 @@ where the reader had one; it is a suggestion only.
     back of the trailer, under the one light on the road"). Claude's words (edit 207). Fix: "out of the back of it, under
     the one light for miles". **CT, 28 Nov: use the fix. Edit 358.**
 15. **Ch 37, lines 4097 to 4099: three Lou paragraphs in a row,** two opening with a quote and "Lou said". His "I'll keep
-    the stove going" answers Elijah's line at 4092, two Lou paragraphs back. The 4099 tag is Claude's (edit 182, item 26).
+    the stove going" answers Elijah's line at 4092, two Lou paragraphs back. The 4099 tag is Claude's (edit 182, item 26). **CT, 28 Nov: the scene rewritten from his dictation (Lou pushes back, the hug). Edit 359.**
 16. **Ch 39, line 4374, "He couldn't take his name back off a page on a kitchen table."** Left over from an older draft
     where the notary came to the kitchen; the book now has him sign at the bank (line 1166). Fix: "take his name back
-    off a page at the bank". CT's base text.
+    off a page at the bank". CT's base text. **CT, 28 Nov: use the fix. Edit 360.**
 
 ## The audit's list of 27 Nov (section B of `SCENE-SHEET-AUDIT-2026-11-27.md`), checked again on the page
 

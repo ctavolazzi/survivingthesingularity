@@ -4553,6 +4553,46 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      by then, out of the back of the trailer, under the one light on the road," becomes "... out of the back of it, under
      the one light for miles,". The list's fix, on CT's "I agree with number 14 ... Use the fix." The words changed were
      Claude's (edit 207). Logged only.
+359. **Chapter 37: Lou pushes back, the inventory, the hug.** Item 15 of the cover-to-cover list (three Lou paragraphs in a
+     row). CT, 28 Nov: "I feel like number 15 needs more work, because we need to show Lou's, like, disappointment more
+     ... right now it reads as him just giving up without a fight, and I don't think he would do that." He dictated the
+     scene in beats and lines; it was shown three times and logged on his "Log item 15". It goes in after "That's the
+     first untidy thing you've done since you got here." 654 words in. The full text is the ops row for 359.
+     **CT's lines, word for word:** "Are you sure you don't want to…"; "I'm sure, Lou. I appreciate everything you've
+     done for me so much. This has been the best time of my life."; "I mean, I'll be honest with you, son. It seems kind
+     of foolish to throw this all away over what just happened."; "She told me to go home, Lou. This is my home. I don't
+     want to cause any problems."; "Elijah, we all cause problems."; "It's what we do about the problems we cause that
+     makes us who we are."; "I appreciate that, Lou. I really do. And I appreciate you. You have changed my life for the
+     better. But you're right. You're more right than you know."; "I left a lot of people behind to come here. It wasn't
+     intended, but I did. I feel like I need to go back to them."; "Well, I understand."; "If you finish your business
+     with them and you want to come back to us, I'm sure you'll be welcome."; "Don't worry about Grace. I'll talk to
+     her."; "Oh, there."; "We all love you, you know ... Your absence will be felt." (his restatement; "Your presence
+     will be missed" was the first try). **His narration:** the eyes glazing over, the hand on the shoulder and Elijah
+     tensing, dropping the shoulder, "Lou let the hand fall, and he stayed where he was." (his correction of Claude's
+     "Lou noticed."), the step toward him, the fear and the tears, the hug with Elijah's arms raised from the elbows, the
+     big heaving sobs, "all of the emotions of the last few years cascading out of him", Lou's hands; "Elijah took
+     inventory of what he knew he wouldn't see again, feel again for a while."; "The sound of running water"; and the
+     second paragraph from "The people at the plywood table had become like a family to him" to "was now telling him to
+     listen to her."
+     **Claude's words:** "Lou closed his hand around the key."; "Elijah's eyes had filled."; "past Lou"; "It was close
+     to noon."; "A grinder was going up at the shop."; "came up from the east field. Oak smoke drifted down off the roof
+     behind him and settled over the compost he had turned that week. Farther off were the bell by the shed, which he
+     had rung himself one Saturday before it was light, and the fence where Lou had told him about the sausage, and the
+     pond. He was going to miss all of it terribly." ("terribly" is his); the joins in the misfits sentence ("They were
+     ... who had ... and made"); "When Elijah could stand on his own, Lou let go."
+     **Three changes to his words, each told to him:** "for the winter" for "to the festival" (Ch 26: she leaves "for a
+     little while ... A few months"); "call Ruby" for "text Ruby" (Ch 37: "He had never called it."); "Go back to the
+     Bear Flag, where this all started." for "Go back to where this all started." (CT: "I know that's cliched. Maybe we
+     can improve it slightly.").
+     **Moved, not changed:** Lou's "People leave ..." now follows "Well, I understand,"; the book's closing lines (the
+     key, "I'll keep the stove going", Thanksgiving, "keeping score") stay after the hug, with the tag now "he said".
+     Told to CT and left: he cries again at the gate at the end of the chapter, and Devendra's call still comes "while
+     Elijah was still on the step". Context from CT, NOT for the page: "We also haven't established at all where his
+     money's going to come from or what's going on with his mother as far as I know. So it really does seem pretty
+     foolish for him to just leave." Check row 182 narrowed. Logged only.
+360. **Chapter 39: he signed at the bank.** Item 16 of the list: "He couldn't take his name back off a page on a kitchen
+     table." is left from a draft where the notary came to the kitchen; he signs at the bank (Ch 13). Now "... off a page
+     at the bank." The list's fix, on CT's "use your fix on 16". CT's base text otherwise. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

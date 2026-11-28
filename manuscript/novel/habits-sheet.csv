@@ -259,38 +259,40 @@
 258,Ch 36,120,4042,the way ...,the way,,,1,1,,base,,"Out of everything he had told her by the stove, that was the one he had never told anybody, and she had kept it, the way she said he kept things."
 259,Ch 36,120,4060,He knew / didn't know,He knew,,,2,2,yes,base,yes,He knew what again was.
 260,Ch 36,120,4071,He knew / didn't know,He didn't know,,,2,2,yes,base,,He didn't know why he was counting.
-261,Ch 37,121,4077,for a while / a long time,a long time,,,2,2,yes,base,,She took a long time with the straps.
+261,Ch 37,121,4077,for a while / a long time,a long time,,,3,3,yes,base,,She took a long time with the straps.
 262,Ch 37,121,4078,the way ...,the way,,,1,1,,base,,"One night he put the truck song on, low, the way she had, and turned it off before the end."
 263,Ch 37,121,4079,He knew / didn't know,He knew,,,1,3,,base,,He knew where her room was in Ardell.
-264,Ch 37,121,4079,Then he/she,Then he,,,1,1,,base,,"Then he heard what he had said back, and he kept driving."
-265,Ch 37,121,4087,for a while / a long time,a long time,,,2,2,yes,base,,He stayed by the stove a long time.
+264,Ch 37,121,4079,Then he/she,Then he,,,2,2,yes,base,,"Then he heard what he had said back, and he kept driving."
+265,Ch 37,121,4087,for a while / a long time,a long time,,,3,3,yes,base,,He stayed by the stove a long time.
 266,Ch 37,121,4092,not X. It's Y,not a house. It's,yes,,0,1,,base,,"""It's not a house. It's a shop set up to keep the person running it alive."" He handed him the key."
 267,Ch 37,121,4097,looked at him/her/it,looked at it,,,1,3,,base,,Lou looked at it a while longer.
-268,Ch 37,122,4115,nodded / shrugged,nodded,,,1,1,,base,,"She stepped back and nodded at Tyler, and Tyler set his feet and took the pipe in both hands and hauled."
-269,Ch 37,122,4119,looked at him/her/it,looked at it,,,1,3,,base,,"She loosened the vise and took the piece out and looked at it close, on both sides, through the bottom of her glasses."
-270,Ch 37,124,4164,He knew / didn't know,He knew,,,2,3,yes,base,,He knew it before it spoke.
-271,Ch 37,124,4166,looked at him/her/it,looked at him,,,1,3,,base,,"She looked at him, and then at the door behind him."
-272,Ch 37,124,4168,He knew / didn't know,He knew,,,2,3,yes,base,,He knew what was on the other end of that cord.
-273,Ch 38,125,4209,the way ...,the way,,,3,3,yes,base,,"She was watching with her pencil behind her ear, the way she read everything."
-274,Ch 38,125,4256,nodded / shrugged,shrugged,,,1,1,,base,,"He shrugged, embarrassed for her."
-275,Ch 38,125,4256,not X. It's Y,wasn't going to say anything. It's,yes,,0,1,,base,,"""I wasn't going to say anything. It's just a tool."""
-276,Ch 38,125,4266,looked at him/her/it,looked at her,,,2,2,yes,base,,Curtis looked at her.
-277,Ch 38,125,4296,the way ...,the way,,,3,3,yes,base,,"Her hand went to the leather pouch on the side of the amp, the way you reach for a pick, and opened it."
-278,Ch 38,125,4298,looked at him/her/it,looked at it,,,2,2,yes,base,,She looked at it a long time.
-279,Ch 38,125,4298,for a while / a long time,a long time,,,1,1,,base,,She looked at it a long time.
-280,Ch 38,125,4299,Then he/she,Then she,,,1,2,,base,,"Then she got up and walked the length of the tables to the gravy boat, where Denny's phone was still going."
-281,Ch 38,125,4299,the way ...,the way,,,3,3,yes,base,,"She crouched down in front of it and said one thing into it, short, the way you leave a message on a machine."
-282,Ch 38,125,4299,Then he/she,Then she,,kept,1,2,,base,,Then she reached out and turned it off.
-283,Ch 39,126,4306,He knew / didn't know,He didn't know,,,2,2,yes,base,,He didn't know what you wrote to somebody who'd let you say no.
-284,Ch 39,126,4314,He knew / didn't know,He knew,,,2,2,yes,edit 172,,"He knew what it was, and had known since a hinge and a gatepost in July."
-285,Ch 39,127,4332,looked at him/her/it,looked at him,,,2,2,yes,unknown,,David put the towel over his shoulder and looked at him like he had when they were eight and Elijah was explaining something too long.
-286,Ch 39,127,4343,nodded / shrugged,nodded,,,1,2,,base,,David nodded.
-287,Ch 39,127,4343,not X. It's Y,"wasn't going to say it was okay, because it hadn't been. It was",,,1,1,,base,,"He wasn't going to say it was okay, because it hadn't been. It was just over."
-288,Ch 39,127,4346,didn't say anything,didn't say anything,,,1,1,,"edit 214, 237",,Elijah didn't say anything.
-289,Ch 39,127,4362,the way ...,the way,,,1,2,,unknown,,"David leaned on the bar with both hands, the way he did for the real ones."
-290,Ch 39,127,4381,looked at him/her/it,looked at it,,,2,2,yes,edit 197,,"He looked at it a while before he typed, Can't this time."
-291,Ch 39,128,4412,nodded / shrugged,nodded,,,1,2,,base,,He nodded at the screen.
-292,Ch 39,128,4417,the way ...,the way,,,1,2,,base,,"It was Grace, too close to the phone, the way people get the first time."
-293,Ch 39,128,4420,Then he/she,Then she,,,1,1,,base,,"Then she reached out, and the picture tipped toward the tarp and went black."
-294,Epilogue,129,4444,the way ...,the way,,,1,1,,base,,"He missed the change into the chorus, the way he had in the empty room, and went back and got it."
-295,Epilogue,129,4444,Then he/she,Then he,,kept,0,1,,base,,Then he played something else.
+268,Ch 37,121,4106,for a while / a long time,for a while,,,3,3,yes,edit 359,mixed,"Elijah took inventory of what he knew he wouldn't see again, or feel again, for a while."
+269,Ch 37,121,4112,Then he/she,Then he,,,2,2,yes,edit 359,,Then he started to cry.
+270,Ch 37,122,4132,nodded / shrugged,nodded,,,1,1,,base,,"She stepped back and nodded at Tyler, and Tyler set his feet and took the pipe in both hands and hauled."
+271,Ch 37,122,4136,looked at him/her/it,looked at it,,,1,3,,base,,"She loosened the vise and took the piece out and looked at it close, on both sides, through the bottom of her glasses."
+272,Ch 37,124,4181,He knew / didn't know,He knew,,,2,3,yes,base,,He knew it before it spoke.
+273,Ch 37,124,4183,looked at him/her/it,looked at him,,,1,3,,base,,"She looked at him, and then at the door behind him."
+274,Ch 37,124,4185,He knew / didn't know,He knew,,,2,3,yes,base,,He knew what was on the other end of that cord.
+275,Ch 38,125,4226,the way ...,the way,,,3,3,yes,base,,"She was watching with her pencil behind her ear, the way she read everything."
+276,Ch 38,125,4273,nodded / shrugged,shrugged,,,1,1,,base,,"He shrugged, embarrassed for her."
+277,Ch 38,125,4273,not X. It's Y,wasn't going to say anything. It's,yes,,0,1,,base,,"""I wasn't going to say anything. It's just a tool."""
+278,Ch 38,125,4283,looked at him/her/it,looked at her,,,2,2,yes,base,,Curtis looked at her.
+279,Ch 38,125,4313,the way ...,the way,,,3,3,yes,base,,"Her hand went to the leather pouch on the side of the amp, the way you reach for a pick, and opened it."
+280,Ch 38,125,4315,looked at him/her/it,looked at it,,,2,2,yes,base,,She looked at it a long time.
+281,Ch 38,125,4315,for a while / a long time,a long time,,,1,1,,base,,She looked at it a long time.
+282,Ch 38,125,4316,Then he/she,Then she,,,1,2,,base,,"Then she got up and walked the length of the tables to the gravy boat, where Denny's phone was still going."
+283,Ch 38,125,4316,the way ...,the way,,,3,3,yes,base,,"She crouched down in front of it and said one thing into it, short, the way you leave a message on a machine."
+284,Ch 38,125,4316,Then he/she,Then she,,kept,1,2,,base,,Then she reached out and turned it off.
+285,Ch 39,126,4323,He knew / didn't know,He didn't know,,,2,2,yes,base,,He didn't know what you wrote to somebody who'd let you say no.
+286,Ch 39,126,4331,He knew / didn't know,He knew,,,2,2,yes,edit 172,,"He knew what it was, and had known since a hinge and a gatepost in July."
+287,Ch 39,127,4349,looked at him/her/it,looked at him,,,2,2,yes,unknown,,David put the towel over his shoulder and looked at him like he had when they were eight and Elijah was explaining something too long.
+288,Ch 39,127,4360,nodded / shrugged,nodded,,,1,2,,base,,David nodded.
+289,Ch 39,127,4360,not X. It's Y,"wasn't going to say it was okay, because it hadn't been. It was",,,1,1,,base,,"He wasn't going to say it was okay, because it hadn't been. It was just over."
+290,Ch 39,127,4363,didn't say anything,didn't say anything,,,1,1,,"edit 214, 237",,Elijah didn't say anything.
+291,Ch 39,127,4379,the way ...,the way,,,1,2,,unknown,,"David leaned on the bar with both hands, the way he did for the real ones."
+292,Ch 39,127,4398,looked at him/her/it,looked at it,,,2,2,yes,edit 197,,"He looked at it a while before he typed, Can't this time."
+293,Ch 39,128,4429,nodded / shrugged,nodded,,,1,2,,base,,He nodded at the screen.
+294,Ch 39,128,4434,the way ...,the way,,,1,2,,base,,"It was Grace, too close to the phone, the way people get the first time."
+295,Ch 39,128,4437,Then he/she,Then she,,,1,1,,base,,"Then she reached out, and the picture tipped toward the tarp and went black."
+296,Epilogue,129,4461,the way ...,the way,,,1,1,,base,,"He missed the change into the chorus, the way he had in the empty room, and went back and got it."
+297,Epilogue,129,4461,Then he/she,Then he,,kept,0,1,,base,,Then he played something else.

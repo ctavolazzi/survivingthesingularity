@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review), logged only. The next edit is 323.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edit 323 (28 Nov, CT's "Folks"), logged only. The next edit is 324.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4298,6 +4298,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 
 322. **Ch 39: the habits pass.** CT, 27 Nov (seventeenth chat): "go through all of this line by line and in context of the section ... in context of the book and reader fatigue ... determine if maybe there's a different word choice or a different way to phrase it"; then "Prepare the next PDF version of the manuscript by correcting these habits with the variety I'm looking for", reviewed "Inside it" (in the PDF, with a before-and-after list beside it). Method: `HABITS-PASS.md`. 1 change, each a pile-up of one habit in one scene; one instance stays in each. Logged; in the PDF for CT's review.
      - Row 338 (the way ...; "like"; words from: base). "looked at him the way he had when" becomes "looked at him like he had when". A plain, spoken "same as" for a look David has given since childhood. The callback is kept, and the sentence loses one of its two habits. [Claude, in the final read: "same as" was over its cap, and David had two "the way he had/did" in one scene]
+
+323. **Chapter 0: "Folks with no margin".** CT, 28 Nov, reading the habits-pass PDF (page 32): "Too many instances of the
+     word people in one paragraph on one page. The first sentence that starts with people is fine. The second sentence
+     after it also starts with people. I feel like that should start with folks." So "People with no margin, no cushion,
+     no lobbyist, the first people every wave hits and the last people anyone rebuilds for." becomes "Folks with no
+     margin, ...". CT's word; the rest of the sentence is unchanged. Chapter 0 is in the published free sample (Chapters 0
+     to 10), which still has "People"; it changes when the sample is remade. Same word count. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

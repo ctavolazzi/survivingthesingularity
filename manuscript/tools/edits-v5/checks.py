@@ -338,4 +338,5 @@ C=[
 (320, 'Ch 37', ['Sunday, and Devendra had gone quiet on the line.', 'side." Devendra\'s voice was very even, how it got when he had practiced. "The three'], ['on the line for a long time', 'even, the way it got']),
 (321, 'Ch 38', ['Grace looked down the table at her, like she always did when she needed a yes.', 'Tyler held her eyes.', 'buying a used truck. Not loud. Just how he used to on the porch, and for once there was nobody'], ['her, the way she always had when she needed a yes.', 'held her eyes for a while', 'Just the way he used to on the porch']),
 (322, 'Ch 39', ['the towel over his shoulder and looked at him like he had when they were eight and Elijah was'], ['looked at him the way he had when']),
+(323, 'Ch 0', ['was already a rigged carnival game. Folks with no margin, no cushion, no lobbyist,'], ['carnival game. People with no margin']),
 ]

@@ -1763,6 +1763,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (321, 'Just the way he used to on the porch', 'Just how he used to on the porch'),
 # 322, Ch 39: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
 (322, 'looked at him the way he had when', 'looked at him like he had when'),
+# 323, Ch 0: "Folks with no margin" (CT, 28 Nov, reading the habits-pass PDF)
+(323, "rigged carnival game. People with no margin,", "rigged carnival game. Folks with no margin,"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

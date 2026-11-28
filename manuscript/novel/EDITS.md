@@ -4672,6 +4672,30 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      "and" are the only marks added. The rest of the speech ("Everybody thinks there's a room ... It's eleven people who
      are scared of each other ...") is unchanged. In the published sample. Logged only.
 
+370. **Chapter 12: why he won't go home.** CT, 28 Nov, reading V9, on "Not again. Not after what happened last time."
+     (Claude's line, edit 152): "feels like a cop out. I want him to be more wracked with subtle psychological things
+     that make more sense for his character". His beats: "connect it to Melody and how his family thinks he's greedy,
+     and he's always been trying to prove them wrong, and also how he's trying to figure something out, bring something
+     back, show his people that he's not crazy." Then, on a version Claude had cut too thin: "We need more of an
+     explanation that readers can relate to, being accused of something by a family member and having it follow you your
+     whole life, to the point where, even though it was never true, making it UNtrue becomes part of your personality."
+     Shown and logged on his "Log it as edit 370". "Not again. Not after what happened last time." becomes:
+
+     > If he came home empty, all he'd be doing there was eating her food.
+     >
+     > *Greedy little grub.* Somebody in his own family had called him that when he was a kid, and it had followed him
+     > his whole life. If you have ever been accused of something by a family member, you know how that goes. It was
+     > never true. But he had spent so many years making it untrue that it had become part of his personality. So he
+     > slept in a truck, two hours from a porch light that was on for him. He would figure this thing out first, and
+     > bring something back, and show his people he wasn't crazy.
+
+     CT's words: "accused of something by a family member", "followed him his whole life" (his "follow you your whole
+     life"), "never true", "making it untrue", "become part of his personality", "figure this thing out", "bring
+     something back", "show his people he wasn't crazy". The rest is Claude's wording. Claude's choices, told to him:
+     Melody is not named (she is introduced in Chapter 13, and Chapter 14 reveals the voice was hers, at six); the
+     storyteller turns to the reader; the truck and the porch light. Told to him and kept: Chapter 14 has "he had spent
+     his whole life trying to prove them wrong". 113 words in, 8 out. Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

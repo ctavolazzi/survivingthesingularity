@@ -101,7 +101,7 @@ def xhtml_lines(data):
         if tag == "img" or tag == "image":
             counts["img"] += 1
         if tag == "em":
-            counts["em"] += len("".join(el.itertext()))
+            counts["em"] += len(re.sub(r"\s", "", "".join(el.itertext())))
         if tag == "h1":
             counts["h1"].append("".join(el.itertext()).strip())
         buf.append(el.text or "")
@@ -158,7 +158,7 @@ def read_docx(path):
         for item in p.iter_inner_content():
             for r in ([item] if hasattr(item, "italic") else item.runs):
                 if r.italic or (r.style is not None and r.style.font.italic):
-                    em += len(r.text)
+                    em += len(re.sub(r"\s", "", r.text))  # letters only: a converter may move a space out of the italics
     z = zipfile.ZipFile(path)
     xml = z.read("word/document.xml").decode("utf-8")
     links = re.findall(r'<w:hyperlink [^>]*w:anchor="([^"]+)"', xml)
@@ -277,9 +277,11 @@ def check_file(name, spec):
     chapters = [t for t in titles if t.startswith("Chapter ")]
     nums = [int(re.match(r"Chapter (\d+)", t).group(1)) for t in chapters]
     n_img = sum(1 for s in sections_for(spec["scope"]) for b in s["blocks"] if b["t"] == "img")
-    src_em = sum(len(r[0]) for s in sections_for(spec["scope"]) for b in s["blocks"]
+    # italic letters, not spaces: pandoc moves a space at the edge of an italic run outside it, which changes nothing
+    # a reader sees (28 Nov: four such spaces in text messages made the Word check fail, 13873 vs 13877)
+    src_em = sum(len(re.sub(r"\s", "", r[0])) for s in sections_for(spec["scope"]) for b in s["blocks"]
                  if b["t"] in ("p", "h2") for r in b["runs"] if r[1])
-    src_em += sum(len(r[0]) for b in MODEL["title_block"] for r in b["runs"] if r[1])
+    src_em += sum(len(re.sub(r"\s", "", r[0])) for b in MODEL["title_block"] for r in b["runs"] if r[1])
     chap_label = f"chapters {nums[0]} to {nums[-1]} ({len(nums)}), in order"
 
     if spec["kind"] == "epub":

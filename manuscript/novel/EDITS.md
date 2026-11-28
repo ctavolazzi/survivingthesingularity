@@ -4306,6 +4306,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      margin, ...". CT's word; the rest of the sentence is unchanged. Chapter 0 is in the published free sample (Chapters 0
      to 10), which still has "People"; it changes when the sample is remade. Same word count. Logged only.
 
+     Build change, 28 Nov (not a numbered edit; the words of the book do not change): CT, reading the same PDF (page 42):
+     "That formatting bug is still in there, where after the dots, the next paragraph doesn't have a tab." The paragraph
+     after a scene break now keeps its first-line indent in the PDF and the ebook (`publication/novel/build/css/common.css`
+     and `epub.css`; the Word build already indented it). Checked by a test build: page 42's "Later that night" is
+     indented and every PDF check passes. CT: "log these edits, and then I'll let you know when we're ready to produce a
+     new PDF." Both this and edit 323 wait for that build.
+
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware
 the military!" stays, with "They never built one thing in their lives ... they come around with a check. Somebody

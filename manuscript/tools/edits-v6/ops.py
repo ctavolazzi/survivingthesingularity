@@ -1767,6 +1767,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (323, "rigged carnival game. People with no margin,", "rigged carnival game. Folks with no margin,"),
 # 324, Ch 11: who asks what Gus does with it (CT's words, 28 Nov)
 (324, '"So what do you do with it?"\n"I\'ve got a museum.', '"So what do you do with it?" Elijah asked.\n"Do with what?" Gus replied, focused on the road.\n"Your money."\nGus laughed so loud Elijah was startled. "Boy, you really aren\'t from around here, are you?" he said, smiling from ear to ear. "I\'ve got a museum.'),
+# 325, Ch 12: what he won't let anyone see, in the truck in Stockton (CT's beats and most of his words, 28 Nov)
+(325, "one more person who wanted something everywhere else. He'd sleep it off.", "one more person who wanted something everywhere else.\nAnd even though it wasn't entirely true, at this point Elijah felt like everyone viewed him as either a crackpot or disposable. He didn't want to be either, but he also didn't want to be just another guy with his hand out. His father's voice was still in there: never take a handout, and never ask unless you have to, or unless it's for something that matters.\nHe'd played the Gravenstein fair for a few hundred people shouting his name. It was hard to go from all of that to whatever this was. There was a large part of him that didn't want anyone to know he was down and out. When you spend most of your life as the hero of the story, sometimes your brain goes into denial, to protect itself from having to change identities.\nHe'd sleep it off."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

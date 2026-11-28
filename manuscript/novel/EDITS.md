@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 and 324 (28 Nov, CT's "Folks" and who asks Gus), logged only. The next edit is 325.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 to 325 (28 Nov, CT's fixes from reading the PDF), logged only. The next edit is 326.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4328,6 +4328,40 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      in his paragraph, so the reader knows it is still Gus. "He was grinning again" a few lines on now picks up "smiling
      from ear to ear". Searched: "laughed so loud", "ear to ear", "from around here", "focused on the road" are nowhere
      else. Logged only; waits for CT's next PDF.
+
+325. **Chapter 12: what he won't let anyone see.** CT, 28 Nov, reading the PDF (page 186, the truck in Stockton): "This needs
+     to reveal more about his internal mental state." His beats, and his words where he gave them: "And even though it
+     wasn't entirely true, at this point Elijah felt like everyone viewed him as either a crackpot or disposable. He didn't
+     want to be either, but he also didn't want to be just another person who wanted a handout"; "he'd been told his whole
+     life ... to never take anything for free and never ask if he didn't have to, or if it wasn't in pursuit of something
+     grand"; "he was used to playing for hundreds of people shouting his name, and it was kind of difficult for him to go
+     from all of that to what he was now. There was a large part of him that didn't want anyone to know that he was down
+     and out. When you spend most of your life as the hero of the story, sometimes your brain goes into denial. To protect
+     itself from having to change identities." And: "If there's a way to write it so that it's like really clear that he
+     has an insecurity without saying outright". After "one more person who wanted something everywhere else.", two new
+     paragraphs, and "He'd sleep it off. People slept things off in trucks all the time." becomes its own paragraph, so the
+     denial lands on it:
+
+     > And even though it wasn't entirely true, at this point Elijah felt like everyone viewed him as either a crackpot or
+     > disposable. He didn't want to be either, but he also didn't want to be just another guy with his hand out. His
+     > father's voice was still in there: never take a handout, and never ask unless you have to, or unless it's for
+     > something that matters.
+     >
+     > He'd played the Gravenstein fair for a few hundred people shouting his name. It was hard to go from all of that to
+     > whatever this was. There was a large part of him that didn't want anyone to know he was down and out. When you spend
+     > most of your life as the hero of the story, sometimes your brain goes into denial, to protect itself from having to
+     > change identities.
+     >
+     > He'd sleep it off. People slept things off in trucks all the time.
+
+     **Claude's choices:** "just another guy with his hand out" for "another person who wanted a handout" (the page has
+     "one more person who wanted something" twice just above); the father's rule as a callback to his own words in
+     Chapter 0 ("Never take a handout"), which Chapter 31 picks up again ("That was his father in him: never take a
+     handout"); "something that matters" for "something grand" (Lou's "something grand" in Chapter 26 is the only other);
+     "a few hundred people" at the Gravenstein fair, to fit the band the book has (bars, weddings, the fair in 2016, two
+     hundred followers); "whatever this was" for "what he was now". Searched: "crackpot" twice before (Ch 18, 25), not
+     near; "down and out", "change identities", "hero of the story", "his hand out" nowhere else. Logged only; waits for
+     CT's next PDF.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

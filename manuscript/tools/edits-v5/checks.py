@@ -340,4 +340,5 @@ C=[
 (322, 'Ch 39', ['the towel over his shoulder and looked at him like he had when they were eight and Elijah was'], ['looked at him the way he had when']),
 (323, 'Ch 0', ['was already a rigged carnival game. Folks with no margin, no cushion, no lobbyist,'], ['carnival game. People with no margin']),
 (324, 'Ch 11', ['"So what do you do with it?" Elijah asked.\n"Do with what?" Gus replied, focused on the road.\n"Your money."', 'Gus laughed so loud Elijah was startled.', '"Boy, you really aren\'t from around here, are you?" he said, smiling from ear to ear. "I\'ve got a museum.', 'smiling from ear to ear. "I\'ve got a museum. An old Elks lodge'], []),
+(325, 'Ch 12', ["wanted something everywhere else.\nAnd even though it wasn't entirely true, at this point Elijah felt like everyone viewed him as either a crackpot or disposable.", "His father's voice was still in there: never take a handout, and never ask unless you have to, or unless it's for something that matters.", "sometimes your brain goes into denial, to protect itself from having to change identities.\nHe'd sleep it off. People slept things off in trucks all the time."], []),
 ]

@@ -591,6 +591,12 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   east field": "The sound of running water." Don't dress a sound in a little event to make it lively; name it the way a
   person would. He also gave the paragraph a frame of his own: "Elijah took inventory of what he knew he wouldn't see
   again, feel again for a while."
+- **Subtle does not mean thin. When he asks for the psychology, explain it so a reader can relate.** For why Elijah
+  sleeps in the truck (Ch 12), Claude's own review cut its draft down to a bare *Greedy little grub.* and called that
+  subtle. CT: "Doesn't hit for me. We need more of an explanation that readers can relate to, being accused of
+  something by a family member and having it follow you your whole life, to the point where, even though it was never
+  true, making it UNtrue becomes part of your personality." A reflection can overcorrect (15c); a line that explains the
+  intensity of a moment stays (15f). Say the human thing plainly, and let the storyteller turn to the reader.
 - A table row for section 16: Claude wrote "Lou noticed." and a run of "He" openers | "Of course Lou noticed. It just
   happened." "You're still repeating the he pattern" | the noticing cut; openers counted before showing.
 

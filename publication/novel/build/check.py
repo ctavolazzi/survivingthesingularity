@@ -168,6 +168,35 @@ def read_docx(path):
             "toc_links": len(links), "toc_links_resolve": all(a in marks for a in links)}
 
 
+def scene_break_indents(pdf):
+    """(pages where the paragraph after a scene break has no first-line indent, number of breaks seen). CT, 28 Nov
+    2026: "after the dots, the next paragraph doesn't have a tab." Read from `pdftotext -layout`: a page's margin is
+    the least indent among its long lines. The same test is manuscript/tools/edits-v6/final_check.py pdf."""
+    txt = subprocess.run(["pdftotext", "-layout", str(pdf), "-"], capture_output=True, text=True, check=True).stdout
+    pages = [p.split("\n") for p in txt.split("\f")]
+    want = BREAK.replace(" ", "")
+    lead = lambda l: len(l) - len(l.lstrip(" "))
+
+    def margin(lines):
+        long_ = [lead(l) for l in lines if len(l.strip()) > 25]
+        return min(long_) if long_ else None
+
+    bad, seen = [], 0
+    for pi, lines in enumerate(pages):
+        for li, l in enumerate(lines):
+            if not l.strip() or l.strip().replace(" ", "") != want:
+                continue
+            seen += 1
+            nxt = next((x for x in lines[li + 1:] if x.strip() and not x.strip().isdigit()), None)
+            pg, mg = pi, margin(lines)
+            if nxt is None and pi + 1 < len(pages):     # the break ends the page: the paragraph tops the next one
+                body = [x for x in pages[pi + 1] if x.strip()]
+                nxt, pg, mg = (body[1] if len(body) > 1 else None), pi + 1, margin(pages[pi + 1])
+            if nxt is not None and mg is not None and lead(nxt) < mg + 2:
+                bad.append(pg + 1)
+    return bad, seen
+
+
 def read_pdf(path, layout):
     from pypdf import PdfReader
     r = PdfReader(str(path))
@@ -320,6 +349,9 @@ def check_file(name, spec):
                              for d_, t, pg in p["bookmarks"] if d_ == 0)
         ok(not shared and first_lines_ok, "every act, chapter and back-matter section starts on a new page",
            f"sections sharing a page or not at the top: {shared[:3]}")
+        flat_after, breaks = scene_break_indents(path)
+        ok(not flat_after, f"the paragraph after each of the {breaks} scene breaks is indented",
+           f"no indent after a scene break on {len(flat_after)} of {breaks}, first on pages {flat_after[:6]}")
         offset = 1 if spec["layout"] == "reader" and (WORK / "cover.jpg").exists() else 0
         real = [pg + 1 for d_, t, pg in p["bookmarks"] if d_ == 0 and t != "Contents"]
         ok(p["links"] >= len(titles) and p["toc_nums"] == real,

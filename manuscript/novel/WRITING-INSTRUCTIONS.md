@@ -574,6 +574,21 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   the night before), one to a scene at most.
 - A cover-to-cover read finds few clear errors this late; most of what it finds is taste, and taste goes to CT.
 
+## 15h. Learned 28 November (the final review: Lou's goodbye, Ch 37)
+
+- **Don't narrate that someone noticed what just happened to them.** Claude wrote "Elijah dropped his shoulder and moved
+  out from under the hand. Lou noticed. He let the hand fall, and he stayed where he was." CT: "That Lou noticed line is
+  awkward ... Of course Lou noticed. It just happened." It became "Lou let the hand fall, and he stayed where he was."
+  When his beat says a person "will notice", show what the person does next; the noticing is in the doing.
+- **The "He" run again, in a draft written from his beats.** CT: "You're still repeating the he pattern, the multiple he
+  pattern. You need to read the guidelines on how to write before you do this again." The draft had "He closed his
+  hand", "He looked out", "He took a step", and three in a row in one paragraph ("He had lived ... He heard ... He was
+  going to miss"). Turning beats into narration is where the run creeps in: each beat becomes "He did X". Before he
+  sees a draft, count the openers of every sentence Claude wrote (section 13, step 3) and fix a run by what the
+  sentence is about (the sounds, the place, the other person by name), never by an inversion.
+- A table row for section 16: Claude wrote "Lou noticed." and a run of "He" openers | "Of course Lou noticed. It just
+  happened." "You're still repeating the he pattern" | the noticing cut; openers counted before showing.
+
 ## 15e. Learned 27 November (sixteenth chat, the senses pass)
 
 - **A scene without a smell is not a gap.** The readers flagged 20 strong scenes with no smell or taste; on reading,

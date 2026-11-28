@@ -559,6 +559,21 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   (edit 296) names the arms before "good, bad ideas"; his sketch had only "ideas start forming in his mind". Flagged to
   him, not ruled on. **[C]**
 
+## 15g. Learned 28 November (the final pass)
+
+- A run of "He" steps is fixed by saying how one step lands on him, with a feeling or a sense (CT's truck: "The truck
+  started up without issue, which pleased Elijah and gave him a sense of relief."). Not by swapping "He" for "Elijah",
+  and not by reshuffling the sentences.
+- A plain line beats a clever one. "He could smell what she'd walked into" was a clever line; the book got "It came in
+  clean, and next to it he could smell the room."
+- Before cutting a line as invented, search the book for its plant. "Saved under Don't" (Ch 39) looked invented and pays
+  off Ch 37's "Instead he changed the name to Don't."
+- A fact in a character's mouth gets checked against the real world. Priya's "one inspector for the house and another for
+  the shop" is not how a Washington county works; the fix kept her point (we have to pass both) and fixed the mechanism.
+- A taste goes in only where it carries feeling and ties to something already set up (Curtis's salt cutting the tea from
+  the night before), one to a scene at most.
+- A cover-to-cover read finds few clear errors this late; most of what it finds is taste, and taste goes to CT.
+
 ## 15e. Learned 27 November (sixteenth chat, the senses pass)
 
 - **A scene without a smell is not a gap.** The readers flagged 20 strong scenes with no smell or taste; on reading,

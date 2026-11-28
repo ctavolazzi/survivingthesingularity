@@ -49,7 +49,7 @@ Don't push back on: his taste, his word choices, his style, or a decision he has
 9. Commit (one change, plain message) and push to `claude/singularity-publication-build-kparqk` (CT, 25 Nov:
    "Push to kparqk, like the procedure says"), whatever branch the chat itself was given.
 10. Do NOT update the Drive copy after each edit (CT, 25 Nov: it costs tokens). Refresh "StS edit list, edits 1 to N
-   (mirror of GitHub)" (id 1sWDrdwJsfiWElYVBACrJkY6TmeqatlnhtwRtIk9MY8o, edits 1 to 295, in "StS Publication Files"; https://docs.google.com/document/d/1sWDrdwJsfiWElYVBACrJkY6TmeqatlnhtwRtIk9MY8o) once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
+   (mirror of GitHub)" (id 1ZgZ-h7dP0GwdOlq378SO9A0CjhjN4AZ6fQ-iakGKTok, edits 1 to 347, made 28 Nov, in "StS Publication Files"; https://docs.google.com/document/d/1ZgZ-h7dP0GwdOlq378SO9A0CjhjN4AZ6fQ-iakGKTok; the 295 copy is "OLD:") once, at the end of the session. Upload EDITS.md as text/plain: a markdown upload turns the edit numbers into an auto-numbered list (27 Nov).
    It is remade from a text file (the connector cannot replace a Doc's text without retyping it), so the id
    changes each time: the newest one is here, and the old copy gets "OLD:" in its title and a pointer at the top.
 11. Reply in two or three lines: the number, what it says, anything of Claude's wording, one open question at most.
@@ -243,6 +243,23 @@ Edits 1 to 138 are all in v6: the Google Doc "StS v6 draft (Nov 25)", the CURREN
 and makes his final edits there. The next edit is 139. Log it the same way (number, where, "Book now," "Change
 to"), add a check row in `checks.py` and a find and replace row in `manuscript/tools/edits-v6/ops.py`, and check it
 against a fresh read of the v6 Doc. The v5 Doc stays as it is.
+
+## Where things stand (the final pass, 28 Nov, the same chat)
+- **Edits 328 to 347 are logged in GitHub only** (the final pass, 37 changes, Chapters 11 to 39). make_v6.py on the
+  fresh v5 read: 801 replacements, all 348 check rows pass. `final_check.py gate`: READY (every finding has a verdict
+  in `final-check-ledger.csv`). **The next edit is 348.** Record: `CHECKPOINT-2026-11-28-final-pass.md`.
+- The cover-to-cover read (seven readers and a checker for each, plus a spelling and punctuation sweep) found no clear
+  errors and 16 things for CT: `cover-to-cover-read-2026-11-28.md`. Nothing in the book changed.
+- The scene sheet audit's section A is applied (`SCENE-SHEET-AUDIT-2026-11-27.md`, under section A).
+- **Drive is at edit 347:** the scene sheet's "Scenes" tab and all 16 story-check tabs (same ids, retitled "(edits 1 to
+  347)"; each compared with its CSV after the update, 0 cells differ), and the edit list mirror (step 10's id). The
+  staging file is "OLD: staging copy (story sheets at edit 347, 28 Nov)" (`1NqnPrwH72VvbcYZzj3rQwpg1OxBjy30iY6cW3Lnf13I`).
+  Neither Doc was changed.
+- Release check, nothing released: the paperback PDF (383 pages), the Kindle ebook (epubcheck 0 errors, 0 warnings) and
+  the Word file pass every check on the edit-347 text, built with `--no-pictures` (the picture links in the saved v5
+  read have expired). The Word build's italics failure is fixed (commit 6d03ae3f). The site checks passed earlier on
+  28 Nov and no site file has changed since.
+- The V9 PDF waits on CT's word (`FINAL-PASS-PROMPT.md`, step 12).
 
 ## Where things stand (end of the seventeenth chat, 27 Nov)
 - **Edits 296 to 300 are logged in GitHub only** (the shouse scene in Chapter 21 and its three follow-ons; Lou's hands

@@ -4686,15 +4686,22 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      > *Greedy little grub.* Somebody in his own family had called him that when he was a kid, and it had followed him
      > his whole life. If you have ever been accused of something by a family member, you know how that goes. It was
      > never true. But he had spent so many years making it untrue that it had become part of his personality. So he
-     > slept in a truck, two hours from a porch light that was on for him. He would figure this thing out first, and
-     > bring something back, and show his people he wasn't crazy.
+     > slept in a truck, two hours from a porch light that was on for him. The plan was to figure things out first,
+     > bring something back and show his people he wasn't crazy without taking any handouts. Elijah believed he was
+     > living by his principles and that this was a good idea.
 
      CT's words: "accused of something by a family member", "followed him his whole life" (his "follow you your whole
      life"), "never true", "making it untrue", "become part of his personality", "figure this thing out", "bring
      something back", "show his people he wasn't crazy". The rest is Claude's wording. Claude's choices, told to him:
      Melody is not named (she is introduced in Chapter 13, and Chapter 14 reveals the voice was hers, at six); the
      storyteller turns to the reader; the truck and the porch light. Told to him and kept: Chapter 14 has "he had spent
-     his whole life trying to prove them wrong". 113 words in, 8 out. Logged only.
+     his whole life trying to prove them wrong". Logged only.
+     Corrected in place, 28 Nov (the same chat): the checker flagged a run of "he" openers where the passage meets the
+     shower paragraph, and Claude offered "The plan was to ...". CT: "But yes, I like your sentence. The plan was to
+     figure things out first, bring something back and show his people he wasn't crazy without taking any handouts.
+     Elijah believed he was living by his principles and that this was a good idea. And we can just leave that sentence
+     like that." The last sentence of the passage is now his two, word for word ("handouts" answers his father's "Never
+     take a handout", Ch 0). 134 words in, 8 out.
 
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first

@@ -1,135 +1,273 @@
 {
  "the way ...": [
-  {"id": "the-way.how", "name": "\"how\" in place of \"the way\"", "ct": true, "cap": 10,
+  {
+   "id": "the-way.how",
+   "name": "\"how\" in place of \"the way\"",
+   "ct": true,
+   "cap": 10,
    "how": "CT, 27 Nov: The way can change to \"how\". As in \"how it usually did\". Swap the two words and soften the absolute if there is one.",
    "before": "Then she smiled, and the whole kitchen came up a notch, the way it always had.",
-   "after": "Then she smiled, and the whole kitchen came up a notch, how it usually did."},
-  {"id": "the-way.same-as", "name": "\"same as\"", "cap": 5,
+   "after": "Then she smiled, and the whole kitchen came up a notch, how it usually did."
+  },
+  {
+   "id": "the-way.same-as",
+   "name": "\"same as\"",
+   "cap": 5,
    "how": "For a habit somebody has always had. Plain, spoken.",
    "before": "ate her ice cream out of the little tub, the way she had every night of his life.",
-   "after": "ate her ice cream out of the little tub, same as every night of his life."},
-  {"id": "the-way.like", "name": "\"like\"", "cap": 6,
-   "how": "The plain spoken comparison. Check the paragraph does not already have a \"like\" simile.",
+   "after": "ate her ice cream out of the little tub, same as every night of his life."
+  },
+  {
+   "id": "the-way.like",
+   "name": "\"like\"",
+   "cap": 3,
+   "how": "The plain spoken comparison. Check the paragraph does not already have a \"like\" simile. Capped low: CT passed over \"like it always did\" for his own \"how it usually did\" (27 Nov).",
    "before": "the way it always had.",
-   "after": "like it always did."},
-  {"id": "the-way.storyteller", "name": "The storyteller turns to the reader", "cap": 6,
+   "after": "like it always did."
+  },
+  {
+   "id": "the-way.storyteller",
+   "name": "The storyteller turns to the reader",
+   "cap": 6,
    "how": "Break the comparison off into a short sentence of its own, said to the reader. CT's own lines do this: \"You don't see those anymore.\"",
    "before": "Elijah found out the rest in pieces, the way you do in a cab.",
-   "after": "Elijah found out the rest in pieces. Cabs are good for that."},
-  {"id": "the-way.verb", "name": "The verb carries the comparison", "cap": 6,
-   "how": "Find the one verb that does what the comparison was explaining, and let the image follow it. CT's kitchen example: the thing itself acts.",
-   "before": "looked him over the way she looked over a melon at the market.",
-   "after": "checked him for ripeness, like a melon at the market."},
-  {"id": "the-way.cut", "name": "Cut the tail", "cap": 8,
+   "after": "Elijah found out the rest in pieces. Cabs are good for that."
+  },
+  {
+   "id": "the-way.verb",
+   "name": "The verb carries the comparison",
+   "cap": 6,
+   "how": "Find the one verb that does what the comparison was explaining, and let the thing itself act. Not a cleverer line: a plainer one with a verb that moves. (The earlier example, \"checked him for ripeness\", was a clever line and came out, 27 Nov.)",
+   "before": "(CT's own example of the move, from his note on smell) The perfume ...",
+   "after": "\"acts like a lightning rod for knuckleheads and more or less behaves like a slime mold, expanding out in every direction, but ... is utterly decimated by the ferocity of the air from the kitchen.\""
+  },
+  {
+   "id": "the-way.cut",
+   "name": "Cut the tail",
+   "cap": 8,
    "how": "When the image before the comma has already landed, stop the sentence there.",
    "before": "the whole kitchen came up a notch, the way it always had.",
-   "after": "the whole kitchen came up a notch."}
+   "after": "the whole kitchen came up a notch."
+  }
  ],
  "looked at him/her/it": [
-  {"id": "looked.imply", "name": "Let the next line imply the look", "cap": 8,
+  {
+   "id": "looked.imply",
+   "name": "Let the next line imply the look",
+   "cap": 8,
    "how": "If the line of talk after it only makes sense because somebody looked, cut the look.",
    "before": "\"Let's do a show together.\" / Elijah looked at him. / \"I'm serious.\"",
-   "after": "\"Let's do a show together.\" / \"I'm serious.\""},
-  {"id": "looked.face", "name": "The face does the work", "cap": 6,
+   "after": "\"Let's do a show together.\" / \"I'm serious.\""
+  },
+  {
+   "id": "looked.face",
+   "name": "The face does the work",
+   "cap": 6,
    "how": "Say what the looker's face did, not that they looked.",
    "before": "Trent looked at him like he'd answered in Portuguese.",
-   "after": "Trent's face went blank, like he'd answered in Portuguese."},
-  {"id": "looked.what-is-seen", "name": "Say what the eyes land on", "cap": 6,
+   "after": "Trent's face went blank, like he'd answered in Portuguese."
+  },
+  {
+   "id": "looked.what-is-seen",
+   "name": "Say what the eyes land on",
+   "cap": 6,
    "how": "Name the one thing seen, or what the person does with it, so the look turns into finding something out.",
    "before": "Elijah looked at the thermos for a while.",
-   "after": "Elijah read what was left of the name."},
-  {"id": "looked.pull", "name": "The thing pulls the eye", "cap": 5,
+   "after": "Elijah read what was left of the name.",
+   "note": "The example line itself stays in the book (Claude, 27 Nov: the pause before \"Wait\" is the joke; Gus not pressing is the point). It shows the move only."
+  },
+  {
+   "id": "looked.pull",
+   "name": "The thing pulls the eye",
+   "cap": 5,
    "how": "Make the thing looked at the subject. It draws, catches or holds the eye.",
    "before": "Elijah looked at the thermos for a while.",
-   "after": "The thermos kept catching Elijah's eye."}
+   "after": "The thermos kept catching Elijah's eye.",
+   "note": "The example line itself stays in the book (Claude, 27 Nov: the pause before \"Wait\" is the joke; Gus not pressing is the point). It shows the move only."
+  }
  ],
  "for a while / a long time": [
-  {"id": "while.thing", "name": "Measure the time with a thing", "cap": 6,
+  {
+   "id": "while.thing",
+   "name": "Measure the time with a thing",
+   "cap": 6,
    "how": "Use what goes by: miles, orchards, a song, a cup going cold. Take it from the place and the hour.",
    "before": "They rode a while. There were almond orchards on both sides, in rows so straight they flickered.",
-   "after": "They rode through a few miles of almonds, in rows so straight they flickered."},
-  {"id": "while.keeps-doing", "name": "Say what he keeps doing", "cap": 6,
+   "after": "They rode through a few miles of almonds, in rows so straight they flickered."
+  },
+  {
+   "id": "while.keeps-doing",
+   "name": "Say what he keeps doing",
+   "cap": 6,
    "how": "\"Kept\" plus the action holds the time without counting it.",
    "before": "Elijah looked at the thermos for a while.",
-   "after": "Elijah kept looking at the thermos."},
-  {"id": "while.cut", "name": "Cut it", "cap": 8,
+   "after": "Elijah kept looking at the thermos.",
+   "note": "The example line itself stays in the book (Claude, 27 Nov: the pause before \"Wait\" is the joke; Gus not pressing is the point). It shows the move only."
+  },
+  {
+   "id": "while.cut",
+   "name": "Cut it",
+   "cap": 8,
    "how": "When the next sentence already makes the pause (a new paragraph, a line of talk that comes late), drop the measure.",
-   "before": "", "after": ""},
-  {"id": "while.amount", "name": "Give a real amount", "cap": 5,
-   "how": "A number or a named stretch a person would say out loud: \"a whole minute\", \"two songs\", \"most of the spring\". Check the book's dates before adding one.",
-   "before": "", "after": ""}
+   "before": "",
+   "after": ""
+  }
  ],
  "didn't say anything": [
-  {"id": "silence.did-instead", "name": "Say what they did instead", "cap": 8,
+  {
+   "id": "silence.did-instead",
+   "name": "Say what they did instead",
+   "cap": 8,
    "how": "The silence is a choice. Show the small thing done in place of talking.",
    "before": "Elijah wrote the question down. Gus glanced over and didn't say anything.",
-   "after": "Elijah wrote the question down. Gus glanced over and let him write."},
-  {"id": "silence.eyes", "name": "Send the eyes somewhere", "cap": 5,
+   "after": "Elijah wrote the question down. Gus glanced over and let him write.",
+   "note": "The example line itself stays in the book (Claude, 27 Nov: the pause before \"Wait\" is the joke; Gus not pressing is the point). It shows the move only."
+  },
+  {
+   "id": "silence.eyes",
+   "name": "Send the eyes somewhere",
+   "cap": 5,
    "how": "They look back at the work, the road, the plate.",
    "before": "Gus glanced over and didn't say anything.",
-   "after": "Gus glanced over and went back to the road."},
-  {"id": "silence.choice-verb", "name": "A verb that makes it a choice", "cap": 5,
+   "after": "Gus glanced over and went back to the road.",
+   "note": "The example line itself stays in the book (Claude, 27 Nov: the pause before \"Wait\" is the joke; Gus not pressing is the point). It shows the move only."
+  },
+  {
+   "id": "silence.choice-verb",
+   "name": "A verb that makes it a choice",
+   "cap": 5,
    "how": "An idiom from the person's own trade for letting a thing go.",
    "before": "Gus glanced over and didn't say anything.",
-   "after": "Gus glanced over and let it ride."},
-  {"id": "silence.room", "name": "Give the silence to the room", "cap": 5,
+   "after": "Gus glanced over and let it ride.",
+   "note": "The example line itself stays in the book (Claude, 27 Nov: the pause before \"Wait\" is the joke; Gus not pressing is the point). It shows the move only."
+  },
+  {
+   "id": "silence.room",
+   "name": "Give the silence to the room",
+   "cap": 5,
    "how": "Name the sound that is left when nobody talks, the one that belongs to that place and hour. The book already leans on things that tick; pick another.",
-   "before": "", "after": ""}
+   "before": "",
+   "after": ""
+  }
  ],
  "He knew / didn't know": [
-  {"id": "knew.head-voice", "name": "Put it in his own head-voice", "cap": 8,
+  {
+   "id": "knew.head-voice",
+   "name": "Put it in his own head-voice",
+   "cap": 8,
    "how": "Say the thought the way he would think it, with no \"He knew\" in front.",
    "before": "Elijah didn't know what one of those was worth. He knew it was more than he had.",
-   "after": "Whatever one of those was worth, it was more than he had."},
-  {"id": "knew.fold", "name": "Fold two sentences into one", "cap": 6,
+   "after": "Whatever one of those was worth, it was more than he had."
+  },
+  {
+   "id": "knew.fold",
+   "name": "Fold two sentences into one",
+   "cap": 6,
    "how": "For a didn't-know then knew pair: one sentence, joined with \"only that\" or \"but\".",
    "before": "Elijah didn't know what one of those was worth. He knew it was more than he had.",
-   "after": "Elijah didn't know what one of those was worth, only that it was more than he had."},
-  {"id": "knew.flat", "name": "State the fact flat", "cap": 8,
+   "after": "Elijah didn't know what one of those was worth, only that it was more than he had."
+  },
+  {
+   "id": "knew.flat",
+   "name": "State the fact flat",
+   "cap": 8,
    "how": "Drop \"He knew\" and say the thing. The book sits on his shoulder, so a flat fact is already his.",
-   "before": "", "after": ""},
-  {"id": "knew.thought", "name": "\"he thought\" or \"he figured\"", "cap": 5,
+   "before": "",
+   "after": ""
+  },
+  {
+   "id": "knew.thought",
+   "name": "\"he thought\" or \"he figured\"",
+   "cap": 5,
    "how": "The guide: \"He thought\" and \"he felt\" are CT's and are allowed. Use them when it is a guess, not a fact.",
-   "before": "", "after": ""}
+   "before": "",
+   "after": ""
+  }
  ],
  "Then he/she": [
-  {"id": "then.and", "name": "Join it with \"and\"", "cap": 8,
+  {
+   "id": "then.and",
+   "name": "Join it with \"and\"",
+   "cap": 8,
    "how": "Two steps by one person become one sentence.",
-   "before": "", "after": ""},
-  {"id": "then.cut", "name": "Cut \"Then\"", "cap": 8,
+   "before": "",
+   "after": ""
+  },
+  {
+   "id": "then.cut",
+   "name": "Cut \"Then\"",
+   "cap": 8,
    "how": "When the order is already plain, start with the person or the thing.",
-   "before": "", "after": ""},
-  {"id": "then.thing-first", "name": "Start with the thing", "cap": 6,
+   "before": "",
+   "after": ""
+  },
+  {
+   "id": "then.thing-first",
+   "name": "Start with the thing",
+   "cap": 6,
    "how": "Open on what the sentence is about: the object, the place, the line of talk (guide, section 10).",
-   "before": "", "after": ""},
-  {"id": "then.time", "name": "Say how long", "cap": 4,
-   "how": "\"A minute later\", \"By the time the coffee was done\". Only where the gap matters, and not with a day name.",
-   "before": "", "after": ""}
+   "before": "",
+   "after": ""
+  }
  ],
  "not X. It's Y": [
-  {"id": "mirror.only-y", "name": "Say only the Y", "cap": 12,
+  {
+   "id": "mirror.only-y",
+   "name": "Say only the Y",
+   "cap": 12,
    "how": "The guide keeps the mirrored contrast out of Claude's wording. Drop the X and say what the thing is.",
    "before": "It wasn't a salary. It was an insurance policy, something to stand on if the floor went out.",
-   "after": "The two spares would be his insurance policy, something to stand on if the floor went out."},
-  {"id": "mirror.mouth", "name": "Give the X to a person", "cap": 5,
+   "after": "The two spares would be his insurance policy, something to stand on if the floor went out."
+  },
+  {
+   "id": "mirror.mouth",
+   "name": "Give the X to a person",
+   "cap": 5,
    "how": "If the X is worth keeping, let somebody say it or assume it out loud, and let the narration give the Y.",
-   "before": "", "after": ""},
-  {"id": "mirror.more-than", "name": "One sentence with \"more ... than\"", "cap": 5,
+   "before": "",
+   "after": ""
+  },
+  {
+   "id": "mirror.more-than",
+   "name": "One sentence with \"more ... than\"",
+   "cap": 5,
    "how": "\"It was more an insurance policy than a salary.\" One sentence, no bounce.",
-   "before": "", "after": ""}
+   "before": "",
+   "after": ""
+  }
  ],
  "nodded / shrugged": [
-  {"id": "nod.say-it", "name": "Let them say it", "cap": 8,
+  {
+   "id": "nod.say-it",
+   "name": "Let them say it",
+   "cap": 8,
    "how": "A nod is a yes and a shrug is a don't-know. Give the word or two the person would say.",
-   "before": "", "after": ""},
-  {"id": "nod.other-body", "name": "Another part of the body", "cap": 6,
+   "before": "",
+   "after": ""
+  },
+  {
+   "id": "nod.other-body",
+   "name": "Another part of the body",
+   "cap": 6,
    "how": "CT: \"Simple physical actions that make sense and add character.\" A hand, a chin, a boot, the thing they are holding. Check the next few lines do not already have the same beat.",
-   "before": "", "after": ""},
-  {"id": "nod.cut", "name": "Cut it", "cap": 8,
+   "before": "",
+   "after": ""
+  },
+  {
+   "id": "nod.cut",
+   "name": "Cut it",
+   "cap": 8,
    "how": "When the line of talk already answers, the nod is extra.",
-   "before": "", "after": ""},
-  {"id": "nod.compare", "name": "Keep the nod, add what it is like", "cap": 4,
+   "before": "",
+   "after": ""
+  },
+  {
+   "id": "nod.compare",
+   "name": "Keep the nod, add what it is like",
+   "cap": 4,
    "how": "The book's own good one: \"Gus nodded like they were neighbors.\" Only when the comparison tells you something about the person.",
-   "before": "", "after": ""}
+   "before": "",
+   "after": ""
+  }
  ]
 }

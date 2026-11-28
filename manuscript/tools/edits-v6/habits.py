@@ -49,7 +49,10 @@ LEDGER_HEAD = ["Row", "Chapter", "Habit", "Move", "Before", "After", "Status", "
 FIRST_CHAPTER = 11
 
 TICS = OrderedDict([
-    ("the way ...", r"\bthe way (you|a|an|he|she|they|it|other|people|men)\b"),
+    # Widened 27 Nov (seventeenth chat): story_report.py's pattern caught only "the way" + a pronoun or article, and
+    # missed 21 comparisons from Chapter 11 on ("the way Elijah's mother looked at a pie", "the way his mother would
+    # have"). Every "the way" now counts unless way_is_comparison() says it is a road or a plain noun.
+    ("the way ...", r"\bthe way\b"),
     ("He knew / didn't know", r"\b(He|She|Elijah) (knew|didn't know)\b"),
     ("Then he/she", r"(^|[.!?\"] )Then (he|she)\b"),
     ("not X. It's Y", r"\b(isn't|wasn't|not) [^.?!\"]{2,60}[.,] (It's|It was|That's|That was|This is)\b"),
@@ -99,6 +102,26 @@ def scenes(path):
     return out
 
 
+WAY_ROAD_BEFORE = re.compile(r"(\ball|\bon|\bby|\bout of|\balong|\bhalf|\bpart of|\bmost of|\blead|\bled|\bleads|\bleading|"
+                             r"\bmake|\bmade|\bfind|\bfound|\bshow|\bshowed|\bshown|\blost|\bpaid|\bpave|\bpaved|\bclear|"
+                             r"\bcleared|\bknow|\bknew|\bpoint|\bpointed|\bgive|\bgave|\bblock|\bblocked|\bget in|\bgot in|"
+                             r"\bfeel|\bfelt|\bwork|\bworked|\bworking) the way\s*$", re.I)
+WAY_NOUN_BEFORE = re.compile(r"\b(hated|hate|hates|liked|likes|love|loved|loves|about|change|changed|changes|from|back|not|"
+                             r"world's|that's|there's) the way\s*$", re.I)
+WAY_ROAD_AFTER = re.compile(r"^the way (to|out|home|back|up|down|in|into|through|over|across|there|here|north|south|east|"
+                            r"west|of|was|is|forward|for|from)\b", re.I)
+WAY_NOUN_AFTER = re.compile(r"^the way (it was|it is|you're|he gave it)\b", re.I)
+
+
+def way_is_comparison(p, start):
+    """True for "the way" used to compare ("the way she looked over a melon"); False for the road ("all the way",
+    "on the way to", "by the way") and for the plain noun ("He hated the way it talked", "back the way it was")."""
+    pre = p[max(0, start - 24):start] + "the way"
+    post = p[start:start + 40]
+    return not (WAY_ROAD_BEFORE.search(pre) or WAY_NOUN_BEFORE.search(pre) or WAY_ROAD_AFTER.match(post)
+                or WAY_NOUN_AFTER.match(post))
+
+
 def sentence(p, a, b):
     s = max(p.rfind(". ", 0, a), p.rfind("? ", 0, a), p.rfind("! ", 0, a), p.rfind('" ', 0, a))
     s = 0 if s < 0 else s + 2
@@ -115,6 +138,8 @@ def find(book):
         for line, p in paras:
             for tic, rx in TICS.items():
                 for m in re.finditer(rx, p):
+                    if tic == "the way ..." and not way_is_comparison(p, m.start()):
+                        continue
                     a = m.start() + (len(m.group(1)) if tic == "Then he/she" and m.group(1) else 0)
                     sent = sentence(p, a, m.end())
                     rows.append({"chapter": label, "num": num, "scene": sno, "line": line, "habit": tic,

@@ -1,6 +1,6 @@
 # Smell table, 27 Nov 2026 (the smell pass)
 
-**Since 27 Nov (sixteenth chat) the senses sheet is the place to look:** `senses-2026-11-27.csv` and the "Senses" tab of the story checks workbook (all five senses, every scene, at edit 292). CT ruled on the open rows on 27 Nov (sixteenth chat; `senses-2026-11-27.md`, "The seven calls"). Praether's barn is his edit 348 (28 Nov). One is still his: the coats (Ch 27).
+**Since 27 Nov (sixteenth chat) the senses sheet is the place to look:** `senses-2026-11-27.csv` and the "Senses" tab of the story checks workbook (all five senses, every scene, at edit 292). CT ruled on the open rows on 27 Nov (sixteenth chat; `senses-2026-11-27.md`, "The seven calls"). Praether's barn is his edit 348 (28 Nov). The coats (Ch 27): CT, 28 Nov, leave it. Nothing in this table is open.
 
 Every smell on the page in the built book (edits 1 to 234), plus CT's two places and the two places where a smell
 could start a memory someone shares. Quotes are from `OUT/v6.txt`. "Whose words" is traced through the v5 Doc,
@@ -23,7 +23,7 @@ here is logged or in either Doc. The last column is CT's.
 | 21 | The cooked plugs | None ("the color of wet newspaper") | | Closes the heat thread on the page if a smell goes in. Optional | Leave (CT, 27 Nov (sixteenth chat): "Go with your leans on all seven") |
 | 24 | The first fire in the shouse | None | | Memory spot: Grace at the door, fifteen feet from the stove, then the gate story. Woodsmoke reaching her could be what starts it. One line | Leave (CT, 27 Nov (sixteenth chat): "Go with your leans on all seven") |
 | 26 | Priya's two pits | "Pit and squeeze and smell" (the rule; neither pit has a smell) | Older text | Her trust in her nose over his dashboard. Optional | Leave, no smell from CT (CT, 27 Nov (sixteenth chat): "Go with your leans on all seven") |
-| 27 | Grace's room, Thanksgiving | "Their coats had soaked up the kitchen all afternoon, sage and turkey fat, and the little room filled with it the minute the door shut." | Claude's (edit 206) | Memory spot: Ma's kitchen counter (Ch 13); he writes Ma that night. The sharing is not on the page | Edit 293: "Rosa's cooking" (CT's words); "the heavenly scent" left out. **Still open:** whether Elijah tells Grace what the coats bring back (new material) |
+| 27 | Grace's room, Thanksgiving | "Their coats had soaked up the kitchen all afternoon, sage and turkey fat, and the little room filled with it the minute the door shut." | Claude's (edit 206) | Memory spot: Ma's kitchen counter (Ch 13); he writes Ma that night. The sharing is not on the page | Edit 293: "Rosa's cooking" (CT's words); "the heavenly scent" left out. Whether Elijah tells Grace what the coats bring back: **CT, 28 Nov: no, leave it** (the letter to Ma that night carries it) |
 | 28 | Down the ridge | "the soup came up to meet them, onions and bacon fat riding the wind out of the kitchen trailer" | Claude's (edit 207) | Grace's soup reaches them before she does | |
 | 30 | The county chambers | "The county chambers smelled like wet coats and floor wax." | Older text | Setting | |
 | 31 | The seed house | "The seed house was warm and smelled like wet soil." | Older text | Setting before the tea | |

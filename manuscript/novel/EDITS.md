@@ -4629,6 +4629,17 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      some weeks he turned back a page to see if she'd been. Some weeks he signed right under her." becomes "Elijah came
      on Wednesdays, and some weeks he turned back a page to see if Melody had been. Some weeks he signed right under her
      name." Claude's fix, on CT's "use your fix on 14". CT's base text otherwise. Logged only.
+365. **Chapter 21: the arms are not named in the shouse scene.** One of Claude's two lines in edit 296 that were flagged
+     for saying too much and never ruled on (CT's sketch had only "ideas start forming in his mind"). Put to CT on 28 Nov
+     with Claude's lean; CT: "Yes, I agree with all of them. Good choices." Out, a paragraph of its own between Marta's
+     "She's the reason there's a drawing" and "Lou had come up from the beds to fill his water jug.": "Two orange robot
+     arms were sitting in crates in Richard Praether's pole barn, doing nothing. An idea had started up in Elijah, and he
+     let it run." Lou reads his face and asks; "good, bad ideas" stays a guess the reader can make (the arms are at
+     Praether's since Chapters 17 and 18). 27 words out. Logged only.
+     **Ruled on the same day and left as they are (CT, 28 Nov):** the other flagged line in edit 296, "Nobody had ever
+     told him you were allowed to put them together." (kept: it says what he is seeing in the rafters); and the last
+     smell call, the Thanksgiving coats (Ch 27): Elijah does not tell Grace what they bring back; the letter to Ma that
+     night carries it.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

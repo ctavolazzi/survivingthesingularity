@@ -391,4 +391,5 @@ C=[
 (362, 'Ch 36', ['He told Grace on the Monday of festival week, in the packing shed, a little before midnight.'], ['the Wednesday of festival week']),
 (363, 'Ch 37', ["Out of his back pocket came a bank card, and he held it out.", "It's your money, Elijah.", "I was concerned that you were going to continue to be stupid.", "It said ELIJAH G. MADRONE.", "There's forty-eight hundred dollars in there.", "selling those arms before they lose too much more value", "Lou slid the key into his shirt pocket and buttoned the pocket over it. \"I'll keep the stove going,\" he said."], ['Lou let go. He slid the key']),
 (364, 'Epilogue', ["Elijah came on Wednesdays, and some weeks he turned back a page to see if Melody had been. Some weeks he signed right under her name. He didn't call."], ["to see if she'd been", "signed right under her."]),
+(365, 'Ch 21', ['"She\'s the reason there\'s a drawing," Marta said.\nLou had come up from the beds to fill his water jug.', "Nobody had ever told him you were allowed to put them together."], ["An idea had started up in Elijah, and he let it run."]),
 ]

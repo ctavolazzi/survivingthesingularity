@@ -556,8 +556,8 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   the reader why a hand moves. Two different wordings landing on the same new phrase in two chapters ("same as she did
   whenever") is caught only by reading the changes together; do that before logging.
 - **In a scene that plants a secret, do not name the secret in the narration unless he asks.** Claude's shouse scene
-  (edit 296) names the arms before "good, bad ideas"; his sketch had only "ideas start forming in his mind". Flagged to
-  him, not ruled on. **[C]**
+  (edit 296) names the arms before "good, bad ideas"; his sketch had only "ideas start forming in his mind". CT, 28 Nov:
+  cut (edit 365); Lou reading his face does the work. The line that says what he is seeing in the rafters stayed.
 
 ## 15g. Learned 28 November (the final pass)
 

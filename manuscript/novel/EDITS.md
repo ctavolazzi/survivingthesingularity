@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edit 323 (28 Nov, CT's "Folks"), logged only. The next edit is 324.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 and 324 (28 Nov, CT's "Folks" and who asks Gus), logged only. The next edit is 325.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4312,6 +4312,22 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      and `epub.css`; the Word build already indented it). Checked by a test build: page 42's "Later that night" is
      indented and every PDF check passes. CT: "log these edits, and then I'll let you know when we're ready to produce a
      new PDF." Both this and edit 323 wait for that build.
+
+324. **Chapter 11: who asks what Gus does with his money.** CT, 28 Nov, reading the habits-pass PDF: "Here it's not clear
+     who's speaking". His lines, with his correction while dictating kept ("Gus laughed so loud it startled Elijah. Gus
+     laughed so loud Elijah was startled. That's better."), and "And then go into the rest of it.":
+
+     > "So what do you do with it?" Elijah asked.
+     > "Do with what?" Gus replied, focused on the road.
+     > "Your money."
+     > Gus laughed so loud Elijah was startled. "Boy, you really aren't from around here, are you?" he said, smiling from
+     > ear to ear. "I've got a museum. An old Elks lodge, ..."
+
+     CT's words. Claude's only choices: his "Gus replied. Focused on the road." and "He said. Smiling from ear to ear." are
+     joined with commas (dictation breaks); and Gus's museum speech, which followed as its own paragraph, now continues
+     in his paragraph, so the reader knows it is still Gus. "He was grinning again" a few lines on now picks up "smiling
+     from ear to ear". Searched: "laughed so loud", "ear to ear", "from around here", "focused on the road" are nowhere
+     else. Logged only; waits for CT's next PDF.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

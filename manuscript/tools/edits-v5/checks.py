@@ -339,4 +339,5 @@ C=[
 (321, 'Ch 38', ['Grace looked down the table at her, like she always did when she needed a yes.', 'Tyler held her eyes.', 'buying a used truck. Not loud. Just how he used to on the porch, and for once there was nobody'], ['her, the way she always had when she needed a yes.', 'held her eyes for a while', 'Just the way he used to on the porch']),
 (322, 'Ch 39', ['the towel over his shoulder and looked at him like he had when they were eight and Elijah was'], ['looked at him the way he had when']),
 (323, 'Ch 0', ['was already a rigged carnival game. Folks with no margin, no cushion, no lobbyist,'], ['carnival game. People with no margin']),
+(324, 'Ch 11', ['"So what do you do with it?" Elijah asked.\n"Do with what?" Gus replied, focused on the road.\n"Your money."', 'Gus laughed so loud Elijah was startled.', '"Boy, you really aren\'t from around here, are you?" he said, smiling from ear to ear. "I\'ve got a museum.', 'smiling from ear to ear. "I\'ve got a museum. An old Elks lodge'], []),
 ]

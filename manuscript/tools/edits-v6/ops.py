@@ -1765,6 +1765,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (322, 'looked at him the way he had when', 'looked at him like he had when'),
 # 323, Ch 0: "Folks with no margin" (CT, 28 Nov, reading the habits-pass PDF)
 (323, "rigged carnival game. People with no margin,", "rigged carnival game. Folks with no margin,"),
+# 324, Ch 11: who asks what Gus does with it (CT's words, 28 Nov)
+(324, '"So what do you do with it?"\n"I\'ve got a museum.', '"So what do you do with it?" Elijah asked.\n"Do with what?" Gus replied, focused on the road.\n"Your money."\nGus laughed so loud Elijah was startled. "Boy, you really aren\'t from around here, are you?" he said, smiling from ear to ear. "I\'ve got a museum.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

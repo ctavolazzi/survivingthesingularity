@@ -4604,6 +4604,31 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      four" (28 Nov); the sentence was Claude's (edit 215). Nothing else in the chapter names the day; the fire is still
      the last night of the festival. The calendar's row for the scene moved to Monday 25 October 2027 and its check now
      holds; the scene sheet's row 119 says Monday. Check row 227 narrowed. Logged only.
+363. **Chapter 37: Lou's card.** Audit item 17 (no income is named for Elijah on the farm). CT, 28 Nov: "at the very end,
+     let's have Lou give him some money that he's been setting aside just in case", with the lines; shown first, logged
+     on his "Log Lou's card". It goes in the goodbye (edit 359), after "When Elijah could stand on his own, Lou let go."
+     and before Lou pockets the key. 194 words in. **CT's lines:** "No, Lou. I can't take your money."; "It's your
+     money, Elijah."; "What do you mean?"; "Well, when you didn't cash your paychecks for a long time, I was concerned
+     that you were going to continue to be stupid. And unfortunately it looks like I've been right."; "Oh, come on, Lou.
+     Really? Right now?"; "I don't mean about your emotions, Elijah. I mean about your finances. So I took a few hundred
+     out of every paycheck you were supposed to get and put it in an account."; "There's [the amount] in there. That
+     ought to get you through at least a little while. And I would recommend selling those arms before they lose too
+     much more value. The new models are pretty cheap, so you're going to want to find a buyer before too long."; and
+     the card with Elijah's name on it. **Claude's words and invented facts, each told to him:** "Out of his back pocket
+     came a bank card, and he held it out."; "Lou turned the card so the name faced up. It said ELIJAH G. MADRONE." (the
+     Appendix has Elijah Gaelen Madrone); "Reuben set it up off the forms you filled out for the checks. It's a payroll
+     card. He says it's legal, and he made me read the pamphlet." (CT: "how did he open an account in his name? That's a
+     mystery for you to solve. There's got to be, like, a legal way to do that"; an employer can issue a payroll card in
+     a worker's name from his tax forms); "Elijah took it."; "forty-eight hundred dollars" (CT: "you can run the math";
+     three hundred a month for the sixteen months of checks Chapter 39 counts; the book never states his pay). The
+     closing tag is now "Lou slid the key". Not added: a scene where he starts cashing checks, because the book has it
+     (Ch 27: the checks go uncashed in the notebook; Ch 39: "For this he cashed the newest one."). Told to CT and left:
+     in Chapter 39 he still cashes a co-op check for the print shop. Logged only.
+364. **Epilogue: who signs under whom.** Audit item 14. CT, 28 Nov: "Are we talking about Elijah signing, or are we
+     talking about David signing? ... You get a little loose with your pronouns sometimes." "He came on Wednesdays, and
+     some weeks he turned back a page to see if she'd been. Some weeks he signed right under her." becomes "Elijah came
+     on Wednesdays, and some weeks he turned back a page to see if Melody had been. Some weeks he signed right under her
+     name." Claude's fix, on CT's "use your fix on 14". CT's base text otherwise. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

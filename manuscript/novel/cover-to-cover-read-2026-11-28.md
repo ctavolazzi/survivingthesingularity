@@ -76,10 +76,10 @@ Wednesday 26 Feb, eleven days to Sunday 9 March, the arms on Wednesday 12 March)
 
 Still on the page, for CT:
 - 1 (partly). Ruby, February 2024: "there's four thousand of them ... maybe it's eight thousand" (line 677), still
-  October's first-week count after fifty million views.
-- 2. Chat Horizon "for free" (105) and "twenty dollars a month" (154), with no paid tier between.
+  October's first-week count after fifty million views. **CT, 28 Nov: leave.**
+- 2. Chat Horizon "for free" (105) and "twenty dollars a month" (154), with no paid tier between. **CT, 28 Nov: leave.**
 - 3. "SURVIVING THE FINAL TURNING ... the last two words ... belonged to Nate's paperback" (796); the paperback's word
-  is only "turning" (170).
+  is only "turning" (170). **CT, 28 Nov: leave.**
 - 5 (partly). Oakland and Fremont now agree. But six arms are loaded (924) and "all six" are lit at the launch (1018),
   and later "The two spare arms were still sitting on the cannery dock in their crates, never unpacked" (1309).
 - 7. "Half the table thinks you're right" (1360) against the April email's "Everyone here at the farm agrees" (1477)

@@ -196,6 +196,7 @@ Not boxes, so `build_gate.py` can say READY when the real work is done:
   the book prints no pictures). Rows include 5, 7, 9, 16, 19, 50, 55, 60, 61, 62, 68, 75, 79, 82, 91, 101, 104, 135.
   Recount when the sheet is next regenerated; no story fact depends on it.
 
+- [ ] **The final pass before pre-release (CT, 28 Nov):** after the habits pass and its PDF, paste the prompt in `FINAL-PASS-PROMPT.md` into a new chat. It covers the repeated phrases, the taste pass, the open smell calls, the building code fact check, a cover-to-cover read, the scene sheet audit, the PDF, Drive sync and a release check.
 - [ ] **The habits pass, Chapter 11 to the Epilogue (CT, 27 Nov):** 150 lines in 66 pile-ups of the eight counted habits. The toolbox is built (`manuscript/tools/edits-v6/habits.py`, `habits-moves.json`, `habits-ledger.csv`); **the first batch has not been run** (CT: a different model runs it). Chapter 11 was a trial and nothing from it is logged. Start from `HABITS-PASS.md`.
 - [ ] **Drive is behind the repo (27 Nov, seventeenth chat):** remake "StS edit list (mirror of GitHub)" at edit 299 and bring the Google Sheet's scene tab and story-check tabs to edit 299 (new scene row 130, rows 55, 62, 84, 85 and 115 changed; plants, calendar, senses and desires regenerated here).
 - [ ] **Fact check for edit 296:** Priya's lines about the county building code (a shop and a house under one roof; one inspector for each).

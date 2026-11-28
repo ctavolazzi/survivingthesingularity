@@ -483,7 +483,7 @@ def style_docx(path, author):
 
     st("Normal")
     st("Body Text", indent=0.3)
-    st("First Paragraph", indent=0)
+    st("First Paragraph", indent=0.3)  # CT, 28 Nov (V9 read): the first paragraph of a chapter is indented like the rest
     st("Compact", indent=0)
     st("Heading 1", size=18, bold=True, italic=False, align=AL.CENTER, before=72, after=36,
        page_break=True, keep=True)

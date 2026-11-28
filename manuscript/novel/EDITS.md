@@ -4641,6 +4641,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      smell call, the Thanksgiving coats (Ch 27): Elijah does not tell Grace what they bring back; the letter to Ma that
      night carries it.
 
+     Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
+     page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
+     paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in
+     `publication/novel/build/css/common.css` and `epub.css`; "First Paragraph" in the Word build). Now it is indented like
+     every other paragraph. Checked by a test build: page 11's "The night Elijah Madrone ended three careers" is indented
+     and every PDF check passes. In the next PDF.
+
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware
 the military!" stays, with "They never built one thing in their lives ... they come around with a check. Somebody

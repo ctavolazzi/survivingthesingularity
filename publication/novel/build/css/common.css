@@ -5,7 +5,7 @@
 html { font-family: "Book Serif", serif; font-size: {{SIZE}}; line-height: {{LEAD}}; }
 body { margin: 0; }
 p { margin: 0; text-indent: 1.4em; text-align: {{ALIGN}}; hyphens: {{HYPHENS}}; orphans: 2; widows: 2; }
-h1 + p, h2 + p, .art + p { text-indent: 0; }  /* CT, 28 Nov: the paragraph after a scene break keeps its indent ("after the dots, the next paragraph doesn't have a tab") */
+.art + p { text-indent: 0; }  /* CT, 28 Nov (V9 read): the first paragraph of a chapter is indented like the rest (was "h1 + p, h2 + p, .art + p") */ /* CT, 28 Nov: the paragraph after a scene break keeps its indent ("after the dots, the next paragraph doesn't have a tab") */
 strong { font-weight: 600; }
 
 h1 { font-size: 1.45em; line-height: 1.25; font-weight: 600; text-align: center; hyphens: none;

@@ -597,6 +597,11 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   something by a family member and having it follow you your whole life, to the point where, even though it was never
   true, making it UNtrue becomes part of your personality." A reflection can overcorrect (15c); a line that explains the
   intensity of a moment stays (15f). Say the human thing plainly, and let the storyteller turn to the reader.
+- **What he praised, so it is not "fixed" (CT, 28 Nov, reading V9, Ch 13):** "He didn't answer any of it. He put his
+  phone away and went for a walk to go buy cigarettes." CT: "I love that he goes on a walk to go buy cigarettes. That's
+  such a fantastic way of showing his mood without telling his mood. This is such fantastic writing right here. This is
+  good imagery." A small ordinary action that carries the mood is the target. When a pass for pronoun openers reaches a
+  line like this, leave the whole beat alone, the "He" openers included.
 - A table row for section 16: Claude wrote "Lou noticed." and a run of "He" openers | "Of course Lou noticed. It just
   happened." "You're still repeating the he pattern" | the noticing cut; openers counted before showing.
 

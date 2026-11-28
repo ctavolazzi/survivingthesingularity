@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 to 326 (28 Nov, CT's fixes from reading the PDF), logged only. The next edit is 327.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 to 327 (28 Nov, CT's fixes from reading the PDF), logged only. The next edit is 328.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4385,6 +4385,43 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      stop shower runs on a timer). Searched: "bleach", "somebody else's soap", "as hot as it would go", "around the drain",
      "time was up", "best thing that had happened" are nowhere else; "went looking for" and "let it run" were avoided.
      Logged only; waits for CT's next PDF.
+
+     Corrected in place, 28 Nov (same chat), on CT's beats. CT: "He should just reflect in that shower about all of this
+     stuff, and it's foreshadowing for, good Lord, what's to come ... He lost his opportunities, and he feels defeated,
+     and his friends are kind of giving him the cold shoulder ... he should think to himself, am I depressed? He wouldn't
+     exactly call it that, maybe. Or at least David might not. David, he'll think to himself, oh man, I could use a beer.
+     Just as he thinks that, the shower snaps off. He was only half done because he was lost in thought. He's still got
+     shampoo in his hair. So he has to fork over another $17 in an already dwindling supply of money. And he just sighs.
+     He's like, God damn it. So like now we're demonstrating a little more of his mental state rather than just
+     declaratively stating it." The first two paragraphs (the room, the water) stand. The last two ("Last fall a senator's
+     office ..." through "He stood there one more second anyway.") are replaced by four:
+
+     > He stood under it and took stock. Last fall a senator's office had been calling him back. Those calls had stopped. Now he was bolting robot arms to a floor for what the guy on the dock called a picture. His friends had gone a little cold on him, and he couldn't blame them. He felt defeated. Go be useful, baby, his mother had said, and here he was, paying seventeen dollars to stand under a pipe at a truck stop. It was the best thing that had happened to him all summer.
+     >
+     > Am I depressed? He wouldn't have called it that, exactly. David might have. David had asked him back in January whether he'd talked to a professional, and Elijah had not taken it well. Man, I could use a beer.
+     >
+     > Just as he thought it, the water snapped off. His time was up. He had been so lost in thought that he was only half done, and there was still shampoo in his hair.
+     >
+     > He sighed. "God damn it," he said. Rinsing cost him another seventeen dollars, out of money that was already running low.
+
+     "Am I depressed?" and "Man, I could use a beer." are in italics (his thoughts; CT asked for italics on "Figures", edit
+     327, and these match it). **CT's words and beats;** Claude's wording between them. One change from his sketch, for
+     the page: he said David "might not" call it that, but in Chapter 7 David is the one who asks "Have you talked to,
+     like, a mental health professional lately?" (a Thursday in January), so here David "might have", and thinking of
+     David is what brings the beer. Out: the knock on the door, "He laughed a little". The punchline after it still
+     stands: "After that he discovered that Planet Fitness was only twenty-five dollars a month". Chapters 15 and 25 still
+     say a shower cost seventeen dollars, which is true each time. Searched: "took stock", "snapped off", "lost in
+     thought", "running low", "shampoo", "felt defeated" are nowhere else.
+
+327. **Chapter 12: "Figures" when he gets sick.** CT, 28 Nov: "when he gets sick, I feel like it should reflect his mood ...
+     it should state plainly that ... he felt like his illness was fitting, and that it reflected his mood, his this run
+     of L's that he's been taking ... He should just say figures to himself in italics. Figures on top of everything
+     else. I get sick down here." In the truck after the launch party, after "It had been a hundred and one in Stockton
+     that day, and he was cold.": "*Figures. On top of everything else, I get sick down here.* The sickness felt fitting to
+     him. It matched his mood, and the run of L's he'd been taking." Then "He lay across the bench seat ..." as before.
+     CT's words; the thought is in italics as he asked. His "rationale" for not leaning on help follows on the page
+     already (the four texts, Ruby, Gus, his mother, and edit 325). Note: Chapter 15 has "Figures, he thought. I hope they
+     have a good mechanic." in roman (his line, edit 188); left as it is. Logged only; waits for CT's next PDF.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

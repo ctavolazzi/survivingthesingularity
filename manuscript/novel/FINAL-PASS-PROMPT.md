@@ -12,12 +12,12 @@ This continues the work on my novel "Surviving the Singularity" toward pre-relea
 START
 - Repos: ctavolazzi/survivingthesingularity and ctavolazzi/_workbench. Work and push only on the branch claude/singularity-publication-build-kparqk in both. Never push to main, never open or watch a pull request.
 - Read, in this order: manuscript/novel/REFERENCE.md, TODO.md, the newest CHECKPOINT-*.md in manuscript/novel/, HABITS-PASS.md, WRITING-INSTRUCTIONS.md (all of it), EDIT-LOGGING-PROCEDURE.md.
-- Read the v5 Doc fresh with the Docs connector (id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA), save it as V5_READ.json, and build: python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx. Every check row must pass before you change anything. The next edit number is in TODO.md (327 when this was written).
+- Read the v5 Doc fresh with the Docs connector (id 1TyvxCS0y_FPXGllFo3vaO2AqyoCBrS-VWX9Aslmp0hA), save it as V5_READ.json, and build: python3 manuscript/tools/edits-v6/make_v6.py V5_READ.json OUT --no-docx. Every check row must pass before you change anything. The next edit number is in TODO.md (328 when this was written).
 - The Google Docs are not touched. Every change is logged in GitHub by the procedure: an EDITS.md entry, an ops row, a check row, and the scene sheet's word count.
 
 WHERE THINGS STAND (28 Nov)
 - I'm reading "StS v8 large print CURRENT (28 Nov, edits 1 to 322, the habits pass).pdf" in Drive, with the before-and-after list beside it.
-- Logged since, and not in any PDF yet: edits 323 to 326 (my fixes while reading: "Folks", who asks Gus, Elijah's state of mind in the truck, the shower), and a build fix so the paragraph after a scene break keeps its indent.
+- Logged since, and not in any PDF yet: edits 323 to 327 (my fixes while reading: "Folks", who asks Gus, Elijah's state of mind in the truck, the shower, "Figures"), and a build fix so the paragraph after a scene break keeps its indent.
 - Do not build a new PDF until I say so ("I'll let you know when we're ready to produce a new PDF").
 
 WHILE I READ

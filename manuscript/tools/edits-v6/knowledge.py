@@ -66,8 +66,8 @@ FACTS = [
         E("Table", "K", "I told our friend Elijah to keep the arms a secret."),
     ]),
     ("A4", "The arms", "Lou paid what Elijah owed on the storage unit", [
-        E("Elijah", "K", "He said he would cover what Elijah owed on the unit, and that it stayed between the two of them."),
-        E("Lou", "K", "He said he would cover what Elijah owed on the unit, and that it stayed between the two of them."),
+        E("Elijah", "K", "Lou said he would cover what Elijah owed on the unit, and that it stayed between the two of them."),
+        E("Lou", "K", "Lou said he would cover what Elijah owed on the unit, and that it stayed between the two of them."),
     ]),
     ("A5", "The arms", "Elijah tried to sell the arms and nobody would buy them", [
         E("Elijah", "K", "A week went by. No bids."),

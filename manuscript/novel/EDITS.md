@@ -4652,6 +4652,19 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      do when you witness something." becomes "He did what anyone might do when they witness something." CT's words. In
      the published sample. Logged only.
 
+368. **Chapter 11: how the car factory finds him.** CT, 28 Nov, reading V9 (page 168): "How do they get Elijah's contact
+     information? Called? Like they found his resume and called him from the number he had listed on it?" and "Why would
+     they do that? Give it a better reason and a better connector". Claude's first draft (the hay bale videos as the
+     reason) was wrong on the page and withdrawn: Trent wants the forecaster in the ads, and the launch party is full of
+     "people ... who had squeezed his arm in February", one of them the woman with the cooling company (Ch 8, the
+     coffee urn; Ch 12, the heart). CT: "Yeah the email makes sense." and "The woman yes." "Then some folks called about
+     a car factory." becomes "Then the woman with the cooling company passed his email to some folks with a car factory,
+     and they wrote." Claude's sentence, on CT's yes.
+     Context from CT, NOT for the page: "She had seen his videos and thought Gus might like the chance to connect with
+     Elijah. But that's backstory we can IMPLY not name explicitly. She thought her boss's boss might like the chance to
+     meet the AGI guy, as he was always going off about that kind of stuff." (On the page she is "a founder of something
+     to do with cooling", Ch 8, so no boss is named for her.) Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

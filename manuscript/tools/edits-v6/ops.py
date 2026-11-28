@@ -1870,6 +1870,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (366, "became the weather of his life. Weather that never really cleared up.", "became the weather of his life. Weather that seemed like it might never clear up."),
 # 367, Ch 0: "what anyone might do" (CT, 28 Nov, reading V9)
 (367, "He did what you do when you witness something.", "He did what anyone might do when they witness something."),
+# 368, Ch 11: how the car factory finds him (CT's ruling, 28 Nov, reading V9; Claude's sentence, shown first)
+(368, "Then some folks called about a car factory.", "Then the woman with the cooling company passed his email to some folks with a car factory, and they wrote."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

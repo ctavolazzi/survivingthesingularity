@@ -395,4 +395,5 @@ C=[
 (365, 'Ch 21', ['"She\'s the reason there\'s a drawing," Marta said.\nLou had come up from the beds to fill his water jug.', "Nobody had ever told him you were allowed to put them together."], ["An idea had started up in Elijah, and he let it run."]),
 (366, 'Ch 0', ['became the weather of his life. Weather that seemed like it might never clear up.'], ['Weather that never really cleared up.']),
 (367, 'Ch 0', ['He did what anyone might do when they witness something.\nHe told people.'], ['He did what you do when you witness']),
+(368, 'Ch 11', ['Then the woman with the cooling company passed his email to some folks with a car factory, and they wrote.\nThey were refitting an old tomato cannery'], ['Then some folks called about a car factory.']),
 ]

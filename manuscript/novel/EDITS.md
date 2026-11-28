@@ -4703,6 +4703,35 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      like that." The last sentence of the passage is now his two, word for word ("handouts" answers his father's "Never
      take a handout", Ch 0). 134 words in, 8 out.
 
+371. **Chapter 11: why he is broke, and the arguments at home.** CT, 28 Nov, reading V9: "In the $17 shower section,
+     it's not clear why he's broke ... didn't he save his money? We can just say, like, no, he really didn't save much
+     of his money. Like, he put some away, sure, for an emergency fund, but not enough. Like, we're all maybe a little
+     overly optimistic with our finances when we're crushing it. He had to cancel a bunch of subscriptions and turn off
+     a bunch of things and generally downsize to the point where he realized that if he didn't find another job, which
+     he really didn't want to, that he was going to have to move back home. And that, at this point, didn't really seem
+     like such a bad thing, right? Like, what's the worst that could happen? But ... we need to show that maybe ...
+     with just a couple sentences, gets in those kind of classic arguments you get with your parents when you're an
+     adult that moves back home." Placed in Chapter 11, where he gives up the apartment, so the reader knows before the
+     shower. Shown first; logged on his "Okay, update the edits".
+     (a) Before "He carried the amp down the stairs himself.":
+
+     > The truth was he really didn't save much of his money. He put some away, sure, for an emergency fund, but not
+     > enough. We're all maybe a little overly optimistic with our finances when we're crushing it. The savings were for
+     > emergencies, and at some point he noticed he was the emergency. He canceled a bunch of subscriptions and turned
+     > off a bunch of things and generally downsized, and it still came out the same: if he didn't find another job,
+     > which he really didn't want to do, he was going to have to move back home. By then that didn't really seem like
+     > such a bad thing. What's the worst that could happen?
+     >
+     > He let the apartment go in April. He carried the amp down the stairs himself.
+
+     CT's words throughout; Claude's joins: "The truth was", "and it still came out the same:", "do", "By then". The
+     book's "The savings were for emergencies ..." sentence is kept, after his emergency-fund line; "He let the
+     apartment go in April." moved to follow.
+     (b) Before "He was there a month before she looked at him over her glasses.": "They got along. They always had.
+     But he was a grown man back in his old bedroom, and inside a week they were having the arguments everybody has with
+     a parent at that age: how late he slept, the lights he left on, what time he came in." CT's beat; Claude's words,
+     and the three arguments are invented. Logged only.
+
      Build change, 28 Nov, reading V9 (not a numbered edit; the words of the book do not change): CT, with a screenshot of
      page 11: "I noticed a formatting error with the first paragraph where it doesn't have the indent." The first
      paragraph after a chapter or section heading was set flush left (`h1 + p, h2 + p` in

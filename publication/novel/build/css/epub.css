@@ -1,7 +1,7 @@
 /* Kindle / EPUB 3. Fonts are left to the reading device. */
 body { margin: 0 5%; line-height: 1.5; }
 p { margin: 0; text-indent: 1.4em; }
-h1 + p, h2 + p, .break + p, .art + p { text-indent: 0; }
+h1 + p, h2 + p, .art + p { text-indent: 0; }  /* CT, 28 Nov: the paragraph after a scene break keeps its indent ("after the dots, the next paragraph doesn't have a tab") */
 h1 { font-size: 1.4em; text-align: center; margin: 3em 0 2em; page-break-after: avoid; }
 h2 { font-size: 1.1em; margin: 1.6em 0 0.6em; page-break-after: avoid; }
 .break { margin: 1em 0; }

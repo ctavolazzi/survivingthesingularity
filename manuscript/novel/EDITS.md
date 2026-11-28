@@ -4514,6 +4514,14 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 350. **Chapter 10: the shrug is not a speech tag.** Item 4 of the same list. CT: "1 comma to a period. Yeah, okay".
      '"Suit yourself, man," Ruby shrugged again, the fur ...' becomes '"Suit yourself, man." Ruby shrugged again, the
      fur ...'. Every word is CT's (edit 288). Check row 288 narrowed. In the published sample. Logged only.
+351. **Chapter 5: the amp "like a monument".** Item 3 of the cover-to-cover list: "didn't plug anything into it again"
+     is not true (he plugs in again in Chapter 37). CT, 28 Nov: "No, it could be better. The line. He set the amp in the
+     corner of the living room like a monument. And considered never plugging in again. Considered what it would be like
+     to never plug in again. Something like that." The last version is the line. Book now: "He set the amp in the corner
+     of the living room and didn't plug anything into it again, as a monument, which was the point." Change to [CT's
+     words; the two dictated pieces joined with ", and"]: "He set the amp in the corner of the living room like a
+     monument, and considered what it would be like to never plug in again." ", which was the point" is not in his
+     version and is out. Check row 145 narrowed. In the published sample. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

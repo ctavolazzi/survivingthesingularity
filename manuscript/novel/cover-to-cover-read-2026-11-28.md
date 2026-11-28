@@ -28,7 +28,7 @@ where the reader had one; it is a suggestion only.
    PorusAI's machine while he works at Claypot, and "a lot faster" could belong to either verb. Already flagged and kept
    at edit 252. CT's dictation, Claude's wording. **CT, 28 Nov: leave.**
 3. **Ch 5, line 429, "didn't plug anything into it again, as a monument".** Flat about the future, and in Ch 37
-   (line 4082) he does plug into this amp. Likely the payoff on purpose. "Again" is Claude's word (edit 145).
+   (line 4082) he does plug into this amp. Likely the payoff on purpose. "Again" is Claude's word (edit 145). **CT, 28 Nov: his new line. Edit 351.**
 4. **Ch 10, line 864, '"Suit yourself, man," Ruby shrugged again,'.** A shrug used as a speech tag. Fix: '"Suit
    yourself, man." Ruby shrugged again,'. CT's words (edit 288). **CT, 28 Nov: change it. Edit 350.**
 

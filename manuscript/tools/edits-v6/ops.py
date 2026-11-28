@@ -1836,6 +1836,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (349, 'since high school. He drew, in the hours nobody paid for.', 'since high school. Elijah drew, in the hours nobody paid for.'),
 # 350, Ch 10: the shrug is not a speech tag (cover-to-cover item 4; CT, 28 Nov: "1 comma to a period. Yeah, okay")
 (350, '"Suit yourself, man," Ruby shrugged again, the fur', '"Suit yourself, man." Ruby shrugged again, the fur'),
+# 351, Ch 5: the amp "like a monument" (cover-to-cover item 3; CT's words, 28 Nov)
+(351, "He set the amp in the corner of the living room and didn't plug anything into it again, as a monument, which was the point.", "He set the amp in the corner of the living room like a monument, and considered what it would be like to never plug in again."),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

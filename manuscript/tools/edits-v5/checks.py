@@ -154,7 +154,8 @@ C=[
 (142,"Ch 1",["So it had a ceiling. Whoever could pay for the power and the cooling"],["The ceiling was a power bill."]),
 (143,"Ch 2 (italics; checked by make_v6.py)",["is this true\nElijah didn't answer."],[]),
 (144,"Ch 2",["so that later he could look back and see if he was right."],["couldn't pretend he hadn't seen it coming."]),
-(145,"Ch 5",["He plugged in and started to play, but a few bars in he noticed the time and stopped.","didn't plug anything into it again, as a monument","The call he was expecting never came."],["He never got around to the jam.","The call never came."]),
+# 145 narrowed at edit 351 (the monument line changed there)
+(145,"Ch 5",["He plugged in and started to play, but a few bars in he noticed the time and stopped.","The call he was expecting never came."],["He never got around to the jam.","The call never came."]),
 (146,"Ch 6",["\"Keep your head down and stay focused for me,\" she said.","He meant to. He wanted to. But life gets in the way sometimes."],["\"Head down,\" she said. \"For me.\"","He didn't put his head down. He didn't know how anymore."]),
 (147,"Ch 6",["For a year he had tried explaining it to each of them one at a time."],["For a year he had explained it to every one of them, one at a time."]),
 (148,"Ch 9",["Ruby walked through the swinging door, and it swung shut behind him, closing Elijah off from seeing what was going on. But from the hall, he could still hear."],["Ruby shouldered through the swinging door. It swung shut behind him."]),
@@ -373,4 +374,5 @@ C=[
 (348, 'Ch 17', ['the barn had kept its own air, cold gear oil and the mysterious musk of an unknown small mammal or twelve. One of the rust buckets'], ['cold gear oil and mouse.']),
 (349, 'Ch 0', ['since high school. Elijah drew, in the hours nobody paid for.'], ['since high school. He drew, in the hours']),
 (350, 'Ch 10', ['"Suit yourself, man." Ruby shrugged again, the fur'], ['"Suit yourself, man," Ruby shrugged again']),
+(351, 'Ch 5', ['He set the amp in the corner of the living room like a monument, and considered what it would be like to never plug in again.'], ["didn't plug anything into it again, as a monument"]),
 ]

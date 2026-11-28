@@ -1,9 +1,9 @@
 # Edits to the novel: status of every edit
 
-Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-27 from a read of the Doc "StS v8 draft (Nov 26)",
+Written by `manuscript/tools/edits-v5/verify.py` on 2026-11-28 from a read of the Doc "StS v8 draft (Nov 26)",
 revision `AHj4eMQYBUbqBXwgrYHlB1KJU4rSbmbr9UDvfsfFqGgT8tyjygTkdAzYBp-qmkvX61o3Ul9MHWp4Y7KaSjfZC_TFVexUVK00DFGYvZgIYCc`. 0 suggestions were waiting in the Doc at that read.
 
-Totals: accepted: 224, not in the Doc: 77.
+Totals: PARTIAL: 5, accepted: 220, not in the Doc: 98.
 
 The edits themselves, with CT's words, are in `EDITS.md`. Row 90 in `checks.py` is the
 follow-ups of 25 November (bill, rate hike, San Jose, notary); it is listed here as "follow-ups".
@@ -75,7 +75,7 @@ Edit 57 was never used.
 | 63 | Ch 10 | accepted | He didn't know why he listened to |
 | 64 | Ch 11 | accepted | The ones they offer you for nothing usually cost the most in the end. |
 | 65 | Ch 11 | accepted | Yeah, I figured," Gus said. "Thought I'd ask, though. |
-| 66 | Ch 11, 12, 15 | accepted | Ride down with the arms. Help the crew bolt them in for the launch. |
+| 66 | Ch 11, 12, 15 | PARTIAL | Ride down with the arms. Help the crew bolt them in for the launch. |
 | 67 | Ch 12 | accepted | He didn't want to be a bother. |
 | 68 | Ch 13 | accepted | He decided not to go to the hospital. He was tough. He could tough ... |
 | 69 | Ch 13 | accepted | When he woke up it was Monday. |
@@ -207,7 +207,7 @@ Edit 57 was never used.
 | 194 | Ch 20 | accepted | Then I found out a machine wrote it, and I felt like a fraud and li... |
 | 195 | Ch 20 | accepted | That was Wren. She led the Sunday circle and made the candles, and ... |
 | 196 | Ch 7 | accepted | Mr. Ostrander had taught him Spanish for three years |
-| 197 | Ch 0 to 39 | accepted | He'd underlined it twice and gone back to nodding. |
+| 197 | Ch 0 to 39 | PARTIAL | He'd underlined it twice and gone back to nodding. |
 | 198 | Ch 25, 26 | accepted | Behind him were a hundred, and a man who would fix it for nothing. |
 | 199 | Ch 19, 20 | accepted | Those boxes go out in May either way. |
 | 200 | Ch 21 | accepted | under a year and a half of everything else |
@@ -232,8 +232,8 @@ Edit 57 was never used.
 | 219 | Ch 11, 13, 15, 19 | accepted | by the next morning she had it out in the barn under a moving blanket |
 | 220 | Ch 18 (opening scene cut by 234; the Gulf lines moved to Ch 17) | accepted | (nothing left to check) |
 | 221 | Ch 34 | accepted | The afternoon before the October meeting, Priya took her sheet up t... |
-| 222 | Ch 0 to 36, Appendix | accepted | He had found his first limit. It was heat. |
-| 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | accepted | It won't start with the machines. First it takes the people who see... |
+| 222 | Ch 0 to 36, Appendix | PARTIAL | He had found his first limit. It was heat. |
+| 223 | Ch 1, 3, 5, 13, 18, 26, 37 to 39, Appendix | PARTIAL | It won't start with the machines. First it takes the people who see... |
 | 224 | Pondwater | not in the Doc | "Laser weeder," he said. "Watch." |
 | 225 | Ch 8, 9, 10 | not in the Doc | your video went parabolic. Fifty million views, |
 | 226 | Ch 26 | not in the Doc | Elijah didn't quite know why he didn't go for it right away. |
@@ -312,3 +312,25 @@ Edit 57 was never used.
 | 298 | Ch 27 | not in the Doc | A tribal housing authority that wanted the shouse drawings. A retir... |
 | 299 | Ch 27 | not in the Doc | The route lived on grants, and the last one would run out in June. |
 | 300 | Ch 35 | not in the Doc | Lou had started talking with his hands, getting steadily more anima... |
+| 301 | Ch 11 | not in the Doc | smiled, and the whole kitchen came up a notch, how it usually did. ... |
+| 302 | Ch 13 | not in the Doc | The last notice was taped to the front door. |
+| 303 | Ch 14 | not in the Doc | and his jacket over him. It was how he'd lain in the cannery lot, a... |
+| 304 | Ch 15 | not in the Doc | receipt and squared it in the visor, same as Ma would have. 5:30 up... |
+| 305 | Ch 16 | not in the Doc | Marta picked up a push broom that was leaning |
+| 306 | Ch 17 | PARTIAL | tarp and put back together right. She gave him another one. |
+| 307 | Ch 20 | not in the Doc | story in about three sentences, how you'd tell somebody your blood ... |
+| 308 | Ch 22 | not in the Doc | and that he had not gone down. The name might not mean anything to ... |
+| 309 | Ch 23 | not in the Doc | and no neighbors with opinions. There was one kind of tenant that n... |
+| 310 | Ch 25 | not in the Doc | Neither of them said anything. Then Elijah told him there was |
+| 311 | Ch 26 | not in the Doc | The opinions came in sideways, how they usually did up there, at th... |
+| 312 | Ch 27 | not in the Doc | filmed the whole shouse build, same as everything else by then, han... |
+| 313 | Ch 29 | not in the Doc | and turned it under the light. He set it on the far end of the benc... |
+| 314 | Ch 31 | not in the Doc | She kept looking at him. He watched her decide not to say |
+| 315 | Ch 32 | not in the Doc | carry one. Hector set hers inside the gate, like the list said, and... |
+| 316 | Ch 33 | not in the Doc | "Yeah. Me neither. I think about it a lot." |
+| 317 | Ch 34 | not in the Doc | Curtis turned to her with his eyebrows up, and Marta raised hers ri... |
+| 318 | Ch 35 | not in the Doc | Lou put his other hand on the other shoulder. He |
+| 319 | Ch 36 | not in the Doc | She had asked to. She laid it how she had laid the stove in March, ... |
+| 320 | Ch 37 | not in the Doc | Sunday, and Devendra had gone quiet on the line. |
+| 321 | Ch 38 | not in the Doc | Grace looked down the table at her, like she always did when she ne... |
+| 322 | Ch 39 | not in the Doc | the towel over his shoulder and looked at him like he had when they... |

@@ -1686,13 +1686,83 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (296, 'He read the next few to himself.\n\nThe last week of June the valley hit a hundred and four.', 'He read the next few to himself.\n\nThe drawing went up on the shed whiteboard in the middle of June, right beside Marta\'s three numbers. Elijah found it when he came in for the crimper. Two long boxes sat side by side, with the wall between them rubbed out. There was a bed and a stove at one end and a workbench at the other, and one word across the top.\n"What the fuck is a shouse?" he asked.\n"Shop. House," Marta said. "A shop that\'s set up to keep the person running it alive." She was at the vise with a file, and she didn\'t stop. "Two shipping containers. They come in August."\nElijah forgot about the crimper. A person could weld a bracket at that bench and sleep at the other end of the same room, with the stove going. He liked it a lot more than he had expected to like a drawing of two boxes.\n"Wait. No, this is really cool," he said. "How\'d you guys get the permits for this?"\n"That was me." Priya was down at the end of the bench with a stack of paper sample bags, writing the date on each one. "Reuben did the filing. I read the county building code."\n"All of it?"\n"All of it. It\'s a miserable read. There\'s a chapter for houses and a chapter for shops, and I couldn\'t find one line in either that says they can\'t share a roof."\nElijah had stopped looking at her. He was looking up into the rafters of the old packing shed like he had never been in the building before. Then it was the steel racked along the wall, and then the kitchen trailer, out the roll-up door. The machines were in here and supper was out there. Nobody had ever told him you were allowed to put them together.\n"It isn\'t against the law," Priya said, a little louder. "That\'s all I\'m saying. The county still sends one inspector for the house and another for the shop, and we have to pass both."\n"She\'s the reason there\'s a drawing," Marta said.\nTwo orange robot arms were sitting in crates in Richard Praether\'s pole barn, doing nothing. An idea had started up in Elijah, and he let it run.\nLou had come up from the beds to fill his water jug. He had been watching Elijah\'s face.\n"What wheels are turning in that brilliant mind of yours, professor?"\nElijah smirked. "Oh, I got some good, bad ideas," he said. "I got some really good, bad ideas."\nLou screwed the cap back on his jug and didn\'t ask him anything else.\nPriya stopped writing. "Did you mean to say good, bad?"\n"Oh, yeah."\n\nThe last week of June the valley hit a hundred and four.'),
 (296, '\n"What the fuck is a shouse?" he\'d asked, the first time he saw it on the whiteboard.\n"Shop. House," Marta said. "A shop that\'s set up to keep the person running it alive."\nHe had wanted to weld on it.', '\nHe had wanted to weld on it.'),
 # 297, Ch 24: a workbench in the shouse (Claude's line, on CT's yes to the six calls, 27 Nov, seventeenth chat)
-(297, 'had lived in bigger.\nThe stove went in last.', 'had lived in bigger.\nThe workbench went in along one wall and the bed at the far end, the way the drawing had it.\nThe stove went in last.'),
+(297, 'had lived in bigger.\nThe stove went in last.', 'had lived in bigger.\nThe workbench went in along one wall and the bed at the far end, where the drawing had them.\nThe stove went in last.'),
 # 298, Ch 27: one of the eleven towns asks for the shouse drawings by name (Claude's words, same yes)
 (298, 'A tribal housing authority.', 'A tribal housing authority that wanted the shouse drawings.'),
 # 299, Ch 27: the last grant would run out in June (it is October 2026 and the route is running; calendar check)
 (299, 'and the last one ran out in June.', 'and the last one would run out in June.'),
 # 300, Ch 35: Lou talks with his hands (CT's words, 27 Nov, seventeenth chat: "getting steadily more animated with each breath is better")
 (300, "Lou had started talking with his hands, which he only did when he meant it.", "Lou had started talking with his hands, getting steadily more animated with each breath."),
+# 301, Ch 11: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(301, 'came up a notch, the way it always had.', 'came up a notch, how it usually did.'),
+(301, ', the way she had every night', ". She'd done that every night"),
+(301, "Elijah didn't know what one of those was worth. He knew it was more than he had. It wasn't a salary. It was an insurance policy", "Elijah didn't know what one of those was worth, only that it was more than he had. The two spares would be his insurance policy"),
+(301, 'in pieces, the way you do in a cab.', 'in pieces. Cabs are good for that.'),
+# 302, Ch 13: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(302, "notice wasn't in the drawer. It was taped", 'notice was taped'),
+(302, "He didn't know how long. Long", 'Long'),
+# 303, Ch 14: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(303, "the way he'd lain", "how he'd lain"),
+(303, 'Then she was yelling again.', 'She was yelling again.'),
+# 304, Ch 15: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(304, 'the way Ma would have', 'same as Ma would have'),
+(304, "He didn't know what to do with that.", 'What was he supposed to do with that?'),
+(304, 'Elijah looked at it. "That\'s nice," he said.', '"That\'s nice," Elijah said.'),
+(304, 'The old man nodded, put it away', 'The old man squeaked it again, put it away'),
+(304, 'looked at Elijah for a while.', 'looked at Elijah.'),
+(304, 'He went through it for a long time', 'He kept at it'),
+(304, 'ran it the way he ran everything now', 'ran it how he ran everything now'),
+(304, 'Then she sent a voice note', "Grace's next message was a voice note"),
+# 305, Ch 16: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(305, 'Marta looked at him another second and picked up', 'Marta picked up'),
+(305, 'just held it, the way some people shake.', 'just held it, how some people shake hands.'),
+# 306, Ch 17: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(306, 'She looked at it and gave him another one.', 'She gave him another one.'),
+(306, 'Lou nodded. He said he would cover', 'Lou said he would cover'),
+# 307, Ch 20: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(307, "the way you'd tell somebody your blood type", "how you'd tell somebody your blood type"),
+# 308, Ch 22: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(308, "He didn't know if the name still meant anything to her.", 'The name might not mean anything to her anymore.'),
+# 309, Ch 23: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(309, 'He knew one kind of tenant that needed all three,', 'There was one kind of tenant that needed all three,'),
+# 310, Ch 25: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(310, 'Neither of them said anything for a while.', 'Neither of them said anything.'),
+# 311, Ch 26: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(311, 'The opinions came in the way they always came in up there, sideways,', 'The opinions came in sideways, how they usually did up there,'),
+(311, 'fence line, the way he had once a month', 'fence line, same as he had once a month'),
+(311, 'stared at them for a while.', 'stared at them.'),
+# 312, Ch 27: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(312, 'the way he documented everything by then', 'same as everything else by then'),
+# 313, Ch 29: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(313, 'Then he set it on the far end', 'He set it on the far end'),
+# 314, Ch 31: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(314, 'She looked at him for a long time.', 'She kept looking at him.'),
+# 315, Ch 32: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(315, 'the gate, the way the list said,', 'the gate, like the list said,'),
+(315, 'She said it gently, the way she said everything.', 'She said it gently.'),
+(315, 'Then he wrote a card', 'He wrote a card'),
+# 316, Ch 33: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(316, '"Yeah." She nodded. "Me neither.', '"Yeah. Me neither.'),
+(316, 'She looked at Grace, the way she did when', 'She looked at Grace, same as she did whenever'),
+(316, 'to the tomatoes, the way she said', 'to the tomatoes, how she said'),
+(316, 'He nodded for a long time.', 'He kept on nodding.'),
+(316, 'Curtis looked at him. Then he picked up the tomato', 'Curtis picked up the tomato'),
+# 317, Ch 34: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(317, 'Curtis turned and looked at her, and she looked back at him.', 'Curtis turned to her with his eyebrows up, and Marta raised hers right back.'),
+# 318, Ch 35: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(318, 'Then he put his other', 'Lou put his other'),
+# 319, Ch 36: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(319, 'laid it the way she had laid', 'laid it how she had laid'),
+(319, 'He knew what choosing', 'That was what choosing'),
+# 320, Ch 37: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(320, 'on the line for a long time', 'on the line'),
+(320, 'even, the way it got', 'even, how it got'),
+# 321, Ch 38: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(321, 'her, the way she always had when she needed a yes.', 'her, like she always did when she needed a yes.'),
+(321, 'held her eyes for a while', 'held her eyes'),
+(321, 'Just the way he used to on the porch', 'Just how he used to on the porch'),
+# 322, Ch 39: the habits pass (CT, 27 Nov, seventeenth chat; Claude's wording unless the entry says CT's; reviewed by CT in the PDF)
+(322, 'looked at him the way he had when', 'looked at him like he had when'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

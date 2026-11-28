@@ -1773,6 +1773,63 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (326, 'not the one in his pocket. After that he discovered', 'not the one in his pocket.\nThe shower was a tiled room with a drain in the middle of the floor and a fan in the ceiling that rattled like it had a moth in it. It smelled like bleach and somebody else\'s soap. He turned the handle as hot as it would go and stepped under it.\nThe water hit the back of his neck first, then found every place the cab had been leaning on him all week: the shoulder against the door, the hip, the crick that had moved into his lower back to stay. It ran gray off his feet and spun around the drain, and he watched it go.\nHe stood under it and took stock. Last fall a senator\'s office had been calling him back. Those calls had stopped. Now he was bolting robot arms to a floor for what the guy on the dock called a picture. His friends had gone a little cold on him, and he couldn\'t blame them. He felt defeated. Go be useful, baby, his mother had said, and here he was, paying seventeen dollars to stand under a pipe at a truck stop. It was the best thing that had happened to him all summer.\n*Am I depressed?* He wouldn\'t have called it that, exactly. David might have. David had asked him back in January whether he\'d talked to a professional, and Elijah had not taken it well. *Man, I could use a beer.*\nJust as he thought it, the water snapped off. His time was up. He had been so lost in thought that he was only half done, and there was still shampoo in his hair.\nHe sighed. "God damn it," he said. Rinsing cost him another seventeen dollars, out of money that was already running low.\nAfter that he discovered'),
 # 327, Ch 12: "Figures" when he gets sick (CT's beat and words, 28 Nov)
 (327, 'and he was cold. He lay across the bench seat', "and he was cold. *Figures. On top of everything else, I get sick down here.* The sickness felt fitting to him. It matched his mood, and the run of L's he'd been taking. He lay across the bench seat"),
+# 328, Ch 11: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(328, 'He kept his eyes on the road.', "He didn't look over."),
+(328, 'a little after ten.', "a little after ten, too soon for Elijah's liking."),
+# 329, Ch 12: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(329, "He didn't want to be a bother.", 'He was already enough of a bother.'),
+# 330, Ch 13: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(330, 'He got as far as a side street in downtown Stockton and turned the truck off.', 'By downtown Stockton his nerve had given out, and he turned onto a side street and shut the truck off.'),
+(330, 'He started the truck, plugged the phone into the lighter, and sat there', 'The truck started up without issue, which pleased Elijah and gave him a sense of relief. He plugged the phone into the lighter and sat there'),
+(330, "He didn't mention the call.", "David didn't mention the call."),
+# 331, Ch 14: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(331, 'It was the first rain since April, and it came down on the roof', 'The first rain since April hit the roof'),
+# 332, Ch 15: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(332, 'He still had the account.', 'His old account still worked, and at first that felt like luck.'),
+(332, 'in about four bites.', 'in about four bites. It was too sweet, same as always, and he could have eaten ten more.'),
+# 333, Ch 17: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(333, 'He heard how it sounded.', 'Out loud, it sounded like a complaint.'),
+# 334, Ch 18: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(334, 'He went back to the room', 'The cold followed him back to the room'),
+(334, 'number for the place with', 'number for'),
+# 335, Ch 19: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(335, 'He was nineteen, and he was the', 'The kid was nineteen, and he was the'),
+# 336, Ch 21: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(336, 'She looked down the table at Elijah', 'She looked over at Elijah'),
+(336, 'The county still sends one inspector for the house and another for the shop, and we have to pass both.', 'The county still holds the whole room to the rules for a house and the rules for a shop, and we have to pass both.'),
+# 337, Ch 23: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(337, 'Once, years ago,', 'Once,'),
+# 338, Ch 24: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(338, "He'd practiced evenings for a month on scrap", "He'd practiced evenings for a month on scrap until his hair smelled like welding smoke"),
+(338, "He'd never told the whole of it to anyone up here.", "Nobody up here had heard the whole of it, and it was easier to tell than he'd thought."),
+# 339, Ch 26: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(339, 'They drank and watched it.', 'They drank and watched it. The cider was all apple at first, and then whatever Lou had added crept in underneath and stayed.'),
+(339, 'It could drop a seed', 'The rover could drop a seed'),
+(339, 'He looked at the thing crossing the lettuce.', 'The thing was still crossing the lettuce.'),
+# 340, Ch 27: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(340, 'He heard how it sounded, and he kept going.', 'It sounded like a pitch, even to him, and he kept going.'),
+(340, "He'd never answered David.", "David's text still had no answer."),
+(340, 'Lou laughed so hard he had to put his cup down.', 'Lou slapped the table, laughing, and his cup jumped.'),
+# 341, Ch 29: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(341, "which households needed their meals cooked. She couldn't", "which households needed their meals cooked, but she couldn't"),
+# 342, Ch 30: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(342, 'what that commissioner was scared of', 'what that commissioner was afraid of'),
+(342, '"Which one was scared of a recall?"', '"Which one was scared of a recall?" Elijah said.'),
+# 343, Ch 31: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(343, 'favoring the shoulder, and let the cold in.', 'favoring the shoulder, and let the cold in. It came in clean, and next to it he could smell the room.'),
+(343, "and ate what was in the pan, and opened David's thread.", "and ate what was in the pan. The eggs had gone cold, and the salt finally cut the taste of the tea. He opened David's thread."),
+# 344, Ch 33: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(344, "It was Denny's. Elijah swung the gate open.", "It was Denny's. Elijah swung the gate open, gladder than he had any right to be."),
+# 345, Ch 34: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(345, 'Priya looked down the table at Curtis, with her pencil up, ready.', "Priya caught Curtis's eye, with her pencil up, ready."),
+(345, 'He got it out and found the price list.', 'He got it out and found the price list. Just having the numbers up on the screen steadied him some.'),
+# 346, Ch 35: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(346, 'He thought about it. He thought about his notebooks', 'He thought about his notebooks'),
+(346, 'Lou pointed at the other lawn chair with a walnut.', 'Lou pointed at the other lawn chair with a walnut, and it was good to be told where to sit.'),
+# 347, Ch 39: the final pass (CT, 28 Nov: the final-pass checker's findings, the phrase judges, the taste lines and the building-code fact check; Claude's wording unless the entry says CT's; reviewed by CT in the V9 PDF)
+(347, 'He had first read', 'Elijah had first read'),
+(347, 'Elijah watched the yellow words go', 'The yellow words kept going'),
+(347, 'number. He chose not to call it. He left', "number, saved under *Don't*. He chose not to call it, and left"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

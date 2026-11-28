@@ -94,6 +94,6 @@ Still on the page, for CT:
 - 14. The Epilogue's visitor book: David's Sunday sits between Melody's Saturday and Elijah's Wednesday, so "Some weeks
   he signed right under her" (4441) needs David to skip.
 - 15. Whether Grace knew who bought Ma's place: she knows of the sale from Ch 24 (2415); the page never says about the
-  buyer.
-- 16. "They've been there since my first week" (3811): the arms come in his second week (1658).
+  buyer. **CT, 28 Nov: leave ("We don't really need to know who the buyer is").**
+- 16. "They've been there since my first week" (3811): the arms come in his second week (1658). **CT, 28 Nov: leave.**
 - 17. Where his pocket money comes from on the farm: none is named from March 2025 to November 2027.

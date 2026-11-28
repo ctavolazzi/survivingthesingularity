@@ -48,16 +48,16 @@ where the reader had one; it is a suggestion only.
    285). One fix: "Elijah turned." at 1612. **CT, 28 Nov: use the fix. Edit 354.**
 9. **Ch 19, lines 1904 and 1905: Marta ends two speeches in a row on "spreadsheet".** The second was "Elijah" until 26
    Nov, changed because Ch 37 says she never called him that. Fix: "we're starting to see come out." (drop the second).
-   The sentence is CT's (edit 124); the word "spreadsheet" there is Claude's correction.
+   The sentence is CT's (edit 124); the word "spreadsheet" there is Claude's correction. **CT, 28 Nov: use the fix. Edit 355.**
 10. **Ch 23, line 2265 against 2305: the parcel count.** Elijah searches his own county and two neighbors, all in
     Washington, and finds "Fifty-some parcels"; Bidwell's map has fifty-three in all, over three California counties
     and two Washington ones. That leaves almost none for California, where the Hollis place and Ma's farm are. Soft, but
-    the book makes a point of the numbers. Both are CT's base text.
+    the book makes a point of the numbers. Both are CT's base text. **CT, 28 Nov: leave.**
 11. **Ch 23, line 2285: "Phoenix" twice** ("Dale on speakerphone from Phoenix", then Dale's "I'm in Phoenix", after 2263
-    already said it). Fix: "with Dale on speakerphone, and". Claude's rewording (edit 202) of CT's sentence.
+    already said it). Fix: "with Dale on speakerphone, and". Claude's rewording (edit 202) of CT's sentence. **CT, 28 Nov: use the fix. Edit 356.**
 12. **Ch 26, lines 2615 to 2623: four arms-in-water pictures in nine lines,** two of them nearly the same ("their arms
     in cold water up to the elbow"; "Nine people with their arms in cold water turned to her"). 2615 and 2623 are CT's;
-    2621's "the cold water" is Claude's (edit 162) and is the easy one to drop.
+    2621's "the cold water" is Claude's (edit 162) and is the easy one to drop. **CT, 28 Nov: leave the four; "cold" becomes "biting" at 2623. Edit 357.**
 13. **Ch 27, line 2908, "Topics crossed intellectual property lines".** A reader stops on the legal term in a list of
     talk topics. CT's own sentence (edit 292): only he knows what he meant.
 14. **Ch 28, line 3069: "trailer" and "road" twice each in two sentences** ("out of the kitchen trailer ... out of the

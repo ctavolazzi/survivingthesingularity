@@ -1844,6 +1844,12 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (353, "Every twenty he took out came off the far end of her room.", "Every twenty he took out would have come off the far end of her room."),
 # 354, Ch 17: the third raised eyebrow out (cover-to-cover item 8; the list's fix, CT's yes)
 (354, 'Elijah turned and raised an eyebrow. "Excuse me?"', 'Elijah turned. "Excuse me?"'),
+# 355, Ch 19: Marta's second "spreadsheet" out (cover-to-cover item 9; the list's fix, CT's yes)
+(355, "the mainstream devices we're starting to see come out, spreadsheet.", "the mainstream devices we're starting to see come out."),
+# 356, Ch 23: one "Phoenix" out (cover-to-cover item 11; the list's fix, CT's yes)
+(356, "with Dale on speakerphone from Phoenix, and Dale was not wrong", "with Dale on speakerphone, and Dale was not wrong"),
+# 357, Ch 26: "biting water" (cover-to-cover item 12; CT's word, 28 Nov)
+(357, "Nine people with their arms in cold water turned to her", "Nine people with their arms in biting water turned to her"),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

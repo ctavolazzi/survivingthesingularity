@@ -4537,6 +4537,18 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
 354. **Chapter 17: the third raised eyebrow out.** Item 8 of the list: three raised eyebrows in sixteen lines, all CT's
      words (edits 231 and 285). "Elijah turned and raised an eyebrow. \"Excuse me?\"" becomes "Elijah turned. \"Excuse
      me?\"". The list's fix, on CT's yes. The two with Grace stay. Logged only.
+355. **Chapter 19: Marta's second "spreadsheet" out.** Item 9 of the cover-to-cover list: she ends two speeches in a row
+     on "spreadsheet". "... the mainstream devices we're starting to see come out, spreadsheet." becomes "... we're
+     starting to see come out." The list's fix, on CT's "I agree with your lean on number 9". The sentence is CT's (edit
+     124); the word taken out was Claude's (edit 199). Check row 199 narrowed. Logged only.
+356. **Chapter 23: one "Phoenix" out.** Item 11: "with Dale on speakerphone from Phoenix, and Dale was not wrong" becomes
+     "with Dale on speakerphone, and Dale was not wrong"; Dale's own "I'm in Phoenix." stays. The list's fix, on CT's
+     yes. The words taken out were Claude's (edit 202). Logged only.
+357. **Chapter 26: "biting water".** Item 12 (four arms-in-water pictures in nine lines). CT, 28 Nov: "I agree with your
+     lean on number 12, but the 9 people with their arms in cold water. If we use cold so many times, like wash water,
+     that's fine. But maybe we could find another word for cold that does the action of personifying. All right,
+     instead of cold, we could use biting." "Nine people with their arms in cold water turned to her" becomes "Nine
+     people with their arms in biting water turned to her". CT's word. The other three stay. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

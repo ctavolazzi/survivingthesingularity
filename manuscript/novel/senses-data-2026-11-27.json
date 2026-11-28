@@ -744,7 +744,7 @@
   "sound": [
    "The engine ticked as it cooled. Up the hill a branch moved.",
    "Then something hit the roof. One tap, like a finger.",
-   "it came down on the roof of the Ranger like gravel off a truck",
+   "The first rain since April hit the roof of the Ranger like gravel off a truck",
    "It drummed on the empty bed behind him.",
    "He listened to it on the roof and in the leaves and running in the ditch"
   ],
@@ -782,7 +782,9 @@
    "By then the cab had the smell of a car you've been living in: smoke, a wet jacket, and the delivery bag, which had held on to just about every order he'd ever carried.",
    "You stop noticing it after a while, but everyone else sure does, right away."
   ],
-  "taste": [],
+  "taste": [
+   "It was too sweet, same as always, and he could have eaten ten more."
+  ],
   "sight": [
    "a place on Fourth Street with guitars hanging in the window like hams",
    "It was a photograph, soft at the corners."
@@ -792,7 +794,6 @@
    "then she smiled, and the room came up a little"
   ],
   "food_or_drink_not_tasted": [
-   "He took it, and he ate it right there, in about four bites.",
    "By Thursday it was four dollars and a sleeve of crackers. He ate the crackers."
   ]
  },
@@ -978,7 +979,8 @@
   "touch": [
    "with a late cold snap coming through his jacket",
    "He stood in the doorway after she left, in the cold",
-   "She bent, with a hand on her bad shoulder"
+   "She bent, with a hand on her bad shoulder",
+   "The cold followed him back to the room"
   ],
   "smell": [],
   "taste": [
@@ -1276,7 +1278,9 @@
   "touch": [
    "she laid her glove on the beam"
   ],
-  "smell": [],
+  "smell": [
+   "until his hair smelled like welding smoke"
+  ],
   "taste": [],
   "sight": [
    "the break was bright and grainy and full of small round holes, like honeycomb cast in nickel",
@@ -1480,7 +1484,9 @@
   "smell": [
    "the one that smelled like petrichor and moss when it rained"
   ],
-  "taste": [],
+  "taste": [
+   "The cider was all apple at first, and then whatever Lou had added crept in underneath and stayed."
+  ],
   "sight": [
    "smiled, from the corners of his eyes up to the top of his wise and schemy head"
   ],
@@ -1489,7 +1495,6 @@
    "He rolled his whole head over and looked her right in the eyes."
   ],
   "food_or_drink_not_tasted": [
-   "They drank and watched it.",
    "They both took a sip of cider at the same time."
   ]
  },
@@ -1790,7 +1795,7 @@
   "scene": 89,
   "sound": [
    "Sentences didn't get left unfinished when they were hers. The forks stopped.",
-   "Lou laughed so hard he had to put his cup down.",
+   "Lou slapped the table, laughing, and his cup jumped.",
    "Lou started the clapping, and the whole trailer took it up."
   ],
   "touch": [
@@ -2088,7 +2093,9 @@
    "He wanted to leave so badly his legs ached.",
    "feeling for it, and he let it down easy"
   ],
-  "smell": [],
+  "smell": [
+   "It came in clean, and next to it he could smell the room."
+  ],
   "taste": [
    "He could still taste the tea."
   ],
@@ -2114,15 +2121,15 @@
    "she said, and squeezed his arm"
   ],
   "smell": [],
-  "taste": [],
+  "taste": [
+   "The eggs had gone cold, and the salt finally cut the taste of the tea."
+  ],
   "sight": [
    "Wren was on the step with one of her candles, unlit",
    "at thirty centimeters a white root, and under it a worm that did not care for the daylight"
   ],
   "physics": [],
-  "food_or_drink_not_tasted": [
-   "When he got up he swept, and ate what was in the pan"
-  ]
+  "food_or_drink_not_tasted": []
  },
  {
   "scene": 104,

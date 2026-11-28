@@ -222,7 +222,7 @@ CHECKS = [  # (what, [quotes], function -> (verdict, detail))
      lambda: (abs(((2027 - 2025) * 12 + (1 - 7)) - 18) <= 2, "from July 2025: 18 months")),
     ("Elijah's age: thirty-five in January 2024, thirty-six in early March 2025, thirty-seven in May 2025", ["He was thirty-five years old", '"I\'m thirty-six," Elijah said.', "He was thirty-seven years old and he had never been so tired"],
      lambda: (True, "All three hold if his birthday falls between about 3 March and mid May. That is the window for the birthday scene.")),
-    ("Tyler's age: nineteen in spring and fall 2025, twenty in June 2026, twenty-one in January and November 2027", ["He was nineteen, and he was the Tyler who had found", "He was twenty. He just put it away.", "She looked at Tyler, twenty-one years old", "Tyler stood there, twenty-one years old"],
+    ("Tyler's age: nineteen in spring and fall 2025, twenty in June 2026, twenty-one in January and November 2027", ["The kid was nineteen, and he was the Tyler who had found", "He was twenty. He just put it away.", "She looked at Tyler, twenty-one years old", "Tyler stood there, twenty-one years old"],
      lambda: (True, "All hold if his birthday falls between about 10 November and the January meeting.")),
     ("NOT ON THE CALENDAR'S SIDE: 'They've been there since my first week'", ["They've been there since my first week.", "They'll be here on Wednesday."],
      lambda: (False, "He arrives Tuesday 4 March; the arms come the Wednesday after the Sunday lien sale, 12 March: his second week. (Already in the scene sheet audit.)")),
@@ -903,7 +903,7 @@ PLANTS = {
     "Can a machine be made to ask first?": ("paid", "I CAN CHANGE A GREAT DEAL BY MORNING. I WOULD RATHER HAVE YOUR PERMISSION."),
     "Who was the man in the camel coat?": ("paid", "Aaron Bidwell left the dinner before the fish"),
     "Will Elijah regret turning down the million?": ("paid", "Instead he changed the name to Don't."),
-    "Will Elijah ever call Ruby?": ("paid", "He still had Ruby's number. He chose not to call it."),
+    "Will Elijah ever call Ruby?": ("paid", "He still had Ruby's number, saved under Don't. He chose not to call it"),
     "Who will Bidwell put near Elijah?": ("open on purpose", "There is somebody near him. Close enough to eat with."),
     "Will Trent pay him the two arms?": ("paid", "the company would sign them over, the way Trent had promised"),
     "Who does the machine work for?": ("paid", "\"Us,\" Lou said. \"Like Irene's wire.\""),
@@ -1085,6 +1085,11 @@ SENSE_WHOSE = {
     "The tea tasted like dirt and ginger.": "older text",
     "He could still taste the tea.": "older text",
     "The smell had climbed the kitchen walls and gotten into the curtains": "Claude's (edit 221)",
+    "It was too sweet, same as always, and he could have eaten ten more.": "Claude's; the final pass, a taste where it carries feeling (edit 332)",
+    "until his hair smelled like welding smoke": "Claude's; the final pass, CT's move of a smell for a run of He steps (edit 338)",
+    "The cider was all apple at first, and then whatever Lou had added crept in underneath and stayed.": "Claude's; the final pass, a taste where it carries feeling (edit 339)",
+    "It came in clean, and next to it he could smell the room.": "Claude's; the final pass, CT's smell lesson (edit 343)",
+    "The eggs had gone cold, and the salt finally cut the taste of the tea.": "Claude's; the final pass, a taste where it carries feeling (edit 343)",
 }
 SENSE_CALL = {31: "Logged, edit 294 (CT: \"Yes log both\") " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 55: "Leave (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 63: "Leave: no smoke at the door (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 72: "Claude's kitchen-heat draft dropped (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 81: "Leave: no smell for the pits (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 89: "Logged, edit 293: \"Rosa's cooking\"; \"the heavenly scent\" left out (CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 120: "Logged, edit 295, the old fence's smoke (CT: \"Yes log both\") " + "(CT, 27 Nov, sixteenth chat: \"Go with your leans on all seven\")", 23: "Logged, edit 236 (the party)", 39: "Logged, edit 235 (the truck); corrected wording kept (CT, 27 Nov, sixteenth chat: \"I like the way it reads now.\")"}
 

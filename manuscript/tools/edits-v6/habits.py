@@ -158,23 +158,35 @@ def find(book):
 
 # ---------------------------------------------------------------- whose words
 class Source:
+    """Where a sentence's words came from: the v5 Doc's text ("base"), or the replacement of a logged edit ("edit N").
+    The CT hint is "yes" when the edit-list entry that quotes the sentence says the words are his ("CT's words", "[CT]",
+    "CT's beats", "His lines", or a quote after "CT:" or "CT,") and names none of Claude's, and "mixed" when the entry
+    has both. It is a hint: read the entry before touching the line."""
+
     def __init__(self, read):
         from whose_words import doc_text
         self.v5 = doc_text(read) if read else ""
         ns = {}
         exec(compile(open(os.path.join(HERE, "ops.py"), encoding="utf-8").read(), "ops.py", "exec"), ns)
         self.ops = [(row[0], row[2].replace("*", "")) for row in ns["OPS"]]
-        self.edits = open(os.path.join(NOVEL, "EDITS.md"), encoding="utf-8").read()
+        raw = open(os.path.join(NOVEL, "EDITS.md"), encoding="utf-8").read()
+        # one string per numbered entry, with the wrapping and the "> " of quoted passages taken out
+        parts = re.split(r"\n(?=\s{0,4}\d{1,3}\. )", raw)
+        self.entries = [re.sub(r"\s*\n\s*>?\s*", " ", p) for p in parts]
 
     def of(self, sent):
         key = sent[:120]
         hit = sorted({n for n, rep in self.ops if key in rep})
         src = ("edit " + ", ".join(map(str, hit))) if hit else ("base" if key in self.v5 else "unknown")
+        k = re.sub(r"\s+", " ", key[:60])
         ct = ""
-        for m in re.finditer(re.escape(key[:60]), self.edits):
-            near = self.edits[max(0, m.start() - 200): m.end() + 400]
-            if re.search(r"CT's words|\[CT\]|CT:|CT \(", near):
-                ct = "yes"
+        for e in self.entries:
+            if k not in e:
+                continue
+            his = re.search(r"CT's words|\[CT\]|CT's beats|His lines|his words|CT: \"|CT, \d", e)
+            claude = re.search(r"Claude's word|Words by Claude|wording Claude's|\[Claude", e)
+            ct = "yes" if his and not claude else "mixed" if his else ct
+            if ct:
                 break
         return src, ct
 
@@ -329,25 +341,26 @@ STOPWORDS = set("a an the and or but of to in on at for with from by as is was w
                 "who you i we me my your our its s t d ll re ve said didn don".split())
 
 
-def cmd_repeats(a):
-    """Exact word runs used more than once, at least once from FIRST_CHAPTER on. Longest first; a run inside a longer
-    run with the same count is dropped. It finds repetition nobody has named yet; a person judges which are callbacks."""
+def repeat_runs(book, nmin=5, nmax=9, content=2, first=FIRST_CHAPTER):
+    """Exact word runs used more than once, at least once from chapter `first` on: [(words, [(num, label, line)])],
+    most used first. A run inside a longer run with the same count is dropped. It finds repetition nobody has named
+    yet; a person judges which are callbacks."""
     paras = []
-    for head, num, label, ps in scenes(a.book):
+    for head, num, label, ps in scenes(book):
         for line, p in ps:
-            paras.append((num, label, line, re.findall(r"[a-z']+", p.lower().replace("’", "'"))))
+            paras.append((num, label, line, re.findall(r"[a-z']+", p.lower().replace("\u2019", "'"))))
     where = defaultdict(list)
     for num, label, line, w in paras:
         seen = set()
-        for n in range(a.min, a.max + 1):
+        for n in range(nmin, nmax + 1):
             for i in range(len(w) - n + 1):
                 g = tuple(w[i:i + n])
                 if g in seen:
                     continue
                 seen.add(g)
                 where[g].append((num, label, line))
-    keep = {g: v for g, v in where.items() if len(v) >= 2 and any(n >= FIRST_CHAPTER for n, _, _ in v)
-            and sum(1 for x in g if x not in STOPWORDS) >= a.content}
+    keep = {g: v for g, v in where.items() if len(v) >= 2 and any(n >= first for n, _, _ in v)
+            and sum(1 for x in g if x not in STOPWORDS) >= content}
     out = []
     for g in sorted(keep, key=lambda g: (-len(g), -len(keep[g]))):
         s = " ".join(g)
@@ -355,6 +368,11 @@ def cmd_repeats(a):
             continue
         out.append((g, keep[g]))
     out.sort(key=lambda x: (-len(x[1]), -len(x[0])))
+    return out
+
+
+def cmd_repeats(a):
+    out = repeat_runs(a.book, a.min, a.max, a.content)
     for g, v in out[: a.top]:
         print("%2dx  %-52s %s" % (len(v), " ".join(g), ", ".join("%s:%d" % (lab.replace("Ch ", ""), ln) for _, lab, ln in v[:8])
                                   + (" ..." if len(v) > 8 else "")))

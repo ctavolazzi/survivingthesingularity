@@ -80,7 +80,8 @@ FIRST = 11
 # ---------------------------------------------------------------- words
 SUBJ = {"he": "he", "he'd": "he", "he's": "he", "he'll": "he", "she": "she", "she'd": "she", "she's": "she",
         "she'll": "she", "they": "they", "they'd": "they", "they're": "they", "they'll": "they"}
-SKIP = {"had", "hadn't", "didn't", "did", "would", "wouldn't", "could", "couldn't", "just", "never", "still", "also",
+MODAL = {"would", "wouldn't", "could", "couldn't", "might", "may", "should", "shouldn't", "must", "can", "can't"}
+SKIP = {"had", "hadn't", "didn't", "did", "just", "never", "still", "also",
         "only", "even", "almost", "nearly", "really", "finally", "always", "already", "then", "now", "soon", "sometimes"}
 MIND = set("knew thought wanted felt wondered hoped figured remembered loved hated liked wished believed understood "
            "realized meant decided imagined guessed supposed doubted feared missed needed noticed saw heard watched "
@@ -138,6 +139,8 @@ def tag(sentence):
     if how != "opens":
         return "other"
     t = toks(sentence)[1:]
+    if t and t[0] in MODAL:               # "He wouldn't have called it that": a thought about what might be, not a step
+        return "mind"
     while t and t[0] in SKIP:
         if t[0] in ("had", "hadn't") and len(t) > 1 and t[1] in HAVE_NOUN:
             return "state"

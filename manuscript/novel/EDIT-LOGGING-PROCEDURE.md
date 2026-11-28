@@ -247,7 +247,7 @@ against a fresh read of the v6 Doc. The v5 Doc stays as it is.
 ## Where things stand (the final pass, 28 Nov, the same chat)
 - **Edits 328 to 347 are logged in GitHub only** (the final pass, 37 changes, Chapters 11 to 39). make_v6.py on the
   fresh v5 read: 801 replacements, all 348 check rows pass. `final_check.py gate`: READY (every finding has a verdict
-  in `final-check-ledger.csv`). **The next edit is 348.** Record: `CHECKPOINT-2026-11-28-final-pass.md`.
+  in `final-check-ledger.csv`). Then edit 348 (Ch 17, CT's words: the barn's smell); 802 replacements, all 349 check rows pass, gate still READY. **The next edit is 349.** Record: `CHECKPOINT-2026-11-28-final-pass.md`.
 - The cover-to-cover read (seven readers and a checker for each, plus a spelling and punctuation sweep) found no clear
   errors and 16 things for CT: `cover-to-cover-read-2026-11-28.md`. Nothing in the book changed.
 - The scene sheet audit's section A is applied (`SCENE-SHEET-AUDIT-2026-11-27.md`, under section A).

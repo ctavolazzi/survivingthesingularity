@@ -1830,6 +1830,8 @@ On the low burner the near pot had gone to a slow tick. Marta took the pencil an
 (347, 'He had first read', 'Elijah had first read'),
 (347, 'Elijah watched the yellow words go', 'The yellow words kept going'),
 (347, 'number. He chose not to call it. He left', "number, saved under *Don't*. He chose not to call it, and left"),
+# 348, Ch 17: the smell of Praether's barn (CT's words, 28 Nov: "Cold gear oil and the mysterious musk of an unknown small mammal or twelve.")
+(348, 'cold gear oil and mouse.', 'cold gear oil and the mysterious musk of an unknown small mammal or twelve.'),
 ]
 
 # Lines that must be italic from end to end (verify.py cannot see italics).

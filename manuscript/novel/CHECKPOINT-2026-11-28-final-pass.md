@@ -4,7 +4,8 @@ CT, 28 Nov, same chat as edits 296 to 327: "use the tools at your disposal to pe
 manuscript as described here in the chat." The work is `FINAL-PASS-PROMPT.md`, steps 1 to 11. Step 12, the V9 PDF, is
 only on his word.
 
-**Where it stands:** edits 1 to 347 logged; **next edit 348**. make_v6.py on the fresh v5 read (revision
+**Where it stands:** edits 1 to 348 logged; **next edit 349**. Edit 348, after the pass: CT's barn smell (Ch 17), "cold
+gear oil and the mysterious musk of an unknown small mammal or twelve." (802 replacements, 349 check rows, gate READY.) make_v6.py on the fresh v5 read (revision
 AHj4eMResiURoAJEhT0nN-6E...): 801 replacements, all 348 check rows pass. `final_check.py gate`: READY. Neither Google Doc
 was changed: edits 224 to 347 are in GitHub only.
 
@@ -25,8 +26,7 @@ was changed: edits 224 to 347 are in GitHub only.
   blueprints of the wall (Ch 27), funded in ink (Ch 29), the tide pools poem (Ch 33), "This is the gate." (Ch 36), the
   new tape on the post (Ch 37), the truck over a cattle guard (Ch 38). Chapter 12's shower is on the page since edit 326.
 - **Smell calls (step 6):** CT ruled on seven on 27 Nov ("Go with your leans on all seven"); now in the smell table's
-  last column. **Two are still his:** the real smell of Praether's yard and barn (Ch 17; the page has Claude's "smoke lay
-  down flat ... cold gear oil and mouse"), and whether Elijah tells Grace what the Thanksgiving coats bring back (Ch 27,
+  last column. Praether's barn: CT's words, edit 348. **One is still his:** whether Elijah tells Grace what the Thanksgiving coats bring back (Ch 27,
   new material).
 - **Fact check (step 7):** Priya's first line is right for Washington (the county adopts the state code; the house
   code and the code for every other building are separate chapters, 51-51 and 51-50 WAC; nothing forbids a home and a
@@ -75,5 +75,5 @@ section A in `SCENE-SHEET-AUDIT-2026-11-27.md`. Every story check and `habits.py
 ## Waiting on CT
 
 1. The V9 PDF, on his word (`FINAL-PASS-PROMPT.md`, step 12; the gate is READY).
-2. The two smell calls above.
+2. The last smell call above (the coats, Ch 27).
 3. The 16 items and the open audit items in `cover-to-cover-read-2026-11-28.md`.

@@ -1,6 +1,6 @@
 # Smell table, 27 Nov 2026 (the smell pass)
 
-**Since 27 Nov (sixteenth chat) the senses sheet is the place to look:** `senses-2026-11-27.csv` and the "Senses" tab of the story checks workbook (all five senses, every scene, at edit 292). CT ruled on the open rows on 27 Nov (sixteenth chat; `senses-2026-11-27.md`, "The seven calls"). Two are still his: Praether's yard and barn (Ch 17) and the coats (Ch 27).
+**Since 27 Nov (sixteenth chat) the senses sheet is the place to look:** `senses-2026-11-27.csv` and the "Senses" tab of the story checks workbook (all five senses, every scene, at edit 292). CT ruled on the open rows on 27 Nov (sixteenth chat; `senses-2026-11-27.md`, "The seven calls"). Praether's barn is his edit 348 (28 Nov). One is still his: the coats (Ch 27).
 
 Every smell on the page in the built book (edits 1 to 234), plus CT's two places and the two places where a smell
 could start a memory someone shares. Quotes are from `OUT/v6.txt`. "Whose words" is traced through the v5 Doc,
@@ -18,7 +18,7 @@ here is logged or in either Doc. The last column is CT's.
 | 13 | The kitchen | "Manny had smelled it from the yard." | Older text | The only smell that makes something happen: it is how Ma gets found | |
 | 13 | The hospital | "In a hallway that smelled like hand sanitizer..." | Older text | Setting | |
 | 15 | The five months (sheet row 48) | None | CT's truck line (7a) waits here, after "when five dollars got to be a lot he stopped" | He stops noticing; everyone else doesn't. The pawn man, Ma, the old man and the food bank woman are all close to him in this chapter | Logged, edit 235 |
-| 17 | Praether's yard and barn | "The smoke lay down flat across the yard and got into everything." "...the barn had kept its own air, cold gear oil and mouse." | Claude's (edits 230, 234); the record already asks CT for the real smell | Setting; the smoke hints at the burn barrel man | **Still open:** the real smell of Praether's yard and barn |
+| 17 | Praether's yard and barn | "The smoke lay down flat across the yard and got into everything." "...the barn had kept its own air, cold gear oil and mouse." | Claude's (edits 230, 234); the record already asks CT for the real smell | Setting; the smoke hints at the burn barrel man | Edit 348 (CT, 28 Nov): "cold gear oil and the mysterious musk of an unknown small mammal or twelve". The yard's smoke line stays |
 | 20 | The tailgate | "a thermos of something that smelled like a wet lawn" | Older text | Wren in four words, and funny | |
 | 21 | The cooked plugs | None ("the color of wet newspaper") | | Closes the heat thread on the page if a smell goes in. Optional | Leave (CT, 27 Nov (sixteenth chat): "Go with your leans on all seven") |
 | 24 | The first fire in the shouse | None | | Memory spot: Grace at the door, fifteen feet from the stove, then the gate story. Woodsmoke reaching her could be what starts it. One line | Leave (CT, 27 Nov (sixteenth chat): "Go with your leans on all seven") |

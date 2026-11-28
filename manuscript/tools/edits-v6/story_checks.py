@@ -1072,7 +1072,7 @@ SENSE_WHOSE = {
     "The smoke lay down flat across the yard and got into everything.": "Claude's (edit 230)",
     "Somewhere in there he caught a smell he didn't quite recognize.": "CT's (edit 242)",
     "went down in the truck with the door open, so fast he barely tasted it": "edit 100, from CT's other chat, copied as given",
-    "the barn had kept its own air, cold gear oil and mouse": "Claude's (edit 234); the record asks CT for the real smell",
+    "the barn had kept its own air, cold gear oil and the mysterious musk of an unknown small mammal or twelve": "CT's (edit 348, 28 Nov); \"the barn had kept its own air\" is Claude's (edit 234)",
     "It cut straight through what five months had done to the cab": "CT's scene, Claude's narration (edit 242)",
     "She smelled great, better than anyone he'd ever smelled before": "CT's (edit 242)",
     "\"The soup was good,\" he said.": "older text",

@@ -7,7 +7,7 @@ v8 draft (Nov 26)", made on CT's word from `manuscript/tools/edits-v6/make_v6.py
 suggestions accepted, then every row of `ops.py`). Each of those entries still says where it stood when it was logged
 ("Logged only; not in the v6 Doc yet."); that is its history. Edits 224 to 233 (tenth and eleventh chats) are logged only,
 until CT clears them for the Doc. Since then: edit 234 (27 Nov, the Riemann chat) and edits 235 and 236 (27 Nov, the
-smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 to 327 (28 Nov, CT's fixes from reading the PDF) and edits 328 to 347 (28 Nov, the final pass: `FINAL-PASS-PROMPT.md`, with `final_check.py gate` READY), logged only. The next edit is 348.
+smell chat) and edits 237 to 242 (27 Nov, the same chat), edit 243 (27 Nov, the thirteenth chat) and edits 244 to 287 (27 Nov, the fourteenth chat) and edits 288 to 291 (27 Nov, the fifteenth chat) and edits 292 to 295 (27 Nov, the sixteenth chat) and edits 296 to 300 (27 Nov, the seventeenth chat) and edits 301 to 322 (28 Nov, the same chat: the habits pass, in the PDF for CT's review) and edits 323 to 327 (28 Nov, CT's fixes from reading the PDF) and edits 328 to 347 (28 Nov, the final pass: `FINAL-PASS-PROMPT.md`, with `final_check.py gate` READY) and edit 348 (28 Nov, CT's barn smell), logged only. The next edit is 349.
 
 **So nothing gets dropped:** every edit has a check row in `manuscript/tools/edits-v5/checks.py`. Run
 `python3 manuscript/tools/edits-v5/verify.py READ.json --table manuscript/novel/EDITS-status.md` on a fresh read of the
@@ -4500,6 +4500,13 @@ the ones that only mark time. Keep a day where it matters (a deadline, a service
      - Line 4394, he (he4cd63b8). "He had first read" becomes "Elijah had first read". David is the last man named (he just turned the TV up), so 'He' could be read as him; name Elijah where the reader first needs it. [writer, passed by both checkers]
      - Line 4395, he (he4cd63b8). "Elijah watched the yellow words go" becomes "The yellow words kept going". With the name moved up a paragraph, this opens on the captions instead of a second 'Elijah'. They keep going while he is caught on the name, and the line still echoes 'the yellow words going by overhead' later. [writer, passed by both checkers]
      - Line 4397, he (he8f022af). "number. He chose not to call it. He left" becomes "number, saved under *Don't*. He chose not to call it, and left". Breaks the three flat 'He' steps by paying off Ch 37's 'Instead he changed the name to Don't.' The contact name is now italic, as it is in Ch 37, so the print line reads as a name and not as a broken sentence. It adds three words and changes no fact or event. [writer, passed by both checkers on the retry]
+
+348. **Chapter 17: the smell of Praether's barn.** CT, 28 Nov, answering the open smell call (the final pass, step 6: "What
+     do Praether's yard and barn really smell like?"): "Cold gear oil and the mysterious musk of an unknown small mammal or
+     twelve." When Lou rolls the barn door back, "the barn had kept its own air, cold gear oil and mouse." becomes "the barn
+     had kept its own air, cold gear oil and the mysterious musk of an unknown small mammal or twelve." CT's words; the
+     capital is dropped because the line goes on from "its own air,". The yard's smoke line ("The smoke lay down flat
+     across the yard and got into everything.") stays as it is. Check row 205 moved to the new words. Logged only.
 
 Corrected in place, 26 Nov (eighth chat): edit 205, Praether's lines as "an homage to pop culture for moments like
 these", with the twist delivered by Grace at the mailbox (CT). Praether puts one finger up: "Mark my words." "Beware

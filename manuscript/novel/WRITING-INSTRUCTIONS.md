@@ -617,6 +617,13 @@ Found by the audit. Where each stands after edit 223 (checked in the tenth chat 
   some variety." So a sense line does three jobs at once: it reaches for a word the nearby pages have not used
   (tobacco, not cigarettes again), it brings a sense in as he arrives, and it says plainly how it lands on him
   ("comforting"). Naming the feeling flat is his; do it the same way.
+- **A pronoun run he welcomes (CT, 28 Nov, reading V9, Ch 14, page 223):** "He went down the list ... He'd been a farm
+  kid, and he had sold the farm. He'd been a guitar player, and the band had bought a keyboard. He'd been a guy with a
+  stool. He'd been a data cowboy ... He had bolted ... He had turned down ... He had taken her advice, and here he was.
+  He was somebody's son." CT: "The repetition of the pronoun on this page is welcome and actually serves the plot,
+  serves the mood." Leave it whole. The test for the pass **[C]**: a run that builds like a list or a refrain, where
+  each repeat adds an entry and the repeating is the feeling, stays; a run that is only a string of steps ("He did X.
+  He did Y.") gets varied.
 - A table row for section 16: Claude wrote "Lou noticed." and a run of "He" openers | "Of course Lou noticed. It just
   happened." "You're still repeating the he pattern" | the noticing cut; openers counted before showing.
 
